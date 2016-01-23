@@ -49,22 +49,21 @@ Your speed determines how far you can move when traveling (
 By virtue of your race, your character can speak, read, and write
 certain languages.
 
-#### \
-Subraces
+#### Subraces
 
 Some races have subraces. Members of a subrace have the traits of the
 parent race in addition to the traits specified for their subrace.
 Relationships among subraces vary significantly from race to race and
 world to world.
 
-> **Dwarf**
+**Dwarf**
 
 ### Dwarf Traits
 
 Your dwarf character has an assortment of inborn abilities, part and
 parcel of dwarven nature.
 
-> ***Ability Score Increase.*** Your Constitution score increases by 2.
+***Ability Score Increase.*** Your Constitution score increases by 2.
 
 ***Age.*** Dwarves mature at the same rate as humans, but they’re
 considered young until they reach the age of 50. On average, they live
@@ -81,7 +80,7 @@ share in the benefits of a just order.
 ***Speed.*** Your base walking speed is 25 feet. Your speed is not
 reduced by wearing heavy armor.
 
-> ***Darkvision.*** Accustomed to life underground, you
+***Darkvision.*** Accustomed to life underground, you
 
 have superior vision in dark and dim conditions. You can see in dim
 light within 60 feet of you as if it were bright light, and in darkness
@@ -91,8 +90,8 @@ shades of gray.
 ***Dwarven Resilience.*** You have advantage on saving throws against
 poison, and you have resistance against poison damage.
 
-> ***Dwarven Combat Training.*** You have proficiency with the
-> battleaxe, handaxe, light hammer, and warhammer.
+***Dwarven Combat Training.*** You have proficiency with the
+battleaxe, handaxe, light hammer, and warhammer.
 
 ***Tool Proficiency.*** You gain proficiency with the artisan’s tools of
 your choice: smith’s tools, brewer’s supplies, or mason’s tools.
@@ -112,7 +111,7 @@ speak.
 As a hill dwarf, you have keen senses, deep intuition, and remarkable
 resilience.
 
-> ***Ability Score Increase.*** Your Wisdom score increases by 1.
+***Ability Score Increase.*** Your Wisdom score increases by 1.
 
 ***Dwarven Toughness.*** Your hit point maximum increases by 1, and it
 increases by 1 every time you gain a level.
@@ -125,7 +124,7 @@ Elf
 Your elf character has a variety of natural abilities, the result of
 thousands of years of elven refinement.
 
-> ***Ability Score Increase.*** Your Dexterity score increases by 2.
+***Ability Score Increase.*** Your Dexterity score increases by 2.
 
 ***Age.*** Although elves reach physical maturity at about the same age
 as humans, the elven understanding of adulthood goes beyond physical
@@ -142,7 +141,7 @@ them vicious and dangerous. Drow are more often evil than not.
 ***Size.*** Elves range from under 5 to over 6 feet tall and have
 slender builds. Your size is Medium.
 
-> ***Speed.*** Your base walking speed is 30 feet.
+***Speed.*** Your base walking speed is 30 feet.
 
 ***Darkvision.*** Accustomed to twilit forests and the night sky, you
 have superior vision in dark and dim conditions. You can see in dim
@@ -150,7 +149,7 @@ light within 60 feet of you as if it were bright light, and in darkness
 as if it were dim light. You can’t discern color in darkness, only
 shades of gray.
 
-> ***Keen Senses.*** You have proficiency in the Perception skill.
+***Keen Senses.*** You have proficiency in the Perception skill.
 
 ***Fey Ancestry.*** You have advantage on saving throws against being
 charmed, and magic can’t put you to sleep.
@@ -179,9 +178,9 @@ superior to non-­‐‑elves and even other elves. The other type is more
 common and more friendly, and often encountered among humans and other
 races.
 
-> ***Ability Score Increase.*** Your Intelligence score increases by 1.
+***Ability Score Increase.*** Your Intelligence score increases by 1.
 >
-> ***Elf Weapon Training.*** You have proficiency with
+***Elf Weapon Training.*** You have proficiency with
 
 the longsword, shortsword, shortbow, and longbow.
 
@@ -199,7 +198,7 @@ Halfling
 Your halfling character has a number of traits in common with all other
 halflings.
 
-> ***Ability Score Increase.*** Your Dexterity score increases by 2.
+***Ability Score Increase.*** Your Dexterity score increases by 2.
 
 ***Age.*** A halfling reaches adulthood at the age of 20 and generally
 lives into the middle of his or her second century.
@@ -213,7 +212,7 @@ their old ways.
 ***Size.*** Halflings average about 3 feet tall and weigh about 40
 pounds. Your size is Small.
 
-> ***Speed.*** Your base walking speed is 25 feet.
+***Speed.*** Your base walking speed is 25 feet.
 
 ***Lucky.*** When you roll a 1 on the d20 for an attack roll, ability
 check, or saving throw, you can reroll the die and must use the new
@@ -222,8 +221,8 @@ roll.
 ***Brave.*** You have advantage on saving throws against being
 frightened.
 
-> ***Halfling Nimbleness.*** You can move through the space of any
-> creature that is of a size larger than yours.
+***Halfling Nimbleness.*** You can move through the space of any
+creature that is of a size larger than yours.
 
 ***Languages.*** You can speak, read, and write Common and Halfling. The
 Halfling language isn’t secret, but halflings are loath to share it with
@@ -241,7 +240,7 @@ with others.
 Lightfoots are more prone to wanderlust than other halflings, and often
 dwell alongside other races or take up a nomadic life.
 
-> ***Ability Score Increase.*** Your Charisma score increases by 1.
+***Ability Score Increase.*** Your Charisma score increases by 1.
 
 ***Naturally Stealthy.*** You can attempt to hide even when you are
 obscured only by a creature that is at least one size larger than you.
@@ -254,7 +253,7 @@ Human
 It’s hard to make generalizations about humans, but your human character
 has these traits.
 
-> ***Ability Score Increase.*** Your ability scores each increase by 1.
+***Ability Score Increase.*** Your ability scores each increase by 1.
 
 ***Age.*** Humans reach adulthood in their late teens and live less than
 a century.
@@ -285,15 +284,15 @@ Dragonborn
 Your draconic heritage manifests in a variety of traits you share with
 other dragonborn.
 
-> ***Ability Score Increase.*** Your Strength score increases by 2, and
-> your Charisma score increases by 1.
+***Ability Score Increase.*** Your Strength score increases by 2, and
+your Charisma score increases by 1.
 
 ***Age.*** Young dragonborn grow quickly. They walk hours after
 hatching, attain the size and development of a 10-­‐‑year-­‐‑old human
 child by the age of 3, and reach adulthood by 15. They live to be around
 80.
 
-> ***Alignment.*** Dragonborn tend to extremes, making
+***Alignment.*** Dragonborn tend to extremes, making
 
 a conscious choice for one side or the other in the cosmic war between
 good and evil. Most dragonborn are good, but those who side with evil
@@ -302,22 +301,22 @@ can be terrible villains.
 ***Size.*** Dragonborn are taller and heavier than humans, standing well
 over 6 feet tall and averaging almost 250 pounds. Your size is Medium.
 
-> ***Speed.*** Your base walking speed is 30 feet.
+***Speed.*** Your base walking speed is 30 feet.
 
 #### Draconic Ancestry
 
-  > **Dragon**   > **Damage Type**   > **Breath Weapon**
+  | **Dragon**   | **Damage Type**   | **Breath Weapon**
   -------------- ------------------- --------------------------------
-  > Black        > Acid              > 5 by 30 ft. line (Dex. save)
-  > Blue         > Lightning         > 5 by 30 ft. line (Dex. save)
-  > Brass        > Fire              > 5 by 30 ft. line (Dex. save)
-  > Bronze       > Lightning         > 5 by 30 ft. line (Dex. save)
-  > Copper       > Acid              > 5 by 30 ft. line (Dex. save)
-  > Gold         > Fire              > 15 ft. cone (Dex. save)
-  > Green        > Poison            > 15 ft. cone (Con. save)
-  > Red          > Fire              > 15 ft. cone (Dex. save)
-  > Silver       > Cold              > 15 ft. cone (Con. save)
-  > White        > Cold              > 15 ft. cone (Con. save)
+  | Black        | Acid              | 5 by 30 ft. line (Dex. save)
+  | Blue         | Lightning         | 5 by 30 ft. line (Dex. save)
+  | Brass        | Fire              | 5 by 30 ft. line (Dex. save)
+  | Bronze       | Lightning         | 5 by 30 ft. line (Dex. save)
+  | Copper       | Acid              | 5 by 30 ft. line (Dex. save)
+  | Gold         | Fire              | 15 ft. cone (Dex. save)
+  | Green        | Poison            | 15 ft. cone (Con. save)
+  | Red          | Fire              | 15 ft. cone (Dex. save)
+  | Silver       | Cold              | 15 ft. cone (Con. save)
+  | White        | Cold              | 15 ft. cone (Con. save)
 
 ***Draconic Ancestry.*** You have draconic ancestry. Choose one type of
 dragon from the Draconic Ancestry table. Your breath weapon and damage
@@ -339,7 +338,7 @@ one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and
 After you use your breath weapon, you can’t use it again until you
 complete a short or long rest.
 
-> ***Damage Resistance.*** You have resistance to the
+***Damage Resistance.*** You have resistance to the
 
 damage type associated with your draconic ancestry.
 
@@ -356,9 +355,9 @@ Gnome
 Your gnome character has certain characteristics in common with all
 other gnomes.
 
-> ***Ability Score Increase.*** Your Intelligence score increases by 2.
+***Ability Score Increase.*** Your Intelligence score increases by 2.
 >
-> ***Age.*** Gnomes mature at the same rate humans do,
+***Age.*** Gnomes mature at the same rate humans do,
 
 and most are expected to settle down into an adult life by around age
 40. They can live 350 to almost 500 years.
@@ -372,14 +371,14 @@ the tricksters among them are more playful than vicious.
 ***Size.*** Gnomes are between 3 and 4 feet tall and average about 40
 pounds. Your size is Small.
 
-> ***Speed.*** Your base walking speed is 25 feet.
+***Speed.*** Your base walking speed is 25 feet.
 
 ***Darkvision.*** Accustomed to life underground, you have superior
 vision in dark and dim conditions. You can see in dim light within 60
 feet of you as if it were bright light, and in darkness as if it were
 dim light. You can’t discern color in darkness, only shades of gray.
 
-> ***Gnome Cunning.*** You have advantage on all
+***Gnome Cunning.*** You have advantage on all
 
 Intelligence, Wisdom, and Charisma saving throws against magic.
 
@@ -393,7 +392,7 @@ world.
 As a rock gnome, you have a natural inventiveness and hardiness beyond
 that of other gnomes.
 
-> ***Ability Score Increase.*** Your Constitution score increases by 1.
+***Ability Score Increase.*** Your Constitution score increases by 1.
 
 ***Artificer’s Lore.*** Whenever you make an Intelligence (History)
 check related to magic items, alchemical objects, or technological
@@ -408,23 +407,23 @@ to keep the device functioning), or when you use your action to
 dismantle it; at that time, you can reclaim the materials used to create
 it. You can have up to three such devices active at a time.
 
-> When you create a device, choose one of the
+When you create a device, choose one of the
 
 following options:
 
-> *Clockwork Toy.* This toy is a clockwork animal, monster, or person,
-> such as a frog, mouse, bird, dragon, or soldier. When placed on the
-> ground, the toy moves 5 feet across the ground on each of your turns
-> in a random direction. It makes noises as appropriate to the creature
-> it represents.
->
-> *Fire Starter.* The device produces a miniature flame, which you can
-> use to light a candle, torch, or campfire. Using the device requires
-> your action.
->
-> *Music Box.* When opened, this music box plays a single song at a
-> moderate volume. The box stops playing when it reaches the song’s end
-> or when it is closed.
+*Clockwork Toy.* This toy is a clockwork animal, monster, or person,
+such as a frog, mouse, bird, dragon, or soldier. When placed on the
+ground, the toy moves 5 feet across the ground on each of your turns
+in a random direction. It makes noises as appropriate to the creature
+it represents.
+
+*Fire Starter.* The device produces a miniature flame, which you can
+use to light a candle, torch, or campfire. Using the device requires
+your action.
+
+*Music Box.* When opened, this music box plays a single song at a
+moderate volume. The box stops playing when it reaches the song’s end
+or when it is closed.
 
 Half-Elf
 --------
@@ -434,14 +433,14 @@ Half-Elf
 Your half-­‐‑elf character has some qualities in common with elves and
 some that are unique to half-­‐‑elves.
 
-> ***Ability Score Increase.*** Your Charisma score increases by 2, and
-> two other ability scores of your choice increase by 1.
+***Ability Score Increase.*** Your Charisma score increases by 2, and
+two other ability scores of your choice increase by 1.
 
 ***Age.*** Half-­‐‑elves mature at the same rate humans do and reach
 adulthood around the age of 20. They live much longer than humans,
 however, often exceeding 180 years.
 
-> ***Alignment.*** Half-­‐‑elves share the chaotic bent of
+***Alignment.*** Half-­‐‑elves share the chaotic bent of
 
 their elven heritage. They value both personal freedom and creative
 expression, demonstrating neither love of leaders nor desire for
@@ -452,7 +451,7 @@ sometimes prove unreliable, or at least unpredictable.
 ***Size.*** Half-­‐‑elves are about the same size as humans, ranging
 from 5 to 6 feet tall. Your size is Medium.
 
-> ***Speed.*** Your base walking speed is 30 feet.
+***Speed.*** Your base walking speed is 30 feet.
 
 ***Darkvision.*** Thanks to your elf blood, you have superior vision in
 dark and dim conditions. You can see in dim light within 60 feet of you
@@ -462,8 +461,8 @@ can’t discern color in darkness, only shades of gray.
 ***Fey Ancestry.*** You have advantage on saving throws against being
 charmed, and magic can’t put you to sleep.
 
-> ***Skill Versatility.*** You gain proficiency in two skills of your
-> choice.
+***Skill Versatility.*** You gain proficiency in two skills of your
+choice.
 
 ***Languages.*** You can speak, read, and write Common, Elvish, and one
 extra language of your choice.
@@ -476,8 +475,8 @@ Half-Orc
 Your half-­‐‑orc character has certain traits deriving from your orc
 ancestry.
 
-> ***Ability Score Increase.*** Your Strength score increases by 2, and
-> your Constitution score increases by 1.
+***Ability Score Increase.*** Your Strength score increases by 2, and
+your Constitution score increases by 1.
 
 ***Age.*** Half-­‐‑orcs mature a little faster than humans, reaching
 adulthood around age 14. They age noticeably faster and rarely live
@@ -491,19 +490,19 @@ usually evil.
 ***Size.*** Half-­‐‑orcs are somewhat larger and bulkier than humans,
 and they range from 5 to well over 6 feet tall. Your size is Medium.
 
-> ***Speed.*** Your base walking speed is 30 feet.
+***Speed.*** Your base walking speed is 30 feet.
 
 ***Darkvision.*** Thanks to your orc blood, you have superior vision in
 dark and dim conditions. You can see in dim light within 60 feet of you
 as if it were bright light, and in darkness as if it were dim light. You
 can’t discern color in darkness, only shades of gray.
 
-> ***Menacing.*** You gain proficiency in the
+***Menacing.*** You gain proficiency in the
 
 Intimidation skill.
 
-> ***Relentless Endurance.*** When you are reduced to 0 hit points but
-> not killed outright, you can drop to 1
+***Relentless Endurance.*** When you are reduced to 0 hit points but
+not killed outright, you can drop to 1
 
 hit point instead. You can’t use this feature again until you finish a
 long rest.
@@ -524,8 +523,8 @@ Tiefling
 Tieflings share certain racial traits as a result of their infernal
 descent.
 
-> ***Ability Score Increase.*** Your Intelligence score increases by 1,
-> and your Charisma score increases by 2.
+***Ability Score Increase.*** Your Intelligence score increases by 1,
+and your Charisma score increases by 2.
 
 ***Age.*** Tieflings mature at the same rate as humans but live a few
 years longer.
@@ -537,14 +536,14 @@ inclines many tieflings toward a chaotic alignment.
 ***Size.*** Tieflings are about the same size and build as humans. Your
 size is Medium.
 
-> ***Speed.*** Your base walking speed is 30 feet.
+***Speed.*** Your base walking speed is 30 feet.
 
 ***Darkvision.*** Thanks to your infernal heritage, you have superior
 vision in dark and dim conditions. You can see in dim light within 60
 feet of you as if it were bright light, and in darkness as if it were
 dim light. You can’t discern color in darkness, only shades of gray.
 
-> ***Hellish Resistance.*** You have resistance to fire damage.
+***Hellish Resistance.*** You have resistance to fire damage.
 
 ***Infernal Legacy.*** You know the *thaumaturgy* cantrip. When you
 reach 3rd level, you can cast the *hellish rebuke* spell as a
