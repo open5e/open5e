@@ -133,7 +133,7 @@ class Pico
      * Meta data of the page to serve
      *
      * @see Pico::getFileMeta()
-     * @var array|null
+     * @var string[]|null
      */
     protected $meta;
 
@@ -1339,7 +1339,7 @@ class Pico
      * Triggers events on plugins which implement PicoPluginInterface
      *
      * Deprecated events (as used by plugins not implementing
-     * {@link PicoPluginInterface}) are triggered by {@link PicoDeprecated}.
+     * {@link IPocPlugin}) are triggered by {@link PicoDeprecated}.
      *
      * @see    PicoPluginInterface
      * @see    AbstractPicoPlugin

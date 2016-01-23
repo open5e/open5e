@@ -9,26 +9,35 @@
  * file that was distributed with this source code.
  */
 
-require_once dirname(dirname(__FILE__)).'/FilesystemHelper.php';
-
 class Twig_Tests_Cache_FilesystemTest extends PHPUnit_Framework_TestCase
 {
+    private $nonce;
     private $classname;
     private $directory;
     private $cache;
 
     protected function setUp()
     {
-        $nonce = hash('sha256', uniqid(mt_rand(), true));
-        $this->classname = '__Twig_Tests_Cache_FilesystemTest_Template_'.$nonce;
-        $this->directory = sys_get_temp_dir().'/twig-test';
+        $this->nonce = hash('sha256', uniqid(mt_rand(), true));
+        $this->classname = '__Twig_Tests_Cache_FilesystemTest_Template_'.$this->nonce;
+        $this->directory = sys_get_temp_dir().'/twig-test-'.$this->nonce;
         $this->cache = new Twig_Cache_Filesystem($this->directory);
     }
 
     protected function tearDown()
     {
         if (file_exists($this->directory)) {
-            Twig_Tests_FilesystemHelper::removeDir($this->directory);
+            $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($this->directory), RecursiveIteratorIterator::CHILD_FIRST);
+            foreach ($iterator as $filename => $fileInfo) {
+                if (!$iterator->isDot()) {
+                    if ($fileInfo->isDir()) {
+                        rmdir($filename);
+                    } else {
+                        unlink($filename);
+                    }
+                }
+            }
+            rmdir($this->directory);
         }
     }
 
@@ -77,14 +86,10 @@ class Twig_Tests_Cache_FilesystemTest extends PHPUnit_Framework_TestCase
 
     /**
      * @expectedException RuntimeException
-     * @expectedExceptionMessage Unable to create the cache directory
+     * @expectedExceptionMessageRegExp #^Unable to create the cache directory #
      */
     public function testWriteFailMkdir()
     {
-        if (defined('PHP_WINDOWS_VERSION_BUILD')) {
-            $this->markTestSkipped('Read-only directories not possible on Windows.');
-        }
-
         $key = $this->directory.'/cache/cachefile.php';
         $content = $this->generateSource();
 
@@ -99,14 +104,10 @@ class Twig_Tests_Cache_FilesystemTest extends PHPUnit_Framework_TestCase
 
     /**
      * @expectedException RuntimeException
-     * @expectedExceptionMessage Unable to write in the cache directory
+     * @expectedExceptionMessageRegExp #^Unable to write in the cache directory #
      */
     public function testWriteFailDirWritable()
     {
-        if (defined('PHP_WINDOWS_VERSION_BUILD')) {
-            $this->markTestSkipped('Read-only directories not possible on Windows.');
-        }
-
         $key = $this->directory.'/cache/cachefile.php';
         $content = $this->generateSource();
 
@@ -123,7 +124,7 @@ class Twig_Tests_Cache_FilesystemTest extends PHPUnit_Framework_TestCase
 
     /**
      * @expectedException RuntimeException
-     * @expectedExceptionMessage Failed to write cache file
+     * @expectedExceptionMessageRegExp #^Failed to write cache file #
      */
     public function testWriteFailWriteFile()
     {
@@ -157,31 +158,6 @@ class Twig_Tests_Cache_FilesystemTest extends PHPUnit_Framework_TestCase
     {
         $key = $this->directory.'/cache/cachefile.php';
         $this->assertSame(0, $this->cache->getTimestamp($key));
-    }
-
-    /**
-     * Test file cache is tolerant towards trailing (back)slashes on the configured cache directory.
-     *
-     * @dataProvider provideDirectories
-     */
-    public function testGenerateKey($expected, $input)
-    {
-        $cache = new Twig_Cache_Filesystem($input);
-        $this->assertRegExp($expected, $cache->generateKey('_test_', get_class($this)));
-    }
-
-    public function provideDirectories()
-    {
-        $pattern = '#a/b/[a-zA-Z0-9]+/[a-zA-Z0-9]+.php$#';
-
-        return array(
-            array($pattern, 'a/b'),
-            array($pattern, 'a/b/'),
-            array($pattern, 'a/b\\'),
-            array($pattern, 'a/b\\/'),
-            array($pattern, 'a/b\\//'),
-            array('#/'.substr($pattern, 1), '/a/b'),
-        );
     }
 
     private function generateSource()
