@@ -1,4 +1,4 @@
-> **Legal Information**
+##Legal Information
 
 Permission to copy, modify and distribute the files collectively known
 as the System Reference Document 5.0 (“SRD5”) is granted solely through
@@ -43,115 +43,115 @@ Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights
 Reserved.
 
 1.  Definitions: (a)"Contributors" means the copyright and/or trademark
-    > owners who have contributed Open Game Content; (b)"Derivative
-    > Material" means copyrighted material including derivative works
-    > and translations (including into other computer languages),
-    > potation, modification, correction, addition, extension, upgrade,
-    > improvement, compilation, abridgment or other form in which an
-    > existing work may be recast, transformed or adapted; (c)
-    > "Distribute" means to reproduce, license, rent, lease, sell,
-    > broadcast, publicly display, transmit or otherwise distribute;
-    > (d)"Open Game Content" means the game mechanic and includes the
-    > methods, procedures, processes and routines to the extent such
-    > content does not embody the Product Identity and is an enhancement
-    > over the prior art and any additional content clearly identified
-    > as Open Game Content by the Contributor, and means any work
-    > covered by this License, including translations and derivative
-    > works under copyright law, but specifically excludes
-    > Product Identity. (e) "Product Identity" means product and product
-    > line names, logos and identifying marks including trade dress;
-    > artifacts; creatures characters; stories, storylines, plots,
-    > thematic elements, dialogue, incidents, language, artwork,
-    > symbols, designs, depictions, likenesses, formats, poses,
-    > concepts, themes and graphic, photographic and other visual or
-    > audio representations; names and descriptions of characters,
-    > spells, enchantments, personalities, teams, personas, likenesses
-    > and special abilities; places, locations, environments, creatures,
-    > equipment, magical or supernatural abilities or effects, logos,
-    > symbols, or graphic designs; and any other trademark or registered
-    > trademark clearly identified as Product identity by the owner of
-    > the Product Identity, and which specifically excludes the Open
-    > Game Content; (f) "Trademark" means the logos, names, mark, sign,
-    > motto, designs that are used by a Contributor to identify itself
-    > or its products or the associated products contributed to the Open
-    > Game License by the Contributor (g) "Use", "Used" or "Using" means
-    > to use, Distribute, copy, edit, format, modify, translate and
-    > otherwise create Derivative Material of Open Game Content. (h)
-    > "You" or "Your" means the licensee in terms of this agreement.
+    owners who have contributed Open Game Content; (b)"Derivative
+    Material" means copyrighted material including derivative works
+    and translations (including into other computer languages),
+    potation, modification, correction, addition, extension, upgrade,
+    improvement, compilation, abridgment or other form in which an
+    existing work may be recast, transformed or adapted; (c)
+    "Distribute" means to reproduce, license, rent, lease, sell,
+    broadcast, publicly display, transmit or otherwise distribute;
+    (d)"Open Game Content" means the game mechanic and includes the
+    methods, procedures, processes and routines to the extent such
+    content does not embody the Product Identity and is an enhancement
+    over the prior art and any additional content clearly identified
+    as Open Game Content by the Contributor, and means any work
+    covered by this License, including translations and derivative
+    works under copyright law, but specifically excludes
+    Product Identity. (e) "Product Identity" means product and product
+    line names, logos and identifying marks including trade dress;
+    artifacts; creatures characters; stories, storylines, plots,
+    thematic elements, dialogue, incidents, language, artwork,
+    symbols, designs, depictions, likenesses, formats, poses,
+    concepts, themes and graphic, photographic and other visual or
+    audio representations; names and descriptions of characters,
+    spells, enchantments, personalities, teams, personas, likenesses
+    and special abilities; places, locations, environments, creatures,
+    equipment, magical or supernatural abilities or effects, logos,
+    symbols, or graphic designs; and any other trademark or registered
+    trademark clearly identified as Product identity by the owner of
+    the Product Identity, and which specifically excludes the Open
+    Game Content; (f) "Trademark" means the logos, names, mark, sign,
+    motto, designs that are used by a Contributor to identify itself
+    or its products or the associated products contributed to the Open
+    Game License by the Contributor (g) "Use", "Used" or "Using" means
+    to use, Distribute, copy, edit, format, modify, translate and
+    otherwise create Derivative Material of Open Game Content. (h)
+    "You" or "Your" means the licensee in terms of this agreement.
 
 2.  The License: This License applies to any Open Game Content that
-    > contains a notice indicating that the Open Game Content may only
-    > be Used under and in terms of this License. You must affix such a
-    > notice to any Open Game Content that you Use. No terms may be
-    > added to or subtracted from this License except as described by
-    > the License itself. No other terms or conditions may be applied to
-    > any Open Game Content distributed using this License.
+    contains a notice indicating that the Open Game Content may only
+    be Used under and in terms of this License. You must affix such a
+    notice to any Open Game Content that you Use. No terms may be
+    added to or subtracted from this License except as described by
+    the License itself. No other terms or conditions may be applied to
+    any Open Game Content distributed using this License.
 
 3.  Offer and Acceptance: By Using the Open Game Content You indicate
-    > Your acceptance of the terms of this License.
+    Your acceptance of the terms of this License.
 
 4.  Grant and Consideration: In consideration for agreeing to use this
-    > License, the Contributors grant You a perpetual, worldwide,
-    > royalty-­‐‑free, non-­‐‑ exclusive license with the exact terms of
-    > this License to Use, the Open Game Content.
+    License, the Contributors grant You a perpetual, worldwide,
+    royalty-­‐‑free, non-­‐‑ exclusive license with the exact terms of
+    this License to Use, the Open Game Content.
 
 5.  Representation of Authority to Contribute: If You are contributing
-    > original material as Open Game Content, You represent that Your
-    > Contributions are Your original creation and/or You have
-    > sufficient rights to grant the rights conveyed by this License.
+    original material as Open Game Content, You represent that Your
+    Contributions are Your original creation and/or You have
+    sufficient rights to grant the rights conveyed by this License.
 
 6.  Notice of License Copyright: You must update the COPYRIGHT NOTICE
-    > portion of this License to include the exact text of the COPYRIGHT
-    > NOTICE of any Open Game Content You are copying, modifying or
-    > distributing, and You must add the title, the copyright date, and
-    > the copyright holder's name to the COPYRIGHT NOTICE of any
-    > original Open Game Content you Distribute.
+    portion of this License to include the exact text of the COPYRIGHT
+    NOTICE of any Open Game Content You are copying, modifying or
+    distributing, and You must add the title, the copyright date, and
+    the copyright holder's name to the COPYRIGHT NOTICE of any
+    original Open Game Content you Distribute.
 
 7.  Use of Product Identity: You agree not to Use any Product Identity,
-    > including as an indication as to compatibility, except as
-    > expressly licensed in another, independent Agreement with the
-    > owner of each element of that Product Identity. You agree not to
-    > indicate compatibility or co-­‐‑adaptability with any Trademark or
-    > Registered Trademark in conjunction with a work containing Open
-    > Game Content except as expressly licensed in another, independent
-    > Agreement with the owner of such Trademark or
-    > Registered Trademark. The use of any Product Identity in Open Game
-    > Content does not constitute a challenge to the ownership of that
-    > Product Identity. The owner of any Product Identity used in Open
-    > Game Content shall retain all rights, title and interest in and to
-    > that Product Identity.
+    including as an indication as to compatibility, except as
+    expressly licensed in another, independent Agreement with the
+    owner of each element of that Product Identity. You agree not to
+    indicate compatibility or co-­‐‑adaptability with any Trademark or
+    Registered Trademark in conjunction with a work containing Open
+    Game Content except as expressly licensed in another, independent
+    Agreement with the owner of such Trademark or
+    Registered Trademark. The use of any Product Identity in Open Game
+    Content does not constitute a challenge to the ownership of that
+    Product Identity. The owner of any Product Identity used in Open
+    Game Content shall retain all rights, title and interest in and to
+    that Product Identity.
 
 8.  Identification: If you distribute Open Game Content You must clearly
-    > indicate which portions of the work that you are distributing are
-    > Open Game Content.
+    indicate which portions of the work that you are distributing are
+    Open Game Content.
 
 9.  Updating the License: Wizards or its designated Agents may publish
-    > updated versions of this License. You may use any authorized
-    > version of this License to copy, modify and distribute any Open
-    > Game Content originally distributed under any version of
-    > this License.
+    updated versions of this License. You may use any authorized
+    version of this License to copy, modify and distribute any Open
+    Game Content originally distributed under any version of
+    this License.
 
 10. Copy of this License: You MUST include a copy of this License with
-    > every copy of the Open Game Content You Distribute.
+    every copy of the Open Game Content You Distribute.
 
 11. Use of Contributor Credits: You may not market or advertise the Open
-    > Game Content using the name of any Contributor unless You have
-    > written permission from the Contributor to do so.
+    Game Content using the name of any Contributor unless You have
+    written permission from the Contributor to do so.
 
 12. Inability to Comply: If it is impossible for You to comply with any
-    > of the terms of this License with respect to some or all of the
-    > Open Game Content due to statute, judicial order, or governmental
-    > regulation then You may not Use any Open Game Material
-    > so affected.
+    of the terms of this License with respect to some or all of the
+    Open Game Content due to statute, judicial order, or governmental
+    regulation then You may not Use any Open Game Material
+    so affected.
 
 13. Termination: This License will terminate automatically if You fail
-    > to comply with all terms herein and fail to cure such breach
-    > within 30 days of becoming aware of the breach. All sublicenses
-    > shall survive the termination of this License.
+    to comply with all terms herein and fail to cure such breach
+    within 30 days of becoming aware of the breach. All sublicenses
+    shall survive the termination of this License.
 
 14. Reformation: If any provision of this License is held to be
-    > unenforceable, such provision shall be reformed only to the extent
-    > necessary to make it enforceable.
+    unenforceable, such provision shall be reformed only to the extent
+    necessary to make it enforceable.
 
 15. COPYRIGHT NOTICE
 
@@ -165,8 +165,8 @@ Gygax and Dave Arneson.
 
 END OF LICENSE
 
-> If you note any errors in this document, please let us know by
-> emailing [*askdnd@wizards.com*.](mailto:askdnd@wizards.com)
+If you note any errors in this document, please let us know by
+emailing [*askdnd@wizards.com*.](mailto:askdnd@wizards.com)
 
 Races
 =====
@@ -445,7 +445,6 @@ sprinkling their speech with words borrowed from other tongues: Orc
 curses, Elvish musical expressions, Dwarvish military phrases, and so
 on.
 
-\
 Dragonborn
 ----------
 
@@ -475,18 +474,18 @@ over 6 feet tall and averaging almost 250 pounds. Your size is Medium.
 
 #### Draconic Ancestry
 
-  > **Dragon**   > **Damage Type**   > **Breath Weapon**
+  | **Dragon**   | **Damage Type**   | **Breath Weapon**
   -------------- ------------------- --------------------------------
-  > Black        > Acid              > 5 by 30 ft. line (Dex. save)
-  > Blue         > Lightning         > 5 by 30 ft. line (Dex. save)
-  > Brass        > Fire              > 5 by 30 ft. line (Dex. save)
-  > Bronze       > Lightning         > 5 by 30 ft. line (Dex. save)
-  > Copper       > Acid              > 5 by 30 ft. line (Dex. save)
-  > Gold         > Fire              > 15 ft. cone (Dex. save)
-  > Green        > Poison            > 15 ft. cone (Con. save)
-  > Red          > Fire              > 15 ft. cone (Dex. save)
-  > Silver       > Cold              > 15 ft. cone (Con. save)
-  > White        > Cold              > 15 ft. cone (Con. save)
+  | Black        | Acid              | 5 by 30 ft. line (Dex. save)
+  | Blue         | Lightning         | 5 by 30 ft. line (Dex. save)
+  | Brass        | Fire              | 5 by 30 ft. line (Dex. save)
+  | Bronze       | Lightning         | 5 by 30 ft. line (Dex. save)
+  | Copper       | Acid              | 5 by 30 ft. line (Dex. save)
+  | Gold         | Fire              | 15 ft. cone (Dex. save)
+  | Green        | Poison            | 15 ft. cone (Con. save)
+  | Red          | Fire              | 15 ft. cone (Dex. save)
+  | Silver       | Cold              | 15 ft. cone (Con. save)
+  | White        | Cold              | 15 ft. cone (Con. save)
 
 ***Draconic Ancestry.*** You have draconic ancestry. Choose one type of
 dragon from the Draconic Ancestry table. Your breath weapon and damage
@@ -766,17 +765,17 @@ granted by your background:
 
 #### The Barbarian
 
-           > Rage   
-  -------- -------- ----------------------------- ------------- ------
-  > 12th   > +4     > Ability Score Improvement
-  > 13th   > +5     > Brutal Critical (2 dice)
-  > 14th   > +5     > Path feature
-  > 15th   > +5     > Persistent Rage
-  > 16th   > +5     > Ability Score Improvement
-  > 17th   > +6     > Brutal Critical (3 dice)
-  > 18th   > +6     > Indomitable Might
-  > 19th   > +6     > Ability Score Improvement
-  > 20th   > +6     > Primal Champion
+           | Rage   
+  -------- -------- -----------------------------
+  | 12th   | +4     | Ability Score Improvement
+  | 13th   | +5     | Brutal Critical (2 dice)
+  | 14th   | +5     | Path feature
+  | 15th   | +5     | Persistent Rage
+  | 16th   | +5     | Ability Score Improvement
+  | 17th   | +6     | Brutal Critical (3 dice)
+  | 18th   | +6     | Indomitable Might
+  | 19th   | +6     | Ability Score Improvement
+  | 20th   | +6     | Primal Champion
 
 > **Rage**
 
@@ -843,8 +842,7 @@ heavy armor:
 >
 > 6th +3 Path feature 4 +2
 
-### \
-Unarmored Defense
+### Unarmored Defense
 
 > 7th +3 Feral Instinct 4 +2
 >
@@ -905,7 +903,7 @@ increase an ability score above 20 using this feature.
 Beginning at 5th level, you can attack twice, instead of once, whenever
 you take the Attack action on your turn.
 
-### Fast Movement 
+### Fast Movement
 
 Starting at 5th level, your speed increases by 10 feet while you aren’t
 wearing heavy armor.
@@ -919,8 +917,7 @@ Additionally, if you are surprised at the beginning of combat and aren’t
 incapacitated, you can act normally on your first turn, but only if you
 enter your rage before doing anything else on that turn.
 
-### \
-Brutal Critical
+### Brutal Critical
 
 Beginning at 9th level, you can roll one additional weapon damage die
 when determining the extra damage for a critical hit with a melee
@@ -1929,7 +1926,7 @@ you can increase one ability score of your choice by 2, or you can
 increase two ability scores of your choice by 1. As normal, you can’t
 increase an ability score above 20 using this feature.
 
-### Timeless Body 
+### Timeless Body
 
 Starting at 18th level, the primal magic that you wield causes you to
 age more slowly. For every 10 years that pass, your body ages only 1
@@ -2241,7 +2238,7 @@ Once you use this feature, you must finish a short or long rest before
 you can use it again. Starting at 17th level, you can use it twice
 before a rest, but only once on the same turn.
 
-### Martial Archetype 
+### Martial Archetype
 
 At 3rd level, you choose an archetype that you strive to emulate in your
 combat styles and techniques. Choose Champion, Battle Master, or
@@ -2886,7 +2883,7 @@ your Channel Divinity again.
 Some Channel Divinity effects require saving throws. When you use such
 an effect from this class, the DC equals your paladin spell save DC.
 
-### Ability Score Improvement 
+### Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
@@ -10100,7 +10097,7 @@ Sunburst
 
 **9th Level** Foresight Shapechange Storm of Vengeance True Resurrection
 
-### Paladin Spells 
+### Paladin Spells
 
 > **1st Level** Bless Command Cure Wounds
 
@@ -10252,7 +10249,7 @@ Gate
 
 Meteor Swarm Power Word Kill Time Stop Wish
 
-### Warlock Spells 
+### Warlock Spells
 
 #### Cantrips (0 Level)
 
@@ -27965,7 +27962,7 @@ invisible with it.
 >
 > **Speed** 40 ft., fly 60 ft.
 
-###### STR DEX CON INT WIS CHA 
+###### STR DEX CON INT WIS CHA
 
 > 5 (−3) 17 (+3) 10 (+0) 7 (−2) 10 (+0) 10 (+0)
 >
@@ -29769,7 +29766,7 @@ damage on a successful one.
 > Constitution saving throw, taking 72 (16d8) cold damage on a failed
 > save, or half as much damage on a successful one.
 
-#####  *Legendary Actions* 
+#####  *Legendary Actions*
 
 > The dragon can take 3 legendary actions, choosing from the options
 > below. Only one legendary action option can be used at a time and only
@@ -31091,7 +31088,7 @@ two with its claws.
 
 19 (+4) 14 (+2) 17 (+3) 14 (+2) 11 (+0) 16 (+3)
 
-###### STR DEX CON INT WIS CHA 
+###### STR DEX CON INT WIS CHA
 
 > 23 (+6) 14 (+2) 21 (+5) 16 (+3) 13 (+1) 20 (+5)
 >
@@ -31849,7 +31846,7 @@ out of it by taking an action to make a DC 14 Strength and succeeding.
 
 > 10 (+0) 14 (+2) 10 (+0) 11 (+0) 11 (+0) 12 (+1)
 
-###### STR DEX CON INT WIS CHA 
+###### STR DEX CON INT WIS CHA
 
 > 18 (+4) 14 (+2) 18 (+4) 5 (−3) 10 (+0) 8 (−1)
 >
@@ -33203,7 +33200,7 @@ Monsters (H)
 >
 > **Speed** 30 ft.
 
-###### STR DEX CON INT WIS CHA 
+###### STR DEX CON INT WIS CHA
 
 > 18 (+4) 12 (+1) 16 (+3) 13 (+1) 14 (+2) 14 (+2)
 
@@ -36508,7 +36505,7 @@ sphinx and able to hear the roar must make a saving throw.
 > knocked prone. On a successful save, the creature takes half as much
 > damage and isn’t knocked prone.
 
-#####  *Legendary Actions* 
+#####  *Legendary Actions*
 
 > The sphinx can take 3 legendary actions, choosing from the options
 > below. Only one legendary action option can be used at a time and only
@@ -36575,7 +36572,7 @@ sphinx and able to hear the roar must make a saving throw.
 > ***Claw.** Melee Weapon Attack:* +8 to hit, reach 5 ft., one target.
 > *Hit:* 13 (2d8 + 4) slashing damage.
 
-#####  *Legendary Actions* 
+#####  *Legendary Actions*
 
 > The sphinx can take 3 legendary actions, choosing from the options
 > below. Only one legendary action option can be used at a time and only
@@ -36827,7 +36824,7 @@ structures.
 > restrained by it and can escape from the corpse by using 30 feet of
 > movement, exiting prone.
 
-#####  *Legendary Actions* 
+#####  *Legendary Actions*
 
 > The tarrasque can take 3 legendary actions, choosing from the options
 > below. Only one legendary action option can be used at a time and only
@@ -37328,7 +37325,7 @@ control at one time.
 
 6 (−2) 16 (+3) 16 (+3) 12 (+1) 14 (+2) 15 (+2)
 
-###### STR DEX CON INT WIS CHA 
+###### STR DEX CON INT WIS CHA
 
 > 1 (−5) 28 (+9) 10 (+0) 13 (+1) 14 (+2) 11 (+0)
 >
@@ -38473,7 +38470,7 @@ Giant Bat
 >
 > **Speed** 40 ft.
 
-###### STR DEX CON INT WIS CHA 
+###### STR DEX CON INT WIS CHA
 
 > 13 (+1) 10 (+0) 15 (+2) 2 (−4) 12 (+1) 5 (−3)
 >
@@ -41390,7 +41387,7 @@ command huge fees but rarely fight to the death.
 
 13 (+1) 12 (+1) 12 (+1) 10 (+0) 11 (+0) 10 (+0)
 
-###### STR DEX CON INT WIS CHA 
+###### STR DEX CON INT WIS CHA
 
 > 18 (+4) 15 (+2) 16 (+3) 10 (+0) 12 (+1) 15 (+2)
 >
