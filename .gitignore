@@ -10,6 +10,8 @@ desktop.ini
 .DS_Store
 ._*
 
+node_modules/
+
 # Composer
 #  /composer.lock
 #  /composer.phar
@@ -37,3 +39,4 @@ desktop.ini
 
 #  themes/default/.DS_Store
 vendor/
+themes/open5e/node_modules/bower/lib/commands/prune.js

@@ -1,0 +1,25 @@
+/*!
+Pure v0.6.1-pre
+Copyright 2013 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+https://github.com/yahoo/pure/blob/master/LICENSE.md
+*/
+/* HORIZONTAL MENU */
+.menu-horizontal {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.menu-horizontal .menu-list {
+    display: inline-block;
+}
+
+/* Initial menus should be inline-block so that they are horizontal */
+.menu-horizontal .menu-item,
+.menu-horizontal .menu-heading,
+.menu-horizontal .menu-separator {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: middle;
+}
