@@ -1,3 +1,9 @@
+---
+Title: Cleric
+Description: Open 5th Edition SRD project.
+---
+
+
 Cleric
 ======
 

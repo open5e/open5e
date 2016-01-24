@@ -1,3 +1,9 @@
+---
+Title: Druid
+Description: Open 5th Edition SRD project.
+---
+
+
 Druid
 =====
 
