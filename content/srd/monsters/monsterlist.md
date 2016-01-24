@@ -1,11 +1,3 @@
----
-Title: Monsters H ~ Z
-Description: Open 5th Edition SRD project.
----
-
-
-
-
 Monsters (H)
 ------------
 
@@ -229,7 +221,7 @@ functions.
   | Huge              | As a young dragon   | Challenge 7 or higher
   | Gargantuan        | As an adult dragon  | Challenge 8 or higher
 
-### Half-Red Dragon Veteran {#half-red-dragon-veteran}
+### Half-Red Dragon Veteran
 
 Medium humanoid (human), any alignment
 
@@ -320,7 +312,7 @@ Actions
     A target that successfully saves is immune to this harpy’s song for
     the next 24 hours.
 
-### Hell Hound {#hell-hound}
+### Hell Hound
 
 Medium fiend, lawful evil
 
@@ -522,7 +514,7 @@ Actions
 Monsters (I)
 ------------
 
-### Invisible Stalker {#invisible-stalker style="border-bottom:thin solid"}
+### Invisible Stalker
 
 Medium elemental, neutral
 
@@ -605,7 +597,7 @@ Actions
 **Sling**: *Ranged Weapon Attack*: +4 to hit, range 30/120 ft.,
     one target. *Hit*: 4 (1d4 + 2) bludgeoning damage.
 
-### Kraken {#kraken style="border-bottom:thin solid"}
+### Kraken
 
 Gargantuan monstrosity (titan), chaotic evil
 
@@ -704,7 +696,7 @@ legendary actions at the start of its turn.
 Monsters (L)
 ------------
 
-### Lamia {#lamia style="border-bottom:thin solid"}
+### Lamia
 
 Large monstrosity, chaotic evil
 
@@ -1962,7 +1954,7 @@ Actions
 Monsters (O)
 ------------
 
-### Ogre {#ogre style="border-bottom:thin solid"}
+### Ogre
 
 Large giant, chaotic evil
 
@@ -2407,7 +2399,7 @@ Actions
 Monsters (P)
 ------------
 
-### Pegasus {#pegasus style="border-bottom:thin solid"}
+### Pegasus
 
 Large celestial, chaotic good
 
@@ -2438,7 +2430,7 @@ Actions
 **Hooves**: *Melee Weapon Attack*: +6 to hit, reach 5 ft.,
     one target. *Hit*: 11 (2d6 + 4) bludgeoning damage.
 
-### Pseudodragon {#pseudodragon style="border-bottom:thin solid"}
+### Pseudodragon
 
 Tiny dragon, neutral good
 
@@ -2481,7 +2473,7 @@ Actions
     unconscious for the same duration, or until it takes damage or
     another creature uses an action to shake it awake.
 
-### Purple Worm {#purple-worm}
+### Purple Worm
 
 Gargantuan monstrosity, unaligned
 
@@ -2535,7 +2527,7 @@ Actions
 Monsters (R)
 ------------
 
-### Rakshasa {#rakshasa style="border-bottom:thin solid"}
+### Rakshasa
 
 Medium fiend, lawful evil
 
@@ -2734,7 +2726,7 @@ Actions
 **Reel**: The roper pulls each creature grappled by it up to 25 feet
     straight toward it.
 
-### Rust Monster {#rust-monster}
+### Rust Monster
 
 Medium monstrosity, unaligned
 
@@ -2967,7 +2959,7 @@ Actions
     If a non-evil humanoid dies from this attack, a new shadow rises
     from the corpse 1d4 hours later.
 
-### Shambling Mound {#shambling-mound}
+### Shambling Mound
 
 Large plant, unaligned
 
@@ -3017,7 +3009,7 @@ Actions
     target moves with it. The mound can have only one creature engulfed
     at a time.
 
-### Shield Guardian {#shield-guardian}
+### Shield Guardian
 
 Large construct, unaligned
 
@@ -3535,7 +3527,7 @@ Actions
 Monsters (T)
 ------------
 
-### Tarrasque {#tarrasque style="border-bottom:thin solid"}
+### Tarrasque
 
 Gargantuan monstrosity (titan), unaligned
 
@@ -3724,7 +3716,7 @@ Actions
 Monsters (U)
 ------------
 
-### Unicorn {#unicorn style="border-bottom:thin solid"}
+### Unicorn
 
 Large celestial, lawful good
 
@@ -4077,7 +4069,7 @@ Actions
 **Longbow**: *Ranged Weapon Attack*: +4 to hit, range 150/600 ft.,
     one target. *Hit*: 6 (1d8 + 2) piercing damage.
 
-### Will-o'-Wisp {#will-o-wisp}
+### Will-o'-Wisp
 
 Tiny undead, chaotic evil
 
@@ -4222,7 +4214,7 @@ Actions
 Monsters (X)
 ------------
 
-### Xorn {#xorn style="border-bottom:thin solid"}
+### Xorn
 
 Medium elemental, neutral
 
