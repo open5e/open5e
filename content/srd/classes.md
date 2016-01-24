@@ -9,23 +9,23 @@ As a barbarian, you gain the following class features.
 
 #### Hit Points
 
-> **Hit Dice:** 1d12 per barbarian level
->
-> **Hit Points at 1st Level:** 12 + your Constitution modifier
->
-> **Hit Points at Higher Levels:** 1d12 (or 7) + your Constitution
-> modifier per barbarian level after 1st
+**Hit Dice:** 1d12 per barbarian level
+
+**Hit Points at 1st Level:** 12 + your Constitution modifier
+
+**Hit Points at Higher Levels:** 1d12 (or 7) + your Constitution
+modifier per barbarian level after 1st
 
 #### Proficiencies
 
-> **Armor:** Light armor, medium armor, shields **Weapons:** Simple
-> weapons, martial weapons **Tools:** None
->
-> **Saving Throws:** Strength, Constitution
+**Armor:** Light armor, medium armor, shields **Weapons:** Simple
+weapons, martial weapons **Tools:** None
+
+**Saving Throws:** Strength, Constitution
 
 **Skills:** Choose two from Animal Handling, Athletics,
 
-> Intimidation, Nature, Perception, and Survival
+Intimidation, Nature, Perception, and Survival
 
 #### Equipment
 
@@ -40,19 +40,20 @@ granted by your background:
 
 #### The Barbarian
 
-           > Rage   
+  | Rage   
   -------- -------- ----------------------------- ------------- ------
-  > 12th   > +4     > Ability Score Improvement
-  > 13th   > +5     > Brutal Critical (2 dice)
-  > 14th   > +5     > Path feature
-  > 15th   > +5     > Persistent Rage
-  > 16th   > +5     > Ability Score Improvement
-  > 17th   > +6     > Brutal Critical (3 dice)
-  > 18th   > +6     > Indomitable Might
-  > 19th   > +6     > Ability Score Improvement
-  > 20th   > +6     > Primal Champion
+  | 12th   | +4     | Ability Score Improvement
+  | 13th   | +5     | Brutal Critical (2 dice)
+  | 14th   | +5     | Path feature
+  | 15th   | +5     | Persistent Rage
+  | 16th   | +5     | Ability Score Improvement
+  | 17th   | +6     | Brutal Critical (3 dice)
+  | 18th   | +6     | Indomitable Might
+  | 19th   | +6     | Ability Score Improvement
+  | 20th   | +6     | Primal Champion
 
-> **Rage**
+
+**Rage**
 
 In battle, you fight with primal ferocity. On your turn, you can enter a
 rage as a bonus action.
@@ -62,22 +63,17 @@ heavy armor:
 
 -   You have advantage on Strength checks and Strength saving throws.
 
--   When you make a melee weapon attack using Strength, you gain a bonus
-    > to the damage roll that increases as you gain levels as a
-    > barbarian, as shown in the Rage Damage column of the
-    > Barbarian table.
+-   When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.
 
-> **Level**
->
-> **Proficiency**
->
-> **Bonus Features Rages**
->
-> **Rage Damage**
+**Level**
 
--   You have resistance to bludgeoning, piercing, and
+**Proficiency**
 
-> slashing damage.
+**Bonus Features Rages**
+
+**Rage Damage**
+
+-   You have resistance to bludgeoning, piercing, and slashing damage.
 >
 > 1st +2 Rage, Unarmored Defense
 >
@@ -87,23 +83,19 @@ heavy armor:
 >
 > 2 +2
 >
-> If you are able to cast spells, you can’t cast them or
+> If you are able to cast spells, you can’t cast them or concentrate on them while raging.
 >
-> concentrate on them while raging.
+> Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven’t attacked a hostile creature since your
 >
-> Your rage lasts for 1 minute. It ends early if you are knocked
-> unconscious or if your turn ends and you haven’t attacked a hostile
-> creature since your
->
-> last turn or taken damage since then. You can also
+> last turn or taken damage since then. You can also end your rage on your turn as a bonus action.
 >
 > 3rd +2 Primal Path 3 +2
 >
-> end your rage on your turn as a bonus action.
 >
-> 4th +2 Ability Score
 >
-> Improvement
+> 4th +2 Ability Score Improvement
+>
+>
 >
 > 5th +3 Extra Attack, Fast Movement
 >
@@ -111,14 +103,11 @@ heavy armor:
 >
 > 3 +2
 >
-> Once you have raged the number of times shown for your barbarian level
-> in the Rages column of the Barbarian table, you must finish a long
-> rest before you can rage again.
+> Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again.
 >
 > 6th +3 Path feature 4 +2
 
-### \
-Unarmored Defense
+### Unarmored Defense
 
 > 7th +3 Feral Instinct 4 +2
 >
@@ -132,9 +121,7 @@ Unarmored Defense
 >
 > 4 +3
 >
-> While you are not wearing any armor, your Armor Class equals 10 + your
-> Dexterity modifier + your Constitution modifier. You can use a shield
-> and still
+> While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still
 >
 > gain this benefit.
 >
@@ -144,71 +131,42 @@ Unarmored Defense
 
 ### Reckless Attack
 
-Starting at 2nd level, you can throw aside all concern for defense to
-attack with fierce desperation. When you make your first attack on your
-turn, you can decide to attack recklessly. Doing so gives you advantage
-on melee weapon attack rolls using Strength during this turn, but attack
-rolls against you have advantage until your next turn.
+Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.
 
 ### Danger Sense
 
-At 2nd level, you gain an uncanny sense of when things nearby aren’t as
-they should be, giving you an edge when you dodge away from danger.
+At 2nd level, you gain an uncanny sense of when things nearby aren’t as they should be, giving you an edge when you dodge away from danger.
 
-> You have advantage on Dexterity saving throws
-
-against effects that you can see, such as traps and spells. To gain this
-benefit, you can’t be blinded, deafened, or incapacitated.
+You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can’t be blinded, deafened, or incapacitated.
 
 ### Primal Path
 
-At 3rd level, you choose a path that shapes the nature of your rage.
-Choose the Path of the Berserker or the Path of the Totem Warrior, both
-detailed at the end of the class description. Your choice grants you
-features at 3rd level and again at 6th, 10th, and 14th levels.
+At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.
 
-### Ability Score Improvement
-
-When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
-you can increase one ability score of your choice by 2, or you can
-increase two ability scores of your choice by 1. As normal, you can’t
-increase an ability score above 20 using this feature.
+### Ability Score Improvement When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.
 
 ### Extra Attack
 
-Beginning at 5th level, you can attack twice, instead of once, whenever
-you take the Attack action on your turn.
+Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
-### Fast Movement 
+### Fast Movement
 
-Starting at 5th level, your speed increases by 10 feet while you aren’t
-wearing heavy armor.
+Starting at 5th level, your speed increases by 10 feet while you aren’t wearing heavy armor.
 
 ### Feral Instinct
 
-By 7th level, your instincts are so honed that you have advantage on
-initiative rolls.
+By 7th level, your instincts are so honed that you have advantage on initiative rolls. Additionally, if you are surprised at the beginning of combat and aren’t incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.
 
-Additionally, if you are surprised at the beginning of combat and aren’t
-incapacitated, you can act normally on your first turn, but only if you
-enter your rage before doing anything else on that turn.
+### Brutal Critical
 
-### \
-Brutal Critical
-
-Beginning at 9th level, you can roll one additional weapon damage die
-when determining the extra damage for a critical hit with a melee
-attack.
+Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.
 
 This increases to two additional dice at 13th level and three additional
 dice at 17th level.
 
 ### Relentless Rage
 
-Starting at 11th level, your rage can keep you fighting despite grievous
-wounds. If you drop to 0 hit points while you’re raging and don’t die
-outright, you can make a DC 10 Constitution saving throw. If you
-succeed, you drop to 1 hit point instead.
+Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you’re raging and don’t die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.
 
 > Each time you use this feature after the first, the
 
@@ -236,7 +194,7 @@ Constitution scores increase by 4. Your maximum for those scores is now
 For some barbarians, rage is a means to an end— that end being violence.
 The Path of the Berserker is a path of untrammeled fury, slick with
 blood. As you enter the berserker’s rage, you thrill in the chaos of
-battle, heedless of your own health or well-­‐‑being.
+battle, heedless of your own health or well-being.
 
 #### Frenzy
 
@@ -254,19 +212,9 @@ suspended for the duration of the rage.
 
 #### Intimidating Presence
 
-Beginning at 10th level, you can use your action to frighten someone
-with your menacing presence. When you do so, choose one creature that
-you can see within 30 feet of you. If the creature can see or hear you,
-it must succeed on a Wisdom saving throw (DC equal to 8 + your
-proficiency bonus + your Charisma modifier) or be frightened of you
-until the end of your next turn. On subsequent turns, you can use your
-action to extend the duration of this effect on the frightened creature
-until the end of your next turn. This effect ends if the creature ends
-its turn out of line of sight or more than 60 feet away from you.
+Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60 feet away from you.
 
-> If the creature succeeds on its saving throw, you
-
-can’t use this feature on that creature again for 24 hours.
+If the creature succeeds on its saving throw, you can’t use this feature on that creature again for 24 hours.
 
 #### Retaliation
 
@@ -280,34 +228,34 @@ Bard
 Class Features
 --------------
 
-> As a bard, you gain the following class features.
+As a bard, you gain the following class features.
 
 #### Hit Points
 
-> **Hit Dice:** 1d8 per bard level
->
-> **Hit Points at 1st Level:** 8 + your Constitution modifier
->
-> **Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution
-> modifier per bard level after 1st
+**Hit Dice:** 1d8 per bard level
+
+**Hit Points at 1st Level:** 8 + your Constitution modifier
+
+**Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution
+modifier per bard level after 1st
 
 #### Proficiencies
 
-> **Armor:** Light armor
->
-> **Weapons:** Simple weapons, hand crossbows, longswords, rapiers,
-> shortswords
->
-> **Tools:** Three musical instruments of your choice
->
-> **Saving Throws:** Dexterity, Charisma
->
-> **Skills:** Choose any three
+**Armor:** Light armor
+
+**Weapons:** Simple weapons, hand crossbows, longswords, rapiers,
+shortswords
+
+**Tools:** Three musical instruments of your choice
+
+**Saving Throws:** Dexterity, Charisma
+
+**Skills:** Choose any three
 
 #### Equipment
 
-> You start with the following equipment, in addition to the equipment
-> granted by your background:
+You start with the following equipment, in addition to the equipment
+granted by your background:
 
 -   (*a*) a rapier, (*b*) a longsword, or (*c*) any simple weapon
 
@@ -377,13 +325,13 @@ Class Features
   > 20th        > +6          > Superior Inspiration               > 4           > 22          > 4         > 3         > 3         > 3         > 3         > 2         > 2         > 1         > 1
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-> **Spellcasting**
->
-> You have learned to untangle and reshape the fabric of reality in
-> harmony with your wishes and music.
->
-> Your spells are part of your vast repertoire, magic that you can tune
-> to different situations.
+**Spellcasting**
+
+You have learned to untangle and reshape the fabric of reality in
+harmony with your wishes and music.
+
+Your spells are part of your vast repertoire, magic that you can tune
+to different situations.
 
 #### Cantrips
 
@@ -398,13 +346,13 @@ of 1st level and higher. To cast one of these spells, you must expend a
 slot of the spell’s level or higher. You regain all expended spell slots
 when you finish a long rest.
 
-> For example, if you know the 1st-­‐‑level spell *cure*
+For example, if you know the 1st-level spell *cure*
 
-*wounds* and have a 1st-­‐‑level and a 2nd-­‐‑level spell slot
+*wounds* and have a 1st-level and a 2nd-level spell slot
 available, you can cast *cure wounds* using either slot.
 
-> **Spells Known of 1st Level and Higher** You know four 1st-­‐‑level
-> spells of your choice from the bard spell list.
+**Spells Known of 1st Level and Higher** You know four 1st-level
+spells of your choice from the bard spell list.
 
 The Spells Known column of the Bard table shows when you learn more bard
 spells of your choice. Each of these spells must be of a level for which
@@ -426,11 +374,11 @@ spellcasting ability. In addition, you use your Charisma modifier when
 setting the saving throw DC for a bard spell you cast and when making an
 attack roll with one.
 
-> **Spell save DC** = 8 + your proficiency bonus + your Charisma
-> modifier
+**Spell save DC** = 8 + your proficiency bonus + your Charisma
+modifier
 >
-> **Spell attack modifier** = your proficiency bonus + your Charisma
-> modifier
+**Spell attack modifier** = your proficiency bonus + your Charisma
+modifier
 
 #### Ritual Casting
 
@@ -440,7 +388,7 @@ ritual tag.
 #### \
 Spellcasting Focus
 
-You can use a musical instrument (see chapter 5, “Equip-­‐‑ment”) as a
+You can use a musical instrument (see chapter 5, “Equip-ment”) as a
 spellcasting focus for your bard spells.
 
 ### Bardic Inspiration
@@ -517,7 +465,7 @@ of Bardic Inspiration when you finish a short or long rest.
 ### Countercharm
 
 At 6th level, you gain the ability to use musical notes or words of
-power to disrupt mind-­‐‑influencing effects. As an action, you can
+power to disrupt mind-influencing effects. As an action, you can
 start a performance that lasts until the end of your next turn. During
 that time, you and any friendly creatures within 30 feet of you have
 advantage on saving throws against being frightened or charmed. A
@@ -560,12 +508,12 @@ in fealty to a monarch or following the tenets of a deity. A noble who
 keeps such a bard as a herald or advisor knows that the bard would
 rather be honest than politic.
 
-> The college’s members gather in libraries and
+The college’s members gather in libraries and
 
 sometimes in actual colleges, complete with classrooms and dormitories,
 to share their lore with one another. They also meet at festivals or
 affairs of state, where they can expose corruption, unravel lies, and
-poke fun at self-­‐‑important figures of authority.
+poke fun at self-important figures of authority.
 
 #### Bonus Proficiencies
 
@@ -607,39 +555,38 @@ Cleric
 Class Features
 --------------
 
-> As a cleric, you gain the following class features.
+As a cleric, you gain the following class features.
 
 #### Hit Points
 
-> **Hit Dice:** 1d8 per cleric level
->
-> **Hit Points at 1st Level:** 8 + your Constitution modifier
->
-> **Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution
-> modifier per cleric level after 1st
+**Hit Dice:** 1d8 per cleric level
+
+**Hit Points at 1st Level:** 8 + your Constitution modifier
+
+**Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution
+modifier per cleric level after 1st
 
 #### Proficiencies
 
-> **Armor:** Light armor, medium armor, shields
->
-> **Weapons:** Simple weapons
->
-> **Tools:** None
->
-> **Saving Throws:** Wisdom, Charisma
->
-> **Skills:** Choose two from History, Insight, Medicine, Persuasion,
-> and Religion
+**Armor:** Light armor, medium armor, shields
+
+**Weapons:** Simple weapons
+
+**Tools:** None
+
+**Saving Throws:** Wisdom, Charisma
+
+**Skills:** Choose two from History, Insight, Medicine, Persuasion,
+and Religion
 
 #### Equipment
 
-> You start with the following equipment, in addition to the equipment
-> granted by your background:
+You start with the following equipment, in addition to the equipment
+granted by your background:
 
 -   (*a*) a mace or (*b*) a warhammer (if proficient)
 
--   (*a*) scale mail, (*b*) leather armor, or (*c*) chain mail
-    > (if proficient)
+-   (*a*) scale mail, (*b*) leather armor, or (*c*) chain mail (if proficient)
 
 -   (*a*) a light crossbow and 20 bolts or (*b*) any simple weapon
 
@@ -709,189 +656,104 @@ Class Features
 
 #### Cantrips
 
-> At 1st level, you know three cantrips of your choice from the cleric
-> spell list. You learn additional cleric cantrips of your choice at
-> higher levels, as shown in the Cantrips Known column of the Cleric
-> table.
+At 1st level, you know three cantrips of your choice from the cleric spell list. You learn additional cleric cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cleric table.
 
 #### Preparing and Casting Spells
 
-The Cleric table shows how many spell slots you have to cast your spells
-of 1st level and higher. To cast one of these spells, you must expend a
-slot of the spell’s level or higher. You regain all expended spell slots
-when you finish a long rest.
+ The Cleric table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.
 
-You prepare the list of cleric spells that are available for you to
-cast, choosing from the cleric spell list. When you do so, choose a
-number of cleric spells equal to your Wisdom modifier + your cleric
-level (minimum of one spell). The spells must be of a level for which
-you have spell slots.
+ You prepare the list of cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots.
 
-For example, if you are a 3rd-­‐‑level cleric, you have four
-1st-­‐‑level and two 2nd-­‐‑level spell slots. With a Wisdom of 16, your
-list of prepared spells can include six spells of 1st or 2nd level, in
-any combination. If you prepare the 1st-­‐‑level spell *cure wounds*,
-you can cast it using a 1st-­‐‑level or 2nd-­‐‑level slot. Casting the
-spell doesn’t remove it from your list of prepared spells.
+ For example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell *cure wounds*, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.
 
-You can change your list of prepared spells when you finish a long rest.
-Preparing a new list of cleric spells requires time spent in prayer and
-meditation: at least 1 minute per spell level for each spell on your
-list.
+ You can change your list of prepared spells when you finish a long rest. Preparing a new list of cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.
 
 #### Spellcasting Ability
 
-Wisdom is your spellcasting ability for your cleric spells. The power of
-your spells comes from your devotion to your deity. You use your Wisdom
-whenever a cleric spell refers to your spellcasting ability. In
-addition, you use your Wisdom modifier when setting the saving throw DC
-for a cleric spell you cast and when making an attack roll with one.
+Wisdom is your spellcasting ability for your cleric spells. The power of your spells comes from your devotion to your deity. You use your Wisdom whenever a cleric spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.
 
-> **Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier
->
-> **Spell attack modifier** = your proficiency bonus + your Wisdom
-> modifier
+**Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier
+
+**Spell attack modifier** = your proficiency bonus + your Wisdom modifier
 
 #### Ritual Casting
 
-You can cast a cleric spell as a ritual if that spell has the ritual tag
-and you have the spell prepared.
+You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared.
 
 #### Spellcasting Focus
 
-You can use a holy symbol (see chapter 5, “Equipment”) as a spellcasting
-focus for your cleric spells.
+You can use a holy symbol (see chapter 5, “Equipment”) as a spellcasting focus for your cleric spells.
 
 ### Divine Domain
 
-Choose one domain related to your deity: Knowledge, Life, Light, Nature,
-Tempest, Trickery, or War. Each
-
-domain is detailed at the end of the class description, and each one
-provides examples of gods associated with it. Your choice grants you
-domain spells and other features when you choose it at 1st level. It
-also grants you additional ways to use Channel Divinity when you gain
-that feature at 2nd level, and additional benefits at 6th, 8th, and 17th
-levels.
+Choose one domain related to your deity: Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Eac
+ domain is detailed at the end of the class description, and each one provides examples of gods associated with it. Your choice grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.
 
 #### Domain Spells
 
-Each domain has a list of spells—its domain spells— that you gain at the
-cleric levels noted in the domain description. Once you gain a domain
-spell, you always have it prepared, and it doesn’t count against the
-number of spells you can prepare each day.
+Each domain has a list of spells—its domain spells— that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day.
 
-If you have a domain spell that doesn’t appear on the cleric spell list,
-the spell is nonetheless a cleric spell for you.
+If you have a domain spell that doesn’t appear on the cleric spell list, the spell is nonetheless a cleric spell for you.
 
 ### Channel Divinity
 
-At 2nd level, you gain the ability to channel divine energy directly
-from your deity, using that energy to fuel magical effects. You start
-with two such effects: Turn Undead and an effect determined by your
-domain. Some domains grant you additional effects as you advance in
-levels, as noted in the domain description.
+At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.
 
-When you use your Channel Divinity, you choose which effect to create.
-You must then finish a short or long rest to use your Channel Divinity
-again.
+When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.
 
-Some Channel Divinity effects require saving throws. When you use such
-an effect from this class, the DC equals your cleric spell save DC.
+Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.
 
-> Beginning at 6th level, you can use your Channel
+Beginning at 6th level, you can use your Channel
 
-Divinity twice between rests, and beginning at 18th level, you can use
-it three times between rests. When you finish a short or long rest, you
-regain your expended uses.
+Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.
 
 #### Channel Divinity: Turn Undead
 
-As an action, you present your holy symbol and speak a prayer censuring
-the undead. Each undead that can see or hear you within 30 feet of you
-must make a Wisdom saving throw. If the creature fails its saving throw,
-it is turned for 1 minute or until it takes any damage.
+As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.
 
-A turned creature must spend its turns trying to move as far away from
-you as it can, and it can’t willingly move to a space within 30 feet of
-you. It also can’t take reactions. For its action, it can use only the
-Dash action or try to escape from an effect that prevents it from
-moving. If there’s nowhere to move, the creature can use the Dodge
-action.
+A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.
 
 ### Ability Score Improvement
 
-When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
-you can increase one ability score of your choice by 2, or you can
-increase two ability scores of your choice by 1. As normal, you can’t
-increase an ability score above 20 using this feature.
+When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.
 
 ### Destroy Undead
 
-Starting at 5th level, when an undead fails its saving throw against
-your Turn Undead feature, the creature is instantly destroyed if its
-challenge rating is at or below a certain threshold, as shown in the
-Destroy Undead table.
+Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold, as shown in the Destroy Undead table.
 
 #### Destroy Undead
 
-> **Cleric Level Destroys Undead of CR . . .**
->
-> 5th 1/2 or lower
-
-8th 1 or lower
-
-> 11th 2 or lower
->
-> 14th 3 or lower
->
-> 17th 4 or lower
+| **Cleric Level |Destroys Undead of CR . . .**
+----------------- ---------------------
+| 5th |1/2 or lower
+| 8th |1 or lower
+| 11th |2 or lower
+| 14th |3 or lower
+| 17th |4 or lower
 
 ### Divine Intervention
 
-Beginning at 10th level, you can call on your deity to intervene on your
-behalf when your need is great.
+Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.
 
-Imploring your deity’s aid requires you to use your action. Describe the
-assistance you seek, and roll percentile dice. If you roll a number
-equal to or lower than your cleric level, your deity intervenes. The GM
-chooses the nature of the intervention; the effect of any cleric spell
-or cleric domain spell would be appropriate.
+Imploring your deity’s aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The GM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate.
 
-If your deity intervenes, you can’t use this feature again for 7 days.
-Otherwise, you can use it again after you finish a long rest.
+If your deity intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.
 
-> At 20th level, your call for intervention succeeds
-
-automatically, no roll required.
+At 20th level, your call for intervention succeeds automatically, no roll required.
 
 ### Life Domain
 
-The Life domain focuses on the vibrant positive energy—one of the
-fundamental forces of the universe—that sustains all life. The gods of
-life promote vitality and health through healing the sick and wounded,
-caring for those in need, and driving away the forces of death and
-undeath. Almost any non-­‐‑evil deity can claim influence over this
-domain, particularly agricultural deities (such as Chauntea, Arawai, and
-Demeter), sun gods (such as Lathander, Pelor, and Re-­‐‑Horakhty), gods
-of healing or
-
-endurance (such as Ilmater, Mishakal, Apollo, and Diancecht), and gods
-of home and community (such as Hestia, Hathor, and Boldrei).
+The Life domain focuses on the vibrant positive energy—one of the fundamental forces of the universe—that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities (such as Chauntea, Arawai, and Demeter), sun gods (such as Lathander, Pelor, and Re-Horakhty), gods of healing or endurance (such as Ilmater, Mishakal, Apollo, and Diancecht), and gods of home and community (such as Hestia, Hathor, and Boldrei).
 
 #### Life Domain Spells
 
-> **Cleric Level Spells**
->
-> 1st *bless, cure wounds*
->
-> 3rd *lesser restoration, spiritual weapon*
->
-> 5th *beacon of hope, revivify*
->
-> 7th *death ward, guardian of faith*
->
-> 9th *mass cure wounds, raise dead*
+| **Cleric Level** | **Spells**
+----------- ------------
+| 1st | *bless, cure wounds*
+| 3rd | *lesser restoration, spiritual weapon*
+| 5th | *beacon of hope, revivify*
+| 7th | *death ward, guardian of faith*
+| 9th | *mass cure wounds, raise dead*
 
 #### Bonus Proficiency
 
@@ -900,44 +762,23 @@ heavy armor.
 
 #### Disciple of Life
 
-Also starting at 1st level, your healing spells are more effective.
-Whenever you use a spell of 1st level or higher to restore hit points to
-a creature, the creature regains additional hit points equal to 2 + the
-spell’s level.
+Also starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell’s level.
 
-> **Channel Divinity: Preserve Life** Starting at 2nd level, you can use
-> your Channel Divinity to heal the badly injured.
+**Channel Divinity: Preserve Life** Starting at 2nd level, you can use your Channel Divinity to heal the badly injured.
 
-As an action, you present your holy symbol and evoke healing energy that
-can restore a number of hit points equal to five times your cleric
-level. Choose any creatures within 30 feet of you, and divide those hit
-points among them. This feature can restore a creature to no more than
-half of its hit point maximum. You can’t use this feature on an undead
-or a construct.
+As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level. Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can’t use this feature on an undead or a construct.
 
 #### Blessed Healer
 
-Beginning at 6th level, the healing spells you cast on others heal you
-as well. When you cast a spell of 1st level or higher that restores hit
-points to a creature other than you, you regain hit points equal to 2 +
-the spell’s level.
+Beginning at 6th level, the healing spells you cast on others heal you as well. When you cast a spell of 1st level or higher that restores hit points to a creature other than you, you regain hit points equal to 2 + the spell’s level.
 
 #### Divine Strike
 
-At 8th level, you gain the ability to infuse your weapon strikes with
-divine energy. Once on each of your turns when you hit a creature with a
-weapon attack, you can cause the attack to deal an extra 1d8 radiant
-damage to the target. When you reach 14th level, the extra damage
-increases to 2d8.
+At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.
 
 #### Supreme Healing
 
-Starting at 17th level, when you would normally roll one or more dice to
-restore hit points with a spell, you instead use the highest number
-possible for
-
-each die. For example, instead of restoring 2d6 hit points to a
-creature, you restore 12.
+Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die. For example, instead of restoring 2d6 hit points to a creature, you restore 12.
 
 Druid
 =====
@@ -945,37 +786,33 @@ Druid
 Class Features
 --------------
 
-> As a druid, you gain the following class features.
+As a druid, you gain the following class features.
 
 #### Hit Points
 
-> **Hit Dice:** 1d8 per druid level
->
-> **Hit Points at 1st Level:** 8 + your Constitution modifier
->
-> **Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution
-> modifier per druid level after 1st
+**Hit Dice:** 1d8 per druid level
+
+**Hit Points at 1st Level:** 8 + your Constitution modifier
+
+**Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution modifier per druid level after 1st
 
 #### Proficiencies
 
-> **Armor:** Light armor, medium armor, shields (druids will not wear
-> armor or use shields made of metal)
->
-> **Weapons:** Clubs, daggers, darts, javelins, maces, quarterstaffs,
-> scimitars, sickles, slings, spears
->
-> **Tools:** Herbalism kit
->
-> **Saving Throws:** Intelligence, Wisdom
->
-> **Skills:** Choose two from Arcana, Animal Handling,
->
-> Insight, Medicine, Nature, Perception, Religion, and Survival
+**Armor:** Light armor, medium armor, shields (druids will not wear armor or use shields made of metal)
+
+**Weapons:** Clubs, daggers, darts, javelins, maces, quarterstaffs, scimitars, sickles, slings, spears
+
+**Tools:** Herbalism kit
+
+**Saving Throws:** Intelligence, Wisdom
+
+**Skills:** Choose two from Arcana, Animal Handling,
+
+Insight, Medicine, Nature, Perception, Religion, and Survival
 
 #### Equipment
 
-> You start with the following equipment, in addition to the equipment
-> granted by your background:
+You start with the following equipment, in addition to the equipment granted by your background:
 
 -   (*a*) a wooden shield or (*b*) any simple weapon
 
@@ -1035,19 +872,19 @@ Class Features
   > 20th        > +6          > Archdruid                               > 4           > 4         > 3         > 3         > 3         > 3         > 2         > 2         > 1         > 1
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-> **Druidic**
->
-> You know Druidic, the secret language of druids. You can speak the
-> language and use it to leave hidden messages. You and others who know
-> this language automatically spot such a message. Others spot the
-> message’s presence with a successful DC 15 Wisdom
->
-> (Perception) check but can’t decipher it without magic.
+**Druidic**
+
+You know Druidic, the secret language of druids. You can speak the
+language and use it to leave hidden messages. You and others who know
+this language automatically spot such a message. Others spot the
+message’s presence with a successful DC 15 Wisdom
+
+(Perception) check but can’t decipher it without magic.
 
 ### Spellcasting
 
-> Drawing on the divine essence of nature itself, you can cast spells to
-> shape that essence to your will.
+Drawing on the divine essence of nature itself, you can cast spells to
+shape that essence to your will.
 
 #### Cantrips
 
@@ -1062,17 +899,16 @@ of 1st level and higher. To cast one of these druid spells, you must
 expend a slot of the spell’s level or higher. You regain all expended
 spell slots when you finish a long rest.
 
-> You prepare the list of druid spells that are
+You prepare the list of druid spells that are
 
 available for you to cast, choosing from the druid spell list. When you
 do so, choose a number of druid spells equal to your Wisdom modifier +
 your druid level (minimum of one spell). The spells must be of a level
 for which you have spell slots.
 
-#### \
-Spellcasting Focus
+#### Spellcasting Focus
 
-You can use a druidic focus (see chapter 5, “Equip-­‐‑ ment”) as a
+You can use a druidic focus (see chapter 5, “Equip- ment”) as a
 spellcasting focus for your druid spells.
 
 ### Wild Shape
@@ -1090,13 +926,13 @@ have a flying or swimming speed.
 
 **Max.**
 
-> For example, if you are a 3rd-­‐‑level druid, you have
->
-> **Level**
->
-> **CR Limitations Example**
+For example, if you are a 3rd-level druid, you have
 
-four 1st-­‐‑level and two 2nd-­‐‑level spell slots. With a
+**Level**
+
+**CR Limitations Example**
+
+four 1st-level and two 2nd-level spell slots. With a
 
 Wisdom of 16, your list of prepared spells can
 
@@ -1104,90 +940,41 @@ Wisdom of 16, your list of prepared spells can
 >
 > Wolf
 
-include six spells of 1st or 2nd level, in any
-
-combination. If you prepare the 1st-­‐‑level spell *cure wounds,* you
-can cast it using a 1st-­‐‑level or 2nd-­‐‑level slot. Casting the spell
-doesn’t remove it from your list of prepared spells.
-
-You can also change your list of prepared spells when you finish a long
-rest. Preparing a new list of druid spells requires time spent in prayer
-and meditation: at least 1 minute per spell level for each spell on your
-list.
-
-#### Spellcasting Ability
-
-Wisdom is your spellcasting ability for your druid spells, since your
-magic draws upon your devotion and attunement to nature. You use your
-Wisdom whenever a spell refers to your spellcasting ability. In
-addition, you use your Wisdom modifier when setting the saving throw DC
-for a druid spell you cast and when making an attack roll with one.
-
-> **Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier
->
-> **Spell attack modifier** = your proficiency bonus + your Wisdom
-> modifier
-
-#### Ritual Casting
-
-You can cast a druid spell as a ritual if that spell has the ritual tag
-and you have the spell prepared.
-
 > 4th 1/2 No flying speed Crocodile
 >
 > 8th 1 — Giant
 
 eagle
 
-You can stay in a beast shape for a number of hours equal to half your
-druid level (rounded down). You then revert to your normal form unless
-you expend another use of this feature. You can revert to your normal
-form earlier by using a bonus action on your turn. You automatically
-revert if you fall unconscious, drop to 0 hit points, or die.
+include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell *cure wounds,* you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.
+
+You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.
+
+#### Spellcasting Ability
+
+Wisdom is your spellcasting ability for your druid spells, since your magic draws upon your devotion and attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a druid spell you cast and when making an attack roll with one.
+
+**Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier
+
+**Spell attack modifier** = your proficiency bonus + your Wisdom modifier
+
+#### Ritual Casting
+
+You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared.
+
+You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.
 
 While you are transformed, the following rules apply:
 
--   Your game statistics are replaced by the statistics of the beast,
-    > but you retain your alignment, personality, and Intelligence,
-    > Wisdom, and Charisma scores. You also retain all of your skill and
-    > saving throw proficiencies, in addition to gaining those of
-    > the creature. If the creature has the same proficiency as you and
-    > the bonus in its stat block is higher than yours, use the
-    > creature’s bonus instead of yours. If the creature has any
-    > legendary or lair actions, you can’t use them.
+-   Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature’s bonus instead of yours. If the creature has any legendary or lair actions, you can’t use them.
 
--   When you transform, you assume the beast’s hit points and Hit Dice.
-    > When you revert to your normal form, you return to the number of
-    > hit points you had before you transformed. However, if you revert
-    > as a result of dropping to 0 hit points, any excess damage carries
-    > over to your normal form. For example, if you take 10 damage in
-    > animal form and have only 1 hit point left, you
+-   When you transform, you assume the beast’s hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.
 
-> revert and take 9 damage. As long as the excess damage doesn’t reduce
-> your normal form to 0 hit points, you aren’t knocked unconscious.
+-   You can’t cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn’t break your concentration on a spell you’ve already cast, however, or prevent you from taking actions that are part of a spell, such as *call lightning*, that you’ve already cast.
 
--   You can’t cast spells, and your ability to speak or take any action
-    > that requires hands is limited to the capabilities of your
-    > beast form. Transforming doesn’t break your concentration on a
-    > spell you’ve already cast, however, or prevent you from taking
-    > actions that are part of a spell, such as *call lightning*, that
-    > you’ve already cast.
+-   You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can’t use any of your special senses, such as darkvision, unless your new form also has that sense.
 
--   You retain the benefit of any features from your class, race, or
-    > other source and can use them if the new form is physically
-    > capable of doing so. However, you can’t use any of your special
-    > senses, such as darkvision, unless your new form also has
-    > that sense.
-
--   You choose whether your equipment falls to the ground in your space,
-    > merges into your new form, or is worn by it. Worn equipment
-    > functions as normal, but the GM decides whether it is practical
-    > for the new form to wear a piece of equipment, based on the
-    > creature’s shape and size. Your equipment doesn’t change size or
-    > shape to match the new form, and any equipment that the new form
-    > can’t wear must either fall to the ground or merge with it.
-    > Equipment that merges with the form has no effect until you leave
-    > the form.
+-   You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the GM decides whether it is practical for the new form to wear a piece of equipment, based on the creature’s shape and size. Your equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.
 
 ### Druid Circle
 
@@ -1203,7 +990,7 @@ you can increase one ability score of your choice by 2, or you can
 increase two ability scores of your choice by 1. As normal, you can’t
 increase an ability score above 20 using this feature.
 
-### Timeless Body 
+### Timeless Body
 
 Starting at 18th level, the primal magic that you wield causes you to
 age more slowly. For every 10 years that pass, your body ages only 1
@@ -1252,9 +1039,9 @@ combined level that is equal to or less than half your druid level
 (rounded up), and none of the slots can be 6th level or higher. You
 can’t use this feature again until you finish a long rest.
 
-For example, when you are a 4th-­‐‑level druid, you can recover up to
-two levels worth of spell slots. You can recover either a 2nd-­‐‑level
-slot or two 1st-­‐‑level slots.
+For example, when you are a 4th-level druid, you can recover up to
+two levels worth of spell slots. You can recover either a 2nd-level
+slot or two 1st-level slots.
 
 #### Circle Spells
 
@@ -1271,87 +1058,66 @@ list, the spell is nonetheless a druid spell for you.
 
 #### Arctic
 
-> **Druid Level Circle Spells**
->
-> 3rd *hold person*, *spike growth*
->
-> 5th *sleet storm*, *slow*
->
-> 7th *freedom of movement*, *ice storm*
->
-> 9th *commune with nature*, *cone of cold*
+| **Druid Level** | **Circle Spells**
+---------- -------------
+| 3rd | *hold person*, *spike growth*
+| 5th | *sleet storm*, *slow*
+| 7th | *freedom of movement*, *ice storm*
+| 9th | *commune with nature*, *cone of cold*
 
 #### Coast
 
-> **Druid Level Circle Spells**
->
-> 3rd *mirror image*, *misty step*
->
-> 5th *water breathing*, *water walk*
->
-> 7th *control water*, *freedom of movement*
->
-> 9th *conjure elemental*, *scrying*
+| **Druid Level** | **Circle Spells**
+---------- -------------
+| 3rd | *mirror image*, *misty step*
+| 5th | *water breathing*, *water walk*
+| 7th | *control water*, *freedom of movement*
+| 9th | *conjure elemental*, *scrying*
 
 #### Desert
 
-> **Druid Level Circle Spells**
->
-> 3rd *blur*, *silence*
->
-> 5th *create food and water*, *protection from energy*
->
-> 7th *blight*, *hallucinatory terrain*
->
-> 9th *insect plague*, *wall of stone*
+| **Druid Level**|  **Circle Spells**
+---------- -------------
+| 3rd | *blur*, *silence*
+| 5th | *create food and water*, *protection from energy*
+| 7th | *blight*, *hallucinatory terrain*
+| 9th | *insect plague*, *wall of stone*
 
 #### Forest
 
-> **Druid Level Circle Spells**
->
-> 3rd *barkskin*, *spider climb*
->
-> 5th *call lightning*, *plant growth*
->
-> 7th *divination*, *freedom of movement*
->
-> 9th *commune with nature*, *tree stride*
+| **Druid Level** | **Circle Spells**
+---------- -------------
+| 3rd | *barkskin*, *spider climb*
+| 5th | *call lightning*, *plant growth*
+| 7th | *divination*, *freedom of movement*
+| 9th | *commune with nature*, *tree stride*
 
 #### Grassland
 
-> **Druid Level Circle Spells**
->
-> 3rd *invisibility*, *pass without trace*
->
-> 5th *daylight*, *haste*
->
-> 7th *divination*, *freedom of movement*
->
-> 9th *dream*, *insect plague*
+| **Druid Level** | **Circle Spells**
+---------- -------------
+| 3rd | *invisibility*, *pass without trace*
+| 5th | *daylight*, *haste*
+| 7th | *divination*, *freedom of movement*
+| 9th | *dream*, *insect plague*
 
 #### Mountain
 
-> **Druid Level Circle Spells**
->
-> 3rd *spider climb*, *spike growth*
->
-> 5th *lightning bolt*, *meld into stone*
->
-> 7th *stone shape*, *stoneskin*
->
-> 9th *passwall*, *wall of stone*
+| **Druid Level** | **Circle Spells**
+---------- -------------
+| 3rd | *spider climb*, *spike growth*
+| 5th | *lightning bolt*, *meld into stone*
+| 7th | *stone shape*, *stoneskin*
+| 9th | *passwall*, *wall of stone*
 
 #### Swamp
 
-> **Druid Level Circle Spells**
->
-> 3rd *acid arrow, darkness*
->
-> 5th *water walk*, *stinking cloud*
->
-> 7th *freedom of movement*, *locate creature*
->
-> 9th *insect plague*, *scrying*
+| **Druid Level** | **Circle Spells**
+---------- -------------
+| 3rd | *acid arrow, darkness*
+| 5th | *water walk*, *stinking cloud*
+| 7th | *freedom of movement*, *locate creature*
+| 9th | *insect plague*, *scrying*
 
 #### Land’s Stride
 
@@ -1378,36 +1144,20 @@ throw against your druid spell save DC. On a failed save, the creature
 must choose a different target, or the attack automatically misses. On a
 successful save, the creature is immune to this effect for 24 hours.
 
-> The creature is aware of this effect before it makes
+The creature is aware of this effect before it makes
 
 its attack against you.
 
 ##### Sacred Plants and Wood
+A druid holds certain plants to be sacred, particularly alder, ash, birch, elder, hazel, holly, juniper, mistletoe, oak, rowan, willow, and yew. Druids often use such plants as part of a spellcasting focus, incorporating lengths of oak or yew or sprigs of mistletoe.
 
-> A druid holds certain plants to be sacred, particularly alder, ash,
-> birch, elder, hazel, holly, juniper, mistletoe, oak, rowan, willow,
-> and yew. Druids often use such plants as part of a spellcasting focus,
-> incorporating lengths of oak or yew or sprigs of mistletoe.
->
-> Similarly, a druid uses such woods to make other objects, such as
-> weapons and shields. Yew is associated with death and rebirth, so
-> weapon handles for scimitars or sickles might be fashioned from it.
-> Ash is associated with life and oak with strength. These woods make
-> excellent hafts or whole weapons, such as clubs or quarterstaffs, as
-> well as shields. Alder is associated with air, and it might be used
-> for thrown weapons, such as darts or javelins.
->
-> Druids from regions that lack the plants described here have chosen
-> other plants to take on similar uses. For instance, a druid of a
-> desert region might value the yucca tree and cactus plants.
+Similarly, a druid uses such woods to make other objects, such as weapons and shields. Yew is associated with death and rebirth, so weapon handles for scimitars or sickles might be fashioned from it. Ash is associated with life and oak with strength. These woods make excellent hafts or whole weapons, such as clubs or quarterstaffs, as well as shields. Alder is associated with air, and it might be used for thrown weapons, such as darts or javelins.
+
+Druids from regions that lack the plants described here have chosen other plants to take on similar uses. For instance, a druid of a desert region might value the yucca tree and cactus plants.
 
 ##### Druids and the Gods
 
-> Some druids venerate the forces of nature themselves, but most druids
-> are devoted to one of the many nature deities worshiped in the
-> multiverse (the lists of gods in appendix B include many such
-> deities). The worship of these deities is often considered a more
-> ancient tradition than the faiths of clerics and urbanized peoples.
+Some druids venerate the forces of nature themselves, but most druids are devoted to one of the many nature deities worshiped in the multiverse (the lists of gods in appendix B include many such deities). The worship of these deities is often considered a more ancient tradition than the faiths of clerics and urbanized peoples.
 
 Fighter
 =======
@@ -1415,36 +1165,34 @@ Fighter
 Class Features
 --------------
 
-> As a fighter, you gain the following class features.
+As a fighter, you gain the following class features.
 
 #### Hit Points
 
-> **Hit Dice:** 1d10 per fighter level
->
-> **Hit Points at 1st Level:** 10 + your Constitution modifier
->
-> **Hit Points at Higher Levels:** 1d10 (or 6) + your Constitution
-> modifier per fighter level after 1st
+**Hit Dice:** 1d10 per fighter level
+
+**Hit Points at 1st Level:** 10 + your Constitution modifier
+
+**Hit Points at Higher Levels:** 1d10 (or 6) + your Constitution modifier per fighter level after 1st
 
 #### Proficiencies
 
 > **Armor:** All armor, shields
->
+
 > **Weapons:** Simple weapons, martial weapons
->
+
 > **Tools:** None
->
+
 > **Saving Throws:** Strength, Constitution
->
+
 > **Skills:** Choose two skills from Acrobatics, Animal
->
+
 > Handling, Athletics, History, Insight, Intimidation, Perception, and
 > Survival
 
 #### Equipment
 
-> You start with the following equipment, in addition to the equipment
-> granted by your background:
+You start with the following equipment, in addition to the equipment granted by your background:
 
 -   (*a*) chain mail or (*b*) leather armor, longbow, and 20 arrows
 
@@ -1483,7 +1231,7 @@ Class Features
 > melee weapon that you are wielding with two hands, you can reroll the
 > die and must use the new roll, even if the new roll is a 1 or a
 >
-> 2\. The weapon must have the two-­‐‑handed or versatile property for you
+> 2\. The weapon must have the two-handed or versatile property for you
 > to gain this benefit.
 
 #### Protection
@@ -1494,7 +1242,7 @@ Class Features
 
 #### Two-Weapon Fighting
 
-> When you engage in two-­‐‑weapon fighting, you can add your ability
+> When you engage in two-weapon fighting, you can add your ability
 > modifier to the damage of the second attack.
 
 ### Second Wind
@@ -1515,7 +1263,7 @@ Once you use this feature, you must finish a short or long rest before
 you can use it again. Starting at 17th level, you can use it twice
 before a rest, but only once on the same turn.
 
-### Martial Archetype 
+### Martial Archetype
 
 At 3rd level, you choose an archetype that you strive to emulate in your
 combat styles and techniques. Choose Champion, Battle Master, or
@@ -1671,7 +1419,7 @@ History, Insight, Religion, and Stealth
 >
 > At 1st level, your practice of martial arts gives you mastery of
 > combat styles that use unarmed strikes and monk weapons, which are
-> shortswords and any simple melee weapons that don’t have the two-­‐‑
+> shortswords and any simple melee weapons that don’t have the two-
 > handed or heavy property.
 >
 > You gain the following benefits while you are unarmed or wielding only
@@ -2050,7 +1798,7 @@ you gain a +2 bonus to damage rolls with that weapon.
 
 When you roll a 1 or 2 on a damage die for an attack you make with a
 melee weapon that you are wielding with two hands, you can reroll the
-die and must use the new roll. The weapon must have the two-­‐‑handed or
+die and must use the new roll. The weapon must have the two-handed or
 versatile property for you to gain this benefit.
 
 #### Protection
@@ -2078,11 +1826,11 @@ number of paladin spells equal to your Charisma modifier + half your
 paladin level, rounded down (minimum of one spell). The spells must be
 of a level for which you have spell slots.
 
-For example, if you are a 5th-­‐‑level paladin, you have four
-1st-­‐‑level and two 2nd-­‐‑level spell slots. With a Charisma of 14,
+For example, if you are a 5th-level paladin, you have four
+1st-level and two 2nd-level spell slots. With a Charisma of 14,
 your list of prepared spells can include four spells of 1st or 2nd
-level, in any combination. If you prepare the 1st-­‐‑level spell *cure
-wounds,* you can cast it using a 1st-­‐‑level or a 2nd-­‐‑ level slot.
+level, in any combination. If you prepare the 1st-level spell *cure
+wounds,* you can cast it using a 1st-level or a 2nd- level slot.
 Casting the spell doesn’t remove it from your list of prepared spells.
 
 You can change your list of prepared spells when you finish a long rest.
@@ -2114,7 +1862,7 @@ spells.
 Starting at 2nd level, when you hit a creature with a melee weapon
 attack, you can expend one spell slot to deal radiant damage to the
 target, in addition to the weapon’s damage. The extra damage is 2d8 for
-a 1st-­‐‑level spell slot, plus 1d8 for each spell level
+a 1st-level spell slot, plus 1d8 for each spell level
 
 higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the
 target is an undead or a fiend.
@@ -2160,7 +1908,7 @@ your Channel Divinity again.
 Some Channel Divinity effects require saving throws. When you use such
 an effect from this class, the DC equals your paladin spell save DC.
 
-### Ability Score Improvement 
+### Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
@@ -2282,7 +2030,7 @@ holding with positive energy, using your Channel Divinity. For 1 minute,
 you add your Charisma modifier to attack rolls made with
 
 that weapon (with a minimum bonus of +1). The weapon also emits bright
-light in a 20-­‐‑foot radius and dim light 20 feet beyond that. If the
+light in a 20-foot radius and dim light 20 feet beyond that. If the
 weapon is not already magical, it becomes magical for the duration.
 
 You can end this effect on your turn as part of any other action. If you
@@ -2317,7 +2065,7 @@ At 18th level, the range of this aura increases to 30 feet.
 #### Holy Nimbus
 
 At 20th level, as an action, you can emanate an aura of sunlight. For 1
-minute, bright light shines from you in a 30-­‐‑foot radius, and dim
+minute, bright light shines from you in a 30-foot radius, and dim
 light shines 30 feet beyond that.
 
 Whenever an enemy creature starts its turn in the bright light, the
@@ -2496,7 +2244,7 @@ you gain a +2 bonus to damage rolls with that weapon.
 #### \
 Two-Weapon Fighting
 
-When you engage in two-­‐‑weapon fighting, you can add your ability
+When you engage in two-weapon fighting, you can add your ability
 modifier to the damage of the second attack.
 
 ### Spellcasting
@@ -2513,11 +2261,11 @@ of 1st level and higher. To cast one of these spells, you must expend a
 slot of the spell’s level or higher. You regain all expended spell slots
 when you finish a long rest.
 
-For example, if you know the 1st-­‐‑level spell *animal friendship* and
-have a 1st-­‐‑level and a 2nd-­‐‑level spell slot available, you can
+For example, if you know the 1st-level spell *animal friendship* and
+have a 1st-level and a 2nd-level spell slot available, you can
 cast *animal friendship* using either slot.
 
-> **Spells Known of 1st Level and Higher** You know two 1st-­‐‑level
+> **Spells Known of 1st Level and Higher** You know two 1st-level
 > spells of your choice from the ranger spell list.
 
 The Spells Known column of the Ranger table shows when you learn more
@@ -3084,11 +2832,11 @@ spells of 1st level and higher. To cast one of these sorcerer spells,
 you must expend a slot of the spell’s level or higher. You regain all
 expended spell slots when you finish a long rest.
 
-For example, if you know the 1st-­‐‑level spell *burning hands* and have
-a 1st-­‐‑level and a 2nd-­‐‑level spell slot available, you can cast
+For example, if you know the 1st-level spell *burning hands* and have
+a 1st-level and a 2nd-level spell slot available, you can cast
 *burning hands* using either slot.
 
-> **Spells Known of 1st Level and Higher** You know two 1st-­‐‑level
+> **Spells Known of 1st Level and Higher** You know two 1st-level
 > spells of your choice from the sorcerer spell list.
 
 The Spells Known column of the Sorcerer table shows when you learn more
@@ -3320,7 +3068,7 @@ increases by 1 and increases by 1 again whenever you gain a level in
 this class.
 
 Additionally, parts of your skin are covered by a thin sheen of
-dragon-­‐‑like scales. When you aren’t wearing armor, your AC equals 13
+dragon-like scales. When you aren’t wearing armor, your AC equals 13
 + your Dexterity modifier.
 
 #### Elemental Affinity
@@ -3452,13 +3200,13 @@ same level. To cast one of your warlock spells of 1st level or higher,
 you must expend a spell slot. You regain all expended spell slots when
 you finish a short or long rest.
 
-For example, when you are 5th level, you have two 3rd-­‐‑level spell
-slots. To cast the 1st-­‐‑level spell *thunderwave*, you must spend one
-of those slots, and you cast it as a 3rd-­‐‑level spell.
+For example, when you are 5th level, you have two 3rd-level spell
+slots. To cast the 1st-level spell *thunderwave*, you must spend one
+of those slots, and you cast it as a 3rd-level spell.
 
 #### Spells Known of 1st Level and Higher
 
-At 1st level, you know two 1st-­‐‑level spells of your choice from the
+At 1st level, you know two 1st-level spells of your choice from the
 warlock spell list.
 
 The Spells Known column of the Warlock table shows when you learn more
@@ -3546,8 +3294,8 @@ it appears whenever you create your pact weapon thereafter. You can’t
 affect an artifact or a sentient weapon in this way. The weapon ceases
 being your
 
-pact weapon if you die, if you perform the 1-­‐‑hour ritual on a
-different weapon, or if you use a 1-­‐‑hour ritual to break your bond to
+pact weapon if you die, if you perform the 1-hour ritual on a
+different weapon, or if you use a 1-hour ritual to break your bond to
 it. The weapon appears at your feet if it is in the extradimensional
 space when the bond breaks.
 
@@ -3560,7 +3308,7 @@ you can cast those cantrips at will. They don’t count against your
 number of cantrips known. If they don’t appear on the warlock spell
 list, they are nonetheless warlock spells for you.
 
-If you lose your Book of Shadows, you can perform a 1-­‐‑hour ceremony
+If you lose your Book of Shadows, you can perform a 1-hour ceremony
 to receive a replacement from your patron. This ceremony can be
 performed during a short or long rest, and it destroys the previous
 book. The book turns to ash when you die.
@@ -3575,15 +3323,15 @@ increase an ability score above 20 using this feature.
 ### Mystic Arcanum
 
 At 11th level, your patron bestows upon you a magical secret called an
-arcanum. Choose one 6th-­‐‑ level spell from the warlock spell list as
+arcanum. Choose one 6th- level spell from the warlock spell list as
 this arcanum.
 
 You can cast your arcanum spell once without expending a spell slot. You
 must finish a long rest before you can do so again.
 
 At higher levels, you gain more warlock spells of your choice that can
-be cast in this way: one 7th-­‐‑ level spell at 13th level, one
-8th-­‐‑level spell at 15th level, and one 9th-­‐‑level spell at 17th
+be cast in this way: one 7th- level spell at 13th level, one
+8th-level spell at 15th level, and one 9th-level spell at 17th
 level. You regain all uses of your Mystic Arcanum when you finish a long
 rest.
 
@@ -3644,7 +3392,7 @@ so again until you finish a long rest.
 > *Prerequisite: Pact of the Tome feature*
 
 You can now inscribe magical rituals in your Book of Shadows. Choose two
-1st-­‐‑level spells that have the ritual tag from any class’s spell list
+1st-level spells that have the ritual tag from any class’s spell list
 (the two needn’t be from the same list). The spells appear in the book
 and don’t count against the number of spells you know. With your Book of
 Shadows in hand, you can cast the chosen spells as rituals. You can’t
@@ -3698,7 +3446,7 @@ You can read all writing.
 
 #### Fiendish Vigor
 
-You can cast *false life* on yourself at will as a 1st-­‐‑level spell,
+You can cast *false life* on yourself at will as a 1st-level spell,
 without expending a spell slot or material components.
 
 #### Gaze of Two Minds
@@ -3848,7 +3596,7 @@ You have made a pact with a fiend from the lower planes of existence, a
 being whose aims are evil, even if you strive against those aims. Such
 beings desire the corruption or destruction of all things, ultimately
 including you. Fiends powerful enough to forge a pact include demon
-lords such as Demogorgon, Orcus, Fraz’Urb-­‐‑luu, and Baphomet;
+lords such as Demogorgon, Orcus, Fraz’Urb-luu, and Baphomet;
 archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit
 fiends and balors that are especially mighty; and ultroloths and other
 lords of the yugoloths.
@@ -4027,7 +3775,7 @@ Class Features
 
 #### Spellbook
 
-> At 1st level, you have a spellbook containing six 1st-­‐‑ level wizard
+> At 1st level, you have a spellbook containing six 1st- level wizard
 > spells of your choice. Your spellbook is the repository of the wizard
 > spells you know, except your cantrips, which are fixed in your mind.
 
@@ -4043,12 +3791,12 @@ cast. To do so, choose a number of wizard spells from your spellbook
 equal to your Intelligence modifier + your wizard level (minimum of one
 spell). The spells must be of a level for which you have spell slots.
 
-For example, if you’re a 3rd-­‐‑level wizard, you have four 1st-­‐‑level
-and two 2nd-­‐‑level spell slots. With an Intelligence of 16, your list
+For example, if you’re a 3rd-level wizard, you have four 1st-level
+and two 2nd-level spell slots. With an Intelligence of 16, your list
 of prepared spells can include six spells of 1st or 2nd level, in any
-combination, chosen from your spellbook. If you prepare the 1st-­‐‑level
-spell *magic missile,* you can cast it using a 1st-­‐‑level or a
-2nd-­‐‑level slot. Casting the spell doesn’t remove it from your list of
+combination, chosen from your spellbook. If you prepare the 1st-level
+spell *magic missile,* you can cast it using a 1st-level or a
+2nd-level slot. Casting the spell doesn’t remove it from your list of
 prepared spells.
 
 You can change your list of prepared spells when you finish a long rest.
@@ -4098,9 +3846,9 @@ expended spell slots to recover. The spell slots can have a combined
 level that is equal to or less than half your wizard level (rounded up),
 and none of the slots can be 6th level or higher.
 
-For example, if you’re a 4th-­‐‑level wizard, you can recover up to two
-levels worth of spell slots. You can recover either a 2nd-­‐‑level spell
-slot or two 1st-­‐‑level spell slots.
+For example, if you’re a 4th-level wizard, you can recover up to two
+levels worth of spell slots. You can recover either a 2nd-level spell
+slot or two 1st-level spell slots.
 
 ### Arcane Tradition
 
@@ -4122,8 +3870,8 @@ increase an ability score above 20 using this feature.
 ### Spell Mastery
 
 At 18th level, you have achieved such mastery over certain spells that
-you can cast them at will. Choose a 1st-­‐‑level wizard spell and a
-2nd-­‐‑level wizard spell that are in your spellbook. You can cast those
+you can cast them at will. Choose a 1st-level wizard spell and a
+2nd-level wizard spell that are in your spellbook. You can cast those
 spells at their lowest level without expending a spell slot when you
 have them prepared. If you want to cast either spell at a higher level,
 you must expend a spell slot as normal.
@@ -4134,7 +3882,7 @@ you chose for different spells of the same levels.
 ### Signature Spells
 
 When you reach 20th level, you gain mastery over two powerful spells and
-can cast them with little effort. Choose two 3rd-­‐‑level wizard spells
+can cast them with little effort. Choose two 3rd-level wizard spells
 in your spellbook as your signature spells. You always have these spells
 prepared, they don’t count against the number of spells you have
 prepared, and you can cast each of them once at 3rd level without
