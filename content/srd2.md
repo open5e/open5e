@@ -862,11 +862,11 @@ gray.
 Hellish Resistance. You have resistance to fire
 damage.
 
-Infernal Legacy. You know the 
+Infernal Legacy. You know the
 thaumaturgy cantrip. When you reach 3rd level, you can
 cast the hellish rebuke spell as a 2nd-­‐‑level
 spell once with this trait and regain the ability to do so when you
-finish a long rest. When you reach 5th level, you can cast the 
+finish a long rest. When you reach 5th level, you can cast the
 darkness spell once with this trait and regain the
 ability to do so when you finish a long rest. Charisma is your
 spellcasting ability for these spells.
@@ -1553,7 +1553,7 @@ granted by your background:
         must expend a slot of the spell’s level or higher. You regain
         all expended spell slots when you finish a long rest.
 
-        For example, if you know the 1st-­‐‑level spell 
+        For example, if you know the 1st-­‐‑level spell
         cure
 
         wounds and have a 1st-­‐‑level and a
@@ -2606,7 +2606,7 @@ granted by your background:
 
         include six spells of 1st or 2nd level, in any
 
-        combination. If you prepare the 1st-­‐‑level spell 
+        combination. If you prepare the 1st-­‐‑level spell
         cure wounds, you can cast it using a
         1st-­‐‑level or 2nd-­‐‑level slot. Casting the spell doesn’t
         remove it from your list of prepared spells.
@@ -3530,8 +3530,8 @@ granted by your background:
 
         ### Deflect Missiles
 
-        have, as shown in the Ki Points column of the Monk 
-         
+        have, as shown in the Ki Points column of the Monk
+
 
         table.
 
@@ -3661,7 +3661,7 @@ granted by your background:
         points to become invisible for 1 minute. During that time, you
         also have resistance to all damage but force damage.
 
-        Additionally, you can spend 8 ki points to cast the 
+        Additionally, you can spend 8 ki points to cast the
         astral projection spell, without needing
         material components. When you do so, you can’t take any other
         creatures with you.
@@ -3670,8 +3670,8 @@ granted by your background:
 
         ### Perfect Self
 
-        and immunity to nonmagical attacks and damage. 
-         
+        and immunity to nonmagical attacks and damage.
+
 
         At 20th level, when you roll for initiative and have
 
@@ -3976,7 +3976,7 @@ granted by your background:
 
         Count Strahd von Zarovich, for instance). Within the same
         radius, you also detect the presence of any place or object that
-        has been consecrated or desecrated, as with the 
+        has been consecrated or desecrated, as with the
         hallow spell.
 
         You can use this feature a number of times equal to 1 + your
@@ -4711,9 +4711,9 @@ granted by your background:
     must expend a slot of the spell’s level or higher. You regain all
     expended spell slots when you finish a long rest.
 
-    For example, if you know the 1st-­‐‑level spell 
+    For example, if you know the 1st-­‐‑level spell
     animal friendship and have a 1st-­‐‑level and a
-    2nd-­‐‑level spell slot available, you can cast 
+    2nd-­‐‑level spell slot available, you can cast
     animal friendship using either slot.
 
     \
@@ -4942,7 +4942,7 @@ granted by your background:
     your choice.
 
     Evasion. When you are subjected to an
-    effect, such as a red dragon’s fiery breath or a 
+    effect, such as a red dragon’s fiery breath or a
     lightning bolt spell, that allows you to make a
     Dexterity saving throw to take only half damage, you instead take no
     damage if you succeed on the saving throw, and only half damage if
@@ -5594,9 +5594,9 @@ granted by your background:
         or higher. You regain all expended spell slots when you finish a
         long rest.
 
-        For example, if you know the 1st-­‐‑level spell 
+        For example, if you know the 1st-­‐‑level spell
         burning hands and have a 1st-­‐‑level and a
-        2nd-­‐‑level spell slot available, you can cast 
+        2nd-­‐‑level spell slot available, you can cast
         burning hands using either slot.
 
         \
@@ -5807,8 +5807,8 @@ granted by your background:
         To be eligible, a spell must be incapable of
 
         targeting more than one creature at the spell’s current level.
-        For example, magic missile and 
-        scorching ray aren’t eligible, but 
+        For example, magic missile and
+        scorching ray aren’t eligible, but
         ray of frost and chromatic
         orb are.
 
@@ -6130,7 +6130,7 @@ granted by your background:
         all expended spell slots when you finish a short or long rest.
 
         For example, when you are 5th level, you have two 3rd-­‐‑level
-        spell slots. To cast the 1st-­‐‑level spell 
+        spell slots. To cast the 1st-­‐‑level spell
         thunderwave, you must spend one of those
         slots, and you cast it as a 3rd-­‐‑level spell.
 
@@ -7007,7 +7007,7 @@ granted by your background:
         1st-­‐‑level and two 2nd-­‐‑level spell slots. With an
         Intelligence of 16, your list of prepared spells can include six
         spells of 1st or 2nd level, in any combination, chosen from
-        your spellbook. If you prepare the 1st-­‐‑level spell 
+        your spellbook. If you prepare the 1st-­‐‑level spell
         magic missile, you can cast it using a
         1st-­‐‑level or a 2nd-­‐‑level slot. Casting the spell doesn’t
         remove it from your list of prepared spells.
@@ -7913,11 +7913,11 @@ granted by your background:
         Choosing a background provides you with
 
         important story cues about your character’s identity. The most
-        important question to ask about your background is 
+        important question to ask about your background is
         what changed? Why did you stop doing whatever
         your background describes and start adventuring? Where did you
         get the money to purchase your starting gear, or, if you come
-        from a wealthy background, why don’t you have 
+        from a wealthy background, why don’t you have
         more money? How did you learn the skills of
         your class? What sets you apart from ordinary people who share
         your background?
@@ -8137,2394 +8137,7 @@ granted by your background:
         6.  Once I pick a goal, I become obsessed with it to the
             detriment of everything else in my life.
 
-            Equipment
-            =========
 
-            Common coins come in several different denominations based
-            on the relative worth of the metal from which they are made.
-            The three most common coins are the gold piece (gp), the
-            silver piece (sp), and the copper piece (cp).
-
-            With one gold piece, a character can buy a bedroll,
-
-            50 feet of good rope, or a goat. A skilled (but
-            not exceptional) artisan can earn one gold piece a day. The
-            gold piece is the standard unit of measure for wealth, even
-            if the coin itself is not commonly used. When merchants
-            discuss deals that involve goods or services worth hundreds
-            or thousands of gold pieces, the transactions don’t usually
-            involve the exchange of individual coins. Rather, the gold
-            piece is a standard measure of value, and the actual
-            exchange is in gold bars, letters of credit, or
-            valuable goods.
-
-            One gold piece is worth ten silver pieces, the most
-            prevalent coin among commoners. A silver piece buys a
-            laborer’s work for half a day, a flask of lamp oil, or a
-            night’s rest in a poor inn.
-
-            One silver piece is worth ten copper pieces, which are
-            common among laborers and beggars. A single copper piece
-            buys a candle, a torch, or a piece of chalk.
-
-            In addition, unusual coins made of other precious metals
-            sometimes appear in treasure hoards. The electrum piece (ep)
-            and the platinum piece (pp) originate from fallen empires
-            and lost kingdoms, and they sometimes arouse suspicion and
-            skepticism when used in transactions. An electrum piece is
-            worth five silver pieces, and a platinum piece is worth ten
-            gold pieces.
-
-            A standard coin weighs about a third of an ounce,
-
-            so fifty coins weigh a pound.
-
-            \
-
-            Standard Exchange Rates
-
-            \
-
-            |-------------|-------------|-------------|-------------|-------------|-------------|
-            | Coin        | CP          | SP          | EP          | GP          | PP          |
-            |-------------|-------------|-------------|-------------|-------------|-------------|
-            | Copper (cp) | 1           | 1/10        | 1/50        | 1/100       | 1/1,000     |
-            |-------------|-------------|-------------|-------------|-------------|-------------|
-            | Silver (sp) | 10          | 1           | 1/5         | 1/10        | 1/100       |
-            |-------------|-------------|-------------|-------------|-------------|-------------|
-            | Electrum (e | 50          | 5           | 1           | 1/2         | 1/20        |
-            | p)          |             |             |             |             |             |
-            |-------------|-------------|-------------|-------------|-------------|-------------|
-            | Gold (gp)   | 100         | 10          | 2           | 1           | 1/10        |
-            |-------------|-------------|-------------|-------------|-------------|-------------|
-            | Platinum (p | 1,000       | 100         | 20          | 10          | 1           |
-            | p)          |             |             |             |             |             |
-            |-------------|-------------|-------------|-------------|-------------|-------------|
-
-            \
-
-            Selling Treasure
-            ----------------
-
-            Opportunities abound to find treasure, equipment, weapons,
-            armor, and more in the dungeons you explore. Normally, you
-            can sell your treasures and trinkets when you return to a
-            town or other settlement, provided that you can find buyers
-            and merchants interested in your loot.
-
-            Arms, Armor, and Other Equipment. As a
-            general rule, undamaged weapons, armor, and other equipment
-            fetch half their cost when sold in a market. Weapons and
-            armor used by monsters are rarely in good enough condition
-            to sell.
-
-            Magic Items. Selling magic items
-            is problematic. Finding someone to buy a potion or a scroll
-            isn’t too hard, but other items are out of the realm of most
-            but the wealthiest nobles. Likewise, aside from a few common
-            magic items, you won’t normally come across magic items or
-            spells to purchase. The value of magic is far beyond simple
-            gold and should always be treated as such.
-
-            Gems, Jewelry, and Art Objects. These items
-            retain their full value in the marketplace, and you can
-            either trade them in for coin or use them as currency for
-            other transactions. For exceptionally valuable treasures,
-            the GM might require you to find a buyer in a large town or
-            larger community first.
-
-            Trade Goods. On the borderlands, many people
-            conduct transactions through barter. Like gems and art
-            objects, trade goods—bars of iron, bags of salt, livestock,
-            and so on—retain their full value in the market and can be
-            used as currency.
-
-            \
-
-            Armor
-            -----
-
-            Fantasy gaming worlds are a vast tapestry made up of many
-            different cultures, each with its own technology level. For
-            this reason, adventurers have access to a variety of armor
-            types, ranging from leather armor to chain mail to costly
-            plate armor, with several other kinds of armor in between.
-            The Armor table collects the most commonly available types
-            of armor found in the game and separates them into three
-            categories: light armor, medium armor, and heavy armor. Many
-            warriors supplement their armor with a shield.
-
-            The Armor table shows the cost, weight, and other properties
-            of the common types of armor worn in fantasy gaming worlds.
-
-            Armor Proficiency. Anyone can put on a suit
-            of armor or strap a shield to an arm. Only those proficient
-            in the armor’s use know how to wear it effectively, however.
-            Your class gives you proficiency with certain types
-            of armor. If you wear armor that you lack proficiency with,
-            you have disadvantage on any ability check, saving throw, or
-            attack roll that involves Strength or Dexterity, and you
-            can’t cast spells.
-
-            Armor Class (AC). Armor protects its wearer
-            from attacks. The armor (and shield) you wear determines
-            your base Armor Class.
-
-            Heavy Armor. Heavier armor interferes with
-            the wearer’s ability to move quickly, stealthily,
-            and freely. If the Armor table shows “Str 13” or “Str 15” in
-            the Strength column for an armor type, the armor reduces the
-            wearer’s speed by 10 feet unless the wearer has a Strength
-            score equal to or higher than the listed score.
-
-            Stealth. If the Armor table shows
-            “Disadvantage” in the Stealth column, the wearer has
-            disadvantage on Dexterity (Stealth) checks.
-
-            Shields. A shield is made from wood or metal
-            and
-
-            is carried in one hand. Wielding a shield increases your
-            Armor Class by 2. You can benefit from only one shield at
-            a time.
-
-            ### Light Armor
-
-            \
-
-            Made from supple and thin materials, light armor favors
-            agile adventurers since it offers some protection without
-            sacrificing mobility. If you wear light armor, you add your
-            Dexterity modifier to the base number from your armor type
-            to determine your Armor Class.
-
-            Padded. Padded armor consists of quilted
-            layers
-
-            of cloth and batting.
-
-            Leather. The breastplate and shoulder
-            protectors of this armor are made of leather that has been
-            stiffened by being boiled in oil. The rest of the armor is
-            made of softer and more flexible materials.
-
-            Studded Leather. Made from tough but
-            flexible leather, studded leather is reinforced with
-            close-­‐‑set rivets or spikes.
-
-            \
-
-            ### Medium Armor
-
-            \
-
-            Medium armor offers more protection than light armor, but it
-            also impairs movement more. If you wear medium armor, you
-            add your Dexterity modifier, to a maximum of +2, to the base
-            number from your armor type to determine your Armor Class.
-
-            Hide. This crude armor consists of thick
-            furs and pelts. It is commonly worn by barbarian tribes,
-            evil humanoids, and other folk who lack access to the tools
-            and materials needed to create better armor.
-
-            Chain Shirt. Made of interlocking metal
-            rings, a chain shirt is worn between layers of clothing
-            or leather. This armor offers modest protection to the
-            wearer’s upper body and allows the sound of the
-
-            rings rubbing against one another to be muffled by
-            outer layers.
-
-            Scale Mail. This armor consists of a coat
-            and leggings (and perhaps a separate skirt) of leather
-            covered with overlapping pieces of metal, much like the
-            scales of a fish. The suit includes gauntlets.
-
-            Breastplate. This armor consists of a fitted
-            metal chest piece worn with supple leather. Although it
-            leaves the legs and arms relatively unprotected, this armor
-            provides good protection for the wearer’s vital organs while
-            leaving the wearer relatively unencumbered.
-
-            Half Plate. Half plate consists of shaped
-            metal plates that cover most of the wearer’s body. It does
-            not include leg protection beyond simple greaves that are
-            attached with leather straps.
-
-            ### Heavy Armor
-
-            \
-
-            Of all the armor categories, heavy armor offers the
-            best protection. These suits of armor cover the entire body
-            and are designed to stop a wide range of attacks. Only
-            proficient warriors can manage their weight and bulk.
-
-            Heavy armor doesn’t let you add your Dexterity modifier to
-            your Armor Class, but it also doesn’t penalize you if your
-            Dexterity modifier is negative.
-
-            Ring Mail. This armor is leather armor with
-            heavy rings sewn into it. The rings help reinforce the armor
-            against blows from swords and axes. Ring mail is inferior to
-            chain mail, and it's usually worn only by those who can’t
-            afford better armor.
-
-            Chain Mail. Made of interlocking metal
-            rings, chain mail includes a layer of quilted fabric worn
-            underneath the mail to prevent chafing and to cushion the
-            impact of blows. The suit includes gauntlets.
-
-            Splint. This armor is made of narrow
-            vertical
-
-            strips of metal riveted to a backing of leather that is worn
-            over cloth padding. Flexible chain mail protects the joints.
-
-            Plate. Plate consists of shaped,
-            interlocking metal plates to cover the entire body. A suit
-            of plate includes gauntlets, heavy leather boots, a visored
-            helmet, and thick layers of padding underneath the armor.
-            Buckles and straps distribute the weight over
-            the body.
-
-            \
-
-            Armor
-
-            Armor Cost Armor Class (AC) Strength Stealth Weight
-
-            Light Armor
-
-            Padded 5 gp 11 + Dex modifier — Disadvantage 8 lb.
-
-            Leather
-
-            10 gp
-
-            11 + Dex modifier
-
-            —
-
-            —
-
-            10 lb.
-
-            Studded leather
-
-            45 gp
-
-            12 + Dex modifier
-
-            —
-
-            —
-
-            13 lb.
-
-            Medium Armor
-
-            Hide
-
-            10 gp
-
-            12 + Dex modifier (max 2)
-
-            —
-
-            —
-
-            12 lb.
-
-            Chain shirt
-
-            50 gp
-
-            13 + Dex modifier (max 2)
-
-            —
-
-            —
-
-            20 lb.
-
-            Scale mail
-
-            50 gp
-
-            14 + Dex modifier (max 2)
-
-            —
-
-            Disadvantage
-
-            45 lb.
-
-            Breastplate
-
-            400 gp
-
-            14 + Dex modifier (max 2)
-
-            —
-
-            —
-
-            20 lb.
-
-            Half plate
-
-            750 gp
-
-            15 + Dex modifier (max 2)
-
-            —
-
-            Disadvantage
-
-            40 lb.
-
-            Heavy Armor
-
-            Ring mail
-
-            30 gp
-
-            14
-
-            —
-
-            Disadvantage
-
-            40 lb.
-
-            Chain mail
-
-            75 gp
-
-            16
-
-            Str 13
-
-            Disadvantage
-
-            55 lb.
-
-            Splint
-
-            200 gp
-
-            17
-
-            Str 15
-
-            Disadvantage
-
-            60 lb.
-
-            Plate
-
-            1,500 gp
-
-            18
-
-            Str 15
-
-            Disadvantage
-
-            65 lb.
-
-            Shield
-
-            Shield
-
-            10 gp
-
-            +2
-
-            —
-
-            —
-
-            6 lb.
-
-            \
-
-            ### Getting Into and Out of Armor
-
-            \
-
-            The time it takes to don or doff armor depends on the
-            armor’s category.
-
-            Don. This is the time it takes to put
-            on armor. You
-
-            benefit from the armor’s AC only if you take the full time
-            to don the suit of armor.
-
-            Doff. This is the time it takes to take
-            off armor. If you have help, reduce this time
-            by half.
-
-            \
-
-            Donning and Doffing Armor Category Don Doff
-            Light Armor 1 minute 1 minute
-
-            Medium Armor 5 minutes 1 minute
-
-            \
-
-            |-------------------------|-------------------------|-------------------------|
-            | Heavy Armor             | 10 minutes              | 5 minutes               |
-            |-------------------------|-------------------------|-------------------------|
-            | Shield                  | 1 action                | 1 action                |
-            |-------------------------|-------------------------|-------------------------|
-
-            \
-
-            Weapons
-            -------
-
-            Your class grants proficiency in certain weapons, reflecting
-            both the class’s focus and the tools you are most likely
-            to use. Whether you favor a longsword or a longbow, your
-            weapon and your ability to wield it effectively can mean the
-            difference between life and death while adventuring.
-
-            The Weapons table shows the most common weapons used in the
-            fantasy gaming worlds, their price and weight, the damage
-            they deal when they hit, and any special properties
-            they possess. Every weapon is classified as either melee
-            or ranged. A **melee weapon** is used to attack a target
-            within 5 feet of you, whereas a **ranged weapon** is used to
-            attack a target at a distance.
-
-            ### Weapon Proficiency
-
-            \
-
-            Your race, class, and feats can grant you proficiency with
-            certain weapons or categories of weapons. The two categories
-            are **simple** and **martial**. Most people
-
-            can use simple weapons with proficiency. These weapons
-            include clubs, maces, and other weapons often found in the
-            hands of commoners. Martial weapons, including swords, axes,
-            and polearms, require more specialized training to
-            use effectively. Most warriors use martial weapons because
-            these weapons put their fighting style and training to
-            best use.
-
-            Proficiency with a weapon allows you to add your proficiency
-            bonus to the attack roll for any attack you make with
-            that weapon. If you make an attack roll using a weapon with
-            which you lack proficiency, you do not add your proficiency
-            bonus to the attack roll.
-
-            \
-
-            ### Weapon Properties
-
-            \
-
-            Many weapons have special properties related to their use,
-            as shown in the Weapons table.
-
-            Ammunition. You can use a weapon that has
-            the ammunition property to make a ranged attack only if you
-            have ammunition to fire from the weapon. Each time you
-            attack with the weapon, you expend one piece of ammunition.
-            Drawing the ammunition from a quiver, case, or other
-            container is part of the attack (you need a free hand to
-            load a one-­‐‑handed weapon). At the end of the battle, you
-            can recover half your expended ammunition by taking a minute
-            to search the battlefield.
-
-            If you use a weapon that has the ammunition property to make
-            a melee attack, you treat the weapon as an improvised weapon
-            (see “Improvised Weapons” later in the section). A sling
-            must be loaded to deal any damage when used in this way.
-
-            Finesse. When making an attack with a
-            finesse weapon, you use your choice of your Strength or
-            Dexterity modifier for the attack and damage rolls. You must
-            use the same modifier for both rolls.
-
-            Heavy. Small creatures have disadvantage on
-            attack rolls with heavy weapons. A heavy weapon’s size and
-            bulk make it too large for a Small creature to
-            use effectively.
-
-            Light. A light weapon is small and easy to
-            handle,
-
-            making it ideal for use when fighting with two weapons.
-
-            Loading. Because of the time required to
-            load this weapon, you can fire only one piece of ammunition
-            from it when you use an action, bonus action, or reaction to
-            fire it, regardless of the number of attacks you can
-            normally make.
-
-            Range. A weapon that can be used to make a
-            ranged attack has a range in parentheses after the
-            ammunition or thrown property. The range lists two numbers.
-            The first is the weapon’s normal range in feet, and the
-            second indicates the weapon’s long range. When attacking a
-            target beyond normal range, you have disadvantage on the
-            attack roll. You can’t attack a target beyond the weapon’s
-            long range.
-
-            Reach. This weapon adds 5 feet to your reach
-            when you attack with it, as well as when determining your
-            reach for opportunity attacks with it.
-
-            Special. A weapon with the special property
-            has
-
-            unusual rules governing its use, explained in the weapon’s
-            description (see “Special Weapons” later in this section).
-
-            Thrown. If a weapon has the thrown property,
-            you can throw the weapon to make a ranged attack. If the
-            weapon is a melee weapon, you use the same ability modifier
-            for that attack roll and damage roll that you would use for
-            a melee attack with the weapon. For example, if you throw a
-            handaxe, you use your Strength, but if you throw a dagger,
-            you can use either your Strength or your Dexterity, since
-            the dagger has the finesse property.
-
-            Two-­‐‑Handed. This weapon requires two
-            hands
-
-            when you attack with it.
-
-            Versatile. This weapon can be used with one
-            or two hands. A damage value in parentheses appears with the
-            property—the damage when the weapon is used with two hands
-            to make a melee attack.
-
-            \
-
-            #### Improvised Weapons
-
-            Sometimes characters don’t have their weapons and have to
-            attack with whatever is at hand. An improvised weapon
-            includes any object you can
-
-            wield in one or two hands, such as broken glass, a table
-            leg, a frying pan, a wagon wheel, or a dead goblin.
-
-            Often, an improvised weapon is similar to an actual weapon
-            and can be treated as such. For example, a table leg is akin
-            to a club. At the GM’s option, a character proficient with a
-            weapon can use a similar object as if it were that weapon
-            and use his or her proficiency bonus.
-
-            An object that bears no resemblance to a weapon deals 1d4
-            damage (the GM assigns a damage type appropriate to
-            the object). If a character uses a ranged weapon to make a
-            melee attack, or throws a melee weapon that does not have
-            the thrown property, it also deals 1d4 damage. An improvised
-            thrown weapon has a normal range of 20 feet and a long range
-            of 60 feet.
-
-            \
-
-            #### Silvered Weapons
-
-            Some monsters that have immunity or resistance to nonmagical
-            weapons are susceptible to silver weapons, so cautious
-            adventurers invest extra coin to plate their weapons
-            with silver. You can silver a single weapon or ten pieces of
-            ammunition for 100 gp. This cost represents not only the
-            price of the silver, but the time and expertise needed to
-            add silver to the weapon without making it less effective.
-
-            \
-
-            #### Special Weapons
-
-            Weapons with special rules are described here.
-
-            Lance. You have disadvantage when you use a
-            lance to attack a target within 5 feet of you. Also, a lance
-            requires two hands to wield when you aren’t mounted.
-
-            Net. A Large or smaller creature hit by a
-            net is restrained until it is freed. A net has no effect on
-            creatures that are formless, or creatures that are Huge
-            or larger. A creature can use its action to make a DC 10
-            Strength check, freeing itself or another creature within
-            its reach on a success. Dealing 5 slashing damage to the net
-            (AC 10) also frees the creature without harming it, ending
-            the effect and destroying the net.
-
-            When you use an action, bonus action, or reaction
-
-            to attack with a net, you can make only one attack
-            regardless of the number of attacks you can normally make.
-
-            \
-
-            Weapons
-
-            Name Cost Damage Weight Properties
-
-            Simple Melee Weapons
-
-            \
-
-            Club
-
-            1 sp
-
-            1d4 bludgeoning
-
-            2 lb.
-
-            Light
-
-            Dagger
-
-            2 gp
-
-            1d4 piercing
-
-            1 lb.
-
-            Finesse, light, thrown (range 20/60)
-
-            Greatclub
-
-            2 sp
-
-            1d8 bludgeoning
-
-            10 lb.
-
-            Two-­‐handed
-
-            Handaxe
-
-            5 gp
-
-            1d6 slashing
-
-            2 lb.
-
-            Light, thrown (range 20/60)
-
-            Javelin
-
-            5 sp
-
-            1d6 piercing
-
-            2 lb.
-
-            Thrown (range 30/120)
-
-            Light hammer
-
-            2 gp
-
-            1d4 bludgeoning
-
-            2 lb.
-
-            Light, thrown (range 20/60)
-
-            Mace
-
-            5 gp
-
-            1d6 bludgeoning
-
-            4 lb.
-
-            —
-
-            Quarterstaff
-
-            2 sp
-
-            1d6 bludgeoning
-
-            4 lb.
-
-            Versatile (1d8)
-
-            Sickle
-
-            1 gp
-
-            1d4 slashing
-
-            2 lb.
-
-            Light
-
-            Spear
-
-            1 gp
-
-            1d6 piercing
-
-            3 lb.
-
-            Thrown (range 20/60), versatile (1d8)
-
-            Simple Ranged Weapons
-
-            Crossbow, light
-
-            25 gp
-
-            1d8 piercing
-
-            5 lb.
-
-            Ammunition (range 80/320), loading, two-­‐handed
-
-            Dart
-
-            5 cp
-
-            1d4 piercing
-
-            1/4 lb.
-
-            Finesse, thrown (range 20/60)
-
-            Shortbow
-
-            25 gp
-
-            1d6 piercing
-
-            2 lb.
-
-            Ammunition (range 80/320), two-­‐handed
-
-            Sling
-
-            1 sp
-
-            1d4 bludgeoning
-
-            —
-
-            Ammunition (range 30/120)
-
-            Martial Melee Weapons
-
-            Battleaxe
-
-            10 gp
-
-            1d8 slashing
-
-            4 lb.
-
-            Versatile (1d10)
-
-            Flail
-
-            10 gp
-
-            1d8 bludgeoning
-
-            2 lb.
-
-            —
-
-            Glaive
-
-            20 gp
-
-            1d10 slashing
-
-            6 lb.
-
-            Heavy, reach, two-­‐handed
-
-            Greataxe
-
-            30 gp
-
-            1d12 slashing
-
-            7 lb.
-
-            Heavy, two-­‐handed
-
-            Greatsword
-
-            50 gp
-
-            2d6 slashing
-
-            6 lb.
-
-            Heavy, two-­‐handed
-
-            Halberd
-
-            20 gp
-
-            1d10 slashing
-
-            6 lb.
-
-            Heavy, reach, two-­‐handed
-
-            Lance
-
-            10 gp
-
-            1d12 piercing
-
-            6 lb.
-
-            Reach, special
-
-            Longsword
-
-            15 gp
-
-            1d8 slashing
-
-            3 lb.
-
-            Versatile (1d10)
-
-            Maul
-
-            10 gp
-
-            2d6 bludgeoning
-
-            10 lb.
-
-            Heavy, two-­‐handed
-
-            Morningstar
-
-            15 gp
-
-            1d8 piercing
-
-            4 lb.
-
-            —
-
-            Pike
-
-            5 gp
-
-            1d10 piercing
-
-            18 lb.
-
-            Heavy, reach, two-­‐handed
-
-            Rapier
-
-            25 gp
-
-            1d8 piercing
-
-            2 lb.
-
-            Finesse
-
-            Scimitar
-
-            25 gp
-
-            1d6 slashing
-
-            3 lb.
-
-            Finesse, light
-
-            Shortsword
-
-            10 gp
-
-            1d6 piercing
-
-            2 lb.
-
-            Finesse, light
-
-            Trident
-
-            5 gp
-
-            1d6 piercing
-
-            4 lb.
-
-            Thrown (range 20/60), versatile (1d8)
-
-            War pick
-
-            5 gp
-
-            1d8 piercing
-
-            2 lb.
-
-            —
-
-            Warhammer
-
-            15 gp
-
-            1d8 bludgeoning
-
-            2 lb.
-
-            Versatile (1d10)
-
-            Whip
-
-            2 gp
-
-            1d4 slashing
-
-            3 lb.
-
-            Finesse, reach
-
-            Martial Ranged Weapons
-
-            Blowgun
-
-            10 gp
-
-            1 piercing
-
-            1 lb.
-
-            Ammunition (range 25/100), loading
-
-            Crossbow, hand
-
-            75 gp
-
-            1d6 piercing
-
-            3 lb.
-
-            Ammunition (range 30/120), light, loading
-
-            Crossbow, heavy
-
-            50 gp
-
-            1d10 piercing
-
-            18 lb.
-
-            Ammunition (range 100/400), heavy, loading, two-­‐handed
-
-            Longbow
-
-            50 gp
-
-            1d8 piercing
-
-            2 lb.
-
-            Ammunition (range 150/600), heavy, two-­‐handed
-
-            Net
-
-            1 gp
-
-            —
-
-            3 lb.
-
-            Special, thrown (range 5/15)
-
-            \
-
-            \
-
-            Adventuring Gear
-            ----------------
-
-            This section describes items that have special rules or
-            require further explanation.
-
-            Acid. As an action, you can splash the
-            contents of this vial onto a creature within 5 feet of you
-            or throw the vial up to 20 feet, shattering it on impact. In
-            either case, make a ranged attack against a creature or
-            object, treating the acid as an improvised weapon. On a hit,
-            the target takes 2d6 acid damage.
-
-            Alchemist’s Fire. This sticky, adhesive
-            fluid ignites when exposed to air. As an action, you can
-            throw this flask up to 20 feet, shattering it on impact.
-            Make a
-
-            ranged attack against a creature or object, treating the
-            alchemist's fire as an improvised weapon. On a hit, the
-            target takes 1d4 fire damage at the start of each of
-            its turns. A creature can end this damage by using its
-            action to make a DC 10 Dexterity check to extinguish
-            the flames.
-
-            Antitoxin. A creature that drinks this vial
-            of liquid gains advantage on saving throws against poison
-            for 1 hour. It confers no benefit to undead
-            or constructs.
-
-            Arcane Focus. An arcane focus is a special
-            item— an orb, a crystal, a rod, a specially constructed
-            staff, a wand-­‐‑like length of wood, or some similar item—
-            designed to channel the power of arcane spells. A
-
-            sorcerer, warlock, or wizard can use such an item as a
-            spellcasting focus.
-
-            Ball Bearings. As an action, you can spill
-            these tiny metal balls from their pouch to cover a level,
-            square area that is 10 feet on a side. A creature moving
-            across the covered area must succeed on a DC 10 Dexterity
-            saving throw or fall prone. A creature moving through the
-            area at half speed doesn’t need to make the save.
-
-            Block and Tackle. A set of pulleys with a
-            cable threaded through them and a hook to attach to objects,
-            a block and tackle allows you to hoist up to four times the
-            weight you can normally lift.
-
-            Book. A book might contain poetry,
-            historical accounts, information pertaining to a particular
-            field of lore, diagrams and notes on gnomish contraptions,
-            or just about anything else that can be represented using
-            text or pictures. A book of spells is a spellbook (described
-            later in this section).
-
-            Caltrops. As an action, you can spread a bag
-            of caltrops to cover a square area that is 5 feet on a side.
-            Any creature that enters the area must succeed on a DC 15
-            Dexterity saving throw or stop moving this turn and take 1
-            piercing damage. Taking this damage reduces the creature’s
-            walking speed by 10 feet until the creature regains at least
-            1 hit point. A creature moving through the area at half
-            speed doesn’t need to make the save.
-
-            Candle. For 1 hour, a candle sheds bright
-            light in a 5-­‐‑foot radius and dim light for an additional
-            5 feet.
-
-            Case, Crossbow Bolt. This wooden case can
-            hold
-
-            up to twenty crossbow bolts.
-
-            Case, Map or Scroll. This cylindrical
-            leather case can hold up to ten rolled-­‐‑up sheets of paper
-            or five rolled-­‐‑up sheets of parchment.
-
-            Chain. A chain has 10 hit points. It can be
-            burst with a successful DC 20 Strength check.
-
-            Climber’s Kit. A climber’s kit includes
-            special
-
-            pitons, boot tips, gloves, and a harness. You can use the
-            climber’s kit as an action to anchor yourself; when you do,
-            you can’t fall more than 25 feet from the point where you
-            anchored yourself, and you can’t climb more than 25 feet
-            away from that point without undoing the anchor.
-
-            Component Pouch. A component pouch is a
-            small, watertight leather belt pouch that has compartments
-            to hold all the material components and other special items
-            you need to cast your spells, except for those components
-            that have a specific cost (as indicated in a
-            spell's description).
-
-            Crowbar. Using a crowbar grants advantage
-            to
-
-            Strength checks where the crowbar’s leverage can be applied.
-
-            Druidic Focus. A druidic focus might be a
-            sprig of mistletoe or holly, a wand or scepter made of yew
-            or another special wood, a staff drawn whole out of a living
-            tree, or a totem object incorporating feathers, fur, bones,
-            and teeth from sacred animals. A druid can use such an
-            object as a spellcasting focus.
-
-            Fishing Tackle. This kit includes a wooden
-            rod, silken line, corkwood bobbers, steel hooks, lead
-            sinkers, velvet lures, and narrow netting.
-
-            Healer’s Kit. This kit is a leather pouch
-            containing bandages, salves, and splints. The kit has
-            ten uses. As an action, you can expend one use of the kit to
-            stabilize a creature that has 0 hit points, without needing
-            to make a Wisdom (Medicine) check.
-
-            Holy Symbol. A holy symbol is a
-            representation of a god or pantheon. It might be an amulet
-            depicting a symbol representing a deity, the same symbol
-            carefully engraved or inlaid as an emblem on a shield, or a
-            tiny box holding a fragment of a sacred relic. Appendix B
-            lists the symbols commonly associated with many gods in
-            the multiverse. A cleric or paladin can use a holy symbol as
-            a spellcasting focus. To use the symbol in this way, the
-            caster must hold it in hand, wear it visibly, or bear it on
-            a shield.
-
-            Holy Water. As an action, you can splash
-            the
-
-            contents of this flask onto a creature within 5 feet of you
-            or throw it up to 20 feet, shattering it on impact. In
-            either case, make a ranged attack against a target creature,
-            treating the holy water as an improvised weapon. If the
-            target is a fiend or undead, it takes 2d6 radiant damage.
-
-            A cleric or paladin may create holy water by performing a
-            special ritual. The ritual takes 1 hour to perform, uses 25
-            gp worth of powdered silver, and requires the caster to
-            expend a 1st-­‐‑level spell slot.
-
-            Hunting Trap. When you use your action to
-            set it, this trap forms a saw-­‐‑toothed steel ring that
-            snaps shut when a creature steps on a pressure plate in
-            the center. The trap is affixed by a heavy chain to an
-            immobile object, such as a tree or a spike driven into
-            the ground. A creature that steps on the plate must succeed
-            on a DC 13 Dexterity saving throw or take 1d4 piercing
-            damage and stop moving. Thereafter, until the creature
-            breaks free of the trap, its movement is limited by the
-            length of the chain (typically 3 feet long). A creature can
-            use its action to make a DC 13 Strength check, freeing
-            itself or another creature within its reach on a success.
-            Each failed check deals 1 piercing damage to the
-            trapped creature.
-
-            Lamp. A lamp casts bright light in a
-            15-­‐‑foot radius
-
-            and dim light for an additional 30 feet. Once lit, it burns
-            for 6 hours on a flask (1 pint) of oil.
-
-            Lantern, Bullseye. A bullseye lantern casts
-            bright light in a 60-­‐‑foot cone and dim light for an
-            additional 60 feet. Once lit, it burns for 6 hours on a
-            flask (1 pint) of oil.
-
-            Lantern, Hooded. A hooded lantern casts
-            bright
-
-            light in a 30-­‐‑foot radius and dim light for an additional
-            30 feet. Once lit, it burns for 6 hours on a flask (1 pint)
-            of oil. As an action, you can lower the hood, reducing the
-            light to dim light in a 5-­‐‑foot radius.
-
-            Lock. A key is provided with the lock.
-            Without the
-
-            key, a creature proficient with thieves’ tools can pick this
-            lock with a successful DC 15 Dexterity check. Your GM may
-            decide that better locks are available for higher prices.
-
-            Magnifying Glass. This lens allows a closer
-            look at small objects. It is also useful as a substitute for
-            flint and steel when starting fires. Lighting a fire with a
-            magnifying glass requires light as bright as sunlight to
-            focus, tinder to ignite, and about 5 minutes for the fire
-            to ignite. A magnifying glass grants advantage on any
-            ability check made to appraise or inspect an item that is
-            small or highly detailed.
-
-            Manacles. These metal restraints can bind a
-            Small or Medium creature. Escaping the manacles requires a
-            successful DC 20 Dexterity check. Breaking them requires a
-            successful DC 20 Strength check. Each set of manacles comes
-            with one key. Without the key, a creature proficient with
-            thieves’ tools can pick the manacles’ lock with a successful
-            DC 15 Dexterity check. Manacles have 15 hit points.
-
-            Mess Kit. This tin box contains a cup and
-            simple cutlery. The box clamps together, and one side can be
-            used as a cooking pan and the other as a plate or
-            shallow bowl.
-
-            Oil. Oil usually comes in a clay flask that
-            holds 1 pint. As an action, you can splash the oil in this
-            flask onto a creature within 5 feet of you or throw it up to
-            20 feet, shattering it on impact. Make a ranged attack
-            against a target creature or object, treating the oil as an
-            improvised weapon. On a hit, the target is covered in oil.
-            If the target takes any fire damage before the oil dries
-            (after 1 minute), the target takes an additional 5 fire
-            damage from the burning oil. You can also pour a flask of
-            oil on the ground to cover a 5-­‐‑foot-­‐‑square area,
-            provided that the surface is level. If lit, the oil burns
-            for 2 rounds and deals 5 fire damage to any creature that
-            enters the area or ends its turn in the area. A creature can
-            take this damage only once per turn.
-
-            Poison, Basic. You can use the poison in
-            this vial
-
-            to coat one slashing or piercing weapon or up to three
-            pieces of ammunition. Applying the poison
-
-            takes an action. A creature hit by the poisoned weapon or
-            ammunition must make a DC 10 Constitution saving throw or
-            take 1d4 poison damage. Once applied, the poison retains
-            potency for 1 minute before drying.
-
-            Potion of Healing. A character who drinks
-            the magical red fluid in this vial regains 2d4 + 2
-            hit points. Drinking or administering a potion takes
-            an action.
-
-            Pouch. A cloth or leather pouch can hold up
-            to 20 sling bullets or 50 blowgun needles, among
-            other things. A compartmentalized pouch for holding spell
-            components is called a component pouch (described earlier in
-            this section).
-
-            Quiver. A quiver can hold up to
-            20 arrows.
-
-            Ram, Portable. You can use a portable ram to
-            break down doors. When doing so, you gain a +4 bonus on the
-            Strength check. One other character can help you use the
-            ram, giving you advantage on this check.
-
-            Rations. Rations consist of dry foods
-            suitable for extended travel, including jerky, dried fruit,
-            hardtack, and nuts.
-
-            Rope. Rope, whether made of hemp or silk,
-            has 2 hit points and can be burst with a DC 17
-            Strength check.
-
-            Scale, Merchant’s. A scale includes a small
-            balance, pans, and a suitable assortment of weights up to
-            2 pounds. With it, you can measure the exact weight of small
-            objects, such as raw precious metals or trade goods, to help
-            determine their worth.
-
-            Spellbook. Essential for wizards, a
-            spellbook is a leather-­‐‑bound tome with 100 blank vellum
-            pages suitable for recording spells.
-
-            Spyglass. Objects viewed through a spyglass
-            are magnified to twice their size.
-
-            Tent. A simple and portable canvas shelter,
-            a tent sleeps two.
-
-            Tinderbox. This small container holds flint,
-            fire steel, and tinder (usually dry cloth soaked in
-            light oil) used to kindle a fire. Using it to light a
-            torch—or anything else with abundant, exposed fuel—takes
-            an action. Lighting any other fire takes 1 minute.
-
-            Torch. A torch burns for 1 hour, providing
-            bright
-
-            light in a 20-­‐‑foot radius and dim light for an additional
-            20 feet. If you make a melee attack with a burning torch and
-            hit, it deals 1 fire damage.
-
-            \
-
-            Adventuring Gear
-
-            Item Cost Weight
-
-            Abacus 2 gp 2 lb.
-
-            Acid (vial) 25 gp 1 lb.
-
-            Alchemist’s fire (flask) 50 gp 1 lb.
-
-            Ammunition
-
-            Jug or pitcher 2 cp 4 lb.
-
-            \
-
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Arrows (20 | 1 gp       | 1 lb.      |            | Ladder (10 | 1 sp       | 25 lb.     |
-            | )          |            |            |            | -­‐foot)   |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Blowgun    | 1 gp       | 1 lb.      |            | Lamp       | 5 sp       | 1 lb.      |
-            | needles (5 |            |            |            |            |            |            |
-            | 0)         |            |            |            |            |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Crossbow   | 1 gp       | 1½ lb.     |            | Lantern,   | 10 gp      | 2 lb.      |
-            | bolts (20) |            |            |            | bullseye   |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Sling      | 4 cp       | 1½ lb.     |            | Lantern,   | 5 gp       | 2 lb.      |
-            | bullets (2 |            |            |            | hooded     |            |            |
-            | 0)         |            |            |            |            |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Antitoxin  | 50 gp      | —          |            | Lock       | 10 gp      | 1 lb.      |
-            | (vial)     |            |            |            |            |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Arcane     |            |            |            | Magnifying | 100 gp     | —          |
-            | focus      |            |            |            | glass      |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Crystal    | 10 gp      | 1 lb.      |            | Manacles   | 2 gp       | 6 lb.      |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Orb        | 20 gp      | 3 lb.      |            | Mess kit   | 2 sp       | 1 lb.      |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Rod        | 10 gp      | 2 lb.      |            | Mirror,    | 5 gp       | 1/2 lb.    |
-            |            |            |            |            | steel      |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Staff      | 5 gp       | 4 lb.      |            | Oil (flask | 1 sp       | 1 lb.      |
-            |            |            |            |            | )          |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Wand       | 10 gp      | 1 lb.      |            | Paper      | 2 sp       | —          |
-            |            |            |            |            | (one sheet |            |            |
-            |            |            |            |            | )          |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Backpack   | 2 gp       | 5 lb.      |            | Parchment  | 1 sp       | —          |
-            |            |            |            |            | (one sheet |            |            |
-            |            |            |            |            | )          |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Ball       | 1 gp       | 2 lb.      |            | Perfume (v | 5 gp       | —          |
-            | bearings   |            |            |            | ial)       |            |            |
-            | (bag       |            |            |            |            |            |            |
-            | of 1,000)  |            |            |            |            |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Barrel     | 2 gp       | 70 lb.     |            | Pick,      | 2 gp       | 10 lb.     |
-            |            |            |            |            | miner’s    |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Basket     | 4 sp       | 2 lb.      |            | Piton      | 5 cp       | 1/4 lb.    |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Bedroll    | 1 gp       | 7 lb.      |            | Poison,    | 100 gp     | —          |
-            |            |            |            |            | basic (via |            |            |
-            |            |            |            |            | l)         |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Bell       | 1 gp       | —          |            | Pole (10-­ | 5 cp       | 7 lb.      |
-            |            |            |            |            | ‐foot)     |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Blanket    | 5 sp       | 3 lb.      |            | Pot, iron  | 2 gp       | 10 lb.     |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Block and  | 1 gp       | 5 lb.      |            | Potion of  | 50 gp      | 1/2 lb.    |
-            | tackle     |            |            |            | healing    |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Book       | 25 gp      | 5 lb.      |            | Pouch      | 5 sp       | 1 lb.      |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Bottle,    | 2 gp       | 2 lb.      |            | Quiver     | 1 gp       | 1 lb.      |
-            | glass      |            |            |            |            |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Bucket     | 5 cp       | 2 lb.      |            | Ram,       | 4 gp       | 35 lb.     |
-            |            |            |            |            | portable   |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Caltrops   | 1 gp       | 2 lb.      |            | Rations    | 5 sp       | 2 lb.      |
-            | (bag       |            |            |            | (1 day)    |            |            |
-            | of 20)     |            |            |            |            |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Candle     | 1 cp       | —          |            | Robes      | 1 gp       | 4 lb.      |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Case,      | 1 gp       | 1 lb.      |            | Rope,      | 1 gp       | 10 lb.     |
-            | crossbow   |            |            |            | hempen     |            |            |
-            | bolt       |            |            |            | (50 feet)  |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Case, map  | 1 gp       | 1 lb.      |            | Rope, silk | 10 gp      | 5 lb.      |
-            | or scroll  |            |            |            | (50 feet)  |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Chain      | 5 gp       | 10 lb.     |            | Sack       | 1 cp       | 1/2 lb.    |
-            | (10 feet)  |            |            |            |            |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Chalk      | 1 cp       | —          |            | Scale,     | 5 gp       | 3 lb.      |
-            | (1 piece)  |            |            |            | merchant’s |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Chest      | 5 gp       | 25 lb.     |            | Sealing    | 5 sp       | —          |
-            |            |            |            |            | wax        |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Climber’s  | 25 gp      | 12 lb.     |            | Shovel     | 2 gp       | 5 lb.      |
-            | kit        |            |            |            |            |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Clothes,   | 5 sp       | 3 lb.      |            | Signal     | 5 cp       | —          |
-            | common     |            |            |            | whistle    |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Clothes,   | 5 gp       | 4 lb.      |            | Signet     | 5 gp       | —          |
-            | costume    |            |            |            | ring       |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Clothes,   | 15 gp      | 6 lb.      |            | Soap       | 2 cp       | —          |
-            | fine       |            |            |            |            |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Clothes,   | 2 gp       | 4 lb.      |            | Spellbook  | 50 gp      | 3 lb.      |
-            | traveler’s |            |            |            |            |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Component  | 25 gp      | 2 lb.      |            | Spikes,    | 1 gp       | 5 lb.      |
-            | pouch      |            |            |            | iron (10)  |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Crowbar    | 2 gp       | 5 lb.      |            | Spyglass   | 1,000 gp   | 1 lb.      |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Druidic    |            |            |            | Tent,      | 2 gp       | 20 lb.     |
-            | focus      |            |            |            | two-­‐pers |            |            |
-            |            |            |            |            | on         |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Sprig of   | 1 gp       | —          |            | Tinderbox  | 5 sp       | 1 lb.      |
-            | mistletoe  |            |            |            |            |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Totem      | 1 gp       | —          |            | Torch      | 1 cp       | 1 lb.      |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Wooden     | 5 gp       | 4 lb.      |            | Vial       | 1 gp       | —          |
-            | staff      |            |            |            |            |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Yew wand   | 10 gp      | 1 lb.      |            | Waterskin  | 2 sp       | 5 lb.      |
-            |            |            |            |            |            |            | (full)     |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Fishing    | 1 gp       | 4 lb.      |            | Whetstone  | 1 cp       | 1 lb.      |
-            | tackle     |            |            |            |            |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Flask or   | 2 cp       | 1 lb.      |            |            |            |            |
-            | tankard    |            |            |            |            |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-            | Grappling  | 2 gp       | 4 lb.      |            | Container  |            |            |
-            | hook       |            |            |            | Capacity   |            |            |
-            |------------|------------|------------|------------|------------|------------|------------|
-
-            Hammer 1 gp 3 lb.
-
-            |-------------------------|-------------------------|-------------------------|
-            | Healer’s kit            | 5 gp                    | 3 lb.                   |
-            |-------------------------|-------------------------|-------------------------|
-            | Holy symbol             |                         |                         |
-            |-------------------------|-------------------------|-------------------------|
-            | Amulet                  | 5 gp                    | 1 lb.                   |
-            |-------------------------|-------------------------|-------------------------|
-            | Emblem                  | 5 gp                    | —                       |
-            |-------------------------|-------------------------|-------------------------|
-            | Reliquary               | 5 gp                    | 2 lb.                   |
-            |-------------------------|-------------------------|-------------------------|
-            | Holy water (flask)      | 25 gp                   | 1 lb.                   |
-            |-------------------------|-------------------------|-------------------------|
-            | Hourglass               | 25 gp                   | 1 lb.                   |
-            |-------------------------|-------------------------|-------------------------|
-            | Hunting trap            | 5 gp                    | 25 lb.                  |
-            |-------------------------|-------------------------|-------------------------|
-            | Ink (1 ounce bottle)    | 10 gp                   | —                       |
-            |-------------------------|-------------------------|-------------------------|
-            | Ink pen                 | 2 cp                    | —                       |
-            |-------------------------|-------------------------|-------------------------|
-
-            Hammer, sledge 2 gp 10 lb.
-
-            \
-
-            Container Capacity
-
-            Backpack\* 1 cubic foot/30 pounds of gear Barrel 40 gallons
-            liquid, 4 cubic feet solid
-
-            Basket 2 cubic feet/40 pounds of gear
-
-            Bottle 1½ pints liquid
-
-            Bucket 3 gallons liquid, 1/2 cubic foot solid
-
-            Chest 12 cubic feet/300 pounds of gear Flask or tankard 1
-            pint liquid
-
-            Jug or pitcher 1 gallon liquid Pot, iron 1 gallon liquid
-
-            Pouch 1/5 cubic foot/6 pounds of gear
-
-            Sack 1 cubic foot/30 pounds of gear
-
-            Vial 4 ounces liquid
-
-            Waterskin 4 pints liquid
-
-            -   You can also strap items, such as a bedroll or a coil of
-                rope,
-
-                Strength check to make something out of particularly
-                hard wood.
-
-                \
-
-                Tools
-
-                to the outside of a backpack.
-
-                \
-
-                Equipment Packs
-
-                The starting equipment you get from your class includes
-                a collection of useful adventuring gear, put together in
-                a pack. The contents of these packs are listed here. If
-                you are buying your starting equipment, you can purchase
-                a pack for the price shown, which might be cheaper than
-                buying the items individually.
-
-                Burglar’s Pack (16 gp). Includes a
-                backpack, a bag of 1,000
-
-                Item
-
-                Cost
-
-                Weight
-
-                Artisan’s tools
-
-                Alchemist’s supplies
-
-                50 gp
-
-                8 lb.
-
-                Brewer’s supplies
-
-                20 gp
-
-                9 lb.
-
-                Calligrapher's supplies
-
-                10 gp
-
-                5 lb.
-
-                Carpenter’s tools
-
-                8 gp
-
-                6 lb.
-
-                Cartographer’s tools
-
-                15 gp.
-
-                6 lb.
-
-                Cobbler’s tools
-
-                5 gp
-
-                5 lb.
-
-                Cook’s utensils
-
-                1 gp
-
-                8 lb.
-
-                Glassblower’s tools
-
-                30 gp
-
-                5 lb.
-
-                Jeweler’s tools
-
-                25 gp
-
-                2 lb.
-
-                ball bearings, 10 feet of string, a bell, 5 candles, a
-                crowbar, a
-
-                Leatherworker’s tools
-
-                5 gp
-
-                5 lb.
-
-                hammer, 10 pitons, a hooded lantern, 2 flasks of oil, 5
-                days
-
-                Mason’s tools
-
-                10 gp
-
-                8 lb.
-
-                rations, a tinderbox, and a waterskin. The pack also has
-                50
-
-                Painter’s supplies
-
-                10 gp
-
-                5 lb.
-
-                feet of hempen rope strapped to the side of it.
-
-                Potter’s tools
-
-                10 gp
-
-                3 lb.
-
-                Diplomat’s Pack (39 gp). Includes a
-                chest, 2 cases for maps
-
-                Smith’s tools
-
-                20 gp
-
-                8 lb.
-
-                and scrolls, a set of fine clothes, a bottle of ink, an
-                ink pen, a
-
-                Tinker’s tools
-
-                50 gp
-
-                10 lb.
-
-                lamp, 2 flasks of oil, 5 sheets of paper, a vial of
-                perfume,
-
-                Weaver’s tools
-
-                1 gp
-
-                5 lb.
-
-                sealing wax, and soap.
-
-                Woodcarver’s tools
-
-                1 gp
-
-                5 lb.
-
-                Dungeoneer’s Pack (12 gp). Includes a
-                backpack, a
-
-                Disguise kit
-
-                25 gp
-
-                3 lb.
-
-                crowbar, a hammer, 10 pitons, 10 torches, a tinderbox,
-                10
-
-                Forgery kit
-
-                15 gp
-
-                5 lb.
-
-                days of rations, and a waterskin. The pack also has 50
-                feet of
-
-                Gaming set
-
-                hempen rope strapped to the side of it.
-
-                Dice set
-
-                1 sp
-
-                —
-
-                Entertainer’s Pack (40 gp). Includes a
-                backpack, a bedroll,
-
-                Playing card set
-
-                5 sp
-
-                —
-
-                2 costumes, 5 candles, 5 days of rations, a waterskin,
-                and a
-
-                Herbalism kit
-
-                5 gp
-
-                3 lb.
-
-                disguise kit.
-
-                Musical instrument
-
-                Explorer’s Pack (10 gp). Includes a
-                backpack, a bedroll, a
-
-                Bagpipes
-
-                30 gp
-
-                6 lb.
-
-                mess kit, a tinderbox, 10 torches, 10 days of rations,
-                and a
-
-                Drum
-
-                6 gp
-
-                3 lb.
-
-                waterskin. The pack also has 50 feet of hempen rope
-
-                Dulcimer
-
-                25 gp
-
-                10 lb.
-
-                strapped to the side of it.
-
-                Flute
-
-                2 gp
-
-                1 lb.
-
-                Priest’s Pack (19 gp). Includes a
-                backpack, a blanket, 10
-
-                Lute
-
-                35 gp
-
-                2 lb.
-
-                candles, a tinderbox, an alms box, 2 blocks of incense,
-                a
-
-                Lyre
-
-                30 gp
-
-                2 lb.
-
-                censer, vestments, 2 days of rations, and a waterskin.
-
-                Horn
-
-                3 gp
-
-                2 lb.
-
-                Scholar’s Pack (40 gp). Includes a
-                backpack, a book of lore,
-
-                Pan flute
-
-                12 gp
-
-                2 lb.
-
-                a bottle of ink, an ink pen, 10 sheets of parchment, a
-                little
-
-                Shawm
-
-                2 gp
-
-                1 lb.
-
-                bag of sand, and a small knife.
-
-                Viol
-
-                30 gp
-
-                1 lb.
-
-                Navigator’s tools
-
-                25 gp
-
-                2 lb.
-
-                Poisoner’s kit
-
-                50 gp
-
-                2 lb.
-
-                Tools
-
-                Thieves’ tools
-
-                25 gp
-
-                1 lb.
-
-                A tool helps you to do something you couldn't
-
-                Vehicles (land or water)
-
-                \*
-
-                \*
-
-                otherwise do, such as craft or repair an item, forge a
-                document, or pick a lock. Your race, class, background,
-                or feats give you proficiency with certain tools.
-                Proficiency with a tool allows you to add your
-                proficiency bonus to any ability check you make using
-                that tool. Tool use is not tied to a single ability,
-                since proficiency with a tool represents broader
-                knowledge of its use. For example, the GM might ask you
-                to make a Dexterity check to carve a fine detail with
-                your woodcarver’s tools, or a
-
-            -   See the “Mounts and Vehicles” section.
-
-        \
-
-        Artisan’s Tools. These special tools include the
-        items needed to pursue a craft or trade. The table shows
-        examples of the most common types of tools, each providing items
-        related to a single craft. Proficiency with a set of artisan’s
-        tools lets you add your proficiency bonus to any ability checks
-        you make using the tools in your craft. Each type of artisan’s
-        tools requires a separate proficiency.
-
-        Disguise Kit. This pouch of cosmetics, hair dye,
-        and small props lets you create disguises that change
-
-        your physical appearance. Proficiency with this kit lets you add
-        your proficiency bonus to any ability checks you make to create
-        a visual disguise.
-
-        Forgery Kit. This small box contains a variety
-        of papers and parchments, pens and inks, seals and sealing wax,
-        gold and silver leaf, and other supplies necessary to create
-        convincing forgeries of physical documents. Proficiency with
-        this kit lets you add your proficiency bonus to any ability
-        checks you make to create a physical forgery of
-        a document.
-
-        Gaming Set. This item encompasses a wide
-        range
-
-        of game pieces, including dice and decks of cards (for games
-        such as Three-­‐‑Dragon Ante). A few common examples appear on
-        the Tools table, but other kinds of gaming sets exist. If you
-        are proficient with a gaming set, you can add your proficiency
-        bonus to ability checks you make to play a game with that set.
-        Each type of gaming set requires a separate proficiency.
-
-        Herbalism Kit. This kit contains a variety of
-        instruments such as clippers, mortar and pestle, and pouches and
-        vials used by herbalists to create remedies and potions.
-        Proficiency with this kit lets you add your proficiency bonus to
-        any ability checks you make to identify or apply herbs. Also,
-        proficiency with this kit is required to create antitoxin and
-        potions of healing.
-
-        Musical Instrument. Several of the most common
-        types of musical instruments are shown on the table as examples.
-        If you have proficiency with a given musical instrument, you can
-        add your proficiency bonus to any ability checks you make to
-        play music with the instrument. A bard can use a musical
-        instrument as a spellcasting focus. Each type of musical
-        instrument requires a separate proficiency.
-
-        Navigator’s Tools. This set of instruments is
-        used for navigation at sea. Proficiency with navigator's tools
-        lets you chart a ship's course and follow navigation charts. In
-        addition, these tools allow you to add your proficiency bonus to
-        any ability check you make to avoid getting lost at sea.
-
-        Poisoner’s Kit. A poisoner’s kit includes the
-        vials, chemicals, and other equipment necessary for the creation
-        of poisons. Proficiency with this kit lets you add your
-        proficiency bonus to any ability checks you make to craft or
-        use poisons.
-
-        Thieves’ Tools. This set of tools includes a
-        small file, a set of lock picks, a small mirror mounted on a
-        metal handle, a set of narrow-­‐‑bladed scissors, and a pair
-        of pliers. Proficiency with these tools lets you add your
-        proficiency bonus to any ability checks you make to disarm traps
-        or open locks.
-
-        Mounts and Vehicles
-        -------------------
-
-        A good mount can help you move more quickly through the
-        wilderness, but its primary purpose is to carry the gear that
-        would otherwise slow you down. The Mounts and Other Animals
-        table shows each animal’s speed and base carrying capacity.
-
-        An animal pulling a carriage, cart, chariot, sled, or wagon can
-        move weight up to five times its base carrying capacity,
-        including the weight of the vehicle. If multiple animals pull
-        the same vehicle, they can add their carrying capacity together.
-
-        Mounts other than those listed here are available in fantasy
-        gaming worlds, but they are rare and not normally available
-        for purchase. These include flying mounts (pegasi, griffons,
-        hippogriffs, and similar animals) and even aquatic mounts (giant
-        sea horses, for example). Acquiring such a mount often means
-        securing an egg and raising the creature yourself, making a
-        bargain with a powerful entity, or negotiating with the
-        mount itself.
-
-        Barding. Barding is armor designed to protect an
-        animal’s head, neck, chest, and body. Any type of armor shown on
-        the Armor table can be purchased as barding. The cost is four
-        times the equivalent armor made for humanoids, and it weighs
-        twice as much.
-
-        Saddles. A military saddle braces the rider,
-        helping you keep your seat on an active mount in battle. It
-        gives you advantage on any check you make to remain mounted. An
-        exotic saddle is required for riding any aquatic or
-        flying mount.
-
-        Vehicle Proficiency. If you have proficiency
-        with a certain kind of vehicle (land or water), you can add your
-        proficiency bonus to any check you make to control that kind of
-        vehicle in difficult circumstances.
-
-        Rowed Vessels. Keelboats and rowboats are used
-        on lakes and rivers. If going downstream, add the speed of the
-        current (typically 3 miles per hour) to the speed of
-        the vehicle. These vehicles can’t be rowed against any
-        significant current, but they can be pulled upstream by draft
-        animals on the shores. A rowboat weighs 100 pounds, in case
-        adventurers carry it over land.
-
-        \
-
-        Mounts and Other Animals
-
-        |--------------------|--------------------|--------------------|--------------------|
-        | Item               | Cost               | Speed              | Capacity           |
-        |--------------------|--------------------|--------------------|--------------------|
-        | Camel              | 50 gp              | 50 ft.             | 480 lb.            |
-        |--------------------|--------------------|--------------------|--------------------|
-        | Donkey or mule     | 8 gp               | 40 ft.             | 420 lb.            |
-        |--------------------|--------------------|--------------------|--------------------|
-        | Elephant           | 200 gp             | 40 ft.             | 1,320 lb.          |
-        |--------------------|--------------------|--------------------|--------------------|
-        | Horse, draft       | 50 gp              | 40 ft.             | 540 lb.            |
-        |--------------------|--------------------|--------------------|--------------------|
-        | Horse, riding      | 75 gp              | 60 ft.             | 480 lb.            |
-        |--------------------|--------------------|--------------------|--------------------|
-        | Mastiff            | 25 gp              | 40 ft.             | 195 lb.            |
-        |--------------------|--------------------|--------------------|--------------------|
-
-        Carrying
-
-        Pony 30 gp 40 ft. 225 lb.
-
-        Warhorse 400 gp 60 ft. 540 lb.
-
-        \
-
-        Tack, Harness, and Drawn Vehicles
-
-        Item Cost Weight
-
-        Barding ×4 ×2
-
-        Bit and bridle 2 gp 1 lb.
-
-        Carriage 100 gp 600 lb.
-
-        Cart 15 gp 200 lb.
-
-        Chariot 250 gp 100 lb.
-
-        Feed (per day) 5 cp 10 lb.
-
-        Saddle
-
-        Exotic 60 gp 40 lb.
-
-        Military 20 gp 30 lb.
-
-        Pack 5 gp 15 lb.
-
-        Riding 10 gp 25 lb.
-
-        Saddlebags 4 gp 8 lb.
-
-        Sled 20 gp 300 lb. Stabling (per day) 5 sp — Wagon 35 gp 400 lb.
-
-        \
-
-        Waterborne Vehicles
-
-        Item Cost Speed
-
-        Galley 30,000 gp 4 mph
-
-        Keelboat 3,000 gp 1 mph
-
-        Longship 10,000 gp 3 mph Rowboat 50 gp 1½ mph Sailing ship
-        10,000 gp 2 mph Warship 25,000 gp 2½ mph
-
-        \
-
-        Trade Goods
-        -----------
-
-        Most wealth is not in coins. It is measured in livestock, grain,
-        land, rights to collect taxes, or rights to resources (such as a
-        mine or a forest).
-
-        Guilds, nobles, and royalty regulate trade. Chartered companies
-        are granted rights to conduct trade along certain routes, to
-        send merchant ships to various ports, or to buy or sell
-        specific goods. Guilds set prices for the goods or services that
-        they control, and determine who may or may not offer those goods
-        and services. Merchants commonly exchange trade goods without
-        using currency. The Trade Goods table shows the value of
-        commonly exchanged goods.
-
-        \
-
-        Trade Goods
-
-        Cost Goods
-
-        1.  cp 1 lb. of wheat
-
-        2.  cp 1 lb. of flour or one chicken 5 cp 1 lb. of salt
-
-        1 sp 1 lb. of iron or 1 sq. yd. of canvas
-
-        5 sp 1 lb. of copper or 1 sq. yd. of cotton cloth
-
-        1.  gp 1 lb. of ginger or one goat
-
-        2.  gp 1 lb. of cinnamon or pepper, or one sheep 3 gp 1 lb. of
-            cloves or one pig
-
-        5 gp 1 lb. of silver or 1 sq. yd. of linen
-
-        10 gp 1 sq. yd. of silk or one cow 15 gp 1 lb. of saffron or one
-        ox 50 gp 1 lb. of gold
-
-        500 gp 1 lb. of platinum
-
-        \
-
-        Expenses
-        --------
-
-        When not descending into the depths of the earth, exploring
-        ruins for lost treasures, or waging war against the encroaching
-        darkness, adventurers face more mundane realities. Even in a
-        fantastical world, people require basic necessities such as
-        shelter, sustenance, and clothing. These things cost money,
-        although some lifestyles cost more than others.
-
-        \
-
-        ### Lifestyle Expenses
-
-        \
-
-        Lifestyle expenses provide you with a simple way to account for
-        the cost of living in a fantasy world. They cover your
-        accommodations, food and drink, and all your other necessities.
-        Furthermore, expenses cover the cost of maintaining your
-        equipment so you can be ready when adventure next calls.
-
-        At the start of each week or month (your choice), choose a
-        lifestyle from the Expenses table and pay the price to sustain
-        that lifestyle. The prices listed are per day, so if you wish to
-        calculate the cost of your chosen lifestyle over a thirty-­‐‑day
-        period, multiply the listed price by 30. Your lifestyle might
-        change from one period to the next, based on the funds you have
-        at your disposal, or you might maintain the same lifestyle
-        throughout your character’s career.
-
-        Your lifestyle choice can have consequences. Maintaining a
-        wealthy lifestyle might help you make contacts with the rich and
-        powerful, though you run the risk of attracting thieves.
-        Likewise, living frugally might help you avoid criminals, but
-        you are unlikely to make powerful connections.
-
-        \
-
-        Lifestyle Expenses
-
-        Lifestyle Price/Day
-
-        Wretched —
-
-        Squalid 1 sp
-
-        Poor 2 sp
-
-        Modest 1 gp
-
-        Comfortable 2 gp
-
-        Wealthy 4 gp
-
-        Aristocratic 10 gp minimum
-
-        Wretched. You live in inhumane conditions. With
-        no place to call home, you shelter wherever you can, sneaking
-        into barns, huddling in old crates, and relying on the good
-        graces of people better off than you. A wretched lifestyle
-        presents abundant dangers. Violence, disease, and hunger follow
-        you wherever you go. Other wretched people covet your armor,
-        weapons, and adventuring gear, which represent a fortune by
-        their standards. You are beneath the notice of
-        most people.
-
-        Squalid. You live in a leaky stable, a
-        mud-­‐‑floored
-
-        hut just outside town, or a vermin-­‐‑infested boarding house in
-        the worst part of town. You have shelter from the elements, but
-        you live in a desperate and often violent environment, in places
-        rife with disease, hunger, and misfortune. You are beneath the
-        notice of most people, and you have few legal protections. Most
-        people at this lifestyle level have suffered some
-        terrible setback. They might be disturbed, marked as exiles, or
-        suffer from disease.
-
-        Poor. A poor lifestyle means going without the
-        comforts available in a stable community. Simple food and
-        lodgings, threadbare clothing, and unpredictable conditions
-        result in a sufficient, though probably unpleasant, experience.
-        Your accommodations might be a room in a flophouse or in the
-        common room above a tavern. You benefit from some legal
-        protections, but you still have to contend with violence, crime,
-        and disease. People at this lifestyle level tend to be unskilled
-        laborers, costermongers, peddlers, thieves, mercenaries, and
-        other disreputable types.
-
-        Modest. A modest lifestyle keeps you out of the
-        slums and ensures that you can maintain your equipment. You live
-        in an older part of town, renting a room in a boarding house,
-        inn, or temple. You don’t
-
-        small businesses. You have respectable lodgings, usually a
-        spacious home in a good part of town or a comfortable suite at a
-        fine inn. You likely have a small staff of servants.
-
-        Aristocratic. You live a life of plenty
-        and comfort.
-
-        You move in circles populated by the most powerful people in
-        the community. You have excellent lodgings, perhaps a townhouse
-        in the nicest part of town or rooms in the finest inn. You dine
-        at the best restaurants, retain the most skilled and fashionable
-        tailor, and have servants attending to your every need. You
-        receive invitations to the social gatherings of the rich and
-        powerful, and spend evenings in the company of politicians,
-        guild leaders, high priests, and nobility. You must also contend
-        with the highest levels of deceit and treachery. The wealthier
-        you are, the greater the chance you will be drawn into political
-        intrigue as a pawn or participant.
-
-        \
-
-        Self-Sufficiency
-
-        The expenses and lifestyles described here assume that you are
-        spending your time between adventures in town, availing yourself
-        of whatever services you can afford—paying for food and shelter,
-        paying townspeople to sharpen your sword and repair your armor,
-        and so on. Some characters, though, might prefer to spend their
-        time away from civilization, sustaining themselves in the wild
-        by hunting, foraging, and repairing their own gear.
-
-        Maintaining this kind of lifestyle doesn’t require you to spend
-        any coin, but it is time-­‐consuming. If you spend your time
-        between adventures practicing a profession, you can eke out the
-        equivalent of a poor lifestyle. Proficiency in the Survival
-        skill lets you live at the equivalent of a
-        comfortable lifestyle.
-
-        \
-
-        ### Food, Drink, and Lodging
-
-        go hungry or thirsty, and your living conditions are 
-         
-
-        clean, if simple. Ordinary people living modest lifestyles
-        include soldiers with families, laborers, students, priests,
-        hedge wizards, and the like.
-
-        Comfortable. Choosing a comfortable lifestyle
-        means that you can afford nicer clothing and can easily maintain
-        your equipment. You live in a small cottage in a middle-­‐‑class
-        neighborhood or in a private room at a fine inn. You associate
-        with merchants, skilled tradespeople, and
-        military officers.
-
-        Wealthy. Choosing a wealthy lifestyle means
-        living a life of luxury, though you might not have achieved the
-        social status associated with the old money of nobility
-        or royalty. You live a lifestyle comparable to that of a highly
-        successful merchant, a favored servant of the royalty, or the
-        owner of a few
-
-        The Food, Drink, and Lodging table gives prices for individual
-        food items and a single night’s lodging. These prices are
-        included in your total lifestyle expenses.
-
-        Food, Drink, and Lodging
-
-        Item Cost
-
-        Ale
-
-        Gallon 2 sp
-
-        Mug 4 cp
-
-        Banquet (per person) 10 gp Bread, loaf 2 cp
-
-        Cheese, hunk 1 sp
-
-        Inn stay (per day)
-
-        Squalid 7 cp
-
-        Poor 1 sp
-
-        Modest 5 sp
-
-        Comfortable 8 sp
-
-        Wealthy 2 gp
-
-        Aristocratic 4 gp
-
-        Meals (per day)
-
-        Squalid 3 cp
-
-        Poor 6 cp
-
-        Modest 3 sp
-
-        Comfortable 5 sp
-
-        Wealthy 8 sp
-
-        Aristocratic 2 gp
-
-        Meat, chunk 3 sp
-
-        Wine
-
-        Common (pitcher) 2 sp Fine (bottle) 10 gp
-
-        \
-
-        ### Services
-
-        \
-
-        Adventurers can pay nonplayer characters to assist them or act
-        on their behalf in a variety of circumstances. Most such
-        hirelings have fairly ordinary skills, while others are masters
-        of a craft or art, and a few are experts with specialized
-        adventuring skills.
-
-        Some of the most basic types of hirelings appear on the
-        Services table. Other common hirelings include any of the wide
-        variety of people who inhabit a typical town or city, when the
-        adventurers pay them to perform a specific task. For example, a
-        wizard might pay a carpenter to construct an elaborate chest
-        (and its miniature replica) for use in the 
-        secret chest spell. A fighter might commission
-        a blacksmith to forge a special sword. A bard might pay a tailor
-        to make exquisite clothing for an upcoming performance in front
-        of the duke.
-
-        Other hirelings provide more expert or dangerous services.
-        Mercenary soldiers paid to help the adventurers take on a
-        hobgoblin army are hirelings, as are sages hired to research
-        ancient or esoteric lore. If a high-­‐‑level adventurer
-        establishes a stronghold of some kind, he or she might hire a
-        whole staff of servants and agents to run the place, from a
-        castellan or steward to menial laborers to keep the
-        stables clean. These hirelings often enjoy a long-­‐‑term
-        contract that includes a place to live within the stronghold as
-        part of the offered compensation.
-
-        \
-
-        Services
-
-        Service Pay
-
-        Coach cab
-
-        Between towns 3 cp per mile Within a city 1 cp
-
-        Hireling
-
-        Skilled 2 gp per day
-
-        Untrained 2 sp per day
-
-        Messenger 2 cp per mile Road or gate toll 1 cp
-
-        Ship’s passage 1 sp per mile
-
-        \
-
-        Skilled hirelings include anyone hired to perform a service that
-        involves a proficiency (including weapon, tool, or skill): a
-        mercenary, artisan, scribe, and so on. The pay shown is a
-        minimum; some expert hirelings require more pay. Untrained
-        hirelings are hired for menial work that requires no particular
-        skill and can include laborers, porters, maids, and
-        similar workers.
-
-        \
-
-        ### Spellcasting Services
-
-        \
-
-        People who are able to cast spells don’t fall into the category
-        of ordinary hirelings. It might be possible to find someone
-        willing to cast a spell in exchange for coin or favors, but it
-        is rarely easy and no established pay rates exist. As a rule,
-        the higher the level of the desired spell, the harder it is to
-        find someone who can cast it and the more it costs.
-
-        Hiring someone to cast a relatively common spell of 1st or 2nd
-        level, such as cure wounds or 
-        identify, is easy enough in a city or town,
-        and might cost 10 to 50 gold pieces (plus the cost of any
-        expensive material components). Finding someone able and willing
-        to cast a higher-­‐‑level spell might involve traveling to a
-        large city, perhaps one with a university or prominent temple.
-        Once found, the spellcaster might ask for a service instead of
-        payment—the kind of service that only adventurers can provide,
-        such as retrieving a rare item from a dangerous locale or
-        traversing a monster-­‐‑infested wilderness to deliver something
-        important to a distant settlement.
 
         Feats
         =====
@@ -10813,8 +8426,8 @@ granted by your background:
 
     ### Skills
 
-    difficulty of the task, represented by a Difficulty Class. 
-     
+    difficulty of the task, represented by a Difficulty Class.
+
 
     The more difficult a task, the higher its DC. The Typical Difficulty
     Classes table shows the most common DCs.
@@ -12510,7 +10123,7 @@ deal with the danger of falling. If a flying creature is knocked prone,
 has its speed reduced to 0, or is otherwise deprived of the ability to
 move, the creature falls, unless it has the ability to
 
-hover or it is being held aloft by magic, such as by the 
+hover or it is being held aloft by magic, such as by the
 fly spell.
 
 ### Creature Size
@@ -12702,7 +10315,7 @@ spell must have a casting time of 1 action, and
 holding onto the spell’s magic requires concentration. If your
 concentration is broken, the spell dissipates without taking effect. For
 example, if you are concentrating on the web
-spell and ready magic missile, your 
+spell and ready magic missile, your
 web spell ends, and if you take damage before you
 release magic missile with your reaction, your
 concentration might be broken.
@@ -13102,7 +10715,7 @@ flames to deal fire damage.
 
 Force. Force is pure magical energy focused into
 a damaging form. Most effects that deal force damage are spells,
-including magic missile and 
+including magic missile and
 spiritual weapon.
 
 Lightning. A lightning bolt
@@ -13181,7 +10794,7 @@ revivify spell has restored it to life.
 ### Dropping to 0 Hit Points
 
 Slashing. Swords, axes, and monsters’ claws deal
- 
+
 
 slashing damage.
 
@@ -13517,7 +11130,7 @@ of her 2nd-­‐‑level slots, that magic missile is
 2nd level. Effectively, the spell expands to fill the slot it is put
 into.
 
-Some spells, such as magic missile and 
+Some spells, such as magic missile and
 cure wounds, have more powerful effects when cast at a
 higher level, as detailed in a spell’s description.
 
@@ -13622,7 +11235,7 @@ spell like fireball, the target is the point in
 space where the ball of fire erupts.
 
 Most spells have ranges expressed in feet. Some spells can target only a
-creature (including you) that you touch. Other spells, such as the 
+creature (including you) that you touch. Other spells, such as the
 shield spell, affect only you. These spells have a
 range of self.
 
@@ -13776,7 +11389,7 @@ target yourself.
 
 \
 
-Spells such as burning hands and 
+Spells such as burning hands and
 cone of cold cover an area, allowing them to affect
 multiple creatures at once.
 
@@ -13824,7 +11437,7 @@ modifier + your proficiency bonus + any special modifiers.
 
 ### Attack Rolls
 
-its length is equal to that point’s distance from the 
+its length is equal to that point’s distance from the
 
 
 point of origin. A cone’s area of effect specifies its maximum length.
@@ -14693,7 +12306,7 @@ Conjuration cantrip
 \
 
 Casting Time: 1 action Range: 60
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -14774,7 +12387,7 @@ An audible alarm produces the sound of a hand bell for 10 seconds within
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V, S
 
 Duration: Concentration, up to 1 hour
@@ -15032,7 +12645,7 @@ each slot level above 5th.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self (10-­‐‑foot radius) Components: V,
 S
 
@@ -15083,7 +12696,7 @@ suppressed, it doesn’t function, but the time it spends suppressed
 counts against its duration.
 
 Targeted Effects. Spells and other magical
-effects, such as magic missile and 
+effects, such as magic missile and
 charm person, that target a creature or an object in
 the sphere have no effect on that target.
 
@@ -15660,7 +13273,7 @@ hit points possible from any healing.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Components: V, S
 
 Duration: Concentration, up to 1 minute
@@ -15799,7 +13412,7 @@ creature for each slot level above 1st.
 \
 
 Casting Time: 1 action Range: 30
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -15858,7 +13471,7 @@ each slot level above 2nd.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V, S Duration:
 1 minute
 
@@ -15890,7 +13503,7 @@ ability to do so.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V
 
 Duration: Concentration, up to 1 minute
@@ -15912,7 +13525,7 @@ truesight.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self (15-­‐‑foot cone) Components: V, S
 Duration: Instantaneous
 
@@ -16067,7 +13680,7 @@ Necromancy cantrip
 \
 
 Casting Time: 1 action Range: 120
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 1 round
 
 \
@@ -16265,7 +13878,7 @@ above 1st.
 \
 
 Casting Time: 1 action Range: 60
-feet Components: V Duration: 
+feet Components: V Duration:
 1 round
 
 \
@@ -16347,7 +13960,7 @@ first that you get no answer. The GM makes this roll in secret.
 
 \
 
-Casting Time: 1 minute Range: 
+Casting Time: 1 minute Range:
 Self Components: V, S Duration:
 Instantaneous
 
@@ -16750,7 +14363,7 @@ and three times as many with an 8th-­‐‑level slot.
 
 \
 
-Casting Time: 1 minute Range: 
+Casting Time: 1 minute Range:
 Self Components: V Duration:
 1 minute
 
@@ -16782,7 +14395,7 @@ instead offer a short phrase as an answer.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Component: V, S Duration:
 7 days
 
@@ -16853,7 +14466,7 @@ Duration: 10 days
 
 Choose a spell of 5th level or lower that you can cast, that has a
 casting time of 1 action, and that can target you. You cast that
-spell—called the contingent spell—as part of casting 
+spell—called the contingent spell—as part of casting
 contingency, expending spell slots for both, but the
 contingent spell doesn’t come into effect. Instead, it takes effect when
 a certain circumstance occurs. You describe that circumstance when you
@@ -16863,7 +14476,7 @@ that water breathing comes into effect when you
 are engulfed in water or a similar liquid.
 
 The contingent spell takes effect immediately after the circumstance is
-met for the first time, whether or not you want it to, and then 
+met for the first time, whether or not you want it to, and then
 contingency ends.
 
 The contingent spell takes effect only on you, even if it can normally
@@ -17065,7 +14678,7 @@ Stage Condition
 \
 
 Casting Time: 1 action Range: 30
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -17224,7 +14837,7 @@ slot level above 5th.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Components: V, S Duration:
 Instantaneous
 
@@ -17336,7 +14949,7 @@ feet.
 \
 
 Casting Time: 1 action Range: 60
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 1 hour
 
 \
@@ -17362,7 +14975,7 @@ dispelled.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Components: V, S Duration:
 8 hours
 
@@ -17437,7 +15050,7 @@ slot level above 7th.
 \
 
 Casting Time: 1 action Range: 60
-feet Components: S Duration: 
+feet Components: S Duration:
 1 hour
 
 \
@@ -17464,7 +15077,7 @@ you can have the shadowy door connect to its demiplane instead.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V, S
 
 Duration: Concentration, up to 10 minutes
@@ -17487,7 +15100,7 @@ or dirt.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V, S
 
 Duration: Concentration, up to 10 minutes
@@ -17594,7 +15207,7 @@ can’t see it, but it must still be within range.
 \
 
 Casting Time: 1 action Range: 500
-feet Components: V Duration: 
+feet Components: V Duration:
 Instantaneous
 
 \
@@ -17623,7 +15236,7 @@ take 4d6 force damage, and the spell fails to teleport you.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V, S Duration:
 1 hour
 
@@ -17669,7 +15282,7 @@ Duration: Instantaneous
 
 A thin green ray springs from your pointing finger to a target that you
 can see within range. The target can be a creature, an object, or a
-creation of magical force, such as the wall created by 
+creation of magical force, such as the wall created by
 wall of force.
 
 A creature targeted by this spell must make a
@@ -17680,7 +15293,7 @@ disintegrated.
 
 A disintegrated creature and everything it is wearing and carrying,
 except magic items, are reduced to a pile of fine gray dust. The
-creature can be restored to life only by means of a 
+creature can be restored to life only by means of a
 true resurrection or a wish
 spell.
 
@@ -17744,7 +15357,7 @@ the Feywild.
 \
 
 Casting Time: 1 action Range: 120
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -17824,7 +15437,7 @@ your weapon attacks deal an extra 1d4 radiant damage on a hit.
 
 \
 
-Casting Time: 1 bonus action Range: 
+Casting Time: 1 bonus action Range:
 30 feet Components: V
 
 Duration: Instantaneous
@@ -17853,7 +15466,7 @@ points, a celestial, an
 elemental, a fey, or a fiend that fails its save is forced
 
 back to its plane of origin (if it isn’t there already) and can’t return
-to your current plane for 24 hours by any means short of a 
+to your current plane for 24 hours by any means short of a
 wish spell.
 
 \
@@ -18262,7 +15875,7 @@ speak.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V, S Duration:
 Up to 8 hours
 
@@ -18330,7 +15943,7 @@ ends, you can take the Dash action.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V, S
 
 Duration: Concentration, up to 1 minute
@@ -18572,7 +16185,7 @@ repeat its saving throw against this spell. If it succeeds on its saving
 throw, the spell ends.
 
 The spell can also be ended by greater
-restoration, heal, or 
+restoration, heal, or
 wish.
 
 \
@@ -18583,7 +16196,7 @@ wish.
 
 \
 
-Casting Time: 10 minutes Range: 
+Casting Time: 10 minutes Range:
 30 feet Components: V, S
 Duration: Instantaneous
 
@@ -18659,7 +16272,7 @@ the destination.
 \
 
 Casting Time: 1 action Range: 120
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -18668,7 +16281,7 @@ You sense the presence of any trap within range that is within line of
 sight. A trap, for the purpose of this spell, includes anything that
 would inflict a sudden or unexpected effect you consider harmful or
 undesirable, which was specifically intended as such by its creator.
-Thus, the spell would sense an area affected by the 
+Thus, the spell would sense an area affected by the
 alarm spell, a glyph of
 warding, or a mechanical pit trap, but it would not reveal a
 natural weakness in the floor, an unstable ceiling, or a hidden
@@ -18688,7 +16301,7 @@ nature of the danger posed by a trap you sense.
 \
 
 Casting Time: 1 action Range: 60
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -18778,7 +16391,7 @@ damage from a warm shield, or 2d8 cold damage from a cold shield.
 \
 
 Casting Time: 1 action Range: 150
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -19043,7 +16656,7 @@ the duration, creatures can’t teleport into the area or use portals,
 such as those created by the gate spell, to
 enter the area. The spell proofs the area against planar travel, and
 therefore prevents creatures from accessing the area by way of the
-Astral Plane, Ethereal Plane, Feywild, Shadowfell, or the 
+Astral Plane, Ethereal Plane, Feywild, Shadowfell, or the
 plane shift spell.
 
 In addition, the spell damages types of creatures that you choose when
@@ -19057,8 +16670,8 @@ When you cast this spell, you can designate a password. A creature that
 speaks the password as it enters the area takes no damage from the
 spell.
 
-The spell’s area can’t overlap with the area of another 
-forbiddance spell. If you cast 
+The spell’s area can’t overlap with the area of another
+forbiddance spell. If you cast
 forbiddance every day for 30 days in the same
 location, the spell lasts until it is dispelled, and the material
 components are consumed on the last casting.
@@ -19297,7 +16910,7 @@ appropriate. It might leave, attack you, or help you.
 \
 
 Casting Time: 1 minute Range: 60
-feet Components: V Duration: 
+feet Components: V Duration:
 30 days
 
 \
@@ -19317,7 +16930,7 @@ You can issue any command you choose, short of an activity that would
 result in certain death. Should you issue a suicidal command, the spell
 ends.
 
-You can end the spell early by using an action to dismiss it. A 
+You can end the spell early by using an action to dismiss it. A
 remove curse, greater
 restoration, or wish spell also ends it.
 
@@ -19396,7 +17009,7 @@ giant wasp.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V Duration:
 1 hour
 
@@ -19513,7 +17126,7 @@ intruder and attack it. If the spell requires concentration, it lasts
 until the end of its full duration.
 
 At Higher Levels. When you cast this spell using
-a spell slot of 4th level or higher, the damage of an 
+a spell slot of 4th level or higher, the damage of an
 explosive runes glyph increases by 1d8 for each slot
 level above 3rd. If you create a spell glyph,
 you can store any spell of up to the same level as the slot you use for
@@ -19554,7 +17167,7 @@ throw or fall prone.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Components: V, S
 
 Duration: Concentration, up to 1 minute
@@ -19642,13 +17255,13 @@ direction from the one it chooses.
 Doors. All doors in the warded area are
 magically locked, as if sealed by an arcane lock
 spell. In addition, you can cover up to ten doors with an
-illusion (equivalent to the illusory object function of the 
+illusion (equivalent to the illusory object function of the
 minor illusion spell) to make them appear as plain
 sections of wall.
 
 Stairs. Webs fill all stairs in the warded area
 from top to bottom, as the web spell. These
-strands regrow in 10 minutes if they are burned or torn away while 
+strands regrow in 10 minutes if they are burned or torn away while
 guards and wards lasts.
 
 Other Spell Effect. You can place your choice of
@@ -19659,7 +17272,7 @@ stronghold.
 \
 
 Place dancing lights in four corridors. You can
-designate a simple program that the lights repeat as long as 
+designate a simple program that the lights repeat as long as
 guards and wards lasts.
 
 Place magic mouth in two locations.
@@ -19691,7 +17304,7 @@ Divination cantrip
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Components: V, S
 
 Duration: Concentration, up to 1 minute
@@ -19712,7 +17325,7 @@ The spell then ends.
 \
 
 Casting Time: 1 action Range: 120
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 1 round
 
 \
@@ -19737,8 +17350,8 @@ level above 1st.
 
 Casting Time: 1 action
 
-Range: Self (60-­‐‑foot line) Components: 
-V, S, M (a legume seed) Duration: 
+Range: Self (60-­‐‑foot line) Components:
+V, S, M (a legume seed) Duration:
 Concentration, up to 1 minute
 
 \
@@ -19782,7 +17395,7 @@ Duration: Until dispelled
 
 You touch a point and infuse an area around it with holy (or unholy)
 power. The area can have a radius up to 60 feet, and the spell fails if
-the radius includes an area already under the effect a 
+the radius includes an area already under the effect a
 hallow spell. The affected area is subject to the
 following effects.
 
@@ -19887,7 +17500,7 @@ what it is, sees it as a vague image superimposed on the terrain.
 \
 
 Casting Time: 1 action Range: 60
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -19939,7 +17552,7 @@ actions until after its next turn, as a wave of lethargy sweeps over it.
 \
 
 Casting Time: 1 action Range: 60
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -19962,7 +17575,7 @@ each slot level above 6th.
 
 \
 
-Casting Time: 1 bonus action Range: 
+Casting Time: 1 bonus action Range:
 60 feet Components: V
 
 Duration: Instantaneous
@@ -20047,7 +17660,7 @@ number of hit points. These benefits last for 24 hours.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Components: V, S
 
 Duration: Concentration, up to 1 minute
@@ -20434,7 +18047,7 @@ choose at the start of each of your turns.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Components: V, S Duration:
 Instantaneous
 
@@ -20603,7 +18216,7 @@ spell ends.
 \
 
 Casting Time: 1 action Range: 60
-feet Components: V Duration: 
+feet Components: V Duration:
 Instantaneous
 
 \
@@ -20657,7 +18270,7 @@ language. For example, if you have a mysterious magic axe on hand, the
 spell might yield this information: “Woe to the evildoer whose hand
 touches the axe, for even the haft slices the hand of the evil ones.
 Only a true Child of Stone, lover and beloved of Moradin, may awaken the
-true powers of the axe, and only with the sacred word 
+true powers of the axe, and only with the sacred word
 Rudnogg on the lips.”
 
 \
@@ -20668,7 +18281,7 @@ Rudnogg on the lips.”
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Components: V, S Duration:
 Instantaneous
 
@@ -20927,7 +18540,7 @@ Conjuration cantrip
 \
 
 Casting Time: 1 action Range: 30
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 1 minute
 
 \
@@ -21062,7 +18675,7 @@ When the spell ends, the container is destroyed.
 \
 
 Casting Time: 1 action Range: 120
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 You create three glowing darts of magical force. Each dart hits a
@@ -21123,7 +18736,7 @@ silver bell rings within 30 feet of it.
 
 \
 
-Casting Time: 1 bonus action Range: 
+Casting Time: 1 bonus action Range:
 Touch Components: V, S
 
 Duration: Concentration, up to 1 hour
@@ -21238,7 +18851,7 @@ requiring your concentration.
 \
 
 Casting Time: 1 action Range: 60
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -21260,7 +18873,7 @@ level above 5th.
 \
 
 Casting Time: 1 action Range: 60
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -21279,7 +18892,7 @@ blinded or deafened. This spell has no effect on undead or constructs.
 
 \
 
-Casting Time: 1 bonus action Range: 
+Casting Time: 1 bonus action Range:
 60 feet Components: V
 
 Duration: Instantaneous
@@ -21383,7 +18996,7 @@ that space is occupied, in the nearest unoccupied space.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Components: V, S Duration:
 8 hours
 
@@ -21474,7 +19087,7 @@ can travel freely around corners or through openings.
 \
 
 Casting Time: 1 action Range: 1
-mile Components: V, S Duration: 
+mile Components: V, S Duration:
 Instantaneous
 
 \
@@ -21498,7 +19111,7 @@ aren’t being worn or carried.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Components: V, S Duration:
 24 hours
 
@@ -21559,7 +19172,7 @@ faint to the creature.
 
 \
 
-Casting Time: 10 minutes Range: 
+Casting Time: 10 minutes Range:
 Sight Components: V, S Duration:
 10 days
 
@@ -21595,7 +19208,7 @@ physically interact with the illusion.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V, S Duration:
 1 minute
 
@@ -21629,7 +19242,7 @@ illusions as false, as with truesight.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: S
 
 Duration: Concentration, up to 1 hour
@@ -21924,7 +19537,7 @@ level above 4th.
 \
 
 Casting Time: 1 minute Range: 30
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 1 hour
 
 \
@@ -21951,7 +19564,7 @@ if the steed takes any damage.
 
 \
 
-Casting Time: 10 minutes Range: 
+Casting Time: 10 minutes Range:
 60 feet Components: V, S
 Duration: Instantaneous
 
@@ -22168,7 +19781,7 @@ use, wield, or otherwise benefit from any of its equipment.
 \
 
 Casting Time: 1 action Range: 60
-feet Components: V Duration: 
+feet Components: V Duration:
 Instantaneous
 
 \
@@ -22210,7 +19823,7 @@ each of its turns. On a successful save, this stunning effect ends.
 
 \
 
-Casting Time: 10 minutes Range: 
+Casting Time: 10 minutes Range:
 30 feet Components: V Duration:
 Instantaneous
 
@@ -22233,7 +19846,7 @@ Transmutation cantrip
 \
 
 Casting Time: 1 action Range: 10
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Up to 1 hour
 
 \
@@ -22272,7 +19885,7 @@ an effect as an action.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self (60-­‐‑foot cone) Components: V, S
 Duration: Instantaneous
 
@@ -22326,7 +19939,7 @@ roll a d8 to determine which color ray affects it.
 \
 
 Casting Time: 1 action Range: 60
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 10 minutes
 
 \
@@ -22474,7 +20087,7 @@ Conjuration cantrip
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V, S Duration:
 10 minutes
 
@@ -22594,7 +20207,7 @@ sounds hollow to the creature.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Components: V, S
 
 Duration: Concentration, up to 1 hour
@@ -22641,7 +20254,7 @@ advantage on any new saving throw against the relevant effect.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Components: V, S Duration:
 1 hour
 
@@ -22663,7 +20276,7 @@ damage.
 \
 
 Casting Time: 1 action Range: 10
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -22746,7 +20359,7 @@ Evocation cantrip
 \
 
 Casting Time: 1 action Range: 60
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -22865,7 +20478,7 @@ traits accordingly.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Components: V, S Duration:
 Instantaneous
 
@@ -23084,7 +20697,7 @@ Evocation cantrip
 \
 
 Casting Time: 1 action Range: 60
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -23132,7 +20745,7 @@ enemy creature, this spell ends.
 \
 
 Casting Time: 1 action Range: 120
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 Instantaneous
 
 \
@@ -23283,7 +20896,7 @@ creatures and objects appear ghostly and translucent.
 \
 
 Casting Time: 1 action Range: 30
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 8 hours
 
 \
@@ -23497,7 +21110,7 @@ Duration: 1 round
 
 An invisible barrier of magical force appears and protects you. Until
 the start of your next turn, you have a +5 bonus to AC, including
-against the triggering attack, and you take no damage from 
+against the triggering attack, and you take no damage from
 magic missile.
 
 \
@@ -23556,7 +21169,7 @@ Evocation cantrip
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Touch Components: V, S Duration:
 Instantaneous
 
@@ -23794,7 +21407,7 @@ the end of its turn. On a successful save, the effect ends for it.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V, S Duration:
 10 minutes
 
@@ -23850,7 +21463,7 @@ future events.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self (30-­‐‑foot radius) Components: V,
 S Duration: 10 minutes
 
@@ -23944,8 +21557,8 @@ save DC to recognize the terrain as hazardous before entering it.
 
 Casting Time: 1 action
 
-Range: Self (15-­‐‑foot radius) Components: 
-V, S, M (a holy symbol) Duration: 
+Range: Self (15-­‐‑foot radius) Components:
+V, S, M (a holy symbol) Duration:
 Concentration, up to 10 minutes
 
 \
@@ -23976,7 +21589,7 @@ level above 3rd.
 
 \
 
-Casting Time: 1 bonus action Range: 
+Casting Time: 1 bonus action Range:
 60 feet Components: V, S
 Duration: 1 minute
 
@@ -24099,7 +21712,7 @@ bludgeoning, piercing, and slashing damage.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Sight Components: V, S
 
 Duration: Concentration, up to 1 minute
@@ -24190,8 +21803,8 @@ If you or any of your companions damage the target, the spell ends.
 
 Casting Time: 1 action
 
-Range: Self (60-­‐‑foot line) Components: 
-V, S, M (a magnifying glass) Duration: 
+Range: Self (60-­‐‑foot line) Components:
+V, S, M (a magnifying glass) Duration:
 Concentration, up to 1 minute
 
 \
@@ -24426,7 +22039,7 @@ existence.
 \
 
 Casting Time: 1 action Range: 10
-feet Components: V Duration: 
+feet Components: V Duration:
 Instantaneous
 
 \
@@ -24585,7 +22198,7 @@ Transmutation cantrip
 \
 
 Casting Time: 1 action Range: 30
-feet Components: V Duration: 
+feet Components: V Duration:
 Up to 1 minute
 
 \
@@ -24624,7 +22237,7 @@ you can dismiss such an effect as an action.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self (15-­‐‑foot cube) Components: V, S
 Duration: Instantaneous
 
@@ -24652,7 +22265,7 @@ level above 1st.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V Duration:
 Instantaneous
 
@@ -24731,7 +22344,7 @@ what it says.
 \
 
 Casting Time: 1 action Range: 10
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 1 round
 
 \
@@ -24749,7 +22362,7 @@ movement.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V, S
 
 Duration: Concentration, up to 1 minute
@@ -24965,7 +22578,7 @@ than 60 feet away from you, the spell ends.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V, S
 
 Duration: Concentration, up to 1 minute
@@ -25051,7 +22664,7 @@ space when it appears, the creature is pushed to one side of the wall
 (your choice which side).
 
 Nothing can physically pass through the wall. It is immune to all damage
-and can’t be dispelled by dispel magic. A 
+and can’t be dispelled by dispel magic. A
 disintegrate spell destroys the wall instantly,
 however. The wall also extends into the Ethereal Plane, blocking
 ethereal travel through the wall.
@@ -25421,7 +23034,7 @@ Creatures in gaseous form can’t pass through it.
 
 \
 
-Casting Time: 1 action Range: 
+Casting Time: 1 action Range:
 Self Components: V Duration:
 Instantaneous
 
@@ -25447,7 +23060,7 @@ appears in an unoccupied space you can see on the ground.
 \
 
 You allow up to twenty creatures that you can see to regain all hit
-points, and you end all effects on them described in the 
+points, and you end all effects on them described in the
 greater restoration spell.
 
 You grant up to ten creatures that you can see resistance to a damage
@@ -25459,7 +23072,7 @@ and all your companions immune to a lich’s life drain attack.
 
 You undo a single recent event by forcing a reroll of any roll made
 within the last round (including your last turn). Reality reshapes
-itself to accommodate the new result. For example, a 
+itself to accommodate the new result. For example, a
 wish spell could undo an opponent’s successful save, a
 foe’s critical hit, or a friend’s failed save. You can force the reroll
 to be made with advantage or disadvantage, and you can choose whether to
@@ -25527,7 +23140,7 @@ to your deity, the spell has no effect.
 \
 
 Casting Time: 1 action Range: 60
-feet Components: V, S Duration: 
+feet Components: V, S Duration:
 10 minutes
 
 \
@@ -26199,7 +23812,7 @@ the Plane of Water).
 
 The Ethereal Plane and the Astral Plane are called the Transitive
 Planes. They are mostly featureless realms that serve primarily as ways
-to travel from one plane to another. Spells such as 
+to travel from one plane to another. Spells such as
 etherealness and astral projection
 allow characters to enter these planes and traverse them to reach
 the planes beyond.
@@ -26214,7 +23827,7 @@ Border Ethereal, and the see invisibility
 
 and true seeing spell grant that ability. Some
 magical effects also extend from the Material Plane into the Border
-Ethereal, particularly effects that use force energy such as 
+Ethereal, particularly effects that use force energy such as
 forcecage and wall of force.
 The depths of the plane, the Deep Ethereal, are a region of
 swirling mists and colorful fogs.
@@ -26322,7 +23935,7 @@ a fold of existing reality that
 
 has been pinched off from the rest of the multiverse, or as a baby
 universe growing in power. A given demiplane can be entered through a
-single point where it touches another plane. Theoretically, a 
+single point where it touches another plane. Theoretically, a
 plane shift spell can also carry travelers to a
 demiplane, but the proper frequency required for the tuning fork is
 extremely hard to acquire. The gate spell is
@@ -26346,7 +23959,7 @@ traps** include pits, arrow traps, falling blocks, water-­‐‑filled
 rooms, whirling blades, and anything else that depends on a mechanism to
 operate. **Magic traps** are either magical device traps or spell traps.
 Magical device traps initiate spell effects when activated. Spell traps
-are spells such as glyph of warding and 
+are spells such as glyph of warding and
 symbol that function as traps.
 
 \
@@ -26368,7 +23981,7 @@ something that the trap’s creator wanted to protect. Common triggers
 include stepping on a pressure plate or a false section of floor,
 pulling a trip wire, turning a doorknob, and using the wrong key in a
 lock. Magic traps are often set to go off when a creature enters an area
-or touches an object. Some magic traps (such as the 
+or touches an object. Some magic traps (such as the
 glyph of warding spell) have more complicated trigger
 conditions, including a password that prevents the trap from activating.
 
@@ -26637,7 +24250,7 @@ or 20 feet deep but can be deeper.
 Once the pit trap is detected, an iron spike or similar object can be
 wedged between the pit’s cover and the surrounding floor in such a way
 as to prevent the cover from opening, thereby making it safe to cross.
-The cover can also be magically held shut using the 
+The cover can also be magically held shut using the
 arcane lock spell or similar magic.
 
 Locking Pit. This pit trap is identical to a hidden pit
@@ -26773,14 +24386,14 @@ it, and any matter that enters it is instantly obliterated.
 
 A successful DC 20 Intelligence (Arcana) check reveals that the mouth
 contains a sphere of annihilation that can’t be
-controlled or moved. It is otherwise identical to a normal 
+controlled or moved. It is otherwise identical to a normal
 sphere of annihilation.
 
 Some versions of the trap include an enchantment placed on the stone
 face, such that specified creatures feel an overwhelming urge to
 approach it and crawl inside its mouth. This effect is otherwise like
-the sympathy aspect of the 
-antipathy/sympathy spell. A successful 
+the sympathy aspect of the
+antipathy/sympathy spell. A successful
 dispel magic (DC 18) removes this enchantment.
 
 \
@@ -26796,7 +24409,7 @@ spreads whenever he casts spells.
 
 A simple outbreak might amount to little more
 
-than a small drain on party resources, curable by a casting of 
+than a small drain on party resources, curable by a casting of
 lesser restoration. A more complicated outbreak can
 form the basis of one or more adventures as characters search for a
 cure, stop the spread of the disease, and deal with the consequences.
@@ -26899,7 +24512,7 @@ takes a −1 penalty to attack
 rolls and ability checks that rely on sight. At the end of each long
 rest after the symptoms appear, the penalty worsens by 1. When it
 reaches −5, the victim is blinded until its sight is restored by magic
-such as lesser restoration or 
+such as lesser restoration or
 heal.
 
 Sight rot can be cured using a rare flower called Eyebright, which grows
@@ -27091,8 +24704,8 @@ the funnier I find it.”
 A calm emotions spell can suppress the effects
 of madness, while a lesser restoration spell can
 rid a character of a short-­‐‑term or long-­‐‑term madness. Depending on
-the source of the madness, remove curse or 
-dispel evil might also prove effective. A 
+the source of the madness, remove curse or
+dispel evil might also prove effective. A
 greater restoration spell or more powerful magic is
 required to rid a character of indefinite madness.
 
@@ -27127,7 +24740,7 @@ Class table provides suggested AC values for various substances.
 
 \
 
-Object Armor Class Substance AC 
+Object Armor Class Substance AC
 Cloth, paper, rope 11
 
 Crystal, glass, ice 13
@@ -27155,7 +24768,7 @@ Object Hit Points
 Huge and Gargantuan Objects. Normal weapons are
 of little use against many Huge and Gargantuan objects, such as a
 colossal statue, towering column of stone, or massive boulder. That
-said, one torch can burn a Huge tapestry, and an 
+said, one torch can burn a Huge tapestry, and an
 earthquake spell can reduce a colossus to rubble. You
 can track a Huge or Gargantuan object’s hit points if you like, or you
 can simply decide how long the object can withstand whatever weapon or
@@ -27421,7 +25034,7 @@ Wondrous item, very rare (requires attunement)
 
 While wearing this amulet, you can use an action to name a location that
 you are familiar with on another plane of existence. Then make a DC 15
-Intelligence check. On a successful check, you cast the 
+Intelligence check. On a successful check, you cast the
 plane shift spell. On a failure, you and each creature
 and object within 15 feet of you travel to a random destination. Roll a
 d100. On a 1–60, you travel to a random location on the plane you named.
@@ -27733,7 +25346,7 @@ An arrow of slaying is a magic weapon meant to
 slay a particular kind of creature. Some are more focused than others;
 for example, there are both arrows of dragon slaying
 and arrows of blue dragon slaying. If a
-creature belonging to the type, race, or group associated with an 
+creature belonging to the type, race, or group associated with an
 arrow of slaying takes damage from the arrow, the
 creature must make a DC 17 Constitution saving throw, taking an extra
 6d10 piercing damage on a failed save, or half as much extra damage on a
@@ -27744,7 +25357,7 @@ to
 
 a creature, it becomes a nonmagical arrow.
 
-Other types of magic ammunition of this kind exist, such as 
+Other types of magic ammunition of this kind exist, such as
 bolts of slaying meant for a crossbow, though arrows
 are most common.
 
@@ -28059,8 +25672,8 @@ d8 Creature
         greater than the belt’s score, the item has no effect on you.
 
         Six varieties of this belt exist, corresponding with and having
-        rarity according to the six kinds of true giants. The 
-        belt of stone giant strength and the 
+        rarity according to the six kinds of true giants. The
+        belt of stone giant strength and the
         belt of frost giant strength look different,
         but they have the same effect.
 
@@ -28289,7 +25902,7 @@ Wondrous item, very rare (requires attunement)
 \
 
 This slender taper is dedicated to a deity and shares that deity’s
-alignment. The candle’s alignment can be detected with the 
+alignment. The candle’s alignment can be detected with the
 detect evil and good spell. The GM chooses the god and
 associated alignment or determines the alignment randomly.
 
@@ -28427,7 +26040,7 @@ Wondrous item, uncommon
 
 \
 
-While wearing this circlet, you can use an action to cast the 
+While wearing this circlet, you can use an action to cast the
 scorching ray spell with it. When you make the spell’s
 attacks, you do so with an attack bonus of
 
@@ -28539,7 +26152,7 @@ Wondrous item, very rare or legendary (requires attunement)
 \
 
 The typical crystal ball, a very rare item, is
-about 6 inches in diameter. While touching it, you can cast the 
+about 6 inches in diameter. While touching it, you can cast the
 scrying spell (save DC 17) with it.
 
 The following crystal ball variants are
@@ -28549,7 +26162,7 @@ Crystal Ball of Mind Reading. You can use an
 action to cast the detect thoughts spell (save
 DC 17) while you are scrying with the crystal
 ball, targeting creatures you can see within 30 feet of the
-spell’s sensor. You don’t need to concentrate on this 
+spell’s sensor. You don’t need to concentrate on this
 detect thoughts to maintain it during its duration,
 but it ends if scrying ends.
 
@@ -28641,7 +26254,7 @@ the table below.
 
 Spell or Item Charges Lost
 
-Disintegrate 1d12 Horn of blasting 
+Disintegrate 1d12 Horn of blasting
 1d10 Passwall 1d6
 
 Prismatic spray 1d20
@@ -28659,7 +26272,7 @@ six sides of the cube are each keyed to a different plane of existence,
 one of which is the Material Plane. The other sides are linked to planes
 determined by the GM.
 
-You can use an action to press one side of the cube to cast the 
+You can use an action to press one side of the cube to cast the
 gate spell with it, opening a portal to the plane
 keyed to that side. Alternatively, if you use an action to press one
 side twice, you can cast the plane shift spell
@@ -28954,7 +26567,7 @@ summoner
 Speed 60 ft., fly 60 ft. (hover)
 
 Fool. You lose 10,000 XP, discard this card, and
- 
+
 
 draw from the deck again, counting both draws as one of your declared
 draws. If losing that much XP
@@ -28963,7 +26576,7 @@ STR DEX CON INT WIS CHA
 
 16 (+3) 16 (+3) 16 (+3) 16 (+3) 16 (+3) 16 (+3)
 
-would cause you to lose a level, you instead lose an 
+would cause you to lose a level, you instead lose an
 
 
 amount that leaves you with just enough XP to keep your level.
@@ -28995,7 +26608,7 @@ spell 1d3 times.
 
 Rogue. A nonplayer character of the GM’s choice
 becomes hostile toward you. The identity of your new enemy isn’t known
-until the NPC or someone else reveals it. Nothing less than a 
+until the NPC or someone else reveals it. Nothing less than a
 wish spell or divine intervention can end the NPC’s
 hostility toward you.
 
@@ -29070,7 +26683,7 @@ words, the knowledge comes with wisdom on how to apply it.
 The Void. This black card spells disaster. Your
 soul is drawn from your body and contained in an object in a place of
 the GM’s choice. One or more powerful beings guard the place. While your
-soul is trapped in this way, your body is incapacitated. A 
+soul is trapped in this way, your body is incapacitated. A
 wish spell can’t restore your soul, but the spell
 reveals the location of the object that holds it. You draw no more
 cards.
@@ -29340,7 +26953,7 @@ Wondrous item, uncommon
 \
 
 This gem contains a mote of elemental energy. When you use an action to
-break the gem, an elemental is summoned as if you had cast the 
+break the gem, an elemental is summoned as if you had cast the
 conjure elemental spell, and the gem’s magic is lost.
 The type of gem determines the elemental summoned by the spell.
 
@@ -29398,7 +27011,7 @@ Wondrous item, uncommon (requires attunement)
 \
 
 These crystal lenses fit over the eyes. They have 3 charges. While
-wearing them, you can expend 1 charge as an action to cast the 
+wearing them, you can expend 1 charge as an action to cast the
 charm person spell (save DC 13) on a humanoid within
 30 feet of you, provided that you and the target can see each other. The
 lenses regain all expended charges daily at dawn.
@@ -29523,7 +27136,7 @@ Hit Points 19 (3d10 + 3)
 
 Speed 30 ft., fly 60 ft.
 
-a point within 10 feet of you. The token disappears, 
+a point within 10 feet of you. The token disappears,
 
 
 and a floating whip takes its place. You can then use a bonus action to
@@ -29533,7 +27146,7 @@ STR DEX CON INT WIS CHA
 
 14 (+2) 13 (+1) 13 (+1) 2 (−4) 10 (+0) 3 (−4)
 
-creature within 10 feet of the whip, with an attack 
+creature within 10 feet of the whip, with an attack
 
 
 bonus of +9. On a hit, the target takes 1d6 + 5 force damage.
@@ -29599,7 +27212,7 @@ have passed.
 The goat of terror becomes a giant goat for up
 to 3 hours. The goat can’t attack, but you can remove
 
-its horns and use them as weapons. One horn becomes a 
+its horns and use them as weapons. One horn becomes a
 +1 lance, and the other becomes a +2
 longsword. Removing a horn requires an action, and the weapons
 disappear and the horns return
@@ -29924,7 +27537,7 @@ Wondrous item, uncommon (requires attunement)
 
 \
 
-While wearing this hat, you can use an action to cast the 
+While wearing this hat, you can use an action to cast the
 disguise self spell from it at will. The spell ends if
 the hat is removed.
 
@@ -29956,7 +27569,7 @@ You gain the following benefits while wearing it:
 \
 
 You can use an action to cast one of the following spells (save DC 18),
-using one of the helm’s gems of the specified type as a component: 
+using one of the helm’s gems of the specified type as a component:
 daylight (opal), fireball
 (fire opal), prismatic spray (diamond),
 or wall of fire (ruby). The gem is destroyed
@@ -29995,7 +27608,7 @@ Wondrous item, uncommon
 
 \
 
-While wearing this helm, you can use an action to cast the 
+While wearing this helm, you can use an action to cast the
 comprehend languages spell from it at will.
 
 \
@@ -30006,14 +27619,14 @@ Wondrous item, uncommon (requires attunement)
 
 \
 
-While wearing this helm, you can use an action to cast the 
+While wearing this helm, you can use an action to cast the
 detect thoughts spell (save DC 13) from it. As long as
 you maintain concentration on the spell, you can use a bonus action to
 send a telepathic message to a creature you are focused on. It can
 reply—using a bonus action to do so—while your focus on it continues.
 
 While focusing on a creature with detect
-thoughts, you can use an action to cast the 
+thoughts, you can use an action to cast the
 suggestion spell (save DC 13) from the helm on that
 creature. Once used, the suggestion property
 can’t be used again until the next dawn.
@@ -30197,7 +27810,7 @@ tipped over. The roof, the door, and the walls each have 100 hit points,
 immunity to damage from nonmagical weapons excluding siege weapons, and
 resistance to all other damage. Only a wish
 spell can repair the fortress (this use of the spell counts as
-replicating a spell of 8th level or lower). Each casting of 
+replicating a spell of 8th level or lower). Each casting of
 wish causes the roof, the door, or one wall to regain
 50 hit points.
 
@@ -30210,7 +27823,7 @@ Wondrous item, rarity varies (requires attunement)
 \
 
 An Ioun stone is named after Ioun, a god of
-knowledge and prophecy revered on some worlds. Many types of 
+knowledge and prophecy revered on some worlds. Many types of
 Ioun stone exist, each type a distinct combination of
 shape and color.
 
@@ -30573,7 +28186,7 @@ Wondrous item, very rare
 This tome contains information and incantations necessary to make a
 particular type of golem. The GM chooses the type or determines it
 randomly. To decipher and use the manual, you must be a spellcaster with
-at least two 5th-­‐‑level spell slots. A creature that can’t use a 
+at least two 5th-­‐‑level spell slots. A creature that can’t use a
 manual of golems and attempts to read it takes 6d6
 psychic damage.
 
@@ -30748,7 +28361,7 @@ Wondrous item, rare
 
 This necklace has 1d6 + 3 beads hanging from it. You can use an action
 to detach a bead and throw it up to 60 feet away. When it reaches the
-end of its trajectory, the bead detonates as a 3rd-­‐‑level 
+end of its trajectory, the bead detonates as a 3rd-­‐‑level
 fireball spell (save DC 15).
 
 You can hurl multiple beads, or even the whole necklace, as one action.
@@ -30853,7 +28466,7 @@ Beads of this cloudy gray oil form on the outside of its container and
 quickly evaporate. The oil can cover a Medium or smaller creature, along
 with the equipment it’s wearing and carrying (one additional vial is
 required for each size category above Medium). Applying the oil takes 10
-minutes. The affected creature then gains the effect of the 
+minutes. The affected creature then gains the effect of the
 etherealness spell for 1 hour.
 
 \
@@ -30888,7 +28501,7 @@ effect of a freedom of movement spell for 8
 hours.
 
 Alternatively, the oil can be poured on the ground as an action, where
-it covers a 10-­‐‑foot square, duplicating the effect of the 
+it covers a 10-­‐‑foot square, duplicating the effect of the
 grease spell in that area for 8 hours.
 
 \
@@ -31040,7 +28653,7 @@ This fine black cloth, soft as silk, is folded up to the dimensions of a
 handkerchief. It unfolds into a circular sheet 6 feet in diameter.
 
 You can use an action to unfold a portable hole
-and place it on or against a solid surface, whereupon the 
+and place it on or against a solid surface, whereupon the
 portable hole creates an extradimensional hole 10 feet
 deep. The cylindrical space within the hole exists on a different plane,
 so it can’t be used to create open passages. Any creature inside an open
@@ -31092,7 +28705,7 @@ Potion, rare
 
 \
 
-When you drink this potion, you gain the effect of the 
+When you drink this potion, you gain the effect of the
 clairvoyance spell. An eyeball bobs in this yellowish
 liquid but vanishes when the potion is opened.
 
@@ -31118,7 +28731,7 @@ Potion, rare
 
 \
 
-When you drink this potion, you gain the “reduce” effect of the 
+When you drink this potion, you gain the “reduce” effect of the
 enlarge/reduce spell for 1d4 hours (no concentration
 required). The red in the potion’s liquid continuously contracts to a
 tiny bead and then expands to color the clear liquid around it. Shaking
@@ -31144,7 +28757,7 @@ Potion, rare
 
 \
 
-When you drink this potion, you gain the effect of the 
+When you drink this potion, you gain the effect of the
 gaseous form spell for 1 hour (no concentration
 required) or until you end the effect as a bonus action. This potion’s
 container seems to hold fog that moves and pours like water.
@@ -31163,8 +28776,8 @@ no effect on you if your Strength is equal to or greater than that
 score.
 
 This potion’s transparent liquid has floating in it a sliver of
-fingernail from a giant of the appropriate type. The 
-potion of frost giant strength and the 
+fingernail from a giant of the appropriate type. The
+potion of frost giant strength and the
 potion of stone giant strength have the same effect.
 
 \
@@ -31186,7 +28799,7 @@ Potion, uncommon
 
 \
 
-When you drink this potion, you gain the “enlarge” effect of the 
+When you drink this potion, you gain the “enlarge” effect of the
 enlarge/reduce spell for 1d4 hours (no concentration
 required). The red in the potion’s liquid continuously expands from a
 tiny bead to color the clear liquid around it and then contracts.
@@ -31220,7 +28833,7 @@ Potion, rare
 \
 
 For 1 hour after drinking it, you gain 10 temporary hit points that last
-for 1 hour. For the same duration, you are under the effect of the 
+for 1 hour. For the same duration, you are under the effect of the
 bless spell (no concentration required). This blue
 potion bubbles and steams as if boiling.
 
@@ -31245,7 +28858,7 @@ Potion, rare
 
 \
 
-When you drink this potion, you gain the effect of the 
+When you drink this potion, you gain the effect of the
 detect thoughts spell (save DC 13). The potion’s
 dense, purple liquid has an ovoid cloud of pink floating in it.
 
@@ -31304,7 +28917,7 @@ Potion, very rare
 
 \
 
-When you drink this potion, you gain the effect of the 
+When you drink this potion, you gain the effect of the
 haste spell for 1 minute (no concentration required).
 The potion’s yellow fluid is streaked with black and swirls on its own.
 
@@ -31418,7 +29031,7 @@ You have a flying speed equal to your walking speed and can hover.
 
 You can cast the following spells from the ring, expending the necessary
 number of charges: chain lightning (3 charges),
-gust of wind (2 charges), or 
+gust of wind (2 charges), or
 wind wall (1 charge).
 
 Ring of Earth Elemental Command. You can expend
@@ -31479,7 +29092,7 @@ walking speed.
 
 You can cast the following spells from the ring, expending the necessary
 number of charges: create or destroy water (1
-charge), control water (3 charges), 
+charge), control water (3 charges),
 ice storm (2 charges), or wall of ice
 (3 charges).
 
@@ -31634,7 +29247,7 @@ Ring, very rare (requires attunement outdoors at night)
 
 \
 
-While wearing this ring in dim light or darkness, you can cast 
+While wearing this ring in dim light or darkness, you can cast
 dancing lights and light from
 the ring at will. Casting either spell from the ring requires an action.
 
@@ -31842,7 +29455,7 @@ The eyes on the robe can’t be closed or averted. Although you can close
 or avert your own eyes, you are never considered to be doing so while
 wearing this robe.
 
-A light spell cast on the robe or a 
+A light spell cast on the robe or a
 daylight spell cast within 5 feet of the robe causes
 you to be blinded for 1 minute. At the end of each of your turns, you
 can make a Constitution saving throw (DC 11 for light
@@ -31903,7 +29516,7 @@ wizard)
 This elegant garment is made from exquisite cloth of white, gray, or
 black and adorned with silvery runes. The robe’s color corresponds to
 the alignment for which the item was created. A white robe was made for
-good, gray for neutral, and black for evil. You can’t attune to a 
+good, gray for neutral, and black for evil. You can’t attune to a
 robe of the archmagi that doesn’t correspond to your
 alignment.
 
@@ -32067,7 +29680,7 @@ as a bonus action. A button’s effect lasts until you push a different
 button or until you push the same button again, which causes the rod to
 revert to its normal form.
 
-If you press **button 1**, the rod becomes a 
+If you press **button 1**, the rod becomes a
 flame
 
 tongue, as a fiery blade sprouts from the end opposite
@@ -32317,7 +29930,7 @@ When found, a container contains 1d6 + 1 ounces.
 One ounce of the glue can cover a 1-­‐‑foot square surface. The glue
 takes 1 minute to set. Once it has done so, the bond it creates can be
 broken only by the application of universal solvent
-or oil of etherealness, or with a 
+or oil of etherealness, or with a
 wish spell.
 
 \
@@ -32423,7 +30036,7 @@ ust as
 
 A spatial rift sends each creature and object
 
-spells in spellbooks can be copied. When a spell is copied from a 
+spells in spellbooks can be copied. When a spell is copied from a
 spell scroll, the copier must succeed on an
 Intelligence (Arcana) check with a DC equal to 10
 
@@ -32497,7 +30110,7 @@ warlock, or wizard)
 \
 
 While holding this staff, you can use an action to expend 1 of its 10
-charges to cast charm person, 
+charges to cast charm person,
 command, or comprehend languages
 from it using your spell save DC. The staff can also be used as a
 magic quarterstaff.
@@ -32528,7 +30141,7 @@ You have resistance to fire damage while you hold this staff.
 The staff has 10 charges. While holding it, you can use an action to
 expend 1 or more of its charges to cast one of the following spells from
 it, using your spell save DC: burning hands (1
-charge), fireball (3 charges), or 
+charge), fireball (3 charges), or
 wall of fire (4 charges).
 
 The staff regains 1d6 + 4 expended charges daily
@@ -32552,7 +30165,7 @@ The staff has 10 charges. While holding it, you can
 use an action to expend 1 or more of its charges to cast one of the
 following spells from it, using your
 
-spell save DC: cone of cold (5 charges), 
+spell save DC: cone of cold (5 charges),
 fog cloud (1 charge), ice storm
 (4 charges), or wall of ice (4 charges).
 
@@ -32570,9 +30183,9 @@ Staff, rare (requires attunement by a bard, cleric, or druid)
 
 This staff has 10 charges. While holding it, you can use an action to
 expend 1 or more of its charges to cast one of the following spells from
-it, using your spell save DC and spellcasting ability modifier: 
+it, using your spell save DC and spellcasting ability modifier:
 cure wounds (1 charge per spell level, up to 4th),
-lesser restoration (2 charges), or 
+lesser restoration (2 charges), or
 mass cure wounds (5 charges).
 
 The staff regains 1d6 + 4 expended charges daily at dawn. If you expend
@@ -32603,11 +30216,11 @@ target.
 
 Spells. While holding this staff, you can use an
 action to expend 1 or more of its charges to cast one of the following
-spells from it, using your spell save DC and spell attack bonus: 
+spells from it, using your spell save DC and spell attack bonus:
 cone of cold (5 charges), fireball
 (5th-­‐‑level version, 5 charges), globe of
 invulnerability (6 charges), hold monster
-(5 charges), levitate (2 charges), 
+(5 charges), levitate (2 charges),
 lightning bolt (5th-­‐‑level version, 5 charges),
 magic missile (1 charge), ray
 of enfeeblement (1 charge), or wall of force
@@ -32702,20 +30315,20 @@ below).
 
 Spells. While holding the staff, you can use an
 action to expend some of its charges to cast one of the following spells
-from it, using your spell save DC and spellcasting ability: 
+from it, using your spell save DC and spellcasting ability:
 conjure elemental (7 charges), dispel
 magic (3 charges), fireball (7th-­‐‑level
 version, 7 charges), flaming sphere (2 charges),
-ice storm (4 charges), 
+ice storm (4 charges),
 invisibility (2 charges), knock
 (2 charges), lightning bolt (7th-­‐‑level
-version, 7 charges), passwall (5 charges), 
+version, 7 charges), passwall (5 charges),
 plane shift (7 charges), telekinesis
 (5 charges), wall of fire (4 charges), or
 web (2 charges).
 
 You can also use an action to cast one of the
-followingspellsfromthestaffwithoutusingany charges: 
+followingspellsfromthestaffwithoutusingany charges:
 arcane lock, detect magic,
 enlarge/reduce, light,
 mage hand, or protection from
@@ -32788,14 +30401,14 @@ quarterstaff.
 Spells. You can use an action to expend 1 or
 more of the staff’s charges to cast one of the following spells from it,
 using your spell save DC: animal friendship (1
-charge), awaken (5 charges), 
+charge), awaken (5 charges),
 barkskin (2 charges), locate animals
 or plants (2 charges), speak with animals
 (1 charge), speak with plants (3
 charges), or wall of thorns (6 charges).
 
 You can also use an action to cast the pass without
-trace spell from the staff without using any charges. 
+trace spell from the staff without using any charges.
 Tree Form. You can use an action to plant one end
 
 of the staff in fertile earth and expend 1 charge to transform the staff
@@ -32876,7 +30489,7 @@ Wondrous item, rare
 \
 
 If the stone is touching the ground, you can use an action to speak its
-command word and summon an earth elemental, as if you had cast the 
+command word and summon an earth elemental, as if you had cast the
 conjure elemental spell. The stone can’t be used this
 way again until the next dawn. The stone weighs 5 pounds.
 
@@ -32903,7 +30516,7 @@ This item appears to be a longsword hilt. While grasping the hilt, you
 can use a bonus action to cause a blade of pure radiance to spring into
 existence, or make the blade disappear. While the blade exists, this
 magic longsword has the finesse property. If you are proficient with
-shortswords or longswords, you are proficient with the 
+shortswords or longswords, you are proficient with the
 sun blade.
 
 You gain a +2 bonus to attack and damage rolls
@@ -33011,7 +30624,7 @@ Wondrous item, legendary (requires attunement)
 
 \
 
-When you make an Intelligence (Arcana) check to control a 
+When you make an Intelligence (Arcana) check to control a
 sphere of annihilation while you are holding this
 talisman, you double your proficiency bonus on the check. In addition,
 when you start your turn with control over a sphere of
@@ -33100,7 +30713,7 @@ Weapon (trident), uncommon (requires attunement)
 \
 
 This trident is a magic weapon. It has 3 charges. While you carry it,
-you can use an action and expend 1 charge to cast 
+you can use an action and expend 1 charge to cast
 dominate beast (save DC 15) from it on a beast that
 has an innate swimming speed. The trident regains 1d3 expended charges
 daily at dawn.
@@ -33162,7 +30775,7 @@ roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
 Spells. While holding the wand, you can use an
 action to expend some of its charges to cast one of the following spells
-(save DC 17): hold monster (5 charges) or 
+(save DC 17): hold monster (5 charges) or
 hold person (2 charges).
 
 Assisted Escape. While holding the wand, you can use
@@ -33506,7 +31119,7 @@ Wondrous item, uncommon
 
 \
 
-While holding this fan, you can use an action to cast the 
+While holding this fan, you can use an action to cast the
 gust of wind spell (save DC 13) from it. Once used,
 the fan shouldn’t be used again until the next dawn. Each time it is
 used again before then, it has a cumulative 20 percent chance of not
@@ -33821,7 +31434,7 @@ orb, you can use an action and expend 1 or more charges to cast one of
 the following spells (save DC
 
 18\) from it: cure wounds (5th-­‐‑level version,
-3 charges), daylight (1 charge), 
+3 charges), daylight (1 charge),
 death ward (2 charges), or scrying
 (3 charges).
 
@@ -33901,7 +31514,7 @@ when you apply a template to it, might change its challenge rating.
 
 A monster’s type speaks to its fundamental nature. Certain spells, magic
 items, class features, and other effects in the game interact in special
-ways with creatures of a particular type. For example, an 
+ways with creatures of a particular type. For example, an
 arrow of dragon slaying deals extra damage not only to
 dragons but also other creatures of the dragon type, such as dragon
 turtles and wyverns.
@@ -34777,7 +32390,7 @@ greatest desires if the aboleth can see the creature.
 
 Actions  
 Multiattack. The aboleth makes
-three tentacle attacks. Tentacle. 
+three tentacle attacks. Tentacle.
 Melee Weapon Attack: +9 to hit,
 reach 10 ft.,
 
@@ -35344,8 +32957,8 @@ STR DEX CON INT WIS CHA
 
 \
 
-Saving Throws Con +4 Damage Immunities 
-fire, poison Condition Immunities 
+Saving Throws Con +4 Damage Immunities
+fire, poison Condition Immunities
 poisoned Senses passive Perception
 11 Languages Ignan
 
@@ -35554,7 +33167,7 @@ Actions
 damage.
 
 **Javelin.** Melee or Ranged Weapon Attack: +4 to hit,
-reach 5 ft. or range 30/120 ft., one target. Hit: 
+reach 5 ft. or range 30/120 ft., one target. Hit:
 9 (2d6 +
 
 2\) piercing damage in melee or 5 (1d6 + 2) piercing damage at range.
@@ -35625,7 +33238,7 @@ Hit Points 114 (12d10 + 48)
 
 Speed 30 ft., fly 60 ft.
 
-damage. On a successful save, the creature takes only 
+damage. On a successful save, the creature takes only
 
 
 half the damage, isn’t knocked prone, and is pushed 5 feet out of the
@@ -35635,8 +33248,8 @@ STR DEX CON INT WIS CHA
 
 19 (+4) 11 (+0) 19 (+4) 3 (−4) 14 (+2) 10 (+0)
 
-space of the creature’s choice. If no unoccupied space 
- 
+space of the creature’s choice. If no unoccupied space
+
 
 is within range, the creature instead falls prone in the bulette’s
 space.
@@ -35670,7 +33283,7 @@ STR DEX CON INT WIS CHA
 
 Skills Athletics +6, Perception +3, Survival +3
 
-Senses passive Perception 13 Languages 
+Senses passive Perception 13 Languages
 Elvish, Sylvan Challenge 2 (450
 XP)
 
@@ -36022,8 +33635,8 @@ Hit Points 22 (5d6 + 5)
 
 Speed 10 ft., fly 30 ft.
 
-3/day each: *bless*, *create food and water*, *cure wounds*, 
- 
+3/day each: *bless*, *create food and water*, *cure wounds*,
+
 
 lesser restoration, protection from poison
 , sanctuary, shield
@@ -36194,7 +33807,7 @@ Speed 20 ft.
 |-------------------------|-------------------------|-------------------------|
 
 Damage Resistances cold, fire, lightning Damage
-Immunities poison Condition Immunities 
+Immunities poison Condition Immunities
 poisoned
 
 Senses darkvision 60 ft., passive Perception 9
@@ -36577,8 +34190,8 @@ throws against spells and other magical effects.
 
 Actions
 
-**Claws (Bite in Beast Form).** Melee Weapon Attack: 
-+4 to hit, reach 5 ft., one target. Hit: 
+**Claws (Bite in Beast Form).** Melee Weapon Attack:
++4 to hit, reach 5 ft., one target. Hit:
 5 (1d4 + 3) piercing damage, and the target must succeed on
 a DC 10 Constitution saving throw or take 5 (2d4) poison damage and
 become poisoned for 1 minute. The target can repeat the saving throw at
@@ -36916,7 +34529,7 @@ grappling a creature. Until this grapple ends, the target is restrained
 and takes 7 (2d6) piercing damage at the start of each of its
 turns.
 
-Animate Chains (Recharges after a Short or Long Rest). 
+Animate Chains (Recharges after a Short or Long Rest).
 Up to four chains the devil can see within 60 feet of it
 magically sprout razor-­‐edged barbs and animate under the devil’s
 control, provided that the chains aren’t being worn or carried.
@@ -37002,7 +34615,7 @@ damage.
 150/600 ft., one target. Hit: 7 (1d8 + 3)
 piercing damage plus 13 (3d8) poison damage, and the target must succeed
 on a DC 14 Constitution saving throw or be poisoned. The poison lasts
-until it is removed by the lesser restoration 
+until it is removed by the lesser restoration
 spell or similar magic.
 
 \
@@ -37161,7 +34774,7 @@ STR DEX CON INT WIS CHA
 6 (−2) 17 (+3) 13 (+1) 11 (+0) 12 (+1) 14 (+2)
 
 Magic Resistance. The devil has advantage on saving
- 
+
 
 throws against spells and other magical effects.
 
@@ -37235,8 +34848,8 @@ Actions
 
 \
 
-**Sting (Bite in Beast Form).** Melee Weapon Attack: 
-+5 to hit, reach 5 ft., one target. Hit: 
+**Sting (Bite in Beast Form).** Melee Weapon Attack:
++5 to hit, reach 5 ft., one target. Hit:
 5 (1d4 + 3) piercing damage, and the target must make on a
 DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a
 failed save, or half as much damage on a successful one.
@@ -37402,8 +35015,8 @@ Speed 20 ft., swim 40 ft.
 | (+3)               |                    |                    |                    |
 |--------------------|--------------------|--------------------|--------------------|
 
-Skills Perception +3, Stealth +4 Senses 
-passive Perception 13 Languages 
+Skills Perception +3, Stealth +4 Senses
+passive Perception 13 Languages
 —
 
 Challenge 2 (450 XP)
@@ -37864,7 +35477,7 @@ STR DEX CON INT WIS CHA
 29 (+9) 10 (+0) 27 (+8) 18 (+4) 17 (+3) 21 (+5)
 
 Acid Breath (Recharge 5–6). The dragon exhales acid in
- 
+
 
 a 30-­‐foot line that is 5 feet wide. Each creature in that line must
 make a DC 14 Dexterity saving throw, taking 49 (11d8) acid damage on a
@@ -38075,7 +35688,7 @@ successful one.
 
 \
 
- Legendary Actions 
+ Legendary Actions
 
 The dragon can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only
@@ -38506,8 +36119,8 @@ STR DEX CON INT WIS CHA
 
 30 (+10) 10 (+0) 29 (+9) 18 (+4) 15 (+2) 23 (+6)
 
-poisonous gas in a 30-­‐foot cone. Each creature in that 
- 
+poisonous gas in a 30-­‐foot cone. Each creature in that
+
 
 area must make a DC 14 Constitution saving throw, taking 42 (12d6)
 poison damage on a failed save, or half as much damage on a successful
@@ -38538,7 +36151,7 @@ STR DEX CON INT WIS CHA
 Saving Throws Dex +3, Con +3, Wis +2, Cha +3
 
 Skills Perception +4, Stealth +3 Damage
-Immunities poison Condition Immunities 
+Immunities poison Condition Immunities
 poisoned
 
 Senses blindsight 10 ft., darkvision 60 ft.,
@@ -38839,7 +36452,7 @@ ft.
 STR DEX CON INT WIS CHA
 
  26 (+8) 10 (+0) 26 (+8) 10 (+0) 13 (+1) 14
-(+2) 
+(+2)
 
 \
 
@@ -38903,7 +36516,7 @@ save, or half as much damage on a successful one.
 
 \
 
- Legendary Actions 
+ Legendary Actions
 
 The dragon can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only
@@ -39022,7 +36635,7 @@ Hit Points 32 (5d8 + 10)
 Speed 30 ft., burrow 15 ft., fly 60 ft., swim 30
 ft.
 
-must succeed on a DC 19 Dexterity saving throw or 
+must succeed on a DC 19 Dexterity saving throw or
 
 
 take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon
@@ -39137,8 +36750,8 @@ Hit Points 297 (17d20 + 119)
 
 Speed 40 ft., burrow 40 ft., fly 80 ft.
 
-target. *Hit:* 15 (2d10 + 4) piercing damage plus 4 (1d8) 
- 
+target. *Hit:* 15 (2d10 + 4) piercing damage plus 4 (1d8)
+
 
 cold damage.
 
@@ -39249,7 +36862,7 @@ Hit Points 172 (15d12 + 75)
 Speed 40 ft., burrow 30 ft., fly 80 ft.
 
 Breath Weapons (Recharge 5–6). The dragon uses one
- 
+
 
 of the following breath weapons:
 
@@ -40065,7 +37678,7 @@ Hit Points 119 (14d10 + 42)
 
 Speed 40 ft., climb 40 ft., fly 80 ft.
 
-of it must succeed on a DC 16 Wisdom saving throw or 
+of it must succeed on a DC 16 Wisdom saving throw or
 
 
 become frightened for 1 minute. A creature can repeat the saving throw
@@ -40075,8 +37688,8 @@ STR DEX CON INT WIS CHA
 
 19 (+4) 12 (+1) 17 (+3) 16 (+3) 13 (+1) 15 (+2)
 
-the effect on itself on a success. If a creature’s saving 
- 
+the effect on itself on a success. If a creature’s saving
+
 
 throw is successful or the effect ends for it, the creature is immune to
 the dragon’s Frightful Presence for the next 24 hours.
@@ -41248,12 +38861,12 @@ damage, or 11 (2d8
 + 2) piercing damage while enlarged.
 
 **Javelin.** Melee or Ranged Weapon Attack: +4 to hit,
-reach 5 ft. or range 30/120 ft., one target. Hit: 
+reach 5 ft. or range 30/120 ft., one target. Hit:
 5 (1d6 +
 
 2\) piercing damage, or 9 (2d6 + 2) piercing damage while enlarged.
 
-Invisibility (Recharges after a Short or Long Rest). 
+Invisibility (Recharges after a Short or Long Rest).
 The duergar magically turns invisible until it attacks,
 casts a spell, or uses its Enlarge, or until its concentration is
 broken, up to 1 hour (as if concentrating on a spell). Any equipment the
@@ -41381,7 +38994,7 @@ STR DEX CON INT WIS CHA
 
 10 (+0) 17 (+3) 16 (+3) 6 (−2) 10 (+0) 7 (−2)
 
-succeed on a DC 13 Dexterity saving throw or take the 
+succeed on a DC 13 Dexterity saving throw or take the
 
 
 same damage and be knocked prone.
@@ -41658,7 +39271,7 @@ ft., one target. Hit: 7 (2d4 + 2) slashing
 damage.
 
 **Web (Recharge 5–6).** Ranged Weapon Attack: +4 to
-hit, range 30/60 ft., one Large or smaller creature. Hit: 
+hit, range 30/60 ft., one Large or smaller creature. Hit:
 The creature is restrained by webbing. As an action, the
 restrained creature can make a DC 11 Strength check, escaping from the
 webbing on a success. The effect
@@ -42242,8 +39855,8 @@ STR DEX CON INT WIS CHA
 
 Saving Throws Con +10, Wis +7, Cha +7
 
-Skills Insight +7, Perception +7 Senses 
-passive Perception 17 Languages 
+Skills Insight +7, Perception +7 Senses
+passive Perception 17 Languages
 Common, Giant Challenge 9 (5,000
 XP)
 
@@ -42302,8 +39915,8 @@ STR DEX CON INT WIS CHA
 Saving Throws Dex +3, Con +10, Cha +5
 
 Skills Athletics +11, Perception +6 Damage
-Immunities fire Senses 
-passive Perception 16 Languages 
+Immunities fire Senses
+passive Perception 16 Languages
 Giant
 
 Challenge 9 (5,000 XP)
@@ -42348,8 +39961,8 @@ STR DEX CON INT WIS CHA
 Saving Throws Con +8, Wis +3, Cha +4
 
 Skills Athletics +9, Perception +3 Damage
-Immunities cold Senses 
-passive Perception 13 Languages 
+Immunities cold Senses
+passive Perception 13 Languages
 Giant
 
 Challenge 8 (3,900 XP)
@@ -42507,7 +40120,7 @@ Perception
 Damage Resistances cold
 
 Damage Immunities lightning, thunder Senses
-passive Perception 19 Languages 
+passive Perception 19 Languages
 Common, Giant Challenge 13 (10,000
 XP)
 
@@ -42663,7 +40276,7 @@ one creature. Hit: 4 (1d4 + 2) piercing
 damage.
 
 **Spear.** Melee or Ranged Weapon Attack: +4 to hit,
-reach 5 ft. or range 20/60 ft., one target. Hit: 
+reach 5 ft. or range 20/60 ft., one target. Hit:
 5 (1d6 +
 
 2\) piercing damage, or 6 (1d8 + 2) piercing damage if
@@ -42725,7 +40338,7 @@ Actions
 ft., one target. Hit: 6 (1d8 + 2) piercing
 damage.
 
-Poisoned Dart. Ranged Weapon Attack: 
+Poisoned Dart. Ranged Weapon Attack:
 +4 to hit, range 30/120 ft., one creature. Hit: 4 (1d4 + 2)
 piercing damage, and the target must succeed on a DC 12 Constitution
 saving throw or be poisoned for 1 minute. The target can repeat the
@@ -42950,7 +40563,7 @@ Hit Points 210 (20d10 + 100)
 Speed 30 ft.
 
 Condition Immunities charmed, exhaustion, frightened,
- 
+
 
 paralyzed, petrified, poisoned
 
@@ -43149,7 +40762,7 @@ STR DEX CON INT WIS CHA
 18 (+4) 15 (+2) 16 (+3) 2 (−4) 13 (+1) 8 (−1)
 
 Petrifying Breath (Recharge 5–6). The gorgon exhales
- 
+
 
 petrifying gas in a 30-­‐foot cone. Each creature in that area must
 succeed on a DC 13 Constitution saving throw. On a failed save, a target
@@ -43366,7 +40979,7 @@ STR DEX CON INT WIS CHA
 18 (+4) 15 (+2) 16 (+3) 16 (+3) 14 (+2) 16 (+3)
 
 Skills Arcana +3, Deception +4, Perception +4, Stealth
- 
+
 
 +3
 
@@ -43774,8 +41387,8 @@ STR DEX CON INT WIS CHA
 
 13 (+1) 12 (+1) 12 (+1) 10 (+0) 10 (+0) 9 (−1)
 
-allies is within 5 feet of the creature and the ally isn’t 
- 
+allies is within 5 feet of the creature and the ally isn’t
+
 
 incapacitated.
 
@@ -44011,7 +41624,7 @@ Armor Class 14
 Hit Points 104 (16d8 + 32)
 
  **Speed** 50 ft., fly 50 ft. (hover)
- 
+
 
 \
 
@@ -44377,8 +41990,8 @@ STR DEX CON INT WIS CHA
 
 15 (+2) 10 (+0) 13 (+1) 7 (−2) 12 (+1) 7 (−2)
 
-6th level (1 slot): *disintegrate*, *globe of invulnerability* 
- 
+6th level (1 slot): *disintegrate*, *globe of invulnerability*
+
 
 7th level (1 slot): *finger of death*, *plane shift*
 
@@ -44428,7 +42041,7 @@ within 20 feet of the lich must make a DC 18
 
 Skills Perception +3, Stealth +4, Survival +5
 
-Senses passive Perception 13 Languages 
+Senses passive Perception 13 Languages
 Draconic Challenge 1/2 (100
 XP)
 
@@ -44453,7 +42066,7 @@ damage.
 damage.
 
 **Javelin.** Melee or Ranged Weapon Attack: +4 to hit,
-reach 5 ft. or range 30/120 ft., one target. Hit: 
+reach 5 ft. or range 30/120 ft., one target. Hit:
 5 (1d6 +
 
 2\) piercing damage.
@@ -44488,7 +42101,7 @@ STR DEX CON INT WIS CHA
 
 19 (+4) 10 (+0) 17 (+3) 11 (+0) 12 (+1) 12 (+1)
 
-Constitution saving throw against this magic, taking 
+Constitution saving throw against this magic, taking
 
 
 21 (6d6) necrotic damage on a failed save, or half as much damage on a
@@ -44535,21 +42148,21 @@ Multiattack. In bear form, the werebear makes two claw
 attacks. In humanoid form, it makes two greataxe attacks. In hybrid
 form, it can attack like a bear or a humanoid.
 
-**Bite (Bear or Hybrid Form Only).** Melee Weapon Attack: 
-+7 to hit, reach 5 ft., one target. Hit: 
+**Bite (Bear or Hybrid Form Only).** Melee Weapon Attack:
++7 to hit, reach 5 ft., one target. Hit:
 15 (2d10 +
 
 4\) piercing damage. If the target is a humanoid, it must succeed on a DC
 14 Constitution saving throw or be cursed with werebear lycanthropy.
 
-**Claw (Bear or Hybrid Form Only).** Melee Weapon Attack: 
-+7 to hit, reach 5 ft., one target. Hit: 
+**Claw (Bear or Hybrid Form Only).** Melee Weapon Attack:
++7 to hit, reach 5 ft., one target. Hit:
 13 (2d8 +
 
 4\) slashing damage.
 
-**Greataxe (Humanoid or Hybrid Form Only).** Melee Weapon Attack: 
-+7 to hit, reach 5 ft., one target. Hit: 
+**Greataxe (Humanoid or Hybrid Form Only).** Melee Weapon Attack:
++7 to hit, reach 5 ft., one target. Hit:
 10 (1d12 + 4) slashing damage.
 
 \
@@ -44566,7 +42179,7 @@ boar or hybrid form
 Hit Points 78 (12d8 + 24)
 
  **Speed** 30 ft. (40 ft. in boar form)
- 
+
 
 \
 
@@ -44613,12 +42226,12 @@ Multiattack (Humanoid or Hybrid Form Only). The
 wereboar makes two attacks, only one of which can be with its
 tusks.
 
-**Maul (Humanoid or Hybrid Form Only).** Melee Weapon Attack: 
-+5 to hit, reach 5 ft., one target. Hit: 
+**Maul (Humanoid or Hybrid Form Only).** Melee Weapon Attack:
++5 to hit, reach 5 ft., one target. Hit:
 10 (2d6 + 3) bludgeoning damage.
 
-**Tusks (Boar or Hybrid Form Only).** Melee Weapon Attack: 
-+5 to hit, reach 5 ft., one target. Hit: 
+**Tusks (Boar or Hybrid Form Only).** Melee Weapon Attack:
++5 to hit, reach 5 ft., one target. Hit:
 10 (2d6 +
 
 3\) slashing damage. If the target is a humanoid, it must succeed on a DC
@@ -44684,7 +42297,7 @@ If the target is a humanoid, it must succeed on a DC 11 Constitution
 saving throw or be cursed with wererat lycanthropy.
 
 **Shortsword (Humanoid or Hybrid Form Only).** Melee Weapon Attack:
-+4 to hit, reach 5 ft., one target. Hit: 
++4 to hit, reach 5 ft., one target. Hit:
 5 (1d6 + 2) piercing damage.
 
 **Hand Crossbow (Humanoid or Hybrid Form Only).** Ranged Weapon Attack:
@@ -44757,8 +42370,8 @@ Bite (Tiger or Hybrid Form Only). Melee Weapon Attack:
     DC 13 Constitution saving throw or be cursed with
     weretiger lycanthropy.
 
-    **Claw (Tiger or Hybrid Form Only).** Melee Weapon Attack: 
-    +5 to hit, reach 5 ft., one target. Hit: 
+    **Claw (Tiger or Hybrid Form Only).** Melee Weapon Attack:
+    +5 to hit, reach 5 ft., one target. Hit:
     7 (1d8 + 3) slashing damage.
 
     **Scimitar (Humanoid or Hybrid Form Only).** Melee Weapon Attack:
@@ -44823,17 +42436,17 @@ Bite (Tiger or Hybrid Form Only). Melee Weapon Attack:
     werewolf makes two attacks: one with its bite and one with its claws
     or spear.
 
-    **Bite (Wolf or Hybrid Form Only).** Melee Weapon Attack: 
-    +4 to hit, reach 5 ft., one target. Hit: 
+    **Bite (Wolf or Hybrid Form Only).** Melee Weapon Attack:
+    +4 to hit, reach 5 ft., one target. Hit:
     6 (1d8 + 2) piercing damage. If the target is a
     humanoid, it must succeed on a DC 12 Constitution saving throw or be
     cursed with werewolf lycanthropy.
 
-    **Claws (Hybrid Form Only).** Melee Weapon Attack: 
-    +4 to hit, reach 5 ft., one creature. Hit: 
+    **Claws (Hybrid Form Only).** Melee Weapon Attack:
+    +4 to hit, reach 5 ft., one creature. Hit:
     7 (2d4 + 2) slashing damage.
 
-    **Spear (Humanoid Form Only).** Melee or Ranged Weapon Attack: 
+    **Spear (Humanoid Form Only).** Melee or Ranged Weapon Attack:
     +4 to hit, reach 5 ft. or range 20/60 ft., one creature.
     Hit: 5 (1d6 + 2) piercing damage, or
     6
@@ -44882,8 +42495,8 @@ Bite (Tiger or Hybrid Form Only). Melee Weapon Attack:
 
     Speed 30 ft., fly 50 ft.
 
-    (1d8 + 2) piercing damage if used with two hands to 
-     
+    (1d8 + 2) piercing damage if used with two hands to
+
 
     make a melee attack.
 
@@ -45069,7 +42682,7 @@ Bite (Tiger or Hybrid Form Only). Melee Weapon Attack:
 
     Skills Perception +2, Stealth +4 Damage
     Vulnerabilities fire Damage Immunities
-    poison Condition Immunities 
+    poison Condition Immunities
     poisoned
 
     Senses darkvision 60 ft., passive Perception
@@ -45313,7 +42926,7 @@ Bite (Tiger or Hybrid Form Only). Melee Weapon Attack:
     Skills Perception +2
 
     Senses passive Perception 12 Languages
-    Aquan, Common Challenge 
+    Aquan, Common Challenge
     1/8 (25 XP)
 
     \
@@ -45328,7 +42941,7 @@ Bite (Tiger or Hybrid Form Only). Melee Weapon Attack:
     \
 
     **Spear.** Melee or Ranged Weapon Attack: +2 to
-    hit, reach 5 ft. or range 20/60 ft., one target. Hit: 
+    hit, reach 5 ft. or range 20/60 ft., one target. Hit:
     3 (1d6) piercing damage, or 4 (1d8) piercing damage if
     used with two hands to make a melee attack.
 
@@ -45384,7 +42997,7 @@ Bite (Tiger or Hybrid Form Only). Melee Weapon Attack:
     slashing damage.
 
     **Harpoon.** Melee or Ranged Weapon Attack: +6 to
-    hit, reach 5 ft. or range 20/60 ft., one target. Hit: 
+    hit, reach 5 ft. or range 20/60 ft., one target. Hit:
     11 (2d6 +
 
 2.  piercing damage. If the target is a Huge or smaller creature, it
@@ -45478,7 +43091,7 @@ Speed 40 ft.
 STR DEX CON INT WIS CHA
 
  18 (+4) 11 (+0) 16 (+3) 6 (−2) 16 (+3) 9
-(−1) 
+(−1)
 
 \
 
@@ -45793,7 +43406,7 @@ STR DEX CON INT WIS CHA
 
 18 (+4) 17 (+3) 14 (+2) 16 (+3) 15 (+2) 16 (+3)
 
-19 (+4) 18 (+4) 16 (+3) 16 (+3) 19 (+4) 18 (+4) 
+19 (+4) 18 (+4) 16 (+3) 16 (+3) 19 (+4) 18 (+4)
 
 
 Saving Throws Dex +6, Con +5, Wis +5, Cha +6
@@ -45960,7 +43573,7 @@ ft., one target. Hit: 13 (2d8 + 4) bludgeoning
 damage.
 
 **Javelin.** Melee or Ranged Weapon Attack: +6 to hit,
-reach 5 ft. or range 30/120 ft., one target. Hit: 
+reach 5 ft. or range 30/120 ft., one target. Hit:
 11 (2d6
 
 + 4) piercing damage.
@@ -46371,7 +43984,7 @@ ft., one target. Hit: 9 (1d12 + 3) slashing
 damage.
 
 **Javelin.** Melee or Ranged Weapon Attack: +5 to hit,
-reach 5 ft. or range 30/120 ft., one target. Hit: 
+reach 5 ft. or range 30/120 ft., one target. Hit:
 6 (1d6 +
 
 3\) piercing damage.
@@ -46847,7 +44460,7 @@ beak and one with its talons.
 ft., one target. Hit: 27 (4d8 + 9) piercing
 damage.
 
-Talons. Melee Weapon Attack: 
+Talons. Melee Weapon Attack:
 +13 to hit, reach 5 ft., one target. Hit: 23 (4d6 + 9)
 slashing damage, and the target is grappled (escape DC 19). Until this
 grapple ends, the target is restrained, and the roc can’t use its talons
@@ -47051,7 +44664,7 @@ ft., one target. Hit: 3 (1d4 + 1) slashing
 damage.
 
 **Spear.** Melee or Ranged Weapon Attack: +3 to hit,
-reach 5 ft. or range 20/60 ft., one target. Hit: 
+reach 5 ft. or range 20/60 ft., one target. Hit:
 4 (1d6 +
 
 1\) piercing damage, or 5 (1d8 + 1) piercing damage if used with two
@@ -47110,7 +44723,7 @@ Multiattack. The salamander makes two attacks: one
 with its spear and one with its tail.
 
 **Spear.** Melee or Ranged Weapon Attack: +7 to hit,
-reach 5 ft. or range 20 ft./60 ft., one target. Hit: 
+reach 5 ft. or range 20 ft./60 ft., one target. Hit:
 11 (2d6 + 4) piercing damage, or 13 (2d8 + 4) piercing
 damage if used with two hands to make a melee attack, plus 3 (1d6) fire
 damage.
@@ -47695,7 +45308,7 @@ half as much damage and isn’t knocked prone.
 
 \
 
- Legendary Actions 
+ Legendary Actions
 
 \
 
@@ -47785,7 +45398,7 @@ damage.
 
 \
 
- Legendary Actions 
+ Legendary Actions
 
 The sphinx can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only
@@ -47822,8 +45435,8 @@ STR DEX CON INT WIS CHA
 
 3 (−4) 18 (+4) 10 (+0) 14 (+2) 13 (+1) 11 (+0)
 
-would sense its emotions or read its thoughts, as well 
- 
+would sense its emotions or read its thoughts, as well
+
 
 as any divination spell that it refuses. Wisdom (Insight) checks made to
 ascertain the sphinx’s intentions or sincerity have disadvantage.
@@ -47831,9 +45444,9 @@ ascertain the sphinx’s intentions or sincerity have disadvantage.
 Magic Weapons. The sphinx’s weapon attacks are
 magical.
 
-Skills Perception +3, Stealth +8 Senses 
-passive Perception 13 Languages 
-Common, Elvish, Sylvan Challenge 
+Skills Perception +3, Stealth +8 Senses
+passive Perception 13 Languages
+Common, Elvish, Sylvan Challenge
 1/4 (50 XP)
 
 Actions
@@ -48099,7 +45712,7 @@ prone.
 
 \
 
- Legendary Actions 
+ Legendary Actions
 
 The tarrasque can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only
@@ -48462,8 +46075,8 @@ Actions
 Multiattack (Vampire Form Only). The vampire makes two
 attacks, only one of which can be a bite attack.
 
-**Unarmed Strike (Vampire Form Only).** Melee Weapon Attack: 
-+9 to hit, reach 5 ft., one creature. Hit: 
+**Unarmed Strike (Vampire Form Only).** Melee Weapon Attack:
++9 to hit, reach 5 ft., one creature. Hit:
 8 (1d8 +
 
 4\) bludgeoning damage. Instead of dealing damage, the vampire can
@@ -48815,8 +46428,8 @@ STR DEX CON INT WIS CHA
 
 17 (+3) 10 (+0) 22 (+6) 11 (+0) 10 (+0) 11 (+0)
 
-minute and died violently. The target’s spirit rises as a 
- 
+minute and died violently. The target’s spirit rises as a
+
 
 specter in the space of its corpse or in the nearest unoccupied space.
 The specter is under the wraith’s control. The wraith can have no more
@@ -48866,7 +46479,7 @@ place of one other attack.
 ft., one creature. Hit: 11 (2d6 + 4) piercing
 damage.
 
-Claws. Melee Weapon Attack: 
+Claws. Melee Weapon Attack:
 +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4)
 slashing damage.
 
@@ -48969,8 +46582,8 @@ Speed 20 ft.
 
 \
 
-Saving Throws Wis +0 Damage Immunities 
-poison Condition Immunities 
+Saving Throws Wis +0 Damage Immunities
+poison Condition Immunities
 poisoned
 
 Senses darkvision 60 ft., passive Perception 8
@@ -49019,8 +46632,8 @@ STR DEX CON INT WIS CHA
 
 \
 
-Saving Throws Wis +0 Damage Immunities 
-poison Condition Immunities 
+Saving Throws Wis +0 Damage Immunities
+poison Condition Immunities
 poisoned
 
 Senses darkvision 60 ft., passive Perception 8
@@ -49371,7 +46984,7 @@ Armor Class 11 (natural armor)
 Hit Points 19 (3d8 + 6)
 
  **Speed** 40 ft., climb 30 ft.
- 
+
 
 \
 
@@ -49449,7 +47062,7 @@ Speed 40 ft.
 STR DEX CON INT WIS CHA
 
  12 (+1) 17 (+3) 12 (+1) 10 (+0) 13 (+1) 11
-(+0) 
+(+0)
 
 \
 
@@ -49528,8 +47141,8 @@ Hit Points 11 (2d8 + 2)
 
 Speed 40 ft.
 
-along with any equipment it is wearing or carrying, up 
- 
+along with any equipment it is wearing or carrying, up
+
 
 to 40 feet to an unoccupied space it can see. Before or after
 teleporting, the dog can make one bite attack.
@@ -49686,8 +47299,8 @@ STR DEX CON INT WIS CHA
 
 \
 
-Skills Perception +3, Stealth +4 Senses 
-passive Perception 13 Languages 
+Skills Perception +3, Stealth +4 Senses
+passive Perception 13 Languages
 —
 
 Challenge 0 (10 XP)
@@ -49956,8 +47569,8 @@ Speed 50 ft.
 | 17 (+3) 15 (+2) 15 (+2) | 3 (−4)                  | 12 (+1) 7 (−2)          |
 |-------------------------|-------------------------|-------------------------|
 
-Skills Perception +3, Stealth +4 Senses 
-passive Perception 13 Languages 
+Skills Perception +3, Stealth +4 Senses
+passive Perception 13 Languages
 —
 
 Challenge 1 (200 XP)
@@ -50082,7 +47695,7 @@ Speed 40 ft.
 STR DEX CON INT WIS CHA
 
  22 (+6) 9 (−1) 17 (+3) 3 (−4) 11 (+0) 6
-(−2) 
+(−2)
 
 \
 
@@ -50101,8 +47714,8 @@ STR DEX CON INT WIS CHA
 
 4 (−3) 18 (+4) 11 (+0) 2 (−4) 12 (+1) 5 (−3)
 
-gore attack on the same turn, that target must succeed 
- 
+gore attack on the same turn, that target must succeed
+
 
 on a DC 12 Strength saving throw or be knocked prone. If the target is
 prone, the elephant can make one stomp attack against it as a bonus
@@ -50276,8 +47889,8 @@ STR DEX CON INT WIS CHA
 
 \
 
-Skills Athletics +9, Perception +4 Senses 
-passive Perception 14 Languages 
+Skills Athletics +9, Perception +4 Senses
+passive Perception 14 Languages
 —
 
 Challenge 7 (2,900 XP)
@@ -50611,7 +48224,7 @@ target is restrained, and the crocodile can’t bite another
 target.
 
 **Tail.** Melee Weapon Attack: +8 to hit, reach 10
-ft., one target not grappled by the crocodile. Hit: 
+ft., one target not grappled by the crocodile. Hit:
 14 (2d8 + 5) bludgeoning damage. If the target is a
 creature, it must succeed on a DC 16 Strength saving throw or be knocked
 prone.
@@ -50739,7 +48352,7 @@ STR DEX CON INT WIS CHA
 
 8 (−1) 10 (+0) 12 (+1) 1 (−5) 7 (−2) 3 (−4)
 
-tongue. A mated pair of giant eagles typically has up 
+tongue. A mated pair of giant eagles typically has up
 
 
 to four eggs or young in their nest (treat the young as normal eagles).
@@ -51166,7 +48779,7 @@ Hit Points 52 (7d10 + 14)
 
 Speed 40 ft.
 
-must make a DC 11 Constitution saving throw, taking 
+must make a DC 11 Constitution saving throw, taking
 
 
 10 (3d6) poison damage on a failed save, or half as much damage on a
@@ -51880,8 +49493,8 @@ STR DEX CON INT WIS CHA
 
 8 (−1) 15 (+2) 11 (+0) 3 (−4) 12 (+1) 6 (−2)
 
-rolls against any creature that doesn’t have all its hit 
- 
+rolls against any creature that doesn’t have all its hit
+
 
 points.
 
@@ -51982,8 +49595,8 @@ Hit Points 26 (4d10 + 4)
 
 Speed 50 ft.
 
-Skills Perception +3, Stealth +6 Senses 
-passive Perception 13 Languages 
+Skills Perception +3, Stealth +6 Senses
+passive Perception 13 Languages
 —
 
 Challenge 1 (200 XP)
@@ -52282,7 +49895,7 @@ Speed 5 ft., fly 60 ft.
 STR DEX CON INT WIS CHA
 
  3 (−4) 13 (+1) 8 (−1) 2 (−4) 12 (+1) 7
-(−2) 
+(−2)
 
 \
 
@@ -52332,8 +49945,8 @@ STR DEX CON INT WIS CHA
 
 \
 
-Skills Perception +4, Stealth +6 Senses 
-passive Perception 14 Languages 
+Skills Perception +4, Stealth +6 Senses
+passive Perception 14 Languages
 —
 
 Challenge 1/4 (50 XP)
@@ -52533,7 +50146,7 @@ Speed 40 ft.
 STR DEX CON INT WIS CHA
 
  15 (+2) 10 (+0) 13 (+1) 2 (−4) 11 (+0) 7
-(−2) 
+(−2)
 
 \
 
@@ -52849,12 +50462,12 @@ Speed 40 ft.
 STR DEX CON INT WIS CHA
 
  18 (+4) 14 (+2) 15 (+2) 3 (−4) 12 (+1) 8
-(−1) 
+(−1)
 
 \
 
-Skills Perception +3, Stealth +6 Senses 
-passive Perception 13 Languages 
+Skills Perception +3, Stealth +6 Senses
+passive Perception 13 Languages
 —
 
 Challenge 2 (450 XP)
@@ -53395,7 +51008,7 @@ for a Tiny raven. The swarm can’t regain hit points or gain temporary
 hit points.
 
  17 (+3) 15 (+2) 14 (+2) 3 (−4) 12 (+1) 8
-(−1) 
+(−1)
 
 \
 
@@ -53547,8 +51160,8 @@ STR DEX CON INT WIS CHA
 
 \
 
-Skills Perception +3, Stealth +5 Senses 
-passive Perception 13 Languages 
+Skills Perception +3, Stealth +5 Senses
+passive Perception 13 Languages
 —
 
 Challenge 0 (10 XP)
@@ -53591,8 +51204,8 @@ Skills Perception +5, Stealth +3
 
 Damage Immunities cold
 
-Senses passive Perception 15 Languages 
-Common, Giant, Winter Wolf Challenge 
+Senses passive Perception 15 Languages
+Common, Giant, Winter Wolf Challenge
 3 (700 XP)
 
 \
@@ -53652,8 +51265,8 @@ STR DEX CON INT WIS CHA
 
 \
 
-Skills Perception +3, Stealth +4 Senses 
-passive Perception 13 Languages 
+Skills Perception +3, Stealth +4 Senses
+passive Perception 13 Languages
 —
 
 Challenge 1/4 (50 XP)
@@ -53799,7 +51412,7 @@ Hit Points 99 (18d8 + 18)
 
 Speed 30 ft.
 
-list. Swapping spells in this manner doesn’t alter an 
+list. Swapping spells in this manner doesn’t alter an
 
 
 NPC’s challenge rating.
@@ -53852,7 +51465,7 @@ Skills Arcana +13, History +13
 **Damage Resistance** damage from spells; nonmagical bludgeoning,
 piercing, and slashing (from *stoneskin*)
 
-Senses passive Perception 12 Languages 
+Senses passive Perception 12 Languages
 any six languages Challenge 12
 (8,400 XP)
 
@@ -53867,7 +51480,7 @@ spellcaster. Its spellcasting ability is Intelligence (spell save DC
 
 +9 to hit with spell attacks). The archmage can cast
 
-disguise self and invisibility 
+disguise self and invisibility
 at will and has the following wizard spells prepared:
 
 Cantrips (at will): *fire bolt*, *light*, *mage hand*,
@@ -53896,7 +51509,7 @@ Actions
 \
 
 **Dagger.** Melee or Ranged Weapon Attack: +6 to hit,
-reach 5 ft. or range 20/60 ft., one target. Hit: 
+reach 5 ft. or range 20/60 ft., one target. Hit:
 4 (1d4 +
 
 1.  piercing damage.
@@ -54030,7 +51643,7 @@ reach 5 ft. or range 20/60 ft., one target. Hit:
     slashing damage.
 
     **Light Crossbow.** Ranged Weapon Attack: +3 to
-    hit, range 80 ft./320 ft., one target. Hit: 
+    hit, range 80 ft./320 ft., one target. Hit:
     5 (1d8 + 1) piercing damage.
 
     \
@@ -54072,7 +51685,7 @@ reach 5 ft. or range 20/60 ft., one target. Hit:
     Saving Throws Str +4, Dex +5, Wis +2
 
     Skills Athletics +4, Deception +4 Senses
-    passive Perception 10 Languages 
+    passive Perception 10 Languages
     any two languages Challenge 2
     (450 XP)
 
@@ -54089,7 +51702,7 @@ reach 5 ft. or range 20/60 ft., one target. Hit:
     slashing damage.
 
     **Dagger.** Melee or Ranged Weapon Attack: +5 to
-    hit, reach 5 ft. or range 20/60 ft., one target. Hit: 
+    hit, reach 5 ft. or range 20/60 ft., one target. Hit:
     5 (1d4 +
 
 2.  piercing damage.
@@ -54181,7 +51794,7 @@ Armor Class 10 Hit Points 4
 STR DEX CON INT WIS CHA
 
  10 (+0) 10 (+0) 10 (+0) 10 (+0) 10 (+0) 10
-(+0) 
+(+0)
 
 \
 
@@ -54348,8 +51961,8 @@ STR DEX CON INT WIS CHA
 
 Skills Medicine +4, Nature +3, Perception +4
 
-Senses passive Perception 14 Languages 
-Druidic plus any two languages Challenge 
+Senses passive Perception 14 Languages
+Druidic plus any two languages Challenge
 2 (450 XP)
 
 \
@@ -54379,7 +51992,7 @@ bludgeoning damage with shillelagh.
 
 Druids dwell in forests and other secluded wilderness
 locations, where they protect the natural world from monsters and the
-encroachment of civilization. Some are tribal shamans 
+encroachment of civilization. Some are tribal shamans
 who heal the sick, pray to animal spirits, and provide
 spiritual guidance.
 
@@ -54411,7 +52024,7 @@ Multiattack. The gladiator makes three melee attacks
 or two ranged attacks.
 
 **Spear.** Melee or Ranged Weapon Attack: +7 to hit,
-reach 5 ft. and range 20/60 ft., one target. Hit: 
+reach 5 ft. and range 20/60 ft., one target. Hit:
 11 (2d6
 
 + 4) piercing damage, or 13 (2d8 + 4) piercing damage if used with two
@@ -54487,7 +52100,7 @@ Challenge 1/8 (25 XP)
 Actions
 
 **Spear.** Melee or Ranged Weapon Attack: +3 to hit,
-reach 5 ft. or range 20/60 ft., one target. Hit: 
+reach 5 ft. or range 20/60 ft., one target. Hit:
 4 (1d6 +
 
 1.  piercing damage, or 5 (1d8 + 1) piercing damage if used with two
@@ -54546,10 +52159,10 @@ reach 5 ft. or range 20/60 ft., one target. Hit:
     slashing damage.
 
     **Heavy Crossbow.** Ranged Weapon Attack: +2 to
-    hit, range 100/400 ft., one target. Hit: 
+    hit, range 100/400 ft., one target. Hit:
     5 (1d10) piercing damage.
 
-    Leadership (Recharges after a Short or Long Rest). 
+    Leadership (Recharges after a Short or Long Rest).
     For 1 minute, the knight can utter a special command or
     warning whenever a nonhostile creature that it can see within 30
     feet of it makes an attack roll or a saving throw. The creature can
@@ -54599,8 +52212,8 @@ reach 5 ft. or range 20/60 ft., one target. Hit:
 
     Saving Throws Int +6, Wis +4
 
-    Skills Arcana +6, History +6 Senses 
-    passive Perception 11 Languages 
+    Skills Arcana +6, History +6 Senses
+    passive Perception 11 Languages
     any four languages Challenge 6
     (2,300 XP)
 
@@ -54628,7 +52241,7 @@ reach 5 ft. or range 20/60 ft., one target. Hit:
     \
 
     **Dagger.** Melee or Ranged Weapon Attack: +5 to
-    hit, reach 5 ft. or range 20/60 ft., one target. Hit: 
+    hit, reach 5 ft. or range 20/60 ft., one target. Hit:
     4 (1d4 +
 
 2.  piercing damage.
@@ -54662,7 +52275,7 @@ STR DEX CON INT WIS CHA
 
 Skills Deception +5, Insight +4, Persuasion +5
 
-Senses passive Perception 12 Languages 
+Senses passive Perception 12 Languages
 any two languages Challenge 1/8 (25
 XP)
 
@@ -54717,7 +52330,7 @@ STR DEX CON INT WIS CHA
 
 Skills Medicine +7, Persuasion +3, Religion +4
 
-Senses passive Perception 13 Languages 
+Senses passive Perception 13 Languages
 any two languages Challenge 2 (450
 XP)
 
@@ -54841,7 +52454,7 @@ Perception +6, Persuasion +5, Sleight of Hand +4,
 
 Stealth +4
 
-Senses passive Perception 16 Languages 
+Senses passive Perception 16 Languages
 any two languages Challenge 1 (200
 XP)
 
@@ -54956,7 +52569,7 @@ Speed 30 ft.
 | 8 (−1)                  |                         |                         |
 |-------------------------|-------------------------|-------------------------|
 
-Senses passive Perception 10 Languages 
+Senses passive Perception 10 Languages
 any one language Challenge 1/8 (25
 XP)
 
@@ -54971,7 +52584,7 @@ within 5 feet of the creature and the ally isn’t incapacitated.
 Actions
 
 **Spear.** Melee or Ranged Weapon Attack: +3 to hit,
-reach 5 ft. or range 20/60 ft., one target. Hit: 
+reach 5 ft. or range 20/60 ft., one target. Hit:
 4 (1d6 +
 
 1\) piercing damage, or 5 (1d8 + 1) piercing damage if used with two
