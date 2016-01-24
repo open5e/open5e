@@ -55,30 +55,14 @@ Your turn can include a variety of flourishes that require neither your action n
 
 You can communicate however you are able, through brief utterances and gestures, as you take your turn.
 
-You can also interact with one object or feature of the environment for
-free, during either your move or your action. For example, you could
-open a door during your move as you stride toward a foe, or you could
-draw your weapon as part of the same action you use to attack.
+You can also interact with one object or feature of the environment for free, during either your move or your action. For example, you could open a door during your move as you stride toward a foe, or you could draw your weapon as part of the same action you use to attack.
 
-If you want to interact with a second object, you need to use your
-action. Some magic items and other special objects always require an
-action to use, as stated in their descriptions.
+If you want to interact with a second object, you need to use your action. Some magic items and other special objects always require an action to use, as stated in their descriptions.
 
-> The GM might require you to use an action for any
-
-of these activities when it needs special care or when it presents an
-unusual obstacle. For instance, the GM could reasonably expect you to
-use an action to open a stuck door or turn a crank to lower a
-drawbridge.
+The GM might require you to use an action for any of these activities when it needs special care or when it presents an unusual obstacle. For instance, the GM could reasonably expect you to use an action to open a stuck door or turn a crank to lower a drawbridge.
 
 ### Reactions
 
-Certain special abilities, spells, and situations allow you to take a
-special action called a reaction. A reaction is an instant response to a
-trigger of some kind, which can occur on your turn or on someone else’s.
-The opportunity attack, described later in this chapter, is the most
-common type of reaction.
+Certain special abilities, spells, and situations allow you to take a special action called a reaction. A reaction is an instant response to a trigger of some kind, which can occur on your turn or on someone else’s. The opportunity attack, described later in this chapter, is the most common type of reaction.
 
-When you take a reaction, you can’t take another one until the start of
-your next turn. If the reaction interrupts another creature’s turn, that
-creature can continue its turn right after the reaction.
+When you take a reaction, you can’t take another one until the start of your next turn. If the reaction interrupts another creature’s turn, that creature can continue its turn right after the reaction.
