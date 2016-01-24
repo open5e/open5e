@@ -26,7 +26,7 @@ Material Plane.
 The worlds of the Material Plane are infinitely diverse, for they
 reflect the creative imagination of the GMs who set their games there,
 as well as the players whose heroes adventure there. They include
-magic-­‐‑wasted desert planets and island-­‐‑dotted water worlds, worlds
+magic-­wasted desert planets and island-­dotted water worlds, worlds
 where magic combines with advanced technology and others trapped in an
 endless Stone Age, worlds where the gods walk and places they have
 abandoned.
@@ -64,7 +64,7 @@ the Outer Planes.
 ***Portals.*** A portal is a general term for a stationary interplanar
 connection that links a specific location on one plane to a specific
 location on another. Some portals are like doorways, a clear window, or
-a fog-­‐‑ shrouded passage, and simply stepping through it effects the
+a fog-­ shrouded passage, and simply stepping through it effects the
 interplanar travel. Others are locations— circles of standing stones,
 soaring towers, sailing ships, or even whole towns—that exist in
 multiple planes at once or flicker from one plane to another in turn.
@@ -81,7 +81,7 @@ to travel from one plane to another. Spells such as *etherealness* and
 *astral projection* allow characters to enter these planes and traverse
 them to reach the planes beyond.
 
-> The **Ethereal Plane** is a misty, fog-­‐‑bound
+> The **Ethereal Plane** is a misty, fog-­bound
 
 dimension that is sometimes described as a great ocean. Its shores,
 called the Border Ethereal, overlap the Material Plane and the Inner
@@ -120,8 +120,8 @@ Plane. The four elements mingle together as they do in the Material
 Plane, forming land, sea, and sky. Farther from the Material Plane,
 though, the Elemental Planes are both alien and hostile. Here, the
 elements exist in their purest form—great expanses of solid earth,
-blazing fire, crystal-­‐‑clear water, and unsullied air. These regions
-are little-­‐‑known, so when discussing the Plane of Fire, for example,
+blazing fire, crystal-­clear water, and unsullied air. These regions
+are little-­known, so when discussing the Plane of Fire, for example,
 a speaker usually means just the border region. At the farthest extents
 of the Inner Planes, the pure elements dissolve and bleed together into
 an unending tumult of clashing energies and colliding substance, the
@@ -159,7 +159,7 @@ take a guided tour of the Nine Hells, from the first layer to the ninth,
 in a single day—if the powers of the Hells desire it. Or it could take
 weeks for travelers to make a grueling trek across a single layer.
 
-The most well-­‐‑known Outer Planes are a group of sixteen planes that
+The most well-­known Outer Planes are a group of sixteen planes that
 correspond to the eight alignments (excluding neutrality) and the shades
 of distinction between them.
 

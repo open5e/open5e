@@ -22,5 +22,5 @@ Following the road from Baldur’s Gate to Waterdeep, the adventurers
 spend four uneventful days before a goblin ambush interrupts their
 journey.
 
-In combat and other fast-­‐‑paced situations, the game relies on
-**rounds**, a 6-­‐‑second span of time.
+In combat and other fast-­paced situations, the game relies on
+**rounds**, a 6-­second span of time.

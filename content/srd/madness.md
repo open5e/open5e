@@ -18,25 +18,25 @@ psychic wind or the howling winds of Pandemonium can all inflict
 madness. Some artifacts can also break the psyche of a character who
 uses or becomes attuned to them.
 
-> Resisting a madness-­‐‑inducing effect usually
+> Resisting a madness-­inducing effect usually
 
 requires a Wisdom or Charisma saving throw.
 
 ### Madness Effects
 
-Madness can be short-­‐‑term, long-­‐‑term, or indefinite. Most
-relatively mundane effects impose short-­‐‑term madness, which lasts for
+Madness can be short-­term, long-­term, or indefinite. Most
+relatively mundane effects impose short-­term madness, which lasts for
 just a few minutes. More horrific effects or cumulative effects can
-result in long-­‐‑term or indefinite madness.
+result in long-­term or indefinite madness.
 
-> A character afflicted with **short-­‐‑term madness** is
+> A character afflicted with **short-­term madness** is
 
-subjected to an effect from the Short-­‐‑Term Madness table for 1d10
+subjected to an effect from the Short-­Term Madness table for 1d10
 minutes.
 
-> A character afflicted with **long-­‐‑term madness** is
+> A character afflicted with **long-­term madness** is
 
-subjected to an effect from the Long-­‐‑Term Madness table for 1d10 × 10
+subjected to an effect from the Long-­Term Madness table for 1d10 × 10
 hours.
 
 > A character afflicted with **indefinite madness**
@@ -163,8 +163,8 @@ until cured.
 ### Curing Madness
 
 > A *calm emotions* spell can suppress the effects of madness, while a
-> *lesser restoration* spell can rid a character of a short-­‐‑term or
-> long-­‐‑term madness. Depending on the source of the madness, *remove
+> *lesser restoration* spell can rid a character of a short-­term or
+> long-­term madness. Depending on the source of the madness, *remove
 > curse* or *dispel evil* might also prove effective. A *greater
 > restoration* spell or more powerful magic is required to rid a
 > character of indefinite madness.

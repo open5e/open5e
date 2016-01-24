@@ -9,7 +9,7 @@ game, unwary adventurers can fall to their deaths, be burned alive, or
 fall under a fusillade of poisoned darts.
 
 A trap can be either mechanical or magical in nature. **Mechanical
-traps** include pits, arrow traps, falling blocks, water-­‐‑filled
+traps** include pits, arrow traps, falling blocks, water-­filled
 rooms, whirling blades, and anything else that depends on a mechanism to
 operate. **Magic traps** are either magical device traps or spell traps.
 Magical device traps initiate spell effects when activated. Spell traps
@@ -200,13 +200,13 @@ Sample Traps
 > any edged weapon or edged tool. On a failed check, the trap triggers.
 >
 > When the trap is triggered, the net is released, covering a
-> 10-­‐‑foot-­‐‑square area. Those in the area are trapped under the net
+> 10-­foot-­square area. Those in the area are trapped under the net
 > and restrained, and those that fail a DC 10 Strength saving throw are
 > also knocked prone. A creature can use its action to make a DC 10
 
 Strength check, freeing itself or another creature within its reach on a
 success. The net has AC 10 and 20 hit points. Dealing 5 slashing damage
-to the net (AC 10) destroys a 5-­‐‑foot-­‐‑square section of it, freeing
+to the net (AC 10) destroys a 5-­foot-­square section of it, freeing
 any creature trapped in that section.
 
 #### Fire-Breathing Statue
@@ -225,7 +225,7 @@ can sense the presence of magic, such as *detect magic*, reveals an aura
 of evocation magic around the statue.
 
 The trap activates when more than 20 pounds of weight is placed on the
-pressure plate, causing the statue to release a 30-­‐‑foot cone of fire.
+pressure plate, causing the statue to release a 30-­foot cone of fire.
 Each creature in the fire must make a DC 13 Dexterity saving throw,
 taking 22 (4d10) fire damage on a failed save, or half as much damage on
 a successful one.
@@ -271,7 +271,7 @@ or similar magic.
 
 ***Locking Pit.*** This pit trap is identical to a hidden pit trap, with
 one key exception: the trap door that covers the pit is
-spring-­‐‑loaded. After a creature falls into the pit, the cover snaps
+spring-­loaded. After a creature falls into the pit, the cover snaps
 shut to trap its victim inside.
 
 A successful DC 20 Strength check is necessary to pry the cover open.
@@ -294,13 +294,13 @@ successful one.
 
 > *Mechanical trap*
 
-When a creature steps on a hidden pressure plate, poison-­‐‑tipped darts
-shoot from spring-­‐‑loaded or pressurized tubes cleverly embedded in
+When a creature steps on a hidden pressure plate, poison-­tipped darts
+shoot from spring-­loaded or pressurized tubes cleverly embedded in
 the surrounding walls. An area might include multiple pressure plates,
 each one rigged to its own set of darts.
 
 The tiny holes in the walls are obscured by dust and cobwebs, or
-cleverly hidden amid bas-­‐‑reliefs, murals, or frescoes that adorn the
+cleverly hidden amid bas-­reliefs, murals, or frescoes that adorn the
 walls. The DC to spot them is 15. With a successful DC 15 Intelligence
 (Investigation) check, a character can deduce the presence of the
 pressure plate from variations in the mortar and stone used to create
@@ -345,7 +345,7 @@ Unsuccessfully attempting to pick the lock triggers the trap.
 
 When 20 or more pounds of pressure are placed on this trap’s pressure
 plate, a hidden trapdoor in the ceiling opens, releasing a
-10-­‐‑foot-­‐‑diameter rolling sphere of solid stone.
+10-­foot-­diameter rolling sphere of solid stone.
 
 With a successful DC 15 Wisdom (Perception) check, a character can spot
 the trapdoor and pressure plate. A search of the floor accompanied by a

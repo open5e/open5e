@@ -45,7 +45,7 @@ a wizard cast the *fly* spell on you, you could fly 20 feet, then walk
 ### Difficult Terrain
 
 Combat rarely takes place in bare rooms or on featureless plains.
-Boulder-­‐‑strewn caverns, briar-­‐‑ choked forests, treacherous
+Boulder-­strewn caverns, briar-­ choked forests, treacherous
 staircases—the setting of a typical fight contains difficult terrain.
 
 Every foot of movement in difficult terrain costs 1 extra foot. This
@@ -171,14 +171,14 @@ combat. Objects sometimes use the same size categories.
 A creature’s space is the area in feet that it effectively controls in
 combat, not an expression of its physical dimensions. A typical Medium
 creature isn’t 5 feet wide, for example, but it does control a space
-that wide. If a Medium hobgoblin stands in a 5-­‐‑ foot-­‐‑wide doorway,
+that wide. If a Medium hobgoblin stands in a 5-­ foot-­wide doorway,
 other creatures can’t get through unless the hobgoblin lets them.
 
 > A creature’s space also reflects the area it needs to
 
 fight effectively. For that reason, there’s a limit to the number of
 creatures that can surround another creature in combat. Assuming Medium
-combatants, eight creatures can fit in a 5-­‐‑foot radius around another
+combatants, eight creatures can fit in a 5-­foot radius around another
 one.
 
 Because larger creatures take up more space, fewer of them can surround
