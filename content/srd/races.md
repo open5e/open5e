@@ -1,8 +1,8 @@
 
-Races
-=====
+##Races
 
-##Racial Traits
+
+###Racial Traits
 The description of each race includes racial traits that are common to members of that race. The following entries appear among the traits of most races.
 
 #### Ability Score Increase
@@ -52,7 +52,7 @@ considered young until they reach the age of 50. On average, they live
 about 350 years.
 
 ***Alignment.*** Most dwarves are lawful, believing firmly in the
-benefits of a well-­‐‑ordered society. They tend toward good as well,
+benefits of a well-­ordered society. They tend toward good as well,
 with a strong sense of fair play and a belief that everyone deserves to
 share in the benefits of a just order.
 
@@ -113,7 +113,7 @@ growth to encompass worldly experience. An elf typically claims
 adulthood and an adult name around the age of 100 and can live to be 750
 years old.
 
-***Alignment.*** Elves love freedom, variety, and self-­‐‑ expression,
+***Alignment.*** Elves love freedom, variety, and self-­ expression,
 so they lean strongly toward the gentler aspects of chaos. They value
 and protect others’ freedom as well as their own, and they are more
 often good than not. The drow are an exception; their exile has made
@@ -155,7 +155,7 @@ Elvish ballads to their repertoires.
 As a high elf, you have a keen mind and a mastery of at least the basics
 of magic. In many fantasy gaming worlds, there are two kinds of high
 elves. One type is haughty and reclusive, believing themselves to be
-superior to non-­‐‑elves and even other elves. The other type is more
+superior to non-­elves and even other elves. The other type is more
 common and more friendly, and often encountered among humans and other
 races.
 
@@ -185,7 +185,7 @@ halflings.
 lives into the middle of his or her second century.
 
 ***Alignment.*** Most halflings are lawful good. As a rule, they are
-good-­‐‑hearted and kind, hate to see others in pain, and have no
+good-­hearted and kind, hate to see others in pain, and have no
 tolerance for oppression. They are also very orderly and traditional,
 leaning heavily on the support of their community and the comfort of
 their old ways.
@@ -269,7 +269,7 @@ other dragonborn.
 your Charisma score increases by 1.
 
 ***Age.*** Young dragonborn grow quickly. They walk hours after
-hatching, attain the size and development of a 10-­‐‑year-­‐‑old human
+hatching, attain the size and development of a 10-­year-­old human
 child by the age of 3, and reach adulthood by 15. They live to be around
 80.
 
@@ -342,7 +342,7 @@ other gnomes.
 
 and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years.
 
-***Alignment.*** Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or inventors. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers. Gnomes are good-­‐‑hearted, and even the tricksters among them are more playful than vicious.
+***Alignment.*** Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or inventors. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers. Gnomes are good-­hearted, and even the tricksters among them are more playful than vicious.
 
 ***Size.*** Gnomes are between 3 and 4 feet tall and average about 40
 pounds. Your size is Small.
@@ -406,17 +406,17 @@ Half-Elf
 
 ### Half-Elf Traits
 
-Your half-­‐‑elf character has some qualities in common with elves and
-some that are unique to half-­‐‑elves.
+Your half-­elf character has some qualities in common with elves and
+some that are unique to half-­elves.
 
 ***Ability Score Increase.*** Your Charisma score increases by 2, and
 two other ability scores of your choice increase by 1.
 
-***Age.*** Half-­‐‑elves mature at the same rate humans do and reach
+***Age.*** Half-­elves mature at the same rate humans do and reach
 adulthood around the age of 20. They live much longer than humans,
 however, often exceeding 180 years.
 
-***Alignment.*** Half-­‐‑elves share the chaotic bent of
+***Alignment.*** Half-­elves share the chaotic bent of
 
 their elven heritage. They value both personal freedom and creative
 expression, demonstrating neither love of leaders nor desire for
@@ -424,7 +424,7 @@ followers. They chafe at rules, resent others’ demands, and
 
 sometimes prove unreliable, or at least unpredictable.
 
-***Size.*** Half-­‐‑elves are about the same size as humans, ranging
+***Size.*** Half-­elves are about the same size as humans, ranging
 from 5 to 6 feet tall. Your size is Medium.
 
 ***Speed.*** Your base walking speed is 30 feet.
@@ -448,22 +448,22 @@ Half-Orc
 
 ### Half-Orc Traits
 
-Your half-­‐‑orc character has certain traits deriving from your orc
+Your half-­orc character has certain traits deriving from your orc
 ancestry.
 
 ***Ability Score Increase.*** Your Strength score increases by 2, and
 your Constitution score increases by 1.
 
-***Age.*** Half-­‐‑orcs mature a little faster than humans, reaching
+***Age.*** Half-­orcs mature a little faster than humans, reaching
 adulthood around age 14. They age noticeably faster and rarely live
 longer than 75 years.
 
-***Alignment.*** Half-­‐‑orcs inherit a tendency toward chaos from their
-orc parents and are not strongly inclined toward good. Half-­‐‑orcs
+***Alignment.*** Half-­orcs inherit a tendency toward chaos from their
+orc parents and are not strongly inclined toward good. Half-­orcs
 raised among orcs and willing to live out their lives among them are
 usually evil.
 
-***Size.*** Half-­‐‑orcs are somewhat larger and bulkier than humans,
+***Size.*** Half-­orcs are somewhat larger and bulkier than humans,
 and they range from 5 to well over 6 feet tall. Your size is Medium.
 
 ***Speed.*** Your base walking speed is 30 feet.
@@ -523,7 +523,7 @@ dim light. You can’t discern color in darkness, only shades of gray.
 
 ***Infernal Legacy.*** You know the *thaumaturgy* cantrip. When you
 reach 3rd level, you can cast the *hellish rebuke* spell as a
-2nd-­‐‑level spell once with this trait and regain the ability to do so
+2nd-­level spell once with this trait and regain the ability to do so
 when you finish a long rest. When you reach 5th level, you can cast the
 *darkness* spell once with this trait and regain the ability to do so
 when you finish a long rest. Charisma is your spellcasting ability for

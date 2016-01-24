@@ -65,7 +65,7 @@ Dexterity check total to the one with the lowest. This is the order
 (called the initiative order) in which they act during each round. The
 initiative order remains the same from round to round.
 
-If a tie occurs, the GM decides the order among tied GM-­‐‑controlled
+If a tie occurs, the GM decides the order among tied GM-­controlled
 creatures, and the players decide the order among their tied characters.
 The GM can decide the order if the tie is between a monster and a player
 character. Optionally, the GM can have the tied characters and monsters

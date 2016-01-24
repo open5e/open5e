@@ -207,7 +207,7 @@ Inside this heavy cloth bag are 3d4 dry beans. The bag weighs 1/2 pound
 plus 1/4 pound for each bean it contains.
 
 If you dump the bag’s contents out on the ground, they explode in a
-10-­‐‑foot radius, extending from the beans. Each creature in the area,
+10-­foot radius, extending from the beans. Each creature in the area,
 including you, must make a DC 15 Dexterity saving throw, taking 5d4 fire
 damage on a failed save, or half as much damage on a successful one. The
 fire ignites flammable objects in the area that aren’t being worn or
@@ -327,7 +327,7 @@ Placing a *bag of holding* inside an extradimensional space created by a
 both items and opens a gate to the Astral Plane. The gate originates
 where the one item was placed inside the other. Any creature within 10
 feet of the gate is sucked through it to a random location on the Astral
-Plane. The gate then closes. The gate is one-­‐‑way only and can’t be
+Plane. The gate then closes. The gate is one-­way only and can’t be
 reopened.
 
 #### Bag of Tricks
@@ -421,7 +421,7 @@ This small black sphere measures 3/4 of an inch in diameter and weighs
 an ounce. Typically, 1d4 + 4 *beads of force* are found together.
 
 You can use an action to throw the bead up to 60 feet. The bead explodes
-on impact and is destroyed. Each creature within a 10-­‐‑foot radius of
+on impact and is destroyed. Each creature within a 10-­foot radius of
 where the bead landed must succeed on a DC 15 Dexterity saving throw or
 take 5d4 force damage. A sphere of transparent force then encloses the
 area for 1 minute. Any creature that failed the save and is completely
@@ -659,14 +659,14 @@ an action. After burning for 4 hours, the candle is destroyed. You can
 snuff it out early for use at a later time. Deduct the time it burned in
 increments of 1 minute from the candle’s total burn time.
 
-> While lit, the candle sheds dim light in a 30-­‐‑foot
+> While lit, the candle sheds dim light in a 30-­foot
 
 radius. Any creature within that light whose alignment matches that of
 the candle makes attack rolls, saving throws, and ability checks with
 advantage. In addition, a cleric or druid in the light whose alignment
-matches the candle’s can cast 1st-­‐‑ level spells he or she has
+matches the candle’s can cast 1st-­ level spells he or she has
 prepared without expending spell slots, though the spell’s effect is as
-if cast with a 1st-­‐‑level slot.
+if cast with a 1st-­level slot.
 
 Alternatively, when you light the candle for the first time, you can
 cast the *gate* spell with it. Doing so destroys the candle.
@@ -719,7 +719,7 @@ the censer’s command word and summon an air elemental, as if you had
 cast the *conjure elemental* spell. The censer can’t be used this way
 again until the next dawn.
 
-> This 6-­‐‑inch-­‐‑wide, 1-­‐‑foot-­‐‑high vessel resembles a
+> This 6-­inch-­wide, 1-­foot-­high vessel resembles a
 
 chalice with a decorated lid. It weighs 1 pound.
 
@@ -1065,7 +1065,7 @@ image on its card disappears, and that card can’t be used again.
 
 Usually found in a box or pouch, this deck contains a number of cards
 made of ivory or vellum. Most (75 percent) of these decks have only
-thirteen cards, but the rest have twenty-­‐‑two.
+thirteen cards, but the rest have twenty-­two.
 
 > Before you draw a card, you must declare how
 
@@ -1124,7 +1124,7 @@ alignment to change. Lawful becomes chaotic, good becomes evil, and vice
 versa. If you are true neutral or unaligned, this card has no effect on
 you.
 
-***Comet.*** If you single-­‐‑handedly defeat the next hostile monster
+***Comet.*** If you single-­handedly defeat the next hostile monster
 or group of monsters you encounter, you gain experience points enough to
 gain one level. Otherwise, this card has no effect.
 
@@ -1135,7 +1135,7 @@ You remain imprisoned until you are found and removed from the sphere.
 You can’t be located by any divination magic, but a *wish* spell can
 reveal the location of your prison. You draw no more cards.
 
-***Euryale.*** The card’s medusa-­‐‑like visage curses you. You take a
+***Euryale.*** The card’s medusa-­like visage curses you. You take a
 −2 penalty on saving throws while cursed in this way. Only a god or the
 magic of The Fates card can end this curse.
 
@@ -1175,7 +1175,7 @@ would cause you to lose a level, you instead lose an
 
 amount that leaves you with just enough XP to keep your level.
 
-***Gem.*** Twenty-­‐‑five pieces of jewelry worth 2,000 gp each or fifty
+***Gem.*** Twenty-­five pieces of jewelry worth 2,000 gp each or fifty
 gems worth 1,000 gp each appear at your feet.
 
 ***Idiot.*** Permanently reduce your Intelligence by 1d4 + 1 (to a
@@ -1189,7 +1189,7 @@ beyond your declared draws.
 
 are proficient appears in your hands. The GM chooses the weapon.
 
-***Knight.*** You gain the service of a 4th-­‐‑level fighter who appears
+***Knight.*** You gain the service of a 4th-­level fighter who appears
 in a space you choose within 30 feet of you. The fighter is of the same
 race as you and serves you loyally until death, believing the fates have
 drawn him or her to you. You control this character.
@@ -1322,7 +1322,7 @@ and destroys the shackles.
 > *Armor (scale mail), very rare (requires attunement)*
 
 Dragon scale mail is made of the scales of one kind of dragon. Sometimes
-dragons collect their cast-­‐‑off scales and gift them to humanoids.
+dragons collect their cast-­off scales and gift them to humanoids.
 Other times, hunters carefully skin and preserve the hide of a dead
 dragon. In either case, dragon scale mail is highly valued.
 
@@ -1375,7 +1375,7 @@ a spell, the invisibility ends for that creature.
 
 This small packet contains 1d6 + 4 pinches of dust. You can use an
 action to sprinkle a pinch of it over water. The dust turns a cube of
-water 15 feet on a side into one marble-­‐‑sized pellet, which floats or
+water 15 feet on a side into one marble-­sized pellet, which floats or
 rests near where the dust was sprinkled. The pellet’s weight is
 negligible.
 
@@ -1501,9 +1501,9 @@ armor.
 
 > *Wondrous item, uncommon*
 
-Smoke leaks from the lead-­‐‑stoppered mouth of this brass bottle, which
+Smoke leaks from the lead-­stoppered mouth of this brass bottle, which
 weighs 1 pound. When you use an action to remove the stopper, a cloud of
-thick smoke pours out in a 60-­‐‑foot radius from the bottle. The
+thick smoke pours out in a 60-­foot radius from the bottle. The
 cloud’s area is heavily obscured. Each minute the bottle remains open
 and within the cloud, the radius increases by 10 feet until it reaches
 its maximum radius of 120 feet.
@@ -1548,7 +1548,7 @@ extremely distant creatures and objects as small as 2 feet across.
 > *Wondrous item, rare*
 
 This tiny object looks like a feather. Different types of feather tokens
-exist, each with a different single-­‐‑ use effect. The GM chooses the
+exist, each with a different single-­ use effect. The GM chooses the
 kind of token or determines it randomly.
 
 > **d100 Feather Token d100 Feather Token**
@@ -1569,7 +1569,7 @@ The token disappears and an enormous, multicolored bird takes its place.
 The bird has the statistics of a roc, but it obeys your simple commands
 and can’t attack. It can carry up to 500 pounds while flying at its
 maximum speed (16 miles an hour for a maximum of 144 miles per day, with
-a one-­‐‑hour rest for every 3 hours of flying), or 1,000 pounds at half
+a one-­hour rest for every 3 hours of flying), or 1,000 pounds at half
 that speed. The bird disappears after flying its maximum distance for a
 day or if it drops to 0 hit points. You can dismiss the bird as an
 action.
@@ -1584,11 +1584,11 @@ action.
 
 ***Swan Boat.*** You can use an action to touch the token to a body of
 water at least 60 feet in diameter. The token disappears, and a
-50-­‐‑foot-­‐‑long, 20-­‐‑foot-­‐‑ wide boat shaped like a swan takes
-its place. The boat is self-­‐‑propelled and moves across water at a
+50-­foot-­long, 20-­foot-­ wide boat shaped like a swan takes
+its place. The boat is self-­propelled and moves across water at a
 speed of 6 miles per hour. You can use an action while on the boat to
 command it to move or to turn up to 90 degrees. The boat can carry up to
-thirty-­‐‑two Medium or smaller creatures. A Large creature counts as
+thirty-­two Medium or smaller creatures. A Large creature counts as
 four Medium creatures, while a Huge creature counts as nine. The boat
 remains for 24 hours and then disappears. You can dismiss the boat as an
 action.
@@ -1596,8 +1596,8 @@ action.
 ***Tree.*** You must be outdoors to use this token. You can use an
 action to touch it to an unoccupied space on the ground. The token
 disappears, and in its place a nonmagical oak tree springs into
-existence. The tree is 60 feet tall and has a 5-­‐‑foot-­‐‑diameter
-trunk, and its branches at the top spread out in a 20-­‐‑foot radius.
+existence. The tree is 60 feet tall and has a 5-­foot-­diameter
+trunk, and its branches at the top spread out in a 20-­foot radius.
 
 > ***Whip.*** You can use an action to throw the token to
 
@@ -1697,7 +1697,7 @@ differently from the others. Their properties are as follows:
 > the other becomes a *+2 longsword*. Removing a horn requires an
 > action, and the weapons disappear and the horns return
 > whenthegoatrevertstofigurineform.Inaddition, the goat radiates a
-> 30-­‐‑foot-­‐‑radius aura of terror while you are riding it. Any
+> 30-­foot-­radius aura of terror while you are riding it. Any
 > creature hostile to you that starts its turn in the aura must succeed
 > on a DC 15 Wisdom saving throw or be frightened of the goat for 1
 > minute, or until the goat reverts to figurine form. The frightened
@@ -1749,7 +1749,7 @@ Flame Tongue
 
 You can use a bonus action to speak this magic sword’s command word,
 causing flames to erupt from the blade. These flames shed bright light
-in a 40-­‐‑foot radius and dim light for an additional 40 feet. While
+in a 40-­foot radius and dim light for an additional 40 feet. While
 the sword is ablaze, it deals an extra 2d6 fire damage to any target it
 hits. The flames last until you use a bonus action to speak the command
 word again or until you drop or sheathe the sword.
@@ -1792,7 +1792,7 @@ When you hit with an attack using this magic sword, the target takes an
 extra 1d6 cold damage. In addition, while you hold the sword, you have
 resistance to fire damage.
 
-In freezing temperatures, the blade sheds bright light in a 10-­‐‑foot
+In freezing temperatures, the blade sheds bright light in a 10-­foot
 radius and dim light for an additional 10 feet.
 
 When you draw this weapon, you can extinguish all nonmagical flames
@@ -1815,7 +1815,7 @@ action to speak one of three command words to cause one of the following
 effects:
 
 -   The first command word causes the gem to shed bright light in a
-    > 30-­‐‑foot radius and dim light for an additional 30 feet. This
+    > 30-­foot radius and dim light for an additional 30 feet. This
     > effect doesn’t expend a charge. It lasts until you use a bonus
     > action to repeat the command word or until you use another
     > function of the gem.
@@ -1828,7 +1828,7 @@ effects:
     > the effect on itself on a success.
 
 -   The third command word expends 5 charges and causes the gem to flare
-    > with blinding light in a 30-­‐‑ foot cone originating from it.
+    > with blinding light in a 30-­ foot cone originating from it.
     > Each creature in the cone must make a saving throw as if struck by
     > the beam created with the second command word.
 
@@ -1956,7 +1956,7 @@ of holding*, *portable hole*, or similar item instantly destroys both
 items and opens a gate to the Astral Plane. The gate originates where
 the one item was placed inside the other. Any creature within 10 feet of
 the gate is sucked through it and deposited in a random location on the
-Astral Plane. The gate then closes. The gate is one-­‐‑way only and
+Astral Plane. The gate then closes. The gate is one-­way only and
 can’t be reopened.
 
 #### \
@@ -1991,7 +1991,7 @@ When all the gems are removed or destroyed, the helm loses its magic.
     > when the spell is cast and disappears from the helm.
 
 -   As long as it has at least one diamond, the helm emits dim light in
-    > a 30-­‐‑foot radius when at least one undead is within that area.
+    > a 30-­foot radius when at least one undead is within that area.
     > Any undead that starts its turn in that area takes 1d6
     > radiant damage.
 
@@ -2001,7 +2001,7 @@ When all the gems are removed or destroyed, the helm loses its magic.
 -   As long as the helm has at least one fire opal, you can use an
     > action and speak a command word to cause one weapon you are
     > holding to burst into flames. The flames emit bright light in a
-    > 10-­‐‑foot radius and dim light for an additional 10 feet. The
+    > 10-­foot radius and dim light for an additional 10 feet. The
     > flames are harmless to you and the weapon. When you hit with an
     > attack using the blazing weapon, the target takes an extra 1d6
     > fire damage. The flames last until you use a bonus action to speak
@@ -2090,7 +2090,7 @@ You gain a +3 bonus to attack and damage rolls made with this magic
 weapon. When you hit a fiend or an undead with it, that creature takes
 an extra 2d10 radiant damage.
 
-While you hold the drawn sword, it creates an aura in a 10-­‐‑foot
+While you hold the drawn sword, it creates an aura in a 10-­foot
 radius around you. You and all creatures friendly to you in the aura
 have advantage on saving throws against spells and other magical
 effects. If you have 17 or more levels in the paladin class, the radius
@@ -2101,7 +2101,7 @@ of the aura increases to 30 feet.
 > *Wondrous item, rare*
 
 You can use an action to speak the horn’s command word and then blow the
-horn, which emits a thunderous blast in a 30-­‐‑foot cone that is
+horn, which emits a thunderous blast in a 30-­foot cone that is
 audible 600 feet away. Each creature in the cone must make
 
 > 01–40 Silver 2d4 + 2 None
@@ -2156,7 +2156,7 @@ Strength check, moving the fixed rod up to 10 feet on a success.
 
 > *Wondrous item, rare*
 
-You can use an action to place this 1-­‐‑inch metal cube on the ground
+You can use an action to place this 1-­inch metal cube on the ground
 and speak its command word. The cube rapidly grows into a fortress that
 remains until you use an action to speak the command word that dismisses
 it, which works only if the fortress is empty.
@@ -2396,10 +2396,10 @@ meantime, the javelin can still be used as a magic weapon.
 > *Wondrous item, uncommon*
 
 While lit, this hooded lantern burns for 6 hours on 1 pint of oil,
-shedding bright light in a 30-­‐‑foot radius and dim light for an
+shedding bright light in a 30-­foot radius and dim light for an
 additional 30 feet. Invisible creatures and objects are visible as long
 as they are in the lantern’s bright light. You can use an action to
-lower the hood, reducing the light to dim light in a 5-­‐‑ foot radius.
+lower the hood, reducing the light to dim light in a 5-­ foot radius.
 
 #### Luck Blade
 
@@ -2432,7 +2432,7 @@ frightened of you until the end of your next turn.
 
 > While you hold this weapon, it sheds bright light in
 
-a 20-­‐‑foot radius and dim light for an additional 20 feet.
+a 20-­foot radius and dim light for an additional 20 feet.
 
 #### Mace of Smiting
 
@@ -2453,7 +2453,7 @@ damage, it is destroyed.
 
 This magic weapon has 3 charges. While holding it, you can use an action
 and expend 1 charge to release a wave of terror. Each creature of your
-choice in a 30-­‐‑foot radius extending from you must succeed on a DC 15
+choice in a 30-­foot radius extending from you must succeed on a DC 15
 Wisdom saving throw or become frightened of you for 1 minute. While it
 is frightened in this way, a creature must spend its turns trying to
 move as far away from you as it can, and it can’t willingly move to a
@@ -2500,7 +2500,7 @@ The mace regains 1d3 expended charges daily at dawn.
 > This tome contains information and incantations necessary to make a
 > particular type of golem. The GM chooses the type or determines it
 > randomly. To decipher and use the manual, you must be a spellcaster
-> with at least two 5th-­‐‑level spell slots. A creature that can’t use
+> with at least two 5th-­level spell slots. A creature that can’t use
 > a *manual of golems* and attempts to read it takes 6d6 psychic damage.
 
   > **d20**   > **Golem**   > **Time**   > **Cost**
@@ -2537,7 +2537,7 @@ Manual of Quickness of Action
 >
 > Typically found in 1d4 pots inside a fine wooden box with a brush
 > (weighing 1 pound in total), these pigments allow you to create
-> three-­‐‑dimensional objects by painting them in two dimensions. The
+> three-­dimensional objects by painting them in two dimensions. The
 > paint flows from the brush to form the desired object as you
 > concentrate on its image.
 >
@@ -2574,7 +2574,7 @@ Manual of Quickness of Action
 
 > *Wondrous item, very rare*
 
-When this 4-­‐‑foot-­‐‑tall mirror is viewed indirectly, its surface
+When this 4-­foot-­tall mirror is viewed indirectly, its surface
 shows faint images of creatures. The mirror weighs 50 pounds, and it has
 AC 11, 10 hit points, and vulnerability to bludgeoning damage. It
 shatters and is destroyed when reduced to 0 hit points.
@@ -2641,7 +2641,7 @@ effects, inhaled poisons, and the breath weapons of some dragons).
 
 This necklace has 1d6 + 3 beads hanging from it. You can use an action
 to detach a bead and throw it up to 60 feet away. When it reaches the
-end of its trajectory, the bead detonates as a 3rd-­‐‑level *fireball*
+end of its trajectory, the bead detonates as a 3rd-­level *fireball*
 spell (save DC 15).
 
 You can hurl multiple beads, or even the whole necklace, as one action.
@@ -2753,7 +2753,7 @@ Applying the oil takes 10 minutes. The affected creature then gains the
 effect of a *freedom of movement* spell for 8 hours.
 
 Alternatively, the oil can be poured on the ground as an action, where
-it covers a 10-­‐‑foot square, duplicating the effect of the *grease*
+it covers a 10-­foot square, duplicating the effect of the *grease*
 spell in that area for 8 hours.
 
 #### Pearl of Power
@@ -2780,7 +2780,7 @@ are suppressed you while you wear the pendant.
 
 > *Wondrous item, rare*
 
-This delicate silver chain has a brilliant-­‐‑cut black gem pendant.
+This delicate silver chain has a brilliant-­cut black gem pendant.
 While you wear it, poisons have no effect on you. You are immune to the
 poisoned condition and have immunity to poison damage.
 
@@ -2799,8 +2799,8 @@ hit points, double the number of hit points it restores.
 The next time you see a creature within 10 minutes after drinking this
 philter, you become charmed by that creature for 1 hour. If the creature
 is of a species and gender you are normally attracted to, you regard it
-as your true love while you are charmed. This potion’s rose-­‐‑hued,
-effervescent liquid contains one easy-­‐‑to-­‐‑miss bubble shaped like a
+as your true love while you are charmed. This potion’s rose-­hued,
+effervescent liquid contains one easy-­to-­miss bubble shaped like a
 heart.
 
 #### Pipes of Haunting
@@ -2895,7 +2895,7 @@ where the one item was placed inside the other. Any creature within 10
 feet of the gate is sucked through
 
 it and deposited in a random location on the Astral Plane. The gate then
-closes. The gate is one-­‐‑way only and can’t be reopened.
+closes. The gate is one-­way only and can’t be reopened.
 
 #### Potion of Animal Friendship
 
@@ -3077,7 +3077,7 @@ streaked with black and swirls on its own.
 > *Potion, uncommon*
 
 You can breathe underwater for 1 hour after drinking this potion. Its
-cloudy green fluid smells of the sea and has a jellyfish-­‐‑like bubble
+cloudy green fluid smells of the sea and has a jellyfish-­like bubble
 floating in it.
 
 #### Restorative Ointment
@@ -3325,12 +3325,12 @@ regains 1d6 expended charges daily at dawn.
 > *faerie fire* from the ring.
 
 ***Ball Lightning.*** You can expend 2 charges as an action to create
-one to four 3-­‐‑foot-­‐‑diameter spheres of lightning. The more spheres
+one to four 3-­foot-­diameter spheres of lightning. The more spheres
 you create, the less powerful each sphere is individually.
 
 Each sphere appears in an unoccupied space you can see within 120 feet
 of you. The spheres last as long as you concentrate (as if concentrating
-on a spell), up to 1 minute. Each sphere sheds dim light in a 30-­‐‑foot
+on a spell), up to 1 minute. Each sphere sheds dim light in a 30-­foot
 radius.
 
 As a bonus action, you can move each sphere up to 30 feet, but no
@@ -3353,7 +3353,7 @@ based on the number of spheres you created.
 ***Shooting Stars.*** You can expend 1 to 3 charges as an action. For
 every charge you expend, you launch a glowing mote of light from the
 ring at a point you can see within 60 feet of you. Each creature within
-a 15-­‐‑foot cube originating from that point is showered in sparks and
+a 15-­foot cube originating from that point is showered in sparks and
 must make a DC 15 Dexterity saving throw, taking 5d4 fire damage on a
 failed save, or half as much damage on a successful one.
 
@@ -3493,7 +3493,7 @@ This robe has 3 charges, and it regains 1d3 expended charges daily at
 dawn. While you wear it, you can use an action and expend 1 charge to
 cause the garment to display a shifting pattern of dazzling hues until
 the end of your next turn. During this time, the robe sheds bright light
-in a 30-­‐‑foot radius and dim light for an additional 30 feet.
+in a 30-­foot radius and dim light for an additional 30 feet.
 Creatures that can see you have disadvantage on attack rolls against
 you. In addition, any creature in the bright light that can see you when
 the robe’s power is activated must succeed on a DC 15 Wisdom saving
@@ -3508,7 +3508,7 @@ stars. You gain a +1 bonus to saving throws while you wear it.
 
 Six stars, located on the robe’s upper front portion, are particularly
 large. While wearing this robe, you can use an action to pull off one of
-the stars and use it to cast *magic missile* as a 5th-­‐‑level spell.
+the stars and use it to cast *magic missile* as a 5th-­level spell.
 Daily at dusk, 1d6 removed stars reappear on the robe.
 
 While you wear the robe, you can use an action to enter the Astral Plane
@@ -3556,7 +3556,7 @@ the last patch is removed, the robe becomes an ordinary garment.
 
 -   Steel mirror
 
--   10-­‐‑foot pole
+-   10-­foot pole
 
 -   Hempen rope (50 feet, coiled)
 
@@ -3620,7 +3620,7 @@ in it into spell slots to cast spells you have prepared or know. You can
 create spell slots only of a level equal to or lower than your own spell
 slots, up to a maximum of 5th level. You use the stored levels in place
 of your slots, but otherwise cast the spell as normal. For example, you
-can use 3 levels stored in the rod as a 3rd-­‐‑level spell slot.
+can use 3 levels stored in the rod as a 3rd-­level spell slot.
 
 A newly found rod has 1d10 levels of spell energy stored in it already.
 A rod that can no longer absorb spell energy and has no energy remaining
@@ -3643,7 +3643,7 @@ of the following spells from it:
 
 ***Protective Aura.*** As an action, you can plant the haft end of the
 rod in the ground, whereupon the rod’s head sheds bright light in a
-60-­‐‑foot radius and dim light for an additional 60 feet. While in that
+60-­foot radius and dim light for an additional 60 feet. While in that
 bright light, you and any creature that is friendly to you gain a +1
 bonus to AC and saving throws and can sense the location of any
 invisible hostile creature that is also in the bright light.
@@ -3674,14 +3674,14 @@ flanged head.
 
 > If you press **button 2**, the rod’s flanged head folds
 
-down and two crescent-­‐‑shaped blades spring out, transforming the rod
+down and two crescent-­shaped blades spring out, transforming the rod
 into a magic battleaxe that grants a +3 bonus to attack and damage rolls
 made with it.
 
 > If you press **button 3**, the rod’s flanged head folds
 
 down, a spear point springs from the rod’s tip, and the rod’s handle
-lengthens into a 6-­‐‑foot haft, transforming the rod into a magic spear
+lengthens into a 6-­foot haft, transforming the rod into a magic spear
 that grants a
 
 +3 bonus to attack and damage rolls made with it.
@@ -3769,7 +3769,7 @@ until ten days have passed.
 
 > *Wondrous item, uncommon*
 
-This 60-­‐‑foot length of silk rope weighs 3 pounds and can hold up to
+This 60-­foot length of silk rope weighs 3 pounds and can hold up to
 3,000 pounds. If you hold one end of the rope and use an action to speak
 the command word, the rope animates. As a bonus action, you can command
 the other end to move toward a destination you choose. That end moves 10
@@ -3779,8 +3779,8 @@ until you tell it to stop. You can also tell the rope to fasten itself
 securely to an object or to unfasten itself, to knot or unknot itself,
 or to coil itself for carrying.
 
-If you tell the rope to knot, large knots appear at 1-­‐‑ foot intervals
-along the rope. While knotted, the rope shortens to a 50-­‐‑foot length
+If you tell the rope to knot, large knots appear at 1-­ foot intervals
+along the rope. While knotted, the rope shortens to a 50-­foot length
 and grants advantage on checks made to climb it.
 
 The rope has AC 20 and 20 hit points. It regains 1 hit point every 5
@@ -3810,7 +3810,7 @@ hit points, it is destroyed.
 
 > *Wondrous item, legendary (requires attunement)*
 
-If you hold this beetle-­‐‑shaped medallion in your hand for 1 round, an
+If you hold this beetle-­shaped medallion in your hand for 1 round, an
 inscription appears on its surface revealing its magical nature. It
 provides two benefits while it is on your person:
 
@@ -3866,12 +3866,12 @@ surface, such as one covered by ice or oil.
 
 > *Wondrous item, legendary*
 
-This viscous, milky-­‐‑white substance can form a permanent adhesive
+This viscous, milky-­white substance can form a permanent adhesive
 bond between any two objects. It must be stored in a jar or flask that
 has been coated inside with *oil of slipperiness.* When found, a
 container contains 1d6 + 1 ounces.
 
-One ounce of the glue can cover a 1-­‐‑foot square surface. The glue
+One ounce of the glue can cover a 1-­foot square surface. The glue
 takes 1 minute to set. Once it has done so, the bond it creates can be
 broken only by the application of *universal solvent* or *oil of
 etherealness*, or with a *wish* spell.
@@ -3947,7 +3947,7 @@ Spell Scroll table.
 
 > *Wondrous item, legendary*
 >
-> This 2-­‐‑foot-­‐‑diameter black sphere is a hole in the multiverse,
+> This 2-­foot-­diameter black sphere is a hole in the multiverse,
 > hovering in space and stabilized by a magical field surrounding it.
 >
 > The sphere obliterates all matter it passes through and all matter
@@ -4075,16 +4075,16 @@ you can expend 1 charge to deal an extra 1d6 force damage to the target.
 > ***Spells.*** While holding this staff, you can use an action to
 > expend 1 or more of its charges to cast one of the following spells
 > from it, using your spell save DC and spell attack bonus: *cone of
-> cold* (5 charges), *fireball* (5th-­‐‑level version, 5 charges),
+> cold* (5 charges), *fireball* (5th-­level version, 5 charges),
 > *globe of invulnerability* (6 charges), *hold monster* (5 charges),
-> *levitate* (2 charges), *lightning bolt* (5th-­‐‑level version, 5
+> *levitate* (2 charges), *lightning bolt* (5th-­level version, 5
 > charges), *magic missile* (1 charge), *ray of enfeeblement* (1
 > charge), or *wall of force* (5 charges).
 
 ***Retributive Strike.*** You can use an action to break the staff over
 your knee or against a solid surface, performing a retributive strike.
 The staff is destroyed and releases its remaining magic in an explosion
-that expands to fill a 30-­‐‑foot-­‐‑radius sphere centered on it.
+that expands to fill a 30-­foot-­radius sphere centered on it.
 
 You have a 50 percent chance to instantly travel to a random plane of
 existence, avoiding the explosion. If you fail to avoid the effect, you
@@ -4129,7 +4129,7 @@ charges).
 
 ***Insect Cloud.*** While holding the staff, you can use an action and
 expend 1 charge to cause a swarm of harmless flying insects to spread
-out in a 30-­‐‑foot radius from you. The insects remain for 10 minutes,
+out in a 30-­foot radius from you. The insects remain for 10 minutes,
 making the area heavily obscured for creatures other than you. The swarm
 moves with you, remaining centered on you. A wind of at least 10 miles
 per hour disperses the swarm and ends the effect.
@@ -4159,10 +4159,10 @@ below).
 > ***Spells.*** While holding the staff, you can use an action to expend
 > some of its charges to cast one of the following spells from it, using
 > your spell save DC and spellcasting ability: *conjure elemental* (7
-> charges), *dispel magic* (3 charges), *fireball* (7th-­‐‑level
+> charges), *dispel magic* (3 charges), *fireball* (7th-­level
 > version, 7 charges), *flaming sphere* (2 charges), *ice storm* (4
 > charges), *invisibility* (2 charges), *knock* (2 charges), *lightning
-> bolt* (7th-­‐‑level version, 7 charges), *passwall* (5 charges),
+> bolt* (7th-­level version, 7 charges), *passwall* (5 charges),
 > *plane shift* (7 charges), *telekinesis* (5 charges), *wall of fire*
 > (4 charges), or *web* (2 charges).
 >
@@ -4174,7 +4174,7 @@ below).
 ***Retributive Strike.*** You can use an action to break the staff over
 your knee or against a solid surface, performing a retributive strike.
 The staff is destroyed and releases its remaining magic in an explosion
-that expands to fill a 30-­‐‑foot-­‐‑radius sphere centered on it.
+that expands to fill a 30-­foot-­radius sphere centered on it.
 
 > You have a 50 percent chance to instantly travel to
 
@@ -4239,8 +4239,8 @@ action to plant one end
 
 of the staff in fertile earth and expend 1 charge to transform the staff
 into a healthy tree. The tree is 60 feet tall and has a
-5-­‐‑foot-­‐‑diameter trunk, and its branches at the top spread out in a
-20-­‐‑foot radius.
+5-­foot-­diameter trunk, and its branches at the top spread out in a
+20-­foot radius.
 
 The tree appears ordinary but radiates a faint aura of transmutation
 magic if targeted by *detect magic*. While touching the tree and using
@@ -4327,7 +4327,7 @@ made with this weapon, which deals radiant damage instead of slashing
 damage. When you hit an undead with it, that target takes an extra 1d8
 radiant damage.
 
-The sword’s luminous blade emits bright light in a 15-­‐‑foot radius and
+The sword’s luminous blade emits bright light in a 15-­foot radius and
 dim light for an additional 15 feet. The light is sunlight. While the
 blade persists, you can use an action to expand or reduce its radius of
 bright and dim light by 5 feet each, to a maximum of 30 feet each or a
@@ -4357,7 +4357,7 @@ effect of such loss determined by the GM. If the creature has no limb to
 sever, you lop off a portion of its body instead.
 
 In addition, you can speak the sword’s command word to cause the blade
-to shed bright light in a 10-­‐‑ foot radius and dim light for an
+to shed bright light in a 10-­ foot radius and dim light for an
 additional 10 feet. Speaking the command word again or sheathing the
 sword puts out the light.
 
@@ -4437,7 +4437,7 @@ is of good alignment, a flaming fissure opens under it. The target must
 succeed on a DC 20 Dexterity saving throw or fall into the fissure and
 be destroyed, leaving no remains. The fissure then closes, leaving no
 trace of its existence. When you expend the last charge, the talisman
-dissolves into foul-­‐‑smelling slime and is destroyed.
+dissolves into foul-­smelling slime and is destroyed.
 
 #### Tome of Clear Thought
 
@@ -4560,7 +4560,7 @@ charge and command another creature to flee or grovel, as with the
 *command* spell (save DC 15).
 
 ***Cone of Fear.*** While holding the wand, you can use an action to
-expend 2 charges, causing the wand’s tip to emit a 60-­‐‑foot cone of
+expend 2 charges, causing the wand’s tip to emit a 60-­foot cone of
 amber light. Each creature in the cone must succeed on a DC 15 Wisdom
 saving throw or become frightened of you for 1 minute. While it is
 frightened in this way, a creature must spend its turns trying to move
@@ -4577,7 +4577,7 @@ repeat the saving throw, ending the effect on itself on a success.
 
 This wand has 7 charges. While holding it, you can use an action to
 expend 1 or more of its charges to cast the *fireball* spell (save DC
-15) from it. For 1 charge, you cast the 3rd-­‐‑level version of the
+15) from it. For 1 charge, you cast the 3rd-­level version of the
 spell. You can increase the spell slot level by one for each additional
 charge you expend.
 
@@ -4591,7 +4591,7 @@ and is destroyed.
 
 This wand has 7 charges. While holding it, you can use an action to
 expend 1 or more of its charges to cast the *lightning bolt* spell (save
-DC 15) from it. For 1 charge, you cast the 3rd-­‐‑level version of the
+DC 15) from it. For 1 charge, you cast the 3rd-­level version of the
 spell. You can increase the spell slot level by one for each additional
 charge you expend.
 
@@ -4614,7 +4614,7 @@ expended charges daily at dawn.
 
 This wand has 7 charges. While holding it, you can use an action to
 expend 1 or more of its charges to cast the *magic missile* spell from
-it. For 1 charge, you cast the 1st-­‐‑level version of the spell. You
+it. For 1 charge, you cast the 1st-­level version of the spell. You
 can increase the spell slot level by one for each additional charge you
 expend.
 
@@ -4801,7 +4801,7 @@ This fine black cloth, soft as silk, is folded up to the dimensions of a
 handkerchief. It unfolds into a circular sheet 6 feet in diameter.
 
 You can use an action to unfold and place the *well of many worlds* on a
-solid surface, whereupon it creates a two-­‐‑way portal to another world
+solid surface, whereupon it creates a two-­way portal to another world
 or plane of existence. Each time the item opens a portal, the GM decides
 where it leads. You can use an action to close an open portal by taking
 hold of the edges of the cloth and folding it up. Once *well of many
@@ -4846,7 +4846,7 @@ can’t use them again for 1d12 hours.
 
 Some magic items possess sentience and personality. Such an item might
 be possessed, haunted by the spirit of a previous owner, or
-self-­‐‑aware thanks to the magic used to create it. In any case, the
+self-­aware thanks to the magic used to create it. In any case, the
 item behaves like a character, complete with personality quirks, ideals,
 bonds, and sometimes flaws. A sentient item might be a cherished ally to
 its wielder or a continual thorn in the side.
@@ -5067,7 +5067,7 @@ daily at dawn. If you control the
 orb, you can use an action and expend 1 or more charges to cast one of
 the following spells (save DC
 
-> 18\) from it: *cure wounds* (5th-­‐‑level version, 3 charges), *daylight*
+> 18\) from it: *cure wounds* (5th-­level version, 3 charges), *daylight*
 > (1 charge), *death ward* (2 charges), or *scrying* (3 charges).
 >
 > You can also use an action to cast the *detect magic*

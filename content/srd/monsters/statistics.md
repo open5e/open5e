@@ -130,8 +130,8 @@ bugbears), orcs, gnolls, lizardfolk, and kobolds.
 sense—frightening creatures that are not ordinary, not truly natural,
 and almost never benign. Some are the results of magical experimentation
 gone awry (such as owlbears), and others are the product of terrible
-curses (including minotaurs and yuan-­‐‑ti). They defy categorization,
-and in some sense serve as a catch-­‐‑all category for creatures that
+curses (including minotaurs and yuan-­ti). They defy categorization,
+and in some sense serve as a catch-­all category for creatures that
 don’t fit into any other type.
 
 > **Oozes** are gelatinous creatures that rarely have a
@@ -148,7 +148,7 @@ The quintessential plants are the shambling mound and the treant. Fungal
 creatures such as the gas spore and the myconid also fall into this
 category.
 
-> **Undead** are once-­‐‑living creatures brought to a
+> **Undead** are once-­living creatures brought to a
 
 horrifying state of undeath through the practice of necromantic magic or
 some unholy curse. Undead include walking corpses, such as vampires and
@@ -176,7 +176,7 @@ alignments.
 
 The alignment specified in a monster’s stat block is the default. Feel
 free to depart from it and change a monster’s alignment to suit the
-needs of your campaign. If you want a good-­‐‑aligned green dragon or an
+needs of your campaign. If you want a good-­aligned green dragon or an
 evil storm giant, there’s nothing stopping you.
 
 > Some creatures can have **any alignment**. In other
@@ -236,7 +236,7 @@ shown in the Hit Dice by Size table.
 >
 > All creatures have a walking speed, simply called
 >
-> the monster’s speed. Creatures that have no form of ground-­‐‑based
+> the monster’s speed. Creatures that have no form of ground-­based
 > locomotion have a walking speed of 0 feet.
 >
 > Some creatures have one or more of the following additional movement
@@ -342,7 +342,7 @@ Ability Scores
 > monster’s challenge rating (as shown in the Proficiency Bonus by
 > Challenge Rating table). Other modifiers might apply. For instance, a
 
-monster might have a larger-­‐‑than-­‐‑expected bonus (usually double
+monster might have a larger-­than-­expected bonus (usually double
 its proficiency bonus) to account for its heightened expertise.
 
 ### Vulnerabilities, Resistances, and Immunities
@@ -485,8 +485,8 @@ telepathic messages.
 >
 > A monster can cast a spell from its list at a higher level if it has
 > the spell slot to do so. For example, a drow mage with the
-> 3rd-­‐‑level *lightning bolt* spell can cast it as a 5th-­‐‑level
-> spell by using one of its 5th-­‐‑level
+> 3rd-­level *lightning bolt* spell can cast it as a 5th-­level
+> spell by using one of its 5th-­level
 >
 > greater or lesser threat than suggested by its challenge rating.
 

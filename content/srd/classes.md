@@ -40,8 +40,8 @@ granted by your background:
 
 #### The Barbarian
 
-  | Rage   
-  -------- -------- ----------------------------- ------------- ------
+  | Rage   |      |    
+  -------- -------- -----------------------------
   | 12th   | +4     | Ability Score Improvement
   | 13th   | +5     | Brutal Critical (2 dice)
   | 14th   | +5     | Path feature
@@ -1177,18 +1177,17 @@ As a fighter, you gain the following class features.
 
 #### Proficiencies
 
-> **Armor:** All armor, shields
+**Armor:** All armor, shields
 
-> **Weapons:** Simple weapons, martial weapons
+**Weapons:** Simple weapons, martial weapons
 
-> **Tools:** None
+**Tools:** None
 
-> **Saving Throws:** Strength, Constitution
+**Saving Throws:** Strength, Constitution
 
-> **Skills:** Choose two skills from Acrobatics, Animal
+**Skills:** Choose two skills from Acrobatics, Animal
 
-> Handling, Athletics, History, Insight, Intimidation, Perception, and
-> Survival
+Handling, Athletics, History, Insight, Intimidation, Perception, and Survival
 
 #### Equipment
 
@@ -1206,24 +1205,21 @@ You start with the following equipment, in addition to the equipment granted by 
 
 **Proficiency**
 
-> **Fighting Style**
->
-> You adopt a particular style of fighting as your specialty. Choose one
-> of the following options. You can’t take a Fighting Style option more
-> than once, even if you later get to choose again.
+**Fighting Style**
+
+You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.
 
 #### Archery
 
-> You gain a +2 bonus to attack rolls you make with ranged weapons.
+You gain a +2 bonus to attack rolls you make with ranged weapons.
 
 #### Defense
 
-> While you are wearing armor, you gain a +1 bonus to AC.
+While you are wearing armor, you gain a +1 bonus to AC.
 
 #### Dueling
 
-> When you are wielding a melee weapon in one hand and no other weapons,
-> you gain a +2 bonus to damage rolls with that weapon.
+When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
 
 #### Great Weapon Fighting
 

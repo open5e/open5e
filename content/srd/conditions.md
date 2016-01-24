@@ -60,7 +60,7 @@ Finishing a long rest reduces a creature’s exhaustion level by 1, provided tha
 
 -   The condition ends if the grappler is incapacitated (see the condition).
 
--   The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the *thunder-­‐‑wave* spell.
+-   The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the *thunder-­wave* spell.
 
 #### Incapacitated
 

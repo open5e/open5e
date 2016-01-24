@@ -39,7 +39,7 @@ half of the character’s total number of them (minimum of one die). For
 example, if a character has eight Hit Dice, he or she can regain four
 spent Hit Dice upon finishing a long rest.
 
-A character can’t benefit from more than one long rest in a 24-­‐‑hour
+A character can’t benefit from more than one long rest in a 24-­hour
 period, and a character must have at least 1 hit point at the start of
 the rest to gain its benefits.
 
@@ -48,7 +48,7 @@ ancient evils, adventurers need time to rest,
 
 recuperate, and prepare for their next adventure. Many adventurers also
 use this time to perform other tasks, such as crafting arms and armor,
-performing research, or spending their hard-­‐‑earned gold.
+performing research, or spending their hard-­earned gold.
 
 > In some cases, the passage of time is something
 
@@ -99,7 +99,7 @@ For every day of downtime you spend crafting, you can craft one or more
 items with a total market value not exceeding 5 gp, and you must expend
 raw materials worth half the total market value. If something you want
 to craft has a market value greater than 5 gp, you make progress every
-day in 5-­‐‑ gp increments until you reach the market value of the item.
+day in 5-­ gp increments until you reach the market value of the item.
 For example, a suit of plate armor (market value 1,500 gp) takes 300
 days to craft by yourself.
 

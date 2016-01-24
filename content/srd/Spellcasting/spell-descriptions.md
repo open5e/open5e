@@ -3,7 +3,7 @@ Spell Descriptions
 
 #### Acid Arrow
 
-> *2nd-­‐‑level evocation*
+> *2nd-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -41,7 +41,7 @@ This spell’s damage increases by 1d6 when you reach 5th level (2d6),
 
 #### Aid
 
-> *2nd-­‐‑level abjuration*
+> *2nd-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -62,7 +62,7 @@ increase by an additional 5 for each slot level above 2nd.
 
 #### Alarm
 
-> *1st-­‐‑level abjuration (ritual)*
+> *1st-­level abjuration (ritual)*
 >
 > **Casting Time:** 1 minute
 >
@@ -75,7 +75,7 @@ increase by an additional 5 for each slot level above 2nd.
 > **Duration:** 8 hours
 
 You set an alarm against unwanted intrusion. Choose a door, a window, or
-an area within range that is no larger than a 20-­‐‑foot cube. Until the
+an area within range that is no larger than a 20-­foot cube. Until the
 spell ends, an alarm alerts you whenever a Tiny or larger creature
 touches or enters the warded area. When you cast the spell, you can
 designate creatures that won’t set off the alarm. You also choose
@@ -89,7 +89,7 @@ An audible alarm produces the sound of a hand bell for 10 seconds within
 
 #### Alter Self
 
-> *2nd-­‐‑level transmutation*
+> *2nd-­level transmutation*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V, S
 >
@@ -126,7 +126,7 @@ attack and damage rolls you make using it.
 
 #### Animal Messenger
 
-> *2nd-­‐‑level enchantment (ritual)*
+> *2nd-­level enchantment (ritual)*
 >
 > **Casting Time:** 1 action
 >
@@ -140,8 +140,8 @@ By means of this spell, you use an animal to deliver a message. Choose a
 Tiny beast you can see within range, such as a squirrel, a blue jay, or
 a bat. You specify a location, which you must have visited, and a
 recipient who matches a general description, such as “a man or woman
-dressed in the uniform of the town guard” or “a red-­‐‑haired dwarf
-wearing a pointed hat.” You also speak a message of up to twenty-­‐‑five
+dressed in the uniform of the town guard” or “a red-­haired dwarf
+wearing a pointed hat.” You also speak a message of up to twenty-­five
 words. The target beast travels for the duration of the spell toward the
 specified location, covering about 50 miles per 24 hours for a flying
 messenger, or 25 miles for other animals.
@@ -159,7 +159,7 @@ each slot level above 2nd.
 
 #### Animal Shapes
 
-> *8th-­‐‑level transmutation*
+> *8th-­level transmutation*
 >
 > **Casting Time:** 1 action **Range:** 30 feet **Components:** V, S
 >
@@ -190,7 +190,7 @@ wield, or otherwise benefit from any of its equipment.
 
 #### Animate Dead
 
-> *3rd-­‐‑level necromancy*
+> *3rd-­level necromancy*
 >
 > **Casting Time:** 1 minute
 >
@@ -222,7 +222,7 @@ obeying any command you’ve given it. To maintain control of the creature
 for
 
 > another 24 hours, you must cast this spell on the creature again
-> before the current 24-­‐‑hour period ends. This use of the spell
+> before the current 24-­hour period ends. This use of the spell
 > reasserts your control over up to four creatures you have animated
 > with this spell, rather than animating a new one.
 >
@@ -233,7 +233,7 @@ for
 
 #### Animate Objects
 
-> *5th-­‐‑level transmutation*
+> *5th-­level transmutation*
 >
 > **Casting Time:** 1 action **Range:** 120 feet **Components:** V, S
 >
@@ -302,14 +302,14 @@ for
 
 #### Antilife Shell
 
-> *5th-­‐‑level abjuration*
+> *5th-­level abjuration*
 >
-> **Casting Time:** 1 action **Range:** Self (10-­‐‑foot radius)
+> **Casting Time:** 1 action **Range:** Self (10-­foot radius)
 > **Components:** V, S
 >
 > **Duration:** Concentration, up to 1 hour
 >
-> A shimmering barrier extends out from you in a 10-­‐‑ foot radius and
+> A shimmering barrier extends out from you in a 10-­ foot radius and
 > moves with you, remaining centered on you and hedging out creatures
 > other than undead and constructs. The barrier lasts for the duration.
 >
@@ -322,17 +322,17 @@ for
 
 #### Antimagic Field
 
-> *8th-­‐‑level abjuration*
+> *8th-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
-> **Range:** Self (10-­‐‑foot-­‐‑radius sphere)
+> **Range:** Self (10-­foot-­radius sphere)
 >
 > **Components:** V, S, M (a pinch of powdered iron or iron filings)
 >
 > **Duration:** Concentration, up to 1 hour
 >
-> A 10-­‐‑foot-­‐‑radius invisible sphere of antimagic surrounds you.
+> A 10-­foot-­radius invisible sphere of antimagic surrounds you.
 > This area is divorced from the magical energy that suffuses the
 > multiverse. Within the sphere, spells can’t be cast, summoned
 > creatures disappear, and even magic items become mundane. Until the
@@ -392,7 +392,7 @@ within the sphere.
 #### \
 Antipathy/Sympathy
 
-> *8th-­‐‑level enchantment*
+> *8th-­level enchantment*
 >
 > **Casting Time:** 1 hour
 >
@@ -405,7 +405,7 @@ Antipathy/Sympathy
 
 This spell attracts or repels creatures of your choice. You target
 something within range, either a Huge or smaller object or creature or
-an area that is no larger than a 200-­‐‑foot cube. Then specify a kind
+an area that is no larger than a 200-­foot cube. Then specify a kind
 of intelligent creature, such as red dragons, goblins, or vampires. You
 invest the target with an aura that either attracts or repels the
 specified creatures for the duration. Choose antipathy or sympathy as
@@ -449,7 +449,7 @@ for 1 minute, after which time it can be affected again.
 
 #### Arcane Eye
 
-> *4th-­‐‑level divination*
+> *4th-­level divination*
 >
 > **Casting Time:** 1 action
 >
@@ -474,7 +474,7 @@ diameter.
 
 #### Arcane Hand
 
-> *5th-­‐‑level evocation*
+> *5th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -538,7 +538,7 @@ slot level above 5th.
 
 #### Arcane Lock
 
-> *2nd-­‐‑level abjuration*
+> *2nd-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -562,7 +562,7 @@ force open; the DC to break it or pick any locks on it increases by 10.
 
 #### Arcane Sword
 
-> *7th-­‐‑level evocation*
+> *7th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -573,7 +573,7 @@ force open; the DC to break it or pick any locks on it increases by 10.
 >
 > **Duration:** Concentration, up to 1 minute
 
-You create a sword-­‐‑shaped plane of force that hovers within range. It
+You create a sword-­shaped plane of force that hovers within range. It
 lasts for the duration.
 
 When the sword appears, you make a melee spell attack against a target
@@ -584,7 +584,7 @@ and repeat this attack against the same target or a different one.
 
 #### Arcanist’s Magic Aura
 
-> *2nd-­‐‑level illusion*
+> *2nd-­level illusion*
 >
 > **Casting Time:** 1 action
 >
@@ -621,7 +621,7 @@ that type or of that alignment.
 #### \
 Astral Projection
 
-> *9th-­‐‑level necromancy*
+> *9th-­level necromancy*
 >
 > **Casting Time:** 1 hour
 >
@@ -653,7 +653,7 @@ Your astral form can freely travel through the Astral Plane and can pass
 through portals there leading to any other plane. If you enter a new
 plane or return to the plane you were on when casting this spell, your
 body and possessions are transported along the silver cord, allowing you
-to re-­‐‑enter your body as you enter the new plane. Your astral form is
+to re-­enter your body as you enter the new plane. Your astral form is
 a separate incarnation. Any damage or other effects that apply to it
 have no effect on your physical body, nor do they persist when you
 return to it.
@@ -679,7 +679,7 @@ hit points.
 
 #### Augury
 
-> *2nd-­‐‑level divination (ritual)*
+> *2nd-­level divination (ritual)*
 >
 > **Casting Time:** 1 minute
 >
@@ -691,7 +691,7 @@ hit points.
 >
 > **Duration:** Instantaneous
 
-By casting gem-­‐‑inlaid sticks, rolling dragon bones, laying out ornate
+By casting gem-­inlaid sticks, rolling dragon bones, laying out ornate
 cards, or employing some other divining tool, you receive an omen from
 an otherworldly entity about the results of a specific course of action
 that you plan to take within the next 30 minutes. The GM chooses from
@@ -715,7 +715,7 @@ first that you get a random reading. The GM makes this roll in secret.
 
 #### Awaken
 
-> *5th-­‐‑level transmutation*
+> *5th-­level transmutation*
 >
 > **Casting Time:** 8 hours
 >
@@ -745,7 +745,7 @@ based on how you treated it while it was charmed.
 
 #### Bane
 
-> *1st-­‐‑level enchantment*
+> *1st-­level enchantment*
 >
 > **Casting Time:** 1 action
 >
@@ -767,7 +767,7 @@ slot level above 1st.
 
 #### Banishment
 
-> *4th-­‐‑level abjuration*
+> *4th-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -804,7 +804,7 @@ slot level above 4th.
 
 #### Barkskin
 
-> *2nd-­‐‑level transmutation*
+> *2nd-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -815,12 +815,12 @@ slot level above 4th.
 > **Duration:** Concentration, up to 1 hour
 
 You touch a willing creature. Until the spell ends, the target’s skin
-has a rough, bark-­‐‑like appearance, and the target’s AC can’t be less
+has a rough, bark-­like appearance, and the target’s AC can’t be less
 than 16, regardless of what kind of armor it is wearing.
 
 #### Beacon of Hope
 
-> *3rd-­‐‑level abjuration*
+> *3rd-­level abjuration*
 >
 > **Casting Time:** 1 action **Range:** 30 feet **Components:** V, S
 >
@@ -833,7 +833,7 @@ hit points possible from any healing.
 
 #### Bestow Curse
 
-> *3rd-­‐‑level necromancy*
+> *3rd-­level necromancy*
 >
 > **Casting Time:** 1 action **Range:** Touch **Components:** V, S
 >
@@ -871,7 +871,7 @@ require concentration.
 
 #### Black Tentacles
 
-> *4th-­‐‑level conjuration*
+> *4th-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -882,7 +882,7 @@ require concentration.
 >
 > **Duration:** Concentration, up to 1 minute
 
-Squirming, ebony tentacles fill a 20-­‐‑foot square on ground that you
+Squirming, ebony tentacles fill a 20-­foot square on ground that you
 can see within range. For the duration, these tentacles turn the ground
 in the area into difficult terrain.
 
@@ -899,19 +899,19 @@ spell save DC. On a success, it frees itself.
 
 #### Blade Barrier
 
-> *6th-­‐‑level evocation*
+> *6th-­level evocation*
 >
 > **Casting Time:** 1 action **Range:** 90 feet **Components:** V, S
 >
 > **Duration:** Concentration, up to 10 minutes
 
-You create a vertical wall of whirling, razor-­‐‑sharp blades made of
+You create a vertical wall of whirling, razor-­sharp blades made of
 magical energy. The wall appears within range and lasts for the
 duration. You can make a straight wall up to 100 feet long, 20 feet
 high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20
 feet high, and 5 feet thick. The wall
 
-provides three-­‐‑quarters cover to creatures behind it, and its space
+provides three-­quarters cover to creatures behind it, and its space
 is difficult terrain.
 
 When a creature enters the wall’s area for the first time on a turn or
@@ -921,7 +921,7 @@ successful save, the creature takes half as much damage.
 
 #### Bless
 
-> *1st-­‐‑level enchantment*
+> *1st-­level enchantment*
 >
 > **Casting Time:** 1 action
 >
@@ -943,7 +943,7 @@ creature for each slot level above 1st.
 
 #### Blight
 
-> *4th-­‐‑level necromancy*
+> *4th-­level necromancy*
 >
 > **Casting Time:** 1 action **Range:** 30 feet **Components:** V, S
 > **Duration:** Instantaneous
@@ -967,7 +967,7 @@ slot level above 4th.
 
 #### Blindness/Deafness
 
-> *2nd-­‐‑level necromancy*
+> *2nd-­level necromancy*
 >
 > **Casting Time:** 1 action
 >
@@ -990,7 +990,7 @@ slot level above 2nd.
 
 #### Blink
 
-> *3rd-­‐‑level transmutation*
+> *3rd-­level transmutation*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V, S
 > **Duration:** 1 minute
@@ -1015,7 +1015,7 @@ ability to do so.
 
 #### Blur
 
-> *2nd-­‐‑level illusion*
+> *2nd-­level illusion*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V
 >
@@ -1030,14 +1030,14 @@ truesight.
 
 #### Burning Hands
 
-> *1st-­‐‑level evocation*
+> *1st-­level evocation*
 >
-> **Casting Time:** 1 action **Range:** Self (15-­‐‑foot cone)
+> **Casting Time:** 1 action **Range:** Self (15-­foot cone)
 > **Components:** V, S **Duration:** Instantaneous
 
 As you hold your hands with thumbs touching and fingers spread, a thin
 sheet of flames shoots forth from your outstretched fingertips. Each
-creature in a 15-­‐‑foot cone must make a Dexterity saving throw. A
+creature in a 15-­foot cone must make a Dexterity saving throw. A
 creature takes 3d6 fire damage on a failed save, or half as much damage
 on a successful one.
 
@@ -1050,14 +1050,14 @@ above 1st.
 
 #### Call Lightning
 
-> *3rd-­‐‑level conjuration*
+> *3rd-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** 120 feet **Components:** V, S
 >
 > **Duration:** Concentration, up to 10 minutes
 
 A storm cloud appears in the shape of a cylinder that is 10 feet tall
-with a 60-­‐‑foot radius, centered on a point you can see 100 feet
+with a 60-­foot radius, centered on a point you can see 100 feet
 directly above you. The spell fails if you can’t see a point in the air
 where the storm cloud could appear (for example, if you are in a room
 that can’t accommodate the cloud).
@@ -1081,14 +1081,14 @@ above 3rd.
 #### \
 Calm Emotions
 
-> *2nd-­‐‑level enchantment*
+> *2nd-­level enchantment*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 >
 > **Duration:** Concentration, up to 1 minute
 
 You attempt to suppress strong emotions in a group of people. Each
-humanoid in a 20-­‐‑foot-­‐‑radius sphere centered on a point you choose
+humanoid in a 20-­foot-­radius sphere centered on a point you choose
 within range must make a Charisma saving throw; a creature can choose to
 fail this saving throw if it wishes. If a creature fails its saving
 throw, choose one of the following two effects.
@@ -1105,7 +1105,7 @@ unless the GM rules otherwise.
 
 #### Chain Lightning
 
-> *6th-­‐‑level evocation*
+> *6th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -1132,7 +1132,7 @@ another target for each slot level above 6th.
 
 #### Charm Person
 
-> *1st-­‐‑level enchantment*
+> *1st-­level enchantment*
 >
 > **Casting Time:** 1 action
 >
@@ -1173,7 +1173,7 @@ reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
 #### Circle of Death
 
-> *6th-­‐‑level necromancy*
+> *6th-­level necromancy*
 >
 > **Casting Time:** 1 action
 >
@@ -1184,7 +1184,7 @@ reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 >
 > **Duration:** Instantaneous
 
-A sphere of negative energy ripples out in a 60-­‐‑foot-­‐‑ radius
+A sphere of negative energy ripples out in a 60-­foot-­ radius
 sphere from a point within range. Each creature in that area must make a
 Constitution saving throw. A target takes 8d6 necrotic damage on a
 failed save, or half as much damage on a successful one.
@@ -1195,7 +1195,7 @@ above 6th.
 
 #### Clairvoyance
 
-> *3rd-­‐‑level divination*
+> *3rd-­level divination*
 >
 > **Casting Time:** 10 minutes
 >
@@ -1222,7 +1222,7 @@ the size of your fist.
 
 #### Clone
 
-> *8th-­‐‑level necromancy*
+> *8th-­level necromancy*
 >
 > **Casting Time:** 1 hour
 >
@@ -1232,7 +1232,7 @@ the size of your fist.
 > least 1 cubic inch of flesh of the creature that is to be cloned,
 > which the spell consumes, and a vessel worth at least 2,000 gp that
 > has a sealable lid and is large enough to hold a Medium creature, such
-> as a huge urn, coffin, mud-­‐‑ filled cyst in the ground, or crystal
+> as a huge urn, coffin, mud-­ filled cyst in the ground, or crystal
 > container filled with salt water)
 >
 > **Duration:** Instantaneous
@@ -1255,13 +1255,13 @@ creature’s soul is elsewhere.
 
 #### Cloudkill
 
-> *5th-­‐‑level conjuration*
+> *5th-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** 120 feet **Components:** V, S
 >
 > **Duration:** Concentration, up to 10 minutes
 
-You create a 20-­‐‑foot-­‐‑radius sphere of poisonous, yellow-­‐‑green
+You create a 20-­foot-­radius sphere of poisonous, yellow-­green
 fog centered on a point you choose within range. The fog spreads around
 corners. It lasts for the duration or until strong wind disperses the
 fog, ending the spell. Its area is heavily obscured.
@@ -1282,11 +1282,11 @@ above 5th.
 
 #### Color Spray
 
-> *1st-­‐‑level illusion*
+> *1st-­level illusion*
 >
 > **Casting Time:** 1 action
 >
-> **Range:** Self (15-­‐‑foot cone)
+> **Range:** Self (15-­foot cone)
 >
 > **Components:** V, S, M (a pinch of powder or sand that is colored
 > red, yellow, and blue)
@@ -1295,7 +1295,7 @@ above 5th.
 
 A dazzling array of flashing, colored light springs from your hand. Roll
 6d10; the total is how many hit points of creatures this spell can
-effect. Creatures in a 15-­‐‑foot cone originating from you are affected
+effect. Creatures in a 15-­foot cone originating from you are affected
 in ascending order of their current hit points (ignoring unconscious
 creatures and creatures that can’t see).
 
@@ -1313,12 +1313,12 @@ be affected.
 
 #### Command
 
-> *1st-­‐‑level enchantment*
+> *1st-­level enchantment*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V
 > **Duration:** 1 round
 
-You speak a one-­‐‑word command to a creature you can see within range.
+You speak a one-­word command to a creature you can see within range.
 The target must succeed on a Wisdom saving throw or follow the command
 on its next turn. The spell has no effect if the target is undead, if it
 doesn’t understand your language, or if your command is directly harmful
@@ -1354,7 +1354,7 @@ when you target them.
 
 #### Commune
 
-> *5th-­‐‑level divination (ritual)*
+> *5th-­level divination (ritual)*
 >
 > **Casting Time:** 1 minute
 >
@@ -1372,7 +1372,7 @@ before the spell ends. You receive a correct answer for each question.
 
 you might receive “unclear” as an answer if a question pertains to
 information that lies beyond the deity’s knowledge. In a case where a
-one-­‐‑word answer could be misleading or contrary to the deity’s
+one-­word answer could be misleading or contrary to the deity’s
 interests, the GM might offer a short phrase as an answer instead.
 
 If you cast the spell two or more times before finishing your next long
@@ -1381,7 +1381,7 @@ first that you get no answer. The GM makes this roll in secret.
 
 #### Commune with Nature
 
-> *5th-­‐‑level divination (ritual)*
+> *5th-­level divination (ritual)*
 >
 > **Casting Time:** 1 minute **Range:** Self **Components:** V, S
 > **Duration:** Instantaneous
@@ -1411,7 +1411,7 @@ location of any nearby towns.
 
 #### Comprehend Languages
 
-> *1st-­‐‑level divination (ritual)*
+> *1st-­level divination (ritual)*
 >
 > **Casting Time:** 1 action
 >
@@ -1431,18 +1431,18 @@ an arcane sigil, that isn’t part of a written language.
 
 #### Cone of Cold
 
-> *5th-­‐‑level evocation*
+> *5th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
-> **Range:** Self (60-­‐‑foot cone)
+> **Range:** Self (60-­foot cone)
 >
 > **Components:** V, S, M (a small crystal or glass cone)
 >
 > **Duration:** Instantaneous
 
 A blast of cold air erupts from your hands. Each creature in a
-60-­‐‑foot cone must make a Constitution saving throw. A creature takes
+60-­foot cone must make a Constitution saving throw. A creature takes
 8d8 cold damage on a failed save, or half as much damage on a successful
 one.
 
@@ -1454,7 +1454,7 @@ above 5th.
 
 #### Confusion
 
-> *4th-­‐‑level enchantment*
+> *4th-­level enchantment*
 >
 > **Casting Time:** 1 action
 >
@@ -1465,7 +1465,7 @@ above 5th.
 > **Duration:** Concentration, up to 1 minute
 
 This spell assaults and twists creatures’ minds, spawning delusions and
-provoking uncontrolled action. Each creature in a 10-­‐‑foot-­‐‑radius
+provoking uncontrolled action. Each creature in a 10-­foot-­radius
 sphere centered on a point you choose within range must succeed on a
 Wisdom saving throw when you cast this spell or be affected by it.
 
@@ -1499,7 +1499,7 @@ each slot level above 4th.
 
 #### Conjure Animals
 
-> *3rd-­‐‑level conjuration*
+> *3rd-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 >
@@ -1529,14 +1529,14 @@ themselves from hostile creatures, but otherwise take no actions.
 > The GM has the creatures’ statistics.
 
 ***At Higher Levels.*** When you cast this spell using certain
-higher-­‐‑level spell slots, you choose one of the summoning options
-above, and more creatures appear: twice as many with a 5th-­‐‑level
-slot, three times as many with a 7th-­‐‑level slot, and four times as
-many with a 9th-­‐‑level slot.
+higher-­level spell slots, you choose one of the summoning options
+above, and more creatures appear: twice as many with a 5th-­level
+slot, three times as many with a 7th-­level slot, and four times as
+many with a 9th-­level slot.
 
 #### Conjure Celestial
 
-> *7th-­‐‑level conjuration*
+> *7th-­level conjuration*
 >
 > **Casting Time:** 1 minute **Range:** 90 feet **Components:** V, S
 >
@@ -1556,12 +1556,12 @@ hostile creatures but otherwise takes no actions.
 
 > The GM has the celestial’s statistics.
 
-***At Higher Levels.*** When you cast this spell using a 9th-­‐‑level
+***At Higher Levels.*** When you cast this spell using a 9th-­level
 spell slot, you summon a celestial of challenge rating 5 or lower.
 
 #### Conjure Elemental
 
-> *5th-­‐‑level conjuration*
+> *5th-­level conjuration*
 >
 > **Casting Time:** 1 minute
 >
@@ -1573,7 +1573,7 @@ spell slot, you summon a celestial of challenge rating 5 or lower.
 > **Duration:** Concentration, up to 1 hour
 
 You call forth an elemental servant. Choose an area of air, earth, fire,
-or water that fills a 10-­‐‑foot cube within range. An elemental of
+or water that fills a 10-­foot cube within range. An elemental of
 challenge rating 5 or lower appropriate to the area you chose appears in
 an unoccupied space within 10 feet of it. For example, a fire elemental
 emerges from a bonfire, and an earth elemental rises up from the ground.
@@ -1600,7 +1600,7 @@ level above 5th.
 
 #### Conjure Fey
 
-> *6th-­‐‑level conjuration*
+> *6th-­level conjuration*
 >
 > **Casting Time:** 1 minute **Range:** 90 feet **Components:** V, S
 >
@@ -1633,7 +1633,7 @@ level above 6th.
 
 #### Conjure Minor Elementals
 
-> *4th-­‐‑level conjuration*
+> *4th-­level conjuration*
 >
 > **Casting Time:** 1 minute **Range:** 90 feet **Components:** V, S
 >
@@ -1664,13 +1664,13 @@ actions.
 > The GM has the creatures’ statistics.
 
 ***At Higher Levels.*** When you cast this spell using certain
-higher-­‐‑level spell slots, you choose one of the summoning options
-above, and more creatures appear: twice as many with a 6th-­‐‑level slot
-and three times as many with an 8th-­‐‑level slot.
+higher-­level spell slots, you choose one of the summoning options
+above, and more creatures appear: twice as many with a 6th-­level slot
+and three times as many with an 8th-­level slot.
 
 #### Conjure Woodland Beings
 
-> *4th-­‐‑level conjuration*
+> *4th-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -1703,18 +1703,18 @@ themselves from hostile creatures, but otherwise take no actions.
 > The GM has the creatures’ statistics.
 
 ***At Higher Levels.*** When you cast this spell using certain
-higher-­‐‑level spell slots, you choose one of the summoning options
-above, and more creatures appear: twice as many with a 6th-­‐‑level slot
-and three times as many with an 8th-­‐‑level slot.
+higher-­level spell slots, you choose one of the summoning options
+above, and more creatures appear: twice as many with a 6th-­level slot
+and three times as many with an 8th-­level slot.
 
 #### Contact Other Plane
 
-> *5th-­‐‑level divination (ritual)*
+> *5th-­level divination (ritual)*
 >
 > **Casting Time:** 1 minute **Range:** Self **Components:** V
 > **Duration:** 1 minute
 
-You mentally contact a demigod, the spirit of a long-­‐‑ dead sage, or
+You mentally contact a demigod, the spirit of a long-­ dead sage, or
 some other mysterious entity from
 
 another plane. Contacting this extraplanar intelligence can strain or
@@ -1729,12 +1729,12 @@ On a successful save, you can ask the entity up to five questions. You
 must ask your questions before the spell ends. The GM answers each
 question with one word, such as “yes,” “no,” “maybe,” “never,”
 “irrelevant,” or “unclear” (if the entity doesn’t know the answer to the
-question). If a one-­‐‑word answer would be misleading, the GM might
+question). If a one-­word answer would be misleading, the GM might
 instead offer a short phrase as an answer.
 
 #### Contagion
 
-> *5th-­‐‑level necromancy*
+> *5th-­level necromancy*
 >
 > **Casting Time:** 1 action **Range:** Touch **Component:** V, S
 > **Duration:** 7 days
@@ -1785,7 +1785,7 @@ until the end of its next turn.
 
 #### Contingency
 
-> *6th-­‐‑level evocation*
+> *6th-­level evocation*
 >
 > **Casting Time:** 10 minutes
 >
@@ -1818,7 +1818,7 @@ ever not on your person.
 
 #### Continual Flame
 
-> *2nd-­‐‑level evocation*
+> *2nd-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -1838,7 +1838,7 @@ quenched.
 
 #### Control Water
 
-> *4th-­‐‑level transmutation*
+> *4th-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -1858,7 +1858,7 @@ to rise by as much as 20 feet. If the area includes a shore, the
 flooding water spills over onto dry land.
 
 If you choose an area in a large body of water, you instead create a
-20-­‐‑foot tall wave that travels from one side of the area to the other
+20-­foot tall wave that travels from one side of the area to the other
 and then crashes down. Any Huge or smaller vehicles in the wave’s path
 are carried with it to the other side. Any Huge or smaller vehicles
 struck by the wave have a 25 percent chance of capsizing.
@@ -1905,11 +1905,11 @@ in the vortex.
 
 #### Control Weather
 
-> *8th-­‐‑level transmutation*
+> *8th-­level transmutation*
 >
 > **Casting Time:** 10 minutes
 >
-> **Range:** Self (5-­‐‑mile radius)
+> **Range:** Self (5-­mile radius)
 >
 > **Components:** V, S, M (burning incense and bits of earth and wood
 > mixed in water)
@@ -1977,7 +1977,7 @@ the wind, you can change its direction.
 
 #### Create Food and Water
 
-> *3rd-­‐‑level conjuration*
+> *3rd-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** 30 feet **Components:** V, S
 > **Duration:** Instantaneous
@@ -1989,7 +1989,7 @@ if uneaten after 24 hours. The water is clean and doesn’t go bad.
 
 #### Create or Destroy Water
 
-> *1st-­‐‑level transmutation*
+> *1st-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -2004,10 +2004,10 @@ You either create or destroy water.
 
 ***Create Water.*** You create up to 10 gallons of clean water within
 range in an open container. Alternatively, the water falls as rain in a
-30-­‐‑foot cube within range, extinguishing exposed flames in the area.
+30-­foot cube within range, extinguishing exposed flames in the area.
 
 ***Destroy Water.*** You destroy up to 10 gallons of water in an open
-container within range. Alternatively, you destroy fog in a 30-­‐‑foot
+container within range. Alternatively, you destroy fog in a 30-­foot
 cube within range.
 
 ***At Higher Levels.*** When you cast this spell using a spell slot of
@@ -2018,7 +2018,7 @@ the cube increases by 5 feet, for each slot level above 1st.
 
 #### Create Undead
 
-> *6th-­‐‑level necromancy*
+> *6th-­level necromancy*
 >
 > **Casting Time:** 1 minute
 >
@@ -2048,20 +2048,20 @@ creature continues to follow it until its task is complete.
 The creature is under your control for 24 hours, after which it stops
 obeying any command you have given it. To maintain control of the
 creature for another 24 hours, you must cast this spell on the creature
-before the current 24-­‐‑hour period ends. This use of the spell
+before the current 24-­hour period ends. This use of the spell
 reasserts your control over up to three creatures you have animated with
 this spell, rather than animating new ones.
 
-***At Higher Levels.*** When you cast this spell using a 7th-­‐‑level
+***At Higher Levels.*** When you cast this spell using a 7th-­level
 spell slot, you can animate or reassert control over four ghouls. When
-you cast this spell using an 8th-­‐‑level spell slot, you can animate or
+you cast this spell using an 8th-­level spell slot, you can animate or
 reassert control over five ghouls or two ghasts or wights. When you cast
-this spell using a 9th-­‐‑level spell slot, you can animate or reassert
+this spell using a 9th-­level spell slot, you can animate or reassert
 control over six ghouls, three ghasts or wights, or two mummies.
 
 #### Creation
 
-> *5th-­‐‑level illusion*
+> *5th-­level illusion*
 >
 > **Casting Time:** 1 minute
 >
@@ -2076,7 +2076,7 @@ You pull wisps of shadow material from the Shadowfell to create a
 nonliving object of vegetable matter within range: soft goods, rope,
 wood, or something similar. You can also use this spell to create
 mineral objects such as stone, crystal, or metal. The object created
-must be no larger than a 5-­‐‑ foot cube, and the object must be of a
+must be no larger than a 5-­ foot cube, and the object must be of a
 form and material that you have seen before.
 
 The duration depends on the object’s material. If the object is composed
@@ -2104,7 +2104,7 @@ slot level above 5th.
 
 #### Cure Wounds
 
-> *1st-­‐‑level evocation*
+> *1st-­level evocation*
 >
 > **Casting Time:** 1 action **Range:** Touch **Components:** V, S
 > **Duration:** Instantaneous
@@ -2130,12 +2130,12 @@ above 1st.
 >
 > **Duration:** Concentration, up to 1 minute
 
-You create up to four torch-­‐‑sized lights within range, making them
+You create up to four torch-­sized lights within range, making them
 appear as torches, lanterns, or glowing orbs that hover in the air for
 the duration. You can also combine the four lights into one glowing
 vaguely humanoid form of Medium size. Whichever
 
-form you choose, each light sheds dim light in a 10-­‐‑ foot radius.
+form you choose, each light sheds dim light in a 10-­ foot radius.
 
 As a bonus action on your turn, you can move the lights up to 60 feet to
 a new spot within range. A light must be within 20 feet of another light
@@ -2144,7 +2144,7 @@ range.
 
 #### Darkness
 
-> *2nd-­‐‑level evocation*
+> *2nd-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -2155,7 +2155,7 @@ range.
 > **Duration:** Concentration, up to 10 minutes
 
 Magical darkness spreads from a point you choose within range to fill a
-15-­‐‑foot-­‐‑radius sphere for the duration. The darkness spreads
+15-­foot-­radius sphere for the duration. The darkness spreads
 around corners. A creature with darkvision can’t see through this
 darkness, and nonmagical light can’t illuminate it.
 
@@ -2172,7 +2172,7 @@ dispelled.
 
 #### Darkvision
 
-> *2nd-­‐‑level transmutation*
+> *2nd-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -2188,12 +2188,12 @@ feet.
 
 #### Daylight
 
-> *3rd-­‐‑level evocation*
+> *3rd-­level evocation*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 > **Duration:** 1 hour
 
-A 60-­‐‑foot-­‐‑radius sphere of light spreads out from a point you
+A 60-­foot-­radius sphere of light spreads out from a point you
 choose within range. The sphere is bright light and sheds dim light for
 an additional 60 feet.
 
@@ -2208,7 +2208,7 @@ dispelled.
 
 #### Death Ward
 
-> *4th-­‐‑level abjuration*
+> *4th-­level abjuration*
 >
 > **Casting Time:** 1 action **Range:** Touch **Components:** V, S
 > **Duration:** 8 hours
@@ -2227,7 +2227,7 @@ the spell ends.
 
 #### Delayed Blast Fireball
 
-> *7th-­‐‑level evocation*
+> *7th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -2242,7 +2242,7 @@ to linger at a chosen point within range as a glowing bead for the
 duration. When the spell ends, either because your concentration is
 broken or because you decide to end it, the bead blossoms with a low
 roar into an explosion of flame that spreads around corners. Each
-creature in a 20-­‐‑foot-­‐‑radius sphere centered on that point must
+creature in a 20-­foot-­radius sphere centered on that point must
 make a Dexterity saving throw. A creature takes fire damage equal to the
 total accumulated damage on a failed save, or half as much damage on a
 successful one.
@@ -2268,7 +2268,7 @@ level above 7th.
 
 #### Demiplane
 
-> *8th-­‐‑level conjuration*
+> *8th-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** S
 > **Duration:** 1 hour
@@ -2289,7 +2289,7 @@ you can have the shadowy door connect to its demiplane instead.
 
 #### Detect Evil and Good
 
-> *1st-­‐‑level divination*
+> *1st-­level divination*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V, S
 >
@@ -2307,7 +2307,7 @@ or dirt.
 
 #### Detect Magic
 
-> *1st-­‐‑level divination (ritual)*
+> *1st-­level divination (ritual)*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V, S
 >
@@ -2324,7 +2324,7 @@ or dirt.
 
 #### Detect Poison and Disease
 
-> *1st-­‐‑level divination (ritual)*
+> *1st-­level divination (ritual)*
 >
 > **Casting Time:** 1 action
 >
@@ -2345,7 +2345,7 @@ or dirt.
 
 #### Detect Thoughts
 
-> *2nd-­‐‑level divination*
+> *2nd-­level divination*
 >
 > **Casting Time:** 1 action
 >
@@ -2394,7 +2394,7 @@ can’t see it, but it must still be within range.
 
 #### Dimension Door
 
-> *4th-­‐‑level conjuration*
+> *4th-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** 500 feet **Components:** V
 > **Duration:** Instantaneous
@@ -2403,7 +2403,7 @@ You teleport yourself from your current location to any other spot
 within range. You arrive at exactly the spot desired. It can be a place
 you can see, one you can visualize, or one you can describe by stating
 distance and direction, such as “200 feet straight downward” or “upward
-to the northwest at a 45-­‐‑ degree angle, 300 feet.”
+to the northwest at a 45-­ degree angle, 300 feet.”
 
 > You can bring along objects as long as their weight
 
@@ -2419,7 +2419,7 @@ take 4d6 force damage, and the spell fails to teleport you.
 
 #### Disguise Self
 
-> *1st-­‐‑level illusion*
+> *1st-­level illusion*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V, S
 > **Duration:** 1 hour
@@ -2445,7 +2445,7 @@ Intelligence (Investigation) check against your spell save DC.
 
 #### Disintegrate
 
-> *6th-­‐‑level transmutation*
+> *6th-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -2472,7 +2472,7 @@ or a *wish* spell.
 
 This spell automatically disintegrates a Large or smaller nonmagical
 object or a creation of magical force. If the target is a Huge or larger
-object or creation of force, this spell disintegrates a 10-­‐‑foot-­‐‑
+object or creation of force, this spell disintegrates a 10-­foot-­
 
 cube portion of it. A magic item is unaffected by this spell.
 
@@ -2482,7 +2482,7 @@ above 6th.
 
 #### Dispel Evil and Good
 
-> *5th-­‐‑level abjuration*
+> *5th-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -2516,7 +2516,7 @@ Feywild.
 
 #### Dispel Magic
 
-> *3rd-­‐‑level abjuration*
+> *3rd-­level abjuration*
 >
 > **Casting Time:** 1 action **Range:** 120 feet **Components:** V, S
 > **Duration:** Instantaneous
@@ -2535,7 +2535,7 @@ level is equal to or less than the level of the spell slot you used.
 
 #### Divination
 
-> *4th-­‐‑level divination (ritual)*
+> *4th-­level divination (ritual)*
 >
 > **Casting Time:** 1 action
 >
@@ -2563,7 +2563,7 @@ first that you get a random reading. The GM makes this roll in secret.
 
 #### Divine Favor
 
-> *1st-­‐‑level evocation*
+> *1st-­level evocation*
 >
 > **Casting Time:** 1 bonus action
 >
@@ -2578,7 +2578,7 @@ your weapon attacks deal an extra 1d4 radiant damage on a hit.
 
 #### Divine Word
 
-> *7th-­‐‑level evocation*
+> *7th-­level evocation*
 >
 > **Casting Time:** 1 bonus action **Range:** 30 feet **Components:** V
 >
@@ -2606,7 +2606,7 @@ to your current plane for 24 hours by any means short of a *wish* spell.
 
 #### Dominate Beast
 
-> *4th-­‐‑level enchantment*
+> *4th-­level enchantment*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 >
@@ -2635,15 +2635,15 @@ requires you to use your own reaction as well.
 Each time the target takes damage, it makes a new Wisdom saving throw
 against the spell. If the saving throw succeeds, the spell ends.
 
-***At Higher Levels.*** When you cast this spell with a 5th-­‐‑level
+***At Higher Levels.*** When you cast this spell with a 5th-­level
 spell slot, the duration is concentration, up to 10 minutes. When you
-use a 6th-­‐‑level spell slot, the duration is concentration, up to 1
+use a 6th-­level spell slot, the duration is concentration, up to 1
 hour. When you use a spell slot of 7th level or higher, the duration is
 concentration, up to 8 hours.
 
 #### Dominate Monster
 
-> *8th-­‐‑level enchantment*
+> *8th-­level enchantment*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 >
@@ -2676,12 +2676,12 @@ well.
 Wisdom saving throw against the spell. If the saving throw succeeds, the
 spell ends.
 
-***At Higher Levels.*** When you cast this spell with a 9th-­‐‑level
+***At Higher Levels.*** When you cast this spell with a 9th-­level
 spell slot, the duration is concentration, up to 8 hours.
 
 #### Dominate Person
 
-> *5th-­‐‑level enchantment*
+> *5th-­level enchantment*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 >
@@ -2713,14 +2713,14 @@ against the spell. If the saving throw succeeds, the spell ends.
 
 > ***At Higher Levels.*** When you cast this spell using a
 
-6th-­‐‑level spell slot, the duration is concentration, up to 10
-minutes. When you use a 7th-­‐‑level spell slot, the duration is
+6th-­level spell slot, the duration is concentration, up to 10
+minutes. When you use a 7th-­level spell slot, the duration is
 concentration, up to 1 hour. When you use a spell slot of 8th level or
 higher, the duration is concentration, up to 8 hours.
 
 #### Dream
 
-> *5th-­‐‑level illusion*
+> *5th-­level illusion*
 >
 > **Casting Time:** 1 minute
 >
@@ -2763,7 +2763,7 @@ saving throw with disadvantage.
 
 #### Earthquake
 
-> *8th-­‐‑level evocation*
+> *8th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -2776,7 +2776,7 @@ saving throw with disadvantage.
 
 You create a seismic disturbance at a point on the ground that you can
 see within range. For the duration, an intense tremor rips through the
-ground in a 100-­‐‑foot-­‐‑radius circle centered on that point and
+ground in a 100-­foot-­radius circle centered on that point and
 shakes creatures and structures in contact with the ground in that area.
 
 > The ground in the area becomes difficult terrain.
@@ -2819,7 +2819,7 @@ become buried.
 
 #### Enhance Ability
 
-> *2nd-­‐‑level transmutation*
+> *2nd-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -2856,7 +2856,7 @@ slot level above 2nd.
 
 #### Enlarge/Reduce
 
-> *2nd-­‐‑level transmutation*
+> *2nd-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -2888,7 +2888,7 @@ weapons are enlarged, the target’s attacks with them deal 1d4 extra
 damage.
 
 ***Reduce.*** The target’s size is halved in all dimensions, and its
-weight is reduced to one-­‐‑eighth of normal. This reduction decreases
+weight is reduced to one-­eighth of normal. This reduction decreases
 its size by one category—from Medium to Small, for example. Until the
 spell ends, the target also has disadvantage on Strength checks and
 Strength saving throws. The target’s weapons also shrink to match its
@@ -2897,13 +2897,13 @@ them deal 1d4 less damage (this can’t reduce the damage below 1).
 
 #### Entangle
 
-> *1st-­‐‑level conjuration*
+> *1st-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** 90 feet **Components:** V, S
 >
 > **Duration:** Concentration, up to 1 minute
 
-Grasping weeds and vines sprout from the ground in a 20-­‐‑foot square
+Grasping weeds and vines sprout from the ground in a 20-­foot square
 starting from a point within range. For the duration, these plants turn
 the ground in the area into difficult terrain.
 
@@ -2918,7 +2918,7 @@ save DC. On a success, it frees itself.
 
 #### Enthrall
 
-> *2nd-­‐‑level enchantment*
+> *2nd-­level enchantment*
 >
 > **Casting Time:** 1 action
 >
@@ -2940,7 +2940,7 @@ speak.
 
 #### Etherealness
 
-> *7th-­‐‑level transmutation*
+> *7th-­level transmutation*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V, S
 > **Duration:** Up to 8 hours
@@ -2979,7 +2979,7 @@ within 10 feet of you when you cast the spell.
 
 #### Expeditious Retreat
 
-> *1st-­‐‑level transmutation*
+> *1st-­level transmutation*
 >
 > **Casting Time:** 1 bonus action
 >
@@ -2995,7 +2995,7 @@ ends, you can take the Dash action.
 
 #### Eyebite
 
-> *6th-­‐‑level necromancy*
+> *6th-­level necromancy*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V, S
 >
@@ -3025,7 +3025,7 @@ saving throw. If it succeeds, the effect ends.
 
 #### Fabricate
 
-> *4th-­‐‑level transmutation*
+> *4th-­level transmutation*
 >
 > **Casting Time:** 10 minutes
 >
@@ -3040,11 +3040,11 @@ example, you can fabricate a wooden bridge from a clump of trees, a rope
 from a patch of hemp, and clothes from flax or wool.
 
 Choose raw materials that you can see within range. You can fabricate a
-Large or smaller object (contained within a 10-­‐‑foot cube, or eight
-connected 5-­‐‑foot cubes), given a sufficient quantity of raw material.
+Large or smaller object (contained within a 10-­foot cube, or eight
+connected 5-­foot cubes), given a sufficient quantity of raw material.
 If you are working with metal, stone, or another mineral substance,
 however, the fabricated object can be no larger than Medium (contained
-within a single 5-­‐‑foot cube). The quality of objects made by the
+within a single 5-­foot cube). The quality of objects made by the
 spell is commensurate with the quality of the raw materials.
 
 Creatures or magic items can’t be created or transmuted by this spell.
@@ -3055,17 +3055,17 @@ craft such objects.
 
 #### Faerie Fire
 
-> *1st-­‐‑level evocation*
+> *1st-­level evocation*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V
 >
 > **Duration:** Concentration, up to 1 minute
 
-Each object in a 20-­‐‑foot cube within range is outlined in blue,
+Each object in a 20-­foot cube within range is outlined in blue,
 green, or violet light (your choice). Any creature in the area when the
 spell is cast is also outlined in light if it fails a Dexterity saving
 throw. For the duration, objects and affected creatures shed dim light
-in a 10-­‐‑foot radius.
+in a 10-­foot radius.
 
 Any attack roll against an affected creature or object has advantage if
 the attacker can see it, and the affected creature or object can’t
@@ -3073,7 +3073,7 @@ benefit from being invisible.
 
 #### Faithful Hound
 
-> *4th-­‐‑level conjuration*
+> *4th-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -3103,7 +3103,7 @@ bonus. On a hit, it deals 4d8 piercing damage.
 
 #### False Life
 
-> *1st-­‐‑level necromancy*
+> *1st-­level necromancy*
 >
 > **Casting Time:** 1 action
 >
@@ -3124,18 +3124,18 @@ slot level above 1st.
 
 #### Fear
 
-> *3rd-­‐‑level illusion*
+> *3rd-­level illusion*
 >
 > **Casting Time:** 1 action
 >
-> **Range:** Self (30-­‐‑foot cone)
+> **Range:** Self (30-­foot cone)
 >
 > **Components:** V, S, M (a white feather or the heart of a hen)
 >
 > **Duration:** Concentration, up to 1 minute
 
 You project a phantasmal image of a creature’s worst fears. Each
-creature in a 30-­‐‑foot cone must succeed on a Wisdom saving throw or
+creature in a 30-­foot cone must succeed on a Wisdom saving throw or
 drop whatever it is holding and become frightened for the duration.
 
 While frightened by this spell, a creature must take the Dash action and
@@ -3148,7 +3148,7 @@ that creature.
 #### \
 Feather Fall
 
-> *1st-­‐‑level transmutation*
+> *1st-­level transmutation*
 >
 > **Casting Time:** 1 reaction, which you take when you or a creature
 > within 60 feet of you falls
@@ -3166,7 +3166,7 @@ land on its feet, and the spell ends for that creature.
 
 #### Feeblemind
 
-> *8th-­‐‑level enchantment*
+> *8th-­level enchantment*
 >
 > **Casting Time:** 1 action
 >
@@ -3197,13 +3197,13 @@ throw, the spell ends.
 
 #### Find Steed
 
-> *2nd-­‐‑level conjuration*
+> *2nd-­level conjuration*
 >
 > **Casting Time:** 10 minutes **Range:** 30 feet **Components:** V, S
 > **Duration:** Instantaneous
 
 You summon a spirit that assumes the form of an unusually intelligent,
-strong, and loyal steed, creating a long-­‐‑lasting bond with it.
+strong, and loyal steed, creating a long-­lasting bond with it.
 Appearing in an unoccupied space within range, the steed takes on a form
 that you choose: a warhorse, a pony, a camel, an elk, or a mastiff.
 (Your GM might allow other
@@ -3233,7 +3233,7 @@ to disappear.
 
 #### Find the Path
 
-> *6th-­‐‑level divination*
+> *6th-­level divination*
 >
 > **Casting Time:** 1 minute
 >
@@ -3262,7 +3262,7 @@ the destination.
 #### \
 Find Traps
 
-> *2nd-­‐‑level divination*
+> *2nd-­level divination*
 >
 > **Casting Time:** 1 action **Range:** 120 feet **Components:** V, S
 > **Duration:** Instantaneous
@@ -3283,7 +3283,7 @@ nature of the danger posed by a trap you sense.
 
 #### Finger of Death
 
-> *7th-­‐‑level necromancy*
+> *7th-­level necromancy*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 > **Duration:** Instantaneous
@@ -3299,7 +3299,7 @@ orders to the best of its ability.
 
 #### Fireball
 
-> *3rd-­‐‑level evocation*
+> *3rd-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -3311,7 +3311,7 @@ orders to the best of its ability.
 
 A bright streak flashes from your pointing finger to a point you choose
 within range and then blossoms with a low roar into an explosion of
-flame. Each creature in a 20-­‐‑foot-­‐‑radius sphere centered on that
+flame. Each creature in a 20-­foot-­radius sphere centered on that
 point must make a Dexterity saving throw. A target
 
 takes 8d6 fire damage on a failed save, or half as much damage on a
@@ -3326,7 +3326,7 @@ above 3rd.
 
 #### Fire Shield
 
-> *4th-­‐‑level evocation*
+> *4th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -3339,7 +3339,7 @@ above 3rd.
 > **Duration:** 10 minutes
 
 Thin and wispy flames wreathe your body for the duration, shedding
-bright light in a 10-­‐‑foot radius and dim light for an additional 10
+bright light in a 10-­foot radius and dim light for an additional 10
 feet. You can end the spell early by using an action to dismiss it.
 
 > The flames provide you with a warm shield or a
@@ -3353,14 +3353,14 @@ damage from a warm shield, or 2d8 cold damage from a cold shield.
 
 #### Fire Storm
 
-> *7th-­‐‑level evocation*
+> *7th-­level evocation*
 >
 > **Casting Time:** 1 action **Range:** 150 feet **Components:** V, S
 > **Duration:** Instantaneous
 
 A storm made up of sheets of roaring flame appears in a location you
 choose within range. The area of the storm consists of up to ten
-10-­‐‑foot cubes, which you can arrange as you wish. Each cube must have
+10-­foot cubes, which you can arrange as you wish. Each cube must have
 at least one face adjacent to the face of another cube. Each creature in
 the area must make a Dexterity saving throw. It takes 7d10 fire damage
 on a failed save, or half as much damage on a successful one.
@@ -3372,7 +3372,7 @@ unaffected by this spell.
 #### \
 Flame Blade
 
-> *2nd-­‐‑level evocation*
+> *2nd-­level evocation*
 >
 > **Casting Time:** 1 bonus action
 >
@@ -3390,7 +3390,7 @@ action.
 You can use your action to make a melee spell attack with the fiery
 blade. On a hit, the target takes 3d6 fire damage.
 
-The flaming blade sheds bright light in a 10-­‐‑foot radius and dim
+The flaming blade sheds bright light in a 10-­foot radius and dim
 light for an additional 10 feet.
 
 > ***At Higher Levels.*** When you cast this spell using a
@@ -3400,7 +3400,7 @@ two slot levels above 2nd.
 
 #### Flame Strike
 
-> *5th-­‐‑level evocation*
+> *5th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -3411,8 +3411,8 @@ two slot levels above 2nd.
 > **Duration:** Instantaneous
 
 A vertical column of divine fire roars down from the heavens in a
-location you specify. Each creature in a 10-­‐‑foot-­‐‑radius,
-40-­‐‑foot-­‐‑high cylinder centered on a point within range must make a
+location you specify. Each creature in a 10-­foot-­radius,
+40-­foot-­high cylinder centered on a point within range must make a
 Dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant
 damage on a failed save, or half as much damage on a successful one.
 
@@ -3422,7 +3422,7 @@ increases by 1d6 for each slot level above 5th.
 
 #### Flaming Sphere
 
-> *2nd-­‐‑level conjuration*
+> *2nd-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -3433,7 +3433,7 @@ increases by 1d6 for each slot level above 5th.
 >
 > **Duration:** Concentration, up to 1 minute
 
-A 5-­‐‑foot-­‐‑diameter sphere of fire appears in an unoccupied space of
+A 5-­foot-­diameter sphere of fire appears in an unoccupied space of
 your choice within range and lasts for the duration. Any creature that
 ends its turn within 5 feet of the sphere must make a Dexterity saving
 throw. The creature takes 2d6 fire damage on
@@ -3447,7 +3447,7 @@ the sphere’s damage, and the sphere stops moving this turn.
 When you move the sphere, you can direct it over barriers up to 5 feet
 tall and jump it across pits up to 10 feet wide. The sphere ignites
 flammable objects not being worn or carried, and it sheds bright light
-in a 20-­‐‑foot radius and dim light for an additional 20 feet.
+in a 20-­foot radius and dim light for an additional 20 feet.
 
 ***At Higher Levels.*** When you cast this spell using a spell slot of
 3rd level or higher, the damage increases by 1d6 for each slot level
@@ -3455,7 +3455,7 @@ above 2nd.
 
 #### Flesh to Stone
 
-> *6th-­‐‑level transmutation*
+> *6th-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -3487,7 +3487,7 @@ duration, the creature is turned to stone until the effect is removed.
 
 #### Floating Disk
 
-> *1st-­‐‑level conjuration (ritual)*
+> *1st-­level conjuration (ritual)*
 >
 > **Casting Time:** 1 action
 >
@@ -3509,7 +3509,7 @@ more than 20 feet away from it, the disk follows you so that it remains
 within 20 feet of you. It can move across uneven terrain, up or down
 stairs, slopes and the like, but it can’t cross an elevation change of
 10 feet or more. For example, the disk can’t move across a
-10-­‐‑foot-­‐‑deep pit, nor could it leave such a pit if it was created
+10-­foot-­deep pit, nor could it leave such a pit if it was created
 at the bottom.
 
 If you move more than 100 feet from the disk (typically because it can’t
@@ -3517,7 +3517,7 @@ move around an obstacle to follow you), the spell ends.
 
 #### Fly
 
-> *3rd-­‐‑level transmutation*
+> *3rd-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -3537,13 +3537,13 @@ slot level above 3rd.
 
 #### Fog Cloud
 
-> *1st-­‐‑level conjuration*
+> *1st-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** 120 feet **Components:** V, S
 >
 > **Duration:** Concentration, up to 1 hour
 
-You create a 20-­‐‑foot-­‐‑radius sphere of fog centered on a point
+You create a 20-­foot-­radius sphere of fog centered on a point
 within range. The sphere spreads around corners, and its area is heavily
 obscured. It lasts for the duration or until a wind of moderate or
 greater speed (at least 10 miles per hour) disperses it.
@@ -3554,7 +3554,7 @@ slot level above 1st.
 
 #### Forbiddance
 
-> *6th-­‐‑level abjuration (ritual)*
+> *6th-­level abjuration (ritual)*
 >
 > **Casting Time:** 10 minutes
 >
@@ -3591,7 +3591,7 @@ components are consumed on the last casting.
 
 #### Forcecage
 
-> *7th-­‐‑level evocation*
+> *7th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -3601,12 +3601,12 @@ components are consumed on the last casting.
 >
 > **Duration:** 1 hour
 
-An immobile, invisible, cube-­‐‑shaped prison composed of magical force
+An immobile, invisible, cube-­shaped prison composed of magical force
 springs into existence around an area you choose within range. The
 prison can be a cage or a solid box, as you choose.
 
 A prison in the shape of a cage can be up to 20 feet on a side and is
-made from 1/2-­‐‑inch diameter bars spaced 1/2 inch apart.
+made from 1/2-­inch diameter bars spaced 1/2 inch apart.
 
 A prison in the shape of a box can be up to 10 feet on a side, creating
 a solid barrier that prevents any matter from passing through it and
@@ -3629,7 +3629,7 @@ also extends into the Ethereal Plane, blocking ethereal travel.
 
 #### Foresight
 
-> *9th-­‐‑level divination*
+> *9th-­level divination*
 >
 > **Casting Time:** 1 minute
 >
@@ -3650,7 +3650,7 @@ ends.
 
 #### Freedom of Movement
 
-> *4th-­‐‑level abjuration*
+> *4th-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -3673,7 +3673,7 @@ movement or attacks.
 
 #### Freezing Sphere
 
-> *6th-­‐‑level evocation*
+> *6th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -3684,13 +3684,13 @@ movement or attacks.
 > **Duration:** Instantaneous
 
 A frigid globe of cold energy streaks from your fingertips to a point of
-your choice within range, where it explodes in a 60-­‐‑foot-­‐‑radius
+your choice within range, where it explodes in a 60-­foot-­radius
 sphere. Each creature within the area must make a Constitution saving
 throw. On a failed save, a creature takes 10d6 cold damage. On a
 successful save, it takes half as much damage.
 
 If the globe strikes a body of water or a liquid that is principally
-water (not including water-­‐‑based creatures), it freezes the liquid to
+water (not including water-­based creatures), it freezes the liquid to
 a depth of 6 inches over an area 30 feet square. This ice lasts for 1
 minute. Creatures that were swimming on the surface of frozen water are
 trapped in the ice. A trapped creature can use an action to make a
@@ -3711,7 +3711,7 @@ above 6th.
 
 #### Gaseous Form
 
-> *3rd-­‐‑level transmutation*
+> *3rd-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -3743,7 +3743,7 @@ spells.
 
 #### Gate
 
-> *9th-­‐‑level conjuration*
+> *9th-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -3779,7 +3779,7 @@ appropriate. It might leave, attack you, or help you.
 
 #### Geas
 
-> *5th-­‐‑level enchantment*
+> *5th-­level enchantment*
 >
 > **Casting Time:** 1 minute **Range:** 60 feet **Components:** V
 > **Duration:** 30 days
@@ -3809,7 +3809,7 @@ the spells mentioned above.
 
 #### Gentle Repose
 
-> *2nd-­‐‑level necromancy (ritual)*
+> *2nd-­level necromancy (ritual)*
 >
 > **Casting Time:** 1 action
 >
@@ -3830,7 +3830,7 @@ count against the time limit of spells such as *raise dead.*
 
 #### Giant Insect
 
-> *4th-­‐‑level transmutation*
+> *4th-­level transmutation*
 >
 > **Casting Time:** 1 action **Range:** 30 feet **Components:** V, S
 >
@@ -3857,7 +3857,7 @@ giant wasp.
 
 #### Glibness
 
-> *8th-­‐‑level transmutation*
+> *8th-­level transmutation*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V
 > **Duration:** 1 hour
@@ -3869,11 +3869,11 @@ you are being truthful.
 
 #### Globe of Invulnerability
 
-> *6th-­‐‑level abjuration*
+> *6th-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
-> **Range:** Self (10-­‐‑foot radius)
+> **Range:** Self (10-­foot radius)
 >
 > **Components:** V, S, M (a glass or crystal bead that shatters when
 > the spell ends)
@@ -3881,7 +3881,7 @@ you are being truthful.
 > **Duration:** Concentration, up to 1 minute
 
 An immobile, faintly shimmering barrier springs into existence in a
-10-­‐‑foot radius around you and remains for the duration.
+10-­foot radius around you and remains for the duration.
 
 Any spell of 5th level or lower cast from outside the barrier can’t
 affect creatures or objects within it, even if the spell is cast using a
@@ -3896,7 +3896,7 @@ each slot level above 6th.
 
 #### Glyph of Warding
 
-> *3rd-­‐‑level abjuration*
+> *3rd-­level abjuration*
 >
 > **Casting Time:** 1 hour
 >
@@ -3940,7 +3940,7 @@ certain password.
 > glyph.*
 
 ***Explosive Runes.*** When triggered, the glyph erupts with magical
-energy in a 20-­‐‑foot-­‐‑radius sphere centered on the glyph. The
+energy in a 20-­foot-­radius sphere centered on the glyph. The
 sphere spreads around corners. Each creature in the area must make a
 Dexterity saving throw. A creature takes 5d8 acid, cold, fire,
 lightning, or thunder damage on a failed saving throw (your choice when
@@ -3967,7 +3967,7 @@ until the end of its full duration.
 
 #### Grease
 
-> *1st-­‐‑level conjuration*
+> *1st-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -3977,7 +3977,7 @@ until the end of its full duration.
 >
 > **Duration:** 1 minute
 
-Slick grease covers the ground in a 10-­‐‑foot square centered on a
+Slick grease covers the ground in a 10-­foot square centered on a
 point within range and turns it into difficult terrain for the duration.
 
 When the grease appears, each creature standing in its area must succeed
@@ -3987,7 +3987,7 @@ throw or fall prone.
 
 #### Greater Invisibility
 
-> *4th-­‐‑level illusion*
+> *4th-­level illusion*
 >
 > **Casting Time:** 1 action **Range:** Touch **Components:** V, S
 >
@@ -3999,7 +3999,7 @@ on the target’s person.
 
 #### Greater Restoration
 
-> *5th-­‐‑level abjuration*
+> *5th-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -4024,7 +4024,7 @@ one, or end one of the following effects on the target:
 
 #### Guards and Wards
 
-> *6th-­‐‑level abjuration*
+> *6th-­level abjuration*
 >
 > **Casting Time:** 10 minutes
 >
@@ -4037,8 +4037,8 @@ one, or end one of the following effects on the target:
 > **Duration:** 24 hours
 
 You create a ward that protects up to 2,500 square feet of floor space
-(an area 50 feet square, or one hundred 5-­‐‑foot squares or
-twenty-­‐‑five 10-­‐‑foot squares). The warded area can be up to 20 feet
+(an area 50 feet square, or one hundred 5-­foot squares or
+twenty-­five 10-­foot squares). The warded area can be up to 20 feet
 tall, and shaped as you desire. You can ward several stories of a
 stronghold by dividing the area among them, as long as you can walk into
 each contiguous area while you are casting the spell.
@@ -4109,7 +4109,7 @@ The spell then ends.
 
 #### Guiding Bolt
 
-> *1st-­‐‑level evocation*
+> *1st-­level evocation*
 >
 > **Casting Time:** 1 action **Range:** 120 feet **Components:** V, S
 > **Duration:** 1 round
@@ -4126,11 +4126,11 @@ above 1st.
 
 #### Gust of Wind
 
-> *2nd-­‐‑level evocation*
+> *2nd-­level evocation*
 >
 > **Casting Time:** 1 action
 >
-> **Range:** Self (60-­‐‑foot line) **Components:** V, S, M (a legume
+> **Range:** Self (60-­foot line) **Components:** V, S, M (a legume
 > seed) **Duration:** Concentration, up to 1 minute
 
 A line of strong wind 60 feet long and 10 feet wide blasts from you in a
@@ -4153,7 +4153,7 @@ you.
 
 #### Hallow
 
-> *5th-­‐‑level evocation*
+> *5th-­level evocation*
 >
 > **Casting Time:** 24 hours
 >
@@ -4224,7 +4224,7 @@ creature in the area, even if they don’t share a common language.
 
 #### Hallucinatory Terrain
 
-> *4th-­‐‑level illusion*
+> *4th-­level illusion*
 >
 > **Casting Time:** 10 minutes
 >
@@ -4234,11 +4234,11 @@ creature in the area, even if they don’t share a common language.
 >
 > **Duration:** 24 hours
 
-You make natural terrain in a 150-­‐‑foot cube in range look, sound, and
+You make natural terrain in a 150-­foot cube in range look, sound, and
 smell like some other sort of natural terrain. Thus, open fields or a
 road can be made to resemble a swamp, hill, crevasse, or some other
 difficult or impassable terrain. A pond can be made to seem like a
-grassy meadow, a precipice like a gentle slope, or a rock-­‐‑strewn
+grassy meadow, a precipice like a gentle slope, or a rock-­strewn
 gully like a wide and smooth road. Manufactured structures, equipment,
 and creatures within the area aren’t changed in appearance.
 
@@ -4252,7 +4252,7 @@ what it is, sees it as a vague image superimposed on the terrain.
 
 #### Harm
 
-> *6th-­‐‑level necromancy*
+> *6th-­level necromancy*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 > **Duration:** Instantaneous
@@ -4268,7 +4268,7 @@ to return to normal before that time passes.
 
 #### Haste
 
-> *3rd-­‐‑level transmutation*
+> *3rd-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -4291,7 +4291,7 @@ actions until after its next turn, as a wave of lethargy sweeps over it.
 
 #### Heal
 
-> *6th-­‐‑level evocation*
+> *6th-­level evocation*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 > **Duration:** Instantaneous
@@ -4308,7 +4308,7 @@ level above 6th.
 
 #### Healing Word
 
-> *1st-­‐‑level evocation*
+> *1st-­level evocation*
 >
 > **Casting Time:** 1 bonus action **Range:** 60 feet **Components:** V
 >
@@ -4324,7 +4324,7 @@ above 1st.
 
 #### Heat Metal
 
-> *2nd-­‐‑level transmutation*
+> *2nd-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -4336,7 +4336,7 @@ above 1st.
 
 Choose a manufactured metal object, such as a metal weapon or a suit of
 heavy or medium metal armor, that you can see within range. You cause
-the object to glow red-­‐‑hot. Any creature in physical contact with the
+the object to glow red-­hot. Any creature in physical contact with the
 object takes 2d8 fire damage when you cast the spell. Until the spell
 ends, you can use a bonus action on each of your subsequent turns to
 cause this damage again.
@@ -4352,13 +4352,13 @@ above 2nd.
 
 #### Heroes’ Feast
 
-> *6th-­‐‑level conjuration*
+> *6th-­level conjuration*
 >
 > **Casting Time:** 10 minutes
 >
 > **Range:** 30 feet
 >
-> **Components:** V, S , M (a gem-­‐‑encrusted bowl worth at least 1,000
+> **Components:** V, S , M (a gem-­encrusted bowl worth at least 1,000
 > gp, which the spell consumes)
 >
 > **Duration:** Instantaneous
@@ -4376,7 +4376,7 @@ number of hit points. These benefits last for 24 hours.
 
 #### Heroism
 
-> *1st-­‐‑level enchantment*
+> *1st-­level enchantment*
 >
 > **Casting Time:** 1 action **Range:** Touch **Components:** V, S
 >
@@ -4394,7 +4394,7 @@ slot level above 1st.
 
 #### Hideous Laughter
 
-> *1st-­‐‑level enchantment*
+> *1st-­level enchantment*
 >
 > **Casting Time:** 1 action
 >
@@ -4421,7 +4421,7 @@ a success, the spell ends.
 #### \
 Hold Monster
 
-> *5th-­‐‑level enchantment*
+> *5th-­level enchantment*
 >
 > **Casting Time:** 1 action
 >
@@ -4444,7 +4444,7 @@ when you target them.
 
 #### Hold Person
 
-> *2nd-­‐‑level enchantment*
+> *2nd-­level enchantment*
 >
 > **Casting Time:** 1 action
 >
@@ -4466,7 +4466,7 @@ when you target them.
 
 #### Holy Aura
 
-> *8th-­‐‑level abjuration*
+> *8th-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -4479,8 +4479,8 @@ when you target them.
 > **Duration:** Concentration, up to 1 minute
 
 Divine light washes out from you and coalesces in a soft radiance in a
-30-­‐‑foot radius around you. Creatures of your choice in that radius
-when you cast this spell shed dim light in a 5-­‐‑foot radius and have
+30-­foot radius around you. Creatures of your choice in that radius
+when you cast this spell shed dim light in a 5-­foot radius and have
 advantage on all saving throws, and other
 
 creatures have disadvantage on attack rolls against them until the spell
@@ -4491,7 +4491,7 @@ spell ends.
 
 #### Hypnotic Pattern
 
-> *3rd-­‐‑level illusion*
+> *3rd-­level illusion*
 >
 > **Casting Time:** 1 action
 >
@@ -4503,7 +4503,7 @@ spell ends.
 > **Duration:** Concentration, up to 1 minute
 
 You create a twisting pattern of colors that weaves through the air
-inside a 30-­‐‑foot cube within range. The pattern appears for a moment
+inside a 30-­foot cube within range. The pattern appears for a moment
 and vanishes. Each creature in the area who sees the pattern must make a
 Wisdom saving throw. On a failed save, the creature becomes charmed for
 the duration. While charmed by this spell, the creature is incapacitated
@@ -4514,7 +4514,7 @@ someone else uses an action to shake the creature out of its stupor.
 
 #### Ice Storm
 
-> *4th-­‐‑level evocation*
+> *4th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -4524,8 +4524,8 @@ someone else uses an action to shake the creature out of its stupor.
 >
 > **Duration:** Instantaneous
 
-A hail of rock-­‐‑hard ice pounds to the ground in a 20-­‐‑
-foot-­‐‑radius, 40-­‐‑foot-­‐‑high cylinder centered on a point within
+A hail of rock-­hard ice pounds to the ground in a 20-­
+foot-­radius, 40-­foot-­high cylinder centered on a point within
 range. Each creature in the cylinder must make a Dexterity saving throw.
 A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed
 save, or half as much damage on a successful one.
@@ -4539,7 +4539,7 @@ slot level above 4th.
 
 #### Identify
 
-> *1st-­‐‑level divination (ritual)*
+> *1st-­level divination (ritual)*
 >
 > **Casting Time:** 1 minute
 >
@@ -4551,7 +4551,7 @@ slot level above 4th.
 > **Duration:** Instantaneous
 
 You choose one object that you must touch throughout the casting of the
-spell. If it is a magic item or some other magic-­‐‑imbued object, you
+spell. If it is a magic item or some other magic-­imbued object, you
 learn its properties and how to use them, whether it requires attunement
 to use, and how many charges it has, if any. You learn whether any
 spells are affecting the item and what they are. If the item was created
@@ -4562,13 +4562,13 @@ spells, if any, are currently affecting it.
 
 #### Illusory Script
 
-> *1st-­‐‑level illusion (ritual)*
+> *1st-­level illusion (ritual)*
 >
 > **Casting Time:** 1 minute
 >
 > **Range:** Touch
 >
-> **Components:** S, M (a lead-­‐‑based ink worth at least 10 gp, which
+> **Components:** S, M (a lead-­based ink worth at least 10 gp, which
 > the spell consumes)
 >
 > **Duration:** 10 days
@@ -4591,7 +4591,7 @@ A creature with truesight can read the hidden message.
 
 #### Imprisonment
 
-> *9th-­‐‑level abjuration*
+> *9th-­level abjuration*
 >
 > **Casting Time:** 1 minute
 >
@@ -4664,7 +4664,7 @@ observable actions or qualities and not based on intangibles such as
 level, class, or hit points.
 
 A *dispel magic* spell can end the spell only if it is cast as a
-9th-­‐‑level spell, targeting either the prison or the special component
+9th-­level spell, targeting either the prison or the special component
 used to create it.
 
 You can use a particular special component to create only one prison at
@@ -4673,14 +4673,14 @@ of the first casting is immediately freed from its binding.
 
 #### Incendiary Cloud
 
-> *8th-­‐‑level conjuration*
+> *8th-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** 150 feet **Components:** V, S
 >
 > **Duration:** Concentration, up to 1 minute
 
-A swirling cloud of smoke shot through with white-­‐‑ hot embers appears
-in a 20-­‐‑foot-­‐‑radius sphere centered on a point within range. The
+A swirling cloud of smoke shot through with white-­ hot embers appears
+in a 20-­foot-­radius sphere centered on a point within range. The
 cloud spreads around corners and is heavily obscured. It lasts for the
 duration or until a wind of moderate or greater speed (at least 10 miles
 per hour) disperses it.
@@ -4696,7 +4696,7 @@ choose at the start of each of your turns.
 
 #### Inflict Wounds
 
-> *1st-­‐‑level necromancy*
+> *1st-­level necromancy*
 >
 > **Casting Time:** 1 action **Range:** Touch **Components:** V, S
 > **Duration:** Instantaneous
@@ -4710,7 +4710,7 @@ above 1st.
 
 #### Insect Plague
 
-> *5th-­‐‑level conjuration*
+> *5th-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -4721,7 +4721,7 @@ above 1st.
 >
 > **Duration:** Concentration, up to 10 minutes
 
-Swarming, biting locusts fill a 20-­‐‑foot-­‐‑radius sphere centered on
+Swarming, biting locusts fill a 20-­foot-­radius sphere centered on
 a point you choose within range. The sphere spreads around corners. The
 sphere remains for the duration, and its area is lightly obscured. The
 sphere’s area is difficult terrain.
@@ -4738,7 +4738,7 @@ above 5th.
 
 #### Instant Summons
 
-> *6th-­‐‑level conjuration (ritual)*
+> *6th-­level conjuration (ritual)*
 >
 > **Casting Time:** 1 minute
 >
@@ -4769,7 +4769,7 @@ ends this spell’s effect.
 
 #### Invisibility
 
-> *2nd-­‐‑level illusion*
+> *2nd-­level illusion*
 >
 > **Casting Time:** 1 action
 >
@@ -4791,7 +4791,7 @@ slot level above 2nd.
 
 #### Irresistible Dance
 
-> *6th-­‐‑level enchantment*
+> *6th-­level enchantment*
 >
 > **Casting Time:** 1 action **Range:** 30 feet **Components:** V
 >
@@ -4810,7 +4810,7 @@ save, the spell ends.
 
 #### Jump
 
-> *1st-­‐‑level transmutation*
+> *1st-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -4825,7 +4825,7 @@ spell ends.
 
 #### Knock
 
-> *2nd-­‐‑level transmutation*
+> *2nd-­level transmutation*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V
 > **Duration:** Instantaneous
@@ -4848,7 +4848,7 @@ from as far away as 300 feet, emanates from the target object.
 
 #### Legend Lore
 
-> *5th-­‐‑level divination*
+> *5th-­level divination*
 >
 > **Casting Time:** 10 minutes
 >
@@ -4877,7 +4877,7 @@ lips.”
 
 #### Lesser Restoration
 
-> *2nd-­‐‑level abjuration*
+> *2nd-­level abjuration*
 >
 > **Casting Time:** 1 action **Range:** Touch **Components:** V, S
 > **Duration:** Instantaneous
@@ -4888,7 +4888,7 @@ poisoned.
 
 #### Levitate
 
-> *2nd-­‐‑level transmutation*
+> *2nd-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -4930,7 +4930,7 @@ still aloft.
 > **Duration:** 1 hour
 
 You touch one object that is no larger than 10 feet in any dimension.
-Until the spell ends, the object sheds bright light in a 20-­‐‑foot
+Until the spell ends, the object sheds bright light in a 20-­foot
 radius and dim light for an additional 20 feet. The light can be colored
 as you like. Completely covering the object with something opaque blocks
 the light. The spell ends if you cast it again or dismiss it as an
@@ -4941,11 +4941,11 @@ creature must succeed on a Dexterity saving throw to avoid the spell.
 
 #### Lightning Bolt
 
-> *3rd-­‐‑level evocation*
+> *3rd-­level evocation*
 >
 > **Casting Time:** 1 action
 >
-> **Range:** Self (100-­‐‑foot line)
+> **Range:** Self (100-­foot line)
 >
 > **Components:** V, S, M (a bit of fur and a rod of amber, crystal, or
 > glass)
@@ -4969,7 +4969,7 @@ slot level above 3rd.
 
 #### Locate Animals or Plants
 
-> *2nd-­‐‑level divination (ritual)*
+> *2nd-­level divination (ritual)*
 >
 > **Casting Time:** 1 action
 >
@@ -4986,7 +4986,7 @@ if any are present.
 
 #### Locate Creature
 
-> *4th-­‐‑level divination*
+> *4th-­level divination*
 >
 > **Casting Time:** 1 action
 >
@@ -5013,7 +5013,7 @@ wide blocks a direct path between you and the creature.
 
 #### Locate Object
 
-> *2nd-­‐‑level divination*
+> *2nd-­level divination*
 >
 > **Casting Time:** 1 action
 >
@@ -5038,7 +5038,7 @@ sheet, blocks a direct path between you and the object.
 
 #### Longstrider
 
-> *1st-­‐‑level transmutation*
+> *1st-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -5057,7 +5057,7 @@ slot level above 1st.
 
 #### Mage Armor
 
-> *1st-­‐‑level abjuration*
+> *1st-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -5097,7 +5097,7 @@ pounds.
 
 #### Magic Circle
 
-> *3rd-­‐‑level abjuration*
+> *3rd-­level abjuration*
 >
 > **Casting Time:** 1 minute
 >
@@ -5109,7 +5109,7 @@ pounds.
 >
 > **Duration:** 1 hour
 
-You create a 10-­‐‑foot-­‐‑radius, 20-­‐‑foot-­‐‑tall cylinder of
+You create a 10-­foot-­radius, 20-­foot-­tall cylinder of
 magical energy centered on a point on the ground that you can see within
 range. Glowing runes appear wherever the cylinder intersects with the
 floor or other surface.
@@ -5138,7 +5138,7 @@ level above 3rd.
 
 #### Magic Jar
 
-> *6th-­‐‑level necromancy*
+> *6th-­level necromancy*
 >
 > **Casting Time:** 1 minute
 >
@@ -5192,7 +5192,7 @@ feet. Otherwise, that creature dies.
 
 #### Magic Missile
 
-> *1st-­‐‑level evocation*
+> *1st-­level evocation*
 >
 > **Casting Time:** 1 action **Range:** 120 feet **Components:** V, S
 > **Duration:** Instantaneous
@@ -5208,7 +5208,7 @@ above 1st.
 
 #### Magic Mouth
 
-> *2nd-­‐‑level illusion (ritual)*
+> *2nd-­level illusion (ritual)*
 >
 > **Casting Time:** 1 minute
 >
@@ -5243,7 +5243,7 @@ silver bell rings within 30 feet of it.
 
 #### Magic Weapon
 
-> *2nd-­‐‑level transmutation*
+> *2nd-­level transmutation*
 >
 > **Casting Time:** 1 bonus action **Range:** Touch **Components:** V, S
 >
@@ -5258,7 +5258,7 @@ slot of 6th level or higher, the bonus increases to +3.
 
 #### Magnificent Mansion
 
-> *7th-­‐‑level conjuration*
+> *7th-­level conjuration*
 >
 > **Casting Time:** 1 minute
 >
@@ -5284,8 +5284,8 @@ The atmosphere is clean, fresh, and warm.
 You can create any floor plan you like, but the space can’t exceed 50
 cubes, each cube being 10 feet on each side. The place is furnished and
 decorated as you choose. It contains sufficient food to serve a
-nine-­‐‑course banquet for up to 100 people. A staff of 100
-near-­‐‑transparent servants attends all who enter. You decide the
+nine-­course banquet for up to 100 people. A staff of 100
+near-­transparent servants attends all who enter. You decide the
 visual appearance of these servants and their attire. They are
 completely obedient to your orders. Each servant can perform any task a
 normal human servant could perform, but they can’t attack or take any
@@ -5299,7 +5299,7 @@ spaces nearest to the entrance.
 
 #### Major Image
 
-> *3rd-­‐‑level illusion*
+> *3rd-­level illusion*
 >
 > **Casting Time:** 1 action
 >
@@ -5310,7 +5310,7 @@ spaces nearest to the entrance.
 > **Duration:** Concentration, up to 10 minutes
 
 You create the image of an object, a creature, or some other visible
-phenomenon that is no larger than a 20-­‐‑foot cube. The image appears
+phenomenon that is no larger than a 20-­foot cube. The image appears
 at a spot that you can see within range and lasts for the duration. It
 seems completely real, including sounds, smells, and temperature
 appropriate to the thing depicted. You can’t create sufficient heat or
@@ -5340,13 +5340,13 @@ your concentration.
 
 #### Mass Cure Wounds
 
-> *5th-­‐‑level evocation*
+> *5th-­level evocation*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 > **Duration:** Instantaneous
 
 A wave of healing energy washes out from a point of your choice within
-range. Choose up to six creatures in a 30-­‐‑foot-­‐‑radius sphere
+range. Choose up to six creatures in a 30-­foot-­radius sphere
 centered on that point. Each target regains hit points equal to 3d8 +
 your spellcasting ability modifier. This spell has no effect on undead
 or constructs.
@@ -5358,7 +5358,7 @@ above 5th.
 #### \
 Mass Heal
 
-> *9th-­‐‑level evocation*
+> *9th-­level evocation*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 > **Duration:** Instantaneous
@@ -5371,7 +5371,7 @@ blinded or deafened. This spell has no effect on undead or constructs.
 
 #### Mass Healing Word
 
-> *3rd-­‐‑level evocation*
+> *3rd-­level evocation*
 >
 > **Casting Time:** 1 bonus action **Range:** 60 feet **Components:** V
 >
@@ -5389,7 +5389,7 @@ slot level above 3rd.
 
 #### Mass Suggestion
 
-> *6th-­‐‑level enchantment*
+> *6th-­level enchantment*
 >
 > **Casting Time:** 1 action
 >
@@ -5428,14 +5428,14 @@ isn’t performed.
 
 creature affected by this spell, the spell ends for that creature.
 
-***At Higher Levels***. When you cast this spell using a 7th-­‐‑level
-spell slot, the duration is 10 days. When you use an 8th-­‐‑level spell
-slot, the duration is 30 days. When you use a 9th-­‐‑level spell slot,
+***At Higher Levels***. When you cast this spell using a 7th-­level
+spell slot, the duration is 10 days. When you use an 8th-­level spell
+slot, the duration is 30 days. When you use a 9th-­level spell slot,
 the duration is a year and a day.
 
 #### Maze
 
-> *8th-­‐‑level conjuration*
+> *8th-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 >
@@ -5454,7 +5454,7 @@ that space is occupied, in the nearest unoccupied space.
 
 #### Meld into Stone
 
-> *3rd-­‐‑level transmutation (ritual)*
+> *3rd-­level transmutation (ritual)*
 >
 > **Casting Time:** 1 action **Range:** Touch **Components:** V, S
 > **Duration:** 8 hours
@@ -5526,13 +5526,13 @@ can travel freely around corners or through openings.
 
 #### Meteor Swarm
 
-> *9th-­‐‑level evocation*
+> *9th-­level evocation*
 >
 > **Casting Time:** 1 action **Range:** 1 mile **Components:** V, S
 > **Duration:** Instantaneous
 
 Blazing orbs of fire plummet to the ground at four different points you
-can see within range. Each creature in a 40-­‐‑foot-­‐‑radius sphere
+can see within range. Each creature in a 40-­foot-­radius sphere
 centered on each point you choose must make a Dexterity saving throw.
 The sphere spreads around corners. A creature takes 20d6 fire damage and
 20d6 bludgeoning damage on a failed save, or half as much damage on a
@@ -5544,7 +5544,7 @@ aren’t being worn or carried.
 
 #### Mind Blank
 
-> *8th-­‐‑level abjuration*
+> *8th-­level abjuration*
 >
 > **Casting Time:** 1 action **Range:** Touch **Components:** V, S
 > **Duration:** 24 hours
@@ -5578,7 +5578,7 @@ throughout the duration, or you can make discrete sounds at different
 times before the spell ends.
 
 If you create an image of an object—such as a chair, muddy footprints,
-or a small chest—it must be no larger than a 5-­‐‑foot cube. The image
+or a small chest—it must be no larger than a 5-­foot cube. The image
 can’t create sound, light, smell, or any other sensory effect. Physical
 interaction with the image reveals it to be an illusion, because things
 can pass through it.
@@ -5591,7 +5591,7 @@ faint to the creature.
 
 #### Mirage Arcane
 
-> *7th-­‐‑level illusion*
+> *7th-­level illusion*
 >
 > **Casting Time:** 10 minutes **Range:** Sight **Components:** V, S
 > **Duration:** 10 days
@@ -5601,7 +5601,7 @@ even feel like some other sort of terrain. The terrain’s general shape
 remains the same, however. Open fields or a road could be made to
 resemble a swamp, hill, crevasse, or some other difficult or impassable
 terrain. A pond can be made to seem like a grassy meadow, a precipice
-like a gentle slope, or a rock-­‐‑strewn gully like a wide and smooth
+like a gentle slope, or a rock-­strewn gully like a wide and smooth
 road.
 
 Similarly, you can alter the appearance of structures, or add them where
@@ -5620,7 +5620,7 @@ physically interact with the illusion.
 
 #### Mirror Image
 
-> *2nd-­‐‑level illusion*
+> *2nd-­level illusion*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V, S
 > **Duration:** 1 minute
@@ -5649,7 +5649,7 @@ illusions as false, as with truesight.
 
 #### Mislead
 
-> *5th-­‐‑level illusion*
+> *5th-­level illusion*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** S
 >
@@ -5670,7 +5670,7 @@ surroundings.
 
 #### Misty Step
 
-> *2nd-­‐‑level conjuration*
+> *2nd-­level conjuration*
 >
 > **Casting Time:** 1 bonus action
 >
@@ -5681,7 +5681,7 @@ unoccupied space that you can see.
 
 #### Modify Memory
 
-> *5th-­‐‑level enchantment*
+> *5th-­level enchantment*
 >
 > **Casting Time:** 1 action **Range:** 30 feet **Components:** V, S
 >
@@ -5730,7 +5730,7 @@ ago
 
 #### Moonbeam
 
-> *2nd-­‐‑level evocation*
+> *2nd-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -5742,8 +5742,8 @@ ago
 >
 > **Duration:** Concentration, up to 1 minute
 
-A silvery beam of pale light shines down in a 5-­‐‑foot-­‐‑ radius,
-40-­‐‑foot-­‐‑high cylinder centered on a point within range. Until the
+A silvery beam of pale light shines down in a 5-­foot-­ radius,
+40-­foot-­high cylinder centered on a point within range. Until the
 spell ends, dim light fills the cylinder.
 
 When a creature enters the spell’s area for the first time on a turn or
@@ -5765,7 +5765,7 @@ above 2nd.
 
 #### Move Earth
 
-> *6th-­‐‑level transmutation*
+> *6th-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -5782,7 +5782,7 @@ You can reshape dirt, sand, or clay in the area in any manner you choose
 for the duration. You can raise or lower the area’s elevation, create or
 fill in a trench, erect or flatten a wall, or form a pillar. The extent
 of any such changes can’t exceed half the area’s largest dimension. So,
-if you affect a 40-­‐‑foot square, you can create a pillar up to 20 feet
+if you affect a 40-­foot square, you can create a pillar up to 20 feet
 high, raise or lower the square’s elevation by up to 20 feet, dig a
 trench up to 20 feet deep, and so
 
@@ -5803,7 +5803,7 @@ earth carries any plants along with it.
 
 #### Nondetection
 
-> *3rd-­‐‑level abjuration*
+> *3rd-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -5821,7 +5821,7 @@ any divination magic or perceived through magical scrying sensors.
 
 #### Pass without Trace
 
-> *2nd-­‐‑level abjuration*
+> *2nd-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -5842,7 +5842,7 @@ traces of its passage.
 
 #### Passwall
 
-> *5th-­‐‑level transmutation*
+> *5th-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -5865,7 +5865,7 @@ an unoccupied space nearest to the surface on which you cast the spell.
 
 #### Phantasmal Killer
 
-> *4th-­‐‑level illusion*
+> *4th-­level illusion*
 >
 > **Casting Time:** 1 action **Range:** 120 feet **Components:** V, S
 >
@@ -5885,12 +5885,12 @@ above 4th.
 
 #### Phantom Steed
 
-> *3rd-­‐‑level illusion (ritual)*
+> *3rd-­level illusion (ritual)*
 >
 > **Casting Time:** 1 minute **Range:** 30 feet **Components:** V, S
 > **Duration:** 1 hour
 
-A Large quasi-­‐‑real, horselike creature appears on the ground in an
+A Large quasi-­real, horselike creature appears on the ground in an
 unoccupied space of your choice within range. You decide the creature’s
 appearance, but it is equipped with a saddle, bit, and bridle. Any of
 the equipment created by the spell vanishes in a puff of smoke if it is
@@ -5906,7 +5906,7 @@ if the steed takes any damage.
 
 #### Planar Ally
 
-> *6th-­‐‑level conjuration*
+> *6th-­level conjuration*
 >
 > **Casting Time:** 10 minutes **Range:** 60 feet **Components:** V, S
 > **Duration:** Instantaneous
@@ -5942,7 +5942,7 @@ Nonhazardous tasks typically require only half the suggested payment,
 while especially dangerous tasks might require a greater gift. Creatures
 rarely accept tasks that seem suicidal.
 
-After the creature completes the task, or when the agreed-­‐‑upon
+After the creature completes the task, or when the agreed-­upon
 duration of service expires, the creature returns to its home plane
 after reporting back to you, if appropriate to the task and if possible.
 
@@ -5954,7 +5954,7 @@ receiving a full share of experience points awarded.
 
 #### Planar Binding
 
-> *5th-­‐‑level abjuration*
+> *5th-­level abjuration*
 >
 > **Casting Time:** 1 hour
 >
@@ -5986,14 +5986,14 @@ of existence. If you are on a different plane of existence, it returns
 to the place where you bound it and remains there until the spell ends.
 
 ***At Higher Levels.*** When you cast this spell using a spell slot of a
-higher level, the duration increases to 10 days with a 6th-­‐‑level
-slot, to 30 days with a 7th-­‐‑ level slot, to 180 days with an
-8th-­‐‑level slot, and to a year and a day with a 9th-­‐‑level spell
+higher level, the duration increases to 10 days with a 6th-­level
+slot, to 30 days with a 7th-­ level slot, to 180 days with an
+8th-­level slot, and to a year and a day with a 9th-­level spell
 slot.
 
 #### Plane Shift
 
-> *7th-­‐‑level conjuration*
+> *7th-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -6029,7 +6029,7 @@ its own way back to your current plane of existence.
 
 #### Plant Growth
 
-> *3rd-­‐‑level transmutation*
+> *3rd-­level transmutation*
 >
 > **Casting Time:** 1 action or 8 hours
 >
@@ -6037,10 +6037,10 @@ its own way back to your current plane of existence.
 
 This spell channels vitality into plants within a specific area. There
 are two possible uses for the spell, granting either immediate or
-long-­‐‑term benefits.
+long-­term benefits.
 
 If you cast this spell using 1 action, choose a point within range. All
-normal plants in a 100-­‐‑foot radius centered on that point become
+normal plants in a 100-­foot radius centered on that point become
 thick and overgrown. A creature moving through the area must spend 4
 feet of movement for every 1 foot it moves.
 
@@ -6048,13 +6048,13 @@ You can exclude one or more areas of any size within the spell’s area
 from being affected.
 
 If you cast this spell over 8 hours, you enrich the land. All plants in
-a half-­‐‑mile radius centered on a point within range become enriched
+a half-­mile radius centered on a point within range become enriched
 for 1 year. The plants yield twice the normal amount of food when
 harvested.
 
 #### Polymorph
 
-> *4th-­‐‑level transmutation*
+> *4th-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -6092,7 +6092,7 @@ use, wield, or otherwise benefit from any of its equipment.
 
 #### Power Word Kill
 
-> *9th-­‐‑level enchantment*
+> *9th-­level enchantment*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V
 > **Duration:** Instantaneous
@@ -6103,7 +6103,7 @@ points or fewer, it dies. Otherwise, the spell has no effect.
 
 #### Power Word Stun
 
-> *8th-­‐‑level enchantment*
+> *8th-­level enchantment*
 >
 > **Casting Time:** 1 action
 >
@@ -6123,7 +6123,7 @@ each of its turns. On a successful save, this stunning effect ends.
 
 #### Prayer of Healing
 
-> *2nd-­‐‑level evocation*
+> *2nd-­level evocation*
 >
 > **Casting Time:** 10 minutes **Range:** 30 feet **Components:** V
 > **Duration:** Instantaneous
@@ -6166,19 +6166,19 @@ practice. You create one of the following magical effects within range:
     > your hand and that lasts until the end of your next turn.
 
 If you cast this spell multiple times, you can have up to three of its
-non-­‐‑instantaneous effects active at a time, and you can dismiss such
+non-­instantaneous effects active at a time, and you can dismiss such
 an effect as an action.
 
 #### Prismatic Spray
 
-> *7th-­‐‑level evocation*
+> *7th-­level evocation*
 >
-> **Casting Time:** 1 action **Range:** Self (60-­‐‑foot cone)
+> **Casting Time:** 1 action **Range:** Self (60-­foot cone)
 > **Components:** V, S **Duration:** Instantaneous
 
 Eight multicolored rays of light flash from your hand. Each ray is a
 different color and has a different power and purpose. Each creature in
-a 60-­‐‑foot cone must make a Dexterity saving throw. For each target,
+a 60-­foot cone must make a Dexterity saving throw. For each target,
 roll a d8 to determine which color ray affects it.
 
 1.  ***Red.*** The target takes 10d6 fire damage on a failed save, or
@@ -6219,7 +6219,7 @@ failed save, or half as much damage on a successful one.
 #### \
 Prismatic Wall
 
-> *9th-­‐‑level abjuration*
+> *9th-­level abjuration*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 > **Duration:** 10 minutes
@@ -6303,7 +6303,7 @@ through the wall. The layer is destroyed by bright light shed by a
 
 #### Private Sanctum
 
-> *4th-­‐‑level abjuration*
+> *4th-­level abjuration*
 >
 > **Casting Time:** 10 minutes
 >
@@ -6352,7 +6352,7 @@ be up to 200 feet on one side by using a spell slot of 5th level.
 
 A flickering flame appears in your hand. The flame remains there for the
 duration and harms neither you nor your equipment. The flame sheds
-bright light in a 10-­‐‑foot radius and dim light for an additional 10
+bright light in a 10-­foot radius and dim light for an additional 10
 feet. The spell ends if you dismiss it as an action or if you cast it
 again.
 
@@ -6366,7 +6366,7 @@ This spell’s damage increases by 1d8 when you reach 5th level (2d8),
 
 #### Programmed Illusion
 
-> *6th-­‐‑level illusion*
+> *6th-­level illusion*
 >
 > **Casting Time:** 1 action
 >
@@ -6382,7 +6382,7 @@ phenomenon within range that activates when a specific condition occurs.
 The
 
 illusion is imperceptible until then. It must be no larger than a
-30-­‐‑foot cube, and you decide when you cast the spell how the illusion
+30-­foot cube, and you decide when you cast the spell how the illusion
 behaves and what sounds it makes. This scripted performance can last up
 to 5 minutes.
 
@@ -6408,7 +6408,7 @@ through the image, and any noise it makes sounds hollow to the creature.
 
 #### Project Image
 
-> *7th-­‐‑level illusion*
+> *7th-­level illusion*
 >
 > **Casting Time:** 1 action
 >
@@ -6446,7 +6446,7 @@ sounds hollow to the creature.
 
 #### Protection from Energy
 
-> *3rd-­‐‑level abjuration*
+> *3rd-­level abjuration*
 >
 > **Casting Time:** 1 action **Range:** Touch **Components:** V, S
 >
@@ -6457,7 +6457,7 @@ damage type of your choice: acid, cold, fire, lightning, or thunder.
 
 #### Protection from Evil and Good
 
-> *1st-­‐‑level abjuration*
+> *1st-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -6480,7 +6480,7 @@ advantage on any new saving throw against the relevant effect.
 
 #### Protection from Poison
 
-> *2nd-­‐‑level abjuration*
+> *2nd-­level abjuration*
 >
 > **Casting Time:** 1 action **Range:** Touch **Components:** V, S
 > **Duration:** 1 hour
@@ -6496,18 +6496,18 @@ damage.
 
 #### Purify Food and Drink
 
-> *1st-­‐‑level transmutation (ritual)*
+> *1st-­level transmutation (ritual)*
 >
 > **Casting Time:** 1 action **Range:** 10 feet **Components:** V, S
 > **Duration:** Instantaneous
 
-All nonmagical food and drink within a 5-­‐‑foot-­‐‑radius sphere
+All nonmagical food and drink within a 5-­foot-­radius sphere
 centered on a point of your choice within range is purified and rendered
 free of poison and disease.
 
 #### Raise Dead
 
-> *5th-­‐‑level necromancy*
+> *5th-­level necromancy*
 >
 > **Casting Time:** 1 hour
 >
@@ -6541,7 +6541,7 @@ disappears.
 
 #### Ray of Enfeeblement
 
-> *2nd-­‐‑level necromancy*
+> *2nd-­level necromancy*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 >
@@ -6564,7 +6564,7 @@ saving throw against the spell. On a success, the spell ends.
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 > **Duration:** Instantaneous
 
-A frigid beam of blue-­‐‑white light streaks toward a creature within
+A frigid beam of blue-­white light streaks toward a creature within
 range. Make a ranged spell attack against the target. On a hit, it takes
 1d8 cold damage, and its speed is reduced by 10 feet until the start of
 your next turn.
@@ -6574,7 +6574,7 @@ level (3d8), and 17th level (4d8).
 
 #### Regenerate
 
-> *7th-­‐‑level transmutation*
+> *7th-­level transmutation*
 >
 > **Casting Time:** 1 minute
 >
@@ -6596,7 +6596,7 @@ the stump.
 
 #### Reincarnate
 
-> *5th-­‐‑level transmutation*
+> *5th-­level transmutation*
 >
 > **Casting Time:** 1 hour
 >
@@ -6655,7 +6655,7 @@ traits accordingly.
 
 #### Remove Curse
 
-> *3rd-­‐‑level abjuration*
+> *3rd-­level abjuration*
 >
 > **Casting Time:** 1 action **Range:** Touch **Components:** V, S
 > **Duration:** Instantaneous
@@ -6666,7 +6666,7 @@ its owner’s attunement to the object so it can be removed or discarded.
 
 #### Resilient Sphere
 
-> *4th-­‐‑level evocation*
+> *4th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -6719,7 +6719,7 @@ spell then ends.
 
 #### Resurrection
 
-> *7th-­‐‑level necromancy*
+> *7th-­level necromancy*
 >
 > **Casting Time:** 1 hour
 >
@@ -6753,7 +6753,7 @@ ability checks, and saving throws.
 
 #### Reverse Gravity
 
-> *7th-­‐‑level transmutation*
+> *7th-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -6763,7 +6763,7 @@ ability checks, and saving throws.
 >
 > **Duration:** Concentration, up to 1 minute
 
-This spell reverses gravity in a 50-­‐‑foot-­‐‑radius, 100-­‐‑ foot high
+This spell reverses gravity in a 50-­foot-­radius, 100-­ foot high
 cylinder centered on a point within range. All creatures and objects
 that aren’t somehow anchored to the ground in the area fall upward and
 reach the top of the area when you cast this spell. A creature can make
@@ -6781,7 +6781,7 @@ down.
 
 #### Revivify
 
-> *3rd-­‐‑level necromancy*
+> *3rd-­level necromancy*
 >
 > **Casting Time:** 1 action
 >
@@ -6799,7 +6799,7 @@ parts.
 
 #### Rope Trick
 
-> *2nd-­‐‑level transmutation*
+> *2nd-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -6822,7 +6822,7 @@ view outside the space.
 
 Attacks and spells can’t cross through the entrance into or out of the
 extradimensional space, but those inside can see out of it as if through
-a 3-­‐‑foot-­‐‑by-­‐‑5-­‐‑ foot window centered on the rope.
+a 3-­foot-­by-­5-­ foot window centered on the rope.
 
 Anything inside the extradimensional space drops out when the spell
 ends.
@@ -6834,7 +6834,7 @@ ends.
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 > **Duration:** Instantaneous
 
-Flame-­‐‑like radiance descends on a creature that you can see within
+Flame-­like radiance descends on a creature that you can see within
 range. The target must succeed on a Dexterity saving throw or take 1d8
 radiant damage. The target gains no benefit from cover for this saving
 throw.
@@ -6844,7 +6844,7 @@ level (3d8), and 17th level (4d8).
 
 #### Sanctuary
 
-> *1st-­‐‑level abjuration*
+> *1st-­level abjuration*
 >
 > **Casting Time:** 1 bonus action
 >
@@ -6866,7 +6866,7 @@ enemy creature, this spell ends.
 
 #### Scorching Ray
 
-> *2nd-­‐‑level evocation*
+> *2nd-­level evocation*
 >
 > **Casting Time:** 1 action **Range:** 120 feet **Components:** V, S
 > **Duration:** Instantaneous
@@ -6884,7 +6884,7 @@ above 2nd.
 
 #### Scrying
 
-> *5th-­‐‑level divination*
+> *5th-­level divination*
 >
 > **Casting Time:** 10 minutes
 >
@@ -6938,7 +6938,7 @@ move.
 
 #### Secret Chest
 
-> *4th-­‐‑level conjuration*
+> *4th-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -6971,7 +6971,7 @@ Ethereal Plane, it is irretrievably lost.
 
 #### See Invisibility
 
-> *2nd-­‐‑level divination*
+> *2nd-­level divination*
 >
 > **Casting Time:** 1 action
 >
@@ -6988,7 +6988,7 @@ creatures and objects appear ghostly and translucent.
 
 #### Seeming
 
-> *5th-­‐‑level illusion*
+> *5th-­level illusion*
 >
 > **Casting Time:** 1 action **Range:** 30 feet **Components:** V, S
 > **Duration:** 8 hours
@@ -7023,7 +7023,7 @@ succeeds, it becomes aware that the target is disguised.
 
 #### Sending
 
-> *3rd-­‐‑level evocation*
+> *3rd-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -7033,7 +7033,7 @@ succeeds, it becomes aware that the target is disguised.
 >
 > **Duration:** 1 round
 
-You send a short message of twenty-­‐‑five words or less to a creature
+You send a short message of twenty-­five words or less to a creature
 with which you are familiar. The creature hears the message in its mind,
 recognizes you as the sender if it knows you, and can answer in a like
 manner immediately. The spell enables creatures with Intelligence scores
@@ -7045,7 +7045,7 @@ a 5 percent chance that the message doesn’t arrive.
 
 #### Sequester
 
-> *7th-­‐‑level transmutation*
+> *7th-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -7074,7 +7074,7 @@ awakens.” This spell also ends if the target takes any damage.
 
 #### Shapechange
 
-> *9th-­‐‑level transmutation*
+> *9th-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -7133,7 +7133,7 @@ than your current one, your hit points remain at their current value.
 
 #### Shatter
 
-> *2nd-­‐‑level evocation*
+> *2nd-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -7144,7 +7144,7 @@ than your current one, your hit points remain at their current value.
 > **Duration:** Instantaneous
 
 A sudden loud ringing noise, painfully intense, erupts from a point of
-your choice within range. Each creature in a 10-­‐‑foot-­‐‑radius sphere
+your choice within range. Each creature in a 10-­foot-­radius sphere
 centered on that point must make a Constitution saving throw. A creature
 takes 3d8 thunder damage on a failed save, or half as much damage on a
 successful one. A creature made of inorganic material such as stone,
@@ -7160,7 +7160,7 @@ above 2nd.
 #### \
 Shield
 
-> *1st-­‐‑level abjuration*
+> *1st-­level abjuration*
 >
 > **Casting Time:** 1 reaction, which you take when you are hit by an
 > attack or targeted by the *magic missile* spell
@@ -7178,7 +7178,7 @@ missile.*
 
 #### Shield of Faith
 
-> *1st-­‐‑level abjuration*
+> *1st-­level abjuration*
 >
 > **Casting Time:** 1 bonus action
 >
@@ -7232,21 +7232,21 @@ level (3d8), and 17th level (4d8).
 
 #### Silence
 
-> *2nd-­‐‑level illusion (ritual)*
+> *2nd-­level illusion (ritual)*
 >
 > **Casting Time:** 1 action **Range:** 120 feet **Components:** V, S
 >
 > **Duration:** Concentration, up to 10 minutes
 
 For the duration, no sound can be created within or pass through a
-20-­‐‑foot-­‐‑radius sphere centered on a point you choose within range.
+20-­foot-­radius sphere centered on a point you choose within range.
 Any creature or object entirely inside the sphere is immune to thunder
 damage, and creatures are deafened while entirely inside it. Casting a
 spell that includes a verbal component is impossible there.
 
 #### Silent Image
 
-> *1st-­‐‑level illusion*
+> *1st-­level illusion*
 >
 > **Casting Time:** 1 action
 >
@@ -7257,7 +7257,7 @@ spell that includes a verbal component is impossible there.
 > **Duration:** Concentration, up to 10 minutes
 
 You create the image of an object, a creature, or some other visible
-phenomenon that is no larger than a 15-­‐‑foot cube. The image appears
+phenomenon that is no larger than a 15-­foot cube. The image appears
 at a spot within range and lasts for the duration. The image is purely
 visual; it isn’t accompanied by sound, smell, or other sensory effects.
 
@@ -7277,14 +7277,14 @@ through the image.
 #### \
 Simulacrum
 
-> *7th-­‐‑level illusion*
+> *7th-­level illusion*
 >
 > **Casting Time:** 12 hours
 >
 > **Range:** Touch
 >
 > **Components:** V, S, M (snow or ice in quantities sufficient to made
-> a life-­‐‑size copy of the duplicated creature; some hair, fingernail
+> a life-­size copy of the duplicated creature; some hair, fingernail
 > clippings, or other piece of that creature’s body placed inside the
 > snow or ice; and powdered ruby worth 1,500 gp, sprinkled over the
 > duplicate and consumed by the spell)
@@ -7318,7 +7318,7 @@ created with this spell are instantly destroyed.
 
 #### Sleep
 
-> *1st-­‐‑level enchantment*
+> *1st-­level enchantment*
 >
 > **Casting Time:** 1 action
 >
@@ -7352,7 +7352,7 @@ spell.
 
 #### Sleet Storm
 
-> *3rd-­‐‑level conjuration*
+> *3rd-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -7363,7 +7363,7 @@ spell.
 > **Duration:** Concentration, up to 1 minute
 
 Until the spell ends, freezing rain and sleet fall in a
-20-­‐‑foot-­‐‑tall cylinder with a 40-­‐‑foot radius centered on a point
+20-­foot-­tall cylinder with a 40-­foot radius centered on a point
 you choose within range. The area is heavily obscured, and exposed
 flames in the area are doused.
 
@@ -7379,7 +7379,7 @@ or lose concentration.
 
 #### Slow
 
-> *3rd-­‐‑level transmutation*
+> *3rd-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -7389,7 +7389,7 @@ or lose concentration.
 >
 > **Duration:** Concentration, up to 1 minute
 
-You alter time around up to six creatures of your choice in a 40-­‐‑foot
+You alter time around up to six creatures of your choice in a 40-­foot
 cube within range. Each target must succeed on a Wisdom saving throw or
 be affected by this spell for the duration.
 
@@ -7410,7 +7410,7 @@ the end of its turn. On a successful save, the effect ends for it.
 
 #### Speak with Animals
 
-> *1st-­‐‑level divination (ritual)*
+> *1st-­level divination (ritual)*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V, S
 > **Duration:** 10 minutes
@@ -7425,7 +7425,7 @@ discretion.
 
 #### Speak with Dead
 
-> *3rd-­‐‑level necromancy*
+> *3rd-­level necromancy*
 >
 > **Casting Time:** 1 action
 >
@@ -7453,9 +7453,9 @@ future events.
 
 #### Speak with Plants
 
-> *3rd-­‐‑level transmutation*
+> *3rd-­level transmutation*
 >
-> **Casting Time:** 1 action **Range:** Self (30-­‐‑foot radius)
+> **Casting Time:** 1 action **Range:** Self (30-­foot radius)
 > **Components:** V, S **Duration:** 10 minutes
 
 You imbue plants within 30 feet of you with limited sentience and
@@ -7484,7 +7484,7 @@ influence it.
 
 #### Spider Climb
 
-> *2nd-­‐‑level transmutation*
+> *2nd-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -7501,7 +7501,7 @@ speed equal to its walking speed.
 
 #### Spike Growth
 
-> *2nd-­‐‑level transmutation*
+> *2nd-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -7512,7 +7512,7 @@ speed equal to its walking speed.
 >
 > **Duration:** Concentration, up to 10 minutes
 
-The ground in a 20-­‐‑foot radius centered on a point within range
+The ground in a 20-­foot radius centered on a point within range
 twists and sprouts hard spikes and thorns. The area becomes difficult
 terrain for the duration. When a creature moves into or within the area,
 it takes 2d4 piercing damage for every 5 feet it travels.
@@ -7525,11 +7525,11 @@ save DC to recognize the terrain as hazardous before entering it.
 
 #### Spirit Guardians
 
-> *3rd-­‐‑level conjuration*
+> *3rd-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
-> **Range:** Self (15-­‐‑foot radius) **Components:** V, S, M (a holy
+> **Range:** Self (15-­foot radius) **Components:** V, S, M (a holy
 > symbol) **Duration:** Concentration, up to 10 minutes
 
 You call forth spirits to protect you. They flit around you to a
@@ -7552,7 +7552,7 @@ above 3rd.
 
 #### Spiritual Weapon
 
-> *2nd-­‐‑level evocation*
+> *2nd-­level evocation*
 >
 > **Casting Time:** 1 bonus action **Range:** 60 feet **Components:** V,
 > S **Duration:** 1 minute
@@ -7580,7 +7580,7 @@ two slot levels above 2nd.
 
 #### Stinking Cloud
 
-> *3rd-­‐‑level conjuration*
+> *3rd-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -7590,7 +7590,7 @@ two slot levels above 2nd.
 >
 > **Duration:** Concentration, up to 1 minute
 
-You create a 20-­‐‑foot-­‐‑radius sphere of yellow, nauseating gas
+You create a 20-­foot-­radius sphere of yellow, nauseating gas
 centered on a point within range. The cloud spreads around corners, and
 its area is heavily obscured. The cloud lingers in the air for the
 duration.
@@ -7608,7 +7608,7 @@ hour) disperses it after 1 round.
 
 #### Stone Shape
 
-> *4th-­‐‑level transmutation*
+> *4th-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -7631,7 +7631,7 @@ a latch, but finer mechanical detail isn’t possible.
 
 #### Stoneskin
 
-> *4th-­‐‑level abjuration*
+> *4th-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -7648,7 +7648,7 @@ bludgeoning, piercing, and slashing damage.
 
 #### Storm of Vengeance
 
-> *9th-­‐‑level conjuration*
+> *9th-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** Sight **Components:** V, S
 >
@@ -7689,7 +7689,7 @@ or magical.
 
 #### Suggestion
 
-> *2nd-­‐‑level enchantment*
+> *2nd-­level enchantment*
 >
 > **Casting Time:** 1 action
 >
@@ -7723,15 +7723,15 @@ If you or any of your companions damage the target, the spell ends.
 
 #### Sunbeam
 
-> *6th-­‐‑level evocation*
+> *6th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
-> **Range:** Self (60-­‐‑foot line) **Components:** V, S, M (a
+> **Range:** Self (60-­foot line) **Components:** V, S, M (a
 > magnifying glass) **Duration:** Concentration, up to 1 minute
 
 A beam of brilliant light flashes out from your hand in a
-5-­‐‑foot-­‐‑wide, 60-­‐‑foot-­‐‑long line. Each creature in the line
+5-­foot-­wide, 60-­foot-­long line. Each creature in the line
 must make a Constitution saving throw. On a failed save, a creature
 takes 6d8 radiant damage and is blinded until your next turn. On a
 successful save, it takes half as much damage and isn’t blinded by
@@ -7743,12 +7743,12 @@ the spell ends.
 
 > For the duration, a mote of brilliant radiance
 
-shines in your hand. It sheds bright light in a 30-­‐‑foot radius and
+shines in your hand. It sheds bright light in a 30-­foot radius and
 dim light for an additional 30 feet. This light is sunlight.
 
 #### Sunburst
 
-> *8th-­‐‑level evocation*
+> *8th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -7758,7 +7758,7 @@ dim light for an additional 30 feet. This light is sunlight.
 >
 > **Duration:** Instantaneous
 
-Brilliant sunlight flashes in a 60-­‐‑foot radius centered on a point
+Brilliant sunlight flashes in a 60-­foot radius centered on a point
 you choose within range. Each creature in that light must make a
 Constitution saving throw. On a failed save, a creature takes 12d6
 radiant damage and is blinded for 1 minute. On a successful save, it
@@ -7773,7 +7773,7 @@ This spell dispels any darkness in its area that was created by a spell.
 
 #### Symbol
 
-> *7th-­‐‑level abjuration*
+> *7th-­level abjuration*
 >
 > **Casting Time:** 1 minute
 >
@@ -7815,7 +7815,7 @@ say a certain password.
 > When you inscribe the glyph, choose one of the
 
 options below for its effect. Once triggered, the glyph glows, filling a
-60-­‐‑foot-­‐‑radius sphere with dim light for 10 minutes, after which
+60-­foot-­radius sphere with dim light for 10 minutes, after which
 time the spell ends. Each creature in the sphere when the glyph
 activates is targeted by its effect, as is a creature that enters the
 sphere for the first time on a turn or ends its turn there.
@@ -7858,7 +7858,7 @@ stunned for 1 minute on a failed save.
 
 #### Telekinesis
 
-> *5th-­‐‑level transmutation*
+> *5th-­level transmutation*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 >
@@ -7877,7 +7877,7 @@ Strength check. If you win the contest, you move the creature up to 30
 feet in any direction, including upward but not beyond the range of this
 spell. Until the end of your next turn, the creature is restrained in
 your telekinetic grip. A creature lifted upward is suspended in
-mid-­‐‑air.
+mid-­air.
 
 On subsequent rounds, you can use your action to attempt to maintain
 your telekinetic grip on the creature by repeating the contest.
@@ -7901,7 +7901,7 @@ an item from an open container, or pouring the contents from a vial.
 
 #### Telepathic Bond
 
-> *5th-­‐‑level divination (ritual)*
+> *5th-­level divination (ritual)*
 >
 > **Casting Time:** 1 action
 >
@@ -7925,7 +7925,7 @@ existence.
 
 #### Teleport
 
-> *7th-­‐‑level conjuration*
+> *7th-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** 10 feet **Components:** V
 > **Duration:** Instantaneous
@@ -7933,7 +7933,7 @@ existence.
 This spell instantly transports you and up to eight willing creatures of
 your choice that you can see within range, or a single object that you
 can see within range, to a destination you select. If you target an
-object, it must be able to fit entirely inside a 10-­‐‑foot cube, and it
+object, it must be able to fit entirely inside a 10-­foot cube, and it
 can’t be held or carried by an unwilling creature.
 
 The destination you choose must be known to you, and it must be on the
@@ -8029,7 +8029,7 @@ time).
 
 #### Teleportation Circle
 
-> *5th-­‐‑level conjuration*
+> *5th-­level conjuration*
 >
 > **Casting Time:** 1 minute
 >
@@ -8040,7 +8040,7 @@ time).
 >
 > **Duration:** 1 round
 
-As you cast the spell, you draw a 10-­‐‑foot-­‐‑diameter circle on the
+As you cast the spell, you draw a 10-­foot-­diameter circle on the
 ground inscribed with sigils that link your location to a permanent
 teleportation circle of your choice whose sigil sequence you know and
 that is on the same plane of existence as you. A shimmering portal opens
@@ -8090,19 +8090,19 @@ You create one of the following magical effects within range:
 -   You alter the appearance of your eyes for 1 minute. If you cast this
     > spell multiple times, you can have up
 
-to three of its 1-­‐‑minute effects active at a time, and
+to three of its 1-­minute effects active at a time, and
 
 you can dismiss such an effect as an action.
 
 #### Thunderwave
 
-> *1st-­‐‑level evocation*
+> *1st-­level evocation*
 >
-> **Casting Time:** 1 action **Range:** Self (15-­‐‑foot cube)
+> **Casting Time:** 1 action **Range:** Self (15-­foot cube)
 > **Components:** V, S **Duration:** Instantaneous
 
 A wave of thunderous force sweeps out from you. Each creature in a
-15-­‐‑foot cube originating from you must make a Constitution saving
+15-­foot cube originating from you must make a Constitution saving
 throw. On a failed save, a creature takes 2d8 thunder damage and is
 pushed 10 feet away from you. On a successful save, the creature takes
 half as much damage and isn’t pushed.
@@ -8117,7 +8117,7 @@ above 1st.
 
 #### Time Stop
 
-> *9th-­‐‑level transmutation*
+> *9th-­level transmutation*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V
 > **Duration:** Instantaneous
@@ -8134,14 +8134,14 @@ from the location where you cast it.
 
 #### Tiny Hut
 
-> *3rd-­‐‑level evocation (ritual)*
+> *3rd-­level evocation (ritual)*
 >
 > **Casting Time:** 1 minute
 >
-> **Range:** Self (10-­‐‑foot-­‐‑radius hemisphere) **Components:** V,
+> **Range:** Self (10-­foot-­radius hemisphere) **Components:** V,
 > S, M (a small crystal bead) **Duration:** 8 hours
 
-A 10-­‐‑foot-­‐‑radius immobile dome of force springs into existence
+A 10-­foot-­radius immobile dome of force springs into existence
 around and above you and remains stationary for the duration. The spell
 ends if you leave its area.
 
@@ -8159,7 +8159,7 @@ but it is transparent from the inside.
 
 #### Tongues
 
-> *3rd-­‐‑level divination*
+> *3rd-­level divination*
 >
 > **Casting Time:** 1 action
 >
@@ -8176,7 +8176,7 @@ what it says.
 
 #### Transport via Plants
 
-> *6th-­‐‑level conjuration*
+> *6th-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** 10 feet **Components:** V, S
 > **Duration:** 1 round
@@ -8191,7 +8191,7 @@ movement.
 #### \
 Tree Stride
 
-> *5th-­‐‑level conjuration*
+> *5th-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V, S
 >
@@ -8212,7 +8212,7 @@ You must end each turn outside a tree.
 
 #### True Polymorph
 
-> *9th-­‐‑level transmutation*
+> *9th-­level transmutation*
 >
 > **Casting Time:** 1 action
 >
@@ -8277,7 +8277,7 @@ and it returns to its normal form.
 
 #### True Resurrection
 
-> *9th-­‐‑level necromancy*
+> *9th-­level necromancy*
 >
 > **Casting Time:** 1 hour
 >
@@ -8302,7 +8302,7 @@ appears in an unoccupied space you choose within 10 feet of you.
 
 #### True Seeing
 
-> *6th-­‐‑level divination*
+> *6th-­level divination*
 >
 > **Casting Time:** 1 action
 >
@@ -8334,7 +8334,7 @@ provided that this spell hasn’t ended.
 
 #### Unseen Servant
 
-> *1st-­‐‑level conjuration (ritual)*
+> *1st-­level conjuration (ritual)*
 >
 > **Casting Time:** 1 action
 >
@@ -8366,13 +8366,13 @@ than 60 feet away from you, the spell ends.
 
 #### Vampiric Touch
 
-> *3rd-­‐‑level necromancy*
+> *3rd-­level necromancy*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V, S
 >
 > **Duration:** Concentration, up to 1 minute
 
-The touch of your shadow-­‐‑wreathed hand can siphon life force from
+The touch of your shadow-­wreathed hand can siphon life force from
 others to heal your wounds. Make a melee spell attack against a creature
 within your reach. On a hit, the target takes 3d6 necrotic damage, and
 you regain hit points equal to half the amount of necrotic damage dealt.
@@ -8385,7 +8385,7 @@ above 3rd.
 
 #### Wall of Fire
 
-> *4th-­‐‑level evocation*
+> *4th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -8416,7 +8416,7 @@ above 4th.
 
 #### Wall of Force
 
-> *5th-­‐‑level evocation*
+> *5th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -8432,7 +8432,7 @@ within range. The wall appears in any orientation you choose, as a
 horizontal or vertical barrier or at an angle. It can be free floating
 or resting on a solid surface. You can form it into a hemispherical dome
 or a sphere with a radius of up to 10 feet, or you can shape a flat
-surface made up of ten 10-­‐‑foot-­‐‑by-­‐‑10-­‐‑foot panels. Each panel
+surface made up of ten 10-­foot-­by-­10-­foot panels. Each panel
 must be contiguous with another panel. In any form, the wall is 1/4 inch
 thick. It lasts for the duration. If the wall cuts through a creature’s
 space when it appears, the creature is pushed to one side of the wall
@@ -8445,7 +8445,7 @@ Ethereal Plane, blocking ethereal travel through the wall.
 
 #### Wall of Ice
 
-> *6th-­‐‑level evocation*
+> *6th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -8457,7 +8457,7 @@ Ethereal Plane, blocking ethereal travel through the wall.
 
 You create a wall of ice on a solid surface within range. You can form
 it into a hemispherical dome or a sphere with a radius of up to 10 feet,
-or you can shape a flat surface made up of ten 10-­‐‑foot-­‐‑square
+or you can shape a flat surface made up of ten 10-­foot-­square
 panels. Each panel must be contiguous with another panel. In any form,
 the wall is 1 foot thick and lasts for the duration.
 
@@ -8467,8 +8467,8 @@ a Dexterity saving throw. On a failed save, the creature takes 10d6 cold
 damage, or half as much damage on a successful save.
 
 The wall is an object that can be damaged and thus breached. It has AC
-12 and 30 hit points per 10-­‐‑foot section, and it is vulnerable to
-fire damage. Reducing a 10-­‐‑foot section of wall to 0 hit points
+12 and 30 hit points per 10-­foot section, and it is vulnerable to
+fire damage. Reducing a 10-­foot section of wall to 0 hit points
 destroys it and leaves behind a sheet of frigid air in the space the
 wall occupied. A creature moving through the sheet of frigid air for the
 first time on a turn must make a Constitution saving throw. That
@@ -8483,7 +8483,7 @@ of frigid air increases by 1d6, for each slot level above 6th.
 
 #### Wall of Stone
 
-> *5th-­‐‑level evocation*
+> *5th-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -8495,9 +8495,9 @@ of frigid air increases by 1d6, for each slot level above 6th.
 
 A nonmagical wall of solid stone springs into existence at a point you
 choose within range. The wall is 6 inches thick and is composed of ten
-10-­‐‑foot-­‐‑ by-­‐‑10-­‐‑foot panels. Each panel must be contiguous
+10-­foot-­ by-­10-­foot panels. Each panel must be contiguous
 with at least one other panel. Alternatively, you can create
-10-­‐‑foot-­‐‑by-­‐‑20-­‐‑foot panels that are only 3 inches thick.
+10-­foot-­by-­20-­foot panels that are only 3 inches thick.
 
 If the wall cuts through a creature’s space when it appears, the
 creature is pushed to one side of the wall (your choice). If a creature
@@ -8527,7 +8527,7 @@ disappears when the spell ends.
 
 #### Wall of Thorns
 
-> *6th-­‐‑level conjuration*
+> *6th-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -8538,9 +8538,9 @@ disappears when the spell ends.
 > **Duration:** Concentration, up to 10 minutes
 
 You create a wall of tough, pliable, tangled brush bristling with
-needle-­‐‑sharp thorns. The wall appears within range on a solid surface
+needle-­sharp thorns. The wall appears within range on a solid surface
 and lasts for the duration. You choose to make the wall up to 60 feet
-long, 10 feet high, and 5 feet thick or a circle that has a 20-­‐‑foot
+long, 10 feet high, and 5 feet thick or a circle that has a 20-­foot
 diameter and is up to 20 feet high and 5 feet thick. The wall blocks
 line of sight.
 
@@ -8561,7 +8561,7 @@ level above 6th.
 
 #### Warding Bond
 
-> *2nd-­‐‑level abjuration*
+> *2nd-­level abjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -8587,7 +8587,7 @@ creatures. You can also dismiss the spell as an action.
 
 #### Water Breathing
 
-> *3rd-­‐‑level transmutation (ritual)*
+> *3rd-­level transmutation (ritual)*
 >
 > **Casting Time:** 1 action
 >
@@ -8603,7 +8603,7 @@ creatures also retain their normal mode of respiration.
 
 #### Water Walk
 
-> *3rd-­‐‑level transmutation (ritual)*
+> *3rd-­level transmutation (ritual)*
 >
 > **Casting Time:** 1 action
 >
@@ -8624,7 +8624,7 @@ target to the surface of the liquid at a rate of 60 feet per round.
 
 #### Web
 
-> *2nd-­‐‑level conjuration*
+> *2nd-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -8635,7 +8635,7 @@ target to the surface of the liquid at a rate of 60 feet per round.
 > **Duration:** Concentration, up to 1 hour
 
 You conjure a mass of thick, sticky webbing at a point of your choice
-within range. The webs fill a 20-­‐‑ foot cube from that point for the
+within range. The webs fill a 20-­ foot cube from that point for the
 duration. The webs are difficult terrain and lightly obscure their area.
 
 If the webs aren’t anchored between two solid masses (such as walls or
@@ -8653,13 +8653,13 @@ A creature restrained by the webs can use its action to make a Strength
 check against your spell save DC. If it succeeds, it is no longer
 restrained.
 
-The webs are flammable. Any 5-­‐‑foot cube of webs exposed to fire burns
+The webs are flammable. Any 5-­foot cube of webs exposed to fire burns
 away in 1 round, dealing 2d4 fire damage to any creature that starts its
 turn in the fire.
 
 #### Weird
 
-> *9th-­‐‑level illusion*
+> *9th-­level illusion*
 >
 > **Casting Time:** 1 action **Range:** 120 feet **Components:** V, S
 >
@@ -8667,7 +8667,7 @@ turn in the fire.
 
 Drawing on the deepest fears of a group of creatures, you create
 illusory creatures in their minds, visible only to them. Each creature
-in a 30-­‐‑foot-­‐‑radius sphere centered on a point of your choice
+in a 30-­foot-­radius sphere centered on a point of your choice
 within range must make a Wisdom saving throw. On a failed save, a
 creature becomes frightened for the duration. The illusion calls on the
 creature’s deepest fears, manifesting its worst nightmares as an
@@ -8677,7 +8677,7 @@ damage. On a successful save, the spell ends for that creature.
 
 #### Wind Walk
 
-> *6th-­‐‑level transmutation*
+> *6th-­level transmutation*
 >
 > **Casting Time:** 1 minute
 >
@@ -8694,7 +8694,7 @@ resistance to damage from nonmagical weapons. The only actions a
 creature can take in this form are the Dash action or to revert to its
 normal form. Reverting takes 1 minute, during which time a creature is
 incapacitated and can’t move. Until the spell ends, a creature can
-revert to cloud form, which also requires the 1-­‐‑minute
+revert to cloud form, which also requires the 1-­minute
 transformation.
 
 If a creature is in cloud form and flying when the effect ends, the
@@ -8705,7 +8705,7 @@ can’t land after 1 minute, the creature falls the remaining distance.
 
 #### Wind Wall
 
-> *3rd-­‐‑level evocation*
+> *3rd-­level evocation*
 >
 > **Casting Time:** 1 action
 >
@@ -8738,7 +8738,7 @@ Creatures in gaseous form can’t pass through it.
 
 #### Wish
 
-> *9th-­‐‑level conjuration*
+> *9th-­level conjuration*
 >
 > **Casting Time:** 1 action **Range:** Self **Components:** V
 > **Duration:** Instantaneous
@@ -8803,7 +8803,7 @@ that you are unable to cast *wish* ever again if you suffer this stress.
 
 #### Word of Recall
 
-> *6th-­‐‑level conjuration*
+> *6th-­level conjuration*
 >
 > **Casting Time:** 1 action
 >
@@ -8827,13 +8827,13 @@ to your deity, the spell has no effect.
 
 #### Zone of Truth
 
-> *2nd-­‐‑level enchantment*
+> *2nd-­level enchantment*
 >
 > **Casting Time:** 1 action **Range:** 60 feet **Components:** V, S
 > **Duration:** 10 minutes
 
 You create a magical zone that guards against deception in a
-15-­‐‑foot-­‐‑radius sphere centered on a point of your choice within
+15-­foot-­radius sphere centered on a point of your choice within
 range. Until the spell ends, a creature that enters the spell’s area for
 the first time on a turn or starts its turn there must make a Charisma
 saving throw. On a failed save, a creature can’t speak a deliberate lie

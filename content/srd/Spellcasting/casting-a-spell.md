@@ -138,7 +138,7 @@ concentration. The following factors can break concentration:
     > if you are incapacitated or if you die.
 
 The GM might also decide that certain environmental phenomena, such as a
-wave crashing over you while you’re on a storm-­‐‑tossed ship, require
+wave crashing over you while you’re on a storm-­tossed ship, require
 you to succeed on a DC 10 Constitution saving throw to maintain
 concentration on a spell.
 

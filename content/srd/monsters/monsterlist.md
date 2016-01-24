@@ -6800,7 +6800,7 @@ disguised.
 
 ### Half-Dragon Template
 
-A beast, humanoid, giant, or monstrosity can become a half-­‐‑dragon. It
+A beast, humanoid, giant, or monstrosity can become a half-­dragon. It
 keeps its statistics, except as follows. ***Challenge.*** To avoid
 recalculating the creature’s
 
@@ -6808,11 +6808,11 @@ challenge rating, apply the template only to a creature that meets the
 optional prerequisite in the Breath Weapon table below. Otherwise,
 recalculate the rating after you apply the template.
 
-> ***Senses.*** The half-­‐‑dragon gains blindsight with a
+> ***Senses.*** The half-­dragon gains blindsight with a
 
 radius of 10 feet and darkvision with a radius of 60 feet.
 
-***Resistances.*** The half-­‐‑dragon gains resistance to a type of
+***Resistances.*** The half-­dragon gains resistance to a type of
 damage based on its color.
 
 > **Color Damage Resistance**
@@ -6823,11 +6823,11 @@ damage based on its color.
 >
 > Silver or white Cold
 
-***Languages.*** The half-­‐‑dragon speaks Draconic in addition to any
+***Languages.*** The half-­dragon speaks Draconic in addition to any
 other languages it knows.
 
-***New Action: Breath Weapon.*** The half-­‐‑dragon has the breath
-weapon of its dragon half. The half-­‐‑ dragon’s size determines how
+***New Action: Breath Weapon.*** The half-­dragon has the breath
+weapon of its dragon half. The half-­ dragon’s size determines how
 this action functions.
 
 > **Size Breath Weapon**
@@ -11133,7 +11133,7 @@ indistinguishable from a normal tree.
 > *Hit:* 6 (1d8 + 2) slashing damage.
 
 An **axe beak** is a tall flightless bird with strong legs and a heavy,
-wedge-­‐‑shaped beak. It has a nasty disposition and tends to attack any
+wedge-­shaped beak. It has a nasty disposition and tends to attack any
 unfamiliar creature that wanders too close.
 
 #### Baboon
@@ -11345,7 +11345,7 @@ Blood Hawk
 >
 > A **blink dog** takes its name from its ability to blink in and out of
 > existence, a talent it uses to aid its attacks and to avoid harm.
-> Blink dogs harbor a long-­‐‑ standing hatred for displacer beasts and
+> Blink dogs harbor a long-­ standing hatred for displacer beasts and
 > attack them on sight.
 
 ###### \
@@ -11589,7 +11589,7 @@ restrained, and the snake can’t constrict another target.
 > disease is cured. The creature dies if the disease reduces its hit
 > point maximum to 0.
 >
-> A **death dog** is an ugly two-­‐‑headed hound that roams plains, and
+> A **death dog** is an ugly two-­headed hound that roams plains, and
 > deserts. Hate burns in a death dog’s heart, and a taste for humanoid
 > flesh drives it to attack travelers and explorers. Death dog saliva
 > carries a foul disease that causes a victim’s flesh to slowly rot off
@@ -12676,7 +12676,7 @@ poison, and psychic damage).
 To snare its prey, a **giant spider** spins elaborate webs or shoots
 sticky strands of webbing from its abdomen. Giant spiders are most
 commonly found underground, making their lairs on ceilings or in dark,
-web-­‐‑filled crevices. Such lairs are often festooned with web cocoons
+web-­filled crevices. Such lairs are often festooned with web cocoons
 holding past victims.
 
 #### Giant Toad
@@ -13611,7 +13611,7 @@ within 5 feet of the creature and the ally isn’t incapacitated.
 
 Smaller than giant sharks and hunter sharks, **reef sharks** inhabit
 shallow waters and coral reefs, gathering in small packs to hunt. A
-full-­‐‑grown specimen measures 6 to 10 feet long.
+full-­grown specimen measures 6 to 10 feet long.
 
 #### Rhinoceros
 
@@ -14220,8 +14220,8 @@ wind in a 15-­‐foot cone. Each creature in that area must make a DC 12
 Dexterity saving throw, taking 18 (4d8) cold damage on a failed save, or
 half as much damage on a successful one.
 
-The arctic-­‐‑dwelling **winter wolf** is as large as a dire wolf but
-has snow-­‐‑white fur and pale blue eyes. Frost giants use these evil
+The arctic-­dwelling **winter wolf** is as large as a dire wolf but
+has snow-­white fur and pale blue eyes. Frost giants use these evil
 creatures as guards and hunting companions, putting the wolves’ deadly
 breath weapon to use against their foes. Winter wolves communicate with
 one another using growls and barks, but they speak Common and Giant well
@@ -14359,7 +14359,7 @@ can change an NPC’s challenge rating.
 ***Magic Items.*** The more powerful an NPC, the more likely it has one
 or more magic items in its possession. An archmage, for example, might
 have a magic staff or wand, as well as one or more potions and scrolls.
-Giving an NPC a potent damage-­‐‑dealing magic item could alter its
+Giving an NPC a potent damage-­dealing magic item could alter its
 challenge rating.
 
 #### Acolyte
@@ -14820,7 +14820,7 @@ wielding a melee weapon.
 
 **Gladiators** battle for the entertainment of raucous crowds. Some
 gladiators are brutal pit fighters who treat each match as a
-life-­‐‑or-­‐‑death struggle, while others are professional duelists who
+life-­or-­death struggle, while others are professional duelists who
 command huge fees but rarely fight to the death.
 
 #### Guard
@@ -14967,7 +14967,7 @@ spell attacks). The mage has the following wizard spells prepared:
 1)  piercing damage.
 
 **Mages** spend their lives in the study and practice of magic.
-Good-­‐‑aligned mages offer counsel to nobles and others in power, while
+Good-­aligned mages offer counsel to nobles and others in power, while
 evil mages dwell in isolated sites to perform unspeakable experiments
 without interference.
 
