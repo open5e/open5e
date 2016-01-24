@@ -197,7 +197,7 @@ class PicoEditor extends AbstractPicoPlugin
                 // set the error message
                 $twigVariables['login_error'] = 'No password set!';
                 // render the login view
-                echo $twig->render('views/login.twig', $twigVariables); // Render login.twig
+                echo $twig->render('content/login.twig', $twigVariables); // Render login.twig
                 // don't continue to render template
                 exit;
             }
@@ -213,19 +213,19 @@ class PicoEditor extends AbstractPicoPlugin
                         // login failure
                         $twigVariables['login_error'] = 'Invalid password.';
                         // render the login view
-                        echo $twig->render('views/login.twig', $twigVariables); // Render login.twig
+                        echo $twig->render('content/login.twig', $twigVariables); // Render login.twig
                         // don't continue to render template
                         exit;
                     }
                 } else {
                     // user did not submit a password.
-                    echo $twig->render('views/login.twig', $twigVariables); // Render login.twig
+                    echo $twig->render('content/login.twig', $twigVariables); // Render login.twig
                     // don't continue to render template
                     exit;
                 }
             }
             // session exists, render the editor...
-            echo $twig->render('views/editor.twig', $twigVariables); // Render editor.twig
+            echo $twig->render('content/editor.twig', $twigVariables); // Render editor.twig
             // don't continue to render template
             exit;
         }

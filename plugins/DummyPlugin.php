@@ -311,4 +311,9 @@ final class DummyPlugin extends AbstractPicoPlugin
     {
         // your code
     }
+    
+    private function at_build_navigation($navigation = array(), $start = false)
+    {
+      // your code
+    }
 }

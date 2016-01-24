@@ -26,17 +26,9 @@
     </header>
     <main>
       <sidebar>
-        <nav>
-          <div class="menu-icon">
-          </div>
-            <ul class="menu-sidebar">
-                {% for page in pages if page.title %}
-                    <li{% if page.id == current_page.id %} class="active"{% endif %}>
-                        <a href="{{ page.url }}">{{ page.title }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </nav>
+      <nav>
+        {{ open_nav }}
+      </nav>
       </sidebar>
 
       <section id="content">

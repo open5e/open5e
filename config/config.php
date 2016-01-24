@@ -49,6 +49,11 @@ $config['PicoEditor'] = array(
     'url'       => 'editzone'
 );
 
+
+$config['OpenNav'] = array (
+    'enabled' => true,           // Enable this plugin?
+);
+
 /*
  * TIMEZONE
  */
