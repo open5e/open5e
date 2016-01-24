@@ -1,3 +1,8 @@
+---
+Title: Equipment
+Description: Weapons, Armor, Goods and Services
+---
+
 Equipment
 =========
 
