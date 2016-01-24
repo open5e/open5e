@@ -1,93 +1,38 @@
 ### Alignment
 
-A typical creature in the game world has an alignment, which broadly
-describes its moral and personal attitudes. Alignment is a combination
-of two factors: one identifies morality (good, evil, or neutral), and
-the other describes attitudes toward society and order (lawful, chaotic,
-or neutral). Thus, nine distinct alignments define the possible
-combinations.
+A typical creature in the game world has an alignment, which broadly describes its moral and personal attitudes. Alignment is a combination of two factors: one identifies morality (good, evil, or neutral), and the other describes attitudes toward society and order (lawful, chaotic, or neutral). Thus, nine distinct alignments define the possible combinations.
 
-These brief summaries of the nine alignments describe the typical
-behavior of a creature with that alignment. Individuals might vary
-significantly from that typical behavior, and few people are perfectly
-and consistently faithful to the precepts of their alignment.
+These brief summaries of the nine alignments describe the typical behavior of a creature with that alignment. Individuals might vary significantly from that typical behavior, and few people are perfectly and consistently faithful to the precepts of their alignment.
 
-> **Lawful good** (LG) creatures can be counted on to
+**Lawful good** (LG) creatures can be counted on to do the right thing as expected by society. Gold dragons, paladins, and most dwarves are lawful good.
 
-do the right thing as expected by society. Gold dragons, paladins, and
-most dwarves are lawful good.
+**Neutral good** (NG) folk do the best they can to help others according to their needs. Many celestials, some cloud giants, and most gnomes are neutral good.
 
-**Neutral good** (NG) folk do the best they can to
+**Chaotic good** (CG) creatures act as their conscience directs, with little regard for what others expect. Copper dragons, many elves, and unicorns are chaotic good.
 
-help others according to their needs. Many celestials, some cloud
-giants, and most gnomes are neutral good.
+**Lawful neutral** (LN) individuals act in accordance with law, tradition, or personal codes. Many monks and some wizards are lawful neutral.
 
-> **Chaotic good** (CG) creatures act as their
+**Neutral** (N) is the alignment of those who prefer to steer clear of moral questions and don’t take sides, doing what seems best at the time. Lizardfolk, most druids, and many humans are neutral.
 
-conscience directs, with little regard for what others expect. Copper
-dragons, many elves, and unicorns are chaotic good.
+**Chaotic neutral** (CN) creatures follow their whims, holding their personal freedom above all else. Many barbarians and rogues, and some bards, are chaotic neutral.
 
-**Lawful neutral** (LN) individuals act in accordance with law,
-tradition, or personal codes. Many monks and some wizards are lawful
-neutral.
+**Lawful evil** (LE) creatures methodically take what they want, within the limits of a code of tradition, loyalty, or order. Devils, blue dragons, and hobgoblins are lawful evil.
 
-> **Neutral** (N) is the alignment of those who prefer
+**Neutral evil** (NE) is the alignment of those who do whatever they can get away with, without compassion or qualms. Many drow, some cloud giants, and goblins are neutral evil.
 
-to steer clear of moral questions and don’t take sides, doing what seems
-best at the time. Lizardfolk, most druids, and many humans are neutral.
-
-> **Chaotic neutral** (CN) creatures follow their
-
-whims, holding their personal freedom above all else. Many barbarians
-and rogues, and some bards, are chaotic neutral.
-
-> **Lawful evil** (LE) creatures methodically take what
-
-they want, within the limits of a code of tradition, loyalty, or order.
-Devils, blue dragons, and hobgoblins are lawful evil.
-
-> **Neutral evil** (NE) is the alignment of those who
-
-do whatever they can get away with, without compassion or qualms. Many
-drow, some cloud giants, and goblins are neutral evil.
-
-> **Chaotic evil** (CE) creatures act with arbitrary
-
-violence, spurred by their greed, hatred, or bloodlust. Demons, red
-dragons, and orcs are chaotic evil.
+**Chaotic evil** (CE) creatures act with arbitrary violence, spurred by their greed, hatred, or bloodlust. Demons, red dragons, and orcs are chaotic evil.
 
 #### Alignment in the Multiverse
 
-For many thinking creatures, alignment is a moral choice. Humans,
-dwarves, elves, and other humanoid races can choose whether to follow
-the paths of good or evil, law or chaos. According to myth, the good-­‐‑
-aligned gods who created these races gave them free will to choose their
-moral paths, knowing that good without free will is slavery.
+For many thinking creatures, alignment is a moral choice. Humans, dwarves, elves, and other humanoid races can choose whether to follow the paths of good or evil, law or chaos. According to myth, the good-­‐‑ aligned gods who created these races gave them free will to choose their moral paths, knowing that good without free will is slavery.
 
-The evil deities who created other races, though, made those races to
-serve them. Those races have strong inborn tendencies that match the
-nature of their gods. Most orcs share the violent, savage nature of the
-orc gods, and are thus inclined toward evil. Even if an orc chooses a
-good alignment, it struggles against its innate tendencies for its
-entire life. (Even half-­‐‑orcs feel the lingering pull of the orc god’s
-influence.)
+The evil deities who created other races, though, made those races to serve them. Those races have strong inborn tendencies that match the nature of their gods. Most orcs share the violent, savage nature of the orc gods, and are thus inclined toward evil. Even if an orc chooses a good alignment, it struggles against its innate tendencies for its entire life. (Even half-­‐‑orcs feel the lingering pull of the orc god’s influence.)
 
-> Alignment is an essential part of the nature of
+Alignment is an essential part of the nature of celestials and fiends. A devil does not choose to be lawful evil, and it doesn’t tend toward lawful evil, but rather it is lawful evil in its essence. If it somehow ceased to be lawful evil, it would cease to be a devil.
 
-celestials and fiends. A devil does not choose to be lawful evil, and it
-doesn’t tend toward lawful evil, but rather it is lawful evil in its
-essence. If it somehow ceased to be lawful evil, it would cease to be a
-devil.
+Most creatures that lack the capacity for rational thought do not have alignments—they are **unaligned**. Such a creature is incapable of making a moral or ethical choice and acts according to its bestial nature. Sharks are savage predators, for example, but they are not evil; they have no alignment.
 
-> Most creatures that lack the capacity for rational
-
-thought do not have alignments—they are **unaligned**. Such a creature
-is incapable of making a moral or ethical choice and acts according to
-its bestial nature. Sharks are savage predators, for example, but they
-are not evil; they have no alignment.
-
-### \
-Languages
+### Languages
 
 Your race indicates the languages your character can speak by default,
 and your background might give you access to one or more additional
@@ -106,66 +51,47 @@ communicate with one another.
 
 #### Standard Languages
 
-  > **Language**   > **Typical Speakers**   > **Script**
+  | **Language**   | **Typical Speakers**   | **Script**
   ---------------- ------------------------ --------------
-  > Common         > Humans                 > Common
-  > Dwarvish       > Dwarves                > Dwarvish
-  > Elvish         > Elves                  > Elvish
-  > Giant          > Ogres, giants          > Dwarvish
-  > Gnomish        > Gnomes                 > Dwarvish
-  > Goblin         > Goblinoids             > Dwarvish
-  > Halfling       > Halflings              > Common
-  > Orc            > Orcs                   > Dwarvish
+  | Common         | Humans                 | Common
+  | Dwarvish       | Dwarves                | Dwarvish
+  | Elvish         | Elves                  | Elvish
+  | Giant          | Ogres, giants          | Dwarvish
+  | Gnomish        | Gnomes                 | Dwarvish
+  | Goblin         | Goblinoids             | Dwarvish
+  | Halfling       | Halflings              | Common
+  | Orc            | Orcs                   | Dwarvish
 
-> **Exotic Languages**
+**Exotic Languages**
 
-  > **Language**   > **Typical Speakers**   > **Script**
+  | **Language**   | **Typical Speakers**   | **Script**
   ---------------- ------------------------ --------------
-  > Abyssal        > Demons                 > Infernal
-  > Celestial      > Celestials             > Celestial
-  > Draconic       > Dragons, dragonborn    > Draconic
-  > Deep Speech    > Aboleths, cloakers     > —
-  > Infernal       > Devils                 > Infernal
-  > Primordial     > Elementals             > Dwarvish
-  > Sylvan         > Fey creatures          > Elvish
-  > Undercommon    > Underworld traders     > Elvish
+  | Abyssal        | Demons                 | Infernal
+  | Celestial      | Celestials             | Celestial
+  | Draconic       | Dragons, dragonborn    | Draconic
+  | Deep Speech    | Aboleths, cloakers     | —
+  | Infernal       | Devils                 | Infernal
+  | Primordial     | Elementals             | Dwarvish
+  | Sylvan         | Fey creatures          | Elvish
+  | Undercommon    | Underworld traders     | Elvish
 
-> **Inspiration**
+**Inspiration**
 
-Inspiration is a rule the game master can use to reward you for playing
-your character in a way that’s true to his or her personality traits,
-ideal, bond, and flaw. By using inspiration, you can draw on your
-personality trait of compassion for the downtrodden to give you an edge
-in negotiating with the Beggar Prince. Or inspiration can let you call
-on your bond to the defense of your home village to push past the effect
-of a spell that has been laid on you.
+Inspiration is a rule the game master can use to reward you for playing your character in a way that’s true to his or her personality traits, ideal, bond, and flaw. By using inspiration, you can draw on your personality trait of compassion for the downtrodden to give you an edge in negotiating with the Beggar Prince. Or inspiration can let you call on your bond to the defense of your home village to push past the effect of a spell that has been laid on you.
 
 ### Gaining Inspiration
 
-Your GM can choose to give you inspiration for a variety of reasons.
-Typically, GMs award it when you play out your personality traits, give
-in to the drawbacks presented by a flaw or bond, and otherwise portray
-your character in a compelling way. Your GM will tell you how you can
-earn inspiration in the game.
+Your GM can choose to give you inspiration for a variety of reasons. Typically, GMs award it when you play out your personality traits, give in to the drawbacks presented by a flaw or bond, and otherwise portray your character in a compelling way. Your GM will tell you how you can earn inspiration in the game.
 
-> You either have inspiration or you don’t—you
-
-can’t stockpile multiple “inspirations” for later use.
+You either have inspiration or you don’t—you can’t stockpile multiple “inspirations” for later use.
 
 ### Using Inspiration
 
-If you have inspiration, you can expend it when you make an attack roll,
-saving throw, or ability check. Spending your inspiration gives you
-advantage on that roll.
+If you have inspiration, you can expend it when you make an attack roll, saving throw, or ability check. Spending your inspiration gives you advantage on that roll.
 
-Additionally, if you have inspiration, you can reward another player for
-good roleplaying, clever thinking, or simply doing something exciting in
-the game. When another player character does something that really
-contributes to the story in a fun and interesting way, you can give up
-your inspiration to give that character inspiration.
+Additionally, if you have inspiration, you can reward another player for good roleplaying, clever thinking, or simply doing something exciting in the game. When another player character does something that really contributes to the story in a fun and interesting way, you can give up your inspiration to give that character inspiration.
 
-Backgrounds
------------
+### Backgrounds
 
 Every story has a beginning. Your character’s background reveals where
 you came from, how you became an adventurer, and your place in the
@@ -249,13 +175,13 @@ different way? Perhaps you were the leader of a small cult outside of
 any established temple structure, or even an occult group that served a
 fiendish master that you now deny.
 
-> **Skill Proficiencies:** Insight, Religion
->
-> **Languages:** Two of your choice
->
-> **Equipment:** A holy symbol (a gift to you when you entered the
-> priesthood), a prayer book or prayer wheel, 5 sticks of incense,
-> vestments, a set of common clothes, and a pouch containing 15 gp
+**Skill Proficiencies:** Insight, Religion
+
+**Languages:** Two of your choice
+
+**Equipment:** A holy symbol (a gift to you when you entered the
+priesthood), a prayer book or prayer wheel, 5 sticks of incense,
+vestments, a set of common clothes, and a pouch containing 15 gp
 
 #### Feature: Shelter of the Faithful
 
@@ -282,59 +208,44 @@ their relationships to temples, shrines, or hierarchies affect their
 mannerisms and ideals. Their flaws might be some hidden hypocrisy or
 heretical idea, or an ideal or bond taken to an extreme.
 
-> **d8 Personality Trait**
+**d8 Personality Trait**
 
-1.  I idolize a particular hero of my faith, and constantly refer to
-    > that person’s deeds and example.
+1.  I idolize a particular hero of my faith, and constantly refer to that person’s deeds and example.
 
-2.  I can find common ground between the fiercest enemies, empathizing
-    > with them and always working toward peace.
+2.  I can find common ground between the fiercest enemies, empathizing with them and always working toward peace.
 
-3.  I see omens in every event and action. The gods try to speak to us,
-    > we just need to listen
+3.  I see omens in every event and action. The gods try to speak to us, we just need to listen
 
 4.  Nothing can shake my optimistic attitude.
 
-5.  I quote (or misquote) sacred texts and proverbs in almost
-    > every situation.
+5.  I quote (or misquote) sacred texts and proverbs in almost every situation.
 
-6.  I am tolerant (or intolerant) of other faiths and respect
-    > (or condemn) the worship of other gods.
+6.  I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods.
 
-7.  I’ve enjoyed fine food, drink, and high society
+7.  I’ve enjoyed fine food, drink, and high society among my temple’s elite. Rough living grates on me.
 
-> among my temple’s elite. Rough living grates on me.
+1.  I’ve spent so long in the temple that I have little practical experience dealing with people in the outside world.
 
-1.  I’ve spent so long in the temple that I have little practical
-    > experience dealing with people in the outside world.
+**d6 Ideal**
 
-> **d6 Ideal**
+1.  Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)
 
-1.  Tradition. The ancient traditions of worship and sacrifice must be
-    > preserved and upheld. (Lawful)
+2.  Charity. I always try to help those in need, no matter what the personal cost. (Good)
 
-2.  Charity. I always try to help those in need, no matter what the
-    > personal cost. (Good)
+3.  Change. We must help bring about the changes the gods are constantly working in the world. (Chaotic)
 
-3.  Change. We must help bring about the changes the gods are constantly
-    > working in the world. (Chaotic)
+4.  Power. I hope to one day rise to the top of my faith’s religious hierarchy. (Lawful)
 
-4.  Power. I hope to one day rise to the top of my faith’s
-    > religious hierarchy. (Lawful)
+5.  Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well. (Lawful)
 
-5.  Faith. I trust that my deity will guide my actions. I have faith
-    > that if I work hard, things will go well. (Lawful)
+6.  Aspiration. I seek to prove myself worthy of my god’s favor by matching my actions against his or her teachings. (Any)
 
-6.  Aspiration. I seek to prove myself worthy of my god’s favor by
-    > matching my actions against his or her teachings. (Any)
 
-> **d6 Bond**
+**d6 Bond**
 
-1.  I would die to recover an ancient relic of my faith that was lost
-    > long ago.
+1.  I would die to recover an ancient relic of my faith that was lost long ago.
 
-2.  I will someday get revenge on the corrupt temple hierarchy who
-    > branded me a heretic.
+2.  I will someday get revenge on the corrupt temple hierarchy who branded me a heretic.
 
 3.  I owe my life to the priest who took me in when my parents died.
 
@@ -342,23 +253,19 @@ heretical idea, or an ideal or bond taken to an extreme.
 
 5.  I will do anything to protect the temple where I served.
 
-6.  I seek to preserve a sacred text that my enemies
+6.  I seek to preserve a sacred text that my enemies consider heretical and seek to destroy.
 
-consider heretical and seek to destroy.
 
-> **d6 Flaw**
+**d6 Flaw**
 
 1.  I judge others harshly, and myself even more severely.
 
-2.  I put too much trust in those who wield power within my
-    > temple’s hierarchy.
+2.  I put too much trust in those who wield power within my temple’s hierarchy.
 
-3.  My piety sometimes leads me to blindly trust those that profess
-    > faith in my god.
+3.  My piety sometimes leads me to blindly trust those that profess faith in my god.
 
 4.  I am inflexible in my thinking.
 
 5.  I am suspicious of strangers and expect the worst of them.
 
-6.  Once I pick a goal, I become obsessed with it to the detriment of
-    > everything else in my life.
+6.  Once I pick a goal, I become obsessed with it to the detriment of everything else in my life.
