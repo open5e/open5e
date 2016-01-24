@@ -1,3 +1,9 @@
+---
+Title: Ranger
+Description: Open 5th Edition SRD project.
+---
+
+
 Ranger
 ======
 

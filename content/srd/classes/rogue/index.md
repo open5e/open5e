@@ -1,3 +1,9 @@
+---
+Title: Rogue
+Description: Open 5th Edition SRD project.
+---
+
+
 Rogue
 =====
 

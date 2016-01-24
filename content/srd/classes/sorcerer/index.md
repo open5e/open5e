@@ -1,3 +1,9 @@
+---
+Title: Sorcerer
+Description: Open 5th Edition SRD project.
+---
+
+
 Sorcerer
 ========
 

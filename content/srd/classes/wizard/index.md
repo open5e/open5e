@@ -1,4 +1,8 @@
 
+---
+Title: Wizard
+Description: Open 5th Edition SRD project.
+---
 
 Wizard
 ======
