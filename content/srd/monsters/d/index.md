@@ -1,3 +1,9 @@
+---
+Title: Monsters D
+Description: Open 5th Edition SRD project.
+---
+
+
 Monsters (D)
 ------------
 

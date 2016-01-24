@@ -1,5 +1,5 @@
 ---
-Title: All Monsters
+Title: Monsters A
 Description: Open 5th Edition SRD project.
 ---
 

@@ -1,3 +1,9 @@
+---
+Title: Monsters C
+Description: Open 5th Edition SRD project.
+---
+
+
 Monsters (C)
 ------------
 

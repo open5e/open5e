@@ -1,7 +1,8 @@
 ---
-Title: All Monsters
+Title: Monsters B
 Description: Open 5th Edition SRD project.
 ---
+
 
 Monsters (B)
 ------------

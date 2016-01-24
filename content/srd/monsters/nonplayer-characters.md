@@ -1,3 +1,8 @@
+---
+Title: Nonplayer Characters
+Description: Open 5th Edition SRD project.
+---
+
 Nonplayer Characters
 ====================
 

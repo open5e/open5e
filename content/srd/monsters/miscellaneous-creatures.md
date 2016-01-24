@@ -1,3 +1,9 @@
+---
+Title: Appendix A: Miscellaneous Creatures
+Description: Open 5th Edition SRD project.
+---
+
+
 Appendix A: Miscellaneous Creatures
 ===================================
 
