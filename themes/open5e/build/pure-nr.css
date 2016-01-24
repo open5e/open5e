@@ -462,6 +462,22 @@ th {
     display: block;
 }
 
+.pull-right{
+  float: right;
+}
+
+.pull-left{
+  float: left;
+}
+
+.nav-left, .nav-right{
+  display: inline-block;
+}
+
+.nav-right { 
+  float: right;
+}
+
 /*csslint regex-selectors:false, known-properties:false, duplicate-properties:false*/
 
 .g {
@@ -790,14 +806,11 @@ this the same font stack that Normalize.css sets for the `body`.
 .button:hover,
 .button:focus {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
-    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
-    background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
-    background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
-    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background: #E0e0e0;
 }
 .button:focus {
     outline: 0;
+    border: 0;
 }
 .button-active,
 .button:active {
@@ -837,6 +850,16 @@ a.button-primary,
 a.button-selected {
     background-color: rgb(0, 120, 231);
     color: #fff;
+}
+
+.button-dark{
+  background: #000000;
+  color: white;
+}
+
+.button-dark:hover, .button-dark:focus{
+  background: #111111;
+  color: #e74c3c;
 }
 
 /*csslint box-model:false*/
@@ -1147,6 +1170,20 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     color: #666;
     vertical-align: middle;
     font-size: 0.875em;
+}
+
+.form-search input{
+  border-radius: 0;
+  display: inline-block !important;
+  margin-bottom: 0.3em;
+}
+
+.form-search input:first-of-type{
+  border-radius: 4px 0 0 4px;
+}
+
+.form-search input:last-of-type{
+  border-radius: 0 4px 4px 0;
 }
 
 /* Block help for forms */

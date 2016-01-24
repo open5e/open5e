@@ -308,6 +308,20 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     font-size: 0.875em;
 }
 
+.form-search input{
+  border-radius: 0;
+  display: inline-block !important;
+  margin-bottom: 0.3em;
+}
+
+.form-search input:first-of-type{
+  border-radius: 4px 0 0 4px;
+}
+
+.form-search input:last-of-type{
+  border-radius: 0 4px 4px 0;
+}
+
 /* Block help for forms */
 .form-message {
     display: block;

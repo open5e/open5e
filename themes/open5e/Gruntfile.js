@@ -89,7 +89,8 @@ grunt.initConfig({
                     'build/buttons.css',
                     'build/forms.css',
                     'build/menus.css',
-                    'build/tables.css'
+                    'build/tables.css',
+                    'build/pico.css'
                 ]},
 
                 {'build/<%= nick %>-nr.css': [
@@ -134,7 +135,7 @@ grunt.initConfig({
 
         files: {
             expand: true,
-            src   : 'build/*.css',
+            src   : 'style.css',
             ext   : '-min.css'
         }
     },
@@ -239,8 +240,8 @@ grunt.initConfig({
 
     observe: {
         src: {
-            files: 'src/**/css/*.css',
-            tasks: ['test', 'suppress', 'build'],
+            files: ['src/**/css/*.css', 'pico-styles.css'],
+            tasks: ['suppress', 'build'],
 
             options: {
                 interrupt: true
@@ -266,7 +267,7 @@ grunt.loadNpmTasks('grunt-stripmq');
 // Local tasks.
 grunt.loadTasks('tasks/');
 
-grunt.registerTask('default', ['import', 'test', 'build']);
+grunt.registerTask('default', ['import', 'build']);
 grunt.registerTask('import', ['bower_install']);
 grunt.registerTask('test', ['csslint']);
 grunt.registerTask('build', [

@@ -48,14 +48,11 @@ https://github.com/yahoo/pure/blob/master/LICENSE.md
 .button:hover,
 .button:focus {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
-    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
-    background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
-    background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
-    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background: #E0e0e0;
 }
 .button:focus {
     outline: 0;
+    border: 0;
 }
 .button-active,
 .button:active {
@@ -95,4 +92,14 @@ a.button-primary,
 a.button-selected {
     background-color: rgb(0, 120, 231);
     color: #fff;
+}
+
+.button-dark{
+  background: #000000;
+  color: white;
+}
+
+.button-dark:hover, .button-dark:focus{
+  background: #111111;
+  color: #e74c3c;
 }

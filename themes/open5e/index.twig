@@ -12,50 +12,45 @@
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" type="text/css" />
     <link rel="stylesheet" href="{{ theme_url }}/style.css" type="text/css" />
+    <link rel="stylesheet" href=
 
     <script src="{{ theme_url }}/scripts/modernizr-2.6.1.min.js"></script>
 </head>
 <body>
 
     <header id="header">
-        <div class="inner clearfix">
-            <h1><a href="{{ "index"|link }}" id="logo">{{ site_title }}</a></h1>
-        </div>
-        <div class="search-container">
-        <form method="GET" action="/search">
-          <input name="q" id="q" type="text" placeholder="Search open5e"></input>
-          <input type="submit" value="Search"/>
-        </form>
-        </div>
+      <form method="GET" action="/search" class="form nav-right form-search">
+          <input name="q" id="q" type="text" placeholder="Search open5e"></input><input class="button button-dark" type="submit" value="Search"/>
+      </form>
+            <h1><a href="{{ "index"|link }}" id="logo" class="nav-left">{{ site_title }}</a></h1>
     </header>
-    
-    <sidebar>
-      <nav>
-          <a href="#" class="menu-icon"></a>
-          <ul class="menu-sidebar">
-              {% for page in pages if page.title %}
-                  <li{% if page.id == current_page.id %} class="active"{% endif %}>
-                      <a href="{{ page.url }}">{{ page.title }}</a>
-                  </li>
-              {% endfor %}
-          </ul>
-      </nav>
-    </sidebar>
+    <main>
+      <sidebar>
+        <nav>
+          <div class="menu-icon">
+          </div>
+            <ul class="menu-sidebar">
+                {% for page in pages if page.title %}
+                    <li{% if page.id == current_page.id %} class="active"{% endif %}>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+      </sidebar>
 
-    <section id="content">
-        <div class="inner">
-            {% if meta.purpose == "search_results" %}
-              <p class="meta">{{ search_num_results }} page(s) found for "{{ search_term }}"</p>
-              {% for page in search_results %}
-                  <h4><a href="{{ page.url }}">{{ page.title }}</a></h4>
-                  {% if page.date %}<p class="meta">{{ page.date_formatted }} by {{ page.author }}</p>{% endif %}
-                  <p class="excerpt">{{ page.excerpt }}</p>
-              {% endfor %}
-            {% endif %}
-            {{ content }}
-        </div>
-    </section>
-
+      <section id="content">
+              {% if meta.purpose == "search_results" %}
+                <p class="meta">{{ search_num_results }} page(s) found for "{{ search_term }}"</p>
+                {% for page in search_results %}
+                    <h4><a href="{{ page.url }}">{{ page.title }}</a></h4>
+                    {% if page.date %}<p class="meta">{{ page.date_formatted }} by {{ page.author }}</p>{% endif %}
+                    <p class="excerpt">{{ page.excerpt }}</p>
+                {% endfor %}
+              {% endif %}
+              {{ content }}
+      </section>
+  </main>
     <footer id="footer">
         <div class="inner">
             <a href="http://picocms.org/">Pico</a> was made by <a href="http://gilbert.pellegrom.me">Gilbert Pellegrom</a>

@@ -452,6 +452,22 @@ th {
     display: block;
 }
 
+.pull-right{
+  float: right;
+}
+
+.pull-left{
+  float: left;
+}
+
+.nav-left, .nav-right{
+  display: inline-block;
+}
+
+.nav-right { 
+  float: right;
+}
+
 /*csslint regex-selectors:false, known-properties:false, duplicate-properties:false*/
 
 .g {
@@ -780,14 +796,11 @@ this the same font stack that Normalize.css sets for the `body`.
 .button:hover,
 .button:focus {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
-    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
-    background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
-    background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
-    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background: #E0e0e0;
 }
 .button:focus {
     outline: 0;
+    border: 0;
 }
 .button-active,
 .button:active {
@@ -827,6 +840,16 @@ a.button-primary,
 a.button-selected {
     background-color: rgb(0, 120, 231);
     color: #fff;
+}
+
+.button-dark{
+  background: #000000;
+  color: white;
+}
+
+.button-dark:hover, .button-dark:focus{
+  background: #111111;
+  color: #e74c3c;
 }
 
 /*csslint box-model:false*/
@@ -1137,6 +1160,20 @@ since IE8 won't execute CSS that contains a CSS3 selector.
     color: #666;
     vertical-align: middle;
     font-size: 0.875em;
+}
+
+.form-search input{
+  border-radius: 0;
+  display: inline-block !important;
+  margin-bottom: 0.3em;
+}
+
+.form-search input:first-of-type{
+  border-radius: 4px 0 0 4px;
+}
+
+.form-search input:last-of-type{
+  border-radius: 0 4px 4px 0;
 }
 
 /* Block help for forms */
@@ -1562,6 +1599,12 @@ select:focus {
 
 /* Main Styles
 /*---------------------------------------------*/
+html, body{
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
     font: 14px/1.8em 'Open Sans', Helvetica, Arial, Helvetica, sans-serif;
     color: #444;
@@ -1570,17 +1613,6 @@ body {
 }
 
 a, a:visited {
-    color: #2EAE9B;
-    text-decoration: none;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-}
-
-a:hover, a:active {
-    color: #000;
     text-decoration: none;
 }
 
@@ -1683,9 +1715,8 @@ blockquote {
 }
 
 #header {
-    background: #2EAE9B;
-    padding: 60px 0;
-    margin-bottom: 80px;
+    background: #c0392b;
+    padding: 12px 48px;
     color: #afe1da;
 }
 #header a {
@@ -1699,7 +1730,6 @@ blockquote {
 #header h1 {
     font-weight: bold;
     margin: 0;
-    float: left;
 }
 #header .menu-icon {
     display: none;
@@ -1710,15 +1740,24 @@ blockquote {
 #footer {
     background: #707070;
     padding: 60px 0;
-    margin-top: 80px;
     color: #C0C0C0;
 }
 #footer a { color: #ddd; }
 #footer a:hover { color: #fff; }
 
+sidebar, #content, main, main .inner{
+  display: flex;
+}
+
+main .inner, #content{
+  flex-direction: column;
+}
 
 sidebar{
-  float:left;
+  display: flex;
+  background: #EEE;
+  min-width: 240px;
+  margin-right: 48px;
 }
 
 sidebar nav {
@@ -1730,15 +1769,22 @@ sidebar nav a {
     font-weight: bold;
     margin-left: 20px;
 }
-sidebar nav a:hover#menu-icon {
+
+sidebar nav .menu-icon{
+  margin: 10px 48px;
+  height: 28px;
+}
+
+sidebar nav a:hover.menu-icon {
     background-color: #444;
     border-radius: 4px 4px 0 0;
 }
 sidebar nav ul {
     list-style: none;
 }
-sidebar nav li {
-    
+
+#content{
+  padding: 48px 0px;
 }
 
 /* Misc Styles
@@ -1766,8 +1812,15 @@ sidebar nav li {
     .inner img {
         width:100%;
     }
+    
+    .nav-left, .nav-right{
+      display: block;
+      float: none;
+    }
+    
     #header {
         margin-bottom: 40px;
+        padding: 12px 24px;
     }
     #header h1 a {
         font-size:1em;
@@ -1797,6 +1850,10 @@ sidebar nav li {
     }
     #header nav:hover ul {
         display: block;
+    }
+    
+    main{
+      flex-flow: column nowrap;
     }
 }
 
@@ -1840,3 +1897,4 @@ sidebar nav li {
         display: block;
     }
 }
+

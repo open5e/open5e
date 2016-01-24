@@ -26,7 +26,7 @@ $config['rewrite_url'] = null;               // A boolean indicating forced URL 
 /*
  * THEME
  */
-$config['theme'] = 'default';                // Set the theme (defaults to "default")
+$config['theme'] = 'open5e';                // Set the theme (defaults to "default")
 $config['twig_config'] = array(              // Twig settings
     'cache' => false,                        // To enable Twig caching change this to a path to a writable directory
     'autoescape' => false,                   // Auto-escape Twig vars

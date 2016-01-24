@@ -478,3 +478,20 @@ th {
     height: auto;
     display: block;
 }
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.nav-left,
+.nav-right {
+    display: inline-block;
+}
+
+.nav-right {
+    float: right;
+}
