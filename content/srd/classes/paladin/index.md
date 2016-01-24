@@ -1,3 +1,9 @@
+---
+Title: Paladin
+Description: Open 5th Edition SRD project.
+---
+
+
 Paladin
 =======
 
