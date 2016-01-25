@@ -2,7 +2,7 @@ import re, urllib, sys
 
 def split_monsters(lines, target):
   letter_re = re.compile(r'^Monsters \(([A-Z])\)')
-  monster_re = re.compile(r'^### (.*)')
+  monster_re = re.compile(r'^#{3,4} (.*)')
 
   current_dir = current_file = None
   for line in lines:
