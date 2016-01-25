@@ -1,3 +1,7 @@
+---
+Title: Advancement
+Description: Open 5th Edition SRD project.
+---
 Beyond 1st Level
 ================
 
@@ -13,12 +17,12 @@ The Character Advancement table summarizes the XP you need to advance in levels 
 
 #### Character Advancement
 
-  | 195,000   | 16   | +5
+   195,000   | 16   | +5
   ----------- ------ ------
-  | 225,000   | 17   | +6
-  | 265,000   | 18   | +6
-  | 305,000   | 19   | +6
-  | 355,000   | 20   | +6
+   225,000   | 17   | +6
+   265,000   | 18   | +6
+   305,000   | 19   | +6
+   355,000   | 20   | +6
 
 
 **Multiclassing**
@@ -35,20 +39,20 @@ To qualify for a new class, you must meet the ability score prerequisites for bo
 
 #### Multiclassing Prerequisites
 
-| **Class** |**Ability Score Minimum**
+ **Class** |**Ability Score Minimum**
 ----------- --------------------
-| Barbarian      | Strength 13
-| Bard      | Charisma 13
-| Cleric      | Wisdom 13
-| Druid      | Wisdom 13
-| Fighter      | Strength 13 or Dexterity 13
-| Monk      | Dexterity 13 and Wisdom 13
-| Paladin      | Strength 13 and Charisma 13
-| Ranger      | Dexterity 13 and Wisdom 13
-| Rogue      | Dexterity 13
-| Sorcerer      | Charisma 13
-| Warlock      | Charisma 13
-| Wizard      | Intelligence 13
+ Barbarian    | Strength 13
+ Bard         | Charisma 13
+ Cleric       | Wisdom 13
+ Druid        | Wisdom 13
+ Fighter      | Strength 13 or Dexterity 13
+ Monk         | Dexterity 13 and Wisdom 13
+ Paladin      | Strength 13 and Charisma 13
+ Ranger       | Dexterity 13 and Wisdom 13
+ Rogue        | Dexterity 13
+ Sorcerer     | Charisma 13
+ Warlock      | Charisma 13
+ Wizard       | Intelligence 13
 
 ### Experience Points
 
