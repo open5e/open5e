@@ -180,7 +180,6 @@ points on average (2 × 4½).
 A monster’s size determines the die used to calculate its hit points, as
 shown in the Hit Dice by Size table.
 
---------------------------------------
 | Monster Size  | Hit Die  | Average HP per Die
 -------------- --------- -------------
 | Tiny          | d4       | 2½
@@ -189,7 +188,6 @@ shown in the Hit Dice by Size table.
 | Large         | d10      | 5½
 | Huge          | d12      | 6½
 | Gargantuan    | d20      | 10½
---------------------------------------
 
 : Table: Hit Dice by Size
 

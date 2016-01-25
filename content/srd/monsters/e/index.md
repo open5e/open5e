@@ -9,7 +9,7 @@ Monsters (E)
 
 ### Elementals
 
-#### Air Elemental
+### Air Elemental
 
 Large elemental, neutral
 
@@ -61,7 +61,7 @@ Actions
     If the saving throw is successful, the target takes half the
     bludgeoning damage and isn’t flung away or knocked prone.
 
-#### Earth Elemental
+### Earth Elemental
 
 Large elemental, neutral
 
@@ -105,7 +105,7 @@ Actions
 **Slam**: *Melee Weapon Attack*: +8 to hit, reach 10 ft.,
     one target. *Hit*: 14 (2d8 + 5) bludgeoning damage.
 
-#### Fire Elemental
+### Fire Elemental
 
 Large elemental, neutral
 
@@ -159,7 +159,7 @@ Actions
     an action to douse the fire, the target takes 5 (1d10) fire damage
     at the start of each of its turns.
 
-#### Water Elemental
+### Water Elemental
 
 Large elemental, neutral
 
@@ -216,7 +216,7 @@ Actions
     pull a creature or object out of it by taking an action to make a DC
     14 Strength and succeeding.
 
-### Elf, Drow {#elf-drow}
+### Elf, Drow
 
 Medium humanoid (elf), neutral evil
 

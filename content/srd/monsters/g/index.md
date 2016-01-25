@@ -563,7 +563,7 @@ Actions
     saving throw, taking 54 (12d8) lightning damage on a failed save, or
     half as much damage on a successful one.
 
-### Gibbering Mouther {#gibbering-mouther}
+### Gibbering Mouther
 
 Medium aberration, neutral
 
@@ -655,7 +655,7 @@ Actions
 **Longbow**: *Ranged Weapon Attack*: +3 to hit, range 150/600 ft.,
     one target. *Hit*: 5 (1d8 + 1) piercing damage.
 
-### Gnome, Deep (Svirfneblin) {#gnome-deep-svirfneblin}
+### Gnome, Deep (Svirfneblin)
 
 Small humanoid (gnome), neutral good
 

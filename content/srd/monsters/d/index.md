@@ -64,7 +64,7 @@ Actions
 
 ### Demons
 
-#### Balor
+### Balor
 
 Huge fiend (demon), chaotic evil
 
@@ -126,7 +126,7 @@ Actions
     equipment it is wearing or carrying, up to 120 feet to an unoccupied
     space it can see.
 
-#### Dretch
+### Dretch
 
 Small fiend (demon), chaotic evil
 
@@ -171,7 +171,7 @@ Actions
     target can take either an action or a bonus action on its turn, not
     both, and can’t take reactions.
 
-#### Glabrezu
+### Glabrezu
 
 Large fiend (demon), chaotic evil
 
@@ -223,7 +223,7 @@ Actions
 **Fist**: *Melee Weapon Attack*: +9 to hit, reach 5 ft., one target.
     *Hit*: 7 (2d4 + 2) bludgeoning damage.
 
-#### Hezrou
+### Hezrou
 
 Large fiend (demon), chaotic evil
 
@@ -270,7 +270,7 @@ Actions
 **Claw**: *Melee Weapon Attack*: +7 to hit, reach 5 ft., one target.
     *Hit*: 11 (2d6 + 4) slashing damage.
 
-#### Marilith
+### Marilith
 
 Large fiend (demon), chaotic evil
 
@@ -330,7 +330,7 @@ Reactions
     that would hit it. To do so, the marilith must see the attacker and
     be wielding a melee weapon.
 
-#### Nalfeshnee
+### Nalfeshnee
 
 Large fiend (demon), chaotic evil
 
@@ -384,7 +384,7 @@ Actions
     equipment it is wearing or carrying, up to 120 feet to an unoccupied
     space it can see.
 
-#### Quasit
+### Quasit
 
 Tiny fiend (demon, shapechanger), chaotic evil
 
@@ -443,7 +443,7 @@ Actions
     concentrating on a spell). Any equipment the quasit wears or carries
     is invisible with it.
 
-#### Vrock
+### Vrock
 
 Large fiend (demon), chaotic evil
 
@@ -500,7 +500,7 @@ Actions
 
 ### Devils
 
-#### Barbed Devil
+### Barbed Devil
 
 Medium fiend (devil), lawful evil
 
@@ -554,7 +554,7 @@ Actions
     flammable object that isn’t being worn or carried, it also
     catches fire.
 
-#### Bearded Devil
+### Bearded Devil
 
 Medium fiend (devil), lawful evil
 
@@ -612,7 +612,7 @@ Actions
     stanch the wound with a successful DC 12 Wisdom (Medicine) check.
     The wound also closes if the target receives magical healing.
 
-#### Bone Devil
+### Bone Devil
 
 Large fiend (devil), lawful evil
 
@@ -663,7 +663,7 @@ Actions
     saving throw at the end of each of its turns, ending the effect on
     itself on a success.
 
-#### Chain Devil
+### Chain Devil
 
 Medium fiend (devil), lawful evil
 
@@ -729,7 +729,7 @@ Reactions
     on a DC 14 Wisdom saving throw or be frightened until the end of
     its turn.
 
-#### Erinyes
+### Erinyes
 
 Medium fiend (devil), lawful evil
 
@@ -785,7 +785,7 @@ Reactions
     that would hit it. To do so, the erinyes must see the attacker and
     be wielding a melee weapon.
 
-#### Horned Devil
+### Horned Devil
 
 Large fiend (devil), lawful evil
 
@@ -842,7 +842,7 @@ Actions
     flammable object that isn’t being worn or carried, it also
     catches fire.
 
-#### Ice Devil
+### Ice Devil
 
 Large fiend (devil), lawful evil
 
@@ -900,7 +900,7 @@ Actions
     up on, unless the creature is incapacitated. The creature then makes
     a DC 17 Dexterity saving throw, taking 35 (10d6) cold damage on a
     failed save, or half as much damage on a successful one.
-    
+
     The wall lasts for 1 minute or until the devil is incapacitated
     or dies. The wall can be damaged and breached; each 10-foot section
     has AC 5, 30 hit points, vulnerability to fire damage, and immunity
@@ -912,7 +912,7 @@ Actions
     failed save, or half as much damage on a successful one. The frigid
     air dissipates when the rest of the wall vanishes.
 
-#### Imp
+### Imp
 
 Tiny fiend (devil, shapechanger), lawful evil
 
@@ -965,7 +965,7 @@ Actions
     or until its concentration ends (as if concentrating on a spell).
     Any equipment the imp wears or carries is invisible with it.
 
-#### Lemure
+### Lemure
 
 Medium fiend (devil), lawful evil
 
@@ -1005,7 +1005,7 @@ Actions
 **Fist**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
     *Hit*: 2 (1d4) bludgeoning damage.
 
-#### Pit Fiend
+### Pit Fiend
 
 Large fiend (devil), lawful evil
 
@@ -1072,7 +1072,7 @@ Actions
 
 ### Dinosaurs
 
-#### Plesiosaurus
+### Plesiosaurus
 
 Large beast, unaligned
 
@@ -1103,7 +1103,7 @@ Actions
 **Bite**: *Melee Weapon Attack*: +6 to hit, reach 10 ft.,
     one target. *Hit*: 14 (3d6 + 4) piercing damage.
 
-#### Triceratops
+### Triceratops
 
 Huge beast, unaligned
 
@@ -1138,7 +1138,7 @@ Actions
 **Stomp**: *Melee Weapon Attack*: +9 to hit, reach 5 ft., one
     prone creature. *Hit*: 22 (3d10 + 6) bludgeoning damage.
 
-#### Tyrannosaurus Rex
+### Tyrannosaurus Rex
 
 Huge beast, unaligned
 
@@ -1228,9 +1228,9 @@ Actions
 
 ### Dragons, Chromatic {#dragons-chromatic}
 
-#### Black Dragon
+### Black Dragon
 
-#### Ancient Black Dragon
+### Ancient Black Dragon
 
 Gargantuan dragon, chaotic evil
 
@@ -1301,7 +1301,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Adult Black Dragon
+### Adult Black Dragon
 
 Huge dragon, chaotic evil
 
@@ -1372,7 +1372,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Young Black Dragon
+### Young Black Dragon
 
 Large dragon, chaotic evil
 
@@ -1416,7 +1416,7 @@ Actions
     14 Dexterity saving throw, taking 49 (11d8) acid damage on a failed
     save, or half as much damage on a successful one.
 
-#### Black Dragon Wyrmling
+### Black Dragon Wyrmling
 
 Medium dragon, chaotic evil
 
@@ -1460,9 +1460,9 @@ Actions
     14 Dexterity saving throw, taking 49 (11d8) acid damage on a failed
     save, or half as much damage on a successful one.
 
-#### Blue Dragon
+### Blue Dragon
 
-#### Ancient Blue Dragon
+### Ancient Blue Dragon
 
 Gargantuan dragon, lawful evil
 
@@ -1532,7 +1532,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Adult Blue Dragon
+### Adult Blue Dragon
 
 Huge dragon, lawful evil
 
@@ -1602,7 +1602,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Young Blue Dragon
+### Young Blue Dragon
 
 Large dragon, lawful evil
 
@@ -1643,7 +1643,7 @@ Actions
     make a DC 16 Dexterity saving throw, taking 55 (10d10) lightning
     damage on a failed save, or half as much damage on a successful one.
 
-#### Blue Dragon Wyrmling
+### Blue Dragon Wyrmling
 
 Medium dragon, lawful evil
 
@@ -1679,9 +1679,9 @@ Actions
     make a DC 12 Dexterity saving throw, taking 22 (4d10) lightning
     damage on a failed save, or half as much damage on a successful one.
 
-#### Green Dragon
+### Green Dragon
 
-#### Ancient Green Dragon
+### Ancient Green Dragon
 
 Gargantuan dragon, lawful evil
 
@@ -1752,7 +1752,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Adult Green Dragon
+### Adult Green Dragon
 
 Huge dragon, lawful evil
 
@@ -1823,7 +1823,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Young Green Dragon
+### Young Green Dragon
 
 Large dragon, lawful evil
 
@@ -1869,7 +1869,7 @@ Actions
     Constitution saving throw, taking 42 (12d6) poison damage on a
     failed save, or half as much damage on a successful one.
 
-#### Green Dragon Wyrmling
+### Green Dragon Wyrmling
 
 Medium dragon, lawful evil
 
@@ -1910,9 +1910,9 @@ Actions
     Constitution saving throw, taking 21 (6d6) poison damage on a failed
     save, or half as much damage on a successful one.
 
-#### Red Dragon
+### Red Dragon
 
-#### Ancient Red Dragon
+### Ancient Red Dragon
 
 Gargantuan dragon, chaotic evil
 
@@ -1982,7 +1982,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Adult Red Dragon
+### Adult Red Dragon
 
 Huge dragon, chaotic evil
 
@@ -2052,7 +2052,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Young Red Dragon
+### Young Red Dragon
 
 Large dragon, chaotic evil
 
@@ -2093,7 +2093,7 @@ Actions
     saving throw, taking 56 (16d6) fire damage on a failed save, or half
     as much damage on a successful one.
 
-#### Red Dragon Wyrmling
+### Red Dragon Wyrmling
 
 Medium dragon, chaotic evil
 
@@ -2129,9 +2129,9 @@ Actions
     saving throw, taking 24 (7d6) fire damage on a failed save, or half
     as much damage on a successful one.
 
-#### White Dragon
+### White Dragon
 
-#### Ancient White Dragon
+### Ancient White Dragon
 
 Gargantuan dragon, chaotic evil
 
@@ -2204,7 +2204,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Adult White Dragon
+### Adult White Dragon
 
 Huge dragon, chaotic evil
 
@@ -2277,7 +2277,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Young White Dragon
+### Young White Dragon
 
 Large dragon, chaotic evil
 
@@ -2323,7 +2323,7 @@ Actions
     Constitution saving throw, taking 45 (10d8) cold damage on a failed
     save, or half as much damage on a successful one.
 
-#### White Dragon Wyrmling
+### White Dragon Wyrmling
 
 Medium dragon, chaotic evil
 
@@ -2361,9 +2361,9 @@ Actions
 
 ### Dragons, Metallic {#dragons-metallic}
 
-#### Brass Dragon
+### Brass Dragon
 
-#### Ancient Brass Dragon
+### Ancient Brass Dragon
 
 Gargantuan dragon, chaotic good
 
@@ -2449,7 +2449,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Adult Brass Dragon
+### Adult Brass Dragon
 
 Huge dragon, chaotic good
 
@@ -2525,7 +2525,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Young Brass Dragon
+### Young Brass Dragon
 
 Large dragon, chaotic good
 
@@ -2572,7 +2572,7 @@ Actions
     a creature if the creature takes damage or someone uses an action to
     wake it.
 
-#### Brass Dragon Wyrmling
+### Brass Dragon Wyrmling
 
 Medium dragon, chaotic good
 
@@ -2615,9 +2615,9 @@ Actions
     a creature if the creature takes damage or someone uses an action to
     wake it.
 
-#### Bronze Dragon
+### Bronze Dragon
 
-#### Ancient Bronze Dragon
+### Ancient Bronze Dragon
 
 Gargantuan dragon, lawful good
 
@@ -2703,7 +2703,7 @@ Wing Attack (Costs 2 Actions): The dragon beats its wings. Each
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Adult Bronze Dragon
+### Adult Bronze Dragon
 
 Huge dragon, lawful good
 
@@ -2789,7 +2789,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Young Bronze Dragon
+### Young Bronze Dragon
 
 Large dragon, lawful good
 
@@ -2838,7 +2838,7 @@ Actions
     Strength saving throw. On a failed save, the creature is pushed 40
     feet away from the dragon.
 
-#### Bronze Dragon Wyrmling
+### Bronze Dragon Wyrmling
 
 Medium dragon, lawful good
 
@@ -2883,9 +2883,9 @@ Actions
     Strength saving throw. On a failed save, the creature is pushed 30
     feet away from the dragon.
 
-#### Copper Dragon
+### Copper Dragon
 
-#### Ancient Copper Dragon
+### Ancient Copper Dragon
 
 Gargantuan dragon, chaotic good
 
@@ -2975,7 +2975,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Adult Copper Dragon
+### Adult Copper Dragon
 
 Huge dragon, chaotic good
 
@@ -3055,7 +3055,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Young Copper Dragon
+### Young Copper Dragon
 
 Large dragon, chaotic good
 
@@ -3106,7 +3106,7 @@ Actions
     each of its turns, ending the effect on itself with a
     successful save.
 
-#### Copper Dragon Wyrmling
+### Copper Dragon Wyrmling
 
 Medium dragon, chaotic good
 
@@ -3153,9 +3153,9 @@ Actions
     each of its turns, ending the effect on itself with a
     successful save.
 
-#### Gold Dragon
+### Gold Dragon
 
-#### Ancient Gold Dragon
+### Ancient Gold Dragon
 
 Gargantuan dragon, lawful good
 
@@ -3245,7 +3245,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Adult Gold Dragon
+### Adult Gold Dragon
 
 Huge dragon, lawful good
 
@@ -3335,7 +3335,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Young Gold Dragon
+### Young Gold Dragon
 
 Large dragon, lawful good
 
@@ -3382,7 +3382,7 @@ Actions
     repeat the saving throw at the end of each of its turns, ending the
     effect on itself on a success.
 
-#### Gold Dragon Wyrmling
+### Gold Dragon Wyrmling
 
 Medium dragon, lawful good
 
@@ -3433,9 +3433,9 @@ Actions
     repeat the saving throw at the end of each of its turns, ending the
     effect on itself on a success.
 
-#### Silver Dragon
+### Silver Dragon
 
-#### Ancient Silver Dragon
+### Ancient Silver Dragon
 
 Gargantuan dragon, lawful good
 
@@ -3523,7 +3523,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Adult Silver Dragon
+### Adult Silver Dragon
 
 Huge dragon, lawful good
 
@@ -3611,7 +3611,7 @@ legendary actions at the start of its turn.
     be knocked prone. The dragon can then fly up to half its
     flying speed.
 
-#### Young Silver Dragon
+### Young Silver Dragon
 
 Large dragon, lawful good
 
@@ -3658,7 +3658,7 @@ breath weapons.
     can repeat the saving throw at the end of each of its turns, ending
     the effect on itself on a success.
 
-#### Silver Dragon Wyrmling
+### Silver Dragon Wyrmling
 
 Medium dragon, lawful good
 

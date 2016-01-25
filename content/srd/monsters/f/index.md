@@ -8,7 +8,7 @@ Monsters (F)
 
 ### Fungi
 
-#### Shrieker
+### Shrieker
 
 Medium plant, unaligned
 
@@ -43,7 +43,7 @@ Reactions
     shrieker continues to shriek until the disturbance moves out of
     range and for 1d4 of the shrieker’s turns afterward.
 
-#### Violet Fungus
+### Violet Fungus
 
 Medium plant, unaligned
 

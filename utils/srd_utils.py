@@ -13,16 +13,17 @@ def split_monsters(lines, target):
       current_dir = target + '/' + letter_match.group(1) + '/'
     elif monster_match:
       monstername = monster_match.group(1)
-      monstername = re.sub('[^\w\s-]', '', monstername).strip().lower()
-      monstername = re.sub('[-\s]+', '-', monstername)
-      monstername += '.md'
-      current_file = open(current_dir + urllib.quote_plus(monstername), 'w+')
+      monstertitle = monstername
+      monsterfilename = re.sub('[^\w\s-]', '', monstername).strip().lower()
+      monsterfilename = re.sub('[-\s]+', '-', monsterfilename)
+      monsterfilename += '.md'
+      current_file = open(current_dir + urllib.quote_plus(monsterfilename), 'w+')
       current_file.write(
 '''-------------------------
 Title: {}
 -------------------------
 
-'''.format(monstername))
+'''.format(monstertitle))
     elif current_dir and current_file:
       current_file.write(line)
 
