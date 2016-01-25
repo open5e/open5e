@@ -218,8 +218,7 @@ Your speed determines how far you can move when traveling (
 By virtue of your race, your character can speak, read, and write
 certain languages.
 
-#### \
-Subraces
+#### Subraces
 
 Some races have subraces. Members of a subrace have the traits of the
 parent race in addition to the traits specified for their subrace.
@@ -1160,8 +1159,7 @@ attack roll with one.
 You can cast any bard spell you know as a ritual if that spell has the
 ritual tag.
 
-#### \
-Spellcasting Focus
+#### Spellcasting Focus
 
 You can use a musical instrument (see chapter 5, “Equip-­‐‑ment”) as a
 spellcasting focus for your bard spells.
@@ -1261,8 +1259,7 @@ number in the Spells Known column of the Bard table.
 You learn two additional spells from any class at 14th level and again
 at 18th level.
 
-### \
-Superior Inspiration
+### Superior Inspiration
 
 At 20th level, when you roll initiative and have no uses of Bardic
 Inspiration left, you regain one use.
@@ -1792,8 +1789,7 @@ do so, choose a number of druid spells equal to your Wisdom modifier +
 your druid level (minimum of one spell). The spells must be of a level
 for which you have spell slots.
 
-#### \
-Spellcasting Focus
+#### Spellcasting Focus
 
 You can use a druidic focus (see chapter 5, “Equip-­‐‑ ment”) as a
 spellcasting focus for your druid spells.
@@ -2277,8 +2273,7 @@ Different fighters choose different approaches to perfecting their
 fighting prowess. The martial archetype you choose to emulate reflects
 your approach.
 
-### \
-Champion
+### Champion
 
 The archetypal Champion focuses on the development of raw physical power
 honed to deadly perfection. Those who model themselves on this archetype
@@ -2427,8 +2422,7 @@ Starting at 2nd level, your training allows you to harness the mystic
 energy of ki. Your access to this energy is represented by a number of
 ki points. Your monk level determines the number of points you
 
-### \
-Unarmored Movement
+### Unarmored Movement
 
 Starting at 2nd level, your speed increases by 10 feet while you are not
 wearing armor or wielding a shield. This bonus increases when you reach
@@ -2527,8 +2521,7 @@ the end of your next turn.
 Starting at 6th level, your unarmed strikes count as magical for the
 purpose of overcoming resistance
 
-### \
-Timeless Body
+### Timeless Body
 
 At 15th level, your ki sustains you so that you suffer none of the
 frailty of old age, and you can’t be aged magically. You can still die
@@ -2787,8 +2780,7 @@ on the attack roll. You must be wielding a shield.
 By 2nd level, you have learned to draw on divine magic through
 meditation and prayer to cast spells as a cleric does.
 
-#### \
-Preparing and Casting Spells
+#### Preparing and Casting Spells
 
 The Paladin table shows how many spell slots you have to cast your
 spells. To cast one of your paladin spells of 1st level or higher, you
@@ -2890,8 +2882,7 @@ you can increase one ability score of your choice by 2, or you can
 increase two ability scores of your choice by 1. As normal, you can’t
 increase an ability score above 20 using this feature.
 
-### \
-Extra Attack
+### Extra Attack
 
 Beginning at 5th level, you can attack twice, instead of once, whenever
 you take the Attack action on your turn.
@@ -3216,8 +3207,7 @@ While you are wearing armor, you gain a +1 bonus to AC.
 When you are wielding a melee weapon in one hand and no other weapons,
 you gain a +2 bonus to damage rolls with that weapon.
 
-#### \
-Two-Weapon Fighting
+#### Two-Weapon Fighting
 
 When you engage in two-­‐‑weapon fighting, you can add your ability
 modifier to the damage of the second attack.
@@ -3593,8 +3583,7 @@ By 11th level, you have refined your chosen skills until they approach
 perfection. Whenever you make an ability check that lets you add your
 proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.
 
-### \
-Blindsense
+### Blindsense
 
 Starting at 14th level, if you are able to hear, you are aware of the
 location of any hidden or invisible creature within 10 feet of you.
@@ -3956,8 +3945,7 @@ When you cast a spell that forces a creature to make a saving throw to
 resist its effects, you can spend 3 sorcery points to give one target of
 the spell disadvantage on its first saving throw made against the spell.
 
-#### \
-Quickened Spell
+#### Quickened Spell
 
 When you cast a spell that has a casting time of 1 action, you can spend
 2 sorcery points to change the casting time to 1 bonus action for this
@@ -4064,8 +4052,7 @@ You can’t manifest your wings while wearing armor unless the armor is
 made to accommodate them, and clothing not made to accommodate your
 wings might be destroyed when you manifest them.
 
-#### \
-Draconic Presence
+#### Draconic Presence
 
 Beginning at 18th level, you can channel the dread presence of your
 dragon ancestor, causing those around you to become awestruck or
@@ -4319,7 +4306,6 @@ expended spell slots from your Pact Magic feature. Once you regain spell
 slots with this feature, you must finish a long rest before you can do
 so again.
 
-\
 Eldritch Invocations
 --------------------
 
@@ -4434,8 +4420,7 @@ until the end of your next turn. While perceiving through the other
 creature’s senses, you benefit from any special senses possessed by that
 creature, and you are blinded and deafened to your own surroundings.
 
-#### \
-Lifedrinker
+#### Lifedrinker
 
 > *Prerequisite: 12th level, Pact of the Blade feature*
 
@@ -4550,7 +4535,6 @@ You can see the true form of any shapechanger or creature concealed by
 illusion or transmutation magic while the creature is within 30 feet of
 you and within line of sight.
 
-\
 Otherworldly Patrons
 --------------------
 
@@ -4899,8 +4883,7 @@ gain as bandits, adventurers, or aspiring tyrants.
 Beginning when you select this school at 2nd level, the gold and time
 you must spend to copy an evocation spell into your spellbook is halved.
 
-#### \
-Sculpt Spells
+#### Sculpt Spells
 
 Beginning at 2nd level, you can create pockets of relative safety within
 the effects of your evocation spells. When you cast an evocation spell
@@ -5243,8 +5226,7 @@ you know or have prepared from classes with the Spellcasting class
 feature, and you can use the spell slots you gain from the Spellcasting
 class feature to cast warlock spells you know.
 
-#### \
-Multiclass Spellcaster: Spell Slots per Spell Level
+#### Multiclass Spellcaster: Spell Slots per Spell Level
 
 > **Lvl. 1st 2nd 3rd 4th 5th 6th 7th 8th 9th**
 >
@@ -5376,8 +5358,7 @@ is incapable of making a moral or ethical choice and acts according to
 its bestial nature. Sharks are savage predators, for example, but they
 are not evil; they have no alignment.
 
-### \
-Languages
+### Languages
 
 Your race indicates the languages your character can speak by default,
 and your background might give you access to one or more additional
@@ -5824,8 +5805,7 @@ the dice determine the results.
 For every ability check, the GM decides which of the six abilities is
 relevant to the task at hand and the
 
-#### \
-Typical Difficulty Classes
+#### Typical Difficulty Classes
 
 > **Task Difficulty DC**
 >
@@ -6047,8 +6027,7 @@ Every task that a character or monster might attempt in the game is
 covered by one of the six abilities. This section explains in more
 detail what those abilities mean and the ways they are used in the game.
 
-### \
-Strength
+### Strength
 
 Strength measures bodily power, athletic training, and the extent to
 which you can exert raw physical force.
@@ -6843,7 +6822,6 @@ it breaks.
 A character can also attempt a Strength check to break an object. The GM
 sets the DC for any such check.
 
-\
 Resting
 -------
 
@@ -7075,8 +7053,7 @@ If you’re surprised, you can’t move or take an action on your first turn
 of the combat, and you can’t take a reaction until that turn ends. A
 member of a group can be surprised even if the other members aren’t.
 
-### \
-Initiative
+### Initiative
 
 Initiative determines the order of turns during combat. When combat
 starts, every participant makes a Dexterity check to determine their
@@ -7186,8 +7163,7 @@ constitute your entire move. However you’re moving, you deduct the
 distance of each part of your move from your speed until it is used up
 or until you are done moving.
 
-### \
-Breaking Up Your Move
+### Breaking Up Your Move
 
 You can break up your movement on your turn, using some of your speed
 before and after your action. For example, if you have a speed of 30
@@ -7418,8 +7394,7 @@ instance, you can move up to 30 feet this turn if you dash.
 If you take the Disengage action, your movement doesn’t provoke
 opportunity attacks for the rest of the turn.
 
-### \
-Dodge
+### Dodge
 
 When you take the Dodge action, you focus entirely on avoiding attacks.
 Until the start of your next turn, any attack roll made against you has
@@ -7624,8 +7599,7 @@ bludgeoning damage equal to 1
 
 + your Strength modifier. You are proficient with your unarmed strikes.
 
-#### \
-Opportunity Attacks
+#### Opportunity Attacks
 
 In a fight, everyone is constantly watching for a chance to strike an
 enemy who is fleeing or passing by. Such a strike is called an
@@ -7838,8 +7812,7 @@ deal psychic damage.
 or an angel’s smiting weapon, sears the flesh like fire and overloads
 the spirit with power.
 
-### \
-Damage Resistance and
+### Damage Resistance and
 
 > **Vulnerability**
 
@@ -8411,8 +8384,7 @@ provide total cover.
 A cone extends in a direction you choose from its point of origin. A
 cone’s width at a given point along
 
-#### \
-Sphere
+#### Sphere
 
 You select a sphere’s point of origin, and the sphere extends outward
 from that point. The sphere’s size is expressed as a radius in feet that
@@ -8713,8 +8685,7 @@ True Resurrection
 
 Guidance Mending Produce Flame Resistance Shillelagh
 
-#### \
-1st Level
+#### 1st Level
 
 Charm Person
 
@@ -9503,8 +9474,7 @@ within the sphere.
 > have no effect on the sphere. Likewise, the spheres created by
 > different *antimagic field* spells don’t nullify each other.
 
-#### \
-Antipathy/Sympathy
+#### Antipathy/Sympathy
 
 > *8th-­‐‑level enchantment*
 >
@@ -9732,8 +9702,7 @@ the trigger of a *symbol* spell. You choose a creature type and other
 spells and magical effects treat the target as if it were a creature of
 that type or of that alignment.
 
-#### \
-Astral Projection
+#### Astral Projection
 
 > *9th-­‐‑level necromancy*
 >
@@ -10087,8 +10056,7 @@ slot level above 4th.
 >
 > **Range:** 30 feet
 
-###### \
-Components: V
+###### Components: V
 
 > **Duration:** 1 minute
 
@@ -10192,8 +10160,7 @@ new one. Under such conditions, the spell’s damage increases by 1d10.
 4th or higher level, the damage increases by 1d10 for each slot level
 above 3rd.
 
-#### \
-Calm Emotions
+#### Calm Emotions
 
 > *2nd-­‐‑level enchantment*
 >
@@ -12259,8 +12226,7 @@ location where it doesn’t have line of sight to you, the creature can
 make a Wisdom saving throw. On a successful save, the spell ends for
 that creature.
 
-#### \
-Feather Fall
+#### Feather Fall
 
 > *1st-­‐‑level transmutation*
 >
@@ -12373,8 +12339,7 @@ of paths along the way, you automatically determine which path is the
 shortest and most direct route (but not necessarily the safest route) to
 the destination.
 
-#### \
-Find Traps
+#### Find Traps
 
 > *2nd-­‐‑level divination*
 >
@@ -12483,8 +12448,7 @@ The fire damages objects in the area and ignites flammable objects that
 aren’t being worn or carried. If you choose, plant life in the area is
 unaffected by this spell.
 
-#### \
-Flame Blade
+#### Flame Blade
 
 > *2nd-­‐‑level evocation*
 >
@@ -13532,8 +13496,7 @@ takes damage, the target can make another Wisdom saving throw. The
 target has advantage on the saving throw if it’s triggered by damage. On
 a success, the spell ends.
 
-#### \
-Hold Monster
+#### Hold Monster
 
 > *5th-­‐‑level enchantment*
 >
@@ -14469,8 +14432,7 @@ or constructs.
 6th level or higher, the healing increases by 1d8 for each slot level
 above 5th.
 
-#### \
-Mass Heal
+#### Mass Heal
 
 > *9th-­‐‑level evocation*
 >
@@ -15223,8 +15185,7 @@ points or fewer, it dies. Otherwise, the spell has no effect.
 >
 > **Range:** 60 feet
 
-###### \
-Components: V
+###### Components: V
 
 > **Duration:** Instantaneous
 
@@ -15330,8 +15291,7 @@ failed save, or half as much damage on a successful one.
 3.  ***Special.*** The target is struck by two rays. Roll twice more,
     > rerolling any 8.
 
-#### \
-Prismatic Wall
+#### Prismatic Wall
 
 > *9th-­‐‑level abjuration*
 >
@@ -16271,8 +16231,7 @@ damage if it’s in the spell’s area.
 3rd level or higher, the damage increases by 1d8 for each slot level
 above 2nd.
 
-#### \
-Shield
+#### Shield
 
 > *1st-­‐‑level abjuration*
 >
@@ -16388,8 +16347,7 @@ Intelligence (Investigation) check against your spell save DC. If a
 creature discerns the illusion for what it is, the creature can see
 through the image.
 
-#### \
-Simulacrum
+#### Simulacrum
 
 > *7th-­‐‑level illusion*
 >
@@ -17302,8 +17260,7 @@ least once before. For the duration, any creature can step into the
 target plant and exit from the destination plant by using 5 feet of
 movement.
 
-#### \
-Tree Stride
+#### Tree Stride
 
 > *5th-­‐‑level conjuration*
 >
@@ -18146,8 +18103,7 @@ subjected to a condition.
 
 -   Attack rolls against the creature have advantage.
 
-#### \
-Unconscious
+#### Unconscious
 
 -   An unconscious creature is incapacitated (see the condition), can’t
     > move or speak, and is unaware of its surroundings
@@ -18375,8 +18331,7 @@ myth and mystery. They’re not simply other worlds, but different
 qualities of being, formed and governed by spiritual and elemental
 principles abstracted from the ordinary world.
 
-### \
-Planar Travel
+### Planar Travel
 
 When adventurers travel into other planes of existence, they are
 undertaking a legendary journey across the thresholds of existence to a
@@ -18680,8 +18635,7 @@ around the trap.
 > complex trap. On the trap’s turn, the water level rises. After several
 > rounds, the room is completely flooded.
 
-### \
-Sample Traps
+### Sample Traps
 
 > The magical and mechanical traps presented here vary in deadliness and
 > are presented in alphabetical order.
@@ -19492,8 +19446,7 @@ you travel to a random destination. Roll a d100. On a 1–60, you travel
 to a random location on the plane you named. On a 61–100, you travel to
 a randomly determined plane of existence.
 
-#### \
-Animated Shield
+#### Animated Shield
 
 > *Armor (shield), very rare (requires attunement)*
 
@@ -20181,8 +20134,7 @@ object itself opens.
 The chime can be used ten times. After the tenth time, it cracks and
 becomes useless.
 
-#### \
-Circlet of Blasting
+#### Circlet of Blasting
 
 > *Wondrous item, uncommon*
 
@@ -20296,8 +20248,7 @@ until the next dawn.
 the crystal ball, you have truesight with a radius of 120 feet centered
 on the spell’s sensor.
 
-#### \
-Cube of Force
+#### Cube of Force
 
 > *Wondrous item, rare (requires attunement)*
 
@@ -20396,8 +20347,7 @@ to you, it moves as close to you as it can and then falls to the ground.
 It also ceases to hover if you grasp it or move more than 30 feet away
 from it.
 
-#### \
-Decanter of Endless Water
+#### Decanter of Endless Water
 
 > *Wondrous item, uncommon*
 
@@ -20610,8 +20560,7 @@ by an avatar of death can’t be restored to life.
 draw from the deck again, counting both draws as one of your declared
 draws. If losing that much XP
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 > 16 (+3) 16 (+3) 16 (+3) 16 (+3) 16 (+3) 16 (+3)
 
@@ -20858,8 +20807,7 @@ While wearing this armor, you gain a +2 bonus to AC. In addition, if an
 effect moves you against your will along the ground, you can use your
 reaction to reduce the distance you are moved by up to 10 feet.
 
-#### \
-Dwarven Thrower
+#### Dwarven Thrower
 
 > *Weapon (warhammer), very rare (requires attunement by a dwarf)*
 
@@ -20968,8 +20916,7 @@ person* spell (save DC 13) on a humanoid within 30 feet of you, provided
 that you and the target can see each other. The lenses regain all
 expended charges daily at dawn.
 
-#### \
-Eyes of Minute Seeing
+#### Eyes of Minute Seeing
 
 > *Wondrous item, uncommon*
 
@@ -21075,8 +21022,7 @@ a point within 10 feet of you. The token disappears,
 and a floating whip takes its place. You can then use a bonus action to
 make a melee spell attack against a
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 14 (+2) 13 (+1) 13 (+1) 2 (−4) 10 (+0) 3 (−4)
 
@@ -21186,8 +21132,7 @@ become a raven for up to 12 hours. Once it has been used, it can’t be
 used again until 2 days have passed. While in raven form, the figurine
 allows you to cast the *animal messenger* spell on it at will.
 
-#### \
-Flame Tongue
+#### Flame Tongue
 
 > *Weapon (any sword), rare (requires attunement)*
 
@@ -21403,8 +21348,7 @@ the gate is sucked through it and deposited in a random location on the
 Astral Plane. The gate then closes. The gate is one-­‐‑way only and
 can’t be reopened.
 
-#### \
-Hat of Disguise
+#### Hat of Disguise
 
 > *Wondrous item, uncommon (requires attunement)*
 
@@ -21964,8 +21908,7 @@ The mace regains 1d3 expended charges daily at dawn.
 > sprinkled on it. It is under your control, and it understands and
 > obeys your spoken commands.
 
-#### \
-Manual of Quickness of Action
+#### Manual of Quickness of Action
 
 > *Wondrous item, very rare*
 >
@@ -22388,8 +22331,7 @@ potion wears off, you fall unless you have some other means of staying
 aloft. This potion’s clear liquid floats at the top of its container and
 has cloudy white impurities drifting in it.
 
-#### \
-Potion of Gaseous Form
+#### Potion of Gaseous Form
 
 > *Potion, rare*
 
@@ -22732,8 +22674,7 @@ the ring causes the missing part to regrow and return to full
 functionality after 1d6 + 1 days if you have at least 1 hit point the
 whole time.
 
-#### \
-Ring of Resistance
+#### Ring of Resistance
 
 > *Ring, rare (requires attunement)*
 
@@ -22846,8 +22787,7 @@ You have a swimming speed of 40 feet while wearing this ring.
 While wearing this ring, you can cast the *telekinesis* spell at will,
 but you can target only objects that aren’t being worn or carried.
 
-#### \
-Ring of the Ram
+#### Ring of the Ram
 
 > *Ring, rare (requires attunement)*
 
@@ -23295,8 +23235,7 @@ shield fails to end the curse on you. Whenever a ranged weapon attack is
 made against a target within 10 feet of you, the curse causes you to
 become the target instead.
 
-#### \
-Slippers of Spider Climbing
+#### Slippers of Spider Climbing
 
 > *Wondrous item, uncommon (requires attunement)*
 
@@ -23941,8 +23880,7 @@ including *sovereign glue.*
 When you roll a 20 on your attack roll with this magic weapon, your
 critical hit deals an extra 2d6 damage of the weapon’s type.
 
-#### \
-Vorpal Sword
+#### Vorpal Sword
 
 > *Weapon (any sword that deals slashing damage), legendary (requires
 > attunement)*
@@ -24043,8 +23981,7 @@ The wand regains 1d6 + 1 expended charges daily at dawn. If you expend
 the wand’s last charge, roll a d20. On a 1, the wand crumbles into ashes
 and is destroyed.
 
-#### \
-Wand of Magic Detection
+#### Wand of Magic Detection
 
 > *Wand, uncommon*
 
@@ -24275,8 +24212,7 @@ descend at a rate of 30 feet per round until you land.
 
 every 12 hours they aren’t in use.
 
-#### \
-Wings of Flying
+#### Wings of Flying
 
 > *Wondrous item, rare (requires attunement)*
 
@@ -24803,8 +24739,7 @@ shown in the Hit Dice by Size table.
 > A monster that has a swimming speed doesn’t need to spend extra
 > movement to swim.
 
-### \
-Ability Scores
+### Ability Scores
 
 > Every monster has six ability scores (Strength, Dexterity,
 > Constitution, Intelligence, Wisdom, and Charisma) and corresponding
@@ -24931,8 +24866,7 @@ underground have this special sense.
 > See the *Player’s Handbook* for rules on using armor or weapons
 > without proficiency.
 
-#### \
-Tremorsense
+#### Tremorsense
 
 A monster with tremorsense can detect and pinpoint the origin of
 vibrations within a specific radius, provided that the monster and the
@@ -25040,8 +24974,7 @@ telepathic messages.
 
 8 3,900 25 75,000
 
-### \
-Special Traits
+### Special Traits
 
 > Special traits (which appear after a monster’s challenge rating but
 > before any actions or reactions) are characteristics that are likely
@@ -25136,8 +25069,7 @@ assume that a monster has 2d4 pieces of ammunition for a thrown weapon
 attack, and 2d10 pieces of ammunition for a projectile weapon such as a
 bow or crossbow.
 
-### \
-Reactions
+### Reactions
 
 If a monster can do something special with its reaction, that
 information is contained here. If a creature has no special reaction,
@@ -25751,7 +25683,6 @@ target. *Hit:* 7 (1d8 + 3) bludgeoning damage, or 8 (1d10 + 3)
 bludgeoning damage if used with two hands to make a melee attack, plus 3
 (1d6) fire damage.
 
-\
 Monsters (B)
 ------------
 
@@ -25868,8 +25799,7 @@ can escape from the corpse by using 15 feet of movement, exiting prone.
 >
 > **Speed** 30 ft.
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 15 (+2) 14 (+2) 13 (+1) 8 (−1) 11 (+0) 9 (−1)
 
@@ -25951,8 +25881,7 @@ high jump is up to 15 feet, with or without a running start.
 > half the damage, isn’t knocked prone, and is pushed 5 feet out of the
 > bulette’s space into an unoccupied
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 19 (+4) 11 (+0) 19 (+4) 3 (−4) 14 (+2) 10 (+0)
 
@@ -26261,8 +26190,7 @@ Monsters (D)
 >
 > ***Magic Weapons.*** The couatl’s weapon attacks are magical.
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 16 (+3) 12 (+1) 13 (+1) 2 (−4) 10 (+0) 5 (−3)
 
@@ -26691,8 +26619,7 @@ itself on a success.
 of it must succeed on a DC 10 Wisdom saving throw or be frightened for 1
 minute. The target can repeat the saving throw at the end of each of its
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 17 (+3) 15 (+2) 18 (+4) 8 (−1) 13 (+1) 8 (−1)
 
@@ -27017,8 +26944,7 @@ If the creature can see the devil, it must succeed on a DC 14
 > that would hit it. To do so, the erinyes must see the attacker and be
 > wielding a melee weapon.
 
-#### \
-Horned Devil
+#### Horned Devil
 
 > *Large fiend (devil), lawful evil*
 >
@@ -27467,8 +27393,7 @@ Persuasion) checks against the target.
 
 **Speed** 40 ft., fly 80 ft., swim 40 ft.
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 27 (+8) 14 (+2) 25 (+7) 16 (+3) 15 (+2) 19 (+4)
 
@@ -27650,8 +27575,7 @@ legendary actions at the start of its turn.
 > ***Claw.** Melee Weapon Attack:* +7 to hit, reach 5 ft., one target.
 > *Hit:* 11 (2d6 + 4) slashing damage.
 
-#### \
-Ancient Blue Dragon
+#### Ancient Blue Dragon
 
 > *Gargantuan dragon, lawful evil*
 >
@@ -27922,8 +27846,7 @@ on a failed save, or half as much damage on a successful one.
 a DC 12 Dexterity saving throw, taking 22 (4d10) lightning damage on a
 failed save, or half as much damage on a successful one.
 
-#### \
-Green Dragon
+#### Green Dragon
 
 > **Ancient Green Dragon**
 >
@@ -28591,8 +28514,7 @@ damage on a successful one.
 >
 > ***Bite.** Melee Weapon Attack:* +7 to hit, reach 10 ft., one
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 14 (+2) 10 (+0) 14 (+2) 5 (−3) 10 (+0) 11 (+0)
 
@@ -28650,8 +28572,7 @@ STR DEX CON INT WIS CHA
 >
 > **Armor Class** 16 (natural armor)
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 > 27 (+8) 10 (+0) 25 (+7) 16 (+3) 15 (+2) 19 (+4)
 >
@@ -28695,8 +28616,7 @@ effect on itself on a success. If a creature’s saving throw is
 successful or the effect ends for it, the creature is immune to the
 dragon’s Frightful Presence for the next 24 hours.
 
-##### \
-Legendary Actions
+##### Legendary Actions
 
 The dragon can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only
@@ -28749,8 +28669,7 @@ Intelligence, Wisdom, and Charisma scores, as well as this action. Its
 statistics and capabilities are otherwise replaced by those of the new
 form, except any class features or legendary actions of that form.
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 23 (+6) 10 (+0) 21 (+5) 14 (+2) 13 (+1) 17 (+3)
 
@@ -29381,8 +29300,7 @@ of it must succeed on a DC 16 Wisdom saving throw or
 become frightened for 1 minute. A creature can repeat the saving throw
 at the end of each of its turns, ending
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 > 19 (+4) 12 (+1) 17 (+3) 16 (+3) 13 (+1) 15 (+2)
 
@@ -30057,8 +29975,7 @@ two with its claws.
 > repeat the saving throw at the end of each of its turns, ending the
 > effect on itself on a success.
 
-#### \
-Silver Dragon Wyrmling
+#### Silver Dragon Wyrmling
 
 > *Medium dragon, lawful good*
 >
@@ -30755,8 +30672,7 @@ is indistinguishable from an ordinary fungus.
 > ***Rotting Touch.** Melee Weapon Attack:* +2 to hit, reach 10 ft., one
 > creature. *Hit:* 4 (1d8) necrotic damage.
 
-#### \
-Gargoyle
+#### Gargoyle
 
 > *Medium elemental, chaotic evil*
 >
@@ -31596,8 +31512,7 @@ throws, and can use its slam attack as a bonus action.
 ***Berserk.*** Whenever the golem starts its turn with 40 hit points or
 fewer, roll a d6. On a 6, the golem goes
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 24 (+7) 9 (−1) 20 (+5) 3 (−4) 11 (+0) 1 (−5)
 
@@ -31891,8 +31806,7 @@ Monsters (H)
 
 > 18 (+4) 12 (+1) 16 (+3) 13 (+1) 14 (+2) 14 (+2)
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 18 (+4) 15 (+2) 16 (+3) 16 (+3) 14 (+2) 16 (+3)
 
@@ -32205,8 +32119,7 @@ next 24 hours.
 ***Pack Tactics.*** The hound has advantage on an attack roll against a
 creature if at least one of the hound’s
 
-#### \
-Hobgoblin
+#### Hobgoblin
 
 > *Medium humanoid (goblinoid), lawful evil*
 >
@@ -32376,7 +32289,6 @@ awake.
 > ***Bite.** Melee Weapon Attack:* +8 to hit, reach 10 ft., one target.
 > *Hit:* 10 (1d10 + 5) piercing damage.
 
-\
 Monsters (I)
 ------------
 
@@ -33095,8 +33007,7 @@ Monsters (M)
 
 **Senses** darkvision 60 ft., passive Perception 10
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 17 (+3) 16 (+3) 17 (+3) 7 (−2) 12 (+1) 8 (−1)
 
@@ -33287,8 +33198,7 @@ itself on a success.
 >
 > **Speed** 30 ft., fly 30 ft.
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 > 8 (−1) 12 (+1) 12 (+1) 7 (−2) 10 (+0) 10 (+0)
 >
@@ -34327,8 +34237,7 @@ Monsters (P)
 >
 > **Speed** 15 ft., fly 60 ft.
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 > 6 (−2) 15 (+2) 13 (+1) 10 (+0) 12 (+1) 10 (+0)
 >
@@ -34897,8 +34806,7 @@ the start of each of the mound’s turns or take 13 (2d8 + 4) bludgeoning
 damage. If the mound moves, the engulfed target moves with it. The mound
 can have only one creature engulfed at a time.
 
-#### \
-Shield Guardian
+#### Shield Guardian
 
 > *Large construct, unaligned*
 >
@@ -35354,8 +35262,7 @@ sphinx and able to hear the roar must make a saving throw.
 > target dies. A creature, including the target, can use its action to
 > detach the stirge.
 
-#### \
-Succubus/Incubus
+#### Succubus/Incubus
 
 > *Medium fiend (shapechanger), neutral evil*
 >
@@ -35577,8 +35484,7 @@ than 120 feet from the tree; or until the treant takes a bonus action to
 turn it back into an inanimate tree. The tree then takes root if
 possible.
 
-#### \
-Troll
+#### Troll
 
 > *Large giant, chaotic evil*
 >
@@ -36486,8 +36392,7 @@ creature and the ally isn’t incapacitated.
 > ***Multiattack.*** The bear makes two attacks: one with its bite and
 > one with its claws.
 
-#### \
-Blood Hawk
+#### Blood Hawk
 
 > *Small beast, unaligned*
 
@@ -36585,8 +36490,7 @@ Blood Hawk
 > Blink dogs harbor a long-­‐‑ standing hatred for displacer beasts and
 > attack them on sight.
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 13 (+1) 11 (+0) 12 (+1) 2 (−4) 9 (−1) 5 (−3)
 
@@ -37116,8 +37020,7 @@ statistics can also be used to represent a **toad**.
 >
 > **Speed** 30 ft., burrow 10 ft.
 
-#### \
-Giant Bat
+#### Giant Bat
 
 > *Large beast, unaligned*
 
@@ -37181,8 +37084,7 @@ Giant Bat
 > ***Claws.** Melee Weapon Attack:* +3 to hit, reach 5 ft., one target.
 > *Hit:* 6 (2d4 + 1) slashing damage.
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 17 (+3) 10 (+0) 16 (+3) 2 (−4) 7 (−2) 5 (−3)
 
@@ -37765,8 +37667,7 @@ creature and the ally isn’t incapacitated.
 > ***Bite.** Melee Weapon Attack:* +4 to hit, reach 5 ft., one target.
 > *Hit:* 4 (1d4 + 2) piercing damage.
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 15 (+2) 13 (+1) 15 (+2) 1 (−5) 9 (−1) 3 (−4)
 
@@ -39617,8 +39518,7 @@ challenge rating.
 >
 > **Challenge** 1/4 (50 XP)
 
-###### \
-STR DEX CON INT WIS CHA
+###### STR DEX CON INT WIS CHA
 
 10 (+0) 14 (+2) 12 (+1) 20 (+5) 15 (+2) 16 (+3)
 
@@ -39811,8 +39711,7 @@ attacks with its daggers.
 
 2)  piercing damage.
 
-##### \
-Reactions
+##### Reactions
 
 ***Parry.*** The captain adds 2 to its AC against one melee attack that
 would hit it. To do so, the captain must see the attacker and be
