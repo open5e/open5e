@@ -4898,15 +4898,13 @@ following demands:
 -   The item insists on being carried or worn at all times.
 
 -   The item demands that its wielder dispose of anything the item
-    > finds repugnant.
+    finds repugnant.
 
 -   The item demands that its wielder pursue the item’s goals to the
-    > exclusion of all other goals.
+    exclusion of all other goals.
 
 -   The item demands to be given to someone else. If its wielder refuses
-    > to comply with the item’s
-
-> wishes, the item can do any or all of the following:
+    to comply with the item’s wishes, the item can do any or all of the following:
 
 -   Make it impossible for its wielder to attune to it.
 
@@ -4914,21 +4912,21 @@ following demands:
 
 -   Attempt to take control of its wielder.
 
-> If a sentient item attempts to take control of its wielder, the
-> wielder must make a Charisma saving throw, with a DC equal to 12 + the
-> item’s Charisma modifier. On a failed save, the wielder is charmed by
-> the item for 1d12 hours. While charmed, the wielder must try to follow
-> the item’s commands. If the wielder takes damage, it can repeat the
-> saving throw, ending the effect on a success. Whether the attempt to
-> control its user succeeds or fails, the item can’t use this power
-> again until the next dawn.
+If a sentient item attempts to take control of its wielder, the
+wielder must make a Charisma saving throw, with a DC equal to 12 + the
+item’s Charisma modifier. On a failed save, the wielder is charmed by
+the item for 1d12 hours. While charmed, the wielder must try to follow
+the item’s commands. If the wielder takes damage, it can repeat the
+saving throw, ending the effect on a success. Whether the attempt to
+control its user succeeds or fails, the item can’t use this power
+again until the next dawn.
 
 Artifacts
 ---------
 
 #### Orb of Dragonkind
 
-> *Wondrous item, artifact (requires attunement)*
+*Wondrous item, artifact (requires attunement)*
 
 Ages past, elves and humans waged a terrible war against evil dragons.
 When the world seemed doomed, powerful wizards came together and worked
@@ -4966,7 +4964,7 @@ particular people, freedom from the orb, to spread suffering in the
 world, to advance the worship of Tiamat, or something else the GM
 decides.
 
-> ***Random Properties.*** An *Orb of Dragonkind* has the
+***Random Properties.*** An *Orb of Dragonkind* has the
 
 following random properties:
 
@@ -4978,16 +4976,8 @@ following random properties:
 
 ***Spells.*** The orb has 7 charges and regains 1d4 + 3 expended charges
 daily at dawn. If you control the
-
 orb, you can use an action and expend 1 or more charges to cast one of
-the following spells (save DC
-
-> 18\) from it: *cure wounds* (5th-­level version, 3 charges), *daylight*
-> (1 charge), *death ward* (2 charges), or *scrying* (3 charges).
->
-> You can also use an action to cast the *detect magic*
-
-spell from the orb without using any charges.
+the following spells (save DC 18) from it: *cure wounds* (5th-­level version, 3 charges), *daylight* (1 charge), *death ward* (2 charges), or *scrying* (3 charges). You can also use an action to cast the *detect magic* spell from the orb without using any charges.
 
 ***Call Dragons.*** While you control the orb, you can use an action to
 cause the artifact to issue a telepathic call that extends in all
@@ -4997,7 +4987,7 @@ such as Tiamat are unaffected by this call. Dragons drawn to the orb
 might be hostile toward you for compelling them against their will. Once
 you have used this property, it can’t be used again for 1 hour.
 
-> ***Destroying an Orb.*** An *Orb of Dragonkind* appears
+***Destroying an Orb.*** An *Orb of Dragonkind* appears
 
 fragile but is impervious to most damage, including the attacks and
 breath weapons of dragons. A *disintegrate* spell or one good hit from a
