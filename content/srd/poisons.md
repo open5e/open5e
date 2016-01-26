@@ -5,7 +5,7 @@ Given their insidious and deadly nature, poisons are illegal in most
 societies but are a favorite tool among assassins, drow, and other evil
 creatures.
 
-> Poisons come in the following four types.
+Poisons come in the following four types.
 
 ***Contact.*** Contact poison can be smeared on an object and remains
 potent until it is touched or washed off. A creature that touches
@@ -31,34 +31,25 @@ poison is exposed to its effects.
 
 #### Poisons
 
-> **Item Type Price per Dose**
->
-> Assassin’s blood Ingested 150 gp
->
-> Burnt othur fumes Inhaled 500 gp
->
-> Crawler mucus Contact 200 gp
->
-> Drow poison Injury 200 gp
->
-> Essence of ether Inhaled 300 gp
->
-> Malice Inhaled 250 gp Midnight tears Ingested 1,500 gp Oil of taggit
-> Contact 400 gp
->
-> Pale tincture Ingested 250 gp
->
-> Purple worm poison Injury 2,000 gp
->
-> Serpent venom Injury 200 gp
->
-> Torpor Ingested 600 gp
->
-> Truth serum Ingested 150 gp
->
-> Wyvern poison Injury 1,200 gp
->
-> **Sample Poisons**
+ **Item** | **Type** | **Price per Dose**
+ -------- ---------- ------------------
+ Assassin’s blood | Ingested | 150 gp
+ Burnt othur fumes | Inhaled | 500 gp
+ Crawler mucus | Contact|  200 gp
+ Drow poison | Injury | 200 gp
+ Essence of ether | Inhaled|  300 gp
+ Malice | Inhaled | 250 gp
+ Midnight tears | Ingested|  1,500 gp
+ Oil of taggit | Contact | 400 gp
+ Pale tincture  | Ingested  | 250 gp
+ Purple worm poison  | Injury |  2,000 gp
+ Serpent venom  | Injury  | 200 gp
+ Torpor  | Ingested  | 600 gp
+ Truth serum  | Ingested  | 150 gp
+ Wyvern poison  | Injury |  1,200 gp
+
+
+**Sample Poisons**
 
 Each type of poison has its own debilitating effects.
 
@@ -88,7 +79,7 @@ the creature is also unconscious while poisoned in this way. The
 creature wakes up if it takes damage or if another creature takes an
 action to shake it awake.
 
-> ***Essence of Ether (Inhaled).*** A creature subjected
+***Essence of Ether (Inhaled).*** A creature subjected
 
 to this poison must succeed on a DC 15 Constitution saving throw or
 become poisoned for 8 hours. The poisoned creature is unconscious. The
@@ -118,7 +109,7 @@ Until this poison ends, the damage the poison deals can’t be healed by
 any means. After seven successful saving throws, the effect ends and the
 creature can heal normally.
 
-> ***Purple Worm Poison (Injury).*** This poison must
+***Purple Worm Poison (Injury).*** This poison must
 
 be harvested from a dead or incapacitated purple worm. A creature
 subjected to this poison must make a DC 19 Constitution saving throw,

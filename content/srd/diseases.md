@@ -7,9 +7,8 @@ centuries, and soon finds herself suffering from a wasting illness. A
 warlock offends some dark power and contracts a strange affliction that
 spreads whenever he casts spells.
 
-> A simple outbreak might amount to little more
-
-than a small drain on party resources, curable by a casting of *lesser
+A simple outbreak might amount to little more than a small drain on party
+resources, curable by a casting of *lesser
 restoration*. A more complicated outbreak can form the basis of one or
 more adventures as characters search for a cure, stop the spread of the
 disease, and deal with the consequences.
@@ -46,9 +45,8 @@ entering combat, taking damage, experiencing fear, or having a
 nightmare—forces the creature to make a DC 13 Constitution saving throw.
 On a failed save, the creature takes 5 (1d10) psychic damage and becomes
 incapacitated with mad laughter for 1 minute. The creature can repeat
-the saving throw at the end of each of its turns, ending
-
-the mad laughter and the incapacitated condition on a success.
+the saving throw at the end of each of its turns, ending the mad laughter and
+the incapacitated condition on a success.
 
 Any humanoid creature that starts its turn within 10 feet of an infected
 creature in the throes of mad laughter must succeed on a DC 10
@@ -97,9 +95,8 @@ blinds the victim.
 A beast or humanoid that drinks water tainted by sight rot must succeed
 on a DC 15 Constitution saving throw or become infected. One day after
 infection, the creature’s vision starts to become blurry. The creature
-takes a −1 penalty to attack
-
-rolls and ability checks that rely on sight. At the end of each long
+takes a −1 penalty to attack rolls and ability checks that rely on sight.
+At the end of each long
 rest after the symptoms appear, the penalty worsens by 1. When it
 reaches −5, the victim is blinded until its sight is restored by magic
 such as *lesser restoration* or *heal*.
