@@ -1,9 +1,9 @@
-import re, urllib, sys
+import re, urllib, sys, os
 
 
 def split_monsters(lines, target):
     monster_re = re.compile(r'^#{3,4} (.*)')
-    current_dir = target
+    current_dir = os.path.normpath(target) + os.sep
     current_file = None
     for line in lines:
         monster_match = monster_re.match(line)
