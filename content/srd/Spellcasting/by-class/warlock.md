@@ -1,5 +1,5 @@
 ---
-Title: Sorcerer Spells
+Title: Warlock Spells
 ---
 
 ## Warlock Spells
@@ -16,7 +16,7 @@ Protection from Evil and Good
 
 Unseen Servant
 
-### 2nd Level 
+### 2nd Level
 
 Darkness Enthrall Hold Person Invisibility Mirror Image
 Misty Step
@@ -48,24 +48,24 @@ Contact Other Plane Dream
 
 Hold Monster Scrying
 
-### 6th Level 
+### 6th Level
 
 Circle of Death Conjure Fey Create Undead Eyebite Flesh to
 Stone
 
 Mass Suggestion True Seeing
 
-### 7th Level 
+### 7th Level
 
 Etherealness Finger of Death Forcecage Plane Shift
 
-### 8th Level 
+### 8th Level
 
 Demiplane Dominate Monster Feeblemind Glibness
 
 Power Word Stun
 
-### 9th Level 
+### 9th Level
 
 Astral Projection Foresight Imprisonment Power Word Kill
 

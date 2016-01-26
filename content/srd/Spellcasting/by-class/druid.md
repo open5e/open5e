@@ -84,8 +84,6 @@ Gravity
 
 #### 8th Level
 
-
-
 Animal Shapes Antipathy/Sympathy Control Weather Earthquake Feeblemind
 
 Sunburst

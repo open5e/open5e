@@ -8,7 +8,9 @@ Title: Sorcerer Spells
 
 Acid Splash Chill Touch Dancing Lights Light
 
-Mage Hand Mending Message Minor Illusion Prestidigitation Ray of Frost
+Mage Hand
+
+Mending Message Minor Illusion Prestidigitation Ray of Frost
 Shocking Grasp True Strike
 
 ### 1st Level
@@ -59,12 +61,26 @@ Wall of Fire
 
 ### 5th Level
 
-Animate Objects Cloudkill
+Animate Objects
 
-Cone of Cold Creation Dominate Person Hold Monster Insect Plague Seeming
-Telekinesis Teleportation Circle Wall of Stone
+Cloudkill
 
-**6th Level** Chain Lightning Circle of Death Disintegrate Eyebite
+Cone of Cold Creation
+
+Dominate Person
+
+Hold Monster
+
+Insect Plague Seeming
+Telekinesis
+
+Teleportation Circle
+
+Wall of Stone
+
+### 6th Level
+
+Chain Lightning Circle of Death Disintegrate Eyebite
 
 Globe of Invulnerability Mass Suggestion Move Earth
 
@@ -74,16 +90,42 @@ True Seeing
 
 ### 7th Level
 
-Delayed Blast Fireball Etherealness
+Delayed Blast Fireball
 
-Finger of Death Fire Storm Plane Shift Prismatic Spray Reverse Gravity
+Etherealness
+
+Finger of Death
+
+Fire Storm
+
+Plane Shift
+
+Prismatic Spray
+
+Reverse Gravity
+
 Teleport
 
-**8th Level** Dominate Monster Earthquake Incendiary Cloud Power Word
+### 8th Level
+
+Dominate Monster
+
+Earthquake
+
+Incendiary Cloud
+
+Power Word
+
 Stun Sunburst
 
 ### 9th Level
 
 Gate
 
-Meteor Swarm Power Word Kill Time Stop Wish
+Meteor Swarm
+
+Power Word Kill
+
+Time Stop
+
+Wish

@@ -1,5 +1,5 @@
 ---
-Title: Sorcerer Spells
+Title: Wizard Spells
 ---
 
 ## Wizard Spells
@@ -13,7 +13,7 @@ Mage Hand
 Mending Message Minor Illusion Prestidigitation Ray of Frost Shocking
 Grasp True Strike
 
-### 1st Level 
+### 1st Level
 
 Alarm Burning Hands Charm Person Color Spray
 
@@ -32,7 +32,7 @@ Protection from Evil and Good Shield
 
 Silent Image Sleep Thunderwave Unseen Servant
 
-### 2nd Level 
+### 2nd Level
 
 Acid Arrow Alter Self Arcane Lock
 
@@ -47,7 +47,7 @@ Ray of Enfeeblement
 Rope Trick Scorching Ray See Invisibility Shatter Spider Climb
 Suggestion Web
 
-### 3rd Level 
+### 3rd Level
 
 Animate Dead Bestow Curse Blink Clairvoyance Dispel Magic
 Fear Fireball
@@ -67,7 +67,7 @@ Vampiric Touch
 
 Water Breathing
 
-### 4th Level 
+### 4th Level
 
 Arcane Eye Banishment Black Tentacles Blight Confusion
 
@@ -82,7 +82,7 @@ Sphere Secret Chest Stone Shape Stoneskin
 
 Wall of Fire
 
-### 5th Level 
+### 5th Level
 
 Animate Objects Arcane Hand Cloudkill
 
@@ -96,7 +96,7 @@ Scrying Seeming Telekinesis Telepathic Bond
 
 Teleportation Circle Wall of Force Wall of Stone
 
-### 6th Level 
+### 6th Level
 
 Chain Lightning Circle of Death Contingency Create Undead
 Disintegrate Eyebite
@@ -119,7 +119,7 @@ Project Image Reverse Gravity Sequester Simulacrum Symbol
 
 Teleport
 
-### 8th Level 
+### 8th Level
 
 Antimagic Field Antipathy/Sympathy Clone
 
@@ -130,7 +130,7 @@ Mind Blank
 
 Power Word Stun Sunburst
 
-### 9th Level 
+### 9th Level
 
 Astral Projection Foresight
 
