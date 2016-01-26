@@ -2,7 +2,7 @@ import re, urllib, sys, os
 
 
 def split_spells(lines, target):
-    spell_re = re.compile(r'^#{4} (.*)')
+    spell_re = re.compile(r'^#{2} (.*)')
     current_dir = os.path.normpath(target) + os.sep
     current_file = None
     for line in lines:
@@ -20,12 +20,13 @@ def split_spells(lines, target):
 Title: {}
 -------------------------
 
-'''.format(spelltitle))
+## {}
+'''.format(spelltitle, spelltitle))
         elif current_file:
             current_file.write(line)
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        print ("Usage: python srd_utils spelllist.md target-dir")
+        print "Usage: python srd_utils spelllist.md target-dir"
         sys.exit(2)
     split_spells(open(sys.argv[1]), sys.argv[2])
