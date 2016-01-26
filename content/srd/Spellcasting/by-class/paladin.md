@@ -1,6 +1,13 @@
-### Paladin Spells 
+---
+Title: Paladin Spells
+Description: Open 5th Edition SRD project.
+---
 
-> **1st Level** Bless Command Cure Wounds
+## Paladin Spells
+
+### 1st Level
+
+Bless Command Cure Wounds
 
 Detect Evil and Good Detect Magic
 
@@ -24,7 +31,9 @@ Create Food and Water Daylight
 
 Dispel Magic Magic Circle Remove Curse Revivify
 
-> **4th Level** Banishment Death Ward Locate Creature
+### 4th Level
+
+Banishment Death Ward Locate Creature
 
 #### 5th Level
 

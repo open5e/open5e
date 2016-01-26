@@ -1,10 +1,14 @@
+-------------------------
+Title: Cleric Spells
+-------------------------
+
 ### Cleric Spells
 
 #### Cantrips (0 Level)
 
 Guidance Light Mending Resistance Sacred Flame Thaumaturgy
 
-> **1st Level** Bane Bless Command
+### 1st Level Bane Bless Command
 
 Create or Destroy Water Cure Wounds
 
@@ -51,7 +55,7 @@ Freedom of Movement
 
 Locate Creature Stone Shape
 
-> **5th Level** Commune Contagion
+### 5th Level Commune Contagion
 
 Dispel Evil and Good Flame Strike
 
@@ -73,7 +77,7 @@ Plane Shift Regenerate Resurrection Symbol
 
 **8th Level** Antimagic Field Control Weather Earthquake Holy Aura
 
-> **9th Level** Astral Projection Gate
+### 9th Level Astral Projection Gate
 
 Mass Heal
 

@@ -1,6 +1,10 @@
-### Wizard Spells
+---
+Title: Sorcerer Spells
+---
 
-#### Cantrips (0 Level)
+## Wizard Spells
+
+### Cantrips (0 Level)
 
 Acid Splash Chill Touch Dancing Lights Light
 
@@ -9,7 +13,9 @@ Mage Hand
 Mending Message Minor Illusion Prestidigitation Ray of Frost Shocking
 Grasp True Strike
 
-**1st Level** Alarm Burning Hands Charm Person Color Spray
+### 1st Level 
+
+Alarm Burning Hands Charm Person Color Spray
 
 Comprehend Languages Detect Magic
 
@@ -26,7 +32,9 @@ Protection from Evil and Good Shield
 
 Silent Image Sleep Thunderwave Unseen Servant
 
-> **2nd Level** Acid Arrow Alter Self Arcane Lock
+### 2nd Level 
+
+Acid Arrow Alter Self Arcane Lock
 
 Arcanist’s Magic Aura Blindness/Deafness Blur
 
@@ -39,7 +47,9 @@ Ray of Enfeeblement
 Rope Trick Scorching Ray See Invisibility Shatter Spider Climb
 Suggestion Web
 
-**3rd Level** Animate Dead Bestow Curse Blink Clairvoyance Dispel Magic
+### 3rd Level 
+
+Animate Dead Bestow Curse Blink Clairvoyance Dispel Magic
 Fear Fireball
 
 Fly
@@ -57,7 +67,9 @@ Vampiric Touch
 
 Water Breathing
 
-**4th Level** Arcane Eye Banishment Black Tentacles Blight Confusion
+### 4th Level 
+
+Arcane Eye Banishment Black Tentacles Blight Confusion
 
 Conjure Minor Elementals Control Water Dimension Door Fabricate
 
@@ -70,7 +82,9 @@ Sphere Secret Chest Stone Shape Stoneskin
 
 Wall of Fire
 
-> **5th Level** Animate Objects Arcane Hand Cloudkill
+### 5th Level 
+
+Animate Objects Arcane Hand Cloudkill
 
 Cone of Cold Conjure Elemental Contact Other Plane Creation Dominate
 Person Dream
@@ -82,7 +96,9 @@ Scrying Seeming Telekinesis Telepathic Bond
 
 Teleportation Circle Wall of Force Wall of Stone
 
-**6th Level** Chain Lightning Circle of Death Contingency Create Undead
+### 6th Level 
+
+Chain Lightning Circle of Death Contingency Create Undead
 Disintegrate Eyebite
 
 Flesh to Stone Freezing Sphere Globe of Invulnerability Guards and Wards
@@ -92,7 +108,7 @@ Mass Suggestion Move Earth Programmed Illusion Sunbeam
 
 True Seeing Wall of Ice
 
-#### 7th Level
+### 7th Level
 
 Arcane Sword Delayed Blast Fireball Etherealness
 
@@ -103,7 +119,9 @@ Project Image Reverse Gravity Sequester Simulacrum Symbol
 
 Teleport
 
-**8th Level** Antimagic Field Antipathy/Sympathy Clone
+### 8th Level 
+
+Antimagic Field Antipathy/Sympathy Clone
 
 Control Weather Demiplane Dominate Monster Feeblemind Incendiary Cloud
 Maze
@@ -112,7 +130,9 @@ Mind Blank
 
 Power Word Stun Sunburst
 
-> **9th Level** Astral Projection Foresight
+### 9th Level 
+
+Astral Projection Foresight
 
 Gate Imprisonment Meteor Swarm Power Word Kill Prismatic Wall
 Shapechange Time Stop True Polymorph Weird

@@ -1,13 +1,19 @@
-### Sorcerer Spells
+---
+Title: Sorcerer Spells
+---
 
-#### Cantrips (0 Level)
+## Sorcerer Spells
+
+### Cantrips (0 Level)
 
 Acid Splash Chill Touch Dancing Lights Light
 
 Mage Hand Mending Message Minor Illusion Prestidigitation Ray of Frost
 Shocking Grasp True Strike
 
-> **1st Level** Burning Hands Charm Person Color Spray
+### 1st Level
+
+Burning Hands Charm Person Color Spray
 
 Comprehend Languages
 
@@ -17,7 +23,7 @@ Feather Fall Fog Cloud Jump Mage Armor
 
 Magic Missile Shield Silent Image Sleep Thunderwave
 
-#### 2nd Level
+### 2nd Level
 
 Alter Self Blindness/Deafness Blur
 
@@ -27,7 +33,7 @@ Scorching Ray See Invisibility Shatter
 
 Spider Climb Suggestion Web
 
-#### 3rd Level
+### 3rd Level
 
 Blink
 
@@ -43,13 +49,17 @@ Slow Stinking Cloud Tongues
 
 Water Breathing Water Walk
 
-**4th Level** Banishment Blight Confusion Dimension Door Dominate Beast
+### 4th Level
+
+Banishment Blight Confusion Dimension Door Dominate Beast
 
 Greater Invisibility Ice Storm Polymorph Stoneskin
 
 Wall of Fire
 
-> **5th Level** Animate Objects Cloudkill
+### 5th Level
+
+Animate Objects Cloudkill
 
 Cone of Cold Creation Dominate Person Hold Monster Insect Plague Seeming
 Telekinesis Teleportation Circle Wall of Stone
@@ -62,7 +72,7 @@ Sunbeam
 
 True Seeing
 
-#### 7th Level
+### 7th Level
 
 Delayed Blast Fireball Etherealness
 
@@ -72,7 +82,7 @@ Teleport
 **8th Level** Dominate Monster Earthquake Incendiary Cloud Power Word
 Stun Sunburst
 
-#### 9th Level
+### 9th Level
 
 Gate
 
