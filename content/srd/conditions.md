@@ -1,3 +1,7 @@
+---
+Title: Appendix A: Conditions
+---
+
 Appendix A: Conditions
 ======================
 

@@ -1,4 +1,8 @@
-##Feats
+---
+Title: Feats
+---
+
+## Feats
 
 
 A feat represents a talent or an area of expertise that gives a

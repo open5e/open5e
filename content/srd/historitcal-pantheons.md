@@ -1,4 +1,8 @@
-**Fantasy-Historical Pantheons**
+---
+Title: Fantasy-Historical Pantheons
+---
+
+## Fantasy-Historical Pantheons
 
 The Celtic, Egyptian, Greek, and Norse pantheons are fantasy
 interpretations of historical religions from our world’s ancient times.
@@ -112,7 +116,7 @@ enemies, the giants (including the gods Surtur and Thrym).
 
 
   ####Norse Deities
-  
+
     **Deity** | **Alignment**|  **Domains**| **Symbol**
    --------------------------------------- ------ ------------- -----------------------------------
     Odin, god of knowledge and war         | NG              | Knowledge, War          | Watching blue eye

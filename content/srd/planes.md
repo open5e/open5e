@@ -1,4 +1,11 @@
-**Appendix C: The Planes of Existence** The cosmos
+---
+Title: Appendix C: The Planes of Existence
+---
+
+Appendix C: The Planes of Existence
+------------------------------------
+
+The cosmos
 teems with a multitude of worlds as well as myriad alternate dimensions
 of reality, called the **planes of existence**. It encompasses every
 world where GMs run their adventures, all within the relatively mundane

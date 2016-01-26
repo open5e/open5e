@@ -1,3 +1,7 @@
+---
+Title: Magic Items
+---
+
 Magic Items
 ===========
 
