@@ -17,9 +17,7 @@ have aggressive uses. They create magical barriers, negate harmful
 effects, harm trespassers, or banish creatures to other planes of
 existence.
 
-**Conjuration** spells involve the transportation of objects
-
-and creatures from one location to another. Some spells summon
+**Conjuration** spells involve the transportation of objects and creatures from one location to another. Some spells summon
 creatures or objects to the caster’s side, whereas others allow the
 caster to teleport to another location. Some conjurations create
 objects or effects out of nothing.
@@ -29,10 +27,7 @@ secrets long forgotten, glimpses of the future, the locations of
 hidden things, the truth behind illusions, or visions of distant
 people or places.
 
-**Enchantment** spells affect the minds of others, influencing
-
-or controlling their behavior. Such spells can make enemies
-
+**Enchantment** spells affect the minds of others, influencing or controlling their behavior. Such spells can make enemies
 see the caster as a friend, force creatures to take a course of
 action, or even control another creature like a puppet.
 
