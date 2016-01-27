@@ -55,7 +55,6 @@ Members of a few classes, including bards and sorcerers, have a limited
 list of spells they know that are always fixed in mind. The same thing
 is true of many magic-­using monsters. Other spellcasters, such as
 clerics and
-
 wizards, undergo a process of preparing spells. This process varies for
 different classes, as detailed in their descriptions.
 
