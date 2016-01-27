@@ -24,7 +24,6 @@ unwilling target can make a Charisma saving throw, and if it succeeds,
 it is unaffected by this spell.
 
 The spell disguises physical appearance as well as
-
 clothing, armor, weapons, and equipment. You can make each creature seem
 1 foot shorter or taller and appear thin, fat, or in between. You can’t
 change a target’s body type, so you must choose a form that has the same

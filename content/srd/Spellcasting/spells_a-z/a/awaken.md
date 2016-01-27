@@ -25,7 +25,6 @@ ability to speak one language you know. If the target is a plant, it
 gains the ability to move its limbs, roots, vines, creepers, and so
 forth, and it gains senses similar to a human’s. Your GM chooses
 statistics appropriate for the awakened
-
 plant, such as the statistics for the awakened shrub or the awakened
 tree.
 

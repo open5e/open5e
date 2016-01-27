@@ -12,7 +12,6 @@ Title: Gate
 **Range:** 60 feet
 
 **Components:** V, S, M (a diamond worth at least
-
 5,000 gp)
 
 **Duration:** Concentration, up to 1 minute

@@ -29,7 +29,6 @@ maximum and is formed without any equipment. Otherwise, the illusion
 uses all the statistics of the creature it duplicates.
 
 The simulacrum is friendly to you and creatures
-
 you designate. It obeys your spoken commands, moving and acting in
 accordance with your wishes and acting on your turn in combat. The
 simulacrum lacks the ability to learn or become more powerful, so it
@@ -37,7 +36,6 @@ never increases its level or other abilities, nor can it regain expended
 spell slots.
 
 If the simulacrum is damaged, you can repair it in
-
 an alchemical laboratory, using rare herbs and minerals worth 100 gp per
 hit point it regains. The simulacrum lasts until it drops to 0 hit
 points, at which point it reverts to snow and melts instantly.

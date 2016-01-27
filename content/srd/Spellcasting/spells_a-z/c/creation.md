@@ -24,7 +24,7 @@ mineral objects such as stone, crystal, or metal. The object created
 must be no larger than a 5  foot cube, and the object must be of a
 form and material that you have seen before.
 
-The duration depends on the object’s material. If the object is composed
+The duration depends on the object's material. If the object is composed
 of multiple materials, use the shortest duration.
 
 
@@ -41,7 +41,7 @@ Gems 10 minutes
 Adamantine or mithral 1 minute
 
 
-Using any material created by this spell as another spell’s material
+Using any material created by this spell as another spell's material
 component causes that spell to fail.
 
 **At Higher Levels.** When you cast this spell using

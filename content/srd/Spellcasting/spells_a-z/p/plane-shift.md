@@ -12,7 +12,6 @@ Title: Plane Shift
 **Range:** Touch
 
 **Components:** V, S, M (a forked, metal rod worth at
-
 least 250 gp, attuned to a particular plane of existence)
 
 **Duration:** Instantaneous

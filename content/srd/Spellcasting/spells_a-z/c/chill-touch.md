@@ -26,7 +26,6 @@ If you hit an undead target, it also has disadvantage on attack rolls
 against you until the end of your next turn.
 
 This spell’s damage increases by 1d8 when you
-
 reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
 

@@ -7,8 +7,11 @@ Title: Conjure Fey
 #### 6th-level conjuration
 
 
-**Casting Time:** 1 minute Range: 90
-feet Components: V, S
+**Casting Time:** 1 minute
+
+**Range:** 90 feet
+
+**Components:** V, S
 
 **Duration:** Concentration, up to 1 hour
 

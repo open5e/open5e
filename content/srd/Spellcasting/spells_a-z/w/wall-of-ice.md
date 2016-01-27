@@ -37,9 +37,7 @@ creature takes 5d6 cold damage on a failed save, or half as much damage
 on a successful one.
 
 **At Higher Levels.** When you cast this spell using
-a
-
-spell slot of 7th level or higher, the damage the wall deals when it
+a spell slot of 7th level or higher, the damage the wall deals when it
 appears increases by 2d6, and the damage from passing through the sheet
 of frigid air increases by 1d6, for each slot level above 6th.
 

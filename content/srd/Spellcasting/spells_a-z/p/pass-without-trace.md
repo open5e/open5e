@@ -12,7 +12,6 @@ Title: Pass without Trace
 **Range:** Self
 
 **Components:** V, S, M (ashes from a burned leaf of
-
 mistletoe and a sprig of spruce)
 
 **Duration:** Concentration, up to 1 hour

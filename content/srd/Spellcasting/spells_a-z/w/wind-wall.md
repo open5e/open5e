@@ -12,7 +12,6 @@ Title: Wind Wall
 **Range:** 120 feet
 
 **Components:** V, S, M (a tiny fan and a feather of
-
 exotic origin)
 
 **Duration:** Concentration, up to 1 minute
@@ -29,7 +28,6 @@ Strength saving throw. A creature takes 3d8 bludgeoning damage on a
 failed save, or half as much damage on a successful one.
 
 The strong wind keeps fog, smoke, and other gases
-
 at bay. Small or smaller flying creatures or objects can’t pass through
 the wall. Loose, lightweight materials brought into the wall fly upward.
 Arrows, bolts, and other ordinary projectiles launched at targets behind

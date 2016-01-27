@@ -9,7 +9,10 @@ Title: Plant Growth
 
 **Casting Time:** 1 action or 8 hours
 
-**Range:** 150 feet Components: V, S
+**Range:** 150 feet
+
+**Components:** V, S
+
 **Duration:** Instantaneous
 
 

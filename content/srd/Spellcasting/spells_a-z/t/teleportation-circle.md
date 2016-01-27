@@ -36,7 +36,6 @@ sequences during your adventures. You can commit a new sigil sequence to
 memory after studying it for 1 minute.
 
 You can create a permanent teleportation circle by
-
 casting this spell in the same location every day for one year. You need
 not use the circle to teleport when you cast the spell in this way.
 

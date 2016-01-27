@@ -23,7 +23,6 @@ be affected by this spell for the duration.
 An affected target’s speed is halved, it takes a −2 penalty to AC and
 Dexterity saving throws, and it can’t use reactions. On its turn, it can
 use either an action or a bonus action, not both. Regardless of the
-
 creature’s abilities or magic items, it can’t make more than one melee
 or ranged attack during its turn.
 

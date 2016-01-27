@@ -12,7 +12,6 @@ Title: Magic Mouth
 **Range:** 30 feet
 
 **Components:** V, S, M (a small bit of honeycomb and
-
 jade dust worth at least 10 gp, which the spell consumes)
 
 **Duration:** Until dispelled

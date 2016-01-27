@@ -7,8 +7,14 @@ Title: Prayer of Healing
 #### 2nd-level evocation
 
 
-**Casting Time:** 10 minutes Range:
-30 feet Components: V Duration:
+**Casting Time:** 10 minutes
+
+**Range:**
+30 feet
+
+**Components:** V
+
+**Duration:**
 Instantaneous
 
 

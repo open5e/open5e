@@ -23,7 +23,6 @@ around corners. A creature with darkvision can’t see through this
 darkness, and nonmagical light can’t illuminate it.
 
 If the point you choose is on an object you are
-
 holding or one that isn’t being worn or carried, the darkness emanates
 from the object and moves with it. Completely covering the source of the
 darkness with an opaque object, such as a bowl or a helm, blocks the

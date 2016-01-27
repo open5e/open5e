@@ -33,11 +33,12 @@ concentrating on it, each creature on the ground in the area must make a
 Dexterity saving throw. On a failed save, the creature is knocked prone.
 
 This spell can have additional effects depending on the terrain in the
-area, as determined by the GM. Fissures.
+area, as determined by the GM.
+
+**_Fissures._**
 Fissures open throughout the spell’s area at the start of your
 next turn after you cast the spell. A total of 1d6 such fissures open in
 locations
-
 chosen by the GM. Each is 1d10 × 10 feet deep, 10 feet wide, and extends
 from one edge of the spell’s area to the opposite side. A creature
 standing on a spot where a fissure opens must succeed on a Dexterity
@@ -47,9 +48,9 @@ the fissure’s edge as it opens.
 A fissure that opens beneath a structure causes it to automatically
 collapse (see below).
 
-Structures. The tremor deals 50 bludgeoning damage to
+**_Structures._**
+The tremor deals 50 bludgeoning damage to
 any structure in contact with the ground
-
 in the area when you cast the spell and at the start of each of your
 turns until the spell ends. If a structure drops to 0 hit points, it
 collapses and potentially damages nearby creatures. A creature within

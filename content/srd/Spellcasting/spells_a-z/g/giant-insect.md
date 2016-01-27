@@ -24,7 +24,6 @@ giant scorpion.
 
 Each creature obeys your verbal commands, and in combat, they act on
 your turn each round. The GM
-
 has the statistics for these creatures and resolves their actions and
 movement.
 

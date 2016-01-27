@@ -24,7 +24,6 @@ you but is intangible. If the illusion takes any damage, it disappears,
 and the spell ends.
 
 You can use your action to move this illusion up to
-
 twice your speed, and make it gesture, speak, and behave in whatever way
 you choose. It mimics your mannerisms perfectly.
 
@@ -35,7 +34,6 @@ you are blinded and deafened in regard to your own surroundings.
 
 Physical interaction with the image reveals it to be an illusion,
 because things can pass through it. A
-
 creature that uses its action to examine the image can determine that it
 is an illusion with a successful Intelligence (Investigation) check
 against your spell save DC. If a creature discerns the illusion for what

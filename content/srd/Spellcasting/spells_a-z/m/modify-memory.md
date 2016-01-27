@@ -32,7 +32,6 @@ detail, change its memory of the details of the event, or create a
 memory of some other event.
 
 You must speak to the target to describe how its
-
 memories are affected, and it must be able to understand your language
 for the modified memories to take root. Its mind fills in any gaps in
 the details of your description. If the spell ends before you have
@@ -55,7 +54,6 @@ memory.
 slot of 6th level or higher, you can alter the target’s memories of an
 event that took place up to 7 days ago (6th level), 30 days ago (7th
 level), 1 year ago
-
 (8th level), or any time in the creature’s past (9th level).
 
 

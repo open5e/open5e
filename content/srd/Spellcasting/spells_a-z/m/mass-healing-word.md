@@ -20,7 +20,6 @@ constructs.
 
 **At Higher Levels.** When you cast this spell using
 a
-
 spell slot of 4th level or higher, the healing increases by 1d4 for each
 slot level above 3rd.
 

@@ -7,8 +7,12 @@ Title: Find Steed
 #### 2nd-level conjuration
 
 
-**Casting Time:** 10 minutes Range:
-30 feet Components: V, S
+**Casting Time:** 10 minutes
+
+**Range:**
+30 feet 
+
+**Components:** V, S
 **Duration:** Instantaneous
 
 
@@ -17,7 +21,6 @@ strong, and loyal steed, creating a long lasting bond with it.
 Appearing in an unoccupied space within range, the steed takes on a form
 that you choose: a warhorse, a pony, a camel, an elk, or a mastiff.
 (Your GM might allow other
-
 animals to be summoned as steeds.) The steed has the statistics of the
 chosen form, though it is a celestial, fey, or fiend (your choice)
 instead of its normal type. Additionally, if your steed has an

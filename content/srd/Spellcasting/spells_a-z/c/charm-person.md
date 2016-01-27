@@ -10,6 +10,7 @@ Title: Charm Person
 **Casting Time:** 1 action
 
 **Range:** 30 feet Components: V, S
+
 **Duration:** 1 hour
 
 

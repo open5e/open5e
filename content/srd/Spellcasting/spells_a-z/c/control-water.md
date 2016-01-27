@@ -22,7 +22,7 @@ you choose that is a cube up to 100 feet on a side. You can choose from
 any of the following effects when you cast this spell. As an action on
 your turn, you can repeat the same effect or choose a different one.
 
-Flood. You cause the water level of all standing water
+**_Flood._** You cause the water level of all standing water
 in the area to rise by as much as 20 feet. If the area includes a shore,
 the flooding water spills over onto dry land.
 
@@ -36,14 +36,14 @@ The water level remains elevated until the spell ends or you choose a
 different effect. If this effect produced a wave, the wave repeats on
 the start of your next turn while the flood effect lasts.
 
-Part Water. You cause water in the area to move apart
+**_Part Water._** You cause water in the area to move apart
 and create a trench. The trench extends across the spell’s area, and the
 separated water forms a wall to either side. The trench remains until
 the spell ends or you choose a different effect. The water then slowly
 fills in the trench over the course of the next round until the normal
 water level is restored.
 
-Redirect Flow. You cause flowing water in the area to
+**_Redirect Flow._** You cause flowing water in the area to
 move in a direction you choose, even if the water has to flow over
 obstacles, up walls, or in other unlikely directions. The water in the
 area moves as you direct it, but once it moves beyond the spell’s area,
@@ -51,12 +51,10 @@ it resumes its flow based on the terrain conditions. The water continues
 to move in the direction you chose until the spell ends or you choose a
 different effect.
 
-Whirlpool. This effect requires a body of water at least
+**_Whirlpool._** This effect requires a body of water at least
 50 feet square and 25 feet deep. You cause a whirlpool to form in the
 center of the area. The whirlpool forms a vortex that is 5 feet wide at
-the
-
-base, up to 50 feet wide at the top, and 25 feet tall. Any creature or
+the base, up to 50 feet wide at the top, and 25 feet tall. Any creature or
 object in the water and within 25 feet of the vortex is pulled 10 feet
 toward it. A creature can swim away from the vortex by making a Strength
 (Athletics) check against your spell save DC.

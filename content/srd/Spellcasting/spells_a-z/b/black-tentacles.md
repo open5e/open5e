@@ -28,7 +28,6 @@ until the spell ends. A creature that starts its turn in the area and is
 already restrained by the tentacles takes 3d6 bludgeoning damage.
 
 A creature restrained by the tentacles can use its
-
 action to make a Strength or Dexterity check (its choice) against your
 spell save DC. On a success, it frees itself.
 

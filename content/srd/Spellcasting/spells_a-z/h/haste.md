@@ -24,7 +24,6 @@ on each of its turns. That action can be used only to take the Attack
 action.
 
 When the spell ends, the target can’t move or take
-
 actions until after its next turn, as a wave of lethargy sweeps over it.
 
 

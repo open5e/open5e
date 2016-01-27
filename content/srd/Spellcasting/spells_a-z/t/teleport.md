@@ -27,8 +27,7 @@ same plane of existence as you. Your familiarity with the destination
 determines whether you arrive there successfully. The GM rolls d100 and
 consults the table.
 
-
-Familiarity. “Permanent circle” means a permanent
+**_Familiarity._** “Permanent circle” means a permanent
 teleportation circle whose sigil sequence you know. “Associated object”
 means that you possess an object taken from the desired destination
 within the last six months, such as a book from a wizard’s library, bed
@@ -49,10 +48,10 @@ Perhaps you tried to scry an enemy’s sanctum but instead viewed an
 illusion, or you are attempting to teleport to a familiar location that
 no longer exists.
 
-On Target. You and your group (or the target object)
+**_On Target._** You and your group (or the target object)
 appear where you want to.
 
-Off Target. You and your group (or the target object)
+**_Off Target._** You and your group (or the target object)
 appear a random distance away from the destination in a random
 direction. Distance off target is 1d10 × 1d10 percent of the distance
 that was to be traveled. For example, if you tried to travel 120 miles,
@@ -63,58 +62,29 @@ north, 2 as northeast, 3 as east, and so on around the points of the
 compass. If you were teleporting to a coastal city and wound up 18 miles
 out at sea, you could be in trouble.
 
-Similar Area. You and your group (or the target object)
+**_Similar Area._** You and your group (or the target object)
 wind up in a different area that’s visually or thematically similar to
 the target area. If you are heading for your home laboratory, for
 example, you might wind up in another wizard’s laboratory or in
-
-
-Familiarity Mishap
-
-Similar Area
-
-Off Target
-
-On Target
-
 an alchemical supply shop that has many of the same
-
 tools and implements as your laboratory. Generally,
-
-Permanent circle Associated object
-
-— — — 01–100
-
-
-— — — 01–100
-
 you appear in the closest similar place, but since the
-
 spell has no range limit, you could conceivably wind up anywhere on the
 plane.
 
-Mishap. The spell’s unpredictable magic results
-in
-
-Very familiar 01–05 06–13 14–24 25–100
-
-Seen casually 01–33 34–43 44–53 54–100
-
-Viewed once 01–43 44–53 54–73 74–100
-
-Description 01–43 44–53 54–73 74–100
-
-a difficult journey. Each teleporting creature (or the
-
+**_Mishap._** The spell’s unpredictable magic results
+in a difficult journey. Each teleporting creature (or the
 target object) takes 3d10 force damage, and the GM rerolls on the table
 to see where you wind up (multiple mishaps can occur, dealing damage
-each
+each time).
 
-False
-
-destination
-
-01–50 51–100 — —
-
-time).
+|Familiarity|Mishap|Similar Area|Off Target|On Target|
+|---|---|---|---|---|
+|Permanent circle|—|—|—|01–100|
+|Associated object|—|—|—|01–100|
+|Very familiar|01–05|06–13|14–24|25–100|
+|Seen casually|01–33|34–43|44–53|54–100|
+|Viewed once|01–43|44–53|54–73|74–100|
+|Description|01–43|44–53|54–73|74–100|
+|False destination|01–50|51–100|—|—|
 

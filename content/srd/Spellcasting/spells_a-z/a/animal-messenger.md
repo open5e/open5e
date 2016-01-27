@@ -29,7 +29,7 @@ messenger, or 25 miles for other animals.
 When the messenger arrives, it delivers your message to the creature
 that you described, replicating the sound of your voice. The messenger
 speaks only to a creature matching the description you gave. If the
-messenger doesn’t reach its destination before the spell ends, the
+messenger doesn't reach its destination before the spell ends, the
 message is lost, and the beast makes its way back to where you cast this
 spell.
 

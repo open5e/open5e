@@ -7,8 +7,14 @@ Title: Mirage Arcane
 #### 7th-level illusion
 
 
-**Casting Time:** 10 minutes Range:
-Sight Components: V, S Duration:
+**Casting Time:** 10 minutes
+
+**Range:**
+Sight
+
+**Components:** V, S 
+
+**Duration:**
 10 days
 
 

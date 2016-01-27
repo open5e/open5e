@@ -27,21 +27,21 @@ command other than one described here. If you do so, the GM determines
 how the target behaves. If the target can’t follow your command, the
 spell ends.
 
-Approach. The target moves toward you by the shortest
+**_Approach._** The target moves toward you by the shortest
 and most direct route, ending its turn if it moves within 5 feet of
 you.
 
-Drop. The target drops whatever it is holding and
+**_Drop._** The target drops whatever it is holding and
 
 then ends its turn.
 
-Flee. The target spends its turn moving away from you by
+**_Flee._** The target spends its turn moving away from you by
 the fastest available means.
 
-Grovel. The target falls prone and then ends its
+**_Grovel._** The target falls prone and then ends its
 turn.
 
-Halt. The target doesn’t move and takes no
+**_Halt._** The target doesn’t move and takes no
 actions.
 
 A flying creature stays aloft, provided that it is able to do so. If it

@@ -9,7 +9,9 @@ Title: Thunderwave
 
 **Casting Time:** 1 action 
 
-**Range:** self (15 foot cube) Components: V, S 
+**Range:** self (15 foot cube)
+
+**Components:** V, S 
 
 **Duration:** Instantaneous
 

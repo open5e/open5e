@@ -30,7 +30,6 @@ blocking any spells cast into or out from the area.
 When you cast the spell, any creature that is completely inside the
 cage’s area is trapped. Creatures only partially within the area, or
 those too large to fit inside the area, are pushed away from the
-
 center of the area until they are completely outside the area.
 
 A creature inside the cage can’t leave it by nonmagical means. If the

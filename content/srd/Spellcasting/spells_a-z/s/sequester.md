@@ -25,7 +25,6 @@ divination spells or perceived through scrying sensors created by
 divination spells.
 
 If the target is a creature, it falls into a state of
-
 suspended animation. Time ceases to flow for it, and it doesn’t grow
 older.
 

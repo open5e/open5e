@@ -43,7 +43,6 @@ gaining any benefit from that rest. In addition, when the target wakes
 up, it takes 3d6 psychic damage.
 
 If you have a body part, lock of hair, clipping from
-
 a nail, or similar portion of the target’s body, the target makes its
 saving throw with disadvantage.
 

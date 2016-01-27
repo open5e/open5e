@@ -25,7 +25,6 @@ the spell ends.
 **At Higher Levels.** When you cast this spell using a spell
 slot of 4th level or higher, you automatically end the effects of a
 spell on the target if the spell’s
-
 level is equal to or less than the level of the spell slot you used.
 
 

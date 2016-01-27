@@ -10,7 +10,9 @@ Title: Tiny Hut
 **Casting Time:** 1 minute
 
 **Range:** Self (10 foot radius hemisphere)
+
 **Components:** V, S, M (a small crystal bead)
+
 **Duration:** 8 hours
 
 

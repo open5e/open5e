@@ -27,7 +27,6 @@ Webs layered over a flat surface have a depth of 5 feet.
 
 Each creature that starts its turn in the webs or that enters them
 during its turn must make a
-
 Dexterity saving throw. On a failed save, the creature is restrained as
 long as it remains in the webs or until it breaks free.
 

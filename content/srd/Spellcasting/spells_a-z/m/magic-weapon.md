@@ -7,8 +7,12 @@ Title: Magic Weapon
 #### 2nd-level transmutation
 
 
-**Casting Time:** 1 bonus action Range:
-Touch Components: V, S
+**Casting Time:** 1 bonus action
+
+**Range:**
+Touch
+
+**Components:** V, S
 
 **Duration:** Concentration, up to 1 hour
 

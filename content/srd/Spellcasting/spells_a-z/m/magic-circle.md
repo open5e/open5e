@@ -13,7 +13,6 @@ Title: Magic Circle
 
 **Components:** V, S, M (holy water or powdered
 silver
-
 and iron worth at least 100 gp, which the spell consumes)
 
 **Duration:** 1 hour
@@ -27,7 +26,6 @@ floor or other surface.
 Choose one or more of the following types of creatures: celestials,
 elementals, fey, fiends, or undead. The circle affects a creature of the
 chosen type in the following ways:
-
 
 The creature can’t willingly enter the cylinder by nonmagical means. If
 the creature tries to use teleportation or interplanar travel to do so,

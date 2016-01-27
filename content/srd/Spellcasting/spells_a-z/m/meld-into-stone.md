@@ -23,9 +23,7 @@ a point you can touch. Nothing of your presence remains visible or
 otherwise detectable by nonmagical senses.
 
 While merged with the stone, you can’t see what
-
 occurs outside it, and any Wisdom (Perception)
-
 checks you make to hear sounds outside it are made with disadvantage.
 You remain aware of the passage of time and can cast spells on yourself
 while merged in the stone. You can use your movement to leave the stone

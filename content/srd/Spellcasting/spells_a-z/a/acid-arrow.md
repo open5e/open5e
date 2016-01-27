@@ -12,7 +12,7 @@ Title: Acid Arrow
 **Range:** 90 feet
 
 **Components:** V, S, M (powdered rhubarb leaf and an
-adder’s stomach)
+adder's stomach)
 
 **Duration:** Instantaneous
 

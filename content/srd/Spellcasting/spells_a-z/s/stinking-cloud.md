@@ -29,7 +29,6 @@ Creatures that don’t need to breathe or are immune to poison
 automatically succeed on this saving throw.
 
 A moderate wind (at least 10 miles per hour)
-
 disperses the cloud after 4 rounds. A strong wind (at least 20 miles per
 hour) disperses it after 1 round.
 

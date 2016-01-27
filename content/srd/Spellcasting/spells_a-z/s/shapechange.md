@@ -34,12 +34,10 @@ yours. You can’t use any legendary actions or lair actions of the new
 form.
 
 You assume the hit points and Hit Dice of the new
-
 form. When you revert to your normal form, you return to the number of
 hit points you had before you transformed. If you revert as a result of
 dropping to 0 hit points, any excess damage carries over to your normal
 form. As long as the excess
-
 damage doesn’t reduce your normal form to 0 hit points, you aren’t
 knocked unconscious.
 

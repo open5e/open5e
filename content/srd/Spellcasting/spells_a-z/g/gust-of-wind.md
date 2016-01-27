@@ -28,7 +28,6 @@ such as those of lanterns, to dance wildly and has a 50 percent chance
 to extinguish them.
 
 As a bonus action on each of your turns before the
-
 spell ends, you can change the direction in which the line blasts from
 you.
 

@@ -12,7 +12,6 @@ Title: Moonbeam
 **Range:** 120 feet
 
 **Components:** V, S, M (several seeds of any
-
 moonseed plant and a piece of opalescent feldspar)
 
 **Duration:** Concentration, up to 1 minute

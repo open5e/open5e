@@ -33,13 +33,11 @@ not yet detonated, the damage increases by 1d6.
 If the glowing bead is touched before the interval has expired, the
 creature touching it must make a Dexterity saving throw. On a failed
 save, the spell
-
 ends immediately, causing the bead to erupt in flame. On a successful
 save, the creature can throw the bead up to 40 feet. When it strikes a
 creature or a solid object, the spell ends, and the bead explodes.
 
 The fire damages objects in the area and ignites
-
 flammable objects that aren’t being worn or carried.
 
 **At Higher Levels.** When you cast this spell using a spell

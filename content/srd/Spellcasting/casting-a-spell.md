@@ -30,7 +30,6 @@ action.
 Some spells can be cast as reactions. These spells take a fraction of a
 second to bring about and are cast in response to some event. If a spell
 can be cast
-
 as a reaction, the spell description tells you exactly when you can do
 so.
 
@@ -195,7 +194,11 @@ provide total cover.
 #### Cone
 
 A cone extends in a direction you choose from its point of origin. A
-cone’s width at a given point along
+cone’s width at a given point along its length is equal to that point’s distance from the
+point of origin. A cone’s area of effect specifies its maximum length.
+
+A cone’s point of origin is not included in the cone’s area of effect,
+unless you decide otherwise.
 
 #### Sphere
 
@@ -204,24 +207,6 @@ from that point. The sphere’s size is expressed as a radius in feet that
 extends from the point.
 
 A sphere’s point of origin is included in the sphere’s area of effect.
-
-### Saving Throws
-
-Many spells specify that a target can make a saving throw to avoid some
-or all of a spell’s effects. The spell specifies the ability that the
-target uses for the save and what happens on a success or failure.
-
-The DC to resist one of your spells equals 8 + your spellcasting ability
-modifier + your proficiency bonus + any special modifiers.
-
-### Attack Rolls
-
-its length is equal to that point’s distance from the
-
-point of origin. A cone’s area of effect specifies its maximum length.
-
-A cone’s point of origin is not included in the cone’s area of effect,
-unless you decide otherwise.
 
 #### Cube
 
@@ -253,6 +238,18 @@ length and covers an area defined by its width.
 A line’s point of origin is not included in the line’s area of effect,
 unless you decide otherwise.
 
+
+### Saving Throws
+
+Many spells specify that a target can make a saving throw to avoid some
+or all of a spell’s effects. The spell specifies the ability that the
+target uses for the save and what happens on a success or failure.
+
+The DC to resist one of your spells equals 8 + your spellcasting ability
+modifier + your proficiency bonus + any special modifiers.
+
+### Attack Rolls
+
 Some spells require the caster to make an attack roll to determine
 whether the spell effect hits the intended target. Your attack bonus
 with a spell attack equals your spellcasting ability modifier + your
@@ -262,3 +259,13 @@ Most spells that require attack rolls involve ranged attacks. Remember
 that you have disadvantage on a ranged attack roll if you are within 5
 feet of a hostile creature that can see you and that isn’t
 incapacitated.
+
+### Combining Magical Effects
+
+The effects of different spells add together while the durations of
+those spells overlap. The effects of the same spell cast multiple times
+don’t combine, however. Instead, the most potent effect—such as the
+highest bonus—from those castings applies while their durations overlap.
+
+For example, if two clerics cast *bless* on the same target, that character gains the spell’s benefit only once; he or she
+doesn’t get to roll two bonus dice.

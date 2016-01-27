@@ -12,9 +12,7 @@ Title: Feeblemind
 **Range:** 150 feet
 
 **Components:** V, S, M (a handful of clay, crystal,
-glass,
-
-or mineral spheres)
+glass, or mineral spheres)
 
 **Duration:** Instantaneous
 
@@ -29,7 +27,6 @@ language, or communicate in any intelligible way. The creature can,
 however, identify its friends, follow them, and even protect them.
 
 At the end of every 30 days, the creature can
-
 repeat its saving throw against this spell. If it succeeds on its saving
 throw, the spell ends.
 

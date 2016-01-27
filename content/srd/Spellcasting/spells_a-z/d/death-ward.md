@@ -23,7 +23,6 @@ taking damage, the target instead drops to 1 hit point, and the spell
 ends.
 
 If the spell is still in effect when the target is
-
 subjected to an effect that would kill it instantaneously without
 dealing damage, that effect is instead negated against the target, and
 the spell ends.

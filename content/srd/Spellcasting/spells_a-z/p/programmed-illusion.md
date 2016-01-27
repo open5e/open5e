@@ -19,9 +19,7 @@ at least 25 gp)
 
 You create an illusion of an object, a creature, or some other visible
 phenomenon within range that activates when a specific condition occurs.
-The
-
-illusion is imperceptible until then. It must be no larger than a
+The illusion is imperceptible until then. It must be no larger than a
 30 foot cube, and you decide when you cast the spell how the illusion
 behaves and what sounds it makes. This scripted performance can last up
 to 5 minutes.
@@ -32,7 +30,6 @@ finishes performing, it disappears and remains dormant for 10 minutes.
 After this time, the illusion can be activated again.
 
 The triggering condition can be as general or as
-
 detailed as you like, though it must be based on visual or audible
 conditions that occur within 30 feet of the area. For example, you could
 create an illusion of yourself to appear and warn off others who attempt

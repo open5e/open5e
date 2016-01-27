@@ -7,9 +7,13 @@ Title: Contact Other Plane
 #### 5th-level divination (ritual)
 
 
-**Casting Time:** 1 minute Range:
-Self Components: V Duration:
-1 minute
+**Casting Time:** 1 minute 
+
+**Range:** Self
+
+**Components:** V
+
+**Duration:** 1 minute
 
 
 You mentally contact a demigod, the spirit of a long  dead sage, or
@@ -25,8 +29,8 @@ spell cast on you ends this effect.
 
 On a successful save, you can ask the entity up to five questions. You
 must ask your questions before the spell ends. The GM answers each
-question with one word, such as “yes,” “no,” “maybe,” “never,”
-“irrelevant,” or “unclear” (if the entity doesn’t know the answer to the
+question with one word, such as "yes," "no," "maybe," "never,"
+"irrelevant," or "unclear" (if the entity doesn’t know the answer to the
 question). If a one word answer would be misleading, the GM might
 instead offer a short phrase as an answer.
 

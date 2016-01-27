@@ -27,9 +27,7 @@ its mind in that moment. As an action, you can either shift your
 attention to another creature’s thoughts or attempt to probe deeper into
 the same creature’s mind. If you probe deeper, the target must make a
 Wisdom saving throw. If it fails, you gain insight into its reasoning
-(if
-
-any), its emotional state, and something that looms large in its mind
+(if any), its emotional state, and something that looms large in its mind
 (such as something it worries over, loves, or hates). If it succeeds,
 the spell ends. Either way, the target knows that you are probing into
 its mind, and unless you shift your attention to another creature’s

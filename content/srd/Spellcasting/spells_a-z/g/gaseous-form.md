@@ -28,7 +28,6 @@ creature. The target has resistance to nonmagical damage, and it has
 advantage on Strength, Dexterity, and Constitution saving throws. The
 target can pass through small holes, narrow openings, and even mere
 cracks, though it treats liquids as though they
-
 were solid surfaces. The target can’t fall and remains hovering in the
 air even when stunned or otherwise incapacitated.
 

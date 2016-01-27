@@ -12,7 +12,6 @@ Title: False Life
 **Range:** Self
 
 **Components:** V, S, M (a small amount of alcohol or
-
 distilled spirits)
 
 **Duration:** 1 hour

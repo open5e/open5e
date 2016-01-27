@@ -19,7 +19,6 @@ crystal and a matching hemispherical piece of gum arabic)
 
 A sphere of shimmering force encloses a creature or object of Large size
 or smaller within range. An
-
 unwilling creature must make a Dexterity saving throw. On a failed save,
 the creature is enclosed for the duration.
 
@@ -31,7 +30,6 @@ outside, nor can a creature inside the sphere damage anything outside
 it.
 
 The sphere is weightless and just large enough to
-
 contain the creature or object inside. An enclosed creature can use its
 action to push against the sphere’s walls and thus roll the sphere at up
 to half the creature’s speed. Similarly, the globe can be picked up and

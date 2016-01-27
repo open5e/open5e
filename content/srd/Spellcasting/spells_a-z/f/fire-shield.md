@@ -12,7 +12,6 @@ Title: Fire Shield
 **Range:** Self
 
 **Components:** V, S, M (a bit of phosphorus or a
-
 firefly)
 
 **Duration:** 10 minutes
@@ -23,7 +22,6 @@ bright light in a 10 foot radius and dim light for an additional 10
 feet. You can end the spell early by using an action to dismiss it.
 
 The flames provide you with a warm shield or a
-
 chill shield, as you choose. The warm shield grants you resistance to
 cold damage, and the chill shield grants you resistance to fire damage.
 

@@ -31,7 +31,6 @@ appear thinner than you are, the hand of someone who reaches out to
 touch you would bump into you while it was seemingly still in midair.
 
 To discern that you are disguised, a creature can
-
 use its action to inspect your appearance and must succeed on an
 Intelligence (Investigation) check against your spell save DC.
 

@@ -27,7 +27,6 @@ and crush the sapphire. The item instantly appears in your hand
 regardless of physical or planar distances, and the spell ends.
 
 If another creature is holding or carrying the item,
-
 crushing the sapphire doesn’t transport the item to you, but instead you
 learn who the creature possessing the object is and roughly where that
 creature is located at that moment.

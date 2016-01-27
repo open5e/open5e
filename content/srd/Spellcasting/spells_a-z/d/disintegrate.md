@@ -23,7 +23,6 @@ creation of magical force, such as the wall created by
 wall of force.
 
 A creature targeted by this spell must make a
-
 Dexterity saving throw. On a failed save, the target takes 10d6 + 40
 force damage. If this damage reduces the target to 0 hit points, it is
 disintegrated.
@@ -37,7 +36,6 @@ spell.
 This spell automatically disintegrates a Large or smaller nonmagical
 object or a creation of magical force. If the target is a Huge or larger
 object or creation of force, this spell disintegrates a 10 foot 
-
 cube portion of it. A magic item is unaffected by this spell.
 
 **At Higher Levels.** When you cast this spell using a spell

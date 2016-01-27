@@ -7,8 +7,13 @@ Title: Planar Ally
 #### 6th-level conjuration
 
 
-**Casting Time:** 10 minutes Range:
-60 feet Components: V, S
+**Casting Time:** 10 minutes
+
+**Range:**
+60 feet
+
+**Components:** V, S
+
 **Duration:** Instantaneous
 
 

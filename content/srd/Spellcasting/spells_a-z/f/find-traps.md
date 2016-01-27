@@ -27,7 +27,6 @@ natural weakness in the floor, an unstable ceiling, or a hidden
 sinkhole.
 
 This spell merely reveals that a trap is present.
-
 You don’t learn the location of each trap, but you do learn the general
 nature of the danger posed by a trap you sense.
 

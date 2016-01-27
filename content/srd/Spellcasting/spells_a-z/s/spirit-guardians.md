@@ -20,7 +20,6 @@ spectral form appears angelic or fey (your choice). If you are evil,
 they appear fiendish.
 
 When you cast this spell, you can designate any
-
 number of creatures you can see to be unaffected by it. An affected
 creature’s speed is halved in the area, and when the creature enters the
 area for the first time on a turn or starts its turn there, it must make
