@@ -127,19 +127,17 @@ Normal activity, such as moving and attacking, doesn’t interfere with
 concentration. The following factors can break concentration:
 
 -   **Casting another spell that requires concentration.** You lose
-    > concentration on a spell if you cast another spell that requires
-
-> concentration. You can’t concentrate on two spells at once.
+    concentration on a spell if you cast another spell that requires concentration. You can’t concentrate on two spells at once.
 
 -   **Taking damage.** Whenever you take damage while you are
-    > concentrating on a spell, you must make a Constitution saving
-    > throw to maintain your concentration. The DC equals 10 or half the
-    > damage you take, whichever number is higher. If you take damage
-    > from multiple sources, such as an arrow and a dragon’s breath, you
-    > make a separate saving throw for each source of damage.
+    concentrating on a spell, you must make a Constitution saving
+    throw to maintain your concentration. The DC equals 10 or half the
+    damage you take, whichever number is higher. If you take damage
+    from multiple sources, such as an arrow and a dragon’s breath, you
+    make a separate saving throw for each source of damage.
 
 -   **Being incapacitated or killed.** You lose concentration on a spell
-    > if you are incapacitated or if you die.
+    if you are incapacitated or if you die.
 
 The GM might also decide that certain environmental phenomena, such as a
 wave crashing over you while you’re on a storm-­tossed ship, require
@@ -177,8 +175,8 @@ target yourself.
 
 ### Areas of Effect
 
-> Spells such as *burning hands* and *cone of cold* cover an area,
-> allowing them to affect multiple creatures at once.
+Spells such as *burning hands* and *cone of cold* cover an area,
+allowing them to affect multiple creatures at once.
 
 A spell’s description specifies its area of effect, which typically has
 one of five different shapes: cone, cube, cylinder, line, or sphere.
@@ -199,8 +197,7 @@ provide total cover.
 A cone extends in a direction you choose from its point of origin. A
 cone’s width at a given point along
 
-#### \
-Sphere
+#### Sphere
 
 You select a sphere’s point of origin, and the sphere extends outward
 from that point. The sphere’s size is expressed as a radius in feet that
