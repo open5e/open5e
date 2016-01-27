@@ -436,7 +436,7 @@ th {
 /**
  * Always hide an element when it has the `hidden` HTML attribute.
  */
- 
+
  /* Main Styles
  /*---------------------------------------------*/
  html, body{
@@ -444,109 +444,109 @@ th {
    margin: 0;
    padding: 0;
  }
- 
+
  body {
      font: 14px/1.8em 'Open Sans', Helvetica, Arial, Helvetica, sans-serif;
      color: #444;
      background: #fff;
      -webkit-font-smoothing: antialiased;
  }
- 
+
  a, a:visited {
      text-decoration: none;
  }
- 
+
  h1, h2, h3, h4, h5, h6 {
      color: #000;
      line-height: 1.2em;
      margin-bottom: 0.6em;
  }
- 
+
  h1 {
      font-size: 2em;
  }
- 
+
  h2 {
      font-size: 1.7em;
  }
- 
+
  h3 {
      font-size: 1.5em;
      margin-top: 2em;
  }
- 
+
  p, table {
      margin-bottom: 1em;
  }
- 
+
  ol, ul {
-     padding-left: 30px;
+     padding-left: 10px;
      margin-bottom: 1em;
  }
- 
+
  b, strong {
      font-weight: bold;
  }
- 
+
  i, em {
      font-style: italic;
  }
- 
+
  u {
      text-decoration: underline;
  }
- 
+
  abbr, acronym {
      cursor: help;
      border-bottom: 0.1em dotted;
  }
- 
+
  td, td img {
      vertical-align: top;
  }
- 
+
  td, th {
      border: solid 1px #999;
      padding: 0.25em 0.5em;
  }
- 
+
  th {
      font-weight: bold;
      text-align: center;
      background: #eee;
  }
- 
+
  sub {
      vertical-align: sub;
      font-size: smaller;
  }
- 
+
  sup {
      vertical-align: super;
      font-size: smaller;
  }
- 
+
  code {
      font-family: Courier, "Courier New", Monaco, Tahoma;
      background: #eee;
      color: #333;
      padding: 0px 2px;
  }
- 
+
  pre {
      background: #eee;
      padding: 20px;
      margin-bottom: 1em;
      overflow: auto;
  }
- 
+
  blockquote {
      font-style: italic;
      margin: 0 0 1em 15px;
      padding-left: 10px;
      border-left: 5px solid #dddddd;
  }
- 
+
 
 .hidden,
 [hidden] {
@@ -575,7 +575,7 @@ th {
   display: inline-block;
 }
 
-.nav-right { 
+.nav-right {
   float: right;
 }
 
@@ -618,7 +618,7 @@ th {
     /* IE10 uses display: flexbox */
     display: -ms-flexbox;
     -ms-flex-flow: row wrap;
-    
+
     /* Prevents distributing space between rows */
     -ms-align-content: flex-start;
 	-webkit-align-content: flex-start;
@@ -1676,8 +1676,14 @@ sidebar nav {
     padding: 0;
 }
 sidebar nav a {
-    font-weight: bold;
-    margin-left: 20px;
+  font-weight: normal;
+  margin-left: 0px;
+  color: #3b78b8;
+
+}
+
+sidebar nav a:hover {
+  color: #284075;
 }
 
 sidebar nav .menu-icon{
@@ -1692,6 +1698,11 @@ sidebar nav a:hover.menu-icon {
 sidebar nav ul {
     list-style: none;
 }
+
+sidebar nav ul li {
+      font: 12px/1.4em "Open Sans",Helvetica,Arial,Helvetica,sans-serif;
+}
+
 
 #content{
   padding: 48px 0px;
@@ -1723,12 +1734,12 @@ sidebar nav ul {
     .inner img {
         width:100%;
     }
-    
+
     .nav-left, .nav-right{
       display: block;
       float: none;
     }
-    
+
     #header {
         margin-bottom: 40px;
         padding: 12px 24px;
@@ -1762,7 +1773,7 @@ sidebar nav ul {
     #header nav:hover ul {
         display: block;
     }
-    
+
     main{
       flex-flow: column nowrap;
     }
@@ -1808,4 +1819,3 @@ sidebar nav ul {
         display: block;
     }
 }
-
