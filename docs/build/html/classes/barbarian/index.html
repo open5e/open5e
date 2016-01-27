@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Barbarian &mdash; open5e 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="open5e 0.1 documentation" href="../../index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="barbarian">
+<h1>Barbarian<a class="headerlink" href="#barbarian" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="class-features">
+<h2>Class Features<a class="headerlink" href="#class-features" title="Permalink to this headline">¶</a></h2>
+<p>As a barbarian, you gain the following class features.</p>
+<div class="section" id="hit-points">
+<h3>Hit Points<a class="headerlink" href="#hit-points" title="Permalink to this headline">¶</a></h3>
+<p><strong>Hit Dice:</strong> 1d12 per barbarian level</p>
+<p><strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier</p>
+<p><strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution
+modifier per barbarian level after 1st</p>
+</div>
+<div class="section" id="proficiencies">
+<h3>Proficiencies<a class="headerlink" href="#proficiencies" title="Permalink to this headline">¶</a></h3>
+<p><strong>Armor:</strong> Light armor, medium armor, shields</p>
+<p><strong>Weapons:</strong> Simple weapons, martial weapons</p>
+<p><strong>Tools:</strong> None</p>
+<p><strong>Saving Throws:</strong> Strength, Constitution</p>
+<p><strong>Skills:</strong> Choose two from Animal Handling, Athletics, Intimidation,
+Nature, Perception, and Survival</p>
+</div>
+<div class="section" id="equipment">
+<h3>Equipment<a class="headerlink" href="#equipment" title="Permalink to this headline">¶</a></h3>
+<p>You start with the following equipment, in addition to the equipment
+granted by your background:</p>
+<ul class="simple">
+<li>(<em>a</em>) a greataxe or (<em>b</em>) any martial melee weapon</li>
+<li>(<em>a</em>) two handaxes or (<em>b</em>) any simple weapon</li>
+<li>An explorer’s pack and four javelins</li>
+</ul>
+</div>
+<div class="section" id="the-barbarian">
+<h3>The Barbarian<a class="headerlink" href="#the-barbarian" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="12%" />
+<col width="26%" />
+<col width="34%" />
+<col width="13%" />
+<col width="14%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Level</th>
+<th class="head">Proficiency bonus</th>
+<th class="head">Features</th>
+<th class="head">Rages</th>
+<th class="head">Rage Damage</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1st</td>
+<td>+2</td>
+<td>Rage, Unarmored Defense</td>
+<td>2</td>
+<td>+2</td>
+</tr>
+<tr class="row-odd"><td>2nd</td>
+<td>+2</td>
+<td>Reckless Attack, Danger Sense</td>
+<td>2</td>
+<td>+2</td>
+</tr>
+<tr class="row-even"><td>3rd</td>
+<td>+2</td>
+<td>Primal Path</td>
+<td>3</td>
+<td>+2</td>
+</tr>
+<tr class="row-odd"><td>4th</td>
+<td>+2</td>
+<td>Ability Score Improvement</td>
+<td>3</td>
+<td>+2</td>
+</tr>
+<tr class="row-even"><td>5th</td>
+<td>+3</td>
+<td>Extra Attack, Fast Movement</td>
+<td>4</td>
+<td>+2</td>
+</tr>
+<tr class="row-odd"><td>6th</td>
+<td>+3</td>
+<td>Path feature</td>
+<td>4</td>
+<td>+2</td>
+</tr>
+<tr class="row-even"><td>7th</td>
+<td>+3</td>
+<td>Feral Instinct</td>
+<td>4</td>
+<td>+2</td>
+</tr>
+<tr class="row-odd"><td>8th</td>
+<td>+3</td>
+<td>Ability Score Improvement</td>
+<td>4</td>
+<td>+2</td>
+</tr>
+<tr class="row-even"><td>9th</td>
+<td>+4</td>
+<td>Brutal Critical (1 die)</td>
+<td>4</td>
+<td>+3</td>
+</tr>
+<tr class="row-odd"><td>10th</td>
+<td>+4</td>
+<td>Path feature</td>
+<td>4</td>
+<td>+3</td>
+</tr>
+<tr class="row-even"><td>11th</td>
+<td>+4</td>
+<td>Relentless Rage</td>
+<td>4</td>
+<td>+3</td>
+</tr>
+<tr class="row-odd"><td>12th</td>
+<td>+4</td>
+<td>Ability Score Improvement</td>
+<td>5</td>
+<td>+3</td>
+</tr>
+<tr class="row-even"><td>13th</td>
+<td>+5</td>
+<td>Brutal Critical (2 dice)</td>
+<td>5</td>
+<td>+3</td>
+</tr>
+<tr class="row-odd"><td>14th</td>
+<td>+5</td>
+<td>Path feature</td>
+<td>5</td>
+<td>+3</td>
+</tr>
+<tr class="row-even"><td>15th</td>
+<td>+5</td>
+<td>Persistent Rage</td>
+<td>5</td>
+<td>+3</td>
+</tr>
+<tr class="row-odd"><td>16th</td>
+<td>+5</td>
+<td>Ability Score Improvement</td>
+<td>5</td>
+<td>+4</td>
+</tr>
+<tr class="row-even"><td>17th</td>
+<td>+6</td>
+<td>Brutal Critical (3 dice)</td>
+<td>6</td>
+<td>+4</td>
+</tr>
+<tr class="row-odd"><td>18th</td>
+<td>+6</td>
+<td>Indomitable Might</td>
+<td>6</td>
+<td>+4</td>
+</tr>
+<tr class="row-even"><td>19th</td>
+<td>+6</td>
+<td>Ability Score Improvement</td>
+<td>6</td>
+<td>+4</td>
+</tr>
+<tr class="row-odd"><td>20th</td>
+<td>+6</td>
+<td>Primal Champion</td>
+<td>Unlimited</td>
+<td>+4</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="rage">
+<h4>Rage<a class="headerlink" href="#rage" title="Permalink to this headline">¶</a></h4>
+<p>In battle, you fight with primal ferocity. On your turn, you can enter a
+rage as a bonus action.</p>
+<p>While raging, you gain the following benefits if you aren’t wearing
+heavy armor:</p>
+<ul class="simple">
+<li>You have advantage on Strength checks and Strength saving throws.</li>
+<li>When you make a melee weapon attack using Strength, you gain a bonus
+to the damage roll that increases as you gain levels as a barbarian,
+as shown in the Rage Damage column of the Barbarian table.</li>
+<li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
+</ul>
+<p>If you are able to cast spells, you can’t cast them or concentrate on
+them while raging.</p>
+<p>Your rage lasts for 1 minute. It ends early if you are knocked
+unconscious or if your turn ends and you haven’t attacked a hostile
+creature since your last turn or taken damage since then. You can also
+end your rage on your turn as a bonus action.</p>
+<p>Once you have raged the number of times shown for your barbarian level
+in the Rages column of the Barbarian table, you must finish a long rest
+before you can rage again.</p>
+</div>
+<div class="section" id="unarmored-defense">
+<h4>Unarmored Defense<a class="headerlink" href="#unarmored-defense" title="Permalink to this headline">¶</a></h4>
+<p>While you are not wearing any armor, your Armor Class equals 10 + your
+Dexterity modifier + your Constitution modifier. You can use a shield
+and still gain this benefit.</p>
+</div>
+<div class="section" id="reckless-attack">
+<h4>Reckless Attack<a class="headerlink" href="#reckless-attack" title="Permalink to this headline">¶</a></h4>
+<p>Starting at 2nd level, you can throw aside all concern for defense to
+attack with fierce desperation. When you make your first attack on your
+turn, you can decide to attack recklessly. Doing so gives you advantage
+on melee weapon attack rolls using Strength during this turn, but attack
+rolls against you have advantage until your next turn.</p>
+</div>
+<div class="section" id="danger-sense">
+<h4>Danger Sense<a class="headerlink" href="#danger-sense" title="Permalink to this headline">¶</a></h4>
+<p>At 2nd level, you gain an uncanny sense of when things nearby aren’t as
+they should be, giving you an edge when you dodge away from danger.</p>
+<p>You have advantage on Dexterity saving throws against effects that you
+can see, such as traps and spells. To gain this benefit, you can’t be
+blinded, deafened, or incapacitated.</p>
+</div>
+<div class="section" id="primal-path">
+<h4>Primal Path<a class="headerlink" href="#primal-path" title="Permalink to this headline">¶</a></h4>
+<p>At 3rd level, you choose a path that shapes the nature of your rage.
+Choose the Path of the Berserker or the Path of the Totem Warrior, both
+detailed at the end of the class description. Your choice grants you
+features at 3rd level and again at 6th, 10th, and 14th levels.</p>
+</div>
+<div class="section" id="ability-score-improvement">
+<h4>Ability Score Improvement<a class="headerlink" href="#ability-score-improvement" title="Permalink to this headline">¶</a></h4>
+<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
+you can increase one ability score of your choice by 2, or you can
+increase two ability scores of your choice by 1. As normal, you can’t
+increase an ability score above 20 using this feature.</p>
+</div>
+<div class="section" id="extra-attack">
+<h4>Extra Attack<a class="headerlink" href="#extra-attack" title="Permalink to this headline">¶</a></h4>
+<p>Beginning at 5th level, you can attack twice, instead of once, whenever
+you take the Attack action on your turn.</p>
+</div>
+<div class="section" id="fast-movement">
+<h4>Fast Movement<a class="headerlink" href="#fast-movement" title="Permalink to this headline">¶</a></h4>
+<p>Starting at 5th level, your speed increases by 10 feet while you aren’t
+wearing heavy armor.</p>
+</div>
+<div class="section" id="feral-instinct">
+<h4>Feral Instinct<a class="headerlink" href="#feral-instinct" title="Permalink to this headline">¶</a></h4>
+<p>By 7th level, your instincts are so honed that you have advantage on
+initiative rolls.</p>
+<p>Additionally, if you are surprised at the beginning of combat and aren’t
+incapacitated, you can act normally on your first turn, but only if you
+enter your rage before doing anything else on that turn.</p>
+</div>
+<div class="section" id="brutal-critical">
+<h4>Brutal Critical<a class="headerlink" href="#brutal-critical" title="Permalink to this headline">¶</a></h4>
+<p>Beginning at 9th level, you can roll one additional weapon damage die
+when determining the extra damage for a critical hit with a melee
+attack.</p>
+<p>This increases to two additional dice at 13th level and three additional
+dice at 17th level.</p>
+</div>
+<div class="section" id="relentless-rage">
+<h4>Relentless Rage<a class="headerlink" href="#relentless-rage" title="Permalink to this headline">¶</a></h4>
+<p>Starting at 11th level, your rage can keep you fighting despite grievous
+wounds. If you drop to 0 hit points while you’re raging and don’t die
+outright, you can make a DC 10 Constitution saving throw. If you
+succeed, you drop to 1 hit point instead.</p>
+<p>Each time you use this feature after the first, the DC increases by 5.
+When you finish a short or long rest, the DC resets to 10.</p>
+</div>
+<div class="section" id="persistent-rage">
+<h4>Persistent Rage<a class="headerlink" href="#persistent-rage" title="Permalink to this headline">¶</a></h4>
+<p>Beginning at 15th level, your rage is so fierce that it ends early only
+if you fall unconscious or if you choose to end it.</p>
+</div>
+<div class="section" id="indomitable-might">
+<h4>Indomitable Might<a class="headerlink" href="#indomitable-might" title="Permalink to this headline">¶</a></h4>
+<p>Beginning at 18th level, if your total for a Strength check is less than
+your Strength score, you can use that score in place of the total.</p>
+</div>
+<div class="section" id="primal-champion">
+<h4>Primal Champion<a class="headerlink" href="#primal-champion" title="Permalink to this headline">¶</a></h4>
+<p>At 20th level, you embody the power of the wilds. Your Strength and
+Constitution scores increase by 4. Your maximum for those scores is now
+24.</p>
+</div>
+<div class="section" id="path-of-the-berserker">
+<h4>Path of the Berserker<a class="headerlink" href="#path-of-the-berserker" title="Permalink to this headline">¶</a></h4>
+<p>For some barbarians, rage is a means to an end— that end being violence.
+The Path of the Berserker is a path of untrammeled fury, slick with
+blood. As you enter the berserker’s rage, you thrill in the chaos of
+battle, heedless of your own health or well-being.</p>
+</div>
+<div class="section" id="frenzy">
+<h4>Frenzy<a class="headerlink" href="#frenzy" title="Permalink to this headline">¶</a></h4>
+<p>Starting when you choose this path at 3rd level, you can go into a
+frenzy when you rage. If you do so, for the duration of your rage you
+can make a single melee weapon attack as a bonus action on each of your
+turns after this one. When your rage ends, you suffer one level of
+exhaustion (as described in appendix A).</p>
+</div>
+<div class="section" id="mindless-rage">
+<h4>Mindless Rage<a class="headerlink" href="#mindless-rage" title="Permalink to this headline">¶</a></h4>
+<p>Beginning at 6th level, you can’t be charmed or frightened while raging.
+If you are charmed or frightened when you enter your rage, the effect is
+suspended for the duration of the rage.</p>
+</div>
+<div class="section" id="intimidating-presence">
+<h4>Intimidating Presence<a class="headerlink" href="#intimidating-presence" title="Permalink to this headline">¶</a></h4>
+<p>Beginning at 10th level, you can use your action to frighten someone
+with your menacing presence. When you do so, choose one creature that
+you can see within 30 feet of you. If the creature can see or hear you,
+it must succeed on a Wisdom saving throw (DC equal to 8 + your
+proficiency bonus + your Charisma modifier) or be frightened of you
+until the end of your next turn. On subsequent turns, you can use your
+action to extend the duration of this effect on the frightened creature
+until the end of your next turn. This effect ends if the creature ends
+its turn out of line of sight or more than 60 feet away from you.</p>
+<p>If the creature succeeds on its saving throw, you can’t use this feature
+on that creature again for 24 hours.</p>
+</div>
+<div class="section" id="retaliation">
+<h4>Retaliation<a class="headerlink" href="#retaliation" title="Permalink to this headline">¶</a></h4>
+<p>Starting at 14th level, when you take damage from a creature that is
+within 5 feet of you, you can use your reaction to make a melee weapon
+attack against that creature.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Barbarian</a><ul>
+<li><a class="reference internal" href="#class-features">Class Features</a><ul>
+<li><a class="reference internal" href="#hit-points">Hit Points</a></li>
+<li><a class="reference internal" href="#proficiencies">Proficiencies</a></li>
+<li><a class="reference internal" href="#equipment">Equipment</a></li>
+<li><a class="reference internal" href="#the-barbarian">The Barbarian</a><ul>
+<li><a class="reference internal" href="#rage">Rage</a></li>
+<li><a class="reference internal" href="#unarmored-defense">Unarmored Defense</a></li>
+<li><a class="reference internal" href="#reckless-attack">Reckless Attack</a></li>
+<li><a class="reference internal" href="#danger-sense">Danger Sense</a></li>
+<li><a class="reference internal" href="#primal-path">Primal Path</a></li>
+<li><a class="reference internal" href="#ability-score-improvement">Ability Score Improvement</a></li>
+<li><a class="reference internal" href="#extra-attack">Extra Attack</a></li>
+<li><a class="reference internal" href="#fast-movement">Fast Movement</a></li>
+<li><a class="reference internal" href="#feral-instinct">Feral Instinct</a></li>
+<li><a class="reference internal" href="#brutal-critical">Brutal Critical</a></li>
+<li><a class="reference internal" href="#relentless-rage">Relentless Rage</a></li>
+<li><a class="reference internal" href="#persistent-rage">Persistent Rage</a></li>
+<li><a class="reference internal" href="#indomitable-might">Indomitable Might</a></li>
+<li><a class="reference internal" href="#primal-champion">Primal Champion</a></li>
+<li><a class="reference internal" href="#path-of-the-berserker">Path of the Berserker</a></li>
+<li><a class="reference internal" href="#frenzy">Frenzy</a></li>
+<li><a class="reference internal" href="#mindless-rage">Mindless Rage</a></li>
+<li><a class="reference internal" href="#intimidating-presence">Intimidating Presence</a></li>
+<li><a class="reference internal" href="#retaliation">Retaliation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/classes/barbarian/index.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Ean Moody, Max Rothman, Jason McAlpin.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="../../_sources/classes/barbarian/index.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
