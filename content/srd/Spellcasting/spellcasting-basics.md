@@ -23,8 +23,7 @@ in a particular pattern, sets them vibrating in a specific way, and then
 releases them to unleash the desired effect—in most cases, all in the
 span of seconds.
 
-> Spells can be versatile tools, weapons, or
-
+Spells can be versatile tools, weapons, or
 protective wards. They can deal damage or undo it, impose or remove
 conditions (see appendix A), drain life energy away, and restore life to
 the dead.
@@ -104,14 +103,14 @@ Some spells, such as *magic missile* and *cure wounds*, have more
 powerful effects when cast at a higher level, as detailed in a spell’s
 description.
 
-##### Casting in Armor
-
+> ##### Casting in Armor
+>
 > Because of the mental focus and precise gestures required for
 > spellcasting, you must be proficient with the armor you are wearing to
 > cast a spell. You are otherwise too distracted and physically hampered
 > by your armor for spellcasting.
->
-> **Cantrips**
+
+### Cantrips
 
 A cantrip is a spell that can be cast at will, without using a spell
 slot and without being prepared in advance. Repeated practice has fixed
