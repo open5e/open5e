@@ -1,3 +1,7 @@
+------------------
+Title: Movement
+------------------
+
 Movement
 --------
 
@@ -15,9 +19,17 @@ which leads you through miles of echoing corridors to a chasm bridged by
 a narrow stone arch.”
 
 Sometimes it’s important, though, to know how long it takes to get from
-one spot to another,
+one spot to another, whether the answer is in days, hours, or minutes.
+The rules for determining travel time depend on two factors: the speed
+and travel pace of the creatures moving and the terrain they’re moving
+over.
 
-whether the answer is in days, hours, or minutes.
+### Speed
+
+Every character and monster has a speed, which is the distance in feet
+that the character or monster can walk in 1 round. This number assumes
+short bursts of energetic movement in the midst of a life-­
+threatening situation.
 
 The following rules determine how far a character or monster can move in
 a minute, an hour, or a day.
@@ -59,50 +71,14 @@ swiftly.
 
 #### Travel Pace
 
-> **Pace Distance Traveled per . . .**
->
-> **Minute Hour Day Effect**
+**Distance Traveled per . . .**
 
-The rules for determining travel time depend on two factors: the speed
-and travel pace of the creatures moving and the terrain they’re moving
-over.
+**Pace** | **Minute** | **Hour** | **Day** | **Effect**
+--------- ------------ ---------- -------- -----------------------------------
+Fast     | 400 feet   | 4 miles  | 30 miles| −5 penalty to passive Wisdom (Perception) scores
+Normal   | 300 feet   | 3 miles  | 24 miles|  --
+Slow     | 200 feet   | 2 miles  | 18 miles| Able to use stealth
 
-> **Speed**
-
-Every character and monster has a speed, which is the distance in feet
-that the character or monster can walk in 1 round. This number assumes
-short bursts of energetic movement in the midst of a life-­
-threatening situation.
-
-feet
-
-> 4
->
-> miles
->
-> 3
->
-> miles 2
->
-> miles
->
-> 30
->
-> miles
->
-> 24
->
-> miles 18
->
-> miles
->
-> −5 penalty to passive
->
-> Wisdom (Perception) scores
->
-> —
->
-> Able to use stealth
 
 #### Difficult Terrain
 
@@ -156,7 +132,6 @@ number of feet equal to 3 + your Strength modifier if you move at least
 10 feet on foot immediately before the jump. When you make a standing
 high jump, you can jump only half that distance. Either way, each foot
 you clear on the jump costs a foot of movement. In some circumstances,
-
 your GM might allow you to make a Strength (Athletics) check to jump
 higher than you normally can.
 

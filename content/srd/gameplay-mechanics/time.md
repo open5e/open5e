@@ -1,3 +1,7 @@
+------------------
+Title: Time
+------------------
+
 Time
 ----
 
@@ -10,14 +14,12 @@ another minute to check for traps on the door at the end of the hall,
 and a good ten minutes to search the chamber beyond for anything
 interesting or valuable.
 
-> In a city or wilderness, a scale of **hours** is often
-
+In a city or wilderness, a scale of **hours** is often
 more appropriate. Adventurers eager to reach the lonely tower at the
 heart of the forest hurry across those fifteen miles in just under four
 hours’ time.
 
-> For long journeys, a scale of **days** works best.
-
+For long journeys, a scale of **days** works best.
 Following the road from Baldur’s Gate to Waterdeep, the adventurers
 spend four uneventful days before a goblin ambush interrupts their
 journey.

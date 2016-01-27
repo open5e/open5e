@@ -1,3 +1,7 @@
+------------------
+Title: The Environment
+------------------
+
 The Environment
 ---------------
 
@@ -18,8 +22,7 @@ lands prone, unless it avoids taking damage from the fall.
 A creature can hold its breath for a number of minutes equal to 1 + its
 Constitution modifier (minimum of 30 seconds).
 
-> When a creature runs out of breath or is choking,
-
+When a creature runs out of breath or is choking,
 it can survive for a number of rounds equal to its Constitution modifier
 (minimum of 1 round). At the start of its next turn, it drops to 0 hit
 points and is dying, and it can’t regain hit points or be stabilized
@@ -41,7 +44,7 @@ obscured** area, such as dim light, patchy fog, or moderate foliage,
 creatures have disadvantage on Wisdom (Perception) checks that rely on
 sight.
 
-A **heavily obscured** area—such as darkness, 
+A **heavily obscured** area—such as darkness,
 opaque fog, or dense foliage—blocks vision entirely. A creature
 effectively suffers from the blinded condition (see appendix A) when
 trying to see something in that area.
