@@ -14,7 +14,7 @@ game, unwary adventurers can fall to their deaths, be burned alive, or
 fall under a fusillade of poisoned darts.
 
 A trap can be either mechanical or magical in nature. **Mechanical
-traps** include pits, arrow traps, falling blocks, water-­‐‑filled
+traps** include pits, arrow traps, falling blocks, water---filled
 rooms, whirling blades, and anything else that depends on a mechanism to
 operate. **Magic traps** are either magical device traps or spell traps.
 Magical device traps initiate spell effects when activated. Spell traps
@@ -23,7 +23,6 @@ symbol that function as traps.
 
 
 ### Traps in Play
-
 
 When adventurers come across a trap, you need to know how the trap is
 triggered and what it does, as well as the possibility for the
@@ -71,7 +70,6 @@ most magic traps. A magic trap’s description provides the DC for the
 ability check made when you use dispel magic.
 
 In most cases, a trap’s description is clear enough
-
 that you can adjudicate whether a character’s actions locate or foil the
 trap. As with many situations, you shouldn’t allow die rolling to
 override clever play and good planning. Use your common sense, drawing
@@ -94,7 +92,6 @@ trap still triggers, but the hail of needles fires harmlessly into the
 shield.
 
 Traps are often designed with mechanisms that
-
 allow them to be disarmed or bypassed. Intelligent monsters that place
 traps in or around their lairs need ways to get past those traps without
 harming themselves. Such traps might have hidden levers that disable
@@ -111,22 +108,18 @@ trigger them. A trap’s description specifies what happens when it is
 triggered.
 
 The attack bonus of a trap, the save DC to resist its
-
 effects, and the damage it deals can vary depending on the trap’s
 severity. Use the Trap Save DCs and Attack Bonuses table and the Damage
 Severity by Level table for suggestions based on three levels of trap
 severity.
 
 A trap intended to be a **setback** is unlikely to kill
-
 or seriously harm characters of the indicated levels, whereas a
 **dangerous** trap is likely to seriously injure (and potentially kill)
 characters of the indicated levels. A **deadly** trap is likely to kill
 characters of the indicated levels.
 
-
-Trap Save DCs and Attack Bonuses
-
+###Trap Save DCs and Attack Bonuses
 
  Trap Danger             | Save DC                 | Attack Bonus            
 -------------------------|-------------------------|-------------------------
@@ -191,7 +184,6 @@ The ceiling above the trip wire is in bad repair, and anyone who can see
 it can tell that it’s in danger of collapse.
 
 When the trap is triggered, the unstable ceiling
-
 collapses. Any creature in the area beneath the unstable section must
 succeed on a DC 15 Dexterity saving throw, taking 22 (4d10) bludgeoning
 damage on a failed save, or half as much damage on a successful one.
@@ -203,9 +195,7 @@ and becomes difficult terrain.
 
 Mechanical trap
 
-
 This trap uses a trip wire to release a net suspended from the ceiling.
-
 The trip wire is 3 inches off the ground and stretches between two
 columns or trees. The net is hidden by cobwebs or foliage. The DC to
 spot the trip wire and net is 10. A successful DC 15 Dexterity check
@@ -214,13 +204,13 @@ without thieves’ tools can attempt this check with disadvantage using
 any edged weapon or edged tool. On a failed check, the trap triggers.
 
 When the trap is triggered, the net is released, covering a
-10-­‐‑foot-­‐‑square area. Those in the area are trapped under the net
+10---foot---square area. Those in the area are trapped under the net
 and restrained, and those that fail a DC 10 Strength saving throw are
 also knocked prone. A creature can use its action to make a DC 10
 
 Strength check, freeing itself or another creature within its reach on a
 success. The net has AC 10 and 20 hit points. Dealing 5 slashing damage
-to the net (AC 10) destroys a 5-­‐‑foot-­‐‑square section of it, freeing
+to the net (AC 10) destroys a 5---foot---square section of it, freeing
 any creature trapped in that section.
 
 
@@ -241,7 +231,7 @@ can sense the presence of magic, such as detect
 magic, reveals an aura of evocation magic around the statue.
 
 The trap activates when more than 20 pounds of weight is placed on the
-pressure plate, causing the statue to release a 30-­‐‑foot cone of fire.
+pressure plate, causing the statue to release a 30---foot cone of fire.
 Each creature in the fire must make a DC 13 Dexterity saving throw,
 taking 22 (4d10) fire damage on a failed save, or half as much damage on
 a successful one.
@@ -258,7 +248,7 @@ Mechanical trap
 
 Four basic pit traps are presented here.
 
-Simple Pit. A simple pit trap is a hole dug in the
+**Simple Pit**. A simple pit trap is a hole dug in the
 ground. The hole is covered by a large cloth anchored on the pit’s edge
 and camouflaged with dirt and debris.
 
@@ -268,7 +258,7 @@ the cloth falls through and pulls the cloth down into the pit, taking
 damage based on the pit’s depth (usually 10 feet, but some pits are
 deeper).
 
-Hidden Pit. This pit has a cover constructed from
+**Hidden Pit**. This pit has a cover constructed from
 material identical to the floor around it.
 
 A successful DC 15 Wisdom (Perception) check discerns an absence of foot
@@ -287,9 +277,9 @@ as to prevent the cover from opening, thereby making it safe to cross.
 The cover can also be magically held shut using the
 arcane lock spell or similar magic.
 
-Locking Pit. This pit trap is identical to a hidden pit
+**Locking Pit**. This pit trap is identical to a hidden pit
 trap, with one key exception: the trap door that covers the pit is
-spring-­‐‑loaded. After a creature falls into the pit, the cover snaps
+spring---loaded. After a creature falls into the pit, the cover snaps
 shut to trap its victim inside.
 
 A successful DC 20 Strength check is necessary to pry the cover open.
@@ -299,7 +289,7 @@ Dexterity check using thieves’ tools, provided that the mechanism can be
 reached and the character can see. In some cases, a mechanism (usually
 hidden behind a secret door nearby) opens the pit.
 
-Spiked Pit. This pit trap is a simple, hidden, or
+**Spiked Pit**. This pit trap is a simple, hidden, or
 locking pit trap with sharpened wooden or iron spikes at the bottom. A
 creature falling into the pit takes 11 (2d10) piercing damage from the
 spikes, in addition to any falling damage. Even nastier versions have
@@ -313,14 +303,13 @@ damage on a successful one.
 
 Mechanical trap
 
-
-When a creature steps on a hidden pressure plate, poison-­‐‑tipped darts
-shoot from spring-­‐‑loaded or pressurized tubes cleverly embedded in
+When a creature steps on a hidden pressure plate, poison---tipped darts
+shoot from spring---loaded or pressurized tubes cleverly embedded in
 the surrounding walls. An area might include multiple pressure plates,
 each one rigged to its own set of darts.
 
 The tiny holes in the walls are obscured by dust and cobwebs, or
-cleverly hidden amid bas-­‐‑reliefs, murals, or frescoes that adorn the
+cleverly hidden amid bas---reliefs, murals, or frescoes that adorn the
 walls. The DC to spot them is 15. With a successful DC 15 Intelligence
 (Investigation) check, a character can deduce the presence of the
 pressure plate from variations in the mortar and stone used to create
@@ -369,7 +358,7 @@ Mechanical trap
 
 When 20 or more pounds of pressure are placed on this trap’s pressure
 plate, a hidden trapdoor in the ceiling opens, releasing a
-10-­‐‑foot-­‐‑diameter rolling sphere of solid stone.
+10---foot---diameter rolling sphere of solid stone.
 
 With a successful DC 15 Wisdom (Perception) check, a character can spot
 the trapdoor and pressure plate. A search of the floor accompanied by a

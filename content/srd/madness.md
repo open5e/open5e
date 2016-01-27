@@ -24,7 +24,6 @@ madness. Some artifacts can also break the psyche of a character who
 uses or becomes attuned to them.
 
 Resisting a madness-­inducing effect usually
-
 requires a Wisdom or Charisma saving throw.
 
 ### Madness Effects

@@ -12,8 +12,8 @@ feature, a monster’s attack, or other effect. Most conditions, such as blinded
 are impairments, but a few, such as invisible, can be advantageous.
 
 A condition lasts either until it is countered (the prone condition is countered
-  by standing up, for example) or for a duration specified by the effect that
-  imposed the condition.
+by standing up, for example) or for a duration specified by the effect that
+imposed the condition.
 
 If multiple effects impose the same condition on a creature, each instance of the
 condition has its own duration, but the condition’s effects don’t get worse. A
@@ -126,7 +126,7 @@ the creature has also ingested some food and drink.
     weight increases by a factor of ten, and it ceases aging.
 
 -   The creature is incapacitated (see the condition), can’t move or speak, and
-is unaware of its surroundings.
+    is unaware of its surroundings.
 
 -   Attack rolls against the creature have advantage.
 

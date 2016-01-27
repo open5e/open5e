@@ -5,7 +5,7 @@ Title: Races
 Races
 ------
 
-###Racial Traits
+### Racial Traits
 The description of each race includes racial traits that are common to members of that race. The following entries appear among the traits of most races.
 
 #### Ability Score Increase
@@ -42,9 +42,9 @@ parent race in addition to the traits specified for their subrace.
 Relationships among subraces vary significantly from race to race and
 world to world.
 
-##Dwarf
+### Dwarf
 
-### Dwarf Traits
+#### Dwarf Traits
 Your dwarf character has an assortment of inborn abilities, part and
 parcel of dwarven nature.
 
@@ -100,10 +100,9 @@ resilience.
 ***Dwarven Toughness.*** Your hit point maximum increases by 1, and it
 increases by 1 every time you gain a level.
 
-Elf
----
+### Elf
 
-### Elf Traits
+#### Elf Traits
 
 Your elf character has a variety of natural abilities, the result of
 thousands of years of elven refinement.
@@ -165,7 +164,6 @@ races.
 ***Ability Score Increase.*** Your Intelligence score increases by 1.
 
 ***Elf Weapon Training.*** You have proficiency with
-
 the longsword, shortsword, shortbow, and longbow.
 
 ***Cantrip.*** You know one cantrip of your choice from the wizard spell
@@ -174,10 +172,10 @@ list. Intelligence is your spellcasting ability for it.
 ***Extra Language.*** You can speak, read, and write one extra language
 of your choice.
 
-Halfling
---------
+### Halfling
 
-### Halfling Traits
+
+#### Halfling Traits
 
 Your halfling character has a number of traits in common with all other
 halflings.
@@ -229,10 +227,10 @@ dwell alongside other races or take up a nomadic life.
 ***Naturally Stealthy.*** You can attempt to hide even when you are
 obscured only by a creature that is at least one size larger than you.
 
-Human
------
+### Human
 
-### Human Traits
+
+#### Human Traits
 
 It’s hard to make generalizations about humans, but your human character
 has these traits.
@@ -253,17 +251,15 @@ your size is Medium.
 can speak, read, and write Common and one extra language of your choice.
 
 Humans typically learn the languages of other
-
 peoples they deal with, including obscure dialects. They are fond of
 sprinkling their speech with words borrowed from other tongues: Orc
 curses, Elvish musical expressions, Dwarvish military phrases, and so
 on.
 
-\
-Dragonborn
-----------
+### Dragonborn
 
-### Dragonborn Traits
+
+#### Dragonborn Traits
 
 Your draconic heritage manifests in a variety of traits you share with
 other dragonborn.
@@ -323,7 +319,6 @@ After you use your breath weapon, you can’t use it again until you
 complete a short or long rest.
 
 ***Damage Resistance.*** You have resistance to the
-
 damage type associated with your draconic ancestry.
 
 ***Languages.*** You can speak, read, and write Common and Draconic.
@@ -331,10 +326,9 @@ Draconic is thought to be one of the oldest languages and is often used
 in the study of magic. The language sounds harsh to most other creatures
 and includes numerous hard consonants and sibilants.
 
-Gnome
------
+### Gnome
 
-### Gnome Traits
+#### Gnome Traits
 
 Your gnome character has certain characteristics in common with all
 other gnomes.
@@ -358,7 +352,6 @@ feet of you as if it were bright light, and in darkness as if it were
 dim light. You can’t discern color in darkness, only shades of gray.
 
 ***Gnome Cunning.*** You have advantage on all
-
 Intelligence, Wisdom, and Charisma saving throws against magic.
 
 ***Languages.*** You can speak, read, and write Common and Gnomish. The
@@ -387,7 +380,6 @@ dismantle it; at that time, you can reclaim the materials used to create
 it. You can have up to three such devices active at a time.
 
 When you create a device, choose one of the
-
 following options:
 
 *Clockwork Toy.* This toy is a clockwork animal, monster, or person,
@@ -404,10 +396,10 @@ your action.
 moderate volume. The box stops playing when it reaches the song’s end
 or when it is closed.
 
-Half-Elf
---------
+### Half-Elf
 
-### Half-Elf Traits
+
+#### Half-Elf Traits
 
 Your half-­elf character has some qualities in common with elves and
 some that are unique to half-­elves.
@@ -420,11 +412,9 @@ adulthood around the age of 20. They live much longer than humans,
 however, often exceeding 180 years.
 
 ***Alignment.*** Half-­elves share the chaotic bent of
-
 their elven heritage. They value both personal freedom and creative
 expression, demonstrating neither love of leaders nor desire for
 followers. They chafe at rules, resent others’ demands, and
-
 sometimes prove unreliable, or at least unpredictable.
 
 ***Size.*** Half-­elves are about the same size as humans, ranging
@@ -446,10 +436,9 @@ choice.
 ***Languages.*** You can speak, read, and write Common, Elvish, and one
 extra language of your choice.
 
-Half-Orc
---------
+### Half-Orc
 
-### Half-Orc Traits
+#### Half-Orc Traits
 
 Your half-­orc character has certain traits deriving from your orc
 ancestry.
@@ -482,7 +471,6 @@ Intimidation skill.
 
 ***Relentless Endurance.*** When you are reduced to 0 hit points but
 not killed outright, you can drop to 1
-
 hit point instead. You can’t use this feature again until you finish a
 long rest.
 
@@ -494,10 +482,9 @@ and add it to the extra damage of the critical hit.
 harsh, grating language with hard consonants. It has no script of its
 own but is written in the Dwarvish script.
 
-Tiefling
---------
+###Tiefling
 
-### Tiefling Traits
+#### Tiefling Traits
 
 Tieflings share certain racial traits as a result of their infernal
 descent.
