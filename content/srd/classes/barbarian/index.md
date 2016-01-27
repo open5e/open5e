@@ -23,13 +23,15 @@ modifier per barbarian level after 1st
 
 #### Proficiencies
 
-**Armor:** Light armor, medium armor, shields **Weapons:** Simple
-weapons, martial weapons **Tools:** None
+**Armor:** Light armor, medium armor, shields 
+
+**Weapons:** Simple weapons, martial weapons
+
+**Tools:** None
 
 **Saving Throws:** Strength, Constitution
 
 **Skills:** Choose two from Animal Handling, Athletics,
-
 Intimidation, Nature, Perception, and Survival
 
 #### Equipment
@@ -38,38 +40,36 @@ You start with the following equipment, in addition to the equipment
 granted by your background:
 
 -   (*a*) a greataxe or (*b*) any martial melee weapon
-
 -   (*a*) two handaxes or (*b*) any simple weapon
-
 -   An explorer’s pack and four javelins
 
 #### The Barbarian
 
-  | **Level** |  **Proficiency bonus**    |    **Features**                    |  **Rages** | **Rage Damage**
-  ------------ --------------------------- ------------------------------------ ------------ -------------------
-  | 1st       | +2                        | Rage, Unarmored Defense            |      2     |        +2
-  | 2nd       | +2                        | Reckless Attack, Danger Sense      |      2     |        +2
-  | 3rd       | +2                        | Primal Path                        |      3     |        +2
-  | 4th       | +2                        | Ability Score Improvement          |      3     |        +2
-  | 5th       | +3                        | Extra Attack, Fast Movement        |      4     |        +2
-  | 6th       | +3                        | Path feature                       |      4     |        +2
-  | 7th       | +3                        | Feral Instinct                     |      4     |        +2
-  | 8th       | +3                        | Ability Score Improvement          |      4     |        +2
-  | 9th       | +4                        | Brutal Critical (1 die)            |      4     |        +3
-  | 10th      | +4                        | Path feature                       |      4     |        +3
-  | 11th      | +4                        | Relentless Rage                    |      4     |        +3
-  | 12th      | +4                        | Ability Score Improvement          |      5     |        +3
-  | 13th      | +5                        | Brutal Critical (2 dice)           |      5     |        +3
-  | 14th      | +5                        | Path feature                       |      5     |        +3
-  | 15th      | +5                        | Persistent Rage                    |      5     |        +3
-  | 16th      | +5                        | Ability Score Improvement          |      5     |        +4
-  | 17th      | +6                        | Brutal Critical (3 dice)           |      6     |        +4
-  | 18th      | +6                        | Indomitable Might                  |      6     |        +4
-  | 19th      | +6                        | Ability Score Improvement          |      6     |        +4
-  | 20th      | +6                        | Primal Champion                    |  Unlimited |        +4
+ Level     |  Proficiency bonus        |    Features                        |  Rages     | Rage Damage 
+  -----------|---------------------------|------------------------------------|------------|-------------
+   1st       | +2                        | Rage, Unarmored Defense            |      2     |        +2 
+   2nd       | +2                        | Reckless Attack, Danger Sense      |      2     |        +2 
+   3rd       | +2                        | Primal Path                        |      3     |        +2 
+   4th       | +2                        | Ability Score Improvement          |      3     |        +2 
+   5th       | +3                        | Extra Attack, Fast Movement        |      4     |        +2 
+   6th       | +3                        | Path feature                       |      4     |        +2 
+   7th       | +3                        | Feral Instinct                     |      4     |        +2 
+   8th       | +3                        | Ability Score Improvement          |      4     |        +2 
+   9th       | +4                        | Brutal Critical (1 die)            |      4     |        +3 
+   10th      | +4                        | Path feature                       |      4     |        +3 
+   11th      | +4                        | Relentless Rage                    |      4     |        +3 
+   12th      | +4                        | Ability Score Improvement          |      5     |        +3 
+   13th      | +5                        | Brutal Critical (2 dice)           |      5     |        +3 
+   14th      | +5                        | Path feature                       |      5     |        +3 
+   15th      | +5                        | Persistent Rage                    |      5     |        +3 
+   16th      | +5                        | Ability Score Improvement          |      5     |        +4 
+   17th      | +6                        | Brutal Critical (3 dice)           |      6     |        +4 
+   18th      | +6                        | Indomitable Might                  |      6     |        +4 
+   19th      | +6                        | Ability Score Improvement          |      6     |        +4 
+   20th      | +6                        | Primal Champion                    |  Unlimited |        +4 
 
 
-**Rage**
+###Rage
 
 In battle, you fight with primal ferocity. On your turn, you can enter a
 rage as a bonus action.
@@ -78,13 +78,10 @@ While raging, you gain the following benefits if you aren’t wearing
 heavy armor:
 
 -   You have advantage on Strength checks and Strength saving throws.
-
 -   When you make a melee weapon attack using Strength, you gain a bonus to the
     damage roll that increases as you gain levels as a barbarian, as shown in
     the Rage Damage column of the Barbarian table.
-
 -   You have resistance to bludgeoning, piercing, and slashing damage.
-
 
 If you are able to cast spells, you can’t cast them or concentrate on them
 while raging.
@@ -97,8 +94,6 @@ as a bonus action.
 Once you have raged the number of times shown for your barbarian level in the
 Rages column of the Barbarian table, you must finish a long rest before you can
 rage again.
-
-
 
 ### Unarmored Defense
 
@@ -198,7 +193,7 @@ The Path of the Berserker is a path of untrammeled fury, slick with
 blood. As you enter the berserker’s rage, you thrill in the chaos of
 battle, heedless of your own health or well-being.
 
-#### Frenzy
+### Frenzy
 
 Starting when you choose this path at 3rd level, you can go into a
 frenzy when you rage. If you do so, for the duration of your rage you
@@ -206,13 +201,13 @@ can make a single melee weapon attack as a bonus action on each of your
 turns after this one. When your rage ends, you suffer one level of
 exhaustion (as described in appendix A).
 
-#### Mindless Rage
+### Mindless Rage
 
 Beginning at 6th level, you can’t be charmed or frightened while raging.
 If you are charmed or frightened when you enter your rage, the effect is
 suspended for the duration of the rage.
 
-#### Intimidating Presence
+### Intimidating Presence
 
 Beginning at 10th level, you can use your action to frighten someone with your
 menacing presence. When you do so, choose one creature that you can see within
@@ -226,7 +221,7 @@ its turn out of line of sight or more than 60 feet away from you.
 If the creature succeeds on its saving throw, you can’t use this feature on that
 creature again for 24 hours.
 
-#### Retaliation
+### Retaliation
 
 Starting at 14th level, when you take damage from a creature that is
 within 5 feet of you, you can use your reaction to make a melee weapon
