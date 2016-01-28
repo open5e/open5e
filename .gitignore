@@ -10,33 +10,4 @@ desktop.ini
 .DS_Store
 ._*
 
-node_modules/
-
-# Composer
-#  /composer.lock
-#  /composer.phar
-#  /vendor
-
-# phpDocumentor
-#  /_build/phpdoc/
-#  /_build/phpdoc.cache/
-#  /_build/phpdoc-*/
-
-# User config
-# /config/config.php
-
-# User themes
-#  /themes/*
-#  !/themes/default
-
-# User plugins
-#  /plugins/*
-#  !/plugins/0?-*
-#  !/plugins/1?-*
-#  !/plugins/DummyPlugin.php
-
 # User content
-
-#  themes/default/.DS_Store
-vendor/
-themes/open5e/node_modules/bower/lib/commands/prune.js
