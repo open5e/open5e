@@ -1,6 +1,6 @@
-+-----------------------------+
-| Title: Adult Brass Dragon   |
-+-----------------------------+
+Adult Brass Dragon  
+---------
+
 
 Huge dragon, chaotic good
 

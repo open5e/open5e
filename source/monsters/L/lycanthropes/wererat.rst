@@ -1,6 +1,6 @@
-+------------------+
-| Title: Wererat   |
-+------------------+
+Wererat  
+---------
+
 
 Medium humanoid (human, shapechanger), lawful evil
 

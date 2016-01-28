@@ -1,6 +1,6 @@
-+-----------------+
-| Title: Medusa   |
-+-----------------+
+Medusa  
+---------
+
 
 Medium monstrosity, lawful evil
 

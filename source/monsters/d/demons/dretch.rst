@@ -1,6 +1,6 @@
-+-----------------+
-| Title: Dretch   |
-+-----------------+
+Dretch  
+---------
+
 
 Small fiend (demon), chaotic evil
 

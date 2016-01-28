@@ -1,6 +1,6 @@
-+----------------------+
-| Title: Triceratops   |
-+----------------------+
+Triceratops  
+---------
+
 
 Huge beast, unaligned
 

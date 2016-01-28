@@ -1,6 +1,6 @@
-+----------------------------------+
-| Title: ancient-black-dragon.md   |
-+----------------------------------+
+ancient-black-dragon.md  
+---------
+
 
 Gargantuan dragon, chaotic evil
 

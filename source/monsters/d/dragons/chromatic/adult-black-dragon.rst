@@ -1,6 +1,6 @@
-+--------------------------------+
-| Title: adult-black-dragon.md   |
-+--------------------------------+
+adult-black-dragon.md  
+---------
+
 
 Huge dragon, chaotic evil
 

@@ -1,6 +1,6 @@
-+-------------------+
-| Title: Werewolf   |
-+-------------------+
+Werewolf  
+---------
+
 
 Medium humanoid (human, shapechanger), chaotic evil
 

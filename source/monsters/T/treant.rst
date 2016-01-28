@@ -1,6 +1,6 @@
-+-----------------+
-| Title: Treant   |
-+-----------------+
+Treant  
+---------
+
 
 Huge plant, chaotic good
 

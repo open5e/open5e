@@ -1,6 +1,6 @@
-+-------------------+
-| Title: Werebear   |
-+-------------------+
+Werebear  
+---------
+
 
 Medium humanoid (human, shapechanger), neutral good
 

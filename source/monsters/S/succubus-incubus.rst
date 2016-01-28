@@ -1,6 +1,6 @@
-+---------------------------+
-| Title: Succubus/Incubus   |
-+---------------------------+
+Succubus/Incubus  
+---------
+
 
 Medium fiend (shapechanger), neutral evil
 

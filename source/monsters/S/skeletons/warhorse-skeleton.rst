@@ -1,6 +1,6 @@
-+----------------------------+
-| Title: Warhorse Skeleton   |
-+----------------------------+
+Warhorse Skeleton  
+---------
+
 
 Large undead, lawful evil
 

@@ -1,6 +1,6 @@
-+------------------+
-| Title: Centaur   |
-+------------------+
+Centaur  
+---------
+
 
 Large monstrosity, neutral good
 

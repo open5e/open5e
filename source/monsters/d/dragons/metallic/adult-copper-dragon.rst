@@ -1,6 +1,6 @@
-+------------------------------+
-| Title: Adult Copper Dragon   |
-+------------------------------+
+Adult Copper Dragon  
+---------
+
 
 Huge dragon, chaotic good
 

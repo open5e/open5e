@@ -1,6 +1,6 @@
-+-----------------+
-| Title: Wyvern   |
-+-----------------+
+Wyvern  
+---------
+
 
 Large dragon, unaligned
 

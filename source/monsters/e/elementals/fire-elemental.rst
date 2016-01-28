@@ -1,6 +1,6 @@
-+-------------------------+
-| Title: Fire Elemental   |
-+-------------------------+
+Fire Elemental  
+---------
+
 
 Large elemental, neutral
 

@@ -1,6 +1,6 @@
-+-----------------+
-| Title: Hezrou   |
-+-----------------+
+Hezrou  
+---------
+
 
 Large fiend (demon), chaotic evil
 

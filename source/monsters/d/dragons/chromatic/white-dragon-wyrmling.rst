@@ -1,6 +1,6 @@
-+--------------------------------+
-| Title: White Dragon Wyrmling   |
-+--------------------------------+
+White Dragon Wyrmling  
+---------
+
 
 Medium dragon, chaotic evil
 

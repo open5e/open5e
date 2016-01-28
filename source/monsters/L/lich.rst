@@ -1,6 +1,6 @@
-+---------------+
-| Title: Lich   |
-+---------------+
+Lich  
+---------
+
 
 Medium undead, any evil alignment
 

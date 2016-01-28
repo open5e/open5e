@@ -1,6 +1,6 @@
-+-----------------+
-| Title: Lemure   |
-+-----------------+
+Lemure  
+---------
+
 
 Medium fiend (devil), lawful evil
 

@@ -1,6 +1,6 @@
-+-----------------------------+
-| Title: Young Brass Dragon   |
-+-----------------------------+
+Young Brass Dragon  
+---------
+
 
 Large dragon, chaotic good
 

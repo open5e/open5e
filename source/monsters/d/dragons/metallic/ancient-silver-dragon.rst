@@ -1,6 +1,6 @@
-+--------------------------------+
-| Title: Ancient Silver Dragon   |
-+--------------------------------+
+Ancient Silver Dragon  
+---------
+
 
 Gargantuan dragon, lawful good
 

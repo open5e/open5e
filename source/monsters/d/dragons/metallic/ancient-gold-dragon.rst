@@ -1,6 +1,6 @@
-+------------------------------+
-| Title: Ancient Gold Dragon   |
-+------------------------------+
+Ancient Gold Dragon  
+---------
+
 
 Gargantuan dragon, lawful good
 

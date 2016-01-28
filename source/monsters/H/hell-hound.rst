@@ -1,6 +1,6 @@
-+---------------------+
-| Title: Hell Hound   |
-+---------------------+
+Hell Hound  
+---------
+
 
 Medium fiend, lawful evil
 

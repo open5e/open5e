@@ -1,6 +1,6 @@
-+-----------------------+
-| Title: Magma Mephit   |
-+-----------------------+
+Magma Mephit  
+---------
+
 
 Small elemental, neutral evil
 

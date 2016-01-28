@@ -1,6 +1,6 @@
-+-----------------------------+
-| Title: Young Black Dragon   |
-+-----------------------------+
+Young Black Dragon  
+---------
+
 
 Large dragon, chaotic evil
 

@@ -1,6 +1,6 @@
-+---------------------+
-| Title: Gynosphinx   |
-+---------------------+
+Gynosphinx  
+---------
+
 
 Large monstrosity, lawful neutral
 

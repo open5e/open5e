@@ -1,6 +1,6 @@
-+-----------------------------+
-| Title: Young Green Dragon   |
-+-----------------------------+
+Young Green Dragon  
+---------
+
 
 Large dragon, lawful evil
 

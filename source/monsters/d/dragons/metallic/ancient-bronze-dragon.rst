@@ -1,6 +1,6 @@
-+--------------------------------+
-| Title: Ancient Bronze Dragon   |
-+--------------------------------+
+Ancient Bronze Dragon  
+---------
+
 
 Gargantuan dragon, lawful good
 

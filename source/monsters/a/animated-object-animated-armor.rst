@@ -1,6 +1,6 @@
-+------------------------------------------+
-| Title: Animated Object: Animated Armor   |
-+------------------------------------------+
+Animated Object: Animated Armor  
+---------
+
 
 Medium construct, unaligned
 

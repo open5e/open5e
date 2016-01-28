@@ -1,6 +1,6 @@
-+----------------------+
-| Title: Ochre Jelly   |
-+----------------------+
+Ochre Jelly  
+---------
+
 
 Large ooze, unaligned
 

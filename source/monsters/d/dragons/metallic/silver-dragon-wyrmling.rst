@@ -1,6 +1,6 @@
-+---------------------------------+
-| Title: Silver Dragon Wyrmling   |
-+---------------------------------+
+Silver Dragon Wyrmling  
+---------
+
 
 Medium dragon, lawful good
 

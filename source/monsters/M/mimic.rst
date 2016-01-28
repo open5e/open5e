@@ -1,6 +1,6 @@
-+----------------+
-| Title: Mimic   |
-+----------------+
+Mimic  
+---------
+
 
 Medium monstrosity (shapechanger), neutral
 

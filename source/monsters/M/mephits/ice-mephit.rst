@@ -1,6 +1,6 @@
-+---------------------+
-| Title: Ice Mephit   |
-+---------------------+
+Ice Mephit  
+---------
+
 
 Small elemental, neutral evil
 

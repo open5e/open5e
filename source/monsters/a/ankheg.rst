@@ -1,6 +1,6 @@
-+-----------------+
-| Title: Ankheg   |
-+-----------------+
+Ankheg  
+---------
+
 
 Large monstrosity, unaligned
 

@@ -1,6 +1,6 @@
-+---------------------+
-| Title: Mummy Lord   |
-+---------------------+
+Mummy Lord  
+---------
+
 
 Medium undead, lawful evil
 

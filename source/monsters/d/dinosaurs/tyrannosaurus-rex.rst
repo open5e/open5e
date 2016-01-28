@@ -1,6 +1,6 @@
-+----------------------------+
-| Title: Tyrannosaurus Rex   |
-+----------------------------+
+Tyrannosaurus Rex  
+---------
+
 
 Huge beast, unaligned
 

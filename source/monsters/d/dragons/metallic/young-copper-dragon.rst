@@ -1,6 +1,6 @@
-+------------------------------+
-| Title: Young Copper Dragon   |
-+------------------------------+
+Young Copper Dragon  
+---------
+
 
 Large dragon, chaotic good
 

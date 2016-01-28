@@ -1,6 +1,6 @@
-+------------------------------+
-| Title: Young Silver Dragon   |
-+------------------------------+
+Young Silver Dragon  
+---------
+
 
 Large dragon, lawful good
 

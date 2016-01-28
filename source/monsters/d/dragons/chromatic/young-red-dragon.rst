@@ -1,6 +1,6 @@
-+---------------------------+
-| Title: Young Red Dragon   |
-+---------------------------+
+Young Red Dragon  
+---------
+
 
 Large dragon, chaotic evil
 

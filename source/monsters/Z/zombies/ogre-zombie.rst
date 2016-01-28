@@ -1,6 +1,6 @@
-+----------------------+
-| Title: Ogre Zombie   |
-+----------------------+
+Ogre Zombie  
+---------
+
 
 Large undead, neutral evil
 

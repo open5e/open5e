@@ -1,6 +1,6 @@
-+-------------------+
-| Title: Gargoyle   |
-+-------------------+
+Gargoyle  
+---------
+
 
 Medium elemental, chaotic evil
 

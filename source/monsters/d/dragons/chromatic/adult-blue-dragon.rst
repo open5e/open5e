@@ -1,6 +1,6 @@
-+-------------------------------+
-| Title: adult-blue-dragon.md   |
-+-------------------------------+
+adult-blue-dragon.md  
+---------
+
 
 Huge dragon, lawful evil
 

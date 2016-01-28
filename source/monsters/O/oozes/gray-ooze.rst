@@ -1,6 +1,6 @@
-+--------------------+
-| Title: Gray Ooze   |
-+--------------------+
+Gray Ooze  
+---------
+
 
 Medium ooze, unaligned
 

@@ -1,6 +1,6 @@
-+------------------------+
-| Title: Black Pudding   |
-+------------------------+
+Black Pudding  
+---------
+
 
 Large ooze, unaligned
 

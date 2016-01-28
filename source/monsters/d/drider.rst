@@ -1,6 +1,6 @@
-+-----------------+
-| Title: Drider   |
-+-----------------+
+Drider  
+---------
+
 
 Large monstrosity, chaotic evil
 

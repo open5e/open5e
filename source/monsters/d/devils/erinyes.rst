@@ -1,6 +1,6 @@
-+------------------+
-| Title: Erinyes   |
-+------------------+
+Erinyes  
+---------
+
 
 Medium fiend (devil), lawful evil
 

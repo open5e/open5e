@@ -1,6 +1,6 @@
-+----------------+
-| Title: Vrock   |
-+----------------+
+Vrock  
+---------
+
 
 Large fiend (demon), chaotic evil
 

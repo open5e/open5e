@@ -1,6 +1,6 @@
-+---------------------+
-| Title: Hippogriff   |
-+---------------------+
+Hippogriff  
+---------
+
 
 Large monstrosity, unaligned
 

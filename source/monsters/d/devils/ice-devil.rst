@@ -1,6 +1,6 @@
-+--------------------+
-| Title: Ice Devil   |
-+--------------------+
+Ice Devil  
+---------
+
 
 Large fiend (devil), lawful evil
 

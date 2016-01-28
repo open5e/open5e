@@ -1,6 +1,6 @@
-+---------------------------------------------+
-| Title: Animated Object: Rug of Smothering   |
-+---------------------------------------------+
+Animated Object: Rug of Smothering  
+---------
+
 
 Large construct, unaligned
 
