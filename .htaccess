@@ -1,16 +1,16 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    #May be required to access sub-directories
-    #RewriteBase /
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ index.php?$1 [L,QSA]
-    RewriteRule ^(config|content|content-sample|lib|vendor)/.* - [R=404,L]
 
-    <IfModule mod_env.c>
-        SetEnv PICO_URL_REWRITING 1
-    </IfModule>
-</IfModule>
+RewriteEngine On
 
-# Prevent file browsing
-Options -Indexes
+# Map http://www.example.com to /build/html.
+RewriteRule ^$ /build/html/ [L]
+
+# Map http://www.example.com/x to /build/html/x unless there is a x in the web root.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/build/html/
+RewriteRule ^(.*)$ /build/html/$1
+
+# Add trailing slash to directories within build/html
+# This does not expose the internal URL.
+RewriteCond %{SCRIPT_FILENAME} -d
+RewriteRule ^build/html/(.*[^/])$ http://www.example.com/$1/ [R=301]
