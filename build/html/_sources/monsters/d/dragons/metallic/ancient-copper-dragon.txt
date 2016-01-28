@@ -1,6 +1,6 @@
-+--------------------------------+
-| Title: Ancient Copper Dragon   |
-+--------------------------------+
+Ancient Copper Dragon  
+---------
+
 
 Gargantuan dragon, chaotic good
 

@@ -1,6 +1,6 @@
-+---------------------+
-| Title: Lizardfolk   |
-+---------------------+
+Lizardfolk  
+---------
+
 
 Medium humanoid (lizardfolk), neutral
 

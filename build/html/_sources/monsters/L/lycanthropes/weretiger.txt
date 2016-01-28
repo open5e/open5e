@@ -1,6 +1,6 @@
-+--------------------+
-| Title: Weretiger   |
-+--------------------+
+Weretiger  
+---------
+
 
 Medium humanoid (human, shapechanger), neutral
 

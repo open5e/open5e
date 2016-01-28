@@ -1,6 +1,6 @@
-+------------------------------+
-| Title: Adult Silver Dragon   |
-+------------------------------+
+Adult Silver Dragon  
+---------
+
 
 Huge dragon, lawful good
 

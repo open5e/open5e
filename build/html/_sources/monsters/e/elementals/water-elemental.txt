@@ -1,6 +1,6 @@
-+--------------------------+
-| Title: Water Elemental   |
-+--------------------------+
+Water Elemental  
+---------
+
 
 Large elemental, neutral
 

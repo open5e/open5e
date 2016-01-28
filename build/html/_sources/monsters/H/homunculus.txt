@@ -1,6 +1,6 @@
-+---------------------+
-| Title: Homunculus   |
-+---------------------+
+Homunculus  
+---------
+
 
 Tiny construct, neutral
 

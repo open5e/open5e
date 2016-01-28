@@ -1,6 +1,6 @@
-+-------------------+
-| Title: Shrieker   |
-+-------------------+
+Shrieker  
+---------
+
 
 Medium plant, unaligned
 

@@ -1,6 +1,6 @@
-+----------------------------+
-| Title: Young Gold Dragon   |
-+----------------------------+
+Young Gold Dragon  
+---------
+
 
 Large dragon, lawful good
 

@@ -1,6 +1,6 @@
-+-----------------------+
-| Title: Barbed Devil   |
-+-----------------------+
+Barbed Devil  
+---------
+
 
 Medium fiend (devil), lawful evil
 

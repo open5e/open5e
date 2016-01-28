@@ -1,6 +1,6 @@
-+------------------+
-| Title: Chimera   |
-+------------------+
+Chimera  
+---------
+
 
 Large monstrosity, chaotic evil
 

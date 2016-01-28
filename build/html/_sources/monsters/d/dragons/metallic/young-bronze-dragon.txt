@@ -1,6 +1,6 @@
-+------------------------------+
-| Title: Young Bronze Dragon   |
-+------------------------------+
+Young Bronze Dragon  
+---------
+
 
 Large dragon, lawful good
 

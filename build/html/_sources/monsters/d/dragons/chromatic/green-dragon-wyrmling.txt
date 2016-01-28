@@ -1,6 +1,6 @@
-+--------------------------------+
-| Title: Green Dragon Wyrmling   |
-+--------------------------------+
+Green Dragon Wyrmling  
+---------
+
 
 Medium dragon, lawful evil
 

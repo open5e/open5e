@@ -1,6 +1,6 @@
-+--------------------------------+
-| Title: Brass Dragon Wyrmling   |
-+--------------------------------+
+Brass Dragon Wyrmling  
+---------
+
 
 Medium dragon, chaotic good
 

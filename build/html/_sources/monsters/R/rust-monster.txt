@@ -1,6 +1,6 @@
-+-----------------------+
-| Title: Rust Monster   |
-+-----------------------+
+Rust Monster  
+---------
+
 
 Medium monstrosity, unaligned
 

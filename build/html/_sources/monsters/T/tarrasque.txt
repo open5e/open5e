@@ -1,6 +1,6 @@
-+--------------------+
-| Title: Tarrasque   |
-+--------------------+
+Tarrasque  
+---------
+
 
 Gargantuan monstrosity (titan), unaligned
 

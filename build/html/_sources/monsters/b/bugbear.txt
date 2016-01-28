@@ -1,6 +1,6 @@
-+------------------+
-| Title: Bugbear   |
-+------------------+
+Bugbear  
+---------
+
 
 Medium humanoid (goblinoid), chaotic evil
 

@@ -1,6 +1,6 @@
-+--------------------+
-| Title: Pit Fiend   |
-+--------------------+
+Pit Fiend  
+---------
+
 
 Large fiend (devil), lawful evil
 

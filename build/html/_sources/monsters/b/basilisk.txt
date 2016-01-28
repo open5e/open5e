@@ -1,6 +1,6 @@
-+-------------------+
-| Title: Basilisk   |
-+-------------------+
+Basilisk  
+---------
+
 
 Medium monstrosity, unaligned
 

@@ -1,6 +1,6 @@
-+----------------------------------+
-| Title: ancient-white-dragon.md   |
-+----------------------------------+
+ancient-white-dragon.md  
+---------
+
 
 Gargantuan dragon, chaotic evil
 

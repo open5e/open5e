@@ -1,6 +1,6 @@
-+--------------+
-| Title: Oni   |
-+--------------+
+Oni  
+---------
+
 
 Large giant, lawful evil
 

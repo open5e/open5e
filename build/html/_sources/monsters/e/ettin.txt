@@ -1,6 +1,6 @@
-+----------------+
-| Title: Ettin   |
-+----------------+
+Ettin  
+---------
+
 
 Large giant, chaotic evil
 

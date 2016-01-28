@@ -1,6 +1,6 @@
-+--------------------+
-| Title: Nightmare   |
-+--------------------+
+Nightmare  
+---------
+
 
 Large fiend, neutral evil
 

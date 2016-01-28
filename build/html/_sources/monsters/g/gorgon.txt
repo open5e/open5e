@@ -1,6 +1,6 @@
-+-----------------+
-| Title: Gorgon   |
-+-----------------+
+Gorgon  
+---------
+
 
 Large monstrosity, unaligned
 

@@ -1,6 +1,6 @@
-+--------------+
-| Title: Imp   |
-+--------------+
+Imp  
+---------
+
 
 Tiny fiend (devil, shapechanger), lawful evil
 

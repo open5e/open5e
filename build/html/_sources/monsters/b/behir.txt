@@ -1,6 +1,6 @@
-+----------------+
-| Title: Behir   |
-+----------------+
+Behir  
+---------
+
 
 Huge monstrosity, neutral evil
 

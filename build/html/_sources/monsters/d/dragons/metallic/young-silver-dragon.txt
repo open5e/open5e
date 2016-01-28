@@ -1,6 +1,6 @@
-+---------------------------------+
-| Title: young-silver-dragon.md   |
-+---------------------------------+
+young-silver-dragon.md  
+---------
+
 
 Large dragon, lawful good
 

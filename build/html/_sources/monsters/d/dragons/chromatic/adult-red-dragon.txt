@@ -1,6 +1,6 @@
-+------------------------------+
-| Title: adult-red-dragon.md   |
-+------------------------------+
+adult-red-dragon.md  
+---------
+
 
 Huge dragon, chaotic evil
 

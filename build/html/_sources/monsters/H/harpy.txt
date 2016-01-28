@@ -1,6 +1,6 @@
-+----------------+
-| Title: Harpy   |
-+----------------+
+Harpy  
+---------
+
 
 Medium monstrosity, chaotic evil
 

@@ -1,6 +1,6 @@
-+-----------------+
-| Title: Otyugh   |
-+-----------------+
+Otyugh  
+---------
+
 
 Large aberration, neutral
 

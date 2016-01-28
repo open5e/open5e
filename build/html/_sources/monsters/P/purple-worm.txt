@@ -1,6 +1,6 @@
-+----------------------+
-| Title: Purple Worm   |
-+----------------------+
+Purple Worm  
+---------
+
 
 Gargantuan monstrosity, unaligned
 

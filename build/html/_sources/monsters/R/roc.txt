@@ -1,6 +1,6 @@
-+--------------+
-| Title: Roc   |
-+--------------+
+Roc  
+---------
+
 
 Gargantuan monstrosity, unaligned
 

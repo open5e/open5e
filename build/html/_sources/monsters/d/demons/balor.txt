@@ -1,6 +1,6 @@
-+----------------+
-| Title: Balor   |
-+----------------+
+Balor  
+---------
+
 
 Huge fiend (demon), chaotic evil
 

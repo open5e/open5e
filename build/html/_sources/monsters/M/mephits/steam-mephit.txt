@@ -1,6 +1,6 @@
-+-----------------------+
-| Title: Steam Mephit   |
-+-----------------------+
+Steam Mephit  
+---------
+
 
 Small elemental, neutral evil
 

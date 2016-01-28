@@ -1,6 +1,6 @@
-+------------------+
-| Title: Pegasus   |
-+------------------+
+Pegasus  
+---------
+
 
 Large celestial, chaotic good
 

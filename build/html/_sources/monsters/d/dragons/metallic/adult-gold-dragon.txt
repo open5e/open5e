@@ -1,6 +1,6 @@
-+----------------------------+
-| Title: Adult Gold Dragon   |
-+----------------------------+
+Adult Gold Dragon  
+---------
+
 
 Huge dragon, lawful good
 

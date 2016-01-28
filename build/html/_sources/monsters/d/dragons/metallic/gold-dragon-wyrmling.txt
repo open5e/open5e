@@ -1,6 +1,6 @@
-+-------------------------------+
-| Title: Gold Dragon Wyrmling   |
-+-------------------------------+
+Gold Dragon Wyrmling  
+---------
+
 
 Medium dragon, lawful good
 

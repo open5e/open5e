@@ -1,6 +1,6 @@
-+-------------------+
-| Title: Marilith   |
-+-------------------+
+Marilith  
+---------
+
 
 Large fiend (demon), chaotic evil
 

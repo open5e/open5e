@@ -1,6 +1,6 @@
-+----------------+
-| Title: Hydra   |
-+----------------+
+Hydra  
+---------
+
 
 Huge monstrosity, unaligned
 
