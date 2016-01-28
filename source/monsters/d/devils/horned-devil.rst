@@ -1,6 +1,6 @@
-+-----------------------+
-| Title: Horned Devil   |
-+-----------------------+
+Horned Devil  
+---------
+
 
 Large fiend (devil), lawful evil
 

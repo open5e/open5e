@@ -1,6 +1,6 @@
-+---------------------+
-| Title: Cockatrice   |
-+---------------------+
+Cockatrice  
+---------
+
 
 Small monstrosity, unaligned
 

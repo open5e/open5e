@@ -1,6 +1,6 @@
-+-------------------+
-| Title: Minotaur   |
-+-------------------+
+Minotaur  
+---------
+
 
 Large monstrosity, chaotic evil
 

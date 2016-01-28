@@ -1,6 +1,6 @@
-+-------------------------------+
-| Title: Ancient Brass Dragon   |
-+-------------------------------+
+Ancient Brass Dragon  
+---------
+
 
 Gargantuan dragon, chaotic good
 

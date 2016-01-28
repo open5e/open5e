@@ -1,6 +1,6 @@
-+------------------------+
-| Title: Violet Fungus   |
-+------------------------+
+Violet Fungus  
+---------
+
 
 Medium plant, unaligned
 

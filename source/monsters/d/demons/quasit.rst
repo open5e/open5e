@@ -1,6 +1,6 @@
-+-----------------+
-| Title: Quasit   |
-+-----------------+
+Quasit  
+---------
+
 
 Tiny fiend (demon, shapechanger), chaotic evil
 

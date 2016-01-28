@@ -1,6 +1,6 @@
-+----------------------------------+
-| Title: Half-Red Dragon Veteran   |
-+----------------------------------+
+Half-Red Dragon Veteran  
+---------
+
 
 Medium humanoid (human), any alignment
 

@@ -1,6 +1,6 @@
-+-------------------+
-| Title: Glabrezu   |
-+-------------------+
+Glabrezu  
+---------
+
 
 Large fiend (demon), chaotic evil
 

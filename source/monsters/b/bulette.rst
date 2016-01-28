@@ -1,6 +1,6 @@
-+------------------+
-| Title: Bulette   |
-+------------------+
+Bulette  
+---------
+
 
 Large monstrosity, unaligned
 

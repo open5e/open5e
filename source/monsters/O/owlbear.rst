@@ -1,6 +1,6 @@
-+------------------+
-| Title: Owlbear   |
-+------------------+
+Owlbear  
+---------
+
 
 Large monstrosity, unaligned
 

@@ -1,6 +1,6 @@
-+------------------+
-| Title: Griffon   |
-+------------------+
+Griffon  
+---------
+
 
 Large monstrosity, unaligned
 

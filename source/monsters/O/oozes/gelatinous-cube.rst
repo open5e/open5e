@@ -1,6 +1,6 @@
-+--------------------------+
-| Title: Gelatinous Cube   |
-+--------------------------+
+Gelatinous Cube  
+---------
+
 
 Large ooze, unaligned
 

@@ -1,6 +1,6 @@
-+-----------------+
-| Title: Stirge   |
-+-----------------+
+Stirge  
+---------
+
 
 Tiny beast, unaligned
 

@@ -1,6 +1,6 @@
-+------------------------------------+
-| Title: Gnome, Deep (Svirfneblin)   |
-+------------------------------------+
+Gnome, Deep (Svirfneblin)  
+---------
+
 
 Small humanoid (gnome), neutral good
 

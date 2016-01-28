@@ -1,6 +1,6 @@
-+-------------------------------+
-| Title: Blue Dragon Wyrmling   |
-+-------------------------------+
+Blue Dragon Wyrmling  
+---------
+
 
 Medium dragon, lawful evil
 

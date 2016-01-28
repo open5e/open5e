@@ -1,6 +1,6 @@
-+---------------+
-| Title: Azer   |
-+---------------+
+Azer  
+---------
+
 
 Medium elemental, lawful neutral
 

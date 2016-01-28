@@ -1,6 +1,6 @@
-+--------------------------------+
-| Title: Black Dragon Wyrmling   |
-+--------------------------------+
+Black Dragon Wyrmling  
+---------
+
 
 Medium dragon, chaotic evil
 

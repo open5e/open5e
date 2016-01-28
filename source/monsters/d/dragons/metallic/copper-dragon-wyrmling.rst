@@ -1,6 +1,6 @@
-+---------------------------------+
-| Title: Copper Dragon Wyrmling   |
-+---------------------------------+
+Copper Dragon Wyrmling  
+---------
+
 
 Medium dragon, chaotic good
 

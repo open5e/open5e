@@ -1,6 +1,6 @@
-+-------------------+
-| Title: Remorhaz   |
-+-------------------+
+Remorhaz  
+---------
+
 
 Huge monstrosity, unaligned
 

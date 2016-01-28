@@ -1,6 +1,6 @@
-+----------------------+
-| Title: Androsphinx   |
-+----------------------+
+Androsphinx  
+---------
+
 
 Large monstrosity, lawful neutral
 

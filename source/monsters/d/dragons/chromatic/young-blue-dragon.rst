@@ -1,6 +1,6 @@
-+----------------------------+
-| Title: Young Blue Dragon   |
-+----------------------------+
+Young Blue Dragon  
+---------
+
 
 Large dragon, lawful evil
 

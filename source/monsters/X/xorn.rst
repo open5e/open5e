@@ -1,6 +1,6 @@
-+---------------+
-| Title: Xorn   |
-+---------------+
+Xorn  
+---------
+
 
 Medium elemental, neutral
 

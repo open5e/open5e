@@ -1,6 +1,6 @@
-+----------------------------------------+
-| Title: Animated Object: Flying Sword   |
-+----------------------------------------+
+Animated Object: Flying Sword  
+---------
+
 
 Small construct, unaligned
 

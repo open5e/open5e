@@ -1,6 +1,6 @@
-+-----------------------+
-| Title: Doppelganger   |
-+-----------------------+
+Doppelganger  
+---------
+
 
 Medium monstrosity (shapechanger), neutral
 

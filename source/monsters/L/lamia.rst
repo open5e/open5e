@@ -1,6 +1,6 @@
-+----------------+
-| Title: Lamia   |
-+----------------+
+Lamia  
+---------
+
 
 Large monstrosity, chaotic evil
 

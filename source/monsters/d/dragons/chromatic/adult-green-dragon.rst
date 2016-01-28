@@ -1,6 +1,6 @@
-+--------------------------------+
-| Title: adult-green-dragon.md   |
-+--------------------------------+
+adult-green-dragon.md  
+---------
+
 
 Huge dragon, lawful evil
 

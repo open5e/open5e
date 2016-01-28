@@ -1,6 +1,6 @@
-+-----------------+
-| Title: Couatl   |
-+-----------------+
+Couatl  
+---------
+
 
 Medium celestial, lawful good
 

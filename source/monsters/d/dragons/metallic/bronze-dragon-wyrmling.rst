@@ -1,6 +1,6 @@
-+---------------------------------+
-| Title: Bronze Dragon Wyrmling   |
-+---------------------------------+
+Bronze Dragon Wyrmling  
+---------
+
 
 Medium dragon, lawful good
 

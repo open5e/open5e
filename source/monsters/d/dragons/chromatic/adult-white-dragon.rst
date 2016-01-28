@@ -1,6 +1,6 @@
-+--------------------------------+
-| Title: adult-white-dragon.md   |
-+--------------------------------+
+adult-white-dragon.md  
+---------
+
 
 Huge dragon, chaotic evil
 

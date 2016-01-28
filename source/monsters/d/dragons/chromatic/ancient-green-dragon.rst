@@ -1,6 +1,6 @@
-+----------------------------------+
-| Title: ancient-green-dragon.md   |
-+----------------------------------+
+ancient-green-dragon.md  
+---------
+
 
 Gargantuan dragon, lawful evil
 

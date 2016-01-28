@@ -1,6 +1,6 @@
-+---------------------+
-| Title: Nalfeshnee   |
-+---------------------+
+Nalfeshnee  
+---------
+
 
 Large fiend (demon), chaotic evil
 

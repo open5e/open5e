@@ -1,6 +1,6 @@
-+-----------------------+
-| Title: Plesiosaurus   |
-+-----------------------+
+Plesiosaurus  
+---------
+
 
 Large beast, unaligned
 

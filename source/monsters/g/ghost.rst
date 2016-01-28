@@ -1,6 +1,6 @@
-+----------------+
-| Title: Ghost   |
-+----------------+
+Ghost  
+---------
+
 
 Medium undead, any alignment
 

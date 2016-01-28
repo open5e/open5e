@@ -1,6 +1,6 @@
-+----------------+
-| Title: Mummy   |
-+----------------+
+Mummy  
+---------
+
 
 Medium undead, lawful evil
 

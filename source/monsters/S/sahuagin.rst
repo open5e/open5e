@@ -1,6 +1,6 @@
-+-------------------+
-| Title: Sahuagin   |
-+-------------------+
+Sahuagin  
+---------
+
 
 Medium humanoid (sahuagin), lawful evil
 

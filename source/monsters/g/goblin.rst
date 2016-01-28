@@ -1,6 +1,6 @@
-+-----------------+
-| Title: Goblin   |
-+-----------------+
+Goblin  
+---------
+
 
 Small humanoid (goblinoid), neutral evil
 

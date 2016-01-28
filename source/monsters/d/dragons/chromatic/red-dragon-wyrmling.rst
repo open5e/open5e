@@ -1,6 +1,6 @@
-+------------------------------+
-| Title: Red Dragon Wyrmling   |
-+------------------------------+
+Red Dragon Wyrmling  
+---------
+
 
 Medium dragon, chaotic evil
 

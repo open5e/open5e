@@ -1,6 +1,6 @@
-+----------------+
-| Title: Dryad   |
-+----------------+
+Dryad  
+---------
+
 
 Medium fey, neutral
 

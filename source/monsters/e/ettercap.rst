@@ -1,6 +1,6 @@
-+-------------------+
-| Title: Ettercap   |
-+-------------------+
+Ettercap  
+---------
+
 
 Medium monstrosity, neutral evil
 

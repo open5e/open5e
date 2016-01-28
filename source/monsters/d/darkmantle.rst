@@ -1,6 +1,6 @@
-+---------------------+
-| Title: Darkmantle   |
-+---------------------+
+Darkmantle  
+---------
+
 
 Small monstrosity, unaligned
 

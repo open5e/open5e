@@ -1,6 +1,6 @@
-+----------------------+
-| Title: Spirit Naga   |
-+----------------------+
+Spirit Naga  
+---------
+
 
 Large monstrosity, chaotic evil
 

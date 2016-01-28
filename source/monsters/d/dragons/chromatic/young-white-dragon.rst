@@ -1,6 +1,6 @@
-+-----------------------------+
-| Title: Young White Dragon   |
-+-----------------------------+
+Young White Dragon  
+---------
+
 
 Large dragon, chaotic evil
 
