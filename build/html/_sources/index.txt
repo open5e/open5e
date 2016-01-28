@@ -16,10 +16,6 @@ Contents:
    
    **/*
    
-   :hidden:
-   
-   **/*
-   
 
 
 
