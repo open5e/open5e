@@ -10,4 +10,5 @@ desktop.ini
 .DS_Store
 ._*
 
-# User content
+# Python
+*.py[cod]
