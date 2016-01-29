@@ -12,3 +12,6 @@ desktop.ini
 
 # Python
 *.py[cod]
+
+# Sphinx
+build/
