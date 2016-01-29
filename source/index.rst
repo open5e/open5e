@@ -13,8 +13,10 @@ Contents:
    :name: mastertoc
    :titlesonly:
    :glob:
+   :maxdepth: 2
    
-   **/*
+   *
+   */index
    
 
 
