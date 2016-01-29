@@ -1,11 +1,8 @@
-Monsters A-Z
-------------
-
 .. toctree::
    :caption: Table of Contents
-   :name: monstertoc
+   :name: mastertoc
    :titlesonly:
    :glob:
-   :maxdepth: 2
-
+   :maxdepth: 1
+   
    */index
