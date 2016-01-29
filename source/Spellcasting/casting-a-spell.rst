@@ -1,4 +1,3 @@
-
 Casting a Spell
 ---------------
 
