@@ -35,24 +35,24 @@ Lifestyle Expenses
 ^^^^^^^^^^^^^^^^^^
 
 +----------------------+---------------------+
-|    **Lifestyle**     |   \ **Price/Day**   |
+|      Lifestyle       |       Price/Day     |
 +======================+=====================+
-|    Wretched    —     |                     |
+|    Wretched          |           --        |
 +----------------------+---------------------+
-|    Squalid    1 sp   |                     |
+|    Squalid           |            1 sp     |
 +----------------------+---------------------+
-|    Poor    2 sp      |                     |
+|    Poor              |            2 sp     |
 +----------------------+---------------------+
-|    Modest    1 gp    |                     |
+|    Modest            |   1 gp              |
 +----------------------+---------------------+
 |    Comfortable       | 2 gp                |
 +----------------------+---------------------+
-|    Wealthy    4 gp   |                     |
+|    Wealthy           |   4 gp              |
 +----------------------+---------------------+
 |    Aristocratic      | 10 gp minimum       |
 +----------------------+---------------------+
 
-***Wretched.*** You live in inhumane conditions. With no place to call
+**Wretched.** You live in inhumane conditions. With no place to call
 home, you shelter wherever you can, sneaking into barns, huddling in old
 crates, and relying on the good graces of people better off than you. A
 wretched lifestyle presents abundant dangers. Violence, disease, and
@@ -60,7 +60,7 @@ hunger follow you wherever you go. Other wretched people covet your
 armor, weapons, and adventuring gear, which represent a fortune by their
 standards. You are beneath the notice of most people.
 
-***Squalid.*** You live in a leaky stable, a mud-­floored hut just
+**Squalid.** You live in a leaky stable, a mud-­floored hut just
 outside town, or a vermin-­infested boarding house in the worst part of
 town. You have shelter from the elements, but you live in a desperate
 and often violent environment, in places rife with disease, hunger, and
@@ -69,7 +69,7 @@ legal protections. Most people at this lifestyle level have suffered
 some terrible setback. They might be disturbed, marked as exiles, or
 suffer from disease.
 
-***Poor.*** A poor lifestyle means going without the comforts available
+**Poor.** A poor lifestyle means going without the comforts available
 in a stable community. Simple food and lodgings, threadbare clothing,
 and unpredictable conditions result in a sufficient, though probably
 unpleasant, experience. Your accommodations might be a room in a
@@ -79,20 +79,20 @@ and disease. People at this lifestyle level tend to be unskilled
 laborers, costermongers, peddlers, thieves, mercenaries, and other
 disreputable types.
 
-***Modest.*** A modest lifestyle keeps you out of the slums and ensures
+**Modest.** A modest lifestyle keeps you out of the slums and ensures
 that you can maintain your equipment. You live in an older part of town,
 renting a room in a boarding house, inn, or temple. You don’t go hungry
 or thirsty, and your living conditions are clean, if simple. Ordinary
 people living modest lifestyles include soldiers with families,
 laborers, students, priests, hedge wizards, and the like.
 
-***Comfortable.*** Choosing a comfortable lifestyle means that you can
+**Comfortable.** Choosing a comfortable lifestyle means that you can
 afford nicer clothing and can easily maintain your equipment. You live
 in a small cottage in a middle-­class neighborhood or in a private room
 at a fine inn. You associate with merchants, skilled tradespeople, and
 military officers.
 
-***Wealthy.*** Choosing a wealthy lifestyle means living a life of
+**Wealthy.** Choosing a wealthy lifestyle means living a life of
 luxury, though you might not have achieved the social status associated
 with the old money of nobility or royalty. You live a lifestyle
 comparable to that of a highly successful merchant, a favored servant of
@@ -101,7 +101,7 @@ respectable lodgings, usually a spacious home in a good part of town or
 a comfortable suite at a fine inn. You likely have a small staff of
 servants.
 
-***Aristocratic.*** You live a life of plenty and comfort. You move in
+**Aristocratic.** You live a life of plenty and comfort. You move in
 circles populated by the most powerful people in the community. You have
 excellent lodgings, perhaps a townhouse in the nicest part of town or
 rooms in the finest inn. You dine at the best restaurants, retain the
@@ -140,57 +140,57 @@ total lifestyle expenses.
 Food, Drink, and Lodging
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-+------------------+------------------------+
-|    **Item**      |   \ **Cost**           |
-+==================+========================+
-|    **Ale**       |                        |
-+------------------+------------------------+
-|    Gallon        | 2 sp                   |
-+------------------+------------------------+
-|    Mug           | 4 cp                   |
-+------------------+------------------------+
-|    Banquet (     | per person)    10 gp   |
-+------------------+------------------------+
-|    Bread, lo     | af    2 cp             |
-+------------------+------------------------+
-|    Cheese, h     | unk    1 sp            |
-+------------------+------------------------+
-|    \*\*Inn sta   | y (per day)\*\*        |
-+------------------+------------------------+
-|    Squalid       | 7 cp                   |
-+------------------+------------------------+
-|    Poor   1 s    | p                      |
-+------------------+------------------------+
-|    Modest   5    | sp                     |
-+------------------+------------------------+
-|    Comfortab     | le   8 sp              |
-+------------------+------------------------+
-|    Wealthy       | 2 gp                   |
-+------------------+------------------------+
-|    Aristocra     | tic   4 gp             |
-+------------------+------------------------+
-|    \*\*Meals (   | per day)\*\*           |
-+------------------+------------------------+
-|    Squalid       | 3 cp                   |
-+------------------+------------------------+
-|    Poor   6 c    | p                      |
-+------------------+------------------------+
-|    Modest   3    | sp                     |
-+------------------+------------------------+
-|    Comfortab     | le   5 sp              |
-+------------------+------------------------+
-|    Wealthy       | 8 sp                   |
-+------------------+------------------------+
-|    Aristocra     | tic   2 gp             |
-+------------------+------------------------+
-|    Meat, chu     | nk   3 sp              |
-+------------------+------------------------+
-|    **Wine**      |                        |
-+------------------+------------------------+
-|    Common (p     | itcher)   2 sp         |
-+------------------+------------------------+
-|    Fine (bot     | tle)   10 gp           |
-+------------------+------------------------+
++----------------------+------------------------+
+|    Item              |    Cost                |
++======================+========================+
+|        *Ale*                                  |
++----------------------+------------------------+
+|        Gallon        | 2 sp                   |
++----------------------+------------------------+
+|        Mug           | 4 cp                   |
++----------------------+------------------------+
+| Banquet (per person) |         10 gp          |
++----------------------+------------------------+
+|        Bread, loaf   |       2 cp             |
++----------------------+------------------------+
+|        Cheese, hunk  |        1 sp            |
++----------------------+------------------------+
+| *Inn stay (per day)*                          |
++----------------------+------------------------+
+|        Squalid       | 7 cp                   |
++----------------------+------------------------+
+|        Poor          | 1 sp                   |
++----------------------+------------------------+
+|        Modest        | 5 sp                   |
++----------------------+------------------------+
+|        Comfortable   |      8 sp              |
++----------------------+------------------------+
+|        Wealthy       | 2 gp                   |
++----------------------+------------------------+
+|        Aristocratic  |       4 gp             |
++----------------------+------------------------+
+|        *Meals (per day)*                      |
++----------------------+------------------------+
+|        Squalid       | 3 cp                   |
++----------------------+------------------------+
+|        Poor          | 6 cp                   |
++----------------------+------------------------+
+|        Modest        | 3 sp                   |
++----------------------+------------------------+
+|        Comfortable   |      5 sp              |
++----------------------+------------------------+
+|        Wealthy       | 8 sp                   |
++----------------------+------------------------+
+|        Aristocratic  |       2 gp             |
++----------------------+------------------------+
+|        Meat, chunk   |      3 sp              |
++----------------------+------------------------+
+|        *Wine*                                 |
++----------------------+------------------------+
+|   Common (pitcher)   |  2 sp                  |
++----------------------+------------------------+
+|    Fine (bottle)     |        10 gp           |
++----------------------+------------------------+
 
 Services
 ~~~~~~~~
@@ -222,25 +222,25 @@ Services
 ^^^^^^^^
 
 +----------------------+----------------------+
-|    **Service**\      | **Pay**              |
+|      Service         |   Pay                |
 +======================+======================+
-|    \*\*Coach cab\*   | \*                   |
+|    *Coach cab*                              |
 +----------------------+----------------------+
-|    Between town      | s   3 cp per mile    |
+|    Between towns     |  3 cp per mile       |
 +----------------------+----------------------+
-|    Within a cit      | y   1 cp             |
+|    Within a city     |     1 cp             |
 +----------------------+----------------------+
-|    **Hireling**      |                      |
+|    *Hireling*                               |
 +----------------------+----------------------+
-|    Skilled   2 g     | p per day            |
+|    Skilled           | 2 gp per day         |
 +----------------------+----------------------+
-|    Untrained   2     | sp per day           |
+|    Untrained         | 2 sp per day         |
 +----------------------+----------------------+
-|    Messenger   2     | cp per mile          |
+|    Messenger         | 2 cp per mile        |
 +----------------------+----------------------+
-|    Road or gate      | toll   1 cp          |
+|    Road or gate toll |    1 cp              |
 +----------------------+----------------------+
-|    Ship’s passa      | ge   1 sp per mile   |
+|    Ship’s passage    |      1 sp per mile   |
 +----------------------+----------------------+
 
 Skilled hirelings include anyone hired to perform a service that

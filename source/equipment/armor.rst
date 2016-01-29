@@ -13,7 +13,7 @@ supplement their armor with a shield.
 The Armor table shows the cost, weight, and other properties of the
 common types of armor worn in fantasy gaming worlds.
 
-***Armor Proficiency.*** Anyone can put on a suit of armor or strap a
+**Armor Proficiency.** Anyone can put on a suit of armor or strap a
 shield to an arm. Only those proficient in the armor’s use know how to
 wear it effectively, however. Your class gives you proficiency with
 certain types of armor. If you wear armor that you lack proficiency
@@ -21,19 +21,19 @@ with, you have disadvantage on any ability check, saving throw, or
 attack roll that involves Strength or Dexterity, and you can’t cast
 spells.
 
-***Armor Class (AC).*** Armor protects its wearer from attacks. The
+**Armor Class (AC).** Armor protects its wearer from attacks. The
 armor (and shield) you wear determines your base Armor Class.
 
-***Heavy Armor.*** Heavier armor interferes with the wearer’s ability to
+**Heavy Armor.** Heavier armor interferes with the wearer’s ability to
 move quickly, stealthily, and freely. If the Armor table shows “Str 13”
 or “Str 15” in the Strength column for an armor type, the armor reduces
 the wearer’s speed by 10 feet unless the wearer has a Strength score
 equal to or higher than the listed score.
 
-***Stealth.*** If the Armor table shows “Disadvantage” in the Stealth
+**Stealth.** If the Armor table shows “Disadvantage” in the Stealth
 column, the wearer has disadvantage on Dexterity (Stealth) checks.
 
-***Shields.*** A shield is made from wood or metal and is carried in one
+**Shields.** A shield is made from wood or metal and is carried in one
 hand. Wielding a shield increases your Armor Class by 2. You can benefit
 from only one shield at a time.
 
@@ -45,14 +45,14 @@ adventurers since it offers some protection without sacrificing
 mobility. If you wear light armor, you add your Dexterity modifier to
 the base number from your armor type to determine your Armor Class.
 
-***Padded.*** Padded armor consists of quilted layers of cloth and
+**Padded.** Padded armor consists of quilted layers of cloth and
 batting.
 
-***Leather.*** The breastplate and shoulder protectors of this armor are
+**Leather.** The breastplate and shoulder protectors of this armor are
 made of leather that has been stiffened by being boiled in oil. The rest
 of the armor is made of softer and more flexible materials.
 
-***Studded Leather.*** Made from tough but flexible leather, studded
+**Studded Leather.** Made from tough but flexible leather, studded
 leather is reinforced with close-­set rivets or spikes.
 
 Medium Armor
@@ -63,25 +63,25 @@ impairs movement more. If you wear medium armor, you add your Dexterity
 modifier, to a maximum of +2, to the base number from your armor type to
 determine your Armor Class.
 
-***Hide.*** This crude armor consists of thick furs and pelts. It is
+**Hide.** This crude armor consists of thick furs and pelts. It is
 commonly worn by barbarian tribes, evil humanoids, and other folk who
 lack access to the tools and materials needed to create better armor.
 
-***Chain Shirt.*** Made of interlocking metal rings, a chain shirt is
+**Chain Shirt.** Made of interlocking metal rings, a chain shirt is
 worn between layers of clothing or leather. This armor offers modest
 protection to the wearer’s upper body and allows the sound of the rings
 rubbing against one another to be muffled by outer layers.
 
-***Scale Mail.*** This armor consists of a coat and leggings (and
+**Scale Mail.** This armor consists of a coat and leggings (and
 perhaps a separate skirt) of leather covered with overlapping pieces of
 metal, much like the scales of a fish. The suit includes gauntlets.
 
-***Breastplate.*** This armor consists of a fitted metal chest piece
+**Breastplate.** This armor consists of a fitted metal chest piece
 worn with supple leather. Although it leaves the legs and arms
 relatively unprotected, this armor provides good protection for the
 wearer’s vital organs while leaving the wearer relatively unencumbered.
 
-***Half Plate.*** Half plate consists of shaped metal plates that cover
+**Half Plate.** Half plate consists of shaped metal plates that cover
 most of the wearer’s body. It does not include leg protection beyond
 simple greaves that are attached with leather straps.
 
@@ -97,20 +97,20 @@ Heavy armor doesn’t let you add your Dexterity modifier to your Armor
 Class, but it also doesn’t penalize you if your Dexterity modifier is
 negative.
 
-***Ring Mail.*** This armor is leather armor with heavy rings sewn into
+**Ring Mail.** This armor is leather armor with heavy rings sewn into
 it. The rings help reinforce the armor against blows from swords and
 axes. Ring mail is inferior to chain mail, and it's usually worn only by
 those who can’t afford better armor.
 
-***Chain Mail.*** Made of interlocking metal rings, chain mail includes
+**Chain Mail.** Made of interlocking metal rings, chain mail includes
 a layer of quilted fabric worn underneath the mail to prevent chafing
 and to cushion the impact of blows. The suit includes gauntlets.
 
-***Splint.*** This armor is made of narrow vertical strips of metal
+**Splint.** This armor is made of narrow vertical strips of metal
 riveted to a backing of leather that is worn over cloth padding.
 Flexible chain mail protects the joints.
 
-***Plate.*** Plate consists of shaped, interlocking metal plates to
+**Plate.** Plate consists of shaped, interlocking metal plates to
 cover the entire body. A suit of plate includes gauntlets, heavy leather
 boots, a visored helmet, and thick layers of padding underneath the
 armor. Buckles and straps distribute the weight over the body.
@@ -119,31 +119,31 @@ Armor
 ^^^^^
 
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
-|    **Armor**          |    **Cost**   |    **Armor Class (AC)**            | **Strength**      | **Stealth**       | **Weight**   |
+|    Armor              |    Cost       |    Armor Class (AC)                |     Strength      | Stealth           | Weight       |
 +=======================+===============+====================================+===================+===================+==============+
-|    **Light Armor**    |               |                                    |                   |                   |              |
+|    *Light Armor*                                                                                                                  |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
-|    Padded             |    5 gp       |    11 + Dex modifier — Disadvant   | age    -          | -                 | 8 lb.        |
+|    Padded             |    5 gp       |  11 + Dex modifier -- Disadvantage |    \--            | \--               | 8 lb.        |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
-|    Leather            |    10 gp      |    11 + Dex modifier               | —                 | —                 | 10 lb.       |
+|    Leather            |    10 gp      |    11 + Dex modifier               | \--               | \--               | 10 lb.       |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
-|    Studded leather    |    45 gp      |    12 + Dex modifier               | —                 | —                 | 13 lb.       |
+|    Studded leather    |    45 gp      |    12 + Dex modifier               | \--               | \--               | 13 lb.       |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
-|    **Medium Armor**   |               |                                    |                   |                   |              |
+|    *Medium Armor*                                                                                                                 |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
-|    Hide               |    10 gp      |    12 + Dex modifier (max 2)       | —                 | —                 | 12 lb.       |
+|    Hide               |    10 gp      |    12 + Dex modifier (max 2)       | \--               | \--               | 12 lb.       |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
-|    Chain shirt        |    50 gp      |    13 + Dex modifier (max 2)       | —                 | —                 | 20 lb.       |
+|    Chain shirt        |    50 gp      |    13 + Dex modifier (max 2)       | \--               | \--               | 20 lb.       |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
-|    Scale mail         |    50 gp      |    14 + Dex modifier (max 2)       | —                 | Disadvantage      | 45 lb.       |
+|    Scale mail         |    50 gp      |    14 + Dex modifier (max 2)       | \--               | Disadvantage      | 45 lb.       |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
-|    Breastplate        |    400 gp     |    14 + Dex modifier (max 2)       | —                 | —                 | 20 lb.       |
+|    Breastplate        |    400 gp     |    14 + Dex modifier (max 2)       | \--               | \--               | 20 lb.       |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
-|    Half plate         |    750 gp     |    15 + Dex modifier (max 2)       | —                 | Disadvantage      | 40 lb.       |
+|    Half plate         |    750 gp     |    15 + Dex modifier (max 2)       | \--               | Disadvantage      | 40 lb.       |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
-|    **Heavy Armor**    |               |                                    |                   |                   |              |
+|    *Heavy Armor*                                                                                                                  |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
-|    Ring mail          |    30 gp      |    14                              | —                 | Disadvantage      | 40 lb.       |
+|    Ring mail          |    30 gp      |    14                              | \--               | Disadvantage      | 40 lb.       |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
 |    Chain mail         |    75 gp      |    16                              | Str 13            | Disadvantage      | 55 lb.       |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
@@ -151,9 +151,9 @@ Armor
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
 |    Plate              |    1,500 gp   |    18                              | Str 15            | Disadvantage      | 65 lb.       |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
-|    **Shield**         |               |                                    |                   |                   |              |
+|    *Shield*                                                                                                                       |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
-|    Shield             |    10 gp      |    +2                              | —                 | —                 | 6 lb.        |
+|    Shield             |    10 gp      |    +2                              | \--               | \--               | 6 lb.        |
 +-----------------------+---------------+------------------------------------+-------------------+-------------------+--------------+
 
 Getting Into and Out of Armor
@@ -161,20 +161,20 @@ Getting Into and Out of Armor
 
 The time it takes to don or doff armor depends on the armor’s category.
 
-***Don.*** This is the time it takes to put on armor. You benefit from
+**Don.** This is the time it takes to put on armor. You benefit from
 the armor’s AC only if you take the full time to don the suit of armor.
 
-***Doff.*** This is the time it takes to take off armor. If you have
+**Doff.** This is the time it takes to take off armor. If you have
 help, reduce this time by half.
 
 **Donning and Doffing Armor**
 
 +----------------------+----------------------+----------------+
-|    **Category**      | **Don**   \*\*Doff   | \*\*           |
+|    Category          | Don                  |  Doff          |
 +======================+======================+================+
-|    Light Armor   1   | minute   1 minu      | te             |
+|    Light Armor       | 1 minute             |  1 minute      |
 +----------------------+----------------------+----------------+
-|    Medium Armor      | 5 minutes   1 mi     | nute           |
+|    Medium Armor      | 5 minutes            | 1 minute       |
 +----------------------+----------------------+----------------+
 |    Heavy Armor       |    10 minutes        |    5 minutes   |
 +----------------------+----------------------+----------------+

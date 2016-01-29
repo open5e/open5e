@@ -19,22 +19,22 @@ Acquiring such a mount often means securing an egg and raising the
 creature yourself, making a bargain with a powerful entity, or
 negotiating with the mount itself.
 
-***Barding.*** Barding is armor designed to protect an animal’s head,
+**Barding.** Barding is armor designed to protect an animal’s head,
 neck, chest, and body. Any type of armor shown on the Armor table can be
 purchased as barding. The cost is four times the equivalent armor made
 for humanoids, and it weighs twice as much.
 
-***Saddles.*** A military saddle braces the rider, helping you keep your
+**Saddles.** A military saddle braces the rider, helping you keep your
 seat on an active mount in battle. It gives you advantage on any check
 you make to remain mounted. An exotic saddle is required for riding any
 aquatic or flying mount.
 
-***Vehicle Proficiency.*** If you have proficiency with a certain kind
+**Vehicle Proficiency.** If you have proficiency with a certain kind
 of vehicle (land or water), you can add your proficiency bonus to any
 check you make to control that kind of vehicle in difficult
 circumstances.
 
-***Rowed Vessels.*** Keelboats and rowboats are used on lakes and
+**Rowed Vessels.** Keelboats and rowboats are used on lakes and
 rivers. If going downstream, add the speed of the current (typically 3
 miles per hour) to the speed of the vehicle. These vehicles can’t be
 rowed against any significant current, but they can be pulled upstream
@@ -45,7 +45,7 @@ Mounts and Other Animals
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 +---------------------+---------------+----------------+----------------------------+
-|    **Item**         |    **Cost**   |    **Speed**   |    **Carrying Capacity**   |
+|      Item           |      Cost     |      Speed     |      Carrying Capacity     |
 +=====================+===============+================+============================+
 |    Camel            |    50 gp      |    50 ft.      |    480 lb.                 |
 +---------------------+---------------+----------------+----------------------------+
@@ -68,7 +68,7 @@ Tack, Harness, and Drawn Vehicles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +-------------------------+-------------------+--------------+
-|    **Item**             |   \ **Cost**      | **Weight**   |
+|      Item               |       Cost        |   Weight     |
 +=========================+===================+==============+
 |    Barding              |    ×4             | ×2           |
 +-------------------------+-------------------+--------------+
@@ -82,7 +82,7 @@ Tack, Harness, and Drawn Vehicles
 +-------------------------+-------------------+--------------+
 |    Feed (per day)       |   5 cp            | 10 lb.       |
 +-------------------------+-------------------+--------------+
-|    **Saddle**           |                   |              |
+|    *Saddle*                                                |
 +-------------------------+-------------------+--------------+
 |    Exotic               |   60 gp           | 40 lb.       |
 +-------------------------+-------------------+--------------+
@@ -96,7 +96,7 @@ Tack, Harness, and Drawn Vehicles
 +-------------------------+-------------------+--------------+
 |    Sled                 |   20 gp           | 300 lb.      |
 +-------------------------+-------------------+--------------+
-|    Stabling (per day)   |   5 sp            | —            |
+|    Stabling (per day)   |   5 sp            | --           |
 +-------------------------+-------------------+--------------+
 |    Wagon                |   35 gp           | 400 lb.      |
 +-------------------------+-------------------+--------------+
@@ -105,17 +105,17 @@ Waterborne Vehicles
 ^^^^^^^^^^^^^^^^^^^
 
 +-----------------+----------------+-----------------+
-|    **Item**     |   \ **Cost**   |   \ **Speed**   |
+|      Item       |       Cost     |       Speed     |
 +=================+================+=================+
-|    Galley   3   | 0,000 gp       | 4 mph           |
+|    Galley       | 30,000 gp      | 4 mph           |
 +-----------------+----------------+-----------------+
 |    Keelboat     |   3,000 gp     |   1 mph         |
 +-----------------+----------------+-----------------+
 |    Longship     |   10,000 gp    |   3 mph         |
 +-----------------+----------------+-----------------+
-|    Rowboat      | 50 gp   1½     | mph             |
+|    Rowboat      | 50 gp          | 1½ mph          |
 +-----------------+----------------+-----------------+
-|    Sailing s    | hip   10,00    | 0 gp   2 mph    |
+|    Sailing ship |    10,000 gp   | 2 mph           |
 +-----------------+----------------+-----------------+
 |    Warship      | 25,000 gp      |   2½ mph        |
 +-----------------+----------------+-----------------+

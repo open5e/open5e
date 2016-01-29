@@ -5,7 +5,6 @@ Common coins come in several different denominations based on the
 relative worth of the metal from which they are made. The three most
 common coins are the gold piece (gp), the silver piece (sp), and the
 copper piece (cp). With one gold piece, a character can buy a bedroll,
-
 50 feet of good rope, or a goat. A skilled (but not exceptional) artisan
 can earn one gold piece a day. The gold piece is the standard unit of
 measure for wealth, even if the coin itself is not commonly used. When
@@ -37,7 +36,7 @@ Standard Exchange Rates
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 +--------------------+-------------+-------------+-------------+-------------+--------------+
-|    **Coin**        |    **CP**   |    **SP**   |    **EP**   |    **GP**   |    **PP**    |
+|      Coin          |      CP     |      SP     |      EP     |      GP     |      PP      |
 +====================+=============+=============+=============+=============+==============+
 |    Copper (cp)     |    1        |    1/10     |    1/50     |    1/100    |    1/1,000   |
 +--------------------+-------------+-------------+-------------+-------------+--------------+
