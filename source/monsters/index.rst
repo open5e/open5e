@@ -1,5 +1,6 @@
-Monsters A-Z
-------------
+Monsters
+--------
+
 .. toctree::
    :caption: Table of Contents
    :name: mastertoc
@@ -7,4 +8,5 @@ Monsters A-Z
    :glob:
    :maxdepth: 1
    
-   */index
+   *
+   monsters_a-z/index
