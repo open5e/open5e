@@ -1,5 +1,5 @@
-Gameplay Mechanics
-------------------
+H Monsters
+----------
 
 .. toctree::
    :caption: Table of Contents
@@ -8,4 +8,4 @@ Gameplay Mechanics
    :glob:
    :maxdepth: 1
    
-   *
+   **/*

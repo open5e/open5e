@@ -1,6 +1,3 @@
-Gameplay Mechanics
-------------------
-
 .. toctree::
    :caption: Table of Contents
    :name: mastertoc
@@ -8,4 +5,4 @@ Gameplay Mechanics
    :glob:
    :maxdepth: 1
    
-   *
+   */index

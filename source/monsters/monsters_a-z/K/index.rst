@@ -1,5 +1,5 @@
-Gameplay Mechanics
-------------------
+K Monsters
+----------
 
 .. toctree::
    :caption: Table of Contents
