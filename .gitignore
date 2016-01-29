@@ -15,3 +15,7 @@ desktop.ini
 
 # Sphinx
 build/
+
+# build script
+
+publish
