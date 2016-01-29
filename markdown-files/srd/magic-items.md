@@ -1,9 +1,5 @@
----
-Title: Magic Items
----
-
 Magic Items
-===========
+-----------
 
 Magic items are presented in alphabetical order. A magic item’s
 description gives the item’s name, its category, its rarity, and its
@@ -104,13 +100,13 @@ shown in the Apparatus of the Crab Levers table.
 
 #### Apparatus of the Crab Levers
 
- **Lever Up Down**
+**Lever Up Down**
 
- 1 Legs and tail extend, Legs and tail retract,
+1 Legs and tail extend, Legs and tail retract,
 
- tance to eoning, type or
+tance to eoning, type or
 
- target. Hit: 7 (2d6) bludgeoning damage.
+target. Hit: 7 (2d6) bludgeoning damage.
 
 6.  The apparatus walks or swims forward.
 
@@ -118,93 +114,93 @@ shown in the Apparatus of the Crab Levers table.
 
 8.  Eyelike fixtures emit
 
- bright light in a 30-­‐foot radius and dim light for an additional 30
- feet.
+bright light in a 30-­‐foot radius and dim light for an additional 30
+feet.
 
 6.  The apparatus sinks as
 
- much as 20 feet in liquid.
+much as 20 feet in liquid.
 
 6.  The rear hatch unseals and opens.
 
 #### Armor, +1, +2, or +3
 
- target. Hit: The target is grappled (escape DC 15). The apparatus
- walks or swims backward.
+target. Hit: The target is grappled (escape DC 15). The apparatus
+walks or swims backward.
 
- The apparatus turns 90 degrees right.
+The apparatus turns 90 degrees right.
 
- The light turns off.
+The light turns off.
 
- The apparatus rises up to 20 feet in liquid.
+The apparatus rises up to 20 feet in liquid.
 
- The rear hatch closes and seals.
+The rear hatch closes and seals.
 
- is revealed only when an *identify* spell is cast on the armor or you
- attune to it. Attuning to the armor curses you until you are targeted
- by the *remove curse* spell or similar magic; removing the armor fails
- to end the curse. While cursed, you have vulnerability to two of the
- three damage types associated with the armor (not the one to which it
- grants resistance).
+is revealed only when an *identify* spell is cast on the armor or you
+attune to it. Attuning to the armor curses you until you are targeted
+by the *remove curse* spell or similar magic; removing the armor fails
+to end the curse. While cursed, you have vulnerability to two of the
+three damage types associated with the armor (not the one to which it
+grants resistance).
 
 #### Arrow-Catching Shield
 
- *Armor (shield), rare (requires attunement)*
+*Armor (shield), rare (requires attunement)*
 
- You gain a +2 bonus to AC against ranged attacks while you wield this
- shield. This bonus is in addition to the shield’s normal bonus to AC.
- In addition, whenever an attacker makes a ranged attack against a
- target within 5 feet of you, you can use your
+You gain a +2 bonus to AC against ranged attacks while you wield this
+shield. This bonus is in addition to the shield’s normal bonus to AC.
+In addition, whenever an attacker makes a ranged attack against a
+target within 5 feet of you, you can use your
 
- *Armor (light, medium, or heavy), rare (+1), very rare (+2), or
- legendary (+3)*
+*Armor (light, medium, or heavy), rare (+1), very rare (+2), or
+legendary (+3)*
 
- You have a bonus to AC while wearing this armor. The bonus is
- determined by its rarity.
+You have a bonus to AC while wearing this armor. The bonus is
+determined by its rarity.
 
 #### Armor of Invulnerability
 
- *Armor (plate), legendary (requires attunement)*
+*Armor (plate), legendary (requires attunement)*
 
- You have resistance to nonmagical damage while you wear this armor.
- Additionally, you can use an action to make yourself immune to
- nonmagical damage for 10 minutes or until you are no longer wearing
- the armor. Once this special action is used, it can’t be used again
- until the next dawn.
+You have resistance to nonmagical damage while you wear this armor.
+Additionally, you can use an action to make yourself immune to
+nonmagical damage for 10 minutes or until you are no longer wearing
+the armor. Once this special action is used, it can’t be used again
+until the next dawn.
 
 #### Armor of Resistance
 
- *Armor (light, medium, or heavy), rare (requires attunement)*
+*Armor (light, medium, or heavy), rare (requires attunement)*
 
- You have resistance to one type of damage while you wear this armor.
- The GM chooses the type or determines it randomly from the options
- below.
+You have resistance to one type of damage while you wear this armor.
+The GM chooses the type or determines it randomly from the options
+below.
 
- reaction to become the target of the attack instead.
+reaction to become the target of the attack instead.
 
 #### Arrow of Slaying
 
- *Weapon (arrow), very rare*
+*Weapon (arrow), very rare*
 
- An *arrow of slaying* is a magic weapon meant to slay a particular
- kind of creature. Some are more focused than others; for example,
- there are both *arrows of dragon slaying* and *arrows of blue dragon
- slaying*. If a creature belonging to the type, race, or group
- associated with an *arrow of slaying* takes damage from the arrow, the
- creature must make a DC 17 Constitution saving throw, taking an extra
- 6d10 piercing damage on a failed save, or half as much extra damage on
- a successful one.
+An *arrow of slaying* is a magic weapon meant to slay a particular
+kind of creature. Some are more focused than others; for example,
+there are both *arrows of dragon slaying* and *arrows of blue dragon
+slaying*. If a creature belonging to the type, race, or group
+associated with an *arrow of slaying* takes damage from the arrow, the
+creature must make a DC 17 Constitution saving throw, taking an extra
+6d10 piercing damage on a failed save, or half as much extra damage on
+a successful one.
 
- Once an *arrow of slaying* deals its extra damage to
+Once an *arrow of slaying* deals its extra damage to
 
- a creature, it becomes a nonmagical arrow.
+a creature, it becomes a nonmagical arrow.
 
- Other types of magic ammunition of this kind exist, such as *bolts of
- slaying* meant for a crossbow, though arrows are most common.
+Other types of magic ammunition of this kind exist, such as *bolts of
+slaying* meant for a crossbow, though arrows are most common.
 
 #### Bag of Beans
 
- *Wondrous item, rare*
+*Wondrous item, rare*
 
 Inside this heavy cloth bag are 3d4 dry beans. The bag weighs 1/2 pound
 plus 1/4 pound for each bean it contains.
@@ -221,67 +217,67 @@ water it, the bean produces an effect 1 minute later from the ground
 where it was planted. The GM can choose an effect from the following
 table, determine it randomly, or create an effect.
 
- **d100 Effect**
+**d100 Effect**
 
- 01 5d4 toadstools sprout. If a creature eats a toadstool, roll any
- die. On an odd roll, the eater must succeed on a DC 15 Constitution
- saving throw or take 5d6 poison damage and become poisoned for 1 hour.
- On an even roll, the eater gains 5d6 temporary hit points for 1 hour.
+01 5d4 toadstools sprout. If a creature eats a toadstool, roll any
+die. On an odd roll, the eater must succeed on a DC 15 Constitution
+saving throw or take 5d6 poison damage and become poisoned for 1 hour.
+On an even roll, the eater gains 5d6 temporary hit points for 1 hour.
 
- 02–10 A geyser erupts and spouts water, beer, berry juice, tea,
- vinegar, wine, or oil (GM’s choice) 30 feet into the air for 1d12
- rounds.
+02–10 A geyser erupts and spouts water, beer, berry juice, tea,
+vinegar, wine, or oil (GM’s choice) 30 feet into the air for 1d12
+rounds.
 
- 11–20 A treant sprouts. There’s a 50 percent chance that the treant is
- chaotic evil and attacks.
+11–20 A treant sprouts. There’s a 50 percent chance that the treant is
+chaotic evil and attacks.
 
- 21–30 An animate, immobile stone statue in your
+21–30 An animate, immobile stone statue in your
 
- likeness rises. It makes verbal threats against you. If you leave it
- and others come near, it describes you as the most heinous of villains
- and directs the newcomers to find and attack you. If you are on the
- same plane of existence as the statue, it knows where you are. The
- statue becomes inanimate after 24 hours.
+likeness rises. It makes verbal threats against you. If you leave it
+and others come near, it describes you as the most heinous of villains
+and directs the newcomers to find and attack you. If you are on the
+same plane of existence as the statue, it knows where you are. The
+statue becomes inanimate after 24 hours.
 
- 31–40 A campfire with blue flames springs forth and burns for 24 hours
- (or until it is extinguished).
+31–40 A campfire with blue flames springs forth and burns for 24 hours
+(or until it is extinguished).
 
- 41–50 1d6 + 6 shriekers sprout
+41–50 1d6 + 6 shriekers sprout
 
- 51–60 1d4 + 8 bright pink toads crawl forth. Whenever a toad is
- touched, it transforms into a Large or smaller monster of the GM’s
- choice. The monster remains for 1 minute, then disappears in a puff of
- bright pink smoke.
+51–60 1d4 + 8 bright pink toads crawl forth. Whenever a toad is
+touched, it transforms into a Large or smaller monster of the GM’s
+choice. The monster remains for 1 minute, then disappears in a puff of
+bright pink smoke.
 
- 61–70 A hungry bulette burrows up and attacks. 71–80 A fruit tree
- grows. It has 1d10 + 20 fruit, 1d8 of
+61–70 A hungry bulette burrows up and attacks. 71–80 A fruit tree
+grows. It has 1d10 + 20 fruit, 1d8 of
 
- which act as randomly determined magic
+which act as randomly determined magic
 
- potions, while one acts as an ingested poison of the GM’s choice. The
- tree vanishes after 1 hour. Picked fruit remains, retaining any magic
- for 30 days.
+potions, while one acts as an ingested poison of the GM’s choice. The
+tree vanishes after 1 hour. Picked fruit remains, retaining any magic
+for 30 days.
 
- 81–90 A nest of 1d4 + 3 eggs springs up. Any creature
+81–90 A nest of 1d4 + 3 eggs springs up. Any creature
 
- that eats an egg must make a DC 20 Constitution saving throw. On a
- successful save, a creature permanently increases its lowest ability
- score by 1, randomly choosing among equally low scores. On a failed
- save, the creature takes 10d6 force damage from an internal magical
- explosion.
+that eats an egg must make a DC 20 Constitution saving throw. On a
+successful save, a creature permanently increases its lowest ability
+score by 1, randomly choosing among equally low scores. On a failed
+save, the creature takes 10d6 force damage from an internal magical
+explosion.
 
- 91–99 A pyramid with a 60-­‐foot-­‐square base bursts upward. Inside
- is a sarcophagus containing a mummy lord. The pyramid is treated as
- the mummy lord’s lair, and its sarcophagus contains treasure of the
- GM’s choice.
+91–99 A pyramid with a 60-­‐foot-­‐square base bursts upward. Inside
+is a sarcophagus containing a mummy lord. The pyramid is treated as
+the mummy lord’s lair, and its sarcophagus contains treasure of the
+GM’s choice.
 
- 00 A giant beanstalk sprouts, growing to a height of the GM’s choice.
- The top leads where the GM chooses, such as to a great view, a cloud
- giant’s castle, or a different plane of existence.
+00 A giant beanstalk sprouts, growing to a height of the GM’s choice.
+The top leads where the GM chooses, such as to a great view, a cloud
+giant’s castle, or a different plane of existence.
 
 #### Bag of Devouring
 
- *Wondrous item, very rare*
+*Wondrous item, very rare*
 
 This bag superficially resembles a *bag of holding* but is a feeding
 orifice for a gigantic extradimensional creature. Turning the bag inside
@@ -308,7 +304,7 @@ within it is transported to a random location on the Astral Plane.
 
 #### Bag of Holding
 
- *Wondrous item, uncommon*
+*Wondrous item, uncommon*
 
 This bag has an interior space considerably larger than its outside
 dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The
@@ -335,13 +331,13 @@ reopened.
 
 #### Bag of Tricks
 
- *Wondrous item, uncommon*
+*Wondrous item, uncommon*
 
 This ordinary bag, made from gray, rust, or tan cloth, appears empty.
 Reaching inside the bag, however, reveals the presence of a small, fuzzy
 object. The bag weighs 1/2 pound.
 
- You can use an action to pull the fuzzy object from
+You can use an action to pull the fuzzy object from
 
 the bag and throw it up to 20 feet. When the object lands, it transforms
 into a creature you determine by rolling a d8 and consulting the table
@@ -447,7 +443,7 @@ While wearing this belt, you gain the following benefits:
 -   Your Constitution score increases by 2, to a maximum of 20.
 
 -   You have advantage on Charisma (Persuasion) checks made to interact
-    > with dwarves.
+> with dwarves.
 
 > In addition, while attuned to the belt, you have a 50 percent chance
 > each day at dawn of growing a full beard if you’re capable of growing
@@ -457,7 +453,7 @@ While wearing this belt, you gain the following benefits:
 > while wearing the belt:
 
 -   You have advantage on saving throws against poison, and you have
-    > resistance against poison damage.
+> resistance against poison damage.
 
 -   You have darkvision out to a range of 60 feet.
 
@@ -465,89 +461,89 @@ While wearing this belt, you gain the following benefits:
 
 #### Belt of Giant Strength
 
- *Wondrous item, rarity varies (requires attunement)*
+*Wondrous item, rarity varies (requires attunement)*
 
- While wearing this belt, your Strength score changes to a score
- granted by the belt. If your Strength is already equal to or greater
- than the belt’s score, the item has no effect on you.
+While wearing this belt, your Strength score changes to a score
+granted by the belt. If your Strength is already equal to or greater
+than the belt’s score, the item has no effect on you.
 
- Six varieties of this belt exist, corresponding with and having rarity
- according to the six kinds of true giants. The *belt of stone giant
- strength* and the *belt of frost giant strength* look different, but
- they have the same effect.
+Six varieties of this belt exist, corresponding with and having rarity
+according to the six kinds of true giants. The *belt of stone giant
+strength* and the *belt of frost giant strength* look different, but
+they have the same effect.
 
-  | **Type**            | **Strength**   | **Rarity**
-  --------------------- ---------------- --------------
-  | Hill giant          | 21             | Rare
-  | Stone/frost giant   | 23             | Very rare
-  | Fire giant          | 25             | Very rare
-  | Cloud giant         | 27             | Legendary
-  | Storm giant         | 29             | Legendary
+| **Type**            | **Strength**   | **Rarity**
+--------------------- ---------------- --------------
+| Hill giant          | 21             | Rare
+| Stone/frost giant   | 23             | Very rare
+| Fire giant          | 25             | Very rare
+| Cloud giant         | 27             | Legendary
+| Storm giant         | 29             | Legendary
 
 #### Berserker Axe
 
- *Weapon (any axe), rare (requires attunement)*
+*Weapon (any axe), rare (requires attunement)*
 
- You gain a +1 bonus to attack and damage rolls made with this magic
- weapon. In addition, while you are attuned to this weapon, your hit
- point maximum increases by 1 for each level you have attained.
+You gain a +1 bonus to attack and damage rolls made with this magic
+weapon. In addition, while you are attuned to this weapon, your hit
+point maximum increases by 1 for each level you have attained.
 
- ***Curse.*** This axe is cursed, and becoming attuned to
+***Curse.*** This axe is cursed, and becoming attuned to
 
- it extends the curse to you. As long as you remain cursed, you are
- unwilling to part with the axe, keeping it within reach at all times.
- You also have disadvantage on attack rolls with weapons other than
- this one, unless no foe is within 60 feet of you that you can see or
- hear.
+it extends the curse to you. As long as you remain cursed, you are
+unwilling to part with the axe, keeping it within reach at all times.
+You also have disadvantage on attack rolls with weapons other than
+this one, unless no foe is within 60 feet of you that you can see or
+hear.
 
- Whenever a hostile creature damages you while the axe is in your
- possession, you must succeed on a DC 15 Wisdom saving throw or go
- berserk. While berserk, you must use your action each round to
+Whenever a hostile creature damages you while the axe is in your
+possession, you must succeed on a DC 15 Wisdom saving throw or go
+berserk. While berserk, you must use your action each round to
 
- attack the creature nearest to you with the axe. If you can make extra
- attacks as part of the Attack action, you use those extra attacks,
- moving to attack the next nearest creature after you fell your current
- target. If you have multiple possible targets, you attack one at
- random. You are berserk until you start your turn with no creatures
- within 60 feet of you that you can see or hear.
+attack the creature nearest to you with the axe. If you can make extra
+attacks as part of the Attack action, you use those extra attacks,
+moving to attack the next nearest creature after you fell your current
+target. If you have multiple possible targets, you attack one at
+random. You are berserk until you start your turn with no creatures
+within 60 feet of you that you can see or hear.
 
 #### Boots of Elvenkind
 
- *Wondrous item, uncommon*
+*Wondrous item, uncommon*
 
- While you wear these boots, your steps make no sound, regardless of
- the surface you are moving across. You also have advantage on
- Dexterity (Stealth) checks that rely on moving silently.
+While you wear these boots, your steps make no sound, regardless of
+the surface you are moving across. You also have advantage on
+Dexterity (Stealth) checks that rely on moving silently.
 
 #### Boots of Levitation
 
- *Wondrous item, rare (requires attunement)*
+*Wondrous item, rare (requires attunement)*
 
- While you wear these boots, you can use an action to cast the
- *levitate* spell on yourself at will.
+While you wear these boots, you can use an action to cast the
+*levitate* spell on yourself at will.
 
 #### Boots of Speed
 
- *Wondrous item, rare (requires attunement)*
+*Wondrous item, rare (requires attunement)*
 
- While you wear these boots, you can use a bonus action and click the
- boots’ heels together. If you do, the boots double your walking speed,
- and any creature that makes an opportunity attack against you has
- disadvantage on the attack roll. If you click your heels together
- again, you end the effect.
+While you wear these boots, you can use a bonus action and click the
+boots’ heels together. If you do, the boots double your walking speed,
+and any creature that makes an opportunity attack against you has
+disadvantage on the attack roll. If you click your heels together
+again, you end the effect.
 
- When the boots’ property has been used for a total of 10 minutes, the
- magic ceases to function until you finish a long rest.
+When the boots’ property has been used for a total of 10 minutes, the
+magic ceases to function until you finish a long rest.
 
 #### Boots of Striding and Springing
 
- *Wondrous item, uncommon (requires attunement)*
+*Wondrous item, uncommon (requires attunement)*
 
- While you wear these boots, your walking speed becomes 30 feet, unless
- your walking speed is higher, and your speed isn’t reduced if you are
- encumbered or wearing heavy armor. In addition, you can jump three
- times the normal distance, though you can’t jump farther than your
- remaining movement would allow.
+While you wear these boots, your walking speed becomes 30 feet, unless
+your walking speed is higher, and your speed isn’t reduced if you are
+encumbered or wearing heavy armor. In addition, you can jump three
+times the normal distance, though you can’t jump farther than your
+remaining movement would allow.
 
 #### Boots of the Winterlands
 
@@ -561,8 +557,8 @@ you gain the following benefits:
 -   You ignore difficult terrain created by ice or snow.
 
 -   You can tolerate temperatures as low as −50 degrees Fahrenheit
-    > without any additional protection. If you wear heavy clothes, you
-    > can tolerate temperatures as low as −100 degrees Fahrenheit.
+> without any additional protection. If you wear heavy clothes, you
+> can tolerate temperatures as low as −100 degrees Fahrenheit.
 
 #### Bowl of Commanding Water Elementals
 
@@ -757,14 +753,14 @@ threads. While wearing it, you gain the following benefits:
 -   You have a climbing speed equal to your walking speed.
 
 -   You can move up, down, and across vertical surfaces and upside down
-    along ceilings, while leaving your hands free.
+along ceilings, while leaving your hands free.
 
 -   You can’t be caught in webs of any sort and can move through webs as
-    if they were difficult terrain.
+if they were difficult terrain.
 
 -   You can use an action to cast the *web* spell (save DC 13). The web
-    created by the spell fills twice its normal area. Once used, this
-    property of the cloak can’t be used again until the next dawn.
+created by the spell fills twice its normal area. Once used, this
+property of the cloak can’t be used again until the next dawn.
 
 #### Cloak of Displacement
 
@@ -873,26 +869,26 @@ that object as long as the barrier remains.
 
 #### Cube of Force Faces
 
-  > **Face**   > **Charges**   > **Effect**
-  ------------ --------------- ---------------------------------------------------------------------------------------------------------------------
-  > 1          > 1             > Gases, wind, and fog can’t pass through the barrier.
-  > 2          > 2             > Nonliving matter can’t pass through the barrier. Walls, floors, and ceilings can pass through at your discretion.
-  > 3          > 3             > Living matter can’t pass through the barrier.
-  > 4          > 4             > Spell effects can’t pass through the barrier.
-  > 5          > 5             > Nothing can pass through the barrier. Walls, floors, and ceilings can pass through at your discretion.
-  > 6          > 0             > The barrier deactivates.
+> **Face**   > **Charges**   > **Effect**
+------------ --------------- ---------------------------------------------------------------------------------------------------------------------
+> 1          > 1             > Gases, wind, and fog can’t pass through the barrier.
+> 2          > 2             > Nonliving matter can’t pass through the barrier. Walls, floors, and ceilings can pass through at your discretion.
+> 3          > 3             > Living matter can’t pass through the barrier.
+> 4          > 4             > Spell effects can’t pass through the barrier.
+> 5          > 5             > Nothing can pass through the barrier. Walls, floors, and ceilings can pass through at your discretion.
+> 6          > 0             > The barrier deactivates.
 
 The cube loses charges when the barrier is targeted by certain spells or
 comes into contact with certain spell or magic item effects, as shown in
 the table below.
 
- **Spell or Item Charges Lost**
+**Spell or Item Charges Lost**
 
- *Disintegrate* 1d12 *Horn of blasting* 1d10 *Passwall* 1d6
+*Disintegrate* 1d12 *Horn of blasting* 1d10 *Passwall* 1d6
 
- *Prismatic spray* 1d20
+*Prismatic spray* 1d20
 
- *Wall of fire* 1d4
+*Wall of fire* 1d4
 
 #### Cubic Gate
 
@@ -964,13 +960,13 @@ of your next turn. Choose from the following options:
 -   “Fountain” produces 5 gallons of water.
 
 -   “Geyser” produces 30 gallons of water that gushes forth in a geyser
-    > 30 feet long and 1 foot wide. As a bonus action while holding the
-    > decanter, you can aim the geyser at a creature you can see within
-    > 30 feet of you. The target must succeed on a DC 13 Strength saving
-    > throw or take 1d4 bludgeoning damage and fall prone. Instead of a
-    > creature, you can target an object that isn’t being worn or
-    > carried and that weighs no more than 200 pounds. The object is
-    > either knocked over or pushed up to 15 feet away from you.
+> 30 feet long and 1 foot wide. As a bonus action while holding the
+> decanter, you can aim the geyser at a creature you can see within
+> 30 feet of you. The target must succeed on a DC 13 Strength saving
+> throw or take 1d4 bludgeoning damage and fall prone. Instead of a
+> creature, you can target an object that isn’t being worn or
+> carried and that weighs no more than 200 pounds. The object is
+> either knocked over or pushed up to 15 feet away from you.
 
 #### Deck of Illusions
 
@@ -1329,13 +1325,13 @@ discern the distance and direction to the closest dragon within 30 miles
 of you that is of the same type as the armor. This special action can’t
 be used again until the next dawn.
 
-  > **Dragon**   > **Resistance**      > **Dragon**   > **Resistance**
-  -------------- ------------------ -- -------------- ------------------
-  > Black        > Acid                > Gold         > Fire
-  > Blue         > Lightning           > Green        > Poison
-  > Brass        > Fire                > Red          > Fire
-  > Bronze       > Lightning           > Silver       > Cold
-  > Copper       > Acid                > White        > Cold
+> **Dragon**   > **Resistance**      > **Dragon**   > **Resistance**
+-------------- ------------------ -- -------------- ------------------
+> Black        > Acid                > Gold         > Fire
+> Blue         > Lightning           > Green        > Poison
+> Brass        > Fire                > Red          > Fire
+> Bronze       > Lightning           > Silver       > Cold
+> Copper       > Acid                > White        > Cold
 
 #### Dragon Slayer
 
@@ -1665,31 +1661,31 @@ created in sets of three. Each goat looks unique and functions
 differently from the others. Their properties are as follows:
 
 -   The *goat of traveling* can become a Large goat with the same
-    statistics as a riding horse. It has 24 charges, and each hour or
-    portion thereof it spends in beast form costs 1 charge. While it
-    has charges, you can use it as often as you wish. When it runs out
-    of charges, it reverts to a figurine and can’t be used again until
-    7 days have passed, when it regains all its charges.
+statistics as a riding horse. It has 24 charges, and each hour or
+portion thereof it spends in beast form costs 1 charge. While it
+has charges, you can use it as often as you wish. When it runs out
+of charges, it reverts to a figurine and can’t be used again until
+7 days have passed, when it regains all its charges.
 
 -   The *goat of travail* becomes a giant goat for up to 3 hours. Once
-    it has been used, it can’t be used again until 30 days
-    have passed.
+it has been used, it can’t be used again until 30 days
+have passed.
 
 -   The *goat of terror* becomes a giant goat for up to 3 hours. The
-    goat can’t attack, but you can remove
-    its horns and use them as weapons. One horn becomes a *+1 lance*, and
-    the other becomes a *+2 longsword*. Removing a horn requires an
-    action, and the weapons disappear and the horns return
-    whenthegoatrevertstofigurineform.Inaddition, the goat radiates a
-    30-­foot-­radius aura of terror while you are riding it. Any
-    creature hostile to you that starts its turn in the aura must succeed
-    on a DC 15 Wisdom saving throw or be frightened of the goat for 1
-    minute, or until the goat reverts to figurine form. The frightened
-    creature can repeat the saving throw at the end of each of its turns,
-    ending the effect on itself on a success. Once it successfully saves
-    against the effect, a creature is immune to the goat’s aura for the
-    next 24 hours. Once the figurine has been used, it can’t be used again
-    until 15 days have passed.
+goat can’t attack, but you can remove
+its horns and use them as weapons. One horn becomes a *+1 lance*, and
+the other becomes a *+2 longsword*. Removing a horn requires an
+action, and the weapons disappear and the horns return
+whenthegoatrevertstofigurineform.Inaddition, the goat radiates a
+30-­foot-­radius aura of terror while you are riding it. Any
+creature hostile to you that starts its turn in the aura must succeed
+on a DC 15 Wisdom saving throw or be frightened of the goat for 1
+minute, or until the goat reverts to figurine form. The frightened
+creature can repeat the saving throw at the end of each of its turns,
+ending the effect on itself on a success. Once it successfully saves
+against the effect, a creature is immune to the goat’s aura for the
+next 24 hours. Once the figurine has been used, it can’t be used again
+until 15 days have passed.
 
 ***Marble Elephant (Rare).*** This marble statuette is about 4 inches
 high and long. It can become an elephant for up to 24 hours. Once it has
@@ -1795,22 +1791,22 @@ action to speak one of three command words to cause one of the following
 effects:
 
 -   The first command word causes the gem to shed bright light in a
-    30-­foot radius and dim light for an additional 30 feet. This
-    effect doesn’t expend a charge. It lasts until you use a bonus
-    action to repeat the command word or until you use another
-    function of the gem.
+30-­foot radius and dim light for an additional 30 feet. This
+effect doesn’t expend a charge. It lasts until you use a bonus
+action to repeat the command word or until you use another
+function of the gem.
 
 -   The second command word expends 1 charge and causes the gem to fire
-    a brilliant beam of light at one creature you can see within 60
-    feet of you. The creature must succeed on a DC 15 Constitution
-    saving throw or become blinded for 1 minute. The creature can
-    repeat the saving throw at the end of each of its turns, ending
-    the effect on itself on a success.
+a brilliant beam of light at one creature you can see within 60
+feet of you. The creature must succeed on a DC 15 Constitution
+saving throw or become blinded for 1 minute. The creature can
+repeat the saving throw at the end of each of its turns, ending
+the effect on itself on a success.
 
 -   The third command word expends 5 charges and causes the gem to flare
-    with blinding light in a 30-­ foot cone originating from it.
-    Each creature in the cone must make a saving throw as if struck by
-    the beam created with the second command word.
+with blinding light in a 30-­ foot cone originating from it.
+Each creature in the cone must make a saving throw as if struck by
+the beam created with the second command word.
 
 When all of the gem’s charges are expended, the gem becomes a nonmagical
 jewel worth 50 gp.
@@ -1964,27 +1960,27 @@ When all the gems are removed or destroyed, the helm loses its magic.
 You gain the following benefits while wearing it:
 
 -   You can use an action to cast one of the following spells (save DC
-    18), using one of the helm’s gems of the specified type as a
-    component: *daylight* (opal), *fireball* (fire opal), *prismatic
-    spray* (diamond), or *wall of fire* (ruby). The gem is destroyed
-    when the spell is cast and disappears from the helm.
+18), using one of the helm’s gems of the specified type as a
+component: *daylight* (opal), *fireball* (fire opal), *prismatic
+spray* (diamond), or *wall of fire* (ruby). The gem is destroyed
+when the spell is cast and disappears from the helm.
 
 -   As long as it has at least one diamond, the helm emits dim light in
-    a 30-­foot radius when at least one undead is within that area.
-    Any undead that starts its turn in that area takes 1d6
-    radiant damage.
+a 30-­foot radius when at least one undead is within that area.
+Any undead that starts its turn in that area takes 1d6
+radiant damage.
 
 -   As long as the helm has at least one ruby, you have resistance to
-    fire damage.
+fire damage.
 
 -   As long as the helm has at least one fire opal, you can use an
-    action and speak a command word to cause one weapon you are
-    holding to burst into flames. The flames emit bright light in a
-    10-­foot radius and dim light for an additional 10 feet. The
-    flames are harmless to you and the weapon. When you hit with an
-    attack using the blazing weapon, the target takes an extra 1d6
-    fire damage. The flames last until you use a bonus action to speak
-    the command word again or until you drop or stow the weapon.
+action and speak a command word to cause one weapon you are
+holding to burst into flames. The flames emit bright light in a
+10-­foot radius and dim light for an additional 10 feet. The
+flames are harmless to you and the weapon. When you hit with an
+attack using the blazing weapon, the target takes an extra 1d6
+fire damage. The flames last until you use a bonus action to speak
+the command word again or until you drop or stow the weapon.
 
 Roll a d20 if you are wearing the helm and take fire damage as a result
 of failing a saving throw against a spell. On a roll of 1, the helm
@@ -2481,12 +2477,12 @@ The mace regains 1d3 expended charges daily at dawn.
 > with at least two 5th-­level spell slots. A creature that can’t use
 > a *manual of golems* and attempts to read it takes 6d6 psychic damage.
 
-  > **d20**   > **Golem**   > **Time**   > **Cost**
-  ----------- ------------- ------------ --------------
-  > 1–5       > Clay        > 30 days    > 65,000 gp
-  > 6–17      > Flesh       > 60 days    > 50,000 gp
-  18          > Iron        > 120 days   > 100,000 gp
-  > 19–20     > Stone       > 90 days    > 80,000 gp
+> **d20**   > **Golem**   > **Time**   > **Cost**
+----------- ------------- ------------ --------------
+> 1–5       > Clay        > 30 days    > 65,000 gp
+> 6–17      > Flesh       > 60 days    > 50,000 gp
+18          > Iron        > 120 days   > 100,000 gp
+> 19–20     > Stone       > 90 days    > 80,000 gp
 
 > To create a golem, you must spend the time shown on the table, working
 > without interruption with the manual at hand and resting no more than
@@ -2640,9 +2636,9 @@ Each bead contains a spell that you can cast from it as a bonus action
 (using your spell save DC if a save is necessary). Once a magic bead’s
 spell is cast, that bead can’t be used again until the next dawn.
 
-  | **d20**   | **Bead of …**   | **Spell**
-  ----------- ----------------- -------------
-  | 1–6       | Blessing        | *Bless*
+| **d20**   | **Bead of …**   | **Spell**
+----------- ----------------- -------------
+| 1–6       | Blessing        | *Bless*
 | 7–12 |Curing|  *Cure wounds* (2nd level) or *lesser* *restoration*
 | 13–16 |Favor|  *Greater restoration*
 | 17–18 |Smiting | *Branding smite*
@@ -3065,7 +3061,7 @@ charges to cast one of the following spells:
 -   *Animal friendship* (save DC 13)
 
 -   *Fear* (save DC 13), targeting only beasts that have an Intelligence
-    of 3 or lower
+of 3 or lower
 
 -   *Speak with animals*
 
@@ -3117,8 +3113,8 @@ access to the following additional properties:
 -   You have a flying speed equal to your walking speed and can hover.
 
 -   You can cast the following spells from the ring, expending the
-    necessary number of charges: *chain lightning* (3 charges), *gust
-    of wind* (2 charges), or *wind wall* (1 charge).
+necessary number of charges: *chain lightning* (3 charges), *gust
+of wind* (2 charges), or *wind wall* (1 charge).
 
 ***Ring of Earth Elemental Command.*** You can expend 2 of the ring’s
 charges to cast *dominate monster* on an earth elemental. In addition,
@@ -3132,28 +3128,28 @@ access to the following additional properties:
 -   You have resistance to acid damage.
 
 -   You can move through solid earth or rock as if those areas were
-    difficult terrain. If you end your turn there, you are shunted out
-    to the nearest unoccupied space you last occupied.
+difficult terrain. If you end your turn there, you are shunted out
+to the nearest unoccupied space you last occupied.
 
 -   You can cast the following spells from the ring, expending the
-    necessary number of charges: *stone*
+necessary number of charges: *stone*
 
- *shape* (2 charges), *stoneskin* (3 charges), or *wall of stone* (3
- charges).
+*shape* (2 charges), *stoneskin* (3 charges), or *wall of stone* (3
+charges).
 
- ***Ring of Fire Elemental Command.*** You can expend 2 of the ring’s
- charges to cast *dominate monster* on a fire elemental. In addition,
- you have resistance to fire damage. You can also speak and understand
- Ignan.
+***Ring of Fire Elemental Command.*** You can expend 2 of the ring’s
+charges to cast *dominate monster* on a fire elemental. In addition,
+you have resistance to fire damage. You can also speak and understand
+Ignan.
 
- If you help slay a fire elemental while attuned to
+If you help slay a fire elemental while attuned to
 the ring, you gain access to the following additional properties:
 
 -   You are immune to fire damage.
 
 -   You can cast the following spells from the ring, expending the
-    necessary number of charges: *burning hands* (1 charge),
-    *fireball* (2 charges), and *wall of fire* (3 charges).
+necessary number of charges: *burning hands* (1 charge),
+*fireball* (2 charges), and *wall of fire* (3 charges).
 
 ***Ring of Water Elemental Command.*** You can expend 2 of the ring’s
 charges to cast *dominate monster* on a water elemental. In addition,
@@ -3165,12 +3161,12 @@ If you help slay a water elemental while attuned to
 the ring, you gain access to the following additional properties:
 
 -   You can breathe underwater and have a swimming speed equal to your
-    walking speed.
+walking speed.
 
 -   You can cast the following spells from the ring, expending the
-    necessary number of charges: *create or destroy water* (1 charge),
-    *control water* (3 charges), *ice storm* (2 charges), or *wall of
-    ice* (3 charges).
+necessary number of charges: *create or destroy water* (1 charge),
+*control water* (3 charges), *ice storm* (2 charges), or *wall of
+ice* (3 charges).
 
 #### Ring of Evasion
 
@@ -3256,18 +3252,18 @@ You have resistance to one damage type while wearing this ring. The gem
 in the ring indicates the type, which the GM chooses or determines
 randomly.
 
-  | **d10**   | **Damage Type**   | **Gem**
-  ----------- ------------------- --------------
-  | 1         | Acid              | Pearl
-  | 2         | Cold              | Tourmaline
-  | 3         | Fire              | Garnet
-  | 4         | Force             | Sapphire
-  | 5         | Lightning         | Citrine
-  | 6         | Necrotic          | Jet
-  | 7         | Poison            | Amethyst
-  | 8         | Psychic           | Jade
-  | 9         | Radiant           | Topaz
-  | 10        | Thunder           | Spinel
+| **d10**   | **Damage Type**   | **Gem**
+----------- ------------------- --------------
+| 1         | Acid              | Pearl
+| 2         | Cold              | Tourmaline
+| 3         | Fire              | Garnet
+| 4         | Force             | Sapphire
+| 5         | Lightning         | Citrine
+| 6         | Necrotic          | Jet
+| 7         | Poison            | Amethyst
+| 8         | Psychic           | Jade
+| 9         | Radiant           | Topaz
+| 10        | Thunder           | Spinel
 
 #### Ring of Shooting Stars
 
@@ -3427,12 +3423,12 @@ This robe is adorned with eyelike patterns. While you wear the robe, you
 gain the following benefits:
 
 -   The robe lets you see in all directions, and you have advantage on
-    Wisdom (Perception) checks that rely on sight.
+Wisdom (Perception) checks that rely on sight.
 
 -   You have darkvision out to a range of 120 feet.
 
 -   You can see invisible creatures and objects, as well as see into the
-    Ethereal Plane, out to a range of 120 feet.
+Ethereal Plane, out to a range of 120 feet.
 
 The eyes on the robe can’t be closed or averted. Although you can close
 or avert your own eyes, you are never considered to be doing so while
@@ -3490,10 +3486,10 @@ of the archmagi* that doesn’t correspond to your alignment.
 You gain these benefits while wearing the robe:
 
 -   If you aren’t wearing armor, your base Armor Class is 15 + your
-    Dexterity modifier.
+Dexterity modifier.
 
 -   You have advantage on saving throws against spells and other
-    magical effects.
+magical effects.
 
 -   Your spell save DC and spell attack bonus each increase by 2.
 
@@ -3768,10 +3764,10 @@ provides two benefits while it is on your person:
 -   You have advantage on saving throws against spells.
 
 -   The scarab has 12 charges. If you fail a saving throw against a
-    necromancy spell or a harmful effect originating from an undead
-    creature, you can use your reaction to expend 1 charge and turn
-    the failed save into a successful one. The scarab crumbles into
-    powder and is destroyed when its last charge is expended.
+necromancy spell or a harmful effect originating from an undead
+creature, you can use your reaction to expend 1 charge and turn
+the failed save into a successful one. The scarab crumbles into
+powder and is destroyed when its last charge is expended.
 
 #### Scimitar of Speed
 
@@ -3868,11 +3864,11 @@ Spell Scroll table.
 >
 > 6th Very rare 17 +9
 
-  > 7th     > Very rare             > 18                           > +10                > **d100**                                        > **Result**
-  --------- ----------------------- ------------------------------ ---------- --------- ------------------------------------------------- ---------------------------------------------------------------------------
-  > 8th     > Very rare             > 18                           > +10                > 01–50                                           > The sphere is destroyed.
-  > 9th     > Legendary             > 19                           > +11                > 51–85                                           > The sphere moves through the portal or into the extradimensional space.
-  > A wiz   > ard spell on a *sp*   *ell scroll* can be copied j   > ust as   > 86–00   > A spatial rift sends each creature and object
+> 7th     > Very rare             > 18                           > +10                > **d100**                                        > **Result**
+--------- ----------------------- ------------------------------ ---------- --------- ------------------------------------------------- ---------------------------------------------------------------------------
+> 8th     > Very rare             > 18                           > +10                > 01–50                                           > The sphere is destroyed.
+> 9th     > Legendary             > 19                           > +11                > 51–85                                           > The sphere moves through the portal or into the extradimensional space.
+> A wiz   > ard spell on a *sp*   *ell scroll* can be copied j   > ust as   > 86–00   > A spatial rift sends each creature and object
 
 > spells in spellbooks can be copied. When a spell is copied from a
 > *spell scroll*, the copier must succeed on an Intelligence (Arcana)
@@ -3884,104 +3880,104 @@ Spell Scroll table.
 
 #### Spellguard Shield
 
- *Armor (shield), very rare (requires attunement)*
+*Armor (shield), very rare (requires attunement)*
 
- While holding this shield, you have advantage on saving throws against
- spells and other magical effects, and spell attacks have disadvantage
- against you.
+While holding this shield, you have advantage on saving throws against
+spells and other magical effects, and spell attacks have disadvantage
+against you.
 
 #### Sphere of Annihilation
 
 *Wondrous item, legendary*
 
- This 2-­foot-­diameter black sphere is a hole in the multiverse,
- hovering in space and stabilized by a magical field surrounding it.
+This 2-­foot-­diameter black sphere is a hole in the multiverse,
+hovering in space and stabilized by a magical field surrounding it.
 
- The sphere obliterates all matter it passes through and all matter
- that passes through it. Artifacts are the exception. Unless an
- artifact is susceptible to damage from a *sphere of annihilation*, it
- passes through the sphere unscathed. Anything else that touches the
- sphere but isn’t wholly engulfed and obliterated by it takes 4d10
- force damage.
+The sphere obliterates all matter it passes through and all matter
+that passes through it. Artifacts are the exception. Unless an
+artifact is susceptible to damage from a *sphere of annihilation*, it
+passes through the sphere unscathed. Anything else that touches the
+sphere but isn’t wholly engulfed and obliterated by it takes 4d10
+force damage.
 
- The sphere is stationary until someone controls it. If you are within
- 60 feet of an uncontrolled sphere, you can use an action to make a DC
- 25 Intelligence (Arcana) check. On a success, the sphere levitates in
- one direction of your choice, up to a number of feet equal to 5 × your
- Intelligence modifier (minimum 5 feet). On a failure, the sphere moves
- 10 feet toward you. A creature whose space the sphere enters must
- succeed on a DC 13 Dexterity saving throw or be touched by it, taking
- 4d10 force damage.
+The sphere is stationary until someone controls it. If you are within
+60 feet of an uncontrolled sphere, you can use an action to make a DC
+25 Intelligence (Arcana) check. On a success, the sphere levitates in
+one direction of your choice, up to a number of feet equal to 5 × your
+Intelligence modifier (minimum 5 feet). On a failure, the sphere moves
+10 feet toward you. A creature whose space the sphere enters must
+succeed on a DC 13 Dexterity saving throw or be touched by it, taking
+4d10 force damage.
 
- If you attempt to control a sphere that is under
+If you attempt to control a sphere that is under
 
- another creature’s control, you make an Intelligence (Arcana) check
- contested by the other creature’s Intelligence (Arcana) check. The
- winner of the contest gains control of the sphere and can levitate it
- as normal.
+another creature’s control, you make an Intelligence (Arcana) check
+contested by the other creature’s Intelligence (Arcana) check. The
+winner of the contest gains control of the sphere and can levitate it
+as normal.
 
- If the sphere comes into contact with a planar portal, such as that
- created by the *gate* spell, or an extradimensional space, such as
- that within a *portable hole*, the GM determines randomly what
- happens, using the following table.
+If the sphere comes into contact with a planar portal, such as that
+created by the *gate* spell, or an extradimensional space, such as
+that within a *portable hole*, the GM determines randomly what
+happens, using the following table.
 
- within 180 feet of the sphere, including the
+within 180 feet of the sphere, including the
 
- sphere, to a random plane of existence.
+sphere, to a random plane of existence.
 
 #### Staff of Charming
 
- *Staff, rare (requires attunement by a bard, cleric, druid, sorcerer,
- warlock, or wizard)*
+*Staff, rare (requires attunement by a bard, cleric, druid, sorcerer,
+warlock, or wizard)*
 
- While holding this staff, you can use an action to expend 1 of its 10
- charges to cast *charm person*, *command*, *or comprehend languages*
- from it using your spell save DC. The staff can also be used as a
- magic quarterstaff.
+While holding this staff, you can use an action to expend 1 of its 10
+charges to cast *charm person*, *command*, *or comprehend languages*
+from it using your spell save DC. The staff can also be used as a
+magic quarterstaff.
 
- If you are holding the staff and fail a saving throw against an
- enchantment spell that targets only you, you can turn your failed save
- into a successful one. You can’t use this property of the staff again
- until the next dawn. If you succeed on a save against an enchantment
- spell that targets only you, with or without the staff’s intervention,
- you can use your reaction to expend 1 charge from the staff and turn
- the spell back on its caster as if you had cast the spell.
+If you are holding the staff and fail a saving throw against an
+enchantment spell that targets only you, you can turn your failed save
+into a successful one. You can’t use this property of the staff again
+until the next dawn. If you succeed on a save against an enchantment
+spell that targets only you, with or without the staff’s intervention,
+you can use your reaction to expend 1 charge from the staff and turn
+the spell back on its caster as if you had cast the spell.
 
- The staff regains 1d8 + 2 expended charges daily at dawn. If you
- expend the last charge, roll a d20. On a 1, the staff becomes a
- nonmagical quarterstaff.
+The staff regains 1d8 + 2 expended charges daily at dawn. If you
+expend the last charge, roll a d20. On a 1, the staff becomes a
+nonmagical quarterstaff.
 
 #### Staff of Fire
 
- *Staff, very rare (requires attunement by a druid, sorcerer, warlock,
- or wizard)*
+*Staff, very rare (requires attunement by a druid, sorcerer, warlock,
+or wizard)*
 
- You have resistance to fire damage while you hold this staff.
+You have resistance to fire damage while you hold this staff.
 
- The staff has 10 charges. While holding it, you can use an action to
- expend 1 or more of its charges to cast one of the following spells
- from it, using your spell save DC: *burning hands* (1 charge),
- *fireball* (3 charges), or *wall of fire* (4 charges).
+The staff has 10 charges. While holding it, you can use an action to
+expend 1 or more of its charges to cast one of the following spells
+from it, using your spell save DC: *burning hands* (1 charge),
+*fireball* (3 charges), or *wall of fire* (4 charges).
 
- The staff regains 1d6 + 4 expended charges daily
+The staff regains 1d6 + 4 expended charges daily
 
- at dawn. If you expend the last charge, roll a d20. On a 1, the staff
- blackens, crumbles into cinders, and is destroyed.
+at dawn. If you expend the last charge, roll a d20. On a 1, the staff
+blackens, crumbles into cinders, and is destroyed.
 
 #### Staff of Frost
 
- *Staff, very rare (requires attunement by a druid, sorcerer, warlock,
- or wizard)*
+*Staff, very rare (requires attunement by a druid, sorcerer, warlock,
+or wizard)*
 
- You have resistance to cold damage while you hold this staff.
+You have resistance to cold damage while you hold this staff.
 
- The staff has 10 charges. While holding it, you can
+The staff has 10 charges. While holding it, you can
 
- use an action to expend 1 or more of its charges to cast one of the
- following spells from it, using your
+use an action to expend 1 or more of its charges to cast one of the
+following spells from it, using your
 
- spell save DC: *cone of cold* (5 charges), *fog cloud* (1 charge),
- *ice storm* (4 charges), or *wall of ice* (4 charges).
+spell save DC: *cone of cold* (5 charges), *fog cloud* (1 charge),
+*ice storm* (4 charges), or *wall of ice* (4 charges).
 
 The staff regains 1d6 + 4 expended charges daily at dawn. If you expend
 the last charge, roll a d20. On a 1, the staff turns to water and is
@@ -3989,7 +3985,7 @@ destroyed.
 
 #### Staff of Healing
 
- *Staff, rare (requires attunement by a bard, cleric, or druid)*
+*Staff, rare (requires attunement by a bard, cleric, or druid)*
 
 This staff has 10 charges. While holding it, you can use an action to
 expend 1 or more of its charges to cast one of the following spells from
@@ -4003,8 +3999,8 @@ light, lost forever.
 
 #### Staff of Power
 
- *Staff, very rare (requires attunement by a sorcerer, warlock, or
- wizard)*
+*Staff, very rare (requires attunement by a sorcerer, warlock, or
+wizard)*
 
 This staff can be wielded as a magic quarterstaff that grants a +2 bonus
 to attack and damage rolls made with it. While holding it, you gain a +2
@@ -4019,14 +4015,14 @@ charges.
 ***Power Strike.*** When you hit with a melee attack using the staff,
 you can expend 1 charge to deal an extra 1d6 force damage to the target.
 
- ***Spells.*** While holding this staff, you can use an action to
- expend 1 or more of its charges to cast one of the following spells
- from it, using your spell save DC and spell attack bonus: *cone of
- cold* (5 charges), *fireball* (5th-­level version, 5 charges),
- *globe of invulnerability* (6 charges), *hold monster* (5 charges),
- *levitate* (2 charges), *lightning bolt* (5th-­level version, 5
- charges), *magic missile* (1 charge), *ray of enfeeblement* (1
- charge), or *wall of force* (5 charges).
+***Spells.*** While holding this staff, you can use an action to
+expend 1 or more of its charges to cast one of the following spells
+from it, using your spell save DC and spell attack bonus: *cone of
+cold* (5 charges), *fireball* (5th-­level version, 5 charges),
+*globe of invulnerability* (6 charges), *hold monster* (5 charges),
+*levitate* (2 charges), *lightning bolt* (5th-­level version, 5
+charges), *magic missile* (1 charge), *ray of enfeeblement* (1
+charge), or *wall of force* (5 charges).
 
 ***Retributive Strike.*** You can use an action to break the staff over
 your knee or against a solid surface, performing a retributive strike.
@@ -4041,15 +4037,15 @@ throw. On a failed save, a creature takes an amount of damage based on
 how far away it is from the point of origin, as shown in the following
 table. On a successful save, a creature takes half as much damage.
 
- **Distance from Origin Damage**
+**Distance from Origin Damage**
 
- 10 ft. away or closer 8 × the number of charges in the staff 11 to 20
- ft. away 6 × the number of charges in the staff 21 to 30 ft. away 4 ×
- the number of charges in the staff
+10 ft. away or closer 8 × the number of charges in the staff 11 to 20
+ft. away 6 × the number of charges in the staff 21 to 30 ft. away 4 ×
+the number of charges in the staff
 
 #### Staff of Striking
 
- *Staff, very rare (requires attunement)*
+*Staff, very rare (requires attunement)*
 
 This staff can be wielded as a magic quarterstaff that grants a +3 bonus
 to attack and damage rolls made with it.
@@ -4062,8 +4058,8 @@ d20. On a 1, the staff becomes a nonmagical quarterstaff.
 
 #### Staff of Swarming Insects
 
- *Staff, rare (requires attunement by a bard, cleric, druid, sorcerer,
- warlock, or wizard)*
+*Staff, rare (requires attunement by a bard, cleric, druid, sorcerer,
+warlock, or wizard)*
 
 This staff has 10 charges and regains 1d6 + 4 expended charges daily at
 dawn. If you expend the last charge, roll a d20. On a 1, a swarm of
@@ -4083,8 +4079,8 @@ per hour disperses the swarm and ends the effect.
 
 #### Staff of the Magi
 
- *Staff, legendary (requires attunement by a sorcerer, warlock, or
- wizard)*
+*Staff, legendary (requires attunement by a sorcerer, warlock, or
+wizard)*
 
 This staff can be wielded as a magic quarterstaff that grants a +2 bonus
 to attack and damage rolls made with it. While you hold it, you gain a
@@ -4103,27 +4099,27 @@ However, if doing so brings the staff’s total number of charges above
 50, the staff explodes as if you activated its retributive strike (see
 below).
 
- ***Spells.*** While holding the staff, you can use an action to expend
- some of its charges to cast one of the following spells from it, using
- your spell save DC and spellcasting ability: *conjure elemental* (7
- charges), *dispel magic* (3 charges), *fireball* (7th-­level
- version, 7 charges), *flaming sphere* (2 charges), *ice storm* (4
- charges), *invisibility* (2 charges), *knock* (2 charges), *lightning
- bolt* (7th-­level version, 7 charges), *passwall* (5 charges),
- *plane shift* (7 charges), *telekinesis* (5 charges), *wall of fire*
- (4 charges), or *web* (2 charges).
+***Spells.*** While holding the staff, you can use an action to expend
+some of its charges to cast one of the following spells from it, using
+your spell save DC and spellcasting ability: *conjure elemental* (7
+charges), *dispel magic* (3 charges), *fireball* (7th-­level
+version, 7 charges), *flaming sphere* (2 charges), *ice storm* (4
+charges), *invisibility* (2 charges), *knock* (2 charges), *lightning
+bolt* (7th-­level version, 7 charges), *passwall* (5 charges),
+*plane shift* (7 charges), *telekinesis* (5 charges), *wall of fire*
+(4 charges), or *web* (2 charges).
 
- You can also use an action to cast one of the
- followingspellsfromthestaffwithoutusingany charges: *arcane lock*,
- *detect magic*, *enlarge/reduce*, *light*, *mage hand*, or *protection
- from evil and good.*
+You can also use an action to cast one of the
+followingspellsfromthestaffwithoutusingany charges: *arcane lock*,
+*detect magic*, *enlarge/reduce*, *light*, *mage hand*, or *protection
+from evil and good.*
 
 ***Retributive Strike.*** You can use an action to break the staff over
 your knee or against a solid surface, performing a retributive strike.
 The staff is destroyed and releases its remaining magic in an explosion
 that expands to fill a 30-­foot-­radius sphere centered on it.
 
- You have a 50 percent chance to instantly travel to
+You have a 50 percent chance to instantly travel to
 
 a random plane of existence, avoiding the explosion. If you fail to
 avoid the effect, you take force damage equal to 16 × the number of
@@ -4133,15 +4129,15 @@ damage based on how far away it is from the point of origin, as shown in
 the following table. On a successful save, a creature takes half as much
 damage.
 
- **Distance from Origin Damage**
+**Distance from Origin Damage**
 
- 10 ft. away or closer 8 × the number of charges in the staff 11 to 20
- ft. away 6 × the number of charges in the staff 21 to 30 ft. away 4 ×
- the number of charges in the staff
+10 ft. away or closer 8 × the number of charges in the staff 11 to 20
+ft. away 6 × the number of charges in the staff 21 to 30 ft. away 4 ×
+the number of charges in the staff
 
 #### Staff of the Python
 
- *Staff, uncommon (requires attunement by a cleric, druid, or warlock)*
+*Staff, uncommon (requires attunement by a cleric, druid, or warlock)*
 
 You can use an action to speak this staff’s command word and throw the
 staff on the ground within 10 feet of you. The staff becomes a giant
@@ -4162,7 +4158,7 @@ of them.
 
 #### Staff of the Woodlands
 
- *Staff, rare (requires attunement by a druid)*
+*Staff, rare (requires attunement by a druid)*
 
 This staff can be wielded as a magic quarterstaff that grants a +2 bonus
 to attack and damage rolls made with it. While holding it, you have a +2
@@ -4173,12 +4169,12 @@ The staff has 10 charges for the following properties. It regains 1d6 +
 d20. On a 1, the staff loses its properties and becomes a nonmagical
 quarterstaff.
 
- ***Spells.*** You can use an action to expend 1 or more of the staff’s
- charges to cast one of the following spells from it, using your spell
- save DC: *animal friendship* (1 charge), *awaken* (5 charges),
- *barkskin* (2 charges), *locate animals or plants* (2 charges), *speak
- with animals* (1 charge), *speak with plants* (3 charges), or *wall of
- thorns* (6 charges).
+***Spells.*** You can use an action to expend 1 or more of the staff’s
+charges to cast one of the following spells from it, using your spell
+save DC: *animal friendship* (1 charge), *awaken* (5 charges),
+*barkskin* (2 charges), *locate animals or plants* (2 charges), *speak
+with animals* (1 charge), *speak with plants* (3 charges), or *wall of
+thorns* (6 charges).
 
 You can also use an action to cast the *pass without trace* spell from
 the staff without using any charges. ***Tree Form.*** You can use an
@@ -4196,7 +4192,7 @@ normal form. Any creature in the tree falls when it reverts to a staff.
 
 #### Staff of Thunder and Lightning
 
- *Staff, very rare (requires attunement)*
+*Staff, very rare (requires attunement)*
 
 This staff can be wielded as a magic quarterstaff that grants a +2 bonus
 to attack and damage rolls made with it. It also has the following
@@ -4230,7 +4226,7 @@ expend the daily use of those properties, only the use of this one.
 
 #### Staff of Withering
 
- *Staff, rare (requires attunement by a cleric, druid, or warlock)*
+*Staff, rare (requires attunement by a cleric, druid, or warlock)*
 
 This staff has 3 charges and regains 1d3 expended charges daily at dawn.
 
@@ -4260,7 +4256,7 @@ ability checks and saving throws.
 
 #### Sun Blade
 
- *Weapon (longsword), rare (requires attunement)*
+*Weapon (longsword), rare (requires attunement)*
 
 This item appears to be a longsword hilt. While grasping the hilt, you
 can use a bonus action to cause a blade of pure radiance to spring into
@@ -4268,7 +4264,7 @@ existence, or make the blade disappear. While the blade exists, this
 magic longsword has the finesse property. If you are proficient with
 shortswords or longswords, you are proficient with the *sun blade*.
 
- You gain a +2 bonus to attack and damage rolls
+You gain a +2 bonus to attack and damage rolls
 
 made with this weapon, which deals radiant damage instead of slashing
 damage. When you hit an undead with it, that target takes an extra 1d8
@@ -4282,7 +4278,7 @@ minimum of 10 feet each.
 
 #### Sword of Life Stealing
 
- *Weapon (any sword), rare (requires attunement)*
+*Weapon (any sword), rare (requires attunement)*
 
 When you attack a creature with this magic weapon and roll a 20 on the
 attack roll, that target takes an extra 3d6 necrotic damage, provided
@@ -4291,8 +4287,8 @@ points equal to the extra damage dealt.
 
 #### Sword of Sharpness
 
- *Weapon (any sword that deals slashing damage), very rare (requires
- attunement)*
+*Weapon (any sword that deals slashing damage), very rare (requires
+attunement)*
 
 When you attack an object with this magic sword and hit, maximize your
 weapon damage dice against the target.
@@ -4310,7 +4306,7 @@ sword puts out the light.
 
 #### Sword of Wounding
 
- *Weapon (any sword), rare (requires attunement)*
+*Weapon (any sword), rare (requires attunement)*
 
 Hit points lost to this weapon’s damage can be regained only through a
 short or long rest, rather than by regeneration, magic, or any other
@@ -4327,8 +4323,8 @@ effect of such wounds on it on a success.
 
 #### Talisman of Pure Good
 
- *Wondrous item, legendary (requires attunement by a creature of good
- alignment)*
+*Wondrous item, legendary (requires attunement by a creature of good
+alignment)*
 
 This talisman is a mighty symbol of goodness. A creature that is neither
 good nor evil in alignment takes 6d6 radiant damage upon touching the
@@ -4353,7 +4349,7 @@ motes of golden light and is destroyed.
 
 #### Talisman of the Sphere
 
- *Wondrous item, legendary (requires attunement)*
+*Wondrous item, legendary (requires attunement)*
 
 When you make an Intelligence (Arcana) check to control a *sphere of
 annihilation* while you are holding this talisman, you double your
@@ -4364,8 +4360,8 @@ Intelligence modifier.
 
 #### Talisman of Ultimate Evil
 
- *Wondrous item, legendary (requires attunement by a creature of evil
- alignment)*
+*Wondrous item, legendary (requires attunement by a creature of evil
+alignment)*
 
 This item symbolizes unrepentant evil. A creature that is neither good
 nor evil in alignment takes 6d6 necrotic damage upon touching the
@@ -4388,7 +4384,7 @@ dissolves into foul-­smelling slime and is destroyed.
 
 #### Tome of Clear Thought
 
- *Wondrous item, very rare*
+*Wondrous item, very rare*
 
 This book contains memory and logic exercises, and its words are charged
 with magic. If you spend 48 hours over a period of 6 days or fewer
@@ -4400,7 +4396,7 @@ in a century.
 
 #### Tome of Leadership and Influence
 
- *Wondrous item, very rare*
+*Wondrous item, very rare*
 
 This book contains guidelines for influencing and charming others, and
 its words are charged with magic. If you spend 48 hours over a period of
@@ -4411,7 +4407,7 @@ century.
 
 #### Tome of Understanding
 
- *Wondrous item, very rare*
+*Wondrous item, very rare*
 
 This book contains intuition and insight exercises, and its words are
 charged with magic. If you spend 48 hours over a period of 6 days or
@@ -4421,7 +4417,7 @@ manual then loses its magic, but regains it in a century.
 
 #### Trident of Fish Command
 
- *Weapon (trident), uncommon (requires attunement)*
+*Weapon (trident), uncommon (requires attunement)*
 
 This trident is a magic weapon. It has 3 charges. While you carry it,
 you can use an action and expend 1 charge to cast *dominate beast* (save
@@ -4439,15 +4435,15 @@ including *sovereign glue.*
 
 #### Vicious Weapon
 
- *Weapon (any), rare*
+*Weapon (any), rare*
 
 When you roll a 20 on your attack roll with this magic weapon, your
 critical hit deals an extra 2d6 damage of the weapon’s type.
 
 #### Vorpal Sword
 
- *Weapon (any sword that deals slashing damage), legendary (requires
- attunement)*
+*Weapon (any sword that deals slashing damage), legendary (requires
+attunement)*
 
 You gain a +3 bonus to attack and damage rolls made with this magic
 weapon. In addition, the weapon ignores resistance to slashing damage.
@@ -4463,7 +4459,7 @@ the hit.
 
 #### Wand of Binding
 
- *Wand, rare (requires attunement by a spellcaster)*
+*Wand, rare (requires attunement by a spellcaster)*
 
 This wand has 7 charges for the following properties. It regains 1d6 + 1
 expended charges daily at dawn. If you expend the wand’s last charge,
@@ -4480,7 +4476,7 @@ advantage on any check you make to escape a grapple.
 
 #### Wand of Enemy Detection
 
- *Wand, rare (requires attunement)*
+*Wand, rare (requires attunement)*
 
 This wand has 7 charges. While holding it, you can use an action and
 expend 1 charge to speak its command word. For the next minute, you know
@@ -4495,7 +4491,7 @@ and is destroyed.
 
 #### Wand of Fear
 
- *Wand, rare (requires attunement)*
+*Wand, rare (requires attunement)*
 
 This wand has 7 charges for the following properties. It regains 1d6 + 1
 expended charges daily at dawn. If you expend the wand’s last charge,
@@ -4519,7 +4515,7 @@ repeat the saving throw, ending the effect on itself on a success.
 
 #### Wand of Fireballs
 
- *Wand, rare (requires attunement by a spellcaster)*
+*Wand, rare (requires attunement by a spellcaster)*
 
 This wand has 7 charges. While holding it, you can use an action to
 expend 1 or more of its charges to cast the *fireball* spell (save DC
@@ -4533,7 +4529,7 @@ and is destroyed.
 
 #### Wand of Lightning Bolts
 
- *Wand, rare (requires attunement by a spellcaster)*
+*Wand, rare (requires attunement by a spellcaster)*
 
 This wand has 7 charges. While holding it, you can use an action to
 expend 1 or more of its charges to cast the *lightning bolt* spell (save
@@ -4547,7 +4543,7 @@ and is destroyed.
 
 #### Wand of Magic Detection
 
- *Wand, uncommon*
+*Wand, uncommon*
 
 This wand has 3 charges. While holding it, you can expend 1 charge as an
 action to cast the *detect magic* spell from it. The wand regains 1d3
@@ -4555,7 +4551,7 @@ expended charges daily at dawn.
 
 #### Wand of Magic Missiles
 
- *Wand, uncommon*
+*Wand, uncommon*
 
 This wand has 7 charges. While holding it, you can use an action to
 expend 1 or more of its charges to cast the *magic missile* spell from
@@ -4569,7 +4565,7 @@ and is destroyed.
 
 #### Wand of Paralysis
 
- *Wand, rare (requires attunement by a spellcaster)*
+*Wand, rare (requires attunement by a spellcaster)*
 
 This wand has 7 charges. While holding it, you can use an action to
 expend 1 of its charges to cause a thin blue ray to streak from the tip
@@ -4584,7 +4580,7 @@ and is destroyed.
 
 #### Wand of Polymorph
 
- *Wand, very rare (requires attunement by a spellcaster)*
+*Wand, very rare (requires attunement by a spellcaster)*
 
 This wand has 7 charges. While holding it, you can use an action to
 expend 1 of its charges to cast the *polymorph* spell (save DC 15) from
@@ -4596,7 +4592,7 @@ and is destroyed.
 
 #### Wand of Secrets
 
- *Wand, uncommon*
+*Wand, uncommon*
 
 The wand has 3 charges. While holding it, you can use an action to
 expend 1 of its charges, and if a secret door or trap is within 30 feet
@@ -4607,8 +4603,8 @@ expended charges daily at dawn.
 
 #### Wand of the War Mage, +1, +2, or +3
 
- *Wand, uncommon (+1), rare (+2), or very rare (+3) (requires
- attunement by a spellcaster)*
+*Wand, uncommon (+1), rare (+2), or very rare (+3) (requires
+attunement by a spellcaster)*
 
 While holding this wand, you gain a bonus to spell attack rolls
 determined by the wand’s rarity. In addition, you ignore half cover when
@@ -4616,7 +4612,7 @@ making a spell attack.
 
 #### Wand of Web
 
- *Wand, uncommon (requires attunement by a spellcaster)*
+*Wand, uncommon (requires attunement by a spellcaster)*
 
 This wand has 7 charges. While holding it, you can use an action to
 expend 1 of its charges to cast the *web* spell (save DC 15) from it.
@@ -4627,7 +4623,7 @@ and is destroyed.
 
 #### Wand of Wonder
 
- *Wand, rare (requires attunement by a spellcaster)*
+*Wand, rare (requires attunement by a spellcaster)*
 
 This wand has 7 charges. While holding it, you can use an action to
 expend 1 of its charges and choose a target within 120 feet of you. The
@@ -4859,23 +4855,23 @@ A sentient magic item has an alignment. Its creator or nature might
 suggest an alignment. If not, you can pick an alignment or roll on the
 following table.
 
-  | **d100**   | **Alignment**       | **d100**   | **Alignment**
-  ------------ ------------------ -- ------------ -------------------
-  | 01–15      | Lawful good         | 74–85      | Chaotic neutral
-  | 16–35      | Neutral good        | 86–89      | Lawful evil
-  | 36–50      | Chaotic good        | 90–96      | Neutral evil
-  | 51–63      | Lawful neutral      | 97–00      | Chaotic evil
-  | 64–73      | Neutral                          
+| **d100**   | **Alignment**       | **d100**   | **Alignment**
+------------ ------------------ -- ------------ -------------------
+| 01–15      | Lawful good         | 74–85      | Chaotic neutral
+| 16–35      | Neutral good        | 86–89      | Lawful evil
+| 36–50      | Chaotic good        | 90–96      | Neutral evil
+| 51–63      | Lawful neutral      | 97–00      | Chaotic evil
+| 64–73      | Neutral                          
 
 #### Special Purpose
 
- You can give a sentient item an objective it pursues, perhaps to the
- exclusion of all else. As long as the wielder’s use of the item aligns
- with that special purpose, the item remains cooperative. Deviating
- from this course might cause conflict between the wielder and the
- item, and could even cause the item to prevent the use of its
- activated properties. You can pick a special purpose or roll on the
- following table.
+You can give a sentient item an objective it pursues, perhaps to the
+exclusion of all else. As long as the wielder’s use of the item aligns
+with that special purpose, the item remains cooperative. Deviating
+from this course might cause conflict between the wielder and the
+item, and could even cause the item to prevent the use of its
+activated properties. You can pick a special purpose or roll on the
+following table.
 
 | **d10 | Purpose**
 ---- ----------------
@@ -4902,13 +4898,13 @@ following demands:
 -   The item insists on being carried or worn at all times.
 
 -   The item demands that its wielder dispose of anything the item
-    finds repugnant.
+finds repugnant.
 
 -   The item demands that its wielder pursue the item’s goals to the
-    exclusion of all other goals.
+exclusion of all other goals.
 
 -   The item demands to be given to someone else. If its wielder refuses
-    to comply with the item’s wishes, the item can do any or all of the following:
+to comply with the item’s wishes, the item can do any or all of the following:
 
 -   Make it impossible for its wielder to attune to it.
 
