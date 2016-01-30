@@ -19,3 +19,9 @@ build/
 # build script
 
 publish
+
+# node stuff
+
+_themes/node_modules/
+*.scssc
+_themes/bower_components/*
