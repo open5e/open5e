@@ -1,4 +1,4 @@
-Classes
+Characters
 -------
 
 .. toctree::

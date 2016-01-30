@@ -26,3 +26,6 @@ _themes/node_modules/
 *.scssc
 *.sassc
 _themes/bower_components/*
+
+*deploy.php
+*deploy-config.php
