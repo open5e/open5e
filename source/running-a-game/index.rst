@@ -1,10 +1,11 @@
-Running A Game
+Running a Game
 --------------
 
 .. toctree::
    :caption: Table of Contents
    :name: mastertoc
    :titlesonly:
-   :maxdepth: 2
+   :glob:
+   :maxdepth: 1
    
    *

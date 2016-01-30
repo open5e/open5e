@@ -1,12 +1,11 @@
-Characters
-------------
-
-Contents:
+Classes
+-------
 
 .. toctree::
    :caption: Table of Contents
-   :name: characterstoc
+   :name: mastertoc
    :titlesonly:
-   :maxdepth: 2
+   :glob:
+   :maxdepth: 1
    
    *
