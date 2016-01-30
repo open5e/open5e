@@ -1,0 +1,6 @@
+#
+####### open5e requirements #######
+#
+###### Requirements without Version Specifiers ######
+sphinx_rtd_theme
+#
