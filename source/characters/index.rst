@@ -1,14 +1,12 @@
-Spellcasting
+Characters
 ------------
 
 Contents:
 
 .. toctree::
    :caption: Table of Contents
-   :name: mastertoc
+   :name: characterstoc
    :titlesonly:
    :maxdepth: 2
    
    *
-   by-class/index
-   spells_a-z/index
