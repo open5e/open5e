@@ -34,7 +34,7 @@ extensions = [
 
 # Add any paths that contain templates here, relative to this directory.
 html_theme = "open5e_red_theme"
-html_theme_path = ["_themes"]
+html_theme_path = ["../_themes"]
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
