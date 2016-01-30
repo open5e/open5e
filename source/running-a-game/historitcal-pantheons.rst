@@ -75,123 +75,123 @@ Celtic Deities
 ^^^^^^^^^^^^^^
 
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
-| **Deity** \| **Alignment**\ \| \*\*Domains   | **\| **\ S   | ymbol\*\*          |                                               |
+| **Deity** | **Alignment** | **Domains**   | **Symbol**                                       |
 +==============================================+==============+====================+===============================================+
-| The Daghdha, god of weather and crops        | \|CG\|       | Nature, Tricke     | ry \|Bubbling cauldron or shield              |
+| The Daghdha, god of weather and crops        | CG       | Nature, Trickery      | Bubbling cauldron or shield              |
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
-| Arawn, god of life and death \|NE\| Li       | fe, Dea      | th \|Black star    | on gray background                            |
+| Arawn, god of life and death        | NE      | Life, Death | Black star on gray background                            |
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
-| Belenus, god of sun, light, and warmt        | h \|NG\|     | Light \|Solar      | disk and standing stones                      |
+| Belenus, god of sun, light, and warmth      | NG     | Light      | Solar disk and standing stones                      |
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
-| Brigantia, goddess of rivers and live        | stock \|     | NG\| Life \|Foo    | tbridge                                       |
+| Brigantia, goddess of rivers and live        | stock      | NG Life Foo    | tbridge                                       |
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
-| Diancecht, god of medicine and healin        | g \|LG\|     | Life \|Crossed     | oak and mistletoe branches                    |
+| Diancecht, god of medicine and healin        | g LG     | Life Crossed     | oak and mistletoe branches                    |
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
-| Dunatis, god of mountains and peaks \|       | N \| Nat     | ure \| Red sun-    | ­capped mountain peak                         |
+| Dunatis, god of mountains and peaks        | N  Nat     | ure  Red sun-    | ­capped mountain peak                         |
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
-| Goibhniu, god of smiths and healing \|       | NG\| Kno     | wledge, Life \|    | Giant mallet over sword                       |
+| Goibhniu, god of smiths and healing        | NG Kno     | wledge, Life     | Giant mallet over sword                       |
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
-| Lugh, god of arts, travel, and commer        | ce \|CN\|    | Knowledge, L       | ife \|Pair of long hands                      |
+| Lugh, god of arts, travel, and commer        | ce CN    | Knowledge, L       | ife Pair of long hands                      |
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
-| Manannan mac Lir, god of oceans and s        | ea crea      | tures \|LN\| Nat   | ure, Tempest \|Wave of white water on green   |
+| Manannan mac Lir, god of oceans and s        | ea crea      | tures LN Nat   | ure, Tempest Wave of white water on green   |
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
-| Math Mathonwy, god of magic                  | \| NE        | \| Knowledge       | \| Staff                                      |
+| Math Mathonwy, god of magic                  |  NE        |  Knowledge       |  Staff                                      |
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
-| Morrigan, goddess of battle                  | \| CE        | \| War             | \| Two crossed spears                         |
+| Morrigan, goddess of battle                  |  CE        |  War             |  Two crossed spears                         |
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
-| Nuada, god of war and warriors               | \| N         | \| War             | \| Silver hand on black background            |
+| Nuada, god of war and warriors               |  N         |  War             |  Silver hand on black background            |
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
-| Oghma, god of speech and writing             | \| NG        | \| Knowledge       | \| Unfurled scroll                            |
+| Oghma, god of speech and writing             |  NG        |  Knowledge       |  Unfurled scroll                            |
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
-| Silvanus, god of nature and forests          | \| N         | \| Nature          | \| Summer oak tree                            |
+| Silvanus, god of nature and forests          |  N         |  Nature          |  Summer oak tree                            |
 +----------------------------------------------+--------------+--------------------+-----------------------------------------------+
 
 ####Greek Deities
 
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| **Deity** \| **Alignment**\ \| **Domains**   | \| \*\*Sym   | bol\*\*   |                                                       |
+| **Deity**                                    | **Alignment** | **Domains** |  **Symbol**   |
 +==============================================+==============+===========+=======================================================+
-| Zeus, god of the sky, ruler of the gods      | \|           | N         | \| Tempest \| Fist full of lightning bolts            |
+| Zeus, god of the sky, ruler of the gods      | N            |  Tempest  | Fist full of lightning bolts            |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Aphrodite, goddess of love and beauty        | \|           | CG        | \| Light \| Sea shell                                 |
+| Aphrodite, goddess of love and beauty        | CG        |  Light | Sea shell                                 |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Apollo, god of light, music, and healin      | g \|         | CG        | \| Knowledge, Life, Light \| Lyre                     |
+| Apollo, god of light, music, and healin      | CG        |  Knowledge, Life, Light | Lyre                     |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Ares, god of war and strife                  | \|           | CE        | \| War \| Spear                                       |
+| Ares, god of war and strife                  | CE        |  War | Spear                                       |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Artemis, goddess of hunting and childbi      | rth \|       | NG        | \| Life, Nature \| Bow and arrow on lunar disk        |
+| Artemis, goddess of hunting and childbi      | NG        |  Life, Nature | Bow and arrow on lunar disk        |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Athena, goddess of wisdom and civilizat      | ion \|       | LG        | \| Knowledge, War \| Owl                              |
+| Athena, goddess of wisdom and civilizat      | LG        |  Knowledge, War | Owl                              |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Demeter, goddess of agriculture              | \|           | NG        | \| Life \| Mare’s head                                |
+| Demeter, goddess of agriculture              | NG        |  Life | Mare’s head                                |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Dionysus, god of mirth and wine              | \|           | CN        | \| Life \| Thyrsus (staff tipped with pine cone)      |
+| Dionysus, god of mirth and wine              | CN        |  Life | Thyrsus (staff tipped with pine cone)      |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Hades, god of the underworld                 | \|           | LE        | \| Death \| Black ram                                 |
+| Hades, god of the underworld                 | LE        |  Death | Black ram                                 |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Hecate, goddess of magic and the moon        | \|           | CE        | \| Knowledge, Trickery \| Setting moon                |
+| Hecate, goddess of magic and the moon        | CE        |  Knowledge, Trickery | Setting moon                |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Hephaestus, god of smithing and craft        | \|           | NG        | \| Knowledge \| Hammer and anvil                      |
+| Hephaestus, god of smithing and craft        | NG        |  Knowledge | Hammer and anvil                      |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Hera, goddess of marriage and intrigue       | \|           | CN        | \| Trickery \| Fan of peacock feathers                |
+| Hera, goddess of marriage and intrigue       | CN        |  Trickery | Fan of peacock feathers                |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Hercules, god of strength and adventure      | \|           | CG        | \| Tempest, War \| Lion’s head                        |
+| Hercules, god of strength and adventure      | CG        |  Tempest, War | Lion’s head                        |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Hermes, god of travel and commerce           | \|           | CG        | \| Trickery \| Caduceus (winged staff and serpents)   |
+| Hermes, god of travel and commerce           | CG        |  Trickery | Caduceus (winged staff and serpents)   |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Hestia, goddess of home and family           | \|           | NG        | \| Life \| Hearth                                     |
+| Hestia, goddess of home and family           | NG        |  Life | Hearth                                     |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Nike, goddess of victory                     | \|           | LN        | \| War \| Winged woman                                |
+| Nike, goddess of victory                     | LN        |  War | Winged woman                                |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Pan, god of nature                           | \|           | CN        | \| Nature \| Syrinx (pan pipes)                       |
+| Pan, god of nature                           | CN        |  Nature | Syrinx (pan pipes)                       |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Poseidon, god of the sea and earthquake      | s \|         | CN        | \| Tempest \| Trident                                 |
+| Poseidon, god of the sea and earthquake      | CN        |  Tempest | Trident                                 |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
-| Tyche, goddess of good fortune               | \|           | N         | \| Trickery \| Red pentagram                          |
+| Tyche, goddess of good fortune               | N         |  Trickery | Red pentagram                          |
 +----------------------------------------------+--------------+-----------+-------------------------------------------------------+
 
 ####Norse Deities
 
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| **Deity** \| **Alignment**\ \| **Domains**   | \| \*\*Sym   | bol\*\*         |                                               |
+| **Deity**  **Alignment**\  **Domains**   |  \*\*Sym   | bol\*\*         |                                               |
 +==============================================+==============+=================+===============================================+
-| Odin, god of knowledge and war               | \| NG        | \| K            | nowledge, War \| Watching blue eye            |
+| Odin, god of knowledge and war               |  NG        |  K            | nowledge, War  Watching blue eye            |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Aegir, god of the sea and storms             | \| NE        | \| T            | empest \| Rough ocean waves                   |
+| Aegir, god of the sea and storms             |  NE        |  T            | empest  Rough ocean waves                   |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Balder, god of beauty and poetry             | \| NG        | \| L            | ife, Light \| Gem-­encrusted silver chalice   |
+| Balder, god of beauty and poetry             |  NG        |  Life, Light  | Gem-­encrusted silver chalice   |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Forseti, god of justice and law              | \| N         | \| L            | ight \| Head of a bearded man                 |
+| Forseti, god of justice and law              |  N         |  L            | ight  Head of a bearded man                 |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Frey, god of fertility and the sun           | \| NG        | \| L            | ife, Light \| Ice-­blue greatsword            |
+| Frey, god of fertility and the sun           |  NG        |  Life, Light  | Ice-­blue greatsword            |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Freya, goddess of fertility and love         | \| NG        | \| L            | ife \| Falcon                                 |
+| Freya, goddess of fertility and love         |  NG        |  Life             |  Falcon                                 |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Frigga, goddess of birth and fertility       | \|           | N \| Life, L    | ight \| Cat                                   |
+| Frigga, goddess of birth and fertility       | N            | Life, Light    |  Cat                                   |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Heimdall, god of watchfulness and loyal      | ty \|        | LG \| Light,    | War \| Curling musical horn                   |
+| Heimdall, god of watchfulness and loyalty    | LG         |  Light, War   |   Curling musical horn                   |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Hel, goddess of the underworld               | \|           | NE \| Death     | \| Woman’s face, rotting on one side          |
+| Hel, goddess of the underworld               | NE           |  Death     |  Woman’s face, rotting on one side          |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Hermod, god of luck                          | \|           | CN \| Tricker   | y \| Winged scroll                            |
+| Hermod, god of luck                          | CN           |  Trickery   |  Winged scroll                            |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Loki, god of thieves and trickery            | \|           | CE \| Tricker   | y \| Flame                                    |
+| Loki, god of thieves and trickery            | CE           |  Trickery   |  Flame                                    |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Njord, god of sea and wind                   | \|           | NG \| Nature,   | Tempest \| Gold coin                          |
+| Njord, god of sea and wind                   | NG           |  Nature,   | Tempest  Gold coin                          |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Odur, god of light and the sun               | \|           | CG \| Light     | \| Solar disk                                 |
+| Odur, god of light and the sun               | CG           |  Light     |  Solar disk                                 |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Sif, goddess of war                          | \|           | CG \| War       | \| Upraised sword                             |
+| Sif, goddess of war                          | CG           |  War       |  Upraised sword                             |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Skadi, god of earth and mountains            | \|           | N \| Nature     | \| Mountain peak                              |
+| Skadi, god of earth and mountains            | N            | Nature     |  Mountain peak                              |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Surtur, god of fire giants and war           | \|           | LE \| War       | \| Flaming sword                              |
+| Surtur, god of fire giants and war           | LE           |  War       |  Flaming sword                              |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Thor, god of storms and thunder              | \|           | CG \| Tempest   | , War \| Hammer                               |
+| Thor, god of storms and thunder              | CG           |  Tempest, War   |  Hammer                               |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Thrym, god of frost giants and cold          | \|           | CE \| War       | \| White double-­bladed axe                   |
+| Thrym, god of frost giants and cold          | CE           |  War       |  White double-­bladed axe                   |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Tyr, god of courage and strategy             | \|           | LN \| Knowled   | ge, War \| Sword                              |
+| Tyr, god of courage and strategy             | LN           |  Knowledge, War   |  Sword                              |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
-| Uller, god of hunting and winter             | \|           | CN \| Nature    | \| Longbow                                    |
+| Uller, god of hunting and winter             | CN           |  Nature    |  Longbow                                    |
 +----------------------------------------------+--------------+-----------------+-----------------------------------------------+
