@@ -26,7 +26,7 @@ module.exports = function(grunt) {
               expand: true,
               flatten: true,
               src: ['bower_components/font-awesome/fonts/*'],
-              dest: 'sphinx_rtd_theme/static/fonts/',
+              dest: 'open5e_red_theme/static/fonts/',
               filter: 'isFile'
           },
           {
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
               flatten: true,
               src: ['bower_components/lato-googlefont/Lato-Bold.ttf',
                     'bower_components/lato-googlefont/Lato-Regular.ttf'],
-              dest: 'sphinx_rtd_theme/static/fonts/',
+              dest: 'open5e_red_theme/static/fonts/',
               filter: 'isFile'
           },
           {
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
               flatten: true,
               src: ['bower_components/robotoslab-googlefont/RobotoSlab-Bold.ttf',
                     'bower_components/robotoslab-googlefont/RobotoSlab-Regular.ttf'],
-              dest: 'sphinx_rtd_theme/static/fonts/',
+              dest: 'open5e_red_theme/static/fonts/',
               filter: 'isFile'
           },
           {
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
               flatten: true,
               src: ['bower_components/inconsolata-googlefont/Inconsolata-Bold.ttf',
                     'bower_components/inconsolata-googlefont/Inconsolata-Regular.ttf'],
-              dest: 'sphinx_rtd_theme/static/fonts/',
+              dest: 'open5e_red_theme/static/fonts/',
               filter: 'isFile'
           }
         ]
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'sass',
           src: ['*.sass'],
-          dest: 'sphinx_rtd_theme/static/css',
+          dest: 'open5e_red_theme/static/css',
           ext: '.css'
         }]
       },
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'sass',
           src: ['*.sass'],
-          dest: 'sphinx_rtd_theme/static/css',
+          dest: 'open5e_red_theme/static/css',
           ext: '.css'
         }]
       }
@@ -95,7 +95,7 @@ module.exports = function(grunt) {
           }
         },
         src: ['js/*.js'],
-        dest: 'sphinx_rtd_theme/static/js/theme.js'
+        dest: 'open5e_red_theme/static/js/theme.js'
       },
       build: {
         options: {
@@ -105,7 +105,7 @@ module.exports = function(grunt) {
           }
         },
         src: ['js/*.js'],
-        dest: 'sphinx_rtd_theme/static/js/theme.js'
+        dest: 'open5e_red_theme/static/js/theme.js'
       }
     },
 
@@ -119,7 +119,7 @@ module.exports = function(grunt) {
     },
     clean: {
       build: ["demo_docs/build"],
-      fonts: ["sphinx_rtd_theme/static/fonts"]
+      fonts: ["open5e_red_theme/static/fonts"]
     },
 
     watch: {
@@ -130,7 +130,7 @@ module.exports = function(grunt) {
       },
       /* Changes in theme dir rebuild sphinx */
       sphinx: {
-        files: ['sphinx_rtd_theme/**/*', 'demo_docs/**/*.rst', 'demo_docs/**/*.py'],
+        files: ['open5e_red_theme/**/*', 'demo_docs/**/*.rst', 'demo_docs/**/*.py'],
         tasks: ['clean:build','exec:build_sphinx']
       },
       /* JavaScript */
@@ -160,4 +160,3 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['exec:bower_update','clean:build','sass:dev','browserify:dev','exec:build_sphinx','connect','open','watch']);
   grunt.registerTask('build', ['exec:bower_update','clean:build','sass:build','browserify:build','exec:build_sphinx']);
 }
-

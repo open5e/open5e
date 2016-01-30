@@ -24,4 +24,5 @@ publish
 
 _themes/node_modules/
 *.scssc
+*.sassc
 _themes/bower_components/*
