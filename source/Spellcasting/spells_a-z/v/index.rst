@@ -1,5 +1,6 @@
 V Spells
 ----------
+
 .. toctree::
    :name: mastertoc
    :titlesonly:

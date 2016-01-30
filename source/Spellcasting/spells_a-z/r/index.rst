@@ -1,6 +1,7 @@
 R Spells
 ----------
-.. toctree::
+
+.. toctree:: 
    :name: mastertoc
    :titlesonly:
    :glob:
