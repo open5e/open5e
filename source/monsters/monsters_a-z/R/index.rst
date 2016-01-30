@@ -7,3 +7,4 @@ R Monsters
    :glob:
 
    **/*
+   *

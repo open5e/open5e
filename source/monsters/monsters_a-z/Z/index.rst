@@ -7,3 +7,4 @@ Z Monsters
    :glob:
 
    **/*
+   *

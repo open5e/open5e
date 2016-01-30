@@ -7,3 +7,4 @@ L Monsters
    :glob:
 
    **/*
+   *

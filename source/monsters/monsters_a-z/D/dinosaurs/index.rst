@@ -1,3 +1,10 @@
-dinosaurs.md  
----------
+Dinosaurs
+----------
 
+.. toctree::
+   :caption: Table of Contents
+   :name: mastertoc
+   :titlesonly:
+   :glob:
+   
+   *

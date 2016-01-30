@@ -9,3 +9,4 @@ H Monsters
    :maxdepth: 1
    
    **/*
+   *

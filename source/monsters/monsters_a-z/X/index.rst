@@ -7,3 +7,4 @@ X Monsters
    :glob:
 
    **/*
+   *
