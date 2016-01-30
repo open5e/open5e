@@ -1,4 +1,4 @@
-Spells a-z
+Spells A-Z
 ----------
 .. toctree::
    :caption: Table of Contents

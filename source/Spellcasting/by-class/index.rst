@@ -1,5 +1,5 @@
 Spells by Class
---------
+----------------
 
 .. toctree::
    :caption: Table of Contents
