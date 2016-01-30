@@ -1,6 +1,6 @@
 
-Spellcasting
-------------
+Spellcasting Basics
+-------------------
 
 Magic permeates fantasy gaming worlds and often appears in the form of a
 spell.
@@ -11,7 +11,7 @@ and monsters use spells in unique ways. Regardless of its source, a
 spell follows the rules here.
 
 What Is a Spell?
-----------------
+~~~~~~~~~~~~~~~~
 
 A spell is a discrete magical effect, a single shaping of the magical
 energies that suffuse the multiverse into a specific, limited

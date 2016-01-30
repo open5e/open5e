@@ -2,10 +2,8 @@ Combat
 ------
 
 .. toctree::
-   :caption: Table of Contents
-   :name: mastertoc
-   :titlesonly:
+   :name: combat
    :glob:
-   :maxdepth: 1
+   :maxdepth: 2
    
    *

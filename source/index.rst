@@ -11,7 +11,6 @@ Welcome to open5e
 Contents:
 
 .. toctree::
-   :caption: Table of Contents
    :name: mastertoc
    :titlesonly:
    :glob:
