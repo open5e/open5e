@@ -1,7 +1,5 @@
-Spellcasting
-------------
-
-Contents:
+Running A Game
+--------------
 
 .. toctree::
    :caption: Table of Contents
@@ -10,5 +8,3 @@ Contents:
    :maxdepth: 2
    
    *
-   by-class/index
-   spells_a-z/index
