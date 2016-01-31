@@ -1,6 +1,6 @@
 language: python
 python:
-  - "2.7"
+- '2.7'
 install: pip install sphinx
 script: sphinx-build -b html -d build/doctrees -c . -W source build/html
 deploy:
@@ -8,7 +8,7 @@ deploy:
   provider: s3
   access_key_id: AKIAINWEJWNC6G6AOHZQ
   secret_access_key:
-    secure: "l6TvgkMSdApIOs0B1mPT87U0XiHhYG9EhCzyUXi46T54ziVDcJtLes3JviiBhcN2yxcJD8lOe792OGNl4Y/u8jFnnmn4ppj40aTO8ftcQL7vhRte3lq/Kp/+SFHec2yMLFPa9+dXOfUPiKmWc0wtTB5xK55Eq8It6MXmkWtPaky5oc4oglP654ulLxSZpiOZYliOqClztLwgGvrPMbSfa3x+IbqzFTPw4KHP1Ulhmbs0yOByQ7DRA898PhL7wkzrvKWbM9kaq2uuVUx3eaoWClCiVasKN1X1YOHCL9h4HfJ7VO4wM9mnWI6C2KCLQTrNjseibna8qzOpffrGOd4aLo1wmLkhtm/qVLO6J0xlGKrMtWTmBsnzrKUeeAMZ9sJtJTix4NX2ulufP11OIebQif1/Gwxs5Gh7Hwf+GvXnsnjx00hRyedeCYwlTdegXzqnP6Sl8t5LxOeteYMHhtmc762d++Qvyfbrc0Z2PPrqfCQ6Py+tUIB5SsmbbCY8sTQwvZoVwdEQEu0mzh1GtiV/v84Heahn40erY5PvgilVf2156nrMfd+e3ii84m+sjYMiOv43WvD/b5jCETf8aEh28IRYHwb55CUfiOUzpJwoBZAJ3oPHk761B2zbe7t+w4rt1EpGTwlCT9dlm0Zte2iEvwWULpRXRAY+/O4MAI7HKZQ="
+    secure: E7+a0GTGdbyXQTLRaDWJRWIk6u+Vh+5kQY8X7D683Dp5uXLmOCea27OXRYRWFG9mxE6M23+9xl2bdoypd4iIixW0s+CQAls/al4INuEMaYR9ZlXBSyYWqs4W7d8RMwUSEQufZRMElYG0ccOxBHzq9axd4M5RNbMOOiLGSTm9wuWwry44MfgFm5GAEureI02NwwPLxZZ5KvJGFPE1iBG+lOUUiTT2M7Mn+44Z+9KvJshuEbUcp9+PpSbCDCzbxVG2fDTApJGJ8TqR+oO6YpjGr/fewZiKveLejEHFc60lUv8KJVaiAUgUMW80I2AN7fKJhfWgw8Owg9Oe8PyD7m4fs1FsMbb/tcJyKhPkwmGt/uLxUG8PeMMxYvb86FT2oBobmqIwU8uyPJxqPGx2XTft65JOf567lwPP0tw1LqYxAe/YA4L+mHi8HlMH1Pzs0rTd/bohP0nujxpTBorx7A3iFz6tJRcM61XR8p96e8OdBzyEmCGkgsb17ShBgfdCULBelkIaa8MTrSEDP1vBLmDfHfbjTw5VMVyzlb//0XjJeKtJ3qMOIIcvTWSZdPCA5yWMMlAcxyMG82QCwbNWHyJJ4aW9o6MNVy3NU3dy8XBg7TbemlydmcyjnYS4zVB5vQogWMMbhzVWpG5pRdXClWvHOp28jFIQUj4Z3lc77s06TQo=
   bucket: open5e
   local-dir: build/html
   on:
