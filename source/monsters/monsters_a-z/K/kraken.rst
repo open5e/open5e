@@ -86,5 +86,3 @@ must succeed on a DC 23 Constitution saving throw, taking 16 (3d10)
 poison damage on a failed save, or half as much damage on a successful
 one. A strong current disperses the cloud, which otherwise disappears at
 the end of the kraken’s next turn.
-
--------------------------------------------------------------

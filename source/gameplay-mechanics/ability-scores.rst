@@ -397,7 +397,7 @@ succeeds, the successful characters are able to guide their companions
 out of danger. Otherwise, the group stumbles into one of these hazards.
 
 Using Each Ability
-------------------
+^^^^^^^^^^^^^^^^^^
 
 Every task that a character or monster might attempt in the game is
 covered by one of the six abilities. This section explains in more
