@@ -2,7 +2,7 @@ Monsters A-Z
 -------------------------------------------------------------
 
 .. toctree::
-   :name: mastertoc
+   :name: monsters-az
    :titlesonly:
    :glob:
    :maxdepth: 1

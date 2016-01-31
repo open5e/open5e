@@ -2,7 +2,7 @@ Running a Game
 --------------
 
 .. toctree::
-   :name: mastertoc
+   :name: running
    :titlesonly:
    :glob:
    :maxdepth: 1
