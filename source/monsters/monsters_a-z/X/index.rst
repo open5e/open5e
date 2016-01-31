@@ -6,5 +6,4 @@ X Monsters
    :titlesonly:
    :glob:
 
-   **/*
    *

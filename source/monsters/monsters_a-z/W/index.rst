@@ -6,5 +6,4 @@ W Monsters
    :titlesonly:
    :glob:
 
-   **/*
    *
