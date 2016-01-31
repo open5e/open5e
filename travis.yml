@@ -1,0 +1,24 @@
+language: sphinx
+
+#                   builder   doctrees dir   config file location
+#                      v       v                 v
+script: sphinx-build -b html -d build/doctrees -c . -W source build/html
+#                                                    ^
+#                                         turn warnings into errors
+
+deploy:
+  provider: s3
+  bucket: open5e
+
+  # Don't clean up build artifacts (cuz we're gonna deploy them)
+  skip_cleanup: true
+
+  # Only deploy the built html/css/js
+  local_dir: build/html
+
+  on:
+    # Don't deploy if it's a fork
+    repo: eepMoody/open5e
+
+    # Only deploy master (default behavior, but explicit is better)
+    branch: master
