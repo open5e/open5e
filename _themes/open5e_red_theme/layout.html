@@ -93,7 +93,7 @@
           {% if logo and theme_logo_only %}
             <a href="{{ pathto(master_doc) }}">
           {% else %}
-            <a href="{{ pathto(master_doc) }}" class="icon icon-home"> {{ project }}
+            <a href="{{ pathto(master_doc) }}"> {{ project }}
           {% endif %}
 
           {% if logo %}
@@ -106,11 +106,6 @@
             {%- set nav_version = version %}
             {% if READTHEDOCS and current_version %}
               {%- set nav_version = current_version %}
-            {% endif %}
-            {% if nav_version %}
-              <div class="version">
-                {{ nav_version }}
-              </div>
             {% endif %}
           {% endif %}
 

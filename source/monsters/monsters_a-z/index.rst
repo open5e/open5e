@@ -5,6 +5,5 @@ Monsters A-Z
    :name: monsters-az
    :titlesonly:
    :glob:
-   :maxdepth: 1
    
    */index
