@@ -1,6 +1,10 @@
-language: sphinx
+language: python
+python:
+  - "2.7"
+install: pip install sphinx
 script: sphinx-build -b html -d build/doctrees -c . -W source build/html
 deploy:
+  skip_cleanup: true
   provider: s3
   access_key_id: AKIAJZCAKVND5W37I5EQ
   secret_access_key:
