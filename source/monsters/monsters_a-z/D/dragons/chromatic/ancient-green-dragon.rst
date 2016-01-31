@@ -1,5 +1,5 @@
 Ancient Green Dragon  
----------
+-------------------------------------------------------------
 
 
 Gargantuan dragon, lawful evil
@@ -33,8 +33,9 @@ Resistance (3/Day)**: If the dragon fails a saving throw, it can choose
 to succeed instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The dragon can use its Frightful Presence. It then
+***Multiattack**: The dragon can use its Frightful Presence. It then
 makes three attacks: one with its bite and two with its claws. **Bite**:
 *Melee Weapon Attack*: +15 to hit, reach 15 ft., one target. *Hit*: 19
 (2d10 + 8) piercing damage plus 10 (3d6) poison damage. **Claw**: *Melee

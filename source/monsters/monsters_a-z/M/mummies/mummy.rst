@@ -1,5 +1,5 @@
 Mummy  
----------
+-------------------------------------------------------------
 
 
 Medium undead, lawful evil
@@ -35,8 +35,9 @@ poisoned
 **Challenge** 3 (700 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The mummy can use its Dreadful Glare and makes one
+***Multiattack**: The mummy can use its Dreadful Glare and makes one
 attack with its rotting fist. **Rotting Fist**: *Melee Weapon Attack*:
 +5 to hit, reach 5 ft., one target. *Hit*: 10 (2d6 + 3) bludgeoning
 damage plus 10 (3d6) necrotic damage. If the target is a creature, it

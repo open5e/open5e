@@ -1,5 +1,5 @@
 Young Red Dragon  
----------
+-------------------------------------------------------------
 
 
 Large dragon, chaotic evil
@@ -29,8 +29,9 @@ Large dragon, chaotic evil
 **Challenge** 10 (5,900 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The dragon makes three attacks: one with its bite and
+***Multiattack**: The dragon makes three attacks: one with its bite and
 two with its claws. **Bite**: *Melee Weapon Attack*: +10 to hit, reach
 10 ft., one target. *Hit*: 17 (2d10 + 6) piercing damage plus 3 (1d6)
 fire damage. **Claw**: *Melee Weapon Attack*: +10 to hit, reach 5 ft.,

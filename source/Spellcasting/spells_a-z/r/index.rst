@@ -1,7 +1,7 @@
 R Spells
-----------
-.. toctree::
-   :caption: Table of Contents
+-------------------------------------------------------------
+
+.. toctree:: 
    :name: mastertoc
    :titlesonly:
    :glob:

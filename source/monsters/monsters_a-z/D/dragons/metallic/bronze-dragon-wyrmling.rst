@@ -1,5 +1,5 @@
 Bronze Dragon Wyrmling  
----------
+-------------------------------------------------------------
 
 
 Medium dragon, lawful good
@@ -31,8 +31,9 @@ Medium dragon, lawful good
 **Amphibious**: The dragon can breathe air and water.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
+***Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
 *Hit*: 8 (1d10 + 3) piercing damage. **Breath Weapons (Recharge 5–6)**:
 The dragon uses one of the following breath weapons. **Lightning
 Breath**: The dragon exhales lightning in a 40- foot line that is 5 feet

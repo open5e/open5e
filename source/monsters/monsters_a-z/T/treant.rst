@@ -1,5 +1,5 @@
 Treant  
----------
+-------------------------------------------------------------
 
 
 Huge plant, chaotic good
@@ -29,8 +29,9 @@ indistinguishable from a normal tree. **Siege Monster**: The treant
 deals double damage to objects and structures.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The treant makes two slam attacks. **Slam**: *Melee
+***Multiattack**: The treant makes two slam attacks. **Slam**: *Melee
 Weapon Attack*: +10 to hit, reach 5 ft., one target. *Hit*: 16 (3d6 + 6)
 bludgeoning damage. **Rock**: *Ranged Weapon Attack*: +10 to hit, range
 60/180 ft., one target. *Hit*: 28 (4d10 + 6) bludgeoning damage.

@@ -1,5 +1,5 @@
 Ice Devil  
----------
+-------------------------------------------------------------
 
 
 Large fiend (devil), lawful evil
@@ -36,8 +36,9 @@ darkvision. **Magic Resistance**: The devil has advantage on saving
 throws against spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The devil makes three attacks: one with its bite, one
+***Multiattack**: The devil makes three attacks: one with its bite, one
 with its claws, and one with its tail. **Bite**: *Melee Weapon Attack*:
 +10 to hit, reach 5 ft., one target. *Hit*: 12 (2d6 + 5) piercing damage
 plus 10 (3d6) cold damage. **Claws**: *Melee Weapon Attack*: +10 to hit,

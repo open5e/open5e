@@ -1,5 +1,5 @@
 Shield Guardian  
----------
+-------------------------------------------------------------
 
 
 Large construct, unaligned
@@ -45,13 +45,15 @@ caster, requiring no components. When the spell is cast or a new spell
 is stored, any previously stored spell is lost.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The guardian makes two fist attacks. **Fist**: *Melee
+***Multiattack**: The guardian makes two fist attacks. **Fist**: *Melee
 Weapon Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 11 (2d6 + 4)
 bludgeoning damage.
 
-Reactions
+ReActions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Shield**: When a creature makes an attack against the wearer of the
+***Shield**: When a creature makes an attack against the wearer of the
 guardian’s amulet, the guardian grants a +2 bonus to the wearer’s AC if
 the guardian is within 5 feet of the wearer.

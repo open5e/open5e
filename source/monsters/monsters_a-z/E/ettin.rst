@@ -1,5 +1,5 @@
 Ettin  
----------
+-------------------------------------------------------------
 
 
 Large giant, chaotic evil
@@ -30,8 +30,9 @@ stunned, and knocked unconscious. **Wakeful**: When one of the ettin’s
 heads is asleep, its other head is awake.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The ettin makes two attacks: one with its battleaxe and
+***Multiattack**: The ettin makes two attacks: one with its battleaxe and
 one with its morningstar. **Battleaxe**: *Melee Weapon Attack*: +7 to
 hit, reach 5 ft., one target. *Hit*: 14 (2d8 + 5) slashing damage.
 **Morningstar**: *Melee Weapon Attack*: +7 to hit, reach 5 ft., one

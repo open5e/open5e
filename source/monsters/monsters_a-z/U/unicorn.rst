@@ -1,5 +1,5 @@
 Unicorn  
----------
+-------------------------------------------------------------
 
 
 Large celestial, lawful good
@@ -41,8 +41,9 @@ spells and other magical effects. **Magic Weapons**: The unicorn’s
 weapon attacks are magical.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The unicorn makes two attacks: one with its hooves and
+***Multiattack**: The unicorn makes two attacks: one with its hooves and
 one with its horn. **Hooves**: *Melee Weapon Attack*: +7 to hit, reach 5
 ft., one target. *Hit*: 11 (2d6 + 4) bludgeoning damage. **Horn**:
 *Melee Weapon Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 8 (1d8
@@ -68,5 +69,3 @@ field around itself or another creature it can see within 60 feet of it.
 The target gains a +2 bonus to AC until the end of the unicorn’s next
 turn. **Heal Self (Costs 3 Actions)**: The unicorn magically regains 11
 (2d8 + 2) hit points.
-
---------------

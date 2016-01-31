@@ -48,76 +48,33 @@ granted by your background:
 The Druid
 ^^^^^^^^^
 
-    **Proficiency Cantrips** ̶\ **Spell Slots per Spell Level**\ ̶
+=====  =================  ===================================================  ==============  ===  ===  ===  ===  ===  ===  ===  ===  ===
+Level  Proficiency Bonus  Features                                             Cantrips Known  1st  2nd  3rd  4th  5th  6th  7th  8th  9th
+=====  =================  ===================================================  ==============  ===  ===  ===  ===  ===  ===  ===  ===  ===
+1st    +2                 Druidic, Spellcasting                                2               2     ̶     ̶     ̶     ̶     ̶     ̶     ̶     ̶
+2nd    +2                 Wild Shape, Druid Circle                             2               3     ̶     ̶     ̶     ̶     ̶     ̶     ̶     ̶
+3rd    +2                  ̶                                                    2               4    2     ̶     ̶     ̶     ̶     ̶     ̶     ̶
+4th    +2                 Wild Shape Improvement, Ability Score Improvement    3               4    3     ̶     ̶     ̶     ̶     ̶     ̶     ̶
+5th    +3                  ̶                                                    3               4    3    2     ̶     ̶     ̶     ̶     ̶     ̶
+6th    +3                 Druid Circle feature                                 3               4    3    3     ̶     ̶     ̶     ̶     ̶     ̶
+7th    +3                  ̶                                                    3               4    3    3    1     ̶     ̶     ̶     ̶     ̶
+8th    +3                 Wild Shape Improvement, Ability Score Improvement    3               4    3    3    2     ̶     ̶     ̶     ̶     ̶
+9th    +4                  ̶                                                    3               4    3    3    3    1     ̶     ̶     ̶     ̶
+10th   +4                 Druid Circle feature                                 4               4    3    3    3    2     ̶     ̶     ̶     ̶
+11th   +4                  ̶                                                    4               4    3    3    3    2    1     ̶     ̶     ̶
+12th   +4                 Ability Score Improvement                            4               4    3    3    3    2    1     ̶     ̶     ̶
+13th   +5                  ̶                                                    4               4    3    3    3    2    1    1     ̶     ̶
+14th   +5                 Druid Circle feature                                 4               4    3    3    3    2    1    1     ̶     ̶
+15th   +5                  ̶                                                    4               4    3    3    3    2    1    1    1     ̶
+16th   +5                 Ability Score Improvement                            4               4    3    3    3    2    1    1    1     ̶
+17th   +6                  ̶                                                    4               4    3    3    3    2    1    1    1    1
+18th   +6                 Timeless Body, Beast Spells                          4               4    3    3    3    3    1    1    1    1
+19th   +6                 Ability Score Improvement                            4               4    3    3    3    3    2    1    1    1
+20th   +6                 Archdruid                                            4               4    3    3    3    3    2    2    1    1
+=====  =================  ===================================================  ==============  ===  ===  ===  ===  ===  ===  ===  ===  ===
 
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| >     | >     | > **Features**  | >     | >    | >    | >    | >    | >    | >    | >    | >    | >    |
-| **Lev | **Bon |                 | **Kno | **1s | **2n | **3r | **4t | **5t | **6t | **7t | **8t | **9t |
-| el**  | us**  |                 | wn**  | t**  | d**  | d**  | h**  | h**  | h**  | h**  | h**  | h**  |
-+=======+=======+=================+=======+======+======+======+======+======+======+======+======+======+
-| > 1st | > +2  | > Druidic,      | > 2   | > 2  | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   |
-|       |       | Spellcasting    |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| > 2nd | > +2  | > Wild Shape,   | > 2   | > 3  | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   |
-|       |       | Druid Circle    |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| > 3rd | > +2  | > ̶              | > 2   | > 4  | > 2  | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| > 4th | > +2  | > Wild Shape    | > 3   | > 4  | > 3  | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   |
-|       |       | improvement,    |       |      |      |      |      |      |      |      |      |      |
-|       |       | Ability Score > |       |      |      |      |      |      |      |      |      |      |
-|       |       | > Improvement   |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| > 5th | > +3  | > ̶              | > 3   | > 4  | > 3  | > 2  | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| > 6th | > +3  | > Druid Circle  | > 3   | > 4  | > 3  | > 3  | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   |
-|       |       | feature         |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| > 7th | > +3  | > ̶              | > 3   | > 4  | > 3  | > 3  | > 1  | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| > 8th | > +3  | > Wild Shape    | > 3   | > 4  | > 3  | > 3  | > 2  | > ̶   | > ̶   | > ̶   | > ̶   | > ̶   |
-|       |       | improvement,    |       |      |      |      |      |      |      |      |      |      |
-|       |       | Ability Score > |       |      |      |      |      |      |      |      |      |      |
-|       |       | > Improvement   |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| > 9th | > +4  | > ̶              | > 3   | > 4  | > 3  | > 3  | > 3  | > 1  | > ̶   | > ̶   | > ̶   | > ̶   |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| >     | > +4  | > Druid Circle  | > 4   | > 4  | > 3  | > 3  | > 3  | > 2  | > ̶   | > ̶   | > ̶   | > ̶   |
-| 10th  |       | feature         |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| >     | > +4  | > ̶              | > 4   | > 4  | > 3  | > 3  | > 3  | > 2  | > 1  | > ̶   | > ̶   | > ̶   |
-| 11th  |       |                 |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| >     | > +4  | > Ability Score | > 4   | > 4  | > 3  | > 3  | > 3  | > 2  | > 1  | > ̶   | > ̶   | > ̶   |
-| 12th  |       | Improvement     |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| >     | > +5  | > ̶              | > 4   | > 4  | > 3  | > 3  | > 3  | > 2  | > 1  | > 1  | > ̶   | > ̶   |
-| 13th  |       |                 |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| >     | > +5  | > Druid Circle  | > 4   | > 4  | > 3  | > 3  | > 3  | > 2  | > 1  | > 1  | > ̶   | > ̶   |
-| 14th  |       | feature         |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| >     | > +5  | > ̶              | > 4   | > 4  | > 3  | > 3  | > 3  | > 2  | > 1  | > 1  | > 1  | > ̶   |
-| 15th  |       |                 |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| >     | > +5  | > Ability Score | > 4   | > 4  | > 3  | > 3  | > 3  | > 2  | > 1  | > 1  | > 1  | > ̶   |
-| 16th  |       | Improvement     |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| >     | > +6  | > ̶              | > 4   | > 4  | > 3  | > 3  | > 3  | > 2  | > 1  | > 1  | > 1  | > 1  |
-| 17th  |       |                 |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| >     | > +6  | > Timeless      | > 4   | > 4  | > 3  | > 3  | > 3  | > 3  | > 1  | > 1  | > 1  | > 1  |
-| 18th  |       | Body, Beast     |       |      |      |      |      |      |      |      |      |      |
-|       |       | Spells          |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| >     | > +6  | > Ability Score | > 4   | > 4  | > 3  | > 3  | > 3  | > 3  | > 2  | > 1  | > 1  | > 1  |
-| 19th  |       | Improvement     |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-| >     | > +6  | > Archdruid     | > 4   | > 4  | > 3  | > 3  | > 3  | > 3  | > 2  | > 2  | > 1  | > 1  |
-| 20th  |       |                 |       |      |      |      |      |      |      |      |      |      |
-+-------+-------+-----------------+-------+------+------+------+------+------+------+------+------+------+
-
-**Druidic**
+Druidic
+~~~~~~~
 
 You know Druidic, the secret language of druids. You can speak the
 language and use it to leave hidden messages. You and others who know
@@ -133,14 +90,14 @@ Drawing on the divine essence of nature itself, you can cast spells to
 shape that essence to your will.
 
 Cantrips
-^^^^^^^^
+~~~~~~~~
 
 At 1st level, you know two cantrips of your choice from the druid spell
 list. You learn additional druid cantrips of your choice at higher
 levels, as shown in the Cantrips Known column of the Druid table.
 
 Preparing and Casting Spells
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Druid table shows how many spell slots you have to cast your spells
 of 1st level and higher. To cast one of these druid spells, you must
@@ -155,7 +112,7 @@ your druid level (minimum of one spell). The spells must be of a level
 for which you have spell slots.
 
 Spellcasting Focus
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 You can use a druidic focus (see chapter 5, “Equip- ment”) as a
 spellcasting focus for your druid spells.
@@ -173,31 +130,19 @@ into any beast that has a challenge rating of 1/4 or lower that doesn’t
 have a flying or swimming speed.
 
 Beast Shapes
-^^^^^^^^^^^^
+~~~~~~~~~~~~
 
-**Max.**
+=====  ===  ===========================  =======
+Level  CR   Limitations                  Example
+=====  ===  ===========================  =======
+2nd    1/4  No flying or swimming speed  Wolf
+4th    1/2  No flying speed              Crocodile
+8th    1    —                            Giant eagle
+=====  ===  ===========================  =======
 
-For example, if you are a 3rd-level druid, you have
-
-**Level**
-
-**CR Limitations Example**
-
-four 1st-level and two 2nd-level spell slots. With a
-
-Wisdom of 16, your list of prepared spells can
-
-    2nd 1/4 No flying or swimming speed
-
-    Wolf
-
-    4th 1/2 No flying speed Crocodile
-
-    8th 1 — Giant
-
-eagle
-
-include six spells of 1st or 2nd level, in any combination. If you
+For example, if you are a 3rd-level druid, you have four 1st-level 
+and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells 
+can a include six spells of 1st or 2nd level, in any combination. If you
 prepare the 1st-level spell *cure wounds,* you can cast it using a
 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from
 your list of prepared spells.
@@ -208,7 +153,7 @@ and meditation: at least 1 minute per spell level for each spell on your
 list.
 
 Spellcasting Ability
-^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~
 
 Wisdom is your spellcasting ability for your druid spells, since your
 magic draws upon your devotion and attunement to nature. You use your
@@ -222,7 +167,7 @@ for a druid spell you cast and when making an attack roll with one.
 modifier
 
 Ritual Casting
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 You can cast a druid spell as a ritual if that spell has the ritual tag
 and you have the spell prepared.
@@ -366,105 +311,105 @@ Arctic
 ^^^^^^
 
 +------------------+-------------------------------------------+
-| \| \*\*Druid L   | evel\*\* \| **Circle Spells**             |
+| Druid Level      | Circle Spells                             |
 +==================+===========================================+
-| \| 3rd \| \*ho   | ld person\ *, *\ spike growth\*           |
+| 3rd              | hold person, spike growth                 |
 +------------------+-------------------------------------------+
-| \| 5th \| \*sl   | eet storm\ *, *\ slow\*                   |
+| 5th              | sleet storm, slow                         |
 +------------------+-------------------------------------------+
-| \| 7th \| \*fr   | eedom of movement\ *, *\ ice storm\*      |
+| 7th              | freedom of movement, ice storm            |
 +------------------+-------------------------------------------+
-| \| 9th \| \*co   | mmune with nature\ *, *\ cone of cold\*   |
+| 9th              | commune with nature, cone of cold         |
 +------------------+-------------------------------------------+
 
 Coast
 ^^^^^
 
 +------------------+--------------------------------------------+
-| \| \*\*Druid L   | evel\*\* \| **Circle Spells**              |
+| Druid Level      | Circle Spells                              |
 +==================+============================================+
-| \| 3rd \| \*mi   | rror image\ *, *\ misty step\*             |
+| 3rd              | mirror image, misty step                   |
 +------------------+--------------------------------------------+
-| \| 5th \| \*wa   | ter breathing\ *, *\ water walk\*          |
+| 5th              | water breathing, water walk                |
 +------------------+--------------------------------------------+
-| \| 7th \| \*co   | ntrol water\ *, *\ freedom of movement\*   |
+| 7th              | control water, freedom of movement         |
 +------------------+--------------------------------------------+
-| \| 9th \| \*co   | njure elemental\ *, *\ scrying\*           |
+| 9th              | conjure elemental, scrying                 |
 +------------------+--------------------------------------------+
 
 Desert
 ^^^^^^
 
 +------------------+-------------------------------------------------------+
-| \| \*\*Druid L   | evel\ **\| **\ Circle Spells\*\*                      |
+| Druid Level      | Circle Spells                                         |
 +==================+=======================================================+
-| \| 3rd \| \*bl   | ur\ *, *\ silence\*                                   |
+| 3rd              | blur, silence                                         |
 +------------------+-------------------------------------------------------+
-| \| 5th \| \*cr   | eate food and water\ *, *\ protection from energy\*   |
+| 5th              | create food and water, protection from energy         |
 +------------------+-------------------------------------------------------+
-| \| 7th \| \*bl   | ight\ *, *\ hallucinatory terrain\*                   |
+| 7th              | blight, hallucinatory terrain                         |
 +------------------+-------------------------------------------------------+
-| \| 9th \| \*in   | sect plague\ *, *\ wall of stone\*                    |
+| 9th              | insect plague, wall of stone                          |
 +------------------+-------------------------------------------------------+
 
 Forest
 ^^^^^^
 
 +------------------+------------------------------------------+
-| \| \*\*Druid L   | evel\*\* \| **Circle Spells**            |
+| Druid Level      | Circle Spells                            |
 +==================+==========================================+
-| \| 3rd \| \*ba   | rkskin\ *, *\ spider climb\*             |
+| 3rd              | barkskin, spider climb                   |
 +------------------+------------------------------------------+
-| \| 5th \| \*ca   | ll lightning\ *, *\ plant growth\*       |
+| 5th              | call lightning, plant growth             |
 +------------------+------------------------------------------+
-| \| 7th \| \*di   | vination\ *, *\ freedom of movement\*    |
+| 7th              | divination, freedom of movement          |
 +------------------+------------------------------------------+
-| \| 9th \| \*co   | mmune with nature\ *, *\ tree stride\*   |
+| 9th              | commune with nature, tree stride         |
 +------------------+------------------------------------------+
 
 Grassland
 ^^^^^^^^^
 
 +------------------+------------------------------------------+
-| \| \*\*Druid L   | evel\*\* \| **Circle Spells**            |
+| Druid Level      | Circle Spells                            |
 +==================+==========================================+
-| \| 3rd \| \*in   | visibility\ *, *\ pass without trace\*   |
+| 3rd              | invisibility, pass without trace         |
 +------------------+------------------------------------------+
-| \| 5th \| \*da   | ylight\ *, *\ haste\*                    |
+| 5th              | daylight, haste                          |
 +------------------+------------------------------------------+
-| \| 7th \| \*di   | vination\ *, *\ freedom of movement\*    |
+| 7th              | divination, freedom of movement          |
 +------------------+------------------------------------------+
-| \| 9th \| \*dr   | eam\ *, *\ insect plague\*               |
+| 9th              | dream, insect plague                     |
 +------------------+------------------------------------------+
 
 Mountain
 ^^^^^^^^
 
 +------------------+-----------------------------------------+
-| \| \*\*Druid L   | evel\*\* \| **Circle Spells**           |
+| Druid Level      | Circle Spells                           |
 +==================+=========================================+
-| \| 3rd \| \*sp   | ider climb\ *, *\ spike growth\*        |
+| 3rd              | spider climb, spike growth              |
 +------------------+-----------------------------------------+
-| \| 5th \| \*li   | ghtning bolt\ *, *\ meld into stone\*   |
+| 5th              | lightning bolt, meld into stone         |
 +------------------+-----------------------------------------+
-| \| 7th \| \*st   | one shape\ *, *\ stoneskin\*            |
+| 7th              | stone shape, stoneskin                  |
 +------------------+-----------------------------------------+
-| \| 9th \| \*pa   | sswall\ *, *\ wall of stone\*           |
+| 9th              | passwall, wall of stone                 |
 +------------------+-----------------------------------------+
 
 Swamp
 ^^^^^
 
 +------------------+----------------------------------------------+
-| \| \*\*Druid L   | evel\*\* \| **Circle Spells**                |
+| Druid Level      | Circle Spells                                |
 +==================+==============================================+
-| \| 3rd \| \*ac   | id arrow, darkness\*                         |
+| 3rd              | acid arrow, darkness                         |
 +------------------+----------------------------------------------+
-| \| 5th \| \*wa   | ter walk\ *, *\ stinking cloud\*             |
+| 5th              | water walk, stinking cloud                   |
 +------------------+----------------------------------------------+
-| \| 7th \| \*fr   | eedom of movement\ *, *\ locate creature\*   |
+| 7th              | freedom of movement, locate creature         |
 +------------------+----------------------------------------------+
-| \| 9th \| \*in   | sect plague\ *, *\ scrying\*                 |
+| 9th              | insect plague, scrying                       |
 +------------------+----------------------------------------------+
 
 Land’s Stride
@@ -500,7 +445,7 @@ The creature is aware of this effect before it makes
 its attack against you.
 
 Sacred Plants and Wood
-''''''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^^^^
 
 A druid holds certain plants to be sacred, particularly alder, ash,
 birch, elder, hazel, holly, juniper, mistletoe, oak, rowan, willow, and
@@ -520,7 +465,7 @@ other plants to take on similar uses. For instance, a druid of a desert
 region might value the yucca tree and cactus plants.
 
 Druids and the Gods
-'''''''''''''''''''
+^^^^^^^^^^^^^^^^^^^
 
 Some druids venerate the forces of nature themselves, but most druids
 are devoted to one of the many nature deities worshiped in the

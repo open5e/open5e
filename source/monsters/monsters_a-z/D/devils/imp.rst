@@ -1,5 +1,5 @@
 Imp  
----------
+-------------------------------------------------------------
 
 
 Tiny fiend (devil, shapechanger), lawful evil
@@ -41,8 +41,9 @@ doesn’t impede the imp’s darkvision. **Magic Resistance**: The imp has
 advantage on saving throws against spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Sting (Bite in Beast Form)**: *Melee Weapon Attack*: +5 to hit, reach
+***Sting (Bite in Beast Form)**: *Melee Weapon Attack*: +5 to hit, reach
 5 ft., one target. *Hit*: 5 (1d4 + 3) piercing damage, and the target
 must make on a DC 11 Constitution saving throw, taking 10 (3d6) poison
 damage on a failed save, or half as much damage on a successful one.

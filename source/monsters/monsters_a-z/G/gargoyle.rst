@@ -1,5 +1,5 @@
 Gargoyle  
----------
+-------------------------------------------------------------
 
 
 Medium elemental, chaotic evil
@@ -33,8 +33,9 @@ nonmagical attacks that aren’t adamantine
 indistinguishable from an inanimate statue.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The gargoyle makes two attacks: one with its bite and
+***Multiattack**: The gargoyle makes two attacks: one with its bite and
 one with its claws. **Bite**: *Melee Weapon Attack*: +4 to hit, reach 5
 ft., one target. *Hit*: 5 (1d6 + 2) piercing damage. **Claws**: *Melee
 Weapon Attack*: +4 to hit, reach 5 ft., one target. *Hit*: 5 (1d6 + 2)

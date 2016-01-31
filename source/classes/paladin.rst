@@ -47,51 +47,30 @@ Equipment
 The Paladin
 ^^^^^^^^^^^
 
-    **Proficiency** ̶\ **Spell Slots per Spell Level**\ ̶
-
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > **Level**   | > **Bonus**   | > **Features**                                 | > **1st**   | > **2nd**   | > **3rd**   | > **4th**   | > **5th**   |
-+===============+===============+================================================+=============+=============+=============+=============+=============+
-| > 1st         | > +2          | > Divine Sense, Lay on Hands                   | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 2nd         | > +2          | > Fighting Style, Spellcasting, Divine Smite   | > 2         | > ̶          | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 3rd         | > +2          | > Divine Health, Sacred Oath                   | > 3         | > ̶          | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 4th         | > +2          | > Ability Score Improvement                    | > 3         | > ̶          | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 5th         | > +3          | > Extra Attack                                 | > 4         | > 2         | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 6th         | > +3          | > Aura of Protection                           | > 4         | > 2         | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 7th         | > +3          | > Sacred Oath feature                          | > 4         | > 3         | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 8th         | > +3          | > Ability Score Improvement                    | > 4         | > 3         | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 9th         | > +4          | > ̶                                             | > 4         | > 3         | > 2         | > ̶          | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 10th        | > +4          | > Aura of Courage                              | > 4         | > 3         | > 2         | > ̶          | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 11th        | > +4          | > Improved Divine Smite                        | > 4         | > 3         | > 3         | > ̶          | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 12th        | > +4          | > Ability Score Improvement                    | > 4         | > 3         | > 3         | > ̶          | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 13th        | > +5          | > ̶                                             | > 4         | > 3         | > 3         | > 1         | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 14th        | > +5          | > Cleansing Touch                              | > 4         | > 3         | > 3         | > 1         | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 15th        | > +5          | > Sacred Oath feature                          | > 4         | > 3         | > 3         | > 2         | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 16th        | > +5          | > Ability Score Improvement                    | > 4         | > 3         | > 3         | > 2         | > ̶          |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 17th        | > +6          | > ̶                                             | > 4         | > 3         | > 3         | > 3         | > 1         |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 18th        | > +6          | > Aura improvements                            | > 4         | > 3         | > 3         | > 3         | > 1         |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 19th        | > +6          | > Ability Score Improvement                    | > 4         | > 3         | > 3         | > 3         | > 2         |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
-| > 20th        | > +6          | > Sacred Oath feature                          | > 4         | > 3         | > 3         | > 3         | > 2         |
-+---------------+---------------+------------------------------------------------+-------------+-------------+-------------+-------------+-------------+
+=====  =====  ===============================================  ===  ===  ===  ===  ===
+Level  Bonus  Features                                         1st  2nd  3rd  4th  5th
+=====  =====  ===============================================  ===  ===  ===  ===  ===
+1st    +2     Divine Sense, Lay on Hands                        ̶     ̶     ̶     ̶     ̶
+2nd    +2     Fighting Style, Spellcasting, Divine Smite       2     ̶     ̶     ̶     ̶
+3rd    +2     Divine Health, Sacred Oath                       3     ̶     ̶     ̶     ̶
+4th    +2     Ability Score Improvement                        3     ̶     ̶     ̶     ̶
+5th    +3     Extra Attack                                     4    2     ̶     ̶     ̶
+6th    +3     Aura of Protection                               4    2     ̶     ̶     ̶
+7th    +3     Sacred Oath feature                              4    3     ̶     ̶     ̶
+8th    +3     Ability Score Improvement                        4    3     ̶     ̶     ̶
+9th    +4     \-                                               4    3    2     ̶     ̶
+10th   +4     Aura of Courage                                  4    3    2     ̶     ̶
+11th   +4     Improved Divine Smite                            4    3    3     ̶     ̶
+12th   +4     Ability Score Improvement                        4    3    3     ̶     ̶
+13th   +5     \-                                               4    3    3    1     ̶
+14th   +5     Cleansing Touch                                  4    3    3    1     ̶
+15th   +5     Sacred Oath feature                              4    3    3    2     ̶
+16th   +5     Ability Score Improvement                        4    3    3    2     ̶
+17th   +6     \-                                               4    3    3    3    1
+18th   +6     Aura improvements                                4    3    3    3    1
+19th   +6     Ability Score Improvement                        4    3    3    3    2
+20th   +6     Sacred Oath feature                              4    3    3    3    2
+=====  =====  ===============================================  ===  ===  ===  ===  ===
 
     **Divine Sense**
 
@@ -116,9 +95,7 @@ Lay on Hands
 
 Your blessed touch can heal wounds. You have a pool of healing power
 that replenishes when you take a long rest. With that pool, you can
-restore a total number of hit points equal to your paladin level
-
-× 5.
+restore a total number of hit points equal to your paladin level × 5.  
 
 As an action, you can touch a creature and draw power from the pool to
 restore a number of hit points to that creature, up to the maximum
@@ -133,25 +110,25 @@ one.
 This feature has no effect on undead and constructs.
 
 Fighting Style
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 At 2nd level, you adopt a style of fighting as your specialty. Choose
 one of the following options. You can’t take a Fighting Style option
 more than once, even if you later get to choose again.
 
 Defense
-^^^^^^^
+~~~~~~~
 
 While you are wearing armor, you gain a +1 bonus to AC.
 
 Dueling
-^^^^^^^
+~~~~~~~
 
 When you are wielding a melee weapon in one hand and no other weapons,
 you gain a +2 bonus to damage rolls with that weapon.
 
 Great Weapon Fighting
-^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~
 
 When you roll a 1 or 2 on a damage die for an attack you make with a
 melee weapon that you are wielding with two hands, you can reroll the
@@ -166,13 +143,13 @@ within 5 feet of you, you can use your reaction to impose disadvantage
 on the attack roll. You must be wielding a shield.
 
 Spellcasting
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 By 2nd level, you have learned to draw on divine magic through
 meditation and prayer to cast spells as a cleric does.
 
 Preparing and Casting Spells
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Paladin table shows how many spell slots you have to cast your
 spells. To cast one of your paladin spells of 1st level or higher, you
@@ -198,7 +175,7 @@ meditation: at least 1 minute per spell level for each spell on your
 list.
 
 Spellcasting Ability
-^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 Charisma is your spellcasting ability for your paladin spells, since
 their power derives from the strength of your convictions. You use your
@@ -213,13 +190,13 @@ DC for a paladin spell you cast and when making an attack roll with one.
     modifier
 
 Spellcasting Focus
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 You can use a holy symbol as a spellcasting focus for your paladin
 spells.
 
 Divine Smite
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 Starting at 2nd level, when you hit a creature with a melee weapon
 attack, you can expend one spell slot to deal radiant damage to the
@@ -230,13 +207,13 @@ higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the
 target is an undead or a fiend.
 
 Divine Health
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 By 3rd level, the divine magic flowing through you makes you immune to
 disease.
 
 Sacred Oath
-~~~~~~~~~~~
+-----------
 
 When you reach 3rd level, you swear the oath that binds you as a paladin
 forever. Up to this time you have been in a preparatory stage, committed
@@ -275,7 +252,7 @@ Some Channel Divinity effects require saving throws. When you use such
 an effect from this class, the DC equals your paladin spell save DC.
 
 Ability Score Improvement
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
@@ -283,13 +260,13 @@ increase two ability scores of your choice by 1. As normal, you can’t
 increase an ability score above 20 using this feature.
 
 Extra Attack
-~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 Beginning at 5th level, you can attack twice, instead of once, whenever
 you take the Attack action on your turn.
 
 Aura of Protection
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 Starting at 6th level, whenever you or a friendly creature within 10
 feet of you must make a saving throw, the creature gains a bonus to the
@@ -299,7 +276,7 @@ saving throw equal to your Charisma modifier (with a minimum bonus of
 At 18th level, the range of this aura increases to 30 feet.
 
 Aura of Courage
-~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 Starting at 10th level, you and friendly creatures within 10 feet of you
 can’t be frightened while you are conscious.
@@ -309,7 +286,7 @@ can’t be frightened while you are conscious.
 feet.
 
 Improved Divine Smite
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 By 11th level, you are so suffused with righteous might that all your
 melee weapon strikes carry divine power with them. Whenever you hit a
@@ -318,7 +295,7 @@ damage. If you also use your Divine Smite with an attack, you add this
 damage to the extra damage of your Divine Smite.
 
 Cleansing Touch
-~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 
 Beginning at 14th level, you can use your action to end one spell on
 yourself or on one willing creature that you touch.
@@ -328,7 +305,7 @@ modifier (a minimum of once). You regain expended uses when you finish a
 long rest.
 
 Sacred Oaths
-------------
+^^^^^^^^^^^^
 
 Becoming a paladin involves taking vows that commit the paladin to the
 cause of righteousness, an active path of fighting wickedness. The final
@@ -339,7 +316,7 @@ oath. For others, the actual swearing of the oath is a formality, an
 official stamp on what has always been true in the paladin’s heart.
 
 Oath of Devotion
-~~~~~~~~~~~~~~~~
+----------------
 
 The Oath of Devotion binds a paladin to the loftiest ideals of justice,
 virtue, and order. Sometimes called cavaliers, white knights, or holy
@@ -381,19 +358,15 @@ You gain oath spells at the paladin levels listed.
 Oath of Devotion Spells
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-    **Paladin**
-
-    **Level Spells**
-
-    3rd *protection from evil and good, sanctuary*
-
-    5th *lesser restoration, zone of truth*
-
-    9th *beacon of hope, dispel magic*
-
-    13th *freedom of movement, guardian of faith*
-
-    17th *commune, flame strike*
+===========   ================
+Paladin       Level Spells
+===========   ================    
+3rd           protection from evil and good, sanctuary
+5th           lesser restoration, zone of truth
+9th           beacon of hope, dispel magic
+13th          freedom of movement, guardian of faith
+17th          commune, flame strike
+===========   ================
 
 Channel Divinity
 ^^^^^^^^^^^^^^^^
@@ -457,7 +430,7 @@ Once you use this feature, you can’t use it again until you finish a
 long rest.
 
 Breaking Your Oath
-''''''''''''''''''
+^^^^^^^^^^^^^^^^^^
 
     A paladin tries to hold to the highest standards of conduct, but
     even the most virtuous paladin is fallible. Sometimes the right path

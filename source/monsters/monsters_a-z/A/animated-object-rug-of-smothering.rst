@@ -1,5 +1,5 @@
 Animated Object: Rug of Smothering  
----------
+-------------------------------------------------------------
 
 
 Large construct, unaligned
@@ -38,8 +38,9 @@ Appearance**: While the rug remains motionless, it is indistinguishable
 from a normal rug.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Smother**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one Medium
+***Smother**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one Medium
 or smaller creature. *Hit*: The creature is grappled (escape DC 13).
 Until this grapple ends, the target is restrained, blinded, and at risk
 of suffocating, and the rug can’t smother another target. In addition,

@@ -1,5 +1,5 @@
 Ghouls  
----------
+-------------------------------------------------------------
 
 
 Ghast
@@ -39,8 +39,9 @@ ghast and any ghouls within 30 feet of it have advantage on saving
 throws against effects that turn undead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one creature.
+***Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one creature.
 *Hit*: 12 (2d8 + 3) piercing damage. **Claws**: *Melee Weapon Attack*:
 +5 to hit, reach 5 ft., one target. *Hit*: 10 (2d6 + 3) slashing damage.
 If the target is a creature other than an undead, it must succeed on a
@@ -76,8 +77,9 @@ Medium undead, chaotic evil
 **Challenge** 1 (200 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Bite**: *Melee Weapon Attack*: +2 to hit, reach 5 ft., one creature.
+***Bite**: *Melee Weapon Attack*: +2 to hit, reach 5 ft., one creature.
 *Hit*: 9 (2d6 + 2) piercing damage. **Claws**: *Melee Weapon Attack*: +4
 to hit, reach 5 ft., one target. *Hit*: 7 (2d4 + 2) slashing damage. If
 the target is a creature other than an elf or undead, it must succeed on

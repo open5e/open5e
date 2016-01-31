@@ -1,5 +1,5 @@
 Couatl  
----------
+-------------------------------------------------------------
 
 
 Medium celestial, lawful good
@@ -42,8 +42,9 @@ Mind**: The couatl is immune to scrying and to any effect that would
 sense its emotions, read its thoughts, or detect its location.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Bite**: *Melee Weapon Attack*: +8 to hit, reach 5 ft., one creature.
+***Bite**: *Melee Weapon Attack*: +8 to hit, reach 5 ft., one creature.
 *Hit*: 8 (1d6 + 5) piercing damage, and the target must succeed on a DC
 13 Constitution saving throw or be poisoned for 24 hours. Until this
 poison ends, the target is unconscious. Another creature can use an

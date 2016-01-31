@@ -1,5 +1,5 @@
 Horned Devil  
----------
+-------------------------------------------------------------
 
 
 Large fiend (devil), lawful evil
@@ -36,8 +36,9 @@ darkvision. **Magic Resistance**: The devil has advantage on saving
 throws against spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The devil makes three melee attacks: two with its fork
+***Multiattack**: The devil makes three melee attacks: two with its fork
 and one with its tail. It can use Hurl Flame in place of any melee
 attack. **Fork**: *Melee Weapon Attack*: +10 to hit, reach 10 ft., one
 target. *Hit*: 15 (2d8 + 6) piercing damage. **Tail**: *Melee Weapon

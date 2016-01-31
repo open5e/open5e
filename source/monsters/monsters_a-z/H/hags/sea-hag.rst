@@ -1,5 +1,5 @@
 Sea Hags  
----------
+-------------------------------------------------------------
 
 
 Sea Hag
@@ -44,8 +44,9 @@ Appearance for the next 24 hours.
     the hag.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Claws**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
+***Claws**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
 *Hit*: 10 (2d6 + 3) slashing damage. **Death Glare**: The hag targets
 one frightened creature she can see within 30 feet of her. If the target
 can see the hag, it must succeed on a DC 11 Wisdom saving throw against

@@ -1,5 +1,5 @@
 Bone Devil  
----------
+-------------------------------------------------------------
 
 
 Large fiend (devil), lawful evil
@@ -38,8 +38,9 @@ darkvision. **Magic Resistance**: The devil has advantage on saving
 throws against spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The devil makes three attacks: two with its claws and
+***Multiattack**: The devil makes three attacks: two with its claws and
 one with its sting. **Claw**: *Melee Weapon Attack*: +8 to hit, reach 10
 ft., one target. *Hit*: 8 (1d8 + 4) slashing damage. **Sting**: *Melee
 Weapon Attack*: +8 to hit, reach 10 ft., one target. *Hit*: 13 (2d8 + 4)

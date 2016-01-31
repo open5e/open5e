@@ -1,5 +1,5 @@
 Night Hag  
----------
+-------------------------------------------------------------
 
 
 Night Hag
@@ -42,8 +42,9 @@ shift* (self only), *ray of enfeeblement*, *sleep*
 spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Claws (Hag Form Only)**: *Melee Weapon Attack*: +7 to hit, reach 5
+***Claws (Hag Form Only)**: *Melee Weapon Attack*: +7 to hit, reach 5
 ft., one target. *Hit*: 13 (2d8 + 4) slashing damage. **Change Shape**:
 The hag magically polymorphs into a Small or Medium female humanoid, or
 back into her true form. Her statistics are the same in each form. Any

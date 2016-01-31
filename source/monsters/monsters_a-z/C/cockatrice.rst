@@ -1,5 +1,5 @@
 Cockatrice  
----------
+-------------------------------------------------------------
 
 
 Small monstrosity, unaligned
@@ -23,8 +23,9 @@ Small monstrosity, unaligned
 **Challenge** 1/2 (100 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one creature.
+***Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one creature.
 *Hit*: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC
 11 Constitution saving throw against being magically petrified. On a
 failed save, the creature begins to turn to stone and is restrained. It

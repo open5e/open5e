@@ -1,5 +1,5 @@
 Centaur  
----------
+-------------------------------------------------------------
 
 
 Large monstrosity, neutral good
@@ -29,8 +29,9 @@ target and then hits it with a pike attack on the same turn, the target
 takes an extra 10 (3d6) piercing damage.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The centaur makes two attacks: one with its pike and
+***Multiattack**: The centaur makes two attacks: one with its pike and
 one with its hooves or two with its longbow. **Pike**: *Melee Weapon
 Attack*: +6 to hit, reach 10 ft., one target. *Hit*: 9 (1d10 + 4)
 piercing damage. **Hooves**: *Melee Weapon Attack*: +6 to hit, reach 5

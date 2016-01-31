@@ -1,10 +1,8 @@
 Z Monsters
-----------
+-------------------------------------------------------------
 .. toctree::
-   :caption: Table of Contents
    :name: mastertoc
    :titlesonly:
    :glob:
 
-   **/*
-   *
+   zombies/index

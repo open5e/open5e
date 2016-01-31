@@ -1,5 +1,5 @@
 Ogre Zombie  
----------
+-------------------------------------------------------------
 
 
 Large undead, neutral evil
@@ -32,6 +32,7 @@ unless the damage is radiant or from a critical hit. On a success, the
 zombie drops to 1 hit point instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Morningstar**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one
+***Morningstar**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one
 target. *Hit*: 13 (2d8 + 4) bludgeoning damage.

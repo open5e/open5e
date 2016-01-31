@@ -1,5 +1,5 @@
 Chuul  
----------
+-------------------------------------------------------------
 
 
 Large aberration, chaotic evil
@@ -33,8 +33,9 @@ The chuul senses magic within 120 feet of it at will. This trait
 otherwise works like the *detect magic* spell but isn’t itself magical.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The chuul makes two pincer attacks. If the chuul is
+***Multiattack**: The chuul makes two pincer attacks. If the chuul is
 grappling a creature, the chuul can also use its tentacles once.
 **Pincer**: *Melee Weapon Attack*: +6 to hit, reach 10 ft., one target.
 *Hit*: 11 (2d6 + 4) bludgeoning damage. The target is grappled (escape

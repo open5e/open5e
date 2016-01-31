@@ -1,5 +1,5 @@
 Adult Bronze Dragon  
----------
+-------------------------------------------------------------
 
 
 Huge dragon, lawful good
@@ -33,8 +33,9 @@ Resistance (3/Day)**: If the dragon fails a saving throw, it can choose
 to succeed instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The dragon can use its Frightful Presence. It then
+***Multiattack**: The dragon can use its Frightful Presence. It then
 makes three attacks: one with its bite and two with its claws. **Bite**:
 *Melee Weapon Attack*: +12 to hit, reach 10 ft., one target. *Hit*: 18
 (2d10 + 7) piercing damage. **Claw**: *Melee Weapon Attack*: +12 to hit,

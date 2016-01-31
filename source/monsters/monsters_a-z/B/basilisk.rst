@@ -1,5 +1,5 @@
 Basilisk  
----------
+-------------------------------------------------------------
 
 
 Medium monstrosity, unaligned
@@ -38,6 +38,7 @@ feet of it in bright light, it mistakes itself for a rival and targets
 itself with its gaze.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
+***Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
 *Hit*: 10 (2d6 + 3) piercing damage plus 7 (2d6) poison damage.

@@ -1,5 +1,5 @@
 Warhorse Skeleton  
----------
+-------------------------------------------------------------
 
 
 Large undead, lawful evil
@@ -27,6 +27,7 @@ STR\| DEX\| CON\| INT\| WIS\| CHA ---------\| ---------\| ---------\|
 **Challenge** 1/2 (100 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Hooves**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
+***Hooves**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
 *Hit*: 11 (2d6 + 4) bludgeoning damage.

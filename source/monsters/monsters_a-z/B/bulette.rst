@@ -1,5 +1,5 @@
 Bulette  
----------
+-------------------------------------------------------------
 
 
 Large monstrosity, unaligned
@@ -28,8 +28,9 @@ Large monstrosity, unaligned
 jump is up to 15 feet, with or without a running start.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Bite**: *Melee Weapon Attack*: +7 to hit, reach 5 ft., one target.
+***Bite**: *Melee Weapon Attack*: +7 to hit, reach 5 ft., one target.
 *Hit*: 30 (4d12 + 4) piercing damage. **Deadly Leap**: If the bulette
 jumps at least 15 feet as part of its movement, it can then use this
 action to land on its feet in a space that contains one or more other

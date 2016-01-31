@@ -1,5 +1,5 @@
 Androsphinx  
----------
+-------------------------------------------------------------
 
 
 Large monstrosity, lawful neutral
@@ -48,8 +48,9 @@ nonmagical attacks
 | **6th level (1 slot):** *heroes’ feast*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The sphinx makes two claw attacks. **Claw**: *Melee
+***Multiattack**: The sphinx makes two claw attacks. **Claw**: *Melee
 Weapon Attack*: +12 to hit, reach 5 ft., one target. *Hit*: 17 (2d10 +
 6) slashing damage. **Roar (3/Day)**: The sphinx emits a magical roar.
 Each time it roars before finishing a long rest, the roar is louder and

@@ -1,5 +1,5 @@
 Giants  
----------
+-------------------------------------------------------------
 
 
 Cloud Giant
@@ -38,8 +38,9 @@ Huge giant, neutral good (50%) or neutral evil (50%)
   **1/day each**: *control weather*, *gaseous form*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The giant makes two morningstar attacks.
+***Multiattack**: The giant makes two morningstar attacks.
 **Morningstar**: *Melee Weapon Attack*: +12 to hit, reach 10 ft., one
 target. *Hit*: 21 (3d8 + 8) piercing damage. **Rock**: *Ranged Weapon
 Attack*: +12 to hit, range 60/240 ft., one target. *Hit*: 30 (4d10 + 8)
@@ -75,8 +76,9 @@ Huge giant, lawful evil
 **Challenge** 9 (5,000 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The giant makes two greatsword attacks. **Greatsword**:
+***Multiattack**: The giant makes two greatsword attacks. **Greatsword**:
 *Melee Weapon Attack*: +11 to hit, reach 10 ft., one target. *Hit*: 28
 (6d6 + 7) slashing damage. **Rock**: *Ranged Weapon Attack*: +11 to hit,
 range 60/240 ft., one target. *Hit*: 29 (4d10 + 7) bludgeoning damage.
@@ -111,8 +113,9 @@ Huge giant, neutral evil
 **Challenge** 8 (3,900 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The giant makes two greataxe attacks. **Greataxe**:
+***Multiattack**: The giant makes two greataxe attacks. **Greataxe**:
 *Melee Weapon Attack*: +9 to hit, reach 10 ft., one target. *Hit*: 25
 (3d12 + 6) slashing damage. **Rock**: *Ranged Weapon Attack*: +9 to hit,
 range 60/240 ft., one target. *Hit*: 28 (4d10 + 6) bludgeoning damage.
@@ -143,8 +146,9 @@ Huge giant, chaotic evil
 **Challenge** 5 (1,800 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The giant makes two greatclub attacks. **Greatclub**:
+***Multiattack**: The giant makes two greatclub attacks. **Greatclub**:
 *Melee Weapon Attack*: +8 to hit, reach 10 ft., one target. *Hit*: 18
 (3d8 + 5) bludgeoning damage. **Rock**: *Ranged Weapon Attack*: +8 to
 hit, range 60/240 ft., one target. *Hit*: 21 (3d10 + 5) bludgeoning
@@ -181,17 +185,19 @@ Huge giant, neutral
 checks made to hide in rocky terrain.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The giant makes two greatclub attacks. **Greatclub**:
+***Multiattack**: The giant makes two greatclub attacks. **Greatclub**:
 *Melee Weapon Attack*: +9 to hit, reach 15 ft., one target. *Hit*: 19
 (3d8 + 6) bludgeoning damage. **Rock**: *Ranged Weapon Attack*: +9 to
 hit, range 60/240 ft., one target. *Hit*: 28 (4d10 + 6) bludgeoning
 damage. If the target is a creature, it must succeed on a DC 17 Strength
 saving throw or be knocked prone.
 
-Reactions
+ReActions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Rock Catching**: If a rock or similar object is hurled at the giant,
+***Rock Catching**: If a rock or similar object is hurled at the giant,
 the giant can, with a successful DC 10 Dexterity saving throw, catch the
 missile and take no bludgeoning damage from it.
 
@@ -233,8 +239,9 @@ no material components: **At will**: *detect magic*, *feather fall*,
 *levitate*, *light* **3/day each**: *control weather*, *water breathing*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The giant makes two greatsword attacks. **Greatsword**:
+***Multiattack**: The giant makes two greatsword attacks. **Greatsword**:
 *Melee Weapon Attack*: +14 to hit, reach 10 ft., one target. *Hit*: 30
 (6d6 + 9) slashing damage. **Rock**: *Ranged Weapon Attack*: +14 to hit,
 range 60/240 ft., one target. *Hit*: 35 (4d12 + 9) bludgeoning damage.

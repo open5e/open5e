@@ -1,5 +1,5 @@
 Hydra  
----------
+-------------------------------------------------------------
 
 
 Huge monstrosity, unaligned
@@ -39,9 +39,8 @@ Huge monstrosity, unaligned
   heads is awake.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The hydra makes as many bite attacks as it has heads.
+***Multiattack**: The hydra makes as many bite attacks as it has heads.
 **Bite**: *Melee Weapon Attack*: +8 to hit, reach 10 ft., one target.
 *Hit*: 10 (1d10 + 5) piercing damage.
-
---------------

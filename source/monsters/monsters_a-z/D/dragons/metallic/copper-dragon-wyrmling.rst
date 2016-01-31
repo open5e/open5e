@@ -1,5 +1,5 @@
 Copper Dragon Wyrmling  
----------
+-------------------------------------------------------------
 
 
 Medium dragon, chaotic good
@@ -29,8 +29,9 @@ Medium dragon, chaotic good
 **Challenge** 1 (200 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one target.
+***Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one target.
 *Hit*: 7 (1d10 + 2) piercing damage. **Breath Weapons (Recharge 5–6)**:
 The dragon uses one of the following breath weapons. **Acid Breath**:
 The dragon exhales acid in an 20-foot line that is 5 feet wide. Each

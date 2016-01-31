@@ -1,5 +1,5 @@
 Adult White Dragon  
----------
+-------------------------------------------------------------
 
 
 Huge dragon, chaotic evil
@@ -35,8 +35,9 @@ Resistance (3/Day)**: If the dragon fails a saving throw, it can choose
 to succeed instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The dragon can use its Frightful Presence. It then
+***Multiattack**: The dragon can use its Frightful Presence. It then
 makes three attacks: one with its bite and two with its claws. **Bite**:
 *Melee Weapon Attack*: +11 to hit, reach 10 ft., one target. *Hit*: 17
 (2d10 + 6) piercing damage plus 4 (1d8) cold damage. **Claw**: *Melee

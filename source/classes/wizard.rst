@@ -47,74 +47,54 @@ Equipment
 
 The Wizard
 ^^^^^^^^^^
+    
+==============  =====================  ==================================  =======================  ============  ============  ============  ============  ============  ============  ============  ============  ============
+                                                                                                    Spell Slots per Spell Level
+                                                                                                    -----------------------------------------------------------------------------------------------------------------------------
+Level           Proficiency Bonus      Features                            Cantrips Known           1st           2nd           3rd           4th           5th           6th           7th           8th           9th
+==============  =====================  ==================================  =======================  ============  ============  ============  ============  ============  ============  ============  ============  ============
+1st             +2                     Spellcasting, Arcane Recovery       3                        2              ̶              ̶              ̶              ̶              ̶              ̶              ̶               ̶          
+2nd             +2                     Arcane Tradition                    3                        3              ̶              ̶              ̶              ̶              ̶              ̶              ̶               ̶          
+3rd             +2                      ̶                                   3                        4              2             ̶              ̶              ̶              ̶              ̶              ̶               ̶          
+4th             +2                     Ability Score Improvement           4                        4              3             ̶              ̶              ̶              ̶              ̶              ̶               ̶          
+5th             +3                      ̶                                   4                        4              3             2             ̶              ̶              ̶              ̶              ̶               ̶          
+6th             +3                     Arcane Tradition feature            4                        4              3             3             ̶              ̶              ̶              ̶              ̶               ̶          
+7th             +3                     -                                   4                        4              3             3             1             ̶              ̶              ̶              ̶               ̶          
+8th             +3                     Ability Score Improvement           4                        4              3             3             2             ̶              ̶              ̶              ̶               ̶          
+9th             +4                      ̶                                   4                        4              3             3             3             1             ̶              ̶              ̶               ̶          
+10th            +4                     Arcane Tradition feature            5                        4              3             3             3             2             ̶              ̶              ̶               ̶          
+11th            +4                      ̶                                   5                        4              3             3             3             2             1             ̶              ̶               ̶          
+12th            +4                     Ability Score Improvement           5                        4              3             3             3             2             1             ̶              ̶               ̶          
+13th            +5                      ̶                                   5                        4              3             3             3             2             1             1             ̶               ̶          
+14th            +5                     Arcane Tradition feature            5                        4              3             3             3             2             1             1             ̶               ̶          
+15th            +5                      ̶                                   5                        4              3             3             3             2             1             1             1              ̶          
+16th            +5                     Ability Score Improvement           5                        4              3             3             3             2             1             1             1              ̶          
+17th            +6                      ̶                                   5                        4              3             3             3             2             1             1             1              1         
+18th            +6                     Spell Mastery                       5                        4              3             3             3             3             1             1             1              1         
+19th            +6                     Ability Score Improvement           5                        4              3             3             3             3             2             1             1              1         
+20th            +6                     Signature Spell                     5                        4              3             3             3             3             2             2             1              1         
+==============  =====================  ==================================  =======================  ============  ============  ============  ============  ============  ============  ============  ============  ============
+     
+Spellcasting
+^^^^^^^^^^^^
 
-    **Proficiency Cantrips —Spell Slots per Spell Level—**
-
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > **Level**   | > **Bonus**   | > **Features**                    | > **Known**   | > **1st**   | > **2nd**   | > **3rd**   | > **4th**   | > **5th**   | > **6th**   | > **7th**   | > **8th**   | > **9th**   |
-+===============+===============+===================================+===============+=============+=============+=============+=============+=============+=============+=============+=============+=============+
-| > 1st         | > +2          | > Spellcasting, Arcane Recovery   | > 3           | > 2         | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 2nd         | > +2          | > Arcane Tradition                | > 3           | > 3         | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 3rd         | > +2          | > ̶                                | > 3           | > 4         | > 2         | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 4th         | > +2          | > Ability Score Improvement       | > 4           | > 4         | > 3         | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 5th         | > +3          | > ̶                                | > 4           | > 4         | > 3         | > 2         | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 6th         | > +3          | > Arcane Tradition feature        | > 4           | > 4         | > 3         | > 3         | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 7th         | > +3          | > ̶                                | > 4           | > 4         | > 3         | > 3         | > 1         | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 8th         | > +3          | > Ability Score Improvement       | > 4           | > 4         | > 3         | > 3         | > 2         | > ̶          | > ̶          | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 9th         | > +4          | > ̶                                | > 4           | > 4         | > 3         | > 3         | > 3         | > 1         | > ̶          | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 10th        | > +4          | > Arcane Tradition feature        | > 5           | > 4         | > 3         | > 3         | > 3         | > 2         | > ̶          | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 11th        | > +4          | > ̶                                | > 5           | > 4         | > 3         | > 3         | > 3         | > 2         | > 1         | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 12th        | > +4          | > Ability Score Improvement       | > 5           | > 4         | > 3         | > 3         | > 3         | > 2         | > 1         | > ̶          | > ̶          | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 13th        | > +5          | > ̶                                | > 5           | > 4         | > 3         | > 3         | > 3         | > 2         | > 1         | > 1         | > ̶          | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 14th        | > +5          | > Arcane Tradition feature        | > 5           | > 4         | > 3         | > 3         | > 3         | > 2         | > 1         | > 1         | > ̶          | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 15th        | > +5          | > ̶                                | > 5           | > 4         | > 3         | > 3         | > 3         | > 2         | > 1         | > 1         | > 1         | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 16th        | > +5          | > Ability Score Improvement       | > 5           | > 4         | > 3         | > 3         | > 3         | > 2         | > 1         | > 1         | > 1         | > ̶          |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 17th        | > +6          | > ̶                                | > 5           | > 4         | > 3         | > 3         | > 3         | > 2         | > 1         | > 1         | > 1         | > 1         |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 18th        | > +6          | > Spell Mastery                   | > 5           | > 4         | > 3         | > 3         | > 3         | > 3         | > 1         | > 1         | > 1         | > 1         |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 19th        | > +6          | > Ability Score Improvement       | > 5           | > 4         | > 3         | > 3         | > 3         | > 3         | > 2         | > 1         | > 1         | > 1         |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| > 20th        | > +6          | > Signature Spell                 | > 5           | > 4         | > 3         | > 3         | > 3         | > 3         | > 2         | > 2         | > 1         | > 1         |
-+---------------+---------------+-----------------------------------+---------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-
-    **Spellcasting**
-
-    As a student of arcane magic, you have a spellbook containing spells
-    that show the first glimmerings of your true power.
+As a student of arcane magic, you have a spellbook containing spells
+that show the first glimmerings of your true power.
 
 Cantrips
 ^^^^^^^^
 
-    At 1st level, you know three cantrips of your choice from the wizard
-    spell list. You learn additional wizard cantrips of your choice at
-    higher levels, as
-
-    shown in the Cantrips Known column of the Wizard table.
+At 1st level, you know three cantrips of your choice from the wizard
+spell list. You learn additional wizard cantrips of your choice at
+higher levels, as shown in the Cantrips Known column of the Wizard table.
 
 Spellbook
 ^^^^^^^^^
 
-    At 1st level, you have a spellbook containing six 1st- level wizard
-    spells of your choice. Your spellbook is the repository of the
-    wizard spells you know, except your cantrips, which are fixed in
-    your mind.
+At 1st level, you have a spellbook containing six 1st- level wizard
+spells of your choice. Your spellbook is the repository of the
+wizard spells you know, except your cantrips, which are fixed in
+your mind.
 
 Preparing and Casting Spells
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -257,7 +237,7 @@ towers use the division of magic into schools as a learning device,
 since the spells of each school require mastery of different techniques.
 
 School of Evocation
-~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^
 
 You focus your study on magic that creates powerful elemental effects
 such as bitter cold, searing flame, rolling thunder, crackling
@@ -267,13 +247,13 @@ their spectacular power to protect the weak, while some seek their own
 gain as bandits, adventurers, or aspiring tyrants.
 
 Evocation Savant
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 Beginning when you select this school at 2nd level, the gold and time
 you must spend to copy an evocation spell into your spellbook is halved.
 
 Sculpt Spells
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 Beginning at 2nd level, you can create pockets of relative safety within
 the effects of your evocation spells. When you cast an evocation spell
@@ -284,7 +264,7 @@ take no damage if they would normally take half damage on a successful
 save.
 
 Potent Cantrip
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 Starting at 6th level, your damaging cantrips affect even creatures that
 avoid the brunt of the effect. When a creature succeeds on a saving
@@ -292,13 +272,13 @@ throw against your cantrip, the creature takes half the cantrip’s damage
 (if any) but suffers no additional effect from the cantrip.
 
 Empowered Evocation
-^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~
 
 Beginning at 10th level, you can add your Intelligence modifier to one
 damage roll of any wizard evocation spell you cast.
 
 Overchannel
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 Starting at 14th level, you can increase the power of your simpler
 spells. When you cast a wizard spell of 1st through 5th level that deals
@@ -312,9 +292,9 @@ necrotic damage per spell level increases by 1d12. This damage ignores
 resistance and immunity.
 
 Your Spellbook
-''''''''''''''
+^^^^^^^^^^^^^^
 
-    The spells that you add to your spellbook as you gain levels reflect
+The spells that you add to your spellbook as you gain levels reflect
     the arcane research you conduct on your own, as well as intellectual
     breakthroughs you have had about the nature of the multiverse. You
     might find other spells during your adventures. You could discover a

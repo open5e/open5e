@@ -1,5 +1,5 @@
 fungi.md  
----------
+-------------------------------------------------------------
 
 
 Shrieker
@@ -31,9 +31,10 @@ Perception 6
 **False Appearance**: While the shrieker remains motionless, it is
 indistinguishable from an ordinary fungus.
 
-Reactions
+ReActions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Shriek**: When bright light or a creature is within 30 feet of the
+***Shriek**: When bright light or a creature is within 30 feet of the
 shrieker, it emits a shriek audible within 300 feet of it. The shrieker
 continues to shriek until the disturbance moves out of range and for 1d4
 of the shrieker’s turns afterward.
@@ -68,7 +69,8 @@ Perception 6
 indistinguishable from an ordinary fungus.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The fungus makes 1d4 Rotting Touch attacks. **Rotting
+***Multiattack**: The fungus makes 1d4 Rotting Touch attacks. **Rotting
 Touch**: *Melee Weapon Attack*: +2 to hit, reach 10 ft., one creature.
 *Hit:* 4 (1d8) necrotic damage.

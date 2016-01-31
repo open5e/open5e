@@ -1,5 +1,5 @@
 Erinyes  
----------
+-------------------------------------------------------------
 
 
 Medium fiend (devil), lawful evil
@@ -37,8 +37,9 @@ an extra 13 (3d8) poison damage on a hit (included in the attacks).
 spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The erinyes makes three attacks. **Longsword**: *Melee
+***Multiattack**: The erinyes makes three attacks. **Longsword**: *Melee
 Weapon Attack*: +8 to hit, reach 5 ft., one target. *Hit*: 8 (1d8 + 4)
 slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands,
 plus 13 (3d8) poison damage. **Longbow**: *Ranged Weapon Attack*: +7 to
@@ -47,8 +48,9 @@ plus 13 (3d8) poison damage, and the target must succeed on a DC 14
 Constitution saving throw or be poisoned. The poison lasts until it is
 removed by the lesser restoration spell or similar magic.
 
-Reactions
+ReActions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Parry**: The erinyes adds 4 to its AC against one melee attack that
+***Parry**: The erinyes adds 4 to its AC against one melee attack that
 would hit it. To do so, the erinyes must see the attacker and be
 wielding a melee weapon.

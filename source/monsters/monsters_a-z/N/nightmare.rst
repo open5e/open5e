@@ -1,5 +1,5 @@
 Nightmare  
----------
+-------------------------------------------------------------
 
 
 Large fiend, neutral evil
@@ -29,11 +29,10 @@ damage to anyone riding it. **Illumination**: The nightmare sheds bright
 light in a 10- foot radius and dim light for an additional 10 feet.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Hooves**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
+***Hooves**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
 *Hit*: 13 (2d8 + 4) bludgeoning damage plus 7 (2d6) fire damage.
 **Ethereal Stride**: The nightmare and up to three willing creatures
 within 5 feet of it magically enter the Ethereal Plane from the Material
 Plane, or vice versa.
-
---------------

@@ -1,5 +1,5 @@
 Drider  
----------
+-------------------------------------------------------------
 
 
 Large monstrosity, chaotic evil
@@ -39,8 +39,9 @@ sight. **Web Walker**: The drider ignores movement restrictions caused
 by webbing.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The drider makes three attacks, either with its
+***Multiattack**: The drider makes three attacks, either with its
 longsword or its longbow. It can replace one of those attacks with a
 bite attack. **Bite**: *Melee Weapon Attack*: +6 to hit, reach 5 ft.,
 one creature. *Hit*: 2 (1d4) piercing damage plus 9 (2d8) poison damage.

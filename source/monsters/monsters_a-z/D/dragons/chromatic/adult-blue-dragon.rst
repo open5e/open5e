@@ -1,5 +1,5 @@
 Adult Blue Dragon
----------
+-------------------------------------------------------------
 
 
 Huge dragon, lawful evil
@@ -32,8 +32,9 @@ Huge dragon, lawful evil
 can choose to succeed instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The dragon can use its Frightful Presence. It then
+***Multiattack**: The dragon can use its Frightful Presence. It then
 makes three attacks: one with its bite and two with its claws. **Bite**:
 *Melee Weapon Attack*: +12 to hit, reach 10 ft., one target. *Hit*: 18
 (2d10 + 7) piercing damage plus 5 (1d10) lightning damage. **Claw**:

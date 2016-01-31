@@ -1,5 +1,5 @@
 Lemure  
----------
+-------------------------------------------------------------
 
 
 Medium fiend (devil), lawful evil
@@ -35,6 +35,7 @@ is killed by a good-aligned creature with a *bless* spell cast on that
 creature or its remains are sprinkled with holy water.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Fist**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
+***Fist**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
 *Hit*: 2 (1d4) bludgeoning damage.

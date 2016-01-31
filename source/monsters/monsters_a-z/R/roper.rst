@@ -1,5 +1,5 @@
 Roper  
----------
+-------------------------------------------------------------
 
 
 Large monstrosity, neutral evil
@@ -36,8 +36,9 @@ difficult surfaces, including upside down on ceilings, without needing
 to make an ability check.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The roper makes four attacks with its tendrils, uses
+***Multiattack**: The roper makes four attacks with its tendrils, uses
 Reel, and makes one attack with its bite. **Bite**: *Melee Weapon
 Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 22 (4d8 + 4)
 piercing damage. **Tendril**: *Melee Weapon Attack*: +7 to hit, reach 50

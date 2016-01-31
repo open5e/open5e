@@ -1,5 +1,5 @@
 Tyrannosaurus Rex  
----------
+-------------------------------------------------------------
 
 
 Huge beast, unaligned
@@ -25,8 +25,9 @@ Huge beast, unaligned
 **Challenge** 8 (3,900 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The tyrannosaurus makes two attacks: one with its bite
+***Multiattack**: The tyrannosaurus makes two attacks: one with its bite
 and one with its tail. It can’t make both attacks against the same
 target. **Bite**: *Melee Weapon Attack*: +10 to hit, reach 10 ft., one
 target. *Hit*: 33 (4d12 + 7) piercing damage. If the target is a Medium

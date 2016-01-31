@@ -1,6 +1,6 @@
 
 The Schools of Magic
-''''''''''''''''''''
+--------------------
 
 Academies of magic group spells into eight categories called schools of
 magic. Scholars, particularly wizards, apply these categories to all

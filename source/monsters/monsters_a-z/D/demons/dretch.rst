@@ -1,5 +1,5 @@
 Dretch  
----------
+-------------------------------------------------------------
 
 
 Small fiend (demon), chaotic evil
@@ -30,8 +30,9 @@ understand Abyssal)
 **Challenge** 1/4 (50 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The dretch makes two attacks: one with its bite and one
+***Multiattack**: The dretch makes two attacks: one with its bite and one
 with its claws. **Bite**: *Melee Weapon Attack*: +2 to hit, reach 5 ft.,
 one target. *Hit*: 3 (1d6) piercing damage. **Claws**: *Melee Weapon
 Attack*: +2 to hit, reach 5 ft., one target. *Hit*: 5 (2d4) slashing

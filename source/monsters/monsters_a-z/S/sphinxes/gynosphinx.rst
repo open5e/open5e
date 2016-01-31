@@ -1,5 +1,5 @@
 Gynosphinx  
----------
+-------------------------------------------------------------
 
 
 Large monstrosity, lawful neutral
@@ -48,8 +48,9 @@ nonmagical attacks
   level (1 slot)**: *legend lore*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The sphinx makes two claw attacks. **Claw**: *Melee
+***Multiattack**: The sphinx makes two claw attacks. **Claw**: *Melee
 Weapon Attack*: +8 to hit, reach 5 ft., one target. *Hit*: 13 (2d8 + 4)
 slashing damage.
 

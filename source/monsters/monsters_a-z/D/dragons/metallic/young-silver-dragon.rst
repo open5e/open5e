@@ -1,5 +1,5 @@
 Young Silver Dragon
--------------------
+-------------------------------------------------------------
 
 
 Large dragon, lawful good
@@ -29,8 +29,9 @@ Large dragon, lawful good
 **Challenge** 9 (5,000 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The dragon makes three attacks: one with its bite and
+***Multiattack**: The dragon makes three attacks: one with its bite and
 two with its claws. **Bite**: *Melee Weapon Attack*: +10 to hit, reach
 10 ft., one target. *Hit*: 17 (2d10 + 6) piercing damage. **Claw**:
 *Melee Weapon Attack*: +10 to hit, reach 5 ft., one target. *Hit*: 13

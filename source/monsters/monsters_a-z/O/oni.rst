@@ -1,5 +1,5 @@
 Oni  
----------
+-------------------------------------------------------------
 
 
 Large giant, lawful evil
@@ -42,8 +42,9 @@ spells, requiring no material components: **At will**: *darkness*,
 if it has at least 1 hit point.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The oni makes two attacks, either with its claws or its
+***Multiattack**: The oni makes two attacks, either with its claws or its
 glaive. **Claw (Oni Form Only)**: *Melee Weapon Attack*: +7 to hit,
 reach 5 ft., one target. *Hit*: 8 (1d8 + 4) slashing damage. **Glaive**:
 *Melee Weapon Attack*: +7 to hit, reach 10 ft., one target. *Hit*: 15

@@ -1,5 +1,5 @@
 Azer  
----------
+-------------------------------------------------------------
 
 
 Medium elemental, lawful neutral
@@ -36,8 +36,9 @@ deals an extra 3 (1d6) fire damage (included in the attack).
 dim light for an additional 10 feet.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Warhammer**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one
+***Warhammer**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one
 target. *Hit*: 7 (1d8 + 3) bludgeoning damage, or 8 (1d10 + 3)
 bludgeoning damage if used with two hands to make a melee attack, plus 3
 (1d6) fire damage.

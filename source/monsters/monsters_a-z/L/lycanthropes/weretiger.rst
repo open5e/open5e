@@ -1,5 +1,5 @@
 Weretiger  
----------
+-------------------------------------------------------------
 
 
 Medium humanoid (human, shapechanger), neutral
@@ -41,8 +41,9 @@ prone, the weretiger can make one bite attack against it as a bonus
 action.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack (Humanoid or Hybrid Form Only)**: In humanoid form, the
+***Multiattack (Humanoid or Hybrid Form Only)**: In humanoid form, the
 weretiger makes two scimitar attacks or two longbow attacks. In hybrid
 form, it can attack like a humanoid or make two claw attacks. **Bite
 (Tiger or Hybrid Form Only)**: *Melee Weapon Attack*: +5 to hit, reach 5

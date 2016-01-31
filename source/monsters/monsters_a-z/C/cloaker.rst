@@ -1,5 +1,5 @@
 Cloaker  
----------
+-------------------------------------------------------------
 
 
 Large aberration, chaotic neutral
@@ -33,8 +33,9 @@ cloaker has disadvantage on attack rolls and Wisdom (Perception) checks
 that rely on sight.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The cloaker makes two attacks: one with its bite and
+***Multiattack**: The cloaker makes two attacks: one with its bite and
 one with its tail. **Bite**: *Melee Weapon Attack*: +6 to hit, reach 5
 ft., one creature. *Hit*: 10 (2d6 + 3) piercing damage, and if the
 target is Large or smaller, the cloaker attaches to it. If the cloaker

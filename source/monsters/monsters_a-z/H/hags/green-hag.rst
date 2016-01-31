@@ -1,5 +1,5 @@
 Green Hag  
----------
+-------------------------------------------------------------
 
 
 Green Hag
@@ -36,8 +36,9 @@ humanoid voices. A creature that hears the sounds can tell they are
 imitations with a successful DC 14 Wisdom (Insight) check.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Claws**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
+***Claws**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
 *Hit*: 13 (2d8 + 4) slashing damage. **Illusory Appearance**: The hag
 covers herself and anything she is wearing or carrying with a magical
 illusion that makes her look like another creature of her general size

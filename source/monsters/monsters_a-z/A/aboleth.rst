@@ -1,5 +1,5 @@
 Aboleth  
----------
+-------------------------------------------------------------
 
 
 Large aberration, lawful evil
@@ -37,8 +37,9 @@ learns the creature’s greatest desires if the aboleth can see the
 creature.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The aboleth makes three tentacle attacks. **Tentacle**:
+***Multiattack**: The aboleth makes three tentacle attacks. **Tentacle**:
 *Melee Weapon Attack*: +9 to hit, reach 10 ft., one target. *Hit*: 12
 (2d6 + 5) bludgeoning damage. If the target is a creature, it must
 succeed on a DC 14 Constitution saving throw or become diseased. The

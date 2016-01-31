@@ -1,5 +1,5 @@
 Ankheg  
----------
+-------------------------------------------------------------
 
 
 Large monstrosity, unaligned
@@ -23,8 +23,9 @@ Large monstrosity, unaligned
 **Challenge** 2 (450 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
+***Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
 *Hit*: 10 (2d6 + 3) slashing damage plus 3 (1d6) acid damage. If the
 target is a Large or smaller creature, it is grappled (escape DC 13).
 Until this grapple ends, the ankheg can bite only the grappled creature
