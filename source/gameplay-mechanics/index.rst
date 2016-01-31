@@ -2,7 +2,7 @@ Gameplay Mechanics
 ------------------
 
 .. toctree::
-   :name: mastertoc
+   :name: gameplay
    :titlesonly:
    :glob:
    :maxdepth: 1

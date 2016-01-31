@@ -2,7 +2,7 @@ Monsters
 -------------------------------------------------------------
 
 .. toctree::
-   :name: mastertoc
+   :name: monsters
    :titlesonly:
    :glob:
    :maxdepth: 1

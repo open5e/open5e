@@ -4,7 +4,7 @@ Equipment
 Contents:
 
 .. toctree::
-   :name: mastertoc
+   :name: equipmenttoc
    :titlesonly:
    :glob:
    
