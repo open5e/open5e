@@ -5,5 +5,4 @@ Z Monsters
    :titlesonly:
    :glob:
 
-   **/*
-   *
+   zombies/
