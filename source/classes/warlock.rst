@@ -47,49 +47,30 @@ Equipment
 The Warlock
 ^^^^^^^^^^^
 
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > **Level**   | > **Proficiency Bonus**   | > **Features**                      | > **Cantrips Known**   | > **Spells Known**   | > **Spell Slots**   | > **Slot Level**   | > **Invocations Known**   |
-+===============+===========================+=====================================+========================+======================+=====================+====================+===========================+
-| > 1st         | > +2                      | > Otherworldly Patron, Pact Magic   | > 2                    | > 2                  | > 1                 | > 1st              | ̶                          |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 2nd         | > +2                      | > Eldritch Invocations              | > 2                    | > 3                  | > 2                 | > 1st              | > 2                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 3rd         | > +2                      | > Pact Boon                         | > 2                    | > 4                  | > 2                 | > 2nd              | > 2                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 4th         | > +2                      | > Ability Score Improvement         | > 3                    | > 5                  | > 2                 | > 2nd              | > 2                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 5th         | > +3                      | > ̶                                  | > 3                    | > 6                  | > 2                 | > 3rd              | > 3                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 6th         | > +3                      | > Otherworldly Patron feature       | > 3                    | > 7                  | > 2                 | > 3rd              | > 3                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 7th         | > +3                      | > ̶                                  | > 3                    | > 8                  | > 2                 | > 4th              | > 4                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 8th         | > +3                      | > Ability Score Improvement         | > 3                    | > 9                  | > 2                 | > 4th              | > 4                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 9th         | > +4                      | > ̶                                  | > 3                    | > 10                 | > 2                 | > 5th              | > 5                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 10th        | > +4                      | > Otherworldly Patron feature       | > 4                    | > 10                 | > 2                 | > 5th              | > 5                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 11th        | > +4                      | > Mystic Arcanum (6th level)        | > 4                    | > 11                 | > 3                 | > 5th              | > 5                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 12th        | > +4                      | > Ability Score Improvement         | > 4                    | > 11                 | > 3                 | > 5th              | > 6                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 13th        | > +5                      | > Mystic Arcanum (7th level)        | > 4                    | > 12                 | > 3                 | > 5th              | > 6                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 14th        | > +5                      | > Otherworldly Patron feature       | > 4                    | > 12                 | > 3                 | > 5th              | > 6                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 15th        | > +5                      | > Mystic Arcanum (8th level)        | > 4                    | > 13                 | > 3                 | > 5th              | > 7                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 16th        | > +5                      | > Ability Score Improvement         | > 4                    | > 13                 | > 3                 | > 5th              | > 7                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 17th        | > +6                      | > Mystic Arcanum (9th level)        | > 4                    | > 14                 | > 4                 | > 5th              | > 7                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 18th        | > +6                      | > ̶                                  | > 4                    | > 14                 | > 4                 | > 5th              | > 8                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 19th        | > +6                      | > Ability Score Improvement         | > 4                    | > 15                 | > 4                 | > 5th              | > 8                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
-| > 20th        | > +6                      | > Eldritch Master                   | > 4                    | > 15                 | > 4                 | > 5th              | > 8                       |
-+---------------+---------------------------+-------------------------------------+------------------------+----------------------+---------------------+--------------------+---------------------------+
+================  ===========================  =====================================  ========================  ======================  =====================  ====================  ===========================  
+**Level**         **Proficiency Bonus**        **Features**                           **Cantrips Known**        **Spells Known**        **Spell Slots**        **Slot Level**        **Invocations Known** 
+================  ===========================  =====================================  ========================  ======================  =====================  ====================  ===========================  
+1st               +2                           Otherworldly Patron, Pact Magic        2                         2                       1                      1st                                           
+2nd               +2                           Eldritch Invocations                   2                         3                       2                      1st                   2                       
+3rd               +2                           Pact Boon                              2                         4                       2                      2nd                   2                       
+4th               +2                           Ability Score Improvement              3                         5                       2                      2nd                   2                       
+5th               +3                                                                  3                         6                       2                      3rd                   3                       
+6th               +3                           Otherworldly Patron feature            3                         7                       2                      3rd                   3                       
+7th               +3                                                                  3                         8                       2                      4th                   4                       
+8th               +3                           Ability Score Improvement              3                         9                       2                      4th                   4                       
+9th               +4                                                                  3                         10                      2                      5th                   5                       
+10th              +4                           Otherworldly Patron feature            4                         10                      2                      5th                   5                       
+11th              +4                           Mystic Arcanum (6th level)             4                         11                      3                      5th                   5                       
+12th              +4                           Ability Score Improvement              4                         11                      3                      5th                   6                       
+13th              +5                           Mystic Arcanum (7th level)             4                         12                      3                      5th                   6                       
+14th              +5                           Otherworldly Patron feature            4                         12                      3                      5th                   6                       
+15th              +5                           Mystic Arcanum (8th level)             4                         13                      3                      5th                   7                       
+16th              +5                           Ability Score Improvement              4                         13                      3                      5th                   7                       
+17th              +6                           Mystic Arcanum (9th level)             4                         14                      4                      5th                   7                       
+18th              +6                                                                  4                         14                      4                      5th                   8                       
+19th              +6                           Ability Score Improvement              4                         15                      4                      5th                   8                       
+20th              +6                           Eldritch Master                        4                         15                      4                      5th                   8                       
+================  ===========================  =====================================  ========================  ======================  =====================  ====================  ===========================  
 
     **Otherworldly Patron**
 
@@ -276,8 +257,7 @@ expended spell slots from your Pact Magic feature. Once you regain spell
 slots with this feature, you must finish a long rest before you can do
 so again.
 
-| 
-| Eldritch Invocations --------------------
+ Eldritch Invocations --------------------
 
 If an eldritch invocation has prerequisites, you must meet them to learn
 it. You can learn the invocation at the same time that you meet its
@@ -632,29 +612,29 @@ experience.
 until you finish a long rest.
 
 Your Pact Boon
-''''''''''''''
+~~~~~~~~~~~~~~
 
-    Each Pact Boon option produces a special creature or an object that
-    reflects your patron’s nature.
+Each Pact Boon option produces a special creature or an object that
+reflects your patron’s nature.
 
-    ***Pact of the Chain.*** Your familiar is more cunning than a
-    typical familiar. Its default form can be a reflection of your
-    patron, with sprites and pseudodragons tied to the Archfey and imps
-    and quasits tied to the Fiend. Because the Great Old One’s nature is
-    inscrutable, any familiar form is suitable for it.
+***Pact of the Chain.*** Your familiar is more cunning than a
+typical familiar. Its default form can be a reflection of your
+patron, with sprites and pseudodragons tied to the Archfey and imps
+and quasits tied to the Fiend. Because the Great Old One’s nature is
+inscrutable, any familiar form is suitable for it.
 
-    ***Pact of the Blade.*** If your patron is the Archfey, your weapon
-    might be a slender blade wrapped in leafy vines. If you serve the
-    Fiend, your weapon could be an axe made of black metal and adorned
-    with decorative flames. If your patron is the Great Old One, your
-    weapon might be an ancient-­‐looking spear, with a gemstone embedded
-    in its head, carved to look like a terrible unblinking eye.
+***Pact of the Blade.*** If your patron is the Archfey, your weapon
+might be a slender blade wrapped in leafy vines. If you serve the
+Fiend, your weapon could be an axe made of black metal and adorned
+with decorative flames. If your patron is the Great Old One, your
+weapon might be an ancient-­‐looking spear, with a gemstone embedded
+in its head, carved to look like a terrible unblinking eye.
 
-    ***Pact of the Tome.*** Your Book of Shadows might be a fine,
-    gilt-­‐edged tome with spells of enchantment and illusion, gifted to
-    you by the lordly Archfey. It could be a weighty tome bound in demon
-    hide studded with iron, holding spells of conjuration and a wealth
-    of forbidden lore about the sinister regions of the cosmos, a gift
-    of the Fiend. Or it could be the tattered diary of a lunatic driven
-    mad by contact with the Great Old One, holding scraps of spells that
-    only your own burgeoning insanity allows you to understand and cast.
+***Pact of the Tome.*** Your Book of Shadows might be a fine,
+gilt-­‐edged tome with spells of enchantment and illusion, gifted to
+you by the lordly Archfey. It could be a weighty tome bound in demon
+hide studded with iron, holding spells of conjuration and a wealth
+of forbidden lore about the sinister regions of the cosmos, a gift
+of the Fiend. Or it could be the tattered diary of a lunatic driven
+mad by contact with the Great Old One, holding scraps of spells that
+only your own burgeoning insanity allows you to understand and cast.
