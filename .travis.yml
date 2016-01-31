@@ -1,16 +1,32 @@
+# Required to install sphinx
 language: python
 python:
 - '2.7'
-install: pip install sphinx
-script: sphinx-build -b html -d build/doctrees -c . -W source build/html
+
+# Install sphinx
+install: pip install -r requirements.txt
+
+#                   build dir              config dir  nitpick mode on
+#                      v                         v      v
+script: sphinx-build -b html -d build/doctrees -c . -W -n source build/html
+#                              ^                     ^
+#                           doctrees dir        error on warnings
+
 deploy:
-  skip_cleanup: true
   provider: s3
+  bucket: open5e.com
   access_key_id: AKIAINWEJWNC6G6AOHZQ
   secret_access_key:
     secure: E7+a0GTGdbyXQTLRaDWJRWIk6u+Vh+5kQY8X7D683Dp5uXLmOCea27OXRYRWFG9mxE6M23+9xl2bdoypd4iIixW0s+CQAls/al4INuEMaYR9ZlXBSyYWqs4W7d8RMwUSEQufZRMElYG0ccOxBHzq9axd4M5RNbMOOiLGSTm9wuWwry44MfgFm5GAEureI02NwwPLxZZ5KvJGFPE1iBG+lOUUiTT2M7Mn+44Z+9KvJshuEbUcp9+PpSbCDCzbxVG2fDTApJGJ8TqR+oO6YpjGr/fewZiKveLejEHFc60lUv8KJVaiAUgUMW80I2AN7fKJhfWgw8Owg9Oe8PyD7m4fs1FsMbb/tcJyKhPkwmGt/uLxUG8PeMMxYvb86FT2oBobmqIwU8uyPJxqPGx2XTft65JOf567lwPP0tw1LqYxAe/YA4L+mHi8HlMH1Pzs0rTd/bohP0nujxpTBorx7A3iFz6tJRcM61XR8p96e8OdBzyEmCGkgsb17ShBgfdCULBelkIaa8MTrSEDP1vBLmDfHfbjTw5VMVyzlb//0XjJeKtJ3qMOIIcvTWSZdPCA5yWMMlAcxyMG82QCwbNWHyJJ4aW9o6MNVy3NU3dy8XBg7TbemlydmcyjnYS4zVB5vQogWMMbhzVWpG5pRdXClWvHOp28jFIQUj4Z3lc77s06TQo=
-  bucket: open5e
+
+  # Only deploy the html/css/js we build
   local-dir: build/html
+
   on:
+    # Don't deploy from forks
     repo: eepMoody/open5e
+    # Don't deploy branches other than master
     branch: master
+
+  # Required, no idea why
+  skip_cleanup: true
