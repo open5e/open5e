@@ -1,5 +1,5 @@
 Characters
--------
+----------
 
 .. toctree::
    :name: mastertoc
