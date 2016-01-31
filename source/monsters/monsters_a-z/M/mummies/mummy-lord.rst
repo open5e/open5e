@@ -1,5 +1,5 @@
 Mummy Lord  
--------------------------------------------------------------
+------------
 
 
 Medium undead, lawful evil
@@ -50,9 +50,8 @@ faith* 5th level (2 slots): *contagion*, *insect plague* **6th level (1
 slot)**: *harm*
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Multiattack**: The mummy can use its Dreadful Glare and makes one
+**Multiattack**: The mummy can use its Dreadful Glare and makes one
 attack with its rotting fist. **Rotting Fist**: *Melee Weapon Attack*:
 +9 to hit, reach 5 ft., one target. *Hit*: 14 (3d6 + 4) bludgeoning
 damage plus 21 (6d6) necrotic damage. If the target is a creature, it
@@ -95,5 +94,3 @@ sand, moves up to 60 feet, and reverts to its normal form. While in
 whirlwind form, the mummy lord is immune to all damage, and it can’t be
 grappled, petrified, knocked prone, restrained, or stunned. Equipment
 worn or carried by the mummy lord remain in its possession.
-
--------------------------------------------------------------

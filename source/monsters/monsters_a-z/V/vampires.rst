@@ -1,9 +1,9 @@
 Vampires  
--------------------------------------------------------------
+=========================
 
 
 Vampire
-^^^^^^^
+--------
 
 Medium undead (shapechanger), lawful evil
 
@@ -141,7 +141,7 @@ legendary actions at the start of its turn.
   (Costs 2 Actions)**: The vampire makes one bite attack.
 
 Vampire Spawn
-^^^^^^^^^^^^^
+--------------
 
 Medium undead, neutral evil
 
@@ -180,24 +180,14 @@ upside down on ceilings, without needing to make an ability check.
 **Forbiddance**: The vampire can’t enter a residence without an
 invitation from one of the occupants.
 
-.. raw:: html
-
-   <!-- -->
 
 **Harmed by Running Water**: The vampire takes 20 acid damage when it
 ends its turn in running water.
 
-.. raw:: html
-
-   <!-- -->
 
 **Stake to the Heart**: The vampire is destroyed if a piercing weapon
 made of wood is driven into its heart while it is incapacitated in its
 resting place.
-
-.. raw:: html
-
-   <!-- -->
 
 **Sunlight Hypersensitivity**: The vampire takes 20 radiant damage when
 it starts its turn in sunlight. While in sunlight, it has disadvantage
@@ -217,5 +207,3 @@ damage. The target’s hit point maximum is reduced by an amount equal to
 the necrotic damage taken, and the vampire regains hit points equal to
 that amount. The reduction lasts until the target finishes a long rest.
 The target dies if this effect reduces its hit point maximum to 0.
-
--------------------------------------------------------------

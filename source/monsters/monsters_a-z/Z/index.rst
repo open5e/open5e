@@ -5,4 +5,4 @@ Z Monsters
    :titlesonly:
    :glob:
 
-   zombies/
+   zombies/index
