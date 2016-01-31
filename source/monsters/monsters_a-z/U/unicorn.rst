@@ -41,8 +41,9 @@ spells and other magical effects. **Magic Weapons**: The unicorn’s
 weapon attacks are magical.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The unicorn makes two attacks: one with its hooves and
+***Multiattack**: The unicorn makes two attacks: one with its hooves and
 one with its horn. **Hooves**: *Melee Weapon Attack*: +7 to hit, reach 5
 ft., one target. *Hit*: 11 (2d6 + 4) bludgeoning damage. **Horn**:
 *Melee Weapon Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 8 (1d8

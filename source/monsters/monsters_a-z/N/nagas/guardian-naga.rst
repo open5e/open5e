@@ -47,8 +47,9 @@ slots)**: *calm emotions*, *hold person* **3rd level (3 slots)**:
 level (1 slot): *true seeing*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Bite**: *Melee Weapon Attack*: +8 to hit, reach 10 ft., one creature.
+***Bite**: *Melee Weapon Attack*: +8 to hit, reach 10 ft., one creature.
 *Hit*: 8 (1d8 + 4) piercing damage, and the target must make a DC 15
 Constitution saving throw, taking 45 (10d8) poison damage on a failed
 save, or half as much damage on a successful one. **Spit Poison**:

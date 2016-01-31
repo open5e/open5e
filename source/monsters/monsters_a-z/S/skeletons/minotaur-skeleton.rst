@@ -33,8 +33,9 @@ must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet
 away and knocked prone.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Greataxe**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
+***Greataxe**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
 *Hit*: 17 (2d12 + 4) slashing damage. **Gore**: *Melee Weapon Attack*:
 +6 to hit, reach 5 ft., one target. *Hit*: 13 (2d8 + 4) piercing damage.
 

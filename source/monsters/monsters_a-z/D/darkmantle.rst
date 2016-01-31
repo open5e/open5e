@@ -30,8 +30,9 @@ it is indistinguishable from a cave formation such as a stalactite or
 stalagmite.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Crush**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one creature.
+***Crush**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one creature.
 *Hit*: 6 (1d6 + 3) bludgeoning damage, and the darkmantle attaches to
 the target. If the target is Medium or smaller and the darkmantle has
 advantage on the attack roll, it attaches by engulfing the target’s

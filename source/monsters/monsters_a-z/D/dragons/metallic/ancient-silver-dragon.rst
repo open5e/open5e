@@ -32,8 +32,9 @@ Gargantuan dragon, lawful good
 can choose to succeed instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The dragon can use its Frightful Presence. It then
+***Multiattack**: The dragon can use its Frightful Presence. It then
 makes three attacks: one with its bite and two with its claws. **Bite**:
 *Melee Weapon Attack*: +17 to hit, reach 15 ft., one target. *Hit*: 21
 (2d10 + 10) piercing damage. **Claw**: *Melee Weapon Attack*: +17 to

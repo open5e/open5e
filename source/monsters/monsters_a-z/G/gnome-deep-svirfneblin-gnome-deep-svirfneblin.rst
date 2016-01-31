@@ -34,8 +34,9 @@ Small humanoid (gnome), neutral good
   disguise self
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**War Pick.** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target.
+***War Pick.** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target.
 *Hit:* 6 (1d8 + 2) piercing damage.  **Poisoned Dart.** *Ranged Weapon
 Attack:* +4 to hit, range 30/120 ft., one creature. *Hit:* 4 (1d4 + 2)
 piercing damage, and the target must succeed on a DC 12 Constitution

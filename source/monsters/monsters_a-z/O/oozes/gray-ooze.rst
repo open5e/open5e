@@ -43,8 +43,9 @@ of metal that hits the ooze is destroyed after dealing damage.
 indistinguishable from an oily pool or wet rock.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Pseudopod**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one
+***Pseudopod**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one
 target. *Hit*: 4 (1d6 + 1) bludgeoning damage plus 7 (2d6) acid damage,
 and if the target is wearing nonmagical metal armor, its armor is partly
 corroded and takes a permanent and cumulative -1 penalty to the AC it

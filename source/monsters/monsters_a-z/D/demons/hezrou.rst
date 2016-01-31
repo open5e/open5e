@@ -39,8 +39,9 @@ turn. On a successful saving throw, the creature is immune to the
 hezrou’s stench for 24 hours.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The hezrou makes three attacks: one with its bite and
+***Multiattack**: The hezrou makes three attacks: one with its bite and
 two with its claws. **Bite**: *Melee Weapon Attack*: +7 to hit, reach 5
 ft., one target. *Hit*: 15 (2d10 + 4) piercing damage. **Claw**: *Melee
 Weapon Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 11 (2d6 + 4)

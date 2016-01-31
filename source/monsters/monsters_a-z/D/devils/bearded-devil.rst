@@ -38,8 +38,9 @@ devil can’t be frightened while it can see an allied creature within 30
 feet of it.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The devil makes two attacks: one with its beard and one
+***Multiattack**: The devil makes two attacks: one with its beard and one
 with its glaive. **Beard**: *Melee Weapon Attack*: +5 to hit, reach 5
 ft., one creature. *Hit*: 6 (1d8 + 2) piercing damage, and the target
 must succeed on a DC 12 Constitution saving throw or be poisoned for 1

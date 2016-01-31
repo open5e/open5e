@@ -25,8 +25,9 @@ Large dragon, unaligned
 **Challenge** 6 (2,300 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The wyvern makes two attacks: one with its bite and one
+***Multiattack**: The wyvern makes two attacks: one with its bite and one
 with its stinger. While flying, it can use its claws in place of one
 other attack. **Bite**: *Melee Weapon Attack*: +7 to hit, reach 10 ft.,
 one creature. *Hit*: 11 (2d6 + 4) piercing damage. **Claws**: *Melee

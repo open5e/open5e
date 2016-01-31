@@ -28,9 +28,10 @@ Perception 6
 **False Appearance**: While the shrieker remains motionless, it is
 indistinguishable from an ordinary fungus.
 
-Reactions
+ReActions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Shriek**: When bright light or a creature is within 30 feet of the
+***Shriek**: When bright light or a creature is within 30 feet of the
 shrieker, it emits a shriek audible within 300 feet of it. The shrieker
 continues to shriek until the disturbance moves out of range and for 1d4
 of the shrieker’s turns afterward.

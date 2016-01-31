@@ -29,8 +29,9 @@ Gargantuan dragon, neutral
 **Amphibious**: The dragon turtle can breathe air and water.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The dragon turtle makes three attacks: one with its
+***Multiattack**: The dragon turtle makes three attacks: one with its
 bite and two with its claws. It can make one tail attack in place of its
 two claw attacks. **Bite**: *Melee Weapon Attack*: +13 to hit, reach 15
 ft., one target. *Hit*: 26 (3d12 + 7) piercing damage. **Claw**: *Melee

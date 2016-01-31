@@ -37,8 +37,9 @@ marilith’s weapon attacks are magical. **Reactive**: The marilith can
 take one reaction on every turn in a combat.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The marilith makes seven attacks: six with its
+***Multiattack**: The marilith makes seven attacks: six with its
 longswords and one with its tail. **Longsword**: *Melee Weapon Attack*:
 +9 to hit, reach 5 ft., one target. *Hit*: 13 (2d8 + 4) slashing damage.
 **Tail**: *Melee Weapon Attack*: +9 to hit, reach 10 ft., one creature.
@@ -50,8 +51,9 @@ targets. **Teleport**: The marilith magically teleports, along with any
 equipment it is wearing or carrying, up to 120 feet to an unoccupied
 space it can see.
 
-Reactions
+ReActions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Parry**: The marilith adds 5 to its AC against one melee attack that
+***Parry**: The marilith adds 5 to its AC against one melee attack that
 would hit it. To do so, the marilith must see the attacker and be
 wielding a melee weapon.

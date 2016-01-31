@@ -45,8 +45,9 @@ and other magical effects. **Magic Weapons**: The golem’s weapon attacks
 are magical.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The golem makes two slam attacks. **Slam**: *Melee
+***Multiattack**: The golem makes two slam attacks. **Slam**: *Melee
 Weapon Attack*: +8 to hit, reach 5 ft., one target. *Hit*: 16 (2d10 + 5)
 bludgeoning damage. If the target is a creature, it must succeed on a DC
 15 Constitution saving throw or have its hit point maximum reduced by an
@@ -107,8 +108,9 @@ petrified, poisoned
   **Magic Weapons**: The golem’s weapon attacks are magical.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The golem makes two slam attacks. **Slam**: *Melee
+***Multiattack**: The golem makes two slam attacks. **Slam**: *Melee
 Weapon Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 13 (2d8 + 4)
 bludgeoning damage.
 
@@ -149,8 +151,9 @@ advantage on saving throws against spells and other magical effects.
 **Magic Weapons**: The golem’s weapon attacks are magical.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The golem makes two melee attacks. **Slam**: *Melee
+***Multiattack**: The golem makes two melee attacks. **Slam**: *Melee
 Weapon Attack*: +13 to hit, reach 5 ft., one target. *Hit*: 20 (3d8 + 7)
 bludgeoning damage. **Sword**: *Melee Weapon Attack*: +13 to hit, reach
 10 ft., one target. *Hit*: 23 (3d10 + 7) slashing damage. **Poison
@@ -194,8 +197,9 @@ saving throws against spells and other magical effects. **Magic
 Weapons**: The golem’s weapon attacks are magical.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The golem makes two slam attacks. **Slam**: *Melee
+***Multiattack**: The golem makes two slam attacks. **Slam**: *Melee
 Weapon Attack*: +10 to hit, reach 5 ft., one target. *Hit*: 19 (3d8 + 6)
 bludgeoning damage. **Slow (Recharge 5–6)**: The golem targets one or
 more creatures it can see within 10 feet of it. Each target must make a

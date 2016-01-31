@@ -35,8 +35,9 @@ on attack rolls, as well as on Wisdom (Perception) checks that rely on
 sight.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Shortsword**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one
+***Shortsword**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one
 target. *Hit*: 5 (1d6 + 2) piercing damage. **Hand Crossbow**: *Ranged
 Weapon Attack*: +4 to hit, range 30/120 ft., one target. *Hit*: 5 (1d6 +
 2) piercing damage, and the target must succeed on a DC 13 Constitution

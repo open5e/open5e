@@ -36,8 +36,9 @@ darkvision. **Magic Resistance**: The devil has advantage on saving
 throws against spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The devil makes two attacks with its chains. **Chain**:
+***Multiattack**: The devil makes two attacks with its chains. **Chain**:
 *Melee Weapon Attack*: +8 to hit, reach 10 ft., one target. *Hit*: 11
 (2d6 + 4) slashing damage. The target is grappled (escape DC 14) if the
 devil isn’t already grappling a creature. Until this grapple ends, the
@@ -54,9 +55,10 @@ creature of its own but can’t make attacks while grappling. An animated
 chain reverts to its inanimate state if reduced to 0 hit points or if
 the devil is incapacitated or dies.
 
-Reactions
+ReActions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Unnerving Mask**: When a creature the devil can see starts its turn
+***Unnerving Mask**: When a creature the devil can see starts its turn
 within 30 feet of the devil, the devil can create the illusion that it
 looks like one of the creature’s departed loved ones or bitter enemies.
 If the creature can see the devil, it must succeed on a DC 14 Wisdom

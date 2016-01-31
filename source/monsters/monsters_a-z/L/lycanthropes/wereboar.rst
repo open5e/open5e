@@ -40,8 +40,9 @@ takes 14 damage or less that would reduce it to 0 hit points, it is
 reduced to 1 hit point instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack (Humanoid or Hybrid Form Only)**: The wereboar makes two
+***Multiattack (Humanoid or Hybrid Form Only)**: The wereboar makes two
 attacks, only one of which can be with its tusks. **Maul (Humanoid or
 Hybrid Form Only)**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one
 target. *Hit*: 10 (2d6 + 3) bludgeoning damage. **Tusks (Boar or Hybrid

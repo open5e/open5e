@@ -35,8 +35,9 @@ slashing from nonmagical attacks
 against spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The nalfeshnee uses Horror Nimbus if it can. It then
+***Multiattack**: The nalfeshnee uses Horror Nimbus if it can. It then
 makes three attacks: one with its bite and two with its claws. **Bite**:
 *Melee Weapon Attack*: +10 to hit, reach 5 ft., one target. *Hit*: 32
 (5d10 + 5) piercing damage. **Claw**: *Melee Weapon Attack*: +10 to hit,

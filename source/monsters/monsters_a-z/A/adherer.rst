@@ -52,8 +52,9 @@ can dissolve its adhesive at will, and the substance breaks down
 naturally one hour after the creature dies.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Melee Attack—Slam**: +4 to hit (reach 5 ft.; one creature). *Hit*: 1d8
+***Melee Attack—Slam**: +4 to hit (reach 5 ft.; one creature). *Hit*: 1d8
 + 2 bludgeoning damage, and the target creature is grappled and
 restrained (see Adhesive).
 

@@ -38,8 +38,9 @@ While in sunlight, the wraith has disadvantage on attack rolls, as well
 as on Wisdom (Perception) checks that rely on sight.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Life Drain**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one
+***Life Drain**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one
 creature. *Hit*: 21 (4d8 + 3) necrotic damage. The target must succeed
 on a DC 14 Constitution saving throw or its hit point maximum is reduced
 by an amount equal to the damage taken. This reduction lasts until the

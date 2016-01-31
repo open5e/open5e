@@ -41,8 +41,9 @@ following spells, requiring no material components: **At will**:
 against spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The glabrezu makes four attacks: two with its pincers
+***Multiattack**: The glabrezu makes four attacks: two with its pincers
 and two with its fists. Alternatively, it makes two attacks with its
 pincers and casts one spell. **Pincer**: *Melee Weapon Attack*: +9 to
 hit, reach 10 ft., one target. *Hit*: 16 (2d10 + 5) bludgeoning damage.

@@ -56,8 +56,9 @@ shift* **8th level (1 slot)**: *dominate monster*, *power word stun*
 effect that turns undead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Paralyzing Touch**: Melee Spell Attack: +12 to hit, reach 5 ft., one
+***Paralyzing Touch**: Melee Spell Attack: +12 to hit, reach 5 ft., one
 creature. *Hit*: 10 (3d6) cold damage. The target must succeed on a DC
 18 Constitution saving throw or be paralyzed for 1 minute. The target
 can repeat the saving throw at the end of each of its turns, ending the

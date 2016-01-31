@@ -35,7 +35,8 @@ rolls it makes during that turn, but attack rolls against it have
 advantage until the start of its next turn.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Greataxe**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
+***Greataxe**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
 *Hit*: 17 (2d12 + 4) slashing damage. **Gore**: *Melee Weapon Attack*:
 +6 to hit, reach 5 ft., one target. *Hit*: 13 (2d8 + 4) piercing damage.

@@ -25,8 +25,9 @@ Tiny fey, neutral good
 **Challenge** 1/4 (50 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Longsword**: *Melee Weapon Attack*: +2 to hit, reach 5 ft., one
+***Longsword**: *Melee Weapon Attack*: +2 to hit, reach 5 ft., one
 target. *Hit*: 1 slashing damage. **Shortbow**: *Ranged Weapon Attack*:
 +6 to hit, range 40/160 ft., one target. *Hit*: 1 piercing damage, and
 the target must succeed on a DC 10 Constitution saving throw or become

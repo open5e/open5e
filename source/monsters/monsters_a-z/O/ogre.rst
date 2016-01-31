@@ -21,8 +21,9 @@ STR\| DEX\| CON\| INT\| WIS\| CHA ---------\| --------\| ---------\|
 **Challenge** 2 (450 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Greatclub**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one
+***Greatclub**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one
 target. *Hit*: 13 (2d8 + 4) bludgeoning damage. **Javelin**: *Melee or
 Ranged Weapon Attack*: +6 to hit, reach 5 ft. or range 30/120 ft., one
 target. *Hit*: 11 (2d6 + 4) piercing damage.

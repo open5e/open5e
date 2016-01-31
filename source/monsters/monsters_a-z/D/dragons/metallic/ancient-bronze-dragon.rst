@@ -33,8 +33,9 @@ Resistance (3/Day)**: If the dragon fails a saving throw, it can choose
 to succeed instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The dragon can use its Frightful Presence. It then
+***Multiattack**: The dragon can use its Frightful Presence. It then
 makes three attacks: one with its bite and two with its claws. **Bite**:
 *Melee Weapon Attack*: +16 to hit, reach 15 ft., one target. *Hit*: 20
 (2d10 + 9) piercing damage. **Claw**: *Melee Weapon Attack*: +16 to hit,

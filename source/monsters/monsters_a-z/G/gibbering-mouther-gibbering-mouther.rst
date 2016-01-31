@@ -40,8 +40,9 @@ attack against a randomly determined creature within its reach or does
 nothing if it can’t make such an attack.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The gibbering mouther makes one bite attack and, if it
+***Multiattack**: The gibbering mouther makes one bite attack and, if it
 can, uses its Blinding Spittle. **Bites**: *Melee Weapon Attack*: +2 to
 hit, reach 5 ft., one creature. *Hit*: 17 (5d6) piercing damage. If the
 target is Medium or smaller, it must succeed on a DC 10 Strength saving

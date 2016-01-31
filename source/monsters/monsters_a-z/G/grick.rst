@@ -29,8 +29,9 @@ nonmagical attacks
 checks made to hide in rocky terrain.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The grick makes one attack with its tentacles. If that
+***Multiattack**: The grick makes one attack with its tentacles. If that
 attack hits, the grick can make one beak attack against the same target.
 **Tentacles**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one
 target. *Hit*: 9 (2d6 + 2) slashing damage. **Beak**: *Melee Weapon

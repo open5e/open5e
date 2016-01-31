@@ -25,8 +25,9 @@ STR\| DEX\| CON\| INT\| WIS\| CHA\| ---------\| ---------\| ---------
 is within 5 feet of an ally of the hobgoblin that isn’t incapacitated.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Longsword**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one
+***Longsword**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one
 target. *Hit*: 5 (1d8 + 1) slashing damage, or 6 (1d10 + 1) slashing
 damage if used with two hands. **Longbow**: *Ranged Weapon Attack*: +3
 to hit, range 150/600 ft., one target. *Hit*: 5 (1d8 + 1) piercing

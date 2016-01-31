@@ -32,8 +32,9 @@ Huge dragon, chaotic good
 can choose to succeed instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The dragon can use its Frightful Presence. It then
+***Multiattack**: The dragon can use its Frightful Presence. It then
 makes three attacks: one with its bite and two with its claws. **Bite**:
 *Melee Weapon Attack*: +11 to hit, reach 10 ft., one target. *Hit*: 17
 (2d10 + 6) piercing damage. **Claw**: *Melee Weapon Attack*: +11 to hit,

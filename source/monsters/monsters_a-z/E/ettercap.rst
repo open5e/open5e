@@ -31,8 +31,9 @@ location of any other creature in contact with the same web. **Web
 Walker**: The ettercap ignores movement restrictions caused by webbing.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The ettercap makes two attacks: one with its bite and
+***Multiattack**: The ettercap makes two attacks: one with its bite and
 one with its claws. **Bite**: *Melee Weapon Attack*: +4 to hit, reach 5
 ft., one creature. *Hit*: 6 (1d8 + 2) piercing damage plus 4 (1d8)
 poison damage. The target must succeed on a DC 11 Constitution saving

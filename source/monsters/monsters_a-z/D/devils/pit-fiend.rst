@@ -45,8 +45,9 @@ requiring no material components: **At will**: *detect magic*,
 *fireball* **3/day each**: *hold monster*, *wall of fire*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The pit fiend makes four attacks: one with its bite,
+***Multiattack**: The pit fiend makes four attacks: one with its bite,
 one with its claw, one with its mace, and one with its tail. **Bite**:
 *Melee Weapon Attack*: +14 to hit, reach 5 ft., one target. *Hit*: 22
 (4d6 + 8) piercing damage. The target must succeed on a DC 21

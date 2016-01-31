@@ -46,8 +46,9 @@ dead*
 spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The deva makes two melee attacks. **Mace**: *Melee
+***Multiattack**: The deva makes two melee attacks. **Mace**: *Melee
 Weapon Attack*: +8 to hit, reach 5 ft., one target. *Hit*: 7 (1d6 + 4)
 bludgeoning damage plus 18 (4d8) radiant damage. **Healing Touch
 (3/Day)**: The deva touches another creature. The target magically
@@ -108,8 +109,9 @@ dead **1/day each**: *commune*, *control weather*, *insect plague*
 against spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The planetar makes two melee attacks. **Greatsword**:
+***Multiattack**: The planetar makes two melee attacks. **Greatsword**:
 *Melee Weapon Attack*: +12 to hit, reach 5 ft., one target. *Hit*: 21
 (4d6 + 7) slashing damage plus 22 (5d8) radiant damage. **Healing Touch
 (4/Day)**: The planetar touches another creature. The target magically
@@ -164,8 +166,9 @@ weather*
 spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The solar makes two greatsword attacks. **Greatsword**:
+***Multiattack**: The solar makes two greatsword attacks. **Greatsword**:
 *Melee Weapon Attack*: +15 to hit, reach 5 ft., one target. *Hit*: 22
 (4d6 + 8) slashing damage plus 27 (6d8) radiant damage. **Slaying
 Longbow**: *Ranged Weapon Attack*: +13 to hit, range 150/600 ft., one

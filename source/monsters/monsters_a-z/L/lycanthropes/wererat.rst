@@ -33,8 +33,9 @@ reverts to its true form if it dies. **Keen Smell**: The wererat has
 advantage on Wisdom (Perception) checks that rely on smell.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack (Humanoid or Hybrid Form Only)**: The wererat makes two
+***Multiattack (Humanoid or Hybrid Form Only)**: The wererat makes two
 attacks, only one of which can be a bite. **Bite (Rat or Hybrid Form
 Only)**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one target.
 *Hit:* 4 (1d4 + 2) piercing damage. If the target is a humanoid, it must

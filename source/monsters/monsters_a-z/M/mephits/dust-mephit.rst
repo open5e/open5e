@@ -37,8 +37,9 @@ innately cast *sleep*, requiring no material components. Its innate
 spellcasting ability is Charisma.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Claws**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one creature.
+***Claws**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one creature.
 *Hit*: 4 (1d4 + 2) slashing damage. **Blinding Breath (Recharge 6)**:
 The mephit exhales a 15- foot cone of blinding dust. Each creature in
 that area must succeed on a DC 10 Dexterity saving throw or be blinded

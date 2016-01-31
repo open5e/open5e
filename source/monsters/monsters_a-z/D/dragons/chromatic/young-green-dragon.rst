@@ -33,8 +33,9 @@ Large dragon, lawful evil
 **Amphibious**: The dragon can breathe air and water.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The dragon makes three attacks: one with its bite and
+***Multiattack**: The dragon makes three attacks: one with its bite and
 two with its claws. **Bite**: *Melee Weapon Attack*: +7 to hit, reach 10
 ft., one target. *Hit*: 15 (2d10 + 4) piercing damage plus 7 (2d6)
 poison damage. **Claw**: *Melee Weapon Attack*: +7 to hit, reach 5 ft.,

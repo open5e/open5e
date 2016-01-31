@@ -204,8 +204,9 @@ it starts its turn in sunlight. While in sunlight, it has disadvantage
 on attack rolls and ability checks.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The vampire makes two attacks, only one of which can be
+***Multiattack**: The vampire makes two attacks, only one of which can be
 a bite attack. **Claws**: *Melee Weapon Attack*: +6 to hit, reach 5 ft.,
 one creature. *Hit*: 8 (2d4 + 3) slashing damage. Instead of dealing
 damage, the vampire can grapple the target (escape DC 13). **Bite**:

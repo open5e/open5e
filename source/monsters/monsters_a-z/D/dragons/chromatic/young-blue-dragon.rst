@@ -29,8 +29,9 @@ Large dragon, lawful evil
 **Challenge** 9 (5,000 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The dragon makes three attacks: one with its bite and
+***Multiattack**: The dragon makes three attacks: one with its bite and
 two with its claws. **Bite**: *Melee Weapon Attack*: +9 to hit, reach 10
 ft., one target. *Hit*: 16 (2d10 + 5) piercing damage plus 5 (1d10)
 lightning damage. **Claw**: *Melee Weapon Attack*: +9 to hit, reach 5

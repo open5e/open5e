@@ -37,8 +37,9 @@ during the first round of combat, the target takes an extra 10 (3d6)
 damage from the attack.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The doppelganger makes two melee attacks. **Slam**:
+***Multiattack**: The doppelganger makes two melee attacks. **Slam**:
 *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target. *Hit*: 7 (1d6
 + 4) bludgeoning damage. **Read Thoughts**: The doppelganger magically
 reads the surface thoughts of one creature within 60 feet of it. The

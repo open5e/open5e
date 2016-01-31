@@ -37,8 +37,9 @@ werewolf has advantage on Wisdom (Perception) checks that rely on
 hearing or smell.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack (Humanoid or Hybrid Form Only)**: The werewolf makes two
+***Multiattack (Humanoid or Hybrid Form Only)**: The werewolf makes two
 attacks: one with its bite and one with its claws or spear. **Bite (Wolf
 or Hybrid Form Only)**: *Melee Weapon Attack*: +4 to hit, reach 5 ft.,
 one target. *Hit*: 6 (1d8 + 2) piercing damage. If the target is a

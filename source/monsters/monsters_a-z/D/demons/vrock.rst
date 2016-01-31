@@ -35,8 +35,9 @@ slashing from nonmagical attacks
 spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The vrock makes two attacks: one with its beak and one
+***Multiattack**: The vrock makes two attacks: one with its beak and one
 with its talons. **Beak**: *Melee Weapon Attack*: +6 to hit, reach 5
 ft., one target. *Hit*: 10 (2d6 + 3) piercing damage. **Talons**: *Melee
 Weapon Attack*: +6 to hit, reach 5 ft., one target. *Hit*: 14 (2d10 + 3)

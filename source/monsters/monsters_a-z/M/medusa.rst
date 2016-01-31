@@ -44,8 +44,9 @@ Medium monstrosity, lawful evil
   curse, affected by its own gaze.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The medusa makes either three melee attacks—one with
+***Multiattack**: The medusa makes either three melee attacks—one with
 its snake hair and two with its shortsword—or two ranged attacks with
 its longbow. **Snake Hair**: *Melee Weapon Attack*: +5 to hit, reach 5
 ft., one creature. *Hit*: 4 (1d4 + 2) piercing damage plus 14 (4d6)
