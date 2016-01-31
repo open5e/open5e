@@ -6,5 +6,4 @@ R Monsters
    :titlesonly:
    :glob:
 
-   **/*
    *

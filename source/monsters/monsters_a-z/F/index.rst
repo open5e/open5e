@@ -8,4 +8,3 @@ F Monsters
    :maxdepth: 1
    
    **/*
-   *

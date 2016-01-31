@@ -6,5 +6,4 @@ Dragons
    :titlesonly:
    :glob:
    
-   *
    */index

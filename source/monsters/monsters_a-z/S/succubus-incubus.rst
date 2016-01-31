@@ -58,5 +58,3 @@ Actions
   target finishes a long rest. The target dies if this effect reduces
   its hit point maximum to 0. **Etherealness**: The fiend magically
   enters the Ethereal Plane from the Material Plane, or vice versa.
-
--------------------------------------------------------------

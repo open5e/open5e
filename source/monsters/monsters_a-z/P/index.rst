@@ -6,5 +6,4 @@ P Monsters
    :titlesonly:
    :glob:
 
-   **/*
    *

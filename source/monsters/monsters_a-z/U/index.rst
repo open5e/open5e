@@ -6,5 +6,4 @@ U Monsters
    :titlesonly:
    :glob:
 
-   **/*
    *

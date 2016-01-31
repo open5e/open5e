@@ -6,5 +6,4 @@ V Monsters
    :titlesonly:
    :glob:
 
-   **/*
    *

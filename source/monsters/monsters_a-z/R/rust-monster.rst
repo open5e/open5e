@@ -44,5 +44,3 @@ Actions
   the AC it offers. Armor reduced to an AC of 10 or a shield that drops
   to a +0 bonus is destroyed. If the object touched is a held metal
   weapon, it rusts as described in the Rust Metal trait.
-
--------------------------------------------------------------
