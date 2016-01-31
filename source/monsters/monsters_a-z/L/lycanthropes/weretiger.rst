@@ -1,5 +1,5 @@
 Weretiger  
----------
+-------------------------------------------------------------
 
 
 Medium humanoid (human, shapechanger), neutral

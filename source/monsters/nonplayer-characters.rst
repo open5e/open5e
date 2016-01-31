@@ -7,7 +7,7 @@ including lowly commoners and mighty archmages. These stat blocks can be
 used to represent both human and nonhuman NPCs.
 
 Customizing NPCs
-----------------
+-------------------------------------------------------------
 
 There are many easy ways to customize the NPCs in this appendix for your
 home campaign.

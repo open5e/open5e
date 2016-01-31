@@ -1,5 +1,5 @@
 Nightmare  
----------
+-------------------------------------------------------------
 
 
 Large fiend, neutral evil
@@ -36,4 +36,4 @@ Actions
 within 5 feet of it magically enter the Ethereal Plane from the Material
 Plane, or vice versa.
 
---------------
+-------------------------------------------------------------

@@ -1,5 +1,5 @@
 Gynosphinx  
----------
+-------------------------------------------------------------
 
 
 Large monstrosity, lawful neutral

@@ -1,5 +1,5 @@
 Young Copper Dragon  
----------
+-------------------------------------------------------------
 
 
 Large dragon, chaotic good

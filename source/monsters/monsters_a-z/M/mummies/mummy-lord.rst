@@ -1,5 +1,5 @@
 Mummy Lord  
----------
+-------------------------------------------------------------
 
 
 Medium undead, lawful evil
@@ -95,4 +95,4 @@ whirlwind form, the mummy lord is immune to all damage, and it can’t be
 grappled, petrified, knocked prone, restrained, or stunned. Equipment
 worn or carried by the mummy lord remain in its possession.
 
---------------
+-------------------------------------------------------------

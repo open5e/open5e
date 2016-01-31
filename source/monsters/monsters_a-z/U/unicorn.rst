@@ -1,5 +1,5 @@
 Unicorn  
----------
+-------------------------------------------------------------
 
 
 Large celestial, lawful good
@@ -69,4 +69,4 @@ The target gains a +2 bonus to AC until the end of the unicorn’s next
 turn. **Heal Self (Costs 3 Actions)**: The unicorn magically regains 11
 (2d8 + 2) hit points.
 
---------------
+-------------------------------------------------------------

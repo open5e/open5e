@@ -1,5 +1,5 @@
 Animated Object: Rug of Smothering  
----------
+-------------------------------------------------------------
 
 
 Large construct, unaligned

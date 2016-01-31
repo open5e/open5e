@@ -1,5 +1,5 @@
 Warhorse Skeleton  
----------
+-------------------------------------------------------------
 
 
 Large undead, lawful evil

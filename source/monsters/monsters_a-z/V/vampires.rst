@@ -1,5 +1,5 @@
 Vampires  
----------
+-------------------------------------------------------------
 
 
 Vampire
@@ -217,4 +217,4 @@ the necrotic damage taken, and the vampire regains hit points equal to
 that amount. The reduction lasts until the target finishes a long rest.
 The target dies if this effect reduces its hit point maximum to 0.
 
---------------
+-------------------------------------------------------------

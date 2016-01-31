@@ -1,5 +1,5 @@
 Troll  
----------
+-------------------------------------------------------------
 
 
 Large giant, chaotic evil
@@ -37,4 +37,4 @@ ft., one target. *Hit*: 7 (1d6 + 4) piercing damage. **Claw**: *Melee
 Weapon Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 11 (2d6 + 4)
 slashing damage.
 
---------------
+-------------------------------------------------------------

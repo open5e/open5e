@@ -1,5 +1,5 @@
 Adult Copper Dragon  
----------
+-------------------------------------------------------------
 
 
 Huge dragon, chaotic good

@@ -1,5 +1,5 @@
 Quasit  
----------
+-------------------------------------------------------------
 
 
 Tiny fiend (demon, shapechanger), chaotic evil

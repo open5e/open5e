@@ -1,5 +1,5 @@
 Invisible Stalker  
----------
+-------------------------------------------------------------
 
 
 Medium elemental, neutral
@@ -44,4 +44,4 @@ Actions
 Weapon Attack*: +6 to hit, reach 5 ft., one target. *Hit*: 10 (2d6 + 3)
 bludgeoning damage.
 
---------------
+-------------------------------------------------------------

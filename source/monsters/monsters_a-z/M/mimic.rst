@@ -1,5 +1,5 @@
 Mimic  
----------
+-------------------------------------------------------------
 
 
 Medium monstrosity (shapechanger), neutral

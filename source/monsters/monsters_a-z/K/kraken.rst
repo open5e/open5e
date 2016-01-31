@@ -1,5 +1,5 @@
 Kraken  
----------
+-------------------------------------------------------------
 
 
 Gargantuan monstrosity (titan), chaotic evil
@@ -87,4 +87,4 @@ poison damage on a failed save, or half as much damage on a successful
 one. A strong current disperses the cloud, which otherwise disappears at
 the end of the kraken’s next turn.
 
---------------
+-------------------------------------------------------------

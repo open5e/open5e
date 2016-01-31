@@ -1,5 +1,5 @@
 Wereboar  
----------
+-------------------------------------------------------------
 
 
 Medium humanoid (human, shapechanger), neutral evil

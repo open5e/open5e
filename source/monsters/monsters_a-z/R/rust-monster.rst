@@ -1,5 +1,5 @@
 Rust Monster  
----------
+-------------------------------------------------------------
 
 
 Medium monstrosity, unaligned
@@ -45,4 +45,4 @@ Actions
   to a +0 bonus is destroyed. If the object touched is a held metal
   weapon, it rusts as described in the Rust Metal trait.
 
---------------
+-------------------------------------------------------------

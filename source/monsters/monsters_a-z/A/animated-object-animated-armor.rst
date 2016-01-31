@@ -1,5 +1,5 @@
 Animated Object: Animated Armor  
----------
+-------------------------------------------------------------
 
 
 Medium construct, unaligned

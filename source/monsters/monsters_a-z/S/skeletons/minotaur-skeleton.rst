@@ -1,5 +1,5 @@
 Minotaur Skeleton  
----------
+-------------------------------------------------------------
 
 
 Large undead, lawful evil

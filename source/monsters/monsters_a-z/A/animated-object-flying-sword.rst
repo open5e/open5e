@@ -1,5 +1,5 @@
 Animated Object: Flying Sword  
----------
+-------------------------------------------------------------
 
 
 Small construct, unaligned

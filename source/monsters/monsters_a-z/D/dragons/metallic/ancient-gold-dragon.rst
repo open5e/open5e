@@ -1,5 +1,5 @@
 Ancient Gold Dragon  
----------
+-------------------------------------------------------------
 
 
 Gargantuan dragon, lawful good

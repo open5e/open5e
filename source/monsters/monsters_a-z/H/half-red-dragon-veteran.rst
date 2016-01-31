@@ -1,5 +1,5 @@
 Half-Red Dragon Veteran  
----------
+-------------------------------------------------------------
 
 
 Medium humanoid (human), any alignment
