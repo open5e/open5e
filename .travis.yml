@@ -1,0 +1,12 @@
+language: sphinx
+script: sphinx-build -b html -d build/doctrees -c . -W source build/html
+deploy:
+  provider: s3
+  access_key_id: AKIAJZCAKVND5W37I5EQ
+  secret_access_key:
+    secure: ntbOFQS9GxnMsCv59EGqEDxS9ybExNFQ3zcP2UnD722Te/1H+f6jlN2tzMvNMrawVvPhhPwtAP3qhkEk4xYIVdtgSVKeF1vQA6O50kWtKvcQ6CzB4ldcZDDeQ9POHRgwfJLsJiD1+CzHuRHKLLzC3CJpM5Lgz16tsGaEmgRmcVQohI6wFTxseP7dRAFrliWc6ohP69DXgqEopa2c565WAYkSt7EYoG2O3BpWkrVx9FNMcg2YJOajKohGvLUqrW3G1nh9mYXDhTlMlg4RGyx/V20Cd7zWqMKy3VG9km0X5xduuobj4R21jd3xjsDD5yh1vW9ViJ7AEfeK4K1UDVOLXe8x7+srhi2i7+dRyx8YzYnvu2JQPLDnbjK6g3yR6jtu/JAAr5arsrbD90pcizdcRfPGbysgJW/TwhDUjp1lLPCbEh3ENb8udTJ36+6V93cJ64+YNOQ3q8elrV9PyR9LMgOcbCyyEMZyfOe5n7EpSZUz20EUTFehdlN1MCUa2oM8vO1ZrTr7zgfqlK5yJbxu/y2eU48LHi5csh0sLyVmx6YCibfrbjfkQ56cbD5PO1kgCzcmASUloogcMSk7oYXrLgS/1A7myBxkyQd2KiDFx7NqgWIcGzuDRkgSjRB61wsrWumUCFh8i0Eox4fY4FO959kEon+exSjOb5Q3xPbGP/M=
+  bucket: open5e
+  local-dir: build/html
+  on:
+    repo: eepMoody/open5e
+    branch: master
