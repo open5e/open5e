@@ -1,9 +1,14 @@
 # Required to install sphinx
 language: python
 python:
-- '2.7'
+  - "2.7"
 
-# Install sphinx
+# Only build master (for now)
+branches:
+  only:
+    - master
+
+# Install requirements
 install: pip install -r requirements.txt
 
 #                   build dir              config dir  nitpick mode on
