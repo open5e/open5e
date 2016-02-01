@@ -4,27 +4,45 @@
 
 An SRD and open-source material reference site for 5th edition D&amp;D
 
-## Getting Started
+## Editing Content
 
-After cloning the repo, first you'll need to install Sphinx. (using `python 2.7` or higher)
+### Installation
+Open5e is statically generated using [Sphinx](http://www.sphinx-doc.org/en/stable/), a Python-based documentation generator.
+
+After cloning the repo, you'll need to install Sphinx. You'll need [Python 2.7](https://www.python.org/downloads/) or higher. We recommend you install Sphinx in a [virtual environment](https://virtualenv.readthedocs.org/en/latest/):
 
 ```shell
-cd open5e/
-pip install sphinx 
+pip install virtualenv
+virtualenv open5e_venv
+source open5e_venv/bin/activate
+cd open5e
+pip install -r requirements.txt
 ```
-then do an initial build to generate the local files.
+
+Then you'll be able to then do an initial build to generate the local files using the Makefile in the top of the repo.
 
 ```shell
 make html
 ```
 
+### Making changes
+Sphinx documentation pages are written using a markup language called [reStructuredText](http://docutils.sourceforge.net/docs/user/rst/quickref.html). Once you make your changes, you simply need to rebulid using `make html`, then you can preview the site in your browser at `file:///path/to/open5e/build/html/index.html`
+
 ## Editing the theme
 
-If you are going to change the theme, you'll need to install npm, sass, and grunt.
+If you are going to change the theme, you'll need [sass](http://sass-lang.com/ and [grunt](http://gruntjs.com/). If you don't already have [npm](https://www.npmjs.com/package/npm) and [ruby](https://www.ruby-lang.org/en/documentation/installation/) you'll also need to install them.
+
+Find out if you already have npm and ruby:
+
+```shell
+npm --version
+ruby --version
+```
+
+If you don't get a `command not found` error, you're ready to install sass and grunt:
 
 ```shell
 gem install sass
-brew install node
 npm install -g grunt
 ```
 
@@ -36,7 +54,7 @@ npm install
 grunt
 ```
 
-This should build the style and launch a demo page with LiveReload for you to work against. If you want to preview your results on the 5e page, you'll need to clean out /build file and rebuild Sphinx. (It doesn't recognize changes to the theme as something requiring an update in the makefile.)
+This should build the style and launch a demo page with LiveReload for you to work against. If you want to preview your results on the 5e page, you'll need to do a clean Sphinx rebuild because the Makefile doesn't recognize changes to the theme as requiring an update:
 
 ```shell
 cd open5e
