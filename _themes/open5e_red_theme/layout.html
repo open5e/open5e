@@ -58,8 +58,8 @@
     {%- if hasdoc('search') %}
         <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}"/>
     {%- endif %}
-    {%- if hasdoc('copyright') %}
-        <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}"/>
+    {%- if hasdoc('license') %}
+        <link rel="license" title="{{ _('License') }}" href="{{ pathto('license') }}"/>
     {%- endif %}
     <link rel="top" title="{{ docstitle|e }}" href="{{ pathto('index') }}"/>
     {%- if parents %}

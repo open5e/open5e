@@ -49,7 +49,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'open5e'
-copyright = u'2016, Ean Moody, Max Rothman, Jason McAlpin'
+#copyright = u'2016, Ean Moody, Max Rothman, Jason McAlpin'
 author = u'Ean Moody, Max Rothman, Jason McAlpin'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -177,7 +177,7 @@ todo_include_todos = True
 #html_show_sphinx = True
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
-#html_show_copyright = True
+html_show_copyright = True
 
 # If true, an OpenSearch description file will be output, and all pages will
 # contain a <link> tag referring to it.  The value of this option must be the

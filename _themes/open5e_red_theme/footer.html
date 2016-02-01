@@ -15,10 +15,11 @@
   <div role="contentinfo">
     <p>
     {%- if show_copyright %}
-      {%- if hasdoc('copyright') %}
-        {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+      {%- if hasdoc('license') %}
+        {% trans path=pathto('license'), license=license|e %}<a href="{{ path }}">License</a>{% endtrans %}
       {%- else %}
-        {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+        <!-- {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %} -->
+        {% trans copyright=copyright|e %}This is broke{% endtrans %}
       {%- endif %}
     {%- endif %}
 
