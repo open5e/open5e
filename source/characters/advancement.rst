@@ -34,19 +34,53 @@ class description to see what other improvements you gain at each level.
 Character Advancement
 ^^^^^^^^^^^^^^^^^^^^^
 
-+--------------+---------+------+
-| 195,000      | 16      | +5   |
-+==============+=========+======+
-| 225,000      | 17      | +6   |
-+--------------+---------+------+
-| 265,000      | 18      | +6   |
-+--------------+---------+------+
-| 305,000      | 19      | +6   |
-+--------------+---------+------+
-| 355,000      | 20      | +6   |
-+--------------+---------+------+
++--------------------------+--------------------------+--------------+
+| Experience               | Level                    | Proficiency  |
+|                          |                          | bonus        |
++==========================+==========================+==============+
+| 0                        | 1                        | +2           |
++--------------------------+--------------------------+--------------+
+| 300                      | 2                        | +2           |
++--------------------------+--------------------------+--------------+
+| 900                      | 3                        | +2           |
++--------------------------+--------------------------+--------------+
+| 2,700                    | 4                        | +2           |
++--------------------------+--------------------------+--------------+
+| 6,500                    | 5                        | +3           |
++--------------------------+--------------------------+--------------+
+| 14,000                   | 6                        | +3           |
++--------------------------+--------------------------+--------------+
+| 23,000                   | 7                        | +3           |
++--------------------------+--------------------------+--------------+
+| 34,000                   | 8                        | +3           |
++--------------------------+--------------------------+--------------+
+| 48,000                   | 9                        | +4           |
++--------------------------+--------------------------+--------------+
+| 64,000                   | 10                       | +4           |
++--------------------------+--------------------------+--------------+
+| 85,000                   | 11                       | +4           |
++--------------------------+--------------------------+--------------+
+| 100,000                  | 12                       | +4           |
++--------------------------+--------------------------+--------------+
+| 120,000                  | 13                       | +5           |
++--------------------------+--------------------------+--------------+
+| 140,000                  | 14                       | +5           |
++--------------------------+--------------------------+--------------+
+| 165,000                  | 15                       | +5           |
++--------------------------+--------------------------+--------------+
+| 195,000                  | 16                       | +5           |
++--------------------------+--------------------------+--------------+
+| 225,000                  | 17                       | +6           |
++--------------------------+--------------------------+--------------+
+| 265,000                  | 18                       | +6           |
++--------------------------+--------------------------+--------------+
+| 305,000                  | 19                       | +6           |
++--------------------------+--------------------------+--------------+
+| 355,000                  | 20                       | +6           |
++--------------------------+--------------------------+--------------+
 
-**Multiclassing**
+Multiclassing
+^^^^^^^^^^^^^
 
 Multiclassing allows you to gain levels in multiple classes. Doing so
 lets you mix the abilities of those classes to realize a character
@@ -67,7 +101,7 @@ a single-­class character of the same level, you’ll sacrifice some focus
 in exchange for versatility.
 
 Prerequisites
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 To qualify for a new class, you must meet the ability score
 prerequisites for both your current class and your new one, as shown in
@@ -79,7 +113,7 @@ class, having a natural aptitude that is reflected by higher-­
 than-­average ability scores.
 
 Multiclassing Prerequisites
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------+----------------------------------+
 |   Class        |   Ability Score Minimum          |
@@ -110,7 +144,7 @@ Multiclassing Prerequisites
 +----------------+----------------------------------+
 
 Experience Points
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 The experience point cost to gain a level is always based on your total
 character level, as shown in the Character Advancement table, not your
@@ -119,7 +153,7 @@ must gain enough XP to reach 8th level before you can take your second
 level as a fighter or your seventh level as a cleric.
 
 Hit Points and Hit Dice
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 You gain the hit points from your new class as described for levels
 after 1st. You gain the 1st-­level hit points for a class only when you
@@ -134,7 +168,7 @@ separately. If you are a paladin 5/cleric 5, for example, you have five
 d10 Hit Dice and five d8 Hit Dice.
 
 Proficiency Bonus
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 Your proficiency bonus is always based on your total character level, as
 shown in the Character Advancement table in chapter 1, not your level in
@@ -142,7 +176,7 @@ a particular class. For example, if you are a fighter 3/rogue 2, you
 have the proficiency bonus of a 5th-­ level character, which is +3.
 
 Proficiencies
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 When you gain your first level in a class other than your initial class,
 you gain only some of new class’s starting proficiencies, as shown in
@@ -178,7 +212,7 @@ Multiclassing Proficiencies
 +------------------+--------------------------------------------------------------------------------------------------------------+
 
 Class Features
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 When you gain a new level in a class, you get its features for that
 level. You don’t, however, receive the class’s starting equipment, and a
@@ -269,7 +303,7 @@ feature, and you can use the spell slots you gain from the Spellcasting
 class feature to cast warlock spells you know.
 
 Multiclass Spellcaster: Spell Slots per Spell Level
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------+-------------+----------+-------------+-------------+--------------+-------------+-------------+-------------+-------------+
 |   Lvl.         |   1st       |   2nd    |   3rd       |   4th       |   5th        |   6th       |   7th       |   8th       |   9th       |
