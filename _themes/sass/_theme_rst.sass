@@ -71,8 +71,18 @@
     td, th
       background: transparent !important
       border-color: rgba(0,0,0,.1) !important
-  .section ul, .toctree-wrapper ul
-    @extend .wy-plain-list-disc
+  .section ul, .toctree-wrapper > ul
+    margin-left: $gutter/2
+    margin-bottom: $gutter/4
+  .toctree-wrapper 
+    .toctree-l1
+      font-size: 120%
+      font-weight: bold
+    .toctree-l2, .toctree-l3, .toctree-l4
+      font-size: 1rem
+      font-weight: lighter
+    ul li
+      margin-top: $gutter/4
   .section ol.loweralpha, .section ol.loweralpha li
     list-style: lower-alpha
   .section ol.upperalpha, .section ol.upperalpha li
