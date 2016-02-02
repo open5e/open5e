@@ -314,3 +314,34 @@
   .rst-content
     .sidebar
       width: 100%
+  .hide-mobile
+    display: none
+
+ul.list-bulleted 
+  list-style: disc
+  li
+    list-style: disc
+  ul
+    list-style: circle
+    li
+      list-style: circle
+
+.columns
+  -webkit-column-count: 3
+  -moz-column-count: 3
+  column-count: 3
+  -webkit-column-gap: 24px
+  -moz-column-gap: 24px
+  column-gap: 24px
+  
++media($tablet)
+  .columns
+    -webkit-column-count: 2
+    -moz-column-count: 2
+    column-count: 2
+    
++media($mobile)
+  .columns
+    -webkit-column-count: 1
+    -moz-column-count: 1
+    column-count: 1

@@ -4526,13 +4526,13 @@ div[class^='highlight'] pre {
 
 .wy-nav-top {
   display: none;
-  background: #2980B9;
+  background: #E74C3C;
   color: #fff;
   padding: 0.4045em 0.809em;
   position: relative;
   line-height: 50px;
   text-align: center;
-  font-size: 100%;
+  font-size: 150%;
   *zoom: 1;
 }
 .wy-nav-top:before, .wy-nav-top:after {
@@ -5102,6 +5102,46 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 @media screen and (max-width: 480px) {
   .rst-content .sidebar {
     width: 100%;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+}
+ul.list-bulleted {
+  list-style: disc;
+}
+ul.list-bulleted li {
+  list-style: disc;
+}
+ul.list-bulleted ul {
+  list-style: circle;
+}
+ul.list-bulleted ul li {
+  list-style: circle;
+}
+
+.columns {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 24px;
+  -moz-column-gap: 24px;
+  column-gap: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media screen and (max-width: 480px) {
+  .columns {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
   }
 }
 span[id*='MathJax-Span'] {

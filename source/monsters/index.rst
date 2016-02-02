@@ -7,5 +7,5 @@ Monsters
    :glob:
    :maxdepth: 1
    
+   Monster Descriptions <monsters_a-z/index>
    *
-   monsters_a-z/index
