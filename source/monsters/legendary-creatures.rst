@@ -1,5 +1,5 @@
 Legendary Creatures
-====================
+===================
 
 A legendary creature can do things that ordinary creatures can’t. It can
 take special actions outside its turn, and it might exert magical
