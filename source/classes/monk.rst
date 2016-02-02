@@ -4,39 +4,39 @@ Monk
 Class Features
 --------------
 
-    As a monk, you gain the following class features.
+As a monk, you gain the following class features.
 
 Hit Points
 ^^^^^^^^^^
 
-    **Hit Dice:** 1d8 per monk level
+**Hit Dice:** 1d8 per monk level
 
-    **Hit Points at 1st Level:** 8 + your Constitution modifier
+**Hit Points at 1st Level:** 8 + your Constitution modifier
 
-    **Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution
-    modifier per monk level after 1st
+**Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution
+modifier per monk level after 1st
 
 Proficiencies
 ^^^^^^^^^^^^^
 
-    **Armor:** None
+**Armor:** None
 
-    **Weapons:** Simple weapons, shortswords
+**Weapons:** Simple weapons, shortswords
 
-    **Tools:** Choose one type of artisan’s tools or one musical
-    instrument
+**Tools:** Choose one type of artisan’s tools or one musical
+instrument
 
-    **Saving Throws:** Strength, Dexterity
+**Saving Throws:** Strength, Dexterity
 
-    **Skills:** Choose two from Acrobatics, Athletics,
+**Skills:** Choose two from Acrobatics, Athletics,
 
 History, Insight, Religion, and Stealth
 
 Equipment
 ^^^^^^^^^
 
-    You start with the following equipment, in addition to the equipment
-    granted by your background:
+You start with the following equipment, in addition to the equipment
+granted by your background:
 
 -  (*a*) a shortsword or (*b*) any simple weapon
 
@@ -91,36 +91,36 @@ The Monk
 | 20th  | +6                | 1d10         | 20        | +30 ft.            | Perfect Self                                           |
 +-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
 
-    **Unarmored Defense**
+**Unarmored Defense**
 
-    Beginning at 1st level, while you are wearing no armor and not
-    wielding a shield, your AC equals 10 + your Dexterity modifier +
-    your Wisdom modifier.
+Beginning at 1st level, while you are wearing no armor and not
+wielding a shield, your AC equals 10 + your Dexterity modifier +
+your Wisdom modifier.
 
-    **Martial Arts**
+**Martial Arts**
 
-    At 1st level, your practice of martial arts gives you mastery of
-    combat styles that use unarmed strikes and monk weapons, which are
-    shortswords and any simple melee weapons that don’t have the two-
-    handed or heavy property.
+At 1st level, your practice of martial arts gives you mastery of
+combat styles that use unarmed strikes and monk weapons, which are
+shortswords and any simple melee weapons that don’t have the two-
+handed or heavy property.
 
-    You gain the following benefits while you are unarmed or wielding
-    only monk weapons and you aren’t wearing armor or wielding a shield:
+You gain the following benefits while you are unarmed or wielding
+only monk weapons and you aren’t wearing armor or wielding a shield:
 
 -  You can use Dexterity instead of Strength for the attack and damage >
-   rolls of your unarmed strikes and monk weapons.
+rolls of your unarmed strikes and monk weapons.
 
 -  You can roll a d4 in place of the normal damage of your unarmed >
-   strike or monk weapon. This die changes as you gain monk levels, > as
-   shown in the Martial Arts column of the Monk table.
+strike or monk weapon. This die changes as you gain monk levels, > as
+shown in the Martial Arts column of the Monk table.
 
 -  When you use the Attack action with an unarmed strike or a monk >
-   weapon on your turn, you can
+weapon on your turn, you can
 
-    make one unarmed strike as a bonus action. For example, if you take
-    the Attack action and attack with a quarterstaff, you can also make
-    an unarmed strike as a bonus action, assuming you haven’t already
-    taken a bonus action this turn.
+make one unarmed strike as a bonus action. For example, if you take
+the Attack action and attack with a quarterstaff, you can also make
+an unarmed strike as a bonus action, assuming you haven’t already
+taken a bonus action this turn.
 
 Certain monasteries use specialized forms of the monk weapons. For
 example, you might use a club that is two lengths of wood connected by a
@@ -175,7 +175,7 @@ Some of your ki features require your target to make a saving throw to
 resist the feature’s effects. The saving throw DC is calculated as
 follows:
 
-    **Ki save DC** = 8 + your proficiency bonus + your Wisdom modifier
+**Ki save DC** = 8 + your proficiency bonus + your Wisdom modifier
 
 Flurry of Blows
 ^^^^^^^^^^^^^^^
@@ -268,7 +268,7 @@ Perfect Self
 
 and immunity to nonmagical attacks and damage.
 
-    At 20th level, when you roll for initiative and have
+At 20th level, when you roll for initiative and have
 
 Evasion
 ~~~~~~~
@@ -305,7 +305,7 @@ Diamond Soul
 Beginning at 14th level, your mastery of ki grants you proficiency in
 all saving throws.
 
-    Additionally, whenever you make a saving throw
+Additionally, whenever you make a saving throw
 
 and fail, you can spend 1 ki point to reroll it and take the second
 result.
@@ -341,7 +341,7 @@ one of the following effects on that target:
 -  It must succeed on a Dexterity saving throw or be knocked prone.
 
 -  It must make a Strength saving throw. If it fails, you can push it >
-   up to 15 feet away from you.
+up to 15 feet away from you.
 
 -  It can’t take reactions until the end of your next turn.
 

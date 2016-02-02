@@ -1,4 +1,4 @@
-““Warlock
+Warlock
 =======
 
 Class Features

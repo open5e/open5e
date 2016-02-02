@@ -4,37 +4,37 @@ Ranger
 Class Features
 --------------
 
-    As a ranger, you gain the following class features.
+As a ranger, you gain the following class features.
 
 Hit Points
 ^^^^^^^^^^
 
-    **Hit Dice:** 1d10 per ranger level
+**Hit Dice:** 1d10 per ranger level
 
-    **Hit Points at 1st Level:** 10 + your Constitution modifier
+**Hit Points at 1st Level:** 10 + your Constitution modifier
 
-    **Hit Points at Higher Levels:** 1d10 (or 6) + your Constitution
-    modifier per ranger level after 1st
+**Hit Points at Higher Levels:** 1d10 (or 6) + your Constitution
+modifier per ranger level after 1st
 
 Proficiencies
 ^^^^^^^^^^^^^
 
-    **Armor:** Light armor, medium armor, shields
+**Armor:** Light armor, medium armor, shields
 
-    **Weapons:** Simple weapons, martial weapons
+**Weapons:** Simple weapons, martial weapons
 
-    **Tools:** None
+**Tools:** None
 
-    **Saving Throws:** Strength, Dexterity
+**Saving Throws:** Strength, Dexterity
 
-    **Skills:** Choose three from Animal Handling, Athletics, Insight,
-    Investigation, Nature, Perception, Stealth, and Survival
+**Skills:** Choose three from Animal Handling, Athletics, Insight,
+Investigation, Nature, Perception, Stealth, and Survival
 
 Equipment
 ^^^^^^^^^
 
-    You start with the following equipment, in addition to the equipment
-    granted by your background:
+You start with the following equipment, in addition to the equipment
+granted by your background:
 
 -  (*a*) scale mail or (*b*) leather armor
 
@@ -47,52 +47,52 @@ Equipment
 The Ranger
 ^^^^^^^^^^
 
-==========  ===========  =====================================================  ================   ====  ====  ====  ====  ====  
+==========  ===========  =====================================================  ================   ====  ====  ====  ====  ====
 Level       Bonus        Features                                               Spells Known       1st   2nd   3rd   4th   5th
-==========  ===========  =====================================================  ================   ====  ====  ====  ====  ====  
-1st         +2           Favored Enemy, Natural Explorer                         ̶                  -     -     -     -     -         
-2nd         +2           Fighting Style, Spellcasting                           2                  2     -     -     -     -         
-3rd         +2           Ranger Archetype, Primeval Awareness                   3                  3     -     -     -     -         
-4th         +2           Ability Score Improvement                              3                  3     -     -     -     -         
+==========  ===========  =====================================================  ================   ====  ====  ====  ====  ====
+1st         +2           Favored Enemy, Natural Explorer                         ̶                  -     -     -     -     -
+2nd         +2           Fighting Style, Spellcasting                           2                  2     -     -     -     -
+3rd         +2           Ranger Archetype, Primeval Awareness                   3                  3     -     -     -     -
+4th         +2           Ability Score Improvement                              3                  3     -     -     -     -
 5th         +3           Extra Attack                                           4                  4     2     -     -     -
 6th         +3           Favored Enemy and Natural Explorer improvements        4                  4     2     -     -     -
-7th         +3           Ranger Archetype feature                               5                  4     3     -     -     - 
+7th         +3           Ranger Archetype feature                               5                  4     3     -     -     -
 8th         +3           Ability Score Improvement, Land’s Stride               5                  4     3     -     -     -
-9th         +4           -                                                      6                  4     3     2     -     -        
-10th        +4           Natural Explorer improvement, Hide in Plain Sight      6                  4     3     2     -     -        
-11th        +4           Ranger Archetype feature                               7                  4     3     3     -     -        
-12th        +4           Ability Score Improvement                              7                  4     3     3     -     -        
-13th        +5           -                                                      8                  4     3     3     1     - 
-14th        +5           Favored Enemy improvement, Vanish                      8                  4     3     3     1     - 
-15th        +5           Ranger Archetype feature                               9                  4     3     3     2     - 
-16th        +5           Ability Score Improvement                              9                  4     3     3     2     - 
-17th        +6           -                                                      10                 4     3     3     3     1 
-18th        +6           Feral Senses                                           10                 4     3     3     3     1 
-19th        +6           Ability Score Improvement                              11                 4     3     3     3     2 
-20th        +6           Foe Slayer                                             11                 4     3     3     3     2 
-==========  ===========  =====================================================  ================   ====  ====  ====  ====  ====  
+9th         +4           -                                                      6                  4     3     2     -     -
+10th        +4           Natural Explorer improvement, Hide in Plain Sight      6                  4     3     2     -     -
+11th        +4           Ranger Archetype feature                               7                  4     3     3     -     -
+12th        +4           Ability Score Improvement                              7                  4     3     3     -     -
+13th        +5           -                                                      8                  4     3     3     1     -
+14th        +5           Favored Enemy improvement, Vanish                      8                  4     3     3     1     -
+15th        +5           Ranger Archetype feature                               9                  4     3     3     2     -
+16th        +5           Ability Score Improvement                              9                  4     3     3     2     -
+17th        +6           -                                                      10                 4     3     3     3     1
+18th        +6           Feral Senses                                           10                 4     3     3     3     1
+19th        +6           Ability Score Improvement                              11                 4     3     3     3     2
+20th        +6           Foe Slayer                                             11                 4     3     3     3     2
+==========  ===========  =====================================================  ================   ====  ====  ====  ====  ====
 
-    **Favored Enemy**
+**Favored Enemy**
 
-    Beginning at 1st level, you have significant experience studying,
-    tracking, hunting, and even talking to a certain type of enemy.
+Beginning at 1st level, you have significant experience studying,
+tracking, hunting, and even talking to a certain type of enemy.
 
-    Choose a type of favored enemy: aberrations, beasts, celestials,
-    constructs, dragons, elementals, fey, fiends, giants, monstrosities,
-    oozes, plants, or undead. Alternatively, you can select two races of
+Choose a type of favored enemy: aberrations, beasts, celestials,
+constructs, dragons, elementals, fey, fiends, giants, monstrosities,
+oozes, plants, or undead. Alternatively, you can select two races of
 
-    humanoid (such as gnolls and orcs) as favored enemies.
+humanoid (such as gnolls and orcs) as favored enemies.
 
-    You have advantage on Wisdom (Survival) checks to track your favored
-    enemies, as well as on Intelligence checks to recall information
-    about them.
+You have advantage on Wisdom (Survival) checks to track your favored
+enemies, as well as on Intelligence checks to recall information
+about them.
 
-    When you gain this feature, you also learn one language of your
-    choice that is spoken by your favored enemies, if they speak one at
-    all.
+When you gain this feature, you also learn one language of your
+choice that is spoken by your favored enemies, if they speak one at
+all.
 
-    You choose one additional favored enemy, as well as an associated
-    language, at 6th and 14th level. As
+You choose one additional favored enemy, as well as an associated
+language, at 6th and 14th level. As
 
 you gain levels, your choices should reflect the types of monsters you
 have encountered on your adventures.
@@ -115,15 +115,15 @@ the following benefits:
 -  Your group can’t become lost except by magical means.
 
 -  Even when you are engaged in another activity while traveling (such >
-   as foraging, navigating, or tracking), you remain alert to danger.
+as foraging, navigating, or tracking), you remain alert to danger.
 
 -  If you are traveling alone, you can move stealthily at a > normal
-   pace.
+pace.
 
 -  When you forage, you find twice as much food as you normally would.
 
 -  While tracking other creatures, you also learn their exact number, >
-   their sizes, and how long ago they passed through the area.
+their sizes, and how long ago they passed through the area.
 
 You choose additional favored terrain types at 6th and 10th level.
 
@@ -177,8 +177,8 @@ For example, if you know the 1st-level spell *animal friendship* and
 have a 1st-level and a 2nd-level spell slot available, you can cast
 *animal friendship* using either slot.
 
-    **Spells Known of 1st Level and Higher** You know two 1st-level
-    spells of your choice from the ranger spell list.
+**Spells Known of 1st Level and Higher** You know two 1st-level
+spells of your choice from the ranger spell list.
 
 The Spells Known column of the Ranger table shows when you learn more
 ranger spells of your choice. Each of these spells must be of a level
@@ -199,11 +199,11 @@ spell refers to your spellcasting ability. In addition, you use your
 Wisdom modifier when setting the saving throw DC for a ranger spell you
 cast and when making an attack roll with one.
 
-    **Spell save DC** = 8 + your proficiency bonus + your Wisdom
-    modifier
+**Spell save DC** = 8 + your proficiency bonus + your Wisdom
+modifier
 
-    **Spell attack modifier** = your proficiency bonus + your Wisdom
-    modifier
+**Spell attack modifier** = your proficiency bonus + your Wisdom
+modifier
 
 Ranger Archetype
 ~~~~~~~~~~~~~~~~
@@ -323,7 +323,7 @@ hits or misses you with an attack, you can use your reaction to attack
 that creature immediately after its attack, provided that you can see
 the creature.
 
-    ***Horde Breaker.*** Once on each of your turns when
+***Horde Breaker.*** Once on each of your turns when
 
 you make a weapon attack, you can make another attack with the same
 weapon against a different creature that is within 5 feet of the
@@ -334,8 +334,8 @@ Defensive Tactics
 
 At 7th level, you gain one of the following features of your choice.
 
-    ***Escape the Horde.*** Opportunity attacks against you are made
-    with disadvantage.
+***Escape the Horde.*** Opportunity attacks against you are made
+with disadvantage.
 
 ***Multiattack Defense.*** When a creature hits you with an attack, you
 gain a +4 bonus to AC against all subsequent attacks made by that
@@ -369,8 +369,8 @@ make a Dexterity saving throw to take only half damage, you instead take
 no damage if you succeed on the saving throw, and only half damage if
 you fail.
 
-    ***Stand Against the Tide.*** When a hostile creature misses you
-    with a melee attack, you can use your
+***Stand Against the Tide.*** When a hostile creature misses you
+with a melee attack, you can use your
 
 reaction to force that creature to repeat the same attack against
 another creature (other than itself) of your choice.
