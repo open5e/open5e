@@ -3,12 +3,35 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to open5e
-==================================
+Open5e
+======
 
-*The best open source for the SRD, and the source of the best open content*
+Open5e aims to be the best open-source resource for fifth edition d20 content.
 
-Contents:
+What are we about?
+------------------
+
+In addition to an open, readable, and easily searchable resource for the 5e SRD, we also intend to provide:
+
+* • **Machine readable data** like monsters and spell lists, in formats like **csv, json, md, and xml**
+
+* • **Useful tools** such as **random tables, encounter calculators, treasure generators, And more...**
+
+* • Plus the best **OGL community-created** content on the web!
+
+----------------------------------------------------------------------------------------------
+
+Want to contribute? 
+-------------------
+
+`We're open-source on Github <http://example.com/>`_
+
+---------------------------------------------------------------------------------------------
+
+5e SRD
+======
+
+.. rst-class:: columns-2
 
 .. toctree::
    :name: mastertoc
