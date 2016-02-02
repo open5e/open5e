@@ -15,7 +15,7 @@ What are we about?
 
 .. rst-class:: hide-mobile
 
-In addition to an open, readable, and easily searchable resource for the 5e SRD we have lots of new things we'd like to add! At the top of our list are::
+In addition to an open, readable, and easily searchable resource for the 5e SRD we have lots of new things we'd like to add! At the top of our list are:
 
 .. rst-class:: hide-mobile list-bulleted
 
