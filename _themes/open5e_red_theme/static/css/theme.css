@@ -5108,6 +5108,19 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
     display: none;
   }
 }
+ul.list-bulleted {
+  list-style: disc;
+}
+ul.list-bulleted li {
+  list-style: disc;
+}
+ul.list-bulleted ul {
+  list-style: circle;
+}
+ul.list-bulleted ul li {
+  list-style: circle;
+}
+
 .columns {
   -webkit-column-count: 3;
   -moz-column-count: 3;
