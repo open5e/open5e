@@ -12,8 +12,8 @@ Monsters
 
 ------------------------------------------
 
-Monster Descriptions
-====================
+Descriptions
+
 
 .. rst-class:: columns
 
@@ -22,6 +22,6 @@ Monster Descriptions
   :glob:
   :maxdepth: 3
 
-  Monsters <monsters_a-z/index>
+  Monster Descriptions <monsters_a-z/index>
   miscellaneous-creatures
   nonplayer-characters

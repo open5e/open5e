@@ -8,16 +8,10 @@ Open5e
 
 Open5e aims to be the best open-source resource for 5th edition d20 content.
 
-.. rst-class:: hide-mobile
-
 What are we about?
 ------------------
 
-.. rst-class:: hide-mobile
-
 In addition to an open, readable, and easily searchable resource for the 5e SRD we have lots of new things we'd like to add! At the top of our list are:
-
-.. rst-class:: hide-mobile list-bulleted
 
 * **Machine-readable data** like monsters and spell lists, in formats like **csv, json, md, and xml**
 * **Useful tools** such as **random tables, encounter calculators, treasure generators, And more...**
