@@ -46,30 +46,53 @@ granted by your background:
 The Ranger
 ^^^^^^^^^^
 
-==========  ===========  =====================================================  ================   ====  ====  ====  ====  ====
-Level       Bonus        Features                                               Spells Known       1st   2nd   3rd   4th   5th
-==========  ===========  =====================================================  ================   ====  ====  ====  ====  ====
-1st         +2           Favored Enemy, Natural Explorer                         ̶                  -     -     -     -     -
-2nd         +2           Fighting Style, Spellcasting                           2                  2     -     -     -     -
-3rd         +2           Ranger Archetype, Primeval Awareness                   3                  3     -     -     -     -
-4th         +2           Ability Score Improvement                              3                  3     -     -     -     -
-5th         +3           Extra Attack                                           4                  4     2     -     -     -
-6th         +3           Favored Enemy and Natural Explorer improvements        4                  4     2     -     -     -
-7th         +3           Ranger Archetype feature                               5                  4     3     -     -     -
-8th         +3           Ability Score Improvement, Land’s Stride               5                  4     3     -     -     -
-9th         +4           -                                                      6                  4     3     2     -     -
-10th        +4           Natural Explorer improvement, Hide in Plain Sight      6                  4     3     2     -     -
-11th        +4           Ranger Archetype feature                               7                  4     3     3     -     -
-12th        +4           Ability Score Improvement                              7                  4     3     3     -     -
-13th        +5           -                                                      8                  4     3     3     1     -
-14th        +5           Favored Enemy improvement, Vanish                      8                  4     3     3     1     -
-15th        +5           Ranger Archetype feature                               9                  4     3     3     2     -
-16th        +5           Ability Score Improvement                              9                  4     3     3     2     -
-17th        +6           -                                                      10                 4     3     3     3     1
-18th        +6           Feral Senses                                           10                 4     3     3     3     1
-19th        +6           Ability Score Improvement                              11                 4     3     3     3     2
-20th        +6           Foe Slayer                                             11                 4     3     3     3     2
-==========  ===========  =====================================================  ================   ====  ====  ====  ====  ====
++-------+-------------+--------------------------------------------+-------------+-----------------------------+
+|       |             |                                            |             | Spell Slots per Spell Level |
+|       | Proficiency |                                            | Spells      +-----+-----+-----+-----+-----+
+| Level | Bonus       | Features                                   | Known       | 1st | 2nd | 3rd | 4th | 5th |
++=======+=============+============================================+=============+=====+=====+=====+=====+=====+
+| 1st   | +2          | Favored Enemy, Natural Explorer            | -           |  -  | -   | -   | -   | -   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 2nd   | +2          | Fighting Style, Spellcasting               | 2           | 2   | -   | -   | -   | -   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 3rd   | +2          | Ranger Archetype, Primeval Awareness       | 3           | 3   | -   | -   | -   | -   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 4th   | +2          | Ability Score Improvement                  | 3           | 3   | -   | -   | -   | -   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 5th   | +3          | Extra Attack                               | 4           | 4   | 2   | -   | -   | -   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 6th   | +3          | Favored Enemy and Natural Explorer         | 4           | 4   | 2   | -   | -   | -   |
+|       |             | improvements                               |             |     |     |     |     |     |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 7th   | +3          | Ranger Archetype feature                   | 5           | 4   | 3   | -   | -   | -   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 8th   | +3          | Ability Score Improvement, Land’s Stride   | 5           | 4   | 3   | -   | -   | -   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 9th   | +4          | -                                          | 6           | 4   | 3   | 2   | -   | -   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 10th  | +4          | Natural Explorer improvement, Hide in      | 6           | 4   | 3   | 2   | -   | -   |
+|       |             | Plain Sight                                |             |     |     |     |     |     |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 11th  | +4          | Ranger Archetype feature                   | 7           | 4   | 3   | 3   | -   | -   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 12th  | +4          | Ability Score Improvement                  | 7           | 4   | 3   | 3   | -   | -   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 13th  | +5          | -                                          | 8           | 4   | 3   | 3   | 1   | -   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 14th  | +5          | Favored Enemy improvement, Vanish          | 8           | 4   | 3   | 3   | 1   | -   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 15th  | +5          | Ranger Archetype feature                   | 9           | 4   | 3   | 3   | 2   | -   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 16th  | +5          | Ability Score Improvement                  | 9           | 4   | 3   | 3   | 2   | -   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 17th  | +6          | -                                          | 10          | 4   | 3   | 3   | 3   | 1   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 18th  | +6          | Feral Senses                               | 10          | 4   | 3   | 3   | 3   | 1   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 19th  | +6          | Ability Score Improvement                  | 11          | 4   | 3   | 3   | 3   | 2   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
+| 20th  | +6          | Foe Slayer                                 | 11          | 4   | 3   | 3   | 3   | 2   |
++-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
 
 Favored Enemy
 ~~~~~~~~~~~~~
@@ -167,8 +190,10 @@ For example, if you know the 1st-level spell *animal friendship* and
 have a 1st-level and a 2nd-level spell slot available, you can cast
 *animal friendship* using either slot.
 
-**Spells Known of 1st Level and Higher** You know two 1st-level
-spells of your choice from the ranger spell list.
+Spells Known of 1st Level and Higher
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You know two 1st-level spells of your choice from the ranger spell list.
 
 The Spells Known column of the Ranger table shows when you learn more
 ranger spells of your choice. Each of these spells must be of a level
@@ -189,11 +214,9 @@ spell refers to your spellcasting ability. In addition, you use your
 Wisdom modifier when setting the saving throw DC for a ranger spell you
 cast and when making an attack roll with one.
 
-**Spell save DC** = 8 + your proficiency bonus + your Wisdom
-modifier
+  **Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier
 
-**Spell attack modifier** = your proficiency bonus + your Wisdom
-modifier
+  **Spell attack modifier** = your proficiency bonus + your Wisdom modifier
 
 Ranger Archetype
 ~~~~~~~~~~~~~~~~

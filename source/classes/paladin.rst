@@ -51,40 +51,40 @@ The Paladin
 |       | Proficiency |                                         +-----+-----+-----+-----+-----+
 | Level | Bonus       | Features                                | 1st | 2nd | 3rd | 4th | 5th |
 +=======+=============+=========================================+=====+=====+=====+=====+=====+
-| 1st   | +2          | Divine Sense, Lay on Hands              | \-  | \-  | \-  | \-  | \-  |
+| 1st   | +2          | Divine Sense, Lay on Hands              | -   | -   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 2nd   | +2          | Fighting Style, Spellcasting,           | 2   | \-  | \-  | \-  | \-  |
+| 2nd   | +2          | Fighting Style, Spellcasting,           | 2   | -   | -   | -   | -   |
 |       |             | Divine Smite                            |     |     |     |     |     |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 3rd   | +2          | Divine Health, Sacred Oath              | 3   | \-  | \-  | \-  | \-  |
+| 3rd   | +2          | Divine Health, Sacred Oath              | 3   | -   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 4th   | +2          | Ability Score Improvement               | 3   | \-  | \-  | \-  | \-  |
+| 4th   | +2          | Ability Score Improvement               | 3   | -   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 5th   | +3          | Extra Attack                            | 4   | 2   | \-  | \-  | \-  |
+| 5th   | +3          | Extra Attack                            | 4   | 2   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 6th   | +3          | Aura of Protection                      | 4   | 2   | \-  | \-  | \-  |
+| 6th   | +3          | Aura of Protection                      | 4   | 2   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 7th   | +3          | Sacred Oath feature                     | 4   | 3   | \-  | \-  | \-  |
+| 7th   | +3          | Sacred Oath feature                     | 4   | 3   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 8th   | +3          | Ability Score Improvement               | 4   | 3   | \-  | \-  | \-  |
+| 8th   | +3          | Ability Score Improvement               | 4   | 3   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 9th   | +4          | \-                                      | 4   | 3   | 2   | \-  | \-  |
+| 9th   | +4          | -                                       | 4   | 3   | 2   | -   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 10th  | +4          | Aura of Courage                         | 4   | 3   | 2   | \-  | \-  |
+| 10th  | +4          | Aura of Courage                         | 4   | 3   | 2   | -   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 11th  | +4          | Improved Divine Smite                   | 4   | 3   | 3   | \-  | \-  |
+| 11th  | +4          | Improved Divine Smite                   | 4   | 3   | 3   | -   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 12th  | +4          | Ability Score Improvement               | 4   | 3   | 3   | \-  | \-  |
+| 12th  | +4          | Ability Score Improvement               | 4   | 3   | 3   | -   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 13th  | +5          | \-                                      | 4   | 3   | 3   | 1   | \-  |
+| 13th  | +5          | -                                       | 4   | 3   | 3   | 1   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 14th  | +5          | Cleansing Touch                         | 4   | 3   | 3   | 1   | \-  |
+| 14th  | +5          | Cleansing Touch                         | 4   | 3   | 3   | 1   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 15th  | +5          | Sacred Oath feature                     | 4   | 3   | 3   | 2   | \-  |
+| 15th  | +5          | Sacred Oath feature                     | 4   | 3   | 3   | 2   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 16th  | +5          | Ability Score Improvement               | 4   | 3   | 3   | 2   | \-  |
+| 16th  | +5          | Ability Score Improvement               | 4   | 3   | 3   | 2   | -   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
-| 17th  | +6          | \-                                      | 4   | 3   | 3   | 3   | 1   |
+| 17th  | +6          | -                                       | 4   | 3   | 3   | 3   | 1   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
 | 18th  | +6          | Aura improvements                       | 4   | 3   | 3   | 3   | 1   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
@@ -205,11 +205,9 @@ Charisma whenever a spell refers to your spellcasting ability. In
 addition, you use your Charisma modifier when setting the saving throw
 DC for a paladin spell you cast and when making an attack roll with one.
 
-**Spell save DC** = 8 + your proficiency bonus + your Charisma
-modifier
+  **Spell save DC** = 8 + your proficiency bonus + your Charisma modifier
 
-**Spell attack modifier** = your proficiency bonus + your Charisma
-modifier
+  **Spell attack modifier** = your proficiency bonus + your Charisma   modifier
 
 Spellcasting Focus
 ~~~~~~~~~~~~~~~~~~
@@ -265,10 +263,7 @@ Your oath allows you to channel divine energy to fuel magical effects.
 Each Channel Divinity option provided by your oath explains how to use
 it.
 
-When you use your Channel Divinity, you choose
-
-which option to use. You must then finish a short or long rest to use
-your Channel Divinity again.
+When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.
 
 Some Channel Divinity effects require saving throws. When you use such
 an effect from this class, the DC equals your paladin spell save DC.
@@ -303,9 +298,7 @@ Aura of Courage
 Starting at 10th level, you and friendly creatures within 10 feet of you
 can’t be frightened while you are conscious.
 
-At 18th level, the range of this aura increases to 30
-
-feet.
+At 18th level, the range of this aura increases to 30 feet.
 
 Improved Divine Smite
 ^^^^^^^^^^^^^^^^^^^^^

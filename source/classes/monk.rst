@@ -39,9 +39,7 @@ You start with the following equipment, in addition to the equipment
 granted by your background:
 
 -  (*a*) a shortsword or (*b*) any simple weapon
-
 -  (*a*) a dungeoneer’s pack or (*b*) an explorer’s pack
-
 -  10 darts
 
 The Monk
@@ -109,12 +107,7 @@ only monk weapons and you aren’t wearing armor or wielding a shield:
 
 -  You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.
 -  You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, ashown in the Martial Arts column of the Monk table.
--  When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can
-
-make one unarmed strike as a bonus action. For example, if you take
-the Attack action and attack with a quarterstaff, you can also make
-an unarmed strike as a bonus action, assuming you haven’t already
-taken a bonus action this turn.
+-  When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven’t already taken a bonus action this turn.
 
 Certain monasteries use specialized forms of the monk weapons. For
 example, you might use a club that is two lengths of wood connected by a
@@ -169,7 +162,7 @@ Some of your ki features require your target to make a saving throw to
 resist the feature’s effects. The saving throw DC is calculated as
 follows:
 
-**Ki save DC** = 8 + your proficiency bonus + your Wisdom modifier
+  **Ki save DC** = 8 + your proficiency bonus + your Wisdom modifier
 
 Flurry of Blows
 ^^^^^^^^^^^^^^^
@@ -237,32 +230,7 @@ Ki-Empowered Strikes
 ~~~~~~~~~~~~~~~~~~~~
 
 Starting at 6th level, your unarmed strikes count as magical for the
-purpose of overcoming resistance
-
-Timeless Body
-~~~~~~~~~~~~~
-
-At 15th level, your ki sustains you so that you suffer none of the
-frailty of old age, and you can’t be aged magically. You can still die
-of old age, however. In addition, you no longer need food or water.
-
-Empty Body
-~~~~~~~~~~
-
-Beginning at 18th level, you can use your action to spend 4 ki points to
-become invisible for 1 minute. During that time, you also have
-resistance to all damage but force damage.
-
-Additionally, you can spend 8 ki points to cast the *astral projection*
-spell, without needing material components. When you do so, you can’t
-take any other creatures with you.
-
-Perfect Self
-~~~~~~~~~~~~
-
-and immunity to nonmagical attacks and damage.
-
-At 20th level, when you roll for initiative and have
+purpose of overcoming resistance and immunity to nonmagical attacks and damage.
 
 Evasion
 ~~~~~~~
@@ -299,12 +267,30 @@ Diamond Soul
 Beginning at 14th level, your mastery of ki grants you proficiency in
 all saving throws.
 
-Additionally, whenever you make a saving throw
-
-and fail, you can spend 1 ki point to reroll it and take the second
+Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second
 result.
 
-no ki points remaining, you regain 4 ki points.
+Timeless Body
+~~~~~~~~~~~~~
+
+At 15th level, your ki sustains you so that you suffer none of the
+frailty of old age, and you can’t be aged magically. You can still die
+of old age, however. In addition, you no longer need food or water.
+
+Empty Body
+~~~~~~~~~~
+
+Beginning at 18th level, you can use your action to spend 4 ki points to
+become invisible for 1 minute. During that time, you also have
+resistance to all damage but force damage.
+
+Additionally, you can spend 8 ki points to cast the *astral projection*
+spell, without needing material components. When you do so, you can’t
+take any other creatures with you.
+
+Perfect Self
+~~~~~~~~~~~~
+At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points.
 
 Monastic Traditions
 -------------------

@@ -53,39 +53,39 @@ The Wizard
 |       | Proficiency |                                         | Cantrips +-----+-----+-----+-----+-----+-----+-----+-----+-----+
 | Level | Bonus       | Features                                | Known    | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
 +=======+=============+=========================================+==========+=====+=====+=====+=====+=====+=====+=====+=====+=====+
-| 1st   | +2          | Spellcasting, Arcane Recovery           | 3        | 2   | \-  | \-  | \-  | \-  | \-  | \-  | \-  | \-  |
+| 1st   | +2          | Spellcasting, Arcane Recovery           | 3        | 2   | -   | -   | -   | -   | -   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 2nd   | +2          | Arcane Tradition                        | 3        | 3   | \-  | \-  | \-  | \-  | \-  | \-  | \-  | \-  |
+| 2nd   | +2          | Arcane Tradition                        | 3        | 3   | -   | -   | -   | -   | -   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 3rd   | +2          | \-                                      | 3        | 4   | 2   | \-  | \-  | \-  | \-  | \-  | \-  | \-  |
+| 3rd   | +2          | -                                       | 3        | 4   | 2   | -   | -   | -   | -   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 4th   | +2          | Ability Score Improvement               | 4        | 4   | 3   | \-  | \-  | \-  | \-  | \-  | \-  | \-  |
+| 4th   | +2          | Ability Score Improvement               | 4        | 4   | 3   | -   | -   | -   | -   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 5th   | +3          | \-                                      | 4        | 4   | 3   | 2   | \-  | \-  | \-  | \-  | \-  | \-  |
+| 5th   | +3          | -                                       | 4        | 4   | 3   | 2   | -   | -   | -   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 6th   | +3          | Arcane Tradition feature                | 4        | 4   | 3   | 3   | \-  | \-  | \-  | \-  | \-  | \-  |
+| 6th   | +3          | Arcane Tradition feature                | 4        | 4   | 3   | 3   | -   | -   | -   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 7th   | +3          | \-                                      | 4        | 4   | 3   | 3   | 1   | \-  | \-  | \-  | \-  | \-  |
+| 7th   | +3          | -                                       | 4        | 4   | 3   | 3   | 1   | -   | -   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 8th   | +3          | Ability Score Improvement               | 4        | 4   | 3   | 3   | 2   | \-  | \-  | \-  | \-  | \-  |
+| 8th   | +3          | Ability Score Improvement               | 4        | 4   | 3   | 3   | 2   | -   | -   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 9th   | +4          | \-                                      | 4        | 4   | 3   | 3   | 3   | 1   | \-  | \-  | \-  | \-  |
+| 9th   | +4          | -                                       | 4        | 4   | 3   | 3   | 3   | 1   | -   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 10th  | +4          | Arcane Tradition feature                | 5        | 4   | 3   | 3   | 3   | 2   | \-  | \-  | \-  | \-  |
+| 10th  | +4          | Arcane Tradition feature                | 5        | 4   | 3   | 3   | 3   | 2   | -   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 11th  | +4          | \-                                      | 5        | 4   | 3   | 3   | 3   | 2   | 1   | \-  | \-  | \-  |
+| 11th  | +4          | -                                       | 5        | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 12th  | +4          | Ability Score Improvement               | 5        | 4   | 3   | 3   | 3   | 2   | 1   | \-  | \-  | \-  |
+| 12th  | +4          | Ability Score Improvement               | 5        | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 13th  | +5          | \-                                      | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | \-  | \-  |
+| 13th  | +5          | -                                       | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 14th  | +5          | Arcane Tradition feature                | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | \-  | \-  |
+| 14th  | +5          | Arcane Tradition feature                | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 15th  | +5          | \-                                      | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | \-  |
+| 15th  | +5          | -                                       | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 16th  | +5          | Ability Score Improvement               | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | \-  |
+| 16th  | +5          | Ability Score Improvement               | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 17th  | +6          | \-                                      | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | 1   |
+| 17th  | +6          | -                                       | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | 1   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 | 18th  | +6          | Spell Mastery                           | 5        | 4   | 3   | 3   | 3   | 3   | 1   | 1   | 1   | 1   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
@@ -152,11 +152,9 @@ In addition, you use your Intelligence modifier when setting the saving
 throw DC for a wizard spell you cast and when making an attack roll with
 one.
 
-**Spell save DC** = 8 + your proficiency bonus + your Intelligence
-modifier
+  **Spell save DC** = 8 + your proficiency bonus + your Intelligence modifier
 
-**Spell attack modifier** = your proficiency bonus + your
-Intelligence modifier
+  **Spell attack modifier** = your proficiency bonus + your Intelligence modifier
 
 Ritual Casting
 ^^^^^^^^^^^^^^
@@ -321,7 +319,6 @@ spell recorded on a scroll in an evil wizard’s chest, for example,
 or in a dusty tome in an ancient library.
 
 ***Copying a Spell into the Book.*** When you find a wizard
-
 spell of 1st level or higher, you can add it to your spellbook if it
 is of a spell level you can prepare and if you can spare the time to
 decipher and copy it.
@@ -329,13 +326,11 @@ decipher and copy it.
 Copying that spell into your spellbook involves reproducing the
 basic form of the spell, then deciphering the unique system of
 notation used by the wizard who wrote it. You
-
 must practice the spell until you understand the sounds or gestures
 required, then transcribe it into your spellbook using your own
 notation.
 
 For each level of the spell, the process takes 2 hours and
-
 costs 50 gp. The cost represents material components you expend as
 you experiment with the spell to master it, as well as the fine inks
 you need to record it. Once you have spent this time and money, you
@@ -349,7 +344,6 @@ your own notation and already know how to cast the spell. You need
 spend only 1 hour and 10 gp for each level of the copied spell.
 
 If you lose your spellbook, you can use the same
-
 procedure to transcribe the spells that you have prepared into a new
 spellbook. Filling out the remainder of your spellbook requires you
 to find new spells to do so, as normal. For this reason, many

@@ -38,42 +38,58 @@ You start with the following equipment, in addition to the equipment
 granted by your background:
 
 -  (*a*) a light crossbow and 20 bolts or (*b*) any simple weapon
-
 -  (*a*) a component pouch or (*b*) an arcane focus
-
 -  (*a*) a dungeoneer’s pack or (*b*) an explorer’s pack
-
 -  Two daggers
 
 The Sorcerer
 ~~~~~~~~~~~~
 
-=========  ====================  ================  =================================  ==============  ============  ======  ======  ======  ======  ======  ======  ======  ======  ======
-                                                                                                                Spell Slots per Spell Level
-                                                                                                                ----------------------------------------------------------------------
-Level      Proficiency Bonus     Sorcery Points    Features                           Cantrips Known  Spells Known  1st     2nd     3rd     4th     5th     6th     7th     8th     9th
-=========  ====================  ================  =================================  ==============  ============  ======  ======  ======  ======  ======  ======  ======  ======  ======
-1st        +2                    -                 Spellcasting, Sorcerous Origin     4               2             2        ̶        ̶        ̶        ̶        ̶        ̶        ̶        ̶
-2nd        +2                    2                 Font of                            4               3             3        ̶        ̶        ̶        ̶        ̶        ̶        ̶        ̶
-3rd        +2                    3                 Metamagic                          4               4             4       2        ̶        ̶        ̶        ̶        ̶        ̶        ̶
-4th        +2                    4                 Ability Score Improvement          5               5             4       3        ̶        ̶        ̶        ̶        ̶        ̶        ̶
-5th        +3                    5                  ̶                                  5               6             4       3       2        ̶        ̶        ̶        ̶        ̶        ̶
-6th        +3                    6                 Sorcerous Origin Feature Ability   5               7             4       3       3        ̶        ̶        ̶        ̶        ̶        ̶
-7th        +3                    7                  ̶                                  5               8             4       3       3       1        ̶        ̶        ̶        ̶        ̶
-8th        +3                    8                 Ability Score Improvement          5               9             4       3       3       2        ̶        ̶        ̶        ̶        ̶
-9th        +4                    9                  ̶                                  5               10            4       3       3       3       1        ̶        ̶        ̶        ̶
-10th       +4                    10                Metamagic                          6               11            4       3       3       3       2        ̶        ̶        ̶        ̶
-11th       +4                    11                 ̶                                  6               12            4       3       3       3       2       1        ̶        ̶        ̶
-12th       +4                    12                Ability Score Improvement          6               12            4       3       3       3       2       1        ̶        ̶        ̶
-13th       +5                    13                 ̶                                  6               13            4       3       3       3       2       1       1        ̶        ̶
-14th       +5                    14                Sorcerous Origin Feature Ability   6               13            4       3       3       3       2       1       1        ̶        ̶
-15th       +5                    15                 ̶                                  6               14            4       3       3       3       2       1       1       1        ̶
-16th       +5                    16                Ability Score Improvement          6               14            4       3       3       3       2       1       1       1        ̶
-17th       +6                    17                Metamagic                          6               15            4       3       3       3       2       1       1       1       1
-18th       +6                    18                Sorcerous Origin Feature Ability   6               15            4       3       3       3       3       1       1       1       1
-19th       +6                    19                Ability Score Improvement          6               15            4       3       3       3       3       2       1       1       1
-20th       +6                    20                Sorcerous Restoration              6               15            4       3       3       3       3       2       2       1       1
-=========  ====================  ================  =================================  ==============  ============  ======  ======  ======  ======  ======  ======  ======  ======  ======
++-------+-------------+--------------+----------------------------------------+----------+----------+-----------------------------------------------------+
+|       |             |              |                                        |          |          | --Spell Slots per Spell Level--                     |
+|       | Proficiency | Sorcery      |                                        | Cantrips | Spells   +-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| Level | Bonus       | Points       | Features                               | Known    | Known    | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
++=======+=============+==============+========================================+==========+==========+=====+=====+=====+=====+=====+=====+=====+=====+=====+
+| 1st   | +2          | -            | Spellcasting, Sorcerous Origin         | 4        | 2        | 2   | -   | -   | -   | -   | -   | -   | -   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 2nd   | +2          | 2            | Font of                                | 4        | 3        | 3   | -   | -   | -   | -   | -   | -   | -   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 3rd   | +2          | 3            | Metamagic                              | 4        | 4        | 4   | 2   | -   | -   | -   | -   | -   | -   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 4th   | +2          | 4            | Ability Score Improvement              | 5        | 5        | 4   | 3   | -   | -   | -   | -   | -   | -   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 5th   | +3          | 5            | -                                      | 5        | 6        | 4   | 3   | 2   | -   | -   | -   | -   | -   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 6th   | +3          | 6            | Sorcerous Origin Feature Ability       | 5        | 7        | 4   | 3   | 3   | -   | -   | -   | -   | -   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 7th   | +3          | 7            | -                                      | 5        | 8        | 4   | 3   | 3   | 1   | -   | -   | -   | -   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 8th   | +3          | 8            | Ability Score Improvement              | 5        | 9        | 4   | 3   | 3   | 2   | -   | -   | -   | -   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 9th   | +4          | 9            | -                                      | 5        | 10       | 4   | 3   | 3   | 3   | 1   | -   | -   | -   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 10th  | +4          | 10           | Metamagic                              | 6        | 11       | 4   | 3   | 3   | 3   | 2   | -   | -   | -   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 11th  | +4          | 11           | -                                      | 6        | 12       | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 12th  | +4          | 12           | Ability Score Improvement              | 6        | 12       | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 13th  | +5          | 13           | -                                      | 6        | 13       | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 14th  | +5          | 14           | Sorcerous Origin Feature Ability       | 6        | 13       | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 15th  | +5          | 15           | -                                      | 6        | 14       | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 16th  | +5          | 16           | Ability Score Improvement              | 6        | 14       | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 17th  | +6          | 17           | Metamagic                              | 6        | 15       | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | 1   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 18th  | +6          | 18           | Sorcerous Origin Feature Ability       | 6        | 15       | 4   | 3   | 3   | 3   | 3   | 1   | 1   | 1   | 1   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 19th  | +6          | 19           | Ability Score Improvement              | 6        | 15       | 4   | 3   | 3   | 3   | 3   | 2   | 1   | 1   | 1   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 20th  | +6          | 20           | Sorcerous Restoration                  | 6        | 15       | 4   | 3   | 3   | 3   | 3   | 2   | 2   | 1   | 1   |
++-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 
 **Spellcasting**
 
@@ -101,8 +117,10 @@ For example, if you know the 1st-level spell *burning hands* and have a
 1st-level and a 2nd-level spell slot available, you can cast *burning
 hands* using either slot.
 
-**Spells Known of 1st Level and Higher** You know two 1st-level
-spells of your choice from the sorcerer spell list.
+Spells Known of 1st Level and Higher
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You know two 1st-level spells of your choice from the sorcerer spell list.
 
 The Spells Known column of the Sorcerer table shows when you learn more
 sorcerer spells of your choice. Each of these spells must be of a level
@@ -120,9 +138,16 @@ Spellcasting Ability
 Charisma is your spellcasting ability for your sorcerer spells, since
 the power of your magic relies on your ability to project your will into
 the world. You use your Charisma whenever a spell refers to
+your spellcasting ability. In addition, you use your Charisma modifier
+when setting the saving throw DC
+for a sorcerer spell you cast and when making an
+attack roll with one.
 
-**Spell attack modifier** = your proficiency bonus + your Charisma
-modifier
+  **Spell save DC** = 8 + your proficiency bonus + your Charisma modifier
+
+  **Spell attack modifier** = your proficiency bonus + your Charisma modifier
+
+
 
 Spellcasting Focus
 ^^^^^^^^^^^^^^^^^^
@@ -137,9 +162,7 @@ Choose a sorcerous origin, which describes the source of your innate
 magical power: Draconic Bloodline or Wild Magic, both detailed at the
 end of the class description.
 
-Your choice grants you features when you choose
-
-it at 1st level and again at 6th, 14th, and 18th level.
+Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level.
 
 Font of Magic
 ~~~~~~~~~~~~~
@@ -174,33 +197,20 @@ long rest.
 Creating Spell Slots
 ^^^^^^^^^^^^^^^^^^^^
 
-your spellcasting ability. In addition, you use your Charisma modifier
-when setting the saving throw DC
-
-**Spell Slot**
-
-**Level**
-
-**Sorcery**
-
-**Point Cost**
-
-for a sorcerer spell you cast and when making an
-
-attack roll with one.
-
-**Spell save DC** = 8 + your proficiency bonus + your Charisma
-modifier
-
-1st 2
-
-2nd 3
-
-3rd 5
-
-4th 6
-
-5th 7
++------------+------------------------+
+| Spell Slot | Sorcery                |
+| Level      | Point Cost             |
++============+========================+
+| 1st        | 2                      |
++------------+------------------------+
+| 2nd        | 3                      |
++------------+------------------------+
+| 3rd        | 5                      |
++------------+------------------------+
+| 4th        | 6                      |
++------------+------------------------+
+| 5th        | 7                      |
++------------+------------------------+
 
 ***Converting a Spell Slot to Sorcery Points.*** As a bonus action
 on your turn, you can expend one spell slot and gain a number of
@@ -324,21 +334,29 @@ Dragon Ancestor
 At 1st level, you choose one type of dragon as your ancestor. The damage
 type associated with each dragon is used by features you gain later.
 
-**Draconic Ancestry Dragon Damage Type** Black Acid
-
-Blue Lightning
-
-Brass Fire Bronze Lightning Copper Acid
-
-Gold Fire
-
-Green Poison
-
-Red Fire
-
-Silver Cold
-
-White Cold
+**Draconic Ancestry**
+Dragon Damage Type**
++------------+------------------------+
+| Black      | Acid                   |
++------------+------------------------+
+| Blue       | Lightning              |
++------------+------------------------+
+| Brass      | Fire                   |
++------------+------------------------+
+| Bronze     | Lightning              |
++------------+------------------------+
+| Copper     | Acid                   |
++------------+------------------------+
+| Gold       | Fire                   |
++------------+------------------------+
+| Green      | Poison                 |
++------------+------------------------+
+| Red        | Fire                   |
++------------+------------------------+
+| Silver     | Cold                   |
++------------+------------------------+
+| White      | Cold                   |
++------------+------------------------+
 
 You can speak, read, and write Draconic. Additionally, whenever you make
 a Charisma check when interacting with dragons, your proficiency bonus
