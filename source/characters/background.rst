@@ -78,7 +78,7 @@ nature. Sharks are savage predators, for example, but they are not evil;
 they have no alignment.
 
 Languages
-^^^^^^^^^
+---------
 
 Your race indicates the languages your character can speak by default,
 and your background might give you access to one or more additional
@@ -96,7 +96,7 @@ planes. Creatures that speak different dialects of the same language can
 communicate with one another.
 
 Standard Languages
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 +----------+------------------+---------+
 | Language | Typical Speakers | Script  |
@@ -119,7 +119,7 @@ Standard Languages
 +----------+------------------+---------+
 
 Exotic Languages
-~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^
 
 +------------+--------------------+-----------+
 | Language   | Typical Speakers   | Script    |
@@ -142,7 +142,7 @@ Exotic Languages
 +------------+--------------------+-----------+
 
 Inspiration
-^^^^^^^^^^^
+-----------
 
 Inspiration is a rule the game master can use to reward you for playing
 your character in a way that’s true to his or her personality traits,
@@ -153,7 +153,7 @@ on your bond to the defense of your home village to push past the effect
 of a spell that has been laid on you.
 
 Gaining Inspiration
-~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^
 
 Your GM can choose to give you inspiration for a variety of reasons.
 Typically, GMs award it when you play out your personality traits, give
@@ -165,7 +165,7 @@ You either have inspiration or you don’t—you can’t stockpile multiple
 “inspirations” for later use.
 
 Using Inspiration
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 
 If you have inspiration, you can expend it when you make an attack roll,
 saving throw, or ability check. Spending your inspiration gives you
@@ -178,7 +178,7 @@ contributes to the story in a fun and interesting way, you can give up
 your inspiration to give that character inspiration.
 
 Backgrounds
-^^^^^^^^^^^
+-----------
 
 Every story has a beginning. Your character’s background reveals where
 you came from, how you became an adventurer, and your place in the
@@ -200,7 +200,7 @@ The sample backgrounds in this chapter provide both concrete benefits
 (features, proficiencies, and languages) and roleplaying suggestions.
 
 Proficiencies
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 Each background gives a character proficiency in two skills (described
 in “Using Ability Scores”).
@@ -275,7 +275,7 @@ priesthood), a prayer book or prayer wheel, 5 sticks of incense,
 vestments, a set of common clothes, and a pouch containing 15 gp
 
 Feature: Shelter of the Faithful
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As an acolyte, you command the respect of those who share your faith,
 and you can perform the religious ceremonies of your deity. You and your
@@ -293,7 +293,7 @@ ask for is not hazardous and you remain in good standing with your
 temple.
 
 Suggested Characteristics
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Acolytes are shaped by their experience in temples or other religious
 communities. Their study of the history and tenets of their faith and

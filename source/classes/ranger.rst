@@ -71,7 +71,8 @@ Level       Bonus        Features                                               
 20th        +6           Foe Slayer                                             11                 4     3     3     3     2
 ==========  ===========  =====================================================  ================   ====  ====  ====  ====  ====
 
-**Favored Enemy**
+Favored Enemy
+~~~~~~~~~~~~~
 
 Beginning at 1st level, you have significant experience studying,
 tracking, hunting, and even talking to a certain type of enemy.
@@ -91,7 +92,6 @@ all.
 
 You choose one additional favored enemy, as well as an associated
 language, at 6th and 14th level. As
-
 you gain levels, your choices should reflect the types of monsters you
 have encountered on your adventures.
 
@@ -109,15 +109,10 @@ While traveling for an hour or more in your favored terrain, you gain
 the following benefits:
 
 -  Difficult terrain doesn’t slow your group’s travel.
-
 -  Your group can’t become lost except by magical means.
-
 -  Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.
-
 -  If you are traveling alone, you can move stealthily at a normal pace.
-
 -  When you forage, you find twice as much food as you normally would.
-
 -  While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.
 
 You choose additional favored terrain types at 6th and 10th level.

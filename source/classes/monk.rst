@@ -50,7 +50,7 @@ The Monk
 +-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
 | Level | Proficiency Bonus | Martial Arts | Ki Points | Unarmored Movement | Features                                               |
 +=======+===================+==============+===========+====================+========================================================+
-| 1st   | +2                | 1d4          | &ndash;   | &ndash;            | Unarmored Defense, Martial Arts                        |
+| 1st   | +2                | 1d4          | -         | -                  | Unarmored Defense, Martial Arts                        |
 +-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
 | 2nd   | +2                | 1d4          | 2         | +10 ft.            | Ki, Unarmored Movement                                 |
 +-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
@@ -60,7 +60,7 @@ The Monk
 +-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
 | 5th   | +3                | 1d6          | 5         | +10 ft.            | Extra Attack, Stunning Strike                          |
 +-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
-| 6th   | +3                | 1d6          | 6         | +15 ft.            | Ki&ndash;Empowered Strikes, Monastic Tradition feature |
+| 6th   | +3                | 1d6          | 6         | +15 ft.            | Ki-Empowered Strikes, Monastic Tradition feature       |
 +-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
 | 7th   | +3                | 1d6          | 7         | +15 ft.            | Evasion, Stillness of Mind                             |
 +-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
@@ -91,14 +91,14 @@ The Monk
 | 20th  | +6                | 1d10         | 20        | +30 ft.            | Perfect Self                                           |
 +-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
 
-**Unarmored Defense**
-
+Unarmored Defense
+~~~~~~~~~~~~~~~~~
 Beginning at 1st level, while you are wearing no armor and not
 wielding a shield, your AC equals 10 + your Dexterity modifier +
 your Wisdom modifier.
 
-**Martial Arts**
-
+Martial Arts
+~~~~~~~~~~~~
 At 1st level, your practice of martial arts gives you mastery of
 combat styles that use unarmed strikes and monk weapons, which are
 shortswords and any simple melee weapons that don’t have the two-

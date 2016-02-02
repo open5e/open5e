@@ -152,8 +152,8 @@ setting the saving throw DC for a bard spell you cast and when making an
 attack roll with one.
 
 **Spell save DC** = 8 + your proficiency bonus + your Charisma modifier
-**Spell attack modifier** = your proficiency bonus + your Charisma
-modifier
+
+**Spell attack modifier** = your proficiency bonus + your Charisma modifier
 
 Ritual Casting
 ^^^^^^^^^^^^^^
