@@ -213,20 +213,20 @@ sources, he or she can choose a different proficiency of the same kind
 (skill or tool) instead.
 
 Languages
-~~~~~~~~~~~~~
+~~~~~~~~~
 
 Some backgrounds also allow characters to learn additional languages
 beyond those given by race. See “Languages.”
 
 Equipment
-~~~~~~~~~~~~~
+~~~~~~~~~
 
 Each background provides a package of starting equipment. If you use the
 optional rule to spend coin on gear, you do not receive the starting
 equipment from your background.
 
 Suggested Characteristics
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A background contains suggested personal characteristics based on your
 background. You can pick characteristics, roll dice to determine them
@@ -234,7 +234,7 @@ randomly, or use the suggestions as inspiration for characteristics of
 your own creation.
 
 Customizing a Background
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 You might want to tweak some of the features of a background so it
 better fits your character or the campaign setting. To customize a
@@ -354,7 +354,7 @@ heretical idea, or an ideal or bond taken to an extreme.
 +----------+--------------------------------------------------------------------------------------------+
 
 +----------+-------------------------------------------------------------------------------------------------+
-|   **d6** |       **Flaw**                                                                                  |
+| d6       | Flaw                                                                                            |
 +==========+=================================================================================================+
 | 1        | I judge others harshly, and myself even more severely.                                          |
 +----------+-------------------------------------------------------------------------------------------------+
