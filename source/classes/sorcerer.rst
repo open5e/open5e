@@ -46,7 +46,7 @@ Equipment
 -  Two daggers
 
 The Sorcerer
-************
+~~~~~~~~~~~~
 
 =========  ====================  ================  =================================  ==============  ============  ======  ======  ======  ======  ======  ======  ======  ======  ======
                                                                                                                     Spell Slots per Spell Level
@@ -131,7 +131,7 @@ You can use an arcane focus as a spellcasting focus for your sorcerer
 spells.
 
 Sorcerous Origin
-~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^
 
 Choose a sorcerous origin, which describes the source of your innate
 magical power: Draconic Bloodline or Wild Magic, both detailed at the
