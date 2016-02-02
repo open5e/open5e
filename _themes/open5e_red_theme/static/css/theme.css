@@ -4898,7 +4898,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   margin: auto;
   display: block;
 }
-.rst-content h1, .rst-content h3, .rst-content h3 {
+.rst-content h1, .rst-content h2, .rst-content .toctree-wrapper p.caption {
   opacity: 0.8;
 }
 .rst-content h1 .headerlink, .rst-content h2 .headerlink, .rst-content .toctree-wrapper p.caption .headerlink, .rst-content h3 .headerlink, .rst-content h4 .headerlink, .rst-content h5 .headerlink, .rst-content h6 .headerlink, .rst-content dl dt .headerlink, .rst-content p.caption .headerlink {
