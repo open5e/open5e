@@ -1,3 +1,18 @@
+Statistics
+-----------
+
+Modifying Creatures
+~~~~~~~~~~~~~~~~~~~
+
+    Despite the versatile collection of monsters in this book, you might
+    be at a loss when it comes to finding the perfect creature for part
+    of an adventure. Feel free to tweak an existing creature to make it
+    into something more useful for you, perhaps by borrowing a trait or
+    two from a different monster or by using a **variant** or
+    **template**, such as the ones in this book. Keep in mind that
+    modifying a monster, including when you apply a template to it,
+    might change its challenge rating.
+
 A monster’s statistics, sometimes referred to as its **stat block**,
 provide the essential information that you need to run the monster.
 
@@ -12,31 +27,17 @@ information on creature size and space.
 Size Categories
 ^^^^^^^^^^^^^^^
 
-    **Size Space Examples**
-
-    Tiny 2½ by 2½ ft. Imp, sprite
-
-    Small 5 by 5 ft. Giant rat, goblin
-
-    Medium 5 by 5 ft. Orc, werewolf
-
-    Large 10 by 10 ft. Hippogriff, ogre
-
-    Huge 15 by 15 ft. Fire giant, treant Gargantuan 20 by 20 ft. or
-    larger Kraken, purple worm
-
-Modifying Creatures
-'''''''''''''''''''
-
-    Despite the versatile collection of monsters in this book, you might
-    be at a loss when it comes to finding the perfect creature for part
-    of an adventure. Feel free to tweak an existing creature to make it
-    into something more useful for you, perhaps by borrowing a trait or
-    two from a different monster or by using a **variant** or
-    **template**, such as the ones in this book. Keep in mind that
-    modifying a monster, including when you apply a template to it,
-    might change its challenge rating.
-
+=============   ======================    ========
+Size            Space                     Examples
+=============   ======================    ========
+Tiny            2½ by 2½ ft.              Imp, sprite
+Small           5 by 5 ft.                Giant rat, goblin
+Medium          5 by 5 ft.                Orc, werewolf
+Large           10 by 10 ft.              Hippogriff, ogre
+Huge            15 by 15 ft.              Fire giant, treant 
+Gargantuan      20 by 20 ft. or larger    Kraken, purple worm
+=============   ======================    ========
+    
 Type
 ~~~~
 
@@ -49,46 +50,39 @@ creatures of the dragon type, such as dragon turtles and wyverns.
 The game includes the following monster types, which have no rules of
 their own.
 
-    **Aberrations** are utterly alien beings. Many of
-
-them have innate magical abilities drawn from the creature’s alien mind
+**Aberrations** are utterly alien beings. Many of them have 
+innate magical abilities drawn from the creature’s alien mind
 rather than the mystical forces of the world. The quintessential
 aberrations are aboleths, beholders, mind flayers, and slaadi.
 
-    **Beasts** are nonhumanoid creatures that are a
-
+**Beasts** are nonhumanoid creatures that are a
 natural part of the fantasy ecology. Some of them
-
 have magical powers, but most are unintelligent and lack any society or
 language. Beasts include all varieties of ordinary animals, dinosaurs,
 and giant versions of animals.
 
-    **Celestials** are creatures native to the Upper
-
+**Celestials** are creatures native to the Upper
 Planes. Many of them are the servants of deities, employed as messengers
 or agents in the mortal realm and throughout the planes. Celestials are
 good by nature, so the exceptional celestial who strays from a good
 alignment is a horrifying rarity. Celestials include angels, couatls,
 and pegasi.
 
-    **Constructs** are made, not born. Some are
-
+**Constructs** are made, not born. Some are
 programmed by their creators to follow a simple set of instructions,
 while others are imbued with sentience and capable of independent
 thought. Golems are the iconic constructs. Many creatures native to the
 outer plane of Mechanus, such as modrons, are constructs shaped from the
 raw material of the plane by the will of more powerful creatures.
 
-    **Dragons** are large reptilian creatures of ancient
-
+**Dragons** are large reptilian creatures of ancient
 origin and tremendous power. True dragons, including the good metallic
 dragons and the evil chromatic dragons, are highly intelligent and have
 innate magic. Also in this category are creatures distantly related to
 true dragons, but less powerful, less intelligent, and less magical,
 such as wyverns and pseudodragons.
 
-    **Elementals** are creatures native to the elemental
-
+**Elementals** are creatures native to the elemental
 planes. Some creatures of this type are little more than animate masses
 of their respective elements, including the creatures simply called
 elementals. Others have biological forms infused with elemental energy.
@@ -96,15 +90,13 @@ The races of genies, including djinn and efreet, form the most important
 civilizations on the elemental planes. Other elemental creatures include
 azers, invisible stalkers, and water weirds.
 
-    **Fey** are magical creatures closely tied to the forces
-
+**Fey** are magical creatures closely tied to the forces
 of nature. They dwell in twilight groves and misty forests. In some
 worlds, they are closely tied to the Feywild, also called the Plane of
 Faerie. Some are also found in the Outer Planes, particularly the planes
 of Arborea and the Beastlands. Fey include dryads, pixies, and satyrs.
 
-    **Fiends** are creatures of wickedness that are native
-
+**Fiends** are creatures of wickedness that are native
 to the Lower Planes. A few are the servants of deities, but many more
 labor under the leadership of archdevils and demon princes. Evil priests
 and mages sometimes summon fiends to the material world to do their
@@ -118,8 +110,7 @@ shape, though some have multiple heads (ettins) or deformities
 giants, frost giants, fire giants, cloud giants, and storm giants.
 Besides these, creatures such as ogres and trolls are giants.
 
-    **Humanoids** are the main peoples of a fantasy
-
+**Humanoids** are the main peoples of a fantasy
 gaming world, both civilized and savage, including humans and a
 tremendous variety of other species. They have language and culture, few
 if any innate magical abilities (though most humanoids can learn
@@ -129,8 +120,7 @@ halflings. Almost as numerous but far more savage and brutal, and almost
 uniformly evil, are the races of goblinoids (goblins, hobgoblins, and
 bugbears), orcs, gnolls, lizardfolk, and kobolds.
 
-    **Monstrosities** are monsters in the strictest
-
+**Monstrosities** are monsters in the strictest
 sense—frightening creatures that are not ordinary, not truly natural,
 and almost never benign. Some are the results of magical experimentation
 gone awry (such as owlbears), and others are the product of terrible
@@ -138,22 +128,19 @@ curses (including minotaurs and yuan-­ti). They defy categorization, and
 in some sense serve as a catch-­all category for creatures that don’t
 fit into any other type.
 
-    **Oozes** are gelatinous creatures that rarely have a
-
+**Oozes** are gelatinous creatures that rarely have a
 fixed shape. They are mostly subterranean, dwelling in caves and
 dungeons and feeding on refuse, carrion, or creatures unlucky enough to
 get in their way. Black puddings and gelatinous cubes are among the most
 recognizable oozes.
 
-    **Plants** in this context are vegetable creatures, not
-
+**Plants** in this context are vegetable creatures, not
 ordinary flora. Most of them are ambulatory, and some are carnivorous.
 The quintessential plants are the shambling mound and the treant. Fungal
 creatures such as the gas spore and the myconid also fall into this
 category.
 
-    **Undead** are once-­living creatures brought to a
-
+**Undead** are once-­living creatures brought to a
 horrifying state of undeath through the practice of necromantic magic or
 some unholy curse. Undead include walking corpses, such as vampires and
 zombies, as well as bodiless spirits, such as ghosts and specters.
@@ -185,8 +172,7 @@ free to depart from it and change a monster’s alignment to suit the
 needs of your campaign. If you want a good-­aligned green dragon or an
 evil storm giant, there’s nothing stopping you.
 
-    Some creatures can have **any alignment**. In other
-
+Some creatures can have **any alignment**. In other
 words, you choose the monster’s alignment. Some monster’s alignment
 entry indicates a tendency or aversion toward law, chaos, good, or evil.
 For example, a berserker can be any chaotic alignment (chaotic good,
@@ -297,7 +283,7 @@ Ability Scores
     used in play, see the *Player’s Handbook.*
 
 Saving Throws
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
     The Saving Throws entry is reserved for creatures that are adept at
     resisting certain kinds of effects. For example, a creature that
@@ -408,21 +394,6 @@ light, and in darkness as if it were dim light. The monster can’t
 discern color in darkness, only shades of gray. Many creatures that live
 underground have this special sense.
 
-Armor, Weapon, and Tool Proficiencies
-'''''''''''''''''''''''''''''''''''''
-
-    Assume that a creature is proficient with its armor, weapons, and
-    tools. If you swap them out, you decide whether the creature is
-    proficient with its new equipment.
-
-    For example, a hill giant typically wears hide armor and wields a
-    greatclub. You could equip a hill giant with chain mail and a
-    greataxe instead, and assume the giant is proficient with both, one
-    or the other, or neither.
-
-    See the *Player’s Handbook* for rules on using armor or weapons
-    without proficiency.
-
 Tremorsense
 ^^^^^^^^^^^
 
@@ -469,42 +440,48 @@ telepathic monster contacts a different creature within range. A
 telepathic monster can initiate or terminate a telepathic conversation
 without using an action, but while the monster is incapacitated, it
 can’t initiate telepathic contact, and any current contact is
-terminated.
-
-    A creature within the area of an *antimagic field* or
-
-in any other location where magic doesn’t function can’t send or receive
+terminated. A creature within the area of an *antimagic field* or in any other location where magic doesn’t function can’t send or receive
 telepathic messages.
+
+Armor, Weapon, and Tool Proficiencies
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Assume that a creature is proficient with its armor, weapons, and
+    tools. If you swap them out, you decide whether the creature is
+    proficient with its new equipment.
+
+    For example, a hill giant typically wears hide armor and wields a
+    greatclub. You could equip a hill giant with chain mail and a
+    greataxe instead, and assume the giant is proficient with both, one
+    or the other, or neither.
+
+    See the *Player’s Handbook* for rules on using armor or weapons
+    without proficiency.
 
 Special Traits
 ~~~~~~~~~~~~~~
 
-    Special traits (which appear after a monster’s challenge rating but
-    before any actions or reactions) are characteristics that are likely
-    to be relevant in a combat encounter and that require some
-    explanation.
+Special traits (which appear after a monster’s challenge rating but
+before any actions or reactions) are characteristics that are likely
+to be relevant in a combat encounter and that require some
+explanation.
 
-Innate Spellcasting
-^^^^^^^^^^^^^^^^^^^
+Grapple Rules for Monsters
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    A monster with the innate ability to cast spells has the Innate
-    Spellcasting special trait. Unless noted otherwise, an innate spell
-    of 1st level or higher is always cast at its lowest possible level
-    and can’t be cast at a higher level. If a monster has a cantrip
-    where its level matters and no level is given, use the monster’s
-    challenge rating.
+Many monsters have special attacks that allow them to quickly
+grapple prey. When a monster hits with such an attack, it doesn’t
+need to make an additional ability check to determine whether the
+grapple succeeds, unless the attack says otherwise.
 
-    An innate spell can have special rules or restrictions. For example,
-    a drow mage can innately cast the *levitate* spell, but the spell
-    has a “self only” restriction, which means that the spell affects
-    only the drow mage.
-
-    A monster’s innate spells can’t be swapped out with other spells. If
-    a monster’s innate spells don’t require attack rolls, no attack
-    bonus is given for them.
+A creature grappled by the monster can use its action to try to
+escape. To do so, it must succeed on a Strength (Athletics) or
+Dexterity (Acrobatics) check against the escape DC in the monster’s
+stat block. If no escape DC is given, assume the DC is 10 + the
+monster’s Strength (Athletics) modifier.
 
 Spellcasting
-^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
     A monster with the Spellcasting special trait has a spellcaster
     level and spell slots, which it uses to cast its spells of 1st level
@@ -525,6 +502,25 @@ Spellcasting
     by using one of its 5th-­level
 
     greater or lesser threat than suggested by its challenge rating.
+
+Innate Spellcasting
+^^^^^^^^^^^^^^^^^^^
+
+    A monster with the innate ability to cast spells has the Innate
+    Spellcasting special trait. Unless noted otherwise, an innate spell
+    of 1st level or higher is always cast at its lowest possible level
+    and can’t be cast at a higher level. If a monster has a cantrip
+    where its level matters and no level is given, use the monster’s
+    challenge rating.
+
+    An innate spell can have special rules or restrictions. For example,
+    a drow mage can innately cast the *levitate* spell, but the spell
+    has a “self only” restriction, which means that the spell affects
+    only the drow mage.
+
+    A monster’s innate spells can’t be swapped out with other spells. If
+    a monster’s innate spells don’t require attack rolls, no attack
+    bonus is given for them.
 
 Psionics
 ^^^^^^^^
@@ -582,14 +578,14 @@ attack, and 2d10 pieces of ammunition for a projectile weapon such as a
 bow or crossbow.
 
 Reactions
-~~~~~~~~~
+^^^^^^^^^
 
 If a monster can do something special with its reaction, that
 information is contained here. If a creature has no special reaction,
 this section is absent.
 
 Limited Usage
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 Some special abilities have restrictions on the number of times they can
 be used.
