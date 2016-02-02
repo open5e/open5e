@@ -27,8 +27,7 @@ Proficiencies
 
 **Saving Throws:** Strength, Dexterity
 
-**Skills:** Choose three from Animal Handling, Athletics, Insight,
-Investigation, Nature, Perception, Stealth, and Survival
+**Skills:** Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival
 
 Equipment
 ^^^^^^^^^
@@ -80,7 +79,6 @@ tracking, hunting, and even talking to a certain type of enemy.
 Choose a type of favored enemy: aberrations, beasts, celestials,
 constructs, dragons, elementals, fey, fiends, giants, monstrosities,
 oozes, plants, or undead. Alternatively, you can select two races of
-
 humanoid (such as gnolls and orcs) as favored enemies.
 
 You have advantage on Wisdom (Survival) checks to track your favored
@@ -114,16 +112,13 @@ the following benefits:
 
 -  Your group can’t become lost except by magical means.
 
--  Even when you are engaged in another activity while traveling (such >
-as foraging, navigating, or tracking), you remain alert to danger.
+-  Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.
 
--  If you are traveling alone, you can move stealthily at a > normal
-pace.
+-  If you are traveling alone, you can move stealthily at a normal pace.
 
 -  When you forage, you find twice as much food as you normally would.
 
--  While tracking other creatures, you also learn their exact number, >
-their sizes, and how long ago they passed through the area.
+-  While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.
 
 You choose additional favored terrain types at 6th and 10th level.
 
@@ -296,8 +291,7 @@ roll, but before any effects of the roll are applied.
 Ranger Archetypes
 ^^^^^^^^^^^^^^^^^
 
-The ideal of the ranger has two classic expressions: the Hunter and the
-Beast Master.
+The ideal of the ranger has two classic expressions: the Hunter and the Beast Master.
 
 Hunter
 ~~~~~~
@@ -318,31 +312,20 @@ When you hit a creature with a weapon attack, the creature takes an
 extra 1d8 damage if it’s below its hit point maximum. You can deal this
 extra damage only once per turn.
 
-***Giant Killer.*** When a Large or larger creature within 5 feet of you
-hits or misses you with an attack, you can use your reaction to attack
-that creature immediately after its attack, provided that you can see
-the creature.
+***Giant Killer.*** When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.
 
-***Horde Breaker.*** Once on each of your turns when
-
-you make a weapon attack, you can make another attack with the same
-weapon against a different creature that is within 5 feet of the
-original target and within range of your weapon.
+***Horde Breaker.*** Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.
 
 Defensive Tactics
 ^^^^^^^^^^^^^^^^^
 
 At 7th level, you gain one of the following features of your choice.
 
-***Escape the Horde.*** Opportunity attacks against you are made
-with disadvantage.
+***Escape the Horde.*** Opportunity attacks against you are made with disadvantage.
 
-***Multiattack Defense.*** When a creature hits you with an attack, you
-gain a +4 bonus to AC against all subsequent attacks made by that
-creature for the rest of the turn.
+***Multiattack Defense.*** When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.
 
-***Steel Will.*** You have advantage on saving throws against being
-frightened.
+***Steel Will.*** You have advantage on saving throws against being frightened.
 
 Multiattack
 ^^^^^^^^^^^
@@ -370,9 +353,7 @@ no damage if you succeed on the saving throw, and only half damage if
 you fail.
 
 ***Stand Against the Tide.*** When a hostile creature misses you
-with a melee attack, you can use your
-
-reaction to force that creature to repeat the same attack against
+with a melee attack, you can use your reaction to force that creature to repeat the same attack against
 another creature (other than itself) of your choice.
 
 ***Uncanny Dodge.*** When an attacker that you can see hits you with an
