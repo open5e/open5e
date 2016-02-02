@@ -108,7 +108,7 @@ You gain the following benefits while you are unarmed or wielding
 only monk weapons and you aren’t wearing armor or wielding a shield:
 
 -  You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.
--  You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, > ashown in the Martial Arts column of the Monk table.
+-  You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, ashown in the Martial Arts column of the Monk table.
 -  When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can
 
 make one unarmed strike as a bonus action. For example, if you take
@@ -333,10 +333,7 @@ with one of the attacks granted by your Flurry of Blows, you can impose
 one of the following effects on that target:
 
 -  It must succeed on a Dexterity saving throw or be knocked prone.
-
--  It must make a Strength saving throw. If it fails, you can push it >
-up to 15 feet away from you.
-
+-  It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.
 -  It can’t take reactions until the end of your next turn.
 
 Wholeness of Body
