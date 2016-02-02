@@ -4,37 +4,37 @@ Paladin
 Class Features
 --------------
 
-    As a paladin, you gain the following class features.
+As a paladin, you gain the following class features.
 
 Hit Points
 ^^^^^^^^^^
 
-    **Hit Dice:** 1d10 per paladin level
+**Hit Dice:** 1d10 per paladin level
 
-    **Hit Points at 1st Level:** 10 + your Constitution modifier
+**Hit Points at 1st Level:** 10 + your Constitution modifier
 
-    **Hit Points at Higher Levels:** 1d10 (or 6) + your Constitution
-    modifier per paladin level after 1st
+**Hit Points at Higher Levels:** 1d10 (or 6) + your Constitution
+modifier per paladin level after 1st
 
 Proficiencies
 ^^^^^^^^^^^^^
 
-    **Armor:** All armor, shields
+**Armor:** All armor, shields
 
-    **Weapons:** Simple weapons, martial weapons
+**Weapons:** Simple weapons, martial weapons
 
-    **Tools:** None
+**Tools:** None
 
-    **Saving Throws:** Wisdom, Charisma
+**Saving Throws:** Wisdom, Charisma
 
-    **Skills:** Choose two from Athletics, Insight, Intimidation,
-    Medicine, Persuasion, and Religion
+**Skills:** Choose two from Athletics, Insight, Intimidation,
+Medicine, Persuasion, and Religion
 
 Equipment
 ^^^^^^^^^
 
-    You start with the following equipment, in addition to the equipment
-    granted by your background:
+You start with the following equipment, in addition to the equipment
+granted by your background:
 
 -  (*a*) a martial weapon and a shield or (*b*) two martial weapons
 
@@ -46,56 +46,77 @@ Equipment
 
 The Paladin
 ^^^^^^^^^^^
++-------+-------------+-----------------------------------------+-----------------------------+
+|       |             |                                         | Spell Slots per Spell Level |
+|       | Proficiency |                                         +-----+-----+-----+-----+-----+
+| Level | Bonus       | Features                                | 1st | 2nd | 3rd | 4th | 5th |
++=======+=============+=========================================+=====+=====+=====+=====+=====+
+| 1st   | +2          | Divine Sense, Lay on Hands              | \-  | \-  | \-  | \-  | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 2nd   | +2          | Fighting Style, Spellcasting,           | 2   | \-  | \-  | \-  | \-  |
+|       |             | Divine Smite                            |     |     |     |     |     |
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 3rd   | +2          | Divine Health, Sacred Oath              | 3   | \-  | \-  | \-  | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 4th   | +2          | Ability Score Improvement               | 3   | \-  | \-  | \-  | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 5th   | +3          | Extra Attack                            | 4   | 2   | \-  | \-  | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 6th   | +3          | Aura of Protection                      | 4   | 2   | \-  | \-  | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 7th   | +3          | Sacred Oath feature                     | 4   | 3   | \-  | \-  | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 8th   | +3          | Ability Score Improvement               | 4   | 3   | \-  | \-  | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 9th   | +4          | \-                                      | 4   | 3   | 2   | \-  | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 10th  | +4          | Aura of Courage                         | 4   | 3   | 2   | \-  | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 11th  | +4          | Improved Divine Smite                   | 4   | 3   | 3   | \-  | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 12th  | +4          | Ability Score Improvement               | 4   | 3   | 3   | \-  | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 13th  | +5          | \-                                      | 4   | 3   | 3   | 1   | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 14th  | +5          | Cleansing Touch                         | 4   | 3   | 3   | 1   | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 15th  | +5          | Sacred Oath feature                     | 4   | 3   | 3   | 2   | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 16th  | +5          | Ability Score Improvement               | 4   | 3   | 3   | 2   | \-  |    
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 17th  | +6          | \-                                      | 4   | 3   | 3   | 3   | 1   |
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 18th  | +6          | Aura improvements                       | 4   | 3   | 3   | 3   | 1   |
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 19th  | +6          | Ability Score Improvement               | 4   | 3   | 3   | 3   | 2   |
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
+| 20th  | +6          | Sacred Oath feature                     | 4   | 3   | 3   | 3   | 2   |
++-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
 
-=====  =====  ===============================================  ===  ===  ===  ===  ===
-Level  Bonus  Features                                         1st  2nd  3rd  4th  5th
-=====  =====  ===============================================  ===  ===  ===  ===  ===
-1st    +2     Divine Sense, Lay on Hands                        ̶     ̶     ̶     ̶     ̶
-2nd    +2     Fighting Style, Spellcasting, Divine Smite       2     ̶     ̶     ̶     ̶
-3rd    +2     Divine Health, Sacred Oath                       3     ̶     ̶     ̶     ̶
-4th    +2     Ability Score Improvement                        3     ̶     ̶     ̶     ̶
-5th    +3     Extra Attack                                     4    2     ̶     ̶     ̶
-6th    +3     Aura of Protection                               4    2     ̶     ̶     ̶
-7th    +3     Sacred Oath feature                              4    3     ̶     ̶     ̶
-8th    +3     Ability Score Improvement                        4    3     ̶     ̶     ̶
-9th    +4     \-                                               4    3    2     ̶     ̶
-10th   +4     Aura of Courage                                  4    3    2     ̶     ̶
-11th   +4     Improved Divine Smite                            4    3    3     ̶     ̶
-12th   +4     Ability Score Improvement                        4    3    3     ̶     ̶
-13th   +5     \-                                               4    3    3    1     ̶
-14th   +5     Cleansing Touch                                  4    3    3    1     ̶
-15th   +5     Sacred Oath feature                              4    3    3    2     ̶
-16th   +5     Ability Score Improvement                        4    3    3    2     ̶
-17th   +6     \-                                               4    3    3    3    1
-18th   +6     Aura improvements                                4    3    3    3    1
-19th   +6     Ability Score Improvement                        4    3    3    3    2
-20th   +6     Sacred Oath feature                              4    3    3    3    2
-=====  =====  ===============================================  ===  ===  ===  ===  ===
+**Divine Sense**
 
-    **Divine Sense**
+The presence of strong evil registers on your senses like a noxious
+odor, and powerful good rings like heavenly music in your ears. As
+an action, you can open your awareness to detect such forces. Until
+the end of your next turn, you know the location of any celestial,
+fiend, or undead within 60 feet of you that is not behind total
+cover. You know the type (celestial, fiend, or undead) of any being
+whose presence you sense, but not its identity (the vampire
 
-    The presence of strong evil registers on your senses like a noxious
-    odor, and powerful good rings like heavenly music in your ears. As
-    an action, you can open your awareness to detect such forces. Until
-    the end of your next turn, you know the location of any celestial,
-    fiend, or undead within 60 feet of you that is not behind total
-    cover. You know the type (celestial, fiend, or undead) of any being
-    whose presence you sense, but not its identity (the vampire
+Count Strahd von Zarovich, for instance). Within the same radius,
+you also detect the presence of any place or object that has been
+consecrated or desecrated, as with the *hallow* spell.
 
-    Count Strahd von Zarovich, for instance). Within the same radius,
-    you also detect the presence of any place or object that has been
-    consecrated or desecrated, as with the *hallow* spell.
-
-    You can use this feature a number of times equal to 1 + your
-    Charisma modifier. When you finish a long rest, you regain all
-    expended uses.
+You can use this feature a number of times equal to 1 + your
+Charisma modifier. When you finish a long rest, you regain all
+expended uses.
 
 Lay on Hands
 ~~~~~~~~~~~~
 
 Your blessed touch can heal wounds. You have a pool of healing power
 that replenishes when you take a long rest. With that pool, you can
-restore a total number of hit points equal to your paladin level × 5.  
+restore a total number of hit points equal to your paladin level × 5.
 
 As an action, you can touch a creature and draw power from the pool to
 restore a number of hit points to that creature, up to the maximum
@@ -183,11 +204,11 @@ Charisma whenever a spell refers to your spellcasting ability. In
 addition, you use your Charisma modifier when setting the saving throw
 DC for a paladin spell you cast and when making an attack roll with one.
 
-    **Spell save DC** = 8 + your proficiency bonus + your Charisma
-    modifier
+**Spell save DC** = 8 + your proficiency bonus + your Charisma
+modifier
 
-    **Spell attack modifier** = your proficiency bonus + your Charisma
-    modifier
+**Spell attack modifier** = your proficiency bonus + your Charisma
+modifier
 
 Spellcasting Focus
 ~~~~~~~~~~~~~~~~~~
@@ -243,7 +264,7 @@ Your oath allows you to channel divine energy to fuel magical effects.
 Each Channel Divinity option provided by your oath explains how to use
 it.
 
-    When you use your Channel Divinity, you choose
+When you use your Channel Divinity, you choose
 
 which option to use. You must then finish a short or long rest to use
 your Channel Divinity again.
@@ -281,7 +302,7 @@ Aura of Courage
 Starting at 10th level, you and friendly creatures within 10 feet of you
 can’t be frightened while you are conscious.
 
-    At 18th level, the range of this aura increases to 30
+At 18th level, the range of this aura increases to 30
 
 feet.
 
@@ -337,7 +358,7 @@ paladins of this oath share these tenets.
 
 ***Honesty.*** Don’t lie or cheat. Let your word be your promise.
 
-    ***Courage.*** Never fear to act, though caution is wise.
+***Courage.*** Never fear to act, though caution is wise.
 
 ***Compassion.*** Aid others, protect the weak, and punish those who
 threaten them. Show mercy to your foes, but temper it with wisdom.
@@ -360,7 +381,7 @@ Oath of Devotion Spells
 
 ===========   ================
 Paladin       Level Spells
-===========   ================    
+===========   ================
 3rd           protection from evil and good, sanctuary
 5th           lesser restoration, zone of truth
 9th           beacon of hope, dispel magic
@@ -410,8 +431,8 @@ At 18th level, the range of this aura increases to 30 feet.
 Purity of Spirit
 ^^^^^^^^^^^^^^^^
 
-    Beginning at 15th level, you are always under the effects of a
-    *protection from evil and good* spell.
+Beginning at 15th level, you are always under the effects of a
+*protection from evil and good* spell.
 
 Holy Nimbus
 ^^^^^^^^^^^
@@ -432,21 +453,21 @@ long rest.
 Breaking Your Oath
 ^^^^^^^^^^^^^^^^^^
 
-    A paladin tries to hold to the highest standards of conduct, but
-    even the most virtuous paladin is fallible. Sometimes the right path
-    proves too demanding, sometimes a situation calls
+A paladin tries to hold to the highest standards of conduct, but
+even the most virtuous paladin is fallible. Sometimes the right path
+proves too demanding, sometimes a situation calls
 
-    for the lesser of two evils, and sometimes the heat of emotion
-    causes a paladin to transgress his or her oath.
+for the lesser of two evils, and sometimes the heat of emotion
+causes a paladin to transgress his or her oath.
 
-    A paladin who has broken a vow typically seeks absolution from a
-    cleric who shares his or her faith or from another paladin of the
-    same order. The paladin might spend an all-­‐ night vigil in prayer
-    as a sign of penitence, or undertake a fast or similar act of
-    self-­‐denial. After a rite of confession and forgiveness, the
-    paladin starts fresh.
+A paladin who has broken a vow typically seeks absolution from a
+cleric who shares his or her faith or from another paladin of the
+same order. The paladin might spend an all-­‐ night vigil in prayer
+as a sign of penitence, or undertake a fast or similar act of
+self-­‐denial. After a rite of confession and forgiveness, the
+paladin starts fresh.
 
-    If a paladin willfully violates his or her oath and shows no sign of
-    repentance, the consequences can be more serious. At the GM’s
-    discretion, an impenitent paladin might be forced to abandon this
-    class and adopt another.
+If a paladin willfully violates his or her oath and shows no sign of
+repentance, the consequences can be more serious. At the GM’s
+discretion, an impenitent paladin might be forced to abandon this
+class and adopt another.
