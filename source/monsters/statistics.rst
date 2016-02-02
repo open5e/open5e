@@ -1,21 +1,20 @@
 Statistics
 ==========
 
+A monster’s statistics, sometimes referred to as its **stat block**,
+provide the essential information that you need to run the monster.
+
 Modifying Creatures
 ~~~~~~~~~~~~~~~~~~~
 
-    Despite the versatile collection of monsters in this book, you might
-    be at a loss when it comes to finding the perfect creature for part
-    of an adventure. Feel free to tweak an existing creature to make it
-    into something more useful for you, perhaps by borrowing a trait or
-    two from a different monster or by using a **variant** or
-    **template**, such as the ones in this book. Keep in mind that
-    modifying a monster, including when you apply a template to it,
-    might change its challenge rating.
->>>>>>> monster-mash
-
-A monster’s statistics, sometimes referred to as its **stat block**,
-provide the essential information that you need to run the monster.
+Despite the versatile collection of monsters in this book, you might
+be at a loss when it comes to finding the perfect creature for part
+of an adventure. Feel free to tweak an existing creature to make it
+into something more useful for you, perhaps by borrowing a trait or
+two from a different monster or by using a **variant** or
+**template**, such as the ones in this book. Keep in mind that
+modifying a monster, including when you apply a template to it,
+might change its challenge rating.
 
 Size
 ~~~~
