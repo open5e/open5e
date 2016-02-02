@@ -314,3 +314,26 @@
   .rst-content
     .sidebar
       width: 100%
+  .hide-mobile
+    display: none
+
+
+.columns-2
+  -webkit-column-count: 3
+  -moz-column-count: 3
+  column-count: 3
+  -webkit-column-gap: 24px
+  -moz-column-gap: 24px
+  column-gap: 24px
+  
++media($tablet)
+  .columns-2
+    -webkit-column-count: 2
+    -moz-column-count: 2
+    column-count: 2
+    
++media($mobile)
+  .columns-2
+    -webkit-column-count: 1
+    -moz-column-count: 1
+    column-count: 1
