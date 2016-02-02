@@ -5108,7 +5108,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
     display: none;
   }
 }
-.columns-2 {
+.columns {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
@@ -5118,14 +5118,14 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 }
 
 @media screen and (max-width: 768px) {
-  .columns-2 {
+  .columns {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
   }
 }
 @media screen and (max-width: 480px) {
-  .columns-2 {
+  .columns {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;

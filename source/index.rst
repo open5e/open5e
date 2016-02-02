@@ -34,7 +34,7 @@ Want to contribute?
 
 .. rst-class:: hide-mobile
 
-`We're open-source on Github <http://example.com/>`_
+`We're open-source on Github <https://github.com/eepMoody/open5e>`_
 
 .. rst-class:: hide-mobile
 
@@ -43,7 +43,7 @@ Want to contribute?
 The 5e SRD
 ==========
 
-.. rst-class:: columns-2
+.. rst-class:: columns
 
 .. toctree::
    :name: mastertoc
