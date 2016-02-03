@@ -3,9 +3,25 @@ Monsters
 
 .. toctree::
    :name: monsters
-   :titlesonly:
    :glob:
-   :maxdepth: 1
+   :maxdepth: 2
    
-   *
-   monsters_a-z/index
+   challenge-and-xp
+   legendary-creatures
+   statistics
+
+------------------------------------------
+
+Descriptions
+
+
+.. rst-class:: columns
+
+.. toctree::
+  :name: monsterlist
+  :glob:
+  :maxdepth: 3
+
+  Monster Descriptions <monsters_a-z/index>
+  miscellaneous-creatures
+  nonplayer-characters

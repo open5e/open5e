@@ -111,6 +111,9 @@
     display: block
   .toctree-wrapper p.caption
     @extend h2
+  
+  h1, h2
+    opacity: .8
 
   // This is the #href that shows up on hover. Sphinx's is terrible so I hack it away.
   h1, h2, h3, h4, h5, h6, dl dt, p.caption
@@ -126,7 +129,8 @@
         display: inline-block
     &:hover .headerlink
       display: inline-block
-
+      
+  
   // Sidebar content. You'll see at the bottom of this file I change it in mobile.
   .sidebar
     float: right
@@ -314,3 +318,34 @@
   .rst-content
     .sidebar
       width: 100%
+  .hide-mobile
+    display: none
+
+ul.list-bulleted 
+  list-style: disc
+  li
+    list-style: disc
+  ul
+    list-style: circle
+    li
+      list-style: circle
+
+.columns
+  -webkit-column-count: 3
+  -moz-column-count: 3
+  column-count: 3
+  -webkit-column-gap: 24px
+  -moz-column-gap: 24px
+  column-gap: 24px
+  
++media($tablet)
+  .columns
+    -webkit-column-count: 2
+    -moz-column-count: 2
+    column-count: 2
+    
++media($mobile)
+  .columns
+    -webkit-column-count: 1
+    -moz-column-count: 1
+    column-count: 1

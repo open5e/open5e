@@ -120,7 +120,7 @@ Ki
 
 Starting at 2nd level, your training allows you to harness the mystic
 energy of ki. Your access to this energy is represented by a number of
-ki points. Your monk level determines the number of points you
+ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.
 
 Unarmored Movement
 ~~~~~~~~~~~~~~~~~~
@@ -141,12 +141,8 @@ Elements, all detailed at the end of the class description. Your
 tradition grants you features at 3rd level and again at 6th, 11th, and
 17th level.
 
-Deflect Missiles
+Ki Features
 ~~~~~~~~~~~~~~~~
-
-have, as shown in the Ki Points column of the Monk
-
-table.
 
 You can spend these points to fuel various ki features. You start
 knowing three such features: Flurry of Blows, Patient Defense, and Step
@@ -181,6 +177,9 @@ Step of the Wind
 
 You can spend 1 ki point to take the Disengage or Dash action as a bonus
 action on your turn, and your jump distance is doubled for the turn.
+
+Deflect Missiles
+^^^^^^^^^^^^^^^^
 
 Starting at 3rd level, you can use your reaction to deflect or catch the
 missile when you are hit by a ranged weapon attack. When you do so, the

@@ -1,5 +1,5 @@
 Challenge
-~~~~~~~~~
+---------
 
     A monster’s **challenge rating** tells you how great a threat the
     monster is. An appropriately equipped and well-­rested party of four

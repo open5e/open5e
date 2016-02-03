@@ -106,7 +106,7 @@ ul.fas li .fa-large:before {
   color: #fcfcfc;
   background: #1f1d1d;
   border-top: solid 10px #343131;
-  font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Source Sans Pro", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   z-index: 400;
 }
 .rst-versions a {
