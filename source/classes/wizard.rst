@@ -318,7 +318,7 @@ might find other spells during your adventures. You could discover a
 spell recorded on a scroll in an evil wizard’s chest, for example,
 or in a dusty tome in an ancient library.
 
-***Copying a Spell into the Book.*** When you find a wizard
+**Copying a Spell into the Book.** When you find a wizard
 spell of 1st level or higher, you can add it to your spellbook if it
 is of a spell level you can prepare and if you can spare the time to
 decipher and copy it.
@@ -336,7 +336,7 @@ you experiment with the spell to master it, as well as the fine inks
 you need to record it. Once you have spent this time and money, you
 can prepare the spell just like your other spells.
 
-***Replacing the Book.*** You can copy a spell from your own
+**Replacing the Book.** You can copy a spell from your own
 spellbook into another book—for example, if you want to make a
 backup copy of your spellbook. This is just like copying a new spell
 into your spellbook, but faster and easier, since you understand
@@ -349,7 +349,7 @@ spellbook. Filling out the remainder of your spellbook requires you
 to find new spells to do so, as normal. For this reason, many
 wizards keep backup spellbooks in a safe place.
 
-***The Book’s Appearance.*** Your spellbook is a unique compilation
+**The Book’s Appearance.** Your spellbook is a unique compilation
 of spells, with its own decorative flourishes and margin notes. It
 might be a plain, functional leather volume that you received as a
 gift from your master, a finely bound gilt-­‐edged tome you found in

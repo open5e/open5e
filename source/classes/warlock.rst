@@ -629,9 +629,7 @@ previously occupied, or the nearest unoccupied space. If the target is
 not a fiend, it takes 10d10 psychic damage as it reels from its horrific
 experience.
 
-Once you use this feature, you can’t use it again
-
-until you finish a long rest.
+Once you use this feature, you can’t use it again until you finish a long rest.
 
 Your Pact Boon
 ~~~~~~~~~~~~~~
@@ -639,20 +637,20 @@ Your Pact Boon
 Each Pact Boon option produces a special creature or an object that
 reflects your patron’s nature.
 
-***Pact of the Chain.*** Your familiar is more cunning than a
+**Pact of the Chain.** Your familiar is more cunning than a
 typical familiar. Its default form can be a reflection of your
 patron, with sprites and pseudodragons tied to the Archfey and imps
 and quasits tied to the Fiend. Because the Great Old One’s nature is
 inscrutable, any familiar form is suitable for it.
 
-***Pact of the Blade.*** If your patron is the Archfey, your weapon
+**Pact of the Blade.** If your patron is the Archfey, your weapon
 might be a slender blade wrapped in leafy vines. If you serve the
 Fiend, your weapon could be an axe made of black metal and adorned
 with decorative flames. If your patron is the Great Old One, your
 weapon might be an ancient-­‐looking spear, with a gemstone embedded
 in its head, carved to look like a terrible unblinking eye.
 
-***Pact of the Tome.*** Your Book of Shadows might be a fine,
+**Pact of the Tome.** Your Book of Shadows might be a fine,
 gilt-­‐edged tome with spells of enchantment and illusion, gifted to
 you by the lordly Archfey. It could be a weighty tome bound in demon
 hide studded with iron, holding spells of conjuration and a wealth
