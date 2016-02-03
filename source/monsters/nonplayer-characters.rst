@@ -7,7 +7,7 @@ including lowly commoners and mighty archmages. These stat blocks can be
 used to represent both human and nonhuman NPCs.
 
 Customizing NPCs
--------------------------------------------------------------
+----------------
 
 There are many easy ways to customize the NPCs in this appendix for your
 home campaign.
@@ -31,7 +31,7 @@ magic item could alter its challenge rating.
 
    <div>
 
-| 
+|
 | ### Acolyte
 
 Medium humanoid (any race), any alignment
@@ -45,7 +45,7 @@ Medium humanoid (any race), any alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 10 (+0)   | \| 10 (+0)   | \| 10 (+0)   | \| 10 (+0)   | \| 14 (+2)   | \| 11 (+0)   |
+| 10 (+0)      | 10 (+0)      | 10 (+0)      | 10 (+0)      | 14 (+2)      | 11 (+0)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Skills** Medicine +4, Religion +2
@@ -89,7 +89,7 @@ Medium humanoid (any race), any alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 10 (+0)   | \| 14 (+2)   | \| 12 (+1)   | \| 20 (+5)   | \| 15 (+2)   | \| 16 (+3)   |
+| 10 (+0)      | 14 (+2)      | 12 (+1)      | 20 (+5)      | 15 (+2)      | 16 (+3)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Saving Throws** Int +9, Wis +6
@@ -106,22 +106,25 @@ piercing, and slashing (from *stoneskin*)
 **Challenge** 12 (8,400 XP)
 
 **Magic Resistance**: The archmage has advantage on saving throws
-against spells and other magical effects. **Spellcasting**: The archmage
-is an 18th-level spellcaster. Its spellcasting ability is Intelligence
+against spells and other magical effects.
+
+**Spellcasting**: The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence
 (spell save DC 17, +9 to hit with spell attacks). The archmage can cast
 *disguise self* and *invisibility* at will and has the following wizard
-spells prepared: **Cantrips (at will)**: *fire bolt*, *light*, *mage
-hand*, *prestidigitation*, *shocking grasp* **1st level (4 slots)**:
-*detect magic*, *identify*, *mage armor*,\* *magic missile* **2nd level
-(3 slots)**: *detect thoughts*, *mirror image*, *misty step* **3rd level
-(3 slots)**: *counterspell*, *fly*, *lightning bolt* **4th level (3
-slots)**: *banishment*, *fire shield*, *stoneskin*\ \* **5th level (3
-slots)**: *cone of cold*, *scrying*, *wall of force* **6th level (1
-slot)**: *globe of invulnerability* **7th level (1 slot)**: *teleport*
-**8th level (1 slot)**: *mind blank*\ \* **9th level (1 slot)**: *time
-stop*
+spells prepared:
 
-\*\ *The archmage casts these spells on itself before combat*.
+    **Cantrips (at will)**: *fire bolt*, *light*, *mage hand*, *prestidigitation*, *shocking grasp*
+    **1st level (4 slots)**: *detect magic*, *identify*, *mage armor*,\* *magic missile*
+    **2nd level (3 slots)**: *detect thoughts*, *mirror image*, *misty step*
+    **3rd level (3 slots)**: *counterspell*, *fly*, *lightning bolt*
+    **4th level (3 slots)**: *banishment*, *fire shield*, *stoneskin*\ \*
+    **5th level (3 slots)**: *cone of cold*, *scrying*, *wall of force*
+    **6th level (1 slot)**: *globe of invulnerability*
+    **7th level (1 slot)**: *teleport*
+    **8th level (1 slot)**: *mind blank*\ \*
+    **9th level (1 slot)**: *time stop*
+
+\*The archmage casts these spells on itself before combat*.
 
 Actions
 
@@ -152,7 +155,7 @@ Medium humanoid (any race), any non-good alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 11 (+0)   | \| 16 (+3)   | \| 14 (+2)   | \| 13 (+1)   | \| 11 (+0)   | \| 10 (+0)   |
+| 11 (+0)      | 16 (+3)      | 14 (+2)      | 13 (+1)      | 11 (+0)      | 10 (+0)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Saving Throws** Dex +6, Int +4
@@ -209,7 +212,7 @@ Medium humanoid (any race), any non-lawful alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 11 (+0)   | \| 12 (+1)   | \| 12 (+1)   | \| 10 (+0)   | \| 10 (+0)   | \| 10 (+0)   |
+| 11 (+0)      | 12 (+1)      | 12 (+1)      | 10 (+0)      | 10 (+0)      | 10 (+0)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Senses** passive Perception 10
@@ -247,7 +250,7 @@ Medium humanoid (any race), any non-lawful alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 15 (+2)   | \| 16 (+3)   | \| 14 (+2)   | \| 14 (+2)   | \| 11 (+0)   | \| 14 (+2)   |
+| 15 (+2)      | 16 (+3)      | 14 (+2)      | 14 (+2)      | 11 (+0)      | 14 (+2)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Saving Throws** Str +4, Dex +5, Wis +2
@@ -303,7 +306,7 @@ Medium humanoid (any race), any chaotic alignment
 +--------------+-------------+-------------+------------+-----------+---------------------+
 | STR          | DEX         | CON         | INT        | WIS       | CHA                 |
 +==============+=============+=============+============+===========+=====================+
-| \| 16 (+3)   | \| 12 (+1   | ) \| 17 (   | +3) \| 9   | (-1) \|   | 11 (+0) \| 9 (-1)   |
+| 16 (+3)      | 12 (+1)     | 17 (+3)     | 9 (-1)     | 11 (+0)   | 9 (-1)              |
 +--------------+-------------+-------------+------------+-----------+---------------------+
 
 **Senses** passive Perception 10
@@ -338,7 +341,7 @@ Medium humanoid (any race), any alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 10 (+0)   | \| 10 (+0)   | \| 10 (+0)   | \| 10 (+0)   | \| 10 (+0)   | \| 10 (+0)   |
+| 10 (+0)      | 10 (+0)      | 10 (+0)      | 10 (+0)      | 10 (+0)      | 10 (+0)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Senses** passive Perception 10
@@ -369,7 +372,7 @@ Medium humanoid (any race), any non-good alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 11 (+0)   | \| 12 (+1)   | \| 10 (+0)   | \| 10 (+0)   | \| 11 (+0)   | \| 10 (+0)   |
+| 11 (+0)      | 12 (+1)      | 10 (+0)      | 10 (+0)      | 11 (+0)      | 10 (+0)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Skills** Deception +2, Religion +2
@@ -408,7 +411,7 @@ Medium humanoid (any race), any non-good alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 11 (+0)   | \| 14 (+2)   | \| 12 (+1)   | \| 10 (+0)   | \| 13 (+1)   | \| 14 (+2)   |
+| 11 (+0)      | 14 (+2)      | 12 (+1)      | 10 (+0)      | 13 (+1)      | 14 (+2)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Skills** Deception +4, Persuasion +4, Religion +2
@@ -423,10 +426,11 @@ Medium humanoid (any race), any non-good alignment
 being charmed or frightened. **Spellcasting**: The fanatic is a
 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC
 11, +3 to hit with spell attacks). The fanatic has the following cleric
-spells prepared: **Cantrips (at will)**: *light*, *sacred flame*,
-*thaumaturgy* **1st level (4 slots)**: *command*, *inflict wounds*,
-*shield of faith* **2nd level (3 slots)**: *hold person*, *spiritual
-weapon*
+spells prepared:
+
+    **Cantrips (at will)**: *light*, *sacred flame*, *thaumaturgy*
+    **1st level (4 slots)**: *command*, *inflict wounds*, *shield of faith*
+    **2nd level (3 slots)**: *hold person*, *spiritual weapon*
 
 Actions
 
@@ -452,7 +456,7 @@ Medium humanoid (any race), any alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 10 (+0)   | \| 12 (+1)   | \| 13 (+1)   | \| 12 (+1)   | \| 15 (+2)   | \| 11 (+0)   |
+| 10 (+0)      | 12 (+1)      | 13 (+1)      | 12 (+1)      | 15 (+2)      | 11 (+0)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Skills** Medicine +4, Nature +3, Perception +4
@@ -465,10 +469,11 @@ Medium humanoid (any race), any alignment
 
 **Spellcasting**: The druid is a 4th-level spellcaster. Its spellcasting
 ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It
-has the following druid spells prepared: **Cantrips (at will)**:
-*druidcraft*, *produce flame*, *shillelagh* **1st level (4 slots)**:
-*entangle*, *longstrider*, *speak with animals*, *thunderwave* **2nd
-level (3 slots)**: *animal messenger*, *barkskin*
+has the following druid spells prepared:
+
+    **Cantrips (at will)**: *druidcraft*, *produce flame*, *shillelagh*
+    **1st level (4 slots)**: *entangle*, *longstrider*, *speak with animals*, *thunderwave*
+    **2nd level (3 slots)**: *animal messenger*, *barkskin*
 
 Actions
 
@@ -496,7 +501,7 @@ Medium humanoid (any race), any alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 18 (+4)   | \| 15 (+2)   | \| 16 (+3)   | \| 10 (+0)   | \| 12 (+1)   | \| 15 (+2)   |
+| 18 (+4)      | 15 (+2)      | 16 (+3)      | 10 (+0)      | 12 (+1)      | 15 (+2)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Saving Throws** Str +7, Dex +5, Con +6
@@ -549,7 +554,7 @@ Medium humanoid (any race), any alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 13 (+1)   | \| 12 (+1)   | \| 12 (+1)   | \| 10 (+0)   | \| 11 (+0)   | \| 10 (+0)   |
+| 13 (+1)      | 12 (+1)      | 12 (+1)      | 10 (+0)      | 11 (+0)      | 10 (+0)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Skills** Perception +2
@@ -583,7 +588,7 @@ Medium humanoid (any race), any alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 16 (+3)   | \| 11 (+0)   | \| 14 (+2)   | \| 11 (+0)   | \| 11 (+0)   | \| 15 (+2)   |
+| 16 (+3)      | 11 (+0)      | 14 (+2)      | 11 (+0)      | 11 (+0)      | 15 (+2)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Saving Throws** Con +4, Wis +2
@@ -637,7 +642,7 @@ Medium humanoid (any race), any alignment
 +-------------+-------------+-------------+-------------+-----------+----------------------+
 | STR         | DEX         | CON         | INT         | WIS       | CHA                  |
 +=============+=============+=============+=============+===========+======================+
-| \| 9 (-1)   | \| 14 (+2   | ) \| 11 (   | +0) \| 17   | (+3) \|   | 12 (+1) \| 11 (+0)   |
+| 9 (-1)      | 14 (+2)     | 11 (+0)     | 17 (+3)     | 12 (+1)   | 11 (+0)              |
 +-------------+-------------+-------------+-------------+-----------+----------------------+
 
 **Saving Throws** Int +6, Wis +4
@@ -652,13 +657,13 @@ Medium humanoid (any race), any alignment
 
 **Spellcasting**: The mage is a 9th-level spellcaster. Its spellcasting
 ability is Intelligence (spell save DC 14, +6 to hit with spell
-attacks). The mage has the following wizard spells prepared: **Cantrips
-(at will)**: *fire bolt*, *light*, *mage hand*, *prestidigitation* **1st
-level (4 slots)**: *detect magic*, *mage armor*, *magic missile*,
-*shield* **2nd level (3 slots)**: *misty step*, *suggestion* **3rd level
-(3 slots)**: *counterspell*, *fireball*, *fly* **4th level (3 slots)**:
-*greater invisibility*, *ice storm* **5th level (1 slot)**: *cone of
-cold*
+attacks). The mage has the following wizard spells prepared:
+
+    **Cantrips (at will)**: *fire bolt*, *light*, *mage hand*, *prestidigitation*
+    **1st level (4 slots)**: *detect magic*, *mage armor*, *magic missile*, *shield*
+    **2nd level (3 slots)**: *misty step*, *suggestion*
+    **3rd level (3 slots)**: *counterspell*, *fireball*, *fly*
+    **4th level (3 slots)**: *greater invisibility*, *ice storm* **5th level (1 slot)**: *cone of cold*
 
 Actions
 
@@ -684,7 +689,7 @@ Medium humanoid (any race), any alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 11 (+0)   | \| 12 (+1)   | \| 11 (+0)   | \| 12 (+1)   | \| 14 (+2)   | \| 16 (+3)   |
+| 11 (+0)      | 12 (+1)      | 11 (+0)      | 12 (+1)      | 14 (+2)      | 16 (+3)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Skills** Deception +5, Insight +4, Persuasion +5
@@ -728,7 +733,7 @@ Medium humanoid (any race), any alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 10 (+0)   | \| 10 (+0)   | \| 12 (+1)   | \| 13 (+1)   | \| 16 (+3)   | \| 13 (+1)   |
+| 10 (+0)      | 10 (+0)      | 12 (+1)      | 13 (+1)      | 16 (+3)      | 13 (+1)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Skills** Medicine +7, Persuasion +3, Religion +4
@@ -747,10 +752,11 @@ higher, the extra damage increases by 1d6 for each level above 1st.
 **Spellcasting**: The priest is a 5th-level spellcaster. Its
 spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell
 attacks). The priest has the following cleric spells prepared:
-**Cantrips (at will)**: *light*, *sacred flame*, *thaumaturgy* **1st
-level (4 slots)**: *cure wounds*, *guiding bolt*, *sanctuary* **2nd
-level (3 slots)**: *lesser restoration*, *spiritual weapon* **3rd level
-(2 slots)**: *dispel magic*, *spirit guardians*
+
+    **Cantrips (at will)**: *light*, *sacred flame*, *thaumaturgy* 
+    **1st level (4 slots)**: *cure wounds*, *guiding bolt*, *sanctuary*
+    **2nd level (3 slots)**: *lesser restoration*, *spiritual weapon*
+    **3rd level (2 slots)**: *dispel magic*, *spirit guardians*
 
 Actions
 
@@ -780,7 +786,7 @@ Medium humanoid (any race), any alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 11 (+0)   | \| 14 (+2)   | \| 12 (+1)   | \| 11 (+0)   | \| 13 (+1)   | \| 11 (+0)   |
+| 11 (+0)      | 14 (+2)      | 12 (+1)      | 11 (+0)      | 13 (+1)      | 11 (+0)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Skills** Nature +4, Perception +5, Stealth +6, Survival +5
@@ -820,7 +826,7 @@ Medium humanoid (any race), any alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 10 (+0)   | \| 15 (+2)   | \| 10 (+0)   | \| 12 (+1)   | \| 14 (+2)   | \| 16 (+3)   |
+| 10 (+0)      | 15 (+2)      | 10 (+0)      | 12 (+1)      | 14 (+2)      | 16 (+3)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Skills** Deception +5, Insight +4, Investigation +5, Perception +6,
@@ -866,7 +872,7 @@ Medium humanoid (any race), any non-good alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 15 (+2)   | \| 11 (+0)   | \| 14 (+2)   | \| 10 (+0)   | \| 10 (+0)   | \| 11 (+0)   |
+| 15 (+2)      | 11 (+0)      | 14 (+2)      | 10 (+0)      | 10 (+0)      | 11 (+0)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Skills** Intimidation +2
@@ -905,7 +911,7 @@ Medium humanoid (any race), any alignment
 +--------------+-------------+-------------+------------+-----------+---------------------+
 | STR          | DEX         | CON         | INT        | WIS       | CHA                 |
 +==============+=============+=============+============+===========+=====================+
-| \| 13 (+1)   | \| 11 (+0   | ) \| 12 (   | +1) \| 8   | (-1) \|   | 11 (+0) \| 8 (-1)   |
+| 13 (+1)      | 11 (+0)     | 12 (+1)     | 8 (-1)     | 11 (+0)   | 8 (-1)              |
 +--------------+-------------+-------------+------------+-----------+---------------------+
 
 **Senses** passive Perception 10
@@ -943,7 +949,7 @@ Medium humanoid (any race), any alignment
 +--------------+--------------+--------------+--------------+--------------+--------------+
 | STR          | DEX          | CON          | INT          | WIS          | CHA          |
 +==============+==============+==============+==============+==============+==============+
-| \| 16 (+3)   | \| 13 (+1)   | \| 14 (+2)   | \| 10 (+0)   | \| 11 (+0)   | \| 10 (+0)   |
+| 16 (+3)      | 13 (+1)      | 14 (+2)      | 10 (+0)      | 11 (+0)      | 10 (+0)      |
 +--------------+--------------+--------------+--------------+--------------+--------------+
 
 **Skills** Athletics +5, Perception +2
