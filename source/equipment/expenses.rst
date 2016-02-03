@@ -34,23 +34,23 @@ connections.
 Lifestyle Expenses
 ^^^^^^^^^^^^^^^^^^
 
-+----------------------+---------------------+
-|      Lifestyle       |       Price/Day     |
-+======================+=====================+
-|    Wretched          |           --        |
-+----------------------+---------------------+
-|    Squalid           |            1 sp     |
-+----------------------+---------------------+
-|    Poor              |            2 sp     |
-+----------------------+---------------------+
-|    Modest            |   1 gp              |
-+----------------------+---------------------+
-|    Comfortable       | 2 gp                |
-+----------------------+---------------------+
-|    Wealthy           |   4 gp              |
-+----------------------+---------------------+
-|    Aristocratic      | 10 gp minimum       |
-+----------------------+---------------------+
++-------------------+---------------+
+| Lifestyle         | Price/Day     |
++===================+===============+
+| Wretched          | --            |
++-------------------+---------------+
+| Squalid           | 1 sp          |
++-------------------+---------------+
+| Poor              | 2 sp          |
++-------------------+---------------+
+| Modest            | 1 gp          |
++-------------------+---------------+
+| Comfortable       | 2 gp          |
++-------------------+---------------+
+| Wealthy           | 4 gp          |
++-------------------+---------------+
+| Aristocratic      | 10 gp minimum |
++-------------------+---------------+
 
 **Wretched.** You live in inhumane conditions. With no place to call
 home, you shelter wherever you can, sneaking into barns, huddling in old
@@ -113,22 +113,22 @@ highest levels of deceit and treachery. The wealthier you are, the
 greater the chance you will be drawn into political intrigue as a pawn
 or participant.
 
-Self-Sufficiency
-''''''''''''''''
+    .. rubric:: Self-Sufficiency
+       :name: self-sufficiency
+       
+    The expenses and lifestyles described here assume that you are spending
+    your time between adventures in town, availing yourself of whatever
+    services you can afford—paying for food and shelter, paying townspeople
+    to sharpen your sword and repair your armor, and so on. Some characters,
+    though, might prefer to spend their time away from civilization,
+    sustaining themselves in the wild by hunting, foraging, and repairing
+    their own gear.
 
-The expenses and lifestyles described here assume that you are spending
-your time between adventures in town, availing yourself of whatever
-services you can afford—paying for food and shelter, paying townspeople
-to sharpen your sword and repair your armor, and so on. Some characters,
-though, might prefer to spend their time away from civilization,
-sustaining themselves in the wild by hunting, foraging, and repairing
-their own gear.
-
-Maintaining this kind of lifestyle doesn’t require you to spend any
-coin, but it is time-­‐consuming. If you spend your time between
-adventures practicing a profession, you can eke out the equivalent of a
-poor lifestyle. Proficiency in the Survival skill lets you live at the
-equivalent of a comfortable lifestyle.
+    Maintaining this kind of lifestyle doesn’t require you to spend any
+    coin, but it is time-­‐consuming. If you spend your time between
+    adventures practicing a profession, you can eke out the equivalent of a
+    poor lifestyle. Proficiency in the Survival skill lets you live at the
+    equivalent of a comfortable lifestyle.
 
 Food, Drink, and Lodging
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -143,53 +143,53 @@ Food, Drink, and Lodging
 +----------------------+------------------------+
 |    Item              |    Cost                |
 +======================+========================+
-|        *Ale*                                  |
+| *Ale*                                         |
 +----------------------+------------------------+
-|        Gallon        | 2 sp                   |
+| Gallon               | 2 sp                   |
 +----------------------+------------------------+
-|        Mug           | 4 cp                   |
+| Mug                  | 4 cp                   |
 +----------------------+------------------------+
-| Banquet (per person) |         10 gp          |
+| Banquet (per person) | 10 gp                  |
 +----------------------+------------------------+
-|        Bread, loaf   |       2 cp             |
+| Bread, loaf          | 2 cp                   |
 +----------------------+------------------------+
-|        Cheese, hunk  |        1 sp            |
+| Cheese, hunk         | 1 sp                   |
 +----------------------+------------------------+
 | *Inn stay (per day)*                          |
 +----------------------+------------------------+
-|        Squalid       | 7 cp                   |
+| Squalid              | 7 cp                   |
 +----------------------+------------------------+
-|        Poor          | 1 sp                   |
+| Poor                 | 1 sp                   |
 +----------------------+------------------------+
-|        Modest        | 5 sp                   |
+| Modest               | 5 sp                   |
 +----------------------+------------------------+
-|        Comfortable   |      8 sp              |
+| Comfortable          | 8 sp                   |
 +----------------------+------------------------+
-|        Wealthy       | 2 gp                   |
+| Wealthy              | 2 gp                   |
 +----------------------+------------------------+
-|        Aristocratic  |       4 gp             |
+| Aristocratic         | 4 gp                   |
 +----------------------+------------------------+
-|        *Meals (per day)*                      |
+| *Meals (per day)*                             |
 +----------------------+------------------------+
-|        Squalid       | 3 cp                   |
+| Squalid              | 3 cp                   |
 +----------------------+------------------------+
-|        Poor          | 6 cp                   |
+| Poor                 | 6 cp                   |
 +----------------------+------------------------+
-|        Modest        | 3 sp                   |
+| Modest               | 3 sp                   |
 +----------------------+------------------------+
-|        Comfortable   |      5 sp              |
+| Comfortable          | 5 sp                   |
 +----------------------+------------------------+
-|        Wealthy       | 8 sp                   |
+| Wealthy              | 8 sp                   |
 +----------------------+------------------------+
-|        Aristocratic  |       2 gp             |
+| Aristocratic         | 2 gp                   |
 +----------------------+------------------------+
-|        Meat, chunk   |      3 sp              |
+| Meat, chunk          | 3 sp                   |
 +----------------------+------------------------+
-|        *Wine*                                 |
+| *Wine*                                        |
 +----------------------+------------------------+
-|   Common (pitcher)   |  2 sp                  |
+| Common (pitcher)     | 2 sp                   |
 +----------------------+------------------------+
-|    Fine (bottle)     |        10 gp           |
+| Fine (bottle)        | 10 gp                  |
 +----------------------+------------------------+
 
 Services
@@ -261,7 +261,7 @@ desired spell, the harder it is to find someone who can cast it and the
 more it costs.
 
 Hiring someone to cast a relatively common spell of 1st or 2nd level,
-such as *cure wounds* or *identify*, is easy enough in a city or town,
+such as **cure wounds** or **identify**, is easy enough in a city or town,
 and might cost 10 to 50 gold pieces (plus the cost of any expensive
 material components). Finding someone able and willing to cast a
 higher-­level spell might involve traveling to a large city, perhaps one

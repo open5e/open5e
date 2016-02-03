@@ -2,7 +2,7 @@ Damage and Healing
 ------------------
 
 Injury and the risk of death are constant companions of those who
-explore fantasy gaming worlds. The thrust of a sword, a well-­‐‑placed
+explore fantasy gaming worlds. The thrust of a sword, a well---placed
 arrow, or a blast of flame from a *fireball* spell all have the
 potential to damage, or even kill, the hardiest of creatures.
 
@@ -31,7 +31,7 @@ factors can grant a bonus to damage. With a penalty, it is possible to
 deal 0 damage, but never negative damage. When attacking with a **weapon**, you add your
 ability modifier—the same modifier used for the attack roll—to the
 damage. A **spell** tells you which dice to roll for damage and whether
-to add any modifiers. 
+to add any modifiers.
 
 If a spell or other effect deals damage to **more**
 **than one target** at the same time, roll the damage once for all of
@@ -62,49 +62,49 @@ other rules, such as damage resistance, rely on the types.
 The damage types follow, with examples to help a GM assign a damage type
 to a new effect.
 
-***Acid.*** The corrosive spray of a black dragon’s breath and the
-dissolving enzymes secreted by a black pudding deal acid damage. 
+**Acid.** The corrosive spray of a black dragon’s breath and the
+dissolving enzymes secreted by a black pudding deal acid damage.
 
-***Bludgeoning.*** Blunt force attacks—hammers,
+**Bludgeoning.** Blunt force attacks—hammers,
 falling, constriction, and the like—deal bludgeoning damage.
 
-***Cold.*** The infernal chill radiating from an ice devil’s spear and
+**Cold.** The infernal chill radiating from an ice devil’s spear and
 the frigid blast of a white dragon’s breath deal cold damage.
 
-***Fire.*** Red dragons breathe fire, and many spells conjure flames to
-deal fire damage. 
+**Fire.** Red dragons breathe fire, and many spells conjure flames to
+deal fire damage.
 
-***Force.*** Force is pure magical energy focused into a damaging
+**Force.** Force is pure magical energy focused into a damaging
 form. Most effects that deal force damage are spells, including *magic
 missile* and *spiritual weapon*.
 
-***Lightning.*** A *lightning bolt* spell and a blue dragon’s breath
+**Lightning.** A *lightning bolt* spell and a blue dragon’s breath
 deal lightning damage.
 
-***Necrotic.*** Necrotic damage, dealt by certain undead and a spell
+**Necrotic.** Necrotic damage, dealt by certain undead and a spell
 such as *chill touch*, withers matter and even the soul.
 
-***Piercing.*** Puncturing and impaling attacks, including spears and
-monsters’ bites, deal piercing damage. ***Poison.*** Venomous stings and the toxic gas of a
+**Piercing.** Puncturing and impaling attacks, including spears and
+monsters’ bites, deal piercing damage. **Poison.** Venomous stings and the toxic gas of a
 green dragon’s breath deal poison damage.
 
-***Psychic.*** Mental abilities such as a mind flayer’s psionic blast
+**Psychic.** Mental abilities such as a mind flayer’s psionic blast
 deal psychic damage.
 
-***Radiant.*** Radiant damage, dealt by a cleric’s *flame strike* spell
+**Radiant.** Radiant damage, dealt by a cleric’s *flame strike* spell
 or an angel’s smiting weapon, sears the flesh like fire and overloads
 the spirit with power.
 
-***Slashing.*** Swords, axes, and monsters’ claws deal slashing damage. 
+**Slashing.** Swords, axes, and monsters’ claws deal slashing damage.
 
-***Thunder.*** A concussive burst of sound, such as the effect of the
+**Thunder.** A concussive burst of sound, such as the effect of the
 *thunderwave* spell, deals thunder damage.
 
 Damage Resistance and Vulnerability
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Some creatures and objects are exceedingly difficult or unusually easy
-to hurt with certain types of damage. 
+to hurt with certain types of damage.
 
 If a creature or an object has **resistance** to a
 damage type, damage of that type is halved against it. If a creature or
@@ -122,7 +122,7 @@ Multiple instances of resistance or vulnerability that affect the same
 damage type count as only one instance. For example, if a creature has
 resistance to fire damage as well as resistance to all nonmagical
 damage, the damage of a nonmagical fire is reduced by half against the
-creature, not reduced by three-­‐‑ quarters.
+creature, not reduced by three--- quarters.
 
 Healing
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -184,11 +184,11 @@ The successes and failures don’t need to be consecutive; keep track of
 both until you collect three of a kind. The number of both is reset to
 zero when you regain any hit points or become stable.
 
-***Rolling 1 or 20.*** When you make a death saving throw and roll a 1
+**Rolling 1 or 20.** When you make a death saving throw and roll a 1
 on the d20, it counts as two failures. If you roll a 20 on the d20, you
 regain 1 hit point.
 
-***Damage at 0 Hit Points.*** If you take any damage while you have 0
+**Damage at 0 Hit Points.** If you take any damage while you have 0
 hit points, you suffer a death saving throw failure. If the damage is
 from a critical hit, you suffer two failures instead. If the damage
 equals or exceeds your hit point maximum, you suffer instant death.

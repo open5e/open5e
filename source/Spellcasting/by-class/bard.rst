@@ -5,7 +5,7 @@ Bard Spells
 Cantrips (0 Level)
 ~~~~~~~~~~~~~~~~~~
 
--  Dancing Lights
+-  :ref:`dancing-lights`
 -  Light
 -  Mage Hand
 -  Mending

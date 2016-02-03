@@ -6,7 +6,7 @@ Cantrips (0 Level)
 
 -  Acid Splash
 -  Chill Touch
--  Dancing Lights
+-  :ref:`dancing-lights`
 -  Light
 -  Mage Hand
 -  Mending
