@@ -78,7 +78,7 @@ nature. Sharks are savage predators, for example, but they are not evil;
 they have no alignment.
 
 Languages
-~~~~~~~~~
+---------
 
 Your race indicates the languages your character can speak by default,
 and your background might give you access to one or more additional
@@ -98,49 +98,51 @@ communicate with one another.
 Standard Languages
 ^^^^^^^^^^^^^^^^^^
 
-+----------------+---------------------------+-----------------+
-| **Language**   |    **Typical Speakers**   |    **Script**   |
-+================+===========================+=================+
-| Common         |    Humans                 |    Common       |
-+----------------+---------------------------+-----------------+
-| Dwarvish       |    Dwarves                |    Dwarvish     |
-+----------------+---------------------------+-----------------+
-| Elvish         |    Elves                  |    Elvish       |
-+----------------+---------------------------+-----------------+
-| Giant          |    Ogres, giants          |    Dwarvish     |
-+----------------+---------------------------+-----------------+
-| Gnomish        |    Gnomes                 |    Dwarvish     |
-+----------------+---------------------------+-----------------+
-| Goblin         |    Goblinoids             |    Dwarvish     |
-+----------------+---------------------------+-----------------+
-| Halfling       |    Halflings              |    Common       |
-+----------------+---------------------------+-----------------+
-| Orc            |    Orcs                   |    Dwarvish     |
-+----------------+---------------------------+-----------------+
++----------+------------------+---------+
+| Language | Typical Speakers | Script  |
++==========+==================+=========+
+| Common   | Humans           | Common  |
++----------+------------------+---------+
+| Dwarvish | Dwarves          | Dwarvish|
++----------+------------------+---------+
+| Elvish   | Elves            | Elvish  |
++----------+------------------+---------+
+| Giant    | Ogres, giants    | Dwarvish|
++----------+------------------+---------+
+| Gnomish  | Gnomes           | Dwarvish|
++----------+------------------+---------+
+| Goblin   | Goblinoids       | Dwarvish|
++----------+------------------+---------+
+| Halfling | Halflings        | Common  |
++----------+------------------+---------+
+| Orc      | Orcs             | Dwarvish|
++----------+------------------+---------+
 
-**Exotic Languages**
+Exotic Languages
+^^^^^^^^^^^^^^^^
 
-+----------------+---------------------------+-----------------+
-| **Language**   |    **Typical Speakers**   |    **Script**   |
-+================+===========================+=================+
-| Abyssal        |    Demons                 |    Infernal     |
-+----------------+---------------------------+-----------------+
-| Celestial      |    Celestials             |    Celestial    |
-+----------------+---------------------------+-----------------+
-| Draconic       |    Dragons, dragonborn    |    Draconic     |
-+----------------+---------------------------+-----------------+
-| Deep Speech    |    Aboleths, cloakers     |    —            |
-+----------------+---------------------------+-----------------+
-| Infernal       |    Devils                 |    Infernal     |
-+----------------+---------------------------+-----------------+
-| Primordial     |    Elementals             |    Dwarvish     |
-+----------------+---------------------------+-----------------+
-| Sylvan         |    Fey creatures          |    Elvish       |
-+----------------+---------------------------+-----------------+
-| Undercommon    |    Underworld traders     |    Elvish       |
-+----------------+---------------------------+-----------------+
++------------+--------------------+-----------+
+| Language   | Typical Speakers   | Script    |
++============+====================+===========+
+| Abyssal    | Demons             | Infernal  |
++------------+--------------------+-----------+
+| Celestial  | Celestials         | Celestial |
++------------+--------------------+-----------+
+| Draconic   | Dragons, dragonborn| Draconic  |
++------------+--------------------+-----------+
+| Deep Speech| Aboleths, cloakers | —         |
++------------+--------------------+-----------+
+| Infernal   | Devils             | Infernal  |
++------------+--------------------+-----------+
+| Primordial | Elementals         | Dwarvish  |
++------------+--------------------+-----------+
+| Sylvan     | Fey creatures      | Elvish    |
++------------+--------------------+-----------+
+| Undercommon| Underworld traders | Elvish    |
++------------+--------------------+-----------+
 
-**Inspiration**
+Inspiration
+-----------
 
 Inspiration is a rule the game master can use to reward you for playing
 your character in a way that’s true to his or her personality traits,
@@ -151,7 +153,7 @@ on your bond to the defense of your home village to push past the effect
 of a spell that has been laid on you.
 
 Gaining Inspiration
-~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^
 
 Your GM can choose to give you inspiration for a variety of reasons.
 Typically, GMs award it when you play out your personality traits, give
@@ -163,7 +165,7 @@ You either have inspiration or you don’t—you can’t stockpile multiple
 “inspirations” for later use.
 
 Using Inspiration
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 
 If you have inspiration, you can expend it when you make an attack roll,
 saving throw, or ability check. Spending your inspiration gives you
@@ -176,7 +178,7 @@ contributes to the story in a fun and interesting way, you can give up
 your inspiration to give that character inspiration.
 
 Backgrounds
-~~~~~~~~~~~
+-----------
 
 Every story has a beginning. Your character’s background reveals where
 you came from, how you became an adventurer, and your place in the
@@ -211,20 +213,20 @@ sources, he or she can choose a different proficiency of the same kind
 (skill or tool) instead.
 
 Languages
-^^^^^^^^^
+~~~~~~~~~
 
 Some backgrounds also allow characters to learn additional languages
 beyond those given by race. See “Languages.”
 
 Equipment
-^^^^^^^^^
+~~~~~~~~~
 
 Each background provides a package of starting equipment. If you use the
 optional rule to spend coin on gear, you do not receive the starting
 equipment from your background.
 
 Suggested Characteristics
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A background contains suggested personal characteristics based on your
 background. You can pick characteristics, roll dice to determine them
@@ -232,7 +234,7 @@ randomly, or use the suggestions as inspiration for characteristics of
 your own creation.
 
 Customizing a Background
-^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 You might want to tweak some of the features of a background so it
 better fits your character or the campaign setting. To customize a
@@ -245,8 +247,8 @@ suggested for your class.) Finally, choose two personality traits, one
 ideal, one bond, and one flaw. If you can’t find a feature that matches
 your desired background, work with your GM to create one.
 
-**Acolyte**
-
+Acolyte
+^^^^^^^
 You have spent your life in the service of a temple to a specific god or
 pantheon of gods. You act as an intermediary between the realm of the
 holy and the mortal world, performing sacred rites and offering
@@ -273,7 +275,7 @@ priesthood), a prayer book or prayer wheel, 5 sticks of incense,
 vestments, a set of common clothes, and a pouch containing 15 gp
 
 Feature: Shelter of the Faithful
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As an acolyte, you command the respect of those who share your faith,
 and you can perform the religious ceremonies of your deity. You and your
@@ -291,7 +293,7 @@ ask for is not hazardous and you remain in good standing with your
 temple.
 
 Suggested Characteristics
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Acolytes are shaped by their experience in temples or other religious
 communities. Their study of the history and tenets of their faith and
@@ -300,7 +302,7 @@ mannerisms and ideals. Their flaws might be some hidden hypocrisy or
 heretical idea, or an ideal or bond taken to an extreme.
 
 +----------+----------------------------------------------------------------------------------------------------------------------+
-|   **d8** |      **Personality Trait**                                                                                           |
+| d8       | Personality Trait                                                                                                    |
 +==========+======================================================================================================================+
 | 1        | I idolize a particular hero of my faith, and constantly refer to that person’s deeds and example.                    |
 +----------+----------------------------------------------------------------------------------------------------------------------+
@@ -320,7 +322,7 @@ heretical idea, or an ideal or bond taken to an extreme.
 +----------+----------------------------------------------------------------------------------------------------------------------+
 
 +------------+--------------------------------------------------------------------------------------------------------------------------+
-|   **d6**   |     **Ideal**                                                                                                            |
+| d6         | Ideal                                                                                                                    |
 +============+==========================================================================================================================+
 | 1          | Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)                        |
 +------------+--------------------------------------------------------------------------------------------------------------------------+
@@ -336,7 +338,7 @@ heretical idea, or an ideal or bond taken to an extreme.
 +------------+--------------------------------------------------------------------------------------------------------------------------+
 
 +----------+--------------------------------------------------------------------------------------------+
-|   **d6** |       **Bond**                                                                             |
+| d6       | Bond                                                                                       |
 +==========+============================================================================================+
 | 1        | I would die to recover an ancient relic of my faith that was lost long ago.                |
 +----------+--------------------------------------------------------------------------------------------+
@@ -352,7 +354,7 @@ heretical idea, or an ideal or bond taken to an extreme.
 +----------+--------------------------------------------------------------------------------------------+
 
 +----------+-------------------------------------------------------------------------------------------------+
-|   **d6** |       **Flaw**                                                                                  |
+| d6       | Flaw                                                                                            |
 +==========+=================================================================================================+
 | 1        | I judge others harshly, and myself even more severely.                                          |
 +----------+-------------------------------------------------------------------------------------------------+

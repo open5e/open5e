@@ -4,38 +4,38 @@ Wizard
 Class Features
 --------------
 
-    As a wizard, you gain the following class features.
+As a wizard, you gain the following class features.
 
 Hit Points
 ^^^^^^^^^^
 
-    **Hit Dice:** 1d6 per wizard level
+**Hit Dice:** 1d6 per wizard level
 
-    **Hit Points at 1st Level:** 6 + your Constitution modifier
+**Hit Points at 1st Level:** 6 + your Constitution modifier
 
-    **Hit Points at Higher Levels:** 1d6 (or 4) + your Constitution
-    modifier per wizard level after 1st
+**Hit Points at Higher Levels:** 1d6 (or 4) + your Constitution
+modifier per wizard level after 1st
 
 Proficiencies
 ^^^^^^^^^^^^^
 
-    **Armor:** None
+**Armor:** None
 
-    **Weapons:** Daggers, darts, slings, quarterstaffs, light crossbows
+**Weapons:** Daggers, darts, slings, quarterstaffs, light crossbows
 
-    **Tools:** None
+**Tools:** None
 
-    **Saving Throws:** Intelligence, Wisdom
+**Saving Throws:** Intelligence, Wisdom
 
-    **Skills:** Choose two from Arcana, History, Insight,
+**Skills:** Choose two from Arcana, History, Insight,
 
-    Investigation, Medicine, and Religion
+Investigation, Medicine, and Religion
 
 Equipment
 ^^^^^^^^^
 
-    You start with the following equipment, in addition to the equipment
-    granted by your background:
+You start with the following equipment, in addition to the equipment
+granted by your background:
 
 -  *(a)* a quarterstaff or (*b*) a dagger
 
@@ -46,37 +46,56 @@ Equipment
 -  A spellbook
 
 The Wizard
-^^^^^^^^^^
-    
-==============  =====================  ==================================  =======================  ============  ============  ============  ============  ============  ============  ============  ============  ============
-                                                                                                    Spell Slots per Spell Level
-                                                                                                    -----------------------------------------------------------------------------------------------------------------------------
-Level           Proficiency Bonus      Features                            Cantrips Known           1st           2nd           3rd           4th           5th           6th           7th           8th           9th
-==============  =====================  ==================================  =======================  ============  ============  ============  ============  ============  ============  ============  ============  ============
-1st             +2                     Spellcasting, Arcane Recovery       3                        2              ̶              ̶              ̶              ̶              ̶              ̶              ̶               ̶          
-2nd             +2                     Arcane Tradition                    3                        3              ̶              ̶              ̶              ̶              ̶              ̶              ̶               ̶          
-3rd             +2                      ̶                                   3                        4              2             ̶              ̶              ̶              ̶              ̶              ̶               ̶          
-4th             +2                     Ability Score Improvement           4                        4              3             ̶              ̶              ̶              ̶              ̶              ̶               ̶          
-5th             +3                      ̶                                   4                        4              3             2             ̶              ̶              ̶              ̶              ̶               ̶          
-6th             +3                     Arcane Tradition feature            4                        4              3             3             ̶              ̶              ̶              ̶              ̶               ̶          
-7th             +3                     -                                   4                        4              3             3             1             ̶              ̶              ̶              ̶               ̶          
-8th             +3                     Ability Score Improvement           4                        4              3             3             2             ̶              ̶              ̶              ̶               ̶          
-9th             +4                      ̶                                   4                        4              3             3             3             1             ̶              ̶              ̶               ̶          
-10th            +4                     Arcane Tradition feature            5                        4              3             3             3             2             ̶              ̶              ̶               ̶          
-11th            +4                      ̶                                   5                        4              3             3             3             2             1             ̶              ̶               ̶          
-12th            +4                     Ability Score Improvement           5                        4              3             3             3             2             1             ̶              ̶               ̶          
-13th            +5                      ̶                                   5                        4              3             3             3             2             1             1             ̶               ̶          
-14th            +5                     Arcane Tradition feature            5                        4              3             3             3             2             1             1             ̶               ̶          
-15th            +5                      ̶                                   5                        4              3             3             3             2             1             1             1              ̶          
-16th            +5                     Ability Score Improvement           5                        4              3             3             3             2             1             1             1              ̶          
-17th            +6                      ̶                                   5                        4              3             3             3             2             1             1             1              1         
-18th            +6                     Spell Mastery                       5                        4              3             3             3             3             1             1             1              1         
-19th            +6                     Ability Score Improvement           5                        4              3             3             3             3             2             1             1              1         
-20th            +6                     Signature Spell                     5                        4              3             3             3             3             2             2             1              1         
-==============  =====================  ==================================  =======================  ============  ============  ============  ============  ============  ============  ============  ============  ============
-     
+~~~~~~~~~~
+
++-------+-------------+-----------------------------------------+----------+-----------------------------------------------------+
+|       |             |                                         |          | --Spell Slots per Spell Level--                     |
+|       | Proficiency |                                         | Cantrips +-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| Level | Bonus       | Features                                | Known    | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
++=======+=============+=========================================+==========+=====+=====+=====+=====+=====+=====+=====+=====+=====+
+| 1st   | +2          | Spellcasting, Arcane Recovery           | 3        | 2   | -   | -   | -   | -   | -   | -   | -   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 2nd   | +2          | Arcane Tradition                        | 3        | 3   | -   | -   | -   | -   | -   | -   | -   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 3rd   | +2          | -                                       | 3        | 4   | 2   | -   | -   | -   | -   | -   | -   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 4th   | +2          | Ability Score Improvement               | 4        | 4   | 3   | -   | -   | -   | -   | -   | -   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 5th   | +3          | -                                       | 4        | 4   | 3   | 2   | -   | -   | -   | -   | -   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 6th   | +3          | Arcane Tradition feature                | 4        | 4   | 3   | 3   | -   | -   | -   | -   | -   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 7th   | +3          | -                                       | 4        | 4   | 3   | 3   | 1   | -   | -   | -   | -   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 8th   | +3          | Ability Score Improvement               | 4        | 4   | 3   | 3   | 2   | -   | -   | -   | -   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 9th   | +4          | -                                       | 4        | 4   | 3   | 3   | 3   | 1   | -   | -   | -   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 10th  | +4          | Arcane Tradition feature                | 5        | 4   | 3   | 3   | 3   | 2   | -   | -   | -   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 11th  | +4          | -                                       | 5        | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 12th  | +4          | Ability Score Improvement               | 5        | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 13th  | +5          | -                                       | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 14th  | +5          | Arcane Tradition feature                | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 15th  | +5          | -                                       | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 16th  | +5          | Ability Score Improvement               | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 17th  | +6          | -                                       | 5        | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | 1   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 18th  | +6          | Spell Mastery                           | 5        | 4   | 3   | 3   | 3   | 3   | 1   | 1   | 1   | 1   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 19th  | +6          | Ability Score Improvement               | 5        | 4   | 3   | 3   | 3   | 3   | 2   | 1   | 1   | 1   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 20th  | +6          | Signature Spell                         | 5        | 4   | 3   | 3   | 3   | 3   | 2   | 2   | 1   | 1   |
++-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+
 Spellcasting
-^^^^^^^^^^^^
+------------
 
 As a student of arcane magic, you have a spellbook containing spells
 that show the first glimmerings of your true power.
@@ -133,11 +152,9 @@ In addition, you use your Intelligence modifier when setting the saving
 throw DC for a wizard spell you cast and when making an attack roll with
 one.
 
-    **Spell save DC** = 8 + your proficiency bonus + your Intelligence
-    modifier
+  **Spell save DC** = 8 + your proficiency bonus + your Intelligence modifier
 
-    **Spell attack modifier** = your proficiency bonus + your
-    Intelligence modifier
+  **Spell attack modifier** = your proficiency bonus + your Intelligence modifier
 
 Ritual Casting
 ^^^^^^^^^^^^^^
@@ -160,7 +177,7 @@ find other spells that you can add to your spellbook (see the “Your
 Spellbook” sidebar).
 
 Arcane Recovery
-~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^
 
 You have learned to regain some of your magical energy by studying your
 spellbook. Once per day when you finish a short rest, you can choose
@@ -173,7 +190,7 @@ levels worth of spell slots. You can recover either a 2nd-level spell
 slot or two 1st-level spell slots.
 
 Arcane Tradition
-~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^
 
 When you reach 2nd level, you choose an arcane tradition, shaping your
 practice of magic through one of eight schools: Abjuration, Conjuration,
@@ -184,7 +201,7 @@ Your choice grants you features at 2nd level and again at 6th, 10th, and
 14th level.
 
 Ability Score Improvement
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
@@ -192,7 +209,7 @@ increase two ability scores of your choice by 1. As normal, you can’t
 increase an ability score above 20 using this feature.
 
 Spell Mastery
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 At 18th level, you have achieved such mastery over certain spells that
 you can cast them at will. Choose a 1st-level wizard spell and a
@@ -205,7 +222,7 @@ By spending 8 hours in study, you can exchange one or both of the spells
 you chose for different spells of the same levels.
 
 Signature Spells
-~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^
 
 When you reach 20th level, you gain mastery over two powerful spells and
 can cast them with little effort. Choose two 3rd-level wizard spells in
@@ -295,50 +312,46 @@ Your Spellbook
 ^^^^^^^^^^^^^^
 
 The spells that you add to your spellbook as you gain levels reflect
-    the arcane research you conduct on your own, as well as intellectual
-    breakthroughs you have had about the nature of the multiverse. You
-    might find other spells during your adventures. You could discover a
-    spell recorded on a scroll in an evil wizard’s chest, for example,
-    or in a dusty tome in an ancient library.
+the arcane research you conduct on your own, as well as intellectual
+breakthroughs you have had about the nature of the multiverse. You
+might find other spells during your adventures. You could discover a
+spell recorded on a scroll in an evil wizard’s chest, for example,
+or in a dusty tome in an ancient library.
 
-    ***Copying a Spell into the Book.*** When you find a wizard
+**Copying a Spell into the Book.** When you find a wizard
+spell of 1st level or higher, you can add it to your spellbook if it
+is of a spell level you can prepare and if you can spare the time to
+decipher and copy it.
 
-    spell of 1st level or higher, you can add it to your spellbook if it
-    is of a spell level you can prepare and if you can spare the time to
-    decipher and copy it.
+Copying that spell into your spellbook involves reproducing the
+basic form of the spell, then deciphering the unique system of
+notation used by the wizard who wrote it. You
+must practice the spell until you understand the sounds or gestures
+required, then transcribe it into your spellbook using your own
+notation.
 
-    Copying that spell into your spellbook involves reproducing the
-    basic form of the spell, then deciphering the unique system of
-    notation used by the wizard who wrote it. You
+For each level of the spell, the process takes 2 hours and
+costs 50 gp. The cost represents material components you expend as
+you experiment with the spell to master it, as well as the fine inks
+you need to record it. Once you have spent this time and money, you
+can prepare the spell just like your other spells.
 
-    must practice the spell until you understand the sounds or gestures
-    required, then transcribe it into your spellbook using your own
-    notation.
+**Replacing the Book.** You can copy a spell from your own
+spellbook into another book—for example, if you want to make a
+backup copy of your spellbook. This is just like copying a new spell
+into your spellbook, but faster and easier, since you understand
+your own notation and already know how to cast the spell. You need
+spend only 1 hour and 10 gp for each level of the copied spell.
 
-    For each level of the spell, the process takes 2 hours and
+If you lose your spellbook, you can use the same
+procedure to transcribe the spells that you have prepared into a new
+spellbook. Filling out the remainder of your spellbook requires you
+to find new spells to do so, as normal. For this reason, many
+wizards keep backup spellbooks in a safe place.
 
-    costs 50 gp. The cost represents material components you expend as
-    you experiment with the spell to master it, as well as the fine inks
-    you need to record it. Once you have spent this time and money, you
-    can prepare the spell just like your other spells.
-
-    ***Replacing the Book.*** You can copy a spell from your own
-    spellbook into another book—for example, if you want to make a
-    backup copy of your spellbook. This is just like copying a new spell
-    into your spellbook, but faster and easier, since you understand
-    your own notation and already know how to cast the spell. You need
-    spend only 1 hour and 10 gp for each level of the copied spell.
-
-    If you lose your spellbook, you can use the same
-
-    procedure to transcribe the spells that you have prepared into a new
-    spellbook. Filling out the remainder of your spellbook requires you
-    to find new spells to do so, as normal. For this reason, many
-    wizards keep backup spellbooks in a safe place.
-
-    ***The Book’s Appearance.*** Your spellbook is a unique compilation
-    of spells, with its own decorative flourishes and margin notes. It
-    might be a plain, functional leather volume that you received as a
-    gift from your master, a finely bound gilt-­‐edged tome you found in
-    an ancient library, or even a loose collection of notes scrounged
-    together after you lost your previous spellbook in a mishap.
+**The Book’s Appearance.** Your spellbook is a unique compilation
+of spells, with its own decorative flourishes and margin notes. It
+might be a plain, functional leather volume that you received as a
+gift from your master, a finely bound gilt-­‐edged tome you found in
+an ancient library, or even a loose collection of notes scrounged
+together after you lost your previous spellbook in a mishap.

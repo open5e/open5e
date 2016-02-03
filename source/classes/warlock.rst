@@ -4,37 +4,37 @@ Warlock
 Class Features
 --------------
 
-    As a warlock, you gain the following class features.
+As a warlock, you gain the following class features.
 
 Hit Points
 ^^^^^^^^^^
 
-    **Hit Dice:** 1d8 per warlock level
+**Hit Dice:** 1d8 per warlock level
 
-    **Hit Points at 1st Level:** 8 + your Constitution modifier
+**Hit Points at 1st Level:** 8 + your Constitution modifier
 
-    **Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution
-    modifier per warlock level after 1st
+**Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution
+modifier per warlock level after 1st
 
 Proficiencies
 ^^^^^^^^^^^^^
 
-    **Armor:** Light armor
+**Armor:** Light armor
 
-    **Weapons:** Simple weapons
+**Weapons:** Simple weapons
 
-    **Tools:** None
+**Tools:** None
 
-    **Saving Throws:** Wisdom, Charisma
+**Saving Throws:** Wisdom, Charisma
 
-    **Skills:** Choose two skills from Arcana, Deception, History,
-    Intimidation, Investigation, Nature, and Religion
+**Skills:** Choose two skills from Arcana, Deception, History,
+Intimidation, Investigation, Nature, and Religion
 
 Equipment
 ^^^^^^^^^
 
-    You start with the following equipment, in addition to the equipment
-    granted by your background:
+You start with the following equipment, in addition to the equipment
+granted by your background:
 
 -  *(a)* a light crossbow and 20 bolts or (*b*) any simple weapon
 
@@ -45,51 +45,73 @@ Equipment
 -  Leather armor, any simple weapon, and two daggers
 
 The Warlock
-^^^^^^^^^^^
+~~~~~~~~~~~
 
-================  ===========================  =====================================  ========================  ======================  =====================  ====================  ===========================  
-**Level**         **Proficiency Bonus**        **Features**                           **Cantrips Known**        **Spells Known**        **Spell Slots**        **Slot Level**        **Invocations Known** 
-================  ===========================  =====================================  ========================  ======================  =====================  ====================  ===========================  
-1st               +2                           Otherworldly Patron, Pact Magic        2                         2                       1                      1st                                           
-2nd               +2                           Eldritch Invocations                   2                         3                       2                      1st                   2                       
-3rd               +2                           Pact Boon                              2                         4                       2                      2nd                   2                       
-4th               +2                           Ability Score Improvement              3                         5                       2                      2nd                   2                       
-5th               +3                                                                  3                         6                       2                      3rd                   3                       
-6th               +3                           Otherworldly Patron feature            3                         7                       2                      3rd                   3                       
-7th               +3                                                                  3                         8                       2                      4th                   4                       
-8th               +3                           Ability Score Improvement              3                         9                       2                      4th                   4                       
-9th               +4                                                                  3                         10                      2                      5th                   5                       
-10th              +4                           Otherworldly Patron feature            4                         10                      2                      5th                   5                       
-11th              +4                           Mystic Arcanum (6th level)             4                         11                      3                      5th                   5                       
-12th              +4                           Ability Score Improvement              4                         11                      3                      5th                   6                       
-13th              +5                           Mystic Arcanum (7th level)             4                         12                      3                      5th                   6                       
-14th              +5                           Otherworldly Patron feature            4                         12                      3                      5th                   6                       
-15th              +5                           Mystic Arcanum (8th level)             4                         13                      3                      5th                   7                       
-16th              +5                           Ability Score Improvement              4                         13                      3                      5th                   7                       
-17th              +6                           Mystic Arcanum (9th level)             4                         14                      4                      5th                   7                       
-18th              +6                                                                  4                         14                      4                      5th                   8                       
-19th              +6                           Ability Score Improvement              4                         15                      4                      5th                   8                       
-20th              +6                           Eldritch Master                        4                         15                      4                      5th                   8                       
-================  ===========================  =====================================  ========================  ======================  =====================  ====================  ===========================  
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+|       | Proficiency |                                         | Cantrips | Spells  | spell | Slot  | Invocations |
+| Level | Bonus       | Features                                | Known    | Known   | slots | Level | Known       |
++=======+=============+=========================================+==========+=========+=======+=======+=============+
+| 1st   | +2          | Otherworldly Patron, Pact Magic         | 2        | 2       | 1     | 1     |             |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 2nd   | +2          | Eldritch Invocations                    | 2        | 3       | 2     | 1     | 2           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 3rd   | +2          | Pact Boon                               | 2        | 4       | 2     | 2     | 2           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 4th   | +2          | Ability Score Improvement               | 3        | 5       | 2     | 2     | 2           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 5th   | +3          |                                         | 3        | 6       | 2     | 3     | 3           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 6th   | +3          | Otherworldly Patron feature             | 3        | 7       | 2     | 3     | 3           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 7th   | +3          |                                         | 3        | 8       | 2     | 4     | 4           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 8th   | +3          | Ability Score Improvement               | 3        | 9       | 2     | 4     | 4           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 9th   | +4          |                                         | 3        | 10      | 2     | 5     | 5           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 10th  | +4          | Otherworldly Patron feature             | 4        | 10      | 2     | 5     | 5           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 11th  | +4          | Mystic Arcanum (6th level)              | 4        | 11      | 3     | 5     | 5           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 12th  | +4          | Ability Score Improvement               | 4        | 11      | 3     | 5     | 6           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 13th  | +5          | Mystic Arcanum (7th level)              | 4        | 12      | 3     | 5     | 6           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 14th  | +5          | Otherworldly Patron feature             | 4        | 12      | 3     | 5     | 6           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 15th  | +5          | Mystic Arcanum (8th level)              | 4        | 13      | 3     | 5     | 7           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 16th  | +5          | Ability Score Improvement               | 4        | 13      | 3     | 5     | 7           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 17th  | +6          | Mystic Arcanum (9th level)              | 4        | 14      | 4     | 5     | 7           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 18th  | +6          |                                         | 4        | 14      | 4     | 5     | 8           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 19th  | +6          | Ability Score Improvement               | 4        | 15      | 4     | 5     | 8           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
+| 20th  | +6          | Eldritch Master                         | 4        | 15      | 4     | 5     | 8           |
++-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
 
-    **Otherworldly Patron**
+Otherworldly Patron
+^^^^^^^^^^^^^^^^^^^
 
-    At 1st level, you have struck a bargain with an otherworldly being
-    of your choice: the Archfey, the Fiend, or the Great Old One, each
-    of which is detailed at the end of the class description. Your
-    choice grants you features at 1st level and again at 6th, 10th, and
-    14th level.
+At 1st level, you have struck a bargain with an otherworldly being
+of your choice: the Archfey, the Fiend, or the Great Old One, each
+of which is detailed at the end of the class description. Your
+choice grants you features at 1st level and again at 6th, 10th, and
+14th level.
 
-    **Pact Magic**
+Pact Magic
+^^^^^^^^^^
 
-    Your arcane research and the magic bestowed on you by your patron
-    have given you facility with spells.
+Your arcane research and the magic bestowed on you by your patron
+have given you facility with spells.
 
 Cantrips
 ^^^^^^^^
 
-    You know two cantrips of your choice from the warlock spell list.
-    You learn additional warlock
+You know two cantrips of your choice from the warlock spell list.
+You learn additional warlock
 
 cantrips of your choice at higher levels, as shown in the Cantrips Known
 column of the Warlock table.
@@ -133,11 +155,9 @@ In addition, you use your Charisma modifier when setting the saving
 throw DC for a warlock spell you cast and when making an attack roll
 with one.
 
-    **Spell save DC** = 8 + your proficiency bonus + your Charisma
-    modifier
+  **Spell save DC** = 8 + your proficiency bonus + your Charisma modifier
 
-    **Spell attack modifier** = your proficiency bonus + your Charisma
-    modifier
+  **Spell attack modifier** = your proficiency bonus + your Charisma modifier
 
 Spellcasting Focus
 ^^^^^^^^^^^^^^^^^^
@@ -150,7 +170,6 @@ Eldritch Invocations
 
 In your study of occult lore, you have unearthed eldritch invocations,
 fragments of forbidden
-
 knowledge that imbue you with an abiding magical ability.
 
 At 2nd level, you gain two eldritch invocations of your choice. Your
@@ -203,7 +222,6 @@ then dismiss the weapon, shunting it into an extradimensional space, and
 it appears whenever you create your pact weapon thereafter. You can’t
 affect an artifact or a sentient weapon in this way. The weapon ceases
 being your
-
 pact weapon if you die, if you perform the 1-hour ritual on a different
 weapon, or if you use a 1-hour ritual to break your bond to it. The
 weapon appears at your feet if it is in the extradimensional space when
@@ -257,7 +275,8 @@ expended spell slots from your Pact Magic feature. Once you regain spell
 slots with this feature, you must finish a long rest before you can do
 so again.
 
- Eldritch Invocations --------------------
+Eldritch Invocations
+--------------------
 
 If an eldritch invocation has prerequisites, you must meet them to learn
 it. You can learn the invocation at the same time that you meet its
@@ -266,7 +285,7 @@ prerequisites. A level prerequisite refers to your level in this class.
 Agonizing Blast
 ^^^^^^^^^^^^^^^
 
-    *Prerequisite:* eldritch blast *cantrip*
+*Prerequisite:* eldritch blast *cantrip*
 
 When you cast *eldritch blast*, add your Charisma modifier to the damage
 it deals on a hit.
@@ -280,7 +299,7 @@ slot or material components.
 Ascendant Step
 ^^^^^^^^^^^^^^
 
-    *Prerequisite: 9th level*
+*Prerequisite: 9th level*
 
 You can cast *levitate* on yourself at will, without expending a spell
 slot or material components.
@@ -288,8 +307,8 @@ slot or material components.
 Beast Speech
 ^^^^^^^^^^^^
 
-    You can cast *speak with animals* at will, without expending a spell
-    slot.
+You can cast *speak with animals* at will, without expending a spell
+slot.
 
 Beguiling Influence
 ^^^^^^^^^^^^^^^^^^^
@@ -299,7 +318,7 @@ You gain proficiency in the Deception and Persuasion skills.
 Bewitching Whispers
 ^^^^^^^^^^^^^^^^^^^
 
-    *Prerequisite: 7th level*
+*Prerequisite: 7th level*
 
 You can cast *compulsion* once using a warlock spell slot. You can’t do
 so again until you finish a long rest.
@@ -307,7 +326,7 @@ so again until you finish a long rest.
 Book of Ancient Secrets
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-    *Prerequisite: Pact of the Tome feature*
+*Prerequisite: Pact of the Tome feature*
 
 You can now inscribe magical rituals in your Book of Shadows. Choose two
 1st-level spells that have the ritual tag from any class’s spell list
@@ -330,7 +349,7 @@ inscribe it.
 Chains of Carceri
 ^^^^^^^^^^^^^^^^^
 
-    *Prerequisite: 15th level, Pact of the Chain feature*
+*Prerequisite: 15th level, Pact of the Chain feature*
 
 You can cast *hold monster* at will—targeting a celestial, fiend, or
 elemental—without expending a spell slot or material components. You
@@ -346,7 +365,7 @@ distance of 120 feet.
 Dreadful Word
 ^^^^^^^^^^^^^
 
-    *Prerequisite: 7th level*
+*Prerequisite: 7th level*
 
 You can cast *confusion* once using a warlock spell slot. You can’t do
 so again until you finish a long rest.
@@ -359,9 +378,9 @@ You can cast *detect magic* at will, without expending a spell slot.
 Eldritch Spear
 ^^^^^^^^^^^^^^
 
-    *Prerequisite:* eldritch blast *cantrip*
+*Prerequisite:* eldritch blast *cantrip*
 
-    When you cast *eldritch blast*, its range is 300 feet.
+When you cast *eldritch blast*, its range is 300 feet.
 
 Eyes of the Rune Keeper
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -388,7 +407,7 @@ creature, and you are blinded and deafened to your own surroundings.
 Lifedrinker
 ^^^^^^^^^^^
 
-    *Prerequisite: 12th level, Pact of the Blade feature*
+*Prerequisite: 12th level, Pact of the Blade feature*
 
 When you hit a creature with your pact weapon, the creature takes extra
 necrotic damage equal to your Charisma modifier (minimum 1).
@@ -396,20 +415,20 @@ necrotic damage equal to your Charisma modifier (minimum 1).
 Mask of Many Faces
 ^^^^^^^^^^^^^^^^^^
 
-    You can cast *disguise self* at will, without expending a spell
-    slot.
+You can cast *disguise self* at will, without expending a spell
+slot.
 
 Master of Myriad Forms
 ^^^^^^^^^^^^^^^^^^^^^^
 
-    *Prerequisite: 15th level*
+*Prerequisite: 15th level*
 
 You can cast *alter self* at will, without expending a spell slot.
 
 Minions of Chaos
 ^^^^^^^^^^^^^^^^
 
-    *Prerequisite: 9th level*
+*Prerequisite: 9th level*
 
 You can cast *conjure elemental* once using a warlock spell slot. You
 can’t do so again until you finish a long rest.
@@ -417,7 +436,7 @@ can’t do so again until you finish a long rest.
 Mire the Mind
 ^^^^^^^^^^^^^
 
-    *Prerequisite: 5th level*
+*Prerequisite: 5th level*
 
 You can cast *slow* once using a warlock spell slot. You can’t do so
 again until you finish a long rest.
@@ -431,7 +450,7 @@ material components.
 One with Shadows
 ^^^^^^^^^^^^^^^^
 
-    *Prerequisite: 5th level*
+*Prerequisite: 5th level*
 
 When you are in an area of dim light or darkness, you can use your
 action to become invisible until you move or take an action or a
@@ -440,7 +459,7 @@ reaction.
 Otherworldly Leap
 ^^^^^^^^^^^^^^^^^
 
-    *Prerequisite: 9th level*
+*Prerequisite: 9th level*
 
 You can cast *jump* on yourself at will, without expending a spell slot
 or material components.
@@ -448,7 +467,7 @@ or material components.
 Repelling Blast
 ^^^^^^^^^^^^^^^
 
-    *Prerequisite:* eldritch blas\ *t cantrip*
+*Prerequisite:* eldritch blas\ *t cantrip*
 
 When you hit a creature with *eldritch blast*, you can push the creature
 up to 10 feet away from you in a straight line.
@@ -456,7 +475,7 @@ up to 10 feet away from you in a straight line.
 Sculptor of Flesh
 ^^^^^^^^^^^^^^^^^
 
-    *Prerequisite: 7th level*
+*Prerequisite: 7th level*
 
 You can cast *polymorph* once using a warlock spell slot. You can’t do
 so again until you finish a long rest.
@@ -464,7 +483,7 @@ so again until you finish a long rest.
 Sign of Ill Omen
 ^^^^^^^^^^^^^^^^
 
-    *Prerequisite: 5th level*
+*Prerequisite: 5th level*
 
 You can cast *bestow curse* once using a warlock spell slot. You can’t
 do so again until you finish a long rest.
@@ -478,7 +497,7 @@ again until you finish a long rest.
 Thirsting Blade
 ^^^^^^^^^^^^^^^
 
-    *Prerequisite: 5th level, Pact of the Blade feature*
+*Prerequisite: 5th level, Pact of the Blade feature*
 
 You can attack with your pact weapon twice, instead of once, whenever
 you take the Attack action on your turn.
@@ -486,14 +505,14 @@ you take the Attack action on your turn.
 Visions of Distant Realms
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    *Prerequisite: 15th level*
+*Prerequisite: 15th level*
 
 You can cast *arcane eye* at will, without expending a spell slot.
 
 Voice of the Chain Master
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    *Prerequisite: Pact of the Chain feature*
+*Prerequisite: Pact of the Chain feature*
 
 You can communicate telepathically with your familiar and perceive
 through your familiar’s senses as long as you are on the same plane of
@@ -504,22 +523,22 @@ if your familiar is normally incapable of speech.
 Whispers of the Grave
 ^^^^^^^^^^^^^^^^^^^^^
 
-    *Prerequisite: 9th level*
+*Prerequisite: 9th level*
 
-    You can cast *speak with dead* at will, without expending a spell
-    slot.
+You can cast *speak with dead* at will, without expending a spell
+slot.
 
 Witch Sight
 ^^^^^^^^^^^
 
-    *Prerequisite: 15th level*
+*Prerequisite: 15th level*
 
 You can see the true form of any shapechanger or creature concealed by
 illusion or transmutation magic while the creature is within 30 feet of
 you and within line of sight.
 
-| 
-| Otherworldly Patrons --------------------
+Otherworldly Patrons
+--------------------
 
 The beings that serve as patrons for warlocks are mighty inhabitants of
 other planes of existence—not gods, but almost godlike in their power.
@@ -533,7 +552,7 @@ only one warlock. Warlocks who serve the same patron might view each
 other as allies, siblings, or rivals.
 
 The Fiend
-~~~~~~~~~
+^^^^^^^^^
 
 You have made a pact with a fiend from the lower planes of existence, a
 being whose aims are evil, even if you strive against those aims. Such
@@ -554,17 +573,20 @@ list for you.
 Fiend Expanded Spells
 ^^^^^^^^^^^^^^^^^^^^^
 
-    **Spell Level Spells**
-
-    1st *burning hands, command*
-
-    2nd *blindness/deafness, scorching ray*
-
-    3rd *fireball, stinking cloud*
-
-    4th *fire shield, wall of fire*
-
-    5th *flame strike, hallow*
++-------+------------------------------------------+
+| Spell | Spells                                   |
+| Level |                                          |
++=======+==========================================+
+| 1st   | *burning hands, command*                 |
++-------+------------------------------------------+
+| 2nd   | *blindness/deafness, scorching ray*      |
++-------+------------------------------------------+
+| 3rd   | *fireball, stinking cloud*               |
++-------+------------------------------------------+
+| 4th   | *fire shield, wall of fire*              |
++-------+------------------------------------------+
+| 5th   | *flame strike, hallow*                   |
++-------+------------------------------------------+
 
 Dark One’s Blessing
 ^^^^^^^^^^^^^^^^^^^
@@ -607,9 +629,7 @@ previously occupied, or the nearest unoccupied space. If the target is
 not a fiend, it takes 10d10 psychic damage as it reels from its horrific
 experience.
 
-    Once you use this feature, you can’t use it again
-
-until you finish a long rest.
+Once you use this feature, you can’t use it again until you finish a long rest.
 
 Your Pact Boon
 ~~~~~~~~~~~~~~
@@ -617,20 +637,20 @@ Your Pact Boon
 Each Pact Boon option produces a special creature or an object that
 reflects your patron’s nature.
 
-***Pact of the Chain.*** Your familiar is more cunning than a
+**Pact of the Chain.** Your familiar is more cunning than a
 typical familiar. Its default form can be a reflection of your
 patron, with sprites and pseudodragons tied to the Archfey and imps
 and quasits tied to the Fiend. Because the Great Old One’s nature is
 inscrutable, any familiar form is suitable for it.
 
-***Pact of the Blade.*** If your patron is the Archfey, your weapon
+**Pact of the Blade.** If your patron is the Archfey, your weapon
 might be a slender blade wrapped in leafy vines. If you serve the
 Fiend, your weapon could be an axe made of black metal and adorned
 with decorative flames. If your patron is the Great Old One, your
 weapon might be an ancient-­‐looking spear, with a gemstone embedded
 in its head, carved to look like a terrible unblinking eye.
 
-***Pact of the Tome.*** Your Book of Shadows might be a fine,
+**Pact of the Tome.** Your Book of Shadows might be a fine,
 gilt-­‐edged tome with spells of enchantment and illusion, gifted to
 you by the lordly Archfey. It could be a weighty tome bound in demon
 hide studded with iron, holding spells of conjuration and a wealth

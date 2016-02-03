@@ -4,123 +4,110 @@ Monk
 Class Features
 --------------
 
-    As a monk, you gain the following class features.
+As a monk, you gain the following class features.
 
 Hit Points
 ^^^^^^^^^^
 
-    **Hit Dice:** 1d8 per monk level
+**Hit Dice:** 1d8 per monk level
 
-    **Hit Points at 1st Level:** 8 + your Constitution modifier
+**Hit Points at 1st Level:** 8 + your Constitution modifier
 
-    **Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution
-    modifier per monk level after 1st
+**Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution
+modifier per monk level after 1st
 
 Proficiencies
 ^^^^^^^^^^^^^
 
-    **Armor:** None
+**Armor:** None
 
-    **Weapons:** Simple weapons, shortswords
+**Weapons:** Simple weapons, shortswords
 
-    **Tools:** Choose one type of artisan’s tools or one musical
-    instrument
+**Tools:** Choose one type of artisan’s tools or one musical
+instrument
 
-    **Saving Throws:** Strength, Dexterity
+**Saving Throws:** Strength, Dexterity
 
-    **Skills:** Choose two from Acrobatics, Athletics,
+**Skills:** Choose two from Acrobatics, Athletics,
 
 History, Insight, Religion, and Stealth
 
 Equipment
 ^^^^^^^^^
 
-    You start with the following equipment, in addition to the equipment
-    granted by your background:
+You start with the following equipment, in addition to the equipment
+granted by your background:
 
 -  (*a*) a shortsword or (*b*) any simple weapon
-
 -  (*a*) a dungeoneer’s pack or (*b*) an explorer’s pack
-
 -  10 darts
 
 The Monk
 ^^^^^^^^
 
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > **Level**   | > **Proficiency Bonus**   | > **Martial Arts**   | > **Ki Points**   | > **Unarmored Movement**   | > **Features**                                         |
-+===============+===========================+======================+===================+============================+========================================================+
-| > 1st         | > +2                      | > 1d4                | —                 | —                          | > Unarmored Defense, Martial Arts                      |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 2nd         | > +2                      | > 1d4                | > 2               | > +10 ft.                  | > Ki, Unarmored Movement                               |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 3rd         | > +2                      | > 1d4                | > 3               | > +10 ft.                  | > Monastic Tradition, Deflect Missiles                 |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 4th         | > +2                      | > 1d4                | > 4               | > +10 ft.                  | > Ability Score Improvement, Slow Fall                 |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 5th         | > +3                      | > 1d6                | > 5               | > +10 ft.                  | > Extra Attack, Stunning Strike                        |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 6th         | > +3                      | > 1d6                | > 6               | > +15 ft.                  | > Ki-­‐Empowered Strikes, Monastic Tradition feature   |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 7th         | > +3                      | > 1d6                | > 7               | > +15 ft.                  | > Evasion, Stillness of Mind                           |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 8th         | > +3                      | > 1d6                | > 8               | > +15 ft.                  | > Ability Score Improvement                            |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 9th         | > +4                      | > 1d6                | > 9               | > +15 ft.                  | > Unarmored Movement improvement                       |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 10th        | > +4                      | > 1d6                | > 10              | > +20 ft.                  | > Purity of Body                                       |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 11th        | > +4                      | > 1d8                | > 11              | > +20 ft.                  | > Monastic Tradition feature                           |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 12th        | > +4                      | > 1d8                | > 12              | > +20 ft.                  | > Ability Score Improvement                            |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 13th        | > +5                      | > 1d8                | > 13              | > +20 ft.                  | > Tongue of the Sun and Moon                           |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 14th        | > +5                      | > 1d8                | > 14              | > +25 ft.                  | > Diamond Soul                                         |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 15th        | > +5                      | > 1d8                | > 15              | > +25 ft.                  | > Timeless Body                                        |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 16th        | > +5                      | > 1d8                | > 16              | > +25 ft.                  | > Ability Score Improvement                            |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 17th        | > +6                      | > 1d10               | > 17              | > +25 ft.                  | > Monastic Tradition feature                           |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 18th        | > +6                      | > 1d10               | > 18              | > +30 ft.                  | > Empty Body                                           |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 19th        | > +6                      | > 1d10               | > 19              | > +30 ft.                  | > Ability Score Improvement                            |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
-| > 20th        | > +6                      | > 1d10               | > 20              | > +30 ft.                  | > Perfect Self                                         |
-+---------------+---------------------------+----------------------+-------------------+----------------------------+--------------------------------------------------------+
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| Level | Proficiency Bonus | Martial Arts | Ki Points | Unarmored Movement | Features                                               |
++=======+===================+==============+===========+====================+========================================================+
+| 1st   | +2                | 1d4          | -         | -                  | Unarmored Defense, Martial Arts                        |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 2nd   | +2                | 1d4          | 2         | +10 ft.            | Ki, Unarmored Movement                                 |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 3rd   | +2                | 1d4          | 3         | +10 ft.            | Monastic Tradition, Deflect Missiles                   |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 4th   | +2                | 1d4          | 4         | +10 ft.            | Ability Score Improvement, Slow Fall                   |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 5th   | +3                | 1d6          | 5         | +10 ft.            | Extra Attack, Stunning Strike                          |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 6th   | +3                | 1d6          | 6         | +15 ft.            | Ki-Empowered Strikes, Monastic Tradition feature       |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 7th   | +3                | 1d6          | 7         | +15 ft.            | Evasion, Stillness of Mind                             |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 8th   | +3                | 1d6          | 8         | +15 ft.            | Ability Score Improvement                              |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 9th   | +4                | 1d6          | 9         | +15 ft.            | Unarmored Movement improvement                         |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 10th  | +4                | 1d6          | 10        | +20 ft.            | Purity of Body                                         |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 11th  | +4                | 1d8          | 11        | +20 ft.            | Monastic Tradition feature                             |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 12th  | +4                | 1d8          | 12        | +20 ft.            | Ability Score Improvement                              |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 13th  | +5                | 1d8          | 13        | +20 ft.            | Tongue of the Sun and Moon                             |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 14th  | +5                | 1d8          | 14        | +25 ft.            | Diamond Soul                                           |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 15th  | +5                | 1d8          | 15        | +25 ft.            | Timeless Body                                          |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 16th  | +5                | 1d8          | 16        | +25 ft.            | Ability Score Improvement                              |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 17th  | +6                | 1d10         | 17        | +25 ft.            | Monastic Tradition feature                             |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 18th  | +6                | 1d10         | 18        | +30 ft.            | Empty Body                                             |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 19th  | +6                | 1d10         | 19        | +30 ft.            | Ability Score Improvement                              |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
+| 20th  | +6                | 1d10         | 20        | +30 ft.            | Perfect Self                                           |
++-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
 
-    **Unarmored Defense**
+Unarmored Defense
+~~~~~~~~~~~~~~~~~
+Beginning at 1st level, while you are wearing no armor and not
+wielding a shield, your AC equals 10 + your Dexterity modifier +
+your Wisdom modifier.
 
-    Beginning at 1st level, while you are wearing no armor and not
-    wielding a shield, your AC equals 10 + your Dexterity modifier +
-    your Wisdom modifier.
+Martial Arts
+~~~~~~~~~~~~
+At 1st level, your practice of martial arts gives you mastery of
+combat styles that use unarmed strikes and monk weapons, which are
+shortswords and any simple melee weapons that don’t have the two-
+handed or heavy property.
 
-    **Martial Arts**
+You gain the following benefits while you are unarmed or wielding
+only monk weapons and you aren’t wearing armor or wielding a shield:
 
-    At 1st level, your practice of martial arts gives you mastery of
-    combat styles that use unarmed strikes and monk weapons, which are
-    shortswords and any simple melee weapons that don’t have the two-
-    handed or heavy property.
-
-    You gain the following benefits while you are unarmed or wielding
-    only monk weapons and you aren’t wearing armor or wielding a shield:
-
--  You can use Dexterity instead of Strength for the attack and damage >
-   rolls of your unarmed strikes and monk weapons.
-
--  You can roll a d4 in place of the normal damage of your unarmed >
-   strike or monk weapon. This die changes as you gain monk levels, > as
-   shown in the Martial Arts column of the Monk table.
-
--  When you use the Attack action with an unarmed strike or a monk >
-   weapon on your turn, you can
-
-    make one unarmed strike as a bonus action. For example, if you take
-    the Attack action and attack with a quarterstaff, you can also make
-    an unarmed strike as a bonus action, assuming you haven’t already
-    taken a bonus action this turn.
+-  You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.
+-  You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, ashown in the Martial Arts column of the Monk table.
+-  When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven’t already taken a bonus action this turn.
 
 Certain monasteries use specialized forms of the monk weapons. For
 example, you might use a club that is two lengths of wood connected by a
@@ -133,7 +120,7 @@ Ki
 
 Starting at 2nd level, your training allows you to harness the mystic
 energy of ki. Your access to this energy is represented by a number of
-ki points. Your monk level determines the number of points you
+ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.
 
 Unarmored Movement
 ~~~~~~~~~~~~~~~~~~
@@ -154,12 +141,8 @@ Elements, all detailed at the end of the class description. Your
 tradition grants you features at 3rd level and again at 6th, 11th, and
 17th level.
 
-Deflect Missiles
+Ki Features
 ~~~~~~~~~~~~~~~~
-
-have, as shown in the Ki Points column of the Monk
-
-table.
 
 You can spend these points to fuel various ki features. You start
 knowing three such features: Flurry of Blows, Patient Defense, and Step
@@ -175,7 +158,7 @@ Some of your ki features require your target to make a saving throw to
 resist the feature’s effects. The saving throw DC is calculated as
 follows:
 
-    **Ki save DC** = 8 + your proficiency bonus + your Wisdom modifier
+  **Ki save DC** = 8 + your proficiency bonus + your Wisdom modifier
 
 Flurry of Blows
 ^^^^^^^^^^^^^^^
@@ -194,6 +177,9 @@ Step of the Wind
 
 You can spend 1 ki point to take the Disengage or Dash action as a bonus
 action on your turn, and your jump distance is doubled for the turn.
+
+Deflect Missiles
+^^^^^^^^^^^^^^^^
 
 Starting at 3rd level, you can use your reaction to deflect or catch the
 missile when you are hit by a ranged weapon attack. When you do so, the
@@ -243,32 +229,7 @@ Ki-Empowered Strikes
 ~~~~~~~~~~~~~~~~~~~~
 
 Starting at 6th level, your unarmed strikes count as magical for the
-purpose of overcoming resistance
-
-Timeless Body
-~~~~~~~~~~~~~
-
-At 15th level, your ki sustains you so that you suffer none of the
-frailty of old age, and you can’t be aged magically. You can still die
-of old age, however. In addition, you no longer need food or water.
-
-Empty Body
-~~~~~~~~~~
-
-Beginning at 18th level, you can use your action to spend 4 ki points to
-become invisible for 1 minute. During that time, you also have
-resistance to all damage but force damage.
-
-Additionally, you can spend 8 ki points to cast the *astral projection*
-spell, without needing material components. When you do so, you can’t
-take any other creatures with you.
-
-Perfect Self
-~~~~~~~~~~~~
-
-and immunity to nonmagical attacks and damage.
-
-    At 20th level, when you roll for initiative and have
+purpose of overcoming resistance and immunity to nonmagical attacks and damage.
 
 Evasion
 ~~~~~~~
@@ -305,12 +266,30 @@ Diamond Soul
 Beginning at 14th level, your mastery of ki grants you proficiency in
 all saving throws.
 
-    Additionally, whenever you make a saving throw
-
-and fail, you can spend 1 ki point to reroll it and take the second
+Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second
 result.
 
-no ki points remaining, you regain 4 ki points.
+Timeless Body
+~~~~~~~~~~~~~
+
+At 15th level, your ki sustains you so that you suffer none of the
+frailty of old age, and you can’t be aged magically. You can still die
+of old age, however. In addition, you no longer need food or water.
+
+Empty Body
+~~~~~~~~~~
+
+Beginning at 18th level, you can use your action to spend 4 ki points to
+become invisible for 1 minute. During that time, you also have
+resistance to all damage but force damage.
+
+Additionally, you can spend 8 ki points to cast the *astral projection*
+spell, without needing material components. When you do so, you can’t
+take any other creatures with you.
+
+Perfect Self
+~~~~~~~~~~~~
+At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points.
 
 Monastic Traditions
 -------------------
@@ -339,10 +318,7 @@ with one of the attacks granted by your Flurry of Blows, you can impose
 one of the following effects on that target:
 
 -  It must succeed on a Dexterity saving throw or be knocked prone.
-
--  It must make a Strength saving throw. If it fails, you can push it >
-   up to 15 feet away from you.
-
+-  It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.
 -  It can’t take reactions until the end of your next turn.
 
 Wholeness of Body

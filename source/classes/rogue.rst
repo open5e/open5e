@@ -9,28 +9,28 @@ As a rogue, you have the following class features.
 Hit Points
 ^^^^^^^^^^
 
-    **Hit Dice:** 1d8 per rogue level
+**Hit Dice:** 1d8 per rogue level
 
-    **Hit Points at 1st Level:** 8 + your Constitution modifier
+**Hit Points at 1st Level:** 8 + your Constitution modifier
 
-    **Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution
-    modifier per rogue level after 1st
+**Hit Points at Higher Levels:** 1d8 (or 5) + your Constitution
+modifier per rogue level after 1st
 
 Proficiencies
 ^^^^^^^^^^^^^
 
-    **Armor:** Light armor
+**Armor:** Light armor
 
-    **Weapons:** Simple weapons, hand crossbows, longswords, rapiers,
-    shortswords
+**Weapons:** Simple weapons, hand crossbows, longswords, rapiers,
+shortswords
 
-    **Tools:** Thieves’ tools
+**Tools:** Thieves’ tools
 
-    **Saving Throws:** Dexterity, Intelligence
+**Saving Throws:** Dexterity, Intelligence
 
-    **Skills:** Choose four from Acrobatics, Athletics, Deception,
-    Insight, Intimidation, Investigation, Perception, Performance,
-    Persuasion, Sleight of Hand, and Stealth
+**Skills:** Choose four from Acrobatics, Athletics, Deception,
+Insight, Intimidation, Investigation, Perception, Performance,
+Persuasion, Sleight of Hand, and Stealth
 
 Equipment
 ^^^^^^^^^
@@ -39,13 +39,8 @@ You start with the following equipment, in addition to the equipment
 granted by your background:
 
 -  (*a*) a rapier or (*b*) a shortsword
-
 -  (*a*) a shortbow and quiver of 20 arrows or (*b*) a shortsword
-
--  (*a*) a burglar’s pack, (*b*) a dungeoneer’s pack, or
-
-(*c*) an explorer’s pack
-
+-  (*a*) a burglar’s pack, (*b*) a dungeoneer’s pack, or (*c*) an explorer’s pack
 -  (*a*) Leather armor, two daggers, and thieves’ tools
 
 The Rogue
@@ -225,9 +220,7 @@ Fast Hands
 ^^^^^^^^^^
 
 Starting at 3rd level, you can use the bonus action granted by your
-Cunning Action to make a Dexterity
-
-(Sleight of Hand) check, use your thieves’ tools to disarm a trap or
+Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to disarm a trap or
 open a lock, or take the Use an Object action.
 
 Second-Story Work
