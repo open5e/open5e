@@ -5,5 +5,5 @@ Characters
    :titlesonly:
    :glob:
    :maxdepth: 1
-   
+
    *

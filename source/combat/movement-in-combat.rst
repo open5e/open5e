@@ -66,8 +66,7 @@ Combatants often find themselves lying on the ground, either because
 they are knocked down or because they throw themselves down. In the
 game, they are prone, a condition described in appendix A.
 
-    You can **drop prone** without using any of your
-
+You can **drop prone** without using any of your
 speed. **Standing up** takes more effort; doing so costs an amount of
 movement equal to half your speed. For example, if your speed is 30
 feet, you must spend
@@ -75,59 +74,58 @@ feet, you must spend
 15 feet of movement to stand up. You can’t stand up if you don’t have
 enough movement left or if your speed is 0.
 
-    To move while prone, you must **crawl** or use
-
+To move while prone, you must **crawl** or use
 magic such as teleportation. Every foot of movement while crawling costs
 1 extra foot. Crawling 1 foot in difficult terrain, therefore, costs 3
 feet of movement.
 
-Interacting with Objects Around You
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    .. rubric:: Interacting with Objects Around You
+       :name: interacting-with-objects-around-you
 
-Here are a few examples of the sorts of thing you can do in tandem
-with your movement and action:
+    Here are a few examples of the sorts of thing you can do in tandem
+    with your movement and action:
 
--  draw or sheathe a sword
+    -  draw or sheathe a sword
 
--  open or close a door
+    -  open or close a door
 
--  withdraw a potion from your backpack
+    -  withdraw a potion from your backpack
 
--  pick up a dropped axe
+    -  pick up a dropped axe
 
--  take a bauble from a table
+    -  take a bauble from a table
 
--  remove a ring from your finger
+    -  remove a ring from your finger
 
--  stuff some food into your mouth
+    -  stuff some food into your mouth
 
--  plant a banner in the ground
+    -  plant a banner in the ground
 
--  fish a few coins from your belt pouch
+    -  fish a few coins from your belt pouch
 
--  drink all the ale in a flagon
+    -  drink all the ale in a flagon
 
--  throw a lever or a switch
+    -  throw a lever or a switch
 
--  pull a torch from a sconce
+    -  pull a torch from a sconce
 
--  take a book from a shelf you can reach
+    -  take a book from a shelf you can reach
 
--  extinguish a small flame
+    -  extinguish a small flame
 
--  don a mask
+    -  don a mask
 
--  pull the hood of your cloak up and over your head
+    -  pull the hood of your cloak up and over your head
 
--  put your ear to a door
+    -  put your ear to a door
 
--  kick a small stone
+    -  kick a small stone
 
--  turn a key in a lock
+    -  turn a key in a lock
 
--  tap the floor with a 10-­‐foot pole
+    -  tap the floor with a 10-­‐foot pole
 
--  hand an item to another character
+    -  hand an item to another character
 
 Moving Around Other Creatures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

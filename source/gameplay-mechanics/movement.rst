@@ -41,7 +41,7 @@ the party can move in a period of time and whether the pace has any
 effect. A fast pace makes characters less perceptive, while a slow pace
 makes it possible to sneak around and to search an area more carefully.
 
-***Forced March.*** The Travel Pace table assumes that characters travel
+**Forced March.** The Travel Pace table assumes that characters travel
 for 8 hours in day. They can push on beyond that limit, at the risk of
 exhaustion.
 
@@ -51,7 +51,7 @@ must make a Constitution saving throw at the end of the hour. The DC is
 10 + 1 for each hour past 8 hours. On a failed saving throw, a character
 suffers one level of exhaustion (see appendix A).
 
-***Mounts and Vehicles.*** For short spans of time (up to an hour), many
+**Mounts and Vehicles.** For short spans of time (up to an hour), many
 animals move much faster than humanoids. A mounted character can ride at
 a gallop for about an hour, covering twice the usual distance for a fast
 pace. If fresh mounts are available every 8 to 10 miles, characters can
@@ -73,15 +73,15 @@ Travel Pace
 
 **Distance Traveled per . . .**
 
-+---------------+-----------------+---------------+------------+-------------------------------------------------------+
-| **Pace** \|   | **Minute** \|   | **Hour** \|   | **Day**    | \| **Effect**                                         |
-+===============+=================+===============+============+=======================================================+
-| Fast \|       | 400 feet \|     | 4 miles \|    | 30 miles   | \| −5 penalty to passive Wisdom (Perception) scores   |
-+---------------+-----------------+---------------+------------+-------------------------------------------------------+
-| Normal \|     | 300 feet \|     | 3 miles \|    | 24 miles   | \| --                                                 |
-+---------------+-----------------+---------------+------------+-------------------------------------------------------+
-| Slow \|       | 200 feet \|     | 2 miles \|    | 18 miles   | \| Able to use stealth                                |
-+---------------+-----------------+---------------+------------+-------------------------------------------------------+
++---------------+-----------------+---------------+------------+----------------------------------------------------+
+| **Pace**      | **Minute**      | **Hour**      | **Day**    | **Effect**                                         |
++===============+=================+===============+============+====================================================+
+| Fast          | 400 feet        | 4 miles       | 30 miles   | −5 penalty to passive Wisdom (Perception) scores   |
++---------------+-----------------+---------------+------------+----------------------------------------------------+
+| Normal        | 300 feet        | 3 miles       | 24 miles   | --                                                 |
++---------------+-----------------+---------------+------------+----------------------------------------------------+
+| Slow          | 200 feet        | 2 miles       | 18 miles   | Able to use stealth                                |
++---------------+-----------------+---------------+------------+----------------------------------------------------+
 
 Difficult Terrain
 ^^^^^^^^^^^^^^^^^
@@ -118,7 +118,7 @@ Jumping
 
 Your Strength determines how far you can jump.
 
-***Long Jump.*** When you make a long jump, you cover a number of feet
+**Long Jump.** When you make a long jump, you cover a number of feet
 up to your Strength score if you move at least 10 feet on foot
 immediately before the jump. When you make a standing long jump, you can
 leap only half that distance. Either way, each foot you clear on the
@@ -134,7 +134,7 @@ When you land in difficult terrain, you must succeed on a DC 10
 Dexterity (Acrobatics) check to land on your feet. Otherwise, you land
 prone.
 
-***High Jump.*** When you make a high jump, you leap into the air a
+**High Jump.** When you make a high jump, you leap into the air a
 number of feet equal to 3 + your Strength modifier if you move at least
 10 feet on foot immediately before the jump. When you make a standing
 high jump, you can jump only half that distance. Either way, each foot

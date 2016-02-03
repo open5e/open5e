@@ -5,18 +5,16 @@ Whether you’re striking with a melee weapon, firing a weapon at range,
 or making an attack roll as part of a spell, an attack has a simple
 structure.
 
-1. **Choose a target.** Pick a target within your attack’s range: a >
-   creature, an object, or a location.
+1.  **Choose a target.** Pick a target within your attack’s range: a >
+    creature, an object, or a location.
 
-2. **Determine modifiers.** The GM determines
-
+2.  **Determine modifiers.** The GM determines
     whether the target has cover and whether you have advantage or
     disadvantage against the target. In addition, spells, special
     abilities, and other effects can apply penalties or bonuses to your
     attack roll.
 
-1. **Resolve the attack.** You make the attack roll. On a
-
+1.  **Resolve the attack.** You make the attack roll. On a
     hit, you roll damage, unless the particular attack has rules that
     specify otherwise. Some attacks cause special effects in addition to
     or instead of damage.
@@ -44,7 +42,7 @@ the roll are an ability modifier and the character’s proficiency bonus.
 When a monster makes an attack roll, it uses whatever modifier is
 provided in its stat block.
 
-***Ability Modifier.*** The ability modifier used for a melee weapon
+**Ability Modifier.** The ability modifier used for a melee weapon
 attack is Strength, and the ability modifier used for a ranged weapon
 attack is Dexterity. Weapons that have the finesse or thrown property
 break this rule.
@@ -52,7 +50,7 @@ break this rule.
 Some spells also require an attack roll. The ability modifier used for a
 spell attack depends on the spellcasting ability of the spellcaster.
 
-***Proficiency Bonus.*** You add your proficiency bonus to your attack
+**Proficiency Bonus.** You add your proficiency bonus to your attack
 roll when you attack using a weapon with which you have proficiency, as
 well as when you attack with a spell.
 
@@ -126,8 +124,7 @@ as a sword, a warhammer, or an axe. A typical monster makes a melee
 attack when it strikes with its claws, horns, teeth, tentacles, or other
 body part. A few spells also involve making a melee attack.
 
-    Most creatures have a 5-­foot **reach** and can thus
-
+Most creatures have a 5-­foot **reach** and can thus
 attack targets within 5 feet of them when making a melee attack. Certain
 creatures (typically those larger than Medium) have melee attacks with a
 greater reach than 5 feet, as noted in their descriptions.
@@ -135,9 +132,7 @@ greater reach than 5 feet, as noted in their descriptions.
 Instead of using a weapon to make a melee weapon attack, you can use an
 **unarmed strike**: a punch, kick, head-­butt, or similar forceful blow
 (none of which count as weapons). On a hit, an unarmed strike deals
-bludgeoning damage equal to 1
-
--  your Strength modifier. You are proficient with your unarmed strikes.
+bludgeoning damage equal to 1 -  your Strength modifier. You are proficient with your unarmed strikes.
 
 Opportunity Attacks
 ^^^^^^^^^^^^^^^^^^^
@@ -188,18 +183,18 @@ condition (see appendix A). The condition specifies the things that end
 it, and you can release the target whenever you like (no action
 required).
 
-    ***Escaping a Grapple.*** A grappled creature can use
-
+**Escaping a Grapple.** A grappled creature can use
 its action to escape. To do so, it must succeed on a Strength
 (Athletics) or Dexterity (Acrobatics) check contested by your Strength
 (Athletics) check.
 
-***Moving a Grappled Creature.*** When you move, you can drag or carry
+**Moving a Grappled Creature.** When you move, you can drag or carry
 the grappled creature with you, but your speed is halved, unless the
 creature is two or more sizes smaller than you.
 
-Contests in Combat
-''''''''''''''''''
+
+    .. rubric:: Contests in Combat
+       :name: contests-in-combat
 
     Battle often involves pitting your prowess against that of your foe.
     Such a challenge is represented by a contest. This section includes
