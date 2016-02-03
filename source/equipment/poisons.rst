@@ -32,39 +32,40 @@ poison is exposed to its effects.
 Poisons
 ^^^^^^^
 
-+-------------+----------------+-------------------------+
-| **Item**    | \| **Type**    | \| **Price per Dose**   |
-+=============+================+=========================+
-| Assassin’   | s blood \| I   | ngested \| 150 gp       |
-+-------------+----------------+-------------------------+
-| Burnt oth   | ur fumes \|    | Inhaled \| 500 gp       |
-+-------------+----------------+-------------------------+
-| Crawler m   | ucus \| Cont   | act\| 200 gp            |
-+-------------+----------------+-------------------------+
-| Drow pois   | on \| Injury   | \| 200 gp               |
-+-------------+----------------+-------------------------+
-| Essence o   | f ether \| I   | nhaled\| 300 gp         |
-+-------------+----------------+-------------------------+
-| Malice \|   | Inhaled \| 2   | 50 gp                   |
-+-------------+----------------+-------------------------+
-| Midnight    | tears \| Ing   | ested\| 1,500 gp        |
-+-------------+----------------+-------------------------+
-| Oil of ta   | ggit \| Cont   | act \| 400 gp           |
-+-------------+----------------+-------------------------+
-| Pale tinc   | ture \| Ing    | ested \| 250 gp         |
-+-------------+----------------+-------------------------+
-| Purple wo   | rm poison      | \| Injury \| 2,000 gp   |
-+-------------+----------------+-------------------------+
-| Serpent v   | enom \| Inj    | ury \| 200 gp           |
-+-------------+----------------+-------------------------+
-| Torpor \|   | Ingested       | \| 600 gp               |
-+-------------+----------------+-------------------------+
-| Truth ser   | um \| Inges    | ted \| 150 gp           |
-+-------------+----------------+-------------------------+
-| Wyvern po   | ison \| Inj    | ury \| 1,200 gp         |
-+-------------+----------------+-------------------------+
++----------------------+----------------+-------------------------+
+|   Item               |   Type         |   Price per Dose        |
++======================+================+=========================+
+| Assassin’s blood     | Injury         |  150 gp                 |
++----------------------+----------------+-------------------------+
+| Burnt othur fumes    | Inhaled        |  500 gp                 |
++----------------------+----------------+-------------------------+
+| Crawler mucus        | Contact        |  200 gp                 |
++----------------------+----------------+-------------------------+
+| Drow poison          | Injury         |  200 gp                 |
++----------------------+----------------+-------------------------+
+| Essence of ether     |  Inhaled       |  300 gp                 |
++----------------------+----------------+-------------------------+
+| Malice               | Inhaled        |  250 gp                 |
++----------------------+----------------+-------------------------+
+| Midnight  tears      | Ingested       |  1,500 gp               |
++----------------------+----------------+-------------------------+
+| Oil of taggit        | Contact        |  400 gp                 |
++----------------------+----------------+-------------------------+
+| Pale tincture        | Ingested       |  250 gp                 |
++----------------------+----------------+-------------------------+
+| Purple worm poison   | Injury         |  2,000 gp               |
++----------------------+----------------+-------------------------+
+| Serpent venom        | Injury         |  200 gp                 |
++----------------------+----------------+-------------------------+
+| Torpor               | Ingested       |  600 gp                 |
++----------------------+----------------+-------------------------+
+| Truth serum          | Ingested       |  150 gp                 |
++----------------------+----------------+-------------------------+
+| Wyvern poison        | Injury         |  1,200 gp               |
++----------------------+----------------+-------------------------+
 
-**Sample Poisons**
+Sample Poisons
+~~~~~~~~~~~~~~
 
 Each type of poison has its own debilitating effects.
 
@@ -95,7 +96,6 @@ creature wakes up if it takes damage or if another creature takes an
 action to shake it awake.
 
 ***Essence of Ether (Inhaled).*** A creature subjected
-
 to this poison must succeed on a DC 15 Constitution saving throw or
 become poisoned for 8 hours. The poisoned creature is unconscious. The
 creature wakes up if it takes damage or if another creature takes an
@@ -125,7 +125,6 @@ any means. After seven successful saving throws, the effect ends and the
 creature can heal normally.
 
 ***Purple Worm Poison (Injury).*** This poison must
-
 be harvested from a dead or incapacitated purple worm. A creature
 subjected to this poison must make a DC 19 Constitution saving throw,
 taking 42 (12d6) poison damage on a failed save, or half as much damage
