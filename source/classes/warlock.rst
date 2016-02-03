@@ -552,7 +552,7 @@ only one warlock. Warlocks who serve the same patron might view each
 other as allies, siblings, or rivals.
 
 The Fiend
-~~~~~~~~~
+^^^^^^^^^
 
 You have made a pact with a fiend from the lower planes of existence, a
 being whose aims are evil, even if you strive against those aims. Such
