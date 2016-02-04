@@ -25,10 +25,13 @@ Medium humanoid (any race), any alignment
 
 **Spellcasting**: The druid is a 4th-level spellcaster. Its spellcasting
 ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It
-has the following druid spells prepared: **Cantrips (at will)**:
-*druidcraft*, *produce flame*, *shillelagh* **1st level (4 slots)**:
-*entangle*, *longstrider*, *speak with animals*, *thunderwave* **2nd
-level (3 slots)**: *animal messenger*, *barkskin*
+has the following druid spells prepared:
+
+    **Cantrips (at will)**: *druidcraft*, *produce flame*, *shillelagh* 
+
+    **1st level (4 slots)**: *entangle*, *longstrider*, *speak with animals*, *thunderwave* 
+
+    **2nd level (3 slots)**: *animal messenger*, *barkskin*
 
 Actions
 
