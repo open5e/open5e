@@ -11,6 +11,8 @@ branches:
 # Install requirements
 install: pip install -r requirements.txt
 
+# NB: IF YOU CHANGE ANY BUILD OPTIONS, MAKE SURE YOU ALSO CHANGE THEM IN THE MAKEFILE!
+#
 #                   build dir              config dir  nitpick mode on
 #                      v                         v      v
 script: sphinx-build -b html -d build/doctrees -c . -W -n source build/html

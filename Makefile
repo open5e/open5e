@@ -1,6 +1,9 @@
 # Makefile for Sphinx documentation
 #
 
+# NB: IF YOU CHANGE THE BUILD OPTIONS IN THIS FILE,
+# MAKE SURE YOU ALSO CHANGE THEM IN .travis.yml!
+
 # You can set these variables from the command line.
 SPHINXOPTS    = -c . -j 4
 SPHINXBUILD   = sphinx-build
