@@ -45,5 +45,3 @@ can escape from the corpse by using 20 feet of movement, exiting prone.
 creature. *Hit*: 19 (3d6 + 9) piercing damage, and the target must make
 a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a
 failed save, or half as much damage on a successful one.
-
---------------

@@ -62,5 +62,3 @@ damage. The target's hit point maximum is reduced by an amount equal to
 the necrotic damage taken, and the vampire regains hit points equal to
 that amount. The reduction lasts until the target finishes a long rest.
 The target dies if this effect reduces its hit point maximum to 0.
-
---------------

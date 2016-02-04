@@ -34,5 +34,3 @@ Actions
 **Ethereal Stride**: The nightmare and up to three willing creatures
 within 5 feet of it magically enter the Ethereal Plane from the Material
 Plane, or vice versa.
-
---------------

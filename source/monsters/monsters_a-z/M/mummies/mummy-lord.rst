@@ -93,5 +93,3 @@ sand, moves up to 60 feet, and reverts to its normal form. While in
 whirlwind form, the mummy lord is immune to all damage, and it can't be
 grappled, petrified, knocked prone, restrained, or stunned. Equipment
 worn or carried by the mummy lord remain in its possession.
-
---------------
