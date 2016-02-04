@@ -11,8 +11,8 @@ Medium construct, unaligned
 
 **Speed** 25 ft.
 
-  STR       DEX       CON       INT      WIS      CHA
-  --------- --------- --------- -------- -------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|--------|--------
   | 14 (+2)   | 11 (+0)   | 13 (+1)   | 1 (-5)   | 3 (-4)   | 1 (-5)
 
 **Damage Immunities** poison, psychic

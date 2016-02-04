@@ -11,8 +11,8 @@ Small monstrosity, unaligned
 
 **Speed** 20 ft., fly 40 ft.
 
-  STR      DEX       CON       INT      WIS       CHA
-  -------- --------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  --------|---------|---------|--------|---------|--------
   | 6 (-2)   | 12 (+1)   | 12 (+1)   | 2 (-4)   | 13 (+1)   | 5 (-3)
 
 **Senses** darkvision 60 ft., passive Perception 11

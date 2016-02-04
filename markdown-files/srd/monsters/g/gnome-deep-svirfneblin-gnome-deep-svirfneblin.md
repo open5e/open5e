@@ -12,7 +12,7 @@ Small humanoid (gnome), neutral good
 **Speed** 20 ft.
 
   STR         DEX         CON         INT         WIS         CHA
-  --------- --------- --------- --------- --------- --------
+  ---------|---------|---------|---------|---------|--------
   | 15 (+2)   | 14 (+2)   | 14 (+2)   | 12 (+1)   | 10 (+0)   | 9 (-1)
 
 **Skills** Investigation +3, Perception +2, Stealth +4;

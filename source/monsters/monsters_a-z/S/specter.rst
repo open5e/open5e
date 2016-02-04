@@ -1,6 +1,5 @@
-Specter  
--------------------------------------------------------------
-
+Specter
+-------
 
 Medium undead, chaotic evil
 
@@ -26,7 +25,7 @@ petrified, poisoned, prone, restrained, unconscious
 
 **Senses** darkvision 60 ft., passive Perception 10
 
-**Languages** understands all languages it knew in life but can’t speak
+**Languages** understands all languages it knew in life but can't speak
 
 **Challenge** 1 (200 XP)
 
@@ -37,9 +36,8 @@ While in sunlight, the specter has disadvantage on attack rolls, as well
 as on Wisdom (Perception) checks that rely on sight.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Life Drain**: Melee Spell Attack: +4 to hit, reach 5 ft., one
+**Life Drain**: Melee Spell Attack: +4 to hit, reach 5 ft., one
 creature. *Hit*: 10 (3d6) necrotic damage. The target must succeed on a
 DC 10 Constitution saving throw or its hit point maximum is reduced by
 an amount equal to the damage taken. This reduction lasts until the

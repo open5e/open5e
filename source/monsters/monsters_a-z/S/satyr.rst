@@ -1,6 +1,5 @@
-Satyr  
--------------------------------------------------------------
-
+Satyr
+-----
 
 Medium fey, chaotic neutral
 
@@ -28,9 +27,8 @@ Medium fey, chaotic neutral
 spells and other magical effects.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Ram**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
+**Ram**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
 *Hit*: 6 (2d4 + 1) bludgeoning damage. **Shortsword**: *Melee Weapon
 Attack*: +5 to hit, reach 5 ft., one target. *Hit*: 6 (1d6 + 3) piercing
 damage. **Shortbow**: *Ranged Weapon Attack*: +5 to hit, range 80/320

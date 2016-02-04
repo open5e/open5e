@@ -1,6 +1,5 @@
-Ogre Zombie  
--------------------------------------------------------------
-
+Ogre Zombie
+-----------
 
 Large undead, neutral evil
 
@@ -10,9 +9,11 @@ Large undead, neutral evil
 
 **Speed** 30 ft.
 
-STR\| DEX\| CON\| INT\| WIS\| CHA ---------\| --------\| ---------\|
---------\| -------- --------\| 19 (+4) \| 6 (-2) \| 18 (+4) \| 3 (-4) \|
-6 (-2) \| 5 (-3)
++-----------+----------+-----------+----------+----------+----------+
+| STR       | DEX      | CON       | INT      | WIS      | CHA      |
++===========+==========+===========+==========+==========+==========+
+| 19 (+4)   | 6 (-2)   | 18 (+4)   | 3 (-4)   | 6 (-2)   | 5 (-3)   |
++-----------+----------+-----------+----------+----------+----------+
 
 **Saving Throws** Wis +0
 
@@ -22,7 +23,7 @@ STR\| DEX\| CON\| INT\| WIS\| CHA ---------\| --------\| ---------\|
 
 **Senses** darkvision 60 ft., passive Perception 8
 
-**Languages** understands Common and Giant but can’t speak
+**Languages** understands Common and Giant but can't speak
 
 **Challenge** 2 (450 XP)
 
@@ -32,7 +33,6 @@ unless the damage is radiant or from a critical hit. On a success, the
 zombie drops to 1 hit point instead.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Morningstar**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one
+**Morningstar**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one
 target. *Hit*: 13 (2d8 + 4) bludgeoning damage.

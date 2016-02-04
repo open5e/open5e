@@ -11,8 +11,8 @@ Medium aberration, neutral
 
 **Speed** 10 ft., swim 10 ft.
 
-  STR       DEX      CON       INT      WIS       CHA
-  --------- -------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|--------|---------|--------|---------|--------
   | 10 (+0)   | 8 (-1)   | 16 (+3)   | 3 (-4)   | 10 (+0)   | 6 (-2)
 
 **Condition Immunities** prone

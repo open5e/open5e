@@ -1,6 +1,5 @@
-Roc  
--------------------------------------------------------------
-
+Roc
+---
 
 Gargantuan monstrosity, unaligned
 
@@ -22,7 +21,7 @@ Gargantuan monstrosity, unaligned
 
 **Senses** passive Perception 14
 
-**Languages** —
+**Languages** --
 
 **Challenge** 11 (7,200 XP)
 
@@ -30,12 +29,11 @@ Gargantuan monstrosity, unaligned
 rely on sight.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Multiattack**: The roc makes two attacks: one with its beak and one
+**Multiattack**: The roc makes two attacks: one with its beak and one
 with its talons. **Beak**: *Melee Weapon Attack*: +13 to hit, reach 10
 ft., one target. *Hit*: 27 (4d8 + 9) piercing damage. **Talons**: *Melee
 Weapon Attack*: +13 to hit, reach 5 ft., one target. *Hit*: 23 (4d6 + 9)
 slashing damage, and the target is grappled (escape DC 19). Until this
-grapple ends, the target is restrained, and the roc can’t use its talons
+grapple ends, the target is restrained, and the roc can't use its talons
 on another target.

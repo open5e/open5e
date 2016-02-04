@@ -11,8 +11,8 @@ Large aberration, chaotic evil
 
 **Speed** 30 ft., swim 30 ft.
 
-  STR       DEX       CON       INT      WIS       CHA
-  --------- --------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|---------|--------
   | 19 (+4)   | 10 (+0)   | 16 (+3)   | 5 (-3)   | 11 (+0)   | 5 (-3)
 
 **Skills** Perception +4

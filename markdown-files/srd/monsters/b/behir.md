@@ -11,8 +11,8 @@ Huge monstrosity, neutral evil
 
 **Speed** 50 ft., climb 40 ft.
 
-  STR       DEX       CON       INT      WIS       CHA
-  --------- --------- --------- -------- --------- ---------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|---------|---------
   | 23 (+6)   | 16 (+3)   | 18 (+4)   | 7 (-2)   | 14 (+2)   | 12 (+1)
 
 **Skills** Perception +6, Stealth +7

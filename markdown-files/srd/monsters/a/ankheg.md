@@ -11,8 +11,8 @@ Large monstrosity, unaligned
 
 **Speed** 30 ft., burrow 10 ft.
 
-  STR       DEX       CON       INT      WIS       CHA
-  --------- --------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|---------|--------
   | 17 (+3)   | 11 (+0)   | 13 (+1)   | 1 (-5)   | 13 (+1)   | 6 (-2)
 
 **Senses** darkvision 60 ft., tremorsense 60 ft., passive Perception 11

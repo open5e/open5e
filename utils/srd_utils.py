@@ -19,8 +19,7 @@ def split_monsters(lines, target):
       monsterfilename += '.md'
       current_file = open(current_dir + urllib.quote_plus(monsterfilename), 'w+')
       current_file.write(
-'''-------------------------
-Title: {}
+'''{}
 -------------------------
 
 '''.format(monstertitle))

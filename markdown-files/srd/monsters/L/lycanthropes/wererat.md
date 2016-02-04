@@ -12,7 +12,7 @@ Medium humanoid (human, shapechanger), lawful evil
 **Speed** 30 ft.
 
   STR|         DEX|         CON|         INT|         WIS|        CHA|
-  ---------| ---------| --------- ---------| ---------| --------|
+  ---------| ---------| ---------|---------| ---------| --------|
    10 (+0)   | 15 (+2)   | 12 (+1)   | 11 (+0)   | 10 (+0)   | 8 (-1)
 
 **Skills** Perception +2, Stealth +4

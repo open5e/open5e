@@ -1,6 +1,5 @@
-Androsphinx  
--------------------------------------------------------------
-
+Androsphinx
+-----------
 
 Large monstrosity, lawful neutral
 
@@ -31,26 +30,25 @@ nonmagical attacks
 
 **Challenge** 17 (18,000 XP)
 
-| **Inscrutable**: The sphinx is immune to any effect that would sense
-  its emotions or read its thoughts, as well as any divination spell
-  that it refuses. Wisdom (Insight) checks made to ascertain the
-  sphinx’s intentions or sincerity have disadvantage. **Magic Weapons**:
-  The sphinx’s weapon attacks are magical. **Spellcasting**: The sphinx
-  is a 12th-level spellcaster. Its spellcasting ability is Wisdom (spell
-  save DC 18, +10 to hit with spell attacks). It requires no material
-  components to cast its spells. The sphinx has the following cleric
-  spells prepared: **Cantrips (at will)**: *sacred flame*, *spare the
-  dying*, *thaumaturgy* **1st level (4 slots)**: *command*, *detect evil
-  and good*, *detect magic* **2nd level (3 slots)**: *lesser
-  restoration*, *zone of truth* **3rd level (3 slots):** *dispel magic*,
-  *tongues* **4th level (3 slots):** *banishment*, *freedom of movement*
-| **5th level (2 slots):** *flame strike*, *greater restoration*
-| **6th level (1 slot):** *heroes’ feast*
+**Inscrutable**: The sphinx is immune to any effect that would sense its
+emotions or read its thoughts, as well as any divination spell that it
+refuses. Wisdom (Insight) checks made to ascertain the sphinx's
+intentions or sincerity have disadvantage. **Magic Weapons**: The
+sphinx's weapon attacks are magical. **Spellcasting**: The sphinx is a
+12th-level spellcaster. Its spellcasting ability is Wisdom (spell save
+DC 18, +10 to hit with spell attacks). It requires no material
+components to cast its spells. The sphinx has the following cleric
+spells prepared: **Cantrips (at will)**: *sacred flame*, *spare the
+dying*, *thaumaturgy* **1st level (4 slots)**: *command*, *detect evil
+and good*, *detect magic* **2nd level (3 slots)**: *lesser restoration*,
+*zone of truth* **3rd level (3 slots):** *dispel magic*, *tongues* **4th
+level (3 slots):** *banishment*, *freedom of movement* **5th level (2
+slots):** *flame strike*, *greater restoration* **6th level (1 slot):**
+*heroes' feast*
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Multiattack**: The sphinx makes two claw attacks. **Claw**: *Melee
+**Multiattack**: The sphinx makes two claw attacks. **Claw**: *Melee
 Weapon Attack*: +12 to hit, reach 5 ft., one target. *Hit*: 17 (2d10 +
 6) slashing damage. **Roar (3/Day)**: The sphinx emits a magical roar.
 Each time it roars before finishing a long rest, the roar is louder and
@@ -65,14 +63,14 @@ paralyzed and can repeat the saving throw at the end of each of its
 turns, ending the effect on itself on a success. **Third Roar**: Each
 creature makes a DC 18 Constitution saving throw. On a failed save, a
 creature takes 44 (8d10) thunder damage and is knocked prone. On a
-successful save, the creature takes half as much damage and isn’t
+successful save, the creature takes half as much damage and isn't
 knocked prone.
 
 Legendary Actions
 
 The sphinx can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only
-at the end of another creature’s turn. The sphinx regains spent
+at the end of another creature's turn. The sphinx regains spent
 legendary actions at the start of its turn.
 
 **Claw Attack**: The sphinx makes one claw attack. **Teleport (Costs 2

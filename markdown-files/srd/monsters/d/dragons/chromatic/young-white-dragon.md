@@ -11,8 +11,8 @@ Large dragon, chaotic evil
 
 **Speed** 40 ft., burrow 20 ft., fly 80 ft., swim 40 ft.
 
-  STR       DEX       CON       INT      WIS       CHA
-  --------- --------- --------- -------- --------- ---------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|---------|---------
   | 18 (+4)   | 10 (+0)   | 18 (+4)   | 6 (-2)   | 11 (+0)   | 12 (+1)
 
 **Saving Throws** Dex +3, Con +7, Wis +3, Cha +4

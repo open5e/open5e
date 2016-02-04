@@ -1,6 +1,5 @@
-Adherer  
--------------------------------------------------------------
-
+Adherer
+-------
 
 **Source**: 5eF (Necromancer Games)
 
@@ -12,11 +11,11 @@ Medium aberration, lawful evil
 
 **Speed** 30 ft.
 
-+--------------+-------------+-------------+-------------+-----------+---------------------+
-| STR          | DEX         | CON         | INT         | WIS       | CHA                 |
-+==============+=============+=============+=============+===========+=====================+
-| \| 26 (+8)   | \| 14 (+2   | ) \| 12 (   | +1) \| 14   | (+2) \|   | 4 (-3) \| 11 (-1)   |
-+--------------+-------------+-------------+-------------+-----------+---------------------+
++-----------+-----------+-----------+-----------+----------+-----------+
+| STR       | DEX       | CON       | INT       | WIS      | CHA       |
++===========+===========+===========+===========+==========+===========+
+| 26 (+8)   | 14 (+2)   | 12 (+1)   | 14 (+2)   | 4 (-3)   | 11 (-1)   |
++-----------+-----------+-----------+-----------+----------+-----------+
 
 **Saving Throws**
 
@@ -24,7 +23,7 @@ Medium aberration, lawful evil
 
 **Senses** Darkvision 60 ft.
 
-**Languages** Common (understands but can’t speak)
+**Languages** Common (understands but can't speak)
 
 **Challenge** 2 (450 XP)
 
@@ -37,14 +36,14 @@ is a powerful adhesive. Any creatures or items that touch it, except for
 items made of stone, become stuck to the adherer. The adherer
 automatically grapples and restrains any creature it hits with its slam
 attack. It can grapple up to two opponents at one time. Grappling does
-not reduce the adherer’s number of attacks. Creatures grappled this way
+not reduce the adherer's number of attacks. Creatures grappled this way
 can break free with a successful DC 15 Str check. A weapon that strikes
 an adherer is stuck to the creature unless the wielder succeeds on a DC
 12 Dex saving throw. Pulling a stuck weapon free requires a successful
 DC 12 Str check. Boiling water thrown on the adherer deals 1d6 points of
 damage to it and to any creature grappled by the adherer. It also grants
 tactical advantage on Dex saving throws and Str checks to free a weapon
-or to escape from the adherer’s grapple; this bonus lasts for one round.
+or to escape from the adherer's grapple; this bonus lasts for one round.
 Inflicting fire damage on the adherer also weakens the adhesive,
 granting tactical advantage on Dex saving throws and Str checks for 1d3
 rounds. Universal solvent dissolves the adhesive instantly. An adherer
@@ -52,10 +51,9 @@ can dissolve its adhesive at will, and the substance breaks down
 naturally one hour after the creature dies.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Melee Attack—Slam**: +4 to hit (reach 5 ft.; one creature). *Hit*: 1d8
-+ 2 bludgeoning damage, and the target creature is grappled and
+**Melee Attack--Slam**: +4 to hit (reach 5 ft.; one creature). *Hit*:
+1d8 + 2 bludgeoning damage, and the target creature is grappled and
 restrained (see Adhesive).
 
 **Environment**: Temperate forests and subterranean
@@ -64,7 +62,7 @@ restrained (see Adhesive).
 
 This creature appears to be a withered humanoid wrapped in decaying
 bandages. Upon close inspection, what appeared to be bandages are
-actually loose folds of the creature’s rotting skin. A sour odor fills
+actually loose folds of the creature's rotting skin. A sour odor fills
 the air around the creature.
 
 Adherers are strange creatures found in forests and extensive cavern

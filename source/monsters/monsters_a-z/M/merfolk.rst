@@ -1,6 +1,5 @@
-Merfolk  
--------------------------------------------------------------
-
+Merfolk
+-------
 
 Medium humanoid (merfolk), neutral
 
@@ -27,8 +26,7 @@ Medium humanoid (merfolk), neutral
 **Amphibious**: The merfolk can breathe air and water.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Spear**: *Melee or Ranged Weapon Attack*: +2 to hit, reach 5 ft. or
+**Spear**: *Melee or Ranged Weapon Attack*: +2 to hit, reach 5 ft. or
 range 20/60 ft., one target. *Hit*: 3 (1d6) piercing damage, or 4 (1d8)
 piercing damage if used with two hands to make a melee attack.

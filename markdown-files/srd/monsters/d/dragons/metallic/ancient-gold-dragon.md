@@ -11,8 +11,8 @@ Gargantuan dragon, lawful good
 
 **Speed** 40 ft., fly 80 ft., swim 40 ft.
 
-  STR        DEX       CON       INT       WIS       CHA
-  ------------ ----------- ----------- ----------- ----------- -----------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ------------|-----------|-----------|-----------|-----------|-----------
   30 (+10)   | 14 (+2)   | 29 (+9)   | 18 (+4)   | 17 (+3)   | 28 (+9)
 
 **Saving Throws** Dex +9, Con +16, Wis +10, Cha +16

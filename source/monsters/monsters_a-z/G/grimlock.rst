@@ -1,6 +1,5 @@
-Grimlock  
--------------------------------------------------------------
-
+Grimlock
+--------
 
 Medium humanoid (grimlock), neutral evil
 
@@ -10,11 +9,11 @@ Medium humanoid (grimlock), neutral evil
 
 **Speed** 30 ft.
 
-+--------------+-------------+-------------+------------+-----------+--------------------+
-| STR          | DEX         | CON         | INT        | WIS       | CHA                |
-+==============+=============+=============+============+===========+====================+
-| \| 16 (+3)   | \| 12 (+1   | ) \| 12 (   | +1) \| 9   | (-1) \|   | 8 (-1) \| 6 (-2)   |
-+--------------+-------------+-------------+------------+-----------+--------------------+
++-----------+-----------+-----------+----------+----------+----------+
+| STR       | DEX       | CON       | INT      | WIS      | CHA      |
++===========+===========+===========+==========+==========+==========+
+| 16 (+3)   | 12 (+1)   | 12 (+1)   | 9 (-1)   | 8 (-1)   | 6 (-2)   |
++-----------+-----------+-----------+----------+----------+----------+
 
 **Skills** Athletics +5, Perception +3, Stealth +3
 
@@ -27,15 +26,14 @@ radius), passive Perception 13
 
 **Challenge** 1/4 (50 XP)
 
-**Blind Senses**: The grimlock can’t use its blindsight while deafened
+**Blind Senses**: The grimlock can't use its blindsight while deafened
 and unable to smell. **Keen Hearing and Smell**: The grimlock has
 advantage on Wisdom (Perception) checks that rely on hearing or smell.
 **Stone Camouflage**: The grimlock has advantage on Dexterity (Stealth)
 checks made to hide in rocky terrain.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Spiked Bone Club**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one
+**Spiked Bone Club**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one
 target. *Hit*: 5 (1d4 + 3) bludgeoning damage plus 2 (1d4) piercing
 damage.

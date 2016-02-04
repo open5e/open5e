@@ -11,8 +11,8 @@ Tiny fiend (devil, shapechanger), lawful evil
 
 **Speed** 20 ft., fly 40 ft.
 
-  STR      DEX       CON       INT       WIS       CHA
-  -------- --------- --------- --------- --------- ---------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  --------|---------|---------|---------|---------|---------
   | 6 (-2)   | 17 (+3)   | 13 (+1)   | 11 (+0)   | 12 (+1)   | 14 (+2)
 
 **Skills** Deception +4, Insight +3, Persuasion +4, Stealth +5

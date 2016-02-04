@@ -18,7 +18,7 @@ and darkvision with a radius of 60 feet.
 damage based on its color.
 
   | Color                | Damage Resistance
-  --------------------- -------------------
+  ---------------------|-------------------
   | Black or copper      | Acid
   | Blue or bronze       | Lightning
   | Brass, gold, or red  | Fire
@@ -35,7 +35,7 @@ its dragon half. The half- dragon’s size determines how this action
 functions.
 
   | Size              | Breath Weapon       | Optional Prerequisite
-  ------------------ -------------------- -----------------------
+  ------------------|--------------------|-----------------------
   | Large or smaller  | As a wyrmling       | Challenge 2 or higher
   | Huge              | As a young dragon   | Challenge 7 or higher
   | Gargantuan        | As an adult dragon  | Challenge 8 or higher

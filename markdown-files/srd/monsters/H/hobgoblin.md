@@ -12,7 +12,7 @@ Medium humanoid (goblinoid), lawful evil
 **Speed** 30 ft.
 
   STR|         DEX|         CON|         INT|         WIS|        CHA|
-  ---------| ---------| --------- ---------| ---------| --------|
+  ---------| ---------| ---------|---------| ---------| --------|
    13 (+1)   | 12 (+1)   | 12 (+1)   | 10 (+0)   | 10 (+0)   | 9 (-1)
 
 **Senses** darkvision 60 ft., passive Perception 10

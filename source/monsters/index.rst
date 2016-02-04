@@ -5,7 +5,7 @@ Monsters
    :name: monsters
    :glob:
    :maxdepth: 2
-   
+
    challenge-and-xp
    legendary-creatures
    statistics
@@ -23,5 +23,5 @@ Descriptions
   :maxdepth: 3
 
   Monster Descriptions <monsters_a-z/index>
-  miscellaneous-creatures
-  nonplayer-characters
+  Miscellaneous Creatures <miscellaneous-creatures/index>
+  Nonplayer Characters <nonplayer-characters/index>

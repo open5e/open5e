@@ -11,8 +11,8 @@ Large fiend (demon), chaotic evil
 
 **Speed** 30 ft.
 
-  STR       DEX       CON       INT      WIS       CHA
-  --------- --------- --------- -------- --------- ---------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|---------|---------
   | 19 (+4)   | 17 (+3)   | 20 (+5)   | 5 (-3)   | 12 (+1)   | 13 (+1)
 
 **Saving Throws** Str +7, Con +8, Wis +4

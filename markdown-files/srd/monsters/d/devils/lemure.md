@@ -11,8 +11,8 @@ Medium fiend (devil), lawful evil
 
 **Speed** 15 ft.
 
-  STR       DEX      CON       INT      WIS       CHA
-  --------- -------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|--------|---------|--------|---------|--------
   | 10 (+0)   | 5 (-3)   | 11 (+0)   | 1 (-5)   | 11 (+0)   | 3 (-4)
 
 **Damage Resistances** cold

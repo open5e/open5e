@@ -1,6 +1,5 @@
-Warhorse Skeleton  
--------------------------------------------------------------
-
+Warhorse Skeleton
+-----------------
 
 Large undead, lawful evil
 
@@ -10,9 +9,11 @@ Large undead, lawful evil
 
 **Speed** 60 ft.
 
-STR\| DEX\| CON\| INT\| WIS\| CHA ---------\| ---------\| ---------\|
---------\| -------- --------\| 18 (+4) \| 12 (+1) \| 15 (+2) \| 2 (-4)
-\| 8 (-1) \| 5 (-3)
++-----------+-----------+-----------+----------+----------+----------+
+| STR       | DEX       | CON       | INT      | WIS      | CHA      |
++===========+===========+===========+==========+==========+==========+
+| 18 (+4)   | 12 (+1)   | 15 (+2)   | 2 (-4)   | 8 (-1)   | 5 (-3)   |
++-----------+-----------+-----------+----------+----------+----------+
 
 **Damage Vulnerabilities** bludgeoning
 
@@ -22,12 +23,11 @@ STR\| DEX\| CON\| INT\| WIS\| CHA ---------\| ---------\| ---------\|
 
 **Senses** darkvision 60 ft., passive Perception 9;
 
-**Languages** —
+**Languages** --
 
 **Challenge** 1/2 (100 XP)
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Hooves**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
+**Hooves**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
 *Hit*: 11 (2d6 + 4) bludgeoning damage.

@@ -1,6 +1,5 @@
-Homunculus  
--------------------------------------------------------------
-
+Homunculus
+----------
 
 Tiny construct, neutral
 
@@ -22,7 +21,7 @@ Tiny construct, neutral
 
 **Senses** darkvision 60 ft., passive Perception 10
 
-**Languages** understands the languages of its creator but can’t speak
+**Languages** understands the languages of its creator but can't speak
 
 **Challenge** 0 (10 XP)
 
@@ -31,9 +30,8 @@ existence as its master, it can magically convey what it senses to its
 master, and the two can communicate telepathically.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one creature.
+**Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one creature.
 *Hit*: 1 piercing damage, and the target must succeed on a DC 10
 Constitution saving throw or be poisoned for 1 minute. If the saving
 throw fails by 5 or more, the target is instead poisoned for 5 (1d10)

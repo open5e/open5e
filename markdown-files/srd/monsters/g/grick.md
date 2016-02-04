@@ -11,8 +11,8 @@ Medium monstrosity, neutral
 
 **Speed** 30 ft., climb 30 ft.
 
-  STR       DEX       CON       INT      WIS       CHA
-  --------- --------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|---------|--------
   | 14 (+2)   | 14 (+2)   | 11 (+0)   | 3 (-4)   | 14 (+2)   | 5 (-3)
 
 **Damage Resistances** bludgeoning, piercing, and slashing from

@@ -1,6 +1,5 @@
-Half-Red Dragon Veteran  
--------------------------------------------------------------
-
+Half-Red Dragon Veteran
+-----------------------
 
 Medium humanoid (human), any alignment
 
@@ -27,9 +26,8 @@ Medium humanoid (human), any alignment
 **Challenge** 5 (1,800 XP)
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Multiattack**: The veteran makes two longsword attacks. If it has a
+**Multiattack**: The veteran makes two longsword attacks. If it has a
 shortsword drawn, it can also make a shortsword attack. **Longsword**:
 *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target. *Hit*: 7 (1d8
 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two

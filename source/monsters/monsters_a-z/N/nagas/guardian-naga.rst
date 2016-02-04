@@ -1,6 +1,5 @@
-Guardian Naga  
--------------------------------------------------------------
-
+Guardian Naga
+-------------
 
 Large monstrosity, lawful good
 
@@ -35,10 +34,6 @@ spellcaster. Its spellcasting ability is Wisdom (spell save DC 16, +8 to
 hit with spell attacks), and it needs only verbal components to cast its
 spells. It has the following cleric spells prepared:
 
-.. raw:: html
-
-   <!-- -->
-
 Cantrips (at will): *mending*, *sacred flame*, *thaumaturgy* **1st level
 (4 slots)**: *command*, *cure wounds*, *shield of faith* **2nd level (3
 slots)**: *calm emotions*, *hold person* **3rd level (3 slots)**:
@@ -47,9 +42,8 @@ slots)**: *calm emotions*, *hold person* **3rd level (3 slots)**:
 level (1 slot): *true seeing*
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Bite**: *Melee Weapon Attack*: +8 to hit, reach 10 ft., one creature.
+**Bite**: *Melee Weapon Attack*: +8 to hit, reach 10 ft., one creature.
 *Hit*: 8 (1d8 + 4) piercing damage, and the target must make a DC 15
 Constitution saving throw, taking 45 (10d8) poison damage on a failed
 save, or half as much damage on a successful one. **Spit Poison**:

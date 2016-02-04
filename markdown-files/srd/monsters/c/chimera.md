@@ -11,8 +11,8 @@ Large monstrosity, chaotic evil
 
 **Speed** 30 ft., fly 60 ft.
 
-  STR       DEX       CON       INT      WIS       CHA
-  --------- --------- --------- -------- --------- ---------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|---------|---------
   | 19 (+4)   | 11 (+0)   | 19 (+4)   | 3 (-4)   | 14 (+2)   | 10 (+0)
 
 **Skills** Perception +8

@@ -11,8 +11,8 @@ Large construct, unaligned
 
 **Speed** 10 ft.
 
-  STR       DEX       CON       INT      WIS      CHA
-  --------- --------- --------- -------- -------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|--------|--------
   | 17 (+3)   | 14 (+2)   | 10 (+0)   | 1 (-5)   | 3 (-4)   | 1 (-5)
 
 **Damage Immunities** poison, psychic

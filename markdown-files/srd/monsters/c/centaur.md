@@ -11,8 +11,8 @@ Large monstrosity, neutral good
 
 **Speed** 50 ft.
 
-  STR       DEX       CON       INT      WIS       CHA
-  --------- --------- --------- -------- --------- ---------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|---------|---------
   | 18 (+4)   | 14 (+2)   | 14 (+2)   | 9 (-1)   | 13 (+1)   | 11 (+0)
 
 **Skills** Athletics +6, Perception +3, Survival +3

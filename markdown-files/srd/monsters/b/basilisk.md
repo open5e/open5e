@@ -11,8 +11,8 @@ Medium monstrosity, unaligned
 
 **Speed** 20 ft.
 
-  STR       DEX      CON       INT      WIS      CHA
-  --------- -------- --------- -------- -------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|--------|---------|--------|--------|--------
   | 16 (+3)   | 8 (-1)   | 15 (+2)   | 2 (-4)   | 8 (-1)   | 7 (-2)
 
 **Senses** darkvision 60 ft., passive Perception 9

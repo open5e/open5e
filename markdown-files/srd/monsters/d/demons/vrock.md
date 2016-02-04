@@ -11,8 +11,8 @@ Large fiend (demon), chaotic evil
 
 **Speed** 40 ft., fly 60 ft.
 
-  STR       DEX       CON       INT      WIS       CHA
-  --------- --------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|---------|--------
   | 17 (+3)   | 15 (+2)   | 18 (+4)   | 8 (-1)   | 13 (+1)   | 8 (-1)
 
 **Saving Throws** Dex +5, Wis +4, Cha +2

@@ -11,8 +11,8 @@ Large giant, chaotic evil
 
 **Speed** 40 ft.
 
-  STR       DEX      CON       INT      WIS       CHA
-  --------- -------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|--------|---------|--------|---------|--------
   | 21 (+5)   | 8 (-1)   | 17 (+3)   | 6 (-2)   | 10 (+0)   | 8 (-1)
 
 **Skills** Perception +4

@@ -1,6 +1,5 @@
-Gargoyle  
--------------------------------------------------------------
-
+Gargoyle
+--------
 
 Medium elemental, chaotic evil
 
@@ -10,14 +9,14 @@ Medium elemental, chaotic evil
 
 **Speed** 30 ft., fly 60 ft.
 
-+--------------+-------------+-------------+------------+-----------+---------------------+
-| STR          | DEX         | CON         | INT        | WIS       | CHA                 |
-+==============+=============+=============+============+===========+=====================+
-| \| 15 (+2)   | \| 11 (+0   | ) \| 16 (   | +3) \| 6   | (-2) \|   | 11 (+0) \| 7 (-2)   |
-+--------------+-------------+-------------+------------+-----------+---------------------+
++-----------+-----------+-----------+----------+-----------+----------+
+| STR       | DEX       | CON       | INT      | WIS       | CHA      |
++===========+===========+===========+==========+===========+==========+
+| 15 (+2)   | 11 (+0)   | 16 (+3)   | 6 (-2)   | 11 (+0)   | 7 (-2)   |
++-----------+-----------+-----------+----------+-----------+----------+
 
 **Damage Resistances** bludgeoning, piercing, and slashing from
-nonmagical attacks that aren’t adamantine
+nonmagical attacks that aren't adamantine
 
 **Damage Immunities** poison
 
@@ -33,9 +32,8 @@ nonmagical attacks that aren’t adamantine
 indistinguishable from an inanimate statue.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Multiattack**: The gargoyle makes two attacks: one with its bite and
+**Multiattack**: The gargoyle makes two attacks: one with its bite and
 one with its claws. **Bite**: *Melee Weapon Attack*: +4 to hit, reach 5
 ft., one target. *Hit*: 5 (1d6 + 2) piercing damage. **Claws**: *Melee
 Weapon Attack*: +4 to hit, reach 5 ft., one target. *Hit*: 5 (1d6 + 2)

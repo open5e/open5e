@@ -13,8 +13,8 @@ Large construct, unaligned
 
 **Speed** 20 ft.
 
-  STR       DEX      CON       INT      WIS      CHA
-  --------- -------- --------- -------- -------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|--------|---------|--------|--------|--------
   | 20 (+5)   | 9 (-1)   | 18 (+4)   | 3 (-4)   | 8 (-1)   | 1 (-5)
 
 **Damage Immunities** acid, poison, psychic; bludgeoning, piercing, and
@@ -71,8 +71,8 @@ Medium construct, neutral
 
 **Speed** 30 ft.
 
-  STR       DEX      CON       INT      WIS       CHA
-  --------- -------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|--------|---------|--------|---------|--------
   | 19 (+4)   | 9 (-1)   | 18 (+4)   | 6 (-2)   | 10 (+0)   | 5 (-3)
 
 **Damage Immunities** lightning, poison; bludgeoning, piercing, and
@@ -130,8 +130,8 @@ Large construct, unaligned
 
 **Speed** 30 ft.
 
-  STR       DEX      CON       INT      WIS       CHA
-  --------- -------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|--------|---------|--------|---------|--------
   | 24 (+7)   | 9 (-1)   | 20 (+5)   | 3 (-4)   | 11 (+0)   | 1 (-5)
 
 **Damage Immunities** fire, poison, psychic; bludgeoning, piercing, and
@@ -179,8 +179,8 @@ Large construct, unaligned
 
 **Speed** 30 ft.
 
-  STR       DEX      CON       INT      WIS       CHA
-  --------- -------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|--------|---------|--------|---------|--------
   | 22 (+6)   | 9 (-1)   | 20 (+5)   | 3 (-4)   | 11 (+0)   | 1 (-5)
 
 **Damage Immunities** poison, psychic; bludgeoning, piercing, and
