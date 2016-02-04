@@ -1,6 +1,5 @@
-Black Dragon Wyrmling  
--------------------------------------------------------------
-
+Black Dragon Wyrmling
+---------------------
 
 Medium dragon, chaotic evil
 
@@ -10,11 +9,11 @@ Medium dragon, chaotic evil
 
 **Speed** 30 ft., fly 60 ft., swim 30 ft.
 
-+--------------+--------------+--------------+--------------+--------------+--------------+
-| STR          | DEX          | CON          | INT          | WIS          | CHA          |
-+==============+==============+==============+==============+==============+==============+
-| \| 15 (+2)   | \| 14 (+2)   | \| 13 (+1)   | \| 10 (+0)   | \| 11 (+0)   | \| 13 (+1)   |
-+--------------+--------------+--------------+--------------+--------------+--------------+
++-----------+-----------+-----------+-----------+-----------+-----------+
+| STR       | DEX       | CON       | INT       | WIS       | CHA       |
++===========+===========+===========+===========+===========+===========+
+| 15 (+2)   | 14 (+2)   | 13 (+1)   | 10 (+0)   | 11 (+0)   | 13 (+1)   |
++-----------+-----------+-----------+-----------+-----------+-----------+
 
 **Saving Throws** Dex +5, Con +6, Wis +3, Cha +5
 
@@ -31,9 +30,8 @@ Medium dragon, chaotic evil
 **Amphibious**: The dragon can breathe air and water.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Multiattack**: The dragon makes three attacks: one with its bite and
+**Multiattack**: The dragon makes three attacks: one with its bite and
 two with its claws. **Bite**: *Melee Weapon Attack*: +7 to hit, reach 10
 ft., one target. *Hit*: 15 (2d10 + 4) piercing damage plus 4 (1d8) acid
 damage. **Claw**: *Melee Weapon Attack*: +7 to hit, reach 5 ft., one

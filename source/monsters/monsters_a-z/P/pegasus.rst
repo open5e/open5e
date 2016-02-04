@@ -1,6 +1,5 @@
-Pegasus  
--------------------------------------------------------------
-
+Pegasus
+-------
 
 Large celestial, chaotic good
 
@@ -23,12 +22,11 @@ Large celestial, chaotic good
 **Senses** passive Perception 16
 
 **Languages** understands Celestial, Common, Elvish, and Sylvan but
-can’t speak
+can't speak
 
 **Challenge** 2 (450 XP)
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Hooves**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
+**Hooves**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
 *Hit*: 11 (2d6 + 4) bludgeoning damage.

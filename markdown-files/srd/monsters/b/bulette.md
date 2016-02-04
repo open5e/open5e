@@ -11,8 +11,8 @@ Large monstrosity, unaligned
 
 **Speed** 40 ft., burrow 40 ft.
 
-  STR       DEX       CON       INT      WIS       CHA
-  --------- --------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|---------|--------
   | 19 (+4)   | 11 (+0)   | 21 (+5)   | 2 (-4)   | 10 (+0)   | 5 (-3)
 
 **Skills** Perception +6

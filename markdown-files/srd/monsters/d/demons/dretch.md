@@ -11,8 +11,8 @@ Small fiend (demon), chaotic evil
 
 **Speed** 20 ft.
 
-  STR       DEX       CON       INT      WIS      CHA
-  --------- --------- --------- -------- -------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|--------|--------
   | 11 (+0)   | 11 (+0)   | 12 (+1)   | 5 (-3)   | 8 (-1)   | 3 (-4)
 
 **Damage Resistances** cold, fire, lightning

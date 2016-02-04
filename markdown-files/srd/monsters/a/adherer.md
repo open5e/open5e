@@ -13,8 +13,8 @@ Medium aberration, lawful evil
 
 **Speed** 30 ft.
 
-  STR       DEX       CON       INT       WIS      CHA
-  --------- --------- --------- --------- -------- ---------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|---------|--------|---------
   | 26 (+8)   | 14 (+2)   | 12 (+1)   | 14 (+2)   | 4 (-3)   | 11 (-1)
 
 **Saving Throws**

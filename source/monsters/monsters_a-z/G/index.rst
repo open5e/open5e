@@ -4,5 +4,6 @@ G
 .. toctree::
    :titlesonly:
    :glob:
-   
+
+   **/*
    *

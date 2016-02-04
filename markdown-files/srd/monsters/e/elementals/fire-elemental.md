@@ -11,8 +11,8 @@ Large elemental, neutral
 
 **Speed** 50 ft.
 
-  STR       DEX       CON       INT      WIS       CHA
-  --------- --------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|---------|--------
   | 10 (+0)   | 17 (+3)   | 16 (+3)   | 6 (-2)   | 10 (+0)   | 7 (-2)
 
 **Damage Resistances** bludgeoning, piercing, and slashing from

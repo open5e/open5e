@@ -12,7 +12,7 @@ Large ooze, unaligned
 **Speed** 15 ft.
 
   STR|       DEX|      CON|       INT|      WIS|      CHA
-  ---------| --------| ---------| --------| -------- --------|
+  ---------| --------| ---------| --------| --------|--------|
    14 (+2)   | 3 (-4)   | 20 (+5)   | 1 (-5)   | 6 (-2)   | 1 (-5)
 
 **Condition Immunities** blinded, charmed, deafened, exhaustion,

@@ -1,6 +1,5 @@
-Red Dragon Wyrmling  
--------------------------------------------------------------
-
+Red Dragon Wyrmling
+-------------------
 
 Medium dragon, chaotic evil
 
@@ -10,11 +9,11 @@ Medium dragon, chaotic evil
 
 **Speed** 30 ft., climb 30 ft., fly 60 ft.
 
-+--------------+--------------+--------------+--------------+--------------+--------------+
-| STR          | DEX          | CON          | INT          | WIS          | CHA          |
-+==============+==============+==============+==============+==============+==============+
-| \| 19 (+4)   | \| 10 (+0)   | \| 17 (+3)   | \| 12 (+1)   | \| 11 (+0)   | \| 15 (+2)   |
-+--------------+--------------+--------------+--------------+--------------+--------------+
++-----------+-----------+-----------+-----------+-----------+-----------+
+| STR       | DEX       | CON       | INT       | WIS       | CHA       |
++===========+===========+===========+===========+===========+===========+
+| 19 (+4)   | 10 (+0)   | 17 (+3)   | 12 (+1)   | 11 (+0)   | 15 (+2)   |
++-----------+-----------+-----------+-----------+-----------+-----------+
 
 **Saving Throws** Dex +2, Con +5, Wis +2, Cha +4
 
@@ -29,9 +28,8 @@ Medium dragon, chaotic evil
 **Challenge** 4 (1,100 XP)
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Bite**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
+**Bite**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
 *Hit*: 9 (1d10 + 4) piercing damage plus 3 (1d6) fire damage. **Fire
 Breath (Recharge 5–6)**: The dragon exhales fire in a 15-foot cone. Each
 creature in that area must make a DC 13 Dexterity saving throw, taking

@@ -12,7 +12,7 @@ Small humanoid (kobold), lawful evil
 **Speed** 30 ft.
 
   STR|      DEX|       CON|      INT|      WIS|      CHA
-  --------| ---------| --------| --------| -------- --------|
+  --------| ---------| --------| --------| --------|--------|
    7 (-2)   | 15 (+2)   | 9 (-1)   | 8 (-1)   | 7 (-2)   | 8 (-1)
 
 **Senses** darkvision 60 ft., passive Perception 8

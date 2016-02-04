@@ -11,8 +11,8 @@ Huge beast, unaligned
 
 **Speed** 50 ft.
 
-  STR       DEX      CON       INT      WIS       CHA
-  --------- -------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|--------|---------|--------|---------|--------
   | 22 (+6)   | 9 (-1)   | 17 (+3)   | 2 (-4)   | 11 (+0)   | 5 (-3)
 
 **Senses** passive Perception 10

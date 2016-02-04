@@ -1,6 +1,5 @@
-Azer  
--------------------------------------------------------------
-
+Azer
+----
 
 Medium elemental, lawful neutral
 
@@ -10,11 +9,11 @@ Medium elemental, lawful neutral
 
 **Speed** 30 ft.
 
-+--------------+--------------+--------------+--------------+--------------+--------------+
-| STR          | DEX          | CON          | INT          | WIS          | CHA          |
-+==============+==============+==============+==============+==============+==============+
-| \| 17 (+3)   | \| 12 (+1)   | \| 15 (+2)   | \| 12 (+1)   | \| 13 (+1)   | \| 10 (+0)   |
-+--------------+--------------+--------------+--------------+--------------+--------------+
++-----------+-----------+-----------+-----------+-----------+-----------+
+| STR       | DEX       | CON       | INT       | WIS       | CHA       |
++===========+===========+===========+===========+===========+===========+
+| 17 (+3)   | 12 (+1)   | 15 (+2)   | 12 (+1)   | 13 (+1)   | 10 (+0)   |
++-----------+-----------+-----------+-----------+-----------+-----------+
 
 **Saving Throws** Con +4
 
@@ -36,9 +35,8 @@ deals an extra 3 (1d6) fire damage (included in the attack).
 dim light for an additional 10 feet.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Warhammer**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one
+**Warhammer**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one
 target. *Hit*: 7 (1d8 + 3) bludgeoning damage, or 8 (1d10 + 3)
 bludgeoning damage if used with two hands to make a melee attack, plus 3
 (1d6) fire damage.

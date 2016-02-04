@@ -1,6 +1,5 @@
-Erinyes  
--------------------------------------------------------------
-
+Erinyes
+-------
 
 Medium fiend (devil), lawful evil
 
@@ -10,16 +9,16 @@ Medium fiend (devil), lawful evil
 
 **Speed** 30 ft., fly 60 ft.
 
-+--------------+--------------+--------------+--------------+--------------+--------------+
-| STR          | DEX          | CON          | INT          | WIS          | CHA          |
-+==============+==============+==============+==============+==============+==============+
-| \| 18 (+4)   | \| 16 (+3)   | \| 18 (+4)   | \| 14 (+2)   | \| 14 (+2)   | \| 18 (+4)   |
-+--------------+--------------+--------------+--------------+--------------+--------------+
++-----------+-----------+-----------+-----------+-----------+-----------+
+| STR       | DEX       | CON       | INT       | WIS       | CHA       |
++===========+===========+===========+===========+===========+===========+
+| 18 (+4)   | 16 (+3)   | 18 (+4)   | 14 (+2)   | 14 (+2)   | 18 (+4)   |
++-----------+-----------+-----------+-----------+-----------+-----------+
 
 **Saving Throws** Dex +7, Con +8, Wis +6, Cha +8
 
 **Damage Resistances** cold; bludgeoning, piercing, and slashing from
-nonmagical attacks that aren’t silvered
+nonmagical attacks that aren't silvered
 
 **Damage Immunities** fire, poison
 
@@ -31,15 +30,14 @@ nonmagical attacks that aren’t silvered
 
 **Challenge** 12 (8,400 XP)
 
-**Hellish Weapons**: The erinyes’s weapon attacks are magical and deal
+**Hellish Weapons**: The erinyes's weapon attacks are magical and deal
 an extra 13 (3d8) poison damage on a hit (included in the attacks).
 **Magic Resistance**: The erinyes has advantage on saving throws against
 spells and other magical effects.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Multiattack**: The erinyes makes three attacks. **Longsword**: *Melee
+**Multiattack**: The erinyes makes three attacks. **Longsword**: *Melee
 Weapon Attack*: +8 to hit, reach 5 ft., one target. *Hit*: 8 (1d8 + 4)
 slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands,
 plus 13 (3d8) poison damage. **Longbow**: *Ranged Weapon Attack*: +7 to
@@ -48,9 +46,8 @@ plus 13 (3d8) poison damage, and the target must succeed on a DC 14
 Constitution saving throw or be poisoned. The poison lasts until it is
 removed by the lesser restoration spell or similar magic.
 
-ReActions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Reactions
 
-***Parry**: The erinyes adds 4 to its AC against one melee attack that
+**Parry**: The erinyes adds 4 to its AC against one melee attack that
 would hit it. To do so, the erinyes must see the attacker and be
 wielding a melee weapon.

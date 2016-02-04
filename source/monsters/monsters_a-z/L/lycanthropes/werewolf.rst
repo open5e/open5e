@@ -1,6 +1,5 @@
-Werewolf  
--------------------------------------------------------------
-
+Werewolf
+--------
 
 Medium humanoid (human, shapechanger), chaotic evil
 
@@ -24,22 +23,21 @@ nonmagical attacks not made with silvered weapons
 
 **Senses** passive Perception 14
 
-**Languages** Common (can’t speak in wolf form)
+**Languages** Common (can't speak in wolf form)
 
 **Challenge** 3 (700 XP)
 
 **Shapechanger**: The werewolf can use its action to polymorph into a
 wolf-humanoid hybrid or into a wolf, or back into its true form, which
 is humanoid. Its statistics, other than its AC, are the same in each
-form. Any equipment it is wearing or carrying isn’t transformed. It
+form. Any equipment it is wearing or carrying isn't transformed. It
 reverts to its true form if it dies. **Keen Hearing and Smell**: The
 werewolf has advantage on Wisdom (Perception) checks that rely on
 hearing or smell.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Multiattack (Humanoid or Hybrid Form Only)**: The werewolf makes two
+**Multiattack (Humanoid or Hybrid Form Only)**: The werewolf makes two
 attacks: one with its bite and one with its claws or spear. **Bite (Wolf
 or Hybrid Form Only)**: *Melee Weapon Attack*: +4 to hit, reach 5 ft.,
 one target. *Hit*: 6 (1d8 + 2) piercing damage. If the target is a

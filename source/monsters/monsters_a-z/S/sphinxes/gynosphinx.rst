@@ -1,6 +1,5 @@
-Gynosphinx  
--------------------------------------------------------------
-
+Gynosphinx
+----------
 
 Large monstrosity, lawful neutral
 
@@ -31,26 +30,24 @@ nonmagical attacks
 
 **Challenge** 11 (7,200 XP)
 
-| **Magic Weapons**: The sphinx’s weapon attacks are magical.
-  **Inscrutable**: The sphinx is immune to any effect that would sense
-  its emotions or read its thoughts, as well as any divination spell
-  that it refuses. Wisdom (Insight) checks made to ascertain the
-  sphinx’s intentions or sincerity have disadvantage. **Spellcasting**:
-  The sphinx is a 9th-level spellcaster. Its spellcasting ability is
-  Intelligence (spell save DC 16, +8 to hit with spell attacks). It
-  requires no material components to cast its spells. The sphinx has the
-  following wizard spells prepared: **Cantrips (at will)**: *mage hand*,
-  *minor illusion*, *prestidigitation* **1st level (4 slots)**: *detect
-  magic*, *identify*, *shield* **2nd level (3 slots)**: *darkness*,
-  *locate object*, *suggestion*
-| **3rd level (3 slots):** *dispel magic*, *remove curse*, *tongues*
-| **4th level (3 slots):** *banishment*, *greater invisibility* **5th
-  level (1 slot)**: *legend lore*
+**Magic Weapons**: The sphinx's weapon attacks are magical.
+**Inscrutable**: The sphinx is immune to any effect that would sense its
+emotions or read its thoughts, as well as any divination spell that it
+refuses. Wisdom (Insight) checks made to ascertain the sphinx's
+intentions or sincerity have disadvantage. **Spellcasting**: The sphinx
+is a 9th-level spellcaster. Its spellcasting ability is Intelligence
+(spell save DC 16, +8 to hit with spell attacks). It requires no
+material components to cast its spells. The sphinx has the following
+wizard spells prepared: **Cantrips (at will)**: *mage hand*, *minor
+illusion*, *prestidigitation* **1st level (4 slots)**: *detect magic*,
+*identify*, *shield* **2nd level (3 slots)**: *darkness*, *locate
+object*, *suggestion* **3rd level (3 slots):** *dispel magic*, *remove
+curse*, *tongues* **4th level (3 slots):** *banishment*, *greater
+invisibility* **5th level (1 slot)**: *legend lore*
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Multiattack**: The sphinx makes two claw attacks. **Claw**: *Melee
+**Multiattack**: The sphinx makes two claw attacks. **Claw**: *Melee
 Weapon Attack*: +8 to hit, reach 5 ft., one target. *Hit*: 13 (2d8 + 4)
 slashing damage.
 
@@ -58,7 +55,7 @@ Legendary Actions
 
 The sphinx can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only
-at the end of another creature’s turn. The sphinx regains spent
+at the end of another creature's turn. The sphinx regains spent
 legendary actions at the start of its turn.
 
 **Claw Attack**: The sphinx makes one claw attack. **Teleport (Costs 2

@@ -11,8 +11,8 @@ Tiny fiend (demon, shapechanger), chaotic evil
 
 **Speed** 40 ft.
 
-  STR      DEX       CON       INT      WIS       CHA
-  -------- --------- --------- -------- --------- ---------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  --------|---------|---------|--------|---------|---------
   | 5 (-3)   | 17 (+3)   | 10 (+0)   | 7 (-2)   | 10 (+0)   | 10 (+0)
 
 **Skills** Stealth +5

@@ -11,8 +11,8 @@ Medium humanoid (goblinoid), chaotic evil
 
 **Speed** 30 ft.
 
-  STR       DEX       CON       INT      WIS       CHA
-  --------- --------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|---------|--------
   | 15 (+2)   | 14 (+2)   | 13 (+1)   | 8 (-1)   | 11 (+0)   | 9 (-1)
 
 **Skills** Stealth +6, Survival +2

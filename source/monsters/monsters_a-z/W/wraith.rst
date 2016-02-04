@@ -1,6 +1,5 @@
-Wraith  
--------------------------------------------------------------
-
+Wraith
+------
 
 Medium undead, neutral evil
 
@@ -17,7 +16,7 @@ Medium undead, neutral evil
 +----------+-----------+-----------+-----------+-----------+-----------+
 
 **Damage Resistances** acid, cold, fire, lightning, thunder;
-bludgeoning, piercing, and slashing from nonmagical attacks that aren’t
+bludgeoning, piercing, and slashing from nonmagical attacks that aren't
 silvered
 
 **Damage Immunities** necrotic, poison
@@ -38,16 +37,15 @@ While in sunlight, the wraith has disadvantage on attack rolls, as well
 as on Wisdom (Perception) checks that rely on sight.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Life Drain**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one
+**Life Drain**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one
 creature. *Hit*: 21 (4d8 + 3) necrotic damage. The target must succeed
 on a DC 14 Constitution saving throw or its hit point maximum is reduced
 by an amount equal to the damage taken. This reduction lasts until the
 target finishes a long rest. The target dies if this effect reduces its
 hit point maximum to 0. **Create Specter**: The wraith targets a
 humanoid within 10 feet of it that has been dead for no longer than 1
-minute and died violently. The target’s spirit rises as a specter in the
+minute and died violently. The target's spirit rises as a specter in the
 space of its corpse or in the nearest unoccupied space. The specter is
-under the wraith’s control. The wraith can have no more than seven
+under the wraith's control. The wraith can have no more than seven
 specters under its control at one time.

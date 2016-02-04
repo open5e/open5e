@@ -1,6 +1,5 @@
-Drider  
--------------------------------------------------------------
-
+Drider
+------
 
 Large monstrosity, chaotic evil
 
@@ -10,11 +9,11 @@ Large monstrosity, chaotic evil
 
 **Speed** 30 ft., climb 30 ft.
 
-+--------------+--------------+--------------+--------------+--------------+--------------+
-| STR          | DEX          | CON          | INT          | WIS          | CHA          |
-+==============+==============+==============+==============+==============+==============+
-| \| 16 (+3)   | \| 16 (+3)   | \| 18 (+4)   | \| 13 (+1)   | \| 14 (+2)   | \| 12 (+1)   |
-+--------------+--------------+--------------+--------------+--------------+--------------+
++-----------+-----------+-----------+-----------+-----------+-----------+
+| STR       | DEX       | CON       | INT       | WIS       | CHA       |
++===========+===========+===========+===========+===========+===========+
+| 16 (+3)   | 16 (+3)   | 18 (+4)   | 13 (+1)   | 14 (+2)   | 12 (+1)   |
++-----------+-----------+-----------+-----------+-----------+-----------+
 
 **Skills** Perception +5, Stealth +9
 
@@ -25,8 +24,8 @@ Large monstrosity, chaotic evil
 **Challenge** 6 (2,300 XP)
 
 **Fey Ancestry**: The drider has advantage on saving throws against
-being charmed, and magic can’t put the drider to sleep. **Innate
-Spellcasting**: The drider’s innate spellcasting ability is Wisdom
+being charmed, and magic can't put the drider to sleep. **Innate
+Spellcasting**: The drider's innate spellcasting ability is Wisdom
 (spell save DC 13). The drider can innately cast the following spells,
 requiring no material components: **At will**: *dancing lights* **1/day
 each**: *darkness*, *faerie fire*
@@ -39,9 +38,8 @@ sight. **Web Walker**: The drider ignores movement restrictions caused
 by webbing.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Multiattack**: The drider makes three attacks, either with its
+**Multiattack**: The drider makes three attacks, either with its
 longsword or its longbow. It can replace one of those attacks with a
 bite attack. **Bite**: *Melee Weapon Attack*: +6 to hit, reach 5 ft.,
 one creature. *Hit*: 2 (1d4) piercing damage plus 9 (2d8) poison damage.

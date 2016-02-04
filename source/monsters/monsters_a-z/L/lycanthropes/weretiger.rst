@@ -1,6 +1,5 @@
-Weretiger  
--------------------------------------------------------------
-
+Weretiger
+---------
 
 Medium humanoid (human, shapechanger), neutral
 
@@ -23,14 +22,14 @@ nonmagical attacks not made with silvered weapons
 
 **Senses** darkvision 60 ft., passive Perception 15
 
-**Languages** Common (can’t speak in tiger form)
+**Languages** Common (can't speak in tiger form)
 
 **Challenge** 4 (1,100 XP)
 
 **Shapechanger**: The weretiger can use its action to polymorph into a
 tiger-humanoid hybrid or into a tiger, or back into its true form, which
 is humanoid. Its statistics, other than its size, are the same in each
-form. Any equipment it is wearing or carrying isn’t transformed. It
+form. Any equipment it is wearing or carrying isn't transformed. It
 reverts to its true form if it dies. **Keen Hearing and Smell**: The
 weretiger has advantage on Wisdom (Perception) checks that rely on
 hearing or smell. **Pounce (Tiger or Hybrid Form Only)**: If the
@@ -41,9 +40,8 @@ prone, the weretiger can make one bite attack against it as a bonus
 action.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Multiattack (Humanoid or Hybrid Form Only)**: In humanoid form, the
+**Multiattack (Humanoid or Hybrid Form Only)**: In humanoid form, the
 weretiger makes two scimitar attacks or two longbow attacks. In hybrid
 form, it can attack like a humanoid or make two claw attacks. **Bite
 (Tiger or Hybrid Form Only)**: *Melee Weapon Attack*: +5 to hit, reach 5

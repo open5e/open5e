@@ -5,4 +5,4 @@ V
    :titlesonly:
    :glob:
 
-   *
+   vampires/index

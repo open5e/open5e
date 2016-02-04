@@ -11,8 +11,8 @@ Medium fiend (devil), lawful evil
 
 **Speed** 30 ft.
 
-  STR       DEX       CON       INT      WIS       CHA
-  --------- --------- --------- -------- --------- ---------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|---------|---------
   | 16 (+3)   | 15 (+2)   | 15 (+2)   | 9 (-1)   | 11 (+0)   | 11 (+0)
 
 **Saving Throws** Str +5, Con +4, Wis +2

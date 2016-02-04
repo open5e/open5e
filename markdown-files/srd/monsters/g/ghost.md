@@ -11,8 +11,8 @@ Medium undead, any alignment
 
 **Speed** 0 ft., fly 40 ft. (hover)
 
-  STR      DEX       CON       INT       WIS       CHA
-  -------- --------- --------- --------- --------- ---------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  --------|---------|---------|---------|---------|---------
   | 7 (-2)   | 13 (+1)   | 10 (+0)   | 10 (+0)   | 12 (+1)   | 17 (+3)
 
 **Damage Resistances** acid, fire, lightning, thunder; bludgeoning,

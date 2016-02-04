@@ -1,6 +1,5 @@
-Gorgon  
--------------------------------------------------------------
-
+Gorgon
+------
 
 Large monstrosity, unaligned
 
@@ -10,11 +9,11 @@ Large monstrosity, unaligned
 
 **Speed** 40 ft.
 
-+--------------+-------------+-------------+------------+-----------+---------------------+
-| STR          | DEX         | CON         | INT        | WIS       | CHA                 |
-+==============+=============+=============+============+===========+=====================+
-| \| 20 (+5)   | \| 11 (+0   | ) \| 18 (   | +4) \| 2   | (-4) \|   | 12 (+1) \| 7 (-2)   |
-+--------------+-------------+-------------+------------+-----------+---------------------+
++-----------+-----------+-----------+----------+-----------+----------+
+| STR       | DEX       | CON       | INT      | WIS       | CHA      |
++===========+===========+===========+==========+===========+==========+
+| 20 (+5)   | 11 (+0)   | 18 (+4)   | 2 (-4)   | 12 (+1)   | 7 (-2)   |
++-----------+-----------+-----------+----------+-----------+----------+
 
 **Skills** Perception +4
 
@@ -22,7 +21,7 @@ Large monstrosity, unaligned
 
 **Senses** darkvision 60 ft., passive Perception 14
 
-**Languages** —
+**Languages** --
 
 **Challenge** 5 (1,800 XP)
 
@@ -33,9 +32,8 @@ prone. If the target is prone, the gorgon can make one attack with its
 hooves against it as a bonus action.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Gore**: *Melee Weapon Attack*: +8 to hit, reach 5 ft., one target.
+**Gore**: *Melee Weapon Attack*: +8 to hit, reach 5 ft., one target.
 *Hit*: 18 (2d12 + 5) piercing damage. **Hooves**: *Melee Weapon Attack*:
 +8 to hit, reach 5 ft., one target. *Hit*: 16 (2d10 + 5) bludgeoning
 damage. **Petrifying Breath (Recharge 5–6)**: The gorgon exhales

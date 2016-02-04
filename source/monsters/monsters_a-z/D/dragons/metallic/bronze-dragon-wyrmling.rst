@@ -1,6 +1,5 @@
-Bronze Dragon Wyrmling  
--------------------------------------------------------------
-
+Bronze Dragon Wyrmling
+----------------------
 
 Medium dragon, lawful good
 
@@ -10,11 +9,11 @@ Medium dragon, lawful good
 
 **Speed** 30 ft., fly 60 ft., swim 30 ft.
 
-+--------------+--------------+--------------+--------------+--------------+--------------+
-| STR          | DEX          | CON          | INT          | WIS          | CHA          |
-+==============+==============+==============+==============+==============+==============+
-| \| 17 (+3)   | \| 10 (+0)   | \| 15 (+2)   | \| 12 (+1)   | \| 11 (+0)   | \| 15 (+2)   |
-+--------------+--------------+--------------+--------------+--------------+--------------+
++-----------+-----------+-----------+-----------+-----------+-----------+
+| STR       | DEX       | CON       | INT       | WIS       | CHA       |
++===========+===========+===========+===========+===========+===========+
+| 17 (+3)   | 10 (+0)   | 15 (+2)   | 12 (+1)   | 11 (+0)   | 15 (+2)   |
++-----------+-----------+-----------+-----------+-----------+-----------+
 
 **Saving Throws** Dex +2, Con +4, Wis +2, Cha +4
 
@@ -31,9 +30,8 @@ Medium dragon, lawful good
 **Amphibious**: The dragon can breathe air and water.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
+**Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
 *Hit*: 8 (1d10 + 3) piercing damage. **Breath Weapons (Recharge 5–6)**:
 The dragon uses one of the following breath weapons. **Lightning
 Breath**: The dragon exhales lightning in a 40- foot line that is 5 feet

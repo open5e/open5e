@@ -14,7 +14,7 @@ Medium undead, chaotic evil
 **Speed** 30 ft.
 
   STR         DEX         CON         INT         WIS         CHA
-  --------- --------- --------- --------- --------- --------
+  ---------|---------|---------|---------|---------|--------
   | 16 (+3)   | 17 (+3)   | 10 (+0)   | 11 (+0)   | 10 (+0)   | 8 (-1)
 
 **Damage Resistances** necrotic
@@ -59,8 +59,8 @@ Medium undead, chaotic evil
 
 **Speed** 30 ft.
 
-  STR       DEX       CON       INT      WIS       CHA
-  --------- --------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|---------|--------
   | 13 (+1)   | 15 (+2)   | 10 (+0)   | 7 (-2)   | 10 (+0)   | 6 (-2)
 
 **Damage Immunities** poison

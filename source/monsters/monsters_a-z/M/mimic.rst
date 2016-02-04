@@ -1,6 +1,5 @@
-Mimic  
--------------------------------------------------------------
-
+Mimic
+-----
 
 Medium monstrosity (shapechanger), neutral
 
@@ -24,13 +23,13 @@ Medium monstrosity (shapechanger), neutral
 
 **Senses** darkvision 60 ft., passive Perception 11
 
-**Languages** —
+**Languages** --
 
 **Challenge** 2 (450 XP)
 
 **Shapechanger**: The mimic can use its action to polymorph into an
 object or back into its true, amorphous form. Its statistics are the
-same in each form. Any equipment it is wearing or carrying isn’t
+same in each form. Any equipment it is wearing or carrying isn't
 transformed. It reverts to its true form if it dies. **Adhesive (Object
 Form Only)**: The mimic adheres to anything that touches it. A Huge or
 smaller creature adhered to the mimic is also grappled by it (escape DC
@@ -41,9 +40,8 @@ motionless, it is indistinguishable from an ordinary object.
 creature grappled by it.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Pseudopod**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one
+**Pseudopod**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one
 target. *Hit*: 7 (1d8 + 3) bludgeoning damage. If the mimic is in object
 form, the target is subjected to its Adhesive trait. **Bite**: *Melee
 Weapon Attack*: +5 to hit, reach 5 ft., one target. *Hit*: 7 (1d8 + 3)

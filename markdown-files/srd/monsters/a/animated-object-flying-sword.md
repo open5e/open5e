@@ -11,8 +11,8 @@ Small construct, unaligned
 
 **Speed** 0 ft., fly 50 ft. (hover)
 
-  STR       DEX       CON       INT      WIS      CHA
-  --------- --------- --------- -------- -------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|---------|---------|--------|--------|--------
   | 12 (+1)   | 15 (+2)   | 11 (+0)   | 1 (-5)   | 5 (-3)   | 1 (-5)
 
 **Saving Throws** Dex +4

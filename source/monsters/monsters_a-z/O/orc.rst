@@ -1,6 +1,5 @@
-Orc  
--------------------------------------------------------------
-
+Orc
+---
 
 Medium humanoid (orc), chaotic evil
 
@@ -28,9 +27,8 @@ Medium humanoid (orc), chaotic evil
 toward a hostile creature that it can see.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Greataxe**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
+**Greataxe**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
 *Hit*: 9 (1d12 + 3) slashing damage. **Javelin**: *Melee or Ranged
 Weapon Attack*: +5 to hit, reach 5 ft. or range 30/120 ft., one target.
 *Hit*: 6 (1d6 + 3) piercing damage.

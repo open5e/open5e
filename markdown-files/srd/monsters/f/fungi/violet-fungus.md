@@ -11,8 +11,8 @@ Medium plant, unaligned
 
 **Speed** 5 ft.
 
-  STR      DEX      CON       INT      WIS      CHA
-  -------- -------- --------- -------- -------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  --------|--------|---------|--------|--------|--------
   | 3 (-4)   | 1 (-5)   | 10 (+0)   | 1 (-5)   | 3 (-4)   | 1 (-5)
 
 **Condition Immunities** blinded, deafened, frightened

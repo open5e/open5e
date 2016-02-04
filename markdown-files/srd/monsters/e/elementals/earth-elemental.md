@@ -11,8 +11,8 @@ Large elemental, neutral
 
 **Speed** 30 ft., burrow 30 ft.
 
-  STR       DEX      CON       INT      WIS       CHA
-  --------- -------- --------- -------- --------- --------
+  STR    | DEX     | CON     | INT     | WIS     | CHA
+  ---------|--------|---------|--------|---------|--------
   | 20 (+5)   | 8 (-1)   | 20 (+5)   | 5 (-3)   | 10 (+0)   | 5 (-3)
 
 **Damage Vulnerabilities** thunder

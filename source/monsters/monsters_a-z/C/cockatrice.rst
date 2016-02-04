@@ -1,6 +1,5 @@
-Cockatrice  
--------------------------------------------------------------
-
+Cockatrice
+----------
 
 Small monstrosity, unaligned
 
@@ -10,22 +9,21 @@ Small monstrosity, unaligned
 
 **Speed** 20 ft., fly 40 ft.
 
-+-------------+-------------+-------------+------------+-----------+---------------------+
-| STR         | DEX         | CON         | INT        | WIS       | CHA                 |
-+=============+=============+=============+============+===========+=====================+
-| \| 6 (-2)   | \| 12 (+1   | ) \| 12 (   | +1) \| 2   | (-4) \|   | 13 (+1) \| 5 (-3)   |
-+-------------+-------------+-------------+------------+-----------+---------------------+
++----------+-----------+-----------+----------+-----------+----------+
+| STR      | DEX       | CON       | INT      | WIS       | CHA      |
++==========+===========+===========+==========+===========+==========+
+| 6 (-2)   | 12 (+1)   | 12 (+1)   | 2 (-4)   | 13 (+1)   | 5 (-3)   |
++----------+-----------+-----------+----------+-----------+----------+
 
 **Senses** darkvision 60 ft., passive Perception 11
 
-**Languages** —
+**Languages** --
 
 **Challenge** 1/2 (100 XP)
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one creature.
+**Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one creature.
 *Hit*: 3 (1d4 + 1) piercing damage, and the target must succeed on a DC
 11 Constitution saving throw against being magically petrified. On a
 failed save, the creature begins to turn to stone and is restrained. It

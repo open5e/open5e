@@ -1,6 +1,5 @@
-Invisible Stalker  
--------------------------------------------------------------
-
+Invisible Stalker
+-----------------
 
 Medium elemental, neutral
 
@@ -28,7 +27,7 @@ poisoned, prone, restrained, unconscious
 
 **Senses** darkvision 60 ft., passive Perception 18
 
-**Languages** Auran, understands Common but doesn’t speak it
+**Languages** Auran, understands Common but doesn't speak it
 
 **Challenge** 6 (2,300 XP)
 
@@ -39,8 +38,7 @@ the same plane of existence. The stalker also knows the location of its
 summoner.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Multiattack**: The stalker makes two slam attacks. **Slam**: *Melee
+**Multiattack**: The stalker makes two slam attacks. **Slam**: *Melee
 Weapon Attack*: +6 to hit, reach 5 ft., one target. *Hit*: 10 (2d6 + 3)
 bludgeoning damage.

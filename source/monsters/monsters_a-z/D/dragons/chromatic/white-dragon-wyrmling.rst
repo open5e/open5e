@@ -1,6 +1,5 @@
-White Dragon Wyrmling  
--------------------------------------------------------------
-
+White Dragon Wyrmling
+---------------------
 
 Medium dragon, chaotic evil
 
@@ -10,11 +9,11 @@ Medium dragon, chaotic evil
 
 **Speed** 30 ft., burrow 15 ft., fly 60 ft., swim 30 ft.
 
-+--------------+-------------+-------------+------------+-----------+----------------------+
-| STR          | DEX         | CON         | INT        | WIS       | CHA                  |
-+==============+=============+=============+============+===========+======================+
-| \| 14 (+2)   | \| 10 (+0   | ) \| 14 (   | +2) \| 5   | (-3) \|   | 10 (+0) \| 11 (+0)   |
-+--------------+-------------+-------------+------------+-----------+----------------------+
++-----------+-----------+-----------+----------+-----------+-----------+
+| STR       | DEX       | CON       | INT      | WIS       | CHA       |
++===========+===========+===========+==========+===========+===========+
+| 14 (+2)   | 10 (+0)   | 14 (+2)   | 5 (-3)   | 10 (+0)   | 11 (+0)   |
++-----------+-----------+-----------+----------+-----------+-----------+
 
 **Saving Throws** Dex +2, Con +4, Wis +2, Cha +2
 
@@ -29,9 +28,8 @@ Medium dragon, chaotic evil
 **Challenge** 2 (450 XP)
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one target.
+**Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one target.
 *Hit*: 7 (1d10 + 2) piercing damage plus 2 (1d4) cold damage. **Cold
 Breath (Recharge 5–6)**: The dragon exhales an icy blast of hail in a
 15-foot cone. Each creature in that area must make a DC 12 Constitution
