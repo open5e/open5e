@@ -1,4 +1,6 @@
 
+.. _srd_Using-Ability-Scores:
+
 Using Ability Scores
 ====================
 

@@ -1,3 +1,6 @@
+
+.. _srd_Glamoured-Studded-Leather:
+
 Glamoured Studded Leather
 ------------------------------------------------------
 

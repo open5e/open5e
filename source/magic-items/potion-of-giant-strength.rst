@@ -1,3 +1,6 @@
+
+.. _srd_Potion-of-Giant-Strength:
+
 Potion of Giant Strength
 ------------------------------------------------------
 

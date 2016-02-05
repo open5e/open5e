@@ -1,3 +1,6 @@
+
+.. _srd_Well-of-Many-Worlds:
+
 Well of Many Worlds
 ------------------------------------------------------
 

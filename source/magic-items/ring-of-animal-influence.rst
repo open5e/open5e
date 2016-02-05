@@ -1,3 +1,6 @@
+
+.. _srd_Ring-of-Animal-Influence:
+
 Ring of Animal Influence
 ------------------------------------------------------
 

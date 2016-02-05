@@ -1,4 +1,6 @@
 
+.. _srd_Contact-Other-Plane:
+
 Contact Other Plane
 -------------------------------------------------------------
 

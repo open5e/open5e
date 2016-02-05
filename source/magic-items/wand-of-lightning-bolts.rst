@@ -1,3 +1,6 @@
+
+.. _srd_Wand-of-Lightning-Bolts:
+
 Wand of Lightning Bolts
 ------------------------------------------------------
 

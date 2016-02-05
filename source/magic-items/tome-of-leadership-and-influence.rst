@@ -1,3 +1,6 @@
+
+.. _srd_Tome-of-Leadership-and-Influence:
+
 Tome of Leadership and Influence
 ------------------------------------------------------
 

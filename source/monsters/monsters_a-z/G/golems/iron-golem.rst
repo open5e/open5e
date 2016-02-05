@@ -1,3 +1,6 @@
+
+.. _srd_Iron-Golem:
+
 Iron Golem
 ----------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Wizard-class:
+
 Wizard
 ======
 

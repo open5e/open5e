@@ -1,4 +1,6 @@
 
+.. _srd_Protection-from-Energy:
+
 Protection from Energy
 -------------------------------------------------------------
 

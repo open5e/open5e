@@ -1,3 +1,6 @@
+
+.. _srd_Black-Dragon-Young:
+
 Black Dragon, Young
 -------------------
 

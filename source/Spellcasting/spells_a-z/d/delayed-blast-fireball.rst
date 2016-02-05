@@ -1,4 +1,6 @@
 
+.. _srd_Delayed-Blast-Fireball:
+
 Delayed Blast Fireball
 -------------------------------------------------------------
 

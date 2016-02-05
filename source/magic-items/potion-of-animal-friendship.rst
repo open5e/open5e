@@ -1,3 +1,6 @@
+
+.. _srd_Potion-of-Animal-Friendship:
+
 Potion of Animal Friendship
 ------------------------------------------------------
 

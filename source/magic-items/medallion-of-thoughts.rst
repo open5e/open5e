@@ -1,3 +1,6 @@
+
+.. _srd_Medallion-of-Thoughts:
+
 Medallion of Thoughts
 ------------------------------------------------------
 

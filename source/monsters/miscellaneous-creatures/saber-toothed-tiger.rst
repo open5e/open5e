@@ -1,3 +1,6 @@
+
+.. _srd_Saber-Toothed-Tiger:
+
 Saber-Toothed Tiger
 -------------------
 

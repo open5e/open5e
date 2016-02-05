@@ -1,3 +1,6 @@
+
+.. _srd_Necklace-of-Fireballs:
+
 Necklace of Fireballs
 ------------------------------------------------------
 

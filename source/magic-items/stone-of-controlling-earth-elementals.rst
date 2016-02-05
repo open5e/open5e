@@ -1,3 +1,6 @@
+
+.. _srd_Stone-of-Controlling-Earth-Elementals:
+
 Stone of Controlling Earth Elementals
 ------------------------------------------------------
 

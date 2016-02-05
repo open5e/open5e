@@ -1,3 +1,6 @@
+
+.. _srd_Fighter-class:
+
 Fighter
 =======
 

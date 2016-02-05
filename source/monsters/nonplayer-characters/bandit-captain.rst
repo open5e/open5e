@@ -1,3 +1,6 @@
+
+.. _srd_Bandit-Captain:
+
 Bandit Captain
 --------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Talisman-of-Ultimate-Evil:
+
 Talisman of Ultimate Evil
 ------------------------------------------------------
 

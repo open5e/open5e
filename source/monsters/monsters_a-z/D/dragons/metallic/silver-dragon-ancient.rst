@@ -1,3 +1,6 @@
+
+.. _srd_Silver-Dragon-Ancient:
+
 Silver Dragon, Ancient
 ----------------------
 

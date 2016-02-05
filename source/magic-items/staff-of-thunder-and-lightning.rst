@@ -1,3 +1,6 @@
+
+.. _srd_Staff-of-Thunder-and-Lightning:
+
 Staff of Thunder and Lightning
 ------------------------------------------------------
 

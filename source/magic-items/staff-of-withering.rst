@@ -1,3 +1,6 @@
+
+.. _srd_Staff-of-Withering:
+
 Staff of Withering
 ------------------------------------------------------
 

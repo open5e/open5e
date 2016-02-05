@@ -1,3 +1,6 @@
+
+.. _srd_Boots-of-Elvenkind:
+
 Boots of Elvenkind
 ------------------------------------------------------
 

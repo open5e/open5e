@@ -1,3 +1,6 @@
+
+.. _srd_Damage-and-Healing:
+
 Damage and Healing
 ------------------
 

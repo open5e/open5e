@@ -1,3 +1,6 @@
+
+.. _srd_Gold-Dragon-Adult:
+
 Gold Dragon, Adult
 ------------------
 

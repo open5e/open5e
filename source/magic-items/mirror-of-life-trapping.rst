@@ -1,3 +1,6 @@
+
+.. _srd_Mirror-of-Life-Trapping:
+
 Mirror of Life Trapping
 ------------------------------------------------------
 

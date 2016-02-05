@@ -1,4 +1,6 @@
 
+.. _srd_Purify-Food-and-Drink:
+
 Purify Food and Drink
 -------------------------------------------------------------
 

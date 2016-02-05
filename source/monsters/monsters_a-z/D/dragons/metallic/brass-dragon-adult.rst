@@ -1,3 +1,6 @@
+
+.. _srd_Brass-Dragon-Adult:
+
 Brass Dragon, Adult
 -------------------
 

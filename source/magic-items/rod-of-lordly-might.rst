@@ -1,3 +1,6 @@
+
+.. _srd_Rod-of-Lordly-Might:
+
 Rod of Lordly Might
 ------------------------------------------------------
 

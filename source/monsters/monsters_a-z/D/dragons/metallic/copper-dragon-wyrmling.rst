@@ -1,3 +1,6 @@
+
+.. _srd_Copper-Dragon-Wyrmling:
+
 Copper Dragon Wyrmling
 ----------------------
 

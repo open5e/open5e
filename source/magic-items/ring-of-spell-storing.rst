@@ -1,3 +1,6 @@
+
+.. _srd_Ring-of-Spell-Storing:
+
 Ring of Spell Storing
 ------------------------------------------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Giant-Fire-Beetle:
+
 Giant Fire Beetle
 -----------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Deck-of-Many-Things:
+
 Deck of Many Things
 ------------------------------------------------------
 

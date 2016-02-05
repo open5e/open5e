@@ -1,3 +1,6 @@
+
+.. _srd_Potion-of-Clairvoyance:
+
 Potion of Clairvoyance
 ------------------------------------------------------
 

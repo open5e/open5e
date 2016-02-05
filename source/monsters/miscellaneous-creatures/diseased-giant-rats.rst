@@ -1,3 +1,6 @@
+
+.. _srd_Diseased-Giant-Rats:
+
 Diseased Giant Rats
 -------------------
 

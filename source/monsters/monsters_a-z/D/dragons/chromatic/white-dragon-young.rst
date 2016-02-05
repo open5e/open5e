@@ -1,3 +1,6 @@
+
+.. _srd_White-Dragon-Young:
+
 White Dragon, Young
 -------------------
 

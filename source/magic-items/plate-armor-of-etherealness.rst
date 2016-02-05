@@ -1,3 +1,6 @@
+
+.. _srd_Plate-Armor-of-Etherealness:
+
 Plate Armor of Etherealness
 ------------------------------------------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Stone-of-Good-Luck-(Luckstone):
+
 Stone of Good Luck (Luckstone)
 ------------------------------------------------------
 

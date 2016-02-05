@@ -1,3 +1,6 @@
+
+.. _srd_Adventuring-Gear:
+
 Adventuring Gear
 ----------------
 

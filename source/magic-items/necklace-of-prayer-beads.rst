@@ -1,3 +1,6 @@
+
+.. _srd_Necklace-of-Prayer-Beads:
+
 Necklace of Prayer Beads
 ------------------------------------------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Ring-of-Elemental-Command:
+
 Ring of Elemental Command
 ------------------------------------------------------
 

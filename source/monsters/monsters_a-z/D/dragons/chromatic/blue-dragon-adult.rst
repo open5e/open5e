@@ -1,3 +1,6 @@
+
+.. _srd_Blue-Dragon-Adult:
+
 Blue Dragon, Adult
 ------------------
 

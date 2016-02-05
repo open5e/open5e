@@ -1,3 +1,6 @@
+
+.. _srd_Steam-Mephit:
+
 Steam Mephit
 ------------
 

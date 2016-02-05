@@ -1,4 +1,6 @@
 
+.. _srd_Antipathy-Sympathy:
+
 Antipathy/Sympathy
 -------------------------------------------------------------
 

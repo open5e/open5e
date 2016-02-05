@@ -1,3 +1,6 @@
+
+.. _srd_Circlet-of-Blasting:
+
 Circlet of Blasting
 ------------------------------------------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Riding-Horse:
+
 Riding Horse
 ------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Rogue-class:
+
 Rogue
 =====
 

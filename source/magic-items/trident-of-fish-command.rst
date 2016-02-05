@@ -1,3 +1,6 @@
+
+.. _srd_Trident-of-Fish-Command:
+
 Trident of Fish Command
 ------------------------------------------------------
 

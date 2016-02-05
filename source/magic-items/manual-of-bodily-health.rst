@@ -1,3 +1,6 @@
+
+.. _srd_Manual-of-Bodily-Health:
+
 Manual of Bodily Health
 ------------------------------------------------------
 

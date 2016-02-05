@@ -1,3 +1,6 @@
+
+.. _srd_Bracers-of-Archery:
+
 Bracers of Archery
 ------------------------------------------------------
 

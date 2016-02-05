@@ -1,3 +1,6 @@
+
+.. _srd_Hell-Hound:
+
 Hell Hound
 ----------
 

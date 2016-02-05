@@ -1,3 +1,6 @@
+
+.. _srd_Spellguard-Shield:
+
 Spellguard Shield
 ------------------------------------------------------
 

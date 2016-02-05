@@ -1,3 +1,6 @@
+
+.. _srd_Periapt-of-Proof-against-Poison:
+
 Periapt of Proof against Poison
 ------------------------------------------------------
 

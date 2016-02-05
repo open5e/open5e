@@ -1,3 +1,6 @@
+
+.. _srd_Hill-Giant:
+
 Hill Giant
 ----------
 

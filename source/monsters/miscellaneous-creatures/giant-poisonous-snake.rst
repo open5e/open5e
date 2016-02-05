@@ -1,3 +1,6 @@
+
+.. _srd_Giant-Poisonous-Snake:
+
 Giant Poisonous Snake
 ---------------------
 

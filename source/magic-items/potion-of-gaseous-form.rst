@@ -1,3 +1,6 @@
+
+.. _srd_Potion-of-Gaseous-Form:
+
 Potion of Gaseous Form
 ------------------------------------------------------
 

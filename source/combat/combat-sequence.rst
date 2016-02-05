@@ -1,3 +1,6 @@
+
+.. _srd_The-Order-of-Combat:
+
 The Order of Combat
 -------------------
 

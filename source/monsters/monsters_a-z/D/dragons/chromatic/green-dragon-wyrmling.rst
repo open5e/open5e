@@ -1,3 +1,6 @@
+
+.. _srd_Green-Dragon-Wyrmling:
+
 Green Dragon Wyrmling
 ---------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Frost-Giant:
+
 Frost Giant
 -----------
 

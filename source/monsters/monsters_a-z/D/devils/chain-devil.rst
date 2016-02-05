@@ -1,3 +1,6 @@
+
+.. _srd_Chain-Devil:
+
 Chain Devil
 -----------
 

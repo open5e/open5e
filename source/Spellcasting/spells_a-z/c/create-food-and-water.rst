@@ -1,4 +1,6 @@
 
+.. _srd_Create-Food-and-Water:
+
 Create Food and Water
 -------------------------------------------------------------
 

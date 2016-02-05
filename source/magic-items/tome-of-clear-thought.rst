@@ -1,3 +1,6 @@
+
+.. _srd_Tome-of-Clear-Thought:
+
 Tome of Clear Thought
 ------------------------------------------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Giant-Goat:
+
 Giant Goat
 ----------
 

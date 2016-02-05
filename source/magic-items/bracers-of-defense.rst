@@ -1,3 +1,6 @@
+
+.. _srd_Bracers-of-Defense:
+
 Bracers of Defense
 ------------------------------------------------------
 

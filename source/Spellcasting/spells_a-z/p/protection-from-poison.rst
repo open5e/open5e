@@ -1,4 +1,6 @@
 
+.. _srd_Protection-from-Poison:
+
 Protection from Poison
 -------------------------------------------------------------
 

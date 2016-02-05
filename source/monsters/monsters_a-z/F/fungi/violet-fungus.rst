@@ -1,3 +1,6 @@
+
+.. _srd_Violet-Fungus:
+
 Violet Fungus
 -------------
 

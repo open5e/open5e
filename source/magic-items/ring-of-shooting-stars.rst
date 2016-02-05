@@ -1,3 +1,6 @@
+
+.. _srd_Ring-of-Shooting-Stars:
+
 Ring of Shooting Stars
 ------------------------------------------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Gameplay-Mechanics:
+
 Gameplay Mechanics
 ------------------
 

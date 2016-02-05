@@ -1,3 +1,6 @@
+
+.. _srd_Arrow-Catching-Shield:
+
 Arrow-Catching Shield
 ------------------------------------------------------
 

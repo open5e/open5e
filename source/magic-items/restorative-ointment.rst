@@ -1,3 +1,6 @@
+
+.. _srd_Restorative-Ointment:
+
 Restorative Ointment
 ------------------------------------------------------
 

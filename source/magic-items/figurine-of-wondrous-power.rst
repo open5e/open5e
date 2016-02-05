@@ -1,3 +1,6 @@
+
+.. _srd_Figurine-of-Wondrous-Power:
+
 Figurine of Wondrous Power
 ------------------------------------------------------
 

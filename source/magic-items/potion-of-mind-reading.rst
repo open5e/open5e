@@ -1,3 +1,6 @@
+
+.. _srd_Potion-of-Mind-Reading:
+
 Potion of Mind Reading
 ------------------------------------------------------
 

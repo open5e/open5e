@@ -1,3 +1,6 @@
+
+.. _srd_Mounted-Combat:
+
 Mounted Combat
 --------------
 

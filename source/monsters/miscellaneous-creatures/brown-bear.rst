@@ -1,3 +1,6 @@
+
+.. _srd_Brown-Bear:
+
 Brown Bear
 ----------
 

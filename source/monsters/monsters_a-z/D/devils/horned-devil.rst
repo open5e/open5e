@@ -1,3 +1,6 @@
+
+.. _srd_Horned-Devil:
+
 Horned Devil
 ------------
 

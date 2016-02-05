@@ -1,3 +1,6 @@
+
+.. _srd_Bard-class:
+
 Bard
 ====
 

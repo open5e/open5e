@@ -1,3 +1,6 @@
+
+.. _srd_Cube-of-Force-Faces:
+
 Cube of Force Faces
 ------------------------------------------------------
 

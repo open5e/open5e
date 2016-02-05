@@ -1,3 +1,6 @@
+
+.. _srd_Animated-Object: Flying Sword:
+
 Animated Object: Flying Sword
 -----------------------------
 

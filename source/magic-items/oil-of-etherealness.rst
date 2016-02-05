@@ -1,3 +1,6 @@
+
+.. _srd_Oil-of-Etherealness:
+
 Oil of Etherealness
 ------------------------------------------------------
 

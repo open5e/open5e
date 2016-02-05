@@ -1,3 +1,6 @@
+
+.. _srd_Gold-Dragon-Wyrmling:
+
 Gold Dragon Wyrmling
 --------------------
 

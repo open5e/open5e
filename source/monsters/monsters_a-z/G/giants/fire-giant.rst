@@ -1,3 +1,6 @@
+
+.. _srd_Fire-Giant:
+
 Fire Giant
 ----------
 

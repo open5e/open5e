@@ -1,3 +1,6 @@
+
+.. _srd_Gold-Dragon-Ancient:
+
 Gold Dragon, Ancient
 --------------------
 

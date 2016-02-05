@@ -1,3 +1,6 @@
+
+.. _srd_Selling-Treasure:
+
 Selling Treasure
 ----------------
 

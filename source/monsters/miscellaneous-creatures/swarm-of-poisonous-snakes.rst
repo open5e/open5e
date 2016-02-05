@@ -1,3 +1,6 @@
+
+.. _srd_Swarm-of-Poisonous-Snakes:
+
 Swarm of Poisonous Snakes
 -------------------------
 
