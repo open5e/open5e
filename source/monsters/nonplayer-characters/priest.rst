@@ -1,5 +1,5 @@
 
-.. _srd_Priest:
+.. _srd:priest:
 
 Priest
 ------

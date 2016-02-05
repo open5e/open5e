@@ -1,5 +1,5 @@
 
-.. _srd_Cockatrice:
+.. _srd:cockatrice:
 
 Cockatrice
 ----------

@@ -1,5 +1,5 @@
 
-.. _srd_Flesh-Golem:
+.. _srd:flesh-golem:
 
 Flesh Golem
 -----------

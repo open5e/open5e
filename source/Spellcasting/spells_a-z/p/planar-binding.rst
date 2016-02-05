@@ -1,5 +1,5 @@
 
-.. _srd_Planar-Binding:
+.. _srd:planar-binding:
 
 Planar Binding
 -------------------------------------------------------------

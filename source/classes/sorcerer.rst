@@ -1,5 +1,5 @@
 
-.. _srd_Sorcerer-class:
+.. _srd:sorcerer-class:
 
 Sorcerer
 ========

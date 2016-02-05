@@ -1,5 +1,5 @@
 
-.. _srd_Gentle-Repose:
+.. _srd:gentle-repose:
 
 Gentle Repose
 -------------------------------------------------------------

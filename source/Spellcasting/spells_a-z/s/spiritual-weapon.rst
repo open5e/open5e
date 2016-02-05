@@ -1,5 +1,5 @@
 
-.. _srd_Spiritual-Weapon:
+.. _srd:spiritual-weapon:
 
 Spiritual Weapon
 -------------------------------------------------------------

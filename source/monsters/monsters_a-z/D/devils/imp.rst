@@ -1,5 +1,5 @@
 
-.. _srd_Imp:
+.. _srd:imp:
 
 Imp
 ---

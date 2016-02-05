@@ -1,5 +1,5 @@
 
-.. _srd_Gold-Dragon-Adult:
+.. _srd:gold-dragon-adult:
 
 Gold Dragon, Adult
 ------------------

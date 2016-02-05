@@ -1,5 +1,5 @@
 
-.. _srd_Animal-Messenger:
+.. _srd:animal-messenger:
 
 Animal Messenger
 -------------------------------------------------------------

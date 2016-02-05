@@ -1,5 +1,5 @@
 
-.. _srd_Talisman-of-the-Sphere:
+.. _srd:talisman-of-the-sphere:
 
 Talisman of the Sphere
 ------------------------------------------------------

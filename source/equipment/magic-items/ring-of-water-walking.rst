@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-Water-Walking:
+.. _srd:ring-of-water-walking:
 
 Ring of Water Walking
 ------------------------------------------------------

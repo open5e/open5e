@@ -1,5 +1,5 @@
 
-.. _srd_Running-a-Game:
+.. _srd:running-a-game:
 
 Running a Game
 --------------

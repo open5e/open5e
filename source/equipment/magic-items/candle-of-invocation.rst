@@ -1,5 +1,5 @@
 
-.. _srd_Candle-of-Invocation:
+.. _srd:candle-of-invocation:
 
 Candle of Invocation
 ------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Lemure:
+.. _srd:lemure:
 
 Lemure
 ------

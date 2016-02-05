@@ -1,5 +1,5 @@
 
-.. _srd_Black-Tentacles:
+.. _srd:black-tentacles:
 
 Black Tentacles
 -------------------------------------------------------------

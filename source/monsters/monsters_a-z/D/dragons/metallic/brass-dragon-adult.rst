@@ -1,5 +1,5 @@
 
-.. _srd_Brass-Dragon-Adult:
+.. _srd:brass-dragon-adult:
 
 Brass Dragon, Adult
 -------------------

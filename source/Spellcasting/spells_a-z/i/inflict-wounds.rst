@@ -1,5 +1,5 @@
 
-.. _srd_Inflict-Wounds:
+.. _srd:inflict-wounds:
 
 Inflict Wounds
 -------------------------------------------------------------

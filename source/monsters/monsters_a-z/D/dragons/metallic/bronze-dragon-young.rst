@@ -1,5 +1,5 @@
 
-.. _srd_Bronze-Dragon-Young:
+.. _srd:bronze-dragon-young:
 
 Bronze Dragon, Young
 --------------------

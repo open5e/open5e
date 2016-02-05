@@ -1,5 +1,5 @@
 
-.. _srd_Guiding-Bolt:
+.. _srd:guiding-bolt:
 
 Guiding Bolt
 -------------------------------------------------------------

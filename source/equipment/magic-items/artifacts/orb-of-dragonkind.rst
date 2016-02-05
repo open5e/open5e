@@ -1,5 +1,5 @@
 
-.. _srd_Orb-of-Dragonkind:
+.. _srd:orb-of-dragonkind:
 
 Orb of Dragonkind
 ------------------------------------------------------

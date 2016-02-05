@@ -1,5 +1,5 @@
 
-.. _srd_The-Order-of-Combat:
+.. _srd:the-order-of-combat:
 
 The Order of Combat
 -------------------

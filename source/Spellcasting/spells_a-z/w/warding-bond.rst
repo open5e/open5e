@@ -1,5 +1,5 @@
 
-.. _srd_Warding-Bond:
+.. _srd:warding-bond:
 
 Warding Bond
 -------------------------------------------------------------

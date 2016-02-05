@@ -1,5 +1,5 @@
 
-.. _srd_Periapt-of-Health:
+.. _srd:periapt-of-health:
 
 Periapt of Health
 ------------------------------------------------------

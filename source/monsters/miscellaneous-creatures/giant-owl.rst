@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Owl:
+.. _srd:giant-owl:
 
 Giant Owl
 ---------

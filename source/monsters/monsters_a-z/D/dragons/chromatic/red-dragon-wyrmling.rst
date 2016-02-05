@@ -1,5 +1,5 @@
 
-.. _srd_Red-Dragon-Wyrmling:
+.. _srd:red-dragon-wyrmling:
 
 Red Dragon Wyrmling
 -------------------

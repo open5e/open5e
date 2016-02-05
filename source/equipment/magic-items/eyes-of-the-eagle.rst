@@ -1,5 +1,5 @@
 
-.. _srd_Eyes-of-the-Eagle:
+.. _srd:eyes-of-the-eagle:
 
 Eyes of the Eagle
 ------------------------------------------------------

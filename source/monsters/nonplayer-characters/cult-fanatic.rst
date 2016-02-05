@@ -1,5 +1,5 @@
 
-.. _srd_Cult-Fanatic:
+.. _srd:cult-fanatic:
 
 Cult Fanatic
 ------------

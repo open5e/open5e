@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Sea-Horse:
+.. _srd:giant-sea-horse:
 
 Giant Sea Horse
 ---------------

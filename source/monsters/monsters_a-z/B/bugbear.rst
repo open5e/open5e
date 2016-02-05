@@ -1,5 +1,5 @@
 
-.. _srd_Bugbear:
+.. _srd:bugbear:
 
 Bugbear
 -------

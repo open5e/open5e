@@ -1,5 +1,5 @@
 
-.. _srd_Night-Hag:
+.. _srd:night-hag:
 
 Night Hag
 ---------

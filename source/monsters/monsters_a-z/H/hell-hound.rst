@@ -1,5 +1,5 @@
 
-.. _srd_Hell-Hound:
+.. _srd:hell-hound:
 
 Hell Hound
 ----------

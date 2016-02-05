@@ -1,5 +1,5 @@
 
-.. _srd_Universal-Solvent:
+.. _srd:universal-solvent:
 
 Universal Solvent
 ------------------------------------------------------

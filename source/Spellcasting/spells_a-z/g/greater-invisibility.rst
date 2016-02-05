@@ -1,5 +1,5 @@
 
-.. _srd_Greater-Invisibility:
+.. _srd:greater-invisibility:
 
 Greater Invisibility
 -------------------------------------------------------------

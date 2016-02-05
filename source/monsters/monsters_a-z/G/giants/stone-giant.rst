@@ -1,5 +1,5 @@
 
-.. _srd_Stone-Giant:
+.. _srd:stone-giant:
 
 Stone Giant
 -----------

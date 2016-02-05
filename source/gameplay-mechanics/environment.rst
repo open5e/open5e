@@ -1,5 +1,5 @@
 
-.. _srd_The-Environment:
+.. _srd:the-environment:
 
 The Environment
 ---------------

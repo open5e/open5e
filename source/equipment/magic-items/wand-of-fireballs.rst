@@ -1,5 +1,5 @@
 
-.. _srd_Wand-of-Fireballs:
+.. _srd:wand-of-fireballs:
 
 Wand of Fireballs
 ------------------------------------------------------

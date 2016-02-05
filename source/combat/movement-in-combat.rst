@@ -1,5 +1,5 @@
 
-.. _srd_Movement-and-Position:
+.. _srd:movement-and-position:
 
 Movement and Position
 ---------------------

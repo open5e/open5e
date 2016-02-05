@@ -1,5 +1,5 @@
 
-.. _srd_Lamia:
+.. _srd:lamia:
 
 Lamia
 -----

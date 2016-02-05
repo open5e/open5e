@@ -1,5 +1,5 @@
 
-.. _srd_Appendix-A: Conditions:
+.. _srd:appendix-a: conditions:
 
 Appendix A: Conditions
 ======================

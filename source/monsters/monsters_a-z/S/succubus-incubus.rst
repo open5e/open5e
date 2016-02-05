@@ -1,5 +1,5 @@
 
-.. _srd_Succubus/Incubus:
+.. _srd:succubus/incubus:
 
 Succubus/Incubus
 ----------------

@@ -1,5 +1,5 @@
 
-.. _srd_Transport-via-Plants:
+.. _srd:transport-via-plants:
 
 Transport via Plants
 -------------------------------------------------------------

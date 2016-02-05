@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Crab:
+.. _srd:giant-crab:
 
 Giant Crab
 ----------

@@ -1,5 +1,5 @@
 
-.. _srd_Prismatic-Wall:
+.. _srd:prismatic-wall:
 
 Prismatic Wall
 -------------------------------------------------------------

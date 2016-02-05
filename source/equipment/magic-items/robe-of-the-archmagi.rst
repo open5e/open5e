@@ -1,5 +1,5 @@
 
-.. _srd_Robe-of-the-Archmagi:
+.. _srd:robe-of-the-archmagi:
 
 Robe of the Archmagi
 ------------------------------------------------------

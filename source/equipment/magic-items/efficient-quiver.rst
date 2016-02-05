@@ -1,5 +1,5 @@
 
-.. _srd_Efficient-Quiver:
+.. _srd:efficient-quiver:
 
 Efficient Quiver
 ------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Potion-of-Invisibility:
+.. _srd:potion-of-invisibility:
 
 Potion of Invisibility
 ------------------------------------------------------

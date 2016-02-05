@@ -1,5 +1,5 @@
 
-.. _srd_Sea-Hag:
+.. _srd:sea-hag:
 
 Sea Hag
 -------

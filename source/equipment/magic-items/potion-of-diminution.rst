@@ -1,5 +1,5 @@
 
-.. _srd_Potion-of-Diminution:
+.. _srd:potion-of-diminution:
 
 Potion of Diminution
 ------------------------------------------------------

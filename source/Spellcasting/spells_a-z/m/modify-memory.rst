@@ -1,5 +1,5 @@
 
-.. _srd_Modify-Memory:
+.. _srd:modify-memory:
 
 Modify Memory
 -------------------------------------------------------------

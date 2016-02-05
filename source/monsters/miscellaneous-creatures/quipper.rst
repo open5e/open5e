@@ -1,5 +1,5 @@
 
-.. _srd_Quipper:
+.. _srd:quipper:
 
 Quipper
 -------

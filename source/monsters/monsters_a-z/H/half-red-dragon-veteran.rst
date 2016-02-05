@@ -1,5 +1,5 @@
 
-.. _srd_Half-Red-Dragon-Veteran:
+.. _srd:half-red-dragon-veteran:
 
 Half-Red Dragon Veteran
 -----------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Locate-Object:
+.. _srd:locate-object:
 
 Locate Object
 -------------------------------------------------------------

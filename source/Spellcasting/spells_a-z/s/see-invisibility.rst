@@ -1,5 +1,5 @@
 
-.. _srd_See-Invisibility:
+.. _srd:see-invisibility:
 
 See Invisibility
 -------------------------------------------------------------

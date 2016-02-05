@@ -1,5 +1,5 @@
 
-.. _srd_Goat:
+.. _srd:goat:
 
 Goat
 ----

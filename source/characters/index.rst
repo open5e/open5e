@@ -1,5 +1,5 @@
 
-.. _srd_Characters:
+.. _srd:characters:
 
 Characters
 ----------

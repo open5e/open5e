@@ -1,5 +1,5 @@
 
-.. _srd_Vampire:
+.. _srd:vampire:
 
 Vampire
 -------

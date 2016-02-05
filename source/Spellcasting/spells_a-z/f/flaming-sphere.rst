@@ -1,5 +1,5 @@
 
-.. _srd_Flaming-Sphere:
+.. _srd:flaming-sphere:
 
 Flaming Sphere
 -------------------------------------------------------------

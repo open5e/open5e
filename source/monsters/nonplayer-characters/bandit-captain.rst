@@ -1,5 +1,5 @@
 
-.. _srd_Bandit-Captain:
+.. _srd:bandit-captain:
 
 Bandit Captain
 --------------

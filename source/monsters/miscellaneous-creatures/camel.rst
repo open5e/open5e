@@ -1,5 +1,5 @@
 
-.. _srd_Camel:
+.. _srd:camel:
 
 Camel
 -----

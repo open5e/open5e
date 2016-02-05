@@ -1,5 +1,5 @@
 
-.. _srd_Glyph-of-Warding:
+.. _srd:glyph-of-warding:
 
 Glyph of Warding
 -------------------------------------------------------------

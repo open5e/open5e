@@ -1,5 +1,5 @@
 
-.. _srd_Shadow:
+.. _srd:shadow:
 
 Shadow
 ------

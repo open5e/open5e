@@ -1,5 +1,5 @@
 
-.. _srd_Robe-of-Useful-Items:
+.. _srd:robe-of-useful-items:
 
 Robe of Useful Items
 ------------------------------------------------------

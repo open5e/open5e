@@ -1,5 +1,5 @@
 
-.. _srd_Glabrezu:
+.. _srd:glabrezu:
 
 Glabrezu
 --------

@@ -1,5 +1,5 @@
 
-.. _srd_Frog:
+.. _srd:frog:
 
 Frog
 ----

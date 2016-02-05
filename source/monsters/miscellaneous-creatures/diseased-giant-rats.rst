@@ -1,5 +1,5 @@
 
-.. _srd_Diseased-Giant-Rats:
+.. _srd:diseased-giant-rats:
 
 Diseased Giant Rats
 -------------------

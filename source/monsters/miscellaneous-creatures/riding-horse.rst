@@ -1,5 +1,5 @@
 
-.. _srd_Riding-Horse:
+.. _srd:riding-horse:
 
 Riding Horse
 ------------

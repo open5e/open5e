@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Vulture:
+.. _srd:giant-vulture:
 
 Giant Vulture
 -------------

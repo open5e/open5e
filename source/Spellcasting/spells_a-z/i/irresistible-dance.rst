@@ -1,5 +1,5 @@
 
-.. _srd_Irresistible-Dance:
+.. _srd:irresistible-dance:
 
 Irresistible Dance
 -------------------------------------------------------------

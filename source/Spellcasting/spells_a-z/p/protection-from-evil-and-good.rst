@@ -1,5 +1,5 @@
 
-.. _srd_Protection-from-Evil-and-Good:
+.. _srd:protection-from-evil-and-good:
 
 Protection from Evil and Good
 -------------------------------------------------------------

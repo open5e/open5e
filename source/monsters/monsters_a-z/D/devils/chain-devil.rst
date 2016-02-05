@@ -1,5 +1,5 @@
 
-.. _srd_Chain-Devil:
+.. _srd:chain-devil:
 
 Chain Devil
 -----------

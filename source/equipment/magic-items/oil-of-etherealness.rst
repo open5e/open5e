@@ -1,5 +1,5 @@
 
-.. _srd_Oil-of-Etherealness:
+.. _srd:oil-of-etherealness:
 
 Oil of Etherealness
 ------------------------------------------------------

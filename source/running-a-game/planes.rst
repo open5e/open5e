@@ -1,5 +1,5 @@
 
-.. _srd_Appendix-C: The Planes of Existence:
+.. _srd:appendix-c: the planes of existence:
 
 Appendix C: The Planes of Existence
 ===================================

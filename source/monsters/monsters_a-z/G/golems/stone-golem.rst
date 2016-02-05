@@ -1,5 +1,5 @@
 
-.. _srd_Stone-Golem:
+.. _srd:stone-golem:
 
 Stone Golem
 -----------

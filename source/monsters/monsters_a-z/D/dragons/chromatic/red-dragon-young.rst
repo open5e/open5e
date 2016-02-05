@@ -1,5 +1,5 @@
 
-.. _srd_Red-Dragon-Young:
+.. _srd:red-dragon-young:
 
 Red Dragon, Young
 -----------------

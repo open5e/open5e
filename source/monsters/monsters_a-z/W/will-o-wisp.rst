@@ -1,5 +1,5 @@
 
-.. _srd_Will-o'-Wisp:
+.. _srd:will-o'-wisp:
 
 Will-o'-Wisp
 ------------

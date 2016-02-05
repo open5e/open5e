@@ -1,5 +1,5 @@
 
-.. _srd_Floating-Disk:
+.. _srd:floating-disk:
 
 Floating Disk
 -------------------------------------------------------------

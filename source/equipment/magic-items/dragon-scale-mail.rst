@@ -1,5 +1,5 @@
 
-.. _srd_Dragon-Scale-Mail:
+.. _srd:dragon-scale-mail:
 
 Dragon Scale Mail
 ------------------------------------------------------

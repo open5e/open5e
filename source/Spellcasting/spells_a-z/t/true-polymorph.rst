@@ -1,5 +1,5 @@
 
-.. _srd_True-Polymorph:
+.. _srd:true-polymorph:
 
 True Polymorph
 -------------------------------------------------------------

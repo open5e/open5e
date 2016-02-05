@@ -1,5 +1,5 @@
 
-.. _srd_Belt-of-Dwarvenkind:
+.. _srd:belt-of-dwarvenkind:
 
 Belt of Dwarvenkind
 ------------------------------------------------------

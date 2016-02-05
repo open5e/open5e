@@ -1,5 +1,5 @@
 
-.. _srd_Green-Dragon-Young:
+.. _srd:green-dragon-young:
 
 Green Dragon, Young
 -------------------

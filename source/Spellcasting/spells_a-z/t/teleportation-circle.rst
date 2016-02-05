@@ -1,5 +1,5 @@
 
-.. _srd_Teleportation-Circle:
+.. _srd:teleportation-circle:
 
 Teleportation Circle
 -------------------------------------------------------------

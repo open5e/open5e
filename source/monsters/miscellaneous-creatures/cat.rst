@@ -1,5 +1,5 @@
 
-.. _srd_Cat:
+.. _srd:cat:
 
 Cat
 ---

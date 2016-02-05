@@ -1,5 +1,5 @@
 
-.. _srd_Bone-Devil:
+.. _srd:bone-devil:
 
 Bone Devil
 ----------

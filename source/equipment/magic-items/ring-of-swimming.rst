@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-Swimming:
+.. _srd:ring-of-swimming:
 
 Ring of Swimming
 ------------------------------------------------------

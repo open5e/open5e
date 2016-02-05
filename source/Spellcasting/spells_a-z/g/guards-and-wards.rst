@@ -1,5 +1,5 @@
 
-.. _srd_Guards-and-Wards:
+.. _srd:guards-and-wards:
 
 Guards and Wards
 -------------------------------------------------------------

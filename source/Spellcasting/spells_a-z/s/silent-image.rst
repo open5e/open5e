@@ -1,5 +1,5 @@
 
-.. _srd_Silent-Image:
+.. _srd:silent-image:
 
 Silent Image
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Races:
+.. _srd:races:
 
 Races
 -----

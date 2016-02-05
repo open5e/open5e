@@ -1,5 +1,5 @@
 
-.. _srd_Spells-by-Class:
+.. _srd:spells-by-class:
 
 Spells by Class
 ----------------

@@ -1,5 +1,5 @@
 
-.. _srd_Aboleth:
+.. _srd:aboleth:
 
 Aboleth
 -------

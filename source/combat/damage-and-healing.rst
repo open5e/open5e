@@ -1,5 +1,5 @@
 
-.. _srd_Damage-and-Healing:
+.. _srd:damage-and-healing:
 
 Damage and Healing
 ------------------

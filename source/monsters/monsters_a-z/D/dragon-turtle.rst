@@ -1,5 +1,5 @@
 
-.. _srd_Dragon-Turtle:
+.. _srd:dragon-turtle:
 
 Dragon Turtle
 -------------

@@ -1,5 +1,5 @@
 
-.. _srd_Potion-of-Healing:
+.. _srd:potion-of-healing:
 
 Potion of Healing
 ------------------------------------------------------

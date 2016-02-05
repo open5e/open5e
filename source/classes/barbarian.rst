@@ -1,5 +1,5 @@
 
-.. _srd_Barbarian-class:
+.. _srd:barbarian-class:
 
 Barbarian
 =========

@@ -1,5 +1,5 @@
 
-.. _srd_Plant-Growth:
+.. _srd:plant-growth:
 
 Plant Growth
 -------------------------------------------------------------

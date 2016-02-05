@@ -1,5 +1,5 @@
 
-.. _srd_Pony:
+.. _srd:pony:
 
 Pony
 ----

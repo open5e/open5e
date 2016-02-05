@@ -1,5 +1,5 @@
 
-.. _srd_Hold-Monster:
+.. _srd:hold-monster:
 
 Hold Monster
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Hippogriff:
+.. _srd:hippogriff:
 
 Hippogriff
 ----------

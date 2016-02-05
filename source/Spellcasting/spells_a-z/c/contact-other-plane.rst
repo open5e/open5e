@@ -1,5 +1,5 @@
 
-.. _srd_Contact-Other-Plane:
+.. _srd:contact-other-plane:
 
 Contact Other Plane
 -------------------------------------------------------------

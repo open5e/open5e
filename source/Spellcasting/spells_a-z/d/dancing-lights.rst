@@ -1,4 +1,4 @@
-.. _srd_dancing-lights:
+.. _srd:dancing-lights:
 
 Dancing Lights
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Swarm-of-Ravens:
+.. _srd:swarm-of-ravens:
 
 Swarm of Ravens
 ---------------

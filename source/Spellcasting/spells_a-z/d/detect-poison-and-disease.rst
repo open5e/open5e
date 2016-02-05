@@ -1,5 +1,5 @@
 
-.. _srd_Detect-Poison-and-Disease:
+.. _srd:detect-poison-and-disease:
 
 Detect Poison and Disease
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Mule:
+.. _srd:mule:
 
 Mule
 ----

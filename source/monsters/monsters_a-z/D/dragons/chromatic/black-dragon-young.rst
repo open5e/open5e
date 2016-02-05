@@ -1,5 +1,5 @@
 
-.. _srd_Black-Dragon-Young:
+.. _srd:black-dragon-young:
 
 Black Dragon, Young
 -------------------

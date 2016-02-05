@@ -1,5 +1,5 @@
 
-.. _srd_Magnificent-Mansion:
+.. _srd:magnificent-mansion:
 
 Magnificent Mansion
 -------------------------------------------------------------

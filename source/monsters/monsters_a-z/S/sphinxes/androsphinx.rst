@@ -1,5 +1,5 @@
 
-.. _srd_Androsphinx:
+.. _srd:androsphinx:
 
 Androsphinx
 -----------

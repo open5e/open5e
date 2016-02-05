@@ -1,5 +1,5 @@
 
-.. _srd_Chain-Lightning:
+.. _srd:chain-lightning:
 
 Chain Lightning
 -------------------------------------------------------------

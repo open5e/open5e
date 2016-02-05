@@ -1,5 +1,5 @@
 
-.. _srd_Carpet-of-Flying:
+.. _srd:carpet-of-flying:
 
 Carpet of Flying
 ------------------------------------------------------

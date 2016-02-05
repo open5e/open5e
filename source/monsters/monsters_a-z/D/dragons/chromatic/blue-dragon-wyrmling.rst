@@ -1,5 +1,5 @@
 
-.. _srd_Blue-Dragon-Wyrmling:
+.. _srd:blue-dragon-wyrmling:
 
 Blue Dragon Wyrmling
 --------------------

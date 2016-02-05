@@ -1,5 +1,5 @@
 
-.. _srd_Winter-Wolf:
+.. _srd:winter-wolf:
 
 Winter Wolf
 -----------

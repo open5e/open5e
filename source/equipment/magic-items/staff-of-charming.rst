@@ -1,5 +1,5 @@
 
-.. _srd_Staff-of-Charming:
+.. _srd:staff-of-charming:
 
 Staff of Charming
 ------------------------------------------------------

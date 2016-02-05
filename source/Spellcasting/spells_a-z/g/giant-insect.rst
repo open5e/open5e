@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Insect:
+.. _srd:giant-insect:
 
 Giant Insect
 -------------------------------------------------------------

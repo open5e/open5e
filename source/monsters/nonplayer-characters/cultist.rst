@@ -1,5 +1,5 @@
 
-.. _srd_Cultist:
+.. _srd:cultist:
 
 Cultist
 -------

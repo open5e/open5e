@@ -1,5 +1,5 @@
 
-.. _srd_Traps:
+.. _srd:traps:
 
 Traps
 -----

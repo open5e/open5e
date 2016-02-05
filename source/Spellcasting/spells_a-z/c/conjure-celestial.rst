@@ -1,5 +1,5 @@
 
-.. _srd_Conjure-Celestial:
+.. _srd:conjure-celestial:
 
 Conjure Celestial
 -------------------------------------------------------------

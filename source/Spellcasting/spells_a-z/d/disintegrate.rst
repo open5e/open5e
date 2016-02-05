@@ -1,5 +1,5 @@
 
-.. _srd_Disintegrate:
+.. _srd:disintegrate:
 
 Disintegrate
 -------------------------------------------------------------

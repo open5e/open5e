@@ -1,5 +1,5 @@
 
-.. _srd_Water-Breathing:
+.. _srd:water-breathing:
 
 Water Breathing
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Making-an-Attack:
+.. _srd:making-an-attack:
 
 Making an Attack
 ----------------

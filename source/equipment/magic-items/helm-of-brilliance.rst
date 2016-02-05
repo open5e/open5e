@@ -1,5 +1,5 @@
 
-.. _srd_Helm-of-Brilliance:
+.. _srd:helm-of-brilliance:
 
 Helm of Brilliance
 ------------------------------------------------------

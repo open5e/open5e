@@ -1,5 +1,5 @@
 
-.. _srd_Detect-Evil-and-Good:
+.. _srd:detect-evil-and-good:
 
 Detect Evil and Good
 -------------------------------------------------------------

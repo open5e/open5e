@@ -1,5 +1,5 @@
 
-.. _srd_Sword-of-Sharpness:
+.. _srd:sword-of-sharpness:
 
 Sword of Sharpness
 ------------------------------------------------------

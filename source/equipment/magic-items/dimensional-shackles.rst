@@ -1,5 +1,5 @@
 
-.. _srd_Dimensional-Shackles:
+.. _srd:dimensional-shackles:
 
 Dimensional Shackles
 ------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Prismatic-Spray:
+.. _srd:prismatic-spray:
 
 Prismatic Spray
 -------------------------------------------------------------

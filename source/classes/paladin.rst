@@ -1,5 +1,5 @@
 
-.. _srd_Paladin-class:
+.. _srd:paladin-class:
 
 Paladin
 =======

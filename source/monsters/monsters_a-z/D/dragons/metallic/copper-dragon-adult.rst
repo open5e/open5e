@@ -1,5 +1,5 @@
 
-.. _srd_Copper-Dragon-Adult:
+.. _srd:copper-dragon-adult:
 
 Copper Dragon, Adult
 --------------------

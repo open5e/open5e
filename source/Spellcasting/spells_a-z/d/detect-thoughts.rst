@@ -1,5 +1,5 @@
 
-.. _srd_Detect-Thoughts:
+.. _srd:detect-thoughts:
 
 Detect Thoughts
 -------------------------------------------------------------

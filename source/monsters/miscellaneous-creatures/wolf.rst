@@ -1,5 +1,5 @@
 
-.. _srd_Wolf:
+.. _srd:wolf:
 
 Wolf
 ----

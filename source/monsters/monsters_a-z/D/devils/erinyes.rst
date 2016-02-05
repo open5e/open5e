@@ -1,5 +1,5 @@
 
-.. _srd_Erinyes:
+.. _srd:erinyes:
 
 Erinyes
 -------

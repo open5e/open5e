@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Constrictor-Snake:
+.. _srd:giant-constrictor-snake:
 
 Giant Constrictor Snake
 -----------------------

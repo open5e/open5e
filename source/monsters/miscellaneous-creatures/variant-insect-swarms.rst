@@ -1,5 +1,5 @@
 
-.. _srd_Variant-Insect-Swarms:
+.. _srd:variant-insect-swarms:
 
 Variant Insect Swarms
 ---------------------

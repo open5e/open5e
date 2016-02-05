@@ -1,5 +1,5 @@
 
-.. _srd_Resilient-Sphere:
+.. _srd:resilient-sphere:
 
 Resilient Sphere
 -------------------------------------------------------------

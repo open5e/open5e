@@ -1,5 +1,5 @@
 
-.. _srd_Blade-Barrier:
+.. _srd:blade-barrier:
 
 Blade Barrier
 -------------------------------------------------------------

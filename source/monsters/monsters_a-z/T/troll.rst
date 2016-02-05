@@ -1,5 +1,5 @@
 
-.. _srd_Troll:
+.. _srd:troll:
 
 Troll
 -----

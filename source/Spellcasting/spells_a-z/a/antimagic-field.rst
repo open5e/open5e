@@ -1,5 +1,5 @@
 
-.. _srd_Antimagic-Field:
+.. _srd:antimagic-field:
 
 Antimagic Field
 -------------------------------------------------------------

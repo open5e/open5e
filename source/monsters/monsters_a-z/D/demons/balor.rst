@@ -1,5 +1,5 @@
 
-.. _srd_Balor:
+.. _srd:balor:
 
 Balor
 -----

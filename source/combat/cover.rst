@@ -1,5 +1,5 @@
 
-.. _srd_Cover:
+.. _srd:cover:
 
 Cover
 -----

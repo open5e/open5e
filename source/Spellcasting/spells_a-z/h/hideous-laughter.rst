@@ -1,5 +1,5 @@
 
-.. _srd_Hideous-Laughter:
+.. _srd:hideous-laughter:
 
 Hideous Laughter
 -------------------------------------------------------------

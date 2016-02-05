@@ -1,5 +1,5 @@
 
-.. _srd_Mass-Healing-Word:
+.. _srd:mass-healing-word:
 
 Mass Healing Word
 -------------------------------------------------------------

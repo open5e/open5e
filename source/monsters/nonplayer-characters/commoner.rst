@@ -1,5 +1,5 @@
 
-.. _srd_Commoner:
+.. _srd:commoner:
 
 Commoner
 --------

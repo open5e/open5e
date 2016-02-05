@@ -1,5 +1,5 @@
 
-.. _srd_Black-Pudding:
+.. _srd:black-pudding:
 
 Black Pudding
 -------------

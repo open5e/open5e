@@ -1,5 +1,5 @@
 
-.. _srd_Between-Adventures:
+.. _srd:between-adventures:
 
 Between Adventures
 ------------------

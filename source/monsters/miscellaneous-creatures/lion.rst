@@ -1,5 +1,5 @@
 
-.. _srd_Lion:
+.. _srd:lion:
 
 Lion
 ----

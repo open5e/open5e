@@ -1,5 +1,5 @@
 
-.. _srd_Storm-of-Vengeance:
+.. _srd:storm-of-vengeance:
 
 Storm of Vengeance
 -------------------------------------------------------------

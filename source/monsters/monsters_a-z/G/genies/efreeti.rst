@@ -1,5 +1,5 @@
 
-.. _srd_Efreeti:
+.. _srd:efreeti:
 
 Efreeti
 -------

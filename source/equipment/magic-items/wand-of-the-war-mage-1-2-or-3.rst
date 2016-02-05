@@ -1,5 +1,5 @@
 
-.. _srd_Wand-of-the-War-Mage-+1, +2, or +3:
+.. _srd:wand-of-the-war-mage-+1, +2, or +3:
 
 Wand of the War Mage, +1, +2, or +3
 ------------------------------------------------------

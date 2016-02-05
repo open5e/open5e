@@ -1,5 +1,5 @@
 
-.. _srd_Feather-Fall:
+.. _srd:feather-fall:
 
 Feather Fall
 -------------------------------------------------------------

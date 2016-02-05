@@ -1,5 +1,5 @@
 
-.. _srd_Adventuring-Gear:
+.. _srd:adventuring-gear:
 
 Adventuring Gear
 ----------------

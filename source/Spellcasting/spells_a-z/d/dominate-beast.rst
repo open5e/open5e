@@ -1,5 +1,5 @@
 
-.. _srd_Dominate-Beast:
+.. _srd:dominate-beast:
 
 Dominate Beast
 -------------------------------------------------------------

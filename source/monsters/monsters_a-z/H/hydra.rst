@@ -1,5 +1,5 @@
 
-.. _srd_Hydra:
+.. _srd:hydra:
 
 Hydra
 -----

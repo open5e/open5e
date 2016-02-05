@@ -1,5 +1,5 @@
 
-.. _srd_Reverse-Gravity:
+.. _srd:reverse-gravity:
 
 Reverse Gravity
 -------------------------------------------------------------

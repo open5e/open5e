@@ -1,5 +1,5 @@
 
-.. _srd_Green-Dragon-Ancient:
+.. _srd:green-dragon-ancient:
 
 Green Dragon, Ancient
 ---------------------

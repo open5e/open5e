@@ -1,5 +1,5 @@
 
-.. _srd_Drider:
+.. _srd:drider:
 
 Drider
 ------

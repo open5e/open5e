@@ -1,5 +1,5 @@
 
-.. _srd_Magmin:
+.. _srd:magmin:
 
 Magmin
 ------

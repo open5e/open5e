@@ -1,5 +1,5 @@
 
-.. _srd_Deva:
+.. _srd:deva:
 
 Deva
 ----

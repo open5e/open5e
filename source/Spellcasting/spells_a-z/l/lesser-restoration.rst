@@ -1,5 +1,5 @@
 
-.. _srd_Lesser-Restoration:
+.. _srd:lesser-restoration:
 
 Lesser Restoration
 -------------------------------------------------------------

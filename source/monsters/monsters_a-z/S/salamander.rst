@@ -1,5 +1,5 @@
 
-.. _srd_Salamander:
+.. _srd:salamander:
 
 Salamander
 ----------

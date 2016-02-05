@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-Free-Action:
+.. _srd:ring-of-free-action:
 
 Ring of Free Action
 ------------------------------------------------------

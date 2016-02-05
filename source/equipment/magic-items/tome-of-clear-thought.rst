@@ -1,5 +1,5 @@
 
-.. _srd_Tome-of-Clear-Thought:
+.. _srd:tome-of-clear-thought:
 
 Tome of Clear Thought
 ------------------------------------------------------

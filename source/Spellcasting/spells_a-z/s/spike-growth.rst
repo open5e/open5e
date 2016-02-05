@@ -1,5 +1,5 @@
 
-.. _srd_Spike-Growth:
+.. _srd:spike-growth:
 
 Spike Growth
 -------------------------------------------------------------

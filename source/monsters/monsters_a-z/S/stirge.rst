@@ -1,5 +1,5 @@
 
-.. _srd_Stirge:
+.. _srd:stirge:
 
 Stirge
 ------

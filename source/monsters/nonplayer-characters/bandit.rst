@@ -1,5 +1,5 @@
 
-.. _srd_Bandit:
+.. _srd:bandit:
 
 Bandit
 ------

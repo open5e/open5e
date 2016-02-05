@@ -1,5 +1,5 @@
 
-.. _srd_Homunculus:
+.. _srd:homunculus:
 
 Homunculus
 ----------

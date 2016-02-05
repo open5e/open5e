@@ -1,5 +1,5 @@
 
-.. _srd_Etherealness:
+.. _srd:etherealness:
 
 Etherealness
 -------------------------------------------------------------

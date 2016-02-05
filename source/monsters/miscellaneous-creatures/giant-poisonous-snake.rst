@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Poisonous-Snake:
+.. _srd:giant-poisonous-snake:
 
 Giant Poisonous Snake
 ---------------------

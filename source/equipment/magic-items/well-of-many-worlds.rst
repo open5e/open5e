@@ -1,5 +1,5 @@
 
-.. _srd_Well-of-Many-Worlds:
+.. _srd:well-of-many-worlds:
 
 Well of Many Worlds
 ------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Boots-of-Levitation:
+.. _srd:boots-of-levitation:
 
 Boots of Levitation
 ------------------------------------------------------

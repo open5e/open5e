@@ -1,5 +1,5 @@
 
-.. _srd_White-Dragon-Adult:
+.. _srd:white-dragon-adult:
 
 White Dragon, Adult
 -------------------

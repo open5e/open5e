@@ -1,5 +1,5 @@
 
-.. _srd_Call-Lightning:
+.. _srd:call-lightning:
 
 Call Lightning
 -------------------------------------------------------------

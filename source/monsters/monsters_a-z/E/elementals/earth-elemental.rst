@@ -1,5 +1,5 @@
 
-.. _srd_Earth-Elemental:
+.. _srd:earth-elemental:
 
 Earth Elemental
 ---------------

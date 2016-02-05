@@ -1,5 +1,5 @@
 
-.. _srd_Centaur:
+.. _srd:centaur:
 
 Centaur
 -------

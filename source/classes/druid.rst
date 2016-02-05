@@ -1,5 +1,5 @@
 
-.. _srd_Druid-class:
+.. _srd:druid-class:
 
 Druid
 =====

@@ -1,5 +1,5 @@
 
-.. _srd_Sword-of-Life-Stealing:
+.. _srd:sword-of-life-stealing:
 
 Sword of Life Stealing
 ------------------------------------------------------

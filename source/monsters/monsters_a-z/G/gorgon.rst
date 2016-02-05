@@ -1,5 +1,5 @@
 
-.. _srd_Gorgon:
+.. _srd:gorgon:
 
 Gorgon
 ------

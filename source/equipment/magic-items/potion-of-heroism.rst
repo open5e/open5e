@@ -1,5 +1,5 @@
 
-.. _srd_Potion-of-Heroism:
+.. _srd:potion-of-heroism:
 
 Potion of Heroism
 ------------------------------------------------------

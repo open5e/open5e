@@ -1,5 +1,5 @@
 
-.. _srd_Silver-Dragon-Young:
+.. _srd:silver-dragon-young:
 
 Silver Dragon, Young
 --------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Badger:
+.. _srd:giant-badger:
 
 Giant Badger
 ------------

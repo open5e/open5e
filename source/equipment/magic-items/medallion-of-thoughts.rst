@@ -1,5 +1,5 @@
 
-.. _srd_Medallion-of-Thoughts:
+.. _srd:medallion-of-thoughts:
 
 Medallion of Thoughts
 ------------------------------------------------------

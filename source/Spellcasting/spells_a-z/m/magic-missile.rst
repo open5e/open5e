@@ -1,5 +1,5 @@
 
-.. _srd_Magic-Missile:
+.. _srd:magic-missile:
 
 Magic Missile
 -------------------------------------------------------------

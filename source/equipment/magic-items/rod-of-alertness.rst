@@ -1,5 +1,5 @@
 
-.. _srd_Rod-of-Alertness:
+.. _srd:rod-of-alertness:
 
 Rod of Alertness
 ------------------------------------------------------

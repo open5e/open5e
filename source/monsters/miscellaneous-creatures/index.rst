@@ -1,5 +1,5 @@
 
-.. _srd_Miscellaneous-Creatures-list:
+.. _srd:miscellaneous-creatures-list:
 
 Miscellaneous Creatures
 -------------------------------------------------------------

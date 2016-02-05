@@ -1,5 +1,5 @@
 
-.. _srd_Noble:
+.. _srd:noble:
 
 Noble
 -----

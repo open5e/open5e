@@ -1,5 +1,5 @@
 
-.. _srd_Tarrasque:
+.. _srd:tarrasque:
 
 Tarrasque
 ---------

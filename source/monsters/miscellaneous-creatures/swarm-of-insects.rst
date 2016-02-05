@@ -1,5 +1,5 @@
 
-.. _srd_Swarm-of-Insects:
+.. _srd:swarm-of-insects:
 
 Swarm of Insects
 ----------------

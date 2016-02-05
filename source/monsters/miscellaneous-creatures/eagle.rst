@@ -1,5 +1,5 @@
 
-.. _srd_Eagle:
+.. _srd:eagle:
 
 Eagle
 -----

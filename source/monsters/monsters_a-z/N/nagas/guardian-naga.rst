@@ -1,5 +1,5 @@
 
-.. _srd_Guardian-Naga:
+.. _srd:guardian-naga:
 
 Guardian Naga
 -------------

@@ -1,5 +1,5 @@
 
-.. _srd_Adherer:
+.. _srd:adherer:
 
 Adherer
 -------

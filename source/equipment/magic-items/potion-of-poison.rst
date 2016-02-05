@@ -1,5 +1,5 @@
 
-.. _srd_Potion-of-Poison:
+.. _srd:potion-of-poison:
 
 Potion of Poison
 ------------------------------------------------------

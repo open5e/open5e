@@ -1,5 +1,5 @@
 
-.. _srd_Elf-Drow:
+.. _srd:elf-drow:
 
 Elf, Drow
 ---------

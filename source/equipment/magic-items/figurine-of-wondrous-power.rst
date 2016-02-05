@@ -1,5 +1,5 @@
 
-.. _srd_Figurine-of-Wondrous-Power:
+.. _srd:figurine-of-wondrous-power:
 
 Figurine of Wondrous Power
 ------------------------------------------------------

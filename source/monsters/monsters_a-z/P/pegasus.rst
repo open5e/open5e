@@ -1,5 +1,5 @@
 
-.. _srd_Pegasus:
+.. _srd:pegasus:
 
 Pegasus
 -------

@@ -1,5 +1,5 @@
 
-.. _srd_Rope-of-Climbing:
+.. _srd:rope-of-climbing:
 
 Rope of Climbing
 ------------------------------------------------------

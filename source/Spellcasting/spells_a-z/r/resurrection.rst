@@ -1,5 +1,5 @@
 
-.. _srd_Resurrection:
+.. _srd:resurrection:
 
 Resurrection
 -------------------------------------------------------------

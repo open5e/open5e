@@ -1,5 +1,5 @@
 
-.. _srd_Tyrannosaurus-Rex:
+.. _srd:tyrannosaurus-rex:
 
 Tyrannosaurus Rex
 -----------------

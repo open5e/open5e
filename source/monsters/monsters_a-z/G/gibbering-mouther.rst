@@ -1,5 +1,5 @@
 
-.. _srd_Gibbering-Mouther:
+.. _srd:gibbering-mouther:
 
 Gibbering Mouther
 -----------------

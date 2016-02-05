@@ -1,5 +1,5 @@
 
-.. _srd_Spellcasting:
+.. _srd:spellcasting:
 
 Spellcasting
 ------------

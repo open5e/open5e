@@ -1,5 +1,5 @@
 
-.. _srd_Knight:
+.. _srd:knight:
 
 Knight
 ------

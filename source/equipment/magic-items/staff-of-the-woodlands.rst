@@ -1,5 +1,5 @@
 
-.. _srd_Staff-of-the-Woodlands:
+.. _srd:staff-of-the-woodlands:
 
 Staff of the Woodlands
 ------------------------------------------------------

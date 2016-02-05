@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-Spell-Turning:
+.. _srd:ring-of-spell-turning:
 
 Ring of Spell Turning
 ------------------------------------------------------

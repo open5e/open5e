@@ -1,5 +1,5 @@
 
-.. _srd_Bronze-Dragon-Wyrmling:
+.. _srd:bronze-dragon-wyrmling:
 
 Bronze Dragon Wyrmling
 ----------------------

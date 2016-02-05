@@ -1,5 +1,5 @@
 
-.. _srd_Illusory-Script:
+.. _srd:illusory-script:
 
 Illusory Script
 -------------------------------------------------------------

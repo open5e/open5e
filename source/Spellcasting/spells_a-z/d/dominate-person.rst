@@ -1,5 +1,5 @@
 
-.. _srd_Dominate-Person:
+.. _srd:dominate-person:
 
 Dominate Person
 -------------------------------------------------------------

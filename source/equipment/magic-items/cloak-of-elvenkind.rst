@@ -1,5 +1,5 @@
 
-.. _srd_Cloak-of-Elvenkind:
+.. _srd:cloak-of-elvenkind:
 
 Cloak of Elvenkind
 ------------------------------------------------------

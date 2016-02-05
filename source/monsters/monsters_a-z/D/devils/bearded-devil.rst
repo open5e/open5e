@@ -1,5 +1,5 @@
 
-.. _srd_Bearded-Devil:
+.. _srd:bearded-devil:
 
 Bearded Devil
 -------------

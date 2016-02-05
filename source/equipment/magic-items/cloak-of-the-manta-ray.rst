@@ -1,5 +1,5 @@
 
-.. _srd_Cloak-of-the-Manta-Ray:
+.. _srd:cloak-of-the-manta-ray:
 
 Cloak of the Manta Ray
 ------------------------------------------------------

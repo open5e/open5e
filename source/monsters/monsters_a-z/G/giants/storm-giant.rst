@@ -1,5 +1,5 @@
 
-.. _srd_Storm-Giant:
+.. _srd:storm-giant:
 
 Storm Giant
 -----------

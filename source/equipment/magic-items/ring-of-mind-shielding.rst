@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-Mind-Shielding:
+.. _srd:ring-of-mind-shielding:
 
 Ring of Mind Shielding
 ------------------------------------------------------

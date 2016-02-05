@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Frog:
+.. _srd:giant-frog:
 
 Giant Frog
 ----------

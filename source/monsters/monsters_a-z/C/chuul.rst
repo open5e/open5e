@@ -1,5 +1,5 @@
 
-.. _srd_Chuul:
+.. _srd:chuul:
 
 Chuul
 -----

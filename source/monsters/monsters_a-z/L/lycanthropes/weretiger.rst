@@ -1,5 +1,5 @@
 
-.. _srd_Weretiger:
+.. _srd:weretiger:
 
 Weretiger
 ---------

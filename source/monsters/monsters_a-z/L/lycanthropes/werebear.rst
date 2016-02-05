@@ -1,5 +1,5 @@
 
-.. _srd_Werebear:
+.. _srd:werebear:
 
 Werebear
 --------

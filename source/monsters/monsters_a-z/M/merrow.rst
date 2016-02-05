@@ -1,5 +1,5 @@
 
-.. _srd_Merrow:
+.. _srd:merrow:
 
 Merrow
 ------

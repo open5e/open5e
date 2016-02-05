@@ -1,5 +1,5 @@
 
-.. _srd_Remorhaz:
+.. _srd:remorhaz:
 
 Remorhaz
 --------

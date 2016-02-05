@@ -1,5 +1,5 @@
 
-.. _srd_Wall-of-Thorns:
+.. _srd:wall-of-thorns:
 
 Wall of Thorns
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Warlock-Spells:
+.. _srd:warlock-spells:
 
 Warlock Spells
 --------------
@@ -7,99 +7,99 @@ Warlock Spells
 Cantrips (0 Level)
 ~~~~~~~~~~~~~~~~~~
 
-- :ref:`srd_Chill-Touch`
-- :ref:`srd_Mage-Hand`
-- :ref:`srd_Minor-Illusion`
-- :ref:`srd_Prestidigitation`
-- :ref:`srd_True-Strike`
+- :ref:`srd:chill-touch`
+- :ref:`srd:mage-hand`
+- :ref:`srd:minor-illusion`
+- :ref:`srd:prestidigitation`
+- :ref:`srd:true-strike`
 
 1st Level
 ~~~~~~~~~
 
-- :ref:`srd_Charm-Person`
-- :ref:`srd_Comprehend-Languages`
-- :ref:`srd_Expeditious-Retreat`
-- :ref:`srd_Illusory-Script`
-- :ref:`srd_Protection-from-Evil-and-Good`
-- :ref:`srd_Unseen-Servant`
+- :ref:`srd:charm-person`
+- :ref:`srd:comprehend-languages`
+- :ref:`srd:expeditious-retreat`
+- :ref:`srd:illusory-script`
+- :ref:`srd:protection-from-evil-and-good`
+- :ref:`srd:unseen-servant`
 
 2nd Level
 ~~~~~~~~~
 
-- :ref:`srd_Darkness`
-- :ref:`srd_Enthrall`
-- :ref:`srd_Hold-Person`
-- :ref:`srd_Invisibility`
-- :ref:`srd_Mirror-Image`
-- :ref:`srd_Misty-Step`
-- :ref:`srd_Ray-of-Enfeeblement`
-- :ref:`srd_Shatter`
-- :ref:`srd_Spider-Climb`
-- :ref:`srd_Suggestion`
+- :ref:`srd:darkness`
+- :ref:`srd:enthrall`
+- :ref:`srd:hold-person`
+- :ref:`srd:invisibility`
+- :ref:`srd:mirror-image`
+- :ref:`srd:misty-step`
+- :ref:`srd:ray-of-enfeeblement`
+- :ref:`srd:shatter`
+- :ref:`srd:spider-climb`
+- :ref:`srd:suggestion`
 
 3rd Level
 ~~~~~~~~~
 
-- :ref:`srd_Dispel-Magic`
-- :ref:`srd_Fear`
-- :ref:`srd_Fly`
-- :ref:`srd_Gaseous-Form`
-- :ref:`srd_Hypnotic-Pattern`
-- :ref:`srd_Magic-Circle`
-- :ref:`srd_Major-Image`
-- :ref:`srd_Remove-Curse`
-- :ref:`srd_Tongues`
-- :ref:`srd_Vampiric-Touch`
+- :ref:`srd:dispel-magic`
+- :ref:`srd:fear`
+- :ref:`srd:fly`
+- :ref:`srd:gaseous-form`
+- :ref:`srd:hypnotic-pattern`
+- :ref:`srd:magic-circle`
+- :ref:`srd:major-image`
+- :ref:`srd:remove-curse`
+- :ref:`srd:tongues`
+- :ref:`srd:vampiric-touch`
 
 4th Level
 ~~~~~~~~~
 
-- :ref:`srd_Banishment`
-- :ref:`srd_Blight`
-- :ref:`srd_Dimension-Door`
-- :ref:`srd_Hallucinatory-Terrain`
+- :ref:`srd:banishment`
+- :ref:`srd:blight`
+- :ref:`srd:dimension-door`
+- :ref:`srd:hallucinatory-terrain`
 
 5th Level
 ~~~~~~~~~
 
-- :ref:`srd_Contact-Other-Plane`
-- :ref:`srd_Dream`
-- :ref:`srd_Hold-Monster`
-- :ref:`srd_Scrying`
+- :ref:`srd:contact-other-plane`
+- :ref:`srd:dream`
+- :ref:`srd:hold-monster`
+- :ref:`srd:scrying`
 
 6th Level
 ~~~~~~~~~
 
-- :ref:`srd_Circle-of-Death`
-- :ref:`srd_Conjure-Fey`
-- :ref:`srd_Create-Undead`
-- :ref:`srd_Eyebite`
-- :ref:`srd_Flesh-to-Stone`
-- :ref:`srd_Mass-Suggestion`
-- :ref:`srd_True-Seeing`
+- :ref:`srd:circle-of-death`
+- :ref:`srd:conjure-fey`
+- :ref:`srd:create-undead`
+- :ref:`srd:eyebite`
+- :ref:`srd:flesh-to-stone`
+- :ref:`srd:mass-suggestion`
+- :ref:`srd:true-seeing`
 
 7th Level
 ~~~~~~~~~
 
-- :ref:`srd_Etherealness`
-- :ref:`srd_Finger-of-Death`
-- :ref:`srd_Forcecage`
-- :ref:`srd_Plane-Shift`
+- :ref:`srd:etherealness`
+- :ref:`srd:finger-of-death`
+- :ref:`srd:forcecage`
+- :ref:`srd:plane-shift`
 
 8th Level
 ~~~~~~~~~
 
-- :ref:`srd_Demiplane`
-- :ref:`srd_Dominate-Monster`
-- :ref:`srd_Feeblemind`
-- :ref:`srd_Glibness`
-- :ref:`srd_Power-Word-Stun`
+- :ref:`srd:demiplane`
+- :ref:`srd:dominate-monster`
+- :ref:`srd:feeblemind`
+- :ref:`srd:glibness`
+- :ref:`srd:power-word-stun`
 
 9th Level
 ~~~~~~~~~
 
-- :ref:`srd_Astral-Projection`
-- :ref:`srd_Foresight`
-- :ref:`srd_Imprisonment`
-- :ref:`srd_Power-Word-Kill`
-- :ref:`srd_True-Polymorph`
+- :ref:`srd:astral-projection`
+- :ref:`srd:foresight`
+- :ref:`srd:imprisonment`
+- :ref:`srd:power-word-kill`
+- :ref:`srd:true-polymorph`

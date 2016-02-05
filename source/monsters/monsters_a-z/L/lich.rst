@@ -1,5 +1,5 @@
 
-.. _srd_Lich:
+.. _srd:lich:
 
 Lich
 ----

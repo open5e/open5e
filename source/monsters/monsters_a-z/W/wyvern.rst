@@ -1,5 +1,5 @@
 
-.. _srd_Wyvern:
+.. _srd:wyvern:
 
 Wyvern
 ------

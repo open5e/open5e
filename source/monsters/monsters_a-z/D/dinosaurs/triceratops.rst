@@ -1,5 +1,5 @@
 
-.. _srd_Triceratops:
+.. _srd:triceratops:
 
 Triceratops
 -----------

@@ -1,5 +1,5 @@
 
-.. _srd_Control-Water:
+.. _srd:control-water:
 
 Control Water
 -------------------------------------------------------------

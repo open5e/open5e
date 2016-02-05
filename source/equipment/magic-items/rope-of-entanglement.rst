@@ -1,5 +1,5 @@
 
-.. _srd_Rope-of-Entanglement:
+.. _srd:rope-of-entanglement:
 
 Rope of Entanglement
 ------------------------------------------------------

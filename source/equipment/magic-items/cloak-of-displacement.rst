@@ -1,5 +1,5 @@
 
-.. _srd_Cloak-of-Displacement:
+.. _srd:cloak-of-displacement:
 
 Cloak of Displacement
 ------------------------------------------------------

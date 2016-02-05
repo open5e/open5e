@@ -1,5 +1,5 @@
 
-.. _srd_Thaumaturgy:
+.. _srd:thaumaturgy:
 
 Thaumaturgy
 -------------------------------------------------------------

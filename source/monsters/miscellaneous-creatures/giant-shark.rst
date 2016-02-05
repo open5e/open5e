@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Shark:
+.. _srd:giant-shark:
 
 Giant Shark
 -----------

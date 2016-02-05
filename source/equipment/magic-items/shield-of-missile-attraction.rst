@@ -1,5 +1,5 @@
 
-.. _srd_Shield-of-Missile-Attraction:
+.. _srd:shield-of-missile-attraction:
 
 Shield of Missile Attraction
 ------------------------------------------------------

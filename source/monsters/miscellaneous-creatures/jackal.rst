@@ -1,5 +1,5 @@
 
-.. _srd_Jackal:
+.. _srd:jackal:
 
 Jackal
 ------

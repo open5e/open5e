@@ -1,5 +1,5 @@
 
-.. _srd_Circle-of-Death:
+.. _srd:circle-of-death:
 
 Circle of Death
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-X-ray-Vision:
+.. _srd:ring-of-x-ray-vision:
 
 Ring of X-ray Vision
 ------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Insect-Plague:
+.. _srd:insect-plague:
 
 Insect Plague
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Talisman-of-Pure-Good:
+.. _srd:talisman-of-pure-good:
 
 Talisman of Pure Good
 ------------------------------------------------------

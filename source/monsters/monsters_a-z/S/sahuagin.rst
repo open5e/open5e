@@ -1,5 +1,5 @@
 
-.. _srd_Sahuagin:
+.. _srd:sahuagin:
 
 Sahuagin
 --------

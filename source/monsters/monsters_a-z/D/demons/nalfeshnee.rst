@@ -1,5 +1,5 @@
 
-.. _srd_Nalfeshnee:
+.. _srd:nalfeshnee:
 
 Nalfeshnee
 ----------

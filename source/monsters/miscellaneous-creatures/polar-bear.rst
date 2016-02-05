@@ -1,5 +1,5 @@
 
-.. _srd_Polar-Bear:
+.. _srd:polar-bear:
 
 Polar Bear
 ----------

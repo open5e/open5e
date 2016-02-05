@@ -1,5 +1,5 @@
 
-.. _srd_Horn-of-Blasting:
+.. _srd:horn-of-blasting:
 
 Horn of Blasting
 ------------------------------------------------------

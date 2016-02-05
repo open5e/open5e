@@ -1,5 +1,5 @@
 
-.. _srd_Dust-of-Sneezing-and-Choking:
+.. _srd:dust-of-sneezing-and-choking:
 
 Dust of Sneezing and Choking
 ------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-Shooting-Stars:
+.. _srd:ring-of-shooting-stars:
 
 Ring of Shooting Stars
 ------------------------------------------------------

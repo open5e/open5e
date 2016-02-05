@@ -1,5 +1,5 @@
 
-.. _srd_Djinni:
+.. _srd:djinni:
 
 Djinni
 ------

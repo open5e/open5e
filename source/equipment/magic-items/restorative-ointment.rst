@@ -1,5 +1,5 @@
 
-.. _srd_Restorative-Ointment:
+.. _srd:restorative-ointment:
 
 Restorative Ointment
 ------------------------------------------------------

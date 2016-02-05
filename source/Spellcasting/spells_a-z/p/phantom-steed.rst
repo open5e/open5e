@@ -1,5 +1,5 @@
 
-.. _srd_Phantom-Steed:
+.. _srd:phantom-steed:
 
 Phantom Steed
 -------------------------------------------------------------

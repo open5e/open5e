@@ -1,5 +1,5 @@
 
-.. _srd_Cloak-of-the-Bat:
+.. _srd:cloak-of-the-bat:
 
 Cloak of the Bat
 ------------------------------------------------------

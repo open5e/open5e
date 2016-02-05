@@ -1,5 +1,5 @@
 
-.. _srd_Basilisk:
+.. _srd:basilisk:
 
 Basilisk
 --------

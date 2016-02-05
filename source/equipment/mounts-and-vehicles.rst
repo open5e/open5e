@@ -1,5 +1,5 @@
 
-.. _srd_Mounts-and-Vehicles:
+.. _srd:mounts-and-vehicles:
 
 Mounts and Vehicles
 -------------------

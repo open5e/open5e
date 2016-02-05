@@ -1,5 +1,5 @@
 
-.. _srd_Cloud-Giant:
+.. _srd:cloud-giant:
 
 Cloud Giant
 -----------

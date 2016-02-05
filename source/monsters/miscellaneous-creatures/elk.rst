@@ -1,5 +1,5 @@
 
-.. _srd_Elk:
+.. _srd:elk:
 
 Elk
 ---

@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Hyena:
+.. _srd:giant-hyena:
 
 Giant Hyena
 -----------

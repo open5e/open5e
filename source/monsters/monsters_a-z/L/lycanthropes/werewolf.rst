@@ -1,5 +1,5 @@
 
-.. _srd_Werewolf:
+.. _srd:werewolf:
 
 Werewolf
 --------

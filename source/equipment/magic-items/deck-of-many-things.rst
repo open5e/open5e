@@ -1,5 +1,5 @@
 
-.. _srd_Deck-of-Many-Things:
+.. _srd:deck-of-many-things:
 
 Deck of Many Things
 ------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Frost-Giant:
+.. _srd:frost-giant:
 
 Frost Giant
 -----------

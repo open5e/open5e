@@ -1,5 +1,5 @@
 
-.. _srd_Mastiff:
+.. _srd:mastiff:
 
 Mastiff
 -------

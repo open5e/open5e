@@ -1,5 +1,5 @@
 
-.. _srd_Magic-Items-list:
+.. _srd:magic-items-list:
 
 Magic Items
 ------------

@@ -1,5 +1,5 @@
 
-.. _srd_Tribal-Warrior:
+.. _srd:tribal-warrior:
 
 Tribal Warrior
 --------------

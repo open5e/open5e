@@ -1,5 +1,5 @@
 
-.. _srd_Scimitar-of-Speed:
+.. _srd:scimitar-of-speed:
 
 Scimitar of Speed
 ------------------------------------------------------

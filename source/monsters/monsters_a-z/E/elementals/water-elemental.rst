@@ -1,5 +1,5 @@
 
-.. _srd_Water-Elemental:
+.. _srd:water-elemental:
 
 Water Elemental
 ---------------

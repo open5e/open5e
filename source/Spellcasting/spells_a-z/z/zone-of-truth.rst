@@ -1,5 +1,5 @@
 
-.. _srd_Zone-of-Truth:
+.. _srd:zone-of-truth:
 
 Zone of Truth
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Rod-of-Absorption:
+.. _srd:rod-of-absorption:
 
 Rod of Absorption
 ------------------------------------------------------

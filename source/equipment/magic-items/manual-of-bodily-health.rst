@@ -1,5 +1,5 @@
 
-.. _srd_Manual-of-Bodily-Health:
+.. _srd:manual-of-bodily-health:
 
 Manual of Bodily Health
 ------------------------------------------------------

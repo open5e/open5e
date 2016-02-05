@@ -1,5 +1,5 @@
 
-.. _srd_Fire-Giant:
+.. _srd:fire-giant:
 
 Fire Giant
 ----------

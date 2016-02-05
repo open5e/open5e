@@ -1,5 +1,5 @@
 
-.. _srd_Rogue-class:
+.. _srd:rogue-class:
 
 Rogue
 =====

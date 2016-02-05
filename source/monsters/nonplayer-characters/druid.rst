@@ -1,5 +1,5 @@
 
-.. _srd_Druid:
+.. _srd:druid:
 
 Druid
 -----

@@ -1,5 +1,5 @@
 
-.. _srd_Create-Food-and-Water:
+.. _srd:create-food-and-water:
 
 Create Food and Water
 -------------------------------------------------------------

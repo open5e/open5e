@@ -1,5 +1,5 @@
 
-.. _srd_Programmed-Illusion:
+.. _srd:programmed-illusion:
 
 Programmed Illusion
 -------------------------------------------------------------

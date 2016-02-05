@@ -1,5 +1,5 @@
 
-.. _srd_Shocking-Grasp:
+.. _srd:shocking-grasp:
 
 Shocking Grasp
 -------------------------------------------------------------

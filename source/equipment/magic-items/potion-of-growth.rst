@@ -1,5 +1,5 @@
 
-.. _srd_Potion-of-Growth:
+.. _srd:potion-of-growth:
 
 Potion of Growth
 ------------------------------------------------------

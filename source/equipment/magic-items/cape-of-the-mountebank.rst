@@ -1,5 +1,5 @@
 
-.. _srd_Cape-of-the-Mountebank:
+.. _srd:cape-of-the-mountebank:
 
 Cape of the Mountebank
 ------------------------------------------------------

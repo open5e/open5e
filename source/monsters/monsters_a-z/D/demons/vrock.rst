@@ -1,5 +1,5 @@
 
-.. _srd_Vrock:
+.. _srd:vrock:
 
 Vrock
 -----

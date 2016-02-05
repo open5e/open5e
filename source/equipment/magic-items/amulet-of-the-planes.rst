@@ -1,5 +1,5 @@
 
-.. _srd_Amulet-of-the-Planes:
+.. _srd:amulet-of-the-planes:
 
 Amulet of the Planes
 ------------------------------------------------------

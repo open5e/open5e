@@ -1,5 +1,5 @@
 
-.. _srd_Staff-of-the-Magi:
+.. _srd:staff-of-the-magi:
 
 Staff of the Magi
 ------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Gelatinous-Cube:
+.. _srd:gelatinous-cube:
 
 Gelatinous Cube
 ---------------

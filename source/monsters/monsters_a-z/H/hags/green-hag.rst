@@ -1,5 +1,5 @@
 
-.. _srd_Green-Hag:
+.. _srd:green-hag:
 
 Green Hag
 ---------

@@ -1,5 +1,5 @@
 
-.. _srd_Tiger:
+.. _srd:tiger:
 
 Tiger
 -----

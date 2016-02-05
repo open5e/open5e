@@ -1,5 +1,5 @@
 
-.. _srd_Commune-with-Nature:
+.. _srd:commune-with-nature:
 
 Commune with Nature
 -------------------------------------------------------------

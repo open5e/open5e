@@ -1,5 +1,5 @@
 
-.. _srd_Orc:
+.. _srd:orc:
 
 Orc
 ---

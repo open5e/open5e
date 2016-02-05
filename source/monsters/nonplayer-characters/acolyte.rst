@@ -1,5 +1,5 @@
 
-.. _srd_Acolyte:
+.. _srd:acolyte:
 
 Acolyte
 -------

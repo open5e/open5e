@@ -1,5 +1,5 @@
 
-.. _srd_Necklace-of-Fireballs:
+.. _srd:necklace-of-fireballs:
 
 Necklace of Fireballs
 ------------------------------------------------------

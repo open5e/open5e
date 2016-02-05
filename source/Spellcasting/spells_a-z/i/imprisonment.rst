@@ -1,5 +1,5 @@
 
-.. _srd_Imprisonment:
+.. _srd:imprisonment:
 
 Imprisonment
 -------------------------------------------------------------

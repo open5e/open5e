@@ -1,5 +1,5 @@
 
-.. _srd_Mirage-Arcane:
+.. _srd:mirage-arcane:
 
 Mirage Arcane
 -------------------------------------------------------------

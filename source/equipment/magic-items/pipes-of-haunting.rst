@@ -1,5 +1,5 @@
 
-.. _srd_Pipes-of-Haunting:
+.. _srd:pipes-of-haunting:
 
 Pipes of Haunting
 ------------------------------------------------------

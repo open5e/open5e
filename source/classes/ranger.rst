@@ -1,5 +1,5 @@
 
-.. _srd_Ranger-class:
+.. _srd:ranger-class:
 
 Ranger
 ======

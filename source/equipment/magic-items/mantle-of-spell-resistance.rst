@@ -1,5 +1,5 @@
 
-.. _srd_Mantle-of-Spell-Resistance:
+.. _srd:mantle-of-spell-resistance:
 
 Mantle of Spell Resistance
 ------------------------------------------------------

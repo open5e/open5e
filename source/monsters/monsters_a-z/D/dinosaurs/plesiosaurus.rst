@@ -1,5 +1,5 @@
 
-.. _srd_Plesiosaurus:
+.. _srd:plesiosaurus:
 
 Plesiosaurus
 ------------

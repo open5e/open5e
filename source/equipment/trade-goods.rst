@@ -1,5 +1,5 @@
 
-.. _srd_Trade-Goods:
+.. _srd:trade-goods:
 
 Trade Goods
 -----------

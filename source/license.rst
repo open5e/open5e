@@ -1,5 +1,5 @@
 
-.. _srd_Legal-Information:
+.. _srd:legal-information:
 
 Legal Information
 -----------------

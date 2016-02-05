@@ -1,5 +1,5 @@
 
-.. _srd_Horseshoes-of-a-Zephyr:
+.. _srd:horseshoes-of-a-zephyr:
 
 Horseshoes of a Zephyr
 ------------------------------------------------------

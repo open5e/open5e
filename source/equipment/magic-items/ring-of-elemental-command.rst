@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-Elemental-Command:
+.. _srd:ring-of-elemental-command:
 
 Ring of Elemental Command
 ------------------------------------------------------

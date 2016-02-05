@@ -1,5 +1,5 @@
 
-.. _srd_Gold-Dragon-Young:
+.. _srd:gold-dragon-young:
 
 Gold Dragon, Young
 ------------------

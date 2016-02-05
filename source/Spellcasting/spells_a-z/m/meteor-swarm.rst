@@ -1,5 +1,5 @@
 
-.. _srd_Meteor-Swarm:
+.. _srd:meteor-swarm:
 
 Meteor Swarm
 -------------------------------------------------------------

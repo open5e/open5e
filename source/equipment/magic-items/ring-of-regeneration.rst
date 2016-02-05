@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-Regeneration:
+.. _srd:ring-of-regeneration:
 
 Ring of Regeneration
 ------------------------------------------------------

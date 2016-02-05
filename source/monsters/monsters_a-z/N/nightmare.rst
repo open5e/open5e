@@ -1,5 +1,5 @@
 
-.. _srd_Nightmare:
+.. _srd:nightmare:
 
 Nightmare
 ---------

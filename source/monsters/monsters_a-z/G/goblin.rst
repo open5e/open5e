@@ -1,5 +1,5 @@
 
-.. _srd_Goblin:
+.. _srd:goblin:
 
 Goblin
 ------

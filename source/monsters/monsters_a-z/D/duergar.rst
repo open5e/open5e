@@ -1,5 +1,5 @@
 
-.. _srd_Duergar:
+.. _srd:duergar:
 
 Duergar
 -------

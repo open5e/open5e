@@ -1,5 +1,5 @@
 
-.. _srd_Potion-of-Climbing:
+.. _srd:potion-of-climbing:
 
 Potion of Climbing
 ------------------------------------------------------

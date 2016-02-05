@@ -1,5 +1,5 @@
 
-.. _srd_Cube-of-Force-Faces:
+.. _srd:cube-of-force-faces:
 
 Cube of Force Faces
 ------------------------------------------------------

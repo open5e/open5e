@@ -1,5 +1,5 @@
 
-.. _srd_Conjure-Animals:
+.. _srd:conjure-animals:
 
 Conjure Animals
 -------------------------------------------------------------

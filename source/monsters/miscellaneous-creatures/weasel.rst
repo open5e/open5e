@@ -1,5 +1,5 @@
 
-.. _srd_Weasel:
+.. _srd:weasel:
 
 Weasel
 ------

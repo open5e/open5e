@@ -1,5 +1,5 @@
 
-.. _srd_Helm-of-Telepathy:
+.. _srd:helm-of-telepathy:
 
 Helm of Telepathy
 ------------------------------------------------------

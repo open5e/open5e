@@ -1,5 +1,5 @@
 
-.. _srd_Instant-Summons:
+.. _srd:instant-summons:
 
 Instant Summons
 -------------------------------------------------------------

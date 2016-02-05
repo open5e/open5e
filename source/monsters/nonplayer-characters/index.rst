@@ -1,5 +1,5 @@
 
-.. _srd_Nonplayer-Characters:
+.. _srd:nonplayer-characters:
 
 Nonplayer Characters
 -------------------------------------------------------------

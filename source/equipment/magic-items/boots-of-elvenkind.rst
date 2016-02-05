@@ -1,5 +1,5 @@
 
-.. _srd_Boots-of-Elvenkind:
+.. _srd:boots-of-elvenkind:
 
 Boots of Elvenkind
 ------------------------------------------------------

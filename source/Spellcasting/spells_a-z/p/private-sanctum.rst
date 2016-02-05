@@ -1,5 +1,5 @@
 
-.. _srd_Private-Sanctum:
+.. _srd:private-sanctum:
 
 Private Sanctum
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Beacon-of-Hope:
+.. _srd:beacon-of-hope:
 
 Beacon of Hope
 -------------------------------------------------------------

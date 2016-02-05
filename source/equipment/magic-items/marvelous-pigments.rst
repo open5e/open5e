@@ -1,5 +1,5 @@
 
-.. _srd_Marvelous-Pigments:
+.. _srd:marvelous-pigments:
 
 Marvelous Pigments
 ------------------------------------------------------

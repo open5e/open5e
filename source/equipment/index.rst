@@ -1,5 +1,5 @@
 
-.. _srd_Equipment:
+.. _srd:equipment:
 
 Equipment
 ------------

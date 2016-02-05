@@ -1,5 +1,5 @@
 
-.. _srd_Griffon:
+.. _srd:griffon:
 
 Griffon
 -------

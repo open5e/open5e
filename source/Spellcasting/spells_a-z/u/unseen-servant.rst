@@ -1,5 +1,5 @@
 
-.. _srd_Unseen-Servant:
+.. _srd:unseen-servant:
 
 Unseen Servant
 -------------------------------------------------------------

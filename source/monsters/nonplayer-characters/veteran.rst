@@ -1,5 +1,5 @@
 
-.. _srd_Veteran:
+.. _srd:veteran:
 
 Veteran
 -------

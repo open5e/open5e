@@ -1,5 +1,5 @@
 
-.. _srd_Iron-Bands-of-Binding:
+.. _srd:iron-bands-of-binding:
 
 Iron Bands of Binding
 ------------------------------------------------------

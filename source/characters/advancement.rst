@@ -1,5 +1,5 @@
 
-.. _srd_Beyond-1st-Level:
+.. _srd:beyond-1st-level:
 
 Beyond 1st Level
 ================

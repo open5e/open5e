@@ -1,5 +1,5 @@
 
-.. _srd_Faithful-Hound:
+.. _srd:faithful-hound:
 
 Faithful Hound
 -------------------------------------------------------------

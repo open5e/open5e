@@ -1,5 +1,5 @@
 
-.. _srd_Goggles-of-Night:
+.. _srd:goggles-of-night:
 
 Goggles of Night
 ------------------------------------------------------

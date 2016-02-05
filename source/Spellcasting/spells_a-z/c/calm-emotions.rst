@@ -1,5 +1,5 @@
 
-.. _srd_Calm-Emotions:
+.. _srd:calm-emotions:
 
 Calm Emotions
 -------------------------------------------------------------

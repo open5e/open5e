@@ -1,5 +1,5 @@
 
-.. _srd_Staff-of-the-Python:
+.. _srd:staff-of-the-python:
 
 Staff of the Python
 ------------------------------------------------------

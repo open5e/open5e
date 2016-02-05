@@ -1,5 +1,5 @@
 
-.. _srd_Steam-Mephit:
+.. _srd:steam-mephit:
 
 Steam Mephit
 ------------
