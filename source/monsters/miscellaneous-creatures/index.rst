@@ -1,3 +1,6 @@
+
+.. _srd_Miscellaneous-Creatures-list:
+
 Miscellaneous Creatures
 -------------------------------------------------------------
 

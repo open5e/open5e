@@ -1,4 +1,6 @@
 
+.. _srd_Lesser-Restoration:
+
 Lesser Restoration
 -------------------------------------------------------------
 

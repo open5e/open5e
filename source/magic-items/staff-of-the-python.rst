@@ -1,3 +1,6 @@
+
+.. _srd_Staff-of-the-Python:
+
 Staff of the Python
 ------------------------------------------------------
 

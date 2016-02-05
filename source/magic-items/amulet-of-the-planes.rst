@@ -1,3 +1,6 @@
+
+.. _srd_Amulet-of-the-Planes:
+
 Amulet of the Planes
 ------------------------------------------------------
 

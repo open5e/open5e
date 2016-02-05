@@ -1,3 +1,6 @@
+
+.. _srd_Ring-of-Three-Wishes:
+
 Ring of Three Wishes
 ------------------------------------------------------
 

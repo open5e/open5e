@@ -1,4 +1,6 @@
 
+.. _srd_Cleric-Spells:
+
 Cleric Spells
 -------------
 

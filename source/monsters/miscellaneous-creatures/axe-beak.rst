@@ -1,3 +1,6 @@
+
+.. _srd_Axe-Beak:
+
 Axe Beak
 --------
 

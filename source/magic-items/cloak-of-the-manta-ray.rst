@@ -1,3 +1,6 @@
+
+.. _srd_Cloak-of-the-Manta-Ray:
+
 Cloak of the Manta Ray
 ------------------------------------------------------
 

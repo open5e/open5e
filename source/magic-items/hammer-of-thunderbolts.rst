@@ -1,3 +1,6 @@
+
+.. _srd_Hammer-of-Thunderbolts:
+
 Hammer of Thunderbolts
 ------------------------------------------------------
 

@@ -1,4 +1,6 @@
 
+.. _srd_Druid-Spells:
+
 Druid Spells
 ------------
 

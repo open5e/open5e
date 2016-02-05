@@ -1,3 +1,6 @@
+
+.. _srd_Eyes-of-Minute-Seeing:
+
 Eyes of Minute Seeing
 ------------------------------------------------------
 

@@ -1,4 +1,6 @@
 
+.. _srd_Commune-with-Nature:
+
 Commune with Nature
 -------------------------------------------------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Ring-of-Feather-Falling:
+
 Ring of Feather Falling
 ------------------------------------------------------
 

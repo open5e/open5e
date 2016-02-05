@@ -1,3 +1,6 @@
+
+.. _srd_Awakened-Tree:
+
 Awakened Tree
 -------------
 

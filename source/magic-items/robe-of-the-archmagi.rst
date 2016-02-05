@@ -1,3 +1,6 @@
+
+.. _srd_Robe-of-the-Archmagi:
+
 Robe of the Archmagi
 ------------------------------------------------------
 

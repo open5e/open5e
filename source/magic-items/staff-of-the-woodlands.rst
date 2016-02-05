@@ -1,3 +1,6 @@
+
+.. _srd_Staff-of-the-Woodlands:
+
 Staff of the Woodlands
 ------------------------------------------------------
 

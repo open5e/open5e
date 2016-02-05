@@ -1,3 +1,6 @@
+
+.. _srd_Sphere-of-Annihilation:
+
 Sphere of Annihilation
 ------------------------------------------------------
 

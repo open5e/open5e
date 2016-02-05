@@ -1,4 +1,6 @@
 
+.. _srd_Protection-from-Evil-and-Good:
+
 Protection from Evil and Good
 -------------------------------------------------------------
 

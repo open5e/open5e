@@ -1,3 +1,6 @@
+
+.. _srd_Oil-of-Slipperiness:
+
 Oil of Slipperiness
 ------------------------------------------------------
 

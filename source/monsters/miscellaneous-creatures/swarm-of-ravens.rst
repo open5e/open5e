@@ -1,3 +1,6 @@
+
+.. _srd_Swarm-of-Ravens:
+
 Swarm of Ravens
 ---------------
 

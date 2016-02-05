@@ -1,3 +1,6 @@
+
+.. _srd_Helm-of-Comprehending-Languages:
+
 Helm of Comprehending Languages
 ------------------------------------------------------
 

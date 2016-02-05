@@ -1,3 +1,6 @@
+
+.. _srd_Red-Dragon-Ancient:
+
 Red Dragon, Ancient
 -------------------
 

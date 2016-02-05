@@ -1,3 +1,6 @@
+
+.. _srd_Slippers-of-Spider-Climbing:
+
 Slippers of Spider Climbing
 ------------------------------------------------------
 

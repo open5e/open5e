@@ -1,3 +1,6 @@
+
+.. _srd_Talisman-of-Pure-Good:
+
 Talisman of Pure Good
 ------------------------------------------------------
 

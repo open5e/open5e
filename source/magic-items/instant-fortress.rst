@@ -1,3 +1,6 @@
+
+.. _srd_Instant-Fortress:
+
 Instant Fortress
 ------------------------------------------------------
 

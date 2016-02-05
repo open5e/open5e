@@ -1,3 +1,6 @@
+
+.. _srd_Censer-of-Controlling-Air-Elementals:
+
 Censer of Controlling Air Elementals
 ------------------------------------------------------
 

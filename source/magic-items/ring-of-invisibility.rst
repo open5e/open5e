@@ -1,3 +1,6 @@
+
+.. _srd_Ring-of-Invisibility:
+
 Ring of Invisibility
 ------------------------------------------------------
 

@@ -1,4 +1,6 @@
 
+.. _srd_Locate-Animals-or-Plants:
+
 Locate Animals or Plants
 -------------------------------------------------------------
 

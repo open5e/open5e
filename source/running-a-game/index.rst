@@ -1,3 +1,6 @@
+
+.. _srd_Running-a-Game:
+
 Running a Game
 --------------
 

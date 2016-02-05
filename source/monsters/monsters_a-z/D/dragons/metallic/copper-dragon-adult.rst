@@ -1,3 +1,6 @@
+
+.. _srd_Copper-Dragon-Adult:
+
 Copper Dragon, Adult
 --------------------
 

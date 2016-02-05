@@ -1,4 +1,6 @@
 
+.. _srd_Freedom-of-Movement:
+
 Freedom of Movement
 -------------------------------------------------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Stone-Golem:
+
 Stone Golem
 -----------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Ring-of-Djinni-Summoning:
+
 Ring of Djinni Summoning
 ------------------------------------------------------
 

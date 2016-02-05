@@ -1,3 +1,6 @@
+
+.. _srd_Warlock-Spells:
+
 Warlock Spells
 --------------
 

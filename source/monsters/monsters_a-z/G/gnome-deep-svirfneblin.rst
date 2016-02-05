@@ -1,3 +1,6 @@
+
+.. _srd_Gnome-Deep-Svirfneblin:
+
 Gnome, Deep (Svirfneblin)
 -------------------------
 

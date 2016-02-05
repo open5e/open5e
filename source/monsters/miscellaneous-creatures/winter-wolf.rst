@@ -1,3 +1,6 @@
+
+.. _srd_Winter-Wolf:
+
 Winter Wolf
 -----------
 

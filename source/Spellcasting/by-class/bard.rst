@@ -1,11 +1,13 @@
 
+.. _srd_Bard-Spells:
+
 Bard Spells
 -----------
 
 Cantrips (0 Level)
 ~~~~~~~~~~~~~~~~~~
 
--  :ref:`dancing-lights`
+-  :ref:`srd_dancing-lights`
 -  Light
 -  Mage Hand
 -  Mending

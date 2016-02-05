@@ -1,3 +1,6 @@
+
+.. _srd_Giant-Constrictor-Snake:
+
 Giant Constrictor Snake
 -----------------------
 

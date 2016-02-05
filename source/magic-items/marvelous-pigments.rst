@@ -1,3 +1,6 @@
+
+.. _srd_Marvelous-Pigments:
+
 Marvelous Pigments
 ------------------------------------------------------
 

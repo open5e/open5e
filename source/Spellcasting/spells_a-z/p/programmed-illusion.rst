@@ -1,4 +1,6 @@
 
+.. _srd_Programmed-Illusion:
+
 Programmed Illusion
 -------------------------------------------------------------
 

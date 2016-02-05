@@ -1,3 +1,6 @@
+
+.. _srd_Minotaur-Skeleton:
+
 Minotaur Skeleton
 -----------------
 

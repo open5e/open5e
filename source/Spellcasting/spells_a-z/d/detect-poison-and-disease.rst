@@ -1,4 +1,6 @@
 
+.. _srd_Detect-Poison-and-Disease:
+
 Detect Poison and Disease
 -------------------------------------------------------------
 

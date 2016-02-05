@@ -1,3 +1,6 @@
+
+.. _srd_Water-Elemental:
+
 Water Elemental
 ---------------
 

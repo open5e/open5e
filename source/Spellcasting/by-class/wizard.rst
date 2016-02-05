@@ -1,3 +1,6 @@
+
+.. _srd_Wizard-Spells:
+
 Wizard Spells
 -------------
 
@@ -6,7 +9,7 @@ Cantrips (0 Level)
 
 -  Acid Splash
 -  Chill Touch
--  :ref:`dancing-lights`
+-  :ref:`srd_dancing-lights`
 -  Light
 -  Mage Hand
 -  Mending

@@ -1,3 +1,6 @@
+
+.. _srd_Storm-Giant:
+
 Storm Giant
 -----------
 

@@ -1,4 +1,6 @@
 
+.. _srd_The-Schools-of-Magic:
+
 The Schools of Magic
 --------------------
 

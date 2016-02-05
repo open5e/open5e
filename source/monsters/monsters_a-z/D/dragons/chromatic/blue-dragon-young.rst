@@ -1,3 +1,6 @@
+
+.. _srd_Blue-Dragon-Young:
+
 Blue Dragon, Young
 ------------------
 

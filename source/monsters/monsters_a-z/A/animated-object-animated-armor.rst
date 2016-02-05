@@ -1,3 +1,6 @@
+
+.. _srd_Animated-Object: Animated Armor:
+
 Animated Object: Animated Armor
 -------------------------------
 

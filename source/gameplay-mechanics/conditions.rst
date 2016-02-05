@@ -1,3 +1,6 @@
+
+.. _srd_Appendix-A: Conditions:
+
 Appendix A: Conditions
 ======================
 

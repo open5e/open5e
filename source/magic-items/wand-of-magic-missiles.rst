@@ -1,3 +1,6 @@
+
+.. _srd_Wand-of-Magic-Missiles:
+
 Wand of Magic Missiles
 ------------------------------------------------------
 

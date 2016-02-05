@@ -1,3 +1,6 @@
+
+.. _srd_Green-Hag:
+
 Green Hag
 ---------
 

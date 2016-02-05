@@ -1,4 +1,6 @@
 
+.. _srd_Detect-Evil-and-Good:
+
 Detect Evil and Good
 -------------------------------------------------------------
 

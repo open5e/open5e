@@ -1,3 +1,6 @@
+
+.. _srd_Mummy-Lord:
+
 Mummy Lord
 ----------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Tyrannosaurus-Rex:
+
 Tyrannosaurus Rex
 -----------------
 

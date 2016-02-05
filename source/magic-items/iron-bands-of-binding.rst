@@ -1,3 +1,6 @@
+
+.. _srd_Iron-Bands-of-Binding:
+
 Iron Bands of Binding
 ------------------------------------------------------
 

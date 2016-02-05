@@ -1,3 +1,6 @@
+
+.. _srd_Boots-of-the-Winterlands:
+
 Boots of the Winterlands
 ------------------------------------------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Barbed-Devil:
+
 Barbed Devil
 ------------
 

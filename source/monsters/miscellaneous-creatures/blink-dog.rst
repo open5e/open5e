@@ -1,3 +1,6 @@
+
+.. _srd_Blink-Dog:
+
 Blink Dog
 ---------
 

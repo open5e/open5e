@@ -1,3 +1,6 @@
+
+.. _srd_Boots-of-Striding-and-Springing:
+
 Boots of Striding and Springing
 ------------------------------------------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Giant-Wolf-Spider:
+
 Giant Wolf Spider
 -----------------
 

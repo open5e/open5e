@@ -1,3 +1,6 @@
+
+.. _srd_Belt-of-Giant-Strength:
+
 Belt of Giant Strength
 ------------------------------------------------------
 

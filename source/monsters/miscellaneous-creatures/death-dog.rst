@@ -1,3 +1,6 @@
+
+.. _srd_Death-Dog:
+
 Death Dog
 ---------
 

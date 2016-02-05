@@ -1,3 +1,6 @@
+
+.. _srd_Gelatinous-Cube:
+
 Gelatinous Cube
 ---------------
 

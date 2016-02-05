@@ -1,3 +1,6 @@
+
+.. _srd_Bearded-Devil:
+
 Bearded Devil
 -------------
 

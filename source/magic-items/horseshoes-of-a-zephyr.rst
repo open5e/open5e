@@ -1,3 +1,6 @@
+
+.. _srd_Horseshoes-of-a-Zephyr:
+
 Horseshoes of a Zephyr
 ------------------------------------------------------
 

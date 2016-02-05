@@ -1,3 +1,6 @@
+
+.. _srd_Cape-of-the-Mountebank:
+
 Cape of the Mountebank
 ------------------------------------------------------
 

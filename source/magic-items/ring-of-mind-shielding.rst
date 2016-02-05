@@ -1,3 +1,6 @@
+
+.. _srd_Ring-of-Mind-Shielding:
+
 Ring of Mind Shielding
 ------------------------------------------------------
 

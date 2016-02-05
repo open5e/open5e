@@ -1,3 +1,6 @@
+
+.. _srd_Cloud-Giant:
+
 Cloud Giant
 -----------
 

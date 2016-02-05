@@ -1,3 +1,6 @@
+
+.. _srd_Talisman-of-the-Sphere:
+
 Talisman of the Sphere
 ------------------------------------------------------
 

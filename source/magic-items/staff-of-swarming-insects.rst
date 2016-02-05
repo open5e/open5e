@@ -1,3 +1,6 @@
+
+.. _srd_Staff-of-Swarming-Insects:
+
 Staff of Swarming Insects
 ------------------------------------------------------
 

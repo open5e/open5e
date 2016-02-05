@@ -1,3 +1,6 @@
+
+.. _srd_Ranger-Spells:
+
 Ranger Spells
 -------------
 

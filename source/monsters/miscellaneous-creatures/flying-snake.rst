@@ -1,3 +1,6 @@
+
+.. _srd_Flying-Snake:
+
 Flying Snake
 ------------
 

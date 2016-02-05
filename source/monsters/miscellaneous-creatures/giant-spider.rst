@@ -1,3 +1,6 @@
+
+.. _srd_Giant-Spider:
+
 Giant Spider
 ------------
 

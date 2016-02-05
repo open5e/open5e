@@ -1,3 +1,6 @@
+
+.. _srd_Classes-list:
+
 Classes
 -------
 

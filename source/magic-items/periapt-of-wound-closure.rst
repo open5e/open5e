@@ -1,3 +1,6 @@
+
+.. _srd_Periapt-of-Wound-Closure:
+
 Periapt of Wound Closure
 ------------------------------------------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Red-Dragon-Young:
+
 Red Dragon, Young
 -----------------
 

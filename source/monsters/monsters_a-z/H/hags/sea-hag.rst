@@ -1,3 +1,6 @@
+
+.. _srd_Sea-Hag:
+
 Sea Hag
 -------
 

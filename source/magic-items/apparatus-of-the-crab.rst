@@ -1,3 +1,6 @@
+
+.. _srd_Apparatus-of-the-Crab:
+
 Apparatus of the Crab
 ------------------------------------------------------
 

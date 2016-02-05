@@ -1,3 +1,6 @@
+
+.. _srd_Movement-and-Position:
+
 Movement and Position
 ---------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Cult-Fanatic:
+
 Cult Fanatic
 ------------
 

@@ -1,4 +1,6 @@
 
+.. _srd_Hallucinatory-Terrain:
+
 Hallucinatory Terrain
 -------------------------------------------------------------
 

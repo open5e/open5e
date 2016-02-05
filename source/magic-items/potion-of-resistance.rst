@@ -1,3 +1,6 @@
+
+.. _srd_Potion-of-Resistance:
+
 Potion of Resistance
 ------------------------------------------------------
 

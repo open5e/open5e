@@ -1,3 +1,6 @@
+
+.. _srd_Hunter-Shark:
+
 Hunter Shark
 ------------
 

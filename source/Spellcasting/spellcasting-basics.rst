@@ -1,4 +1,6 @@
 
+.. _srd_Spellcasting-Basics:
+
 Spellcasting Basics
 -------------------
 

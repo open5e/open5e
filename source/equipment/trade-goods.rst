@@ -1,3 +1,6 @@
+
+.. _srd_Trade-Goods:
+
 Trade Goods
 -----------
 

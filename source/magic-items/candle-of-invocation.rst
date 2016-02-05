@@ -1,3 +1,6 @@
+
+.. _srd_Candle-of-Invocation:
+
 Candle of Invocation
 ------------------------------------------------------
 

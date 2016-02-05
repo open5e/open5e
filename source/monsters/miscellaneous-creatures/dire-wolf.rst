@@ -1,3 +1,6 @@
+
+.. _srd_Dire-Wolf:
+
 Dire Wolf
 ---------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Fantasy-Historical-Pantheons:
+
 Fantasy-Historical Pantheons
 ----------------------------
 

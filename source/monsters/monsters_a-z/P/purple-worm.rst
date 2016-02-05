@@ -1,3 +1,6 @@
+
+.. _srd_Purple-Worm:
+
 Purple Worm
 -----------
 

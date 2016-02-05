@@ -1,4 +1,6 @@
 
+.. _srd_Expeditious-Retreat:
+
 Expeditious Retreat
 -------------------------------------------------------------
 

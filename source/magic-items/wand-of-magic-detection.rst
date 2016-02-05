@@ -1,3 +1,6 @@
+
+.. _srd_Wand-of-Magic-Detection:
+
 Wand of Magic Detection
 ------------------------------------------------------
 

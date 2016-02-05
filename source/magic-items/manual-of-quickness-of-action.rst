@@ -1,3 +1,6 @@
+
+.. _srd_Manual-of-Quickness-of-Action:
+
 Manual of Quickness of Action
 ------------------------------------------------------
 

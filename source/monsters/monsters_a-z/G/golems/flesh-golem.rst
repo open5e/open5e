@@ -1,3 +1,6 @@
+
+.. _srd_Flesh-Golem:
+
 Flesh Golem
 -----------
 

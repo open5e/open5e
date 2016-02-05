@@ -1,3 +1,6 @@
+
+.. _srd_White-Dragon-Wyrmling:
+
 White Dragon Wyrmling
 ---------------------
 

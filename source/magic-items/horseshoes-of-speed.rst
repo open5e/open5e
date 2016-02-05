@@ -1,3 +1,6 @@
+
+.. _srd_Horseshoes-of-Speed:
+
 Horseshoes of Speed
 ------------------------------------------------------
 

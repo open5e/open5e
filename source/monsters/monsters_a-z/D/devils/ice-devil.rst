@@ -1,3 +1,6 @@
+
+.. _srd_Ice-Devil:
+
 Ice Devil
 ---------
 

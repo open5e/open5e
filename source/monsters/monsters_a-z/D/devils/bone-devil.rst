@@ -1,3 +1,6 @@
+
+.. _srd_Bone-Devil:
+
 Bone Devil
 ----------
 

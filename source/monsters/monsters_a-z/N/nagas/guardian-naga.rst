@@ -1,3 +1,6 @@
+
+.. _srd_Guardian-Naga:
+
 Guardian Naga
 -------------
 

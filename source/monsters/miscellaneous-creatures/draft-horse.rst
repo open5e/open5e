@@ -1,3 +1,6 @@
+
+.. _srd_Draft-Horse:
+
 Draft Horse
 -----------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Copper-Dragon-Ancient:
+
 Copper Dragon, Ancient
 ----------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Tome-of-Understanding:
+
 Tome of Understanding
 ------------------------------------------------------
 

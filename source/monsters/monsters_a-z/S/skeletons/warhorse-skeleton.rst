@@ -1,3 +1,6 @@
+
+.. _srd_Warhorse-Skeleton:
+
 Warhorse Skeleton
 -----------------
 

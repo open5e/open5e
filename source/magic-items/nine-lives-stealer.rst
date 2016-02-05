@@ -1,3 +1,6 @@
+
+.. _srd_Nine-Lives-Stealer:
+
 Nine Lives Stealer
 ------------------------------------------------------
 

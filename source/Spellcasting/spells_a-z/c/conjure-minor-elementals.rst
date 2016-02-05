@@ -1,4 +1,6 @@
 
+.. _srd_Conjure-Minor-Elementals:
+
 Conjure Minor Elementals
 -------------------------------------------------------------
 

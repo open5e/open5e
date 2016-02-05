@@ -1,3 +1,6 @@
+
+.. _srd_Bronze-Dragon-Young:
+
 Bronze Dragon, Young
 --------------------
 

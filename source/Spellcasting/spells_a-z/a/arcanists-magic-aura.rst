@@ -1,4 +1,6 @@
 
+.. _srd_Arcanist’s Magic Aura:
+
 Arcanist’s Magic Aura
 -------------------------------------------------------------
 

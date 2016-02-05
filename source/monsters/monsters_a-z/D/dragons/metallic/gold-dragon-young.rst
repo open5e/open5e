@@ -1,3 +1,6 @@
+
+.. _srd_Gold-Dragon-Young:
+
 Gold Dragon, Young
 ------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Casting-a-Spell:
+
 Casting a Spell
 ---------------
 

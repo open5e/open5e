@@ -1,3 +1,6 @@
+
+.. _srd_Helm-of-Teleportation:
+
 Helm of Teleportation
 ------------------------------------------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Wand-of-Enemy-Detection:
+
 Wand of Enemy Detection
 ------------------------------------------------------
 

@@ -1,3 +1,6 @@
+
+.. _srd_Ring-of-Telekinesis:
+
 Ring of Telekinesis
 ------------------------------------------------------
 

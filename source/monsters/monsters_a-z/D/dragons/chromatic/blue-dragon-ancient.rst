@@ -1,3 +1,6 @@
+
+.. _srd_Blue-Dragon-Ancient:
+
 Blue Dragon, Ancient
 --------------------
 

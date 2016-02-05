@@ -1,3 +1,6 @@
+
+.. _srd_Sorcerer-Spells:
+
 Sorcerer Spells
 ---------------
 
@@ -6,7 +9,7 @@ Cantrips (0 Level)
 
 -  Acid Splash
 -  Chill Touch
--  :ref:`dancing-lights`
+-  :ref:`srd_Dancing-Lights`
 -  Light
 -  Mage Hand
 -  Mending

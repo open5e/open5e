@@ -1,4 +1,6 @@
 
+.. _srd_Dispel-Evil-and-Good:
+
 Dispel Evil and Good
 -------------------------------------------------------------
 
