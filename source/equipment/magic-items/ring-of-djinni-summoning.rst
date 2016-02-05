@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-Djinni-Summoning:
+.. _srd:ring-of-djinni-summoning:
 
 Ring of Djinni Summoning
 ------------------------------------------------------

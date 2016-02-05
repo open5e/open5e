@@ -1,5 +1,5 @@
 
-.. _srd_Vulture:
+.. _srd:vulture:
 
 Vulture
 -------

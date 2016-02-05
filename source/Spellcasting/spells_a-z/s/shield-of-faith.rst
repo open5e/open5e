@@ -1,5 +1,5 @@
 
-.. _srd_Shield-of-Faith:
+.. _srd:shield-of-faith:
 
 Shield of Faith
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Zombie:
+.. _srd:zombie:
 
 Zombie
 ------

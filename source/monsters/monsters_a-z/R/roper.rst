@@ -1,5 +1,5 @@
 
-.. _srd_Roper:
+.. _srd:roper:
 
 Roper
 -----

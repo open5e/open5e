@@ -1,5 +1,5 @@
 
-.. _srd_Greater-Restoration:
+.. _srd:greater-restoration:
 
 Greater Restoration
 -------------------------------------------------------------

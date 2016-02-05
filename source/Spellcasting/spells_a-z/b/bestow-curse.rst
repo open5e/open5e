@@ -1,5 +1,5 @@
 
-.. _srd_Bestow-Curse:
+.. _srd:bestow-curse:
 
 Bestow Curse
 -------------------------------------------------------------

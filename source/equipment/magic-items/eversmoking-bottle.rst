@@ -1,5 +1,5 @@
 
-.. _srd_Eversmoking-Bottle:
+.. _srd:eversmoking-bottle:
 
 Eversmoking Bottle
 ------------------------------------------------------

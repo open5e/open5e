@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Centipede:
+.. _srd:giant-centipede:
 
 Giant Centipede
 ---------------

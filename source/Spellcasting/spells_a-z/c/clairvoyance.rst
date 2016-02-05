@@ -1,5 +1,5 @@
 
-.. _srd_Clairvoyance:
+.. _srd:clairvoyance:
 
 Clairvoyance
 -------------------------------------------------------------

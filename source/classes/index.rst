@@ -1,5 +1,5 @@
 
-.. _srd_Classes-list:
+.. _srd:classes-list:
 
 Classes
 -------

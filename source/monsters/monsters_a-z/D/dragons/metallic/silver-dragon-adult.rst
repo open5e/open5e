@@ -1,5 +1,5 @@
 
-.. _srd_Silver-Dragon-Adult:
+.. _srd:silver-dragon-adult:
 
 Silver Dragon, Adult
 --------------------

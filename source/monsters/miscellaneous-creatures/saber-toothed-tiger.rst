@@ -1,5 +1,5 @@
 
-.. _srd_Saber-Toothed-Tiger:
+.. _srd:saber-toothed-tiger:
 
 Saber-Toothed Tiger
 -------------------

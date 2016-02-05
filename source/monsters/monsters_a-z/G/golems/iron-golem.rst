@@ -1,5 +1,5 @@
 
-.. _srd_Iron-Golem:
+.. _srd:iron-golem:
 
 Iron Golem
 ----------

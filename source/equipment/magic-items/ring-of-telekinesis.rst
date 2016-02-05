@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-Telekinesis:
+.. _srd:ring-of-telekinesis:
 
 Ring of Telekinesis
 ------------------------------------------------------

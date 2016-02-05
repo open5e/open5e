@@ -1,5 +1,5 @@
 
-.. _srd_Behir:
+.. _srd:behir:
 
 Behir
 -----

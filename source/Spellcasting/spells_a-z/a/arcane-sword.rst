@@ -1,5 +1,5 @@
 
-.. _srd_Arcane-Sword:
+.. _srd:arcane-sword:
 
 Arcane Sword
 -------------------------------------------------------------

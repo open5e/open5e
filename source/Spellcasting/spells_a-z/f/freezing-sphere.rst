@@ -1,5 +1,5 @@
 
-.. _srd_Freezing-Sphere:
+.. _srd:freezing-sphere:
 
 Freezing Sphere
 -------------------------------------------------------------

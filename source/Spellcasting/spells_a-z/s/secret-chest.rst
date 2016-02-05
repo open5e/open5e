@@ -1,5 +1,5 @@
 
-.. _srd_Secret-Chest:
+.. _srd:secret-chest:
 
 Secret Chest
 -------------------------------------------------------------

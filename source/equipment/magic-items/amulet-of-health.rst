@@ -1,5 +1,5 @@
 
-.. _srd_Amulet-of-Health:
+.. _srd:amulet-of-health:
 
 Amulet of Health
 ------------------------------------------------------

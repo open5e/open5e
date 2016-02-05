@@ -1,5 +1,5 @@
 
-.. _srd_Javelin-of-Lightning:
+.. _srd:javelin-of-lightning:
 
 Javelin of Lightning
 ------------------------------------------------------

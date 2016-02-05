@@ -1,5 +1,5 @@
 
-.. _srd_Find-the-Path:
+.. _srd:find-the-path:
 
 Find the Path
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Barbed-Devil:
+.. _srd:barbed-devil:
 
 Barbed Devil
 ------------

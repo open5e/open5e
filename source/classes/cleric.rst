@@ -1,5 +1,5 @@
 
-.. _srd_Cleric-class:
+.. _srd:cleric-class:
 
 Cleric
 ======

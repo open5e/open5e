@@ -1,5 +1,5 @@
 
-.. _srd_Marilith:
+.. _srd:marilith:
 
 Marilith
 --------

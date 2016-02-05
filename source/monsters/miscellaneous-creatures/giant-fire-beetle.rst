@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Fire-Beetle:
+.. _srd:giant-fire-beetle:
 
 Giant Fire Beetle
 -----------------

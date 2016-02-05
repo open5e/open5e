@@ -1,5 +1,5 @@
 
-.. _srd_Circlet-of-Blasting:
+.. _srd:circlet-of-blasting:
 
 Circlet of Blasting
 ------------------------------------------------------

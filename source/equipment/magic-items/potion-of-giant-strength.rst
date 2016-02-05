@@ -1,5 +1,5 @@
 
-.. _srd_Potion-of-Giant-Strength:
+.. _srd:potion-of-giant-strength:
 
 Potion of Giant Strength
 ------------------------------------------------------

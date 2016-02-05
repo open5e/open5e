@@ -1,5 +1,5 @@
 
-.. _srd_Dretch:
+.. _srd:dretch:
 
 Dretch
 ------

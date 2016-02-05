@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Elk:
+.. _srd:giant-elk:
 
 Giant Elk
 ---------

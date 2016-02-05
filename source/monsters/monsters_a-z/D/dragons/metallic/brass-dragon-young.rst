@@ -1,5 +1,5 @@
 
-.. _srd_Brass-Dragon-Young:
+.. _srd:brass-dragon-young:
 
 Brass Dragon, Young
 -------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Manual-of-Quickness-of-Action:
+.. _srd:manual-of-quickness-of-action:
 
 Manual of Quickness of Action
 ------------------------------------------------------

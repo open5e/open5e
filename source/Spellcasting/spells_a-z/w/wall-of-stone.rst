@@ -1,5 +1,5 @@
 
-.. _srd_Wall-of-Stone:
+.. _srd:wall-of-stone:
 
 Wall of Stone
 -------------------------------------------------------------

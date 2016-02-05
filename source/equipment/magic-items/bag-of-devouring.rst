@@ -1,5 +1,5 @@
 
-.. _srd_Bag-of-Devouring:
+.. _srd:bag-of-devouring:
 
 Bag of Devouring
 ------------------------------------------------------

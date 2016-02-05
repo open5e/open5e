@@ -1,5 +1,5 @@
 
-.. _srd_Flesh-to-Stone:
+.. _srd:flesh-to-stone:
 
 Flesh to Stone
 -------------------------------------------------------------

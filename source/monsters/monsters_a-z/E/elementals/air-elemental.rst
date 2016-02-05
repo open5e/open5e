@@ -1,5 +1,5 @@
 
-.. _srd_Air-Elemental:
+.. _srd:air-elemental:
 
 Air Elemental
 -------------

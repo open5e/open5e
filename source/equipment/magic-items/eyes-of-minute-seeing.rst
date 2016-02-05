@@ -1,5 +1,5 @@
 
-.. _srd_Eyes-of-Minute-Seeing:
+.. _srd:eyes-of-minute-seeing:
 
 Eyes of Minute Seeing
 ------------------------------------------------------

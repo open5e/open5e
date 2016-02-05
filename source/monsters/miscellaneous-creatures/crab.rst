@@ -1,5 +1,5 @@
 
-.. _srd_Crab:
+.. _srd:crab:
 
 Crab
 ----

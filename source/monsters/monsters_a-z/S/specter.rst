@@ -1,5 +1,5 @@
 
-.. _srd_Specter:
+.. _srd:specter:
 
 Specter
 -------

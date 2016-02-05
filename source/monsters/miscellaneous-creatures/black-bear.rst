@@ -1,5 +1,5 @@
 
-.. _srd_Black-Bear:
+.. _srd:black-bear:
 
 Black Bear
 ----------

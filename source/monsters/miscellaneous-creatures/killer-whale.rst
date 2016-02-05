@@ -1,5 +1,5 @@
 
-.. _srd_Killer-Whale:
+.. _srd:killer-whale:
 
 Killer Whale
 ------------

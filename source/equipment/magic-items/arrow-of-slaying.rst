@@ -1,5 +1,5 @@
 
-.. _srd_Arrow-of-Slaying:
+.. _srd:arrow-of-slaying:
 
 Arrow of Slaying
 ------------------------------------------------------

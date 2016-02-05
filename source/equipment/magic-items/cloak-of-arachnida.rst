@@ -1,5 +1,5 @@
 
-.. _srd_Cloak-of-Arachnida:
+.. _srd:cloak-of-arachnida:
 
 Cloak of Arachnida
 ------------------------------------------------------

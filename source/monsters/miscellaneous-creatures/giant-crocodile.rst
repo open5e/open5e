@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Crocodile:
+.. _srd:giant-crocodile:
 
 Giant Crocodile
 ---------------

@@ -1,5 +1,5 @@
 
-.. _srd_Ochre-Jelly:
+.. _srd:ochre-jelly:
 
 Ochre Jelly
 -----------

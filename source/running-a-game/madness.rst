@@ -1,5 +1,5 @@
 
-.. _srd_Madness:
+.. _srd:madness:
 
 Madness
 -------

@@ -1,5 +1,5 @@
 
-.. _srd_Magic-Circle:
+.. _srd:magic-circle:
 
 Magic Circle
 -------------------------------------------------------------

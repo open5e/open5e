@@ -1,5 +1,5 @@
 
-.. _srd_Ghoul:
+.. _srd:ghoul:
 
 Ghoul
 -----

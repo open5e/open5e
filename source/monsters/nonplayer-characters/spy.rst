@@ -1,5 +1,5 @@
 
-.. _srd_Spy:
+.. _srd:spy:
 
 Spy
 ---

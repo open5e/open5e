@@ -1,5 +1,5 @@
 
-.. _srd_Underwater-Combat:
+.. _srd:underwater-combat:
 
 Underwater Combat
 -----------------

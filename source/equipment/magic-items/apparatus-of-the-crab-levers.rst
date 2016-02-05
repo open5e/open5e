@@ -1,5 +1,5 @@
 
-.. _srd_Apparatus-of-the-Crab-Levers:
+.. _srd:apparatus-of-the-crab-levers:
 
 Apparatus of the Crab Levers
 ------------------------------------------------------

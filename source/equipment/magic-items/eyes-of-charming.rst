@@ -1,5 +1,5 @@
 
-.. _srd_Eyes-of-Charming:
+.. _srd:eyes-of-charming:
 
 Eyes of Charming
 ------------------------------------------------------

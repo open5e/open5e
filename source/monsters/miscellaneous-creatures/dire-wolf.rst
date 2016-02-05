@@ -1,5 +1,5 @@
 
-.. _srd_Dire-Wolf:
+.. _srd:dire-wolf:
 
 Dire Wolf
 ---------

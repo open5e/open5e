@@ -1,5 +1,5 @@
 
-.. _srd_Spirit-Guardians:
+.. _srd:spirit-guardians:
 
 Spirit Guardians
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Mass-Suggestion:
+.. _srd:mass-suggestion:
 
 Mass Suggestion
 -------------------------------------------------------------

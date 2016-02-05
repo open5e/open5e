@@ -1,5 +1,5 @@
 
-.. _srd_Lightning-Bolt:
+.. _srd:lightning-bolt:
 
 Lightning Bolt
 -------------------------------------------------------------

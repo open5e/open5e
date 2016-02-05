@@ -1,5 +1,5 @@
 
-.. _srd_Hypnotic-Pattern:
+.. _srd:hypnotic-pattern:
 
 Hypnotic Pattern
 -------------------------------------------------------------

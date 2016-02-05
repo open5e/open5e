@@ -1,5 +1,5 @@
 
-.. _srd_Time:
+.. _srd:time:
 
 Time
 ----

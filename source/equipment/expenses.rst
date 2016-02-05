@@ -1,5 +1,5 @@
 
-.. _srd_Expenses:
+.. _srd:expenses:
 
 Expenses
 --------

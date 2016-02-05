@@ -1,5 +1,5 @@
 
-.. _srd_Hallucinatory-Terrain:
+.. _srd:hallucinatory-terrain:
 
 Hallucinatory Terrain
 -------------------------------------------------------------

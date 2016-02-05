@@ -1,5 +1,5 @@
 
-.. _srd_Awakened-Tree:
+.. _srd:awakened-tree:
 
 Awakened Tree
 -------------

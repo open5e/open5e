@@ -1,5 +1,5 @@
 
-.. _srd_Vampiric-Touch:
+.. _srd:vampiric-touch:
 
 Vampiric Touch
 -------------------------------------------------------------

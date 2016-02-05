@@ -1,5 +1,5 @@
 
-.. _srd_Death-Dog:
+.. _srd:death-dog:
 
 Death Dog
 ---------

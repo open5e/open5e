@@ -1,5 +1,5 @@
 
-.. _srd_Wraith:
+.. _srd:wraith:
 
 Wraith
 ------

@@ -1,5 +1,5 @@
 
-.. _srd_Copper-Dragon-Young:
+.. _srd:copper-dragon-young:
 
 Copper Dragon, Young
 --------------------

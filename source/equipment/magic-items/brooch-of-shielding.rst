@@ -1,5 +1,5 @@
 
-.. _srd_Brooch-of-Shielding:
+.. _srd:brooch-of-shielding:
 
 Brooch of Shielding
 ------------------------------------------------------

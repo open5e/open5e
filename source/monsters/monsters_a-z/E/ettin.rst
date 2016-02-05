@@ -1,5 +1,5 @@
 
-.. _srd_Ettin:
+.. _srd:ettin:
 
 Ettin
 -----

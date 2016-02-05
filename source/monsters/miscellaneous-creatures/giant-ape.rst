@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Ape:
+.. _srd:giant-ape:
 
 Giant Ape
 ---------

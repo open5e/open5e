@@ -1,5 +1,5 @@
 
-.. _srd_Gynosphinx:
+.. _srd:gynosphinx:
 
 Gynosphinx
 ----------

@@ -1,5 +1,5 @@
 
-.. _srd_Diseases:
+.. _srd:diseases:
 
 Diseases
 --------

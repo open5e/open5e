@@ -1,5 +1,5 @@
 
-.. _srd_Conjure-Woodland-Beings:
+.. _srd:conjure-woodland-beings:
 
 Conjure Woodland Beings
 -------------------------------------------------------------

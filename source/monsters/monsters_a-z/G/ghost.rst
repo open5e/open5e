@@ -1,5 +1,5 @@
 
-.. _srd_Ghost:
+.. _srd:ghost:
 
 Ghost
 -----

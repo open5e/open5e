@@ -1,5 +1,5 @@
 
-.. _srd_Staff-of-Striking:
+.. _srd:staff-of-striking:
 
 Staff of Striking
 ------------------------------------------------------

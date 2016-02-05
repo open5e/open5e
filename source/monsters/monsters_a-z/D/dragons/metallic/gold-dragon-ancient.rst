@@ -1,5 +1,5 @@
 
-.. _srd_Gold-Dragon-Ancient:
+.. _srd:gold-dragon-ancient:
 
 Gold Dragon, Ancient
 --------------------

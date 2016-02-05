@@ -1,5 +1,5 @@
 
-.. _srd_Weapons:
+.. _srd:weapons:
 
 Weapons
 -------

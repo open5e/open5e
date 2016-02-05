@@ -1,5 +1,5 @@
 
-.. _srd_Manual-of-Gainful-Exercise:
+.. _srd:manual-of-gainful-exercise:
 
 Manual of Gainful Exercise
 ------------------------------------------------------

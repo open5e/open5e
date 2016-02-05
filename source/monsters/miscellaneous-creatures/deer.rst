@@ -1,5 +1,5 @@
 
-.. _srd_Deer:
+.. _srd:deer:
 
 Deer
 ----

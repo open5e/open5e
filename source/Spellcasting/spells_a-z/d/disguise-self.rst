@@ -1,5 +1,5 @@
 
-.. _srd_Disguise-Self:
+.. _srd:disguise-self:
 
 Disguise Self
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Contingency:
+.. _srd:contingency:
 
 Contingency
 -------------------------------------------------------------

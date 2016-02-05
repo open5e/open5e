@@ -1,5 +1,5 @@
 
-.. _srd_Fire-Elemental:
+.. _srd:fire-elemental:
 
 Fire Elemental
 --------------

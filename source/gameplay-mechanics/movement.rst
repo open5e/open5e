@@ -1,5 +1,5 @@
 
-.. _srd_Movement:
+.. _srd:movement:
 
 Movement
 --------

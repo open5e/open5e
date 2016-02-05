@@ -1,5 +1,5 @@
 
-.. _srd_Ogre:
+.. _srd:ogre:
 
 Ogre
 ----

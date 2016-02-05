@@ -1,5 +1,5 @@
 
-.. _srd_Sprite:
+.. _srd:sprite:
 
 Sprite
 ------

@@ -1,5 +1,5 @@
 
-.. _srd_Horned-Devil:
+.. _srd:horned-devil:
 
 Horned Devil
 ------------

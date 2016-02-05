@@ -1,5 +1,5 @@
 
-.. _srd_Power-Word-Stun:
+.. _srd:power-word-stun:
 
 Power Word Stun
 -------------------------------------------------------------

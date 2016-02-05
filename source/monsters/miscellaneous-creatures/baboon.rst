@@ -1,5 +1,5 @@
 
-.. _srd_Baboon:
+.. _srd:baboon:
 
 Baboon
 ------

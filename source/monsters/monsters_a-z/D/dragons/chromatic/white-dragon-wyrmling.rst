@@ -1,5 +1,5 @@
 
-.. _srd_White-Dragon-Wyrmling:
+.. _srd:white-dragon-wyrmling:
 
 White Dragon Wyrmling
 ---------------------

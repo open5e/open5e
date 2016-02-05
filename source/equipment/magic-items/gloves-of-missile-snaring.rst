@@ -1,5 +1,5 @@
 
-.. _srd_Gloves-of-Missile-Snaring:
+.. _srd:gloves-of-missile-snaring:
 
 Gloves of Missile Snaring
 ------------------------------------------------------

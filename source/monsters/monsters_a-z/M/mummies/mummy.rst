@@ -1,5 +1,5 @@
 
-.. _srd_Mummy:
+.. _srd:mummy:
 
 Mummy
 -----

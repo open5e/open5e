@@ -1,5 +1,5 @@
 
-.. _srd_Minor-Illusion:
+.. _srd:minor-illusion:
 
 Minor Illusion
 -------------------------------------------------------------

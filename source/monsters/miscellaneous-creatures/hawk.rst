@@ -1,5 +1,5 @@
 
-.. _srd_Hawk:
+.. _srd:hawk:
 
 Hawk
 ----

@@ -1,5 +1,5 @@
 
-.. _srd_Gaseous-Form:
+.. _srd:gaseous-form:
 
 Gaseous Form
 -------------------------------------------------------------

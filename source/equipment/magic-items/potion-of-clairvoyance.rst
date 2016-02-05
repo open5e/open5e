@@ -1,5 +1,5 @@
 
-.. _srd_Potion-of-Clairvoyance:
+.. _srd:potion-of-clairvoyance:
 
 Potion of Clairvoyance
 ------------------------------------------------------

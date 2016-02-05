@@ -1,5 +1,5 @@
 
-.. _srd_Prayer-of-Healing:
+.. _srd:prayer-of-healing:
 
 Prayer of Healing
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Potion-of-Flying:
+.. _srd:potion-of-flying:
 
 Potion of Flying
 ------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Gloves-of-Swimming-and-Climbing:
+.. _srd:gloves-of-swimming-and-climbing:
 
 Gloves of Swimming and Climbing
 ------------------------------------------------------

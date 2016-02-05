@@ -1,5 +1,5 @@
 
-.. _srd_Animate-Objects:
+.. _srd:animate-objects:
 
 Animate Objects
 -------------------------------------------------------------

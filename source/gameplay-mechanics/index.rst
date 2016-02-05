@@ -1,5 +1,5 @@
 
-.. _srd_Gameplay-Mechanics:
+.. _srd:gameplay-mechanics:
 
 Gameplay Mechanics
 ------------------

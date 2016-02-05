@@ -1,5 +1,5 @@
 
-.. _srd_Medusa:
+.. _srd:medusa:
 
 Medusa
 ------

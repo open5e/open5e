@@ -1,5 +1,5 @@
 
-.. _srd_Rust-Monster:
+.. _srd:rust-monster:
 
 Rust Monster
 ------------

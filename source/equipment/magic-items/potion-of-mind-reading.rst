@@ -1,5 +1,5 @@
 
-.. _srd_Potion-of-Mind-Reading:
+.. _srd:potion-of-mind-reading:
 
 Potion of Mind Reading
 ------------------------------------------------------

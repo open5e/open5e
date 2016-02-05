@@ -1,5 +1,5 @@
 
-.. _srd_Bronze-Dragon-Adult:
+.. _srd:bronze-dragon-adult:
 
 Bronze Dragon, Adult
 --------------------

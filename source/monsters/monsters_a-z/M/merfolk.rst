@@ -1,5 +1,5 @@
 
-.. _srd_Merfolk:
+.. _srd:merfolk:
 
 Merfolk
 -------

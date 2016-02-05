@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-Animal-Influence:
+.. _srd:ring-of-animal-influence:
 
 Ring of Animal Influence
 ------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Healing-Word:
+.. _srd:healing-word:
 
 Healing Word
 -------------------------------------------------------------

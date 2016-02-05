@@ -1,5 +1,5 @@
 
-.. _srd_Otyugh:
+.. _srd:otyugh:
 
 Otyugh
 ------

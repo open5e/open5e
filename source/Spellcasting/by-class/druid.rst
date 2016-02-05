@@ -1,5 +1,5 @@
 
-.. _srd_Druid-Spells:
+.. _srd:druid-spells:
 
 Druid Spells
 ------------
@@ -7,140 +7,140 @@ Druid Spells
 Cantrips (0 Level)
 ~~~~~~~~~~~~~~~~~~
 
-- :ref:`srd_Guidance`
-- :ref:`srd_Mending`
-- :ref:`srd_Produce-Flame`
-- :ref:`srd_Resistance`
-- :ref:`srd_Shillelagh`
+- :ref:`srd:guidance`
+- :ref:`srd:mending`
+- :ref:`srd:produce-flame`
+- :ref:`srd:resistance`
+- :ref:`srd:shillelagh`
 
 1st Level
 ~~~~~~~~~
 
-- :ref:`srd_Charm-Person`
-- :ref:`srd_Create-or-Destroy-Water`
-- :ref:`srd_Cure-Wounds`
-- :ref:`srd_Detect-Magic`
-- :ref:`srd_Detect-Poison-and-Disease`
-- :ref:`srd_Entangle`
-- :ref:`srd_Faerie-Fire`
-- :ref:`srd_Fog-Cloud`
-- :ref:`srd_Healing-Word`
-- :ref:`srd_Jump`
-- :ref:`srd_Longstrider`
-- :ref:`srd_Purify-Food-and-Drink`
-- :ref:`srd_Speak-with-Animals`
-- :ref:`srd_Thunderwave`
+- :ref:`srd:charm-person`
+- :ref:`srd:create-or-destroy-water`
+- :ref:`srd:cure-wounds`
+- :ref:`srd:detect-magic`
+- :ref:`srd:detect-poison-and-disease`
+- :ref:`srd:entangle`
+- :ref:`srd:faerie-fire`
+- :ref:`srd:fog-cloud`
+- :ref:`srd:healing-word`
+- :ref:`srd:jump`
+- :ref:`srd:longstrider`
+- :ref:`srd:purify-food-and-drink`
+- :ref:`srd:speak-with-animals`
+- :ref:`srd:thunderwave`
 
 2nd Level
 ~~~~~~~~~
 
-- :ref:`srd_Animal-Messenger`
-- :ref:`srd_Barkskin`
-- :ref:`srd_Darkvision`
-- :ref:`srd_Enhance-Ability`
-- :ref:`srd_Find-Traps`
-- :ref:`srd_Flame-Blade`
-- :ref:`srd_Flaming-Sphere`
-- :ref:`srd_Gust-of-Wind`
-- :ref:`srd_Heat-Metal`
-- :ref:`srd_Hold-Person`
-- :ref:`srd_Lesser-Restoration`
-- :ref:`srd_Locate-Animals-or-Plants`
-- :ref:`srd_Locate-Object`
-- :ref:`srd_Moonbeam`
-- :ref:`srd_Pass-without-Trace`
-- :ref:`srd_Protection-from-Poison`
-- :ref:`srd_Spike-Growth`
+- :ref:`srd:animal-messenger`
+- :ref:`srd:barkskin`
+- :ref:`srd:darkvision`
+- :ref:`srd:enhance-ability`
+- :ref:`srd:find-traps`
+- :ref:`srd:flame-blade`
+- :ref:`srd:flaming-sphere`
+- :ref:`srd:gust-of-wind`
+- :ref:`srd:heat-metal`
+- :ref:`srd:hold-person`
+- :ref:`srd:lesser-restoration`
+- :ref:`srd:locate-animals-or-plants`
+- :ref:`srd:locate-object`
+- :ref:`srd:moonbeam`
+- :ref:`srd:pass-without-trace`
+- :ref:`srd:protection-from-poison`
+- :ref:`srd:spike-growth`
 
 3rd Level
 ~~~~~~~~~
 
-- :ref:`srd_Call-Lightning`
-- :ref:`srd_Conjure-Animals`
-- :ref:`srd_Daylight`
-- :ref:`srd_Dispel-Magic`
-- :ref:`srd_Meld-into-Stone`
-- :ref:`srd_Plant-Growth`
-- :ref:`srd_Protection-from-Energy`
-- :ref:`srd_Sleet-Storm`
-- :ref:`srd_Speak-with-Plants`
-- :ref:`srd_Water-Breathing`
-- :ref:`srd_Water-Walk`
-- :ref:`srd_Wind-Wall`
+- :ref:`srd:call-lightning`
+- :ref:`srd:conjure-animals`
+- :ref:`srd:daylight`
+- :ref:`srd:dispel-magic`
+- :ref:`srd:meld-into-stone`
+- :ref:`srd:plant-growth`
+- :ref:`srd:protection-from-energy`
+- :ref:`srd:sleet-storm`
+- :ref:`srd:speak-with-plants`
+- :ref:`srd:water-breathing`
+- :ref:`srd:water-walk`
+- :ref:`srd:wind-wall`
 
 4th Level
 ~~~~~~~~~
 
-- :ref:`srd_Blight`
-- :ref:`srd_Confusion`
-- :ref:`srd_Conjure-Minor-Elementals`
-- :ref:`srd_Conjure-Woodland-Beings`
-- :ref:`srd_Control-Water`
-- :ref:`srd_Dominate-Beast`
-- :ref:`srd_Freedom-of-Movement`
-- :ref:`srd_Giant-Insect`
-- :ref:`srd_Hallucinatory-Terrain`
-- :ref:`srd_Ice-Storm`
-- :ref:`srd_Locate-Creature`
-- :ref:`srd_Polymorph`
-- :ref:`srd_Stone-Shape`
-- :ref:`srd_Stoneskin`
-- :ref:`srd_Wall-of-Fire`
+- :ref:`srd:blight`
+- :ref:`srd:confusion`
+- :ref:`srd:conjure-minor-elementals`
+- :ref:`srd:conjure-woodland-beings`
+- :ref:`srd:control-water`
+- :ref:`srd:dominate-beast`
+- :ref:`srd:freedom-of-movement`
+- :ref:`srd:giant-insect`
+- :ref:`srd:hallucinatory-terrain`
+- :ref:`srd:ice-storm`
+- :ref:`srd:locate-creature`
+- :ref:`srd:polymorph`
+- :ref:`srd:stone-shape`
+- :ref:`srd:stoneskin`
+- :ref:`srd:wall-of-fire`
 
 5th Level
 ~~~~~~~~~
 
-- :ref:`srd_Antilife-Shell`
-- :ref:`srd_Awaken`
-- :ref:`srd_Commune-with-Nature`
-- :ref:`srd_Conjure-Elemental`
-- :ref:`srd_Contagion`
-- :ref:`srd_Geas`
-- :ref:`srd_Greater-Restoration`
-- :ref:`srd_Insect-Plague`
-- :ref:`srd_Mass-Cure-Wounds`
-- :ref:`srd_Planar-Binding`
-- :ref:`srd_Reincarnate`
-- :ref:`srd_Scrying`
-- :ref:`srd_Tree-Stride`
-- :ref:`srd_Wall-of-Stone`
+- :ref:`srd:antilife-shell`
+- :ref:`srd:awaken`
+- :ref:`srd:commune-with-nature`
+- :ref:`srd:conjure-elemental`
+- :ref:`srd:contagion`
+- :ref:`srd:geas`
+- :ref:`srd:greater-restoration`
+- :ref:`srd:insect-plague`
+- :ref:`srd:mass-cure-wounds`
+- :ref:`srd:planar-binding`
+- :ref:`srd:reincarnate`
+- :ref:`srd:scrying`
+- :ref:`srd:tree-stride`
+- :ref:`srd:wall-of-stone`
 
 6th Level
 ~~~~~~~~~
 
-- :ref:`srd_Conjure-Fey`
-- :ref:`srd_Find-the-Path`
-- :ref:`srd_Heal`
-- :ref:`srd_Heroes-Feast`
-- :ref:`srd_Move-Earth`
-- :ref:`srd_Sunbeam`
-- :ref:`srd_Transport-via-Plants`
-- :ref:`srd_Wall-of-Thorns`
-- :ref:`srd_Wind-Walk`
+- :ref:`srd:conjure-fey`
+- :ref:`srd:find-the-path`
+- :ref:`srd:heal`
+- :ref:`srd:heroes-feast`
+- :ref:`srd:move-earth`
+- :ref:`srd:sunbeam`
+- :ref:`srd:transport-via-plants`
+- :ref:`srd:wall-of-thorns`
+- :ref:`srd:wind-walk`
 
 7th Level
 ~~~~~~~~~
 
-- :ref:`srd_Fire-Storm`
-- :ref:`srd_Mirage-Arcane`
-- :ref:`srd_Plane-Shift`
-- :ref:`srd_Regenerate`
-- :ref:`srd_Reverse-Gravity`
+- :ref:`srd:fire-storm`
+- :ref:`srd:mirage-arcane`
+- :ref:`srd:plane-shift`
+- :ref:`srd:regenerate`
+- :ref:`srd:reverse-gravity`
 
 8th Level
 ~~~~~~~~~
 
-- :ref:`srd_Animal-Shapes`
-- :ref:`srd_Antipathy-Sympathy`
-- :ref:`srd_Control-Weather`
-- :ref:`srd_Earthquake`
-- :ref:`srd_Feeblemind`
-- :ref:`srd_Sunburst`
+- :ref:`srd:animal-shapes`
+- :ref:`srd:antipathy-sympathy`
+- :ref:`srd:control-weather`
+- :ref:`srd:earthquake`
+- :ref:`srd:feeblemind`
+- :ref:`srd:sunburst`
 
 9th Level
 ~~~~~~~~~
 
-- :ref:`srd_Foresight`
-- :ref:`srd_Shapechange`
-- :ref:`srd_Storm-of-Vengeance`
-- :ref:`srd_True-Resurrection`
+- :ref:`srd:foresight`
+- :ref:`srd:shapechange`
+- :ref:`srd:storm-of-vengeance`
+- :ref:`srd:true-resurrection`

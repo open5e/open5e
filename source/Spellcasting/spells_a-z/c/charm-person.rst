@@ -1,5 +1,5 @@
 
-.. _srd_Charm-Person:
+.. _srd:charm-person:
 
 Charm Person
 -------------------------------------------------------------

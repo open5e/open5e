@@ -1,5 +1,5 @@
 
-.. _srd_Sword-of-Wounding:
+.. _srd:sword-of-wounding:
 
 Sword of Wounding
 ------------------------------------------------------

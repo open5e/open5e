@@ -1,5 +1,5 @@
 
-.. _srd_Saving-Throws:
+.. _srd:saving-throws:
 
 Saving Throws
 -------------

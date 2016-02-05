@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Boar:
+.. _srd:giant-boar:
 
 Giant Boar
 ----------

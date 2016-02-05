@@ -1,5 +1,5 @@
 
-.. _srd_Treant:
+.. _srd:treant:
 
 Treant
 ------

@@ -1,5 +1,5 @@
 
-.. _srd_Elephant:
+.. _srd:elephant:
 
 Elephant
 --------

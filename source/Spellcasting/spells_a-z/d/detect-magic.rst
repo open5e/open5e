@@ -1,5 +1,5 @@
 
-.. _srd_Detect-Magic:
+.. _srd:detect-magic:
 
 Detect Magic
 -------------------------------------------------------------

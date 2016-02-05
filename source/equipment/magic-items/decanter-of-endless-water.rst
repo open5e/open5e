@@ -1,5 +1,5 @@
 
-.. _srd_Decanter-of-Endless-Water:
+.. _srd:decanter-of-endless-water:
 
 Decanter of Endless Water
 ------------------------------------------------------

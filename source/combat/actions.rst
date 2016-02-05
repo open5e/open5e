@@ -1,5 +1,5 @@
 
-.. _srd_Actions-in-Combat:
+.. _srd:actions-in-combat:
 
 Actions in Combat
 -----------------

@@ -1,5 +1,5 @@
 
-.. _srd_Hyena:
+.. _srd:hyena:
 
 Hyena
 -----

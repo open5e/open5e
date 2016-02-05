@@ -1,5 +1,5 @@
 
-.. _srd_Wererat:
+.. _srd:wererat:
 
 Wererat
 -------

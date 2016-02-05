@@ -1,5 +1,5 @@
 
-.. _srd_Planetar:
+.. _srd:planetar:
 
 Planetar
 --------

@@ -1,5 +1,5 @@
 
-.. _srd_Ghast:
+.. _srd:ghast:
 
 Ghast
 -----

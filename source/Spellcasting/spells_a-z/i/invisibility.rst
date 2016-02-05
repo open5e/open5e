@@ -1,5 +1,5 @@
 
-.. _srd_Invisibility:
+.. _srd:invisibility:
 
 Invisibility
 -------------------------------------------------------------

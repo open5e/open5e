@@ -1,5 +1,5 @@
 
-.. _srd_Oil-of-Sharpness:
+.. _srd:oil-of-sharpness:
 
 Oil of Sharpness
 ------------------------------------------------------

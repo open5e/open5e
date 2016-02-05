@@ -1,5 +1,5 @@
 
-.. _srd_Adamantine-Armor:
+.. _srd:adamantine-armor:
 
 Adamantine Armor
 ------------------------------------------------------

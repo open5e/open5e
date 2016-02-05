@@ -1,5 +1,5 @@
 
-.. _srd_Comprehend-Languages:
+.. _srd:comprehend-languages:
 
 Comprehend Languages
 -------------------------------------------------------------

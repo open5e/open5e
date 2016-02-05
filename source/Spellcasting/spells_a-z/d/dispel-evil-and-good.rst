@@ -1,5 +1,5 @@
 
-.. _srd_Dispel-Evil-and-Good:
+.. _srd:dispel-evil-and-good:
 
 Dispel Evil and Good
 -------------------------------------------------------------

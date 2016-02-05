@@ -1,5 +1,5 @@
 
-.. _srd_Black-Dragon-Ancient:
+.. _srd:black-dragon-ancient:
 
 Black Dragon, Ancient
 ---------------------

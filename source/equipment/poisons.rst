@@ -1,5 +1,5 @@
 
-.. _srd_Poisons:
+.. _srd:poisons:
 
 Poisons
 -------

@@ -1,5 +1,5 @@
 
-.. _srd_Animated-Object: Flying Sword:
+.. _srd:animated-object: flying sword:
 
 Animated Object: Flying Sword
 -----------------------------

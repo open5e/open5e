@@ -1,5 +1,5 @@
 
-.. _srd_Harpy:
+.. _srd:harpy:
 
 Harpy
 -----

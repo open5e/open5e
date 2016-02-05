@@ -1,5 +1,5 @@
 
-.. _srd_Meld-into-Stone:
+.. _srd:meld-into-stone:
 
 Meld into Stone
 -------------------------------------------------------------

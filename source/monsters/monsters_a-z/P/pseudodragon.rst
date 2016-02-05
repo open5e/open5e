@@ -1,5 +1,5 @@
 
-.. _srd_Pseudodragon:
+.. _srd:pseudodragon:
 
 Pseudodragon
 ------------

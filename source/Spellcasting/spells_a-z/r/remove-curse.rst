@@ -1,5 +1,5 @@
 
-.. _srd_Remove-Curse:
+.. _srd:remove-curse:
 
 Remove Curse
 -------------------------------------------------------------

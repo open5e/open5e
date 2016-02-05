@@ -1,5 +1,5 @@
 
-.. _srd_Reef-Shark:
+.. _srd:reef-shark:
 
 Reef Shark
 ----------

@@ -1,5 +1,5 @@
 
-.. _srd_Spirit-Naga:
+.. _srd:spirit-naga:
 
 Spirit Naga
 -----------

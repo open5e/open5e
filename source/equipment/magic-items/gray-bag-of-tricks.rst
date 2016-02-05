@@ -1,5 +1,5 @@
 
-.. _srd_Gray-Bag-of-Tricks:
+.. _srd:gray-bag-of-tricks:
 
 Gray Bag of Tricks
 ------------------------------------------------------

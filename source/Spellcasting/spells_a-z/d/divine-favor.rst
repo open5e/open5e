@@ -1,5 +1,5 @@
 
-.. _srd_Divine-Favor:
+.. _srd:divine-favor:
 
 Divine Favor
 -------------------------------------------------------------

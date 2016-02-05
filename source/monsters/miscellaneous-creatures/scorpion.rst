@@ -1,5 +1,5 @@
 
-.. _srd_Scorpion:
+.. _srd:scorpion:
 
 Scorpion
 --------

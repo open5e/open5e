@@ -1,5 +1,5 @@
 
-.. _srd_Gnoll:
+.. _srd:gnoll:
 
 Gnoll
 -----

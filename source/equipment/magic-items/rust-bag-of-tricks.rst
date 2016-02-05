@@ -1,5 +1,5 @@
 
-.. _srd_Rust-Bag-of-Tricks:
+.. _srd:rust-bag-of-tricks:
 
 Rust Bag of Tricks
 ------------------------------------------------------

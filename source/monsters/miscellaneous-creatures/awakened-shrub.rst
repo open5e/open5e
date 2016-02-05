@@ -1,5 +1,5 @@
 
-.. _srd_Awakened-Shrub:
+.. _srd:awakened-shrub:
 
 Awakened Shrub
 --------------

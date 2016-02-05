@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-Protection:
+.. _srd:ring-of-protection:
 
 Ring of Protection
 ------------------------------------------------------

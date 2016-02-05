@@ -1,5 +1,5 @@
 
-.. _srd_Cloak-of-Protection:
+.. _srd:cloak-of-protection:
 
 Cloak of Protection
 ------------------------------------------------------

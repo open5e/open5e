@@ -1,5 +1,5 @@
 
-.. _srd_Pit-Fiend:
+.. _srd:pit-fiend:
 
 Pit Fiend
 ---------

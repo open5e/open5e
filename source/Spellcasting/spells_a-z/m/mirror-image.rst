@@ -1,5 +1,5 @@
 
-.. _srd_Mirror-Image:
+.. _srd:mirror-image:
 
 Mirror Image
 -------------------------------------------------------------

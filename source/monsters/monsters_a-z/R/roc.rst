@@ -1,5 +1,5 @@
 
-.. _srd_Roc:
+.. _srd:roc:
 
 Roc
 ---

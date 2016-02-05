@@ -1,5 +1,5 @@
 
-.. _srd_Stinking-Cloud:
+.. _srd:stinking-cloud:
 
 Stinking Cloud
 -------------------------------------------------------------

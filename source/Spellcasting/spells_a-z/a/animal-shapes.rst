@@ -1,5 +1,5 @@
 
-.. _srd_Animal-Shapes:
+.. _srd:animal-shapes:
 
 Animal Shapes
 -------------------------------------------------------------

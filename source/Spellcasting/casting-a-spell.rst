@@ -1,5 +1,5 @@
 
-.. _srd_Casting-a-Spell:
+.. _srd:casting-a-spell:
 
 Casting a Spell
 ---------------

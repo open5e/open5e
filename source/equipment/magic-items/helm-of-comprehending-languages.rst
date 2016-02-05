@@ -1,5 +1,5 @@
 
-.. _srd_Helm-of-Comprehending-Languages:
+.. _srd:helm-of-comprehending-languages:
 
 Helm of Comprehending Languages
 ------------------------------------------------------

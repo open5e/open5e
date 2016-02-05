@@ -1,5 +1,5 @@
 
-.. _srd_Scarab-of-Protection:
+.. _srd:scarab-of-protection:
 
 Scarab of Protection
 ------------------------------------------------------

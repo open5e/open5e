@@ -1,5 +1,5 @@
 
-.. _srd_Boots-of-the-Winterlands:
+.. _srd:boots-of-the-winterlands:
 
 Boots of the Winterlands
 ------------------------------------------------------

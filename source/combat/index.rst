@@ -1,5 +1,5 @@
 
-.. _srd_Combat:
+.. _srd:combat:
 
 Combat
 ------

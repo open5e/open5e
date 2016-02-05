@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Wolf-Spider:
+.. _srd:giant-wolf-spider:
 
 Giant Wolf Spider
 -----------------

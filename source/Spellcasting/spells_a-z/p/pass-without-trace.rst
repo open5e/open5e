@@ -1,5 +1,5 @@
 
-.. _srd_Pass-without-Trace:
+.. _srd:pass-without-trace:
 
 Pass without Trace
 -------------------------------------------------------------

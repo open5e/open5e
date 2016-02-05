@@ -1,5 +1,5 @@
 
-.. _srd_Berserker:
+.. _srd:berserker:
 
 Berserker
 ---------

@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Wasp:
+.. _srd:giant-wasp:
 
 Giant Wasp
 ----------

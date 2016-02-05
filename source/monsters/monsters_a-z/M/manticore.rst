@@ -1,5 +1,5 @@
 
-.. _srd_Manticore:
+.. _srd:manticore:
 
 Manticore
 ---------

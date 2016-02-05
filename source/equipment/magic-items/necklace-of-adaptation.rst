@@ -1,5 +1,5 @@
 
-.. _srd_Necklace-of-Adaptation:
+.. _srd:necklace-of-adaptation:
 
 Necklace of Adaptation
 ------------------------------------------------------

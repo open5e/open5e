@@ -1,5 +1,5 @@
 
-.. _srd_Chimera:
+.. _srd:chimera:
 
 Chimera
 -------

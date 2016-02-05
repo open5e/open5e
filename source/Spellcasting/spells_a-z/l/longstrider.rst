@@ -1,5 +1,5 @@
 
-.. _srd_Longstrider:
+.. _srd:longstrider:
 
 Longstrider
 -------------------------------------------------------------

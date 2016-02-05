@@ -1,5 +1,5 @@
 
-.. _srd_Ankheg:
+.. _srd:ankheg:
 
 Ankheg
 ------

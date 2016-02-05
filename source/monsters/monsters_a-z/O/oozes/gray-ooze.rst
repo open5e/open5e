@@ -1,5 +1,5 @@
 
-.. _srd_Gray-Ooze:
+.. _srd:gray-ooze:
 
 Gray Ooze
 ---------

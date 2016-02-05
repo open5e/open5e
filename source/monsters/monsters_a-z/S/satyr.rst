@@ -1,5 +1,5 @@
 
-.. _srd_Satyr:
+.. _srd:satyr:
 
 Satyr
 -----

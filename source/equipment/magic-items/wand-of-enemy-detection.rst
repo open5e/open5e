@@ -1,5 +1,5 @@
 
-.. _srd_Wand-of-Enemy-Detection:
+.. _srd:wand-of-enemy-detection:
 
 Wand of Enemy Detection
 ------------------------------------------------------

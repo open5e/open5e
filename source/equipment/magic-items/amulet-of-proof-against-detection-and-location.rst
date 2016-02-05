@@ -1,5 +1,5 @@
 
-.. _srd_Amulet-of-Proof-against-Detection-and-Location:
+.. _srd:amulet-of-proof-against-detection-and-location:
 
 Amulet of Proof against Detection and Location
 ------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Finger-of-Death:
+.. _srd:finger-of-death:
 
 Finger of Death
 -------------------------------------------------------------

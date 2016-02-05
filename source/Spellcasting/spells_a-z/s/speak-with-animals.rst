@@ -1,5 +1,5 @@
 
-.. _srd_Speak-with-Animals:
+.. _srd:speak-with-animals:
 
 Speak with Animals
 -------------------------------------------------------------

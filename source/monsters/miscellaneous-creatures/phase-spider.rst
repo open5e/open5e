@@ -1,5 +1,5 @@
 
-.. _srd_Phase-Spider:
+.. _srd:phase-spider:
 
 Phase Spider
 ------------

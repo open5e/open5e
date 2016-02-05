@@ -1,5 +1,5 @@
 
-.. _srd_Oil-of-Slipperiness:
+.. _srd:oil-of-slipperiness:
 
 Oil of Slipperiness
 ------------------------------------------------------

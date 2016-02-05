@@ -1,5 +1,5 @@
 
-.. _srd_Challenge:
+.. _srd:challenge:
 
 Challenge
 ---------

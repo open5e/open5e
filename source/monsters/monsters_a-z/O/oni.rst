@@ -1,5 +1,5 @@
 
-.. _srd_Oni:
+.. _srd:oni:
 
 Oni
 ---

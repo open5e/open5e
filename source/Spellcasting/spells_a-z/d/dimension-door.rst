@@ -1,5 +1,5 @@
 
-.. _srd_Dimension-Door:
+.. _srd:dimension-door:
 
 Dimension Door
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Gladiator:
+.. _srd:gladiator:
 
 Gladiator
 ---------

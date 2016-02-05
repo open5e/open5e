@@ -1,5 +1,5 @@
 
-.. _srd_Incendiary-Cloud:
+.. _srd:incendiary-cloud:
 
 Incendiary Cloud
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Armor:
+.. _srd:armor:
 
 Armor
 -----

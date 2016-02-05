@@ -1,5 +1,5 @@
 
-.. _srd_Create-Undead:
+.. _srd:create-undead:
 
 Create Undead
 -------------------------------------------------------------

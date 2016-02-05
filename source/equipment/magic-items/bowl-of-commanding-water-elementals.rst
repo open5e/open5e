@@ -1,5 +1,5 @@
 
-.. _srd_Bowl-of-Commanding-Water-Elementals:
+.. _srd:bowl-of-commanding-water-elementals:
 
 Bowl of Commanding Water Elementals
 ------------------------------------------------------

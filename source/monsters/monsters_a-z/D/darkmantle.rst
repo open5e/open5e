@@ -1,5 +1,5 @@
 
-.. _srd_Darkmantle:
+.. _srd:darkmantle:
 
 Darkmantle
 ----------

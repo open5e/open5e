@@ -1,5 +1,5 @@
 
-.. _srd_Solar:
+.. _srd:solar:
 
 Solar
 -----

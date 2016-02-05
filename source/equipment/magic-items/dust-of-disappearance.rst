@@ -1,5 +1,5 @@
 
-.. _srd_Dust-of-Disappearance:
+.. _srd:dust-of-disappearance:
 
 Dust of Disappearance
 ------------------------------------------------------

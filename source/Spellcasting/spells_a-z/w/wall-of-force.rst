@@ -1,5 +1,5 @@
 
-.. _srd_Wall-of-Force:
+.. _srd:wall-of-force:
 
 Wall of Force
 -------------------------------------------------------------

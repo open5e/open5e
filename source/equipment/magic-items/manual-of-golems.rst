@@ -1,5 +1,5 @@
 
-.. _srd_Manual-of-Golems:
+.. _srd:manual-of-golems:
 
 Manual of Golems
 ------------------------------------------------------

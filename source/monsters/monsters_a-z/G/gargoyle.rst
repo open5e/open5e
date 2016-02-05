@@ -1,5 +1,5 @@
 
-.. _srd_Gargoyle:
+.. _srd:gargoyle:
 
 Gargoyle
 --------

@@ -1,5 +1,5 @@
 
-.. _srd_Belt-of-Giant-Strength:
+.. _srd:belt-of-giant-strength:
 
 Belt of Giant Strength
 ------------------------------------------------------

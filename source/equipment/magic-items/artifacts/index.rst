@@ -1,5 +1,5 @@
 
-.. _srd_Artifact-list:
+.. _srd:artifact-list:
 
 Artifacts
 -------------------------------------------------------------

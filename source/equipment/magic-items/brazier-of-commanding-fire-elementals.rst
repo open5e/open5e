@@ -1,5 +1,5 @@
 
-.. _srd_Brazier-of-Commanding-Fire-Elementals:
+.. _srd:brazier-of-commanding-fire-elementals:
 
 Brazier of Commanding Fire Elementals
 ------------------------------------------------------

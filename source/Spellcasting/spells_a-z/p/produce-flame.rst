@@ -1,5 +1,5 @@
 
-.. _srd_Produce-Flame:
+.. _srd:produce-flame:
 
 Produce Flame
 -------------------------------------------------------------

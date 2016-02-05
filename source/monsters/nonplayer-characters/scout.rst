@@ -1,5 +1,5 @@
 
-.. _srd_Scout:
+.. _srd:scout:
 
 Scout
 -----

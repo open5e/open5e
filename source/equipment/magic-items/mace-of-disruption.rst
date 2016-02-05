@@ -1,5 +1,5 @@
 
-.. _srd_Mace-of-Disruption:
+.. _srd:mace-of-disruption:
 
 Mace of Disruption
 ------------------------------------------------------

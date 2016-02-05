@@ -1,5 +1,5 @@
 
-.. _srd_Animate-Dead:
+.. _srd:animate-dead:
 
 Animate Dead
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Grimlock:
+.. _srd:grimlock:
 
 Grimlock
 --------

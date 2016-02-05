@@ -1,5 +1,5 @@
 
-.. _srd_Copper-Dragon-Ancient:
+.. _srd:copper-dragon-ancient:
 
 Copper Dragon, Ancient
 ----------------------

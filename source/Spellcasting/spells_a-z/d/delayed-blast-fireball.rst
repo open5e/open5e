@@ -1,5 +1,5 @@
 
-.. _srd_Delayed-Blast-Fireball:
+.. _srd:delayed-blast-fireball:
 
 Delayed Blast Fireball
 -------------------------------------------------------------

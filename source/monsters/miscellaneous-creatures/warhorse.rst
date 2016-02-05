@@ -1,5 +1,5 @@
 
-.. _srd_Warhorse:
+.. _srd:warhorse:
 
 Warhorse
 --------

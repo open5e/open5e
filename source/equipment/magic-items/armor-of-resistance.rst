@@ -1,5 +1,5 @@
 
-.. _srd_Armor-of-Resistance:
+.. _srd:armor-of-resistance:
 
 Armor of Resistance
 ------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Tan-Bag-of-Tricks:
+.. _srd:tan-bag-of-tricks:
 
 Tan Bag of Tricks
 ------------------------------------------------------

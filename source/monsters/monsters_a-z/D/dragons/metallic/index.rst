@@ -1,5 +1,5 @@
 
-.. _srd_Dragons-Metallic:
+.. _srd:dragons-metallic:
 
 Dragons, Metallic  
 -------------------------------------------------------------

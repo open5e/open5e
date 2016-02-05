@@ -1,5 +1,5 @@
 
-.. _srd_Create-or-Destroy-Water:
+.. _srd:create-or-destroy-water:
 
 Create or Destroy Water
 -------------------------------------------------------------

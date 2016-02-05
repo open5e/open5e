@@ -1,5 +1,5 @@
 
-.. _srd_Lantern-of-Revealing:
+.. _srd:lantern-of-revealing:
 
 Lantern of Revealing
 ------------------------------------------------------

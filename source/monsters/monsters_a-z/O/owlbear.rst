@@ -1,5 +1,5 @@
 
-.. _srd_Owlbear:
+.. _srd:owlbear:
 
 Owlbear
 -------

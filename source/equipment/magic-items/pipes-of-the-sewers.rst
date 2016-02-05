@@ -1,5 +1,5 @@
 
-.. _srd_Pipes-of-the-Sewers:
+.. _srd:pipes-of-the-sewers:
 
 Pipes of the Sewers
 ------------------------------------------------------

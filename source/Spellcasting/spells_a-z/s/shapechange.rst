@@ -1,5 +1,5 @@
 
-.. _srd_Shapechange:
+.. _srd:shapechange:
 
 Shapechange
 -------------------------------------------------------------

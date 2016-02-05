@@ -1,5 +1,5 @@
 
-.. _srd_Coins:
+.. _srd:coins:
 
 Coins
 ------

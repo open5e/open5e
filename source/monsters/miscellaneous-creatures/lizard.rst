@@ -1,5 +1,5 @@
 
-.. _srd_Lizard:
+.. _srd:lizard:
 
 Lizard
 ------

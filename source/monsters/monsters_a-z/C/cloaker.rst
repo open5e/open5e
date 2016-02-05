@@ -1,5 +1,5 @@
 
-.. _srd_Cloaker:
+.. _srd:cloaker:
 
 Cloaker
 -------

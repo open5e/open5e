@@ -1,5 +1,5 @@
 
-.. _srd_Project-Image:
+.. _srd:project-image:
 
 Project Image
 -------------------------------------------------------------

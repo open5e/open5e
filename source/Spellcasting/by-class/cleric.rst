@@ -1,5 +1,5 @@
 
-.. _srd_Cleric-Spells:
+.. _srd:cleric-spells:
 
 Cleric Spells
 -------------
@@ -7,142 +7,142 @@ Cleric Spells
 Cantrips (0 Level)
 ~~~~~~~~~~~~~~~~~~
 
-- :ref:`srd_Guidance`
-- :ref:`srd_Light`
-- :ref:`srd_Mending`
-- :ref:`srd_Resistance`
-- :ref:`srd_Sacred-Flame`
-- :ref:`srd_Thaumaturgy`
+- :ref:`srd:guidance`
+- :ref:`srd:light`
+- :ref:`srd:mending`
+- :ref:`srd:resistance`
+- :ref:`srd:sacred-flame`
+- :ref:`srd:thaumaturgy`
 
 1st Level
 ~~~~~~~~~
 
-- :ref:`srd_Bane`
-- :ref:`srd_Bless`
-- :ref:`srd_Command`
-- :ref:`srd_Create-or-Destroy-Water`
-- :ref:`srd_Cure-Wounds`
-- :ref:`srd_Detect-Evil-and-Good`
-- :ref:`srd_Detect-Magic`
-- :ref:`srd_Detect-Poison-and-Disease`
-- :ref:`srd_Guiding-Bolt`
-- :ref:`srd_Healing-Word`
-- :ref:`srd_Inflict-Wounds`
-- :ref:`srd_Protection-from-Evil-and-Good`
-- :ref:`srd_Purify-Food-and-Drink`
-- :ref:`srd_Sanctuary`
-- :ref:`srd_Shield-of-Faith`
+- :ref:`srd:bane`
+- :ref:`srd:bless`
+- :ref:`srd:command`
+- :ref:`srd:create-or-destroy-water`
+- :ref:`srd:cure-wounds`
+- :ref:`srd:detect-evil-and-good`
+- :ref:`srd:detect-magic`
+- :ref:`srd:detect-poison-and-disease`
+- :ref:`srd:guiding-bolt`
+- :ref:`srd:healing-word`
+- :ref:`srd:inflict-wounds`
+- :ref:`srd:protection-from-evil-and-good`
+- :ref:`srd:purify-food-and-drink`
+- :ref:`srd:sanctuary`
+- :ref:`srd:shield-of-faith`
 
 2nd Level
 ~~~~~~~~~
 
-- :ref:`srd_Aid`
-- :ref:`srd_Augury`
-- :ref:`srd_Blindness/Deafness`
-- :ref:`srd_Calm-Emotions`
-- :ref:`srd_Continual-Flame`
-- :ref:`srd_Enhance-Ability`
-- :ref:`srd_Find-Traps`
-- :ref:`srd_Gentle-Repose`
-- :ref:`srd_Hold-Person`
-- :ref:`srd_Lesser-Restoration`
-- :ref:`srd_Locate-Object`
-- :ref:`srd_Prayer-of-Healing`
-- :ref:`srd_Protection-from-Poison`
-- :ref:`srd_Silence`
-- :ref:`srd_Spiritual-Weapon`
-- :ref:`srd_Warding-Bond`
-- :ref:`srd_Zone-of-Truth`
+- :ref:`srd:aid`
+- :ref:`srd:augury`
+- :ref:`srd:blindness/deafness`
+- :ref:`srd:calm-emotions`
+- :ref:`srd:continual-flame`
+- :ref:`srd:enhance-ability`
+- :ref:`srd:find-traps`
+- :ref:`srd:gentle-repose`
+- :ref:`srd:hold-person`
+- :ref:`srd:lesser-restoration`
+- :ref:`srd:locate-object`
+- :ref:`srd:prayer-of-healing`
+- :ref:`srd:protection-from-poison`
+- :ref:`srd:silence`
+- :ref:`srd:spiritual-weapon`
+- :ref:`srd:warding-bond`
+- :ref:`srd:zone-of-truth`
 
 3rd Level
 ~~~~~~~~~
 
-- :ref:`srd_Animate-Dead`
-- :ref:`srd_Beacon-of-Hope`
-- :ref:`srd_Bestow-Curse`
-- :ref:`srd_Clairvoyance`
-- :ref:`srd_Create-Food-and-Water`
-- :ref:`srd_Daylight`
-- :ref:`srd_Dispel-Magic`
-- :ref:`srd_Glyph-of-Warding`
-- :ref:`srd_Magic-Circle`
-- :ref:`srd_Mass-Healing-Word`
-- :ref:`srd_Meld-into-Stone`
-- :ref:`srd_Protection-from-Energy`
-- :ref:`srd_Remove-Curse`
-- :ref:`srd_Revivify`
-- :ref:`srd_Sending`
-- :ref:`srd_Speak-with-Dead`
-- :ref:`srd_Spirit-Guardians`
-- :ref:`srd_Tongues`
-- :ref:`srd_Water-Walk`
+- :ref:`srd:animate-dead`
+- :ref:`srd:beacon-of-hope`
+- :ref:`srd:bestow-curse`
+- :ref:`srd:clairvoyance`
+- :ref:`srd:create-food-and-water`
+- :ref:`srd:daylight`
+- :ref:`srd:dispel-magic`
+- :ref:`srd:glyph-of-warding`
+- :ref:`srd:magic-circle`
+- :ref:`srd:mass-healing-word`
+- :ref:`srd:meld-into-stone`
+- :ref:`srd:protection-from-energy`
+- :ref:`srd:remove-curse`
+- :ref:`srd:revivify`
+- :ref:`srd:sending`
+- :ref:`srd:speak-with-dead`
+- :ref:`srd:spirit-guardians`
+- :ref:`srd:tongues`
+- :ref:`srd:water-walk`
 
 4th Level
 ~~~~~~~~~
 
-- :ref:`srd_Banishment`
-- :ref:`srd_Control-Water`
-- :ref:`srd_Death-Ward`
-- :ref:`srd_Divination`
-- :ref:`srd_Freedom-of-Movement`
-- :ref:`srd_Locate-Creature`
-- :ref:`srd_Stone-Shape`
+- :ref:`srd:banishment`
+- :ref:`srd:control-water`
+- :ref:`srd:death-ward`
+- :ref:`srd:divination`
+- :ref:`srd:freedom-of-movement`
+- :ref:`srd:locate-creature`
+- :ref:`srd:stone-shape`
 
 5th Level
 ~~~~~~~~~
 
-- :ref:`srd_Commune`
-- :ref:`srd_Contagion`
-- :ref:`srd_Dispel-Evil-and-Good`
-- :ref:`srd_Flame-Strike`
-- :ref:`srd_Geas`
-- :ref:`srd_Greater-Restoration`
-- :ref:`srd_Hallow`
-- :ref:`srd_Insect-Plague`
-- :ref:`srd_Legend-Lore`
-- :ref:`srd_Mass-Cure-Wounds`
-- :ref:`srd_Planar-Binding`
-- :ref:`srd_Raise-Dead`
-- :ref:`srd_Scrying`
+- :ref:`srd:commune`
+- :ref:`srd:contagion`
+- :ref:`srd:dispel-evil-and-good`
+- :ref:`srd:flame-strike`
+- :ref:`srd:geas`
+- :ref:`srd:greater-restoration`
+- :ref:`srd:hallow`
+- :ref:`srd:insect-plague`
+- :ref:`srd:legend-lore`
+- :ref:`srd:mass-cure-wounds`
+- :ref:`srd:planar-binding`
+- :ref:`srd:raise-dead`
+- :ref:`srd:scrying`
 
 6th Level
 ~~~~~~~~~
 
-- :ref:`srd_Blade-Barrier`
-- :ref:`srd_Create-Undead`
-- :ref:`srd_Find-the-Path`
-- :ref:`srd_Forbiddance`
-- :ref:`srd_Harm`
-- :ref:`srd_Heal`
-- :ref:`srd_Heroes-Feast`
-- :ref:`srd_Planar-Ally`
-- :ref:`srd_True-Seeing`
-- :ref:`srd_Word-of-Recall`
+- :ref:`srd:blade-barrier`
+- :ref:`srd:create-undead`
+- :ref:`srd:find-the-path`
+- :ref:`srd:forbiddance`
+- :ref:`srd:harm`
+- :ref:`srd:heal`
+- :ref:`srd:heroes-feast`
+- :ref:`srd:planar-ally`
+- :ref:`srd:true-seeing`
+- :ref:`srd:word-of-recall`
 
 7th Level
 ~~~~~~~~~
 
-- :ref:`srd_Conjure-Celestial`
-- :ref:`srd_Divine-Word`
-- :ref:`srd_Etherealness`
-- :ref:`srd_Fire-Storm`
-- :ref:`srd_Plane-Shift`
-- :ref:`srd_Regenerate`
-- :ref:`srd_Resurrection`
-- :ref:`srd_Symbol`
+- :ref:`srd:conjure-celestial`
+- :ref:`srd:divine-word`
+- :ref:`srd:etherealness`
+- :ref:`srd:fire-storm`
+- :ref:`srd:plane-shift`
+- :ref:`srd:regenerate`
+- :ref:`srd:resurrection`
+- :ref:`srd:symbol`
 
 8th Level
 ~~~~~~~~~
 
-- :ref:`srd_Antimagic-Field`
-- :ref:`srd_Control-Weather`
-- :ref:`srd_Earthquake`
-- :ref:`srd_Holy-Aura`
+- :ref:`srd:antimagic-field`
+- :ref:`srd:control-weather`
+- :ref:`srd:earthquake`
+- :ref:`srd:holy-aura`
 
 9th Level
 ~~~~~~~~~
 
-- :ref:`srd_Astral-Projection`
-- :ref:`srd_Gate`
-- :ref:`srd_Mass-Heal`
-- :ref:`srd_True-Resurrection`
+- :ref:`srd:astral-projection`
+- :ref:`srd:gate`
+- :ref:`srd:mass-heal`
+- :ref:`srd:true-resurrection`

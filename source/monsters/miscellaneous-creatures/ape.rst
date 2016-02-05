@@ -1,5 +1,5 @@
 
-.. _srd_Ape:
+.. _srd:ape:
 
 Ape
 ---

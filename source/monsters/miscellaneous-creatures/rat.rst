@@ -1,5 +1,5 @@
 
-.. _srd_Rat:
+.. _srd:rat:
 
 Rat
 ---

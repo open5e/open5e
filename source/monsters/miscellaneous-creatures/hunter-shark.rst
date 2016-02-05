@@ -1,5 +1,5 @@
 
-.. _srd_Hunter-Shark:
+.. _srd:hunter-shark:
 
 Hunter Shark
 ------------

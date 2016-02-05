@@ -1,5 +1,5 @@
 
-.. _srd_White-Dragon-Ancient:
+.. _srd:white-dragon-ancient:
 
 White Dragon, Ancient
 ---------------------

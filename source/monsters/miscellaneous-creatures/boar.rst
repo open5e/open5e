@@ -1,5 +1,5 @@
 
-.. _srd_Boar:
+.. _srd:boar:
 
 Boar
 ----

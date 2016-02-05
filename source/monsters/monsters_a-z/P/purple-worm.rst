@@ -1,5 +1,5 @@
 
-.. _srd_Purple-Worm:
+.. _srd:purple-worm:
 
 Purple Worm
 -----------

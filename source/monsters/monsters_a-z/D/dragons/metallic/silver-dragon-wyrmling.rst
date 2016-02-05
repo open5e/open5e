@@ -1,5 +1,5 @@
 
-.. _srd_Silver-Dragon-Wyrmling:
+.. _srd:silver-dragon-wyrmling:
 
 Silver Dragon Wyrmling
 ----------------------

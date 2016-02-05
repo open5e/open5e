@@ -1,5 +1,5 @@
 
-.. _srd_Dispel-Magic:
+.. _srd:dispel-magic:
 
 Dispel Magic
 -------------------------------------------------------------

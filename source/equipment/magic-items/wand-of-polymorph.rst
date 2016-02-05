@@ -1,5 +1,5 @@
 
-.. _srd_Wand-of-Polymorph:
+.. _srd:wand-of-polymorph:
 
 Wand of Polymorph
 ------------------------------------------------------

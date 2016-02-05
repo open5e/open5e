@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Octopus:
+.. _srd:giant-octopus:
 
 Giant Octopus
 -------------

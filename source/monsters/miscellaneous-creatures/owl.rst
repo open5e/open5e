@@ -1,5 +1,5 @@
 
-.. _srd_Owl:
+.. _srd:owl:
 
 Owl
 ---

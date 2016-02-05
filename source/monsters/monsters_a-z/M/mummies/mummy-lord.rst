@@ -1,5 +1,5 @@
 
-.. _srd_Mummy-Lord:
+.. _srd:mummy-lord:
 
 Mummy Lord
 ----------

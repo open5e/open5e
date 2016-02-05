@@ -1,5 +1,5 @@
 
-.. _srd_Bulette:
+.. _srd:bulette:
 
 Bulette
 -------

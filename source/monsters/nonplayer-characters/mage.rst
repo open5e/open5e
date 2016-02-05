@@ -1,5 +1,5 @@
 
-.. _srd_Mage:
+.. _srd:mage:
 
 Mage
 ----

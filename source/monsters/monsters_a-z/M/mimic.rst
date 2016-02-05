@@ -1,5 +1,5 @@
 
-.. _srd_Mimic:
+.. _srd:mimic:
 
 Mimic
 -----

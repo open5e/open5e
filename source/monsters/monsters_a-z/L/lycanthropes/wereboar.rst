@@ -1,5 +1,5 @@
 
-.. _srd_Wereboar:
+.. _srd:wereboar:
 
 Wereboar
 --------

@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Weasel:
+.. _srd:giant-weasel:
 
 Giant Weasel
 ------------

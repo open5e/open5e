@@ -1,5 +1,5 @@
 
-.. _srd_Scorching-Ray:
+.. _srd:scorching-ray:
 
 Scorching Ray
 -------------------------------------------------------------

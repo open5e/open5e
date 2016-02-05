@@ -1,5 +1,5 @@
 
-.. _srd_Brass-Dragon-Ancient:
+.. _srd:brass-dragon-ancient:
 
 Brass Dragon, Ancient
 ---------------------

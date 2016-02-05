@@ -1,5 +1,5 @@
 
-.. _srd_Blink-Dog:
+.. _srd:blink-dog:
 
 Blink Dog
 ---------

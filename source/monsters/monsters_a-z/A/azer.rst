@@ -1,5 +1,5 @@
 
-.. _srd_Azer:
+.. _srd:azer:
 
 Azer
 ----

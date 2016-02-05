@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Lizard:
+.. _srd:giant-lizard:
 
 Giant Lizard
 ------------

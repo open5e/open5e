@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Eagle:
+.. _srd:giant-eagle:
 
 Giant Eagle
 -----------

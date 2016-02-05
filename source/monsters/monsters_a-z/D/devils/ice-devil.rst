@@ -1,5 +1,5 @@
 
-.. _srd_Ice-Devil:
+.. _srd:ice-devil:
 
 Ice Devil
 ---------

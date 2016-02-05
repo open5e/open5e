@@ -1,5 +1,5 @@
 
-.. _srd_Lizardfolk:
+.. _srd:lizardfolk:
 
 Lizardfolk
 ----------

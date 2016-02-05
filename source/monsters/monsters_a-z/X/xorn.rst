@@ -1,5 +1,5 @@
 
-.. _srd_Xorn:
+.. _srd:xorn:
 
 Xorn
 ----

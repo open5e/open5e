@@ -1,5 +1,5 @@
 
-.. _srd_Warhorse-Skeleton:
+.. _srd:warhorse-skeleton:
 
 Warhorse Skeleton
 -----------------

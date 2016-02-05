@@ -1,5 +1,5 @@
 
-.. _srd_Phantasmal-Killer:
+.. _srd:phantasmal-killer:
 
 Phantasmal Killer
 -------------------------------------------------------------

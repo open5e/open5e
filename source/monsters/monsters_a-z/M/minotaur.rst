@@ -1,5 +1,5 @@
 
-.. _srd_Minotaur:
+.. _srd:minotaur:
 
 Minotaur
 --------

@@ -1,5 +1,5 @@
 
-.. _srd_Wand-of-Magic-Missiles:
+.. _srd:wand-of-magic-missiles:
 
 Wand of Magic Missiles
 ------------------------------------------------------

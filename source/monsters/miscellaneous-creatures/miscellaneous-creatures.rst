@@ -1,5 +1,5 @@
 
-.. _srd_Miscellaneous-Creatures:
+.. _srd:miscellaneous-creatures:
 
 Miscellaneous Creatures
 =======================

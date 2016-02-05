@@ -1,5 +1,5 @@
 
-.. _srd_Tome-of-Understanding:
+.. _srd:tome-of-understanding:
 
 Tome of Understanding
 ------------------------------------------------------

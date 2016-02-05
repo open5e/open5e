@@ -1,5 +1,5 @@
 
-.. _srd_Half-Dragon-Template:
+.. _srd:half-dragon-template:
 
 Half-Dragon Template
 --------------------

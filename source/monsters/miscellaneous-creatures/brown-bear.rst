@@ -1,5 +1,5 @@
 
-.. _srd_Brown-Bear:
+.. _srd:brown-bear:
 
 Brown Bear
 ----------

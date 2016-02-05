@@ -1,5 +1,5 @@
 
-.. _srd_Forbiddance:
+.. _srd:forbiddance:
 
 Forbiddance
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Ogre-Zombie:
+.. _srd:ogre-zombie:
 
 Ogre Zombie
 -----------

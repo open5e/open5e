@@ -1,5 +1,5 @@
 
-.. _srd_Blue-Dragon-Adult:
+.. _srd:blue-dragon-adult:
 
 Blue Dragon, Adult
 ------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Vampire-Spawn:
+.. _srd:vampire-spawn:
 
 Vampire Spawn
 -------------

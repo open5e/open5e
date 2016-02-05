@@ -1,5 +1,5 @@
 
-.. _srd_Green-Dragon-Adult:
+.. _srd:green-dragon-adult:
 
 Green Dragon, Adult
 -------------------

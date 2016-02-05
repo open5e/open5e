@@ -1,5 +1,5 @@
 
-.. _srd_Potion-of-Resistance:
+.. _srd:potion-of-resistance:
 
 Potion of Resistance
 ------------------------------------------------------

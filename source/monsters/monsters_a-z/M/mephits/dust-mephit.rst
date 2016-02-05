@@ -1,5 +1,5 @@
 
-.. _srd_Dust-Mephit:
+.. _srd:dust-mephit:
 
 Dust Mephit
 -----------

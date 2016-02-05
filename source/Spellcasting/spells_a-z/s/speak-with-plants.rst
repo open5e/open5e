@@ -1,5 +1,5 @@
 
-.. _srd_Speak-with-Plants:
+.. _srd:speak-with-plants:
 
 Speak with Plants
 -------------------------------------------------------------

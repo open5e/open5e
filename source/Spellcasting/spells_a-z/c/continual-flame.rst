@@ -1,5 +1,5 @@
 
-.. _srd_Continual-Flame:
+.. _srd:continual-flame:
 
 Continual Flame
 -------------------------------------------------------------

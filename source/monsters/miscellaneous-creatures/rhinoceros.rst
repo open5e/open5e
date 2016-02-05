@@ -1,5 +1,5 @@
 
-.. _srd_Rhinoceros:
+.. _srd:rhinoceros:
 
 Rhinoceros
 ----------

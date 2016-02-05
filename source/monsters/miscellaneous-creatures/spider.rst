@@ -1,5 +1,5 @@
 
-.. _srd_Spider:
+.. _srd:spider:
 
 Spider
 ------

@@ -1,5 +1,5 @@
 
-.. _srd_Horn-of-Valhalla:
+.. _srd:horn-of-valhalla:
 
 Horn of Valhalla
 ------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Hammer-of-Thunderbolts:
+.. _srd:hammer-of-thunderbolts:
 
 Hammer of Thunderbolts
 ------------------------------------------------------

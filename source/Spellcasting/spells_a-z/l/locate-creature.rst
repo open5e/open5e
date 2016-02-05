@@ -1,5 +1,5 @@
 
-.. _srd_Locate-Creature:
+.. _srd:locate-creature:
 
 Locate Creature
 -------------------------------------------------------------

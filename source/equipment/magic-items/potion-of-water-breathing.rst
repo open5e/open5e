@@ -1,5 +1,5 @@
 
-.. _srd_Potion-of-Water-Breathing:
+.. _srd:potion-of-water-breathing:
 
 Potion of Water Breathing
 ------------------------------------------------------

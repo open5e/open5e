@@ -1,5 +1,5 @@
 
-.. _srd_Prestidigitation:
+.. _srd:prestidigitation:
 
 Prestidigitation
 -------------------------------------------------------------

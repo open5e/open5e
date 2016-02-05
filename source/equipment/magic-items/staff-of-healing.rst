@@ -1,5 +1,5 @@
 
-.. _srd_Staff-of-Healing:
+.. _srd:staff-of-healing:
 
 Staff of Healing
 ------------------------------------------------------

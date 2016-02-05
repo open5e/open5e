@@ -1,5 +1,5 @@
 
-.. _srd_Legendary-Creatures:
+.. _srd:legendary-creatures:
 
 Legendary Creatures
 ===================

@@ -1,5 +1,5 @@
 
-.. _srd_Grick:
+.. _srd:grick:
 
 Grick
 -----

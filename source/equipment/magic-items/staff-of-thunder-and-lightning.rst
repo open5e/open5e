@@ -1,5 +1,5 @@
 
-.. _srd_Staff-of-Thunder-and-Lightning:
+.. _srd:staff-of-thunder-and-lightning:
 
 Staff of Thunder and Lightning
 ------------------------------------------------------

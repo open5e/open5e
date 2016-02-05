@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Toad:
+.. _srd:giant-toad:
 
 Giant Toad
 ----------

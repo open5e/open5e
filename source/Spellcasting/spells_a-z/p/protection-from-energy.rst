@@ -1,5 +1,5 @@
 
-.. _srd_Protection-from-Energy:
+.. _srd:protection-from-energy:
 
 Protection from Energy
 -------------------------------------------------------------

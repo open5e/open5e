@@ -1,5 +1,5 @@
 
-.. _srd_Dominate-Monster:
+.. _srd:dominate-monster:
 
 Dominate Monster
 -------------------------------------------------------------

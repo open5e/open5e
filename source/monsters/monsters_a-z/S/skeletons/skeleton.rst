@@ -1,5 +1,5 @@
 
-.. _srd_Skeleton:
+.. _srd:skeleton:
 
 Skeleton
 --------

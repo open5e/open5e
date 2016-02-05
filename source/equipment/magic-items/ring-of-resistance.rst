@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-Resistance:
+.. _srd:ring-of-resistance:
 
 Ring of Resistance
 ------------------------------------------------------

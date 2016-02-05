@@ -1,5 +1,5 @@
 
-.. _srd_Staff-of-Withering:
+.. _srd:staff-of-withering:
 
 Staff of Withering
 ------------------------------------------------------

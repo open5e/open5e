@@ -1,5 +1,5 @@
 
-.. _srd_Conjure-Elemental:
+.. _srd:conjure-elemental:
 
 Conjure Elemental
 -------------------------------------------------------------

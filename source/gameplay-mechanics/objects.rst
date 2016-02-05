@@ -1,5 +1,5 @@
 
-.. _srd_Objects:
+.. _srd:objects:
 
 Objects
 -------

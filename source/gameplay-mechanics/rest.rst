@@ -1,5 +1,5 @@
 
-.. _srd_Resting:
+.. _srd:resting:
 
 Resting
 -------

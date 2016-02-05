@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Scorpion:
+.. _srd:giant-scorpion:
 
 Giant Scorpion
 --------------

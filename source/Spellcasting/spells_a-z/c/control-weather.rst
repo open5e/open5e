@@ -1,5 +1,5 @@
 
-.. _srd_Control-Weather:
+.. _srd:control-weather:
 
 Control Weather
 -------------------------------------------------------------

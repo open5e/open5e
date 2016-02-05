@@ -1,5 +1,5 @@
 
-.. _srd_Hobgoblin:
+.. _srd:hobgoblin:
 
 Hobgoblin
 ---------

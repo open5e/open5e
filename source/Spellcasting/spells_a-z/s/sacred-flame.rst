@@ -1,5 +1,5 @@
 
-.. _srd_Sacred-Flame:
+.. _srd:sacred-flame:
 
 Sacred Flame
 -------------------------------------------------------------

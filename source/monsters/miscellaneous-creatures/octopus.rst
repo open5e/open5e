@@ -1,5 +1,5 @@
 
-.. _srd_Octopus:
+.. _srd:octopus:
 
 Octopus
 -------

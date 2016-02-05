@@ -1,5 +1,5 @@
 
-.. _srd_Bracers-of-Archery:
+.. _srd:bracers-of-archery:
 
 Bracers of Archery
 ------------------------------------------------------

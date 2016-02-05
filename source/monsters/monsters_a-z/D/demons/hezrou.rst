@@ -1,5 +1,5 @@
 
-.. _srd_Hezrou:
+.. _srd:hezrou:
 
 Hezrou
 ------

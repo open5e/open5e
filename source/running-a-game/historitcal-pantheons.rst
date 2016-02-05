@@ -1,5 +1,5 @@
 
-.. _srd_Fantasy-Historical-Pantheons:
+.. _srd:fantasy-historical-pantheons:
 
 Fantasy-Historical Pantheons
 ----------------------------

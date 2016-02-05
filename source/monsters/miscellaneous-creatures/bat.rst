@@ -1,5 +1,5 @@
 
-.. _srd_Bat:
+.. _srd:bat:
 
 Bat
 ---

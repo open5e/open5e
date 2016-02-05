@@ -1,5 +1,5 @@
 
-.. _srd_Ring-of-Three-Wishes:
+.. _srd:ring-of-three-wishes:
 
 Ring of Three Wishes
 ------------------------------------------------------

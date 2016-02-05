@@ -1,5 +1,5 @@
 
-.. _srd_Assassin:
+.. _srd:assassin:
 
 Assassin
 --------

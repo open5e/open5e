@@ -1,5 +1,5 @@
 
-.. _srd_Black-Dragon-Adult:
+.. _srd:black-dragon-adult:
 
 Black Dragon, Adult
 -------------------

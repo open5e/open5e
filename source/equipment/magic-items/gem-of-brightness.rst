@@ -1,5 +1,5 @@
 
-.. _srd_Gem-of-Brightness:
+.. _srd:gem-of-brightness:
 
 Gem of Brightness
 ------------------------------------------------------

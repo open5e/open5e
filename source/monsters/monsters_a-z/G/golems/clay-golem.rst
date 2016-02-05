@@ -1,5 +1,5 @@
 
-.. _srd_Clay-Golem:
+.. _srd:clay-golem:
 
 Clay Golem
 ----------

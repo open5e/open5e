@@ -1,5 +1,5 @@
 
-.. _srd_Fighter-class:
+.. _srd:fighter-class:
 
 Fighter
 =======

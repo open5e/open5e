@@ -1,5 +1,5 @@
 
-.. _srd_Potion-of-Animal-Friendship:
+.. _srd:potion-of-animal-friendship:
 
 Potion of Animal Friendship
 ------------------------------------------------------

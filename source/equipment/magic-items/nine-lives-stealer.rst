@@ -1,5 +1,5 @@
 
-.. _srd_Nine-Lives-Stealer:
+.. _srd:nine-lives-stealer:
 
 Nine Lives Stealer
 ------------------------------------------------------

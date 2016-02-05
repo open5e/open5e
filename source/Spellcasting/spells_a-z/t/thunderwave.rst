@@ -1,5 +1,5 @@
 
-.. _srd_Thunderwave:
+.. _srd:thunderwave:
 
 Thunderwave
 -------------------------------------------------------------

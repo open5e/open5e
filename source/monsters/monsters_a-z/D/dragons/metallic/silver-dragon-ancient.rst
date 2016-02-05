@@ -1,5 +1,5 @@
 
-.. _srd_Silver-Dragon-Ancient:
+.. _srd:silver-dragon-ancient:
 
 Silver Dragon, Ancient
 ----------------------

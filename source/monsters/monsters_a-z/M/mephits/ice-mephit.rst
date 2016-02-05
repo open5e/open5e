@@ -1,5 +1,5 @@
 
-.. _srd_Ice-Mephit:
+.. _srd:ice-mephit:
 
 Ice Mephit
 ----------

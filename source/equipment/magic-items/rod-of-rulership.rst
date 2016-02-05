@@ -1,5 +1,5 @@
 
-.. _srd_Rod-of-Rulership:
+.. _srd:rod-of-rulership:
 
 Rod of Rulership
 ------------------------------------------------------

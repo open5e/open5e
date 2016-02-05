@@ -1,5 +1,5 @@
 
-.. _srd_Shield-Guardian:
+.. _srd:shield-guardian:
 
 Shield Guardian
 ---------------

@@ -1,5 +1,5 @@
 
-.. _srd_Headband-of-Intellect:
+.. _srd:headband-of-intellect:
 
 Headband of Intellect
 ------------------------------------------------------

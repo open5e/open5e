@@ -1,5 +1,5 @@
 
-.. _srd_Chime-of-Opening:
+.. _srd:chime-of-opening:
 
 Chime of Opening
 ------------------------------------------------------

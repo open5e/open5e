@@ -1,5 +1,5 @@
 
-.. _srd_Feats:
+.. _srd:feats:
 
 Feats
 -----

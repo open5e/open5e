@@ -1,5 +1,5 @@
 
-.. _srd_Couatl:
+.. _srd:couatl:
 
 Couatl
 ------

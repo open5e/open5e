@@ -1,5 +1,5 @@
 
-.. _srd_Poisonous-Snake:
+.. _srd:poisonous-snake:
 
 Poisonous Snake
 ---------------

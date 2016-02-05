@@ -1,5 +1,5 @@
 
-.. _srd_Brass-Dragon-Wyrmling:
+.. _srd:brass-dragon-wyrmling:
 
 Brass Dragon Wyrmling
 ---------------------

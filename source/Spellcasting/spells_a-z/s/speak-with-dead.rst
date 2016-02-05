@@ -1,5 +1,5 @@
 
-.. _srd_Speak-with-Dead:
+.. _srd:speak-with-dead:
 
 Speak with Dead
 -------------------------------------------------------------

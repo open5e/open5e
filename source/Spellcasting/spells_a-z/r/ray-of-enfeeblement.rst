@@ -1,5 +1,5 @@
 
-.. _srd_Ray-of-Enfeeblement:
+.. _srd:ray-of-enfeeblement:
 
 Ray of Enfeeblement
 -------------------------------------------------------------

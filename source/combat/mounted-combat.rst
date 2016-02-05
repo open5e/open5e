@@ -1,5 +1,5 @@
 
-.. _srd_Mounted-Combat:
+.. _srd:mounted-combat:
 
 Mounted Combat
 --------------

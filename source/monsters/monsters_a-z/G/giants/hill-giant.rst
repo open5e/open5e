@@ -1,5 +1,5 @@
 
-.. _srd_Hill-Giant:
+.. _srd:hill-giant:
 
 Hill Giant
 ----------

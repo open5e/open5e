@@ -1,5 +1,5 @@
 
-.. _srd_Blue-Dragon-Ancient:
+.. _srd:blue-dragon-ancient:
 
 Blue Dragon, Ancient
 --------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Blood-Hawk:
+.. _srd:blood-hawk:
 
 Blood Hawk
 ----------

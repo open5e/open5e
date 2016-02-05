@@ -1,5 +1,5 @@
 
-.. _srd_Invisible-Stalker:
+.. _srd:invisible-stalker:
 
 Invisible Stalker
 -----------------

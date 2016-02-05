@@ -1,5 +1,5 @@
 
-.. _srd_Rakshasa:
+.. _srd:rakshasa:
 
 Rakshasa
 --------

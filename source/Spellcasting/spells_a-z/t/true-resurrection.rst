@@ -1,5 +1,5 @@
 
-.. _srd_True-Resurrection:
+.. _srd:true-resurrection:
 
 True Resurrection
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Swarm-of-Poisonous-Snakes:
+.. _srd:swarm-of-poisonous-snakes:
 
 Swarm of Poisonous Snakes
 -------------------------

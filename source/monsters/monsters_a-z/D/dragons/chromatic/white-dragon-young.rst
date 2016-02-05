@@ -1,5 +1,5 @@
 
-.. _srd_White-Dragon-Young:
+.. _srd:white-dragon-young:
 
 White Dragon, Young
 -------------------

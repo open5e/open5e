@@ -1,5 +1,5 @@
 
-.. _srd_Raven:
+.. _srd:raven:
 
 Raven
 -----

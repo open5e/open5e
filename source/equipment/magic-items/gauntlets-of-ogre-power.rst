@@ -1,5 +1,5 @@
 
-.. _srd_Gauntlets-of-Ogre-Power:
+.. _srd:gauntlets-of-ogre-power:
 
 Gauntlets of Ogre Power
 ------------------------------------------------------

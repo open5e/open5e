@@ -1,5 +1,5 @@
 
-.. _srd_Constrictor-Snake:
+.. _srd:constrictor-snake:
 
 Constrictor Snake
 -----------------

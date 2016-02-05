@@ -1,5 +1,5 @@
 
-.. _srd_Mammoth:
+.. _srd:mammoth:
 
 Mammoth
 -------

@@ -1,5 +1,5 @@
 
-.. _srd_Red-Dragon-Adult:
+.. _srd:red-dragon-adult:
 
 Red Dragon, Adult
 -----------------

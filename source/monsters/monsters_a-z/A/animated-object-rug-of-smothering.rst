@@ -1,5 +1,5 @@
 
-.. _srd_Animated-Object: Rug of Smothering:
+.. _srd:animated-object: rug of smothering:
 
 Animated Object: Rug of Smothering
 ----------------------------------

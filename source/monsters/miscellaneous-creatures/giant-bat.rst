@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Bat:
+.. _srd:giant-bat:
 
 Giant Bat
 ---------

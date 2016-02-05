@@ -1,5 +1,5 @@
 
-.. _srd_Dryad:
+.. _srd:dryad:
 
 Dryad
 -----

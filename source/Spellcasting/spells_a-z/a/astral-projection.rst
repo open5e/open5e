@@ -1,5 +1,5 @@
 
-.. _srd_Astral-Projection:
+.. _srd:astral-projection:
 
 Astral Projection
 -------------------------------------------------------------

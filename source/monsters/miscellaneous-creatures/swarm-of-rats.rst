@@ -1,5 +1,5 @@
 
-.. _srd_Swarm-of-Rats:
+.. _srd:swarm-of-rats:
 
 Swarm of Rats
 -------------

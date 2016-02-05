@@ -1,5 +1,5 @@
 
-.. _srd_Kraken:
+.. _srd:kraken:
 
 Kraken
 ------

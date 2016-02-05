@@ -1,5 +1,5 @@
 
-.. _srd_Archmage:
+.. _srd:archmage:
 
 Archmage
 --------

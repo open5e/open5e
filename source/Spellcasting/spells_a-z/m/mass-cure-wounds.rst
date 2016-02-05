@@ -1,5 +1,5 @@
 
-.. _srd_Mass-Cure-Wounds:
+.. _srd:mass-cure-wounds:
 
 Mass Cure Wounds
 -------------------------------------------------------------

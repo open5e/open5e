@@ -1,5 +1,5 @@
 
-.. _srd_Bronze-Dragon-Ancient:
+.. _srd:bronze-dragon-ancient:
 
 Bronze Dragon, Ancient
 ----------------------

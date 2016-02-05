@@ -1,5 +1,5 @@
 
-.. _srd_Crocodile:
+.. _srd:crocodile:
 
 Crocodile
 ---------

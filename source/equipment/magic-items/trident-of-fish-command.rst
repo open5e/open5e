@@ -1,5 +1,5 @@
 
-.. _srd_Trident-of-Fish-Command:
+.. _srd:trident-of-fish-command:
 
 Trident of Fish Command
 ------------------------------------------------------

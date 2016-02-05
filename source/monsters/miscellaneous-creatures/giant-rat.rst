@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Rat:
+.. _srd:giant-rat:
 
 Giant Rat
 ---------

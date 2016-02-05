@@ -1,5 +1,5 @@
 
-.. _srd_Burning-Hands:
+.. _srd:burning-hands:
 
 Burning Hands
 -------------------------------------------------------------

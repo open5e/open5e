@@ -1,5 +1,5 @@
 
-.. _srd_Alignment:
+.. _srd:alignment:
 
 Alignment
 ---------

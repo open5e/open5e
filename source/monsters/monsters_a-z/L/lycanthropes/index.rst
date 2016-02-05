@@ -1,5 +1,5 @@
 
-.. _srd_Lycanthropes:
+.. _srd:lycanthropes:
 
 Lycanthropes
 -------------------------------------------------------------

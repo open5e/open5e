@@ -1,5 +1,5 @@
 
-.. _srd_Enhance-Ability:
+.. _srd:enhance-ability:
 
 Enhance Ability
 -------------------------------------------------------------

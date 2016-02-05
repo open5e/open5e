@@ -1,5 +1,5 @@
 
-.. _srd_Antilife-Shell:
+.. _srd:antilife-shell:
 
 Antilife Shell
 -------------------------------------------------------------

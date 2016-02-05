@@ -1,5 +1,5 @@
 
-.. _srd_Protection-from-Poison:
+.. _srd:protection-from-poison:
 
 Protection from Poison
 -------------------------------------------------------------

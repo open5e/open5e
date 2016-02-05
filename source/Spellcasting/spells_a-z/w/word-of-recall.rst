@@ -1,5 +1,5 @@
 
-.. _srd_Word-of-Recall:
+.. _srd:word-of-recall:
 
 Word of Recall
 -------------------------------------------------------------

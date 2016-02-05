@@ -1,5 +1,5 @@
 
-.. _srd_Worg:
+.. _srd:worg:
 
 Worg
 ----

@@ -1,5 +1,5 @@
 
-.. _srd_Horseshoes-of-Speed:
+.. _srd:horseshoes-of-speed:
 
 Horseshoes of Speed
 ------------------------------------------------------

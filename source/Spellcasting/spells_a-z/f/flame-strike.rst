@@ -1,5 +1,5 @@
 
-.. _srd_Flame-Strike:
+.. _srd:flame-strike:
 
 Flame Strike
 -------------------------------------------------------------

@@ -1,5 +1,5 @@
 
-.. _srd_Ranger-Spells:
+.. _srd:ranger-spells:
 
 Ranger Spells
 -------------
@@ -7,53 +7,53 @@ Ranger Spells
 1st Level
 ~~~~~~~~~
 
-- :ref:`srd_Alarm`
-- :ref:`srd_Cure-Wounds`
-- :ref:`srd_Detect-Magic`
-- :ref:`srd_Detect-Poison-and-Disease`
-- :ref:`srd_Fog-Cloud`
-- :ref:`srd_Jump`
-- :ref:`srd_Longstrider`
-- :ref:`srd_Speak-with-Animals`
+- :ref:`srd:alarm`
+- :ref:`srd:cure-wounds`
+- :ref:`srd:detect-magic`
+- :ref:`srd:detect-poison-and-disease`
+- :ref:`srd:fog-cloud`
+- :ref:`srd:jump`
+- :ref:`srd:longstrider`
+- :ref:`srd:speak-with-animals`
 
 2nd Level
 ~~~~~~~~~
 
-- :ref:`srd_Animal-Messenger`
-- :ref:`srd_Barkskin`
-- :ref:`srd_Darkvision`
-- :ref:`srd_Find-Traps`
-- :ref:`srd_Lesser-Restoration`
-- :ref:`srd_Locate-Animals-or-Plants`
-- :ref:`srd_Locate-Object`
-- :ref:`srd_Pass-without-Trace`
-- :ref:`srd_Protection-from-Poison`
-- :ref:`srd_Silence`
-- :ref:`srd_Spike-Growth`
+- :ref:`srd:animal-messenger`
+- :ref:`srd:barkskin`
+- :ref:`srd:darkvision`
+- :ref:`srd:find-traps`
+- :ref:`srd:lesser-restoration`
+- :ref:`srd:locate-animals-or-plants`
+- :ref:`srd:locate-object`
+- :ref:`srd:pass-without-trace`
+- :ref:`srd:protection-from-poison`
+- :ref:`srd:silence`
+- :ref:`srd:spike-growth`
 
 3rd Level
 ~~~~~~~~~
 
-- :ref:`srd_Conjure-Animals`
-- :ref:`srd_Daylight`
-- :ref:`srd_Nondetection`
-- :ref:`srd_Plant-Growth`
-- :ref:`srd_Protection-from-Energy`
-- :ref:`srd_Speak-with-Plants`
-- :ref:`srd_Water-Breathing`
-- :ref:`srd_Water-Walk`
-- :ref:`srd_Wind-Wall`
+- :ref:`srd:conjure-animals`
+- :ref:`srd:daylight`
+- :ref:`srd:nondetection`
+- :ref:`srd:plant-growth`
+- :ref:`srd:protection-from-energy`
+- :ref:`srd:speak-with-plants`
+- :ref:`srd:water-breathing`
+- :ref:`srd:water-walk`
+- :ref:`srd:wind-wall`
 
 4th Level
 ~~~~~~~~~
 
-- :ref:`srd_Conjure-Woodland-Beings`
-- :ref:`srd_Freedom-of-Movement`
-- :ref:`srd_Locate-Creature`
-- :ref:`srd_Stoneskin`
+- :ref:`srd:conjure-woodland-beings`
+- :ref:`srd:freedom-of-movement`
+- :ref:`srd:locate-creature`
+- :ref:`srd:stoneskin`
 
 5th Level
 ~~~~~~~~~
 
-- :ref:`srd_Commune-with-Nature`
-- :ref:`srd_Tree-Stride`
+- :ref:`srd:commune-with-nature`
+- :ref:`srd:tree-stride`

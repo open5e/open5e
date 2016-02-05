@@ -1,5 +1,5 @@
 
-.. _srd_Magic-Weapon:
+.. _srd:magic-weapon:
 
 Magic Weapon
 -------------------------------------------------------------

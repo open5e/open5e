@@ -1,5 +1,5 @@
 
-.. _srd_Apparatus-of-the-Crab:
+.. _srd:apparatus-of-the-crab:
 
 Apparatus of the Crab
 ------------------------------------------------------

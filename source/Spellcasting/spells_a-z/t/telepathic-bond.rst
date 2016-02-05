@@ -1,5 +1,5 @@
 
-.. _srd_Telepathic-Bond:
+.. _srd:telepathic-bond:
 
 Telepathic Bond
 -------------------------------------------------------------

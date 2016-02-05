@@ -1,5 +1,5 @@
 
-.. _srd_Thug:
+.. _srd:thug:
 
 Thug
 ----

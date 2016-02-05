@@ -1,5 +1,5 @@
 
-.. _srd_Violet-Fungus:
+.. _srd:violet-fungus:
 
 Violet Fungus
 -------------

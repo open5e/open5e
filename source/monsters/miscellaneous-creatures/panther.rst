@@ -1,5 +1,5 @@
 
-.. _srd_Panther:
+.. _srd:panther:
 
 Panther
 -------

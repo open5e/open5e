@@ -1,5 +1,5 @@
 
-.. _srd_Warlock-class:
+.. _srd:warlock-class:
 
 Warlock
 =======

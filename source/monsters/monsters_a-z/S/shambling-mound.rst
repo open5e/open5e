@@ -1,5 +1,5 @@
 
-.. _srd_Shambling-Mound:
+.. _srd:shambling-mound:
 
 Shambling Mound
 ---------------

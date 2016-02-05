@@ -1,5 +1,5 @@
 
-.. _srd_Kobold:
+.. _srd:kobold:
 
 Kobold
 ------

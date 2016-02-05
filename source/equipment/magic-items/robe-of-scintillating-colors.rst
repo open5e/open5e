@@ -1,5 +1,5 @@
 
-.. _srd_Robe-of-Scintillating-Colors:
+.. _srd:robe-of-scintillating-colors:
 
 Robe of Scintillating Colors
 ------------------------------------------------------

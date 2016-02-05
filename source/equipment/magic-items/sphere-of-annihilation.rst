@@ -1,5 +1,5 @@
 
-.. _srd_Sphere-of-Annihilation:
+.. _srd:sphere-of-annihilation:
 
 Sphere of Annihilation
 ------------------------------------------------------

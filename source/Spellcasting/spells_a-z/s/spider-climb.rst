@@ -1,5 +1,5 @@
 
-.. _srd_Spider-Climb:
+.. _srd:spider-climb:
 
 Spider Climb
 -------------------------------------------------------------

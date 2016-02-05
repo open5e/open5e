@@ -1,5 +1,5 @@
 
-.. _srd_Red-Dragon-Ancient:
+.. _srd:red-dragon-ancient:
 
 Red Dragon, Ancient
 -------------------

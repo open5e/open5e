@@ -1,5 +1,5 @@
 
-.. _srd_Wand-of-Paralysis:
+.. _srd:wand-of-paralysis:
 
 Wand of Paralysis
 ------------------------------------------------------

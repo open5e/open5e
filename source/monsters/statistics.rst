@@ -1,5 +1,5 @@
 
-.. _srd_Statistics:
+.. _srd:statistics:
 
 Statistics
 ==========

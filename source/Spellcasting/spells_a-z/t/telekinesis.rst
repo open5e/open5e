@@ -1,5 +1,5 @@
 
-.. _srd_Telekinesis:
+.. _srd:telekinesis:
 
 Telekinesis
 -------------------------------------------------------------

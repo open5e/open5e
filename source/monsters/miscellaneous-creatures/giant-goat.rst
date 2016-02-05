@@ -1,5 +1,5 @@
 
-.. _srd_Giant-Goat:
+.. _srd:giant-goat:
 
 Giant Goat
 ----------

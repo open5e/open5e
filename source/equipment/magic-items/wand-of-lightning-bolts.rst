@@ -1,5 +1,5 @@
 
-.. _srd_Wand-of-Lightning-Bolts:
+.. _srd:wand-of-lightning-bolts:
 
 Wand of Lightning Bolts
 ------------------------------------------------------

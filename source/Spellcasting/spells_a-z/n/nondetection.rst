@@ -1,5 +1,5 @@
 
-.. _srd_Nondetection:
+.. _srd:nondetection:
 
 Nondetection
 -------------------------------------------------------------

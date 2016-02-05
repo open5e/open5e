@@ -1,5 +1,5 @@
 
-.. _srd_Deck-of-Illusions:
+.. _srd:deck-of-illusions:
 
 Deck of Illusions
 ------------------------------------------------------

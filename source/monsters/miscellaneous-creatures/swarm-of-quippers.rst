@@ -1,5 +1,5 @@
 
-.. _srd_Swarm-of-Quippers:
+.. _srd:swarm-of-quippers:
 
 Swarm of Quippers
 -----------------

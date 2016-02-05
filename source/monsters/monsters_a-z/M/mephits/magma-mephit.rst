@@ -1,5 +1,5 @@
 
-.. _srd_Magma-Mephit:
+.. _srd:magma-mephit:
 
 Magma Mephit
 ------------
