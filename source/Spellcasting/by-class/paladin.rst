@@ -7,49 +7,49 @@ Paladin Spells
 1st Level
 ~~~~~~~~~
 
--  Bless
--  Command
--  Cure Wounds
--  Detect Evil and Good
--  Detect Magic
--  Detect Poison and Disease
--  Divine Favor
--  Heroism
--  Protection from Evil and Good
--  Purify Food and Drink
--  Shield of Faith
+- :ref:`srd_Bless`
+- :ref:`srd_Command`
+- :ref:`srd_Cure-Wounds`
+- :ref:`srd_Detect-Evil-and-Good`
+- :ref:`srd_Detect-Magic`
+- :ref:`srd_Detect-Poison-and-Disease`
+- :ref:`srd_Divine-Favor`
+- :ref:`srd_Heroism`
+- :ref:`srd_Protection-from-Evil-and-Good`
+- :ref:`srd_Purify-Food-and-Drink`
+- :ref:`srd_Shield-of-Faith`
 
 2nd Level
 ~~~~~~~~~
 
--  Aid
--  Find Steed
--  Lesser Restoration
--  Locate Object
--  Magic Weapon
--  Protection from Poison
--  Zone of Truth
+- :ref:`srd_Aid`
+- :ref:`srd_Find-Steed`
+- :ref:`srd_Lesser-Restoration`
+- :ref:`srd_Locate-Object`
+- :ref:`srd_Magic-Weapon`
+- :ref:`srd_Protection-from-Poison`
+- :ref:`srd_Zone-of-Truth`
 
 3rd Level
 ~~~~~~~~~
 
--  Create Food and Water
--  Daylight
--  Dispel Magic
--  Magic Circle
--  Remove Curse
--  Revivify
+- :ref:`srd_Create-Food-and-Water`
+- :ref:`srd_Daylight`
+- :ref:`srd_Dispel-Magic`
+- :ref:`srd_Magic-Circle`
+- :ref:`srd_Remove-Curse`
+- :ref:`srd_Revivify`
 
 4th Level
 ~~~~~~~~~
 
--  Banishment
--  Death Ward
--  Locate Creature
+- :ref:`srd_Banishment`
+- :ref:`srd_Death-Ward`
+- :ref:`srd_Locate-Creature`
 
 5th Level
 ~~~~~~~~~
 
--  Dispel Evil and Good
--  Geas
--  Raise Dead
+- :ref:`srd_Dispel-Evil-and-Good`
+- :ref:`srd_Geas`
+- :ref:`srd_Raise-Dead`

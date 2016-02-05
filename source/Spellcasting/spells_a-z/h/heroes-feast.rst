@@ -1,5 +1,5 @@
 
-.. _srd_Heroes’ Feast:
+.. _srd_Heroes-Feast:
 
 Heroes’ Feast
 -------------------------------------------------------------
