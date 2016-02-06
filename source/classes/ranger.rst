@@ -377,6 +377,18 @@ you fail.
 with a melee attack, you can use your reaction to force that creature to repeat the same attack against
 another creature (other than itself) of your choice.
 
-***Uncanny Dodge.*** When an attacker that you can see hits you with an
-attack, you can use your reaction to halve the attack’s damage against
+.. sidebar:: Sage Advice
+    :class: official
+    
+    Uncanny Dodge only works against one attack per round, since it expends your reaction. 
+    
+    It works any attack with an attack roll (including a spell attack)
+    but it is no help against a spell or effect that requires a saving throw instead of an attack roll
+    
+    .. rst-class:: source
+    
+    Source: `Sage Advice Compendium <http://media.wizards.com/2015/downloads/dnd/SA_Compendium_1.01.pdf>`_
+
+***Uncanny Dodge.*** When an attacker that you can see hits you with :has-official:`an
+attack,` you can use your reaction to halve the attack’s damage against
 you.

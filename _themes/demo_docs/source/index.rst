@@ -34,6 +34,11 @@ Contents:
 Maaaaath!
 =========
 
+.. sidebar:: Sage Advice
+    :class: advice
+
+    Rules change yo.
+
 This is a test.  Here is an equation:
 :math:`X_{0:5} = (X_0, X_1, X_2, X_3, X_4)`.
 Here is another:

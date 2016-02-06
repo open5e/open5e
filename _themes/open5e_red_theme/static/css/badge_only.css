@@ -102,7 +102,7 @@ ul.fas li .fa-large:before {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 300px;
+  width: 250px;
   color: #fcfcfc;
   background: #1f1d1d;
   border-top: solid 10px #343131;
@@ -182,7 +182,7 @@ ul.fas li .fa-large:before {
   right: 20px;
   left: auto;
   border: none;
-  max-width: 300px;
+  max-width: 250px;
 }
 .rst-versions.rst-badge .icon-book {
   float: none;

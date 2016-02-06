@@ -272,8 +272,18 @@ modifier + your proficiency bonus + any special modifiers.
 Attack Rolls
 ~~~~~~~~~~~~
 
-Some spells require the caster to make an attack roll to determine
-whether the spell effect hits the intended target. Your attack bonus
+.. sidebar:: Sage Advice
+    :class: official
+
+    Spell attacks (just as all other attacks) can score critical hits.
+    
+    .. rst-class:: source
+
+    Source: `Sage Advice Compendium <http://media.wizards.com/2015/downloads/dnd/SA_Compendium_1.01.pdf>`_
+
+
+:has-official:`Some spells require the caster to make an attack roll to determine
+whether the spell effect hits the intended target.` Your attack bonus
 with a spell attack equals your spellcasting ability modifier + your
 proficiency bonus.
 

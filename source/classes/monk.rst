@@ -253,8 +253,17 @@ yourself that is causing you to be charmed or frightened.
 Purity of Body
 ~~~~~~~~~~~~~~
 
+.. sidebar:: Sage Advice
+    :class: official
+    
+    Purity of Body grants immunity to both poison damage and the Poisoned condition.
+    
+    .. rst-class:: source
+    
+    Source: `Sage Advice Compendium <http://media.wizards.com/2015/downloads/dnd/SA_Compendium_1.01.pdf>`_
+
 At 10th level, your mastery of the ki flowing through you makes you
-immune to disease and poison.
+immune to disease :has-official:`and poison.`
 
 Tongue of the Sun and Moon
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

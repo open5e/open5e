@@ -137,23 +137,60 @@
     width: 40%
     display: block
     margin: 0 0 $base-line-height $base-line-height
-    padding: $base-line-height
+    padding: $base-line-height/2
     background: $sidebar-background-color
-    border: solid 1px $sidebar-border-color
+    border: solid 1px $blue
     // Sidebar content is usually less relevant, so adjust the margins and sizes.
     p, ul, dl
+      line-height: normal
       font-size: 90%
+      margin-bottom: 6px
     .last
       margin-bottom: 0
+    .source, .citation
+      font-size: 10px
+      opacity: .8
+      margin-bottom: 0
     .sidebar-title
+      line-height: $base-line-height
       display: block
       font-family: $custom-font-family
       font-weight: bold
       background: $table-border-color
       padding: $base-line-height / 4 $base-line-height / 2
-      margin: -$base-line-height
-      margin-bottom: $base-line-height
-      font-size: 100%
+      margin: -$base-line-height/2
+      margin-bottom: $base-line-height/2
+      font-size: 90%
+      position: relative
+      &.first:after
+        font-family: $base-font-family
+        font-weight: normal
+        position: absolute
+        right: 12px
+        opacity: .7
+        font-size: 12px
+    &.errata
+      background-color: lighten($yellow, 40%)
+      border-color: $yellow
+      .sidebar-title
+        background-color: lighten($yellow, 20%)
+        &.first::after
+          content: "ERRATA"
+    &.official
+      background-color: lighten($green, 50%)
+      border-color: $green
+      .sidebar-title
+        background-color: lighten($green, 30%)
+        &.first:after
+          content: "OFFICIAL RULING"
+    &.unofficial
+      background-color: lighten($green, 50%)
+      border-color: $green
+      .sidebar-title
+        background-color: lighten($green, 30%)
+        &.first:after
+          content: "UNOFFICIAL CLARIFICATION"
+          
   // Sphinx can highlight searched text with ?highlighted=searchterm
   .highlighted
     background: $highlight-color
@@ -312,6 +349,17 @@
       @extend .fa-download
       &:before
         margin-right: 4px
+  .has-official, .has-errata, .has-unofficial
+    padding-left: 2px
+    padding-right: 2px
+    margin-left: 2px
+    margin-right: 2px
+  .has-official
+    background: transparentize($green, .9)
+  .has-unofficial
+    background: transparentize($green, .9)
+  .has-errata
+    background: transparentize($yellow, .9)
 
 // Mobile specific
 +media($mobile)
@@ -349,3 +397,7 @@ ul.list-bulleted
     -webkit-column-count: 1
     -moz-column-count: 1
     column-count: 1
+
++media($desktop-wider)
+  .rst-content .sidebar
+    margin-right: -25%

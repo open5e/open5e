@@ -146,8 +146,20 @@ can’t increase an ability score above 20 using this feature.
 Uncanny Dodge
 ~~~~~~~~~~~~~
 
+.. sidebar:: Sage Advice
+    :class: official
+    
+    Uncanny Dodge only works against one attack per round, since it expends your reaction. 
+    
+    It works any attack with an attack roll (including a spell attack)
+    but it is no help against a spell or effect that requires a saving throw instead of an attack roll
+    
+    .. rst-class:: source
+    
+    Source: `Sage Advice Compendium <http://media.wizards.com/2015/downloads/dnd/SA_Compendium_1.01.pdf>`_
+
 Starting at 5th level, when an attacker that you can see hits you with
-an attack, you can use your reaction to halve the attack’s damage
+:has-official:`an attack,` you can use your reaction to halve the attack’s damage
 against you.
 
 Evasion
