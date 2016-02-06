@@ -32,7 +32,7 @@ piercing, and slashing (from *stoneskin*)
 **Challenge** 12 (8,400 XP)
 
 **Magic Resistance**: The archmage has advantage on saving throws
-against spells and other magical effects. 
+against spells and other magical effects.
 
 **Spellcasting**: The archmage
 is an 18th-level spellcaster. Its spellcasting ability is Intelligence
@@ -60,7 +60,7 @@ spells prepared:
 
     **9th level (1slot)**: *time stop*
 
-*The archmage casts these spells on itself before combat*.
+\* *The archmage casts these spells on itself before combat*.
 
 Actions
 
