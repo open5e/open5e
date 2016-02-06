@@ -39,6 +39,7 @@ next turn, a creature that averts its eyes has disadvantage on attack
 rolls against the hag.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Claws**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
 *Hit*: 10 (2d6 + 3) slashing damage. **Death Glare**: The hag targets

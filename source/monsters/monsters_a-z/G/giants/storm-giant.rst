@@ -39,6 +39,7 @@ no material components: **At will**: *detect magic*, *feather fall*,
 *levitate*, *light* **3/day each**: *control weather*, *water breathing*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The giant makes two greatsword attacks. **Greatsword**:
 *Melee Weapon Attack*: +14 to hit, reach 10 ft., one target. *Hit*: 30

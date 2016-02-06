@@ -42,6 +42,7 @@ cast *fog cloud*, requiring no material components. Its innate
 spellcasting ability is Charisma.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Claws**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one creature.
 *Hit*: 3 (1d4 + 1) slashing damage plus 2 (1d4) cold damage. **Frost

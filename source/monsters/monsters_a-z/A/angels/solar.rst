@@ -49,6 +49,7 @@ weather*
 spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The solar makes two greatsword attacks. **Greatsword**:
 *Melee Weapon Attack*: +15 to hit, reach 5 ft., one target. *Hit*: 22
@@ -68,6 +69,7 @@ target magically regains 40 (8d8 + 4) hit points and is freed from any
 curse, disease, poison, blindness, or deafness.
 
 Legendary Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The solar can take 3 legendary actions, choosing from the options below.
 Only one legendary action option can be used at a time and only at the

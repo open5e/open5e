@@ -49,12 +49,14 @@ curse*, *tongues* **4th level (3 slots):** *banishment*, *greater
 invisibility* **5th level (1 slot)**: *legend lore*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The sphinx makes two claw attacks. **Claw**: *Melee
 Weapon Attack*: +8 to hit, reach 5 ft., one target. *Hit*: 13 (2d8 + 4)
 slashing damage.
 
 Legendary Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The sphinx can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only

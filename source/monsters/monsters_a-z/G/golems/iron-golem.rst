@@ -38,6 +38,7 @@ advantage on saving throws against spells and other magical effects.
 **Magic Weapons**: The golem's weapon attacks are magical.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The golem makes two melee attacks. **Slam**: *Melee
 Weapon Attack*: +13 to hit, reach 5 ft., one target. *Hit*: 20 (3d8 + 7)

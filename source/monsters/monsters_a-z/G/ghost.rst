@@ -39,6 +39,7 @@ they were difficult terrain. It takes 5 (1d10) force damage if it ends
 its turn inside an object.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Withering Touch**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one
 target. *Hit*: 17 (4d6 + 3) necrotic damage. **Etherealness**: The ghost

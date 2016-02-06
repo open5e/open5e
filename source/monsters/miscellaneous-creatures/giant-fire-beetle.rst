@@ -28,6 +28,7 @@ Small beast, unaligned
 dim light for an additional 10 feet.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +1 to hit, reach 5 ft., one target.
 *Hit*: 2 (1d6 - 1) slashing damage.

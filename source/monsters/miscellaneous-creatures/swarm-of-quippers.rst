@@ -37,6 +37,7 @@ can't regain hit points or gain temporary hit points. **Water
 Breathing**: The swarm can breathe only underwater.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bites**: *Melee Weapon Attack*: +5 to hit, reach 0 ft., one creature
 in the swarm's space. *Hit*: 14 (4d6) piercing damage, or 7 (2d6)

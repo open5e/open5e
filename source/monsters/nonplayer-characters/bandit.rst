@@ -25,6 +25,7 @@ Medium humanoid (any race), any non-lawful alignment
 **Challenge** 1/8 (25 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Scimitar**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
 *Hit*: 4 (1d6 + 1) slashing damage. **Light Crossbow**: *Ranged Weapon

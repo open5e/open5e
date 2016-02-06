@@ -31,6 +31,7 @@ Medium dragon, lawful good
 **Challenge** 2 (450 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
 *Hit*: 9 (1d10 + 4) piercing damage. **Breath Weapons (Recharge 5–6)**:

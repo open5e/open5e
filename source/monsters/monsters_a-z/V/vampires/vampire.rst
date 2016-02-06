@@ -77,6 +77,7 @@ it starts its turn in sunlight. While in sunlight, it has disadvantage
 on attack rolls and ability checks.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack (Vampire Form Only)**: The vampire makes two attacks, only
 one of which can be a bite attack. **Unarmed Strike (Vampire Form
@@ -112,6 +113,7 @@ for 1 hour, until the vampire dies, or until the vampire dismisses them
 as a bonus action.
 
 Legendary Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The vampire can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only

@@ -33,6 +33,7 @@ extra 7 (2d6) damage. If the target is a creature, it must succeed on a
 DC 14 Strength saving throw or be knocked prone.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Ram**: *Melee Weapon Attack*: +6 to hit, reach 10 ft., one target.
 *Hit*: 11 (2d6 + 4) bludgeoning damage. **Hooves**: *Melee Weapon

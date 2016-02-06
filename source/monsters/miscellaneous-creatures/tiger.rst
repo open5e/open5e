@@ -34,6 +34,7 @@ be knocked prone. If the target is prone, the tiger can make one bite
 attack against it as a bonus action.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
 *Hit*: 8 (1d10 + 3) piercing damage. **Claw**: *Melee Weapon Attack*: +5

@@ -33,6 +33,7 @@ location of any other creature in contact with the same web. **Web
 Walker**: The spider ignores movement restrictions caused by webbing.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one creature.
 *Hit*: 7 (1d8 + 3) piercing damage, and the target must make a DC 11

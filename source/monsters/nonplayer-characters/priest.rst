@@ -44,6 +44,7 @@ attacks). The priest has the following cleric spells prepared:
     **3rd level (2 slots)**: *dispel magic*, *spirit guardians*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Mace**: *Melee Weapon Attack*: +2 to hit, reach 5 ft., one target.
 *Hit*: 3 (1d6) bludgeoning damage.

@@ -43,6 +43,7 @@ Appearance**: While the ooze remains motionless, it is indistinguishable
 from an oily pool or wet rock.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Pseudopod**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one
 target. *Hit*: 4 (1d6 + 1) bludgeoning damage plus 7 (2d6) acid damage,

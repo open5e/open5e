@@ -29,6 +29,7 @@ against any creature that doesn't have all its hit points. **Water
 Breathing**: The quipper can breathe only underwater.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
 *Hit*: 1 piercing damage.

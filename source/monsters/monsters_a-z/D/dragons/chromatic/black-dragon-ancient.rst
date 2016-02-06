@@ -35,6 +35,7 @@ Resistance (3/Day)**: If the dragon fails a saving throw, it can choose
 to succeed instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The dragon can use its Frightful Presence. It then
 makes three attacks: one with its bite and two with its claws. **Bite**:
@@ -56,6 +57,7 @@ creature in that line must make a DC 22 Dexterity saving throw, taking
 successful one.
 
 Legendary Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The dragon can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only

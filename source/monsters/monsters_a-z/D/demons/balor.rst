@@ -47,6 +47,7 @@ advantage on saving throws against spells and other magical effects.
 **Magic Weapons**: The balor's weapon attacks are magical.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The balor makes two attacks: one with its longsword and
 one with its whip. **Longsword**: *Melee Weapon Attack*: +14 to hit,

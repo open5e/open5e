@@ -34,6 +34,7 @@ be knocked prone. If the target is prone, the panther can make one bite
 attack against it as a bonus action.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one target.
 *Hit*: 5 (1d6 + 2) piercing damage. **Claw**: *Melee Weapon Attack*: +4

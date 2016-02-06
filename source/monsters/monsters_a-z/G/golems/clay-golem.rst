@@ -45,6 +45,7 @@ and other magical effects. **Magic Weapons**: The golem's weapon attacks
 are magical.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The golem makes two slam attacks. **Slam**: *Melee
 Weapon Attack*: +8 to hit, reach 5 ft., one target. *Hit*: 16 (2d10 + 5)

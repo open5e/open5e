@@ -40,6 +40,7 @@ Appearance**: While the rug remains motionless, it is indistinguishable
 from a normal rug.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Smother**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one Medium
 or smaller creature. *Hit*: The creature is grappled (escape DC 13).

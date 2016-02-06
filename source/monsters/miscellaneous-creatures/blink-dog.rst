@@ -30,6 +30,7 @@ Medium fey, lawful good
 checks that rely on hearing or smell.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
 *Hit*: 4 (1d6 + 1) piercing damage. **Teleport (Recharge 4–6)**: The dog

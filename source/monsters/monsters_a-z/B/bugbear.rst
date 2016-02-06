@@ -33,6 +33,7 @@ first round of combat, the target takes an extra 7 (2d6) damage from the
 attack.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Morningstar**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one
 target. *Hit*: 11 (2d8 + 2) piercing damage. **Javelin**: *Melee or

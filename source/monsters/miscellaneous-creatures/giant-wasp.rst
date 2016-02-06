@@ -25,6 +25,7 @@ Medium beast, unaligned
 **Challenge** 1/2 (100 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Sting**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one creature.
 *Hit*: 5 (1d6 + 2) piercing damage, and the target must make a DC 11

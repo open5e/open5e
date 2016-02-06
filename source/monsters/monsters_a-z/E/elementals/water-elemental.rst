@@ -38,6 +38,7 @@ squeezing. **Freeze**: If the elemental takes cold damage, it partially
 freezes; its speed is reduced by 20 feet until the end of its next turn.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The elemental makes two slam attacks. **Slam**: Melee
 *Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (2d8 + 4)

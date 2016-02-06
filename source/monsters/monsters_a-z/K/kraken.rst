@@ -40,6 +40,7 @@ of movement to escape from nonmagical restraints or being grappled.
 structures.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The kraken makes three tentacle attacks, each of which
 it can replace with one use of Fling. **Bite**: *Melee Weapon Attack*:
@@ -71,6 +72,7 @@ make a DC 23 Dexterity saving throw, taking 22 (4d10) lightning damage
 on a failed save, or half as much damage on a successful one.
 
 Legendary Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The kraken can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only

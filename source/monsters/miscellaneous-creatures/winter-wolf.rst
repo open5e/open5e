@@ -36,6 +36,7 @@ incapacitated. **Snow Camouflage**: The wolf has advantage on Dexterity
 (Stealth) checks made to hide in snowy terrain.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
 *Hit*: 11 (2d6 + 4) piercing damage. If the target is a creature, it

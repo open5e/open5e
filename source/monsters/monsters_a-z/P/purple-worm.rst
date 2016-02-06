@@ -30,6 +30,7 @@ Gargantuan monstrosity, unaligned
 speed and leaves a 10-foot-diameter tunnel in its wake.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The worm makes two attacks: one with its bite and one
 with its stinger. **Bite**: *Melee Weapon Attack*: +9 to hit, reach 10

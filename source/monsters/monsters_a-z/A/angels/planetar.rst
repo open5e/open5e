@@ -46,6 +46,7 @@ dead **1/day each**: *commune*, *control weather*, *insect plague*
 against spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The planetar makes two melee attacks. **Greatsword**:
 *Melee Weapon Attack*: +12 to hit, reach 5 ft., one target. *Hit*: 21

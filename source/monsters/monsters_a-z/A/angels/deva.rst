@@ -45,6 +45,7 @@ dead*
 spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The deva makes two melee attacks. **Mace**: *Melee
 Weapon Attack*: +8 to hit, reach 5 ft., one target. *Hit*: 7 (1d6 + 4)

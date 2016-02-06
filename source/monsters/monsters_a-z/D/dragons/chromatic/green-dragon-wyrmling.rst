@@ -35,6 +35,7 @@ Medium dragon, lawful evil
 **Amphibious**: The dragon can breathe air and water.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one target.
 *Hit*: 7 (1d10 + 2) piercing damage plus 3 (1d6) poison damage. **Poison

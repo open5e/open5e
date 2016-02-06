@@ -37,6 +37,7 @@ has the following druid spells prepared:
     **2nd level (3 slots)**: *animal messenger*, *barkskin*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Quarterstaff**: *Melee Weapon Attack*: +2 to hit (+4 to hit with
 shillelagh), reach 5 ft., one target. *Hit*: 3 (1d6) bludgeoning damage,

@@ -31,6 +31,7 @@ on saving throws against being blinded, charmed, deafened, frightened,
 stunned, or knocked unconscious.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The dog makes two bite attacks. **Bite**: *Melee Weapon
 Attack*: +4 to hit, reach 5 ft., one target. *Hit*: 5 (1d6 + 2) piercing

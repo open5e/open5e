@@ -27,6 +27,7 @@ Medium humanoid (any race), any alignment
 **Challenge** 3 (700 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The veteran makes two longsword attacks. If it has a
 shortsword drawn, it can also make a shortsword attack. **Longsword**:

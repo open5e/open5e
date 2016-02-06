@@ -31,6 +31,7 @@ Large dragon, lawful good
 **Challenge** 9 (5,000 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The dragon makes three attacks: one with its bite and
 two with its claws. **Bite**: *Melee Weapon Attack*: +10 to hit, reach

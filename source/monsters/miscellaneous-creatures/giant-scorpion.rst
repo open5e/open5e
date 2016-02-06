@@ -25,6 +25,7 @@ Large beast, unaligned
 **Challenge** 3 (700 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The scorpion makes three attacks: two with its claws
 and one with its sting. **Claw**: *Melee Weapon Attack*: +4 to hit,

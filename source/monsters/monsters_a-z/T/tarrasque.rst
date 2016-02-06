@@ -43,6 +43,7 @@ target. **Siege Monster**: The tarrasque deals double damage to objects
 and structures.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The tarrasque can use its Frightful Presence. It then
 makes five attacks: one with its bite, two with its claws, one with its
@@ -79,6 +80,7 @@ restrained by it and can escape from the corpse by using 30 feet of
 movement, exiting prone.
 
 Legendary Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The tarrasque can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only

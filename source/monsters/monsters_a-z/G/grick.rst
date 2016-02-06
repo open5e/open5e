@@ -31,6 +31,7 @@ nonmagical attacks
 checks made to hide in rocky terrain.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The grick makes one attack with its tentacles. If that
 attack hits, the grick can make one beak attack against the same target.

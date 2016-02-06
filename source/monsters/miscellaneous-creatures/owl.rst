@@ -39,6 +39,7 @@ on Wisdom (Perception) checks that rely on hearing or sight.
 **Challenge** 1/4 (50 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Talons**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
 *Hit*: 1 slashing damage.

@@ -41,6 +41,7 @@ the same plane of existence. The stalker also knows the location of its
 summoner.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The stalker makes two slam attacks. **Slam**: *Melee
 Weapon Attack*: +6 to hit, reach 5 ft., one target. *Hit*: 10 (2d6 + 3)

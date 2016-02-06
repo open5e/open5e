@@ -34,6 +34,7 @@ to be submerged at least once every 4 hours to avoid suffocating.
 120 feet of it, using a limited telepathy.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The sahuagin makes two melee attacks: one with its bite
 and one with its claws or spear. **Bite**: *Melee Weapon Attack*: +3 to

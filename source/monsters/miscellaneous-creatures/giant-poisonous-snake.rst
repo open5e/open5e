@@ -27,6 +27,7 @@ Medium beast, unaligned
 **Challenge** 1/4 (50 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +6 to hit, reach 10 ft., one target.
 *Hit*: 6 (1d4 + 4) piercing damage, and the target must make a DC 11

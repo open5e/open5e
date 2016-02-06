@@ -31,6 +31,7 @@ them
 that rely on sight.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The eagle makes two attacks: one with its beak and one
 with its talons. **Beak**: *Melee Weapon Attack*: +5 to hit, reach 5

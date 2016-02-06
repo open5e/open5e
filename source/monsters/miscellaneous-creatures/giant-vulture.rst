@@ -33,6 +33,7 @@ vulture's allies is within 5 feet of the creature and the ally isn't
 incapacitated.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The vulture makes two attacks: one with its beak and
 one with its talons. **Beak**: *Melee Weapon Attack*: +4 to hit, reach 5

@@ -43,6 +43,7 @@ Climb**: The pudding can climb difficult surfaces, including upside down
 on ceilings, without needing to make an ability check.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Pseudopod**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one
 target. *Hit*: 6 (1d6 + 3) bludgeoning damage plus 18 (4d8) acid damage.
@@ -51,6 +52,7 @@ takes a permanent and cumulative -1 penalty to the AC it offers. The
 armor is destroyed if the penalty reduces its AC to 10.
 
 Reactions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Split**: When a pudding that is Medium or larger is subjected to
 lightning or slashing damage, it splits into two new puddings if it has

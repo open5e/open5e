@@ -37,6 +37,7 @@ a melee attack while within 5 feet of it takes 7 (2d6) fire damage.
 an extra 3 (1d6) fire damage on a hit (included in the attack).
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The salamander makes two attacks: one with its spear
 and one with its tail. **Spear**: *Melee or Ranged Weapon Attack*: +7 to

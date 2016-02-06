@@ -35,6 +35,7 @@ cloaker has disadvantage on attack rolls and Wisdom (Perception) checks
 that rely on sight.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The cloaker makes two attacks: one with its bite and
 one with its tail. **Bite**: *Melee Weapon Attack*: +6 to hit, reach 5

@@ -34,6 +34,7 @@ Huge dragon, chaotic good
 can choose to succeed instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The dragon can use its Frightful Presence. It then
 makes three attacks: one with its bite and two with its claws. **Bite**:
@@ -63,6 +64,7 @@ the end of each of its turns, ending the effect on itself with a
 successful save.
 
 Legendary Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The dragon can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only

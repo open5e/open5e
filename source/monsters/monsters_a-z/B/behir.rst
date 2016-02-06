@@ -29,6 +29,7 @@ Huge monstrosity, neutral evil
 **Challenge** 11 (7,200 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The behir makes two attacks: one with its bite and one
 to constrict. **Bite**: *Melee Weapon Attack*: +10 to hit, reach 10 ft.,

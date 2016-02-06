@@ -29,6 +29,7 @@ Medium undead, chaotic evil
 **Challenge** 1 (200 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +2 to hit, reach 5 ft., one creature.
 *Hit*: 9 (2d6 + 2) piercing damage. **Claws**: *Melee Weapon Attack*: +4

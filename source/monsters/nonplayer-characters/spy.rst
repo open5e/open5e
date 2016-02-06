@@ -35,6 +35,7 @@ is within 5 feet of an ally of the spy that isn't incapacitated and the
 spy doesn't have disadvantage on the attack roll.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The spy makes two melee attacks. **Shortsword**: *Melee
 Weapon Attack*: +4 to hit, reach 5 ft., one target. *Hit*: 5 (1d6 + 2)

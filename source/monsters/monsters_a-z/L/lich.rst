@@ -58,6 +58,7 @@ shift* **8th level (1 slot)**: *dominate monster*, *power word stun*
 effect that turns undead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Paralyzing Touch**: Melee Spell Attack: +12 to hit, reach 5 ft., one
 creature. *Hit*: 10 (3d6) cold damage. The target must succeed on a DC
@@ -66,6 +67,7 @@ can repeat the saving throw at the end of each of its turns, ending the
 effect on itself on a success.
 
 Legendary Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The lich can take 3 legendary actions, choosing from the options below.
 Only one legendary action option can be used at a time and only at the

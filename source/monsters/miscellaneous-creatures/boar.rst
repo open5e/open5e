@@ -33,6 +33,7 @@ succeed on a DC 11 Strength saving throw or be knocked prone.
 1 hit point instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Tusk**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
 *Hit*: 4 (1d6 + 1) slashing damage.

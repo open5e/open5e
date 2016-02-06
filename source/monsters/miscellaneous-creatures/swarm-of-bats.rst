@@ -37,6 +37,7 @@ enough for a Tiny bat. The swarm can't regain hit points or gain
 temporary hit points.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bites**: *Melee Weapon Attack*: +4 to hit, reach 0 ft., one creature
 in the swarm's space. *Hit*: 5 (2d4) piercing damage, or 2 (1d4)

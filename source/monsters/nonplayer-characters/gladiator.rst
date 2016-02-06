@@ -33,6 +33,7 @@ frightened. **Brute**: A melee weapon deals one extra die of its damage
 when the gladiator hits with it (included in the attack).
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The gladiator makes three melee attacks or two ranged
 attacks. **Spear**: *Melee or Ranged Weapon Attack*: +7 to hit, reach 5
@@ -44,6 +45,7 @@ is a Medium or smaller creature, it must succeed on a DC 15 Strength
 saving throw or be knocked prone.
 
 Reactions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Parry**: The gladiator adds 3 to its AC against one melee attack that
 would hit it. To do so, the gladiator must see the attacker and be

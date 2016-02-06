@@ -36,6 +36,7 @@ spells, requiring no material components: **At will**: *detect magic*,
 step*, *telekinesis* **1/day each**: *control weather*, *gaseous form*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The giant makes two morningstar attacks.
 **Morningstar**: *Melee Weapon Attack*: +12 to hit, reach 10 ft., one

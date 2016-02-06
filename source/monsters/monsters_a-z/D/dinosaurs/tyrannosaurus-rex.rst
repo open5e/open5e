@@ -27,6 +27,7 @@ Huge beast, unaligned
 **Challenge** 8 (3,900 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The tyrannosaurus makes two attacks: one with its bite
 and one with its tail. It can't make both attacks against the same

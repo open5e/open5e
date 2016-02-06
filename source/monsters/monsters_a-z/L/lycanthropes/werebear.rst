@@ -38,6 +38,7 @@ transformed. It reverts to its true form if it dies. **Keen Smell**: The
 werebear has advantage on Wisdom (Perception) checks that rely on smell.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: In bear form, the werebear makes two claw attacks. In
 humanoid form, it makes two greataxe attacks. In hybrid form, it can
