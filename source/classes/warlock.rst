@@ -113,9 +113,8 @@ have given you facility with spells.
 Cantrips
 ^^^^^^^^
 
-You know two cantrips of your choice from the warlock spell list.
+You know two cantrips of your choice from the :ref:`srd:warlock-spells` list.
 You learn additional warlock
-
 cantrips of your choice at higher levels, as shown in the Cantrips Known
 column of the Warlock table.
 
@@ -129,7 +128,7 @@ you must expend a spell slot. You regain all expended spell slots when
 you finish a short or long rest.
 
 For example, when you are 5th level, you have two 3rd-level spell slots.
-To cast the 1st-level spell *thunderwave*, you must spend one of those
+To cast the 1st-level spell :ref:`srd:thunderwave`, you must spend one of those
 slots, and you cast it as a 3rd-level spell.
 
 Spells Known of 1st Level and Higher
@@ -194,7 +193,7 @@ loyal service. You gain one of the following features of your choice.
 Pact of the Chain
 ^^^^^^^^^^^^^^^^^
 
-You learn the *find familiar* spell and can cast it as a ritual. The
+You learn the :ref:`srd:find-familiar` spell and can cast it as a ritual. The
 spell doesn’t count against your number of spells known.
 
 When you cast the spell, you can choose one of the normal forms for your
@@ -257,14 +256,14 @@ Mystic Arcanum
 ~~~~~~~~~~~~~~
 
 At 11th level, your patron bestows upon you a magical secret called an
-arcanum. Choose one 6th- level spell from the warlock spell list as this
+arcanum. Choose one 6th-level spell from the :ref:`srd:warlock-spells` list as this
 arcanum.
 
 You can cast your arcanum spell once without expending a spell slot. You
 must finish a long rest before you can do so again.
 
 At higher levels, you gain more warlock spells of your choice that can
-be cast in this way: one 7th- level spell at 13th level, one 8th-level
+be cast in this way: one 7th-level spell at 13th level, one 8th-level
 spell at 15th level, and one 9th-level spell at 17th level. You regain
 all uses of your Mystic Arcanum when you finish a long rest.
 
@@ -288,15 +287,15 @@ prerequisites. A level prerequisite refers to your level in this class.
 Agonizing Blast
 ^^^^^^^^^^^^^^^
 
-*Prerequisite:* eldritch blast *cantrip*
+*Prerequisite:* :ref:`srd:eldritch-blast` cantrip
 
-When you cast *eldritch blast*, add your Charisma modifier to the damage
+When you cast :ref:`srd:eldritch-blast`, add your Charisma modifier to the damage
 it deals on a hit.
 
 Armor of Shadows
 ^^^^^^^^^^^^^^^^
 
-You can cast *mage armor* on yourself at will, without expending a spell
+You can cast :ref:`srd:mage-armor` on yourself at will, without expending a spell
 slot or material components.
 
 Ascendant Step
@@ -304,13 +303,13 @@ Ascendant Step
 
 *Prerequisite: 9th level*
 
-You can cast *levitate* on yourself at will, without expending a spell
+You can cast :ref:`srd:levitate` on yourself at will, without expending a spell
 slot or material components.
 
 Beast Speech
 ^^^^^^^^^^^^
 
-You can cast *speak with animals* at will, without expending a spell
+You can cast :ref:`srd:speak-with-animals` at will, without expending a spell
 slot.
 
 Beguiling Influence
@@ -323,7 +322,7 @@ Bewitching Whispers
 
 *Prerequisite: 7th level*
 
-You can cast *compulsion* once using a warlock spell slot. You can’t do
+You can cast :ref:`srd:compulsion` once using a warlock spell slot. You can’t do
 so again until you finish a long rest.
 
 Book of Ancient Secrets
@@ -354,7 +353,7 @@ Chains of Carceri
 
 *Prerequisite: 15th level, Pact of the Chain feature*
 
-You can cast *hold monster* at will—targeting a celestial, fiend, or
+You can cast :ref:`srd:hold-monster` at will—targeting a celestial, fiend, or
 elemental—without expending a spell slot or material components. You
 must finish a long rest before you can use this invocation on the same
 creature again.
@@ -370,20 +369,20 @@ Dreadful Word
 
 *Prerequisite: 7th level*
 
-You can cast *confusion* once using a warlock spell slot. You can’t do
+You can cast :ref:`srd:confusion` once using a warlock spell slot. You can’t do
 so again until you finish a long rest.
 
 Eldritch Sight
 ^^^^^^^^^^^^^^
 
-You can cast *detect magic* at will, without expending a spell slot.
+You can cast :ref:`srd:detect-magic` at will, without expending a spell slot.
 
 Eldritch Spear
 ^^^^^^^^^^^^^^
 
-*Prerequisite:* eldritch blast *cantrip*
+*Prerequisite:* :ref:`srd:eldritch-blast` cantrip
 
-When you cast *eldritch blast*, its range is 300 feet.
+When you cast  :ref:`srd:eldritch-blast`, its range is 300 feet.
 
 Eyes of the Rune Keeper
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -393,7 +392,7 @@ You can read all writing.
 Fiendish Vigor
 ^^^^^^^^^^^^^^
 
-You can cast *false life* on yourself at will as a 1st-level spell,
+You can cast :ref:`srd:false-life` on yourself at will as a 1st-level spell,
 without expending a spell slot or material components.
 
 Gaze of Two Minds
@@ -410,7 +409,7 @@ creature, and you are blinded and deafened to your own surroundings.
 Lifedrinker
 ^^^^^^^^^^^
 
-*Prerequisite: 12th level, Pact of the Blade feature*
+Prerequisite: 12th level, Pact of the Blade feature
 
 When you hit a creature with your pact weapon, the creature takes extra
 necrotic damage equal to your Charisma modifier (minimum 1).
@@ -418,7 +417,7 @@ necrotic damage equal to your Charisma modifier (minimum 1).
 Mask of Many Faces
 ^^^^^^^^^^^^^^^^^^
 
-You can cast *disguise self* at will, without expending a spell
+You can cast :ref:`srd:disguise-self` at will, without expending a spell
 slot.
 
 Master of Myriad Forms
@@ -426,14 +425,14 @@ Master of Myriad Forms
 
 *Prerequisite: 15th level*
 
-You can cast *alter self* at will, without expending a spell slot.
+You can cast :ref:`srd:alter-self` at will, without expending a spell slot.
 
 Minions of Chaos
 ^^^^^^^^^^^^^^^^
 
 *Prerequisite: 9th level*
 
-You can cast *conjure elemental* once using a warlock spell slot. You
+You can cast :ref:`srd:conjure-elemental` once using a warlock spell slot. You
 can’t do so again until you finish a long rest.
 
 Mire the Mind
@@ -441,13 +440,13 @@ Mire the Mind
 
 *Prerequisite: 5th level*
 
-You can cast *slow* once using a warlock spell slot. You can’t do so
+You can cast :ref:`srd:slow` once using a warlock spell slot. You can’t do so
 again until you finish a long rest.
 
 Misty Visions
 ^^^^^^^^^^^^^
 
-You can cast *silent image* at will, without expending a spell slot or
+You can cast :ref:`srd:silent-image` at will, without expending a spell slot or
 material components.
 
 One with Shadows
@@ -464,15 +463,15 @@ Otherworldly Leap
 
 *Prerequisite: 9th level*
 
-You can cast *jump* on yourself at will, without expending a spell slot
+You can cast :ref:`srd:jump` on yourself at will, without expending a spell slot
 or material components.
 
 Repelling Blast
 ^^^^^^^^^^^^^^^
 
-*Prerequisite:* eldritch blas\ *t cantrip*
+*Prerequisite:*  :ref:`srd:eldritch-blast` cantrip*
 
-When you hit a creature with *eldritch blast*, you can push the creature
+When you hit a creature with  :ref:`srd:eldritch-blast`, you can push the creature
 up to 10 feet away from you in a straight line.
 
 Sculptor of Flesh
@@ -480,7 +479,7 @@ Sculptor of Flesh
 
 *Prerequisite: 7th level*
 
-You can cast *polymorph* once using a warlock spell slot. You can’t do
+You can cast :ref:`srd:polymorph` once using a warlock spell slot. You can’t do
 so again until you finish a long rest.
 
 Sign of Ill Omen
@@ -488,13 +487,13 @@ Sign of Ill Omen
 
 *Prerequisite: 5th level*
 
-You can cast *bestow curse* once using a warlock spell slot. You can’t
+You can cast :ref:`srd:bestow-curse` once using a warlock spell slot. You can’t
 do so again until you finish a long rest.
 
 Thief of Five Fates
 ^^^^^^^^^^^^^^^^^^^
 
-You can cast *bane* once using a warlock spell slot. You can’t do so
+You can cast :ref:`srd:bane` once using a warlock spell slot. You can’t do so
 again until you finish a long rest.
 
 Thirsting Blade
@@ -510,7 +509,7 @@ Visions of Distant Realms
 
 *Prerequisite: 15th level*
 
-You can cast *arcane eye* at will, without expending a spell slot.
+You can cast :ref:`srd:arcane-eye` at will, without expending a spell slot.
 
 Voice of the Chain Master
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -528,7 +527,7 @@ Whispers of the Grave
 
 *Prerequisite: 9th level*
 
-You can cast *speak with dead* at will, without expending a spell
+You can cast :ref:`srd:speak-with-dead` at will, without expending a spell
 slot.
 
 Witch Sight
