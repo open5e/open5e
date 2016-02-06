@@ -101,8 +101,18 @@ take a bonus action only when a special ability, spell, or other feature
 of the game states that you can do something as a bonus action. You
 otherwise don’t have a bonus action to take.
 
-You can take only one bonus action on your turn, so you must choose
-which bonus action to use when you have more than one available.
+.. sidebar:: Sage Advice
+    :class: official
+
+    Actions and bonus actions can't be exchanged. If you have two abilities that require bonus
+    actions to activate you can only use one, even if you take no other actions.
+        
+    .. rst-class:: source
+
+    Source: `Sage Advice Compendium <http://media.wizards.com/2015/downloads/dnd/SA_Compendium_1.01.pdf>`_
+
+:has-official:`You can take only one bonus action on your turn, so you must choose
+which bonus action to use when you have more than one available.`
 
 You choose when to take a bonus action during your turn, unless the
 bonus action’s timing is specified, and anything that deprives you of
