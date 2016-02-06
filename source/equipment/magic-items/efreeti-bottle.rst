@@ -1,4 +1,4 @@
-.. _srd:efficient-quiver:
+.. _srd:efreeti-bottle:
 
 Efreeti Bottle
 --------------

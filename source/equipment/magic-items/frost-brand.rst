@@ -1,4 +1,4 @@
-.. _srd:frost-brand
+.. _srd:frost-brand:
 
 Frost Brand
 -----------

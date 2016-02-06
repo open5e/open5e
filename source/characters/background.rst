@@ -80,7 +80,8 @@ making a moral or ethical choice and acts according to its bestial
 nature. Sharks are savage predators, for example, but they are not evil;
 they have no alignment.
 
-.. srd:languages:
+.. _srd:languages:
+
 Languages
 ---------
 
@@ -210,7 +211,7 @@ Each background gives a character proficiency in two skills (described
 in "Using Ability Scores").
 
 In addition, most backgrounds give a character proficiency with one or
-more tools (detailed in ":ref:`equipment`").
+more tools (detailed in ":ref:`srd:equipment`").
 
 If a character would gain the same proficiency from two different
 sources, he or she can choose a different proficiency of the same kind
@@ -220,7 +221,7 @@ Languages
 ~~~~~~~~~
 
 Some backgrounds also allow characters to learn additional languages
-beyond those given by race. See :ref:`languages`."
+beyond those given by race. See :ref:`srd:languages`."
 
 Equipment
 ~~~~~~~~~

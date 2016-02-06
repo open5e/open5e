@@ -45,7 +45,7 @@ Cantrips (0 Level)
 ~~~~~~~~~
 
 - :ref:`srd:alter-self`
-- :ref:`srd:blindness/deafness`
+- :ref:`srd:blindness-deafness`
 - :ref:`srd:blur`
 - :ref:`srd:darkness`
 - :ref:`srd:darkvision`

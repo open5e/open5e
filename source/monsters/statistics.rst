@@ -237,67 +237,66 @@ Hit Dice by Size
 Speed
 ~~~~~
 
-    A monster's speed tells you how far it can move on its turn. For
-    more information on speed, see the *Player's Handbook.*
+A monster's speed tells you how far it can move on its turn. For
+more information on speed, see the *Player's Handbook.*
 
-    All creatures have a walking speed, simply called
+All creatures have a walking speed, simply called
+the monster's speed. Creatures that have no form of ground-­based
+locomotion have a walking speed of 0 feet.
 
-    the monster's speed. Creatures that have no form of ground-­based
-    locomotion have a walking speed of 0 feet.
-
-    Some creatures have one or more of the following additional movement
-    modes.
+Some creatures have one or more of the following additional movement
+modes.
 
 Burrow
 ^^^^^^
 
-    A monster that has a burrowing speed can use that speed to move
-    through sand, earth, mud, or ice. A monster can't burrow through
-    solid rock unless it has a special trait that allows it to do so.
+A monster that has a burrowing speed can use that speed to move
+through sand, earth, mud, or ice. A monster can't burrow through
+solid rock unless it has a special trait that allows it to do so.
 
 Climb
 ^^^^^
 
-    A monster that has a climbing speed can use all or part of its
-    movement to move on vertical surfaces. The monster doesn't need to
-    spend extra movement to climb.
+A monster that has a climbing speed can use all or part of its
+movement to move on vertical surfaces. The monster doesn't need to
+spend extra movement to climb.
 
 Fly
 ^^^
 
-    A monster that has a flying speed can use all or part of its
-    movement to fly. Some monsters have the ability to **hover**, which
-    makes them hard to knock out of the air (as explained in the rules
-    on flying in the *Player's Handbook*). Such a monster stops hovering
-    when it dies.
+A monster that has a flying speed can use all or part of its
+movement to fly. Some monsters have the ability to **hover**, which
+makes them hard to knock out of the air (as explained in the rules
+on flying in the *Player's Handbook*). Such a monster stops hovering
+when it dies.
 
 Swim
 ^^^^
 
-    A monster that has a swimming speed doesn't need to spend extra
-    movement to swim.
+A monster that has a swimming speed doesn't need to spend extra
+movement to swim.
 
 Ability Scores
 ~~~~~~~~~~~~~~
 
-    Every monster has six ability scores (Strength, Dexterity,
-    Constitution, Intelligence, Wisdom, and Charisma) and corresponding
-    modifiers. For more information on ability scores and how they're
-    used in play, see the *Player's Handbook.*
+Every monster has six ability scores (Strength, Dexterity,
+Constitution, Intelligence, Wisdom, and Charisma) and corresponding
+modifiers. For more information on ability scores and how they're
+used in play, see the *Player's Handbook.*
 
 Saving Throws
 ^^^^^^^^^^^^^
 
-    The Saving Throws entry is reserved for creatures that are adept at
-    resisting certain kinds of effects. For example, a creature that
-    isn't easily charmed or frightened might gain a bonus on its Wisdom
-    saving throws. Most creatures don't have special saving throw
-    bonuses, in which case this section is absent.
+The Saving Throws entry is reserved for creatures that are adept at
+resisting certain kinds of effects. For example, a creature that
+isn't easily charmed or frightened might gain a bonus on its Wisdom
+saving throws. Most creatures don't have special saving throw
+bonuses, in which case this section is absent.
 
-    A saving throw bonus is the sum of a monster's relevant ability
-    modifier and its proficiency bonus, which is determined by the
-    monster's challenge rating (as shown in the Proficiency Bonus by
-    Challenge Rating table).
+A saving throw bonus is the sum of a monster's relevant ability
+modifier and its proficiency bonus, which is determined by the
+monster's challenge rating (as shown in the Proficiency Bonus by
+Challenge Rating table).
 
 Proficiency Bonus by Challenge Rating
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -447,17 +446,17 @@ telepathic messages.
 Armor, Weapon, and Tool Proficiencies
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    Assume that a creature is proficient with its armor, weapons, and
-    tools. If you swap them out, you decide whether the creature is
-    proficient with its new equipment.
+Assume that a creature is proficient with its armor, weapons, and
+tools. If you swap them out, you decide whether the creature is
+proficient with its new equipment.
 
-    For example, a hill giant typically wears hide armor and wields a
-    greatclub. You could equip a hill giant with chain mail and a
-    greataxe instead, and assume the giant is proficient with both, one
-    or the other, or neither.
+For example, a hill giant typically wears hide armor and wields a
+greatclub. You could equip a hill giant with chain mail and a
+greataxe instead, and assume the giant is proficient with both, one
+or the other, or neither.
 
-    See the *Player's Handbook* for rules on using armor or weapons
-    without proficiency.
+See the *Player's Handbook* for rules on using armor or weapons
+without proficiency.
 
 Special Traits
 ~~~~~~~~~~~~~~
