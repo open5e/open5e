@@ -49,7 +49,7 @@ npm install -g grunt
 Then cd to the template directory, install the node dependencies, and run grunt.
 
 ```shell
-cd _templates/open5e_red_theme/
+cd _themes/open5e_red_theme/
 npm install
 grunt
 ```
