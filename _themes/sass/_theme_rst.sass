@@ -18,6 +18,28 @@
   img
     max-width: 100%
     height: auto !important
+    
+  .image-right
+    width: 40%
+    float: right
+    margin-right: -12px
+    margin-left: 12px
+  .image-left
+    width: 40%
+    float:left
+    margin-right: 12px
+    
+  .figure
+    text-align: center
+    background: transparentize($gray-light, .9)
+    padding: 6px
+    max-width: 400px
+    float:right
+    .caption
+      font-size: 12px
+      font-style: normal
+      line-height: $base-line-height * 1.5
+      margin-bottom: 0
 
   div.figure
     margin-bottom: $base-line-height
@@ -92,7 +114,8 @@
   .section ol p, .section ul p
     margin-bottom: $base-line-height / 2
   .line-block
-    margin-left: $base-line-height
+    margin-bottom: $base-line-height / 2
+    
 
   // Generics handling of headings and toc stuff.
   .topic-title

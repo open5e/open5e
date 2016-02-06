@@ -4836,6 +4836,28 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   max-width: 100%;
   height: auto !important;
 }
+.rst-content .image-right {
+  width: 40%;
+  float: right;
+  margin-right: -12px;
+  margin-left: 12px;
+}
+.rst-content .image-left {
+  width: 40%;
+  margin-right: 12px;
+}
+.rst-content .figure {
+  text-align: center;
+  background: rgba(153, 153, 153, 0.1);
+  padding: 6px;
+  max-width: 400px;
+}
+.rst-content .figure .caption {
+  font-size: 12px;
+  font-style: normal;
+  line-height: 36px;
+  margin-bottom: 0;
+}
 .rst-content div.figure {
   margin-bottom: 24px;
 }
@@ -4891,7 +4913,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   margin-bottom: 12px;
 }
 .rst-content .line-block {
-  margin-left: 24px;
+  margin-bottom: 12px;
 }
 .rst-content .topic-title {
   font-weight: bold;
