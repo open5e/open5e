@@ -14,7 +14,7 @@ the end of your next turn. During this time, the robe sheds bright light
 in a 30-­foot radius and dim light for an additional 30 feet. Creatures
 that can see you have disadvantage on attack rolls against you. In
 addition, any creature in the bright light that can see you when the
-robe’s power is activated must succeed on a DC 15 Wisdom saving throw or
+robe's power is activated must succeed on a DC 15 Wisdom saving throw or
 become stunned until the effect ends.
 
 Robe of Stars
@@ -25,7 +25,7 @@ Robe of Stars
 This black or dark blue robe is embroidered with small white or silver
 stars. You gain a +1 bonus to saving throws while you wear it.
 
-Six stars, located on the robe’s upper front portion, are particularly
+Six stars, located on the robe's upper front portion, are particularly
 large. While wearing this robe, you can use an action to pull off one of
 the stars and use it to cast *magic missile* as a 5th-­level spell.
 Daily at dusk, 1d6 removed stars reappear on the robe.

@@ -17,10 +17,10 @@ threads. While wearing it, you gain the following benefits:
 -  You can move up, down, and across vertical surfaces and upside down
    along ceilings, while leaving your hands free.
 
--  You can’t be caught in webs of any sort and can move through webs as
+-  You can't be caught in webs of any sort and can move through webs as
    if they were difficult terrain.
 
 -  You can use an action to cast the *web* spell (save DC 13). The web
    created by the spell fills twice its normal area. Once used, this
-   property of the cloak can’t be used again until the next dawn.
+   property of the cloak can't be used again until the next dawn.
 

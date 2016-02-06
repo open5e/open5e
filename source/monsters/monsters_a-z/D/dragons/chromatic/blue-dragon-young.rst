@@ -33,11 +33,17 @@ Large dragon, lawful evil
 Actions
 
 **Multiattack**: The dragon makes three attacks: one with its bite and
-two with its claws. **Bite**: *Melee Weapon Attack*: +9 to hit, reach 10
+two with its claws.
+
+**Bite**: *Melee Weapon Attack*: +9 to hit, reach 10
 ft., one target. *Hit*: 16 (2d10 + 5) piercing damage plus 5 (1d10)
-lightning damage. **Claw**: *Melee Weapon Attack*: +9 to hit, reach 5
-ft., one target. *Hit*: 12 (2d6 + 5) slashing damage. **Lightning Breath
-(Recharge 5–6)**: The dragon exhales lightning in an 60-foot line that
+lightning damage.
+
+**Claw**: *Melee Weapon Attack*: +9 to hit, reach 5
+ft., one target. *Hit*: 12 (2d6 + 5) slashing damage.
+
+**Lightning Breath
+(Recharge 5-6)**: The dragon exhales lightning in an 60-foot line that
 is 5 feet wide. Each creature in that line must make a DC 16 Dexterity
 saving throw, taking 55 (10d10) lightning damage on a failed save, or
 half as much damage on a successful one.

@@ -18,12 +18,12 @@ Command
 You speak a one word command to a creature you can see within range. The
 target must succeed on a Wisdom saving throw or follow the command on
 its next turn. The spell has no effect if the target is undead, if it
-doesn’t understand your language, or if your command is directly harmful
+doesn't understand your language, or if your command is directly harmful
 to it.
 
 Some typical commands and their effects follow. You might issue a
 command other than one described here. If you do so, the GM determines
-how the target behaves. If the target can’t follow your command, the
+how the target behaves. If the target can't follow your command, the
 spell ends.
 
 ***Approach.*** The target moves toward you by the shortest and most
@@ -38,7 +38,7 @@ fastest available means.
 
 ***Grovel.*** The target falls prone and then ends its turn.
 
-***Halt.*** The target doesn’t move and takes no actions.
+***Halt.*** The target doesn't move and takes no actions.
 
 A flying creature stays aloft, provided that it is able to do so. If it
 must move to stay aloft, it flies the minimum distance needed to remain

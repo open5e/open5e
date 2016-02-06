@@ -15,8 +15,8 @@ concentrate on its image.
 
 Each pot of paint is sufficient to cover 1,000 square feet of a
 surface, which lets you create inanimate objects or terrain
-features—such as a door, a pit, flowers, trees, cells, rooms, or
-weapons— that are up to 10,000 cubic feet. It takes 10 minutes to
+features---such as a door, a pit, flowers, trees, cells, rooms, or
+weapons---that are up to 10,000 cubic feet. It takes 10 minutes to
 cover 100 square feet.
 
 When you complete the painting, the object or terrain feature

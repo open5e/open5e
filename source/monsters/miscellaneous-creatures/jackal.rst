@@ -27,7 +27,9 @@ Small beast, unaligned
 **Challenge** 0 (10 XP)
 
 **Keen Hearing and Smell**: The jackal has advantage on Wisdom
-(Perception) checks that rely on hearing or smell. **Pack Tactics**: The
+(Perception) checks that rely on hearing or smell.
+
+**Pack Tactics**: The
 jackal has advantage on an attack roll against a creature if at least
 one of the jackal's allies is within 5 feet of the creature and the ally
 isn't incapacitated.
@@ -35,4 +37,4 @@ isn't incapacitated.
 Actions
 
 **Bite**: *Melee Weapon Attack*: +1 to hit, reach 5 ft., one target.
-*Hit*: 1 (1d4 – 1) piercing damage.
+*Hit*: 1 (1d4-1) piercing damage.

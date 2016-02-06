@@ -28,5 +28,5 @@ current hit points:
 
 Regardless of its current hit points, a celestial, an elemental, a fey,
 or a fiend that fails its save is forced back to its plane of origin (if
-it isn’t there already) and can’t return to your current plane for 24
+it isn't there already) and can't return to your current plane for 24
 hours by any means short of a wish spell.

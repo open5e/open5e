@@ -41,7 +41,7 @@ granted by your background:
 
 -  (*a*) a greataxe or (*b*) any martial melee weapon
 -  (*a*) two handaxes or (*b*) any simple weapon
--  An explorer’s pack and four javelins
+-  An explorer's pack and four javelins
 
 The Barbarian
 ^^^^^^^^^^^^^
@@ -96,18 +96,18 @@ Rage
 In battle, you fight with primal ferocity. On your turn, you can enter a
 rage as a bonus action.
 
-While raging, you gain the following benefits if you aren’t wearing
+While raging, you gain the following benefits if you aren't wearing
 heavy armor:
 
 -  You have advantage on Strength checks and Strength saving throws.
 -  When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.
 -  You have resistance to bludgeoning, piercing, and slashing damage.
 
-If you are able to cast spells, you can’t cast them or concentrate on
+If you are able to cast spells, you can't cast them or concentrate on
 them while raging.
 
 Your rage lasts for 1 minute. It ends early if you are knocked
-unconscious or if your turn ends and you haven’t attacked a hostile
+unconscious or if your turn ends and you haven't attacked a hostile
 creature since your last turn or taken damage since then. You can also
 end your rage on your turn as a bonus action.
 
@@ -134,11 +134,11 @@ rolls against you have advantage until your next turn.
 Danger Sense
 ~~~~~~~~~~~~
 
-At 2nd level, you gain an uncanny sense of when things nearby aren’t as
+At 2nd level, you gain an uncanny sense of when things nearby aren't as
 they should be, giving you an edge when you dodge away from danger.
 
 You have advantage on Dexterity saving throws against effects that you
-can see, such as traps and spells. To gain this benefit, you can’t be
+can see, such as traps and spells. To gain this benefit, you can't be
 blinded, deafened, or incapacitated.
 
 Primal Path
@@ -154,7 +154,7 @@ Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
-increase two ability scores of your choice by 1. As normal, you can’t
+increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Extra Attack
@@ -166,7 +166,7 @@ you take the Attack action on your turn.
 Fast Movement
 ~~~~~~~~~~~~~
 
-Starting at 5th level, your speed increases by 10 feet while you aren’t
+Starting at 5th level, your speed increases by 10 feet while you aren't
 wearing heavy armor.
 
 Feral Instinct
@@ -175,7 +175,7 @@ Feral Instinct
 By 7th level, your instincts are so honed that you have advantage on
 initiative rolls.
 
-Additionally, if you are surprised at the beginning of combat and aren’t
+Additionally, if you are surprised at the beginning of combat and aren't
 incapacitated, you can act normally on your first turn, but only if you
 enter your rage before doing anything else on that turn.
 
@@ -193,7 +193,7 @@ Relentless Rage
 ~~~~~~~~~~~~~~~
 
 Starting at 11th level, your rage can keep you fighting despite grievous
-wounds. If you drop to 0 hit points while you’re raging and don’t die
+wounds. If you drop to 0 hit points while you're raging and don't die
 outright, you can make a DC 10 Constitution saving throw. If you
 succeed, you drop to 1 hit point instead.
 
@@ -222,9 +222,9 @@ Constitution scores increase by 4. Your maximum for those scores is now
 Path of the Berserker
 ~~~~~~~~~~~~~~~~~~~~~
 
-For some barbarians, rage is a means to an end— that end being violence.
+For some barbarians, rage is a means to an end---that end being violence.
 The Path of the Berserker is a path of untrammeled fury, slick with
-blood. As you enter the berserker’s rage, you thrill in the chaos of
+blood. As you enter the berserker's rage, you thrill in the chaos of
 battle, heedless of your own health or well-being.
 
 Frenzy
@@ -239,7 +239,7 @@ exhaustion (as described in appendix A).
 Mindless Rage
 ~~~~~~~~~~~~~
 
-Beginning at 6th level, you can’t be charmed or frightened while raging.
+Beginning at 6th level, you can't be charmed or frightened while raging.
 If you are charmed or frightened when you enter your rage, the effect is
 suspended for the duration of the rage.
 
@@ -256,7 +256,7 @@ action to extend the duration of this effect on the frightened creature
 until the end of your next turn. This effect ends if the creature ends
 its turn out of line of sight or more than 60 feet away from you.
 
-If the creature succeeds on its saving throw, you can’t use this feature
+If the creature succeeds on its saving throw, you can't use this feature
 on that creature again for 24 hours.
 
 Retaliation

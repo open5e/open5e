@@ -25,5 +25,5 @@ manipulate an object, open an unlocked door or container, stow or
 retrieve an item from an open container, or pour the contents out of a
 vial. You can move the hand up to 30 feet each time you use it.
 
-The hand can’t attack, activate magic items, or carry more than 10
+The hand can't attack, activate magic items, or carry more than 10
 pounds.

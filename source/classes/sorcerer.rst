@@ -42,7 +42,7 @@ granted by your background:
 
 -  (*a*) a light crossbow and 20 bolts or (*b*) any simple weapon
 -  (*a*) a component pouch or (*b*) an arcane focus
--  (*a*) a dungeoneer’s pack or (*b*) an explorer’s pack
+-  (*a*) a dungeoneer's pack or (*b*) an explorer's pack
 -  Two daggers
 
 The Sorcerer
@@ -113,7 +113,7 @@ Spell Slots
 
 The Sorcerer table shows how many spell slots you have to cast your
 spells of 1st level and higher. To cast one of these sorcerer spells,
-you must expend a slot of the spell’s level or higher. You regain all
+you must expend a slot of the spell's level or higher. You regain all
 expended spell slots when you finish a long rest.
 
 For example, if you know the 1st-level spell *burning hands* and have a
@@ -217,7 +217,7 @@ Creating Spell Slots
 
 ***Converting a Spell Slot to Sorcery Points.*** As a bonus action
 on your turn, you can expend one spell slot and gain a number of
-sorcery points equal to the slot’s level.
+sorcery points equal to the slot's level.
 
 Metamagic
 ~~~~~~~~~
@@ -233,7 +233,7 @@ Careful Spell
 ^^^^^^^^^^^^^
 
 When you cast a spell that forces other creatures to make a saving
-throw, you can protect some of those creatures from the spell’s full
+throw, you can protect some of those creatures from the spell's full
 force. To do so, you spend 1 sorcery point and choose a number of those
 creatures up to your Charisma modifier (minimum of one creature). A
 chosen creature automatically succeeds on its saving throw against the
@@ -288,9 +288,9 @@ any somatic or verbal components.
 Twinned Spell
 ^^^^^^^^^^^^^
 
-When you cast a spell that targets only one creature and doesn’t have a
+When you cast a spell that targets only one creature and doesn't have a
 range of self, you can spend a number of sorcery points equal to the
-spell’s level to target a second creature in range with the same spell
+spell's level to target a second creature in range with the same spell
 (1 sorcery point if the spell is a cantrip).
 
 To be eligible, a spell must be incapable of
@@ -303,7 +303,7 @@ Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
-increase two ability scores of your choice by 1. As normal, you can’t
+increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Sorcerous Restoration
@@ -373,7 +373,7 @@ increases by 1 and increases by 1 again whenever you gain a level in
 this class.
 
 Additionally, parts of your skin are covered by a thin sheen of
-dragon-like scales. When you aren’t wearing armor, your AC equals 13 +
+dragon-like scales. When you aren't wearing armor, your AC equals 13 +
 your Dexterity modifier.
 
 Elemental Affinity
@@ -392,7 +392,7 @@ from your back, gaining a flying speed equal to your current speed. You
 can create these wings as a bonus action on your turn. They last until
 you dismiss them as a bonus action on your turn.
 
-You can’t manifest your wings while wearing armor unless the armor is
+You can't manifest your wings while wearing armor unless the armor is
 made to accommodate them, and clothing not made to accommodate your
 wings might be destroyed when you manifest them.
 

@@ -23,12 +23,12 @@ spell lasts for the duration or until you use an action to dismiss it.
 When you cast the spell, you decide what sort of security the spell
 provides, choosing any or all of the following properties:
 
--  Sound can’t pass through the barrier at the edge of the warded area.
+-  Sound can't pass through the barrier at the edge of the warded area.
 -  The barrier of the warded area appears dark and foggy, preventing
    vision (including darkvision) through it.
--  Sensors created by divination spells can’t appear inside the
+-  Sensors created by divination spells can't appear inside the
    protected area or pass through the barrier at its perimeter.
--  Creatures in the area can’t be targeted by divination spells.
+-  Creatures in the area can't be targeted by divination spells.
 -  Nothing can teleport into or out of the warded area.
 -  Planar travel is blocked within the warded area.
 

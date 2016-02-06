@@ -29,13 +29,13 @@ An orb is an etched crystal globe about 10 inches in diameter. When
 used, it grows to about 20 inches in diameter, and mist swirls inside
 it.
 
-While attuned to an orb, you can use an action to peer into the orb’s
+While attuned to an orb, you can use an action to peer into the orb's
 depths and speak its command word. You must then make a DC 15 Charisma
 check. On a successful check, you control the orb for as long as you
 remain attuned to it. On a failed check, you become charmed by the orb
 for as long as you remain attuned to it.
 
-While you are charmed by the orb, you can’t voluntarily end your
+While you are charmed by the orb, you can't voluntarily end your
 attunement to it, and the orb casts *suggestion* on you at will (save DC
 18), urging you to work toward the evil ends it desires. The dragon
 essence within the orb might want many things: the annihilation of a
@@ -66,7 +66,7 @@ directions for 40 miles. Evil dragons in range feel compelled to come to
 the orb as soon as possible by the most direct route. Dragon deities
 such as Tiamat are unaffected by this call. Dragons drawn to the orb
 might be hostile toward you for compelling them against their will. Once
-you have used this property, it can’t be used again for 1 hour.
+you have used this property, it can't be used again for 1 hour.
 
 **Destroying an Orb.** An *Orb of Dragonkind* appears
 

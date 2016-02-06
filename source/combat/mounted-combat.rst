@@ -19,12 +19,12 @@ Mounting and Dismounting
 Once during your move, you can mount a creature that is within 5 feet of
 you or dismount. Doing so costs an amount of movement equal to half your
 speed. For example, if your speed is 30 feet, you must spend 15 feet of
-movement to mount a horse. Therefore, you can’t mount it if you don’t
+movement to mount a horse. Therefore, you can't mount it if you don't
 have 15 feet of movement left or if your speed is 0.
 
-If an effect moves your mount against its will while you’re on it, you
+If an effect moves your mount against its will while you're on it, you
 must succeed on a DC 10 Dexterity saving throw or fall off the mount,
-landing prone in a space within 5 feet of it. If you’re knocked prone
+landing prone in a space within 5 feet of it. If you're knocked prone
 while mounted, you must make the same saving throw.
 
 If your mount is knocked prone, you can use your reaction to dismount it
@@ -34,7 +34,7 @@ fall prone in a space within 5 feet it.
 Controlling a Mount
 ~~~~~~~~~~~~~~~~~~~
 
-While you’re mounted, you have two options. You can either control the
+While you're mounted, you have two options. You can either control the
 mount or allow it to act independently. Intelligent creatures, such as
 dragons, act independently.
 
@@ -52,5 +52,5 @@ moves and acts as it wishes. It might flee from combat, rush to
 attack and devour a badly injured foe, or otherwise act against your
 wishes.
 
-In either case, if the mount provokes an opportunity attack while you’re
+In either case, if the mount provokes an opportunity attack while you're
 on it, the attacker can target you or the mount.

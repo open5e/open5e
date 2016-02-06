@@ -21,8 +21,8 @@ of the target)
 You create a magical restraint to hold a creature that you can see
 within range. The target must succeed on a Wisdom saving throw or be
 bound by the spell; if it succeeds, it is immune to this spell if you
-cast it again. While affected by this spell, the creature doesn’t need
-to breathe, eat, or drink, and it doesn’t age. Divination spells can’t
+cast it again. While affected by this spell, the creature doesn't need
+to breathe, eat, or drink, and it doesn't age. Divination spells can't
 locate or perceive the target.
 
 When you cast the spell, you choose one of the following forms of
@@ -38,7 +38,7 @@ orb.
 
 ***Chaining.*** Heavy chains, firmly rooted in the ground, hold the
 target in place. The target is restrained until the spell ends, and it
-can’t move or be moved by any means until then.
+can't move or be moved by any means until then.
 
 The special component for this version of the spell is a fine chain of
 precious metal.
@@ -55,13 +55,13 @@ representation of the prison made from jade.
 is imprisoned inside a gemstone or similar object. Light can pass
 through the gemstone normally (allowing the target to see out and other
 creatures to see in), but nothing else can pass through, even by means
-of teleportation or planar travel. The gemstone can’t be cut or broken
+of teleportation or planar travel. The gemstone can't be cut or broken
 while the spell remains in effect.
 
 The special component for this version of the spell is a large,
 transparent gemstone, such as a corundum, diamond, or ruby.
 
-***Slumber.*** The target falls asleep and can’t be awoken. The special
+***Slumber.*** The target falls asleep and can't be awoken. The special
 component for this version of the spell consists of rare soporific
 herbs.
 
@@ -70,7 +70,7 @@ versions, you can specify a condition that will cause the spell to end
 and release the target. The condition can be as specific or as elaborate
 as you choose, but the GM must agree that the condition is reasonable
 and has a likelihood of coming to pass. The conditions can be based on a
-creature’s name, identity, or deity but otherwise must be based on
+creature's name, identity, or deity but otherwise must be based on
 observable actions or qualities and not based on intangibles such as
 level, class, or hit points.
 

@@ -21,7 +21,7 @@ blasts out from you in a direction you choose. Each creature in the line
 must make a Dexterity saving throw. A creature takes 8d6 lightning
 damage on a failed save, or half as much damage on a successful one.
 
-The lightning ignites flammable objects in the area that aren’t being
+The lightning ignites flammable objects in the area that aren't being
 worn or carried.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 4th

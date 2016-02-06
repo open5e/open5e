@@ -13,7 +13,7 @@ hovering in space and stabilized by a magical field surrounding it.
 The sphere obliterates all matter it passes through and all matter that
 passes through it. Artifacts are the exception. Unless an artifact is
 susceptible to damage from a *sphere of annihilation*, it passes through
-the sphere unscathed. Anything else that touches the sphere but isn’t
+the sphere unscathed. Anything else that touches the sphere but isn't
 wholly engulfed and obliterated by it takes 4d10 force damage.
 
 The sphere is stationary until someone controls it. If you are within 60
@@ -26,8 +26,8 @@ succeed on a DC 13 Dexterity saving throw or be touched by it, taking
 4d10 force damage.
 
 If you attempt to control a sphere that is under
-another creature’s control, you make an Intelligence (Arcana) check
-contested by the other creature’s Intelligence (Arcana) check. The
+another creature's control, you make an Intelligence (Arcana) check
+contested by the other creature's Intelligence (Arcana) check. The
 winner of the contest gains control of the sphere and can levitate it as
 normal.
 
@@ -39,8 +39,8 @@ the following table.
 =========  ======================
 d100       Result
 =========  ======================
-01–50      The sphere is destroyed.
-51–85      The sphere moves through the portal or into the extradimensional space.
-86–00      A spatial rift sends each creature and object within 180 feet of the sphere, including the sphere, to a random plane of existence.
+01-50      The sphere is destroyed.
+51-85      The sphere moves through the portal or into the extradimensional space.
+86-00      A spatial rift sends each creature and object within 180 feet of the sphere, including the sphere, to a random plane of existence.
 =========  ======================
 

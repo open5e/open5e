@@ -31,7 +31,7 @@ soul transfers to the clone, provided that the soul is free and willing
 to return.
 
 The clone is physically identical to the original and has the same
-personality, memories, and abilities, but none of the original’s
-equipment. The original creature’s physical remains, if they still
-exist, become inert and can’t thereafter be restored to life, since the
-creature’s soul is elsewhere.
+personality, memories, and abilities, but none of the original's
+equipment. The original creature's physical remains, if they still
+exist, become inert and can't thereafter be restored to life, since the
+creature's soul is elsewhere.

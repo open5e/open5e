@@ -24,7 +24,7 @@ per hour) disperses it.
 When the cloud appears, each creature in it must make a Dexterity saving
 throw. A creature takes 10d8 fire damage on a failed save, or half as
 much damage on a successful one. A creature must also make this saving
-throw when it enters the spell’s area for the first time on a turn or
+throw when it enters the spell's area for the first time on a turn or
 ends its turn there.
 
 The cloud moves 10 feet directly away from you in a direction that you

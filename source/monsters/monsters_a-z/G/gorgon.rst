@@ -37,9 +37,13 @@ hooves against it as a bonus action.
 Actions
 
 **Gore**: *Melee Weapon Attack*: +8 to hit, reach 5 ft., one target.
-*Hit*: 18 (2d12 + 5) piercing damage. **Hooves**: *Melee Weapon Attack*:
+*Hit*: 18 (2d12 + 5) piercing damage.
+
+**Hooves**: *Melee Weapon Attack*:
 +8 to hit, reach 5 ft., one target. *Hit*: 16 (2d10 + 5) bludgeoning
-damage. **Petrifying Breath (Recharge 5–6)**: The gorgon exhales
+damage.
+
+**Petrifying Breath (Recharge 5-6)**: The gorgon exhales
 petrifying gas in a 30-foot cone. Each creature in that area must
 succeed on a DC 13 Constitution saving throw. On a failed save, a target
 begins to turn to stone and is restrained. The restrained target must

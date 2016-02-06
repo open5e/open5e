@@ -23,5 +23,5 @@ must make a Dexterity saving throw. It takes 7d10 fire damage on a
 failed save, or half as much damage on a successful one.
 
 The fire damages objects in the area and ignites flammable objects that
-aren’t being worn or carried. If you choose, plant life in the area is
+aren't being worn or carried. If you choose, plant life in the area is
 unaffected by this spell.

@@ -19,7 +19,7 @@ placed in the bag, as happens when someone reaches inside it, there is a
 inside the bag can use its action to try to escape with a successful DC
 15 Strength check. Another creature can use its action to reach into the
 bag to pull a creature out, doing so with a successful DC 20 Strength
-check (provided it isn’t pulled inside the bag first). Any creature that
+check (provided it isn't pulled inside the bag first). Any creature that
 starts its turn inside the bag is devoured, its body destroyed.
 
 Inanimate objects can be stored in the bag, which can hold a cubic foot
@@ -55,7 +55,7 @@ Placing a *bag of holding* inside an extradimensional space created by a
 both items and opens a gate to the Astral Plane. The gate originates
 where the one item was placed inside the other. Any creature within 10
 feet of the gate is sucked through it to a random location on the Astral
-Plane. The gate then closes. The gate is one-­way only and can’t be
+Plane. The gate then closes. The gate is one-­way only and can't be
 reopened.
 
 Bag of Tricks
@@ -71,7 +71,7 @@ You can use an action to pull the fuzzy object from
 
 the bag and throw it up to 20 feet. When the object lands, it transforms
 into a creature you determine by rolling a d8 and consulting the table
-that corresponds to the bag’s color.
+that corresponds to the bag's color.
 
 The creature is friendly to you and your companions, and it acts on your
 turn. You can use a bonus action to command how the creature moves and
@@ -79,6 +79,6 @@ what action it takes on its next turn, or to give it general orders,
 such as to attack your enemies. In the absence of such orders, the
 creature acts in a fashion appropriate to its nature.
 
-Once three fuzzy objects have been pulled from the bag, the bag can’t be
+Once three fuzzy objects have been pulled from the bag, the bag can't be
 used again until the next dawn.
 

@@ -10,7 +10,7 @@ Ring of X-ray Vision
 While wearing this ring, you can use an action to speak its command
 word. When you do so, you can see into and through solid matter for 1
 minute. This vision has a radius of 30 feet. To you, solid objects
-within that radius appear transparent and don’t prevent light from
+within that radius appear transparent and don't prevent light from
 passing through them. The vision can penetrate 1 foot of stone, 1 inch
 of common metal, or up to 3 feet of wood or dirt. Thicker substances
 block the vision, as does a thin sheet of lead.
@@ -35,7 +35,7 @@ gain the following benefits:
 -  You can see invisible creatures and objects, as well as see into the
    Ethereal Plane, out to a range of 120 feet.
 
-The eyes on the robe can’t be closed or averted. Although you can close
+The eyes on the robe can't be closed or averted. Although you can close
 or avert your own eyes, you are never considered to be doing so while
 wearing this robe.
 

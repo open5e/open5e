@@ -23,7 +23,7 @@ Lifestyle Expenses
 Between adventures, you choose a particular quality of life and pay the
 cost of maintaining that lifestyle.
 
-Living a particular lifestyle doesn’t have a huge effect on your
+Living a particular lifestyle doesn't have a huge effect on your
 character, but your lifestyle can affect the way other individuals and
 groups react to you. For example, when you lead an aristocratic
 lifestyle, it might be easier for you to influence the nobles of the
@@ -50,9 +50,9 @@ Crafting
 
 You can craft nonmagical objects, including adventuring equipment and
 works of art. You must be proficient with tools related to the object
-you are trying to create (typically artisan’s tools). You might also
+you are trying to create (typically artisan's tools). You might also
 need access to special materials or locations necessary to create it.
-For example, someone proficient with smith’s tools needs a forge in
+For example, someone proficient with smith's tools needs a forge in
 order to craft a sword or suit of armor.
 
 For every day of downtime you spend crafting, you can craft one or more
@@ -82,7 +82,7 @@ lifestyle without having to pay 1 gp per day. This benefit lasts as long
 you continue to practice your profession.
 
 If you are a member of an organization that can provide gainful
-employment, such as a temple or a thieves’ guild, you earn enough to
+employment, such as a temple or a thieves' guild, you earn enough to
 support a comfortable lifestyle instead.
 
 If you have proficiency in the Performance skill and put your
@@ -119,7 +119,7 @@ whether there are any restrictions on your research (such as needing to
 seek out a specific individual, tome, or location). The GM might also
 require you to make one or more ability checks, such as an Intelligence
 (Investigation) check to find clues pointing toward the information you
-seek, or a Charisma (Persuasion) check to secure someone’s aid. Once
+seek, or a Charisma (Persuasion) check to secure someone's aid. Once
 those conditions are met, you learn the information if it is available.
 
 For each day of research, you must spend 1 gp to cover your expenses.

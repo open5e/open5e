@@ -17,23 +17,23 @@ The Armor table shows the cost, weight, and other properties of the
 common types of armor worn in fantasy gaming worlds.
 
 **Armor Proficiency.** Anyone can put on a suit of armor or strap a
-shield to an arm. Only those proficient in the armor’s use know how to
+shield to an arm. Only those proficient in the armor's use know how to
 wear it effectively, however. Your class gives you proficiency with
 certain types of armor. If you wear armor that you lack proficiency
 with, you have disadvantage on any ability check, saving throw, or
-attack roll that involves Strength or Dexterity, and you can’t cast
+attack roll that involves Strength or Dexterity, and you can't cast
 spells.
 
 **Armor Class (AC).** Armor protects its wearer from attacks. The
 armor (and shield) you wear determines your base Armor Class.
 
-**Heavy Armor.** Heavier armor interferes with the wearer’s ability to
-move quickly, stealthily, and freely. If the Armor table shows “Str 13”
-or “Str 15” in the Strength column for an armor type, the armor reduces
-the wearer’s speed by 10 feet unless the wearer has a Strength score
+**Heavy Armor.** Heavier armor interferes with the wearer's ability to
+move quickly, stealthily, and freely. If the Armor table shows "Str 13"
+or "Str 15" in the Strength column for an armor type, the armor reduces
+the wearer's speed by 10 feet unless the wearer has a Strength score
 equal to or higher than the listed score.
 
-**Stealth.** If the Armor table shows “Disadvantage” in the Stealth
+**Stealth.** If the Armor table shows "Disadvantage" in the Stealth
 column, the wearer has disadvantage on Dexterity (Stealth) checks.
 
 **Shields.** A shield is made from wood or metal and is carried in one
@@ -72,7 +72,7 @@ lack access to the tools and materials needed to create better armor.
 
 **Chain Shirt.** Made of interlocking metal rings, a chain shirt is
 worn between layers of clothing or leather. This armor offers modest
-protection to the wearer’s upper body and allows the sound of the rings
+protection to the wearer's upper body and allows the sound of the rings
 rubbing against one another to be muffled by outer layers.
 
 **Scale Mail.** This armor consists of a coat and leggings (and
@@ -82,10 +82,10 @@ metal, much like the scales of a fish. The suit includes gauntlets.
 **Breastplate.** This armor consists of a fitted metal chest piece
 worn with supple leather. Although it leaves the legs and arms
 relatively unprotected, this armor provides good protection for the
-wearer’s vital organs while leaving the wearer relatively unencumbered.
+wearer's vital organs while leaving the wearer relatively unencumbered.
 
 **Half Plate.** Half plate consists of shaped metal plates that cover
-most of the wearer’s body. It does not include leg protection beyond
+most of the wearer's body. It does not include leg protection beyond
 simple greaves that are attached with leather straps.
 
 Heavy Armor
@@ -96,14 +96,14 @@ These suits of armor cover the entire body and are designed to stop a
 wide range of attacks. Only proficient warriors can manage their weight
 and bulk.
 
-Heavy armor doesn’t let you add your Dexterity modifier to your Armor
-Class, but it also doesn’t penalize you if your Dexterity modifier is
+Heavy armor doesn't let you add your Dexterity modifier to your Armor
+Class, but it also doesn't penalize you if your Dexterity modifier is
 negative.
 
 **Ring Mail.** This armor is leather armor with heavy rings sewn into
 it. The rings help reinforce the armor against blows from swords and
 axes. Ring mail is inferior to chain mail, and it's usually worn only by
-those who can’t afford better armor.
+those who can't afford better armor.
 
 **Chain Mail.** Made of interlocking metal rings, chain mail includes
 a layer of quilted fabric worn underneath the mail to prevent chafing
@@ -162,10 +162,10 @@ Armor
 Getting Into and Out of Armor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The time it takes to don or doff armor depends on the armor’s category.
+The time it takes to don or doff armor depends on the armor's category.
 
 **Don.** This is the time it takes to put on armor. You benefit from
-the armor’s AC only if you take the full time to don the suit of armor.
+the armor's AC only if you take the full time to don the suit of armor.
 
 **Doff.** This is the time it takes to take off armor. If you have
 help, reduce this time by half.

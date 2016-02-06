@@ -10,7 +10,7 @@ Slippers of Spider Climbing
 While you wear these light shoes, you can move up, down, and across
 vertical surfaces and upside down along ceilings, while leaving your
 hands free. You have a climbing speed equal to your walking speed.
-However, the slippers don’t allow you to move this way on a slippery
+However, the slippers don't allow you to move this way on a slippery
 surface, such as one covered by ice or oil.
 
 Sovereign Glue
@@ -34,21 +34,21 @@ Spell Scroll
 *Scroll, varies*
 
 A *spell scroll* bears the words of a single spell, written in a
-mystical cipher. If the spell is on your class’s spell list, you can use
+mystical cipher. If the spell is on your class's spell list, you can use
 an action to read the scroll and cast its spell without having to
-provide any of the spell’s components. Otherwise, the scroll is
+provide any of the spell's components. Otherwise, the scroll is
 unintelligible.
 
-If the spell is on your class’s spell list but of a higher level than
+If the spell is on your class's spell list but of a higher level than
 you can normally cast, you must make an ability check using your
 spellcasting ability to determine whether you cast it successfully. The
 
-DC equals 10 + the spell’s level. On a failed check, the spell
+DC equals 10 + the spell's level. On a failed check, the spell
 disappears from the scroll with no other effect. Once the spell is cast,
 the words on the scroll fade, and the scroll itself crumbles to dust.
 
-The level of the spell on the scroll determines the spell’s saving throw
-DC and attack bonus, as well as the scroll’s rarity, as shown in the
+The level of the spell on the scroll determines the spell's saving throw
+DC and attack bonus, as well as the scroll's rarity, as shown in the
 Spell Scroll table.
 
 Spell Scroll
@@ -74,7 +74,7 @@ spells in spellbooks can be copied. When a spell is copied from a
 *spell scroll*, the copier must succeed on an Intelligence (Arcana)
 check with a DC equal to 10
 
--  the spell’s level. If the check succeeds, the spell is
+-  the spell's level. If the check succeeds, the spell is
    successfully copied. Whether the check succeeds or fails, the
    *spell scroll* is destroyed.
 

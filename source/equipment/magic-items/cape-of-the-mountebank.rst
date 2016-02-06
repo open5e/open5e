@@ -10,7 +10,7 @@ Cape of the Mountebank
 This cape smells faintly of brimstone. While wearing it, you can use it
 to cast the *dimension door* spell as
 
-an action. This property of the cape can’t be used again until the next
+an action. This property of the cape can't be used again until the next
 dawn.
 
 When you disappear, you leave behind a cloud of smoke, and you appear in

@@ -14,6 +14,6 @@ increase the spell slot level by one for each additional charge you
 expend.
 
 The wand regains 1d6 + 1 expended charges daily at dawn. If you expend
-the wand’s last charge, roll a d20. On a 1, the wand crumbles into ashes
+the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes
 and is destroyed.
 

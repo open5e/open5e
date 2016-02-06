@@ -24,7 +24,7 @@ cause this damage again.
 
 If a creature is holding or wearing the object and takes the damage from
 it, the creature must succeed on a Constitution saving throw or drop the
-object if it can. If it doesn’t drop the object, it has disadvantage on
+object if it can. If it doesn't drop the object, it has disadvantage on
 attack rolls and ability checks until the start of your next turn.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 3rd

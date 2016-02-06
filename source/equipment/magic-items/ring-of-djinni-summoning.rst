@@ -19,6 +19,6 @@ obeys any commands you give it, no matter what language you use. If you
 fail to command it, the djinni defends itself against attackers but
 takes no other actions.
 
-After the djinni departs, it can’t be summoned again for 24 hours, and
+After the djinni departs, it can't be summoned again for 24 hours, and
 the ring becomes nonmagical if the djinni dies.
 

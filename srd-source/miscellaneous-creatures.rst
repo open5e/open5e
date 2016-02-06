@@ -25,7 +25,7 @@ Medium beast, unaligned
 
 **Senses** passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/2 (100 XP)
 
@@ -131,7 +131,7 @@ Large beast, unaligned
 
 **Senses** passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -163,7 +163,7 @@ Small beast, unaligned
 
 **Senses** passive Perception 11
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -195,7 +195,7 @@ Tiny beast, unaligned
 
 **Senses** darkvision 30 ft., passive Perception 11
 
-**Languages** —
+**Languages** ---
 
 **Keen Smell**: The badger has advantage on Wisdom (Perception) checks
 that rely on smell.
@@ -224,7 +224,7 @@ Tiny beast, unaligned
 
 **Senses** blindsight 60 ft., passive Perception 11
 
-**Languages** —
+**Languages** ---
 
 **Echolocation**: The bat can’t use its blindsight while deafened.
 **Keen Hearing**: The bat has advantage on Wisdom (Perception) checks
@@ -256,7 +256,7 @@ Medium beast, unaligned
 
 **Senses** passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/2 (100 XP)
 
@@ -302,7 +302,7 @@ checks that rely on hearing or smell.
 Actions
 
 **Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
-*Hit*: 4 (1d6 + 1) piercing damage. **Teleport (Recharge 4–6)**: The dog
+*Hit*: 4 (1d6 + 1) piercing damage. **Teleport (Recharge 4--6)**: The dog
 magically teleports, along with any equipment it is wearing or carrying,
 up to 40 feet to an unoccupied space it can see. Before or after
 teleporting, the dog can make one bite attack.
@@ -333,7 +333,7 @@ Small beast, unaligned
 
 **Senses** passive Perception 14
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/8 (25 XP)
 
@@ -371,7 +371,7 @@ Medium beast, unaligned
 
 **Senses** passive Perception 9
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -409,7 +409,7 @@ Large beast, unaligned
 
 **Senses** passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1 (200 XP)
 
@@ -443,7 +443,7 @@ Large beast, unaligned
 
 **Senses** passive Perception 9
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/8 (25 XP)
 
@@ -473,7 +473,7 @@ Tiny beast, unaligned
 
 **Senses** passive Perception 13;
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -504,7 +504,7 @@ Large beast, unaligned
 
 **Senses** blindsight 10 ft., passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -538,7 +538,7 @@ Tiny beast, unaligned
 
 **Senses** blindsight 30 ft., passive Perception 9
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -570,7 +570,7 @@ Large beast, unaligned
 
 **Senses** passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/2 (100 XP)
 
@@ -604,7 +604,7 @@ Medium monstrosity, neutral evil
 
 **Senses** darkvision 120 ft., passive Perception 15
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1 (200 XP)
 
@@ -648,7 +648,7 @@ Medium beast, unaligned
 
 **Senses** passive Perception 12
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -678,7 +678,7 @@ Large beast, unaligned
 
 **Senses**: passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1 (200 XP)
 
@@ -713,7 +713,7 @@ Large beast, unaligned
 
 **Senses** passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -743,7 +743,7 @@ Small beast, unaligned
 
 **Senses** passive Perception 14
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -774,7 +774,7 @@ Huge beast, unaligned
 
 **Senses** passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 4 (1,100 XP)
 
@@ -810,7 +810,7 @@ Large beast, unaligned
 
 **Senses** passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -845,7 +845,7 @@ Tiny beast, unaligned
 
 **Senses** blindsight 10 ft., passive Perception 11
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/8 (25 XP)
 
@@ -882,7 +882,7 @@ Tiny beast, unaligned
 
 **Senses** darkvision 30 ft., passive Perception 11
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (0 XP)
 
@@ -915,7 +915,7 @@ Huge beast, unaligned
 
 **Senses**: passive Perception 14
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 7 (2,900 XP)
 
@@ -945,7 +945,7 @@ Medium beast, unaligned
 
 **Senses** darkvision 30 ft., passive Perception 11
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -979,7 +979,7 @@ Large beast, unaligned
 
 **Senses** blindsight 60 ft., passive Perception 11
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -1011,7 +1011,7 @@ Large beast, unaligned
 
 **Senses** passive Perception 8
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 2 (450 XP)
 
@@ -1047,7 +1047,7 @@ Small beast, unaligned
 
 **Senses** blindsight 30 ft., passive Perception 8
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -1081,7 +1081,7 @@ Huge beast, unaligned
 
 **Senses** blindsight 10 ft., passive Perception 12
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 2 (450 XP)
 
@@ -1115,7 +1115,7 @@ Medium beast, unaligned
 
 **Senses** blindsight 30 ft., passive Perception 9
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/8 (25 XP)
 
@@ -1149,7 +1149,7 @@ Huge beast, unaligned
 
 **Senses** passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 5 (1,800 XP)
 
@@ -1272,7 +1272,7 @@ Small beast, unaligned
 
 **Senses** blindsight 30 ft., passive Perception 8
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -1311,7 +1311,7 @@ Medium beast, unaligned
 
 **Senses** darkvision 30 ft., passive Perception 12
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -1357,7 +1357,7 @@ Large beast, unaligned
 
 **Senses** passive Perception 11
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/2 (100 XP)
 
@@ -1394,7 +1394,7 @@ Large beast, unaligned
 
 **Senses** passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1 (200 XP)
 
@@ -1426,7 +1426,7 @@ Large beast, unaligned
 
 **Senses** darkvision 30 ft., passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -1460,7 +1460,7 @@ Large beast, unaligned
 
 **Senses** darkvision 60 ft., passive Perception 14
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1 (200 XP)
 
@@ -1540,7 +1540,7 @@ Medium beast, unaligned
 
 **Senses** blindsight 10 ft., passive Perception 12
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -1570,7 +1570,7 @@ Small beast, unaligned
 
 **Senses** darkvision 60 ft., passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/8 (25 XP)
 
@@ -1620,7 +1620,7 @@ Large beast, unaligned
 
 **Senses** blindsight 60 ft., passive Perception 9
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 3 (700 XP)
 
@@ -1655,7 +1655,7 @@ Large beast, unaligned
 
 **Senses** passive Perception 11
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/2 (100 XP)
 
@@ -1694,7 +1694,7 @@ Huge beast, unaligned
 
 **Senses** blindsight 60 ft., passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 5 (1,800 XP)
 
@@ -1732,7 +1732,7 @@ Large beast, unaligned
 
 **Senses** blindsight 10 ft., darkvision 60 ft., passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1 (200 XP)
 
@@ -1750,7 +1750,7 @@ Constitution saving throw, taking 9 (2d8) poison damage on a failed
 save, or half as much damage on a successful one. If the poison damage
 reduces the target to 0 hit points, the target is stable but poisoned
 for 1 hour, even after regaining hit points, and is paralyzed while
-poisoned in this way. **Web (Recharge 5–6)**: *Ranged Weapon Attack*: +5
+poisoned in this way. **Web (Recharge 5--6)**: *Ranged Weapon Attack*: +5
 to hit, range 30/60 ft., one creature. *Hit*: The target is restrained
 by webbing. As an action, the restrained target can make a DC 12
 Strength check, bursting the webbing on a success. The webbing can also
@@ -1782,7 +1782,7 @@ Large beast, unaligned
 
 **Senses** darkvision 30 ft., passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1 (200 XP)
 
@@ -1868,7 +1868,7 @@ Medium beast, unaligned
 
 **Senses** passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/2 (100 XP)
 
@@ -1903,7 +1903,7 @@ Medium beast, unaligned
 
 **Senses** darkvision 60 ft., passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/8 (25 XP)
 
@@ -1936,7 +1936,7 @@ Medium beast, unaligned
 
 **Senses** blindsight 10 ft., darkvision 60 ft., passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -1979,7 +1979,7 @@ Medium beast, unaligned
 
 **Senses** passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -2016,7 +2016,7 @@ Tiny beast, unaligned
 
 **Senses** passive Perception 14
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -2049,7 +2049,7 @@ Large beast, unaligned
 
 **Senses** blindsight 30 ft., passive Perception 12
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 2 (450 XP)
 
@@ -2087,7 +2087,7 @@ Medium beast, unaligned
 
 **Senses** passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -2121,7 +2121,7 @@ Small beast, unaligned
 
 **Senses** passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -2134,7 +2134,7 @@ isn’t incapacitated.
 Actions
 
 **Bite**: *Melee Weapon Attack*: +1 to hit, reach 5 ft., one target.
-*Hit*: 1 (1d4 – 1) piercing damage.
+*Hit*: 1 (1d4 -- 1) piercing damage.
 
 Killer Whale
 ~~~~~~~~~~~~
@@ -2157,7 +2157,7 @@ Huge beast, unaligned
 
 **Senses** blindsight 120 ft., passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 3 (700 XP)
 
@@ -2192,7 +2192,7 @@ Large beast, unaligned
 
 **Senses**: passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1 (200 XP)
 
@@ -2232,7 +2232,7 @@ Tiny beast, unaligned
 
 **Senses** darkvision 30 ft., passive Perception 9
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -2260,7 +2260,7 @@ Huge beast, unaligned
 
 **Senses** passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 6 (2,300 XP)
 
@@ -2306,7 +2306,7 @@ Medium beast, unaligned
 
 **Senses** passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/8 (25 XP)
 
@@ -2342,7 +2342,7 @@ Medium beast, unaligned
 
 **Senses** passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/8 (25 XP)
 
@@ -2377,7 +2377,7 @@ Small beast, unaligned
 
 **Senses** darkvision 30 ft., passive Perception 12
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -2430,7 +2430,7 @@ Tiny beast, unaligned
 
 **Senses** darkvision 120 ft., passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -2442,7 +2442,7 @@ on Wisdom (Perception) checks that rely on hearing or sight.
 
 **Senses**: passive Perception 14
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -2472,7 +2472,7 @@ Medium beast, unaligned
 
 **Senses** passive Perception 14
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -2510,7 +2510,7 @@ Large monstrosity, unaligned
 
 **Senses** darkvision 60 ft., passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 3 (700 XP)
 
@@ -2554,7 +2554,7 @@ Tiny beast, unaligned
 
 **Senses** blindsight 10 ft., passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/8 (25 XP)
 
@@ -2586,7 +2586,7 @@ Large beast, unaligned
 
 **Senses** passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 2 (450 XP)
 
@@ -2620,7 +2620,7 @@ Medium beast, unaligned
 
 **Senses** passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/8 (25 XP)
 
@@ -2648,7 +2648,7 @@ Tiny beast, unaligned
 
 **Senses** darkvision 60 ft., passive Perception 8
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -2685,7 +2685,7 @@ Tiny beast, unaligned
 
 **Senses** darkvision 30 ft., passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -2718,7 +2718,7 @@ Tiny beast, unaligned
 
 **Senses** passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -2753,7 +2753,7 @@ Medium beast, unaligned
 
 **Senses** blindsight 30 ft., passive Perception 12
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/2 (100 XP)
 
@@ -2790,7 +2790,7 @@ Large beast, unaligned
 
 **Senses** passive Perception 11
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 2 (450 XP)
 
@@ -2823,7 +2823,7 @@ Large beast, unaligned
 
 **Senses**: passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -2855,7 +2855,7 @@ Large beast, unaligned
 
 **Senses**: passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 2 (450 XP)
 
@@ -2891,7 +2891,7 @@ Tiny beast, unaligned
 
 **Senses** blindsight 10 ft., passive Perception 9
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -2921,7 +2921,7 @@ Tiny beast, unaligned
 
 **Senses** passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (0 XP)
 
@@ -2948,7 +2948,7 @@ Tiny beast, unaligned
 
 **Senses** darkvision 30 ft., passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -2988,7 +2988,7 @@ petrified, prone, restrained, stunned
 
 **Senses** blindsight 60 ft., passive Perception 11
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -3029,7 +3029,7 @@ petrified, prone, restrained, stunned
 
 **Senses** blindsight 10 ft., passive Perception 8
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/2 (100 XP)
 
@@ -3067,7 +3067,7 @@ petrified, prone, restrained, stunned
 
 **Senses** blindsight 10 ft., passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 2 (450 XP)
 
@@ -3108,7 +3108,7 @@ petrified, prone, restrained, stunned
 
 **Senses** darkvision 60 ft., passive Perception 8
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1 (200 XP)
 
@@ -3149,7 +3149,7 @@ petrified, prone, restrained, stunned
 
 **Senses** darkvision 30 ft., passive Perception 10
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -3191,7 +3191,7 @@ petrified, prone, restrained, stunned
 
 **Senses** passive Perception 15
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
@@ -3254,7 +3254,7 @@ Large beast, unaligned
 
 **Senses** darkvision 60 ft., passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1 (200 XP)
 
@@ -3292,7 +3292,7 @@ Medium beast, unaligned
 
 **Senses** passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -3326,7 +3326,7 @@ Large beast, unaligned
 
 **Senses** passive Perception 11
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/2 (100 XP)
 
@@ -3362,7 +3362,7 @@ Tiny beast, unaligned
 
 **Senses**: passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -3413,7 +3413,7 @@ Actions
 **Bite**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
 *Hit*: 11 (2d6 + 4) piercing damage. If the target is a creature, it
 must succeed on a DC 14 Strength saving throw or be knocked prone.
-**Cold Breath (Recharge 5–6)**: The wolf exhales a blast of freezing
+**Cold Breath (Recharge 5--6)**: The wolf exhales a blast of freezing
 wind in a 15-foot cone. Each creature in that area must make a DC 12
 Dexterity saving throw, taking 18 (4d8) cold damage on a failed save, or
 half as much damage on a successful one.
@@ -3446,7 +3446,7 @@ Medium beast, unaligned
 
 **Senses**: passive Perception 13
 
-**Languages** —
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 

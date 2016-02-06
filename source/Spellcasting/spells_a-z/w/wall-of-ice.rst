@@ -21,7 +21,7 @@ or you can shape a flat surface made up of ten 10 foot square panels.
 Each panel must be contiguous with another panel. In any form, the wall
 is 1 foot thick and lasts for the duration.
 
-If the wall cuts through a creature’s space when it appears, the
+If the wall cuts through a creature's space when it appears, the
 creature within its area is pushed to one side of the wall and must make
 a Dexterity saving throw. On a failed save, the creature takes 10d6 cold
 damage, or half as much damage on a successful save.

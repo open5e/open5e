@@ -33,7 +33,7 @@ tradition, or personal codes. Many monks and some wizards are lawful
 neutral.
 
 **Neutral** (N) is the alignment of those who prefer to steer clear of
-moral questions and don’t take sides, doing what seems best at the time.
+moral questions and don't take sides, doing what seems best at the time.
 Lizardfolk, most druids, and many humans are neutral.
 
 **Chaotic neutral** (CN) creatures follow their whims, holding their
@@ -66,20 +66,21 @@ serve them. Those races have strong inborn tendencies that match the
 nature of their gods. Most orcs share the violent, savage nature of the
 orc gods, and are thus inclined toward evil. Even if an orc chooses a
 good alignment, it struggles against its innate tendencies for its
-entire life. (Even half-­orcs feel the lingering pull of the orc god’s
+entire life. (Even half-­orcs feel the lingering pull of the orc god's
 influence.)
 
 Alignment is an essential part of the nature of celestials and fiends. A
-devil does not choose to be lawful evil, and it doesn’t tend toward
+devil does not choose to be lawful evil, and it doesn't tend toward
 lawful evil, but rather it is lawful evil in its essence. If it somehow
 ceased to be lawful evil, it would cease to be a devil.
 
 Most creatures that lack the capacity for rational thought do not have
-alignments—they are **unaligned**. Such a creature is incapable of
+alignments---they are **unaligned**. Such a creature is incapable of
 making a moral or ethical choice and acts according to its bestial
 nature. Sharks are savage predators, for example, but they are not evil;
 they have no alignment.
 
+.. srd:languages:
 Languages
 ---------
 
@@ -88,9 +89,9 @@ and your background might give you access to one or more additional
 languages of your choice. Note these languages on your character sheet.
 
 Choose your languages from the Standard Languages table, or choose one
-that is common in your campaign. With your GM’s permission, you can
+that is common in your campaign. With your GM's permission, you can
 instead choose a language from the Exotic Languages table or a secret
-language, such as thieves’ cant or the tongue of druids.
+language, such as thieves' cant or the tongue of druids.
 
 Some of these languages are actually families of languages with many
 dialects. For example, the Primordial language includes the Auran,
@@ -133,7 +134,7 @@ Exotic Languages
 +------------+--------------------+-----------+
 | Draconic   | Dragons, dragonborn| Draconic  |
 +------------+--------------------+-----------+
-| Deep Speech| Aboleths, cloakers | —         |
+| Deep Speech| Aboleths, cloakers | ---       |
 +------------+--------------------+-----------+
 | Infernal   | Devils             | Infernal  |
 +------------+--------------------+-----------+
@@ -148,7 +149,7 @@ Inspiration
 -----------
 
 Inspiration is a rule the game master can use to reward you for playing
-your character in a way that’s true to his or her personality traits,
+your character in a way that's true to his or her personality traits,
 ideal, bond, and flaw. By using inspiration, you can draw on your
 personality trait of compassion for the downtrodden to give you an edge
 in negotiating with the Beggar Prince. Or inspiration can let you call
@@ -164,8 +165,8 @@ in to the drawbacks presented by a flaw or bond, and otherwise portray
 your character in a compelling way. Your GM will tell you how you can
 earn inspiration in the game.
 
-You either have inspiration or you don’t—you can’t stockpile multiple
-“inspirations” for later use.
+You either have inspiration or you don't---you can't stockpile multiple
+"inspirations" for later use.
 
 Using Inspiration
 ^^^^^^^^^^^^^^^^^
@@ -183,7 +184,7 @@ your inspiration to give that character inspiration.
 Backgrounds
 -----------
 
-Every story has a beginning. Your character’s background reveals where
+Every story has a beginning. Your character's background reveals where
 you came from, how you became an adventurer, and your place in the
 world. Your fighter might have been a courageous knight or a grizzled
 soldier. Your wizard could have been a sage or an artisan. Your rogue
@@ -191,11 +192,11 @@ might have gotten by as a guild thief or commanded audiences as a
 jester.
 
 Choosing a background provides you with important story cues about your
-character’s identity. The most important question to ask about your
+character's identity. The most important question to ask about your
 background is *what changed*? Why did you stop doing whatever your
 background describes and start adventuring? Where did you get the money
 to purchase your starting gear, or, if you come from a wealthy
-background, why don’t you have *more* money? How did you learn the
+background, why don't you have *more* money? How did you learn the
 skills of your class? What sets you apart from ordinary people who share
 your background?
 
@@ -206,10 +207,10 @@ Proficiencies
 ^^^^^^^^^^^^^
 
 Each background gives a character proficiency in two skills (described
-in “Using Ability Scores”).
+in "Using Ability Scores").
 
 In addition, most backgrounds give a character proficiency with one or
-more tools (detailed in “Equipment”).
+more tools (detailed in ":ref:`equipment`").
 
 If a character would gain the same proficiency from two different
 sources, he or she can choose a different proficiency of the same kind
@@ -219,7 +220,7 @@ Languages
 ~~~~~~~~~
 
 Some backgrounds also allow characters to learn additional languages
-beyond those given by race. See “Languages.”
+beyond those given by race. See :ref:`languages`."
 
 Equipment
 ~~~~~~~~~
@@ -245,9 +246,9 @@ background, you can replace one feature with any other one, choose any
 two skills, and choose a total of two tool proficiencies or languages
 from the sample backgrounds. You can either use the equipment package
 from your background or spend coin on gear as described in the equipment
-section. (If you spend coin, you can’t also take the equipment package
+section. (If you spend coin, you can't also take the equipment package
 suggested for your class.) Finally, choose two personality traits, one
-ideal, one bond, and one flaw. If you can’t find a feature that matches
+ideal, one bond, and one flaw. If you can't find a feature that matches
 your desired background, work with your GM to create one.
 
 Acolyte
@@ -256,7 +257,7 @@ You have spent your life in the service of a temple to a specific god or
 pantheon of gods. You act as an intermediary between the realm of the
 holy and the mortal world, performing sacred rites and offering
 sacrifices in order to conduct worshipers into the presence of the
-divine. You are not necessarily a cleric—performing sacred rites is not
+divine. You are not necessarily a cleric---performing sacred rites is not
 the same thing as channeling divine power.
 
 Choose a god, a pantheon of gods, or some other quasi-­divine being from
@@ -307,7 +308,7 @@ heretical idea, or an ideal or bond taken to an extreme.
 +----------+----------------------------------------------------------------------------------------------------------------------+
 | d8       | Personality Trait                                                                                                    |
 +==========+======================================================================================================================+
-| 1        | I idolize a particular hero of my faith, and constantly refer to that person’s deeds and example.                    |
+| 1        | I idolize a particular hero of my faith, and constantly refer to that person's deeds and example.                    |
 +----------+----------------------------------------------------------------------------------------------------------------------+
 | 2        | I can find common ground between the fiercest enemies, empathizing with them and always working toward peace.        |
 +----------+----------------------------------------------------------------------------------------------------------------------+
@@ -319,9 +320,9 @@ heretical idea, or an ideal or bond taken to an extreme.
 +----------+----------------------------------------------------------------------------------------------------------------------+
 | 6        | I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods.                    |
 +----------+----------------------------------------------------------------------------------------------------------------------+
-| 7        | I’ve enjoyed fine food, drink, and high society among my temple’s elite. Rough living grates on me.                  |
+| 7        | I've enjoyed fine food, drink, and high society among my temple's elite. Rough living grates on me.                  |
 +----------+----------------------------------------------------------------------------------------------------------------------+
-| 8        | I’ve spent so long in the temple that I have little practical experience dealing with people in the outside world.   |
+| 8        | I've spent so long in the temple that I have little practical experience dealing with people in the outside world.   |
 +----------+----------------------------------------------------------------------------------------------------------------------+
 
 +------------+--------------------------------------------------------------------------------------------------------------------------+
@@ -333,11 +334,11 @@ heretical idea, or an ideal or bond taken to an extreme.
 +------------+--------------------------------------------------------------------------------------------------------------------------+
 | 3          | Change. We must help bring about the changes the gods are constantly working in the world. (Chaotic)                     |
 +------------+--------------------------------------------------------------------------------------------------------------------------+
-| 4          | Power. I hope to one day rise to the top of my faith’s religious hierarchy. (Lawful)                                     |
+| 4          | Power. I hope to one day rise to the top of my faith's religious hierarchy. (Lawful)                                     |
 +------------+--------------------------------------------------------------------------------------------------------------------------+
 | 5          | Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well. (Lawful)      |
 +------------+--------------------------------------------------------------------------------------------------------------------------+
-| 6          | Aspiration. I seek to prove myself worthy of my god’s favor by matching my actions against his or her teachings. (Any)   |
+| 6          | Aspiration. I seek to prove myself worthy of my god's favor by matching my actions against his or her teachings. (Any)   |
 +------------+--------------------------------------------------------------------------------------------------------------------------+
 
 +----------+--------------------------------------------------------------------------------------------+
@@ -361,7 +362,7 @@ heretical idea, or an ideal or bond taken to an extreme.
 +==========+=================================================================================================+
 | 1        | I judge others harshly, and myself even more severely.                                          |
 +----------+-------------------------------------------------------------------------------------------------+
-| 2        | I put too much trust in those who wield power within my temple’s hierarchy.                     |
+| 2        | I put too much trust in those who wield power within my temple's hierarchy.                     |
 +----------+-------------------------------------------------------------------------------------------------+
 | 3        | My piety sometimes leads me to blindly trust those that profess faith in my god.                |
 +----------+-------------------------------------------------------------------------------------------------+

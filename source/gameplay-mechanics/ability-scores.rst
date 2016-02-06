@@ -4,7 +4,7 @@
 Using Ability Scores
 ====================
 
-Six abilities provide a quick description of every creature’s physical
+Six abilities provide a quick description of every creature's physical
 and mental characteristics:
 
 -  **Strength**, measuring physical power
@@ -20,19 +20,19 @@ and mental characteristics:
 -  **Charisma**, measuring force of personality
 
 Is a character muscle-­bound and insightful? Brilliant and charming?
-Nimble and hardy? Ability scores define these qualities—a creature’s
+Nimble and hardy? Ability scores define these qualities---a creature's
 assets as well as weaknesses.
 
-The three main rolls of the game—the ability check, the saving throw,
-and the attack roll—rely on the six ability scores. The book’s
+The three main rolls of the game---the ability check, the saving throw,
+and the attack roll---rely on the six ability scores. The book's
 introduction describes the basic rule behind these rolls: roll a d20,
 add an ability modifier derived from one of the six ability scores, and
 compare the total to a target number.
 
-**Ability Scores and Modifiers** Each of a creature’s abilities has a
+**Ability Scores and Modifiers** Each of a creature's abilities has a
 score, a number that defines the magnitude of that ability. An ability
 score is not just a measure of innate capabilities, but also encompasses
-a creature’s training and competence in activities related to that
+a creature's training and competence in activities related to that
 ability.
 
 A score of 10 or 11 is the normal human average, but adventurers and
@@ -50,37 +50,37 @@ Ability Scores and Modifiers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 +----------------+----------------+
-| **Score**      | **Modifier**   |
+|   Score        |   Modifier     |
 +================+================+
 | 1              | −5             |
 +----------------+----------------+
-| 2–3            | −4             |
+| 2-3            | −4             |
 +----------------+----------------+
-| 4–5            | −3             |
+| 4-5            | −3             |
 +----------------+----------------+
-| 6–7            | −2             |
+| 6-7            | −2             |
 +----------------+----------------+
-| 8–9            | −1             |
+| 8-9            | −1             |
 +----------------+----------------+
-| 10–11          | +0             |
+| 10-11          | +0             |
 +----------------+----------------+
-| 12–13          | +1             |
+| 12-13          | +1             |
 +----------------+----------------+
-| 14–15          | +2             |
+| 14-15          | +2             |
 +----------------+----------------+
-| 16–17          | +3             |
+| 16-17          | +3             |
 +----------------+----------------+
-| 18–19          | +4             |
+| 18-19          | +4             |
 +----------------+----------------+
-| 20–21          | +5             |
+| 20-21          | +5             |
 +----------------+----------------+
-| 22–23          | +6             |
+| 22-23          | +6             |
 +----------------+----------------+
-| 24–25          | +7             |
+| 24-25          | +7             |
 +----------------+----------------+
-| 26–27          | +8             |
+| 26-27          | +8             |
 +----------------+----------------+
-| 28–29          | +9             |
+| 28-29          | +9             |
 +----------------+----------------+
 | 30             | +10            |
 +----------------+----------------+
@@ -104,7 +104,7 @@ you have disadvantage. For example, if you have disadvantage and roll a
 numbers, you use the 17.
 
 If multiple situations affect a roll and each one grants advantage or
-imposes disadvantage on it, you don’t roll more than one additional d20.
+imposes disadvantage on it, you don't roll more than one additional d20.
 If two favorable situations grant advantage, for example, you still roll
 only one additional d20.
 
@@ -115,7 +115,7 @@ grants advantage or vice versa. In such a situation, you have neither
 advantage nor disadvantage.
 
 When you have advantage or disadvantage and something in the game, such
-as the halfling’s Lucky trait, lets you reroll the d20, you can reroll
+as the halfling's Lucky trait, lets you reroll the d20, you can reroll
 only one of the dice. You choose which one. For example, if a halfling
 has advantage or disadvantage on an ability check and rolls a 1 and a
 13, the halfling could use the Lucky trait to reroll the 1.
@@ -123,7 +123,6 @@ has advantage or disadvantage on an ability check and rolls a 1 and a
 You usually gain advantage or disadvantage through the use of special
 abilities, actions, or spells. Inspiration can also give a character
 advantage. The
-
 GM can also decide that circumstances influence a roll in one direction
 or the other and grant advantage or impose disadvantage as a result.
 
@@ -134,42 +133,45 @@ Characters have a proficiency bonus determined by level. Monsters also
 have this bonus, which is incorporated in their stat blocks. The bonus
 is used in the rules on ability checks, saving throws, and attack rolls.
 
-Your proficiency bonus can’t be added to a single die roll or other
+Your proficiency bonus can't be added to a single die roll or other
 number more than once. For example, if two different rules say you can
 add your proficiency bonus to a Wisdom saving throw, you nevertheless
 add the bonus only once when you make the save.
 
 Occasionally, your proficiency bonus might be multiplied or divided
 (doubled or halved, for example) before you apply it. For example, the
-rogue’s Expertise feature doubles the proficiency bonus for certain
+rogue's Expertise feature doubles the proficiency bonus for certain
 ability checks. If a circumstance suggests that your proficiency bonus
 applies more than once to the same roll, you still add it only once and
 multiply or divide it only once.
 
 By the same token, if a feature or effect allows you to multiply your
-proficiency bonus when making an ability check that wouldn’t normally
-benefit from your proficiency bonus, you still don’t add the bonus to
+proficiency bonus when making an ability check that wouldn't normally
+benefit from your proficiency bonus, you still don't add the bonus to
 the check. For that check your proficiency bonus is 0, given the fact
 that multiplying 0 by any number is still 0. For instance, if you lack
 proficiency in the History skill, you gain no benefit from a feature
 that lets you double your proficiency bonus when you make Intelligence
 (History) checks.
 
-In general, you don’t multiply your proficiency bonus for attack rolls
+In general, you don't multiply your proficiency bonus for attack rolls
 or saving throws. If a feature or effect allows you to do so, these same
 rules apply.
 
 Ability Checks
 ~~~~~~~~~~~~~~
 
-An ability check tests a character’s or monster’s innate talent and
+An ability check tests a character's or monster's innate talent and
 training in an effort to overcome a challenge. The GM calls for an
 ability check when a character or monster attempts an action (other than
 an attack) that has a chance of failure. When the outcome is uncertain,
 the dice determine the results.
 
 For every ability check, the GM decides which of the six abilities is
-relevant to the task at hand and the
+relevant to the task at hand and the difficulty of the task, represented by a Difficulty Class.
+
+The more difficult a task, the higher its DC. The Typical Difficulty
+Classes table shows the most common DCs.
 
 Typical Difficulty Classes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -193,19 +195,19 @@ Typical Difficulty Classes
 To make an ability check, roll a d20 and add the relevant ability
 modifier. As with other d20 rolls, apply bonuses and penalties, and
 compare the total to the DC. If the total equals or exceeds the DC, the
-ability check is a success—the creature overcomes the challenge at hand.
-Otherwise, it’s a failure, which means the character or monster makes no
+ability check is a success---the creature overcomes the challenge at hand.
+Otherwise, it's a failure, which means the character or monster makes no
 progress toward the objective or makes progress combined with a setback
 determined by the GM.
 
 Contests
 ~~~~~~~~
 
-Sometimes one character’s or monster’s efforts are directly opposed to
-another’s. This can occur when both of them are trying to do the same
+Sometimes one character's or monster's efforts are directly opposed to
+another's. This can occur when both of them are trying to do the same
 thing and only one can succeed, such as attempting to snatch up a magic
 ring that has fallen on the floor. This situation also applies when one
-of them is trying to prevent the other one from accomplishing a goal—
+of them is trying to prevent the other one from accomplishing a goal---
 for example, when a monster tries to force open a door that an
 adventurer is holding closed. In situations like these, the outcome is
 determined by a special form of ability check, called a contest.
@@ -227,21 +229,16 @@ means that the door remains shut.
 Skills
 ~~~~~~
 
-difficulty of the task, represented by a Difficulty Class.
-
-The more difficult a task, the higher its DC. The Typical Difficulty
-Classes table shows the most common DCs.
-
 Each ability covers a broad range of capabilities, including skills that
 a character or a monster can be proficient in. A skill represents a
 specific aspect of an
 
-ability score, and an individual’s proficiency in a skill demonstrates a
-focus on that aspect. (A character’s starting skill proficiencies are
-determined at character creation, and a monster’s skill proficiencies
-appear in the monster’s stat block.)
+ability score, and an individual's proficiency in a skill demonstrates a
+focus on that aspect. (A character's starting skill proficiencies are
+determined at character creation, and a monster's skill proficiencies
+appear in the monster's stat block.)
 
-For example, a Dexterity check might reflect a character’s attempt to
+For example, a Dexterity check might reflect a character's attempt to
 pull off an acrobatic stunt, to palm an object, or to stay hidden. Each
 of these aspects of Dexterity has an associated skill: Acrobatics,
 Sleight of Hand, and Stealth, respectively. So a character who has
@@ -249,7 +246,7 @@ proficiency in the Stealth skill is particularly good at Dexterity
 checks related to sneaking and hiding.
 
 The skills related to each ability score are shown in the following
-list. (No skills are related to Constitution.) See an ability’s
+list. (No skills are related to Constitution.) See an ability's
 description in the later sections of this section for examples of how to
 use a skill associated with an ability.
 
@@ -305,7 +302,7 @@ Charisma
 -  Persuasion
 
 Sometimes, the GM might ask for an ability check using a specific
-skill—for example, “Make a Wisdom (Perception) check.” At other times, a
+skill---for example, "Make a Wisdom (Perception) check." At other times, a
 player might ask the GM if proficiency in a particular skill applies to
 a check. In either case, proficiency in a skill means
 
@@ -315,7 +312,7 @@ individual makes a normal ability check.
 
 For example, if a character attempts to climb up a dangerous cliff, the
 GM might ask for a Strength (Athletics) check. If the character is
-proficient in Athletics, the character’s proficiency bonus is added to
+proficient in Athletics, the character's proficiency bonus is added to
 the Strength check. If the character lacks that proficiency, he or she
 just makes a Strength check.
 
@@ -330,7 +327,7 @@ you have to swim from an offshore island to the mainland, your GM might
 call for a Constitution check to see if you have the stamina to make it
 that far. In this case, your GM might allow you to apply your
 proficiency in Athletics and ask for a Constitution (Athletics) check.
-So if you’re proficient in Athletics, you apply your proficiency bonus
+So if you're proficient in Athletics, you apply your proficiency bonus
 to the Constitution check just as you would normally do for a Strength
 (Athletics) check. Similarly, when your half-­orc barbarian uses a
 display of raw strength to intimidate an enemy, your GM might ask for a
@@ -340,14 +337,14 @@ associated with Charisma.
 Passive Checks
 ~~~~~~~~~~~~~~
 
-A passive check is a special kind of ability check that doesn’t involve
+A passive check is a special kind of ability check that doesn't involve
 any die rolls. Such a check can represent the average result for a task
 done repeatedly, such as searching for secret doors over and over again,
 or can be used when the GM wants to secretly determine whether the
 characters succeed at something without rolling dice, such as noticing a
 hidden monster.
 
-Here’s how to determine a character’s total for a passive check:
+Here's how to determine a character's total for a passive check:
 
 10 + all modifiers that normally apply to the check
 
@@ -358,22 +355,22 @@ For example, if a 1st-­level character has a Wisdom of 15 and
 proficiency in Perception, he or she has a passive Wisdom (Perception)
 score of 14.
 
-The rules on hiding in the “Dexterity” section below rely on passive
+The rules on hiding in the "Dexterity" section below rely on passive
 checks, as do the exploration rules.
 
 Working Together
 ~~~~~~~~~~~~~~~~
 
 Sometimes two or more characters team up to attempt a task. The
-character who’s leading the effort—or the one with the highest ability
-modifier—can make an ability check with advantage, reflecting the help
+character who's leading the effort---or the one with the highest ability
+modifier---can make an ability check with advantage, reflecting the help
 provided by the other characters. In combat, this requires the Help
 action.
 
 A character can only provide help if the task is one that he or she
 could attempt alone. For example, trying to open a lock requires
-proficiency with thieves’ tools, so a character who lacks that
-proficiency can’t help another character in that task. Moreover, a
+proficiency with thieves' tools, so a character who lacks that
+proficiency can't help another character in that task. Moreover, a
 character can help only when two or more individuals working together
 would actually be productive. Some tasks, such as threading a needle,
 are no easier with help.
@@ -384,13 +381,13 @@ Group Checks
 When a number of individuals are trying to accomplish something as a
 group, the GM might ask for a group ability check. In such a situation,
 the characters who are skilled at a particular task help cover those who
-aren’t.
+aren't.
 
 To make a group ability check, everyone in the group makes the ability
 check. If at least half the group succeeds, the whole group succeeds.
 Otherwise, the group fails.
 
-Group checks don’t come up very often, and they’re most useful when all
+Group checks don't come up very often, and they're most useful when all
 the characters succeed or fail as a group. For example, when adventurers
 are navigating a swamp, the GM might call for a group Wisdom (Survival)
 check to see if the characters can avoid the quicksand, sinkholes, and
@@ -469,7 +466,7 @@ following terms define what you can lift or carry.
 multiplied by 15. This is the weight (in pounds) that you can carry,
 which is high enough
 
-that most characters don’t usually have to worry about it.
+that most characters don't usually have to worry about it.
 
 **Push, Drag, or Lift.** You can push, drag, or lift a weight in
 pounds up to twice your carrying capacity (or 30 times your Strength
@@ -478,7 +475,7 @@ capacity, your speed drops to 5 feet.
 
 **Size and Strength.** Larger creatures can bear more weight, whereas
 Tiny creatures can carry less. For each size category above Medium,
-double the creature’s carrying capacity and the amount it can push,
+double the creature's carrying capacity and the amount it can push,
 drag, or lift. For a Tiny creature, halve these weights.
 
 Variant: Encumbrance
@@ -514,8 +511,8 @@ Dexterity checks.
 **Acrobatics.** Your Dexterity (Acrobatics) check
 
 covers your attempt to stay on your feet in a tricky situation, such as
-when you’re trying to run across a sheet of ice, balance on a tightrope,
-or stay upright on a rocking ship’s deck. The GM might also call for a
+when you're trying to run across a sheet of ice, balance on a tightrope,
+or stay upright on a rocking ship's deck. The GM might also call for a
 Dexterity (Acrobatics) check to see if you can perform acrobatic stunts,
 including dives, rolls, somersaults, and flips.
 
@@ -525,7 +522,7 @@ concealing an object on your person, make a Dexterity (Sleight of Hand)
 
 check. The GM might also call for a Dexterity (Sleight of Hand) check to
 determine whether you can lift a coin purse off another person or slip
-something out of another person’s pocket.
+something out of another person's pocket.
 
 **Stealth.** Make a Dexterity (Stealth) check when
 
@@ -571,7 +568,7 @@ Initiative
 ^^^^^^^^^^
 
 At the beginning of every combat, you roll initiative by making a
-Dexterity check. Initiative determines the order of creatures’ turns in
+Dexterity check. Initiative determines the order of creatures' turns in
 combat.
 
     .. rubric:: Hiding
@@ -579,11 +576,11 @@ combat.
 
     The DM decides when circumstances are appropriate for hiding. When
     you try to hide, make a Dexterity (Stealth) check. Until you are
-    discovered or you stop hiding, that check’s total is contested by
+    discovered or you stop hiding, that check's total is contested by
     the Wisdom (Perception) check of any creature that actively searches
     for signs of your presence.
 
-    You can’t hide from a creature that can see you clearly, and you
+    You can't hide from a creature that can see you clearly, and you
     give away your position if you make noise, such as shouting a
     warning or knocking over a vase.
 
@@ -597,11 +594,11 @@ combat.
     allowing you to gain advantage on an attack roll before you are
     seen.
 
-**Passive Perception.** When you hide, there’s a chance someone will
-notice you even if they aren’t searching. To determine whether such a
+**Passive Perception.** When you hide, there's a chance someone will
+notice you even if they aren't searching. To determine whether such a
 creature notices you, the DM compares your Dexterity (Stealth) check
-with that creature’s passive Wisdom (Perception) score, which equals 10
-+ the creature’s Wisdom modifier, as well as any other bonuses or
+with that creature's passive Wisdom (Perception) score, which equals 10
++ the creature's Wisdom modifier, as well as any other bonuses or
 penalties. If the creature has advantage, add 5. For disadvantage,
 subtract 5. For example, if a 1st-­‐level character (with a proficiency
 bonus of +2) has a Wisdom of 15 (a +2 modifier) and proficiency in
@@ -610,7 +607,7 @@ Perception, he or she has a passive Wisdom (Perception) of 14.
 **What Can You See?** One of the main factors in determining whether
 you can find a hidden creature or object is how well you can see in an
 area, which might be **lightly** or **heavily obscured**, as explained
-in chapter 8, “Adventuring.”
+in chapter 8, "Adventuring."
 
 Constitution
 ~~~~~~~~~~~~
@@ -650,12 +647,10 @@ If your Constitution modifier changes, your hit point maximum changes as
 well, as though you had the new modifier from 1st level. For example, if
 you raise your Constitution score when you reach 4th level and your
 Constitution modifier increases from
-
 +1 to +2, you adjust your hit point maximum as though the modifier had
 always been +2. So you add 3 hit points for your first three levels, and
 then roll
-
-your hit points for 4th level using your new modifier. Or if you’re 7th
+your hit points for 4th level using your new modifier. Or if you're 7th
 level and some effect lowers your Constitution score so as to reduce
 your Constitution modifier by 1, your hit point maximum is reduced by 7.
 
@@ -683,7 +678,6 @@ to recall lore about historical events, legendary people, ancient
 kingdoms, past disputes, recent wars, and lost civilizations.
 
 **Investigation.** When you look around for clues
-
 and make deductions based on those clues, you make an Intelligence
 (Investigation) check. You might deduce the location of a hidden object,
 discern from the appearance of a wound what kind of weapon dealt it, or
@@ -731,26 +725,23 @@ Wisdom Checks
 ^^^^^^^^^^^^^
 
 A Wisdom check might reflect an effort to read body language, understand
-someone’s feelings, notice things about the environment, or care for an
+someone's feelings, notice things about the environment, or care for an
 injured person. The Animal Handling, Insight, Medicine, Perception, and
 Survival skills reflect aptitude in certain kinds of Wisdom checks.
 
 **Animal Handling.** When there is any question
-
 whether you can calm down a domesticated animal, keep a mount from
-getting spooked, or intuit an animal’s intentions, the GM might call for
+getting spooked, or intuit an animal's intentions, the GM might call for
 a Wisdom (Animal Handling) check. You also make a Wisdom (Animal
 Handling) check to control your mount when you attempt a risky maneuver.
 
 **Insight.** Your Wisdom (Insight) check decides
-
 whether you can determine the true intentions of a creature, such as
-when searching out a lie or predicting someone’s next move. Doing so
+when searching out a lie or predicting someone's next move. Doing so
 involves gleaning clues from body language, speech habits, and changes
 in mannerisms.
 
 **Medicine.** A Wisdom (Medicine) check lets you try
-
 to stabilize a dying companion or diagnose an illness.
 
 **Perception.** Your Wisdom (Perception) check lets you spot, hear, or
@@ -770,7 +761,6 @@ nearby, predict the weather, or avoid quicksand and other natural
 hazards.
 
 **Other Wisdom Checks.** The GM might call for a
-
 Wisdom check when you try to accomplish tasks like the following:
 
 -  Get a gut feeling about what course of action to follow
@@ -804,7 +794,7 @@ can convincingly hide the truth, either verbally or through your
 actions. This deception can encompass everything from misleading others
 through ambiguity to telling outright lies. Typical situations include
 trying to fast-­ talk a guard, con a merchant, earn money through
-gambling, pass yourself off in a disguise, dull someone’s suspicions
+gambling, pass yourself off in a disguise, dull someone's suspicions
 with false assurances, or maintain a straight face while telling a
 blatant lie.
 

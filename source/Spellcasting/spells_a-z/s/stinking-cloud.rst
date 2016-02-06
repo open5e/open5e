@@ -22,7 +22,7 @@ heavily obscured. The cloud lingers in the air for the duration.
 Each creature that is completely within the cloud at the start of its
 turn must make a Constitution saving throw against poison. On a failed
 save, the creature spends its action that turn retching and reeling.
-Creatures that don’t need to breathe or are immune to poison
+Creatures that don't need to breathe or are immune to poison
 automatically succeed on this saving throw.
 
 A moderate wind (at least 10 miles per hour) disperses the cloud after 4

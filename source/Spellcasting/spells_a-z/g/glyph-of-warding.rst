@@ -42,7 +42,7 @@ You can further refine the trigger so the spell activates only under
 certain circumstances or according to physical characteristics (such as
 height or weight), creature kind (for example, the ward could be set to
 affect aberrations or drow), or alignment. You can also set conditions
-for creatures that don’t trigger the glyph, such as those who say a
+for creatures that don't trigger the glyph, such as those who say a
 certain password.
 
 When you inscribe the glyph, choose explosive runes or a spell glyph.

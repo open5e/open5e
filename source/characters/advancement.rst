@@ -1,4 +1,3 @@
-
 .. _srd:beyond-1st-level:
 
 Beyond 1st Level
@@ -12,8 +11,8 @@ advancement is called **gaining a level**.
 When your character gains a level, his or her class often grants
 additional features, as detailed in the class description. Some of these
 features allow you to increase your ability scores, either increasing
-two scores by 1 each or increasing one score by 2. You can’t increase an
-ability score above 20. In addition, every character’s proficiency bonus
+two scores by 1 each or increasing one score by 2. You can't increase an
+ability score above 20. In addition, every character's proficiency bonus
 increases at certain levels.
 
 Each time you gain a level, you gain 1 additional Hit Die. Roll that Hit
@@ -31,7 +30,7 @@ maximum then increases by 8.
 
 The Character Advancement table summarizes the XP you need to advance in
 levels from level 1 through level 20, and the proficiency bonus for a
-character of that level. Consult the information in your character’s
+character of that level. Consult the information in your character's
 class description to see what other improvements you gain at each level.
 
 Character Advancement
@@ -94,13 +93,13 @@ With this rule, you have the option of gaining a level in a new class
 whenever you advance in level, instead of gaining a level in your
 current class. Your levels in all your classes are added together to
 determine your character level. For example, if you have three levels in
-wizard and two in fighter, you’re a 5th-­level character.
+wizard and two in fighter, you're a 5th-­level character.
 
 As you advance in levels, you might primarily remain a member of your
 original class with just a few levels in another class, or you might
 change course entirely, never looking back at the class you left behind.
 You might even start progressing in a third or fourth class. Compared to
-a single-­class character of the same level, you’ll sacrifice some focus
+a single-­class character of the same level, you'll sacrifice some focus
 in exchange for versatility.
 
 Prerequisites
@@ -182,7 +181,7 @@ Proficiencies
 ^^^^^^^^^^^^^
 
 When you gain your first level in a class other than your initial class,
-you gain only some of new class’s starting proficiencies, as shown in
+you gain only some of new class's starting proficiencies, as shown in
 the Multiclassing Proficiencies table.
 
 Multiclassing Proficiencies
@@ -205,21 +204,21 @@ Multiclassing Proficiencies
 +------------------+--------------------------------------------------------------------------------------------------------------+
 | Paladin          | Light armor, medium armor, shields, simple weapons, martial weapons                                          |
 +------------------+--------------------------------------------------------------------------------------------------------------+
-| Ranger           | Light armor, medium armor, shields, simple weapons, martial weapons, one skill from the class’s skill list   |
+| Ranger           | Light armor, medium armor, shields, simple weapons, martial weapons, one skill from the class's skill list   |
 +------------------+--------------------------------------------------------------------------------------------------------------+
-| Rogue            | Light armor, one skill from the class’s skill list, thieves’ tools                                           |
+| Rogue            | Light armor, one skill from the class's skill list, thieves' tools                                           |
 +------------------+--------------------------------------------------------------------------------------------------------------+
-| Sorcerer         | —                                                                                                            |
+| Sorcerer         | -                                                                                                            |
 +------------------+--------------------------------------------------------------------------------------------------------------+
-| Warlock          | Light armor, simple weapons Wizard —                                                                         |
+| Warlock          | Light armor, simple weapons Wizard -                                                                         |
 +------------------+--------------------------------------------------------------------------------------------------------------+
 
 Class Features
 ^^^^^^^^^^^^^^
 
 When you gain a new level in a class, you get its features for that
-level. You don’t, however, receive the class’s starting equipment, and a
-few features have additional rules when you’re multiclassing: Channel
+level. You don't, however, receive the class's starting equipment, and a
+few features have additional rules when you're multiclassing: Channel
 Divinity, Extra Attack, Unarmored Defense, and Spellcasting.
 
 Channel Divinity
@@ -227,7 +226,7 @@ Channel Divinity
 
 If you already have the Channel Divinity feature and gain a level in a
 class that also grants the feature, you gain the Channel Divinity
-effects granted by that class, but getting the feature again doesn’t
+effects granted by that class, but getting the feature again doesn't
 give you an additional use of it. You gain additional uses only when you
 reach a class level that explicitly grants them to you. For example, if
 you are a cleric 6/paladin 4, you can use Channel Divinity twice between
@@ -239,15 +238,15 @@ Extra Attack
 ^^^^^^^^^^^^
 
 If you gain the Extra Attack class feature from more than one class, the
-features don’t add together. You can’t make more than two attacks with
-this feature unless it says you do (as the fighter’s version of Extra
-Attack does). Similarly, the warlock’s eldritch invocation Thirsting
-Blade doesn’t give you additional attacks if you also have Extra Attack.
+features don't add together. You can't make more than two attacks with
+this feature unless it says you do (as the fighter's version of Extra
+Attack does). Similarly, the warlock's eldritch invocation Thirsting
+Blade doesn't give you additional attacks if you also have Extra Attack.
 
 Unarmored Defense
 ^^^^^^^^^^^^^^^^^
 
-If you already have the Unarmored Defense feature, you can’t gain it
+If you already have the Unarmored Defense feature, you can't gain it
 again from another class.
 
 Spellcasting
@@ -287,15 +286,15 @@ spell slots of a level that is higher than the spells you know or can
 prepare. You can use those slots, but only to cast your lower-­level
 spells. If a lower-­level spell that you cast, like *burning hands*, has
 an enhanced effect when cast using a higher-­level slot, you can use the
-enhanced effect, even though you don’t have any spells of that higher
+enhanced effect, even though you don't have any spells of that higher
 level.
 
 For example, if you are the aforementioned ranger 4/wizard 3, you count
 as a 5th-­level character when determining your spell slots: you have
 four 1st-­level slots, three 2nd-­level slots, and two 3rd-­level slots.
-However, you don’t know any 3rd-­level spells, nor do you know any
+However, you don't know any 3rd-­level spells, nor do you know any
 2nd-­level ranger spells. You can use the spell slots of those levels to
-cast the spells you do know—and potentially enhance their effects.
+cast the spells you do know-and potentially enhance their effects.
 
 ***Pact Magic.*** If you have both the Spellcasting class
 
@@ -311,37 +310,37 @@ Multiclass Spellcaster: Spell Slots per Spell Level
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 | Lvl. | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
 +======+=====+=====+=====+=====+=====+=====+=====+=====+=====+
-| 1st  | 2   | —   | —   | —   | —   | —   | —   | —   | —   |
+| 1st  | 2   | -   | -   | -   | -   | -   | -   | -   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 2nd  | 3   | —   | —   | —   | —   | —   | —   | —   | —   |
+| 2nd  | 3   | -   | -   | -   | -   | -   | -   | -   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 3rd  | 4   | 2   | —   | —   | —   | —   | —   | —   | —   |
+| 3rd  | 4   | 2   | -   | -   | -   | -   | -   | -   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 4th  | 4   | 3   | —   | —   | —   | —   | —   | —   | —   |
+| 4th  | 4   | 3   | -   | -   | -   | -   | -   | -   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 5th  | 4   | 3   | 2   | —   | —   | —   | —   | —   | —   |
+| 5th  | 4   | 3   | 2   | -   | -   | -   | -   | -   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 6th  | 4   | 3   | 3   | —   | —   | —   | —   | —   | —   |
+| 6th  | 4   | 3   | 3   | -   | -   | -   | -   | -   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 7th  | 4   | 3   | 3   | 1   | —   | —   | —   | —   | —   |
+| 7th  | 4   | 3   | 3   | 1   | -   | -   | -   | -   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 8th  | 4   | 3   | 3   | 2   | —   | —   | —   | —   | —   |
+| 8th  | 4   | 3   | 3   | 2   | -   | -   | -   | -   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 9th  | 4   | 3   | 3   | 3   | 1   | —   | —   | —   | —   |
+| 9th  | 4   | 3   | 3   | 3   | 1   | -   | -   | -   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 10th | 4   | 3   | 3   | 3   | 2   | —   | —   | —   | —   |
+| 10th | 4   | 3   | 3   | 3   | 2   | -   | -   | -   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 11th | 4   | 3   | 3   | 3   | 2   | 1   | —   | —   | —   |
+| 11th | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 12th | 4   | 3   | 3   | 3   | 2   | 1   | —   | —   | —   |
+| 12th | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 13th | 4   | 3   | 3   | 3   | 2   | 1   | 1   | —   | —   |
+| 13th | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 14th | 4   | 3   | 3   | 3   | 2   | 1   | 1   | —   | —   |
+| 14th | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 15th | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | —   |
+| 15th | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
-| 16th | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | —   |
+| 16th | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 | 17th | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | 1   |
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+

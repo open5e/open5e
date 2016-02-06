@@ -24,7 +24,7 @@ normal plants in a 100 foot radius centered on that point become thick
 and overgrown. A creature moving through the area must spend 4 feet of
 movement for every 1 foot it moves.
 
-You can exclude one or more areas of any size within the spell’s area
+You can exclude one or more areas of any size within the spell's area
 from being affected.
 
 If you cast this spell over 8 hours, you enrich the land. All plants in

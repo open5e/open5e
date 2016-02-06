@@ -15,12 +15,12 @@ Confusion
 
 **Duration:** Concentration, up to 1 minute
 
-This spell assaults and twists creatures’ minds, spawning delusions and
+This spell assaults and twists creatures' minds, spawning delusions and
 provoking uncontrolled action. Each creature in a 10 foot radius sphere
 centered on a point you choose within range must succeed on a Wisdom
 saving throw when you cast this spell or be affected by it.
 
-An affected target can’t take reactions and must roll a d10 at the start
+An affected target can't take reactions and must roll a d10 at the start
 of each of its turns to determine its behavior for that turn.
 
 +------+------------+
@@ -46,20 +46,20 @@ of each of its turns to determine its behavior for that turn.
 |      | die face.  |
 |      | The        |
 |      | creature   |
-|      | doesn’t    |
+|      | doesn't    |
 |      | take an    |
 |      | action     |
 |      | this turn. |
 +------+------------+
-| 2–6  | The        |
+| 2-6  | The        |
 |      | creature   |
-|      | doesn’t    |
+|      | doesn't    |
 |      | move or    |
 |      | take       |
 |      | actions    |
 |      | this turn. |
 +------+------------+
-| 7–8  | The        |
+| 7-8  | The        |
 |      | creature   |
 |      | uses its   |
 |      | action to  |
@@ -82,7 +82,7 @@ of each of its turns to determine its behavior for that turn.
 |      | nothing    |
 |      | this turn. |
 +------+------------+
-| 9–10 | The        |
+| 9-10 | The        |
 |      | creature   |
 |      | can act    |
 |      | and move   |

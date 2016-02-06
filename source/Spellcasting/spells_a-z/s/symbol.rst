@@ -37,10 +37,10 @@ opening the object, approaching within a certain distance of it, or
 seeing or reading the glyph.
 
 You can further refine the trigger so the spell is activated only under
-certain circumstances or according to a creature’s physical
+certain circumstances or according to a creature's physical
 characteristics (such as height or weight), or physical kind (for
 example, the ward could be set to affect hags or shapechangers). You can
-also specify creatures that don’t trigger the glyph, such as those who
+also specify creatures that don't trigger the glyph, such as those who
 say a certain password.
 
 When you inscribe the glyph, choose one of the options below for its
@@ -66,13 +66,13 @@ the glyph on each of its turns, if able.
 
 ***Hopelessness.*** Each target must make a Charisma saving throw. On a
 failed save, the target is overwhelmed with despair for 1 minute. During
-this time, it can’t attack or target any creature with harmful
+this time, it can't attack or target any creature with harmful
 abilities, spells, or other magical effects.
 
 ***Insanity.*** Each target must make an Intelligence saving throw. On a
 failed save, the target is driven insane for 1 minute. An insane
-creature can’t take actions, can’t understand what other creatures say,
-can’t read, and speaks only in gibberish. The GM controls its movement,
+creature can't take actions, can't understand what other creatures say,
+can't read, and speaks only in gibberish. The GM controls its movement,
 which is erratic.
 
 ***Pain.*** Each target must make a Constitution saving throw and

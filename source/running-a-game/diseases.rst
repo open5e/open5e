@@ -18,7 +18,7 @@ with the consequences.
 
 A disease that does more than infect a few party members is primarily a
 plot device. The rules help describe the effects of the disease and how
-it can be cured, but the specifics of how a disease works aren’t bound
+it can be cured, but the specifics of how a disease works aren't bound
 by a common set of rules. Diseases can affect any creature, and a given
 illness might or might not pass from one race or kind of creature to
 another. A plague might affect only constructs or undead, or sweep
@@ -39,15 +39,15 @@ Cackle Fever
 This disease targets humanoids, although gnomes are strangely immune.
 While in the grips of this disease, victims frequently succumb to fits
 of mad laughter, giving the disease its common name and its morbid
-nickname: “the shrieks.”
+nickname: "the shrieks."
 
 Symptoms manifest 1d4 hours after infection and include fever and
 disorientation. The infected creature gains one level of exhaustion that
-can’t be removed until the disease is cured.
+can't be removed until the disease is cured.
 
-Any event that causes the infected creature great stress—including
+Any event that causes the infected creature great stress---including
 entering combat, taking damage, experiencing fear, or having a
-nightmare—forces the creature to make a DC 13 Constitution saving throw.
+nightmare---forces the creature to make a DC 13 Constitution saving throw.
 On a failed save, the creature takes 5 (1d10) psychic damage and becomes
 incapacitated with mad laughter for 1 minute. The creature can repeat
 the saving throw at the end of each of its turns, ending the mad
@@ -80,7 +80,7 @@ disease, or when it comes into contact with filth or offal contaminated
 by the disease, the creature must succeed on a DC 11 Constitution saving
 throw or become infected.
 
-It takes 1d4 days for sewer plague’s symptoms to manifest in an infected
+It takes 1d4 days for sewer plague's symptoms to manifest in an infected
 creature. Symptoms include fatigue and cramps. The infected creature
 suffers one level of exhaustion, and it regains only half the normal
 number of hit points from spending Hit Dice and no hit points from
@@ -88,9 +88,9 @@ finishing a long rest.
 
 At the end of each long rest, an infected creature must make a DC 11
 Constitution saving throw. On a failed save, the character gains one
-level of exhaustion. On a successful save, the character’s exhaustion
+level of exhaustion. On a successful save, the character's exhaustion
 level decreases by one level. If a successful saving throw reduces the
-infected creature’s level of exhaustion below 1, the creature recovers
+infected creature's level of exhaustion below 1, the creature recovers
 from the disease.
 
 Sight Rot
@@ -101,7 +101,7 @@ blinds the victim.
 
 A beast or humanoid that drinks water tainted by sight rot must succeed
 on a DC 15 Constitution saving throw or become infected. One day after
-infection, the creature’s vision starts to become blurry. The creature
+infection, the creature's vision starts to become blurry. The creature
 takes a −1 penalty to attack rolls and ability checks that rely on
 sight. At the end of each long rest after the symptoms appear, the
 penalty worsens by 1. When it reaches −5, the victim is blinded until

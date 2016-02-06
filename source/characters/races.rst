@@ -14,13 +14,13 @@ most races.
 Ability Score Increase
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Every race increases one or more of a character’s ability scores.
+Every race increases one or more of a character's ability scores.
 
 Age
 ^^^
 
 The age entry notes the age when a member of the race is considered an
-adult, as well as the race’s expected lifespan. This information can
+adult, as well as the race's expected lifespan. This information can
 help you decide how old your character is at the start of the game. You
 can choose any age for your character, which could provide an
 explanation for some of your ability scores. For example, if you play a
@@ -44,13 +44,13 @@ that are roughly 4 to 8 feet tall. Members of a few races are Small
 (between 2 and 4 feet tall), which means that certain rules of the game
 affect them differently. The most important of these rules is that Small
 characters have trouble wielding heavy weapons, as explained in
-“Equipment.”
+"Equipment."
 
 Speed
 ^^^^^
 
 Your speed determines how far you can move when traveling (
-“Adventuring”) and fighting (“Combat”).
+"Adventuring") and fighting ("Combat").
 
 Languages
 ^^^^^^^^^
@@ -77,7 +77,7 @@ parcel of dwarven nature.
 
 **Ability Score Increase.** Your Constitution score increases by 2.
 
-**Age.** Dwarves mature at the same rate as humans, but they’re
+**Age.** Dwarves mature at the same rate as humans, but they're
 considered young until they reach the age of 50. On average, they live
 about 350 years.
 
@@ -95,7 +95,7 @@ reduced by wearing heavy armor.
 **Darkvision.** Accustomed to life underground, you
 have superior vision in dark and dim conditions. You can see in dim
 light within 60 feet of you as if it were bright light, and in darkness
-as if it were dim light. You can’t discern color in darkness, only
+as if it were dim light. You can't discern color in darkness, only
 shades of gray.
 
 **Dwarven Resilience.** You have advantage on saving throws against
@@ -104,8 +104,8 @@ poison, and you have resistance against poison damage.
 **Dwarven Combat Training.** You have proficiency with the battleaxe,
 handaxe, light hammer, and warhammer.
 
-**Tool Proficiency.** You gain proficiency with the artisan’s tools of
-your choice: smith’s tools, brewer’s supplies, or mason’s tools.
+**Tool Proficiency.** You gain proficiency with the artisan's tools of
+your choice: smith's tools, brewer's supplies, or mason's tools.
 
 **Stonecunning.** Whenever you make an Intelligence (History) check
 related to the origin of stonework, you are considered proficient in the
@@ -147,7 +147,7 @@ years old.
 
 **Alignment.** Elves love freedom, variety, and self-­ expression, so
 they lean strongly toward the gentler aspects of chaos. They value and
-protect others’ freedom as well as their own, and they are more often
+protect others' freedom as well as their own, and they are more often
 good than not. The drow are an exception; their exile has made them
 vicious and dangerous. Drow are more often evil than not.
 
@@ -159,17 +159,17 @@ slender builds. Your size is Medium.
 **Darkvision.** Accustomed to twilit forests and the night sky, you
 have superior vision in dark and dim conditions. You can see in dim
 light within 60 feet of you as if it were bright light, and in darkness
-as if it were dim light. You can’t discern color in darkness, only
+as if it were dim light. You can't discern color in darkness, only
 shades of gray.
 
 **Keen Senses.** You have proficiency in the Perception skill.
 
 **Fey Ancestry.** You have advantage on saving throws against being
-charmed, and magic can’t put you to sleep.
+charmed, and magic can't put you to sleep.
 
-**Trance.** Elves don’t need to sleep. Instead, they meditate deeply,
+**Trance.** Elves don't need to sleep. Instead, they meditate deeply,
 remaining semiconscious, for 4 hours a day. (The Common word for such
-meditation is “trance.”) While meditating, you can dream after a
+meditation is "trance.") While meditating, you can dream after a
 fashion; such dreams are actually mental exercises that have become
 reflexive through years of practice.
 
@@ -239,8 +239,8 @@ frightened.
 creature that is of a size larger than yours.
 
 **Languages.** You can speak, read, and write Common and Halfling. The
-Halfling language isn’t secret, but halflings are loath to share it with
-others. They write very little, so they don’t have a rich body of
+Halfling language isn't secret, but halflings are loath to share it with
+others. They write very little, so they don't have a rich body of
 literature. Their oral tradition, however, is very strong. Almost all
 halflings speak Common to converse with the people in whose lands they
 dwell or through which they are traveling.
@@ -249,7 +249,7 @@ Lightfoot
 ^^^^^^^^^
 
 As a lightfoot halfling, you can easily hide from notice, even using
-other people as cover. You’re inclined to be affable and get along well
+other people as cover. You're inclined to be affable and get along well
 with others.
 
 Lightfoots are more prone to wanderlust than other halflings, and often
@@ -266,7 +266,7 @@ Human
 Human Traits
 ^^^^^^^^^^^^
 
-It’s hard to make generalizations about humans, but your human character
+It's hard to make generalizations about humans, but your human character
 has these traits.
 
 **Ability Score Increase.** Your ability scores each increase by 1.
@@ -358,7 +358,7 @@ damage on a failed save, and half as much damage on a successful
 one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and
 5d6 at 16th level.
 
-After you use your breath weapon, you can’t use it again until you
+After you use your breath weapon, you can't use it again until you
 complete a short or long rest.
 
 **Damage Resistance.** You have resistance to the damage type
@@ -399,7 +399,7 @@ pounds. Your size is Small.
 **Darkvision.** Accustomed to life underground, you have superior
 vision in dark and dim conditions. You can see in dim light within 60
 feet of you as if it were bright light, and in darkness as if it were
-dim light. You can’t discern color in darkness, only shades of gray.
+dim light. You can't discern color in darkness, only shades of gray.
 
 **Gnome Cunning.** You have advantage on all Intelligence, Wisdom, and
 Charisma saving throws against magic.
@@ -417,12 +417,12 @@ that of other gnomes.
 
 **Ability Score Increase.** Your Constitution score increases by 1.
 
-**Artificer’s Lore.** Whenever you make an Intelligence (History)
+**Artificer's Lore.** Whenever you make an Intelligence (History)
 check related to magic items, alchemical objects, or technological
 devices, you can add twice your proficiency bonus, instead of any
 proficiency bonus you normally apply.
 
-**Tinker.** You have proficiency with artisan’s tools (tinker’s
+**Tinker.** You have proficiency with artisan's tools (tinker's
 tools). Using those tools, you can spend 1 hour and 10 gp worth of
 materials to construct a Tiny clockwork device (AC 5, 1 hp). The device
 ceases to function after 24 hours (unless you spend 1 hour repairing it
@@ -441,7 +441,7 @@ When you create a device, choose one of the following options:
    to light a candle, torch, or campfire. Using the device requires your
    action.
 -  **Music Box.** When opened, this music box plays a single song at a
-   moderate volume. The box stops playing when it reaches the song’s end or
+   moderate volume. The box stops playing when it reaches the song's end or
    when it is closed.
 
 Half-Elf
@@ -463,7 +463,7 @@ however, often exceeding 180 years.
 **Alignment.** Half-­elves share the chaotic bent of their elven
 heritage. They value both personal freedom and creative expression,
 demonstrating neither love of leaders nor desire for followers. They
-chafe at rules, resent others’ demands, and sometimes prove unreliable,
+chafe at rules, resent others' demands, and sometimes prove unreliable,
 or at least unpredictable.
 
 **Size.** Half-­elves are about the same size as humans, ranging from
@@ -474,10 +474,10 @@ or at least unpredictable.
 **Darkvision.** Thanks to your elf blood, you have superior vision in
 dark and dim conditions. You can see in dim light within 60 feet of you
 as if it were bright light, and in darkness as if it were dim light. You
-can’t discern color in darkness, only shades of gray.
+can't discern color in darkness, only shades of gray.
 
 **Fey Ancestry.** You have advantage on saving throws against being
-charmed, and magic can’t put you to sleep.
+charmed, and magic can't put you to sleep.
 
 **Skill Versatility.** You gain proficiency in two skills of your
 choice.
@@ -514,17 +514,17 @@ they range from 5 to well over 6 feet tall. Your size is Medium.
 **Darkvision.** Thanks to your orc blood, you have superior vision in
 dark and dim conditions. You can see in dim light within 60 feet of you
 as if it were bright light, and in darkness as if it were dim light. You
-can’t discern color in darkness, only shades of gray.
+can't discern color in darkness, only shades of gray.
 
 **Menacing.** You gain proficiency in the
 Intimidation skill.
 
 **Relentless Endurance.** When you are reduced to 0 hit points but not
-killed outright, you can drop to 1 hit point instead. You can’t use this
+killed outright, you can drop to 1 hit point instead. You can't use this
 feature again until you finish a long rest.
 
 **Savage Attacks.** When you score a critical hit with a melee weapon
-attack, you can roll one of the weapon’s damage dice one additional time
+attack, you can roll one of the weapon's damage dice one additional time
 and add it to the extra damage of the critical hit.
 
 **Languages.** You can speak, read, and write Common and Orc. Orc is a
@@ -558,7 +558,7 @@ size is Medium.
 **Darkvision.** Thanks to your infernal heritage, you have superior
 vision in dark and dim conditions. You can see in dim light within 60
 feet of you as if it were bright light, and in darkness as if it were
-dim light. You can’t discern color in darkness, only shades of gray.
+dim light. You can't discern color in darkness, only shades of gray.
 
 **Hellish Resistance.** You have resistance to fire damage.
 

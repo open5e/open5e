@@ -29,7 +29,7 @@ spell ends.
 The summoned creatures are friendly to you and your companions. Roll
 initiative for the summoned creatures as a group, which have their own
 turns. They obey any verbal commands that you issue to them (no action
-required by you). If you don’t issue any commands to them, they defend
+required by you). If you don't issue any commands to them, they defend
 themselves from hostile creatures, but otherwise take no actions.
 
 The GM has the creatures' statistics.

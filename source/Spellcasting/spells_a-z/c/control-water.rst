@@ -26,7 +26,7 @@ flooding water spills over onto dry land.
 
 If you choose an area in a large body of water, you instead create a 20
 foot tall wave that travels from one side of the area to the other and
-then crashes down. Any Huge or smaller vehicles in the wave’s path are
+then crashes down. Any Huge or smaller vehicles in the wave's path are
 carried with it to the other side. Any Huge or smaller vehicles struck
 by the wave have a 25 percent chance of capsizing.
 
@@ -35,7 +35,7 @@ different effect. If this effect produced a wave, the wave repeats on
 the start of your next turn while the flood effect lasts.
 
 ***Part Water.*** You cause water in the area to move apart and create a
-trench. The trench extends across the spell’s area, and the separated
+trench. The trench extends across the spell's area, and the separated
 water forms a wall to either side. The trench remains until the spell
 ends or you choose a different effect. The water then slowly fills in
 the trench over the course of the next round until the normal water
@@ -44,7 +44,7 @@ level is restored.
 ***Redirect Flow.*** You cause flowing water in the area to move in a
 direction you choose, even if the water has to flow over obstacles, up
 walls, or in other unlikely directions. The water in the area moves as
-you direct it, but once it moves beyond the spell’s area, it resumes its
+you direct it, but once it moves beyond the spell's area, it resumes its
 flow based on the terrain conditions. The water continues to move in the
 direction you chose until the spell ends or you choose a different
 effect.
@@ -61,7 +61,7 @@ When a creature enters the vortex for the first time on a turn or starts
 its turn there, it must make a Strength saving throw. On a failed save,
 the creature takes 2d8 bludgeoning damage and is caught in the vortex
 until the spell ends. On a successful save, the creature takes half
-damage, and isn’t caught in the vortex. A creature caught in the vortex
+damage, and isn't caught in the vortex. A creature caught in the vortex
 can use its action to try to swim away from the vortex as described
 above, but has disadvantage on the Strength (Athletics) check to do so.
 

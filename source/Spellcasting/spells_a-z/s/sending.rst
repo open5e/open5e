@@ -23,4 +23,4 @@ of at least 1 to understand the meaning of your message.
 
 You can send the message across any distance and even to other planes of
 existence, but if the target is on a different plane than you, there is
-a 5 percent chance that the message doesn’t arrive.
+a 5 percent chance that the message doesn't arrive.

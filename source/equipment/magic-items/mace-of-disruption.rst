@@ -26,7 +26,7 @@ weapon. The bonus increases to +3 when you use the mace to attack a
 construct.
 
 When you roll a 20 on an attack roll made with this weapon, the target
-takes an extra 2d6 bludgeoning damage, or 4d6 bludgeoning damage if it’s
+takes an extra 2d6 bludgeoning damage, or 4d6 bludgeoning damage if it's
 a construct. If a construct has 25 hit points or fewer after taking this
 damage, it is destroyed.
 
@@ -40,8 +40,8 @@ and expend 1 charge to release a wave of terror. Each creature of your
 choice in a 30-­foot radius extending from you must succeed on a DC 15
 Wisdom saving throw or become frightened of you for 1 minute. While it
 is frightened in this way, a creature must spend its turns trying to
-move as far away from you as it can, and it can’t willingly move to a
-space within 30 feet of you. It also can’t take reactions. For its
+move as far away from you as it can, and it can't willingly move to a
+space within 30 feet of you. It also can't take reactions. For its
 action, it can use only the Dash action or try to escape from an effect
 that prevents it from moving. If it has nowhere it can move, the
 creature can use the Dodge action. At the end of each of its turns, a

@@ -28,7 +28,7 @@ identifies it as illusory with a successful DC 15 Intelligence
 
 The illusion lasts until its card is moved or the illusion is dispelled.
 When the illusion ends, the
-image on its card disappears, and that card can’t be used again.
+image on its card disappears, and that card can't be used again.
 
 ================  ==============================
 Playing Card      Illusion
@@ -56,7 +56,7 @@ Ten of clubs      Hill giant
 Nine of clubs     Ogre
 Eight of clubs    Orc
 Two of clubs      Kobold
-Jokers (2)        You (the deck’s owner)
+Jokers (2)        You (the deck's owner)
 ================  ==============================
 
 

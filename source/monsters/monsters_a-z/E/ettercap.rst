@@ -35,13 +35,19 @@ Walker**: The ettercap ignores movement restrictions caused by webbing.
 Actions
 
 **Multiattack**: The ettercap makes two attacks: one with its bite and
-one with its claws. **Bite**: *Melee Weapon Attack*: +4 to hit, reach 5
+one with its claws.
+
+**Bite**: *Melee Weapon Attack*: +4 to hit, reach 5
 ft., one creature. *Hit*: 6 (1d8 + 2) piercing damage plus 4 (1d8)
 poison damage. The target must succeed on a DC 11 Constitution saving
 throw or be poisoned for 1 minute. The creature can repeat the saving
 throw at the end of each of its turns, ending the effect on itself on a
-success. **Claws**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one
-target. *Hit*: 7 (2d4 + 2) slashing damage. **Web (Recharge 5–6)**:
+success.
+
+**Claws**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one
+target. *Hit*: 7 (2d4 + 2) slashing damage.
+
+**Web (Recharge 5-6)**:
 *Ranged Weapon Attack*: +4 to hit, range 30/60 ft., one Large or smaller
 creature. *Hit*: The creature is restrained by webbing. As an action,
 the restrained creature can make a DC 11 Strength check, escaping from

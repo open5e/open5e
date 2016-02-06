@@ -25,14 +25,14 @@ Choose one or more of the following types of creatures: celestials,
 elementals, fey, fiends, or undead. The circle affects a creature of the
 chosen type in the following ways:
 
-The creature can’t willingly enter the cylinder by nonmagical means. If
+The creature can't willingly enter the cylinder by nonmagical means. If
 the creature tries to use teleportation or interplanar travel to do so,
 it must first succeed on a Charisma saving throw.
 
 The creature has disadvantage on attack rolls against targets within the
 cylinder.
 
-Targets within the cylinder can’t be charmed, frightened, or possessed
+Targets within the cylinder can't be charmed, frightened, or possessed
 by the creature.
 
 When you cast this spell, you can elect to cause its magic to operate in

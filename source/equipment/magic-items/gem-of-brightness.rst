@@ -13,7 +13,7 @@ effects:
 
 -  The first command word causes the gem to shed bright light in a
    30-­foot radius and dim light for an additional 30 feet. This effect
-   doesn’t expend a charge. It lasts until you use a bonus action to
+   doesn't expend a charge. It lasts until you use a bonus action to
    repeat the command word or until you use another function of the gem.
 
 -  The second command word expends 1 charge and causes the gem to fire a
@@ -28,7 +28,7 @@ effects:
    creature in the cone must make a saving throw as if struck by the
    beam created with the second command word.
 
-When all of the gem’s charges are expended, the gem becomes a nonmagical
+When all of the gem's charges are expended, the gem becomes a nonmagical
 jewel worth 50 gp.
 
 Gem of Seeing
@@ -36,7 +36,7 @@ Gem of Seeing
 
 *Wondrous item, rare (requires attunement)*
 
-This gem has 3 charges. As an action, you can speak the gem’s command
+This gem has 3 charges. As an action, you can speak the gem's command
 word and expend 1 charge. For the next 10 minutes, you have truesight
 out to 120 feet when you peer through the gem.
 
@@ -52,9 +52,9 @@ weapon.
 
 When you hit a giant with it, the giant takes an
 
-extra 2d6 damage of the weapon’s type and must succeed on a DC 15
+extra 2d6 damage of the weapon's type and must succeed on a DC 15
 Strength saving throw or fall
 
-prone. For the purpose of this weapon, “giant” refers to any creature
+prone. For the purpose of this weapon, "giant" refers to any creature
 with the giant type, including ettins and trolls.
 

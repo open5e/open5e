@@ -18,7 +18,7 @@ the linked plane.
 The ring has 5 charges. It regains 1d4 + 1 expended charges daily at
 dawn. Spells cast from the ring have a save DC of 17.
 
-**Ring of Air Elemental Command.** You can expend 2 of the ring’s
+**Ring of Air Elemental Command.** You can expend 2 of the ring's
 charges to cast *dominate monster* on an air elemental. In addition,
 when you fall, you descend 60 feet per round and take no damage from
 falling. You can also speak and understand Auran.
@@ -34,7 +34,7 @@ access to the following additional properties:
    necessary number of charges: *chain lightning* (3 charges), *gust of
    wind* (2 charges), or *wind wall* (1 charge).
 
-**Ring of Earth Elemental Command.** You can expend 2 of the ring’s
+**Ring of Earth Elemental Command.** You can expend 2 of the ring's
 charges to cast *dominate monster* on an earth elemental. In addition,
 you can move in difficult terrain that is composed of rubble, rocks, or
 dirt as if it were normal terrain. You can also speak and understand
@@ -55,7 +55,7 @@ access to the following additional properties:
 *shape* (2 charges), *stoneskin* (3 charges), or *wall of stone* (3
 charges).
 
-**Ring of Fire Elemental Command.** You can expend 2 of the ring’s
+**Ring of Fire Elemental Command.** You can expend 2 of the ring's
 charges to cast *dominate monster* on a fire elemental. In addition, you
 have resistance to fire damage. You can also speak and understand Ignan.
 
@@ -68,7 +68,7 @@ access to the following additional properties:
    necessary number of charges: *burning hands* (1 charge), *fireball*
    (2 charges), and *wall of fire* (3 charges).
 
-**Ring of Water Elemental Command.** You can expend 2 of the ring’s
+**Ring of Water Elemental Command.** You can expend 2 of the ring's
 charges to cast *dominate monster* on a water elemental. In addition,
 you can stand on and walk across liquid surfaces as if they were solid
 ground. You can also speak and understand Aquan.
