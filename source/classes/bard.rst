@@ -111,7 +111,7 @@ different situations.
 Cantrips
 ^^^^^^^^
 
-You know two cantrips of your choice from the bard spell list. You learn
+You know two cantrips of your choice from the :ref:`srd:bard-spells`. You learn
 additional bard cantrips of your choice at higher levels, as shown in
 the Cantrips Known column of the Bard table.
 
@@ -131,7 +131,7 @@ Spells Known of 1st Level and Higher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You know four 1st-level spells
-of your choice from the bard spell list.
+of your choice from the :ref:`srd:bard-spells`.
 
 The Spells Known column of the Bard table shows when you learn more bard
 spells of your choice. Each of these spells must be of a level for which
@@ -310,7 +310,6 @@ keeps such a bard as a herald or advisor knows that the bard would
 rather be honest than politic.
 
 The college’s members gather in libraries and
-
 sometimes in actual colleges, complete with classrooms and dormitories,
 to share their lore with one another. They also meet at festivals or
 affairs of state, where they can expose corruption, unravel lies, and
