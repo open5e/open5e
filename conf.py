@@ -44,6 +44,14 @@ source_suffix = '.rst'
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
 
+rst_prolog = """
+.. role:: has-errata
+    :class: has-errata
+    
+.. role:: has-advice
+    :class: has-advice
+"""
+
 # The master toctree document.
 master_doc = 'index'
 

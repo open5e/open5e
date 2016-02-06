@@ -4569,7 +4569,7 @@ div[class^='highlight'] pre {
 .wy-nav-content {
   padding: 1.618em 3.236em;
   height: 100%;
-  max-width: 800px;
+  max-width: 950px;
   margin: auto;
 }
 
@@ -4919,14 +4919,20 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   width: 40%;
   display: block;
   margin: 0 0 24px 24px;
-  padding: 24px;
+  padding: 12px;
   background: #f3f6f6;
-  border: solid 1px #e1e4e5;
+  border: solid 1px #2980B9;
 }
 .rst-content .sidebar p, .rst-content .sidebar ul, .rst-content .sidebar dl {
   font-size: 90%;
+  margin-bottom: 6px;
 }
 .rst-content .sidebar .last {
+  margin-bottom: 0;
+}
+.rst-content .sidebar .source, .rst-content .sidebar .citation {
+  font-size: 10px;
+  opacity: 0.8;
   margin-bottom: 0;
 }
 .rst-content .sidebar .sidebar-title {
@@ -4935,9 +4941,48 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   font-weight: bold;
   background: #e1e4e5;
   padding: 6px 12px;
-  margin: -24px;
-  margin-bottom: 24px;
-  font-size: 100%;
+  margin: -12px;
+  margin-bottom: 12px;
+  font-size: 90%;
+  position: relative;
+}
+.rst-content .sidebar .sidebar-title.first:after {
+  font-family: "Source Sans Pro", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  font-weight: normal;
+  position: absolute;
+  right: 12px;
+  opacity: 0.7;
+  font-size: 12px;
+}
+.rst-content .sidebar.errata {
+  background-color: #fcf3d0;
+  border-color: #F1C40F;
+}
+.rst-content .sidebar.errata .sidebar-title {
+  background-color: #f7dc6f;
+}
+.rst-content .sidebar.errata .sidebar-title.first::after {
+  content: "ERRATA";
+}
+.rst-content .sidebar.official {
+  background-color: #ddf7e8;
+  border-color: #27AE60;
+}
+.rst-content .sidebar.official .sidebar-title {
+  background-color: #89e5b0;
+}
+.rst-content .sidebar.official .sidebar-title.first:after {
+  content: "OFFICIAL RULING";
+}
+.rst-content .sidebar.unofficial {
+  background-color: #ddf7e8;
+  border-color: #27AE60;
+}
+.rst-content .sidebar.unofficial .sidebar-title {
+  background-color: #89e5b0;
+}
+.rst-content .sidebar.unofficial .sidebar-title.first:after {
+  content: "UNOFFICIAL CLARIFICATION";
 }
 .rst-content .highlighted {
   background: #F1C40F;
@@ -5100,6 +5145,18 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 .rst-content tt.download span:first-child:before, .rst-content code.download span:first-child:before {
   margin-right: 4px;
 }
+.rst-content .has-advice, .rst-content .has-errata {
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.rst-content .has-advice {
+  background: rgba(39, 174, 96, 0.1);
+}
+.rst-content .has-errata {
+  background: rgba(241, 196, 15, 0.1);
+}
 
 @media screen and (max-width: 480px) {
   .rst-content .sidebar {
@@ -5144,6 +5201,11 @@ ul.list-bulleted ul li {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .rst-content .sidebar {
+    margin-right: -25%;
   }
 }
 span[id*='MathJax-Span'] {
