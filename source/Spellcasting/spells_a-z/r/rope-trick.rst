@@ -26,7 +26,7 @@ rope. The space can hold as many as eight Medium or smaller creatures.
 The rope can be pulled into the space, making the rope disappear from
 view outside the space.
 
-Attacks and spells can’t cross through the entrance into or out of the
+Attacks and spells can't cross through the entrance into or out of the
 extradimensional space, but those inside can see out of it as if through
 a 3 foot by 5 foot window centered on the rope.
 

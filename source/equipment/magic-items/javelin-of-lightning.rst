@@ -17,6 +17,6 @@ when it reaches the target. Make a ranged weapon attack against the
 target. On a hit, the target takes damage from the javelin plus 4d6
 lightning damage.
 
-The javelin’s property can’t be used again until the next dawn. In the
+The javelin's property can't be used again until the next dawn. In the
 meantime, the javelin can still be used as a magic weapon.
 

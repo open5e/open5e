@@ -14,7 +14,7 @@ the GM.
 
 Any creature can cast a spell of 1st through 5th level into the ring by
 touching the ring as the spell is cast. The spell has no effect, other
-than to be stored in the ring. If the ring can’t hold the spell, the
+than to be stored in the ring. If the ring can't hold the spell, the
 spell is expended without effect. The level of the slot used to cast the
 spell determines how much space it uses.
 

@@ -32,9 +32,9 @@ You can refrain from firing the globe after completing the spell, if you
 wish. A small globe about the size of a sling stone, cool to the touch,
 appears in your hand. At any time, you or a creature you give the globe
 to can throw the globe (to a range of 40 feet) or hurl it with a sling
-(to the sling’s normal range). It shatters on impact, with the same
+(to the sling's normal range). It shatters on impact, with the same
 effect as the normal casting of the spell. You can also set the globe
-down without shattering it. After 1 minute, if the globe hasn’t already
+down without shattering it. After 1 minute, if the globe hasn't already
 shattered, it explodes.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 7th

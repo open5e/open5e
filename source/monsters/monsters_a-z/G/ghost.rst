@@ -71,7 +71,7 @@ knowledge, class features, or proficiencies.
     ends it as a bonus action, or the ghost is turned or forced out by
     an effect like the dispel evil and good spell. When the possession
     ends, the ghost reappears in an unoccupied space within 5 feet of
-    the body. The target is immune to this ghost’s Possession for 24
+    the body. The target is immune to this ghost's Possession for 24
     hours after succeeding on the saving throw or after the possession
     ends.
 

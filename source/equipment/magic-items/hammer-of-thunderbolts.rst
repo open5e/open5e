@@ -10,7 +10,7 @@ Hammer of Thunderbolts
 You gain a +1 bonus to attack and damage rolls made with this magic
 weapon.
 
-**Giant’s Bane (Requires Attunement).** You must
+**Giant's Bane (Requires Attunement).** You must
 
 be wearing a *belt of giant strength* (any variety) and *gauntlets of
 ogre power* to attune to this weapon. The attunement ends if you take
@@ -61,7 +61,7 @@ of holding*, *portable hole*, or similar item instantly destroys both
 items and opens a gate to the Astral Plane. The gate originates where
 the one item was placed inside the other. Any creature within 10 feet of
 the gate is sucked through it and deposited in a random location on the
-Astral Plane. The gate then closes. The gate is one-­way only and can’t
+Astral Plane. The gate then closes. The gate is one-­way only and can't
 be reopened.
 
 Hat of Disguise

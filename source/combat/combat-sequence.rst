@@ -21,12 +21,12 @@ next round if neither side has defeated the other.
        the combat encounter is surprised.
 
     2. **Establish positions.** The GM decides where all the characters and
-       monsters are located. Given the adventurers’ marching order or their
+       monsters are located. Given the adventurers' marching order or their
        stated positions in the room or other location, the GM figures out
        where the adversaries are̶ how far away and in what direction.
 
     3. **Roll initiative.** Everyone involved in the combat encounter rolls
-       initiative, determining the order of combatants’ turns.
+       initiative, determining the order of combatants' turns.
 
     4. **Take turns.** Each participant in the battle takes a turn in
        initiative order.
@@ -45,12 +45,12 @@ The GM determines who might be surprised. If neither side tries to be
 stealthy, they automatically notice each other. Otherwise, the GM
 compares the Dexterity (Stealth) checks of anyone hiding with the
 passive Wisdom (Perception) score of each creature on the opposing side.
-Any character or monster that doesn’t notice a threat is surprised at
+Any character or monster that doesn't notice a threat is surprised at
 the start of the encounter.
 
-If you’re surprised, you can’t move or take an action on your first turn
-of the combat, and you can’t take a reaction until that turn ends. A
-member of a group can be surprised even if the other members aren’t.
+If you're surprised, you can't move or take an action on your first turn
+of the combat, and you can't take a reaction until that turn ends. A
+member of a group can be surprised even if the other members aren't.
 
 Initiative
 ~~~~~~~~~~
@@ -77,19 +77,19 @@ Your Turn
 
 On your turn, you can **move** a distance up to your speed and **take
 one action**. You decide whether to move first or take your action
-first. Your speed— sometimes called your walking speed—is noted on your
+first. Your speed---sometimes called your walking speed---is noted on your
 character sheet.
 
-The most common actions you can take are described in the “Actions in
-Combat” section later in this chapter. Many class features and other
+The most common actions you can take are described in the "Actions in
+Combat" section later in this chapter. Many class features and other
 abilities provide additional options for your action.
 
-The “Movement and Position” section later in this chapter gives the
+The :ref:`srd:movement-and-position` section later in this chapter gives the
 rules for your move.
 
 You can forgo moving, taking an action, or doing anything at all on your
-turn. If you can’t decide what to do on your turn, consider taking the
-Dodge or Ready action, as described in “Actions in Combat.”
+turn. If you can't decide what to do on your turn, consider taking the
+Dodge or Ready action, as described in :ref:`srd:actions-in-combat`."
 
 Bonus Actions
 ^^^^^^^^^^^^^
@@ -99,7 +99,7 @@ additional action on your turn called a bonus action. The Cunning Action
 feature, for example, allows a rogue to take a bonus action. You can
 take a bonus action only when a special ability, spell, or other feature
 of the game states that you can do something as a bonus action. You
-otherwise don’t have a bonus action to take.
+otherwise don't have a bonus action to take.
 
 .. sidebar:: Sage Advice
     :class: official
@@ -115,7 +115,7 @@ otherwise don’t have a bonus action to take.
 which bonus action to use when you have more than one available.`
 
 You choose when to take a bonus action during your turn, unless the
-bonus action’s timing is specified, and anything that deprives you of
+bonus action's timing is specified, and anything that deprives you of
 your ability to take actions also prevents you from taking a bonus
 action.
 
@@ -147,10 +147,10 @@ Reactions
 
 Certain special abilities, spells, and situations allow you to take a
 special action called a reaction. A reaction is an instant response to a
-trigger of some kind, which can occur on your turn or on someone else’s.
+trigger of some kind, which can occur on your turn or on someone else's.
 The opportunity attack, described later in this chapter, is the most
 common type of reaction.
 
-When you take a reaction, you can’t take another one until the start of
-your next turn. If the reaction interrupts another creature’s turn, that
+When you take a reaction, you can't take another one until the start of
+your next turn. If the reaction interrupts another creature's turn, that
 creature can continue its turn right after the reaction.

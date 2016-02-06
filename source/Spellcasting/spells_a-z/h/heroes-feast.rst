@@ -1,7 +1,7 @@
 
 .. _srd:heroes-feast:
 
-Heroes’ Feast
+Heroes' Feast
 -------------------------------------------------------------
 
 6th-level conjuration
@@ -18,7 +18,7 @@ which the spell consumes)
 
 You bring forth a great feast, including magnificent food and drink. The
 feast takes 1 hour to consume and disappears at the end of that time,
-and the beneficial effects don’t set in until this hour is over. Up to
+and the beneficial effects don't set in until this hour is over. Up to
 twelve other creatures can partake of the feast.
 
 A creature that partakes of the feast gains several benefits. The

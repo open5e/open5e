@@ -43,7 +43,7 @@ granted by your background:
 
 -  *(a)* a component pouch or (*b*) an arcane focus
 
--  *(a)* a scholar’s pack or (*b*) a dungeoneer’s pack
+-  *(a)* a scholar's pack or (*b*) a dungeoneer's pack
 
 -  Leather armor, any simple weapon, and two daggers
 
@@ -139,7 +139,7 @@ warlock spell list.
 
 The Spells Known column of the Warlock table shows when you learn more
 warlock spells of your choice of 1st level and higher. A spell you
-choose must be of a level no higher than what’s shown in the table’s
+choose must be of a level no higher than what's shown in the table's
 Slot Level column for your level. When you reach 6th level, for example,
 you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.
 
@@ -221,7 +221,7 @@ You can transform one magic weapon into your pact weapon by performing a
 special ritual while you hold the weapon. You perform the ritual over
 the course of 1 hour, which can be done during a short rest. You can
 then dismiss the weapon, shunting it into an extradimensional space, and
-it appears whenever you create your pact weapon thereafter. You can’t
+it appears whenever you create your pact weapon thereafter. You can't
 affect an artifact or a sentient weapon in this way. The weapon ceases
 being your
 pact weapon if you die, if you perform the 1-hour ritual on a different
@@ -233,10 +233,10 @@ Pact of the Tome
 ^^^^^^^^^^^^^^^^
 
 Your patron gives you a grimoire called a Book of Shadows. When you gain
-this feature, choose three cantrips from any class’s spell list (the
-three needn’t be from the same list). While the book is on your person,
-you can cast those cantrips at will. They don’t count against your
-number of cantrips known. If they don’t appear on the warlock spell
+this feature, choose three cantrips from any class's spell list (the
+three needn't be from the same list). While the book is on your person,
+you can cast those cantrips at will. They don't count against your
+number of cantrips known. If they don't appear on the warlock spell
 list, they are nonetheless warlock spells for you.
 
 If you lose your Book of Shadows, you can perform a 1-hour ceremony to
@@ -249,7 +249,7 @@ Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
-increase two ability scores of your choice by 1. As normal, you can’t
+increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Mystic Arcanum
@@ -331,17 +331,17 @@ Book of Ancient Secrets
 *Prerequisite: Pact of the Tome feature*
 
 You can now inscribe magical rituals in your Book of Shadows. Choose two
-1st-level spells that have the ritual tag from any class’s spell list
-(the two needn’t be from the same list). The spells appear in the book
-and don’t count against the number of spells you know. With your Book of
-Shadows in hand, you can cast the chosen spells as rituals. You can’t
-cast the spells except as rituals, unless you’ve learned them by some
+1st-level spells that have the ritual tag from any class's spell list
+(the two needn't be from the same list). The spells appear in the book
+and don't count against the number of spells you know. With your Book of
+Shadows in hand, you can cast the chosen spells as rituals. You can't
+cast the spells except as rituals, unless you've learned them by some
 other means. You can also cast a warlock spell you know as a ritual if
 it has the ritual tag.
 
 On your adventures, you can add other ritual spells to your Book of
 Shadows. When you find such a spell, you can add it to the book if the
-spell’s level is equal to or less than half your warlock level (rounded
+spell's level is equal to or less than half your warlock level (rounded
 up) and if you can spare the time to
 
 transcribe the spell. For each level of the spell, the transcription
@@ -353,12 +353,12 @@ Chains of Carceri
 
 *Prerequisite: 15th level, Pact of the Chain feature*
 
-You can cast :ref:`srd:hold-monster` at will—targeting a celestial, fiend, or
-elemental—without expending a spell slot or material components. You
+You can cast :ref:`srd:hold-monster` at will---targeting a celestial, fiend, or
+elemental---without expending a spell slot or material components. You
 must finish a long rest before you can use this invocation on the same
 creature again.
 
-Devil’s Sight
+Devil's Sight
 ^^^^^^^^^^^^^
 
 You can see normally in darkness, both magical and nonmagical, to a
@@ -403,7 +403,7 @@ its senses until the end of your next turn. As long as the creature is
 on the same plane of existence as you, you can use your action on
 subsequent turns to maintain this connection, extending the duration
 until the end of your next turn. While perceiving through the other
-creature’s senses, you benefit from any special senses possessed by that
+creature's senses, you benefit from any special senses possessed by that
 creature, and you are blinded and deafened to your own surroundings.
 
 Lifedrinker
@@ -517,8 +517,8 @@ Voice of the Chain Master
 *Prerequisite: Pact of the Chain feature*
 
 You can communicate telepathically with your familiar and perceive
-through your familiar’s senses as long as you are on the same plane of
-existence. Additionally, while perceiving through your familiar’s
+through your familiar's senses as long as you are on the same plane of
+existence. Additionally, while perceiving through your familiar's
 senses, you can also speak through your familiar in your own voice, even
 if your familiar is normally incapable of speech.
 
@@ -543,7 +543,7 @@ Otherworldly Patrons
 --------------------
 
 The beings that serve as patrons for warlocks are mighty inhabitants of
-other planes of existence—not gods, but almost godlike in their power.
+other planes of existence---not gods, but almost godlike in their power.
 Various patrons give their warlocks access to different powers and
 invocations, and expect significant favors in return.
 
@@ -560,7 +560,7 @@ You have made a pact with a fiend from the lower planes of existence, a
 being whose aims are evil, even if you strive against those aims. Such
 beings desire the corruption or destruction of all things, ultimately
 including you. Fiends powerful enough to forge a pact include demon
-lords such as Demogorgon, Orcus, Fraz’Urb-luu, and Baphomet; archdevils
+lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils
 such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and
 balors that are especially mighty; and ultroloths and other lords of the
 yugoloths.
@@ -575,39 +575,33 @@ list for you.
 Fiend Expanded Spells
 ^^^^^^^^^^^^^^^^^^^^^
 
-+-------+------------------------------------------+
-| Spell | Spells                                   |
-| Level |                                          |
-+=======+==========================================+
-| 1st   | *burning hands, command*                 |
-+-------+------------------------------------------+
-| 2nd   | *blindness/deafness, scorching ray*      |
-+-------+------------------------------------------+
-| 3rd   | *fireball, stinking cloud*               |
-+-------+------------------------------------------+
-| 4th   | *fire shield, wall of fire*              |
-+-------+------------------------------------------+
-| 5th   | *flame strike, hallow*                   |
-+-------+------------------------------------------+
+=========== =========
+Spell Level Spells
+=========== =========
+  1st       :ref:`srd:burning-hands`, :ref:`srd:command`      
+  2nd       :ref:`srd:blindness-deafness`, :ref:`srd:scorching-ray`   
+  3rd       :ref:`srd:fireball`, :ref:`srd:stinking-cloud`           
+  4th       :ref:`srd:fire-shield`, :ref:`srd:wall-of-fire`          
+  5th       :ref:`srd:flame-strike`, :ref:`srd:hallow`               
+=========== =========
 
-Dark One’s Blessing
+Dark One's Blessing
 ^^^^^^^^^^^^^^^^^^^
 
 Starting at 1st level, when you reduce a hostile creature to 0 hit
 points, you gain temporary hit points equal to your Charisma modifier +
 your warlock level (minimum of 1).
 
-Dark One’s Own Luck
+Dark One's Own Luck
 ^^^^^^^^^^^^^^^^^^^
 
 Starting at 6th level, you can call on your patron to alter fate in your
 favor. When you make an ability check or a saving throw, you can use
 this feature to
-
 add a d10 to your roll. You can do so after seeing the initial roll but
-before any of the roll’s effects occur.
+before any of the roll's effects occur.
 
-Once you use this feature, you can’t use it again until you finish a
+Once you use this feature, you can't use it again until you finish a
 short or long rest.
 
 Fiendish Resilience
@@ -631,29 +625,29 @@ previously occupied, or the nearest unoccupied space. If the target is
 not a fiend, it takes 10d10 psychic damage as it reels from its horrific
 experience.
 
-Once you use this feature, you can’t use it again until you finish a long rest.
+Once you use this feature, you can't use it again until you finish a long rest.
 
 Your Pact Boon
 ~~~~~~~~~~~~~~
 
 Each Pact Boon option produces a special creature or an object that
-reflects your patron’s nature.
+reflects your patron's nature.
 
 **Pact of the Chain.** Your familiar is more cunning than a
 typical familiar. Its default form can be a reflection of your
 patron, with sprites and pseudodragons tied to the Archfey and imps
-and quasits tied to the Fiend. Because the Great Old One’s nature is
+and quasits tied to the Fiend. Because the Great Old One's nature is
 inscrutable, any familiar form is suitable for it.
 
 **Pact of the Blade.** If your patron is the Archfey, your weapon
 might be a slender blade wrapped in leafy vines. If you serve the
 Fiend, your weapon could be an axe made of black metal and adorned
 with decorative flames. If your patron is the Great Old One, your
-weapon might be an ancient-­‐looking spear, with a gemstone embedded
+weapon might be an ancient-looking spear, with a gemstone embedded
 in its head, carved to look like a terrible unblinking eye.
 
 **Pact of the Tome.** Your Book of Shadows might be a fine,
-gilt-­‐edged tome with spells of enchantment and illusion, gifted to
+gilt-edged tome with spells of enchantment and illusion, gifted to
 you by the lordly Archfey. It could be a weighty tome bound in demon
 hide studded with iron, holding spells of conjuration and a wealth
 of forbidden lore about the sinister regions of the cosmos, a gift

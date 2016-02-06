@@ -27,8 +27,8 @@ however, the fabricated object can be no larger than Medium (contained
 within a single 5 foot cube). The quality of objects made by the spell
 is commensurate with the quality of the raw materials.
 
-Creatures or magic items can’t be created or transmuted by this spell.
-You also can’t use it to create items that ordinarily require a high
+Creatures or magic items can't be created or transmuted by this spell.
+You also can't use it to create items that ordinarily require a high
 degree of craftsmanship, such as jewelry, weapons, glass, or armor,
-unless you have proficiency with the type of artisan’s tools used to
+unless you have proficiency with the type of artisan's tools used to
 craft such objects.

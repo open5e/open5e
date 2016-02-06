@@ -42,7 +42,7 @@ granted by your background:
 
 -  (*a*) two shortswords or (*b*) two simple melee weapons
 
--  (*a*) a dungeoneer’s pack or (*b*) an explorer’s pack
+-  (*a*) a dungeoneer's pack or (*b*) an explorer's pack
 
 -  A longbow and a quiver of 20 arrows
 
@@ -69,7 +69,7 @@ The Ranger
 +-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
 | 7th   | +3          | Ranger Archetype feature                   | 5           | 4   | 3   | -   | -   | -   |
 +-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
-| 8th   | +3          | Ability Score Improvement, Land’s Stride   | 5           | 4   | 3   | -   | -   | -   |
+| 8th   | +3          | Ability Score Improvement, Land's Stride   | 5           | 4   | 3   | -   | -   | -   |
 +-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
 | 9th   | +4          | -                                          | 6           | 4   | 3   | 2   | -   | -   |
 +-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
@@ -129,13 +129,13 @@ are adept at traveling and surviving in such regions. Choose one type of
 favored terrain: arctic, coast, desert, forest, grassland, mountain, or
 swamp. When you make an Intelligence or Wisdom check related to your
 favored terrain, your proficiency bonus is doubled if you are using a
-skill that you’re proficient in.
+skill that you're proficient in.
 
 While traveling for an hour or more in your favored terrain, you gain
 the following benefits:
 
--  Difficult terrain doesn’t slow your group’s travel.
--  Your group can’t become lost except by magical means.
+-  Difficult terrain doesn't slow your group's travel.
+-  Your group can't become lost except by magical means.
 -  Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.
 -  If you are traveling alone, you can move stealthily at a normal pace.
 -  When you forage, you find twice as much food as you normally would.
@@ -147,7 +147,7 @@ Fighting Style
 ~~~~~~~~~~~~~~
 
 At 2nd level, you adopt a particular style of fighting as your
-specialty. Choose one of the following options. You can’t take a
+specialty. Choose one of the following options. You can't take a
 Fighting Style option more than once, even if you later get to choose
 again.
 
@@ -185,7 +185,7 @@ Spell Slots
 
 The Ranger table shows how many spell slots you have to cast your spells
 of 1st level and higher. To cast one of these spells, you must expend a
-slot of the spell’s level or higher. You regain all expended spell slots
+slot of the spell's level or higher. You regain all expended spell slots
 when you finish a long rest.
 
 For example, if you know the 1st-level spell :ref:`srd:animal-friendship` and
@@ -237,14 +237,14 @@ minute per level of the spell slot you expend, you can sense whether the
 following types of creatures are present within 1 mile of you (or within
 up to 6 miles if you are in your favored terrain): aberrations,
 celestials, dragons, elementals, fey, fiends, and undead. This feature
-doesn’t reveal the creatures’ location or number.
+doesn't reveal the creatures' location or number.
 
 Ability Score Improvement
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
-increase two ability scores of your choice by 1. As normal, you can’t
+increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Extra Attack
@@ -253,7 +253,7 @@ Extra Attack
 Beginning at 5th level, you can attack twice, instead of once, whenever
 you take the Attack action on your turn.
 
-Land’s Stride
+Land's Stride
 ~~~~~~~~~~~~~
 
 Starting at 8th level, moving through nonmagical difficult terrain costs
@@ -284,20 +284,20 @@ Vanish
 ~~~~~~
 
 Starting at 14th level, you can use the Hide action as a bonus action on
-your turn. Also, you can’t be tracked by nonmagical means, unless you
+your turn. Also, you can't be tracked by nonmagical means, unless you
 choose to leave a trail.
 
 Feral Senses
 ~~~~~~~~~~~~
 
 At 18th level, you gain preternatural senses that help you fight
-creatures you can’t see. When you attack a creature you can’t see, your
-inability to see it doesn’t impose disadvantage on your attack rolls
+creatures you can't see. When you attack a creature you can't see, your
+inability to see it doesn't impose disadvantage on your attack rolls
 against it.
 
 You are also aware of the location of any invisible creature within 30
-feet of you, provided that the creature isn’t hidden from you and you
-aren’t blinded or deafened.
+feet of you, provided that the creature isn't hidden from you and you
+aren't blinded or deafened.
 
 Foe Slayer
 ~~~~~~~~~~
@@ -318,61 +318,61 @@ Hunter
 
 Emulating the Hunter archetype means accepting your place as a bulwark
 between civilization and the terrors of the wilderness. As you walk the
-Hunter’s path, you learn specialized techniques for fighting the threats
+Hunter's path, you learn specialized techniques for fighting the threats
 you face, from rampaging ogres and hordes of orcs to towering giants and
 terrifying dragons.
 
-Hunter’s Prey
+Hunter's Prey
 ^^^^^^^^^^^^^
 
 At 3rd level, you gain one of the following features of your choice.
 
-***Colossus Slayer.*** Your tenacity can wear down the most potent foes.
+**Colossus Slayer.** Your tenacity can wear down the most potent foes.
 When you hit a creature with a weapon attack, the creature takes an
-extra 1d8 damage if it’s below its hit point maximum. You can deal this
+extra 1d8 damage if it's below its hit point maximum. You can deal this
 extra damage only once per turn.
 
-***Giant Killer.*** When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.
+**Giant Killer.** When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.
 
-***Horde Breaker.*** Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.
+**Horde Breaker.** Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.
 
 Defensive Tactics
 ^^^^^^^^^^^^^^^^^
 
 At 7th level, you gain one of the following features of your choice.
 
-***Escape the Horde.*** Opportunity attacks against you are made with disadvantage.
+**Escape the Horde.** Opportunity attacks against you are made with disadvantage.
 
-***Multiattack Defense.*** When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.
+**Multiattack Defense.** When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.
 
-***Steel Will.*** You have advantage on saving throws against being frightened.
+**Steel Will.** You have advantage on saving throws against being frightened.
 
 Multiattack
 ^^^^^^^^^^^
 
 At 11th level, you gain one of the following features of your choice.
 
-***Volley.*** You can use your action to make a ranged attack against
+**Volley.** You can use your action to make a ranged attack against
 any number of creatures within 10 feet of a point you can see within
-your weapon’s range. You must have ammunition for each target, as
+your weapon's range. You must have ammunition for each target, as
 normal, and you make a separate attack roll for each target.
 
-***Whirlwind Attack.*** You can use your action to make a melee attack
+**Whirlwind Attack.** You can use your action to make a melee attack
 against any number of creatures within 5 feet of you, with a separate
 attack roll for each target.
 
-Superior Hunter’s Defense
+Superior Hunter's Defense
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 At 15th level, you gain one of the following features of your choice.
 
-***Evasion.*** When you are subjected to an effect, such as a red
+**Evasion.** When you are subjected to an effect, such as a red
 dragon’s fiery breath or a :ref:`srd:lightning-bolt` spell, that allows you to
 make a Dexterity saving throw to take only half damage, you instead take
 no damage if you succeed on the saving throw, and only half damage if
 you fail.
 
-***Stand Against the Tide.*** When a hostile creature misses you
+**Stand Against the Tide.** When a hostile creature misses you
 with a melee attack, you can use your reaction to force that creature to repeat the same attack against
 another creature (other than itself) of your choice.
 
@@ -388,6 +388,6 @@ another creature (other than itself) of your choice.
     
     Source: `Sage Advice Compendium <http://media.wizards.com/2015/downloads/dnd/SA_Compendium_1.01.pdf>`_
 
-***Uncanny Dodge.*** When an attacker that you can see hits you with :has-official:`an
-attack,` you can use your reaction to halve the attack’s damage against
+**Uncanny Dodge.** When an attacker that you can see hits you with :has-official:`an
+attack,` you can use your reaction to halve the attack's damage against
 you.

@@ -23,7 +23,7 @@ Nine creatures of Medium size or smaller can fit inside the dome with
 you. The spell fails if its area includes a larger creature or more than
 nine creatures. Creatures and objects within the dome when you cast this
 spell can move through it freely. All other creatures and objects are
-barred from passing through it. Spells and other magical effects can’t
+barred from passing through it. Spells and other magical effects can't
 extend through the dome or be cast through it. The atmosphere inside the
 space is comfortable and dry, regardless of the weather outside.
 

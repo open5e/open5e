@@ -26,5 +26,5 @@ When you cast this spell, or as an action on a later turn, you can hurl
 the flame at a creature within 30 feet of you. Make a ranged spell
 attack. On a hit, the target takes 1d8 fire damage.
 
-This spell’s damage increases by 1d8 when you reach 5th level (2d8),
+This spell's damage increases by 1d8 when you reach 5th level (2d8),
 11th level (3d8), and 17th level (4d8).

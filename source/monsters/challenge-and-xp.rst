@@ -4,7 +4,7 @@
 Challenge
 ---------
 
-    A monster’s **challenge rating** tells you how great a threat the
+    A monster's **challenge rating** tells you how great a threat the
     monster is. An appropriately equipped and well-­rested party of four
     adventurers should be able to defeat a monster that has a challenge
     rating equal to its level without suffering any deaths. For example,

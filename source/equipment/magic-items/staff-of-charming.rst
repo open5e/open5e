@@ -15,9 +15,9 @@ quarterstaff.
 
 If you are holding the staff and fail a saving throw against an
 enchantment spell that targets only you, you can turn your failed save
-into a successful one. You can’t use this property of the staff again
+into a successful one. You can't use this property of the staff again
 until the next dawn. If you succeed on a save against an enchantment
-spell that targets only you, with or without the staff’s intervention,
+spell that targets only you, with or without the staff's intervention,
 you can use your reaction to expend 1 charge from the staff and turn the
 spell back on its caster as if you had cast the spell.
 

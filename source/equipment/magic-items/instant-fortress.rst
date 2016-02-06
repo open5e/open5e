@@ -25,7 +25,7 @@ Each creature in the area where the fortress appears must make a DC 15
 Dexterity saving throw, taking 10d10 bludgeoning damage on a failed
 save, or half as much damage on a successful one. In either case, the
 creature is pushed to an unoccupied space outside but next to the
-fortress. Objects in the area that aren’t being worn or carried take
+fortress. Objects in the area that aren't being worn or carried take
 this damage and are pushed automatically.
 
 The tower is made of adamantine, and its magic prevents it from being
@@ -65,13 +65,13 @@ lower cast by a creature you can see and targeting only you.
 Once the stone has canceled 20 levels of spells, it burns out and turns
 dull gray, losing its magic. If you are targeted by a spell whose level
 is higher than the number of spell levels the stone has left, the stone
-can’t cancel it.
+can't cancel it.
 
 **Agility (Very Rare).** Your Dexterity score
 increases by 2, to a maximum of 20, while this deep red sphere orbits
 your head.
 
-**Awareness (Rare).** You can’t be surprised while this dark blue
+**Awareness (Rare).** You can't be surprised while this dark blue
 rhomboid orbits your head.
 
 **Fortitude (Very Rare).** Your Constitution score increases by 2, to
@@ -85,7 +85,7 @@ only you.
 Once the stone has canceled 50 levels of spells, it burns out and turns
 dull gray, losing its magic. If you are targeted by a spell whose level
 is higher than the number of spell levels the stone has left, the stone
-can’t cancel it.
+can't cancel it.
 
 **Insight (Very Rare).** Your Wisdom score increases by 2, to a
 maximum of 20, while this incandescent blue sphere orbits your head.
@@ -113,7 +113,7 @@ stored spells chosen by the GM.
 
 Any creature can cast a spell of 1st through 3rd level into the stone by
 touching it as the spell is cast. The spell has no effect, other than to
-be stored in the stone. If the stone can’t hold the spell, the spell is
+be stored in the stone. If the stone can't hold the spell, the spell is
 expended without effect. The level of the slot used to cast the spell
 determines how much space it uses.
 
@@ -126,6 +126,6 @@ in it, freeing up space.
 **Strength (Very Rare).** Your Strength score increases by 2, to a
 maximum of 20, while this pale blue rhomboid orbits your head.
 
-**Sustenance (Rare).** You don’t need to eat or drink while this clear
+**Sustenance (Rare).** You don't need to eat or drink while this clear
 spindle orbits your head.
 

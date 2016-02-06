@@ -21,7 +21,7 @@ and repeat the attack against a creature within 5 feet of it.
 
 The weapon can take whatever form you choose. Clerics of deities who are
 associated with a particular weapon (as St. Cuthbert is known for his
-mace and Thor for his hammer) make this spell’s effect resemble that
+mace and Thor for his hammer) make this spell's effect resemble that
 weapon.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 3rd

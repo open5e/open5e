@@ -24,4 +24,4 @@ successful one. A creature in the area of more than one fiery burst is
 affected only once.
 
 The spell damages objects in the area and ignites flammable objects that
-aren’t being worn or carried.
+aren't being worn or carried.

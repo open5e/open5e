@@ -25,20 +25,20 @@ thunder damage and becomes deafened for 5 minutes.
 Each round you maintain concentration on this spell, the storm produces
 additional effects on your turn.
 
-***Round 2.*** Acidic rain falls from the cloud. Each creature and
+**Round 2.** Acidic rain falls from the cloud. Each creature and
 object under the cloud takes 1d6 acid damage.
 
-***Round 3.*** You call six bolts of lightning from the cloud to strike
+**Round 3.** You call six bolts of lightning from the cloud to strike
 six creatures or objects of your choice beneath the cloud. A given
-creature or object can’t be struck by more than one bolt. A struck
+creature or object can't be struck by more than one bolt. A struck
 creature must make a Dexterity saving throw. The creature takes 10d6
 lightning damage on a failed save, or half as much damage on a
 successful one.
 
-***Round 4.*** Hailstones rain down from the cloud. Each creature under
+**Round 4.** Hailstones rain down from the cloud. Each creature under
 the cloud takes 2d6 bludgeoning damage.
 
-***Round 5–10.*** Gusts and freezing rain assail the area under the
+**Round 5-10.** Gusts and freezing rain assail the area under the
 cloud. The area becomes difficult terrain and is heavily obscured. Each
 creature there takes 1d6 cold damage. Ranged weapon attacks in the area
 are impossible. The wind and rain count as a severe distraction for the

@@ -16,7 +16,7 @@ course of activity as you decide. If the creature can understand you, it
 must succeed on a Wisdom saving throw or become charmed by you for the
 duration. While the creature is charmed by you, it takes 5d10 psychic
 damage each time it acts in a manner directly counter to your
-instructions, but no more than once each day. A creature that can’t
+instructions, but no more than once each day. A creature that can't
 understand you is unaffected by the spell.
 
 You can issue any command you choose, short of an activity that would

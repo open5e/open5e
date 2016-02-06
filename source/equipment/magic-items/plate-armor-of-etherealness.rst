@@ -7,10 +7,10 @@ Plate Armor of Etherealness
 
 *Armor (plate), legendary (requires attunement)*
 
-While you’re wearing this armor, you can speak its command word as an
+While you're wearing this armor, you can speak its command word as an
 action to gain the effect of the *etherealness* spell, which last for 10
 minutes or until you remove the armor or use an action to speak the
-command word again. This property of the armor can’t be used again until
+command word again. This property of the armor can't be used again until
 the next dawn.
 
 Portable Hole
@@ -24,16 +24,16 @@ handkerchief. It unfolds into a circular sheet 6 feet in diameter.
 You can use an action to unfold a *portable hole* and place it on or
 against a solid surface, whereupon the *portable hole* creates an
 extradimensional hole 10 feet deep. The cylindrical space within the
-hole exists on a different plane, so it can’t be used to create open
+hole exists on a different plane, so it can't be used to create open
 passages. Any creature inside an open *portable hole* can exit the hole
 by climbing out of it.
 
 You can use an action to close a *portable hole* by taking hold of the
 edges of the cloth and folding it up. Folding the cloth closes the hole,
 and any creatures or objects within remain in the extradimensional
-space. No matter what’s in it, the hole weighs next to nothing.
+space. No matter what's in it, the hole weighs next to nothing.
 
-If the hole is folded up, a creature within the hole’s extradimensional
+If the hole is folded up, a creature within the hole's extradimensional
 space can use an action to make a DC 10 Strength check. On a successful
 check, the creature forces its way out and appears within 5 feet of the
 *portable hole* or the creature carrying it. A breathing creature within
@@ -47,5 +47,5 @@ where the one item was placed inside the other. Any creature within 10
 feet of the gate is sucked through
 
 it and deposited in a random location on the Astral Plane. The gate then
-closes. The gate is one-­way only and can’t be reopened.
+closes. The gate is one-­way only and can't be reopened.
 

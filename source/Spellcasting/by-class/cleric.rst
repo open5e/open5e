@@ -38,7 +38,7 @@ Cantrips (0 Level)
 
 - :ref:`srd:aid`
 - :ref:`srd:augury`
-- :ref:`srd:blindness/deafness`
+- :ref:`srd:blindness-deafness`
 - :ref:`srd:calm-emotions`
 - :ref:`srd:continual-flame`
 - :ref:`srd:enhance-ability`

@@ -37,6 +37,6 @@ summons the same steed, restored to its hit point maximum.
 While your steed is within 1 mile of you, you can communicate with it
 telepathically.
 
-You can’t have more than one steed bonded by this spell at a time. As an
+You can't have more than one steed bonded by this spell at a time. As an
 action, you can release the steed from its bond at any time, causing it
 to disappear.

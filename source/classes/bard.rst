@@ -41,7 +41,7 @@ granted by your background:
 
 -  (*a*) a rapier, (*b*) a longsword, or (*c*) any simple weapon
 
--  (*a*) a diplomat’s pack or (*b*) an entertainer’s pack
+-  (*a*) a diplomat's pack or (*b*) an entertainer's pack
 
 -  (*a*) a lute or (*b*) any other musical instrument
 
@@ -120,7 +120,7 @@ Spell Slots
 
 The Bard table shows how many spell slots you have to cast your spells
 of 1st level and higher. To cast one of these spells, you must expend a
-slot of the spell’s level or higher. You regain all expended spell slots
+slot of the spell's level or higher. You regain all expended spell slots
 when you finish a long rest.
 
 For example, if you know the 1st-level spell *cure
@@ -167,7 +167,7 @@ ritual tag.
 Spellcasting Focus
 ^^^^^^^^^^^^^^^^^^
 
-You can use a musical instrument (see chapter 5, “Equip-ment”) as a
+You can use a musical instrument (see chapter 5, "Equip-ment") as a
 spellcasting focus for your bard spells.
 
 Bardic Inspiration
@@ -210,7 +210,7 @@ Jack of All Trades
     Source: `Sage Advice Compendium <http://media.wizards.com/2015/downloads/dnd/SA_Compendium_1.01.pdf>`_
 
 Starting at 2nd level, you can add half your proficiency bonus, rounded
-down, to :has-official:`any ability check` you make that doesn’t already include your
+down, to :has-official:`any ability check` you make that doesn't already include your
 proficiency bonus.
 
 Song of Rest
@@ -251,7 +251,7 @@ Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
-increase two ability scores of your choice by 1. As normal, you can’t
+increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Font of Inspiration
@@ -329,11 +329,11 @@ and otherwise sap the confidence and competence of others. When a
 creature that you can see within 60 feet of you makes an attack roll, an
 ability check, or a damage roll, you can use your reaction to expend one
 of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and
-subtracting the number rolled from the creature’s roll. You can choose
+subtracting the number rolled from the creature's roll. You can choose
 to use this feature after the creature makes its roll, but before the GM
 determines whether the attack roll or ability check succeeds or fails,
 or before the creature deals its damage. The creature is immune if it
-can’t hear you or if it’s immune to being charmed.
+can't hear you or if it's immune to being charmed.
 
 Additional Magical Secrets
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -341,7 +341,7 @@ Additional Magical Secrets
 At 6th level, you learn two spells of your choice from any class. A
 spell you choose must be of a level you can cast, as shown on the Bard
 table, or a cantrip. The chosen spells count as bard spells for you but
-don’t count against the number of bard spells you know.
+don't count against the number of bard spells you know.
 
 Peerless Skill
 ^^^^^^^^^^^^^^

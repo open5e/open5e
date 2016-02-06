@@ -23,7 +23,7 @@ Plane of Fire or the palace of Dispater on the second level of the Nine
 Hells, and you appear in or near that destination. If you are trying to
 reach the City of Brass, for example, you might arrive in its Street of
 Steel, before its Gate of Ashes, or looking at the city from across the
-Sea of Fire, at the GM’s discretion.
+Sea of Fire, at the GM's discretion.
 
 Alternatively, if you know the sigil sequence of a teleportation circle
 on another plane of existence, this spell can take you to that circle.

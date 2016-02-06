@@ -38,7 +38,7 @@ until it is destroyed or regains all its hit points.
 
 ::
 
-    The golem’s creator, if within 60 feet of the berserk golem, can try
+    The golem's creator, if within 60 feet of the berserk golem, can try
     to calm it by speaking firmly and persuasively. The golem must be
     able to hear its creator, who must take an action to make a DC 15
     Charisma (Persuasion) check. If the check succeeds, the golem ceases

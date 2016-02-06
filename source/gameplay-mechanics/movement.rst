@@ -5,22 +5,22 @@ Movement
 --------
 
 Swimming across a rushing river, sneaking down a dungeon corridor,
-scaling a treacherous mountain slope—all sorts of movement play a key
+scaling a treacherous mountain slope---all sorts of movement play a key
 role in fantasy gaming adventures.
 
-The GM can summarize the adventurers’ movement without calculating exact
-distances or travel times: “You travel through the forest and find the
-dungeon entrance late in the evening of the third day.” Even in a
+The GM can summarize the adventurers' movement without calculating exact
+distances or travel times: "You travel through the forest and find the
+dungeon entrance late in the evening of the third day." Even in a
 dungeon, particularly a large dungeon or a cave network, the GM can
-summarize movement between encounters: “After killing the guardian at
+summarize movement between encounters: "After killing the guardian at
 the entrance to the ancient dwarven stronghold, you consult your map,
 which leads you through miles of echoing corridors to a chasm bridged by
-a narrow stone arch.”
+a narrow stone arch."
 
-Sometimes it’s important, though, to know how long it takes to get from
+Sometimes it's important, though, to know how long it takes to get from
 one spot to another, whether the answer is in days, hours, or minutes.
 The rules for determining travel time depend on two factors: the speed
-and travel pace of the creatures moving and the terrain they’re moving
+and travel pace of the creatures moving and the terrain they're moving
 over.
 
 Speed
@@ -62,7 +62,7 @@ densely populated areas.
 
 Characters in wagons, carriages, or other land vehicles choose a pace as
 normal. Characters in a waterborne vessel are limited to the speed of
-the vessel, and they don’t suffer penalties for a fast pace or gain
+the vessel, and they don't suffer penalties for a fast pace or gain
 benefits from a slow pace. Depending on the vessel and the size of the
 crew, ships might be able to travel for up to 24 hours per day.
 
@@ -76,7 +76,7 @@ Travel Pace
 **Distance Traveled per . . .**
 
 +---------------+-----------------+---------------+------------+----------------------------------------------------+
-| **Pace**      | **Minute**      | **Hour**      | **Day**    | **Effect**                                         |
+|   Pace        |   Minute        |   Hour        |   Day      |   Effect                                           |
 +===============+=================+===============+============+====================================================+
 | Fast          | 400 feet        | 4 miles       | 30 miles   | −5 penalty to passive Wisdom (Perception) scores   |
 +---------------+-----------------+---------------+------------+----------------------------------------------------+
@@ -91,11 +91,11 @@ Difficult Terrain
 The travel speeds given in the Travel Pace table assume relatively
 simple terrain: roads, open plains, or clear dungeon corridors. But
 adventurers often face dense forests, deep swamps, rubble-­filled ruins,
-steep mountains, and ice-­covered ground—all considered difficult
+steep mountains, and ice-­covered ground---all considered difficult
 terrain.
 
-You move at half speed in difficult terrain— moving 1 foot in difficult
-terrain costs 2 feet of speed—so you can cover only half the normal
+You move at half speed in difficult terrain---moving 1 foot in difficult
+terrain costs 2 feet of speed---so you can cover only half the normal
 distance in a minute, an hour, or a day.
 
 Special Types of Movement
@@ -110,7 +110,7 @@ Climbing, Swimming, and Crawling
 
 While climbing or swimming, each foot of movement costs 1 extra foot (2
 extra feet in difficult terrain), unless a creature has a climbing or
-swimming speed. At the GM’s option, climbing a slippery vertical surface
+swimming speed. At the GM's option, climbing a slippery vertical surface
 or one with few handholds requires a successful Strength (Athletics)
 check. Similarly, gaining any distance in rough water might require a
 successful Strength (Athletics) check.
@@ -126,10 +126,10 @@ immediately before the jump. When you make a standing long jump, you can
 leap only half that distance. Either way, each foot you clear on the
 jump costs a foot of movement.
 
-This rule assumes that the height of your jump doesn’t matter, such as a
-jump across a stream or chasm. At your GM’s option, you must succeed on
+This rule assumes that the height of your jump doesn't matter, such as a
+jump across a stream or chasm. At your GM's option, you must succeed on
 a DC 10 Strength (Athletics) check to clear a low obstacle (no taller
-than a quarter of the jump’s distance), such as a hedge or low wall.
+than a quarter of the jump's distance), such as a hedge or low wall.
 Otherwise, you hit it.
 
 When you land in difficult terrain, you must succeed on a DC 10

@@ -18,7 +18,7 @@ harm trespassers, or banish creatures to other planes of existence.
 
 **Conjuration** spells involve the transportation of objects and
 creatures from one location to another. Some spells summon creatures or
-objects to the caster’s side, whereas others allow the caster to
+objects to the caster's side, whereas others allow the caster to
 teleport to another location. Some conjurations create objects or
 effects out of nothing.
 
@@ -52,6 +52,6 @@ frequently.
 
 **Transmutation** spells change the properties of a creature, object, or
 environment. They might turn an enemy into a harmless creature, bolster
-the strength of an ally, make an object move at the caster’s command, or
-enhance a creature’s innate healing abilities to rapidly recover from
+the strength of an ally, make an object move at the caster's command, or
+enhance a creature's innate healing abilities to rapidly recover from
 injury.

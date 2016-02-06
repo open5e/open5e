@@ -6,7 +6,7 @@ Mounts and Vehicles
 
 A good mount can help you move more quickly through the wilderness, but
 its primary purpose is to carry the gear that would otherwise slow you
-down. The Mounts and Other Animals table shows each animal’s speed and
+down. The Mounts and Other Animals table shows each animal's speed and
 base carrying capacity.
 
 An animal pulling a carriage, cart, chariot, sled, or wagon can move
@@ -22,7 +22,7 @@ Acquiring such a mount often means securing an egg and raising the
 creature yourself, making a bargain with a powerful entity, or
 negotiating with the mount itself.
 
-**Barding.** Barding is armor designed to protect an animal’s head,
+**Barding.** Barding is armor designed to protect an animal's head,
 neck, chest, and body. Any type of armor shown on the Armor table can be
 purchased as barding. The cost is four times the equivalent armor made
 for humanoids, and it weighs twice as much.
@@ -39,7 +39,7 @@ circumstances.
 
 **Rowed Vessels.** Keelboats and rowboats are used on lakes and
 rivers. If going downstream, add the speed of the current (typically 3
-miles per hour) to the speed of the vehicle. These vehicles can’t be
+miles per hour) to the speed of the vehicle. These vehicles can't be
 rowed against any significant current, but they can be pulled upstream
 by draft animals on the shores. A rowboat weighs 100 pounds, in case
 adventurers carry it over land.

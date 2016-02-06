@@ -25,7 +25,7 @@ Dexterity saving throw. A creature takes fire damage equal to the total
 accumulated damage on a failed save, or half as much damage on a
 successful one.
 
-The spell’s base damage is 12d6. If at the end of your turn the bead has
+The spell's base damage is 12d6. If at the end of your turn the bead has
 not yet detonated, the damage increases by 1d6.
 
 If the glowing bead is touched before the interval has expired, the
@@ -36,7 +36,7 @@ it strikes a creature or a solid object, the spell ends, and the bead
 explodes.
 
 The fire damages objects in the area and ignites flammable objects that
-aren’t being worn or carried.
+aren't being worn or carried.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 8th
 level or higher, the base damage increases by 1d6 for each slot level

@@ -12,7 +12,7 @@ fit in a pocket. If you use an action to speak the command word and
 throw the figurine to a point on the ground within 60 feet of you, the
 figurine becomes a living creature. If the space where the creature
 would appear is occupied by other creatures or objects, or if there
-isn’t enough space for the creature, the figurine doesn’t become a
+isn't enough space for the creature, the figurine doesn't become a
 creature.
 
 The creature is friendly to you and your companions. It understands your
@@ -24,16 +24,16 @@ of the duration, the creature reverts to its
 figurine form. It reverts to a figurine early if it drops to 0 hit
 points or if you use an action to speak the command word again while
 touching it. When the creature becomes a figurine again, its property
-can’t be used again until a certain amount of time has passed, as
-specified in the figurine’s description.
+can't be used again until a certain amount of time has passed, as
+specified in the figurine's description.
 
 **Bronze Griffon (Rare).** This bronze statuette is of a griffon
 rampant. It can become a griffon for up to 6 hours. Once it has been
-used, it can’t be used again until 5 days have passed.
+used, it can't be used again until 5 days have passed.
 
 **Ebony Fly (Rare).** This ebony statuette is carved in the likeness
 of a horsefly. It can become a giant fly for up to 12 hours and can be
-ridden as a mount. Once it has been used, it can’t be used again until 2
+ridden as a mount. Once it has been used, it can't be used again until 2
 days have passed.
 
 Giant Fly
@@ -56,11 +56,11 @@ STR     DEX     CON     INT     WIS     CHA
 
 **Senses** darkvision 60 ft., passive Perception 10
 
-Languages —
+Languages ---
 
 **Golden Lions (Rare).** These gold statuettes of lions are always
 created in pairs. You can use one figurine or both simultaneously. Each
-can become a lion for up to 1 hour. Once a lion has been used, it can’t
+can become a lion for up to 1 hour. Once a lion has been used, it can't
 be used again until 7 days have passed.
 
 **Ivory Goats (Rare).** These ivory statuettes of goats are always
@@ -71,14 +71,14 @@ differently from the others. Their properties are as follows:
    statistics as a riding horse. It has 24 charges, and each hour or
    portion thereof it spends in beast form costs 1 charge. While it has
    charges, you can use it as often as you wish. When it runs out of
-   charges, it reverts to a figurine and can’t be used again until 7
+   charges, it reverts to a figurine and can't be used again until 7
    days have passed, when it regains all its charges.
 
 -  The *goat of travail* becomes a giant goat for up to 3 hours. Once it
-   has been used, it can’t be used again until 30 days have passed.
+   has been used, it can't be used again until 30 days have passed.
 
 -  The *goat of terror* becomes a giant goat for up to 3 hours. The goat
-   can’t attack, but you can remove its horns and use them as weapons.
+   can't attack, but you can remove its horns and use them as weapons.
    One horn becomes a *+1 lance*, and the other becomes a *+2
    longsword*. Removing a horn requires an action, and the weapons
    disappear and the horns return
@@ -89,17 +89,17 @@ differently from the others. Their properties are as follows:
    until the goat reverts to figurine form. The frightened creature can
    repeat the saving throw at the end of each of its turns, ending the
    effect on itself on a success. Once it successfully saves against the
-   effect, a creature is immune to the goat’s aura for the next 24
-   hours. Once the figurine has been used, it can’t be used again until
+   effect, a creature is immune to the goat's aura for the next 24
+   hours. Once the figurine has been used, it can't be used again until
    15 days have passed.
 
 **Marble Elephant (Rare).** This marble statuette is about 4 inches
 high and long. It can become an elephant for up to 24 hours. Once it has
-been used, it can’t be used again until 7 days have passed.
+been used, it can't be used again until 7 days have passed.
 
 **Obsidian Steed (Very Rare).** This polished obsidian horse can
 become a nightmare for up to 24 hours. The nightmare fights only to
-defend itself. Once it has been used, it can’t be used again until 5
+defend itself. Once it has been used, it can't be used again until 5
 days have passed.
 
 If you have a good alignment, the figurine has a 10 percent chance each
@@ -113,74 +113,15 @@ form.
 for up to 6 hours. The mastiff has an Intelligence of 8 and can speak
 Common. It also has darkvision out to a range of 60 feet and can see
 invisible creatures and objects within that range. Once it has been
-used, it can’t be used again until 7 days have passed.
+used, it can't be used again until 7 days have passed.
 
 **Serpentine Owl (Rare).** This serpentine statuette of an owl can
-become a giant owl for up to 8 hours. Once it has been used, it can’t be
+become a giant owl for up to 8 hours. Once it has been used, it can't be
 used again until 2 days have passed. The owl can telepathically
 communicate with you at any range if you and it are on the same plane of
 existence.
 
 **Silver Raven (Uncommon).** This silver statuette of a raven can
-become a raven for up to 12 hours. Once it has been used, it can’t be
+become a raven for up to 12 hours. Once it has been used, it can't be
 used again until 2 days have passed. While in raven form, the figurine
 allows you to cast the *animal messenger* spell on it at will.
-
-Flame Tongue
-^^^^^^^^^^^^
-
-*Weapon (any sword), rare (requires attunement)*
-
-You can use a bonus action to speak this magic sword’s command word,
-causing flames to erupt from the blade. These flames shed bright light
-in a 40-­foot radius and dim light for an additional 40 feet. While the
-sword is ablaze, it deals an extra 2d6 fire damage to any target it
-hits. The flames last until you use a bonus action to speak the command
-word again or until you drop or sheathe the sword.
-
-Folding Boat
-^^^^^^^^^^^^
-
-*Wondrous item, rare*
-
-This object appears as a wooden box that measures 12 inches long, 6
-inches wide, and 6 inches deep. It weighs 4 pounds and floats. It can be
-opened to store items inside. This item also has three command words,
-each requiring you to use an action to speak it.
-
-One command word causes the box to unfold into a boat 10 feet long, 4
-feet wide, and 2 feet deep. The boat has one pair of oars, an anchor, a
-mast, and a lateen sail. The boat can hold up to four Medium creatures
-comfortably.
-
-The second command word causes the box to unfold into a ship 24 feet
-long, 8 feet wide, and 6 feet deep. The ship has a deck, rowing seats,
-five sets of oars, a steering oar, an anchor, a deck cabin, and a mast
-with a square sail. The ship can hold fifteen Medium creatures
-comfortably.
-
-When the box becomes a vessel, its weight becomes that of a normal
-vessel its size, and anything that was stored in the box remains in the
-boat.
-
-The third command word causes the *folding boat* to fold back into a
-box, provided that no creatures are aboard. Any objects in the vessel
-that can’t fit inside the box remain outside the box as it folds. Any
-objects in the vessel that can fit inside the box do so.
-
-Frost Brand
-^^^^^^^^^^^
-
-*Weapon (any sword), very rare (requires attunement)*
-
-When you hit with an attack using this magic sword, the target takes an
-extra 1d6 cold damage. In addition, while you hold the sword, you have
-resistance to fire damage.
-
-In freezing temperatures, the blade sheds bright light in a 10-­foot
-radius and dim light for an additional 10 feet.
-
-When you draw this weapon, you can extinguish all nonmagical flames
-within 30 feet of you. This property can be used no more than once per
-hour.
-

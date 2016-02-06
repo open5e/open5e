@@ -44,7 +44,7 @@ granted by your background:
 
 -  *(a)* a component pouch or (*b*) an arcane focus
 
--  *(a)* a scholar’s pack or (*b*) an explorer’s pack
+-  *(a)* a scholar's pack or (*b*) an explorer's pack
 
 -  A spellbook
 
@@ -123,7 +123,7 @@ Preparing and Casting Spells
 
 The Wizard table shows how many spell slots you have to cast your spells
 of 1st level and higher. To cast one of these spells, you must expend a
-slot of the spell’s level or higher. You regain all expended spell slots
+slot of the spell's level or higher. You regain all expended spell slots
 when you finish a long rest.
 
 You prepare the list of wizard spells that are available for you to
@@ -131,7 +131,7 @@ cast. To do so, choose a number of wizard spells from your spellbook
 equal to your Intelligence modifier + your wizard level (minimum of one
 spell). The spells must be of a level for which you have spell slots.
 
-For example, if you’re a 3rd-level wizard, you have four 1st-level and
+For example, if you're a 3rd-level wizard, you have four 1st-level and
 two 2nd-level spell slots. With an Intelligence of 16, your list of
 prepared spells can include six spells of 1st or 2nd level, in any
 combination, chosen from your spellbook. If you prepare the 1st-level
@@ -163,7 +163,7 @@ Ritual Casting
 ^^^^^^^^^^^^^^
 
 You can cast a wizard spell as a ritual if that spell has the ritual tag
-and you have the spell in your spellbook. You don’t need to have the
+and you have the spell in your spellbook. You don't need to have the
 spell prepared.
 
 Spellcasting Focus
@@ -176,8 +176,8 @@ spells.
 level, you can add two wizard spells of your choice to your spellbook
 for free. Each of these spells must be of a level for which you have
 spell slots, as shown on the Wizard table. On your adventures, you might
-find other spells that you can add to your spellbook (see the “Your
-Spellbook” sidebar).
+find other spells that you can add to your spellbook (see the "Your
+Spellbook" sidebar).
 
 Arcane Recovery
 ^^^^^^^^^^^^^^^
@@ -188,7 +188,7 @@ expended spell slots to recover. The spell slots can have a combined
 level that is equal to or less than half your wizard level (rounded up),
 and none of the slots can be 6th level or higher.
 
-For example, if you’re a 4th-level wizard, you can recover up to two
+For example, if you're a 4th-level wizard, you can recover up to two
 levels worth of spell slots. You can recover either a 2nd-level spell
 slot or two 1st-level spell slots.
 
@@ -208,7 +208,7 @@ Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
-increase two ability scores of your choice by 1. As normal, you can’t
+increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Spell Mastery
@@ -230,9 +230,9 @@ Signature Spells
 When you reach 20th level, you gain mastery over two powerful spells and
 can cast them with little effort. Choose two 3rd-level wizard spells in
 your spellbook as your signature spells. You always have these spells
-prepared, they don’t count against the number of spells you have
+prepared, they don't count against the number of spells you have
 prepared, and you can cast each of them once at 3rd level without
-expending a spell slot. When you do so, you can’t do so again until you
+expending a spell slot. When you do so, you can't do so again until you
 finish a short or long rest.
 
 If you want to cast either spell at a higher level, you must expend a
@@ -278,7 +278,7 @@ Sculpt Spells
 Beginning at 2nd level, you can create pockets of relative safety within
 the effects of your evocation spells. When you cast an evocation spell
 that affects other creatures that you can see, you can choose a number
-of them equal to 1 + the spell’s level. The chosen creatures
+of them equal to 1 + the spell's level. The chosen creatures
 automatically succeed on their saving throws against the spell, and they
 take no damage if they would normally take half damage on a successful
 save.
@@ -297,7 +297,7 @@ Potent Cantrip
 
 Starting at 6th level, :has-official:`your damaging cantrips affect` even creatures that
 avoid the brunt of the effect. When a creature succeeds on a saving
-throw against your cantrip, the creature takes half the cantrip’s damage
+throw against your cantrip, the creature takes half the cantrip's damage
 (if any) but suffers no additional effect from the cantrip.
 
 Empowered Evocation
@@ -328,7 +328,7 @@ resistance and immunity.
     the arcane research you conduct on your own, as well as intellectual
     breakthroughs you have had about the nature of the multiverse. You
     might find other spells during your adventures. You could discover a
-    spell recorded on a scroll in an evil wizard’s chest, for example,
+    spell recorded on a scroll in an evil wizard's chest, for example,
     or in a dusty tome in an ancient library.
 
     **Copying a Spell into the Book.** When you find a wizard
@@ -350,7 +350,7 @@ resistance and immunity.
     can prepare the spell just like your other spells.
 
     **Replacing the Book.** You can copy a spell from your own
-    spellbook into another book—for example, if you want to make a
+    spellbook into another book---for example, if you want to make a
     backup copy of your spellbook. This is just like copying a new spell
     into your spellbook, but faster and easier, since you understand
     your own notation and already know how to cast the spell. You need
@@ -362,7 +362,7 @@ resistance and immunity.
     to find new spells to do so, as normal. For this reason, many
     wizards keep backup spellbooks in a safe place.
 
-    **The Book’s Appearance.** Your spellbook is a unique compilation
+    **The Book's Appearance.** Your spellbook is a unique compilation
     of spells, with its own decorative flourishes and margin notes. It
     might be a plain, functional leather volume that you received as a
     gift from your master, a finely bound gilt-­‐edged tome you found in

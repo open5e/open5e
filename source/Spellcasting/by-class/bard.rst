@@ -43,7 +43,7 @@ Cantrips (0 Level)
 ~~~~~~~~~
 
 - :ref:`srd:animal-messenger`
-- :ref:`srd:blindness/deafness`
+- :ref:`srd:blindness-deafness`
 - :ref:`srd:calm-emotions`
 - :ref:`srd:detect-thoughts`
 - :ref:`srd:enhance-ability`

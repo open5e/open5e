@@ -20,8 +20,8 @@ d20. On a 20, the staff regains 1d12 + 1 charges.
 saving throws against spells. In addition, you can use your reaction
 when another creature casts a spell that targets only you. If you do,
 the staff absorbs the magic of the spell, canceling its effect and
-gaining a number of charges equal to the absorbed spell’s level.
-However, if doing so brings the staff’s total number of charges above
+gaining a number of charges equal to the absorbed spell's level.
+However, if doing so brings the staff's total number of charges above
 50, the staff explodes as if you activated its retributive strike (see
 below).
 

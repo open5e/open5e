@@ -26,7 +26,7 @@ prices listed are per day, so if you wish to calculate the cost of your
 chosen lifestyle over a thirty-­day period, multiply the listed price by
 30. Your lifestyle might change from one period to the next, based on
 the funds you have at your disposal, or you might maintain the same
-lifestyle throughout your character’s career.
+lifestyle throughout your character's career.
 
 Your lifestyle choice can have consequences. Maintaining a wealthy
 lifestyle might help you make contacts with the rich and powerful,
@@ -84,7 +84,7 @@ disreputable types.
 
 **Modest.** A modest lifestyle keeps you out of the slums and ensures
 that you can maintain your equipment. You live in an older part of town,
-renting a room in a boarding house, inn, or temple. You don’t go hungry
+renting a room in a boarding house, inn, or temple. You don't go hungry
 or thirsty, and your living conditions are clean, if simple. Ordinary
 people living modest lifestyles include soldiers with families,
 laborers, students, priests, hedge wizards, and the like.
@@ -121,13 +121,13 @@ or participant.
        
     The expenses and lifestyles described here assume that you are spending
     your time between adventures in town, availing yourself of whatever
-    services you can afford—paying for food and shelter, paying townspeople
+    services you can afford---paying for food and shelter, paying townspeople
     to sharpen your sword and repair your armor, and so on. Some characters,
     though, might prefer to spend their time away from civilization,
     sustaining themselves in the wild by hunting, foraging, and repairing
     their own gear.
 
-    Maintaining this kind of lifestyle doesn’t require you to spend any
+    Maintaining this kind of lifestyle doesn't require you to spend any
     coin, but it is time-­‐consuming. If you spend your time between
     adventures practicing a profession, you can eke out the equivalent of a
     poor lifestyle. Proficiency in the Survival skill lets you live at the
@@ -137,7 +137,7 @@ Food, Drink, and Lodging
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Food, Drink, and Lodging table gives prices for individual food
-items and a single night’s lodging. These prices are included in your
+items and a single night's lodging. These prices are included in your
 total lifestyle expenses.
 
 Food, Drink, and Lodging
@@ -243,7 +243,7 @@ Services
 +----------------------+----------------------+
 |    Road or gate toll |    1 cp              |
 +----------------------+----------------------+
-|    Ship’s passage    |      1 sp per mile   |
+|    Ship's passage    |      1 sp per mile   |
 +----------------------+----------------------+
 
 Skilled hirelings include anyone hired to perform a service that
@@ -256,7 +256,7 @@ porters, maids, and similar workers.
 Spellcasting Services
 ~~~~~~~~~~~~~~~~~~~~~
 
-People who are able to cast spells don’t fall into the category of
+People who are able to cast spells don't fall into the category of
 ordinary hirelings. It might be possible to find someone willing to cast
 a spell in exchange for coin or favors, but it is rarely easy and no
 established pay rates exist. As a rule, the higher the level of the
@@ -269,7 +269,7 @@ and might cost 10 to 50 gold pieces (plus the cost of any expensive
 material components). Finding someone able and willing to cast a
 higher-­level spell might involve traveling to a large city, perhaps one
 with a university or prominent temple. Once found, the spellcaster might
-ask for a service instead of payment—the kind of service that only
+ask for a service instead of payment---the kind of service that only
 adventurers can provide, such as retrieving a rare item from a dangerous
 locale or traversing a monster-­infested wilderness to deliver something
 important to a distant settlement.

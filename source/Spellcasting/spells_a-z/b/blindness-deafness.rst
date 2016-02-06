@@ -1,5 +1,5 @@
 
-.. _srd:blindness/deafness:
+.. _srd:blindness-deafness:
 
 Blindness/Deafness
 -------------------------------------------------------------

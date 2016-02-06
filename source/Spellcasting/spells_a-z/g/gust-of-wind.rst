@@ -13,7 +13,7 @@ Gust of Wind
 Duration: Concentration, up to 1 minute
 
 A line of strong wind 60 feet long and 10 feet wide blasts from you in a
-direction you choose for the spell’s duration. Each creature that starts
+direction you choose for the spell's duration. Each creature that starts
 its turn in the line must succeed on a Strength saving throw or be
 pushed 15 feet away from you in a direction following the line.
 

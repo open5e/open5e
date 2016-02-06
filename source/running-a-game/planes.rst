@@ -40,7 +40,7 @@ Beyond the Material
 -------------------
 
 Beyond the Material Plane, the various planes of existence are realms of
-myth and mystery. They’re not simply other worlds, but different
+myth and mystery. They're not simply other worlds, but different
 qualities of being, formed and governed by spiritual and elemental
 principles abstracted from the ordinary world.
 
@@ -61,7 +61,7 @@ two ways: by casting a spell or by using a planar portal.
 planes of existence. Plane shift and gate can transport adventurers
 directly to any other plane of existence, with different degrees of
 precision. Etherealness allows adventurers to enter the Ethereal Plane
-and travel from there to any of the planes it touches—such as the
+and travel from there to any of the planes it touches---such as the
 Elemental Planes. And the astral projection spell lets adventurers
 project themselves into the Astral Plane and travel to the Outer Planes.
 
@@ -69,8 +69,8 @@ project themselves into the Astral Plane and travel to the Outer Planes.
 connection that links a specific location on one plane to a specific
 location on another. Some portals are like doorways, a clear window, or
 a fog--- shrouded passage, and simply stepping through it effects the
-interplanar travel. Others are locations— circles of standing stones,
-soaring towers, sailing ships, or even whole towns—that exist in
+interplanar travel. Others are locations--- circles of standing stones,
+soaring towers, sailing ships, or even whole towns---that exist in
 multiple planes at once or flicker from one plane to another in turn.
 Some are vortices, typically joining an Elemental Plane with a very
 similar location on the Material Plane, such as the heart of a volcano
@@ -110,7 +110,7 @@ Inner Planes
 
 The Inner Planes surround and enfold the Material Plane and its echoes,
 providing the raw elemental substance from which all the worlds were
-made. The four **Elemental Planes**—Air, Earth, Fire, and Water—form a
+made. The four **Elemental Planes**---Air, Earth, Fire, and Water---form a
 ring around the Material Plane, suspended within the churning
 **Elemental Chaos**.
 
@@ -120,7 +120,7 @@ Elemental Planes resemble a world in the Material Plane. The four
 elements mingle together as they do in the Material Plane, forming land,
 sea, and sky. Farther from the Material Plane, though, the Elemental
 Planes are both alien and hostile. Here, the elements exist in their
-purest form—great expanses of solid earth, blazing fire, crystal---clear
+purest form---great expanses of solid earth, blazing fire, crystal---clear
 water, and unsullied air. These regions are little---known, so when
 discussing the Plane of Fire, for example, a speaker usually means just
 the border region. At the farthest extents of the Inner Planes, the pure
@@ -137,7 +137,7 @@ divine planes, spiritual planes, or godly planes, for the Outer Planes
 are best known as the homes of deities.
 
 When discussing anything to do with deities, the language used must be
-highly metaphorical. Their actual homes are not literally “places” at
+highly metaphorical. Their actual homes are not literally "places" at
 all, but exemplify the idea that the Outer Planes are realms of thought
 and spirit. As with the Elemental Planes, one can imagine the
 perceptible part of the Outer Planes as a sort of border region, while
@@ -155,7 +155,7 @@ Distance is a virtually meaningless concept on the Outer Planes. The
 perceptible regions of the planes often seem quite small, but they can
 also stretch on to what seems like infinity. It might be possible to
 take a guided tour of the Nine Hells, from the first layer to the ninth,
-in a single day—if the powers of the Hells desire it. Or it could take
+in a single day---if the powers of the Hells desire it. Or it could take
 weeks for travelers to make a grueling trek across a single layer.
 
 The most well---known Outer Planes are a group of sixteen planes that
@@ -169,8 +169,8 @@ The planes with some element of good in their nature are called the
 **Upper Planes**. Celestial creatures such as angels and pegasi dwell in
 the Upper Planes. Planes with some element of evil are the **Lower
 Planes**. Fiends such as demons and devils dwell in the Lower Planes. A
-plane’s alignment is its essence, and a character whose alignment
-doesn’t match the plane’s experiences a profound sense of dissonance
+plane's alignment is its essence, and a character whose alignment
+doesn't match the plane's experiences a profound sense of dissonance
 there. When a good creature visits Elysium, for example (a neutral good
 Upper Plane), it feels in tune with the plane, but an evil creature
 feels out of tune and more than a little uncomfortable.
@@ -179,7 +179,7 @@ Demiplanes
 ^^^^^^^^^^
 
 Demiplanes are small extradimensional spaces with their own unique
-rules. They are pieces of reality that don’t seem to fit anywhere else.
+rules. They are pieces of reality that don't seem to fit anywhere else.
 Demiplanes come into being by a variety of means. Some are created by
 spells, such as demiplane, or generated at the desire of a powerful
 deity or other force. They may exist naturally, as a fold of existing

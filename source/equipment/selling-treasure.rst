@@ -15,9 +15,9 @@ market. Weapons and armor used by monsters are rarely in good enough
 condition to sell.
 
 **Magic Items.** Selling magic items is problematic. Finding someone
-to buy a potion or a scroll isn’t too hard, but other items are out of
+to buy a potion or a scroll isn't too hard, but other items are out of
 the realm of most but the wealthiest nobles. Likewise, aside from a few
-common magic items, you won’t normally come across magic items or spells
+common magic items, you won't normally come across magic items or spells
 to purchase. The value of magic is far beyond simple gold and should
 always be treated as such.
 
@@ -28,6 +28,6 @@ treasures, the GM might require you to find a buyer in a large town or
 larger community first.
 
 **Trade Goods.** On the borderlands, many people conduct transactions
-through barter. Like gems and art objects, trade goods—bars of iron,
-bags of salt, livestock, and so on—retain their full value in the market
+through barter. Like gems and art objects, trade goods---bars of iron,
+bags of salt, livestock, and so on---retain their full value in the market
 and can be used as currency.

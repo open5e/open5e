@@ -26,7 +26,7 @@ Constitution modifier (minimum of 30 seconds).
 When a creature runs out of breath or is choking, it can survive for a
 number of rounds equal to its Constitution modifier (minimum of 1
 round). At the start of its next turn, it drops to 0 hit points and is
-dying, and it can’t regain hit points or be stabilized until it can
+dying, and it can't regain hit points or be stabilized until it can
 breathe again.
 
 For example, a creature with a Constitution of 14 can hold its breath
@@ -36,9 +36,9 @@ before it drops to 0 hit points.
 Vision and Light
 ~~~~~~~~~~~~~~~~
 
-The most fundamental tasks of adventuring— noticing danger, finding
+The most fundamental tasks of adventuring---noticing danger, finding
 hidden objects, hitting an enemy in combat, and targeting a spell, to
-name just a few—rely heavily on a character’s ability to see. Darkness
+name just a few---rely heavily on a character's ability to see. Darkness
 and other effects that obscure vision can prove a significant hindrance.
 
 A given area might be lightly or heavily obscured. In a **lightly
@@ -46,8 +46,8 @@ obscured** area, such as dim light, patchy fog, or moderate foliage,
 creatures have disadvantage on Wisdom (Perception) checks that rely on
 sight.
 
-A **heavily obscured** area—such as darkness, opaque fog, or dense
-foliage—blocks vision entirely. A creature effectively suffers from the
+A **heavily obscured** area---such as darkness, opaque fog, or dense
+foliage---blocks vision entirely. A creature effectively suffers from the
 blinded condition (see appendix A) when trying to see something in that
 area.
 
@@ -84,7 +84,7 @@ Many creatures in fantasy gaming worlds, especially those that dwell
 underground, have darkvision. Within a specified range, a creature with
 darkvision can see in darkness as if the darkness were dim light, so
 areas of darkness are only lightly obscured as far as that creature is
-concerned. However, the creature can’t discern color in darkness, only
+concerned. However, the creature can't discern color in darkness, only
 shades of gray.
 
 Truesight
@@ -100,8 +100,8 @@ Ethereal Plane.
 Food and Water
 ~~~~~~~~~~~~~~
 
-Characters who don’t eat or drink suffer the effects of exhaustion (see
-appendix A). Exhaustion caused by lack of food or water can’t be removed
+Characters who don't eat or drink suffer the effects of exhaustion (see
+appendix A). Exhaustion caused by lack of food or water can't be removed
 until the character eats and drinks the full required amount.
 
 Food
@@ -133,7 +133,7 @@ character takes two levels in either case.
 Interacting with Objects
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-A character’s interaction with objects in an environment is often simple
+A character's interaction with objects in an environment is often simple
 to resolve in the game. The player tells the GM that his or her
 character is doing something, such as moving a lever, and the GM
 describes what, if anything, happens.
@@ -149,9 +149,9 @@ difficulty of the task.
 Characters can also damage objects with their weapons and spells.
 Objects are immune to poison and psychic damage, but otherwise they can
 be affected by physical and magical attacks much like creatures can. The
-GM determines an object’s Armor Class and hit points, and might decide
+GM determines an object's Armor Class and hit points, and might decide
 that certain objects have resistance or immunity to certain kinds of
-attacks. (It’s hard to cut a rope with a club, for example.) Objects
+attacks. (It's hard to cut a rope with a club, for example.) Objects
 always fail Strength and Dexterity saving throws, and they are immune to
 effects that require other saves. When an object drops to 0 hit points,
 it breaks.

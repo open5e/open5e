@@ -46,7 +46,7 @@ granted by your background:
 
 -  (*a*) a scimitar or (*b*) any simple melee weapon
 
--  Leather armor, an explorer’s pack, and a druidic focus
+-  Leather armor, an explorer's pack, and a druidic focus
 
 The Druid
 ^^^^^^^^^
@@ -105,9 +105,9 @@ Druidic
 You know Druidic, the secret language of druids. You can speak the
 language and use it to leave hidden messages. You and others who know
 this language automatically spot such a message. Others spot the
-message’s presence with a successful DC 15 Wisdom
+message's presence with a successful DC 15 Wisdom
 
-(Perception) check but can’t decipher it without magic.
+(Perception) check but can't decipher it without magic.
 
 Spellcasting
 ~~~~~~~~~~~~
@@ -127,7 +127,7 @@ Preparing and Casting Spells
 
 The Druid table shows how many spell slots you have to cast your spells
 of 1st level and higher. To cast one of these druid spells, you must
-expend a slot of the spell’s level or higher. You regain all expended
+expend a slot of the spell's level or higher. You regain all expended
 spell slots when you finish a long rest.
 
 You prepare the list of druid spells that are available for you to cast, 
@@ -139,7 +139,7 @@ for which you have spell slots.
 Spellcasting Focus
 ~~~~~~~~~~~~~~~~~~
 
-You can use a druidic focus (see chapter 5, “Equip- ment”) as a
+You can use a druidic focus (see chapter 5, "Equip- ment") as a
 spellcasting focus for your druid spells.
 
 Spellcasting Ability
@@ -171,7 +171,7 @@ twice. You regain expended uses when you finish a short or long rest.
 
 Your druid level determines the beasts you can transform into, as shown
 in the Beast Shapes table. At 2nd level, for example, you can transform
-into any beast that has a challenge rating of 1/4 or lower that doesn’t
+into any beast that has a challenge rating of 1/4 or lower that doesn't
 have a flying or swimming speed.
 
 Beast Shapes
@@ -182,14 +182,14 @@ Level  CR   Limitations                  Example
 =====  ===  ===========================  =======
 2nd    1/4  No flying or swimming speed  Wolf
 4th    1/2  No flying speed              Crocodile
-8th    1    —                            Giant eagle
+8th    1    ---                            Giant eagle
 =====  ===  ===========================  =======
 
 For example, if you are a 3rd-level druid, you have four 1st-level
 and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells
 can a include six spells of 1st or 2nd level, in any combination. If you
 prepare the 1st-level spell *cure wounds,* you can cast it using a
-1st-level or 2nd-level slot. Casting the spell doesn’t remove it from
+1st-level or 2nd-level slot. Casting the spell doesn't remove it from
 your list of prepared spells.
 
 You can also change your list of prepared spells when you finish a long
@@ -210,32 +210,32 @@ While you are transformed, the following rules apply:
    Charisma scores. You also retain all of your skill and saving throw
    proficiencies, in addition to gaining those of the creature. If the
    creature has the same proficiency as you and the bonus in its stat
-   block is higher than yours, use the creature’s bonus instead of
-   yours. If the creature has any legendary or lair actions, you can’t
+   block is higher than yours, use the creature's bonus instead of
+   yours. If the creature has any legendary or lair actions, you can't
    use them.
--  When you transform, you assume the beast’s hit points and Hit Dice.
+-  When you transform, you assume the beast's hit points and Hit Dice.
    When you revert to your normal form, you return to the number of hit
    points you had before you transformed. However, if you revert as a
    result of dropping to 0 hit points, any excess damage carries over to
    your normal form. For example, if you take 10 damage in animal form
    and have only 1 hit point left, you revert and take 9 damage. As long
-   as the excess damage doesn’t reduce your normal form to 0 hit points,
-   you aren’t knocked unconscious.
--  You can’t cast spells, and your ability to speak or take any action
+   as the excess damage doesn't reduce your normal form to 0 hit points,
+   you aren't knocked unconscious.
+-  You can't cast spells, and your ability to speak or take any action
    that requires hands is limited to the capabilities of your beast
-   form. Transforming doesn’t break your concentration on a spell you’ve
+   form. Transforming doesn't break your concentration on a spell you've
    already cast, however, or prevent you from taking actions that are
-   part of a spell, such as *call lightning*, that you’ve already cast.
+   part of a spell, such as *call lightning*, that you've already cast.
 -  You retain the benefit of any features from your class, race, or
    other source and can use them if the new form is physically capable
-   of doing so. However, you can’t use any of your special senses, such
+   of doing so. However, you can't use any of your special senses, such
    as darkvision, unless your new form also has that sense.
 -  You choose whether your equipment falls to the ground in your space,
    merges into your new form, or is worn by it. Worn equipment functions
    as normal, but the GM decides whether it is practical for the new
-   form to wear a piece of equipment, based on the creature’s shape and
-   size. Your equipment doesn’t change size or shape to match the new
-   form, and any equipment that the new form can’t wear must either fall
+   form to wear a piece of equipment, based on the creature's shape and
+   size. Your equipment doesn't change size or shape to match the new
+   form, and any equipment that the new form can't wear must either fall
    to the ground or merge with it. Equipment that merges with the form
    has no effect until you leave the form.
 
@@ -252,7 +252,7 @@ Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
-increase two ability scores of your choice by 1. As normal, you can’t
+increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Timeless Body
@@ -269,7 +269,7 @@ Beginning at 18th level, you can cast many of your druid spells in any
 shape you assume using Wild Shape. You can perform the somatic and
 verbal
 
-components of a druid spell while in a beast shape, but you aren’t able
+components of a druid spell while in a beast shape, but you aren't able
 to provide material components.
 
 Archdruid
@@ -279,7 +279,7 @@ At 20th level, you can use your Wild Shape an unlimited number of times.
 
 Additionally, you can ignore the verbal and somatic components of your
 druid spells, as well as any material components that lack a cost and
-aren’t consumed by a spell. You gain this benefit in both your normal
+aren't consumed by a spell. You gain this benefit in both your normal
 shape and your beast shape from Wild Shape.
 
 Circle of the Land
@@ -288,10 +288,10 @@ Circle of the Land
 The Circle of the Land is made up of mystics and sages who safeguard
 ancient knowledge and rites through a vast oral tradition. These druids
 meet within sacred circles of trees or standing stones to whisper primal
-secrets in Druidic. The circle’s wisest members preside as the chief
+secrets in Druidic. The circle's wisest members preside as the chief
 priests of communities that hold to the Old Faith and serve as advisors
 to the rulers of those folk. As a member of this circle, your magic is
-influenced by the land where you were initiated into the circle’s
+influenced by the land where you were initiated into the circle's
 mysterious rites.
 
 Bonus Cantrip
@@ -308,7 +308,7 @@ sitting in meditation and communing with nature. During a short rest,
 you choose expended spell slots to recover. The spell slots can have a
 combined level that is equal to or less than half your druid level
 (rounded up), and none of the slots can be 6th level or higher. You
-can’t use this feature again until you finish a long rest.
+can't use this feature again until you finish a long rest.
 
 For example, when you are a 4th-level druid, you can recover up to two
 levels worth of spell slots. You can recover either a 2nd-level slot or
@@ -320,12 +320,12 @@ Circle Spells
 Your mystical connection to the land infuses you with the ability to
 cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to
 circle spells connected to the land where you became a druid. Choose
-that land—arctic, coast, desert, forest, grassland, mountain, or
-swamp—and consult the associated list of spells.
+that land---arctic, coast, desert, forest, grassland, mountain, or
+swamp---and consult the associated list of spells.
 
 Once you gain access to a circle spell, you always have it prepared, and
-it doesn’t count against the number of spells you can prepare each day.
-If you gain access to a spell that doesn’t appear on the druid spell
+it doesn't count against the number of spells you can prepare each day.
+If you gain access to a spell that doesn't appear on the druid spell
 list, the spell is nonetheless a druid spell for you.
 
 Arctic
@@ -433,7 +433,7 @@ Swamp
 | 9th              | :ref:`srd:insect-plague`, :ref:`srd:scrying`                  |
 +------------------+---------------------------------------------------------------+
 
-Land’s Stride
+Land's Stride
 ^^^^^^^^^^^^^
 
 Starting at 6th level, moving through nonmagical difficult terrain costs
@@ -445,13 +445,13 @@ In addition, you have advantage on saving throws against plants that are
 magically created or manipulated to impede movement, such those created
 by the :ref:`srd:entangle` spell.
 
-Nature’s Ward
+Nature's Ward
 ^^^^^^^^^^^^^
 
-When you reach 10th level, you can’t be charmed or frightened by
+When you reach 10th level, you can't be charmed or frightened by
 elementals or fey, and you are immune to poison and disease.
 
-Nature’s Sanctuary
+Nature's Sanctuary
 ^^^^^^^^^^^^^^^^^^
 
 When you reach 14th level, creatures of the natural world sense your
@@ -462,7 +462,6 @@ must choose a different target, or the attack automatically misses. On a
 successful save, the creature is immune to this effect for 24 hours.
 
 The creature is aware of this effect before it makes
-
 its attack against you.
 
 Sacred Plants and Wood

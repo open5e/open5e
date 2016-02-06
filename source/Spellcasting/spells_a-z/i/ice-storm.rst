@@ -21,7 +21,7 @@ the cylinder must make a Dexterity saving throw. A creature takes 2d8
 bludgeoning damage and 4d6 cold damage on a failed save, or half as much
 damage on a successful one.
 
-Hailstones turn the storm’s area of effect into difficult terrain until
+Hailstones turn the storm's area of effect into difficult terrain until
 the end of your next turn.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 5th

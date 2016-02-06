@@ -22,14 +22,16 @@ Medium aberration, neutral
 
 **Senses** darkvision 60 ft., passive Perception 10
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 2 (450 XP)
 
 **Aberrant Ground**: The ground in a 10-foot radius around the mouther
 is doughlike difficult terrain. Each creature that starts its turn in
 that area must succeed on a DC 10 Strength saving throw or have its
-speed reduced to 0 until the start of its next turn. **Gibbering**: The
+speed reduced to 0 until the start of its next turn.
+
+**Gibbering**: The
 mouther babbles incoherently while it can see any creature and isn't
 incapacitated. Each creature that starts its turn within 20 feet of the
 mouther and can hear the gibbering must succeed on a DC 10 Wisdom saving
@@ -44,11 +46,15 @@ nothing if it can't make such an attack.
 Actions
 
 **Multiattack**: The gibbering mouther makes one bite attack and, if it
-can, uses its Blinding Spittle. **Bites**: *Melee Weapon Attack*: +2 to
+can, uses its Blinding Spittle.
+
+**Bites**: *Melee Weapon Attack*: +2 to
 hit, reach 5 ft., one creature. *Hit*: 17 (5d6) piercing damage. If the
 target is Medium or smaller, it must succeed on a DC 10 Strength saving
 throw or be knocked prone. If the target is killed by this damage, it is
-absorbed into the mouther. **Blinding Spittle (Recharge 5–6)**: The
+absorbed into the mouther.
+
+**Blinding Spittle (Recharge 5-6**: The
 mouther spits a chemical glob at a point it can see within 15 feet of
 it. The glob explodes in a blinding flash of light on impact. Each
 creature within 5 feet of the flash must succeed on a DC 13 Dexterity

@@ -20,8 +20,8 @@ The most common action to take in combat is the Attack action, whether
 you are swinging a sword, firing an arrow from a bow, or brawling with
 your fists.
 
-With this action, you make one melee or ranged attack. See the “Making
-an Attack” section for the rules that govern attacks.
+With this action, you make one melee or ranged attack. See the "Making
+an Attack" section for the rules that govern attacks.
 
 Certain features, such as the Extra Attack feature of the fighter, allow
 you to make more than one attack with this action.
@@ -52,7 +52,7 @@ instance, you can move up to 30 feet this turn if you dash.
 Disengage
 ~~~~~~~~~
 
-If you take the Disengage action, your movement doesn’t provoke
+If you take the Disengage action, your movement doesn't provoke
 opportunity attacks for the rest of the turn.
 
 Dodge
@@ -75,7 +75,7 @@ turn.
 
 Alternatively, you can aid a friendly creature in attacking a creature
 within 5 feet of you. You feint, distract the target, or in some other
-way team up to make your ally’s attack more effective. If your ally
+way team up to make your ally's attack more effective. If your ally
 attacks the target before your next turn, the first attack roll is made
 with advantage.
 
@@ -84,8 +84,8 @@ Hide
 
 When you take the Hide action, you make a Dexterity (Stealth) check in
 an attempt to hide, following the rules for hiding. If you succeed, you
-gain certain benefits, as described in the “Unseen Attackers and
-Targets” section later in this chapter.
+gain certain benefits, as described in the "Unseen Attackers and
+Targets" section later in this chapter.
 
 Ready
 ~~~~~
@@ -98,8 +98,8 @@ your next turn.
 First, you decide what perceivable circumstance will trigger your
 reaction. Then, you choose the action you will take in response to that
 trigger, or you choose to move up to your speed in response to it.
-Examples include “If the cultist steps on the trapdoor, I’ll pull the
-lever that opens it,” and “If the goblin steps next to me, I move away.”
+Examples include "If the cultist steps on the trapdoor, I'll pull the
+lever that opens it," and "If the goblin steps next to me, I move away."
 
 When the trigger occurs, you can either take your reaction right after
 the trigger finishes or ignore the trigger. Remember that you can take
@@ -109,7 +109,7 @@ When you ready a spell, you cast it as normal but hold its energy, which
 you release with your reaction when the trigger occurs. To be readied, a
 spell must have a casting time of 1 action, and
 
-holding onto the spell’s magic requires concentration. If your
+holding onto the spell's magic requires concentration. If your
 concentration is broken, the spell dissipates without taking effect. For
 example, if you are concentrating on the *web* spell and ready *magic
 missile*, your *web* spell ends, and if you take damage before you

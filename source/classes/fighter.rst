@@ -44,7 +44,7 @@ granted by your background:
 -  (*a*) chain mail or (*b*) leather armor, longbow, and 20 arrows
 -  (*a*) a martial weapon and a shield or (*b*) two martial weapons
 -  (*a*) a light crossbow and 20 bolts or (*b*) two handaxes
--  (*a*) a dungeoneer’s pack or (*b*) an explorer’s pack
+-  (*a*) a dungeoneer's pack or (*b*) an explorer's pack
 
 The Fighter
 ^^^^^^^^^^^
@@ -54,7 +54,7 @@ The Fighter
 **Fighting Style**
 
 You adopt a particular style of fighting as your specialty. Choose one
-of the following options. You can’t take a Fighting Style option more
+of the following options. You can't take a Fighting Style option more
 than once, even if you later get to choose again.
 
 Archery
@@ -141,7 +141,7 @@ Ability Score Improvement
 When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and
 19th level, you can increase one ability score of your choice by 2, or
 you can increase two ability scores of your choice by 1. As normal, you
-can’t increase an ability score above 20 using this feature.
+can't increase an ability score above 20 using this feature.
 
 Extra Attack
 ~~~~~~~~~~~~
@@ -156,7 +156,7 @@ Indomitable
 ~~~~~~~~~~~
 
 Beginning at 9th level, you can reroll a saving throw that you fail. If
-you do so, you must use the new roll, and you can’t use this feature
+you do so, you must use the new roll, and you can't use this feature
 again until you finish a long rest.
 
 You can use this feature twice between long rests starting at 13th level
@@ -188,7 +188,7 @@ Remarkable Athlete
 
 Starting at 7th level, you can add half your proficiency bonus (round
 up) to any Strength, Dexterity, or Constitution check you make that
-doesn’t already use your proficiency bonus.
+doesn't already use your proficiency bonus.
 
 In addition, when you make a running long jump, the distance you can
 cover increases by a number of feet equal to your Strength modifier.
@@ -203,7 +203,7 @@ Superior Critical
 ~~~~~~~~~~~~~~~~~
 
 Starting at 15th level, your weapon attacks score a critical hit on a
-roll of 18–20.
+roll of 18-20.
 
 Survivor
 ~~~~~~~~
@@ -211,4 +211,4 @@ Survivor
 At 18th level, you attain the pinnacle of resilience in battle. At the
 start of each of your turns, you regain hit points equal to 5 + your
 Constitution modifier if you have no more than half of your hit points
-left. You don’t gain this benefit if you have 0 hit points.
+left. You don't gain this benefit if you have 0 hit points.

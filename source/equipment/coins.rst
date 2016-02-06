@@ -12,14 +12,14 @@ copper piece (cp). With one gold piece, a character can buy a bedroll,
 can earn one gold piece a day. The gold piece is the standard unit of
 measure for wealth, even if the coin itself is not commonly used. When
 merchants discuss deals that involve goods or services worth hundreds or
-thousands of gold pieces, the transactions don’t usually involve the
+thousands of gold pieces, the transactions don't usually involve the
 exchange of individual coins. Rather, the gold piece is a standard
 measure of value, and the actual exchange is in gold bars, letters of
 credit, or valuable goods.
 
 One gold piece is worth ten silver pieces, the most prevalent coin among
-commoners. A silver piece buys a laborer’s work for half a day, a flask
-of lamp oil, or a night’s rest in a poor inn.
+commoners. A silver piece buys a laborer's work for half a day, a flask
+of lamp oil, or a night's rest in a poor inn.
 
 One silver piece is worth ten copper pieces, which are common among
 laborers and beggars. A single copper piece buys a candle, a torch, or a

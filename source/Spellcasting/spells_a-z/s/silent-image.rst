@@ -18,7 +18,7 @@ Silent Image
 You create the image of an object, a creature, or some other visible
 phenomenon that is no larger than a 15 foot cube. The image appears at a
 spot within range and lasts for the duration. The image is purely
-visual; it isn’t accompanied by sound, smell, or other sensory effects.
+visual; it isn't accompanied by sound, smell, or other sensory effects.
 
 You can use your action to cause the image to move to any spot within
 range. As the image changes location, you can alter its appearance so

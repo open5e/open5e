@@ -20,13 +20,13 @@ again.
 Any creature other than you that sees its reflection in the activated
 mirror while within 30 feet of it must succeed on a DC 15 Charisma
 saving throw or be trapped, along with anything it is wearing or
-carrying, in one of the mirror’s twelve extradimensional cells. This
-saving throw is made with advantage if the creature knows the mirror’s
+carrying, in one of the mirror's twelve extradimensional cells. This
+saving throw is made with advantage if the creature knows the mirror's
 nature, and constructs succeed on the saving throw automatically.
 
 An extradimensional cell is an infinite expanse filled with thick fog
-that reduces visibility to 10 feet. Creatures trapped in the mirror’s
-cells don’t age, and they don’t need to eat, drink, or sleep. A creature
+that reduces visibility to 10 feet. Creatures trapped in the mirror's
+cells don't age, and they don't need to eat, drink, or sleep. A creature
 trapped within a cell can escape using magic that permits planar travel.
 Otherwise, the creature is confined to the cell until freed.
 
@@ -40,7 +40,7 @@ unoccupied spaces near it.
 While within 5 feet of the mirror, you can use an action to speak the
 name of one creature trapped in it or call out a particular cell by
 number. The creature named or contained in the named cell appears as an
-image on the mirror’s surface. You and the creature can then communicate
+image on the mirror's surface. You and the creature can then communicate
 normally.
 
 In a similar way, you can use an action to speak a second command word
@@ -56,5 +56,5 @@ Mithral Armor
 Mithral is a light, flexible metal. A mithral chain shirt or breastplate
 can be worn under normal clothes. If the armor normally imposes
 disadvantage on Dexterity (Stealth) checks or has a Strength
-requirement, the mithral version of the armor doesn’t.
+requirement, the mithral version of the armor doesn't.
 

@@ -43,7 +43,7 @@ granted by your background:
 
 -  (*a*) five javelins or (*b*) any simple melee weapon
 
--  (*a*) a priest’s pack or (*b*) an explorer’s pack
+-  (*a*) a priest's pack or (*b*) an explorer's pack
 
 -  Chain mail and a holy symbol
 
@@ -138,7 +138,7 @@ Fighting Style
 ^^^^^^^^^^^^^^
 
 At 2nd level, you adopt a style of fighting as your specialty. Choose
-one of the following options. You can’t take a Fighting Style option
+one of the following options. You can't take a Fighting Style option
 more than once, even if you later get to choose again.
 
 Defense
@@ -178,7 +178,7 @@ Preparing and Casting Spells
 
 The Paladin table shows how many spell slots you have to cast your
 spells. To cast one of your paladin spells of 1st level or higher, you
-must expend a slot of the spell’s level or higher. You regain all
+must expend a slot of the spell's level or higher. You regain all
 expended spell slots when you finish a long rest.
 
 You prepare the list of paladin spells that are available for you to
@@ -190,8 +190,8 @@ of a level for which you have spell slots.
 For example, if you are a 5th-level paladin, you have four 1st-level and
 two 2nd-level spell slots. With a Charisma of 14, your list of prepared
 spells can include four spells of 1st or 2nd level, in any combination.
-If you prepare the 1st-level spell *cure wounds,* you can cast it using
-a 1st-level or a 2nd- level slot. Casting the spell doesn’t remove it
+If you prepare the 1st-level spell *cure wounds*, you can cast it using
+a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it
 from your list of prepared spells.
 
 You can change your list of prepared spells when you finish a long rest.
@@ -223,9 +223,8 @@ Divine Smite
 
 Starting at 2nd level, when you hit a creature with a melee weapon
 attack, you can expend one spell slot to deal radiant damage to the
-target, in addition to the weapon’s damage. The extra damage is 2d8 for
+target, in addition to the weapon's damage. The extra damage is 2d8 for
 a 1st-level spell slot, plus 1d8 for each spell level
-
 higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the
 target is an undead or a fiend.
 
@@ -253,10 +252,10 @@ Oath Spells
 
 Each oath has a list of associated spells. You gain access to these
 spells at the levels specified in the oath description. Once you gain
-access to an oath spell, you always have it prepared. Oath spells don’t
+access to an oath spell, you always have it prepared. Oath spells don't
 count against the number of spells you can prepare each day.
 
-If you gain an oath spell that doesn’t appear on the paladin spell list,
+If you gain an oath spell that doesn't appear on the paladin spell list,
 the spell is nonetheless a paladin spell for you.
 
 Channel Divinity
@@ -276,7 +275,7 @@ Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
-increase two ability scores of your choice by 1. As normal, you can’t
+increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Extra Attack
@@ -299,7 +298,7 @@ Aura of Courage
 ^^^^^^^^^^^^^^^^^^
 
 Starting at 10th level, you and friendly creatures within 10 feet of you
-can’t be frightened while you are conscious.
+can't be frightened while you are conscious.
 
 At 18th level, the range of this aura increases to 30 feet.
 
@@ -328,10 +327,10 @@ Sacred Oaths
 Becoming a paladin involves taking vows that commit the paladin to the
 cause of righteousness, an active path of fighting wickedness. The final
 oath, taken when he or she reaches 3rd level, is the culmination of all
-the paladin’s training. Some characters with this class don’t consider
+the paladin's training. Some characters with this class don't consider
 themselves true paladins until they have reached 3rd level and made this
 oath. For others, the actual swearing of the oath is a formality, an
-official stamp on what has always been true in the paladin’s heart.
+official stamp on what has always been true in the paladin's heart.
 
 Oath of Devotion
 ----------------
@@ -342,9 +341,9 @@ warriors, these paladins meet the ideal of the knight in shining armor,
 acting with honor in pursuit of justice and the greater good. They hold
 themselves to the highest standards of conduct, and some, for better or
 worse, hold the rest of the world to the same standards. Many who swear
-this oath are devoted to gods of law and good and use their gods’ tenets
-as the measure of their devotion. They hold angels—the perfect servants
-of good—as their ideals, and incorporate images of angelic wings into
+this oath are devoted to gods of law and good and use their gods' tenets
+as the measure of their devotion. They hold angels---the perfect servants
+of good---as their ideals, and incorporate images of angelic wings into
 their helmets or coats of arms.
 
 Tenets of Devotion
@@ -353,18 +352,18 @@ Tenets of Devotion
 Though the exact words and strictures of the Oath of Devotion vary,
 paladins of this oath share these tenets.
 
-***Honesty.*** Don’t lie or cheat. Let your word be your promise.
+**Honesty.** Don't lie or cheat. Let your word be your promise.
 
-***Courage.*** Never fear to act, though caution is wise.
+**Courage.** Never fear to act, though caution is wise.
 
-***Compassion.*** Aid others, protect the weak, and punish those who
+**Compassion.** Aid others, protect the weak, and punish those who
 threaten them. Show mercy to your foes, but temper it with wisdom.
 
-***Honor.*** Treat others with fairness, and let your honorable deeds be
+**Honor.** Treat others with fairness, and let your honorable deeds be
 an example to them. Do as much good as possible while causing the least
 amount of harm.
 
-***Duty.*** Be responsible for your actions and their consequences,
+**Duty.** Be responsible for your actions and their consequences,
 protect those entrusted to your care, and obey those who have just
 authority over you.
 
@@ -376,15 +375,15 @@ You gain oath spells at the paladin levels listed.
 Oath of Devotion Spells
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-===========   ================
-Paladin       Level Spells
-===========   ================
+============= ================
+Paladin Level Spells
+============= ================
 3rd           :ref:`srd:protection-from-evil-and-good`, :ref:`srd:sanctuary`
 5th           :ref:`srd:lesser-restoration`, :ref:`srd:zone-of-truth`
 9th           :ref:`srd:beacon-of-hope`, :ref:`srd:dispel-magic`
 13th          :ref:`srd:freedom-of-movement`, *guardian of faith*
 17th          :ref:`srd:commune`, :ref:`srd:flame-strike`
-===========   ================
+============= ================
 
 Channel Divinity
 ^^^^^^^^^^^^^^^^
@@ -392,7 +391,7 @@ Channel Divinity
 When you take this oath at 3rd level, you gain the following two Channel
 Divinity options.
 
-***Sacred Weapon.*** As an action, you can imbue one weapon that you are
+**Sacred Weapon.** As an action, you can imbue one weapon that you are
 holding with positive energy, using your Channel Divinity. For 1 minute,
 you add your Charisma modifier to attack rolls made with
 
@@ -404,24 +403,24 @@ You can end this effect on your turn as part of any other action. If you
 are no longer holding or carrying this weapon, or if you fall
 unconscious, this effect ends.
 
-***Turn the Unholy.*** As an action, you present your holy symbol and
+**Turn the Unholy.** As an action, you present your holy symbol and
 speak a prayer censuring fiends and undead, using your Channel Divinity.
 Each fiend or undead that can see or hear you within 30 feet of you must
 make a Wisdom saving throw. If the creature fails its saving throw, it
 is turned for 1 minute or until it takes damage.
 
 A turned creature must spend its turns trying to move as far away from
-you as it can, and it can’t willingly move to a space within 30 feet of
-you. It also can’t take reactions. For its action, it can use only the
+you as it can, and it can't willingly move to a space within 30 feet of
+you. It also can't take reactions. For its action, it can use only the
 Dash action or try to escape from an effect that prevents it from
-moving. If there’s nowhere to move, the creature can use the Dodge
+moving. If there's nowhere to move, the creature can use the Dodge
 action.
 
 Aura of Devotion
 ^^^^^^^^^^^^^^^^
 
 Starting at 7th level, you and friendly creatures within 10 feet of you
-can’t be charmed while you are conscious.
+can't be charmed while you are conscious.
 
 At 18th level, the range of this aura increases to 30 feet.
 
@@ -444,7 +443,7 @@ creature takes 10 radiant damage.
 In addition, for the duration, you have advantage on saving throws
 against spells cast by fiends or undead.
 
-Once you use this feature, you can’t use it again until you finish a
+Once you use this feature, you can't use it again until you finish a
 long rest.
 
 Breaking Your Oath
@@ -453,7 +452,6 @@ Breaking Your Oath
 A paladin tries to hold to the highest standards of conduct, but
 even the most virtuous paladin is fallible. Sometimes the right path
 proves too demanding, sometimes a situation calls
-
 for the lesser of two evils, and sometimes the heat of emotion
 causes a paladin to transgress his or her oath.
 
@@ -465,6 +463,6 @@ self-denial. After a rite of confession and forgiveness, the
 paladin starts fresh.
 
 If a paladin willfully violates his or her oath and shows no sign of
-repentance, the consequences can be more serious. At the GM’s
+repentance, the consequences can be more serious. At the GM's
 discretion, an impenitent paladin might be forced to abandon this
 class and adopt another.

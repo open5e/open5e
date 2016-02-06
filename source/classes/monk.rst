@@ -26,7 +26,7 @@ Proficiencies
 
 **Weapons:** Simple weapons, shortswords
 
-**Tools:** Choose one type of artisan’s tools or one musical
+**Tools:** Choose one type of artisan's tools or one musical
 instrument
 
 **Saving Throws:** Strength, Dexterity
@@ -42,7 +42,7 @@ You start with the following equipment, in addition to the equipment
 granted by your background:
 
 -  (*a*) a shortsword or (*b*) any simple weapon
--  (*a*) a dungeoneer’s pack or (*b*) an explorer’s pack
+-  (*a*) a dungeoneer's pack or (*b*) an explorer's pack
 -  10 darts
 
 The Monk
@@ -102,15 +102,15 @@ Martial Arts
 ~~~~~~~~~~~~
 At 1st level, your practice of martial arts gives you mastery of
 combat styles that use unarmed strikes and monk weapons, which are
-shortswords and any simple melee weapons that don’t have the two-
+shortswords and any simple melee weapons that don't have the two-
 handed or heavy property.
 
 You gain the following benefits while you are unarmed or wielding
-only monk weapons and you aren’t wearing armor or wielding a shield:
+only monk weapons and you aren't wearing armor or wielding a shield:
 
 -  You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.
 -  You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, ashown in the Martial Arts column of the Monk table.
--  When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven’t already taken a bonus action this turn.
+-  When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.
 
 Certain monasteries use specialized forms of the monk weapons. For
 example, you might use a club that is two lengths of wood connected by a
@@ -158,7 +158,7 @@ into yourself. You must spend at least 30 minutes of the rest meditating
 to regain your ki points.
 
 Some of your ki features require your target to make a saving throw to
-resist the feature’s effects. The saving throw DC is calculated as
+resist the feature's effects. The saving throw DC is calculated as
 follows:
 
   **Ki save DC** = 8 + your proficiency bonus + your Wisdom modifier
@@ -203,7 +203,7 @@ Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
-increase two ability scores of your choice by 1. As normal, you can’t
+increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Slow Fall
@@ -223,7 +223,7 @@ Stunning Strike
 ~~~~~~~~~~~~~~~
 
 Starting at 5th level, you can interfere with the flow of ki in an
-opponent’s body. When you hit another creature with a melee weapon
+opponent's body. When you hit another creature with a melee weapon
 attack, you can spend 1 ki point to attempt a stunning strike. The
 target must succeed on a Constitution saving throw or be stunned until
 the end of your next turn.
@@ -238,7 +238,7 @@ Evasion
 ~~~~~~~
 
 At 7th level, your instinctive agility lets you dodge out of the way of
-certain area effects, such as a blue dragon’s lightning breath or a
+certain area effects, such as a blue dragon's lightning breath or a
 *fireball* spell. When you are subjected to an effect that allows you to
 make a Dexterity saving throw to take only half damage, you instead take
 no damage if you succeed on the saving throw, and only half damage if
@@ -285,7 +285,7 @@ Timeless Body
 ~~~~~~~~~~~~~
 
 At 15th level, your ki sustains you so that you suffer none of the
-frailty of old age, and you can’t be aged magically. You can still die
+frailty of old age, and you can't be aged magically. You can still die
 of old age, however. In addition, you no longer need food or water.
 
 Empty Body
@@ -296,7 +296,7 @@ become invisible for 1 minute. During that time, you also have
 resistance to all damage but force damage.
 
 Additionally, you can spend 8 ki points to cast the *astral projection*
-spell, without needing material components. When you do so, you can’t
+spell, without needing material components. When you do so, you can't
 take any other creatures with you.
 
 Perfect Self
@@ -325,13 +325,13 @@ Open Hand Technique
 ~~~~~~~~~~~~~~~~~~~
 
 Starting when you choose this tradition at 3rd level, you can manipulate
-your enemy’s ki when you harness your own. Whenever you hit a creature
+your enemy's ki when you harness your own. Whenever you hit a creature
 with one of the attacks granted by your Flurry of Blows, you can impose
 one of the following effects on that target:
 
 -  It must succeed on a Dexterity saving throw or be knocked prone.
 -  It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.
--  It can’t take reactions until the end of your next turn.
+-  It can't take reactions until the end of your next turn.
 
 Wholeness of Body
 ~~~~~~~~~~~~~~~~~
@@ -353,7 +353,7 @@ Quivering Palm
 ~~~~~~~~~~~~~~
 
 At 17th level, you gain the ability to set up lethal vibrations in
-someone’s body. When you hit a creature with an unarmed strike, you can
+someone's body. When you hit a creature with an unarmed strike, you can
 spend 3 ki points to start these imperceptible vibrations, which last
 for a number of days equal to your monk level. The vibrations are
 harmless unless you use your action to end them. To do so, you and the

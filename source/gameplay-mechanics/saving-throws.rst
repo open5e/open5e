@@ -4,8 +4,8 @@
 Saving Throws
 -------------
 
-A saving throw—also called a save—represents an attempt to resist a
-spell, a trap, a poison, a disease, or a similar threat. You don’t
+A saving throw---also called a save---represents an attempt to resist a
+spell, a trap, a poison, a disease, or a similar threat. You don't
 normally decide to make a saving throw; you are forced to make one
 because your character or monster is at risk of harm.
 
@@ -23,7 +23,7 @@ her proficiency bonus to saving throws made using a particular ability
 score. Some monsters have saving throw proficiencies as well. The
 Difficulty Class for a saving throw is determined by the effect that
 causes it. For example, the DC for a saving throw allowed by a spell is
-determined by the caster’s spellcasting ability and proficiency bonus.
+determined by the caster's spellcasting ability and proficiency bonus.
 
 The result of a successful or failed saving throw is also detailed in
 the effect that allows the save. Usually, a successful save means that a

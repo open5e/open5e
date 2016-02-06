@@ -5,7 +5,7 @@ Fantasy-Historical Pantheons
 ----------------------------
 
 The Celtic, Egyptian, Greek, and Norse pantheons are fantasy
-interpretations of historical religions from our world’s ancient times.
+interpretations of historical religions from our world's ancient times.
 They include deities that are most appropriate for use in a game,
 divorced from their historical context in the real world and united into
 pantheons that serve the needs of the game.
@@ -13,9 +13,9 @@ pantheons that serve the needs of the game.
 The Celtic Pantheon
 ^^^^^^^^^^^^^^^^^^^
 
-It’s said that something wild lurks in the heart of every soul, a space
+It's said that something wild lurks in the heart of every soul, a space
 that thrills to the sound of geese calling at night, to the whispering
-wind through the pines, to the unexpected red of mistletoe on an oak—and
+wind through the pines, to the unexpected red of mistletoe on an oak---and
 it is in this space that the Celtic gods dwell. They sprang from the
 brook and stream, their might heightened by the strength of the oak and
 the beauty of the woodlands and open moor. When the first forester dared
@@ -32,7 +32,7 @@ The gods of Olympus make themselves known with the gentle lap of waves
 against the shores and the crash of the thunder among the
 cloud-­enshrouded peaks. The thick boar-­infested woods and the sere,
 olive-­covered hillsides hold evidence of their passing. Every aspect of
-nature echoes with their presence, and they’ve made a place for
+nature echoes with their presence, and they've made a place for
 themselves inside the human heart, too.
 
 The Egyptian Pantheon
@@ -41,7 +41,7 @@ The Egyptian Pantheon
 These gods are a young dynasty of an ancient divine family, heirs to the
 rulership of the cosmos and the
 
-maintenance of the divine principle of Ma’at—the fundamental order of
+maintenance of the divine principle of Ma'at---the fundamental order of
 truth, justice, law, and order that puts gods, mortal pharaohs, and
 ordinary men and women in their logical and rightful place in the
 universe.
@@ -57,12 +57,12 @@ The Norse Pantheon
 
 Where the land plummets from the snowy hills into the icy fjords below,
 where the longboats draw up on to the beach, where the glaciers flow
-forward and retreat with every fall and spring—this is the land of the
-Vikings, the home of the Norse pantheon. It’s a brutal clime, and one
+forward and retreat with every fall and spring---this is the land of the
+Vikings, the home of the Norse pantheon. It's a brutal clime, and one
 that calls for brutal living. The warriors of the land have had to adapt
-to the harsh conditions in order to survive, but they haven’t been too
+to the harsh conditions in order to survive, but they haven't been too
 twisted by the needs of their environment. Given the necessity of
-raiding for food and wealth, it’s surprising the mortals turned out as
+raiding for food and wealth, it's surprising the mortals turned out as
 well as they did. Their powers reflect the need these warriors had for
 strong leadership and decisive action. Thus, they see their deities in
 every bend of a river, hear them in the crash of the thunder and the
@@ -114,7 +114,7 @@ Greek Deities
 +----------------------------------------------+--------------+---------------------------+-------------------------------------------------------+
 | Athena, goddess of wisdom and civilizat      | LG           |  Knowledge, War           | Owl                                                   |
 +----------------------------------------------+--------------+---------------------------+-------------------------------------------------------+
-| Demeter, goddess of agriculture              | NG           |  Life                     | Mare’s head                                           |
+| Demeter, goddess of agriculture              | NG           |  Life                     | Mare's head                                           |
 +----------------------------------------------+--------------+---------------------------+-------------------------------------------------------+
 | Dionysus, god of mirth and wine              | CN           |  Life                     | Thyrsus (staff tipped with pine cone)                 |
 +----------------------------------------------+--------------+---------------------------+-------------------------------------------------------+
@@ -126,7 +126,7 @@ Greek Deities
 +----------------------------------------------+--------------+---------------------------+-------------------------------------------------------+
 | Hera, goddess of marriage and intrigue       | CN           |  Trickery                 | Fan of peacock feathers                               |
 +----------------------------------------------+--------------+---------------------------+-------------------------------------------------------+
-| Hercules, god of strength and adventure      | CG           |  Tempest, War             | Lion’s head                                           |
+| Hercules, god of strength and adventure      | CG           |  Tempest, War             | Lion's head                                           |
 +----------------------------------------------+--------------+---------------------------+-------------------------------------------------------+
 | Hermes, god of travel and commerce           | CG           |  Trickery                 | Caduceus (winged staff and serpents)                  |
 +----------------------------------------------+--------------+---------------------------+-------------------------------------------------------+
@@ -155,7 +155,7 @@ Frey, god of fertility and the sun              NG              Life, Light     
 Freya, goddess of fertility and love            NG              Life               Falcon                                       
 Frigga, goddess of birth and fertility          N               Life, Light        Cat                                          
 Heimdall, god of watchfulness and loyalty       LG              Light, War         Curling musical horn                        
-Hel, goddess of the underworld                  NE              Death              Woman’s face, rotting on one side            
+Hel, goddess of the underworld                  NE              Death              Woman's face, rotting on one side            
 Hermod, god of luck                             CN              Trickery           Winged scroll                                
 Loki, god of thieves and trickery               CE              Trickery           Flame                                        
 Njord, god of sea and wind                      NG              Nature,            Tempest  Gold coin                            

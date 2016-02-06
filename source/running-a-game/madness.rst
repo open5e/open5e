@@ -4,7 +4,7 @@
 Madness
 -------
 
-In a typical campaign, characters aren’t driven mad by the horrors they
+In a typical campaign, characters aren't driven mad by the horrors they
 face and the carnage they inflict day after day, but sometimes the
 stress of being an adventurer can be too much to bear. If your campaign
 has a strong horror theme, you might want to use madness as a way to
@@ -60,7 +60,7 @@ Short-­Term Madness
 +------------+-----------------------------------------------------------------------------------------------------------------------------------+
 | 61--70     |    The character experiences vivid hallucinations and has disadvantage on ability checks.                                         |
 +------------+-----------------------------------------------------------------------------------------------------------------------------------+
-| 71--75     |    The character does whatever anyone tell him or her to do that isn’t obviously self--destructive                                |
+| 71--75     |    The character does whatever anyone tell him or her to do that isn't obviously self--destructive                                |
 +------------+-----------------------------------------------------------------------------------------------------------------------------------+
 | 76--80     |    The character experiences an overpowering urge to eat something strange such as dirt, slime, or offal.                         |
 +------------+-----------------------------------------------------------------------------------------------------------------------------------+
@@ -85,13 +85,13 @@ Long-­Term Madness
 +------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 41--45     | The character experiences a powerful delusion. Choose a potion. The character imagines that he or she is under its effects.                                                                                                               |
 +------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 46--55     | The character becomes attached to a “lucky charm,” such as a person or an object, and has disadvantage on attack rolls, ability checks, and saving throws while more than 30 feet from it.                                                |
+| 46--55     | The character becomes attached to a "lucky charm," such as a person or an object, and has disadvantage on attack rolls, ability checks, and saving throws while more than 30 feet from it.                                                |
 +------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 56--65     | The character is blinded (25%) or deafened (75%).                                                                                                                                                                                         |
 +------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 66--75     | The character experiences uncontrollable tremors or tics, which impose disadvantage on attack rolls, ability checks, and saving throws that involve Strength or Dexterity.                                                                |
 +------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| 76--85     | The character suffers from partial amnesia. The character knows who he or she is and retains racial traits and class features, but doesn’t recognize other people or remember anything that happened before the madness took effect.      |
+| 76--85     | The character suffers from partial amnesia. The character knows who he or she is and retains racial traits and class features, but doesn't recognize other people or remember anything that happened before the madness took effect.      |
 +------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | 86--90     | Whenever the character takes damage, he or she must succeed on a DC 15 Wisdom saving throw or be affected as though he or she failed a saving throw against the confusion spell. The confusion effect lasts for 1 minute.                 |
 +------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -106,29 +106,29 @@ Indefinite Madness
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | d100         | Flaw (lasts until cured)                                                                                                                      |
 +==============+===============================================================================================================================================+
-| 01--15       | “Being drunk keeps me sane.”                                                                                                                  |
+| 01--15       | "Being drunk keeps me sane."                                                                                                                  |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| 16--25       | “I keep whatever I find.”                                                                                                                     |
+| 16--25       | "I keep whatever I find."                                                                                                                     |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| 26--30       | “I try to become more like someone else I know—adopting his or her style of dress, mannerisms, and name.”                                     |
+| 26--30       | "I try to become more like someone else I know---adopting his or her style of dress, mannerisms, and name."                                   |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| 31--35       | “I must bend the truth, exaggerate, or outright lie to be interesting to other people.”                                                       |
+| 31--35       | "I must bend the truth, exaggerate, or outright lie to be interesting to other people."                                                       |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| 36--45       | “Achieving my goal is the only thing of interest to me, and I’ll ignore everything else to pursue it.”                                        |
+| 36--45       | "Achieving my goal is the only thing of interest to me, and I'll ignore everything else to pursue it."                                        |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| 46--50       | “I find it hard to care about anything that goes on around me.”                                                                               |
+| 46--50       | "I find it hard to care about anything that goes on around me."                                                                               |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| 51--55       | “I don’t like the way people judge me all the time.”                                                                                          |
+| 51--55       | "I don't like the way people judge me all the time."                                                                                          |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| 56--70       | “I am the smartest, wisest, strongest, fastest, and most beautiful person I know.”                                                            |
+| 56--70       | "I am the smartest, wisest, strongest, fastest, and most beautiful person I know."                                                            |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| 71--80       | “I am convinced that powerful enemies are hunting me, and their agents are everywhere I go. I am sure they’re watching me all the time.”      |
+| 71--80       | "I am convinced that powerful enemies are hunting me, and their agents are everywhere I go. I am sure they're watching me all the time."      |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| 81--85       | “There’s only one person I can trust. And only I can see this special friend.”                                                                |
+| 81--85       | "There's only one person I can trust. And only I can see this special friend."                                                                |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| 86--95       | “I can’t take anything seriously. The more serious the situation, the funnier I find it.”                                                     |
+| 86--95       | "I can't take anything seriously. The more serious the situation, the funnier I find it."                                                     |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| 96--100      | “I’ve discovered that I really like killing people.”                                                                                          |
+| 96--100      | "I've discovered that I really like killing people."                                                                                          |
 +--------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 
 Curing Madness

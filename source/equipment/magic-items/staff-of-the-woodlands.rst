@@ -16,7 +16,7 @@ The staff has 10 charges for the following properties. It regains 1d6 +
 d20. On a 1, the staff loses its properties and becomes a nonmagical
 quarterstaff.
 
-**Spells.** You can use an action to expend 1 or more of the staff’s
+**Spells.** You can use an action to expend 1 or more of the staff's
 charges to cast one of the following spells from it, using your spell
 save DC: *animal friendship* (1 charge), *awaken* (5 charges),
 *barkskin* (2 charges), *locate animals or plants* (2 charges), *speak

@@ -18,8 +18,8 @@ decorated with gems worth at least 1,500 gp)
 
 Choose a spell of 5th level or lower that you can cast, that has a
 casting time of 1 action, and that can target you. You cast that
-spell—called the contingent spell—as part of casting contingency,
-expending spell slots for both, but the contingent spell doesn’t come
+spell---called the contingent spell---as part of casting contingency,
+expending spell slots for both, but the contingent spell doesn't come
 into effect. Instead, it takes effect when a certain circumstance
 occurs. You describe that circumstance when you cast the two spells. For
 example, a contingency cast with water breathing might stipulate that

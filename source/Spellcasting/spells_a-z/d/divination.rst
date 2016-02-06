@@ -17,12 +17,12 @@ consumes)
 
 **Duration:** Instantaneous
 
-Your magic and an offering put you in contact with a god or a god’s
+Your magic and an offering put you in contact with a god or a god's
 servants. You ask a single question concerning a specific goal, event,
 or activity to occur within 7 days. The GM offers a truthful reply. The
 reply might be a short phrase, a cryptic rhyme, or an omen.
 
-The spell doesn’t take into account any possible circumstances that
+The spell doesn't take into account any possible circumstances that
 might change the outcome, such as the casting of additional spells or
 the loss or gain of a companion.
 

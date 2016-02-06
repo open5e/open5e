@@ -13,7 +13,7 @@ rules here.
 
 Your movement can include jumping, climbing, and swimming. These
 different modes of movement can be combined with walking, or they can
-constitute your entire move. However you’re moving, you deduct the
+constitute your entire move. However you're moving, you deduct the
 distance of each part of your move from your speed until it is used up
 or until you are done moving.
 
@@ -38,9 +38,9 @@ Using Different Speeds
 
 If you have more than one speed, such as your walking speed and a flying
 speed, you can switch back and forth between your speeds during your
-move. Whenever you switch, subtract the distance you’ve already moved
+move. Whenever you switch, subtract the distance you've already moved
 from the new speed. The result determines how much farther you can move.
-If the result is 0 or less, you can’t use the new speed during the
+If the result is 0 or less, you can't use the new speed during the
 current move.
 
 For example, if you have a speed of 30 and a flying speed of 60 because
@@ -52,7 +52,7 @@ Difficult Terrain
 
 Combat rarely takes place in bare rooms or on featureless plains.
 Boulder-­strewn caverns, briar-­ choked forests, treacherous
-staircases—the setting of a typical fight contains difficult terrain.
+staircases---the setting of a typical fight contains difficult terrain.
 
 Every foot of movement in difficult terrain costs 1 extra foot. This
 rule is true even if multiple things in a space count as difficult
@@ -74,7 +74,7 @@ speed. **Standing up** takes more effort; doing so costs an amount of
 movement equal to half your speed. For example, if your speed is 30
 feet, you must spend
 
-15 feet of movement to stand up. You can’t stand up if you don’t have
+15 feet of movement to stand up. You can't stand up if you don't have
 enough movement left or if your speed is 0.
 
 To move while prone, you must **crawl** or use
@@ -133,15 +133,15 @@ feet of movement.
 Moving Around Other Creatures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can move through a nonhostile creature’s space. In contrast, you can
-move through a hostile creature’s space only if the creature is at least
-two sizes larger or smaller than you. Remember that another creature’s
+You can move through a nonhostile creature's space. In contrast, you can
+move through a hostile creature's space only if the creature is at least
+two sizes larger or smaller than you. Remember that another creature's
 space is difficult terrain for you.
 
-Whether a creature is a friend or an enemy, you can’t willingly end your
+Whether a creature is a friend or an enemy, you can't willingly end your
 move in its space.
 
-If you leave a hostile creature’s reach during your move, you provoke an
+If you leave a hostile creature's reach during your move, you provoke an
 opportunity attack, as explained later in the chapter.
 
 Flying Movement
@@ -164,37 +164,34 @@ combat. Objects sometimes use the same size categories.
 Size Categories
 ^^^^^^^^^^^^^^^
 
-    **Size Space**
-
-    Tiny 2½ by 2½ ft.
-
-    Small 5 by 5 ft.
-
-    Medium 5 by 5 ft.
-
-    Large 10 by 10 ft.
-
-    Huge 15 by 15 ft. Gargantuan 20 by 20 ft. or larger
+=======  ================================================
+Size     Space
+=======  ================================================
+Tiny     2½ by 2½ ft.
+Small    5 by 5 ft.
+Medium   5 by 5 ft.
+Large    10 by 10 ft.
+Huge     15 by 15 ft. Gargantuan 20 by 20 ft. or larger
+=======  ================================================
 
 Space
 ^^^^^
 
-A creature’s space is the area in feet that it effectively controls in
+A creature's space is the area in feet that it effectively controls in
 combat, not an expression of its physical dimensions. A typical Medium
-creature isn’t 5 feet wide, for example, but it does control a space
+creature isn't 5 feet wide, for example, but it does control a space
 that wide. If a Medium hobgoblin stands in a 5-­ foot-­wide doorway,
-other creatures can’t get through unless the hobgoblin lets them.
+other creatures can't get through unless the hobgoblin lets them.
 
-    A creature’s space also reflects the area it needs to
-
-fight effectively. For that reason, there’s a limit to the number of
+A creature's space also reflects the area it needs to
+fight effectively. For that reason, there's a limit to the number of
 creatures that can surround another creature in combat. Assuming Medium
 combatants, eight creatures can fit in a 5-­foot radius around another
 one.
 
 Because larger creatures take up more space, fewer of them can surround
 a creature. If five Large creatures crowd around a Medium or smaller
-one, there’s little room for anyone else. In contrast, as many as twenty
+one, there's little room for anyone else. In contrast, as many as twenty
 Medium creatures can surround a Gargantuan one.
 
 Squeezing into a Smaller Space
@@ -202,8 +199,8 @@ Squeezing into a Smaller Space
 
 A creature can squeeze through a space that is large enough for a
 creature one size smaller than it. Thus, a Large creature can squeeze
-through a passage that’s only 5 feet wide. While squeezing through a
+through a passage that's only 5 feet wide. While squeezing through a
 space, a creature must spend 1 extra foot for every foot it moves there,
 and it has disadvantage on attack rolls and Dexterity saving throws.
-Attack rolls against the creature have advantage while it’s in the
+Attack rolls against the creature have advantage while it's in the
 smaller space.

@@ -15,10 +15,10 @@ Disguise Self
 
 **Duration:** 1 hour
 
-You make yourself—including your clothing, armor, weapons, and other
-belongings on your person— look different until the spell ends or until
+You make yourself---including your clothing, armor, weapons, and other
+belongings on your person--- look different until the spell ends or until
 you use your action to dismiss it. You can seem 1 foot shorter or taller
-and can appear thin, fat, or in between. You can’t change your body
+and can appear thin, fat, or in between. You can't change your body
 type, so you must adopt a form that has the same basic arrangement of
 limbs. Otherwise, the extent of the illusion is up to you.
 

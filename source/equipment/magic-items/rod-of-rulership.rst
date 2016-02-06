@@ -13,7 +13,7 @@ target must succeed on a DC 15 Wisdom saving throw or be charmed by you
 for 8 hours. While charmed in this way, the creature regards you as its
 trusted leader. If harmed by you or your companions, or commanded to do
 something contrary to its nature, a target ceases to be charmed in this
-way. The rod can’t be used again until the next dawn.
+way. The rod can't be used again until the next dawn.
 
 Rod of Security
 ^^^^^^^^^^^^^^^
@@ -34,12 +34,12 @@ example, a flower picked from a garden in the paradise disappears if it
 is taken outside the extraplanar space.
 
 For each hour spent in the paradise, a visitor regains hit points as if
-it had spent 1 Hit Die. Also, creatures don’t age while in the paradise,
+it had spent 1 Hit Die. Also, creatures don't age while in the paradise,
 although time passes normally. Visitors can remain in the paradise for
 up to 200 days divided by the number of creatures present (round down).
 
 When the time runs out or you use an action to end it, all visitors
 reappear in the location they occupied when you activated the rod, or an
-unoccupied space nearest that location. The rod can’t be used again
+unoccupied space nearest that location. The rod can't be used again
 until ten days have passed.
 

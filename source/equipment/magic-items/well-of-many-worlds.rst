@@ -15,7 +15,7 @@ solid surface, whereupon it creates a two-­way portal to another world
 or plane of existence. Each time the item opens a portal, the GM decides
 where it leads. You can use an action to close an open portal by taking
 hold of the edges of the cloth and folding it up. Once *well of many
-worlds* has opened a portal, it can’t do so again for 1d8 hours.
+worlds* has opened a portal, it can't do so again for 1d8 hours.
 
 Wind Fan
 ^^^^^^^^
@@ -23,7 +23,7 @@ Wind Fan
 *Wondrous item, uncommon*
 
 While holding this fan, you can use an action to cast the *gust of wind*
-spell (save DC 13) from it. Once used, the fan shouldn’t be used again
+spell (save DC 13) from it. Once used, the fan shouldn't be used again
 until the next dawn. Each time it is used again before then, it has a
 cumulative 20 percent chance of not working and tearing into useless,
 nonmagical tatters.
@@ -40,7 +40,7 @@ from the duration. If you are flying when the duration expires, you
 descend at a rate of 30 feet per round until you land.
 
 The boots regain 2 hours of flying capability for every 12 hours they
-aren’t in use.
+aren't in use.
 
 Wings of Flying
 ^^^^^^^^^^^^^^^
@@ -51,7 +51,7 @@ While wearing this cloak, you can use an action to speak its command
 word. This turns the cloak into a pair of bat wings or bird wings on
 your back for 1 hour or until you repeat the command word as an action.
 The wings give you a flying speed of 60 feet. When they disappear, you
-can’t use them again for 1d12 hours.
+can't use them again for 1d12 hours.
 
 **Sentient Magic Items**
 
@@ -66,9 +66,9 @@ Most sentient items are weapons. Other kinds of items can manifest
 sentience, but consumable items such as potions and scrolls are never
 sentient.
 
-Sentient magic items function as NPCs under the GM’s control. Any
-activated property of the item is under the item’s control, not its
-wielder’s. As long as the wielder maintains a good relationship with the
+Sentient magic items function as NPCs under the GM's control. Any
+activated property of the item is under the item's control, not its
+wielder's. As long as the wielder maintains a good relationship with the
 item, the wielder can access those properties normally. If the
 relationship is strained, the item can suppress its activated properties
 or even turn them against the wielder.
@@ -76,7 +76,7 @@ or even turn them against the wielder.
 Creating Sentient Magic Items
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When you decide to make a magic item sentient, you create the item’s
+When you decide to make a magic item sentient, you create the item's
 persona in the same way you would create an NPC, with a few exceptions
 described here.
 
@@ -84,7 +84,7 @@ Abilities
 ^^^^^^^^^
 
 A sentient magic item has Intelligence, Wisdom, and Charisma scores. You
-can choose the item’s abilities or determine them randomly. To determine
+can choose the item's abilities or determine them randomly. To determine
 them randomly, roll 4d6 for each one, dropping the lowest roll and
 totaling the rest.
 
@@ -97,9 +97,9 @@ You can choose how it communicates or roll on the following table.
 =====  ==============
 d100   Communication**
 =====  ==============
-01–60 The item communicates by transmitting emotion to the creature carrying or wielding it.
-61–90 The item can speak, read, and understand one or more languages.
-91–00 The item can speak, read, and understand one or more languages. In addition, the item can communicate telepathically with any character that carries or wields it.
+01-60  The item communicates by transmitting emotion to the creature carrying or wielding it.
+61-90  The item can speak, read, and understand one or more languages.
+91-00  The item can speak, read, and understand one or more languages. In addition, the item can communicate telepathically with any character that carries or wields it.
 =====  ==============
 
 Senses
@@ -128,22 +128,22 @@ following table.
 +---------------+---------------------+----+---------------+----------------------+
 | **d100**      | **Alignment**       |    | **d100**      | **Alignment**        |
 +===============+=====================+====+===============+======================+
-| 01–15         | Lawful good         |    | 74–85         | Chaotic neutral      |
+| 01-15         | Lawful good         |    | 74-85         | Chaotic neutral      |
 +---------------+---------------------+----+---------------+----------------------+
-| 16–35         | Neutral good        |    | 86–89         | Lawful evil          |
+| 16-35         | Neutral good        |    | 86-89         | Lawful evil          |
 +---------------+---------------------+----+---------------+----------------------+
-| 36–50         | Chaotic good        |    | 90–96         | Neutral evil         |
+| 36-50         | Chaotic good        |    | 90-96         | Neutral evil         |
 +---------------+---------------------+----+---------------+----------------------+
-| 51–63         | Lawful neutral      |    | 97–00         | Chaotic evil         |
+| 51-63         | Lawful neutral      |    | 97-00         | Chaotic evil         |
 +---------------+---------------------+----+---------------+----------------------+
-| 64–73         | Neutral             |    |               |                      |
+| 64-73         | Neutral             |    |               |                      |
 +---------------+---------------------+----+---------------+----------------------+
 
 Special Purpose
 ^^^^^^^^^^^^^^^
 
 You can give a sentient item an objective it pursues, perhaps to the
-exclusion of all else. As long as the wielder’s use of the item aligns
+exclusion of all else. As long as the wielder's use of the item aligns
 with that special purpose, the item remains cooperative. Deviating from
 this course might cause conflict between the wielder and the item, and
 could even cause the item to prevent the use of its activated
@@ -178,9 +178,9 @@ Conflict
 ~~~~~~~~
 
 A sentient item has a will of its own, shaped by its personality and
-alignment. If its wielder acts in a manner opposed to the item’s
+alignment. If its wielder acts in a manner opposed to the item's
 alignment or purpose, conflict can arise. When such a conflict occurs,
-the item makes a Charisma check contested by the wielder’s Charisma
+the item makes a Charisma check contested by the wielder's Charisma
 check. If the item wins the contest, it makes one or more of the
 following demands:
 
@@ -189,11 +189,11 @@ following demands:
 -  The item demands that its wielder dispose of anything the item finds
    repugnant.
 
--  The item demands that its wielder pursue the item’s goals to the
+-  The item demands that its wielder pursue the item's goals to the
    exclusion of all other goals.
 
 -  The item demands to be given to someone else. If its wielder refuses
-   to comply with the item’s wishes, the item can do any or all of the
+   to comply with the item's wishes, the item can do any or all of the
    following:
 
 -  Make it impossible for its wielder to attune to it.
@@ -203,11 +203,11 @@ following demands:
 -  Attempt to take control of its wielder.
 
 If a sentient item attempts to take control of its wielder, the wielder
-must make a Charisma saving throw, with a DC equal to 12 + the item’s
+must make a Charisma saving throw, with a DC equal to 12 + the item's
 Charisma modifier. On a failed save, the wielder is charmed by the item
-for 1d12 hours. While charmed, the wielder must try to follow the item’s
+for 1d12 hours. While charmed, the wielder must try to follow the item's
 commands. If the wielder takes damage, it can repeat the saving throw,
 ending the effect on a success. Whether the attempt to control its user
-succeeds or fails, the item can’t use this power again until the next
+succeeds or fails, the item can't use this power again until the next
 dawn.
 

@@ -18,7 +18,7 @@ Unseen Servant
 This spell creates an invisible, mindless, shapeless force that performs
 simple tasks at your command until the spell ends. The servant springs
 into existence in an unoccupied space on the ground within range. It has
-AC 10, 1 hit point, and a Strength of 2, and it can’t attack. If it
+AC 10, 1 hit point, and a Strength of 2, and it can't attack. If it
 drops to 0 hit points, the spell ends.
 
 Once on each of your turns as a bonus action, you can mentally command

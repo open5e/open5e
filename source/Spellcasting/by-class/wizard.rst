@@ -57,7 +57,7 @@ Cantrips (0 Level)
 - :ref:`srd:alter-self`
 - :ref:`srd:arcane-lock`
 - :ref:`srd:arcanists-magic-aura`
-- :ref:`srd:blindness/deafness`
+- :ref:`srd:blindness-deafness`
 - :ref:`srd:blur`
 - :ref:`srd:continual-flame`
 - :ref:`srd:darkness`

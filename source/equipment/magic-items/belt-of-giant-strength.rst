@@ -9,7 +9,7 @@ Belt of Giant Strength
 
 While wearing this belt, your Strength score changes to a score granted
 by the belt. If your Strength is already equal to or greater than the
-belt’s score, the item has no effect on you.
+belt's score, the item has no effect on you.
 
 Six varieties of this belt exist, corresponding with and having rarity
 according to the six kinds of true giants. The *belt of stone giant

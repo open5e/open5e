@@ -15,7 +15,7 @@ restrained.
 
 You can release the creature by using a bonus action to speak a second
 command word. A target restrained by the rope can use an action to make
-a DC 15 Strength or Dexterity check (target’s choice). On a success, the
+a DC 15 Strength or Dexterity check (target's choice). On a success, the
 creature is no longer restrained by the rope.
 
 The rope has AC 20 and 20 hit points. It regains 1 hit point every 5

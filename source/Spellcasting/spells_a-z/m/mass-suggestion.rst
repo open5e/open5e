@@ -11,7 +11,7 @@ Mass Suggestion
 
 **Range:** 60 feet
 
-**Components:** V, M (a snake’s tongue and either a bit of honeycomb or
+**Components:** V, M (a snake's tongue and either a bit of honeycomb or
 a drop of sweet oil)
 
 **Duration:** 24 hours
@@ -19,7 +19,7 @@ a drop of sweet oil)
 You suggest a course of activity (limited to a sentence or two) and
 magically influence up to twelve creatures of your choice that you can
 see within range and that can hear and understand you. Creatures that
-can’t be charmed are immune to this effect. The suggestion must be
+can't be charmed are immune to this effect. The suggestion must be
 worded in such a manner as to make the course of action sound
 reasonable. Asking the creature to stab itself, throw itself onto a
 spear, immolate itself, or do some other obviously harmful act
@@ -34,7 +34,7 @@ ends when the subject finishes what it was asked to do.
 You can also specify conditions that will trigger a special activity
 during the duration. For example, you might suggest that a group of
 soldiers give all their money to the first beggar they meet. If the
-condition isn’t met before the spell ends, the activity isn’t performed.
+condition isn't met before the spell ends, the activity isn't performed.
 
 If you or any of your companions damage a creature affected by this
 spell, the spell ends for that creature.

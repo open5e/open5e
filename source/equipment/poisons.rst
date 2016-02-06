@@ -23,7 +23,7 @@ failed save.
 **Inhaled.** These poisons are powders or gases that take effect when
 inhaled. Blowing the powder or releasing the gas subjects creatures in a
 5-­foot cube to its effect. The resulting cloud dissipates immediately
-afterward. Holding one’s breath is ineffective against inhaled poisons,
+afterward. Holding one's breath is ineffective against inhaled poisons,
 as they affect nasal membranes, tear ducts, and other parts of the body.
 
 **Injury.** Injury poison can be applied to weapons, ammunition, trap
@@ -38,7 +38,7 @@ Poisons
 +----------------------+----------------+-------------------------+
 |   Item               |   Type         |   Price per Dose        |
 +======================+================+=========================+
-| Assassin’s blood     | Injury         |  150 gp                 |
+| Assassin's blood     | Injury         |  150 gp                 |
 +----------------------+----------------+-------------------------+
 | Burnt othur fumes    | Inhaled        |  500 gp                 |
 +----------------------+----------------+-------------------------+
@@ -72,10 +72,10 @@ Sample Poisons
 
 Each type of poison has its own debilitating effects.
 
-**Assassin’s Blood (Ingested).** A creature subjected to this poison
+**Assassin's Blood (Ingested).** A creature subjected to this poison
 must make a DC 10 Constitution saving throw. On a failed save, it takes
 6 (1d12) poison damage and is poisoned for 24 hours. On a successful
-save, the creature takes half damage and isn’t poisoned.
+save, the creature takes half damage and isn't poisoned.
 
 **Burnt Othur Fumes (Inhaled).** A creature subjected to this poison
 must succeed on a DC 13 Constitution saving throw or take 10 (3d6)
@@ -123,7 +123,7 @@ takes damage.
 succeed on a DC 16 Constitution saving throw or take 3 (1d6) poison
 damage and become poisoned. The poisoned creature must repeat the saving
 throw every 24 hours, taking 3 (1d6) poison damage on a failed save.
-Until this poison ends, the damage the poison deals can’t be healed by
+Until this poison ends, the damage the poison deals can't be healed by
 any means. After seven successful saving throws, the effect ends and the
 creature can heal normally.
 
@@ -145,7 +145,7 @@ hours. The poisoned creature is incapacitated.
 
 **Truth Serum (Ingested).** A creature subjected to this poison must
 succeed on a DC 11 Constitution saving throw or become poisoned for 1
-hour. The poisoned creature can’t knowingly speak a lie, as if under the
+hour. The poisoned creature can't knowingly speak a lie, as if under the
 effect of a *zone of truth* spell.
 
 **Wyvern Poison (Injury).** This poison must be harvested from a dead

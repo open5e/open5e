@@ -17,8 +17,8 @@ Call Lightning
 
 A storm cloud appears in the shape of a cylinder that is 10 feet tall
 with a 60 foot radius, centered on a point you can see 100 feet directly
-above you. The spell fails if you can’t see a point in the air where the
-storm cloud could appear (for example, if you are in a room that can’t
+above you. The spell fails if you can't see a point in the air where the
+storm cloud could appear (for example, if you are in a room that can't
 accommodate the cloud).
 
 When you cast the spell, choose a point you can see within range. A bolt
@@ -31,7 +31,7 @@ targeting the same point or a different one.
 
 If you are outdoors in stormy conditions when you cast this spell, the
 spell gives you control over the existing storm instead of creating a
-new one. Under such conditions, the spell’s damage increases by 1d10.
+new one. Under such conditions, the spell's damage increases by 1d10.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 4th
 or higher level, the damage increases by 1d10 for each slot level above
