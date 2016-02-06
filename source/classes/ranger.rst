@@ -177,9 +177,8 @@ Spellcasting
 ~~~~~~~~~~~~
 
 By the time you reach 2nd level, you have learned to use the magical
-essence of nature to cast spells, much as a druid does. See chapter 10
-for the general rules of spellcasting and chapter 11 for the ranger
-spell list.
+essence of nature to cast spells, much as a druid does. See :ref:`srd:spellcasting`
+for the general rules of spellcasting and the :ref:`srd:ranger-spells` list.
 
 Spell Slots
 ^^^^^^^^^^^
@@ -189,9 +188,9 @@ of 1st level and higher. To cast one of these spells, you must expend a
 slot of the spell’s level or higher. You regain all expended spell slots
 when you finish a long rest.
 
-For example, if you know the 1st-level spell *animal friendship* and
+For example, if you know the 1st-level spell :ref:`srd:animal-friendship` and
 have a 1st-level and a 2nd-level spell slot available, you can cast
-*animal friendship* using either slot.
+:ref:`srd:animal-friendship` using either slot.
 
 Spells Known of 1st Level and Higher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -368,7 +367,7 @@ Superior Hunter’s Defense
 At 15th level, you gain one of the following features of your choice.
 
 ***Evasion.*** When you are subjected to an effect, such as a red
-dragon’s fiery breath or a *lightning bolt* spell, that allows you to
+dragon’s fiery breath or a :ref:`srd:lightning-bolt` spell, that allows you to
 make a Dexterity saving throw to take only half damage, you instead take
 no damage if you succeed on the saving throw, and only half damage if
 you fail.

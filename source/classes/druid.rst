@@ -118,7 +118,7 @@ shape that essence to your will.
 Cantrips
 ~~~~~~~~
 
-At 1st level, you know two cantrips of your choice from the druid spell
+At 1st level, you know two cantrips of your choice from the :ref:`srd:druid-spells`
 list. You learn additional druid cantrips of your choice at higher
 levels, as shown in the Cantrips Known column of the Druid table.
 
@@ -130,9 +130,8 @@ of 1st level and higher. To cast one of these druid spells, you must
 expend a slot of the spell’s level or higher. You regain all expended
 spell slots when you finish a long rest.
 
-You prepare the list of druid spells that are
-
-available for you to cast, choosing from the druid spell list. When you
+You prepare the list of druid spells that are available for you to cast, 
+choosing from the :ref:`srd:druid-spells` list. When you
 do so, choose a number of druid spells equal to your Wisdom modifier +
 your druid level (minimum of one spell). The spells must be of a level
 for which you have spell slots.
@@ -142,6 +141,26 @@ Spellcasting Focus
 
 You can use a druidic focus (see chapter 5, “Equip- ment”) as a
 spellcasting focus for your druid spells.
+
+Spellcasting Ability
+~~~~~~~~~~~~~~~~~~~~
+
+Wisdom is your spellcasting ability for your druid spells, since your
+magic draws upon your devotion and attunement to nature. You use your
+Wisdom whenever a spell refers to your spellcasting ability. In
+addition, you use your Wisdom modifier when setting the saving throw DC
+for a druid spell you cast and when making an attack roll with one.
+
+**Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier
+
+**Spell attack modifier** = your proficiency bonus + your Wisdom
+modifier
+
+Ritual Casting
+~~~~~~~~~~~~~~
+
+You can cast a druid spell as a ritual if that spell has the ritual tag
+and you have the spell prepared.
 
 Wild Shape
 ~~~~~~~~~~
@@ -177,26 +196,6 @@ You can also change your list of prepared spells when you finish a long
 rest. Preparing a new list of druid spells requires time spent in prayer
 and meditation: at least 1 minute per spell level for each spell on your
 list.
-
-Spellcasting Ability
-~~~~~~~~~~~~~~~~~~~~
-
-Wisdom is your spellcasting ability for your druid spells, since your
-magic draws upon your devotion and attunement to nature. You use your
-Wisdom whenever a spell refers to your spellcasting ability. In
-addition, you use your Wisdom modifier when setting the saving throw DC
-for a druid spell you cast and when making an attack roll with one.
-
-**Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier
-
-**Spell attack modifier** = your proficiency bonus + your Wisdom
-modifier
-
-Ritual Casting
-~~~~~~~~~~~~~~
-
-You can cast a druid spell as a ritual if that spell has the ritual tag
-and you have the spell prepared.
 
 You can stay in a beast shape for a number of hours equal to half your
 druid level (rounded down). You then revert to your normal form unless
@@ -332,107 +331,107 @@ list, the spell is nonetheless a druid spell for you.
 Arctic
 ^^^^^^
 
-+------------------+-------------------------------------------+
-| Druid Level      | Circle Spells                             |
-+==================+===========================================+
-| 3rd              | hold person, spike growth                 |
-+------------------+-------------------------------------------+
-| 5th              | sleet storm, slow                         |
-+------------------+-------------------------------------------+
-| 7th              | freedom of movement, ice storm            |
-+------------------+-------------------------------------------+
-| 9th              | commune with nature, cone of cold         |
-+------------------+-------------------------------------------+
++------------------+----------------------------------------------------------+
+| Druid Level      | Circle Spells                                            |
++==================+==========================================================+
+| 3rd              | :ref:`srd:hold-person`, :ref:`srd:spike-growth`          |
++------------------+----------------------------------------------------------+
+| 5th              | :ref:`srd:sleet-storm`, :ref:`srd:slow`                  |
++------------------+----------------------------------------------------------+
+| 7th              | :ref:`srd:freedom-of-movement`, :ref:`srd:ice-storm`     |
++------------------+----------------------------------------------------------+
+| 9th              | :ref:`srd:commune-with-nature`, :ref:`srd:cone-of-cold`  |
++------------------+----------------------------------------------------------+
 
 Coast
 ^^^^^
 
-+------------------+--------------------------------------------+
-| Druid Level      | Circle Spells                              |
-+==================+============================================+
-| 3rd              | mirror image, misty step                   |
-+------------------+--------------------------------------------+
-| 5th              | water breathing, water walk                |
-+------------------+--------------------------------------------+
-| 7th              | control water, freedom of movement         |
-+------------------+--------------------------------------------+
-| 9th              | conjure elemental, scrying                 |
-+------------------+--------------------------------------------+
++------------------+-----------------------------------------------------------------------+
+| Druid Level      | Circle Spells                                                         |
++==================+=======================================================================+
+| 3rd              | :ref:`srd:mirror-image`, :ref:`srd:misty-step`                        |
++------------------+-----------------------------------------------------------------------+
+| 5th              | :ref:`srd:water-breathing`, :ref:`srd:water-walk`                     |
++------------------+-----------------------------------------------------------------------+
+| 7th              | :ref:`srd:control-water`, :ref:`srd:freedom-of-movement`              |
++------------------+-----------------------------------------------------------------------+
+| 9th              | :ref:`srd:conjure-elemental`, :ref:`srd:scrying`                      |
++------------------+-----------------------------------------------------------------------+
 
 Desert
 ^^^^^^
 
-+------------------+-------------------------------------------------------+
-| Druid Level      | Circle Spells                                         |
-+==================+=======================================================+
-| 3rd              | blur, silence                                         |
-+------------------+-------------------------------------------------------+
-| 5th              | create food and water, protection from energy         |
-+------------------+-------------------------------------------------------+
-| 7th              | blight, hallucinatory terrain                         |
-+------------------+-------------------------------------------------------+
-| 9th              | insect plague, wall of stone                          |
-+------------------+-------------------------------------------------------+
++------------------+----------------------------------------------------------------------+
+| Druid Level      | Circle Spells                                                        |
++==================+======================================================================+
+| 3rd              | :ref:`srd:blur`, :ref:`srd:silence`                                  |
++------------------+----------------------------------------------------------------------+
+| 5th              | :ref:`srd:create-food-and-water`, :ref:`srd:protection-from-energy`  |
++------------------+----------------------------------------------------------------------+
+| 7th              | :ref:`srd:blight`, :ref:`srd:hallucinatory-terrain`                  |
++------------------+----------------------------------------------------------------------+
+| 9th              | :ref:`srd:insect-plague`, :ref:`srd:wall-of-stone`                   |
++------------------+----------------------------------------------------------------------+
 
 Forest
 ^^^^^^
 
-+------------------+------------------------------------------+
-| Druid Level      | Circle Spells                            |
-+==================+==========================================+
-| 3rd              | barkskin, spider climb                   |
-+------------------+------------------------------------------+
-| 5th              | call lightning, plant growth             |
-+------------------+------------------------------------------+
-| 7th              | divination, freedom of movement          |
-+------------------+------------------------------------------+
-| 9th              | commune with nature, tree stride         |
-+------------------+------------------------------------------+
++------------------+---------------------------------------------------------------+
+| Druid Level      | Circle Spells                                                 |
++==================+===============================================================+
+| 3rd              | :ref:`srd:barkskin`, :ref:`srd:spider-climb`                  |
++------------------+---------------------------------------------------------------+
+| 5th              | :ref:`srd:call-lightning`, :ref:`srd:plant-growth`            |
++------------------+---------------------------------------------------------------+
+| 7th              | :ref:`srd:divination`, :ref:`srd:freedom-of-movement`         |
++------------------+---------------------------------------------------------------+
+| 9th              | :ref:`srd:commune-with-nature`, :ref:`srd:tree-stride`        |
++------------------+---------------------------------------------------------------+
 
 Grassland
 ^^^^^^^^^
 
-+------------------+------------------------------------------+
-| Druid Level      | Circle Spells                            |
-+==================+==========================================+
-| 3rd              | invisibility, pass without trace         |
-+------------------+------------------------------------------+
-| 5th              | daylight, haste                          |
-+------------------+------------------------------------------+
-| 7th              | divination, freedom of movement          |
-+------------------+------------------------------------------+
-| 9th              | dream, insect plague                     |
-+------------------+------------------------------------------+
++------------------+---------------------------------------------------------------+
+| Druid Level      | Circle Spells                                                 |
++==================+===============================================================+
+| 3rd              | :ref:`srd:invisibility`, :ref:`srd:pass-without-trace`        |
++------------------+---------------------------------------------------------------+
+| 5th              | :ref:`srd:daylight`, :ref:`srd:haste`                         |
++------------------+---------------------------------------------------------------+
+| 7th              | :ref:`srd:divination`, :ref:`srd:freedom-of-movement`         |
++------------------+---------------------------------------------------------------+
+| 9th              | :ref:`srd:dream`, :ref:`srd:insect-plague`                    |
++------------------+---------------------------------------------------------------+
 
 Mountain
 ^^^^^^^^
 
-+------------------+-----------------------------------------+
-| Druid Level      | Circle Spells                           |
-+==================+=========================================+
-| 3rd              | spider climb, spike growth              |
-+------------------+-----------------------------------------+
-| 5th              | lightning bolt, meld into stone         |
-+------------------+-----------------------------------------+
-| 7th              | stone shape, stoneskin                  |
-+------------------+-----------------------------------------+
-| 9th              | passwall, wall of stone                 |
-+------------------+-----------------------------------------+
++------------------+---------------------------------------------------------------+
+| Druid Level      | Circle Spells                                                 |
++==================+===============================================================+
+| 3rd              | :ref:`srd:spider-climb`, :ref:`srd:spike-growth`              |
++------------------+---------------------------------------------------------------+
+| 5th              | :ref:`srd:lightning-bolt`, :ref:`srd:meld-into-stone`         |
++------------------+---------------------------------------------------------------+
+| 7th              | :ref:`srd:stone-shape`, :ref:`srd:stoneskin`                  |
++------------------+---------------------------------------------------------------+
+| 9th              | :ref:`srd:passwall`, :ref:`srd:wall-of-stone`                 |
++------------------+---------------------------------------------------------------+
 
 Swamp
 ^^^^^
 
-+------------------+----------------------------------------------+
-| Druid Level      | Circle Spells                                |
-+==================+==============================================+
-| 3rd              | acid arrow, darkness                         |
-+------------------+----------------------------------------------+
-| 5th              | water walk, stinking cloud                   |
-+------------------+----------------------------------------------+
-| 7th              | freedom of movement, locate creature         |
-+------------------+----------------------------------------------+
-| 9th              | insect plague, scrying                       |
-+------------------+----------------------------------------------+
++------------------+---------------------------------------------------------------+
+| Druid Level      | Circle Spells                                                 |
++==================+===============================================================+
+| 3rd              | :ref:`srd:acid-arrow`, :ref:`srd:darkness`                    |
++------------------+---------------------------------------------------------------+
+| 5th              | :ref:`srd:water-walk`, :ref:`srd:stinking-cloud`              |
++------------------+---------------------------------------------------------------+
+| 7th              | :ref:`srd:freedom-of-movement`, :ref:`srd:locate-creature`    |
++------------------+---------------------------------------------------------------+
+| 9th              | :ref:`srd:insect-plague`, :ref:`srd:scrying`                  |
++------------------+---------------------------------------------------------------+
 
 Land’s Stride
 ^^^^^^^^^^^^^
@@ -444,7 +443,7 @@ have thorns, spines, or a similar hazard.
 
 In addition, you have advantage on saving throws against plants that are
 magically created or manipulated to impede movement, such those created
-by the *entangle* spell.
+by the :ref:`srd:entangle` spell.
 
 Nature’s Ward
 ^^^^^^^^^^^^^

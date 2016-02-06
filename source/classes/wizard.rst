@@ -106,14 +106,14 @@ that show the first glimmerings of your true power.
 Cantrips
 ^^^^^^^^
 
-At 1st level, you know three cantrips of your choice from the wizard
-spell list. You learn additional wizard cantrips of your choice at
+At 1st level, you know three cantrips of your choice from the :ref:`srd:wizard-spells` list.
+You learn additional wizard cantrips of your choice at
 higher levels, as shown in the Cantrips Known column of the Wizard table.
 
 Spellbook
 ^^^^^^^^^
 
-At 1st level, you have a spellbook containing six 1st- level wizard
+At 1st level, you have a spellbook containing six 1st-level wizard
 spells of your choice. Your spellbook is the repository of the
 wizard spells you know, except your cantrips, which are fixed in
 your mind.
@@ -135,7 +135,7 @@ For example, if you’re a 3rd-level wizard, you have four 1st-level and
 two 2nd-level spell slots. With an Intelligence of 16, your list of
 prepared spells can include six spells of 1st or 2nd level, in any
 combination, chosen from your spellbook. If you prepare the 1st-level
-spell *magic missile,* you can cast it using a 1st-level or a 2nd-level
+spell :ref:`srd:magic-missile`, you can cast it using a 1st-level or a 2nd-level
 slot. Casting the spell doesn’t remove it from your list of prepared
 spells.
 

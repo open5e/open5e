@@ -106,13 +106,13 @@ The Cleric
 
     **Spellcasting**
 
-    As a conduit for divine power, you can cast cleric spells.
+    As a conduit for divine power, you can cast :ref:`srd:cleric-spells`.
 
 Cantrips
 ^^^^^^^^
 
-At 1st level, you know three cantrips of your choice from the cleric
-spell list. You learn additional cleric cantrips of your choice at
+At 1st level, you know three cantrips of your choice from the :ref:`srd:cleric-spells` 
+list. You learn additional cleric cantrips of your choice at
 higher levels, as shown in the Cantrips Known column of the Cleric
 table.
 
@@ -133,7 +133,7 @@ you have spell slots.
 For example, if you are a 3rd-level cleric, you have four 1st-level and
 two 2nd-level spell slots. With a Wisdom of 16, your list of prepared
 spells can include six spells of 1st or 2nd level, in any combination.
-If you prepare the 1st-level spell *cure wounds*, you can cast it using
+If you prepare the 1st-level spell :ref:`srd:cure-wounds`, you can cast it using
 a 1st-level or 2nd-level slot. Casting the spell doesn’t remove it from
 your list of prepared spells.
 
@@ -165,7 +165,7 @@ and you have the spell prepared.
 Spellcasting Focus
 ^^^^^^^^^^^^^^^^^^
 
-You can use a holy symbol (see chapter 5, “Equipment”) as a spellcasting
+You can use a holy symbol (see :ref:`srd:adventuring-gear`) as a spellcasting
 focus for your cleric spells.
 
 Divine Domain
@@ -294,19 +294,19 @@ and gods of home and community (such as Hestia, Hathor, and Boldrei).
 Life Domain Spells
 ^^^^^^^^^^^^^^^^^^
 
-+-------------------+---------------------------------------+
-|    Cleric Level   |             Spells                    |
-+===================+=======================================+
-|    1st            | *bless, cure wounds*                  |
-+-------------------+---------------------------------------+
-|    3rd            | *lesser restoration, spiritual weapon*|
-+-------------------+---------------------------------------+
-|    5th            | *beacon of hope, revivify*            |
-+-------------------+---------------------------------------+
-|    7th            | *death ward, guardian of faith*       |
-+-------------------+---------------------------------------+
-|    9th            | *mass cure wounds, raise dead*        |
-+-------------------+---------------------------------------+
++-------------------+-----------------------------------------------------------+
+|    Cleric Level   |             Spells                                        |
++===================+===========================================================+
+|    1st            | :ref:`srd:bless`, :ref:`srd:cure-wounds`                  |
++-------------------+-----------------------------------------------------------+
+|    3rd            | :ref:`srd:lesser-restoration`, :ref:`srd:spiritual-weapon`|
++-------------------+-----------------------------------------------------------+
+|    5th            | :ref:`srd:beacon-of-hope`, :ref:`srd:revivify`            |
++-------------------+-----------------------------------------------------------+
+|    7th            | :ref:`srd:death-ward`, *guardian of faith*                |
++-------------------+-----------------------------------------------------------+
+|    9th            | :ref:`srd:mass-cure-wounds`, :ref:`srd:raise-dead`        |
++-------------------+-----------------------------------------------------------+
 
 Bonus Proficiency
 ^^^^^^^^^^^^^^^^^
