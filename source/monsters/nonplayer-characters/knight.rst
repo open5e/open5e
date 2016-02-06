@@ -30,6 +30,7 @@ Medium humanoid (any race), any alignment
 frightened.**
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The knight makes two melee attacks. **Greatsword**:
 *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target. *Hit*: 10
@@ -44,6 +45,7 @@ one Leadership die at a time. This effect ends if the knight is
 incapacitated.
 
 Reactions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Parry**: The knight adds 2 to its AC against one melee attack that
 would hit it. To do so, the knight must see the attacker and be wielding

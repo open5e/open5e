@@ -34,6 +34,7 @@ dies only if it starts its turn with 0 hit points and doesn't
 regenerate.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The troll makes three attacks: one with its bite and
 two with its claws. **Bite**: *Melee Weapon Attack*: +7 to hit, reach 5

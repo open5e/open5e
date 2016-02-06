@@ -31,6 +31,7 @@ Medium dragon, chaotic evil
 **Challenge** 2 (450 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one target.
 *Hit*: 7 (1d10 + 2) piercing damage plus 2 (1d4) cold damage.

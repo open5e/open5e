@@ -34,6 +34,7 @@ Gargantuan dragon, chaotic good
 can choose to succeed instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The dragon can use its Frightful Presence. It then
 makes three attacks: one with its bite and two with its claws.
@@ -87,6 +88,7 @@ replaced by those of the new form, except any class features or
 legendary actions of that form.
 
 Legendary Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The dragon can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only

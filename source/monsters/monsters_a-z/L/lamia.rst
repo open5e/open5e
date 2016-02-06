@@ -33,6 +33,7 @@ humanoid form), *major image* **3/day each**: *charm person*, *mirror
 image*, *scrying*, *suggestion* **1/day**: *geas*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The lamia makes two attacks: one with its claws and one
 with its dagger or Intoxicating Touch. **Claws**: *Melee Weapon Attack*:

@@ -27,6 +27,7 @@ Huge beast, unaligned
 **Challenge** 7 (2,900 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The ape makes two fist attacks. **Fist**: *Melee Weapon
 Attack*: +9 to hit, reach 10 ft., one target. *Hit*: 22 (3d10 + 6)

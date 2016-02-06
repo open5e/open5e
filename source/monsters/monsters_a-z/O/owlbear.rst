@@ -30,6 +30,7 @@ Large monstrosity, unaligned
 (Perception) checks that rely on sight or smell.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The owlbear makes two attacks: one with its beak and
 one with its claws. **Beak**: *Melee Weapon Attack*: +7 to hit, reach 5

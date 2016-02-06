@@ -35,6 +35,7 @@ humanoid voices. A creature that hears the sounds can tell they are
 imitations with a successful DC 14 Wisdom (Insight) check.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Claws**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
 *Hit*: 13 (2d8 + 4) slashing damage. **Illusory Appearance**: The hag

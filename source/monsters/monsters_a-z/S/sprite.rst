@@ -27,6 +27,7 @@ Tiny fey, neutral good
 **Challenge** 1/4 (50 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Longsword**: *Melee Weapon Attack*: +2 to hit, reach 5 ft., one
 target. *Hit*: 1 slashing damage. **Shortbow**: *Ranged Weapon Attack*:

@@ -28,6 +28,7 @@ Large monstrosity, lawful evil
 spikes regrow when the manticore finishes a long rest.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The manticore makes three attacks: one with its bite
 and two with its claws or three with its tail spikes. **Bite**: *Melee

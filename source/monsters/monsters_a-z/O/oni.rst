@@ -40,6 +40,7 @@ spells, requiring no material components: **At will**: *darkness*,
 if it has at least 1 hit point.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The oni makes two attacks, either with its claws or its
 glaive. **Claw (Oni Form Only)**: *Melee Weapon Attack*: +7 to hit,

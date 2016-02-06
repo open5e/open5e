@@ -45,6 +45,7 @@ attacks). The mage has the following wizard spells prepared:
     **5th level (1 slot)**: *cone of cold*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Dagger**: *Melee or Ranged Weapon Attack*: +5 to hit, reach 5 ft. or
 range 20/60 ft., one target. *Hit*: 4 (1d4 + piercing damage.

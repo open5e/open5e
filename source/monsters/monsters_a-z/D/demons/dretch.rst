@@ -32,6 +32,7 @@ understand Abyssal)
 **Challenge** 1/4 (50 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The dretch makes two attacks: one with its bite and one
 with its claws. **Bite**: *Melee Weapon Attack*: +2 to hit, reach 5 ft.,

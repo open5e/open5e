@@ -46,6 +46,7 @@ to the chosen radius. The will-o'-wisp can alter the radius as a bonus
 action.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Shock**: Melee Spell Attack: +4 to hit, reach 5 ft., one creature.
 *Hit*: 9 (2d8) lightning damage. **Invisibility**: The will-o'-wisp and

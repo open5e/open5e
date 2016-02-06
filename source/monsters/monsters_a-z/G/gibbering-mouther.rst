@@ -44,6 +44,7 @@ attack against a randomly determined creature within its reach or does
 nothing if it can't make such an attack.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The gibbering mouther makes one bite attack and, if it
 can, uses its Blinding Spittle.

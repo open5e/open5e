@@ -38,6 +38,7 @@ the armor remains motionless, it is indistinguishable from a normal suit
 of armor.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The armor makes two melee attacks. **Slam**: *Melee
 Weapon Attack*: +4 to hit, reach 5 ft., one target. *Hit*: 5 (1d6 + 2)

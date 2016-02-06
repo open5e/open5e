@@ -46,6 +46,7 @@ elemental moves in water, or for every gallon of water splashed on it,
 it takes 1 cold damage.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The elemental makes two touch attacks. **Touch**:
 *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target. *Hit*: 10

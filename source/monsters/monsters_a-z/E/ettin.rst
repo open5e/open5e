@@ -32,6 +32,7 @@ stunned, and knocked unconscious. **Wakeful**: When one of the ettin's
 heads is asleep, its other head is awake.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The ettin makes two attacks: one with its battleaxe and
 one with its morningstar. **Battleaxe**: *Melee Weapon Attack*: +7 to

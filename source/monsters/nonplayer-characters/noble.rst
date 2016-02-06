@@ -27,11 +27,13 @@ Medium humanoid (any race), any alignment
 **Challenge** 1/8 (25 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Rapier**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
 *Hit*: 5 (1d8 + 1) piercing damage.
 
 Reactions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Parry**: The noble adds 2 to its AC against one melee attack that
 would hit it. To do so, the noble must see the attacker and be wielding

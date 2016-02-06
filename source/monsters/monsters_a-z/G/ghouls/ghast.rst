@@ -38,6 +38,7 @@ ghast and any ghouls within 30 feet of it have advantage on saving
 throws against effects that turn undead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one creature.
 *Hit*: 12 (2d8 + 3) piercing damage. **Claws**: *Melee Weapon Attack*:

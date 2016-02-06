@@ -44,6 +44,7 @@ takes 14 damage or less that would reduce it to 0 hit points, it is
 reduced to 1 hit point instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack (Humanoid or Hybrid Form Only)**: The wereboar makes two
 attacks, only one of which can be with its tusks. **Maul (Humanoid or

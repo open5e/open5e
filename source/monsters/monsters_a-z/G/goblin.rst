@@ -31,6 +31,7 @@ that aren't adamantine
 bonus action on each of its turns.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Scimitar**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one target.
 *Hit*: 5 (1d6 + 2) slashing damage. **Shortbow**: *Ranged Weapon

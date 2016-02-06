@@ -38,6 +38,7 @@ darkvision. **Magic Resistance**: The devil has advantage on saving
 throws against spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The devil makes two attacks with its chains. **Chain**:
 *Melee Weapon Attack*: +8 to hit, reach 10 ft., one target. *Hit*: 11
@@ -57,6 +58,7 @@ chain reverts to its inanimate state if reduced to 0 hit points or if
 the devil is incapacitated or dies.
 
 Reactions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Unnerving Mask**: When a creature the devil can see starts its turn
 within 30 feet of the devil, the devil can create the illusion that it

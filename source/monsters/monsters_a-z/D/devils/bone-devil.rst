@@ -40,6 +40,7 @@ darkvision. **Magic Resistance**: The devil has advantage on saving
 throws against spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The devil makes three attacks: two with its claws and
 one with its sting. **Claw**: *Melee Weapon Attack*: +8 to hit, reach 10

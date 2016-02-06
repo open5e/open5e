@@ -31,6 +31,7 @@ Huge giant, neutral evil
 **Challenge** 8 (3,900 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The giant makes two greataxe attacks. **Greataxe**:
 *Melee Weapon Attack*: +9 to hit, reach 10 ft., one target. *Hit*: 25

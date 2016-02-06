@@ -36,6 +36,7 @@ spells prepared: **Cantrips (at will)**: *light*, *sacred flame*,
 weapon*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The fanatic makes two melee attacks. **Dagger**: *Melee
 or Ranged Weapon Attack*: +4 to hit, reach 5 ft. or range 20/60 ft., one

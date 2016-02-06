@@ -30,6 +30,7 @@ Large monstrosity, unaligned
 that rely on sight.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The griffon makes two attacks: one with its beak and
 one with its claws. **Beak**: *Melee Weapon Attack*: +6 to hit, reach 5

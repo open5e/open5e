@@ -31,6 +31,7 @@ Huge giant, lawful evil
 **Challenge** 9 (5,000 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The giant makes two greatsword attacks. **Greatsword**:
 *Melee Weapon Attack*: +11 to hit, reach 10 ft., one target. *Hit*: 28

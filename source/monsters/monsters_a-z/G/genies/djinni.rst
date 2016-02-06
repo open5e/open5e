@@ -40,6 +40,7 @@ elemental* (air elemental only), *creation*, *gaseous form*,
 *invisibility*, *major image*, *plane shift*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The djinni makes three scimitar attacks. **Scimitar**:
 *Melee Weapon Attack*: +9 to hit, reach 5 ft., one target. *Hit*: 12

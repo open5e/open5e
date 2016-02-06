@@ -44,6 +44,7 @@ no material components:
 **3/day each**: *control weather*, *water breathing*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The giant makes two greatsword attacks.
 

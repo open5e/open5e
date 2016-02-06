@@ -47,6 +47,7 @@ requiring no material components: **At will**: *detect magic*,
 *fireball* **3/day each**: *hold monster*, *wall of fire*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The pit fiend makes four attacks: one with its bite,
 one with its claw, one with its mace, and one with its tail. **Bite**:

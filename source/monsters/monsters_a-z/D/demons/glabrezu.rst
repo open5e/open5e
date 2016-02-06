@@ -43,6 +43,7 @@ following spells, requiring no material components: **At will**:
 against spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The glabrezu makes four attacks: two with its pincers
 and two with its fists. Alternatively, it makes two attacks with its

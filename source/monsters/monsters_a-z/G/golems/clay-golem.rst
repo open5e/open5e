@@ -53,6 +53,7 @@ and other magical effects.
 are magical.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The golem makes two slam attacks.
 

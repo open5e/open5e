@@ -29,6 +29,7 @@ Medium humanoid (any race), any non-lawful alignment
 **Challenge** 2 (450 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The captain makes three melee attacks: two with its
 scimitar and one with its dagger. Or the captain makes two ranged
@@ -38,6 +39,7 @@ hit, reach 5 ft., one target. *Hit*: 6 (1d6 + 3) slashing damage.
 range 20/60 ft., one target. *Hit*: 5 (1d4 + 3) piercing damage.
 
 Reactions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Parry**: The captain adds 2 to its AC against one melee attack that
 would hit it. To do so, the captain must see the attacker and be

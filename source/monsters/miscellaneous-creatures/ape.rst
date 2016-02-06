@@ -27,6 +27,7 @@ Medium beast, unaligned
 **Challenge** 1/2 (100 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The ape makes two fist attacks. **Fist**: *Melee Weapon
 Attack*: +5 to hit, reach 5 ft., one target. *Hit*: 6 (1d6 + 3)

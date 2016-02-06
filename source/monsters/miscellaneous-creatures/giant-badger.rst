@@ -28,6 +28,7 @@ Medium beast, unaligned
 that rely on smell.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The badger makes two attacks: one with its bite and one
 with its claws. **Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft.,

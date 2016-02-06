@@ -31,6 +31,7 @@ prone. If the target is prone, the triceratops can make one stomp attack
 against it as a bonus action.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Gore**: *Melee Weapon Attack*: +9 to hit, reach 5 ft., one target.
 *Hit*: 24 (4d8 + 6) piercing damage. **Stomp**: *Melee Weapon Attack*:

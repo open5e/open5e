@@ -43,6 +43,7 @@ Resistance**: The quasit has advantage on saving throws against spells
 and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Claws (Bite in Beast Form)**: *Melee Weapon Attack*: +4 to hit, reach
 5 ft., one target. *Hit*: 5 (1d4 + 3) piercing damage, and the target

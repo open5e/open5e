@@ -37,6 +37,7 @@ stop there. It can move through a space as narrow as 1 inch wide without
 squeezing.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The elemental makes two slam attacks.
 

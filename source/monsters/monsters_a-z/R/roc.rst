@@ -32,6 +32,7 @@ Gargantuan monstrosity, unaligned
 rely on sight.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The roc makes two attacks: one with its beak and one
 with its talons. **Beak**: *Melee Weapon Attack*: +13 to hit, reach 10

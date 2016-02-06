@@ -32,6 +32,7 @@ of an enemy's reach. **Keen Hearing and Sight**: The owl has advantage
 on Wisdom (Perception) checks that rely on hearing or sight.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Talons**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
 *Hit*: 8 (2d6 + 1) slashing damage.

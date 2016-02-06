@@ -34,6 +34,7 @@ indistinguishable from a normal tree. **Siege Monster**: The treant
 deals double damage to objects and structures.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The treant makes two slam attacks. **Slam**: *Melee
 Weapon Attack*: +10 to hit, reach 5 ft., one target. *Hit*: 16 (3d6 + 6)

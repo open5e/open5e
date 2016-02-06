@@ -35,6 +35,7 @@ needing to make an ability check. Additionally, difficult terrain
 composed of ice or snow doesn't cost it extra moment.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The dragon makes three attacks: one with its bite and
 two with its claws.

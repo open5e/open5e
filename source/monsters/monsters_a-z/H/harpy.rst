@@ -25,6 +25,7 @@ Medium monstrosity, chaotic evil
 **Challenge** 1 (200 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The harpy makes two attacks: one with its claws and one
 with its club. **Claws**: *Melee Weapon Attack*: +3 to hit, reach 5 ft.,

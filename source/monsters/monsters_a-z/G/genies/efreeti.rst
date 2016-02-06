@@ -39,6 +39,7 @@ elemental only), *gaseous form, invisibility*, *major image*, *plane
 shift*, *wall of fire*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The efreeti makes two scimitar attacks or uses its Hurl
 Flame twice. **Scimitar**: *Melee Weapon Attack*: +10 to hit, reach 5

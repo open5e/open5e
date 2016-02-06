@@ -30,6 +30,7 @@ Medium humanoid (any race), any alignment
 (Perception) checks that rely on hearing or sight.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The scout makes two melee attacks or two ranged
 attacks. **Shortsword**: *Melee Weapon Attack*: +4 to hit, reach 5 ft.,

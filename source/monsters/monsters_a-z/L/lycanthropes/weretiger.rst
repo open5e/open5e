@@ -43,6 +43,7 @@ prone, the weretiger can make one bite attack against it as a bonus
 action.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack (Humanoid or Hybrid Form Only)**: In humanoid form, the
 weretiger makes two scimitar attacks or two longbow attacks. In hybrid

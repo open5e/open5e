@@ -33,6 +33,7 @@ existence as its master, it can magically convey what it senses to its
 master, and the two can communicate telepathically.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one creature.
 *Hit*: 1 piercing damage, and the target must succeed on a DC 10

@@ -32,6 +32,7 @@ language. This form of telepathy doesn't allow the receiving creature to
 telepathically respond.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The otyugh makes three attacks: one with its bite and
 two with its tentacles. **Bite**: *Melee Weapon Attack*: +6 to hit,

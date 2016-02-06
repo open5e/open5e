@@ -35,6 +35,7 @@ Large dragon, lawful evil
 **Amphibious**: The dragon can breathe air and water.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The dragon makes three attacks: one with its bite and
 two with its claws.

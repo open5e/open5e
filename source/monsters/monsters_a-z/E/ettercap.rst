@@ -33,6 +33,7 @@ location of any other creature in contact with the same web. **Web
 Walker**: The ettercap ignores movement restrictions caused by webbing.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The ettercap makes two attacks: one with its bite and
 one with its claws.

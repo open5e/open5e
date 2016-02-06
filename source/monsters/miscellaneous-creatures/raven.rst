@@ -32,6 +32,7 @@ that hears the sounds can tell they are imitations with a successful DC
 10 Wisdom (Insight) check.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Beak**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one target.
 *Hit*: 1 piercing damage.

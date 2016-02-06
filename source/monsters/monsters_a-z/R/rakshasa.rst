@@ -47,6 +47,7 @@ image*, s\_uggestion\_
 1/day each: *dominate person*, *fly*, *plane shift*, *true seeing*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The rakshasa makes two claw attacks. **Claw**: *Melee
 Weapon Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 9 (2d6 + 2)

@@ -37,6 +37,7 @@ slashing from nonmagical attacks
 against spells and other magical effects.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The nalfeshnee uses Horror Nimbus if it can. It then
 makes three attacks: one with its bite and two with its claws.

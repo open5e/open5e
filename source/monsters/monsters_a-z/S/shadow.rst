@@ -43,6 +43,7 @@ darkness, the shadow can take the Hide action as a bonus action.
 attack rolls, ability checks, and saving throws.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Strength Drain**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one
 creature. *Hit*: 9 (2d6 + 2) necrotic damage, and the target's Strength

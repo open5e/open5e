@@ -36,6 +36,7 @@ unless the damage is radiant or from a critical hit. On a success, the
 zombie drops to 1 hit point instead.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Slam**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
 *Hit*: 4 (1d6 + 1) bludgeoning damage.

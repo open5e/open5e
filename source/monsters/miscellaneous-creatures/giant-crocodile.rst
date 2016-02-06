@@ -29,6 +29,7 @@ Huge beast, unaligned
 **Hold Breath**: The crocodile can hold its breath for 30 minutes.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The crocodile makes two attacks: one with its bite and
 one with its tail. **Bite**: *Melee Weapon Attack*: +8 to hit, reach 5

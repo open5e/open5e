@@ -29,6 +29,7 @@ Medium humanoid (lizardfolk), neutral
 **Hold Breath**: The lizardfolk can hold its breath for 15 minutes.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The lizardfolk makes two melee attacks, each one with a
 different weapon. **Bite**: *Melee Weapon Attack*: +4 to hit, reach 5

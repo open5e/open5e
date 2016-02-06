@@ -32,6 +32,7 @@ Huge giant, neutral
 checks made to hide in rocky terrain.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The giant makes two greatclub attacks. **Greatclub**:
 *Melee Weapon Attack*: +9 to hit, reach 15 ft., one target. *Hit*: 19
@@ -41,6 +42,7 @@ damage. If the target is a creature, it must succeed on a DC 17 Strength
 saving throw or be knocked prone.
 
 Reactions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Rock Catching**: If a rock or similar object is hurled at the giant,
 the giant can, with a successful DC 10 Dexterity saving throw, catch the

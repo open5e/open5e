@@ -27,6 +27,7 @@ Huge giant, chaotic evil
 **Challenge** 5 (1,800 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The giant makes two greatclub attacks. **Greatclub**:
 *Melee Weapon Attack*: +8 to hit, reach 10 ft., one target. *Hit*: 18

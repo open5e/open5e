@@ -52,6 +52,7 @@ faith* 5th level (2 slots): *contagion*, *insect plague* **6th level (1
 slot)**: *harm*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The mummy can use its Dreadful Glare and makes one
 attack with its rotting fist. **Rotting Fist**: *Melee Weapon Attack*:
@@ -72,6 +73,7 @@ to the Dreadful Glare of all mummies and mummy lords for the next 24
 hours.
 
 Legendary Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The mummy lord can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only

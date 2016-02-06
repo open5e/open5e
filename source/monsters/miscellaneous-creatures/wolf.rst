@@ -33,6 +33,7 @@ the wolf's allies is within 5 feet of the creature and the ally isn't
 incapacitated.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one target.
 *Hit*: 7 (2d4 + 2) piercing damage. If the target is a creature, it must

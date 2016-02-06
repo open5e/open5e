@@ -35,6 +35,7 @@ of the hound's allies is within 5 feet of the creature and the ally
 isn't incapacitated.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
 

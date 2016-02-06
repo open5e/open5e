@@ -30,6 +30,7 @@ Large monstrosity, unaligned
 checks that rely on sight.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The hippogriff makes two attacks: one with its beak and
 one with its claws. **Beak**: *Melee Weapon Attack*: +5 to hit, reach 5

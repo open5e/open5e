@@ -43,6 +43,7 @@ spells and other magical effects. **Magic Weapons**: The unicorn's
 weapon attacks are magical.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The unicorn makes two attacks: one with its hooves and
 one with its horn. **Hooves**: *Melee Weapon Attack*: +7 to hit, reach 5
@@ -58,6 +59,7 @@ or carrying, to a location the unicorn is familiar with, up to 1 mile
 away.
 
 Legendary Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The unicorn can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only

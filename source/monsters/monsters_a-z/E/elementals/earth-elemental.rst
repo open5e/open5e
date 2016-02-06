@@ -40,6 +40,7 @@ material it moves through. **Siege Monster**: The elemental deals double
 damage to objects and structures.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The elemental makes two slam attacks. **Slam**: *Melee
 Weapon Attack*: +8 to hit, reach 10 ft., one target. *Hit*: 14 (2d8 + 5)

@@ -32,6 +32,7 @@ Large dragon, chaotic good
 **Challenge** 7 (2,900 XP)
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The dragon makes three attacks: one with its bite and
 two with its claws.

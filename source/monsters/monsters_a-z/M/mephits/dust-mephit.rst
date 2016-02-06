@@ -39,6 +39,7 @@ innately cast *sleep*, requiring no material components. Its innate
 spellcasting ability is Charisma.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Claws**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one creature.
 *Hit*: 4 (1d4 + 2) slashing damage. **Blinding Breath (Recharge 6)**:

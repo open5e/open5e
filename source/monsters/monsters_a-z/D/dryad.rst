@@ -42,6 +42,7 @@ appearing in an unoccupied space within 5 feet of the second tree. Both
 trees must be Large or bigger.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Club**: *Melee Weapon Attack*: +2 to hit (+6 to hit with shillelagh),
 reach 5 ft., one target. *Hit*: 2 (1d4) bludgeoning damage, or 8 (1d8 +

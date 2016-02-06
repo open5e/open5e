@@ -43,6 +43,7 @@ within 5 feet of an ally of the assassin that isn't incapacitated and
 the assassin doesn't have disadvantage on the attack roll.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The assassin makes two shortsword attacks.
 **Shortsword**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one

@@ -50,6 +50,7 @@ slots):** *flame strike*, *greater restoration* **6th level (1 slot):**
 *heroes' feast*
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The sphinx makes two claw attacks. **Claw**: *Melee
 Weapon Attack*: +12 to hit, reach 5 ft., one target. *Hit*: 17 (2d10 +
@@ -70,6 +71,7 @@ successful save, the creature takes half as much damage and isn't
 knocked prone.
 
 Legendary Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The sphinx can take 3 legendary actions, choosing from the options
 below. Only one legendary action option can be used at a time and only

@@ -40,6 +40,7 @@ used only for opportunity attacks. **Wakeful**: While the hydra sleeps,
 at least one of its heads is awake.
 
 Actions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The hydra makes as many bite attacks as it has heads.
 **Bite**: *Melee Weapon Attack*: +8 to hit, reach 10 ft., one target.
