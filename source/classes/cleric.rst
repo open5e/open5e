@@ -165,7 +165,7 @@ and you have the spell prepared.
 Spellcasting Focus
 ^^^^^^^^^^^^^^^^^^
 
-You can use a holy symbol (see :ref:`srd:equipment`) as a spellcasting
+You can use a holy symbol (see :ref:`srd:adventuring-gear`) as a spellcasting
 focus for your cleric spells.
 
 Divine Domain
