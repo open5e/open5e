@@ -4924,6 +4924,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   border: solid 1px #2980B9;
 }
 .rst-content .sidebar p, .rst-content .sidebar ul, .rst-content .sidebar dl {
+  line-height: normal;
   font-size: 90%;
   margin-bottom: 6px;
 }
@@ -4936,6 +4937,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   margin-bottom: 0;
 }
 .rst-content .sidebar .sidebar-title {
+  line-height: 24px;
   display: block;
   font-family: "Lora", "ff-tisa-web-pro", "Georgia", serif;
   font-weight: bold;
@@ -5145,13 +5147,16 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 .rst-content tt.download span:first-child:before, .rst-content code.download span:first-child:before {
   margin-right: 4px;
 }
-.rst-content .has-advice, .rst-content .has-errata {
+.rst-content .has-official, .rst-content .has-errata, .rst-content .has-unofficial {
   padding-left: 2px;
   padding-right: 2px;
   margin-left: 2px;
   margin-right: 2px;
 }
-.rst-content .has-advice {
+.rst-content .has-official {
+  background: rgba(39, 174, 96, 0.1);
+}
+.rst-content .has-unofficial {
   background: rgba(39, 174, 96, 0.1);
 }
 .rst-content .has-errata {

@@ -142,6 +142,7 @@
     border: solid 1px $blue
     // Sidebar content is usually less relevant, so adjust the margins and sizes.
     p, ul, dl
+      line-height: normal
       font-size: 90%
       margin-bottom: 6px
     .last
@@ -151,6 +152,7 @@
       opacity: .8
       margin-bottom: 0
     .sidebar-title
+      line-height: $base-line-height
       display: block
       font-family: $custom-font-family
       font-weight: bold
@@ -347,12 +349,14 @@
       @extend .fa-download
       &:before
         margin-right: 4px
-  .has-advice, .has-errata
+  .has-official, .has-errata, .has-unofficial
     padding-left: 2px
     padding-right: 2px
     margin-left: 2px
     margin-right: 2px
-  .has-advice
+  .has-official
+    background: transparentize($green, .9)
+  .has-unofficial
     background: transparentize($green, .9)
   .has-errata
     background: transparentize($yellow, .9)

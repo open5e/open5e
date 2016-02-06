@@ -73,18 +73,15 @@ Dueling
 .. sidebar:: Sage Advice
     :class: official
     
-    **Is the Dueling fighting style intended to support a shield?**
-        
-    Yes. A character with the Dueling option usually
-    pairs a one-handed weapon with a shield, a spellcasting
-    focus, or a free hand.
+    Dueling is intended to function with a one-handed weapon and either a shield, 
+    a spellcasting focus, or a free hand.
     
     .. rst-class:: source
     
     Source: `Sage Advice Compendium <http://media.wizards.com/2015/downloads/dnd/SA_Compendium_1.01.pdf>`_
     
 
-When you are wielding a melee weapon in one hand :has-advice:`and no other weapons,`
+When you are wielding a melee weapon in one hand :has-official:`and no other weapons,`
 you gain a +2 bonus to damage rolls with that weapon.
 
 Great Weapon Fighting

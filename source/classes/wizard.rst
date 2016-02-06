@@ -286,7 +286,16 @@ save.
 Potent Cantrip
 ~~~~~~~~~~~~~~
 
-Starting at 6th level, your damaging cantrips affect even creatures that
+.. sidebar:: Sage Advice
+    :class: official
+    
+    Potent Cantrip only applies to cantrips that require saving throws to avoid damage.
+    
+    .. rst-class:: source
+    
+    Source: `Sage Advice Compendium <http://media.wizards.com/2015/downloads/dnd/SA_Compendium_1.01.pdf>`_
+
+Starting at 6th level, :has-official:`your damaging cantrips affect` even creatures that
 avoid the brunt of the effect. When a creature succeeds on a saving
 throw against your cantrip, the creature takes half the cantrip’s damage
 (if any) but suffers no additional effect from the cantrip.

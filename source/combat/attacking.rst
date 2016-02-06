@@ -63,8 +63,17 @@ Rolling 1 or 20
 Sometimes fate blesses or curses a combatant, causing the novice to hit
 and the veteran to miss.
 
+.. sidebar:: Sage Advice
+    :class: official
+
+    Spell attacks can score critical hits, just like any other attack.
+    
+    .. rst-class:: source
+
+    Source: `Sage Advice Compendium <http://media.wizards.com/2015/downloads/dnd/SA_Compendium_1.01.pdf>`_
+
 If the d20 roll for an attack is a 20, the attack hits regardless of any
-modifiers or the target’s AC. This is called a critical hit, which is
+modifiers or the target’s AC. This is called a :has-official:`critical hit,` which is
 explained later in this chapter.
 
 If the d20 roll for an attack is a 1, the attack misses regardless of

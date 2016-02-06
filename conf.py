@@ -45,11 +45,14 @@ source_suffix = '.rst'
 #source_encoding = 'utf-8-sig'
 
 rst_prolog = """
-.. role:: has-errata
+.. role:: has-errata 
     :class: has-errata
     
-.. role:: has-advice
-    :class: has-advice
+.. role:: has-official
+    :class: has-official
+    
+.. role:: has-unofficial 
+    :class: has-unofficial
 """
 
 # The master toctree document.

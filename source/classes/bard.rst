@@ -197,8 +197,20 @@ a d12 at 15th level.
 Jack of All Trades
 ~~~~~~~~~~~~~~~~~~
 
+.. sidebar:: Sage Advice
+    :class: official
+        
+    Jack of all trades applies only to ability checks, not attack rolls or 
+    saving throws. However since initiative rolls are Dexterity
+    checks Jack of All Trades does apply to initiative rolls
+    as long as it is not already benefiting from the character's proficiency bonus.
+    
+    .. rst-class:: source
+    
+    Source: `Sage Advice Compendium <http://media.wizards.com/2015/downloads/dnd/SA_Compendium_1.01.pdf>`_
+
 Starting at 2nd level, you can add half your proficiency bonus, rounded
-down, to any ability check you make that doesn’t already include your
+down, to :has-official:`any ability check` you make that doesn’t already include your
 proficiency bonus.
 
 Song of Rest
