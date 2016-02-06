@@ -23,6 +23,23 @@
     line-height: $base-font-size * 2
     padding: 0 $base-font-size
 
+.wy-table-responsive
+  overflow: visible
+  table
+    td, th
+      white-space: normal
+
+.wy-table
+  td, th
+    padding: $table-cell-padding
+
+.rst-content
+  table
+    &.docutils td, &.field-list td,
+    &.docutils th, &.field-list th
+      padding: $table-cell-padding
+
+
 .wy-menu-vertical
   width: $nav-desktop-width
   header, p.caption
