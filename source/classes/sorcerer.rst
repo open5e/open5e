@@ -103,8 +103,8 @@ magic, whatever its origin, fuels your spells.
 Cantrips
 ^^^^^^^^
 
-At 1st level, you know four cantrips of your choice from the sorcerer
-spell list. You learn additional sorcerer cantrips of your choice at
+At 1st level, you know four cantrips of your choice from the :ref:`srd:sorcerer-spells` 
+list. You learn additional sorcerer cantrips of your choice at
 higher levels, as shown in the Cantrips Known column of the Sorcerer
 table.
 
@@ -123,7 +123,7 @@ hands* using either slot.
 Spells Known of 1st Level and Higher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You know two 1st-level spells of your choice from the sorcerer spell list.
+You know two 1st-level spells of your choice from the :ref:`srd:sorcerer-spells` list.
 
 The Spells Known column of the Sorcerer table shows when you learn more
 sorcerer spells of your choice. Each of these spells must be of a level
@@ -294,10 +294,9 @@ spell’s level to target a second creature in range with the same spell
 (1 sorcery point if the spell is a cantrip).
 
 To be eligible, a spell must be incapable of
-
 targeting more than one creature at the spell’s current level. For
-example, *magic missile* and *scorching ray* aren’t eligible, but
-*ray of frost* and *chromatic orb* are.
+example, :ref:`srd:magic-missile` and :ref:`srd:scorching-ray` aren’t eligible, but
+:ref:`srd:ray-of-frost` and :ref:`srd:chromatic-orb` are.
 
 Ability Score Improvement
 ~~~~~~~~~~~~~~~~~~~~~~~~~
