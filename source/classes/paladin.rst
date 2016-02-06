@@ -182,7 +182,7 @@ must expend a slot of the spell’s level or higher. You regain all
 expended spell slots when you finish a long rest.
 
 You prepare the list of paladin spells that are available for you to
-cast, choosing from the paladin spell list. When you do so, choose a
+cast, choosing from the :ref:`srd:paladin-spells` list. When you do so, choose a
 number of paladin spells equal to your Charisma modifier + half your
 paladin level, rounded down (minimum of one spell). The spells must be
 of a level for which you have spell slots.
@@ -379,11 +379,11 @@ Oath of Devotion Spells
 ===========   ================
 Paladin       Level Spells
 ===========   ================
-3rd           protection from evil and good, sanctuary
-5th           lesser restoration, zone of truth
-9th           beacon of hope, dispel magic
-13th          freedom of movement, guardian of faith
-17th          commune, flame strike
+3rd           :ref:`srd:protection-from-evil-and-good`, :ref:`srd:sanctuary`
+5th           :ref:`srd:lesser-restoration`, :ref:`srd:zone-of-truth`
+9th           :ref:`srd:beacon-of-hope`, :ref:`srd:dispel-magic`
+13th          :ref:`srd:freedom-of-movement`, *guardian of faith*
+17th          :ref:`srd:commune`, :ref:`srd:flame-strike`
 ===========   ================
 
 Channel Divinity
@@ -429,7 +429,7 @@ Purity of Spirit
 ^^^^^^^^^^^^^^^^
 
 Beginning at 15th level, you are always under the effects of a
-*protection from evil and good* spell.
+:ref:`srd:protection-from-evil-and-good` spell.
 
 Holy Nimbus
 ^^^^^^^^^^^
@@ -459,9 +459,9 @@ causes a paladin to transgress his or her oath.
 
 A paladin who has broken a vow typically seeks absolution from a
 cleric who shares his or her faith or from another paladin of the
-same order. The paladin might spend an all-­‐ night vigil in prayer
+same order. The paladin might spend an all-night vigil in prayer
 as a sign of penitence, or undertake a fast or similar act of
-self-­‐denial. After a rite of confession and forgiveness, the
+self-denial. After a rite of confession and forgiveness, the
 paladin starts fresh.
 
 If a paladin willfully violates his or her oath and shows no sign of
