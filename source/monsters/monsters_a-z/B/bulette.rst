@@ -25,14 +25,14 @@ Large monstrosity, unaligned
 Actions
 ~~~~~~~
 
-.. figure:: /_images/Ankheg.png
+.. figure:: /_images/Bulette.png
     :figclass: image-right
-    :target: /_images/Ankheg.png
-    
+    :target: /_images/Bulette.png
+
     © 2016 Violet Kirk
 
 **Bite**: *Melee Weapon Attack*: +7 to hit, reach 5 ft., one target.
-*Hit*: 30 (4d12 + 4) piercing damage. 
+*Hit*: 30 (4d12 + 4) piercing damage.
 
 **Deadly Leap**: If the bulette
 jumps at least 15 feet as part of its movement, it can then use this
