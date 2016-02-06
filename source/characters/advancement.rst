@@ -260,7 +260,7 @@ class, use the rules below. If you multiclass
 but have the Spellcasting feature from only one class, you follow the
 rules as described in that class.
 
-***Spells Known and Prepared.*** You determine what spells you know and
+**Spells Known and Prepared.** You determine what spells you know and
 can prepare for each class individually, as if you were a
 single-­classed member of that class. If you are a ranger 4/wizard 3,
 for example, you know three 1st-­level ranger spells based on your
@@ -275,7 +275,7 @@ and you use the spellcasting ability of that class when you cast the
 spell. Similarly, a spellcasting focus, such as a holy symbol, can be
 used only for the spells from the class associated with that focus.
 
-***Spell Slots.*** You determine your available spell slots by adding
+**Spell Slots.** You determine your available spell slots by adding
 together all your levels in the bard, cleric, druid, sorcerer, and
 wizard classes, and half your levels (rounded down) in the paladin and
 ranger classes. Use this total to determine your spell slots by
@@ -296,7 +296,7 @@ However, you don't know any 3rd-­level spells, nor do you know any
 2nd-­level ranger spells. You can use the spell slots of those levels to
 cast the spells you do know-and potentially enhance their effects.
 
-***Pact Magic.*** If you have both the Spellcasting class
+**Pact Magic.** If you have both the Spellcasting class
 
 feature and the Pact Magic class feature from the warlock class, you can
 use the spell slots you gain from the Pact Magic feature to cast spells

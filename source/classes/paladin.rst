@@ -352,18 +352,18 @@ Tenets of Devotion
 Though the exact words and strictures of the Oath of Devotion vary,
 paladins of this oath share these tenets.
 
-***Honesty.*** Don't lie or cheat. Let your word be your promise.
+**Honesty.** Don't lie or cheat. Let your word be your promise.
 
-***Courage.*** Never fear to act, though caution is wise.
+**Courage.** Never fear to act, though caution is wise.
 
-***Compassion.*** Aid others, protect the weak, and punish those who
+**Compassion.** Aid others, protect the weak, and punish those who
 threaten them. Show mercy to your foes, but temper it with wisdom.
 
-***Honor.*** Treat others with fairness, and let your honorable deeds be
+**Honor.** Treat others with fairness, and let your honorable deeds be
 an example to them. Do as much good as possible while causing the least
 amount of harm.
 
-***Duty.*** Be responsible for your actions and their consequences,
+**Duty.** Be responsible for your actions and their consequences,
 protect those entrusted to your care, and obey those who have just
 authority over you.
 
@@ -391,7 +391,7 @@ Channel Divinity
 When you take this oath at 3rd level, you gain the following two Channel
 Divinity options.
 
-***Sacred Weapon.*** As an action, you can imbue one weapon that you are
+**Sacred Weapon.** As an action, you can imbue one weapon that you are
 holding with positive energy, using your Channel Divinity. For 1 minute,
 you add your Charisma modifier to attack rolls made with
 
@@ -403,7 +403,7 @@ You can end this effect on your turn as part of any other action. If you
 are no longer holding or carrying this weapon, or if you fall
 unconscious, this effect ends.
 
-***Turn the Unholy.*** As an action, you present your holy symbol and
+**Turn the Unholy.** As an action, you present your holy symbol and
 speak a prayer censuring fiends and undead, using your Channel Divinity.
 Each fiend or undead that can see or hear you within 30 feet of you must
 make a Wisdom saving throw. If the creature fails its saving throw, it

@@ -47,14 +47,14 @@ certain password.
 
 When you inscribe the glyph, choose explosive runes or a spell glyph.
 
-***Explosive Runes.*** When triggered, the glyph erupts with magical
+**Explosive Runes.** When triggered, the glyph erupts with magical
 energy in a 20 foot radius sphere centered on the glyph. The sphere
 spreads around corners. Each creature in the area must make a Dexterity
 saving throw. A creature takes 5d8 acid, cold, fire, lightning, or
 thunder damage on a failed saving throw (your choice when you create the
 glyph), or half as much damage on a successful one.
 
-***Spell Glyph.*** You can store a prepared spell of 3rd level or lower
+**Spell Glyph.** You can store a prepared spell of 3rd level or lower
 in the glyph by casting it as part of creating the glyph. The spell must
 target a single creature or an area. The spell being stored has no
 immediate effect when cast in this way. When the glyph is triggered, the

@@ -26,9 +26,9 @@ If the target is a creature, everything it is wearing and carrying
 changes size with it. Any item dropped by an affected creature returns
 to normal size at once.
 
-***Enlarge.*** The target's size doubles in all dimensions, and its
+**Enlarge.** The target's size doubles in all dimensions, and its
 weight is multiplied by eight. This growth increases its size by one
-category--- from Medium to Large, for example. If there isn't enough room
+category---from Medium to Large, for example. If there isn't enough room
 for the target to double its size, the creature or object attains the
 maximum possible size in the space available. Until the spell ends, the
 target also has advantage on Strength checks and Strength saving throws.
@@ -36,7 +36,7 @@ The target's weapons also grow to match its new size. While these
 weapons are enlarged, the target's attacks with them deal 1d4 extra
 damage.
 
-***Reduce.*** The target's size is halved in all dimensions, and its
+**Reduce.** The target's size is halved in all dimensions, and its
 weight is reduced to one eighth of normal. This reduction decreases its
 size by one category---from Medium to Small, for example. Until the spell
 ends, the target also has disadvantage on Strength checks and Strength

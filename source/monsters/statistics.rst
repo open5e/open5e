@@ -548,17 +548,17 @@ ranged attacks. These can be spell attacks or weapon attacks, where the
 claw or tail spike. For more information on different kinds of attacks,
 see the *Player's Handbook*.
 
-***Creature vs. Target.*** The target of a melee or
+**Creature vs. Target.** The target of a melee or
 ranged attack is usually either one creature or one target, the
 difference being that a "target" can be a creature or an object.
 
-***Hit.*** Any damage dealt or other effects that occur as a result of
+**Hit.** Any damage dealt or other effects that occur as a result of
 an attack hitting a target are described after the "\ *Hit*\ " notation.
 You have the option of taking average damage or rolling the damage; for
 this reason, both the average damage and the die expression are
 presented.
 
-***Miss.*** If an attack has an effect that occurs on a miss, that
+**Miss.** If an attack has an effect that occurs on a miss, that
 information is presented after the "\ *Miss:*\ " notation.
 
 Multiattack
@@ -589,12 +589,12 @@ Limited Usage
 Some special abilities have restrictions on the number of times they can
 be used.
 
-***X/Day.*** The notation "X/Day" means a special ability can be used X
+**X/Day.** The notation "X/Day" means a special ability can be used X
 number of times and that a monster must finish a long rest to regain
 expended uses. For example, "1/Day" means a special ability can be used
 once and that the monster must finish a long rest to use it again.
 
-***Recharge X-Y.*** The notation "Recharge X-Y" means a monster can use
+**Recharge X-Y.** The notation "Recharge X-Y" means a monster can use
 a special ability once and that the ability then has a random chance of
 recharging during each subsequent round of combat. At the start of each
 of the monster's turns, roll a d6. If the roll is one of the numbers in
@@ -606,7 +606,7 @@ For example, "Recharge 5-6" means a monster can use the special ability
 once. Then, at the start of the monster's turn, it regains the use of
 that ability if it rolls a 5 or 6 on a d6.
 
-***Recharge after a Short or Long Rest.*** This notation means that
+**Recharge after a Short or Long Rest.** This notation means that
 a monster can use a special ability once and then must finish a
 short or long rest to use it again.
 

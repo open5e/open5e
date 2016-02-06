@@ -24,7 +24,7 @@ invest the target with an aura that either attracts or repels the
 specified creatures for the duration. Choose antipathy or sympathy as
 the aura's effect.
 
-***Antipathy.*** The enchantment causes creatures of the kind you
+**Antipathy.** The enchantment causes creatures of the kind you
 designated to feel an intense urge to leave the area and avoid the
 target. When such a creature can see the target or comes within 60 feet
 of it, the creature must succeed on a Wisdom saving throw or become
@@ -36,7 +36,7 @@ target and can't see it, the creature is no longer frightened, but the
 creature becomes frightened again if it regains sight of the target or
 moves within 60 feet of it.
 
-***Sympathy.*** The enchantment causes the specified creatures to feel
+**Sympathy.** The enchantment causes the specified creatures to feel
 an intense urge to approach the target while within 60 feet of it or
 able to see it. When such a creature can see the target or comes within
 60 feet of it, the creature must succeed on a Wisdom saving throw or use
@@ -48,7 +48,7 @@ If the target damages or otherwise harms an affected creature, the
 affected creature can make a Wisdom saving throw to end the effect, as
 described below.
 
-***Ending the Effect.*** If an affected creature ends its turn while not
+**Ending the Effect.** If an affected creature ends its turn while not
 within 60 feet of the target or able to see it, the creature makes a
 Wisdom saving throw. On a successful save, the creature is no longer
 affected by the target and recognizes the feeling of repugnance or
