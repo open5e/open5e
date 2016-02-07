@@ -4253,9 +4253,13 @@ div[class^='highlight'] pre {
 
 .rst-content table {
   border: 0px solid white;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 .rst-content table.docutils {
   border: 0px solid white;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 .rst-content table:not(.field-list) tr:nth-child(2n-1) td {
   background-color: transparent;
