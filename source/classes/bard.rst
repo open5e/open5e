@@ -156,9 +156,9 @@ spellcasting ability. In addition, you use your Charisma modifier when
 setting the saving throw DC for a bard spell you cast and when making an
 attack roll with one.
 
-**Spell save DC** = 8 + your proficiency bonus + your Charisma modifier
+  **Spell save DC** = 8 + your proficiency bonus + your Charisma modifier
 
-**Spell attack modifier** = your proficiency bonus + your Charisma modifier
+  **Spell attack modifier** = your proficiency bonus + your Charisma modifier
 
 Ritual Casting
 ~~~~~~~~~~~~~~
@@ -201,14 +201,14 @@ Jack of All Trades
 
 .. sidebar:: Sage Advice
     :class: official
-        
-    Jack of all trades applies only to ability checks, not attack rolls or 
+
+    Jack of all trades applies only to ability checks, not attack rolls or
     saving throws. However since initiative rolls are Dexterity
     checks Jack of All Trades does apply to initiative rolls
     as long as it is not already benefiting from the character's proficiency bonus.
-    
+
     .. rst-class:: source
-    
+
     Source: `Sage Advice Compendium <http://media.wizards.com/2015/downloads/dnd/SA_Compendium_1.01.pdf>`_
 
 Starting at 2nd level, you can add half your proficiency bonus, rounded
@@ -296,11 +296,11 @@ Inspiration left, you regain one use.
 
 .. sidebar:: Looking for more Colleges?
     :class: missing
-        
-    College of Lore is the only college that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+
+    College of Lore is the only college that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_.
     We are hoping to expand using homebrew or third-party content.
 
-    If you know of high-quality content that would be a good fit, please 
+    If you know of high-quality content that would be a good fit, please
     `contact us <mailto:gm@5esrd.com>`_ or `submit it on github <https://github.com/eepMoody/open5e>`_.
 
     .. rst-class:: source

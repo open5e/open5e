@@ -115,7 +115,7 @@ As a conduit for divine power, you can cast :ref:`srd:cleric-spells`.
 Cantrips
 ~~~~~~~~
 
-At 1st level, you know three cantrips of your choice from the :ref:`srd:cleric-spells` 
+At 1st level, you know three cantrips of your choice from the :ref:`srd:cleric-spells`
 list. You learn additional cleric cantrips of your choice at
 higher levels, as shown in the Cantrips Known column of the Cleric
 table.
@@ -155,10 +155,9 @@ whenever a cleric spell refers to your spellcasting ability. In
 addition, you use your Wisdom modifier when setting the saving throw DC
 for a cleric spell you cast and when making an attack roll with one.
 
-**Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier
+  **Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier
 
-**Spell attack modifier** = your proficiency bonus + your Wisdom
-modifier
+  **Spell attack modifier** = your proficiency bonus + your Wisdom modifier
 
 Ritual Casting
 ~~~~~~~~~~~~~~
@@ -280,11 +279,11 @@ roll required.
 
 .. sidebar:: Looking for more Domains?
     :class: missing
-        
-    Life domain is the only domain that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+
+    Life domain is the only domain that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_.
     We are hoping to expand using homebrew or third-party content.
 
-    If you know of high-quality content that would be a good fit, please 
+    If you know of high-quality content that would be a good fit, please
     `contact us <mailto:gm@5esrd.com>`_ or `submit it on github <https://github.com/eepMoody/open5e>`_.
 
     .. rst-class:: source
@@ -336,7 +335,7 @@ Whenever you use a spell of 1st level or higher to restore hit points to
 a creature, the creature regains additional hit points equal to 2 + the
 spell's level.
 
-Channel Divinity: Preserve Life 
+Channel Divinity: Preserve Life
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Starting at 2nd level, you can use

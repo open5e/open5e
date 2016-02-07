@@ -133,7 +133,7 @@ of 1st level and higher. To cast one of these druid spells, you must
 expend a slot of the spell's level or higher. You regain all expended
 spell slots when you finish a long rest.
 
-You prepare the list of druid spells that are available for you to cast, 
+You prepare the list of druid spells that are available for you to cast,
 choosing from the :ref:`srd:druid-spells` list. When you
 do so, choose a number of druid spells equal to your Wisdom modifier +
 your druid level (minimum of one spell). The spells must be of a level
@@ -154,10 +154,9 @@ Wisdom whenever a spell refers to your spellcasting ability. In
 addition, you use your Wisdom modifier when setting the saving throw DC
 for a druid spell you cast and when making an attack roll with one.
 
-**Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier
+  **Spell save DC** = 8 + your proficiency bonus + your Wisdom modifier
 
-**Spell attack modifier** = your proficiency bonus + your Wisdom
-modifier
+  **Spell attack modifier** = your proficiency bonus + your Wisdom modifier
 
 Ritual Casting
 ~~~~~~~~~~~~~~
@@ -287,15 +286,15 @@ shape and your beast shape from Wild Shape.
 
 .. sidebar:: Looking for more Circles?
     :class: missing
-        
-    Circle of the Land is the only circle that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+
+    Circle of the Land is the only circle that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_.
     We are hoping to expand using homebrew or third-party content.
 
-    If you know of high-quality content that would be a good fit, please 
+    If you know of high-quality content that would be a good fit, please
     `contact us <mailto:gm@5esrd.com>`_ or `submit it on github <https://github.com/eepMoody/open5e>`_.
 
     .. rst-class:: source
-    
+
 Druid Circles
 -------------
 
