@@ -553,6 +553,19 @@ patrons bestow their power only grudgingly, and might make a pact with
 only one warlock. Warlocks who serve the same patron might view each
 other as allies, siblings, or rivals.
 
+.. sidebar:: Looking for more Patrons?
+    :class: missing
+        
+    The Fiend is the only patron that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+    We are hoping to expand using homebrew or third-party content.
+
+    If you know of high-quality content that would be a good fit, please 
+    `contact us <mailto:gm@5esrd.com>`_ or `submit it on github <https://github.com/eepMoody/open5e>`_.
+
+    .. rst-class:: source
+    
+
+
 The Fiend
 ^^^^^^^^^
 

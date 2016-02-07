@@ -332,6 +332,19 @@ themselves true paladins until they have reached 3rd level and made this
 oath. For others, the actual swearing of the oath is a formality, an
 official stamp on what has always been true in the paladin's heart.
 
+.. sidebar:: Looking for more Oaths?
+    :class: missing
+        
+    Oath of Devotion is the only oath that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+    We are hoping to expand using homebrew or third-party content.
+
+    If you know of high-quality content that would be a good fit, please 
+    `contact us <mailto:gm@5esrd.com>`_ or `submit it on github <https://github.com/eepMoody/open5e>`_.
+
+    .. rst-class:: source
+    
+
+
 Oath of Devotion
 ----------------
 

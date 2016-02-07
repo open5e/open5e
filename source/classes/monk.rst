@@ -313,6 +313,19 @@ according to his or her aptitude and interest. All three traditions rely
 on the same basic techniques, diverging as the student grows more adept.
 Thus, a monk need choose a tradition only upon reaching 3rd level.
 
+.. sidebar:: Looking for more Traditions?
+    :class: missing
+      
+    Way of the Open Hand is the only tradition that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+    We are hoping to expand using homebrew or third-party content.
+
+    If you know of high-quality content that would be a good fit, please 
+    `contact us <mailto:gm@5esrd.com>`_ or `submit it on github <https://github.com/eepMoody/open5e>`_.
+
+    .. rst-class:: source
+    
+
+
 Way of the Open Hand
 ^^^^^^^^^^^^^^^^^^^^
 
