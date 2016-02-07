@@ -175,7 +175,7 @@ This wellspring is represented by sorcery points, which allow you to
 create a variety of magical effects.
 
 Sorcery Points
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 You have 2 sorcery points, and you gain more as you reach higher levels,
 as shown in the Sorcery Points column of the Sorcerer table. You can
@@ -183,7 +183,7 @@ never have more sorcery points than shown on the table for your level.
 You regain all spent sorcery points when you finish a long rest.
 
 Flexible Casting
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 You can use your sorcery points to gain additional spell slots, or
 sacrifice spell slots to gain additional sorcery points. You learn other
@@ -198,7 +198,7 @@ Any spell slot you create with this feature vanishes when you finish a
 long rest.
 
 Creating Spell Slots
-^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~
 
 +------------+------------------------+
 | Spell Slot | Sorcery                |
@@ -220,7 +220,7 @@ on your turn, you can expend one spell slot and gain a number of
 sorcery points equal to the slot's level.
 
 Metamagic
-~~~~~~~~~
+^^^^^^^^^^
 
 At 3rd level, you gain the ability to twist your spells to suit your
 needs. You gain two of the following Metamagic options of your choice.
@@ -230,7 +230,7 @@ You can use only one Metamagic option on a spell when you cast it,
 unless otherwise noted.
 
 Careful Spell
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 When you cast a spell that forces other creatures to make a saving
 throw, you can protect some of those creatures from the spell's full
@@ -240,7 +240,7 @@ chosen creature automatically succeeds on its saving throw against the
 spell.
 
 Distant Spell
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 When you cast a spell that has a range of 5 feet or greater, you can
 spend 1 sorcery point to double the range of the spell.
@@ -249,7 +249,7 @@ When you cast a spell that has a range of touch, you can spend 1 sorcery
 point to make the range of the spell 30 feet.
 
 Empowered Spell
-^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 When you roll damage for a spell, you can spend 1 sorcery point to
 reroll a number of the damage dice up to your Charisma modifier (minimum
@@ -259,34 +259,34 @@ You can use Empowered Spell even if you have already used a different
 Metamagic option during the casting of the spell.
 
 Extended Spell
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 When you cast a spell that has a duration of 1 minute or longer, you can
 spend 1 sorcery point to double its duration, to a maximum duration of
 24 hours.
 
 Heightened Spell
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~
 
 When you cast a spell that forces a creature to make a saving throw to
 resist its effects, you can spend 3 sorcery points to give one target of
 the spell disadvantage on its first saving throw made against the spell.
 
 Quickened Spell
-^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 When you cast a spell that has a casting time of 1 action, you can spend
 2 sorcery points to change the casting time to 1 bonus action for this
 casting.
 
 Subtle Spell
-^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 When you cast a spell, you can spend 1 sorcery point to cast it without
 any somatic or verbal components.
 
 Twinned Spell
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 When you cast a spell that targets only one creature and doesn't have a
 range of self, you can spend a number of sorcery points equal to the
@@ -299,7 +299,7 @@ example, :ref:`srd:magic-missile` and :ref:`srd:scorching-ray` aren't eligible, 
 :ref:`srd:ray-of-frost` and :ref:`srd:chromatic-orb` are.
 
 Ability Score Improvement
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
@@ -307,7 +307,7 @@ increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Sorcerous Restoration
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 At 20th level, you regain 4 expended sorcery points whenever you finish
 a short rest.
@@ -318,6 +318,19 @@ Sorcerous Origins
 Different sorcerers claim different origins for their innate magic.
 Although many variations exist, most of these origins fall into two
 categories: a draconic bloodline and wild magic.
+
+.. sidebar:: Looking for more Origins?
+    :class: missing
+        
+    Draconic Bloodline is the only origin that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+    We are hoping to expand using homebrew or third-party content.
+
+    If you know of high-quality content that would be a good fit, please 
+    `contact us <mailto:gm@5esrd.com>`_ or `submit it on github <https://github.com/eepMoody/open5e>`_.
+
+    .. rst-class:: source
+    
+
 
 Draconic Bloodline
 ~~~~~~~~~~~~~~~~~~

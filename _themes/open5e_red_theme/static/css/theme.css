@@ -4993,6 +4993,9 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   opacity: 0.7;
   font-size: 12px;
 }
+.rst-content .sidebar.missing {
+  border: 1px dashed #555;
+}
 .rst-content .sidebar.errata {
   background-color: #fcf3d0;
   border-color: #F1C40F;

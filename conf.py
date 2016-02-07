@@ -60,7 +60,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'open5e'
-#copyright = u'2016, Ean Moody, Max Rothman, Jason McAlpin'
+#copyright = u'2016, Ean Mody, Max Rothman, Jason McAlpin'
 author = u'Ean Moody, Max Rothman, Jason McAlpin'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -213,7 +213,7 @@ html_show_copyright = True
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'open5edoc'
+htmlhelp_basename = 'open5e'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -280,7 +280,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'open5e', u'open5e Documentation',
-     author, 'open5e', 'One line description of project.',
+     author, 'open5e', 'The open 5e SRD',
      'Miscellaneous'),
 ]
 

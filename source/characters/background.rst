@@ -252,6 +252,15 @@ suggested for your class.) Finally, choose two personality traits, one
 ideal, one bond, and one flaw. If you can't find a feature that matches
 your desired background, work with your GM to create one.
 
+.. sidebar:: Looking for more Backgrounds?
+    :class: missing
+        
+    Only one background was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+    We are hoping to expand using homebrew or third-party content.
+
+    If you know of high-quality content that would be a good fit, please 
+    `contact us <mailto:gm@5esrd.com>`_ or `submit it on github <https://github.com/eepMoody/open5e>`_.
+
 Acolyte
 ^^^^^^^
 You have spent your life in the service of a temple to a specific god or

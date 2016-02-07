@@ -292,6 +292,17 @@ Superior Inspiration
 At 20th level, when you roll initiative and have no uses of Bardic
 Inspiration left, you regain one use.
 
+.. sidebar:: Looking for more Colleges?
+    :class: missing
+        
+    College of Lore is the only college that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+    We are hoping to expand using homebrew or third-party content.
+
+    If you know of high-quality content that would be a good fit, please 
+    `contact us <mailto:gm@5esrd.com>`_ or `submit it on github <https://github.com/eepMoody/open5e>`_.
+
+    .. rst-class:: source
+
 College of Lore
 ~~~~~~~~~~~~~~~
 
