@@ -28,7 +28,7 @@ paralyzed, petrified, poisoned
 **Senses** blindsight 60 ft. (blind beyond this radius), passive
 Perception 7
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 

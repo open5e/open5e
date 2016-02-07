@@ -23,7 +23,7 @@ Medium plant, unaligned
 **Senses** blindsight 30 ft. (blind beyond this radius), passive
 Perception 6
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 

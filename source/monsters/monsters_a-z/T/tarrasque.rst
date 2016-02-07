@@ -27,7 +27,7 @@ from nonmagical attacks
 
 **Senses** blindsight 120 ft., passive Perception 10
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 30 (155,000 XP)
 

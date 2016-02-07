@@ -22,7 +22,7 @@ Tiny beast, unaligned
 
 **Senses** darkvision 120 ft., passive Perception 13
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 
@@ -34,7 +34,7 @@ on Wisdom (Perception) checks that rely on hearing or sight.
 
 **Senses**: passive Perception 14
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 

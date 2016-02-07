@@ -29,7 +29,7 @@ Large plant, unaligned
 **Senses** blindsight 60 ft. (blind beyond this radius), passive
 Perception 10
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 5 (1,800 XP)
 

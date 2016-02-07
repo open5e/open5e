@@ -38,7 +38,7 @@ Apparatus of the Crab Levers
 |                 | degrees left.               | degrees right.                  |
 +-----------------+-----------------------------+---------------------------------+
 | 8               | Eyelike fixtures emit       | The light turns off             |
-|                 | bright light in a 30--foot  |                                 |
+|                 | bright light in a 30---foot |                                 |
 |                 | radius and dim light for    |                                 |
 |                 | an additional 30 feet.      |                                 |
 +-----------------+-----------------------------+---------------------------------+

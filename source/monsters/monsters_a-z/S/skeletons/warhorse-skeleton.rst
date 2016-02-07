@@ -26,7 +26,7 @@ Large undead, lawful evil
 
 **Senses** darkvision 60 ft., passive Perception 9;
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 1/2 (100 XP)
 

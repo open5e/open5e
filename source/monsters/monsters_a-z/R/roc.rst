@@ -24,7 +24,7 @@ Gargantuan monstrosity, unaligned
 
 **Senses** passive Perception 14
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 11 (7,200 XP)
 

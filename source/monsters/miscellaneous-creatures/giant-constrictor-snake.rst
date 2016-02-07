@@ -22,7 +22,7 @@ Huge beast, unaligned
 
 **Senses** blindsight 10 ft., passive Perception 12
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 2 (450 XP)
 

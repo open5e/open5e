@@ -25,7 +25,7 @@ petrified, prone, restrained, stunned
 
 **Senses** darkvision 60 ft., passive Perception 8
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 1 (200 XP)
 

@@ -22,7 +22,7 @@ Tiny beast, unaligned
 
 **Senses** passive Perception 14
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 

@@ -22,7 +22,7 @@ Huge beast, unaligned
 
 **Senses**: passive Perception 14
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 7 (2,900 XP)
 

@@ -25,7 +25,7 @@ petrified, prone, restrained, stunned
 
 **Senses** blindsight 10 ft., passive Perception 10
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 2 (450 XP)
 

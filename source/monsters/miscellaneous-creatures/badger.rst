@@ -20,7 +20,7 @@ Tiny beast, unaligned
 
 **Senses** darkvision 30 ft., passive Perception 11
 
-**Languages** --
+**Languages** ---
 
 **Keen Smell**: The badger has advantage on Wisdom (Perception) checks
 that rely on smell.

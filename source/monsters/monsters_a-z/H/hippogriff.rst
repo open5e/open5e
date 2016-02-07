@@ -22,7 +22,7 @@ Large monstrosity, unaligned
 
 **Senses** passive Perception 15
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 1 (200 XP)
 

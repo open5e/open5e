@@ -20,7 +20,7 @@ Tiny beast, unaligned
 
 **Senses** darkvision 30 ft., passive Perception 9
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 

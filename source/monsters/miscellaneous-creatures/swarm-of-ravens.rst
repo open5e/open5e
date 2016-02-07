@@ -27,7 +27,7 @@ petrified, prone, restrained, stunned
 
 **Senses** passive Perception 15
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 
