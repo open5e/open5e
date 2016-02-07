@@ -14,6 +14,8 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 .rst-content
+  p
+    margin-bottom: 18px
   // Sphinx by default applies HxW style attributes to images. This fixes that oversite.
   img
     max-width: 100%
@@ -142,17 +144,20 @@
     border-bottom: 2px solid darken($red, 20%)
     
   h3
-    margin-bottom: $base-line-height
+    margin-bottom: $base-line-height / 2
     
   h4
+    margin-bottom: $base-line-height / 8
     font-variant: small-caps
     
   h5
     font-weight: 500
     font-size: 85%
     text-transform: uppercase
+    margin-bottom: 0
   
   h6
+    margin-bottom: 0
     font-weight: 500
     font-size: 70%
     text-transform: uppercase
@@ -163,7 +168,6 @@
   h4, h5, h6
     opacity: .8
     font-family: $base-font-family
-    margin-bottom: 0
     
 
   // This is the #href that shows up on hover. Sphinx's is terrible so I hack it away.
