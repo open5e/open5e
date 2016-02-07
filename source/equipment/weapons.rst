@@ -46,7 +46,7 @@ to make a ranged attack only if you have ammunition to fire from the
 weapon. Each time you attack with the weapon, you expend one piece of
 ammunition. Drawing the ammunition from a quiver, case, or other
 container is part of the attack (you need a free hand to load a
-one-­handed weapon). At the end of the battle, you can recover half your
+one-handed weapon). At the end of the battle, you can recover half your
 expended ammunition by taking a minute to search the battlefield.
 
 If you use a weapon that has the ammunition property to make a melee
@@ -93,7 +93,7 @@ a handaxe, you use your Strength, but if you throw a dagger, you can use
 either your Strength or your Dexterity, since the dagger has the finesse
 property.
 
-**Two-­Handed.** This weapon requires two hands when you attack with
+**Two-Handed.** This weapon requires two hands when you attack with
 it.
 
 **Versatile.** This weapon can be used with one or two hands. A damage

@@ -28,7 +28,7 @@ Speed
 
 Every character and monster has a speed, which is the distance in feet
 that the character or monster can walk in 1 round. This number assumes
-short bursts of energetic movement in the midst of a life-­ threatening
+short bursts of energetic movement in the midst of a life-threatening
 situation.
 
 The following rules determine how far a character or monster can move in
@@ -90,8 +90,8 @@ Difficult Terrain
 
 The travel speeds given in the Travel Pace table assume relatively
 simple terrain: roads, open plains, or clear dungeon corridors. But
-adventurers often face dense forests, deep swamps, rubble-­filled ruins,
-steep mountains, and ice-­covered ground---all considered difficult
+adventurers often face dense forests, deep swamps, rubble-filled ruins,
+steep mountains, and ice-covered ground---all considered difficult
 terrain.
 
 You move at half speed in difficult terrain---moving 1 foot in difficult

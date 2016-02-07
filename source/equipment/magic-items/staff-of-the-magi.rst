@@ -28,10 +28,10 @@ below).
 **Spells.** While holding the staff, you can use an action to expend
 some of its charges to cast one of the following spells from it, using
 your spell save DC and spellcasting ability: *conjure elemental* (7
-charges), *dispel magic* (3 charges), *fireball* (7th-­level version, 7
+charges), *dispel magic* (3 charges), *fireball* (7th-level version, 7
 charges), *flaming sphere* (2 charges), *ice storm* (4 charges),
 *invisibility* (2 charges), *knock* (2 charges), *lightning bolt*
-(7th-­level version, 7 charges), *passwall* (5 charges), *plane shift*
+(7th-level version, 7 charges), *passwall* (5 charges), *plane shift*
 (7 charges), *telekinesis* (5 charges), *wall of fire* (4 charges), or
 *web* (2 charges).
 
@@ -43,7 +43,7 @@ from evil and good.*
 **Retributive Strike.** You can use an action to break the staff over
 your knee or against a solid surface, performing a retributive strike.
 The staff is destroyed and releases its remaining magic in an explosion
-that expands to fill a 30-­foot-­radius sphere centered on it.
+that expands to fill a 30-foot-radius sphere centered on it.
 
 You have a 50 percent chance to instantly travel to
 a random plane of existence, avoiding the explosion. If you fail to

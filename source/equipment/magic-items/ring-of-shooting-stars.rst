@@ -18,12 +18,12 @@ regains 1d6 expended charges daily at dawn.
 fire* from the ring.
 
 **Ball Lightning.** You can expend 2 charges as an action to create
-one to four 3-­foot-­diameter spheres of lightning. The more spheres you
+one to four 3-foot-diameter spheres of lightning. The more spheres you
 create, the less powerful each sphere is individually.
 
 Each sphere appears in an unoccupied space you can see within 120 feet
 of you. The spheres last as long as you concentrate (as if concentrating
-on a spell), up to 1 minute. Each sphere sheds dim light in a 30-­foot
+on a spell), up to 1 minute. Each sphere sheds dim light in a 30-foot
 radius.
 
 As a bonus action, you can move each sphere up to 30 feet, but no
@@ -45,7 +45,7 @@ Spheres  Lightning Damage
 **Shooting Stars.** You can expend 1 to 3 charges as an action. For
 every charge you expend, you launch a glowing mote of light from the
 ring at a point you can see within 60 feet of you. Each creature within
-a 15-­foot cube originating from that point is showered in sparks and
+a 15-foot cube originating from that point is showered in sparks and
 must make a DC 15 Dexterity saving throw, taking 5d4 fire damage on a
 failed save, or half as much damage on a successful one.
 

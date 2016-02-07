@@ -7,7 +7,7 @@ Scarab of Protection
 
 *Wondrous item, legendary (requires attunement)*
 
-If you hold this beetle-­shaped medallion in your hand for 1 round, an
+If you hold this beetle-shaped medallion in your hand for 1 round, an
 inscription appears on its surface revealing its magical nature. It
 provides two benefits while it is on your person:
 

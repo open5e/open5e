@@ -20,7 +20,7 @@ The robe has two of each of the following patches:
 
 -  Steel mirror
 
--  10-­foot pole
+-  10-foot pole
 
 -  Hempen rope (50 feet, coiled)
 

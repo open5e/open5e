@@ -249,7 +249,7 @@ advantage on saving throws against poison for 1 hour. It confers no
 benefit to undead or constructs.
 
 **Arcane Focus.** An arcane focus is a special item--- an orb, a
-crystal, a rod, a specially constructed staff, a wand-­like length of
+crystal, a rod, a specially constructed staff, a wand-like length of
 wood, or some similar item--- designed to channel the power of arcane
 spells. A sorcerer, warlock, or wizard can use such an item as a
 spellcasting focus.
@@ -278,14 +278,14 @@ creature's walking speed by 10 feet until the creature regains at least
 1 hit point. A creature moving through the area at half speed doesn't
 need to make the save.
 
-**Candle.** For 1 hour, a candle sheds bright light in a 5-­foot
+**Candle.** For 1 hour, a candle sheds bright light in a 5-foot
 radius and dim light for an additional 5 feet.
 
 **Case, Crossbow Bolt.** This wooden case can hold up to twenty
 crossbow bolts.
 
 **Case, Map or Scroll.** This cylindrical leather case can hold up to
-ten rolled-­up sheets of paper or five rolled-­up sheets of parchment.
+ten rolled-up sheets of paper or five rolled-up sheets of parchment.
 
 **Chain.** A chain has 10 hit points. It can be burst with a
 successful DC 20 Strength check.
@@ -336,10 +336,10 @@ target creature, treating the holy water as an improvised weapon. If the
 target is a fiend or undead, it takes 2d6 radiant damage. A cleric or
 paladin may create holy water by performing a special ritual. The ritual
 takes 1 hour to perform, uses 25 gp worth of powdered silver, and
-requires the caster to expend a 1st-­level spell slot.
+requires the caster to expend a 1st-level spell slot.
 
 **Hunting Trap.** When you use your action to set it, this trap forms
-a saw-­toothed steel ring that snaps shut when a creature steps on a
+a saw-toothed steel ring that snaps shut when a creature steps on a
 pressure plate in the center. The trap is affixed by a heavy chain to an
 immobile object, such as a tree or a spike driven into the ground. A
 creature that steps on the plate must succeed on a DC 13 Dexterity
@@ -350,18 +350,18 @@ action to make a DC 13 Strength check, freeing itself or another
 creature within its reach on a success. Each failed check deals 1
 piercing damage to the trapped creature.
 
-**Lamp.** A lamp casts bright light in a 15-­foot radius and dim light
+**Lamp.** A lamp casts bright light in a 15-foot radius and dim light
 for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1
 pint) of oil.
 
 **Lantern, Bullseye.** A bullseye lantern casts bright light in a
-60-­foot cone and dim light for an additional 60 feet. Once lit, it
+60-foot cone and dim light for an additional 60 feet. Once lit, it
 burns for 6 hours on a flask (1 pint) of oil.
 
-**Lantern, Hooded.** A hooded lantern casts bright light in a 30-­foot
+**Lantern, Hooded.** A hooded lantern casts bright light in a 30-foot
 radius and dim light for an additional 30 feet. Once lit, it burns for 6
 hours on a flask (1 pint) of oil. As an action, you can lower the hood,
-reducing the light to dim light in a 5-­foot radius.
+reducing the light to dim light in a 5-foot radius.
 
 **Lock.** A key is provided with the lock. Without the key, a creature
 proficient with thieves' tools can pick this lock with a successful DC
@@ -393,7 +393,7 @@ ranged attack against a target creature or object, treating the oil as
 an improvised weapon. On a hit, the target is covered in oil. If the
 target takes any fire damage before the oil dries (after 1 minute), the
 target takes an additional 5 fire damage from the burning oil. You can
-also pour a flask of oil on the ground to cover a 5-­foot-­square area,
+also pour a flask of oil on the ground to cover a 5-foot-square area,
 provided that the surface is level. If lit, the oil burns for 2 rounds
 and deals 5 fire damage to any creature that enters the area or ends its
 turn in the area. A creature can take this damage only once per turn.
@@ -431,7 +431,7 @@ suitable assortment of weights up to 2 pounds. With it, you can measure
 the exact weight of small objects, such as raw precious metals or trade
 goods, to help determine their worth.
 
-**Spellbook.** Essential for wizards, a spellbook is a leather-­bound
+**Spellbook.** Essential for wizards, a spellbook is a leather-bound
 tome with 100 blank vellum pages suitable for recording spells.
 
 **Spyglass.** Objects viewed through a spyglass are magnified to twice
@@ -445,7 +445,7 @@ Using it to light a torch---or anything else with abundant, exposed
 fuel---takes an action. Lighting any other fire takes 1 minute.
 
 **Torch.** A torch burns for 1 hour, providing bright light in a
-20-­foot radius and dim light for an additional 20 feet. If you make a
+20-foot radius and dim light for an additional 20 feet. If you make a
 melee attack with a burning torch and hit, it deals 1 fire damage.
 
 
@@ -640,7 +640,7 @@ to any ability checks you make to create a physical forgery of a
 document.
 
 **Gaming Set.** This item encompasses a wide range of game pieces,
-including dice and decks of cards (for games such as Three-­Dragon
+including dice and decks of cards (for games such as Three-Dragon
 Ante). A few common examples appear on the Tools table, but other kinds
 of gaming sets exist. If you are proficient with a gaming set, you can
 add your proficiency bonus to ability checks you make to play a game
@@ -673,6 +673,6 @@ you make to craft or use poisons.
 
 **Thieves' Tools.** This set of tools includes a small file, a set of
 lock picks, a small mirror mounted on a metal handle, a set of
-narrow-­bladed scissors, and a pair of pliers. Proficiency with these
+narrow-bladed scissors, and a pair of pliers. Proficiency with these
 tools lets you add your proficiency bonus to any ability checks you make
 to disarm traps or open locks.

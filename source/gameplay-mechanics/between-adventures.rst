@@ -8,7 +8,7 @@ Between trips to dungeons and battles against ancient evils, adventurers
 need time to rest, recuperate, and prepare for their next adventure.
 Many adventurers also use this time to perform other tasks, such as
 crafting arms and armor, performing research, or spending their
-hard-­earned gold.
+hard-earned gold.
 
 In some cases, the passage of time is something that occurs with little
 fanfare or description. When starting a new adventure, the GM might
@@ -59,7 +59,7 @@ For every day of downtime you spend crafting, you can craft one or more
 items with a total market value not exceeding 5 gp, and you must expend
 raw materials worth half the total market value. If something you want
 to craft has a market value greater than 5 gp, you make progress every
-day in 5-­ gp increments until you reach the market value of the item.
+day in 5- gp increments until you reach the market value of the item.
 For example, a suit of plate armor (market value 1,500 gp) takes 300
 days to craft by yourself.
 

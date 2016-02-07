@@ -23,7 +23,7 @@ in your class entry, which is the average result of the die roll
 
 When your Constitution modifier increases by 1, your hit point maximum
 increases by 1 for each level you have attained. For example, if your
-7th-­level fighter has a Constitution score of 18, when he reaches 8th
+7th-level fighter has a Constitution score of 18, when he reaches 8th
 level, he increases his Constitution score from 17 to 18, thus
 increasing his Constitution modifier from +3 to +4. His hit point
 maximum then increases by 8.
@@ -93,13 +93,13 @@ With this rule, you have the option of gaining a level in a new class
 whenever you advance in level, instead of gaining a level in your
 current class. Your levels in all your classes are added together to
 determine your character level. For example, if you have three levels in
-wizard and two in fighter, you're a 5th-­level character.
+wizard and two in fighter, you're a 5th-level character.
 
 As you advance in levels, you might primarily remain a member of your
 original class with just a few levels in another class, or you might
 change course entirely, never looking back at the class you left behind.
 You might even start progressing in a third or fourth class. Compared to
-a single-­class character of the same level, you'll sacrifice some focus
+a single-class character of the same level, you'll sacrifice some focus
 in exchange for versatility.
 
 Prerequisites
@@ -111,8 +111,8 @@ the Multiclassing Prerequisites table. For example, a barbarian who
 decides to multiclass into the druid class must have both Strength and
 Wisdom scores of 13 or higher. Without the full training that a
 beginning character receives, you must be a quick study in your new
-class, having a natural aptitude that is reflected by higher-­
-than-­average ability scores.
+class, having a natural aptitude that is reflected by higher-
+than-average ability scores.
 
 Multiclassing Prerequisites
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -158,8 +158,8 @@ Hit Points and Hit Dice
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 You gain the hit points from your new class as described for levels
-after 1st. You gain the 1st-­level hit points for a class only when you
-are a 1st-­level character.
+after 1st. You gain the 1st-level hit points for a class only when you
+are a 1st-level character.
 
 You add together the Hit Dice granted by all your classes to form your
 pool of Hit Dice. If the Hit Dice are the same die type, you can simply
@@ -175,7 +175,7 @@ Proficiency Bonus
 Your proficiency bonus is always based on your total character level, as
 shown in the Character Advancement table in chapter 1, not your level in
 a particular class. For example, if you are a fighter 3/rogue 2, you
-have the proficiency bonus of a 5th-­ level character, which is +3.
+have the proficiency bonus of a 5th- level character, which is +3.
 
 Proficiencies
 ^^^^^^^^^^^^^
@@ -262,12 +262,12 @@ rules as described in that class.
 
 **Spells Known and Prepared.** You determine what spells you know and
 can prepare for each class individually, as if you were a
-single-­classed member of that class. If you are a ranger 4/wizard 3,
-for example, you know three 1st-­level ranger spells based on your
-levels in the ranger class. As 3rd-­level wizard, you know three wizard
+single-classed member of that class. If you are a ranger 4/wizard 3,
+for example, you know three 1st-level ranger spells based on your
+levels in the ranger class. As 3rd-level wizard, you know three wizard
 cantrips, and your spellbook contains ten wizard spells, two of which
 (the two you gained when you reached 3rd level as a wizard) can be
-2nd-­level spells. If your Intelligence is 16, you can prepare six
+2nd-level spells. If your Intelligence is 16, you can prepare six
 wizard spells from your spellbook.
 
 Each spell you know and prepare is associated with one of your classes,
@@ -283,17 +283,17 @@ consulting the Multiclass Spellcaster table.
 
 If you have more than one spellcasting class, this table might give you
 spell slots of a level that is higher than the spells you know or can
-prepare. You can use those slots, but only to cast your lower-­level
-spells. If a lower-­level spell that you cast, like *burning hands*, has
-an enhanced effect when cast using a higher-­level slot, you can use the
+prepare. You can use those slots, but only to cast your lower-level
+spells. If a lower-level spell that you cast, like *burning hands*, has
+an enhanced effect when cast using a higher-level slot, you can use the
 enhanced effect, even though you don't have any spells of that higher
 level.
 
 For example, if you are the aforementioned ranger 4/wizard 3, you count
-as a 5th-­level character when determining your spell slots: you have
-four 1st-­level slots, three 2nd-­level slots, and two 3rd-­level slots.
-However, you don't know any 3rd-­level spells, nor do you know any
-2nd-­level ranger spells. You can use the spell slots of those levels to
+as a 5th-level character when determining your spell slots: you have
+four 1st-level slots, three 2nd-level slots, and two 3rd-level slots.
+However, you don't know any 3rd-level spells, nor do you know any
+2nd-level ranger spells. You can use the spell slots of those levels to
 cast the spells you do know-and potentially enhance their effects.
 
 **Pact Magic.** If you have both the Spellcasting class

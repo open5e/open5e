@@ -19,7 +19,7 @@ and mental characteristics:
 
 -  **Charisma**, measuring force of personality
 
-Is a character muscle-­bound and insightful? Brilliant and charming?
+Is a character muscle-bound and insightful? Brilliant and charming?
 Nimble and hardy? Ability scores define these qualities---a creature's
 assets as well as weaknesses.
 
@@ -329,7 +329,7 @@ that far. In this case, your GM might allow you to apply your
 proficiency in Athletics and ask for a Constitution (Athletics) check.
 So if you're proficient in Athletics, you apply your proficiency bonus
 to the Constitution check just as you would normally do for a Strength
-(Athletics) check. Similarly, when your half-­orc barbarian uses a
+(Athletics) check. Similarly, when your half-orc barbarian uses a
 display of raw strength to intimidate an enemy, your GM might ask for a
 Strength (Intimidation) check, even though Intimidation is normally
 associated with Charisma.
@@ -351,7 +351,7 @@ Here's how to determine a character's total for a passive check:
 If the character has advantage on the check, add 5. For disadvantage,
 subtract 5. The game refers to a passive check total as a **score**.
 
-For example, if a 1st-­level character has a Wisdom of 15 and
+For example, if a 1st-level character has a Wisdom of 15 and
 proficiency in Perception, he or she has a passive Wisdom (Perception)
 score of 14.
 
@@ -429,7 +429,7 @@ Examples include the following activities:
    midjump.
 
 -  You struggle to swim or stay afloat in treacherous currents,
-   storm-­tossed waves, or areas of thick seaweed. Or another creature
+   storm-tossed waves, or areas of thick seaweed. Or another creature
    tries to push or pull you underwater or otherwise interfere with your
    swimming.
 
@@ -453,7 +453,7 @@ Attack Rolls and Damage
 
 You add your Strength modifier to your attack roll and your damage roll
 when attacking with a melee weapon such as a mace, a battleaxe, or a
-javelin. You use melee weapons to make melee attacks in hand-­ to-­hand
+javelin. You use melee weapons to make melee attacks in hand-to-hand
 combat, and some of them can be thrown to make a ranged attack.
 
 Lifting and Carrying
@@ -600,7 +600,7 @@ creature notices you, the DM compares your Dexterity (Stealth) check
 with that creature's passive Wisdom (Perception) score, which equals 10
 + the creature's Wisdom modifier, as well as any other bonuses or
 penalties. If the creature has advantage, add 5. For disadvantage,
-subtract 5. For example, if a 1st-­‐level character (with a proficiency
+subtract 5. For example, if a 1st-level character (with a proficiency
 bonus of +2) has a Wisdom of 15 (a +2 modifier) and proficiency in
 Perception, he or she has a passive Wisdom (Perception) of 14.
 
@@ -793,7 +793,7 @@ certain kinds of Charisma checks.
 can convincingly hide the truth, either verbally or through your
 actions. This deception can encompass everything from misleading others
 through ambiguity to telling outright lies. Typical situations include
-trying to fast-­ talk a guard, con a merchant, earn money through
+trying to fast-talk a guard, con a merchant, earn money through
 gambling, pass yourself off in a disguise, dull someone's suspicions
 with false assurances, or maintain a straight face while telling a
 blatant lie.

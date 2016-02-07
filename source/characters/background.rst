@@ -57,7 +57,7 @@ Alignment in the Multiverse
 
 For many thinking creatures, alignment is a moral choice. Humans,
 dwarves, elves, and other humanoid races can choose whether to follow
-the paths of good or evil, law or chaos. According to myth, the good-­
+the paths of good or evil, law or chaos. According to myth, the good-
 aligned gods who created these races gave them free will to choose their
 moral paths, knowing that good without free will is slavery.
 
@@ -66,7 +66,7 @@ serve them. Those races have strong inborn tendencies that match the
 nature of their gods. Most orcs share the violent, savage nature of the
 orc gods, and are thus inclined toward evil. Even if an orc chooses a
 good alignment, it struggles against its innate tendencies for its
-entire life. (Even half-­orcs feel the lingering pull of the orc god's
+entire life. (Even half-orcs feel the lingering pull of the orc god's
 influence.)
 
 Alignment is an essential part of the nature of celestials and fiends. A
@@ -261,8 +261,8 @@ sacrifices in order to conduct worshipers into the presence of the
 divine. You are not necessarily a cleric---performing sacred rites is not
 the same thing as channeling divine power.
 
-Choose a god, a pantheon of gods, or some other quasi-­divine being from
-among those listed in "Fantasy-­Historical Pantheons" or those specified
+Choose a god, a pantheon of gods, or some other quasi-divine being from
+among those listed in "Fantasy-Historical Pantheons" or those specified
 by your GM, and work with your GM to detail the nature of your religious
 service. Were you a lesser functionary in a temple, raised from
 childhood to assist the priests in the sacred rites? Or were you a high

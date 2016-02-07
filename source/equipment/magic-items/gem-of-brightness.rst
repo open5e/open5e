@@ -12,7 +12,7 @@ action to speak one of three command words to cause one of the following
 effects:
 
 -  The first command word causes the gem to shed bright light in a
-   30-­foot radius and dim light for an additional 30 feet. This effect
+   30-foot radius and dim light for an additional 30 feet. This effect
    doesn't expend a charge. It lasts until you use a bonus action to
    repeat the command word or until you use another function of the gem.
 
@@ -24,7 +24,7 @@ effects:
    a success.
 
 -  The third command word expends 5 charges and causes the gem to flare
-   with blinding light in a 30-­ foot cone originating from it. Each
+   with blinding light in a 30-foot cone originating from it. Each
    creature in the cone must make a saving throw as if struck by the
    beam created with the second command word.
 
