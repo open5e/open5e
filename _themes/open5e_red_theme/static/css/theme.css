@@ -4237,7 +4237,7 @@ div[class^='highlight'] pre {
   border: none;
 }
 .wy-table-bordered-all td, .rst-content table.docutils td {
-  border-left: none;
+  border-left: 0px solid white;
 }
 
 .wy-table-responsive {
@@ -4252,17 +4252,17 @@ div[class^='highlight'] pre {
 }
 
 .rst-content table {
-  border: none;
+  border: 0px solid white;
 }
 .rst-content table.docutils {
-  border: none;
+  border: 0px solid white;
 }
 .rst-content table:not(.field-list) tr:nth-child(2n-1) td {
   background-color: transparent;
 }
 .rst-content table.docutils td, .rst-content table.field-list td, .rst-content table.docutils th, .rst-content table.field-list th {
   padding: 8px 8px;
-  border-left: none;
+  border-left: 0px solid white;
 }
 
 .wy-menu-vertical {
