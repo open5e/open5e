@@ -136,7 +136,7 @@ two 2nd-level spell slots. With an Intelligence of 16, your list of
 prepared spells can include six spells of 1st or 2nd level, in any
 combination, chosen from your spellbook. If you prepare the 1st-level
 spell :ref:`srd:magic-missile`, you can cast it using a 1st-level or a 2nd-level
-slot. Casting the spell doesn’t remove it from your list of prepared
+slot. Casting the spell doesn't remove it from your list of prepared
 spells.
 
 You can change your list of prepared spells when you finish a long rest.

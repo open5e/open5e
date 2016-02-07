@@ -294,8 +294,8 @@ spell's level to target a second creature in range with the same spell
 (1 sorcery point if the spell is a cantrip).
 
 To be eligible, a spell must be incapable of
-targeting more than one creature at the spell’s current level. For
-example, :ref:`srd:magic-missile` and :ref:`srd:scorching-ray` aren’t eligible, but
+targeting more than one creature at the spell's current level. For
+example, :ref:`srd:magic-missile` and :ref:`srd:scorching-ray` aren't eligible, but
 :ref:`srd:ray-of-frost` and :ref:`srd:chromatic-orb` are.
 
 Ability Score Improvement

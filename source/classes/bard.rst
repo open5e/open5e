@@ -309,7 +309,7 @@ in fealty to a monarch or following the tenets of a deity. A noble who
 keeps such a bard as a herald or advisor knows that the bard would
 rather be honest than politic.
 
-The college’s members gather in libraries and
+The college's members gather in libraries and
 sometimes in actual colleges, complete with classrooms and dormitories,
 to share their lore with one another. They also meet at festivals or
 affairs of state, where they can expose corruption, unravel lies, and

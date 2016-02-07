@@ -194,7 +194,7 @@ Pact of the Chain
 ^^^^^^^^^^^^^^^^^
 
 You learn the :ref:`srd:find-familiar` spell and can cast it as a ritual. The
-spell doesn’t count against your number of spells known.
+spell doesn't count against your number of spells known.
 
 When you cast the spell, you can choose one of the normal forms for your
 familiar or one of the following special forms: imp, pseudodragon,
@@ -322,7 +322,7 @@ Bewitching Whispers
 
 *Prerequisite: 7th level*
 
-You can cast :ref:`srd:compulsion` once using a warlock spell slot. You can’t do
+You can cast :ref:`srd:compulsion` once using a warlock spell slot. You can't do
 so again until you finish a long rest.
 
 Book of Ancient Secrets
@@ -369,7 +369,7 @@ Dreadful Word
 
 *Prerequisite: 7th level*
 
-You can cast :ref:`srd:confusion` once using a warlock spell slot. You can’t do
+You can cast :ref:`srd:confusion` once using a warlock spell slot. You can't do
 so again until you finish a long rest.
 
 Eldritch Sight
@@ -433,14 +433,14 @@ Minions of Chaos
 *Prerequisite: 9th level*
 
 You can cast :ref:`srd:conjure-elemental` once using a warlock spell slot. You
-can’t do so again until you finish a long rest.
+can't do so again until you finish a long rest.
 
 Mire the Mind
 ^^^^^^^^^^^^^
 
 *Prerequisite: 5th level*
 
-You can cast :ref:`srd:slow` once using a warlock spell slot. You can’t do so
+You can cast :ref:`srd:slow` once using a warlock spell slot. You can't do so
 again until you finish a long rest.
 
 Misty Visions
@@ -479,7 +479,7 @@ Sculptor of Flesh
 
 *Prerequisite: 7th level*
 
-You can cast :ref:`srd:polymorph` once using a warlock spell slot. You can’t do
+You can cast :ref:`srd:polymorph` once using a warlock spell slot. You can't do
 so again until you finish a long rest.
 
 Sign of Ill Omen
@@ -487,13 +487,13 @@ Sign of Ill Omen
 
 *Prerequisite: 5th level*
 
-You can cast :ref:`srd:bestow-curse` once using a warlock spell slot. You can’t
+You can cast :ref:`srd:bestow-curse` once using a warlock spell slot. You can't
 do so again until you finish a long rest.
 
 Thief of Five Fates
 ^^^^^^^^^^^^^^^^^^^
 
-You can cast :ref:`srd:bane` once using a warlock spell slot. You can’t do so
+You can cast :ref:`srd:bane` once using a warlock spell slot. You can't do so
 again until you finish a long rest.
 
 Thirsting Blade
