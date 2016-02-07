@@ -48,7 +48,7 @@ granted by your background:
 -  Leather armor, any simple weapon, and two daggers
 
 The Warlock
-~~~~~~~~~~~
+^^^^^^^^^^^
 
 +-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
 |       | Proficiency |                                         | Cantrips | Spells  | spell | Slot  | Invocations |
@@ -95,6 +95,9 @@ The Warlock
 | 20th  | +6          | Eldritch Master                         | 4        | 15      | 4     | 5     | 8           |
 +-------+-------------+-----------------------------------------+----------+---------+-------+-------+-------------+
 
+Class Abilities
+---------------
+
 Otherworldly Patron
 ^^^^^^^^^^^^^^^^^^^
 
@@ -111,7 +114,7 @@ Your arcane research and the magic bestowed on you by your patron
 have given you facility with spells.
 
 Cantrips
-^^^^^^^^
+~~~~~~~~
 
 You know two cantrips of your choice from the :ref:`srd:warlock-spells` list.
 You learn additional warlock
@@ -119,7 +122,7 @@ cantrips of your choice at higher levels, as shown in the Cantrips Known
 column of the Warlock table.
 
 Spell Slots
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 The Warlock table shows how many spell slots you have. The table also
 shows what the level of those slots is; all of your spell slots are the
@@ -132,7 +135,7 @@ To cast the 1st-level spell :ref:`srd:thunderwave`, you must spend one of those
 slots, and you cast it as a 3rd-level spell.
 
 Spells Known of 1st Level and Higher
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 At 1st level, you know two 1st-level spells of your choice from the
 warlock spell list.
@@ -149,7 +152,7 @@ warlock spell list, which also must be of a level for which you have
 spell slots.
 
 Spellcasting Ability
-^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~
 
 Charisma is your spellcasting ability for your warlock spells, so you
 use your Charisma whenever a spell refers to your spellcasting ability.
@@ -162,13 +165,13 @@ with one.
   **Spell attack modifier** = your proficiency bonus + your Charisma modifier
 
 Spellcasting Focus
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 You can use an arcane focus as a spellcasting focus for your warlock
 spells.
 
 Eldritch Invocations
-~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^
 
 In your study of occult lore, you have unearthed eldritch invocations,
 fragments of forbidden
@@ -185,13 +188,13 @@ the invocations you know and replace it with another invocation that you
 could learn at that level.
 
 Pact Boon
-~~~~~~~~~
+^^^^^^^^^
 
 At 3rd level, your otherworldly patron bestows a gift upon you for your
 loyal service. You gain one of the following features of your choice.
 
 Pact of the Chain
-^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~
 
 You learn the :ref:`srd:find-familiar` spell and can cast it as a ritual. The
 spell doesn't count against your number of spells known.
@@ -205,7 +208,7 @@ own attacks to allow your familiar to make one attack of its own with
 its reaction.
 
 Pact of the Blade
-^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~
 
 You can use your action to create a pact weapon in your empty hand. You
 can choose the form that this melee weapon takes each time you create
@@ -230,7 +233,7 @@ weapon appears at your feet if it is in the extradimensional space when
 the bond breaks.
 
 Pact of the Tome
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 Your patron gives you a grimoire called a Book of Shadows. When you gain
 this feature, choose three cantrips from any class's spell list (the
@@ -245,7 +248,7 @@ during a short or long rest, and it destroys the previous book. The book
 turns to ash when you die.
 
 Ability Score Improvement
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
@@ -253,7 +256,7 @@ increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Mystic Arcanum
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 At 11th level, your patron bestows upon you a magical secret called an
 arcanum. Choose one 6th-level spell from the :ref:`srd:warlock-spells` list as this
@@ -268,7 +271,7 @@ spell at 15th level, and one 9th-level spell at 17th level. You regain
 all uses of your Mystic Arcanum when you finish a long rest.
 
 Eldritch Master
-~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^
 
 At 20th level, you can draw on your inner reserve of mystical power
 while entreating your patron to regain expended spell slots. You can
@@ -579,14 +582,14 @@ balors that are especially mighty; and ultroloths and other lords of the
 yugoloths.
 
 Expanded Spell List
-^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~
 
 The Fiend lets you choose from an expanded list of spells when you learn
 a warlock spell. The following spells are added to the warlock spell
 list for you.
 
 Fiend Expanded Spells
-^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~
 
 =========== =========
 Spell Level Spells
@@ -599,14 +602,14 @@ Spell Level Spells
 =========== =========
 
 Dark One's Blessing
-^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~
 
 Starting at 1st level, when you reduce a hostile creature to 0 hit
 points, you gain temporary hit points equal to your Charisma modifier +
 your warlock level (minimum of 1).
 
 Dark One's Own Luck
-^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~
 
 Starting at 6th level, you can call on your patron to alter fate in your
 favor. When you make an ability check or a saving throw, you can use
@@ -618,7 +621,7 @@ Once you use this feature, you can't use it again until you finish a
 short or long rest.
 
 Fiendish Resilience
-^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~
 
 Starting at 10th level, you can choose one damage type when you finish a
 short or long rest. You gain resistance to that damage type until you
@@ -626,7 +629,7 @@ choose a different one with this feature. Damage from magical weapons or
 silver weapons ignores this resistance.
 
 Hurl Through Hell
-^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~
 
 Starting at 14th level, when you hit a creature with an attack, you can
 use this feature to instantly transport the target through the lower
@@ -641,25 +644,34 @@ experience.
 Once you use this feature, you can't use it again until you finish a long rest.
 
 Your Pact Boon
-~~~~~~~~~~~~~~
+--------------
 
 Each Pact Boon option produces a special creature or an object that
 reflects your patron's nature.
 
-**Pact of the Chain.** Your familiar is more cunning than a
+Pact of the Chain
+^^^^^^^^^^^^^^^^^
+
+Your familiar is more cunning than a
 typical familiar. Its default form can be a reflection of your
 patron, with sprites and pseudodragons tied to the Archfey and imps
 and quasits tied to the Fiend. Because the Great Old One's nature is
 inscrutable, any familiar form is suitable for it.
 
-**Pact of the Blade.** If your patron is the Archfey, your weapon
+Pact of the Blade
+^^^^^^^^^^^^^^^^^
+
+If your patron is the Archfey, your weapon
 might be a slender blade wrapped in leafy vines. If you serve the
 Fiend, your weapon could be an axe made of black metal and adorned
 with decorative flames. If your patron is the Great Old One, your
 weapon might be an ancient-looking spear, with a gemstone embedded
 in its head, carved to look like a terrible unblinking eye.
 
-**Pact of the Tome.** Your Book of Shadows might be a fine,
+Pact of the Tome
+^^^^^^^^^^^^^^^^^
+
+Your Book of Shadows might be a fine,
 gilt-edged tome with spells of enchantment and illusion, gifted to
 you by the lordly Archfey. It could be a weighty tome bound in demon
 hide studded with iron, holding spells of conjuration and a wealth

@@ -99,8 +99,11 @@ The Druid
 | 20th  | +6          | Archdruid                               | 4        | 4   | 3   | 3   | 3   | 3   | 2   | 2   | 1   | 1   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 
+Class Abilities
+---------------
+
 Druidic
-~~~~~~~
+^^^^^^^
 
 You know Druidic, the secret language of druids. You can speak the
 language and use it to leave hidden messages. You and others who know
@@ -110,7 +113,7 @@ message's presence with a successful DC 15 Wisdom
 (Perception) check but can't decipher it without magic.
 
 Spellcasting
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 Drawing on the divine essence of nature itself, you can cast spells to
 shape that essence to your will.
@@ -163,7 +166,7 @@ You can cast a druid spell as a ritual if that spell has the ritual tag
 and you have the spell prepared.
 
 Wild Shape
-~~~~~~~~~~
+^^^^^^^^^^
 
 Starting at 2nd level, you can use your action to magically assume the
 shape of a beast that you have seen before. You can use this feature
@@ -240,7 +243,7 @@ While you are transformed, the following rules apply:
    has no effect until you leave the form.
 
 Druid Circle
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 At 2nd level, you choose to identify with a circle of druids: the Circle
 of the Land or the Circle of the Moon, both detailed at the end of the
@@ -248,7 +251,7 @@ class description. Your choice grants you features at 2nd level and
 again at 6th, 10th, and 14th level.
 
 Ability Score Improvement
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
@@ -256,14 +259,14 @@ increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Timeless Body
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 Starting at 18th level, the primal magic that you wield causes you to
 age more slowly. For every 10 years that pass, your body ages only 1
 year.
 
 Beast Spells
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 Beginning at 18th level, you can cast many of your druid spells in any
 shape you assume using Wild Shape. You can perform the somatic and
@@ -273,7 +276,7 @@ components of a druid spell while in a beast shape, but you aren't able
 to provide material components.
 
 Archdruid
-~~~~~~~~~
+^^^^^^^^^
 
 At 20th level, you can use your Wild Shape an unlimited number of times.
 
@@ -293,10 +296,11 @@ shape and your beast shape from Wild Shape.
 
     .. rst-class:: source
     
-
+Druid Circles
+-------------
 
 Circle of the Land
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 The Circle of the Land is made up of mystics and sages who safeguard
 ancient knowledge and rites through a vast oral tradition. These druids
@@ -308,13 +312,13 @@ influenced by the land where you were initiated into the circle's
 mysterious rites.
 
 Bonus Cantrip
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 When you choose this circle at 2nd level, you learn one additional druid
 cantrip of your choice.
 
 Natural Recovery
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 Starting at 2nd level, you can regain some of your magical energy by
 sitting in meditation and communing with nature. During a short rest,
@@ -328,7 +332,7 @@ levels worth of spell slots. You can recover either a 2nd-level slot or
 two 1st-level slots.
 
 Circle Spells
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 Your mystical connection to the land infuses you with the ability to
 cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to
@@ -342,7 +346,7 @@ If you gain access to a spell that doesn't appear on the druid spell
 list, the spell is nonetheless a druid spell for you.
 
 Arctic
-^^^^^^
+******
 
 +------------------+----------------------------------------------------------+
 | Druid Level      | Circle Spells                                            |
@@ -357,7 +361,7 @@ Arctic
 +------------------+----------------------------------------------------------+
 
 Coast
-^^^^^
+*****
 
 +------------------+-----------------------------------------------------------------------+
 | Druid Level      | Circle Spells                                                         |
@@ -372,7 +376,7 @@ Coast
 +------------------+-----------------------------------------------------------------------+
 
 Desert
-^^^^^^
+******
 
 +------------------+----------------------------------------------------------------------+
 | Druid Level      | Circle Spells                                                        |
@@ -387,7 +391,7 @@ Desert
 +------------------+----------------------------------------------------------------------+
 
 Forest
-^^^^^^
+******
 
 +------------------+---------------------------------------------------------------+
 | Druid Level      | Circle Spells                                                 |
@@ -402,7 +406,7 @@ Forest
 +------------------+---------------------------------------------------------------+
 
 Grassland
-^^^^^^^^^
+*********
 
 +------------------+---------------------------------------------------------------+
 | Druid Level      | Circle Spells                                                 |
@@ -417,7 +421,7 @@ Grassland
 +------------------+---------------------------------------------------------------+
 
 Mountain
-^^^^^^^^
+********
 
 +------------------+---------------------------------------------------------------+
 | Druid Level      | Circle Spells                                                 |
@@ -432,7 +436,7 @@ Mountain
 +------------------+---------------------------------------------------------------+
 
 Swamp
-^^^^^
+*****
 
 +------------------+---------------------------------------------------------------+
 | Druid Level      | Circle Spells                                                 |
@@ -447,7 +451,7 @@ Swamp
 +------------------+---------------------------------------------------------------+
 
 Land's Stride
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 Starting at 6th level, moving through nonmagical difficult terrain costs
 you no extra movement. You can also pass through nonmagical plants
@@ -459,13 +463,13 @@ magically created or manipulated to impede movement, such those created
 by the :ref:`srd:entangle` spell.
 
 Nature's Ward
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 When you reach 10th level, you can't be charmed or frightened by
 elementals or fey, and you are immune to poison and disease.
 
 Nature's Sanctuary
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 When you reach 14th level, creatures of the natural world sense your
 connection to nature and become hesitant to attack you. When a beast or
@@ -473,9 +477,11 @@ plant creature attacks you, that creature must make a Wisdom saving
 throw against your druid spell save DC. On a failed save, the creature
 must choose a different target, or the attack automatically misses. On a
 successful save, the creature is immune to this effect for 24 hours.
-
 The creature is aware of this effect before it makes
 its attack against you.
+
+Druid Traditions
+----------------
 
 Sacred Plants and Wood
 ^^^^^^^^^^^^^^^^^^^^^^

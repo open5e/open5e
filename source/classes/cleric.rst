@@ -104,12 +104,16 @@ The Cleric
 | 20th  | +6          | Divine Intervention Improvement         | 5        | 4   | 3   | 3   | 3   | 3   | 2   | 2   | 1   | 1   |
 +-------+-------------+-----------------------------------------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 
-    **Spellcasting**
+Class Abilities
+---------------
 
-    As a conduit for divine power, you can cast :ref:`srd:cleric-spells`.
+Spellcasting
+^^^^^^^^^^^^
+
+As a conduit for divine power, you can cast :ref:`srd:cleric-spells`.
 
 Cantrips
-^^^^^^^^
+~~~~~~~~
 
 At 1st level, you know three cantrips of your choice from the :ref:`srd:cleric-spells` 
 list. You learn additional cleric cantrips of your choice at
@@ -117,7 +121,7 @@ higher levels, as shown in the Cantrips Known column of the Cleric
 table.
 
 Preparing and Casting Spells
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Cleric table shows how many spell slots you have to cast your spells
 of 1st level and higher. To cast one of these spells, you must expend a
@@ -143,7 +147,7 @@ meditation: at least 1 minute per spell level for each spell on your
 list.
 
 Spellcasting Ability
-^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~
 
 Wisdom is your spellcasting ability for your cleric spells. The power of
 your spells comes from your devotion to your deity. You use your Wisdom
@@ -157,19 +161,19 @@ for a cleric spell you cast and when making an attack roll with one.
 modifier
 
 Ritual Casting
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 You can cast a cleric spell as a ritual if that spell has the ritual tag
 and you have the spell prepared.
 
 Spellcasting Focus
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 You can use a holy symbol (see :ref:`srd:adventuring-gear`) as a spellcasting
 focus for your cleric spells.
 
 Divine Domain
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 Choose one domain related to your deity: Knowledge, Life, Light, Nature,
 Tempest, Trickery, or War. Eac domain is detailed at the end of the
@@ -180,7 +184,7 @@ Channel Divinity when you gain that feature at 2nd level, and additional
 benefits at 6th, 8th, and 17th levels.
 
 Domain Spells
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 Each domain has a list of spells---its domain spells---that you gain at the
 cleric levels noted in the domain description. Once you gain a domain
@@ -191,7 +195,7 @@ If you have a domain spell that doesn't appear on the cleric spell list,
 the spell is nonetheless a cleric spell for you.
 
 Channel Divinity
-~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 
 At 2nd level, you gain the ability to channel divine energy directly
 from your deity, using that energy to fuel magical effects. You start
@@ -213,7 +217,7 @@ it three times between rests. When you finish a short or long rest, you
 regain your expended uses.
 
 Channel Divinity: Turn Undead
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As an action, you present your holy symbol and speak a prayer censuring
 the undead. Each undead that can see or hear you within 30 feet of you
@@ -228,7 +232,7 @@ moving. If there's nowhere to move, the creature can use the Dodge
 action.
 
 Ability Score Improvement
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
@@ -236,15 +240,11 @@ increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Destroy Undead
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 Starting at 5th level, when an undead fails its saving throw against
 your Turn Undead feature, the creature is instantly destroyed if its
-challenge rating is at or below a certain threshold, as shown in the
-Destroy Undead table.
-
-Destroy Undead
-^^^^^^^^^^^^^^
+challenge rating is at or below a certain threshold, as shown in the table below.
 
 +--------------------------+-----------------------------------+
 |    Cleric Level          | Destroys Undead of CR...          |
@@ -261,7 +261,7 @@ Destroy Undead
 +--------------------------+-----------------------------------+
 
 Divine Intervention
-~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^
 
 Beginning at 10th level, you can call on your deity to intervene on your
 behalf when your need is great.
@@ -289,8 +289,11 @@ roll required.
 
     .. rst-class:: source
 
+Cleric Domains
+--------------
+
 Life Domain
-~~~~~~~~~~~
+^^^^^^^^^^^
 
 The Life domain focuses on the vibrant positive energy---one of the
 fundamental forces of the universe---that sustains all life. The gods of
@@ -303,7 +306,7 @@ healing or endurance (such as Ilmater, Mishakal, Apollo, and Diancecht),
 and gods of home and community (such as Hestia, Hathor, and Boldrei).
 
 Life Domain Spells
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 +-------------------+-----------------------------------------------------------+
 |    Cleric Level   |             Spells                                        |
@@ -320,20 +323,23 @@ Life Domain Spells
 +-------------------+-----------------------------------------------------------+
 
 Bonus Proficiency
-^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~
 
 When you choose this domain at 1st level, you gain proficiency with
 heavy armor.
 
 Disciple of Life
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 Also starting at 1st level, your healing spells are more effective.
 Whenever you use a spell of 1st level or higher to restore hit points to
 a creature, the creature regains additional hit points equal to 2 + the
 spell's level.
 
-**Channel Divinity: Preserve Life** Starting at 2nd level, you can use
+Channel Divinity: Preserve Life 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Starting at 2nd level, you can use
 your Channel Divinity to heal the badly injured.
 
 As an action, you present your holy symbol and evoke healing energy that
@@ -344,7 +350,7 @@ half of its hit point maximum. You can't use this feature on an undead
 or a construct.
 
 Blessed Healer
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 Beginning at 6th level, the healing spells you cast on others heal you
 as well. When you cast a spell of 1st level or higher that restores hit
@@ -352,7 +358,7 @@ points to a creature other than you, you regain hit points equal to 2 +
 the spell's level.
 
 Divine Strike
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 At 8th level, you gain the ability to infuse your weapon strikes with
 divine energy. Once on each of your turns when you hit a creature with a
@@ -361,7 +367,7 @@ damage to the target. When you reach 14th level, the extra damage
 increases to 2d8.
 
 Supreme Healing
-^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~
 
 Starting at 17th level, when you would normally roll one or more dice to
 restore hit points with a spell, you instead use the highest number

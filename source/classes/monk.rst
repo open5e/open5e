@@ -92,14 +92,17 @@ The Monk
 | 20th  | +6                | 1d10         | 20        | +30 ft.            | Perfect Self                                           |
 +-------+-------------------+--------------+-----------+--------------------+--------------------------------------------------------+
 
+Class Abilities
+----------------
+
 Unarmored Defense
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 Beginning at 1st level, while you are wearing no armor and not
 wielding a shield, your AC equals 10 + your Dexterity modifier +
 your Wisdom modifier.
 
 Martial Arts
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 At 1st level, your practice of martial arts gives you mastery of
 combat styles that use unarmed strikes and monk weapons, which are
 shortswords and any simple melee weapons that don't have the two-
@@ -119,14 +122,14 @@ blade (called a kama). Whatever name you use for a monk weapon, you can
 use the game statistics provided for the weapon.
 
 Ki
-~~
+^^
 
 Starting at 2nd level, your training allows you to harness the mystic
 energy of ki. Your access to this energy is represented by a number of
 ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.
 
 Unarmored Movement
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 Starting at 2nd level, your speed increases by 10 feet while you are not
 wearing armor or wielding a shield. This bonus increases when you reach
@@ -136,7 +139,7 @@ At 9th level, you gain the ability to move along vertical surfaces and
 across liquids on your turn without falling during the move.
 
 Monastic Tradition
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 When you reach 3rd level, you commit yourself to a monastic tradition:
 the Way of the Open Hand, the Way of Shadow, or the Way of the Four
@@ -145,7 +148,7 @@ tradition grants you features at 3rd level and again at 6th, 11th, and
 17th level.
 
 Ki Features
-~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^
 
 You can spend these points to fuel various ki features. You start
 knowing three such features: Flurry of Blows, Patient Defense, and Step
@@ -164,25 +167,25 @@ follows:
   **Ki save DC** = 8 + your proficiency bonus + your Wisdom modifier
 
 Flurry of Blows
-^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~
 
 Immediately after you take the Attack action on your turn, you can spend
 1 ki point to make two unarmed strikes as a bonus action.
 
 Patient Defense
-^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~
 
 You can spend 1 ki point to take the Dodge action as a bonus action on
 your turn.
 
 Step of the Wind
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 You can spend 1 ki point to take the Disengage or Dash action as a bonus
 action on your turn, and your jump distance is doubled for the turn.
 
 Deflect Missiles
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 Starting at 3rd level, you can use your reaction to deflect or catch the
 missile when you are hit by a ranged weapon attack. When you do so, the
@@ -199,7 +202,7 @@ monk weapon for the attack, which has a normal range of 20 feet and a
 long range of 60 feet.
 
 Ability Score Improvement
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
@@ -207,20 +210,20 @@ increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Slow Fall
-~~~~~~~~~
+^^^^^^^^^
 
 Beginning at 4th level, you can use your reaction when you fall to
 reduce any falling damage you take by an amount equal to five times your
 monk level.
 
 Extra Attack
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 Beginning at 5th level, you can attack twice, instead of once, whenever
 you take the Attack action on your turn.
 
 Stunning Strike
-~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^
 
 Starting at 5th level, you can interfere with the flow of ki in an
 opponent's body. When you hit another creature with a melee weapon
@@ -229,13 +232,13 @@ target must succeed on a Constitution saving throw or be stunned until
 the end of your next turn.
 
 Ki-Empowered Strikes
-~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^
 
 Starting at 6th level, your unarmed strikes count as magical for the
 purpose of overcoming resistance and immunity to nonmagical attacks and damage.
 
 Evasion
-~~~~~~~
+^^^^^^^
 
 At 7th level, your instinctive agility lets you dodge out of the way of
 certain area effects, such as a blue dragon's lightning breath or a
@@ -245,13 +248,13 @@ no damage if you succeed on the saving throw, and only half damage if
 you fail.
 
 Stillness of Mind
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 
 Starting at 7th level, you can use your action to end one effect on
 yourself that is causing you to be charmed or frightened.
 
 Purity of Body
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 .. sidebar:: Sage Advice
     :class: official
@@ -266,14 +269,14 @@ At 10th level, your mastery of the ki flowing through you makes you
 immune to disease :has-official:`and poison.`
 
 Tongue of the Sun and Moon
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Starting at 13th level, you learn to touch the ki of other minds so that
 you understand all spoken languages. Moreover, any creature that can
 understand a language can understand what you say.
 
 Diamond Soul
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 Beginning at 14th level, your mastery of ki grants you proficiency in
 all saving throws.
@@ -282,14 +285,14 @@ Additionally, whenever you make a saving throw and fail, you can spend 1 ki poin
 result.
 
 Timeless Body
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 At 15th level, your ki sustains you so that you suffer none of the
 frailty of old age, and you can't be aged magically. You can still die
 of old age, however. In addition, you no longer need food or water.
 
 Empty Body
-~~~~~~~~~~
+^^^^^^^^^^
 
 Beginning at 18th level, you can use your action to spend 4 ki points to
 become invisible for 1 minute. During that time, you also have
@@ -300,7 +303,7 @@ spell, without needing material components. When you do so, you can't
 take any other creatures with you.
 
 Perfect Self
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points.
 
 Monastic Traditions

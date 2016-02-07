@@ -96,8 +96,11 @@ The Paladin
 | 20th  | +6          | Sacred Oath feature                     | 4   | 3   | 3   | 3   | 2   |
 +-------+-------------+-----------------------------------------+-----+-----+-----+-----+-----+
 
+Class Abilities
+---------------
+
 Divine Sense
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 The presence of strong evil registers on your senses like a noxious
 odor, and powerful good rings like heavenly music in your ears. As
@@ -116,7 +119,7 @@ Charisma modifier. When you finish a long rest, you regain all
 expended uses.
 
 Lay on Hands
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 Your blessed touch can heal wounds. You have a pool of healing power
 that replenishes when you take a long rest. With that pool, you can
@@ -161,7 +164,7 @@ die and must use the new roll. The weapon must have the two-handed or
 versatile property for you to gain this benefit.
 
 Protection
-^^^^^^^^^^
+~~~~~~~~~~
 
 When a creature you can see attacks a target other than you that is
 within 5 feet of you, you can use your reaction to impose disadvantage
@@ -235,7 +238,7 @@ By 3rd level, the divine magic flowing through you makes you immune to
 disease.
 
 Sacred Oath
------------
+^^^^^^^^^^^
 
 When you reach 3rd level, you swear the oath that binds you as a paladin
 forever. Up to this time you have been in a preparatory stage, committed
@@ -343,10 +346,11 @@ official stamp on what has always been true in the paladin's heart.
 
     .. rst-class:: source
     
-
+Paladin Oaths
+-------------
 
 Oath of Devotion
-----------------
+^^^^^^^^^^^^^^^^
 
 The Oath of Devotion binds a paladin to the loftiest ideals of justice,
 virtue, and order. Sometimes called cavaliers, white knights, or holy
@@ -360,7 +364,7 @@ of good---as their ideals, and incorporate images of angelic wings into
 their helmets or coats of arms.
 
 Tenets of Devotion
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 Though the exact words and strictures of the Oath of Devotion vary,
 paladins of this oath share these tenets.
@@ -381,12 +385,12 @@ protect those entrusted to your care, and obey those who have just
 authority over you.
 
 Oath Spells
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 You gain oath spells at the paladin levels listed.
 
 Oath of Devotion Spells
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~
 
 ============= ================
 Paladin Level Spells
@@ -399,12 +403,14 @@ Paladin Level Spells
 ============= ================
 
 Channel Divinity
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 When you take this oath at 3rd level, you gain the following two Channel
 Divinity options.
 
-**Sacred Weapon.** As an action, you can imbue one weapon that you are
+Sacred Weapon
+********************
+As an action, you can imbue one weapon that you are
 holding with positive energy, using your Channel Divinity. For 1 minute,
 you add your Charisma modifier to attack rolls made with
 
@@ -416,7 +422,9 @@ You can end this effect on your turn as part of any other action. If you
 are no longer holding or carrying this weapon, or if you fall
 unconscious, this effect ends.
 
-**Turn the Unholy.** As an action, you present your holy symbol and
+Turn the Unholy
+********************
+As an action, you present your holy symbol and
 speak a prayer censuring fiends and undead, using your Channel Divinity.
 Each fiend or undead that can see or hear you within 30 feet of you must
 make a Wisdom saving throw. If the creature fails its saving throw, it
@@ -430,7 +438,7 @@ moving. If there's nowhere to move, the creature can use the Dodge
 action.
 
 Aura of Devotion
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 Starting at 7th level, you and friendly creatures within 10 feet of you
 can't be charmed while you are conscious.
@@ -438,13 +446,13 @@ can't be charmed while you are conscious.
 At 18th level, the range of this aura increases to 30 feet.
 
 Purity of Spirit
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 Beginning at 15th level, you are always under the effects of a
 :ref:`srd:protection-from-evil-and-good` spell.
 
 Holy Nimbus
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 At 20th level, as an action, you can emanate an aura of sunlight. For 1
 minute, bright light shines from you in a 30-foot radius, and dim light
