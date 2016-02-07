@@ -266,7 +266,7 @@ have thorns, spines, or a similar hazard.
 
 In addition, you have advantage on saving throws against plants that are
 magically created or manipulated to impede movement, such those created
-by the *entangle* spell.
+by the :ref:`srd:entangle` spell.
 
 Hide in Plain Sight
 ^^^^^^^^^^^^^^^^^^^

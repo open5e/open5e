@@ -513,7 +513,7 @@ where its level matters and no level is given, use the monster's
 challenge rating.
 
 An innate spell can have special rules or restrictions. For example,
-a drow mage can innately cast the *levitate* spell, but the spell
+a drow mage can innately cast the :ref:`srd:levitate` spell, but the spell
 has a "self only" restriction, which means that the spell affects
 only the drow mage.
 

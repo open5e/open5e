@@ -49,12 +49,12 @@ Range
 ~~~~~
 
 The target of a spell must be within the spell's range. For a spell like
-*magic missile*, the target is a creature. For a spell like *fireball*,
+:ref:`srd:magic-missile`, the target is a creature. For a spell like :ref:`srd:fireball`,
 the target is the point in space where the ball of fire erupts.
 
 Most spells have ranges expressed in feet. Some spells can target only a
 creature (including you) that you touch. Other spells, such as the
-*shield* spell, affect only you. These spells have a range of self.
+:ref:`srd:shield` spell, affect only you. These spells have a range of self.
 
 Spells that create cones or lines of effect that originate from you also
 have a range of self, indicating that the origin point of the spell's
@@ -79,7 +79,7 @@ Most spells require the chanting of mystic words. The words themselves
 aren't the source of the spell's power; rather, the particular
 combination of sounds, with specific pitch and resonance, sets the
 threads of magic in motion. Thus, a character who is gagged or in an
-area of silence, such as one created by the *silence* spell, can't cast
+area of silence, such as one created by the :ref:`srd:silence` spell, can't cast
 a spell with a verbal component.
 
 Somatic (S)
@@ -189,7 +189,7 @@ target yourself.
 Areas of Effect
 ~~~~~~~~~~~~~~~
 
-Spells such as *burning hands* and *cone of cold* cover an area,
+Spells such as :ref:`srd:burning-hands` and :ref:`srd:cone-of-cold` cover an area,
 allowing them to affect multiple creatures at once.
 
 A spell's description specifies its area of effect, which typically has
@@ -300,6 +300,6 @@ those spells overlap. The effects of the same spell cast multiple times
 don't combine, however. Instead, the most potent effect---such as the
 highest bonus---from those castings applies while their durations overlap.
 
-For example, if two clerics cast *bless* on the same target, that
+For example, if two clerics cast :ref:`srd:bless` on the same target, that
 character gains the spell's benefit only once; he or she doesn't get to
 roll two bonus dice.

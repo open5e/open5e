@@ -264,7 +264,7 @@ desired spell, the harder it is to find someone who can cast it and the
 more it costs.
 
 Hiring someone to cast a relatively common spell of 1st or 2nd level,
-such as **cure wounds** or **identify**, is easy enough in a city or town,
+such as :ref:`srd:cure-wounds` or :ref:`srd:identify`, is easy enough in a city or town,
 and might cost 10 to 50 gold pieces (plus the cost of any expensive
 material components). Finding someone able and willing to cast a
 higher-level spell might involve traveling to a large city, perhaps one

@@ -15,9 +15,9 @@ Going Mad
 ~~~~~~~~~
 
 Various magical effects can inflict madness on an otherwise stable mind.
-Certain spells, such as *contact other plane* and *symbol*, can cause
+Certain spells, such as :ref:`srd:contact-other-plane` and :ref:`srd:symbol`, can cause
 insanity, and you can use the madness rules here instead of the spell
-effects of those spells\ *.* Diseases, poisons, and planar effects such
+effects of those spells. Diseases, poisons, and planar effects such
 as psychic wind or the howling winds of Pandemonium can all inflict
 madness. Some artifacts can also break the psyche of a character who
 uses or becomes attuned to them.
@@ -134,9 +134,7 @@ Indefinite Madness
 Curing Madness
 ~~~~~~~~~~~~~~
 
-A *calm emotions* spell can suppress the effects of madness, while a
-*lesser restoration* spell can rid a character of a short-term or
-long-term madness. Depending on the source of the madness, *remove
-curse* or *dispel evil* might also prove effective. A *greater
-restoration* spell or more powerful magic is required to rid a character
+A :ref:`srd:calm-emotions` spell can suppress the effects of madness, while a
+:ref:`srd:lesser-restoration` spell can rid a character of a short-term or
+long-term madness. Depending on the source of the madness, :ref:`srd:remove-curse` or :ref:`srd:dispel-evil-and-good` might also prove effective. A :ref:`srd:greater-restoration` spell or more powerful magic is required to rid a character
 of indefinite madness.

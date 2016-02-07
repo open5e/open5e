@@ -38,4 +38,4 @@ Actions
 *Hit*: 14 (3d6 + 4) bludgeoning damage.
 
 An **awakened tree** is an ordinary tree given sentience and mobility by
-the *awaken* spell or similar magic.
+the :ref:`srd:awaken` spell or similar magic.

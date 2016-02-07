@@ -31,17 +31,28 @@ Large monstrosity, chaotic evil
 **Challenge** 8 (3,900 XP)
 
 **Rejuvenation**: If it dies, the naga returns to life in 1d6 days and
-regains all its hit points. Only a *wish* spell can prevent this trait
-from functioning. **Spellcasting**: The naga is a 10th-level
+regains all its hit points. Only a :ref:`srd:wish` spell can prevent this trait
+from functioning.
+
+**Spellcasting**: The naga is a 10th-level
 spellcaster. Its spellcasting ability is Intelligence (spell save DC 14,
 +6 to hit with spell attacks), and it needs only verbal components to
 cast its spells. It has the following wizard spells prepared:
 
-**Cantrips (at will)**: *mage hand*, *minor illusion*, *ray of frost*
-**1st level (4 slots)**: *charm person*, *detect magic*, *sleep* **2nd
-level (3 slots)**: *detect thoughts*, *hold person* **3rd level (3
-slots)**: *lightning bolt*, *water breathing* **4th level (3 slots)**:
-*blight*, *dimension door* **5th level (2 slots)**: *dominate person*
+**Cantrips (at will)**: :ref:`srd:mage-hand`, :ref:`srd:minor-illusion`, :ref:`srd:ray-of-frost`
+
+**1st level (4 slots)**: :ref:`srd:charm-person`, :ref:`srd:detect-magic`, :ref:`srd:sleep`
+
+**2nd
+level (3 slots)**: :ref:`srd:detect-thoughts`, :ref:`srd:hold-person`
+
+**3rd level (3
+slots)**: :ref:`srd:lightning-bolt`, :ref:`srd:water-breathing`
+
+**4th level (3 slots)**:
+:ref:`srd:blight`, :ref:`srd:dimension-door`
+
+**5th level (2 slots)**: :ref:`srd:dominate-person`
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

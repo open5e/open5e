@@ -30,7 +30,7 @@ Large monstrosity, chaotic evil
 Charisma (spell save DC 13). It can innately cast the following spells,
 requiring no material components. **At will**: *disguise self* (any
 humanoid form), *major image* **3/day each**: *charm person*, *mirror
-image*, *scrying*, *suggestion* **1/day**: *geas*
+image*, :ref:`srd:scrying`, :ref:`srd:suggestion` **1/day**: :ref:`srd:geas`
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

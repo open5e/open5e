@@ -63,7 +63,7 @@ Cantrips (0 Level)
 - :ref:`srd:darkness`
 - :ref:`srd:darkvision`
 - :ref:`srd:detect-thoughts`
-- :ref:`srd:enlarge/reduce`
+- :ref:`srd:enlarge-reduce`
 - :ref:`srd:flaming-sphere`
 - :ref:`srd:gentle-repose`
 - :ref:`srd:gust-of-wind`

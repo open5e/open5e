@@ -35,30 +35,37 @@ from nonmagical attacks
 turn if it has at least 1 hit point and isn't in sunlight or running
 water. If the vampire takes radiant damage or damage from holy water,
 this trait doesn't function at the start of the vampire's next turn.
+
 **Spider Climb**: The vampire can climb difficult surfaces, including
 upside down on ceilings, without needing to make an ability check.
+
 **Vampire Weaknesses**: The vampire has the following flaws:
-**Forbiddance**: The vampire can't enter a residence without an
-invitation from one of the occupants.
 
-**Harmed by Running Water**: The vampire takes 20 acid damage when it
-ends its turn in running water.
+- **Forbiddance**: The vampire can't enter a residence without an
+  invitation from one of the occupants.
 
-**Stake to the Heart**: The vampire is destroyed if a piercing weapon
-made of wood is driven into its heart while it is incapacitated in its
-resting place.
+- **Harmed by Running Water**: The vampire takes 20 acid damage when it
+  ends its turn in running water.
 
-**Sunlight Hypersensitivity**: The vampire takes 20 radiant damage when
-it starts its turn in sunlight. While in sunlight, it has disadvantage
-on attack rolls and ability checks.
+- **Stake to the Heart**: The vampire is destroyed if a piercing weapon
+  made of wood is driven into its heart while it is incapacitated in its
+  resting place.
+
+- **Sunlight Hypersensitivity**: The vampire takes 20 radiant damage when
+  it starts its turn in sunlight. While in sunlight, it has disadvantage
+  on attack rolls and ability checks.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The vampire makes two attacks, only one of which can be
-a bite attack. **Claws**: *Melee Weapon Attack*: +6 to hit, reach 5 ft.,
+a bite attack.
+
+**Claws**: *Melee Weapon Attack*: +6 to hit, reach 5 ft.,
 one creature. *Hit*: 8 (2d4 + 3) slashing damage. Instead of dealing
-damage, the vampire can grapple the target (escape DC 13). **Bite**:
+damage, the vampire can grapple the target (escape DC 13).
+
+**Bite**:
 *Melee Weapon Attack*: +6 to hit, reach 5 ft., one willing creature, or
 a creature that is grappled by the vampire, incapacitated, or
 restrained. *Hit*: 6 (1d6 + 3) piercing damage plus 7 (2d6) necrotic

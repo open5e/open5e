@@ -39,7 +39,7 @@ Huge giant, chaotic good
 no material components:
 
 **At will**: *detect magic*, *feather fall*,
-*levitate*, *light*
+:ref:`srd:levitate`, :ref:`srd:light`
 
 **3/day each**: *control weather*, *water breathing*
 

@@ -34,22 +34,25 @@ nonmagical attacks
 
 **Limited Magic Immunity**: The rakshasa can't be affected or detected
 by spells of 6th level or lower unless it wishes to be. It has advantage
-on saving throws against all other spells and magical effects. **Innate
+on saving throws against all other spells and magical effects.
+
+**Innate
 Spellcasting**: The rakshasa's innate spellcasting ability is Charisma
 (spell save DC 18, +10 to hit with spell attacks). The rakshasa can
 innately cast the following spells, requiring no material components:
-**At will**: *detect thoughts*, *disguise self*, *mage hand*, *minor
-illusion*
 
-**3/day each**: *charm person*, *detect magic*, *invisibility*, *major
-image*, s\_uggestion\_
+**At will**: :ref:`srd:detect-thoughts`, :ref:`srd:disguise-self`, :ref:`srd:mage-hand`, :ref:`srd:minor-illusion`
 
-1/day each: *dominate person*, *fly*, *plane shift*, *true seeing*
+**3/day each**: :ref:`srd:charm-person`, :ref:`srd:detect-magic`, :ref:`srd:invisibility`, :ref:`srd:major-image`, :ref:`srd:suggestion`
+
+**1/day each**: :ref:`srd:dominate-person`, :ref:`srd:fly`, :ref:`srd:plane-shift`, :ref:`srd:true-seeing`
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The rakshasa makes two claw attacks. **Claw**: *Melee
+**Multiattack**: The rakshasa makes two claw attacks.
+
+**Claw**: *Melee
 Weapon Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 9 (2d6 + 2)
 slashing damage, and the target is cursed if it is a creature. The
 magical curse takes effect whenever the target takes a short or long

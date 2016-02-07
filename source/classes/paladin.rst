@@ -112,7 +112,7 @@ whose presence you sense, but not its identity (the vampire
 
 Count Strahd von Zarovich, for instance). Within the same radius,
 you also detect the presence of any place or object that has been
-consecrated or desecrated, as with the *hallow* spell.
+consecrated or desecrated, as with the :ref:`srd:hallow` spell.
 
 You can use this feature a number of times equal to 1 + your
 Charisma modifier. When you finish a long rest, you regain all

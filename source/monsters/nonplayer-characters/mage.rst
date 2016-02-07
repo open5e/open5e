@@ -6,7 +6,7 @@ Mage
 
 Medium humanoid (any race), any alignment
 
-**Armor Class** 12 (15 with *mage armor*)
+**Armor Class** 12 (15 with :ref:`srd:mage-armor`)
 
 **Hit Points** 40 (9d8)
 
@@ -32,17 +32,17 @@ Medium humanoid (any race), any alignment
 ability is Intelligence (spell save DC 14, +6 to hit with spell
 attacks). The mage has the following wizard spells prepared:
 
-    **Cantrips (at will)**: *fire bolt*, *light*, *mage hand*, *prestidigitation* 
+    **Cantrips (at will)**: :ref:`srd:fire-bolt`, :ref:`srd:light`, :ref:`srd:mage-hand`, :ref:`srd:prestidigitation` 
 
-    **1st level (4 slots)**: *detect magic*, *mage armor*, *magic missile*, *shield* 
+    **1st level (4 slots)**: :ref:`srd:detect-magic`, :ref:`srd:mage-armor`, :ref:`srd:magic-missile`, :ref:`srd:shield` 
 
-    **2nd level (3 slots)**: *misty step*, *suggestion* 
+    **2nd level (3 slots)**: :ref:`srd:misty-step`, :ref:`srd:suggestion` 
 
-    **3rd level (3 slots)**: *counterspell*, *fireball*, *fly* 
+    **3rd level (3 slots)**: :ref:`srd:counterspell`, :ref:`srd:fireball`, :ref:`srd:fly` 
 
-    **4th level (3 slots)**: *greater invisibility*, *ice storm* 
+    **4th level (3 slots)**: :ref:`srd:greater-invisibility`, :ref:`srd:ice-storm` 
 
-    **5th level (1 slot)**: *cone of cold*
+    **5th level (1 slot)**: :ref:`srd:cone-of-cold`
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

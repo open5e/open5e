@@ -6,7 +6,7 @@ Dryad
 
 Medium fey, neutral
 
-**Armor Class** 11 (16 with *barkskin*)
+**Armor Class** 11 (16 with :ref:`srd:barkskin`)
 
 **Hit Points** 22 (5d8)
 
@@ -28,9 +28,13 @@ Medium fey, neutral
 
 **Innate Spellcasting**: The dryad's innate spellcasting ability is
 Charisma (spell save DC 14). The dryad can innately cast the following
-spells, requiring no material components: **At will**: *druidcraft*
-3/day each: *entangle*, *goodberry* 1/day each: *barkskin*, *pass
-without trace*, *shillelagh*
+spells, requiring no material components:
+
+**At will:** :ref:`srd:druidcraft`
+
+**3/day each:** :ref:`srd:entangle`, :ref:`srd:goodberry`
+
+**1/day each:** :ref:`srd:barkskin`, :ref:`srd:pass-without-trace`, :ref:`srd:shillelagh`
 
 **Magic Resistance**: The dryad has advantage on saving throws against
 spells and other magical effects. **Speak with Beasts and Plants**: The
@@ -44,9 +48,11 @@ trees must be Large or bigger.
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Club**: *Melee Weapon Attack*: +2 to hit (+6 to hit with shillelagh),
+**Club**: *Melee Weapon Attack*: +2 to hit (+6 to hit with :ref:`srd:shillelagh`),
 reach 5 ft., one target. *Hit*: 2 (1d4) bludgeoning damage, or 8 (1d8 +
-4) bludgeoning damage with shillelagh. **Fey Charm**: The dryad targets
+4) bludgeoning damage with :ref:`srd:shillelagh`.
+
+**Fey Charm**: The dryad targets
 one humanoid or beast that she can see within 30 feet of her. If the
 target can see the dryad, it must succeed on a DC 14 Wisdom saving throw
 or be magically charmed. The charmed creature regards the dryad as a

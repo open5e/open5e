@@ -114,9 +114,9 @@ spell must have a casting time of 1 action, and
 
 holding onto the spell's magic requires concentration. If your
 concentration is broken, the spell dissipates without taking effect. For
-example, if you are concentrating on the *web* spell and ready *magic
-missile*, your *web* spell ends, and if you take damage before you
-release *magic missile* with your reaction, your concentration might be
+example, if you are concentrating on the :ref:`srd:web` spell and ready :ref:`srd:magic-missile`,
+your :ref:`srd:web` spell ends, and if you take damage before you
+release :ref:`srd:magic-missile` with your reaction, your concentration might be
 broken.
 
 Search
