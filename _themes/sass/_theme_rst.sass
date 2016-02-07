@@ -135,8 +135,36 @@
   .toctree-wrapper p.caption
     @extend h2
   
+  h1
+    color: darken($red, 20%)
+  
+  h2
+    border-bottom: 2px solid darken($red, 20%)
+    
+  h3
+    margin-bottom: $base-line-height
+    
+  h4
+    font-variant: small-caps
+    
+  h5
+    font-weight: 500
+    font-size: 85%
+    text-transform: uppercase
+  
+  h6
+    font-weight: 500
+    font-size: 70%
+    text-transform: uppercase
+  
   h1, h2
+    opacity: 1
+  
+  h4, h5, h6
     opacity: .8
+    font-family: $base-font-family
+    margin-bottom: 0
+    
 
   // This is the #href that shows up on hover. Sphinx's is terrible so I hack it away.
   h1, h2, h3, h4, h5, h6, dl dt, p.caption

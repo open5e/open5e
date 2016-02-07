@@ -4934,8 +4934,35 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
   margin: auto;
   display: block;
 }
+.rst-content h1 {
+  color: #a82315;
+}
+.rst-content h2, .rst-content .toctree-wrapper p.caption {
+  border-bottom: 2px solid #a82315;
+}
+.rst-content h3 {
+  margin-bottom: 24px;
+}
+.rst-content h4 {
+  font-variant: small-caps;
+}
+.rst-content h5 {
+  font-weight: 500;
+  font-size: 85%;
+  text-transform: uppercase;
+}
+.rst-content h6 {
+  font-weight: 500;
+  font-size: 70%;
+  text-transform: uppercase;
+}
 .rst-content h1, .rst-content h2, .rst-content .toctree-wrapper p.caption {
+  opacity: 1;
+}
+.rst-content h4, .rst-content h5, .rst-content h6 {
   opacity: 0.8;
+  font-family: "Source Sans Pro", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 0;
 }
 .rst-content h1 .headerlink, .rst-content h2 .headerlink, .rst-content .toctree-wrapper p.caption .headerlink, .rst-content h3 .headerlink, .rst-content h4 .headerlink, .rst-content h5 .headerlink, .rst-content h6 .headerlink, .rst-content dl dt .headerlink, .rst-content p.caption .headerlink {
   display: none;
