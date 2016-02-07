@@ -23,13 +23,13 @@ If you press **button 1**, the rod becomes a *flame*
 flanged head.
 
 If you press **button 2**, the rod's flanged head folds down and two
-crescent-­shaped blades spring out, transforming the rod into a magic
+crescent-shaped blades spring out, transforming the rod into a magic
 battleaxe that grants a +3 bonus to attack and damage rolls made with
 it.
 
 If you press **button 3**, the rod's flanged head folds down, a spear
 point springs from the rod's tip, and the rod's handle lengthens into a
-6-­foot haft, transforming the rod into a magic spear that grants a +3
+6-foot haft, transforming the rod into a magic spear that grants a +3
 bonus to attack and damage rolls made with it.
 
 If you press **button 4**, the rod transforms into a climbing pole up to

@@ -9,7 +9,7 @@ Deck of Many Things
 
 Usually found in a box or pouch, this deck contains a number of cards
 made of ivory or vellum. Most (75 percent) of these decks have only
-thirteen cards, but the rest have twenty-­two.
+thirteen cards, but the rest have twenty-two.
 
 Before you draw a card, you must declare how
 
@@ -54,7 +54,7 @@ alignment to change. Lawful becomes chaotic, good becomes evil, and vice
 versa. If you are true neutral or unaligned, this card has no effect on
 you.
 
-**Comet.** If you single-­handedly defeat the next hostile monster or
+**Comet.** If you single-handedly defeat the next hostile monster or
 group of monsters you encounter, you gain experience points enough to
 gain one level. Otherwise, this card has no effect.
 
@@ -65,7 +65,7 @@ You remain imprisoned until you are found and removed from the sphere.
 You can't be located by any divination magic, but a *wish* spell can
 reveal the location of your prison. You draw no more cards.
 
-**Euryale.** The card's medusa-­like visage curses you. You take a −2
+**Euryale.** The card's medusa-like visage curses you. You take a −2
 penalty on saving throws while cursed in this way. Only a god or the
 magic of The Fates card can end this curse.
 
@@ -84,7 +84,7 @@ draws. If losing that much XP
 would cause you to lose a level, you instead lose an
 amount that leaves you with just enough XP to keep your level.
 
-**Gem.** Twenty-­five pieces of jewelry worth 2,000 gp each or fifty
+**Gem.** Twenty-five pieces of jewelry worth 2,000 gp each or fifty
 gems worth 1,000 gp each appear at your feet.
 
 **Idiot.** Permanently reduce your Intelligence by 1d4 + 1 (to a
@@ -97,7 +97,7 @@ beyond your declared draws.
 **Key.** A rare or rarer magic weapon with which you
 are proficient appears in your hands. The GM chooses the weapon.
 
-**Knight.** You gain the service of a 4th-­level fighter who appears
+**Knight.** You gain the service of a 4th-level fighter who appears
 in a space you choose within 30 feet of you. The fighter is of the same
 race as you and serves you loyally until death, believing the fates have
 drawn him or her to you. You control this character.

@@ -20,7 +20,7 @@ You gain the following benefits while wearing it:
    the spell is cast and disappears from the helm.
 
 -  As long as it has at least one diamond, the helm emits dim light in a
-   30-­foot radius when at least one undead is within that area. Any
+   30-foot radius when at least one undead is within that area. Any
    undead that starts its turn in that area takes 1d6 radiant damage.
 
 -  As long as the helm has at least one ruby, you have resistance to
@@ -28,7 +28,7 @@ You gain the following benefits while wearing it:
 
 -  As long as the helm has at least one fire opal, you can use an action
    and speak a command word to cause one weapon you are holding to burst
-   into flames. The flames emit bright light in a 10-­foot radius and
+   into flames. The flames emit bright light in a 10-foot radius and
    dim light for an additional 10 feet. The flames are harmless to you
    and the weapon. When you hit with an attack using the blazing weapon,
    the target takes an extra 1d6 fire damage. The flames last until you

@@ -365,6 +365,6 @@ resistance and immunity.
     **The Book's Appearance.** Your spellbook is a unique compilation
     of spells, with its own decorative flourishes and margin notes. It
     might be a plain, functional leather volume that you received as a
-    gift from your master, a finely bound gilt-­‐edged tome you found in
+    gift from your master, a finely bound gilt-edged tome you found in
     an ancient library, or even a loose collection of notes scrounged
     together after you lost your previous spellbook in a mishap.

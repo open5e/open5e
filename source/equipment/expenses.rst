@@ -23,7 +23,7 @@ next calls.
 At the start of each week or month (your choice), choose a lifestyle
 from the Expenses table and pay the price to sustain that lifestyle. The
 prices listed are per day, so if you wish to calculate the cost of your
-chosen lifestyle over a thirty-­day period, multiply the listed price by
+chosen lifestyle over a thirty-day period, multiply the listed price by
 30. Your lifestyle might change from one period to the next, based on
 the funds you have at your disposal, or you might maintain the same
 lifestyle throughout your character's career.
@@ -63,8 +63,8 @@ hunger follow you wherever you go. Other wretched people covet your
 armor, weapons, and adventuring gear, which represent a fortune by their
 standards. You are beneath the notice of most people.
 
-**Squalid.** You live in a leaky stable, a mud-­floored hut just
-outside town, or a vermin-­infested boarding house in the worst part of
+**Squalid.** You live in a leaky stable, a mud-floored hut just
+outside town, or a vermin-infested boarding house in the worst part of
 town. You have shelter from the elements, but you live in a desperate
 and often violent environment, in places rife with disease, hunger, and
 misfortune. You are beneath the notice of most people, and you have few
@@ -91,7 +91,7 @@ laborers, students, priests, hedge wizards, and the like.
 
 **Comfortable.** Choosing a comfortable lifestyle means that you can
 afford nicer clothing and can easily maintain your equipment. You live
-in a small cottage in a middle-­class neighborhood or in a private room
+in a small cottage in a middle-class neighborhood or in a private room
 at a fine inn. You associate with merchants, skilled tradespeople, and
 military officers.
 
@@ -128,7 +128,7 @@ or participant.
     their own gear.
 
     Maintaining this kind of lifestyle doesn't require you to spend any
-    coin, but it is time-­‐consuming. If you spend your time between
+    coin, but it is time-consuming. If you spend your time between
     adventures practicing a profession, you can eke out the equivalent of a
     poor lifestyle. Proficiency in the Survival skill lets you live at the
     equivalent of a comfortable lifestyle.
@@ -215,10 +215,10 @@ an upcoming performance in front of the duke.
 Other hirelings provide more expert or dangerous services. Mercenary
 soldiers paid to help the adventurers take on a hobgoblin army are
 hirelings, as are sages hired to research ancient or esoteric lore. If a
-high-­level adventurer establishes a stronghold of some kind, he or she
+high-level adventurer establishes a stronghold of some kind, he or she
 might hire a whole staff of servants and agents to run the place, from a
 castellan or steward to menial laborers to keep the stables clean. These
-hirelings often enjoy a long-­term contract that includes a place to
+hirelings often enjoy a long-term contract that includes a place to
 live within the stronghold as part of the offered compensation.
 
 Services
@@ -267,9 +267,9 @@ Hiring someone to cast a relatively common spell of 1st or 2nd level,
 such as **cure wounds** or **identify**, is easy enough in a city or town,
 and might cost 10 to 50 gold pieces (plus the cost of any expensive
 material components). Finding someone able and willing to cast a
-higher-­level spell might involve traveling to a large city, perhaps one
+higher-level spell might involve traveling to a large city, perhaps one
 with a university or prominent temple. Once found, the spellcaster might
 ask for a service instead of payment---the kind of service that only
 adventurers can provide, such as retrieving a rare item from a dangerous
-locale or traversing a monster-­infested wilderness to deliver something
+locale or traversing a monster-infested wilderness to deliver something
 important to a distant settlement.

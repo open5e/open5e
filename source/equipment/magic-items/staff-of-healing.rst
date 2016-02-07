@@ -39,16 +39,16 @@ you can expend 1 charge to deal an extra 1d6 force damage to the target.
 **Spells.** While holding this staff, you can use an action to expend
 1 or more of its charges to cast one of the following spells from it,
 using your spell save DC and spell attack bonus: *cone of cold* (5
-charges), *fireball* (5th-­level version, 5 charges), *globe of
+charges), *fireball* (5th-level version, 5 charges), *globe of
 invulnerability* (6 charges), *hold monster* (5 charges), *levitate* (2
-charges), *lightning bolt* (5th-­level version, 5 charges), *magic
+charges), *lightning bolt* (5th-level version, 5 charges), *magic
 missile* (1 charge), *ray of enfeeblement* (1 charge), or *wall of
 force* (5 charges).
 
 **Retributive Strike.** You can use an action to break the staff over
 your knee or against a solid surface, performing a retributive strike.
 The staff is destroyed and releases its remaining magic in an explosion
-that expands to fill a 30-­foot-­radius sphere centered on it.
+that expands to fill a 30-foot-radius sphere centered on it.
 
 You have a 50 percent chance to instantly travel to a random plane of
 existence, avoiding the explosion. If you fail to avoid the effect, you

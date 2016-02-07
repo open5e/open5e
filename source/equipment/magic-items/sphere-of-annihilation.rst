@@ -7,7 +7,7 @@ Sphere of Annihilation
 
 *Wondrous item, legendary*
 
-This 2-­foot-­diameter black sphere is a hole in the multiverse,
+This 2-foot-diameter black sphere is a hole in the multiverse,
 hovering in space and stabilized by a magical field surrounding it.
 
 The sphere obliterates all matter it passes through and all matter that

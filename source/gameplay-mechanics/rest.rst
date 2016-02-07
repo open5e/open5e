@@ -44,6 +44,6 @@ half of the character's total number of them (minimum of one die). For
 example, if a character has eight Hit Dice, he or she can regain four
 spent Hit Dice upon finishing a long rest.
 
-A character can't benefit from more than one long rest in a 24-­hour
+A character can't benefit from more than one long rest in a 24-hour
 period, and a character must have at least 1 hit point at the start of
 the rest to gain its benefits.

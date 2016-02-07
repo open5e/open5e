@@ -55,7 +55,7 @@ following random properties:
 **Spells.** The orb has 7 charges and regains 1d4 + 3 expended charges
 daily at dawn. If you control the orb, you can use an action and expend
 1 or more charges to cast one of the following spells (save DC 18) from
-it: *cure wounds* (5th-­level version, 3 charges), *daylight* (1
+it: *cure wounds* (5th-level version, 3 charges), *daylight* (1
 charge), *death ward* (2 charges), or *scrying* (3 charges). You can
 also use an action to cast the *detect magic* spell from the orb without
 using any charges.

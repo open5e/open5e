@@ -56,7 +56,7 @@ made of leather that has been stiffened by being boiled in oil. The rest
 of the armor is made of softer and more flexible materials.
 
 **Studded Leather.** Made from tough but flexible leather, studded
-leather is reinforced with close-­set rivets or spikes.
+leather is reinforced with close-set rivets or spikes.
 
 Medium Armor
 ~~~~~~~~~~~~

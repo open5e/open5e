@@ -18,7 +18,7 @@ Feather Token
 *Wondrous item, rare*
 
 This tiny object looks like a feather. Different types of feather tokens
-exist, each with a different single-­ use effect. The GM chooses the
+exist, each with a different single- use effect. The GM chooses the
 kind of token or determines it randomly.
 
 =======  ===================  =======  ================================
@@ -39,7 +39,7 @@ The token disappears and an enormous, multicolored bird takes its place.
 The bird has the statistics of a roc, but it obeys your simple commands
 and can't attack. It can carry up to 500 pounds while flying at its
 maximum speed (16 miles an hour for a maximum of 144 miles per day, with
-a one-­hour rest for every 3 hours of flying), or 1,000 pounds at half
+a one-hour rest for every 3 hours of flying), or 1,000 pounds at half
 that speed. The bird disappears after flying its maximum distance for a
 day or if it drops to 0 hit points. You can dismiss the bird as an
 action.
@@ -53,10 +53,10 @@ action.
 
 **Swan Boat.** You can use an action to touch the token to a body of
 water at least 60 feet in diameter. The token disappears, and a
-50-­foot-­long, 20-­foot-­ wide boat shaped like a swan takes its place.
-The boat is self-­propelled and moves across water at a speed of 6 miles
+50-foot-long, 20-foot- wide boat shaped like a swan takes its place.
+The boat is self-propelled and moves across water at a speed of 6 miles
 per hour. You can use an action while on the boat to command it to move
-or to turn up to 90 degrees. The boat can carry up to thirty-­two Medium
+or to turn up to 90 degrees. The boat can carry up to thirty-two Medium
 or smaller creatures. A Large creature counts as four Medium creatures,
 while a Huge creature counts as nine. The boat remains for 24 hours and
 then disappears. You can dismiss the boat as an action.
@@ -64,8 +64,8 @@ then disappears. You can dismiss the boat as an action.
 **Tree.** You must be outdoors to use this token. You can use an
 action to touch it to an unoccupied space on the ground. The token
 disappears, and in its place a nonmagical oak tree springs into
-existence. The tree is 60 feet tall and has a 5-­foot-­diameter trunk,
-and its branches at the top spread out in a 20-­foot radius.
+existence. The tree is 60 feet tall and has a 5-foot-diameter trunk,
+and its branches at the top spread out in a 20-foot radius.
 
 **Whip.** You can use an action to throw the token to
 a point within 10 feet of you. The token disappears, and a floating whip

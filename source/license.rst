@@ -23,7 +23,7 @@ Content: Dungeons & Dragons, D&D, Player's Handbook, Dungeon Master,
 Monster Manual, d20 System, Wizards of the Coast, d20 (when used as a
 trademark), Forgotten Realms, Faerûn, proper names (including those used
 in the names of spells or items), places, Underdark, Red Wizard of Thay,
-the City of Union, Heroic Domains of Ysgard, Ever-­Changing Chaos of
+the City of Union, Heroic Domains of Ysgard, Ever-Changing Chaos of
 Limbo, Windswept Depths of Pandemonium, Infinite Layers of the Abyss,
 Tarterian Depths of Carceri, Gray Waste of Hades, Bleak Eternity of
 Gehenna, Nine Hells of Baator, Infernal Battlefield of Acheron,
@@ -33,7 +33,7 @@ of Elysium, Wilderness of the Beastlands, Olympian Glades of Arborea,
 Concordant Domain of the Outlands, Sigil, Lady of Pain, Book of Exalted
 Deeds, Book of Vile Darkness, beholder, gauth, carrion crawler,
 tanar'ri, baatezu, displacer beast, githyanki, githzerai, mind flayer,
-illithid, umber hulk, yuan-­ti.
+illithid, umber hulk, yuan-ti.
 
 All of the rest of the SRD5 is Open Game Content as described in Section
 1(d) of the License.
@@ -95,7 +95,7 @@ Reserved.
 
 4.  Grant and Consideration: In consideration for agreeing to use this
     License, the Contributors grant You a perpetual, worldwide,
-    royalty-­free, non-­exclusive license with the exact terms of this
+    royalty-free, non-exclusive license with the exact terms of this
     License to Use, the Open Game Content.
 
 5.  Representation of Authority to Contribute: If You are contributing
@@ -114,7 +114,7 @@ Reserved.
     including as an indication as to compatibility, except as expressly
     licensed in another, independent Agreement with the owner of each
     element of that Product Identity. You agree not to indicate
-    compatibility or co-­adaptability with any Trademark or Registered
+    compatibility or co-adaptability with any Trademark or Registered
     Trademark in conjunction with a work containing Open Game Content
     except as expressly licensed in another, independent Agreement with
     the owner of such Trademark or Registered Trademark. The use of any

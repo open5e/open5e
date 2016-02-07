@@ -7,7 +7,7 @@ Mirror of Life Trapping
 
 *Wondrous item, very rare*
 
-When this 4-­foot-­tall mirror is viewed indirectly, its surface shows
+When this 4-foot-tall mirror is viewed indirectly, its surface shows
 faint images of creatures. The mirror weighs 50 pounds, and it has AC
 11, 10 hit points, and vulnerability to bludgeoning damage. It shatters
 and is destroyed when reduced to 0 hit points.

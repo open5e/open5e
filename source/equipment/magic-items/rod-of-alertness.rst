@@ -20,7 +20,7 @@ of the following spells from it:
 
 **Protective Aura.** As an action, you can plant the haft end of the
 rod in the ground, whereupon the rod's head sheds bright light in a
-60-­foot radius and dim light for an additional 60 feet. While in that
+60-foot radius and dim light for an additional 60 feet. While in that
 bright light, you and any creature that is friendly to you gain a +1
 bonus to AC and saving throws and can sense the location of any
 invisible hostile creature that is also in the bright light.

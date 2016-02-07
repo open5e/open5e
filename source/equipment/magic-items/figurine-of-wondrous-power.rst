@@ -83,7 +83,7 @@ differently from the others. Their properties are as follows:
    longsword*. Removing a horn requires an action, and the weapons
    disappear and the horns return
    whenthegoatrevertstofigurineform.Inaddition, the goat radiates a
-   30-­foot-­radius aura of terror while you are riding it. Any creature
+   30-foot-radius aura of terror while you are riding it. Any creature
    hostile to you that starts its turn in the aura must succeed on a DC
    15 Wisdom saving throw or be frightened of the goat for 1 minute, or
    until the goat reverts to figurine form. The frightened creature can

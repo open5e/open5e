@@ -14,7 +14,7 @@ throw or be destroyed. On a successful save, the creature becomes
 frightened of you until the end of your next turn.
 
 While you hold this weapon, it sheds bright light in
-a 20-­foot radius and dim light for an additional 20 feet.
+a 20-foot radius and dim light for an additional 20 feet.
 
 Mace of Smiting
 ^^^^^^^^^^^^^^^
@@ -37,7 +37,7 @@ Mace of Terror
 
 This magic weapon has 3 charges. While holding it, you can use an action
 and expend 1 charge to release a wave of terror. Each creature of your
-choice in a 30-­foot radius extending from you must succeed on a DC 15
+choice in a 30-foot radius extending from you must succeed on a DC 15
 Wisdom saving throw or become frightened of you for 1 minute. While it
 is frightened in this way, a creature must spend its turns trying to
 move as far away from you as it can, and it can't willingly move to a
