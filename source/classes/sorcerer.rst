@@ -94,14 +94,18 @@ The Sorcerer
 | 20th  | +6          | 20           | Sorcerous Restoration                  | 6        | 15       | 4   | 3   | 3   | 3   | 3   | 2   | 2   | 1   | 1   |
 +-------+-------------+--------------+----------------------------------------+----------+----------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 
-**Spellcasting**
+Class Abilities
+---------------
+
+Spellcasting
+^^^^^^^^^^^^
 
 An event in your past, or in the life of a parent or ancestor, left an
 indelible mark on you, infusing you with arcane magic. This font of
 magic, whatever its origin, fuels your spells.
 
 Cantrips
-^^^^^^^^
+~~~~~~~~
 
 At 1st level, you know four cantrips of your choice from the :ref:`srd:sorcerer-spells` 
 list. You learn additional sorcerer cantrips of your choice at
@@ -109,7 +113,7 @@ higher levels, as shown in the Cantrips Known column of the Sorcerer
 table.
 
 Spell Slots
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 The Sorcerer table shows how many spell slots you have to cast your
 spells of 1st level and higher. To cast one of these sorcerer spells,
@@ -121,7 +125,7 @@ For example, if you know the 1st-level spell *burning hands* and have a
 hands* using either slot.
 
 Spells Known of 1st Level and Higher
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You know two 1st-level spells of your choice from the :ref:`srd:sorcerer-spells` list.
 
@@ -136,7 +140,7 @@ sorcerer spell list, which also must be of a level for which you have
 spell slots.
 
 Spellcasting Ability
-^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~
 
 Charisma is your spellcasting ability for your sorcerer spells, since
 the power of your magic relies on your ability to project your will into
@@ -153,7 +157,7 @@ attack roll with one.
 
 
 Spellcasting Focus
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 You can use an arcane focus as a spellcasting focus for your sorcerer
 spells.
@@ -168,7 +172,7 @@ end of the class description.
 Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level.
 
 Font of Magic
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 At 2nd level, you tap into a deep wellspring of magic within yourself.
 This wellspring is represented by sorcery points, which allow you to
@@ -313,7 +317,7 @@ At 20th level, you regain 4 expended sorcery points whenever you finish
 a short rest.
 
 Sorcerous Origins
-^^^^^^^^^^^^^^^^^
+-----------------
 
 Different sorcerers claim different origins for their innate magic.
 Although many variations exist, most of these origins fall into two
@@ -333,7 +337,7 @@ categories: a draconic bloodline and wild magic.
 
 
 Draconic Bloodline
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 Your innate magic comes from draconic magic that was mingled with your
 blood or that of your ancestors. Most often, sorcerers with this origin

@@ -97,8 +97,11 @@ The Ranger
 | 20th  | +6          | Foe Slayer                                 | 11          | 4   | 3   | 3   | 3   | 2   |
 +-------+-------------+--------------------------------------------+-------------+-----+-----+-----+-----+-----+
 
+Class Abilities
+---------------
+
 Favored Enemy
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 Beginning at 1st level, you have significant experience studying,
 tracking, hunting, and even talking to a certain type of enemy.
@@ -122,7 +125,7 @@ you gain levels, your choices should reflect the types of monsters you
 have encountered on your adventures.
 
 Natural Explorer
-~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^
 
 You are particularly familiar with one type of natural environment and
 are adept at traveling and surviving in such regions. Choose one type of
@@ -144,7 +147,7 @@ the following benefits:
 You choose additional favored terrain types at 6th and 10th level.
 
 Fighting Style
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 At 2nd level, you adopt a particular style of fighting as your
 specialty. Choose one of the following options. You can't take a
@@ -152,36 +155,36 @@ Fighting Style option more than once, even if you later get to choose
 again.
 
 Archery
-^^^^^^^
+~~~~~~~
 
 You gain a +2 bonus to attack rolls you make with ranged weapons.
 
 Defense
-^^^^^^^
+~~~~~~~
 
 While you are wearing armor, you gain a +1 bonus to AC.
 
 Dueling
-^^^^^^^
+~~~~~~~
 
 When you are wielding a melee weapon in one hand and no other weapons,
 you gain a +2 bonus to damage rolls with that weapon.
 
 Two-Weapon Fighting
-^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~
 
 When you engage in two-weapon fighting, you can add your ability
 modifier to the damage of the second attack.
 
 Spellcasting
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 By the time you reach 2nd level, you have learned to use the magical
 essence of nature to cast spells, much as a druid does. See :ref:`srd:spellcasting`
 for the general rules of spellcasting and the :ref:`srd:ranger-spells` list.
 
 Spell Slots
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 The Ranger table shows how many spell slots you have to cast your spells
 of 1st level and higher. To cast one of these spells, you must expend a
@@ -193,7 +196,7 @@ have a 1st-level and a 2nd-level spell slot available, you can cast
 :ref:`srd:animal-friendship` using either slot.
 
 Spells Known of 1st Level and Higher
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You know two 1st-level spells of your choice from the ranger spell list.
 
@@ -208,7 +211,7 @@ ranger spell list, which also must be of a level for which you have
 spell slots.
 
 Spellcasting Ability
-^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~
 
 Wisdom is your spellcasting ability for your ranger spells, since your
 magic draws on your attunement to nature. You use your Wisdom whenever a
@@ -221,7 +224,7 @@ cast and when making an attack roll with one.
   **Spell attack modifier** = your proficiency bonus + your Wisdom modifier
 
 Ranger Archetype
-~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^
 
 At 3rd level, you choose an archetype that you strive to emulate: Hunter
 or Beast Master, both detailed at the end of the class description. Your
@@ -229,7 +232,7 @@ choice grants you features at 3rd level and again at 7th, 11th, and 15th
 level.
 
 Primeval Awareness
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 Beginning at 3rd level, you can use your action and expend one ranger
 spell slot to focus your awareness on the region around you. For 1
@@ -240,7 +243,7 @@ celestials, dragons, elementals, fey, fiends, and undead. This feature
 doesn't reveal the creatures' location or number.
 
 Ability Score Improvement
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level,
 you can increase one ability score of your choice by 2, or you can
@@ -248,13 +251,13 @@ increase two ability scores of your choice by 1. As normal, you can't
 increase an ability score above 20 using this feature.
 
 Extra Attack
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 Beginning at 5th level, you can attack twice, instead of once, whenever
 you take the Attack action on your turn.
 
 Land's Stride
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
 Starting at 8th level, moving through nonmagical difficult terrain costs
 you no extra movement. You can also pass through nonmagical plants
@@ -266,7 +269,7 @@ magically created or manipulated to impede movement, such those created
 by the *entangle* spell.
 
 Hide in Plain Sight
-~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^
 
 Starting at 10th level, you can spend 1 minute creating camouflage for
 yourself. You must have access to fresh mud, dirt, plants, soot, and
@@ -281,14 +284,14 @@ actions. Once you move or take an action or a reaction, you must
 camouflage yourself again to gain this benefit.
 
 Vanish
-~~~~~~
+^^^^^^
 
 Starting at 14th level, you can use the Hide action as a bonus action on
 your turn. Also, you can't be tracked by nonmagical means, unless you
 choose to leave a trail.
 
 Feral Senses
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 At 18th level, you gain preternatural senses that help you fight
 creatures you can't see. When you attack a creature you can't see, your
@@ -300,7 +303,7 @@ feet of you, provided that the creature isn't hidden from you and you
 aren't blinded or deafened.
 
 Foe Slayer
-~~~~~~~~~~
+^^^^^^^^^^
 
 At 20th level, you become an unparalleled hunter of your enemies. Once
 on each of your turns, you can add your Wisdom modifier to the attack
@@ -309,7 +312,7 @@ favored enemies. You can choose to use this feature before or after the
 roll, but before any effects of the roll are applied.
 
 Ranger Archetypes
-^^^^^^^^^^^^^^^^^
+-----------------
 
 The ideal of the ranger has two classic expressions: the Hunter and the Beast Master.
 
@@ -327,7 +330,7 @@ The ideal of the ranger has two classic expressions: the Hunter and the Beast Ma
 
 
 Hunter
-~~~~~~
+^^^^^^
 
 Emulating the Hunter archetype means accepting your place as a bulwark
 between civilization and the terrors of the wilderness. As you walk the
@@ -336,56 +339,84 @@ you face, from rampaging ogres and hordes of orcs to towering giants and
 terrifying dragons.
 
 Hunter's Prey
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 At 3rd level, you gain one of the following features of your choice.
 
-**Colossus Slayer.** Your tenacity can wear down the most potent foes.
+Colossus Slayer
+*******************************
+
+Your tenacity can wear down the most potent foes.
 When you hit a creature with a weapon attack, the creature takes an
 extra 1d8 damage if it's below its hit point maximum. You can deal this
 extra damage only once per turn.
 
-**Giant Killer.** When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.
+Giant Killer
+*******************************
 
-**Horde Breaker.** Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.
+When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.
+
+Horde Breaker
+*******************************
+
+Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.
 
 Defensive Tactics
-^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~
 
 At 7th level, you gain one of the following features of your choice.
 
-**Escape the Horde.** Opportunity attacks against you are made with disadvantage.
+Escape the Horde
+*******************************
 
-**Multiattack Defense.** When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.
+Opportunity attacks against you are made with disadvantage.
 
-**Steel Will.** You have advantage on saving throws against being frightened.
+Multiattack Defense
+*******************************
+
+When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.
+
+Steel Will
+*******************************
+
+You have advantage on saving throws against being frightened.
 
 Multiattack
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 At 11th level, you gain one of the following features of your choice.
 
-**Volley.** You can use your action to make a ranged attack against
+Volley
+*******************************
+
+You can use your action to make a ranged attack against
 any number of creatures within 10 feet of a point you can see within
 your weapon's range. You must have ammunition for each target, as
 normal, and you make a separate attack roll for each target.
 
-**Whirlwind Attack.** You can use your action to make a melee attack
+Whirlwind Attack
+*******************************
+
+You can use your action to make a melee attack
 against any number of creatures within 5 feet of you, with a separate
 attack roll for each target.
 
 Superior Hunter's Defense
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 At 15th level, you gain one of the following features of your choice.
 
-**Evasion.** When you are subjected to an effect, such as a red
+Evasion
+***************************
+When you are subjected to an effect, such as a red
 dragon's fiery breath or a :ref:`srd:lightning-bolt` spell, that allows you to
 make a Dexterity saving throw to take only half damage, you instead take
 no damage if you succeed on the saving throw, and only half damage if
 you fail.
 
-**Stand Against the Tide.** When a hostile creature misses you
+Stand Against the Tide
+***************************
+When a hostile creature misses you
 with a melee attack, you can use your reaction to force that creature to repeat the same attack against
 another creature (other than itself) of your choice.
 
@@ -401,6 +432,8 @@ another creature (other than itself) of your choice.
     
     Source: `Sage Advice Compendium <http://media.wizards.com/2015/downloads/dnd/SA_Compendium_1.01.pdf>`_
 
-**Uncanny Dodge.** When an attacker that you can see hits you with :has-official:`an
+Uncanny Dodge
+***************************
+When an attacker that you can see hits you with :has-official:`an
 attack,` you can use your reaction to halve the attack's damage against
 you.
