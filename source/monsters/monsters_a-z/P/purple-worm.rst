@@ -22,7 +22,7 @@ Gargantuan monstrosity, unaligned
 
 **Senses** blindsight 30 ft., tremorsense 60 ft., passive Perception 9
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 15 (13,000 XP)
 

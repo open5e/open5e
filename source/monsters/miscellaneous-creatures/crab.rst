@@ -22,7 +22,7 @@ Tiny beast, unaligned
 
 **Senses** blindsight 30 ft., passive Perception 9
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 0 (10 XP)
 

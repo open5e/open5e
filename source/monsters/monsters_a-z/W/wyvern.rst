@@ -22,7 +22,7 @@ Large dragon, unaligned
 
 **Senses** darkvision 60 ft., passive Perception 14
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 6 (2,300 XP)
 

@@ -22,7 +22,7 @@ Large monstrosity, neutral evil
 
 **Senses** darkvision 60 ft., passive Perception 16
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 5 (1,800 XP)
 

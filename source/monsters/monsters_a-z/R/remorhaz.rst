@@ -22,7 +22,7 @@ Huge monstrosity, unaligned
 
 **Senses** darkvision 60 ft., tremorsense 60 ft., passive Perception 10
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 11 (7,200 XP)
 

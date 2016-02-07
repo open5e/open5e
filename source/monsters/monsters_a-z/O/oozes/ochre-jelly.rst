@@ -28,7 +28,7 @@ frightened, prone
 **Senses** blindsight 60 ft. (blind beyond this radius), passive
 Perception 8
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 2 (450 XP)
 

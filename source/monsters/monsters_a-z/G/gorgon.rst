@@ -24,7 +24,7 @@ Large monstrosity, unaligned
 
 **Senses** darkvision 60 ft., passive Perception 14
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 5 (1,800 XP)
 

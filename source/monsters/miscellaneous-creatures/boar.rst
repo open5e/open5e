@@ -20,7 +20,7 @@ Medium beast, unaligned
 
 **Senses** passive Perception 9
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 1/4 (50 XP)
 

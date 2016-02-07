@@ -22,7 +22,7 @@ Medium monstrosity, neutral evil
 
 **Senses**: darkvision 60 ft., passive Perception 13
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 2 (450 XP)
 

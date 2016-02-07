@@ -22,7 +22,7 @@ Medium beast, unaligned
 
 **Senses** blindsight 30 ft., passive Perception 9
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 1/8 (25 XP)
 

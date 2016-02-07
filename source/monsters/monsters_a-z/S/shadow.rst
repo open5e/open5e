@@ -32,7 +32,7 @@ petrified, poisoned, prone, restrained
 
 **Senses** darkvision 60 ft., passive Perception 10
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 1/2 (100 XP)
 

@@ -20,7 +20,7 @@ Tiny beast, unaligned
 
 **Senses** blindsight 60 ft., passive Perception 11
 
-**Languages** --
+**Languages** ---
 
 **Echolocation**: The bat can't use its blindsight while deafened.
 **Keen Hearing**: The bat has advantage on Wisdom (Perception) checks

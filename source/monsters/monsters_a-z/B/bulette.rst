@@ -18,7 +18,7 @@ Large monstrosity, unaligned
 
 | **Skills** Perception +6
 | **Senses** darkvision 60 ft., tremorsense 60 ft., passive Perception 16
-| **Languages** --
+| **Languages** ---
 | **Challenge** 5 (1,800 XP)
 | **Standing Leap**: The bulette's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start.
 

@@ -20,7 +20,7 @@ Medium monstrosity, unaligned
 
 **Senses** darkvision 60 ft., passive Perception 11
 
-**Languages** --
+**Languages** ---
 
 **Challenge** 1/2 (100 XP)
 
