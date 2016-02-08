@@ -6,7 +6,7 @@ Archmage
 
 Medium humanoid (any race), any alignment
 
-**Armor Class** 12 (15 with *mage armor*)
+**Armor Class** 12 (15 with :ref:`srd:mage-armor`)
 
 **Hit Points** 99 (18d8 + 18)
 
@@ -23,7 +23,7 @@ Medium humanoid (any race), any alignment
 **Skills** Arcana +13, History +13
 
 **Damage Resistance** damage from spells; nonmagical bludgeoning,
-piercing, and slashing (from *stoneskin*)
+piercing, and slashing (from :ref:`srd:stoneskin`)
 
 **Senses** passive Perception 12
 
@@ -37,28 +37,28 @@ against spells and other magical effects.
 **Spellcasting**: The archmage
 is an 18th-level spellcaster. Its spellcasting ability is Intelligence
 (spell save DC 17, +9 to hit with spell attacks). The archmage can cast
-*disguise self* and *invisibility* at will and has the following wizard
+:ref:`srd:disguise-self` and :ref:`srd:invisibility` at will and has the following wizard
 spells prepared:
 
-    **Cantrips (at will)**: *fire bolt*, *light*, *mage hand*, *prestidigitation*, *shocking grasp*
+    **Cantrips (at will)**: :ref:`srd:fire-bolt`, :ref:`srd:light`, :ref:`srd:mage-hand`, :ref:`srd:prestidigitation`, :ref:`srd:shocking-grasp`
 
-    **1st level (4 slots)**: *detect magic*, *identify*, *mage armor*\*, *magic missile*
+    **1st level (4 slots)**: :ref:`srd:detect-magic`, :ref:`srd:identify`, :ref:`srd:mage-armor`\*, :ref:`srd:magic-missile`
 
-    **2nd level (3 slots)**: *detect thoughts*, *mirror image*, *misty step*
+    **2nd level (3 slots)**: :ref:`srd:detect-thoughts`, :ref:`srd:mirror-image`, :ref:`srd:misty-step`
 
-    **3rd level (3 slots)**: *counterspell*, *fly*, *lightning bolt*
+    **3rd level (3 slots)**: :ref:`srd:counterspell`, :ref:`srd:fly`, :ref:`srd:lightning-bolt`
 
-    **4th level (3 slots)**: *banishment*, *fire shield*, *stoneskin*\*
+    **4th level (3 slots)**: :ref:`srd:banishment`, :ref:`srd:fire-shield`, :ref:`srd:stoneskin`\*
 
-    **5th level (3 slots)**: *cone of cold*, *scrying*, *wall of force*
+    **5th level (3 slots)**: :ref:`srd:cone-of-cold`, :ref:`srd:scrying`, :ref:`srd:wall-of-force`
 
-    **6th level (1 slot)**: *globe of invulnerability*
+    **6th level (1 slot)**: :ref:`srd:globe-of-invulnerability`
 
-    **7th level (1 slot)**: *teleport*
+    **7th level (1 slot)**: :ref:`srd:teleport`
 
-    **8th level (1 slot)**: *mind blank*\*
+    **8th level (1 slot)**: :ref:`srd:mind-blank`\*
 
-    **9th level (1slot)**: *time stop*
+    **9th level (1slot)**: :ref:`srd:time-stop`
 
 \* *The archmage casts these spells on itself before combat*.
 

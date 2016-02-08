@@ -15,7 +15,7 @@ Applying the oil takes 10 minutes. The affected creature then gains the
 effect of a *freedom of movement* spell for 8 hours.
 
 Alternatively, the oil can be poured on the ground as an action, where
-it covers a 10-foot square, duplicating the effect of the *grease*
+it covers a 10-foot square, duplicating the effect of the :ref:`srd:grease`
 spell in that area for 8 hours.
 
 Pearl of Power

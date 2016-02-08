@@ -15,8 +15,8 @@ You gain the following benefits while wearing it:
 
 -  You can use an action to cast one of the following spells (save DC
    18), using one of the helm's gems of the specified type as a
-   component: *daylight* (opal), *fireball* (fire opal), *prismatic
-   spray* (diamond), or *wall of fire* (ruby). The gem is destroyed when
+   component: :ref:`srd:daylight` (opal), :ref:`srd:fireball` (fire opal), :ref:`srd:prismatic-spray`
+   (diamond), or :ref:`srd:wall-of-fire` (ruby). The gem is destroyed when
    the spell is cast and disappears from the helm.
 
 -  As long as it has at least one diamond, the helm emits dim light in a
@@ -40,7 +40,6 @@ of failing a saving throw against a spell. On a roll of 1, the helm
 emits beams of light from its remaining gems. Each creature within 60
 feet of the helm other than you must succeed on a DC 17 Dexterity saving
 throw or be
-
 struck by a beam, taking radiant damage equal to the number of gems in
 the helm. The helm and its gems are then destroyed.
 

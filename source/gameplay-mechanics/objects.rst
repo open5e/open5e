@@ -62,7 +62,7 @@ Object Hit Points
 **Huge and Gargantuan Objects.** Normal weapons are of little use
 against many Huge and Gargantuan objects, such as a colossal statue,
 towering column of stone, or massive boulder. That said, one torch can
-burn a Huge tapestry, and an *earthquake* spell can reduce a colossus to
+burn a Huge tapestry, and an :ref:`srd:earthquake` spell can reduce a colossus to
 rubble. You can track a Huge or Gargantuan object's hit points if you
 like, or you can simply decide how long the object can withstand
 whatever weapon or force is acting against it. If you track hit points

@@ -44,7 +44,7 @@ If the result is 0 or less, you can't use the new speed during the
 current move.
 
 For example, if you have a speed of 30 and a flying speed of 60 because
-a wizard cast the *fly* spell on you, you could fly 20 feet, then walk
+a wizard cast the :ref:`srd:fly` spell on you, you could fly 20 feet, then walk
 10 feet, and then leap into the air to fly 30 feet more.
 
 Difficult Terrain
@@ -152,7 +152,7 @@ deal with the danger of falling. If a flying creature is knocked prone,
 has its speed reduced to 0, or is otherwise deprived of the ability to
 move, the creature falls, unless it has the ability to
 
-hover or it is being held aloft by magic, such as by the *fly* spell.
+hover or it is being held aloft by magic, such as by the :ref:`srd:fly` spell.
 
 Creature Size
 ~~~~~~~~~~~~~

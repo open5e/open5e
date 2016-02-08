@@ -51,7 +51,7 @@ Cantrips (0 Level)
 - :ref:`srd:darkvision`
 - :ref:`srd:detect-thoughts`
 - :ref:`srd:enhance-ability`
-- :ref:`srd:enlarge/reduce`
+- :ref:`srd:enlarge-reduce`
 - :ref:`srd:gust-of-wind`
 - :ref:`srd:hold-person`
 - :ref:`srd:invisibility`

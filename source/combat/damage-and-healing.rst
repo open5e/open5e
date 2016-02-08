@@ -6,7 +6,7 @@ Damage and Healing
 
 Injury and the risk of death are constant companions of those who
 explore fantasy gaming worlds. The thrust of a sword, a well-placed
-arrow, or a blast of flame from a *fireball* spell all have the
+arrow, or a blast of flame from a :ref:`srd:fireball` spell all have the
 potential to damage, or even kill, the hardiest of creatures.
 
 Hit Points
@@ -38,8 +38,8 @@ to add any modifiers.
 
 If a spell or other effect deals damage to **more**
 **than one target** at the same time, roll the damage once for all of
-them. For example, when a wizard casts *fireball* or a cleric casts
-*flame strike*, the spell's damage is rolled once for all creatures
+them. For example, when a wizard casts :ref:`srd:fireball` or a cleric casts
+:ref:`srd:flame-strike`, the spell's damage is rolled once for all creatures
 caught in the blast.
 
 Critical Hits
@@ -101,7 +101,7 @@ the spirit with power.
 **Slashing.** Swords, axes, and monsters' claws deal slashing damage.
 
 **Thunder.** A concussive burst of sound, such as the effect of the
-*thunderwave* spell, deals thunder damage.
+:ref:`srd:thunderwave` spell, deals thunder damage.
 
 Damage Resistance and Vulnerability
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -143,7 +143,7 @@ healing. If the ranger has 14 current hit points and has a hit point
 maximum of 20, the ranger regains 6 hit points from the druid, not 8.
 
 A creature that has died can't regain hit points until magic such as the
-*revivify* spell has restored it to life.
+:ref:`srd:revivify` spell has restored it to life.
 
 Dropping to 0 Hit Points
 ^^^^^^^^^^^^^^^^^^^^^^^^

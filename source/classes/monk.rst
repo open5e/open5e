@@ -242,7 +242,7 @@ Evasion
 
 At 7th level, your instinctive agility lets you dodge out of the way of
 certain area effects, such as a blue dragon's lightning breath or a
-*fireball* spell. When you are subjected to an effect that allows you to
+:ref:`srd:fireball` spell. When you are subjected to an effect that allows you to
 make a Dexterity saving throw to take only half damage, you instead take
 no damage if you succeed on the saving throw, and only half damage if
 you fail.
@@ -361,7 +361,7 @@ Tranquility
 
 Beginning at 11th level, you can enter a special meditation that
 surrounds you with an aura of peace. At the end of a long rest, you gain
-the effect of a *sanctuary* spell that lasts until the start of your
+the effect of a :ref:`srd:sanctuary` spell that lasts until the start of your
 next long rest (the spell can end early as normal). The saving throw DC
 for the spell equals 8 + your Wisdom modifier + your proficiency bonus.
 

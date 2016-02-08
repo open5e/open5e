@@ -20,7 +20,7 @@ threads. While wearing it, you gain the following benefits:
 -  You can't be caught in webs of any sort and can move through webs as
    if they were difficult terrain.
 
--  You can use an action to cast the *web* spell (save DC 13). The web
+-  You can use an action to cast the :ref:`srd:web` spell (save DC 13). The web
    created by the spell fills twice its normal area. Once used, this
    property of the cloak can't be used again until the next dawn.
 

@@ -571,11 +571,11 @@ dim light. You can't discern color in darkness, only shades of gray.
 
 **Hellish Resistance.** You have resistance to fire damage.
 
-**Infernal Legacy.** You know the *thaumaturgy* cantrip. When you
+**Infernal Legacy.** You know the :ref:`srd:thaumaturgy` cantrip. When you
 reach 3rd level, you can cast the *hellish rebuke* spell as a 2nd-level
 spell once with this trait and regain the ability to do so when you
 finish a long rest. When you reach 5th level, you can cast the
-*darkness* spell once with this trait and regain the ability to do so
+:ref:`srd:darkness` spell once with this trait and regain the ability to do so
 when you finish a long rest. Charisma is your spellcasting ability for
 these spells.
 

@@ -36,7 +36,7 @@ remain attuned to it. On a failed check, you become charmed by the orb
 for as long as you remain attuned to it.
 
 While you are charmed by the orb, you can't voluntarily end your
-attunement to it, and the orb casts *suggestion* on you at will (save DC
+attunement to it, and the orb casts :ref:`srd:suggestion` on you at will (save DC
 18), urging you to work toward the evil ends it desires. The dragon
 essence within the orb might want many things: the annihilation of a
 particular people, freedom from the orb, to spread suffering in the
@@ -55,9 +55,9 @@ following random properties:
 **Spells.** The orb has 7 charges and regains 1d4 + 3 expended charges
 daily at dawn. If you control the orb, you can use an action and expend
 1 or more charges to cast one of the following spells (save DC 18) from
-it: *cure wounds* (5th-level version, 3 charges), *daylight* (1
-charge), *death ward* (2 charges), or *scrying* (3 charges). You can
-also use an action to cast the *detect magic* spell from the orb without
+it: :ref:`srd:cure-wounds` (5th-level version, 3 charges), :ref:`srd:daylight` (1
+charge), :ref:`srd:death-ward` (2 charges), or :ref:`srd:scrying` (3 charges). You can
+also use an action to cast the :ref:`srd:detect-magic` spell from the orb without
 using any charges.
 
 **Call Dragons.** While you control the orb, you can use an action to
@@ -71,5 +71,5 @@ you have used this property, it can't be used again for 1 hour.
 **Destroying an Orb.** An *Orb of Dragonkind* appears
 
 fragile but is impervious to most damage, including the attacks and
-breath weapons of dragons. A *disintegrate* spell or one good hit from a
+breath weapons of dragons. A :ref:`srd:disintegrate` spell or one good hit from a
 +3 magic weapon is sufficient to destroy an orb, however.

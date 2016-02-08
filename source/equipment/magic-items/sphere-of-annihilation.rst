@@ -32,7 +32,7 @@ winner of the contest gains control of the sphere and can levitate it as
 normal.
 
 If the sphere comes into contact with a planar portal, such as that
-created by the *gate* spell, or an extradimensional space, such as that
+created by the :ref:`srd:gate` spell, or an extradimensional space, such as that
 within a *portable hole*, the GM determines randomly what happens, using
 the following table.
 

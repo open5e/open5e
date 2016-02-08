@@ -38,7 +38,7 @@ Spell Level
 
 Every spell has a level from 0 to 9. A spell's level is a general
 indicator of how powerful it is, with the lowly (but still impressive)
-*magic missile* at 1st level and the earth-shaking *wish* at 9th.
+:ref:`srd:magic-missile` at 1st level and the earth-shaking :ref:`srd:wish` at 9th.
 Cantrips---simple but powerful spells that characters can cast almost by
 rote---are level 0. The higher a spell's level, the higher level a
 spellcaster must be to use that spell.
@@ -79,7 +79,7 @@ level or higher, effectively "filling" a slot with the spell. You can
 think of a spell slot as a groove of a certain size---small for a
 1st-level slot, larger for a spell of higher level. A 1st-level spell
 fits into a slot of any size, but a 9th-level spell fits only in a
-9th-level slot. So when Umara casts *magic missile,* a 1st-level
+9th-level slot. So when Umara casts :ref:`srd:magic-missile`, a 1st-level
 spell, she spends one of her four 1st-level slots and has three
 remaining.
 
@@ -96,11 +96,11 @@ Casting a Spell at a Higher Level
 
 When a spellcaster casts a spell using a slot that is of a higher level
 than the spell, the spell assumes the higher level for that casting. For
-instance, if Umara casts *magic missile* using one of her 2nd-level
-slots, that *magic missile* is 2nd level. Effectively, the spell expands
+instance, if Umara casts :ref:`srd:magic-missile` using one of her 2nd-level
+slots, that :ref:`srd:magic-missile` is 2nd level. Effectively, the spell expands
 to fill the slot it is put into.
 
-Some spells, such as *magic missile* and *cure wounds*, have more
+Some spells, such as :ref:`srd:magic-missile` and :ref:`srd:cure-wounds`, have more
 powerful effects when cast at a higher level, as detailed in a spell's
 description.
 

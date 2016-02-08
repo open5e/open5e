@@ -1,5 +1,5 @@
 
-.. _srd:enlarge/reduce:
+.. _srd:enlarge-reduce:
 
 Enlarge/Reduce
 -------------------------------------------------------------

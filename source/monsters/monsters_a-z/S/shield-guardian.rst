@@ -56,6 +56,6 @@ bludgeoning damage.
 Reactions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Shield**: When a creature makes an attack against the wearer of the
+*:ref:`srd:shield`*: When a creature makes an attack against the wearer of the
 guardian's amulet, the guardian grants a +2 bonus to the wearer's AC if
 the guardian is within 5 feet of the wearer.

@@ -50,7 +50,7 @@ death, it defends itself but otherwise takes no actions. At the end of
 the duration, the creature acts in accordance with its normal
 disposition and alignment.
 
-An *identify* spell reveals that a creature is inside the flask, but the
+An :ref:`srd:identify` spell reveals that a creature is inside the flask, but the
 only way to determine the type of creature is to open the flask. A newly
 discovered bottle might already contain a creature chosen by the GM or
 determined randomly.

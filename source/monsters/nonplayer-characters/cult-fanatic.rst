@@ -27,13 +27,20 @@ Medium humanoid (any race), any non-good alignment
 **Challenge** 2 (450 XP)
 
 **Dark Devotion**: The fanatic has advantage on saving throws against
-being charmed or frightened. **Spellcasting**: The fanatic is a
+being charmed or frightened.
+
+**Spellcasting**: The fanatic is a
 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC
 11, +3 to hit with spell attacks). The fanatic has the following cleric
-spells prepared: **Cantrips (at will)**: *light*, *sacred flame*,
-*thaumaturgy* **1st level (4 slots)**: *command*, *inflict wounds*,
-*shield of faith* **2nd level (3 slots)**: *hold person*, *spiritual
-weapon*
+spells prepared:
+
+**Cantrips (at will)**: :ref:`srd:light`, :ref:`srd:sacred-flame`,
+:ref:`srd:thaumaturgy`
+
+**1st level (4 slots)**: :ref:`srd:command`, :ref:`srd:inflict-wounds`,
+:ref:`srd:shield-of-faith`
+
+**2nd level (3 slots)**: :ref:`srd:hold-person`, :ref:`srd:spiritual-weapon`
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

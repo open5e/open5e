@@ -29,7 +29,7 @@ roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
 **Command.** While holding the wand, you can use an action to expend 1
 charge and command another creature to flee or grovel, as with the
-*command* spell (save DC 15).
+:ref:`srd:command` spell (save DC 15).
 
 **Cone of Fear.** While holding the wand, you can use an action to
 expend 2 charges, causing the wand's tip to emit a 60-foot cone of
