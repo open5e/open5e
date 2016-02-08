@@ -4237,7 +4237,8 @@ div[class^='highlight'] pre {
   border: none;
 }
 .wy-table-bordered-all td, .rst-content table.docutils td {
-  border-left: 0px solid white;
+  border-left: none;
+  border-right: none;
 }
 
 .wy-table-responsive {
@@ -4252,12 +4253,12 @@ div[class^='highlight'] pre {
 }
 
 .rst-content table {
-  border: 0px solid white;
+  border: none;
   border-top: 10px solid lightgray;
   border-bottom: 10px solid lightgray;
 }
 .rst-content table.docutils {
-  border: 0px solid white;
+  border: none;
   border-top: 10px solid lightgray;
   border-bottom: 10px solid lightgray;
 }
@@ -4266,7 +4267,8 @@ div[class^='highlight'] pre {
 }
 .rst-content table.docutils td, .rst-content table.field-list td, .rst-content table.docutils th, .rst-content table.field-list th {
   padding: 8px 8px;
-  border-left: 0px solid white;
+  border-left: none;
+  border-right: none;
 }
 
 .wy-menu-vertical {
