@@ -404,6 +404,10 @@ footer
     background: $section-background-color
   .wy-nav-top
     display: block
+    position: fixed
+    z-index: 100
+    width: 100%
+
   .wy-nav-side
     @if $nav-desktop-position == left
       left: -$nav-desktop-width
@@ -429,7 +433,8 @@ footer
       top: 0
       height: 100%
       overflow: hidden
-
+  .wy-table-responsive
+    overflow: auto
 +media($desktop-wider)
   .wy-nav-content-wrap
     background: rgba(0,0,0,.05)

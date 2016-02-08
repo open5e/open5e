@@ -4679,6 +4679,9 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 
   .wy-nav-top {
     display: block;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
   }
 
   .wy-nav-side {
@@ -4714,6 +4717,10 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
     top: 0;
     height: 100%;
     overflow: hidden;
+  }
+
+  .wy-table-responsive {
+    overflow: auto;
   }
 }
 @media screen and (min-width: 1400px) {
