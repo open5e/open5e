@@ -27,17 +27,32 @@ below).
 
 **Spells.** While holding the staff, you can use an action to expend
 some of its charges to cast one of the following spells from it, using
-your spell save DC and spellcasting ability: :ref:`srd:conjure-elemental` (7
-charges), :ref:`srd:dispel-magic` (3 charges), :ref:`srd:fireball` (7th-level version, 7
-charges), :ref:`srd:flaming-sphere` (2 charges), :ref:`srd:ice-storm` (4 charges),
-:ref:`srd:invisibility` (2 charges), :ref:`srd:knock` (2 charges), :ref:`srd:lightning-bolt`
-(7th-level version, 7 charges), :ref:`srd:passwall` (5 charges), :ref:`srd:plane-shift`
-(7 charges), :ref:`srd:telekinesis` (5 charges), :ref:`srd:wall-of-fire` (4 charges), or
-:ref:`srd:web` (2 charges).
+your spell save DC and spellcasting ability:
+
+  :ref:`srd:conjure-elemental` (7 charges),
+  :ref:`srd:dispel-magic` (3 charges),
+  :ref:`srd:fireball` (7th-level version, 7 charges),
+  :ref:`srd:flaming-sphere` (2 charges),
+  :ref:`srd:ice-storm` (4 charges),
+  :ref:`srd:invisibility` (2 charges),
+  :ref:`srd:knock` (2 charges),
+  :ref:`srd:lightning-bolt`
+  (7th-level version, 7 charges),
+  :ref:`srd:passwall` (5 charges),
+  :ref:`srd:plane-shift` (7 charges),
+  :ref:`srd:telekinesis` (5 charges),
+  :ref:`srd:wall-of-fire` (4 charges), or
+  :ref:`srd:web` (2 charges).
 
 You can also use an action to cast one of the
-following spells from the staff without using any charges: :ref:`srd:arcane-lock`,
-:ref:`srd:detect-magic`, :ref:`srd:enlarge-reduce`, :ref:`srd:light`, :ref:`srd:mage-hand`, or :ref:`srd:protection-from-evil-and-good`.
+following spells from the staff without using any charges:
+
+  :ref:`srd:arcane-lock`,
+  :ref:`srd:detect-magic`,
+  :ref:`srd:enlarge-reduce`,
+  :ref:`srd:light`,
+  :ref:`srd:mage-hand`, or
+  :ref:`srd:protection-from-evil-and-good`.
 
 **Retributive Strike.** You can use an action to break the staff over
 your knee or against a solid surface, performing a retributive strike.
@@ -53,9 +68,11 @@ damage based on how far away it is from the point of origin, as shown in
 the following table. On a successful save, a creature takes half as much
 damage.
 
-**Distance from Origin Damage**
 
-10 ft. away or closer 8 × the number of charges in the staff 11 to 20
-ft. away 6 × the number of charges in the staff 21 to 30 ft. away 4 ×
-the number of charges in the staff
-
+======================  ================
+Distance from Origin    Damage
+======================  ================
+10 ft. away or closer   8 × the number of charges in the staff
+11 to 20 ft. away       6 × the number of charges in the staff
+21 to 30 ft. away       4 × the number of charges in the staff
+======================  ================

@@ -24,9 +24,9 @@ kind of token or determines it randomly.
 =======  ===================  =======  ================================
 d100     Feather Token        d100     Feather Token
 =======  ===================  =======  ================================
-01-20    Anchor               51-65    Swan boat
-21-35    Bird                 66-90    Tree
-36-50    Fan                  91-00    Whip
+01--20   Anchor               51--65   Swan boat
+21--35   Bird                 66--90   Tree
+36--50   Fan                  91--00   Whip
 =======  ===================  =======  ================================
 
 **Anchor.** You can use an action to touch the token to a boat or
@@ -77,4 +77,3 @@ As a bonus action on your turn, you can direct the whip to fly up to 20
 feet and repeat the attack against a creature within 10 feet of it. The
 whip disappears after 1 hour, when you use an action to dismiss it, or
 when you are incapacitated or die.
-

@@ -21,15 +21,14 @@ horn's type or determines it randomly.
 
 
 =======  ===========  ===========================  =============================
-d100     Horn Type    Berserkers Summoned           Requirement
+d100     Horn Type    Berserkers Summoned          Requirement
 =======  ===========  ===========================  =============================
-01-40    Silver       2d4 + 2                       None
-41-75    Brass        3d4 + 3                       Proficiency with all simple weapons
-76-90    Bronze       4d4 + 4                       Proficiency with all medium armor
-91-00    Iron         5d4 + 5                       Proficiency with all martial weapons
+01--40   Silver       2d4 + 2                      None
+41--75   Brass        3d4 + 3                      Proficiency with all simple weapons
+76--90   Bronze       4d4 + 4                      Proficiency with all medium armor
+91--00   Iron         5d4 + 5                      Proficiency with all martial weapons
 =======  ===========  ===========================  =============================
 
 If you blow the horn without meeting its requirement, the summoned
 berserkers attack you. If you meet the requirement, they are friendly to
 you and your companions and follow your commands.
-

@@ -30,31 +30,3 @@ effects:
 
 When all of the gem's charges are expended, the gem becomes a nonmagical
 jewel worth 50 gp.
-
-Gem of Seeing
-^^^^^^^^^^^^^
-
-*Wondrous item, rare (requires attunement)*
-
-This gem has 3 charges. As an action, you can speak the gem's command
-word and expend 1 charge. For the next 10 minutes, you have truesight
-out to 120 feet when you peer through the gem.
-
-The gem regains 1d3 expended charges daily at dawn.
-
-Giant Slayer
-^^^^^^^^^^^^
-
-*Weapon (any axe or sword), rare*
-
-You gain a +1 bonus to attack and damage rolls made with this magic
-weapon.
-
-When you hit a giant with it, the giant takes an
-
-extra 2d6 damage of the weapon's type and must succeed on a DC 15
-Strength saving throw or fall
-
-prone. For the purpose of this weapon, "giant" refers to any creature
-with the giant type, including ettins and trolls.
-

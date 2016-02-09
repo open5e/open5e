@@ -11,19 +11,19 @@ This slender taper is dedicated to a deity and shares that deity's
 alignment. The candle's alignment can be detected with the :ref:`srd:detect-evil-and-good` spell. The GM chooses the god and associated alignment or
 determines the alignment randomly.
 
-=====  =============
-d20    Alignment
-=====  =============
-1-2    Chaotic evil
-3-4    Chaotic neutral
-5-7    Chaotic good
-8-9    Neutral evil
-10-11  Neutral
-12-13  Neutral good
-14-15  Lawful evil
-16-17  Lawful neutral
-18-20  Lawful good
-=====  =============
+======  =============
+d20     Alignment
+======  =============
+1--2    Chaotic evil
+3--4    Chaotic neutral
+5--7    Chaotic good
+8--9    Neutral evil
+10--11  Neutral
+12--13  Neutral good
+14--15  Lawful evil
+16--17  Lawful neutral
+18--20  Lawful good
+======  =============
 
 The candle's magic is activated when the candle is lit, which requires
 an action. After burning for 4 hours, the candle is destroyed. You can
@@ -40,4 +40,3 @@ with a 1st-level slot.
 
 Alternatively, when you light the candle for the first time, you can
 cast the :ref:`srd:gate` spell with it. Doing so destroys the candle.
-

@@ -20,13 +20,3 @@ d10   Damage Type  d10  Damage Type
 4     Force        9    Radiant
 5     Lightning    10   Thunder
 ====  ===========  ===  ===============
-
-Potion of Speed
-^^^^^^^^^^^^^^^
-
-*Potion, very rare*
-
-When you drink this potion, you gain the effect of the :ref:`srd:haste` spell for
-1 minute (no concentration required). The potion's yellow fluid is
-streaked with black and swirls on its own.
-
