@@ -42,5 +42,11 @@ itself with its gaze.
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: /_images/basilisk.jpg
+    :figclass: image-right
+    :target: /_images/basilisk.jpg
+
+    © 2016 Violet Kirk
+
 **Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
 *Hit*: 10 (2d6 + 3) piercing damage plus 7 (2d6) poison damage.

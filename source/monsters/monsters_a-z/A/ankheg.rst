@@ -23,17 +23,17 @@ Large monstrosity, unaligned
 Actions
 ~~~~~~~
 
-.. figure:: /_images/Ankheg.png
+.. figure:: /_images/Ankheg.jpg
     :figclass: image-right
-    :target: /_images/Ankheg.png
-    
+    :target: /_images/Ankheg.jpg
+
     © 2016 Violet Kirk
 
 **Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
 *Hit*: 10 (2d6 + 3) slashing damage plus 3 (1d6) acid damage. If the
 target is a Large or smaller creature, it is grappled (escape DC 13).
 Until this grapple ends, the ankheg can bite only the grappled creature
-and has advantage on attack rolls to do so. 
+and has advantage on attack rolls to do so.
 
 **Acid Spray (Recharge 6)**:
 The ankheg spits acid in a line that is 30 feet long and 5 feet wide,

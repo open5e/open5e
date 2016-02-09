@@ -24,19 +24,19 @@ Large aberration, lawful evil
 | **Languages** Deep Speech, telepathy 120 ft.
 | **Challenge** 10 (5,900 XP)
 
-.. figure:: /_images/Aboleth.png
+.. figure:: /_images/Aboleth.jpg
     :figclass: image-right
-    :target: /_images/Aboleth.png
-    
+    :target: /_images/Aboleth.jpg
+
     © 2016 Violet Kirk
 
-**Amphibious.** The aboleth can breathe air and water. 
+**Amphibious.** The aboleth can breathe air and water.
 
 **Mucous Cloud.** While underwater, the aboleth is surrounded by transformative mucus. A
 creature that touches the aboleth or that hits it with a melee attack
 while within 5 feet of it must make a DC 14 Constitution saving throw.
 On a failure, the creature is diseased for 1d4 hours. The diseased
-creature can breathe only underwater. 
+creature can breathe only underwater.
 
 **Probing Telepathy.** If a
 creature communicates telepathically with the aboleth, the aboleth
@@ -46,7 +46,7 @@ creature.
 Actions
 ~~~~~~~
 
-**Multiattack.** The aboleth makes three tentacle attacks. 
+**Multiattack.** The aboleth makes three tentacle attacks.
 
 **Tentacle.** *Melee Weapon Attack*: +9 to hit, reach 10 ft., one target. *Hit*: 12
 (2d6 + 5) bludgeoning damage. If the target is a creature, it must
@@ -59,7 +59,7 @@ disease-curing spell of 6th level or higher. When the creature is
 outside a body of water, it takes 6 (1d12) acid damage every 10 minutes
 unless moisture is applied to the skin before 10 minutes have passed.
 
-**Tail.** *Melee Weapon Attack*: +9 to hit, reach 10 ft. one target. *Hit*: 15 (3d6 + 5) bludgeoning damage. 
+**Tail.** *Melee Weapon Attack*: +9 to hit, reach 10 ft. one target. *Hit*: 15 (3d6 + 5) bludgeoning damage.
 
 **Enslave (3/Day).** The aboleth
 targets one creature it can see within 30 feet of it. The target must
@@ -81,11 +81,11 @@ below. Only one legendary action option can be used at a time and only
 at the end of another creature's turn. The aboleth regains spent
 legendary actions at the start of its turn.
 
-**Detect.** The aboleth makes a Wisdom (Perception) check. 
+**Detect.** The aboleth makes a Wisdom (Perception) check.
 
-**Tail Swipe.** The aboleth makes one tail attack. 
+**Tail Swipe.** The aboleth makes one tail attack.
 
-**Psychic Drain (Costs 2 Actions).** One creature charmed 
+**Psychic Drain (Costs 2 Actions).** One creature charmed
 by the aboleth takes 10 (3d6) psychic
 damage, and the aboleth regains hit points equal to the damage the
 creature takes.
