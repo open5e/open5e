@@ -24,9 +24,9 @@ Medium monstrosity, unaligned
 
 **Challenge** 3 (700 XP)
 
-.. figure:: /_images/basilisk.png
+.. figure:: /_images/Basilisk.png
     :figclass: image-right
-    :target: /_images/basilisk.png
+    :target: /_images/Basilisk.png
 
     © 2016 Violet Kirk
 
