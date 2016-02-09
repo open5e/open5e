@@ -11,7 +11,7 @@ You gain a +1 bonus to attack and damage rolls made with this magic
 weapon.
 
 **Giant's Bane (Requires Attunement).** You must
-be wearing a :ref:`srd:belt-of-giant-strength` (any variety) and :ref:`gauntlets-of-ogre-power` to attune to this weapon. The attunement ends if you take
+be wearing a :ref:`srd:belt-of-giant-strength` (any variety) and :ref:`srd:gauntlets-of-ogre-power` to attune to this weapon. The attunement ends if you take
 off either of those items. While you are attuned to this weapon and
 holding it, your Strength score increases by 4 and can exceed
 20, but not 30. When you roll a 20 on an attack roll made with this
