@@ -1,9 +1,12 @@
-G
+
+.. _srd:fungi--:
+
+Fungi
 -------------------------------------------------------------
 
 .. toctree::
+   :name: mastertoc
    :titlesonly:
    :glob:
 
-   */index
    *
