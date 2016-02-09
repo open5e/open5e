@@ -4,6 +4,6 @@ H
 .. toctree::
    :titlesonly:
    :glob:
-   
-   **/*
+
+   */index
    *

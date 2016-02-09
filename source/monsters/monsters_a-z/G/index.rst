@@ -5,5 +5,5 @@ G
    :titlesonly:
    :glob:
 
-   **/*
+   */index
    *
