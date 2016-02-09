@@ -23,9 +23,9 @@ Large monstrosity, unaligned
 Actions
 ~~~~~~~
 
-.. figure:: /_images/Ankheg.jpg
+.. figure:: /_images/Ankheg.jpeg
     :figclass: image-right
-    :target: /_images/Ankheg.jpg
+    :target: /_images/Ankheg.jpeg
 
     © 2016 Violet Kirk
 

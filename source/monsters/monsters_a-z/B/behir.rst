@@ -31,9 +31,9 @@ Huge monstrosity, neutral evil
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: /_images/behir.jpg
+.. figure:: /_images/behir.jpeg
     :figclass: image-right
-    :target: /_images/behir.jpg
+    :target: /_images/behir.jpeg
 
     © 2016 Violet Kirk
 

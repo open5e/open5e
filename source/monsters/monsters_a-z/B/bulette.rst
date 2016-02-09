@@ -25,9 +25,9 @@ Large monstrosity, unaligned
 Actions
 ~~~~~~~
 
-.. figure:: /_images/Bulette.jpg
+.. figure:: /_images/Bulette.jpeg
     :figclass: image-right
-    :target: /_images/Bulette.jpg
+    :target: /_images/Bulette.jpeg
 
     © 2016 Violet Kirk
 

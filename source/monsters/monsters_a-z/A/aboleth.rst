@@ -24,9 +24,9 @@ Large aberration, lawful evil
 | **Languages** Deep Speech, telepathy 120 ft.
 | **Challenge** 10 (5,900 XP)
 
-.. figure:: /_images/Aboleth.jpg
+.. figure:: /_images/Aboleth.jpeg
     :figclass: image-right
-    :target: /_images/Aboleth.jpg
+    :target: /_images/Aboleth.jpeg
 
     © 2016 Violet Kirk
 
