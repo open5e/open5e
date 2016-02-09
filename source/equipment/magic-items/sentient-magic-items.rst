@@ -44,13 +44,14 @@ Communication
 A sentient item has some ability to communicate, either by sharing its
 emotions, broadcasting its thoughts telepathically, or speaking aloud.
 You can choose how it communicates or roll on the following table.
-=====  ==============
-d100   Communication**
-=====  ==============
-01-60  The item communicates by transmitting emotion to the creature carrying or wielding it.
-61-90  The item can speak, read, and understand one or more languages.
-91-00  The item can speak, read, and understand one or more languages. In addition, the item can communicate telepathically with any character that carries or wields it.
-=====  ==============
+
+======  ==============
+d100    Communication
+======  ==============
+01--60  The item communicates by transmitting emotion to the creature carrying or wielding it.
+61--90  The item can speak, read, and understand one or more languages.
+91--00  The item can speak, read, and understand one or more languages. In addition, the item can communicate telepathically with any character that carries or wields it.
+======  ==============
 
 Senses
 ^^^^^^
@@ -76,7 +77,7 @@ suggest an alignment. If not, you can pick an alignment or roll on the
 following table.
 
 +---------------+---------------------+----+---------------+----------------------+
-| **d100**      | **Alignment**       |    | **d100**      | **Alignment**        |
+| d100          | Alignment           |    | d100          | Alignment            |
 +===============+=====================+====+===============+======================+
 | 01--15        | Lawful good         |    | 74--85        | Chaotic neutral      |
 +---------------+---------------------+----+---------------+----------------------+
