@@ -37,9 +37,9 @@ that rely on sight.
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: /_images/cloaker.jpeg
+.. figure:: /_images/cloaker.png
     :figclass: image-right
-    :target: /_images/cloaker.jpeg
+    :target: /_images/cloaker.png
 
     © 2016 Violet Kirk
 
