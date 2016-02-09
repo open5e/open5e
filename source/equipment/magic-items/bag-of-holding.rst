@@ -23,7 +23,7 @@ by the number of creatures (minimum 1 minute), after which time they
 begin to suffocate.
 
 Placing a *bag of holding* inside an extradimensional space created by a
-:ref:`srd:handy-haversack`, :ref:`srd:portable hole`, or similar item instantly destroys
+:ref:`srd:handy-haversack`, :ref:`srd:portable-hole`, or similar item instantly destroys
 both items and opens a gate to the Astral Plane. The gate originates
 where the one item was placed inside the other. Any creature within 10
 feet of the gate is sucked through it to a random location on the Astral
