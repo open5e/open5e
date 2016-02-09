@@ -4571,7 +4571,7 @@ div[class^='highlight'] pre {
   color: #fff;
   padding: 0.4045em 0.809em;
   position: relative;
-  line-height: 50px;
+  line-height: 32px;
   text-align: center;
   font-size: 150%;
   *zoom: 1;
@@ -4599,7 +4599,6 @@ div[class^='highlight'] pre {
   font-size: 30px;
   float: left;
   cursor: pointer;
-  padding-top: inherit;
 }
 
 .wy-nav-content-wrap {
