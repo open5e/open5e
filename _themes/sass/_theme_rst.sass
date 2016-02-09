@@ -100,6 +100,9 @@
     margin-bottom: $gutter/4
   .toctree-wrapper 
     .toctree-l1
+      -webkit-column-break-inside: avoid
+      page-break-inside: avoid
+      break-inside: avoid
       font-size: 120%
       font-weight: bold
     .toctree-l2, .toctree-l3, .toctree-l4
@@ -442,6 +445,7 @@ ul.list-bulleted
   -webkit-column-gap: 24px
   -moz-column-gap: 24px
   column-gap: 24px
+  color: red !important  
   
 +media($tablet)
   .columns
