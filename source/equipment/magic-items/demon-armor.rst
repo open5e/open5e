@@ -12,6 +12,6 @@ slashing damage, with a +1 bonus to attack rolls and damage rolls and a
 damage die of 1d8.
 
 **Curse.** Once you don this cursed armor, you can't doff it unless
-you are targeted by the *remove curse* spell or similar magic. While
+you are targeted by the :ref:`srd:remove-curse` spell or similar magic. While
 wearing the armor, you have disadvantage on attack rolls against demons
 and on saving throws against their spells and special abilities.

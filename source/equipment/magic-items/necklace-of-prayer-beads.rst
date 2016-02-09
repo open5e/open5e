@@ -23,11 +23,10 @@ spell is cast, that bead can't be used again until the next dawn.
 ======  ==================  ==============================================
 d20     Bead of ...         Spell
 ======  ==================  ==============================================
-1-6     Blessing            :ref:`srd:bless`
-7-12    Curing              :ref:`srd:cure-wounds` (2nd level) or :ref:`srd:lesser-restoration`
-13-16   Favor               :ref:`srd:greater-restoration`
-17-18   Smiting             :ref:`srd:branding-smite`
+1--6    Blessing            :ref:`srd:bless`
+7--12   Curing              :ref:`srd:cure-wounds` (2nd level) or :ref:`srd:lesser-restoration`
+13--16  Favor               :ref:`srd:greater-restoration`
+17--18  Smiting             :ref:`srd:branding-smite`
 19      Summons             :ref:`srd:planar-ally`
 20      Wind walking        :ref:`srd:wind-walk`
 ======  ==================  ==============================================
-

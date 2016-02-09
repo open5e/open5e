@@ -47,7 +47,6 @@ Giant Fly
 
 **Speed** 30 ft., fly 60 ft.
 
-
 ======= ======= ======= ======= ======= =======
 STR     DEX     CON     INT     WIS     CHA
 ======= ======= ======= ======= ======= =======
@@ -82,7 +81,7 @@ differently from the others. Their properties are as follows:
    One horn becomes a *+1 lance*, and the other becomes a *+2
    longsword*. Removing a horn requires an action, and the weapons
    disappear and the horns return
-   whenthegoatrevertstofigurineform.Inaddition, the goat radiates a
+   when the goat reverts to figurine form. In addition, the goat radiates a
    30-foot-radius aura of terror while you are riding it. Any creature
    hostile to you that starts its turn in the aura must succeed on a DC
    15 Wisdom saving throw or be frightened of the goat for 1 minute, or
@@ -124,4 +123,4 @@ existence.
 **Silver Raven (Uncommon).** This silver statuette of a raven can
 become a raven for up to 12 hours. Once it has been used, it can't be
 used again until 2 days have passed. While in raven form, the figurine
-allows you to cast the *animal messenger* spell on it at will.
+allows you to cast the :ref:`srd:animal-messenger` spell on it at will.

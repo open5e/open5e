@@ -21,11 +21,16 @@ you can expend 1 charge to deal an extra 1d6 force damage to the target.
 
 **Spells.** While holding this staff, you can use an action to expend
 1 or more of its charges to cast one of the following spells from it,
-using your spell save DC and spell attack bonus: :ref:`srd:cone-of-cold` (5
-charges), :ref:`srd:fireball` (5th-level version, 5 charges), :ref:`srd:globe-of-invulnerability`
-(6 charges), :ref:`srd:hold-monster` (5 charges), :ref:`srd:levitate` (2
-charges), :ref:`srd:lightning-bolt` (5th-level version, 5 charges), :ref:`srd:magic-missile`
-(1 charge), :ref:`srd:ray-of-enfeeblement` (1 charge), or :ref:`srd:wall-of-force` (5 charges).
+using your spell save DC and spell attack bonus:
+:ref:`srd:cone-of-cold` (5 charges),
+:ref:`srd:fireball` (5th-level version, 5 charges),
+:ref:`srd:globe-of-invulnerability` (6 charges),
+:ref:`srd:hold-monster` (5 charges),
+:ref:`srd:levitate` (2 charges),
+:ref:`srd:lightning-bolt` (5th-level version, 5 charges),
+:ref:`srd:magic-missile` (1 charge),
+:ref:`srd:ray-of-enfeeblement` (1 charge), or
+:ref:`srd:wall-of-force` (5 charges).
 
 **Retributive Strike.** You can use an action to break the staff over
 your knee or against a solid surface, performing a retributive strike.
@@ -40,8 +45,10 @@ throw. On a failed save, a creature takes an amount of damage based on
 how far away it is from the point of origin, as shown in the following
 table. On a successful save, a creature takes half as much damage.
 
-**Distance from Origin Damage**
-
-10 ft. away or closer 8 × the number of charges in the staff 11 to 20
-ft. away 6 × the number of charges in the staff 21 to 30 ft. away 4 ×
-the number of charges in the staff
+======================  ================
+Distance from Origin    Damage
+======================  ================
+10 ft. away or closer   8 × the number of charges in the staff
+11 to 20 ft. away       6 × the number of charges in the staff
+21 to 30 ft. away       4 × the number of charges in the staff
+======================  ================

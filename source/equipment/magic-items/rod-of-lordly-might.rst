@@ -17,9 +17,7 @@ action. A button's effect lasts until you push a different button or
 until you push the same button again, which causes the rod to revert to
 its normal form.
 
-If you press **button 1**, the rod becomes a *flame*
-
-*tongue*, as a fiery blade sprouts from the end opposite the rod's
+If you press **button 1**, the rod becomes a :ref:`srd:flame-tongue`, as a fiery blade sprouts from the end opposite the rod's
 flanged head.
 
 If you press **button 2**, the rod's flanged head folds down and two
@@ -67,4 +65,3 @@ saving throw. On a failure, a target is frightened of you for 1 minute.
 A frightened target can repeat the saving throw at the end of each of
 its turns, ending the effect on itself on a success. This property can't
 be used again until the next dawn.
-
