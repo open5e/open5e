@@ -27,11 +27,13 @@ Spells A-Z
 :ref:`W <srd:W-spells>` •
 :ref:`Z <srd:Z-spells>`
 
-.. toctree::
-   :name: spellstoc
-   :titlesonly:
-   :glob:
-   :includehidden:
-   :maxdepth: 2
+.. container:: columns
 
-   */index
+    .. toctree::
+       :name: spellstoc
+       :titlesonly:
+       :glob:
+       :includehidden:
+       :maxdepth: 2
+
+       */index

@@ -59,5 +59,9 @@ The 5e SRD
    :maxdepth: 2
    
    */index
-   *
+
+.. toctree::
+    :hidden:
+    
+    license
    

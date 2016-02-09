@@ -19,19 +19,27 @@ Monsters
    challenge-and-xp
    legendary-creatures
    statistics
+   
+.. toctree::
+    :glob:
+    :maxdepth: 1
+
+    Monster Descriptions <monsters_a-z/index>
 
 ------------------------------------------
 
-Descriptions
+Monster Descriptions
+=====================
 
 
-.. rst-class:: columns
+.. container:: columns
 
-.. toctree::
-  :name: monsterlist
-  :glob:
-  :maxdepth: 3
+    .. toctree::
+      :name: monsterlist
+      :titlesonly:
+      :glob:
+      :maxdepth: 3
 
-  Monster Descriptions <monsters_a-z/index>
-  Miscellaneous Creatures <miscellaneous-creatures/index>
-  Nonplayer Characters <nonplayer-characters/index>
+      monsters_a-z/*/index
+      Miscellaneous Creatures <miscellaneous-creatures/index>
+      Nonplayer Characters <nonplayer-characters/index>
