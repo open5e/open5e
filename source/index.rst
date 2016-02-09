@@ -1,8 +1,3 @@
-.. open5e documentation master file, created by
-   sphinx-quickstart on Wed Jan 27 16:58:57 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Open5e
 ======
 
@@ -47,17 +42,66 @@ Want to contribute?
 
 ---------------------------------------------------------------------------------------------
 
-The 5e SRD
-==========
-
-.. rst-class:: columns
-
 .. toctree::
-   :name: mastertoc
+   :caption: Classes
    :titlesonly:
    :glob:
    :maxdepth: 2
    
-   */index
-   *
+   classes/*
+
+.. toctree::
+   :caption: Characters
+   :titlesonly:
+   :glob:
+   :maxdepth: 2
+
+   characters/*
    
+.. toctree::
+   :caption: Equipment
+   :titlesonly:
+   :glob:
+   :maxdepth: 2
+
+   equipment/*
+
+.. toctree::
+   :caption: Spellcasting
+   :titlesonly:
+   :glob:
+   :maxdepth: 2
+
+   spellcasting/*
+   
+.. toctree::
+   :caption: Gameplay Mechanics
+   :titlesonly:
+   :glob:
+   :maxdepth: 2
+
+   gameplay-mechanics/*
+
+.. toctree::
+   :caption: Combat
+   :titlesonly:
+   :glob:
+   :maxdepth: 2
+
+   combat/*
+
+.. toctree::
+   :caption: Running a Game
+   :titlesonly:
+   :glob:
+   :maxdepth: 2
+
+   running-a-game/*
+
+.. toctree::
+   :caption: Monsters
+   :titlesonly:
+   :glob:
+   :maxdepth: 2
+
+   monsters/*
