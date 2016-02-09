@@ -4244,6 +4244,9 @@ div[class^='highlight'] pre {
 .wy-table-responsive {
   overflow: visible;
 }
+.wy-table-responsive table thead {
+  background-color: white;
+}
 .wy-table-responsive table td, .wy-table-responsive table th {
   white-space: normal;
 }
