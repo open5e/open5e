@@ -18,7 +18,7 @@ Medium monstrosity, chaotic evil
 | 12 (+1)   | 13 (+1)   | 12 (+1)   | 7 (-2)   | 10 (+0)   | 13 (+1)   |
 +-----------+-----------+-----------+----------+-----------+-----------+
 
-\*\*\*\*Senses\ **:** passive Perception 10
+**Senses** passive Perception 10
 
 **Languages** Common
 
@@ -28,10 +28,16 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The harpy makes two attacks: one with its claws and one
-with its club. **Claws**: *Melee Weapon Attack*: +3 to hit, reach 5 ft.,
-one target. *Hit*: 6 (2d4 + 1) slashing damage. **Club**: *Melee Weapon
+with its club.
+
+**Claws**: *Melee Weapon Attack*: +3 to hit, reach 5 ft.,
+one target. *Hit*: 6 (2d4 + 1) slashing damage.
+
+**Club**: *Melee Weapon
 Attack*: +3 to hit, reach 5 ft., one target. *Hit*: 3 (1d4 + 1)
-bludgeoning damage. **Luring Song**: The harpy sings a magical melody.
+bludgeoning damage.
+
+**Luring Song**: The harpy sings a magical melody.
 Every humanoid and giant within 300 feet of the harpy that can hear the
 song must succeed on a DC 11 Wisdom saving throw or be charmed until the
 song ends. The harpy must take a bonus action on its subsequent turns to

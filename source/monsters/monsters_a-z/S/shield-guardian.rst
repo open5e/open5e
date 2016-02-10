@@ -35,6 +35,7 @@ amulet's wearer can telepathically call the guardian to travel to it,
 and the guardian knows the distance and direction to the amulet. If the
 guardian is within 60 feet of the amulet's wearer, half of any damage
 the wearer takes (rounded up) is transferred to the guardian.
+
 **Regeneration**: The shield guardian regains 10 hit points at the start
 of its turn if it has at least 1 hit point. **Spell Storing**: A
 spellcaster who wears the shield guardian's amulet can cause the
@@ -56,6 +57,6 @@ bludgeoning damage.
 Reactions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*:ref:`srd:shield`*: When a creature makes an attack against the wearer of the
+**Shield**: When a creature makes an attack against the wearer of the
 guardian's amulet, the guardian grants a +2 bonus to the wearer's AC if
 the guardian is within 5 feet of the wearer.

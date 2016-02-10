@@ -52,8 +52,7 @@ Actions
 
 **Multiattack**: The rakshasa makes two claw attacks.
 
-**Claw**: *Melee
-Weapon Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 9 (2d6 + 2)
+**Claw**: *Melee Weapon Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 9 (2d6 + 2)
 slashing damage, and the target is cursed if it is a creature. The
 magical curse takes effect whenever the target takes a short or long
 rest, filling the target's thoughts with horrible images and dreams. The

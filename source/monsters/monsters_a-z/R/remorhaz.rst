@@ -36,7 +36,9 @@ Actions
 *Hit*: 40 (6d10 + 7) piercing damage plus 10 (3d6) fire damage. If the
 target is a creature, it is grappled (escape DC 17). Until this grapple
 ends, the target is restrained, and the remorhaz can't bite another
-target. **Swallow**: The remorhaz makes one bite attack against a Medium
+target.
+
+**Swallow**: The remorhaz makes one bite attack against a Medium
 or smaller creature it is grappling. If the attack hits, that creature
 takes the bite's damage and is swallowed, and the grapple ends. While
 swallowed, the creature is blinded and restrained, it has total cover

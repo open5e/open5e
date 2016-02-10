@@ -33,7 +33,11 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The griffon makes two attacks: one with its beak and
-one with its claws. **Beak**: *Melee Weapon Attack*: +6 to hit, reach 5
-ft., one target. *Hit*: 8 (1d8 + 4) piercing damage. **Claws**: *Melee
+one with its claws.
+
+**Beak**: *Melee Weapon Attack*: +6 to hit, reach 5
+ft., one target. *Hit*: 8 (1d8 + 4) piercing damage.
+
+**Claws**: *Melee
 Weapon Attack*: +6 to hit, reach 5 ft., one target. *Hit*: 11 (2d6 + 4)
 slashing damage.

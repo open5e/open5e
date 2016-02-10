@@ -34,20 +34,30 @@ nonmagical attacks that aren't silvered
 **Challenge** 14 (11,500 XP)
 
 **Devil's Sight**: Magical darkness doesn't impede the devil's
-darkvision. **Magic Resistance**: The devil has advantage on saving
+darkvision.
+
+**Magic Resistance**: The devil has advantage on saving
 throws against spells and other magical effects.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The devil makes three attacks: one with its bite, one
-with its claws, and one with its tail. **Bite**: *Melee Weapon Attack*:
+with its claws, and one with its tail.
+
+**Bite**: *Melee Weapon Attack*:
 +10 to hit, reach 5 ft., one target. *Hit*: 12 (2d6 + 5) piercing damage
-plus 10 (3d6) cold damage. **Claws**: *Melee Weapon Attack*: +10 to hit,
+plus 10 (3d6) cold damage.
+
+**Claws**: *Melee Weapon Attack*: +10 to hit,
 reach 5 ft., one target. *Hit*: 10 (2d4 + 5) slashing damage plus 10
-(3d6) cold damage. **Tail**: *Melee Weapon Attack*: +10 to hit, reach 10
+(3d6) cold damage.
+
+**Tail**: *Melee Weapon Attack*: +10 to hit, reach 10
 ft., one target. *Hit*: 12 (2d6 + 5) bludgeoning damage plus 10 (3d6)
-cold damage. **Wall of Ice (Recharge 6)**: The devil magically forms an
+cold damage.
+
+**Wall of Ice (Recharge 6)**: The devil magically forms an
 opaque wall of ice on a solid surface it can see within 60 feet of it.
 The wall is 1 foot thick and up to 30 feet long and 10 feet high, or
 it's a hemispherical dome up to 20 feet in diameter. When the wall

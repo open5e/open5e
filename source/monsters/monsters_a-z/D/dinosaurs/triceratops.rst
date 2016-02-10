@@ -34,6 +34,8 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Gore**: *Melee Weapon Attack*: +9 to hit, reach 5 ft., one target.
-*Hit*: 24 (4d8 + 6) piercing damage. **Stomp**: *Melee Weapon Attack*:
+*Hit*: 24 (4d8 + 6) piercing damage.
+
+**Stomp**: *Melee Weapon Attack*:
 +9 to hit, reach 5 ft., one prone creature. *Hit*: 22 (3d10 + 6)
 bludgeoning damage.

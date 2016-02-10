@@ -30,16 +30,23 @@ Huge plant, chaotic good
 **Challenge** 9 (5,000 XP)
 
 **False Appearance**: While the treant remains motionless, it is
-indistinguishable from a normal tree. **Siege Monster**: The treant
+indistinguishable from a normal tree.
+
+**Siege Monster**: The treant
 deals double damage to objects and structures.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The treant makes two slam attacks. **Slam**: *Melee
+**Multiattack**: The treant makes two slam attacks.
+
+**Slam**: *Melee
 Weapon Attack*: +10 to hit, reach 5 ft., one target. *Hit*: 16 (3d6 + 6)
-bludgeoning damage. **Rock**: *Ranged Weapon Attack*: +10 to hit, range
+bludgeoning damage.
+
+**Rock**: *Ranged Weapon Attack*: +10 to hit, range
 60/180 ft., one target. *Hit*: 28 (4d10 + 6) bludgeoning damage.
+
 **Animate Trees (1/Day)**: The treant magically animates one or two
 trees it can see within 60 feet of it. These trees have the same
 statistics as a treant, except they have Intelligence and Charisma

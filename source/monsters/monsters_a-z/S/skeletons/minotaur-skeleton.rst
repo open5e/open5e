@@ -40,5 +40,7 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Greataxe**: *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target.
-*Hit*: 17 (2d12 + 4) slashing damage. **Gore**: *Melee Weapon Attack*:
+*Hit*: 17 (2d12 + 4) slashing damage.
+
+**Gore**: *Melee Weapon Attack*:
 +6 to hit, reach 5 ft., one target. *Hit*: 13 (2d8 + 4) piercing damage.

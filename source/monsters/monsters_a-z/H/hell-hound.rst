@@ -29,7 +29,9 @@ Medium fiend, lawful evil
 **Challenge** 3 (700 XP)
 
 **Keen Hearing and Smell**: The hound has advantage on Wisdom
-(Perception) checks that rely on hearing or smell. **Pack Tactics**: The
+(Perception) checks that rely on hearing or smell.
+
+**Pack Tactics**: The
 hound has advantage on an attack roll against a creature if at least one
 of the hound's allies is within 5 feet of the creature and the ally
 isn't incapacitated.

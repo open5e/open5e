@@ -33,9 +33,13 @@ Perception 6
 **Antimagic Susceptibility**: The rug is incapacitated while in the area
 of an *antimagic field*. If targeted by *dispel magic*, the rug must
 succeed on a Constitution saving throw against the caster's spell save
-DC or fall unconscious for 1 minute. **Damage Transfer**: While it is
+DC or fall unconscious for 1 minute.
+
+**Damage Transfer**: While it is
 grappling a creature, the rug takes only half the damage dealt to it,
-and the creature grappled by the rug takes the other half. **False
+and the creature grappled by the rug takes the other half.
+
+**False
 Appearance**: While the rug remains motionless, it is indistinguishable
 from a normal rug.
 

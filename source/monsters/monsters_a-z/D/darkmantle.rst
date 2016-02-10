@@ -45,7 +45,9 @@ advantage on its attack rolls. The darkmantle's speed also becomes 0, it
 can't benefit from any bonus to its speed, and it moves with the target.
 A creature can detach the darkmantle by making a successful DC 13
 Strength check as an action. On its turn, the darkmantle can detach
-itself from the target by using 5 feet of movement. **Darkness Aura
+itself from the target by using 5 feet of movement.
+
+**Darkness Aura
 (1/Day)**: A 15-foot radius of magical darkness extends out from the
 darkmantle, moves with it, and spreads around corners. The darkness
 lasts as long as the darkmantle maintains concentration, up to 10

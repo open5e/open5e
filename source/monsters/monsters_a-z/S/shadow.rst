@@ -37,7 +37,9 @@ petrified, poisoned, prone, restrained
 **Challenge** 1/2 (100 XP)
 
 **Amorphous**: The shadow can move through a space as narrow as 1 inch
-wide without squeezing. **Shadow Stealth**: While in dim light or
+wide without squeezing.
+
+**Shadow Stealth**: While in dim light or
 darkness, the shadow can take the Hide action as a bonus action.
 **Sunlight Weakness**: While in sunlight, the shadow has disadvantage on
 attack rolls, ability checks, and saving throws.

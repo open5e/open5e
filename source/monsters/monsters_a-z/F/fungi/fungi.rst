@@ -1,5 +1,0 @@
-
-.. _srd:fungi:
-
-Fungi
------

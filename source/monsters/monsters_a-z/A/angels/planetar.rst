@@ -35,13 +35,18 @@ nonmagical attacks
 
 **Angelic Weapons**: The planetar's weapon attacks are magical. When the
 planetar hits with any weapon, the weapon deals an extra 5d8 radiant
-damage (included in the attack). **Divine Awareness**: The planetar
-knows if it hears a lie. **Innate Spellcasting**: The planetar's
+damage (included in the attack).
+
+**Divine Awareness**: The planetar
+knows if it hears a lie.
+
+**Innate Spellcasting**: The planetar's
 spellcasting ability is Charisma (spell save DC 20). The planetar can
 innately cast the following spells, requiring no material components:
-**At will**: :ref:`srd:detect-evil-and-good`, :ref:`srd:invisibility` (self only) 
 
-**3/day each**: :ref:`srd:blade-barrier`, :ref:`srd:dispel-evil-and-good`, :ref:`srd:flame-strike`, 
+**At will**: :ref:`srd:detect-evil-and-good`, :ref:`srd:invisibility` (self only)
+
+**3/day each**: :ref:`srd:blade-barrier`, :ref:`srd:dispel-evil-and-good`, :ref:`srd:flame-strike`,
 :ref:`srd:raise-dead`
 
 **1/day each**: :ref:`srd:commune`, :ref:`srd:control-weather`, :ref:`srd:insect-plague`
