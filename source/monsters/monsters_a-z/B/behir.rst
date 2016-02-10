@@ -31,6 +31,13 @@ Huge monstrosity, neutral evil
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: /_images/Behir.png
+    :figclass: image-right
+    :target: /_images/Behir.png
+
+    © 2016 Violet Kirk
+
+
 **Multiattack**: The behir makes two attacks: one with its bite and one
 to constrict.
 

@@ -24,6 +24,12 @@ Medium monstrosity, unaligned
 
 **Challenge** 3 (700 XP)
 
+.. figure:: /_images/Basilisk.png
+    :figclass: image-right
+    :target: /_images/Basilisk.png
+
+    © 2016 Violet Kirk
+
 **Petrifying Gaze**: If a creature starts its turn within 30 feet of the
 basilisk and the two of them can see each other, the basilisk can force
 the creature to make a DC 12 Constitution saving throw if the basilisk

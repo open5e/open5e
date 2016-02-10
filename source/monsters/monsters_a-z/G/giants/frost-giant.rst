@@ -33,7 +33,11 @@ Huge giant, neutral evil
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The giant makes two greataxe attacks. **Greataxe**:
+**Multiattack**: The giant makes two greataxe attacks.
+
+**Greataxe**:
 *Melee Weapon Attack*: +9 to hit, reach 10 ft., one target. *Hit*: 25
-(3d12 + 6) slashing damage. **Rock**: *Ranged Weapon Attack*: +9 to hit,
+(3d12 + 6) slashing damage.
+
+**Rock**: *Ranged Weapon Attack*: +9 to hit,
 range 60/240 ft., one target. *Hit*: 28 (4d10 + 6) bludgeoning damage.

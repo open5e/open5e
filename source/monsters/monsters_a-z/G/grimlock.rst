@@ -30,8 +30,12 @@ radius), passive Perception 13
 **Challenge** 1/4 (50 XP)
 
 **Blind Senses**: The grimlock can't use its blindsight while deafened
-and unable to smell. **Keen Hearing and Smell**: The grimlock has
+and unable to smell.
+
+**Keen Hearing and Smell**: The grimlock has
 advantage on Wisdom (Perception) checks that rely on hearing or smell.
+
+
 **Stone Camouflage**: The grimlock has advantage on Dexterity (Stealth)
 checks made to hide in rocky terrain.
 

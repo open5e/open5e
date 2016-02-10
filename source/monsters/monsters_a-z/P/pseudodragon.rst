@@ -27,9 +27,13 @@ Tiny dragon, neutral good
 **Challenge** 1/4 (50 XP)
 
 **Keen Senses**: The pseudodragon has advantage on Wisdom (Perception)
-checks that rely on sight, hearing, or smell. **Magic Resistance**: The
+checks that rely on sight, hearing, or smell.
+
+**Magic Resistance**: The
 pseudodragon has advantage on saving throws against spells and other
-magical effects. **Limited Telepathy**: The pseudodragon can magically
+magical effects.
+
+**Limited Telepathy**: The pseudodragon can magically
 communicate simple ideas, emotions, and images telepathically with any
 creature within 100 feet of it that can understand a language.
 
@@ -37,7 +41,9 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one target.
-*Hit*: 4 (1d4 + 2) piercing damage. **Sting**: *Melee Weapon Attack*: +4
+*Hit*: 4 (1d4 + 2) piercing damage.
+
+**Sting**: *Melee Weapon Attack*: +4
 to hit, reach 5 ft., one creature. *Hit*: 4 (1d4 + 2) piercing damage,
 and the target must succeed on a DC 11 Constitution saving throw or
 become poisoned for 1 hour. If the saving throw fails by 5 or more, the

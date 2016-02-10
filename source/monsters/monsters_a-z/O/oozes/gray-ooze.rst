@@ -33,7 +33,9 @@ Perception 8
 **Challenge** 1/2 (100 XP)
 
 **Amorphous**: The ooze can move through a space as narrow as 1 inch
-wide without squeezing. **Corrode Metal**: Any nonmagical weapon made of
+wide without squeezing.
+
+**Corrode Metal**: Any nonmagical weapon made of
 metal that hits the ooze corrodes. After dealing damage, the weapon
 takes a permanent and cumulative -1 penalty to damage rolls. If its
 penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made

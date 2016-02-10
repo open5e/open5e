@@ -47,17 +47,27 @@ until it is destroyed or regains all its hit points.
 
 **Aversion of Fire**: If the golem takes fire damage, it has
 disadvantage on attack rolls and ability checks until the end of its
-next turn. **Immutable Form**: The golem is immune to any spell or
-effect that would alter its form. **Lightning Absorption**: Whenever the
+next turn.
+
+**Immutable Form**: The golem is immune to any spell or
+effect that would alter its form.
+
+**Lightning Absorption**: Whenever the
 golem is subjected to lightning damage, it takes no damage and instead
 regains a number of hit points equal to the lightning damage dealt.
+
+
 **Magic Resistance**: The golem has advantage on saving throws against
-spells and other magical effects. **Magic Weapons**: The golem's weapon
+spells and other magical effects.
+
+**Magic Weapons**: The golem's weapon
 attacks are magical.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The golem makes two slam attacks. **Slam**: *Melee
+**Multiattack**: The golem makes two slam attacks.
+
+**Slam**: *Melee
 Weapon Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 13 (2d8 + 4)
 bludgeoning damage.

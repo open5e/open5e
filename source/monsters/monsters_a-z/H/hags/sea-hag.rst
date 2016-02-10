@@ -24,7 +24,9 @@ Medium fey, chaotic evil
 
 **Challenge** 2 (450 XP)
 
-**Amphibious**: The hag can breathe air and water. **Horrific
+**Amphibious**: The hag can breathe air and water.
+
+**Horrific
 Appearance**: Any humanoid that starts its turn within 30 feet of the
 hag and can see the hag's true form must make a DC 11 Wisdom saving
 throw. On a failed save, the creature is frightened for 1 minute. A
@@ -42,10 +44,14 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Claws**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
-*Hit*: 10 (2d6 + 3) slashing damage. **Death Glare**: The hag targets
+*Hit*: 10 (2d6 + 3) slashing damage.
+
+**Death Glare**: The hag targets
 one frightened creature she can see within 30 feet of her. If the target
 can see the hag, it must succeed on a DC 11 Wisdom saving throw against
-this magic or drop to 0 hit points. **Illusory Appearance**: The hag
+this magic or drop to 0 hit points.
+
+**Illusory Appearance**: The hag
 covers herself and anything she is wearing or carrying with a magical
 illusion that makes her look like an ugly creature of her general size
 and humanoid shape. The effect ends if the hag takes a bonus action to

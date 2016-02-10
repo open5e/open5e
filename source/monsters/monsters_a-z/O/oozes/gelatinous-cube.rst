@@ -45,7 +45,9 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Pseudopod**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one
-creature. *Hit*: 10 (3d6) acid damage. **Engulf**: The cube moves up to
+creature. *Hit*: 10 (3d6) acid damage.
+
+**Engulf**: The cube moves up to
 its speed. While doing so, it can enter Large or smaller creatures'
 spaces. Whenever the cube enters a creature's space, the creature must
 make a DC 12 Dexterity saving throw. On a successful save, the creature
