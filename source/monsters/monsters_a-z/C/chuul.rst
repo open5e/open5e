@@ -4,6 +4,13 @@
 Chuul
 -----
 
+.. figure:: /_images/Chuul.png
+    :figclass: image-right
+    :target: /_images/Chuul.png
+
+    © 2016 Violet Kirk
+
+
 Large aberration, chaotic evil
 
 **Armor Class** 16 (natural armor)
@@ -36,12 +43,6 @@ otherwise works like the *detect magic* spell but isn't itself magical.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. figure:: /_images/Chuul.png
-    :figclass: image-right
-    :target: /_images/Chuul.png
-
-    © 2016 Violet Kirk
 
 **Multiattack**: The chuul makes two pincer attacks. If the chuul is
 grappling a creature, the chuul can also use its tentacles once.

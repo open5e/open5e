@@ -4,6 +4,13 @@
 Rust Monster
 ------------
 
+.. figure:: /_images/RustMonster.png
+    :figclass: image-right
+    :target: /_images/RustMonster.png
+
+    © 2016 Violet Kirk
+
+
 Medium monstrosity, unaligned
 
 **Armor Class** 14 (natural armor)
@@ -37,13 +44,7 @@ dealing damage.
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: /_images/RustMonster.png
-    :figclass: image-right
-    :target: /_images/RustMonster.png
-
-    © 2016 Violet Kirk
-
-**Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target. *Hit*: 5 (1d8 + 1) piercing damage. 
+**Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target. *Hit*: 5 (1d8 + 1) piercing damage.
 
 **Antennae**: The rust monster
 corrodes a nonmagical ferrous metal object it can see within 5 feet of

@@ -4,6 +4,13 @@
 Bulette
 -------
 
+.. figure:: /_images/Bulette.png
+    :figclass: image-right
+    :target: /_images/Bulette.png
+
+    © 2016 Violet Kirk
+
+
 Large monstrosity, unaligned
 
 | **Armor Class** 17 (natural armor)
@@ -24,12 +31,6 @@ Large monstrosity, unaligned
 
 Actions
 ~~~~~~~
-
-.. figure:: /_images/Bulette.png
-    :figclass: image-right
-    :target: /_images/Bulette.png
-
-    © 2016 Violet Kirk
 
 **Bite**: *Melee Weapon Attack*: +7 to hit, reach 5 ft., one target.
 *Hit*: 30 (4d12 + 4) piercing damage.

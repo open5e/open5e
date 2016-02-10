@@ -4,6 +4,13 @@
 Cloaker
 -------
 
+.. figure:: /_images/Cloaker.png
+    :figclass: image-right
+    :target: /_images/Cloaker.png
+
+    © 2016 Violet Kirk
+
+
 Large aberration, chaotic neutral
 
 **Armor Class** 14 (natural armor)
@@ -36,12 +43,6 @@ that rely on sight.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. figure:: /_images/Cloaker.png
-    :figclass: image-right
-    :target: /_images/Cloaker.png
-
-    © 2016 Violet Kirk
 
 **Multiattack**: The cloaker makes two attacks: one with its bite and
 one with its tail. **Bite**: *Melee Weapon Attack*: +6 to hit, reach 5

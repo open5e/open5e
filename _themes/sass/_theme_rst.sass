@@ -20,7 +20,7 @@
   img
     max-width: 100%
     height: auto !important
-    
+
   .image-right
     width: 40%
     float: right
@@ -30,7 +30,7 @@
     width: 40%
     float:left
     margin-right: 12px
-    
+
   .figure
     text-align: center
     background: transparentize($gray-light, .9)
@@ -98,7 +98,7 @@
   .section ul, .toctree-wrapper > ul
     margin-left: $gutter/2
     margin-bottom: $gutter/4
-  .toctree-wrapper 
+  .toctree-wrapper
     .toctree-l1
       -webkit-column-break-inside: avoid
       page-break-inside: avoid
@@ -120,7 +120,7 @@
     margin-bottom: $base-line-height / 2
   .line-block
     margin-bottom: $base-line-height / 2
-    
+
 
   // Generics handling of headings and toc stuff.
   .topic-title
@@ -139,39 +139,39 @@
     display: block
   .toctree-wrapper p.caption
     @extend h2
-  
+
   h1
     color: darken($red, 20%)
-  
+
   h2
     border-bottom: 2px solid darken($red, 20%)
-    
+
   h3
     margin-bottom: $base-line-height / 2
-    
+
   h4
     margin-bottom: $base-line-height / 8
     font-variant: small-caps
-    
+
   h5
     font-weight: 500
     font-size: 85%
     text-transform: uppercase
     margin-bottom: 0
-  
+
   h6
     margin-bottom: 0
     font-weight: 500
     font-size: 70%
     text-transform: uppercase
-  
+
   h1, h2
     opacity: 1
-  
+
   h4, h5, h6
     opacity: .8
     font-family: $base-font-family
-    
+
 
   // This is the #href that shows up on hover. Sphinx's is terrible so I hack it away.
   h1, h2, h3, h4, h5, h6, dl dt, p.caption
@@ -187,8 +187,8 @@
         display: inline-block
     &:hover .headerlink
       display: inline-block
-      
-  
+
+
   // Sidebar content. You'll see at the bottom of this file I change it in mobile.
   .sidebar
     float: right
@@ -250,7 +250,7 @@
         background-color: lighten($green, 30%)
         &.first:after
           content: "UNOFFICIAL CLARIFICATION"
-          
+
   // Sphinx can highlight searched text with ?highlighted=searchterm
   .highlighted
     background: $highlight-color
@@ -424,12 +424,23 @@
 // Mobile specific
 +media($mobile)
   .rst-content
+    .image-right
+      width: 100%
+      max-width: 400px
+      float: none
+      margin-right: 0px
+      margin-left: 0px
+    .image-left
+      width: 100%
+      max-width: 400px
+      float:none
+      margin-right: 0px
     .sidebar
       width: 100%
   .hide-mobile
     display: none
 
-ul.list-bulleted 
+ul.list-bulleted
   list-style: disc
   li
     list-style: disc
@@ -445,14 +456,27 @@ ul.list-bulleted
   -webkit-column-gap: 24px
   -moz-column-gap: 24px
   column-gap: 24px
-  color: red !important  
-  
+  color: red !important
+
 +media($tablet)
+  .rst-content
+    .image-right
+      width: 100%
+      max-width: 600px
+      float: none
+      margin-right: 0
+      margin-left: 0
+    .image-left
+      width: 100%
+      max-width: 600px
+      float:none
+      margin-right: 0
+      margin-left: 0
   .columns
     -webkit-column-count: 2
     -moz-column-count: 2
     column-count: 2
-    
+
 +media($mobile)
   .columns
     -webkit-column-count: 1
