@@ -5,6 +5,7 @@ Rust Monster
 ------------
 
 .. figure:: /_images/RustMonster.png
+    :figclass: image-right
     :target: /_images/RustMonster.png
 
     © 2016 Violet Kirk

@@ -5,6 +5,7 @@ Cloaker
 -------
 
 .. figure:: /_images/Cloaker.png
+    :figclass: image-right
     :target: /_images/Cloaker.png
 
     © 2016 Violet Kirk

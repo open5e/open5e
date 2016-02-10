@@ -5,6 +5,7 @@ Basilisk
 --------
 
 .. figure:: /_images/Basilisk.png
+    :figclass: image-right
     :target: /_images/Basilisk.png
 
     © 2016 Violet Kirk

@@ -5,6 +5,7 @@ Chuul
 -----
 
 .. figure:: /_images/Chuul.png
+    :figclass: image-right
     :target: /_images/Chuul.png
 
     © 2016 Violet Kirk

@@ -5,6 +5,7 @@ Ankheg
 ------
 
 .. figure:: /_images/Ankheg.png
+    :figclass: image-right
     :target: /_images/Ankheg.png
 
     © 2016 Violet Kirk

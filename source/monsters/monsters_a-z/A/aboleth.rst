@@ -6,6 +6,7 @@ Aboleth
 
 
 .. figure:: /_images/Aboleth.png
+    :figclass: image-right
     :target: /_images/Aboleth.png
 
     © 2016 Violet Kirk

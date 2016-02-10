@@ -5,6 +5,7 @@ Bulette
 -------
 
 .. figure:: /_images/Bulette.png
+    :figclass: image-right
     :target: /_images/Bulette.png
 
     © 2016 Violet Kirk

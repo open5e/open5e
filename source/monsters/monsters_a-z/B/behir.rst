@@ -4,11 +4,12 @@
 Behir
 -----
 .. figure:: /_images/Behir.png
+    :figclass: image-right
     :target: /_images/Behir.png
 
     © 2016 Violet Kirk
 
-    
+
 Huge monstrosity, neutral evil
 
 **Armor Class** 17 (natural armor)
