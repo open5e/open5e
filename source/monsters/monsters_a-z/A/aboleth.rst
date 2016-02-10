@@ -4,11 +4,19 @@
 Aboleth
 -------
 
+
+.. figure:: /_images/Aboleth.png
+    :target: /_images/Aboleth.png
+
+    © 2016 Violet Kirk
+
 Large aberration, lawful evil
 
-| **Armor Class** 17 (natural armor)
-| **Hit Points** 135 (18d10 + 36)
-| **Speed** 10 ft., swim 40 ft.
+**Armor Class** 17 (natural armor)
+
+**Hit Points** 135 (18d10 + 36)
+
+**Speed** 10 ft., swim 40 ft.
 
 .. rst-class:: test
 
@@ -18,17 +26,16 @@ Large aberration, lawful evil
 | 21 (+5)   | 9 (-1)   | 15 (+2)   | 18 (+4)   | 15 (+2)   | 18 (+4)   |
 +-----------+----------+-----------+-----------+-----------+-----------+
 
-| **Saving Throws** Con +6, Int +8, Wis +6
-| **Skills** History +12, Perception +10
-| **Senses** darkvision 120 ft., passive Perception 20
-| **Languages** Deep Speech, telepathy 120 ft.
-| **Challenge** 10 (5,900 XP)
+**Saving Throws** Con +6, Int +8, Wis +6
 
-.. figure:: /_images/Aboleth.png
-    :figclass: image-right
-    :target: /_images/Aboleth.png
+**Skills** History +12, Perception +10
 
-    © 2016 Violet Kirk
+**Senses** darkvision 120 ft., passive Perception 20
+
+**Languages** Deep Speech, telepathy 120 ft.
+
+**Challenge** 10 (5,900 XP)
+
 
 **Amphibious.** The aboleth can breathe air and water.
 
