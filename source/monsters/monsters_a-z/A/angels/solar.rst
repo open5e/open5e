@@ -88,7 +88,7 @@ Only one legendary action option can be used at a time and only at the
 end of another creature's turn. The solar regains spent legendary
 actions at the start of its turn.
 
-**:ref:`srd:teleport`**: The solar magically teleports, along with any equipment it
+**Teleport**: The solar magically teleports, along with any equipment it
 is wearing or carrying, up to 120 feet to an unoccupied space it can
 see.
 
