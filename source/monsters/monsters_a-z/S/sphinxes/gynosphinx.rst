@@ -64,8 +64,7 @@ Actions
 
 **Multiattack**: The sphinx makes two claw attacks.
 
-**Claw**: *Melee
-Weapon Attack*: +8 to hit, reach 5 ft., one target. *Hit*: 13 (2d8 + 4)
+**Claw**: *Melee Weapon Attack*: +8 to hit, reach 5 ft., one target. *Hit*: 13 (2d8 + 4)
 slashing damage.
 
 Legendary Actions
@@ -79,8 +78,9 @@ legendary actions at the start of its turn.
 
 **Claw Attack**: The sphinx makes one claw attack.
 
-**Teleport (Costs 2
-Actions)**: The sphinx magically teleports, along with any equipment it
+**Teleport (Costs 2 Actions)**: The sphinx magically teleports, along with any equipment it
 is wearing or carrying, up to 120 feet to an unoccupied space it can
-see. **Cast a Spell (Costs 3 Actions)**: The sphinx casts a spell from
+see.
+
+**Cast a Spell (Costs 3 Actions)**: The sphinx casts a spell from
 its list of prepared spells, using a spell slot as normal.

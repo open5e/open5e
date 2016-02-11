@@ -34,7 +34,9 @@ nonmagical attacks not made with silvered weapons
 Large bear-humanoid hybrid or into a Large bear, or back into its true
 form, which is humanoid. Its statistics, other than its size and AC, are
 the same in each form. Any equipment it is wearing or carrying isn't
-transformed. It reverts to its true form if it dies. **Keen Smell**: The
+transformed. It reverts to its true form if it dies.
+
+**Keen Smell**: The
 werebear has advantage on Wisdom (Perception) checks that rely on smell.
 
 Actions

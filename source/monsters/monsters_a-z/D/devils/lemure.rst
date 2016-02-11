@@ -31,7 +31,9 @@ Medium fiend (devil), lawful evil
 **Challenge** 0 (10 XP)
 
 **Devil's Sight**: Magical darkness doesn't impede the lemure's
-darkvision. **Hellish Rejuvenation**: A lemure that dies in the Nine
+darkvision.
+
+**Hellish Rejuvenation**: A lemure that dies in the Nine
 Hells comes back to life with all its hit points in 1d10 days unless it
 is killed by a good-aligned creature with a :ref:`srd:bless` spell cast on that
 creature or its remains are sprinkled with holy water.

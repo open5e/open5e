@@ -27,7 +27,9 @@ Small beast, unaligned
 **Challenge** 1/8 (25 XP)
 
 **Keen Sight**: The hawk has advantage on Wisdom (Perception) checks
-that rely on sight. **Pack Tactics**: The hawk has advantage on an
+that rely on sight.
+
+**Pack Tactics**: The hawk has advantage on an
 attack roll against a creature if at least one of the hawk's allies is
 within 5 feet of the creature and the ally isn't incapacitated.
 

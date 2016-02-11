@@ -32,15 +32,15 @@ Medium humanoid (any race), any alignment
 ability is Intelligence (spell save DC 14, +6 to hit with spell
 attacks). The mage has the following wizard spells prepared:
 
-    **Cantrips (at will)**: :ref:`srd:fire-bolt`, :ref:`srd:light`, :ref:`srd:mage-hand`, :ref:`srd:prestidigitation` 
+    **Cantrips (at will)**: :ref:`srd:fire-bolt`, :ref:`srd:light`, :ref:`srd:mage-hand`, :ref:`srd:prestidigitation`
 
-    **1st level (4 slots)**: :ref:`srd:detect-magic`, :ref:`srd:mage-armor`, :ref:`srd:magic-missile`, :ref:`srd:shield` 
+    **1st level (4 slots)**: :ref:`srd:detect-magic`, :ref:`srd:mage-armor`, :ref:`srd:magic-missile`, :ref:`srd:shield`
 
-    **2nd level (3 slots)**: :ref:`srd:misty-step`, :ref:`srd:suggestion` 
+    **2nd level (3 slots)**: :ref:`srd:misty-step`, :ref:`srd:suggestion`
 
-    **3rd level (3 slots)**: :ref:`srd:counterspell`, :ref:`srd:fireball`, :ref:`srd:fly` 
+    **3rd level (3 slots)**: :ref:`srd:counterspell`, :ref:`srd:fireball`, :ref:`srd:fly`
 
-    **4th level (3 slots)**: :ref:`srd:greater-invisibility`, :ref:`srd:ice-storm` 
+    **4th level (3 slots)**: :ref:`srd:greater-invisibility`, :ref:`srd:ice-storm`
 
     **5th level (1 slot)**: :ref:`srd:cone-of-cold`
 

@@ -31,9 +31,12 @@ petrified, poisoned
 **Challenge** 10 (5,900 XP)
 
 **Immutable Form**: The golem is immune to any spell or effect that
-would alter its form. **Magic Resistance**: The golem has advantage on
-saving throws against spells and other magical effects. **Magic
-Weapons**: The golem's weapon attacks are magical.
+would alter its form.
+
+**Magic Resistance**: The golem has advantage on
+saving throws against spells and other magical effects.
+
+**Magic Weapons**: The golem's weapon attacks are magical.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -27,7 +27,9 @@ Medium humanoid (elf), neutral evil
 **Challenge** 1/4 (50 XP)
 
 **Fey Ancestry**: The drow has advantage on saving throws against being
-charmed, and magic can't put the drow to sleep. **Innate Spellcasting**:
+charmed, and magic can't put the drow to sleep.
+
+**Innate Spellcasting**:
 The drow's spellcasting ability is Charisma (spell save DC 11). It can
 innately cast the following spells, requiring no material components:
 

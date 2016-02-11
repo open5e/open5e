@@ -32,7 +32,9 @@ but can't speak, telepathy 120 ft.
 
 **Challenge** 23 (50,000 XP)
 
-**Amphibious**: The kraken can breathe air and water. **Freedom of
+**Amphibious**: The kraken can breathe air and water.
+
+**Freedom of
 Movement**: The kraken ignores difficult terrain, and magical effects
 can't reduce its speed or cause it to be restrained. It can spend 5 feet
 of movement to escape from nonmagical restraints or being grappled.

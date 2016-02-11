@@ -30,7 +30,9 @@ Huge dragon, chaotic evil
 
 **Challenge** 14 (11,500 XP)
 
-**Amphibious**: The dragon can breathe air and water. **Legendary
+**Amphibious**: The dragon can breathe air and water.
+
+**Legendary
 Resistance (3/Day)**: If the dragon fails a saving throw, it can choose
 to succeed instead.
 

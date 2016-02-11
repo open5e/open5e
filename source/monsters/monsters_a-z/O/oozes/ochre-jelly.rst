@@ -33,7 +33,9 @@ Perception 8
 **Challenge** 2 (450 XP)
 
 **Amorphous**: The jelly can move through a space as narrow as 1 inch
-wide without squeezing. **Spider Climb**: The jelly can climb difficult
+wide without squeezing.
+
+**Spider Climb**: The jelly can climb difficult
 surfaces, including upside down on ceilings, without needing to make an
 ability check.
 

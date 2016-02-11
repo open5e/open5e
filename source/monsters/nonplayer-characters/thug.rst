@@ -33,9 +33,13 @@ creature and the ally isn't incapacitated.
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The thug makes two melee attacks. **Mace**: *Melee
+**Multiattack**: The thug makes two melee attacks.
+
+**Mace**: *Melee
 Weapon Attack*: +4 to hit, reach 5 ft., one creature. *Hit*: 5 (1d6 + 2)
-bludgeoning damage. **Heavy Crossbow**: *Ranged Weapon Attack*: +2 to
+bludgeoning damage.
+
+**Heavy Crossbow**: *Ranged Weapon Attack*: +2 to
 hit, range 100/400 ft., one target. *Hit*: 5 (1d10) piercing damage.
 
 Thugs are ruthless enforcers skilled at intimidation and violence. They

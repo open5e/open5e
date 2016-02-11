@@ -24,7 +24,9 @@ Large beast, unaligned
 
 **Challenge** 1 (200 XP)
 
-**Amphibious**: The toad can breathe air and water. **Standing Leap**:
+**Amphibious**: The toad can breathe air and water.
+
+**Standing Leap**:
 The toad's long jump is up to 20 feet and its high jump is up to 10
 feet, with or without a running start.
 
@@ -34,7 +36,9 @@ Actions
 **Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one target.
 *Hit*: 7 (1d10 + 2) piercing damage plus 5 (1d10) poison damage, and the
 target is grappled (escape DC 13). Until this grapple ends, the target
-is restrained, and the toad can't bite another target. **Swallow**: The
+is restrained, and the toad can't bite another target.
+
+**Swallow**: The
 toad makes one bite attack against a Medium or smaller target it is
 grappling. If the attack hits, the target is swallowed, and the grapple
 ends. The swallowed target is blinded and restrained, it has total cover

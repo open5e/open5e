@@ -27,7 +27,9 @@ Small monstrosity, unaligned
 **Challenge** 1/2 (100 XP)
 
 **Echolocation**: The darkmantle can't use its blindsight while
-deafened. **False Appearance**: While the darkmantle remains motionless,
+deafened.
+
+**False Appearance**: While the darkmantle remains motionless,
 it is indistinguishable from a cave formation such as a stalactite or
 stalagmite.
 

@@ -35,7 +35,9 @@ nonmagical attacks
 
 **Angelic Weapons**: The deva's weapon attacks are magical. When the
 deva hits with any weapon, the weapon deals an extra 4d8 radiant damage
-(included in the attack). **Innate Spellcasting**: The deva's
+(included in the attack).
+
+**Innate Spellcasting**: The deva's
 spellcasting ability is Charisma (spell save DC 17). The deva can
 innately cast the following spells, requiring only verbal components:
 

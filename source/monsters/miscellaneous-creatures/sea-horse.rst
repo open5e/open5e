@@ -24,4 +24,4 @@ Tiny beast, unaligned
 
 **Challenge** 0 (0 XP)
 
-**Water Breathing. The sea horse can breathe only underwater.**
+**Water Breathing**: The sea horse can breathe only underwater.

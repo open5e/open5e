@@ -31,7 +31,11 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The badger makes two attacks: one with its bite and one
-with its claws. **Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft.,
-one target. *Hit*: 4 (1d6 + 1) piercing damage. **Claws**: *Melee Weapon
+with its claws.
+
+**Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft.,
+one target. *Hit*: 4 (1d6 + 1) piercing damage.
+
+**Claws**: *Melee Weapon
 Attack*: +3 to hit, reach 5 ft., one target. *Hit*: 6 (2d4 + 1) slashing
 damage.

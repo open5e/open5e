@@ -34,8 +34,12 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The eagle makes two attacks: one with its beak and one
-with its talons. **Beak**: *Melee Weapon Attack*: +5 to hit, reach 5
-ft., one target. *Hit*: 6 (1d6 + 3) piercing damage. **Talons**: *Melee
+with its talons.
+
+**Beak**: *Melee Weapon Attack*: +5 to hit, reach 5
+ft., one target. *Hit*: 6 (1d6 + 3) piercing damage.
+
+**Talons**: *Melee
 Weapon Attack*: +5 to hit, reach 5 ft., one target. *Hit*: 10 (2d6 + 3)
 slashing damage.
 

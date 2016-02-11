@@ -30,8 +30,11 @@ petrified, prone, restrained, stunned
 **Challenge** 1/4 (50 XP)
 
 **Echolocation**: The swarm can't use its blindsight while deafened.
+
 **Keen Hearing**: The swarm has advantage on Wisdom (Perception) checks
-that rely on hearing. **Swarm**: The swarm can occupy another creature's
+that rely on hearing.
+
+**Swarm**: The swarm can occupy another creature's
 space and vice versa, and the swarm can move through any opening large
 enough for a Tiny bat. The swarm can't regain hit points or gain
 temporary hit points.

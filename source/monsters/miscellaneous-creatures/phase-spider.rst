@@ -27,9 +27,13 @@ Large monstrosity, unaligned
 **Challenge** 3 (700 XP)
 
 **Ethereal Jaunt**: As a bonus action, the spider can magically shift
-from the Material Plane to the Ethereal Plane, or vice versa. **Spider
+from the Material Plane to the Ethereal Plane, or vice versa.
+
+**Spider
 Climb**: The spider can climb difficult surfaces, including upside down
-on ceilings, without needing to make an ability check. **Web Walker**:
+on ceilings, without needing to make an ability check.
+
+**Web Walker**:
 The spider ignores movement restrictions caused by webbing.
 
 Actions

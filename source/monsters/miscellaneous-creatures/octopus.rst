@@ -27,8 +27,12 @@ Small beast, unaligned
 **Challenge** 0 (10 XP)
 
 **Hold Breath**: While out of water, the octopus can hold its breath for
-30 minutes. **Underwater Camouflage**: The octopus has advantage on
-Dexterity (Stealth) checks made while underwater. **Water Breathing**:
+30 minutes.
+
+**Underwater Camouflage**: The octopus has advantage on
+Dexterity (Stealth) checks made while underwater.
+
+**Water Breathing**:
 The octopus can breathe only underwater.
 
 Actions
@@ -44,14 +48,3 @@ of ink extends all around the octopus if it is underwater. The area is
 heavily obscured for 1 minute, although a significant current can
 disperse the ink. After releasing the ink, the octopus can use the Dash
 action as a bonus action.
-
-.. raw:: html
-
-   <div>
-
-.. raw:: html
-
-   <div>
-
-
-

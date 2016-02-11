@@ -37,9 +37,13 @@ spells, requiring no material components:
 **1/day each:** :ref:`srd:barkskin`, :ref:`srd:pass-without-trace`, :ref:`srd:shillelagh`
 
 **Magic Resistance**: The dryad has advantage on saving throws against
-spells and other magical effects. **Speak with Beasts and Plants**: The
+spells and other magical effects.
+
+**Speak with Beasts and Plants**: The
 dryad can communicate with beasts and plants as if they shared a
-language. **Tree Stride**: Once on her turn, the dryad can use 10 feet
+language.
+
+**Tree Stride**: Once on her turn, the dryad can use 10 feet
 of her movement to step magically into one living tree within her reach
 and emerge from a second living tree within 60 feet of the first tree,
 appearing in an unoccupied space within 5 feet of the second tree. Both

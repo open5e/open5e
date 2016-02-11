@@ -30,7 +30,9 @@ Gargantuan dragon, chaotic evil
 
 **Challenge** 21 (33,000 XP)
 
-**Amphibious**: The dragon can breathe air and water. **Legendary
+**Amphibious**: The dragon can breathe air and water.
+
+**Legendary
 Resistance (3/Day)**: If the dragon fails a saving throw, it can choose
 to succeed instead.
 
@@ -77,7 +79,9 @@ legendary actions at the start of its turn.
 **Detect**: The dragon makes a Wisdom (Perception) check.
 
 **Tail
-Attack**: The dragon makes a tail attack. **Wing Attack (Costs 2
+Attack**: The dragon makes a tail attack.
+
+**Wing Attack (Costs 2
 Actions)**: The dragon beats its wings. Each creature within 15 feet of
 the dragon must succeed on a DC 23 Dexterity saving throw or take 15
 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then
