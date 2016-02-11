@@ -32,7 +32,9 @@ piercing, and slashing from nonmagical attacks
 
 **Telepathic Bond**: The fiend ignores the range restriction on its
 telepathy when communicating with a creature it has charmed. The two
-don't even need to be on the same plane of existence. **Shapechanger**:
+don't even need to be on the same plane of existence.
+
+**Shapechanger**:
 The fiend can use its action to polymorph into a Small or Medium
 humanoid, or back into its true form. Without wings, the fiend loses its
 flying speed. Other than its size and speed, its statistics are the same

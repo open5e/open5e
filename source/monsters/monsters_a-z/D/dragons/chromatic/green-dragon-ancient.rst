@@ -21,7 +21,11 @@ Gargantuan dragon, lawful evil
 **Saving Throws** Dex +8, Con +14, Wis +10, Cha +11
 
 **Skills** Deception +11, Insight +10, Perception +17, Persuasion +11,
-Stealth +8 **Damage Immunities** poison **Condition Immunities**
+Stealth +8
+
+**Damage Immunities** poison 
+
+**Condition Immunities**
 poisoned
 
 **Senses** blindsight 60 ft., darkvision 120 ft., passive Perception 27
@@ -30,7 +34,9 @@ poisoned
 
 **Challenge** 22 (41,000 XP)
 
-**Amphibious**: The dragon can breathe air and water. **Legendary
+**Amphibious**: The dragon can breathe air and water.
+
+**Legendary
 Resistance (3/Day)**: If the dragon fails a saving throw, it can choose
 to succeed instead.
 

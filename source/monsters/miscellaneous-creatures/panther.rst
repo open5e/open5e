@@ -27,7 +27,9 @@ Medium beast, unaligned
 **Challenge** 1/4 (50 XP)
 
 **Keen Smell**: The panther has advantage on Wisdom (Perception) checks
-that rely on smell. **Pounce**: If the panther moves at least 20 feet
+that rely on smell.
+
+**Pounce**: If the panther moves at least 20 feet
 straight toward a creature and then hits it with a claw attack on the
 same turn, that target must succeed on a DC 12 Strength saving throw or
 be knocked prone. If the target is prone, the panther can make one bite
@@ -37,5 +39,7 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one target.
-*Hit*: 5 (1d6 + 2) piercing damage. **Claw**: *Melee Weapon Attack*: +4
+*Hit*: 5 (1d6 + 2) piercing damage.
+
+**Claw**: *Melee Weapon Attack*: +4
 to hit, reach 5 ft., one target. *Hit*: 4 (1d4 + 2) slashing damage.

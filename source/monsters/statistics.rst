@@ -37,10 +37,10 @@ Tiny            2½ by 2½ ft.              Imp, sprite
 Small           5 by 5 ft.                Giant rat, goblin
 Medium          5 by 5 ft.                Orc, werewolf
 Large           10 by 10 ft.              Hippogriff, ogre
-Huge            15 by 15 ft.              Fire giant, treant 
+Huge            15 by 15 ft.              Fire giant, treant
 Gargantuan      20 by 20 ft. or larger    Kraken, purple worm
 =============   ======================    ========
-    
+
 Type
 ~~~~
 
@@ -53,7 +53,7 @@ creatures of the dragon type, such as dragon turtles and wyverns.
 The game includes the following monster types, which have no rules of
 their own.
 
-**Aberrations** are utterly alien beings. Many of them have 
+**Aberrations** are utterly alien beings. Many of them have
 innate magical abilities drawn from the creature's alien mind
 rather than the mystical forces of the world. The quintessential
 aberrations are aboleths, beholders, mind flayers, and slaadi.
@@ -201,8 +201,7 @@ Hit Points
 A monster usually dies or is destroyed when it drops to 0 hit points.
 For more on hit points, see the *Player's Handbook.*
 
-    A monster's hit points are presented both as a die
-
+A monster's hit points are presented both as a die
 expression and as an average number. For example, a monster with 2d8 hit
 points has 9 hit points on average (2 × 4½).
 
@@ -213,26 +212,26 @@ Hit Dice by Size
 ^^^^^^^^^^^^^^^^
 
 +----------------------+-----------------+----------------------------+
-| > **Monster Size**   | > **Hit Die**   | > **Average HP per Die**   |
+| **Monster Size**     | **Hit Die**     | **Average HP per Die**     |
 +======================+=================+============================+
-| > Tiny               | > d4            | > 2½                       |
+| Tiny                 | d4              | 2½                         |
 +----------------------+-----------------+----------------------------+
-| > Small              | > d6            | > 3½                       |
+| Small                | d6              | 3½                         |
 +----------------------+-----------------+----------------------------+
-| > Medium             | > d8            | > 4½                       |
+| Medium               | d8              | 4½                         |
 +----------------------+-----------------+----------------------------+
-| > Large              | > d10           | > 5½                       |
+| Large                | d10             | 5½                         |
 +----------------------+-----------------+----------------------------+
-| > Huge               | > d12           | > 6½                       |
+| Huge                 | d12             | 6½                         |
 +----------------------+-----------------+----------------------------+
-| > Gargantuan         | > d20           | > 10½                      |
+| Gargantuan           | d20             | 10½                        |
 +----------------------+-----------------+----------------------------+
 
-    A monster's Constitution modifier also affects the number of hit
-    points it has. Its Constitution modifier is multiplied by the number
-    of Hit Dice it possesses, and the result is added to its hit points.
-    For example, if a monster has a Constitution of 12 (+1 modifier) and
-    2d8 Hit Dice, it has 2d8 + 2 hit points (average 11).
+A monster's Constitution modifier also affects the number of hit
+points it has. Its Constitution modifier is multiplied by the number
+of Hit Dice it possesses, and the result is added to its hit points.
+For example, if a monster has a Constitution of 12 (+1 modifier) and
+2d8 Hit Dice, it has 2d8 + 2 hit points (average 11).
 
 Speed
 ~~~~~

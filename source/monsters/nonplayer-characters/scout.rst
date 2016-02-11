@@ -33,8 +33,12 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The scout makes two melee attacks or two ranged
-attacks. **Shortsword**: *Melee Weapon Attack*: +4 to hit, reach 5 ft.,
-one target. *Hit*: 5 (1d6 + 2) piercing damage. **Longbow**: *Ranged
+attacks.
+
+**Shortsword**: *Melee Weapon Attack*: +4 to hit, reach 5 ft.,
+one target. *Hit*: 5 (1d6 + 2) piercing damage.
+
+**Longbow**: *Ranged
 Weapon Attack*: +4 to hit, ranged 150/600 ft., one target. *Hit*: 6 (1d8
 + 2) piercing damage.
 

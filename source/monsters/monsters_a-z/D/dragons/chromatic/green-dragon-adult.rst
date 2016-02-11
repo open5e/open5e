@@ -21,8 +21,11 @@ Huge dragon, lawful evil
 **Saving Throws** Dex +6, Con +10, Wis +7, Cha +8
 
 **Skills** Deception +8, Insight +7, Perception +12, Persuasion +8,
-Stealth +6 **Damage Immunities** poison **Condition Immunities**
-poisoned
+Stealth +6
+
+**Damage Immunities** poison
+
+**Condition Immunities** poisoned
 
 **Senses** blindsight 60 ft., darkvision 120 ft., passive Perception 22
 
@@ -30,7 +33,9 @@ poisoned
 
 **Challenge** 15 (13,000 XP)
 
-**Amphibious**: The dragon can breathe air and water. **Legendary
+**Amphibious**: The dragon can breathe air and water.
+
+**Legendary
 Resistance (3/Day)**: If the dragon fails a saving throw, it can choose
 to succeed instead.
 

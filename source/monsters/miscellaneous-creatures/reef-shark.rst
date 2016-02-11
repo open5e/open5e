@@ -28,7 +28,9 @@ Medium beast, unaligned
 
 **Pack Tactics**: The shark has advantage on an attack roll against a
 creature if at least one of the shark's allies is within 5 feet of the
-creature and the ally isn't incapacitated. **Water Breathing**: The
+creature and the ally isn't incapacitated.
+
+**Water Breathing**: The
 shark can breathe only underwater.
 
 Actions

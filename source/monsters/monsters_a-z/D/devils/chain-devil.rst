@@ -34,7 +34,9 @@ nonmagical attacks that aren't silvered
 **Challenge** 8 (3,900 XP)
 
 **Devil's Sight**: Magical darkness doesn't impede the devil's
-darkvision. **Magic Resistance**: The devil has advantage on saving
+darkvision.
+
+**Magic Resistance**: The devil has advantage on saving
 throws against spells and other magical effects.
 
 Actions

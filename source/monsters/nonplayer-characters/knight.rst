@@ -32,11 +32,17 @@ frightened.**
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The knight makes two melee attacks. **Greatsword**:
+**Multiattack**: The knight makes two melee attacks.
+
+**Greatsword**:
 *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target. *Hit*: 10
-(2d6 + 3) slashing damage. **Heavy Crossbow**: *Ranged Weapon Attack*:
+(2d6 + 3) slashing damage.
+
+**Heavy Crossbow**: *Ranged Weapon Attack*:
 +2 to hit, range 100/400 ft., one target. *Hit*: 5 (1d10) piercing
-damage. **Leadership (Recharges after a Short or Long Rest)**: For 1
+damage.
+
+**Leadership (Recharges after a Short or Long Rest)**: For 1
 minute, the knight can utter a special command or warning whenever a
 nonhostile creature that it can see within 30 feet of it makes an attack
 roll or a saving throw. The creature can add a d4 to its roll provided

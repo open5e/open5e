@@ -30,10 +30,14 @@ petrified, prone, restrained, stunned
 **Challenge** 1 (200 XP)
 
 **Blood Frenzy**: The swarm has advantage on melee attack rolls against
-any creature that doesn't have all its hit points. **Swarm**: The swarm
+any creature that doesn't have all its hit points.
+
+**Swarm**: The swarm
 can occupy another creature's space and vice versa, and the swarm can
 move through any opening large enough for a Tiny quipper. The swarm
-can't regain hit points or gain temporary hit points. **Water
+can't regain hit points or gain temporary hit points.
+
+**Water
 Breathing**: The swarm can breathe only underwater.
 
 Actions

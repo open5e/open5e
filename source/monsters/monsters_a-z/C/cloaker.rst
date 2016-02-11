@@ -35,9 +35,13 @@ Large aberration, chaotic neutral
 
 **Damage Transfer**: While attached to a creature, the cloaker takes
 only half the damage dealt to it (rounded down), and that creature takes
-the other half. **False Appearance**: While the cloaker remains
+the other half.
+
+**False Appearance**: While the cloaker remains
 motionless without its underside exposed, it is indistinguishable from a
-dark leather cloak. **Light Sensitivity**: While in bright light, the
+dark leather cloak.
+
+**Light Sensitivity**: While in bright light, the
 cloaker has disadvantage on attack rolls and Wisdom (Perception) checks
 that rely on sight.
 
@@ -45,7 +49,9 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The cloaker makes two attacks: one with its bite and
-one with its tail. **Bite**: *Melee Weapon Attack*: +6 to hit, reach 5
+one with its tail.
+
+**Bite**: *Melee Weapon Attack*: +6 to hit, reach 5
 ft., one creature. *Hit*: 10 (2d6 + 3) piercing damage, and if the
 target is Large or smaller, the cloaker attaches to it. If the cloaker
 has advantage against the target, the cloaker attaches to the target's
@@ -54,8 +60,12 @@ is attached. While attached, the cloaker can make this attack only
 against the target and has advantage on the attack roll. The cloaker can
 detach itself by spending 5 feet of its movement. A creature, including
 the target, can take its action to detach the cloaker by succeeding on a
-DC 16 Strength check. **Tail**: *Melee Weapon Attack*: +6 to hit, reach
-10 ft., one creature. *Hit*: 7 (1d8 + 3) slashing damage. **Moan**: Each
+DC 16 Strength check.
+
+**Tail**: *Melee Weapon Attack*: +6 to hit, reach
+10 ft., one creature. *Hit*: 7 (1d8 + 3) slashing damage.
+
+**Moan**: Each
 creature within 60 feet of the cloaker that can hear its moan and that
 isn't an aberration must succeed on a DC 13 Wisdom saving throw or
 become frightened until the end of the cloaker's next turn. If a

@@ -30,7 +30,9 @@ petrified, prone, restrained, stunned
 **Challenge** 1/4 (50 XP)
 
 **Keen Smell**: The swarm has advantage on Wisdom (Perception) checks
-that rely on smell. **Swarm**. The swarm can occupy another creature's
+that rely on smell.
+
+**Swarm**. The swarm can occupy another creature's
 space and vice versa, and the swarm can move through any opening large
 enough for a Tiny rat. The swarm can't regain hit points or gain
 temporary hit points.

@@ -27,7 +27,9 @@ Medium humanoid (goblinoid), chaotic evil
 **Challenge** 1 (200 XP)
 
 **Brute**: A melee weapon deals one extra die of its damage when the
-bugbear hits with it (included in the attack). **Surprise Attack**: If
+bugbear hits with it (included in the attack).
+
+**Surprise Attack**: If
 the bugbear surprises a creature and hits it with an attack during the
 first round of combat, the target takes an extra 7 (2d6) damage from the
 attack.

@@ -33,6 +33,8 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Ram**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
-*Hit*: 6 (1d6 + 3) bludgeoning damage. **Hooves**: *Melee Weapon
+*Hit*: 6 (1d6 + 3) bludgeoning damage.
+
+**Hooves**: *Melee Weapon
 Attack*: +5 to hit, reach 5 ft., one prone creature. *Hit*: 8 (2d4 + 3)
 bludgeoning damage.

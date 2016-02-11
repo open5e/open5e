@@ -30,7 +30,9 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The merrow makes two attacks: one with its bite and one
-with its claws or harpoon. **Bite**: *Melee Weapon Attack*: +6 to hit,
+with its claws or harpoon.
+
+**Bite**: *Melee Weapon Attack*: +6 to hit,
 reach 5 ft., one target. *Hit*: 8 (1d8 + 4) piercing damage.
 
 **Claws**:

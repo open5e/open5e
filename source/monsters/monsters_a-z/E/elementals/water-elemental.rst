@@ -34,7 +34,9 @@ poisoned, prone, restrained, unconscious
 
 **Water Form**: The elemental can enter a hostile creature's space and
 stop there. It can move through a space as narrow as 1 inch wide without
-squeezing. **Freeze**: If the elemental takes cold damage, it partially
+squeezing.
+
+**Freeze**: If the elemental takes cold damage, it partially
 freezes; its speed is reduced by 20 feet until the end of its next turn.
 
 Actions

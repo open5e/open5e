@@ -26,7 +26,9 @@ Medium beast, unaligned
 
 **Challenge** 1/4 (50 XP)
 
-**Amphibious**: The frog can breathe air and water. **Standing Leap**:
+**Amphibious**: The frog can breathe air and water.
+
+**Standing Leap**:
 The frog's long jump is up to 20 feet and its high jump is up to 10
 feet, with or without a running start.
 
@@ -36,7 +38,9 @@ Actions
 **Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
 *Hit*: 4 (1d6 + 1) piercing damage, and the target is grappled (escape
 DC 11). Until this grapple ends, the target is restrained, and the frog
-can't bite another target. **Swallow**: The frog makes one bite attack
+can't bite another target.
+
+**Swallow**: The frog makes one bite attack
 against a Small or smaller target it is grappling. If the attack hits,
 the target is swallowed, and the grapple ends. The swallowed target is
 blinded and restrained, it has total cover against attacks and other

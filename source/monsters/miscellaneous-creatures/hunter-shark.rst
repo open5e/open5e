@@ -26,7 +26,9 @@ Large beast, unaligned
 
 **Challenge** 2 (450 XP)
 
-**Blood Frenzy. The shark has advantage on melee attack** **Water
+**Blood Frenzy**: The shark has advantage on melee attack.
+
+**Water
 Breathing**: The shark can breathe only underwater.
 
 Actions

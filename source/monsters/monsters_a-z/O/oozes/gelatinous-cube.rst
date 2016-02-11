@@ -36,7 +36,9 @@ cube can take an action to pull a creature or object out of the cube.
 Doing so requires a successful DC 12 Strength check, and the creature
 making the attempt takes 10 (3d6) acid damage. The cube can hold only
 one Large creature or up to four Medium or smaller creatures inside it
-at a time. **Transparent**: Even when the cube is in plain sight, it
+at a time.
+
+**Transparent**: Even when the cube is in plain sight, it
 takes a successful DC 15 Wisdom (Perception) check to spot a cube that
 has neither moved nor attacked. A creature that tries to enter the
 cube's space while unaware of the cube is surprised by the cube.

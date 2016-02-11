@@ -37,7 +37,9 @@ nonmagical attacks that aren't silvered
 darkvision.
 
 **Magic Resistance**: The devil has advantage on saving
-throws against spells and other magical effects. **Steadfast**: The
+throws against spells and other magical effects.
+
+**Steadfast**: The
 devil can't be frightened while it can see an allied creature within 30
 feet of it.
 

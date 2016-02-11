@@ -34,7 +34,9 @@ and stone. While doing so, the xorn doesn't disturb the material it
 moves through.
 
 **Stone Camouflage**: The xorn has advantage on Dexterity
-(Stealth) checks made to hide in rocky terrain. **Treasure Sense**: The
+(Stealth) checks made to hide in rocky terrain.
+
+**Treasure Sense**: The
 xorn can pinpoint, by scent, the location of precious metals and stones,
 such as coins and gems, within 60 feet of it.
 
