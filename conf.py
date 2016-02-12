@@ -45,13 +45,13 @@ source_suffix = '.rst'
 #source_encoding = 'utf-8-sig'
 
 rst_prolog = """
-.. role:: has-errata 
+.. role:: has-errata
     :class: has-errata
-    
+
 .. role:: has-official
     :class: has-official
-    
-.. role:: has-unofficial 
+
+.. role:: has-unofficial
     :class: has-unofficial
 """
 
@@ -295,3 +295,46 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+# -- Options for ePub output -------------------------------------------
+
+epub_title = u'Open 5E SRD'
+epub_author = u'Ean Moody, Max Rothman, Jason McAlpin, Violet Kirk'
+# epub_publisher = u'...'
+epub_copyright = u'2016'
+
+epub_theme = 'epub'
+epub_theme_options = {
+    "footer": "false",
+    "relbar1": "false"
+}
+
+# The scheme of the identifier. Typical schemes are ISBN or URL.
+epub_scheme = 'URL'
+
+# The unique identifier of the text. This can be a ISBN number
+# or the project homepage.
+epub_identifier = 'www.open5e.com'
+
+# A unique identification for the text.
+# epub_uid = ''
+
+# A tuple containing the cover image and cover page html template filenames.
+# epub_cover = ("_static/cover.png", "epub-cover.html")
+
+# HTML files that should be inserted before the pages created by sphinx.
+# The format is a list of tuples containing the path and title.
+# epub_pre_files = []
+
+# HTML files shat should be inserted after the pages created by sphinx.
+# The format is a list of tuples containing the path and title.
+# epub_post_files = []
+
+# A list of files that should not be packed into the epub file.
+epub_exclude_files = ['_static/opensearch.xml', '_static/doctools.js', '_static/jquery.js', '_static/searchtools.js', '_static/underscore.js', '_static/basic.css', 'search.html', '_static/websupport.js']
+
+# The depth of the table of contents in toc.ncx.
+epub_tocdepth = 2
+
+# Allow duplicate toc entries.
+epub_tocdup = False

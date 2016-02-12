@@ -5167,12 +5167,23 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 }
 .rst-content dl dt {
   font-weight: bold;
+  font-weight: bold;
+  display: inline;
+}
+.rst-content dl dt::after {
+  content: ".";
 }
 .rst-content dl p, .rst-content dl table, .rst-content dl ul, .rst-content dl ol {
   margin-bottom: 12px !important;
 }
 .rst-content dl dd {
-  margin: 0 0 12px 24px;
+  display: inline;
+  margin: 0px;
+}
+.rst-content dl dd::after {
+  display: block;
+  content: " ";
+  margin-bottom: 24px;
 }
 .rst-content dl:not(.docutils) {
   margin-bottom: 24px;
