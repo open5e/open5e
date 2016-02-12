@@ -39,19 +39,19 @@ spellcaster. Its spellcasting ability is Wisdom (spell save DC 16, +8 to
 hit with spell attacks), and it needs only verbal components to cast its
 spells. It has the following cleric spells prepared:
 
-**Cantrips (at will)**: :ref:`srd:mending`, :ref:`srd:sacred-flame`, :ref:`srd:thaumaturgy`
+    **Cantrips (at will)**: :ref:`srd:mending`, :ref:`srd:sacred-flame`, :ref:`srd:thaumaturgy`
 
-**1st level (4 slots)**: :ref:`srd:command`, :ref:`srd:cure-wounds`, :ref:`srd:shield-of-faith`
+    **1st level (4 slots)**: :ref:`srd:command`, :ref:`srd:cure-wounds`, :ref:`srd:shield-of-faith`
 
-**2nd level (3 slots)**: :ref:`srd:calm-emotions`, :ref:`srd:hold-person`
+    **2nd level (3 slots)**: :ref:`srd:calm-emotions`, :ref:`srd:hold-person`
 
-**3rd level (3 slots)**: :ref:`srd:bestow-curse`, :ref:`srd:clairvoyance`
+    **3rd level (3 slots)**: :ref:`srd:bestow-curse`, :ref:`srd:clairvoyance`
 
-**4th level (3 slots)**: :ref:`srd:banishment`, :ref:`srd:freedom-of-movement`
+    **4th level (3 slots)**: :ref:`srd:banishment`, :ref:`srd:freedom-of-movement`
 
-**5th level (2 slots)**: :ref:`srd:flame-strike`, :ref:`srd:geas`
+    **5th level (2 slots)**: :ref:`srd:flame-strike`, :ref:`srd:geas`
 
-**6th level (1 slot)**: :ref:`srd:true-seeing`
+    **6th level (1 slot)**: :ref:`srd:true-seeing`
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

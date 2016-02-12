@@ -47,23 +47,19 @@ DC 18, +10 to hit with spell attacks). It requires no material
 components to cast its spells. The sphinx has the following cleric
 spells prepared:
 
-**Cantrips (at will)**: :ref:`srd:sacred-flame`, :ref:`srd:spare-the-dying`, :ref:`srd:thaumaturgy`
+    **Cantrips (at will)**: :ref:`srd:sacred-flame`, :ref:`srd:spare-the-dying`, :ref:`srd:thaumaturgy`
 
-**1st level (4 slots)**: :ref:`srd:command`, :ref:`srd:detect-evil-and-good`, :ref:`srd:detect-magic`
+    **1st level (4 slots)**: :ref:`srd:command`, :ref:`srd:detect-evil-and-good`, :ref:`srd:detect-magic`
 
-**2nd level (3 slots)**: :ref:`srd:lesser-restoration`,
-:ref:`srd:zone-of-truth`
+    **2nd level (3 slots)**: :ref:`srd:lesser-restoration`, :ref:`srd:zone-of-truth`
 
-**3rd level (3 slots):** :ref:`srd:dispel-magic`, :ref:`srd:tongues`
+    **3rd level (3 slots):** :ref:`srd:dispel-magic`, :ref:`srd:tongues`
 
-**4th
-level (3 slots):** :ref:`srd:banishment`, :ref:`srd:freedom-of-movement`
+    **4th level (3 slots):** :ref:`srd:banishment`, :ref:`srd:freedom-of-movement`
 
-**5th level (2
-slots):** :ref:`srd:flame-strike`, :ref:`srd:greater-restoration`
+    **5th level (2 slots):** :ref:`srd:flame-strike`, :ref:`srd:greater-restoration`
 
-**6th level (1 slot):**
-:ref:`srd:heroes-feast`
+    **6th level (1 slot):** :ref:`srd:heroes-feast`
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
