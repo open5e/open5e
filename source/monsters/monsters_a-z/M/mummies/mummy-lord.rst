@@ -5,7 +5,6 @@ Mummy Lord
 ==========
 
 Abilities
-Combat
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Medium undead, lawful evil

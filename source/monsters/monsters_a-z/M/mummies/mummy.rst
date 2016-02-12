@@ -6,6 +6,9 @@ Mummy
 
 Medium undead, lawful evil
 
+Features
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Armor Class
   11 (natural armor)
 
