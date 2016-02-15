@@ -18,7 +18,6 @@ Huge plant, chaotic good
 | 23 (+6)   | 8 (-1)    | 21 (+5)   | 12 (+1)  | 16 (+3)   | 12 (+1)  |
 +-----------+-----------+-----------+----------+-----------+----------+
 
-
 **Damage Resistances** bludgeoning, piercing
 
 **Damage Vulnerabilities** fire
