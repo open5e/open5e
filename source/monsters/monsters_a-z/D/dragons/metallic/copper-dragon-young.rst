@@ -6,7 +6,6 @@ Copper Dragon, Young
 
 Large dragon, chaotic good
 
-
 **Armor Class** 17 (natural armor)
 
 **Hit Points** 119 (14d10 + 42)

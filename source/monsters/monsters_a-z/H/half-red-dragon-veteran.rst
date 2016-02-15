@@ -15,7 +15,7 @@ Medium humanoid (human), any alignment
 +----------+-----------+-----------+-----------+-----------+-----------+
 | STR      | DEX       | CON       | INT       | WIS       | CHA       |
 +==========+===========+===========+===========+===========+===========+
-| 1 (+3)   | 13 (+1)   | 14 (+2)   | 10 (+0)   | 11 (+0)   | 10 (+0)   |
+| 16 (+3)  | 13 (+1)   | 14 (+2)   | 10 (+0)   | 11 (+0)   | 10 (+0)   |
 +----------+-----------+-----------+-----------+-----------+-----------+
 
 **Skills** Athletics +5, Perception +2
@@ -34,7 +34,7 @@ Actions
 **Multiattack**: The veteran makes two longsword attacks. If it has a
 shortsword drawn, it can also make a shortsword attack.
 
-**Longsword**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target. 
+**Longsword**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
 *Hit*: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two
 hands.
 

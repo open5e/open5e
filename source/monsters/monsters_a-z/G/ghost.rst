@@ -6,7 +6,6 @@ Ghost
 
 Medium undead, any alignment
 
-
 **Armor Class** 11
 
 **Hit Points** 45 (10d8)
