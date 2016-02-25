@@ -29,6 +29,8 @@ deploy:
   # Only deploy the html/css/js we build
   local-dir: build/html
 
+  cache_control: "max-age=21600"
+
   on:
     # Don't deploy from forks
     repo: eepMoody/open5e
