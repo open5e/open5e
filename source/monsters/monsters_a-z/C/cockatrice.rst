@@ -4,6 +4,14 @@
 Cockatrice
 ----------
 
+.. figure:: /_images/Cockatrice.png
+    :figclass: image-right
+    :target: /_images/Cockatrice.png
+
+    © 2016 Violet Kirk
+
+
+
 Small monstrosity, unaligned
 
 **Armor Class** 11

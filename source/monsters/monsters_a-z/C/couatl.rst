@@ -4,6 +4,12 @@
 Couatl
 ------
 
+.. figure:: /_images/Couatl.png
+    :figclass: image-right
+    :target: /_images/Couatl.png
+
+    © 2016 Violet Kirk
+
 Medium celestial, lawful good
 
 **Armor Class** 19 (natural armor)
