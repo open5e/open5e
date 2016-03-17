@@ -4,6 +4,12 @@
 Hezrou
 ------
 
+.. figure:: /_images/Demon_Hezrou.png
+    :figclass: image-right
+    :target: /_images/Demon_Hezrou.png
+
+    © 2016 Violet Kirk
+
 Large fiend (demon), chaotic evil
 
 **Armor Class** 16 (natural armor)
