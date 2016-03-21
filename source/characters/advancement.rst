@@ -103,7 +103,7 @@ a single-class character of the same level, you'll sacrifice some focus
 in exchange for versatility.
 
 Prerequisites
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 To qualify for a new class, you must meet the ability score
 prerequisites for both your current class and your new one, as shown in
@@ -115,7 +115,7 @@ class, having a natural aptitude that is reflected by higher-
 than-average ability scores.
 
 Multiclassing Prerequisites
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------+----------------------------------+
 |   Class        |   Ability Score Minimum          |
@@ -146,7 +146,7 @@ Multiclassing Prerequisites
 +----------------+----------------------------------+
 
 Experience Points
-^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~
 
 The experience point cost to gain a level is always based on your total
 character level, as shown in the Character Advancement table, not your
@@ -155,7 +155,7 @@ must gain enough XP to reach 8th level before you can take your second
 level as a fighter or your seventh level as a cleric.
 
 Hit Points and Hit Dice
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 You gain the hit points from your new class as described for levels
 after 1st. You gain the 1st-level hit points for a class only when you
@@ -170,7 +170,7 @@ separately. If you are a paladin 5/cleric 5, for example, you have five
 d10 Hit Dice and five d8 Hit Dice.
 
 Proficiency Bonus
-^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 Your proficiency bonus is always based on your total character level, as
 shown in the Character Advancement table in chapter 1, not your level in
@@ -178,14 +178,14 @@ a particular class. For example, if you are a fighter 3/rogue 2, you
 have the proficiency bonus of a 5th- level character, which is +3.
 
 Proficiencies
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 When you gain your first level in a class other than your initial class,
 you gain only some of new class's starting proficiencies, as shown in
 the Multiclassing Proficiencies table.
 
 Multiclassing Proficiencies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +------------------+--------------------------------------------------------------------------------------------------------------+
 |    Class         | Proficiencies Gained                                                                                         |
@@ -214,7 +214,7 @@ Multiclassing Proficiencies
 +------------------+--------------------------------------------------------------------------------------------------------------+
 
 Class Features
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 When you gain a new level in a class, you get its features for that
 level. You don't, however, receive the class's starting equipment, and a
@@ -222,7 +222,7 @@ few features have additional rules when you're multiclassing: Channel
 Divinity, Extra Attack, Unarmored Defense, and Spellcasting.
 
 Channel Divinity
-^^^^^^^^^^^^^^^^
+----------------
 
 If you already have the Channel Divinity feature and gain a level in a
 class that also grants the feature, you gain the Channel Divinity
@@ -235,7 +235,7 @@ uses. Whenever you use the feature, you can choose any of the Channel
 Divinity effects available to you from your two classes.
 
 Extra Attack
-^^^^^^^^^^^^
+--------------
 
 If you gain the Extra Attack class feature from more than one class, the
 features don't add together. You can't make more than two attacks with
@@ -244,19 +244,18 @@ Attack does). Similarly, the warlock's eldritch invocation Thirsting
 Blade doesn't give you additional attacks if you also have Extra Attack.
 
 Unarmored Defense
-^^^^^^^^^^^^^^^^^
+------------------
 
 If you already have the Unarmored Defense feature, you can't gain it
 again from another class.
 
 Spellcasting
-^^^^^^^^^^^^
+--------------
 
 Your capacity for spellcasting depends partly on your combined levels in
 all your spellcasting classes and partly on your individual levels in
 those classes. Once you have the Spellcasting feature from more than one
 class, use the rules below. If you multiclass
-
 but have the Spellcasting feature from only one class, you follow the
 rules as described in that class.
 
@@ -297,7 +296,6 @@ However, you don't know any 3rd-level spells, nor do you know any
 cast the spells you do know-and potentially enhance their effects.
 
 **Pact Magic.** If you have both the Spellcasting class
-
 feature and the Pact Magic class feature from the warlock class, you can
 use the spell slots you gain from the Pact Magic feature to cast spells
 you know or have prepared from classes with the Spellcasting class
@@ -305,7 +303,7 @@ feature, and you can use the spell slots you gain from the Spellcasting
 class feature to cast warlock spells you know.
 
 Multiclass Spellcaster: Spell Slots per Spell Level
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 | Lvl. | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
