@@ -222,7 +222,7 @@ few features have additional rules when you're multiclassing: Channel
 Divinity, Extra Attack, Unarmored Defense, and Spellcasting.
 
 Channel Divinity
-~~~~~~~~~~~~~~~~~
+----------------
 
 If you already have the Channel Divinity feature and gain a level in a
 class that also grants the feature, you gain the Channel Divinity
@@ -235,7 +235,7 @@ uses. Whenever you use the feature, you can choose any of the Channel
 Divinity effects available to you from your two classes.
 
 Extra Attack
-~~~~~~~~~~~~~~
+--------------
 
 If you gain the Extra Attack class feature from more than one class, the
 features don't add together. You can't make more than two attacks with
@@ -244,19 +244,18 @@ Attack does). Similarly, the warlock's eldritch invocation Thirsting
 Blade doesn't give you additional attacks if you also have Extra Attack.
 
 Unarmored Defense
-~~~~~~~~~~~~~~~~~~
+------------------
 
 If you already have the Unarmored Defense feature, you can't gain it
 again from another class.
 
 Spellcasting
-~~~~~~~~~~~~~~
+--------------
 
 Your capacity for spellcasting depends partly on your combined levels in
 all your spellcasting classes and partly on your individual levels in
 those classes. Once you have the Spellcasting feature from more than one
 class, use the rules below. If you multiclass
-
 but have the Spellcasting feature from only one class, you follow the
 rules as described in that class.
 
