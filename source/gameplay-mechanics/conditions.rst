@@ -1,7 +1,7 @@
 
-.. _srd:appendix-a: conditions:
+.. _srd:conditions:
 
-Appendix A: Conditions
+Conditions
 ======================
 
 Conditions alter a creature's capabilities in a variety of ways and can
