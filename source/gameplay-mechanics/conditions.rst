@@ -23,7 +23,7 @@ The following definitions specify what happens to a creature while it is
 subjected to a condition.
 
 Blinded
-^^^^^^^
+-------
 
 -  A blinded creature can't see and automatically fails any ability
    check that requires sight.
@@ -32,7 +32,7 @@ Blinded
    attack rolls have disadvantage.
 
 Charmed
-^^^^^^^
+-------
 
 -  A charmed creature can't attack the charmer or target the charmer
    with harmful abilities or magical effects.
@@ -41,13 +41,13 @@ Charmed
    with the creature.
 
 Deafened
-^^^^^^^^
+--------
 
 -  A deafened creature can't hear and automatically fails any ability
    check that requires hearing.
 
 Exhaustion
-''''''''''
+----------
 
 Some special abilities and environmental hazards, such as starvation and
 the long---term effects of freezing or scorching temperatures, can lead
@@ -55,14 +55,16 @@ to a special condition called exhaustion. Exhaustion is measured in six
 levels. An effect can give a creature one or more levels of exhaustion,
 as specified in the effect's description.
 
-**Level Effect**
-
-1. Disadvantage on ability checks
-2. Speed halved
-3. Disadvantage on attack rolls and saving throws
-4. Hit point maximum halved
-5. Speed reduced to 0
-6. Death
+===== ======
+Level Effect
+===== ======
+1.    Disadvantage on ability checks
+2.    Speed halved
+3.    Disadvantage on attack rolls and saving throws
+4.    Hit point maximum halved
+5.    Speed reduced to 0
+6.    Death
+===== ======
 
 If an already exhausted creature suffers another effect that causes
 exhaustion, its current level of exhaustion increases by the amount
@@ -80,7 +82,7 @@ Finishing a long rest reduces a creature's exhaustion level by 1,
 provided that the creature has also ingested some food and drink.
 
 Frightened
-^^^^^^^^^^
+----------
 
 -  A frightened creature has disadvantage on ability checks and attack
    rolls while the source of its fear is within line of sight.
@@ -88,7 +90,7 @@ Frightened
 -  The creature can't willingly move closer to the source of its fear.
 
 Grappled
-^^^^^^^^
+--------
 
 -  A grappled creature's speed becomes 0, and it can't benefit from any
    bonus to its speed.
@@ -101,12 +103,12 @@ Grappled
    creature is hurled away by the :ref:`srd:thunderwave` spell.
 
 Incapacitated
-^^^^^^^^^^^^^
+-------------
 
 -  An incapacitated creature can't take actions or reactions.
 
 Invisible
-^^^^^^^^^
+---------
 
 -  An invisible creature is impossible to see without the aid of magic
    or a special sense. For the purpose of hiding, the creature is
@@ -117,7 +119,7 @@ Invisible
    creature's attack rolls have advantage.
 
 Paralyzed
-^^^^^^^^^
+---------
 
 -  A paralyzed creature is incapacitated (see the condition) and can't
    move or speak.
@@ -131,7 +133,7 @@ Paralyzed
    is within 5 feet of the creature.
 
 Petrified
-^^^^^^^^^
+---------
 
 -  A petrified creature is transformed, along with any nonmagical object
    it is wearing or carrying, into a solid inanimate substance (usually
@@ -151,13 +153,13 @@ Petrified
    disease already in its system is suspended, not neutralized.
 
 Poisoned
-^^^^^^^^
+--------
 
 -  A poisoned creature has disadvantage on attack rolls and ability
    checks.
 
 Prone
-^^^^^
+-----
 
 -  A prone creature's only movement option is to crawl, unless it stands
    up and thereby ends the condition.
@@ -169,7 +171,7 @@ Prone
    disadvantage.
 
 Restrained
-^^^^^^^^^^
+----------
 
 -  A restrained creature's speed becomes 0, and it can't benefit from
    any bonus to its speed.
@@ -180,7 +182,7 @@ Restrained
 -  The creature has disadvantage on Dexterity saving throws.
 
 Stunned
-^^^^^^^
+-------
 
 -  A stunned creature is incapacitated (see the condition), can't move,
    and can speak only falteringly.
@@ -191,7 +193,7 @@ Stunned
 -  Attack rolls against the creature have advantage.
 
 Unconscious
-^^^^^^^^^^^
+-----------
 
 -  An unconscious creature is incapacitated (see the condition), can't
    move or speak, and is unaware of its surroundings
