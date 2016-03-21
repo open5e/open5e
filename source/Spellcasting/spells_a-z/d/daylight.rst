@@ -15,8 +15,8 @@ Daylight
 
 **Duration:** 1 hour
 
-A 60 foot radius sphere of light spreads out from a point you choose
-within range. The sphere is bright light and sheds dim light for an
+A 60 foot radius :ref:`srd:sphere` of light spreads out from a point you choose
+within range. The :ref:`srd:sphere` is bright light and sheds dim light for an
 additional 60 feet.
 
 If you chose a point on an object you are holding or one that isn't

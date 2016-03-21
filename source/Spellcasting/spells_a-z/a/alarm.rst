@@ -16,7 +16,7 @@ Alarm
 **Duration:** 8 hours
 
 You set an alarm against unwanted intrusion. Choose a door, a window, or
-an area within range that is no larger than a 20 foot cube. Until the
+an area within range that is no larger than a 20 foot :ref:`srd:cube`. Until the
 spell ends, an alarm alerts you whenever a Tiny or larger creature
 touches or enters the warded area. When you cast the spell, you can
 designate creatures that won't set off the alarm. You also choose

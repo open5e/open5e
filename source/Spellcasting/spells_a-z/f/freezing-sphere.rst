@@ -16,7 +16,7 @@ Freezing Sphere
 **Duration:** Instantaneous
 
 A frigid globe of cold energy streaks from your fingertips to a point of
-your choice within range, where it explodes in a 60 foot radius sphere.
+your choice within range, where it explodes in a 60 foot radius :ref:`srd:sphere`.
 Each creature within the area must make a Constitution saving throw. On
 a failed save, a creature takes 10d6 cold damage. On a successful save,
 it takes half as much damage.

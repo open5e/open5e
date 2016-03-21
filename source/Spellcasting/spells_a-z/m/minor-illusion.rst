@@ -26,7 +26,7 @@ throughout the duration, or you can make discrete sounds at different
 times before the spell ends.
 
 If you create an image of an object---such as a chair, muddy footprints,
-or a small chest---it must be no larger than a 5 foot cube. The image
+or a small chest---it must be no larger than a 5 foot :ref:`srd:cube`. The image
 can't create sound, light, smell, or any other sensory effect. Physical
 interaction with the image reveals it to be an illusion, because things
 can pass through it.

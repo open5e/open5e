@@ -44,10 +44,10 @@ also specify creatures that don't trigger the glyph, such as those who
 say a certain password.
 
 When you inscribe the glyph, choose one of the options below for its
-effect. Once triggered, the glyph glows, filling a 60 foot radius sphere
+effect. Once triggered, the glyph glows, filling a 60 foot radius :ref:`srd:sphere`
 with dim light for 10 minutes, after which time the spell ends. Each
-creature in the sphere when the glyph activates is targeted by its
-effect, as is a creature that enters the sphere for the first time on a
+creature in the :ref:`srd:sphere` when the glyph activates is targeted by its
+effect, as is a creature that enters the :ref:`srd:sphere` for the first time on a
 turn or ends its turn there.
 
 **Death.** Each target must make a Constitution saving throw, taking

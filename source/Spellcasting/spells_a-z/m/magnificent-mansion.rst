@@ -29,7 +29,7 @@ Beyond the portal is a magnificent foyer with numerous chambers beyond.
 The atmosphere is clean, fresh, and warm.
 
 You can create any floor plan you like, but the space can't exceed 50
-cubes, each cube being 10 feet on each side. The place is furnished and
+:ref:`cubes <srd:cube>`, each :ref:`srd:cube` being 10 feet on each side. The place is furnished and
 decorated as you choose. It contains sufficient food to serve a nine
 course banquet for up to 100 people. A staff of 100 near transparent
 servants attends all who enter. You decide the visual appearance of

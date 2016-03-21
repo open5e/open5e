@@ -16,9 +16,9 @@ and a smear of fat)
 
 **Duration:** Concentration, up to 10 minutes
 
-Swarming, biting locusts fill a 20 foot radius sphere centered on a
-point you choose within range. The sphere spreads around corners. The
-sphere remains for the duration, and its area is lightly obscured. The
+Swarming, biting locusts fill a 20 foot radius :ref:`srd:sphere` centered on a
+point you choose within range. The :ref:`srd:sphere` spreads around corners. The
+:ref:`srd:sphere` remains for the duration, and its area is lightly obscured. The
 sphere's area is difficult terrain.
 
 When the area appears, each creature in it must make a Constitution

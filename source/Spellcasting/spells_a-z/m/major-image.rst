@@ -16,7 +16,7 @@ Major Image
 **Duration:** Concentration, up to 10 minutes
 
 You create the image of an object, a creature, or some other visible
-phenomenon that is no larger than a 20 foot cube. The image appears at a
+phenomenon that is no larger than a 20 foot :ref:`srd:cube`. The image appears at a
 spot that you can see within range and lasts for the duration. It seems
 completely real, including sounds, smells, and temperature appropriate
 to the thing depicted. You can't create sufficient heat or cold to cause

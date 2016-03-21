@@ -17,7 +17,7 @@ Weird
 
 Drawing on the deepest fears of a group of creatures, you create
 illusory creatures in their minds, visible only to them. Each creature
-in a 30 foot radius sphere centered on a point of your choice within
+in a 30 foot radius :ref:`srd:sphere` centered on a point of your choice within
 range must make a Wisdom saving throw. On a failed save, a creature
 becomes frightened for the duration. The illusion calls on the
 creature's deepest fears, manifesting its worst nightmares as an

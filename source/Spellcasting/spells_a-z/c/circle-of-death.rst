@@ -16,7 +16,7 @@ least 500 gp)
 
 **Duration:** Instantaneous
 
-A sphere of negative energy ripples out in a 60 foot radius sphere from
+A :ref:`srd:sphere` of negative energy ripples out in a 60 foot radius :ref:`srd:sphere` from
 a point within range. Each creature in that area must make a
 Constitution saving throw. A target takes 8d6 necrotic damage on a
 failed save, or half as much damage on a successful one.

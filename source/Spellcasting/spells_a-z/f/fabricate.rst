@@ -20,11 +20,11 @@ example, you can fabricate a wooden bridge from a clump of trees, a rope
 from a patch of hemp, and clothes from flax or wool.
 
 Choose raw materials that you can see within range. You can fabricate a
-Large or smaller object (contained within a 10 foot cube, or eight
-connected 5 foot cubes), given a sufficient quantity of raw material. If
+Large or smaller object (contained within a 10 foot :ref:`srd:cube`, or eight
+connected 5 foot :ref:`cubes <srd:cube>`), given a sufficient quantity of raw material. If
 you are working with metal, stone, or another mineral substance,
 however, the fabricated object can be no larger than Medium (contained
-within a single 5 foot cube). The quality of objects made by the spell
+within a single 5 foot :ref:`srd:cube`). The quality of objects made by the spell
 is commensurate with the quality of the raw materials.
 
 Creatures or magic items can't be created or transmuted by this spell.

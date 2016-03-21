@@ -9,7 +9,7 @@ Tiny Hut
 
 **Casting Time:** 1 minute
 
-**Range:** Self (10 foot radius hemisphere)
+**Range:** Self (10 foot radius :ref:`hemisphere <srd:sphere>`)
 
 **Components:** V, S, M (a small crystal bead)
 

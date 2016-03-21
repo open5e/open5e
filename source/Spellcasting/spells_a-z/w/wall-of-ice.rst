@@ -16,7 +16,7 @@ Wall of Ice
 **Duration:** Concentration, up to 10 minutes
 
 You create a wall of ice on a solid surface within range. You can form
-it into a hemispherical dome or a sphere with a radius of up to 10 feet,
+it into a hemispherical dome or a :ref:`srd:sphere` with a radius of up to 10 feet,
 or you can shape a flat surface made up of ten 10 foot square panels.
 Each panel must be contiguous with another panel. In any form, the wall
 is 1 foot thick and lasts for the duration.

@@ -17,7 +17,7 @@ sulfur and phosphorus for fire, or water and sand for water)
 **Duration:** Concentration, up to 1 hour
 
 You call forth an elemental servant. Choose an area of air, earth, fire,
-or water that fills a 10 foot cube within range. An elemental of
+or water that fills a 10 foot :ref:`srd:cube` within range. An elemental of
 challenge rating 5 or lower appropriate to the area you chose appears in
 an unoccupied space within 10 feet of it. For example, a fire elemental
 emerges from a bonfire, and an earth elemental rises up from the ground.

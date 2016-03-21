@@ -17,7 +17,7 @@ filled with phosphorescent material)
 **Duration:** Concentration, up to 1 minute
 
 You create a twisting pattern of colors that weaves through the air
-inside a 30 foot cube within range. The pattern appears for a moment and
+inside a 30 foot :ref:`srd:cube` within range. The pattern appears for a moment and
 vanishes. Each creature in the area who sees the pattern must make a
 Wisdom saving throw. On a failed save, the creature becomes charmed for
 the duration. While charmed by this spell, the creature is incapacitated
