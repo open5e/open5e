@@ -21,9 +21,9 @@ range. Each creature that can hear you must make a Charisma saving
 throw. On a failed save, a creature suffers an effect based on its
 current hit points:
 
--  50 hit points or fewer: deafened for 1 minute
--  40 hit points or fewer: deafened and blinded for 10 minutes
--  30 hit points or fewer: blinded, deafened, and stunned for 1 hour
+-  50 hit points or fewer: :ref:`srd:deafened` for 1 minute
+-  40 hit points or fewer: :ref:`srd:deafened` and :ref:`srd:blinded` for 10 minutes
+-  30 hit points or fewer: :ref:`srd:blinded`, :ref:`srd:deafened`, and :ref:`srd:stunned` for 1 hour
 -  20 hit points or fewer: killed instantly
 
 Regardless of its current hit points, a celestial, an elemental, a fey,

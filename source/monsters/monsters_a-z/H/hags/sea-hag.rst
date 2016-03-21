@@ -29,7 +29,7 @@ Medium fey, chaotic evil
 **Horrific
 Appearance**: Any humanoid that starts its turn within 30 feet of the
 hag and can see the hag's true form must make a DC 11 Wisdom saving
-throw. On a failed save, the creature is frightened for 1 minute. A
+throw. On a failed save, the creature is :ref:`srd:frightened` for 1 minute. A
 creature can repeat the saving throw at the end of each of its turns,
 with disadvantage if the hag is within line of sight, ending the effect
 on itself on a success. If a creature's saving throw is successful or
@@ -47,7 +47,7 @@ Actions
 *Hit*: 10 (2d6 + 3) slashing damage.
 
 **Death Glare**: The hag targets
-one frightened creature she can see within 30 feet of her. If the target
+one :ref:`srd:frightened` creature she can see within 30 feet of her. If the target
 can see the hag, it must succeed on a DC 11 Wisdom saving throw against
 this magic or drop to 0 hit points.
 

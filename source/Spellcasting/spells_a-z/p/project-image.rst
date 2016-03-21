@@ -29,7 +29,7 @@ mimics your mannerisms perfectly.
 You can see through its eyes and hear through its ears as if you were in
 its space. On your turn as a bonus action, you can switch from using its
 senses to using your own, or back again. While you are using its senses,
-you are blinded and deafened in regard to your own surroundings.
+you are :ref:`srd:blinded` and :ref:`srd:deafened` in regard to your own surroundings.
 
 Physical interaction with the image reveals it to be an illusion,
 because things can pass through it. A creature that uses its action to

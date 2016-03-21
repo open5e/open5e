@@ -23,7 +23,7 @@ Medium fiend, neutral evil
 **Damage Resistances** cold, fire; bludgeoning, piercing, and slashing
 from nonmagical attacks not made with silvered weapons
 
-**Condition Immunities** charmed
+**Condition Immunities** :ref:`srd:charmed`
 
 **Senses** darkvision 120 ft., passive Perception 16;
 

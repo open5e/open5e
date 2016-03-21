@@ -25,7 +25,7 @@ nonmagical attacks that aren't silvered
 
 **Damage Immunities** cold, fire, poison
 
-**Condition Immunities** poisoned
+**Condition Immunities** :ref:`srd:poisoned`
 
 **Senses** blindsight 60 ft., darkvision 120 ft., passive Perception 12
 
@@ -63,11 +63,11 @@ The wall is 1 foot thick and up to 30 feet long and 10 feet high, or
 it's a hemispherical dome up to 20 feet in diameter. When the wall
 appears, each creature in its space is pushed out of it by the shortest
 route. The creature chooses which side of the wall to end up on, unless
-the creature is incapacitated. The creature then makes a DC 17 Dexterity
+the creature is :ref:`srd:incapacitated`. The creature then makes a DC 17 Dexterity
 saving throw, taking 35 (10d6) cold damage on a failed save, or half as
 much damage on a successful one.
 
-The wall lasts for 1 minute or until the devil is incapacitated or dies.
+The wall lasts for 1 minute or until the devil is :ref:`srd:incapacitated` or dies.
 The wall can be damaged and breached; each 10-foot section has AC 5, 30
 hit points, vulnerability to fire damage, and immunity to acid, cold,
 necrotic, poison, and psychic damage. If a section is destroyed, it

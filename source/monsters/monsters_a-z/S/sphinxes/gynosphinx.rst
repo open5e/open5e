@@ -25,7 +25,7 @@ nonmagical attacks
 
 **Damage Immunities** psychic
 
-**Condition Immunities** charmed, frightened;
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:frightened`;
 
 **Senses** truesight 120 ft., passive Perception 18;
 

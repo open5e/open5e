@@ -27,7 +27,7 @@ Medium humanoid (elf), neutral evil
 **Challenge** 1/4 (50 XP)
 
 **Fey Ancestry**: The drow has advantage on saving throws against being
-charmed, and magic can't put the drow to sleep.
+:ref:`srd:charmed`, and magic can't put the drow to sleep.
 
 **Innate Spellcasting**:
 The drow's spellcasting ability is Charisma (spell save DC 11). It can
@@ -50,7 +50,7 @@ target. *Hit*: 5 (1d6 + 2) piercing damage.
 **Hand Crossbow**: *Ranged
 Weapon Attack*: +4 to hit, range 30/120 ft., one target. *Hit*: 5 (1d6 +
 2) piercing damage, and the target must succeed on a DC 13 Constitution
-saving throw or be poisoned for 1 hour. If the saving throw fails by 5
-or more, the target is also unconscious while poisoned in this way. The
+saving throw or be :ref:`srd:poisoned` for 1 hour. If the saving throw fails by 5
+or more, the target is also :ref:`srd:unconscious` while :ref:`srd:poisoned` in this way. The
 target wakes up if it takes damage or if another creature takes an
 action to shake it awake.

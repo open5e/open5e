@@ -31,5 +31,5 @@ Actions
 *Hit*: 4 (1d4 + 2) piercing damage, and the target must succeed on a DC
 11 Constitution saving throw or take 10 (3d6) poison damage. If the
 poison damage reduces the target to 0 hit points, the target is stable
-but poisoned for 1 hour, even after regaining hit points, and is
-paralyzed while poisoned in this way.
+but :ref:`srd:poisoned` for 1 hour, even after regaining hit points, and is
+:ref:`srd:paralyzed` while :ref:`srd:poisoned` in this way.

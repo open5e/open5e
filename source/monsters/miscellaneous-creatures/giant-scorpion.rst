@@ -32,7 +32,7 @@ and one with its sting.
 
 **Claw**: *Melee Weapon Attack*: +4 to hit,
 reach 5 ft., one target. *Hit*: 6 (1d8 + 2) bludgeoning damage, and the
-target is grappled (escape DC 12). The scorpion has two claws, each of
+target is :ref:`srd:grappled` (escape DC 12). The scorpion has two claws, each of
 which can grapple only one target.
 
 **Sting**: *Melee Weapon Attack*: +4

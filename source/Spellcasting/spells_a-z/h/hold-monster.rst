@@ -16,7 +16,7 @@ Hold Monster
 **Duration:** Concentration, up to 1 minute
 
 Choose a creature that you can see within range. The target must succeed
-on a Wisdom saving throw or be paralyzed for the duration. This spell
+on a Wisdom saving throw or be :ref:`srd:paralyzed` for the duration. This spell
 has no effect on undead. At the end of each of its turns, the target can
 make another Wisdom saving throw. On a success, the spell ends on the
 target.

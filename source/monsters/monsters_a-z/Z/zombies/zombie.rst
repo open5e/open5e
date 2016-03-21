@@ -22,7 +22,7 @@ Medium undead, neutral evil
 
 **Damage Immunities** poison
 
-**Condition Immunities** poisoned
+**Condition Immunities** :ref:`srd:poisoned`
 
 **Senses** darkvision 60 ft., passive Perception 8
 

@@ -62,12 +62,12 @@ cylinder of swirling air magically forms on a point the djinni can see
 within 120 feet of it. The whirlwind lasts as long as the djinni
 maintains concentration (as if concentrating on a spell). Any creature
 but the djinni that enters the whirlwind must succeed on a DC 18
-Strength saving throw or be restrained by it. The djinni can move the
-whirlwind up to 60 feet as an action, and creatures restrained by the
+Strength saving throw or be :ref:`srd:restrained` by it. The djinni can move the
+whirlwind up to 60 feet as an action, and creatures :ref:`srd:restrained` by the
 whirlwind move with it. The whirlwind ends if the djinni loses sight of
 it.
 
-A creature can use its action to free a creature restrained by the
+A creature can use its action to free a creature :ref:`srd:restrained` by the
 whirlwind, including itself, by succeeding on a DC 18
 Strength check. If the check succeeds, the creature is no longer
-restrained and moves to the nearest space outside the whirlwind.
+:ref:`srd:restrained` and moves to the nearest space outside the whirlwind.

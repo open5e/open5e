@@ -41,7 +41,7 @@ half damage if it fails.
 **Sneak Attack**: Once per turn, the assassin
 deals an extra 14 (4d6) damage when it hits a target with a weapon
 attack and has advantage on the attack roll, or when the target is
-within 5 feet of an ally of the assassin that isn't incapacitated and
+within 5 feet of an ally of the assassin that isn't :ref:`srd:incapacitated` and
 the assassin doesn't have disadvantage on the attack roll.
 
 Actions

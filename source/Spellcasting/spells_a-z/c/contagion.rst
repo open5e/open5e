@@ -31,7 +31,7 @@ apply to it.
 
 **Blinding Sickness.** Pain grips the creature's mind, and its eyes
 turn milky white. The creature has disadvantage on Wisdom checks and
-Wisdom saving throws and is blinded.
+Wisdom saving throws and is :ref:`srd:blinded`.
 
 **Filth Fever.** A raging fever sweeps through the creature's body.
 The creature has disadvantage on Strength checks, Strength saving
@@ -51,5 +51,5 @@ rolls that use Dexterity.
 
 **Slimy Doom.** The creature begins to bleed uncontrollably. The
 creature has disadvantage on Constitution checks and Constitution saving
-throws. In addition, whenever the creature takes damage, it is stunned
+throws. In addition, whenever the creature takes damage, it is :ref:`srd:stunned`
 until the end of its next turn.

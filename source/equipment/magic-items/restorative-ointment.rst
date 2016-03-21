@@ -13,5 +13,5 @@ pound.
 
 As an action, one dose of the ointment can be swallowed or applied to
 the skin. The creature that receives it regains 2d8 + 2 hit points,
-ceases to be poisoned, and is cured of any disease.
+ceases to be :ref:`srd:poisoned`, and is cured of any disease.
 

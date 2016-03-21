@@ -20,8 +20,8 @@ Medium swarm of Tiny beasts, unaligned
 
 **Damage Resistances** bludgeoning, piercing, slashing
 
-**Condition Immunities** charmed, frightened, grappled, paralyzed,
-petrified, prone, restrained, stunned
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:frightened`, :ref:`srd:grappled`, :ref:`srd:paralyzed`,
+:ref:`srd:petrified`, :ref:`srd:prone`, :ref:`srd:restrained`, :ref:`srd:stunned`
 
 **Senses** blindsight 60 ft., passive Perception 11
 
@@ -29,7 +29,7 @@ petrified, prone, restrained, stunned
 
 **Challenge** 1/4 (50 XP)
 
-**Echolocation**: The swarm can't use its blindsight while deafened.
+**Echolocation**: The swarm can't use its blindsight while :ref:`srd:deafened`.
 
 **Keen Hearing**: The swarm has advantage on Wisdom (Perception) checks
 that rely on hearing.

@@ -37,8 +37,8 @@ Actions
 
 **Tentacles**: *Melee Weapon Attack*: +5 to hit, reach 15 ft., one
 target. *Hit*: 10 (2d6 + 3) bludgeoning damage. If the target is a
-creature, it is grappled (escape DC 16). Until this grapple ends, the
-target is restrained, and the octopus can't use its tentacles on another
+creature, it is :ref:`srd:grappled` (escape DC 16). Until this grapple ends, the
+target is :ref:`srd:restrained`, and the octopus can't use its tentacles on another
 target.
 
 **Ink Cloud (Recharges after a Short or Long Rest)**: A 20-

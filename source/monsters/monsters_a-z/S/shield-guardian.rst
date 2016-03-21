@@ -22,8 +22,8 @@ Large construct, unaligned
 
 **Damage Immunities** poison
 
-**Condition Immunities** charmed, exhaustion, frightened, paralyzed,
-poisoned
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:exhaustion`, :ref:`srd:frightened`, :ref:`srd:paralyzed`,
+:ref:`srd:poisoned`
 
 **Languages** understands commands given in any language but can't speak
 

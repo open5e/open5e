@@ -31,7 +31,7 @@ piercing, and slashing from nonmagical attacks
 **Challenge** 4 (1,100 XP)
 
 **Telepathic Bond**: The fiend ignores the range restriction on its
-telepathy when communicating with a creature it has charmed. The two
+telepathy when communicating with a creature it has :ref:`srd:charmed`. The two
 don't even need to be on the same plane of existence.
 
 **Shapechanger**:
@@ -49,17 +49,17 @@ ft., one target. *Hit*: 6 (1d6 + 3) slashing damage.
 
 **Charm**: One
 humanoid the fiend can see within 30 feet of it must succeed on a DC 15
-Wisdom saving throw or be magically charmed for 1 day. The charmed
+Wisdom saving throw or be magically :ref:`srd:charmed` for 1 day. The :ref:`srd:charmed`
 target obeys the fiend's verbal or telepathic commands. If the target
 suffers any harm or receives a suicidal command, it can repeat the
 saving throw, ending the effect on a success. If the target successfully
 saves against the effect, or if the effect on it ends, the target is
 immune to this fiend's Charm for the next 24 hours. The fiend can have
-only one target charmed at a time. If it charms another, the effect on
+only one target :ref:`srd:charmed` at a time. If it charms another, the effect on
 the previous target ends.
 
 **Draining Kiss**: The fiend kisses a creature
-charmed by it or a willing creature. The target must make a DC 15
+:ref:`srd:charmed` by it or a willing creature. The target must make a DC 15
 Constitution saving throw against this magic, taking 32 (5d10 + 5)
 psychic damage on a failed save, or half as much damage on a successful
 one. The target's hit point maximum is reduced by an amount equal to the

@@ -39,9 +39,9 @@ Actions
 jumps at least 15 feet as part of its movement, it can then use this
 action to land on its feet in a space that contains one or more other
 creatures. Each of those creatures must succeed on a DC 16 Strength or
-Dexterity saving throw (target's choice) or be knocked prone and take 14
+Dexterity saving throw (target's choice) or be knocked :ref:`srd:prone` and take 14
 (3d6 + 4) bludgeoning damage plus 14 (3d6 + 4) slashing damage. On a
 successful save, the creature takes only half the damage, isn't knocked
-prone, and is pushed 5 feet out of the bulette's space into an
+:ref:`srd:prone`, and is pushed 5 feet out of the bulette's space into an
 unoccupied space of the creature's choice. If no unoccupied space is
-within range, the creature instead falls prone in the bulette's space.
+within range, the creature instead falls :ref:`srd:prone` in the bulette's space.

@@ -11,8 +11,8 @@ special characteristics described below.
 feet.
 
 **Swarm of Centipedes**: A creature reduced to 0 hit points by a
-swarm of centipedes is stable but poisoned for 1 hour, even after
-regaining hit points, and paralyzed while poisoned in this way.
+swarm of centipedes is stable but :ref:`srd:poisoned` for 1 hour, even after
+regaining hit points, and :ref:`srd:paralyzed` while :ref:`srd:poisoned` in this way.
 
 **Swarm
 of Spiders**: A swarm of spiders has the following additional traits.

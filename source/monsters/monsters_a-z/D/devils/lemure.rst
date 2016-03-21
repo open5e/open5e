@@ -22,7 +22,7 @@ Medium fiend (devil), lawful evil
 
 **Damage Immunities** fire, poison
 
-**Condition Immunities** charmed, frightened, poisoned
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:frightened`, :ref:`srd:poisoned`
 
 **Senses**: darkvision 120 ft., passive Perception 10
 

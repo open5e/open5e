@@ -34,7 +34,7 @@ Medium fiend, lawful evil
 **Pack Tactics**: The
 hound has advantage on an attack roll against a creature if at least one
 of the hound's allies is within 5 feet of the creature and the ally
-isn't incapacitated.
+isn't :ref:`srd:incapacitated`.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

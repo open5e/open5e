@@ -22,7 +22,7 @@ Large monstrosity, chaotic evil
 
 **Damage Immunities** poison
 
-**Condition Immunities** charmed, poisoned;
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:poisoned`;
 
 **Senses** darkvision 60 ft., passive Perception 12;
 

@@ -15,7 +15,9 @@ Falling
 A fall from a great height is one of the most common hazards facing an
 adventurer. At the end of a fall, a creature takes 1d6 bludgeoning
 damage for every 10 feet it fell, to a maximum of 20d6. The creature
-lands prone, unless it avoids taking damage from the fall.
+lands :ref:`srd:prone`, unless it avoids taking damage from the fall.
+
+.. _srd:suffocating:
 
 Suffocating
 ~~~~~~~~~~~
@@ -48,7 +50,7 @@ sight.
 
 A **heavily obscured** area---such as darkness, opaque fog, or dense
 foliage---blocks vision entirely. A creature effectively suffers from the
-blinded condition (see appendix A) when trying to see something in that
+:ref:`srd:blinded` condition when trying to see something in that
 area.
 
 The presence or absence of light in an environment creates three
@@ -91,7 +93,7 @@ Truesight
 ^^^^^^^^^
 
 A creature with truesight can, out to a specific range, see in normal
-and magical darkness, see invisible creatures and objects, automatically
+and magical darkness, see :ref:`srd:invisible` creatures and objects, automatically
 detect visual illusions and succeed on saving throws against them, and
 perceives the original form of a shapechanger or a creature that is
 transformed by magic. Furthermore, the creature can see into the
@@ -100,8 +102,7 @@ Ethereal Plane.
 Food and Water
 ~~~~~~~~~~~~~~
 
-Characters who don't eat or drink suffer the effects of exhaustion (see
-appendix A). Exhaustion caused by lack of food or water can't be removed
+Characters who don't eat or drink suffer the effects of :ref:`srd:exhaustion`. Exhaustion caused by lack of food or water can't be removed
 until the character eats and drinks the full required amount.
 
 Food
@@ -113,7 +114,7 @@ day counts as half a day without food.
 
 A character can go without food for a number of days equal to 3 + his or
 her Constitution modifier (minimum 1). At the end of each day beyond
-that limit, a character automatically suffers one level of exhaustion.
+that limit, a character automatically suffers one level of :ref:`srd:exhaustion`.
 
 A normal day of eating resets the count of days without food to zero.
 
@@ -123,11 +124,11 @@ Water
 A character needs one gallon of water per day, or two gallons per day if
 the weather is hot. A character who drinks only half that much water
 must succeed on a DC 15 Constitution saving throw or suffer one level of
-exhaustion at the end of the day. A character with access to even less
-water automatically suffers one level of exhaustion at the end of the
+:ref:`srd:exhaustion` at the end of the day. A character with access to even less
+water automatically suffers one level of :ref:`srd:exhaustion` at the end of the
 day.
 
-If the character already has one or more levels of exhaustion, the
+If the character already has one or more levels of :ref:`srd:exhaustion`, the
 character takes two levels in either case.
 
 Interacting with Objects

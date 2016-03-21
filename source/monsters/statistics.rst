@@ -288,7 +288,7 @@ Saving Throws
 
 The Saving Throws entry is reserved for creatures that are adept at
 resisting certain kinds of effects. For example, a creature that
-isn't easily charmed or frightened might gain a bonus on its Wisdom
+isn't easily :ref:`srd:charmed` or :ref:`srd:frightened` might gain a bonus on its Wisdom
 saving throws. Most creatures don't have special saving throw
 bonuses, in which case this section is absent.
 
@@ -407,7 +407,7 @@ Truesight
 ^^^^^^^^^
 
 A monster with truesight can, out to a specific range, see in normal and
-magical darkness, see invisible creatures and objects, automatically
+magical darkness, see :ref:`srd:invisible` creatures and objects, automatically
 detect visual illusions and succeed on saving throws against them, and
 perceive the original form of a shapechanger or a creature that is
 transformed by magic. Furthermore, the monster can see into the Ethereal
@@ -437,7 +437,7 @@ end the telepathic contact at any time. The contact is broken as soon as
 the two creatures are no longer within range of each other or if the
 telepathic monster contacts a different creature within range. A
 telepathic monster can initiate or terminate a telepathic conversation
-without using an action, but while the monster is incapacitated, it
+without using an action, but while the monster is :ref:`srd:incapacitated`, it
 can't initiate telepathic contact, and any current contact is
 terminated. A creature within the area of an *antimagic field* or in any other location where magic doesn't function can't send or receive
 telepathic messages.
@@ -473,7 +473,7 @@ grapple prey. When a monster hits with such an attack, it doesn't
 need to make an additional ability check to determine whether the
 grapple succeeds, unless the attack says otherwise.
 
-A creature grappled by the monster can use its action to try to
+A creature :ref:`srd:grappled` by the monster can use its action to try to
 escape. To do so, it must succeed on a Strength (Athletics) or
 Dexterity (Acrobatics) check against the escape DC in the monster's
 stat block. If no escape DC is given, assume the DC is 10 + the

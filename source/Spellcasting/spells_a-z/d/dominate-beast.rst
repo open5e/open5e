@@ -16,11 +16,11 @@ Dominate Beast
 **Duration:** Concentration, up to 1 minute
 
 You attempt to beguile a beast that you can see within range. It must
-succeed on a Wisdom saving throw or be charmed by you for the duration.
+succeed on a Wisdom saving throw or be :ref:`srd:charmed` by you for the duration.
 If you or creatures that are friendly to you are fighting it, it has
 advantage on the saving throw.
 
-While the beast is charmed, you have a telepathic link with it as long
+While the beast is :ref:`srd:charmed`, you have a telepathic link with it as long
 as the two of you are on the same plane of existence. You can use this
 telepathic link to issue commands to the creature while you are
 conscious (no action required), which it does its best to obey. You can

@@ -22,8 +22,8 @@ Medium swarm of Tiny beasts, unaligned
 
 **Damage Resistances** bludgeoning, piercing, slashing
 
-**Condition Immunities** charmed, frightened, grappled, paralyzed,
-petrified, prone, restrained, stunned
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:frightened`, :ref:`srd:grappled`, :ref:`srd:paralyzed`,
+:ref:`srd:petrified`, :ref:`srd:prone`, :ref:`srd:restrained`, :ref:`srd:stunned`
 
 **Senses** passive Perception 15
 

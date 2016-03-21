@@ -36,17 +36,17 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +3 to hit, reach 5 ft., one target.
-*Hit*: 4 (1d6 + 1) piercing damage, and the target is grappled (escape
-DC 11). Until this grapple ends, the target is restrained, and the frog
+*Hit*: 4 (1d6 + 1) piercing damage, and the target is :ref:`srd:grappled` (escape
+DC 11). Until this grapple ends, the target is :ref:`srd:restrained`, and the frog
 can't bite another target.
 
 **Swallow**: The frog makes one bite attack
 against a Small or smaller target it is grappling. If the attack hits,
 the target is swallowed, and the grapple ends. The swallowed target is
-blinded and restrained, it has total cover against attacks and other
+:ref:`srd:blinded` and :ref:`srd:restrained`, it has total cover against attacks and other
 effects outside the frog, and it takes 5 (2d4) acid damage at the start
 of each of the frog's turns. The frog can have only one target swallowed
 at a time.
 
-If the frog dies, a swallowed creature is no longer restrained by it and
-can escape from the corpse using 5 feet of movement, exiting prone.
+If the frog dies, a swallowed creature is no longer :ref:`srd:restrained` by it and
+can escape from the corpse using 5 feet of movement, exiting :ref:`srd:prone`.

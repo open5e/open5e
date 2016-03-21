@@ -47,6 +47,6 @@ successful one.
 
 **Sleep Breath**: The dragon exhales sleep gas in a
 15-foot cone. Each creature in that area must succeed on a DC 11
-Constitution saving throw or fall unconscious for 1 minute. This effect
+Constitution saving throw or fall :ref:`srd:unconscious` for 1 minute. This effect
 ends for a creature if the creature takes damage or someone uses an
 action to wake it.

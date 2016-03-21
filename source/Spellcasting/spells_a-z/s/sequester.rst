@@ -18,7 +18,7 @@ and sapphire dust worth at least 5,000 gp, which the spell consumes)
 
 By means of this spell, a willing creature or an object can be hidden
 away, safe from detection for the duration. When you cast the spell and
-touch the target, it becomes invisible and can't be targeted by
+touch the target, it becomes :ref:`srd:invisible` and can't be targeted by
 divination spells or perceived through scrying sensors created by
 divination spells.
 

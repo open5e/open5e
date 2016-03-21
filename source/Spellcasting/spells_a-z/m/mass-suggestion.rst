@@ -19,7 +19,7 @@ a drop of sweet oil)
 You suggest a course of activity (limited to a sentence or two) and
 magically influence up to twelve creatures of your choice that you can
 see within range and that can hear and understand you. Creatures that
-can't be charmed are immune to this effect. The suggestion must be
+can't be :ref:`srd:charmed` are immune to this effect. The suggestion must be
 worded in such a manner as to make the course of action sound
 reasonable. Asking the creature to stab itself, throw itself onto a
 spear, immolate itself, or do some other obviously harmful act

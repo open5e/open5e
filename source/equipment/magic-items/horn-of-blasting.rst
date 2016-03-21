@@ -11,8 +11,8 @@ You can use an action to speak the horn's command word and then blow the
 horn, which emits a thunderous blast in a 30-foot cone that is audible
 600 feet away. Each creature in the cone must make
 a DC 15 Constitution saving throw. On a failed save, a creature takes
-5d6 thunder damage and is deafened for 1 minute. On a successful save, a
-creature takes half as much damage and isn't deafened. Creatures and
+5d6 thunder damage and is :ref:`srd:deafened` for 1 minute. On a successful save, a
+creature takes half as much damage and isn't :ref:`srd:deafened`. Creatures and
 objects made of glass or crystal have disadvantage on the saving throw
 and take 10d6 thunder damage instead of 5d6.
 

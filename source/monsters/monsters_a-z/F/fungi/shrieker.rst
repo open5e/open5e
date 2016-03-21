@@ -18,7 +18,7 @@ Medium plant, unaligned
 | 1 (-5)   | 1 (-5)   | 10 (+0)   | 1 (-5)   | 3 (-4)   | 1 (-5)   |
 +----------+----------+-----------+----------+----------+----------+
 
-**Condition Immunities** blinded, deafened, frightened
+**Condition Immunities** :ref:`srd:blinded`, :ref:`srd:deafened`, :ref:`srd:frightened`
 
 **Senses** blindsight 30 ft. (blind beyond this radius), passive
 Perception 6

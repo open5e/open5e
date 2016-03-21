@@ -25,7 +25,7 @@ nonmagical attacks not made with silvered weapons
 
 **Damage Immunities** fire, poison
 
-**Condition Immunities** poisoned
+**Condition Immunities** :ref:`srd:poisoned`
 
 **Senses** darkvision 120 ft., passive Perception 13
 

@@ -29,7 +29,7 @@ concentration is broken.
 
 When you cast this spell and at the end of each turn you spend
 concentrating on it, each creature on the ground in the area must make a
-Dexterity saving throw. On a failed save, the creature is knocked prone.
+Dexterity saving throw. On a failed save, the creature is knocked :ref:`srd:prone`.
 
 This spell can have additional effects depending on the terrain in the
 area, as determined by the GM.
@@ -51,8 +51,8 @@ and at the start of each of your turns until the spell ends. If a
 structure drops to 0 hit points, it collapses and potentially damages
 nearby creatures. A creature within half the distance of a structure's
 height must make a Dexterity saving throw. On a failed save, the
-creature takes 5d6 bludgeoning damage, is knocked prone, and is buried
+creature takes 5d6 bludgeoning damage, is knocked :ref:`srd:prone`, and is buried
 in the rubble, requiring a DC 20 Strength (Athletics) check as an action
 to escape. The GM can adjust the DC higher or lower, depending on the
 nature of the rubble. On a successful save, the creature takes half as
-much damage and doesn't fall prone or become buried.
+much damage and doesn't fall :ref:`srd:prone` or become buried.

@@ -50,10 +50,10 @@ Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 22 (4d8 + 4)
 piercing damage.
 
 **Tendril**: *Melee Weapon Attack*: +7 to hit, reach 50
-ft., one creature. *Hit*: The target is grappled (escape DC 15). Until
-the grapple ends, the target is restrained and has disadvantage on
+ft., one creature. *Hit*: The target is :ref:`srd:grappled` (escape DC 15). Until
+the grapple ends, the target is :ref:`srd:restrained` and has disadvantage on
 Strength checks and Strength saving throws, and the roper can't use the
 same tendril on another target.
 
 **Reel**: The roper pulls each creature
-grappled by it up to 25 feet straight toward it.
+:ref:`srd:grappled` by it up to 25 feet straight toward it.

@@ -22,7 +22,7 @@ Small elemental, neutral evil
 
 **Damage Immunities** poison
 
-**Condition Immunities** poisoned
+**Condition Immunities** :ref:`srd:poisoned`
 
 **Senses** darkvision 60 ft., passive Perception 12
 
@@ -32,7 +32,7 @@ Small elemental, neutral evil
 
 **Death Burst**: When the mephit dies, it explodes in a burst of dust.
 Each creature within 5 feet of it must then succeed on a DC 10
-Constitution saving throw or be blinded for 1 minute. A blinded creature
+Constitution saving throw or be :ref:`srd:blinded` for 1 minute. A :ref:`srd:blinded` creature
 can repeat the saving throw on each of its turns, ending the effect on
 itself on a success.
 
@@ -48,6 +48,6 @@ Actions
 
 **Blinding Breath (Recharge 6)**:
 The mephit exhales a 15- foot cone of blinding dust. Each creature in
-that area must succeed on a DC 10 Dexterity saving throw or be blinded
+that area must succeed on a DC 10 Dexterity saving throw or be :ref:`srd:blinded`
 for 1 minute. A creature can repeat the saving throw at the end of each
 of its turns, ending the effect on itself on a success.

@@ -33,7 +33,7 @@ Small monstrosity, unaligned
 **Challenge** 1/2 (100 XP)
 
 **Echolocation**: The darkmantle can't use its blindsight while
-deafened.
+:ref:`srd:deafened`.
 
 **False Appearance**: While the darkmantle remains motionless,
 it is indistinguishable from a cave formation such as a stalactite or
@@ -46,7 +46,7 @@ Actions
 *Hit*: 6 (1d6 + 3) bludgeoning damage, and the darkmantle attaches to
 the target. If the target is Medium or smaller and the darkmantle has
 advantage on the attack roll, it attaches by engulfing the target's
-head, and the target is also blinded and unable to breathe while the
+head, and the target is also :ref:`srd:blinded` and unable to breathe while the
 darkmantle is attached in this way. While attached to the target, the
 darkmantle can attack no other creature except the target but has
 advantage on its attack rolls. The darkmantle's speed also becomes 0, it

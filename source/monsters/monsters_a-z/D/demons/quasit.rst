@@ -25,7 +25,7 @@ slashing from nonmagical attacks
 
 **Damage Immunities** poison
 
-**Condition Immunities** poisoned
+**Condition Immunities** :ref:`srd:poisoned`
 
 **Senses** darkvision 120 ft., passive Perception 10
 
@@ -50,16 +50,16 @@ Actions
 **Claws (Bite in Beast Form)**: *Melee Weapon Attack*: +4 to hit, reach
 5 ft., one target. *Hit*: 5 (1d4 + 3) piercing damage, and the target
 must succeed on a DC 10 Constitution saving throw or take 5 (2d4) poison
-damage and become poisoned for 1 minute. The target can repeat the
+damage and become :ref:`srd:poisoned` for 1 minute. The target can repeat the
 saving throw at the end of each of its turns, ending the effect on
 itself on a success.
 
 **Scare (1/Day)**: One creature of the quasit's
 choice within 20 feet of it must succeed on a DC 10 Wisdom saving throw
-or be frightened for 1 minute. The target can repeat the saving throw at
+or be :ref:`srd:frightened` for 1 minute. The target can repeat the saving throw at
 the end of each of its turns, with disadvantage if the quasit is within
 line of sight, ending the effect on itself on a success.
 
-**Invisibility**: The quasit magically turns invisible until it attacks
+**Invisibility**: The quasit magically turns :ref:`srd:invisible` until it attacks
 or uses Scare, or until its concentration ends (as if concentrating on a
-spell). Any equipment the quasit wears or carries is invisible with it.
+spell). Any equipment the quasit wears or carries is :ref:`srd:invisible` with it.

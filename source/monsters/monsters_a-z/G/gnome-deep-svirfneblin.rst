@@ -48,9 +48,9 @@ Actions
 **War Pick.** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target.
 *Hit:* 6 (1d8 + 2) piercing damage.
 
-**Poisoned Dart.** *Ranged Weapon
+**:ref:`srd:Poisoned` Dart.** *Ranged Weapon
 Attack:* +4 to hit, range 30/120 ft., one creature. *Hit:* 4 (1d4 + 2)
 piercing damage, and the target must succeed on a DC 12 Constitution
-saving throw or be poisoned for 1 minute. The target can repeat the
+saving throw or be :ref:`srd:poisoned` for 1 minute. The target can repeat the
 saving throw at the end of each of its turns, ending the effect on
 itself on a success.

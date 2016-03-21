@@ -20,8 +20,8 @@ Medium construct, unaligned
 
 **Damage Immunities** poison, psychic
 
-**Condition Immunities** blinded, charmed, deafened, exhaustion,
-frightened, paralyzed, petrified, poisoned
+**Condition Immunities** :ref:`srd:blinded`, :ref:`srd:charmed`, :ref:`srd:deafened`, :ref:`srd:exhaustion`,
+:ref:`srd:frightened`, :ref:`srd:paralyzed`, :ref:`srd:petrified`, :ref:`srd:poisoned`
 
 **Senses** blindsight 60 ft. (blind beyond this radius), passive
 Perception 6
@@ -30,10 +30,10 @@ Perception 6
 
 **Challenge** 1 (200 XP)
 
-**Antimagic Susceptibility**: The armor is incapacitated while in the
+**Antimagic Susceptibility**: The armor is :ref:`srd:incapacitated` while in the
 area of an *antimagic field*. If targeted by *dispel magic*, the armor
 must succeed on a Constitution saving throw against the caster's spell
-save DC or fall unconscious for 1 minute.
+save DC or fall :ref:`srd:unconscious` for 1 minute.
 
 **False Appearance**: While
 the armor remains motionless, it is indistinguishable from a normal suit

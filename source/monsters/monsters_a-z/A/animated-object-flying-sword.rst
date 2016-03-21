@@ -22,8 +22,8 @@ Small construct, unaligned
 
 **Damage Immunities** poison, psychic
 
-**Condition Immunities** blinded, charmed, deafened, frightened,
-paralyzed, petrified, poisoned
+**Condition Immunities** :ref:`srd:blinded`, :ref:`srd:charmed`, :ref:`srd:deafened`, :ref:`srd:frightened`,
+:ref:`srd:paralyzed`, :ref:`srd:petrified`, :ref:`srd:poisoned`
 
 **Senses** blindsight 60 ft. (blind beyond this radius), passive
 Perception 7
@@ -32,10 +32,10 @@ Perception 7
 
 **Challenge** 1/4 (50 XP)
 
-**Antimagic Susceptibility**: The sword is incapacitated while in the
+**Antimagic Susceptibility**: The sword is :ref:`srd:incapacitated` while in the
 area of an *antimagic field*. If targeted by *dispel magic*, the sword
 must succeed on a Constitution saving throw against the caster's spell
-save DC or fall unconscious for 1 minute.
+save DC or fall :ref:`srd:unconscious` for 1 minute.
 
 **False Appearance**: While
 the sword remains motionless and isn't flying, it is indistinguishable

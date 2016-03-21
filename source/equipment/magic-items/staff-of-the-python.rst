@@ -15,7 +15,7 @@ return the staff to its normal form in a space formerly occupied by the
 snake.
 
 On your turn, you can mentally command the snake if it is within 60 feet
-of you and you aren't incapacitated. You decide what action the snake
+of you and you aren't :ref:`srd:incapacitated`. You decide what action the snake
 takes and where it moves during its next turn, or you can issue it a
 general command, such as to attack your enemies or guard a location.
 

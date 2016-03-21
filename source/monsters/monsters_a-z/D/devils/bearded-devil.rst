@@ -25,7 +25,7 @@ nonmagical attacks that aren't silvered
 
 **Damage Immunities** fire, poison
 
-**Condition Immunities** poisoned
+**Condition Immunities** :ref:`srd:poisoned`
 
 **Senses** darkvision 120 ft., passive Perception 10
 
@@ -40,7 +40,7 @@ darkvision.
 throws against spells and other magical effects.
 
 **Steadfast**: The
-devil can't be frightened while it can see an allied creature within 30
+devil can't be :ref:`srd:frightened` while it can see an allied creature within 30
 feet of it.
 
 Actions
@@ -51,8 +51,8 @@ with its glaive.
 
 **Beard**: *Melee Weapon Attack*: +5 to hit, reach 5
 ft., one creature. *Hit*: 6 (1d8 + 2) piercing damage, and the target
-must succeed on a DC 12 Constitution saving throw or be poisoned for 1
-minute. While poisoned in this way, the target can't regain hit points.
+must succeed on a DC 12 Constitution saving throw or be :ref:`srd:poisoned` for 1
+minute. While :ref:`srd:poisoned` in this way, the target can't regain hit points.
 The target can repeat the saving throw at the end of each of its turns,
 ending the effect on itself on a success.
 

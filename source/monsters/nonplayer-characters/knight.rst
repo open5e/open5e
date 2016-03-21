@@ -27,7 +27,7 @@ Medium humanoid (any race), any alignment
 **Challenge** 3 (700 XP)
 
 **Brave. The knight has advantage on saving throws against being
-frightened.**
+:ref:`srd:frightened`.**
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -48,7 +48,7 @@ nonhostile creature that it can see within 30 feet of it makes an attack
 roll or a saving throw. The creature can add a d4 to its roll provided
 it can hear and understand the knight. A creature can benefit from only
 one Leadership die at a time. This effect ends if the knight is
-incapacitated.
+:ref:`srd:incapacitated`.
 
 Reactions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

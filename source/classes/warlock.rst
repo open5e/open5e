@@ -407,7 +407,7 @@ on the same plane of existence as you, you can use your action on
 subsequent turns to maintain this connection, extending the duration
 until the end of your next turn. While perceiving through the other
 creature's senses, you benefit from any special senses possessed by that
-creature, and you are blinded and deafened to your own surroundings.
+creature, and you are :ref:`srd:blinded` and :ref:`srd:deafened` to your own surroundings.
 
 Lifedrinker
 ^^^^^^^^^^^
@@ -458,7 +458,7 @@ One with Shadows
 *Prerequisite: 5th level*
 
 When you are in an area of dim light or darkness, you can use your
-action to become invisible until you move or take an action or a
+action to become :ref:`srd:invisible` until you move or take an action or a
 reaction.
 
 Otherworldly Leap

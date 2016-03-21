@@ -27,7 +27,7 @@ nonmagical attacks
 
 **Damage Immunities** necrotic, poison
 
-**Condition Immunities** charmed, exhaustion, frightened, poisoned
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:exhaustion`, :ref:`srd:frightened`, :ref:`srd:poisoned`
 
 **Senses** truesight 120 ft., passive Perception 24
 
@@ -101,5 +101,5 @@ successful one.
 **Blinding Gaze (Costs 3 Actions)**: The solar targets
 one creature it can see within 30 feet of it. If the target can see it,
 the target must succeed on a DC 15 Constitution saving throw or be
-blinded until magic such as the :ref:`srd:lesser-restoration` spell removes the
+:ref:`srd:blinded` until magic such as the :ref:`srd:lesser-restoration` spell removes the
 blindness.

@@ -27,8 +27,8 @@ Large giant, chaotic evil
 **Challenge** 4 (1,100 XP)
 
 **Two Heads**: The ettin has advantage on Wisdom (Perception) checks and
-on saving throws against being blinded, charmed, deafened, frightened,
-stunned, and knocked unconscious.
+on saving throws against being :ref:`srd:blinded`, :ref:`srd:charmed`, :ref:`srd:deafened`, :ref:`srd:frightened`,
+:ref:`srd:stunned`, and knocked :ref:`srd:unconscious`.
 
 **Wakeful**: When one of the ettin's
 heads is asleep, its other head is awake.

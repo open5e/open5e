@@ -23,7 +23,7 @@ ascending order of their current hit points (ignoring unconscious
 creatures and creatures that can't see).
 
 Starting with the creature that has the lowest current hit points, each
-creature affected by this spell is blinded until the spell ends.
+creature affected by this spell is :ref:`srd:blinded` until the spell ends.
 Subtract each creature's hit points from the total before moving on to
 the creature with the next lowest hit points. A creature's hit points
 must be equal to or less than the remaining total for that creature to

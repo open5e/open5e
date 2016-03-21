@@ -25,7 +25,7 @@ Large monstrosity, lawful neutral
 **Damage Immunities** psychic; bludgeoning, piercing, and slashing from
 nonmagical attacks
 
-**Condition Immunities** charmed, frightened
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:frightened`
 
 **Senses** truesight 120 ft., passive Perception 20
 
@@ -80,20 +80,20 @@ the effect is different, as detailed below. Each creature within 500
 feet of the sphinx and able to hear the roar must make a saving throw.
 
 **First Roar**: Each creature that fails a DC 18 Wisdom saving throw is
-frightened for 1 minute. A frightened creature can repeat the saving
+:ref:`srd:frightened` for 1 minute. A :ref:`srd:frightened` creature can repeat the saving
 throw at the end of each of its turns, ending the effect on itself on a
 success.
 
 **Second Roar**: Each creature that fails a DC 18 Wisdom saving
-throw is deafened and frightened for 1 minute. A frightened creature is
-paralyzed and can repeat the saving throw at the end of each of its
+throw is :ref:`srd:deafened` and :ref:`srd:frightened` for 1 minute. A :ref:`srd:frightened` creature is
+:ref:`srd:paralyzed` and can repeat the saving throw at the end of each of its
 turns, ending the effect on itself on a success.
 
 **Third Roar**: Each
 creature makes a DC 18 Constitution saving throw. On a failed save, a
-creature takes 44 (8d10) thunder damage and is knocked prone. On a
+creature takes 44 (8d10) thunder damage and is knocked :ref:`srd:prone`. On a
 successful save, the creature takes half as much damage and isn't
-knocked prone.
+knocked :ref:`srd:prone`.
 
 Legendary Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

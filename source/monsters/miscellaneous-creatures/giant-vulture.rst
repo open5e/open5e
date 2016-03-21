@@ -32,7 +32,7 @@ checks that rely on sight or smell.
 **Pack Tactics**: The vulture has
 advantage on an attack roll against a creature if at least one of the
 vulture's allies is within 5 feet of the creature and the ally isn't
-incapacitated.
+:ref:`srd:incapacitated`.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

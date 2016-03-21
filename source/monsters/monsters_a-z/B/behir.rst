@@ -46,8 +46,8 @@ one target. *Hit*: 22 (3d10 + 6) piercing damage.
 **Constrict**: *Melee
 Weapon Attack*: +10 to hit, reach 5 ft., one Large or smaller creature.
 *Hit*: 17 (2d10 + 6) bludgeoning damage plus 17 (2d10 + 6) slashing
-damage. The target is grappled (escape DC 16) if the behir isn't already
-constricting a creature, and the target is restrained until this grapple
+damage. The target is :ref:`srd:grappled` (escape DC 16) if the behir isn't already
+constricting a creature, and the target is :ref:`srd:restrained` until this grapple
 ends.
 
 **Lightning Breath (Recharge 5-6)**: The behir exhales a line of
@@ -59,12 +59,12 @@ successful one.
 **Swallow**: The behir makes one bite attack against a
 Medium or smaller target it is grappling. If the attack hits, the target
 is also swallowed, and the grapple ends. While swallowed, the target is
-blinded and restrained, it has total cover against attacks and other
+:ref:`srd:blinded` and :ref:`srd:restrained`, it has total cover against attacks and other
 effects outside the behir, and it takes 21 (6d6) acid damage at the
 start of each of the behir's turns. A behir can have only one creature
 swallowed at a time. If the behir takes 30 damage or more on a single
 turn from the swallowed creature, the behir must succeed on a DC 14
 Constitution saving throw at the end of that turn or regurgitate the
-creature, which falls prone in a space within 10 feet of the behir. If
-the behir dies, a swallowed creature is no longer restrained by it and
-can escape from the corpse by using 15 feet of movement, exiting prone.
+creature, which falls :ref:`srd:prone` in a space within 10 feet of the behir. If
+the behir dies, a swallowed creature is no longer :ref:`srd:restrained` by it and
+can escape from the corpse by using 15 feet of movement, exiting :ref:`srd:prone`.

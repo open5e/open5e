@@ -21,8 +21,8 @@ Large construct, unaligned
 **Damage Immunities** acid, poison, psychic; bludgeoning, piercing, and
 slashing from nonmagical attacks that aren't adamantine
 
-**Condition Immunities** charmed, exhaustion, frightened, paralyzed,
-petrified, poisoned
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:exhaustion`, :ref:`srd:frightened`, :ref:`srd:paralyzed`,
+:ref:`srd:petrified`, :ref:`srd:poisoned`
 
 **Senses** darkvision 60 ft., passive Perception 9
 

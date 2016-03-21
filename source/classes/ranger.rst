@@ -298,9 +298,9 @@ creatures you can't see. When you attack a creature you can't see, your
 inability to see it doesn't impose disadvantage on your attack rolls
 against it.
 
-You are also aware of the location of any invisible creature within 30
+You are also aware of the location of any :ref:`srd:invisible` creature within 30
 feet of you, provided that the creature isn't hidden from you and you
-aren't blinded or deafened.
+aren't :ref:`srd:blinded` or :ref:`srd:deafened`.
 
 Foe Slayer
 ^^^^^^^^^^
@@ -379,7 +379,7 @@ When a creature hits you with an attack, you gain a +4 bonus to AC against all s
 Steel Will
 *******************************
 
-You have advantage on saving throws against being frightened.
+You have advantage on saving throws against being :ref:`srd:frightened`.
 
 Multiattack
 ~~~~~~~~~~~

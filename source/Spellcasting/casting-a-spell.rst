@@ -147,7 +147,7 @@ concentration. The following factors can break concentration:
    separate saving throw for each source of damage.
 
 -  **Being incapacitated or killed.** You lose concentration on a spell
-   if you are incapacitated or if you die.
+   if you are :ref:`srd:incapacitated` or if you die.
 
 The GM might also decide that certain environmental phenomena, such as a
 wave crashing over you while you're on a storm-tossed ship, require you
@@ -300,7 +300,7 @@ proficiency bonus.
 Most spells that require attack rolls involve ranged attacks. Remember
 that you have disadvantage on a ranged attack roll if you are within 5
 feet of a hostile creature that can see you and that isn't
-incapacitated.
+:ref:`srd:incapacitated`.
 
 Combining Magical Effects
 ~~~~~~~~~~~~~~~~~~~~~~~~~

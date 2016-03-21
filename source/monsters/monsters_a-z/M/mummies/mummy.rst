@@ -27,8 +27,8 @@ nonmagical attacks
 
 **Damage Immunities** necrotic, poison
 
-**Condition Immunities** charmed, exhaustion, frightened, paralyzed,
-poisoned
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:exhaustion`, :ref:`srd:frightened`, :ref:`srd:paralyzed`,
+:ref:`srd:poisoned`
 
 **Senses** darkvision 60 ft., passive Perception 10;
 
@@ -55,8 +55,8 @@ curse spell or other magic.
 **Dreadful Glare**: The mummy targets one
 creature it can see within 60 feet of it. If the target can see the
 mummy, it must succeed on a DC 11 Wisdom saving throw against this magic
-or become frightened until the end of the mummy's next turn. If the
-target fails the saving throw by 5 or more, it is also paralyzed for the
+or become :ref:`srd:frightened` until the end of the mummy's next turn. If the
+target fails the saving throw by 5 or more, it is also :ref:`srd:paralyzed` for the
 same duration. A target that succeeds on the saving throw is immune to
 the Dreadful Glare of all mummies (but not mummy lords) for the next 24
 hours.

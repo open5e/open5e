@@ -138,7 +138,7 @@ Weapons with special rules are described here.
 target within 5 feet of you. Also, a lance requires two hands to wield
 when you aren't mounted.
 
-**Net.** A Large or smaller creature hit by a net is restrained until
+**Net.** A Large or smaller creature hit by a net is :ref:`srd:restrained` until
 it is freed. A net has no effect on creatures that are formless, or
 creatures that are Huge or larger. A creature can use its action to make
 a DC 10 Strength check, freeing itself or another creature within its

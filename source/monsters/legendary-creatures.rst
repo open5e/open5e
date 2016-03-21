@@ -19,7 +19,7 @@ A legendary creature can take a certain number of special actions---called
 legendary actions---outside its turn. Only one legendary action option can
 be used at a time and only at the end of another creature's turn. A
 creature regains its spent legendary actions at the start of its turn.
-It can forgo using them, and it can't use them while incapacitated or
+It can forgo using them, and it can't use them while :ref:`srd:incapacitated` or
 otherwise unable to take actions. If surprised, it can't use them until
 after its first turn in the combat.
 
@@ -37,7 +37,7 @@ Lair Actions
 If a legendary creature has lair actions, it can use them to harness the
 ambient magic in its lair. On initiative count 20 (losing all initiative
 ties), it can use one of its lair action options. It can't do so while
-incapacitated or otherwise unable to take actions. If surprised, it
+:ref:`srd:incapacitated` or otherwise unable to take actions. If surprised, it
 can't use one until after its first turn in the combat.
 
 Regional Effects

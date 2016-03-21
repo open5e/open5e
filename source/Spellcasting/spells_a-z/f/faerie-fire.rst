@@ -23,4 +23,4 @@ foot radius.
 
 Any attack roll against an affected creature or object has advantage if
 the attacker can see it, and the affected creature or object can't
-benefit from being invisible.
+benefit from being :ref:`srd:invisible`.

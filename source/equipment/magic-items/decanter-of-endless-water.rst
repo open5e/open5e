@@ -23,7 +23,7 @@ of your next turn. Choose from the following options:
    30 feet long and 1 foot wide. As a bonus action while holding the
    decanter, you can aim the geyser at a creature you can see within
    30 feet of you. The target must succeed on a DC 13 Strength saving
-   throw or take 1d4 bludgeoning damage and fall prone. Instead of a
+   throw or take 1d4 bludgeoning damage and fall :ref:`srd:prone`. Instead of a
    creature, you can target an object that isn't being worn or carried
    and that weighs no more than 200 pounds. The object is either
    knocked over or pushed up to 15 feet away from you.

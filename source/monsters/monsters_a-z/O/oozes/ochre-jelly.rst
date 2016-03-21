@@ -22,8 +22,8 @@ Large ooze, unaligned
 
 **Damage Immunities** lightning, slashing
 
-**Condition Immunities** blinded, charmed, deafened, exhaustion,
-frightened, prone
+**Condition Immunities** :ref:`srd:blinded`, :ref:`srd:charmed`, :ref:`srd:deafened`, :ref:`srd:exhaustion`,
+:ref:`srd:frightened`, :ref:`srd:prone`
 
 **Senses** blindsight 60 ft. (blind beyond this radius), passive
 Perception 8

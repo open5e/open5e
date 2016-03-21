@@ -29,7 +29,7 @@ an additional 100 feet. You and creatures you designate at the time you
 cast the spell can pass through and remain near the wall without harm.
 If another creature that can see the wall moves to within 20 feet of it
 or starts its turn there, the creature must succeed on a Constitution
-saving throw or become blinded for 1 minute.
+saving throw or become :ref:`srd:blinded` for 1 minute.
 
 The wall consists of seven layers, each with a different color. When a
 creature attempts to reach into or pass through the wall, it does so one
@@ -65,11 +65,11 @@ surface, destroys this layer.
 half as much damage on a successful one. This layer can be destroyed by
 dealing at least 25 fire damage to it.
 
-**6. Indigo.** On a failed save, the creature is restrained. It must
+**6. Indigo.** On a failed save, the creature is :ref:`srd:restrained`. It must
 then make a Constitution saving throw at the end of each of its turns.
 If it successfully saves three times, the spell ends. If it fails its
 save three times, it permanently turns to stone and is subjected to the
-petrified condition. The successes and failures don't need to be
+:ref:`srd:petrified` condition. The successes and failures don't need to be
 consecutive; keep track of both until the creature collects three of a
 kind.
 
@@ -78,11 +78,11 @@ through the wall. The layer is destroyed by bright light shed by a
 daylight spell or a similar spell of equal
 or higher level.
 
-**7. Violet.** On a failed save, the creature is blinded. It must then
+**7. Violet.** On a failed save, the creature is :ref:`srd:blinded`. It must then
 make a Wisdom saving throw at the start of your next turn. A successful
 save ends the blindness. If it fails that save, the creature is
 transported to another plane of the GM's choosing and is no longer
-blinded. (Typically, a creature that is on a plane that isn't its home
+:ref:`srd:blinded`. (Typically, a creature that is on a plane that isn't its home
 plane is banished home, while other creatures are usually cast into the
 Astral or Ethereal planes.) This layer is destroyed by a dispel magic
 spell or a similar spell of equal or higher level that can end spells

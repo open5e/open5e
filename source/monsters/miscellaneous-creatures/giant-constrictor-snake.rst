@@ -34,6 +34,6 @@ Actions
 
 **Constrict**: *Melee Weapon
 Attack*: +6 to hit, reach 5 ft., one creature. *Hit*: 13 (2d8 + 4)
-bludgeoning damage, and the target is grappled (escape DC 16). Until
-this grapple ends, the creature is restrained, and the snake can't
+bludgeoning damage, and the target is :ref:`srd:grappled` (escape DC 16). Until
+this grapple ends, the creature is :ref:`srd:restrained`, and the snake can't
 constrict another target.

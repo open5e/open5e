@@ -36,7 +36,7 @@ then ends its turn.
 **Flee.** The target spends its turn moving away from you by the
 fastest available means.
 
-**Grovel.** The target falls prone and then ends its turn.
+**Grovel.** The target falls :ref:`srd:prone` and then ends its turn.
 
 **Halt.** The target doesn't move and takes no actions.
 

@@ -23,8 +23,8 @@ Tiny undead, chaotic evil
 **Damage Resistances** acid, cold, fire, necrotic, thunder; bludgeoning,
 piercing, and slashing from nonmagical attacks
 
-**Condition Immunities** exhaustion, grappled, paralyzed, poisoned,
-prone, restrained, unconscious
+**Condition Immunities** :ref:`srd:exhaustion`, :ref:`srd:grappled`, :ref:`srd:paralyzed`, :ref:`srd:poisoned`,
+:ref:`srd:prone`, :ref:`srd:restrained`, :ref:`srd:unconscious`
 
 **Senses** darkvision 120 ft., passive Perception 12;
 
@@ -57,6 +57,6 @@ Actions
 *Hit*: 9 (2d8) lightning damage.
 
 *Invisibility**: The will-o'-wisp and
-its light magically become invisible until it attacks or uses its
+its light magically become :ref:`srd:invisible` until it attacks or uses its
 Consume Life, or until its concentration ends (as if concentrating on a
 spell).

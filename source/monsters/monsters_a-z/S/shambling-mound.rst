@@ -24,7 +24,7 @@ Large plant, unaligned
 
 **Damage Immunities** lightning
 
-**Condition Immunities** blinded, deafened, exhaustion
+**Condition Immunities** :ref:`srd:blinded`, :ref:`srd:deafened`, :ref:`srd:exhaustion`
 
 **Senses** blindsight 60 ft. (blind beyond this radius), passive
 Perception 10
@@ -41,7 +41,7 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Multiattack**: The shambling mound makes two slam attacks. If both
-attacks hit a Medium or smaller target, the target is grappled (escape
+attacks hit a Medium or smaller target, the target is :ref:`srd:grappled` (escape
 DC 14), and the shambling mound uses its Engulf on it.
 
 **Slam**: *Melee
@@ -49,8 +49,8 @@ Weapon Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 13 (2d8 + 4)
 bludgeoning damage.
 
 **Engulf**: The shambling mound engulfs a Medium or
-smaller creature grappled by it. The engulfed target is blinded,
-restrained, and unable to breathe, and it must succeed on a DC 14
+smaller creature :ref:`srd:grappled` by it. The engulfed target is :ref:`srd:blinded`,
+:ref:`srd:restrained`, and unable to breathe, and it must succeed on a DC 14
 Constitution saving throw at the start of each of the mound's turns or
 take 13 (2d8 + 4) bludgeoning damage. If the mound moves, the engulfed
 target moves with it. The mound can have only one creature engulfed at a

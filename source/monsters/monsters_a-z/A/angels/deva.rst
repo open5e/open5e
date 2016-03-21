@@ -25,7 +25,7 @@ Medium celestial, lawful good
 **Damage Resistances** radiant; bludgeoning, piercing, and slashing from
 nonmagical attacks
 
-**Condition Immunities** charmed, exhaustion, frightened
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:exhaustion`, :ref:`srd:frightened`
 
 **Senses** darkvision 120 ft., passive Perception 19
 

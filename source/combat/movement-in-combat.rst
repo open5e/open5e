@@ -67,7 +67,7 @@ Being Prone
 
 Combatants often find themselves lying on the ground, either because
 they are knocked down or because they throw themselves down. In the
-game, they are prone, a condition described in appendix A.
+game, they are :ref:`srd:prone`, a condition described :ref:`srd:conditions`.
 
 You can **drop prone** without using any of your
 speed. **Standing up** takes more effort; doing so costs an amount of
@@ -148,7 +148,7 @@ Flying Movement
 ~~~~~~~~~~~~~~~
 
 Flying creatures enjoy many benefits of mobility, but they must also
-deal with the danger of falling. If a flying creature is knocked prone,
+deal with the danger of falling. If a flying creature is knocked :ref:`srd:prone`,
 has its speed reduced to 0, or is otherwise deprived of the ability to
 move, the creature falls, unless it has the ability to
 

@@ -25,7 +25,7 @@ slashing from nonmagical attacks
 
 **Damage Immunities** poison
 
-**Condition Immunities** poisoned
+**Condition Immunities** :ref:`srd:poisoned`
 
 **Senses** truesight 120 ft., passive Perception 13
 
@@ -53,8 +53,8 @@ longswords and one with its tail.
 
 **Tail**: *Melee Weapon Attack*: +9 to hit, reach 10 ft., one creature.
 *Hit*: 15 (2d10 + 4) bludgeoning damage. If the target is Medium or
-smaller, it is grappled (escape DC 19). Until this grapple ends, the
-target is restrained, the marilith can automatically hit the target with
+smaller, it is :ref:`srd:grappled` (escape DC 19). Until this grapple ends, the
+target is :ref:`srd:restrained`, the marilith can automatically hit the target with
 its tail, and the marilith can't make tail attacks against other
 targets.
 

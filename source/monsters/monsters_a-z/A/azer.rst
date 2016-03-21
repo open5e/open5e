@@ -22,7 +22,7 @@ Medium elemental, lawful neutral
 
 **Damage Immunities** fire, poison
 
-**Condition Immunities** poisoned
+**Condition Immunities** :ref:`srd:poisoned`
 
 **Senses**: passive Perception 11
 

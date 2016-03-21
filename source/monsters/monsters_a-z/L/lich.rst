@@ -27,8 +27,8 @@ Medium undead, any evil alignment
 **Damage Immunities** poison; bludgeoning, piercing, and slashing from
 nonmagical attacks
 
-**Condition Immunities** charmed, exhaustion, frightened, paralyzed,
-poisoned
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:exhaustion`, :ref:`srd:frightened`, :ref:`srd:paralyzed`,
+:ref:`srd:poisoned`
 
 **Senses** truesight 120 ft., passive Perception 19
 
@@ -76,7 +76,7 @@ Actions
 
 **Paralyzing Touch**: Melee Spell Attack: +12 to hit, reach 5 ft., one
 creature. *Hit*: 10 (3d6) cold damage. The target must succeed on a DC
-18 Constitution saving throw or be paralyzed for 1 minute. The target
+18 Constitution saving throw or be :ref:`srd:paralyzed` for 1 minute. The target
 can repeat the saving throw at the end of each of its turns, ending the
 effect on itself on a success.
 
@@ -96,8 +96,8 @@ Actions)**: The lich uses its Paralyzing Touch.
 **Frightening Gaze
 (Costs 2 Actions)**: The lich fixes its gaze on one creature it can see
 within 10 feet of it. The target must succeed on a DC 18 Wisdom saving
-throw against this magic or become frightened for 1 minute. The
-frightened target can repeat the saving throw at the end of each of its
+throw against this magic or become :ref:`srd:frightened` for 1 minute. The
+:ref:`srd:frightened` target can repeat the saving throw at the end of each of its
 turns, ending the effect on itself on a success. If a target's saving
 throw is successful or the effect ends for it, the target is immune to
 the lich's gaze for the next 24 hours.

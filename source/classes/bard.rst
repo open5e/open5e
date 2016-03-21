@@ -269,9 +269,9 @@ At 6th level, you gain the ability to use musical notes or words of
 power to disrupt mind-influencing effects. As an action, you can start a
 performance that lasts until the end of your next turn. During that
 time, you and any friendly creatures within 30 feet of you have
-advantage on saving throws against being frightened or charmed. A
+advantage on saving throws against being :ref:`srd:frightened` or :ref:`srd:charmed`. A
 creature must be able to hear you to gain this benefit. The performance
-ends early if you are incapacitated or silenced or if you voluntarily
+ends early if you are :ref:`srd:incapacitated` or silenced or if you voluntarily
 end it (no action required).
 
 Magical Secrets
@@ -349,7 +349,7 @@ subtracting the number rolled from the creature's roll. You can choose
 to use this feature after the creature makes its roll, but before the GM
 determines whether the attack roll or ability check succeeds or fails,
 or before the creature deals its damage. The creature is immune if it
-can't hear you or if it's immune to being charmed.
+can't hear you or if it's immune to being :ref:`srd:charmed`.
 
 Additional Magical Secrets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

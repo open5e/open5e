@@ -20,7 +20,7 @@ Medium monstrosity (shapechanger), neutral
 
 **Skills** Deception +6, Insight +3
 
-**Condition Immunities** charmed
+**Condition Immunities** :ref:`srd:charmed`
 
 **Senses** darkvision 60 ft., passive Perception 11
 

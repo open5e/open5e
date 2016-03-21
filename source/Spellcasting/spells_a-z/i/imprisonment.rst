@@ -37,7 +37,7 @@ The special component for this version of the spell is a small mithral
 orb.
 
 **Chaining.** Heavy chains, firmly rooted in the ground, hold the
-target in place. The target is restrained until the spell ends, and it
+target in place. The target is :ref:`srd:restrained` until the spell ends, and it
 can't move or be moved by any means until then.
 
 The special component for this version of the spell is a fine chain of

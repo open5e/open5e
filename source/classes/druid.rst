@@ -203,7 +203,7 @@ You can stay in a beast shape for a number of hours equal to half your
 druid level (rounded down). You then revert to your normal form unless
 you expend another use of this feature. You can revert to your normal
 form earlier by using a bonus action on your turn. You automatically
-revert if you fall unconscious, drop to 0 hit points, or die.
+revert if you fall :ref:`srd:unconscious`, drop to 0 hit points, or die.
 
 While you are transformed, the following rules apply:
 
@@ -222,7 +222,7 @@ While you are transformed, the following rules apply:
    your normal form. For example, if you take 10 damage in animal form
    and have only 1 hit point left, you revert and take 9 damage. As long
    as the excess damage doesn't reduce your normal form to 0 hit points,
-   you aren't knocked unconscious.
+   you aren't knocked :ref:`srd:unconscious`.
 -  You can't cast spells, and your ability to speak or take any action
    that requires hands is limited to the capabilities of your beast
    form. Transforming doesn't break your concentration on a spell you've
@@ -464,7 +464,7 @@ by the :ref:`srd:entangle` spell.
 Nature's Ward
 ~~~~~~~~~~~~~
 
-When you reach 10th level, you can't be charmed or frightened by
+When you reach 10th level, you can't be :ref:`srd:charmed` or :ref:`srd:frightened` by
 elementals or fey, and you are immune to poison and disease.
 
 Nature's Sanctuary
