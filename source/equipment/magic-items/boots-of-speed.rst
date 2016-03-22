@@ -1,4 +1,4 @@
-.. _srd:boots-of-levitation:
+.. _srd:boots-of-speed:
 
 Boots of Speed
 ------------------------------------------------------
