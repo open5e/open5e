@@ -21,3 +21,4 @@ An elemental composed mostly of water that is
 exposed to a pinch of the dust must make a DC 13 Constitution saving
 throw, taking 10d6 necrotic damage on a failed save, or half as much
 damage on a successful one.
+

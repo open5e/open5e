@@ -15,7 +15,6 @@ sphere moves through the air, it opens into a tangle of metal bands.
 Make a ranged attack roll with an attack bonus equal to your Dexterity
 modifier plus your proficiency bonus. On a hit, the target is restrained
 until you take a bonus action to speak the command
-
 word again to release it. Doing so, or missing with the attack, causes
 the bands to contract and become a sphere once more.
 
@@ -26,3 +25,4 @@ further attempts made by that creature automatically fail until 24 hours
 have elapsed.
 
 Once the bands are used, they can't be used again until the next dawn.
+

@@ -20,3 +20,4 @@ a creature, it becomes a nonmagical arrow.
 
 Other types of magic ammunition of this kind exist, such as *bolts of
 slaying* meant for a crossbow, though arrows are most common.
+

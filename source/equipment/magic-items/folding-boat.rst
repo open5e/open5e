@@ -1,7 +1,9 @@
+
 .. _srd:folding-boat:
 
 Folding Boat
-------------
+------------------------------------------------------
+
 
 *Wondrous item, rare*
 
@@ -29,3 +31,4 @@ The third command word causes the *folding boat* to fold back into a
 box, provided that no creatures are aboard. Any objects in the vessel
 that can't fit inside the box remain outside the box as it folds. Any
 objects in the vessel that can fit inside the box do so.
+

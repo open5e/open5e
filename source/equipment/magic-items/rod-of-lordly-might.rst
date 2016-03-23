@@ -65,3 +65,4 @@ saving throw. On a failure, a target is frightened of you for 1 minute.
 A frightened target can repeat the saving throw at the end of each of
 its turns, ending the effect on itself on a success. This property can't
 be used again until the next dawn.
+

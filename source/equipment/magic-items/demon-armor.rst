@@ -1,7 +1,9 @@
+
 .. _srd:demon-armor:
 
 Demon Armor
------------
+------------------------------------------------------
+
 
 *Armor (plate), very rare (requires attunement)*
 
@@ -15,3 +17,4 @@ damage die of 1d8.
 you are targeted by the :ref:`srd:remove-curse` spell or similar magic. While
 wearing the armor, you have disadvantage on attack rolls against demons
 and on saving throws against their spells and special abilities.
+

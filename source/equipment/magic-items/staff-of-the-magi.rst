@@ -76,3 +76,4 @@ Distance from Origin    Damage
 11 to 20 ft. away       6 × the number of charges in the staff
 21 to 30 ft. away       4 × the number of charges in the staff
 ======================  ================
+

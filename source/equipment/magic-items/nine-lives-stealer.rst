@@ -16,3 +16,4 @@ Constitution saving throw or be slain instantly as the sword tears its
 life force from its body (a construct or an undead is immune). The sword
 loses 1 charge if the creature is slain. When the sword has no charges
 remaining, it loses this property.
+

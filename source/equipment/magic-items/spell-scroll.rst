@@ -51,3 +51,4 @@ check with a DC equal to 10
 -  the spell's level. If the check succeeds, the spell is
    successfully copied. Whether the check succeeds or fails, the
    *spell scroll* is destroyed.
+

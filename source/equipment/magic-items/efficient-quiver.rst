@@ -16,3 +16,4 @@ to six long objects, such as bows, quarterstaffs, or spears.
 
 You can draw any item the quiver contains as if doing so from a regular
 quiver or scabbard.
+

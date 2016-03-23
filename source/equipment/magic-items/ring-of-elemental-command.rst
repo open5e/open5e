@@ -50,9 +50,7 @@ access to the following additional properties:
    the nearest unoccupied space you last occupied.
 
 -  You can cast the following spells from the ring, expending the
-   necessary number of charges: *stone*
-
-*shape* (2 charges), :ref:`srd:stoneskin` (3 charges), or :ref:`srd:wall-of-stone` (3
+   necessary number of charges: :ref:`srd:stone-shape` (2 charges), :ref:`srd:stoneskin` (3 charges), or :ref:`srd:wall-of-stone` (3
 charges).
 
 **Ring of Fire Elemental Command.** You can expend 2 of the ring's

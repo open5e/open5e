@@ -4,6 +4,7 @@
 Wand of Binding
 ------------------------------------------------------
 
+
 *Wand, rare (requires attunement by a spellcaster)*
 
 This wand has 7 charges for the following properties. It regains 1d6 + 1
@@ -18,3 +19,4 @@ some of its charges to cast one of the following spells (save DC 17):
 to expend 1 charge and gain advantage on a saving throw you make to
 avoid being paralyzed or restrained, or you can expend 1 charge and gain
 advantage on any check you make to escape a grapple.
+

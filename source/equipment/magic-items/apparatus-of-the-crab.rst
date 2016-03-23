@@ -88,3 +88,4 @@ Apparatus of the Crab Levers
 | 10              | The rear hatch unseals      | The rear hatch unseals          |
 |                 | and opens.                  | and closes.                     |
 +-----------------+-----------------------------+---------------------------------+
+

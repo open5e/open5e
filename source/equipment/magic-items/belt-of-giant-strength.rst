@@ -25,3 +25,4 @@ Fire giant            25               Very rare
 Cloud giant           27               Legendary
 Storm giant           29               Legendary
 ====================  ===============  ====================
+

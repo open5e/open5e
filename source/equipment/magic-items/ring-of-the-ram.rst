@@ -18,3 +18,4 @@ Alternatively, you can expend 1 to 3 of the ring's charges as an action
 to try to break an object you can see within 60 feet of you that isn't
 being worn or carried. The ring makes a Strength check with a +5 bonus
 for each charge you spend.
+

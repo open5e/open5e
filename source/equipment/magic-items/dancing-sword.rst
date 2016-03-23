@@ -1,7 +1,9 @@
+
 .. _srd:dancing-sword:
 
 Dancing Sword
--------------
+------------------------------------------------------
+
 
 *Weapon (any sword), very rare (requires attunement)*
 
@@ -22,3 +24,4 @@ falls to the ground at your feet. If the sword has no unobstructed path
 to you, it moves as close to you as it can and then falls to the ground.
 It also ceases to hover if you grasp it or move more than 30 feet away
 from it.
+
