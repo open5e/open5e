@@ -14,7 +14,6 @@ This rod has a flanged head and the following properties.
 
 **Spells.** While holding the rod, you can use an action to cast one
 of the following spells from it:
-
 :ref:`srd:detect-evil-and-good`, :ref:`srd:detect-magic`, :ref:`srd:detect-poison-and-disease`, or
 :ref:`srd:see-invisibility`.
 
@@ -28,3 +27,4 @@ invisible hostile creature that is also in the bright light.
 The rod's head stops glowing and the effect ends
 after 10 minutes, or when a creature uses an action to pull the rod from
 the ground. This property can't be used again until the next dawn.
+

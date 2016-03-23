@@ -16,3 +16,4 @@ around you. You and all creatures friendly to you in the aura have
 advantage on saving throws against spells and other magical effects. If
 you have 17 or more levels in the paladin class, the radius of the aura
 increases to 30 feet.
+

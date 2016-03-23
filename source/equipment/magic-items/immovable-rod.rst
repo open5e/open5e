@@ -14,3 +14,4 @@ again, the rod doesn't move, even if it is defying gravity. The rod can
 hold up to 8,000 pounds of weight. More weight causes the rod to
 deactivate and fall. A creature can use an action to make a DC 30
 Strength check, moving the fixed rod up to 10 feet on a success.
+

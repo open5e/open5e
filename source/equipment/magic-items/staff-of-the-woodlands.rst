@@ -41,3 +41,4 @@ The tree appears ordinary but radiates a faint aura of transmutation
 magic if targeted by :ref:`srd:detect-magic`. While touching the tree and using
 another action to speak its command word, you return the staff to its
 normal form. Any creature in the tree falls when it reverts to a staff.
+

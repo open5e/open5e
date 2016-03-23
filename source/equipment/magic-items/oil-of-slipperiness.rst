@@ -17,3 +17,4 @@ effect of a :ref:`srd:freedom-of-movement` spell for 8 hours.
 Alternatively, the oil can be poured on the ground as an action, where
 it covers a 10-foot square, duplicating the effect of the :ref:`srd:grease`
 spell in that area for 8 hours.
+

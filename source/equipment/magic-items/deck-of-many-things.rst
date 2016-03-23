@@ -12,7 +12,6 @@ made of ivory or vellum. Most (75 percent) of these decks have only
 thirteen cards, but the rest have twenty-two.
 
 Before you draw a card, you must declare how
-
 many cards you intend to draw and then draw them randomly (you can use
 an altered deck of playing cards to simulate the deck). Any cards drawn
 in excess of this number have no effect. Otherwise, as soon as you draw
@@ -190,3 +189,4 @@ or more powerful beings guard the place. While your soul is trapped in
 this way, your body is incapacitated. A :ref:`srd:wish` spell can't restore your
 soul, but the spell reveals the location of the object that holds it.
 You draw no more cards.
+

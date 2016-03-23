@@ -1,7 +1,9 @@
+
 .. _srd:ioun-stone:
 
 Ioun Stone
-----------
+------------------------------------------------------
+
 
 *Wondrous item, rarity varies (requires attunement)*
 
@@ -91,3 +93,4 @@ maximum of 20, while this pale blue rhomboid orbits your head.
 
 **Sustenance (Rare).** You don't need to eat or drink while this clear
 spindle orbits your head.
+

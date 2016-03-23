@@ -68,4 +68,3 @@ Two of clubs        Kobold
 Jokers (2)          You (the deck's owner)
 ==================  ==============================
 
-

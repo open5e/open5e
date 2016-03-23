@@ -1,7 +1,9 @@
+
 .. _srd:cube-of-force:
 
 Cube of Force
--------------
+------------------------------------------------------
+
 
 *Wondrous item, rare (requires attunement)*
 
@@ -57,3 +59,4 @@ Spell or Item               Charges Lost
 :ref:`srd:prismatic-spray`  1d20
 :ref:`srd:wall-of-fire`     1d4
 =========================== ============
+

@@ -23,3 +23,4 @@ dim light for an additional 15 feet. The light is sunlight. While the
 blade persists, you can use an action to expand or reduce its radius of
 bright and dim light by 5 feet each, to a maximum of 30 feet each or a
 minimum of 10 feet each.
+

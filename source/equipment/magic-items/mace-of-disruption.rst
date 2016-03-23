@@ -15,3 +15,4 @@ frightened of you until the end of your next turn.
 
 While you hold this weapon, it sheds bright light in
 a 20-foot radius and dim light for an additional 20 feet.
+

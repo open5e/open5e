@@ -1,7 +1,9 @@
+
 .. srd:cubic-gate:
 
 Cubic Gate
-----------
+------------------------------------------------------
+
 
 *Wondrous item, legendary*
 
@@ -18,3 +20,4 @@ the targets to the plane keyed to that side.
 
 The cube has 3 charges. Each use of the cube expends 1 charge. The cube
 regains 1d3 expended charges daily at dawn.
+

@@ -1,7 +1,9 @@
+
 .. _srd:frost-brand:
 
 Frost Brand
------------
+------------------------------------------------------
+
 
 *Weapon (any sword), very rare (requires attunement)*
 
@@ -15,3 +17,4 @@ radius and dim light for an additional 10 feet.
 When you draw this weapon, you can extinguish all nonmagical flames
 within 30 feet of you. This property can be used no more than once per
 hour.
+
