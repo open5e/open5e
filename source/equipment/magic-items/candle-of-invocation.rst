@@ -40,3 +40,4 @@ with a 1st-level slot.
 
 Alternatively, when you light the candle for the first time, you can
 cast the :ref:`srd:gate` spell with it. Doing so destroys the candle.
+

@@ -16,3 +16,4 @@ or plane of existence. Each time the item opens a portal, the GM decides
 where it leads. You can use an action to close an open portal by taking
 hold of the edges of the cloth and folding it up. Once *well of many
 worlds* has opened a portal, it can't do so again for 1d8 hours.
+

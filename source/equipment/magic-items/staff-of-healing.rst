@@ -16,3 +16,4 @@ charges), or :ref:`srd:mass-cure-wounds` (5 charges).
 The staff regains 1d6 + 4 expended charges daily at dawn. If you expend
 the last charge, roll a d20. On a 1, the staff vanishes in a flash of
 light, lost forever.
+

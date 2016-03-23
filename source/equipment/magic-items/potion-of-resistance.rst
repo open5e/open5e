@@ -20,3 +20,4 @@ d10   Damage Type  d10  Damage Type
 4     Force        9    Radiant
 5     Lightning    10   Thunder
 ====  ===========  ===  ===============
+

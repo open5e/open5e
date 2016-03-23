@@ -16,3 +16,4 @@ that can see you have disadvantage on attack rolls against you. In
 addition, any creature in the bright light that can see you when the
 robe's power is activated must succeed on a DC 15 Wisdom saving throw or
 become stunned until the effect ends.
+

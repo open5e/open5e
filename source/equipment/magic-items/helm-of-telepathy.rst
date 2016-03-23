@@ -16,3 +16,4 @@ While focusing on a creature with *detect thoughts*, you can use an
 action to cast the :ref:`srd:suggestion` spell (save DC 13) from the helm on that
 creature. Once used, the :ref:`srd:suggestion` property can't be used again until
 the next dawn.
+

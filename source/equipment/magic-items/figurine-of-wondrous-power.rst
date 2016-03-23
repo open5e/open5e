@@ -124,3 +124,4 @@ existence.
 become a raven for up to 12 hours. Once it has been used, it can't be
 used again until 2 days have passed. While in raven form, the figurine
 allows you to cast the :ref:`srd:animal-messenger` spell on it at will.
+

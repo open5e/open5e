@@ -2,7 +2,8 @@
 .. _srd:magic-items-list:
 
 Magic Items
-------------
+------------------------------------------------------
+
 
 .. sidebar:: Looking for more Magic Items?
     :class: missing
@@ -24,3 +25,4 @@ Contents:
 
    *
    artifacts/index
+

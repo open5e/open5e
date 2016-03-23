@@ -30,3 +30,4 @@ effects:
 
 When all of the gem's charges are expended, the gem becomes a nonmagical
 jewel worth 50 gp.
+

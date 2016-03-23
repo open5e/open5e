@@ -29,3 +29,4 @@ where the one item was placed inside the other. Any creature within 10
 feet of the gate is sucked through it to a random location on the Astral
 Plane. The gate then closes. The gate is one-way only and can't be
 reopened.
+

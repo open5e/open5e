@@ -1,7 +1,9 @@
+
 .. _srd:crystal-ball:
 
 Crystal Ball
--------------
+------------------------------------------------------
+
 
 *Wondrous item, very rare or legendary (requires attunement)*
 
@@ -30,3 +32,4 @@ until the next dawn.
 **Crystal Ball of True Seeing.** While scrying with
 the crystal ball, you have truesight with a radius of 120 feet centered
 on the spell's sensor.
+

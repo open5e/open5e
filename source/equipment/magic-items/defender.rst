@@ -1,7 +1,9 @@
+
 .. _srd:defender-weapon:
 
 Defender
---------
+------------------------------------------------------
+
 
 *Weapon (any sword), legendary (requires attunement)*
 
@@ -15,3 +17,4 @@ reduce the bonus to your attack and damage rolls to +1 and gain a +2
 bonus to AC. The adjusted bonuses remain in effect until the start of
 your next turn, although you must hold the sword to gain a bonus to AC
 from it.
+

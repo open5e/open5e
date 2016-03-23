@@ -51,7 +51,6 @@ access to the following additional properties:
 
 -  You can cast the following spells from the ring, expending the
    necessary number of charges: *stone*
-
 *shape* (2 charges), :ref:`srd:stoneskin` (3 charges), or :ref:`srd:wall-of-stone` (3
 charges).
 
