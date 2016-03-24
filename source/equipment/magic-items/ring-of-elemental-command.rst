@@ -63,7 +63,7 @@ access to the following additional properties:
 
 -  You can cast the following spells from the ring, expending the
    necessary number of charges: :ref:`srd:burning-hands` (1 charge), :ref:`srd:fireball`
-   (2 charges), and *wall of fire* (3 charges).
+   (2 charges), and :ref:`srd:wall-of-fire` (3 charges).
 
 **Ring of Water Elemental Command.** You can expend 2 of the ring's
 charges to cast :ref:`srd:dominate-monster` on a water elemental. In addition,
