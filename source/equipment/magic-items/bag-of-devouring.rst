@@ -29,3 +29,4 @@ determines the time and plane.
 
 If the bag is pierced or torn, it is destroyed, and anything contained
 within it is transported to a random location on the Astral Plane.
+

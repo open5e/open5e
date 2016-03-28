@@ -1,7 +1,9 @@
+
 .. _srd:staff-of-fire:
 
 Staff of Fire
--------------
+------------------------------------------------------
+
 
 *Staff, very rare (requires attunement by a druid, sorcerer, warlock, or
 wizard)*
@@ -16,3 +18,4 @@ charges), or :ref:`srd:wall-of-fire` (4 charges).
 The staff regains 1d6 + 4 expended charges daily
 at dawn. If you expend the last charge, roll a d20. On a 1, the staff
 blackens, crumbles into cinders, and is destroyed.
+

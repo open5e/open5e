@@ -19,3 +19,4 @@ doesn't have or need a head, has legendary actions, or the GM decides
 that the creature is too big for its head to be cut off with this
 weapon. Such a creature instead takes an extra 6d8 slashing damage from
 the hit.
+

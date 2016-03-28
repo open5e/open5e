@@ -19,3 +19,4 @@ is incapacitated and suffocating. As long as it is conscious, a creature
 can repeat the saving throw at the end of each of its turns, ending the
 effect on it on a success. The *lesser restoration* spell can also end
 the effect on a creature.
+

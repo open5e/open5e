@@ -20,10 +20,10 @@ one, unless no foe is within 60 feet of you that you can see or hear.
 Whenever a hostile creature damages you while the axe is in your
 possession, you must succeed on a DC 15 Wisdom saving throw or go
 berserk. While berserk, you must use your action each round to
-
 attack the creature nearest to you with the axe. If you can make extra
 attacks as part of the Attack action, you use those extra attacks,
 moving to attack the next nearest creature after you fell your current
 target. If you have multiple possible targets, you attack one at random.
 You are berserk until you start your turn with no creatures within 60
 feet of you that you can see or hear.
+

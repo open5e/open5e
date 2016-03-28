@@ -18,3 +18,4 @@ benefits:
 -  You can tolerate temperatures as low as −50 degrees Fahrenheit
    without any additional protection. If you wear heavy clothes, you
    can tolerate temperatures as low as −100 degrees Fahrenheit.
+

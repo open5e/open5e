@@ -21,3 +21,4 @@ creature can repeat the saving throw, ending the effect on itself on a
 success.
 
 The mace regains 1d3 expended charges daily at dawn.
+

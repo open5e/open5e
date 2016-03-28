@@ -26,3 +26,4 @@ A :ref:`srd:light` spell cast on the robe or a :ref:`srd:daylight` spell cast wi
 feet of the robe causes you to be blinded for 1 minute. At the end of
 each of your turns, you can make a Constitution saving throw (DC 11 for
 :ref:`srd:light` or DC 15 for :ref:`srd:daylight`), ending the blindness on a success.
+

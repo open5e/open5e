@@ -1,7 +1,9 @@
+
 .. _srd:dwarven-thrower:
 
 Dwarven Thrower
-----------------
+------------------------------------------------------
+
 
 *Weapon (warhammer), very rare (requires attunement by a dwarf)*
 
@@ -11,3 +13,4 @@ long range of 60 feet. When you hit with a ranged attack using this
 weapon, it deals an extra 1d8 damage or, if the target is a giant, 2d8
 damage. Immediately after the attack, the weapon flies back to your
 hand.
+

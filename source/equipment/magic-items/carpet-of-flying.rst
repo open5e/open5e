@@ -24,3 +24,4 @@ d100           Size                Capacity      Flying Speed
 
 A carpet can carry up to twice the weight shown on the table, but it
 flies at half speed if it carries more than its normal capacity.
+

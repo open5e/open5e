@@ -2,7 +2,7 @@
 .. _srd:bead-of-force:
 
 Bead of Force
--------------
+------------------------------------------------------
 
 
 *Wondrous item, rare*
@@ -24,3 +24,4 @@ An enclosed creature can use its action to push against the sphere's
 wall, moving the sphere up to half the creature's walking speed. The
 sphere can be picked up, and its magic causes it to weigh only 1 pound,
 regardless of the weight of creatures inside.
+

@@ -14,3 +14,4 @@ for 8 hours. While charmed in this way, the creature regards you as its
 trusted leader. If harmed by you or your companions, or commanded to do
 something contrary to its nature, a target ceases to be charmed in this
 way. The rod can't be used again until the next dawn.
+

@@ -30,3 +30,4 @@ d20     Bead of ...         Spell
 19      Summons             :ref:`srd:planar-ally`
 20      Wind walking        :ref:`srd:wind-walk`
 ======  ==================  ==============================================
+

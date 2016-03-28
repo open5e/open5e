@@ -23,3 +23,4 @@ takes an extra 3d6 piercing damage.
 
 While your sworn enemy lives, you have disadvantage on attack rolls with
 all other weapons.
+

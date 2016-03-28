@@ -1,7 +1,9 @@
+
 .. _srd:elemental-gem:
 
 Elemental Gem
--------------
+------------------------------------------------------
+
 
 *Wondrous item, uncommon*
 
@@ -17,3 +19,4 @@ Yellow diamond    Earth elemental
 Red corundum      Fire elemental
 Emerald           Water elemental
 ================  ==========================================================
+
