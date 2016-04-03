@@ -1,12 +1,16 @@
 
 .. _srd:monsters-a-z:
 
-Monsters A-Z
+Monster Descriptions
 -------------------------------------------------------------
 
-.. toctree::
-   :name: monsters-az
-   :titlesonly:
-   :glob:
-   
-   */index
+.. container:: columns
+
+    .. toctree::
+      :name: monsterlist
+      :titlesonly:
+      :glob:
+
+      */index
+      Miscellaneous Creatures <../miscellaneous-creatures/index>
+      Nonplayer Characters <../nonplayer-characters/index>

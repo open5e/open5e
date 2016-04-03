@@ -20,26 +20,16 @@ Monsters
    legendary-creatures
    statistics
    
-.. toctree::
-    :glob:
-    :maxdepth: 1
+.. container:: h1
 
-    Monster Descriptions <monsters_a-z/index>
+   Monster Descriptions
 
-------------------------------------------
-
-Monster Descriptions
-=====================
-
-
-.. container:: columns
-
+.. container:: subcolumns  
+   
     .. toctree::
-      :name: monsterlist
-      :titlesonly:
-      :glob:
-      :maxdepth: 3
+        :name: monster-descs
+        :glob:
+        :titlesonly:
+        :maxdepth: 3
 
-      monsters_a-z/*/index
-      Miscellaneous Creatures <miscellaneous-creatures/index>
-      Nonplayer Characters <nonplayer-characters/index>
+        Monster Descriptions <monsters_a-z/index>
