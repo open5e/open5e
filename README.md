@@ -5,9 +5,11 @@
 An SRD and open-source material reference site for 5th edition D&amp;D
 
 ## Editing Content
+Open5e is statically generated using [Sphinx](http://www.sphinx-doc.org/en/stable/), a Python-based documentation generator. The content is written in [reStructuredText](http://docutils.sourceforge.net/rst.html).
+
+If this is your first time working with reST, take a look at the [syntax guide](http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html). Also, take a look at our [style guide](https://github.com/eepMoody/open5e/wiki/Style-Guide) and [reST editor tool recommendations](https://github.com/eepMoody/open5e/wiki/reST-Tool-Recommendations).
 
 ### Installation
-Open5e is statically generated using [Sphinx](http://www.sphinx-doc.org/en/stable/), a Python-based documentation generator.
 
 After cloning the repo, you'll need to install Sphinx. You'll need [Python 2.7](https://www.python.org/downloads/) or higher. We recommend you install Sphinx in a [virtual environment](https://virtualenv.readthedocs.org/en/latest/):
 
