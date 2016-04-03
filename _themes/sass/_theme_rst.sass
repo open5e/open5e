@@ -151,7 +151,6 @@
 
   h4
     margin-bottom: $base-line-height / 8
-    font-variant: small-caps
 
   h5
     font-weight: 500
@@ -174,19 +173,18 @@
 
 
   // This is the #href that shows up on hover. Sphinx's is terrible so I hack it away.
-  h1, .h1, h2, h3, h4, h5, h6, dl dt, p.caption
+  h1, .h1, h2, h3, h4, h5, h6, dl dt, p.caption, caption
     .headerlink
-      display: none
       visibility: hidden
       font-size: 14px
       @extend .fa
       &:after
-        visibility: visible
+        visibility: hidden
         content: "\f0c1"
         font-family: FontAwesome
         display: inline-block
-    &:hover .headerlink
-      display: inline-block
+    &:hover .headerlink::after
+      visibility: visible
 
 
   // Sidebar content. You'll see at the bottom of this file I change it in mobile.
