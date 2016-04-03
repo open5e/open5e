@@ -28,9 +28,9 @@ locate or perceive the target.
 When you cast the spell, you choose one of the following forms of
 imprisonment.
 
-**Burial.** The target is entombed far beneath the earth in a sphere
+**Burial.** The target is entombed far beneath the earth in a :ref:`srd:sphere`
 of magical force that is just large enough to contain the target.
-Nothing can pass through the sphere, nor can any creature teleport or
+Nothing can pass through the :ref:`srd:sphere`, nor can any creature teleport or
 use planar travel to get into or out of it.
 
 The special component for this version of the spell is a small mithral

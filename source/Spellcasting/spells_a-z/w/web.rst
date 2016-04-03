@@ -16,7 +16,7 @@ Web
 **Duration:** Concentration, up to 1 hour
 
 You conjure a mass of thick, sticky webbing at a point of your choice
-within range. The webs fill a 20 foot cube from that point for the
+within range. The webs fill a 20 foot :ref:`srd:cube` from that point for the
 duration. The webs are difficult terrain and lightly obscure their area.
 
 If the webs aren't anchored between two solid masses (such as walls or
@@ -33,6 +33,6 @@ A creature restrained by the webs can use its action to make a Strength
 check against your spell save DC. If it succeeds, it is no longer
 restrained.
 
-The webs are flammable. Any 5 foot cube of webs exposed to fire burns
+The webs are flammable. Any 5 foot :ref:`srd:cube` of webs exposed to fire burns
 away in 1 round, dealing 2d4 fire damage to any creature that starts its
 turn in the fire.

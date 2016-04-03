@@ -16,7 +16,7 @@ Shatter
 **Duration:** Instantaneous
 
 A sudden loud ringing noise, painfully intense, erupts from a point of
-your choice within range. Each creature in a 10 foot radius sphere
+your choice within range. Each creature in a 10 foot radius :ref:`srd:sphere`
 centered on that point must make a Constitution saving throw. A creature
 takes 3d8 thunder damage on a failed save, or half as much damage on a
 successful one. A creature made of inorganic material such as stone,

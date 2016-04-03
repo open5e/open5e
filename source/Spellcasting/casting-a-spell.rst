@@ -206,6 +206,8 @@ location within the area of effect, that location isn't included in the
 spell's area. To block one of these imaginary lines, an obstruction must
 provide total cover.
 
+.. _srd:cone:
+
 Cone
 ^^^^
 
@@ -217,6 +219,8 @@ maximum length.
 A cone's point of origin is not included in the cone's area of effect,
 unless you decide otherwise.
 
+.. _srd:sphere:
+
 Sphere
 ^^^^^^
 
@@ -225,6 +229,8 @@ from that point. The sphere's size is expressed as a radius in feet that
 extends from the point.
 
 A sphere's point of origin is included in the sphere's area of effect.
+
+.. _srd:cube:
 
 Cube
 ^^^^
@@ -235,6 +241,8 @@ side.
 
 A cube's point of origin is not included in the cube's area of effect,
 unless you decide otherwise.
+
+.. _srd:cylinder:
 
 Cylinder
 ^^^^^^^^
@@ -249,6 +257,8 @@ equal to the height of the cylinder.
 
 A cylinder's point of origin is included in the cylinder's area of
 effect.
+
+.. _srd:line:
 
 Line
 ^^^^

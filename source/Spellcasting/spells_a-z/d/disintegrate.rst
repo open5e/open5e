@@ -30,7 +30,7 @@ a wish spell.
 
 This spell automatically disintegrates a Large or smaller nonmagical
 object or a creation of magical force. If the target is a Huge or larger
-object or creation of force, this spell disintegrates a 10 foot cube
+object or creation of force, this spell disintegrates a 10 foot :ref:`srd:cube`
 portion of it. A magic item is unaffected by this spell.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 7th

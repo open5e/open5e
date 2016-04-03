@@ -17,8 +17,8 @@ of opalescent feldspar)
 **Duration:** Concentration, up to 1 minute
 
 A silvery beam of pale light shines down in a 5 foot radius, 40 foot
-high cylinder centered on a point within range. Until the spell ends,
-dim light fills the cylinder.
+high :ref:`srd:cylinder` centered on a point within range. Until the spell ends,
+dim light fills the :ref:`srd:cylinder`.
 
 When a creature enters the spell's area for the first time on a turn or
 starts its turn there, it is engulfed in ghostly flames that cause

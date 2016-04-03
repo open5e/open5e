@@ -16,7 +16,7 @@ Slow
 **Duration:** Concentration, up to 1 minute
 
 You alter time around up to six creatures of your choice in a 40 foot
-cube within range. Each target must succeed on a Wisdom saving throw or
+:ref:`srd:cube` within range. Each target must succeed on a Wisdom saving throw or
 be affected by this spell for the duration.
 
 An affected target's speed is halved, it takes a −2 penalty to AC and

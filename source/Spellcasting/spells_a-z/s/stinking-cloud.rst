@@ -15,7 +15,7 @@ Stinking Cloud
 
 **Duration:** Concentration, up to 1 minute
 
-You create a 20 foot radius sphere of yellow, nauseating gas centered on
+You create a 20 foot radius :ref:`srd:sphere` of yellow, nauseating gas centered on
 a point within range. The cloud spreads around corners, and its area is
 heavily obscured. The cloud lingers in the air for the duration.
 

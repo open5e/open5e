@@ -15,7 +15,7 @@ Hallucinatory Terrain
 
 **Duration:** 24 hours
 
-You make natural terrain in a 150 foot cube in range look, sound, and
+You make natural terrain in a 150 foot :ref:`srd:cube` in range look, sound, and
 smell like some other sort of natural terrain. Thus, open fields or a
 road can be made to resemble a swamp, hill, crevasse, or some other
 difficult or impassable terrain. A pond can be made to seem like a

@@ -9,7 +9,7 @@ Color Spray
 
 **Casting Time:** 1 action
 
-**Range:** Self (15 foot cone)
+**Range:** Self (15 foot :ref:`srd:cone`)
 
 **Components:** V, S, M (a pinch of powder or sand that is colored red,
 yellow, and blue)
@@ -18,7 +18,7 @@ yellow, and blue)
 
 A dazzling array of flashing, colored light springs from your hand. Roll
 6d10; the total is how many hit points of creatures this spell can
-effect. Creatures in a 15 foot cone originating from you are affected in
+effect. Creatures in a 15 foot :ref:`srd:cone` originating from you are affected in
 ascending order of their current hit points (ignoring unconscious
 creatures and creatures that can't see).
 

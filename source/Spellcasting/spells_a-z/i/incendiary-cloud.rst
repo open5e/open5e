@@ -16,7 +16,7 @@ Incendiary Cloud
 **Duration:** Concentration, up to 1 minute
 
 A swirling cloud of smoke shot through with white hot embers appears in
-a 20 foot radius sphere centered on a point within range. The cloud
+a 20 foot radius :ref:`srd:sphere` centered on a point within range. The cloud
 spreads around corners and is heavily obscured. It lasts for the
 duration or until a wind of moderate or greater speed (at least 10 miles
 per hour) disperses it.

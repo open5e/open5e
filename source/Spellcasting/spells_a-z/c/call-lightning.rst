@@ -15,7 +15,7 @@ Call Lightning
 
 **Duration:** Concentration, up to 10 minutes
 
-A storm cloud appears in the shape of a cylinder that is 10 feet tall
+A storm cloud appears in the shape of a :ref:`srd:cylinder` that is 10 feet tall
 with a 60 foot radius, centered on a point you can see 100 feet directly
 above you. The spell fails if you can't see a point in the air where the
 storm cloud could appear (for example, if you are in a room that can't

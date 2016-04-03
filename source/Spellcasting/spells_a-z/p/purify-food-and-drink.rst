@@ -15,6 +15,6 @@ Purify Food and Drink
 
 **Duration:** Instantaneous
 
-All nonmagical food and drink within a 5 foot radius sphere centered on
+All nonmagical food and drink within a 5 foot radius :ref:`srd:sphere` centered on
 a point of your choice within range is purified and rendered free of
 poison and disease.

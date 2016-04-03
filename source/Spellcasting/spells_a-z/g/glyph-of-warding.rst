@@ -48,7 +48,7 @@ certain password.
 When you inscribe the glyph, choose explosive runes or a spell glyph.
 
 **Explosive Runes.** When triggered, the glyph erupts with magical
-energy in a 20 foot radius sphere centered on the glyph. The sphere
+energy in a 20 foot radius :ref:`srd:sphere` centered on the glyph. The :ref:`srd:sphere`
 spreads around corners. Each creature in the area must make a Dexterity
 saving throw. A creature takes 5d8 acid, cold, fire, lightning, or
 thunder damage on a failed saving throw (your choice when you create the

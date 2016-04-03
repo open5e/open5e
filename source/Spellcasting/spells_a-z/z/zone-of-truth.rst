@@ -16,7 +16,7 @@ Zone of Truth
 **Duration:** 10 minutes
 
 You create a magical zone that guards against deception in a 15 foot
-radius sphere centered on a point of your choice within range. Until the
+radius :ref:`srd:sphere` centered on a point of your choice within range. Until the
 spell ends, a creature that enters the spell's area for the first time
 on a turn or starts its turn there must make a Charisma saving throw. On
 a failed save, a creature can't speak a deliberate lie while in the

@@ -16,7 +16,7 @@ Sleet Storm
 **Duration:** Concentration, up to 1 minute
 
 Until the spell ends, freezing rain and sleet fall in a 20 foot tall
-cylinder with a 40 foot radius centered on a point you choose within
+:ref:`srd:cylinder` with a 40 foot radius centered on a point you choose within
 range. The area is heavily obscured, and exposed flames in the area are
 doused.
 
