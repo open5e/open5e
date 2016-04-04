@@ -58,6 +58,7 @@ wound. Each time the devil hits the wounded target with this attack, the
 damage dealt by the wound increases by 10 (3d6). Any creature can take
 an action to stanch the wound with a successful DC 12 Wisdom (Medicine)
 check. The wound also closes if the target receives magical healing.
+
 **Hurl Flame**: Ranged Spell Attack: +7 to hit, range 150 ft., one
 target. *Hit*: 14 (4d6) fire damage. If the target is a flammable object
 that isn't being worn or carried, it also catches fire.

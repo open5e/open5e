@@ -33,8 +33,9 @@ paralyzed, petrified, poisoned, prone, restrained
 **Challenge** 4 (1,100 XP)
 
 **Ethereal Sight**: The ghost can see 60 feet into the Ethereal Plane
-when it is on the Material Plane, and vice versa. **Incorporeal
-Movement**: The ghost can move through other creatures and objects as if
+when it is on the Material Plane, and vice versa. 
+
+**Incorporeal Movement**: The ghost can move through other creatures and objects as if
 they were difficult terrain. It takes 5 (1d10) force damage if it ends
 its turn inside an object.
 

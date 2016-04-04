@@ -28,7 +28,7 @@ Huge giant, neutral good (50%) or neutral evil (50%)
 
 **Challenge** 9 (5,000 XP)
 
-**Keen Smell:** The giant has advantage on Wisdom (Perception) checks
+**Keen Smell**: The giant has advantage on Wisdom (Perception) checks
 that rely on smell.
 
 **Innate Spellcasting**: The giant's innate

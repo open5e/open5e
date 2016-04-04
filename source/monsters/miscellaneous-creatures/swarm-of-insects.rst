@@ -29,7 +29,7 @@ petrified, prone, restrained, stunned
 
 **Challenge** 1/2 (100 XP)
 
-**Swarm.** The swarm can occupy another creature's space and vice versa,
+**Swarm**: The swarm can occupy another creature's space and vice versa,
 and the swarm can move through any opening large enough for a Tiny
 insect. The swarm can't regain hit points or gain temporary hit points.
 

@@ -26,7 +26,7 @@ Huge giant, chaotic good
 
 **Damage Immunities** lightning, thunder
 
-**Senses**: passive Perception 19
+**Senses** passive Perception 19
 
 **Languages** Common, Giant
 

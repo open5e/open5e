@@ -34,7 +34,7 @@ on Wisdom (Perception) checks that rely on hearing or sight.
 
 **Skills** Perception +4, Stealth +6
 
-**Senses**: passive Perception 14
+**Senses** passive Perception 14
 
 **Languages** ---
 

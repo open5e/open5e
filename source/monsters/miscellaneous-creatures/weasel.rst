@@ -20,7 +20,7 @@ Tiny beast, unaligned
 
 **Skills** Perception +3, Stealth +5
 
-**Senses**: passive Perception 13
+**Senses** passive Perception 13
 
 **Languages** ---
 

@@ -45,7 +45,9 @@ damage from the attack.
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Multiattack**: The doppelganger makes two melee attacks. **Slam**:
+**Multiattack**: The doppelganger makes two melee attacks. 
+
+**Slam**:
 *Melee Weapon Attack*: +6 to hit, reach 5 ft., one target. *Hit*: 7 (1d6
 + 4) bludgeoning damage.
 

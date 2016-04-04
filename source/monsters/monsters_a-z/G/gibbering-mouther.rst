@@ -55,7 +55,7 @@ target is Medium or smaller, it must succeed on a DC 10 Strength saving
 throw or be knocked prone. If the target is killed by this damage, it is
 absorbed into the mouther.
 
-**Blinding Spittle (Recharge 5-6**: The
+**Blinding Spittle (Recharge 5-6)**: The
 mouther spits a chemical glob at a point it can see within 15 feet of
 it. The glob explodes in a blinding flash of light on impact. Each
 creature within 5 feet of the flash must succeed on a DC 13 Dexterity

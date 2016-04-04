@@ -30,9 +30,10 @@ Medium humanoid (any race), any non-good alignment
 
 **Challenge** 8 (3,900 XP)
 
-**Assassinate.** During its first turn, the assassin has advantage on
+**Assassinate**: During its first turn, the assassin has advantage on
 attack rolls against any creature that hasn't taken a turn. Any hit the
 assassin scores against a surprised creature is a critical hit.
+
 **Evasion**: If the assassin is subjected to an effect that allows it to
 make a Dexterity saving throw to take only half damage, the assassin
 instead takes no damage if it succeeds on the saving throw, and only

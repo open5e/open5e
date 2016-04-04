@@ -28,6 +28,7 @@ Large monstrosity, neutral evil
 
 **False Appearance**: While the roper remains motionless, it is
 indistinguishable from a normal cave formation, such as a stalagmite.
+
 **Grasping Tendrils**: The roper can have up to six tendrils at a time.
 Each tendril can be attacked (AC 20; 10 hit points; immunity to poison
 and psychic damage). Destroying a tendril deals no damage to the roper,

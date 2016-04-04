@@ -26,8 +26,11 @@ Huge beast, unaligned
 
 **Challenge** 3 (700 XP)
 
-**Echolocation. The whale can't use its blindsight while deafened.**
-**Hold Breath**: The whale can hold its breath for 30 minutes. **Keen
+**Echolocation**: The whale can't use its blindsight while deafened.
+
+**Hold Breath**: The whale can hold its breath for 30 minutes. 
+
+**Keen
 Hearing**: The whale has advantage on Wisdom (Perception) checks that
 rely on hearing.
 

@@ -18,7 +18,7 @@ Large beast, unaligned
 | 16 (+3)   | 10 (+0)   | 12 (+1)   | 2 (-4)   | 11 (+0)   | 7 (-2)   |
 +-----------+-----------+-----------+----------+-----------+----------+
 
-**Senses**: passive Perception 10
+**Senses** passive Perception 10
 
 **Languages** ---
 

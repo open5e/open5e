@@ -24,7 +24,7 @@ Small beast, unaligned
 
 **Challenge** 0 (10 XP)
 
-**Illumination.** The beetle sheds bright light in a 10-foot radius and
+**Illumination**: The beetle sheds bright light in a 10-foot radius and
 dim light for an additional 10 feet.
 
 Actions

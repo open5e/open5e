@@ -35,6 +35,7 @@ nonmagical attacks that aren't silvered
 
 **Hellish Weapons**: The erinyes's weapon attacks are magical and deal
 an extra 13 (3d8) poison damage on a hit (included in the attacks).
+
 **Magic Resistance**: The erinyes has advantage on saving throws against
 spells and other magical effects.
 

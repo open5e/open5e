@@ -12,7 +12,7 @@ apply the template only to a creature that meets the optional
 prerequisite in the Table: Breath Weapons below. Otherwise, recalculate
 the rating after you apply the template.
 
-**Senses**: The half-dragon gains blindsight with a radius of 10 feet
+**Senses** The half-dragon gains blindsight with a radius of 10 feet
 and darkvision with a radius of 60 feet.
 
 **Damage Resistances**: The half-dragon gains resistance to a type of

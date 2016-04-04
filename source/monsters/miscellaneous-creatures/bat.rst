@@ -23,6 +23,7 @@ Tiny beast, unaligned
 **Languages** ---
 
 **Echolocation**: The bat can't use its blindsight while deafened.
+
 **Keen Hearing**: The bat has advantage on Wisdom (Perception) checks
 that rely on hearing.
 

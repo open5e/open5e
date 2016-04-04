@@ -22,7 +22,7 @@ Large giant, lawful evil
 
 **Skills** Arcana +5, Deception +8, Perception +4
 
-**Senses**: darkvision 60 ft., passive Perception 14
+**Senses** darkvision 60 ft., passive Perception 14
 
 **Languages** Common, Giant
 

@@ -33,6 +33,7 @@ nonmagical attacks
 
 **Heated Body**: A creature that touches the salamander or hits it with
 a melee attack while within 5 feet of it takes 7 (2d6) fire damage.
+
 **Heated Weapons**: Any metal melee weapon the salamander wields deals
 an extra 3 (1d6) fire damage on a hit (included in the attack).
 

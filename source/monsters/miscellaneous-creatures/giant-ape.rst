@@ -20,7 +20,7 @@ Huge beast, unaligned
 
 **Skills** Athletics +9, Perception +4
 
-**Senses**: passive Perception 14
+**Senses** passive Perception 14
 
 **Languages** ---
 

@@ -16,6 +16,7 @@ regaining hit points, and paralyzed while poisoned in this way.
 
 **Swarm
 of Spiders**: A swarm of spiders has the following additional traits.
+
 **Spider Climb**: The swarm can climb difficult surfaces, including
 upside down on ceilings, without needing to make an ability check.
 

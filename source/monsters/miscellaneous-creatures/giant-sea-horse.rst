@@ -28,6 +28,7 @@ Large beast, unaligned
 target and then hits it with a ram attack on the same turn, the target
 takes an extra 7 (2d6) bludgeoning damage. It the target is a creature,
 it must succeed on a DC 11 Strength saving throw or be knocked prone.
+
 **Water Breathing**: The sea horse can breathe only underwater.
 
 Actions

@@ -24,7 +24,7 @@ Medium elemental, lawful neutral
 
 **Condition Immunities** poisoned
 
-**Senses**: passive Perception 11
+**Senses** passive Perception 11
 
 **Languages** Ignan
 
@@ -35,6 +35,7 @@ melee attack while within 5 feet of it takes 5 (1d10) fire damage.
 
 **Heated Weapons**: When the azer hits with a metal melee weapon, it
 deals an extra 3 (1d6) fire damage (included in the attack).
+
 **Illumination**: The azer sheds bright light in a 10-foot radius and
 dim light for an additional 10 feet.
 

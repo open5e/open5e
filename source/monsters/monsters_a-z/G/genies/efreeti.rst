@@ -39,10 +39,10 @@ requiring no material components:
 
 **At will**: :ref:`srd:detect-magic`
 
-**3/day:**
+**3/day**:
 :ref:`srd:enlarge-reduce`, :ref:`srd:tongues`
 
-**1/day each:** :ref:`srd:conjure-elemental` (fire
+**1/day each**: :ref:`srd:conjure-elemental` (fire
 elemental only), :ref:`srd:gaseous-form`, :ref:`srd:invisibility`, :ref:`srd:major-image`,
 :ref:`srd:plane-shift`, :ref:`srd:wall-of-fire`
 

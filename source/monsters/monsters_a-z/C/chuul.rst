@@ -37,7 +37,9 @@ Large aberration, chaotic evil
 
 **Challenge** 4 (1,100 XP)
 
-**Amphibious**: The chuul can breathe air and water. **Sense Magic**:
+**Amphibious**: The chuul can breathe air and water. 
+
+**Sense Magic**:
 The chuul senses magic within 120 feet of it at will. This trait
 otherwise works like the *detect magic* spell but isn't itself magical.
 

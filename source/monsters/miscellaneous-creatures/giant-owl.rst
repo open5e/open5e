@@ -28,7 +28,9 @@ can't speak them
 **Challenge** 1/4 (50 XP)
 
 **Flyby**: The owl doesn't provoke opportunity attacks when it flies out
-of an enemy's reach. **Keen Hearing and Sight**: The owl has advantage
+of an enemy's reach. 
+
+**Keen Hearing and Sight**: The owl has advantage
 on Wisdom (Perception) checks that rely on hearing or sight.
 
 Actions

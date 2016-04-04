@@ -20,7 +20,7 @@ Large beast, unaligned
 
 **Skills** Perception +3, Stealth +6
 
-**Senses**: passive Perception 13
+**Senses** passive Perception 13
 
 **Languages** ---
 

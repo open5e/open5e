@@ -30,11 +30,11 @@ Medium fey, neutral
 Charisma (spell save DC 14). The dryad can innately cast the following
 spells, requiring no material components:
 
-**At will:** :ref:`srd:druidcraft`
+**At will**: :ref:`srd:druidcraft`
 
-**3/day each:** :ref:`srd:entangle`, :ref:`srd:goodberry`
+**3/day each**: :ref:`srd:entangle`, :ref:`srd:goodberry`
 
-**1/day each:** :ref:`srd:barkskin`, :ref:`srd:pass-without-trace`, :ref:`srd:shillelagh`
+**1/day each**: :ref:`srd:barkskin`, :ref:`srd:pass-without-trace`, :ref:`srd:shillelagh`
 
 **Magic Resistance**: The dryad has advantage on saving throws against
 spells and other magical effects.

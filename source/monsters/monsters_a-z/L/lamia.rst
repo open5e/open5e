@@ -20,7 +20,7 @@ Large monstrosity, chaotic evil
 
 **Skills** Deception +7, Insight +4, Stealth +3
 
-**Senses**: darkvision 60 ft., passive Perception 12
+**Senses** darkvision 60 ft., passive Perception 12
 
 **Languages** Abyssal, Common
 

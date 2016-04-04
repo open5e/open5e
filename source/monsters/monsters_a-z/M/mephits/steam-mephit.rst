@@ -40,7 +40,9 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Claws**: *Melee Weapon Attack*: +2 to hit, reach 5 ft., one creature.
-*Hit*: 2 (1d4) slashing damage plus 2 (1d4) fire damage. **Steam Breath
+*Hit*: 2 (1d4) slashing damage plus 2 (1d4) fire damage. 
+
+**Steam Breath
 (Recharge 6)**: The mephit exhales a 15- foot cone of scalding steam.
 Each creature in that area must succeed on a DC 10 Dexterity saving
 throw, taking 4 (1d8) fire damage on a failed save, or half as much

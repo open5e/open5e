@@ -26,7 +26,7 @@ Tiny beast, unaligned
 
 **Challenge** 0 (10 XP)
 
-**Mimicry.** The raven can mimic simple sounds it has heard, such as a
+**Mimicry**: The raven can mimic simple sounds it has heard, such as a
 person whispering, a baby crying, or an animal chittering. A creature
 that hears the sounds can tell they are imitations with a successful DC
 10 Wisdom (Insight) check.

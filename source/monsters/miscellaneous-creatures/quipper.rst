@@ -24,8 +24,10 @@ Tiny beast, unaligned
 
 **Challenge** 0 (10 XP)
 
-**Blood Frenzy.** The quipper has advantage on melee attack rolls
-against any creature that doesn't have all its hit points. **Water
+**Blood Frenzy**: The quipper has advantage on melee attack rolls
+against any creature that doesn't have all its hit points. 
+
+**Water
 Breathing**: The quipper can breathe only underwater.
 
 Actions
