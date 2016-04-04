@@ -32,7 +32,7 @@ Sphinx documentation pages are written using a markup language called [reStructu
 
 ## Editing the theme
 
-If you are going to change the theme, you'll need [sass](http://sass-lang.com/ and [grunt](http://gruntjs.com/). If you don't already have [npm](https://www.npmjs.com/package/npm) and [ruby](https://www.ruby-lang.org/en/documentation/installation/) you'll also need to install them.
+If you are going to change the theme, you'll need [sass](http://sass-lang.com/) and [grunt](http://gruntjs.com/). If you don't already have [npm](https://www.npmjs.com/package/npm) and [ruby](https://www.ruby-lang.org/en/documentation/installation/) you'll also need to install them.
 
 Find out if you already have npm and ruby:
 
