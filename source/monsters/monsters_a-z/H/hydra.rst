@@ -30,8 +30,8 @@ Huge monstrosity, unaligned
 
 **Multiple
 Heads**: The hydra has five heads. While it has more than one head, the
-hydra has advantage on saving throws against being blinded, charmed,
-deafened, frightened, stunned, and knocked unconscious. Whenever the
+hydra has advantage on saving throws against being :ref:`srd:blinded`, :ref:`srd:charmed`,
+:ref:`srd:deafened`, :ref:`srd:frightened`, :ref:`srd:stunned`, and knocked :ref:`srd:unconscious`. Whenever the
 hydra takes 25 or more damage in a single turn, one of its heads dies.
 If all its heads die, the hydra dies. At the end of its turn, it grows
 two heads for each of its heads that died since its last turn, unless it

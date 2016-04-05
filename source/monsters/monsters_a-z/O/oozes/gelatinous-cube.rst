@@ -18,8 +18,8 @@ Large ooze, unaligned
 | 14 (+2)   | 3 (-4)   | 20 (+5)   | 1 (-5)   | 6 (-2)   | 1 (-5)   |
 +-----------+----------+-----------+----------+----------+----------+
 
-**Condition Immunities** blinded, charmed, deafened, exhaustion,
-frightened, prone
+**Condition Immunities** :ref:`srd:blinded`, :ref:`srd:charmed`, :ref:`srd:deafened`, :ref:`srd:exhaustion`,
+:ref:`srd:frightened`, :ref:`srd:prone`
 
 **Senses** blindsight 60 ft. (blind beyond this radius), passive
 Perception 8
@@ -57,7 +57,7 @@ can choose to be pushed 5 feet back or to the side of the cube. A
 creature that chooses not to be pushed suffers the consequences of a
 failed saving throw. On a failed save, the cube enters the creature's
 space, and the creature takes 10 (3d6) acid damage and is engulfed. The
-engulfed creature can't breathe, is restrained, and takes 21 (6d6) acid
+engulfed creature can't breathe, is :ref:`srd:restrained`, and takes 21 (6d6) acid
 damage at the start of each of the cube's turns. When the cube moves,
 the engulfed creature moves with it. An engulfed creature can try to
 escape by taking an action to make a DC 12 Strength check. On a success,

@@ -42,8 +42,8 @@ hearing or smell.
 **Pounce (Tiger or Hybrid Form Only)**: If the
 weretiger moves at least 15 feet straight toward a creature and then
 hits it with a claw attack on the same turn, that target must succeed on
-a DC 14 Strength saving throw or be knocked prone. If the target is
-prone, the weretiger can make one bite attack against it as a bonus
+a DC 14 Strength saving throw or be knocked :ref:`srd:prone`. If the target is
+:ref:`srd:prone`, the weretiger can make one bite attack against it as a bonus
 action.
 
 Actions

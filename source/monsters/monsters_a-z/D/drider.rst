@@ -27,7 +27,7 @@ Large monstrosity, chaotic evil
 **Challenge** 6 (2,300 XP)
 
 **Fey Ancestry**: The drider has advantage on saving throws against
-being charmed, and magic can't put the drider to sleep.
+being :ref:`srd:charmed`, and magic can't put the drider to sleep.
 
 **Innate
 Spellcasting**: The drider's innate spellcasting ability is Wisdom

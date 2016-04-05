@@ -27,7 +27,7 @@ nonmagical attacks that aren't silvered
 
 **Damage Immunities** fire, poison
 
-**Condition Immunities** poisoned
+**Condition Immunities** :ref:`srd:poisoned`
 
 **Senses** darkvision 120 ft., passive Perception 12
 
@@ -53,6 +53,6 @@ ft., one target. *Hit*: 8 (1d8 + 4) slashing damage.
 **Sting**: *Melee
 Weapon Attack*: +8 to hit, reach 10 ft., one target. *Hit*: 13 (2d8 + 4)
 piercing damage plus 17 (5d6) poison damage, and the target must succeed
-on a DC 14 Constitution saving throw or become poisoned for 1 minute.
+on a DC 14 Constitution saving throw or become :ref:`srd:poisoned` for 1 minute.
 The target can repeat the saving throw at the end of each of its turns,
 ending the effect on itself on a success.

@@ -17,7 +17,7 @@ Irresistible Dance
 
 Choose one creature that you can see within range. The target begins a
 comic dance in place: shuffling, tapping its feet, and capering for the
-duration. Creatures that can't be charmed are immune to this spell.
+duration. Creatures that can't be :ref:`srd:charmed` are immune to this spell.
 
 A dancing creature must use all its movement to dance without leaving
 its space and has disadvantage on Dexterity saving throws and attack

@@ -24,7 +24,7 @@ Large beast, unaligned
 
 **Challenge** 1/4 (50 XP)
 
-**Echolocation. The bat can't use its blindsight while deafened.**
+**Echolocation. The bat can't use its blindsight while :ref:`srd:deafened`.**
 **Keen Hearing**: The bat has advantage on Wisdom (Perception) checks
 that rely on hearing.
 

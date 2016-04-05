@@ -10,7 +10,7 @@ Wand of Paralysis
 This wand has 7 charges. While holding it, you can use an action to
 expend 1 of its charges to cause a thin blue ray to streak from the tip
 toward a creature you can see within 60 feet of you. The target must
-succeed on a DC 15 Constitution saving throw or be paralyzed for 1
+succeed on a DC 15 Constitution saving throw or be :ref:`srd:paralyzed` for 1
 minute. At the end of each of the target's turns, it can repeat the
 saving throw, ending the effect on itself on a success.
 

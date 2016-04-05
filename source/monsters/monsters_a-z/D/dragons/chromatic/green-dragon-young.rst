@@ -24,7 +24,7 @@ Large dragon, lawful evil
 
 **Damage Immunities** poison
 
-**Condition Immunities** poisoned
+**Condition Immunities** :ref:`srd:poisoned`
 
 **Senses** blindsight 30 ft., darkvision 120 ft., passive Perception 17
 

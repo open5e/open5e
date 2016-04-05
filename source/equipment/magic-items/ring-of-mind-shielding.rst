@@ -12,7 +12,7 @@ creatures to read your thoughts, determine whether you are lying, know
 your alignment, or know your creature type. Creatures can telepathically
 communicate with you only if you allow it.
 
-You can use an action to cause the ring to become invisible until you
+You can use an action to cause the ring to become :ref:`srd:invisible` until you
 use another action to make it visible, until you remove the ring, or
 until you die.
 

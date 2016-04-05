@@ -20,7 +20,7 @@ Tiny construct, neutral
 
 **Damage Immunities** poison
 
-**Condition Immunities** charmed, poisoned
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:poisoned`
 
 **Senses** darkvision 60 ft., passive Perception 10
 
@@ -37,6 +37,6 @@ Actions
 
 **Bite**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one creature.
 *Hit*: 1 piercing damage, and the target must succeed on a DC 10
-Constitution saving throw or be poisoned for 1 minute. If the saving
-throw fails by 5 or more, the target is instead poisoned for 5 (1d10)
-minutes and unconscious while poisoned in this way.
+Constitution saving throw or be :ref:`srd:poisoned` for 1 minute. If the saving
+throw fails by 5 or more, the target is instead :ref:`srd:poisoned` for 5 (1d10)
+minutes and :ref:`srd:unconscious` while :ref:`srd:poisoned` in this way.

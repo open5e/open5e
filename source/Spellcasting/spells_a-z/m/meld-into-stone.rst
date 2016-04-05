@@ -33,5 +33,5 @@ destruction or a change in its shape (to the extent that you no longer
 fit within it) expels you and deals 6d6 bludgeoning damage to you. The
 stone's complete destruction (or transmutation into a different
 substance) expels you and deals 50 bludgeoning damage to you. If
-expelled, you fall prone in an unoccupied space closest to where you
+expelled, you fall :ref:`srd:prone` in an unoccupied space closest to where you
 first entered.

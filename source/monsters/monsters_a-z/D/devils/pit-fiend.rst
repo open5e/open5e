@@ -25,7 +25,7 @@ nonmagical attacks that aren't silvered
 
 **Damage Immunities** fire, poison
 
-**Condition Immunities** poisoned
+**Condition Immunities** :ref:`srd:poisoned`
 
 **Senses** truesight 120 ft., passive Perception 14
 
@@ -35,8 +35,8 @@ nonmagical attacks that aren't silvered
 
 **Fear Aura**: Any creature hostile to the pit fiend that starts its
 turn within 20 feet of the pit fiend must make a DC 21 Wisdom saving
-throw, unless the pit fiend is incapacitated. On a failed save, the
-creature is frightened until the start of its next turn. If a creature's
+throw, unless the pit fiend is :ref:`srd:incapacitated`. On a failed save, the
+creature is :ref:`srd:frightened` until the start of its next turn. If a creature's
 saving throw is successful, the creature is immune to the pit fiend's
 Fear Aura for the next 24 hours.
 
@@ -63,9 +63,9 @@ one with its claw, one with its mace, and one with its tail.
 **Bite**:
 *Melee Weapon Attack*: +14 to hit, reach 5 ft., one target. *Hit*: 22
 (4d6 + 8) piercing damage. The target must succeed on a DC 21
-Constitution saving throw or become poisoned. While poisoned in this
+Constitution saving throw or become :ref:`srd:poisoned`. While :ref:`srd:poisoned` in this
 way, the target can't regain hit points, and it takes 21 (6d6) poison
-damage at the start of each of its turns. The poisoned target can repeat
+damage at the start of each of its turns. The :ref:`srd:poisoned` target can repeat
 the saving throw at the end of each of its turns, ending the effect on
 itself on a success.
 

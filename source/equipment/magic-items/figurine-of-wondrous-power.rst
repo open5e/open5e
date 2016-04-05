@@ -84,8 +84,8 @@ differently from the others. Their properties are as follows:
    when the goat reverts to figurine form. In addition, the goat radiates a
    30-foot-radius aura of terror while you are riding it. Any creature
    hostile to you that starts its turn in the aura must succeed on a DC
-   15 Wisdom saving throw or be frightened of the goat for 1 minute, or
-   until the goat reverts to figurine form. The frightened creature can
+   15 Wisdom saving throw or be :ref:`srd:frightened` of the goat for 1 minute, or
+   until the goat reverts to figurine form. The :ref:`srd:frightened` creature can
    repeat the saving throw at the end of each of its turns, ending the
    effect on itself on a success. Once it successfully saves against the
    effect, a creature is immune to the goat's aura for the next 24
@@ -111,7 +111,7 @@ form.
 **Onyx Dog (Rare).** This onyx statuette of a dog can become a mastiff
 for up to 6 hours. The mastiff has an Intelligence of 8 and can speak
 Common. It also has darkvision out to a range of 60 feet and can see
-invisible creatures and objects within that range. Once it has been
+:ref:`srd:invisible` creatures and objects within that range. Once it has been
 used, it can't be used again until 7 days have passed.
 
 **Serpentine Owl (Rare).** This serpentine statuette of an owl can

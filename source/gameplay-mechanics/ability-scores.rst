@@ -584,7 +584,7 @@ combat.
     give away your position if you make noise, such as shouting a
     warning or knocking over a vase.
 
-    An invisible creature can always try to hide. Signs of its passage
+    An :ref:`srd:invisible` creature can always try to hide. Signs of its passage
     might still be noticed, and it does have to stay quiet.
 
     In combat, most creatures stay alert for signs of danger all around,

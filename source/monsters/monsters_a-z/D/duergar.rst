@@ -28,7 +28,7 @@ Medium humanoid (dwarf), lawful evil
 
 **Duergar Resilience**: The duergar has advantage on saving throws
 against poison, spells, and illusions, as well as to resist being
-charmed or paralyzed.
+:ref:`srd:charmed` or :ref:`srd:paralyzed`.
 
 **Sunlight Sensitivity**: While in sunlight, the
 duergar has disadvantage on attack rolls, as well as on Wisdom
@@ -55,7 +55,7 @@ target. *Hit*: 5 (1d6 + 2) piercing damage, or 9 (2d6 + 2) piercing
 damage while enlarged.
 
 **Invisibility (Recharges after a Short or Long
-Rest)**: The duergar magically turns invisible until it attacks, casts a
+Rest)**: The duergar magically turns :ref:`srd:invisible` until it attacks, casts a
 spell, or uses its Enlarge, or until its concentration is broken, up to
 1 hour (as if concentrating on a spell). Any equipment the duergar wears
-or carries is invisible with it.
+or carries is :ref:`srd:invisible` with it.

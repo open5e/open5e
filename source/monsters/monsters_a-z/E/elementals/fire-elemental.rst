@@ -23,8 +23,8 @@ nonmagical attacks
 
 **Damage Immunities** fire, poison
 
-**Condition Immunities** exhaustion, grappled, paralyzed, petrified,
-poisoned, prone, restrained, unconscious
+**Condition Immunities** :ref:`srd:exhaustion`, :ref:`srd:grappled`, :ref:`srd:paralyzed`, :ref:`srd:petrified`,
+:ref:`srd:poisoned`, :ref:`srd:prone`, :ref:`srd:restrained`, :ref:`srd:unconscious`
 
 **Senses** darkvision 60 ft., passive Perception 10
 

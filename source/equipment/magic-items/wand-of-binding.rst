@@ -17,6 +17,6 @@ some of its charges to cast one of the following spells (save DC 17):
 
 **Assisted Escape.** While holding the wand, you can use your reaction
 to expend 1 charge and gain advantage on a saving throw you make to
-avoid being paralyzed or restrained, or you can expend 1 charge and gain
+avoid being :ref:`srd:paralyzed` or :ref:`srd:restrained`, or you can expend 1 charge and gain
 advantage on any check you make to escape a grapple.
 

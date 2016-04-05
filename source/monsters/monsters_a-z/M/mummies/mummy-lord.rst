@@ -27,8 +27,8 @@ Medium undead, lawful evil
 **Damage Immunities** necrotic, poison; bludgeoning, piercing, and
 slashing from nonmagical attacks
 
-**Condition Immunities** charmed, exhaustion, frightened, paralyzed,
-poisoned
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:exhaustion`, :ref:`srd:frightened`, :ref:`srd:paralyzed`,
+:ref:`srd:poisoned`
 
 **Senses** darkvision 60 ft., passive Perception 14;
 
@@ -83,8 +83,8 @@ curse spell or other magic.
 **Dreadful Glare**: The mummy lord targets
 one creature it can see within 60 feet of it. If the target can see the
 mummy lord, it must succeed on a DC 16 Wisdom saving throw against this
-magic or become frightened until the end of the mummy's next turn. If
-the target fails the saving throw by 5 or more, it is also paralyzed for
+magic or become :ref:`srd:frightened` until the end of the mummy's next turn. If
+the target fails the saving throw by 5 or more, it is also :ref:`srd:paralyzed` for
 the same duration. A target that succeeds on the saving throw is immune
 to the Dreadful Glare of all mummies and mummy lords for the next 24
 hours.
@@ -103,13 +103,13 @@ uses its Dreadful Glare.
 **Blinding Dust**: Blinding dust and sand
 swirls magically around the mummy lord. Each creature within 5 feet of
 the mummy lord must succeed on a DC 16 Constitution saving throw or be
-blinded until the end of the creature's next turn.
+:ref:`srd:blinded` until the end of the creature's next turn.
 
 **Blasphemous Word
 (Costs 2 Actions)**: The mummy lord utters a blasphemous word. Each
 non-undead creature within 10 feet of the mummy lord that can hear the
 magical utterance must succeed on a DC 16 Constitution saving throw or
-be stunned until the end of the mummy lord's next turn.
+be :ref:`srd:stunned` until the end of the mummy lord's next turn.
 
 **Channel
 Negative Energy (Costs 2 Actions)**: The mummy lord magically unleashes
@@ -121,5 +121,5 @@ the end of the mummy lord's next turn.
 Actions)**: The mummy lord magically transforms into a whirlwind of
 sand, moves up to 60 feet, and reverts to its normal form. While in
 whirlwind form, the mummy lord is immune to all damage, and it can't be
-grappled, petrified, knocked prone, restrained, or stunned. Equipment
+:ref:`srd:grappled`, :ref:`srd:petrified`, knocked :ref:`srd:prone`, :ref:`srd:restrained`, or :ref:`srd:stunned`. Equipment
 worn or carried by the mummy lord remain in its possession.

@@ -18,7 +18,7 @@ charge and command another creature to flee or grovel, as with the
 **Cone of Fear.** While holding the wand, you can use an action to
 expend 2 charges, causing the wand's tip to emit a 60-foot cone of
 amber light. Each creature in the cone must succeed on a DC 15 Wisdom
-saving throw or become frightened of you for 1 minute. While it is
+saving throw or become :ref:`srd:frightened` of you for 1 minute. While it is
 frightened in this way, a creature must spend its turns trying to move
 as far away from you as it can, and it can't willingly move to a space
 within 30 feet of you. It also can't take reactions. For its action, it

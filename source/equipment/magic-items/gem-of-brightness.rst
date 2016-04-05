@@ -19,7 +19,7 @@ effects:
 -  The second command word expends 1 charge and causes the gem to fire a
    brilliant beam of light at one creature you can see within 60 feet of
    you. The creature must succeed on a DC 15 Constitution saving throw
-   or become blinded for 1 minute. The creature can repeat the saving
+   or become :ref:`srd:blinded` for 1 minute. The creature can repeat the saving
    throw at the end of each of its turns, ending the effect on itself on
    a success.
 

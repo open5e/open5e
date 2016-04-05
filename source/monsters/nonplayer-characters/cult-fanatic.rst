@@ -27,7 +27,7 @@ Medium humanoid (any race), any non-good alignment
 **Challenge** 2 (450 XP)
 
 **Dark Devotion**: The fanatic has advantage on saving throws against
-being charmed or frightened.
+being :ref:`srd:charmed` or :ref:`srd:frightened`.
 
 **Spellcasting**: The fanatic is a
 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC

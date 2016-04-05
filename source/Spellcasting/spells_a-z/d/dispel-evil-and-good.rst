@@ -24,9 +24,9 @@ You can end the spell early by using either of the following special
 functions.
 
 **Break Enchantment.** As your action, you touch a creature you can
-reach that is charmed, frightened, or possessed by a celestial, an
+reach that is :ref:`srd:charmed`, :ref:`srd:frightened`, or possessed by a celestial, an
 elemental, a fey, a fiend, or an undead. The creature you touch is no
-longer charmed, frightened, or possessed by such creatures.
+longer :ref:`srd:charmed`, :ref:`srd:frightened`, or possessed by such creatures.
 
 **Dismissal.** As your action, make a melee spell attack against a
 celestial, an elemental, a fey, a fiend, or an undead you can reach. On

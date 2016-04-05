@@ -9,5 +9,5 @@ Ring of Free Action
 
 While you wear this ring, difficult terrain doesn't cost you extra
 movement. In addition, magic can
-neither reduce your speed nor cause you to be paralyzed or restrained.
+neither reduce your speed nor cause you to be :ref:`srd:paralyzed` or :ref:`srd:restrained`.
 

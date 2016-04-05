@@ -21,7 +21,7 @@ consumes)
 You and up to eight willing creatures within range project your astral
 bodies into the Astral Plane (the spell fails and the casting is wasted
 if you are already on that plane). The material body you leave behind is
-unconscious and in a state of suspended animation; it doesn't need food
+:ref:`srd:unconscious` and in a state of suspended animation; it doesn't need food
 or air and doesn't age.
 
 Your astral body resembles your mortal form in almost every way,

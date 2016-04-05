@@ -29,7 +29,7 @@ purpose of determining its carrying capacity.
 
 **Sure-Footed**: The mule
 has advantage on Strength and Dexterity saving throws made against
-effects that would knock it prone.
+effects that would knock it :ref:`srd:prone`.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

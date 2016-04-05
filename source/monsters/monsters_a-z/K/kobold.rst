@@ -30,7 +30,7 @@ sight.
 
 **Pack Tactics**: The kobold has advantage on an attack roll
 against a creature if at least one of the kobold's allies is within 5
-feet of the creature and the ally isn't incapacitated.
+feet of the creature and the ally isn't :ref:`srd:incapacitated`.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

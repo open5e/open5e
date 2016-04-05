@@ -42,6 +42,6 @@ ft., one target. *Hit*: 27 (4d8 + 9) piercing damage.
 
 **Talons**: *Melee
 Weapon Attack*: +13 to hit, reach 5 ft., one target. *Hit*: 23 (4d6 + 9)
-slashing damage, and the target is grappled (escape DC 19). Until this
-grapple ends, the target is restrained, and the roc can't use its talons
+slashing damage, and the target is :ref:`srd:grappled` (escape DC 19). Until this
+grapple ends, the target is :ref:`srd:restrained`, and the roc can't use its talons
 on another target.

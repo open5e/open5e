@@ -57,9 +57,9 @@ Otherwise, a creature must take an action to visually inspect the
 illusion and succeed on a DC 20 Intelligence (Investigation) check to
 discern that the hag is disguised.
 
-**Invisible Passage**: The hag
-magically turns invisible until she attacks or casts a spell, or until
+**:ref:`srd:Invisible` Passage**: The hag
+magically turns :ref:`srd:invisible` until she attacks or casts a spell, or until
 her concentration ends (as if concentrating on a spell). While
-invisible, she leaves no physical evidence of her passage, so she can be
-tracked only by magic. Any equipment she wears or carries is invisible
+:ref:`srd:invisible`, she leaves no physical evidence of her passage, so she can be
+tracked only by magic. Any equipment she wears or carries is :ref:`srd:invisible`
 with her.

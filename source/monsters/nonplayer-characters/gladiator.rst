@@ -29,7 +29,7 @@ Medium humanoid (any race), any alignment
 **Challenge** 5 (1,800 XP)
 
 **Brave**: The gladiator has advantage on saving throws against being
-frightened.
+:ref:`srd:frightened`.
 
 **Brute**: A melee weapon deals one extra die of its damage
 when the gladiator hits with it (included in the attack).
@@ -48,7 +48,7 @@ melee attack.
 **Shield Bash**: *Melee Weapon Attack*: +7 to hit, reach 5
 ft., one creature. *Hit*: 9 (2d4 + 4) bludgeoning damage. If the target
 is a Medium or smaller creature, it must succeed on a DC 15 Strength
-saving throw or be knocked prone.
+saving throw or be knocked :ref:`srd:prone`.
 
 Reactions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

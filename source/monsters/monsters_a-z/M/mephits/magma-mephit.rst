@@ -24,7 +24,7 @@ Small elemental, neutral evil
 
 **Damage Immunities** fire, poison
 
-**Condition Immunities** poisoned
+**Condition Immunities** :ref:`srd:poisoned`
 
 **Senses** darkvision 60 ft., passive Perception 10
 

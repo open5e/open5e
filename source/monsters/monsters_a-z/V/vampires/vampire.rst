@@ -52,11 +52,11 @@ vampire fails a saving throw, it can choose to succeed instead.
 **Misty
 Escape**: When it drops to 0 hit points outside its resting place, the
 vampire transforms into a cloud of mist (as in the Shapechanger trait)
-instead of falling unconscious, provided that it isn't in sunlight or
+instead of falling :ref:`srd:unconscious`, provided that it isn't in sunlight or
 running water. If it can't transform, it is destroyed. While it has 0
 hit points in mist form, it can't revert to its vampire form, and it
 must reach its resting place within 2 hours or be destroyed. Once in its
-resting place, it reverts to its vampire form. It is then paralyzed
+resting place, it reverts to its vampire form. It is then :ref:`srd:paralyzed`
 until it regains at least 1 hit point. After spending 1 hour in its
 resting place with 0 hit points, it regains 1 hit point.
 
@@ -77,8 +77,8 @@ upside down on ceilings, without needing to make an ability check.
   its turn in running water.
 
 - **Stake to the Heart**: If a piercing weapon made of wood is driven into
-  the vampire's heart while the vampire is incapacitated in its resting
-  place, the vampire is paralyzed until the stake is removed.
+  the vampire's heart while the vampire is :ref:`srd:incapacitated` in its resting
+  place, the vampire is :ref:`srd:paralyzed` until the stake is removed.
 
 - **Sunlight Hypersensitivity**: The vampire takes 20 radiant damage when
   it starts its turn in sunlight. While in sunlight, it has disadvantage
@@ -97,8 +97,8 @@ vampire can grapple the target (escape DC 18).
 
 **Bite (Bat or Vampire
 Form Only)**: *Melee Weapon Attack*: +9 to hit, reach 5 ft., one willing
-creature, or a creature that is grappled by the vampire, incapacitated,
-or restrained. *Hit:* 7 (1d6 + 4) piercing damage plus 10 (3d6) necrotic
+creature, or a creature that is :ref:`srd:grappled` by the vampire, :ref:`srd:incapacitated`,
+or :ref:`srd:restrained`. *Hit:* 7 (1d6 + 4) piercing damage plus 10 (3d6) necrotic
 damage. The target's hit point maximum is reduced by an amount equal to
 the necrotic damage taken, and the vampire regains hit points equal to
 that amount. The reduction lasts until the target finishes a long rest.
@@ -108,8 +108,8 @@ following night as a vampire spawn under the vampire's control.
 
 **Charm**: The vampire targets one humanoid it can see within 30 feet of
 it. If the target can see the vampire, the target must succeed on a DC
-17 Wisdom saving throw against this magic or be charmed by the vampire.
-The charmed target regards the vampire as a trusted friend to be heeded
+17 Wisdom saving throw against this magic or be :ref:`srd:charmed` by the vampire.
+The :ref:`srd:charmed` target regards the vampire as a trusted friend to be heeded
 and protected. Although the target isn't under the vampire's control, it
 takes the vampire's requests or actions in the most favorable way it
 can, and it is a willing target for the vampire's bite attack. Each time

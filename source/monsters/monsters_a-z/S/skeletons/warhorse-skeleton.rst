@@ -22,7 +22,7 @@ Large undead, lawful evil
 
 **Damage Immunities** poison
 
-**Condition Immunities** exhaustion, poisoned;
+**Condition Immunities** :ref:`srd:exhaustion`, :ref:`srd:poisoned`;
 
 **Senses** darkvision 60 ft., passive Perception 9;
 

@@ -174,7 +174,7 @@ shades of gray.
 **Keen Senses.** You have proficiency in the Perception skill.
 
 **Fey Ancestry.** You have advantage on saving throws against being
-charmed, and magic can't put you to sleep.
+:ref:`srd:charmed`, and magic can't put you to sleep.
 
 **Trance.** Elves don't need to sleep. Instead, they meditate deeply,
 remaining semiconscious, for 4 hours a day. (The Common word for such
@@ -242,7 +242,7 @@ check, or saving throw, you can reroll the die and must use the new
 roll.
 
 **Brave.** You have advantage on saving throws against being
-frightened.
+:ref:`srd:frightened`.
 
 **Halfling Nimbleness.** You can move through the space of any
 creature that is of a size larger than yours.
@@ -486,7 +486,7 @@ as if it were bright light, and in darkness as if it were dim light. You
 can't discern color in darkness, only shades of gray.
 
 **Fey Ancestry.** You have advantage on saving throws against being
-charmed, and magic can't put you to sleep.
+:ref:`srd:charmed`, and magic can't put you to sleep.
 
 **Skill Versatility.** You gain proficiency in two skills of your
 choice.

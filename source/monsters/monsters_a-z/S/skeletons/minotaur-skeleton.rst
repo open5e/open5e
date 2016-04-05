@@ -22,7 +22,7 @@ Large undead, lawful evil
 
 **Damage Immunities** poison
 
-**Condition Immunities** exhaustion, poisoned;
+**Condition Immunities** :ref:`srd:exhaustion`, :ref:`srd:poisoned`;
 
 **Senses** darkvision 60 ft., passive Perception 9;
 
@@ -34,7 +34,7 @@ Large undead, lawful evil
 target and then hits it with a gore attack on the same turn, the target
 takes an extra 9 (2d8) piercing damage. If the target is a creature, it
 must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet
-away and knocked prone.
+away and knocked :ref:`srd:prone`.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

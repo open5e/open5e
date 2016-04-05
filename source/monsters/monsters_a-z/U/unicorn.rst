@@ -20,7 +20,7 @@ Large celestial, lawful good
 
 **Damage Immunities** poison
 
-**Condition Immunities** charmed, paralyzed, poisoned
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:paralyzed`, :ref:`srd:poisoned`
 
 **Senses** darkvision 60 ft., passive Perception 13
 
@@ -31,7 +31,7 @@ Large celestial, lawful good
 **Charge**: If the unicorn moves at least 20 feet straight toward a
 target and then hits it with a horn attack on the same turn, the target
 takes an extra 9 (2d8) piercing damage. If the target is a creature, it
-must succeed on a DC 15 Strength saving throw or be knocked prone.
+must succeed on a DC 15 Strength saving throw or be knocked :ref:`srd:prone`.
 
 **Innate Spellcasting**: The unicorn's innate spellcasting ability is
 Charisma (spell save DC 14). The unicorn can innately cast the following

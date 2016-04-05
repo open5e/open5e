@@ -301,7 +301,7 @@ Aura of Courage
 ^^^^^^^^^^^^^^^^^^
 
 Starting at 10th level, you and friendly creatures within 10 feet of you
-can't be frightened while you are conscious.
+can't be :ref:`srd:frightened` while you are conscious.
 
 At 18th level, the range of this aura increases to 30 feet.
 
@@ -420,7 +420,7 @@ weapon is not already magical, it becomes magical for the duration.
 
 You can end this effect on your turn as part of any other action. If you
 are no longer holding or carrying this weapon, or if you fall
-unconscious, this effect ends.
+:ref:`srd:unconscious`, this effect ends.
 
 Turn the Unholy
 ********************
@@ -441,7 +441,7 @@ Aura of Devotion
 ~~~~~~~~~~~~~~~~
 
 Starting at 7th level, you and friendly creatures within 10 feet of you
-can't be charmed while you are conscious.
+can't be :ref:`srd:charmed` while you are conscious.
 
 At 18th level, the range of this aura increases to 30 feet.
 

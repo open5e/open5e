@@ -55,7 +55,7 @@ reach 5 ft., one target. *Hit*: 15 (2d6 + 8) slashing damage.
 
 **Frightful Presence**: Each creature of
 the dragon's choice that is within 120 feet of the dragon and aware of
-it must succeed on a DC 21 Wisdom saving throw or become frightened for
+it must succeed on a DC 21 Wisdom saving throw or become :ref:`srd:frightened` for
 1 minute. A creature can repeat the saving throw at the end of each of
 its turns, ending the effect on itself on a success. If a creature's
 saving throw is successful or the effect ends for it, the creature is
@@ -104,5 +104,5 @@ Attack**: The dragon makes a tail attack.
 **Wing Attack (Costs 2
 Actions)**: The dragon beats its wings. Each creature within 10 feet of
 the dragon must succeed on a DC 22 Dexterity saving throw or take 15
-(2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then
+(2d6 + 8) bludgeoning damage and be knocked :ref:`srd:prone`. The dragon can then
 fly up to half its flying speed.

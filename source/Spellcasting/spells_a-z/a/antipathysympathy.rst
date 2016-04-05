@@ -28,12 +28,12 @@ the aura's effect.
 designated to feel an intense urge to leave the area and avoid the
 target. When such a creature can see the target or comes within 60 feet
 of it, the creature must succeed on a Wisdom saving throw or become
-frightened. The creature remains frightened while it can see the target
-or is within 60 feet of it. While frightened by the target, the creature
+:ref:`srd:frightened`. The creature remains :ref:`srd:frightened` while it can see the target
+or is within 60 feet of it. While :ref:`srd:frightened` by the target, the creature
 must use its movement to move to the nearest safe spot from which it
 can't see the target. If the creature moves more than 60 feet from the
-target and can't see it, the creature is no longer frightened, but the
-creature becomes frightened again if it regains sight of the target or
+target and can't see it, the creature is no longer :ref:`srd:frightened`, but the
+creature becomes :ref:`srd:frightened` again if it regains sight of the target or
 moves within 60 feet of it.
 
 **Sympathy.** The enchantment causes the specified creatures to feel

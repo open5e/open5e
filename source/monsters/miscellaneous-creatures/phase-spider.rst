@@ -43,9 +43,9 @@ Actions
 *Hit*: 7 (1d10 + 2) piercing damage, and the target must make a DC 11
 Constitution saving throw, taking 18 (4d8) poison damage on a failed
 save, or half as much damage on a successful one. If the poison damage
-reduces the target to 0 hit points, the target is stable but poisoned
-for 1 hour, even after regaining hit points, and is paralyzed while
-poisoned in this way.
+reduces the target to 0 hit points, the target is stable but :ref:`srd:poisoned`
+for 1 hour, even after regaining hit points, and is :ref:`srd:paralyzed` while
+:ref:`srd:poisoned` in this way.
 
 A **phase spider** possesses the magical ability to phase in and out of
 the Ethereal Plane. It seems to appear out of nowhere and quickly

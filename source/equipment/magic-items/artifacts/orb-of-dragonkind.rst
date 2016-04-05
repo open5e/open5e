@@ -32,10 +32,10 @@ it.
 While attuned to an orb, you can use an action to peer into the orb's
 depths and speak its command word. You must then make a DC 15 Charisma
 check. On a successful check, you control the orb for as long as you
-remain attuned to it. On a failed check, you become charmed by the orb
+remain attuned to it. On a failed check, you become :ref:`srd:charmed` by the orb
 for as long as you remain attuned to it.
 
-While you are charmed by the orb, you can't voluntarily end your
+While you are :ref:`srd:charmed` by the orb, you can't voluntarily end your
 attunement to it, and the orb casts :ref:`srd:suggestion` on you at will (save DC
 18), urging you to work toward the evil ends it desires. The dragon
 essence within the orb might want many things: the annihilation of a

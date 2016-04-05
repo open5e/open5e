@@ -60,7 +60,7 @@ minute. During this time, it is incapable of meaningful communication
 and has disadvantage on attack rolls and ability checks.
 
 **Fear.** Each target must make a Wisdom saving throw and becomes
-frightened for 1 minute on a failed save. While frightened, the target
+:ref:`srd:frightened` for 1 minute on a failed save. While :ref:`srd:frightened`, the target
 drops whatever it is holding and must move at least 30 feet away from
 the glyph on each of its turns, if able.
 
@@ -76,12 +76,12 @@ can't read, and speaks only in gibberish. The GM controls its movement,
 which is erratic.
 
 **Pain.** Each target must make a Constitution saving throw and
-becomes incapacitated with excruciating pain for 1 minute on a failed
+becomes :ref:`srd:incapacitated` with excruciating pain for 1 minute on a failed
 save.
 
 **Sleep.** Each target must make a Wisdom saving throw and falls
-unconscious for 10 minutes on a failed save. A creature awakens if it
+:ref:`srd:unconscious` for 10 minutes on a failed save. A creature awakens if it
 takes damage or if someone uses an action to shake or slap it awake.
 
 **Stunning.** Each target must make a Wisdom saving throw and becomes
-stunned for 1 minute on a failed save.
+:ref:`srd:stunned` for 1 minute on a failed save.

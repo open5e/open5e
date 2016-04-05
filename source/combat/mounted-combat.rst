@@ -24,12 +24,12 @@ have 15 feet of movement left or if your speed is 0.
 
 If an effect moves your mount against its will while you're on it, you
 must succeed on a DC 10 Dexterity saving throw or fall off the mount,
-landing prone in a space within 5 feet of it. If you're knocked prone
+landing :ref:`srd:prone` in a space within 5 feet of it. If you're knocked :ref:`srd:prone`
 while mounted, you must make the same saving throw.
 
-If your mount is knocked prone, you can use your reaction to dismount it
+If your mount is knocked :ref:`srd:prone`, you can use your reaction to dismount it
 as it falls and land on your feet. Otherwise, you are dismounted and
-fall prone in a space within 5 feet it.
+fall :ref:`srd:prone` in a space within 5 feet it.
 
 Controlling a Mount
 ~~~~~~~~~~~~~~~~~~~

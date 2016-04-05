@@ -48,7 +48,7 @@ Weapon Attack*: +13 to hit, reach 10 ft., one target. *Hit*: 16 (2d8 +
 15 ft., one target. *Hit*: 26 (3d12 + 7) bludgeoning damage. If the
 target is a creature, it must succeed on a DC 20 Strength saving throw
 or be pushed up to 10 feet away from the dragon turtle and knocked
-prone.
+:ref:`srd:prone`.
 
 **Steam Breath (Recharge 5-6)**: The dragon turtle exhales
 scalding steam in a 60-foot cone. Each creature in that area must make a

@@ -24,4 +24,4 @@ on all saving throws, and other creatures have disadvantage on attack
 rolls against them until the spell ends. In addition, when a fiend or an
 undead hits an affected creature with a melee attack, the aura flashes
 with brilliant light. The attacker must succeed on a Constitution saving
-throw or be blinded until the spell ends.
+throw or be :ref:`srd:blinded` until the spell ends.

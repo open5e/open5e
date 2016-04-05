@@ -17,5 +17,4 @@ block the vision, as does a thin sheet of lead.
 
 Whenever you use the ring again before taking a
 long rest, you must succeed on a DC 15 Constitution saving throw or gain
-one level of exhaustion.
-
+one level of :ref:`srd:exhaustion`.

@@ -25,8 +25,8 @@ nonmagical attacks
 
 **Damage Immunities** poison
 
-**Condition Immunities** exhaustion, grappled, paralyzed, petrified,
-poisoned, prone, restrained, unconscious
+**Condition Immunities** :ref:`srd:exhaustion`, :ref:`srd:grappled`, :ref:`srd:paralyzed`, :ref:`srd:petrified`,
+:ref:`srd:poisoned`, :ref:`srd:prone`, :ref:`srd:restrained`, :ref:`srd:unconscious`
 
 **Senses** darkvision 60 ft., passive Perception 18
 
@@ -34,7 +34,7 @@ poisoned, prone, restrained, unconscious
 
 **Challenge** 6 (2,300 XP)
 
-**Invisibility**: The stalker is invisible.
+**Invisibility**: The stalker is :ref:`srd:invisible`.
 
 **Faultless Tracker**: The
 stalker is given a quarry by its summoner. The stalker knows the
@@ -43,7 +43,7 @@ the same plane of existence. The stalker also knows the location of its
 summoner.
 
 Actions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
 
 **Multiattack**: The stalker makes two slam attacks.
 

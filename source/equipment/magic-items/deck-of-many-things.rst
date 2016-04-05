@@ -141,8 +141,8 @@ STR     DEX     CON     INT     WIS     CHA
 
 **Damage Immunities** necrotic, poison
 
-**Condition Immunities** charmed, frightened, paralyzed, petrified,
-poisoned, unconscious
+**Condition Immunities** :ref:`srd:charmed`, :ref:`srd:frightened`, :ref:`srd:paralyzed`, :ref:`srd:petrified`,
+:ref:`srd:poisoned`, :ref:`srd:unconscious`
 
 **Senses** darkvision 60 ft., truesight 60 ft., passive Perception 13
 
@@ -186,7 +186,7 @@ knowledge comes with wisdom on how to apply it.
 **The Void.** This black card spells disaster. Your soul is drawn from
 your body and contained in an object in a place of the GM's choice. One
 or more powerful beings guard the place. While your soul is trapped in
-this way, your body is incapacitated. A :ref:`srd:wish` spell can't restore your
+this way, your body is :ref:`srd:incapacitated`. A :ref:`srd:wish` spell can't restore your
 soul, but the spell reveals the location of the object that holds it.
 You draw no more cards.
 

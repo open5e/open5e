@@ -32,7 +32,7 @@ it must first succeed on a Charisma saving throw.
 The creature has disadvantage on attack rolls against targets within the
 :ref:`srd:cylinder`.
 
-Targets within the :ref:`srd:cylinder` can't be charmed, frightened, or possessed
+Targets within the :ref:`srd:cylinder` can't be :ref:`srd:charmed`, :ref:`srd:frightened`, or possessed
 by the creature.
 
 When you cast this spell, you can elect to cause its magic to operate in

@@ -37,7 +37,7 @@ to your normal form, you return to the number of hit points you had
 before you transformed. If you revert as a result of dropping to 0 hit
 points, any excess damage carries over to your normal form. As long as
 the excess damage doesn't reduce your normal form to 0 hit points, you
-aren't knocked unconscious.
+aren't knocked :ref:`srd:unconscious`.
 
 You retain the benefit of any features from your class, race, or other
 source and can use them, provided that your new form is physically

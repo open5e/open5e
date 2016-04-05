@@ -20,16 +20,16 @@ Medium humanoid (grimlock), neutral evil
 
 **Skills** Athletics +5, Perception +3, Stealth +3
 
-**Condition Immunities** blinded
+**Condition Immunities** :ref:`srd:blinded`
 
-**Senses** blindsight 30 ft. or 10 ft. while deafened (blind beyond this
+**Senses** blindsight 30 ft. or 10 ft. while :ref:`srd:deafened` (blind beyond this
 radius), passive Perception 13
 
 **Languages** Undercommon
 
 **Challenge** 1/4 (50 XP)
 
-**Blind Senses**: The grimlock can't use its blindsight while deafened
+**Blind Senses**: The grimlock can't use its blindsight while :ref:`srd:deafened`
 and unable to smell.
 
 **Keen Hearing and Smell**: The grimlock has
