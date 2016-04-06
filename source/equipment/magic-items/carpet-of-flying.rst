@@ -13,6 +13,7 @@ that you are within 30 feet of it.
 
 Four sizes of *carpet of flying* exist. The GM chooses the size of a
 given carpet or determines it randomly.
+
 =============  ==================  ============  =======================
 d100           Size                Capacity      Flying Speed
 =============  ==================  ============  =======================
