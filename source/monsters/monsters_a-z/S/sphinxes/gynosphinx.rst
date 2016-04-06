@@ -33,12 +33,12 @@ nonmagical attacks
 
 **Challenge** 11 (7,200 XP)
 
-**Magic Weapons**: The sphinx's weapon attacks are magical.
-
 **Inscrutable**: The sphinx is immune to any effect that would sense its
 emotions or read its thoughts, as well as any divination spell that it
 refuses. Wisdom (Insight) checks made to ascertain the sphinx's
 intentions or sincerity have disadvantage.
+
+**Magic Weapons**: The sphinx's weapon attacks are magical.
 
 **Spellcasting**: The sphinx
 is a 9th-level spellcaster. Its spellcasting ability is Intelligence

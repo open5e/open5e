@@ -41,7 +41,7 @@ makes three attacks: one with its bite and two with its claws.
 
 **Bite**:
 *Melee Weapon Attack*: +16 to hit, reach 15 ft., one target. *Hit*: 20
-(2d10 + 9) piercing damage plus 11 (2d8) lightning damage.
+(2d10 + 9) piercing damage plus 11 (2d10) lightning damage.
 
 **Claw**:
 *Melee Weapon Attack*: +16 to hit, reach 10 ft., one target. *Hit*: 16
@@ -59,9 +59,9 @@ successful or the effect ends for it, the creature is immune to the
 dragon's Frightful Presence for the next 24 hours.
 
 **Lightning Breath
-(Recharge 5-6)**: The dragon exhales acid in a120 -foot line that is 10
+(Recharge 5-6)**: The dragon exhales lightning in a 120-foot line that is 10
 feet wide. Each creature in that line must make a DC 23 Dexterity saving
-throw, taking 88 (16d10) acid damage on a failed save, or half as much
+throw, taking 88 (16d10) lightning damage on a failed save, or half as much
 damage on a successful one.
 
 Legendary Actions

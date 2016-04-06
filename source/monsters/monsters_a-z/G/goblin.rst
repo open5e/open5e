@@ -8,8 +8,7 @@ Small humanoid (goblinoid), neutral evil
 
 **Armor Class** 15 (leather armor, shield)
 
-**Hit Points** 7 (2d6) piercing, and slashing from nonmagical attacks
-that aren't adamantine
+**Hit Points** 7 (2d6)
 
 **Speed** 30 ft.
 

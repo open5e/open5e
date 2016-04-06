@@ -30,7 +30,9 @@ slashing from nonmagical attacks that aren't adamantine
 
 **Challenge** 5 (1,800 XP)
 
-**Berserk**: On each of its turns while berserk, the golem attacks the
+**Berserk**: Whenever the golem starts its turn with 40 hit points or 
+fewer, roll a d6. On a 6, the golem goes berserk.
+On each of its turns while berserk, the golem attacks the
 nearest creature it can see. If no creature is near enough to move to
 and attack, the golem attacks an object, with preference for an object
 smaller than itself. Once the golem goes berserk, it continues to do so
