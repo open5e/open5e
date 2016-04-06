@@ -27,10 +27,12 @@ Large beast, unaligned
 **Challenge** 1 (200 XP)
 
 **Hold Breath**: While out of water, the octopus can hold its breath for
-1 hour. **Underwater Camouflage**: The octopus has advantage on
-Dexterity (Stealth) checks made while underwater. **Water
-Breathing**:
-The octopus can breathe only underwater.
+1 hour. 
+
+**Underwater Camouflage**: The octopus has advantage on
+Dexterity (Stealth) checks made while underwater. 
+
+**Water Breathing**: The octopus can breathe only underwater.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

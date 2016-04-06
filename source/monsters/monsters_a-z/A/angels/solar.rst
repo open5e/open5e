@@ -68,7 +68,9 @@ Actions
 Longbow**: *Ranged Weapon Attack*: +13 to hit, range 150/600 ft., one
 target. *Hit*: 15 (2d8 + 6) piercing damage plus 27 (6d8) radiant
 damage. If the target is a creature that has 100 hit points or fewer, it
-must succeed on a DC 15 Constitution saving throw or die. **Flying
+must succeed on a DC 15 Constitution saving throw or die. 
+
+**Flying
 Sword**: The solar releases its greatsword to hover magically in an
 unoccupied space within 5 feet of it. If the solar can see the sword,
 the solar can mentally command it as a bonus action to fly up to 50 feet

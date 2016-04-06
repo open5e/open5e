@@ -32,6 +32,7 @@ against any creature that doesn't have all its hit points.
 **Limited
 Amphibiousness**: The sahuagin can breathe air and water, but it needs
 to be submerged at least once every 4 hours to avoid suffocating.
+
 **Shark Telepathy**: The sahuagin can magically command any shark within
 120 feet of it, using a limited telepathy.
 

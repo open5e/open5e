@@ -24,9 +24,9 @@ Medium humanoid (any race), any chaotic alignment
 
 **Challenge** 2 (450 XP)
 
-**Reckless. At the start of its turn, the berserker can gain advantage
+**Reckless**: At the start of its turn, the berserker can gain advantage
 on all melee weapon attack rolls during that turn, but attack rolls
-against it have advantage until the start of its next turn.**
+against it have advantage until the start of its next turn.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

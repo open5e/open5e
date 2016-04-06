@@ -24,7 +24,7 @@ Huge giant, neutral evil
 
 **Damage Immunities** cold
 
-**Senses**: passive Perception 13
+**Senses** passive Perception 13
 
 **Languages** Giant
 

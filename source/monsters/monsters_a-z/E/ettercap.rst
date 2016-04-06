@@ -20,17 +20,19 @@ Medium monstrosity, neutral evil
 
 **Skills** Perception +3, Stealth +4, Survival +3
 
-**Senses**: darkvision 60 ft., passive Perception 13
+**Senses** darkvision 60 ft., passive Perception 13
 
 **Languages** ---
 
 **Challenge** 2 (450 XP)
 
 **Spider Climb**: The ettercap can climb difficult surfaces, including
-upside down on ceilings, without needing to make an ability check. **Web
-Sense**: While in contact with a web, the ettercap knows the exact
-location of any other creature in contact with the same web. **Web
-Walker**: The ettercap ignores movement restrictions caused by webbing.
+upside down on ceilings, without needing to make an ability check. 
+
+**Web Sense**: While in contact with a web, the ettercap knows the exact
+location of any other creature in contact with the same web. 
+
+**Web Walker**: The ettercap ignores movement restrictions caused by webbing.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

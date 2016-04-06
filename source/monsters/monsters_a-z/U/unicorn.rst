@@ -40,7 +40,7 @@ spells, requiring no components:
 **At will**: :ref:`srd:detect-evil-and-good`,
 :ref:`srd:druidcraft`, :ref:`srd:pass-without-trace`
 
-**1/day each:** :ref:`srd:calm-emotions`,
+**1/day each**: :ref:`srd:calm-emotions`,
 :ref:`srd:dispel-evil-and-good`, :ref:`srd:entangle`
 
 **Magic Resistance**: The unicorn has advantage on saving throws against

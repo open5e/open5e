@@ -27,9 +27,13 @@ Large beast, unaligned
 **Challenge** 1 (200 XP)
 
 **Spider Climb**: The spider can climb difficult surfaces, including
-upside down on ceilings, without needing to make an ability check. **Web
+upside down on ceilings, without needing to make an ability check. 
+
+**Web
 Sense**: While in contact with a web, the spider knows the exact
-location of any other creature in contact with the same web. **Web
+location of any other creature in contact with the same web. 
+
+**Web
 Walker**: The spider ignores movement restrictions caused by webbing.
 
 Actions

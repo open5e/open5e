@@ -22,7 +22,7 @@ Medium humanoid (any race), any non-lawful alignment
 
 **Skills** Athletics +4, Deception +4
 
-**Senses**: passive Perception 10
+**Senses** passive Perception 10
 
 **Languages** any two languages
 

@@ -26,7 +26,7 @@ Medium humanoid (any race), any non-good alignment
 
 **Challenge** 1/8 (25 XP)
 
-**Dark Devotion. The cultist has advantage on saving throws against
+**Dark Devotion**: The cultist has advantage on saving throws against
 being :ref:`srd:charmed` or :ref:`srd:frightened`.**
 
 Actions

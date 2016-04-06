@@ -52,7 +52,9 @@ its longbow.
 
 **Snake Hair**: *Melee Weapon Attack*: +5 to hit, reach 5
 ft., one creature. *Hit*: 4 (1d4 + 2) piercing damage plus 14 (4d6)
-poison damage. **Shortsword**: *Melee Weapon Attack*: +5 to hit, reach 5
+poison damage. 
+
+**Shortsword**: *Melee Weapon Attack*: +5 to hit, reach 5
 ft., one target. *Hit*: 5 (1d6 + 2) piercing damage.
 
 **Longbow**:

@@ -31,7 +31,7 @@ Medium swarm of Tiny beasts, unaligned
 
 **Challenge** 1/4 (50 XP)
 
-**Swarm.** The swarm can occupy another creature's space and vice versa,
+**Swarm**: The swarm can occupy another creature's space and vice versa,
 and the swarm can move through any opening large enough for a Tiny
 raven. The swarm can't regain hit points or gain temporary hit points.
 

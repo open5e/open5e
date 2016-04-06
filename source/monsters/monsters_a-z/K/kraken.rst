@@ -38,6 +38,7 @@ but can't speak, telepathy 120 ft.
 Movement**: The kraken ignores difficult terrain, and magical effects
 can't reduce its speed or cause it to be :ref:`srd:restrained`. It can spend 5 feet
 of movement to escape from nonmagical restraints or being :ref:`srd:grappled`.
+
 **Siege Monster**: The kraken deals double damage to objects and
 structures.
 

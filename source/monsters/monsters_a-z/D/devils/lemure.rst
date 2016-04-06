@@ -24,7 +24,7 @@ Medium fiend (devil), lawful evil
 
 **Condition Immunities** :ref:`srd:charmed`, :ref:`srd:frightened`, :ref:`srd:poisoned`
 
-**Senses**: darkvision 120 ft., passive Perception 10
+**Senses** darkvision 120 ft., passive Perception 10
 
 **Languages** understands Infernal but can't speak
 

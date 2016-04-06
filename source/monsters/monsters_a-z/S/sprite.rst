@@ -38,6 +38,7 @@ the target must succeed on a DC 10 Constitution saving throw or become
 :ref:`srd:poisoned` for 1 minute. If its saving throw result is 5 or lower, the
 :ref:`srd:poisoned` target falls :ref:`srd:unconscious` for the same duration, or until it
 takes damage or another creature takes an action to shake it awake.
+
 **Heart Sight**: The sprite touches a creature and magically knows the
 creature's current emotional state. If the target fails a DC 10 Charisma
 saving throw, the sprite also knows the creature's alignment.

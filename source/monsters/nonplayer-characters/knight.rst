@@ -26,8 +26,8 @@ Medium humanoid (any race), any alignment
 
 **Challenge** 3 (700 XP)
 
-**Brave. The knight has advantage on saving throws against being
-:ref:`srd:frightened`.**
+**Brave**: The knight has advantage on saving throws against being
+:ref:`srd:frightened`.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

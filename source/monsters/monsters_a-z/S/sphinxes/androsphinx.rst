@@ -54,15 +54,15 @@ spells prepared:
 **2nd level (3 slots)**: :ref:`srd:lesser-restoration`,
 :ref:`srd:zone-of-truth`
 
-**3rd level (3 slots):** :ref:`srd:dispel-magic`, :ref:`srd:tongues`
+**3rd level (3 slots)**: :ref:`srd:dispel-magic`, :ref:`srd:tongues`
 
 **4th
-level (3 slots):** :ref:`srd:banishment`, :ref:`srd:freedom-of-movement`
+level (3 slots)**: :ref:`srd:banishment`, :ref:`srd:freedom-of-movement`
 
 **5th level (2
-slots):** :ref:`srd:flame-strike`, :ref:`srd:greater-restoration`
+slots)**: :ref:`srd:flame-strike`, :ref:`srd:greater-restoration`
 
-**6th level (1 slot):**
+**6th level (1 slot)**:
 :ref:`srd:heroes-feast`
 
 Actions

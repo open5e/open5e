@@ -40,7 +40,9 @@ metal that hits the ooze corrodes. After dealing damage, the weapon
 takes a permanent and cumulative -1 penalty to damage rolls. If its
 penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made
 of metal that hits the ooze is destroyed after dealing damage. The ooze
-can eat through 2-inch-thick, nonmagical metal in 1 round. **False
+can eat through 2-inch-thick, nonmagical metal in 1 round. 
+
+**False
 Appearance**: While the ooze remains motionless, it is indistinguishable
 from an oily pool or wet rock.
 

@@ -20,7 +20,7 @@ Large beast, unaligned
 
 **Skills** Perception +3, Stealth +6
 
-**Senses**: passive Perception 13
+**Senses** passive Perception 13
 
 **Languages** ---
 
@@ -46,5 +46,7 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Bite**: *Melee Weapon Attack*: +5 to hit, reach 5 ft., one target.
-*Hit*: 7 (1d8 + 3) piercing damage. **Claw**: *Melee Weapon Attack*: +5
+*Hit*: 7 (1d8 + 3) piercing damage. 
+
+**Claw**: *Melee Weapon Attack*: +5
 to hit, reach 5 ft., one target. *Hit*: 6 (1d6 + 3) slashing damage.

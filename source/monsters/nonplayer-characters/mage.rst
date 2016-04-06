@@ -22,7 +22,7 @@ Medium humanoid (any race), any alignment
 
 **Skills** Arcana +6, History +6
 
-**Senses**: passive Perception 11
+**Senses** passive Perception 11
 
 **Languages** any four languages
 

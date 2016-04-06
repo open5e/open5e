@@ -58,7 +58,7 @@ spells prepared:
 
     **8th level (1 slot)**: :ref:`srd:mind-blank`\*
 
-    **9th level (1slot)**: :ref:`srd:time-stop`
+    **9th level (1 slot)**: :ref:`srd:time-stop`
 
 \* *The archmage casts these spells on itself before combat*.
 

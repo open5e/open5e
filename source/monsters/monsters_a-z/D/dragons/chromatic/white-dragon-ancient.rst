@@ -32,7 +32,9 @@ Gargantuan dragon, chaotic evil
 
 **Ice Walk**: The dragon can move across and climb icy surfaces without
 needing to make an ability check. Additionally, difficult terrain
-composed of ice or snow doesn't cost it extra moment. **Legendary
+composed of ice or snow doesn't cost it extra moment. 
+
+**Legendary
 Resistance (3/Day)**: If the dragon fails a saving throw, it can choose
 to succeed instead.
 

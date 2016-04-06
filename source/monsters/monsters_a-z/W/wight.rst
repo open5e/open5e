@@ -27,7 +27,7 @@ from nonmagical attacks that aren't silvered
 
 **Condition Immunities** :ref:`srd:exhaustion`, :ref:`srd:poisoned`
 
-**Senses**: darkvision 60 ft., passive Perception 13
+**Senses** darkvision 60 ft., passive Perception 13
 
 **Languages** the languages it knew in life
 

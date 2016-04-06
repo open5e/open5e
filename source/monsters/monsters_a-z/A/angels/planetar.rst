@@ -27,7 +27,7 @@ nonmagical attacks
 
 **Condition Immunities** :ref:`srd:charmed`, :ref:`srd:exhaustion`, :ref:`srd:frightened`
 
-**Senses**: truesight 120 ft., passive Perception 21
+**Senses** truesight 120 ft., passive Perception 21
 
 **Languages** all, telepathy 120 ft.
 

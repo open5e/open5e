@@ -53,9 +53,9 @@ wizard spells prepared:
 
 **2nd level (3 slots)**: :ref:`srd:darkness`, :ref:`srd:locate-object`, :ref:`srd:suggestion`
 
-**3rd level (3 slots):** :ref:`srd:dispel-magic`, :ref:`srd:remove-curse`, :ref:`srd:tongues`
+**3rd level (3 slots)**: :ref:`srd:dispel-magic`, :ref:`srd:remove-curse`, :ref:`srd:tongues`
 
-**4th level (3 slots):** :ref:`srd:banishment`, :ref:`srd:greater-invisibility`
+**4th level (3 slots)**: :ref:`srd:banishment`, :ref:`srd:greater-invisibility`
 
 **5th level (1 slot)**: :ref:`srd:legend-lore`
 
