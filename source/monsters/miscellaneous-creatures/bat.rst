@@ -22,6 +22,8 @@ Tiny beast, unaligned
 
 **Languages** ---
 
+**Challenge** 0 (10 XP)
+
 **Echolocation**: The bat can't use its blindsight while :ref:`srd:deafened`.
 
 **Keen Hearing**: The bat has advantage on Wisdom (Perception) checks

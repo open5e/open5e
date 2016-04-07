@@ -48,7 +48,7 @@ Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Dagger**: *Melee or Ranged Weapon Attack*: +5 to hit, reach 5 ft. or
-range 20/60 ft., one target. *Hit*: 4 (1d4 + piercing damage.
+range 20/60 ft., one target. *Hit*: 4 (1d4 + 2) piercing damage.
 
 Mages spend their lives in the study and practice of magic. Good-aligned
 mages offer counsel to nobles and others in power, while evil mages

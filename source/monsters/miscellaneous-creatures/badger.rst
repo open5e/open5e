@@ -22,11 +22,13 @@ Tiny beast, unaligned
 
 **Languages** ---
 
+**Challenge** 0 (10 XP)
+
 **Keen Smell**: The badger has advantage on Wisdom (Perception) checks
 that rely on smell.
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Bite**: *Melee Weapon Attack*: +0 to hit, reach 5 ft., one creature.
+**Bite**: *Melee Weapon Attack*: +2 to hit, reach 5 ft., one target.
 *Hit*: 1 piercing damage.

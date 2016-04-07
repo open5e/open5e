@@ -18,7 +18,7 @@ Large monstrosity, chaotic evil
 | 18 (+4)  | 17 (+3)   | 14 (+2)   | 16 (+3)   | 15 (+2)   | 16 (+3)   |
 +----------+-----------+-----------+-----------+-----------+-----------+
 
-**Saving Throws** Dex +8, Con +7, Int +7, Wis +8, Cha +8
+**Saving Throws** Dex +6, Con +5, Wis +5, Cha +6
 
 **Damage Immunities** poison
 

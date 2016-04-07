@@ -32,14 +32,6 @@ of an enemy's reach.
 **Keen Hearing and Sight**: The owl has advantage
 on Wisdom (Perception) checks that rely on hearing or sight.
 
-**Skills** Perception +4, Stealth +6
-
-**Senses** passive Perception 14
-
-**Languages** ---
-
-**Challenge** 1/4 (50 XP)
-
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

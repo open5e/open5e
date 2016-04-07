@@ -18,7 +18,7 @@ Large monstrosity, lawful good
 | 19 (+4)  | 18 (+4)   | 16 (+3)   | 16 (+3)   | 19 (+4)   | 18 (+4)   |
 +----------+-----------+-----------+-----------+-----------+-----------+
 
-**Saving Throws** Dex +6, Con +5, Wis +5, Cha +6
+**Saving Throws** Dex +8, Con +7, Int +7, Wis +8, Cha +8
 
 **Damage Immunities** poison
 

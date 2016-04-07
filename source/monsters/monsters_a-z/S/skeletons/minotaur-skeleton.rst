@@ -28,7 +28,7 @@ Large undead, lawful evil
 
 **Languages** understands Abyssal but can't speak
 
-**Challenge** 2 (100 XP)
+**Challenge** 2 (450 XP)
 
 **Charge**: If the skeleton moves at least 10 feet straight toward a
 target and then hits it with a gore attack on the same turn, the target

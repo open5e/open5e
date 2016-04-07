@@ -46,7 +46,7 @@ attacks. It can use its Life Drain in place of one longsword attack.
 **Life Drain**: *Melee Weapon Attack*: +4 to hit, reach 5 ft., one
 creature. *Hit*: 5 (1d6 + 2) necrotic damage. The target must succeed on
 a DC 13 Constitution saving throw or its hit point maximum is reduced by
-an amount equal to the damage taken. This\| eductio lasts until the
+an amount equal to the damage taken. This reduction lasts until the
 target finishes a long rest. The target dies if this effect reduces its
 hit point maximum to 0. A humanoid slain by this attack rises 24 hours
 later as a zombie under the wight's control, unless the humanoid is
