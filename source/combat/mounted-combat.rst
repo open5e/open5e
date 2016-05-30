@@ -47,10 +47,7 @@ move and act even on the turn that you mount it.
 
 An independent mount retains its place in the initiative order. Bearing
 a rider puts no restrictions on the actions the mount can take, and it
-moves and acts as it wishes. It might flee from combat, rush to
-
-attack and devour a badly injured foe, or otherwise act against your
-wishes.
+moves and acts as it wishes. It might flee from combat, rush to attack and devour a badly injured foe, or otherwise act against your wishes.
 
 In either case, if the mount provokes an opportunity attack while you're
 on it, the attacker can target you or the mount.
