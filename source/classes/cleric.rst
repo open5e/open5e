@@ -280,7 +280,7 @@ roll required.
 .. sidebar:: Looking for more Domains?
     :class: missing
 
-    Life domain is the only domain that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_.
+    Life domain is the only domain that was included in the `5e SRD <http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>`_.
     We are hoping to expand using homebrew or third-party content.
 
     If you know of high-quality content that would be a good fit, please
