@@ -174,8 +174,8 @@ focus for your cleric spells.
 Divine Domain
 ^^^^^^^^^^^^^
 
-Choose one domain related to your deity: Knowledge, Life, Light, Nature,
-Tempest, Trickery, or War. Eac domain is detailed at the end of the
+Choose one domain related to your deity, such as Life.
+Each domain is detailed at the end of the
 class description, and each one provides examples of gods associated
 with it. Your choice grants you domain spells and other features when
 you choose it at 1st level. It also grants you additional ways to use

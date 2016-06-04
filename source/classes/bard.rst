@@ -169,7 +169,7 @@ ritual tag.
 Spellcasting Focus
 ~~~~~~~~~~~~~~~~~~
 
-You can use a musical instrument (see chapter 5, "Equip-ment") as a
+You can use a musical instrument (see :ref:`srd:adventuring-gear`) as a
 spellcasting focus for your bard spells.
 
 Bardic Inspiration
@@ -232,11 +232,8 @@ Bard College
 ^^^^^^^^^^^^
 
 At 3rd level, you delve into the advanced techniques of a bard college
-of your choice: the College of Lore or the College of Valor, both
-detailed at the end of
-
-the class description. Your choice grants you features at 3rd level and
-again at 6th and 14th level.
+of your choice, such as the College of Lore. Your choice grants you features
+at 3rd level and  again  at  6th  and  14th  level.
 
 Expertise
 ^^^^^^^^^
