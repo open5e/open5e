@@ -166,8 +166,7 @@ Sorcerous Origin
 ^^^^^^^^^^^^^^^^
 
 Choose a sorcerous origin, which describes the source of your innate
-magical power: Draconic Bloodline or Wild Magic, both detailed at the
-end of the class description.
+magical power, such as Draconic Bloodline.
 
 Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level.
 
@@ -300,7 +299,7 @@ spell's level to target a second creature in range with the same spell
 To be eligible, a spell must be incapable of
 targeting more than one creature at the spell's current level. For
 example, :ref:`srd:magic-missile` and :ref:`srd:scorching-ray` aren't eligible, but
-:ref:`srd:ray-of-frost` and :ref:`srd:chromatic-orb` are.
+:ref:`srd:ray-of-frost` is.
 
 Ability Score Improvement
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -319,9 +318,8 @@ a short rest.
 Sorcerous Origins
 -----------------
 
-Different sorcerers claim different origins for their innate magic.
-Although many variations exist, most of these origins fall into two
-categories: a draconic bloodline and wild magic.
+Different sorcerers claim different origins for their innate magic,
+such as a draconic bloodline.
 
 .. sidebar:: Looking for more Origins?
     :class: missing

@@ -226,10 +226,8 @@ cast and when making an attack roll with one.
 Ranger Archetype
 ^^^^^^^^^^^^^^^^
 
-At 3rd level, you choose an archetype that you strive to emulate: Hunter
-or Beast Master, both detailed at the end of the class description. Your
-choice grants you features at 3rd level and again at 7th, 11th, and 15th
-level.
+At 3rd level, you choose an archetype that you strive to emulate, such as the Hunter.
+Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.
 
 Primeval Awareness
 ^^^^^^^^^^^^^^^^^^
@@ -314,7 +312,7 @@ roll, but before any effects of the roll are applied.
 Ranger Archetypes
 -----------------
 
-The ideal of the ranger has two classic expressions: the Hunter and the Beast Master.
+A classic expression of the ranger ideal is the Hunter.
 
 .. sidebar:: Looking for more Archetypes?
     :class: missing

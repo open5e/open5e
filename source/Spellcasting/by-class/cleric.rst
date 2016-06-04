@@ -12,6 +12,7 @@ Cantrips (0 Level)
 - :ref:`srd:mending`
 - :ref:`srd:resistance`
 - :ref:`srd:sacred-flame`
+- :ref:`srd:spare-the-dying`
 - :ref:`srd:thaumaturgy`
 
 1st Level
@@ -97,6 +98,7 @@ Cantrips (0 Level)
 - :ref:`srd:flame-strike`
 - :ref:`srd:geas`
 - :ref:`srd:greater-restoration`
+- :ref:`srd:guardian-of-faith`
 - :ref:`srd:hallow`
 - :ref:`srd:insect-plague`
 - :ref:`srd:legend-lore`

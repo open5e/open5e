@@ -654,28 +654,19 @@ Pact of the Chain
 
 Your familiar is more cunning than a
 typical familiar. Its default form can be a reflection of your
-patron, with sprites and pseudodragons tied to the Archfey and imps
-and quasits tied to the Fiend. Because the Great Old One's nature is
-inscrutable, any familiar form is suitable for it.
+patron, with imps and quasits tied to the Fiend.
 
 Pact of the Blade
 ^^^^^^^^^^^^^^^^^
 
-If your patron is the Archfey, your weapon
-might be a slender blade wrapped in leafy vines. If you serve the
+If you serve the
 Fiend, your weapon could be an axe made of black metal and adorned
-with decorative flames. If your patron is the Great Old One, your
-weapon might be an ancient-looking spear, with a gemstone embedded
-in its head, carved to look like a terrible unblinking eye.
+with decorative flames.
 
 Pact of the Tome
 ^^^^^^^^^^^^^^^^^
 
-Your Book of Shadows might be a fine,
-gilt-edged tome with spells of enchantment and illusion, gifted to
-you by the lordly Archfey. It could be a weighty tome bound in demon
+Your Book of Shadows could be a weighty tome bound in demon
 hide studded with iron, holding spells of conjuration and a wealth
 of forbidden lore about the sinister regions of the cosmos, a gift
-of the Fiend. Or it could be the tattered diary of a lunatic driven
-mad by contact with the Great Old One, holding scraps of spells that
-only your own burgeoning insanity allows you to understand and cast.
+of the Fiend.

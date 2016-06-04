@@ -201,7 +201,7 @@ background, why don't you have *more* money? How did you learn the
 skills of your class? What sets you apart from ordinary people who share
 your background?
 
-The sample backgrounds in this chapter provide both concrete benefits
+The sample background presented here provides both concrete benefits
 (features, proficiencies, and languages) and roleplaying suggestions.
 
 Proficiencies

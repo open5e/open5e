@@ -199,9 +199,7 @@ Arcane Tradition
 ^^^^^^^^^^^^^^^^
 
 When you reach 2nd level, you choose an arcane tradition, shaping your
-practice of magic through one of eight schools: Abjuration, Conjuration,
-Divination, Enchantment, Evocation, Illusion, Necromancy, or
-Transmutation, all detailed at the end of the class description.
+practice of magic through one of eight schools, such as Evocation.
 
 Your choice grants you features at 2nd level and again at 6th, 10th, and
 14th level.
@@ -251,9 +249,8 @@ with various traditions dedicated to its complex study.
 The most common arcane traditions in the multiverse revolve around the
 schools of magic. Wizards through the ages have cataloged thousands of
 spells, grouping them into eight categories called schools. In some
-places, these traditions are literally schools; a wizard might study at
-the School of Illusion while another studies across town at the School
-of Enchantment. In other institutions, the schools are more like
+places, these traditions are literally schools.
+In other institutions, the schools are more like
 academic departments, with rival faculties competing for students and
 funding. Even wizards who train apprentices in the solitude of their own
 towers use the division of magic into schools as a learning device,

@@ -10,11 +10,13 @@ Cantrips (0 Level)
 - :ref:`srd:acid-splash`
 - :ref:`srd:chill-touch`
 - :ref:`srd:dancing-lights`
+- :ref:`srd:fire-bolt`
 - :ref:`srd:light`
 - :ref:`srd:mage-hand`
 - :ref:`srd:mending`
 - :ref:`srd:message`
 - :ref:`srd:minor-illusion`
+- :ref:`srd:poison-spray`
 - :ref:`srd:prestidigitation`
 - :ref:`srd:ray-of-frost`
 - :ref:`srd:shocking-grasp`
@@ -33,6 +35,7 @@ Cantrips (0 Level)
 - :ref:`srd:expeditious-retreat`
 - :ref:`srd:false-life`
 - :ref:`srd:feather-fall`
+- :ref:`srd:find-familiar`
 - :ref:`srd:floating-disk`
 - :ref:`srd:fog-cloud`
 - :ref:`srd:grease`
@@ -92,6 +95,7 @@ Cantrips (0 Level)
 - :ref:`srd:bestow-curse`
 - :ref:`srd:blink`
 - :ref:`srd:clairvoyance`
+- :ref:`srd:counterspell`
 - :ref:`srd:dispel-magic`
 - :ref:`srd:fear`
 - :ref:`srd:fireball`

@@ -15,10 +15,12 @@ Cantrips (0 Level)
 - :ref:`srd:minor-illusion`
 - :ref:`srd:prestidigitation`
 - :ref:`srd:true-strike`
+- :ref:`srd:vicious-mockery`
 
 1st Level
 ~~~~~~~~~
 
+- :ref:`srd:animal-friendship`
 - :ref:`srd:bane`
 - :ref:`srd:charm-person`
 - :ref:`srd:comprehend-languages`
@@ -84,6 +86,7 @@ Cantrips (0 Level)
 4th Level
 ~~~~~~~~~
 
+- :ref:`srd:compulsion`
 - :ref:`srd:confusion`
 - :ref:`srd:dimension-door`
 - :ref:`srd:freedom-of-movement`

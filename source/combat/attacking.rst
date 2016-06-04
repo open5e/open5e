@@ -73,11 +73,12 @@ and the veteran to miss.
     Source: `Sage Advice Compendium <http://media.wizards.com/2015/downloads/dnd/SA_Compendium_1.01.pdf>`_
 
 If the d20 roll for an attack is a 20, the attack hits regardless of any
-modifiers or the target's AC. This is called a :has-official:`critical hit,` which is
-explained later in this chapter.
+modifiers or the target's AC. This is called a :has-official:`critical hit.`
 
 If the d20 roll for an attack is a 1, the attack misses regardless of
 any modifiers or the target's AC.
+
+.. _srd:unseen-attackers-and-targets:
 
 Unseen Attackers and Targets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -146,6 +147,8 @@ Instead of using a weapon to make a melee weapon attack, you can use an
 (none of which count as weapons). On a hit, an unarmed strike deals
 bludgeoning damage equal to 1 -  your Strength modifier. You are proficient with your unarmed strikes.
 
+.. _srd:opportunity-attacks:
+
 Opportunity Attacks
 ^^^^^^^^^^^^^^^^^^^
 
@@ -191,7 +194,7 @@ seize the target by making a grapple check instead of an attack roll: a
 Strength (Athletics) check contested by the target's Strength
 (Athletics) or Dexterity (Acrobatics) check (the target chooses the
 ability to use). If you succeed, you subject the target to the :ref:`srd:grappled`
-condition (see :ref:`srd:conditions`). The condition specifies the things that end
+condition. The condition specifies the things that end
 it, and you can release the target whenever you like (no action
 required).
 

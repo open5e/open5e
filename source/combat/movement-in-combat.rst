@@ -67,7 +67,7 @@ Being Prone
 
 Combatants often find themselves lying on the ground, either because
 they are knocked down or because they throw themselves down. In the
-game, they are :ref:`srd:prone`, a condition described :ref:`srd:conditions`.
+game, they are :ref:`srd:prone`.
 
 You can **drop prone** without using any of your
 speed. **Standing up** takes more effort; doing so costs an amount of
@@ -142,7 +142,7 @@ Whether a creature is a friend or an enemy, you can't willingly end your
 move in its space.
 
 If you leave a hostile creature's reach during your move, you provoke an
-opportunity attack, as explained later in the chapter.
+:ref:`opportunity attack <srd:opportunity-attacks>`.
 
 Flying Movement
 ~~~~~~~~~~~~~~~
