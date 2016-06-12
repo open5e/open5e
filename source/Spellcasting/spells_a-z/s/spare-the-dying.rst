@@ -2,8 +2,18 @@
 .. _srd:spare-the-dying:
 
 Spare the Dying
--------------------------------------------------------------
+---------------
 
-This spell was not included in the 5e SRD but was referenced somewhere in it.
+Necromancy cantrip
+^^^^^^^^^^^^^^^^^^
 
-If this spell is later released under OGL it will appear here.
+**Casting Time:** 1 action
+
+**Range:** Touch
+
+**Components:** V, S
+
+**Duration:** Instantaneous
+
+You touch a living creature that has 0 hit points. The creature becomes stable.
+This spell has no effect on undead or constructs.
