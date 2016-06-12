@@ -1,8 +1,8 @@
 
 .. _srd:magic-items-list:
 
-Magic Items
-------------------------------------------------------
+Magic Item Descriptions
+-----------------------
 
 
 .. sidebar:: Looking for more Magic Items?
@@ -18,7 +18,7 @@ Magic Items
 Contents:
 
 .. toctree::
-   :name: magic-items
+   :name: magic-item-descs
    :titlesonly:
    :glob:
    :maxdepth: 2
