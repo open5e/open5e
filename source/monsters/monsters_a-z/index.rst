@@ -12,5 +12,3 @@ Monster Descriptions
       :glob:
 
       */index
-      Miscellaneous Creatures <../miscellaneous-creatures/index>
-      Nonplayer Characters <../nonplayer-characters/index>

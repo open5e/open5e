@@ -9,4 +9,4 @@ Miscellaneous Creatures
    :titlesonly:
    :glob:
 
-   *
+   */index
