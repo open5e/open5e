@@ -33,3 +33,31 @@ Monsters
         :maxdepth: 3
 
         Monster Descriptions <monsters_a-z/index>
+
+.. container:: h1
+  
+  Miscellaneous Creatures
+
+.. container:: subcolumns  
+   
+    .. toctree::
+        :name: misc-monster-descs
+        :glob:
+        :titlesonly:
+        :maxdepth: 3
+
+        miscellaneous-creatures/index
+
+.. container:: h1
+
+  Nonplayer Characters
+
+.. container:: subcolumns  
+   
+    .. toctree::
+        :name: npc-descs
+        :glob:
+        :titlesonly:
+        :maxdepth: 3
+
+        nonplayer-characters/index
