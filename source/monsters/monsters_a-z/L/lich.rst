@@ -103,7 +103,7 @@ throw is successful or the effect ends for it, the target is immune to
 the lich's gaze for the next 24 hours.
 
 **Disrupt Life (Costs 3
-Actions)**: Each living creature within 20 feet of the lich must make a
+Actions)**: Each non-undead creature within 20 feet of the lich must make a
 DC 18 Constitution saving throw against this magic, taking 21 (6d6)
 necrotic damage on a failed save, or half as much damage on a successful
 one.
