@@ -98,7 +98,7 @@ vampire can grapple the target (escape DC 18).
 **Bite (Bat or Vampire
 Form Only)**: *Melee Weapon Attack*: +9 to hit, reach 5 ft., one willing
 creature, or a creature that is :ref:`srd:grappled` by the vampire, :ref:`srd:incapacitated`,
-or :ref:`srd:restrained`. *Hit:* 7 (1d6 + 4) piercing damage plus 10 (3d6) necrotic
+or :ref:`srd:restrained`. *Hit*: 7 (1d6 + 4) piercing damage plus 10 (3d6) necrotic
 damage. The target's hit point maximum is reduced by an amount equal to
 the necrotic damage taken, and the vampire regains hit points equal to
 that amount. The reduction lasts until the target finishes a long rest.

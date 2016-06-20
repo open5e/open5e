@@ -37,4 +37,4 @@ Actions
 
 **Rotting
 Touch**: *Melee Weapon Attack*: +2 to hit, reach 10 ft., one creature.
-*Hit:* 4 (1d8) necrotic damage.
+*Hit*: 4 (1d8) necrotic damage.
