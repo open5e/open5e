@@ -557,7 +557,7 @@ this reason, both the average damage and the die expression are
 presented.
 
 **Miss.** If an attack has an effect that occurs on a miss, that
-information is presented after the "\ *Miss:*\ " notation.
+information is presented after the "\ *Miss*:\ " notation.
 
 Multiattack
 ^^^^^^^^^^^

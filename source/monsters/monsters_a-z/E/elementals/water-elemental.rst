@@ -45,7 +45,7 @@ Actions
 **Multiattack**: The elemental makes two slam attacks.
 
 **Slam**: Melee
-*Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:* 13 (2d8 + 4)
+*Weapon Attack*: +7 to hit, reach 5 ft., one target. *Hit*: 13 (2d8 + 4)
 bludgeoning damage.
 
 **Whelm (Recharge 4-6)**: Each creature in the
