@@ -38,14 +38,12 @@ and attack, the golem attacks an object, with preference for an object
 smaller than itself. Once the golem goes berserk, it continues to do so
 until it is destroyed or regains all its hit points.
 
-::
-
-    The golem's creator, if within 60 feet of the berserk golem, can try
-    to calm it by speaking firmly and persuasively. The golem must be
-    able to hear its creator, who must take an action to make a DC 15
-    Charisma (Persuasion) check. If the check succeeds, the golem ceases
-    being berserk. If it takes damage while still at 40 hit points or
-    fewer, the golem might go berserk again.
+The golem's creator, if within 60 feet of the berserk golem, can try
+to calm it by speaking firmly and persuasively. The golem must be
+able to hear its creator, who must take an action to make a DC 15
+Charisma (Persuasion) check. If the check succeeds, the golem ceases
+being berserk. If it takes damage while still at 40 hit points or
+fewer, the golem might go berserk again.
 
 **Aversion of Fire**: If the golem takes fire damage, it has
 disadvantage on attack rolls and ability checks until the end of its
