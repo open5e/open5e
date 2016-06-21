@@ -30,9 +30,14 @@ Medium humanoid (any race), any alignment
 spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell
 attacks). The acolyte has following cleric spells prepared:
 
-    **Cantrips (at will)**: :ref:`srd:light`, :ref:`srd:sacred-flame`, :ref:`srd:thaumaturgy`
-
-    **1st level (3 slots)**: :ref:`srd:bless`, :ref:`srd:cure-wounds`, :ref:`srd:sanctuary`
+- Cantrips (at will):
+  - :ref:`srd:light`
+  - :ref:`srd:sacred-flame`
+  - :ref:`srd:thaumaturgy`
+- 1st level (3 slots):
+  - :ref:`srd:bless`
+  - :ref:`srd:cure-wounds`
+  - :ref:`srd:sanctuary`
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
