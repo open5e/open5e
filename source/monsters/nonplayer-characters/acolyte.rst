@@ -34,6 +34,7 @@ attacks). The acolyte has following cleric spells prepared:
   - :ref:`srd:light`
   - :ref:`srd:sacred-flame`
   - :ref:`srd:thaumaturgy`
+
 - 1st level (3 slots):
   - :ref:`srd:bless`
   - :ref:`srd:cure-wounds`

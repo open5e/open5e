@@ -50,21 +50,26 @@ wizard spells prepared:
   - :ref:`srd:mage-hand`
   - :ref:`srd:minor-illusion`
   - :ref:`srd:prestidigitation`
+
 - 1st level (4 slots):
   - :ref:`srd:detect-magic`,
   - :ref:`srd:identify`
   - :ref:`srd:shield`
+
 - 2nd level (3 slots):
   - :ref:`srd:darkness`
   - :ref:`srd:locate-object`
   - :ref:`srd:suggestion`
+
 - 3rd level (3 slots):
   - :ref:`srd:dispel-magic`
   - :ref:`srd:remove-curse`
   - :ref:`srd:tongues`
+
 - 4th level (3 slots):
   - :ref:`srd:banishment`
   - :ref:`srd:greater-invisibility`
+
 - 5th level (1 slot):
   - :ref:`srd:legend-lore`
 

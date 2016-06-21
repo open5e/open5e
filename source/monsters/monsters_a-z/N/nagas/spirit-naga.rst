@@ -43,19 +43,24 @@ cast its spells. It has the following wizard spells prepared:
   - :ref:`srd:mage-hand`
   - :ref:`srd:minor-illusion`
   - :ref:`srd:ray-of-frost`
+
 - 1st level (4 slots):
   - :ref:`srd:charm-person`
   - :ref:`srd:detect-magic`
   - :ref:`srd:sleep`
+
 - 2nd level (3 slots):
   - :ref:`srd:detect-thoughts`
   - :ref:`srd:hold-person`
+
 - 3rd level (3 slots):
   - :ref:`srd:lightning-bolt`
   - :ref:`srd:water-breathing`
+
 - 4th level (3 slots):
   - :ref:`srd:blight`
   - :ref:`srd:dimension-door`
+
 - 5th level (2 slots):
   - :ref:`srd:dominate-person`
 

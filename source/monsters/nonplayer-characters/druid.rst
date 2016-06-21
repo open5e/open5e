@@ -34,11 +34,13 @@ has the following druid spells prepared:
   - :ref:`srd:druidcraft`
   - :ref:`srd:produce-flame`
   - :ref:`srd:shillelagh`
+
 - 1st level (4 slots):
   - :ref:`srd:entangle`
   - :ref:`srd:longstrider`
   - :ref:`srd:speak-with-animals`
   - :ref:`srd:thunderwave`
+
 - 2nd level (3 slots):
   - :ref:`srd:animal-messenger`
   - :ref:`srd:barkskin`

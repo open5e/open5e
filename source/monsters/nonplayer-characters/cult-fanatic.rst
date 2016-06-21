@@ -38,10 +38,12 @@ spells prepared:
   - :ref:`srd:light`
   - :ref:`srd:sacred-flame`,
   - :ref:`srd:thaumaturgy`
+
 - 1st level (4 slots):
   - :ref:`srd:command`
   - :ref:`srd:inflict-wounds`,
   - :ref:`srd:shield-of-faith`
+
 - 2nd level (3 slots):
   - :ref:`srd:hold-person`
   - :ref:`srd:spiritual-weapon`
