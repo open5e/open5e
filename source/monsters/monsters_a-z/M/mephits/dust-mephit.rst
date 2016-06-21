@@ -18,7 +18,9 @@ Small elemental, neutral evil
 | 5 (-3)   | 14 (+2)   | 10 (+0)   | 9 (-1)   | 11 (+0)   | 10 (+0)   |
 +----------+-----------+-----------+----------+-----------+-----------+
 
-**Skills** Perception +2, Stealth +4 Damage Vulnerabilities fire
+**Skills** Perception +2, Stealth +4
+
+**Damage Vulnerabilities** fire
 
 **Damage Immunities** poison
 
