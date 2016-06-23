@@ -7,7 +7,7 @@ Spellcasting Basics
 Magic permeates fantasy gaming worlds and often appears in the form of a
 spell.
 
-This chapter provides the rules for casting spells. Different character
+This section provides the rules for casting spells. Different character
 classes have distinctive ways of learning and preparing their spells,
 and monsters use spells in unique ways. Regardless of its source, a
 spell follows the rules here.
@@ -24,7 +24,7 @@ releases them to unleash the desired effect---in most cases, all in the
 span of seconds.
 
 Spells can be versatile tools, weapons, or protective wards. They can
-deal damage or undo it, impose or remove conditions (see appendix A),
+deal damage or undo it, impose or remove :ref:`conditions, <srd:conditions>`
 drain life energy away, and restore life to the dead.
 
 Uncounted thousands of spells have been created over the course of the

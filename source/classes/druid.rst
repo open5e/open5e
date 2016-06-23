@@ -142,7 +142,7 @@ for which you have spell slots.
 Spellcasting Focus
 ~~~~~~~~~~~~~~~~~~
 
-You can use a druidic focus (see chapter 5, "Equip- ment") as a
+You can use a druidic focus (see :ref:`srd:adventuring-gear`) as a
 spellcasting focus for your druid spells.
 
 Spellcasting Ability
@@ -244,9 +244,8 @@ While you are transformed, the following rules apply:
 Druid Circle
 ^^^^^^^^^^^^
 
-At 2nd level, you choose to identify with a circle of druids: the Circle
-of the Land or the Circle of the Moon, both detailed at the end of the
-class description. Your choice grants you features at 2nd level and
+At 2nd level, you choose to identify with a circle of druids, such as the Circle
+of the Land. Your choice grants you features at 2nd level and
 again at 6th, 10th, and 14th level.
 
 Ability Score Improvement
@@ -287,7 +286,7 @@ shape and your beast shape from Wild Shape.
 .. sidebar:: Looking for more Circles?
     :class: missing
 
-    Circle of the Land is the only circle that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_.
+    Circle of the Land is the only circle that was included in the `5e SRD <http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>`_.
     We are hoping to expand using homebrew or third-party content.
 
     If you know of high-quality content that would be a good fit, please
@@ -507,6 +506,7 @@ Druids and the Gods
 
 Some druids venerate the forces of nature themselves, but most druids
 are devoted to one of the many nature deities worshiped in the
-multiverse (the lists of gods in appendix B include many such deities).
+multiverse (the lists of gods in :ref:`srd:fantasy-historical-pantheons`
+include many such deities).
 The worship of these deities is often considered a more ancient
 tradition than the faiths of clerics and urbanized peoples.

@@ -174,8 +174,8 @@ focus for your cleric spells.
 Divine Domain
 ^^^^^^^^^^^^^
 
-Choose one domain related to your deity: Knowledge, Life, Light, Nature,
-Tempest, Trickery, or War. Eac domain is detailed at the end of the
+Choose one domain related to your deity, such as Life.
+Each domain is detailed at the end of the
 class description, and each one provides examples of gods associated
 with it. Your choice grants you domain spells and other features when
 you choose it at 1st level. It also grants you additional ways to use
@@ -280,7 +280,7 @@ roll required.
 .. sidebar:: Looking for more Domains?
     :class: missing
 
-    Life domain is the only domain that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_.
+    Life domain is the only domain that was included in the `5e SRD <http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>`_.
     We are hoping to expand using homebrew or third-party content.
 
     If you know of high-quality content that would be a good fit, please

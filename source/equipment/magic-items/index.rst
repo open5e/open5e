@@ -1,14 +1,14 @@
 
 .. _srd:magic-items-list:
 
-Magic Items
-------------------------------------------------------
+Magic Item Descriptions
+-----------------------
 
 
 .. sidebar:: Looking for more Magic Items?
     :class: missing
         
-    A few magic items you might be expecting were not included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+    A few magic items you might be expecting were not included in the `5e SRD <http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>`_.
     We are hoping to expand using homebrew or third-party content.
 
     If you know of high-quality content that would be a good fit, please 
@@ -18,7 +18,7 @@ Magic Items
 Contents:
 
 .. toctree::
-   :name: magic-items
+   :name: magic-item-descs
    :titlesonly:
    :glob:
    :maxdepth: 2

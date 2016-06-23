@@ -5,7 +5,7 @@ Legal Information
 -----------------
 
 Permission to copy, modify and distribute the files collectively known
-as the System Reference Document 5.0 ("SRD5") is granted solely through
+as the System Reference Document 5.1 ("SRD5") is granted solely through
 the use of the Open Gaming License, Version 1.0a.
 
 This material is being released using the Open Gaming License Version
@@ -155,9 +155,9 @@ Reserved.
 
 15. COPYRIGHT NOTICE
 
-    Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
+    Open Game License v 1.0a Copyright 2000, Wizards of the Coast, LLC.
 
-    System Reference Document 5.0 Copyright 2016, Wizards of the Coast,
+    System Reference Document 5.1 Copyright 2016, Wizards of the Coast,
     Inc.; Authors Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney
     Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell,
     Chris Sims, and Steve Townshend, based on original material by E. Gary

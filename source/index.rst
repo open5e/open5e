@@ -11,7 +11,7 @@ Open5e aims to be the best open-source resource for 5e content.
 .. Sidebar:: Hey! Stuff is missing!
    :class: missing
        
-   Some content you may be expecting was not released as part of the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_,
+   Some content you may be expecting was not released as part of the `5e SRD <http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>`_,
    so we aren't allowed to include it in this site.
 
    We are hoping to fill in the gaps using quality homebrew and 3rd party OGL content.

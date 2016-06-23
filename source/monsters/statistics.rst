@@ -91,7 +91,7 @@ of their respective elements, including the creatures simply called
 elementals. Others have biological forms infused with elemental energy.
 The races of genies, including djinn and efreet, form the most important
 civilizations on the elemental planes. Other elemental creatures include
-azers, invisible stalkers, and water weirds.
+azers and invisible stalkers.
 
 **Fey** are magical creatures closely tied to the forces
 of nature. They dwell in twilight groves and misty forests. In some

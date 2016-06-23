@@ -141,9 +141,8 @@ across liquids on your turn without falling during the move.
 Monastic Tradition
 ^^^^^^^^^^^^^^^^^^
 
-When you reach 3rd level, you commit yourself to a monastic tradition:
-the Way of the Open Hand, the Way of Shadow, or the Way of the Four
-Elements, all detailed at the end of the class description. Your
+When you reach 3rd level, you commit yourself to a monastic tradition, such as 
+the Way of the Open Hand. Your
 tradition grants you features at 3rd level and again at 6th, 11th, and
 17th level.
 
@@ -319,7 +318,7 @@ Thus, a monk need choose a tradition only upon reaching 3rd level.
 .. sidebar:: Looking for more Traditions?
     :class: missing
       
-    Way of the Open Hand is the only tradition that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+    Way of the Open Hand is the only tradition that was included in the `5e SRD <http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>`_.
     We are hoping to expand using homebrew or third-party content.
 
     If you know of high-quality content that would be a good fit, please 

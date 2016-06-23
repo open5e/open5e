@@ -225,7 +225,7 @@ Constitution scores increase by 4. Your maximum for those scores is now
 .. sidebar:: Looking for more Paths?
     :class: missing
       
-    Path of the berseker is the only path that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+    Path of the berseker is the only path that was included in the `5e SRD <http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>`_.
     We are hoping to expand using homebrew or third-party content.
 
     If you know of high-quality content that would be a good fit, please 
@@ -251,7 +251,7 @@ Starting when you choose this path at 3rd level, you can go into a
 frenzy when you rage. If you do so, for the duration of your rage you
 can make a single melee weapon attack as a bonus action on each of your
 turns after this one. When your rage ends, you suffer one level of
-:ref:`srd:exhaustion` (as described in :ref:`srd:conditions`).
+:ref:`srd:exhaustion`.
 
 Mindless Rage
 ~~~~~~~~~~~~~

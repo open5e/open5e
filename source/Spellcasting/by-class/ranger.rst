@@ -8,10 +8,13 @@ Ranger Spells
 ~~~~~~~~~
 
 - :ref:`srd:alarm`
+- :ref:`srd:animal-friendship`
 - :ref:`srd:cure-wounds`
 - :ref:`srd:detect-magic`
 - :ref:`srd:detect-poison-and-disease`
 - :ref:`srd:fog-cloud`
+- :ref:`srd:goodberry`
+- :ref:`srd:hunters-mark`
 - :ref:`srd:jump`
 - :ref:`srd:longstrider`
 - :ref:`srd:speak-with-animals`

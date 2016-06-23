@@ -132,8 +132,7 @@ Roguish Archetype
 ^^^^^^^^^^^^^^^^^
 
 At 3rd level, you choose an archetype that you emulate in the exercise
-of your rogue abilities: Thief, Assassin, or Arcane Trickster, all
-detailed at the end of the class description. Your archetype choice
+of your rogue abilities, such as Thief. Your archetype choice
 grants you features at 3rd level and then again at 9th, 13th, and 17th
 level.
 
@@ -225,7 +224,7 @@ preferred techniques.
 .. sidebar:: Looking for more Archetypes?
     :class: missing
         
-    Thief is the only archetype that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+    Thief is the only archetype that was included in the `5e SRD <http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>`_.
     We are hoping to expand using homebrew or third-party content.
 
     If you know of high-quality content that would be a good fit, please 

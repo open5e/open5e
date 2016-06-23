@@ -61,7 +61,7 @@ certain languages.
 .. sidebar:: One subrace to rule them all?
     :class: missing
         
-    Only one subrace per race was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+    Only one subrace per race was included in the `5e SRD <http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>`_.
     We are hoping to expand using homebrew or third-party content.
 
     If you know of high-quality content that would be a good fit, please 
@@ -157,8 +157,7 @@ years old.
 **Alignment.** Elves love freedom, variety, and self-expression, so
 they lean strongly toward the gentler aspects of chaos. They value and
 protect others' freedom as well as their own, and they are more often
-good than not. The drow are an exception; their exile has made them
-vicious and dangerous. Drow are more often evil than not.
+good than not.
 
 **Size.** Elves range from under 5 to over 6 feet tall and have
 slender builds. Your size is Medium.

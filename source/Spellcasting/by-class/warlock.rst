@@ -8,8 +8,10 @@ Cantrips (0 Level)
 ~~~~~~~~~~~~~~~~~~
 
 - :ref:`srd:chill-touch`
+- :ref:`srd:eldritch-blast`
 - :ref:`srd:mage-hand`
 - :ref:`srd:minor-illusion`
+- :ref:`srd:poison-spray`
 - :ref:`srd:prestidigitation`
 - :ref:`srd:true-strike`
 
@@ -19,6 +21,7 @@ Cantrips (0 Level)
 - :ref:`srd:charm-person`
 - :ref:`srd:comprehend-languages`
 - :ref:`srd:expeditious-retreat`
+- :ref:`srd:hellish-rebuke`
 - :ref:`srd:illusory-script`
 - :ref:`srd:protection-from-evil-and-good`
 - :ref:`srd:unseen-servant`
@@ -40,6 +43,7 @@ Cantrips (0 Level)
 3rd Level
 ~~~~~~~~~
 
+- :ref:`srd:counterspell`
 - :ref:`srd:dispel-magic`
 - :ref:`srd:fear`
 - :ref:`srd:fly`

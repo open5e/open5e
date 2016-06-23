@@ -23,6 +23,7 @@ Paladin Spells
 ~~~~~~~~~
 
 - :ref:`srd:aid`
+- :ref:`srd:branding-smite`
 - :ref:`srd:find-steed`
 - :ref:`srd:lesser-restoration`
 - :ref:`srd:locate-object`
