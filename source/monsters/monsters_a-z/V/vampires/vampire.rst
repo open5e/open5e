@@ -71,20 +71,16 @@ upside down on ceilings, without needing to make an ability check.
 **Vampire Weaknesses**: The vampire has the following flaws:
 
 - **Forbiddance**: The vampire can't enter a residence without an
-
   invitation from one of the occupants.
 
 - **Harmed by Running Water**: The vampire takes 20 acid damage if it ends
-
   its turn in running water.
 
 - **Stake to the Heart**: If a piercing weapon made of wood is driven into
-
   the vampire's heart while the vampire is :ref:`srd:incapacitated` in its resting
   place, the vampire is :ref:`srd:paralyzed` until the stake is removed.
 
 - **Sunlight Hypersensitivity**: The vampire takes 20 radiant damage when
-
   it starts its turn in sunlight. While in sunlight, it has disadvantage
   on attack rolls and ability checks.
 
