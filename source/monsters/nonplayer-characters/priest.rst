@@ -37,20 +37,24 @@ spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell
 attacks). The priest has the following cleric spells prepared:
 
 - Cantrips (at will):
+
   - :ref:`srd:light`
   - :ref:`srd:sacred-flame`
   - :ref:`srd:thaumaturgy`
 
 - 1st level (4 slots):
+
   - :ref:`srd:cure-wounds`
   - :ref:`srd:guiding-bolt`
   - :ref:`srd:sanctuary`
 
 - 2nd level (3 slots):
+
   - :ref:`srd:lesser-restoration`
   - :ref:`srd:spiritual-weapon`
 
 - 3rd level (2 slots):
+
   - :ref:`srd:dispel-magic`
   - :ref:`srd:spirit-guardians`
 

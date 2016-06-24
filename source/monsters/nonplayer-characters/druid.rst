@@ -31,17 +31,20 @@ ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It
 has the following druid spells prepared:
 
 - Cantrips (at will):
+
   - :ref:`srd:druidcraft`
   - :ref:`srd:produce-flame`
   - :ref:`srd:shillelagh`
 
 - 1st level (4 slots):
+
   - :ref:`srd:entangle`
   - :ref:`srd:longstrider`
   - :ref:`srd:speak-with-animals`
   - :ref:`srd:thunderwave`
 
 - 2nd level (3 slots):
+
   - :ref:`srd:animal-messenger`
   - :ref:`srd:barkskin`
 
