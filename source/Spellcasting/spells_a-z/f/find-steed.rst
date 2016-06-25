@@ -11,7 +11,9 @@ Find Steed
 
 **Range:** 30 feet
 
-**Components:** V, S **Duration:** Instantaneous
+**Components:** V, S
+
+**Duration:** Instantaneous
 
 You summon a spirit that assumes the form of an unusually intelligent,
 strong, and loyal steed, creating a long lasting bond with it. Appearing
