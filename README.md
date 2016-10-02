@@ -34,7 +34,7 @@ Sphinx documentation pages are written using a markup language called [reStructu
 
 ## Editing the theme
 
-If you are going to change the theme, you'll need [sass](http://sass-lang.com/) and [grunt](http://gruntjs.com/). If you don't already have [npm](https://www.npmjs.com/package/npm) and [ruby](https://www.ruby-lang.org/en/documentation/installation/) you'll also need to install them.
+If you are going to change the theme, you'll need [sass](http://sass-lang.com/). If you don't already have [npm](https://www.npmjs.com/package/npm) and [ruby](https://www.ruby-lang.org/en/documentation/installation/) you'll also need to install them.
 
 Find out if you already have npm and ruby:
 
@@ -43,19 +43,18 @@ npm --version
 ruby --version
 ```
 
-If you don't get a `command not found` error, you're ready to install sass and grunt:
+If you don't get a `command not found` error, you're ready to install sass:
 
 ```shell
 gem install sass
-npm install -g grunt
 ```
 
-Then cd to the template directory, install the node dependencies, and run grunt.
+Then cd to the template directory, install the node dependencies, and run a build.
 
 ```shell
 cd _themes/open5e_red_theme/
 npm install
-grunt
+npm run build
 ```
 
 This should build the style and launch a demo page with LiveReload for you to work against. If you want to preview your results on the 5e page, you'll need to do a clean Sphinx rebuild because the Makefile doesn't recognize changes to the theme as requiring an update:
