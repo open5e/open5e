@@ -111,7 +111,7 @@ def parseDuration(paragraph, spell):
 
   spell['duration'] = duration; # TODO: do we want to remove "Concentration, " here?
 
-  spell['concentration'] = "Concentration, " in duration;
+  spell['concentration'] = "concentration, " in duration;
 
 def parseDescriptionlike(paragraph, spell, key):
   str = elementToString(paragraph).strip();
