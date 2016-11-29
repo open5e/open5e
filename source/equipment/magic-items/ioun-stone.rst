@@ -64,8 +64,10 @@ maximum of 20, while this marbled pink and green sphere orbits your
 head.
 
 **Mastery (Legendary).** Your proficiency bonus increases by 1 while
-this pale green prism orbits your head. > **Protection (Rare).** You
-gain a +1 bonus to AC while this dusty rose prism orbits your head.
+this pale green prism orbits your head.
+
+**Protection (Rare).** You gain a +1 bonus to AC while this dusty rose 
+prism orbits your head.
 
 **Regeneration (Legendary).** You regain 15 hit points at the end of
 each hour this pearly white spindle orbits your head, provided that you
