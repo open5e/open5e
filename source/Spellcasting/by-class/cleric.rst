@@ -86,6 +86,7 @@ Cantrips (0 Level)
 - :ref:`srd:death-ward`
 - :ref:`srd:divination`
 - :ref:`srd:freedom-of-movement`
+- :ref:`srd:guardian-of-faith`
 - :ref:`srd:locate-creature`
 - :ref:`srd:stone-shape`
 
@@ -98,7 +99,6 @@ Cantrips (0 Level)
 - :ref:`srd:flame-strike`
 - :ref:`srd:geas`
 - :ref:`srd:greater-restoration`
-- :ref:`srd:guardian-of-faith`
 - :ref:`srd:hallow`
 - :ref:`srd:insect-plague`
 - :ref:`srd:legend-lore`
