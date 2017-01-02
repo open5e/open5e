@@ -32,9 +32,7 @@ Attack Rolls
 When you make an attack, your attack roll determines whether the attack
 hits or misses. To make an attack roll, roll a d20 and add the
 appropriate modifiers. If the total of the roll plus modifiers equals or
-exceeds the target's Armor Class
-
-(AC), the attack hits. The AC of a character is determined at character
+exceeds the target's Armor Class (AC), the attack hits. The AC of a character is determined at character
 creation, whereas the AC of a monster is in its stat block.
 
 Modifiers to the Roll
