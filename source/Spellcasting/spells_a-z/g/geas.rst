@@ -7,8 +7,13 @@ Geas
 5th-level enchantment
 ^^^^^^^^^^^^^^^^^^^^^
 
-**Casting Time:** 1 minute Range: 60 feet Components: V Duration: 30
-days
+**Casting Time:** 1 minute
+
+**Range:** 60 feet
+
+**Components:** V 
+
+**Duration:** 30 days
 
 You place a magical command on a creature that you can see within range,
 forcing it to carry out some service or refrain from some action or
