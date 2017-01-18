@@ -28,7 +28,10 @@ to draw the same card twice.
 Playing Card        Card
 ==================  ==============================
 Ace of diamonds     Vizier\*
-King of diamonds    Sun Queen of diamonds Moon Jack of diamonds Star Two of diamonds Comet\*
+King of diamonds    Sun
+Queen of diamonds   Moon
+Jack of diamonds    Star
+Two of diamonds     Comet\*
 Ace of hearts       The Fates\*
 King of hearts      Throne
 Queen of hearts     Key
@@ -40,7 +43,9 @@ Queen of clubs      Flames
 Jack of clubs       Skull
 Two of clubs        Idiot\*
 Ace of spades       Donjon\*
-King of spades      Ruin Queen of spades Euryale Jack of spades Rogue
+King of spades      Ruin 
+Queen of spades     Euryale 
+Jack of spades      Rogue
 Two of spades       Balance\*
 Joker (with TM)     Fool\*
 Joker (without TM)  Jester
