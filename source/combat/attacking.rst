@@ -8,7 +8,7 @@ Whether you're striking with a melee weapon, firing a weapon at range,
 or making an attack roll as part of a spell, an attack has a simple
 structure.
 
-1.  **Choose a target.** Pick a target within your attack's range: a >
+1.  **Choose a target.** Pick a target within your attack's range: a
     creature, an object, or a location.
 
 2.  **Determine modifiers.** The GM determines
