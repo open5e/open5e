@@ -22,9 +22,10 @@ following options for what appears:
 -  One beast of challenge rating 2 or lower
 -  Two beasts of challenge rating 1 or lower
 -  Four beasts of challenge rating 1/2 or lower
--  Eight beasts of challenge rating 1/4 or lower Each beast is also
-   considered fey, and it disappears when it drops to 0 hit points or
-   when the spell ends.
+-  Eight beasts of challenge rating 1/4 or lower
+
+Each beast is also considered fey, and it disappears when it drops
+to 0 hit points or when the spell ends.
 
 The summoned creatures are friendly to you and your companions. Roll
 initiative for the summoned creatures as a group, which has its own
