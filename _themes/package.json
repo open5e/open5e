@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
+    "bower": "^1.8.0",
     "browserify": "^11.0.0",
     "connect-livereload": "~0.3.0",
     "grunt": "~0.4.1",
