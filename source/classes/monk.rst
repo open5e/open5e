@@ -379,3 +379,96 @@ reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.
 You can have only one creature under the effect of this feature at a
 time. You can choose to end the vibrations harmlessly without using an
 action.
+
+Way of the Shadow
+^^^^^^^^^^^^^^^^^
+
+Monks of the Way of Shadow follow a tradition that values stealth and subterfuge. These monks might be called ninjas or shadowdancers, and they serve as spies and assassins. Sometimes the members of a ninja monastery are family members, forming a clan sworn to secrecy about their arts and missions. Other monasteries are more like thieves’ guilds, hiring out their services to nobles, rich merchants, or anyone else who can pay their fees. Regardless of their methods, the heads of these monasteries expect the unquestioning obedience of their students.
+
+Shadow Arts
+~~~~~~~~~~~
+
+Starting when you choose this tradition at 3rd level, you can use your ki to duplicate the effects of certain spells.
+
+As an action, you can spend 2 ki points to cast darkness, darkvision, pass without trace, or silence, without providing material components. Additionally, you gain the minor illusion cantrip if you don’t already know it.
+
+
+Shadow Step
+~~~~~~~~~~~
+
+At 6th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.
+
+Cloak of Shadows
+~~~~~~~~~~~~~~~~
+
+By 11th level, you have learned to become one with the shadows. When you are in an area of dim light or darkness, you can use your action to become invisible. You remain invisible until you make an attack, cast a spell, or are in an area of bright light.
+
+
+Opportunist
+~~~~~~~~~~~
+
+At 17th level, you can exploit a creature's momentary distraction when it is hit by an attack. Whenever a creature within 5 feet of you is hit by an attack made by a creature other than you, you can use your reaction to make a melee attack against that creature.
+
+
+Way of the Long Death
+^^^^^^^^^^^^^^^^^^^^^
+
+Monks of the Way of the Long Death are obsessed with the meaning and mechanics of dying. They capture creatures and prepare elaborate experiments to capture, record, and understand the moments of their demise. They then use this knowledge to guide their understanding of martial arts, yielding a deadly fighting style.
+
+Touch of Death
+~~~~~~~~~~~~~~
+
+Starting when you choose this tradition at 3rd level, your study of death allows you to extract vitality from another creature as it nears its demise. When you reduce a creature within 5 feet of you to 0 hit points, you gain temporary hit points equal to your Wisdom modifier + you monk level (minimum 1).
+
+
+Hour of Reaping
+~~~~~~~~~~~~~~~
+
+At 6th level, you gain the ability to unsettle or terrify those around you as an action, for your soul has been touched by the shadow of death. As an action, each creature within 30 feet of you that can see you must make a Wisdom saving throw or be frightened of you until the end of your next turn.
+
+Mastery of Death
+~~~~~~~~~~~~~~~~
+
+Beginning at 11th level, you use your familiarity with death to escape its grasp. When you are reduced to 0 hit points, you can expend 1 ki point (no action required) to have 1 hit point instead.
+
+
+Touch of the Long Death
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Starting at 17th level, your touch can channel the touch of death into a creature. As an action, you touch one creature within 5 feet of you, and you expend up to 10 ki points. The target must make a Constitution saving throw or take 2d10 necrotic damage per ki point spent on a failed save, or half as much damage on a successful one.
+
+
+Way of the Sun Soul
+^^^^^^^^^^^^^^^^^^^
+
+Monks of the Way of the Sun Soul learn to channel their own life energy into searing bolts of light. They teach that meditation can unlock the ability to unleash the indomitable light shed by the soul of every living creature.
+
+Radient Sun Bolt
+~~~~~~~~~~~~~~~~
+
+Starting when you choose this tradition at 3rd level, you can hurl searing bolts of magical radiance. You gain a ranged spell attack you can use with the Attack action. The attack has a range of 30 feet. You are proficient with it, and you add your Dexterity modifier to its attack and damage rolls. It deals a amount of radiant damage equal to your Martial Arts die, as shown on the Monk table.
+
+When you use the attack action on your turn to use this special attack, you can spend 1 ki point to make two additional attacks with it as a bonus action.
+
+
+Searing Arc Strike
+~~~~~~~~~~~~~~~~~~
+
+At 6th level, you gain the ability to channel your ki into searing waves of energy. Immediately after you take the Attack action on your turn, you can spend 2 ki points to cast the 1st level spell burning hands as a bonus action.
+
+You can spend additional ki points to cast burning hands at a higher level. Each additional ki point you spend increases the spell's level by 1. The maximum number of ki points (2 plus any additional points) that you can spend on the spell equals half your monk level (round down).
+
+Searing Sunburst
+~~~~~~~~~~~~~~~~
+
+At 11th level, you gain the ability to create an orb of light that erupts into a devastating explosion. As an action, you can create an orb of light and hurl it at a point you choose within 150 feet, where it erupts into a sphere of radiant light for a brief but deadly instant. Each creature in that 20 foot radius sphere must succeed on a Constitution saving throw or take 2d6 radiant damage. A creature doesn't need to make the save if the creature is behind total cover that is opaque.
+
+You can increase the sphere's power by spending ki points. Each point of ki you spend, up to a maximum of 3, increases the damage by 2d6.
+
+
+Sun Shield
+~~~~~~~~~~
+
+At 17th level, you become wreathed in a luminous aura. You shed bright light in a 30 foot radius and dim light for an additional 30 feet. You can extinguish or restore this light as a bonus action.
+
+If a creature hits you with a melee attack while this light shines, you can use your reaction to deal radiant damage equal to 5 plus your Wisdom modifier to the creature.
