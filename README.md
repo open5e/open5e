@@ -6,7 +6,7 @@ An SRD and open-source material reference site for 5th edition D&amp;D
 
 ## Contributing
 
-Open5e is a community project driven by a small number of voluneers in their spare time. We welcome any and all contributions! If you're working on content, please take a look at our [style guide](https://github.com/eepMoody/open5e/wiki/Style-Guide).
+Open5e is a community project driven by a small number of volunteers in their spare time. We welcome any and all contributions! If you're working on content, please take a look at our [style guide](https://github.com/eepMoody/open5e/wiki/Style-Guide).
 
 ## Editing Content
 Open5e is statically generated using [Sphinx](http://www.sphinx-doc.org/en/stable/), a Python-based documentation generator. The content is written in [reStructuredText](http://docutils.sourceforge.net/rst.html). If this is your first time working with reST, take a look at the [syntax guide](http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html). Also, take a look at our [reST editor tool recommendations](https://github.com/eepMoody/open5e/wiki/reST-Tool-Recommendations).
