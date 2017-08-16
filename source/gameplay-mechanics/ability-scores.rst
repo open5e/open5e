@@ -232,9 +232,7 @@ Skills
 
 Each ability covers a broad range of capabilities, including skills that
 a character or a monster can be proficient in. A skill represents a
-specific aspect of an
-
-ability score, and an individual's proficiency in a skill demonstrates a
+specific aspect of an ability score, and an individual's proficiency in a skill demonstrates a
 focus on that aspect. (A character's starting skill proficiencies are
 determined at character creation, and a monster's skill proficiencies
 appear in the monster's stat block.)
