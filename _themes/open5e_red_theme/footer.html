@@ -15,20 +15,11 @@
   <div role="contentinfo">
     <p>
     {%- if show_copyright %}
-      {%- if pagename == 'characters/southlandsheroes_races' %}
-        {%- if hasdoc('southlandsheroes_license') %}
-          {% trans path=pathto('southlandsheroes_license'), license=southlandsheroes_license|e %}<a href="{{ path }}">License</a>{% endtrans %}
-        {%- else %}
-          <!-- {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %} -->
-          {% trans copyright=copyright|e %}This is broke{% endtrans %}
-        {%- endif %}
+      {%- if hasdoc('license') %}
+        {% trans path=pathto('license'), license=license|e %}<a href="{{ path }}">License</a>{% endtrans %}
       {%- else %}
-        {%- if hasdoc('license') %}
-          {% trans path=pathto('license'), license=license|e %}<a href="{{ path }}">License</a>{% endtrans %}
-        {%- else %}
-          <!-- {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %} -->
-          {% trans copyright=copyright|e %}This is broke{% endtrans %}
-        {%- endif %}
+        <!-- {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %} -->
+        {% trans copyright=copyright|e %}This is broke{% endtrans %}
       {%- endif %}
     {%- endif %}
 
