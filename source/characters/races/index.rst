@@ -15,3 +15,4 @@ Races
    halfling
    human
    *
+   southlandsheroes_races/index
