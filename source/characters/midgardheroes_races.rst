@@ -187,7 +187,7 @@ are the most resilient of their ilk.
 
 **Ability Score Increase.** Your Constitution score increases by 1.
 
-**Stone Resolve.** You know the blade ward cantrip. Charisma
+**Stone Resolve.** You know the :ref:`srd:blade-ward` cantrip. Charisma
 is your spellcasting ability for it.
 
 **Resilient Scales.** You have resistance to acid damage.
@@ -283,8 +283,8 @@ with some of the benefits and drawbacks of a construct.
   While performing this maintenance, you are aware of your surroundings
   but you have disadvantage on Wisdom (Perception) checks. If you go
   longer than 24 hours without performing maintenance (you don’t take a
-  long rest), you gain one level of exhaustion. All exhaustion gained this
-  way disappears after your next long rest.
+  long rest), you gain one level of :ref:`exhaustion`. All exhaustion
+  gained this way disappears after your next long rest.
 * You can’t be stabilized when dying with a Wisdom (Medicine) check or
   spare the dying. Instead, a successful DC 10 Intelligence check or a
   :ref:`srd:mending` cantrip is needed.
@@ -292,7 +292,7 @@ with some of the benefits and drawbacks of a construct.
   magical effects with the words cure, heal, or healing in their titles.
 
 **Flesh of Steel.** You are immune to disease, poison damage, and the
-poisoned condition.
+:ref:`poisoned` condition.
 
 **Solid Construction.** If you are killed but your soul gem and memory
 gears are still intact, you can be restored to life if your body is
@@ -342,9 +342,9 @@ table and apply the listed traits.
 
 **Hunger for Flesh.** You must consume a meal of raw meat each day or
 suffer the effects of starvation. If you go 24 hours without such a
-meal, you gain one level of exhaustion (this is an exception to the
-darakhul’s immunity). You cannot stave this off with half rations. While
-you have any levels of exhaustion, you cannot regain hit points or
+meal, you gain one level of :ref:`exhaustion` (this is an exception to
+the darakhul’s immunity). You cannot stave this off with half rations.
+While you have any levels of exhaustion, you cannot regain hit points or
 remove levels of exhaustion until you spend 1 hour consuming an amount
 of raw meat equal to a Small creature (about 30 pounds).
 
@@ -356,16 +356,17 @@ sight.
 **Undead Vitality.** You are infused with the dark energy of undeath,
 which frees you from some frailties that plague living creatures. You
 have resistance to necrotic damage and immunity to poison damage. You
-are immune to exhaustion and to the charmed and poisoned conditions. If
-you die, you cannot be returned to life by :ref:`srd:revivify`,
-:ref:`srd:raise-dead`, or :ref:`srd:reincarnate`;
-:ref:`srd:resurrection` and :ref:`srd:true-resurrection` return you to
-life as your original race. A create undead spell cast so that it
-targets only your corpse affects you as a :ref:`srd:raise-dead` spell
-affects the corpse of a once-living creature. You don’t need to drink or
-breathe. You don’t sleep the way living creatures do, but during long
-rests, you enter a dormant state resembling death; during that time, you
-have disadvantage on Wisdom (Perception) checks.
+are immune to :ref:`exhaustion` and to the :ref:`charmed` and
+:ref:`poisoned` conditions. If you die, you cannot be returned to life
+by :ref:`srd:revivify`, :ref:`srd:raise-dead`, or
+:ref:`srd:reincarnate`; :ref:`srd:resurrection` and
+:ref:`srd:true-resurrection` return you to life as your original race.
+A create undead spell cast so that it targets only your corpse affects
+you as a :ref:`srd:raise-dead` spell affects the corpse of a once-living
+creature. You don’t need to drink or breathe. You don’t sleep the way
+living creatures do, but during long rests, you enter a dormant state
+resembling death; during that time, you have disadvantage on Wisdom
+(Perception) checks.
 
 **Languages.** You can speak, read, and write Darakhul and Trade Tongue.
 
@@ -424,9 +425,9 @@ were bright light, and in darkness as if it were dim light. You cannot
 discern color in darkness, only shades of gray.
 
 **Blindsider.** You have advantage on your attack roll against an enemy
-within 5 feet of you if you have an ally that’s not incapacitated also
-within 5 feet of the target. You can apply this bonus to one attack per
-round.
+within 5 feet of you if you have an ally that’s not :ref:`incapacitated`
+also within 5 feet of the target. You can apply this bonus to one attack
+per round.
 
 **Sunlight Sensitivity.** You have disadvantage on attack rolls and on
 Wisdom (Perception) checks that rely on sight when you, the target of
