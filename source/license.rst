@@ -1,8 +1,8 @@
 
 .. _srd:legal-information:
 
-Legal Information
------------------
+Legal Information (SRD5)
+--------------------------
 
 Permission to copy, modify and distribute the files collectively known
 as the System Reference Document 5.1 ("SRD5") is granted solely through
@@ -37,8 +37,6 @@ illithid, umber hulk, yuan-ti.
 
 All of the rest of the SRD5 is Open Game Content as described in Section
 1(d) of the License.
-
-The terms of the Open Gaming License Version 1.0a are as follows:
 
 Legal Information (Midgard Heroes)
 ----------------------------------
