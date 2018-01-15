@@ -64,3 +64,4 @@ The 5e SRD
     :hidden:
 
     license
+    southlandsheroes_license
