@@ -24,10 +24,10 @@ spell.
 descendant of a fire godling. You have resistance to fire damage. This
 ability replaces your resistance to necrotic and radiant damage.
 
-**Celestial Awareness.** You were trained to use all your senses to avoid
-surprise attacks and assassinations. You gain blindsight to a range of
-10 feet. This ability replaces darkvision, and your ability to cast the
-:ref:`srd:daylight` spell.
+**Celestial Awareness.** You were trained to use all your senses to
+avoid surprise attacks and assassinations. You gain blindsight to a
+range of 10 feet. This ability replaces darkvision, and your ability to
+cast the :ref:`srd:daylight` spell.
 
 **Heaven’s Wrath.** You have been trained to focus the light and
 righteousness of the Seven Heavens upon your enemies as a weapon. You
@@ -134,10 +134,10 @@ back of your hand.
 
 **Ability Score Increase.** Your Wisdom score increases by 1.
 
-**Scavenge.** Whenever you make a Wisdom (Survival) check for gathering food
-or locating water, you are considered proficient in the Survival skill
-and add double your proficiency bonus to the check, instead of your
-normal proficiency bonus.
+**Scavenge.** Whenever you make a Wisdom (Survival) check for gathering
+food or locating water, you are considered proficient in the Survival
+skill and add double your proficiency bonus to the check, instead of
+your normal proficiency bonus.
 
 Lizardfolk
 ~~~~~~~~~~
@@ -204,37 +204,37 @@ proficiency bonus to checks made to climb, instead of your normal
 proficiency bonus. This ability replaces your swim speed and hold breath
 abilities.
 
-**Chromatophore.** You can alter the color of your skin and can blend into
-your environment. You gain advantage on Stealth checks made to hide as
-long as you are not moving. If you are wearing no armor and carrying no
-items, you may attempt to hide even if you have no cover or obscurement.
-You can’t use this ability to hide while you are being directly
-observed. This ability replaces your swim speed and hold breath
+**Chromatophore.** You can alter the color of your skin and can blend
+into your environment. You gain advantage on Stealth checks made to hide
+as long as you are not moving. If you are wearing no armor and carrying
+no items, you may attempt to hide even if you have no cover or
+obscurement. You can’t use this ability to hide while you are being
+directly observed. This ability replaces your swim speed and hold breath
 abilities.
 
-**Digger.** You can burrow through soft sand, dirt, and mud at a rate of 10
-feet per round. This ability replaces your swim speed ability.
+**Digger.** You can burrow through soft sand, dirt, and mud at a rate of
+10 feet per round. This ability replaces your swim speed ability.
 
-**Glider.** You take no damage from falls. You gain a fly speed of 40 feet
-but cannot hover. At the end of any round you fly, you must have
+**Glider.** You take no damage from falls. You gain a fly speed of 40
+feet but cannot hover. At the end of any round you fly, you must have
 descended at least one-quarter the distance you traveled or you fall.
 This ability replaces your swim speed and hold breath abilities.
 
-**Gout of Blood.** Some lizardfolk can force a jet of hot blood from their
-eyes to disorient predators and prey. As an action, you can target any
-creature within 15 feet with this ability and force the target to make a
-Wisdom saving throw against a DC equal to 8 + your proficiency modifier
-+ your Dexterity modifier. On a failed save, the target is frightened.
-The frightened creature can repeat this save at the end of each of its
-turns, ending the condition on a success. Creatures wearing full-face
-helmets, eye protection, etc. gain advantage on the save. You may use
-this ability a number of times per day equal to your Constitution
-modifier, and you regain all expended uses when you finish a long rest.
-This ability replaces your bite attack.
+**Gout of Blood.** Some lizardfolk can force a jet of hot blood from
+their eyes to disorient predators and prey. As an action, you can target
+any creature within 15 feet with this ability and force the target to
+make a Wisdom saving throw against a DC equal to 8 + your proficiency
+modifier + your Dexterity modifier. On a failed save, the target is
+frightened. The frightened creature can repeat this save at the end of
+each of its turns, ending the condition on a success. Creatures wearing
+full-face helmets, eye protection, etc. gain advantage on the save. You
+may use this ability a number of times per day equal to your
+Constitution modifier, and you regain all expended uses when you finish
+a long rest. This ability replaces your bite attack.
 
-**Regeneration.** Some lizardfolk heal at an impressive rate. Whenever you
-spend at least one Hit Die to regain hit points during a short rest, you
-regain an additional number of hit points equal to twice your
+**Regeneration.** Some lizardfolk heal at an impressive rate. Whenever
+you spend at least one Hit Die to regain hit points during a short rest,
+you regain an additional number of hit points equal to twice your
 Constitution modifier. Severed fingers and toes regrow after 24 hours.
 Severed hands and feet regrow after three days. Severed limbs regrow
 after one week. If the severed body part is present and whole, you can
@@ -422,11 +422,25 @@ Constitution modifier (AC 10) to the spittle also frees the target.
 After you use binding spittle, you can’t use it again until you finish a
 short or long rest. This trait replaces the Stalker trait.
 
-**Bite.** Some hiveless tosculi develop the fierce mandibles associated with the warriors that defend their hives. You can make a bite attack as an unarmed strike that deals 1d6 slashing damage. On a successful hit with a bite, you may attempt to grapple the target as a bonus action. At 11th level, your bite damage increases to 2d6. This trait replaces the Stalker trait.
+**Bite.** Some hiveless tosculi develop the fierce mandibles associated
+with the warriors that defend their hives. You can make a bite attack as
+an unarmed strike that deals 1d6 slashing damage. On a successful hit
+with a bite, you may attempt to grapple the target as a bonus action. At
+11th level, your bite damage increases to 2d6. This trait replaces the
+Stalker trait.
 
-**Latent Hive Mind.** You know the :ref:`srd:message` cantrip. This cantrip is a psionic ability that does not require components. The cantrip also functions in a silence spell. At 3rd level you can cast the :ref:`srd:detect-thoughts` spell once, without the need for components, and you regain the ability to do so when you finish a long rest. This trait replaces the Gliding Wings trait.
+**Latent Hive Mind.** You know the :ref:`srd:message` cantrip. This
+cantrip is a psionic ability that does not require components. The
+cantrip also functions in a silence spell. At 3rd level you can cast the
+:ref:`srd:detect-thoughts` spell once, without the need for components,
+and you regain the ability to do so when you finish a long rest. This
+trait replaces the Gliding Wings trait.
 
-**Hardened Carapace.** Some hiveless tosculi develop additional defenses at the cost of offensive ability. Your Armor Class cannot be less than 11 + your Constitution modifier + your Dexterity modifier no matter what armor you are wearing. This trait replaces the Gliding Wings and Natural Armor traits.
+**Hardened Carapace.** Some hiveless tosculi develop additional defenses
+at the cost of offensive ability. Your Armor Class cannot be less than
+11 + your Constitution modifier + your Dexterity modifier no matter what
+armor you are wearing. This trait replaces the Gliding Wings and Natural
+Armor traits.
 
 New Tosculi Class Archetypes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
