@@ -1,8 +1,8 @@
 
 .. _migardheroes:legal-information:
 
-Legal Information
------------------
+Legal Information (Midgard Heroes)
+----------------------------------
 
 Kobold Press, Midgard, the Midgard logo, Southlands, Open Design,
 and their associated logos are trademarks of Open Design.
