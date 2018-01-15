@@ -151,8 +151,8 @@ superior strength.
 
 **Ability Score Increase.** Your Strength score increases by 1.
 
-**Inner Flame.** You know the :ref:`srd:produce-flame` cantrip. Charisma is your
-spellcasting ability for it.
+**Inner Flame.** You know the :ref:`srd:produce-flame` cantrip. Charisma
+is your spellcasting ability for it.
 
 **Resilient Scales.** You have resistance to fire damage.
 
@@ -168,8 +168,8 @@ knowledgeable but far from passive.
 
 **Ability Score Increase.** Your Intelligence score increases by 1.
 
-**Storm Strike.** You know the :ref:`srd:shocking-grasp` cantrip. Charisma is your
-spellcasting ability for it.
+**Storm Strike.** You know the :ref:`srd:shocking-grasp` cantrip.
+Charisma is your spellcasting ability for it.
 
 **Resilient Scales.** You have resistance to lightning damage.
 
@@ -187,7 +187,7 @@ are the most resilient of their ilk.
 
 **Ability Score Increase.** Your Constitution score increases by 1.
 
-**Stone Resolve.** You know the :ref:`srd:blade-ward` cantrip. Charisma
+**Stone Resolve.** You know the Blade Ward cantrip. Charisma
 is your spellcasting ability for it.
 
 **Resilient Scales.** You have resistance to acid damage.
@@ -283,8 +283,8 @@ with some of the benefits and drawbacks of a construct.
   While performing this maintenance, you are aware of your surroundings
   but you have disadvantage on Wisdom (Perception) checks. If you go
   longer than 24 hours without performing maintenance (you don’t take a
-  long rest), you gain one level of :ref:`exhaustion`. All exhaustion
-  gained this way disappears after your next long rest.
+  long rest), you gain one level of :ref:`srd:exhaustion`. All
+  exhaustion gained this way disappears after your next long rest.
 * You can’t be stabilized when dying with a Wisdom (Medicine) check or
   spare the dying. Instead, a successful DC 10 Intelligence check or a
   :ref:`srd:mending` cantrip is needed.
@@ -292,7 +292,7 @@ with some of the benefits and drawbacks of a construct.
   magical effects with the words cure, heal, or healing in their titles.
 
 **Flesh of Steel.** You are immune to disease, poison damage, and the
-:ref:`poisoned` condition.
+:ref:`srd:poisoned` condition.
 
 **Solid Construction.** If you are killed but your soul gem and memory
 gears are still intact, you can be restored to life if your body is
@@ -342,7 +342,7 @@ table and apply the listed traits.
 
 **Hunger for Flesh.** You must consume a meal of raw meat each day or
 suffer the effects of starvation. If you go 24 hours without such a
-meal, you gain one level of :ref:`exhaustion` (this is an exception to
+meal, you gain one level of :ref:`srd:exhaustion` (this is an exception to
 the darakhul’s immunity). You cannot stave this off with half rations.
 While you have any levels of exhaustion, you cannot regain hit points or
 remove levels of exhaustion until you spend 1 hour consuming an amount
@@ -356,9 +356,9 @@ sight.
 **Undead Vitality.** You are infused with the dark energy of undeath,
 which frees you from some frailties that plague living creatures. You
 have resistance to necrotic damage and immunity to poison damage. You
-are immune to :ref:`exhaustion` and to the :ref:`charmed` and
-:ref:`poisoned` conditions. If you die, you cannot be returned to life
-by :ref:`srd:revivify`, :ref:`srd:raise-dead`, or
+are immune to :ref:`srd:exhaustion` and to the :ref:`srd:charmed` and
+:ref:`srd:poisoned` conditions. If you die, you cannot be returned to
+life by :ref:`srd:revivify`, :ref:`srd:raise-dead`, or
 :ref:`srd:reincarnate`; :ref:`srd:resurrection` and
 :ref:`srd:true-resurrection` return you to life as your original race.
 A create undead spell cast so that it targets only your corpse affects
@@ -425,13 +425,14 @@ were bright light, and in darkness as if it were dim light. You cannot
 discern color in darkness, only shades of gray.
 
 **Blindsider.** You have advantage on your attack roll against an enemy
-within 5 feet of you if you have an ally that’s not :ref:`incapacitated`
-also within 5 feet of the target. You can apply this bonus to one attack
-per round.
+within 5 feet of you if you have an ally that’s not
+:ref:`srd:incapacitated` also within 5 feet of the target. You can apply
+this bonus to one attack per round.
 
 **Sunlight Sensitivity.** You have disadvantage on attack rolls and on
 Wisdom (Perception) checks that rely on sight when you, the target of
-your attack, or whatever you are trying to perceive is in bright sunlight.
+your attack, or whatever you are trying to perceive is in bright
+sunlight.
 
 **Tinkerer.** You have proficiency with artisan’s tools of your choice:
 alchemist’s supplies, mason’s tools, smith’s tools, or tinker’s tools.
@@ -497,27 +498,30 @@ other ravenfolk.
 **Ability Score Increase.** Your Dexterity score increases by 2 and your
 Charisma score increases by 1.
 
-**Age.** Ravenfolk reach adulthood at 10 years old, and can live to be 110.
+**Age.** Ravenfolk reach adulthood at 10 years old, and can live to be
+110.
 
-**Alignment.** Ravenfolk tend toward chaos thanks to their capriciousness
-and insatiable curiosity. Greed overwhelms some ravenfolk, drawing them
-toward evil.
+**Alignment.** Ravenfolk tend toward chaos thanks to their
+capriciousness and insatiable curiosity. Greed overwhelms some
+ravenfolk, drawing them toward evil.
 
-**Size.** Ravenfolk are slighter and shorter than humans. They range from 4
-feet to just shy of 6 feet tall. Your size is Medium.
+**Size.** Ravenfolk are slighter and shorter than humans. They range
+from 4 feet to just shy of 6 feet tall. Your size is Medium.
 
 **Speed.** Your base walking speed is 30 feet.
 
-**Sudden Attack.** You have advantage on attack rolls against a surprised
-creature.
+**Sudden Attack.** You have advantage on attack rolls against a
+surprised creature.
 
-**Mimicry.** Ravenfolk can mimic any sound they’ve heard. Make a Charisma
-(Deception) check against the passive Wisdom (Insight) of any listeners.
-Success indicates they believe the sound you created was real.
+**Mimicry.** Ravenfolk can mimic any sound they’ve heard. Make a
+Charisma (Deception) check against the passive Wisdom (Insight) of any
+listeners. Success indicates they believe the sound you created was
+real.
 
 **Trickster.** You have proficiency in the Deception and Stealth skills.
 
-**Languages.** You can speak, read, and write Huginn’s Speech and Northern Tongue.
+**Languages.** You can speak, read, and write Huginn’s Speech and
+Northern Tongue.
 
 Shadow Fey
 ~~~~~~~~~~
