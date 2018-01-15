@@ -52,6 +52,10 @@ Product Identity, as defined in the Open Game License version 1.0a,
 Section 1(e), and are not Open Content: All trademarks, registered
 trademarks, proper names (characters, place names, new deities, etc.),
 
+**Open Game Content:** The Open content in this book includes the racial
+traits, racial variants, and archetypes. No other portion of this work
+may be reproduced in any form without permission.
+
 Southlands Heroes
 ~~~~~~~~~~~~~~~~~
 
@@ -62,7 +66,6 @@ logos are trademarks of Open Design.
 Identity, as defined in the Open Game License version 1.0a,
 Section 1(e), and are not Open Content: All trademarks, registered
 trade-marks, proper names (characters, place names, new deities, etc.),
->>>>>>> sr_southlands_heroes
 dialogue, plots, story elements, locations, characters, artwork,
 sidebars, and trade dress. (Elements that have previously been
 designated as Open Game Content are not included in this declaration.)
