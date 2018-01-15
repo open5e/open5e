@@ -36,17 +36,18 @@ spell, and you regain the ability to do so when you finish a long rest.
 This ability replaces your ability to cast the
 :ref:`srd:lesser-restoration` and :ref:`srd:daylight` spells.
 
-**Divine Splendor.** Your celestial ancestor was a leader of angelic hosts,
-and you can summon their divine aura and captivate those who behold you.
-At 3rd level, you gain the ability to cast :ref:`srd:enhance-ability`
-(eagle’s splendor) once with a range of Personal as a 2nd level spell
-without the need to maintain concentration, and you regain the ability
-to do so when you finish a long rest. At 5th level, you gain the
-benefits of both eagle’s splendor and owl’s wisdom when you use this
-ability. A shining halo or nimbus forms around your head while the spell
-is in effect, revealing your divine nature. The glow from the halo is
-dim light with a ten-foot radius. This ability replaces your ability to
-cast the :ref:`srd:lesser-restoration` and :ref:`srd:daylight` spells.
+**Divine Splendor.** Your celestial ancestor was a leader of angelic
+hosts, and you can summon their divine aura and captivate those who
+behold you. At 3rd level, you gain the ability to cast
+:ref:`srd:enhance-ability` (eagle’s splendor) once with a range of
+Personal as a 2nd level spell without the need to maintain
+concentration, and you regain the ability to do so when you finish a
+long rest. At 5th level, you gain the benefits of both eagle’s splendor
+and owl’s wisdom when you use this ability. A shining halo or nimbus
+forms around your head while the spell is in effect, revealing your
+divine nature. The glow from the halo is dim light with a ten-foot
+radius. This ability replaces your ability to cast the
+:ref:`srd:lesser-restoration` and :ref:`srd:daylight` spells.
 
 Gnoll
 ~~~~~
@@ -85,11 +86,11 @@ smell.
 
 **Bully.** Although gnolls are cowardly at heart, they like to disguise
 their fears by abusing others. You have disadvantage on saving throws
-against being :ref:`frightened`. On the other hand, whenever you make a
-Charisma (Intimidation) check for dealing with obviously smaller or
-weaker targets, you are considered proficient in the Intimidation skill
-and add double your proficiency bonus to the check, instead of your
-normal proficiency bonus.
+against being :ref:`srd:frightened`. On the other hand, whenever you
+make a Charisma (Intimidation) check for dealing with obviously smaller
+or weaker targets, you are considered proficient in the Intimidation
+skill and add double your proficiency bonus to the check, instead of
+your normal proficiency bonus.
 
 **Live to Fight Another Day.** When you take the Disengage action, your
 base walking speed is increased by 10 feet.
@@ -164,23 +165,23 @@ lizardfolk tend toward neutrality. Lizardfolk who choose to leave their
 villages, or who are banished, may do so for a variety of reasons,
 including an alignment conflicting with typical lizardfolk society.
 
-**Size.** Lizardfolk are slightly larger than the average human. Your size
-is medium.
+**Size.** Lizardfolk are slightly larger than the average human. Your
+size is medium.
 
-**Speed.** Your base walking speed is 30 feet. You have a swim speed of 30
-feet.
+**Speed.** Your base walking speed is 30 feet. You have a swim speed of
+30 feet.
 
-**Natural Armor.** If you are not wearing armor, your base AC equals 12 +
-your Dexterity modifier. You can use a shield and still gain this
+**Natural Armor.** If you are not wearing armor, your base AC equals 12
++ your Dexterity modifier. You can use a shield and still gain this
 benefit.
 
-**Natural Attacks.** You have proficiency with your bite, which deals 1d6
-piercing damage.
+**Natural Attacks.** You have proficiency with your bite, which deals
+1d6 piercing damage.
 
 **Natural Predator.** You have proficiency with the Stealth skill.
 
-**Hold Breath.** You can hold your breath for a number of minutes equal to
-your Constitution score.
+**Hold Breath.** You can hold your breath for a number of minutes equal
+to your Constitution score.
 
 **Languages.** You speak, read, and write Draconic, plus one additional
 language of your choice (typically Southern).
@@ -225,12 +226,12 @@ their eyes to disorient predators and prey. As an action, you can target
 any creature within 15 feet with this ability and force the target to
 make a Wisdom saving throw against a DC equal to 8 + your proficiency
 modifier + your Dexterity modifier. On a failed save, the target is
-:ref:`frightened`. The frightened creature can repeat this save at the
-end of each of its turns, ending the condition on a success. Creatures
-wearing full-face helmets, eye protection, etc. gain advantage on the
-save. You may use this ability a number of times per day equal to your
-Constitution modifier, and you regain all expended uses when you finish
-a long rest. This ability replaces your bite attack.
+:ref:`srd:frightened`. The frightened creature can repeat this save at
+the end of each of its turns, ending the condition on a success.
+Creatures wearing full-face helmets, eye protection, etc. gain advantage
+on the save. You may use this ability a number of times per day equal to
+your Constitution modifier, and you regain all expended uses when you
+finish a long rest. This ability replaces your bite attack.
 
 **Regeneration.** Some lizardfolk heal at an impressive rate. Whenever
 you spend at least one Hit Die to regain hit points during a short rest,
@@ -243,7 +244,7 @@ Die to regain hit points and perform no other actions, even light
 duties. You gain one level of :ref:`srd:exhaustion` when you begin
 regenerating a limb. While a limb is regenerating, as well as for one
 day after the regrowth is complete, you cannot have less than one level
-of :ref:`exhaustion`. This ability replaces your natural armor and
+of :ref:`srd:exhaustion`. This ability replaces your natural armor and
 natural predator abilities.
 
 **Poisoned Bite.** Lizardfolk are sometimes born with venomous fangs or
@@ -296,12 +297,12 @@ Bonus Proficiencies.
 
 **Patience.** At 9th level, you learn to wait in a single spot with
 infinite patience. As long as you don’t move, you have advantage on any
-saving throw against falling asleep or succumbing to :ref:`exhaustion`.
-While you remain stationary you can undertake light activity (to remain
-on watch only) for the entire duration of a long rest, and still gain
-its benefits. If you move, or engage in any other sort of activity, you
-must rest as normal for the remainder of the long rest to complete it.
-This ability replaces Infiltration Expertise.
+saving throw against falling asleep or succumbing to
+:ref:`srd:exhaustion`. While you remain stationary you can undertake
+light activity (to remain on watch only) for the entire duration of a
+long rest, and still gain its benefits. If you move, or engage in any
+other sort of activity, you must rest as normal for the remainder of the
+long rest to complete it. This ability replaces Infiltration Expertise.
 
 **Sniper.** At 13th level, you do not automatically reveal your location
 when you attack while hidden. You must be at least 10 feet away from any
@@ -413,9 +414,9 @@ Alternate Racial Traits
 **Binding Spittle.** As an Attack action, you may spit a ball of viscous
 fluid at a target within 60 feet that is Medium or smaller. Make a
 ranged attack against the target with proficiency. If successful, the
-fluid hardens upon impact and the target becomes :ref:`restrained`. As
-an action, the target can make a Strength check against a DC equal to 8
-+ your proficiency bonus + your Constitution modifier to remove the
+fluid hardens upon impact and the target becomes :ref:`srd:restrained`.
+As an action, the target can make a Strength check against a DC equal to
+8 + your proficiency bonus + your Constitution modifier to remove the
 condition. Anyone adjacent to a creature restrained by binding spittle
 may use their action to free the target in the same way. Dealing an
 amount of bludgeoning damage equal to half your level plus your
@@ -479,7 +480,7 @@ Vermin’s Ward
 """""""""""""
 At 10th level, you become immune to poison and disease. In addition, you
 ignore movement restrictions caused by webbing and gain advantage on
-saving throws against being :ref:`restrained`. This ability replaces
+saving throws against being :ref:`srd:restrained`. This ability replaces
 Nature’s Ward.
 
 Variant Druid: Circle of the Swarm (Circle of the Moon)
@@ -581,8 +582,8 @@ discern color in darkness, only shades of gray.
 to assume two alternate forms—the hybrid leonine and the lion. As an
 action, you can change into either your hybrid leonine form or your lion
 form. You can remain in this form for 1 hour, reverting to your humanoid
-form when the time expires, you fall :ref:`unconscious`, you drop to 0
-hit points, or you die.
+form when the time expires, you fall :ref:`srd:unconscious`, you drop to
+0 hit points, or you die.
 
 You can revert to your humanoid form early as a bonus action. Once you
 use this ability, you can’t use it again until you finish a short rest.
