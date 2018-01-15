@@ -1,8 +1,8 @@
 
 .. _srd:legal-information:
 
-Legal Information (SRD5)
---------------------------
+Legal Information
+-----------------
 
 SRD5
 ~~~~
