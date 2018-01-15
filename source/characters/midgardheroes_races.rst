@@ -187,7 +187,7 @@ are the most resilient of their ilk.
 
 **Ability Score Increase.** Your Constitution score increases by 1.
 
-**Stone Resolve.** You know the :ref:`srd:blade-ward` cantrip. Charisma
+**Stone Resolve.** You know the blade ward cantrip. Charisma
 is your spellcasting ability for it.
 
 **Resilient Scales.** You have resistance to acid damage.
