@@ -1,48 +1,8 @@
 
-.. _srd:legal-information:
+.. _southlandsheroes:legal-information:
 
-Legal Information
------------------
-
-SRD5
-~~~~
-
-Permission to copy, modify and distribute the files collectively known
-as the System Reference Document 5.1 ("SRD5") is granted solely through
-the use of the Open Gaming License, Version 1.0a.
-
-This material is being released using the Open Gaming License Version
-1.0a and you should read and understand the terms of that license before
-using this material.
-
-The text of the Open Gaming License itself is not Open Game Content.
-Instructions on using the License are provided within the License
-itself.
-
-The following items are designated Product Identity, as defined in
-Section 1(e) of the Open Game License Version 1.0a, and are subject to
-the conditions set forth in Section 7 of the OGL, and are not Open
-Content: Dungeons & Dragons, D&D, Player's Handbook, Dungeon Master,
-Monster Manual, d20 System, Wizards of the Coast, d20 (when used as a
-trademark), Forgotten Realms, Faerûn, proper names (including those used
-in the names of spells or items), places, Underdark, Red Wizard of Thay,
-the City of Union, Heroic Domains of Ysgard, Ever-Changing Chaos of
-Limbo, Windswept Depths of Pandemonium, Infinite Layers of the Abyss,
-Tarterian Depths of Carceri, Gray Waste of Hades, Bleak Eternity of
-Gehenna, Nine Hells of Baator, Infernal Battlefield of Acheron,
-Clockwork Nirvana of Mechanus, Peaceable Kingdoms of Arcadia, Seven
-Mounting Heavens of Celestia, Twin Paradises of Bytopia, Blessed Fields
-of Elysium, Wilderness of the Beastlands, Olympian Glades of Arborea,
-Concordant Domain of the Outlands, Sigil, Lady of Pain, Book of Exalted
-Deeds, Book of Vile Darkness, beholder, gauth, carrion crawler,
-tanar'ri, baatezu, displacer beast, githyanki, githzerai, mind flayer,
-illithid, umber hulk, yuan-ti.
-
-All of the rest of the SRD5 is Open Game Content as described in Section
-1(d) of the License.
-
-Southlands Heroes
-~~~~~~~~~~~~~~~~~
+Legal Information (Southlands Heroes)
+-------------------------------------
 
 Kobold Press, Midgard, Southlands, Open Design, and their associated
 logos are trademarks of Open Design.
@@ -59,10 +19,11 @@ designated as Open Game Content are not included in this declaration.)
 traits, racial variants, and archetypes. No other portion of this work
 may be reproduced in any form without permission.
 
-OPEN GAME LICENSE Version 1.0a
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Copyright (c) 2015 Open Design.
 
 The terms of the Open Gaming License Version 1.0a are as follows:
+
+OPEN GAME LICENSE Version 1.0a
 
 The following text is the property of Wizards of the Coast, Inc. and is
 Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights
@@ -177,14 +138,6 @@ Reserved.
 
 15. COPYRIGHT NOTICE
 
-    **Open Game License v 1.0a** Copyright 2000, Wizards of the Coast, LLC.
-
-    **System Reference Document 5.1** Copyright 2016, Wizards of the Coast,
-    Inc.; Authors Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney
-    Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell,
-    Chris Sims, and Steve Townshend, based on original material by E. Gary
-    Gygax and Dave Arneson.
-
     **System Reference Document** Copyright 2000. Wizards of the Coast,
     Inc; Authors Jonathan Tweet, Monte Cook, Skip Williams, based on
     material by E. Gary Gygax and Dave Arneson.
@@ -211,6 +164,3 @@ Reserved.
     **Southlands Heroes** © 2015 Open Design; Author: Rich Howard.
 
 END OF LICENSE
-
-If you note any errors in this document, please let us know by emailing
-`*askdnd@wizards.com*. <mailto:askdnd@wizards.com>`__
