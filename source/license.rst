@@ -40,7 +40,26 @@ All of the rest of the SRD5 is Open Game Content as described in Section
 
 The terms of the Open Gaming License Version 1.0a are as follows:
 
+Legal Information (Midgard Heroes)
+----------------------------------
+
+Kobold Press, Midgard, the Midgard logo, Southlands, Open Design,
+and their associated logos are trademarks of Open Design.
+
+**Product Identity:** The following items are hereby identified as
+Product Identity, as defined in the Open Game License version 1.0a,
+Section 1(e), and are not Open Content: All trademarks, registered
+trademarks, proper names (characters, place names, new deities, etc.),
+dialogue, plots, story elements, locations, characters, artwork,
+sidebars, and trade dress. (Elements that have previously been
+designated as Open Game Content are not included in this declaration.)
+
+**Open Game Content:** The Open content in this book includes the racial
+traits, racial variants, and archetypes. No other portion of this work
+may be reproduced in any form without permission.
+
 OPEN GAME LICENSE Version 1.0a
+------------------------------
 
 The following text is the property of Wizards of the Coast, Inc. and is
 Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights
@@ -155,13 +174,47 @@ Reserved.
 
 15. COPYRIGHT NOTICE
 
-    Open Game License v 1.0a Copyright 2000, Wizards of the Coast, LLC.
+    **Open Game License v 1.0a** Copyright 2000, Wizards of the Coast, LLC.
 
-    System Reference Document 5.1 Copyright 2016, Wizards of the Coast,
+    **System Reference Document 5.1** Copyright 2016, Wizards of the Coast,
     Inc.; Authors Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney
     Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell,
     Chris Sims, and Steve Townshend, based on original material by E. Gary
     Gygax and Dave Arneson.
+
+    **System Reference Document** Copyright 2000. Wizards of the
+    Coast, Inc; Authors Jonathan Tweet, Monte Cook, Skip Williams, based
+    on material by E. Gary Gygax and Dave Arneson.
+
+    **Pathfinder RPG Core Rulebook** Copyright 2009, Paizo Publishing,
+    LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet,
+    Monte Cook, and Skip Williams.
+
+    **The Book of Experimental** Might Copyright 2008, Monte J. Cook.
+    All rights reserved.
+
+    **Advanced Races: Centaurs.** © 2014 Open Design; Author: Karen
+    McDonald. KoboldPress.com
+
+    **Advanced Races: Dragonkin** © 2013 Open Design; Authors: Amanda
+    Hamon Kunz.
+
+    **Advanced Races: Gearforged.** © 2013 Open Design; Authors: Thomas
+    Benton.
+
+    **Advanced Races: Kobolds** © 2013 Open Design; Authors: Nicholas
+    Milasich, Matt Blackie.
+
+    **Advanced Races: Ravenfolk** © 2014 Open Design; Authors: Wade
+    Rockett.
+
+    **Advanced Races: Shadow Fey.** © 2014 Open Design; Authors: Carlos
+    and Holly Ovalle.
+
+    **Advanced Races: Trollkin.** © 2015 Open Design; Authors: Steven
+    T.Helt, Stephen Rowe, and Dan Dillon.
+
+    **Midgard Heroes** © 2015 Open Design; Author: Dan Dillon.
 
 END OF LICENSE
 
