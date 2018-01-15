@@ -36,7 +36,7 @@ spell, and you regain the ability to do so when you finish a long rest.
 This ability replaces your ability to cast the
 :ref:`srd:lesser-restoration` and :ref:`srd:daylight` spells.
 
-Divine Splendor. Your celestial ancestor was a leader of angelic hosts,
+**Divine Splendor.** Your celestial ancestor was a leader of angelic hosts,
 and you can summon their divine aura and captivate those who behold you.
 At 3rd level, you gain the ability to cast :ref:`srd:enhance-ability`
 (eagle’s splendor) once with a range of Personal as a 2nd level spell
@@ -150,39 +150,39 @@ endurance far greater than most. Your people are hunters and raiders,
 and entirely at home in marshes and water. You gain the following
 traits.
 
-Ability Score Increase. Your Strength score increases by 2, and your
+**Ability Score Increase.** Your Strength score increases by 2, and your
 Wisdom score increases by 1.
 
-Age. Lizardfolk mature faster than humans, reaching adulthood at 16.
+**Age.** Lizardfolk mature faster than humans, reaching adulthood at 16.
 They also have shorter lifespans, with few lizardfolk living longer than
 60 years.
 
-Alignment. Typical lizardfolk are highly territorial, following the
+**Alignment.** Typical lizardfolk are highly territorial, following the
 beliefs and traditions of their tribes. They have no notion of civilized
 morality, and they find the concepts of good and evil alien. As such,
 lizardfolk tend toward neutrality. Lizardfolk who choose to leave their
 villages, or who are banished, may do so for a variety of reasons,
 including an alignment conflicting with typical lizardfolk society.
 
-Size. Lizardfolk are slightly larger than the average human. Your size
+**Size.** Lizardfolk are slightly larger than the average human. Your size
 is medium.
 
-Speed. Your base walking speed is 30 feet. You have a swim speed of 30
+**Speed.** Your base walking speed is 30 feet. You have a swim speed of 30
 feet.
 
-Natural Armor. If you are not wearing armor, your base AC equals 12 +
+**Natural Armor.** If you are not wearing armor, your base AC equals 12 +
 your Dexterity modifier. You can use a shield and still gain this
 benefit.
 
-Natural Attacks. You have proficiency with your bite, which deals 1d6
+**Natural Attacks.** You have proficiency with your bite, which deals 1d6
 piercing damage.
 
-Natural Predator. You have proficiency with the Stealth skill.
+**Natural Predator.** You have proficiency with the Stealth skill.
 
-Hold Breath. You can hold your breath for a number of minutes equal to
+**Hold Breath.** You can hold your breath for a number of minutes equal to
 your Constitution score.
 
-Languages. You speak, read, and write Draconic, plus one additional
+**Languages.** You speak, read, and write Draconic, plus one additional
 language of your choice (typically Southern).
 
 Lizardfolk Racial Variants
