@@ -1,5 +1,5 @@
 
-.. _midgardheroes:races:
+.. _southlandsheroes:races:
 
 Races, Southlands Heroes
 ------------------------
@@ -85,7 +85,7 @@ smell.
 
 **Bully.** Although gnolls are cowardly at heart, they like to disguise
 their fears by abusing others. You have disadvantage on saving throws
-against being frightened. On the other hand, whenever you make a
+against being :ref:`frightened`. On the other hand, whenever you make a
 Charisma (Intimidation) check for dealing with obviously smaller or
 weaker targets, you are considered proficient in the Intimidation skill
 and add double your proficiency bonus to the check, instead of your
@@ -225,10 +225,10 @@ their eyes to disorient predators and prey. As an action, you can target
 any creature within 15 feet with this ability and force the target to
 make a Wisdom saving throw against a DC equal to 8 + your proficiency
 modifier + your Dexterity modifier. On a failed save, the target is
-frightened. The frightened creature can repeat this save at the end of
-each of its turns, ending the condition on a success. Creatures wearing
-full-face helmets, eye protection, etc. gain advantage on the save. You
-may use this ability a number of times per day equal to your
+:ref:`frightened`. The frightened creature can repeat this save at the
+end of each of its turns, ending the condition on a success. Creatures
+wearing full-face helmets, eye protection, etc. gain advantage on the
+save. You may use this ability a number of times per day equal to your
 Constitution modifier, and you regain all expended uses when you finish
 a long rest. This ability replaces your bite attack.
 
@@ -240,10 +240,11 @@ Severed hands and feet regrow after three days. Severed limbs regrow
 after one week. If the severed body part is present and whole, you can
 reattach it during a short rest as long as you spend at least one Hit
 Die to regain hit points and perform no other actions, even light
-duties. You gain one level of exhaustion when you begin regenerating a
-limb. While a limb is regenerating, as well as for one day after the
-regrowth is complete, you cannot have less than one level of exhaustion.
-This ability replaces your natural armor and natural predator abilities.
+duties. You gain one level of :ref:`srd:exhaustion` when you begin
+regenerating a limb. While a limb is regenerating, as well as for one
+day after the regrowth is complete, you cannot have less than one level
+of :ref:`exhaustion`. This ability replaces your natural armor and
+natural predator abilities.
 
 **Poisoned Bite.** Lizardfolk are sometimes born with venomous fangs or
 poisonous saliva delivered through their bite attack. You can make a
@@ -295,12 +296,12 @@ Bonus Proficiencies.
 
 **Patience.** At 9th level, you learn to wait in a single spot with
 infinite patience. As long as you don’t move, you have advantage on any
-saving throw against falling asleep or succumbing to exhaustion. While
-you remain stationary you can undertake light activity (to remain on
-watch only) for the entire duration of a long rest, and still gain its
-benefits. If you move, or engage in any other sort of activity, you must
-rest as normal for the remainder of the long rest to complete it. This
-ability replaces Infiltration Expertise.
+saving throw against falling asleep or succumbing to :ref:`exhaustion`.
+While you remain stationary you can undertake light activity (to remain
+on watch only) for the entire duration of a long rest, and still gain
+its benefits. If you move, or engage in any other sort of activity, you
+must rest as normal for the remainder of the long rest to complete it.
+This ability replaces Infiltration Expertise.
 
 **Sniper.** At 13th level, you do not automatically reveal your location
 when you attack while hidden. You must be at least 10 feet away from any
@@ -412,9 +413,9 @@ Alternate Racial Traits
 **Binding Spittle.** As an Attack action, you may spit a ball of viscous
 fluid at a target within 60 feet that is Medium or smaller. Make a
 ranged attack against the target with proficiency. If successful, the
-fluid hardens upon impact and the target becomes restrained. As an
-action, the target can make a Strength check against a DC equal to 8 +
-your proficiency bonus + your Constitution modifier to remove the
+fluid hardens upon impact and the target becomes :ref:`restrained`. As
+an action, the target can make a Strength check against a DC equal to 8
++ your proficiency bonus + your Constitution modifier to remove the
 condition. Anyone adjacent to a creature restrained by binding spittle
 may use their action to free the target in the same way. Dealing an
 amount of bludgeoning damage equal to half your level plus your
@@ -478,8 +479,8 @@ Vermin’s Ward
 """""""""""""
 At 10th level, you become immune to poison and disease. In addition, you
 ignore movement restrictions caused by webbing and gain advantage on
-saving throws against being restrained. This ability replaces Nature’s
-Ward.
+saving throws against being :ref:`restrained`. This ability replaces
+Nature’s Ward.
 
 Variant Druid: Circle of the Swarm (Circle of the Moon)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -500,9 +501,10 @@ any insectoid, arachnid, or similar beast (such as a crab), though you
 must still have seen the creature to do so. In addition, you gain access
 to the following list of non-standard forms (you must follow the same CR
 and ability restrictions as outlined in Circle Forms): ankheg, carrion
-crawler, death wasp (use wyvern stats), giant rhinoceros beetle (use
-triceratops stats), and swarm of insects (all variants). Other insectoid
-forms may be available at your DM’s discretion.
+crawler, death wasp (use :ref:`srd:wyvern` stats), giant rhinoceros
+beetle (use :ref:`srd:triceratops` stats), and
+:ref:`srd:swarm-of-insects` (all variants). Other insectoid forms may be
+available at your DM’s discretion.
 
 Monstrous Wild Shape
 """"""""""""""""""""
@@ -527,8 +529,9 @@ Insect Companion
 When you choose this archetype at 3rd level, you
 gain a trained beast companion that accompanies you on your adventures
 and fights alongside you. You must select your companion from the
-following list: blood hornet or wasp (use flying snake stats), giant
-crab, giant centipede, giant wolf spider, or swarm of insects. At the
+following list: blood hornet or wasp (use :ref:`srd:flying-snake`
+stats), :ref:`srd:giant-crab`, :ref:`srd:giant-centipede`,
+:ref:`srd:giant-wolf-spider`, or :ref:`srd:swarm-of-insects`. At the
 DM’s discretion other insectoid beasts may be suitable companions, but
 none should have a challenge rating higher than 1/4 (the swarm of
 insects is an exception to this restriction).
@@ -578,8 +581,8 @@ discern color in darkness, only shades of gray.
 to assume two alternate forms—the hybrid leonine and the lion. As an
 action, you can change into either your hybrid leonine form or your lion
 form. You can remain in this form for 1 hour, reverting to your humanoid
-form when the time expires, you fall unconscious, you drop to 0 hit
-points, or you die.
+form when the time expires, you fall :ref:`unconscious`, you drop to 0
+hit points, or you die.
 
 You can revert to your humanoid form early as a bonus action. Once you
 use this ability, you can’t use it again until you finish a short rest.
@@ -596,9 +599,9 @@ Wisdom (Perception) checks that rely on smell. You gain disadvantage on
 Intelligence checks and all other Charisma checks.
 
 **Lion Form.** You may assume the form of a young lion (use the stat
-block for the panther) as if using the druid’s Wild Shape class feature.
-Unlike that feature, you retain your own hit points between forms. At
-8th level you instead assume the form of a full-grown lion when you use
-this ability.
+block for the :ref:`srd:panther`) as if using the druid’s Wild Shape
+class feature. Unlike that feature, you retain your own hit points
+between forms. At 8th level you instead assume the form of a full-grown
+:ref:`srd:lion` when you use this ability.
 
 **Languages.** You can speak, read, and write Southern and Sylvan.
