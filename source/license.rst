@@ -248,6 +248,16 @@ Reserved.
 
     **Southlands Heroes** © 2015 Open Design; Author: Rich Howard.
 
+    **System Reference Document 5.0** Copyright 2016, Wizards of
+    the Coast, Inc.; Authors Mike Mearls, Jeremy Crawford, Chris
+    Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J.
+    Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend,
+    based on original material by E. Gary Gygax and Dave Arneson.
+
+    **Tome of Beasts.** Copyright 2016, Open Design; Authors Chris
+    Harris, Dan Dillon, Rodrigo Garcia Carmona, and Wolfgang
+    Baur.
+
 END OF LICENSE
 
 If you note any errors in this document, please let us know by emailing
