@@ -15,3 +15,4 @@ Races
    halfling
    human
    *
+   midgard_heroes/index
