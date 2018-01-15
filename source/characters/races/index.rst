@@ -16,3 +16,4 @@ Races
    human
    *
    midgard_heroes/index
+   southlandsheroes_races/index

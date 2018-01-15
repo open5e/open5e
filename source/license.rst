@@ -4,6 +4,9 @@
 Legal Information (SRD5)
 --------------------------
 
+SRD5
+~~~~
+
 Permission to copy, modify and distribute the files collectively known
 as the System Reference Document 5.1 ("SRD5") is granted solely through
 the use of the Open Gaming License, Version 1.0a.
@@ -38,8 +41,8 @@ illithid, umber hulk, yuan-ti.
 All of the rest of the SRD5 is Open Game Content as described in Section
 1(d) of the License.
 
-Legal Information (Midgard Heroes)
-----------------------------------
+Midgard Heroes
+~~~~~~~~~~~~~~
 
 Kobold Press, Midgard, the Midgard logo, Southlands, Open Design,
 and their associated logos are trademarks of Open Design.
@@ -48,6 +51,18 @@ and their associated logos are trademarks of Open Design.
 Product Identity, as defined in the Open Game License version 1.0a,
 Section 1(e), and are not Open Content: All trademarks, registered
 trademarks, proper names (characters, place names, new deities, etc.),
+
+Southlands Heroes
+~~~~~~~~~~~~~~~~~
+
+Kobold Press, Midgard, Southlands, Open Design, and their associated
+logos are trademarks of Open Design.
+
+**Product Identity:** The following items are hereby identified as Product
+Identity, as defined in the Open Game License version 1.0a,
+Section 1(e), and are not Open Content: All trademarks, registered
+trade-marks, proper names (characters, place names, new deities, etc.),
+>>>>>>> sr_southlands_heroes
 dialogue, plots, story elements, locations, characters, artwork,
 sidebars, and trade dress. (Elements that have previously been
 designated as Open Game Content are not included in this declaration.)
@@ -57,7 +72,9 @@ traits, racial variants, and archetypes. No other portion of this work
 may be reproduced in any form without permission.
 
 OPEN GAME LICENSE Version 1.0a
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The terms of the Open Gaming License Version 1.0a are as follows:
 
 The following text is the property of Wizards of the Coast, Inc. and is
 Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights
@@ -180,15 +197,15 @@ Reserved.
     Chris Sims, and Steve Townshend, based on original material by E. Gary
     Gygax and Dave Arneson.
 
-    **System Reference Document** Copyright 2000. Wizards of the
-    Coast, Inc; Authors Jonathan Tweet, Monte Cook, Skip Williams, based
-    on material by E. Gary Gygax and Dave Arneson.
+    **System Reference Document** Copyright 2000. Wizards of the Coast,
+    Inc; Authors Jonathan Tweet, Monte Cook, Skip Williams, based on
+    material by E. Gary Gygax and Dave Arneson.
 
     **Pathfinder RPG Core Rulebook** Copyright 2009, Paizo Publishing,
     LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet,
     Monte Cook, and Skip Williams.
 
-    **The Book of Experimental** Might Copyright 2008, Monte J. Cook.
+    **The Book of Experimental Might** Copyright 2008, Monte J. Cook.
     All rights reserved.
 
     **Advanced Races: Centaurs.** © 2014 Open Design; Author: Karen
@@ -213,6 +230,20 @@ Reserved.
     T.Helt, Stephen Rowe, and Dan Dillon.
 
     **Midgard Heroes** © 2015 Open Design; Author: Dan Dillon.
+
+    **Advanced Races: Aasimar.** © 2014 Open Design; Author: Adam
+    Roy.KoboldPress.com
+
+    **Advanced Races: Gnolls.** © 2015 Open Design; Authors: Ben
+    McFarland and Brian Suskind.
+
+    **Advanced Races: Lizardfolk.** © 2015 Open Design; Authors: Steven
+    T.Helt, Stephen Rowe, and Dan Dillon.
+
+    **Advanced Races: Werelions.** © 2015 Open Design; Authors: Ben
+    McFarland and Brian Suskind.
+
+    **Southlands Heroes** © 2015 Open Design; Author: Rich Howard.
 
 END OF LICENSE
 
