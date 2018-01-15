@@ -15,11 +15,20 @@
   <div role="contentinfo">
     <p>
     {%- if show_copyright %}
-      {%- if hasdoc('license') %}
-        {% trans path=pathto('license'), license=license|e %}<a href="{{ path }}">License</a>{% endtrans %}
+      {%- if pagename == 'characters/midgardheroes_races' %}
+        {%- if hasdoc('midgardheroes_license') %}
+          {% trans path=pathto('midgardheroes_license'), license=midgardheroes_license|e %}<a href="{{ path }}">License</a>{% endtrans %}
+        {%- else %}
+          <!-- {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %} -->
+          {% trans copyright=copyright|e %}This is broke{% endtrans %}
+        {%- endif %}
       {%- else %}
-        <!-- {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %} -->
-        {% trans copyright=copyright|e %}This is broke{% endtrans %}
+        {%- if hasdoc('license') %}
+          {% trans path=pathto('license'), license=license|e %}<a href="{{ path }}">License</a>{% endtrans %}
+        {%- else %}
+          <!-- {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %} -->
+          {% trans copyright=copyright|e %}This is broke{% endtrans %}
+        {%- endif %}
       {%- endif %}
     {%- endif %}
 

@@ -64,3 +64,4 @@ The 5e SRD
     :hidden:
 
     license
+    midgardheroes_license
