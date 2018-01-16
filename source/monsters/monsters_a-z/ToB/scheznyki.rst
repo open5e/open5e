@@ -23,6 +23,14 @@ magical hats that allow them to fly and become invisible at will.
 These hats can be stolen and used by adventurers (see sidebar),
 but the scheznykis fight hard to retrieve them.
 
+.. Sidebar:: Hey! Stuff is missing!
+   :class: missing
+       
+   The sidebars in Tome of Beasts are not Open Game Content, so we can't
+   include the details in arcane wasting disease here.
+
+   Feel free to make up your own magical hat with the same name!
+
 **Arcane Beards.** If an adventurer can successfully grapple a
 scheznyki, they can attempt to cut the creature’s beard with a
 magical blade (the beard is AC 15 and has 5 hp). When an attacker

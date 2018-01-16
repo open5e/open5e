@@ -71,6 +71,14 @@ attacks.
 on a DC 14 Constitution saving throw or contract the arcane
 wasting disease (see sidebar).
 
+.. Sidebar:: Hey! Stuff is missing!
+   :class: missing
+       
+   The sidebars in Tome of Beasts are not Open Game Content, so we can't
+   include the details in arcane wasting disease here.
+
+   Feel free to make up your own very serious disease with the same name!
+
 **Claw.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target.
 *Hit:* 15 (2d10 + 4) slashing damage.
 
@@ -80,11 +88,3 @@ multiattack, a frenzied white ape makes one bite attack and
 two claw attacks against each enemy within 5 feet of it. Melee
 attacks against the white ape are made with advantage from
 the end of that turn until the start of the white ape’s next turn.
-
-.. Sidebar:: Hey! Stuff is missing!
-   :class: missing
-       
-   The sidebards in Tome of Beasts are not Open Game Content, so we can't
-   include the details in arcane wasting disease here.
-
-   Feel free to make up your own very serious disease with the same name!
