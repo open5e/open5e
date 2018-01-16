@@ -70,8 +70,8 @@ is Charisma (spell save DC 14, +6 to hit with spell attacks). It
 can innately cast the following spells, requiring no material
 components:
 
-*At will:( dancing lights, darkness, detect evil and good, faerie fire,
-invisibility*, fly*, mage hand, ray of frost (*only when wearing
+*At will:* dancing lights, darkness, detect evil and good, faerie fire,
+invisibility\*, fly\*, mage hand, ray of frost (\*only when wearing
 a vanisher hat)
 
 *5/day each:* magic missile, ray of enfeeblement, silent image

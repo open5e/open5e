@@ -1,5 +1,5 @@
 
-.. _tob:al-aeshma-genie
+.. _tob:al-aeshma-genie:
 
 Genie, Al-Aeshma
 ----------------
