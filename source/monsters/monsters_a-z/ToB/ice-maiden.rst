@@ -8,8 +8,9 @@ Ice Maiden
 blue as glacial ice.*
 
 **Born of the Ice.** Ice maidens are the daughters of powerful
-creatures of the cold. Some are born to frost giants and thursir.
-A few result from tearful pleas
+creatures of the cold. Some are descendants of Boreas or the
+Snow Queen (a few having both parents), but they are also
+born to frost giants and thursir. A few result from tearful pleas
 by pregnant women lost in the snows, desperate to keep their
 newborn child from freezing to death—the fraughashar carry
 these infants away and raise them as ice maidens.

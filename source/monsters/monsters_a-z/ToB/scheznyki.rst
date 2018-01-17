@@ -27,7 +27,7 @@ but the scheznykis fight hard to retrieve them.
    :class: missing
        
    The sidebars in Tome of Beasts are not Open Game Content, so we can't
-   include the details in arcane wasting disease here.
+   include the details on vanisher hats here.
 
    Feel free to make up your own magical hat with the same name!
 

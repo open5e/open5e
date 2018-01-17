@@ -2,7 +2,7 @@
 .. _tob:ratfolk:
 
 Ratfolk
-~~~~~~~
+-------
 
 Small humanoid (ratfolk), neutral
 

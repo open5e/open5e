@@ -1,10 +1,9 @@
 
 .. _tob:roachling-lord:
 
-ROACHLING LORD
+Roachling Lord
 --------------
 
-ROACHLING LORD
 Small humanoid (roachling), chaotic neutral
 
 **Armor Class** 15 (natural armor)
@@ -29,9 +28,11 @@ Small humanoid (roachling), chaotic neutral
 
 **Challenge** 2 (450 XP)
 
-**Resistant.** As roachling skirmisher.
+**Resistant.** The roachling skirmisher has advantage on
+Constitution saving throws.
 
-**Unlovely.** As roachling skirmisher.
+**Unlovely.** The skirmisher has disadvantage on Performance and
+Persuasion checks in interactions with nonroachlings.
 
 Actions
 ~~~~~~~

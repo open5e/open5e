@@ -26,7 +26,10 @@ Small humanoid (lemurfolk), neutral
 
 **Challenge** 4 (1,100 XP)
 
-**Silent Glide.** As lemurfolk.
+**Silent Glide.** The lemurfolk can glide for 1 minute, making
+almost no sound. It gains a fly speed of 40 feet, and it must
+move at least 20 feet on its turn to keep flying. A gliding
+lemurfolk has advantage on Dexterity (Stealth) checks.
 
 **Sneak Attack (1/Turn).** The greyfur deals an extra 7 (2d6)
 damage when it hits with a weapon attack and it has

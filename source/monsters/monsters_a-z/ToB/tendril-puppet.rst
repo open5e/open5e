@@ -2,6 +2,7 @@
 .. _tob:tendril-puppet:
 
 Tendril Puppet
+--------------
 
 *Moving in odd starts and jerks, these vegetal warriors have thin,
 green vines growing out from their empty eye sockets, mouth, and
