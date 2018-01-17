@@ -59,11 +59,11 @@ against spells and other magical effects.
 ability is Charisma (spell save DC 14). It can
 innately cast the following spells:
 
-**At will:** dancing lights, detect magic, invisibility
+**At will:** :ref:`srd:dancing-lights`, :ref:`srd:detect-magic`, :ref:`srd:invisibility`
 
-**3/day:** charm person, faerie fire, mage armor
+**3/day:** :ref:`srd:charm-person`, :ref:`srd:faerie-fire`, :ref:`srd:mage-armor`
 
-**1/day:** spike growth
+**1/day:** :ref:`srd:spike-growth`
 
 Actions
 ~~~~~~~

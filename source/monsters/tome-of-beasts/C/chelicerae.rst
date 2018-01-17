@@ -70,17 +70,16 @@ It requires no material components to cast its
 spells. The chelicerae has the following wizard
 spells prepared:
 
-**Cantrips:** acid splash, mage hand, minor illusion,
-true strike
+**Cantrips:** :ref:`srd:acid-splash`, :ref:`srd:mage-hand`, :ref:`srd:minor-illusion`,
+ref:`srd:true-strike`
 
-**1st level:** burning hands, detect magic, expeditious
-retreat, ray of sickness
+**1st level:** :ref:`srd:burning-hands`, :ref:`srd:detect-magic`, :ref:`srd:expeditious-retreat`, *ray of sickness*
 
-**2nd level:** hold person, invisibility, scorching ray
+**2nd level:** :ref:`srd:hold-person`, :ref:`srd:invisibility`, :ref:`srd:scorching-ray`
 
-**3rd level:** animate dead, haste, lightning bolt
+**3rd level:** :ref:`srd:animate-dead`, :ref:`srd:haste`, :ref:`srd:lightning-bolt`
 
-**4th level:** phantasmal killer
+**4th level:** :ref:`srd:phantasmal-killer`
 
 **Siphon Spell Slots.** The chelicerae cannot replenish its spells
 naturally. Instead, it uses grappled spellcasters as spell

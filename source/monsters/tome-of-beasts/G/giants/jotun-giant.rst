@@ -63,11 +63,11 @@ maximum.
 is Wisdom (spell save DC 19). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** earthquake, shapechange, speak with animals
+**At will:** :ref:`srd:earthquake`, :ref:`srd:shapechange`, :ref:`srd:speak-with-animals`
 
-**3/day:** bestow curse, gust of wind
+**3/day:** :ref:`srd:bestow-curse`, :ref:`srd:gust-of-wind`
 
-**1/day:** divination
+**1/day:** :ref:`srd:divination`
 
 **Magic Resistance.** The giant has advantage on saving throws
 against spells and other magical effects.

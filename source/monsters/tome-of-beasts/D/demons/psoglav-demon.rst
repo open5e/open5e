@@ -66,7 +66,7 @@ Large fiend (demon), chaotic evil
 Charisma (spell save DC 15). It can innately cast the following
 spell, requiring no material components:
 
-**1/day:** greater invisibility
+**1/day:** :ref:`srd:greater-invisibility`
 
 **Magic Weapon.** The psoglav’s weapon attacks are magical.
 

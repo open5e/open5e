@@ -73,7 +73,7 @@ deafened.
 is Charisma. The owl harpy can innately cast the following
 spells, requiring no material components:
 
-**3/day:** darkness
+**3/day:** :ref:`srd:darkness`
 
 Actions
 ~~~~~~~

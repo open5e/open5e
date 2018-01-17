@@ -54,9 +54,9 @@ Large monstrosity, neutral
 score is Charisma (spell save DC 13). It can cast the following
 spells, requiring no components:
 
-**At will:** disguise self (as horse or unicorn only)
+**At will:** :ref:`srd:disguise-self` (as horse or unicorn only)
 
-**2/day:** darkness (centered on itself, moves with the shadhavar)
+**2/day:** :ref:`srd:darkness` (centered on itself, moves with the shadhavar)
 
 **Magic Weapons.** A shadhavar’s gore attacks are magical.
 

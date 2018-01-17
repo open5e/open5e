@@ -70,9 +70,9 @@ throws against spells and other magical effects.
 Charisma (spell save DC 16). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** charm person, suggestion, teleport
+**At will:** :ref:`srd:charm-person`, :ref:`srd:suggestion`, :ref:`srd:teleport`
 
-**1/day each:** banishing smite, cloudkill
+**1/day each:** *banishing smite*, :ref:`srd:cloudkill`
 
 Actions
 ~~~~~~~

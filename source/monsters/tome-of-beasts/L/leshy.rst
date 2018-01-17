@@ -62,11 +62,10 @@ spellcasting ability is Charisma (spell save
 DC 13). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** animal friendship, pass without
-trace, speak with animals
+**At will:** :ref:`srd:animal-friendship`, :ref:`srd:pass-without-trace`, :ref:`srd:speak-with-animals`
 
-**1/day each:** entangle, plant growth, shillelagh,
-speak with plants, hideous laughter
+**1/day each:** :ref:`srd:entangle`, :ref:`srd:plant-growth`, :ref:`srd:shillelagh`,
+ref:`srd:speak-with-plants`, :ref:`srd:hideous-laughter`
 
 **Camouflage.** A leshy has advantage on Stealth checks if
 it is at least lightly obscured by foliage.

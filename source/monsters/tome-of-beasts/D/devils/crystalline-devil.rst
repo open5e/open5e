@@ -76,9 +76,9 @@ is an innate spellcaster. Its spellcasting ability is Charisma (spell
 save DC 13). The devil can innately cast the following spells,
 requiring no material components:
 
-**2/day:** command
+**2/day:** :ref:`srd:command`
 
-**1/day:** suggestion
+**1/day:** :ref:`srd:suggestion`
 
 Actions
 ~~~~~~~

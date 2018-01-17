@@ -77,9 +77,9 @@ ability is Charisma (spell save DC 14, +6 to hit with spell
 attacks). It can innately cast the following spells, requiring no
 material components:
 
-**At will:** chill touch
+**At will:** :ref:`srd:chill-touch`
 
-**3/day:** animate dead (up to 5 skeletons or zombies)
+**3/day:** :ref:`srd:animate-dead` (up to 5 skeletons or zombies)
 
 **Swarm.** A bone collective can act as a swarm (composed of
 smaller elements), or it can grant a single member (called

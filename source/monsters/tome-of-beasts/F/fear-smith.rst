@@ -97,9 +97,9 @@ saving throws against the blinded condition.
 Charisma (spell save DC 16). The fear smith can innately cast the
 following spells, requiring no verbal or material components:
 
-**At will:** detect thoughts, fear
+**At will:** :ref:`srd:detect-thoughts`, :ref:`srd:fear`
 
-**2/day each:** charm person, command, confusion
+**2/day each:** :ref:`srd:charm-person`, :ref:`srd:command`, :ref:`srd:confusion`
 
 **Magic Resistance.** The fear smith has advantage on saving
 throws against spells and other magical effects.

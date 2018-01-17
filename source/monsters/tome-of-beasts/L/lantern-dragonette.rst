@@ -90,7 +90,7 @@ spellcasting ability is Intelligence (spell save DC 13, +5 to hit
 with spell attacks). It can innately cast the following spells,
 requiring no material components:
 
-**1/day each:** burning hands, color spray, scorching ray
+**1/day each:** :ref:`srd:burning-hands`, :ref:`srd:color-spray`, :ref:`srd:scorching-ray`
 
 **Vulnerable to Magical Darkness.** A lantern dragonette in an
 area of magical darkness loses its lantern belly ability and

@@ -73,7 +73,7 @@ ability to follow.
 Wisdom (spell save DC 13). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** dimension door
+**At will:** :ref:`srd:dimension-door`
 
 Actions
 ~~~~~~~

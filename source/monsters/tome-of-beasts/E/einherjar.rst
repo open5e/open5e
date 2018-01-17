@@ -91,9 +91,9 @@ advantage.
 is Wisdom (spell save DC 13). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** bless, spare the dying
+**At will:** :ref:`srd:bless`, :ref:`srd:spare-the-dying`
 
-**1/day each:** death ward, spirit guardians
+**1/day each:** :ref:`srd:death-ward`, :ref:`srd:spirit-guardians`
 
 Actions
 ~~~~~~~

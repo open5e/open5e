@@ -75,12 +75,11 @@ poisoned, stunned, unconscious
 Charisma (spell save DC 17). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** alter self
+**At will:** :ref:`srd:alter-self`
 
-**1/day each:** counterspell, dispel magic, enlarge/reduce, spider
-climb, tongues
+**1/day each:** :ref:`srd:counterspell`, :ref:`srd:dispel-magic`, :ref:`srd:enlarge-reduce`, :ref:`srd:spider-climb`, :ref:`srd:tongues`
 
-**1/week:** gate
+**1/week:** :ref:`srd:gate`
 
 **Single-minded Purpose.** The wight has advantage on attack
 rolls against followers of the fiend it is tasked to destroy and

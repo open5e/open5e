@@ -83,11 +83,11 @@ character’s eyes are averted.
 Wisdom (spell save DC 20). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** faerie fire, moonbeam
+**At will:** :ref:`srd:faerie-fire`, :ref:`srd:moonbeam`
 
-**3/day:** plane shift
+**3/day:** :ref:`srd:plane-shift`
 
-**1/day each:** gate, planar binding
+**1/day each:** :ref:`srd:gate`, :ref:`srd:planar-binding`
 
 Actions
 ~~~~~~~

@@ -39,13 +39,13 @@ saving throws against spells and other magical effects.
 ability is Wisdom (spell save DC 15). It can innately cast the
 following spells, requiring no material components:
 
-**At will:** comprehend languages
+**At will:** :ref:`srd:comprehend-languages`
 
-**3/day each:** counterspell, fear, phantom steed
+**3/day each:** :ref:`srd:counterspell`, :ref:`srd:fear`, :ref:`srd:phantom-steed`
 
-**1/day:** blight, call lightning, clairvoyance, insect plague
+**1/day:** :ref:`srd:blight`, :ref:`srd:call-lightning`, :ref:`srd:clairvoyance`, :ref:`srd:insect-plague`
 
-**1/week:** legend lore
+**1/week:** :ref:`srd:legend-lore`
 
 Actions
 ~~~~~~~

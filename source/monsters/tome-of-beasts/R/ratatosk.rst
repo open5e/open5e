@@ -62,12 +62,12 @@ attribute is Charisma (save DC 14). It can
 innately cast the following spells without
 requiring material or somatic components:
 
-**At will:** animal messenger, message,
-vicious mockery
+**At will:** :ref:`srd:animal-messenger`, :ref:`srd:message`,
+ref:`srd:vicious-mockery`
 
-**1/day each:** commune, mirror image
+**1/day each:** :ref:`srd:commune`, :ref:`srd:mirror-image`
 
-**3/day each:** sending, suggestion
+**3/day each:** :ref:`srd:sending`, :ref:`srd:suggestion`
 
 **Skitter.** The ratatosk can take the Dash,
 Disengage, or Hide action as a bonus action

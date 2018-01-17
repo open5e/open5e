@@ -55,11 +55,11 @@ throw, it can choose to succeed instead.
 Charisma (spell save DC 18). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** detect magic, speak with dead
+**At will:** :ref:`srd:detect-magic`, :ref:`srd:speak-with-dead`
 
-**3/day each:** blur, counterspell, darkness, web
+**3/day each:** :ref:`srd:blur`, :ref:`srd:counterspell`, :ref:`srd:darkness`, :ref:`srd:web`
 
-**1/day each:** dispel magic, hold person
+**1/day each:** :ref:`srd:dispel-magic`, :ref:`srd:hold-person`
 
 Actions
 ~~~~~~~

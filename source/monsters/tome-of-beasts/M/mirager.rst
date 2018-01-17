@@ -58,9 +58,9 @@ to its true form if it dies.
 Charisma (spell save DC 15). It can innately cast the following
 spells, requiring no material components:
 
-**3/day:** charm person
+**3/day:** :ref:`srd:charm-person`
 
-**1/day each:** hallucinatory terrain, suggestion
+**1/day each:** :ref:`srd:hallucinatory-terrain`, :ref:`srd:suggestion`
 
 **Enthralling Mirage.** When the mirager casts hallucinatory
 terrain, the area appears so lush and inviting that those who

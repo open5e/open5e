@@ -81,17 +81,16 @@ spellcasting ability is Charisma (spell save DC 17, +9 to hit with
 spell attacks). She requires no material components to cast her
 spells. The lorelei has the following sorcerer spells prepared:
 
-**Cantrips (at will):** detect magic, guidance, light, mending,
-poison spray, prestidigitation
+**Cantrips (at will):** :ref:`srd:detect-magic`, :ref:`srd:guidance`, :ref:`srd:light`, :ref:`srd:mending`,
+ref:`srd:poison-spray`, :ref:`srd:prestidigitation`
 
-**1st level (4 slots):** comprehend languages, fog cloud, mage
-armor, ray of sickness
+**1st level (4 slots):** :ref:`srd:comprehend-languages`, :ref:`srd:fog-cloud`, :ref:`srd:mage-armor`, *ray of sickness*
 
-**2nd level (3 slots):** hold person, misty step, suggestion
+**2nd level (3 slots):** :ref:`srd:hold-person`, :ref:`srd:misty-step`, :ref:`srd:suggestion`
 
-**3rdlevel (3 slots):** hypnotic pattern, gaseous form, water walk
+**3rdlevel (3 slots):** :ref:`srd:hypnotic-pattern`, :ref:`srd:gaseous-form`, :ref:`srd:water-walk`
 
-**4th level (2 slots):** dominate beast, ice storm
+**4th level (2 slots):** :ref:`srd:dominate-beast`, :ref:`srd:ice-storm`
 
 Actions
 ~~~~~~~

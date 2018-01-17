@@ -77,12 +77,11 @@ paralyzed, poisoned
 (spell save DC 17, +9 to hit with spell attacks). It can innately
 cast the following spells requiring no components:
 
-**At will:** disguise self, grease, inflict wounds, magic mouth, misty
-step
+**At will:** :ref:`srd:disguise-self`, :ref:`srd:grease`, :ref:`srd:inflict-wounds`, :ref:`srd:magic-mouth`, :ref:`srd:misty-step`
 
-**3/day each:** contagion, mirror image
+**3/day each:** :ref:`srd:contagion`, :ref:`srd:mirror-image`
 
-**1/day each:** delayed blast fireball, finger of death, mislead, seeming
+**1/day each:** :ref:`srd:delayed-blast-fireball`, :ref:`srd:finger-of-death`, :ref:`srd:mislead`, :ref:`srd:seeming`
 
 **Last Laugh.** Unless it is destroyed in a
 manner amusing to the god of death

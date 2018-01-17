@@ -68,12 +68,11 @@ Charisma bonus to the weapon’s damage (included below).
 spellcasting ability score is Charisma (save DC 13, +5 to hit
 with spell attacks). It knows the following warlock spells.
 
-**Cantrips (at will):** chill touch, eldritch blast, poison spray
+**Cantrips (at will):** :ref:`srd:chill-touch`, :ref:`srd:eldritch-blast`, :ref:`srd:poison-spray`
 
-**1st level (4 slots):** armor of agathys, charm person, hellish
-rebuke, hex
+**1st level (4 slots):** *armor of agathys*, :ref:`srd:charm-person`, :ref:`srd:hellish-rebuke`, *srd:hex*
 
-**2nd level (2 slots):** crown of madness, misty step
+**2nd level (2 slots):** *crown of madness*, :ref:`srd:misty-step`
 
 Actions
 ~~~~~~~

@@ -82,13 +82,13 @@ stench of a smear remains potent for one week.
 Charisma (spell save DC 13, +5 to hit with spell attacks). It can
 cast the following spells, requiring no material components:
 
-**Constant:** detect evil and good, detect magic
+**Constant:** :ref:`srd:detect-evil-and-good`, :ref:`srd:detect-magic`
 
-**At will:** thaumaturgy
+**At will:** :ref:`srd:thaumaturgy`
 
-**3/day:** darkness, expeditious retreat
+**3/day:** :ref:`srd:darkness`, :ref:`srd:expeditious-retreat`
 
-**1/day:** contagion
+**1/day:** :ref:`srd:contagion`
 
 Actions
 ~~~~~~~

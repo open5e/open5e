@@ -95,17 +95,16 @@ the following spells,
 requiring no material
 components:
 
-**At Will:** augury, color spray,
-dancing lights, detect magic,
-flare, light, silent image,
-spare the dying
+**At Will:** :ref:`srd:augury`, :ref:`srd:color-spray`,
+ref:`srd:dancing-lights`, :ref:`srd:detect-magic`,
+ref:`srd:flare`, :ref:`srd:light`, :ref:`srd:silent-image`,
+ref:`srd:spare-the-dying`
 
-**2/day each:** alter self, blur,
-divination, hypnotic pattern,
-prismatic spray, scorching ray
+**2/day each:** :ref:`srd:alter-self`, :ref:`srd:blur`,
+ref:`srd:divination`, :ref:`srd:hypnotic-pattern`,
+ref:`srd:prismatic-spray`, :ref:`srd:scorching-ray`
 
-**1/day each:** hallucinatory
-terrain, plane shift, sunbeam
+**1/day each:** :ref:`srd:hallucinatory-terrain`, :ref:`srd:plane-shift`, :ref:`srd:sunbeam`
 
 **Lightform.** Liosalfar are
 composed entirely of light. They

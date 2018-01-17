@@ -66,11 +66,11 @@ Medium humanoid, neutral evil
 ability is Charisma (spell save DC 16). It can innately cast the
 following spells, requiring no material components:
 
-**At will:** comprehend languages, minor illusion
+**At will:** :ref:`srd:comprehend-languages`, :ref:`srd:minor-illusion`
 
-**3/day each:** disguise self, suggestion
+**3/day each:** :ref:`srd:disguise-self`, :ref:`srd:suggestion`
 
-**1/day each:** dream, etherealness
+**1/day each:** :ref:`srd:dream`, :ref:`srd:etherealness`
 
 **Regeneration.** The folk of Leng regains 5 hit points at the start
 of its turn. If the folk of Leng takes fire or radiant damage, this

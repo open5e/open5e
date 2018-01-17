@@ -77,9 +77,9 @@ Tiny fey, neutral
 Wisdom (spell save DC 11). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** speak with animals
+**At will:** :ref:`srd:speak-with-animals`
 
-**1/day:** silence
+**1/day:** :ref:`srd:silence`
 
 Actions
 ~~~~~~~

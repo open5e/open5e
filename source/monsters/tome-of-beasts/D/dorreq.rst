@@ -52,7 +52,7 @@ Medium aberration, neutral evil
 is Intelligence (spell save DC 10). It can innately cast the
 following spells, requiring no material components:
 
-**3/day each:** blink, dimension door, haste, shatter
+**3/day each:** :ref:`srd:blink`, :ref:`srd:dimension-door`, :ref:`srd:haste`, :ref:`srd:shatter`
 
 **Wasteland Stride.** This ability works like tree stride, but the
 dorreq can use it to sink into and appear out of any sandy or

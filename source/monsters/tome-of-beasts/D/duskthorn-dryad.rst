@@ -54,12 +54,12 @@ Medium fey, chaotic
 is Charisma (spell save DC 17). She can innately cast the
 following spells, requiring no material components:
 
-**At will:** dancing lights, druidcraft
+**At will:** :ref:`srd:dancing-lights`, :ref:`srd:druidcraft`
 
-**3/day each:** charm person, entangle, invisibility, magic missile
+**3/day each:** :ref:`srd:charm-person`, :ref:`srd:entangle`, :ref:`srd:invisibility`, :ref:`srd:magic-missile`
 
-**1/day each:** barkskin, counterspell, dispel magic, fog cloud,
-shillelagh, suggestion, wall of thorns
+**1/day each:** :ref:`srd:barkskin`, :ref:`srd:counterspell`, :ref:`srd:dispel-magic`, :ref:`srd:fog-cloud`,
+ref:`srd:shillelagh`, :ref:`srd:suggestion`, :ref:`srd:wall-of-thorns`
 
 **Magic Resistance.** The dryad has advantage on saving throws
 against spells and other magical effects.

@@ -60,7 +60,7 @@ spellcasting ability is Intelligence (spell save DC
 15). It can innately cast the following spells,
 requiring no material components:
 
-**1/day each:** blink, hallucinatory terrain
+**1/day each:** :ref:`srd:blink`, :ref:`srd:hallucinatory-terrain`
 
 **Visionary Flesh.** Eating the flesh
 of a fate eater requires a DC 15

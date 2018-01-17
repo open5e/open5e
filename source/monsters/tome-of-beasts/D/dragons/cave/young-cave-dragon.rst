@@ -40,9 +40,9 @@ tunnel in its wake.
 Charisma (spell save DC 15). It can innately cast the following
 spells, requiring no material components:
 
-**1/day each:** blur, counterspell, web
+**1/day each:** :ref:`srd:blur`, :ref:`srd:counterspell`, :ref:`srd:web`
 
-**3/day:** darkness
+**3/day:** :ref:`srd:darkness`
 
 Actions
 ~~~~~~~

@@ -62,9 +62,9 @@ spellcasting ability is Charisma (spell save DC 14).
 It can innately cast the following spells, requiring
 no material components:
 
-**At will:** invisibility
+**At will:** :ref:`srd:invisibility`
 
-**2/day each:** hallucinatory terrain, major image
+**2/day each:** :ref:`srd:hallucinatory-terrain`, :ref:`srd:major-image`
 
 **Mimicry.** The sand hag can mimic animal sounds and humanoid
 voices. A creature that hears the sounds can tell they are

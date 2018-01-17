@@ -64,18 +64,17 @@ spellcasting ability is Charisma (spell save DC 13,
 +5 to hit with spell attacks). It can innately cast the
 following spells, requiring no material components:
 
-**Constant:** magic weapon (antler glaive only), speak with
-animals
+**Constant:** :ref:`srd:magic-weapon` (antler glaive only), :ref:`srd:speak-with-animals`
 
-**At will:** calm emotions, charm animal (as charm person but
-affects beasts only), cure wounds, detect poison and disease,
-water breathing, water walk
+**At will:** :ref:`srd:calm-emotions`, *charm animal* (as :ref:`srd:charm-person` but
+affects beasts only), :ref:`srd:cure-wounds`, :ref:`srd:detect-poison-and-disease`,
+ref:`srd:water-breathing`, :ref:`srd:water-walk`
 
-**3/day each:** barkskin, conjure woodland beings, hold animal (as
-hold person but affects beasts only), jump, longstrider
+**3/day each:** :ref:`srd:barkskin`, :ref:`srd:conjure-woodland-beings`, *hold animal* (as
+ref:`srd:hold-person` but affects beasts only), :ref:`srd:jump`, :ref:`srd:longstrider`
 
-**1/day each:** commune with nature, freedom of movement,
-nondetection, tree stride
+**1/day each:** :ref:`srd:commune-with-nature`, :ref:`srd:freedom-of-movement`,
+ref:`srd:nondetection`, :ref:`srd:tree-stride`
 
 Actions
 ~~~~~~~

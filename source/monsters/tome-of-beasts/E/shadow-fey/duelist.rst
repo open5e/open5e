@@ -52,7 +52,7 @@ against being charmed, and magic can’t put it to sleep.
 is Charisma. It can cast the following spells innately, requiring
 no material components.
 
-**3/day:** misty step (when in shadows, dim light, or darkness only)
+**3/day:** :ref:`srd:misty-step` (when in shadows, dim light, or darkness only)
 
 **Sunlight Sensitivity.** While in sunlight, the shadow fey has
 disadvantage on attack rolls and on Wisdom (Perception)

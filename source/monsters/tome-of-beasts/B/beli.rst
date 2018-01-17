@@ -75,9 +75,9 @@ Charisma (spell save DC 12, +4 to hit with spell attacks). It
 can innately cast the following spells, requiring no material
 components:
 
-**At will:** invisibility
+**At will:** :ref:`srd:invisibility`
 
-**3/day:** chill touch
+**3/day:** :ref:`srd:chill-touch`
 
 Actions
 ~~~~~~~

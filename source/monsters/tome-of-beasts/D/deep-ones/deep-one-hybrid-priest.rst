@@ -44,11 +44,11 @@ ability is Charisma (spell save DC 12, +4 to hit with spell
 attacks). It can innately cast the following spells, requiring no
 material components:
 
-**At will:** sacred flame, shocking grasp
+**At will:** :ref:`srd:sacred-flame`, :ref:`srd:shocking-grasp`
 
-**3/day each:** inflict wounds, sanctuary, sleep
+**3/day each:** :ref:`srd:inflict-wounds`, :ref:`srd:sanctuary`, :ref:`srd:sleep`
 
-**1/day each:** ice storm, shatter
+**1/day each:** :ref:`srd:ice-storm`, :ref:`srd:shatter`
 
 **Lightless Depths.** A deep one hybrid priest is immune to the
 pressure effects of the deep ocean.

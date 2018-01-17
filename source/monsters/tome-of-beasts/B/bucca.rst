@@ -66,9 +66,9 @@ damage for every minute it is exposed to sunlight.
 Charisma (spell save DC 13). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** invisibility
+**At will:** :ref:`srd:invisibility`
 
-**3/day each:** darkness, ensnaring strike, locate object
+**3/day each:** :ref:`srd:darkness`, *ensnaring-strike*, :ref:`srd:locate-object`
 
 Actions
 ~~~~~~~

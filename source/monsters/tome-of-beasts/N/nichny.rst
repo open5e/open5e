@@ -79,11 +79,11 @@ is Charisma (spell save DC 15, +7 to hit with spell attacks). It
 can innately cast the following spells, requiring no material
 components:
 
-**At Will:** detect magic, invisibility, magic missile, ray of frost
+**At Will:** :ref:`srd:detect-magic`, :ref:`srd:invisibility`, :ref:`srd:magic-missile`, :ref:`srd:ray-of-frost`
 
-**3/day each:** blink, dimension door, haste, polymorph (self only)
+**3/day each:** :ref:`srd:blink`, :ref:`srd:dimension-door`, :ref:`srd:haste`, :ref:`srd:polymorph` (self only)
 
-**1/day each:** teleport, word of recall
+**1/day each:** :ref:`srd:teleport`, :ref:`srd:word-of-recall`
 
 **Luck Aura.** A nichny is surrounded by an aura of luck. All
 creatures it considers friends within 10 feet of the nichny gain

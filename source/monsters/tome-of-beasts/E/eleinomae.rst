@@ -68,11 +68,11 @@ terrain of this kind doesn’t cost it extra moment.
 ability is Charisma (spell save DC 15). It can innately cast the
 following spells, requiring no material components:
 
-**At will:** dancing lights
+**At will:** :ref:`srd:dancing-lights`
 
-**3/day each:** charm person, suggestion
+**3/day each:** :ref:`srd:charm-person`, :ref:`srd:suggestion`
 
-**2/day each:** hallucinatory terrain, major image
+**2/day each:** :ref:`srd:hallucinatory-terrain`, :ref:`srd:major-image`
 
 Actions
 ~~~~~~~

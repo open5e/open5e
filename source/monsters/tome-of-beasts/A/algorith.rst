@@ -79,11 +79,11 @@ or effect that would alter its form.
 ability is Charisma (spell save DC 16). It can innately cast
 the following spells, requiring no material components:
 
-**At will:** aid, blur, detect magic, dimension door
+**At will:** :ref:`srd:aid`, :ref:`srd:blur`, :ref:`srd:detect-magic`, :ref:`srd:dimension-door`
 
-**5/day each:** dispel magic
+**5/day each:** :ref:`srd:dispel-magic`
 
-**1/day:** commune (5 questions), wall of force
+**1/day:** commune (5 questions), :ref:`srd:wall-of-force`
 
 Actions
 ~~~~~~~

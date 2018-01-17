@@ -104,10 +104,9 @@ the start of the nightgarm’s next turn.
 is Charisma (spell save DC 14). It can innately cast the following
 spells, requiring no material components:
 
-**3/day each:** darkness, dissonant whispers, hold person
+**3/day each:** :ref:`srd:darkness`, *dissonant whispers*, :ref:`srd:hold-person`
 
-**1/day each:** conjure woodland beings (wolves only), dimension
-door, scrying (targets falsemen only)
+**1/day each:** :ref:`srd:conjure-woodland-beings` (wolves only), :ref:`srd:dimension-door`, :ref:`srd:scrying` (targets falsemen only)
 
 Actions
 ~~~~~~~

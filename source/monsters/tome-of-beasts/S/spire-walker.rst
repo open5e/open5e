@@ -79,12 +79,12 @@ ability is Charisma (spell save DC 12, +4 to hit with spell
 attacks). The spire walker can innately cast the following spells,
 requiring no material components:
 
-**At will:** produce spark (as the cantrip produce flame, but it does
+**At will:** *produce spark* (as the cantrip :ref:`srd:produce-flame`, but it does
 lightning damage)
 
-**3/day each:** dancing lights, feather fall, invisibility
+**3/day each:** :ref:`srd:dancing-lights`, :ref:`srd:feather-fall`, :ref:`srd:invisibility`
 
-**1/day each:** faerie fire, thunderwave
+**1/day each:** :ref:`srd:faerie-fire`, :ref:`srd:thunderwave`
 
 **Steeple Step.** The spire walker can use 10 feet of its movement
 to step magically from its position to the point of a steeple,

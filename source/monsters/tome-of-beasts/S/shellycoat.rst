@@ -63,9 +63,9 @@ Medium fey, neutral evil
 **Innate Spellcasting.** The shellycoat can cast the following spells
 innately, requiring no components:
 
-**1/day each:** darkness, fog cloud
+**1/day each:** :ref:`srd:darkness`, :ref:`srd:fog-cloud`
 
-**1/day (if in possession of its coat):** water breathing
+**1/day (if in possession of its coat):** :ref:`srd:water-breathing`
 
 **Regeneration.** The shellycoat regains 3 hit points at the start
 of its turn. If the creature takes acid or fire damage, this trait

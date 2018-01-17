@@ -52,12 +52,12 @@ Tiny fey, neutral evil
 Intelligence (spell save DC 11). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** detect magic, water walk
+**At will:** :ref:`srd:detect-magic`, :ref:`srd:water-walk`
 
-**3/day:** control water, create or destroy water, fog cloud,
-invisibility, see invisibility, water breathing
+**3/day:** :ref:`srd:control-water`, :ref:`srd:create-or-destroy-water`, :ref:`srd:fog-cloud`,
+ref:`srd:invisibility`, :ref:`srd:see-invisibility`, :ref:`srd:water-breathing`
 
-**1/day:** wall of ice
+**1/day:** :ref:`srd:wall-of-ice`
 
 **Water Mastery.** A boloti has advantage on attack rolls if both
 it and its opponent are in water. If the opponent and the

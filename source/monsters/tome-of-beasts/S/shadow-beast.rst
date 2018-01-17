@@ -67,7 +67,7 @@ turn inside an object.
 ability is Charisma (spell save DC 15). It can innately cast the
 following spells, requiring no material components:
 
-**3/day each:** fear, telekinesis
+**3/day each:** :ref:`srd:fear`, :ref:`srd:telekinesis`
 
 **Magic Resistance.** The beast has advantage on saving throws
 against spells and other magical effects.

@@ -60,9 +60,9 @@ saving throws against spells and other magical effects.
 is Wisdom (spell save DC 14). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** entangle, sleep
+**At will:** :ref:`srd:entangle`, :ref:`srd:sleep`
 
-**1/day each:** heal, wall of thorns
+**1/day each:** :ref:`srd:heal`, :ref:`srd:wall-of-thorns`
 
 **Green Walk.** The ravenala can move across undergrowth,
 natural or magical, without needing to make an ability check

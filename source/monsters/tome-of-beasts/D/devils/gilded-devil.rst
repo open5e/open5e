@@ -83,12 +83,12 @@ Wisdom (spell save DC 15, +7 to hit with spell attacks). The
 gilded devil can innately cast the following spells, requiring no
 material components:
 
-**At will:** detect thoughts, major image, suggestion
+**At will:** :ref:`srd:detect-thoughts`, :ref:`srd:major-image`, :ref:`srd:suggestion`
 
-**3/day each:** dominate person, polymorph, scorching ray (4 rays),
+**3/day each:** :ref:`srd:dominate-person`, :ref:`srd:polymorph`, :ref:`srd:scorching-ray` (4 rays),
 scrying
 
-**1/day:** teleport (self plus 50 lb. of objects only)
+**1/day:** :ref:`srd:teleport` (self plus 50 lb. of objects only)
 
 Actions
 ~~~~~~~

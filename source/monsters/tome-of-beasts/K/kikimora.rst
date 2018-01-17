@@ -75,13 +75,11 @@ throws against spells and other magical effects.
 is Charisma (spell save DC 15). She can innately cast the
 following spells, requiring no material components:
 
-**At will:** invisibility (self only), mage hand, mending, minor
-illusion, prestidigitation
+**At will:** :ref:`srd:invisibility` (self only), :ref:`srd:mage-hand`, :ref:`srd:mending`, :ref:`srd:minor-illusion`, :ref:`srd:prestidigitation`
 
-**3/day each:** animal
-friendship, blinding smite, sleep
+**3/day each:** :ref:`srd:animal-friendship`, *blinding smite*, :ref:`srd:sleep`
 
-**1/day each:** insect plague, major image
+**1/day each:** :ref:`srd:insect-plague`, :ref:`srd:major-image`
 
 Actions
 ~~~~~~~

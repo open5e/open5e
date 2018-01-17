@@ -63,15 +63,14 @@ is Charisma (spell save DC 17, +9 to hit with spell attacks). The
 cambium can innately cast the following spells, requiring no
 material components:
 
-**Constant:** levitate
+**Constant:** :ref:`srd:levitate`
 
-**At will:** alter self, detect thoughts, hold person, plane shift, spare
-the dying
+**At will:** :ref:`srd:alter-self`, :ref:`srd:detect-thoughts`, :ref:`srd:hold-person`, :ref:`srd:plane-shift`, :ref:`srd:spare-the-dying`
 
-**3/day:** cure wounds 21 (4d8 + 3), ray of sickness 18 (4d8),
-protection from poison, heal
+**3/day:** :ref:`srd:cure-wounds` 21 (4d8 + 3), *ray of sickness* 18 (4d8),
+ref:`srd:protection-from-poison`, :ref:`srd:heal`
 
-**1/day:** finger of death
+**1/day:** :ref:`srd:finger-of-death`
 
 Actions
 ~~~~~~~

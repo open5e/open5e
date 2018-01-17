@@ -68,9 +68,9 @@ wield a holy symbol.
 ability is Charisma (spell save DC 13). She can innately cast the
 following spells, requiring no material components:
 
-**At will:** disguise self (appearance of a female human), mage hand
+**At will:** :ref:`srd:disguise-self` (appearance of a female human), :ref:`srd:mage-hand`
 
-**2/day:** hex
+**2/day:** *srd:hex*
 
 **Magic Resistance.** The wampus cat has advantage on saving
 throws against spells and other magical effects.

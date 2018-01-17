@@ -73,11 +73,11 @@ ending the effect on a success.
 is Charisma (spell save DC 19). It can cast the following spells,
 requiring no material components:
 
-**At will:** feather fall
+**At will:** :ref:`srd:feather-fall`
 
-**3/day each:** blur, meld into stone, phantasmal killer
+**3/day each:** :ref:`srd:blur`, :ref:`srd:meld-into-stone`, :ref:`srd:phantasmal-killer`
 
-**1/day each:** black tentacles, eyebite, greater invisibility
+**1/day each:** :ref:`srd:black-tentacles`, :ref:`srd:eyebite`, :ref:`srd:greater-invisibility`
 
 **Spider Climb.** The watcher can climb any surface, including
 upside down on ceilings, without making an ability check.

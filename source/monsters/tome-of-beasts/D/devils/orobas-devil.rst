@@ -90,17 +90,16 @@ Persuasion checks when revealing the result of a divination.
 (spell save DC 18, +10 to hit with spell attacks). It can innately
 cast the following spells, requiring no material components:
 
-**Constant:** detect evil and good
+**Constant:** :ref:`srd:detect-evil-and-good`
 
-**At will:** augury, protection from evil and good, teleport (self plus
+**At will:** :ref:`srd:augury`, :ref:`srd:protection-from-evil-and-good`, :ref:`srd:teleport` (self plus
 50 lb. of objects only)
 
-**5/day each:** bestow curse, fireball, scorching ray
+**5/day each:** :ref:`srd:bestow-curse`, :ref:`srd:fireball`, :ref:`srd:scorching-ray`
 
-**3/day each:** antimagic field, chain lightning, contact other
-plane, dimension door, wall of fire
+**3/day each:** :ref:`srd:antimagic-field`, :ref:`srd:chain-lightning`, :ref:`srd:contact-other-plane`, :ref:`srd:dimension-door`, :ref:`srd:wall-of-fire`
 
-**1/day each:** eyebite, find the path, foresight
+**1/day each:** :ref:`srd:eyebite`, :ref:`srd:find-the-path`, :ref:`srd:foresight`
 
 Actions
 ~~~~~~~

@@ -87,12 +87,11 @@ Charisma (spell save DC 19, +11 to hit with spell attacks). It
 can innately cast the following spells, requiring only verbal
 components:
 
-**At will:** create water, speak with animals, stoneshape
+**At will:** :ref:`srd:create-or-destroy-water` (Create Water only), :ref:`srd:speak-with-animals`, :ref:`srd:stone-shape`
 
-**3/day each:** control weather, dispel magic, reincarnate
+**3/day each:** :ref:`srd:control-weather`, :ref:`srd:dispel-magic`, :ref:`srd:reincarnate`
 
-**1/day each:** blight, commune with nature, contagion, flesh to
-stone, plant growth
+**1/day each:** :ref:`srd:blight`, :ref:`srd:commune-with-nature`, :ref:`srd:contagion`, :ref:`srd:flesh-to-stone`, :ref:`srd:plant-growth`
 
 **Magic Resistance.** The andrenjinyi has advantage on saving
 throws against spells and other magical effects.

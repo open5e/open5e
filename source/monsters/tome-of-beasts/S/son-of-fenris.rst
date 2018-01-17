@@ -82,24 +82,24 @@ hit with spell attacks). It requires no material
 components to cast its spells. It has the
 following cleric spells prepared:
 
-**Cantrips (at will):** guidance, light, sacred flame, spare the dying,
-thaumaturgy
+**Cantrips (at will):** :ref:`srd:guidance`, :ref:`srd:light`, :ref:`srd:sacred-flame`, :ref:`srd:spare-the-dying`,
+ref:`srd:thaumaturgy`
 
-**1st level (4 slots):** bane, command, guiding bolt, sanctuary
+**1st level (4 slots):** :ref:`srd:bane`, :ref:`srd:command`, :ref:`srd:guiding-bolt`, :ref:`srd:sanctuary`
 
-**2nd level (3 slots):** blindness/deafness, hold person, silence
+**2nd level (3 slots):** :ref:`srd:blindness-deafness`, :ref:`srd:hold-person`, :ref:`srd:silence`
 
-**3rd level (3 slots):** animate dead, bestow curse, dispel magic
+**3rd level (3 slots):** :ref:`srd:animate-dead`, :ref:`srd:bestow-curse`, :ref:`srd:dispel-magic`
 
-**4th level (3 slots):** banishment, death ward, locate creature
+**4th level (3 slots):** :ref:`srd:banishment`, :ref:`srd:death-ward`, :ref:`srd:locate-creature`
 
-**5th level (2 slots):** contagion, scrying
+**5th level (2 slots):** :ref:`srd:contagion`, :ref:`srd:scrying`
 
-**6th level (1 slot):** harm
+**6th level (1 slot):** :ref:`srd:harm`
 
-**7th level (1 slot):** plane shift
+**7th level (1 slot):** :ref:`srd:plane-shift`
 
-**8th level (1 slot):** earthquake
+**8th level (1 slot):** :ref:`srd:earthquake`
 
 **Trampling Charge.** If the son of Fenris moves at least 20 feet
 straight toward a creature and hits it with a slam attack on

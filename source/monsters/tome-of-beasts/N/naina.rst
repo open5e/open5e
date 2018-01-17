@@ -64,18 +64,17 @@ permanently under the effect of a detect magic spell.
 ability is Charisma (spell save DC 16, +8 to hit with spell
 attacks). The naina has the following sorcerer spells prepared:
 
-**Cantrips (at will):** dancing lights, mage hand, mending, ray of
-frost, resistance, silent image
+**Cantrips (at will):** :ref:`srd:dancing-lights`, :ref:`srd:mage-hand`, :ref:`srd:mending`, :ref:`srd:ray-of-frost`, :ref:`srd:resistance`, :ref:`srd:silent-image`
 
-**1st level (4 slots):** charm person, thunderwave, witch bolt
+**1st level (4 slots):** :ref:`srd:charm-person`, :ref:`srd:thunderwave`, *witch bolt*
 
-**2nd level (3 slots):** darkness, invisibility, locate object
+**2nd level (3 slots):** :ref:`srd:darkness`, :ref:`srd:invisibility`, :ref:`srd:locate-object`
 
-**3rd level (3 slots):** dispel magic, hypnotic pattern
+**3rd level (3 slots):** :ref:`srd:dispel-magic`, :ref:`srd:hypnotic-pattern`
 
-**4th level (3 slots):** dimension door
+**4th level (3 slots):** :ref:`srd:dimension-door`
 
-**5th level (1 slot):** dominate person
+**5th level (1 slot):** :ref:`srd:dominate-person`
 
 **Shapechanger.** The naina can use her action to polymorph
 into one of her two forms: a drake or a female humanoid. She

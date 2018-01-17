@@ -94,17 +94,15 @@ than the standard one:
 is Wisdom (spell save DC 17). It can cast the following spells,
 requiring no material components:
 
-**Constant:** confusion (always centered on the hundun), detect
-thoughts
+**Constant:** :ref:`srd:confusion` (always centered on the hundun), :ref:`srd:detect-thoughts`
 
-**At will:** create or destroy water, dancing lights, mending,
-prestidigitation
+**At will:** :ref:`srd:create-or-destroy-water`, :ref:`srd:dancing-lights`, :ref:`srd:mending`,
+ref:`srd:prestidigitation`
 
-**3/day each:** compulsion, dimension door, black tentacles,
-irresistible dance
+**3/day each:** :ref:`srd:compulsion`, :ref:`srd:dimension-door`, :ref:`srd:black-tentacles`,
+ref:`srd:irresistible-dance`
 
-**1/day each:** awaken, creation, heroes’ feast, magnificent
-mansion, plant growth, reincarnate, stone shape
+**1/day each:** :ref:`srd:awaken`, :ref:`srd:creation`, :ref:`srd:heroes-feast`, :ref:`srd:magnificent-mansion`, :ref:`srd:plant-growth`, :ref:`srd:reincarnate`, :ref:`srd:stone-shape`
 
 **Magic Weapons.** The hundun’s weapon attacks are magical.
 

@@ -79,12 +79,12 @@ slashing from nonmagical weapons
 Charisma (spell save DC 15). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** guidance, purify food and drink, speak with animals
+**At will:** :ref:`srd:guidance`, :ref:`srd:purify-food-and-drink`, :ref:`srd:speak-with-animals`
 
-**3/day each:** charm person, cure wounds (2d8 + 5), daylight,
-faerie fire, heat metal, hypnotic pattern, tongues
+**3/day each:** :ref:`srd:charm-person`, :ref:`srd:cure-wounds` (2d8 + 5), :ref:`srd:daylight`,
+ref:`srd:faerie-fire`, :ref:`srd:heat-metal`, :ref:`srd:hypnotic-pattern`, :ref:`srd:tongues`
 
-**1/day each:** geas, heal, reincarnate
+**1/day each:** :ref:`srd:geas`, :ref:`srd:heal`, :ref:`srd:reincarnate`
 
 **Light of the World.** The firebird’s feathers glow with a warm
 light. The creature sheds light as dim as a candle or as bright

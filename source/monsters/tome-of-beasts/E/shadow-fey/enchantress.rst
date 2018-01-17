@@ -59,26 +59,24 @@ innate spellcasting ability is Charisma. She can
 cast the following spells innately, requiring no
 material components.
 
-**4/day:** misty step (when in shadows, dim light, or
+**4/day:** :ref:`srd:misty-step` (when in shadows, dim light, or
 darkness only)
 
 **Spellcasting.** The shadow fey is a 10th-level spellcaster. Her
 spellcasting ability is Charisma (save DC 15, +7 to hit with spell
 attacks). She knows the following bard spells.
 
-**Cantrips (at will):** blade ward, friends, message, vicious mockery
+**Cantrips (at will):** *blade-ward*, *friends*, :ref:`srd:message`, :ref:`srd:vicious-mockery`
 
-**1st level (4 slots):** bane, charm person, faerie fire
+**1st level (4 slots):** :ref:`srd:bane`, :ref:`srd:charm-person`, :ref:`srd:faerie-fire`
 
-**2nd level (3 slots):** enthrall, hold person
+**2nd level (3 slots):** :ref:`srd:enthrall`, :ref:`srd:hold-person`
 
-**3rd level (3 slots):** conjure fey, fear, hypnotic pattern
+**3rd level (3 slots):** :ref:`srd:conjure-fey`, :ref:`srd:fear`, :ref:`srd:hypnotic-pattern`
 
-**4th level (3 slots):** confusion, greater invisibility, phantasmal
-killer
+**4th level (3 slots):** :ref:`srd:confusion`, :ref:`srd:greater-invisibility`, :ref:`srd:phantasmal-killer`
 
-**5th level (2 slots):** animate objects, dominate person, hold
-monster
+**5th level (2 slots):** :ref:`srd:animate-objects`, :ref:`srd:dominate-person`, :ref:`srd:hold-monster`
 
 **Sunlight Sensitivity.** While in sunlight, the shadow fey has
 disadvantage on attack rolls and on Wisdom (Perception)

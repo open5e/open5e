@@ -62,7 +62,7 @@ to sleep.
 is Charisma. It can cast the following spells innately, requiring
 no material components.
 
-**1/day:** misty step (when in shadows, dim light, or darkness only)
+**1/day:** :ref:`srd:misty-step` (when in shadows, dim light, or darkness only)
 
 **Shadow’s Vigil.** The shadow fey has advantage on Wisdom
 (Perception) checks, and magical darkness does not inhibit

@@ -63,7 +63,7 @@ Large monstrosity, chaotic neutral
 ability is Charisma. It can cast the following
 spell, requiring no material components:
 
-**3/day:** gaseous form
+**3/day:** :ref:`srd:gaseous-form`
 
 **Smoky Constitution.** The vapor lynx spends its time in both
 gaseous and solid form. Its unique constitution makes it

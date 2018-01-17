@@ -60,16 +60,16 @@ Charisma (spell save DC 16, +8 to hit with spell attacks). She
 can innately cast the following spells, requiring no material
 components:
 
-**Constant:** protection from evil and good
+**Constant:** :ref:`srd:protection-from-evil-and-good`
 
-**At will:** create or destroy water, dancing lights, ray of frost,
+**At will:** :ref:`srd:create-or-destroy-water`, :ref:`srd:dancing-lights`, :ref:`srd:ray-of-frost`,
 resistance, witch bolt
 
-**3/day each:** darkness, hold person, inflict wounds, invisibility,
-silence
+**3/day each:** :ref:`srd:darkness`, :ref:`srd:hold-person`, :ref:`srd:inflict-wounds`, :ref:`srd:invisibility`,
+ref:`srd:silence`
 
-**1/day each:** animate dead, bestow curse, blindness/deafness,
-contagion, dispel magic, vampiric touch
+**1/day each:** :ref:`srd:animate-dead`, :ref:`srd:bestow-curse`, :ref:`srd:blindness-deafness`,
+ref:`srd:contagion`, :ref:`srd:dispel-magic`, :ref:`srd:vampiric-touch`
 
 **Nightmare Mount.** A mavka is bonded to a nightmare when it
 is created. Mavkas are encountered with their mounts 95% of

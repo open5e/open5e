@@ -71,9 +71,9 @@ long as she wishes, similar to the meld into stone spell.
 Charisma (spell save DC 14). She can innately cast the following
 spells, requiring no material components:
 
-**3/day:** sleep
+**3/day:** :ref:`srd:sleep`
 
-**1/week:** control weather
+**1/week:** :ref:`srd:control-weather`
 
 Actions
 ~~~~~~~

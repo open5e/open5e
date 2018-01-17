@@ -66,9 +66,9 @@ nonmagical weapons
 Charisma (spell save DC 14). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** dancing lights, minor illusion
+**At will:** :ref:`srd:dancing-lights`, :ref:`srd:minor-illusion`
 
-**3/day:** alter self, fear, sleep, suggestion
+**3/day:** :ref:`srd:alter-self`, :ref:`srd:fear`, :ref:`srd:sleep`, :ref:`srd:suggestion`
 
 Actions
 ~~~~~~~

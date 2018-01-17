@@ -40,9 +40,9 @@ nonmagical weapons
 Charisma (spell save DC 20). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** feather fall
+**At will:** :ref:`srd:feather-fall`
 
-**5/day each:** lightning bolt, ice storm
+**5/day each:** :ref:`srd:lightning-bolt`, :ref:`srd:ice-storm`
 
 **Fog Vision.** The dragon sees normally through light or heavy
 obscurement caused by fog, mist, clouds, or high wind.

@@ -78,12 +78,12 @@ is Wisdom (spell save DC 14, +6 to hit with spell attacks). It
 can innately cast the following spells, requiring no material
 components:
 
-**At will:** guidance, light, purify food and drink, spare the dying
+**At will:** :ref:`srd:guidance`, :ref:`srd:light`, :ref:`srd:purify-food-and-drink`, :ref:`srd:spare-the-dying`
 
-**3/day:** cure wounds, scorching ray (5 rays)
+**3/day:** :ref:`srd:cure-wounds`, :ref:`srd:scorching-ray` (5 rays)
 
-**1/day:** bless, daylight, detect evil and good, enhance ability,
-hallow, protection from evil and good
+**1/day:** :ref:`srd:bless`, :ref:`srd:daylight`, :ref:`srd:detect-evil-and-good`, :ref:`srd:enhance-ability`,
+ref:`srd:hallow`, :ref:`srd:protection-from-evil-and-good`
 
 **Magic Resistance.** The angel has advantage on saving throws
 against spells and other magical effects.

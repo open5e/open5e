@@ -36,7 +36,7 @@ Large dragon, chaotic neutral
 Charisma (spell save DC 14). It can innately cast the following
 spell, requiring no material components:
 
-**At will:** feather fall
+**At will:** :ref:`srd:feather-fall`
 
 **Fog Vision.** The dragon sees normally through light or heavy
 obscurement caused by fog, mist, clouds, or high wind.

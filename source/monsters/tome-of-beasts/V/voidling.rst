@@ -81,11 +81,11 @@ is Wisdom (spell save DC 15, spell attack bonus +7). It can
 innately cast the following spells, requiring no material
 components:
 
-**At will:** darkness, detect magic, fear
+**At will:** :ref:`srd:darkness`, :ref:`srd:detect-magic`, :ref:`srd:fear`
 
-**3/day each:** eldritch blast (3 beams), black tentacles
+**3/day each:** :ref:`srd:eldritch-blast` (3 beams), :ref:`srd:black-tentacles`
 
-**1/day each:** phantasmal force, reverse gravity
+**1/day each:** *phantasmal force*, :ref:`srd:reverse-gravity`
 
 **Natural Invisibility.** A voidling in complete darkness is
 considered invisible to creatures that rely on normal vision or

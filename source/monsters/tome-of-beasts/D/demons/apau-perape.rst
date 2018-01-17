@@ -75,7 +75,7 @@ Its spellcasting ability is Charisma (spell save DC 13). The apau
 perape can innately cast the following spells, requiring no
 material components:
 
-**1/day each:** fear, wall of fire
+**1/day each:** :ref:`srd:fear`, :ref:`srd:wall-of-fire`
 
 **Magic Resistance.** The apau perape has advantage on saving
 throws against spells and other magical effects.

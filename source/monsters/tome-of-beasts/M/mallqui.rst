@@ -74,13 +74,13 @@ mallqui’s next turn. The mallqui dies only if it starts its turn with
 Wisdom (spell save DC 15, +7 to hit with spell attacks). It can
 cast the following spells, requiring no material components:
 
-**At will:** druidcraft, produce flame
+**At will:** :ref:`srd:druidcraft`, :ref:`srd:produce-flame`
 
-**4/day each:** create or destroy water, entangle
+**4/day each:** :ref:`srd:create-or-destroy-water`, :ref:`srd:entangle`
 
-**2/day:** locate animals or plants
+**2/day:** :ref:`srd:locate-animals-or-plants`
 
-**1/day each:** dispel magic, plant growth, wind wall
+**1/day each:** :ref:`srd:dispel-magic`, :ref:`srd:plant-growth`, :ref:`srd:wind-wall`
 
 **Water Sensitivity.** The flesh of a mallqui putrefies and dissolves
 rapidly when soaked with water in the following ways:

@@ -90,18 +90,17 @@ spellcasting ability is Intelligence (spell save DC 17, +9 to hit
 with spell attacks). It requires no material components to cast
 its spells. The sphinx has the following wizard spells prepared:
 
-**Cantrips: (at will):** mage hand, mending, minor illusion, poison
-spray
+**Cantrips: (at will):** :ref:`srd:mage-hand`, :ref:`srd:mending`, :ref:`srd:minor-illusion`, :ref:`srd:poison-spray`
 
-**1st level (4 slots):** comprehend languages, detect magic, identify
+**1st level (4 slots):** :ref:`srd:comprehend-languages`, :ref:`srd:detect-magic`, :ref:`srd:identify`
 
-**2nd level (3 slots):** blur, darkness, locate object
+**2nd level (3 slots):** :ref:`srd:blur`, :ref:`srd:darkness`, :ref:`srd:locate-object`
 
-**3rd level (3 slots):** dispel magic, glyph of warding, major image
+**3rd level (3 slots):** :ref:`srd:dispel-magic`, :ref:`srd:glyph-of-warding`, :ref:`srd:major-image`
 
-**4th level (3 slots):** blight, greater invisibility
+**4th level (3 slots):** :ref:`srd:blight`, :ref:`srd:greater-invisibility`
 
-**5th level (1 slot):** cloudkill
+**5th level (1 slot):** :ref:`srd:cloudkill`
 
 Actions
 ~~~~~~~

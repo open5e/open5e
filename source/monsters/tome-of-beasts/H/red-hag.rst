@@ -59,18 +59,17 @@ ability is Wisdom (Spell save DC 17, +9 to hit with spell attacks).
 She requires no material components to cast her spells. The
 hag has the following druid spells prepared:
 
-**Cantrips (at will):** animal friendship (red hags treat this as a
-cantrip), poison spray, thorn whip
+**Cantrips (at will):** :ref:`srd:animal-friendship` (red hags treat this as a
+cantrip), :ref:`srd:poison-spray`, *thorn whip*
 
-**1st level (4 slots):** cure wounds, entangle, speak with animals
+**1st level (4 slots):** :ref:`srd:cure-wounds`, :ref:`srd:entangle`, :ref:`srd:speak-with-animals`
 
-**2nd level (3 slots):** barkskin, flame blade, lesser restoration
+**2nd level (3 slots):** :ref:`srd:barkskin`, :ref:`srd:flame-blade`, :ref:`srd:lesser-restoration`
 
-**3rd level (3 slots):** call lightning, conjure animals, dispel magic,
-meld into stone
+**3rd level (3 slots):** :ref:`srd:call-lightning`, :ref:`srd:conjure-animals`, :ref:`srd:dispel-magic`,
+ref:`srd:meld-into-stone`
 
-**4th level (2 slots):** control water, dominate beast, freedom of
-movement, hallucinatory terrain
+**4th level (2 slots):** :ref:`srd:control-water`, :ref:`srd:dominate-beast`, :ref:`srd:freedom-of-movement`, :ref:`srd:hallucinatory-terrain`
 
 **Magic Resistance.** The hag has advantage on saving throws
 against spells and other magical effects.

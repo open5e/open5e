@@ -66,12 +66,11 @@ attacks against it.
 Charisma (spell save DC 16). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** message
+**At will:** :ref:`srd:message`
 
-**3/day each:** crown of madness, mirror image, ray of
-enfeeblement
+**3/day each:** *crown of madness*, :ref:`srd:mirror-image`, :ref:`srd:ray-of-enfeeblement`
 
-**1/day:** bestow curse
+**1/day:** :ref:`srd:bestow-curse`
 
 **Magic Resistance.** The likho has advantage on saving throws
 against spells and other magical effects.

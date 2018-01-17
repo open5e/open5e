@@ -54,11 +54,11 @@ against spells and other magical effects.
 Charisma (spell save DC 13). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** detect thoughts
+**At will:** :ref:`srd:detect-thoughts`
 
-**3/day each:** invisibility, mirror image
+**3/day each:** :ref:`srd:invisibility`, :ref:`srd:mirror-image`
 
-**1/day each:** mirage arcana, programmed illusion, project image
+**1/day each:** :ref:`srd:mirage-arcane`, :ref:`srd:programmed-illusion`, :ref:`srd:project-image`
 
 Actions
 ~~~~~~~

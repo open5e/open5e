@@ -79,9 +79,9 @@ creature regains at least 1 point of lost Dexterity.
 is Wisdom (spell save DC 16). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** lightning bolt
+**At will:** :ref:`srd:lightning-bolt`
 
-**3/day:** chain lightning
+**3/day:** :ref:`srd:chain-lightning`
 
 **Storm Form.** A creature that enters or starts its turn inside
 the slow storm’s whirlwind takes 9 (2d8) force damage. A

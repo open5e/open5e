@@ -58,9 +58,9 @@ throws against spells and other magical effects.
 Charisma (spell save DC 17). The ancient titan can innately cast
 the following spells, requiring no material components:
 
-**3/day:** power word stun
+**3/day:** :ref:`srd:power-word-stun`
 
-**1/day:** power word kill
+**1/day:** :ref:`srd:power-word-kill`
 
 Actions
 ~~~~~~~

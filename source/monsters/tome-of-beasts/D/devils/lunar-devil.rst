@@ -80,11 +80,11 @@ darkvision.
 Charisma (spell save DC 15). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** fly, major image, planar binding
+**At will:** :ref:`srd:fly`, :ref:`srd:major-image`, :ref:`srd:planar-binding`
 
-**3/day:** greater invisibility
+**3/day:** :ref:`srd:greater-invisibility`
 
-**1/day:** wall of ice
+**1/day:** :ref:`srd:wall-of-ice`
 
 **Light Incorporeality.** The devil is semi-incorporeal when
 standing in moonlight, and is immune to all nonmagical

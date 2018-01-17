@@ -76,9 +76,9 @@ transformed. It reverts to its true form if it dies.
 ability is Charisma (spell save DC 16). It can innately cast the
 following spells, requiring no material components:
 
-**At will:** command
+**At will:** :ref:`srd:command`
 
-**3/day:** suggestion
+**3/day:** :ref:`srd:suggestion`
 
 Actions
 ~~~~~~~

@@ -65,11 +65,11 @@ deafened, frightened, stunned, and knocked unconscious.
 Charisma (spell save DC 17). The demon can innately cast the
 following spells, requiring no material components:
 
-**At will:** detect evil and good, detect magic, suggestion
+**At will:** :ref:`srd:detect-evil-and-good`, :ref:`srd:detect-magic`, :ref:`srd:suggestion`
 
-**3/day:** glibness
+**3/day:** :ref:`srd:glibness`
 
-**1/day:** dominate person
+**1/day:** :ref:`srd:dominate-person`
 
 **Magic Resistance.** The demon has advantage on saving throws
 against spells and other magical effects.

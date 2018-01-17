@@ -82,13 +82,13 @@ chooses to end the ability as a bonus action.
 is Charisma (spell save DC 17). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** detect evil and good, detect magic, thunderwave
+**At will:** :ref:`srd:detect-evil-and-good`, :ref:`srd:detect-magic`, :ref:`srd:thunderwave`
 
-**3/day each:** destroy food and water (as create food and water,
-but makes food and drink unpalatable), tongues, wind walk
+**3/day each:** *destroy food and water* (as :ref:`srd:create-food-and-water`,
+but makes food and drink unpalatable), :ref:`srd:tongues`, :ref:`srd:wind-walk`
 
-**1/day each:** creation, gaseous form, insect plague, invisibility,
-major image
+**1/day each:** :ref:`srd:creation`, :ref:`srd:gaseous-form`, :ref:`srd:insect-plague`, :ref:`srd:invisibility`,
+ref:`srd:major-image`
 
 **Regeneration.** The al-Aeshma regains 10 hit points at the start
 of its turn. If it takes fire or radiant damage, this trait doesn’t

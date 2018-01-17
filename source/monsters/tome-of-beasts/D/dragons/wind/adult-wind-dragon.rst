@@ -37,9 +37,9 @@ Stealth +10
 Charisma (spell save DC 18). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** feather fall
+**At will:** :ref:`srd:feather-fall`
 
-**3/day:** lightning bolt
+**3/day:** :ref:`srd:lightning-bolt`
 
 **Fog Vision.** The dragon sees normally through light or heavy
 obscurement caused by fog, mist, clouds, or high wind.

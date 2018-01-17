@@ -81,11 +81,11 @@ is Charisma (spell save DC 16, +8 to hit with spell attacks). It
 can innately cast the following spells, requiring no material
 components:
 
-**At will:** disguise self (humanoid forms only), fog cloud
+**At will:** :ref:`srd:disguise-self` (humanoid forms only), :ref:`srd:fog-cloud`
 
-**3/day each:** call lightning, gust of wind, lightning bolt
+**3/day each:** :ref:`srd:call-lightning`, :ref:`srd:gust-of-wind`, :ref:`srd:lightning-bolt`
 
-**1/day:** control weather
+**1/day:** :ref:`srd:control-weather`
 
 **Sneak Attack (1/turn).** The rubezahl does an extra 10 (3d6)
 damage if it hits a target with a weapon attack when it had

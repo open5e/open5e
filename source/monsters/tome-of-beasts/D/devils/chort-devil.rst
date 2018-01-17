@@ -86,9 +86,9 @@ Charisma (spell save DC 17, +9 to hit with spell attacks). The
 chort devil can innately cast the following spells, requiring no
 material components:
 
-**At will:** blur, magic circle, teleportation
+**At will:** :ref:`srd:blur`, :ref:`srd:magic-circle`, :ref:`srd:teleport`
 
-**3/day:** scorching ray (5 rays)
+**3/day:** :ref:`srd:scorching-ray` (5 rays)
 
 **1/day each:** dispel magic, dominate person, flame strike, haste
 

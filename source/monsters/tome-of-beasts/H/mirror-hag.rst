@@ -58,11 +58,9 @@ Charisma (spell save DC 15, +7 to hit with spell attacks). She
 can innately cast the following spells, requiring no material
 components:
 
-**At will:** disguise self, inflict wounds (4d10), message, ray of
-enfeeblement
+**At will:** :ref:`srd:disguise-self`, :ref:`srd:inflict-wounds` (4d10), :ref:`srd:message`, :ref:`srd:ray-of-enfeeblement`
 
-**1/day each:** detect thoughts, dispel magic, lightning bolt, locate
-creature, shillelagh, stinking cloud, teleport
+**1/day each:** :ref:`srd:detect-thoughts`, :ref:`srd:dispel-magic`, :ref:`srd:lightning-bolt`, :ref:`srd:locate-creature`, :ref:`srd:shillelagh`, :ref:`srd:stinking-cloud`, :ref:`srd:teleport`
 
 **Magic Resistance.** The hag has advantage on saving throws
 against spells and other magical effects.

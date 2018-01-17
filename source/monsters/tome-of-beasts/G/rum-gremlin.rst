@@ -62,9 +62,9 @@ Tiny fey, chaotic evil
 Charisma (spell save DC 11). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** prestidigitation
+**At will:** :ref:`srd:prestidigitation`
 
-**3/day:** hex
+**3/day:** *srd:hex*
 
 **Magic Resistance.** The gremlin has advantage on saving throws
 against spells and other magical effects.

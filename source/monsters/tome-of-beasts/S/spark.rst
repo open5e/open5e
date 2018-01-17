@@ -82,11 +82,11 @@ Charisma (spell save DC 14, +6 to hit with spell attacks). It
 can innately cast the following spells, requiring no material
 components:
 
-**At will:** shocking grasp
+**At will:** :ref:`srd:shocking-grasp`
 
-**3/day:** lightning bolt
+**3/day:** :ref:`srd:lightning-bolt`
 
-**1/day:** call lightning
+**1/day:** :ref:`srd:call-lightning`
 
 Actions
 ~~~~~~~

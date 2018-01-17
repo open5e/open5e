@@ -38,9 +38,9 @@ nonmagical weapons
 Intelligence. It can innately cast the following spells, requiring
 no material components:
 
-**At will:** tongues
+**At will:** :ref:`srd:tongues`
 
-**3/day:** enhance ability
+**3/day:** :ref:`srd:enhance-ability`
 
 Actions
 ~~~~~~~

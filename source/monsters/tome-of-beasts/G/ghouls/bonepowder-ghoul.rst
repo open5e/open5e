@@ -93,11 +93,11 @@ spellcasting ability is Charisma (spell save DC 18, +10 to hit
 with spell attacks). It can innately cast the following spells,
 requiring no material components:
 
-**At will:** chill touch, darkness, dispel magic, ray of enfeeblement
+**At will:** :ref:`srd:chill-touch`, :ref:`srd:darkness`, :ref:`srd:dispel-magic`, :ref:`srd:ray-of-enfeeblement`
 
-**3/day:** blindness/deafness, circle of death (7th level; 10d6)
+**3/day:** :ref:`srd:blindness-deafness`, :ref:`srd:circle-of-death` (7th level; 10d6)
 
-**1/day:** finger of death
+**1/day:** :ref:`srd:finger-of-death`
 
 Actions
 ~~~~~~~

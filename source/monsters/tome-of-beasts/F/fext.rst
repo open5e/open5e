@@ -84,11 +84,11 @@ paralyzed, poisoned
 Charisma (spell save DC 15). It can innately cast the following
 spells, requiring no material components:
 
-**At will:** hex
+**At will:** *srd:hex*
 
-**3/day each:** counterspell, fear, gaseous form
+**3/day each:** :ref:`srd:counterspell`, :ref:`srd:fear`, :ref:`srd:gaseous-form`
 
-**1/day each:** hold monster, true seeing
+**1/day each:** :ref:`srd:hold-monster`, :ref:`srd:true-seeing`
 
 **Magic Resistance.** The fext has advantage on saving throws
 against spells and other magical effects.

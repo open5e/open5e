@@ -42,15 +42,15 @@ Its spellcasting ability is Intelligence (spell save DC
 13, +5 to hit with spell attacks). The greyfur has the
 following wizard spells prepared:
 
-**Cantrips (at will):** light, mage hand, minor illusion,
-poison spray, resistance
+**Cantrips (at will):** :ref:`srd:light`, :ref:`srd:mage-hand`, :ref:`srd:minor-illusion`,
+ref:`srd:poison-spray`, :ref:`srd:resistance`
 
-**1st Level (4 slots):** mage armor, sleep
+**1st Level (4 slots):** :ref:`srd:mage-armor`, :ref:`srd:sleep`
 
-**2nd Level (3 slots):** detect thoughts,
-misty step
+**2nd Level (3 slots):** :ref:`srd:detect-thoughts`,
+ref:`srd:misty-step`
 
-**3rd Level (2 slots):** lightning bolt
+**3rd Level (2 slots):** :ref:`srd:lightning-bolt`
 
 Actions
 ~~~~~~~

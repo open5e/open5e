@@ -75,11 +75,11 @@ innate spellcasting ability is Charisma
 can innately cast the following spells,
 requiring no material components:
 
-**At will:** mirror image, plane shift (plane
+**At will:** :ref:`srd:mirror-image`, :ref:`srd:plane-shift` (plane
 of shadows only)
 
-**1/day each:** bane (when in dim light or darkness only),
-black tentacles
+**1/day each:** :ref:`srd:bane` (when in dim light or darkness only),
+ref:`srd:black-tentacles`
 
 **Shadow Blend.** When in dim light or darkness, the umbral
 vampire can Hide as a bonus action, even while being

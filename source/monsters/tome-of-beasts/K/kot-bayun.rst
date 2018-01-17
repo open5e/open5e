@@ -91,9 +91,9 @@ or under the effect of domination to grant the boon.
 is Charisma (spell save DC 13). It can innately cast the following
 spells, requiring no material components:
 
-**3/day each:** fog cloud, invisibility (self only)
+**3/day each:** :ref:`srd:fog-cloud`, :ref:`srd:invisibility` (self only)
 
-**1/day:** blink
+**1/day:** :ref:`srd:blink`
 
 Actions
 ~~~~~~~

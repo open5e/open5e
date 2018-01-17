@@ -79,10 +79,10 @@ against spells and other magical effects.
 Charisma (spell save DC 14). The ink devil can cast the
 following spells, requiring no material components:
 
-**At will:** detect magic, illusory script, invisibility, teleportation
+**At will:** :ref:`srd:detect-magic`, :ref:`srd:illusory-script`, :ref:`srd:invisibility`, :ref:`srd:teleport`
 (self plus 50 lb. of objects only)
 
-**1/day each:** glyph of warding, planar ally (1d4 + 1 lemures
+**1/day each:** :ref:`srd:glyph-of-warding`, :ref:`srd:planar-ally` (1d4 + 1 lemures
 40%, or 1 ink devil 25%)
 
 Actions

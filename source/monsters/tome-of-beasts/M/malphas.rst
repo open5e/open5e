@@ -50,9 +50,9 @@ spellcasting ability is Charisma (spell save DC
 13). It can innately cast the following spells,
 requiring no material components:
 
-**At will:** magic missile
+**At will:** :ref:`srd:magic-missile`
 
-**1/day:** haste
+**1/day:** :ref:`srd:haste`
 
 **Sunlight Sensitivity.** While in sunlight, the
 malphas has disadvantage on attack rolls, as well

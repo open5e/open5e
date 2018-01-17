@@ -74,12 +74,11 @@ ability is Wisdom (spell save DC 16). It can innately
 cast the following spells, requiring no material
 components:
 
-**At will:** animal messenger
+**At will:** :ref:`srd:animal-messenger`
 
-**3/day each:** control water, earthquake
+**3/day each:** :ref:`srd:control-water`, :ref:`srd:earthquake`
 
-**1/day each:** control weather, storm of
-vengeance, tsunami
+**1/day each:** :ref:`srd:control-weather`, :ref:`srd:storm-of-vengeance`, *tsunami*
 
 Actions
 ~~~~~~~

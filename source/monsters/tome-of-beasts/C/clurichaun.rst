@@ -77,10 +77,10 @@ Charisma modifiers to their Armor Class.
 is Charisma (spell save DC 13). The clurichaun can cast the
 following spells, requiring only alcohol as a component.
 
-**At will:** friends, mending, minor illusion, purify food and drink,
-vicious mockery
+**At will:** *friends*, :ref:`srd:mending`, :ref:`srd:minor-illusion`, :ref:`srd:purify-food-and-drink`,
+ref:`srd:vicious-mockery`
 
-**1/day each:** blur, calm emotions, heroism, sleep, suggestion
+**1/day each:** :ref:`srd:blur`, :ref:`srd:calm-emotions`, :ref:`srd:heroism`, :ref:`srd:sleep`, :ref:`srd:suggestion`
 
 **Magic Resistance.** The clurichaun has advantage on saving
 throws against spells and other magical effects.

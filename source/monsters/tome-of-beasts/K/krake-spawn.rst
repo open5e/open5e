@@ -75,9 +75,9 @@ straight line while using this ability.
 ability is Charisma (spell save DC 16). It can innately cast the
 following spells, requiring no material components:
 
-**At will:** protection from energy, ray of frost
+**At will:** :ref:`srd:protection-from-energy`, :ref:`srd:ray-of-frost`
 
-**1/day each:** ice storm, wall of ice
+**1/day each:** :ref:`srd:ice-storm`, :ref:`srd:wall-of-ice`
 
 Actions
 ~~~~~~~

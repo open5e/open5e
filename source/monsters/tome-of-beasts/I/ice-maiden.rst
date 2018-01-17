@@ -86,18 +86,16 @@ Charisma (spell save DC
 17). She can innately cast
 the following spells:
 
-**At will:** chill touch, detect
-magic, light, mage hand,
-prestidigitation, resistance
+**At will:** :ref:`srd:chill-touch`, :ref:`srd:detect-magic`, :ref:`srd:light`, :ref:`srd:mage-hand`,
+ref:`srd:prestidigitation`, :ref:`srd:resistance`
 
-**5/day each:** endure elements
-(cold only), fear, fog cloud,
-misty step
+**5/day each:** *endure-elements*
+(cold only), :ref:`srd:fear`, :ref:`srd:fog-cloud`,
+ref:`srd:misty-step`
 
-**3/day each:** alter self, protection
-from energy, sleet storm
+**3/day each:** :ref:`srd:alter-self`, :ref:`srd:protection-from-energy`, :ref:`srd:sleet-storm`
 
-**1/day:** ice storm
+**1/day:** :ref:`srd:ice-storm`
 
 Actions
 ~~~~~~~

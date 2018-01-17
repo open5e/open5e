@@ -80,11 +80,11 @@ is Charisma (spell save DC 15, +7 to hit with spell attacks). The
 dullahan can innately cast the following spells, requiring no
 material or somatic components:
 
-**At will:** bane, chill touch, hex, knock
+**At will:** :ref:`srd:bane`, :ref:`srd:chill-touch`, *srd:hex*, :ref:`srd:knock`
 
-**3/day each:** false life, see invisibility
+**3/day each:** :ref:`srd:false-life`, :ref:`srd:see-invisibility`
 
-**1/day:** blight
+**1/day:** :ref:`srd:blight`
 
 **Relentless Advance.** The dullahan is unaffected by difficult
 terrain, and can ride over water and other liquid surfaces.

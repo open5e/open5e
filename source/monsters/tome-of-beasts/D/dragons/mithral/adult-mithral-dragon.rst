@@ -44,23 +44,22 @@ Intelligence (spell save DC 18, +10 to hit with spell attacks).
 It can innately cast the following spells, requiring no material
 components:
 
-**At will:** tongues
+**At will:** :ref:`srd:tongues`
 
-**5/day each:** dispel magic, enhance ability
+**5/day each:** :ref:`srd:dispel-magic`, :ref:`srd:enhance-ability`
 
 **Spellcasting.** The dragon is a 6th-level spellcaster. Its
 spellcasting ability is Intelligence (spell save DC 18, +10 to hit
 with spell attacks). It requires no material components to cast
 its spells. The dragon has the following wizard spells prepared:
 
-**Cantrips (at will):** acid splash, light, mage hand, prestidigitation
+**Cantrips (at will):** :ref:`srd:acid-splash`, :ref:`srd:light`, :ref:`srd:mage-hand`, :ref:`srd:prestidigitation`
 
-**1st level (4 slots):** charm person, expeditious retreat, magic
-missile, unseen servant
+**1st level (4 slots):** :ref:`srd:charm-person`, :ref:`srd:expeditious-retreat`, :ref:`srd:magic-missile`, :ref:`srd:unseen-servant`
 
-**2nd level (3 slots):** blur, hold person, see invisibility
+**2nd level (3 slots):** :ref:`srd:blur`, :ref:`srd:hold-person`, :ref:`srd:see-invisibility`
 
-**3rd level (3 slots):** haste, lightning bolt, protection from energy
+**3rd level (3 slots):** :ref:`srd:haste`, :ref:`srd:lightning-bolt`, :ref:`srd:protection-from-energy`
 
 Actions
 ~~~~~~~

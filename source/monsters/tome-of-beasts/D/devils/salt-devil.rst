@@ -76,9 +76,9 @@ against spells and other magical effects.
 (spell save DC 13). The devil can innately cast the following
 spells, requiring no material components:
 
-**At will:** darkness
+**At will:** :ref:`srd:darkness`
 
-**1/day each:** harm, teleport
+**1/day each:** :ref:`srd:harm`, :ref:`srd:teleport`
 
 Actions
 ~~~~~~~

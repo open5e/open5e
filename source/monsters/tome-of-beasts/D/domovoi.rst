@@ -54,9 +54,9 @@ Medium fey, chaotic neutral
 Charisma (spell save DC 15). He can innately cast the following
 spells, requiring no material components:
 
-**At will:** alter self, invisibility
+**At will:** :ref:`srd:alter-self`, :ref:`srd:invisibility`
 
-**3/day each:** darkness, dimension door, haste
+**3/day each:** :ref:`srd:darkness`, :ref:`srd:dimension-door`, :ref:`srd:haste`
 
 Actions
 ~~~~~~~

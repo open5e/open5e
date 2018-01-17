@@ -85,10 +85,10 @@ spellcasting ability is Charisma (spell save DC 15, +7 to
 hit with spell attacks). It can innately cast the following spells,
 requiring no material components:
 
-**3/day each:** freedom of movement, inflict wounds, true strike
+**3/day each:** :ref:`srd:freedom-of-movement`, :ref:`srd:inflict-wounds`, :ref:`srd:true-strike`
 
-**1/day each:** cure wounds (as 3rd level), magic weapon (as 6th
-level), misty step
+**1/day each:** :ref:`srd:cure-wounds` (as 3rd level), :ref:`srd:magic-weapon` (as 6th
+level), :ref:`srd:misty-step`
 
 **Regeneration.** The eater of dust regains 5 hit points at the start
 of its turn. If it takes fire damage, this trait does not function at

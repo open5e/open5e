@@ -66,7 +66,7 @@ flies out of an enemy’s reach.
 is Wisdom. It can cast the following spell, requiring no
 components:
 
-**3/day:** comprehend languages
+**3/day:** :ref:`srd:comprehend-languages`
 
 **Keen Hearing and Sight.** The stryx has advantage on Wisdom
 (Perception) checks that rely on hearing or sight.

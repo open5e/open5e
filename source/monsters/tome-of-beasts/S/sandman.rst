@@ -88,14 +88,13 @@ Charisma (spell save DC
 following spells, requiring no
 material components:
 
-**At will:** darkness, minor
-illusion, plane shift (at
-night only), phantom steed,
-prestidigitation, sleep (11d8)
+**At will:** :ref:`srd:darkness`, :ref:`srd:minor-illusion`, :ref:`srd:plane-shift` (at
+night only), :ref:`srd:phantom-steed`,
+ref:`srd:prestidigitation`, :ref:`srd:sleep` (11d8)
 
-**3/day each:** hypnotic pattern, major image
+**3/day each:** :ref:`srd:hypnotic-pattern`, :ref:`srd:major-image`
 
-**1/day each:** dream, phantasmal killer (5d10)
+**1/day each:** :ref:`srd:dream`, :ref:`srd:phantasmal-killer` (5d10)
 
 **Stuff of Dreams.** Made partially from dreams and imagination,
 a sandman takes only half damage from critical hits and from

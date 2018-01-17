@@ -78,16 +78,16 @@ is Charisma (spell save DC 14, +6 to hit with spell attacks). It
 can innately cast the following spells, requiring no material
 components:
 
-**At will:** dancing lights, darkness, detect evil and good, faerie fire,
-invisibility\**, fly\*, mage hand, ray of frost (\**only when wearing
+**At will:** :ref:`srd:dancing-lights`, :ref:`srd:darkness`, :ref:`srd:detect-evil-and-good`, :ref:`srd:faerie-fire`,
+ref:`srd:invisibility`\*\*, :ref:`srd:fly`\*, :ref:`srd:mage-hand`, :ref:`srd:ray-of-frost` (\*\*only when wearing
 a vanisher hat)
 
-**5/day each:** magic missile, ray of enfeeblement, silent image
+**5/day each:** :ref:`srd:magic-missile`, :ref:`srd:ray-of-enfeeblement`, :ref:`srd:silent-image`
 
-**3/day each:** locate object (radius 3,000 ft. to locate a vanisher
-hat), hideous laughter, web
+**3/day each:** :ref:`srd:locate-object` (radius 3,000 ft. to locate a vanisher
+hat), :ref:`srd:hideous-laughter`, :ref:`srd:web`
 
-**1/day each:** dispel magic, dominate person, hold person
+**1/day each:** :ref:`srd:dispel-magic`, :ref:`srd:dominate-person`, :ref:`srd:hold-person`
 
 **Magic Resistance.** The scheznyki has advantage on saving
 throws against spells and other magical effects.

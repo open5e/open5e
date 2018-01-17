@@ -77,14 +77,14 @@ is Wisdom (spell save DC 16, +8 to hit with spell attacks). She
 can innately cast the following spells, requiring no material
 components:
 
-**At will:** bane, bless, invisibility, sacred flame, spare the dying,
-speak with animals, thaumaturgy
+**At will:** :ref:`srd:bane`, :ref:`srd:bless`, :ref:`srd:invisibility`, :ref:`srd:sacred-flame`, :ref:`srd:spare-the-dying`,
+ref:`srd:speak-with-animals`, :ref:`srd:thaumaturgy`
 
-**5/day each:** gentle repose, healing word, warding bond
+**5/day each:** :ref:`srd:gentle-repose`, :ref:`srd:healing-word`, :ref:`srd:warding-bond`
 
-**3/day each:** beacon of hope, mass healing word, revivify
+**3/day each:** :ref:`srd:beacon-of-hope`, :ref:`srd:mass-healing-word`, :ref:`srd:revivify`
 
-**1/day each:** commune, death ward, freedom of movement, geas
+**1/day each:** :ref:`srd:commune`, :ref:`srd:death-ward`, :ref:`srd:freedom-of-movement`, :ref:`srd:geas`
 
 Actions
 ~~~~~~~

@@ -62,11 +62,11 @@ ability is Intelligence (spell save DC 14, +6 to hit with spell
 attacks). It can innately cast the following spells, requiring no
 material components:
 
-**At will:** comprehend languages, detect magic, shocking grasp
+**At will:** :ref:`srd:comprehend-languages`, :ref:`srd:detect-magic`, :ref:`srd:shocking-grasp`
 
-**3/day each:** shield, silence
+**3/day each:** :ref:`srd:shield`, :ref:`srd:silence`
 
-**1/day each:** arcane eye, confusion, hypnotic pattern, stoneskin
+**1/day each:** :ref:`srd:arcane-eye`, :ref:`srd:confusion`, :ref:`srd:hypnotic-pattern`, :ref:`srd:stoneskin`
 
 **Poisonous Blood.** An attacker who hits a spider of Leng with a
 melee attack from within 5 feet must make a successful DC 15

@@ -45,11 +45,11 @@ spellcasting ability is Charisma (spell save DC 15, +7 to hit with
 spell attacks). It can innately cast the following spells, requiring
 no material components:
 
-**At will:** bless, revivify, sacred flame, shocking grasp, suggestion
+**At will:** :ref:`srd:bless`, :ref:`srd:revivify`, :ref:`srd:sacred-flame`, :ref:`srd:shocking-grasp`, :ref:`srd:suggestion`
 
-**3/day each:** charm person, lightning bolt, sanctuary, shatter
+**3/day each:** :ref:`srd:charm-person`, :ref:`srd:lightning-bolt`, :ref:`srd:sanctuary`, :ref:`srd:shatter`
 
-**1/day each:** chain lightning, cone of cold, ice storm
+**1/day each:** :ref:`srd:chain-lightning`, :ref:`srd:cone-of-cold`, :ref:`srd:ice-storm`
 
 **Legendary Resistance (1/Day).** If the deep one archimandrite
 fails a saving throw, it can count it as a success instead.

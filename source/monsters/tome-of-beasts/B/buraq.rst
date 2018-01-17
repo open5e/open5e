@@ -65,12 +65,12 @@ damage (included in the attack).
 Charisma (spell save DC 17). The buraq can innately cast the
 following spells, requiring no components:
 
-**At will:** comprehend languages, detect evil and good, holy aura,
-pass without trace
+**At will:** :ref:`srd:comprehend-languages`, :ref:`srd:detect-evil-and-good`, :ref:`srd:holy-aura`,
+ref:`srd:pass-without-trace`
 
-**3/day each:** haste, longstrider
+**3/day each:** :ref:`srd:haste`, :ref:`srd:longstrider`
 
-**1/day each:** plane shift, wind walk
+**1/day each:** :ref:`srd:plane-shift`, :ref:`srd:wind-walk`
 
 **Magic Resistance.** The buraq has advantage on saving throws
 against spells and other magical effects.

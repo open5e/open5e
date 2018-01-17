@@ -56,7 +56,7 @@ against being charmed, and magic can’t put it to sleep.
 is Charisma. It can cast the following spells innately, requiring
 no material components.
 
-**3/day:** misty step (when in shadows, dim light, or darkness
+**3/day:** :ref:`srd:misty-step` (when in shadows, dim light, or darkness
 only)
 
 **Sneak Attack (1/turn).** The shadow fey forest hunter does

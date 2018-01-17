@@ -70,11 +70,10 @@ damage (included in its Actions list).
 ability is Charisma (save DC 13, +5 to hit with spell attacks).
 The derro has the following paladin spells prepared:
 
-**1st level (4 slots):** hellish rebuke, inflict wounds, shield of faith,
-wrathful smite
+**1st level (4 slots):** :ref:`srd:hellish-rebuke`, :ref:`srd:inflict-wounds`, :ref:`srd:shield-of-faith`,
+ref:`srd:wrathful-smite`
 
-**2nd level (2 slots):** aid, crown of madness, darkness, magic
-weapon
+**2nd level (2 slots):** :ref:`srd:aid`, *crown of madness*, :ref:`srd:darkness`, :ref:`srd:magic-weapon`
 
 **Sunlight Sensitivity:** While in sunlight, the derro shadow
 antipaladin has disadvantage on attack rolls, as well as on

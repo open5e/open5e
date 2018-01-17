@@ -75,22 +75,21 @@ creatures and objects as if they were difficult terrain. It takes
 is Wisdom (spell save DC 18). It can innately cast the
 following spells, requiring no material components:
 
-**Constant:** detect thoughts, invisibility, mage hand, scrying
+**Constant:** :ref:`srd:detect-thoughts`, :ref:`srd:invisibility`, :ref:`srd:mage-hand`, :ref:`srd:scrying`
 
-**At will:** dancing lights, druidcraft, mending, spare the dying
+**At will:** :ref:`srd:dancing-lights`, :ref:`srd:druidcraft`, :ref:`srd:mending`, :ref:`srd:spare-the-dying`
 
-**7/day each:** bane, create or destroy water, fog cloud,
-purify food and drink
+**7/day each:** :ref:`srd:bane`, :ref:`srd:create-or-destroy-water`, :ref:`srd:fog-cloud`,
+ref:`srd:purify-food-and-drink`
 
-**5/day each:** blindness/deafness, gust of wind, locate object,
-moonbeam, shatter
+**5/day each:** :ref:`srd:blindness-deafness`, :ref:`srd:gust-of-wind`, :ref:`srd:locate-object`,
+ref:`srd:moonbeam`, :ref:`srd:shatter`
 
-**3/day each:** bestow curse, dispel magic, plant growth, remove
-curse, telekinesis
+**3/day each:** :ref:`srd:bestow-curse`, :ref:`srd:dispel-magic`, :ref:`srd:plant-growth`, :ref:`srd:remove-curse`, :ref:`srd:telekinesis`
 
-**1/day each:** blight, contagion, dream
+**1/day each:** :ref:`srd:blight`, :ref:`srd:contagion`, :ref:`srd:dream`
 
-**1/week each:** geas, hallow
+**1/week each:** :ref:`srd:geas`, :ref:`srd:hallow`
 
 **Legendary Resistance (3/Day).** If the haugbui fails a saving
 throw it can choose to succeed instead.

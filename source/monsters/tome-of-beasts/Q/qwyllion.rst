@@ -72,6 +72,12 @@ saving throw renders a creature immune to the effect for 24
 hours. Creatures dominated by the qwyllion are immune to
 this effect.
 
+**Innate Spellcasting.** The qwyllion’s innate casting ability
+is Charisma (spell save DC 14). She can innately cast the
+following spells, requiring no material components:
+
+**3/day each:** :ref:`srd:dominate-person` (range 20 feet), :ref:`srd:shatter`
+
 Actions
 ~~~~~~~
 
@@ -88,9 +94,3 @@ take 16 (3d8 + 3) necrotic damage and be incapacitated until
 the start of the qwyllion’s next turn. A humanoid slain by a
 qwyllion’s death gaze rises 2d4 hours later as a specter under
 the qwyllion’s control.
-
-**Innate Spellcasting.** The qwyllion’s innate casting ability
-is Charisma (spell save DC 14). She can innately cast the
-following spells, requiring no material components:
-
-**3/day each:** dominate person (range 20 feet), shatter

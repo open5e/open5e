@@ -80,7 +80,7 @@ succeeds on a DC 15 Strength check against it.
 ability is Charisma (spell save DC 15). She can innately cast the
 following spells, requiring no material components:
 
-**At will:** disguise self, silence
+**At will:** :ref:`srd:disguise-self`, :ref:`srd:silence`
 
 Actions
 ~~~~~~~

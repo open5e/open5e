@@ -57,13 +57,11 @@ within 30 feet.
 is Charisma (spell save DC 15). She can innately cast the
 following spells, requiring no material components:
 
-**At will:** disguise self, knock, minor illusion, misty step, pass
-without trace, protection from evil and good, tongues, water
-breathing
+**At will:** :ref:`srd:disguise-self`, :ref:`srd:knock`, :ref:`srd:minor-illusion`, :ref:`srd:misty-step`, :ref:`srd:pass-without-trace`, :ref:`srd:protection-from-evil-and-good`, :ref:`srd:tongues`, :ref:`srd:water-breathing`
 
-**3/day each:** bestow curse, invisibility, mirror image
+**3/day each:** :ref:`srd:bestow-curse`, :ref:`srd:invisibility`, :ref:`srd:mirror-image`
 
-**1/day each:** cloudkill, modify memory
+**1/day each:** :ref:`srd:cloudkill`, :ref:`srd:modify-memory`
 
 Actions
 ~~~~~~~

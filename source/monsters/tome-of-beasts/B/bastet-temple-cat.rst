@@ -55,11 +55,11 @@ ability is Charisma (spell save DC 14, +6 to hit with
 spell attacks). The temple cat can innately cast the
 following spells, requiring no material components:
 
-**At will:** guidance
+**At will:** :ref:`srd:guidance`
 
-**3/day each:** charm person, cure wounds
+**3/day each:** :ref:`srd:charm-person`, :ref:`srd:cure-wounds`
 
-**1/day:** enhance ability (only Cat’s Grace)
+**1/day:** :ref:`srd:enhance-ability` (only Cat’s Grace)
 
 **Priestly Purr.** When a cleric or paladin who worships
 Bastet spends an hour preparing spells while a Bastet

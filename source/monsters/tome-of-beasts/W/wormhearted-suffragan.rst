@@ -77,13 +77,13 @@ save DC 14, +6 to hit with spell attacks). It
 can cast the following spells, requiring no
 material components:
 
-**At will:** command, detect evil and good
+**At will:** :ref:`srd:command`, :ref:`srd:detect-evil-and-good`
 
-**4/day:** inflict wounds
+**4/day:** :ref:`srd:inflict-wounds`
 
-**2/day each:** blindness-deafness, hold person
+**2/day each:** :ref:`srd:blindness-deafness`, :ref:`srd:hold-person`
 
-**1/day each:** animate dead, speak with dead
+**1/day each:** :ref:`srd:animate-dead`, :ref:`srd:speak-with-dead`
 
 Actions
 ~~~~~~~

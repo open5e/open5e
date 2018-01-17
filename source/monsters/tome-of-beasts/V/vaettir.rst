@@ -84,11 +84,11 @@ scissors on its chest, and driving pins through its feet.
 Charisma (spell save DC 12). It can innately cast the following
 spells, requiring no material components:
 
-**2/day each:** gaseous form, hunter’s mark
+**2/day each:** :ref:`srd:gaseous-form`, :ref:`srd:hunters-mark`
 
-**1/day each:** enlarge/reduce, phantom steed
+**1/day each:** :ref:`srd:enlarge-reduce`, :ref:`srd:phantom-steed`
 
-**1/week:** bestow curse, geas, remove curse
+**1/week:** :ref:`srd:bestow-curse`, :ref:`srd:geas`, :ref:`srd:remove-curse`
 
 **Sunlight Sensitivity.** Vættir avoid daylight. A vættir in direct
 sunlight has disadvantage on attack rolls and ability checks.

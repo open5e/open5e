@@ -77,10 +77,10 @@ weeds and the creature is utterly destroyed.
 is Charisma (spell save DC 15). She can innately cast the
 following spells, requiring no material components:
 
-**At will:** control water, suggestion, tongues, water walk (can be
+**At will:** :ref:`srd:control-water`, :ref:`srd:suggestion`, :ref:`srd:tongues`, :ref:`srd:water-walk` (can be
 ended freely at will)
 
-**1/day:** dominate person
+**1/day:** :ref:`srd:dominate-person`
 
 **Watery Camouflage.** In dim light or darkness, a rusalka that’s
 underwater is invisible.
