@@ -4,9 +4,9 @@
 Accursed Defiler
 ----------------
 
-A gaunt figure in a tattered black mantle shrouded in a cloud of
+*A gaunt figure in a tattered black mantle shrouded in a cloud of
 whirling sand. Thin cracks run across its papyrus-dry skin and
-around its hollow, black eyes.
+around its hollow, black eyes.*
 
 **Cursed to Wander and Thirst.** Accursed defilers are the
 remnants of an ancient tribe that desecrated a sacred oasis.
@@ -27,6 +27,8 @@ defilers serve evil high priests, fext, or soulsworn warlocks
 as bodyguards and zealous destroyers, eager to spread the
 withering desert’s hand to new lands.
 
+**Undead Nature.** An accursed defiler doesn’t require air,
+food, drink, or sleep.
 
 Accursed Defiler
 ~~~~~~~~~~~~~~~~
@@ -34,14 +36,16 @@ Accursed Defiler
 Medium undead, neutral evil
 
 **Armor Class** 12
+
 **Hit Points** 75 (10d8 + 30)
+
 **Speed** 30 ft.
 
-+-----------+----------+-----------+-----------+-----------+-----------+
-| STR       | DEX      | CON       | INT       | WIS       | CHA       |
-+===========+==========+===========+===========+===========+===========+
-| 19 (+4)   | 14 (+2)  | 17 (+3)   | 6 (-2)    | 15 (+2)   | 14 (+2)   |
-+-----------+----------+-----------+-----------+-----------+-----------+
++-----------+-----------+-----------+-----------+-----------+-----------+
+| STR       | DEX       | CON       | INT       | WIS       | CHA       |
++===========+===========+===========+===========+===========+===========+
+| 19 (+4)   | 14 (+2)   | 17 (+3)   | 6 (-2)    | 15 (+2)   | 14 (+2)   |
++-----------+-----------+-----------+-----------+-----------+-----------+
 
 **Skills** Perception +4, Stealth +4
 
@@ -55,7 +59,7 @@ poisoned
 
 **Senses** darkvision 60 ft., passive Perception 14
 
-**Languages** understands ancient language, but can’t speak
+**Languages** understands an ancient language, but can’t speak
 
 **Challenge** 4 (1,100 XP)
 
@@ -78,14 +82,14 @@ Actions
 
 **Multiattack.** The accursed defiler makes two slam attacks.
 
-**Slam.** *Melee Weapon Attack*: +6 to hit, reach 5 ft., one creature.
-*Hit*: 11 (2d6 + 4) bludgeoning damage. If a creature is hit by
+**Slam.** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one creature.
+*Hit:* 11 (2d6 + 4) bludgeoning damage. If a creature is hit by
 this attack twice in the same round (from the same or different
 accursed defilers), the target must make a DC 13 Constitution
 saving throw or gain one level of exhaustion.
 
-**Sandslash (Recharge 5–6).** As an action, the accursed defiler
+**Sandslash (Recharge 5-6).** As an action, the accursed defiler
 intensifies the vortex of sand that surrounds it. All creatures
-within a 10-foot radius of the accursed defiler take 21 (6d6)
-slashing damage, or half damage with a successful DC 14
-Dexterity saving throw.
+within 10 feet of the accursed defiler take 21 (6d6) slashing
+damage, or half damage with a successful DC 14 Dexterity
+saving throw.

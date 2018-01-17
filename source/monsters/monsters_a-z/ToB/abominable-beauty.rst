@@ -4,8 +4,8 @@
 Abominable Beauty
 -----------------
 
-An otherworldly humanoid of such indescribable beauty, it pains
-anyone’s eyes to gaze upon her.
+*An otherworldly humanoid of such indescribable beauty, it pains
+anyone’s eyes to gaze upon her.*
 
 **Beauty that Destroys.** An abominable beauty is so perfect
 that her gaze blinds, her voice is so melodious that no ears can
@@ -45,8 +45,7 @@ Medium fey, neutral evil
 **Saving Throws** Dex +8, Con +8, Cha +12
 
 **Skills** Deception +12, Perception +7, Performance +12,
-
-**Persuasion** +12
+Persuasion +12
 
 **Damage Immunities** fire
 
@@ -56,9 +55,9 @@ Medium fey, neutral evil
 
 **Challenge** 11 (7,200 XP)
 
-**Burning Touch.** The abominable beauty’s slam
-attacks do 28 (8d6) fire damage. A creature who
-touches her also takes 28 (8d6) fire damage.
+**Burning Touch.** The abominable beauty’s slam attacks do 28
+(8d6) fire damage. A creature who touches her also takes 28
+(8d6) fire damage.
 
 Actions
 ~~~~~~~
@@ -66,20 +65,19 @@ Actions
 **Multiattack.** The abominable beauty makes two slam
 attacks.
 
-**Slam.** +8 to hit, reach 5 ft., one target. *Hit*: 7 (1d8 + 3)
+**Slam.** +8 to hit, reach 5 ft., one target. *Hit:* 7 (1d8 + 3)
 damage plus 28 (8d6) fire damage.
 
-**Blinding Gaze (Recharge 5–6).** A creature within 30 feet of
-the abominable beauty who is targeted by this attack and
-who meets the abominable beauty’s gaze must succeed
-on a DC 17 Charisma saving throw or be blinded. If
-the saving throw succeeds, the target creature is
-permanently immune to this abominable beauty’s
-Blinding Gaze.
+**Blinding Gaze (Recharge 5-6).** A creature within
+30 feet of the abominable beauty who is targeted
+by this attack and who meets the abominable
+beauty’s gaze must succeed on a DC 17 Charisma
+saving throw or be blinded. If the saving throw
+succeeds, the target creature is permanently immune
+to this abominable beauty’s Blinding Gaze.
 
-**Deafening Voice (Recharge 5–6).** An abominable beauty’s
+**Deafening Voice (Recharge 5-6).** An abominable beauty’s
 voice is lovely, but any creature within 90 feet and able
 to hear her when she makes her Deafening Voice attack
 must succeed on a DC 16 Constitution saving throw or be
 permanently deafened.
-
