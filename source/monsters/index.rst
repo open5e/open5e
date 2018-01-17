@@ -33,3 +33,17 @@ Monsters
         :maxdepth: 3
 
         Monster Descriptions <monsters_a-z/index>
+
+.. container:: h1
+
+   Monster Descriptions (Tome of Beasts)
+
+.. container:: subcolumns  
+   
+    .. toctree::
+        :name: tob-descs
+        :glob:
+        :titlesonly:
+        :maxdepth: 3
+
+        Monster Descriptions (Tome of Beasts) <tome-of-beasts/index>
