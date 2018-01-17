@@ -1,7 +1,7 @@
 
-.. _srd:monsters-a-z:
+.. _tob:monsters-a-z:
 
-Monster Descriptions
+Monster Descriptions (Tome of Beasts)
 -------------------------------------------------------------
 
 .. container:: columns
@@ -12,6 +12,3 @@ Monster Descriptions
       :glob:
 
       */index
-      Miscellaneous Creatures <../miscellaneous-creatures/index>
-      Nonplayer Characters <../nonplayer-characters/index>
-
