@@ -65,7 +65,7 @@ nonmagical weapons
 **Challenge** 2 (450 XP)
 
 **Dead Still.** Treat a putrid haunt as
-invisible while it’s buried in swamp muck.
+:ref:`srd:invisible` while it’s buried in swamp muck.
 
 **Swamp Shamble.** Putrid haunts
 suffer no movement penalties in

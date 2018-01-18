@@ -18,8 +18,7 @@ gray to sooty black, with gleaming eyes.*
 unnatural beings that came about
 through terrible manipulation of
 normal owls and kidnapped humans. The
-Moonlit King of the shadow fey, banished and
-imprisoned in his tower, is desperate to touch the
+Moonlit King, is desperate to touch the
 outside world. His crazed experiments blended
 shreds of mortal souls into shadowy owls and thus
 brought the stryx into being.

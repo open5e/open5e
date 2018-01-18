@@ -93,4 +93,4 @@ claw attacks.
 opponents with a gale of animated shadows in a 15-foot
 cone. Any creatures in the area of effect must succeed on a
 DC 15 Strength saving throw or be pushed back 10 feet and
-knocked prone.
+knocked :ref:`srd:prone`.

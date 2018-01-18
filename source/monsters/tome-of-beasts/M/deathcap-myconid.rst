@@ -84,7 +84,7 @@ damage.
 
 **Deathcap Spores (3/day).** The myconid ejects spores at one
 creature it can see within 5 feet of it. The target must succeed
-on a DC 13 Constitution saving throw or be poisoned for 3
+on a DC 13 Constitution saving throw or be :ref:`srd:poisoned` for 3
 rounds. While poisoned this way, the target also takes 10 (4d4)
 poison damage at the start of each of its turns. The target
 repeats the saving throw at the end of each of its turns, ending
@@ -92,6 +92,6 @@ the effect on itself on a success.
 
 **Slumber Spores (3/day).** The myconid ejects spores at one
 creature it can see within 5 feet of it. The target must succeed
-on a DC 13 Constitution saving throw or be poisoned and
-unconscious for 1 minute. A creature wakes up if it takes
+on a DC 13 Constitution saving throw or be :ref:`srd:poisoned` and
+:ref:`srd:unconscious` for 1 minute. A creature wakes up if it takes
 damage, or if another creature uses its action to shake it awake.

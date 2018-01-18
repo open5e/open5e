@@ -53,7 +53,7 @@ Actions
 **Ghost Wings.** The ravenfolk doom croaker furiously “beats” a
 set of phantasmal wings. Every creature within 5 feet of the
 ravenfolk must make a successful DC 13 Dexterity saving throw
-or be blinded until the start of the ravenfolk’s next turn.
+or be :ref:`srd:blinded` until the start of the ravenfolk’s next turn.
 
 **Radiant Runestaff.** *Melee Weapon Attack:* +3 to hit, reach 5
 ft., one target. *Hit:* 4 (1d8) bludgeoning damage plus 4 (1d8)

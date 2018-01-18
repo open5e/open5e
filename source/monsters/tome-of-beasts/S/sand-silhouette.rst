@@ -63,7 +63,7 @@ narrow as 1 inch wide without squeezing.
 
 **Sand Glide.** The sand silhouette can burrow through
 nonmagical, loose sand without disturbing the material it is
-moving through. It is invisible while burrowing this way.
+moving through. It is :ref:`srd:invisible` while burrowing this way.
 
 **Vulnerability to Water.** For every 5 feet the sand
 silhouette moves while touching water, or for
@@ -80,12 +80,12 @@ slam attacks.
 
 **Slam.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one
 target. *Hit:* 14 (3d6 + 4) bludgeoning damage. If both attacks
-hit a Medium or smaller target, the target is grappled (escape
+hit a Medium or smaller target, the target is :ref:`srd:grappled` (escape
 DC 14), and the sand silhouette engulfs it.
 
 **Engulf.** The sand silhouette engulfs a Medium or smaller
-creature grappled by it. The engulfed target is blinded and
-restrained, but no longer grappled. It must make a successful
+creature grappled by it. The engulfed target is :ref:`srd:blinded` and
+:ref:`srd:restrained`, but no longer grappled. It must make a successful
 DC 15 Constitution saving throw at the start of each of the
 sand silhouette’s turns or take 14 (3d6 + 4) bludgeoning
 damage. If the sand silhouette moves, the engulfed target
@@ -95,7 +95,7 @@ at a time.
 **Haunted Haboob (Recharge 4-6).** The sand silhouette turns
 into a 60-foot radius roiling cloud of dust and sand filled with
 frightening shapes. A creature that starts its turn inside the
-cloud must choose whether to close its eyes and be blinded
+cloud must choose whether to close its eyes and be :ref:`srd:blinded`
 until the start of its next turn, or keep its eyes open and make
 a DC 15 Wisdom saving throw. If the saving throw fails, the
 creature is frightened for 1 minute. A frightened creature

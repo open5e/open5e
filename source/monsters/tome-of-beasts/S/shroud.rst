@@ -65,8 +65,8 @@ paralyzed, petrified, poisoned, prone, restrained
 **Amorphous.** The shroud can move through a space as narrow
 as 1 inch wide without squeezing.
 
-**Shadow Evolution.** Shrouds instantly become shadows once
-they cause a total of 12 damage. Any damage they’ve suffered
+**Shadow Evolution.** A shrouds instantly becomes a :ref:`srd:shadow` once
+it causes a total of 12 damage. Any damage they’ve suffered
 is subtracted from the shadow’s total hit points or abilities.
 
 **Shroud Stealth.** When in dim light or darkness, the shroud can
@@ -83,5 +83,5 @@ creature. *Hit:* 3 (1d4 + 1) necrotic damage, and the target’s
 Strength score is reduced by one-half that amount. The target
 dies if this reduces its Strength to 0. Otherwise, the reduction
 lasts until the target finishes a short or long rest. If a non-evil
-humanoid dies from this attack, a new shadow rises from the
+humanoid dies from this attack, a new :ref:`srd:shadow` rises from the
 corpse 1d4 hours later.

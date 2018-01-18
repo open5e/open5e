@@ -75,9 +75,8 @@ poisoned, unconscious
 successful surprise attack against an opponent, its talons
 scratch a rune onto the target’s eyeballs that snaps their
 eyelids shut, leaving them
-blinded. This effect can
-be ended with greater
-restoration, remove curse,
+:ref:`srd:blinded`. This effect can
+be ended with :ref:`srd:greater-restoration`, :ref:`srd:remove-curse`,
 or comparable magic.
 
 **Innate Spellcasting.**

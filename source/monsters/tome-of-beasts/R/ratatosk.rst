@@ -79,13 +79,13 @@ Actions
 **Gore.** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target.
 *Hit:* 1 piercing damage plus 14 (4d6) psychic damage and the
 target must make a successful DC 14 Wisdom saving throw
-or be charmed for 1 round. While charmed in this way, the
+or be :ref:`srd:charmed` for 1 round. While charmed in this way, the
 creature regards one randomly determined ally as a foe.
 
 **Divisive Chatter (recharge 5-6).** Up to six creatures within 30
 feet that can hear the ratatosk must make DC 14 Charisma
 saving throws. On a failure, the creature is affected as if by a
-confusion spell for 1 minute. An affected creature repeats the
+:ref:`srd:confusion` spell for 1 minute. An affected creature repeats the
 saving throw at the end of each of its turns, ending the effect
 on itself on a success.
 

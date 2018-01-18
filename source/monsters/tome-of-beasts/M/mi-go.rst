@@ -97,7 +97,7 @@ Actions
 **Multiattack.** The mi-go makes two attacks with its claws.
 
 **Claw.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target.
-*Hit:* 14 (3d6 + 4) slashing damage, and the target is grappled
+*Hit:* 14 (3d6 + 4) slashing damage, and the target is :ref:`srd:grappled`
 (escape DC 13). If both claw attacks strike the same target in
 a single turn, the target takes an additional 13 (2d12) psychic
 damage.
@@ -107,7 +107,7 @@ Reactions
 
 **Spore Release.** When a mi-go dies, it releases its remaining
 spores. All living creatures within 10 feet take 14 (2d8 + 5)
-poison damage and become poisoned; a successful DC 16
+poison damage and become :ref:`srd:poisoned`; a successful DC 16
 Constitution saving throw halves the damage and prevents
 poisoning. A poisoned creature repeats the saving throw at the
 end of its turn, ending the effect on itself with a success.

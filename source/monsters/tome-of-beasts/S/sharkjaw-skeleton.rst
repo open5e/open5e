@@ -74,7 +74,7 @@ one claw attack.
 
 **Bite.** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:*
 7 (1d8 + 3) piercing damage. If the target is a Large or smaller
-creature, it is grappled (escape DC 13). Until this grapple ends,
+creature, it is :ref:`srd:grappled` (escape DC 13). Until this grapple ends,
 the sharkjaw skeleton can bite only the grappled creature and
 has advantage on attack rolls to do so.
 

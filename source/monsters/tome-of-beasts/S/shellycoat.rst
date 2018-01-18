@@ -77,7 +77,7 @@ doesn’t regenerate.
 (Stealth) checks made to hide and any Perception checks that
 rely on hearing.
 
-**Sunlight Sensitivity.** The shellycoat becomes petrified after
+**Sunlight Sensitivity.** The shellycoat becomes :ref:`srd:petrified` after
 5 (2d4) uninterrupted rounds of exposure to direct, natural
 sunlight.
 
@@ -91,8 +91,8 @@ claws attack.
 6 (1d6 + 3) piercing damage.
 
 **Claws.** *Melee Weapon Attack:* +5 to hit, reach 15 ft., one target.
-*Hit:* 12 (2d8 + 3) slashing damage and the target is grappled
-(escape DC 13), restrained, and poisoned (DC 13 Strength
+*Hit:* 12 (2d8 + 3) slashing damage and the target is :ref:`srd:grappled`
+(escape DC 13), :ref:`srd:restrained`, and :ref:`srd:poisoned` (DC 13 Strength
 saving throw negates, lasts while grappled and 1 round after).
 The shellycoat can shift the position of a grappled creature
 by up to 15 feet as a bonus action. While it has a creature

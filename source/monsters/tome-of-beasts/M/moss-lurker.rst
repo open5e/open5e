@@ -65,9 +65,9 @@ Wisdom (Perception) checks that rely on hearing or smell.
 **Poisoned Gifts.** A moss lurker can contaminate liquids or food
 with poison. Someone who consumes the contaminated
 substance must make a successful DC 11 Constitution saving
-throw or become poisoned for 1 hour. When the poison is
+throw or become :ref:`srd:poisoned` for 1 hour. When the poison is
 introduced, the moss lurker can choose a poison that also
-causes the victim to fall unconscious, or to become paralyzed
+causes the victim to fall :ref:`srd:unconscious`, or to become :ref:`srd:paralyzed`
 while poisoned in this way. An unconscious creature wakes if it
 takes damage, or if a creature uses an action to shake it awake.
 
@@ -83,7 +83,7 @@ damage.
 
 **Mushroom-Poisoned Javelin.** *Ranged Weapon Attack:* +4 to
 hit, range 30 ft., one target. *Hit:* 5 (1d6 + 2) piercing damage
-plus 6 (1d12) poison damage and the target is poisoned until
+plus 6 (1d12) poison damage and the target is :ref:`srd:poisoned` until
 the start of the moss lurker’s next turn. A successful DC 11
 Constitution save halves the poison damage and prevents
 poisoning.

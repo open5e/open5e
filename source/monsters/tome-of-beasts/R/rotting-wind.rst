@@ -67,8 +67,7 @@ and cursed. Normal vegetation dies in 1d4 days, while plant
 creatures take double damage from the wind of decay action.
 Unattended liquids become noxious and undrinkable.
 
-**Invisibility.** The rotting wind is invisible as per a greater
-invisibility spell.
+**Invisibility.** The rotting wind is invisible as per a :ref:`srd:greater-invisibility` spell.
 
 Actions
 ~~~~~~~
@@ -81,5 +80,5 @@ rot. The cursed target can’t regain hit points, and its hit point
 maximum decreases by 10 (3d6) for every 24 hours that elapse.
 If the curse reduces the target’s hit point maximum to 0, the
 target dies and its body turns to dust. The curse lasts until
-removed by the remove curse spell or comparable magic.
+removed by the :ref:`srd:remove-curse` spell or comparable magic.
 

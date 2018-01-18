@@ -53,7 +53,7 @@ Large monstrosity, neutral evil
 **Challenge** 9 (5,000 XP)
 
 **Ghostwalk.** As a bonus action, the ghostwalk spider becomes
-invisible and intangible. Attacking doesn’t end this invisibility.
+:ref:`srd:invisible` and intangible. Attacking doesn’t end this invisibility.
 While invisible, the ghostwalk spider has advantage on
 Dexterity (Stealth) checks and gains the following:
 
@@ -98,8 +98,8 @@ aren’t affected by Ghostly Snare (see below).
 
 **Ghostly Snare (During Ghostwalk Only, Recharge 5-6).**
 Ranged Weapon Attack: +9 to hit, range 40/160 ft., one
-target. *Hit:* The target is restrained by ghostly webbing. While
-restrained in this way, the target is invisible to all creatures
+target. *Hit:* The target is :ref:`srd:restrained` by ghostly webbing. While
+restrained in this way, the target is :ref:`srd:invisible` to all creatures
 except ghostwalk spiders, and it has resistance to acid, cold,
 fire, lightning, and thunder damage. A creature restrained
 by Ghostly Snare can escape by using an action to make a

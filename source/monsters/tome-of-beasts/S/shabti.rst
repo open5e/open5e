@@ -72,7 +72,7 @@ against spells and other magical effects.
 
 **Serpentine Armlets.** As a bonus action, the shabti commands
 its armlets to drop to the floor, whereupon they become two
-giant poisonous snakes. The shabti can mentally direct the
+:ref:`srd:giant-poisonous-snake`. The shabti can mentally direct the
 serpents (this does not require an action). If the snakes are
 killed, they dissolve into wisps of smoke which reform around
 the shabti’s forearms, and they can’t be turned into snakes for
@@ -98,4 +98,4 @@ until removed by the remove curse spell or comparable magic.
 **Telekinesis.** The shabti targets a creature within 60 feet. The
 target must succeed on a DC 15 Strength check or the shabti
 moves it up to 30 feet in any direction (including upward), and
-it is restrained until the end of the shabti’s next turn.
+it is :ref:`srd:restrained` until the end of the shabti’s next turn.

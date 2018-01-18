@@ -116,7 +116,7 @@ attacks.
 
 **Rake.** If the sphinx succeeds with both claw attacks, it
 automatically follows up with a rake attack. If the target fails a
-DC17 Dexterity check, it is knocked prone and takes 14 (2d8 +
+DC17 Dexterity check, it is knocked :ref:`srd:prone` and takes 14 (2d8 +
 5) slashing damage.
 
 Legendary Actions

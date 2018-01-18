@@ -74,7 +74,7 @@ subject to any other penalties for squeezing.
 otherworldly and mind-shattering. A creature that can hear
 this cacophony at the start of its turn and is within 120 feet of
 a shoggoth must succeed on a DC 15 Wisdom saving throw or
-be confused (as the spell confusion) for 1d4 rounds. Creatures
+be confused (as the spell :ref:`srd:confusion`) for 1d4 rounds. Creatures
 that roll a natural 20 on this saving throw become immune to
 the Hideous Piping for 24 hours. Otherwise, characters who
 meet the conditions must repeat the saving throw every round.
@@ -85,10 +85,10 @@ meet the conditions must repeat the saving throw every round.
 **Rolling Charge.** If the shoggoth moves at least 20 feet straight
 toward a creature and hits it with a slam attack on the same
 turn, that creature must succeed on a DC 20 Dexterity saving
-throw or be knocked prone. If the creature is knocked prone,
+throw or be knocked :ref:`srd:prone`. If the creature is knocked prone,
 the shoggoth immediately moves into the creature’s space
 as a bonus action and crushes the creature beneath its bulk.
-The crushed creature can’t breathe, is restrained, and takes
+The crushed creature can’t breathe, is :ref:`srd:restrained`, and takes
 11 (2d10) bludgeoning damage at the start of each of the
 shoggoth’s turns. A crushed creature remains in its space
 and does not move with the shoggoth. A crushed creature
@@ -105,6 +105,6 @@ shoggoth’s turns.
 
 **Slam.** *Melee Weapon Attack:* +14 to hit, reach 15 ft., one target.
 *Hit:* 30 (4d10 + 8) bludgeoning damage, and the target is
-grappled (escape DC 18) and restrained. The shoggoth can
+:ref:`srd:grappled` (escape DC 18) and :ref:`srd:restrained`. The shoggoth can
 grapple any number of creatures simultaneously, and this has
 no effect on its number of attacks.

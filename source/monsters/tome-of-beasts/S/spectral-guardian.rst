@@ -83,5 +83,5 @@ attacks.
 **Spectral Rend.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one
 target. *Hit:* 13 (2d8 + 4) necrotic damage. If the target is a
 creature, it must succeed on a DC 14 Wisdom saving throw or
-be frightened and have its speed reduced to 0; both effects
+be :ref:`srd:frightened` and have its speed reduced to 0; both effects
 last until the end of its next turn.

@@ -48,7 +48,7 @@ other attack.
 **Ghost Wings.** The ravenfolk warrior furiously “beats” a set of
 phantasmal wings. Every creature within 5 feet of the ravenfolk
 must make a successful DC 13 Dexterity saving throw or be
-blinded until the start of the ravenfolk’s next turn.
+:ref:`srd:blinded` until the start of the ravenfolk’s next turn.
 
 **Longbow.** *Ranged Weapon Attack.* +5 to hit, range 150/600 ft.,
 one target. *Hit:* 7 (1d8 + 3) piercing damage.
@@ -60,18 +60,18 @@ one target. *Hit:* 7 (1d8 + 3) piercing damage.
 ft., one target. *Hit:* 7 (1d12 + 1) piercing damage plus 2 (1d4)
 radiant damage.
 
-Reactions
-~~~~~~~~~
-
-Odin’s Call. A ravenfolk warrior can disengage after an attack
-reduces it to 10 hp or less.
-
 Variant: Lack of Runes
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
 Some ravenfolk warriors have no access to the runes. They use
 rapiers instead.
 
 **Rapier:** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target.
 *Hit:* 7 (1d8 + 3) piercing damage.
+
+Reactions
+~~~~~~~~~
+
+Odin’s Call. A ravenfolk warrior can disengage after an attack
+reduces it to 10 hp or less.
 

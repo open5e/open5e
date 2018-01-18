@@ -59,8 +59,7 @@ through other creatures and objects as if they
 were difficult terrain. It takes 5 (1d10) force
 damage if it ends its turn inside an object.
 
-**Invisibility.** The ostinato is invisible as per a greater
-invisibility spell.
+**Invisibility.** The ostinato is invisible as per a :ref:`srd:greater-invisibility` spell.
 
 **Magic Resistance.** The ostinato has advantage on
 saving throws against spells and other magical effects.
@@ -89,7 +88,7 @@ check once every 24 hours; on a success, it realizes that the
 music it hears comes from an external entity.
 The Aural Symbiosis lasts until the target drops to 0 hit
 points, the ostinato ends it as a bonus action, or the ostinato
-is forced out by a dispel evil and good spell or comparable
+is forced out by a :ref:`srd:dispel-evil-and-good` spell or comparable
 magic. When the Aural Symbiosis ends, the ostinato bursts
 forth in a thunderous explosion of sound and reappears in
 an unoccupied space within 5 feet of the target. All creatures

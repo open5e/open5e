@@ -17,7 +17,7 @@ blasphemous and taboo behaviors to please their masters.
 **Pyramid of Power.** The noctiny’s lust for power drives
 them away from decency and reason. They are initiates who
 form the lowest rung of fext society. They swear themselves
-into service to the undead fext as thugs, servants, acolytes,
+into service to the undead :ref:`tob:fext` as thugs, servants, acolytes,
 and cannon fodder, and in exchange draw a trickle of
 power for themselves.
 

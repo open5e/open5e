@@ -90,9 +90,9 @@ attacks hit and the target is a Medium or smaller creature, then
 the sand spider and the target engage in a Strength contest.
 If the creature wins, it can immediately move 5 feet away from
 the sand spider. If the contest results in a tie, the creature is
-grappled (escape DC 15). If the sand spider wins, the creature
-is grappled and dragged by the sand spider 30 feet into its lair.
+:ref:`srd:grappled` (escape DC 15). If the sand spider wins, the creature
+is :ref:`srd:grappled` and dragged by the sand spider 30 feet into its lair.
 If the creature is still grappled at the start of the sand spider’s
-next turn, it becomes restrained instead. The restrained
+next turn, it becomes :ref:`srd:restrained` instead. The restrained
 creature can escape by using an action to make a successful
 DC 15 Strength (Athletics) check.

@@ -49,8 +49,8 @@ Actions
 
 **Bite.** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target.
 *Hit:* 1 piercing damage, and the target must make a successful
-DC 11 saving throw or become poisoned. While poisoned this
-way, the target is paralyzed and takes 3(1d6) poison damage at
+DC 11 saving throw or become :ref:`srd:poisoned`. While poisoned this
+way, the target is :ref:`srd:paralyzed` and takes 3(1d6) poison damage at
 the start of each of its turns. The target can repeat the saving
 throw at the end of each of its turns, ending the effect on itself
 with a success.

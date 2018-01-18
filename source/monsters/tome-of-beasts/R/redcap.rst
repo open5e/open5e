@@ -66,7 +66,7 @@ damage from nonmagical weapons
 humanoid killed no more than an hour ago at least once every
 three days. If it goes more than 72 hours without doing so,
 the blood on its cap dries and the redcap gains one level of
-exhaustion every 24 hours. While the cap is dry, the redcap
+:ref:`srd:exhaustion` every 24 hours. While the cap is dry, the redcap
 can’t remove exhaustion by any means. All levels of exhaustion
 are removed immediately when the redcap soaks its cap in
 fresh blood. A redcap that dies as a result of this exhaustion

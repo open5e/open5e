@@ -12,12 +12,12 @@ for hair, and clawed hands and feet that resemble burnt and
 twisted roots, mavkas seem scorched and even frail. Pupil-less
 red eyes gleam in their eye sockets with a hellish green flame.
 
-**Death Riders.** All mavkas ride nightmare mounts as fearsome
+**Death Riders.** All mavkas ride :ref:`srd:nightmare` mounts as fearsome
 raiders, often snatching victims up into the saddle, never to be
 seen again. They despise and trample foot soldiers as peasants
 unworthy of attention.
 
-**Hag Killers.** Mavkas are the mortal enemies of red hags, who
+**Hag Killers.** Mavkas are the mortal enemies of the :ref:`tob:red-hag`, who
 call these undead horrors “greenbanes.”
 
 **Undead Nature.** A mavka doesn’t require air, food, drink,
@@ -71,7 +71,7 @@ resistance, witch bolt
 **1/day each:** :ref:`srd:animate-dead`, :ref:`srd:bestow-curse`, :ref:`srd:blindness-deafness`,
 :ref:`srd:contagion`, :ref:`srd:dispel-magic`, :ref:`srd:vampiric-touch`
 
-**Nightmare Mount.** A mavka is bonded to a nightmare when it
+**Nightmare Mount.** A mavka is bonded to a :ref:`srd:nightmare` when it
 is created. Mavkas are encountered with their mounts 95% of
 the time.
 

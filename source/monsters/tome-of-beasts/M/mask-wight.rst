@@ -104,17 +104,17 @@ on the target’s person or within the target’s sight.
 hit, reach 5 ft., one target. *Hit:* 19 (2d12 + 6) bludgeoning
 damage plus 11 (2d10) necrotic damage, and the target must
 succeed on a DC 17 Wisdom saving throw or gain 1 level of
-exhaustion. The target recovers from all exhaustion caused by
+:ref:`srd:exhaustion`. The target recovers from all exhaustion caused by
 the enervating spiked gauntlet at the end of its next long rest.
 
 **Wail of the Forgotten (Recharge 6).** The mask wight emits an
 ear-piercing wail. All creatures within 30 feet of the wight take
-65 (10d12) thunder damage and are permanently deafened;
+65 (10d12) thunder damage and are permanently :ref:`srd:deafened`;
 a successful DC 17 Charisma saving throw reduces damage
 to half and limits the deafness to 1d4 hours. Targets slain by
 this attack are erased from the memories of every creature
 in the planes, all written or pictorial references to the target
 fade away, and its body is obliterated—the only exception is
 those who personally witnessed the death. Restoring such a
-slain creature requires a wish or divine intervention; no mortal
+slain creature requires a :ref:`srd:wish` or divine intervention; no mortal
 remembers the creature’s life or death.

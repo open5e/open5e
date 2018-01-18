@@ -63,9 +63,9 @@ spells, requiring no components:
 **Plaintive Melody (3/day).** As a bonus action, a shadhavar can
 play a captivating melody through its hollow horn. Creatures
 within 60 feet that can hear the shadhavar must make a
-successful DC 13 Wisdom saving throw or be charmed until the
+successful DC 13 Wisdom saving throw or be :ref:`srd:charmed` until the
 start of the shadhavar’s next turn. A creature charmed in this
-way is incapacitated, its speed is reduced to 0, and a shadhavar
+way is :ref:`srd:incapacitated`, its speed is reduced to 0, and a shadhavar
 has advantage on attack rolls against it.
 
 **Shadesight.** A shadhavar’s darkvision functions in magical

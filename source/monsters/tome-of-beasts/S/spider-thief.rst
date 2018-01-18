@@ -87,7 +87,7 @@ target. *Hit:* 10 (2d8 + 1) slashing damage.
 
 **Razor Line (Recharge 5-6).** *Melee Weapon Attack:* +3 to hit,
 reach 15 ft., one target. *Hit:* 3 (1d4 + 1) slashing damage, and
-the target is grappled (escape DC 10). Instead of moving,
+the target is :ref:`srd:grappled` (escape DC 10). Instead of moving,
 the spider thief can retract the razor line and pull itself onto
 the grappled creature (the spider thief enters and remains in
 the target’s space). The spider thief’s sickle claw attacks have

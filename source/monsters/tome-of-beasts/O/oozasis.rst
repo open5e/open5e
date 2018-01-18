@@ -66,7 +66,7 @@ as 1 inch wide without squeezing.
 
 **Mirage.** As a bonus action, the oozasis can create a mirage
 around itself to lure victims toward it while disguising its true
-nature. This functions as the mirage arcane spell (save DC
+nature. This functions as the :ref:`srd:mirage-arcane` spell (save DC
 16) but is nonmagical, and therefore can’t be detected using
 detect magic or similar magic, and can’t be dispelled.
 
@@ -75,7 +75,7 @@ drinks the water of an oozasis or eats fruit from the plants
 growing in it has a dream (as the spell, save DC 16) the next
 time it sleeps. In this dream, the oozasis places a compulsion
 to carry out some activity as a torrent of images and
-sensations. When the creature awakens, it is affected by a geas
+sensations. When the creature awakens, it is affected by a :ref:`srd:geas`
 spell (save DC 16, cast as a 7th-level spell) in addition to the
 effects of dream.
 
@@ -86,13 +86,13 @@ Actions
 
 **Pseudopod.** *Melee Weapon Attack:* +8 to hit, reach 15 ft., one
 creature. *Hit:* 13 (2d8 + 4) bludgeoning damage plus 10 (3d6)
-acid damage, and a target that’s Large or smaller is grappled
-(escape DC 16) and restrained until the grapple ends. The
+acid damage, and a target that’s Large or smaller is :ref:`srd:grappled`
+(escape DC 16) and :ref:`srd:restrained` until the grapple ends. The
 oozasis has two pseudopods, each of which can grapple one
 target at a time.
 
 **Engulf.** The oozasis engulfs creatures grappled by it. An
-engulfed creature can’t breathe, is restrained, is no longer
+engulfed creature can’t breathe, is :ref:`srd:restrained`, is no longer
 grappled, has total cover against attacks and other effects
 outside the oozasis, takes 21 (6d6) acid damage at the start
 of each of the oozasis’s turns, and is subject to the oozasis’s

@@ -60,7 +60,7 @@ as on Wisdom (Perception) checks that rely on sight.
 
 **Night Terror (1/round).** As a bonus action immediately
 after making a successful melee attack, a malphas
-storm crow can cast magic missile through his or her
+storm crow can cast :ref:`srd:magic-missile` through his or her
 sword at the same target.
 
 **Swordtrained.** Malphas are trained from youth in

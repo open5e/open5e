@@ -87,5 +87,5 @@ points or fewer. The target must make a successful DC 13
 Constitution saving throw or be unable to regain hit points.
 An affected creature repeats the saving throw at the end of
 its turns, ending the effect on itself with a successful save. The
-effect can also be ended with a greater restoration spell or
+effect can also be ended with a :ref:`srd:greater-restoration` spell or
 comparable magic.

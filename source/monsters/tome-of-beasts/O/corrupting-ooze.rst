@@ -53,7 +53,7 @@ petrified, poisoned
 **Challenge** 5 (1,800 XP)
 
 **Corrupting Touch.** When a corrupting ooze scores a critical
-hit or starts its turn with a foe grappled, it can dissolve one
+hit or starts its turn with a foe :ref:`srd:grappled`, it can dissolve one
 leather, metal, or wood item of its choosing in the possession
 of the target creature. A mundane item is destroyed
 automatically; a magical item is destroyed if its owner fails to
@@ -68,4 +68,4 @@ Actions
 
 **Slam.** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target.
 *Hit:* 12 (2d8 + 3) bludgeoning damage plus 3 (1d6) acid
-damage, and the target is grappled (escape DC 13).
+damage, and the target is :ref:`srd:grappled` (escape DC 13).

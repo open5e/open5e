@@ -75,9 +75,9 @@ languages as a creature it dominates
 space as narrow as 1 inch wide without squeezing.
 
 **Season’s Change.** If a sap demon (or its host) takes at least 10
-fire damage, it also gains the effect of a haste spell until the
+fire damage, it also gains the effect of a :ref:`srd:haste` spell until the
 end of its next turn. If it takes at least 10 cold damage, it gains
-the effect of a slow spell until the end of its next turn.
+the effect of a :ref:`srd:slow` spell until the end of its next turn.
 
 Actions
 ~~~~~~~
@@ -86,13 +86,13 @@ Actions
 
 **Slam.** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target.
 *Hit:* 11 (2d8 + 2) bludgeoning damage. If both attacks hit a
-Medium or smaller target, the target is grappled (escape DC
+Medium or smaller target, the target is :ref:`srd:grappled` (escape DC
 12), and the sap demon uses Soul Sap on it as a bonus action.
 
 **Soul Sap.** The sap demon slides down the throat of a sleeping,
 helpless, or grappled living creature of Medium size or
 smaller. Once inside, the sap demon takes control of its host,
-as per the dominate monster spell (Wisdom DC 12 negates).
+as per the :ref:`srd:dominate-monster` spell (Wisdom DC 12 negates).
 While dominated, the host gains blindsight 90 feet. The host
 drips blood from its ears, nose, eyes, or from a wound that
 resembles the injury done to the sap demon’s tree (1 damage/

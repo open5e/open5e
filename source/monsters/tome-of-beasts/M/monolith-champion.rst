@@ -72,7 +72,7 @@ paralyzed, poisoned
 champion that scores a successful hit with its greatsword
 can try to force the substitution of the target with a shadow
 double. The target must succeed at a DC 14 Charisma saving
-throw or become invisible, silent, and paralyzed, while an
+throw or become :ref:`srd:invisible`, silent, and :ref:`srd:paralyzed`, while an
 illusory version of itself remains visible and audible—and
 under the monolith champion’s control, shouting for a retreat
 or the like. Outside fey locales, this ability does not function.

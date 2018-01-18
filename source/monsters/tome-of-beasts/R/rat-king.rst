@@ -79,12 +79,12 @@ Actions
 *Hit:* 10 (2d6 + 3) piercing damage, and a bitten creature
 must succeed on a DC 15 Constitution saving throw or be
 infected with a disease. A diseased creature gains one level of
-exhaustion immediately. When the creature finishes a long rest,
+:ref:`srd:exhaustion` immediately. When the creature finishes a long rest,
 it must repeat the saving throw. On a failure, the creature gains
 another level of exhaustion. On a success, the disease does not
 progress. The creature recovers from the disease if its saving
 throw succeeds after two consecutive long rests or if it receives
-a lesser restoration spell or comparable magic. The creature
+a :ref:`srd:lesser-restoration` spell or comparable magic. The creature
 then recovers from one level of exhaustion after each long rest.
 
 **Summon Swarm (1/Day).** The rat king summons three swarms

@@ -72,7 +72,7 @@ Actions
 **Bite.** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:*
 1 piercing damage, and the target must succeed on a DC 10
 Constitution saving throw or take 3 (1d6) poison damage and
-be poisoned until the start of the spider’s next turn. The target
+be :ref:`srd:poisoned` until the start of the spider’s next turn. The target
 fails the saving throw automatically and takes an extra 1d6
 poison damage if it is bitten by another red-banded line spider
 while poisoned this way.

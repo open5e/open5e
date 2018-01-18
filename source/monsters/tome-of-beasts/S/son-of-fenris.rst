@@ -104,7 +104,7 @@ following cleric spells prepared:
 **Trampling Charge.** If the son of Fenris moves at least 20 feet
 straight toward a creature and hits it with a slam attack on
 that turn, that target must succeed on a DC 18 Strength saving
-throw or be knocked prone. If it is knocked prone, the son
+throw or be knocked :ref:`srd:prone`. If it is knocked prone, the son
 of Fenris can make another slam attack against it as a bonus
 action.
 
@@ -116,19 +116,19 @@ slam attack.
 
 **Bite.** *Melee Weapon Attack:* +12 to hit, reach 5 ft., one target.
 *Hit:* 19 (2d10 + 8) piercing damage plus 5 (1d10) poison
-damage, and the target is grappled (escape DC 18). If the
+damage, and the target is :ref:`srd:grappled` (escape DC 18). If the
 target was already grappled, it is swallowed instead. While
-swallowed, the target is blinded and restrained, it has total
+swallowed, the target is :ref:`srd:blinded` and :ref:`srd:restrained`, it has total
 cover against attacks and other effects from outside the
 son of Fenris, and it takes 28 (8d6) acid damage at the start
 of each of the son of Fenris’s turns. It can swallow only one
 creature at a time. If it takes 45 damage or more on a single
 turn from the swallowed creature, it must succeed on a DC 17
 Constitution saving throw at the end of that turn or regurgitate
-the creature, which falls prone in a space within 10 feet of the
+the creature, which falls :ref:`srd:prone` in a space within 10 feet of the
 son of Fenris. If the son of Fenris dies, a swallowed creature is
 no longer restrained by it and can escape from the corpse by
-using 15 feet of movement, exiting prone.
+using 15 feet of movement, exiting :ref:`srd:prone`.
 
 **Slam.** *Melee Weapon Attack:* +12 to hit, reach 15 ft., one target.
 *Hit:* 19 (2d10 + 8) bludgeoning damage.

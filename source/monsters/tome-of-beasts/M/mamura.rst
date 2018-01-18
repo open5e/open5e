@@ -90,7 +90,7 @@ whiptail sting attack.
 
 **Claw.** *Melee Weapon Attack:* +7 to hit, range 5 ft., one target.
 *Hit:* 8 (1d8 + 4) slashing damage, and the target must succeed
-on a DC 15 Constitution saving throw or be poisoned for 1
+on a DC 15 Constitution saving throw or be :ref:`srd:poisoned` for 1
 round. The poison duration is cumulative with multiple failed
 saving throws.
 

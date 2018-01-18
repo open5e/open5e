@@ -108,7 +108,7 @@ one target. *Hit:* 20 (5d6 + 3) necrotic damage.
 
 **Xeric Aura.** All creatures within 20 feet of the mallqui must
 succeed on a DC 15 Constitution saving throw or take 11
-(2d10) necrotic damage and gain a level of exhaustion. A
+(2d10) necrotic damage and gain a level of :ref:`srd:exhaustion`. A
 creature becomes immune to the mallqui’s xeric aura for the
 next 24 hours after making a successful save against it.
 

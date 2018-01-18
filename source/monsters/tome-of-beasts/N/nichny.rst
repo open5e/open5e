@@ -64,8 +64,8 @@ poisoned, unconscious
 
 **Freedom of Movement.** A nichny ignores difficult terrain and
 cannot be entangled, grappled, or otherwise impeded in its
-movements as if it is under the effect of a constant freedom of
-movement spell. This ability is negated for grapple attempts if
+movements as if it is under the effect of a constant :ref:`srd:freedom-of-movement`
+spell. This ability is negated for grapple attempts if
 the attacker is wearing gold or orichalcum gauntlets or using a
 gold or orichalcum chain as part of its attack.
 

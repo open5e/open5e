@@ -85,9 +85,9 @@ Actions
 
 **Roar.** When a mahoru roars all creatures with hearing within
 30 feet of it must succeed on a DC 14 Wisdom saving throw
-or become frightened until the end of the mahoru’s next
+or become :ref:`srd:frightened` until the end of the mahoru’s next
 turn. If the target fails the saving throw by 5 or more, it’s also
-paralyzed for the same duration. A target that succeeds on the
+:ref:`srd:paralyzed` for the same duration. A target that succeeds on the
 saving throw is immune to the Roar of all mahoru for the next
 24 hours.
 

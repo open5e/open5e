@@ -71,7 +71,7 @@ Actions
 
 **Eye Extraction.** Every creature that occupies the same space as
 the swarm must succeed on a DC 13 Constitution saving throw
-or become temporarily blinded as their eyes strain from their
+or become temporarily :ref:`srd:blinded` as their eyes strain from their
 sockets. This blindness lasts for as long as the affected creature
 remains in the same space as the oculus; it ends at the end
 of the blinded creature’s turn if the creature is out of the
@@ -88,7 +88,7 @@ fewer hit points can’t use this ability.
 
 **Gaze (recharge 5-6).** The swarm targets every creature in its
 space with a gaze attack. The swarm can choose one of two
-effects for the attack: confusion or hold person. Every target in
+effects for the attack: :ref:`srd:confusion` or :ref:`srd:hold-person`. Every target in
 the swarm’s space is affected unless it makes a successful DC
 14 Charisma saving throw. Even creatures that avert their eyes
 or are blind can be affected by an oculus swarm’s gaze. The

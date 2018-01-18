@@ -84,11 +84,11 @@ by the turning if it were a zombie, the mordant snare gains 10
 temporary hit points, to a maximum of 60.
 
 **Buried.** Until it does something to reveal its presence, a buried
-mordant snare is treated as if it’s invisible.
+mordant snare is treated as if it’s :ref:`srd:invisible`.
 
 **Mordant Puppets.** A mordant snare can control up to four
 bodies per tentacle. These “puppets” look and move like
-zombies. Treat each one as a zombie, but limited in movement
+zombies. Treat each one as a :ref:`srd:zombie`, but limited in movement
 to the 30-foot-by-30-foot area above the buried snare. Unlike
 normal zombies, any creature within 5 feet of a mordant
 puppet when the puppet takes piercing or slashing damage
@@ -119,5 +119,5 @@ acid damage.
 
 **Filaments.** *Melee Weapon Attack:* +11 to hit, reach 5 ft., one
 target. *Hit:* 22 (3d10 + 6) bludgeoning damage plus 10 (3d6)
-acid damage, and the target is grappled (escape DC 16) and
-restrained.
+acid damage, and the target is :ref:`srd:grappled` (escape DC 16) and
+:ref:`srd:restrained`.

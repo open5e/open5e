@@ -45,7 +45,7 @@ Actions
 
 **Tendril.** *Melee Weapon Attack.* +8 to hit, reach 10 ft., one target.
 *Hit:* 8 (1d6 + 5) slashing damage. If both tendril attacks hit the
-same target in a single turn, that target is grappled (escape DC
+same target in a single turn, that target is :ref:`srd:grappled` (escape DC
 15). The rime worm can grapple one creature at a time, and it
 can’t use its tendril or devour attacks against a different target
 while it has a creature grappled.
@@ -56,7 +56,7 @@ by the rime worm, it takes an additional 13 (2d12) cold damage.
 
 **Black Ice Spray (Recharge 5-6).** The rime worm sprays slivers of
 ice in a line 30 feet long and 5 feet wide. All creatures in the line
-take 26 (4d12) necrotic damage and are blinded; a successful
+take 26 (4d12) necrotic damage and are :ref:`srd:blinded`; a successful
 DC 15 Constitution saving throw prevents the blindness. A
 blinded creature repeats the saving throw at the end of its turn,
 ending the effect on itself with a successful save.

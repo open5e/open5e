@@ -76,9 +76,9 @@ points or gain temporary hit points.
 the beetles in the swarm scatter and tint light in a dazzling
 exhibition of colors. In bright light, a creature within 30
 feet that looks at the prismatic beetle swarm must make a
-successful DC 13 Wisdom saving throw or be blinded until
+successful DC 13 Wisdom saving throw or be :ref:`srd:blinded` until
 the end of its next turn. If the saving throw fails by 5 or more,
-the target is also knocked unconscious. Unless it’s surprised,
+the target is also knocked :ref:`srd:unconscious`. Unless it’s surprised,
 a creature can avoid the saving throw by choosing to avert
 its eyes at the start of its turn. A creature that averts its eyes
 can’t see the swarm until the start of its next turn, when it

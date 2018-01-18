@@ -4,7 +4,6 @@
 Sandwyrm
 --------
 
-
 *While they mimic the bleached bones of a desert creature, the
 bony adornments atop along their backs are part of their peculiar
 melding of bone and scale.*
@@ -63,7 +62,7 @@ Perception 17
 the sandwyrm can snap its spines closed on one Large, two
 Medium, or four Small or Tiny creatures above it. Each creature
 must make a successful DC 15 Dexterity saving throw or be
-restrained. A restrained creature can use its action to make
+:ref:`srd:restrained`. A restrained creature can use its action to make
 a DC 15 Strength check to free itself or another restrained
 creature, ending the effect on a success. Creatures restrained
 by this trait move with the sandwyrm. The sandwyrm’s stinger
@@ -86,5 +85,5 @@ creature. *Hit:* 12 (2d6 + 5) piercing damage plus 24 (7d6)
 poison damage, or half as much poison damage with a
 successful DC 15 Constitution saving throw. If the poison
 damage reduces the target to 0 hit points, the target is stable
-but poisoned and paralyzed for 1 hour. Regaining hit points
+but :ref:`srd:poisoned` and :ref:`srd:paralyzed` for 1 hour. Regaining hit points
 doesn’t end the poisoning or paralysis.

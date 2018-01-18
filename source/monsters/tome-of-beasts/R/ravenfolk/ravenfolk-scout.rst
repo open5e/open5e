@@ -41,7 +41,7 @@ one other melee or ranged attack.
 **Ghost Wings.** The ravenfolk scout furiously “beats” a set of
 phantasmal wings. Every creature within 5 feet of the ravenfolk
 must make a successful DC 12 Dexterity saving throw or be
-blinded until the start of the ravenfolk’s next turn.
+:ref:`srd:blinded` until the start of the ravenfolk’s next turn.
 
 **Longbow.** *Ranged Weapon Attack.* +4 to hit, range 150/600 ft.,
 one target. *Hit:* 6 (1d8 +2) piercing damage.

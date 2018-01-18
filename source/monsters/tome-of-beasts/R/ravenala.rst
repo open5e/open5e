@@ -85,7 +85,7 @@ successful DC 15 Dexterity saving throw.
 
 **Lamenting Engulfment.** The ravenala targets a creature within
 5 feet of it. The target must succeed on a DC 13 Dexterity
-saving throw or be grappled and restrained by the ravenala.
+saving throw or be :ref:`srd:grappled` and :ref:`srd:restrained` by the ravenala.
 While restrained, the creature is engulfed inside the ravenala’s
 trunk. The ravenala can grapple one creature at a time;
 grappling doesn’t prevent it from using other attacks against

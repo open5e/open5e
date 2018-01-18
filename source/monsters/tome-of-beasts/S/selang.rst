@@ -93,8 +93,7 @@ playing weird, ear-bending harmonies on alien pipes, made
 from the beaks, cartilage, and throat sacs of a dorreq. When
 the selang plays a tune on these pipes, all creatures within 60
 feet must make a successful DC 14 Wisdom saving throw or be
-affected by contagion, confusion, irresistible dance, or hideous
-laughter, depending on what alien and otherworldly music the
+affected by :ref:`srd:contagion`, :ref:`srd:confusion`, :ref:`srd:irresistible-dance`, or :ref:`srd:hideous-laughter`, depending on what alien and otherworldly music the
 dark satyr chooses to play. A creature that saves successfully
 against this psychic effect is immune to the piping for 24 hours.
 The selang can use each of these spell-like effects once per day.

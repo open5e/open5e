@@ -83,13 +83,13 @@ ended freely at will)
 **1/day:** :ref:`srd:dominate-person`
 
 **Watery Camouflage.** In dim light or darkness, a rusalka that’s
-underwater is invisible.
+underwater is :ref:`srd:invisible`.
 
 Actions
 ~~~~~~~
 
 **Breathless Kiss.** *Melee Weapon Attack:* +6 to hit, reach 5 ft.,
-one target. *Hit:* the target is grappled (escape DC 13) and the
+one target. *Hit:* the target is :ref:`srd:grappled` (escape DC 13) and the
 rusalka draws all the air from the target’s lungs with a kiss. If
 the rusalka has movement remaining, she drags the grappled
 creature into deep water, where it begins suffocating.
@@ -98,5 +98,5 @@ creature into deep water, where it begins suffocating.
 a creature the rusalka has grappled. The creature takes 33
 (6d10) necrotic damage, or half damage with a successful DC
 15 Constitution saving throw. In addition, until it escapes the
-rusalka’s grapple, it is restrained and has disadvantage on
+rusalka’s grapple, it is :ref:`srd:restrained` and has disadvantage on
 Strength checks to break free of the grapple.

@@ -60,7 +60,7 @@ Large beast, unaligned
 **Camouflaged Webs.** It takes a successful DC 15 Wisdom
 (Perception) check to spot the j’ba fofi’s web. A creature
 that fails to notice a web and comes into contact with it is
-restrained by the web. A restrained creature can pull free from
+:ref:`srd:restrained` by the web. A restrained creature can pull free from
 the web by using an action and making a successful DC 12
 Strength check. The web can be attacked and destroyed (AC
 10; hp 5; vulnerable to fire damage; immune to bludgeoning,
@@ -91,5 +91,5 @@ Actions
 *Hit:* 8 (1d10 + 3) piercing damage plus 22 (5d8) poison
 damage, or half as much poison damage with a successful DC
 12 Constitution saving throw. A target dropped to 0 hit points
-by this attack is stable but poisoned and paralyzed for 1 hour,
+by this attack is stable but :ref:`srd:poisoned` and :ref:`srd:paralyzed` for 1 hour,
 even after regaining hit points.

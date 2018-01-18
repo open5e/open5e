@@ -89,8 +89,8 @@ The victim must make a DC 13 Constitution saving throw.
 Success means the target is dead but can be restored to life
 by normal means. Failure means the target’s soul is consumed
 by the soul eater and the target can’t be restored to life with
-clone, raise dead, or reincarnation. A resurrection, miracle, or
-wish spell can return the target to life, but only if the caster
+:ref:`srd:clone`, :ref:`srd:raise-dead`, or :ref:`srd:reincarnate`. A :ref:`srd:resurrection`, *miracle*, or
+:ref:`srd:wish` spell can return the target to life, but only if the caster
 succeeds on a DC 15 spellcasting check. If the soul eater is
 killed within 120 feet of its victim’s corpse and the victim
 has been dead for no longer than 1 minute, the victim’s soul

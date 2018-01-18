@@ -11,7 +11,7 @@ fangs and jaws seem ready to swallow the world.*
 
 **Champions of the Northern Packs.**
 Created in a magical ritual performed
-over a pregnant worg by her
+over a pregnant :ref:`srd:worg` by her
 packmates, nightgarms are
 always female and are always
 loyal followers of Fenris. They
@@ -114,15 +114,15 @@ Actions
 **Bite.** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target.
 *Hit:* 27 (4d10 + 5) piercing damage, and a Medium or smaller
 target must succeed on a DC 15 Strength saving throw or
-be swallowed whole. A swallowed creature is blinded and
-restrained and has total cover against attacks and other effects
+be swallowed whole. A swallowed creature is :ref:`srd:blinded` and
+:ref:`srd:restrained` and has total cover against attacks and other effects
 outside the nightgarm. It takes 21 (6d6) acid damage at the
 start of each of the nightgarm’s turns. A nightgarm can have
 only one creature swallowed at a time.
 If the nightgarm takes 25 damage or more on a single turn
 from the swallowed creature, the nightgarm must succeed
 on a DC 14 Constitution saving throw at the end of that turn
-or regurgitate the creature, which falls prone within 5 feet of
+or regurgitate the creature, which falls :ref:`srd:prone` within 5 feet of
 the nightgarm. If the nightgarm dies, a swallowed creature is
 no longer restrained by it and can escape from the corpse by
-using 10 feet of movement, exiting prone.
+using 10 feet of movement, exiting :ref:`srd:prone`.

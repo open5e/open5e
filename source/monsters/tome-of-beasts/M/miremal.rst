@@ -27,7 +27,7 @@ say their tears come from rage over their banishment and agony
 from knowing they can never return.
 
 **Hate Moss Lurkers.** Miremals are occasionally confused
-with moss lurkers, but the two despise one another and both
+with a :ref:`tob:moss-lurker`, but the two despise one another and both
 consider the comparison odious.
 
 Miremal
@@ -79,7 +79,7 @@ must be a claw attack.
 **Bog Spew (Recharge 5-6).** The miremal spews a noxious stream
 of bog filth mixed with stomach acid at a target up to 20 feet
 away. Target must succeed on a DC 11 Constitution saving
-throw or be blinded for 1d4 rounds.
+throw or be :ref:`srd:blinded` for 1d4 rounds.
 
 Reactions
 ~~~~~~~~~

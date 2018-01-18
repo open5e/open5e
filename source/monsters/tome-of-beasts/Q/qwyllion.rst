@@ -63,9 +63,9 @@ checks while within 40 feet of the qwyllion.
 
 **Nauseating Aura.** The qwyllion is nauseatingly corrupt. Any
 creature that starts its turn within 20 feet of the qwyllion must
-succeed on a DC 14 Constitution saving throw or be poisoned
+succeed on a DC 14 Constitution saving throw or be :ref:`srd:poisoned`
 for 1d8 rounds. If a creature that’s already poisoned by this
-effect fails the saving throw again, it becomes incapacitated
+effect fails the saving throw again, it becomes :ref:`srd:incapacitated`
 instead, and a creature already incapacitated by the qwyllion
 drops to 0 hit points if it fails the saving throw. A successful
 saving throw renders a creature immune to the effect for 24
@@ -90,7 +90,7 @@ makes two claw attacks.
 **Deadly Gaze (recharge 5-6).** The qwyllion turns its gaze
 against a single creature within 20 feet of the qwyllion. The
 target must succeed on a DC 14 Constitution saving throw or
-take 16 (3d8 + 3) necrotic damage and be incapacitated until
+take 16 (3d8 + 3) necrotic damage and be :ref:`srd:incapacitated` until
 the start of the qwyllion’s next turn. A humanoid slain by a
 qwyllion’s death gaze rises 2d4 hours later as a specter under
 the qwyllion’s control.

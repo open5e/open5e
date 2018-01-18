@@ -37,8 +37,8 @@ wink out and return to the elemental planes.
 potential body approaching, it dims its light or enters a metallic
 object. Sparks prefer to inhabit creatures with high Strength
 over other possible targets. Once in control of a body, the spark
-uses the new vessel to deliver shocking grasp attacks or to cast
-lightning bolt or call lightning against distant enemies. If ejected
+uses the new vessel to deliver :ref:`srd:shocking-grasp` attacks or to cast
+:ref:`srd:lightning-bolt` or :ref:`srd:call-lightning` against distant enemies. If ejected
 from a creature, a spark immediately tries to inhabit another.
 
 **Elemental Nature.** A spark doesn’t require air, food, drink,
@@ -93,8 +93,7 @@ Actions
 
 **Inhabit.** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target.
 *Hit:* The target must succeed on a DC 14 Charisma saving
-throw or become dominated by the spark, as the dominate
-person spell. The spark instantly enters the target’s space
+throw or become dominated by the spark, as the :ref:`srd:dominate-person` spell. The spark instantly enters the target’s space
 and merges into the target’s physical form. While inhabiting
 a creature, a spark takes no damage from physical attacks.
 The target creature receives a +4 bonus to its Dexterity and

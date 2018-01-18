@@ -55,7 +55,7 @@ claws and one with its sting.
 
 **Sting.** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one creature.
 *Hit:* 1 piercing damage, plus 21 (6d6) poison damage and the
-target is poisoned until it completes a short or long rest. A
+target is :ref:`srd:poisoned` until it completes a short or long rest. A
 successful DC 10 Constitution saving
 throw reduces the poison
 damage to half and
@@ -64,5 +64,5 @@ condition. If the target
 fails this saving throw
 while already poisoned,
 it gains one level of
-exhaustion in addition to
+:ref:`srd:exhaustion` in addition to
 the other effects.

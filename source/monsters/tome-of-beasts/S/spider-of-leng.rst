@@ -71,10 +71,10 @@ material components:
 **Poisonous Blood.** An attacker who hits a spider of Leng with a
 melee attack from within 5 feet must make a successful DC 15
 Dexterity saving throw or take 7 (2d6) poison damage and be
-poisoned until the start of its next turn.
+:ref:`srd:poisoned` until the start of its next turn.
 
-**Shocking Riposte:** When a spider of Leng casts shield, it can
-also make a shocking grasp attack for 9 (2d8) lightning damage
+**Shocking Riposte:** When a spider of Leng casts :ref:`srd:shield`, it can
+also make a :ref:`srd:shocking-grasp` attack for 9 (2d8) lightning damage
 against one enemy within 5 feet as part of the same reaction.
 
 Actions
@@ -89,12 +89,12 @@ attacks, or one of each.
 **Spit Venom.** *Ranged Weapon Attack:* +6 to hit, range 60 ft.,
 one target. *Hit:* 16 (3d8 + 3) poison damage, and the target
 must make a successful DC 14 Constitution saving throw or be
-poisoned and blinded until the end of its next turn.
+:ref:`srd:poisoned` and :ref:`srd:blinded` until the end of its next turn.
 
 **Staff of Leng.** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one
 target. *Hit:* 9 (2d6 + 2) bludgeoning damage plus 13 (2d12)
 psychic damage, and the target must make a successful DC
-15 Wisdom saving throw or be stunned until the start of the
+15 Wisdom saving throw or be :ref:`srd:stunned` until the start of the
 spider’s next turn.
 
 Reactions

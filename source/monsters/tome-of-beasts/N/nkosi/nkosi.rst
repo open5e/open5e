@@ -39,7 +39,7 @@ checks that rely on smell.
 **Hunter’s Maw.** If the nkosi moves at least 20 feet straight
 toward a creature and then hits it with a scimitar attack on
 the same turn, that target must succeed on a DC 13 Strength
-saving throw or be knocked prone. If the target is knocked
+saving throw or be knocked :ref:`srd:prone`. If the target is knocked
 prone, the nkosi can immediately make one bite attack against
 it as a bonus action.
 

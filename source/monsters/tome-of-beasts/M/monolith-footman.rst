@@ -68,8 +68,8 @@ paralyzed, poisoned
 a monolith footman that scores a successful hit with its
 longsword can try to force the substitution of the target
 with a shadow double. The target must succeed at a DC
-10 Charisma saving throw or become invisible, silent,
-and paralyzed, while an illusory version of itself remains
+10 Charisma saving throw or become :ref:`srd:invisible`, silent,
+and :ref:`srd:paralyzed`, while an illusory version of itself remains
 visible and audible—and under the monolith footman’s
 control, shouting for a retreat or the like. Outside fey locales,
 this ability does not function.

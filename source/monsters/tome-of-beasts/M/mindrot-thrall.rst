@@ -98,6 +98,6 @@ nothing happens if the saving throw succeeds, but if it fails, the
 creature takes 9 (2d8) acid damage and its hit point maximum
 is reduced by the same amount. The infection ends when the
 character makes successful saving throws after two consecutive
-long rests, or receives the benefits of a lesser restoration spell
+long rests, or receives the benefits of a :ref:`srd:lesser-restoration` spell
 or comparable magic. A creature slain by this disease becomes
 a mindrot thrall after 24 hours unless the corpse is destroyed.

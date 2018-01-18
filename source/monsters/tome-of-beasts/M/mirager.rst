@@ -62,11 +62,11 @@ spells, requiring no material components:
 
 **1/day each:** :ref:`srd:hallucinatory-terrain`, :ref:`srd:suggestion`
 
-**Enthralling Mirage.** When the mirager casts hallucinatory
-terrain, the area appears so lush and inviting that those who
+**Enthralling Mirage.** When the mirager casts :ref:`srd:hallucinatory-terrain`,
+the area appears so lush and inviting that those who
 view it feel compelled to visit. Any creature that approaches
 within 120 feet of the terrain must make a DC 15 Wisdom
-saving throw. Those that fail are affected as by the enthrall
+saving throw. Those that fail are affected as by the :ref:`srd:enthrall`
 spell with the mirager as the caster; they give the mirage their
 undivided attention, wanting only to explore it, marvel at its
 beauty, and rest there for an hour. The mirager can choose
@@ -88,7 +88,7 @@ of creatures it lures into kissing it. A creature must be
 charmed, grappled, or incapacitated to be kissed. A kiss hits
 automatically, does 21 (6d6) necrotic damage, and fills the
 mirager with an exultant rush of euphoria that has the same
-effect as a heroism spell lasting 1 minute. The creature that
+effect as a :ref:`srd:heroism` spell lasting 1 minute. The creature that
 was kissed doesn’t notice that it took damage from the kiss
 unless it makes a successful DC 15 Wisdom (Perception) check.
 
@@ -96,8 +96,8 @@ unless it makes a successful DC 15 Wisdom (Perception) check.
 Humanoid Form Only).** The mirager performs a sinuously
 swaying dance. Humanoids within 20 feet that view this dance
 must make a successful DC 15 Wisdom saving throw or be
-stunned for 1d4 rounds
-and charmed by
+:ref:`srd:stunned` for 1d4 rounds
+and :ref:`srd:charmed` by
 the mirager
 for 1 minute.
 Humanoids of

@@ -63,7 +63,7 @@ petrified, poisoned
 **Challenge** 15 (13,000 XP)
 
 **Interdimensional Movement.** A star spawn of Cthulhu can use
-misty step as a bonus action once per round.
+:ref:`srd:misty-step` as a bonus action once per round.
 
 **Psychic Tower.** When an attack that causes psychic damage
 is directed against the spawn, the attack rebounds against
@@ -90,18 +90,17 @@ one target. *Hit:* 20 (2d12 + 7) bludgeoning damage plus 13
 to hit, range 60 ft., one target in line of sight. *Hit:* 32 (5d12)
 necrotic damage, and the target must make a successful DC 20
 Constitution saving throw or dissipate into vapor as if affected
-by a gaseous form spell. An affected creature repeats the
+by a :ref:`srd:gaseous-form` spell. An affected creature repeats the
 saving throw at the end of each of its turns; on a success, the
 effect ends on that creature, but on a failure, the creature takes
 another 32 (5d12) necrotic damage and remains gaseous. ‘A
 creature reduced to 0 hit points by this necrotic damage is
-permanently disintegrated and can be restored only by a wish
+permanently disintegrated and can be restored only by a :ref:`srd:wish`
 or comparable magic that doesn’t require some portion of a
 corpse to work.
 
 **Dimensional Stomp.** *Melee Weapon Attack:* +12 to hit, reach 5
 ft., one target. *Hit:* 18 (2d20 + 7) bludgeoning damage, and the
 target must make a successful DC 15 Dexterity saving throw or
-be teleported to a new location as if affected by the dimension
-door spell. The destination is chosen by the star spawn, but it
+be teleported to a new location as if affected by the :ref:`srd:dimension-door` spell. The destination is chosen by the star spawn, but it
 cannot be in the same space as another object or creature.

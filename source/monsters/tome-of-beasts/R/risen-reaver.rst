@@ -66,7 +66,7 @@ sheet of lead.
 **Pounce.** When the risen reaver hits an enemy with its blade
 attack after moving at least 20 feet, the target creature must
 make a DC 15 Strength saving throw. On a failure, the creature
-falls prone and the risen reaver can use a bonus action to
+falls :ref:`srd:prone` and the risen reaver can use a bonus action to
 make a single blade attack.
 
 **Infused Arsenal.** As a bonus action, the risen reaver can absorb

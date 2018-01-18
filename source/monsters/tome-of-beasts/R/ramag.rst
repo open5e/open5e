@@ -18,14 +18,6 @@ angular, and a ramag’s hair is impossibly thick; each strand is the
 width of a human finger. They wear their strange
 hair tied back in decorative clasps.
 
-**Portal Network.** The ramag used their innate
-magical gifts to maintain powerful magical conduits,
-ley lines that crisscrossed the titan’s empire. This mastery
-of arcane might allowed instantaneous travel to the
-farthest-flung outpost. The ramag still maintain a network of
-magical monoliths that connect the scattered districts of their
-home, but this network is frayed and fading.
-
 **Studious and Powerful.** Although physically weak, the
 ramag are sharp-witted, studious, and naturally infused with
 magic. Lifetimes of exposure to the warping effect of their

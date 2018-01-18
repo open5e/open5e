@@ -58,7 +58,7 @@ nonmagical weapons
 **Challenge** 11 (7,200 XP)
 
 **Magic Sensitive.** The naina detects magic as if it were
-permanently under the effect of a detect magic spell.
+permanently under the effect of a :ref:`srd:detect-magic` spell.
 
 **Spellcasting.** The naina is a 9th-level spellcaster. Her spellcasting
 ability is Charisma (spell save DC 16, +8 to hit with spell
@@ -99,7 +99,7 @@ naina breathes a 20-foot cone of poison gas, paralytic gas, or
 sleep gas.
 
 **Poison.** A creature caught in this poison gas takes 18
-(4d8) poison damage and is poisoned; a successful DC 17
+(4d8) poison damage and is :ref:`srd:poisoned`; a successful DC 17
 Constitution saving throw reduces damage to half and negates
 the poisoned condition. While poisoned this way, the creature
 must repeat the saving throw at the end of each of its turns.
@@ -107,11 +107,11 @@ On a failure, it takes 9 (2d8) poison damage and the poisoning
 continues; on a success, the poisoning ends.
 
 **Paralysis.** A creature caught in this paralytic gas must succeed
-on a DC 17 Constitution saving throw or be paralyzed for 2d4
+on a DC 17 Constitution saving throw or be :ref:`srd:paralyzed` for 2d4
 rounds. A paralyzed creature repeats the saving throw at the
 end of each of its turns; a successful save ends the paralysis.
 
 **Sleep.** A creature caught in this sleeping gas must succeed on
-a DC 17 Constitution saving throw or fall unconscious for 6
+a DC 17 Constitution saving throw or fall :ref:`srd:unconscious` for 6
 rounds. A sleeping creature repeats the saving throw at the end
 of each of its turns; it wakes up if it makes the save successfully.

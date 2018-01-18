@@ -82,9 +82,9 @@ moves to the nearest empty space outside the cone; if the
 saving throw fails, the creature becomes drenched in musk.
 A creature that enters the area of the cone while the musk
 persists is saturated automatically. A creature saturated in
-musk is poisoned. In addition, every creature that starts its turn
+musk is :ref:`srd:poisoned`. In addition, every creature that starts its turn
 within 5 feet of a saturated creature must make a successful
-DC 15 Constitution saving throw or be poisoned until the start
+DC 15 Constitution saving throw or be :ref:`srd:poisoned` until the start
 of its next turn. Serpopard musk (and the poisoning) wear off
 naturally in 1d4 hours. A saturated creature can end the effect
 early by spending 20 minutes thoroughly washing itself, its

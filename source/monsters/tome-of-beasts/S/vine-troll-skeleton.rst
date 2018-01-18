@@ -21,8 +21,7 @@ skeletons to reattach severed limbs. Only fire or acid can destroy
 them and render the living vines harmless.
 
 **Bound to a Tree’s Heart.** Vine troll skeletons are direct
-offshoots of the main vine wrapped around a duskthorn
-dryad’s tree, a treant, or a weeping treant. Vine troll skeletons
+offshoots of the main vine wrapped around a duskthorn dryad’s tree, a treant, or a weeping treant. Vine troll skeletons
 are mindless aside from a desire to defend their parent tree,
 and enchanted troll hearts inside the tree provide their power.
 Destroying the heart at the center of the tree kills the skeleton
