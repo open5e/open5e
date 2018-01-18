@@ -1,8 +1,8 @@
 
 .. _tob:stygian-fat-tailed-scorpion:
 
-Scorpion, Stygian Fat-Tailed
------------------------------
+Stygian Fat-Tailed Scorpion
+---------------------------
 
 *The black carapace gleams in the desert sun, and its tail
 drips translucent venom. Even the largest lion avoids

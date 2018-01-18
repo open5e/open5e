@@ -1,8 +1,8 @@
 
 .. _tob:desert-giant:
 
-Giant, Desert
--------------
+Desert Giant
+------------
 
 *The towering woman rises up from the desert sand. Her pale brown
 robe almost perfectly matches the gritty terrain, and her roughly

@@ -6,3 +6,4 @@ H
    :glob:
 
    *
+   */index

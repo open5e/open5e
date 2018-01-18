@@ -1,8 +1,8 @@
 
 .. _tob:alehouse-drake:
 
-Drake, Alehouse
----------------
+Alehouse Drake
+--------------
 
 *This plump little creature reclines with a dazed look in its eyes and
 the suggestion of a grin on its fanged jaws.*

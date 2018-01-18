@@ -1,8 +1,8 @@
 
 .. _tob:ghostwalk-spider:
 
-Spider, Ghostwalk
------------------
+Ghostwalk Spider
+----------------
 
 *A pasty-white spider the size of a horse slinks through the shadows.
 Its dull eyes fix on you as it fades from sight with a ghostly blue

@@ -1,8 +1,8 @@
 
 .. _tob:chort-devil:
 
-Devil, Chort
-------------
+Chort Devil
+-----------
 
 *Small horns crown this pig-faced devil’s head. It stands on shaggy
 goat legs and holds a flaming polearm in its clawed hands. It bears

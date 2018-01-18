@@ -1,8 +1,8 @@
 
 .. _tob:ngobou:
 
-Dinosaur, Ngobou
-----------------
+Ngobou
+------
 
 *This ill-tempered, six-horned creature resembles a triceratops the
 size of an ox, with pairs of horns atop its nose and brows, as well as

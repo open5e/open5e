@@ -1,8 +1,8 @@
 
 .. _tob:berstuc:
 
-Demon, Berstuc
---------------
+Berstuc
+-------
 
 *Although slightly stooped, this male figure is muscular and broad-shouldered.
 The creature’s head is lost in a riot of moss, and a thick

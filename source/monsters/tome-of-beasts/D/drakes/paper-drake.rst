@@ -1,8 +1,8 @@
 
 .. _tob:paper-drake:
 
-Drake, Paper
-------------
+Paper Drake
+-----------
 
 *With its sharp angles and translucent skin, this draconic creature
 looks as if it were carefully folded from a massive sheet of paper,

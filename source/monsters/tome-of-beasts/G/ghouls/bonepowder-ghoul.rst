@@ -1,8 +1,8 @@
 
 .. _tob:bonepowder-ghoul:
 
-Ghoul, Bonepowder
------------------
+Bonepowder Ghoul
+----------------
 
 *Distilled to nothing but dry, whispering sand and a full set of teeth,
 a bonepowder ghoul still hungers for flesh and blood. Its dusty mass

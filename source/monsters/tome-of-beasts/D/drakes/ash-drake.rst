@@ -1,8 +1,8 @@
 
 .. _tob:ash-drake:
 
-Drake, Ash
-----------
+Ash Drake
+---------
 
 *A lean and dull-scaled ash drake often perches on a chimney as if
 it just crawled out, its tail still hanging into the chimney as smoke

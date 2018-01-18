@@ -1,8 +1,8 @@
 
 .. _tob:apau-perape:
 
-Demon, Apau Perape
-------------------
+Apau Perape
+-----------
 
 *Sharp teeth fill this large, demonic ape’s mouth. Its long, muscular
 arms stretch to the ground, ending in wickedly curved claws.*

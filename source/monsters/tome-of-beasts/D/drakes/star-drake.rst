@@ -1,8 +1,8 @@
 
 .. _tob:star-drake:
 
-Drake, Star
------------
+Star Drake
+----------
 
 *Twinkling motes of light move around this draconic creature’s
 body like stars, their reflections twinkling across its metallic scales.*

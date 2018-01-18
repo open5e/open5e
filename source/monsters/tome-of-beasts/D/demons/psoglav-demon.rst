@@ -1,8 +1,8 @@
 
 .. _tob:psoglav-demon:
 
-Demon, Psoglav
---------------
+Psoglav Demon
+-------------
 
 *An immense creature sniffs at the air. Most of its head is covered by
 a helmet from which one baleful eye gazes out. Its muzzle fuses flesh

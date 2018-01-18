@@ -1,8 +1,8 @@
 
 .. _tob:red-banded-line-spider:
 
-Spider, Red-Banded Line
------------------------
+Red-Banded Line Spider
+----------------------
 
 *These spiders are named for both the deep red swirls on their
 abdomens, unique to each spider, and for their peculiar hunting

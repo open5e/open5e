@@ -1,8 +1,8 @@
 
 .. _tob:deep-drake:
 
-Drake, Deep
------------
+Deep Drake
+----------
 
 *This large, unnerving drake’s glassy black scales have purple
 undertones. Its features are elongated and almost alien. Black,

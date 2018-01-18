@@ -1,8 +1,8 @@
 
 .. _tob:malakbel:
 
-Demon, Malakbel
----------------
+Malakbel
+--------
 
 *Within a blinding wave of heat and glare strides a long-limbed,
 misshapen form. The creature scorches everything in its path

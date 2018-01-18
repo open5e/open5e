@@ -1,8 +1,8 @@
 
 .. _tob:automata-devil:
 
-Devil, Automata
----------------
+Automata Devil
+--------------
 
 *A nightmare wrapped in chains and built of cutting cogs and
 whirring gears, an automata devil howls like a hurricane in

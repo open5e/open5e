@@ -1,8 +1,8 @@
 
 .. _tob:kishi-demon:
 
-Demon, Kishi
-------------
+Kishi Demon
+-----------
 
 *This strong and handsome warrior has a snarling hyena’s face at
 the back of its head.*

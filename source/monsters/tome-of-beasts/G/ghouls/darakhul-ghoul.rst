@@ -1,8 +1,8 @@
 
 .. _tob:darakhul-ghoul:
 
-Ghoul, Darakhul
----------------
+Darakhul
+--------
 
 Medium undead, neutral evil
 

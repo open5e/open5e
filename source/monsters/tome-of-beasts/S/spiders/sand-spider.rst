@@ -1,8 +1,8 @@
 
 .. _tob:sand-spider:
 
-Spider, Sand
-------------
+Sand Spider
+-----------
 
 *When a sand spider attacks, its two speckled, tan legs erupt from the
 sand, plunging forward with murderous speed, followed by a spider

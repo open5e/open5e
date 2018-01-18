@@ -6,3 +6,4 @@ M
    :glob:
 
    *
+   */index

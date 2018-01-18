@@ -1,8 +1,8 @@
 
 .. _tob:koralk:
 
-Devil, Koralk (Harvester Devil)
--------------------------------
+Koralk (Harvester Devil)
+------------------------
 
 The fiendish hulk bears features taken from a nightmare scorpion,
 with three stinging tails and four limbs, and wields a massive

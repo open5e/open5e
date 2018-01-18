@@ -1,8 +1,8 @@
 
 .. _tob:elder-shadow-drake:
 
-Drake, Elder Shadow
--------------------
+Elder Shadow Drake
+------------------
 
 *A large dragon-like creature with black scales and shadowy wings
 emerges suddenly from the darkness. Its red eyes glare bright as

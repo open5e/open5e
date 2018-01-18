@@ -1,8 +1,8 @@
 
 .. _tob:mbielu:
 
-Dinosaur, Mbielu
-----------------
+Mbielu
+------
 
 This lumbering saurian quadruped has large, oblong plates of bone
 covered in greenish slime protruding from its back and its thick,

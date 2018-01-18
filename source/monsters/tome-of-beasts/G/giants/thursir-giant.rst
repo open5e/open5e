@@ -1,8 +1,8 @@
 
 .. _tob:thursir-giant:
 
-Giant, Thursir
---------------
+Thursir Giant
+-------------
 
 *Heavily armored and carrying two rune-marked hammers, a
 thursir giant’s reddish hair and beard are often plaited in the style

@@ -1,8 +1,8 @@
 
 .. _tob:j-ba-fofi-spider:
 
-Spider, J’ba Fofi
------------------
+J’ba Fofi Spider
+----------------
 
 *A large, brown spider that resembles a tarantula with
 exaggeratedly long legs gracefully emerges from the

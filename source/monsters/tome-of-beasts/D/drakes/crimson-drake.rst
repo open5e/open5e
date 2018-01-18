@@ -1,8 +1,8 @@
 
 .. _tob:crimson-drake:
 
-Drake, Crimson
---------------
+Crimson Drake
+-------------
 
 *Crimson drakes are easy to spot, with scales the color of dried blood,
 a deadly scorpion stinger, and a mischievous gleam in their eyes.*

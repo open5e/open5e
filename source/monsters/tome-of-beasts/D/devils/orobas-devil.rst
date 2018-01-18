@@ -1,7 +1,7 @@
 
 .. _tob:orobas-devil:
 
-Devil, Orobas
+Orobas Devil
 -------------
 
 *Tall and powerful, this creature resembles a strong man with

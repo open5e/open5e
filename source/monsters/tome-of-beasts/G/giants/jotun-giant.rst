@@ -1,8 +1,8 @@
 
 .. _tob:jotun-giant:
 
-Giant, Jotun
-------------
+Jotun Giant
+-----------
 
 *The earth shudders with every footfall of a Jotun giant, the
 immortal enemies of the gods. Tall enough to look a titan in the eye

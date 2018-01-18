@@ -1,8 +1,8 @@
 
 .. _tob:imperial-ghoul:
 
-Ghoul, Imperial
----------------
+Imperial Ghoul
+--------------
 
 *An imperial ghoul stands tall and proud, its gray flesh robust and
 muscled, its sharp talons stained black, and its clothing strangely

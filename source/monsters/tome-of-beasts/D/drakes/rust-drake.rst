@@ -1,8 +1,8 @@
 
 .. _tob:rust-drake:
 
-Drake, Rust
------------
+Rust Drake
+----------
 
 *A motionless rust drake is easily mistaken for a pile of scrap metal.*
 

@@ -1,8 +1,8 @@
 
 .. _tob:iron-ghoul:
 
-Ghoul, Iron
------------
+Iron Ghoul
+----------
 
 *A brutal and vicious-looking ghoul that carries a cruel glaive, its
 forearms up to its elbows are stained with dark, dried blood. Its

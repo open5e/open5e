@@ -1,8 +1,8 @@
 
 .. _tob:coral-drake:
 
-Drake, Coral
-------------
+Coral Drake
+-----------
 
 *Swimming upright, this creature peels itself from the vibrant
 seascape and strikes with needle-thin claws, shredding teeth, and a

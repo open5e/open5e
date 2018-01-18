@@ -1,8 +1,8 @@
 
 .. _tob:lunar-devil:
 
-Devil, Lunar
-------------
+Lunar Devil
+-----------
 
 *A hulking figure floats in the air, a winged horror
 painted in mist and moonlight.*

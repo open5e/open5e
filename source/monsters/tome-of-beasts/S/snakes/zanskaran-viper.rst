@@ -1,8 +1,8 @@
 
 .. _tob:zanskaran-viper:
 
-Snake, Zanskaran Viper
-----------------------
+Zanskaran Viper
+---------------
 
 *Greenish liquid drips from the dagger-length fangs of this
 20-foot-long monstrosity. They show little fear.*

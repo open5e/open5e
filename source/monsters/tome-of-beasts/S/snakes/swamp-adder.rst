@@ -1,8 +1,8 @@
 
 .. _tob:swamp-adder:
 
-Snake, Swamp Adder
-------------------
+Swamp Adder
+-----------
 
 *A vicious snake with a squat, diamond-shaped head, a puffed
 neck, and a peculiar yellow band around its body, the swamp

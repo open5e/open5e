@@ -1,8 +1,8 @@
 
 .. _tob:salt-devil:
 
-Devil, Salt
------------
+Salt Devil
+----------
 
 *“They led that caravan without mercy or
 kindness. If you fell or stumbled, they struck you,

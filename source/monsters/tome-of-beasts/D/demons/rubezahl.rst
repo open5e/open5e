@@ -1,8 +1,8 @@
 
 .. _tob:rubezahl:
 
-Demon, Rubezahl
----------------
+Rubezahl
+--------
 
 *Resembling a black-furred stag that walks like a man, this creature
 has a pair of immense, branching antlers arching above its coldly

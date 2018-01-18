@@ -1,8 +1,8 @@
 
 .. _tob:beggar-ghoul:
 
-Ghoul, Beggar
--------------
+Beggar Ghoul
+------------
 
 *This emaciated, gray husk of a creature wears rags and picks
 hungrily at a sliver of bone. It moves in a crouch so low that it’s

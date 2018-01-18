@@ -1,8 +1,8 @@
 
 .. _tob:ink-devil:
 
-Devil, Ink
-----------
+Ink Devil
+---------
 
 *This small devil wears a small red hat. A wicked grin flashes black
 teeth, and the creature nervously wrings its hands, baring long,

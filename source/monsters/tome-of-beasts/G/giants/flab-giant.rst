@@ -1,8 +1,8 @@
 
 .. _tob:flab-giant:
 
-Giant, Flab
------------
+Flab Giant
+----------
 
 *This obese, bell-shaped giant is blemished by ulcers, enlarged
 veins, and fungal rashes. Though it stumbles about on a pair

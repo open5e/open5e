@@ -1,8 +1,8 @@
 
 .. _tob:crystalline-devil:
 
-Devil, Crystalline
-------------------
+Crystalline Devil
+-----------------
 
 *Created and favored by Mammon, the arch-devil of greed,
 crystalline devils masquerade as magic treasures.*

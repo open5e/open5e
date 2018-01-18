@@ -1,8 +1,8 @@
 
 .. _tob:night-scorpion:
 
-Scorpion, Night
----------------
+Night Scorpion
+--------------
 
 *These midnight-black scorpions have a bright-red stripe on their
 tails, signaling the crippling poison within.*

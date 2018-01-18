@@ -1,8 +1,8 @@
 
 .. _tob:gilded-devil:
 
-Devil, Gilded
--------------
+Gilded Devil
+------------
 
 *This tall, bronze-complexioned man is abnormally long-limbed
 and clad in armor of stained and battered coins. His wiry frame
