@@ -16,7 +16,8 @@ hungry and ill-tempered, with
 the speed to run down horses,
 lone zimwi have been known to
 attack large caravans.
-Always Starving. Most of their attacks
+
+**Always Starving.** Most of their attacks
 are driven by hunger. The stomach of a
 zimwi is larger than its body, extending
 extra-dimensionally and driving the
@@ -74,22 +75,22 @@ attack.
 *Hit:* 13 (2d8 + 4) piercing damage. If the target is a Medium
 or smaller creature grappled by the zimwi, that creature
 is swallowed, and the grapple ends. While swallowed, the
-creature is blinded and restrained, it has total cover against
+creature is :ref:`srd:blinded` and :ref:`srd:restrained`, it has total cover against
 attacks and other effects outside the zimwi, and it takes 14
 (4d6) acid damage at the start of each of the zimwi’s turns.
 If the zimwi’s stomach takes 20 damage or more on a single
 turn from a creature inside it, the zimwi must succeed on a
 DC 14 Constitution saving throw at the end of that turn or
-regurgitate all swallowed creatures, which fall prone in a space
+regurgitate all swallowed creatures, which fall :ref:`srd:prone` in a space
 within 5 feet of the zimwi. Damage done to a zimwi’s stomach
 does not harm the zimwi. The zimwi’s stomach is larger on the
 inside than the outside. It can have two Medium creatures or
 four Small or smaller creatures swallowed at one time. If the
 zimwi dies, a swallowed creature is no longer restrained by it
 and can escape from the corpse using 5 feet of movement,
-exiting prone.
+exiting :ref:`srd:prone`.
 
 **Claws.** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one
 target. Hit: 11 (2d6 + 4) slashing damage, and if the target
 is a Medium or smaller creature and the zimwi isn’t already
-grappling a creature, it is grappled (escape DC 11).
+grappling a creature, it is :ref:`srd:grappled` (escape DC 11).

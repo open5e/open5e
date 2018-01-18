@@ -82,7 +82,7 @@ of power. This rupture appears at a spot
 designated by the titan within 100 feet.
 Any creature within 60 feet of the spot
 must make a DC 17 Constitution saving throw. On a failure,
-the creature takes 28 (8d6) force damage, falls prone, and is
+the creature takes 28 (8d6) force damage, falls :ref:`srd:prone`, and is
 pulled 1d6 x 10 feet toward the eldritch singularity, taking an
 additional 3 (1d6) bludgeoning damage per 10 feet they were
 dragged. If the saving throw succeeds, the target takes half as

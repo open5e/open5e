@@ -9,14 +9,7 @@ gray hair. Fine, arm-length worms wriggle through abscesses in
 its flesh and its empty eye-sockets. It moves stooped over, with a
 shuffling gait, belying its speed and agility.*
 
-Wormhearted suffragans are devoted followers of Qorgeth,
-demon lord of worms, who they believe is the servant and
-forerunner of a dark goddess of worms and decay.
-
-**Dark Worm Hearts.** Formerly, the suffragans were priests
-or holy officers of other faiths, but their hearts were corrupted
-by their fear and loathing. Once pledged to the service of the
-devouring worm, Qorgeth replaced their hearts with a bulbous,
+**Dark Worm Hearts.** Their hearts have been replaced with a bulbous,
 writhing conglomeration of worms, which permits them to
 carry on with an undead mockery of life.
 

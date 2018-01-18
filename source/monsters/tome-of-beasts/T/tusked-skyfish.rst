@@ -70,8 +70,8 @@ tentacles attack.
 
 **Tentacles.** *Melee Weapon Attack:* +5 to hit, reach 10 ft., one
 creature. *Hit:* 13 (3d6 + 3) bludgeoning damage plus 10 (3d6)
-lightning damage. The target is also grappled (escape DC
-13). Until this grapple ends, the target is restrained. While
+lightning damage. The target is also :ref:`srd:grappled` (escape DC
+13). Until this grapple ends, the target is :ref:`srd:restrained`. While
 grappling the target, the tusked skyfish can’t use this attack
 against other targets. When the tusked skyfish moves, a
 Medium or smaller target it is grappling moves with it.
@@ -79,7 +79,7 @@ Medium or smaller target it is grappling moves with it.
 **Stench Spray (Recharge 5–6).** The tusked skyfish sprays
 foul‑smelling liquid in a line 20 feet long and 5 feet wide.
 Each creature in that line must make a successful DC 13
-Constitution saving throw or become poisoned for 1 minute.
+Constitution saving throw or become :ref:`srd:poisoned` for 1 minute.
 If the saving throw fails by 5 or more, the creature falls
 unconscious for the same duration. A poisoned creature
 repeats the saving throw at the end of each of its turns,

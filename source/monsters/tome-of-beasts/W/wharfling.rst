@@ -49,7 +49,7 @@ Actions
 ~~~~~~~
 
 **Bite.** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target.
-*Hit:* 5 (1d4 + 3) piercing damage, and the target is grappled
+*Hit:* 5 (1d4 + 3) piercing damage, and the target is :ref:`srd:grappled`
 (escape DC 10). Until this grapple ends, the wharfling can’t use
 its bite on another target. While the target is grappled, the
 wharfling’s bite attack hits it automatically.

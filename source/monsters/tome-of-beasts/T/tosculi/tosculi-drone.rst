@@ -43,8 +43,8 @@ Small monstrosity, lawful evil
 **Challenge** 1/2 (100 XP)
 
 **Gliding Wings.** The tosculi drone can use its wings to slowly
-descend when falling (as if under the effect of the feather
-fall spell). It can move up to 5 feet horizontally for every foot
+descend when falling (as if under the effect of the :ref:`srd:feather-fall`
+spell). It can move up to 5 feet horizontally for every foot
 it falls. The tosculi drone can’t gain height with these wings
 alone. If subjected to a strong wind or lift of any kind, it can
 use the updraft to glide farther.

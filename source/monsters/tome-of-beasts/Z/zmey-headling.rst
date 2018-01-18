@@ -9,7 +9,7 @@ the head rapidly (within 2d6 rounds) sprouts a stunted body
 and two vestigial claws with which it can fight and drag itself
 across the ground. Within days it develops into a complete,
 miniature zmey, and by the time two lunar cycles elapse, the
-head regenerates into a full-grown zmey with three heads.
+head regenerates into a full-grown :ref:`tob:zmey` with three heads.
 
 **Constant Feeding Frenzy.** Such rapid growth is fueled by
 a voracious appetite. A zmey headling eats everything it can,

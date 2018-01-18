@@ -23,8 +23,8 @@ crushing coils.
 **Slow to Mate.** Titanoboas mate rarely. They live for hundreds
 of years and never stop growing, which makes the need for
 propagation less urgent. When two titanoboas nest, the result
-is a brood of a half-dozen smaller snakes (giant constrictor
-snakes). An adult titanoboa is at least 80 feet long and weighs
+is a brood of a half-dozen smaller snakes (:ref:`srd:giant-constrictor-snakes).
+An adult titanoboa is at least 80 feet long and weighs
 6,000 lb. or more.
 
 Titanoboa
@@ -85,22 +85,22 @@ constrict attack.
 *Hit:* 21 (3d8 + 8) piercing damage. If the target is a Huge or
 smaller creature, it must succeed on a DC 18 Dexterity saving
 throw or be swallowed by the titanoboa. A swallowed creature
-is blinded and restrained, has total cover against attacks
+is :ref:`srd:blinded` and :ref:`srd:restrained`, has total cover against attacks
 and other effects outside the snake, and takes 21 (6d6) acid
 damage at the start of each of the titanoboa’s turns. If the
 titanoboa takes 30 damage or more on a single turn from
 a creature inside it, the titanoboa must succeed on a DC 15
 Constitution saving throw at the end of that turn or regurgitate
-all swallowed creatures, which fall prone in a space within
+all swallowed creatures, which fall :ref:`srd:prone` in a space within
 10 feet of the titanoboa. If the titanoboa dies, a swallowed
 creature is no longer restrained by it and can escape from the
-corpse by using 20 feet of movement, exiting prone.
+corpse by using 20 feet of movement, exiting :ref:`srd:prone`.
 
 **Constrict.** *Melee Weapon Attack:* +13 to hit, reach 15 ft.,
 one target. *Hit:* 27 (3d12 + 8)
 bludgeoning damage, and the
-target is grappled (escape DC
+target is :ref:`srd:grappled` (escape DC
 18). Until this grapple ends,
-the target is restrained,
+the target is :ref:`srd:restrained`,
 and the titanoboa can’t
 constrict another target.

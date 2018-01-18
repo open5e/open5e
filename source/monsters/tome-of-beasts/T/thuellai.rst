@@ -78,7 +78,7 @@ Actions
 **Claw.** *Melee Weapon Attack:* +10 to hit, reach 10 ft., one target.
 *Hit:* 15 (2d8 + 6) slashing damage plus 26 (4d12) cold damage.
 If the target is wearing metal armor, it must make a successful
-DC 17 Constitution saving throw or gain one level of exhaustion.
+DC 17 Constitution saving throw or gain one level of :ref:`srd:exhaustion`.
 
 **Freezing Breath (Recharge 5-6).** The thuellai exhales an
 icy blast in a 40-foot cone. Each target in the area takes 39
@@ -88,7 +88,7 @@ Constitution saving throw.
 **Algid Aura.** All creatures within 10 feet of a thuellai take 7 (2d6)
 cold damage at the beginning of the thuellai’s turn. Spells or
 magical effects that protect against cold are affected as if by
-a dispel magic spell (the thuellai’s effective spellcasting bonus
+a :ref:`srd:dispel-magic` spell (the thuellai’s effective spellcasting bonus
 is +5) if a thuellai is within 20 feet of the target at the start of
 the thuellai’s turn, and nonmagical flames within 20 feet of the
 thuellai are extinguished at the start of its turn.

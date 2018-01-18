@@ -91,7 +91,7 @@ than one tendril attack per turn.
 
 **Awaken the Green (1/Day).** The vine lord magically animates
 one or two trees it can see within 60 feet of it. These trees have
-the same statistics as a treant, except they have Intelligence
+the same statistics as a :ref:`srd:treant`, except they have Intelligence
 and Charisma scores of 1, they can’t speak, and they have only
 the Slam action option. An animated tree acts as an ally of the
 vine lord. The tree remains animate for 1 day or until it dies;

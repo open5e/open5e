@@ -88,7 +88,7 @@ components:
 **1/day each:** *phantasmal force*, :ref:`srd:reverse-gravity`
 
 **Natural Invisibility.** A voidling in complete darkness is
-considered invisible to creatures that rely on normal vision or
+considered :ref:`srd:invisible` to creatures that rely on normal vision or
 darkvision.
 
 Actions

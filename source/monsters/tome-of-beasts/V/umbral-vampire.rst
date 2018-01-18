@@ -17,10 +17,10 @@ immortal. When the wizards fell and no longer held back the
 ravages of time, the citizens aged centuries in moments. Instead
 of dying, the wretches lingered on in their dark realm.
 
-**Bound to Darkness.** All umbral vampires originate in the
-City Fallen into Shadow, and under most circumstances, they’re
+**Bound to Darkness.** All umbral vampires originate from
+a single location, and under most circumstances, they’re
 encountered only in that forsaken place. Despite the terrors it
-holds, adventurers continue to seek out the city, chasing legends
+holds, adventurers continue to seek out the area, chasing legends
 of potent artifacts and boundless treasure accumulated during
 its golden age. Occasionally, an umbral vampire slips into the
 mortal world, where it hides in a place seldom or never touched
@@ -104,5 +104,5 @@ score is reduced by 1d6. The target dies if this reduces its
 Strength to 0. Otherwise, the reduction lasts until the target
 finishes a short or long rest.
 
-If a non-evil humanoid dies from this attack, a shadow rises
+If a non-evil humanoid dies from this attack, a :ref:`srd:shadow` rises
 from the corpse 1d4 hours later.

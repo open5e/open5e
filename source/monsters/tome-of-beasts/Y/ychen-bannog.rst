@@ -91,17 +91,16 @@ stomp attack.
 **Stomp.** *Melee Weapon Attack:* +13 to hit, reach 10 ft., one
 target. *Hit:* 31 (4d10 + 9) bludgeoning damage. If the target is
 a creature, it must succeed on a DC 21 Strength saving throw
-or be knocked prone.
+or be knocked :ref:`srd:prone`.
 
 **Destroying Bellow (Recharge 5-6).** The ychen bannog delivers
 a fearsome bellow that can be heard up to ten miles away.
 Structures and unattended objects in a 60-foot cone take
 55 (10d10) thunder damage. Creatures in the cone take 27
 (5d10) thunder damage and
-are deafened for 1 hour, or
+are :ref:`srd:deafened` for 1 hour, or
 take half damage and
 aren’t deafened with
 a successful DC
 18 Constitution
 saving throw.
-

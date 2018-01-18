@@ -109,11 +109,11 @@ one target. *Hit:* 6 (1d8 + 2) piercing damage.
 **Corpse Breath (Recharge 5-6).** The vættir spews forth a
 15‑foot cone of putrid gas. Those caught in the area must
 succeed on a DC 13 Constitution saving throw or become
-poisoned for 1d4 rounds.
+:ref:`srd:poisoned` for 1d4 rounds.
 
 **Maddening Gaze (1/Day).** The vættir can lock eyes with a
 creature and drive it mad. Any creature within 30 feet of a
 vættir that is the focus of its gaze must make a DC 12 Charisma
-saving throw or become confused (as the spell) for 1d4 rounds.
+saving throw or become confused (as the :ref:`srd:confusion` spell) for 1d4 rounds.
 If the save is successful, the target is immune to the effect for
 24 hours.

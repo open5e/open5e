@@ -73,14 +73,14 @@ target. *Hit:* 29 (4d10 + 7) bludgeoning damage.
 fists onto the ground, creating a shockwave in a line 60 feet
 long and 10 feet wide. Each creature in the line takes 35
 (10d6) force damage and is flung up 20 feet away from the
-titan and knocked prone; a successful DC 18 Dexterity saving
+titan and knocked :ref:`srd:prone`; a successful DC 18 Dexterity saving
 throw halves the damage and prevents the creature from
 being flung or knocked prone. A creature that’s flung against
 an unyielding object such as a wall or floor takes 3 (1d6)
 bludgeoning damage for every 10 feet it was thrown. If it
 collides with another creature, that creature must succeed on
 a DC 18 Dexterity saving throw or take the same damage (1d6
-bludgeoning per 10 feet) and be knocked prone.
+bludgeoning per 10 feet) and be knocked :ref:`srd:prone`.
 
 **Shout of the Void (Recharge 4-6).** The degenerate titan utters
 a scream that rends reality in a 30-foot cone. Any ongoing spell

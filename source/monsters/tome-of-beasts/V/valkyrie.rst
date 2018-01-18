@@ -64,7 +64,7 @@ radiant damage (included in attacks listed below).
 
 **Cloak of Doom.** Any living creature that starts its turn within
 60 feet of a valkyrie senses her unsettling presence and must
-succeed on a DC 16 Charisma saving throw or be frightened
+succeed on a DC 16 Charisma saving throw or be :ref:`srd:frightened`
 for 1d4 rounds. Those who succeed are immune to the effect
 for 24 hours. The valkyrie can suppress this aura at will.
 
@@ -114,7 +114,7 @@ or spear attack.
 **Harvest the Fallen (Costs 2 Actions).** A valkyrie can take the
 soul of a newly dead body and bind it into a weapon or shield.
 Only one soul can be bound to any object. Individuals whose
-souls are bound can’t be raised by any means short of a wish
+souls are bound can’t be raised by any means short of a :ref:`srd:wish`
 or comparable magic. A valkyrie can likewise release any soul
 that has been bound by another valkyrie, or transfer a bound
 soul from one object to another. Once bound, the soul grants

@@ -81,7 +81,7 @@ Actions
 **Bite.** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:*
 5 (1d6 + 2) piercing damage plus 9 (2d8) poison damage, and
 the target must make a successful DC 12 Constitution saving
-throw or be poisoned for 1 minute. While poisoned in this way,
+throw or be :ref:`srd:poisoned` for 1 minute. While poisoned in this way,
 the target takes 9 (2d8) fire damage at the start of its turn. A
 poisoned creature repeats the saving throw at the end of its
 turn, ending the effect on a success.

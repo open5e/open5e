@@ -85,21 +85,21 @@ target. *Hit:* 14 (2d6 + 7) slashing damage.
 
 **Stinger.** *Melee Weapon Attack:* +12 to hit, reach 5 ft., one
 creature. *Hit:* 10 (1d6 + 7) piercing damage, and the target must
-succeed on a DC 18 Constitution saving throw or be paralyzed
+succeed on a DC 18 Constitution saving throw or be :ref:`srd:paralyzed`
 for 1 minute. A paralyzed target repeats the saving throw at the
 end of each of its turns, ending the effect on itself on a success.
 
 **Glitter Dust.** The hive-queen produces a cloud of glittering
 golden particles in a 30-foot radius. Each creature that is not
 a tosculi in the area must succeed on a DC 18 Constitution
-saving throw or be blinded for 1 minute. A blinded creature
+saving throw or be :ref:`srd:blinded` for 1 minute. A blinded creature
 repeats the saving throw at the end of each of its turns, ending
 the effect on itself on a success.
 
 **Implant Egg.** The hive-queen implants an egg into an
 incapacitated creature within 5 feet of her that is neither
 undead nor a construct. Until the egg hatches or is removed,
-the creature is poisoned, paralyzed, and does not need to eat
+the creature is :ref:`srd:poisoned`, :ref:`srd:paralyzed`, and does not need to eat
 or drink. The egg hatches in 1d6 weeks, and the larval tosculi
 kills the host creature. The implanted egg can be removed with
 a successful DC 20 Wisdom (Medicine) check or by a spell or
@@ -120,7 +120,7 @@ spent legendary actions at the start of its turn.
 **Glitter Dust (Costs 2 Actions).** The hive-queen uses Glitter Dust.
 
 A Tosculi Hive-Queen’s Lair
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Hive-queens make their lairs in the most protected part of the
 hive. Huge corridors lead to this point, so all tosculi can reach
@@ -130,7 +130,7 @@ of the hive. A tosculi hive-queen encountered in her lair has a
 challenge rating of 13 (10,000 XP).
 
 Lair Actions
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 On initiative count 20 (losing initiative ties), the hive-queen
 takes a lair action to cause one of the following effects:
@@ -147,7 +147,7 @@ takes a lair action to cause one of the following effects:
   within 120 feet of her drips sticky resin. The creature must
   make a successful DC 15 Dexterity saving throw or be encased
   in rapidly-hardening resin. A creature encased this way is
-  restrained. It can free itself, or another creature within 5 feet
+  :ref:`srd:restrained`. It can free itself, or another creature within 5 feet
   can free it, by using an action to make a successful DC 15
   Strength check. If the creature is still encased the next time
   the initiative count reaches 20, the resin hardens, trapping it.

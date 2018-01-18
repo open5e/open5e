@@ -82,8 +82,8 @@ Actions
 attacks.
 
 **Bite.** *Melee Weapon Attack:* +18 to hit, reach 10 ft., one target.
-*Hit:* 26 (3d10 + 10) piercing damage and the target is grappled
-(escape DC 20). Until the grapple ends, the target is restrained
+*Hit:* 26 (3d10 + 10) piercing damage and the target is :ref:`srd:grappled`
+(escape DC 20). Until the grapple ends, the target is :ref:`srd:restrained`
 and the zaratan can’t bite another target.
 
 **Flipper.** *Melee Weapon Attack:* +18 to hit, reach 15 ft., one
@@ -94,7 +94,7 @@ must succeed on a DC 26 Strength saving throw or be pushed
 **Swallow.** The zaratan makes one bite attack against a Huge
 or smaller creature it is grappling. If the attack hits, the target
 takes 26 (3d10 + 10) piercing damage, is swallowed, and the
-grapple ends. A swallowed creature is blinded and restrained,
+grapple ends. A swallowed creature is :ref:`srd:blinded` and :ref:`srd:restrained`,
 but has total cover against attacks and effects outside the
 zaratan. A swallowed creature takes 28 (8d6) acid damage at
 the start of each of the zaratan’s turns. The zaratan can have
@@ -103,10 +103,10 @@ any number of creatures swallowed at once.
 If the zaratan takes 40 damage or more on a single turn
 from a creature inside it, the zaratan must succeed on a DC 20
 Constitution saving throw at the end of that turn or regurgitate
-all swallowed creatures, which fall prone in a space within 10
+all swallowed creatures, which fall :ref:`srd:prone` in a space within 10
 feet of the zaratan. If the zaratan dies, swallowed creatures
 are no longer restrained and can escape by using 30 feet of
-movement, exiting prone.
+movement, exiting :ref:`srd:prone`.
 
 Legendary Actions
 ~~~~~~~~~~~~~~~~~

@@ -34,14 +34,16 @@ becomes masterless; it’s free to do as it pleases, and it can never
 serve anyone else as a familiar. The statistics below represent
 these independent witchlights.
 
-Evil witchlights can be surprisingly cruel, not unlike will-o’wisps. They seek to lure lost travelers into swamps or traps by
+Evil witchlights can be surprisingly cruel, not unlike will-o’-wisps.
+They seek to lure lost travelers into swamps or traps by
 using their glow to imitate the light of a safe haven. Conversely,
 good-aligned witchlights guide travelers to places of safety
 or along safe paths, and they are prized by pilots and guides.
 Neutral witchlights exhibit a playful nature—sometimes
 mingling inside the cavities of weapons, gems, or other
 curiosities, which means those items may be mistaken for magic
-items. More than one “wizard’s staff ” is just an impressivelooking stick with a witchlight perched on top.
+items. More than one “wizard’s staff ” is just an impressive-looking
+stick with a witchlight perched on top.
 
 **Constructed Nature.** A witchlight doesn't require air, food,
 drink, or sleep.
@@ -77,7 +79,7 @@ speak
 
 **Challenge** 1/4 (50 XP)
 
-**Dispel Magic Weakness.** Casting dispel magic on a witchlight
+**Dispel Magic Weakness.** Casting :ref:`srd:dispel-magic` on a witchlight
 paralyzes it for 1d10 rounds.
 
 **Luminance.** A witchlight normally glows as brightly as a torch.
@@ -95,7 +97,6 @@ Actions
 target. *Hit:* 6 (1d4 + 4) radiant damage.
 
 **Flash (Recharge 5–6).** The witchlight emits a bright burst of
-light that blinds all sighted creatures within 30 feet for 1d4
+light that renders all sighted creatures within 30 feet :ref:`srd:blinded` for 1d4
 rounds unless they succeed on a DC 10 Constitution saving
 throw.
-

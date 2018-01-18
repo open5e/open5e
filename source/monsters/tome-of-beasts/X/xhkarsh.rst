@@ -71,7 +71,7 @@ with corrupted fate has disadvantage on
 Charisma checks and Charisma saving
 throws, and it is immune to divination spells and to effects
 that sense emotions or read thoughts. The target’s fate can be
-restored by a dispel evil and good spell or comparable magic.
+restored by a :ref:`srd:dispel-evil-and-good` spell or comparable magic.
 
 **Seize Strand.** The xhkarsh targets one creature within 5 feet
 of it whose fate has been corrupted. The target creature must
@@ -83,12 +83,12 @@ action (as if using the modify memory spell, DC 15). The target
 is unaware of the xhkarsh’s presence, but can make a DC 18
 Wisdom (Insight) check once every 24 hours to notice the
 presence of the xhkarsh. This effect lasts until the xhkarsh ends
-it or the target’s fate is restored by a dispel evil and good spell
+it or the target’s fate is restored by a :ref:`srd:dispel-evil-and-good` spell
 or comparable magic. A creature becomes immune to this
 effect for 24 hours when it succeeds on the saving throw to
 resist the effect or after the effect ends on it for any reason. A
 single xhkarsh can seize up to four strands at the same time.
 
-**Invisibility.** The xhkarsh turns invisible until it attacks or casts
+**Invisibility.** The xhkarsh turns :ref:`srd:invisible` until it attacks or casts
 a spell, or until its concentration ends. Equipment the xhkarsh
 wears or carries becomes invisible with it.

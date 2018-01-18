@@ -63,7 +63,7 @@ and slashing from nonmagical weapons that aren’t silvered
 **Death Throes.** When a strangling watcher dies, it releases all
 the fear it consumed in its lifetime in a single, soul-rending
 wave. All creatures within 60 feet of it must succeed on a DC
-19 Charisma saving throw or become frightened. A frightened
+19 Charisma saving throw or become :ref:`srd:frightened`. A frightened
 creature takes 13 (2d12) psychic damage at the start of each of
 its turns from the centuries of accumulated dread. It can repeat
 the Charisma saving throw at the end of each of its turns,
@@ -94,13 +94,13 @@ Actions
 
 **Tentacle.** *Melee Weapon Attack:* +13 to hit, reach 20 ft., one
 target. *Hit:* 20 (3d8 + 7) bludgeoning damage, and the target
-is grappled (escape DC 17). Until this grapple ends, the target
-is restrained. Each of its four tentacles can grapple one target.
+is :ref:`srd:grappled` (escape DC 17). Until this grapple ends, the target
+is :ref:`srd:restrained`. Each of its four tentacles can grapple one target.
 
 **Paralyzing Gaze (Recharge 5–6).** The watcher can target
 one creature within 60 feet with its eerie gaze. The target
 must succeed on a DC 19 Wisdom saving throw or become
-paralyzed for 1 minute. The paralyzed target can repeat the
+:ref:`srd:paralyzed` for 1 minute. The paralyzed target can repeat the
 saving throw at the end of each of its turns, ending the effect
 on a success. If a target’s saving throw is successful or the
 effect ends for it, the target is immune to the watcher’s gaze

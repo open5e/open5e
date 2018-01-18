@@ -90,12 +90,12 @@ Actions
 
 **Bite.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:*
 17 (3d8 + 4) piercing damage plus 9 (2d4 + 4) bludgeoning
-damage, and the target is grappled (escape DC 14). The target
+damage, and the target is :ref:`srd:grappled` (escape DC 14). The target
 must also make a successful DC 15 Constitution saving throw
-or be stunned until the end of its next turn.
+or be :ref:`srd:stunned` until the end of its next turn.
 
 **Slam.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target.
 *Hit:* 14 (3d6 + 4) bludgeoning damage, and the target must
-succeed on a DC 15 Strength saving throw or be knocked prone
+succeed on a DC 15 Strength saving throw or be knocked :ref:`srd:prone`
 and pushed 5 feet. The temple dog can immediately enter the
 position the target was pushed out of, if it chooses to.

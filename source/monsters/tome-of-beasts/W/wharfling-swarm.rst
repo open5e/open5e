@@ -60,7 +60,7 @@ in the swarm’s space. *Hit:* 21 (6d6) piercing damage, or 10 (3d6)
 piercing damage if the swarm has half of its hit points or fewer.
 
 **Locking Bite.** When a creature leaves a wharfling swarm’s space,
-1d3 wharflings remain grappled to them (escape DC 10). Each
+1d3 wharflings remain :ref:`srd:grappled` to them (escape DC 10). Each
 wharfling inflicts 5 (1d4 + 3) piercing damage at the start of
 the creature’s turns until it escapes from the grapples.
 

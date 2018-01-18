@@ -68,9 +68,9 @@ refreshing but carries a sleeping poison:
 any creature (other than undead and
 constructs) that drink it regain 1d4
 hit points and recover from 1 level
-of exhaustion, but must succeed on
+of :ref:`srd:exhaustion`, but must succeed on
 a DC 15 Constitution saving throw against
-poison or fall unconscious for 1 minute. If the
+poison or fall :ref:`srd:unconscious` for 1 minute. If the
 saving throw fails by 5 or more, the creature is
 unconscious for 1 hour. An unconscious creature
 wakes up if it takes damage or if another creature
@@ -79,7 +79,7 @@ uses an action to shake it awake.
 **Verdant.** The vesiculosa’s sap seeps into the soil, promoting
 lush vegetation. At any given time, 3d6 beneficial fruits (fruit,
 nuts, figs, dates) can be found within 30 feet of the vesiculosa.
-These have the same effect as berries from a goodberry spell,
+These have the same effect as berries from a :ref:`srd:goodberry` spell,
 but they retain their potency for one week after being picked
 or after the vesiculosa is killed.
 
@@ -92,10 +92,10 @@ rootlet swarm that’s been destroyed.
 
 **Entrap.** The vesiculosa targets a Large or smaller creature within
 5 feet of one of its rootlet swarms. The target takes 10 (4d4)
-piercing damage and is grappled (escape DC 15), or takes
+piercing damage and is :ref:`srd:grappled` (escape DC 15), or takes
 half damage and isn’t grappled if it makes a successful DC
 17 Dexterity saving throw. Until the grapple ends, the target
-is restrained, it has disadvantage on Strength checks and
+is :ref:`srd:restrained`, it has disadvantage on Strength checks and
 Strength saving throws, and that rootlet swarm can’t entrap
 another target.
 
@@ -106,7 +106,7 @@ up to 100 feet from the main body.
 **Engulf.** The vesiculosa engulfs all restrained or unconscious
 creatures within 5 feet of its main body (up to 2 Large,
 4 Medium or 8 Small creatures). An engulfed creature is
-restrained, has total cover against attacks and other effects
+:ref:`srd:restrained`, has total cover against attacks and other effects
 outside the vesiculosa, and takes 21 (6d6) acid damage at the
 start of each of the vesiculosa’s turns. When the vesiculosa
 moves, the engulfed creature

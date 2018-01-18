@@ -83,7 +83,8 @@ claw attacks.
 **Claw.** *Melee Weapon Attack:* +7 to hit, reach 10 ft., one target.
 *Hit:* 13 (2d8 + 4) slashing damage.
 
-**Poison Breath (Recharge 5-6).** The vapor lynx exhales a 40foot radius poison fog, which heavily obscures a spherical
+**Poison Breath (Recharge 5-6).** The vapor lynx exhales a 40-foot
+radius poison fog, which heavily obscures a spherical
 area around the lynx. Any breathing creature that ends its turn
 in the fog must make a DC 14 Constitution saving throw or
-become poisoned for 1d4 + 1 rounds.
+become :ref:`srd:poisoned` for 1d4 + 1 rounds.

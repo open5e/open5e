@@ -65,7 +65,7 @@ skill checks for 24 hours from the time they awaken.
 +4 bonus on initiative checks.
 
 **Forest Meld.** A vila can meld into any tree in her forest for as
-long as she wishes, similar to the meld into stone spell.
+long as she wishes, similar to the :ref:`srd:meld-into-stone` spell.
 
 **Innate Spellcasting.** The vila’s innate spellcasting ability is
 Charisma (spell save DC 14). She can innately cast the following
@@ -89,12 +89,12 @@ ft., one target. *Hit:* 9 (1d6 + 6) piercing damage.
 
 **Fascinate (1/Day).** When the vila sings, all those within 60 feet
 of her and who can hear her must make a successful DC 14
-Charisma saving throw or be stunned for 1d4 rounds. Those
+Charisma saving throw or be :ref:`srd:stunned` for 1d4 rounds. Those
 who succeed on the saving throw are immune to that vila’s
 singing for 24 hours.
 
-**Forest Song (1/Day):** The vila magically calls 2d6 wolves or 2
-wampus cats. The called creatures arrive in 1d4 rounds, acting
+**Forest Song (1/Day):** The vila magically calls 2d6 :ref:`srd:wolf` or 2
+:ref:`tob:wampus-cat`. The called creatures arrive in 1d4 rounds, acting
 as allies of the vila and obeying its spoken commands. The
 beasts remain for 1 hour, until the
 vila dies, or until the vila dismisses

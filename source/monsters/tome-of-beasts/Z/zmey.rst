@@ -96,7 +96,7 @@ stops functioning when all heads are severed. It takes 24 hours
 for a zmey to regrow a functional head.
 
 **Spawn Headling.** The severed head of a zmey grows into a
-zmey headling 2d6 rounds after being separated from the
+:ref:`tob:zmey-headling` 2d6 rounds after being separated from the
 body. Smearing at least a pound of salt on the severed head’s
 stump prevents this transformation.
 
@@ -139,4 +139,4 @@ The zmey regains spent legendary actions at the start of its turn.
 enter enemy-occupied spaces but can’t end its move there.
 Creatures in spaces the zmey enters must make successful DC
 14 Dexterity saving throws or take 10 (1d8 + 6) bludgeoning
-damage and fall prone.
+damage and fall :ref:`srd:prone`.
