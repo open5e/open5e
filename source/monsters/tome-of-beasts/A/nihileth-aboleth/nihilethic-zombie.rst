@@ -4,7 +4,7 @@
 Nihilethic Zombie
 -----------------
 
-Created by the diseased will of a :ref:`tob:nihileth`, these zombies do
+Created by the diseased will of a :ref:`tob:nihilith`, these zombies do
 their creator’s bidding without fear or hesitation. While their
 appearance differs from typical zombies, they too move with the
 same jerky motions and uneven gait as their undead brethren.
