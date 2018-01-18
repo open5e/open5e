@@ -75,7 +75,7 @@ against a creature if at least one of the hound’s allies is within
 
 **Slick Spittle.** By spending 2 rounds dribbling spittle on an area,
 an eel hound can cover a 5-foot square with its slippery saliva.
-This area is treated as if under the effects of a grease spell, but
+This area is treated as if under the effects of a :ref:`srd:grease` spell, but
 it lasts for 1 hour.
 
 **Slithering Bite.** A creature an eel hound attacks can’t make
@@ -86,5 +86,5 @@ Actions
 ~~~~~~~
 
 **Bite.** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target.
-*Hit:* 8 (1d8 + 4) piercing damage, and the target is grappled
+*Hit:* 8 (1d8 + 4) piercing damage, and the target is :ref:`srd:grappled`
 (escape DC 14).

@@ -54,7 +54,7 @@ makes one bite attack and two claw attacks.
 
 **Frightful Presence.** Each creature of the dragon’s choice that
 is within 120 feet of the dragon and aware of it must succeed
-on a DC 21 Wisdom saving throw or become frightened for
+on a DC 21 Wisdom saving throw or become :ref:`srd:frightened` for
 1 minute. A frightened creature repeats the saving throw at
 the end of each of its turns, ending the effect on itself on a
 success. If a creature’s saving throw is successful or the effect
@@ -107,5 +107,5 @@ the dragon must succeed
 on a DC 21 Dexterity saving
 throw or take 13 (2d6 + 6)
 bludgeoning damage and be
-knocked prone. The dragon
+knocked :ref:`srd:prone`. The dragon
 can then fly up to half its flying speed.

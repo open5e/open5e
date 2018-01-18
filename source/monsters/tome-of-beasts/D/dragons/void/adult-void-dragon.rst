@@ -56,8 +56,16 @@ makes three attacks: one with its bite and two with its claws.
 **Tail.** *Melee Weapon Attack:* +12 to hit, reach 15 ft., one target.
 *Hit:* 16 (2d8 + 7) bludgeoning damage.
 
-**Aura of Madness.** As ancient void dragon, with DC 18 Wisdom
-saving throw.
+**Aura of Madness.** Each creature of the dragon’s choice that is
+within 120 feet of the dragon and aware of it must succeed
+on a DC 18 Wisdom saving throw or become :ref:`srd:frightened` for 1
+minute. A creature repeats the saving throw at the end of each
+of its turns, ending the effect on itself on a success. If a creature
+fails the saving throw by 5 or more it is driven insane. An insane
+creature is :ref:`srd:frightened` permanently, and behaves as if affected
+by :ref:`srd:confusion` while it is frightened in this way. If a creature’s
+saving throw is successful or the effect ends for it, the creature is
+immune to the dragon’s Aura of Madness for the next 24 hours.
 
 **Breath Weapons (Recharge 5-6).** The dragon uses one of the
 following breath weapons.
@@ -68,7 +76,7 @@ following breath weapons.
   fallen. When a creature starts its turn within the area or
   enters it for the first time in a turn, including when the
   dragon creates the field, must make a DC 20 Dexterity saving
-  throw. On a failure the creature is restrained. On a success
+  throw. On a failure the creature is :ref:`srd:restrained`. On a success
   the creature’s speed is halved as long as it remains in the
   field. A restrained creature repeats the saving throw at the
   end of its turn. The field persists until the dragon’s breath

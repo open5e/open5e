@@ -98,7 +98,7 @@ damage.
 **Beguiling Whispers (recharge 5-6).** The shadow fey speaks
 sweet words to a creature she can see within 60 feet, that can
 hear the enchantress. The creature must succeed on a DC 15
-Charisma saving throw or be charmed for 1
+Charisma saving throw or be :ref:`srd:charmed` for 1
 minute. While charmed in this way, the
 creature has disadvantage on Wisdom
 and Charisma saving throws made to resist

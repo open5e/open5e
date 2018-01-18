@@ -94,4 +94,4 @@ this violent burst of gears and pulleys deals 7 (2d6) piercing
 damage to all foes within 5 feet who fail a DC 14 Dexterity
 saving throw. Each use of this ability imposes a cumulative
 reduction in movement of 5 feet upon the fellforged. If its
-speed is reduced to 0 feet, the fellforged becomes paralyzed.
+speed is reduced to 0 feet, the fellforged becomes :ref:`srd:paralyzed`.

@@ -87,8 +87,8 @@ were water, with a fly speed of 40 feet.
 cloud. A living creature that starts its turn within 5 feet of a
 nihileth must make a successful DC 14 Constitution saving
 throw or be slowed until the start of its next turn. In addition,
-any creature that has been diseased by a nihileth or a nihilethic
-zombie takes 7 (2d6) cold damage every time it starts its turn
+any creature that has been diseased by a nihileth or a :ref:`tob:nihilethic-zombie`
+takes 7 (2d6) cold damage every time it starts its turn
 within the aura.
 
 **Infecting Telepathy.** If a creature communicates telepathically
@@ -108,14 +108,14 @@ hit, reach 10 ft., one target. *Hit:* 12 (2d6 + 5) bludgeoning
 damage. If the target creature is hit, it must make a successful
 DC 14 Constitution saving throw or become diseased. The
 disease has no effect for 1 minute; during that time, it can be
-removed by lesser restoration or comparable magic. After 1
+removed by :ref:`srd:lesser-restoration` or comparable magic. After 1
 minute, the diseased creature’s skin becomes translucent and
 slimy. The creature cannot regain hit points unless it is entirely
-underwater, and the disease can only be removed by heal or
+underwater, and the disease can only be removed by :ref:`srd:heal` or
 comparable magic. Unless the creature is fully submerged or
 frequently doused with water, it takes 6 (1d12) acid damage
 every 10 minutes. If a creature dies while diseased, it rises in
-1d6 rounds as a nihilethic zombie. This zombie is permanently
+1d6 rounds as a :ref:`tob:nihilethic-zombie`. This zombie is permanently
 dominated by the nihileth.
 
 **Withering Touch (Ethereal Form Only):** *Melee Weapon Attack:*
@@ -130,7 +130,7 @@ reach 10 ft. one target. *Hit:* 15 (3d6 + 5) bludgeoning damage.
 
 **Enslave (3/day):** The nihileth targets one creature it can see
 within 30 ft. of it. The target must succeed on a DC 14 Wisdom
-saving throw or be magically charmed by the nihileth until the
+saving throw or be magically :ref:`srd:charmed` by the nihileth until the
 nihileth dies or until it is on a different plane of existence from
 the target. The charmed target is under the nihileth’s control
 and can't take reactions, and the nihileth and the target can
@@ -179,7 +179,7 @@ aboleth, or the void absorbance action listed below. The nihileth
 cannot use the same effect two rounds in a row.
 
 * Void absorbance. A nihileth can pull the life force from those it
-  has converted to nihilethic zombies to replenish its own life.
+  has converted to a :ref:`tob:nihilethic-zombie` to replenish its own life.
   This takes 18 (6d6) hit points from zombies within 30 feet of
   the nihileth, spread evenly between the zombies, and healing
   the nihileth. If a zombie reaches 0 hit points from this action,

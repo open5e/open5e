@@ -23,7 +23,7 @@ abandoning their eggs shortly before hatching.
 **Fade Into Shadows.** An elder shadow drake naturally fades
 from view in areas of dim light or darkness. Darkvision doesn’t
 overcome this, because the shadow drake doesn’t simply blend
-into shadows; it magically becomes invisible in them.
+into shadows; it magically becomes :ref:`srd:invisible` in them.
 
 Elder Shadow Drake
 ~~~~~~~~~~~~~~~~~~
@@ -61,12 +61,12 @@ Perception 15
 
 **Shadow Blend.** In areas of dim light or
 darkness, an elder shadow drake
-is treated as invisible. Artificial
+is treated as :ref:`srd:invisible`. Artificial
 illumination, such as a lantern or
 a light or continual flame
 spell, does not negate this
 ability; nothing less than
-true sunlight or a daylight
+true sunlight or a :ref:`srd:daylight`
 spell does. The drake
 cannot use its Speed
 Surge or its Stygian
@@ -77,7 +77,7 @@ at will, so long as the drake is
 in dim light or darkness.
 
 **Shadow Jump (3/Day).** An elder shadow drake can travel
-between shadows as if by means of a dimension door spell. This
+between shadows as if by means of a :ref:`srd:dimension-door` spell. This
 magical transport must begin and end in an area of dim light or
 darkness, and the distance must be no more than 60 feet.
 

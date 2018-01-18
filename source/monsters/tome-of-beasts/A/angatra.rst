@@ -95,5 +95,5 @@ Actions
 
 **Claw.** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one creature.
 *Hit:* 10 (2d4 + 5) piercing damage, and the creature must
-succeed on a DC 15 Constitution saving throw or be paralyzed
+succeed on a DC 15 Constitution saving throw or be :ref:`srd:paralyzed`
 by pain until the end of its next turn.

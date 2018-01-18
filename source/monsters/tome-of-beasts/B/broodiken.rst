@@ -105,6 +105,6 @@ Actions
 7 (1d10 + 2) piercing damage.
 
 **Attach.** When a broodiken succeeds on a bite attack, its teeth
-latch on, grappling the target (escape DC 9). On each of
+latch on, and the target is :ref:`srd:grappled` (escape DC 9). On each of
 its turns, its bite attack hits automatically as long as it can
 maintain its grapple.

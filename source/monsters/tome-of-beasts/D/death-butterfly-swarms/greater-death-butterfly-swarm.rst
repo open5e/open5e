@@ -4,30 +4,6 @@
 Greater Death Butterfly Swarm
 -----------------------------
 
-*These enormous clouds of orange and green butterflies add a reek of
-putrefaction to the air, stirred by the flapping of their delicate wings.*
-
-**Demon-Haunted.** A death butterfly swarm results when a rare
-breed of carrion-eating butterflies, drawn to the stench of great
-decay, feeds on the corpse of a fiend, demon, or similar creature.
-
-**Dizzying and Poisonous.** The colorful and chaotic flapping of
-the insects’ wings blinds and staggers those in its path, allowing
-the swarm to necrotize more flesh from those it overruns.
-Attracted to rotting material, the swarm spreads a fast-acting,
-poison on its victims, creating carrion it can feed on immediately.
-
-**Devour the Undead.** Undead creatures are not immune to a
-death butterfly swarm’s poison, and a swarm can rot an undead
-creature’s animating energies as easily as those of the living.
-Given the choice between an undead and living creature, a death
-butterfly swarm always attacks the undead. Such swarms find
-ghouls and vampires particularly appealing. Some good-aligned
-forces regard summoning these swarms as a necessary evil.
-
-Greater Death Butterfly Swarm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 Huge swarm of tiny beasts, chaotic evil
 
 **Armor Class** 15 (natural armor)
@@ -63,7 +39,7 @@ points or gain temporary hit point.
 
 **Weight of Wings.** A creature in a space occupied by the death
 butterfly swarm has its speed reduced by half, and must
-succeed on a DC 16 Dexterity saving throw or become blinded.
+succeed on a DC 16 Dexterity saving throw or become :ref:`srd:blinded`.
 Both effects end when the creature doesn’t share a space
 with the swarm at the end of the creature’s turn. If a creature
 succeeds on the saving throw, it is immune to the swarm’s
@@ -86,7 +62,7 @@ The target also
 takes 17 (5d6)
 poison damage
 and becomes
-poisoned for 1d4
+:ref:`srd:poisoned` for 1d4
 rounds; a successful DC
 15 Constitution saving
 throw reduces poison

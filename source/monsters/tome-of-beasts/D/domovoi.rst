@@ -12,10 +12,6 @@ as large, stony goblins, with oversized heads and leering grins,
 and with mossy beards as well as massive shoulders and forearms.
 Their large limbs give them reach and powerful slam attacks.
 
-**Abandoned Servants.** The domovoi were the portal guards
-and house lackeys of the elvish nobility, and some were left
-behind—some say on purpose.
-
 **Debt Collectors.** These smirking stragglers seek work
 as tireless sentinels and fey button men, collecting debts for
 criminal syndicates. They can use alter self and invisibility at will,

@@ -112,9 +112,9 @@ Actions
 ~~~~~~~
 
 **Multiattack.** The eater of dust makes two mawblade attacks, or
-makes one mawblade attack and casts inflict wounds.
+makes one mawblade attack and casts :ref:`srd:inflict-wounds`.
 
 **Mawblade.** *Melee Weapon Attack:* +9 to hit, one target. *Hit:*
 19 (4d6 + 5) piercing damage, and the target must make a
 successful DC 17 Constitution saving throw or gain one level
-of exhaustion.
+of :ref:`srd:exhaustion`.

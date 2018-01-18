@@ -95,8 +95,8 @@ This disease manifests after 24 hours, beginning as a mild chill,
 but increasingly severe after a day, accompanied by a fever.
 Hallucinations are common, and the fright they induce lends
 the disease its name. At onset, the infected creature gains two
-levels of exhaustion that cannot be removed until the disease
-is cured by lesser restoration, comparable magic, or rest. The
+levels of :ref:`srd:exhaustion` that cannot be removed until the disease
+is cured by :ref:`srd:lesser-restoration`, comparable magic, or rest. The
 infected creature makes another DC 11 Constitution saving
 throw at the end of each long rest; a successful save removes
 one level of exhaustion. If the saving throw fails, the disease

@@ -66,7 +66,7 @@ requiring no material components:
 of a fate eater requires a DC 15
 Constitution saving throw. If
 successful, the eater gains a
-divination spell. If failed, the
+:ref:`srd:divination` spell. If failed, the
 victim vomits blood and fails
 the next saving throw made
 in combat.
@@ -84,7 +84,7 @@ must roll 1d6 on the chart below for each critical hit that isn’t
 negated by a successful DC 15 Charisma saving throw:
 
 = ===================== ========================================================================================================================================================
-1 Seeing the Alternates Suffers the effects of the confusion spell for 1d4 rounds
+1 Seeing the Alternates Suffers the effects of the :ref:`srd:confusion` spell for 1d4 rounds
 2 Untied from the Loom  Character’s speed is randomized for four rounds. Roll 3d20 at the start of each of the character’s turns to determine his or her speed in feet that turn
 3 Shifting Memories     Permanently loses proficiency in a random proficient skill and gains proficiency in random unproficient skill
 4 Not So Fast           Loses the use of one class ability, chosen at random
@@ -98,4 +98,4 @@ repeated after every long rest, but the DC increases by 1
 after every long rest, as the character becomes more
 entrenched in this new destiny. Otherwise, these
 new fates can be undone by nothing short of a
-wish spell or comparable magic.
+:ref:`srd:wish` spell or comparable magic.

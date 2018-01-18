@@ -59,10 +59,10 @@ and two with its claws.
 **Poison Breath (Recharge 5-6).** The dragon exhales a cone of
 black poison gas in a 30-foot cone. Each creature in that area
 must make a DC 16 Constitution saving throw, taking 45 (13d6)
-poison damage on a failed save and becoming poisoned if
+poison damage on a failed save and becoming :ref:`srd:poisoned` if
 it is a creature. The poisoned condition lasts until the target
-takes a long or short rest or removes the condition with lesser
-restoration or comparable magic. If the save is successful, the
+takes a long or short rest or removes the condition with :ref:`srd:lesser-restoration`
+or comparable magic. If the save is successful, the
 target takes half damage and is not poisoned.
 
 Reactions

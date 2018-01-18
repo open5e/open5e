@@ -87,28 +87,28 @@ Actions
 claw attack.
 
 **Bite.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target.
-*Hit:* 11 (2d8 + 2) piercing damage, and the target is grappled
+*Hit:* 11 (2d8 + 2) piercing damage, and the target is :ref:`srd:grappled`
 (escape DC 12).
 
 **Claw.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target.
 *Hit:* 24 (4d10 + 2) slashing damage.
 
 **Dream Eater’s Caress.** A creature that ends its turn grappled
-by a dream eater is restrained until the end of its next turn, it
+by a dream eater is :ref:`srd:restrained` until the end of its next turn, it
 takes 5 (1d4 + 3) psychic damage, and the dream eater gains
 the same number of temporary hit points.
 
 **Lotus Scent (Recharge 6).** The dream eater secretes an oily
 chemical that most creatures find intoxicating. All living
 creatures within 30 feet must succeed on a DC 14 Constitution
-saving throw against poison or be poisoned for 2d4 rounds.
-While poisoned this way, the creature is stunned. Creatures
+saving throw against poison or be :ref:`srd:poisoned` for 2d4 rounds.
+While poisoned this way, the creature is :ref:`srd:stunned`. Creatures
 that successfully save are immune to that dream eater’s lotus
 scent for 24 hours.
 
 **Waking Dreams (1/Day).** Every creature within 20 feet of the
 dream eater must make a DC 16 Charisma saving throw. Those
-that fail enter waking dreams and are confused (as the spell)
+that fail enter waking dreams and are confused (as :ref:`srd:confusion`)
 for 6 rounds. On turns when the creature can act normally
 (rolls 9 or 10 for the confusion effect), it can repeat the saving
 throw at the end of its turn, and the effect ends early on a

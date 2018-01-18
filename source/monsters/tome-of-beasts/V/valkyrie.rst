@@ -78,7 +78,7 @@ can innately cast the following spells, requiring no material
 components:
 
 **At will:** :ref:`srd:bane`, :ref:`srd:bless`, :ref:`srd:invisibility`, :ref:`srd:sacred-flame`, :ref:`srd:spare-the-dying`,
-ref:`srd:speak-with-animals`, :ref:`srd:thaumaturgy`
+:ref:`srd:speak-with-animals`, :ref:`srd:thaumaturgy`
 
 **5/day each:** :ref:`srd:gentle-repose`, :ref:`srd:healing-word`, :ref:`srd:warding-bond`
 

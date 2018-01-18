@@ -115,7 +115,7 @@ damage. The target
 must succeed on a DC
 18 Constitution saving
 throw or become
-poisoned. While poisoned in
+:ref:`srd:poisoned`. While poisoned in
 this way, the target can’t regain
 hit points and it takes 14 (4d6)
 poison damage at the start of

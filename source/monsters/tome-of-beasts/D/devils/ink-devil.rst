@@ -111,9 +111,7 @@ affects the nearest devil if it is a beneficial spell.
 a single target within 15 feet of the devil. The target must
 succeed on a Dexterity saving throw (DC 13), or the affected
 creature gains a devil’s mark—a black, red, or purple tattoo in
-the shape of an archduke’s personal seal (most often Mammon
-or Totivillus but sometimes Arbeyach, Asmodeus, Beelzebub,
-Dispater, or others). All devils have advantage on spell attacks
+the shape of an archduke’s personal seal. All devils have advantage on spell attacks
 made against the devil-marked creature, and the creature
 has disadvantage on saving throws made against spells and
 abilities used by devils. The mark can be removed only by a

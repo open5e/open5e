@@ -62,7 +62,7 @@ can’t use the same effect two rounds in a row:
   appear within the lair where the dragon wishes. Creatures
   occupying the space where a vortex appears or who enter
   the vortex for the first time on a turn must make a DC 15
-  Dexterity save or be restrained. As an action, a creature can
+  Dexterity save or be :ref:`srd:restrained`. As an action, a creature can
   free itself or another creature from a vortex by succeeding on a
   DC 15 Strength check. The vortexes last until the dragon uses
   this lair action again or until the dragon dies.
@@ -79,7 +79,7 @@ can’t use the same effect two rounds in a row:
   uses this lair action again or until the dragon dies.
 * The dragon bends time around its enemies. Four creatures the
   dragon can see within 120 feet of it must succeed on a DC 15
-  Wisdom save or be affected by a slow spell. This effect last until
+  Wisdom save or be affected by a :ref:`srd:slow` spell. This effect last until
   initiative count 20 on the following round.
 
 Regional Effects

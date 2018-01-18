@@ -83,7 +83,7 @@ components to cast its spells. It has the
 following cleric spells prepared:
 
 **Cantrips (at will):** :ref:`srd:guidance`, :ref:`srd:light`, :ref:`srd:sacred-flame`, :ref:`srd:spare-the-dying`,
-ref:`srd:thaumaturgy`
+:ref:`srd:thaumaturgy`
 
 **1st level (4 slots):** :ref:`srd:bane`, :ref:`srd:command`, :ref:`srd:guiding-bolt`, :ref:`srd:sanctuary`
 

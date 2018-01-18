@@ -78,7 +78,7 @@ can’t use the same effect two rounds in a row.
   can see. The sphere spreads around corners. The area inside
   the sphere is lightly obscured, and each creature in the
   sphere at the start of its turn must make a successful DC
-  15 Constitution saving throw or be blinded for 1 minute. A
+  15 Constitution saving throw or be :ref:`srd:blinded` for 1 minute. A
   blinded creature repeats the saving throw at the start of each
   of its turns, ending the effect on itself with a success.
 * Fragments of ice and stone are torn from the lair’s wall by a
@@ -90,7 +90,7 @@ can’t use the same effect two rounds in a row.
   If near the floor, it affects all creatures standing in the radius;
   if near the ceiling, it affects all creatures flying in the radius.
   Affected creatures must make a successful DC 15 Strength
-  saving throw or be knocked prone and stunned until the end
+  saving throw or be knocked :ref:`srd:prone` and stunned until the end
   of their next turn.
 
 .. toctree::

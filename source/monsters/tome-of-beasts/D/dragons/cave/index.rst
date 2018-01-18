@@ -84,7 +84,7 @@ the same effect two rounds in a row:
 
 * The ceiling collapses above one creature that the dragon
   can see within 120 feet of it. The creature takes 10 (3d6)
-  bludgeoning damage and is knocked prone and restrained
+  bludgeoning damage and is knocked :ref:`srd:prone` and :ref:`srd:restrained`
   (by fallen debris); damage is halved and the creature is not
   restrained if it makes a successful DC 15 Dexterity saving
   throw. The creature is freed when it or an adjacent ally uses an

@@ -92,7 +92,7 @@ same target in a single turn, the target is engulfed.
 
 **Engulf.** When a frostveil wraps itself around a Medium or
 smaller creature, the target takes 14 (2d8 + 5) bludgeoning
-damage plus 13 (3d8) acid damage and is grappled (escape
+damage plus 13 (3d8) acid damage and is :ref:`srd:grappled` (escape
 DC 15). The target takes another 9 (2d8) bludgeoning damage
 plus 13 (3d8) acid damage at the end of each of its turns when
 it’s still grappled by the frostveil. A frostveil can’t attack while
@@ -105,4 +105,4 @@ which affect only the frostveil.
 of psychotropic spores in a 10-foot cloud around themselves.
 Creatures within the cloud of spores must succeed on a
 DC 13 Constitution saving throw against poison or suffer
-hallucinations, as per a confusion spell, for 1d3 rounds.
+hallucinations, as per a :ref:`srd:confusion` spell, for 1d3 rounds.

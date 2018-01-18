@@ -69,7 +69,7 @@ speak
 **Blinding Salt Spray.** Any time the golem is hit in combat,
 thousands of tiny salt crystals erupt from its body. All creatures
 within 5 feet of the golem must succeed on a DC 17 Dexterity
-saving throw or become blinded for 1d3 rounds.
+saving throw or become :ref:`srd:blinded` for 1d3 rounds.
 
 **Immutable Form.** The golem is immune to any spell or effect
 that would alter its form.

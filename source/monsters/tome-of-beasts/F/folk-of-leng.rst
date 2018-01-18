@@ -92,7 +92,7 @@ Actions
 **Etheric Harpoon.** *Ranged Weapon Attack:* +8 to hit, range 30
 ft., one target. *Hit:* 10 (1d8 + 6) necrotic damage, and the
 target must make a successful DC 13 Wisdom saving throw
-or be grappled (escape DC 13). In addition, armor has no
+or be :ref:`srd:grappled` (escape DC 13). In addition, armor has no
 effect against the attack roll of an etheric harpoon; only the
 Dexterity modifier factored into the target’s AC is considered.
 
@@ -103,5 +103,5 @@ psychic damage.
 **Hooked Spider Net (Recharge 5-6).** *Ranged Weapon Attack.*
 +4 to hit, range 20/50 ft., one target. *Hit:* 3 (1d6) piercing
 damage plus 19 (3d12) poison damage, and the target is
-restrained. A successful DC 14 Constitution saving throw
+:ref:`srd:restrained`. A successful DC 14 Constitution saving throw
 halves the poison damage.

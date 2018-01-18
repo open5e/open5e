@@ -68,7 +68,7 @@ material components:
 **At will:** :ref:`srd:alter-self`, :ref:`srd:detect-thoughts`, :ref:`srd:hold-person`, :ref:`srd:plane-shift`, :ref:`srd:spare-the-dying`
 
 **3/day:** :ref:`srd:cure-wounds` 21 (4d8 + 3), *ray of sickness* 18 (4d8),
-ref:`srd:protection-from-poison`, :ref:`srd:heal`
+:ref:`srd:protection-from-poison`, :ref:`srd:heal`
 
 **1/day:** :ref:`srd:finger-of-death`
 
@@ -102,11 +102,11 @@ the following effects:
   the end of each of its turns to shrug off the flux before the
   duration ends.
 
-  **Melancholic Flux:** The target is incapacitated for 1d4 rounds
-  and slowed (as the spell) for 3d6 rounds. The target can
+  **Melancholic Flux:** The target is :ref:`srd:incapacitated` for 1d4 rounds
+  and slowed (as :ref:`srd:slow`) for 3d6 rounds. The target can
   repeat the saving throw at the end of each of its turns to
   shrug off the flux before the duration ends.
 
   **Phlegmatic Flux:** A successful DC 18 Constitution saving throw
   negates this effect. A failed saving throw means the target
-  gains one level of exhaustion which lasts for 3d6 rounds.
+  gains one level of :ref:`srd:exhaustion` which lasts for 3d6 rounds.

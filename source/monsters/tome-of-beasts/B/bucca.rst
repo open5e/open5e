@@ -28,7 +28,7 @@ cantons, serving as spies and
 scouts for evil humanoids.
 
 **Bat Friends.** Buccas often
-train bats as mounts, messengers, and guard animals. On
+train :ref:`srd:bat` as mounts, messengers, and guard animals. On
 occasion they sell them to goblins and kobolds.
 
 Bucca

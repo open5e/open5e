@@ -56,14 +56,14 @@ Perception 14
 lindwurm’s bite gains one level of exhaustion an hour after
 being infected. The creature must make a DC 14 Constitution
 saving throw after each long rest. On a failure, the creature
-gains one level of exhaustion and recovers no hit dice from
+gains one level of :ref:`srd:exhaustion` and recovers no hit dice from
 the long rest. On a success, the creature recovers from one
 level of exhaustion and regains hit dice normally. If the
 infected creature reduces itself to zero exhaustion by making
 successful saving throws, the disease is cured.
 
 **Skittering Skater.** Lindwurms suffer no penalties from difficult
-terrain on ice and are immune to the effects of the grease spell.
+terrain on ice and are immune to the effects of the :ref:`srd:grease` spell.
 
 **Snake Belly.** When lying with its sensitive stomach on the ice,
 a lindwurm can sense approaching creatures by the vibrations
@@ -85,5 +85,5 @@ lindwurm fever.
 
 **Constrict.** *Melee Weapon Attack:* +7 to hit, reach 10 ft., one
 target. *Hit:* 13 (2d8 + 4) bludgeoning damage, and the target is
-grappled (escape DC 14). Until this grapple ends, the target is
-restrained, and the lindwurm can constrict only this target.
+:ref:`srd:grappled` (escape DC 14). Until this grapple ends, the target is
+:ref:`srd:restrained`, and the lindwurm can constrict only this target.

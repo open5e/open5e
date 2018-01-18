@@ -85,14 +85,14 @@ one with its bite, and two with its claws.
 **Breath of Gales (Recharge 5-6).** The dragon exhales a blast
 of wind in a 60-foot cone. Each creature in that cone takes 27
 (5d10) bludgeoning damage and is pushed 25 feet away from
-the dragon and knocked prone; a successful DC 20 Strength
+the dragon and knocked :ref:`srd:prone`; a successful DC 20 Strength
 saving throw halves the damage and prevents being pushed
 (but not being knocked prone). All flames in the cone are
 extinguished.
 
 **Frightful Presence.** Each creature of the dragon’s choice that
 is within 120 feet of the dragon and aware of it must succeed
-on a DC 18 Wisdom saving throw or become frightened for
+on a DC 18 Wisdom saving throw or become :ref:`srd:frightened` for
 1 minute. A creature repeats the saving throw at the end of
 its turn, ending the effect on itself on a success. If a creature’s
 saving throw is successful or the effect ends for it, the creature
@@ -114,5 +114,5 @@ dragon regains spent legendary actions at the start of its turn.
 **Wing Attack (Costs 2 Actions).** The dragon beats its wings.
 Each creature within 10 feet of the dragon must succeed on a
 DC 21 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning
-damage and be knocked prone. The dragon can then fly up to
+damage and be knocked :ref:`srd:prone`. The dragon can then fly up to
 half its flying speed.

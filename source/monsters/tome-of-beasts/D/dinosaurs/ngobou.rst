@@ -52,7 +52,7 @@ Large beast, unaligned
 **Trampling Charge.** If the ngobou moves at least 20 feet
 straight toward a creature and then hits it with a gore attack
 on the same turn, that target must succeed on a DC 13
-Strength saving throw or be knocked prone. If the target is
+Strength saving throw or be knocked :ref:`srd:prone`. If the target is
 prone, the ngobou can make one stomp attack against it as a
 bonus action.
 

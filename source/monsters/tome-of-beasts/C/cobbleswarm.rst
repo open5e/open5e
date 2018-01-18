@@ -61,7 +61,7 @@ prone creature whose space it occupies 5 feet.
 **Shifting Floor.** Whenever the swarm moves into a creature’s
 space or starts its turn in another creature’s space, that other
 creature must make a successful DC 13 Dexterity saving throw
-or fall prone. A prone creature must make a successful DC 13
+or fall :ref:`srd:prone`. A prone creature must make a successful DC 13
 Dexterity (Acrobatics) check to stand up in a space occupied
 by the swarm.
 

@@ -87,7 +87,7 @@ Actions
 bite attack.
 
 **Bite.** *Melee Weapon Attack:* +14 to hit, reach 15 ft., one target.
-*Hit:* 42 (5d12+ 10) piercing damage and the target is grappled
+*Hit:* 42 (5d12+ 10) piercing damage and the target is :ref:`srd:grappled`
 (escape DC 20). If the target was already grappled from a
 previous bite, it’s also swallowed whole (see below).
 
@@ -108,14 +108,14 @@ immune to this attack.
 
 **Swallow Whole.** When the isonade’s bite attack hits a target
 grappled from a previous bite attack, the target is also
-swallowed. The grapple ends, but the target is blinded and
-restrained, it has total cover against attacks and other effects
+swallowed. The grapple ends, but the target is :ref:`srd:blinded` and
+:ref:`srd:restrained`, it has total cover against attacks and other effects
 outside the isonade, and it takes 36 (8d8) acid damage at
 the start of each of the isonade’s turns. An isonade can have
 two Large, four Medium, or six Small creatures swallowed
 at a time. If the isonade takes 40 damage or more from a
 swallowed creature in a single turn, it must succeed on a DC
 20 Constitution saving throw or regurgitate all swallowed
-creatures, which fall prone within 10 feet of the isonade. If the
+creatures, which fall :ref:`srd:prone` within 10 feet of the isonade. If the
 isonade dies, a swallowed creature is no longer restrained by it
-and can escape by using 20 feet of movement, exiting prone.
+and can escape by using 20 feet of movement, exiting :ref:`srd:prone`.

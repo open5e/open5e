@@ -79,7 +79,7 @@ can enter and move through the
 elemental locus’s space, but they
 must make a successful DC 20 Strength
 (Athletics) check after each 10 feet of movement. Failure
-indicates they fall prone and can move no farther that turn.
+indicates they fall :ref:`srd:prone` and can move no farther that turn.
 
 **Spawn Elementals.** As a bonus action, the elemental locus
 loses 82 hit points and spawns an air, earth, fire, or water
@@ -100,4 +100,4 @@ Actions
 **Slam.** *Melee Weapon Attack:* +15 to hit, reach 15 ft., one target.
 *Hit:* 36 (6d8 + 9) bludgeoning damage. If the target is a
 creature, it must succeed on a DC 23 Strength saving throw or
-be knocked prone.
+be knocked :ref:`srd:prone`.

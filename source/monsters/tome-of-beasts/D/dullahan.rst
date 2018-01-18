@@ -59,11 +59,11 @@ damage from nonmagical weapons
 dullahan’s severed head starts its turn within 30 feet of the
 dullahan, the dullahan can force it to make a DC 15 Wisdom
 saving throw if the dullahan isn’t incapacitated and can see the
-creature. On a failed save, the creature is frightened until the
+creature. On a failed save, the creature is :ref:`srd:frightened` until the
 start of its next turn. While frightened in this way the creature
 must move away from the dullahan, and can only use its action
 to Dash. If the creature is affected by the dullahan’s Deathly
-Doom trait, it is restrained while frightened instead.
+Doom trait, it is :ref:`srd:restrained` while frightened instead.
 
 Unless surprised, a creature can avert its eyes to avoid the
 saving throw at the start of its turn. If the creature does so, it
@@ -98,7 +98,7 @@ Actions
 target. *Hit:* 15 (2d10 + 4) slashing damage plus 10 (3d10)
 necrotic damage. If the target is a creature it must make a DC
 15 Constitution saving throw or be wracked with pain and fall
-prone.
+:ref:`srd:prone`.
 
 **Seal the Doom.** The dullahan points at a creature marked by
 Deathly Doom within 40 feet than it can see. The creature

@@ -8,13 +8,13 @@ The fiendish hulk bears features taken from a nightmare scorpion,
 with three stinging tails and four limbs, and wields a massive
 scythe.
 
-**Shaped by Arbeyach.** These fiendish scorpions sprang from
-the dark imagination of the arch-devil Arbeyach himself, who
+**Shaped by Arch-Devil.** These fiendish scorpions sprang from
+the dark imagination an arch-devil who
 twisted them into being from the tormented forms of lemures
-and demoted devils. The Lord of the Swarm shaped the koralk to
+and demoted devils. The arch-devil shaped the koralk to
 not only be annihilators in battle, but also to gather souls from
 the fallen, bypassing the typical methods of collecting souls and
-speeding up the influx to feed his war machine.
+speeding up the influx to feed his ends.
 
 **Transforming Poison.** Poison from any one of the koralk’s
 three stingers liquefies the target’s insides in an agonizing
@@ -32,10 +32,7 @@ demons, converting them to the lowest form of devil.
 **Infernal Mounts.** A koralk is large and strong enough for
 Medium-size devils to ride as a mount. They don’t like being
 used this way, but being devils, they do what they’re told by their
-betters or suffer the consequences. Arbeyach commands an
-especially large specimen of koralk, called the Grand Annihilator
-by his devilish troops. The Prince of Swarms has been seen riding
-it into battle.
+betters or suffer the consequences.
 
 Koralk (Harvester Devil)
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -96,7 +93,7 @@ target. *Hit:* 19 (3d10 + 3) piercing damage.
 **Stinger.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one
 target. *Hit:* 12 (2d8 + 3) piercing damage and the target
 must make a successful DC 15 Constitution saving throw or
-become poisoned. While poisoned this way, the target takes
+become :ref:`srd:poisoned`. While poisoned this way, the target takes
 10 (3d6) poison damage at the start of each of its turns, from
 liquefaction of its innards. A successful save renders the target
 immune to the koralk’s poison for 24 hours. If a creature dies

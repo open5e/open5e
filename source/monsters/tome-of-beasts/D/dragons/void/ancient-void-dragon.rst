@@ -74,12 +74,12 @@ makes three attacks: one with its bite and two with its claws.
 
 **Aura of Madness.** Each creature of the dragon’s choice that is
 within 120 feet of the dragon and aware of it must succeed
-on a DC 22 Wisdom saving throw or become frightened for 1
+on a DC 22 Wisdom saving throw or become :ref:`srd:frightened` for 1
 minute. A creature repeats the saving throw at the end of each
 of its turns, ending the effect on itself on a success. If a creature
 fails the saving throw by 5 or more it is driven insane. An insane
-creature is frightened permanently, and behaves as if affected
-by confusion while it is frightened in this way. If a creature’s
+creature is :ref:`srd:frightened` permanently, and behaves as if affected
+by :ref:`srd:confusion` while it is frightened in this way. If a creature’s
 saving throw is successful or the effect ends for it, the creature is
 immune to the dragon’s Aura of Madness for the next 24 hours.
 
@@ -92,7 +92,7 @@ following breath weapons.
   fallen. When a creature starts its turn within the area or
   enters it for the first time in a turn, including when the
   dragon creates the field, it must make a DC 24 Dexterity
-  saving throw. On a failure the creature is restrained. On
+  saving throw. On a failure the creature is :ref:`srd:restrained`. On
   a success the creature’s speed is halved as long as it
   remains in the field. A restrained creature repeats the
   saving throw at the end of its turn. The field persists
@@ -136,7 +136,7 @@ of its turn.
 **Void Slip (Costs 2 Actions).** The dragon twists the fabric
 of space. Each creature within 15 feet of the dragon must
 succeed on a DC 21 Dexterity saving throw or take 13 (2d6 + 6)
-bludgeoning damage and be knocked prone. The dragon can
+bludgeoning damage and be knocked :ref:`srd:prone`. The dragon can
 then teleport to an unoccupied space within 40 feet.
 
 **Void Cache (Costs 3 Actions).** The dragon can magically reach

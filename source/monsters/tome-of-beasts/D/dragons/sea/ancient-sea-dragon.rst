@@ -55,7 +55,7 @@ makes three attacks: one with its bite and two with its claws.
 
 **Frightful Presence.** Each creature of the dragon’s choice that
 is within 120 feet of the dragon and aware of it must succeed
-on a DC 20 Wisdom saving throw or become frightened for
+on a DC 20 Wisdom saving throw or become :ref:`srd:frightened` for
 1 minute. A creature repeats the saving throw at the end of
 each of its turns, ending the effect on itself on a success. If a
 creature’s saving throw is successful or the effect ends for it,
@@ -67,7 +67,7 @@ wave of frigid seawater in a 90-foot cone. Each creature in that
 area must make a DC 23 Dexterity saving throw. On a failure,
 the target takes 44 (8d10) bludgeoning damage and 44 (8d10)
 cold damage, and is pushed 30 feet away from the dragon and
-knocked prone. On a successful save the creature takes half as
+knocked :ref:`srd:prone`. On a successful save the creature takes half as
 much damage and isn’t pushed or knocked prone.
 
 Legendary Actions
@@ -85,5 +85,5 @@ dragon regains spent legendary actions at the start of its turn.
 **Wing Attack (Costs 2 Actions).** The dragon beats its wings.
 Each creature within 15 feet of the dragon must succeed on a
 DC 24 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning
-damage and be knocked prone. The dragon can then move up
+damage and be knocked :ref:`srd:prone`. The dragon can then move up
 to half its flying speed, or swim speed if in the water.

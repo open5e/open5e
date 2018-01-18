@@ -85,7 +85,7 @@ claws attack.
 **Fascinating Lure.** The temple cat purrs loudly, targeting a
 humanoid it can see within 30 feet that can hear the temple
 cat. The target must succeed on a DC 14 Wisdom saving throw
-or be charmed. While charmed by the temple cat, the target
+or be :ref:`srd:charmed`. While charmed by the temple cat, the target
 must move toward the cat at normal speed and try to pet it
 or pick it up. A charmed target repeats the saving throw at
 the end of each of its turns, ending the effect on itself on a

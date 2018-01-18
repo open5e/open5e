@@ -77,12 +77,12 @@ or contract Rust Drake Tetanus.
 1d4 days, when the affected creature experiences painful
 muscle spasms, particularly in the jaw. After each long rest,
 the creature must repeat the saving throw. If it fails, the victim
-takes 1d3 Dexterity damage and is paralyzed for 24 hours; if
+takes 1d3 Dexterity damage and is :ref:`srd:paralyzed` for 24 hours; if
 the saving throw succeeds, the creature takes no damage and
 feels well enough to act normally for the day. This continues
 until the creature dies from Dexterity loss, recovers naturally
 by making successful saving throws after two consecutive long
-rests, or is cured with lesser restoration or comparable magic.
+rests, or is cured with :ref:`srd:lesser-restoration` or comparable magic.
 After the disease ends, the victim recovers 1d3 lost Dexterity
-with each long rest; greater restoration or comparable magic
+with each long rest; :ref:`srd:greater-restoration` or comparable magic
 can restore it all at once.

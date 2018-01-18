@@ -65,8 +65,8 @@ Large monstrosity, unaligned
 **Challenge** 5 (1,800 XP)
 
 **Blood Scent.** A hound of the night can follow a scent through
-phase shifts, ethereal movement, dimension door, and fey
-steps of any kind. Teleport and plane shift are beyond their
+phase shift, ethereal movement, :ref:`srd:dimension-door`, and fey
+steps of any kind. :ref:`srd:teleport` and :ref:`srd:plane-shift` are beyond their
 ability to follow.
 
 **Innate Spellcasting.** The hound’s innate spellcasting ability is
@@ -80,7 +80,7 @@ Actions
 
 **Bite.** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target. *Hit:*
 21 (3d10 + 5) piercing damage, and the target must succeed
-on a DC 15 Strength saving throw or be knocked prone.
+on a DC 15 Strength saving throw or be knocked :ref:`srd:prone`.
 
 **Frost Breath (Recharge 5-6).** The hound exhales a 15-foot
 cone of frost. Those in the area of effect take 44 (8d10) cold

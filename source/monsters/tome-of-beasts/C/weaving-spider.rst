@@ -78,7 +78,7 @@ unmaking.
 **Poisoned Needle Shuttle.** *Ranged Weapon Attack:* +5 to hit,
 range 30 ft., one target. *Hit:* 7 (1d8 + 3) piercing damage,
 and the target must succeed on a DC 13 Constitution saving
-throw or become paralyzed. The target repeats the saving
+throw or become :ref:`srd:paralyzed`. The target repeats the saving
 throw at the end of each of its turns, ending the effect on
 itself with a success.
 

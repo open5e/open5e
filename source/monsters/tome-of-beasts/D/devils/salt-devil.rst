@@ -92,7 +92,7 @@ or half damage with a successful DC 15 Constitution saving
 throw. Plants, oozes, and creatures with the Amphibious, Water
 Breathing, or Water Form traits have disadvantage on this
 saving throw. If the saving throw fails by 5 or more, the target
-also gains one level of exhaustion.
+also gains one level of :ref:`srd:exhaustion`.
 
 VARIANT: DEVIL SUMMONING
 ^^^^^^^^^^^^^^^^^^^^^^^^

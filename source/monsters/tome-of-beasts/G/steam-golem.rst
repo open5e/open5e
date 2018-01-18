@@ -66,8 +66,8 @@ dousing a steam golem destroys the elemental and the golem
 must make a DC 20 Constitution saving throw. If it succeeds, the
 water instantly evaporates and the golem continues functioning
 normally. If it fails, the golem’s fire is extinguished and the boiler
-loses pressure. The steam golem acts as if affected by a slow
-spell for 1d3 rounds, then becomes paralyzed until its fire is relit
+loses pressure. The steam golem acts as if affected by a :ref:`srd:slow`
+spell for 1d3 rounds, then becomes :ref:`srd:paralyzed` until its fire is relit
 and it spends 15 minutes building up pressure.
 
 **Immutable Form.** The golem is immune to any spell or effect

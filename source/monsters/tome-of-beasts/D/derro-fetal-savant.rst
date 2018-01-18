@@ -68,7 +68,7 @@ sunlight for over one hour of cumulative time it is destroyed.
 
 **Madness.** A derro fetal savant’s particular madness grants it
 immunity to psychic effects. It cannot be restored to sanity by
-any means short of a wish spell or comparable magic. A derro
+any means short of a :ref:`srd:wish` spell or comparable magic. A derro
 fetal savant brought to sanity gains 4 points of Wisdom and
 loses 6 points of Charisma.
 
@@ -114,5 +114,5 @@ slain while they are more than 90 feet apart, their souls cannot
 return to their bodies and they are both slain. While trapped in
 the fetal savant’s withered
 body, the victim is
-effectively paralyzed
+effectively :ref:`srd:paralyzed`
 and helpless.

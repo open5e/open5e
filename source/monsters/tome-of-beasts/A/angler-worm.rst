@@ -60,7 +60,7 @@ the searcher has some means of overcoming
 the snares’ invisibility. A creature that enters a
 space containing angler worm snare lines must
 make a successful DC 12 Dexterity saving throw or
-be restrained by the sticky snares (escape DC 14).
+be :ref:`srd:restrained` by the sticky snares (escape DC 14).
 This saving throw is made with disadvantage if the
 creature was unaware of the snare lines’ presence.
 
@@ -79,9 +79,9 @@ attacks against others.
 **Coils.** *Melee Weapon Attack:* +4 to hit, reach 10 ft., one creature.
 *Hit:* 13 (3d8) acid damage, and the target creature must
 make a successful DC 12 Dexterity saving throw or be pulled
-adjacent to the angler worm (if it wasn’t already) and grappled
+adjacent to the angler worm (if it wasn’t already) and :ref:`srd:grappled`
 in the angler worm’s coils (escape DC 12). While grappled
-this way, the creature is restrained by the angler worm (but
+this way, the creature is :ref:`srd:restrained` by the angler worm (but
 not by its snare lines), it can’t breathe, and it takes 22 (5d8)
 acid damage at the start of each of the angler worm’s turns. A
 creature that escapes from the angler worm’s coils may need
@@ -93,8 +93,8 @@ more snare lines.
 within 20 feet of itself; that spot glows with a faint, blue light
 until the start of the worm’s next turn. All other creatures
 that can see the light at the start of their turn must make a
-successful DC 12 Wisdom saving throw or be charmed until
+successful DC 12 Wisdom saving throw or be :ref:`srd:charmed` until
 the start of their next turn. A creature charmed this way must
 Dash toward the light by the most direct route, automatically
 fails saving throws against being restrained by snare lines, and
-treats the angler worm as invisible.
+treats the angler worm as :ref:`srd:invisible`.

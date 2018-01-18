@@ -40,7 +40,7 @@ years of age.
 **Volcanic Haunts.** Ash drakes outside a city live in or near
 volcanic plateaus, and mutter about the lack of neighbors to
 bully. In the wild, an ash drake may partner with a red dragon or
-flame dragon, since the dragon provides its lesser cousin with
+:ref:`tob:flame-dragons`, since the dragon provides its lesser cousin with
 plenty of ash.
 
 Ash Drake
@@ -91,11 +91,11 @@ of ash that extends 10 feet in all directions, centered on
 itself. This cloud provides half cover, though the ash drake
 can see normally through its own cloud. Any creature that
 enters or starts its turn in the cloud must succeed on a DC 14
-Constitution saving throw or become blinded for 1d6 rounds.
+Constitution saving throw or become :ref:`srd:blinded` for 1d6 rounds.
 
 **Ash Breath (recharge 6).** An ash drake spews a 20-foot cone
 of blistering hot, choking ash. Any targets in the path of this
-spray takes 14 (4d6) fire damage and become poisoned for
+spray takes 14 (4d6) fire damage and become :ref:`srd:poisoned` for
 one minute; a successful DC 13 Dexterity saving throw reduces
 damage by half and negates the poisoning. A poisoned
 creature repeats the saving throw at the end of each of its

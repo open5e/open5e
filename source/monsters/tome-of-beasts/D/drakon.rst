@@ -64,7 +64,7 @@ see the creature. On a
 failed saving throw,
 the creature takes 3 (1d6) acid damage, its hit point maximum
 is reduced by an amount equal to the acid damage it takes
-(which ends after a long rest), and it’s paralyzed until the start
+(which ends after a long rest), and it’s :ref:`srd:paralyzed` until the start
 of its next turn. Unless surprised, a creature can avert its eyes
 at the start of its turn to avoid the saving throw. If the creature
 does so, it can’t see the drakon until the start of its next turn,

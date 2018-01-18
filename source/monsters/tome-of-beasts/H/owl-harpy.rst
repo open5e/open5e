@@ -32,13 +32,6 @@ darkness nor invisibility detracts from their ability to hunt their
 quarry. Their acute hearing also means that thunder attacks
 distress them.
 
-**Servants of Alquam.** Owl harpies are natural (if irredeemably
-evil) bards thanks to their sharp wits, and most are zealous
-followers of Alquam, demon lord of night. Less common but not
-unheard of are owl harpy oracles, scholars, and collectors. These
-savants are known to exchange their knowledge and insights for
-companionship or for unusual gifts and treasures.
-
 Owl Harpy
 ~~~~~~~~~
 
@@ -91,19 +84,19 @@ talon attacks.
 can shake a fine, magical dander from her wings over a
 creature within 20 feet and directly below her. The creature
 must succeed on a DC 15 Constitution saving throw or fall
-unconscious and be poisoned for 10 minutes. It wakes up if it
+:ref:`srd:unconscious` and be :ref:`srd:poisoned` for 10 minutes. It wakes up if it
 takes damage or if a creature uses an action to shake it awake,
 but waking up doesn’t end the poisoning.
 
 **Luring Song.** The owl harpy sings a magical melody. Every
 humanoid and giant within 300 feet of the harpy that can hear
 the song must succeed on a DC 15 Wisdom saving throw or
-be charmed until the song ends. The harpy must use a bonus
+be :ref:`srd:charmed` until the song ends. The harpy must use a bonus
 action on its subsequent turns to continue singing. It can
 stop singing at any time. The song ends if the harpy becomes
 incapacitated.
 
-While charmed by the harpy, a target is incapacitated and
+While charmed by the harpy, a target is :ref:`srd:incapacitated` and
 ignores the songs of other harpies. A charmed target that
 is more than 5 feet away from the harpy must move at its
 highest rate (including dashing, if necessary) along the most

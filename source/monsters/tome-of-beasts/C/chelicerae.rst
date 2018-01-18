@@ -71,7 +71,7 @@ spells. The chelicerae has the following wizard
 spells prepared:
 
 **Cantrips:** :ref:`srd:acid-splash`, :ref:`srd:mage-hand`, :ref:`srd:minor-illusion`,
-ref:`srd:true-strike`
+:ref:`srd:true-strike`
 
 **1st level:** :ref:`srd:burning-hands`, :ref:`srd:detect-magic`, :ref:`srd:expeditious-retreat`, *ray of sickness*
 
@@ -107,9 +107,9 @@ Actions
 attacks.
 
 **Bite.** *Melee Weapon Attack:* +9 to hit, reach 10 ft., one target.
-*Hit:* 17 (2d10 + 6) piercing damage, and the target is grappled
+*Hit:* 17 (2d10 + 6) piercing damage, and the target is :ref:`srd:grappled`
 (escape DC 16). The target must also make a successful DC
-16 Constitution saving throw or become poisoned. While
+16 Constitution saving throw or become :ref:`srd:poisoned`. While
 poisoned this way, the target is unconscious and takes
 1d4 Strength damage at the start of each of its turns. The
 poisoning ends after 4 rounds or when the target makes a

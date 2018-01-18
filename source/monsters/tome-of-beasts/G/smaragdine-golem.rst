@@ -90,4 +90,4 @@ the absorbed spell. All creatures in the area of effect other
 than the golem takes 7 (2d6) lightning damage per level of
 the absorbed spell, or half damage with a successful DC 18
 Dexterity saving throw. Creatures that fail the saving throw are
-also blinded until the end of the golem’s next turn.
+also :ref:`srd:blinded` until the end of the golem’s next turn.

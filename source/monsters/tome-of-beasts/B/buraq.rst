@@ -66,7 +66,7 @@ Charisma (spell save DC 17). The buraq can innately cast the
 following spells, requiring no components:
 
 **At will:** :ref:`srd:comprehend-languages`, :ref:`srd:detect-evil-and-good`, :ref:`srd:holy-aura`,
-ref:`srd:pass-without-trace`
+:ref:`srd:pass-without-trace`
 
 **3/day each:** :ref:`srd:haste`, :ref:`srd:longstrider`
 

@@ -40,7 +40,7 @@ lairs nestled in forests of poisonous sea urchins, stinging
 anemones, and toxic corals.
 
 Aside from humankind, the coral drake harbors a great
-rivalry with dragon turtles. These beasts prize the same hunting
+rivalry with the :ref:`srd:dragon-turtle`. These beasts prize the same hunting
 grounds and nests and fight for supremacy in the richest reefs.
 
 Coral Drake
@@ -103,6 +103,6 @@ turns, ending the effect on itself on a success.
 offspring in specialized throat sacs. They can pressurize these
 sacs to spew forth a 15-foot cone of spawn. Each target in
 this area takes 21 (6d6) piercing damage from thousands
-of tiny bites and is blinded for 1d4 rounds; a successful DC
+of tiny bites and is :ref:`srd:blinded` for 1d4 rounds; a successful DC
 15 Dexterity saving throw reduces the damage by half and
 negates the blindness.

@@ -83,11 +83,11 @@ Absorbs once.
 
 **Slam.** *Melee Weapon Attack:* +10 to hit, reach 5 ft., one target.
 *Hit:* 14 (2d8 + 5) bludgeoning damage and the target is
-grappled (escape DC 16).
+:ref:`srd:grappled` (escape DC 16).
 
 **Absorb.** The berstuc draws a Medium or smaller creature it
 has grappled into its body. An absorbed creature is no longer
-grappled but is blinded and restrained, has total cover from
+grappled but is :ref:`srd:blinded` and :ref:`srd:restrained`, has total cover from
 attacks and other effects from outside the berstuc, and takes
 14 (2d8 + 5) piercing damage plus 27 (5d10) poison damage
 at the start of each of the berstuc’s turns. The berstuc can hold
@@ -95,8 +95,8 @@ one absorbed creature at a time.
 If the berstuc takes 20 damage or more on a single turn
 from a creature inside it, the berstuc must succeed on a DC
 17 Constitution saving throw or expel the absorbed creature,
-which falls prone within 5 feet of the berstuc. If the berstuc
+which falls :ref:`srd:prone` within 5 feet of the berstuc. If the berstuc
 dies, an absorbed creature is no longer restrained and can
 escape from the corpse by
 using 5 feet of movement,
-exiting prone.
+exiting :ref:`srd:prone`.

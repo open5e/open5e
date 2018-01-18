@@ -82,7 +82,7 @@ spells, requiring no material components:
 **At will:** :ref:`srd:guidance`, :ref:`srd:purify-food-and-drink`, :ref:`srd:speak-with-animals`
 
 **3/day each:** :ref:`srd:charm-person`, :ref:`srd:cure-wounds` (2d8 + 5), :ref:`srd:daylight`,
-ref:`srd:faerie-fire`, :ref:`srd:heat-metal`, :ref:`srd:hypnotic-pattern`, :ref:`srd:tongues`
+:ref:`srd:faerie-fire`, :ref:`srd:heat-metal`, :ref:`srd:hypnotic-pattern`, :ref:`srd:tongues`
 
 **1/day each:** :ref:`srd:geas`, :ref:`srd:heal`, :ref:`srd:reincarnate`
 
@@ -113,5 +113,5 @@ attacks.
 ray of light from its tail feathers in a line 5 feet wide and up
 to 50 feet long. Targets in the line must succeed on a DC
 15 Dexterity saving throw or take 24 (7d6) fire damage and
-become blinded for 1d4 rounds. A successful saving throw
+become :ref:`srd:blinded` for 1d4 rounds. A successful saving throw
 negates the blindness and reduces the damage by half.

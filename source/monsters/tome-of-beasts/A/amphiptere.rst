@@ -72,4 +72,4 @@ stinger attack.
 **Stinger.** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one
 creature. *Hit:* 7 (1d6 + 4) piercing damage plus 10 (3d6)
 poison damage, and the target must make a successful DC 13
-Constitution saving throw or be poisoned for 1 hour.
+Constitution saving throw or be :ref:`srd:poisoned` for 1 hour.

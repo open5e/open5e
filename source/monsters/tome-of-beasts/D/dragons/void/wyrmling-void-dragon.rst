@@ -52,7 +52,7 @@ following breath weapons.
   the first time in a turn, including when the
   dragon creates the field, must make a DC
   13 Dexterity saving throw. On a failure the
-  creature is restrained. On a success the
+  creature is :ref:`srd:restrained`. On a success the
   creature’s speed is halved as long as it
   remains in the field. A restrained creature
   repeats the saving throw at the end of its
@@ -73,4 +73,9 @@ following breath weapons.
 Reactions
 ~~~~~~~~~
 
-**Void Twist.** As adult void dragon, but increase AC by 2.
+**Void Twist.** When the dragon is hit by a ranged attack it can
+create a small rift in space to increase its AC by 2 against that
+attack. If the attack misses because of this increase the dragon
+can choose a creature within 30 feet to become the new target
+for that attack. Use the original attack roll to determine if the
+attack hits the new target.

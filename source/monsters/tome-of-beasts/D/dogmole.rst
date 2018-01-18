@@ -54,7 +54,7 @@ a usable tunnel 5 feet in diameter.
 
 **Wormkiller Rage.** Wild dogmole packs are famed for their
 battles against monsters in the dark caverns of the world. If
-the dogmole draws blood against vermin, a purple worm, or
+the dogmole draws blood against vermin, a :ref:`srd:purple-worm`, or
 other underground invertebrates, it gains a +4 boost to its
 Strength and Constitution, but suffers a -2 penalty to its AC.
 The wormkiller rage lasts for 3 rounds. It cannot end the rage

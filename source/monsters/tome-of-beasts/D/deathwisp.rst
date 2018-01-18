@@ -71,9 +71,9 @@ difficult terrain. It takes 5 (1d10) force damage if it
 ends its turn inside a solid object.
 
 **Shadow Jump.** A deathwisp can travel between shadows
-as if by means of dimension door. This magical transport
+as if by means of :ref:`srd:dimension-door`. This magical transport
 must begin and end in an area with at least some shadow.
-A shadow fey can jump up to a total of 40 feet per day; this
+A deathwisp can jump up to a total of 40 feet per day; this
 may be a single jump of 40 feet, four jumps of 10 feet each,
 etc. This ability must be used in 10-foot increments.
 

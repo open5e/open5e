@@ -79,9 +79,9 @@ Medium monstrosity, neutral
 
 **Challenge** 2 (450 XP)
 
-**Folk Cure.** A kot bayun’s tales have the effect of a lesser
-restoration spell at will, and once per week it can have the
-effect of greater restoration. The kot bayun designates one
+**Folk Cure.** A kot bayun’s tales have the effect of a :ref:`srd:lesser-restoration`
+spell at will, and once per week it can have the
+effect of :ref:`srd:greater-restoration`. The kot bayun designates one
 listener to benefit from its ability, and that listener must spend
 one uninterrupted hour listening to the cat’s tales. Kot bayuns
 are reluctant to share this benefit and must be bargained with

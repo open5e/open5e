@@ -99,7 +99,7 @@ Actions
 
 **Terrifying Mask.** Each non-undead creature within 60 feet of
 the dissimortuum that can see it must make a successful DC
-15 Wisdom saving throw or be frightened for 1d8 rounds. If a
+15 Wisdom saving throw or be :ref:`srd:frightened` for 1d8 rounds. If a
 target’s saving throw is successful or the effect ends for it, the
 target becomes immune to all dissimortuum’s terrifying masks
 for the next 24 hours.

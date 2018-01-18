@@ -90,13 +90,13 @@ two tormenting gaze attacks.
 **Bone Spur.** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one
 target. *Hit:* 17 (2d12 + 4) slashing damage plus 11 (2d10)
 necrotic damage. If both attacks hit a single creature in the
-same turn, it is grappled (escape DC 10). As a bonus action, the
+same turn, it is :ref:`srd:grappled` (escape DC 10). As a bonus action, the
 flutterflesh can choose whether this attack does bludgeoning,
 piercing, or slashing damage.
 
 **Tormenting Gaze.** A target creature within 120 feet and able
 to see the flutterflesh takes 18 (4d8) psychic damage and
-is paralyzed for 1d4 rounds, or takes half damage and isn’t
+is :ref:`srd:paralyzed` for 1d4 rounds, or takes half damage and isn’t
 paralyzed with a successful DC 15 Wisdom saving throw.
 Tormenting gaze can’t be used against the same target twice
 in a single turn.

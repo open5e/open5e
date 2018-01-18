@@ -93,7 +93,7 @@ turns, ending the effect on itself on a success.
 **Vomit Swarm (1/Day).** The imy-ut ushabti parts its wrappings
 voluntarily and releases a swarm of scarab beetles that follow
 its mental commands. The statistics of this swarm are identical
-to a swarm of insects, but with the following attack instead of a
+to a :ref:`srd:swarm-of-insects`, but with the following attack instead of a
 swarm of insects’ standard bite attack:
 
 **Bites:** *Melee Weapon Attack:* +3 to hit, reach 0 ft., one creature.

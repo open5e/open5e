@@ -75,7 +75,7 @@ Huge monstrosity, neutral evil
 toward a Large or smaller creature it then attacks with a stomp,
 the stomp attack is made with advantage. If the stomp attack
 hits, the target must also succeed on a DC 15 Strength saving
-throw or be knocked prone.
+throw or be knocked :ref:`srd:prone`.
 
 Actions
 ~~~~~~~

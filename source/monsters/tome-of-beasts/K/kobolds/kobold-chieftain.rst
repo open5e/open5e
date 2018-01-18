@@ -68,14 +68,14 @@ Actions
 **Shortsword.** *Melee Weapon Attack:* +5 to hit, reach 5 ft.,
 one target. *Hit:* 6 (1d6 + 3) piercing damage plus 10 (3d6)
 poison damage and the target must make a successful DC
-12 Constitution saving throw or be poisoned for 1 minute. A
+12 Constitution saving throw or be :ref:`srd:poisoned` for 1 minute. A
 poisoned creature repeats the saving throw at the end of each
 of its turns, ending the effect on a success.
 
 **Shortbow.** *Ranged Weapon Attack:* +5 to hit, range 80/320 ft.,
 one target. *Hit:* 6 (1d6 + 3) piercing damage plus 10 (3d6)
 poison damage and the target must make a successful DC
-12 Constitution saving throw or be poisoned for 1 minute. A
+12 Constitution saving throw or be :ref:`srd:poisoned` for 1 minute. A
 poisoned creature repeats the saving throw at the end of each
 of its turns, ending the effect on a success.
 

@@ -17,7 +17,7 @@ sacrificing blood or livestock, or burying a portion of any income
 in the mound. A freshly-woken haugbui devours the remains of
 creatures it was buried with, such as a hawk, hound, or horse.
 
-**Milder Spirits.** Haugbuis are related to vaettir, but much
+**Milder Spirits.** Haugbuis are related to :ref:`tob:vaettir`, but much
 older. They are more humble and less prone to taking umbrage,
 and indeed, a great many haugbui have long since forgotten their
 own names. They are not quick to spill blood when irritated, and
@@ -80,10 +80,10 @@ following spells, requiring no material components:
 **At will:** :ref:`srd:dancing-lights`, :ref:`srd:druidcraft`, :ref:`srd:mending`, :ref:`srd:spare-the-dying`
 
 **7/day each:** :ref:`srd:bane`, :ref:`srd:create-or-destroy-water`, :ref:`srd:fog-cloud`,
-ref:`srd:purify-food-and-drink`
+:ref:`srd:purify-food-and-drink`
 
 **5/day each:** :ref:`srd:blindness-deafness`, :ref:`srd:gust-of-wind`, :ref:`srd:locate-object`,
-ref:`srd:moonbeam`, :ref:`srd:shatter`
+:ref:`srd:moonbeam`, :ref:`srd:shatter`
 
 **3/day each:** :ref:`srd:bestow-curse`, :ref:`srd:dispel-magic`, :ref:`srd:plant-growth`, :ref:`srd:remove-curse`, :ref:`srd:telekinesis`
 

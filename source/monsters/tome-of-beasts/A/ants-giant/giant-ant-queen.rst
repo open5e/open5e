@@ -27,7 +27,7 @@ Large beast, unaligned
 **Keen Smell.** The giant ant queen has advantage on Wisdom
 (Perception) checks that rely on smell.
 
-**Queen’s Scent.** Giant ants defending a queen gain advantage
+**Queen’s Scent.** a :ref:`tob:giant-ant` defending a queen gain advantage
 on all attack rolls.
 
 Actions
@@ -37,8 +37,8 @@ Actions
 one sting attack.
 
 **Bite.** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:*
-7 (1d8 + 3) bludgeoning damage and the target is grappled
-(escape DC 13). Until this grapple ends, the target is restrained,
+7 (1d8 + 3) bludgeoning damage and the target is :ref:`srd:grappled`
+(escape DC 13). Until this grapple ends, the target is :ref:`srd:restrained`,
 and the giant ant can’t bite a different target.
 
 **Sting.** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target.

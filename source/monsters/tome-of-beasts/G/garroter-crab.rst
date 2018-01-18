@@ -54,5 +54,5 @@ Actions
 
 **Whip-claw.** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one
 target. *Hit:* 5 (1d6 + 2) slashing damage, and the target is
-grappled (escape DC 8). While grappled, the target cannot
+:ref:`srd:grappled` (escape DC 8). While grappled, the target cannot
 speak or cast spells with verbal components.

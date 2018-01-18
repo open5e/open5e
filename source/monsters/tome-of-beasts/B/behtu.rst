@@ -27,8 +27,8 @@ them infernal powers and protection.
 
 **Scaly Mounts.** The behtus breed demonic iguanas as war
 mounts (treat as giant lizards). The most powerful behtu
-sorcerers and druids have been known to ride large crimson
-drakes and small flame dragons as personal mounts.
+sorcerers and druids have been known to ride large :ref:`tob:crimson-drake`
+and small :ref:`tob:flame-dragons` as personal mounts.
 
 Behtu
 ~~~~~
@@ -81,7 +81,7 @@ the behtus gain a +4 bonus to their Strength and Constitution
 scores and quadruple their base speed (including their climb
 speed). Behtus also take a -4 penalty to their Intelligence and
 Wisdom scores for the duration of the infusion. A non-behtu
-character who ingests a behtu infusion becomes poisoned and
+character who ingests a behtu infusion becomes :ref:`srd:poisoned` and
 takes 10 (3d6) poison damage; a successful DC 14 Constitution
 saving throw against poison reduces damage to half and
 negates the poisoned condition.

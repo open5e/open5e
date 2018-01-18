@@ -4,7 +4,6 @@
 Goat-Man
 --------
 
-
 *This hunched, man-like figure
 lurches with a strange, half-hopping
 gait. Tattered clothing hangs from

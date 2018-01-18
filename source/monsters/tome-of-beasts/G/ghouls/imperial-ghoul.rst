@@ -9,12 +9,6 @@ muscled, its sharp talons stained black, and its clothing strangely
 well kept. Its flickering red eyes have an intelligent, malicious
 gleam.*
 
-**Shock Troops.** Imperial ghouls are the shock troops of the
-ghoul empire, and eager to expand its power and influence.
-Treated like auxiliaries, they get the most difficult tasks: to
-engage and hold foes while the darakhul, iron legionnaires, and
-others outflank them.
-
 **Ambitious Strivers.** Many believe that the hunger cults or
 the necrophagi know some secret of transforming imperial
 ghouls into iron ghouls. This rumor gives them hope of
@@ -72,7 +66,7 @@ throw or contract darakhul fever.
 **Claws.** *Melee Weapon Attack:* +5 to hit, reach, one target. *Hit:*
 17 (4d6 + 3) slashing damage. If the target is a creature other
 than an elf or undead, it must succeed on a DC 11 Constitution
-saving throw or be paralyzed for 1 minute. The target repeats
+saving throw or be :ref:`srd:paralyzed` for 1 minute. The target repeats
 the saving throw at the end of each of its turns, ending the
 effect on itself on a success.
 

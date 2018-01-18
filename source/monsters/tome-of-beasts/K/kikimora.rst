@@ -96,9 +96,9 @@ This ability creates a hidden extra-dimensional dwelling. After
 creating a hidey-hole, a kikimora can teleport herself and
 up to 50 lb of objects to the designated location instead of
 making a normal move. This extradimensional space can only
-be entered by the kikimora or by a creature using a plane shift
+be entered by the kikimora or by a creature using a :ref:`srd:plane-shift`
 spell or ability. The location can be determined by casting
-detect magic in the area of the sigil, but it takes a successful
+:ref:`srd:detect-magic` in the area of the sigil, but it takes a successful
 DC 15 Intelligence (Arcana) check to plane shift into the space.
 Inside the hidey-hole, a kikimora can see what is going
 on outside the space through a special sensor. This sensor

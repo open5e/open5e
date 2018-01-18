@@ -4,8 +4,8 @@
 Gnoll, Havoc Runner
 -------------------
 
-The runner is a mottled blur, a sprinting gnoll laughing as it runs,
-ax held high. It sprints past, its weapon flashing in the sun.
+*The runner is a mottled blur, a sprinting gnoll laughing as it runs,
+ax held high. It sprints past, its weapon flashing in the sun.*
 
 With the bristly mane and spotted fur characteristic of all
 gnolls, havoc runners blend into their tribe. Only the canny glint

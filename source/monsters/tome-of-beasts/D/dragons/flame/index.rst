@@ -101,14 +101,14 @@ use the same effect two rounds in a row.
   on a point the dragon can see within 120 feet of it. The cloud
   spreads around corners and the area is lightly obscured. Each
   creature in the cloud must succeed on a DC 15 Constitution
-  saving throw or be blinded for 1 minute. A blinded creature
+  saving throw or be :ref:`srd:blinded` for 1 minute. A blinded creature
   repeats the saving throw at the end of each of its turns, ending
   the effect on itself on a success.
 * The ground erupts with volcanic force at a point the dragon
   can see within 120 feet of it. Any creature within 20 feet of the
   point must make a successful DC 15 Dexterity saving throw
-  or be knocked prone and trapped in the ground. A creature
-  trapped in this way is restrained and can’t stand up. A creature
+  or be knocked :ref:`srd:prone` and trapped in the ground. A creature
+  trapped in this way is :ref:`srd:restrained` and can’t stand up. A creature
   can end the restraint if it or another creature takes an action to
   make a successful DC 15 Strength check.
 * A wall of fire rises up from the ground within 120 feet of the

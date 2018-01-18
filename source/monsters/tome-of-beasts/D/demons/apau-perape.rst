@@ -8,14 +8,14 @@ Demon, Apau Perape
 arms stretch to the ground, ending in wickedly curved claws.*
 
 **Servants of Fire.** These black-furred gorilla demons serve
-only Mechuiti, the demon lord of fire and apes. Their final loyalty
+only a single demon lord. Their final loyalty
 is unshakable, though sometimes they serve others for a time—
 and they have no fear of fire, gleefully setting fire to villages and
 crops if their master is snubbed or insulted.
 
 **Fearless Attackers.** The apau perape are fearless and savage,
-living for battle. Once in combat, their morale never breaks. Like
-their master, they have an insatiable hunger and do not leave any
+living for battle. Once in combat, their morale never breaks.
+They have an insatiable hunger and do not leave any
 dead behind, consuming even their bones.
 
 **Eyes of Fire.** When this demon is angered, its eyes glow a
@@ -63,7 +63,7 @@ wound toward the attacker. This spray forms a line 10 feet
 long and 5 feet wide. The first creature in the line must make
 a successful DC 15 Constitution saving throw against disease
 or be infected by Mechuiti’s Ichor disease. The creature is
-poisoned until the disease is cured. Every 24 hours that
+:ref:`srd:poisoned` until the disease is cured. Every 24 hours that
 elapse, the target must repeat the Constitution saving throw
 or reduce its hit point maximum by 5 (2d4). The disease is
 cured on a success. The target dies if the disease reduces its
@@ -101,4 +101,4 @@ summon other demons.
 **Summon Demon (1/Day):** The apau perape chooses what
 to summon and attempts a magical summoning. The apau
 perape has a 50 percent chance of summoning one apau
-perape or one giant ape.
+perape or one :ref:`srd:giant-ape`.

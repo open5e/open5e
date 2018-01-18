@@ -72,7 +72,7 @@ attacks, or one of each.
 creature. *Hit:* 16 (2d8 + 7) bludgeoning damage. If a
 creature is hit by this attack twice in the same turn, the
 target must make a successful DC 19 Constitution saving
-throw or gain one level of exhaustion.
+throw or gain one level of :ref:`srd:exhaustion`.
 
 **Stomp.** *Melee Weapon Attack.* +11 to hit, reach 10 ft. *Hit:* 20
 (2d12 + 7) bludgeoning damage.
@@ -90,16 +90,16 @@ spent legendary actions at the start of its turn.
 **Attack.** The gug makes one slam or stomp attack.
 
 **Grab.** *Melee Weapon Attack:* +11 to hit, reach 10 ft., one target.
-*Hit:* the target is grappled (escape DC 17).
+*Hit:* the target is :ref:`srd:grappled` (escape DC 17).
 
 **Swallow.** The gug swallows one creature it has grappled.
 The creature takes 26 (3d12 + 7) bludgeoning damage
 immediately plus 13 (2d12) acid damage at the start of each
 of the gug’s turns. A swallowed creature is no longer grappled
-but is blinded and restrained, and has total cover against
+but is :ref:`srd:blinded` and :ref:`srd:restrained`, and has total cover against
 attacks and other effects from outside the gug. If the gug
 takes 75 points of damage in a single turn, the swallowed
-creature is expelled and falls prone next to the gug. When the
+creature is expelled and falls :ref:`srd:prone` next to the gug. When the
 gug dies, a swallowed creature can crawl from the corpse by
 using 10 feet of movement.
 

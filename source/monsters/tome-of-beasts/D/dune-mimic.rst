@@ -65,7 +65,7 @@ form if it dies.
 **Adhesive** (Object or Terrain Form Only). The
 dune mimic adheres to anything that touches
 it. A creature adhered to the dune mimic is also
-grappled by it (escape DC 15). Ability checks
+:ref:`srd:grappled` by it (escape DC 15). Ability checks
 made to escape this grapple have disadvantage.
 The dune mimic can harden its outer surface, so
 only the creatures it chooses are affected by this trait.
@@ -89,7 +89,7 @@ mimic is in object or terrain form, the target is subjected to the
 mimic’s Adhesive trait.
 
 **Engulf.** The dune mimic engulfs all creatures it has grappled.
-An engulfed creature can’t breathe, is restrained, is no longer
+An engulfed creature can’t breathe, is :ref:`srd:restrained`, is no longer
 grappled, has total cover against attacks and other effects
 outside the dune mimic, and takes 18 (4d8) acid damage
 at the start of each of the dune mimic’s turns. When the

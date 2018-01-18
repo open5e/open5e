@@ -89,7 +89,7 @@ attack can be used only once per turn.
 
 **Whip.** *Melee Weapon Attack:* +11 to hit, reach 15 ft., one
 target. *Hit:* 11 (1d8 + 7) slashing damage and the target is
-grappled (escape DC 17) and restrained. Only two targets
+:ref:`srd:grappled` (escape DC 17) and :ref:`srd:restrained`. Only two targets
 can be grappled by the automata devil at one time, and each
 grappled target prevents one whip from being used to attack.
 An individual target can be grappled by only one whip at
@@ -115,6 +115,6 @@ up the maw for another victim.
 
 **Fear Aura.** Automata devils radiate fear in a 10-foot radius. A
 creature that starts its turn in the affected area must make a
-successful DC 16 Wisdom saving throw or become frightened.
+successful DC 16 Wisdom saving throw or become :ref:`srd:frightened`.
 A creature that makes the save successfully cannot be affected
 by the same automata devil’s fear aura again.

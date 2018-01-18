@@ -73,10 +73,10 @@ against spells and other magical effects.
 **Nimbus of Stars.** The drake is surrounded by a whirling nimbus
 of tiny motes of starlight. A sighted creature that starts its
 turn within 10 feet of the drake must make a successful DC
-18 Constitution saving throw or become incapacitated. At the
+18 Constitution saving throw or become :ref:`srd:incapacitated`. At the
 start of a character’s turn, a character can choose to avert its
 eyes and gain immunity against this effect until the start of
-its next turn, but it must treat the drake as invisible while the
+its next turn, but it must treat the drake as :ref:`srd:invisible` while the
 character’s eyes are averted.
 
 **Innate Spellcasting.** The drake’s innate spellcasting ability is
@@ -109,7 +109,7 @@ half damage with a successful DC 18 Dexterity saving throw.
 **Searing Star (1/Day).** *Ranged Spell Attack:* +12 to hit, range
 120 ft., one target. *Hit:* 65 (10d12) force damage, and the
 target must succeed on a DC 18 Constitution saving throw or
-be permanently blinded.
+be permanently :ref:`srd:blinded`.
 
 Legendary Actions
 ~~~~~~~~~~~~~~~~~
@@ -124,8 +124,8 @@ legendary actions at the start of its turn.
 **Nova (Costs 2 Actions).** The drake momentarily doubles
 the radius and intensity of its nimbus of stars. Every sighted
 creature within 20 feet of the drake must make a successful
-DC 18 Constitution saving throw or become blinded until the
+DC 18 Constitution saving throw or become :ref:`srd:blinded` until the
 end of its next turn. Characters who are averting their eyes are
 immune to the nova.
 
-**Pale Sparks.** The drake casts faerie fire or moonbeam.
+**Pale Sparks.** The drake casts :ref:`srd:faerie-fire` or :ref:`srd:moonbeam`.

@@ -26,7 +26,7 @@ talk as if all existence was a sea of patterns and colors to be set in
 pleasing shapes. They barely understand mortal concerns.
 
 **Enemies of the Ramag.** The liosalfar have a longstanding
-rivalry with the portal-making ramag, whom they despise as
+rivalry with the portal-making :ref:`tob:ramag`, whom they despise as
 “corruptors of the patterns.”
 
 **Elemental Nature.** A liosalfar doesn’t require air, food,
@@ -70,7 +70,7 @@ poisoned, prone, restrained, unconscious
 
 **Alien Mentality.** A liosalfar’s exotic consciousness renders
 it immune to psychic effects, and any attempt to read their
-thoughts leaves the reader confused for 1 round.
+thoughts leaves the reader confused as per the :ref:`srd:confusion` spell for 1 round.
 
 **Darkness Vulnerability.** Magical darkness is harmful to a
 liosalfar: They take 2d10 necrotic damage, or half damage with
@@ -96,13 +96,13 @@ requiring no material
 components:
 
 **At Will:** :ref:`srd:augury`, :ref:`srd:color-spray`,
-ref:`srd:dancing-lights`, :ref:`srd:detect-magic`,
-ref:`srd:flare`, :ref:`srd:light`, :ref:`srd:silent-image`,
-ref:`srd:spare-the-dying`
+:ref:`srd:dancing-lights`, :ref:`srd:detect-magic`,
+*flare*, :ref:`srd:light`, :ref:`srd:silent-image`,
+:ref:`srd:spare-the-dying`
 
 **2/day each:** :ref:`srd:alter-self`, :ref:`srd:blur`,
-ref:`srd:divination`, :ref:`srd:hypnotic-pattern`,
-ref:`srd:prismatic-spray`, :ref:`srd:scorching-ray`
+:ref:`srd:divination`, :ref:`srd:hypnotic-pattern`,
+:ref:`srd:prismatic-spray`, :ref:`srd:scorching-ray`
 
 **1/day each:** :ref:`srd:hallucinatory-terrain`, :ref:`srd:plane-shift`, :ref:`srd:sunbeam`
 
@@ -128,5 +128,5 @@ Actions
 
 **Disrupting Touch.** *Melee Weapon Attack:* +10 to hit, reach 5 ft.,
 one target. *Hit:* 26 (4d12) radiant damage, and the target must
-succeed on a DC 15 Wisdom saving throw or become stunned
+succeed on a DC 15 Wisdom saving throw or become :ref:`srd:stunned`
 for 1 round.

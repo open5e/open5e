@@ -78,7 +78,7 @@ makes three attacks: one with its bite and two with its claws.
 
 **Frightful Presence.** Each creature of the dragon’s choice that
 is within 120 feet of the dragon and aware of it must succeed
-on a DC 18 Wisdom saving throw or become frightened for 1
+on a DC 18 Wisdom saving throw or become :ref:`srd:frightened` for 1
 minute. A creature can repeat the saving throw at the end of
 each of its turns, ending the effect on itself on a success. If a
 creature’s saving throw is successful or the effect ends for it,
@@ -87,11 +87,11 @@ the next 24 hours.
 
 **Poison Breath (Recharge 5-6).** The dragon exhales a cone
 of black poison gas in a 60-foot cone. Each target in that
-area takes 56 (16d6) poison damage and is poisoned if it is a
+area takes 56 (16d6) poison damage and is :ref:`srd:poisoned` if it is a
 creature; a successful DC 18 Constitution saving throw reduces
 damage by half and negates the poisoned condition. The
 poisoned condition lasts until the target takes a long or short
-rest or it’s removed with lesser restoration or comparable magic.
+rest or it’s removed with :ref:`srd:lesser-restoration` or comparable magic.
 
 Reactions
 ~~~~~~~~~

@@ -67,7 +67,7 @@ cantrip), :ref:`srd:poison-spray`, *thorn whip*
 **2nd level (3 slots):** :ref:`srd:barkskin`, :ref:`srd:flame-blade`, :ref:`srd:lesser-restoration`
 
 **3rd level (3 slots):** :ref:`srd:call-lightning`, :ref:`srd:conjure-animals`, :ref:`srd:dispel-magic`,
-ref:`srd:meld-into-stone`
+:ref:`srd:meld-into-stone`
 
 **4th level (2 slots):** :ref:`srd:control-water`, :ref:`srd:dominate-beast`, :ref:`srd:freedom-of-movement`, :ref:`srd:hallucinatory-terrain`
 

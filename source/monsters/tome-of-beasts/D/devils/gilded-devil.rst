@@ -69,7 +69,7 @@ the gift. The recipient receives a -2 penalty on
 saving throws against the gilded devil’s abilities
 and a further -10 penalty against scrying
 attempts made by the gilded devil. A
-remove curse spell removes this effect.
+:ref:`srd:remove-curse` spell removes this effect.
 
 **Magic Resistance.** The devil has
 advantage on saving throws against
@@ -112,7 +112,7 @@ and an additional effect based on the item location targeted.
 Location Effect
 Arms     Melee damage halved until short rest
 Hand     Drop any held item
-Eyes     Permanently blinded
+Eyes     Permanently :ref:`srd:blinded`
 Head     Disadvantage on Int checks until long rest
 Feet     Speed halved for 24 hours
 Neck     Stunned, unable to breathe for 1 round

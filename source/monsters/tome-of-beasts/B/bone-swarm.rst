@@ -36,7 +36,7 @@ crevasses, and pits in the hope of forcing a victim or an entire
 herd of animals to fall to its death, creating more shattered
 bones to add to their mass.
 
-**Undead Nature.** A mask wight doesn’t require
+**Undead Nature.** A bone swarm doesn’t require
 air, food, drink, or sleep.
 
 Bone Swarm
@@ -99,7 +99,7 @@ of Bone special ability).
 
 **Death’s Embrace (Recharge 5-6).** *Melee Weapon Attack:* +10
 to hit, reach 0 ft., one creature in the swarm's space. *Hit:* the
-target is grappled (escape DC 16) and enveloped within the
+target is :ref:`srd:grappled` (escape DC 16) and enveloped within the
 swarm's bones. While the creature is grappled, the swarm can
 direct the creature's movement on the creature's turn, or at
 any other time the creature would be allowed to move. Any

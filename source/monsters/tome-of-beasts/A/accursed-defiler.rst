@@ -86,7 +86,7 @@ Actions
 *Hit:* 11 (2d6 + 4) bludgeoning damage. If a creature is hit by
 this attack twice in the same round (from the same or different
 accursed defilers), the target must make a DC 13 Constitution
-saving throw or gain one level of exhaustion.
+saving throw or gain one level of :ref:`srd:exhaustion`.
 
 **Sandslash (Recharge 5-6).** As an action, the accursed defiler
 intensifies the vortex of sand that surrounds it. All creatures

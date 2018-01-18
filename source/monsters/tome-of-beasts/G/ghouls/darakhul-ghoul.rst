@@ -4,17 +4,6 @@
 Ghoul, Darakhul
 ---------------
 
-*In the lightless depths beneath the ground, an empire of devouring
-ambition grows and plots and dreams. They call themselves the
-People, but the people of the surface world call them the Lords
-Subterranean, the Ghoul Imperium, or simply the Empire of
-the Ghouls. Their cities lie out of sight, their agents infiltrate the
-underworlds of a score of surface cities, and their goals know no
-limits. To them, if you are not a member of the People, you are food.*
-
-Ghoul, Darakhul
-~~~~~~~~~~~~~~~
-
 Medium undead, neutral evil
 
 **Armor Class** 16 (scale mail; 18 with shield)
@@ -78,7 +67,7 @@ throw or contract darakhul fever.
 **Claw.** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target.
 *Hit:* 10 (2d6 + 3) slashing damage. If the target is a creature
 other than an undead, it must make a successful DC 12
-Constitution saving throw or be paralyzed for 1 minute. A
+Constitution saving throw or be :ref:`srd:paralyzed` for 1 minute. A
 paralyzed target repeats the saving throw at the end of each of
 its turns, ending the effect on itself on a success. If a humanoid
 creature is paralyzed for 2 or more rounds (the victim fails at

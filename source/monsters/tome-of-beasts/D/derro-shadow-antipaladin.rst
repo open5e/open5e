@@ -71,7 +71,7 @@ ability is Charisma (save DC 13, +5 to hit with spell attacks).
 The derro has the following paladin spells prepared:
 
 **1st level (4 slots):** :ref:`srd:hellish-rebuke`, :ref:`srd:inflict-wounds`, :ref:`srd:shield-of-faith`,
-ref:`srd:wrathful-smite`
+*wrathful smite*
 
 **2nd level (2 slots):** :ref:`srd:aid`, *crown of madness*, :ref:`srd:darkness`, :ref:`srd:magic-weapon`
 
@@ -95,5 +95,6 @@ crossbow attacks.
 **Infectious Insanity (Recharge 5-6).** The derro chooses a
 creature it can see within 30 feet and magically assaults its
 mind. The creature must succeed on a DC 13 Wisdom saving
-throw or be affected as if by a confusion spell for 1 minute. An
+throw or be affected as if by a :ref:`srd:confusion` spell for 1 minute. An
 affected creature repeats the saving throw at the end of its
+turns, ending the effect on itself on a success.

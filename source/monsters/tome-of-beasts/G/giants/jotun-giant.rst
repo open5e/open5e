@@ -92,7 +92,7 @@ target. *Hit:* 49 (6d12 + 10) bludgeoning damage.
 
 **Frightful Presence.** Each creature of the giant’s choice that is
 within 120 feet of the giant and aware of it must succeed on
-a DC 19 Wisdom saving throw or become frightened for 1
+a DC 19 Wisdom saving throw or become :ref:`srd:frightened` for 1
 minute. A creature repeats the saving throw at the end of each
 of its turns, ending the effect on itself on a success. Once a
 creature’s saving throw is successful, it is immune to the giant’s

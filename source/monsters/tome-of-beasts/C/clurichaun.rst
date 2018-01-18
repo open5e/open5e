@@ -23,7 +23,7 @@ supplied with a favorite libation and otherwise leaves him or her
 alone, the clurichaun will protect their wine cellars from thieves,
 drunkards, or worse—becoming quite vigorous when they feel
 the security of the cellars is threatened in any way. They have a
-particular hatred for rum gremlins and for other clurichauns.
+particular hatred for the :ref:`tob:rum-gremlin` and for other clurichauns.
 
 **Contest Evictions.** Most people can’t tolerate or afford
 a clurichaun’s presence for long. Unfortunately, attempts to
@@ -78,7 +78,7 @@ is Charisma (spell save DC 13). The clurichaun can cast the
 following spells, requiring only alcohol as a component.
 
 **At will:** *friends*, :ref:`srd:mending`, :ref:`srd:minor-illusion`, :ref:`srd:purify-food-and-drink`,
-ref:`srd:vicious-mockery`
+:ref:`srd:vicious-mockery`
 
 **1/day each:** :ref:`srd:blur`, :ref:`srd:calm-emotions`, :ref:`srd:heroism`, :ref:`srd:sleep`, :ref:`srd:suggestion`
 

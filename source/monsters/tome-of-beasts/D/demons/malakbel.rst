@@ -87,7 +87,7 @@ one target. *Hit:* 18 (3d8 + 5) fire damage.
 **Searing Flare (Recharge 5-6).** The malakbel intensifies its
 Blistering Radiance to withering levels. All creatures in the
 malakbel’s aura take 31 (7d8) radiant damage and gain a level
-of exhaustion; a successful DC 16 Constitution saving throw
+of :ref:`srd:exhaustion`; a successful DC 16 Constitution saving throw
 reduces damage by half and negates exhaustion.
 
 **Teleport.** The malakbel magically teleports to an unoccupied

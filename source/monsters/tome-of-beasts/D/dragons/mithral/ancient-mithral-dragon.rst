@@ -49,7 +49,7 @@ spells, requiring no material components:
 
 **Mithral Shards.** Ancient mithral dragons can choose to retain
 the mithral shards of their breath weapon as a hazardous zone
-of spikes. Treat as a spike growth zone that does 2d8 magical
+of spikes. Treat as a :ref:`srd:spike-growth` zone that does 2d8 magical
 slashing damage for every 5 feet travelled.
 
 **Spellcasting.** The dragon is a 15th-level spellcaster. Its
@@ -58,7 +58,7 @@ with spell attacks). It requires no material components to cast
 its spells. The dragon has the following wizard spells prepared:
 
 **Cantrips (at will):** :ref:`srd:acid-splash`, :ref:`srd:light`, :ref:`srd:mage-hand`, :ref:`srd:minor-illusion`,
-ref:`srd:prestidigitation`
+:ref:`srd:prestidigitation`
 
 **1st level (4 slots):** :ref:`srd:charm-person`, :ref:`srd:expeditious-retreat`, :ref:`srd:magic-missile`, :ref:`srd:unseen-servant`
 
@@ -97,7 +97,7 @@ wound it’s taken from a mithral dragon’s claws.
 
 **Frightful Presence.** Each creature of the dragon’s choice that
 is within 120 feet of the dragon and aware of it must succeed
-on a DC 21 Wisdom saving throw or become frightened for 1
+on a DC 21 Wisdom saving throw or become :ref:`srd:frightened` for 1
 minute. A creature can repeat the saving throw at the end of
 its turn, ending the effect on itself on a success. If a creature’s
 saving throw is successful or the effect ends for it, the creature is
@@ -132,5 +132,5 @@ within 10 feet of the dragon must
 succeed on a DC 23 Dexterity
 saving throw or take 18 (2d8 + 9)
 bludgeoning damage and be
-knocked prone. The dragon can
+knocked :ref:`srd:prone`. The dragon can
 then fly up to half its flying speed.

@@ -91,4 +91,4 @@ and one tail attack.
 **Tail (Recharge 5-6).** *Melee Weapon Attack:* +6 to hit, reach
 10 ft., one target. *Hit:* 16 (5d6 + 3) slashing damage, and the
 target must succeed on a DC 13 Constitution saving throw or
-be incapacitated for 1 round.
+be :ref:`srd:incapacitated` for 1 round.

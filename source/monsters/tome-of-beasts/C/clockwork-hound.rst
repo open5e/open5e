@@ -81,7 +81,7 @@ Actions
 **Tripping Tongue.** *Melee Weapon Attack:* +5 to hit, reach 15
 ft., one target. *Hit:* 9 (1d8 + 5) slashing damage, and the
 target must succeed on a DC 13 Strength saving throw or be
-knocked prone.
+knocked :ref:`srd:prone`.
 
 **Explosive Core.** The mechanism that powers the hound
 explodes when the construct is destroyed. All creatures within

@@ -93,7 +93,7 @@ attack.
 *Hit:* 6 (1d8 + 3) slashing damage.
 
 **Hair.** *Melee Weapon Attack:* +6 to hit, reach 20 ft., one target.
-*Hit:* 14 (2d10 + 3) slashing damage, and the target is grappled
+*Hit:* 14 (2d10 + 3) slashing damage, and the target is :ref:`srd:grappled`
 (escape DC 16). Three creatures can be grappled at a time.
 
 **Kiss.** The drowned maiden can kiss one target that is grappled

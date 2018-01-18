@@ -90,7 +90,7 @@ material components:
 
 **At will:** :ref:`srd:darkness`, :ref:`srd:minor-illusion`, :ref:`srd:plane-shift` (at
 night only), :ref:`srd:phantom-steed`,
-ref:`srd:prestidigitation`, :ref:`srd:sleep` (11d8)
+:ref:`srd:prestidigitation`, :ref:`srd:sleep` (11d8)
 
 **3/day each:** :ref:`srd:hypnotic-pattern`, :ref:`srd:major-image`
 

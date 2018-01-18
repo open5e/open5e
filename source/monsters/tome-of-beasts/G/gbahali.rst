@@ -71,7 +71,7 @@ attacks.
 
 **Bite.** *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target.
 *Hit:* 24 (3d12 + 5) piercing damage. If the target is a Medium
-or smaller creature, it is grappled (escape DC 15). Until this
+or smaller creature, it is :ref:`srd:grappled` (escape DC 15). Until this
 grapple ends, the target is restrained, and the gbahali can’t
 bite another target.
 

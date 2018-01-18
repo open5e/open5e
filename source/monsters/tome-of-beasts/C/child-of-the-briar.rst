@@ -72,7 +72,7 @@ Actions
 ~~~~~~~
 
 **Multiattack.** A child of the briar makes two claw attacks. If both
-attacks hit the same target, the target is grappled (escape DC
+attacks hit the same target, the target is :ref:`srd:grappled` (escape DC
 13) and the child of the briar uses its Thorny Grapple on it.
 
 **Claw.** *Melee Weapon Attack:* +5 to hit, reach 5 ft.,
@@ -89,7 +89,7 @@ Both creatures must be within 10 feet of each other, and both
 must use their action to cast the spell. The entangled area
 must include at least one of the casters but doesn’t need to
 be centered on either caster. Creatures in the area must make
-a DC 13 Strength saving throw or be restrained. All children of
+a DC 13 Strength saving throw or be :ref:`srd:restrained`. All children of
 the briar are immune to the spell’s effects.
 
 **Thorny Grapple.** A child of the briar’s long thorny limbs help

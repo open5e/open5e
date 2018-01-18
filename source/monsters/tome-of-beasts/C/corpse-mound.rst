@@ -85,14 +85,14 @@ uses envelop once.
 
 **Slam.** *Melee Weapon Attack:* +11 to hit, reach 5 ft., one target.
 *Hit:* 18 (2d10 + 7) bludgeoning damage plus 10 (3d6) necrotic
-damage and the target is grappled (escape DC 17). Until this
-grapple ends, the target is restrained.
+damage and the target is :ref:`srd:grappled` (escape DC 17). Until this
+grapple ends, the target is :ref:`srd:restrained`.
 
 **Bone Shard.** *Ranged Weapon Attack:* +11 to hit, range 30/120
 ft., one target. *Hit:* 14 (2d6 + 7) piercing damage and 10 (3d6)
 necrotic damage. When hit, the target must make a successful
-DC 17 Strength check or be knocked prone, pinned to the
-ground by the shard, and restrained. To end this restraint, the
+DC 17 Strength check or be knocked :ref:`srd:prone`, pinned to the
+ground by the shard, and :ref:`srd:restrained`. To end this restraint, the
 target or a creature adjacent to it must use an action to make a
 successful DC 17 Strength (Athletics) check to remove the shard.
 
@@ -100,7 +100,7 @@ successful DC 17 Strength (Athletics) check to remove the shard.
 restrained creature. If the attack hits, the target takes damage
 as normal, is pulled 5 feet into the corpse mound’s space, and
 is enveloped, which ends any grappled or prone condition.
-While enveloped, the creature is blinded and restrained, it has
+While enveloped, the creature is :ref:`srd:blinded` and :ref:`srd:restrained`, it has
 total cover against attacks and other effects outside the corpse
 mound, and it takes 21 (6d6) necrotic damage at the start of
 each of the corpse mound’s turns. An enveloped creature can
@@ -108,8 +108,8 @@ escape by using its action to make a successful DC 17 Strength
 saving throw. If the corpse mound takes 30 or more damage
 on a single turn from the enveloped creature, it must succeed
 on a DC 17 Constitution saving throw at the end of that turn or
-expel the creature, which falls prone in a space within 10 feet
+expel the creature, which falls :ref:`srd:prone` in a space within 10 feet
 of the corpse mound. If the corpse mound dies, an enveloped
 creature is no longer restrained by it and can escape by using
-10 feet of movement, exiting prone. A corpse mound can
+10 feet of movement, exiting :ref:`srd:prone`. A corpse mound can
 envelop up to 4 creatures at once.

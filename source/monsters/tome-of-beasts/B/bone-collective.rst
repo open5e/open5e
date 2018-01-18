@@ -119,7 +119,7 @@ mouths on the tiny skeletons are
 disturbing, and the toxin is deadly.
 A bitten creature must succeed
 on a DC 15 Constitution saving
-throw or become poisoned and
+throw or become :ref:`srd:poisoned` and
 take 1d6 Charisma damage. A
 poisoned creature repeats the
 saving throw every four hours,
@@ -133,6 +133,5 @@ survives, the effect
 ends and the creature
 can heal normally.
 Lost Charisma can be
-regained with a lesser
-restoration spell or
+regained with a :ref:`srd:lesser-restoration` spell or
 comparable magic.

@@ -66,7 +66,7 @@ first attack against it each round and ignores any nondamaging
 effects of the attack.
 
 **Gift of Blood.** As an action, the herald of blood can transform
-any fey, human, or goblin into a red hag, if the target willingly
+any fey, human, or goblin into a :ref:`tob:red-hag`, if the target willingly
 accepts this transformation.
 
 **Grant Blood Rage.** As a bonus action, the herald of blood can
@@ -90,7 +90,7 @@ Actions
 **Engulfing Protoplasm.** *Melee Weapon Attack:* +10 to hit, reach
 10 ft., one target. *Hit:* 19 (2d12 + 6) slashing damage and the
 target must make a successful DC 17 Dexterity saving throw
-or be grappled by the herald of blood (escape DC 16). While
+or be :ref:`srd:grappled` by the herald of blood (escape DC 16). While
 grappled this way, the creature takes 39 (6d12) acid damage at
 the start of each of the herald’s turns. The herald can have any
 number of creatures grappled this way.
@@ -109,11 +109,11 @@ its turn.
 **Call of Blood (2 Actions).** *Melee Weapon Attack.* +10 to
 hit, reach 5 ft., all creatures in reach. *Hit:* 39 (6d12) necrotic
 damage and each target must make a successful DC 17
-Constitution saving throw or gain 1 level of exhaustion.
+Constitution saving throw or gain 1 level of :ref:`srd:exhaustion`.
 
 **Majesty of Ragnarok (3 Actions).** The herald of blood emits a
 terrifying burst of eldritch power. All creatures within 100 feet
 and in direct line of sight of the herald take 32 (5d12) necrotic
-damage, gain 2 levels of exhaustion, and are permanently
-blinded. Targets that make a successful DC 15 Charisma saving
+damage, gain 2 levels of :ref:`srd:exhaustion`, and are permanently
+:ref:`srd:blinded`. Targets that make a successful DC 15 Charisma saving
 throw are not blinded and gain only 1 level of exhaustion.

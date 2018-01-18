@@ -104,7 +104,7 @@ Actions
 
 **Bite.** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:*
 18 (3d8 + 5) plus 1d4 Strength damage, and the target must
-succeed on a DC 17 Constitution saving throw or be paralyzed
+succeed on a DC 17 Constitution saving throw or be :ref:`srd:paralyzed`
 for 1d4 + 1 rounds. If the target creature is humanoid, it must
 succeed on a second DC 19 Constitution saving throw or
 contract darakhul fever.

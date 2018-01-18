@@ -79,13 +79,13 @@ to the normal damage done by its arrows. If so, the aridni
 chooses from the following effects:
 
 * Confusion. The target must succeed on a DC 14 Wisdom
-  saving throw or become confused (as the spell) for 2d4-1
+  saving throw or become confused (as :ref:`srd:confusion`) for 2d4-1
   rounds.
 * Fear. The target must succeed on a DC 14 Wisdom saving
-  throw or become frightened for 2d4 rounds.
+  throw or become :ref:`srd:frightened` for 2d4 rounds.
 * Hideous Laughter. The target must succeed on a DC 14
-  Wisdom saving throw or become incapacitated for 2d4
-  rounds. While incapacitated, the target is prone and
+  Wisdom saving throw or become :ref:`srd:incapacitated` for 2d4
+  rounds. While incapacitated, the target is :ref:`srd:prone` and
   laughing uncontrollably.
 * Sleep. The target must succeed on a DC 14 Wisdom saving
   throw or fall asleep for 2d4 minutes. The creature wakes up

@@ -34,8 +34,8 @@ Actions
 attack.
 
 **Bite.** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target. *Hit:*
-6 (1d8 + 2) bludgeoning damage and the target is grappled
-(escape DC 12). Until this grapple ends, the target is restrained
+6 (1d8 + 2) bludgeoning damage and the target is :ref:`srd:grappled`
+(escape DC 12). Until this grapple ends, the target is :ref:`srd:restrained`
 and the giant ant can’t bite a different target.
 
 **Sting.** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target.

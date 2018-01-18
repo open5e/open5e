@@ -35,7 +35,7 @@ as well, though, and are happy to use
 that against foes. At range, they use
 hurl moonlight and lightwalking to
 frustrate enemies. In melee, they use
-wall of ice to split foes, the better to battle
+:ref:`srd:wall-of-ice` to split foes, the better to battle
 just half at a time.
 
 Lunar Devil
@@ -101,13 +101,6 @@ relocation uses half of its speed.
 **Magic Resistance.** The devil has advantage on saving throws
 against spells and other magical effects.
 
-Variant
-~~~~~~~
-
-**Summon Devil (1/Day).** The devil can attempt a magical
-summoning. The devil has a 40 percent chance of summoning
-either 2 chain devils or 1 lunar devil.
-
 Actions
 ~~~~~~~
 
@@ -127,4 +120,11 @@ Hurl Moonlight twice.
 **Hurl Moonlight.** *Ranged Spell Attack:* +7 to hit, range 150 ft.,
 one target. *Hit:* 19 (3d12) cold damage and the target must
 succeed on a DC 15 Constitution saving throw or become
-blinded for 4 rounds.
+:ref:`srd:blinded` for 4 rounds.
+
+Variant
+^^^^^^^
+
+**Summon Devil (1/Day).** The devil can attempt a magical
+summoning. The devil has a 40 percent chance of summoning
+either 2 chain devils or 1 lunar devil.

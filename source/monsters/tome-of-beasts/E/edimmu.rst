@@ -71,10 +71,10 @@ Actions
 creature. *Hit:* 21 (6d6) necrotic damage. The target must
 succeed on a DC 14 Constitution saving throw or its hit point
 maximum is reduced by an amount equal to the damage
-taken and it is stunned for 1 minute and gains one level of
-exhaustion. A stunned creature repeats the saving throw at the
+taken and it is :ref:`srd:stunned` for 1 minute and gains one level of
+:ref:`srd:exhaustion`. A stunned creature repeats the saving throw at the
 end of each of its turns, ending the stun on itself on a success.
 The hit point reduction lasts until the creature finishes a long
-rest and drinks abundant water or until it is affected by greater
-restoration or comparable magic. The target dies if this effect
+rest and drinks abundant water or until it is affected by :ref:`srd:greater-restoration`
+or comparable magic. The target dies if this effect
 reduces its hit point maximum to 0.

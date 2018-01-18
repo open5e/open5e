@@ -66,25 +66,25 @@ to hit, reach 5 ft., one target. *Hit:* 19
 (4d6 + 5) piercing damage. If the target is a
 Medium or smaller incapacitated creature, that
 creature is swallowed. While swallowed, the
-creature is blinded and restrained, it has total
+creature is :ref:`srd:blinded` and :ref:`srd:restrained`, it has total
 cover against attacks and other effects from
 outside the blemmyes, and it takes 14 (4d6)
 acid damage at the start of each of the blemmyes’ turns. If the
 blemmyes takes 20 damage or more during a single turn from
 a creature inside it, the blemmyes must succeed on a DC 16
 Constitution saving throw at the end of that turn or regurgitate
-the swallowed creature, which falls prone in a space within
+the swallowed creature, which falls :ref:`srd:prone` in a space within
 5 feet of the blemmyes. The blemmyes can have only one
 target swallowed at a time. If the blemmyes dies, a swallowed
 creature is no longer restrained by it and can escape from the
-corpse using 5 feet of movement, exiting prone.
+corpse using 5 feet of movement, exiting :ref:`srd:prone`.
 
 **Slam.** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target.
 *Hit:* 14 (2d8 + 5) bludgeoning damage. If the target is a
 creature, it must succeed on a DC 16 Wisdom saving throw or
-be stunned until the end of its next turn.
+be :ref:`srd:stunned` until the end of its next turn.
 
 **Rock.** *Ranged Weapon Attack:* +8 to hit, range 30/120 ft., one
 target. *Hit:* 27 (4d10 + 5) bludgeoning damage. If the target is
 a creature, it must succeed on a DC 16 Wisdom saving throw
-or be frightened until the end of its next turn.
+or be :ref:`srd:frightened` until the end of its next turn.

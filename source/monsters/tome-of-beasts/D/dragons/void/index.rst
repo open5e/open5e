@@ -82,7 +82,7 @@ can’t use the same effect two rounds in a row:
   see within 120 feet of it to suddenly exist in the same place.
   Space itself repels the creatures to their original positions.
   Each creature takes 16 (3d10) force damage and is knocked
-  prone, or takes half as much damage and is not knocked prone
+  :ref:`srd:prone`, or takes half as much damage and is not knocked prone
   with a successful DC 15 Strength saving throw.
 
 Regional Effects

@@ -44,7 +44,7 @@ exhales a blast of wind in a 15-foot cone.
 Each creature in that cone must make a
 successful DC 12 Strength saving throw
 or be pushed 15 feet away from
-the dragon and knocked prone.
+the dragon and knocked :ref:`srd:prone`.
 Unprotected flames in the cone are
 extinguished, and sheltered flames
 (such as those in lanterns) have a 50

@@ -64,7 +64,7 @@ and two with its claws.
 **Breath of Gales (Recharge 5-6).** The dragon exhales a blast
 of wind in a 30-foot cone. Each creature in that cone takes 11
 (2d10) bludgeoning damage and is pushed 25 feet away from
-the dragon and knocked prone; a successful DC 16 Strength
+the dragon and knocked :ref:`srd:prone`; a successful DC 16 Strength
 saving throw halves the damage and prevents being pushed
 and knocked prone. Unprotected flames in the cone are
 extinguished, and sheltered flames (such as those in lanterns)

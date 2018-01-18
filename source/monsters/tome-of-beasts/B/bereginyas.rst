@@ -21,6 +21,7 @@ placate them; these offerings are certainly welcome during the
 spring lambing season.
 
 Bereginyas
+~~~~~~~~~~
 
 Tiny fey, neutral evil
 
@@ -52,7 +53,7 @@ Actions
 ~~~~~~~
 
 **Multiattack.** The bereginyas makes two claw attacks. If both
-attacks hit the same target, the target is grappled (escape DC
+attacks hit the same target, the target is :ref:`srd:grappled` (escape DC
 12) and the bereginyas immediately uses Smother against it as
 a bonus action.
 

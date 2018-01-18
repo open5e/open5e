@@ -46,6 +46,6 @@ Actions
 **Blowgun.** *Ranged Weapon Attack:* +4 to hit, range 25/100 ft.,
 one creature. *Hit:* 4 (1d4 + 2) piercing damage, and the target
 must succeed on a DC 13 Constitution saving throw or be
-poisoned and unconscious for 1d4 hours. Another creature
+:ref:`srd:poisoned` and :ref:`srd:unconscious` for 1d4 hours. Another creature
 can use an action to shake the target awake and end its
 unconsciousness but not the poisoning.

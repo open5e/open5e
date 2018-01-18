@@ -87,7 +87,7 @@ plus 3 (1d6) poison damage.
 **Reed Flower Net.** *Ranged Weapon Attack:* +7 to hit, range
 5/15 ft., one Large or smaller creature. *Hit:* The target has
 disadvantage on Wisdom saving throws for 1 minute, and is
-restrained. A creature can free itself or another creature within
+:ref:`srd:restrained`. A creature can free itself or another creature within
 reach from restraint by using an action to make a successful
 DC 15 Strength check or by doing 5 slashing damage to the
 net (AC 10).

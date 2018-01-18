@@ -111,4 +111,4 @@ attempt is unnoticed by the target, regardless of the result.
 **Telepathic Lash (3/Day).** An emerald eye can overwhelm one
 humanoid creature within 25 feet with emotions and impulses
 the creature is hard-pressed to control. If the target fails a DC
-13 Wisdom saving throw, it is stunned for 1 round.
+13 Wisdom saving throw, it is :ref:`srd:stunned` for 1 round.

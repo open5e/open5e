@@ -83,12 +83,12 @@ Actions
 **Claw.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target.
 *Hit:* 8 (1d8 + 4) slashing damage. If the target is a creature, it
 must make a successful DC 12 Constitution saving throw or
-gain one level of exhaustion.
+gain one level of :ref:`srd:exhaustion`.
 
 **Scouring Sirocco (Recharge 5-6).** The sand hag generates a
 blast of hot wind in a 30-foot line or a 15-foot cone. Creatures
 inside it take 14 (4d6) slashing damage plus 7 (2d6) fire
-damage and are blinded for 1 minute; a successful DC 14
+damage and are :ref:`srd:blinded` for 1 minute; a successful DC 14
 Constitution saving throw halves the damage and negates
 the blindness. A blinded creature repeats the saving throw at
 the end of each of its turns, ending the effect on itself on a

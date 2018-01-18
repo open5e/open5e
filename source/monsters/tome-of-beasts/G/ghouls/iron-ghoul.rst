@@ -9,12 +9,6 @@ forearms up to its elbows are stained with dark, dried blood. Its
 glowing, rust-colored eyes penetrate with a calculating stare of
 restrained hunger.*
 
-**Backbone of the Legions.** Iron ghouls and ghasts are
-the elite members of the imperial legions, acting as
-non‑commissioned officers, officers, and standard-bearers.
-They feed from the slave pits and march on the orders of the
-darakhul nobility.
-
 **Fond of Uniforms.** Iron ghouls are proud of their status and
 uniforms. Their standard breastplates and open-faced helms
 are black iron with brass trim, and the helm’s crest is often a
@@ -66,7 +60,7 @@ claw attack, or three glaive attacks.
 **Bite.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target. *Hit:*
 17 (3d8 + 4) piercing damage. If the target is a creature other
 than an elf or undead, it must succeed on a DC 13 Constitution
-saving throw or be paralyzed for 1 minute. The target repeats
+saving throw or be :ref:`srd:paralyzed` for 1 minute. The target repeats
 the saving throw at the end of each of its turns, ending the
 effect on itself on a success. If the target is humanoid, it must
 succeed on a separate DC 13 Constitution saving throw or
@@ -75,7 +69,7 @@ contract darakhul fever.
 **Claws.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target.
 *Hit:* 18 (4d6 + 4) slashing damage. If the target is a creature
 other than an elf or undead, it must succeed on a DC 13
-Constitution saving throw or be paralyzed for 1 minute. The
+Constitution saving throw or be :ref:`srd:paralyzed` for 1 minute. The
 target repeats the saving throw at the end of each of its
 turns, ending the effect on itself on a success. If the target is
 humanoid, it must succeed on a separate DC 13 Constitution

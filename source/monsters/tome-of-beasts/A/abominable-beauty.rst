@@ -72,7 +72,7 @@ damage plus 28 (8d6) fire damage.
 30 feet of the abominable beauty who is targeted
 by this attack and who meets the abominable
 beauty’s gaze must succeed on a DC 17 Charisma
-saving throw or be blinded. If the saving throw
+saving throw or be :ref:`srd:blinded`. If the saving throw
 succeeds, the target creature is permanently immune
 to this abominable beauty’s Blinding Gaze.
 
@@ -80,4 +80,4 @@ to this abominable beauty’s Blinding Gaze.
 voice is lovely, but any creature within 90 feet and able
 to hear her when she makes her Deafening Voice attack
 must succeed on a DC 16 Constitution saving throw or be
-permanently deafened.
+permanently :ref:`srd:deafened`.

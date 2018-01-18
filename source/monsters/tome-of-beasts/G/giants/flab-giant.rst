@@ -83,14 +83,14 @@ Actions
 ~~~~~~~
 
 **Multiattack.** The giant makes two slam attacks. If both hit, the
-target is grappled (escape DC 15), and the flab giant uses its
+target is :ref:`srd:grappled` (escape DC 15), and the flab giant uses its
 squatting pin against the target as a bonus action.
 
 **Slam.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target.
 *Hit:* 12 (2d6 + 5) bludgeoning damage.
 
 **Squatting Pin.** The flab giant squats atop the target, pinning it to
-the ground, where it is grappled and restrained (escape DC 17).
+the ground, where it is :ref:`srd:grappled` and :ref:`srd:restrained` (escape DC 17).
 The flab giant is free to attack another target, but the restrained
 creatures are released if it moves from its current space. As long
 as the giant does not move from the spot, it can maintain the

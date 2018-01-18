@@ -15,7 +15,7 @@ out of step with the frame bearing it.
 
 **Guards.** Created by the shadow fey as unobtrusive guardians,
 empty cloaks are often paired with animated armor such as a
-monolith footman, and made to look like a display piece.
+:ref:`tob:monolith-footman`, and made to look like a display piece.
 
 **Shadow Servants.** Shadow fey nobles sometimes wear an
 empty cloak as their own clothing; they use it to cover a hasty
@@ -84,7 +84,7 @@ target. *Hit:* 8 (1d8 + 4) slashing damage.
 target. *Hit:* 6 (1d4 + 4) bludgeoning damage.
 
 **Shadow Snare.** *Ranged Weapon Attack:* +4 to hit, range 20/60
-ft., one target. *Hit:* Large or smaller creatures are restrained. To
+ft., one target. *Hit:* Large or smaller creatures are :ref:`srd:restrained`. To
 escape, the restrained creature or an adjacent ally must use an
 action to make a successful DC 14 Strength check. The shadow
 snare has 15 hit points and AC 12.

@@ -43,12 +43,12 @@ Its spellcasting ability is Intelligence (spell save DC
 following wizard spells prepared:
 
 **Cantrips (at will):** :ref:`srd:light`, :ref:`srd:mage-hand`, :ref:`srd:minor-illusion`,
-ref:`srd:poison-spray`, :ref:`srd:resistance`
+:ref:`srd:poison-spray`, :ref:`srd:resistance`
 
 **1st Level (4 slots):** :ref:`srd:mage-armor`, :ref:`srd:sleep`
 
 **2nd Level (3 slots):** :ref:`srd:detect-thoughts`,
-ref:`srd:misty-step`
+:ref:`srd:misty-step`
 
 **3rd Level (2 slots):** :ref:`srd:lightning-bolt`
 
@@ -68,7 +68,7 @@ one creature. *Hit:* 5 (1d4 + 3)
 piercing damage, and the target
 must succeed on a DC 13
 Constitution saving throw or be
-poisoned and unconscious for 1d4
+:ref:`srd:poisoned` and :ref:`srd:unconscious` for 1d4
 hours. Another creature can use an
 action to shake the target awake and end
 its unconsciousness but not the poisoning.

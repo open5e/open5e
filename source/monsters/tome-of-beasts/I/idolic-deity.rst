@@ -89,6 +89,6 @@ damage.
 **Seduce the Righteous.** The idolic deity targets one creature it
 can see within 30 feet. The target has disadvantage on attack
 rolls, saving throws, or ability checks (the idolic deity chooses
-which) until the end of its next turn. A protection from evil and
-good spell cast on the target prevents this effect, as does a
-magic circle.
+which) until the end of its next turn. A :ref:`srd:protection-from-evil-and-good`
+spell cast on the target prevents this effect, as does a
+:ref:`srd:magic-circle`.

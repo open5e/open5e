@@ -89,7 +89,7 @@ Actions
 moves with the anubian. The area is heavily obscured, and
 each creature other than an anubian that enters the sandstorm
 or ends its turn there must make a successful DC 13 Strength
-saving throw or be restrained by it. Also, each creature other
+saving throw or be :ref:`srd:restrained` by it. Also, each creature other
 than an anubian that ends its turn inside the sandstorm
 takes 3 (1d6) slashing damage. The anubian can maintain the
 haboob for up to 10 minutes as if concentrating on a spell.

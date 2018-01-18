@@ -79,7 +79,7 @@ requiring no material components:
 of shadows only)
 
 **1/day each:** :ref:`srd:bane` (when in dim light or darkness only),
-ref:`srd:black-tentacles`
+:ref:`srd:black-tentacles`
 
 **Shadow Blend.** When in dim light or darkness, the umbral
 vampire can Hide as a bonus action, even while being

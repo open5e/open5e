@@ -82,7 +82,7 @@ spell attacks). She requires no material components to cast her
 spells. The lorelei has the following sorcerer spells prepared:
 
 **Cantrips (at will):** :ref:`srd:detect-magic`, :ref:`srd:guidance`, :ref:`srd:light`, :ref:`srd:mending`,
-ref:`srd:poison-spray`, :ref:`srd:prestidigitation`
+:ref:`srd:poison-spray`, :ref:`srd:prestidigitation`
 
 **1st level (4 slots):** :ref:`srd:comprehend-languages`, :ref:`srd:fog-cloud`, :ref:`srd:mage-armor`, *ray of sickness*
 
@@ -101,7 +101,7 @@ Actions
 **Charm.** The lorelei targets one humanoid she can see within
 30 feet of her. If the target can see or hear the lorelei, it must
 succeed on a DC 17 Wisdom saving throw against this magic
-or be charmed by the lorelei. The charmed target regards
+or be :ref:`srd:charmed` by the lorelei. The charmed target regards
 the lorelei as its one, true love, to be heeded and protected.
 Although the target isn’t under the lorelei’s control, it takes the
 lorelei’s requests or actions in the most favorable way it can.
@@ -115,6 +115,6 @@ end the effect.
 
 **Stunning Glance.** The lorelei mentally disrupts a creature
 within 30 feet with a look. The target must succeed on a DC 17
-Wisdom saving throw or be stunned for 2 rounds. Anyone who
+Wisdom saving throw or be :ref:`srd:stunned` for 2 rounds. Anyone who
 successfully saves against this effect cannot be affected by it
 from the same lorelei for 24 hours.

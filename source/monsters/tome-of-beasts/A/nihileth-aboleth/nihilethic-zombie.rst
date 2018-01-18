@@ -4,7 +4,7 @@
 Nihilethic Zombie
 -----------------
 
-Created by the diseased will of nihileths, these zombies do
+Created by the diseased will of a :ref:`tob:nihileth`, these zombies do
 their creator’s bidding without fear or hesitation. While their
 appearance differs from typical zombies, they too move with the
 same jerky motions and uneven gait as their undead brethren.
@@ -81,11 +81,11 @@ target must make a successful DC 13
 Constitution saving throw or become
 diseased. The disease has little effect for 1
 minute; during that time, it can be removed
-by bless, lesser restoration, or comparable
+by :ref:`srd:bless`, :ref:`srd:lesser-restoration`, or comparable
 magic. After 1 minute, the diseased creature’s skin
 becomes translucent and slimy. The creature cannot
 regain hit points unless it is at least partially underwater, and
-the disease can only be removed by heal or comparable magic.
+the disease can only be removed by :ref:`srd:heal` or comparable magic.
 Unless the creature is either fully submerged or frequently
 doused with water, it takes 6 (1d12) acid damage every 10
 minutes. If a creature dies while diseased, it rises in 2d6 rounds

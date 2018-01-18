@@ -99,7 +99,7 @@ slap attack.
 **Bite.** *Melee Weapon Attack:* +12 to hit, reach 10 ft., one target.
 *Hit:* 26 (4d8 + 8) piercing damage plus 5 (1d10) lightning
 damage, and the target must succeed on a DC 18 Constitution
-saving throw or become paralyzed for 1d4 rounds.
+saving throw or become :ref:`srd:paralyzed` for 1d4 rounds.
 
 **Tail Slap.** *Melee Weapon Attack:* +12 to hit, reach 10 ft., one
 target. *Hit:* 30 (5d8 + 8) bludgeoning damage plus 5 (1d10)

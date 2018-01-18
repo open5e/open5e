@@ -70,7 +70,7 @@ range, a creature must make a choice at the start of each of its
 turns: either avert its eyes so that it has disadvantage on attack
 rolls against the hag until the start of its next turn, or look at
 the hag and make a DC 15 Constitution saving throw. Failure
-on the saving throw leaves the character stunned until the start
+on the saving throw leaves the character :ref:`srd:stunned` until the start
 of its next turn.
 
 Actions

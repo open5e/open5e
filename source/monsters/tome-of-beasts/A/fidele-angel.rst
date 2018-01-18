@@ -83,7 +83,7 @@ components:
 **3/day:** :ref:`srd:cure-wounds`, :ref:`srd:scorching-ray` (5 rays)
 
 **1/day:** :ref:`srd:bless`, :ref:`srd:daylight`, :ref:`srd:detect-evil-and-good`, :ref:`srd:enhance-ability`,
-ref:`srd:hallow`, :ref:`srd:protection-from-evil-and-good`
+:ref:`srd:hallow`, :ref:`srd:protection-from-evil-and-good`
 
 **Magic Resistance.** The angel has advantage on saving throws
 against spells and other magical effects.
@@ -92,7 +92,7 @@ against spells and other magical effects.
 it is in eagle form.
 
 **To My Lover’s Side.** If separated from its mate, each fidele angel
-can use both plane shift and teleport 1/day to reunite.
+can use both :ref:`srd:plane-shift` and :ref:`srd:teleport` 1/day to reunite.
 
 **Unshakeable Fidelity.** Fidele angels are never voluntarily
 without their partners. No magical effect or power can

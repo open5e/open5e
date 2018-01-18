@@ -77,7 +77,7 @@ other simple mechanisms.
   is heavily obscured. Any
   breathing creature that’s
   in the affected area when the cloud is created or that starts
-  its turn in the cloud is poisoned. Once a poisoned creature
+  its turn in the cloud is :ref:`srd:poisoned`. Once a poisoned creature
   leaves the cloud, it makes a DC 13 Constitution saving throw
   at the end of its turns, ending the poisoned condition on a
   success. The smoke dissipates after 10 minutes, or after 1
@@ -103,7 +103,7 @@ other simple mechanisms.
   a counterweight. When a creature steps into the snare, it
   must make a successful DC 13 Dexterity saving throw or
   be yanked into the air and suspended, upside down, 5 feet
-  above the ground. The snared creature is restrained (escape
+  above the ground. The snared creature is :ref:`srd:restrained` (escape
   DC 13). The cord is AC 10 and has 5 hit points.
 
 Actions
@@ -128,7 +128,7 @@ that falls prone in the area takes 7 (2d6) piercing damage.
 
 **Stunner (1/Day).** *Ranged Weapon Attack:* +5 to hit, range 20/60
 ft., one target. *Hit:* 5 (1d4 + 3) bludgeoning damage, and the
-target is restrained (escape DC 13). While restrained, the target
+target is :ref:`srd:restrained` (escape DC 13). While restrained, the target
 takes 7 (2d6) lightning damage at the start of its turn and falls
 prone. The trapsmith has advantage on the attack roll if the
 target is wearing metal armor. A stunner is a bola made of

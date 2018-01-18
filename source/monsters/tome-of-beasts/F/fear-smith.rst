@@ -69,7 +69,7 @@ beneath their feet. When a creature that can see the fear
 smith’s eye starts its turn within 30 feet of the fear smith, the
 creature must make a successful DC 16 Wisdom saving throw
 or become disoriented. While disoriented, the creature falls
-prone each time it tries to move or take the Dash or Disengage
+:ref:`srd:prone` each time it tries to move or take the Dash or Disengage
 action. To recover from disorientation, a creature must start its
 turn outside the fear smith’s gaze and make a successful DC 16
 Wisdom saving throw.
@@ -77,12 +77,11 @@ Wisdom saving throw.
 To use this ability, the fear smith can’t be incapacitated and
 must see the affected creature. A creature that isn’t surprised
 can avert its eyes at the start of its turn to avoid the effect. In
-
 that case, no saving
 throw is necessary
 but the creature
 treats the fear smith as
-invisible until the start
+:ref:`srd:invisible` until the start
 of the creature’s next
 turn. If during its
 turn the creature
@@ -116,5 +115,5 @@ psychic damage and heals the fear smith by an equal amount.
 
 **Heartstopping Stare.** The fear smith terrifies a creature within 30
 feet with a look. The target must succeed on a DC 16 Wisdom
-saving throw or be stunned for 1 round and take 13 (3d8)
+saving throw or be :ref:`srd:stunned` for 1 round and take 13 (3d8)
 psychic damage and heal the fear smith by an equal amount.

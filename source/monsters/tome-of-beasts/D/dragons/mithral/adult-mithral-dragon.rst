@@ -83,7 +83,7 @@ wound it’s taken from a mithral dragon’s claws.
 
 **Frightful Presence.** Each creature of the dragon’s choice that
 is within 120 feet of the dragon and aware of it must succeed
-on a DC 18 Wisdom saving throw or become frightened for 1
+on a DC 18 Wisdom saving throw or become :ref:`srd:frightened` for 1
 minute. A creature can repeat the saving throw at the end of
 its turn, ending the effect on itself on a success. If a creature’s
 saving throw is successful or the effect ends for it, the creature is
@@ -113,5 +113,5 @@ regains spent legendary actions at the start of its turn.
 **Wing Attack (Costs 2 Actions).** The dragon beats its wings.
 Each creature within 10 feet of the dragon must succeed on a
 DC 21 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning
-damage and be knocked prone. The dragon can then fly up to
+damage and be knocked :ref:`srd:prone`. The dragon can then fly up to
 half its flying speed.

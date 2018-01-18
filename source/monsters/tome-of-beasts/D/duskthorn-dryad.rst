@@ -17,7 +17,7 @@ through trees to escape their foes but must stay near their vines.
 **Create Guardians.** Duskthorn dryads use their vines and
 the plants in their glades to defend themselves, animating
 enormously strong vine troll skeletons as well as ordinary
-skeletons, children of the briar, and other horrors. These
+skeletons, :ref:`tob:child-of-the-briar`, and other horrors. These
 defenders are linked to the tree and vines that animated them,
 are controlled by hearts within the tree. If the hearts are
 destroyed, the servants wither or scatter.
@@ -59,7 +59,7 @@ following spells, requiring no material components:
 **3/day each:** :ref:`srd:charm-person`, :ref:`srd:entangle`, :ref:`srd:invisibility`, :ref:`srd:magic-missile`
 
 **1/day each:** :ref:`srd:barkskin`, :ref:`srd:counterspell`, :ref:`srd:dispel-magic`, :ref:`srd:fog-cloud`,
-ref:`srd:shillelagh`, :ref:`srd:suggestion`, :ref:`srd:wall-of-thorns`
+:ref:`srd:shillelagh`, :ref:`srd:suggestion`, :ref:`srd:wall-of-thorns`
 
 **Magic Resistance.** The dryad has advantage on saving throws
 against spells and other magical effects.
@@ -75,7 +75,7 @@ of the second tree. Both trees must be Large or bigger.
 
 **Tree Dependent.** The dryad is mystically bonded to her
 duskthorn vines and must remain within 300 yards of them or
-become poisoned. If she remains out of range of her vines for
+become :ref:`srd:poisoned`. If she remains out of range of her vines for
 24 hours, she suffers 1d6 Constitution damage, and another
 1d6 points of Constitution damage every day that follows—
 eventually, this separation kills the dryad. A dryad can bond

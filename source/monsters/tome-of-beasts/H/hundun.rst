@@ -70,11 +70,11 @@ speak intelligibly
 **Brainless.** Hunduns are immune to any spell or effect that
 allows an Intelligence, Wisdom, or Charisma saving throw.
 Trying to contact or read a Hundun’s mind confuses the caster
-as the spell for 1 round.
+as the :ref:`srd:confusion` spell for 1 round.
 
 **Dance of Creation.** Hunduns can perform an act of magical
 creation almost unlimited in scope every 1d8 days. The effect
-is equivalent to a wish spell, but it must create something.
+is equivalent to a :ref:`srd:wish` spell, but it must create something.
 
 **Enlightening Befuddlement.** When a hundun’s confusion spell
 affects a target, it can elect to use the following table rather
@@ -97,10 +97,10 @@ requiring no material components:
 **Constant:** :ref:`srd:confusion` (always centered on the hundun), :ref:`srd:detect-thoughts`
 
 **At will:** :ref:`srd:create-or-destroy-water`, :ref:`srd:dancing-lights`, :ref:`srd:mending`,
-ref:`srd:prestidigitation`
+:ref:`srd:prestidigitation`
 
 **3/day each:** :ref:`srd:compulsion`, :ref:`srd:dimension-door`, :ref:`srd:black-tentacles`,
-ref:`srd:irresistible-dance`
+:ref:`srd:irresistible-dance`
 
 **1/day each:** :ref:`srd:awaken`, :ref:`srd:creation`, :ref:`srd:heroes-feast`, :ref:`srd:magnificent-mansion`, :ref:`srd:plant-growth`, :ref:`srd:reincarnate`, :ref:`srd:stone-shape`
 

@@ -79,13 +79,13 @@ target must make a successful DC 16 Dexterity saving throw or
 one of its eyes is bitten out. A creature with just one remaining
 eye has disadvantage on ranged attack rolls and on Wisdom
 (Perception) checks that rely on sight. If both (or all) eyes are
-lost, the target is blinded. The regenerate spell and comparable
+lost, the target is :ref:`srd:blinded`. The :ref:`srd:regenerate` spell and comparable
 magic can restore lost eyes. Also see Implant Egg, below.
 
 **Claw.** *Melee Weapon Attack:* +8 to hit, reach 5 ft., one target.
 *Hit:* 17 (3d8 + 4) piercing damage. If both attacks hit the
 same Medium or smaller target in a single turn, the target is
-grappled (escape DC 14).
+:ref:`srd:grappled` (escape DC 14).
 
 **Implant Egg.** If a horakh’s bite attack reduces a grappled
 creature to 0 hit points, or it bites a target that’s already at
@@ -93,8 +93,8 @@ creature to 0 hit points, or it bites a target that’s already at
 The deposited egg grows for 2 weeks before hatching. If the
 implanted victim is still alive, it loses 1d2 Constitution every 24
 hours and has disadvantage on attack rolls and ability checks.
-After the first week, the victim is incapacitated and blinded.
+After the first week, the victim is :ref:`srd:incapacitated` and :ref:`srd:blinded`.
 When the egg hatches after 2 weeks, an immature horakh
 erupts from the victim’s head, causing 1d10 bludgeoning, 1d10
-piercing, and 1d10 slashing damage. A lesser restoration spell
+piercing, and 1d10 slashing damage. A :ref:`srd:lesser-restoration` spell
 can kill the egg during its incubation.

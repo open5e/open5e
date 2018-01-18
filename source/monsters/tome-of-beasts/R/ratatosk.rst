@@ -63,7 +63,7 @@ innately cast the following spells without
 requiring material or somatic components:
 
 **At will:** :ref:`srd:animal-messenger`, :ref:`srd:message`,
-ref:`srd:vicious-mockery`
+:ref:`srd:vicious-mockery`
 
 **1/day each:** :ref:`srd:commune`, :ref:`srd:mirror-image`
 

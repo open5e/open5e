@@ -85,14 +85,14 @@ Actions
 **Gaze of Ancient Light (Recharge 6).** The golem emits a burst
 of blinding light, affecting all opponents within 30 feet who
 are visible to it. These creatures must make a successful DC
-17 Constitution saving throw or be permanently blinded. All
+17 Constitution saving throw or be permanently :ref:`srd:blinded`. All
 affected creatures, including those that save successfully, are
-stunned until the end of their next turn.
+:ref:`srd:stunned` until the end of their next turn.
 
 **Primal Voice of Doom (1/Day).** The golem intones a disturbing
 invocation of the sun god. Creatures within 30 feet of the
 golem must make a successful DC 17 Wisdom saving throw or
-become frightened Deaf or unhearing creatures are unaffected.
+become :ref:`srd:frightened`. Deaf or unhearing creatures are unaffected.
 
 **Shoot into the Sun (1 minute/day).** When roused for combat,
 the golem opens many of its eyes, emitting blinding light. All

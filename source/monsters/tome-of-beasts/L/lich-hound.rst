@@ -90,7 +90,7 @@ Actions
 **Bite.** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target.
 *Hit:* 10 (1d12 + 4) piercing damage. If the target is a creature,
 it must succeed on a DC 14 Strength saving throw or be
-knocked prone.
+knocked :ref:`srd:prone`.
 
 **Ethereal Jaunt.** As a bonus action, the lich hound can magically
 shift from the Material Plane to the Ethereal Plane, or vice versa.
@@ -98,7 +98,7 @@ shift from the Material Plane to the Ethereal Plane, or vice versa.
 **Gut Rip.** As a bonus action, the lich hound tears into any
 adjacent prone creature, inflicting 19 (3d12) slashing damage.
 The target must succeed on a DC 14 Constitution saving throw
-or be incapacitated for 1d4 rounds. An incapacitated creature
+or be :ref:`srd:incapacitated` for 1d4 rounds. An incapacitated creature
 repeats the saving throw at the end of each of its turns; a
 successful save ends the condition early.
 
@@ -106,6 +106,6 @@ successful save ends the condition early.
 prey plays havoc on the morale of living creatures that hear
 it. Howling requires and action, and creatures that hear the
 howl of a lich hound within 100 feet must succeed on a DC
-14 Wisdom saving throw or become frightened for 5 rounds.
+14 Wisdom saving throw or become :ref:`srd:frightened` for 5 rounds.
 Creatures that successfully save against this effect cannot be
 affected by a lich hound’s howl for 24 hours.

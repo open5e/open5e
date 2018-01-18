@@ -89,7 +89,7 @@ damage.
 **Icy Shortbow.** *Ranged Weapon Attack:* +5 to hit, range 80/320
 ft., one target. *Hit:* 5 (1d4 + 3) piercing damage plus 2 (1d4)
 cold damage, and the target must make a successful DC
-13 Constitution saving throw or gain 2 levels of exhaustion
+13 Constitution saving throw or gain 2 levels of :ref:`srd:exhaustion`
 from the arrow’s icy chill. If the save succeeds, the target also
 becomes immune to further exhaustion from beli arrows for
 24 hours (but any levels of exhaustion already gained remain

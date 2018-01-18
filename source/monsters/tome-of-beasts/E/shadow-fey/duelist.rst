@@ -12,6 +12,7 @@ Swift and sure beyond compare, duelists are often taller and
 more wiry than others of their kind. Their armor, clothing, and
 weapons are of exquisite make, fashioned from only the finest
 materials, as befits their station.
+
 A nobleman or woman of the shadow fey is not to be taken
 lightly—many courtiers or politicians are deadly with their slim
 blades, and they are known to distill virulent poisons. Often a
@@ -71,7 +72,7 @@ a dagger drawn, it can also make one dagger attack.
 **Dagger.** *Melee or Ranged Weapon Attack:* +8 to hit, reach 5
 ft. or range 20/60 ft., one target. *Hit:* 7 (1d4 + 5) piercing
 damage, and a target creature must succeed on a DC 15
-Constitution saving throw or become poisoned for 1 minute.
+Constitution saving throw or become :ref:`srd:poisoned` for 1 minute.
 A poisoned creature repeats the save at the end of each of its
 turns, ending the effect on a success.
 

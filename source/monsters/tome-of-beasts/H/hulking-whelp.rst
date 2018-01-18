@@ -50,7 +50,8 @@ nonmagical weapons
 **Calm State.** When a hulking whelp is calm and unafraid, it
 uses the following statistics instead of those listed above: Size
 Small; *HP* 9 (6d6 – 12); *Speed* 20 ft.; *STR* 8 (-1); *CON* 6 (-2);
-*Languages* Common, Sylvan
+
+**Languages** Common, Sylvan
 
 **Poor Senses.** A hulking whelp has poor hearing and is
 nearsighted. It can see in normal or dim light up to 30 feet and
@@ -65,7 +66,7 @@ after the attack is made but before damage
 is done. Nearby creatures and objects are
 pushed to the nearest available space and
 must make a successful DC 15 Strength
-saving throw or fall prone. Weapons, armor,
+saving throw or fall :ref:`srd:prone`. Weapons, armor,
 and other objects worn or carried by the hulking
 whelp grow (and shrink again) proportionally
 when it changes size. Overcome by raw emotion,
@@ -74,7 +75,7 @@ it can see (which isn’t much) and reach (which
 is quite a lot). The transformation lasts until the
 hulking whelp is unaware of any nearby creatures
 for 1 round, it drops to 0 hit points, it has
-5 levels of exhaustion, or it’s affected by a calm emotions
+5 levels of exhaustion, or it’s affected by a :ref:`srd:calm-emotions`
 spell or comparable magic. The transformation isn’t entirely
 uncontrollable; people or creatures the whelp knows and
 trusts can be near it without triggering the reaction. Under

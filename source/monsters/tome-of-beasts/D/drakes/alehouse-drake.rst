@@ -70,7 +70,7 @@ components:
 **At will:** *friends*, :ref:`srd:vicious-mockery`
 
 **5/day each:** :ref:`srd:calm-emotions`, *dissonant whispers*, *ray of sickness*,
-ref:`srd:hideous-laughter`
+:ref:`srd:hideous-laughter`
 
 **3/day each:** :ref:`srd:confusion`, :ref:`srd:invisibility`
 
@@ -90,12 +90,12 @@ Actions
 
 **Breath Weapon (Recharge 5-6).** An alehouse drake can burp a
 cloud of intoxicating gas in a 15-foot cone. A creature caught
-in the cloud becomes poisoned for 1 minute and must make a
-successful DC 14 Constitution saving throw or become stunned
+in the cloud becomes :ref:`srd:poisoned` for 1 minute and must make a
+successful DC 14 Constitution saving throw or become :ref:`srd:stunned`
 for 1d6 rounds.
 
 **Discombobulating Touch.** An alehouse drake can make a touch
 attack that grants its target +3 to Dexterity-based skill checks
-and melee attacks but also induces confusion as per the spell.
+and melee attacks but also induces :ref:`srd:confusion` as per the spell.
 This effect lasts for 1d4 rounds. A successful DC 13 Charisma
 saving throw negates this effect.

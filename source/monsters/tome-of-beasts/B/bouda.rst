@@ -102,7 +102,7 @@ mephitic claw attack.
 **Mephitic Claw.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one
 target. *Hit:* 11 (2d6 + 4) slashing damage, and the target must
 make a successful DC 15 Constitution saving throw or become
-poisoned for 1 round by the visible cloud of vermin swarming
+:ref:`srd:poisoned` for 1 round by the visible cloud of vermin swarming
 around the bouda’s forearms.
 
 **Ravenous Gorge.** The bouda consumes the organs of a corpse

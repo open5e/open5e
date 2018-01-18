@@ -93,15 +93,15 @@ turn, but it never constricts more than once per turn.
 **Tentacle.** *Melee Weapon Attack:* +11 to hit, reach 15 ft., one
 target. *Hit:* 10 (1d6 + 7) necrotic damage. If two tentacle
 attacks hit the same target in one turn, the target is also
-grappled (escape DC 17).
+:ref:`srd:grappled` (escape DC 17).
 
 **Constrict.** The constricted creature takes 26 (3d12 + 7)
-bludgeoning damage and is grappled (escape DC 17) and
-restrained.
+bludgeoning damage and is :ref:`srd:grappled` (escape DC 17) and
+:ref:`srd:restrained`.
 
 **Ink Cloud (Recharge 6).** The krake spawn emits black,
 venomous ink in a 30-foot cloud as a bonus action while
-underwater. The cloud affects vision as the darkness
+underwater. The cloud affects vision as the :ref:`srd:darkness`
 spell, and any creature that starts its turn inside
 the cloud takes 10 (3d6) poison damage, or half
 damage with a successful DC 18 Constitution
@@ -118,6 +118,6 @@ causes 3 (1d6) acid
 damage and targets must
 make a successful DC 18
 Constitution saving throw
-or be incapacitated
+or be :ref:`srd:incapacitated`
 until the end of
 their next turn.

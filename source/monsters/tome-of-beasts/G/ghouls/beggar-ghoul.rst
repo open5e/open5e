@@ -9,16 +9,9 @@ hungrily at a sliver of bone. It moves in a crouch so low that it’s
 almost crawling, but its eyes glow like flickering coals and it exudes
 a desperate ferocity with each raspy, rot-fouled breath.*
 
-**Lesser Ghouls.** Most citizens of the ghoul empire are not
+**Lesser Ghouls.** Most ghouls are not
 darakhul but lesser strains of ghouls and ghasts. Beggar
 ghouls are by far the weakest of these.
-Though they make up the majority of any
-military action involving the legions, they
-are employed as fodder, and the most
-wretched of them are barely suitable even
-for that. They eke out miserable livings by
-scrounging for food near the surface or
-by begging in the ghoul cities.
 
 **Withered and Deprived.** Thin
 and emaciated even for undead,
@@ -28,8 +21,6 @@ flesh-covered skeletons. While some beggar
 ghouls spend their entire existence in undeath as
 this weak strain, at least a few were once stronger ghouls who
 withered when they were trapped far from sources of flesh.
-Others were exiled from the empire without the resources to
-fend for themselves.
 
 Beggar Ghoul
 ~~~~~~~~~~~~
@@ -75,6 +66,6 @@ Actions
 **Claws.** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target.
 *Hit:* 7 (2d4 + 2) slashing damage. If the target is a creature
 other than an elf or undead, it must succeed on a DC 10
-Constitution saving throw or be paralyzed for 1 minute. A
+Constitution saving throw or be :ref:`srd:paralyzed` for 1 minute. A
 paralyzed target repeats the saving throw at the end of each of
 its turns, ending the effect on itself on a success.

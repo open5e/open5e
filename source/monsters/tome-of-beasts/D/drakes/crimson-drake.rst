@@ -12,7 +12,7 @@ settlements, making nighttime forays to set fires and hunt those
 who flee the flames—traits that make humanoid tribes prize
 them as raiding partners. Goblins gleefully adopt a crimson
 drake as a mascot to burn things down while they get on with
-slaughtering people. Red dragons and flame dragons regard a
+slaughtering people. Red dragons and :ref:`tob:flame-dragons` regard a
 crimson drake as a pet, at best, but this rarely works out. When
 it is inevitably insulted by its larger cousins, a malicious crimson
 drake may even intentionally
@@ -21,7 +21,7 @@ hunters to the dragon’s lair.
 
 **Mistaken for Pseudodragons.**
 A crimson drake’s scales and features are
-quite similar to those of a pseudodragon,
+quite similar to those of a :ref:`srd:pseudodragon`,
 and they will imitate a pseudodragon’s
 hunting cry or song to trick
 victims into approaching.
@@ -85,7 +85,7 @@ stinger attack.
 
 **Stinger.** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target.
 *Hit:* 4 (1d4 + 2) piercing damage, and the target must succeed
-on a DC 13 Constitution saving throw or become poisoned for
+on a DC 13 Constitution saving throw or become :ref:`srd:poisoned` for
 1 hour. If the saving throw fails by 5 or more, the target takes
 2 (1d4) poison damage at the start of each of its turns for 3
 rounds. The target may repeat the saving throw at the end of

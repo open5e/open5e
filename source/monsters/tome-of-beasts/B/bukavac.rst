@@ -98,7 +98,7 @@ attack, or one bite and one gore attack.
 *Hit:* 21 (3d10 + 5) piercing damage.
 
 **Claw.** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target.
-*Hit:* 11 (1d12 + 5) slashing damage and grapples (escape DC
+*Hit:* 11 (1d12 + 5) slashing damage and target is :ref:`srd:grappled` (escape DC
 15). A bukavac can grapple up to 2 Medium size foes.
 
 **Gore.** *Melee Weapon Attack:* +9 to hit, reach 10 ft., one target.
@@ -110,4 +110,4 @@ Creatures within 15 feet who fail a DC 17 Constitution saving
 throw take 36 (8d8) thunder damage and are permanently
 deafened. Those succeeding on the saving throw take half
 damage and are not deafened. The deafness can be cured
-with lesser restoration.
+with :ref:`srd:lesser-restoration`.

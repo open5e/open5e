@@ -105,7 +105,7 @@ attacks.
 **Gore.** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target.
 *Hit:* 18 (3d8 + 5) piercing damage and a target creature must
 succeed on a DC 15 Strength saving throw or be knocked
-prone.
+:ref:`srd:prone`.
 
 **Thunderstrike (Recharge 5-6).** The rubezahl calls a sizzling bolt
 of lightning out of the sky, or from the air if underground or
@@ -113,4 +113,4 @@ indoors, to strike a point the rubezahl can see within 150 feet.
 All creatures within 20 feet of the target point take 36 (8d8)
 lightning damage, or half damage with a successful DC 16
 Dexterity saving throw. A creature that fails its saving throw is
-stunned until the start of the rubezahl’s next turn.
+:ref:`srd:stunned` until the start of the rubezahl’s next turn.

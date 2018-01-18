@@ -68,7 +68,7 @@ of desiccating thirst. The first time a creature
 enters the aura on its turn, or when it starts its
 turn in the aura, it must make a successful
 DC 12 Constitution saving throw or gain
-one level of exhaustion. If the saving throw
+one level of :ref:`srd:exhaustion`. If the saving throw
 is successful, the creature is immune to the
 gray thirster’s Thirst for the next 24 hours.
 
@@ -86,7 +86,7 @@ ft., one creature. *Hit:* 5 (1d4 + 3) necrotic damage. If the target
 failed a saving throw against the Thirst trait at any point in this
 encounter, its hit point maximum is reduced by an amount
 equal to the damage it took from this attack. This reduction
-lasts until the target has no exhaustion levels.
+lasts until the target has no :ref:`srd:exhaustion` levels.
 
 **Drought (1/Day).** The gray thirster draws the moisture from
 a 20-foot radius area centered on itself. Nonmagical water

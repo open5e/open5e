@@ -58,7 +58,7 @@ Medium monstrosity, chaotic evil
 **Pounce.** If the likho moves at least 20 feet straight toward
 a creature and then hits it with a claw attack on the
 same turn, that target must succeed on a DC 14 Strength
-saving throw or be knocked prone. If the target is prone,
+saving throw or be knocked :ref:`srd:prone`. If the target is prone,
 the likho can use a bonus action to make two additional claw
 attacks against it.
 

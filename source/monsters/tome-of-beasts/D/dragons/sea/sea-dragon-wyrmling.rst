@@ -41,5 +41,5 @@ wave of frigid seawater in a 15-foot cone. Each creature in that
 area must make a DC 12 Dexterity saving throw. On a failure,
 the target takes 11 (2d10) bludgeoning damage and 11 (2d10)
 cold damage, and is pushed 15 feet away from the dragon and
-knocked prone. On a successful save the creature takes half as
+knocked :ref:`srd:prone`. On a successful save the creature takes half as
 much damage and isn’t pushed or knocked prone.

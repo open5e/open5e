@@ -79,7 +79,7 @@ claw attacks.
 
 **Bite.** *Melee Weapon Attack:* +7 to hit, reach 10 ft., one target.
 *Hit:* 18 (4d6 + 4) piercing damage. If the target is a Medium
-or smaller creature, it is grappled (escape DC 14). Until this
+or smaller creature, it is :ref:`srd:grappled` (escape DC 14). Until this
 grapple ends, the target is restrained and the kongamato can’t
 bite another target. When the kongamato moves, any target it
 is grappling moves with it.

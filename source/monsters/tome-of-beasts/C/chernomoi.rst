@@ -65,7 +65,7 @@ is Charisma (spell save DC 13). It can innately cast the following
 spells, requiring no material components:
 
 **At will:** :ref:`srd:detect-magic`, :ref:`srd:invisibility`, :ref:`srd:mage-hand`, :ref:`srd:mending`, :ref:`srd:message`,
-ref:`srd:prestidigitation`
+:ref:`srd:prestidigitation`
 
 **1/day each:** :ref:`srd:detect-poison-and-disease`, :ref:`srd:dimension-door`
 

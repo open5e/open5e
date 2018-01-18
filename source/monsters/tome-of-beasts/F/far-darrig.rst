@@ -68,13 +68,13 @@ following spells, requiring no material components:
 
 **At will:** :ref:`srd:calm-emotions`, *charm animal* (as :ref:`srd:charm-person` but
 affects beasts only), :ref:`srd:cure-wounds`, :ref:`srd:detect-poison-and-disease`,
-ref:`srd:water-breathing`, :ref:`srd:water-walk`
+:ref:`srd:water-breathing`, :ref:`srd:water-walk`
 
 **3/day each:** :ref:`srd:barkskin`, :ref:`srd:conjure-woodland-beings`, *hold animal* (as
-ref:`srd:hold-person` but affects beasts only), :ref:`srd:jump`, :ref:`srd:longstrider`
+:ref:`srd:hold-person` but affects beasts only), :ref:`srd:jump`, :ref:`srd:longstrider`
 
 **1/day each:** :ref:`srd:commune-with-nature`, :ref:`srd:freedom-of-movement`,
-ref:`srd:nondetection`, :ref:`srd:tree-stride`
+:ref:`srd:nondetection`, :ref:`srd:tree-stride`
 
 Actions
 ~~~~~~~
@@ -84,7 +84,7 @@ Actions
 **Antler Glaive.** *Melee Weapon Attack:* +4 to hit, reach 5 ft. or
 10 ft., one target. *Hit:* 7 (1d10 + 2) slashing damage and the
 target must make a successful DC 13 Strength saving throw
-or either be disarmed or fall prone; the attacking far darrig
+or either be disarmed or fall :ref:`srd:prone`; the attacking far darrig
 chooses which effect occurs.
 
 **Enchanted Glaive Maneuvers.** A far darrig can magically

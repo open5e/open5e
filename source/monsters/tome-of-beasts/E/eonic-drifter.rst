@@ -87,8 +87,8 @@ the original eonic drifter makes its future self disappear. If the
 present self sees its future self die, the eonic drifter must make
 a DC 13 Wisdom saving throw. There is no effect if the save
 succeeds. If the saving throw fails, roll 1d6 to determine the
-effect on the eonic drifter: 1 = frightened, 2 = incapacitated,
-3 = paralyzed, 4 = unconscious, 5 or 6 = has disadvantage on
+effect on the eonic drifter: 1 = :ref:`srd:frightened`, 2 = :ref:`srd:incapacitated`,
+3 = :ref:`srd:paralyzed`, 4 = :ref:`srd:unconscious`, 5 or 6 = has disadvantage on
 attack rolls and ability checks. These effects last 1d4 rounds.
 
 **Drift Forward (2/Day).** The future self makes a time warping

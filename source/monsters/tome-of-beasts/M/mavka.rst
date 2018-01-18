@@ -66,10 +66,10 @@ components:
 resistance, witch bolt
 
 **3/day each:** :ref:`srd:darkness`, :ref:`srd:hold-person`, :ref:`srd:inflict-wounds`, :ref:`srd:invisibility`,
-ref:`srd:silence`
+:ref:`srd:silence`
 
 **1/day each:** :ref:`srd:animate-dead`, :ref:`srd:bestow-curse`, :ref:`srd:blindness-deafness`,
-ref:`srd:contagion`, :ref:`srd:dispel-magic`, :ref:`srd:vampiric-touch`
+:ref:`srd:contagion`, :ref:`srd:dispel-magic`, :ref:`srd:vampiric-touch`
 
 **Nightmare Mount.** A mavka is bonded to a nightmare when it
 is created. Mavkas are encountered with their mounts 95% of

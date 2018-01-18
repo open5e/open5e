@@ -79,7 +79,7 @@ can innately cast the following spells, requiring no material
 components:
 
 **At will:** :ref:`srd:dancing-lights`, :ref:`srd:darkness`, :ref:`srd:detect-evil-and-good`, :ref:`srd:faerie-fire`,
-ref:`srd:invisibility`\*\*, :ref:`srd:fly`\*, :ref:`srd:mage-hand`, :ref:`srd:ray-of-frost` (\*\*only when wearing
+:ref:`srd:invisibility`\*\*, :ref:`srd:fly`\*, :ref:`srd:mage-hand`, :ref:`srd:ray-of-frost` (\*\*only when wearing
 a vanisher hat)
 
 **5/day each:** :ref:`srd:magic-missile`, :ref:`srd:ray-of-enfeeblement`, :ref:`srd:silent-image`

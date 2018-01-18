@@ -82,8 +82,8 @@ two tentacle attacks.
 
 **Tentacle.** *Melee Weapon Attack:* +5 to hit, reach 10 ft., one
 target. *Hit:* 10 (2d6 + 3) bludgeoning damage, and the target
-is grappled (escape DC 13). Until this grapple ends, the
-target is restrained and the tentacle can’t be used to attack a
+is :ref:`srd:grappled` (escape DC 13). Until this grapple ends, the
+target is :ref:`srd:restrained` and the tentacle can’t be used to attack a
 different target. The arboreal grappler has two tentacles, each
 of which can grapple one target. When the arboreal grappler
 moves, it can drag a Medium or smaller target it is grappling

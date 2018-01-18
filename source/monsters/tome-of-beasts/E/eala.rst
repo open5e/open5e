@@ -73,5 +73,5 @@ Reactions
 **Swan Song.** When the eala is reduced to 0 hit points, it can use
 its last breath sing a plaintive and beautiful melody. Creatures
 within 20 feet that can hear the eala must succeed on a DC
-13 Charisma saving throw or be incapacitated for 1 round. A
+13 Charisma saving throw or be :ref:`srd:incapacitated` for 1 round. A
 creature incapacitated in this way has its speed reduced to 0.

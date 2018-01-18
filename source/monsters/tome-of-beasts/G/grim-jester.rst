@@ -111,7 +111,7 @@ nihilistic joke of necromantic power. This joke has no effect
 on undead or constructs. All other creatures within 60 feet of
 the jester must make a DC 17 Wisdom saving throw. Those
 that fail fall prone in a fit of deadly laughter. The laughter lasts
-1d4 rounds, during which time the victim is incapacitated and
+1d4 rounds, during which time the victim is :ref:`srd:incapacitated` and
 unable to stand up from prone. At the end of its turn each
 round, an incapacitated victim must make a successful DC
 17 Constitution saving throw or be reduced to 0 hit points.

@@ -6,7 +6,7 @@ Gremlin, Rum
 
 *Found on docks and ships, these small, pot-bellied
 monstrosities have bright green hair, orange eyes, and a
-drunken stare. They are only a foot tall and weigh ten lb, but
+drunken stare. They are only a foot tall and weigh ten pounds, but
 they are renowned for causing mischief far beyond their tiny
 size. Their mouths are filled with razor-sharp teeth.*
 
@@ -26,8 +26,8 @@ the collateral damage their magic can wreak, frequently
 sparking accusations and quarrels in places they inhabit
 before picking off isolated victims.
 
-**Rat Friends.** Rum gremlins are often found with rat swarms
-or doppelrats they have trained to help protect their nests. The
+**Rat Friends.** Rum gremlins are often found with a :ref:`srd:swarm-of-rats`
+or one or more :ref:`tob:doppelrat` they have trained to help protect their nests. The
 sound of bells drives rum gremlins into a rage and they will go to
 great lengths to destroy the source of their torment.
 
@@ -84,8 +84,8 @@ attack.
 **Aura of Drunkenness.** A rum gremlin radiates an aura of
 drunkenness to a radius of 20 feet. Every creature that starts
 its turn in the aura must make a successful DC 12 Constitution
-saving throw against poison or be poisoned for one hour.
+saving throw against poison or be :ref:`srd:poisoned` for one hour.
 Creatures that have drunk any alcohol during the previous
 hour have disadvantage on the saving throw. While affected by
-this poison, a creature falls prone if it tries to move more than
+this poison, a creature falls :ref:`srd:prone` if it tries to move more than
 half its speed during a turn.

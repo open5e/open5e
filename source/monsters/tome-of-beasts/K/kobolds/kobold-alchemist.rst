@@ -92,7 +92,7 @@ effect for its Apothecary trait.
 **Explosive Flask (Recharge 5-6).** The kobold throws a flask of
 volatile substances at a point within 30 feet. The flask explodes
 in a 15-foot radius. Creatures in the area take 17 (5d6) poison
-damage and are poisoned for 1 minute, or take half damage
+damage and are :ref:`srd:poisoned` for 1 minute, or take half damage
 and are not poisoned with a successful DC 13 Dexterity saving
 throw. A poisoned creature repeats the saving throw at the
 end of each of its turns, ending the poisoned condition on a

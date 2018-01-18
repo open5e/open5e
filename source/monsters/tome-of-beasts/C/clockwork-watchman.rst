@@ -71,7 +71,7 @@ target. *Hit:* 7 (1d10 + 2) slashing damage.
 *Hit:* 5 (1d6 + 2) bludgeoning damage.
 
 **Net Cannon.** *Ranged Weapon Attack:* +3 to hit, range 5/15 ft.,
-one target, size Large or smaller. *Hit:* the target is restrained.
+one target, size Large or smaller. *Hit:* the target is :ref:`srd:restrained`.
 A mechanism within the clockwork huntsman’s chest can
 fire a net with a 20-foot trailing cable anchored within the
 watchman’s chest. A creature can free itself (or another

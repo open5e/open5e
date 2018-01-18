@@ -74,7 +74,7 @@ including driving blizzards, and are immune to snow blindness.
 without penalty.
 
 **Snow Invisibility.** In snowy environments, the ice maiden can
-turn invisible as a bonus action.
+turn :ref:`srd:invisible` as a bonus action.
 
 **Magic Resistance.** The ice maiden has advantage on saving
 throws against spells and other magical effects.
@@ -87,11 +87,11 @@ Charisma (spell save DC
 the following spells:
 
 **At will:** :ref:`srd:chill-touch`, :ref:`srd:detect-magic`, :ref:`srd:light`, :ref:`srd:mage-hand`,
-ref:`srd:prestidigitation`, :ref:`srd:resistance`
+:ref:`srd:prestidigitation`, :ref:`srd:resistance`
 
 **5/day each:** *endure-elements*
 (cold only), :ref:`srd:fear`, :ref:`srd:fog-cloud`,
-ref:`srd:misty-step`
+:ref:`srd:misty-step`
 
 **3/day each:** :ref:`srd:alter-self`, :ref:`srd:protection-from-energy`, :ref:`srd:sleet-storm`
 
@@ -112,18 +112,18 @@ snow cloud. Her stats are identical to an air elemental that
 deals cold damage instead of bludgeoning.
 
 **Icy Entangle.** Ice and snow hinder her opponent’s movement,
-as the entangle spell (DC 17).
+as the :ref:`srd:entangle` spell (DC 17).
 
 **Kiss of the Frozen Heart.** An ice maiden may kiss a willing
 individual, freezing the target’s heart. The target falls under the
-sway of a dominate spell, his or her alignment shifts to LE, and
+sway of a :ref:`srd:dominate-person` spell, his or her alignment shifts to LE, and
 he or she gains immunity to cold. The ice maiden can have
 up to three such servants at once. The effect can be broken
-by dispel magic (DC 17), greater restoration, or the kiss of
+by :ref:`srd:dispel-magic` (DC 17), :ref:`srd:greater-restoration`, or the kiss of
 someone who loves the target.
 
 **Snowblind Burst.** In a snowy environment, the ice maiden
 attempts to blind all creatures within 30 feet of herself. Those
-who fail a DC 17 Charisma saving throw are blinded for 1 hour.
+who fail a DC 17 Charisma saving throw are :ref:`srd:blinded` for 1 hour.
 Targets that are immune to cold damage are also immune to
 this effect.

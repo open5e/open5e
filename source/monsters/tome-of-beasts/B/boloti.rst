@@ -18,7 +18,7 @@ drag them to a watery death. They delight in storing up larders of
 victims under winter ice or under logs.
 
 **Fond of Allies.** Bolotis sometimes team up with vodyanoi,
-miremals, and will-o’-wisps to create cunning ambushes. They
+:ref:`tob:miremal`, and :ref:`srd:will-o'-wisp` to create cunning ambushes. They
 are happy with a single kill at a time.
 
 Boloti
@@ -55,7 +55,7 @@ spells, requiring no material components:
 **At will:** :ref:`srd:detect-magic`, :ref:`srd:water-walk`
 
 **3/day:** :ref:`srd:control-water`, :ref:`srd:create-or-destroy-water`, :ref:`srd:fog-cloud`,
-ref:`srd:invisibility`, :ref:`srd:see-invisibility`, :ref:`srd:water-breathing`
+:ref:`srd:invisibility`, :ref:`srd:see-invisibility`, :ref:`srd:water-breathing`
 
 **1/day:** :ref:`srd:wall-of-ice`
 
@@ -82,7 +82,7 @@ A creature in the same space as the boloti at the start of
 the creature’s turn takes 9 (2d8) bludgeoning damage unless
 it makes a successful DC 15 Dexterity saving throw. If the
 creature is Medium or smaller, a failed saving throw also means
-it is grappled (escape DC 11). Until this grapple ends, the
-target is restrained and unable to breathe unless it can breathe
+it is :ref:`srd:grappled` (escape DC 11). Until this grapple ends, the
+target is :ref:`srd:restrained` and unable to breathe unless it can breathe
 water. If the saving throw succeeds, the target is pushed 5 feet
 so it is out of the boloti’s space.

@@ -58,7 +58,7 @@ for 1 minute. For the duration, attacks that cause lightning
 damage have advantage against this creature, the creature has
 disadvantage on saving throws against lightning damage and
 lightning effects, and if the creature takes lightning damage, it
-is paralyzed until the end of its next turn. An affected creature
+is :ref:`srd:paralyzed` until the end of its next turn. An affected creature
 repeats the saving throw at the end of each of its turns, ending
 the effect on itself on a success.
 

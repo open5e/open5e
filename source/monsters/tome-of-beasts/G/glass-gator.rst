@@ -88,7 +88,7 @@ Actions
 ~~~~~~~
 
 **Claws.** *Melee Weapon Attack:* +4 to hit, reach 5 ft., one target.
-*Hit:* 7 (2d4 + 2) slashing damage, and the target is grappled
+*Hit:* 7 (2d4 + 2) slashing damage, and the target is :ref:`srd:grappled`
 (escape DC 12). Until this grapple ends, the target is restrained
 and the glass gator can’t attack a different target.
 

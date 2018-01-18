@@ -74,7 +74,7 @@ behind equipment it was wearing or carrying.
 al‑Aeshma can befoul its space with a choking scent. When the
 al-Aeshma moves through another creature’s space in gaseous
 form, the creature must succeed on a DC 18 Constitution
-saving throw or be incapacitated until the end of its next
+saving throw or be :ref:`srd:incapacitated` until the end of its next
 turn. Ill Wind lasts until the al-Aeshma leaves gaseous form or
 chooses to end the ability as a bonus action.
 
@@ -88,7 +88,7 @@ spells, requiring no material components:
 but makes food and drink unpalatable), :ref:`srd:tongues`, :ref:`srd:wind-walk`
 
 **1/day each:** :ref:`srd:creation`, :ref:`srd:gaseous-form`, :ref:`srd:insect-plague`, :ref:`srd:invisibility`,
-ref:`srd:major-image`
+:ref:`srd:major-image`
 
 **Regeneration.** The al-Aeshma regains 10 hit points at the start
 of its turn. If it takes fire or radiant damage, this trait doesn’t
@@ -109,7 +109,7 @@ magically forms on a point the al-Aeshma can see within
 120 feet of it. The dust devil lasts as long as the al-Aeshma
 maintains concentration (as if a spell). Any creature but the
 al-Aeshma that enters the dust devil must succeed on a DC 18
-Strength saving throw or be restrained by it; any number of
+Strength saving throw or be :ref:`srd:restrained` by it; any number of
 creatures may be restrained this way. At the start of a restrained
 creature’s turn, it takes 7 (2d6) slashing damage plus 7 (2d6)
 necrotic damage. The al-Aeshma can move the dust devil up

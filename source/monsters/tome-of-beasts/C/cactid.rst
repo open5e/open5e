@@ -74,8 +74,8 @@ uses Reel.
 
 **Tendril.** *Melee Weapon Attack:* +5 to hit, reach 15 ft., one
 creature. *Hit:* 10 (2d6 + 3) bludgeoning damage plus 3 (1d6)
-piercing damage, and a Medium or smaller target is grappled
-(escape DC 13). Until this grapple ends, the target is restrained.
+piercing damage, and a Medium or smaller target is :ref:`srd:grappled`
+(escape DC 13). Until this grapple ends, the target is :ref:`srd:restrained`.
 If the target is neither undead nor a construct, the cactid drains
 the target’s body fluids; at the start of each of the target’s
 turns, the target must make a DC 13 Constitution saving throw.

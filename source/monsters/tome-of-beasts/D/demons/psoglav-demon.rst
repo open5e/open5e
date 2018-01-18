@@ -71,7 +71,7 @@ spell, requiring no material components:
 **Magic Weapon.** The psoglav’s weapon attacks are magical.
 
 **Shadow Door (4/Day).** The psoglav has the ability to travel
-between shadows as if by means of a dimension door spell.
+between shadows as if by means of a :ref:`srd:dimension-door` spell.
 The magical transport must begin and end in an area with at
 least some dim light. The shadow door can span a maximum
 of 90 feet.
@@ -88,8 +88,8 @@ Actions
 beam from its single eye. One target within 60 feet of the
 psoglav is hit automatically by the ray. The target is knocked 20
 feet back and must succeed on a DC 15 Dexterity saving throw
-or be knocked prone. The target’s shadow stays in the space
-the target was originally in, and acts as an undead shadow
+or be knocked :ref:`srd:prone`. The target’s shadow stays in the space
+the target was originally in, and acts as an undead :ref:`srd:shadow`
 under the command of the psoglav demon.
 
 If the creature hit with the shadow stealing ray flees the

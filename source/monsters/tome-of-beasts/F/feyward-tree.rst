@@ -74,7 +74,7 @@ throws against spells and other magical effects.
 function differently against feyward trees:
 
 * A magical attack that deals cold damage slows a feyward
-  tree (as the slow spell) for 3 rounds.
+  tree (as the :ref:`srd:slow` spell) for 3 rounds.
 * A magical attack that deals lightning damage breaks any
   slow effect on the feyward tree and heals 1 hit point for each
   3 damage the attack would otherwise deal. If the amount of

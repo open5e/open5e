@@ -41,8 +41,8 @@ claw attacks.
 
 **Bite.** *Melee Weapon Attack:* +9 to hit, reach 10ft., one target.
 *Hit:* 25 (3d12 + 6) piercing damage. If the target is a Medium
-or smaller creature, it is grappled (escape DC 16). Until this
-grapple ends, the target is restrained and the spinosaurus can’t
+or smaller creature, it is :ref:`srd:grappled` (escape DC 16). Until this
+grapple ends, the target is :ref:`srd:restrained` and the spinosaurus can’t
 bite another target.
 
 **Claw.** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target.

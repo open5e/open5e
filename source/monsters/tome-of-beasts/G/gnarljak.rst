@@ -64,7 +64,7 @@ Actions
 
 **Bite.** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:*
 15 (2d8 + 6) piercing damage, and the target must succeed on
-a DC 16 Dexterity saving throw or fall prone.
+a DC 16 Dexterity saving throw or fall :ref:`srd:prone`.
 
 **Gnaw.** When a gnarljak knocks a Medium or smaller target
 prone, it immediately makes three additional bite attacks

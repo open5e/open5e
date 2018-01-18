@@ -44,12 +44,12 @@ always antagonistic.
 
 When breeding season hits, carrion beetles feast on the bodies
 of large animals. They are often found in symbiotic relationships
-with deathcap mycolids, darakhul, and related species. Many
+with :ref:`tob:deathcap-myconid`, :ref:`tob:darakhul-ghoul`, and related species. Many
 species in the deep underworld consider carrion beetles food
 and use their exoskeletons to fashion shields and armor (though
 their chitin is too brittle for weaponry).
 
-Purple worms are their major predators. Worms swallow
+The :ref:`srd:purple-worm` is their major predators. Worms swallow
 entire caravans when they find the beetles within.
 
 **Domesticated by Ghouls.** Domesticated by the darakhul,

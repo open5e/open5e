@@ -80,7 +80,7 @@ fire damage.
 
 **Fallen Glory (Recharge 5-6).** All creatures within 50 feet of the
 chained angel and in its line of sight take 19 (3d12) radiant
-damage and are knocked prone, or take half damage and
+damage and are knocked :ref:`srd:prone`, or take half damage and
 aren’t knocked prone with a successful DC 15 Strength saving
 throw.
 

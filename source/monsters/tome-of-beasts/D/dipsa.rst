@@ -82,5 +82,5 @@ a successful DC 12 Constitution saving throw or have its hit
 point maximum reduced by an amount equal to the damage
 taken. If a creature’s hit point maximum is reduced to 0 by this
 effect, the creature dies. This reduction to a creature’s hit point
-maximum lasts until it is affected by a lesser restoration spell or
+maximum lasts until it is affected by a :ref:`srd:lesser-restoration` spell or
 comparable magic.
