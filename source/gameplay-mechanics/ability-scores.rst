@@ -441,9 +441,7 @@ following terms define what you can lift or carry.
 
 **Carrying Capacity.** Your carrying capacity is your Strength score
 multiplied by 15. This is the weight (in pounds) that you can carry,
-which is high enough
-
-that most characters don't usually have to worry about it.
+which is high enough that most characters don't usually have to worry about it.
 
 **Push, Drag, or Lift.** You can push, drag, or lift a weight in
 pounds up to twice your carrying capacity (or 30 times your Strength
