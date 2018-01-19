@@ -92,7 +92,7 @@ Actions
 one target. *Hit:* the target is :ref:`srd:grappled` (escape DC 13) and the
 rusalka draws all the air from the target’s lungs with a kiss. If
 the rusalka has movement remaining, she drags the grappled
-creature into deep water, where it begins suffocating.
+creature into deep water, where it begins :ref:`srd:suffocating`.
 
 **Drowning Hair (1/Day).** The rusalka’s long hair tangles around
 a creature the rusalka has grappled. The creature takes 33

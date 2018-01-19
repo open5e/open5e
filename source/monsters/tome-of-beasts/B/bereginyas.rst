@@ -64,5 +64,5 @@ a bonus action.
 a semi-solid gaseous tendril down the target’s throat as
 a bonus action. The target must make a successful DC 14
 Strength saving or it is immediately out of breath and begins
-suffocating. Suffocation ends if the grapple is broken or if the
+:ref:`srd:suffocating`. Suffocation ends if the grapple is broken or if the
 bereginyas is killed.

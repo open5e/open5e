@@ -84,5 +84,5 @@ skin loops rapidly blacken, shrink, and draw the orifice tightly
 closed. It takes two actions and a sharp blade to sever the
 loops and reopen the orifice, and the process causes intense
 pain and 2 slashing damage. A victim whose mouth and nose
-have been sewn shut begins suffocating at the start of his or
+have been sewn shut begins :ref:`srd:suffocating` at the start of his or
 her next turn.

@@ -78,7 +78,7 @@ carrying isn’t transformed. It reverts to its true form if it dies.
 smaller creature or vice versa, it adheres to the creature,
 enveloping the creature’s face and covering its eyes and ears
 and airways (escape DC 13). The target creature is immediately
-:ref:`srd:blinded` and :ref:`srd:deafened`, and it begins suffocating at the
+:ref:`srd:blinded` and :ref:`srd:deafened`, and it begins :ref:`srd:suffocating` at the
 beginning of the mimic’s next turn.
 
 **False Appearance (Object Form Only).** While the mimic remains

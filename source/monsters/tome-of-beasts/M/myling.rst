@@ -100,8 +100,8 @@ one check is allowed; if it fails, the creature is powerless to aid
 itself except with magic. The creature must also make a DC
 10 Constitution saving throw; if it succeeds, the creature has a
 lungful of air and can hold its breath for (Constitution modifier
-+ 1) minutes before suffocation begins. Otherwise, it begins
-suffocating immediately. Allies equipped with digging tools
++ 1) minutes before :ref:`suffocation <srd:suffocating>` begins. Otherwise, it begins
+:ref:`srd:suffocating` immediately. Allies equipped with digging tools
 can reach it in four minutes divided by the number of diggers;
 someone using an improvised tool (a sword, a plate, bare
 hands) counts as only one-half of a digger.
