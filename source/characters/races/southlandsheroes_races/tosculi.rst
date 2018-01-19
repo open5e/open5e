@@ -72,7 +72,7 @@ Stalker trait.
 
 **Latent Hive Mind.** You know the :ref:`srd:message` cantrip. This
 cantrip is a psionic ability that does not require components. The
-cantrip also functions in a silence spell. At 3rd level you can cast the
+cantrip also functions in a :ref:`srd:silence` spell. At 3rd level you can cast the
 :ref:`srd:detect-thoughts` spell once, without the need for components,
 and you regain the ability to do so when you finish a long rest. This
 trait replaces the Gliding Wings trait.
@@ -141,7 +141,7 @@ Your choice of forms is limited. You may use Wild Shape to change into
 any insectoid, arachnid, or similar beast (such as a crab), though you
 must still have seen the creature to do so. In addition, you gain access
 to the following list of non-standard forms (you must follow the same CR
-and ability restrictions as outlined in Circle Forms): ankheg, carrion
+and ability restrictions as outlined in Circle Forms): :ref:`srd:ankheg`, carrion
 crawler, death wasp (use :ref:`srd:wyvern` stats), giant rhinoceros
 beetle (use :ref:`srd:triceratops` stats), and
 :ref:`srd:swarm-of-insects` (all variants). Other insectoid forms may be
@@ -151,7 +151,7 @@ Monstrous Wild Shape
 """"""""""""""""""""
 
 At 10th level, you can expend two uses of Wild Shape at the same time to
-transform into a bullette, chuul, phase spider, or umber hulk. This
+transform into a :ref:`srd:bulette`, :ref:`srd:chuul`, :ref:`srd:phase-spider`, or umber hulk. This
 ability replaces Elemental Wild Shape.
 
 Variant Ranger: Hivemaster (Beast Master)

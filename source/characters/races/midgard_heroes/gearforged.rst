@@ -58,5 +58,5 @@ exists, the cost of the ritual is just 500 gp, plus the cost of
 repairing the body (DM’s discretion, typically 1d4 x 50 gp). If your
 body was destroyed but your soul gem and memory tapes are intact, they
 can be implanted into a new body at the standard cost (10,000 gp). The
-only other magic capable of bringing you back from the dead is a wish
+only other magic capable of bringing you back from the dead is a :ref:`srd:wish`
 spell, which restores you fully.

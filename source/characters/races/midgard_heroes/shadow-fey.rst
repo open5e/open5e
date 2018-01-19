@@ -20,7 +20,7 @@ variation exists.
 shortsword, shortbow, and longbow.
 
 **Path of Shadows.** When in darkness, dim light, or a shadow large enough
-to cover your body, you can cast the misty step spell. You can use this
+to cover your body, you can cast the :ref:`srd:misty-step` spell. You can use this
 ability a number of times per day equal to your Charisma modifier
 (minimum 1), and you regain all expended uses when you finish a long
 rest. Charisma is your spellcasting ability for this spell.

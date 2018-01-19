@@ -113,7 +113,7 @@ poisonous saliva delivered through their bite attack. You can make a
 bite as an unarmed strike that deals piercing damage. On a successful
 bite attack, the target must make a Constitution saving throw against a
 DC equal to 8 + your proficiency modifier + your Constitution modifier.
-On a failed save, the target gains the poisoned condition for 1 minute.
+On a failed save, the target gains the :ref:`srd:poisoned` condition for 1 minute.
 The target can repeat the save at the end of its turn, ending the effect
 on a success. On a successful save or when the poisoned condition ends,
 the target becomes immune to your poison for 24 hours. You may use this

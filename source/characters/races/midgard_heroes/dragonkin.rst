@@ -11,6 +11,7 @@ Your dragonkin character has certain characteristics in
 common with all other dragonkin.
 
 **Ability Score Increase.** Your Charisma score increases by 2.
+
 **Age.** Dragonkin reach maturity by the age of 20. They can live beyond
 100 years, but it’s unknown just how old they can become.
 
@@ -82,7 +83,7 @@ are the most resilient of their ilk.
 
 **Ability Score Increase.** Your Constitution score increases by 1.
 
-**Stone Resolve.** You know the Blade Ward cantrip. Charisma
+**Stone Resolve.** You know the *Blade Ward* cantrip. Charisma
 is your spellcasting ability for it.
 
 **Resilient Scales.** You have resistance to acid damage.
