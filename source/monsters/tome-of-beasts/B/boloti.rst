@@ -18,7 +18,7 @@ drag them to a watery death. They delight in storing up larders of
 victims under winter ice or under logs.
 
 **Fond of Allies.** Bolotis sometimes team up with vodyanoi,
-:ref:`tob:miremal`, and :ref:`srd:will-o'-wisp` to create cunning ambushes. They
+:ref:`miremals <tob:miremal>`, and :ref:`will-o'-wisps <srd:will-o'-wisp>` to create cunning ambushes. They
 are happy with a single kill at a time.
 
 Boloti

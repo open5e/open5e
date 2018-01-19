@@ -79,7 +79,7 @@ to the normal damage done by its arrows. If so, the aridni
 chooses from the following effects:
 
 * Confusion. The target must succeed on a DC 14 Wisdom
-  saving throw or become confused (as :ref:`srd:confusion`) for 2d4-1
+  saving throw or become confused (as the :ref:`srd:confusion` spell) for 2d4-1
   rounds.
 * Fear. The target must succeed on a DC 14 Wisdom saving
   throw or become :ref:`srd:frightened` for 2d4 rounds.

@@ -23,7 +23,7 @@ supplied with a favorite libation and otherwise leaves him or her
 alone, the clurichaun will protect their wine cellars from thieves,
 drunkards, or worse—becoming quite vigorous when they feel
 the security of the cellars is threatened in any way. They have a
-particular hatred for the :ref:`tob:rum-gremlin` and for other clurichauns.
+particular hatred for :ref:`rum gremlins <tob:rum-gremlin>` and for other clurichauns.
 
 **Contest Evictions.** Most people can’t tolerate or afford
 a clurichaun’s presence for long. Unfortunately, attempts to

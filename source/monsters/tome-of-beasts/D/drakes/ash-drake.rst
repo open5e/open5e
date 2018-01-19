@@ -40,7 +40,7 @@ years of age.
 **Volcanic Haunts.** Ash drakes outside a city live in or near
 volcanic plateaus, and mutter about the lack of neighbors to
 bully. In the wild, an ash drake may partner with a red dragon or
-:ref:`tob:flame-dragons`, since the dragon provides its lesser cousin with
+:ref:`flame dragon <tob:flame-dragons>`, since the dragon provides its lesser cousin with
 plenty of ash.
 
 Ash Drake

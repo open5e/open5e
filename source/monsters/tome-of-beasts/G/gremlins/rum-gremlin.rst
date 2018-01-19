@@ -26,8 +26,8 @@ the collateral damage their magic can wreak, frequently
 sparking accusations and quarrels in places they inhabit
 before picking off isolated victims.
 
-**Rat Friends.** Rum gremlins are often found with a :ref:`srd:swarm-of-rats`
-or one or more :ref:`tob:doppelrat` they have trained to help protect their nests. The
+**Rat Friends.** Rum gremlins are often found with :ref:`rat swarms <srd:swarm-of-rats>`
+or :ref:`doppelrats <tob:doppelrat>` they have trained to help protect their nests. The
 sound of bells drives rum gremlins into a rage and they will go to
 great lengths to destroy the source of their torment.
 

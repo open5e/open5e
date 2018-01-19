@@ -40,7 +40,7 @@ lairs nestled in forests of poisonous sea urchins, stinging
 anemones, and toxic corals.
 
 Aside from humankind, the coral drake harbors a great
-rivalry with the :ref:`srd:dragon-turtle`. These beasts prize the same hunting
+rivalry with the :ref:`dragon turtles <srd:dragon-turtle>`. These beasts prize the same hunting
 grounds and nests and fight for supremacy in the richest reefs.
 
 Coral Drake

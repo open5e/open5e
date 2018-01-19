@@ -27,7 +27,7 @@ say their tears come from rage over their banishment and agony
 from knowing they can never return.
 
 **Hate Moss Lurkers.** Miremals are occasionally confused
-with a :ref:`tob:moss-lurker`, but the two despise one another and both
+with :ref:`miss lurkers <tob:moss-lurker>`, but the two despise one another and both
 consider the comparison odious.
 
 Miremal

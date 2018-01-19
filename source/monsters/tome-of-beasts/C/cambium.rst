@@ -103,7 +103,7 @@ the following effects:
   duration ends.
 
   **Melancholic Flux:** The target is :ref:`srd:incapacitated` for 1d4 rounds
-  and slowed (as :ref:`srd:slow`) for 3d6 rounds. The target can
+  and slowed (as the :ref:`srd:slow` spell) for 3d6 rounds. The target can
   repeat the saving throw at the end of each of its turns to
   shrug off the flux before the duration ends.
 

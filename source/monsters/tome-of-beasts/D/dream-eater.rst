@@ -108,7 +108,7 @@ scent for 24 hours.
 
 **Waking Dreams (1/Day).** Every creature within 20 feet of the
 dream eater must make a DC 16 Charisma saving throw. Those
-that fail enter waking dreams and are confused (as :ref:`srd:confusion`)
+that fail enter waking dreams and are confused (as the :ref:`srd:confusion` spell)
 for 6 rounds. On turns when the creature can act normally
 (rolls 9 or 10 for the confusion effect), it can repeat the saving
 throw at the end of its turn, and the effect ends early on a

@@ -93,8 +93,8 @@ Charisma saving throw or be :ref:`srd:stunned` for 1d4 rounds. Those
 who succeed on the saving throw are immune to that vila’s
 singing for 24 hours.
 
-**Forest Song (1/Day):** The vila magically calls 2d6 :ref:`srd:wolf` or 2
-:ref:`tob:wampus-cat`. The called creatures arrive in 1d4 rounds, acting
+**Forest Song (1/Day):** The vila magically calls 2d6 :ref:`wolves <srd:wolf>` or 2
+:ref:`wampus cats <tob:wampus-cat>`. The called creatures arrive in 1d4 rounds, acting
 as allies of the vila and obeying its spoken commands. The
 beasts remain for 1 hour, until the
 vila dies, or until the vila dismisses

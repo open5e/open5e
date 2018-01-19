@@ -27,7 +27,7 @@ them infernal powers and protection.
 
 **Scaly Mounts.** The behtus breed demonic iguanas as war
 mounts (treat as giant lizards). The most powerful behtu
-sorcerers and druids have been known to ride large :ref:`tob:crimson-drake`
+sorcerers and druids have been known to ride large :ref:`Crimson Drakes <tob:crimson-drake>`
 and small :ref:`tob:flame-dragons` as personal mounts.
 
 Behtu

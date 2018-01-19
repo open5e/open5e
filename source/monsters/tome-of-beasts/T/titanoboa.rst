@@ -23,7 +23,7 @@ crushing coils.
 **Slow to Mate.** Titanoboas mate rarely. They live for hundreds
 of years and never stop growing, which makes the need for
 propagation less urgent. When two titanoboas nest, the result
-is a brood of a half-dozen smaller snakes (:ref:`srd:giant-constrictor-snake`).
+is a brood of a half-dozen smaller snakes (:ref:`giant constrictor snakes <srd:giant-constrictor-snake>`).
 An adult titanoboa is at least 80 feet long and weighs
 6,000 lb. or more.
 

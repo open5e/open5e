@@ -17,7 +17,7 @@ raiders, often snatching victims up into the saddle, never to be
 seen again. They despise and trample foot soldiers as peasants
 unworthy of attention.
 
-**Hag Killers.** Mavkas are the mortal enemies of the :ref:`tob:red-hag`, who
+**Hag Killers.** Mavkas are the mortal enemies of the :ref:`red hags <tob:red-hag>`, who
 call these undead horrors “greenbanes.”
 
 **Undead Nature.** A mavka doesn’t require air, food, drink,

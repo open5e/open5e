@@ -179,7 +179,7 @@ aboleth, or the void absorbance action listed below. The nihileth
 cannot use the same effect two rounds in a row.
 
 * Void absorbance. A nihileth can pull the life force from those it
-  has converted to a :ref:`tob:nihilethic-zombie` to replenish its own life.
+  has converted to :ref:`nihilethic zombies <tob:nihilethic-zombie>` to replenish its own life.
   This takes 18 (6d6) hit points from zombies within 30 feet of
   the nihileth, spread evenly between the zombies, and healing
   the nihileth. If a zombie reaches 0 hit points from this action,

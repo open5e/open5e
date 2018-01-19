@@ -17,7 +17,7 @@ through trees to escape their foes but must stay near their vines.
 **Create Guardians.** Duskthorn dryads use their vines and
 the plants in their glades to defend themselves, animating
 enormously strong vine troll skeletons as well as ordinary
-skeletons, :ref:`tob:child-of-the-briar`, and other horrors. These
+skeletons, :ref:`children of the briar <tob:child-of-the-briar>`, and other horrors. These
 defenders are linked to the tree and vines that animated them,
 are controlled by hearts within the tree. If the hearts are
 destroyed, the servants wither or scatter.

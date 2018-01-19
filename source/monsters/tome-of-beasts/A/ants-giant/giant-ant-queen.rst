@@ -27,7 +27,7 @@ Large beast, unaligned
 **Keen Smell.** The giant ant queen has advantage on Wisdom
 (Perception) checks that rely on smell.
 
-**Queen’s Scent.** a :ref:`tob:giant-ant` defending a queen gain advantage
+**Queen’s Scent.** :ref:`Giant ants <tob:giant-ant>` defending a queen gain advantage
 on all attack rolls.
 
 Actions
