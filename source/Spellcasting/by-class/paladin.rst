@@ -18,6 +18,8 @@ Paladin Spells
 - :ref:`srd:protection-from-evil-and-good`
 - :ref:`srd:purify-food-and-drink`
 - :ref:`srd:shield-of-faith`
+- *Third Party Spells*
+- :ref:`dm:dm:draconic-smite`
 
 2nd Level
 ~~~~~~~~~

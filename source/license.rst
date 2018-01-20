@@ -40,6 +40,19 @@ All of the rest of the SRD5 is Open Game Content as described in Section
 
 The terms of the Open Gaming License Version 1.0a are as follows:
 
+Deep Magic: Dragon Magic
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Kobold Press, Midgard, Open Design, and their associated logos are trademarks of Open Design.
+
+Product Identity: The following items are hereby identified as Product Identity, as defined in the Open Game License
+version 1.0a, Section 1(e), and are not Open Content: All trademarks, registered trademarks, proper names (characters,
+place names, new deities, etc.), dialogue, plots, story elements, locations, characters, artwork, sidebars, and trade dress.
+(Elements that have previously been designated as Open Game Content are not included in this declaration.)
+
+Open Game Content: The Open content in this book includes the Dragon Mage arcane tradition, the feats, and the Dragon
+Magic spells. No other portion of this work may be reproduced in any form without permission.
+
 OPEN GAME LICENSE Version 1.0a
 
 The following text is the property of Wizards of the Coast, Inc. and is
@@ -155,13 +168,74 @@ Reserved.
 
 15. COPYRIGHT NOTICE
 
-    Open Game License v 1.0a Copyright 2000, Wizards of the Coast, LLC.
+    **Open Game License v 1.0a** Copyright 2000, Wizards of the Coast, LLC.
 
-    System Reference Document 5.1 Copyright 2016, Wizards of the Coast,
+    **System Reference Document 5.1** Copyright 2016, Wizards of the Coast,
     Inc.; Authors Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney
     Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell,
     Chris Sims, and Steve Townshend, based on original material by E. Gary
     Gygax and Dave Arneson.
+
+    **System Reference Document** Copyright 2000. Wizards of the Coast,
+    Inc; Authors Jonathan Tweet, Monte Cook, Skip Williams, based on
+    material by E. Gary Gygax and Dave Arneson.
+
+    **Pathfinder RPG Core Rulebook** Copyright 2009, Paizo Publishing,
+    LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet,
+    Monte Cook, and Skip Williams.
+
+    **The Book of Experimental Might** Copyright 2008, Monte J. Cook.
+    All rights reserved.
+
+    **Advanced Races: Centaurs.** © 2014 Open Design; Author: Karen
+    McDonald. KoboldPress.com
+
+    **Advanced Races: Dragonkin** © 2013 Open Design; Authors: Amanda
+    Hamon Kunz.
+
+    **Advanced Races: Gearforged.** © 2013 Open Design; Authors: Thomas
+    Benton.
+
+    **Advanced Races: Kobolds** © 2013 Open Design; Authors: Nicholas
+    Milasich, Matt Blackie.
+
+    **Advanced Races: Ravenfolk** © 2014 Open Design; Authors: Wade
+    Rockett.
+
+    **Advanced Races: Shadow Fey.** © 2014 Open Design; Authors: Carlos
+    and Holly Ovalle.
+
+    **Advanced Races: Trollkin.** © 2015 Open Design; Authors: Steven
+    T.Helt, Stephen Rowe, and Dan Dillon.
+
+    **Midgard Heroes** © 2015 Open Design; Author: Dan Dillon.
+
+    **Advanced Races: Aasimar.** © 2014 Open Design; Author: Adam
+    Roy.KoboldPress.com
+
+    **Advanced Races: Gnolls.** © 2015 Open Design; Authors: Ben
+    McFarland and Brian Suskind.
+
+    **Advanced Races: Lizardfolk.** © 2015 Open Design; Authors: Steven
+    T.Helt, Stephen Rowe, and Dan Dillon.
+
+    **Advanced Races: Werelions.** © 2015 Open Design; Authors: Ben
+    McFarland and Brian Suskind.
+
+    **Southlands Heroes** © 2015 Open Design; Author: Rich Howard.
+
+    **System Reference Document 5.0** Copyright 2016, Wizards of
+    the Coast, Inc.; Authors Mike Mearls, Jeremy Crawford, Chris
+    Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J.
+    Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend,
+    based on original material by E. Gary Gygax and Dave Arneson.
+
+    **Tome of Beasts.** Copyright 2016, Open Design; Authors Chris
+    Harris, Dan Dillon, Rodrigo Garcia Carmona, and Wolfgang
+    Baur.
+
+    **Deep Magic: Dragon Magic** © 2017 Open Design; Author:
+    Shawn Merwin.
 
 END OF LICENSE
 

@@ -55,6 +55,8 @@ Cantrips (0 Level)
 - :ref:`srd:pass-without-trace`
 - :ref:`srd:protection-from-poison`
 - :ref:`srd:spike-growth`
+- *Third Party Spells*
+- :ref:`dm:dm:detect-dragons`
 
 3rd Level
 ~~~~~~~~~
@@ -71,6 +73,8 @@ Cantrips (0 Level)
 - :ref:`srd:water-breathing`
 - :ref:`srd:water-walk`
 - :ref:`srd:wind-wall`
+- *Third Party Spells*
+- :ref:`dm:dm:phantom-dragon`
 
 4th Level
 ~~~~~~~~~
