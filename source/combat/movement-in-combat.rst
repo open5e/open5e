@@ -82,53 +82,33 @@ magic such as teleportation. Every foot of movement while crawling costs
 1 extra foot. Crawling 1 foot in difficult terrain, therefore, costs 3
 feet of movement.
 
-    .. rubric:: Interacting with Objects Around You
-       :name: interacting-with-objects-around-you
+Interacting with Objects Around You
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    Here are a few examples of the sorts of thing you can do in tandem
-    with your movement and action:
+Here are a few examples of the sorts of thing you can do in tandem
+with your movement and action:
 
-    -  draw or sheathe a sword
-
-    -  open or close a door
-
-    -  withdraw a potion from your backpack
-
-    -  pick up a dropped axe
-
-    -  take a bauble from a table
-
-    -  remove a ring from your finger
-
-    -  stuff some food into your mouth
-
-    -  plant a banner in the ground
-
-    -  fish a few coins from your belt pouch
-
-    -  drink all the ale in a flagon
-
-    -  throw a lever or a switch
-
-    -  pull a torch from a sconce
-
-    -  take a book from a shelf you can reach
-
-    -  extinguish a small flame
-
-    -  don a mask
-
-    -  pull the hood of your cloak up and over your head
-
-    -  put your ear to a door
-
-    -  kick a small stone
-
-    -  turn a key in a lock
-
-    -  tap the floor with a 10-foot pole
-
-    -  hand an item to another character
+-  draw or sheathe a sword
+-  open or close a door
+-  withdraw a potion from your backpack
+-  pick up a dropped axe
+-  take a bauble from a table
+-  remove a ring from your finger
+-  stuff some food into your mouth
+-  plant a banner in the ground
+-  fish a few coins from your belt pouch
+-  drink all the ale in a flagon
+-  throw a lever or a switch
+-  pull a torch from a sconce
+-  take a book from a shelf you can reach
+-  extinguish a small flame
+-  don a mask
+-  pull the hood of your cloak up and over your head
+-  put your ear to a door
+-  kick a small stone
+-  turn a key in a lock
+-  tap the floor with a 10-foot pole
+-  hand an item to another character
 
 Moving Around Other Creatures
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
