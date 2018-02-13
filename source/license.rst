@@ -4,6 +4,9 @@
 Legal Information
 -----------------
 
+SRD5
+~~~~
+
 Permission to copy, modify and distribute the files collectively known
 as the System Reference Document 5.1 ("SRD5") is granted solely through
 the use of the Open Gaming License, Version 1.0a.
@@ -38,7 +41,51 @@ illithid, umber hulk, yuan-ti.
 All of the rest of the SRD5 is Open Game Content as described in Section
 1(d) of the License.
 
-The terms of the Open Gaming License Version 1.0a are as follows:
+Midgard Heroes
+~~~~~~~~~~~~~~
+
+Kobold Press, Midgard, the Midgard logo, Southlands, Open Design,
+and their associated logos are trademarks of Open Design.
+
+**Product Identity:** The following items are hereby identified as
+Product Identity, as defined in the Open Game License version 1.0a,
+Section 1(e), and are not Open Content: All trademarks, registered
+trademarks, proper names (characters, place names, new deities, etc.),
+
+**Open Game Content:** The Open content in this book includes the racial
+traits, racial variants, and archetypes. No other portion of this work
+may be reproduced in any form without permission.
+
+Southlands Heroes
+~~~~~~~~~~~~~~~~~
+
+Kobold Press, Midgard, Southlands, Open Design, and their associated
+logos are trademarks of Open Design.
+
+**Product Identity:** The following items are hereby identified as Product
+Identity, as defined in the Open Game License version 1.0a,
+Section 1(e), and are not Open Content: All trademarks, registered
+trade-marks, proper names (characters, place names, new deities, etc.),
+dialogue, plots, story elements, locations, characters, artwork,
+sidebars, and trade dress. (Elements that have previously been
+designated as Open Game Content are not included in this declaration.)
+
+**Open Game Content:** The Open content in this book includes the racial
+traits, racial variants, and archetypes. No other portion of this work
+may be reproduced in any form without permission.
+
+Tome of Beasts
+~~~~~~~~~~~~~~
+
+Kobold Press, Midgard, and their associated logos are trademarks of Open Design. The 5E logo is used by kind permission of Sasquatch Game Studio.
+
+Product Identity: The following items are hereby identified as Product Identity, as defined in the Open Game License version 1.0a, Section 1(e), and
+are not Open Content: All trademarks, registered trademarks, proper names (characters, place names, new deities, etc.), dialogue, plots, story elements,
+locations, characters, artwork, graphics, sidebars, and trade dress. (Elements that have previously been designated as Open Game Content are not included
+in this declaration.)
+
+Open Game Content: The Open content in this book includes the monster names, descriptions, monster statistics, and monster abilities. No other
+portion of this work may be reproduced in any form without permission.
 
 Deep Magic: Dragon Magic
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -54,6 +101,9 @@ Open Game Content: The Open content in this book includes the Dragon Mage arcane
 Magic spells. No other portion of this work may be reproduced in any form without permission.
 
 OPEN GAME LICENSE Version 1.0a
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The terms of the Open Gaming License Version 1.0a are as follows:
 
 The following text is the property of Wizards of the Coast, Inc. and is
 Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights
