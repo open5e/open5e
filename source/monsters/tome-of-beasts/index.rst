@@ -1,7 +1,7 @@
 
 .. _tob:monsters-a-z:
 
-Monster Descriptions (Tome of Beasts)
+Tome of Beasts (Kobold Press)
 -------------------------------------------------------------
 
 .. container:: columns

@@ -23,11 +23,11 @@ magical hats that allow them to fly and become invisible at will.
 These hats can be stolen and used by adventurers (see sidebar),
 but the scheznykis fight hard to retrieve them.
 
-.. Sidebar:: Hey! Stuff is missing!
+.. Sidebar:: Oops, something vanished!
    :class: missing
        
    The sidebars in Tome of Beasts are not Open Game Content, so we can't
-   include the details on vanisher hats here.
+   include the details of Vanisher Hats here.
 
    Feel free to make up your own magical hat with the same name!
 

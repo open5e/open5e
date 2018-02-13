@@ -1,7 +1,7 @@
 
 .. _srd:monsters-a-z:
 
-Monster Descriptions
+5e Core Monsters
 -------------------------------------------------------------
 
 .. container:: columns

@@ -71,13 +71,14 @@ attacks.
 on a DC 14 Constitution saving throw or contract the arcane
 wasting disease (see sidebar).
 
-.. Sidebar:: Hey! Stuff is missing!
+.. Sidebar:: Has something wasted away?!
    :class: missing
        
-   The sidebars in Tome of Beasts are not Open Game Content, so we can't
-   include the details in arcane wasting disease here.
+   No, but the sidebars in Tome of Beasts are not Open Game Content, so we can't
+   include the details of the Arcane Wasting Disease here.
 
-   Feel free to make up your own very serious disease with the same name!
+   Feel free to make up your own very serious disease that can only be passed on by spellcasters, 
+   and which causes them to wither away over time!
 
 **Claw.** *Melee Weapon Attack:* +7 to hit, reach 5 ft., one target.
 *Hit:* 15 (2d10 + 4) slashing damage.
