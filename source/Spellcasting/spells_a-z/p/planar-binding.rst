@@ -37,6 +37,6 @@ of existence. If you are on a different plane of existence, it returns
 to the place where you bound it and remains there until the spell ends.
 
 **At Higher Levels.** When you cast this spell using a spell slot of a
-higher level, the duration increases to 10 days with a #### 6th-level
+higher level, the duration increases to 10 days with a 6th-level
 slot, to 30 days with a 7th level slot, to 180 days with an 8th level
 slot, and to a year and a day with a 9th level spell slot.
