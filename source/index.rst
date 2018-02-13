@@ -19,18 +19,12 @@ Open5e aims to be the best open-source resource for 5e content.
 
    .. rst-class:: source
 
-What are we about?
-------------------
+What's this?! New beasts?!
+--------------------------
 
-In addition to an open, readable, and easily searchable resource for the 5e SRD we have lots of new things we'd like to add! At the top of our list are:
+Thanks to the awesome work of contributor `RealDeuce <https://github.com/RealDeuce>`, the OGL content from Kobold Press's *Tome of Beasts* is now on Open5e!
 
-.. rst-class:: list-bulleted
-
-* **Machine-readable data** like monsters and spell lists, in formats like **csv, json, md, and xml**
-* **Useful tools** such as **random tables, encounter calculators, treasure generators, And more...**
-* Plus the best **OGL community-created** content on the web!
-
-.. rst-class:: hide-mobile
+If you want to thank him, head over to Github and shower him with well-earned praise!
 
 ----------------------------------------------------------------------------------------------
 

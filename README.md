@@ -52,7 +52,9 @@ gem install sass
 Then cd to the template directory, install the node dependencies, and run a build.
 
 ```shell
-cd _themes/open5e_red_theme/
+cd _themes/
+bundle install
+cd open5e_red_theme/
 npm install
 npm run build
 ```
