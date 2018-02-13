@@ -4,7 +4,7 @@
 Monsters
 -------------------------------------------------------------
 
-.. sidebar:: Wandering Monsters
+.. sidebar:: Wandering Monsters?
     :class: missing
         
     Certain iconic monsters were not included in the 
@@ -22,7 +22,7 @@ Monsters
    
 .. container:: h1
 
-   Monster Descriptions
+   5e Core Monsters
 
 .. container:: subcolumns  
    
@@ -32,11 +32,11 @@ Monsters
         :titlesonly:
         :maxdepth: 3
 
-        Monster Descriptions <monsters_a-z/index>
+        Core Monsters <monsters_a-z/index>
 
 .. container:: h1
 
-   Monster Descriptions (Tome of Beasts)
+   Tome of Beasts (Kobold Press)
 
 .. container:: subcolumns  
    
@@ -46,4 +46,4 @@ Monsters
         :titlesonly:
         :maxdepth: 3
 
-        Monster Descriptions (Tome of Beasts) <tome-of-beasts/index>
+        Tome of Beasts <tome-of-beasts/index>

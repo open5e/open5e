@@ -1,7 +1,7 @@
 
 .. _srd:appendix-c: the planes of existence:
 
-Appendix C: The Planes of Existence
+The Planes of Existence
 ===================================
 
 The cosmos teems with a multitude of worlds as well as myriad alternate
