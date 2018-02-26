@@ -59,7 +59,7 @@ throw at the end of each of its turns, ending the :ref:`srd:frightened` conditio
 on itself on a success. If a target's saving throw is successful or the
 effect ends for it, the target is immune to this ghost's Horrifying
 Visage for the next 24 hours. The aging effect can be reversed with a
-*greater restoration* spell, but only within 24 hours of it occurring.
+:ref:`srd:greater-restoration` spell, but only within 24 hours of it occurring.
 
 **Possession (Recharge 6)**: One humanoid that the ghost can see within
 5 feet of it must succeed on a DC 13 Charisma saving throw or be
