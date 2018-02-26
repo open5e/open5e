@@ -10,7 +10,6 @@ Chuul
 
     © 2016 Violet Kirk
 
-
 Large aberration, chaotic evil
 
 **Armor Class** 16 (natural armor)
@@ -37,7 +36,7 @@ Large aberration, chaotic evil
 
 **Challenge** 4 (1,100 XP)
 
-**Amphibious**: The chuul can breathe air and water. 
+**Amphibious**: The chuul can breathe air and water.
 
 **Sense Magic**:
 The chuul senses magic within 120 feet of it at will. This trait
