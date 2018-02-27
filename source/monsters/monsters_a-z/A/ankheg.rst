@@ -10,7 +10,6 @@ Ankheg
 
     © 2016 Violet Kirk
 
-
 Large monstrosity, unaligned
 
 **Armor Class** 14 (natural armor), 11 while :ref:`srd:prone`
