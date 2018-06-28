@@ -34,11 +34,11 @@ Zaratan
 
 Gargantuan monstrosity (titan), unaligned
 
-*Armor Class* 25 (natural armor)
+**Armor Class** 25 (natural armor)
 
-*Hit Points* 507 (26d20 + 234)
+**Hit Points** 507 (26d20 + 234)
 
-*Speed* 10 ft., swim 50 ft.
+**Speed** 10 ft., swim 50 ft.
 
 +-----------+----------+-----------+-----------+-----------+-----------+
 | STR       | DEX      | CON       | INT       | WIS       | CHA       |

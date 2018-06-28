@@ -94,7 +94,7 @@ affected by this hag's ability again for 24 hours.
    target is :ref:`srd:blinded` for 1 minute.
 3. **Heart Like Thunder.** The target hears only the rushing of
    blood and their thumping heart. They are :ref:`srd:deafened` for 1 minute.
-4. Rupturing Arteries. The victim suffers 7 (2d6) slashing
+4. **Rupturing Arteries.** The victim suffers 7 (2d6) slashing
    damage as its veins and arteries burst open. The target
    repeats the saving throw at the beginning of each of its
    turns. It takes 3 (1d6) necrotic damage if the saving throw

@@ -25,16 +25,18 @@ Tosculi Elite Bow Raider
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Medium humanoid (tosculi), lawful evil
-Armor Class 16 (natural armor)
-Hit Points 97 (13d8 + 39)
-Speed 30 ft., fly 60 ft.
+
+**Armor Class** 16 (natural armor)
+
+**Hit Points** 97 (13d8 + 39)
+
+**Speed** 30 ft., fly 60 ft.
 
 +-----------+----------+-----------+-----------+-----------+-----------+
 | STR       | DEX      | CON       | INT       | WIS       | CHA       |
 +===========+==========+===========+===========+===========+===========+
 | 14 (+2)   | 18 (+4)  | 17 (+3)   | 12 (+1)   | 14 (+3)   | 12 (+1)   |
 +-----------+----------+-----------+-----------+-----------+-----------+
-
 
 **Skills** Perception +5, Stealth +7
 

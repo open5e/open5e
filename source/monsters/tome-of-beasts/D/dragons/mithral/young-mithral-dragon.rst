@@ -21,7 +21,8 @@ Medium dragon, neutral
 **Saving Throws** Dex +9, Con +4, Wis +5, Cha +5
 
 **Skills** Acrobatics +6, Insight +5, Perception +5, Persuasion +5
-Damage Resistance bludgeoning, piercing, and slashing from
+
+**Damage Resistance** bludgeoning, piercing, and slashing from
 nonmagical weapons
 
 **Damage Immunities** acid, thunder

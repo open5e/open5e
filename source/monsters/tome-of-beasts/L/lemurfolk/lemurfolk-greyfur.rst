@@ -55,10 +55,7 @@ following wizard spells prepared:
 Actions
 ~~~~~~~
 
-**Kukri Dagger.**
-
-**Melee Weapon
-Attack:** +5 to hit,
+**Kukri Dagger.** *Melee Weapon Attack:* +5 to hit,
 reach 5 ft., range
 20/60, one target. *Hit:* 5
 (1d4 + 3) piercing damage.
