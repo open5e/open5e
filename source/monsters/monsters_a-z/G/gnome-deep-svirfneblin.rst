@@ -40,7 +40,7 @@ spells, requiring no material components:
 **At will**: :ref:`srd:nondetection`
 (self only)
 
-**1/day each**: blindness/deafness, blur, disguise self
+**1/day each**: :ref:`srd:blindness-deafness`, :ref:`srd:blur`,:ref:`srd:disguise-self`
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

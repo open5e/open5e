@@ -22,7 +22,7 @@ Medium dragon, neutral
 
 **Skills** Acrobatics +6, Insight +5, Perception +5, Persuasion +5
 
-**Damage Resistance** bludgeoning, piercing, and slashing from
+**Damage Resistances** bludgeoning, piercing, and slashing from
 nonmagical weapons
 
 **Damage Immunities** acid, thunder
