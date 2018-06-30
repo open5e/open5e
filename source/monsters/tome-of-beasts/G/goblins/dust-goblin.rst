@@ -4,7 +4,6 @@
 Goblin, Dust
 ------------
 
-
 *A ragged creature
 emerges from the
 sand. Its spindly

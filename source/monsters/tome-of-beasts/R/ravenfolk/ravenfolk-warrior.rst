@@ -72,6 +72,6 @@ rapiers instead.
 Reactions
 ~~~~~~~~~
 
-Odin’s Call. A ravenfolk warrior can disengage after an attack
+**Odin’s Call.** A ravenfolk warrior can disengage after an attack
 reduces it to 10 hp or less.
 

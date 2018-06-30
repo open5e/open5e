@@ -32,7 +32,9 @@ as spies, servants, and translators. Their purposes are muddied,
 however, because they constantly relay what they learn to their
 mad creator.
 
-STRYX
+Stryx
+~~~~~
+
 Tiny monstrosity, neutral
 
 **Armor Class** 13

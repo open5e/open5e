@@ -23,7 +23,7 @@ other brutish, soulless guardians cut free from the thread of fate.
 **Fear All Cards.** If a deck of many things is brought within 30
 feet of a skein witch, she emits a psychic wail and disintegrates.
 
-Skein Width
+Skein Witch
 ~~~~~~~~~~~
 
 Medium celestial, neutral
