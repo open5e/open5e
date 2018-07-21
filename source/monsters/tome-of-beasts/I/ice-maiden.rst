@@ -27,7 +27,9 @@ only drives them harder to seek for warmth, love, and approval.
 Some claim an ice maiden can become a swan maiden or a dryad
 if she keeps a lover’s heart warm for a full year.
 
-ICE MAIDEN
+Ice Maiden
+~~~~~~~~~~
+
 Medium fey, lawful evil
 
 **Armor Class** 16 (natural armor)

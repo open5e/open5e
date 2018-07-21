@@ -33,7 +33,7 @@ piercing, and slashing from nonmagical attacks
 **Challenge** 4 (1,100 XP)
 
 **Ethereal Sight**: The ghost can see 60 feet into the Ethereal Plane
-when it is on the Material Plane, and vice versa. 
+when it is on the Material Plane, and vice versa.
 
 **Incorporeal Movement**: The ghost can move through other creatures and objects as if
 they were difficult terrain. It takes 5 (1d10) force damage if it ends
@@ -54,12 +54,12 @@ plane.
 **Horrifying Visage**: Each non-undead creature within 60 feet of
 the ghost that can see it must succeed on a DC 13 Wisdom saving throw or
 be :ref:`srd:frightened` for 1 minute. If the save fails by 5 or more, the target
-also ages 1d4 × 10 years. A :ref:`srd:frightened` target can repeat the saving
+also ages 1d4 x 10 years. A :ref:`srd:frightened` target can repeat the saving
 throw at the end of each of its turns, ending the :ref:`srd:frightened` condition
 on itself on a success. If a target's saving throw is successful or the
 effect ends for it, the target is immune to this ghost's Horrifying
 Visage for the next 24 hours. The aging effect can be reversed with a
-*greater restoration* spell, but only within 24 hours of it occurring.
+:ref:`srd:greater-restoration` spell, but only within 24 hours of it occurring.
 
 **Possession (Recharge 6)**: One humanoid that the ghost can see within
 5 feet of it must succeed on a DC 13 Charisma saving throw or be

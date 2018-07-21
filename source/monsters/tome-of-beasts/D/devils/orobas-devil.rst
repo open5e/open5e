@@ -54,7 +54,7 @@ Large fiend (devil), lawful evil
 
 **Saving Throws** Str +13, Dex +7, Con +14, Wis +13
 
-**Skills** Deception +10, History +11, Insight, +13, Perception +13,
+**Skills** Deception +10, History +11, Insight +13, Perception +13,
 Persuasion +10
 
 **Damage Resistances** acid, cold; bludgeoning, piercing, and

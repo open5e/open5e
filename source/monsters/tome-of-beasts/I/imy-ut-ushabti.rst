@@ -36,6 +36,7 @@ from the land of the dead; and the herald, proclaiming their
 lord’s return to the world of the living.
 
 Imy-ut Ushabti
+~~~~~~~~~~~~~~
 
 Medium monstrosity, neutral
 
