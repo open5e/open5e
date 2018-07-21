@@ -22,9 +22,7 @@ Weapon Proficiency
 
 Your race, class, and feats can grant you proficiency with certain
 weapons or categories of weapons. The two categories are **simple** and
-**martial**. Most people
-
-can use simple weapons with proficiency. These weapons include clubs,
+**martial**. Most people can use simple weapons with proficiency. These weapons include clubs,
 maces, and other weapons often found in the hands of commoners. Martial
 weapons, including swords, axes, and polearms, require more specialized
 training to use effectively. Most warriors use martial weapons because

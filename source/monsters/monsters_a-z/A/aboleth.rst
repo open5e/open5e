@@ -4,7 +4,6 @@
 Aboleth
 -------
 
-
 .. figure:: /_images/Aboleth.png
     :figclass: image-right
     :target: /_images/Aboleth.png

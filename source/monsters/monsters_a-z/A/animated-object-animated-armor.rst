@@ -31,7 +31,7 @@ Perception 6
 **Challenge** 1 (200 XP)
 
 **Antimagic Susceptibility**: The armor is :ref:`srd:incapacitated` while in the
-area of an *antimagic field*. If targeted by *dispel magic*, the armor
+area of an *antimagic field*. If targeted by :ref:`srd:dispel-magic`, the armor
 must succeed on a Constitution saving throw against the caster's spell
 save DC or fall :ref:`srd:unconscious` for 1 minute.
 

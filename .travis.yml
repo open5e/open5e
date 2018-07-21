@@ -19,26 +19,6 @@ script: sphinx-build -b html -d build/doctrees -c . -W -n source build/html
 #                              ^                     ^
 #                           doctrees dir        error on warnings
 
-deploy:
-  provider: s3
-  bucket: open5e.com
-  access_key_id: AKIAINWEJWNC6G6AOHZQ
-  secret_access_key:
-    secure: E7+a0GTGdbyXQTLRaDWJRWIk6u+Vh+5kQY8X7D683Dp5uXLmOCea27OXRYRWFG9mxE6M23+9xl2bdoypd4iIixW0s+CQAls/al4INuEMaYR9ZlXBSyYWqs4W7d8RMwUSEQufZRMElYG0ccOxBHzq9axd4M5RNbMOOiLGSTm9wuWwry44MfgFm5GAEureI02NwwPLxZZ5KvJGFPE1iBG+lOUUiTT2M7Mn+44Z+9KvJshuEbUcp9+PpSbCDCzbxVG2fDTApJGJ8TqR+oO6YpjGr/fewZiKveLejEHFc60lUv8KJVaiAUgUMW80I2AN7fKJhfWgw8Owg9Oe8PyD7m4fs1FsMbb/tcJyKhPkwmGt/uLxUG8PeMMxYvb86FT2oBobmqIwU8uyPJxqPGx2XTft65JOf567lwPP0tw1LqYxAe/YA4L+mHi8HlMH1Pzs0rTd/bohP0nujxpTBorx7A3iFz6tJRcM61XR8p96e8OdBzyEmCGkgsb17ShBgfdCULBelkIaa8MTrSEDP1vBLmDfHfbjTw5VMVyzlb//0XjJeKtJ3qMOIIcvTWSZdPCA5yWMMlAcxyMG82QCwbNWHyJJ4aW9o6MNVy3NU3dy8XBg7TbemlydmcyjnYS4zVB5vQogWMMbhzVWpG5pRdXClWvHOp28jFIQUj4Z3lc77s06TQo=
-
-  # Only deploy the html/css/js we build
-  local-dir: build/html
-
-  cache_control: "max-age=21600"
-
-  on:
-    # Don't deploy from forks
-    repo: eepMoody/open5e
-    # Don't deploy branches other than master
-    branch: master
-
-  # Required, no idea why
-  skip_cleanup: true
 notifications:
   slack:
     secure: M9ITalk74I7g7ceukIHxLLsPiz7IHUcx8qQ33JnlaAJIRLqxa1/gBlIbc6iu4Usqm8EeNe0EW8HHb51UaNNvAw28y5giSwESwdpV6s0tatl/Lo9Y4R4iJmez9kNRe195vPb15o8/rE59zloAUglzsCh65jHbmGOXgXINFltVOBp5wwZKz7UNPteCkKLG6ICRvf4p6XgRRpfW5PmsnEHzVROOoFQOoBiqbn37cXejEjERGGsnL2x1h17Xum4Ka16EgtKXUqpm7Ub7VlRVRC740trO+JAMNGJdw6MtBfAYeUBvYIqxrwIEYiEK7FZ4vF+0bXQ+nldSQvzB2hH0f9NQa6ZLhDF+JOmHaNLvVynzkL8R/x8vMwiJ+JdLO5B0hzh+a5JPTFkOGByC3loOLxQDeryIW3lfEjE8x/0Sf56Utha/n7LAdyVaXcr7RrHBUfeMCwove+nWJtX5jrMuHSNLiUhL4DeeCb0/+QDBmoEdFAEenhWXAoln/IlN8UUKJJu0ksuiRdo5zBXHm5bXEhocgzHzfpFzNS/6Kxdb0vAmsl6EVWPScBl0g/Pk4+INGiL8Sz9PDok8RWRy23PGlemtFBgGU4rNzqAYM0UaFoCE3+8PYOFA3MqX1Bxz/1J1HQYhzvipY3j9ajNZTfvG/sBC/SpavUJhJTSJVcSXg04hiVU=

@@ -88,7 +88,9 @@ deal lightning damage.
 such as *chill touch*, withers matter and even the soul.
 
 **Piercing.** Puncturing and impaling attacks, including spears and
-monsters' bites, deal piercing damage. **Poison.** Venomous stings and the toxic gas of a
+monsters' bites, deal piercing damage.
+
+**Poison.** Venomous stings and the toxic gas of a
 green dragon's breath deal poison damage.
 
 **Psychic.** Mental abilities such as a mind flayer's psionic blast
