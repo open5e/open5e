@@ -52,7 +52,15 @@ The 5e SRD
    :glob:
    :maxdepth: 2
 
-   */index
+   characters/index
+   classes/index
+   combat/index
+   equipment/index
+   gameplay-mechanics/index
+   monsters/index
+   running-a-game/index
+   Spellcasting/index
+   3rd-party-content/index
 
 .. toctree::
     :hidden:
