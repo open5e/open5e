@@ -17,9 +17,8 @@ If the casting is interrupted, the scroll is not lost.
 
 If the spell is on your class's spell list but of a higher level than
 you can normally cast, you must make an ability check using your
-spellcasting ability to determine whether you cast it successfully. The
-
-DC equals 10 + the spell's level. On a failed check, the spell
+spellcasting ability to determine whether you cast it successfully.
+The DC equals 10 + the spell's level. On a failed check, the spell
 disappears from the scroll with no other effect.
 
 The level of the spell on the scroll determines the spell's saving throw
@@ -47,9 +46,7 @@ Cantrip         Common            13         +5
 A wizard spell on a *spell scroll* can be copied just as
 spells in spellbooks can be copied. When a spell is copied from a
 *spell scroll*, the copier must succeed on an Intelligence (Arcana)
-check with a DC equal to 10
-
--  the spell's level. If the check succeeds, the spell is
-   successfully copied. Whether the check succeeds or fails, the
-   *spell scroll* is destroyed.
+check with a DC equal to 10 + the spell's level. If the check succeeds,
+the spell is successfully copied. Whether the check succeeds or fails,
+the *spell scroll* is destroyed.
 

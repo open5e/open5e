@@ -232,9 +232,7 @@ Skills
 
 Each ability covers a broad range of capabilities, including skills that
 a character or a monster can be proficient in. A skill represents a
-specific aspect of an
-
-ability score, and an individual's proficiency in a skill demonstrates a
+specific aspect of an ability score, and an individual's proficiency in a skill demonstrates a
 focus on that aspect. (A character's starting skill proficiencies are
 determined at character creation, and a monster's skill proficiencies
 appear in the monster's stat block.)
@@ -443,9 +441,7 @@ following terms define what you can lift or carry.
 
 **Carrying Capacity.** Your carrying capacity is your Strength score
 multiplied by 15. This is the weight (in pounds) that you can carry,
-which is high enough
-
-that most characters don't usually have to worry about it.
+which is high enough that most characters don't usually have to worry about it.
 
 **Push, Drag, or Lift.** You can push, drag, or lift a weight in
 pounds up to twice your carrying capacity (or 30 times your Strength

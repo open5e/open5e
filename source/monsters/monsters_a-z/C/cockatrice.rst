@@ -10,8 +10,6 @@ Cockatrice
 
     © 2016 Violet Kirk
 
-
-
 Small monstrosity, unaligned
 
 **Armor Class** 11

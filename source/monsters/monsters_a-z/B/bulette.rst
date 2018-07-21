@@ -10,12 +10,13 @@ Bulette
 
     © 2016 Violet Kirk
 
-
 Large monstrosity, unaligned
 
-| **Armor Class** 17 (natural armor)
-| **Hit Points** 94 (9d10 + 45)
-| **Speed** 40 ft., burrow 40 ft.
+**Armor Class** 17 (natural armor)
+
+**Hit Points** 94 (9d10 + 45)
+
+**Speed** 40 ft., burrow 40 ft.
 
 +-----------+-----------+-----------+----------+-----------+----------+
 | STR       | DEX       | CON       | INT      | WIS       | CHA      |
@@ -23,11 +24,15 @@ Large monstrosity, unaligned
 | 19 (+4)   | 11 (+0)   | 21 (+5)   | 2 (-4)   | 10 (+0)   | 5 (-3)   |
 +-----------+-----------+-----------+----------+-----------+----------+
 
-| **Skills** Perception +6
-| **Senses** darkvision 60 ft., tremorsense 60 ft., passive Perception 16
-| **Languages** ---
-| **Challenge** 5 (1,800 XP)
-| **Standing Leap**: The bulette's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start.
+**Skills** Perception +6
+
+**Senses** darkvision 60 ft., tremorsense 60 ft., passive Perception 16
+
+**Languages** ---
+
+**Challenge** 5 (1,800 XP)
+
+**Standing Leap**: The bulette's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start.
 
 Actions
 ~~~~~~~

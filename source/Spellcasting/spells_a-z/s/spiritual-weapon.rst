@@ -7,7 +7,12 @@ Spiritual Weapon
 2nd-level evocation
 ^^^^^^^^^^^^^^^^^^^
 
-**Casting Time:** 1 bonus action Range: 60 feet Components: V, S
+**Casting Time:** 1 bonus action
+
+**Range:** 60 feet
+
+**Components:** V, S
+
 **Duration:** 1 minute
 
 You create a floating, spectral weapon within range that lasts for the

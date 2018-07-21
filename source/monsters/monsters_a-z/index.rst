@@ -1,7 +1,7 @@
 
 .. _srd:monsters-a-z:
 
-Monster Descriptions
+5e Core Monsters
 -------------------------------------------------------------
 
 .. container:: columns
@@ -14,3 +14,4 @@ Monster Descriptions
       */index
       Miscellaneous Creatures <../miscellaneous-creatures/index>
       Nonplayer Characters <../nonplayer-characters/index>
+

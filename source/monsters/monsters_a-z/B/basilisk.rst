@@ -10,7 +10,6 @@ Basilisk
 
     © 2016 Violet Kirk
 
-
 Medium monstrosity, unaligned
 
 **Armor Class** 15 (natural armor)
