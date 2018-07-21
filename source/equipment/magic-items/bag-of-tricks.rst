@@ -15,7 +15,8 @@ You can use an action to pull the fuzzy object from
 
 the bag and throw it up to 20 feet. When the object lands, it transforms
 into a creature you determine by rolling a d8 and consulting the table
-that corresponds to the bag's color.
+that corresponds to the bag's color. The creature vanishes at the next dawn
+or when it is reduced to 0 hit points.
 
 The creature is friendly to you and your companions, and it acts on your
 turn. You can use a bonus action to command how the creature moves and

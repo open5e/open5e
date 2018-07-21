@@ -365,8 +365,9 @@ each slot level above 5th.
 
 **Casting Time:** 1 action 
 
-**Range:** self (10 foot radius) Components: 
-V, S
+**Range:** self (10 foot radius)
+
+**Components:** V, S
 
 **Duration:** Concentration, up to 1 hour
 
@@ -1199,7 +1200,9 @@ truesight.
 
 **Casting Time:** 1 action 
 
-**Range:** self (15 foot cone) Components: V, S 
+**Range:** self (15 foot cone)
+
+**Components:** V, S
 
 **Duration:** Instantaneous
 
@@ -1322,7 +1325,10 @@ target to another target for each slot level above 6th.
 
 **Casting Time:** 1 action
 
-**Range:** 30 feet Components: V, S
+**Range:** 30 feet
+
+**Components:** V, S
+
 **Duration:** 1 hour
 
 
@@ -1614,9 +1620,13 @@ first that you get no answer. The GM makes this roll in secret.
 #### 5th-level divination (ritual)
 
 
-**Casting Time:** 1 minute Range:
-Self Components: V, S Duration:
-Instantaneous
+**Casting Time:** 1 minute
+
+**Range:** Self
+
+**Components:** V, S
+
+**Duration:** Instantaneous
 
 
 You briefly become one with nature and gain knowledge of the surrounding
@@ -1793,8 +1803,11 @@ many with a 9th level slot.
 #### 7th-level conjuration
 
 
-**Casting Time:** 1 minute Range: 90
-feet Components: V, S
+**Casting Time:** 1 minute
+
+**Range:** 90 feet
+
+**Components:** V, S
 
 **Duration:** Concentration, up to 1 hour
 
@@ -1864,8 +1877,11 @@ each slot level above 5th.
 #### 6th-level conjuration
 
 
-**Casting Time:** 1 minute Range: 90
-feet Components: V, S
+**Casting Time:** 1 minute
+
+**Range:** 90 feet
+
+**Components:** V, S
 
 **Duration:** Concentration, up to 1 hour
 
@@ -1901,8 +1917,11 @@ each slot level above 6th.
 #### 4th-level conjuration
 
 
-**Casting Time:** 1 minute Range: 90
-feet Components: V, S
+**Casting Time:** 1 minute
+
+**Range:** 90 feet
+
+**Components:** V, S
 
 **Duration:** Concentration, up to 1 hour
 
@@ -1987,9 +2006,13 @@ and three times as many with an 8th level slot.
 #### 5th-level divination (ritual)
 
 
-**Casting Time:** 1 minute Range:
-Self Components: V Duration:
-1 minute
+**Casting Time:** 1 minute
+
+**Range:** Self
+
+**Components:** V
+
+**Duration:** 1 minute
 
 
 You mentally contact a demigod, the spirit of a long  dead sage, or
@@ -2018,8 +2041,9 @@ instead offer a short phrase as an answer.
 
 **Casting Time:** 1 action 
 
-**Range:** Touch 
-Component: V, S 
+**Range:** Touch
+
+**Components:** V, S 
 
 **Duration:** 7 days
 
@@ -3013,8 +3037,11 @@ your weapon attacks deal an extra 1d4 radiant damage on a hit.
 #### 7th-level evocation
 
 
-**Casting Time:** 1 bonus action Range:
-30 feet Components: V
+**Casting Time:** 1 bonus action
+
+**Range:** 30 feet
+
+**Components:** V
 
 **Duration:** Instantaneous
 
@@ -3735,8 +3762,12 @@ wish.
 #### 2nd-level conjuration
 
 
-**Casting Time:** 10 minutes Range:
-30 feet Components: V, S
+**Casting Time:** 10 minutes
+
+**Range:** 30 feet
+
+**Components:** V, S
+
 **Duration:** Instantaneous
 
 
@@ -4403,9 +4434,13 @@ appropriate. It might leave, attack you, or help you.
 #### 5th-level enchantment
 
 
-**Casting Time:** 1 minute Range: 60
-feet Components: V Duration:
-30 days
+**Casting Time:** 1 minute
+
+**Range:** 60 feet
+
+**Components:** V
+
+**Duration:** 30 days
 
 
 You place a magical command on a creature that you can see within range,
@@ -4823,9 +4858,11 @@ level above 1st.
 
 **Casting Time:** 1 action
 
-**Range:** Self (60 foot line) Components:
-V, S, M (a legume seed) Duration:
-Concentration, up to 1 minute
+**Range:** Self (60 foot line)
+
+**Components:** V, S, M (a legume seed)
+
+**Duration:** Concentration, up to 1 minute
 
 
 A line of strong wind 60 feet long and 10 feet wide blasts from you in a
@@ -5038,8 +5075,11 @@ each slot level above 6th.
 #### 1st-level evocation
 
 
-**Casting Time:** 1 bonus action Range:
-60 feet Components: V
+**Casting Time:** 1 bonus action
+
+**Range:** 60 feet
+
+**Components:** V
 
 **Duration:** Instantaneous
 
@@ -6126,8 +6166,11 @@ silver bell rings within 30 feet of it.
 #### 2nd-level transmutation
 
 
-**Casting Time:** 1 bonus action Range:
-Touch Components: V, S
+**Casting Time:** 1 bonus action
+
+**Range:** Touch
+
+**Components:** V, S
 
 **Duration:** Concentration, up to 1 hour
 
@@ -6277,8 +6320,11 @@ blinded or deafened. This spell has no effect on undead or constructs.
 #### 3rd-level evocation
 
 
-**Casting Time:** 1 bonus action Range:
-60 feet Components: V
+**Casting Time:** 1 bonus action
+
+**Range:** 60 feet
+
+**Components:** V
 
 **Duration:** Instantaneous
 
@@ -6546,9 +6592,13 @@ faint to the creature.
 #### 7th-level illusion
 
 
-**Casting Time:** 10 minutes Range:
-Sight Components: V, S Duration:
-10 days
+**Casting Time:** 10 minutes
+
+**Range:** Sight
+
+**Components:** V, S
+
+**Duration:** 10 days
 
 
 You make terrain in an area up to 1 mile square look, sound, smell, and
@@ -6646,7 +6696,10 @@ surroundings.
 
 **Casting Time:** 1 bonus action
 
-**Range:** Self Components: V
+**Range:** Self
+
+**Components:** V
+
 **Duration:** Instantaneous
 
 Briefly surrounded by silvery mist, you teleport up to 30 feet to an
@@ -6893,9 +6946,13 @@ level above 4th.
 #### 3rd-level illusion (ritual)
 
 
-**Casting Time:** 1 minute Range: 30
-feet Components: V, S Duration:
-1 hour
+**Casting Time:** 1 minute
+
+**Range:** 30 feet
+
+**Components:** V, S
+
+**Duration:** 1 hour
 
 
 A Large quasi real, horselike creature appears on the ground in an
@@ -6918,8 +6975,12 @@ if the steed takes any damage.
 #### 6th-level conjuration
 
 
-**Casting Time:** 10 minutes Range:
-60 feet Components: V, S
+**Casting Time:** 10 minutes
+
+**Range:** 60 feet
+
+**Components:** V, S
+
 **Duration:** Instantaneous
 
 
@@ -7053,7 +7114,10 @@ its own way back to your current plane of existence.
 
 **Casting Time:** 1 action or 8 hours
 
-**Range:** 150 feet Components: V, S
+**Range:** 150 feet
+
+**Components:** V, S
+
 **Duration:** Instantaneous
 
 
@@ -7161,9 +7225,13 @@ each of its turns. On a successful save, this stunning effect ends.
 #### 2nd-level evocation
 
 
-**Casting Time:** 10 minutes Range:
-30 feet Components: V Duration:
-Instantaneous
+**Casting Time:** 10 minutes
+
+**Range:** 30 feet
+
+**Components:** V
+
+**Duration:** Instantaneous
 
 
 Up to six creatures of your choice that you can see within range each
@@ -7222,7 +7290,9 @@ an effect as an action.
 
 **Casting Time:** 1 action 
 
-**Range:** self (60 foot cone) Components: V, S 
+**Range:** self (60 foot cone)
+
+**Components:** V, S 
 
 **Duration:** Instantaneous
 
@@ -8719,8 +8789,11 @@ future events.
 
 **Casting Time:** 1 action 
 
-**Range:** self (30 foot radius) Components: 
-V, S Duration: 10 minutes
+**Range:** self (30 foot radius)
+
+**Components:** V, S
+
+**Duration:** 10 minutes
 
 
 You imbue plants within 30 feet of you with limited sentience and
@@ -8803,9 +8876,11 @@ save DC to recognize the terrain as hazardous before entering it.
 
 **Casting Time:** 1 action
 
-**Range:** Self (15 foot radius) Components:
-V, S, M (a holy symbol) Duration:
-Concentration, up to 10 minutes
+**Range:** Self (15 foot radius)
+
+**Components:** V, S, M (a holy symbol)
+
+**Duration:** Concentration, up to 10 minutes
 
 
 You call forth spirits to protect you. They flit around you to a
@@ -8832,8 +8907,12 @@ level above 3rd.
 #### 2nd-level evocation
 
 
-**Casting Time:** 1 bonus action Range:
-60 feet Components: V, S
+**Casting Time:** 1 bonus action
+
+**Range:** 60 feet
+
+**Components:** V, S
+
 **Duration:** 1 minute
 
 
@@ -9031,9 +9110,11 @@ If you or any of your companions damage the target, the spell ends.
 
 **Casting Time:** 1 action
 
-**Range:** Self (60 foot line) Components:
-V, S, M (a magnifying glass) Duration:
-Concentration, up to 1 minute
+**Range:** Self (60 foot line)
+
+**Components:** V, S, M (a magnifying glass)
+
+**Duration:** Concentration, up to 1 minute
 
 
 A beam of brilliant light flashes out from your hand in a
@@ -9451,7 +9532,9 @@ you can dismiss such an effect as an action.
 
 **Casting Time:** 1 action 
 
-**Range:** self (15 foot cube) Components: V, S 
+**Range:** self (15 foot cube)
+
+**Components:** V, S 
 
 **Duration:** Instantaneous
 

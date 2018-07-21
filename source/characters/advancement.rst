@@ -23,7 +23,7 @@ in your class entry, which is the average result of the die roll
 
 When your Constitution modifier increases by 1, your hit point maximum
 increases by 1 for each level you have attained. For example, if your
-7th-level fighter has a Constitution score of 18, when he reaches 8th
+7th-level fighter has a Constitution score of 17, when he reaches 8th
 level, he increases his Constitution score from 17 to 18, thus
 increasing his Constitution modifier from +3 to +4. His hit point
 maximum then increases by 8.
@@ -173,9 +173,9 @@ Proficiency Bonus
 ~~~~~~~~~~~~~~~~~~
 
 Your proficiency bonus is always based on your total character level, as
-shown in the Character Advancement table in chapter 1, not your level in
+shown in the Character Advancement table, not your level in
 a particular class. For example, if you are a fighter 3/rogue 2, you
-have the proficiency bonus of a 5th- level character, which is +3.
+have the proficiency bonus of a 5th-level character, which is +3.
 
 Proficiencies
 ~~~~~~~~~~~~~~

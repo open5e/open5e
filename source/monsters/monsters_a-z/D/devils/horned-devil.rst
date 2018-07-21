@@ -8,7 +8,7 @@ Large fiend (devil), lawful evil
 
 **Armor Class** 18 (natural armor)
 
-**Hit Points** 148 (17d10 + 55)
+**Hit Points** 178 (17d10 + 85)
 
 **Speed** 20 ft., fly 60 ft.
 

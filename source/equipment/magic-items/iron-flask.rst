@@ -1,8 +1,8 @@
 
-.. _srd:iron-flask:
+.. _srd:iron--flask:
 
 Iron Flask
-------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
 
 
 *Wondrous item, legendary*
@@ -33,25 +33,34 @@ determined randomly.
 ======  ===================
 d100    Content
 ======  ===================
-1--50   Empty
-51--54  Demon (type 1)
-55--58  Demon (type 2)
-59--62  Demon (type 3)
+01--50  Empty
+51      Arcanaloth
+52      Cambion
+53--54  Dao
+55--57  Demon (type 1)
+58--60  Demon (type 2)
+61--62  Demon (type 3)
 63--64  Demon (type 4)
 65      Demon (type 5)
 66      Demon (type 6)
 67      Deva
 68--69  Devil (greater)
-70--73  Devil (lesser)
-74--75  Djinni
-76--77  Efreeti
-78--83  Elemental (any)
-84--86  Invisible stalker
-87--90  Night hag
+70--72  Devil (lesser)
+73--74  Djinni
+75--76  Efreeti
+77--78  Elemental (any)
+79      Githyanki knight
+80      Githzerai zerth
+81--82  Invisible stalker
+83--84  Marid
+85--86  Mezzoloth
+87--88  Night hag
+89--90  Nycaloth
 91      Planetar
-92--95  Salamander
+92--93  Salamander
+94--95  Slaad (any)
 96      Solar
-97--99  Succubus/incubus
-100     Xorn
+97--98  Succubus/incubus
+99      Ultroloth
+00      Xorn
 ======  ===================
-

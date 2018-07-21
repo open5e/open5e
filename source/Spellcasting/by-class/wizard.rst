@@ -10,15 +10,19 @@ Cantrips (0 Level)
 - :ref:`srd:acid-splash`
 - :ref:`srd:chill-touch`
 - :ref:`srd:dancing-lights`
+- :ref:`srd:fire-bolt`
 - :ref:`srd:light`
 - :ref:`srd:mage-hand`
 - :ref:`srd:mending`
 - :ref:`srd:message`
 - :ref:`srd:minor-illusion`
+- :ref:`srd:poison-spray`
 - :ref:`srd:prestidigitation`
 - :ref:`srd:ray-of-frost`
 - :ref:`srd:shocking-grasp`
 - :ref:`srd:true-strike`
+- *Third Party Spells*
+- :ref:`dm:dm:dragon-roar`
 
 1st Level
 ~~~~~~~~~
@@ -33,6 +37,7 @@ Cantrips (0 Level)
 - :ref:`srd:expeditious-retreat`
 - :ref:`srd:false-life`
 - :ref:`srd:feather-fall`
+- :ref:`srd:find-familiar`
 - :ref:`srd:floating-disk`
 - :ref:`srd:fog-cloud`
 - :ref:`srd:grease`
@@ -49,6 +54,9 @@ Cantrips (0 Level)
 - :ref:`srd:sleep`
 - :ref:`srd:thunderwave`
 - :ref:`srd:unseen-servant`
+- *Third Party Spells*
+- :ref:`dm:dm:converse-with-dragon`
+- :ref:`dm:dm:kobolds-fury`
 
 2nd Level
 ~~~~~~~~~
@@ -84,6 +92,11 @@ Cantrips (0 Level)
 - :ref:`srd:spider-climb`
 - :ref:`srd:suggestion`
 - :ref:`srd:web`
+- *Third Party Spells*
+- :ref:`dm:dm:detect-dragons`
+- :ref:`dm:dm:enhance-greed`
+- :ref:`dm:dm:lair-sense`
+- :ref:`dm:dm:shade`
 
 3rd Level
 ~~~~~~~~~
@@ -92,6 +105,7 @@ Cantrips (0 Level)
 - :ref:`srd:bestow-curse`
 - :ref:`srd:blink`
 - :ref:`srd:clairvoyance`
+- :ref:`srd:counterspell`
 - :ref:`srd:dispel-magic`
 - :ref:`srd:fear`
 - :ref:`srd:fireball`
@@ -115,6 +129,9 @@ Cantrips (0 Level)
 - :ref:`srd:tongues`
 - :ref:`srd:vampiric-touch`
 - :ref:`srd:water-breathing`
+- *Third Party Spells*
+- :ref:`dm:dm:catch-the-breath`
+- :ref:`dm:dm:phantom-dragon`
 
 4th Level
 ~~~~~~~~~
@@ -142,6 +159,9 @@ Cantrips (0 Level)
 - :ref:`srd:stone-shape`
 - :ref:`srd:stoneskin`
 - :ref:`srd:wall-of-fire`
+- *Third Party Spells*
+- :ref:`dm:dm:raid-the-lair`
+- :ref:`dm:dm:scale-rot`
 
 5th Level
 ~~~~~~~~~
@@ -169,6 +189,9 @@ Cantrips (0 Level)
 - :ref:`srd:teleportation-circle`
 - :ref:`srd:wall-of-force`
 - :ref:`srd:wall-of-stone`
+- *Third Party Spells*
+- :ref:`dm:dm:claws-of-the-earth-dragon`
+- :ref:`dm:dm:scale-rot`
 
 6th Level
 ~~~~~~~~~
@@ -211,6 +234,8 @@ Cantrips (0 Level)
 - :ref:`srd:simulacrum`
 - :ref:`srd:symbol`
 - :ref:`srd:teleport`
+- *Third Party Spells*
+- :ref:`dm:dm:legend-killer`
 
 8th Level
 ~~~~~~~~~
@@ -227,6 +252,8 @@ Cantrips (0 Level)
 - :ref:`srd:mind-blank`
 - :ref:`srd:power-word-stun`
 - :ref:`srd:sunburst`
+- *Third Party Spells*
+- :ref:`dm:dm:deadly-sting`
 
 9th Level
 ~~~~~~~~~

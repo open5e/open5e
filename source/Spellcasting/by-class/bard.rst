@@ -15,10 +15,14 @@ Cantrips (0 Level)
 - :ref:`srd:minor-illusion`
 - :ref:`srd:prestidigitation`
 - :ref:`srd:true-strike`
+- :ref:`srd:vicious-mockery`
+- *Third Party Spells*
+- :ref:`dm:dm:dragon-roar`
 
 1st Level
 ~~~~~~~~~
 
+- :ref:`srd:animal-friendship`
 - :ref:`srd:bane`
 - :ref:`srd:charm-person`
 - :ref:`srd:comprehend-languages`
@@ -38,6 +42,9 @@ Cantrips (0 Level)
 - :ref:`srd:speak-with-animals`
 - :ref:`srd:thunderwave`
 - :ref:`srd:unseen-servant`
+- *Third Party Spells*
+- :ref:`dm:dm:converse-with-dragon`
+- :ref:`dm:dm:kobolds-fury`
 
 2nd Level
 ~~~~~~~~~
@@ -61,6 +68,10 @@ Cantrips (0 Level)
 - :ref:`srd:silence`
 - :ref:`srd:suggestion`
 - :ref:`srd:zone-of-truth`
+- *Third Party Spells*
+- :ref:`dm:dm:detect-dragons`
+- :ref:`dm:dm:enhance-greed`
+- :ref:`dm:dm:shade`
 
 3rd Level
 ~~~~~~~~~
@@ -80,10 +91,13 @@ Cantrips (0 Level)
 - :ref:`srd:stinking-cloud`
 - :ref:`srd:tiny-hut`
 - :ref:`srd:tongues`
+- *Third Party Spells*
+- :ref:`dm:dm:catch-the-breath`
 
 4th Level
 ~~~~~~~~~
 
+- :ref:`srd:compulsion`
 - :ref:`srd:confusion`
 - :ref:`srd:dimension-door`
 - :ref:`srd:freedom-of-movement`
@@ -91,6 +105,9 @@ Cantrips (0 Level)
 - :ref:`srd:hallucinatory-terrain`
 - :ref:`srd:locate-creature`
 - :ref:`srd:polymorph`
+- *Third Party Spells*
+- :ref:`dm:dm:raid-the-lair`
+- :ref:`dm:dm:scale-rot`
 
 5th Level
 ~~~~~~~~~
@@ -111,6 +128,8 @@ Cantrips (0 Level)
 - :ref:`srd:scrying`
 - :ref:`srd:seeming`
 - :ref:`srd:teleportation-circle`
+- *Third Party Spells*
+- :ref:`dm:dm:claws-of-the-earth-dragon`
 
 6th Level
 ~~~~~~~~~

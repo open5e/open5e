@@ -108,9 +108,8 @@ an action, you can open your awareness to detect such forces. Until
 the end of your next turn, you know the location of any celestial,
 fiend, or undead within 60 feet of you that is not behind total
 cover. You know the type (celestial, fiend, or undead) of any being
-whose presence you sense, but not its identity (the vampire
-
-Count Strahd von Zarovich, for instance). Within the same radius,
+whose presence you sense, but not its identity (the vampire Count
+Strahd von Zarovich, for instance). Within the same radius,
 you also detect the presence of any place or object that has been
 consecrated or desecrated, as with the :ref:`srd:hallow` spell.
 
@@ -242,9 +241,8 @@ Sacred Oath
 
 When you reach 3rd level, you swear the oath that binds you as a paladin
 forever. Up to this time you have been in a preparatory stage, committed
-to the path but not yet sworn to it. Now you choose the Oath of
-Devotion, the Oath of the Ancients, or the Oath of Vengeance, all
-detailed at the end of the class description.
+to the path but not yet sworn to it. Now you choose an oath, such as the Oath of
+Devotion.
 
 Your choice grants you features at 3rd level and again at 7th, 15th, and
 20th level. Those features include oath spells and the Channel Divinity
@@ -338,7 +336,7 @@ official stamp on what has always been true in the paladin's heart.
 .. sidebar:: Looking for more Oaths?
     :class: missing
         
-    Oath of Devotion is the only oath that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+    Oath of Devotion is the only oath that was included in the `5e SRD <http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>`_.
     We are hoping to expand using homebrew or third-party content.
 
     If you know of high-quality content that would be a good fit, please 

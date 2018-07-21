@@ -8,13 +8,18 @@ Ranger Spells
 ~~~~~~~~~
 
 - :ref:`srd:alarm`
+- :ref:`srd:animal-friendship`
 - :ref:`srd:cure-wounds`
 - :ref:`srd:detect-magic`
 - :ref:`srd:detect-poison-and-disease`
 - :ref:`srd:fog-cloud`
+- :ref:`srd:goodberry`
+- :ref:`srd:hunters-mark`
 - :ref:`srd:jump`
 - :ref:`srd:longstrider`
 - :ref:`srd:speak-with-animals`
+- *Third Party Spells*
+- :ref:`dm:dm:converse-with-dragon`
 
 2nd Level
 ~~~~~~~~~
@@ -51,6 +56,9 @@ Ranger Spells
 - :ref:`srd:freedom-of-movement`
 - :ref:`srd:locate-creature`
 - :ref:`srd:stoneskin`
+- *Third Party Spells*
+- :ref:`dm:dm:raid-the-lair`
+- :ref:`dm:dm:scale-rot`
 
 5th Level
 ~~~~~~~~~

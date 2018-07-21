@@ -12,6 +12,7 @@ Cantrips (0 Level)
 - :ref:`srd:mending`
 - :ref:`srd:resistance`
 - :ref:`srd:sacred-flame`
+- :ref:`srd:spare-the-dying`
 - :ref:`srd:thaumaturgy`
 
 1st Level
@@ -32,6 +33,9 @@ Cantrips (0 Level)
 - :ref:`srd:purify-food-and-drink`
 - :ref:`srd:sanctuary`
 - :ref:`srd:shield-of-faith`
+- *Third Party Spells*
+- :ref:`dm:dm:converse-with-dragon`
+- :ref:`dm:dm:kobolds-fury`
 
 2nd Level
 ~~~~~~~~~
@@ -53,6 +57,9 @@ Cantrips (0 Level)
 - :ref:`srd:spiritual-weapon`
 - :ref:`srd:warding-bond`
 - :ref:`srd:zone-of-truth`
+- *Third Party Spells*
+- :ref:`dm:dm:enhance-greed`
+- :ref:`dm:dm:shade`
 
 3rd Level
 ~~~~~~~~~
@@ -76,6 +83,8 @@ Cantrips (0 Level)
 - :ref:`srd:spirit-guardians`
 - :ref:`srd:tongues`
 - :ref:`srd:water-walk`
+- *Third Party Spells*
+- :ref:`dm:dm:catch-the-breath`
 
 4th Level
 ~~~~~~~~~
@@ -85,8 +94,11 @@ Cantrips (0 Level)
 - :ref:`srd:death-ward`
 - :ref:`srd:divination`
 - :ref:`srd:freedom-of-movement`
+- :ref:`srd:guardian-of-faith`
 - :ref:`srd:locate-creature`
 - :ref:`srd:stone-shape`
+- *Third Party Spells*
+- :ref:`dm:dm:scale-rot`
 
 5th Level
 ~~~~~~~~~
@@ -104,6 +116,8 @@ Cantrips (0 Level)
 - :ref:`srd:planar-binding`
 - :ref:`srd:raise-dead`
 - :ref:`srd:scrying`
+- *Third Party Spells*
+- :ref:`dm:dm:claws-of-the-earth-dragon`
 
 6th Level
 ~~~~~~~~~

@@ -8,8 +8,10 @@ Cantrips (0 Level)
 ~~~~~~~~~~~~~~~~~~
 
 - :ref:`srd:chill-touch`
+- :ref:`srd:eldritch-blast`
 - :ref:`srd:mage-hand`
 - :ref:`srd:minor-illusion`
+- :ref:`srd:poison-spray`
 - :ref:`srd:prestidigitation`
 - :ref:`srd:true-strike`
 
@@ -19,9 +21,12 @@ Cantrips (0 Level)
 - :ref:`srd:charm-person`
 - :ref:`srd:comprehend-languages`
 - :ref:`srd:expeditious-retreat`
+- :ref:`srd:hellish-rebuke`
 - :ref:`srd:illusory-script`
 - :ref:`srd:protection-from-evil-and-good`
 - :ref:`srd:unseen-servant`
+- *Third Party Spells*
+- :ref:`dm:dm:kobolds-fury`
 
 2nd Level
 ~~~~~~~~~
@@ -36,10 +41,14 @@ Cantrips (0 Level)
 - :ref:`srd:shatter`
 - :ref:`srd:spider-climb`
 - :ref:`srd:suggestion`
+- *Third Party Spells*
+- :ref:`dm:dm:enhance-greed`
+- :ref:`dm:dm:shade`
 
 3rd Level
 ~~~~~~~~~
 
+- :ref:`srd:counterspell`
 - :ref:`srd:dispel-magic`
 - :ref:`srd:fear`
 - :ref:`srd:fly`
@@ -50,6 +59,8 @@ Cantrips (0 Level)
 - :ref:`srd:remove-curse`
 - :ref:`srd:tongues`
 - :ref:`srd:vampiric-touch`
+- *Third Party Spells*
+- :ref:`dm:dm:catch-the-breath`
 
 4th Level
 ~~~~~~~~~
@@ -58,6 +69,8 @@ Cantrips (0 Level)
 - :ref:`srd:blight`
 - :ref:`srd:dimension-door`
 - :ref:`srd:hallucinatory-terrain`
+- *Third Party Spells*
+- :ref:`dm:dm:scale-rot`
 
 5th Level
 ~~~~~~~~~
@@ -66,6 +79,8 @@ Cantrips (0 Level)
 - :ref:`srd:dream`
 - :ref:`srd:hold-monster`
 - :ref:`srd:scrying`
+- *Third Party Spells*
+- :ref:`dm:dm:dragon-breath`
 
 6th Level
 ~~~~~~~~~

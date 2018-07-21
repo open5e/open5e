@@ -7,8 +7,10 @@ Druid Spells
 Cantrips (0 Level)
 ~~~~~~~~~~~~~~~~~~
 
+- :ref:`srd:druidcraft`
 - :ref:`srd:guidance`
 - :ref:`srd:mending`
+- :ref:`srd:poison-spray`
 - :ref:`srd:produce-flame`
 - :ref:`srd:resistance`
 - :ref:`srd:shillelagh`
@@ -16,6 +18,7 @@ Cantrips (0 Level)
 1st Level
 ~~~~~~~~~
 
+- :ref:`srd:animal-friendship`
 - :ref:`srd:charm-person`
 - :ref:`srd:create-or-destroy-water`
 - :ref:`srd:cure-wounds`
@@ -24,6 +27,7 @@ Cantrips (0 Level)
 - :ref:`srd:entangle`
 - :ref:`srd:faerie-fire`
 - :ref:`srd:fog-cloud`
+- :ref:`srd:goodberry`
 - :ref:`srd:healing-word`
 - :ref:`srd:jump`
 - :ref:`srd:longstrider`
@@ -51,6 +55,8 @@ Cantrips (0 Level)
 - :ref:`srd:pass-without-trace`
 - :ref:`srd:protection-from-poison`
 - :ref:`srd:spike-growth`
+- *Third Party Spells*
+- :ref:`dm:dm:detect-dragons`
 
 3rd Level
 ~~~~~~~~~
@@ -67,6 +73,8 @@ Cantrips (0 Level)
 - :ref:`srd:water-breathing`
 - :ref:`srd:water-walk`
 - :ref:`srd:wind-wall`
+- *Third Party Spells*
+- :ref:`dm:dm:phantom-dragon`
 
 4th Level
 ~~~~~~~~~

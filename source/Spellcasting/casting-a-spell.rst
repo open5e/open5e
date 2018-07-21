@@ -58,7 +58,7 @@ creature (including you) that you touch. Other spells, such as the
 
 Spells that create cones or lines of effect that originate from you also
 have a range of self, indicating that the origin point of the spell's
-effect must be you (see "Areas of Effect" later in the this chapter).
+effect must be you (see "Areas of Effect" below).
 
 Once a spell is cast, its effects aren't limited by its range, unless
 the spell's description says otherwise.

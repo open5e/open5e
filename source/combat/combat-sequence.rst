@@ -80,12 +80,11 @@ one action**. You decide whether to move first or take your action
 first. Your speed---sometimes called your walking speed---is noted on your
 character sheet.
 
-The most common actions you can take are described in the "Actions in
-Combat" section later in this chapter. Many class features and other
+The most common actions you can take are described in :ref:`srd:actions-in-combat`.
+Many class features and other
 abilities provide additional options for your action.
 
-The :ref:`srd:movement-and-position` section later in this chapter gives the
-rules for your move.
+:ref:`srd:movement-and-position` gives the rules for your move.
 
 You can forgo moving, taking an action, or doing anything at all on your
 turn. If you can't decide what to do on your turn, consider taking the
@@ -148,8 +147,7 @@ Reactions
 Certain special abilities, spells, and situations allow you to take a
 special action called a reaction. A reaction is an instant response to a
 trigger of some kind, which can occur on your turn or on someone else's.
-The opportunity attack, described later in this chapter, is the most
-common type of reaction.
+The :ref:`opportunity attack <srd:opportunity-attacks>` is the most common type of reaction.
 
 When you take a reaction, you can't take another one until the start of
 your next turn. If the reaction interrupts another creature's turn, that

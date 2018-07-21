@@ -10,7 +10,6 @@ Cloaker
 
     © 2016 Violet Kirk
 
-
 Large aberration, chaotic neutral
 
 **Armor Class** 14 (natural armor)

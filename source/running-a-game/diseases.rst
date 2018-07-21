@@ -64,8 +64,7 @@ Constitution saving throw. On a successful save, the DC for this save
 and for the save to avoid an attack of mad laughter drops by 1d6. When
 the saving throw DC drops to 0, the creature recovers from the disease.
 A creature that fails three of these saving throws gains a randomly
-determined form of indefinite madness, as described later in this
-chapter.
+determined form of indefinite madness, as described in :ref:`srd:madness`.
 
 Sewer Plague
 ^^^^^^^^^^^^

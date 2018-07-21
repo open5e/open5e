@@ -4,11 +4,11 @@
 Monsters
 -------------------------------------------------------------
 
-.. sidebar:: Wandering Monsters
+.. sidebar:: Wandering Monsters?
     :class: missing
         
     Certain iconic monsters were not included in the 
-    `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_ 
+    `5e SRD <http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>`_
     and thus are not listed here.
 
 .. toctree::
@@ -22,7 +22,7 @@ Monsters
    
 .. container:: h1
 
-   Monster Descriptions
+   5e Core Monsters
 
 .. container:: subcolumns  
    
@@ -32,4 +32,18 @@ Monsters
         :titlesonly:
         :maxdepth: 3
 
-        Monster Descriptions <monsters_a-z/index>
+        Core Monsters <monsters_a-z/index>
+
+.. container:: h1
+
+   Tome of Beasts (Kobold Press)
+
+.. container:: subcolumns  
+   
+    .. toctree::
+        :name: tob-descs
+        :glob:
+        :titlesonly:
+        :maxdepth: 3
+
+        Tome of Beasts <tome-of-beasts/index>

@@ -190,8 +190,7 @@ Martial Archetype
 ^^^^^^^^^^^^^^^^^
 
 At 3rd level, you choose an archetype that you strive to emulate in your
-combat styles and techniques. Choose Champion, Battle Master, or
-Eldritch Knight, all detailed at the end of the class description. The
+combat styles and techniques, such as Champion. The
 archetype you choose grants you features at 3rd level and again at 7th,
 10th, 15th, and 18th level.
 
@@ -232,7 +231,7 @@ your approach.
 .. sidebar:: Looking for more Archetypes?
     :class: missing
         
-    Champion is the only archetype that was included in the `5e SRD <http://media.wizards.com/2016/downloads/SRD-OGL_V1.1.pdf>`_. 
+    Champion is the only archetype that was included in the `5e SRD <http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf>`_.
     We are hoping to expand using homebrew or third-party content.
 
     If you know of high-quality content that would be a good fit, please 

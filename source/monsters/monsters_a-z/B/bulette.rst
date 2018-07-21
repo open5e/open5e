@@ -10,7 +10,6 @@ Bulette
 
     © 2016 Violet Kirk
 
-
 Large monstrosity, unaligned
 
 **Armor Class** 17 (natural armor)

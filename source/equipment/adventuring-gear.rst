@@ -54,16 +54,6 @@ Adventuring Gear
 +---------------------------------+-----------------+-------------------+
 |    Blanket                      |    5 sp         |    3 lb.          |
 +---------------------------------+-----------------+-------------------+
-|    Barrel                       |    2 gp         |    70 lb.         |
-+---------------------------------+-----------------+-------------------+
-|    Basket                       |    4 sp         |    2 lb.          |
-+---------------------------------+-----------------+-------------------+
-|    Bedroll                      |    1 gp         |    7 lb.          |
-+---------------------------------+-----------------+-------------------+
-|    Bell                         |    1 gp         |    ---            |
-+---------------------------------+-----------------+-------------------+
-|    Blanket                      |    5 sp         |    3 lb.          |
-+---------------------------------+-----------------+-------------------+
 |    Block and tackle             |    1 gp         |    5 lb.          |
 +---------------------------------+-----------------+-------------------+
 |    Book                         |    25 gp        |    5 lb.          |
@@ -323,8 +313,8 @@ without needing to make a Wisdom (Medicine) check.
 **Holy Symbol.** A holy symbol is a representation of a god or
 pantheon. It might be an amulet depicting a symbol representing a deity,
 the same symbol carefully engraved or inlaid as an emblem on a shield,
-or a tiny box holding a fragment of a sacred relic. Appendix B lists the
-symbols commonly associated with many gods in the multiverse. A cleric
+or a tiny box holding a fragment of a sacred relic. :ref:`srd:fantasy-historical-pantheons`
+lists the symbols commonly associated with many gods in the multiverse. A cleric
 or paladin can use a holy symbol as a spellcasting focus. To use the
 symbol in this way, the caster must hold it in hand, wear it visibly, or
 bear it on a shield.

@@ -6,7 +6,7 @@ An SRD and open-source material reference site for 5th edition D&amp;D
 
 ## Contributing
 
-Open5e is a community project driven by a small number of voluneers in their spare time. We welcome any and all contributions! If you're working on content, please take a look at our [style guide](https://github.com/eepMoody/open5e/wiki/Style-Guide).
+Open5e is a community project driven by a small number of volunteers in their spare time. We welcome any and all contributions! If you're working on content, please take a look at our [style guide](https://github.com/eepMoody/open5e/wiki/Style-Guide).
 
 ## Editing Content
 Open5e is statically generated using [Sphinx](http://www.sphinx-doc.org/en/stable/), a Python-based documentation generator. The content is written in [reStructuredText](http://docutils.sourceforge.net/rst.html). If this is your first time working with reST, take a look at the [syntax guide](http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html). Also, take a look at our [reST editor tool recommendations](https://github.com/eepMoody/open5e/wiki/reST-Tool-Recommendations).
@@ -34,7 +34,7 @@ Sphinx documentation pages are written using a markup language called [reStructu
 
 ## Editing the theme
 
-If you are going to change the theme, you'll need [sass](http://sass-lang.com/) and [grunt](http://gruntjs.com/). If you don't already have [npm](https://www.npmjs.com/package/npm) and [ruby](https://www.ruby-lang.org/en/documentation/installation/) you'll also need to install them.
+If you are going to change the theme, you'll need [sass](http://sass-lang.com/). If you don't already have [npm](https://www.npmjs.com/package/npm) and [ruby](https://www.ruby-lang.org/en/documentation/installation/) you'll also need to install them.
 
 Find out if you already have npm and ruby:
 
@@ -43,19 +43,20 @@ npm --version
 ruby --version
 ```
 
-If you don't get a `command not found` error, you're ready to install sass and grunt:
+If you don't get a `command not found` error, you're ready to install sass:
 
 ```shell
 gem install sass
-npm install -g grunt
 ```
 
-Then cd to the template directory, install the node dependencies, and run grunt.
+Then cd to the template directory, install the node dependencies, and run a build.
 
 ```shell
-cd _themes/open5e_red_theme/
+cd _themes/
+bundle install
+cd open5e_red_theme/
 npm install
-grunt
+npm run build
 ```
 
 This should build the style and launch a demo page with LiveReload for you to work against. If you want to preview your results on the 5e page, you'll need to do a clean Sphinx rebuild because the Makefile doesn't recognize changes to the theme as requiring an update:

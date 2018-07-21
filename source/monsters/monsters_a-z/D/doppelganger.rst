@@ -34,7 +34,7 @@ statistics, other than its size, are the same in each form. Any
 equipment it is wearing or carrying isn't transformed. It reverts to its
 true form if it dies.
 
-**Ambusher**: The doppelganger has advantage on
+**Ambusher**: In the first round of combat, the doppelganger has advantage on
 attack rolls against any creature it has surprised.
 
 **Surprise Attack**:
