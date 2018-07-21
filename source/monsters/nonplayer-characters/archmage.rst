@@ -40,25 +40,60 @@ is an 18th-level spellcaster. Its spellcasting ability is Intelligence
 :ref:`srd:disguise-self` and :ref:`srd:invisibility` at will and has the following wizard
 spells prepared:
 
-    **Cantrips (at will)**: :ref:`srd:fire-bolt`, :ref:`srd:light`, :ref:`srd:mage-hand`, :ref:`srd:prestidigitation`, :ref:`srd:shocking-grasp`
+- Cantrips (at will):
 
-    **1st level (4 slots)**: :ref:`srd:detect-magic`, :ref:`srd:identify`, :ref:`srd:mage-armor`\*, :ref:`srd:magic-missile`
+  - :ref:`srd:fire-bolt`
+  - :ref:`srd:light`
+  - :ref:`srd:mage-hand`
+  - :ref:`srd:prestidigitation`
+  - :ref:`srd:shocking-grasp`
 
-    **2nd level (3 slots)**: :ref:`srd:detect-thoughts`, :ref:`srd:mirror-image`, :ref:`srd:misty-step`
+- 1st level (4 slots):
 
-    **3rd level (3 slots)**: :ref:`srd:counterspell`, :ref:`srd:fly`, :ref:`srd:lightning-bolt`
+  - :ref:`srd:detect-magic`
+  - :ref:`srd:identify`
+  - :ref:`srd:mage-armor`\*
+  - :ref:`srd:magic-missile`
 
-    **4th level (3 slots)**: :ref:`srd:banishment`, :ref:`srd:fire-shield`, :ref:`srd:stoneskin`\*
+- 2nd level (3 slots):
 
-    **5th level (3 slots)**: :ref:`srd:cone-of-cold`, :ref:`srd:scrying`, :ref:`srd:wall-of-force`
+  - :ref:`srd:detect-thoughts`
+  - :ref:`srd:mirror-image`
+  - :ref:`srd:misty-step`
 
-    **6th level (1 slot)**: :ref:`srd:globe-of-invulnerability`
+- 3rd level (3 slots):
 
-    **7th level (1 slot)**: :ref:`srd:teleport`
+  - :ref:`srd:counterspell`
+  - :ref:`srd:fly`
+  - :ref:`srd:lightning-bolt`
 
-    **8th level (1 slot)**: :ref:`srd:mind-blank`\*
+- 4th level (3 slots):
 
-    **9th level (1 slot)**: :ref:`srd:time-stop`
+  - :ref:`srd:banishment`
+  - :ref:`srd:fire-shield`
+  - :ref:`srd:stoneskin`\*
+
+- 5th level (3 slots):
+
+  - :ref:`srd:cone-of-cold`
+  - :ref:`srd:scrying`
+  - :ref:`srd:wall-of-force`
+
+- 6th level (1 slot):
+
+  - :ref:`srd:globe-of-invulnerability`
+
+- 7th level (1 slot):
+
+  - :ref:`srd:teleport`
+
+- 8th level (1 slot):
+
+  - :ref:`srd:mind-blank`\*
+
+- 9th level (1 slot):
+
+  - :ref:`srd:time-stop`
 
 \* *The archmage casts these spells on itself before combat*.
 
