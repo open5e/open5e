@@ -34,13 +34,22 @@ being :ref:`srd:charmed` or :ref:`srd:frightened`.
 11, +3 to hit with spell attacks). The fanatic has the following cleric
 spells prepared:
 
-**Cantrips (at will)**: :ref:`srd:light`, :ref:`srd:sacred-flame`,
-:ref:`srd:thaumaturgy`
+- Cantrips (at will):
 
-**1st level (4 slots)**: :ref:`srd:command`, :ref:`srd:inflict-wounds`,
-:ref:`srd:shield-of-faith`
+  - :ref:`srd:light`
+  - :ref:`srd:sacred-flame`,
+  - :ref:`srd:thaumaturgy`
 
-**2nd level (3 slots)**: :ref:`srd:hold-person`, :ref:`srd:spiritual-weapon`
+- 1st level (4 slots):
+
+  - :ref:`srd:command`
+  - :ref:`srd:inflict-wounds`,
+  - :ref:`srd:shield-of-faith`
+
+- 2nd level (3 slots):
+
+  - :ref:`srd:hold-person`
+  - :ref:`srd:spiritual-weapon`
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

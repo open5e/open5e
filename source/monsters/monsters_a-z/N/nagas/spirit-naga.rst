@@ -39,17 +39,36 @@ spellcaster. Its spellcasting ability is Intelligence (spell save DC 14,
 +6 to hit with spell attacks), and it needs only verbal components to
 cast its spells. It has the following wizard spells prepared:
 
-**Cantrips (at will)**: :ref:`srd:mage-hand`, :ref:`srd:minor-illusion`, :ref:`srd:ray-of-frost`
+- Cantrips (at will):
 
-**1st level (4 slots)**: :ref:`srd:charm-person`, :ref:`srd:detect-magic`, :ref:`srd:sleep`
+  - :ref:`srd:mage-hand`
+  - :ref:`srd:minor-illusion`
+  - :ref:`srd:ray-of-frost`
 
-**2nd level (3 slots)**: :ref:`srd:detect-thoughts`, :ref:`srd:hold-person`
+- 1st level (4 slots):
 
-**3rd level (3 slots)**: :ref:`srd:lightning-bolt`, :ref:`srd:water-breathing`
+  - :ref:`srd:charm-person`
+  - :ref:`srd:detect-magic`
+  - :ref:`srd:sleep`
 
-**4th level (3 slots)**: :ref:`srd:blight`, :ref:`srd:dimension-door`
+- 2nd level (3 slots):
 
-**5th level (2 slots)**: :ref:`srd:dominate-person`
+  - :ref:`srd:detect-thoughts`
+  - :ref:`srd:hold-person`
+
+- 3rd level (3 slots):
+
+  - :ref:`srd:lightning-bolt`
+  - :ref:`srd:water-breathing`
+
+- 4th level (3 slots):
+
+  - :ref:`srd:blight`
+  - :ref:`srd:dimension-door`
+
+- 5th level (2 slots):
+
+  - :ref:`srd:dominate-person`
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

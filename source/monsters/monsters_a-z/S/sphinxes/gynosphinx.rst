@@ -46,18 +46,38 @@ is a 9th-level spellcaster. Its spellcasting ability is Intelligence
 material components to cast its spells. The sphinx has the following
 wizard spells prepared:
 
-**Cantrips (at will)**: :ref:`srd:mage-hand`, :ref:`srd:minor-illusion`, :ref:`srd:prestidigitation`
+- Cantrips (at will):
 
-**1st level (4 slots)**: :ref:`srd:detect-magic`,
-:ref:`srd:identify`, :ref:`srd:shield`
+  - :ref:`srd:mage-hand`
+  - :ref:`srd:minor-illusion`
+  - :ref:`srd:prestidigitation`
 
-**2nd level (3 slots)**: :ref:`srd:darkness`, :ref:`srd:locate-object`, :ref:`srd:suggestion`
+- 1st level (4 slots):
 
-**3rd level (3 slots)**: :ref:`srd:dispel-magic`, :ref:`srd:remove-curse`, :ref:`srd:tongues`
+  - :ref:`srd:detect-magic`,
+  - :ref:`srd:identify`
+  - :ref:`srd:shield`
 
-**4th level (3 slots)**: :ref:`srd:banishment`, :ref:`srd:greater-invisibility`
+- 2nd level (3 slots):
 
-**5th level (1 slot)**: :ref:`srd:legend-lore`
+  - :ref:`srd:darkness`
+  - :ref:`srd:locate-object`
+  - :ref:`srd:suggestion`
+
+- 3rd level (3 slots):
+
+  - :ref:`srd:dispel-magic`
+  - :ref:`srd:remove-curse`
+  - :ref:`srd:tongues`
+
+- 4th level (3 slots):
+
+  - :ref:`srd:banishment`
+  - :ref:`srd:greater-invisibility`
+
+- 5th level (1 slot):
+
+  - :ref:`srd:legend-lore`
 
 Actions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

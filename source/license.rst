@@ -87,6 +87,19 @@ in this declaration.)
 Open Game Content: The Open content in this book includes the monster names, descriptions, monster statistics, and monster abilities. No other
 portion of this work may be reproduced in any form without permission.
 
+Deep Magic: Dragon Magic
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Kobold Press, Midgard, Open Design, and their associated logos are trademarks of Open Design.
+
+Product Identity: The following items are hereby identified as Product Identity, as defined in the Open Game License
+version 1.0a, Section 1(e), and are not Open Content: All trademarks, registered trademarks, proper names (characters,
+place names, new deities, etc.), dialogue, plots, story elements, locations, characters, artwork, sidebars, and trade dress.
+(Elements that have previously been designated as Open Game Content are not included in this declaration.)
+
+Open Game Content: The Open content in this book includes the Dragon Mage arcane tradition, the feats, and the Dragon
+Magic spells. No other portion of this work may be reproduced in any form without permission.
+
 OPEN GAME LICENSE Version 1.0a
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -270,6 +283,9 @@ Reserved.
     **Tome of Beasts.** Copyright 2016, Open Design; Authors Chris
     Harris, Dan Dillon, Rodrigo Garcia Carmona, and Wolfgang
     Baur.
+
+    **Deep Magic: Dragon Magic** © 2017 Open Design; Author:
+    Shawn Merwin.
 
 END OF LICENSE
 
