@@ -33,3 +33,9 @@ close-quarters grappling. You gain the following benefits:
 -  You can use your action to try to pin a creature :ref:`srd:grappled` by you. To
    do so, make another grapple check. If you succeed, you and the
    creature are both :ref:`srd:restrained` until the grapple ends.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Third Party Feats
+
+   /3rd-party-content/deep-magic-dragon-magic/feats

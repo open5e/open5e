@@ -18,6 +18,8 @@ Ranger Spells
 - :ref:`srd:jump`
 - :ref:`srd:longstrider`
 - :ref:`srd:speak-with-animals`
+- *Third Party Spells*
+- :ref:`dm:dm:converse-with-dragon`
 
 2nd Level
 ~~~~~~~~~
@@ -54,6 +56,9 @@ Ranger Spells
 - :ref:`srd:freedom-of-movement`
 - :ref:`srd:locate-creature`
 - :ref:`srd:stoneskin`
+- *Third Party Spells*
+- :ref:`dm:dm:raid-the-lair`
+- :ref:`dm:dm:scale-rot`
 
 5th Level
 ~~~~~~~~~

@@ -21,6 +21,8 @@ Cantrips (0 Level)
 - :ref:`srd:ray-of-frost`
 - :ref:`srd:shocking-grasp`
 - :ref:`srd:true-strike`
+- *Third Party Spells*
+- :ref:`dm:dm:dragon-roar`
 
 1st Level
 ~~~~~~~~~
@@ -42,6 +44,9 @@ Cantrips (0 Level)
 - :ref:`srd:silent-image`
 - :ref:`srd:sleep`
 - :ref:`srd:thunderwave`
+- *Third Party Spells*
+- :ref:`dm:dm:converse-with-dragon`
+- :ref:`dm:dm:kobolds-fury`
 
 2nd Level
 ~~~~~~~~~
@@ -67,6 +72,10 @@ Cantrips (0 Level)
 - :ref:`srd:spider-climb`
 - :ref:`srd:suggestion`
 - :ref:`srd:web`
+- *Third Party Spells*
+- :ref:`dm:dm:detect-dragons`
+- :ref:`dm:dm:enhance-greed`
+- :ref:`dm:dm:shade`
 
 3rd Level
 ~~~~~~~~~
@@ -91,6 +100,8 @@ Cantrips (0 Level)
 - :ref:`srd:tongues`
 - :ref:`srd:water-breathing`
 - :ref:`srd:water-walk`
+- *Third Party Spells*
+- :ref:`dm:dm:phantom-dragon`
 
 4th Level
 ~~~~~~~~~
@@ -105,6 +116,8 @@ Cantrips (0 Level)
 - :ref:`srd:polymorph`
 - :ref:`srd:stoneskin`
 - :ref:`srd:wall-of-fire`
+- *Third Party Spells*
+- :ref:`dm:dm:scale-rot`
 
 5th Level
 ~~~~~~~~~
@@ -120,6 +133,9 @@ Cantrips (0 Level)
 - :ref:`srd:telekinesis`
 - :ref:`srd:teleportation-circle`
 - :ref:`srd:wall-of-stone`
+- *Third Party Spells*
+- :ref:`dm:dm:claws-of-the-earth-dragon`
+- :ref:`dm:dm:dragon-breath`
 
 6th Level
 ~~~~~~~~~
@@ -145,6 +161,8 @@ Cantrips (0 Level)
 - :ref:`srd:prismatic-spray`
 - :ref:`srd:reverse-gravity`
 - :ref:`srd:teleport`
+- *Third Party Spells*
+- :ref:`dm:dm:legend-killer`
 
 8th Level
 ~~~~~~~~~
@@ -154,6 +172,8 @@ Cantrips (0 Level)
 - :ref:`srd:incendiary-cloud`
 - :ref:`srd:power-word-stun`
 - :ref:`srd:sunburst`
+- *Third Party Spells*
+- :ref:`dm:dm:deadly-sting`
 
 9th Level
 ~~~~~~~~~
