@@ -1,9 +1,10 @@
 [
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "90 feet",
     "school": "evocation",
-    "components": "V, S, M (powdered rhubarb leaf and an\nadder’s stomach)",
+    "components": "V, S, M (powdered rhubarb leaf and an adder’s stomach)",
     "level": "2",
     "casting_time": "1 action",
     "is_ritual": false,
@@ -12,6 +13,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "Conjuration",
@@ -24,6 +26,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "8 hours",
     "cast_range": "30 feet",
     "school": "abjuration",
@@ -36,10 +39,11 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "8 hours",
     "cast_range": "30 feet",
     "school": "abjuration",
-    "components": "V, S, M (a tiny bell and a piece of\nfine\n\nsilver wire)",
+    "components": "V, S, M (a tiny bell and a piece of fine silver wire)",
     "level": "1",
     "casting_time": "1 minute",
     "is_ritual": true,
@@ -48,6 +52,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "Self",
     "school": "transmutation",
@@ -60,6 +65,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "24 hours",
     "cast_range": "30 feet",
     "school": "enchantment",
@@ -72,6 +78,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 24 hours",
     "cast_range": "30 feet",
     "school": "transmutation",
@@ -84,6 +91,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "10 feet",
     "school": "necromancy",
@@ -96,6 +104,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "120 feet",
     "school": "transmutation",
@@ -108,6 +117,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "self (10 foot radius)",
     "school": "abjuration",
@@ -120,6 +130,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "Self (10 foot radius sphere)",
     "school": "abjuration",
@@ -132,6 +143,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "10 days",
     "cast_range": "60 feet",
     "school": "enchantment",
@@ -144,6 +156,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "30 feet",
     "school": "divination",
@@ -156,6 +169,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "120 feet",
     "school": "evocation",
@@ -168,6 +182,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Until dispelled",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -180,6 +195,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "60 feet",
     "school": "evocation",
@@ -192,6 +208,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "24 hours",
     "cast_range": "Touch",
     "school": "illusion",
@@ -204,6 +221,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Special",
     "cast_range": "10 feet",
     "school": "necromancy",
@@ -216,6 +234,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Self",
     "school": "divination",
@@ -228,6 +247,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -240,6 +260,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "30 feet",
     "school": "enchantment",
@@ -252,6 +273,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "60 feet",
     "school": "abjuration",
@@ -264,6 +286,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -276,6 +299,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "30 feet",
     "school": "abjuration",
@@ -288,6 +312,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Touch",
     "school": "necromancy",
@@ -300,6 +325,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "90 feet",
     "school": "conjuration",
@@ -312,6 +338,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "90 feet",
     "school": "evocation",
@@ -324,6 +351,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "30 feet",
     "school": "enchantment",
@@ -336,6 +364,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "30 feet",
     "school": "necromancy",
@@ -348,6 +377,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "30 feet",
     "school": "necromancy",
@@ -360,6 +390,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "Self",
     "school": "transmutation",
@@ -372,6 +403,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Self",
     "school": "illusion",
@@ -384,6 +416,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "self (15 foot cone)",
     "school": "evocation",
@@ -396,6 +429,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "120 feet",
     "school": "conjuration",
@@ -408,6 +442,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "60 feet",
     "school": "enchantment",
@@ -420,6 +455,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "150 feet",
     "school": "evocation",
@@ -432,6 +468,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "30 feet",
     "school": "enchantment",
@@ -444,6 +481,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 round",
     "cast_range": "120 feet",
     "school": "Necromancy",
@@ -456,6 +494,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "150 feet",
     "school": "necromancy",
@@ -468,6 +507,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "1 mile",
     "school": "divination",
@@ -480,6 +520,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "necromancy",
@@ -492,6 +533,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "120 feet",
     "school": "conjuration",
@@ -504,6 +546,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 round",
     "cast_range": "Self (15 foot cone)",
     "school": "illusion",
@@ -516,6 +559,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 round",
     "cast_range": "60 feet",
     "school": "enchantment",
@@ -528,6 +572,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "Self",
     "school": "divination",
@@ -540,6 +585,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Self",
     "school": "divination",
@@ -552,6 +598,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "Self",
     "school": "divination",
@@ -564,6 +611,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Self (60 foot cone)",
     "school": "evocation",
@@ -576,6 +624,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "90 feet",
     "school": "enchantment",
@@ -588,6 +637,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "60 feet",
     "school": "conjuration",
@@ -600,6 +650,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "90 feet",
     "school": "conjuration",
@@ -612,6 +663,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "90 feet",
     "school": "conjuration",
@@ -624,6 +676,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "90 feet",
     "school": "conjuration",
@@ -636,6 +689,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "90 feet",
     "school": "conjuration",
@@ -648,6 +702,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "60 feet",
     "school": "conjuration",
@@ -660,6 +715,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "Self",
     "school": "divination",
@@ -672,6 +728,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "7 days",
     "cast_range": "Touch",
     "school": "necromancy",
@@ -684,6 +741,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "10 days",
     "cast_range": "Self",
     "school": "evocation",
@@ -696,6 +754,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Until dispelled",
     "cast_range": "Touch",
     "school": "evocation",
@@ -708,6 +767,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "300 feet",
     "school": "transmutation",
@@ -720,6 +780,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 8 hours",
     "cast_range": "Self (5 mile radius)",
     "school": "transmutation",
@@ -732,6 +793,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "30 feet",
     "school": "conjuration",
@@ -744,6 +806,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "30 feet",
     "school": "transmutation",
@@ -756,6 +819,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "10 feet",
     "school": "necromancy",
@@ -768,6 +832,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Special",
     "cast_range": "30 feet",
     "school": "illusion",
@@ -780,6 +845,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "evocation",
@@ -792,6 +858,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "120 feet",
     "school": "Evocation",
@@ -804,6 +871,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "60 feet",
     "school": "evocation",
@@ -816,6 +884,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "8 hours",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -828,6 +897,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "60 feet",
     "school": "evocation",
@@ -840,6 +910,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "8 hours",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -852,6 +923,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "150 feet",
     "school": "evocation",
@@ -864,6 +936,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "60 feet",
     "school": "conjuration",
@@ -876,6 +949,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "Self",
     "school": "divination",
@@ -888,6 +962,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "Self",
     "school": "divination",
@@ -900,6 +975,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "Self",
     "school": "divination",
@@ -912,6 +988,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Self",
     "school": "divination",
@@ -924,6 +1001,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "500 feet",
     "school": "conjuration",
@@ -936,6 +1014,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "Self",
     "school": "illusion",
@@ -948,6 +1027,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "transmutation",
@@ -960,6 +1040,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Self",
     "school": "abjuration",
@@ -972,6 +1053,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "120 feet",
     "school": "abjuration",
@@ -984,6 +1066,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Self",
     "school": "divination",
@@ -996,6 +1079,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Self",
     "school": "evocation",
@@ -1008,6 +1092,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "30 feet",
     "school": "evocation",
@@ -1020,6 +1105,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "60 feet",
     "school": "enchantment",
@@ -1032,6 +1118,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "60 feet",
     "school": "enchantment",
@@ -1044,6 +1131,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "60 feet",
     "school": "enchantment",
@@ -1056,6 +1144,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "8 hours",
     "cast_range": "Special",
     "school": "illusion",
@@ -1068,6 +1157,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "500 feet",
     "school": "evocation",
@@ -1080,6 +1170,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour.",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -1092,6 +1183,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "30 feet",
     "school": "transmutation",
@@ -1104,6 +1196,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "90 feet",
     "school": "conjuration",
@@ -1116,6 +1209,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "60 feet",
     "school": "enchantment",
@@ -1128,6 +1222,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Up to 8 hours",
     "cast_range": "Self",
     "school": "transmutation",
@@ -1140,6 +1235,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "Self",
     "school": "transmutation",
@@ -1152,6 +1248,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Self",
     "school": "necromancy",
@@ -1164,6 +1261,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "120 feet",
     "school": "transmutation",
@@ -1176,6 +1274,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "60 feet",
     "school": "evocation",
@@ -1188,6 +1287,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "8 hours",
     "cast_range": "30 feet",
     "school": "conjuration",
@@ -1200,6 +1300,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "Self",
     "school": "necromancy",
@@ -1212,6 +1313,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Self (30 foot cone)",
     "school": "illusion",
@@ -1224,6 +1326,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "60 feet",
     "school": "transmutation",
@@ -1236,6 +1339,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "150 feet",
     "school": "enchantment",
@@ -1248,6 +1352,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "30 feet",
     "school": "conjuration",
@@ -1260,6 +1365,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 day",
     "cast_range": "Self",
     "school": "divination",
@@ -1272,6 +1378,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "120 feet",
     "school": "divination",
@@ -1284,6 +1391,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "necromancy",
@@ -1296,6 +1404,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "150 feet",
     "school": "evocation",
@@ -1308,6 +1417,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "10 minutes",
     "cast_range": "Self",
     "school": "evocation",
@@ -1320,6 +1430,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "150 feet",
     "school": "evocation",
@@ -1332,6 +1443,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "Self",
     "school": "evocation",
@@ -1344,6 +1456,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "evocation",
@@ -1356,6 +1469,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "60 feet",
     "school": "conjuration",
@@ -1368,6 +1482,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "60 feet",
     "school": "transmutation",
@@ -1380,6 +1495,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "30 feet",
     "school": "conjuration",
@@ -1392,6 +1508,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -1404,6 +1521,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "120 feet",
     "school": "conjuration",
@@ -1416,6 +1534,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 day",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -1428,6 +1547,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "100 feet",
     "school": "evocation",
@@ -1440,6 +1560,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "8 hours",
     "cast_range": "Touch",
     "school": "divination",
@@ -1452,6 +1573,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -1464,6 +1586,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "300 feet",
     "school": "evocation",
@@ -1476,6 +1599,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -1488,6 +1612,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "60 feet",
     "school": "conjuration",
@@ -1500,6 +1625,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "30 days",
     "cast_range": "60 feet",
     "school": "enchantment",
@@ -1512,6 +1638,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "10 days",
     "cast_range": "Touch",
     "school": "necromancy",
@@ -1524,6 +1651,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "30 feet",
     "school": "transmutation",
@@ -1536,6 +1664,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "Self",
     "school": "transmutation",
@@ -1548,6 +1677,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Self (10 foot radius)",
     "school": "abjuration",
@@ -1560,6 +1690,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Until dispelled or triggered",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -1572,6 +1703,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "60 feet",
     "school": "conjuration",
@@ -1584,6 +1716,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Touch",
     "school": "illusion",
@@ -1596,6 +1729,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -1608,6 +1742,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "24 hours",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -1620,6 +1755,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Touch",
     "school": "Divination",
@@ -1632,6 +1768,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 round",
     "cast_range": "120 feet",
     "school": "evocation",
@@ -1644,6 +1781,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Self (60 foot line)",
     "school": "evocation",
@@ -1656,6 +1794,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Until dispelled",
     "cast_range": "Touch",
     "school": "evocation",
@@ -1668,6 +1807,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "24 hours",
     "cast_range": "300 feet",
     "school": "illusion",
@@ -1680,6 +1820,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "necromancy",
@@ -1692,6 +1833,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "30 feet",
     "school": "transmutation",
@@ -1704,6 +1846,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "evocation",
@@ -1716,6 +1859,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "evocation",
@@ -1728,6 +1872,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "60 feet",
     "school": "transmutation",
@@ -1740,6 +1885,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "30 feet",
     "school": "conjuration",
@@ -1752,6 +1898,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Touch",
     "school": "enchantment",
@@ -1764,6 +1911,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "30 feet",
     "school": "enchantment",
@@ -1776,6 +1924,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "90 feet",
     "school": "enchantment",
@@ -1788,6 +1937,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "60 feet",
     "school": "enchantment",
@@ -1800,6 +1950,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Self",
     "school": "abjuration",
@@ -1812,6 +1963,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "120 feet",
     "school": "illusion",
@@ -1824,6 +1976,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "300 feet",
     "school": "evocation",
@@ -1836,6 +1989,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "divination",
@@ -1848,6 +2002,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "10 days",
     "cast_range": "Touch",
     "school": "illusion",
@@ -1860,6 +2015,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Until dispelled",
     "cast_range": "30 feet",
     "school": "abjuration",
@@ -1872,6 +2028,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "150 feet",
     "school": "conjuration",
@@ -1884,6 +2041,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "necromancy",
@@ -1896,6 +2054,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "300 feet",
     "school": "conjuration",
@@ -1908,6 +2067,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Until dispelled",
     "cast_range": "Touch",
     "school": "conjuration",
@@ -1920,6 +2080,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "Touch",
     "school": "illusion",
@@ -1932,6 +2093,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "30 feet",
     "school": "enchantment",
@@ -1944,6 +2106,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -1956,6 +2119,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "transmutation",
@@ -1968,6 +2132,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Self",
     "school": "divination",
@@ -1980,6 +2145,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -1992,6 +2158,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "60 feet",
     "school": "transmutation",
@@ -2004,6 +2171,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "Touch",
     "school": "Evocation",
@@ -2016,6 +2184,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Self (100 foot line)",
     "school": "evocation",
@@ -2028,6 +2197,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Self",
     "school": "divination",
@@ -2040,6 +2210,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "Self",
     "school": "divination",
@@ -2052,6 +2223,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "Self",
     "school": "divination",
@@ -2064,6 +2236,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -2076,6 +2249,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "8 hours",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -2088,6 +2262,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "30 feet",
     "school": "Conjuration",
@@ -2100,6 +2275,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "10 feet",
     "school": "abjuration",
@@ -2112,6 +2288,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Until dispelled",
     "cast_range": "Self",
     "school": "necromancy",
@@ -2124,6 +2301,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "120 feet",
     "school": "evocation",
@@ -2136,6 +2314,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Until dispelled",
     "cast_range": "30 feet",
     "school": "illusion",
@@ -2148,6 +2327,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -2160,6 +2340,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "24 hours",
     "cast_range": "300 feet",
     "school": "conjuration",
@@ -2172,6 +2353,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "120 feet",
     "school": "illusion",
@@ -2184,6 +2366,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "evocation",
@@ -2196,6 +2379,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "evocation",
@@ -2208,6 +2392,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "evocation",
@@ -2220,6 +2405,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "24 hours",
     "cast_range": "60 feet",
     "school": "enchantment",
@@ -2232,6 +2418,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "60 feet",
     "school": "conjuration",
@@ -2244,6 +2431,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "8 hours",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -2256,6 +2444,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "Transmutation",
@@ -2268,6 +2457,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 round",
     "cast_range": "120 feet",
     "school": "Transmutation",
@@ -2280,6 +2470,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "1 mile",
     "school": "evocation",
@@ -2292,6 +2483,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "24 hours",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -2304,6 +2496,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "30 feet",
     "school": "Illusion",
@@ -2316,6 +2509,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "10 days",
     "cast_range": "Sight",
     "school": "illusion",
@@ -2328,6 +2522,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "Self",
     "school": "illusion",
@@ -2340,6 +2535,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "Self",
     "school": "illusion",
@@ -2352,6 +2548,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Self",
     "school": "conjuration",
@@ -2364,6 +2561,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "30 feet",
     "school": "enchantment",
@@ -2376,6 +2574,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "120 feet",
     "school": "evocation",
@@ -2388,6 +2587,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 2 hours",
     "cast_range": "120 feet",
     "school": "transmutation",
@@ -2400,6 +2600,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "8 hours",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -2412,6 +2613,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "Self",
     "school": "abjuration",
@@ -2424,6 +2626,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "30 feet",
     "school": "transmutation",
@@ -2436,6 +2639,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "120 feet",
     "school": "illusion",
@@ -2448,6 +2652,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "30 feet",
     "school": "illusion",
@@ -2460,6 +2665,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "conjuration",
@@ -2472,6 +2678,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "24 hours",
     "cast_range": "60 feet",
     "school": "abjuration",
@@ -2484,6 +2691,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "conjuration",
@@ -2496,6 +2704,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "150 feet",
     "school": "transmutation",
@@ -2508,6 +2717,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "60 feet",
     "school": "transmutation",
@@ -2520,6 +2730,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "enchantment",
@@ -2532,6 +2743,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "enchantment",
@@ -2544,6 +2756,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "30 feet",
     "school": "evocation",
@@ -2556,6 +2769,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Up to 1 hour",
     "cast_range": "10 feet",
     "school": "Transmutation",
@@ -2568,6 +2782,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "self (60 foot cone)",
     "school": "evocation",
@@ -2580,6 +2795,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "10 minutes",
     "cast_range": "60 feet",
     "school": "abjuration",
@@ -2592,6 +2808,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "24 hours",
     "cast_range": "120 feet",
     "school": "abjuration",
@@ -2604,6 +2821,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "10 minutes",
     "cast_range": "Self",
     "school": "Conjuration",
@@ -2616,6 +2834,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Until dispelled",
     "cast_range": "120 feet",
     "school": "illusion",
@@ -2628,6 +2847,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 day",
     "cast_range": "500 miles",
     "school": "illusion",
@@ -2640,6 +2860,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -2652,6 +2873,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration up to 10 minutes",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -2664,6 +2886,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -2676,6 +2899,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "10 feet",
     "school": "transmutation",
@@ -2688,6 +2912,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "necromancy",
@@ -2700,6 +2925,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "60 feet",
     "school": "necromancy",
@@ -2712,6 +2938,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "Evocation",
@@ -2724,6 +2951,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -2736,6 +2964,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -2748,6 +2977,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -2760,6 +2990,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "30 feet",
     "school": "evocation",
@@ -2772,6 +3003,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Touch",
     "school": "Abjuration",
@@ -2784,6 +3016,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "necromancy",
@@ -2796,6 +3029,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "100 feet",
     "school": "transmutation",
@@ -2808,6 +3042,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "necromancy",
@@ -2820,6 +3055,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -2832,6 +3068,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "Evocation",
@@ -2844,6 +3081,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "30 feet",
     "school": "abjuration",
@@ -2856,6 +3094,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "120 feet",
     "school": "evocation",
@@ -2868,6 +3107,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "Self",
     "school": "divination",
@@ -2880,6 +3120,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "conjuration",
@@ -2892,6 +3133,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "Self",
     "school": "divination",
@@ -2904,6 +3146,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "8 hours",
     "cast_range": "30 feet",
     "school": "illusion",
@@ -2916,6 +3159,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 round",
     "cast_range": "Unlimited",
     "school": "evocation",
@@ -2928,6 +3172,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Until dispelled",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -2940,6 +3185,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "Self",
     "school": "transmutation",
@@ -2952,6 +3198,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "60 feet",
     "school": "evocation",
@@ -2964,6 +3211,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 round",
     "cast_range": "Self",
     "school": "abjuration",
@@ -2976,6 +3224,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "60 feet",
     "school": "abjuration",
@@ -2988,6 +3237,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "Touch",
     "school": "Transmutation",
@@ -3000,6 +3250,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "Evocation",
@@ -3012,6 +3263,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "120 feet",
     "school": "illusion",
@@ -3024,6 +3276,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "60 feet",
     "school": "illusion",
@@ -3036,6 +3289,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Until dispelled",
     "cast_range": "Touch",
     "school": "illusion",
@@ -3048,6 +3302,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "90 feet",
     "school": "enchantment",
@@ -3060,6 +3315,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "150 feet",
     "school": "conjuration",
@@ -3072,6 +3328,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "120 feet",
     "school": "transmutation",
@@ -3084,6 +3341,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "10 minutes",
     "cast_range": "Self",
     "school": "divination",
@@ -3096,6 +3354,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "10 minutes",
     "cast_range": "10 feet",
     "school": "necromancy",
@@ -3108,6 +3367,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "10 minutes",
     "cast_range": "self (30 foot radius)",
     "school": "transmutation",
@@ -3120,6 +3380,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -3132,6 +3393,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "150 feet",
     "school": "transmutation",
@@ -3144,6 +3406,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "Self (15 foot radius)",
     "school": "conjuration",
@@ -3156,6 +3419,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 minute",
     "cast_range": "60 feet",
     "school": "evocation",
@@ -3168,6 +3432,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "90 feet",
     "school": "conjuration",
@@ -3180,6 +3445,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "transmutation",
@@ -3192,6 +3458,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -3204,6 +3471,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Sight",
     "school": "conjuration",
@@ -3216,6 +3484,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 8 hours",
     "cast_range": "30 feet",
     "school": "enchantment",
@@ -3228,6 +3497,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Self (60 foot line)",
     "school": "evocation",
@@ -3240,6 +3510,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "150 feet",
     "school": "evocation",
@@ -3252,6 +3523,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Until dispelled or triggered",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -3264,6 +3536,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "60 feet",
     "school": "transmutation",
@@ -3276,6 +3549,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "30 feet",
     "school": "divination",
@@ -3288,6 +3562,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "10 feet",
     "school": "conjuration",
@@ -3300,6 +3575,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 round",
     "cast_range": "10 feet",
     "school": "conjuration",
@@ -3312,6 +3588,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Up to 1 minute",
     "cast_range": "30 feet",
     "school": "Transmutation",
@@ -3324,6 +3601,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "self (15 foot cube)",
     "school": "evocation",
@@ -3336,6 +3614,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Self",
     "school": "transmutation",
@@ -3348,6 +3627,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "8 hours",
     "cast_range": "Self (10 foot radius hemisphere)",
     "school": "evocation",
@@ -3360,6 +3640,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "Touch",
     "school": "divination",
@@ -3372,6 +3653,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 round",
     "cast_range": "10 feet",
     "school": "conjuration",
@@ -3384,6 +3666,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Self",
     "school": "conjuration",
@@ -3396,6 +3679,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "30 feet",
     "school": "transmutation",
@@ -3408,6 +3692,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Touch",
     "school": "necromancy",
@@ -3420,6 +3705,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "Touch",
     "school": "divination",
@@ -3432,6 +3718,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 round",
     "cast_range": "30 feet",
     "school": "Divination",
@@ -3444,6 +3731,7 @@
     "is_cantrip": true
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "60 feet",
     "school": "conjuration",
@@ -3456,6 +3744,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "Self",
     "school": "necromancy",
@@ -3468,6 +3757,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "120 feet",
     "school": "evocation",
@@ -3480,6 +3770,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "120 feet",
     "school": "evocation",
@@ -3492,6 +3783,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "120 feet",
     "school": "evocation",
@@ -3504,6 +3796,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "120 feet",
     "school": "evocation",
@@ -3516,6 +3809,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 10 minutes",
     "cast_range": "120 feet",
     "school": "conjuration",
@@ -3528,6 +3822,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "Touch",
     "school": "abjuration",
@@ -3540,6 +3835,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "24 hours",
     "cast_range": "30 feet",
     "school": "transmutation",
@@ -3552,6 +3848,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "1 hour",
     "cast_range": "30 feet",
     "school": "transmutation",
@@ -3564,6 +3861,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 hour",
     "cast_range": "60 feet",
     "school": "conjuration",
@@ -3576,6 +3874,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to one minute",
     "cast_range": "120 feet",
     "school": "illusion",
@@ -3588,6 +3887,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "8 hours",
     "cast_range": "30 feet",
     "school": "transmutation",
@@ -3600,6 +3900,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Concentration, up to 1 minute",
     "cast_range": "120 feet",
     "school": "evocation",
@@ -3612,6 +3913,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "Self",
     "school": "conjuration",
@@ -3624,6 +3926,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "Instantaneous",
     "cast_range": "5 feet",
     "school": "conjuration",
@@ -3636,6 +3939,7 @@
     "is_cantrip": false
   },
   {
+    "tags": ["spell", "core"],
     "duration": "10 minutes",
     "cast_range": "60 feet",
     "school": "enchantment",
