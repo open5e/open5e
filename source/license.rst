@@ -291,3 +291,10 @@ END OF LICENSE
 
 If you note any errors in this document, please let us know by emailing
 `*askdnd@wizards.com*. <mailto:askdnd@wizards.com>`__
+
+
+I have to put this here so Sphinx will load the image:
+
+.. figure:: /_images/become_a_patron_button.png
+    :figclass: image-right
+    :target: /_images/become_a_patron_button.png

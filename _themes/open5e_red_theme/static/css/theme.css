@@ -5365,13 +5365,13 @@ ul.list-bulleted ul li {
   background-color: #7289da;
   width: auto;
   line-height: 36px;
-  color: #ffffff;
   font-size: 18px;
   border-radius: 6px;
   padding: 3px 24px;
   margin-bottom: 24px;
   margin-right: 12px;
   border: none;
+  color: white !important;
 }
 
 .discord-link {

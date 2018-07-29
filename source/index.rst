@@ -19,17 +19,25 @@ Open5e aims to be the best open-source resource for 5e content.
 
    .. rst-class:: source
 
-We're working on a new version of the site!
+Join us in creating the new Open5e!
 ----------------------------------------------------------
 
-If you enjoy Open5e, join us on Discord to talk about it. Also consider supporting us on Patreon to help cover our (new) server costs.
+We're starting on a new version of the site with lots of new, highly-requested features like: better search, more art, tokens, inline rollers, and more!
+
+If you enjoy Open5e, join us on Discord to talk about it. 
+Our discord is a place to talk about the redesign as well as rules, tools, art, gaming in general, or anything else on your mind! 
 
 .. raw:: html
    
-   <button class="discord-button">Join the Open5e Discord</button>
-   <a href="https://www.patreon.com/bePatron?u=12582050" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+   <a href="https://discord.gg/bSsNgyv" class="discord-button">Join the Open5e Discord</a>
+   <a style="display: inline-block;" href="https://www.patreon.com/open5e">
+    <img style="margin-top: 7px; margin-bottom: 12px; height: 42px !important;" src="_images/become_a_patron_button.png" />
+   </a>
 
-Our discord is a place to talk about rules, tools, DM'ing, art, gaming in general, or anything else on your mind! Our patreon will initially be focused on collecting enough to get better hosting and rebuild in a new framework. After that we will start working on generating art and content to make running and playing in games better.
+Also consider supporting us on Patreon to help cover our (fancy new) server costs.
+It will initially focus on better hosting and rebuild in a new framework: Django/Vue.js 
+
+We will also start working on generating art and content to make running and playing in games better.
 
 ----------------------------------------------------------------------------------------------
 
