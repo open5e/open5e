@@ -220,17 +220,20 @@
 
   {%- block footer %} {% endblock %}
 
-  <!-- Hotjar Tracking Code for http://www.open5e.com/ -->
 <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:168694,hjsv:5};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+  /**
+  * Function that tracks a click on an outbound link in Analytics.
+  * This function takes a valid URL string as an argument, and uses that URL string
+  * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+  * using 'navigator.sendBeacon' in browser that support it.
+  */
+  var trackOutboundLink = function(url) {
+     ga('send', 'event', 'outbound', 'click', url, {
+       'transport': 'beacon',
+       'hitCallback': function(){document.location = url;}
+     });
+  }
+  </script>
 
 </body>
 </html>

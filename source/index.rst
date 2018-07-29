@@ -29,8 +29,8 @@ Our discord is a place to talk about the redesign as well as rules, tools, art, 
 
 .. raw:: html
    
-   <a href="https://discord.gg/bSsNgyv" class="discord-button">Join the Open5e Discord</a>
-   <a style="display: inline-block;" href="https://www.patreon.com/open5e">
+   <a onclick="trackOutboundLink('https://discord.gg'); return false;" href="https://discord.gg/bSsNgyv" class="discord-button">Join the Open5e Discord</a>
+   <a style="display: inline-block;" onclick="trackOutboundLink('https://www.patreon.com/open5e'); return false;" href="https://www.patreon.com/open5e">
     <img style="margin-top: 7px; margin-bottom: 12px; height: 42px !important;" src="_images/become_a_patron_button.png" />
    </a>
 
