@@ -19,12 +19,17 @@ Open5e aims to be the best open-source resource for 5e content.
 
    .. rst-class:: source
 
-What's this?! New beasts?!
---------------------------
+We're working on a new version of the site!
+----------------------------------------------------------
 
-Thanks to the awesome work of contributor `RealDeuce <https://github.com/RealDeuce>`_, the OGL content from Kobold Press's *Tome of Beasts* is now on Open5e!
+If you enjoy Open5e, join us on Discord to talk about it. Also consider supporting us on Patreon to help cover our (new) server costs.
 
-If you want to thank him, head over to Github and shower him with well-earned praise!
+.. raw:: html
+   
+   <button class="discord-button">Join the Open5e Discord</button>
+   <a href="https://www.patreon.com/bePatron?u=12582050" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+
+Our discord is a place to talk about rules, tools, DM'ing, art, gaming in general, or anything else on your mind! Our patreon will initially be focused on collecting enough to get better hosting and rebuild in a new framework. After that we will start working on generating art and content to make running and playing in games better.
 
 ----------------------------------------------------------------------------------------------
 
