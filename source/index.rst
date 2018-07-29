@@ -35,9 +35,9 @@ Our discord is a place to talk about the redesign as well as rules, tools, art, 
    </a>
 
 Also consider supporting us on Patreon to help cover our (fancy new) server costs.
-It will initially focus on better hosting and rebuild in a new framework: Django/Vue.js 
+It will initially focus on better hosting and the rebuild in Django/Vue.js.
 
-We will also start working on generating art and content to make running and playing in games better.
+We will also start working on creating more supporting art for the 5e SRD.
 
 ----------------------------------------------------------------------------------------------
 
