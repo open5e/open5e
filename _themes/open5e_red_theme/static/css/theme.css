@@ -367,7 +367,7 @@ big, small {
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
-  font-size: 1.33333em;
+  font-size: 1.3333333333em;
   line-height: 0.75em;
   vertical-align: -15%;
 }
@@ -389,13 +389,13 @@ big, small {
 }
 
 .fa-fw {
-  width: 1.28571em;
+  width: 1.2857142857em;
   text-align: center;
 }
 
 .fa-ul {
   padding-left: 0;
-  margin-left: 2.14286em;
+  margin-left: 2.1428571429em;
   list-style-type: none;
 }
 .fa-ul > li {
@@ -404,13 +404,13 @@ big, small {
 
 .fa-li {
   position: absolute;
-  left: -2.14286em;
-  width: 2.14286em;
-  top: 0.14286em;
+  left: -2.1428571429em;
+  width: 2.1428571429em;
+  top: 0.1428571429em;
   text-align: center;
 }
 .fa-li.fa-lg {
-  left: -1.85714em;
+  left: -1.8571428571em;
 }
 
 .fa-border {
@@ -3060,7 +3060,7 @@ input, select, textarea {
 .wy-control-group .wy-form-full {
   float: left;
   display: block;
-  margin-right: 2.35765%;
+  margin-right: 2.3576515979%;
   width: 100%;
   margin-right: 0;
 }
@@ -3071,8 +3071,8 @@ input, select, textarea {
 .wy-control-group .wy-form-halves {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
 }
 .wy-control-group .wy-form-halves:last-child {
   margin-right: 0;
@@ -3087,8 +3087,8 @@ input, select, textarea {
 .wy-control-group .wy-form-thirds {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%;
 }
 .wy-control-group .wy-form-thirds:last-child {
   margin-right: 0;
@@ -4483,7 +4483,7 @@ code.code-large, .rst-content tt.code-large {
   width: auto;
   border-radius: 0;
   max-width: 100%;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
 }
 .wy-side-nav-search > a.icon img.logo, .wy-side-nav-search .wy-dropdown > a.icon img.logo {
   margin-top: 0.85em;
@@ -5360,6 +5360,24 @@ ul.list-bulleted ul li {
     margin-right: -25%;
   }
 }
+.discord-button {
+  display: inline-block;
+  background-color: #7289da;
+  width: auto;
+  line-height: 36px;
+  font-size: 18px;
+  border-radius: 6px;
+  padding: 3px 24px;
+  margin-bottom: 24px;
+  margin-right: 12px;
+  border: none;
+  color: white !important;
+}
+
+.discord-link {
+  color: white !important;
+}
+
 span[id*='MathJax-Span'] {
   color: #404040;
 }
