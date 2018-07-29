@@ -5375,7 +5375,7 @@ ul.list-bulleted ul li {
 }
 
 .discord-link {
-  color: white;
+  color: white !important;
 }
 
 span[id*='MathJax-Span'] {
