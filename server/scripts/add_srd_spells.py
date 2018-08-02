@@ -1,5 +1,5 @@
 import os, sys
-sys.path.append('/Users/cameronblandford/code/personal/open5e/server')
+sys.path.append('/Users/ean/dev/open5e/server')
 os.environ['DJANGO_SETTINGS_MODULE'] = 'server.settings'
 import django
 django.setup()
