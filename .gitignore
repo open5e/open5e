@@ -29,3 +29,6 @@ _themes/bower_components/*
 
 *deploy.php
 *deploy-config.php
+
+# Django dev stuff
+*.sqlite3
