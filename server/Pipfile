@@ -8,6 +8,7 @@ sphinx = "*"
 django = "*"
 djangorestframework = "*"
 django-filter = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
