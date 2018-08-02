@@ -1,22 +1,20 @@
 <template>
   <section class="container">
     <div>
-        <div v-bind:key="monster.name" v-for="monster in monsters">
-          <h2>{{monster.name}}</h2> 
-          <p>AC {{monster.armor_class}}</p>
-          <p>STR {{monster.strength}} (+{{Math.floor(( monster.strength - 10 ) / 2)}})</p>
+        <div class="monster-block" v-bind:key="monster.name" v-for="monster in monsters">
+          <nuxt-link tag="h2" :params="{id: monster.id}" :to="`/monsters/view/${monster.id}`">{{monster.name}}</nuxt-link>
         </div>
     </div>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
 import axios from 'axios'
+import StatBonus from '~/components/StatBonus.vue'
 
 export default {
   components: {
-    AppLogo
+    StatBonus
   },
   mounted () {
     return axios.get(`http://localhost:8000/monsters`) //you will need to enable CORS to make this work
@@ -35,5 +33,8 @@ export default {
 </script>
 
 <style>
+.monster-block {
+  margin-top: 1rem;
+}
 </style>
 

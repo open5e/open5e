@@ -17,6 +17,7 @@ class MonsterSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Monster
         fields = (
+            'id',
             'name',
             'size',
             'type',
@@ -49,6 +50,7 @@ class SpellSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Spell
         fields = (
+            'id',
             'name',
             'desc',
             'higher_level',
