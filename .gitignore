@@ -16,19 +16,16 @@ desktop.ini
 # Sphinx
 build/
 
-# build script
-
-publish
-
 # node stuff
 
-_themes/node_modules/
+**/node_modules/
+
 *.scssc
 *.sassc
-_themes/bower_components/*
 
 *deploy.php
 *deploy-config.php
 
 # Django dev stuff
 *.sqlite3
+

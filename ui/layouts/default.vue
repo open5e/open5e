@@ -1,10 +1,19 @@
 <template>
-  <div>
+  <div class="app-wrapper">
+    <div class="sidebar">
+      <nuxt-link tag="h1" to="/">Open5e</nuxt-link>
+      <ul>
+        <nuxt-link tag="li" to="/spells/spell-list">Spells</nuxt-link>
+        <nuxt-link tag="li" to="/monsters/monster-list">Monsters</nuxt-link>
+      </ul>
+    </div>
+    <div class="content-wrapper">
     <nuxt/>
+    </div>
   </div>
 </template>
 
-<style>
+<style lang="scss">
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
@@ -48,6 +57,43 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  height: 100vh;
+  width: 100vw;
+}
+
+.content-wrapper {
+  padding: 2rem 1rem;
+  overflow: auto;
+  flex-grow: 1;
+}
+
+.sidebar {
+  color: white;
+  background-color: black;
+  margin-right: 2rem;
+
+  
+  h1 {
+    display: block;
+    background-color: #E74C3C; 
+    padding: 1rem 3rem 1rem 1rem;
+    cursor: pointer;
+  }
+
+  ul {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    list-style: none;
+    li {
+      margin-bottom: 1rem;
+    }
+  }
 }
 </style>
 
