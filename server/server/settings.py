@@ -127,8 +127,7 @@ USE_TZ = True
 
 REST_FRAMEWORK = {
     # Pagination
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 50,
+    'DEFAULT_PAGINATION_CLASS': 'api.utils.StandardResultsSetPagination',
 
     # Filtering
     'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',),

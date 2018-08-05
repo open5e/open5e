@@ -3,7 +3,7 @@
     <div class="sidebar">
       <nuxt-link tag="h1" to="/">Open5e</nuxt-link>
       <ul>
-        <nuxt-link tag="li" to="/spells/spell-list">Spells</nuxt-link>
+        <nuxt-link tag="li" to="/spells/spells_a-z">Spells</nuxt-link>
         <nuxt-link tag="li" to="/monsters/monster-list">Monsters</nuxt-link>
       </ul>
     </div>
@@ -14,6 +14,8 @@
 </template>
 
 <style lang="scss">
+@import '../assets/main';
+
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
