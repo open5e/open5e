@@ -13,7 +13,7 @@ import axios from 'axios'
 
 export default {
   mounted () {
-    return axios.get(`http://localhost:8000/spells`) //you will need to enable CORS to make this work
+    return axios.get(`http://localhost:8000/spells/?fields=id,name`) //you will need to enable CORS to make this work
     .then(response => {
       this.spells = response.data.results
     })
