@@ -1,21 +1,23 @@
 <template>
   <section class="container">
-    <h2>Spells A-Z</h2>
-    <div class="three-column">
-    <ul class="list--items" 
-      v-bind:key="letter[0].name.charAt(0)" 
-      v-for="(letter, key) in spellsByLetter">
+    <h2>Spells List</h2>     
+    <input type="text" v-model="filter"> 
+    <div :class="{'three-column': !filter}">
+    <p v-if="!spellListLength" >No results</p> 
+      <ul class="list--items" 
+        v-bind:key="letter[0].name.charAt(0)" 
+        v-for="(letter, key) in spellsByLetter">
 
-      <h3>{{key.toUpperCase()}}</h3>
-        <li v-bind:key="spell.name" v-for="spell in letter">
-          <nuxt-link tag="a" 
-            :params="{id: spell.id}" 
-            :to="`/spells/view/${spell.id}`">
+        <h3 v-if="!filter">{{key.toUpperCase()}}</h3>
+          <li v-bind:key="spell.name" v-for="spell in letter">
+            <nuxt-link tag="a" 
+              :params="{id: spell.id}" 
+              :to="`/spells/view/${spell.id}`">
 
-            {{spell.name}}
-          </nuxt-link>
-        </li>
-    </ul>
+              {{spell.name}}
+            </nuxt-link>
+          </li>
+      </ul>
     </div>
   </section>
 </template>
@@ -33,22 +35,36 @@ export default {
   data () {
     return {
       spells: [],
+      filter: '', 
     }
   },
   computed: {
     // a computed getter
     spellsByLetter: function () {
       let letters = {};
-      for (let i = 0; i < this.spells.length; i++){
-        let firstLetter = this.spells[i].name.charAt(0).toLowerCase();
+      for (let i = 0; i < this.filteredSpells.length; i++){ 
+        let firstLetter = this.filteredSpells[i].name.charAt(0).toLowerCase(); 
         if (!(firstLetter in letters)) {
           letters[firstLetter] = [];
         }
-        letters[firstLetter].push(this.spells[i]);
+        letters[firstLetter].push(this.filteredSpells[i]); 
       }
       console.log(letters);
       return letters
-    }
+    },
+    filteredSpells: function() { 
+      return this.spells.filter(spell => { 
+         return spell.name.toLowerCase().indexOf(this.filter.toLowerCase()) > -1 
+      }) 
+    }, 
+    columnClassObject: function() { 
+      return { 
+        'three-column': !this.filter, 
+      } 
+    }, 
+    spellListLength: function() { 
+      return Object.keys(this.spellsByLetter).length; 
+    } 
   }
 }
 </script>
