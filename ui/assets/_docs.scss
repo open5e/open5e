@@ -1,0 +1,28 @@
+@import 'variables';
+
+.docs-container {
+  margin: $pad-lg auto $pad-lg 0;
+  padding: 0 $pad-lg;
+  h1 {
+    font-size: 2rem;
+    color: $color-blood;
+    &:not(:first-child){
+      margin-top: $pad-xl;
+    }
+  }
+  h2 {
+    margin-top: $pad-lg;
+    border-bottom: 3px solid $color-fireball;
+    padding-bottom: $pad-xs;
+  }
+  p {
+    margin-top: $pad-md;
+  }
+
+  .docs-toc {
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+  }
+}

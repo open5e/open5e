@@ -3,6 +3,17 @@
     <div class="sidebar">
       <nuxt-link tag="h1" to="/">Open5e</nuxt-link>
       <ul>
+        <nuxt-link tag="li" to="/rules/combat">Combat</nuxt-link>
+        <ul>
+          <nuxt-link tag="li" to="/rules/combat/actions">Actions in Combat</nuxt-link>
+          <nuxt-link tag="li" to="/rules/combat/attacking">Attacking</nuxt-link>
+          <nuxt-link tag="li" to="/rules/combat/combat-sequence">Combat Sequence</nuxt-link>
+          <nuxt-link tag="li" to="/rules/combat/cover">Cover</nuxt-link>
+          <nuxt-link tag="li" to="/rules/combat/damage-and-healing">Damage &amp; Healing</nuxt-link>
+          <nuxt-link tag="li" to="/rules/combat/mounted-combat">Mounted combat</nuxt-link>
+          <nuxt-link tag="li" to="/rules/combat/movement-in-combat">Movement in Combat</nuxt-link>
+          <nuxt-link tag="li" to="/rules/combat/underwater-combat">Underwater COmbat</nuxt-link>
+        </ul>
         <nuxt-link tag="li" to="/spells/spells-list">Spells</nuxt-link>
         <nuxt-link tag="li" to="/monsters/monster-list">Monsters</nuxt-link>
       </ul>
@@ -16,69 +27,27 @@
 <style lang="scss">
 @import '../assets/main';
 
-html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-
 .app-wrapper {
   display: flex;
   flex-direction: row;
   align-content: stretch;
   height: 100vh;
   width: 100vw;
+  background: $color-fog;
 }
 
 .content-wrapper {
   padding: 2rem 1rem;
   overflow: auto;
   flex-grow: 1;
+  background: white;
+  max-width: 60rem;
 }
 
 .sidebar {
   color: white;
   background-color: black;
-  margin-right: 2rem;
+  width: 16rem;
 
   
   h1 {
@@ -86,6 +55,7 @@ html {
     background-color: #E74C3C; 
     padding: 1rem 3rem 1rem 1rem;
     cursor: pointer;
+    margin-top: 0;
   }
 
   ul {
@@ -94,6 +64,9 @@ html {
     list-style: none;
     li {
       margin-bottom: 1rem;
+    }
+    ul {
+      opacity: 0.8;
     }
   }
 }

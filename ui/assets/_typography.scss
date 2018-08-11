@@ -1,0 +1,26 @@
+@import 'variables';
+
+body {
+  font-family: $font-family-base;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-family-headers;
+  margin-top: $pad-md;
+}
+
+.list--items {
+  list-style: none;
+  margin: 1rem 0;
+  padding-left: 0;
+  li {
+    padding: 0.2rem 0;
+  }
+}
+
+.three-column {
+  columns: 3;
+  ul {
+    break-inside: avoid-column;
+  }
+}
