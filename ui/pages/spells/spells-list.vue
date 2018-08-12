@@ -1,5 +1,5 @@
 <template>
-  <section class="container docs-container">
+  <section class="container">
     <h2>Spells List</h2>     
     <input type="text" v-model="filter"> 
     <div :class="{'three-column': !filter}">
