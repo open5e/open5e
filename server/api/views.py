@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from api.models import Monster, Spell
-from api.serializers import UserSerializer, GroupSerializer, MonsterSerializer, SpellSerializer
+from api.models import Monster, Spell, GameContentDocument
+from api.serializers import UserSerializer, GroupSerializer, MonsterSerializer, SpellSerializer, GameContentDocumentSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -46,4 +46,15 @@ class MonsterViewSet(viewsets.ModelViewSet):
         'challenge_rating',
         'armor_class',
         'name',
+    )
+
+class GameContentDocumentViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows viewing of Game Content Documents.
+    """
+    queryset = GameContentDocument.objects.all()
+    serializer_class = GameContentDocumentSerializer
+    filter_fields=(
+        'organization',
+        'name'
     )

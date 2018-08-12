@@ -50,3 +50,15 @@ class Spell(models.Model):
     dnd_class = models.TextField()
     archetype = models.TextField()
     circles = models.TextField()
+
+class GameContentDocument(models.Model):
+    name = models.TextField() # System Reference Document
+    desc = models.TextField() 
+    license = models.TextField() # Open Gaming License
+    author = models.TextField() # Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.
+    organization = models.TextField() # Wizards of the Coast
+    version = models.TextField() # 5.1
+    url = models.URLField() # http://dnd.wizards.com/articles/features/systems-reference-document-srd
+
+
+    
