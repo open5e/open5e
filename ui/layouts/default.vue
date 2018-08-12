@@ -3,6 +3,24 @@
     <div class="sidebar">
       <nuxt-link tag="h1" class="sticky-header" to="/">Open5e</nuxt-link>
       <ul>
+        <nuxt-link tag="li" to="/characters/">Characters</nuxt-link>
+        <ul>
+          <nuxt-link tag="li" to="/characters/advancement">Advancement</nuxt-link>
+          <nuxt-link tag="li" to="/characters/background">Background</nuxt-link>
+          <nuxt-link tag="li" to="/characters/feats">Feats</nuxt-link>
+          <nuxt-link tag="li" to="/characters/races/">Races</nuxt-link>
+          <ul>
+            <nuxt-link tag="li" to="/characters/races/tiefling">Tiefling</nuxt-link>
+            <nuxt-link tag="li" to="/characters/races/dragonborn">Dragonborn</nuxt-link>
+            <nuxt-link tag="li" to="/characters/races/dwarf">Dwarf</nuxt-link>
+            <nuxt-link tag="li" to="/characters/races/elf">Elf</nuxt-link>
+            <nuxt-link tag="li" to="/characters/races/gnome">Gnome</nuxt-link>
+            <nuxt-link tag="li" to="/characters/races/half-elf">Half-Elf</nuxt-link>
+            <nuxt-link tag="li" to="/characters/races/half-orc">Half-Orc</nuxt-link>
+            <nuxt-link tag="li" to="/characters/races/halfling">Halfling</nuxt-link>
+            <nuxt-link tag="li" to="/characters/races/human">Human</nuxt-link>
+          </ul>
+        </ul>
         <nuxt-link tag="li" to="/classes/">Classes</nuxt-link>
         <ul>
           <nuxt-link tag="li" to="/classes/barbarian">Barbarian</nuxt-link>

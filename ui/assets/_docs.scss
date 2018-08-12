@@ -3,7 +3,8 @@
 table {
   font-size: 14px;
   border-collapse: collapse;
-  border-top: 4px solid $color-smoke;
+  border-top: $pad-sm solid $color-smoke;
+  border-bottom: $pad-sm solid $color-smoke;
   margin-top: $pad-md;
   td, th {
     padding: $pad-sm $pad-sm;
