@@ -17,7 +17,7 @@ export default
         src: String,
         toc: {
             type: Boolean,
-            default: false,
+            default: true,
         }
 
     },

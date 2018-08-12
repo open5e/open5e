@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container docs-container">
     <div>
       <h2>{{spell.name}}</h2>
       <p>A {{spell.level}} {{spell.dnd_class}} spell</p>

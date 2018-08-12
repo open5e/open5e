@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container docs-container">
     <div>
       <h2>{{monster.name}}</h2>
       <p>

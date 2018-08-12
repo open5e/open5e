@@ -1,18 +1,33 @@
 <template>
   <div class="app-wrapper">
     <div class="sidebar">
-      <nuxt-link tag="h1" to="/">Open5e</nuxt-link>
+      <nuxt-link tag="h1" class="sticky-header" to="/">Open5e</nuxt-link>
       <ul>
-        <nuxt-link tag="li" to="/rules/combat">Combat</nuxt-link>
+        <nuxt-link tag="li" to="/classes/">Classes</nuxt-link>
         <ul>
-          <nuxt-link tag="li" to="/rules/combat/actions">Actions in Combat</nuxt-link>
-          <nuxt-link tag="li" to="/rules/combat/attacking">Attacking</nuxt-link>
-          <nuxt-link tag="li" to="/rules/combat/combat-sequence">Combat Sequence</nuxt-link>
-          <nuxt-link tag="li" to="/rules/combat/cover">Cover</nuxt-link>
-          <nuxt-link tag="li" to="/rules/combat/damage-and-healing">Damage &amp; Healing</nuxt-link>
-          <nuxt-link tag="li" to="/rules/combat/mounted-combat">Mounted combat</nuxt-link>
-          <nuxt-link tag="li" to="/rules/combat/movement-in-combat">Movement in Combat</nuxt-link>
-          <nuxt-link tag="li" to="/rules/combat/underwater-combat">Underwater COmbat</nuxt-link>
+          <nuxt-link tag="li" to="/classes/barbarian">Barbarian</nuxt-link>
+          <nuxt-link tag="li" to="/classes/bard">Bard</nuxt-link>
+          <nuxt-link tag="li" to="/classes/cleric">Cleric</nuxt-link>
+          <nuxt-link tag="li" to="/classes/druid">Druid</nuxt-link>
+          <nuxt-link tag="li" to="/classes/fighter">Fighter</nuxt-link>
+          <nuxt-link tag="li" to="/classes/monk">Monk</nuxt-link>
+          <nuxt-link tag="li" to="/classes/paladin">Paladin</nuxt-link>
+          <nuxt-link tag="li" to="/classes/ranger">Ranger</nuxt-link>
+          <nuxt-link tag="li" to="/classes/rogue">Rogue</nuxt-link>
+          <nuxt-link tag="li" to="/classes/sorcerer">Sorcerer</nuxt-link>
+          <nuxt-link tag="li" to="/classes/warlock">Warlock</nuxt-link>
+          <nuxt-link tag="li" to="/classes/wizard">Wizard</nuxt-link>
+        </ul>
+        <nuxt-link tag="li" to="/combat/">Combat</nuxt-link>
+        <ul>
+          <nuxt-link tag="li" to="/combat/actions">Actions in Combat</nuxt-link>
+          <nuxt-link tag="li" to="/combat/attacking">Attacking</nuxt-link>
+          <nuxt-link tag="li" to="/combat/combat-sequence">Combat Sequence</nuxt-link>
+          <nuxt-link tag="li" to="/combat/cover">Cover</nuxt-link>
+          <nuxt-link tag="li" to="/combat/damage-and-healing">Damage &amp; Healing</nuxt-link>
+          <nuxt-link tag="li" to="/combat/mounted-combat">Mounted combat</nuxt-link>
+          <nuxt-link tag="li" to="/combat/movement-in-combat">Movement in Combat</nuxt-link>
+          <nuxt-link tag="li" to="/combat/underwater-combat">Underwater COmbat</nuxt-link>
         </ul>
         <nuxt-link tag="li" to="/spells/spells-list">Spells</nuxt-link>
         <nuxt-link tag="li" to="/monsters/monster-list">Monsters</nuxt-link>
@@ -36,6 +51,12 @@
   background: $color-fog;
 }
 
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
 .content-wrapper {
   padding: 2rem 1rem;
   overflow: auto;
@@ -46,8 +67,11 @@
 
 .sidebar {
   color: white;
-  background-color: black;
+  background-color: $color-basalt;
   width: 16rem;
+  min-width: 14rem;
+  overflow-y: auto;
+  font-size: 15px;
 
   
   h1 {
@@ -59,14 +83,26 @@
   }
 
   ul {
-    margin-top: 1rem;
-    padding-left: 1rem;
+    padding: $pad-sm $pad-md $pad-sm $pad-xs;
     list-style: none;
     li {
-      margin-bottom: 1rem;
+      padding: $pad-md $pad-md;
+      opacity: 0.8;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
     }
     ul {
+      background-color: $color-darkness;
       opacity: 0.8;
+      padding: $pad-sm $pad-md $pad-sm $pad-lg;
+      margin: 0 -1rem;
+      
+      li {
+        padding: $pad-sm $pad-md;
+      }
     }
   }
 }
