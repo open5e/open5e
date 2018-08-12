@@ -47,6 +47,18 @@
           <nuxt-link tag="li" to="/combat/movement-in-combat">Movement in Combat</nuxt-link>
           <nuxt-link tag="li" to="/combat/underwater-combat">Underwater COmbat</nuxt-link>
         </ul>
+        <nuxt-link tag="li" to="/gameplay-mechanics/">Gameplay Mechanics</nuxt-link>
+        <ul>
+          <nuxt-link tag="li" to="/gameplay-mechanics/ability-scores">Ability Scores</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/between-adventures">Between Adventures</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/conditions">Conditions</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/environment">Environment</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/movement">Movement</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/objects">Objects</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/rest">Rest</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/saving-throws">Saving Throws</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/time">Time</nuxt-link>
+        </ul>
         <nuxt-link tag="li" to="/spells/spells-list">Spells</nuxt-link>
         <nuxt-link tag="li" to="/monsters/monster-list">Monsters</nuxt-link>
       </ul>
