@@ -199,7 +199,7 @@ Arcane Tradition
 ^^^^^^^^^^^^^^^^
 
 When you reach 2nd level, you choose an arcane tradition, shaping your
-practice of magic through one of eight schools, such as Evocation.
+practice of magic through one of eight :ref:`schools <srd:the-schools-of-magic>`, such as Evocation.
 
 Your choice grants you features at 2nd level and again at 6th, 10th, and
 14th level.

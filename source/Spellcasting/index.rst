@@ -22,3 +22,4 @@ Spellcasting
    *
    by-class/index
    spells_a-z/index
+   by-school/index
