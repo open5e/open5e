@@ -21,7 +21,7 @@ it feels threatened than a true desire to help others. In its calm
 form, a hulking whelp is just over three feet tall at the shoulder
 and weighs 50 lb. Unleashed, it is 20 feet tall and 4,000 lb.
 
-Hilking Whelp
+Hulking Whelp
 ~~~~~~~~~~~~~
 
 Small/Huge fey (shapechanger), chaotic neutral
