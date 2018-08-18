@@ -5,11 +5,11 @@ Transmutation Spells
 
 Cantrip (Level 0)
 ~~~~~~~~~~~~~~~~~
-ref:`srd:mending`
-ref:`srd:message`
-ref:`srd:prestidigitation`
-ref:`srd:shillelagh`
-ref:`srd:thaumaturgy`
+- :ref:`srd:mending`
+- :ref:`srd:message`
+- :ref:`srd:prestidigitation`
+- :ref:`srd:shillelagh`
+- :ref:`srd:thaumaturgy`
 
 1st Level
 ~~~~~~~~~
