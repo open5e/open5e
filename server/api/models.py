@@ -1,9 +1,11 @@
+import uuid
 from django.db import models
 from django.contrib.postgres.fields import JSONField
 
 # Create your models here.
 
 class Monster(models.Model):
+    slug = models.SlugField(unique=True, default=uuid.uuid1)
     name = models.TextField()
     size = models.TextField()
     type = models.TextField()
@@ -35,6 +37,7 @@ class Monster(models.Model):
     # legendary_actions
 
 class Spell(models.Model):
+    slug = models.SlugField(unique=True, default=uuid.uuid1)
     name = models.TextField()
     desc = models.TextField()
     higher_level = models.TextField()
@@ -53,10 +56,13 @@ class Spell(models.Model):
     circles = models.TextField()
 
 class Archetype(models.Model):
-    name = models.TextField()
+    slug = models.SlugField(unique=True, default=uuid.uuid1)
+    name = models.TextField(primary_key=True)
     desc = models.TextField()
 
 class CharClass(models.Model):
+    slug = models.SlugField(unique=True, default=uuid.uuid1, primary_key=True)
+    name = models.TextField()
     hit_dice = models.TextField()
     hp_at_1st_level = models.TextField()
     hp_at_higher_levels = models.TextField()
@@ -70,9 +76,10 @@ class CharClass(models.Model):
     desc = models.TextField()
     spellcasting_ability = models.TextField()
     subtypes_name = models.TextField()
-    archetype = models.ForeignKey(Archetype, on_delete=models.CASCADE)
+    archetype = models.ForeignKey(Archetype, on_delete=models.CASCADE, null=True)
 
 class SubRace(models.Model):
+    slug = models.SlugField(unique=True, default=uuid.uuid1, primary_key=True)
     name = models.TextField()
     desc = models.TextField()
     asi_desc = models.TextField()
@@ -80,6 +87,7 @@ class SubRace(models.Model):
     traits = models.TextField()
 
 class Race(models.Model):
+    slug = models.SlugField(unique=True, default=uuid.uuid1, primary_key=True)
     name = models.TextField()
     desc = models.TextField()
     asi_desc = models.TextField()
@@ -87,33 +95,38 @@ class Race(models.Model):
     age = models.TextField()
     alignment = models.TextField()
     size = models.TextField()
-    speed_walk = models.IntegerField()
+    speed = JSONField()
     speed_desc = models.TextField()
     languages = models.TextField()
     vision = models.TextField()
     traits = models.TextField()
     subtypes  = models.TextField()
-    sub_race = models.ForeignKey(SubRace, on_delete=models.CASCADE)
+    sub_race = models.ForeignKey(SubRace, on_delete=models.CASCADE, null=True)
 
-class Planes(models.Model):
+class Plane(models.Model):
+    slug = models.SlugField(unique=True, default=uuid.uuid1)
     name = models.TextField()
     desc = models.TextField()
 
-class Sections(models.Model):
+class Section(models.Model):
+    slug = models.SlugField(unique=True, default=uuid.uuid1)
     name = models.TextField()
     desc = models.TextField()
     parent = models.TextField()
 
-class Feats(models.Model):
+class Feat(models.Model):
+    slug = models.SlugField(unique=True, default=uuid.uuid1)
     name = models.TextField()
     prerequisite = models.TextField()
     desc = models.TextField()
 
-class Conditions(models.Model):
+class Condition(models.Model):
+    slug = models.SlugField(unique=True, default=uuid.uuid1)
     name = models.TextField
     desc = models.TextField
 
 class GameContentDocument(models.Model):
+    slug = models.SlugField(unique=True, default=uuid.uuid1)
     name = models.TextField() # System Reference Document
     desc = models.TextField() 
     license = models.TextField() # Open Gaming License
