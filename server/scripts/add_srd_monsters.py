@@ -1,5 +1,6 @@
 import os, sys
-sys.path.append('/Users/ean/dev/open5e/server')
+root_path = os.environ['OPEN_5E_ROOT']
+sys.path.append(root_path)
 os.environ['DJANGO_SETTINGS_MODULE'] = 'server.settings'
 import django
 django.setup()
@@ -7,7 +8,9 @@ from django.contrib.auth.models import User
 from api.models import Spell, Monster
 import json
 
-with open('../data/monsters/5e-SRD-Monsters.json') as json_data:
+file_location = root_path + ('' if root_path.endswith('/') else '/') + 'data/monsters/5e-SRD-Monsters.json'
+
+with open(file_location) as json_data:
     monsters = json.load(json_data)
     for mob in monsters:
         m = Monster.objects.create()
