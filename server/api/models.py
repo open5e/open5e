@@ -58,7 +58,7 @@ class Spell(GameContent):
     archetype = models.TextField()
     circles = models.TextField()
 
-class CharClass(models.Model):
+class CharClass(GameContent):
     hit_dice = models.TextField()
     hp_at_1st_level = models.TextField()
     hp_at_higher_levels = models.TextField()
@@ -75,7 +75,7 @@ class CharClass(models.Model):
 class Archetype(GameContent):
     char_class = models.ForeignKey(CharClass, on_delete=models.CASCADE, null=True)
 
-class Race(models.Model):
+class Race(GameContent):
     asi_desc = models.TextField()
     asi = JSONField()
     age = models.TextField()
