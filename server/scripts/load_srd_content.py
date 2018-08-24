@@ -2,7 +2,7 @@ import os, sys
 root_path = os.environ['OPEN_5E_ROOT']
 sys.path.append(root_path)
 import django
-
+from django.template.defaultfilters import slugify
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'server.settings')
 django.setup()
 from api.models import *
@@ -158,12 +158,44 @@ def loadMonsters():
                     m.languages = mob['languages']
                 if 'challenge_rating' in mob:
                     m.challenge_rating = mob['challenge_rating']
+                successcount+=1
         
         print("Done loading Monsters.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
 
 def loadBackgrounds():
     #### Load Backgrounds ####
     print('Loading Backgrounds from {0}'.format(json_file['backgrounds']))
+    with open(json_file['backgrounds']) as json_data:
+            backgrounds = json.load(json_data)
+            success_count = 0
+            fail_count = 0
+            
+            for background in backgrounds:
+                if Background.objects.filter(name=background['name']).exists():
+                    print ("Background {0} already loaded, skipping.".format(background['name']))
+                    fail_count+=1
+                else:
+                    b = Background.objects.create(document = Document.objects.get(title="Systems Reference Document"))
+                    if 'name' in background:
+                        b.name = background['name']
+                        b.slug = slugify(b.name)
+                    if 'desc' in background:
+                        b.desc = background['desc']
+                    if 'skill-proficiencies' in background:
+                        b.skill_proficiencies = background['skill-proficiencies']
+                    if 'languages' in background:
+                        b.languages = background['languages']
+                    if 'equipment' in background:
+                        b.equipment = background['equipment']
+                    if 'feature' in background:
+                        b.feature = background['feature']
+                    if 'suggested-characteristics' in background:
+                        b.suggested_characteristics = background['suggested-characteristics']
+                    b.save()
+                    success_count+=1
+        
+            print("Done loading Backgrounds.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
+
 
 def loadClasses():
     #### Load Classes ####
@@ -201,3 +233,4 @@ def loadSections():
 importSRDDocument()
 loadSpells()
 loadMonsters()
+loadBackgrounds()

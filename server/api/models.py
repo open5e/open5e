@@ -69,3 +69,10 @@ class GameContent(models.Model):
     document = models.ForeignKey(Document, on_delete=models.CASCADE) # Like the System Reference Document
     class Meta:
         abstract=True
+
+class Background(GameContent):
+    skill_proficiencies = models.TextField()
+    languages = models.TextField()
+    equipment = models.TextField()
+    feature = models.TextField()
+    suggested_characteristics = models.TextField()
