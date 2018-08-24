@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
-from api.models import Spell, Monster, GameContentDocument
+from api.models import Spell, Monster
 
 class DynamicFieldsModelSerializer(serializers.ModelSerializer):
 
@@ -83,17 +83,3 @@ class SpellSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModel
             'archetype',
             'circles',
         )
-
-class GameContentDocumentSerializer(DynamicFieldsModelSerializer,serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = GameContentDocument
-        fields = (
-            'id',
-            'name',
-            'desc',
-            'license',
-            'author',
-            'organization',
-            'version',
-            'url',
-            )
