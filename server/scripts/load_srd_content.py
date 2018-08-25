@@ -163,6 +163,7 @@ def loadMonsters():
                     m.challenge_rating = mob['challenge_rating']
                 m.save()
                 success_count+=1
+
         
         print("Done loading Monsters.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
 
@@ -199,6 +200,7 @@ def loadBackgrounds():
                     success_count+=1
         
             print("Done loading Backgrounds.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
+
 
 def loadClasses():
     #### Load Classes ####

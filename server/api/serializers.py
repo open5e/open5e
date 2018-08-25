@@ -102,13 +102,13 @@ class SpellSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModel
         )
 
 class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    document = DocumentSerializer()
     class Meta:
         model = Background
         fields = (
-            'slug',
+            'id',
             'name',
             'desc',
+            'slug',
             'skill_proficiencies',
             'languages',
             'equipment',

@@ -122,4 +122,3 @@ class Background(GameContent):
     equipment = models.TextField()
     feature = models.TextField()
     suggested_characteristics = models.TextField()
-

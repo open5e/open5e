@@ -4,6 +4,7 @@ from api.models import Monster, Spell, Background, Document
 from api.serializers import UserSerializer, GroupSerializer, MonsterSerializer, SpellSerializer, BackgroundSerializer, DocumentSerializer
 
 
+
 class UserViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
