@@ -4,7 +4,7 @@ from django.db import models
 # Create your models here.
 class Document(models.Model):
     slug = models.SlugField(unique=True, default=uuid.uuid1)
-    name = models.TextField() # System Reference Document
+    title = models.TextField() # System Reference Document
     desc = models.TextField() 
     license = models.TextField() # Open Gaming License
     author = models.TextField() # Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.
@@ -110,7 +110,6 @@ class Plane(GameContent):
 class Section(GameContent):
     parent = models.ForeignKey('self', on_delete=models.CASCADE, null=True)
     
-
 class Feat(GameContent):
     prerequisite = models.TextField()
 
