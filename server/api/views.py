@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from api.models import Monster, Spell, Background
-from api.serializers import UserSerializer, GroupSerializer, MonsterSerializer, SpellSerializer, BackgroundSerializer
+from api.models import Monster, Spell, Background, Document
+from api.serializers import UserSerializer, GroupSerializer, MonsterSerializer, SpellSerializer, BackgroundSerializer, DocumentSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -19,6 +19,14 @@ class GroupViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
 
+class DocumentViewSet(viewsets.ModelViewSet):
+    queryset = Document.objects.all()
+    serializer_class = DocumentSerializer
+    filter_fields = (
+        'title',
+        'organization',
+        'license',
+        )
 
 class SpellViewSet(viewsets.ModelViewSet):
     """
