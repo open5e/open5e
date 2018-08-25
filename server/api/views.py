@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from api.models import Monster, Spell
-from api.serializers import UserSerializer, GroupSerializer, MonsterSerializer, SpellSerializer
+from api.models import Monster, Spell, Background
+from api.serializers import UserSerializer, GroupSerializer, MonsterSerializer, SpellSerializer, BackgroundSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -48,3 +48,14 @@ class MonsterViewSet(viewsets.ModelViewSet):
         'name',
     )
 
+class BackgroundViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows viewing of Backgrounds.
+    """
+    queryset = Background.objects.all()
+    serializer_class = BackgroundSerializer
+    filter_fields=(
+        'name',
+        'skill_proficiencies',
+        'languages'
+    )

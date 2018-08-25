@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
-from api.models import Spell, Monster
+from api.models import Spell, Monster, Background
 
 class DynamicFieldsModelSerializer(serializers.ModelSerializer):
 
@@ -21,7 +21,6 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
         fields = ('url', 'username', 'email', 'groups')
-
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -82,4 +81,19 @@ class SpellSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModel
             'dnd_class',
             'archetype',
             'circles',
+        )
+
+class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Background
+        fields = (
+            'id',
+            'name',
+            'desc',
+            'slug',
+            'skill_proficiencies',
+            'languages',
+            'equipment',
+            'feature',
+            'suggested_characteristics',
         )
