@@ -28,6 +28,7 @@ def importSRDDocument():
     print('Building the SRD as a document.')
     srd = Document(
         title="Systems Reference Document",
+        slug=slugify("Systems Reference Document"),
         desc = "Dungeons and Dragons 5th Edition Systems Reference Document by Wizards of the Coast",
         license = "Open Gaming License",
         author ="Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.",
@@ -55,9 +56,10 @@ def loadSpells():
                 print ("Spell {0} already loaded, skipping.".format(spell['name']))
                 fail_count+=1
             else:
-                s = Spell.objects.create(document = Document.objects.get(title="Systems Reference Document"))
+                s = Spell(document = Document.objects.get(title="Systems Reference Document"))
                 if 'name' in spell:
                     s.name = spell['name']
+                    s.slug = slugify(spell['name'])
                 if 'desc' in spell:
                     s.desc = spell['desc']
                 if 'higher_level' in spell:
@@ -105,9 +107,10 @@ def loadMonsters():
                 print ("Monster {0} already loaded, skipping.".format(mob['name']))
                 fail_count+=1
             else:
-                m = Monster.objects.create(document = Document.objects.get(title="Systems Reference Document"))
+                m = Monster(document = Document.objects.get(title="Systems Reference Document"))
                 if 'name' in mob:
                     m.name = mob['name']
+                    m.slug = slugify(mob['name'])
                 if 'size' in mob:
                     m.size = mob['size']
                 if 'type' in mob:
@@ -158,6 +161,7 @@ def loadMonsters():
                     m.languages = mob['languages']
                 if 'challenge_rating' in mob:
                     m.challenge_rating = mob['challenge_rating']
+                m.save()
                 success_count+=1
         
         print("Done loading Monsters.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
@@ -175,10 +179,10 @@ def loadBackgrounds():
                     print ("Background {0} already loaded, skipping.".format(background['name']))
                     fail_count+=1
                 else:
-                    b = Background.objects.create(document = Document.objects.get(title="Systems Reference Document"))
+                    b = Background(document = Document.objects.get(title="Systems Reference Document"))
                     if 'name' in background:
                         b.name = background['name']
-                        b.slug = slugify(b.name)
+                        b.slug = slugify(background['name'])
                     if 'desc' in background:
                         b.desc = background['desc']
                     if 'skill-proficiencies' in background:
@@ -195,7 +199,6 @@ def loadBackgrounds():
                     success_count+=1
         
             print("Done loading Backgrounds.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
-
 
 def loadClasses():
     #### Load Classes ####
