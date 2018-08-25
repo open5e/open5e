@@ -79,7 +79,7 @@ class PlaneViewSet(viewsets.ModelViewSet):
     )
 
 class SectionViewSet(viewsets.ModelViewSet):
-        """
+    """
     API endpoint that allows viewing of Sections.
     """
     queryset = Section.objects.all()
@@ -90,7 +90,7 @@ class SectionViewSet(viewsets.ModelViewSet):
     )
 
 class FeatViewSet(viewsets.ModelViewSet):
-        """
+    """
     API endpoint that allows viewing of Feats.
     """
     queryset = Feat.objects.all()
