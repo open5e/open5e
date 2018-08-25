@@ -55,7 +55,7 @@ def loadSpells():
                 print ("Spell {0} already loaded, skipping.".format(spell['name']))
                 fail_count+=1
             else:
-                s = Spell.objects.create()
+                s = Spell.objects.create(document = Document.objects.get(title="Systems Reference Document"))
                 if 'name' in spell:
                     s.name = spell['name']
                 if 'desc' in spell:
@@ -105,7 +105,7 @@ def loadMonsters():
                 print ("Monster {0} already loaded, skipping.".format(mob['name']))
                 fail_count+=1
             else:
-                m = Monster.objects.create()
+                m = Monster.objects.create(document = Document.objects.get(title="Systems Reference Document"))
                 if 'name' in mob:
                     m.name = mob['name']
                 if 'size' in mob:
@@ -158,7 +158,7 @@ def loadMonsters():
                     m.languages = mob['languages']
                 if 'challenge_rating' in mob:
                     m.challenge_rating = mob['challenge_rating']
-                successcount+=1
+                success_count+=1
         
         print("Done loading Monsters.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
 
