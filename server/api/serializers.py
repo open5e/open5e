@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
-from api.models import Spell, Monster, Background
+from api.models import *
 
 class DynamicFieldsModelSerializer(serializers.ModelSerializer):
 
@@ -22,16 +22,30 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         model = User
         fields = ('url', 'username', 'email', 'groups')
 
+class DocumentSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+            model = Document
+            fields = (
+                'title', 
+                'slug', 
+                'desc', 
+                'license',
+                'author',
+                'organization',
+                'version',
+                'url',)
+
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
         fields = ('url', 'name')
 
 class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    document = DocumentSerializer()
     class Meta:
         model = Monster
         fields = (
-            'id',
+            'slug',
             'name',
             'size',
             'type',
@@ -58,13 +72,16 @@ class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedMod
             'senses',
             'languages',
             'challenge_rating',
+            'document',
+
         )
 
 class SpellSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    document = DocumentSerializer()
     class Meta:
         model = Spell
         fields = (
-            'id',
+            'slug',
             'name',
             'desc',
             'higher_level',
@@ -81,13 +98,14 @@ class SpellSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModel
             'dnd_class',
             'archetype',
             'circles',
+            'document',
         )
 
 class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    document = DocumentSerializer()
     class Meta:
         model = Background
         fields = (
-            'id',
             'name',
             'desc',
             'slug',
@@ -96,4 +114,29 @@ class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.Hyperlinked
             'equipment',
             'feature',
             'suggested_characteristics',
+            'document',
         )
+
+class PlaneSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    document = DocumentSerializer()
+    class Meta:
+        model = Plane
+        fields = ('slug','name','desc','document')
+
+class SectionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    document = DocumentSerializer()
+    class Meta:
+        model = Section
+        fields = ('slug','name','desc','document')
+
+class FeatSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    document = DocumentSerializer()
+    class Meta:
+        model = Feat
+        fields = ('slug','name','desc','prerequisite','document')
+
+class ConditionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    document = DocumentSerializer()
+    class Meta:
+        model = Condition
+        fields = ('slug','name','desc','document')

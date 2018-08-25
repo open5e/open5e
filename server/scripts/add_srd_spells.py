@@ -6,6 +6,7 @@ import django
 django.setup()
 from django.contrib.auth.models import User
 from api.models import Spell, Monster
+from slugify import slugify
 import json
 
 file_location = root_path + ('' if root_path.endswith('/') else '/') + 'data/spells/5e-SRD-Spells.json'
@@ -16,6 +17,7 @@ with open(file_location) as json_data:
         s = Spell.objects.create()
         if 'name' in spell:
             s.name = spell['name']
+            s.slug = slugify(s.name)
         if 'desc' in spell:
             s.desc = spell['desc']
         if 'higher_level' in spell:
