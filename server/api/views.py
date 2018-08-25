@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from api.models import Monster, Spell, Background, Document
-from api.serializers import UserSerializer, GroupSerializer, MonsterSerializer, SpellSerializer, BackgroundSerializer, DocumentSerializer
+from api.models import *
+from api.serializers import *
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -10,7 +10,6 @@ class UserViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all().order_by('-date_joined')
     serializer_class = UserSerializer
-
 
 class GroupViewSet(viewsets.ModelViewSet):
     """
@@ -66,4 +65,43 @@ class BackgroundViewSet(viewsets.ModelViewSet):
         'name',
         'skill_proficiencies',
         'languages'
+    )
+
+class PlaneViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows viewing of Planes.
+    """
+    queryset = Plane.objects.all()
+    serializer_class = PlaneSerializer
+    filter_fields=(
+        'name',
+    )
+
+class SectionViewSet(viewsets.ModelViewSet):
+        """
+    API endpoint that allows viewing of Sections.
+    """
+    queryset = Section.objects.all()
+    serializer_class = SectionSerializer
+    filter_fields=(
+        'name',
+        'parent',
+    )
+
+class FeatViewSet(viewsets.ModelViewSet):
+        """
+    API endpoint that allows viewing of Feats.
+    """
+    queryset = Feat.objects.all()
+    serializer_class = FeatSerializer
+    filter_fields=('name','prerequisite')
+
+class ConditionViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows viewing of Backgrounds.
+    """
+    queryset = Condition.objects.all()
+    serializer_class = ConditionSerializer
+    filter_fields=(
+        'name',
     )

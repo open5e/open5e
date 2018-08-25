@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
-from api.models import Spell, Monster, Background, Document
+from api.models import *
 
 class DynamicFieldsModelSerializer(serializers.ModelSerializer):
 
@@ -116,3 +116,27 @@ class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.Hyperlinked
             'suggested_characteristics',
             'document',
         )
+class PlaneSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    document = DocumentSerializer()
+    class Meta:
+        model = Plane
+        fields = ('slug','name','desc','document')
+
+class SectionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    document = DocumentSerializer()
+    parent = SectionSerializer()
+    class Meta:
+        model = Section
+        fields = ('slug','name','desc','parent','document')
+
+class FeatSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    document = DocumentSerializer()
+    class Meta:
+        model = Feat
+        fields = ('slug','name','desc','prerequisite','document')
+
+class ConditionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    document = DocumentSerializer()
+    class Meta:
+        model = Condition
+        fields = ('slug','name','desc','document')
