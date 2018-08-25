@@ -201,7 +201,6 @@ def loadBackgrounds():
         
             print("Done loading Backgrounds.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
 
-
 def loadClasses():
     #### Load Classes ####
     print('Loading Classes from {0}'.format(json_file['classes']))
@@ -213,14 +212,73 @@ def loadSubclasses():
 def loadConditions():
     #### Load Conditions ####
     print('Loading Conditions from {0}'.format(json_file['spells']))
+    with open(json_file['conditions']) as json_data:
+        conditions = json.load(json_data)
+        success_count = 0
+        fail_count = 0
+        
+        for condition in conditions:
+            if Condition.objects.filter(name=condition['name']).exists():
+                print ("Condition {0} already loaded, skipping.".format(condition['name']))
+                fail_count+=1
+            else:
+                c = Condition(document = Document.objects.get(title="Systems Reference Document"))
+                if 'name' in condition:
+                    c.name = condition['name']
+                    c.slug = slugify(condition['name'])
+                if 'desc' in condition:
+                    c.desc = condition['desc']
+                c.save()
+                success_count+=1
+        print("Done loading Conditions.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
 
 def loadFeats():
     #### Load Feats ####
     print('Loading Feats from {0}'.format(json_file['feats']))
+    with open(json_file['feats']) as json_data:
+        feats = json.load(json_data)
+        success_count = 0
+        fail_count = 0
+        
+        for feat in feats:
+            if Feat.objects.filter(name=feat['name']).exists():
+                print ("Feat {0} already loaded, skipping.".format(feat['name']))
+                fail_count+=1
+            else:
+                f = Feat(document = Document.objects.get(title="Systems Reference Document"))
+                if 'name' in feat:
+                    f.name = feat['name']
+                    f.slug = slugify(feat['name'])
+                if 'desc' in feat:
+                    f.desc = feat['desc']
+                if 'prerequisite' in feat:
+                    f.prerequisite = feat['prerequisite']
+                f.save()
+                success_count+=1
+        print("Done loading Feats.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
 
 def loadPlanes():
     #### Load Planes ####
     print('Loading Planes from {0}'.format(json_file['planes']))
+    with open(json_file['planes']) as json_data:
+        planes = json.load(json_data)
+        success_count = 0
+        fail_count = 0
+        
+        for plane in planes:
+            if Plane.objects.filter(name=plane['name']).exists():
+                print ("Plane {0} already loaded, skipping.".format(plane['name']))
+                fail_count+=1
+            else:
+                p = Plane(document = Document.objects.get(title="Systems Reference Document"))
+                if 'name' in plane:
+                    p.name = plane['name']
+                    p.slug = slugify(plane['name'])
+                if 'desc' in plane:
+                    p.desc = plane['desc']
+                p.save()
+                success_count+=1
+        print("Done loading Planes.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
 
 def loadRaces():
     #### Load Races ####
@@ -233,9 +291,31 @@ def loadSubraces():
 def loadSections():
     #### Load Sections ####
     print('Loading Sections from {0}'.format(json_file['sections']))
-
+    with open(json_file['sections']) as json_data:
+        sections = json.load(json_data)
+        success_count = 0
+        fail_count = 0
+        
+        for section in sections:
+            if Section.objects.filter(name=section['name']).exists():
+                print ("Section {0} already loaded, skipping.".format(section['name']))
+                fail_count+=1
+            else:
+                s = Section(document = Document.objects.get(title="Systems Reference Document"))
+                if 'name' in section:
+                    s.name = section['name']
+                    s.slug = slugify(section['name'])
+                if 'desc' in section:
+                    s.desc = section['desc']
+                s.save()
+                success_count+=1
+        print("Done loading Sections.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
 
 importSRDDocument()
 loadSpells()
 loadMonsters()
 loadBackgrounds()
+loadPlanes()
+loadSections()
+loadFeats()
+loadConditions()
