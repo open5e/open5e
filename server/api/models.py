@@ -1,9 +1,18 @@
-from django.db import models
 import uuid
-# Create your models here.
+from django.db import models
+from django.contrib.postgres.fields import JSONField
 
-class Monster(models.Model):
-    name = models.TextField()
+# Create your models here.
+class GameContent(models.Model):
+    slug = models.SlugField(unique=True, default=uuid.uuid1, primary_key=True) # dispel-evil-and-good
+    name = models.TextField() # Barbarian or Blinded
+    desc = models.TextField() # A description of the Game Content Item
+    document = models.ForeignKey(Document, on_delete=models.CASCADE) # Like the System Reference Document
+    created_at = models.DateTimeField(auto_now_add=True, editable=False)
+    class Meta:
+        abstract=True
+
+class Monster(GameContent):
     size = models.TextField()
     type = models.TextField()
     subtype = models.TextField()
@@ -33,9 +42,7 @@ class Monster(models.Model):
     # actions
     # legendary_actions
 
-class Spell(models.Model):
-    name = models.TextField()
-    desc = models.TextField()
+class Spell(GameContent):
     higher_level = models.TextField()
     page = models.TextField()
     range = models.TextField()
@@ -51,24 +58,53 @@ class Spell(models.Model):
     archetype = models.TextField()
     circles = models.TextField()
 
-class Document(models.Model):
-    title = models.TextField() # System Reference Document
-    desc = models.TextField() 
-    license = models.TextField() # Open Gaming License
-    author = models.TextField() # Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.
-    organization = models.TextField() # Wizards of the Coast
-    version = models.TextField() # 5.1
-    url = models.URLField() # http://dnd.wizards.com/articles/features/systems-reference-document-srd
-    created_at = models.DateTimeField(auto_now_add=True)
+class CharClass(GameContent):
+    hit_dice = models.TextField()
+    hp_at_1st_level = models.TextField()
+    hp_at_higher_levels = models.TextField()
+    prof_armor = models.TextField()
+    prof_weapons = models.TextField()
+    prof_tools = models.TextField()
+    prof_saving_throws = models.TextField()
+    prof_skills = models.TextField()
+    equipment = models.TextField()
+    table = models.TextField()
+    spellcasting_ability = models.TextField()
+    subtypes = models.TextField()
 
-class GameContent(models.Model):
-    name = models.TextField() # Barbarian or Blinded
-    slug = models.SlugField(unique=True, default=uuid.uuid1) # dispel-evil-and-good
-    created_at = models.DateTimeField(auto_now_add=True, editable=False)
-    desc = models.TextField() # A description of the Game Content Item
-    document = models.ForeignKey(Document, on_delete=models.CASCADE) # Like the System Reference Document
-    class Meta:
-        abstract=True
+class Archetype(GameContent):
+    char_class = models.ForeignKey(CharClass, on_delete=models.CASCADE, null=True)
+
+class Race(GameContent):
+    asi_desc = models.TextField()
+    asi = JSONField()
+    age = models.TextField()
+    alignment = models.TextField()
+    size = models.TextField()
+    speed = JSONField()
+    speed_desc = models.TextField()
+    languages = models.TextField()
+    vision = models.TextField()
+    traits = models.TextField()
+    subtypes = models.TextField()
+
+class SubRace(GameContent):
+    asi_desc = models.TextField()
+    asi = JSONField()
+    traits = models.TextField()
+    parent_race = models.ForeignKey(Race, on_delete=models.CASCADE, null=True)
+
+class Plane(GameContent):
+    pass
+
+class Section(GameContent):
+    parent = models.ForeignKey(self, null=True)
+
+class Feat(GameContent):
+    prerequisite = models.TextField()
+
+class Condition(GameContent):
+    pass
 
 class Background(GameContent):
     skill_proficiencies = models.TextField()
@@ -76,3 +112,14 @@ class Background(GameContent):
     equipment = models.TextField()
     feature = models.TextField()
     suggested_characteristics = models.TextField()
+
+class GameContentDocument(models.Model):
+    slug = models.SlugField(unique=True, default=uuid.uuid1)
+    name = models.TextField() # System Reference Document
+    desc = models.TextField() 
+    license = models.TextField() # Open Gaming License
+    author = models.TextField() # Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.
+    organization = models.TextField() # Wizards of the Coast
+    version = models.TextField() # 5.1
+    url = models.URLField() # http://dnd.wizards.com/articles/features/systems-reference-document-srd
+    created_at = models.DateTimeField(auto_now_add=True)

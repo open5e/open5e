@@ -6,6 +6,7 @@ import django
 django.setup()
 from django.contrib.auth.models import User
 from api.models import Spell, Monster
+from slugify import slugify
 import json
 
 file_location = root_path + ('' if root_path.endswith('/') else '/') + 'data/monsters/5e-SRD-Monsters.json'
@@ -16,6 +17,7 @@ with open(file_location) as json_data:
         m = Monster.objects.create()
         if 'name' in mob:
             m.name = mob['name']
+            m.slug = slugify(m.name)
         if 'size' in mob:
             m.size = mob['size']
         if 'type' in mob:
