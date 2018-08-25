@@ -102,10 +102,10 @@ class SpellSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModel
         )
 
 class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    document = DocumentSerializer()
     class Meta:
         model = Background
         fields = (
-            'id',
             'name',
             'desc',
             'slug',
@@ -116,6 +116,7 @@ class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.Hyperlinked
             'suggested_characteristics',
             'document',
         )
+
 class PlaneSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
     document = DocumentSerializer()
     class Meta:
@@ -124,10 +125,9 @@ class PlaneSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModel
 
 class SectionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
     document = DocumentSerializer()
-    parent = SectionSerializer()
     class Meta:
         model = Section
-        fields = ('slug','name','desc','parent','document')
+        fields = ('slug','name','desc','document')
 
 class FeatSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
     document = DocumentSerializer()
