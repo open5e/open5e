@@ -1,6 +1,9 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
+from drf_haystack.serializers import HaystackSerializer
+from drf_haystack.viewsets import HaystackViewSet
 from api.models import *
+from .search_indexes import *
 
 class DynamicFieldsModelSerializer(serializers.ModelSerializer):
 
@@ -41,6 +44,7 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('url', 'name')
 
 class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    
     document = DocumentSerializer()
     class Meta:
         model = Monster
@@ -140,3 +144,9 @@ class ConditionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedM
     class Meta:
         model = Condition
         fields = ('slug','name','desc','document')
+
+class AggregateSerializer(HaystackSerializer):
+  
+    class Meta:
+        index_classes = [MonsterIndex]
+        fields = ["name", "desc"]

@@ -12,6 +12,7 @@ django-cors-headers = "*"
 pylint = "*"
 django-haystack = "*"
 whoosh = "*"
+drf-haystack = "*"
 
 [dev-packages]
 
