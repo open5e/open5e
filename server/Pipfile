@@ -10,6 +10,8 @@ djangorestframework = "*"
 django-filter = "*"
 django-cors-headers = "*"
 pylint = "*"
+django-haystack = "*"
+whoosh = "*"
 
 [dev-packages]
 
