@@ -53,7 +53,7 @@ def loadSpells():
 
         for spell in spells:
             if Spell.objects.filter(name=spell['name']).exists():
-                print ("Spell {0} already loaded, skipping.".format(spell['name']))
+                #print ("Spell {0} already loaded, skipping.".format(spell['name']))
                 fail_count+=1
             else:
                 s = Spell(document = Document.objects.get(title="Systems Reference Document"))
@@ -104,7 +104,7 @@ def loadMonsters():
         
         for mob in monsters:
             if Monster.objects.filter(name=mob['name']).exists():
-                print ("Monster {0} already loaded, skipping.".format(mob['name']))
+                #print ("Monster {0} already loaded, skipping.".format(mob['name']))
                 fail_count+=1
             else:
                 m = Monster(document = Document.objects.get(title="Systems Reference Document"))
@@ -219,7 +219,7 @@ def loadConditions():
         
         for condition in conditions:
             if Condition.objects.filter(name=condition['name']).exists():
-                print ("Condition {0} already loaded, skipping.".format(condition['name']))
+                #print ("Condition {0} already loaded, skipping.".format(condition['name']))
                 fail_count+=1
             else:
                 c = Condition(document = Document.objects.get(title="Systems Reference Document"))
@@ -242,7 +242,7 @@ def loadFeats():
         
         for feat in feats:
             if Feat.objects.filter(name=feat['name']).exists():
-                print ("Feat {0} already loaded, skipping.".format(feat['name']))
+                #print ("Feat {0} already loaded, skipping.".format(feat['name']))
                 fail_count+=1
             else:
                 f = Feat(document = Document.objects.get(title="Systems Reference Document"))
@@ -267,7 +267,7 @@ def loadPlanes():
         
         for plane in planes:
             if Plane.objects.filter(name=plane['name']).exists():
-                print ("Plane {0} already loaded, skipping.".format(plane['name']))
+                #print ("Plane {0} already loaded, skipping.".format(plane['name']))
                 fail_count+=1
             else:
                 p = Plane(document = Document.objects.get(title="Systems Reference Document"))
@@ -283,6 +283,62 @@ def loadPlanes():
 def loadRaces():
     #### Load Races ####
     print('Loading Races from {0}'.format(json_file['races']))
+    with open(json_file['races']) as json_data:
+        races = json.load(json_data)
+        success_count = 0
+        fail_count = 0
+        
+        for race in races:
+            if Race.objects.filter(name=race['name']).exists():
+                #print ("Race {0} already loaded, skipping.".format(race['name']))
+                fail_count+=1
+            else:
+                r = Race(document = Document.objects.get(title="Systems Reference Document"))
+                if 'name' in race:
+                    r.name = race['name']
+                    r.slug = slugify(race['name'])
+                if 'desc' in race:
+                    r.desc = race['desc']
+                if 'asi-desc' in race:
+                    r.asi_desc = race['asi-desc']
+                if 'asi' in race:
+                    r.asi = json.dumps(race['asi']) # convert the asi json object into a string for storage.
+                if 'age' in race:
+                    r.age = race['age']
+                if 'alignment' in race:
+                    r.alignment = race['alignment']
+                if 'size' in race:
+                    r.size = race['size']
+                if 'speed'in race:
+                    r.speed = json.dumps(race['speed']) # conver the speed object into a string for db storage.
+                if 'speed-desc' in race:
+                    r.speed_desc = race['speed-desc']
+                if 'languages' in race:
+                    r.languages = race['languages']
+                if 'vision' in race:
+                    r.vision = race['vision']
+                if 'traits' in race:
+                    r.traits = race['traits']
+                r.save()
+                if 'subtypes' in race:
+                    for subrace in race['subtypes']:
+                        s = Subrace(document = Document.objects.get(title="Systems Reference Document"), parent_race=r)
+                        if 'name' in subrace:
+                            s.name = subrace['name']
+                            s.slug = slugify(subrace['name'])
+                        if 'desc' in subrace:
+                            s.desc = subrace['desc']
+                        if 'asi-desc' in subrace:
+                            s.asi_desc = subrace['asi-desc']
+                        if 'asi' in subrace:
+                            s.asi = json.dumps(subrace['asi'])
+                        if 'traits' in subrace:
+                            s.traits = subrace['traits']
+                        s.save()
+                success_count +=1
+        
+        print("Done loading Races and Subraces.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
+
 
 def loadSubraces():
     #### Load Subraces ####
@@ -298,7 +354,7 @@ def loadSections():
         
         for section in sections:
             if Section.objects.filter(name=section['name']).exists():
-                print ("Section {0} already loaded, skipping.".format(section['name']))
+                #print ("Section {0} already loaded, skipping.".format(section['name']))
                 fail_count+=1
             else:
                 s = Section(document = Document.objects.get(title="Systems Reference Document"))
@@ -319,3 +375,4 @@ loadPlanes()
 loadSections()
 loadFeats()
 loadConditions()
+loadRaces()
