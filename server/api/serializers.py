@@ -148,5 +148,5 @@ class ConditionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedM
 class AggregateSerializer(HaystackSerializer):
   
     class Meta:
-        index_classes = [MonsterIndex]
+        index_classes = [MonsterIndex, SpellIndex, SectionIndex, ConditionIndex]
         fields = ["name", "desc"]
