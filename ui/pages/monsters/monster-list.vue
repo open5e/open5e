@@ -11,8 +11,8 @@
         <h3 v-if="!filter">{{key.toUpperCase()}}</h3>
           <li v-bind:key="monster.name" v-for="monster in letter">
             <nuxt-link tag="a" 
-              :params="{id: monster.id}" 
-              :to="`/monsters/view/${monster.id}`">
+              :params="{id: monster.slug}" 
+              :to="`/monsters/view/${monster.slug}`">
 
               {{monster.name}}
             </nuxt-link>
@@ -31,7 +31,7 @@ export default {
     StatBonus
   },
   mounted () {
-    return axios.get(`http://localhost:8000/monsters/?fields=id,name&limit=1000`) //you will need to enable CORS to make this work
+    return axios.get(`http://localhost:8000/monsters/?fields=slug,name&limit=1000`) //you will need to enable CORS to make this work
     .then(response => {
       this.monsters = response.data.results
     })

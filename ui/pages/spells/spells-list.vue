@@ -11,8 +11,8 @@
         <h3 v-if="!filter">{{key.toUpperCase()}}</h3>
           <li v-bind:key="spell.name" v-for="spell in letter">
             <nuxt-link tag="a" 
-              :params="{id: spell.id}" 
-              :to="`/spells/view/${spell.id}`">
+              :params="{id: spell.slug}" 
+              :to="`/spells/view/${spell.slug}`">
 
               {{spell.name}}
             </nuxt-link>
@@ -27,7 +27,7 @@ import axios from 'axios'
 
 export default {
   mounted () {
-    return axios.get(`http://localhost:8000/spells/?fields=id,name&limit=1000`) //you will need to enable CORS to make this work
+    return axios.get(`http://localhost:8000/spells/?fields=slug,name&limit=1000`) //you will need to enable CORS to make this work
     .then(response => {
       this.spells = response.data.results
     })

@@ -123,6 +123,10 @@
       &:hover {
         opacity: 1;
       }
+      &.nuxt-link-active {
+        font-weight: bold;
+        opacity: 1;
+      }
     }
     ul {
       background-color: $color-darkness;
