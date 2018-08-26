@@ -9,6 +9,7 @@ django = "*"
 djangorestframework = "*"
 django-filter = "*"
 django-cors-headers = "*"
+pylint = "*"
 
 [dev-packages]
 
