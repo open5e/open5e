@@ -147,4 +147,4 @@ class AggregateSerializer(HighlighterMixin, HaystackSerializer):
 
     class Meta:
         index_classes = [MonsterIndex, SpellIndex, SectionIndex, ConditionIndex]
-        fields = ["name",'url', "desc"]
+        fields = ["name",'url', "text"]
