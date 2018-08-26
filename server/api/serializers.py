@@ -163,3 +163,30 @@ class RaceSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelS
             'subraces',
         )
 
+class ArchetypeSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Archetype
+        fields = ('name','slug','desc','document_slug')
+
+class CharClassSerializer(serializers.HyperlinkedModelSerializer):
+    archetypes = ArchetypeSerializer(many=True,read_only=True)
+    class Meta:
+        model = CharClass
+        fields = (
+            'name',
+            'slug',
+            'desc',
+            'document_slug',
+            'hit_dice',
+            'hp_at_1st_level',
+            'hp_at_higher_levels',
+            'prof_armor',
+            'prof_weapons',
+            'prof_tools',
+            'prof_saving_throws',
+            'prof_skills',
+            'equipment',
+            'table',
+            'spellcasting_ability',
+            'subtypes_name',
+            'archetypes',)

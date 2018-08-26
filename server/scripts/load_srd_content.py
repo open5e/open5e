@@ -204,6 +204,59 @@ def loadBackgrounds():
 def loadClasses():
     #### Load Classes ####
     print('Loading Classes from {0}'.format(json_file['classes']))
+    with open(json_file['classes']) as json_data:
+        charclasses = json.load(json_data)
+        success_count = 0
+        fail_count = 0
+        
+        for charclass in charclasses:
+            if CharClass.objects.filter(name=charclass['name']).exists():
+                #print ("Race {0} already loaded, skipping.".format(race['name']))
+                fail_count+=1
+            else:
+                c = CharClass(document = Document.objects.get(title="Systems Reference Document"))
+                if 'name' in charclass:
+                    c.name = charclass['name']
+                    c.slug = slugify(charclass['name'])
+                if 'subtypes-name' in charclass:
+                    c.subtypes_name = charclass['subtypes-name']
+                if 'hit-dice' in charclass['features']:
+                    c.hit_dice = charclass['features']['hit-dice']
+                if 'hp-at-1st-level' in charclass['features']:
+                    c.hp_at_1st_level = charclass['features']['hp-at-1st-level']
+                if 'hp-at-higher-levels' in charclass['features']:
+                    c.hp_at_higher_levels = charclass['features']['hp-at-higher-levels']
+                if 'prof-armor' in charclass['features']:
+                    c.prof_armor = charclass['features']['prof-armor']
+                if 'prof-weapons' in charclass['features']:
+                    c.prof_weapons = charclass['features']['prof-weapons']
+                if 'prof-tools' in charclass['features']:
+                    c.prof_tools = charclass['features']['prof-tools']
+                if 'prof-saving-throws' in charclass['features']:
+                    c.prof_saving_throws = charclass['features']['prof-saving-throws']
+                if 'prof-skills' in charclass['features']:
+                    c.prof_skills = charclass['features']['prof-skills']
+                if 'equipment' in charclass['features']:
+                    c.equipment = charclass['features']['equipment']
+                if 'table' in charclass['features']:
+                    c.table = charclass['features']['table']
+                if 'spellcasting-ability' in charclass['features']:
+                    c.spellcasting_ability = charclass['features']['spellcasting-ability']
+                if 'desc' in charclass['features']:
+                    c.desc = charclass['features']['desc']
+                c.save()
+                if 'subtypes' in charclass:
+                    for archetype in charclass['subtypes']:
+                        a = Archetype(document = Document.objects.get(title="Systems Reference Document"),char_class=c)
+                        if 'name' in archetype:
+                            a.name = archetype['name']
+                            a.slug = slugify(archetype['name'])
+                        if 'desc' in archetype:
+                            a.desc = archetype['desc']
+                        a.save()
+                success_count+=1
+        print("Done loading Races and Subraces.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
+         
 
 def loadSubclasses():
     #### Load Subclasses ####
@@ -376,3 +429,4 @@ loadSections()
 loadFeats()
 loadConditions()
 loadRaces()
+loadClasses()

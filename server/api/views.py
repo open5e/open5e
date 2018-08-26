@@ -126,3 +126,23 @@ class SubraceViewSet(viewsets.ModelViewSet):
     filter_fields=(
         'name',
     )
+
+class CharClassViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows viewing of Classes and Archetypes.
+    """
+    queryset = CharClass.objects.all()
+    serializer_class = CharClassSerializer
+    filter_fields=(
+        'name',
+    )
+
+class ArchetypeViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows viewing of Archetypes.
+    """
+    queryset = Archetype.objects.all()
+    serializer_class = ArchetypeSerializer
+    filter_fields=(
+        'name',
+    )

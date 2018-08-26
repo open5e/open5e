@@ -83,10 +83,10 @@ class CharClass(GameContent):
     equipment = models.TextField()
     table = models.TextField()
     spellcasting_ability = models.TextField()
-    subtypes = models.TextField()
+    subtypes_name = models.TextField()
 
 class Archetype(GameContent):
-    char_class = models.ForeignKey(CharClass, on_delete=models.CASCADE, null=True)
+    char_class = models.ForeignKey(CharClass, related_name='archetypes', on_delete=models.CASCADE, null=True)
 
 class Race(GameContent):
     asi_desc = models.TextField()
