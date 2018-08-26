@@ -72,9 +72,7 @@ game, they are :ref:`srd:prone`.
 You can **drop prone** without using any of your
 speed. **Standing up** takes more effort; doing so costs an amount of
 movement equal to half your speed. For example, if your speed is 30
-feet, you must spend
-
-15 feet of movement to stand up. You can't stand up if you don't have
+feet, you must spend 15 feet of movement to stand up. You can't stand up if you don't have
 enough movement left or if your speed is 0.
 
 To move while prone, you must **crawl** or use
