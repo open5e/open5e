@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
-from drf_haystack.serializers import HaystackSerializer
+from drf_haystack.serializers import HighlighterMixin, HaystackSerializer
 from drf_haystack.viewsets import HaystackViewSet
 from api.models import *
 from .search_indexes import *
@@ -31,11 +31,6 @@ class DocumentSerializer(serializers.HyperlinkedModelSerializer):
             fields = (
                 'title', 
                 'slug', 
-                'desc', 
-                'license',
-                'author',
-                'organization',
-                'version',
                 'url',)
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
@@ -50,6 +45,7 @@ class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedMod
         model = Monster
         fields = (
             'slug',
+            'get_url',
             'name',
             'size',
             'type',
@@ -86,6 +82,7 @@ class SpellSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModel
         model = Spell
         fields = (
             'slug',
+            'get_url',
             'name',
             'desc',
             'higher_level',
@@ -111,6 +108,7 @@ class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.Hyperlinked
         model = Background
         fields = (
             'name',
+            'get_url',
             'desc',
             'slug',
             'skill_proficiencies',
@@ -125,28 +123,28 @@ class PlaneSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModel
     document = DocumentSerializer()
     class Meta:
         model = Plane
-        fields = ('slug','name','desc','document')
+        fields = ('slug','get_url','name','desc','document')
 
 class SectionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
     document = DocumentSerializer()
     class Meta:
         model = Section
-        fields = ('slug','name','desc','document')
+        fields = ('slug','get_url','name','desc','document')
 
 class FeatSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
     document = DocumentSerializer()
     class Meta:
         model = Feat
-        fields = ('slug','name','desc','prerequisite','document')
+        fields = ('slug','get_url','name','desc','prerequisite','document')
 
 class ConditionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
     document = DocumentSerializer()
     class Meta:
         model = Condition
-        fields = ('slug','name','desc','document')
+        fields = ('slug','get_url','name','desc','document')
 
-class AggregateSerializer(HaystackSerializer):
-  
+class AggregateSerializer(HighlighterMixin, HaystackSerializer):
+
     class Meta:
         index_classes = [MonsterIndex, SpellIndex, SectionIndex, ConditionIndex]
-        fields = ["name", "desc"]
+        fields = ["name",'url', "desc", "pub_date"]

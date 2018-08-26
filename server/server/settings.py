@@ -68,6 +68,8 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 
+HAYSTACK_CUSTOM_HIGHLIGHTER = 'api.utils.NewHighlighter'
+
 ROOT_URLCONF = 'server.urls'
 
 TEMPLATES = [

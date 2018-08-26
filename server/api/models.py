@@ -51,6 +51,10 @@ class Monster(GameContent):
     # special_abilities
     # actions
     # legendary_actions
+    
+    @property
+    def get_url(self):
+        return "/monsters/%s/" % self.slug
 
 class Spell(GameContent):
     higher_level = models.TextField()
@@ -67,6 +71,10 @@ class Spell(GameContent):
     dnd_class = models.TextField()
     archetype = models.TextField()
     circles = models.TextField()
+    
+    @property
+    def get_url(self):
+        return "/spells/%s/" % self.slug
 
 class CharClass(GameContent):
     hit_dice = models.TextField()
@@ -106,15 +114,32 @@ class SubRace(GameContent):
 
 class Plane(GameContent):
     pass
+    
+    @property
+    def get_url(self):
+        return "/planes/%s/" % self.slug
 
 class Section(GameContent):
     parent = models.ForeignKey('self', on_delete=models.CASCADE, null=True)
     
+    @property
+    def get_url(self):
+        return "/sections/%s/" % self.slug
+    
 class Feat(GameContent):
+        
     prerequisite = models.TextField()
+    
+    @property
+    def get_url(self):
+        return "/conditions/%s/" % self.slug
 
 class Condition(GameContent):
     pass
+    
+    @property
+    def get_url(self):
+        return "/conditions/%s/" % self.slug
 
 class Background(GameContent):
     skill_proficiencies = models.TextField()
@@ -122,3 +147,7 @@ class Background(GameContent):
     equipment = models.TextField()
     feature = models.TextField()
     suggested_characteristics = models.TextField()
+    
+    @property
+    def get_url(self):
+        return "/backgrounds/%s/" % self.slug
