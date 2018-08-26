@@ -41,7 +41,6 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('url', 'name')
 
 class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    document = DocumentSerializer()
     class Meta:
         model = Monster
         fields = (
@@ -72,12 +71,11 @@ class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedMod
             'senses',
             'languages',
             'challenge_rating',
-            'document',
+            'document_slug',
 
         )
 
 class SpellSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    document = DocumentSerializer()
     class Meta:
         model = Spell
         fields = (
@@ -98,11 +96,10 @@ class SpellSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModel
             'dnd_class',
             'archetype',
             'circles',
-            'document',
+            'document_slug',
         )
 
 class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    document = DocumentSerializer()
     class Meta:
         model = Background
         fields = (
@@ -114,29 +111,55 @@ class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.Hyperlinked
             'equipment',
             'feature',
             'suggested_characteristics',
-            'document',
+            'document_slug',
         )
 
 class PlaneSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    document = DocumentSerializer()
     class Meta:
         model = Plane
-        fields = ('slug','name','desc','document')
+        fields = ('slug','name','desc','document_slug')
 
 class SectionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    document = DocumentSerializer()
     class Meta:
         model = Section
-        fields = ('slug','name','desc','document')
+        fields = ('slug','name','desc','document_slug')
 
 class FeatSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    document = DocumentSerializer()
     class Meta:
         model = Feat
-        fields = ('slug','name','desc','prerequisite','document')
+        fields = ('slug','name','desc','prerequisite','document_slug')
 
 class ConditionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    document = DocumentSerializer()
     class Meta:
         model = Condition
-        fields = ('slug','name','desc','document')
+        fields = ('slug','name','desc','document_slug')
+
+class SubraceSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Subrace
+        fields = ('name','slug','desc','asi','asi_json','asi_desc','document_slug')
+
+class RaceSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    subraces = SubraceSerializer(many=True,read_only=True)
+    class Meta:
+        model = Race
+        fields = (
+            'name',
+            'slug',
+            'desc',
+            'document_slug',
+            'asi_desc',
+            'asi',
+            'asi_json',
+            'age',
+            'alignment',
+            'size',
+            'speed',
+            'speed_json',
+            'speed_desc',
+            'languages',
+            'vision',
+            'traits',
+            'subraces',
+        )
+
