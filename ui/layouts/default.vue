@@ -2,6 +2,10 @@
   <div class="app-wrapper">
     <div class="sidebar">
       <nuxt-link tag="h1" class="sticky-header" to="/">Open5e</nuxt-link>
+      <input class="input-search" 
+        placeholder="Search Open5e"
+        v-model="searchText" 
+        v-on:keyup.enter="doSearch(searchText)">
       <ul>
         <nuxt-link tag="li" to="/characters/">Characters</nuxt-link>
         <ul>
@@ -69,6 +73,21 @@
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    doSearch: function (searchText) {
+      this.$router.push({ name: 'search', query: { text: searchText }})
+    }
+  },
+  data() {
+    return {
+      searchText: this.$route.query.text,
+    }
+  }
+}
+</script>
+
 <style lang="scss">
 @import '../assets/main';
 
@@ -93,6 +112,20 @@
   flex-grow: 1;
   background: white;
   max-width: 60rem;
+}
+
+.input-search {
+  width: 100%;
+  background: $color-blood;
+  color: white;
+  padding: 1rem;
+  border: none;
+  font-size: $font-size-base;
+  outline: none;
+  &::placeholder {
+    color: white;
+    opacity: 0.5;
+  }
 }
 
 .sidebar {
