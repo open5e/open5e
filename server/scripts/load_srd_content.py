@@ -8,7 +8,7 @@ django.setup()
 from api.models import *
 import json
 
-data_directory = root_path + ('' if root_path.endswith('/') else '/') + '../data/'
+data_directory = root_path + ('' if root_path.endswith('/') else '/') + 'data/'
 
 #Speccing out the location of each of the json files with the root data.
 json_file={
