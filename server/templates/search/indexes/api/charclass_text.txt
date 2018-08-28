@@ -1,0 +1,3 @@
+{{ object.name }}
+{{ object.equipment }}
+{{ object.table }}

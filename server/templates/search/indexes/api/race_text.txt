@@ -1,0 +1,4 @@
+{{ object.desc }}
+{{ object.traits }}
+{{ object.subrace.asi_desc }}
+{{ object.subrace.traits}}

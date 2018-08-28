@@ -39,13 +39,10 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('url', 'name')
 
 class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    
-    document = DocumentSerializer()
     class Meta:
         model = Monster
         fields = (
             'slug',
-            'get_url',
             'name',
             'size',
             'type',
@@ -72,17 +69,15 @@ class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedMod
             'senses',
             'languages',
             'challenge_rating',
-            'document',
+            'document_slug',
 
         )
 
 class SpellSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    document = DocumentSerializer()
     class Meta:
         model = Spell
         fields = (
             'slug',
-            'get_url',
             'name',
             'desc',
             'higher_level',
@@ -99,16 +94,14 @@ class SpellSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModel
             'dnd_class',
             'archetype',
             'circles',
-            'document',
+            'document_slug',
         )
 
 class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    document = DocumentSerializer()
     class Meta:
         model = Background
         fields = (
             'name',
-            'get_url',
             'desc',
             'slug',
             'skill_proficiencies',
@@ -116,35 +109,112 @@ class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.Hyperlinked
             'equipment',
             'feature',
             'suggested_characteristics',
-            'document',
+            'document_slug',
         )
 
 class PlaneSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    document = DocumentSerializer()
     class Meta:
         model = Plane
-        fields = ('slug','get_url','name','desc','document')
+        fields = ('slug','name','desc','document_slug')
 
 class SectionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    document = DocumentSerializer()
     class Meta:
         model = Section
-        fields = ('slug','get_url','name','desc','document')
+        fields = ('slug','name','desc','document_slug')
 
 class FeatSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    document = DocumentSerializer()
     class Meta:
         model = Feat
-        fields = ('slug','get_url','name','desc','prerequisite','document')
+        fields = ('slug','name','desc','prerequisite','document_slug')
 
 class ConditionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
-    document = DocumentSerializer()
     class Meta:
         model = Condition
-        fields = ('slug','get_url','name','desc','document')
+        fields = ('slug','name','desc','document_slug')
+
+class SubraceSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Subrace
+        fields = ('name','slug','desc','asi','asi_json','asi_desc','document_slug')
+
+class RaceSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    subraces = SubraceSerializer(many=True,read_only=True)
+    class Meta:
+        model = Race
+        fields = (
+            'name',
+            'slug',
+            'desc',
+            'document_slug',
+            'asi_desc',
+            'asi',
+            'asi_json',
+            'age',
+            'alignment',
+            'size',
+            'speed',
+            'speed_json',
+            'speed_desc',
+            'languages',
+            'vision',
+            'traits',
+            'subraces',
+        )
+
+class ArchetypeSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Archetype
+        fields = ('name','slug','desc','document_slug')
+
+class CharClassSerializer(serializers.HyperlinkedModelSerializer):
+    archetypes = ArchetypeSerializer(many=True,read_only=True)
+    class Meta:
+        model = CharClass
+        fields = (
+            'name',
+            'slug',
+            'desc',
+            'document_slug',
+            'hit_dice',
+            'hp_at_1st_level',
+            'hp_at_higher_levels',
+            'prof_armor',
+            'prof_weapons',
+            'prof_tools',
+            'prof_saving_throws',
+            'prof_skills',
+            'equipment',
+            'table',
+            'spellcasting_ability',
+            'subtypes_name',
+            'archetypes',)
 
 class AggregateSerializer(HighlighterMixin, HaystackSerializer):
 
     class Meta:
-        index_classes = [MonsterIndex, SpellIndex, SectionIndex, ConditionIndex]
-        fields = ["name",'url', "text"]
+        index_classes = [MonsterIndex, 
+            SpellIndex, 
+            SectionIndex, 
+            ConditionIndex, 
+            CharClassIndex, 
+            RaceIndex]
+        fields = ['name',
+            'slug',
+            'route',
+            'text',
+            'route',
+            'slug',
+            'level',
+            'school',
+            'dnd_class',
+            'ritual',
+            'armor_class',
+            'hit_points',
+            'hit_dice',
+            'challenge_rating',
+            'strength',
+            'dexterity',
+            'constitution',
+            'intelligence',
+            'wisdom',
+            'charisma',]
