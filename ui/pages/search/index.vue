@@ -7,14 +7,14 @@
     <div v-show="!loading" class="search-result" v-bind:key="result.slug" v-for="result in orderedResults">
       <nuxt-link tag="a" 
         :params="{id: result.slug}" 
-        :to="`/${result.route}/view/${result.slug}`">
+        :to="`/${result.route}view/${result.slug}`">
       {{result.name}}
       </nuxt-link>
 
       <span v-if="result.route == 'monsters/'"> 
         <em>CR{{result.challenge_rating}} {{result.hit_points}}hp AC {{result.armor_class}}</em>  |  
         Str <StatBonus :stat="result.strength"></StatBonus>
-        Dex  <StatBonus :stat="result.dexterity"></StatBonus>
+        Dex <StatBonus :stat="result.dexterity"></StatBonus>
         Con <StatBonus :stat="result.constitution"></StatBonus>
         Int <StatBonus :stat="result.intelligence"></StatBonus>
         Wis <StatBonus :stat="result.wisdom"></StatBonus>
@@ -37,6 +37,12 @@ import MdViewer from '~/components/MdViewer';
 import VueRouter from 'vue-router';
 import StatBonus from '~/components/StatBonus';
 
+function sortFunction(a, b) {
+  var textA = a.name.toUpperCase();
+  var textB = b.name.toUpperCase();
+  return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+}
+
 export default {
   components: {
     MdViewer,
@@ -44,7 +50,6 @@ export default {
   },
   watch: {
     '$route.params': function (query) {
-      console.log("saw a change")
       this.getSearchResults()
     }
   },
@@ -86,25 +91,15 @@ export default {
             others.push(tmp[i]);
           }
       }
-      console.log(tmp)
-      console.log(this.text)
-      console.log(first)
-      console.log(others)
 
       first.sort(function(a, b) {
-          var textA = a.name.toUpperCase();
-          var textB = b.name.toUpperCase();
-          return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+        return sortFunction(a,b);
       });
       next.sort(function(a, b) {
-          var textA = a.name.toUpperCase();
-          var textB = b.name.toUpperCase();
-          return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+        return sortFunction(a,b);
       });
       others.sort(function(a, b) {
-          var textA = a.name.toUpperCase();
-          var textB = b.name.toUpperCase();
-          return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+        return sortFunction(a,b);
       });
       return(first.concat(next).concat(others));
     }

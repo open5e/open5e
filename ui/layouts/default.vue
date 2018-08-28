@@ -1,11 +1,13 @@
 <template>
   <div class="app-wrapper">
     <div class="sidebar">
-      <nuxt-link tag="h1" class="sticky-header" to="/">Open5e</nuxt-link>
-      <input class="input-search" 
-        placeholder="Search Open5e"
-        v-model="searchText" 
-        v-on:keyup.enter="doSearch(searchText)">
+      <div class="sticky-header">
+        <nuxt-link tag="h1" to="/">Open5e</nuxt-link>
+        <input class="input-search" 
+          placeholder="Search Open5e"
+          v-model="searchText" 
+          v-on:keyup.enter="doSearch(searchText)">
+      </div>  
       <ul>
         <nuxt-link tag="li" to="/characters/">Characters</nuxt-link>
         <ul>

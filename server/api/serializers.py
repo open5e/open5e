@@ -199,8 +199,6 @@ class AggregateSerializer(HighlighterMixin, HaystackSerializer):
             CharClassIndex, 
             RaceIndex]
         fields = ['name',
-            'slug',
-            'route',
             'text',
             'route',
             'slug',

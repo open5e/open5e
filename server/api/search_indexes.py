@@ -7,6 +7,7 @@ class MonsterIndex(indexes.SearchIndex, indexes.Indexable):
   text = indexes.CharField(document=True, use_template=True)
   name = indexes.EdgeNgramField(model_attr='name', )
   route = indexes.CharField(model_attr='route', indexed=False)
+  slug = indexes.CharField(model_attr='slug', indexed=False)
   armor_class = indexes.CharField(model_attr='armor_class', indexed=False)
   hit_points = indexes.CharField(model_attr='hit_points', indexed=False)
   hit_dice = indexes.CharField(model_attr='hit_dice', indexed=False)
@@ -31,6 +32,7 @@ class SpellIndex(indexes.SearchIndex, indexes.Indexable):
   text = indexes.CharField(document=True, use_template=True)
   name = indexes.EdgeNgramField(model_attr='name', )
   route = indexes.CharField(model_attr='route', indexed=False)
+  slug = indexes.CharField(model_attr='slug', indexed=False)
   ritual = indexes.CharField(model_attr='ritual', indexed=False)
   level = indexes.CharField(model_attr='level', indexed=False)
   school = indexes.CharField(model_attr='school', indexed=False)
@@ -51,6 +53,7 @@ class SectionIndex(indexes.SearchIndex, indexes.Indexable):
   text = indexes.CharField(document=True, use_template=True)
   name = indexes.EdgeNgramField(model_attr='name', )
   route = indexes.CharField(model_attr='route', indexed=False)
+  slug = indexes.CharField(model_attr='slug', indexed=False)
 
 
   def get_model(self):
@@ -66,6 +69,7 @@ class ConditionIndex(indexes.SearchIndex, indexes.Indexable):
   text = indexes.CharField(document=True, use_template=True)
   name = indexes.EdgeNgramField(model_attr='name', )
   route = indexes.CharField(model_attr='route', indexed=False)
+  slug = indexes.CharField(model_attr='slug', indexed=False)
 
 
   def get_model(self):
@@ -81,6 +85,7 @@ class CharClassIndex(indexes.SearchIndex, indexes.Indexable):
   text = indexes.CharField(document=True, use_template=True)
   name = indexes.EdgeNgramField(model_attr='name', )
   route = indexes.CharField(model_attr='route', indexed=False)
+  slug = indexes.CharField(model_attr='slug', indexed=False)
 
   def get_model(self):
     return CharClass
@@ -95,6 +100,7 @@ class RaceIndex(indexes.SearchIndex, indexes.Indexable):
   text = indexes.CharField(document=True, use_template=True)
   name = indexes.EdgeNgramField(model_attr='name', )
   route = indexes.CharField(model_attr='route', indexed=False)
+  slug = indexes.CharField(model_attr='slug', indexed=False)
 
   def get_model(self):
     return Race
