@@ -2,32 +2,70 @@
   <section class="container docs-container">
     <h1>Search results</h1>
     <hr />
-    <div class="search-result" v-bind:key="result.slug" v-for="result in orderedResults">
-      <b>{{result.name}}</b>
+    <p v-if="loading"> Searching Open5e... </p>
+    <p v-if="!loading && results.length == 0">No results</p>
+    <div v-show="!loading" class="search-result" v-bind:key="result.slug" v-for="result in orderedResults">
+      <nuxt-link tag="a" 
+        :params="{id: result.slug}" 
+        :to="`/${result.route}/view/${result.slug}`">
+      {{result.name}}
+      </nuxt-link>
+
+      <span v-if="result.route == 'monsters/'"> 
+        <em>CR{{result.challenge_rating}} {{result.hit_points}}hp AC {{result.armor_class}}</em>  |  
+        Str <StatBonus :stat="result.strength"></StatBonus>
+        Dex  <StatBonus :stat="result.dexterity"></StatBonus>
+        Con <StatBonus :stat="result.constitution"></StatBonus>
+        Int <StatBonus :stat="result.intelligence"></StatBonus>
+        Wis <StatBonus :stat="result.wisdom"></StatBonus>
+        Cha <StatBonus :stat="result.charisma"></StatBonus>
+      </span>
+
+      <span v-if="result.route == 'spells/'">
+        {{result.level}} | {{result.dnd_class}}
+      </span>
+      
       <p v-html="result.highlighted"></p>
     </div>
+    <p v-if="!loading && results.length > 0">No more results</p>
   </section>
 </template>
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
 import MdViewer from '~/components/MdViewer';
-import VueRouter from 'vue-router'
+import VueRouter from 'vue-router';
+import StatBonus from '~/components/StatBonus';
 
 export default {
   components: {
-    MdViewer
+    MdViewer,
+    StatBonus
   },
-  mounted () {
-    return axios.get(`http://localhost:8000/search?text=${this.$route.query.text}`) //you will need to enable CORS to make this work
-    .then(response => {
-      this.results = response.data.results
-    })
+  watch: {
+    '$route.params': function (query) {
+      console.log("saw a change")
+      this.getSearchResults()
+    }
   },
   data () {
     return {
       results: [],
       text: this.$route.query.text,
+      loading: true,
+    }
+  },
+  mounted() {
+    this.getSearchResults();
+  },
+  methods: {
+    getSearchResults: function() {
+      this.loading = true;
+      return axios.get(`http://localhost:8000/search?text=${this.$route.query.text}`) //you will need to enable CORS to make this work
+      .then(response => {
+        this.results = response.data.results
+        this.loading = false
+      })
     }
   },
   computed: {
