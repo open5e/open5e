@@ -1,5 +1,6 @@
 import uuid
 from django.db import models
+import json
 
 # Create your models here.
 class Document(models.Model):
@@ -19,6 +20,8 @@ class GameContent(models.Model):
     desc = models.TextField() # A description of the Game Content Item
     document = models.ForeignKey(Document, on_delete=models.CASCADE) # Like the System Reference Document
     created_at = models.DateTimeField(auto_now_add=True, editable=False)
+    def document_slug(self):
+        return self.document.slug
     class Meta:
         abstract=True
 
@@ -80,29 +83,34 @@ class CharClass(GameContent):
     equipment = models.TextField()
     table = models.TextField()
     spellcasting_ability = models.TextField()
-    subtypes = models.TextField()
+    subtypes_name = models.TextField()
 
 class Archetype(GameContent):
-    char_class = models.ForeignKey(CharClass, on_delete=models.CASCADE, null=True)
+    char_class = models.ForeignKey(CharClass, related_name='archetypes', on_delete=models.CASCADE, null=True)
 
 class Race(GameContent):
     asi_desc = models.TextField()
     asi = models.TextField()
+    def asi_json(self):
+        return json.loads(self.asi)
     age = models.TextField()
     alignment = models.TextField()
     size = models.TextField()
     speed = models.TextField()
+    def speed_json(self):
+        return json.loads(self.speed)
     speed_desc = models.TextField()
     languages = models.TextField()
     vision = models.TextField()
     traits = models.TextField()
-    subtypes = models.TextField()
 
-class SubRace(GameContent):
+class Subrace(GameContent):
     asi_desc = models.TextField()
     asi = models.TextField()
     traits = models.TextField()
-    parent_race = models.ForeignKey(Race, on_delete=models.CASCADE, null=True)
+    parent_race = models.ForeignKey(Race, related_name='subraces', on_delete=models.CASCADE, null=True)
+    def asi_json(self):
+        return json.loads(self.asi)
 
 class Plane(GameContent):
     pass

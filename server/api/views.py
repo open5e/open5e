@@ -106,3 +106,43 @@ class ConditionViewSet(viewsets.ModelViewSet):
     filter_fields=(
         'name',
     )
+
+class RaceViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows viewing of Races and Subraces.
+    """
+    queryset = Race.objects.all()
+    serializer_class = RaceSerializer
+    filter_fields=(
+        'name',
+    )
+
+class SubraceViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows viewing of Races and Subraces.
+    """
+    queryset = Subrace.objects.all()
+    serializer_class = SubraceSerializer
+    filter_fields=(
+        'name',
+    )
+
+class CharClassViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows viewing of Classes and Archetypes.
+    """
+    queryset = CharClass.objects.all()
+    serializer_class = CharClassSerializer
+    filter_fields=(
+        'name',
+    )
+
+class ArchetypeViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows viewing of Archetypes.
+    """
+    queryset = Archetype.objects.all()
+    serializer_class = ArchetypeSerializer
+    filter_fields=(
+        'name',
+    )

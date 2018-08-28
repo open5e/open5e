@@ -28,6 +28,10 @@ router.register(r'planes', views.PlaneViewSet)
 router.register(r'sections', views.SectionViewSet)
 router.register(r'feats', views.FeatViewSet)
 router.register(r'conditions', views.ConditionViewSet)
+router.register(r'races',views.RaceViewSet)
+router.register(r'subraces',views.SubraceViewSet)
+router.register(r'classes',views.CharClassViewSet)
+router.register(r'archetypes',views.ArchetypeViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
