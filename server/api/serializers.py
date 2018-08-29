@@ -1,6 +1,9 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
+from drf_haystack.serializers import HighlighterMixin, HaystackSerializer
+from drf_haystack.viewsets import HaystackViewSet
 from api.models import *
+from .search_indexes import *
 
 class DynamicFieldsModelSerializer(serializers.ModelSerializer):
 
@@ -28,11 +31,6 @@ class DocumentSerializer(serializers.HyperlinkedModelSerializer):
             fields = (
                 'title', 
                 'slug', 
-                'desc', 
-                'license',
-                'author',
-                'organization',
-                'version',
                 'url',)
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
@@ -190,3 +188,31 @@ class CharClassSerializer(serializers.HyperlinkedModelSerializer):
             'spellcasting_ability',
             'subtypes_name',
             'archetypes',)
+
+class AggregateSerializer(HighlighterMixin, HaystackSerializer):
+
+    class Meta:
+        index_classes = [MonsterIndex, 
+            SpellIndex, 
+            SectionIndex, 
+            ConditionIndex, 
+            CharClassIndex, 
+            RaceIndex]
+        fields = ['name',
+            'text',
+            'route',
+            'slug',
+            'level',
+            'school',
+            'dnd_class',
+            'ritual',
+            'armor_class',
+            'hit_points',
+            'hit_dice',
+            'challenge_rating',
+            'strength',
+            'dexterity',
+            'constitution',
+            'intelligence',
+            'wisdom',
+            'charisma',]

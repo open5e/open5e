@@ -2,7 +2,20 @@ from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from api.models import *
 from api.serializers import *
+from drf_haystack.serializers import HaystackSerializer
+from drf_haystack.viewsets import HaystackViewSet
 
+from api.models import Monster
+from api.search_indexes import MonsterIndex
+
+
+class SearchView(HaystackViewSet):
+
+    # `index_models` is an optional list of which models you would like to include
+    # in the search result. You might have several models indexed, and this provides
+    # a way to filter out those of no interest for this particular view.
+    # (Translates to `SearchQuerySet().models(*index_models)` behind the scenes.
+    serializer_class = AggregateSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):

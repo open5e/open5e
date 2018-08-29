@@ -54,6 +54,7 @@ class Monster(GameContent):
     # special_abilities
     # actions
     # legendary_actions
+    route = models.TextField(default="monsters/") 
 
 class Spell(GameContent):
     higher_level = models.TextField()
@@ -70,6 +71,7 @@ class Spell(GameContent):
     dnd_class = models.TextField()
     archetype = models.TextField()
     circles = models.TextField()
+    route = models.TextField(default="spells/") 
 
 class CharClass(GameContent):
     hit_dice = models.TextField()
@@ -84,9 +86,11 @@ class CharClass(GameContent):
     table = models.TextField()
     spellcasting_ability = models.TextField()
     subtypes_name = models.TextField()
+    route = models.TextField(default="classes/")
 
 class Archetype(GameContent):
     char_class = models.ForeignKey(CharClass, related_name='archetypes', on_delete=models.CASCADE, null=True)
+    route = models.TextField(default="archetypes/")
 
 class Race(GameContent):
     asi_desc = models.TextField()
@@ -103,26 +107,33 @@ class Race(GameContent):
     languages = models.TextField()
     vision = models.TextField()
     traits = models.TextField()
+    route = models.TextField(default="races/")
 
 class Subrace(GameContent):
     asi_desc = models.TextField()
     asi = models.TextField()
     traits = models.TextField()
     parent_race = models.ForeignKey(Race, related_name='subraces', on_delete=models.CASCADE, null=True)
+    route = models.TextField(default="subraces/")
     def asi_json(self):
         return json.loads(self.asi)
 
 class Plane(GameContent):
     pass
+    route = models.TextField(default="planes/") 
 
 class Section(GameContent):
     parent = models.ForeignKey('self', on_delete=models.CASCADE, null=True)
+    route = models.TextField(default="sections/") 
     
 class Feat(GameContent):
+        
     prerequisite = models.TextField()
+    route = models.TextField(default="conditions/") 
 
 class Condition(GameContent):
     pass
+    route = models.TextField(default="conditions/") 
 
 class Background(GameContent):
     skill_proficiencies = models.TextField()
@@ -130,3 +141,4 @@ class Background(GameContent):
     equipment = models.TextField()
     feature = models.TextField()
     suggested_characteristics = models.TextField()
+    route = models.TextField(default="backgrounds/") 
