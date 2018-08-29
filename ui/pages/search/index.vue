@@ -13,12 +13,12 @@
 
       <span v-if="result.route == 'monsters/'"> 
         <em>CR{{result.challenge_rating}} {{result.hit_points}}hp AC {{result.armor_class}}</em>  |  
-        Str <StatBonus :stat="result.strength"></StatBonus>
-        Dex <StatBonus :stat="result.dexterity"></StatBonus>
-        Con <StatBonus :stat="result.constitution"></StatBonus>
-        Int <StatBonus :stat="result.intelligence"></StatBonus>
-        Wis <StatBonus :stat="result.wisdom"></StatBonus>
-        Cha <StatBonus :stat="result.charisma"></StatBonus>
+        Str <StatBonus :stat="parseInt(result.strength)"></StatBonus>
+        Dex <StatBonus :stat="parseInt(result.dexterity)"></StatBonus>
+        Con <StatBonus :stat="parseInt(result.constitution)"></StatBonus>
+        Int <StatBonus :stat="parseInt(result.intelligence)"></StatBonus>
+        Wis <StatBonus :stat="parseInt(result.wisdom)"></StatBonus>
+        Cha <StatBonus :stat="parseInt(result.charisma)"></StatBonus>
       </span>
 
       <span v-if="result.route == 'spells/'">

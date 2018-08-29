@@ -1,4 +1,3 @@
-{{ object.desc }}
-{{ object.traits }}
-{{ object.subrace.asi_desc }}
-{{ object.subrace.traits}}
+{% load custom_markdown %}
+{{ object.desc|striptags|custom_markdown|striptags }}
+{{ object.traits|striptags|custom_markdown|striptags }}

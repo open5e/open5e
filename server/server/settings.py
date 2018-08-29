@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     # downloaded modules
     'rest_framework',
     'django_filters',
+    'markdown2',
 ]
 
 MIDDLEWARE = [

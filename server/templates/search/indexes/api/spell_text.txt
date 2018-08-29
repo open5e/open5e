@@ -1,3 +1,4 @@
-{{ object.name }}
-{{ object.desc }}
+{{ object.name|striptags }}
+{{ object.desc|striptags }}
+
 

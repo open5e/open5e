@@ -13,6 +13,8 @@ pylint = "*"
 django-haystack = "*"
 whoosh = "*"
 drf-haystack = "*"
+"markdown2" = "*"
+markdown = "*"
 
 [dev-packages]
 
