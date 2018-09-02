@@ -51,6 +51,9 @@ class Monster(GameContent):
     senses = models.TextField()
     languages = models.TextField()
     challenge_rating = models.TextField()
+    #speed_json = models.TextField()
+    def speed_json(self):
+        return json.loads(self.speed)
     # special_abilities
     # actions
     # legendary_actions

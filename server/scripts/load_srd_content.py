@@ -126,7 +126,7 @@ def loadMonsters():
                 if 'hit_dice' in mob:
                     m.hit_dice = mob['hit_dice']
                 if 'speed' in mob:
-                    m.speed = mob['speed']
+                    m.speed = json.dumps(mob['speed_json'])
                 if 'strength' in mob:
                     m.strength = mob['strength']
                 if 'dexterity' in mob:
@@ -161,6 +161,8 @@ def loadMonsters():
                     m.languages = mob['languages']
                 if 'challenge_rating' in mob:
                     m.challenge_rating = mob['challenge_rating']
+                #if 'speed_json' in mob:
+                #    m.speed_json = mob['speed_json']
                 m.save()
                 success_count+=1
 
@@ -192,8 +194,10 @@ def loadBackgrounds():
                         b.languages = background['languages']
                     if 'equipment' in background:
                         b.equipment = background['equipment']
-                    if 'feature' in background:
-                        b.feature = background['feature']
+                    if 'feature-name' in background:
+                        b.feature = background['feature-name']
+                    if 'feature-desc' in background:
+                        b.feature_desc = background['feature-desc']
                     if 'suggested-characteristics' in background:
                         b.suggested_characteristics = background['suggested-characteristics']
                     b.save()
@@ -257,7 +261,6 @@ def loadClasses():
                 success_count+=1
         print("Done loading Races and Subraces.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
          
-
 def loadSubclasses():
     #### Load Subclasses ####
     print('Loading Subclasses from {0}'.format(json_file['classes']))

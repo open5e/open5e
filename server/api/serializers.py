@@ -51,7 +51,7 @@ class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedMod
             'armor_class',
             'hit_points',
             'hit_dice',
-            'speed',
+            'speed_json',
             'strength',
             'dexterity',
             'constitution',
