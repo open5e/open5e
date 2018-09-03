@@ -69,8 +69,11 @@ class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedMod
             'senses',
             'languages',
             'challenge_rating',
-            'document_slug',
-
+            'actions',
+            'reactions',
+            'legendary_actions',
+            'special_abilities',
+            'document_slug'
         )
 
 class SpellSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
