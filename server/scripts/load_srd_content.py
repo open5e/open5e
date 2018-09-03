@@ -161,8 +161,19 @@ def loadMonsters():
                     m.languages = mob['languages']
                 if 'challenge_rating' in mob:
                     m.challenge_rating = mob['challenge_rating']
+<<<<<<< Updated upstream
                 #if 'speed_json' in mob:
                 #    m.speed_json = mob['speed_json']
+=======
+                if 'actions' in mob:
+                    m.actions_json = json.dumps(mob['actions'])
+                if 'special_abilities' in mob:
+                    m.special_abilities_json = json.dumps(mob['special_abilities'])
+                if 'reactions' in mob:
+                    m.reactions_json = json.dumps(mob['reactions'])
+                if 'legendary_actions in mob:
+                    m.legendary_actions_json = json.dumps(mob['legendary_actions'])
+>>>>>>> Stashed changes
                 m.save()
                 success_count+=1
 
