@@ -151,6 +151,7 @@ class Background(GameContent):
     languages = models.TextField()
     equipment = models.TextField()
     feature = models.TextField()
+    feature_desc = models.TextField()
     suggested_characteristics = models.TextField()
     route = models.TextField(default="backgrounds/") 
 

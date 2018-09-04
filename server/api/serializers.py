@@ -111,6 +111,7 @@ class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.Hyperlinked
             'languages',
             'equipment',
             'feature',
+            'feature_desc',
             'suggested_characteristics',
             'document_slug',
         )
