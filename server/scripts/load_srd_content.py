@@ -20,7 +20,8 @@ json_file={
     'feats' : data_directory + 'feats/5e-SRD-Feats.json',
     'planes' : data_directory + 'planes/5e-SRD-Planes.json',
     'races' : data_directory + 'races/5e-SRD-Races.json',
-    'sections' : data_directory + 'sections/5e-SRD-Sections.json'
+    'sections' : data_directory + 'sections/5e-SRD-Sections.json',
+    'magicItems': data_directory + 'items/magicItems.json'
 }
 
 def importSRDDocument():
@@ -409,7 +410,6 @@ def loadRaces():
         
         print("Done loading Races and Subraces.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
 
-
 def loadSubraces():
     #### Load Subraces ####
     print('Loading Subraces from {0}'.format(json_file['races']))
@@ -437,6 +437,34 @@ def loadSections():
                 success_count+=1
         print("Done loading Sections.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
 
+def loadMagicItems():
+    print('Begin loading Magic Items from {0}'.format(json_file['magicItems']))
+    with open(json_file['magicItems']) as json_data:
+        magicItems = json.load(json_data)
+        success_count = 0
+        fail_count = 0
+
+        for item in magicItems:
+            if MagicItem.objects.filter(name=item['name']).exists():
+                fail_count+=1
+            else:
+                i = MagicItem(document = Document.objects.get(title="Systems Reference Document"))
+                if 'name' in item:
+                    i.name = item['name']
+                    i.slug = slugify(item['name'])
+                if 'desc' in item:
+                    i.desc = item['desc']
+                if 'type' in item:
+                    i.type = item['type']
+                if 'rarity' in item:
+                    i.rarity = item['rarity']
+                if 'requires-attunement' in item:
+                    i.requires_attunement = item['requires-attunement']
+                i.save()
+                success_count +=1
+        print("Done loading Magic Items.  Successful:{0} Failed:{1}".format(success_count,fail_count))
+    
+
 importSRDDocument()
 loadSpells()
 loadMonsters()
@@ -447,3 +475,4 @@ loadFeats()
 loadConditions()
 loadRaces()
 loadClasses()
+loadMagicItems()

@@ -192,6 +192,11 @@ class CharClassSerializer(serializers.HyperlinkedModelSerializer):
             'subtypes_name',
             'archetypes',)
 
+class MagicItemSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = MagicItem
+        fields = ('slug','name','type','desc','rarity','requires_attunement','document_slug')
+
 class AggregateSerializer(HighlighterMixin, HaystackSerializer):
 
     class Meta:

@@ -153,3 +153,9 @@ class Background(GameContent):
     feature = models.TextField()
     suggested_characteristics = models.TextField()
     route = models.TextField(default="backgrounds/") 
+
+class MagicItem(GameContent):
+    type = models.TextField()
+    rarity = models.TextField()
+    requires_attunement = models.TextField()
+    route = models.TextField(default="magicitems/")
