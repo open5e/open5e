@@ -20,7 +20,8 @@ json_file={
     'feats' : data_directory + 'feats/5e-SRD-Feats.json',
     'planes' : data_directory + 'planes/5e-SRD-Planes.json',
     'races' : data_directory + 'races/5e-SRD-Races.json',
-    'sections' : data_directory + 'sections/5e-SRD-Sections.json'
+    'sections' : data_directory + 'sections/5e-SRD-Sections.json',
+    'magicItems': data_directory + 'items/magicItems.json'
 }
 
 def importSRDDocument():
@@ -126,7 +127,7 @@ def loadMonsters():
                 if 'hit_dice' in mob:
                     m.hit_dice = mob['hit_dice']
                 if 'speed' in mob:
-                    m.speed = mob['speed']
+                    m.speed = json.dumps(mob['speed_json'])
                 if 'strength' in mob:
                     m.strength = mob['strength']
                 if 'dexterity' in mob:
@@ -161,6 +162,22 @@ def loadMonsters():
                     m.languages = mob['languages']
                 if 'challenge_rating' in mob:
                     m.challenge_rating = mob['challenge_rating']
+                if 'actions' in mob:
+                    m.actions_json = json.dumps(mob['actions'])
+                else:
+                    m.actions_json = json.dumps("")
+                if 'special_abilities' in mob:
+                    m.special_abilities_json = json.dumps(mob['special_abilities'])
+                else:
+                    m.special_abilities_json = json.dumps("")
+                if 'reactions' in mob:
+                    m.reactions_json = json.dumps(mob['reactions'])
+                else:
+                    m.reactions_json = json.dumps("")
+                if 'legendary_actions' in mob:
+                    m.legendary_actions_json = json.dumps(mob['legendary_actions'])
+                else:
+                    m.legendary_actions_json = json.dumps("")
                 m.save()
                 success_count+=1
 
@@ -192,8 +209,10 @@ def loadBackgrounds():
                         b.languages = background['languages']
                     if 'equipment' in background:
                         b.equipment = background['equipment']
-                    if 'feature' in background:
-                        b.feature = background['feature']
+                    if 'feature-name' in background:
+                        b.feature = background['feature-name']
+                    if 'feature-desc' in background:
+                        b.feature_desc = background['feature-desc']
                     if 'suggested-characteristics' in background:
                         b.suggested_characteristics = background['suggested-characteristics']
                     b.save()
@@ -257,7 +276,6 @@ def loadClasses():
                 success_count+=1
         print("Done loading Races and Subraces.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
          
-
 def loadSubclasses():
     #### Load Subclasses ####
     print('Loading Subclasses from {0}'.format(json_file['classes']))
@@ -392,7 +410,6 @@ def loadRaces():
         
         print("Done loading Races and Subraces.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
 
-
 def loadSubraces():
     #### Load Subraces ####
     print('Loading Subraces from {0}'.format(json_file['races']))
@@ -420,6 +437,34 @@ def loadSections():
                 success_count+=1
         print("Done loading Sections.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 
 
+def loadMagicItems():
+    print('Begin loading Magic Items from {0}'.format(json_file['magicItems']))
+    with open(json_file['magicItems']) as json_data:
+        magicItems = json.load(json_data)
+        success_count = 0
+        fail_count = 0
+
+        for item in magicItems:
+            if MagicItem.objects.filter(name=item['name']).exists():
+                fail_count+=1
+            else:
+                i = MagicItem(document = Document.objects.get(title="Systems Reference Document"))
+                if 'name' in item:
+                    i.name = item['name']
+                    i.slug = slugify(item['name'])
+                if 'desc' in item:
+                    i.desc = item['desc']
+                if 'type' in item:
+                    i.type = item['type']
+                if 'rarity' in item:
+                    i.rarity = item['rarity']
+                if 'requires-attunement' in item:
+                    i.requires_attunement = item['requires-attunement']
+                i.save()
+                success_count +=1
+        print("Done loading Magic Items.  Successful:{0} Failed:{1}".format(success_count,fail_count))
+    
+
 importSRDDocument()
 loadSpells()
 loadMonsters()
@@ -430,3 +475,4 @@ loadFeats()
 loadConditions()
 loadRaces()
 loadClasses()
+loadMagicItems()

@@ -51,9 +51,20 @@ class Monster(GameContent):
     senses = models.TextField()
     languages = models.TextField()
     challenge_rating = models.TextField()
-    # special_abilities
-    # actions
-    # legendary_actions
+    def speed_json(self):
+        return json.loads(self.speed)
+    actions_json = models.TextField() #a list of actions in json text.
+    def actions(self):
+        return json.loads(self.actions_json)
+    special_abilities_json = models.TextField() # A list of special abilities in json text.
+    def special_abilities(self):
+        return json.loads(self.special_abilities_json)
+    reactions_json = models.TextField() # A list of reactions in json text.
+    def reactions(self):
+        return json.loads(self.reactions_json)
+    legendary_actions_json = models.TextField() # a list of legendary actions in json.
+    def legendary_actions(self):
+        return json.loads(self.legendary_actions_json)
     route = models.TextField(default="monsters/") 
 
 class Spell(GameContent):
@@ -140,5 +151,12 @@ class Background(GameContent):
     languages = models.TextField()
     equipment = models.TextField()
     feature = models.TextField()
+    feature_desc = models.TextField()
     suggested_characteristics = models.TextField()
     route = models.TextField(default="backgrounds/") 
+
+class MagicItem(GameContent):
+    type = models.TextField()
+    rarity = models.TextField()
+    requires_attunement = models.TextField()
+    route = models.TextField(default="magicitems/")

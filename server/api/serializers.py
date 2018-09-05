@@ -51,7 +51,7 @@ class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedMod
             'armor_class',
             'hit_points',
             'hit_dice',
-            'speed',
+            'speed_json',
             'strength',
             'dexterity',
             'constitution',
@@ -69,8 +69,11 @@ class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedMod
             'senses',
             'languages',
             'challenge_rating',
-            'document_slug',
-
+            'actions',
+            'reactions',
+            'legendary_actions',
+            'special_abilities',
+            'document_slug'
         )
 
 class SpellSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
@@ -108,6 +111,7 @@ class BackgroundSerializer(DynamicFieldsModelSerializer, serializers.Hyperlinked
             'languages',
             'equipment',
             'feature',
+            'feature_desc',
             'suggested_characteristics',
             'document_slug',
         )
@@ -188,6 +192,11 @@ class CharClassSerializer(serializers.HyperlinkedModelSerializer):
             'spellcasting_ability',
             'subtypes_name',
             'archetypes',)
+
+class MagicItemSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = MagicItem
+        fields = ('slug','name','type','desc','rarity','requires_attunement','document_slug')
 
 class AggregateSerializer(HighlighterMixin, HaystackSerializer):
 

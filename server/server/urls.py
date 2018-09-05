@@ -32,6 +32,7 @@ router.register(r'races',views.RaceViewSet)
 router.register(r'subraces',views.SubraceViewSet)
 router.register(r'classes',views.CharClassViewSet)
 router.register(r'archetypes',views.ArchetypeViewSet)
+router.register(r'magicitems',views.MagicItemViewSet)
 router.register('search', views.SearchView, base_name="global-search")
 
 # Wire up our API using automatic URL routing.
