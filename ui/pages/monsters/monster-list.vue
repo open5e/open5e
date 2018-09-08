@@ -12,7 +12,7 @@
           <li v-bind:key="monster.name" v-for="monster in letter">
             <nuxt-link tag="a" 
               :params="{id: slugify(monster.name)}" 
-              :to="`/monsters/view/${slugify(monster.name)}`">
+              :to="`/monsters/view/${monster.slug}`">
 
               {{monster.name}}
             </nuxt-link>
@@ -31,7 +31,7 @@ export default {
     StatBonus
   },
   mounted () {
-    return axios.get(`/json/monsters.json`) //you will need to enable CORS to make this work
+    return axios.get(`/json/monster-index.json`) //you will need to enable CORS to make this work
     .then(response => {
       console.log(response.data);
       this.monsters = response.data
@@ -54,7 +54,6 @@ export default {
     }
   },  
   computed: {
-    // a computed getter
     monstersByLetter: function () {
       let letters = {};
       for (let i = 0; i < this.filteredMonsters.length; i++){ 
