@@ -84,3 +84,12 @@ table {
     }
   }
 }
+
+.docs-container {
+  hr {
+    margin: 1rem 0;
+    height: 2px;
+    background: linear-gradient(to right, rgba($color-blood,1) 0%,rgba($color-blood,0) 100%); 
+    border: 0;
+  }
+}

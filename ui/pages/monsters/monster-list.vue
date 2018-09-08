@@ -11,8 +11,8 @@
         <h3 v-if="!filter">{{key.toUpperCase()}}</h3>
           <li v-bind:key="monster.name" v-for="monster in letter">
             <nuxt-link tag="a" 
-              :params="{id: monster.slug}" 
-              :to="`/monsters/view/${monster.slug}`">
+              :params="{id: slugify(monster.name)}" 
+              :to="`/monsters/view/${slugify(monster.name)}`">
 
               {{monster.name}}
             </nuxt-link>
@@ -31,9 +31,10 @@ export default {
     StatBonus
   },
   mounted () {
-    return axios.get(`http://localhost:8000/monsters/?fields=slug,name&limit=1000`) //you will need to enable CORS to make this work
+    return axios.get(`/json/monsters.json`) //you will need to enable CORS to make this work
     .then(response => {
-      this.monsters = response.data.results
+      console.log(response.data);
+      this.monsters = response.data
     })
   },
   data () {
@@ -42,6 +43,16 @@ export default {
       filter: '',
     }
   },
+  methods: {
+    slugify: function(text) {
+        return text.toString().toLowerCase()
+        .replace(/\s+/g, '-')           // Replace spaces with -
+        .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
+        .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+        .replace(/^-+/, '')             // Trim - from start of text
+        .replace(/-+$/, '');            // Trim - from end of text
+    }
+  },  
   computed: {
     // a computed getter
     monstersByLetter: function () {
