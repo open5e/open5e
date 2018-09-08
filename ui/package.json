@@ -16,7 +16,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "static-generate": "node bin/generate.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -30,8 +31,10 @@
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
+    "mkdirp": "^0.5.1",
     "node-sass": "^4.9.2",
     "sass-loader": "^7.1.0",
+    "slugify": "^1.3.1",
     "vue-style-loader": "^4.1.1"
   }
 }
