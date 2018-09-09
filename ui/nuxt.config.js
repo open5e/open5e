@@ -23,7 +23,10 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['vue-showdown'],
+    vendor: [
+      'vue-showdown',
+      'axios'
+    ],
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
