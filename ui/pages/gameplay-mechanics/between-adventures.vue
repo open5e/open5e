@@ -14,7 +14,7 @@ export default {
   },
   data: function () {
     return {
-      file: this.$router.currentRoute.fullPath
+      file: this.$router.currentRoute.path
     }
   }
 }

@@ -35,4 +35,4 @@ venv/*
 .gitignore
 
 # static files
-ui/static/**
+ui/static/json/**

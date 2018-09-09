@@ -53,19 +53,19 @@
       <p v-if="monster.challenge_rating"> <b>Challenge</b> <challenge-render :challenge="monster.challenge_rating"></challenge-render> </p>
       <hr/>
       <p class="action-block" v-for="ability in monster.special_abilities" v-bind:key="ability.name">
-        <b>{{ability.name}}.</b> {{ability.desc}}
+        <b class="action-name">{{ability.name}}. </b> <vue-markdown class="inline" :source="ability.desc" :watches="['source']"></vue-markdown>
       </p>
       <h2 v-if="monster.actions">Actions</h2>
       <p class="action-block" v-for="action in monster.actions" v-bind:key="action.name">
-        <b>{{action.name}}.</b> {{action.desc}}
+        <b class="action-name">{{action.name}}. </b> <vue-markdown class="inline" :source="action.desc" :watches="['source']"></vue-markdown>
       </p>
       <h2 v-if="monster.reactions">Reactions</h2>
       <p class="action-block" v-for="action in monster.reactions" v-bind:key="action.name">
-        <b>{{action.name}}.</b> {{action.desc}}
+        <b class="action-name">{{action.name}}. </b> <vue-markdown class="inline" :source="action.desc" :watches="['source']"></vue-markdown>
       </p>
       <h2 v-if="monster.legendary_actions">Legendary Actions</h2>
       <p class="action-block" v-for="action in monster.legendary_actions" v-bind:key="action.name">
-        <b>{{action.name}}.</b> {{action.desc}}
+        <b class="action-name">{{action.name}}. </b> <vue-markdown class='inline' :source="action.desc" :watches="['source']"></vue-markdown>
       </p>
   </section>
 </template>
@@ -74,11 +74,13 @@
 import axios from 'axios'
 import StatBonus from '~/components/StatBonus.vue'
 import ChallengeRender from '~/components/ChallengeRender.vue'
+import VueMarkdown from 'vue-markdown'
 
 export default {
   components: {
     StatBonus,
-    ChallengeRender
+    ChallengeRender,
+    VueMarkdown
   },
   mounted () {
     return axios.get(`/json/monsters/${this.$route.params.id}.json`) //you will need to enable CORS to make this work
@@ -179,9 +181,21 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .action-block {
   white-space: pre-wrap;
+
+  .inline {
+    display: inline;
+
+    /deep/ p:first-child {
+      display: inline;
+    }
+  }
+
+  .action-name {
+    font-size: 1.1rem;
+  }
 }
 
 .ability-array {

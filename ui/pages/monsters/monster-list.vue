@@ -11,8 +11,8 @@
         <h3 v-if="!filter">{{key.toUpperCase()}}</h3>
           <li v-bind:key="monster.name" v-for="monster in letter">
             <nuxt-link tag="a" 
-              :params="{id: slugify(monster.name)}" 
-              :to="`/monsters/view/${monster.slug}`">
+              :params="{id: monster.slug}" 
+              :to="`/monsters/${monster.slug}`">
 
               {{monster.name}}
             </nuxt-link>
@@ -83,7 +83,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .monster-block {
   margin-top: 1rem;
 }

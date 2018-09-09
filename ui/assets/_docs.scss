@@ -92,4 +92,7 @@ table {
     background: linear-gradient(to right, rgba($color-blood,1) 0%,rgba($color-blood,0) 100%); 
     border: 0;
   }
+  p, hr, h1, h2, h3, h4, h5, h6 {
+    max-width: 40rem;
+  }
 }

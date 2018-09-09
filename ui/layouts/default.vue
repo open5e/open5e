@@ -8,39 +8,26 @@
           v-model="searchText" 
           v-on:keyup.enter="doSearch(searchText)">
       </div>  
-      <ul>
+      <ul v-show="sections[0] != 'loading'">
+        <nuxt-link tag="li" to="/spells/spells-list">Spells</nuxt-link>
+        <nuxt-link tag="li" to="/monsters/monster-list">Monsters</nuxt-link>
         <nuxt-link tag="li" to="/characters/">Characters</nuxt-link>
         <ul>
-          <nuxt-link tag="li" to="/characters/advancement">Advancement</nuxt-link>
-          <nuxt-link tag="li" to="/characters/background">Background</nuxt-link>
-          <nuxt-link tag="li" to="/characters/feats">Feats</nuxt-link>
+          <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Characters" v-bind:key="section.slug">
+            {{section.name}}
+          </nuxt-link>
           <nuxt-link tag="li" to="/characters/races/">Races</nuxt-link>
           <ul>
-            <nuxt-link tag="li" to="/characters/races/tiefling">Tiefling</nuxt-link>
-            <nuxt-link tag="li" to="/characters/races/dragonborn">Dragonborn</nuxt-link>
-            <nuxt-link tag="li" to="/characters/races/dwarf">Dwarf</nuxt-link>
-            <nuxt-link tag="li" to="/characters/races/elf">Elf</nuxt-link>
-            <nuxt-link tag="li" to="/characters/races/gnome">Gnome</nuxt-link>
-            <nuxt-link tag="li" to="/characters/races/half-elf">Half-Elf</nuxt-link>
-            <nuxt-link tag="li" to="/characters/races/half-orc">Half-Orc</nuxt-link>
-            <nuxt-link tag="li" to="/characters/races/halfling">Halfling</nuxt-link>
-            <nuxt-link tag="li" to="/characters/races/human">Human</nuxt-link>
+            <nuxt-link v-for="race in races" v-bind:key="race.slug" tag="li" :to="`/characters/races/${race.slug}`">
+              {{race.name}}
+            </nuxt-link>
           </ul>
-        </ul>
-        <nuxt-link tag="li" to="/classes/">Classes</nuxt-link>
-        <ul>
-          <nuxt-link tag="li" to="/classes/barbarian">Barbarian</nuxt-link>
-          <nuxt-link tag="li" to="/classes/bard">Bard</nuxt-link>
-          <nuxt-link tag="li" to="/classes/cleric">Cleric</nuxt-link>
-          <nuxt-link tag="li" to="/classes/druid">Druid</nuxt-link>
-          <nuxt-link tag="li" to="/classes/fighter">Fighter</nuxt-link>
-          <nuxt-link tag="li" to="/classes/monk">Monk</nuxt-link>
-          <nuxt-link tag="li" to="/classes/paladin">Paladin</nuxt-link>
-          <nuxt-link tag="li" to="/classes/ranger">Ranger</nuxt-link>
-          <nuxt-link tag="li" to="/classes/rogue">Rogue</nuxt-link>
-          <nuxt-link tag="li" to="/classes/sorcerer">Sorcerer</nuxt-link>
-          <nuxt-link tag="li" to="/classes/warlock">Warlock</nuxt-link>
-          <nuxt-link tag="li" to="/classes/wizard">Wizard</nuxt-link>
+          <nuxt-link tag="li" to="/classes/">Classes</nuxt-link>
+          <ul>
+            <nuxt-link v-for="charClass in classes" v-bind:key="charClass.slug" tag="li" :to="`/classes/${charClass.slug}`">
+              {{charClass.name}}
+            </nuxt-link>
+          </ul>
         </ul>
         <nuxt-link tag="li" to="/combat/">Combat</nuxt-link>
         <ul>
@@ -65,17 +52,40 @@
           <nuxt-link tag="li" to="/gameplay-mechanics/saving-throws">Saving Throws</nuxt-link>
           <nuxt-link tag="li" to="/gameplay-mechanics/time">Time</nuxt-link>
         </ul>
-        <nuxt-link tag="li" to="/spells/spells-list">Spells</nuxt-link>
-        <nuxt-link tag="li" to="/monsters/monster-list">Monsters</nuxt-link>
       </ul>
     </div>
     <div class="content-wrapper">
-    <nuxt/>
+      <ol class="breadcrumb">
+        <li v-for="item in crumbs" v-bind:key="item" class="breadcrumb-item">
+          <nuxt-link :to="item.path" active-class="active">
+            {{ item.breadcrumb }}
+          </nuxt-link>
+        </li>
+      </ol>
+      <nuxt/>
     </div>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
+
+Array.prototype.groupBy = function(prop) {
+  return this.reduce(function(groups, item) {
+    const val = item[prop]
+    groups[val] = groups[val] || []
+    groups[val].push(item)
+    return groups
+  }, {})
+}
+
+const breadcrumbs = {
+  // You should use / + name for the root route
+  '/spells': 'Spells',
+  // And just name of the page for child routes
+  'profile-account': 'Account' 
+}
+
 export default {
   methods: {
     doSearch: function (searchText) {
@@ -85,8 +95,47 @@ export default {
   data() {
     return {
       searchText: this.$route.query.text,
+      classes: ['loading'],
+      races: ['loading'],
+      sections: ['loading'],
+      
     }
-  }
+    
+  },
+  computed: {
+    sectionGroups: function() {
+      let groupedSections = this.sections.groupBy('parent');
+      return groupedSections;
+    },
+    crumbs () {
+      let crumbs = []
+      console.log(this.$route.matched);
+      this.$route.matched.forEach((item) => {
+        if (breadcrumbs[item.name] || breadcrumbs[item.path]) {
+          item.breadcrumb = breadcrumbs[item.name] || breadcrumbs[item.path]
+          crumbs.push(item)
+        }
+      })
+
+      return crumbs
+    }
+  },
+  created () {
+    axios.get(`/json/section-index.json`) //you will need to enable CORS to make this work
+    .then(response => {
+      this.sections = response.data
+    })
+
+    axios.get(`/json/class-index.json`) //you will need to enable CORS to make this work
+    .then(response => {
+      this.classes = response.data
+    })
+
+    axios.get(`/json/race-index.json`) //you will need to enable CORS to make this work
+    .then(response => {
+      this.races = response.data
+    })
+  },
 }
 </script>
 
@@ -133,7 +182,7 @@ export default {
 .sidebar {
   color: white;
   background-color: $color-basalt;
-  width: 16rem;
+  width: 14rem;
   min-width: 14rem;
   overflow-y: auto;
   font-size: 15px;

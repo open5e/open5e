@@ -7,7 +7,7 @@
     <div v-show="!loading" class="search-result" v-bind:key="result.slug" v-for="result in orderedResults">
       <nuxt-link tag="a" 
         :params="{id: result.slug}" 
-        :to="`/${result.route}view/${result.slug}`">
+        :to="`/${result.route}/${result.slug}`">
       {{result.name}}
       </nuxt-link>
 
@@ -107,7 +107,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .highlighted {
   background-color: lightgoldenrodyellow;
   font-weight: bold;

@@ -1,15 +1,13 @@
 <template>
   <section class="container docs-container">
     <div>
-      <h2>{{spell.name}}</h2>
-      <p>A {{spell.level}} {{spell.dnd_class}} spell</p>
+      <h1>{{spell.name}}</h1>
+      <p><em>{{spell.level}} {{spell.school}}</em> | ({{spell.dnd_class}})</p>
       <p><label>Range:</label> {{spell.range}}</p>
       <p><label>Casting Time:</label> {{spell.casting_time}} <span v-if="spell.ritual === 'yes'">{{spell.ritual}} (Ritual)</span></p>
-      <p><label>Components: {{spell.components}} ({{spell.material}})</label></p>
+      <p><label>Components: {{spell.components}} <span v-if="spell.material">({{spell.material}})</span></label></p>
       <p v-html="spell.desc"></p>
     </div>
-    <nuxt-link tag="button" v-if="spell.id > 1" :to="`/spells/view/${prevSpellId}`">Previous</nuxt-link>
-    <nuxt-link tag="button" :to="`/spells/view/${nextSpellId}`">Next</nuxt-link>
   </section>
 </template>
 
@@ -43,9 +41,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 p {
-  width: 60rem;
+  white-space: pre-wrap;
+}
+label {
+  font-weight: bold;
 }
 </style>
 

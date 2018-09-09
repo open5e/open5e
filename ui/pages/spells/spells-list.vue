@@ -12,7 +12,7 @@
           <li v-bind:key="spell.name" v-for="spell in letter">
             <nuxt-link tag="a" 
               :params="{id: spell.slug}" 
-              :to="`/spells/view/${spell.slug}`">
+              :to="`/spells/${spell.slug}`">
 
               {{spell.name}}
             </nuxt-link>
