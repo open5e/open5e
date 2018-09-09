@@ -31,7 +31,8 @@ exec(open('scripts/load_srd_content.py').read())
 quit()
 
 # Back in /server
-pipenv run python manage.py runserver
+pipenv run python manage.py rebuild_index # Build the index for search results
+pipenv run python manage.py runserver # Run the damn server! Hooray!
 ```
 
 You will want to leave the server terminal running while you launch the UI in a separate termainal.

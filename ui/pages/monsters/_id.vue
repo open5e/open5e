@@ -182,7 +182,6 @@ export default {
 
 <style scoped lang="scss">
 .action-block {
-  white-space: pre-wrap;
 
   .inline {
     display: inline;

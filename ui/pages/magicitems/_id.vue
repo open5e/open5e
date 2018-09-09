@@ -41,9 +41,6 @@ export default {
 </script>
 
 <style scoped>
-p {
-  white-space: pre-wrap;
-}
 label {
   font-weight: bold;
 }

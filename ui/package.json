@@ -12,10 +12,10 @@
   },
   "scripts": {
     "dev": "node bin/generate.js & nuxt",
-    "build": "nuxt build",
-    "analyze": "nuxt build -a",
+    "build": "node bin/generate.js & nuxt build",
+    "analyze": "node bin/generate.js & nuxt build -a",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "node bin/generate.js & nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "static-generate": "node bin/generate.js"
