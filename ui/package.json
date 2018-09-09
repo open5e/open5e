@@ -13,6 +13,7 @@
   "scripts": {
     "dev": "node bin/generate.js & nuxt",
     "build": "nuxt build",
+    "analyze": "nuxt build -a",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
@@ -22,7 +23,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "nuxt": "^1.0.0",
-    "vue-markdown": "^2.2.4"
+    "vue-showdown": "^2.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

@@ -1,17 +1,17 @@
 <template>
   <section class="container docs-container">
     <h1>{{section.name}}</h1>
-    <vue-markdown :source="section.desc" :watches="['source']"></vue-markdown>
+    <md-viewer :text="section.desc"></md-viewer>
   </section>
 </template>
 
 <script>
 import axios from 'axios'
-import VueMarkdown from 'vue-markdown'
+import MdViewer from '~/components/MdViewer';
 
 export default {
   components:{
-    VueMarkdown,
+    MdViewer
   },
   mounted () {
     return axios.get(`/json/sections/${this.$route.params.id}.json`) //you will need to enable CORS to make this work

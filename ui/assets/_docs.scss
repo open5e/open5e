@@ -95,4 +95,13 @@ table {
   p, hr, h1, h2, h3, h4, h5, h6 {
     max-width: 40rem;
   }
+  th:first-child { 
+    min-width: 4rem; 
+  }
+}
+
+h2.filter-header {
+  display: flex;
+  justify-content: space-between;
+  max-width: none;
 }

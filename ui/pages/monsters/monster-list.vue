@@ -1,7 +1,9 @@
 <template>
   <section class="container docs-container">
-    <h2>Monster List</h2>     
-    <input type="text" v-model="filter"> 
+    <h2 class="filter-header">
+      Monster List 
+      <filter-input v-on:input="updateFilter" placeholder="Filter monsters..."></filter-input>
+    </h2>     
     <div :class="{'three-column': !filter}">
     <p v-if="!monsterListLength" >No results</p> 
       <ul class="list--items" 
@@ -25,15 +27,16 @@
 <script>
 import axios from 'axios'
 import StatBonus from '~/components/StatBonus.vue'
+import FilterInput from '~/components/FilterInput.vue'
 
 export default {
   components: {
-    StatBonus
+    StatBonus,
+    FilterInput
   },
   mounted () {
     return axios.get(`/json/monster-index.json`) //you will need to enable CORS to make this work
     .then(response => {
-      console.log(response.data);
       this.monsters = response.data
     })
   },
@@ -51,6 +54,9 @@ export default {
         .replace(/\-\-+/g, '-')         // Replace multiple - with single -
         .replace(/^-+/, '')             // Trim - from start of text
         .replace(/-+$/, '');            // Trim - from end of text
+    },
+    updateFilter: function(val) {
+      this.filter = val;
     }
   },  
   computed: {
@@ -63,7 +69,6 @@ export default {
         }
         letters[firstLetter].push(this.filteredMonsters[i]); 
       }
-      console.log(letters);
       return letters
     },
     filteredMonsters: function() { 
@@ -87,5 +92,7 @@ export default {
 .monster-block {
   margin-top: 1rem;
 }
+
+
 </style>
 

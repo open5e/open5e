@@ -23,9 +23,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    /*
-    ** Run ESLint on save
-    */
+    vendor: ['vue-showdown'],
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
@@ -35,6 +33,11 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    }
+  },
+  render: {
+    gzip: { 
+      threshold: 1024,
     }
   }
 }

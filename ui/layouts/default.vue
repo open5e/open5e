@@ -11,6 +11,7 @@
       <ul v-show="sections[0] != 'loading'">
         <nuxt-link tag="li" to="/spells/spells-list">Spells</nuxt-link>
         <nuxt-link tag="li" to="/monsters/monster-list">Monsters</nuxt-link>
+        <nuxt-link tag="li" to="/magicitems/magicitem-list">Magic Items</nuxt-link>
         <nuxt-link tag="li" to="/characters/">Characters</nuxt-link>
         <ul>
           <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Characters" v-bind:key="section.slug">
@@ -109,7 +110,6 @@ export default {
     },
     crumbs () {
       let crumbs = []
-      console.log(this.$route.matched);
       this.$route.matched.forEach((item) => {
         if (breadcrumbs[item.name] || breadcrumbs[item.path]) {
           item.breadcrumb = breadcrumbs[item.name] || breadcrumbs[item.path]

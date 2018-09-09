@@ -1,14 +1,10 @@
 <template>
-    <vue-markdown 
-    :breaks="false" 
-    :source="mdText"
-    :toc="toc">
-    </vue-markdown>
+    <VueShowdown :options="{tables: true}" :markdown="mdText"/>
 </template>
 
 <script>
 import axios from 'axios'
-import VueMarkdown from 'vue-markdown'
+import { VueShowdown } from 'vue-showdown'
 
 export default
 {
@@ -18,19 +14,35 @@ export default
         toc: {
             type: Boolean,
             default: true,
+        },
+        text: {
+            type: String,
+            default: "loading..."
         }
-
     },
     components: {
-        'vue-markdown': VueMarkdown
+        'VueShowdown': VueShowdown
     },
-    data: function()
-    {
-        return ({"mdText": ""});
+    data () {
+        return {
+            sourceText: ""
+        }
+    },
+    computed:{
+        mdText: function () {
+            if (this.sourceText) {
+                return this.sourceText
+            } else {
+                return this.text
+            }
+        },
     },
     mounted()
+    // If you assign both a text and a source, the text will be overwritten once the source loads
     {
-        axios.get(this.src).then(response => {this.mdText = response.data})
+        if (this.src)  {
+            axios.get(this.src).then(response => {this.sourceText = response.data})
+        }
     }
 }
 </script>

@@ -2,11 +2,11 @@
   <section class="container docs-container">
     <div>
       <h1>{{spell.name}}</h1>
-      <p><em>{{spell.level}} {{spell.school}}</em> | ({{spell.dnd_class}})</p>
+      <p><em>{{spell.level}} {{spell.school}}</em> | ({{spell.class}})</p>
       <p><label>Range:</label> {{spell.range}}</p>
       <p><label>Casting Time:</label> {{spell.casting_time}} <span v-if="spell.ritual === 'yes'">{{spell.ritual}} (Ritual)</span></p>
       <p><label>Components: {{spell.components}} <span v-if="spell.material">({{spell.material}})</span></label></p>
-      <p v-html="spell.desc"></p>
+      <md-viewer :text="spell.desc"></md-viewer>
     </div>
   </section>
 </template>
@@ -14,13 +14,15 @@
 <script>
 import axios from 'axios'
 import StatBonus from '~/components/StatBonus.vue'
+import MdViewer from '~/components/MdViewer';
 
 export default {
   components: {
-    StatBonus
+    StatBonus,
+    MdViewer
   },
   mounted () {
-    return axios.get(`http://localhost:8000/spells/${this.$route.params.id}`) //you will need to enable CORS to make this work
+    return axios.get(`/json/spells/${this.$route.params.id}.json`) //you will need to enable CORS to make this work
     .then(response => {
       this.spell = response.data
     })

@@ -98,7 +98,7 @@ const planefile = '../data/planes/5e-SRD-planes.json';
 fileParser(monsterfile, 'monster', 'monsters');
 fileParser(spellfile, 'spell', 'spells');
 fileParser(classfile, 'class', 'classes');
-fileParser(itemfile, 'item', 'items');
+fileParser(itemfile, 'magicitem', 'magicitems');
 fileParser(racefile, 'race', 'races');
 fileParser(planefile, 'plane', 'planes');
 fileParser(sectionfile, 'section', 'sections');
