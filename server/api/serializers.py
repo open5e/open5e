@@ -206,7 +206,8 @@ class AggregateSerializer(HighlighterMixin, HaystackSerializer):
             SectionIndex, 
             ConditionIndex, 
             CharClassIndex, 
-            RaceIndex]
+            RaceIndex,
+            MagicItemIndex,]
         fields = ['name',
             'text',
             'route',
@@ -224,4 +225,7 @@ class AggregateSerializer(HighlighterMixin, HaystackSerializer):
             'constitution',
             'intelligence',
             'wisdom',
-            'charisma',]
+            'charisma',
+            'rarity',
+            'type',
+            'requires_attunement',]

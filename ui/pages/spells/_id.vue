@@ -1,28 +1,28 @@
 <template>
   <section class="container docs-container">
     <div>
-      <h2>{{spell.name}}</h2>
-      <p>A {{spell.level}} {{spell.dnd_class}} spell</p>
+      <h1>{{spell.name}}</h1>
+      <p><em>{{spell.level}} {{spell.school}}</em> | ({{spell.class}})</p>
       <p><label>Range:</label> {{spell.range}}</p>
       <p><label>Casting Time:</label> {{spell.casting_time}} <span v-if="spell.ritual === 'yes'">{{spell.ritual}} (Ritual)</span></p>
-      <p><label>Components: {{spell.components}} ({{spell.material}})</label></p>
-      <p v-html="spell.desc"></p>
+      <p><label>Components: {{spell.components}} <span v-if="spell.material">({{spell.material}})</span></label></p>
+      <md-viewer :text="spell.desc"></md-viewer>
     </div>
-    <nuxt-link tag="button" v-if="spell.id > 1" :to="`/spells/view/${prevSpellId}`">Previous</nuxt-link>
-    <nuxt-link tag="button" :to="`/spells/view/${nextSpellId}`">Next</nuxt-link>
   </section>
 </template>
 
 <script>
 import axios from 'axios'
 import StatBonus from '~/components/StatBonus.vue'
+import MdViewer from '~/components/MdViewer';
 
 export default {
   components: {
-    StatBonus
+    StatBonus,
+    MdViewer
   },
   mounted () {
-    return axios.get(`http://localhost:8000/spells/${this.$route.params.id}`) //you will need to enable CORS to make this work
+    return axios.get(`/json/spells/${this.$route.params.id}.json`) //you will need to enable CORS to make this work
     .then(response => {
       this.spell = response.data
     })
@@ -43,9 +43,9 @@ export default {
 }
 </script>
 
-<style>
-p {
-  width: 60rem;
+<style scoped>
+label {
+  font-weight: bold;
 }
 </style>
 

@@ -84,3 +84,24 @@ table {
     }
   }
 }
+
+.docs-container {
+  hr {
+    margin: 1rem 0;
+    height: 2px;
+    background: linear-gradient(to right, rgba($color-blood,1) 0%,rgba($color-blood,0) 100%); 
+    border: 0;
+  }
+  p, hr, h1, h2, h3, h4, h5, h6 {
+    max-width: 40rem;
+  }
+  th:first-child { 
+    min-width: 4rem; 
+  }
+}
+
+h2.filter-header {
+  display: flex;
+  justify-content: space-between;
+  max-width: none;
+}

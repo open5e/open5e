@@ -98,12 +98,30 @@ class CharClassIndex(indexes.SearchIndex, indexes.Indexable):
 
 class RaceIndex(indexes.SearchIndex, indexes.Indexable):
   text = indexes.CharField(document=True, use_template=True)
-  name = indexes.EdgeNgramField(model_attr='name', )
+  name = indexes.EdgeNgramField(model_attr='name')
   route = indexes.CharField(model_attr='route', indexed=False)
   slug = indexes.CharField(model_attr='slug', indexed=False)
 
   def get_model(self):
     return Race
+
+  def index_queryset(self, using=None):
+    """Used when the entire index for model is updated."""
+    return self.get_model().objects.filter(
+      created_at__lte=datetime.datetime.now()
+    )
+
+class MagicItemIndex(indexes.SearchIndex, indexes.Indexable):
+  text = indexes.CharField(document=True, use_template=True)
+  name = indexes.EdgeNgramField(model_attr='name')
+  route = indexes.CharField(model_attr='route', indexed=False)
+  slug = indexes.CharField(model_attr='slug', indexed=False)
+  type = indexes.CharField(model_attr='type')
+  rarity = indexes.CharField(model_attr='rarity')
+  requires_attunement = indexes.CharField(model_attr='requires_attunement', indexed=False)
+
+  def get_model(self):
+    return MagicItem
 
   def index_queryset(self, using=None):
     """Used when the entire index for model is updated."""
