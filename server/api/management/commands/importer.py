@@ -131,27 +131,41 @@ class Importer:
                 i.spellcasting_ability = o['features']['spellcasting-ability']
             if 'desc' in o['features']:
                 i.desc = o['features']['desc']
-            if 'subtypes' in o:
-                for a in o['subtypes']:
-                    if Archetype.objects.filter(slug=slugify(a['name'])).exists():
-                        j = Archetype.objects.get(slug=slugify(a['name']))
-                        arch_exists = True
-                    else:
-                        j = Archetype(document = self.d)
-                        arch_new = True
-                    if 'name' in a:
-                        j.name = a['name']
-                        j.slug = slugify(a['name'])
-                    if 'desc' in a:
-                        j.desc = a['desc']                        
             if bool(options['testrun']) or (exists and options['append']):
                skipped += 1
             else:
                 i.save()
+                if 'subtypes' in o:
+                    self.ArchetypeImporter(options, o['subtypes'], i)
                 if new: added += 1
                 else: updated += 1
 
         return self.returner('Classes',added,updated,skipped)
+
+    def ArchetypeImporter(self, options, json_object, char_class):
+        skipped,added,updated,tested = (0,0,0,0) #Count for all of the different results.
+
+        for o in json_object:
+            new = False
+            exists = False
+            if Archetype.objects.filter(slug=slugify(o['name'])).exists():
+                i = Archetype.objects.get(slug=slugify(o['name']))
+                exists = True
+            else:
+                i = Archetype(document = self.d, char_class=char_class)
+                if 'name' in o:
+                    i.name = o['name']
+                    i.slug = slugify(o['name'])
+                if 'desc' in o:
+                    i.desc = o['desc']          
+                if bool(options['testrun']) or (exists and options['append']):
+                    skipped += 1
+                else:
+                    i.save()
+                if new: added += 1
+                else: updated += 1
+        return self.returner('Archetypes',added,updated,skipped)
+
 
     def ConditionImporter(self, options, json_object):
         skipped,added,updated = (0,0,0) #Count for all of the different results.
@@ -399,34 +413,50 @@ class Importer:
                 i.vision = o['vision']
             if 'traits' in o:
                 i.traits = o['traits']
-            if 'subtypes' in o:
-                for a in o['subtypes']:
-                    if Subrace.objects.filter(slug=slugify(a['name'])).exists():
-                        j = Archetype.objects.get(slug=slugify(a['name']))
-                        subr_exists = True
-                    else:
-                        j = Subrace(document = self.d,parent_race=i)
-                        subr_new = True
-                    if 'name' in a:
-                        j.name = a['name']
-                        j.slug = slugify(a['name'])
-                    if 'desc' in a:
-                        j.desc = a['desc']
-                    if 'asi-desc' in a:
-                        j.asi_desc = a['asi-desc']
-                    if 'asi' in a:
-                        j.asi = json.dumps(a['asi'])
-                    if 'traits' in a:
-                        j.traits = a['traits']                
+                                
             if bool(options['testrun']) or (exists and options['append']):
                skipped += 1
             else:
                 i.save()
+                if 'subtypes' in o:
+                    self.SubraceImporter(options, o['subtypes'], i)
                 if new: added += 1
                 else: updated += 1
 
         return self.returner('Races',added,updated,skipped)
         
+    def SubraceImporter(self, options, json_object, parent_race):
+        skipped,added,updated,tested = (0,0,0,0) #Count for all of the different results.
+        #if bool(options['flush']): Subrace.objects.all().delete()
+        for o in json_object:
+            new = False
+            exists = False
+            if Subrace.objects.filter(slug=slugify(o['name'])).exists():
+                i = Subrace.objects.get(slug=slugify(o['name']))
+                exists = True
+            else:
+                i = Subrace(document = self.d, parent_race=parent_race)
+                new = True
+                if 'name' in o:
+                    i.name = o['name']
+                    i.slug = slugify(o['name'])
+                if 'desc' in o:
+                    i.desc = o['desc']
+                if 'asi-desc' in o:
+                    i.asi_desc = o['asi-desc']
+                if 'asi' in o:
+                    i.asi = json.dumps(o['asi'])
+                if 'traits' in o:
+                    i.traits = o['traits']    
+                if bool(options['testrun']) or (exists and options['append']):
+                    skipped += 1
+                else:
+                    i.save()
+                if new: added += 1
+                else: updated += 1
+
+        return self.returner('Subraces',added,updated,skipped)
+
     def SectionImporter(self, options, json_object):
         skipped,added,updated = (0,0,0) #Count for all of the different results.
         if bool(options['flush']): Section.objects.all().delete()
