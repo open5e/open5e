@@ -11,17 +11,19 @@
     }
   },
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
+    "dev": "node bin/generate.js & nuxt",
+    "build": "node bin/generate.js & nuxt build",
+    "analyze": "node bin/generate.js & nuxt build -a",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "node bin/generate.js & nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "static-generate": "node bin/generate.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "nuxt": "^1.0.0",
-    "vue-markdown": "^2.2.4"
+    "vue-showdown": "^2.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
@@ -30,8 +32,10 @@
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
+    "mkdirp": "^0.5.1",
     "node-sass": "^4.9.2",
     "sass-loader": "^7.1.0",
+    "slugify": "^1.3.1",
     "vue-style-loader": "^4.1.1"
   }
 }

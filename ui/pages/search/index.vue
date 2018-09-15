@@ -7,11 +7,11 @@
     <div v-show="!loading" class="search-result" v-bind:key="result.slug" v-for="result in orderedResults">
       <nuxt-link tag="a" 
         :params="{id: result.slug}" 
-        :to="`/${result.route}view/${result.slug}`">
+        :to="`/${result.route}${result.slug}`">
       {{result.name}}
       </nuxt-link>
 
-      <span v-if="result.route == 'monsters/'"> 
+      <p class="result-summary" v-if="result.route == 'monsters/'"> 
         <em>CR{{result.challenge_rating}} {{result.hit_points}}hp AC {{result.armor_class}}</em>  |  
         Str <StatBonus :stat="parseInt(result.strength)"></StatBonus>
         Dex <StatBonus :stat="parseInt(result.dexterity)"></StatBonus>
@@ -19,11 +19,15 @@
         Int <StatBonus :stat="parseInt(result.intelligence)"></StatBonus>
         Wis <StatBonus :stat="parseInt(result.wisdom)"></StatBonus>
         Cha <StatBonus :stat="parseInt(result.charisma)"></StatBonus>
-      </span>
+      </p>
 
-      <span v-if="result.route == 'spells/'">
-        {{result.level}} | {{result.dnd_class}}
-      </span>
+      <p class="result-summary" v-if="result.route == 'spells/'">
+        {{result.level}} {{result.school}} spell | {{result.dnd_class}}
+      </p>
+
+      <p class="result-summary" v-if="result.route == 'magicitems/'">
+        {{result.type}}, {{result.rarity}}
+      </p>
       
       <p v-html="result.highlighted"></p>
     </div>
@@ -81,6 +85,7 @@ export default {
       let next = []
       let others = []
       for (var i = 0; i < tmp.length; i++) {
+          console.log(tmp[i]);
           if (tmp[i].name.toUpperCase().indexOf(term) == 0) {
             first.push(tmp[i]);
           }
@@ -107,14 +112,19 @@ export default {
 }
 </script>
 
-<style>
-.highlighted {
-  background-color: lightgoldenrodyellow;
-  font-weight: bold;
-}
+<style lang="scss" scoped>
 
 .search-result {
   margin-bottom: 2rem;
+
+  .result-summary {
+    font-style: italic;
+  }
+
+  /deep/ .highlighted {
+    background-color: lightgoldenrodyellow;
+    font-weight: bold;
+  }
 }
 
 hr {

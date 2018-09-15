@@ -1,7 +1,9 @@
 <template>
   <section class="container">
-    <h2>Spells List</h2>     
-    <input type="text" v-model="filter"> 
+    <h2 class="filter-header">
+      Spell List 
+      <filter-input v-on:input="updateFilter" placeholder="Filter spells..."></filter-input>
+    </h2>     
     <div :class="{'three-column': !filter}">
     <p v-if="!spellListLength" >No results</p> 
       <ul class="list--items" 
@@ -11,9 +13,8 @@
         <h3 v-if="!filter">{{key.toUpperCase()}}</h3>
           <li v-bind:key="spell.name" v-for="spell in letter">
             <nuxt-link tag="a" 
-              :params="{id: spell.slug}" 
-              :to="`/spells/view/${spell.slug}`">
-
+            :params="{id: spell.slug}" 
+            :to="`/spells/${spell.slug}`">
               {{spell.name}}
             </nuxt-link>
           </li>
@@ -24,8 +25,12 @@
 
 <script>
 import axios from 'axios'
+import FilterInput from '~/components/FilterInput.vue'
 
 export default {
+  components: {
+    FilterInput
+  },
   mounted () {
     return axios.get(`http://localhost:8000/spells/?fields=slug,name&limit=1000`) //you will need to enable CORS to make this work
     .then(response => {
@@ -36,6 +41,11 @@ export default {
     return {
       spells: [],
       filter: '', 
+    }
+  },
+  methods: {
+    updateFilter: function(val) {
+      this.filter = val;
     }
   },
   computed: {
@@ -49,7 +59,6 @@ export default {
         }
         letters[firstLetter].push(this.filteredSpells[i]); 
       }
-      console.log(letters);
       return letters
     },
     filteredSpells: function() { 

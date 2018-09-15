@@ -18,15 +18,21 @@ Before launching the site, it is necessary to start up the server and populate a
 
 starting from root `/open5e` directory:
 
-```
-export OPEN_5E_ROOT=`pwd` # at the root level of the cloned project
-export DJANGO_SECRET='@pt#ouh)@!c+2eh(!aj_vtc=s7t$uk-l1!ry3^fcercz%si01@' # this should be a nukable test key that you're manually replacing at startup time for production
-
+``` python
 cd server
+export OPEN_5E_ROOT=`pwd` #set the /server folder as the root of the Python project
+export DJANGO_SECRET='@pt#ouh)@!c+2eh(!aj_vtc=s7t$uk-l1!ry3^fcercz%si01@' # this should be a nukable test key that you're manually replacing at startup time for production
 pipenv install
 pipenv run python manage.py migrate
-pipenv run python manage.py shell < scripts/load_srd_content.py
-pipenv run python manage.py runserver
+pipenv run python manage.py shell
+
+# In IDLE shell
+exec(open('scripts/load_srd_content.py').read())
+quit()
+
+# Back in /server
+pipenv run python manage.py rebuild_index # Build the index for search results
+pipenv run python manage.py runserver # Run the damn server! Hooray!
 ```
 
 You will want to leave the server terminal running while you launch the UI in a separate termainal.

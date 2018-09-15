@@ -33,3 +33,6 @@ build/
 venv/*
 .vscode/settings.json
 .gitignore
+
+# static files
+ui/static/json/

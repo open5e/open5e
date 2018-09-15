@@ -1,7 +1,9 @@
 <template>
   <section class="container docs-container">
-    <h2>Monster List</h2>     
-    <input type="text" v-model="filter"> 
+    <h2 class="filter-header">
+      Monster List 
+      <filter-input v-on:input="updateFilter" placeholder="Filter monsters..."></filter-input>
+    </h2>     
     <div :class="{'three-column': !filter}">
     <p v-if="!monsterListLength" >No results</p> 
       <ul class="list--items" 
@@ -12,7 +14,7 @@
           <li v-bind:key="monster.name" v-for="monster in letter">
             <nuxt-link tag="a" 
               :params="{id: monster.slug}" 
-              :to="`/monsters/view/${monster.slug}`">
+              :to="`/monsters/${monster.slug}`">
 
               {{monster.name}}
             </nuxt-link>
@@ -25,15 +27,17 @@
 <script>
 import axios from 'axios'
 import StatBonus from '~/components/StatBonus.vue'
+import FilterInput from '~/components/FilterInput.vue'
 
 export default {
   components: {
-    StatBonus
+    StatBonus,
+    FilterInput
   },
   mounted () {
-    return axios.get(`http://localhost:8000/monsters/?fields=slug,name&limit=1000`) //you will need to enable CORS to make this work
+    return axios.get(`/json/monster-index.json`) //you will need to enable CORS to make this work
     .then(response => {
-      this.monsters = response.data.results
+      this.monsters = response.data
     })
   },
   data () {
@@ -42,8 +46,20 @@ export default {
       filter: '',
     }
   },
+  methods: {
+    slugify: function(text) {
+        return text.toString().toLowerCase()
+        .replace(/\s+/g, '-')           // Replace spaces with -
+        .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
+        .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+        .replace(/^-+/, '')             // Trim - from start of text
+        .replace(/-+$/, '');            // Trim - from end of text
+    },
+    updateFilter: function(val) {
+      this.filter = val;
+    }
+  },  
   computed: {
-    // a computed getter
     monstersByLetter: function () {
       let letters = {};
       for (let i = 0; i < this.filteredMonsters.length; i++){ 
@@ -53,7 +69,6 @@ export default {
         }
         letters[firstLetter].push(this.filteredMonsters[i]); 
       }
-      console.log(letters);
       return letters
     },
     filteredMonsters: function() { 
@@ -73,9 +88,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .monster-block {
   margin-top: 1rem;
 }
+
+
 </style>
 

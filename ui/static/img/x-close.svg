@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>x-close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="x-close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#000000" transform="translate(12.000000, 12.000000) rotate(-315.000000) translate(-12.000000, -12.000000) " x="0" y="10" width="24" height="4" rx="2"></rect>
+        <rect id="Rectangle-Copy" fill="#000000" transform="translate(12.000000, 12.000000) scale(-1, 1) rotate(-315.000000) translate(-12.000000, -12.000000) " x="0" y="10" width="24" height="4" rx="2"></rect>
+    </g>
+</svg>
