@@ -51,16 +51,19 @@ class MonsterSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedMod
             'armor_class',
             'hit_points',
             'hit_dice',
-            'speed_json',
+            'speed',
             'strength',
             'dexterity',
             'constitution',
             'intelligence',
             'wisdom',
             'charisma',
+            'strength_save',
+            'dexterity_save',
             'constitution_save',
             'intelligence_save',
             'wisdom_save',
+            'charisma_save',
             'perception',
             'damage_vulnerabilities',
             'damage_resistances',
@@ -139,7 +142,12 @@ class ConditionSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedM
 class SubraceSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Subrace
-        fields = ('name','slug','desc','asi','asi_json','asi_desc','document_slug')
+        fields = ('name',
+        'slug',
+        'desc',
+        'asi',
+        'asi_desc',
+        'document_slug')
 
 class RaceSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelSerializer):
     subraces = SubraceSerializer(many=True,read_only=True)
@@ -152,12 +160,10 @@ class RaceSerializer(DynamicFieldsModelSerializer, serializers.HyperlinkedModelS
             'document_slug',
             'asi_desc',
             'asi',
-            'asi_json',
             'age',
             'alignment',
             'size',
             'speed',
-            'speed_json',
             'speed_desc',
             'languages',
             'vision',

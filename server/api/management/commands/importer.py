@@ -166,7 +166,6 @@ class Importer:
                 else: updated += 1
         return self.returner('Archetypes',added,updated,skipped)
 
-
     def ConditionImporter(self, options, json_object):
         skipped,added,updated = (0,0,0) #Count for all of the different results.
         if bool(options['flush']): Condition.objects.all().delete()
@@ -287,7 +286,7 @@ class Importer:
             if 'hit_dice' in o:
                 i.hit_dice = o['hit_dice']
             if 'speed' in o:
-                i.speed = json.dumps(o['speed_json'])
+                i.speed_json = json.dumps(o['speed_json'])
             if 'strength' in o:
                 i.strength = o['strength']
             if 'dexterity' in o:
@@ -300,12 +299,18 @@ class Importer:
                 i.wisdom = o['wisdom']
             if 'charisma' in o:
                 i.charisma = o['charisma']
+            if 'strength_save' in o:
+                i.strength_save = o['strength_save']
+            if 'dexterity_save' in o:
+                i.dexterity_save = o['dexterity_save']
             if 'constitution_save' in o:
                 i.constitution_save = o['constitution_save']
             if 'intelligence_save' in o:
                 i.intelligence_save = o['intelligence_save']
             if 'wisdom_save' in o:
                 i.wisdom_save = o['wisdom_save']
+            if 'charisma_save' in o:
+                i.charisma_save = o['charisma_save']
             if 'perception' in o:
                 i.perception = o['perception']
             if 'damage_vulnerabilities' in o:
@@ -323,18 +328,34 @@ class Importer:
             if 'challenge_rating' in o:
                 i.challenge_rating = o['challenge_rating']
             if 'actions' in o:
+                for idx, z in enumerate(o['actions']):
+                    if z['attack_bonus'] == 0 and 'damage_dice' not in z:
+                        del z['attack_bonus']
+                    o['actions'][idx] = z
                 i.actions_json = json.dumps(o['actions'])
             else:
                 i.actions_json = json.dumps("")
             if 'special_abilities' in o:
+                for idx, z in enumerate(o['special_abilities']):
+                    if z['attack_bonus'] == 0 and 'damage_dice' not in z:
+                        del z['attack_bonus']
+                    o['special_abilities'][idx] = z
                 i.special_abilities_json = json.dumps(o['special_abilities'])
             else:
                 i.special_abilities_json = json.dumps("")
             if 'reactions' in o:
+                for idx, z in enumerate(o['reactions']):
+                    if z['attack_bonus'] == 0 and 'damage_dice' not in z:
+                        del z['attack_bonus']
+                    o['reactions'][idx] = z
                 i.reactions_json = json.dumps(o['reactions'])
             else:
                 i.reactions_json = json.dumps("")
             if 'legendary_actions' in o:
+                for idx, z in enumerate(o['legendary_actions']):
+                    if z['attack_bonus'] == 0 and 'damage_dice' not in z:
+                        del z['attack_bonus']
+                    o['legendary_actions'][idx] = z
                 i.legendary_actions_json = json.dumps(o['legendary_actions'])
             else:
                 i.legendary_actions_json = json.dumps("")
@@ -396,7 +417,7 @@ class Importer:
             if 'asi-desc' in o:
                 i.asi_desc = o['asi-desc']
             if 'asi' in o:
-                i.asi = json.dumps(o['asi']) # convert the asi json object into a string for storage.
+                i.asi_json = json.dumps(o['asi']) # convert the asi json object into a string for storage.
             if 'age' in o:
                 i.age = o['age']
             if 'alignment' in o:
@@ -404,7 +425,7 @@ class Importer:
             if 'size' in o:
                 i.size = o['size']
             if 'speed'in o:
-                i.speed = json.dumps(o['speed']) # conver the speed object into a string for db storage.
+                i.speed_json = json.dumps(o['speed']) # conver the speed object into a string for db storage.
             if 'speed-desc' in o:
                 i.speed_desc = o['speed-desc']
             if 'languages' in o:
@@ -445,7 +466,7 @@ class Importer:
                 if 'asi-desc' in o:
                     i.asi_desc = o['asi-desc']
                 if 'asi' in o:
-                    i.asi = json.dumps(o['asi'])
+                    i.asi_json = json.dumps(o['asi'])
                 if 'traits' in o:
                     i.traits = o['traits']    
                 if bool(options['testrun']) or (exists and options['append']):

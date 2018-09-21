@@ -33,16 +33,19 @@ class Monster(GameContent):
     armor_class = models.IntegerField(default=12)
     hit_points = models.IntegerField(null=True)
     hit_dice = models.TextField()
-    speed = models.TextField()
+    speed_json = models.TextField()
     strength = models.IntegerField(null=True)
     dexterity = models.IntegerField(null=True)
     constitution = models.IntegerField(null=True)
     intelligence = models.IntegerField(null=True)
     wisdom = models.IntegerField(null=True)
     charisma = models.IntegerField(null=True)
+    strength_save = models.IntegerField(null=True)
+    dexterity_save = models.IntegerField(null=True)
     constitution_save = models.IntegerField(null=True)
     intelligence_save = models.IntegerField(null=True)
     wisdom_save = models.IntegerField(null=True)
+    charisma_save = models.IntegerField(null=True)
     perception = models.IntegerField(null=True)
     damage_vulnerabilities = models.TextField()
     damage_resistances = models.TextField()
@@ -51,8 +54,8 @@ class Monster(GameContent):
     senses = models.TextField()
     languages = models.TextField()
     challenge_rating = models.TextField()
-    def speed_json(self):
-        return json.loads(self.speed)
+    def speed(self):
+        return json.loads(self.speed_json)
     actions_json = models.TextField() #a list of actions in json text.
     def actions(self):
         return json.loads(self.actions_json)
@@ -105,15 +108,15 @@ class Archetype(GameContent):
 
 class Race(GameContent):
     asi_desc = models.TextField()
-    asi = models.TextField()
-    def asi_json(self):
-        return json.loads(self.asi)
+    asi_json = models.TextField()
+    def asi(self):
+        return json.loads(self.asi_json)
     age = models.TextField()
     alignment = models.TextField()
     size = models.TextField()
-    speed = models.TextField()
-    def speed_json(self):
-        return json.loads(self.speed)
+    speed_json = models.TextField()
+    def speed(self):
+        return json.loads(self.speed_json)
     speed_desc = models.TextField()
     languages = models.TextField()
     vision = models.TextField()
@@ -122,12 +125,12 @@ class Race(GameContent):
 
 class Subrace(GameContent):
     asi_desc = models.TextField()
-    asi = models.TextField()
+    asi_json = models.TextField()
+    def asi(self):
+        return json.loads(self.asi_json)
     traits = models.TextField()
     parent_race = models.ForeignKey(Race, related_name='subraces', on_delete=models.CASCADE, null=True)
     route = models.TextField(default="subraces/")
-    def asi_json(self):
-        return json.loads(self.asi)
 
 class Plane(GameContent):
     pass
