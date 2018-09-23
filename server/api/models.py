@@ -2,7 +2,6 @@ import uuid
 from django.db import models
 import json
 
-# Create your models here.
 class Document(models.Model):
     slug = models.SlugField(unique=True, default=uuid.uuid1)
     title = models.TextField() # System Reference Document
