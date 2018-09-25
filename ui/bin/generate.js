@@ -86,13 +86,13 @@ function indexWithParentJson (files, listName) {
   })
 }
 
-const monsterfile = '../data/monsters/5e-SRD-Monsters.json';
-const spellfile = '../data/spells/5e-SRD-Spells.json';
-const classfile = '../data/classes/5e-SRD-Classes.json';
-const itemfile = '../data/items/magicitems.json';
-const sectionfile = '../data/sections/5e-SRD-Sections.json';
-const racefile = '../data/races/5e-SRD-Races.json';
-const planefile = '../data/planes/5e-SRD-planes.json';
+const monsterfile = '../data/WOTC_5e_SRD_v5.1/monsters.json';
+const spellfile = '../data/WOTC_5e_SRD_v5.1/spells.json';
+const classfile = '../data/WOTC_5e_SRD_v5.1/classes.json';
+const itemfile = '../data/WOTC_5e_SRD_v5.1/magicitems.json';
+const sectionfile = '../data/WOTC_5e_SRD_v5.1/sections.json';
+const racefile = '../data/WOTC_5e_SRD_v5.1/races.json';
+const planefile = '../data/WOTC_5e_SRD_v5.1/planes.json';
 
 // make static files from database-populating json
 fileParser(monsterfile, 'monster', 'monsters');
