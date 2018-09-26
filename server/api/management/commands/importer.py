@@ -277,10 +277,14 @@ class Importer:
                 i.type = o['type']
             if 'subtype' in o:
                 i.subtype = o['subtype']
+            if 'group' in o:
+                i.group = o['group']
             if 'alignment' in o:
                 i.alignment = o['alignment']
             if 'armor_class' in o:
                 i.armor_class = o['armor_class']
+            if 'armor_desc' in o:
+                i.armor_desc = o['armor_desc']
             if 'hit_points' in o:
                 i.hit_points = o['hit_points']
             if 'hit_dice' in o:
