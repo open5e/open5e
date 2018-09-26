@@ -1,12 +1,13 @@
 import json, os, sys
-import pypandoc
+#import pypandoc
 import re
+from django.template.defaultfilters import slugify
 
-data_directory = ''
+data_directory = '../data/WOTC_5e_SRD_v5.1/'
 
 json_file={
     'spells':data_directory + 'spells/5e-SRD-Spells.json',
-    'monsters' : data_directory + 'monsters/5e-SRD-Monsters.json',
+    'monsters' : data_directory + 'monsters.json',
     'backgrounds' : data_directory + 'backgrounds/5e-SRD-Backgrounds.json',
     'classes' : data_directory + 'classes/5e-SRD-Classes.json',
     'conditions' : data_directory + 'conditions/5e-SRD-Conditions.json',
@@ -15,7 +16,8 @@ json_file={
     'races' : data_directory + 'races/5e-SRD-Races.json',
     'sections' : data_directory + 'sections/5e-SRD-Sections.json',
     'items_md' : data_directory + 'items/magicItems.md',
-    'items_json' : data_directory + 'items/magicItems.json'
+    'items_json' : data_directory + 'items/magicItems.json',
+    'monsters_markdown' : data_directory + '../data/monsters.md'
 }
 
 def parseMagicItems():
@@ -23,7 +25,7 @@ def parseMagicItems():
     h3re = re.compile('^#{3}([^#].*)$')
     h4re = re.compile('^#{4}([^#].*)$')
     items = []
-    with open(json_file['items_md']) as content_file:
+    with open(json_file['monsters_markdown']) as content_file:
         magicItemsDoc = content_file.read()
         test = re.split(h4re,magicItemsDoc)
         magicItems = magicItemsDoc.split('#### ')
@@ -107,7 +109,6 @@ def GetMonsterSpeed2Json():
             with open(json_file['monsters'], 'w') as outfile:
                 json.dump(monsters, outfile)
 
-
 def ChangeSpellDesc2MD():
     with open(json_file['spells']) as json_data:
         spells = json.load(json_data)
@@ -123,6 +124,81 @@ def ChangeSpellDesc2MD():
         with open(json_file['spells'], 'w') as outfile:
             json.dump(spells, outfile)
 
+def GetMonstersDetails():
+    #h2re = re.compile('^#{2}([^#].*)$')
+    #h3re = re.compile('^#{3}([^#].*)$')
+    #h4re = re.compile('^#{4}([^#].*)$')
+    monsters = []
+    with open(json_file['monsters_markdown']) as content_file:
+        monstersDoc = content_file.read()
+        #test = re.split(h4re,monstersDoc)
+        monstersByLetter = monstersDoc.split('### Monsters')
+        #remove the first line because it's always the title
+        for idx, letter in enumerate(monstersByLetter):
+            h4s = letter.split('####')
+            h4s = h4s[1:] #skip the first item as it's always a letter.
+            #print(len(h4s))
+            for h4 in h4s:
+                h4name = h4.splitlines()[0]
+                if len(h4.split('# ')) > 1:
+                    hasgroup = "True"
+                    h5s = h4.split('# ')
+                    h5s = h5s[1:] #skip the first item as it's always the group name.
+                    for h5 in h5s:
+                        monsters.append((h5,hasgroup))
+                else:
+                    monsters.append((h4,'False'))
+                prevh4 = h4name
+
+        group = ""
+        monster_output_list = []
+        for m in monsters:
+            monster = {}
+            if m[1] is not 'False': monster["hasgroup"] = m[1]
+            mlines = m[0].splitlines()
+            if len(mlines) == 2: group = mlines[0]
+            for idx, line in enumerate(mlines):
+                if "hasgroup" in monster: monster["group"] = group.strip()
+                if idx==0:
+                    monster["slug"] = str(slugify(line))
+                    mlines.remove(line)
+                if line.startswith("**Hit Points**"):
+                    monster["hit-dice"] = line.split("(")[1].split(")")[0]
+                if line.startswith("**Armor Class**"):
+                    try:
+                        monster["armor-desc"] = line.split("(")[1].split(")")[0]
+                    except:
+                        pass
+            print (monster)
+            if "hit-dice" in monster:
+                monster_output_list.append(monster)
+        #print(monster_output_list)
+        with open("monster_output.json", 'w') as outfile:
+                json.dump(monster_output_list, outfile)
+
+def UpdateMonsterFile():
+    with open(json_file['monsters']) as json_data:
+        monsters = json.load(json_data)
+
+        with open ('monster_output.json') as js_data:
+            monster_updates = json.load(js_data)
+
+        updated_monsters = []
+        for monster in monsters:
+            for mupdate in monster_updates:
+                if mupdate['slug'] == slugify(monster['name']):
+                    if 'group' in mupdate: monster['group'] = mupdate['group']
+                    monster['hit_dice'] = mupdate['hit-dice']
+                    if 'armor-desc' in mupdate: monster['armor_desc'] = mupdate['armor-desc']
+            updated_monsters.append(monster)
+    
+    with open('monster_output_updated.json', 'w') as outfile:
+                json.dump(updated_monsters, outfile)
+    
+
+
 #GetMonsterSpeed2Json()
 #ChangeSpellDesc2MD()
-parseMagicItems()
+#parseMagicItems()
+#GetMonstersDetails()
+UpdateMonsterFile()
