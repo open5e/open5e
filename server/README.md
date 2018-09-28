@@ -1,38 +1,53 @@
-# Django API
+# Open5E API
+The Open5e API is a project meant to share our organized and sorted data from the Dungeons and Dragon System Reference Document, a document used to create a framework for roleplaying Dungeons and Dragons.
 
-## Tools
+## Getting Started
 
-The Django API uses Django REST Framework for its browsability and ease of use when developing CRUD endpoints.
+### Prerequisites
+You need to have working installations of Python 3.4+ and pipenv to get working on this.
 
-### pipenv
+### Installation
+__ALL COMMANDS ASSUME YOU ARE IN THE open5e/server DIRECTORY, NOT THE ROOT OF THE REPOSITORY.__
 
-Python tooling is controlled by `pipenv`, which is a wrapper around virtualenv. It confers a lot of the functionality found in more modern package control schemes such as npm and yarn for javascript.
+Export two environment variables used by the rest of the system.
 
-To run a single command, use `pipenv run`. To install a python module, use `pipenv install my_package`. To "activate" the python environment for the project indefinitely, use `pipenv shell`, which is equivalent to `workon <env>` (virtualenvwrapper) or `source /bin/activate` (virtualenv).
+> export OPEN_5E_ROOT=`pwd` # Used for the import process
 
-## Quickstart
+> export DJANGO_SECRET='YOUR_UNIQUE_SECRET_HERE' # Unique key for DB hashing
 
-``` python
-cd server
-export OPEN_5E_ROOT=`pwd` #set the /server folder as the root of the Python project
-export DJANGO_SECRET='@pt#ouh)@!c+2eh(!aj_vtc=s7t$uk-l1!ry3^fcercz%si01@' # this should be a nukable test key that you're manually replacing at startup time for production
-pipenv install
-pipenv run python manage.py migrate
-pipenv run python manage.py shell
+Then, dependencies from our Pipfile.
+> pipenv install
 
-# In IDLE shell
-exec(open('scripts/load_srd_content.py').read())
-quit()
+Create the empty database.
+> pipenv run python manage.py migrate
 
-# Back in /server
-pipenv run python manage.py runserver
-```
+Load the database with the 5e SRD data from the data folder.
+> pipenv run python manage.py populatedb ../data/WOTC_5e_SRD_v5.1/
 
-## To Do
- - [ ] Make md documentation better
- - [ ] Add source information for each spell and monster
- - [ ] Improve admin interface
- - [ ] Make moderator interface
- - [ ] Include more docs directly in API using docstrings
- - [ ] Add attacks, abilities, etc to monsters
- 
+Run the webserver.
+> pipenv run python manage.py runserver
+
+The server should then be up and running on http://localhost:8000.
+
+## Built with
+
+* [Python](https://www.python.org/) 3.7 - Should work fine in anything above 3.4
+* [Django](https://www.djangoproject.com/) 2.0 - The web framework for perfectionists with deadlines.
+* [django-rest](https://www.django-rest-framework.org/) - Very helpful API framework, makes the whole thing WAY smoother.
+
+## Contributing
+When contributing to this repository, please follow these steps:
+ * Discuss the change you wish to make in either of:
+    * The github issue (if there is one open for it)
+    * The open5e discord server (https://discord.gg/bSsNgyv) in the #dev-corner channel. 
+* With general approval, make a pull request and assign two reviewers. 
+* The reviewers will merge. 
+
+## Major Contributors
+
+* **Cameron Blandford** [https://github.com/cameronblandford] - Initial work.
+* **August Johnson** [https://github.com/augustjohnson] - Significant additions, I'm particlarly proud of the manage.py populatedb
+* **Ean Moody** [https://github.com/eepMoody] - Maintainer of the open5e project.
+
+## License
+This subproject inherits the modified MIT license.  See [../LICENSE.md] for details.
