@@ -39,3 +39,7 @@ ui/static/json/
 
 # .env file
 .env
+
+# Certificates
+.certs
+
