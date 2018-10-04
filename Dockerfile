@@ -1,7 +1,7 @@
 FROM python:3.7
 
-# Will change this later, just using this for testing right now
-ENV DJANGO_SECRET=qwe123qwe123
+ARG DJANGO_SECRET
+ENV DJANGO_SECRET ${DJANGO_SECRET}
 ENV OPEN5E_DEBUG=0
 
 COPY ./server /server
