@@ -36,3 +36,6 @@ venv/*
 
 # static files
 ui/static/json/
+
+# .env file
+.env
