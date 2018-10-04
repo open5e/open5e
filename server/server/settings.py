@@ -25,7 +25,7 @@ SECRET_KEY = os.environ['DJANGO_SECRET']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ['OPEN5E_DEBUG']
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["open5e-api"]
 
 
 # Application definition
