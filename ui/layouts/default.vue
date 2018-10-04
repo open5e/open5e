@@ -39,7 +39,7 @@
           <nuxt-link tag="li" to="/combat/damage-and-healing">Damage &amp; Healing</nuxt-link>
           <nuxt-link tag="li" to="/combat/mounted-combat">Mounted combat</nuxt-link>
           <nuxt-link tag="li" to="/combat/movement-in-combat">Movement in Combat</nuxt-link>
-          <nuxt-link tag="li" to="/combat/underwater-combat">Underwater COmbat</nuxt-link>
+          <nuxt-link tag="li" to="/combat/underwater-combat">Underwater Combat</nuxt-link>
         </ul>
         <nuxt-link tag="li" to="/gameplay-mechanics/">Gameplay Mechanics</nuxt-link>
         <ul>
