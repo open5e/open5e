@@ -12,9 +12,7 @@ You need to have working installations of Python 3.4+ and pipenv to get working 
 
 **ALL COMMANDS ASSUME YOU ARE IN THE open5e/server DIRECTORY, NOT THE ROOT OF THE REPOSITORY.**
 
-Export two environment variables used by the rest of the system.
-
-> export OPEN_5E_ROOT=`pwd` # Used for the import process
+Export the following environment variable used by the rest of the system.
 
 > export DJANGO_SECRET='YOUR_UNIQUE_SECRET_HERE' # Unique key for DB hashing
 
