@@ -12,4 +12,8 @@ Issues are being regularly updated, and Trello is also being used for non-github
 
 # Legacy Sphinx Project status
 
+DEPRECATED
+
+At this point Sphinx will no longer build on our host (Netlify) due to a built-in bit of the script conflicting with their rules for what virtual machines can do, so we cannot update it. Any future pull requests against the main branch will be merged but won't reflect on the actual site.
+
 [![Build Status](https://travis-ci.org/eepMoody/open5e.svg?branch=master)](https://travis-ci.org/eepMoody/open5e)
