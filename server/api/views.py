@@ -1,5 +1,5 @@
 from django.contrib.auth.models import User, Group
-from rest_framework import viewsets
+from rest_framework import viewsets, generics
 from api.models import *
 from api.serializers import *
 from drf_haystack.serializers import HaystackSerializer
@@ -56,6 +56,7 @@ class SpellViewSet(viewsets.ModelViewSet):
         'casting_time',
         'dnd_class',
     )
+    search_fields = ['dnd_class', 'archetype']
 
 class MonsterViewSet(viewsets.ModelViewSet):
     """
