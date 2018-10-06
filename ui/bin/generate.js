@@ -89,7 +89,7 @@ function indexWithParentJson (files, listName) {
 const monsterfile = '../data/WOTC_5e_SRD_v5.1/monsters.json';
 const spellfile = '../data/WOTC_5e_SRD_v5.1/spells.json';
 const classfile = '../data/WOTC_5e_SRD_v5.1/classes.json';
-const itemfile = '../data/WOTC_5e_SRD_v5.1/magicitems.json';
+const itemfile = '../data/WOTC_5e_SRD_v5.1/magicItems.json';
 const sectionfile = '../data/WOTC_5e_SRD_v5.1/sections.json';
 const racefile = '../data/WOTC_5e_SRD_v5.1/races.json';
 const planefile = '../data/WOTC_5e_SRD_v5.1/planes.json';
