@@ -1,7 +1,30 @@
 <template>
   <section class="container">
+    <h2>Spell Lists</h2>
+      <div class="two-column">
+        <h3>By class</h3>
+        <ul class="list--items">
+          <li v-bind:key="dnd_class" v-for="dnd_class in classes">
+            <nuxt-link tag="a" 
+            :params="{class: dnd_class}" 
+            :to="`/spells/spells-by-class/${dnd_class}`">
+              {{dnd_class}}
+            </nuxt-link>
+          </li>
+        </ul>
+        <h3>By school</h3>
+        <ul class="list--items">
+          <li v-bind:key="school" v-for="school in schools">
+            <nuxt-link tag="a" 
+            :params="{class: school}" 
+            :to="`/spells/spells-by-school/${school}`">
+              {{school}}
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
     <h2 class="filter-header">
-      Spell List 
+      All spells
       <filter-input v-on:input="updateFilter" placeholder="Filter spells..."></filter-input>
     </h2>     
     <div :class="{'three-column': !filter}">
@@ -41,7 +64,9 @@ export default {
     return {
       spells: [],
       filter: '', 
-    }
+      classes: ['Bard','Cleric','Druid','Paladin','Ranger','Sorcerer','Warlock','Wizard',],
+      schools: ['Abjuration','Conjuration','Divination','Enchantment','Evocation','Illusion','Necromancy','Transmutation',],
+      }
   },
   methods: {
     updateFilter: function(val) {

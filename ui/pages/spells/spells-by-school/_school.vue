@@ -4,7 +4,7 @@
       {{this.$route.params.school}} Spell List 
       <filter-input v-on:input="updateFilter" placeholder="Filter spells..."></filter-input>
     </h2>     
-    <div :class="{'three-column': !filter}">
+    <div>
     <p v-if="!spellListLength" >No results</p> 
       <ul class="list--items" 
         v-bind:key="level[0].level_int" 
@@ -32,7 +32,7 @@ export default {
     FilterInput
   },
   mounted () {
-    return axios.get(`http://localhost:8000/spells/?fields=slug,name,level&limit=1000&ordering=level,name&school=${this.$route.params.school}`) //you will need to enable CORS to make this work
+    return axios.get(`http://localhost:8000/spells/?fields=slug,name,level&limit=1000&ordering=level_int,name&school=${this.$route.params.school}`) //you will need to enable CORS to make this work
     .then(response => {
       console.log(response.data.results);
       this.spells = response.data.results

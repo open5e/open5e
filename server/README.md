@@ -22,7 +22,9 @@ Create the empty database.
 > pipenv run python manage.py migrate
 
 Load the database with the 5e SRD data from the data folder.
-> pipenv run python manage.py populatedb ../data/WOTC_5e_SRD_v5.1/
+> pipenv run python manage.py populatedb ../data/WOTC_5e_SRD_v5.1/ --flush
+
+(flush is needed only on intiial load, `--append` may be used if adding new data)
 
 Run the webserver.
 > pipenv run python manage.py runserver

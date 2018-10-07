@@ -1,10 +1,10 @@
 <template>
   <section class="container">
     <h2 class="filter-header">
-      Spell List 
+      {{this.$route.params.class}} Spell List 
       <filter-input v-on:input="updateFilter" placeholder="Filter spells..."></filter-input>
     </h2>     
-    <div :class="{'three-column': !filter}">
+    <div>
     <p v-if="!spellListLength" >No results</p> 
       <ul class="list--items" 
         v-bind:key="letter[0].name.charAt(0)" 

@@ -53,9 +53,20 @@ h5 {
   }
 }
 
-.three-column {
-  columns: 3;
+.two-column, .three-column {
+  margin-top: 1rem;
   ul {
     break-inside: avoid-column;
   }
+  :first-child {
+    margin-top: 0;
+  }
+}
+
+.two-column {
+  columns: 2;
+}
+
+.three-column {
+  columns: 3;
 }

@@ -49,6 +49,7 @@ class SpellViewSet(viewsets.ModelViewSet):
     serializer_class = SpellSerializer
     filter_fields = (
         'level',
+        'level_int',
         'school',
         'duration',
         'components',
@@ -57,6 +58,7 @@ class SpellViewSet(viewsets.ModelViewSet):
         'dnd_class',
     )
     search_fields = ['dnd_class', 'archetype']
+    ordering_fields = ('level_int', 'level', 'name')
 
 class MonsterViewSet(viewsets.ModelViewSet):
     """

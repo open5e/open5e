@@ -82,6 +82,7 @@ class Spell(GameContent):
     concentration = models.TextField()
     casting_time = models.TextField()
     level = models.TextField()
+    level_int = models.IntegerField()
     school = models.TextField()
     dnd_class = models.TextField()
     archetype = models.TextField()

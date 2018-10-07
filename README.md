@@ -12,44 +12,40 @@ Open5e is a community project driven by a small number of volunteers in their sp
 
 The Django API uses Django REST Framework for its browsability and ease of use when developing CRUD endpoints.
 
-## Server Quickstart
-
 Before launching the site, it is necessary to start up the server and populate a local SQLite database.
 
 starting from root `/open5e` directory:
 
-``` python
-cd server
-export OPEN_5E_ROOT=`pwd` #set the /server folder as the root of the Python project
-export DJANGO_SECRET='@pt#ouh)@!c+2eh(!aj_vtc=s7t$uk-l1!ry3^fcercz%si01@' # this should be a nukable test key that you're manually replacing at startup time for production
-pipenv install
-pipenv run python manage.py migrate
-pipenv run python manage.py shell
+> cd server
 
-# In IDLE shell
-exec(open('scripts/load_srd_content.py').read())
-quit()
+__ALL COMMANDS ASSUME YOU ARE IN THE open5e/server DIRECTORY, NOT THE ROOT OF THE REPOSITORY.__
 
-# Back in /server
-pipenv run python manage.py rebuild_index # Build the index for search results
-pipenv run python manage.py runserver # Run the damn server! Hooray!
-```
+Export two environment variables used by the rest of the system.
 
-You will want to leave the server terminal running while you launch the UI in a separate termainal.
+> export OPEN_5E_ROOT=`pwd` # Used for the import process
 
-### About pipenv
+> export DJANGO_SECRET='YOUR_UNIQUE_SECRET_HERE' # Unique key for DB hashing
 
-Python tooling is controlled by `pipenv`, which is a wrapper around virtualenv. It confers a lot of the functionality found in more modern package control schemes such as npm and yarn for javascript.
+Then, dependencies from our Pipfile.
+> pipenv install
 
-To run a single command, use `pipenv run`. To install a python module, use `pipenv install my_package`. To "activate" the python environment for the project indefinitely, use `pipenv shell`, which is equivalent to `workon <env>` (virtualenvwrapper) or `source /bin/activate` (virtualenv).
+Create the empty database.
+> pipenv run python manage.py migrate
+
+Load the database with the 5e SRD data from the data folder.
+> pipenv run python manage.py populatedb ../data/WOTC_5e_SRD_v5.1/ --flush
+
+(flush is needed only on intiial load, `--append` may be used if adding new data)
+
+Run the webserver.
+> pipenv run python manage.py runserver
+
+The server should then be up and running on http://localhost:8000.
 
 
 # Building the UI layer
 
 Open5e uses the Nuxt framework for Vue.js, which takes care of a lot of the architectural work for the frontend layer while allowing a large amount of flexibility.
-
-## Build Setup
-
 From /open5e
 
 ``` bash

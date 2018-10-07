@@ -547,6 +547,8 @@ class Importer:
                 i.casting_time = o['casting_time']
             if 'level' in o:
                 i.level = o['level']
+            if 'level_int' in o:
+                i.level_int = o['level_int']
             if 'school' in o:
                 i.school = o['school']
             if 'class' in o:
