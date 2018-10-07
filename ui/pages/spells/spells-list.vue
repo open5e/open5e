@@ -1,6 +1,14 @@
 <template>
   <section class="container">
     <h2>Spell Lists</h2>
+      <div class="aside aside-info">
+        <p class="aside-title">A spell by any other name...</p>
+        <p>Certain spells created by well-known wizards have more generic names in the 
+          5e SRD. </p>
+        <p>Others were not included at all (so we can't list them here).
+          If you can't find what you're looking for, try removing the
+          inventor's name.</p>
+      </div>
       <div class="two-column">
         <h3>By class</h3>
         <ul class="list--items">

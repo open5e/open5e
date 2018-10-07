@@ -1,0 +1,23 @@
+@import 'variables';
+
+.aside {
+  float: right;
+  width: 40%;
+  display: block;
+  margin: 1rem 0 1rem 1rem;
+  background: $color-fog;
+  border: solid 1px #2980B9;
+  padding: 1rem;
+
+  &.aside-info {
+    border: 1px dashed #555;
+  }
+
+  .aside-title {
+    display: block;
+    background: $color-smoke;
+    margin: -1rem -1rem 1rem;
+    padding: 1rem;
+    font-family: $font-family-headers;
+  }
+}

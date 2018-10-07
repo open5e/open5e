@@ -7,11 +7,11 @@
     <div>
     <p v-if="!spellListLength" >No results</p> 
       <ul class="list--items" 
-        v-bind:key="letter[0].name.charAt(0)" 
-        v-for="(letter, key) in spellsByLetter">
+        v-bind:key="level[0].level_int" 
+        v-for="(level, key) in spellsByLevel">
 
-        <h3 v-if="!filter">{{key.toUpperCase()}}</h3>
-          <li v-bind:key="spell.name" v-for="spell in letter">
+        <h3 v-if="!filter">{{key}}</h3>
+          <li v-bind:key="spell.name" v-for="spell in level">
             <nuxt-link tag="a" 
             :params="{id: spell.slug}" 
             :to="`/spells/${spell.slug}`">
@@ -32,9 +32,8 @@ export default {
     FilterInput
   },
   mounted () {
-    return axios.get(`http://localhost:8000/spells/?fields=slug,name&limit=1000&search=${this.$route.params.class}`) //you will need to enable CORS to make this work
+    return axios.get(`http://localhost:8000/spells/?fields=slug,name,level&limit=1000&ordering=level_int,name&search=${this.$route.params.class}`) //you will need to enable CORS to make this work
     .then(response => {
-      console.log(this.$route.params.class)
       this.spells = response.data.results
     })
   },
@@ -51,16 +50,16 @@ export default {
   },
   computed: {
     // a computed getter
-    spellsByLetter: function () {
-      let letters = {};
+    spellsByLevel: function () {
+      let levels = {};
       for (let i = 0; i < this.filteredSpells.length; i++){ 
-        let firstLetter = this.filteredSpells[i].name.charAt(0).toLowerCase(); 
-        if (!(firstLetter in letters)) {
-          letters[firstLetter] = [];
+        let level = this.filteredSpells[i].level;
+        if (!(level in levels)) {
+          levels[level] = [];
         }
-        letters[firstLetter].push(this.filteredSpells[i]); 
+        levels[level].push(this.filteredSpells[i]); 
       }
-      return letters
+      return levels
     },
     filteredSpells: function() { 
       return this.spells.filter(spell => { 
@@ -73,7 +72,7 @@ export default {
       } 
     }, 
     spellListLength: function() { 
-      return Object.keys(this.spellsByLetter).length; 
+      return this.filteredSpells.length;
     } 
   }
 }

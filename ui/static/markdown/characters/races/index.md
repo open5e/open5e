@@ -1,3 +1,5 @@
+# Races
+
 The description of each race includes racial traits that are common to
 members of that race. The following entries appear among the traits of
 most races.
@@ -49,18 +51,20 @@ Languages
 By virtue of your race, your character can speak, read, and write
 certain languages.
 
-**One subrace to rule them all?**
+Subraces
+========
 
-Only one subrace per race was included in the [5e
-SRD](http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf). We
+<div class="aside aside-info">
+<p class="aside-title">One subrace to rule them all?</p>
+
+Only one subrace per race was included in the <a href="http://media.wizards.com/2016/downloads/DND/SRD-OGL_V5.1.pdf">5e
+SRD</a> We
 are hoping to expand using homebrew or third-party content.
 
 If you know of high-quality content that would be a good fit, please
-[contact us](mailto:gm@5esrd.com) or [submit it on
-github](https://github.com/eepMoody/open5e).
-
-Subraces
-========
+submit an issue on our
+<a href="https://github.com/eepMoody/open5e">github</a>
+</div>
 
 Some races have subraces. Members of a subrace have the traits of the
 parent race in addition to the traits specified for their subrace.
