@@ -1,6 +1,10 @@
 <template>
   <section class="container docs-container">
       <h1>{{monster.name}}</h1>
+      <div v-if="imgSrc" class="aside aside-image">
+        <img :src="imgSrc" @error="hideImage">
+        <span>Image © Violet Kirk</span>
+      </div>
       <p><em>{{monster.size}} {{monster.type}}, {{monster.alignment}}</em></p>
       <hr/>
       <p> <b>Armor Class</b> {{monster.armor_class}}</p>
@@ -85,7 +89,9 @@ export default {
   mounted () {
     return axios.get(`/json/monsters/${this.$route.params.id}.json`) //you will need to enable CORS to make this work
     .then(response => {
-      this.monster = response.data
+      this.loading = false;
+      this.monster = response.data;
+      this.imgSrc = `/img/monsters/${this.monster.slug}/${this.monster.slug}-image.png`;
     })
   },
   computed: {
@@ -170,11 +176,18 @@ export default {
 
     }
   },
+  methods: {
+    hideImage: function() {
+      this.imgSrc = ""
+    }
+  },
   data () {
     return {
       posts: [],
       errors: [],
       monster: [],
+      loading: true,
+      imgSrc:"",
     }
   },
 }

@@ -35,6 +35,7 @@ function fileParser(input, name, listName) {
       const itemJSON = obj[item];
       const itemName = cleanName(itemJSON.name)
       const filename = `${__dirname}/../static/json/${listName}/${itemName}.json`;
+      itemJSON.slug = slugify(itemName.toLowerCase());
       writeFile(filename, itemJSON, function(err){
         if (err) {
           console.log( err );

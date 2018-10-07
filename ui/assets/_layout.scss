@@ -13,6 +13,24 @@
     border: 1px dashed #555;
   }
 
+  &.aside-image {
+    padding: 0;
+    border: solid 1px $color-smoke;
+    text-align: center;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    span {
+      display: block;
+      font-size: $font-size-base * .8;
+      padding: 0.6rem;
+      opacity: 0.6;
+    }
+  }
+
   .aside-title {
     display: block;
     background: $color-smoke;

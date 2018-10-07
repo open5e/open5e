@@ -10,7 +10,7 @@
         v-bind:key="level[0].level_int" 
         v-for="(level, key) in spellsByLevel">
 
-        <h3 v-if="!filter">{{key}}</h3>
+        <h3>{{key}}</h3>
           <li v-bind:key="spell.name" v-for="spell in level">
             <nuxt-link tag="a" 
             :params="{id: spell.slug}" 
@@ -34,7 +34,6 @@ export default {
   mounted () {
     return axios.get(`http://localhost:8000/spells/?fields=slug,name,level&limit=1000&ordering=level_int,name&school=${this.$route.params.school}`) //you will need to enable CORS to make this work
     .then(response => {
-      console.log(response.data.results);
       this.spells = response.data.results
     })
   },

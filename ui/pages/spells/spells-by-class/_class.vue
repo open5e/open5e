@@ -10,7 +10,7 @@
         v-bind:key="level[0].level_int" 
         v-for="(level, key) in spellsByLevel">
 
-        <h3 v-if="!filter">{{key}}</h3>
+        <h3>{{key}}</h3>
           <li v-bind:key="spell.name" v-for="spell in level">
             <nuxt-link tag="a" 
             :params="{id: spell.slug}" 
