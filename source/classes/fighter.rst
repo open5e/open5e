@@ -30,9 +30,7 @@ Proficiencies
 
 **Saving Throws:** Strength, Constitution
 
-**Skills:** Choose two skills from Acrobatics, Animal
-
-Handling, Athletics, History, Insight, Intimidation, Perception, and
+**Skills:** Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and
 Survival
 
 Equipment
