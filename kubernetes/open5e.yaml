@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: open5e-api
+spec:
+  selector:
+    matchLabels:
+      app: open5e-api
+      tier: backend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: open5e-api
+        tier: backend
+    spec:
+      containers:
+        - name: open5e-api
+          image: gcr.io/open5e-219202/koprulusector/open5e-api:0.2.3
+          env:
+            - name: HOST
+              value: "*"
+          ports:
+            - containerPort: 8000
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: open5e-api
+spec:
+  selector:
+    app: open5e-api
+    tier: backend
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
