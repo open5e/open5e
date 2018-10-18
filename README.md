@@ -1,6 +1,6 @@
-# open5e is being rebuild in Vue.js!
+# open5e is being rebuilt in Django and Vue.js!
 
-## Check the [Vue Refactor](https://github.com/eepMoody/open5e/tree/vue-refactor) branch to see what's up.
+## Check the [Develop](https://github.com/eepMoody/open5e/tree/develop) branch to see what's up!
 
 This branch will become the new site. This build will give us substantially more flexibility than the previous Sphinx build with a similarly quick load time.
 
