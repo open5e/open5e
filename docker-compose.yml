@@ -1,7 +1,7 @@
 version: "3"
 services:
-  open5e-api:
-    image: koprulusector/open5e-api:0.1.1
+  api-beta:
+    image: eepmoody/open5e-beta:latest
     environment:
       - OPEN5E_DEBUG=0
       - DJANGO_SECRET=${DJANGO_SECRET}
@@ -11,9 +11,10 @@ services:
   nginx:
     image: nginx:latest
     environment:
-      # - NGINX_HOST=foobar.com
+      - NGINX_HOST=open5e.com
       - NGINX_PORT=80
     volumes:
       - "./nginx/api/nginx.conf:/etc/nginx/nginx.conf:ro"
     ports:
       - "0.0.0.0:80:80"
+      - "0.0.0.0:443:443"
