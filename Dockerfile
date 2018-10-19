@@ -1,13 +1,10 @@
 FROM python:3.7
 
-ARG DJANGO_SECRET
-ENV DJANGO_SECRET=${DJANGO_SECRET}
-
-ARG OPEN5E_DEBUG
-ENV OPEN5E_DEBUG=${OPEN5E_DEBUG}
-
-ARG SERVER_NAME
-ENV SERVER_NAME=${SERVER_NAME}
+# These values are hard coded for the build, but
+# should be set to something else at run time
+ENV DJANGO_SECRET=default
+ENV OPEN5E_DEBUG=0
+ENV SERVER_NAME=api-beta.open5e.com
 
 COPY ./server /server
 
