@@ -1,3 +1,4 @@
+#
 FROM python:3.7
 
 ARG DJANGO_SECRET
