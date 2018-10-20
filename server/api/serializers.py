@@ -236,4 +236,5 @@ class AggregateSerializer(HighlighterMixin, HaystackSerializer):
             'charisma',
             'rarity',
             'type',
+            'source',
             'requires_attunement',]
