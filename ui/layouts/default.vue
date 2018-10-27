@@ -13,25 +13,25 @@
         <nuxt-link tag="li" to="/monsters/monster-list">Monsters</nuxt-link>
         <nuxt-link tag="li" to="/magicitems/magicitem-list">Magic Items</nuxt-link>
         <nuxt-link tag="li" to="/characters/">Characters</nuxt-link>
-        <ul>
+        <ul v-show="containsCurrentRoute(['/characters/', '/classes/', '/sections/'])">
           <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Characters" v-bind:key="section.slug">
             {{section.name}}
           </nuxt-link>
           <nuxt-link tag="li" to="/characters/races/">Races</nuxt-link>
-          <ul>
+          <ul v-show="$nuxt.$route.path.indexOf('/characters/races/') === 0">
             <nuxt-link v-for="race in races" v-bind:key="race.slug" tag="li" :to="`/characters/races/${race.slug}`">
               {{race.name}}
             </nuxt-link>
           </ul>
           <nuxt-link tag="li" to="/classes/">Classes</nuxt-link>
-          <ul>
+          <ul v-show="$nuxt.$route.path.indexOf('/classes/') === 0">
             <nuxt-link v-for="charClass in classes" v-bind:key="charClass.slug" tag="li" :to="`/classes/${charClass.slug}`">
               {{charClass.name}}
             </nuxt-link>
           </ul>
         </ul>
         <nuxt-link tag="li" to="/combat/">Combat</nuxt-link>
-        <ul>
+        <ul v-show="$nuxt.$route.path.indexOf('/combat/') === 0">
           <nuxt-link tag="li" to="/combat/actions">Actions in Combat</nuxt-link>
           <nuxt-link tag="li" to="/combat/attacking">Attacking</nuxt-link>
           <nuxt-link tag="li" to="/combat/combat-sequence">Combat Sequence</nuxt-link>
@@ -42,7 +42,7 @@
           <nuxt-link tag="li" to="/combat/underwater-combat">Underwater COmbat</nuxt-link>
         </ul>
         <nuxt-link tag="li" to="/gameplay-mechanics/">Gameplay Mechanics</nuxt-link>
-        <ul>
+        <ul v-show="$nuxt.$route.path.indexOf('/gameplay-mechanics/') === 0">
           <nuxt-link tag="li" to="/gameplay-mechanics/ability-scores">Ability Scores</nuxt-link>
           <nuxt-link tag="li" to="/gameplay-mechanics/between-adventures">Between Adventures</nuxt-link>
           <nuxt-link tag="li" to="/gameplay-mechanics/conditions">Conditions</nuxt-link>
@@ -91,6 +91,13 @@ export default {
   methods: {
     doSearch: function (searchText) {
       this.$router.push({ name: 'search', query: { text: searchText }})
+    },
+    containsCurrentRoute: function(routes) {
+      var currentRoute = this.$nuxt.$route.path;
+      for(var i = 0; i < routes.length; i++) {
+        if (currentRoute.indexOf(routes[i]) === 0) return true;
+      }
+      return false;
     }
   },
   data() {
