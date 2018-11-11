@@ -1,24 +1,22 @@
-# Required to install sphinx
-language: python
-python:
-  - "2.7"
+
+language: node_js
+node_js:
+  - "node"
+
+dist: trusty
+sudo: required
 
 # Only build master (for now)
 branches:
   only:
     - master
     - develop
+    - heroku-friendly
 
 # Install requirements
-install: pip install -r requirements.txt
+install: npm install
 
-# NB: IF YOU CHANGE ANY BUILD OPTIONS, MAKE SURE YOU ALSO CHANGE THEM IN THE MAKEFILE!
-#
-#                   build dir              config dir  nitpick mode on
-#                      v                         v      v
-script: sphinx-build -b html -d build/doctrees -c . -W -n source build/html
-#                              ^                     ^
-#                           doctrees dir        error on warnings
+script: npm run build
 
 notifications:
   slack:
