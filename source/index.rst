@@ -19,11 +19,11 @@ Try the New Open5e Beta today!
 
 The beta version of the new Open5e is now live, including the long-awaited API!
 
-<a href="https://api-beta.open5e.com">The Open5e API</a> includes all monsters and spells from the SRD as well as a search API, so you can easily access any part of the SRD from your app or website.
+`The Open5e API <https://api-beta.open5e.com>`_ includes all monsters and spells from the SRD as well as a search API, so you can easily access any part of the SRD from your app or website.
 
 The api-beta.open5e.com subdomain will remain indefinitely as the preview location for future API changes.
 
-<a href="https://beta.open5e.com">The Open5e Beta Site</a> leverages that API to serve up a new (but familiar looking!) site that has all the same content but some nice new features including:
+`The Open5e Beta Site <https://beta.open5e.com>`_ leverages that API to serve up a new (but familiar looking!) site that has all the same content but some nice new features including:
 
 - Inline search previews for monsters and spells
 - Better, faster search
