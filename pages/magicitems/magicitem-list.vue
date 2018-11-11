@@ -32,7 +32,7 @@ export default {
     FilterInput
   },
   mounted () {
-    return axios.get(`http://api-beta.open5e.com/magicitems/?fields=slug,name&limit=1000`) //you will need to enable CORS to make this work
+    return axios.get(`https://api-beta.open5e.com/magicitems/?fields=slug,name&limit=1000`) //you will need to enable CORS to make this work
     .then(response => {
       this.items = response.data.results
     })

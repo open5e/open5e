@@ -32,7 +32,7 @@ Run the webserver.
 
 > pipenv run python manage.py runserver
 
-The server should then be up and running on http://localhost:8000.
+The server should then be up and running on https://api-beta.open5e.com.
 
 ## Built with
 
