@@ -1,8 +1,3 @@
-.. open5e documentation master file, created by
-   sphinx-quickstart on Wed Jan 27 16:58:57 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Open5e
 ======
 
@@ -19,10 +14,22 @@ Open5e aims to be the best open-source resource for 5e content.
 
    .. rst-class:: source
 
-Join us in creating the new Open5e!
+Try the New Open5e Beta today!
 ----------------------------------------------------------
 
-We're starting on a new version of the site with lots of new, highly-requested features like: better search, more art, tokens, inline rollers, and more!
+The beta version of the new Open5e is now live, including the long-awaited API!
+
+<a href="https://api-beta.open5e.com">The Open5e API</a> includes all monsters and spells from the SRD as well as a search API, so you can easily access any part of the SRD from your app or website.
+
+The api-beta.open5e.com subdomain will remain indefinitely as the preview location for future API changes.
+
+<a href="https://beta.open5e.com">The Open5e Beta Site</a> leverages that API to serve up a new (but familiar looking!) site that has all the same content but some nice new features including:
+
+- Inline search previews for monsters and spells
+- Better, faster search
+- Filtering for spells and monsters
+
+------------------------------------------------------------------------------------------------
 
 If you enjoy Open5e, join us on Discord to talk about it. 
 Our discord is a place to talk about the redesign as well as rules, tools, art, gaming in general, or anything else on your mind! 
