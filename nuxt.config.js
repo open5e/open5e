@@ -42,6 +42,11 @@ module.exports = {
     gzip: { 
       threshold: 1024,
     }
-  }
+  },
+  modules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-73129463-3'
+    }]
+  ]
 }
 
