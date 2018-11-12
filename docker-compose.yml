@@ -6,12 +6,13 @@ services:
       - OPEN5E_DEBUG=False
       - 'DJANGO_SECRET=${DJANGO_SECRET}'
       - 'SERVER_NAME=${SERVER_NAME}'
-    ports: 
-      - 8000:8000
+    ports:
+      - '8000:8000'
+    depends_on:
+      - nginx
+      - watchtower
   nginx:
     image: 'nginx:latest'
-    links: 
-      - api-beta:api
     environment:
       - NGINX_HOST=open5e.com
       - NGINX_PORT=443
@@ -25,3 +26,13 @@ services:
     volumes:
       - '/var/run/docker.sock:/var/run/docker.sock'
     command: '--interval 30'
+  dev:
+    build: .
+    depends_on:
+      - nginx
+    environment:
+      - OPEN5E_DEBUG=True
+      - 'DJANGO_SECRET=a_secret'
+      - 'SERVER_NAME=localhost'
+    ports:
+      - '8001:8000'

@@ -49,7 +49,7 @@ module.exports = {
     }]
   ],
   env: {
-    apiUrl: process.env.API_URL || 'http://localhost:8000'
+    apiUrl: process.env.API_URL || 'http://localhost:8001'
   }
 }
 

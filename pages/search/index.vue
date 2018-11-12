@@ -85,7 +85,6 @@ export default {
       let next = []
       let others = []
       for (var i = 0; i < tmp.length; i++) {
-          console.log(tmp[i]);
           if (tmp[i].name.toUpperCase().indexOf(term) == 0) {
             first.push(tmp[i]);
           }
