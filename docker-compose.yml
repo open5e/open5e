@@ -3,7 +3,7 @@ services:
   api-beta:
     image: 'eepmoody/open5e-beta:latest'
     environment:
-      - OPEN5E_DEBUG=0
+      - OPEN5E_DEBUG=False
       - 'DJANGO_SECRET=${DJANGO_SECRET}'
       - 'SERVER_NAME=${SERVER_NAME}'
     ports: 
