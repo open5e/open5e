@@ -6,12 +6,10 @@ node_js:
 dist: trusty
 sudo: required
 
-# Only build master (for now)
 branches:
   only:
     - master
     - develop
-    - heroku-friendly
 
 # Install requirements
 install: npm install
