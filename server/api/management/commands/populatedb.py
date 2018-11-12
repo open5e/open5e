@@ -59,7 +59,7 @@ class Command(BaseCommand):
                 fea = json.load(fea_data)
                 self.stdout.write(self.style.SUCCESS(importer.FeatImporter(options, fea)))
 
-            with open(dir+'magicItems.json') as mag_data:
+            with open(dir+'magicitems.json') as mag_data:
                 mag = json.load(mag_data)
                 self.stdout.write(self.style.SUCCESS(importer.MagicItemImporter(options, mag)))
 

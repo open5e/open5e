@@ -13,7 +13,7 @@
         <nuxt-link tag="li" to="/monsters/monster-list">Monsters</nuxt-link>
         <nuxt-link tag="li" to="/magicitems/magicitem-list">Magic Items</nuxt-link>
         <nuxt-link tag="li" to="/characters/">Characters</nuxt-link>
-        <ul v-show="containsCurrentRoute(['/characters/', '/classes/', '/sections/'])">
+        <ul v-show="containsCurrentRoute(['/characters/', '/classes/']) || containsAnyString(sectionGroups.Characters)">
           <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Characters" v-bind:key="section.slug">
             {{section.name}}
           </nuxt-link>
@@ -30,6 +30,20 @@
             </nuxt-link>
           </ul>
         </ul>
+        <nuxt-link tag="li" to="/gameplay-mechanics/">Gameplay Mechanics</nuxt-link>
+        <ul v-show="$nuxt.$route.path.indexOf('/gameplay-mechanics/') === 0 || containsAnyString(sectionGroups.Rules)">
+          <nuxt-link tag="li" to="/gameplay-mechanics/ability-scores">Ability Scores</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/between-adventures">Between Adventures</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/conditions">Conditions</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/environment">Environment</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/movement">Movement</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/rest">Rest</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/saving-throws">Saving Throws</nuxt-link>
+          <nuxt-link tag="li" to="/gameplay-mechanics/time">Time</nuxt-link>
+          <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Rules" v-bind:key="section.slug">
+            {{section.name}}
+          </nuxt-link>
+        </ul>
         <nuxt-link tag="li" to="/combat/">Combat</nuxt-link>
         <ul v-show="$nuxt.$route.path.indexOf('/combat/') === 0">
           <nuxt-link tag="li" to="/combat/actions">Actions in Combat</nuxt-link>
@@ -41,17 +55,11 @@
           <nuxt-link tag="li" to="/combat/movement-in-combat">Movement in Combat</nuxt-link>
           <nuxt-link tag="li" to="/combat/underwater-combat">Underwater COmbat</nuxt-link>
         </ul>
-        <nuxt-link tag="li" to="/gameplay-mechanics/">Gameplay Mechanics</nuxt-link>
-        <ul v-show="$nuxt.$route.path.indexOf('/gameplay-mechanics/') === 0">
-          <nuxt-link tag="li" to="/gameplay-mechanics/ability-scores">Ability Scores</nuxt-link>
-          <nuxt-link tag="li" to="/gameplay-mechanics/between-adventures">Between Adventures</nuxt-link>
-          <nuxt-link tag="li" to="/gameplay-mechanics/conditions">Conditions</nuxt-link>
-          <nuxt-link tag="li" to="/gameplay-mechanics/environment">Environment</nuxt-link>
-          <nuxt-link tag="li" to="/gameplay-mechanics/movement">Movement</nuxt-link>
-          <nuxt-link tag="li" to="/gameplay-mechanics/objects">Objects</nuxt-link>
-          <nuxt-link tag="li" to="/gameplay-mechanics/rest">Rest</nuxt-link>
-          <nuxt-link tag="li" to="/gameplay-mechanics/saving-throws">Saving Throws</nuxt-link>
-          <nuxt-link tag="li" to="/gameplay-mechanics/time">Time</nuxt-link>
+        <nuxt-link tag="li" to="/sections/equipment/">Equipment</nuxt-link>
+        <ul v-show="containsAnyString(sectionGroups.Equipment)">
+          <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Equipment" v-bind:key="section.slug">
+            {{section.name}}
+          </nuxt-link>
         </ul>
       </ul>
     </div>
@@ -98,6 +106,17 @@ export default {
         if (currentRoute.indexOf(routes[i]) === 0) return true;
       }
       return false;
+    },
+    containsAnyString: function(strings) {
+      var contains = false
+      if (typeof strings !== 'undefined' ) {
+        for (var i = 0; i < strings.length; i++) {
+          if (this.$nuxt.$route.path.indexOf(strings[i].slug) !== -1){
+            contains = true;
+          }
+        }
+        return contains;
+      }
     }
   },
   data() {
@@ -113,6 +132,7 @@ export default {
   computed: {
     sectionGroups: function() {
       let groupedSections = this.sections.groupBy('parent');
+      console.log(groupedSections);
       return groupedSections;
     },
     crumbs () {
