@@ -40,14 +40,14 @@ cd ui
 # install dependencies
 $ npm install # Or yarn install
 
-# serve with hot reload at localhost:3000
+# Optional: point it at a real API by setting API_URL=https:someurl.com
+# serve with hot reload at localhost:3000. If you 
 $ npm run dev
 ```
 
 Other build options:
 ```
 # build for production and launch server
-$ npm run build
 $ npm start
 
 # generate static project

@@ -47,6 +47,9 @@ module.exports = {
     ['@nuxtjs/google-analytics', {
       id: 'UA-73129463-3'
     }]
-  ]
+  ],
+  env: {
+    apiUrl: process.env.API_URL || 'http://localhost:8000'
+  }
 }
 

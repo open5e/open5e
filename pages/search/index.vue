@@ -70,7 +70,7 @@ export default {
   methods: {
     getSearchResults: function() {
       this.loading = true;
-      return axios.get(`https://api-beta.open5e.com/search?text=${this.$route.query.text}`) //you will need to enable CORS to make this work
+      return axios.get(`${process.env.apiUrl}/search?text=${this.$route.query.text}`) //you will need to enable CORS to make this work
       .then(response => {
         this.results = response.data.results
         this.loading = false

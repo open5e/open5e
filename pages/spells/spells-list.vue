@@ -32,7 +32,7 @@ export default {
     FilterInput
   },
   mounted () {
-    return axios.get(`https://api-beta.open5e.com/spells/?fields=slug,name&limit=1000`) //you will need to enable CORS to make this work
+    return axios.get(`${process.env.apiUrl}/spells/?fields=slug,name&limit=1000`) //you will need to enable CORS to make this work
     .then(response => {
       this.spells = response.data.results
     })
