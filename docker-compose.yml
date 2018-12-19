@@ -1,0 +1,27 @@
+version: '3'
+services:
+  api-beta:
+    image: 'eepmoody/open5e-beta:latest'
+    environment:
+      - OPEN5E_DEBUG=0
+      - 'DJANGO_SECRET=${DJANGO_SECRET}'
+      - 'SERVER_NAME=${SERVER_NAME}'
+    ports: 
+      - 8000:8000
+  nginx:
+    image: 'nginx:latest'
+    links: 
+      - api-beta:api
+    environment:
+      - NGINX_HOST=open5e.com
+      - NGINX_PORT=443
+    volumes:
+      - './nginx/api/:/etc/nginx/:ro'
+    ports:
+      - '0.0.0.0:80:80'
+      - '0.0.0.0:443:443'
+  watchtower:
+    image: v2tec/watchtower
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock'
+    command: '--interval 30'

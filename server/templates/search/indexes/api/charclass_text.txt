@@ -1,0 +1,4 @@
+{% load custom_markdown %}
+{{ object.name|striptags|custom_markdown|striptags }}
+{{ object.equipment|striptags|custom_markdown|striptags }}
+{{ object.table|striptags|custom_markdown|striptags }}

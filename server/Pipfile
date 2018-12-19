@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sphinx = "*"
+django = "*"
+djangorestframework = "*"
+django-filter = "*"
+django-cors-headers = "*"
+pylint = "*"
+django-haystack = "*"
+whoosh = "*"
+drf-haystack = "*"
+"markdown2" = "*"
+markdown = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
