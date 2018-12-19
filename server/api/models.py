@@ -138,7 +138,7 @@ class Plane(GameContent):
     route = models.TextField(default="planes/") 
 
 class Section(GameContent):
-    parent = models.ForeignKey('self', on_delete=models.CASCADE, null=True)
+    parent = models.TextField(null=True)
     route = models.TextField(default="sections/") 
     
 class Feat(GameContent):

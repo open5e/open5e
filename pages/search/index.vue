@@ -70,7 +70,7 @@ export default {
   methods: {
     getSearchResults: function() {
       this.loading = true;
-      return axios.get(`http://api-beta.open5e.com/search?text=${this.$route.query.text}`) //you will need to enable CORS to make this work
+      return axios.get(`${process.env.apiUrl}/search?text=${this.$route.query.text}`) //you will need to enable CORS to make this work
       .then(response => {
         this.results = response.data.results
         this.loading = false
@@ -85,7 +85,6 @@ export default {
       let next = []
       let others = []
       for (var i = 0; i < tmp.length; i++) {
-          console.log(tmp[i]);
           if (tmp[i].name.toUpperCase().indexOf(term) == 0) {
             first.push(tmp[i]);
           }

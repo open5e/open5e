@@ -500,6 +500,8 @@ class Importer:
                 i.slug = slugify(o['name'])
             if 'desc' in o:
                 i.desc = o['desc']
+            if 'parent' in o:
+                i.parent = o['parent']
             if bool(options['testrun']) or (exists and options['append']):
                skipped += 1
             else:
