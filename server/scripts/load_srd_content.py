@@ -433,6 +433,8 @@ def loadSections():
                     s.slug = slugify(section['name'])
                 if 'desc' in section:
                     s.desc = section['desc']
+                if 'parent' in section:
+                    s.parent = section['parent']
                 s.save()
                 success_count+=1
         print("Done loading Sections.  Successful:{0} Failed:{1}".format(success_count,fail_count)) 

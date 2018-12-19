@@ -1,25 +1,26 @@
-# Required to install sphinx
-language: python
-python:
-  - "2.7"
 
-# Only build master (for now)
+language: node_js
+node_js:
+  - "node"
+
+dist: trusty
+sudo: required
+
 branches:
   only:
     - master
     - develop
 
 # Install requirements
-install: pip install -r requirements.txt
+install: npm install
 
-# NB: IF YOU CHANGE ANY BUILD OPTIONS, MAKE SURE YOU ALSO CHANGE THEM IN THE MAKEFILE!
-#
-#                   build dir              config dir  nitpick mode on
-#                      v                         v      v
-script: sphinx-build -b html -d build/doctrees -c . -W -n source build/html
-#                              ^                     ^
-#                           doctrees dir        error on warnings
+script: npm run build
 
-notifications:
-  slack:
-    secure: M9ITalk74I7g7ceukIHxLLsPiz7IHUcx8qQ33JnlaAJIRLqxa1/gBlIbc6iu4Usqm8EeNe0EW8HHb51UaNNvAw28y5giSwESwdpV6s0tatl/Lo9Y4R4iJmez9kNRe195vPb15o8/rE59zloAUglzsCh65jHbmGOXgXINFltVOBp5wwZKz7UNPteCkKLG6ICRvf4p6XgRRpfW5PmsnEHzVROOoFQOoBiqbn37cXejEjERGGsnL2x1h17Xum4Ka16EgtKXUqpm7Ub7VlRVRC740trO+JAMNGJdw6MtBfAYeUBvYIqxrwIEYiEK7FZ4vF+0bXQ+nldSQvzB2hH0f9NQa6ZLhDF+JOmHaNLvVynzkL8R/x8vMwiJ+JdLO5B0hzh+a5JPTFkOGByC3loOLxQDeryIW3lfEjE8x/0Sf56Utha/n7LAdyVaXcr7RrHBUfeMCwove+nWJtX5jrMuHSNLiUhL4DeeCb0/+QDBmoEdFAEenhWXAoln/IlN8UUKJJu0ksuiRdo5zBXHm5bXEhocgzHzfpFzNS/6Kxdb0vAmsl6EVWPScBl0g/Pk4+INGiL8Sz9PDok8RWRy23PGlemtFBgGU4rNzqAYM0UaFoCE3+8PYOFA3MqX1Bxz/1J1HQYhzvipY3j9ajNZTfvG/sBC/SpavUJhJTSJVcSXg04hiVU=
+after_success:
+  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+  - chmod +x send.sh
+  - ./send.sh success $WEBHOOK_URL
+after_failure:
+  - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
+  - chmod +x send.sh
+  - ./send.sh failure $WEBHOOK_URL

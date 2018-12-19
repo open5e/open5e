@@ -15,7 +15,7 @@ json_file={
     'races' : data_directory + 'races/5e-SRD-Races.json',
     'sections' : data_directory + 'sections/5e-SRD-Sections.json',
     'items_md' : data_directory + 'items/magicItems.md',
-    'items_json' : data_directory + 'items/magicItems.json'
+    'items_json' : data_directory + 'items/magicitems.json'
 }
 
 def parseMagicItems():

@@ -7,7 +7,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: 'The truly open source for 5e rules and resources' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -42,6 +42,14 @@ module.exports = {
     gzip: { 
       threshold: 1024,
     }
+  },
+  modules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-73129463-3'
+    }]
+  ],
+  env: {
+    apiUrl: process.env.API_URL || 'http://localhost:8001'
   }
 }
 

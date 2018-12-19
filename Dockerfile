@@ -3,8 +3,8 @@ FROM python:3.7
 # These values are hard coded for the build, but
 # should be set to something else at run time
 ENV DJANGO_SECRET=default
-ENV OPEN5E_DEBUG=0
-ENV SERVER_NAME=api-beta.open5e.com
+ENV OPEN5E_DEBUG=False
+ENV SERVER_NAME=localhost
 
 COPY ./server /server
 
