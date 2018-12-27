@@ -1,8 +1,6 @@
 # open5e is being rebuilt in Django and Vue.js!
 
-## Check the [Develop](https://github.com/eepMoody/open5e/tree/develop) branch to see what's up!
-
-This branch will become the new site. This build will give us substantially more flexibility than the previous Sphinx build with a similarly quick load time.
+## Check the [Beta Site](https://beta.open5e.com) and [Beta API](https://api-beta.open5e.com) to see what's up!
 
 We have a discord going for discussing the rebuild, and I hope you'll join us! https://discord.gg/9RNE2rY 
 
@@ -26,8 +24,10 @@ docker-compose up
 
 You will want to leave the server terminal running while you launch the UI in a separate termainal so you can observe requests.
 
+If all you want to test against is the API/backend, you're done! Otherwise you'll want to open another window and...
 
-# Building the UI layer
+
+# Build and run the UI layer
 
 Open5e uses the Nuxt framework for Vue.js, which takes care of a lot of the architectural work for the frontend layer while allowing a large amount of flexibility.
 
