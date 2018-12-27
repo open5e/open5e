@@ -19,7 +19,8 @@ starting from root `/open5e` directory:
 ``` bash
 export OPEN_5E_ROOT=`pwd` #set the /server folder as the root of the Python project
 export DJANGO_SECRET='@pt#ouh)@!c+2eh(!aj_vtc=s7t$uk-l1!ry3^fcercz%si01@' # this should be a nukable test key that you're manually replacing at startup time for production
-docker-compose up
+docker-compose build dev
+docker-compose up dev
 ```
 
 You will want to leave the server terminal running while you launch the UI in a separate termainal so you can observe requests.
