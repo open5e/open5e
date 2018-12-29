@@ -107,6 +107,7 @@ export default {
   methods: {
     doSearch: function (searchText) {
       this.$router.push({ name: 'search', query: { text: searchText }})
+      this.showSidebar = false;
     },
     containsCurrentRoute: function(routes) {
       var currentRoute = this.$nuxt.$route.path;
@@ -325,7 +326,7 @@ export default {
   }
   .app-wrapper {
     position: relative;
-    margin-left: calc(-100vw+3rem);
+    margin-left: -$sidebar-width;
     transition: margin-left 250ms ease;
 
     .mobile-header {
@@ -337,7 +338,7 @@ export default {
     }
     
     .sidebar {
-      min-width: calc(100vw - 3rem);
+      min-width: $sidebar-width;
     }
   }
   .app-wrapper.show-sidebar {
