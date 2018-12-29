@@ -37,7 +37,6 @@ Open5e uses the Nuxt framework for Vue.js, which takes care of a lot of the arch
 From /open5e
 
 ``` bash
-cd ui
 # install dependencies
 $ npm install # Or yarn install
 
