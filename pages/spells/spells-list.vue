@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <h2 class="filter-header">
-      Spell List 
+      <span>Spell List</span>
       <filter-input v-on:input="updateFilter" placeholder="Filter spells..."></filter-input>
     </h2>     
     <div :class="{'three-column': !filter}">
