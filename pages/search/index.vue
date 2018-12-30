@@ -14,14 +14,16 @@
           {{result.name}}</nuxt-link>
         <span> CR{{result.challenge_rating}} </span><span class="title-case">{{result.type}} | </span>
         <em>{{result.hit_points}}hp, AC {{result.armor_class}}</em>
-        <stat-bar class="top-border" :stats="{
-          str: result.strength, 
-          dex:result.dexterity, 
-          con: result.constitution, 
-          int: result.intelligence, 
-          wis: result.wisdom, 
-          cha: result.charisma}">
-        </stat-bar>
+        <div>
+          <stat-bar class="top-border" :stats="{
+            str: result.strength, 
+            dex:result.dexterity, 
+            con: result.constitution, 
+            int: result.intelligence, 
+            wis: result.wisdom, 
+            cha: result.charisma}">
+          </stat-bar>
+        </div>
       </div>
 
       <!-- Result summary for spells including basic spell info -->
