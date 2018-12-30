@@ -59,3 +59,15 @@ h5 {
     break-inside: avoid-column;
   }
 }
+
+@media (max-width: 900px) {
+  .three-column {
+    columns: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .three-column {
+    columns: 1;
+  }
+}

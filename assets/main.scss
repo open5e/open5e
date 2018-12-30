@@ -21,3 +21,22 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+@media (max-width: 600px) {
+  .filter-header {
+    flex-direction: column;
+
+    & > span {
+      flex-grow: 1;
+      flex-shrink: 1;
+      overflow-y: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    
+    .filter-wrapper {
+      flex-basis: auto;
+      margin-left: 0;
+    }
+  }
+}
