@@ -23,6 +23,20 @@ docker-compose build dev
 docker-compose up dev
 ```
 
+If you need to work with the db, serializers, or other django-level elements, you will need to be running the docker container then exec into it:
+
+``` bash
+bash -c "clear && docker exec -it open5e_dev_1 sh"
+```
+
+From there you can apply any typical python/django commands. Some common and useful commands include:
+
+``` python
+pipenv run python manage.py makemigrations #create a new migration for the db
+pipenv run python manage.py migrate #apply any pending db migrations
+pipenv run python manage.py rebuild_index #rebuild search index to reflect model or indexer changes
+```
+
 You will want to leave the server terminal running while you launch the UI in a separate termainal so you can observe requests.
 
 If all you want to test against is the API/backend, you're done! Otherwise you'll want to open another window and...
