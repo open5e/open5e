@@ -18,7 +18,8 @@ class MonsterIndex(indexes.SearchIndex, indexes.Indexable):
   wisdom = indexes.CharField(model_attr='wisdom', indexed=False)
   charisma = indexes.CharField(model_attr='charisma', indexed=False)
   challenge_rating = indexes.CharField(model_attr='challenge_rating', indexed=False)
-  type = indexes.charFiel(model_attr='type', indexed=False)
+  type = indexes.CharField(model_attr='type', indexed=False)
+  subtype = indexes.CharField(model_attr='subtype', indexed=False)
 
   def get_model(self):
     return Monster
