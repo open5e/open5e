@@ -40,17 +40,8 @@ static/json/
 # .env file
 .env
 
-# Certificates
-.certs
-
-# dependencies
-node_modules
-
-# logs
-npm-debug.log
-
 # Nuxt build
-.nuxt
+.Nuxt
 
 # Nuxt generate
 dist
