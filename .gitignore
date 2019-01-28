@@ -54,3 +54,7 @@ npm-debug.log
 
 # Nuxt generate
 dist
+
+# NGINX certificates
+./nginx/ssl/*/*
+
