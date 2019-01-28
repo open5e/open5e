@@ -93,3 +93,4 @@ cert = x509.CertificateBuilder().subject_name(
 # Write our certificate out to disk.
 with open(path_to_cert, "wb") as f:
     f.write(cert.public_bytes(serialization.Encoding.PEM))
+    print("Finished creating certificates!")
