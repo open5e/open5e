@@ -56,5 +56,5 @@ npm-debug.log
 dist
 
 # NGINX certificates
-./nginx/ssl
+nginx/ssl/*
 
