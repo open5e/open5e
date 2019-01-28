@@ -16,6 +16,9 @@ NGINX_SSL_DIR_EXISTS = os.path.isdir(NGINX_SSL_DIR)
 NGINX_SSL_CERT_DIR_EXISTS = os.path.isdir(NGINX_SSL_CERT_DIR)
 NGINX_SSL_PRIVATE_DIR_EXISTS = os.path.isdir(NGINX_SSL_PRIVATE_DIR)
 
+CERT_SUBJECT_NAME_ALTERNATIVES = [x509.DNSName(
+    "api.open5e.com"), x509.DNSName("api-beta.open5e.com")]
+
 if not NGINX_SSL_DIR_EXISTS:
     try:
         os.mkdir(NGINX_SSL_DIR)
@@ -46,7 +49,7 @@ server_fqdn = "test-api.open5e.com"
 # Generate our Key
 key = rsa.generate_private_key(
     public_exponent=65537,
-    key_size=2048,
+    key_size=4096,
     backend=default_backend()
 )
 
@@ -66,6 +69,7 @@ subject = issuer = x509.Name([
     x509.NameAttribute(NameOID.STATE_OR_PROVINCE_NAME, "MA"),
     x509.NameAttribute(NameOID.LOCALITY_NAME, "Boston"),
     x509.NameAttribute(NameOID.ORGANIZATION_NAME, "open5e"),
+    x509.NameAttribute(NameOID.ORGANIZATIONAL_UNIT_NAME, "api"),
     x509.NameAttribute(NameOID.COMMON_NAME, server_fqdn),
 ])
 cert = x509.CertificateBuilder().subject_name(
@@ -79,10 +83,10 @@ cert = x509.CertificateBuilder().subject_name(
 ).not_valid_before(
     datetime.datetime.utcnow()
 ).not_valid_after(
-    # Our certificate will be valid for 10 days
-    datetime.datetime.utcnow() + datetime.timedelta(days=10)
+    # Our certificate will be valid for 365 days
+    datetime.datetime.utcnow() + datetime.timedelta(days=365)
 ).add_extension(
-    x509.SubjectAlternativeName([x509.DNSName(u"localhost")]),
+    x509.SubjectAlternativeName(CERT_SUBJECT_NAME_ALTERNATIVES),
     critical=False,
     # Sign our certificate with our private key
 ).sign(key, hashes.SHA256(), default_backend())
