@@ -15,6 +15,7 @@ WORKDIR /server
 RUN sh scripts/generate_self_signed_cert.sh && \
   pip install pipenv && pipenv install && \
   pipenv run python manage.py migrate && \
-  pipenv run python manage.py populatedb --flush /data/WOTC_5e_SRD_v5.1/
+  pipenv run python manage.py populatedb --flush /data/WOTC_5e_SRD_v5.1/ && \
+  pipenv run python manage.py populatedb --append /data/tome_of_beasts/
 
 ENTRYPOINT ["pipenv", "run", "python", "manage.py", "runserver", "0.0.0.0:8000"]

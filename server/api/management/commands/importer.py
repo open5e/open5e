@@ -332,37 +332,29 @@ class Importer:
             if 'challenge_rating' in o:
                 i.challenge_rating = o['challenge_rating']
             if 'actions' in o:
-                for idx, z in enumerate(o['actions']):
-                    if z['attack_bonus'] == 0 and 'damage_dice' not in z:
-                        del z['attack_bonus']
+                for idx, z in enumerate(o['actions'].copy()):
                     o['actions'][idx] = z
                 i.actions_json = json.dumps(o['actions'])
             else:
-                i.actions_json = json.dumps("")
+                i.actions_json = json.dumps('')
             if 'special_abilities' in o:
-                for idx, z in enumerate(o['special_abilities']):
-                    if z['attack_bonus'] == 0 and 'damage_dice' not in z:
-                        del z['attack_bonus']
+                for idx, z in enumerate(o['special_abilities'].copy()):
                     o['special_abilities'][idx] = z
                 i.special_abilities_json = json.dumps(o['special_abilities'])
             else:
-                i.special_abilities_json = json.dumps("")
+                i.special_abilities_json = json.dumps('')
             if 'reactions' in o:
-                for idx, z in enumerate(o['reactions']):
-                    if z['attack_bonus'] == 0 and 'damage_dice' not in z:
-                        del z['attack_bonus']
+                for idx, z in enumerate(o['reactions'].copy()):
                     o['reactions'][idx] = z
                 i.reactions_json = json.dumps(o['reactions'])
             else:
-                i.reactions_json = json.dumps("")
+                i.reactions_json = json.dumps('')
             if 'legendary_actions' in o:
-                for idx, z in enumerate(o['legendary_actions']):
-                    if z['attack_bonus'] == 0 and 'damage_dice' not in z:
-                        del z['attack_bonus']
+                for idx, z in enumerate(o['legendary_actions'].copy()):
                     o['legendary_actions'][idx] = z
                 i.legendary_actions_json = json.dumps(o['legendary_actions'])
             else:
-                i.legendary_actions_json = json.dumps("")
+                i.legendary_actions_json = json.dumps('')
             if bool(options['testrun']) or (exists and options['append']):
                skipped += 1
             else:
