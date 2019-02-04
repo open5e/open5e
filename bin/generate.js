@@ -58,7 +58,7 @@ function indexJson (files, listName) {
     for (item in json) {
       const thisItem = json[item];
       const slug = slugify(thisItem.name.toLowerCase());
-      list.push({name: thisItem.name, slug: slug})
+      list.push({name: thisItem.name, slug: slug, dnd_class: thisItem.class, school: thisItem.school})
     }
   }
   writeFile(path, list, function(err){
