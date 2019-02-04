@@ -7,6 +7,9 @@ const fs = require('fs');
 const mkdirp = require('mkdirp');
 var getDirName = require('path').dirname;
 
+var spellClassArrays = require('./spellParser');
+
+
 function cleanName(str) {
   const cleaned = slugify(str.toLowerCase(), {remove: /[*+~.()"!:@/]/g})
   return cleaned;
@@ -32,6 +35,10 @@ function fileParser(input, name, listName) {
     })
     console.log(`writing individual ${name} files:`);
     for (item in obj) {
+      for (item in obj) {
+        if(name === 'spell'){
+         obj[item] = spellParser(obj[item]);
+       }
       const itemJSON = obj[item];
       const itemName = cleanName(itemJSON.name)
       const filename = `${__dirname}/../static/json/${listName}/${itemName}.json`;
