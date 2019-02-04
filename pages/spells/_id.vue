@@ -31,6 +31,7 @@ export default {
   data () {
     return {
       spell: [],
+      classList: []
     }
   },
   computed: {
