@@ -10,6 +10,7 @@
       </div>  
       <ul v-show="sections[0] != 'loading'">
         <nuxt-link tag="li" to="/spells/spells-list">Spells</nuxt-link>
+        <nuxt-link tag="li" to="/spells/spell-tables">Spell Table</nuxt-link>
         <nuxt-link tag="li" to="/monsters/monster-list">Monsters</nuxt-link>
         <nuxt-link tag="li" to="/magicitems/magicitem-list">Magic Items</nuxt-link>
         <nuxt-link tag="li" to="/characters/">Characters</nuxt-link>
