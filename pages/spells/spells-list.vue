@@ -4,6 +4,7 @@
       Spell List 
       <filter-input v-on:input="updateFilter" placeholder="Filter spells..."></filter-input>
     </h2>     
+    <nuxt-link tag="a" class="table-link" to="/spells/spell-tables">(View As Table)</nuxt-link>
     <div :class="{'three-column': !filter}">
     <p v-if="!spellListLength" >No results</p> 
       <ul class="list--items" 
@@ -78,4 +79,8 @@ export default {
 </script>
 
 <style scoped>
+.table-link{
+  font-size: 0.5em;
+  text-decoration: underline;
+}
 </style>

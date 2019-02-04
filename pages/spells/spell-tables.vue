@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <h2 class="filter-header">
-      Spell Table HERE
+      Spell Table View
       <!-- <button style="text-decoration:underline;" v-on:click="getSpellsByProperty('letter')">Alphabetical</button>
       <button style="text-decoration:underline;" v-on:click="getSpellsByProperty('dnd_class')">Class</button> -->
       <filter-input v-on:input="updateFilter" placeholder="Filter spells..."></filter-input>
@@ -62,8 +62,7 @@ export default {
       spells: [],
       filter: '', 
       currentSortProperty:'name',
-      currentSortDir:'asc',
-      sortByClass: null
+      currentSortDir:'asc'
     }
   },
   methods: {
@@ -78,12 +77,6 @@ export default {
            this.currentSortDir = this.currentSortDir === 'asc'?'desc':'asc';
         }
         this.currentSortProperty = prop;
-        this.sortByClass = null;
-        this.spellsListed = {};
-    },
-    filterByClass : function(some_class){
-        this.sortByClass = some_class.trim();
-        console.log('filtering by... ' + this.sortByClass)
         this.spellsListed = {};
     }
   },
