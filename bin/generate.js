@@ -7,6 +7,9 @@ const fs = require('fs');
 const mkdirp = require('mkdirp');
 var getDirName = require('path').dirname;
 
+var spellClassArrays = require('./spellClassArrays.js');
+
+
 function cleanName(str) {
   const cleaned = slugify(str.toLowerCase(), {remove: /[*+~.()"!:@/]/g})
   return cleaned;
@@ -32,6 +35,9 @@ function fileParser(input, name, listName) {
     })
     console.log(`writing individual ${name} files:`);
     for (item in obj) {
+        if(name === 'spell'){
+         obj[item] = spellClassArrays(obj[item]);
+       }
       const itemJSON = obj[item];
       const itemName = cleanName(itemJSON.name)
       const filename = `${__dirname}/../static/json/${listName}/${itemName}.json`;
@@ -52,7 +58,12 @@ function indexJson (files, listName) {
     for (item in json) {
       const thisItem = json[item];
       const slug = slugify(thisItem.name.toLowerCase());
-      list.push({name: thisItem.name, slug: slug})
+      if(listName === 'spell'){
+        list.push({name: thisItem.name, slug: slug, dnd_class: thisItem.class, school: thisItem.school})
+      }else{
+        list.push({name: thisItem.name, slug: slug})
+      }
+
     }
   }
   writeFile(path, list, function(err){
