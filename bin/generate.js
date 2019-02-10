@@ -63,7 +63,6 @@ function indexJson (files, listName) {
       }else{
         list.push({name: thisItem.name, slug: slug})
       }
-
     }
   }
   writeFile(path, list, function(err){
