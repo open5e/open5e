@@ -72,9 +72,7 @@ game, they are :ref:`srd:prone`.
 You can **drop prone** without using any of your
 speed. **Standing up** takes more effort; doing so costs an amount of
 movement equal to half your speed. For example, if your speed is 30
-feet, you must spend
-
-15 feet of movement to stand up. You can't stand up if you don't have
+feet, you must spend 15 feet of movement to stand up. You can't stand up if you don't have
 enough movement left or if your speed is 0.
 
 To move while prone, you must **crawl** or use
@@ -144,15 +142,16 @@ combat. Objects sometimes use the same size categories.
 Size Categories
 ^^^^^^^^^^^^^^^
 
-=======  ================================================
-Size     Space
-=======  ================================================
-Tiny     2½ by 2½ ft.
-Small    5 by 5 ft.
-Medium   5 by 5 ft.
-Large    10 by 10 ft.
-Huge     15 by 15 ft. Gargantuan 20 by 20 ft. or larger
-=======  ================================================
+===========  ================================================
+Size         Space
+===========  ================================================
+Tiny         2½ by 2½ ft.
+Small        5 by 5 ft.
+Medium       5 by 5 ft.
+Large        10 by 10 ft.
+Huge         15 by 15 ft.
+Gargantuan   20 by 20 ft. or larger
+===========  ================================================
 
 Space
 ^^^^^

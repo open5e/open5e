@@ -1,7 +1,7 @@
 <template>
   <section class="container docs-container">
     <h2 class="filter-header">
-      Monster List 
+      <span>Monster List</span>
       <filter-input v-on:input="updateFilter" placeholder="Filter monsters..."></filter-input>
     </h2>     
     <div :class="{'three-column': !filter}">

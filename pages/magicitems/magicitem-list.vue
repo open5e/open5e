@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <h2 class="filter-header">
-      Magic Item List 
+      <span>Magic Item List</span>
       <filter-input v-on:input="updateFilter" placeholder="Filter items..."></filter-input>
     </h2>     
     <div :class="{'three-column': !filter}">
