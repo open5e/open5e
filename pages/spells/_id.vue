@@ -2,7 +2,7 @@
   <section class="container docs-container">
     <div>
       <h1>{{spell.name}}</h1>
-      <p><em>{{spell.level}} {{spell.school}}</em> | ({{spell.class}})</p>
+      <p><em>{{spell.level}} {{spell.school}}</em> | ({{classList}})</p>
       <p><label>Range:</label> {{spell.range}}</p>
       <p><label>Casting Time:</label> {{spell.casting_time}} <span v-if="spell.ritual === 'yes'">{{spell.ritual}} (Ritual)</span></p>
       <p><label>Components: {{spell.components}} <span v-if="spell.material">({{spell.material}})</span></label></p>
@@ -25,11 +25,13 @@ export default {
     return axios.get(`/json/spells/${this.$route.params.id}.json`) //you will need to enable CORS to make this work
     .then(response => {
       this.spell = response.data
+      this.classList = response.data.class.join(',')
     })
   },
   data () {
     return {
       spell: [],
+      classList: []
     }
   },
   computed: {
