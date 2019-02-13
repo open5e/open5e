@@ -70,6 +70,7 @@
                 "attack_bonus": 0
             }
         ],
+		"legendary_desc": "The aboleth can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The aboleth regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -217,6 +218,7 @@
                 "damage_dice": "12d8"
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -317,6 +319,7 @@
                 "damage_dice": "12d10"
             }
         ],
+		"legendary_desc": "The dracolich can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dracolich regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -415,6 +418,7 @@
                 "damage_dice": "12d10"
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -517,6 +521,24 @@
                 "damage_dice": "13d6"
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
+        "legendary_actions": [
+            {
+                "name": "Detect",
+                "desc": "The dragon makes a Wisdom (Perception) check.",
+                "attack_bonus": 0
+            },
+            {
+                "name": "Tail Attack",
+                "desc": "The dragon makes a tail attack.",
+                "attack_bonus": 0
+            },
+            {
+                "name": "Wing Attack (Costs 2 Actions)",
+                "desc": "The dragon beats its wings. Each creature within 10 ft. of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+                "attack_bonus": 0
+            }
+        ],
         "speed_json": {
             "walk": 40,
             "burrow": 40,
@@ -606,6 +628,7 @@
                 "damage_dice": "12d10"
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -707,6 +730,7 @@
                 "damage_dice": "12d8"
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -814,6 +838,7 @@
                 "damage_dice": "12d10"
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -922,6 +947,7 @@
                 "damage_dice": "16d6"
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -1028,6 +1054,7 @@
                 "damage_dice": "6d6"
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -1130,6 +1157,7 @@
                 "damage_dice": "13d8"
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -1234,6 +1262,7 @@
                 "damage_dice": "12d8"
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -1354,11 +1383,6 @@
                 "name": "Legendary Resistance (3/Day)",
                 "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
                 "attack_bonus": 0
-            },
-            {
-                "name": "Legendary Resistance (3/Day)",
-                "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
-                "attack_bonus": 0
             }
         ],
         "actions": [
@@ -1399,6 +1423,7 @@
                 "attack_bonus": 0
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -1453,6 +1478,13 @@
         "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 27",
         "languages": "Common, Draconic",
         "challenge_rating": "23",
+		"special_abilities": [
+            {
+                "name": "Legendary Resistance (3/Day)",
+                "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+                "attack_bonus": 0
+            }
+        ],
         "actions": [
             {
                 "name": "Multiattack",
@@ -1492,6 +1524,7 @@
                 "damage_dice": "16d10"
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -1599,6 +1632,7 @@
                 "attack_bonus": 0
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -1710,6 +1744,7 @@
                 "attack_bonus": 0
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -1816,6 +1851,7 @@
                 "attack_bonus": 0
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -1928,6 +1964,7 @@
                 "attack_bonus": 0
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -2036,6 +2073,7 @@
                 "damage_dice": "22d6"
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -2134,6 +2172,7 @@
                 "damage_dice": "26d6"
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -2241,6 +2280,7 @@
                 "attack_bonus": 0
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Detect",
@@ -2345,6 +2385,24 @@
                 "damage_dice": "16d8"
             }
         ],
+		"legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
+        "legendary_actions": [
+            {
+                "name": "Detect",
+                "desc": "The dragon makes a Wisdom (Perception) check.",
+                "attack_bonus": 0
+            },
+            {
+                "name": "Tail Attack",
+                "desc": "The dragon makes a tail attack.",
+                "attack_bonus": 0
+            },
+            {
+                "name": "Wing Attack (Costs 2 Actions)",
+                "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+                "attack_bonus": 0
+            }
+        ],
         "speed_json": {
             "walk": 40,
             "burrow": 40,
@@ -2420,6 +2478,7 @@
                 "attack_bonus": 0
             }
         ],
+		"legendary_desc": "The sphinx can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The sphinx regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Claw Attack",
@@ -6242,7 +6301,7 @@
         "actions": [
             {
                 "name": "Club",
-                "desc": "Melee Weapon Attack: +2 to hit (+6 to hit with shillelagh), reach 5 ft., one target. Hit: 2 (1 d4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage with shillelagh.",
+                "desc": "Melee Weapon Attack: +2 to hit (+6 to hit with shillelagh), reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage with shillelagh.",
                 "attack_bonus": 2,
                 "damage_dice": "1d4"
             },
@@ -6356,7 +6415,7 @@
             },
             {
                 "name": "Innate Spellcasting (1/Day)",
-                "desc": "The mephit can innately cast sleep, requiring no material components. Its innate spellcasting ability is Charisma.",
+                "desc": "The mephit can innately cast _sleep_, requiring no material components. Its innate spellcasting ability is Charisma.",
                 "attack_bonus": 0
             }
         ],
@@ -9968,6 +10027,7 @@
                 "damage_bonus": 4
             }
         ],
+		"legendary_desc": "The sphinx can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The sphinx regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Claw Attack",
@@ -10831,7 +10891,7 @@
             },
             {
                 "name": "Innate Spellcasting (1/Day)",
-                "desc": "The mephit can innately cast fog cloud, requiring no material components. Its innate spellcasting ability is Charisma.",
+                "desc": "The mephit can innately cast _fog cloud_, requiring no material components. Its innate spellcasting ability is Charisma.",
                 "attack_bonus": 0
             }
         ],
@@ -11365,6 +11425,7 @@
                 "damage_dice": "4d10"
             }
         ],
+		"legendary_desc": "The kraken can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The kraken regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Tentacle Attack or Fling",
@@ -11560,6 +11621,7 @@
                 "damage_dice": "3d6"
             }
         ],
+		"legendary_desc": "The lich can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The lich regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Cantrip",
@@ -11850,7 +11912,7 @@
             },
             {
                 "name": "Innate Spellcasting (1/Day)",
-                "desc": "The mephit can innately cast heat metal (spell save DC 10), requiring no material components. Its innate spellcasting ability is Charisma.",
+                "desc": "The mephit can innately cast _heat metal_ (spell save DC 10), requiring no material components. Its innate spellcasting ability is Charisma.",
                 "attack_bonus": 0
             }
         ],
@@ -12693,6 +12755,7 @@
                 "attack_bonus": 0
             }
         ],
+		"legendary_desc": "The mummy lord can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The mummy lord regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Attack",
@@ -15759,6 +15822,7 @@
                 "attack_bonus": 0
             }
         ],
+		"legendary_desc": "The solar can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The solar regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Teleport",
@@ -16094,7 +16158,7 @@
             },
             {
                 "name": "Innate Spellcasting (1/Day)",
-                "desc": "The mephit can innately cast blur, requiring no material components. Its innate spellcasting ability is Charisma.",
+                "desc": "The mephit can innately cast _blur_, requiring no material components. Its innate spellcasting ability is Charisma.",
                 "attack_bonus": 0
             }
         ],
@@ -17006,6 +17070,7 @@
                 "attack_bonus": 0
             }
         ],
+		"legendary_desc": "The tarrasque can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The tarrasque regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Attack",
@@ -17494,6 +17559,7 @@
                 "attack_bonus": 0
             }
         ],
+		"legendary_desc": "The unicorn can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The unicorn regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Hooves",
@@ -17597,7 +17663,7 @@
             },
             {
                 "name": "Charm",
-                "desc": "The vampire targets one humanoid it can see within 30 ft. of it. If the target can see the vampire, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bit attack.\nEach time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect.",
+                "desc": "The vampire targets one humanoid it can see within 30 ft. of it. If the target can see the vampire, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bite attack.\nEach time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect.",
                 "attack_bonus": 0
             },
             {
@@ -17606,6 +17672,7 @@
                 "attack_bonus": 0
             }
         ],
+		"legendary_desc": "The vampire can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The vampire regains spent legendary actions at the start of its turn.",
         "legendary_actions": [
             {
                 "name": "Move",
