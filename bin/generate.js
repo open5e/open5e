@@ -58,9 +58,12 @@ function indexJson (files, listName) {
     for (item in json) {
       const thisItem = json[item];
       const slug = slugify(thisItem.name.toLowerCase());
-      if(listName === 'spell'){
+      if(listName === 'spell-index'){
         list.push({name: thisItem.name, slug: slug, dnd_class: thisItem.class, school: thisItem.school})
-      }else{
+      }else if (listName === 'monster-index'){
+        list.push({name: thisItem.name, slug: slug, type: thisItem.type, challenge_rating: thisItem.challenge_rating, size: thisItem.size, hit_points: thisItem.hit_points})
+      }
+      else{
         list.push({name: thisItem.name, slug: slug})
       }
     }
