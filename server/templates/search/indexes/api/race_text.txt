@@ -1,0 +1,3 @@
+{% load custom_markdown %}
+{{ object.desc|striptags|custom_markdown|striptags }}
+{{ object.traits|striptags|custom_markdown|striptags }}

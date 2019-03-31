@@ -1,0 +1,300 @@
+
+.. _srd:legal-information:
+
+Legal Information
+-----------------
+
+SRD5
+~~~~
+
+Permission to copy, modify and distribute the files collectively known
+as the System Reference Document 5.1 ("SRD5") is granted solely through
+the use of the Open Gaming License, Version 1.0a.
+
+This material is being released using the Open Gaming License Version
+1.0a and you should read and understand the terms of that license before
+using this material.
+
+The text of the Open Gaming License itself is not Open Game Content.
+Instructions on using the License are provided within the License
+itself.
+
+The following items are designated Product Identity, as defined in
+Section 1(e) of the Open Game License Version 1.0a, and are subject to
+the conditions set forth in Section 7 of the OGL, and are not Open
+Content: Dungeons & Dragons, D&D, Player's Handbook, Dungeon Master,
+Monster Manual, d20 System, Wizards of the Coast, d20 (when used as a
+trademark), Forgotten Realms, Faerûn, proper names (including those used
+in the names of spells or items), places, Underdark, Red Wizard of Thay,
+the City of Union, Heroic Domains of Ysgard, Ever-Changing Chaos of
+Limbo, Windswept Depths of Pandemonium, Infinite Layers of the Abyss,
+Tarterian Depths of Carceri, Gray Waste of Hades, Bleak Eternity of
+Gehenna, Nine Hells of Baator, Infernal Battlefield of Acheron,
+Clockwork Nirvana of Mechanus, Peaceable Kingdoms of Arcadia, Seven
+Mounting Heavens of Celestia, Twin Paradises of Bytopia, Blessed Fields
+of Elysium, Wilderness of the Beastlands, Olympian Glades of Arborea,
+Concordant Domain of the Outlands, Sigil, Lady of Pain, Book of Exalted
+Deeds, Book of Vile Darkness, beholder, gauth, carrion crawler,
+tanar'ri, baatezu, displacer beast, githyanki, githzerai, mind flayer,
+illithid, umber hulk, yuan-ti.
+
+All of the rest of the SRD5 is Open Game Content as described in Section
+1(d) of the License.
+
+Midgard Heroes
+~~~~~~~~~~~~~~
+
+Kobold Press, Midgard, the Midgard logo, Southlands, Open Design,
+and their associated logos are trademarks of Open Design.
+
+**Product Identity:** The following items are hereby identified as
+Product Identity, as defined in the Open Game License version 1.0a,
+Section 1(e), and are not Open Content: All trademarks, registered
+trademarks, proper names (characters, place names, new deities, etc.),
+
+**Open Game Content:** The Open content in this book includes the racial
+traits, racial variants, and archetypes. No other portion of this work
+may be reproduced in any form without permission.
+
+Southlands Heroes
+~~~~~~~~~~~~~~~~~
+
+Kobold Press, Midgard, Southlands, Open Design, and their associated
+logos are trademarks of Open Design.
+
+**Product Identity:** The following items are hereby identified as Product
+Identity, as defined in the Open Game License version 1.0a,
+Section 1(e), and are not Open Content: All trademarks, registered
+trade-marks, proper names (characters, place names, new deities, etc.),
+dialogue, plots, story elements, locations, characters, artwork,
+sidebars, and trade dress. (Elements that have previously been
+designated as Open Game Content are not included in this declaration.)
+
+**Open Game Content:** The Open content in this book includes the racial
+traits, racial variants, and archetypes. No other portion of this work
+may be reproduced in any form without permission.
+
+Tome of Beasts
+~~~~~~~~~~~~~~
+
+Kobold Press, Midgard, and their associated logos are trademarks of Open Design. The 5E logo is used by kind permission of Sasquatch Game Studio.
+
+Product Identity: The following items are hereby identified as Product Identity, as defined in the Open Game License version 1.0a, Section 1(e), and
+are not Open Content: All trademarks, registered trademarks, proper names (characters, place names, new deities, etc.), dialogue, plots, story elements,
+locations, characters, artwork, graphics, sidebars, and trade dress. (Elements that have previously been designated as Open Game Content are not included
+in this declaration.)
+
+Open Game Content: The Open content in this book includes the monster names, descriptions, monster statistics, and monster abilities. No other
+portion of this work may be reproduced in any form without permission.
+
+Deep Magic: Dragon Magic
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Kobold Press, Midgard, Open Design, and their associated logos are trademarks of Open Design.
+
+Product Identity: The following items are hereby identified as Product Identity, as defined in the Open Game License
+version 1.0a, Section 1(e), and are not Open Content: All trademarks, registered trademarks, proper names (characters,
+place names, new deities, etc.), dialogue, plots, story elements, locations, characters, artwork, sidebars, and trade dress.
+(Elements that have previously been designated as Open Game Content are not included in this declaration.)
+
+Open Game Content: The Open content in this book includes the Dragon Mage arcane tradition, the feats, and the Dragon
+Magic spells. No other portion of this work may be reproduced in any form without permission.
+
+OPEN GAME LICENSE Version 1.0a
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The terms of the Open Gaming License Version 1.0a are as follows:
+
+The following text is the property of Wizards of the Coast, Inc. and is
+Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights
+Reserved.
+
+1.  Definitions: (a)"Contributors" means the copyright and/or trademark
+    owners who have contributed Open Game Content; (b)"Derivative
+    Material" means copyrighted material including derivative works and
+    translations (including into other computer languages), potation,
+    modification, correction, addition, extension, upgrade, improvement,
+    compilation, abridgment or other form in which an existing work may
+    be recast, transformed or adapted; (c) "Distribute" means to
+    reproduce, license, rent, lease, sell, broadcast, publicly display,
+    transmit or otherwise distribute; (d)"Open Game Content" means the
+    game mechanic and includes the methods, procedures, processes and
+    routines to the extent such content does not embody the Product
+    Identity and is an enhancement over the prior art and any additional
+    content clearly identified as Open Game Content by the Contributor,
+    and means any work covered by this License, including translations
+    and derivative works under copyright law, but specifically excludes
+    Product Identity. (e) "Product Identity" means product and product
+    line names, logos and identifying marks including trade dress;
+    artifacts; creatures characters; stories, storylines, plots,
+    thematic elements, dialogue, incidents, language, artwork, symbols,
+    designs, depictions, likenesses, formats, poses, concepts, themes
+    and graphic, photographic and other visual or audio representations;
+    names and descriptions of characters, spells, enchantments,
+    personalities, teams, personas, likenesses and special abilities;
+    places, locations, environments, creatures, equipment, magical or
+    supernatural abilities or effects, logos, symbols, or graphic
+    designs; and any other trademark or registered trademark clearly
+    identified as Product identity by the owner of the Product Identity,
+    and which specifically excludes the Open Game Content; (f)
+    "Trademark" means the logos, names, mark, sign, motto, designs that
+    are used by a Contributor to identify itself or its products or the
+    associated products contributed to the Open Game License by the
+    Contributor (g) "Use", "Used" or "Using" means to use, Distribute,
+    copy, edit, format, modify, translate and otherwise create
+    Derivative Material of Open Game Content. (h) "You" or "Your" means
+    the licensee in terms of this agreement.
+
+2.  The License: This License applies to any Open Game Content that
+    contains a notice indicating that the Open Game Content may only be
+    Used under and in terms of this License. You must affix such a
+    notice to any Open Game Content that you Use. No terms may be added
+    to or subtracted from this License except as described by the
+    License itself. No other terms or conditions may be applied to any
+    Open Game Content distributed using this License.
+
+3.  Offer and Acceptance: By Using the Open Game Content You indicate
+    Your acceptance of the terms of this License.
+
+4.  Grant and Consideration: In consideration for agreeing to use this
+    License, the Contributors grant You a perpetual, worldwide,
+    royalty-free, non-exclusive license with the exact terms of this
+    License to Use, the Open Game Content.
+
+5.  Representation of Authority to Contribute: If You are contributing
+    original material as Open Game Content, You represent that Your
+    Contributions are Your original creation and/or You have sufficient
+    rights to grant the rights conveyed by this License.
+
+6.  Notice of License Copyright: You must update the COPYRIGHT NOTICE
+    portion of this License to include the exact text of the COPYRIGHT
+    NOTICE of any Open Game Content You are copying, modifying or
+    distributing, and You must add the title, the copyright date, and
+    the copyright holder's name to the COPYRIGHT NOTICE of any original
+    Open Game Content you Distribute.
+
+7.  Use of Product Identity: You agree not to Use any Product Identity,
+    including as an indication as to compatibility, except as expressly
+    licensed in another, independent Agreement with the owner of each
+    element of that Product Identity. You agree not to indicate
+    compatibility or co-adaptability with any Trademark or Registered
+    Trademark in conjunction with a work containing Open Game Content
+    except as expressly licensed in another, independent Agreement with
+    the owner of such Trademark or Registered Trademark. The use of any
+    Product Identity in Open Game Content does not constitute a
+    challenge to the ownership of that Product Identity. The owner of
+    any Product Identity used in Open Game Content shall retain all
+    rights, title and interest in and to that Product Identity.
+
+8.  Identification: If you distribute Open Game Content You must clearly
+    indicate which portions of the work that you are distributing are
+    Open Game Content.
+
+9.  Updating the License: Wizards or its designated Agents may publish
+    updated versions of this License. You may use any authorized version
+    of this License to copy, modify and distribute any Open Game Content
+    originally distributed under any version of this License.
+
+10. Copy of this License: You MUST include a copy of this License with
+    every copy of the Open Game Content You Distribute.
+
+11. Use of Contributor Credits: You may not market or advertise the Open
+    Game Content using the name of any Contributor unless You have
+    written permission from the Contributor to do so.
+
+12. Inability to Comply: If it is impossible for You to comply with any
+    of the terms of this License with respect to some or all of the Open
+    Game Content due to statute, judicial order, or governmental
+    regulation then You may not Use any Open Game Material so affected.
+
+13. Termination: This License will terminate automatically if You fail
+    to comply with all terms herein and fail to cure such breach within
+    30 days of becoming aware of the breach. All sublicenses shall
+    survive the termination of this License.
+
+14. Reformation: If any provision of this License is held to be
+    unenforceable, such provision shall be reformed only to the extent
+    necessary to make it enforceable.
+
+15. COPYRIGHT NOTICE
+
+    **Open Game License v 1.0a** Copyright 2000, Wizards of the Coast, LLC.
+
+    **System Reference Document 5.1** Copyright 2016, Wizards of the Coast,
+    Inc.; Authors Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney
+    Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell,
+    Chris Sims, and Steve Townshend, based on original material by E. Gary
+    Gygax and Dave Arneson.
+
+    **System Reference Document** Copyright 2000. Wizards of the Coast,
+    Inc; Authors Jonathan Tweet, Monte Cook, Skip Williams, based on
+    material by E. Gary Gygax and Dave Arneson.
+
+    **Pathfinder RPG Core Rulebook** Copyright 2009, Paizo Publishing,
+    LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet,
+    Monte Cook, and Skip Williams.
+
+    **The Book of Experimental Might** Copyright 2008, Monte J. Cook.
+    All rights reserved.
+
+    **Advanced Races: Centaurs.** © 2014 Open Design; Author: Karen
+    McDonald. KoboldPress.com
+
+    **Advanced Races: Dragonkin** © 2013 Open Design; Authors: Amanda
+    Hamon Kunz.
+
+    **Advanced Races: Gearforged.** © 2013 Open Design; Authors: Thomas
+    Benton.
+
+    **Advanced Races: Kobolds** © 2013 Open Design; Authors: Nicholas
+    Milasich, Matt Blackie.
+
+    **Advanced Races: Ravenfolk** © 2014 Open Design; Authors: Wade
+    Rockett.
+
+    **Advanced Races: Shadow Fey.** © 2014 Open Design; Authors: Carlos
+    and Holly Ovalle.
+
+    **Advanced Races: Trollkin.** © 2015 Open Design; Authors: Steven
+    T.Helt, Stephen Rowe, and Dan Dillon.
+
+    **Midgard Heroes** © 2015 Open Design; Author: Dan Dillon.
+
+    **Advanced Races: Aasimar.** © 2014 Open Design; Author: Adam
+    Roy.KoboldPress.com
+
+    **Advanced Races: Gnolls.** © 2015 Open Design; Authors: Ben
+    McFarland and Brian Suskind.
+
+    **Advanced Races: Lizardfolk.** © 2015 Open Design; Authors: Steven
+    T.Helt, Stephen Rowe, and Dan Dillon.
+
+    **Advanced Races: Werelions.** © 2015 Open Design; Authors: Ben
+    McFarland and Brian Suskind.
+
+    **Southlands Heroes** © 2015 Open Design; Author: Rich Howard.
+
+    **System Reference Document 5.0** Copyright 2016, Wizards of
+    the Coast, Inc.; Authors Mike Mearls, Jeremy Crawford, Chris
+    Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J.
+    Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend,
+    based on original material by E. Gary Gygax and Dave Arneson.
+
+    **Tome of Beasts.** Copyright 2016, Open Design; Authors Chris
+    Harris, Dan Dillon, Rodrigo Garcia Carmona, and Wolfgang
+    Baur.
+
+    **Deep Magic: Dragon Magic** © 2017 Open Design; Author:
+    Shawn Merwin.
+
+END OF LICENSE
+
+If you note any errors in this document, please let us know by emailing
+`*askdnd@wizards.com*. <mailto:askdnd@wizards.com>`__
+
+
+I have to put this here so Sphinx will load the image:
+
+.. figure:: /_images/become_a_patron_button.png
+    :figclass: image-right
+    :target: /_images/become_a_patron_button.png

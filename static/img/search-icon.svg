@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>search-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="search-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0.840990258,15.8085047 L9.58363094,15.8085047 C10.6882004,15.8085047 11.5836309,16.7039352 11.5836309,17.8085047 L11.5836309,17.8085047 C11.5836309,18.9130742 10.6882004,19.8085047 9.58363094,19.8085047 L0.840990258,19.8085047 L0.840990258,15.8085047 Z" id="Rectangle-Copy" fill="#000000" transform="translate(6.212311, 17.808505) scale(-1, 1) rotate(-315.000000) translate(-6.212311, -17.808505) "></path>
+        <circle id="Oval" stroke="#000000" stroke-width="3" cx="14.5" cy="9.5" r="7"></circle>
+    </g>
+</svg>

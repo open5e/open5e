@@ -16,16 +16,45 @@ desktop.ini
 # Sphinx
 build/
 
-# build script
-
-publish
-
 # node stuff
 
-_themes/node_modules/
+**/node_modules/
+
 *.scssc
 *.sassc
-_themes/bower_components/*
 
 *deploy.php
 *deploy-config.php
+
+# Django dev stuff
+*.sqlite3
+
+#virtualenv
+venv/*
+.vscode/settings.json
+.gitignore
+
+# static files
+static/json/
+
+# .env file
+.env
+
+# Certificates
+.certs
+
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# NGINX certificates
+nginx/ssl/*
+
