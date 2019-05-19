@@ -16,18 +16,18 @@ export default {
   },
   data() {
     return {
-      filterText: "",
+      filterText: '',
     }
   },
   props: {
     placeholder: {
       type: String,
-      default: "Filter..."
+      default: 'Filter...'
     }
   },
   methods:{
     clearSearch: function () {
-      this.filterText = "";
+      this.filterText = '';
     }
   }
 }

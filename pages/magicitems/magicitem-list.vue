@@ -5,7 +5,8 @@
       <filter-input v-on:input="updateFilter" placeholder="Filter items..."></filter-input>
     </h2>     
     <div :class="{'three-column': !filter}">
-    <p v-if="!itemListLength" >No results</p> 
+    <p v-if="!items.length">Loading results</p>
+    <p v-else-if="!itemListLength" >No results</p> 
       <ul class="list--items" 
         v-bind:key="letter[0].name.charAt(0)" 
         v-for="(letter, key) in itemsByLetter">
@@ -26,19 +27,19 @@
 <script>
 import axios from 'axios'
 import FilterInput from '~/components/FilterInput.vue'
+import { mapGetters, mapActions} from 'vuex'
 
 export default {
   components: {
     FilterInput
   },
+  beforeCreate() {
+    this.$store.dispatch('LOAD_MAGICITEMS');
+  },
   data () {
     return {
       filter: '', 
     }
-  },
-  async fetch ({ store, params }) {
-    let { data } = await axios.get(`${process.env.apiUrl}/magicitems/?limit=1000`)
-    store.commit( 'setMagicItemsList', data.results )
   },
   methods: {
     updateFilter: function(val) {
@@ -46,9 +47,9 @@ export default {
     }
   },
   computed: {
-    items () {
-      return this.$store.getters.allMagicItems
-    },
+    ...mapGetters({
+      items: 'allMagicItems'
+    }),
     // a computed getter
     itemsByLetter: function () {
       let letters = {};

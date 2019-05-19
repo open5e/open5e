@@ -68,7 +68,7 @@ export default {
     }, 
     columnClassObject: function() { 
       return { 
-        'three-column': !this.filter, 
+        'three-column': !this.filter,
       } 
     }, 
     spellListLength: function() { 

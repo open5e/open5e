@@ -39,8 +39,28 @@ export const actions = {
       (response) => { context.commit('setMonstersList', response.data.results)}
     )
   },
-  LOAD_SPELLS( context ) {},
-  LOAD_MAGICITEMS( context ) {},
+  LOAD_SPELLS( context ) {
+    axios.get(`${process.env.apiUrl}/spells/?fields=slug,name,school,dnd_class,level,components,level_int&limit=1000`) //you will need to enable CORS to make this work
+    .then(
+      (response => {
+        let spells = response.data.results
+        // Until api sends arrays this will work to sort spells by class.
+        spells.map((item)=>{
+            item.dnd_class = item.dnd_class.split(',');
+            for(var i = 0; i < item.dnd_class.length; i++){
+                item.dnd_class[i].trim();
+            }
+        })
+        context.commit('setSpellsList', spells)
+      })
+    )
+  },
+  LOAD_MAGICITEMS( context ) {
+    axios.get(`${process.env.apiUrl}/magicitems/?fields=slug,name,type,rarity&limit=1000`)
+    .then(
+      response => { context.commit( 'setMagicItemsList', response.data.results )
+    })
+  },
   LOAD_CLASSES( context ) {
     axios.get(`${process.env.apiUrl}/classes/`) //you will need to enable CORS to make this work
     .then(
@@ -48,16 +68,20 @@ export const actions = {
     })
   },
   LOAD_RACES( context ) {
-    axios.get(`${process.env.apiUrl}/races/`) //you will need to enable CORS to make this work
-    .then(
-      response => { context.commit( 'setRaces', response.data.results )
-    })
+    if (!context.races) {
+      axios.get(`${process.env.apiUrl}/races/`) //you will need to enable CORS to make this work
+      .then(
+        response => { context.commit( 'setRaces', response.data.results )
+      })
+    }
   },
   LOAD_SECTIONS( context ) {
-    axios.get(`${process.env.apiUrl}/sections/`) //you will need to enable CORS to make this work
-    .then(
-      response => { context.commit( 'setSections', response.data.results )
-    })
+    if (!context.sections){
+      axios.get(`${process.env.apiUrl}/sections/`) //you will need to enable CORS to make this work
+      .then(
+        response => { context.commit( 'setSections', response.data.results )
+      })
+    }
   },
 }
 

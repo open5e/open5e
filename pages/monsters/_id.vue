@@ -90,26 +90,26 @@ export default {
   },
   computed: {
     getSaves: function() {
-      let saveString = "";
+      let saveString = '';
       let saves = [];
       // build an object of save bonuses if they exist
       if (this.monster.hasOwnProperty('strength_save')){
-        saves.push({name: "Con", val: this.monster.strength_save});
+        saves.push({name: 'Con', val: this.monster.strength_save});
       }
       if (this.monster.hasOwnProperty('dexterity_save')){
-        saves.push({name: "Str", val: this.monster.dexterity_save});
+        saves.push({name: 'Str', val: this.monster.dexterity_save});
       }
       if (this.monster.hasOwnProperty('constitution_save')){
-        saves.push({name: "Con", val: this.monster.constitution_save});
+        saves.push({name: 'Con', val: this.monster.constitution_save});
       }
       if (this.monster.hasOwnProperty('intelligence_save')){
-        saves.push({name: "Int", val: this.monster.intelligence_save});
+        saves.push({name: 'Int', val: this.monster.intelligence_save});
       }
       if (this.monster.hasOwnProperty('wisdom_save')){
-        saves.push({name: "Wis", val: this.monster.wisdom_save});
+        saves.push({name: 'Wis', val: this.monster.wisdom_save});
       }
       if (this.monster.hasOwnProperty('charisma_save')){
-        saves.push({name: "Cha", val: this.monster.charisma_save});
+        saves.push({name: 'Cha', val: this.monster.charisma_save});
       }
 
       for (let i = 0; i < saves.length; i++) {
@@ -126,27 +126,27 @@ export default {
     getSkillList: function() {
       let skillList = []
       let keys = [
-        "Acrobatics",
-        "Animal Handling",
-        "Arcana",
-        "Athletics",
-        "Deception",
-        "History",
-        "Insight",
-        "Intimidation",
-        "Investigation",
-        "Medicine",
-        "Nature",
-        "Perception",
-        "Persuasion",
-        "Religion",
-        "Sleight of Hand",
-        "Stealth",
-        "Survival"
+        'Acrobatics',
+        'Animal Handling',
+        'Arcana',
+        'Athletics',
+        'Deception',
+        'History',
+        'Insight',
+        'Intimidation',
+        'Investigation',
+        'Medicine',
+        'Nature',
+        'Perception',
+        'Persuasion',
+        'Religion',
+        'Sleight of Hand',
+        'Stealth',
+        'Survival'
       ]
       for (let i = 0; i < keys.length; i++) {
         const k = keys[i];
-        const keyValue = k.split(" ").join("_").toLowerCase();
+        const keyValue = k.split(' ').join('_').toLowerCase();
         if (this.monster.hasOwnProperty(keyValue)) {
           skillList.push({name: [k], val: this.monster[keyValue]});
         }
@@ -156,7 +156,7 @@ export default {
 
     getSkills: function() {
       let skills = this.getSkillList;
-      let skillString = "";
+      let skillString = '';
 
       for (let i = 0; i < skills.length; i++) {
         const s = skills[i];

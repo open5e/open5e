@@ -22,7 +22,7 @@
             :to="`/monsters/${monster.slug}`">{{monster.name}}</nuxt-link>
         </td>
         <td>{{monster.type}}</td>
-        <td>{{monster.challenge_rating}}</td>
+        <td><fraction-renderer :challenge="monster.challenge_rating"></fraction-renderer></td>
         <td>{{monster.size}}</td>
         <td>{{monster.hit_points}}</td>
       </tr>
@@ -36,11 +36,16 @@
 <script>
 import axios from 'axios'
 import FilterInput from '~/components/FilterInput.vue'
+import FractionRenderer from '~/components/FractionRenderer.vue'
 import { mapMutations, mapActions } from 'vuex'
 
 export default {
   components: {
-    FilterInput
+    FilterInput,
+    FractionRenderer
+  },
+  beforeCreate() {
+    this.$store.dispatch('LOAD_MONSTERS_LIST')
   },
   data () {
     return {
@@ -69,7 +74,6 @@ export default {
        LOAD_MONSTERS_LIST: 'LOAD_MONSTERS_LIST'
      }),
      monstersList () {
-      this.LOAD_MONSTERS_LIST;
       return this.$store.getters.allMonsters
      },
      monstersListed:{
@@ -80,10 +84,16 @@ export default {
         set: function () {
             return this.filteredMonsters.sort((a,b) => {
             let modifier = 1;
-            if(this.currentSortDir === 'desc') modifier = -1;
-                if(a[this.currentSortProperty] < b[this.currentSortProperty]) return -1 * modifier;
-                if(a[this.currentSortProperty] > b[this.currentSortProperty]) return 1 * modifier;
-                return 0;
+            if(this.currentSortDir === 'desc') {
+              modifier = -1 
+            }
+            if(a[this.currentSortProperty] < b[this.currentSortProperty]) {
+              return -1 * modifier
+            }
+            if(a[this.currentSortProperty] > b[this.currentSortProperty]) {
+              return 1 * modifier
+            }
+            return 0;
             });
         }
     },

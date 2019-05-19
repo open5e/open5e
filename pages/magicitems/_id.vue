@@ -19,7 +19,7 @@ export default {
     MdViewer,
   },
   mounted () {
-    return axios.get(`/json/magicitems/${this.$route.params.id}.json`) //you will need to enable CORS to make this work
+    return axios.get(`${process.env.apiUrl}/magicitems/${this.$route.params.id}`) //you will need to enable CORS to make this work
     .then(response => {
       this.item = response.data
     })

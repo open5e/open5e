@@ -38,28 +38,17 @@
 <script>
 import axios from 'axios'
 import FilterInput from '~/components/FilterInput.vue'
+import { mapGetters } from 'vuex'
 
 export default {
   components: {
     FilterInput
   },
   mounted () {
-    return axios.get(`${process.env.apiUrl}/spells/?fields=slug,name,dnd_class,school,level,concentration,components&limit=1000`) //you will need to enable CORS to make this work
-    .then(response => {
-      this.spells = response.data.results
-      // Until api sends arrays this will work to sort spells by class.
-      this.spells.map((item)=>{
-          item.dnd_class = item.dnd_class.split(",");
-          for(var i = 0; i < item.dnd_class.length; i++){
-              item.dnd_class[i].trim();
-          }
-      })
-    //
-    })
+    this.$store.dispatch('LOAD_SPELLS');
   },
   data () {
     return {
-      spells: [],
       filter: '', 
       currentSortProperty:'name',
       currentSortDir:'asc'
@@ -81,7 +70,9 @@ export default {
     }
   },
   computed: {
-    // a computed getter
+    ...mapGetters({
+      spells: 'allSpells'
+    }),
     spellsListed:{
        get: function(){    
           return this.filteredSpells
@@ -89,10 +80,16 @@ export default {
         set: function () {
             return this.filteredSpells.sort((a,b) => {
             let modifier = 1;
-            if(this.currentSortDir === 'desc') modifier = -1;
-                if(a[this.currentSortProperty] < b[this.currentSortProperty]) return -1 * modifier;
-                if(a[this.currentSortProperty] > b[this.currentSortProperty]) return 1 * modifier;
-                return 0;
+            if(this.currentSortDir === 'desc') {
+              modifier = -1
+            }
+            if(a[this.currentSortProperty] < b[this.currentSortProperty]) { 
+              return -1 * modifier
+            }
+            if(a[this.currentSortProperty] > b[this.currentSortProperty]) {
+              return 1 * modifier
+            }
+            return 0;
             });
         }
     },

@@ -118,7 +118,7 @@ const breadcrumbs = {
 }
 
 export default {
-  mounted () {
+  beforeCreate () {
     this.$store.dispatch('LOAD_CLASSES');
     this.$store.dispatch('LOAD_SECTIONS');
     this.$store.dispatch('LOAD_RACES');
@@ -131,7 +131,9 @@ export default {
     containsCurrentRoute: function(routes) {
       var currentRoute = this.$nuxt.$route.path;
       for(var i = 0; i < routes.length; i++) {
-        if (currentRoute.search(routes[i])) return true;
+        if (currentRoute.search(routes[i])) {
+          return true;
+        }
       }
       return false;
     },

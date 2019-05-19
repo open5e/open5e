@@ -11,7 +11,7 @@
     }
   },
   "scripts": {
-    "dev": "export API_URL=http://api.open5e.com && nuxt",
+    "dev": "export API_URL=https://api.open5e.com && nuxt",
     "build": "nuxt build",
     "analyze": "nuxt build -a",
     "start": "nuxt start",
