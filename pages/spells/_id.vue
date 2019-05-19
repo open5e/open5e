@@ -22,7 +22,7 @@ export default {
     MdViewer
   },
   mounted () {
-    return axios.get(`/json/spells/${this.$route.params.id}.json`) //you will need to enable CORS to make this work
+    return axios.get(`${process.env.apiUrl}/spells/${this.$route.params.id}.json`) //you will need to enable CORS to make this work
     .then(response => {
       this.spell = response.data
       this.classList = response.data.class.join(',')

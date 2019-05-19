@@ -14,7 +14,7 @@ export default {
     MdViewer
   },
   mounted () {
-    return axios.get(`/json/sections/${this.$route.params.id}.json`) //you will need to enable CORS to make this work
+    return axios.get(`${process.env.apiUrl}/sections/${this.$route.params.id}.json`) //you will need to enable CORS to make this work
     .then(response => {
       this.section = response.data
     })
