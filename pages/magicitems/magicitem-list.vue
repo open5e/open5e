@@ -31,18 +31,14 @@ export default {
   components: {
     FilterInput
   },
-  mounted () {
-    console.log(process.env.apiUrl)
-    return axios.get(`${process.env.apiUrl}/magicitems/?fields=slug,name&limit=1000`) //you will need to enable CORS to make this work
-    .then(response => {
-      this.items = response.data.results
-    })
-  },
   data () {
     return {
-      items: [],
       filter: '', 
     }
+  },
+  async fetch ({ store, params }) {
+    let { data } = await axios.get(`${process.env.apiUrl}/magicitems/?limit=1000`)
+    store.commit( 'setMagicItemsList', data.results )
   },
   methods: {
     updateFilter: function(val) {
@@ -50,6 +46,9 @@ export default {
     }
   },
   computed: {
+    items () {
+      return this.$store.getters.allMagicItems
+    },
     // a computed getter
     itemsByLetter: function () {
       let letters = {};

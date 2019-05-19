@@ -36,20 +36,14 @@
 <script>
 import axios from 'axios'
 import FilterInput from '~/components/FilterInput.vue'
+import { mapMutations, mapActions } from 'vuex'
 
 export default {
   components: {
     FilterInput
   },
-  mounted () {
-    return axios.get(`${process.env.apiUrl}/monsters/?fields=slug,name,challenge_rating,type,size,hit_points&limit=1000`) //you will need to enable CORS to make this work
-    .then(response => {
-      this.monsters = response.data.results
-    })
-  },
   data () {
     return {
-      monsters: [],
       filter: '', 
       currentSortProperty:'challenge_rating',
       currentSortDir:'asc'
@@ -71,6 +65,13 @@ export default {
     }
   }, 
   computed: {
+     ...mapActions({
+       LOAD_MONSTERS_LIST: 'LOAD_MONSTERS_LIST'
+     }),
+     monstersList () {
+      this.LOAD_MONSTERS_LIST;
+      return this.$store.getters.allMonsters
+     },
      monstersListed:{
        get: function(){
           this.filteredMonsters.forEach(monster => monster.challenge_rating = eval(monster.challenge_rating));
@@ -87,9 +88,10 @@ export default {
         }
     },
     filteredMonsters: function() { 
-      return this.monsters.filter(monster => { 
-         return monster.name.toLowerCase().indexOf(this.filter.toLowerCase()) > -1 
-      }) 
+      return this.monstersList
+        .filter(monster => { 
+          return monster.name.toLowerCase().indexOf(this.filter.toLowerCase()) > -1 
+        }) 
     }
   }
 }

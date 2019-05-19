@@ -9,7 +9,7 @@
             v-model="searchText" 
             v-on:keyup.enter="doSearch(searchText)">
         </div>  
-        <ul v-show="sections[0] != 'loading'">
+        <ul v-if="sections && races && classes">
           <!-- Characters -->
           <nuxt-link tag="li" to="/characters/">Characters</nuxt-link>
           <ul v-show="$nuxt.$route.path.indexOf('/characters') === 0 || containsAnyString(sectionGroups.Characters)">
@@ -26,7 +26,7 @@
           </ul>
           <!-- Races -->
           <nuxt-link tag="li" to="/races">Races</nuxt-link>
-          <ul v-show="$nuxt.$route.path.indexOf('/races') === 0">
+          <ul v-if="races" v-show="$nuxt.$route.path.indexOf('/races') === 0">
             <nuxt-link v-for="race in races" v-bind:key="race.slug" tag="li" :to="`/races/${race.slug}`">
               {{race.name}}
             </nuxt-link>
@@ -99,6 +99,7 @@
 
 <script>
 import axios from 'axios'
+import { mapGetters, mapActions } from 'vuex'
 
 Array.prototype.groupBy = function(prop) {
   return this.reduce(function(groups, item) {
@@ -117,6 +118,11 @@ const breadcrumbs = {
 }
 
 export default {
+  mounted () {
+    this.$store.dispatch('LOAD_CLASSES');
+    this.$store.dispatch('LOAD_SECTIONS');
+    this.$store.dispatch('LOAD_RACES');
+  },
   methods: {
     doSearch: function (searchText) {
       this.$router.push({ name: 'search', query: { text: searchText }})
@@ -150,14 +156,21 @@ export default {
   data() {
     return {
       searchText: this.$route.query.text,
-      classes: ['loading'],
-      races: ['loading'],
-      sections: ['loading'],
       showSidebar: false,
     }
     
   },
   computed: {
+    ...mapActions({
+      LOAD_CLASSES: 'LOAD_CLASSES',
+      LOAD_SECTIONS: 'LOAD_CLASSES',
+      LOAD_RACES: 'LOAD_CLASSES',
+    }),
+    ...mapGetters({
+      classes: 'allClasses',
+      sections: 'allSections',
+      races: 'allRaces',
+    }),
     sectionGroups: function() {
       let groupedSections = this.sections.groupBy('parent');
       return groupedSections;
@@ -173,22 +186,6 @@ export default {
 
       return crumbs
     }
-  },
-  created () {
-    axios.get(`${process.env.apiUrl}/sections/`) //you will need to enable CORS to make this work
-    .then(response => {
-      this.sections = response.data.results
-    })
-
-    axios.get(`${process.env.apiUrl}/classes/`) //you will need to enable CORS to make this work
-    .then(response => {
-      this.classes = response.data.results
-    })
-
-    axios.get(`${process.env.apiUrl}/races/`) //you will need to enable CORS to make this work
-    .then(response => {
-      this.races = response.data.results
-    })
   },
 }
 </script>
