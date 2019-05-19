@@ -22,7 +22,7 @@
             :to="`/monsters/${monster.slug}`">{{monster.name}}</nuxt-link>
         </td>
         <td>{{monster.type}}</td>
-        <td>{{monster.challenge_rating}}</td>
+        <td><fraction-renderer :challenge="monster.challenge_rating"></fraction-renderer></td>
         <td>{{monster.size}}</td>
         <td>{{monster.hit_points}}</td>
       </tr>
@@ -36,20 +36,19 @@
 <script>
 import axios from 'axios'
 import FilterInput from '~/components/FilterInput.vue'
+import FractionRenderer from '~/components/FractionRenderer.vue'
+import { mapMutations, mapActions } from 'vuex'
 
 export default {
   components: {
-    FilterInput
+    FilterInput,
+    FractionRenderer
   },
-  mounted () {
-    return axios.get(`${process.env.apiUrl}/monsters/?fields=slug,name,challenge_rating,type,size,hit_points&limit=1000`) //you will need to enable CORS to make this work
-    .then(response => {
-      this.monsters = response.data.results
-    })
+  beforeCreate() {
+    this.$store.dispatch('LOAD_MONSTERS_LIST')
   },
   data () {
     return {
-      monsters: [],
       filter: '', 
       currentSortProperty:'challenge_rating',
       currentSortDir:'asc'
@@ -71,6 +70,12 @@ export default {
     }
   }, 
   computed: {
+     ...mapActions({
+       LOAD_MONSTERS_LIST: 'LOAD_MONSTERS_LIST'
+     }),
+     monstersList () {
+      return this.$store.getters.allMonsters
+     },
      monstersListed:{
        get: function(){
           this.filteredMonsters.forEach(monster => monster.challenge_rating = eval(monster.challenge_rating));
@@ -79,17 +84,24 @@ export default {
         set: function () {
             return this.filteredMonsters.sort((a,b) => {
             let modifier = 1;
-            if(this.currentSortDir === 'desc') modifier = -1;
-                if(a[this.currentSortProperty] < b[this.currentSortProperty]) return -1 * modifier;
-                if(a[this.currentSortProperty] > b[this.currentSortProperty]) return 1 * modifier;
-                return 0;
+            if(this.currentSortDir === 'desc') {
+              modifier = -1 
+            }
+            if(a[this.currentSortProperty] < b[this.currentSortProperty]) {
+              return -1 * modifier
+            }
+            if(a[this.currentSortProperty] > b[this.currentSortProperty]) {
+              return 1 * modifier
+            }
+            return 0;
             });
         }
     },
     filteredMonsters: function() { 
-      return this.monsters.filter(monster => { 
-         return monster.name.toLowerCase().indexOf(this.filter.toLowerCase()) > -1 
-      }) 
+      return this.monstersList
+        .filter(monster => { 
+          return monster.name.toLowerCase().indexOf(this.filter.toLowerCase()) > -1 
+        }) 
     }
   }
 }

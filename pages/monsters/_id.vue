@@ -5,7 +5,12 @@
       <hr/>
       <p> <b>Armor Class</b> {{monster.armor_class}}</p>
       <p> <b>Hit Points</b> {{monster.hit_points}} ({{monster.hit_dice}})</p>
-      <p> <b>Speed</b> {{monster.speed}}</p>
+      <p> <b>Speed</b>
+      <span v-for="(speed, key, index) in monster.speed" :key="index" v-if="key !== 'hover'">
+        {{key.charAt(0).toUpperCase() + key.slice(1)}} {{speed}}ft. 
+        <span v-if="monster.speed.hasOwnProperty('hover') && key === 'fly'">(hover)</span>
+      </span>
+      </p>
       <hr/>
       <div class="ability-array">
         <div class="ability-block">
@@ -42,9 +47,18 @@
       <hr/>
       <p v-if="getSaves">
         <b>Saving Throws</b>
-        {{getSaves}}
+        <span v-for="(save, index) in getSaves" :key="save.name">
+          {{save.name}}
+          <stat-bonus :stat="save.val"></stat-bonus><span v-if="index < getSaves.length -1">, </span>
+        </span>
       </p>
-      <p v-if="getSkills"> <b>Skills</b> {{getSkills}} </p>
+      <p v-if="getSkills"> 
+        <b>Skills</b>
+        <span v-for="(skill, index) in getSkills" :key="skill.name">
+          {{skill.name}}
+          <stat-bonus :stat="skill.val"></stat-bonus><span v-if="index < getSaves.length -1">, </span>
+        </span>
+      </p>
       <p v-if="monster.damage_vulnerabilities"> <b>Damage Vulnerabilities</b> {{monster.damage_vulnerabilities}} </p>
       <p v-if="monster.damage_resistances"> <b>Damage Resistances</b> {{monster.damage_resistances}} </p>
       <p v-if="monster.damage_immunities"> <b>Damage Immunities</b> {{monster.damage_immunities}} </p>
@@ -82,93 +96,68 @@ export default {
     ChallengeRender,
     MdViewer
   },
-  mounted () {
-    return axios.get(`/json/monsters/${this.$route.params.id}.json`) //you will need to enable CORS to make this work
+  created () {
+    return axios.get(`${process.env.apiUrl}/monsters/${this.$route.params.id}`)
     .then(response => {
       this.monster = response.data
     })
   },
   computed: {
-    getSaves: function() {
-      let saveString = "";
+    getSaves() {
       let saves = [];
+      let savesArray = [
+        {name: 'strength', display: 'Str'}, 
+        {name: 'dexterity', display: 'Dex'}, 
+        {name: 'constitution', display: 'Con'}, 
+        {name: 'intelligence', display: 'Int'}, 
+        {name: 'wisdom', display: 'Wis'}, 
+        {name: 'charisma', display: 'Cha'}
+      ]
       // build an object of save bonuses if they exist
-      if (this.monster.hasOwnProperty('strength_save')){
-        saves.push({name: "Con", val: this.monster.strength_save});
-      }
-      if (this.monster.hasOwnProperty('dexterity_save')){
-        saves.push({name: "Str", val: this.monster.dexterity_save});
-      }
-      if (this.monster.hasOwnProperty('constitution_save')){
-        saves.push({name: "Con", val: this.monster.constitution_save});
-      }
-      if (this.monster.hasOwnProperty('intelligence_save')){
-        saves.push({name: "Int", val: this.monster.intelligence_save});
-      }
-      if (this.monster.hasOwnProperty('wisdom_save')){
-        saves.push({name: "Wis", val: this.monster.wisdom_save});
-      }
-      if (this.monster.hasOwnProperty('charisma_save')){
-        saves.push({name: "Cha", val: this.monster.charisma_save});
-      }
-
-      for (let i = 0; i < saves.length; i++) {
-        const s = saves[i];
-        saveString += `${s.name} `
-        if (s.val >=  0) { saveString += `+${s.val}` }
-        if (s.val < 0) {saveString += `-${s.val}` }
-        if (i < saves.length - 1) { saveString += ', '}
-      }
-
-      return saveString;
+      for (let i = 0; i < savesArray.length; i++) {
+        const saveValue = this.monster[savesArray[i].name + '_save'];
+        const statValue = this.monster[savesArray[i].name];
+        console.log(`${saveValue} vs ${statValue}`);
+        if (saveValue !== null) {
+          saves.push({name: savesArray[i].display, val: saveValue})
+        } else {
+          saves.push({name: savesArray[i].display, val: statValue})
+        }
+      }  
+      
+      return saves;
     },
 
-    getSkillList: function() {
+    getSkills() {
       let skillList = []
       let keys = [
-        "Acrobatics",
-        "Animal Handling",
-        "Arcana",
-        "Athletics",
-        "Deception",
-        "History",
-        "Insight",
-        "Intimidation",
-        "Investigation",
-        "Medicine",
-        "Nature",
-        "Perception",
-        "Persuasion",
-        "Religion",
-        "Sleight of Hand",
-        "Stealth",
-        "Survival"
+        'Acrobatics',
+        'Animal Handling',
+        'Arcana',
+        'Athletics',
+        'Deception',
+        'History',
+        'Insight',
+        'Intimidation',
+        'Investigation',
+        'Medicine',
+        'Nature',
+        'Perception',
+        'Persuasion',
+        'Religion',
+        'Sleight of Hand',
+        'Stealth',
+        'Survival'
       ]
       for (let i = 0; i < keys.length; i++) {
         const k = keys[i];
-        const keyValue = k.split(" ").join("_").toLowerCase();
+        const keyValue = k.split(' ').join('_').toLowerCase();
         if (this.monster.hasOwnProperty(keyValue)) {
-          skillList.push({name: [k], val: this.monster[keyValue]});
+          skillList.push({name: k, val: this.monster[keyValue]});
         }
       }
       return skillList
     },
-
-    getSkills: function() {
-      let skills = this.getSkillList;
-      let skillString = "";
-
-      for (let i = 0; i < skills.length; i++) {
-        const s = skills[i];
-        skillString += `${s.name} `
-        if (s.val >=  0) { skillString += `+${s.val}` }
-        if (s.val < 0) {skillString += `-${s.val}` }
-        if (i < skills.length - 1) { skillString += ', '}
-      }
-
-      return skillString;
-
-    }
   },
   data () {
     return {

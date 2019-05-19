@@ -17,7 +17,7 @@ export default
         },
         text: {
             type: String,
-            default: "loading..."
+            default: 'loading...'
         }
     },
     components: {
@@ -25,7 +25,7 @@ export default
     },
     data () {
         return {
-            sourceText: ""
+            sourceText: ''
         }
     },
     computed:{

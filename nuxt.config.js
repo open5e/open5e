@@ -27,8 +27,8 @@ module.exports = {
             'vue-showdown',
             'axios'
         ],
-        extend (config, {isDev, isClient }) {
-            if (isDev && isClient) {
+        extend (config, {isDev}) {
+            if (isDev && process.client) {
                 config.module.rules.push({
                     enforce: 'pre',
                     test: /\.(js|vue)$/,

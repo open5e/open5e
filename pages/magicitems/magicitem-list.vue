@@ -5,7 +5,8 @@
       <filter-input v-on:input="updateFilter" placeholder="Filter items..."></filter-input>
     </h2>     
     <div :class="{'three-column': !filter}">
-    <p v-if="!itemListLength" >No results</p> 
+    <p v-if="!items.length">Loading results</p>
+    <p v-else-if="!itemListLength" >No results</p> 
       <ul class="list--items" 
         v-bind:key="letter[0].name.charAt(0)" 
         v-for="(letter, key) in itemsByLetter">
@@ -26,21 +27,17 @@
 <script>
 import axios from 'axios'
 import FilterInput from '~/components/FilterInput.vue'
+import { mapGetters, mapActions} from 'vuex'
 
 export default {
   components: {
     FilterInput
   },
-  mounted () {
-    console.log(process.env.apiUrl)
-    return axios.get(`${process.env.apiUrl}/magicitems/?fields=slug,name&limit=1000`) //you will need to enable CORS to make this work
-    .then(response => {
-      this.items = response.data.results
-    })
+  beforeCreate() {
+    this.$store.dispatch('LOAD_MAGICITEMS');
   },
   data () {
     return {
-      items: [],
       filter: '', 
     }
   },
@@ -50,6 +47,9 @@ export default {
     }
   },
   computed: {
+    ...mapGetters({
+      items: 'allMagicItems'
+    }),
     // a computed getter
     itemsByLetter: function () {
       let letters = {};
