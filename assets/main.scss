@@ -22,6 +22,10 @@ html {
   margin: 0;
 }
 
+.fiterable-table {
+  width: 100%;
+}
+
 @media (max-width: 600px) {
   .filter-header {
     flex-direction: column;

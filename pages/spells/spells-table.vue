@@ -7,7 +7,7 @@
       <filter-input v-on:input="updateFilter" placeholder="Filter spells..."></filter-input>
     </h2>     
     <div>
-        <table>
+  <table class="fiterable-table">
     <thead>
       <tr>
         <th class="spell-table-header" v-on:click="sort('name')">Name</th>

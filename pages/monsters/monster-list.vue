@@ -5,7 +5,7 @@
       <filter-input v-on:input="updateFilter" placeholder="Filter monsters..."></filter-input>
     </h2>     
     <div>
-        <table>
+  <table class="fiterable-table">
     <thead>
       <tr>
         <th class="monster-table-header" v-on:click="sort('name')">Name</th>
@@ -42,9 +42,9 @@ export default {
     FilterInput
   },
   mounted () {
-    return axios.get(`/json/monster-index.json`) //you will need to enable CORS to make this work
+    return axios.get(`${process.env.apiUrl}/monsters/?fields=slug,name,challenge_rating,type,size,hit_points&limit=1000`) //you will need to enable CORS to make this work
     .then(response => {
-      this.monsters = response.data
+      this.monsters = response.data.results
     })
   },
   data () {
