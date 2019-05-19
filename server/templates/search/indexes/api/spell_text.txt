@@ -1,4 +1,0 @@
-{{ object.name|striptags }}
-{{ object.desc|striptags }}
-
-

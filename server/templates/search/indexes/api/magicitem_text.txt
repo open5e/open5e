@@ -1,5 +1,0 @@
-
-{% load custom_markdown %}
-{{ object.name|striptags|custom_markdown|striptags }}
-{{ object.desc|striptags|custom_markdown|striptags }}
-{{ object.type|striptags|custom_markdown|striptags }}

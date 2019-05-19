@@ -10,41 +10,28 @@
             v-on:keyup.enter="doSearch(searchText)">
         </div>  
         <ul v-show="sections[0] != 'loading'">
-          <nuxt-link tag="li" to="/spells/spells-list">Spells</nuxt-link>
-          <nuxt-link tag="li" to="/monsters/monster-list">Monsters</nuxt-link>
-          <nuxt-link tag="li" to="/magicitems/magicitem-list">Magic Items</nuxt-link>
+          <!-- Characters -->
           <nuxt-link tag="li" to="/characters/">Characters</nuxt-link>
-          <ul v-show="containsCurrentRoute(['/characters/', '/classes/']) || containsAnyString(sectionGroups.Characters)">
+          <ul v-show="$nuxt.$route.path.indexOf('/characters') === 0 || containsAnyString(sectionGroups.Characters)">
             <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Characters" v-bind:key="section.slug">
               {{section.name}}
             </nuxt-link>
-            <nuxt-link tag="li" to="/characters/races/">Races</nuxt-link>
-            <ul v-show="$nuxt.$route.path.indexOf('/characters/races/') === 0">
-              <nuxt-link v-for="race in races" v-bind:key="race.slug" tag="li" :to="`/characters/races/${race.slug}`">
-                {{race.name}}
-              </nuxt-link>
-            </ul>
-            <nuxt-link tag="li" to="/classes/">Classes</nuxt-link>
-            <ul v-show="$nuxt.$route.path.indexOf('/classes/') === 0">
-              <nuxt-link v-for="charClass in classes" v-bind:key="charClass.slug" tag="li" :to="`/classes/${charClass.slug}`">
-                {{charClass.name}}
-              </nuxt-link>
-            </ul>
           </ul>
-          <nuxt-link tag="li" to="/gameplay-mechanics/">Gameplay Mechanics</nuxt-link>
-          <ul v-show="$nuxt.$route.path.indexOf('/gameplay-mechanics/') === 0 || containsAnyString(sectionGroups.Rules)">
-            <nuxt-link tag="li" to="/gameplay-mechanics/ability-scores">Ability Scores</nuxt-link>
-            <nuxt-link tag="li" to="/gameplay-mechanics/between-adventures">Between Adventures</nuxt-link>
-            <nuxt-link tag="li" to="/gameplay-mechanics/conditions">Conditions</nuxt-link>
-            <nuxt-link tag="li" to="/gameplay-mechanics/environment">Environment</nuxt-link>
-            <nuxt-link tag="li" to="/gameplay-mechanics/movement">Movement</nuxt-link>
-            <nuxt-link tag="li" to="/gameplay-mechanics/rest">Rest</nuxt-link>
-            <nuxt-link tag="li" to="/gameplay-mechanics/saving-throws">Saving Throws</nuxt-link>
-            <nuxt-link tag="li" to="/gameplay-mechanics/time">Time</nuxt-link>
-            <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Rules" v-bind:key="section.slug">
-              {{section.name}}
+          <!-- Classes -->
+          <nuxt-link tag="li" to="/classes">Classes</nuxt-link>
+          <ul v-show="$nuxt.$route.path.indexOf('/classes') === 0">
+            <nuxt-link v-for="charClass in classes" v-bind:key="charClass.slug" tag="li" :to="`/classes/${charClass.slug}`">
+              {{charClass.name}}
             </nuxt-link>
           </ul>
+          <!-- Races -->
+          <nuxt-link tag="li" to="/races">Races</nuxt-link>
+          <ul v-show="$nuxt.$route.path.indexOf('/races') === 0">
+            <nuxt-link v-for="race in races" v-bind:key="race.slug" tag="li" :to="`/races/${race.slug}`">
+              {{race.name}}
+            </nuxt-link>
+          </ul>
+          <!-- Combat -->  
           <nuxt-link tag="li" to="/combat/">Combat</nuxt-link>
           <ul v-show="$nuxt.$route.path.indexOf('/combat/') === 0">
             <nuxt-link tag="li" to="/combat/actions">Actions in Combat</nuxt-link>
@@ -54,11 +41,37 @@
             <nuxt-link tag="li" to="/combat/damage-and-healing">Damage &amp; Healing</nuxt-link>
             <nuxt-link tag="li" to="/combat/mounted-combat">Mounted combat</nuxt-link>
             <nuxt-link tag="li" to="/combat/movement-in-combat">Movement in Combat</nuxt-link>
-            <nuxt-link tag="li" to="/combat/underwater-combat">Underwater COmbat</nuxt-link>
+            <nuxt-link tag="li" to="/combat/underwater-combat">Underwater Combat</nuxt-link>
           </ul>
+          <!-- Equipment -->
           <nuxt-link tag="li" to="/sections/equipment/">Equipment</nuxt-link>
           <ul v-show="containsAnyString(sectionGroups.Equipment)">
             <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Equipment" v-bind:key="section.slug">
+              {{section.name}}
+            </nuxt-link>
+          </ul>
+          <!-- Magic Items -->
+          <nuxt-link tag="li" v-bind:class="{'nuxt-link-active': $nuxt.$route.path.indexOf('/magicitems') === 0}" to="/magicitems/magicitem-list">Magic Items</nuxt-link>
+          <!-- Spells -->
+          <nuxt-link tag="li" v-bind:class="{'nuxt-link-active': $nuxt.$route.path.indexOf('/spells') === 0}" to="/spells/spells-table">Spells</nuxt-link>
+          <!-- Monsters -->
+          <nuxt-link tag="li" v-bind:class="{'nuxt-link-active': $nuxt.$route.path.indexOf('/monsters') === 0}" to="/monsters/monster-list">Monsters</nuxt-link>
+          <!-- Gameplay Mechanics -->
+          <nuxt-link tag="li" to="/gameplay-mechanics/">Gameplay Mechanics</nuxt-link>
+          <ul v-show="$nuxt.$route.path.indexOf('/gameplay-mechanics/') !== -1">
+            <nuxt-link tag="li" to="/gameplay-mechanics/ability-scores">Ability Scores</nuxt-link>
+            <nuxt-link tag="li" to="/gameplay-mechanics/between-adventures">Between Adventures</nuxt-link>
+            <nuxt-link tag="li" to="/gameplay-mechanics/conditions">Conditions</nuxt-link>
+            <nuxt-link tag="li" to="/gameplay-mechanics/environment">Environment</nuxt-link>
+            <nuxt-link tag="li" to="/gameplay-mechanics/movement">Movement</nuxt-link>
+            <nuxt-link tag="li" to="/gameplay-mechanics/rest">Rest</nuxt-link>
+            <nuxt-link tag="li" to="/gameplay-mechanics/saving-throws">Saving Throws</nuxt-link>
+            <nuxt-link tag="li" to="/gameplay-mechanics/time">Time</nuxt-link>
+          </ul>
+          <!-- Running a Game -->
+          <nuxt-link tag="li" to="/running-a-game/">Running a Game</nuxt-link>
+          <ul v-show="containsAnyString(sectionGroups.Rules)">
+            <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Rules" v-bind:key="section.slug">
               {{section.name}}
             </nuxt-link>
           </ul>
@@ -112,7 +125,7 @@ export default {
     containsCurrentRoute: function(routes) {
       var currentRoute = this.$nuxt.$route.path;
       for(var i = 0; i < routes.length; i++) {
-        if (currentRoute.indexOf(routes[i]) === 0) return true;
+        if (currentRoute.search(routes[i])) return true;
       }
       return false;
     },
@@ -147,7 +160,6 @@ export default {
   computed: {
     sectionGroups: function() {
       let groupedSections = this.sections.groupBy('parent');
-      console.log(groupedSections);
       return groupedSections;
     },
     crumbs () {
@@ -163,19 +175,19 @@ export default {
     }
   },
   created () {
-    axios.get(`/json/section-index.json`) //you will need to enable CORS to make this work
+    axios.get(`${process.env.apiUrl}/sections/`) //you will need to enable CORS to make this work
     .then(response => {
-      this.sections = response.data
+      this.sections = response.data.results
     })
 
-    axios.get(`/json/class-index.json`) //you will need to enable CORS to make this work
+    axios.get(`${process.env.apiUrl}/classes/`) //you will need to enable CORS to make this work
     .then(response => {
-      this.classes = response.data
+      this.classes = response.data.results
     })
 
-    axios.get(`/json/race-index.json`) //you will need to enable CORS to make this work
+    axios.get(`${process.env.apiUrl}/races/`) //you will need to enable CORS to make this work
     .then(response => {
-      this.races = response.data
+      this.races = response.data.results
     })
   },
 }
@@ -219,6 +231,10 @@ export default {
   border: none;
   font-size: $font-size-base;
   outline: none;
+  &::placeholder {
+    color: white;
+    opacity: 0.6;
+  }
 }
 
 .mobile-header {

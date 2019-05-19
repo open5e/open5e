@@ -17,5 +17,9 @@ module.exports = {
     'vue'
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    "eqeqeq": "off",
+    "curly": "error",
+    "quotes": ["error", "single"]
+  }
 }

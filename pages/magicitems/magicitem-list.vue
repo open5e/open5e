@@ -32,6 +32,7 @@ export default {
     FilterInput
   },
   mounted () {
+    console.log(process.env.apiUrl)
     return axios.get(`${process.env.apiUrl}/magicitems/?fields=slug,name&limit=1000`) //you will need to enable CORS to make this work
     .then(response => {
       this.items = response.data.results

@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <h2 class="filter-header">
-      Spell Table View
+      Spell List
       <!-- <button style="text-decoration:underline;" v-on:click="getSpellsByProperty('letter')">Alphabetical</button>
       <button style="text-decoration:underline;" v-on:click="getSpellsByProperty('dnd_class')">Class</button> -->
       <filter-input v-on:input="updateFilter" placeholder="Filter spells..."></filter-input>
