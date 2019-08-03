@@ -52,11 +52,11 @@
           <stat-bonus :stat="save.val"></stat-bonus><span v-if="index < getSaves.length -1">, </span>
         </span>
       </p>
-      <p v-if="getSkills"> 
+      <p v-if="monster.skills"> 
         <b>Skills</b>
-        <span v-for="(skill, index) in getSkills" :key="skill.name">
-          {{skill.name}}
-          <stat-bonus :stat="skill.val"></stat-bonus><span v-if="index < getSaves.length -1">, </span>
+        <span v-for="(skill, key, index) in monster.skills" :key="index" v-if="key !== 'hover'">
+        {{key.charAt(0).toUpperCase() + key.slice(1)}}
+        <span v-if="skill >=0 ">+</span>{{skill}}<span v-if="index < getSaves.length -1">, </span>
         </span>
       </p>
       <p v-if="monster.damage_vulnerabilities"> <b>Damage Vulnerabilities</b> {{monster.damage_vulnerabilities}} </p>
@@ -126,37 +126,6 @@ export default {
       }  
       
       return saves;
-    },
-
-    getSkills() {
-      let skillList = []
-      let keys = [
-        'Acrobatics',
-        'Animal Handling',
-        'Arcana',
-        'Athletics',
-        'Deception',
-        'History',
-        'Insight',
-        'Intimidation',
-        'Investigation',
-        'Medicine',
-        'Nature',
-        'Perception',
-        'Persuasion',
-        'Religion',
-        'Sleight of Hand',
-        'Stealth',
-        'Survival'
-      ]
-      for (let i = 0; i < keys.length; i++) {
-        const k = keys[i];
-        const keyValue = k.split(' ').join('_').toLowerCase();
-        if (this.monster.hasOwnProperty(keyValue)) {
-          skillList.push({name: k, val: this.monster[keyValue]});
-        }
-      }
-      return skillList
     },
   },
   data () {
