@@ -1,6 +1,7 @@
 <template>
-  <section class="container docs-container">
+  <section class="container docs-container">  
       <h1>{{monster.name}}</h1>
+      <img v-if="monster.img_main" :src="monster.img_main" class="img-main">
       <p><em>{{monster.size}} {{monster.type}}, {{monster.alignment}}</em></p>
       <hr/>
       <p> <b>Armor Class</b> {{monster.armor_class}}</p>
@@ -139,6 +140,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.img-main {
+  float: right;
+  width: 30%;
+  min-width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .img-main {
+    float: none;
+    width: 100%;
+  }
+}
+
 .action-block {
 
   .inline {
