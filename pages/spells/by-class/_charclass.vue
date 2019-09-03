@@ -1,10 +1,13 @@
 <template>
   <section class="container">
     <h2 class="filter-header">
-      <span>{{filter}} spells</span>
-      <select v-model="filter">
-        <option :key="charClass" :value="charClass" v-for='charClass in available_classes'>{{charClass}}</option>
-      </select>
+      <span class="title-case">{{filter}} spells</span>
+      <p class="class-selector">
+        <label>Select a class: </label>
+        <select v-model="filter">
+          <option :key="charClass" :value="charClass" :selected="charClass.toLowerCase() == filter" v-for='charClass in available_classes'>{{charClass}}</option>
+        </select>
+      </p>
     </h2>     
     <nuxt-link tag="a" class="table-link" to="/spells/spell-tables">(View As Table)</nuxt-link>
     <div :class="'three-column'">
@@ -76,7 +79,7 @@ export default {
           return ('' + a.lvl).localeCompare(b.lvl);
         });
       } else { return false }
-      return sortedLevel
+      return sortedLevels
     },
     filteredSpells: function() { 
       if (this.filter){
@@ -99,9 +102,20 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .table-link{
   font-size: 0.5em;
   text-decoration: underline;
+}
+.title-case {
+  text-transform: capitalize;
+}
+
+.class-selector {
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  flex-grow: 1;
+  text-align: right;
 }
 </style>
