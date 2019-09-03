@@ -22,10 +22,11 @@
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "nuxt": "^2.7.1",
-    "vue-showdown": "^2.0.2",
-    "vue": "^2.6.10"
+    "underscore": "^1.9.1",
+    "vue": "^2.6.10",
+    "vue-showdown": "^2.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
