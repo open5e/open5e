@@ -78,8 +78,8 @@
             <nuxt-link tag="li" to="/gameplay-mechanics/time">Time</nuxt-link>
           </ul>
           <!-- Running a Game -->
-          <nuxt-link tag="li" to="/running-a-game/">Running a Game</nuxt-link>
-          <ul v-show="containsAnyString(sectionGroups.Rules)">
+          <nuxt-link tag="li" to="/sections/">Running a Game</nuxt-link>
+          <ul v-show="$nuxt.$route.path.indexOf('/sections/') !== -1">
             <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Rules" v-bind:key="section.slug">
               {{section.name}}
             </nuxt-link>
