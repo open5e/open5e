@@ -63,8 +63,15 @@ h5 {
 
 .three-column {
   columns: 3;
+  padding-top: 1rem;
   ul {
     break-inside: avoid-column;
+  }
+  ul:first-of-type{
+    margin-top: 0;
+    h3 {
+      margin-top: 0;
+    }
   }
 }
 

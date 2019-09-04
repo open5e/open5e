@@ -54,6 +54,15 @@
           <nuxt-link tag="li" v-bind:class="{'nuxt-link-active': $nuxt.$route.path.indexOf('/magicitems') === 0}" to="/magicitems/magicitem-list">Magic Items</nuxt-link>
           <!-- Spells -->
           <nuxt-link tag="li" v-bind:class="{'nuxt-link-active': $nuxt.$route.path.indexOf('/spells') === 0}" to="/spells/spells-table">Spells</nuxt-link>
+          <ul v-show="$nuxt.$route.path.indexOf('/spells/') !== -1">
+            <nuxt-link tag="li" to="/spells/by-class/bard">Bard Spells</nuxt-link>
+            <nuxt-link tag="li" to="/spells/by-class/cleric">Cleric Spells</nuxt-link>
+            <nuxt-link tag="li" to="/spells/by-class/druid">Druid Spells</nuxt-link>
+            <nuxt-link tag="li" to="/spells/by-class/paladin">Paladin Spells</nuxt-link>
+            <nuxt-link tag="li" to="/spells/by-class/sorcerer">Sorcerer Spells</nuxt-link>
+            <nuxt-link tag="li" to="/spells/by-class/wizard">Wizard Spells</nuxt-link>
+            <nuxt-link tag="li" to="/spells/by-class/warlock">Warlock Spells</nuxt-link>
+          </ul>
           <!-- Monsters -->
           <nuxt-link tag="li" v-bind:class="{'nuxt-link-active': $nuxt.$route.path.indexOf('/monsters') === 0}" to="/monsters/monster-list">Monsters</nuxt-link>
           <!-- Gameplay Mechanics -->
