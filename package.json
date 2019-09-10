@@ -23,9 +23,10 @@
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
     "axios": "^0.18.1",
-    "nuxt": "^2.7.1",
+    "nuxt": "^2.9.2",
     "underscore": "^1.9.1",
     "vue": "^2.6.10",
+    "vue-scrollto": "^2.15.0",
     "vue-showdown": "^2.0.2"
   },
   "devDependencies": {

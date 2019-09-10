@@ -1,10 +1,11 @@
 <template>
-    <VueShowdown :options="{tables: true}" :markdown="mdText"/>
+    <VueShowdown ref="mdwrapper" :vue-template="true" :options="{tables: true}" :markdown="mdText"/>
 </template>
 
 <script>
 import axios from 'axios'
 import { VueShowdown } from 'vue-showdown'
+import VueScrollTo from 'vue-scrollto';
 
 export default
 {
@@ -28,6 +29,19 @@ export default
             sourceText: ''
         }
     },
+    methods: {
+        scrollToRoute: function() {
+            if (this.$route.hash) {
+                this.$nextTick(() => {
+                    console.log(this.$el);
+                    const hash = this.$route.hash;
+                    var container = this.$el.querySelector(hash);
+                    console.log(container);
+                    container.scrollIntoView({ behavior: 'smooth'});
+                })
+            }
+        }    
+    },
     computed:{
         mdText: function () {
             if (this.sourceText) {
@@ -38,10 +52,9 @@ export default
         },
     },
     mounted()
-    // If you assign both a text and a source, the text will be overwritten once the source loads
     {
         if (this.src)  {
-            axios.get(this.src).then(response => {this.sourceText = response.data})
+            axios.get(this.src).then(response => {this.sourceText = response.data; this.scrollToRoute()})
         }
     }
 }
