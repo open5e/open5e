@@ -12,28 +12,28 @@
         <ul v-if="sections && races && classes">
           <!-- Characters -->
           <nuxt-link tag="li" to="/characters/">Characters</nuxt-link>
-          <ul v-show="$nuxt.$route.path.indexOf('/characters') === 0 || containsAnyString(sectionGroups.Characters)">
+          <ul v-show="$nuxt.$route.path.indexOf('/characters') != -1 || containsAnyString(sectionGroups.Characters)">
             <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Characters" v-bind:key="section.slug">
               {{section.name}}
             </nuxt-link>
           </ul>
           <!-- Classes -->
           <nuxt-link tag="li" to="/classes">Classes</nuxt-link>
-          <ul v-show="$nuxt.$route.path.indexOf('/classes') === 0">
+          <ul v-show="$nuxt.$route.path.indexOf('/classes') != -1">
             <nuxt-link v-for="charClass in classes" v-bind:key="charClass.slug" tag="li" :to="`/classes/${charClass.slug}`">
               {{charClass.name}}
             </nuxt-link>
           </ul>
           <!-- Races -->
           <nuxt-link tag="li" to="/races">Races</nuxt-link>
-          <ul v-if="races" v-show="$nuxt.$route.path.indexOf('/races') === 0">
+          <ul v-if="races" v-show="$nuxt.$route.path.indexOf('/races') != -1">
             <nuxt-link v-for="race in races" v-bind:key="race.slug" tag="li" :to="`/races/${race.slug}`">
               {{race.name}}
             </nuxt-link>
           </ul>
           <!-- Combat -->  
           <nuxt-link tag="li" to="/combat/">Combat</nuxt-link>
-          <ul v-show="$nuxt.$route.path.indexOf('/combat/') === 0">
+          <ul v-show="$nuxt.$route.path.indexOf('/combat/') != -1">
             <nuxt-link tag="li" to="/combat/actions">Actions in Combat</nuxt-link>
             <nuxt-link tag="li" to="/combat/attacking">Attacking</nuxt-link>
             <nuxt-link tag="li" to="/combat/combat-sequence">Combat Sequence</nuxt-link>
@@ -78,8 +78,8 @@
             <nuxt-link tag="li" to="/gameplay-mechanics/time">Time</nuxt-link>
           </ul>
           <!-- Running a Game -->
-          <nuxt-link tag="li" to="/sections/">Running a Game</nuxt-link>
-          <ul v-show="$nuxt.$route.path.indexOf('/sections/') !== -1">
+          <nuxt-link tag="li" to="/running/">Running a Game</nuxt-link>
+          <ul v-show="$nuxt.$route.path.indexOf('/running') != -1 || containsAnyString(sectionGroups.Characters)">
             <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Rules" v-bind:key="section.slug">
               {{section.name}}
             </nuxt-link>

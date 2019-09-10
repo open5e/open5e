@@ -5,7 +5,8 @@
       <filter-input v-on:input="updateFilter" placeholder="Filter monsters..."></filter-input>
     </h2>     
     <div>
-  <table class="fiterable-table">
+  <p v-if="!monstersList.length"> Loading... </p>
+  <table v-else class="fiterable-table">
     <thead>
       <tr>
         <th class="monster-table-header" v-on:click="sort('name')">Name</th>

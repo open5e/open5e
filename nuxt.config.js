@@ -2,6 +2,10 @@ module.exports = {
     /*
     ** Headers of the page
     */
+    pageTransition: {
+        name: 'fade',
+        mode: 'out-in'
+    },
     head: {
         title: 'Open5e',
         meta: [

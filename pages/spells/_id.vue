@@ -1,6 +1,7 @@
 <template>
   <section class="container docs-container">
-    <div>
+    <p v-if="loading"> Loading... </p>
+    <div v-else>
       <h1>{{spell.name}}</h1>
       <p><em>{{spell.level}} {{spell.school}}</em> | {{spell.dnd_class}}</p>
       <p><label>Range:</label> {{spell.range}}</p>
@@ -24,13 +25,15 @@ export default {
   mounted () {
     return axios.get(`${process.env.apiUrl}/spells/${this.$route.params.id}`) //you will need to enable CORS to make this work
     .then(response => {
-      this.spell = response.data
+      this.spell = response.data;
+      this.loading = false
     })
   },
   data () {
     return {
       spell: [],
-      classList: []
+      classList: [],
+      loading: true
     }
   },
   computed: {

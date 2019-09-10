@@ -5,7 +5,7 @@
       <filter-input v-on:input="updateFilter" placeholder="Filter items..."></filter-input>
     </h2>     
     <div :class="{'three-column': !filter}">
-    <p v-if="!items.length">Loading results</p>
+    <p v-if="!items.length">Loading...</p>
     <p v-else-if="!itemListLength" >No results</p> 
       <ul class="list--items" 
         v-bind:key="letter[0].name.charAt(0)" 
