@@ -21,7 +21,7 @@
         <td>   <nuxt-link tag="a" 
             :params="{id: monster.slug}" 
             :to="`/monsters/${monster.slug}`">{{monster.name}}</nuxt-link>
-            <tag v-if="monster.document_slug !== 'wotc-srd'" class="" :title="monster.document_slug" :text="monster.document_slug"></tag>
+            <source-tag v-if="monster.document_slug !== 'wotc-srd'" class="" :title="monster.document_slug" :text="monster.document_slug"></source-tag>
         </td>
         <td>{{monster.type}}</td>
         <td><fraction-renderer :challenge="monster.challenge_rating"></fraction-renderer></td>
@@ -39,14 +39,14 @@
 import axios from 'axios'
 import FilterInput from '~/components/FilterInput.vue'
 import FractionRenderer from '~/components/FractionRenderer.vue'
-import Tag from '~/components/Tag.vue'
+import SourceTag from '~/components/SourceTag.vue'
 import { mapMutations, mapActions } from 'vuex'
 
 export default {
   components: {
     FilterInput,
     FractionRenderer,
-    Tag
+    SourceTag
   },
   beforeCreate() {
     this.$store.dispatch('LOAD_MONSTERS_LIST')

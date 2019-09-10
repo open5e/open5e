@@ -12,8 +12,8 @@
         <ul v-if="sections && races && classes">
           <!-- Characters -->
           <nuxt-link tag="li" to="/characters/">Characters</nuxt-link>
-          <ul v-show="$nuxt.$route.path.indexOf('/characters') != -1 || containsAnyString(sectionGroups.Characters)">
-            <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Characters" v-bind:key="section.slug">
+          <ul v-show="$nuxt.$route.path.indexOf('/characters') != -1 || containsAnyString(charSections)">
+            <nuxt-link v-for="section in charSections" v-bind:key="section.slug" tag="li" :to="`/sections/${section.slug}`">
               {{section.name}}
             </nuxt-link>
           </ul>
@@ -80,7 +80,7 @@
           <!-- Running a Game -->
           <nuxt-link tag="li" to="/running/">Running a Game</nuxt-link>
           <ul v-show="$nuxt.$route.path.indexOf('/running') != -1 || containsAnyString(sectionGroups.Characters)">
-            <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Rules" v-bind:key="section.slug">
+            <nuxt-link tag="li" :to="`/running/${section.slug}`" v-for="section in sectionGroups.Rules" v-bind:key="section.slug">
               {{section.name}}
             </nuxt-link>
           </ul>
@@ -185,6 +185,16 @@ export default {
     sectionGroups: function() {
       let groupedSections = this.sections.groupBy('parent');
       return groupedSections;
+    },
+    charSections: function () {
+      if (this.sectionGroups.hasOwnProperty('Characters')){
+        let results = this.sectionGroups['Characters'].concat(this.sectionGroups['Character Advancement']);
+        return results.sort(function (a,b) {
+          if (a.slug < b.slug) {return -1}
+          else if (a.slug > b.slug) {return 1}
+          else return 0;
+        })
+      }
     },
     crumbs () {
       let crumbs = []

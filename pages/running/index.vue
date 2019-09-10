@@ -1,10 +1,10 @@
 <template>
   <section class="container docs-container">
-    <h1>Gameplay Mechanics</h1>
+    <h1>Running a Game</h1>
     <div class="docs-toc">
       <span v-if="$route.hash">{{$route.hash}}</span>
       <ul>
-        <li v-for="section in sectionGroups.Rules" v-bind:key="section.slug"><nuxt-link tag="a" :to="`/sections/${section.slug}`">{{section.name}}</nuxt-link></li>
+        <li v-for="section in sectionGroups.Rules" v-bind:key="section.slug"><nuxt-link tag="a" :to="`/running/${section.slug}`">{{section.name}}</nuxt-link></li>
       </ul>
     </div>
   </section>
