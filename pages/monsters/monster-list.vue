@@ -21,7 +21,7 @@
         <td>   <nuxt-link tag="a" 
             :params="{id: monster.slug}" 
             :to="`/monsters/${monster.slug}`">{{monster.name}}</nuxt-link>
-            <source-tag v-if="monster.document_slug !== 'wotc-srd'" class="" :title="monster.document_title" :text="monster.document_slug"></source-tag>
+            <source-tag v-if="monster.document__slug && monster.document__slug !== 'wotc-srd'" class="" :title="monster.document__title" :text="monster.document__slug"></source-tag>
         </td>
         <td>{{monster.type}}</td>
         <td><fraction-renderer :challenge="monster.challenge_rating"></fraction-renderer></td>
