@@ -12,7 +12,7 @@
           :params="{id: result.slug}" 
           :to="`/${result.route}${result.slug}`">
           {{result.name}}</nuxt-link>
-        <tag v-if="monster.document_slug !== 'wotc-srd'" class="" :title="monster.document_slug" :text="monster.document_slug"></tag>
+        <source-tag v-if="result.document_slug !== 'wotc-srd'" class="source-tag" :title="result.document_title" :text="result.document_slug"></source-tag>
         <span> CR{{result.challenge_rating}} </span><span class="title-case">{{result.type}} | </span>
         <em>{{result.hit_points}}hp, AC {{result.armor_class}}</em>
         <div>
