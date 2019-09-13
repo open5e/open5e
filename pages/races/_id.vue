@@ -2,8 +2,8 @@
   <section v-show="loaded" class="container docs-container">
     <h1>{{race.name}}</h1>
     <md-viewer :text="race.desc"/>
-    <md-viewer :text="race['asi-desc']"/>
-    <md-viewer :text="race['speed-desc']"/>
+    <md-viewer :text="race['asi_desc']"/>
+    <md-viewer :text="race['speed_desc']"/>
     <md-viewer :text="race.vision"/>
     <md-viewer :text="race.age"/>
     <md-viewer :text="race.alignment"/>
@@ -15,7 +15,7 @@
     <div v-for="subrace in race.subtypes" v-bind:key="subrace.name">
       <h3>{{subrace.name}}</h3>
       <md-viewer :text="subrace.desc"/>
-      <md-viewer :text="subrace['asi-desc']"/>
+      <md-viewer :text="subrace['asi_desc']"/>
       <md-viewer :text="subrace.traits"/>
     </div>
   </section>

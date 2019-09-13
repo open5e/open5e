@@ -1,6 +1,9 @@
 <template>
-  <section class="container docs-container">
+  <section class="container docs-container"> 
+    <p v-if="loading"> Loading... </p>
+    <div v-else>
       <h1>{{monster.name}}</h1>
+      <img v-if="monster.img_main" :src="monster.img_main" class="img-main">
       <p><em>{{monster.size}} {{monster.type}}, {{monster.alignment}}</em></p>
       <hr/>
       <p> <b>Armor Class</b> {{monster.armor_class}}</p>
@@ -81,6 +84,7 @@
       <p class="action-block" v-for="action in monster.legendary_actions" v-bind:key="action.name">
         <b class="action-name">{{action.name}}. </b> <md-viewer class='inline' :text="action.desc"></md-viewer>
       </p>
+    </div>
   </section>
 </template>
 
@@ -99,7 +103,8 @@ export default {
   created () {
     return axios.get(`${process.env.apiUrl}/monsters/${this.$route.params.id}`)
     .then(response => {
-      this.monster = response.data
+      this.monster = response.data;
+      this.loading = false
     })
   },
   computed: {
@@ -133,12 +138,26 @@ export default {
       posts: [],
       errors: [],
       monster: [],
+      loading: true,
     }
   },
 }
 </script>
 
 <style scoped lang="scss">
+.img-main {
+  float: right;
+  width: 30%;
+  min-width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .img-main {
+    float: none;
+    width: 100%;
+  }
+}
+
 .action-block {
 
   .inline {

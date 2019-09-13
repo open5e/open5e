@@ -12,6 +12,7 @@
           :params="{id: result.slug}" 
           :to="`/${result.route}${result.slug}`">
           {{result.name}}</nuxt-link>
+        <source-tag v-if="result.document_slug !== 'wotc-srd'" class="source-tag" :title="result.document_title" :text="result.document_slug"></source-tag>
         <span> CR{{result.challenge_rating}} </span><span class="title-case">{{result.type}} | </span>
         <em>{{result.hit_points}}hp, AC {{result.armor_class}}</em>
         <div>
@@ -68,6 +69,7 @@ import MdViewer from '~/components/MdViewer';
 import VueRouter from 'vue-router';
 import StatBonus from '~/components/StatBonus';
 import StatBar from '~/components/StatBar';
+import SourceTag from '~/components/SourceTag';
 
 function sortFunction(a, b) {
   var textA = a.name.toUpperCase();
@@ -80,6 +82,7 @@ export default {
     MdViewer,
     StatBonus,
     StatBar,
+    SourceTag,
   },
   watch: {
     '$route.params': function (query) {

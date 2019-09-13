@@ -26,6 +26,14 @@ html {
   width: 100%;
 }
 
+.fade-enter-active, .fade-leave-active {
+  transition: all 300ms ease;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
 @media (max-width: 600px) {
   .filter-header {
     flex-direction: column;

@@ -399,7 +399,7 @@ different situations.
 
 #### Cantrips
 
-You know two cantrips of your choice from the srd:bard-spells. You learn
+You know two cantrips of your choice from the <a href="/spells/by-class/bard">Bard Spell List</a>. You learn
 additional bard cantrips of your choice at higher levels, as shown in
 the Cantrips Known column of the Bard table.
 
@@ -416,7 +416,7 @@ wounds* using either slot.
 
 #### Spells Known of 1st Level and Higher
 
-You know four 1st-level spells of your choice from the srd:bard-spells.
+You know four 1st-level spells of your choice from the <a href="/spells/by-class/bard">Bard Spell List</a>.
 
 The Spells Known column of the Bard table shows when you learn more bard
 spells of your choice. Each of these spells must be of a level for which

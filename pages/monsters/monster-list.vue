@@ -5,7 +5,8 @@
       <filter-input v-on:input="updateFilter" placeholder="Filter monsters..."></filter-input>
     </h2>     
     <div>
-  <table class="fiterable-table">
+  <p v-if="!monstersList.length"> Loading... </p>
+  <table v-else class="fiterable-table">
     <thead>
       <tr>
         <th class="monster-table-header" v-on:click="sort('name')">Name</th>
@@ -20,6 +21,7 @@
         <td>   <nuxt-link tag="a" 
             :params="{id: monster.slug}" 
             :to="`/monsters/${monster.slug}`">{{monster.name}}</nuxt-link>
+            <source-tag v-if="monster.document__slug && monster.document__slug !== 'wotc-srd'" class="" :title="monster.document__title" :text="monster.document__slug"></source-tag>
         </td>
         <td>{{monster.type}}</td>
         <td><fraction-renderer :challenge="monster.challenge_rating"></fraction-renderer></td>
@@ -37,12 +39,14 @@
 import axios from 'axios'
 import FilterInput from '~/components/FilterInput.vue'
 import FractionRenderer from '~/components/FractionRenderer.vue'
+import SourceTag from '~/components/SourceTag.vue'
 import { mapMutations, mapActions } from 'vuex'
 
 export default {
   components: {
     FilterInput,
-    FractionRenderer
+    FractionRenderer,
+    SourceTag
   },
   beforeCreate() {
     this.$store.dispatch('LOAD_MONSTERS_LIST')

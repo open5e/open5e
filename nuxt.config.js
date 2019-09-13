@@ -1,7 +1,11 @@
 module.exports = {
-  /*
-  ** Headers of the page
-  */
+    /*
+    ** Headers of the page
+    */
+    pageTransition: {
+        name: 'fade',
+        mode: 'out-in'
+    },
     head: {
         title: 'Open5e',
         meta: [
@@ -23,10 +27,6 @@ module.exports = {
     ** Build configuration
     */
     build: {
-        vendor: [
-            'vue-showdown',
-            'axios'
-        ],
         extend (config, {isDev}) {
             if (isDev && process.client) {
                 config.module.rules.push({
@@ -36,14 +36,16 @@ module.exports = {
                     exclude: /(node_modules)/
                 })
             }
+            config.resolve.alias['vue'] = 'vue/dist/vue.common'
         }
     },
     render: {
-        gzip: {
+        compressor: {
             threshold: 1024
         }
     },
     modules: [
+        ['vue-scrollto/nuxt', { duration: 300 }],
         ['@nuxtjs/google-analytics', {
             id: 'UA-73129463-3'
         }]

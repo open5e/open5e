@@ -12,28 +12,28 @@
         <ul v-if="sections && races && classes">
           <!-- Characters -->
           <nuxt-link tag="li" to="/characters/">Characters</nuxt-link>
-          <ul v-show="$nuxt.$route.path.indexOf('/characters') === 0 || containsAnyString(sectionGroups.Characters)">
-            <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Characters" v-bind:key="section.slug">
+          <ul v-show="$nuxt.$route.path.indexOf('/characters') != -1 || containsAnyString(charSections)">
+            <nuxt-link v-for="section in charSections" v-bind:key="section.slug" tag="li" :to="`/sections/${section.slug}`">
               {{section.name}}
             </nuxt-link>
           </ul>
           <!-- Classes -->
           <nuxt-link tag="li" to="/classes">Classes</nuxt-link>
-          <ul v-show="$nuxt.$route.path.indexOf('/classes') === 0">
+          <ul v-show="$nuxt.$route.path.indexOf('/classes') != -1">
             <nuxt-link v-for="charClass in classes" v-bind:key="charClass.slug" tag="li" :to="`/classes/${charClass.slug}`">
               {{charClass.name}}
             </nuxt-link>
           </ul>
           <!-- Races -->
           <nuxt-link tag="li" to="/races">Races</nuxt-link>
-          <ul v-if="races" v-show="$nuxt.$route.path.indexOf('/races') === 0">
+          <ul v-if="races" v-show="$nuxt.$route.path.indexOf('/races') != -1">
             <nuxt-link v-for="race in races" v-bind:key="race.slug" tag="li" :to="`/races/${race.slug}`">
               {{race.name}}
             </nuxt-link>
           </ul>
           <!-- Combat -->  
           <nuxt-link tag="li" to="/combat/">Combat</nuxt-link>
-          <ul v-show="$nuxt.$route.path.indexOf('/combat/') === 0">
+          <ul v-show="$nuxt.$route.path.indexOf('/combat/') != -1">
             <nuxt-link tag="li" to="/combat/actions">Actions in Combat</nuxt-link>
             <nuxt-link tag="li" to="/combat/attacking">Attacking</nuxt-link>
             <nuxt-link tag="li" to="/combat/combat-sequence">Combat Sequence</nuxt-link>
@@ -54,6 +54,15 @@
           <nuxt-link tag="li" v-bind:class="{'nuxt-link-active': $nuxt.$route.path.indexOf('/magicitems') === 0}" to="/magicitems/magicitem-list">Magic Items</nuxt-link>
           <!-- Spells -->
           <nuxt-link tag="li" v-bind:class="{'nuxt-link-active': $nuxt.$route.path.indexOf('/spells') === 0}" to="/spells/spells-table">Spells</nuxt-link>
+          <ul v-show="$nuxt.$route.path.indexOf('/spells/') !== -1">
+            <nuxt-link tag="li" to="/spells/by-class/bard">Bard Spells</nuxt-link>
+            <nuxt-link tag="li" to="/spells/by-class/cleric">Cleric Spells</nuxt-link>
+            <nuxt-link tag="li" to="/spells/by-class/druid">Druid Spells</nuxt-link>
+            <nuxt-link tag="li" to="/spells/by-class/paladin">Paladin Spells</nuxt-link>
+            <nuxt-link tag="li" to="/spells/by-class/sorcerer">Sorcerer Spells</nuxt-link>
+            <nuxt-link tag="li" to="/spells/by-class/wizard">Wizard Spells</nuxt-link>
+            <nuxt-link tag="li" to="/spells/by-class/warlock">Warlock Spells</nuxt-link>
+          </ul>
           <!-- Monsters -->
           <nuxt-link tag="li" v-bind:class="{'nuxt-link-active': $nuxt.$route.path.indexOf('/monsters') === 0}" to="/monsters/monster-list">Monsters</nuxt-link>
           <!-- Gameplay Mechanics -->
@@ -69,9 +78,9 @@
             <nuxt-link tag="li" to="/gameplay-mechanics/time">Time</nuxt-link>
           </ul>
           <!-- Running a Game -->
-          <nuxt-link tag="li" to="/running-a-game/">Running a Game</nuxt-link>
-          <ul v-show="containsAnyString(sectionGroups.Rules)">
-            <nuxt-link tag="li" :to="`/sections/${section.slug}`" v-for="section in sectionGroups.Rules" v-bind:key="section.slug">
+          <nuxt-link tag="li" to="/running/">Running a Game</nuxt-link>
+          <ul v-show="$nuxt.$route.path.indexOf('/running') != -1 || containsAnyString(sectionGroups.Characters)">
+            <nuxt-link tag="li" :to="`/running/${section.slug}`" v-for="section in sectionGroups.Rules" v-bind:key="section.slug">
               {{section.name}}
             </nuxt-link>
           </ul>
@@ -176,6 +185,16 @@ export default {
     sectionGroups: function() {
       let groupedSections = this.sections.groupBy('parent');
       return groupedSections;
+    },
+    charSections: function () {
+      if (this.sectionGroups.hasOwnProperty('Characters')){
+        let results = this.sectionGroups['Characters'].concat(this.sectionGroups['Character Advancement']);
+        return results.sort(function (a,b) {
+          if (a.slug < b.slug) {return -1}
+          else if (a.slug > b.slug) {return 1}
+          else return 0;
+        })
+      }
     },
     crumbs () {
       let crumbs = []
