@@ -2,13 +2,11 @@
   <div>
     <div class="app-wrapper" :class="{ 'show-sidebar': showSidebar }">
       <div class="sidebar">
-        <div class="sticky-header">
-          <nuxt-link tag="h1" to="/">Open5e</nuxt-link>
-          <input class="input-search" 
-            placeholder="Search Open5e"
-            v-model="searchText" 
-            v-on:keyup.enter="doSearch(searchText)">
-        </div>  
+        <nuxt-link tag="h1" to="/">Open5e</nuxt-link>
+        <input class="input-search" 
+          placeholder="Search Open5e"
+          v-model="searchText" 
+          v-on:keyup.enter="doSearch(searchText)">
         <ul v-if="sections && races && classes">
           <!-- Characters -->
           <nuxt-link tag="li" to="/characters/">Characters</nuxt-link>
@@ -78,12 +76,13 @@
             <nuxt-link tag="li" to="/gameplay-mechanics/time">Time</nuxt-link>
           </ul>
           <!-- Running a Game -->
-          <nuxt-link tag="li" to="/running/">Running a Game</nuxt-link>
+          <nuxt-link tag="li" to="/running/">Appendixes</nuxt-link>
           <ul v-show="$nuxt.$route.path.indexOf('/running') != -1 || containsAnyString(sectionGroups.Characters)">
             <nuxt-link tag="li" :to="`/running/${section.slug}`" v-for="section in sectionGroups.Rules" v-bind:key="section.slug">
               {{section.name}}
             </nuxt-link>
           </ul>
+          <nuxt-link tag="li" to="/api-docs">API Docs</nuxt-link>
         </ul>
         <a class="sidebar-link" href="https://www.patreon.com/open5e"><img src="/img/patron-badge.png" class="sidebar-image"></a>
       </div>
@@ -248,6 +247,8 @@ export default {
 }
 
 .input-search {
+  position: sticky;
+  top: 0;
   width: 100%;
   background: $color-blood;
   color: white;
@@ -255,6 +256,7 @@ export default {
   border: none;
   font-size: $font-size-base;
   outline: none;
+  z-index:2;
   &::placeholder {
     color: white;
     opacity: 0.6;
@@ -400,6 +402,20 @@ export default {
   }
   .app-wrapper.show-sidebar {
     margin-left: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app-wrapper {
+    .content-wrapper {
+      max-width: calc(100vw - 24rem);
+      overflow-x: visible;
+
+      .side-note {
+        position: absolute;
+        right: 2rem;
+      }
+    }
   }
 }
 </style>
