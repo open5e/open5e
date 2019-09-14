@@ -62,15 +62,18 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .monster-block, .spell-block {
   margin-top: 1rem;
 }
 
 .external-button {
-  margin-top: 1rem;
-  zoom: 50%;
+  margin-top: 0.6rem;
+  zoom: 40%;
   display: inline-block;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 </style>
 
