@@ -256,7 +256,7 @@ export default {
   border: none;
   font-size: $font-size-base;
   outline: none;
-  z-index:2;
+  z-index: 2;
   &::placeholder {
     color: white;
     opacity: 0.6;
