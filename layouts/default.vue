@@ -85,6 +85,7 @@
             </nuxt-link>
           </ul>
         </ul>
+        <a class="sidebar-link" href="https://www.patreon.com/open5e"><img src="/img/patron-badge.png" class="sidebar-image"></a>
       </div>
       <div class="content-wrapper">
         <div class="mobile-header">
@@ -171,6 +172,11 @@ export default {
     }
     
   },
+  watch:{
+    $route (to, from){
+        this.showSidebar = false;
+    }
+  }, 
   computed: {
     ...mapActions({
       LOAD_CLASSES: 'LOAD_CLASSES',
@@ -307,6 +313,19 @@ export default {
   font-size: 15px;
   position: relative;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+
+  .sidebar-link {
+    display: inline-block;
+    align-self: flex-end;
+    margin-top: auto;
+  }
+
+  .sidebar-image {
+    width: 100%;
+    display: block;
+  }
 
   
   h1 {
@@ -365,6 +384,10 @@ export default {
 
     .mobile-header {
       display: flex;
+    }
+
+    .container {
+      padding: 0;
     }
 
     .content-wrapper {

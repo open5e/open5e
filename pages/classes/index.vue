@@ -3,18 +3,18 @@
     <h1>Classes</h1>
     <div class="docs-toc">
       <ul>
-        <nuxt-link tag="li" to="/classes/barbarian">Barbarian</nuxt-link>
-        <nuxt-link tag="li" to="/classes/bard">Bard</nuxt-link>
-        <nuxt-link tag="li" to="/classes/cleric">Cleric</nuxt-link>
-        <nuxt-link tag="li" to="/classes/druid">Druid</nuxt-link>
-        <nuxt-link tag="li" to="/classes/fighter">Fighter</nuxt-link>
-        <nuxt-link tag="li" to="/classes/monk">Monk</nuxt-link>
-        <nuxt-link tag="li" to="/classes/paladin">Paladin</nuxt-link>
-        <nuxt-link tag="li" to="/classes/ranger">Ranger</nuxt-link>
-        <nuxt-link tag="li" to="/classes/rogue">Rogue</nuxt-link>
-        <nuxt-link tag="li" to="/classes/sorcerer">Sorcerer</nuxt-link>
-        <nuxt-link tag="li" to="/classes/warlock">Warlock</nuxt-link>
-        <nuxt-link tag="li" to="/classes/wizard">Wizard</nuxt-link>
+        <li><nuxt-link tag="a" to="/classes/barbarian">Barbarian</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/classes/bard">Bard</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/classes/cleric">Cleric</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/classes/druid">Druid</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/classes/fighter">Fighter</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/classes/monk">Monk</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/classes/paladin">Paladin</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/classes/ranger">Ranger</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/classes/rogue">Rogue</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/classes/sorcerer">Sorcerer</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/classes/warlock">Warlock</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/classes/wizard">Wizard</nuxt-link></li>
       </ul>
     </div>
   </section>
