@@ -29,7 +29,7 @@ gray.
 **Keen Senses.** You have proficiency in the Perception skill.
 
 **Fey Ancestry.** You have advantage on saving throws against being
-`srd:charmed`, and magic can't put you to sleep.
+[charmed](http://localhost:3333/gameplay-mechanics/conditions#charmed), and magic can't put you to sleep.
 
 **Trance.** Elves don't need to sleep. Instead, they meditate deeply,
 remaining semiconscious, for 4 hours a day. (The Common word for such

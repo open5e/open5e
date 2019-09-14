@@ -13,9 +13,9 @@
       <tr>
         <th class="spell-table-header" v-on:click="sort('name')">Name</th>
         <th class="spell-table-header" v-on:click="sort('school')">School</th>
-        <th class="spell-table-header" v-on:click="sort('level')">Level</th>
-        <th class="spell-table-header" v-on:click="sort('components')">Component</th>
-        <th class="spell-table-header-class">Class</th>
+        <th class="spell-table-header" v-on:click="sort('level_int')">Level</th>
+        <th class="spell-table-header hide-mobile" v-on:click="sort('components')">Component</th>
+        <th class="spell-table-header-class hide-mobile">Class</th>
       </tr>
     </thead>
     <tbody>
@@ -25,9 +25,9 @@
             :to="`/spells/${spell.slug}`">{{spell.name}}</nuxt-link>
         </td>
         <td>{{spell.school}}</td>
-        <td>{{spell.level}}</td>
-        <td>{{spell.components}}</td>
-        <td><span v-for="(spellclass, index) in spell.dnd_class" :key="spellclass"><span class="dnd_class" v-on:click="filterByClass(spellclass)">{{spellclass}}</span><span v-if="index+1 < spell.dnd_class.length">, </span></span></td>
+        <td>{{spell.level_int}}</td>
+        <td class="hide-mobile">{{spell.components}}</td>
+        <td class="hide-mobile"><span v-for="(spellclass, index) in spell.dnd_class" :key="spellclass"><span class="dnd_class" v-on:click="filterByClass(spellclass)">{{spellclass}}</span><span v-if="index+1 < spell.dnd_class.length">, </span></span></td>
       </tr>
     </tbody>
   </table>
@@ -112,6 +112,12 @@ export default {
 
     .spell-table-header-class{
         vertical-align: baseline;
+    }
+
+    @media (max-width: 600px) {
+      .hide-mobile {
+        display: none;
+      }
     }
 </style>
 

@@ -3,15 +3,15 @@
     <h1>Races</h1>
     <div class="docs-toc">
       <ul>
-        <nuxt-link tag="li" to="/races/tiefling">Tiefling</nuxt-link>
-        <nuxt-link tag="li" to="/races/dragonborn">Dragonborn</nuxt-link>
-        <nuxt-link tag="li" to="/races/dwarf">Dwarf</nuxt-link>
-        <nuxt-link tag="li" to="/races/elf">Elf</nuxt-link>
-        <nuxt-link tag="li" to="/races/gnome">Gnome</nuxt-link>
-        <nuxt-link tag="li" to="/races/half-elf">Half-Elf</nuxt-link>
-        <nuxt-link tag="li" to="/races/half-orc">Half-Orc</nuxt-link>
-        <nuxt-link tag="li" to="/races/halfling">Halfling</nuxt-link>
-        <nuxt-link tag="li" to="/races/human">Human</nuxt-link>
+        <li><nuxt-link tag="a" to="/races/tiefling">Tiefling</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/races/dragonborn">Dragonborn</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/races/dwarf">Dwarf</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/races/elf">Elf</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/races/gnome">Gnome</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/races/half-elf">Half-Elf</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/races/half-orc">Half-Orc</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/races/halfling">Halfling</nuxt-link></li>
+        <li><nuxt-link tag="a" to="/races/human">Human</nuxt-link></li>
       </ul>
     </div>
   </section>
