@@ -19,7 +19,7 @@
     <a href="https://github.com/eepMoody/open5e-api" class="external-button"><img src="/img/github-api-button.png"/></a>
     
     <h3>Support us on Patreon</h3>
-    <p>Help keep our digital lights on and keep this site <b>ad-free!</b> We count on donations and patrons to pay for our server costs, and to fund an increasing effort to fill out flavor text and add art.</p>
+    <p>Help keep our digital lights on and keep this site <b>ad-free</b> We count on donations and patrons to pay for our server costs, and to fund an increasing effort to fill out flavor text and add art.</p>
     <p>If you're interested in using art for your project, donate today! All art will be served via the API and available for use in projects consuming it.</p>
     <a href="https://www.patreon.com/open5e" class="external-button"><img src="/img/patron-button.png"/></a>
 
