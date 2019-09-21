@@ -101,6 +101,7 @@
         </ol>
         <div class="shade" v-show="showSidebar" @click="hideSidebar"></div>
         <nuxt />
+        <footer><a href="/legal/">Content provided under the OGL 1.0a</a></footer>
       </div>
     </div>
   </div>
@@ -261,6 +262,15 @@ export default {
     color: white;
     opacity: 0.6;
   }
+}
+
+footer {
+  margin-top: 1rem;
+  font-size: .8rem;
+  display: block;
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid $color-fog;
 }
 
 .mobile-header {
