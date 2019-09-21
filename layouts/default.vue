@@ -220,6 +220,10 @@ export default {
 <style lang="scss">
 @import '../assets/main';
 
+#__layout{
+  overflow: hidden;
+}
+
 .shade {
   display: none;
 }
@@ -429,4 +433,3 @@ footer {
   }
 }
 </style>
-
