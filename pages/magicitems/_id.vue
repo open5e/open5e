@@ -2,7 +2,7 @@
   <section class="container docs-container">
     <div>
       <h1>{{item.name}}</h1>
-      <p><em>{{item.type}}, {{item.rarity}}</em></p>
+      <p><em>{{item.type}}, {{item.rarity}} <span v-if="item.requires_attunement">({{item.requires_attunement}})</span></em></p>
       <md-viewer :text="item.desc"></md-viewer>
     </div>
   </section>
