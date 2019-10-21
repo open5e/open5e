@@ -90,9 +90,9 @@
         <button slot="collapse-header">
             Show associated spells
         </button>
-        <div slot="collapse-body">
-          <div v-for="spell in spells" v-bind:key="spell.slug">
-            <h3>{{spell.name}}</h3>
+        <div slot="collapse-body" class="spell-cards">
+          <div v-for="spell in spells" class="spell-card" v-bind:key="spell.slug">
+            <h4>{{spell.name}}</h4>
             <p><em>{{spell.level}} {{spell.school}}</em> | {{spell.dnd_class}}</p>
             <p><label>Range:</label> {{spell.range}}</p>
             <p><label>Casting Time:</label> {{spell.casting_time}} <span v-if="spell.ritual === 'yes'">{{spell.ritual}} (Ritual)</span></p>
