@@ -11,10 +11,10 @@
     <md-viewer :text="race.languages"/>
     <md-viewer :text="race.traits"/>
 
-    <h2 v-if="race.subtypes">Subraces</h2>
-    <div v-for="subrace in race.subtypes" v-bind:key="subrace.name">
+    <h2 v-if="subraceLength > 0">Subraces</h2>
+    <div v-for="subrace in race.subraces" v-bind:key="subrace.name">
       <h3>{{subrace.name}}</h3>
-      <md-viewer :text="subrace.desc"/>
+      <md-viewer :headerLevel="2" :text="subrace.desc"/>
       <md-viewer :text="subrace['asi_desc']"/>
       <md-viewer :text="subrace.traits"/>
     </div>
@@ -34,6 +34,7 @@ export default {
     .then(response => {
       this.race = response.data
       this.loaded = true
+      this.subraceLength = this.race.subraces.length
     })
   },
   data () {
@@ -42,6 +43,7 @@ export default {
       errors: [],
       race: [],
       loaded: false,
+      subraceLength: 0
     }
   },
 }

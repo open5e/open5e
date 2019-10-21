@@ -1,5 +1,5 @@
 <template>
-    <VueShowdown ref="mdwrapper" :vue-template="true" :options="{tables: true}" :markdown="mdText"/>
+    <VueShowdown ref="mdwrapper" :vue-template="true" :options="{tables: true, headerLevelStart:headerLevel}" :markdown="mdText"/>
 </template>
 
 <script>
@@ -19,6 +19,10 @@ export default
         text: {
             type: String,
             default: 'loading...'
+        },
+        headerLevel: {
+            type: Number,
+            default: 1,
         }
     },
     components: {
