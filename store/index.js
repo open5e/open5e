@@ -9,6 +9,7 @@ export const state = () => ({
   classes: [],
   races: [],
   sections: [],
+  backgrounds: [],
 })
 
 export const getters = {
@@ -30,11 +31,14 @@ export const getters = {
   allSections: state => {
     return state.sections
   },
+  allBackgrounds: state => {
+    return state.backgrounds
+  },
 }
 
 export const actions = {
   LOAD_MONSTERS_LIST (context) {
-    axios.get(`${process.env.apiUrl}/monsters/?fields=slug,name,challenge_rating,type,size,hit_points,document__slug, document__title&limit=1000&ordering=slug`)
+    axios.get(`${process.env.apiUrl}/monsters/?fields=slug,name,challenge_rating,type,size,hit_points,document__slug, document__title&limit=2000&ordering=slug`)
     .then(
       (response) => { context.commit('setMonstersList', response.data.results)}
     )
@@ -59,6 +63,12 @@ export const actions = {
     axios.get(`${process.env.apiUrl}/magicitems/?fields=slug,name,type,rarity&limit=1000`)
     .then(
       response => { context.commit( 'setMagicItemsList', response.data.results )
+    })
+  },
+  LOAD_BACKGROUNDS( context ) {
+    axios.get(`${process.env.apiUrl}/backgrounds/?limit=1000`)
+    .then(
+      response => { context.commit( 'setBackgrounds', response.data.results )
     })
   },
   LOAD_CLASSES( context ) {
@@ -95,6 +105,9 @@ export const mutations = {
   },
   setMagicItemsList (state, magicItems) {
     state.magicItemsList = magicItems;
+  },
+  setBackgrounds (state, backgrounds) {
+    state.backgrounds = backgrounds;
   },
   setClasses (state, classes ) {
     state.classes = classes
