@@ -33,7 +33,7 @@
     
   <h4>Ordering</h4>
   <p>You can set how results are ordered using "ordering".</p>
-  <p>For example, <code><a href="https://api.open5e.com/monsters/?limit=100">https://api.open5e.com/monsters/?limit=100</a></code> will return a paginated set of results with the page size of 100.</p>
+  <p>For example, <code><a href="https://api.open5e.com/monsters/?ordering=challenge_rating">https://api.open5e.com/monsters/?ordering=challenge_rating</a></code> will return results ordered by Challenge Rating. The API always sub-sorts by alphabetical order (so this will return CR0 creatures starting with the letter "A" first)</p>
 </section>
 </template>
 
