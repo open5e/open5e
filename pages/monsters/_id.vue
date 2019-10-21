@@ -94,12 +94,12 @@
           <div v-for="spell in spells" class="spell-card" v-bind:key="spell.slug">
             <h4>{{spell.name}}</h4>
             <p><em>{{spell.level}} {{spell.school}}</em> | {{spell.dnd_class}}</p>
-            <p><label>Range:</label> {{spell.range}}</p>
-            <p><label>Casting Time:</label> {{spell.casting_time}} <span v-if="spell.ritual === 'yes'">{{spell.ritual}} (Ritual)</span></p>
-            <p><label>Duration:</label> {{spell.duration}} <span v-if="spell.concentration === 'yes'">(Concentration)</span></p>
-            <p><label>Components: {{spell.components}} <span v-if="spell.material">({{spell.material}})</span></label></p>
+            <p><b>Range:</b> {{spell.range}}</p>
+            <p><b>Casting Time:</b> {{spell.casting_time}} <span v-if="spell.ritual === 'yes'">{{spell.ritual}} (Ritual)</span></p>
+            <p><b>Duration:</b> {{spell.duration}} <span v-if="spell.concentration === 'yes'">(Concentration)</span></p>
+            <p><b>Components: {{spell.components}} <span v-if="spell.material">({{spell.material}})</span></b></p>
             <md-viewer :text="spell.desc"></md-viewer>
-            <p v-if="spell.higher_level"><label>At higher levels:</label> {{spell.higher_level}}</p>
+            <p v-if="spell.higher_level"><b>At higher levels:</b> {{spell.higher_level}}</p>
           </div>
         </div>
       </collapse>
