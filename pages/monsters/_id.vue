@@ -52,7 +52,7 @@
         <b>Saving Throws</b>
         <span v-for="(save, index) in getSaves" :key="save.name">
           {{save.name}}
-          <stat-bonus :stat="save.val"></stat-bonus><span v-if="index < getSaves.length -1">, </span>
+          <stat-bonus :stat="save.val" :type="save.type"></stat-bonus><span v-if="index < getSaves.length -1">, </span>
         </span>
       </p>
       <p v-if="monster.skills"> 
@@ -124,9 +124,9 @@ export default {
         const statValue = this.monster[savesArray[i].name];
         console.log(`${saveValue} vs ${statValue}`);
         if (saveValue !== null) {
-          saves.push({name: savesArray[i].display, val: saveValue})
+          saves.push({name: savesArray[i].display, val: saveValue, type: 'bonus'})
         } else {
-          saves.push({name: savesArray[i].display, val: statValue})
+          saves.push({name: savesArray[i].display, val: statValue, type: 'score'})
         }
       }  
       
