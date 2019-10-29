@@ -10,11 +10,18 @@
 export default {
   computed: {
     statBonus: function () {
-      return (Math.floor((this.stat - 10)/2));
+      if (this.type === 'score') {
+        return Math.floor((this.stat -10)/2);
+      }
+      else return this.stat;
     }
   },
   props: {
     stat: Number,
+    type: {
+      type: String,
+      default: "score"
+    }
   },
 }
 </script>
