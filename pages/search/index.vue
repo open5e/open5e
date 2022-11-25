@@ -153,7 +153,7 @@ export default {
     font-weight: bold;
   }
 
-  /deep/ .highlighted {
+ ::v-deep .highlighted {
     background-color: lightgoldenrodyellow;
     font-weight: bold;
   }
