@@ -1,0 +1,1 @@
+{"version":3,"file":"PartitionKeyDefinition.d.ts","sourceRoot":"","sources":["../../../src/documents/PartitionKeyDefinition.ts"],"names":[],"mappings":"AAEA,MAAM,WAAW,sBAAsB;IACrC;;;;OAIG;IACH,KAAK,EAAE,MAAM,EAAE,CAAC;IAChB;;;OAGG;IACH,OAAO,CAAC,EAAE,MAAM,CAAC;IACjB,SAAS,CAAC,EAAE,OAAO,CAAC;CACrB"}

@@ -1,0 +1,198 @@
+import { ApplicationTelemetry } from "../../config/ClientConfiguration";
+import { Logger } from "../../logger/Logger";
+import { InProgressPerformanceEvent, IPerformanceClient, PerformanceCallbackFunction, QueueMeasurement } from "./IPerformanceClient";
+import { IPerformanceMeasurement } from "./IPerformanceMeasurement";
+import { Counters, PerformanceEvent, PerformanceEvents, StaticFields } from "./PerformanceEvent";
+export interface PreQueueEvent {
+    name: PerformanceEvents;
+    time: number;
+}
+export declare abstract class PerformanceClient implements IPerformanceClient {
+    protected authority: string;
+    protected libraryName: string;
+    protected libraryVersion: string;
+    protected applicationTelemetry: ApplicationTelemetry;
+    protected clientId: string;
+    protected logger: Logger;
+    protected callbacks: Map<string, PerformanceCallbackFunction>;
+    /**
+     * Multiple events with the same correlation id.
+     * @protected
+     * @type {Map<string, PerformanceEvent>}
+     */
+    protected eventsByCorrelationId: Map<string, PerformanceEvent>;
+    /**
+     * Map of pre-queue times by correlation Id
+     *
+     * @protected
+     * @type {Map<string, PreQueueEvent>}
+     */
+    protected preQueueTimeByCorrelationId: Map<string, PreQueueEvent>;
+    /**
+     * Map of queue measurements by correlation Id
+     *
+     * @protected
+     * @type {Map<string, Array<QueueMeasurement>>}
+     */
+    protected queueMeasurements: Map<string, Array<QueueMeasurement>>;
+    /**
+     * Creates an instance of PerformanceClient,
+     * an abstract class containing core performance telemetry logic.
+     *
+     * @constructor
+     * @param {string} clientId Client ID of the application
+     * @param {string} authority Authority used by the application
+     * @param {Logger} logger Logger used by the application
+     * @param {string} libraryName Name of the library
+     * @param {string} libraryVersion Version of the library
+     */
+    constructor(clientId: string, authority: string, logger: Logger, libraryName: string, libraryVersion: string, applicationTelemetry: ApplicationTelemetry);
+    /**
+     * Generates and returns a unique id, typically a guid.
+     *
+     * @abstract
+     * @returns {string}
+     */
+    abstract generateId(): string;
+    /**
+     * Starts and returns an platform-specific implementation of IPerformanceMeasurement.
+     * Note: this function can be changed to abstract at the next major version bump.
+     *
+     * @param {string} measureName
+     * @param {string} correlationId
+     * @returns {IPerformanceMeasurement}
+     */
+    startPerformanceMeasurement(measureName: string, correlationId: string): IPerformanceMeasurement;
+    /**
+     * Starts and returns an platform-specific implementation of IPerformanceMeasurement.
+     * Note: this incorrectly-named function will be removed at the next major version bump.
+     *
+     * @param {string} measureName
+     * @param {string} correlationId
+     * @returns {IPerformanceMeasurement}
+     */
+    startPerformanceMeasuremeant(measureName: string, correlationId: string): IPerformanceMeasurement;
+    /**
+     * Sets pre-queue time by correlation Id
+     *
+     * @abstract
+     * @param {PerformanceEvents} eventName
+     * @param {string} correlationId
+     * @returns
+     */
+    abstract setPreQueueTime(eventName: PerformanceEvents, correlationId?: string): void;
+    /**
+     * Get integral fields.
+     * Override to change the set.
+     */
+    getIntFields(): ReadonlySet<string>;
+    /**
+     * Gets map of pre-queue times by correlation Id
+     *
+     * @param {PerformanceEvents} eventName
+     * @param {string} correlationId
+     * @returns {number}
+     */
+    getPreQueueTime(eventName: PerformanceEvents, correlationId: string): number | void;
+    /**
+     * Calculates the difference between current time and time when function was queued.
+     * Note: It is possible to have 0 as the queue time if the current time and the queued time was the same.
+     *
+     * @param {number} preQueueTime
+     * @param {number} currentTime
+     * @returns {number}
+     */
+    calculateQueuedTime(preQueueTime: number, currentTime: number): number;
+    /**
+     * Adds queue measurement time to QueueMeasurements array for given correlation ID.
+     *
+     * @param {PerformanceEvents} eventName
+     * @param {?string} correlationId
+     * @param {?number} queueTime
+     * @param {?boolean} manuallyCompleted - indicator for manually completed queue measurements
+     * @returns
+     */
+    addQueueMeasurement(eventName: PerformanceEvents, correlationId?: string, queueTime?: number, manuallyCompleted?: boolean): void;
+    /**
+     * Starts measuring performance for a given operation. Returns a function that should be used to end the measurement.
+     *
+     * @param {PerformanceEvents} measureName
+     * @param {?string} [correlationId]
+     * @returns {InProgressPerformanceEvent}
+     */
+    startMeasurement(measureName: PerformanceEvents, correlationId?: string): InProgressPerformanceEvent;
+    /**
+     * Stops measuring the performance for an operation. Should only be called directly by PerformanceClient classes,
+     * as consumers should instead use the function returned by startMeasurement.
+     * Adds a new field named as "[event name]DurationMs" for sub-measurements, completes and emits an event
+     * otherwise.
+     *
+     * @param {PerformanceEvent} event
+     * @param {IPerformanceMeasurement} measurement
+     * @returns {(PerformanceEvent | null)}
+     */
+    endMeasurement(event: PerformanceEvent, measurement?: IPerformanceMeasurement): PerformanceEvent | null;
+    /**
+     * Saves extra information to be emitted when the measurements are flushed
+     * @param fields
+     * @param correlationId
+     */
+    addStaticFields(fields: StaticFields, correlationId: string): void;
+    /**
+     * Increment counters to be emitted when the measurements are flushed
+     * @param counters {Counters}
+     * @param correlationId {string} correlation identifier
+     */
+    increment(counters: Counters, correlationId: string): void;
+    /**
+     * Upserts event into event cache.
+     * First key is the correlation id, second key is the event id.
+     * Allows for events to be grouped by correlation id,
+     * and to easily allow for properties on them to be updated.
+     *
+     * @private
+     * @param {PerformanceEvent} event
+     */
+    private cacheEventByCorrelationId;
+    private getQueueInfo;
+    /**
+     * Removes measurements for a given correlation id.
+     *
+     * @param {string} correlationId
+     */
+    discardMeasurements(correlationId: string): void;
+    /**
+     * Removes cache for a given correlation id.
+     *
+     * @param {string} correlationId correlation identifier
+     */
+    private discardCache;
+    /**
+     * Registers a callback function to receive performance events.
+     *
+     * @param {PerformanceCallbackFunction} callback
+     * @returns {string}
+     */
+    addPerformanceCallback(callback: PerformanceCallbackFunction): string;
+    /**
+     * Removes a callback registered with addPerformanceCallback.
+     *
+     * @param {string} callbackId
+     * @returns {boolean}
+     */
+    removePerformanceCallback(callbackId: string): boolean;
+    /**
+     * Emits events to all registered callbacks.
+     *
+     * @param {PerformanceEvent[]} events
+     * @param {?string} [correlationId]
+     */
+    emitEvents(events: PerformanceEvent[], correlationId: string): void;
+    /**
+     * Enforce truncation of integral fields in performance event.
+     * @param {PerformanceEvent} event performance event to update.
+     * @param {Set<string>} intFields integral fields.
+     */
+    private truncateIntegralFields;
+}
+//# sourceMappingURL=PerformanceClient.d.ts.map

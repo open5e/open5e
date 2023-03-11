@@ -1,0 +1,18 @@
+import { IPerformanceClient } from "./IPerformanceClient";
+import { IPerformanceMeasurement } from "./IPerformanceMeasurement";
+import { PerformanceClient } from "./PerformanceClient";
+import { PerformanceEvents } from "./PerformanceEvent";
+export declare class StubPerformanceMeasurement implements IPerformanceMeasurement {
+    startMeasurement(): void;
+    endMeasurement(): void;
+    flushMeasurement(): number | null;
+}
+export declare class StubPerformanceClient extends PerformanceClient implements IPerformanceClient {
+    generateId(): string;
+    startPerformanceMeasuremeant(): IPerformanceMeasurement;
+    startPerformanceMeasurement(): IPerformanceMeasurement;
+    calculateQueuedTime(preQueueTime: number, currentTime: number): number;
+    addQueueMeasurement(eventName: PerformanceEvents, correlationId: string, queueTime: number): void;
+    setPreQueueTime(eventName: PerformanceEvents, correlationId?: string | undefined): void;
+}
+//# sourceMappingURL=StubPerformanceClient.d.ts.map

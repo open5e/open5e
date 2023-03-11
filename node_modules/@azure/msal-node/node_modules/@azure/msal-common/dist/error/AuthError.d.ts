@@ -1,0 +1,48 @@
+/**
+ * AuthErrorMessage class containing string constants used by error codes and messages.
+ */
+export declare const AuthErrorMessage: {
+    unexpectedError: {
+        code: string;
+        desc: string;
+    };
+    postRequestFailed: {
+        code: string;
+        desc: string;
+    };
+};
+/**
+ * General error class thrown by the MSAL.js library.
+ */
+export declare class AuthError extends Error {
+    /**
+     * Short string denoting error
+     */
+    errorCode: string;
+    /**
+     * Detailed description of error
+     */
+    errorMessage: string;
+    /**
+     * Describes the subclass of an error
+     */
+    subError: string;
+    /**
+     * CorrelationId associated with the error
+     */
+    correlationId: string;
+    constructor(errorCode?: string, errorMessage?: string, suberror?: string);
+    setCorrelationId(correlationId: string): void;
+    /**
+     * Creates an error that is thrown when something unexpected happens in the library.
+     * @param errDesc
+     */
+    static createUnexpectedError(errDesc: string): AuthError;
+    /**
+     * Creates an error for post request failures.
+     * @param errDesc
+     * @returns
+     */
+    static createPostRequestFailed(errDesc: string): AuthError;
+}
+//# sourceMappingURL=AuthError.d.ts.map

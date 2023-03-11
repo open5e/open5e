@@ -1,0 +1,134 @@
+<script setup>
+import { useHead } from '#imports'
+const props = defineProps({
+  appName: {
+    type: String,
+    default: "Nuxt"
+  },
+  version: {
+    type: String,
+    default: ""
+  },
+  loading: {
+    type: String,
+    default: "Loading"
+  }
+})
+useHead({
+  title: `${ props.loading } | ${ props.appName }`,
+  script: [
+    {
+      children: `const ANIMATION_KEY = 'nuxt-loading-enable-animation'
+      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+
+      let isLowPerformance = checkIsLowPerformance()
+      let enableAnimation = localStorage.getItem(ANIMATION_KEY) === 'false'
+         ? false
+         : localStorage.getItem(ANIMATION_KEY) === 'true'
+          ? true
+          : !isLowPerformance
+
+      const mouseLight = window.document.getElementById('mouseLight')
+      const nuxtImg = window.document.getElementById('nuxtImg')
+      const animationToggle = window.document.getElementById('animation-toggle')
+      const body = window.document.body
+      let bodyRect
+
+      function checkIsLowPerformance() {
+        return window.matchMedia('(prefers-reduced-motion: reduce)').matches
+         || navigator.hardwareConcurrency < 2
+         || navigator.deviceMemory < 1
+         // Safari has some performance issue on the blur filter. Remove this when it's fixed.
+         || isSafari
+      }
+      function calculateDistance(elem, mouseX, mouseY) {
+        return Math.floor(Math.sqrt(Math.pow(mouseX - (elem.x + (elem.width / 2)), 2) + Math.pow(mouseY - (elem.top + (elem.height / 2)), 2)));
+      }
+      function onFocusOut() {
+        if (!enableAnimation) {
+          return
+        }
+        mouseLight.style.opacity = 0
+        nuxtImg.style.opacity = 0.7
+      }
+      function onMouseMove(e) {
+        if (!enableAnimation) {
+          return
+        }
+        const pointerRect = nuxtImg.getBoundingClientRect()
+        if (!bodyRect) {
+          bodyRect = body.getBoundingClientRect()
+        }
+        const distance = calculateDistance(pointerRect, e.pageX, e.pageY)
+        const size = Math.max((1000 - distance) / 2 / 100, 1)
+
+        mouseLight.style.top = `${e.clientY - bodyRect.y - mouseLight.clientHeight / 2}px`
+        mouseLight.style.left = `${e.clientX - mouseLight.clientWidth / 2}px`
+        mouseLight.style.width = mouseLight.style.height = `${Math.max(Math.round(size * 100), 300)}px`
+        mouseLight.style.filter = `blur(${Math.min(Math.max(size * 50, 100), 160)}px)`
+        mouseLight.style.opacity = Math.min(Math.max(size / 4, 0.6), 1)
+
+        const dx = e.pageX - pointerRect.left
+        const dy = e.pageY - pointerRect.top
+        const logoGradient = `radial-gradient(circle at ${dx}px ${dy}px, black 75%, transparent 100%)`
+        nuxtImg.style['-webkit-mask-image'] = logoGradient
+        nuxtImg.style['mask-image'] = logoGradient
+        nuxtImg.style.opacity = Math.min(Math.max(size / 4, 0.7), 1)
+      }
+
+      function toggleAnimation(value = !enableAnimation) {
+        enableAnimation = value
+        document.body.classList.toggle('visual-effects', enableAnimation)
+        if (value) {
+          onFocusOut()
+          animationToggle.innerText = 'Animation Enabled'
+        }
+        else {
+          mouseLight.style.opacity = 0
+          nuxtImg.style.opacity = 1
+          nuxtImg.style['mask-image'] = ''
+          nuxtImg.style['-webkit-mask-image'] = ''
+          animationToggle.innerText = 'Animation Disabled'
+        }
+        localStorage.setItem(ANIMATION_KEY, enableAnimation ? 'true' : 'false')
+      }
+
+      animationToggle.addEventListener('click', () => toggleAnimation(), { passive: true})
+      body.addEventListener('mousemove', onMouseMove, { passive: true })
+      body.addEventListener('mouseleave', onFocusOut, { passive: true })
+
+      toggleAnimation(enableAnimation)
+
+      if (typeof window.fetch === 'undefined') {
+        setTimeout(() => window.location.reload(), 1000)
+      } else {
+        const check = async () => {
+          try {
+            const body = await window
+              .fetch(window.location.href)
+              .then(r => r.text())
+            if (!body.includes('__NUXT_LOADING__')) {
+              return window
+                .location
+                .reload()
+            }
+          } catch  {}
+          setTimeout(check, 1000)
+        }
+        check()
+      }`
+    }
+  ],
+  style: [
+    {
+      children: `;#animation-toggle{position:fixed;padding:10px;top:0;right:0;transition:opacity 0.4s ease-in;opacity:0}#animation-toggle:hover{opacity:0.8}@keyframes gradient{0%{background-position:0 0}100%{background-position:-200% 0}}@media (prefers-color-scheme: dark){html,body{color:white;color-scheme:dark}}*,:before,:after{-webkit-box-sizing:border-box;box-sizing:border-box;border-width:0;border-style:solid;border-color:#e0e0e0}*{--tw-ring-inset:var(--tw-empty, );--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(14, 165, 233, .5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000}:root{-moz-tab-size:4;-o-tab-size:4;tab-size:4}a{color:inherit;text-decoration:inherit}body{margin:0;font-family:inherit;line-height:inherit}button{font-family:inherit;font-size:100%;line-height:1.15;margin:0;text-transform:none;background-color:transparent;background-image:none;padding:0;line-height:inherit;color:inherit}button{-webkit-appearance:button}button{cursor:pointer}html{-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";line-height:1.5}svg{display:block;vertical-align:middle}`
+    }
+  ]
+})
+</script>
+<template>
+<div class="visual-effects relative overflow-hidden min-h-screen bg-white dark:bg-black flex flex-col justify-center items-center text-center"><div id="mouseLight" class="absolute top-0 rounded-full mouse-gradient transition-opacity h-[200px] w-[200px]"></div><a href="https://nuxt.com" target="_blank" rel="noopener" class="nuxt-logo z-20"><svg id="nuxtImg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214 53" width="214" height="53" fill="none"><path fill="#00DC82" d="M42.692 50.378h27.773c.882 0 1.75-.225 2.513-.653a4.951 4.951 0 0 0 1.84-1.784 4.76 4.76 0 0 0 .672-2.437c0-.855-.233-1.696-.675-2.436l-18.652-31.33a4.95 4.95 0 0 0-1.838-1.783 5.144 5.144 0 0 0-2.513-.653c-.881 0-1.748.225-2.512.653a4.95 4.95 0 0 0-1.838 1.784l-4.77 8.016L33.368 4.08a4.953 4.953 0 0 0-1.84-1.784 5.148 5.148 0 0 0-2.512-.652c-.882 0-1.749.225-2.513.652a4.954 4.954 0 0 0-1.84 1.784L1.453 43.068a4.758 4.758 0 0 0-.674 2.436c0 .855.232 1.696.673 2.437a4.95 4.95 0 0 0 1.839 1.784c.764.428 1.63.653 2.512.653h17.434c6.907 0 12.001-2.943 15.506-8.683l8.51-14.292 4.558-7.648 13.68 22.974H47.253l-4.56 7.649Zm-19.74-7.657-12.166-.002 18.238-30.631 9.1 15.315L32.03 37.64c-2.328 3.724-4.972 5.081-9.078 5.081Z"></path><path fill="currentColor" d="M86.928 49.32V8.75h9.276l11.942 19.648c1.739 2.859 3.381 5.989 4.927 9.389-.386-3.748-.579-7.284-.579-10.607V8.75h8.753v40.57h-9.333L100.03 29.673c-1.778-2.86-3.44-5.97-4.986-9.331.387 3.709.58 7.225.58 10.548v18.43H86.93ZM155.782 20.11v29.21h-8.116v-4.057c-.811 1.391-2.01 2.492-3.594 3.304-1.546.811-3.304 1.217-5.275 1.217-2.165 0-4.058-.483-5.682-1.449-1.623-1.005-2.898-2.376-3.826-4.115-.889-1.739-1.333-3.71-1.333-5.912V20.11h8.058v16.402c0 1.777.522 3.245 1.565 4.404 1.044 1.121 2.396 1.681 4.058 1.681 1.739 0 3.169-.618 4.29-1.854 1.159-1.237 1.739-2.782 1.739-4.637V20.11h8.116ZM178.224 34.135l10.493 15.185h-8.58l-6.261-8.983-6.319 8.983h-8.637l10.55-15.242-9.797-13.968h8.812l5.333 7.708 5.334-7.708h8.869l-9.797 14.025ZM195.921 11.474h8.058v8.636h7.826v6.723h-7.826v11.533c0 2.782 1.372 4.173 4.116 4.173h3.71v6.781h-4.812c-3.401 0-6.106-.927-8.116-2.782-1.971-1.854-2.956-4.462-2.956-7.824V26.833h-5.623V20.11h5.623v-8.636Z"></path></svg> </a><button id="animation-toggle">Animation Enabled</button><div class="nuxt-loader-bar"></div></div>
+</template>
+<style scoped>
+.nuxt-loader-bar{background:repeating-linear-gradient(to right, #36E4DA 0%, #1DE0B1 25%, #00DC82 50%, #1DE0B1 75%, #36E4DA 100%);height:100px;background-size:200% auto;background-position:0 0;animation:gradient 2s infinite;animation-fill-mode:forwards;animation-timing-function:linear;position:fixed;bottom:0;left:0;right:0;height:5px}.visual-effects .nuxt-loader-bar{height:100px;bottom:-50px;left:-50px;right:-50px;filter:blur(100px)}.visual-effects .mouse-gradient{background:repeating-linear-gradient(to right, #00DC82 0%, #1DE0B1 50%, #36E4DA 100%);filter:blur(100px);opacity:0.5}#animation-toggle{position:fixed;padding:10px;top:0;right:0;transition:opacity 0.4s ease-in;opacity:0}#animation-toggle:hover{opacity:0.8}@keyframes gradient{0%{background-position:0 0}100%{background-position:-200% 0}}@media (prefers-color-scheme: dark){html,body{color:white;color-scheme:dark}.nuxt-loader-bar{opacity:0.5}}*,:before,:after{-webkit-box-sizing:border-box;box-sizing:border-box;border-width:0;border-style:solid;border-color:#e0e0e0}*{--tw-ring-inset:var(--tw-empty, );--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(14, 165, 233, .5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000}:root{-moz-tab-size:4;-o-tab-size:4;tab-size:4}a{color:inherit;text-decoration:inherit}body{margin:0;font-family:inherit;line-height:inherit}button{font-family:inherit;font-size:100%;line-height:1.15;margin:0;text-transform:none;background-color:transparent;background-image:none;padding:0;line-height:inherit;color:inherit}button{-webkit-appearance:button}button{cursor:pointer}html{-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";line-height:1.5}svg{display:block;vertical-align:middle}.bg-white{--tw-bg-opacity:1;background-color:rgba(255,255,255,var(--tw-bg-opacity))}.rounded-full{border-radius:9999px}.flex{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex}.flex-col{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;-webkit-flex-direction:column;flex-direction:column}.items-center{-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center}.justify-center{-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center}.h-\[200px\]{height:200px}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.absolute{position:absolute}.relative{position:relative}.top-0{top:0px}.text-center{text-align:center}.w-\[200px\]{width:200px}.z-20{z-index:20}.transition-opacity{-webkit-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity;-webkit-transition-timing-function:cubic-bezier(.4,0,.2,1);-o-transition-timing-function:cubic-bezier(.4,0,.2,1);transition-timing-function:cubic-bezier(.4,0,.2,1);-webkit-transition-duration:.15s;-o-transition-duration:.15s;transition-duration:.15s}@media (prefers-color-scheme: dark){.dark\:bg-black{--tw-bg-opacity:1;background-color:rgba(0,0,0,var(--tw-bg-opacity))}}
+</style>

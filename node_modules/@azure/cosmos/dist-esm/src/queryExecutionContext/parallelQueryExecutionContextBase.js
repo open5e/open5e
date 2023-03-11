@@ -1,0 +1,418 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+import PriorityQueue from "priorityqueuejs";
+import semaphore from "semaphore";
+import { createClientLogger } from "@azure/logger";
+import { StatusCodes, SubStatusCodes } from "../common/statusCodes";
+import { QueryRange } from "../routing/QueryRange";
+import { SmartRoutingMapProvider } from "../routing/smartRoutingMapProvider";
+import { DocumentProducer } from "./documentProducer";
+import { getInitialHeader, mergeHeaders } from "./headerUtils";
+/** @hidden */
+const logger = createClientLogger("parallelQueryExecutionContextBase");
+/** @hidden */
+export var ParallelQueryExecutionContextBaseStates;
+(function (ParallelQueryExecutionContextBaseStates) {
+    ParallelQueryExecutionContextBaseStates["started"] = "started";
+    ParallelQueryExecutionContextBaseStates["inProgress"] = "inProgress";
+    ParallelQueryExecutionContextBaseStates["ended"] = "ended";
+})(ParallelQueryExecutionContextBaseStates || (ParallelQueryExecutionContextBaseStates = {}));
+/** @hidden */
+export class ParallelQueryExecutionContextBase {
+    /**
+     * Provides the ParallelQueryExecutionContextBase.
+     * This is the base class that ParallelQueryExecutionContext and OrderByQueryExecutionContext will derive from.
+     *
+     * When handling a parallelized query, it instantiates one instance of
+     * DocumentProcuder per target partition key range and aggregates the result of each.
+     *
+     * @param clientContext - The service endpoint to use to create the client.
+     * @param collectionLink - The Collection Link
+     * @param options - Represents the feed options.
+     * @param partitionedQueryExecutionInfo - PartitionedQueryExecutionInfo
+     * @hidden
+     */
+    constructor(clientContext, collectionLink, query, options, partitionedQueryExecutionInfo) {
+        this.clientContext = clientContext;
+        this.collectionLink = collectionLink;
+        this.query = query;
+        this.options = options;
+        this.partitionedQueryExecutionInfo = partitionedQueryExecutionInfo;
+        this.clientContext = clientContext;
+        this.collectionLink = collectionLink;
+        this.query = query;
+        this.options = options;
+        this.partitionedQueryExecutionInfo = partitionedQueryExecutionInfo;
+        this.err = undefined;
+        this.state = ParallelQueryExecutionContextBase.STATES.started;
+        this.routingProvider = new SmartRoutingMapProvider(this.clientContext);
+        this.sortOrders = this.partitionedQueryExecutionInfo.queryInfo.orderBy;
+        this.requestContinuation = options ? options.continuationToken || options.continuation : null;
+        // response headers of undergoing operation
+        this.respHeaders = getInitialHeader();
+        // Make priority queue for documentProducers
+        // The comparator is supplied by the derived class
+        this.orderByPQ = new PriorityQueue((a, b) => this.documentProducerComparator(b, a));
+        // Creating the documentProducers
+        this.sem = semaphore(1);
+        // Creating callback for semaphore
+        // TODO: Code smell
+        const createDocumentProducersAndFillUpPriorityQueueFunc = async () => {
+            // ensure the lock is released after finishing up
+            try {
+                const targetPartitionRanges = await this._onTargetPartitionRanges();
+                this.waitingForInternalExecutionContexts = targetPartitionRanges.length;
+                const maxDegreeOfParallelism = options.maxDegreeOfParallelism === undefined || options.maxDegreeOfParallelism < 1
+                    ? targetPartitionRanges.length
+                    : Math.min(options.maxDegreeOfParallelism, targetPartitionRanges.length);
+                logger.info("Query starting against " +
+                    targetPartitionRanges.length +
+                    " ranges with parallelism of " +
+                    maxDegreeOfParallelism);
+                const parallelismSem = semaphore(maxDegreeOfParallelism);
+                let filteredPartitionKeyRanges = [];
+                // The document producers generated from filteredPartitionKeyRanges
+                const targetPartitionQueryExecutionContextList = [];
+                if (this.requestContinuation) {
+                    throw new Error("Continuation tokens are not yet supported for cross partition queries");
+                }
+                else {
+                    filteredPartitionKeyRanges = targetPartitionRanges;
+                }
+                // Create one documentProducer for each partitionTargetRange
+                filteredPartitionKeyRanges.forEach((partitionTargetRange) => {
+                    // TODO: any partitionTargetRange
+                    // no async callback
+                    targetPartitionQueryExecutionContextList.push(this._createTargetPartitionQueryExecutionContext(partitionTargetRange));
+                });
+                // Fill up our priority queue with documentProducers
+                targetPartitionQueryExecutionContextList.forEach((documentProducer) => {
+                    // has async callback
+                    const throttledFunc = async () => {
+                        try {
+                            const { result: document, headers } = await documentProducer.current();
+                            this._mergeWithActiveResponseHeaders(headers);
+                            if (document === undefined) {
+                                // no results on this one
+                                return;
+                            }
+                            // if there are matching results in the target ex range add it to the priority queue
+                            try {
+                                this.orderByPQ.enq(documentProducer);
+                            }
+                            catch (e) {
+                                this.err = e;
+                            }
+                        }
+                        catch (err) {
+                            this._mergeWithActiveResponseHeaders(err.headers);
+                            this.err = err;
+                        }
+                        finally {
+                            parallelismSem.leave();
+                            this._decrementInitiationLock();
+                        }
+                    };
+                    parallelismSem.take(throttledFunc);
+                });
+            }
+            catch (err) {
+                this.err = err;
+                // release the lock
+                this.sem.leave();
+                return;
+            }
+        };
+        this.sem.take(createDocumentProducersAndFillUpPriorityQueueFunc);
+    }
+    _decrementInitiationLock() {
+        // decrements waitingForInternalExecutionContexts
+        // if waitingForInternalExecutionContexts reaches 0 releases the semaphore and changes the state
+        this.waitingForInternalExecutionContexts = this.waitingForInternalExecutionContexts - 1;
+        if (this.waitingForInternalExecutionContexts === 0) {
+            this.sem.leave();
+            if (this.orderByPQ.size() === 0) {
+                this.state = ParallelQueryExecutionContextBase.STATES.inProgress;
+            }
+        }
+    }
+    _mergeWithActiveResponseHeaders(headers) {
+        mergeHeaders(this.respHeaders, headers);
+    }
+    _getAndResetActiveResponseHeaders() {
+        const ret = this.respHeaders;
+        this.respHeaders = getInitialHeader();
+        return ret;
+    }
+    async _onTargetPartitionRanges() {
+        // invokes the callback when the target partition ranges are ready
+        const parsedRanges = this.partitionedQueryExecutionInfo.queryRanges;
+        const queryRanges = parsedRanges.map((item) => QueryRange.parseFromDict(item));
+        return this.routingProvider.getOverlappingRanges(this.collectionLink, queryRanges);
+    }
+    /**
+     * Gets the replacement ranges for a partitionkeyrange that has been split
+     */
+    async _getReplacementPartitionKeyRanges(documentProducer) {
+        const partitionKeyRange = documentProducer.targetPartitionKeyRange;
+        // Download the new routing map
+        this.routingProvider = new SmartRoutingMapProvider(this.clientContext);
+        // Get the queryRange that relates to this partitionKeyRange
+        const queryRange = QueryRange.parsePartitionKeyRange(partitionKeyRange);
+        return this.routingProvider.getOverlappingRanges(this.collectionLink, [queryRange]);
+    }
+    // TODO: P0 Code smell - can barely tell what this is doing
+    /**
+     * Removes the current document producer from the priqueue,
+     * replaces that document producer with child document producers,
+     * then reexecutes the originFunction with the corrrected executionContext
+     */
+    async _repairExecutionContext(originFunction) {
+        // TODO: any
+        // Get the replacement ranges
+        // Removing the invalid documentProducer from the orderByPQ
+        const parentDocumentProducer = this.orderByPQ.deq();
+        try {
+            const replacementPartitionKeyRanges = await this._getReplacementPartitionKeyRanges(parentDocumentProducer);
+            const replacementDocumentProducers = [];
+            // Create the replacement documentProducers
+            replacementPartitionKeyRanges.forEach((partitionKeyRange) => {
+                // Create replacment document producers with the parent's continuationToken
+                const replacementDocumentProducer = this._createTargetPartitionQueryExecutionContext(partitionKeyRange, parentDocumentProducer.continuationToken);
+                replacementDocumentProducers.push(replacementDocumentProducer);
+            });
+            // We need to check if the documentProducers even has anything left to fetch from before enqueing them
+            const checkAndEnqueueDocumentProducer = async (documentProducerToCheck, checkNextDocumentProducerCallback) => {
+                try {
+                    const { result: afterItem } = await documentProducerToCheck.current();
+                    if (afterItem === undefined) {
+                        // no more results left in this document producer, so we don't enqueue it
+                    }
+                    else {
+                        // Safe to put document producer back in the queue
+                        this.orderByPQ.enq(documentProducerToCheck);
+                    }
+                    await checkNextDocumentProducerCallback();
+                }
+                catch (err) {
+                    this.err = err;
+                    return;
+                }
+            };
+            const checkAndEnqueueDocumentProducers = async (rdp) => {
+                if (rdp.length > 0) {
+                    // We still have a replacementDocumentProducer to check
+                    const replacementDocumentProducer = rdp.shift();
+                    await checkAndEnqueueDocumentProducer(replacementDocumentProducer, async () => {
+                        await checkAndEnqueueDocumentProducers(rdp);
+                    });
+                }
+                else {
+                    // reexecutes the originFunction with the corrrected executionContext
+                    return originFunction();
+                }
+            };
+            // Invoke the recursive function to get the ball rolling
+            await checkAndEnqueueDocumentProducers(replacementDocumentProducers);
+        }
+        catch (err) {
+            this.err = err;
+            throw err;
+        }
+    }
+    static _needPartitionKeyRangeCacheRefresh(error) {
+        // TODO: any error
+        return (error.code === StatusCodes.Gone &&
+            "substatus" in error &&
+            error["substatus"] === SubStatusCodes.PartitionKeyRangeGone);
+    }
+    /**
+     * Checks to see if the executionContext needs to be repaired.
+     * if so it repairs the execution context and executes the ifCallback,
+     * else it continues with the current execution context and executes the elseCallback
+     */
+    async _repairExecutionContextIfNeeded(ifCallback, elseCallback) {
+        const documentProducer = this.orderByPQ.peek();
+        // Check if split happened
+        try {
+            await documentProducer.current();
+            elseCallback();
+        }
+        catch (err) {
+            if (ParallelQueryExecutionContextBase._needPartitionKeyRangeCacheRefresh(err)) {
+                // Split has happened so we need to repair execution context before continueing
+                return this._repairExecutionContext(ifCallback);
+            }
+            else {
+                // Something actually bad happened ...
+                this.err = err;
+                throw err;
+            }
+        }
+    }
+    /**
+     * Fetches the next element in the ParallelQueryExecutionContextBase.
+     */
+    async nextItem() {
+        if (this.err) {
+            // if there is a prior error return error
+            throw this.err;
+        }
+        return new Promise((resolve, reject) => {
+            this.sem.take(() => {
+                // NOTE: lock must be released before invoking quitting
+                if (this.err) {
+                    // release the lock before invoking callback
+                    this.sem.leave();
+                    // if there is a prior error return error
+                    this.err.headers = this._getAndResetActiveResponseHeaders();
+                    reject(this.err);
+                    return;
+                }
+                if (this.orderByPQ.size() === 0) {
+                    // there is no more results
+                    this.state = ParallelQueryExecutionContextBase.STATES.ended;
+                    // release the lock before invoking callback
+                    this.sem.leave();
+                    return resolve({
+                        result: undefined,
+                        headers: this._getAndResetActiveResponseHeaders(),
+                    });
+                }
+                const ifCallback = () => {
+                    // Release the semaphore to avoid deadlock
+                    this.sem.leave();
+                    // Reexcute the function
+                    return resolve(this.nextItem());
+                };
+                const elseCallback = async () => {
+                    let documentProducer;
+                    try {
+                        documentProducer = this.orderByPQ.deq();
+                    }
+                    catch (e) {
+                        // if comparing elements of the priority queue throws exception
+                        // set that error and return error
+                        this.err = e;
+                        // release the lock before invoking callback
+                        this.sem.leave();
+                        this.err.headers = this._getAndResetActiveResponseHeaders();
+                        reject(this.err);
+                        return;
+                    }
+                    let item;
+                    let headers;
+                    try {
+                        const response = await documentProducer.nextItem();
+                        item = response.result;
+                        headers = response.headers;
+                        this._mergeWithActiveResponseHeaders(headers);
+                        if (item === undefined) {
+                            // this should never happen
+                            // because the documentProducer already has buffered an item
+                            // assert item !== undefined
+                            this.err = new Error(`Extracted DocumentProducer from the priority queue \
+                                            doesn't have any buffered item!`);
+                            // release the lock before invoking callback
+                            this.sem.leave();
+                            return resolve({
+                                result: undefined,
+                                headers: this._getAndResetActiveResponseHeaders(),
+                            });
+                        }
+                    }
+                    catch (err) {
+                        this.err = new Error(`Extracted DocumentProducer from the priority queue fails to get the \
+                                    buffered item. Due to ${JSON.stringify(err)}`);
+                        this.err.headers = this._getAndResetActiveResponseHeaders();
+                        // release the lock before invoking callback
+                        this.sem.leave();
+                        reject(this.err);
+                        return;
+                    }
+                    // we need to put back the document producer to the queue if it has more elements.
+                    // the lock will be released after we know document producer must be put back in the queue or not
+                    try {
+                        const { result: afterItem, headers: otherHeaders } = await documentProducer.current();
+                        this._mergeWithActiveResponseHeaders(otherHeaders);
+                        if (afterItem === undefined) {
+                            // no more results is left in this document producer
+                        }
+                        else {
+                            try {
+                                const headItem = documentProducer.fetchResults[0];
+                                if (typeof headItem === "undefined") {
+                                    throw new Error("Extracted DocumentProducer from PQ is invalid state with no result!");
+                                }
+                                this.orderByPQ.enq(documentProducer);
+                            }
+                            catch (e) {
+                                // if comparing elements in priority queue throws exception
+                                // set error
+                                this.err = e;
+                            }
+                        }
+                    }
+                    catch (err) {
+                        if (ParallelQueryExecutionContextBase._needPartitionKeyRangeCacheRefresh(err)) {
+                            // We want the document producer enqueued
+                            // So that later parts of the code can repair the execution context
+                            this.orderByPQ.enq(documentProducer);
+                        }
+                        else {
+                            // Something actually bad happened
+                            this.err = err;
+                            reject(this.err);
+                        }
+                    }
+                    finally {
+                        // release the lock before returning
+                        this.sem.leave();
+                    }
+                    // invoke the callback on the item
+                    return resolve({
+                        result: item,
+                        headers: this._getAndResetActiveResponseHeaders(),
+                    });
+                };
+                this._repairExecutionContextIfNeeded(ifCallback, elseCallback).catch(reject);
+            });
+        });
+    }
+    /**
+     * Determine if there are still remaining resources to processs based on the value of the continuation
+     * token or the elements remaining on the current batch in the QueryIterator.
+     * @returns true if there is other elements to process in the ParallelQueryExecutionContextBase.
+     */
+    hasMoreResults() {
+        return !(this.state === ParallelQueryExecutionContextBase.STATES.ended || this.err !== undefined);
+    }
+    /**
+     * Creates document producers
+     */
+    _createTargetPartitionQueryExecutionContext(partitionKeyTargetRange, continuationToken) {
+        // TODO: any
+        // creates target partition range Query Execution Context
+        let rewrittenQuery = this.partitionedQueryExecutionInfo.queryInfo.rewrittenQuery;
+        let sqlQuerySpec;
+        const query = this.query;
+        if (typeof query === "string") {
+            sqlQuerySpec = { query };
+        }
+        else {
+            sqlQuerySpec = query;
+        }
+        const formatPlaceHolder = "{documentdb-formattableorderbyquery-filter}";
+        if (rewrittenQuery) {
+            sqlQuerySpec = JSON.parse(JSON.stringify(sqlQuerySpec));
+            // We hardcode the formattable filter to true for now
+            rewrittenQuery = rewrittenQuery.replace(formatPlaceHolder, "true");
+            sqlQuerySpec["query"] = rewrittenQuery;
+        }
+        const options = Object.assign({}, this.options);
+        options.continuationToken = continuationToken;
+        return new DocumentProducer(this.clientContext, this.collectionLink, sqlQuerySpec, partitionKeyTargetRange, options);
+    }
+}
+ParallelQueryExecutionContextBase.STATES = ParallelQueryExecutionContextBaseStates;
+//# sourceMappingURL=parallelQueryExecutionContextBase.js.map

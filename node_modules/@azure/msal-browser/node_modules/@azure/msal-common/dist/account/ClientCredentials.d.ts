@@ -1,0 +1,15 @@
+/**
+ * Client Assertion credential for Confidential Clients
+ */
+export declare type ClientAssertion = {
+    assertion: string;
+    assertionType: string;
+};
+/**
+ * Client Credentials set for Confidential Clients
+ */
+export declare type ClientCredentials = {
+    clientSecret?: string;
+    clientAssertion?: ClientAssertion;
+};
+//# sourceMappingURL=ClientCredentials.d.ts.map

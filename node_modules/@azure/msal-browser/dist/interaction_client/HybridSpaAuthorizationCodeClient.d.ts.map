@@ -1,0 +1,1 @@
+{"version":3,"file":"HybridSpaAuthorizationCodeClient.d.ts","sourceRoot":"","sources":["../../src/interaction_client/HybridSpaAuthorizationCodeClient.ts"],"names":[],"mappings":"AAKA,OAAO,EAAE,uBAAuB,EAAE,mBAAmB,EAAE,MAAM,oBAAoB,CAAC;AAElF,qBAAa,gCAAiC,SAAQ,uBAAuB;gBAC7D,MAAM,EAAE,mBAAmB;CAI1C"}

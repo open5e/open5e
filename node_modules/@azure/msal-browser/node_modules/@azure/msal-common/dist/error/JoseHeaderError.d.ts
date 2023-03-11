@@ -1,0 +1,29 @@
+import { AuthError } from "./AuthError";
+/**
+ * ClientAuthErrorMessage class containing string constants used by error codes and messages.
+ */
+export declare const JoseHeaderErrorMessage: {
+    missingKidError: {
+        code: string;
+        desc: string;
+    };
+    missingAlgError: {
+        code: string;
+        desc: string;
+    };
+};
+/**
+ * Error thrown when there is an error in the client code running on the browser.
+ */
+export declare class JoseHeaderError extends AuthError {
+    constructor(errorCode: string, errorMessage?: string);
+    /**
+     * Creates an error thrown when keyId isn't set on JOSE header.
+     */
+    static createMissingKidError(): JoseHeaderError;
+    /**
+     * Creates an error thrown when algorithm isn't set on JOSE header.
+     */
+    static createMissingAlgError(): JoseHeaderError;
+}
+//# sourceMappingURL=JoseHeaderError.d.ts.map

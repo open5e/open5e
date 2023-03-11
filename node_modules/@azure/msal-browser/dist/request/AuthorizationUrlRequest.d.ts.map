@@ -1,0 +1,1 @@
+{"version":3,"file":"AuthorizationUrlRequest.d.ts","sourceRoot":"","sources":["../../src/request/AuthorizationUrlRequest.ts"],"names":[],"mappings":"AAKA,OAAO,EAAE,6BAA6B,EAAE,MAAM,oBAAoB,CAAC;AAEnE;;GAEG;AACH,oBAAY,uBAAuB,GAAG,IAAI,CAAC,6BAA6B,EAAE,OAAO,GAAC,OAAO,GAAC,qBAAqB,GAAC,cAAc,CAAC,GAAG;IAC9H,KAAK,EAAE,MAAM,CAAC;IACd,KAAK,EAAE,MAAM,CAAC;CACjB,CAAC"}

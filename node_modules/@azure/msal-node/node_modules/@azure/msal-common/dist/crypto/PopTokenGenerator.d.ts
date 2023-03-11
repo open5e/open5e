@@ -1,0 +1,58 @@
+import { ICrypto, SignedHttpRequestParameters } from "./ICrypto";
+import { IPerformanceClient } from "../telemetry/performance/IPerformanceClient";
+/**
+ * See eSTS docs for more info.
+ * - A kid element, with the value containing an RFC 7638-compliant JWK thumbprint that is base64 encoded.
+ * -  xms_ksl element, representing the storage location of the key's secret component on the client device. One of two values:
+ *      - sw: software storage
+ *      - uhw: hardware storage
+ */
+declare type ReqCnf = {
+    kid: string;
+    xms_ksl: KeyLocation;
+};
+export declare type ReqCnfData = {
+    kid: string;
+    reqCnfString: string;
+    reqCnfHash: string;
+};
+declare enum KeyLocation {
+    SW = "sw",
+    UHW = "uhw"
+}
+export declare class PopTokenGenerator {
+    private cryptoUtils;
+    private performanceClient?;
+    constructor(cryptoUtils: ICrypto, performanceClient?: IPerformanceClient);
+    /**
+     * Generates the req_cnf validated at the RP in the POP protocol for SHR parameters
+     * and returns an object containing the keyid, the full req_cnf string and the req_cnf string hash
+     * @param request
+     * @returns
+     */
+    generateCnf(request: SignedHttpRequestParameters): Promise<ReqCnfData>;
+    /**
+     * Generates key_id for a SHR token request
+     * @param request
+     * @returns
+     */
+    generateKid(request: SignedHttpRequestParameters): Promise<ReqCnf>;
+    /**
+     * Signs the POP access_token with the local generated key-pair
+     * @param accessToken
+     * @param request
+     * @returns
+     */
+    signPopToken(accessToken: string, keyId: string, request: SignedHttpRequestParameters): Promise<string>;
+    /**
+     * Utility function to generate the signed JWT for an access_token
+     * @param payload
+     * @param kid
+     * @param request
+     * @param claims
+     * @returns
+     */
+    signPayload(payload: string, keyId: string, request: SignedHttpRequestParameters, claims?: object): Promise<string>;
+}
+export {};
+//# sourceMappingURL=PopTokenGenerator.d.ts.map

@@ -1,0 +1,67 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Socket = void 0;
+var _duplex = require("../stream/duplex.cjs");
+class Socket extends _duplex.Duplex {
+  constructor(_options) {
+    super();
+    this.bufferSize = 0;
+    this.bytesRead = 0;
+    this.bytesWritten = 0;
+    this.connecting = false;
+    this.destroyed = false;
+    this.pending = false;
+    this.localAddress = "";
+    this.localPort = 0;
+    this.remoteAddress = "";
+    this.remoteFamily = "";
+    this.remotePort = 0;
+    this.readyState = "readOnly";
+  }
+  write(_buffer, _arg1, _arg2) {
+    return false;
+  }
+  connect(_arg1, _arg2, _arg3) {
+    return this;
+  }
+  end(_arg1, _arg2, _arg3) {
+    return this;
+  }
+  setEncoding(_encoding) {
+    return this;
+  }
+  pause() {
+    return this;
+  }
+  resume() {
+    return this;
+  }
+  setTimeout(_timeout, _callback) {
+    return this;
+  }
+  setNoDelay(_noDelay) {
+    return this;
+  }
+  setKeepAlive(_enable, _initialDelay) {
+    return this;
+  }
+  address() {
+    return {};
+  }
+  unref() {
+    return this;
+  }
+  ref() {
+    return this;
+  }
+  resetAndDestroy() {
+    const err = new Error("ERR_SOCKET_CLOSED");
+    err.code = "ERR_SOCKET_CLOSED";
+    this.destroy(err);
+    return this;
+  }
+}
+exports.Socket = Socket;

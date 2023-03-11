@@ -1,0 +1,1 @@
+{"version":3,"file":"extractPartitionKey.d.ts","sourceRoot":"","sources":["../../src/extractPartitionKey.ts"],"names":[],"mappings":"AAGA,OAAO,EAAE,YAAY,EAAE,sBAAsB,EAAE,MAAM,aAAa,CAAC;AAEnE;;GAEG;AACH,wBAAgB,mBAAmB,CACjC,QAAQ,EAAE,OAAO,EACjB,sBAAsB,EAAE,sBAAsB,GAC7C,YAAY,EAAE,CAyBhB;AACD;;GAEG;AACH,wBAAgB,qBAAqB,CAAC,sBAAsB,EAAE,sBAAsB,GAAG,OAAO,EAAE,CAM/F"}

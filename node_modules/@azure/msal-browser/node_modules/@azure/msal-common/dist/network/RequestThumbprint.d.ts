@@ -1,0 +1,17 @@
+import { AuthenticationScheme } from "../utils/Constants";
+/**
+ * Type representing a unique request thumbprint.
+ */
+export declare type RequestThumbprint = {
+    clientId: string;
+    authority: string;
+    scopes: Array<string>;
+    homeAccountIdentifier?: string;
+    claims?: string;
+    authenticationScheme?: AuthenticationScheme;
+    resourceRequestMethod?: string;
+    resourceRequestUri?: string;
+    shrClaims?: string;
+    sshKid?: string;
+};
+//# sourceMappingURL=RequestThumbprint.d.ts.map

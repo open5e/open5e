@@ -1,0 +1,19 @@
+import { ProtocolMode } from "./ProtocolMode";
+import { AzureRegionConfiguration } from "./AzureRegionConfiguration";
+export declare type AuthorityOptions = {
+    protocolMode: ProtocolMode;
+    knownAuthorities: Array<string>;
+    cloudDiscoveryMetadata: string;
+    authorityMetadata: string;
+    skipAuthorityMetadataCache?: boolean;
+    azureRegionConfiguration?: AzureRegionConfiguration;
+};
+export declare enum AzureCloudInstance {
+    None = 0,
+    AzurePublic = "https://login.microsoftonline.com",
+    AzurePpe = "https://login.windows-ppe.net",
+    AzureChina = "https://login.chinacloudapi.cn",
+    AzureGermany = "https://login.microsoftonline.de",
+    AzureUsGovernment = "https://login.microsoftonline.us"
+}
+//# sourceMappingURL=AuthorityOptions.d.ts.map
