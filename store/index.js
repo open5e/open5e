@@ -38,7 +38,7 @@ export const getters = {
 
 export const actions = {
   LOAD_MONSTERS_LIST (context) {
-    axios.get(`${process.env.apiUrl}/monsters/?fields=slug,name,challenge_rating,type,size,hit_points,document__slug, document__title&limit=2000&ordering=slug`)
+    axios.get(`${process.env.apiUrl}/monsters/?fields=slug,name,challenge_rating,type,size,hit_points,document__slug, document__title&limit=5000&ordering=slug`)
     .then(
       (response) => { context.commit('setMonstersList', response.data.results)}
     )
