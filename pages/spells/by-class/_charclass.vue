@@ -22,6 +22,7 @@
             :to="`/spells/${spell.slug}`">
               {{spell.name}}
             </nuxt-link>
+            <source-tag v-if="spell.document__slug && spell.document__slug !== 'wotc-srd'" class="" :title="spell.document__title" :text="spell.document__slug"></source-tag>
           </li>
       </ul>
     </div>
@@ -31,14 +32,16 @@
 <script>
 import axios from 'axios'
 import FilterInput from '~/components/FilterInput.vue'
+import SourceTag from '~/components/SourceTag.vue'
 import * as _ from 'underscore'
 export default {
   components: {
-    FilterInput
+    FilterInput,
+    SourceTag
   },
   mounted () {
     this.filter = this.$route.params.charclass
-    return axios.get(`${process.env.apiUrl}/spells/?fields=slug,name,level_int,level,dnd_class&limit=1000`) //you will need to enable CORS to make this work
+    return axios.get(`${process.env.apiUrl}/spells/?fields=slug,name,level_int,level,dnd_class,document__slug&limit=1000`) //you will need to enable CORS to make this work
     .then(response => {
       this.spells = response.data.results
     })
