@@ -36,9 +36,9 @@
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "css-loader": "^5.0",
-    "eslint": "^4.2.0",
+    "eslint": "^4.0.0",
     "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^4.0.2",
+    "eslint-loader": "^2.0",
     "eslint-plugin-vue": "^4.0.0",
     "html-webpack-plugin": "^4.0",
     "mkdirp": "^0.5.6",
