@@ -44,12 +44,6 @@ module.exports = {
             threshold: 1024
         }
     },
-    modules: [
-        ['vue-scrollto/nuxt', { duration: 300 }],
-        ['@nuxtjs/google-analytics', {
-            id: 'UA-73129463-3'
-        }]
-    ],
     env: {
         apiUrl: process.env.API_URL || 'https://api.open5e.com'
     }
