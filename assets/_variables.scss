@@ -8,8 +8,8 @@ $font-size-base: 1rem;
 // LAYOUT
 $pad-md: 1rem;
 
-$pad-xs: $pad-md/4;
-$pad-sm: $pad-md/2;
+$pad-xs: calc($pad-md/4);
+$pad-sm: calc($pad-md/2);
 $pad-lg: 2rem;
 $pad-xl: 3rem;
 

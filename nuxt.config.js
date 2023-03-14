@@ -27,6 +27,12 @@ module.exports = {
     ** Build configuration
     */
     build: {
+        transpile: [
+            '@sindresorhus/slugify',
+            '@sindresorhus/transliterate',
+            'hast-util-select',
+            'lodash-es'
+        ],
         extend (config, {isDev}) {
             if (isDev && process.client) {
                 config.module.rules.push({
@@ -39,17 +45,17 @@ module.exports = {
             config.resolve.alias['vue'] = 'vue/dist/vue.common'
         }
     },
-    render: {
-        compressor: {
-            threshold: 1024
-        }
-    },
     modules: [
         ['vue-scrollto/nuxt', { duration: 300 }],
         ['@nuxtjs/google-analytics', {
             id: 'UA-73129463-3'
         }]
     ],
+    render: {
+        compressor: {
+            threshold: 1024
+        }
+    },
     env: {
         apiUrl: process.env.API_URL || 'https://api.open5e.com'
     }

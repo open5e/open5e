@@ -17,7 +17,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="monster in monstersListed" :key="monster.name">
+      <tr v-for="monster in monstersListed" :key="monster.slug">
         <td>   <nuxt-link tag="a" 
             :params="{id: monster.slug}" 
             :to="`/monsters/${monster.slug}`">{{monster.name}}</nuxt-link>
