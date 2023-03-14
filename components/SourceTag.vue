@@ -14,13 +14,14 @@ export default {
       default: "#ffffff",
     },
     background: {
-      default: "#cccccc"
+      default: "#aaaaaa"
     },
     border: {
-      default: "1px solid #bbbbbb"
+      default: "1px solid #999999"
     }
   }
 }
+
 </script>
 
 <style lang='scss' scoped>

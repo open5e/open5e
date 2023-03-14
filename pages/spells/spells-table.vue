@@ -23,6 +23,7 @@
         <td>   <nuxt-link tag="a" 
             :params="{id: spell.slug}" 
             :to="`/spells/${spell.slug}`">{{spell.name}}</nuxt-link>
+            <source-tag v-if="spell.document__slug && spell.document__slug !== 'wotc-srd'" class="" :title="spell.document__title" :text="spell.document__slug"></source-tag>
         </td>
         <td>{{spell.school}}</td>
         <td>{{spell.level_int}}</td>
@@ -39,11 +40,13 @@
 <script>
 import axios from 'axios'
 import FilterInput from '~/components/FilterInput.vue'
+import SourceTag from '~/components/SourceTag.vue'
 import { mapGetters } from 'vuex'
 
 export default {
   components: {
-    FilterInput
+    FilterInput,
+    SourceTag
   },
   mounted () {
     this.$store.dispatch('LOAD_SPELLS');

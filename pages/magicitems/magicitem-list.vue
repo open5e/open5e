@@ -18,6 +18,7 @@
             :to="`/magicitems/${item.slug}`">
               {{item.name}}
             </nuxt-link>
+            <source-tag v-if="item.document__slug && item.document__slug !== 'wotc-srd'" class="" :title="item.document__title" :text="item.document__slug"></source-tag>
           </li>
       </ul>
     </div>
@@ -27,11 +28,13 @@
 <script>
 import axios from 'axios'
 import FilterInput from '~/components/FilterInput.vue'
+import SourceTag from '~/components/SourceTag.vue'
 import { mapGetters, mapActions} from 'vuex'
 
 export default {
   components: {
-    FilterInput
+    FilterInput,
+    SourceTag
   },
   beforeCreate() {
     this.$store.dispatch('LOAD_MAGICITEMS');
