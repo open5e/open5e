@@ -23,6 +23,7 @@
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
     "axios": "^0.21.1",
+    "buffer": "^6.0.3",
     "node": "^16.19.1",
     "node-fetch": "^2.6.1",
     "npm": "^8.19.3",
