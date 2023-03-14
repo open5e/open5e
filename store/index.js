@@ -44,7 +44,7 @@ export const actions = {
     )
   },
   LOAD_SPELLS( context ) {
-    axios.get(`${process.env.apiUrl}/spells/?fields=slug,name,school,dnd_class,level,components,level_int, document__slug, document__title&limit=1000`) //you will need to enable CORS to make this work
+    axios.get(`${process.env.apiUrl}/spells/?fields=slug,name,school,dnd_class,level,components,level_int,document__slug,document__title&limit=1000`) //you will need to enable CORS to make this work
     .then(
       (response => {
         let spells = response.data.results
@@ -60,7 +60,7 @@ export const actions = {
     )
   },
   LOAD_MAGICITEMS( context ) {
-    axios.get(`${process.env.apiUrl}/magicitems/?fields=slug,name,type,rarity&limit=1000`)
+    axios.get(`${process.env.apiUrl}/magicitems/?fields=slug,name,type,rarity,document__slug,document__title&limit=1000`)
     .then(
       response => { context.commit( 'setMagicItemsList', response.data.results )
     })
