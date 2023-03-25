@@ -18,7 +18,8 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
@@ -42,6 +43,7 @@
     "eslint-loader": "^2.0",
     "eslint-plugin-vue": "^4.0.0",
     "html-webpack-plugin": "^4.0",
+    "husky": "^8.0.3",
     "mkdirp": "^0.5.6",
     "sass": "^1.59.2",
     "sass-loader": "^9",

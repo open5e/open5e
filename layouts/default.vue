@@ -198,7 +198,7 @@ export default {
         return results.sort(function (a,b) {
           if (a.slug < b.slug) {return -1}
           else if (a.slug > b.slug) {return 1}
-          else return 0;
+          else {return 0;}
         })
       }
     },
