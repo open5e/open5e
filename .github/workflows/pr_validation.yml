@@ -3,7 +3,10 @@ name: PR Validation
 on:
   pull_request:
     types: [opened, reopened]
-  push
+  push:
+    branches-ignore:
+      - main
+      - master
 
 jobs:
   build:
