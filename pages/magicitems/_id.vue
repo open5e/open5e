@@ -2,8 +2,8 @@
   <section class="container docs-container">
     <div>
       <h1 class="inline">{{item.name}}</h1>
-      <source-tag v-if="item.document__slug" :title="item.document__title" :text="item.document__slug"></source-tag>
-      <p><em>{{item.type}}, {{item.rarity}} <span v-if="item.requires_attunement">({{item.requires_attunement}})</span></em></p>
+      <source-tag v-show="item.document__slug" :title="item.document__title" :text="item.document__slug"></source-tag>
+      <p><em>{{item.type}}, {{item.rarity}} <span v-show="item.requires_attunement">({{item.requires_attunement}})</span></em></p>
       <md-viewer :text="item.desc"></md-viewer>
     </div>
   </section>
