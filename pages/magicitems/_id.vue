@@ -1,6 +1,7 @@
 <template>
   <section class="container docs-container">
-    <div>
+    <p v-if="loading"> Loading... </p>
+    <div v-else>
       <h1 class="inline">{{item.name}}</h1>
       <source-tag v-show="item.document__slug" :title="item.document__title" :text="item.document__slug"></source-tag>
       <p><em>{{item.type}}, {{item.rarity}} <span v-show="item.requires_attunement">({{item.requires_attunement}})</span></em></p>
