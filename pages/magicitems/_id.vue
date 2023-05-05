@@ -25,12 +25,14 @@ export default {
   mounted () {
     return axios.get(`${process.env.apiUrl}/magicitems/${this.$route.params.id}`) //you will need to enable CORS to make this work
     .then(response => {
-      this.item = response.data
+      this.item = response.data;
+      this.loading = false
     })
   },
   data () {
     return {
       item: [],
+      loading: true,
     }
   },
   computed: {
