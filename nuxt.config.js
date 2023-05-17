@@ -1,4 +1,4 @@
-export default defineNuxtConfig({
+module.exports = {
     /*
     ** Headers of the page
     */
@@ -53,5 +53,5 @@ export default defineNuxtConfig({
     env: {
         apiUrl: process.env.API_URL || 'https://api.open5e.com'
     }
-})
+}
 

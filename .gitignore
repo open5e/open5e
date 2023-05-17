@@ -1,0 +1,60 @@
+# Linux
+*~
+*.swp
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Mac OS X
+.DS_Store
+._*
+
+# Python
+*.py[cod]
+
+# Sphinx
+build/
+
+# node stuff
+
+**/node_modules/
+
+*.scssc
+*.sassc
+
+*deploy.php
+*deploy-config.php
+
+# Django dev stuff
+*.sqlite3
+
+#virtualenv
+venv/*
+.vscode/settings.json
+.gitignore
+
+# static files
+static/json/
+
+# .env file
+.env
+
+# Certificates
+.certs
+
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# NGINX certificates
+nginx/ssl/*
+

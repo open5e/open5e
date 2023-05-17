@@ -5,6 +5,7 @@
 <script>
 import axios from 'axios'
 import { VueShowdown } from 'vue-showdown'
+import VueScrollTo from 'vue-scrollto';
 
 export default
 {
