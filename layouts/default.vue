@@ -455,7 +455,7 @@ footer {
       overflow-x: visible;
 
       .side-note {
-        position: absolute;
+        // position: absolute;
         right: 2rem;
       }
     }
