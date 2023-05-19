@@ -6,7 +6,6 @@
 
 <script>
 import MdViewer from '~/components/MdViewer';
-import VueRouter from 'vue-router'
 
 export default {
   components: {
@@ -14,12 +13,11 @@ export default {
   },
   data: function () {
     return {
-      file: this.$router.currentRoute.path
+      file: useRoute().path
     }
   }
 }
 </script>
 
-<style>
-</style>
+<style></style>
 

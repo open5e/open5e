@@ -1,121 +1,105 @@
-import axios from 'axios';
+import { defineStore } from "pinia";
+import axios from "axios";
 
-export const strict = false;
-
-export const state = () => ({
-  spellsList: [],
-  monstersList: [],
-  magicItemsList: [],
-  classes: [],
-  races: [],
-  sections: [],
-  backgrounds: [],
-})
-
-export const getters = {
-  allMonsters: state => {
-    return state.monstersList;
+export const useMainStore = defineStore({
+  id: "main",
+  state: () => {
+    return {
+      spellsList: [],
+      monstersList: [],
+      magicItemsList: [],
+      classes: [],
+      races: [],
+      sections: [],
+      backgrounds: [],
+    };
   },
-  allSpells: state => {
-    return state.spellsList
-  },
-  allMagicItems: state => {
-    return state.magicItemsList
-  },
-  allClasses: state => {
-    return state.classes
-  },
-  allRaces: state => {
-    return state.races
-  },
-  allSections: state => {
-    return state.sections
-  },
-  allBackgrounds: state => {
-    return state.backgrounds
-  },
-}
-
-export const actions = {
-  LOAD_MONSTERS_LIST (context) {
-    axios.get(`${process.env.apiUrl}/monsters/?fields=slug,name,challenge_rating,type,size,hit_points,document__slug, document__title&limit=5000&ordering=slug`)
-    .then(
-      (response) => { context.commit('setMonstersList', response.data.results)}
-    )
-  },
-  LOAD_SPELLS( context ) {
-    axios.get(`${process.env.apiUrl}/spells/?fields=slug,name,school,dnd_class,level,components,level_int,document__slug,document__title&limit=1000`) //you will need to enable CORS to make this work
-    .then(
-      (response => {
-        let spells = response.data.results
-        // Until api sends arrays this will work to sort spells by class.
-        spells.map((item)=>{
-            item.dnd_class = item.dnd_class.split(',');
-            for(var i = 0; i < item.dnd_class.length; i++){
-                item.dnd_class[i].trim();
+  actions: {
+    loadMonsterList() {
+      axios
+        .get(
+          `${useRuntimeConfig().public.apiUrl}/monsters/?fields=slug,name,challenge_rating,type,size,hit_points,document__slug, document__title&limit=5000&ordering=slug`
+        )
+        .then((response) => {
+          this.monstersList = response.data.results;
+        });
+    },
+    loadSpells() {
+      axios
+        .get(
+          `${useRuntimeConfig().public.apiUrl}/spells/?fields=slug,name,school,dnd_class,level,components,level_int,document__slug,document__title&limit=1000`
+        ) //you will need to enable CORS to make this work
+        .then((response) => {
+          let spells = response.data.results;
+          // Until api sends arrays this will work to sort spells by class.
+          spells.map((item) => {
+            item.dnd_class = item.dnd_class.split(",");
+            for (var i = 0; i < item.dnd_class.length; i++) {
+              item.dnd_class[i].trim();
             }
-        })
-        context.commit('setSpellsList', spells)
-      })
-    )
+          });
+          this.spellsList = spells;
+        });
+    },
+    loadMagicItems() {
+      axios
+        .get(
+          `${useRuntimeConfig().public.apiUrl}/magicitems/?fields=slug,name,type,rarity,document__slug,document__title&limit=1000`
+        )
+        .then((response) => {
+          this.magicItemsList = response.data.results;
+        });
+    },
+    loadBackgrounds() {
+      axios
+        .get(`${useRuntimeConfig().public.apiUrl}/backgrounds/?limit=1000`)
+        .then((response) => {
+          this.backgrounds = response.data.results;
+        });
+    },
+    loadClasses() {
+      axios
+        .get(`${useRuntimeConfig().public.apiUrl}/classes/`) //you will need to enable CORS to make this work
+        .then((response) => {
+          this.classes = response.data.results;
+        });
+    },
+    loadRaces() {
+      axios
+        .get(`${useRuntimeConfig().public.apiUrl}/races/`) //you will need to enable CORS to make this work
+        .then((response) => {
+          this.races = response.data.results;
+        });
+    },
+    loadSections() {
+      axios
+        .get(`${useRuntimeConfig().public.apiUrl}/sections/`) //you will need to enable CORS to make this work
+        .then((response) => {
+          this.sections = response.data.results;
+        });
+    },
   },
-  LOAD_MAGICITEMS( context ) {
-    axios.get(`${process.env.apiUrl}/magicitems/?fields=slug,name,type,rarity,document__slug,document__title&limit=1000`)
-    .then(
-      response => { context.commit( 'setMagicItemsList', response.data.results )
-    })
+  getters: {
+    allMonsters: (state) => {
+      return state.monstersList;
+    },
+    allSpells: (state) => {
+      return state.spellsList;
+    },
+    allMagicItems: (state) => {
+      return state.magicItemsList;
+    },
+    allClasses: (state) => {
+      return state.classes;
+    },
+    allRaces: (state) => {
+      return state.races;
+    },
+    allSections: (state) => {
+      return state.sections;
+    },
+    allBackgrounds: (state) => {
+      return state.backgrounds;
+    },
   },
-  LOAD_BACKGROUNDS( context ) {
-    axios.get(`${process.env.apiUrl}/backgrounds/?limit=1000`)
-    .then(
-      response => { context.commit( 'setBackgrounds', response.data.results )
-    })
-  },
-  LOAD_CLASSES( context ) {
-    axios.get(`${process.env.apiUrl}/classes/`) //you will need to enable CORS to make this work
-    .then(
-      response => { context.commit( 'setClasses', response.data.results )
-    })
-  },
-  LOAD_RACES( context ) {
-    if (!context.races) {
-      axios.get(`${process.env.apiUrl}/races/`) //you will need to enable CORS to make this work
-      .then(
-        response => { context.commit( 'setRaces', response.data.results )
-      })
-    }
-  },
-  LOAD_SECTIONS( context ) {
-    if (!context.sections){
-      axios.get(`${process.env.apiUrl}/sections/`) //you will need to enable CORS to make this work
-      .then(
-        response => { context.commit( 'setSections', response.data.results )
-      })
-    }
-  },
-}
-
-
-export const mutations = {
-  setSpellsList (state, spells) {
-      state.spellsList = spells
-  },
-  setMonstersList (state, monsters) {
-      state.monstersList = monsters;
-  },
-  setMagicItemsList (state, magicItems) {
-    state.magicItemsList = magicItems;
-  },
-  setBackgrounds (state, backgrounds) {
-    state.backgrounds = backgrounds;
-  },
-  setClasses (state, classes ) {
-    state.classes = classes
-  },
-  setRaces (state, races ) {
-    state.races = races
-  },
-  setSections (state, sections ) {
-    state.sections = sections
-  },
-}
+});

@@ -6,39 +6,38 @@
 
 <script>
 import MdViewer from '~/components/MdViewer';
-import VueRouter from 'vue-router'
-import { mapMutations, mapActions } from 'vuex'
+import { useMainStore } from "~/store"
 
 export default {
   components: {
     MdViewer
   },
+  setup() {
+    const store = useMainStore()
+    return { store }
+  },
   data: function () {
     return {
-      file: this.$router.currentRoute.path
+      file: useRoute().path
     }
   },
   mounted() {
-    this.$store.dispatch('LOAD_BACKGROUNDS')
+    this.store.loadBackgrounds();
   },
   methods: {
-    updateFilter: function(val) {
+    updateFilter: function (val) {
       this.filter = val;
     },
-  }, 
+  },
   computed: {
-     ...mapActions({
-       LOAD_BACKGROUNDS: 'LOAD_BACKGROUNDS'
-     }),
-     backgroundsList () {
-      return this.$store.getters.allBackgrounds
-     },
+    backgroundsList: function () {
+      return this.store.allBackgrounds;
+    }
   }
 }
 </script>
 
 
 
-<style>
-</style>
+<style></style>
 
