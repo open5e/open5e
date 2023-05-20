@@ -1,8 +1,8 @@
-import { defineStore } from "pinia";
-import axios from "axios";
+import { defineStore } from 'pinia';
+import axios from 'axios';
 
 export const useMainStore = defineStore({
-  id: "main",
+  id: 'main',
   state: () => {
     return {
       spellsList: [],
@@ -33,7 +33,7 @@ export const useMainStore = defineStore({
           let spells = response.data.results;
           // Until api sends arrays this will work to sort spells by class.
           spells.map((item) => {
-            item.dnd_class = item.dnd_class.split(",");
+            item.dnd_class = item.dnd_class.split(',');
             for (var i = 0; i < item.dnd_class.length; i++) {
               item.dnd_class[i].trim();
             }

@@ -1,7 +1,11 @@
 <template>
   <div class="stat-group">
-    <div class='stat-unit' v-for="(stat, key) in stats" v-bind:key="key">
-      <span class="title-case">{{key}}</span><span>{{stat}} (<statBonus :stat="parseInt(stat)"></statBonus>)</span>
+    <div
+      v-for="(stat, key) in stats"
+      :key="key"
+      class="stat-unit"
+    >
+      <span class="title-case">{{ key }}</span><span>{{ stat }} (<statBonus :stat="parseInt(stat)" />)</span>
     </div>
   </div>
 </template>

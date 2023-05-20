@@ -1,6 +1,5 @@
 <template>
   <section class="container docs-container">
-
     <h1>Welcome to Open5e!</h1>
     <p>Open5e aims to be the best open-source resource for 5e content.</p>
 
@@ -15,23 +14,36 @@
     <h2>Supporting and Contributing</h2>
     
     <h3>Contribute on Github</h3>
-    <p>The Open5e <a href="https://github.com/open5e/open5e">site</a> and <a href="https://github.com/open5e/open5e">API</a> are both open-source on Github! Join us as a contributor and help develop new features and tools. 
+    <p>
+      The Open5e <a href="https://github.com/open5e/open5e">site</a> and <a href="https://github.com/open5e/open5e">API</a> are both open-source on Github! Join us as a contributor and help develop new features and tools. 
     </p>
     <h4>Our tech stack</h4>
     <p>Want to know what you'd be getting into?</p>
     <p><b>DRF API server.</b> A powerful Python-based REST Framework.</p>
     <p><b>VueJs UI layer.</b> A Vue.js single-page app, using the Nuxt framework.</p>
 
-    <a href="https://github.com/open5e/open5e" class="external-button"><img src="/img/github-website-button.png"/></a>
-    <a href="https://github.com/open5e/open5e-api" class="external-button"><img src="/img/github-api-button.png"/></a>
+    <a
+      href="https://github.com/open5e/open5e"
+      class="external-button"
+    ><img src="/img/github-website-button.png"></a>
+    <a
+      href="https://github.com/open5e/open5e-api"
+      class="external-button"
+    ><img src="/img/github-api-button.png"></a>
     
     <h3>Support us on Patreon</h3>
     <p>Help keep our digital lights on and keep this site <b>ad-free</b> We count on donations and patrons to pay for our server costs, and to fund an increasing effort to fill out flavor text and add art.</p>
-    <a href="https://www.patreon.com/open5e" class="external-button"><img src="/img/patron-button.png"/></a>
+    <a
+      href="https://www.patreon.com/open5e"
+      class="external-button"
+    ><img src="/img/patron-button.png"></a>
 
     <h3>Join the Discord</h3>
     <p>Join us to chat, talk about development, and share neat homebrew. We don't bite!</p>
-    <a href="https://discord.gg/QXqF6gSVqB" class="external-button"><img src="/img/discord-button.png"/></a>
+    <a
+      href="https://discord.gg/QXqF6gSVqB"
+      class="external-button"
+    ><img src="/img/discord-button.png"></a>
 
     <h2>The API</h2>
     <div class="side-note">
@@ -44,7 +56,6 @@
 
     <h2>Bugs &amp; Issues</h2>
     <p>If you notice a bug or want to make a suggestion, join us on <a href="https://discord.gg/z48BAsD">Discord</a> to talk about it. Our discord is a place to talk about the redesign as well as rules, tools, art, gaming in general, or anything else on your mind!</p>
-    
   </section>
 </template>
 

@@ -4,8 +4,17 @@
     <div class="docs-toc">
       <span v-if="$route.hash">{{ $route.hash }}</span>
       <ul>
-        <li v-for="section in sectionGroups.Rules" v-bind:key="section.slug"><nuxt-link tag="a"
-            :to="`/running/${section.slug}`">{{ section.name }}</nuxt-link></li>
+        <li
+          v-for="section in sectionGroups.Rules"
+          :key="section.slug"
+        >
+          <nuxt-link
+            tag="a"
+            :to="`/running/${section.slug}`"
+          >
+            {{ section.name }}
+          </nuxt-link>
+        </li>
       </ul>
     </div>
   </section>
@@ -25,23 +34,23 @@ Array.prototype.groupBy = function (prop) {
 }
 
 export default {
+  components: {
+    MdViewer
+  },
   setup() {
     const store = useMainStore()
     return { store }
-  },
-  beforeCreate() {
-    this.store.loadClasses();
-    this.store.loadSections();
-    this.store.loadRaces();
-  },
-  components: {
-    MdViewer
   },
   computed: {
     sectionGroups: function () {
       let groupedSections = this.store.allSections.groupBy('parent');
       return groupedSections;
     },
+  },
+  beforeCreate() {
+    this.store.loadClasses();
+    this.store.loadSections();
+    this.store.loadRaces();
   }
 }
 </script>

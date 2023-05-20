@@ -1,12 +1,12 @@
 <template>
   <section class="container docs-container">
-    <md-viewer :src="`/markdown${file}.md`"></md-viewer>
+    <md-viewer :src="`/markdown${file}.md`" />
   </section>
 </template>
 
 <script>
 import MdViewer from '~/components/MdViewer';
-import { useMainStore } from "~/store"
+import { useMainStore } from '~/store'
 
 export default {
   components: {
@@ -21,6 +21,11 @@ export default {
       file: useRoute().path
     }
   },
+  computed: {
+    backgroundsList: function () {
+      return this.store.allBackgrounds;
+    }
+  },
   mounted() {
     this.store.loadBackgrounds();
   },
@@ -28,11 +33,6 @@ export default {
     updateFilter: function (val) {
       this.filter = val;
     },
-  },
-  computed: {
-    backgroundsList: function () {
-      return this.store.allBackgrounds;
-    }
   }
 }
 </script>

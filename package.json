@@ -2,18 +2,28 @@
   "name": "nuxt-app",
   "private": true,
   "engines": {
-      "node": "16.x"
+    "node": "16.x"
   },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix .",
+    "format": "prettier . --ignore-path .gitignore --write"
   },
   "devDependencies": {
+    "@nuxt/eslint-config": "^0.1.1",
     "@types/node": "^18",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-vue": "^9.13.0",
+    "husky": "^8.0.3",
     "nuxt": "^3.5.0",
+    "prettier": "2.8.8",
     "sass": "^1.62.1"
   },
   "dependencies": {

@@ -1,59 +1,113 @@
 <template>
   <section class="container docs-container">
     <h1>Search results</h1>
-    <hr />
-    <p v-if="loading"> Searching Open5e... </p>
-    <p v-if="!loading && results.length == 0">No results</p>
-    <div v-show="!loading" class="search-result" v-bind:key="result.slug" v-for="result in orderedResults">
-
+    <hr>
+    <p v-if="loading">
+      Searching Open5e...
+    </p>
+    <p v-if="!loading && results.length == 0">
+      No results
+    </p>
+    <div
+      v-for="result in orderedResults"
+      v-show="!loading"
+      :key="result.slug"
+      class="search-result"
+    >
       <!-- Result summary for creatures including mini statblock -->
-      <div class="result-summary" v-if="result.route == 'monsters/'">
-        <nuxt-link tag="a" :params="{ id: result.slug }" :to="`/${result.route}${result.slug}`">
-          {{ result.name }}</nuxt-link>
-        <source-tag v-if="result.document_slug !== 'wotc-srd'" class="source-tag" :title="result.document_title"
-          :text="result.document_slug"></source-tag>
+      <div
+        v-if="result.route == 'monsters/'"
+        class="result-summary"
+      >
+        <nuxt-link
+          tag="a"
+          :params="{ id: result.slug }"
+          :to="`/${result.route}${result.slug}`"
+        >
+          {{ result.name }}
+        </nuxt-link>
+        <source-tag
+          v-if="result.document_slug !== 'wotc-srd'"
+          class="source-tag"
+          :title="result.document_title"
+          :text="result.document_slug"
+        />
         <span> CR{{ result.challenge_rating }} </span><span class="title-case">{{ result.type }} | </span>
         <em>{{ result.hit_points }}hp, AC {{ result.armor_class }}</em>
         <div>
-          <stat-bar class="top-border" :stats="{
-            str: result.strength,
-            dex: result.dexterity,
-            con: result.constitution,
-            int: result.intelligence,
-            wis: result.wisdom,
-            cha: result.charisma
-          }">
-          </stat-bar>
+          <stat-bar
+            class="top-border"
+            :stats="{
+              str: result.strength,
+              dex: result.dexterity,
+              con: result.constitution,
+              int: result.intelligence,
+              wis: result.wisdom,
+              cha: result.charisma
+            }"
+          />
         </div>
       </div>
 
       <!-- Result summary for spells including basic spell info -->
-      <div class="result-summary" v-else-if="result.route == 'spells/'">
-        <nuxt-link tag="a" :params="{ id: result.slug }" :to="`/${result.route}${result.slug}`">
+      <div
+        v-else-if="result.route == 'spells/'"
+        class="result-summary"
+      >
+        <nuxt-link
+          tag="a"
+          :params="{ id: result.slug }"
+          :to="`/${result.route}${result.slug}`"
+        >
           {{ result.name }}
         </nuxt-link>
         {{ result.level }} {{ result.school }} spell | {{ result.dnd_class }}
-        <p class="result-highlights" v-html="result.highlighted"></p>
+        <p
+          class="result-highlights"
+          v-html="result.highlighted"
+        />
       </div>
 
       <!-- Result summary for magic items -->
-      <div class="result-summary" v-else-if="result.route == 'magicitems/'">
-        <nuxt-link tag="a" :params="{ id: result.slug }" :to="`/${result.route}${result.slug}`">
+      <div
+        v-else-if="result.route == 'magicitems/'"
+        class="result-summary"
+      >
+        <nuxt-link
+          tag="a"
+          :params="{ id: result.slug }"
+          :to="`/${result.route}${result.slug}`"
+        >
           {{ result.name }}
         </nuxt-link>
         {{ result.type }}, {{ result.rarity }}
-        <p class="result-highlights" v-html="result.highlighted"></p>
+        <p
+          class="result-highlights"
+          v-html="result.highlighted"
+        />
       </div>
 
       <!-- Result summary for everything else -->
-      <div class="result-summary" v-else>
-        <nuxt-link tag="a" :params="{ id: result.slug }" :to="`/${result.route}${result.slug}`">
+      <div
+        v-else
+        class="result-summary"
+      >
+        <nuxt-link
+          tag="a"
+          :params="{ id: result.slug }"
+          :to="`/${result.route}${result.slug}`"
+        >
           {{ result.name }}
         </nuxt-link>
-        <p class="result-highlights" v-html="result.highlighted"></p>
+        <p
+          class="result-highlights"
+          v-html="result.highlighted"
+        />
       </div>
     </div>
-    <p v-if="!loading && results.length > 0">No more results</p>
+    <p v-if="!loading && results.length > 0">
+      No more results
+    </p>
   </section>
 </template>
 
@@ -78,29 +132,11 @@ export default {
     StatBar,
     SourceTag,
   },
-  watch: {
-    '$route.params': function (query) {
-      this.getSearchResults()
-    }
-  },
   data() {
     return {
       results: [],
       text: this.$route.query.text,
       loading: true,
-    }
-  },
-  mounted() {
-    this.getSearchResults();
-  },
-  methods: {
-    getSearchResults: function () {
-      this.loading = true;
-      return axios.get(`${this.$nuxt.$config.public.apiUrl}/search?text=${this.$route.query.text}`) //you will need to enable CORS to make this work
-        .then(response => {
-          this.results = response.data.results
-          this.loading = false
-        })
     }
   },
   computed: {
@@ -132,6 +168,24 @@ export default {
         return sortFunction(a, b);
       });
       return (first.concat(next).concat(others));
+    }
+  },
+  watch: {
+    '$route.params': function (query) {
+      this.getSearchResults()
+    }
+  },
+  mounted() {
+    this.getSearchResults();
+  },
+  methods: {
+    getSearchResults: function () {
+      this.loading = true;
+      return axios.get(`${this.$nuxt.$config.public.apiUrl}/search?text=${this.$route.query.text}`) //you will need to enable CORS to make this work
+        .then(response => {
+          this.results = response.data.results
+          this.loading = false
+        })
     }
   }
 }

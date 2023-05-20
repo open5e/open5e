@@ -10,16 +10,32 @@
       </p>
     </h2>
     <div :class="'three-column'">
-      <p v-if="!spellListLength">No results</p>
-      <ul class="list--items" v-bind:key="level.lvl" v-for="(level) in spellsByLevel">
-
+      <p v-if="!spellListLength">
+        No results
+      </p>
+      <ul
+        v-for="(level) in spellsByLevel"
+        :key="level.lvl"
+        class="list--items"
+      >
         <h3>{{ level.lvlText }}</h3>
-        <li v-bind:key="spell.name" v-for="spell in level.spells">
-          <nuxt-link tag="a" :params="{ id: spell.slug }" :to="`/spells/${spell.slug}`">
+        <li
+          v-for="spell in level.spells"
+          :key="spell.name"
+        >
+          <nuxt-link
+            tag="a"
+            :params="{ id: spell.slug }"
+            :to="`/spells/${spell.slug}`"
+          >
             {{ spell.name }}
           </nuxt-link>
-          <source-tag v-if="spell.document__slug && spell.document__slug !== 'wotc-srd'" class=""
-            :title="spell.document__title" :text="spell.document__slug"></source-tag>
+          <source-tag
+            v-if="spell.document__slug && spell.document__slug !== 'wotc-srd'"
+            class=""
+            :title="spell.document__title"
+            :text="spell.document__slug"
+          />
         </li>
       </ul>
     </div>
@@ -36,23 +52,11 @@ export default {
     FilterInput,
     SourceTag
   },
-  mounted() {
-    this.filter = this.$route.params.charclass
-    return axios.get(`${this.$nuxt.$config.public.apiUrl}/spells/?fields=slug,name,level_int,level,dnd_class,document__slug&limit=1000`) //you will need to enable CORS to make this work
-      .then(response => {
-        this.spells = response.data.results
-      })
-  },
   data() {
     return {
       spells: [],
-      filter: "",
+      filter: '',
       available_classes: ['Bard', 'Cleric', 'Sorcerer', 'Wizard', 'Druid', 'Paladin', 'Warlock'],
-    }
-  },
-  methods: {
-    updateFilter: function (val) {
-      this.filter = val;
     }
   },
   computed: {
@@ -83,7 +87,7 @@ export default {
         })
       }
       else
-        return this.spells;
+        {return this.spells;}
     },
     columnClassObject: function () {
       return {
@@ -92,6 +96,18 @@ export default {
     },
     spellListLength: function () {
       return this.filteredSpells.length;
+    }
+  },
+  mounted() {
+    this.filter = this.$route.params.charclass
+    return axios.get(`${this.$nuxt.$config.public.apiUrl}/spells/?fields=slug,name,level_int,level,dnd_class,document__slug&limit=1000`) //you will need to enable CORS to make this work
+      .then(response => {
+        this.spells = response.data.results
+      })
+  },
+  methods: {
+    updateFilter: function (val) {
+      this.filter = val;
     }
   }
 }

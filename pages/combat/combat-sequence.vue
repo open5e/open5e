@@ -1,6 +1,6 @@
 <template>
   <section class="container docs-container">
-    <md-viewer :src="`/markdown${file}.md`"></md-viewer>
+    <md-viewer :src="`/markdown${file}.md`" />
   </section>
 </template>
 

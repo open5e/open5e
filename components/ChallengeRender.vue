@@ -1,12 +1,15 @@
 <template>
-<span>
-  {{challenge}} ({{experience(challenge).toLocaleString('en')}} XP)
-</span>
+  <span>
+    {{ challenge }} ({{ experience(challenge).toLocaleString('en') }} XP)
+  </span>
 </template>
 
 
 <script>
 export default {
+  props: {
+    challenge: String,
+  },
   methods: {
     experience: function (chal) {
       const xpValues = {
@@ -47,9 +50,6 @@ export default {
         return '???';
       }
     }
-  },
-  props: {
-    challenge: String,
   },
 }
 </script>

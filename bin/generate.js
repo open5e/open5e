@@ -1,5 +1,5 @@
 #! /usr/bin/env node
-console.log("generating static content files")
+console.log('generating static content files')
 
 const jsonfile = require('jsonfile');
 const slugify = require('slugify');
@@ -17,14 +17,14 @@ function cleanName(str) {
 
 function writeFile(path, contents, cb) {
   mkdirp(getDirName(path), function (err) {
-    if (err) return cb(err);
+    if (err) {return cb(err);}
     jsonfile.writeFile(path, contents, cb);
   });
 }
 
 function fileParser(input, name, listName) {
   jsonfile.readFile(input, function (err, obj) {
-    if (err) console.error(err);
+    if (err) {console.error(err);}
     writeFile(`${__dirname}/../static/json/${listName}.json`, obj, function(err){
       if (err) {
         console.log( err );
