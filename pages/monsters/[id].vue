@@ -1,91 +1,155 @@
 <template>
   <section class="container docs-container">
-    <p v-if="loading"> Loading... </p>
+    <p v-if="loading">
+      Loading...
+    </p>
     <div v-else>
       <h1>{{ monster.name }}</h1>
-      <img v-if="monster.img_main" :src="monster.img_main" class="img-main">
+      <img
+        v-if="monster.img_main"
+        :src="monster.img_main"
+        class="img-main"
+      >
       <p><em>{{ monster.size }} {{ monster.type }}, {{ monster.alignment }}</em></p>
-      <hr />
+      <hr>
       <p> <b>Armor Class</b> {{ monster.armor_class }}</p>
       <p> <b>Hit Points</b> {{ monster.hit_points }} ({{ monster.hit_dice }})</p>
-      <p> <b>Speed</b>
-        <span v-for="(speed, key, index) in monster.speed" :key="index" v-if="key !== 'hover'">
+      <p>
+        <b>Speed</b>
+        <span
+          v-for="(speed, key, index) in monster.speed"
+          v-if="key !== 'hover'"
+          :key="index"
+        >
           {{ key.charAt(0).toUpperCase() + key.slice(1) }} {{ speed }}ft.
           <span v-if="monster.speed.hasOwnProperty('hover') && key === 'fly'">(hover)</span>
         </span>
       </p>
-      <hr />
+      <hr>
       <div class="ability-array">
         <div class="ability-block">
           <span class="ability-name">STR</span>
-          <span class="ability-score">{{ monster.strength }} (<stat-bonus :stat="monster.strength"></stat-bonus>)</span>
-
+          <span class="ability-score">{{ monster.strength }} (<stat-bonus :stat="monster.strength" />)</span>
         </div>
         <div class="ability-block">
           <span class="ability-name">DEX</span>
-          <span class="ability-score">{{ monster.dexterity }} (<stat-bonus :stat="monster.dexterity"></stat-bonus>)</span>
-
+          <span class="ability-score">{{ monster.dexterity }} (<stat-bonus :stat="monster.dexterity" />)</span>
         </div>
         <div class="ability-block">
           <span class="ability-name">CON</span>
           <span class="ability-score">{{ monster.constitution }} (<stat-bonus
-              :stat="monster.constitution"></stat-bonus>)</span>
-
+            :stat="monster.constitution"
+          />)</span>
         </div>
         <div class="ability-block">
           <span class="ability-name">INT</span>
           <span class="ability-score">{{ monster.intelligence }} (<stat-bonus
-              :stat="monster.intelligence"></stat-bonus>)</span>
-
+            :stat="monster.intelligence"
+          />)</span>
         </div>
         <div class="ability-block">
           <span class="ability-name">WIS</span>
-          <span class="ability-score">{{ monster.wisdom }} (<stat-bonus :stat="monster.wisdom"></stat-bonus>)</span>
-
+          <span class="ability-score">{{ monster.wisdom }} (<stat-bonus :stat="monster.wisdom" />)</span>
         </div>
         <div class="ability-block">
           <span class="ability-name">CHA</span>
-          <span class="ability-score">{{ monster.charisma }} (<stat-bonus :stat="monster.charisma"></stat-bonus>)</span>
-
+          <span class="ability-score">{{ monster.charisma }} (<stat-bonus :stat="monster.charisma" />)</span>
         </div>
       </div>
-      <hr />
+      <hr>
       <p v-if="getSaves">
         <b>Saving Throws</b>
-        <span v-for="(save, index) in getSaves" :key="save.name">
+        <span
+          v-for="(save, index) in getSaves"
+          :key="save.name"
+        >
           {{ save.name }}
-          <stat-bonus :stat="save.val" :type="save.type"></stat-bonus><span v-if="index < getSaves.length - 1">, </span>
+          <stat-bonus
+            :stat="save.val"
+            :type="save.type"
+          /><span v-if="index < getSaves.length - 1">, </span>
         </span>
       </p>
       <p v-if="monster.skills">
         <b>Skills</b>
-        <span v-for="(skill, key, index) in monster.skills" :key="index" v-if="key !== 'hover'">
+        <span
+          v-for="(skill, key, index) in monster.skills"
+          v-if="key !== 'hover'"
+          :key="index"
+        >
           {{ key.charAt(0).toUpperCase() + key.slice(1) }}
           <span v-if="skill >= 0">+</span>{{ skill }}<span v-if="index < getSaves.length - 1">, </span>
         </span>
       </p>
-      <p v-if="monster.damage_vulnerabilities"> <b>Damage Vulnerabilities</b> {{ monster.damage_vulnerabilities }} </p>
-      <p v-if="monster.damage_resistances"> <b>Damage Resistances</b> {{ monster.damage_resistances }} </p>
-      <p v-if="monster.damage_immunities"> <b>Damage Immunities</b> {{ monster.damage_immunities }} </p>
-      <p v-if="monster.senses"> <b>Senses</b> {{ monster.senses }} </p>
-      <p v-if="monster.languages"> <b>Languages</b> {{ monster.languages }} </p>
-      <p v-if="monster.challenge_rating"> <b>Challenge</b> <challenge-render
-          :challenge="monster.challenge_rating"></challenge-render> </p>
-      <hr />
-      <p class="action-block" v-for="ability in monster.special_abilities" v-bind:key="ability.name">
-        <b class="action-name">{{ ability.name }}. </b> <md-viewer class="inline" :text="ability.desc"></md-viewer>
+      <p v-if="monster.damage_vulnerabilities">
+        <b>Damage Vulnerabilities</b> {{ monster.damage_vulnerabilities }}
       </p>
-      <h2 v-if="monster.actions">Actions</h2>
-      <p class="action-block" v-for="action in monster.actions" v-bind:key="action.name">
-        <b class="action-name">{{ action.name }}. </b> <md-viewer class="inline" :text="action.desc"></md-viewer>
+      <p v-if="monster.damage_resistances">
+        <b>Damage Resistances</b> {{ monster.damage_resistances }}
       </p>
-      <h2 v-if="monster.reactions">Reactions</h2>
-      <p class="action-block" v-for="action in monster.reactions" v-bind:key="action.name">
-        <b class="action-name">{{ action.name }}. </b> <md-viewer class="inline" :text="action.desc"></md-viewer>
+      <p v-if="monster.damage_immunities">
+        <b>Damage Immunities</b> {{ monster.damage_immunities }}
       </p>
-      <h2 v-if="monster.legendary_actions">Legendary Actions</h2>
-      <p class="action-block" v-for="action in monster.legendary_actions" v-bind:key="action.name">
-        <b class="action-name">{{ action.name }}. </b> <md-viewer class='inline' :text="action.desc"></md-viewer>
+      <p v-if="monster.senses">
+        <b>Senses</b> {{ monster.senses }}
+      </p>
+      <p v-if="monster.languages">
+        <b>Languages</b> {{ monster.languages }}
+      </p>
+      <p v-if="monster.challenge_rating">
+        <b>Challenge</b> <challenge-render
+          :challenge="monster.challenge_rating"
+        />
+      </p>
+      <hr>
+      <p
+        v-for="ability in monster.special_abilities"
+        :key="ability.name"
+        class="action-block"
+      >
+        <b class="action-name">{{ ability.name }}. </b> <md-viewer
+          class="inline"
+          :text="ability.desc"
+        />
+      </p>
+      <h2 v-if="monster.actions">
+        Actions
+      </h2>
+      <p
+        v-for="action in monster.actions"
+        :key="action.name"
+        class="action-block"
+      >
+        <b class="action-name">{{ action.name }}. </b> <md-viewer
+          class="inline"
+          :text="action.desc"
+        />
+      </p>
+      <h2 v-if="monster.reactions">
+        Reactions
+      </h2>
+      <p
+        v-for="action in monster.reactions"
+        :key="action.name"
+        class="action-block"
+      >
+        <b class="action-name">{{ action.name }}. </b> <md-viewer
+          class="inline"
+          :text="action.desc"
+        />
+      </p>
+      <h2 v-if="monster.legendary_actions">
+        Legendary Actions
+      </h2>
+      <p
+        v-for="action in monster.legendary_actions"
+        :key="action.name"
+        class="action-block"
+      >
+        <b class="action-name">{{ action.name }}. </b> <md-viewer
+          class="inline"
+          :text="action.desc"
+        />
       </p>
     </div>
   </section>
@@ -103,12 +167,13 @@ export default {
     ChallengeRender,
     MdViewer
   },
-  created() {
-    return axios.get(`${useRuntimeConfig().public.apiUrl}/monsters/${this.$route.params.id}`)
-      .then(response => {
-        this.monster = response.data;
-        this.loading = false
-      })
+  data() {
+    return {
+      posts: [],
+      errors: [],
+      monster: [],
+      loading: true,
+    }
   },
   computed: {
     getSaves() {
@@ -136,13 +201,12 @@ export default {
       return saves;
     },
   },
-  data() {
-    return {
-      posts: [],
-      errors: [],
-      monster: [],
-      loading: true,
-    }
+  created() {
+    return axios.get(`${useRuntimeConfig().public.apiUrl}/monsters/${this.$route.params.id}`)
+      .then(response => {
+        this.monster = response.data;
+        this.loading = false
+      })
   },
 }
 </script>

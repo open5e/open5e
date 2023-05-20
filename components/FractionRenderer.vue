@@ -1,12 +1,15 @@
 <template>
-<span>
-  {{fraction(challenge)}}
-</span>
+  <span>
+    {{ fraction(challenge) }}
+  </span>
 </template>
 
 
 <script>
 export default {
+  props: {
+    challenge: [Number, String],
+  },
   methods: {
     fraction: function (chal) {
       const chalValue = {
@@ -21,9 +24,6 @@ export default {
         return chal;
       }
     }
-  },
-  props: {
-    challenge: [Number, String],
   },
 }
 </script>

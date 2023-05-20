@@ -1,7 +1,11 @@
 <template>
-<span class="tag-element" :title="title" :style="{backgroundColor: background, color: textColor, border: border}">
-  {{text}}
-</span>
+  <span
+    class="tag-element"
+    :title="title"
+    :style="{backgroundColor: background, color: textColor, border: border}"
+  >
+    {{ text }}
+  </span>
 </template>
 
 
@@ -11,13 +15,13 @@ export default {
     text: String,
     title: String,
     textColor: {
-      default: "#ffffff",
+      default: '#ffffff',
     },
     background: {
-      default: "#aaaaaa"
+      default: '#aaaaaa'
     },
     border: {
-      default: "1px solid #999999"
+      default: '1px solid #999999'
     }
   }
 }

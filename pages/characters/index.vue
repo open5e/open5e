@@ -3,24 +3,92 @@
     <h1>Creating Characters</h1>
     <div class="docs-toc">
       <ul>
-        <li v-for="section in charSections" v-bind:key="section.slug">
-          <nuxt-link tag="a" :to="`/sections/${section.slug}`">
+        <li
+          v-for="section in charSections"
+          :key="section.slug"
+        >
+          <nuxt-link
+            tag="a"
+            :to="`/sections/${section.slug}`"
+          >
             {{ section.name }}
           </nuxt-link>
         </li>
         <li>Races</li>
         <ul>
-          <li><nuxt-link tag="a" to="/races/tiefling">Tiefling</nuxt-link></li>
-          <li><nuxt-link tag="a" to="/races/dragonborn">Dragonborn</nuxt-link></li>
-          <li><nuxt-link tag="a" to="/races/dwarf">Dwarf</nuxt-link></li>
-          <li><nuxt-link tag="a" to="/races/elf">Elf</nuxt-link></li>
-          <li><nuxt-link tag="a" to="/races/gnome">Gnome</nuxt-link></li>
-          <li><nuxt-link tag="a" to="/races/half-elf">Half-Elf</nuxt-link></li>
-          <li><nuxt-link tag="a" to="/races/half-orc">Half-Orc</nuxt-link></li>
-          <li><nuxt-link tag="a" to="/races/halfling">Halfling</nuxt-link></li>
-          <li><nuxt-link tag="a" to="/races/human">Human</nuxt-link></li>
+          <li>
+            <nuxt-link
+              tag="a"
+              to="/races/tiefling"
+            >
+              Tiefling
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              tag="a"
+              to="/races/dragonborn"
+            >
+              Dragonborn
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              tag="a"
+              to="/races/dwarf"
+            >
+              Dwarf
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              tag="a"
+              to="/races/elf"
+            >
+              Elf
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              tag="a"
+              to="/races/gnome"
+            >
+              Gnome
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              tag="a"
+              to="/races/half-elf"
+            >
+              Half-Elf
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              tag="a"
+              to="/races/half-orc"
+            >
+              Half-Orc
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              tag="a"
+              to="/races/halfling"
+            >
+              Halfling
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              tag="a"
+              to="/races/human"
+            >
+              Human
+            </nuxt-link>
+          </li>
         </ul>
-
       </ul>
     </div>
   </section>
@@ -53,7 +121,7 @@ export default {
         return results.sort(function (a, b) {
           if (a.slug < b.slug) { return -1 }
           else if (a.slug > b.slug) { return 1 }
-          else return 0;
+          else {return 0;}
         })
       }
     },

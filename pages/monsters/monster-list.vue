@@ -2,29 +2,76 @@
   <section class="container docs-container">
     <h2 class="filter-header">
       <span>Monster List</span>
-      <filter-input v-on:input="updateFilter" placeholder="Filter monsters..."></filter-input>
+      <filter-input
+        placeholder="Filter monsters..."
+        @input="updateFilter"
+      />
     </h2>
     <div>
-      <p v-if="!monstersList.length"> Loading... </p>
-      <table v-else class="fiterable-table">
+      <p v-if="!monstersList.length">
+        Loading...
+      </p>
+      <table
+        v-else
+        class="fiterable-table"
+      >
         <thead>
           <tr>
-            <th class="monster-table-header" v-on:click="sort('name')">Name</th>
-            <th class="monster-table-header" v-on:click="sort('type')">Type</th>
-            <th class="monster-table-header" v-on:click="sort('challenge_rating')">CR</th>
-            <th class="monster-table-header" v-on:click="sort('size')">Size</th>
-            <th class="monster-table-header" v-on:click="sort('hit_points')">Hit Points</th>
+            <th
+              class="monster-table-header"
+              @click="sort('name')"
+            >
+              Name
+            </th>
+            <th
+              class="monster-table-header"
+              @click="sort('type')"
+            >
+              Type
+            </th>
+            <th
+              class="monster-table-header"
+              @click="sort('challenge_rating')"
+            >
+              CR
+            </th>
+            <th
+              class="monster-table-header"
+              @click="sort('size')"
+            >
+              Size
+            </th>
+            <th
+              class="monster-table-header"
+              @click="sort('hit_points')"
+            >
+              Hit Points
+            </th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="monster in monstersListed" :key="monster.slug">
-            <td> <nuxt-link tag="a" :params="{ id: monster.slug }" :to="`/monsters/${monster.slug}`">{{ monster.name
-            }}</nuxt-link>
-              <source-tag v-if="monster.document__slug && monster.document__slug !== 'wotc-srd'" class=""
-                :title="monster.document__title" :text="monster.document__slug"></source-tag>
+          <tr
+            v-for="monster in monstersListed"
+            :key="monster.slug"
+          >
+            <td>
+              <nuxt-link
+                tag="a"
+                :params="{ id: monster.slug }"
+                :to="`/monsters/${monster.slug}`"
+              >
+                {{ monster.name
+                }}
+              </nuxt-link>
+              <source-tag
+                v-if="monster.document__slug && monster.document__slug !== 'wotc-srd'"
+                class=""
+                :title="monster.document__title"
+                :text="monster.document__slug"
+              />
             </td>
             <td>{{ monster.type }}</td>
-            <td><fraction-renderer :challenge="monster.challenge_rating"></fraction-renderer></td>
+            <td><fraction-renderer :challenge="monster.challenge_rating" /></td>
             <td>{{ monster.size }}</td>
             <td>{{ monster.hit_points }}</td>
           </tr>
@@ -51,29 +98,11 @@ export default {
     const store = useMainStore()
     return { store }
   },
-  beforeCreate() {
-    this.store.loadMonsterList()
-  },
   data() {
     return {
       filter: '',
       currentSortProperty: 'challenge_rating',
       currentSortDir: 'asc'
-    }
-  },
-  methods: {
-    updateFilter: function (val) {
-      this.filter = val;
-    },
-    monsterListLength: function () {
-      return Object.keys(this.monstersListed).length;
-    },
-    sort: function (prop) {
-      if (prop === this.currentSortProperty) {
-        this.currentSortDir = this.currentSortDir === 'asc' ? 'desc' : 'asc';
-      }
-      this.currentSortProperty = prop;
-      this.monstersListed = {};
     }
   },
   computed: {
@@ -106,6 +135,24 @@ export default {
         .filter(monster => {
           return monster.name.toLowerCase().indexOf(this.filter.toLowerCase()) > -1
         })
+    }
+  },
+  beforeCreate() {
+    this.store.loadMonsterList()
+  },
+  methods: {
+    updateFilter: function (val) {
+      this.filter = val;
+    },
+    monsterListLength: function () {
+      return Object.keys(this.monstersListed).length;
+    },
+    sort: function (prop) {
+      if (prop === this.currentSortProperty) {
+        this.currentSortDir = this.currentSortDir === 'asc' ? 'desc' : 'asc';
+      }
+      this.currentSortProperty = prop;
+      this.monstersListed = {};
     }
   }
 }

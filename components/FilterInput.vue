@@ -1,16 +1,28 @@
 <template>
   <div class="filter-wrapper">
-    <input class="filter-input" type="input" :placeholder="placeholder" v-model="filterText" v-on:input.stop="onInput">
-    <img class="filter-clear" src="/img/x-close.png" v-show="filterValue" v-on:click="clearSearch()">
+    <input
+      v-model="filterText"
+      class="filter-input"
+      type="input"
+      :placeholder="placeholder"
+      @input.stop="onInput"
+    >
+    <img
+      v-show="filterValue"
+      class="filter-clear"
+      src="/img/x-close.png"
+      @click="clearSearch()"
+    >
   </div>
 </template>
 
 
 <script>
 export default {
-  computed: {
-    filterValue: function () {
-      return this.filterText;
+  props: {
+    placeholder: {
+      type: String,
+      default: 'Filter...'
     }
   },
   data() {
@@ -18,10 +30,9 @@ export default {
       filterText: '',
     }
   },
-  props: {
-    placeholder: {
-      type: String,
-      default: 'Filter...'
+  computed: {
+    filterValue: function () {
+      return this.filterText;
     }
   },
   methods: {
