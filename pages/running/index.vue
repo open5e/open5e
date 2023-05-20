@@ -21,25 +21,21 @@
 </template>
 
 <script>
-import MdViewer from '~/components/MdViewer'
-import { useMainStore } from '~/store'
+import { useMainStore } from '~/store';
 
 Array.prototype.groupBy = function (prop) {
   return this.reduce(function (groups, item) {
-    const val = item[prop]
-    groups[val] = groups[val] || []
-    groups[val].push(item)
-    return groups
-  }, {})
-}
+    const val = item[prop];
+    groups[val] = groups[val] || [];
+    groups[val].push(item);
+    return groups;
+  }, {});
+};
 
 export default {
-  components: {
-    MdViewer
-  },
   setup() {
-    const store = useMainStore()
-    return { store }
+    const store = useMainStore();
+    return { store };
   },
   computed: {
     sectionGroups: function () {
@@ -51,9 +47,8 @@ export default {
     this.store.loadClasses();
     this.store.loadSections();
     this.store.loadRaces();
-  }
-}
+  },
+};
 </script>
 
 <style></style>
-

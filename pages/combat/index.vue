@@ -72,16 +72,6 @@
   </section>
 </template>
 
-<script>
-import MdViewer from '~/components/MdViewer'
+<script></script>
 
-export default {
-  components: {
-    MdViewer
-  },
-}
-</script>
-
-<style>
-</style>
-
+<style></style>

@@ -43,7 +43,7 @@
               con: result.constitution,
               int: result.intelligence,
               wis: result.wisdom,
-              cha: result.charisma
+              cha: result.charisma,
             }"
           />
         </div>
@@ -113,22 +113,17 @@
 
 <script>
 import axios from 'axios';
-import MdViewer from '~/components/MdViewer';
-;
-import StatBonus from '~/components/StatBonus';
 import StatBar from '~/components/StatBar';
 import SourceTag from '~/components/SourceTag';
 
 function sortFunction(a, b) {
   var textA = a.name.toUpperCase();
   var textB = b.name.toUpperCase();
-  return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+  return textA < textB ? -1 : textA > textB ? 1 : 0;
 }
 
 export default {
   components: {
-    MdViewer,
-    StatBonus,
     StatBar,
     SourceTag,
   },
@@ -137,23 +132,21 @@ export default {
       results: [],
       text: this.$route.query.text,
       loading: true,
-    }
+    };
   },
   computed: {
     orderedResults: function () {
-      let tmp = this.results.slice()
-      const term = this.text.toUpperCase()
-      let first = []
-      let next = []
-      let others = []
+      let tmp = this.results.slice();
+      const term = this.text.toUpperCase();
+      let first = [];
+      let next = [];
+      let others = [];
       for (var i = 0; i < tmp.length; i++) {
         if (tmp[i].name.toUpperCase().indexOf(term) == 0) {
           first.push(tmp[i]);
-        }
-        else if (tmp[i].name.toUpperCase().indexOf(term) != -1) {
-          next.push(tmp[i])
-        }
-        else {
+        } else if (tmp[i].name.toUpperCase().indexOf(term) != -1) {
+          next.push(tmp[i]);
+        } else {
           others.push(tmp[i]);
         }
       }
@@ -167,13 +160,13 @@ export default {
       others.sort(function (a, b) {
         return sortFunction(a, b);
       });
-      return (first.concat(next).concat(others));
-    }
+      return first.concat(next).concat(others);
+    },
   },
   watch: {
     '$route.params': function (query) {
-      this.getSearchResults()
-    }
+      this.getSearchResults();
+    },
   },
   mounted() {
     this.getSearchResults();
@@ -181,14 +174,17 @@ export default {
   methods: {
     getSearchResults: function () {
       this.loading = true;
-      return axios.get(`${this.$nuxt.$config.public.apiUrl}/search?text=${this.$route.query.text}`) //you will need to enable CORS to make this work
-        .then(response => {
-          this.results = response.data.results
-          this.loading = false
-        })
-    }
-  }
-}
+      return axios
+        .get(
+          `${this.$nuxt.$config.public.apiUrl}/search?text=${this.$route.query.text}`
+        ) //you will need to enable CORS to make this work
+        .then((response) => {
+          this.results = response.data.results;
+          this.loading = false;
+        });
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -224,4 +220,3 @@ hr {
   opacity: 0.8;
 }
 </style>
-

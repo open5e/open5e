@@ -14,7 +14,7 @@
         No results
       </p>
       <ul
-        v-for="(level) in spellsByLevel"
+        v-for="level in spellsByLevel"
         :key="level.lvl"
         class="list--items"
       >
@@ -43,74 +43,95 @@
 </template>
 
 <script>
-import axios from 'axios'
-import FilterInput from '~/components/FilterInput.vue'
-import SourceTag from '~/components/SourceTag.vue'
-import * as _ from 'underscore'
+import axios from 'axios';
+import SourceTag from '~/components/SourceTag.vue';
+import * as _ from 'underscore';
 export default {
   components: {
-    FilterInput,
-    SourceTag
+    SourceTag,
   },
   data() {
     return {
       spells: [],
       filter: '',
-      available_classes: ['Bard', 'Cleric', 'Sorcerer', 'Wizard', 'Druid', 'Paladin', 'Warlock'],
-    }
+      available_classes: [
+        'Bard',
+        'Cleric',
+        'Sorcerer',
+        'Wizard',
+        'Druid',
+        'Paladin',
+        'Warlock',
+      ],
+    };
   },
   computed: {
     spellsByLevel: function () {
       let levels = [];
       for (let i = 0; i < this.filteredSpells.length; i++) {
         let spellLevel = this.filteredSpells[i].level_int;
-        var found = false
+        var found = false;
         for (let j = 0; j < levels.length; j++) {
           if (levels[j].lvl == spellLevel) {
             levels[j].spells.push(this.filteredSpells[i]);
-            found = true
+            found = true;
           }
         }
         if (!found) {
-          levels.push({ lvl: spellLevel, lvlText: this.filteredSpells[i].level, spells: [this.filteredSpells[i]] });
+          levels.push({
+            lvl: spellLevel,
+            lvlText: this.filteredSpells[i].level,
+            spells: [this.filteredSpells[i]],
+          });
         }
       }
       if (levels.length > 0) {
-        levels = levels.sort(function (a, b) { return a.lvl - b.lvl });
-      } else { return false }
-      return levels
+        levels = levels.sort(function (a, b) {
+          return a.lvl - b.lvl;
+        });
+      } else {
+        return false;
+      }
+      return levels;
     },
     filteredSpells: function () {
       if (this.filter) {
-        return this.spells.filter(spell => {
-          return spell.dnd_class.toLowerCase().indexOf(this.$data.filter.toLowerCase()) > -1
-        })
+        return this.spells.filter((spell) => {
+          return (
+            spell.dnd_class
+              .toLowerCase()
+              .indexOf(this.$data.filter.toLowerCase()) > -1
+          );
+        });
+      } else {
+        return this.spells;
       }
-      else
-        {return this.spells;}
     },
     columnClassObject: function () {
       return {
         'three-column': !this.filter,
-      }
+      };
     },
     spellListLength: function () {
       return this.filteredSpells.length;
-    }
+    },
   },
   mounted() {
-    this.filter = this.$route.params.charclass
-    return axios.get(`${this.$nuxt.$config.public.apiUrl}/spells/?fields=slug,name,level_int,level,dnd_class,document__slug&limit=1000`) //you will need to enable CORS to make this work
-      .then(response => {
-        this.spells = response.data.results
-      })
+    this.filter = this.$route.params.charclass;
+    return axios
+      .get(
+        `${this.$nuxt.$config.public.apiUrl}/spells/?fields=slug,name,level_int,level,dnd_class,document__slug&limit=1000`
+      ) //you will need to enable CORS to make this work
+      .then((response) => {
+        this.spells = response.data.results;
+      });
   },
   methods: {
     updateFilter: function (val) {
       this.filter = val;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
