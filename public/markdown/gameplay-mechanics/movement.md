@@ -61,7 +61,7 @@ benefits from a slow pace. Depending on the vessel and the size of the
 crew, ships might be able to travel for up to 24 hours per day.
 
 Certain special mounts, such as a pegasus or griffon, or special
-vehicles, such as a *carpet of flying*, allow you to travel more
+vehicles, such as a _carpet of flying_, allow you to travel more
 swiftly.
 
 ### Travel Pace

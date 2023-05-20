@@ -6,44 +6,43 @@
       type="input"
       :placeholder="placeholder"
       @input.stop="onInput"
-    >
+    />
     <img
       v-show="filterValue"
       class="filter-clear"
       src="/img/x-close.png"
       @click="clearSearch()"
-    >
+    />
   </div>
 </template>
-
 
 <script>
 export default {
   props: {
     placeholder: {
       type: String,
-      default: 'Filter...'
-    }
+      default: 'Filter...',
+    },
   },
   data() {
     return {
       filterText: '',
-    }
+    };
   },
   computed: {
     filterValue: function () {
       return this.filterText;
-    }
+    },
   },
   methods: {
     clearSearch: function () {
       this.filterText = '';
     },
     onInput: function () {
-      this.$emit('input', this.filterText)
-    }
-  }
-}
+      this.$emit('input', this.filterText);
+    },
+  },
+};
 </script>
 
 <style lang="scss">
@@ -55,16 +54,16 @@ export default {
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     height: 100%;
     width: 3rem;
     opacity: 0.5;
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url("/img/search-icon.png");
+    background-image: url('/img/search-icon.png');
     background-repeat: no-repeat;
-    background-position: .5rem center;
+    background-position: 0.5rem center;
     background-size: 1.2rem;
     pointer-events: none;
   }
@@ -84,7 +83,6 @@ export default {
     &:active {
       border: 1px solid $color-granite;
     }
-
   }
 
   .filter-clear {

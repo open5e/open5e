@@ -7,8 +7,7 @@ other gnomes.
 
 **Age.** Gnomes mature at the same rate humans do,
 
-and most are expected to settle down into an adult life by around age
-40. They can live 350 to almost 500 years.
+and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years.
 
 **Alignment.** Gnomes are most often good. Those who tend toward law are
 sages, engineers, researchers, scholars, investigators, or inventors.
@@ -56,14 +55,14 @@ up to three such devices active at a time.
 
 When you create a device, choose one of the following options:
 
--   **Clockwork Toy.** This toy is a clockwork animal, monster, or
-    person, such as a frog, mouse, bird, dragon, or soldier. When placed
-    on the ground, the toy moves 5 feet across the ground on each of
-    your turns in a random direction. It makes noises as appropriate to
-    the creature it represents.
--   **Fire Starter.** The device produces a miniature flame, which you
-    can use to light a candle, torch, or campfire. Using the device
-    requires your action.
--   **Music Box.** When opened, this music box plays a single song at a
-    moderate volume. The box stops playing when it reaches the song's
-    end or when it is closed.
+- **Clockwork Toy.** This toy is a clockwork animal, monster, or
+  person, such as a frog, mouse, bird, dragon, or soldier. When placed
+  on the ground, the toy moves 5 feet across the ground on each of
+  your turns in a random direction. It makes noises as appropriate to
+  the creature it represents.
+- **Fire Starter.** The device produces a miniature flame, which you
+  can use to light a candle, torch, or campfire. Using the device
+  requires your action.
+- **Music Box.** When opened, this music box plays a single song at a
+  moderate volume. The box stops playing when it reaches the song's
+  end or when it is closed.

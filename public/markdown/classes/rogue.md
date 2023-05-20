@@ -1,8 +1,6 @@
-Rogue
-=====
+# Rogue
 
-Class Features
---------------
+## Class Features
 
 As a rogue, you have the following class features.
 
@@ -35,11 +33,11 @@ Sleight of Hand, and Stealth
 You start with the following equipment, in addition to the equipment
 granted by your background:
 
--   (*a*) a rapier or (*b*) a shortsword
--   (*a*) a shortbow and quiver of 20 arrows or (*b*) a shortsword
--   (*a*) a burglar's pack, (*b*) a dungeoneer's pack, or (*c*) an
-    explorer's pack
--   (*a*) Leather armor, two daggers, and thieves' tools
+- (_a_) a rapier or (_b_) a shortsword
+- (_a_) a shortbow and quiver of 20 arrows or (_b_) a shortsword
+- (_a_) a burglar's pack, (_b_) a dungeoneer's pack, or (_c_) an
+  explorer's pack
+- (_a_) Leather armor, two daggers, and thieves' tools
 
 ### The Rogue
 
@@ -176,8 +174,7 @@ granted by your background:
   </tbody>
 </table>
 
-Class Abilities
----------------
+## Class Abilities
 
 ### Expertise
 
@@ -258,7 +255,7 @@ against you.
 ### Evasion
 
 Beginning at 7th level, you can nimbly dodge out of the way of certain
-area effects, such as a red dragon's fiery breath or an *ice storm*
+area effects, such as a red dragon's fiery breath or an _ice storm_
 spell. When you are subjected to an effect that allows you to make a
 Dexterity saving throw to take only half damage, you instead take no
 damage if you succeed on the saving throw, and only half damage if you
@@ -296,8 +293,7 @@ the d20 roll as a 20.
 Once you use this feature, you can't use it again until you finish a
 short or long rest.
 
-Roguish Archetypes
-------------------
+## Roguish Archetypes
 
 Rogues have many features in common, including their emphasis on
 perfecting their skills, their precise and deadly approach to combat,

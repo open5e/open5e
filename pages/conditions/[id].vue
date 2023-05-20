@@ -6,28 +6,32 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
 import MdViewer from '~/components/MdViewer';
 
 export default {
   components: {
-    MdViewer
+    MdViewer,
   },
   data() {
     return {
       posts: [],
       errors: [],
       condition: [],
-    }
+    };
   },
   mounted() {
-    return axios.get(`${useRuntimeConfig().public.apiUrl}/conditions/${this.$route.params.id}`) //you will need to enable CORS to make this work
-      .then(response => {
-        this.condition = response.data
-      })
+    return axios
+      .get(
+        `${useRuntimeConfig().public.apiUrl}/conditions/${
+          this.$route.params.id
+        }`
+      ) //you will need to enable CORS to make this work
+      .then((response) => {
+        this.condition = response.data;
+      });
   },
-}
+};
 </script>
 
 <style lang="scss"></style>
-

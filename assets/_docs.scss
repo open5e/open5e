@@ -6,7 +6,8 @@ table {
   border-top: $pad-sm solid $color-smoke;
   border-bottom: $pad-sm solid $color-smoke;
   margin-top: $pad-md;
-  td, th {
+  td,
+  th {
     padding: $pad-sm $pad-sm;
     text-align: left;
   }
@@ -28,7 +29,7 @@ table {
   h1 {
     font-size: 2rem;
     color: $color-blood;
-    &:not(:first-child){
+    &:not(:first-child) {
       margin-top: $pad-xl;
     }
   }
@@ -38,10 +39,15 @@ table {
     padding-bottom: $pad-xs;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     display: flex;
     align-content: flex-start;
-    
+
     .toc-anchor {
       order: 2;
       display: none;
@@ -85,14 +91,25 @@ table {
   hr {
     margin: 1rem 0;
     height: 2px;
-    background: linear-gradient(to right, rgba($color-blood,1) 0%,rgba($color-blood,0) 100%); 
+    background: linear-gradient(
+      to right,
+      rgba($color-blood, 1) 0%,
+      rgba($color-blood, 0) 100%
+    );
     border: 0;
   }
-  p, hr, h1, h2, h3, h4, h5, h6 {
+  p,
+  hr,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     max-width: 40rem;
   }
-  th:first-child { 
-    min-width: 4rem; 
+  th:first-child {
+    min-width: 4rem;
   }
 }
 
@@ -104,8 +121,8 @@ h2.filter-header {
 
 blockquote {
   background-color: #eaeaea;
-  border-left: .75rem solid #999;
-  padding: .1rem 1rem 1rem 1rem;
+  border-left: 0.75rem solid #999;
+  padding: 0.1rem 1rem 1rem 1rem;
   margin-top: 1rem;
   max-width: 40rem;
 }

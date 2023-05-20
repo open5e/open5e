@@ -1,5 +1,4 @@
-Mounted Combat
-==============
+# Mounted Combat
 
 A knight charging into battle on a warhorse, a wizard casting spells
 from the back of a griffon, or a cleric soaring through the sky on a
@@ -10,8 +9,7 @@ A willing creature that is at least one size larger than you and that
 has an appropriate anatomy can serve as a mount, using the following
 rules.
 
-Mounting and Dismounting
-------------------------
+## Mounting and Dismounting
 
 Once during your move, you can mount a creature that is within 5 feet of
 you or dismount. Doing so costs an amount of movement equal to half your
@@ -28,8 +26,7 @@ If your mount is knocked srd:prone, you can use your reaction to
 dismount it as it falls and land on your feet. Otherwise, you are
 dismounted and fall srd:prone in a space within 5 feet it.
 
-Controlling a Mount
--------------------
+## Controlling a Mount
 
 While you're mounted, you have two options. You can either control the
 mount or allow it to act independently. Intelligent creatures, such as

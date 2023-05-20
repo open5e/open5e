@@ -410,7 +410,7 @@ consulting the Multiclass Spellcaster table.
 If you have more than one spellcasting class, this table might give you
 spell slots of a level that is higher than the spells you know or can
 prepare. You can use those slots, but only to cast your lower-level
-spells. If a lower-level spell that you cast, like *burning hands*, has
+spells. If a lower-level spell that you cast, like _burning hands_, has
 an enhanced effect when cast using a higher-level slot, you can use the
 enhanced effect, even though you don't have any spells of that higher
 level.

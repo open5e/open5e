@@ -1,8 +1,6 @@
-Bard
-====
+# Bard
 
-Class Features
---------------
+## Class Features
 
 As a bard, you gain the following class features.
 
@@ -33,10 +31,10 @@ shortswords
 You start with the following equipment, in addition to the equipment
 granted by your background:
 
--   (*a*) a rapier, (*b*) a longsword, or (*c*) any simple weapon
--   (*a*) a diplomat's pack or (*b*) an entertainer's pack
--   (*a*) a lute or (*b*) any other musical instrument
--   Leather armor and a dagger
+- (_a_) a rapier, (_b_) a longsword, or (_c_) any simple weapon
+- (_a_) a diplomat's pack or (_b_) an entertainer's pack
+- (_a_) a lute or (_b_) any other musical instrument
+- Leather armor and a dagger
 
 ### The Bard
 
@@ -386,8 +384,7 @@ granted by your background:
   </tbody>
 </table>
 
-Class Abilities
----------------
+## Class Abilities
 
 ### Spellcasting
 
@@ -410,9 +407,9 @@ of 1st level and higher. To cast one of these spells, you must expend a
 slot of the spell's level or higher. You regain all expended spell slots
 when you finish a long rest.
 
-For example, if you know the 1st-level spell *cure wounds* and have a
-1st-level and a 2nd-level spell slot available, you can cast *cure
-wounds* using either slot.
+For example, if you know the 1st-level spell _cure wounds_ and have a
+1st-level and a 2nd-level spell slot available, you can cast _cure
+wounds_ using either slot.
 
 #### Spells Known of 1st Level and Higher
 
@@ -571,8 +568,7 @@ Inspiration left, you regain one use.
 > [contact us](mailto:gm@5esrd.com) or [submit it on
 > github](https://github.com/eepMoody/open5e).
 
-Bardic Colleges
----------------
+## Bardic Colleges
 
 ### College of Lore
 

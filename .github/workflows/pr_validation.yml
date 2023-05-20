@@ -5,6 +5,7 @@ on:
     types: [opened, reopened]
   push:
     branches-ignore:
+      - staging
       - main
       - master
 

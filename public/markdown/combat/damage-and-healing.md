@@ -1,13 +1,11 @@
-Damage and Healing
-==================
+# Damage and Healing
 
 Injury and the risk of death are constant companions of those who
 explore fantasy gaming worlds. The thrust of a sword, a well-placed
 arrow, or a blast of flame from a srd:fireball spell all have the
 potential to damage, or even kill, the hardiest of creatures.
 
-Hit Points
-----------
+## Hit Points
 
 Hit points represent a combination of physical and mental durability,
 the will to live, and luck. Creatures with more hit points are more
@@ -21,8 +19,7 @@ Whenever a creature takes damage, that damage is subtracted from its hit
 points. The loss of hit points has no effect on a creature's
 capabilities until the creature drops to 0 hit points.
 
-Damage Rolls
-------------
+## Damage Rolls
 
 Each weapon, spell, and harmful monster ability specifies the damage it
 deals. You roll the damage die or dice, add any modifiers, and apply the
@@ -72,14 +69,14 @@ frigid blast of a white dragon's breath deal cold damage.
 deal fire damage.
 
 **Force.** Force is pure magical energy focused into a damaging form.
-Most effects that deal force damage are spells, including *magic
-missile* and *spiritual weapon*.
+Most effects that deal force damage are spells, including _magic
+missile_ and _spiritual weapon_.
 
-**Lightning.** A *lightning bolt* spell and a blue dragon's breath deal
+**Lightning.** A _lightning bolt_ spell and a blue dragon's breath deal
 lightning damage.
 
 **Necrotic.** Necrotic damage, dealt by certain undead and a spell such
-as *chill touch*, withers matter and even the soul.
+as _chill touch_, withers matter and even the soul.
 
 **Piercing.** Puncturing and impaling attacks, including spears and
 monsters' bites, deal piercing damage.
@@ -90,7 +87,7 @@ deal poison damage.
 **Psychic.** Mental abilities such as a mind flayer's psionic blast deal
 psychic damage.
 
-**Radiant.** Radiant damage, dealt by a cleric's *flame strike* spell or
+**Radiant.** Radiant damage, dealt by a cleric's _flame strike_ spell or
 an angel's smiting weapon, sears the flesh like fire and overloads the
 spirit with power.
 
@@ -99,8 +96,7 @@ spirit with power.
 **Thunder.** A concussive burst of sound, such as the effect of the
 srd:thunderwave spell, deals thunder damage.
 
-Damage Resistance and Vulnerability
------------------------------------
+## Damage Resistance and Vulnerability
 
 Some creatures and objects are exceedingly difficult or unusually easy
 to hurt with certain types of damage.
@@ -123,13 +119,12 @@ resistance to fire damage as well as resistance to all nonmagical
 damage, the damage of a nonmagical fire is reduced by half against the
 creature, not reduced by three--- quarters.
 
-Healing
--------
+## Healing
 
 Unless it results in death, damage isn't permanent. Even death is
 reversible through powerful magic. Rest can restore a creature's hit
-points, and magical methods such as a *cure wounds* spell or a *potion
-of healing* can remove damage in an instant.
+points, and magical methods such as a _cure wounds_ spell or a _potion
+of healing_ can remove damage in an instant.
 
 When a creature receives healing of any kind, hit points regained are
 added to its current hit points. A creature's hit points can't exceed
@@ -141,8 +136,7 @@ maximum of 20, the ranger regains 6 hit points from the druid, not 8.
 A creature that has died can't regain hit points until magic such as the
 srd:revivify spell has restored it to life.
 
-Dropping to 0 Hit Points
-------------------------
+## Dropping to 0 Hit Points
 
 When you drop to 0 hit points, you either die outright or fall
 srd:unconscious, as explained in the following sections.
@@ -210,8 +204,7 @@ villains and special nonplayer characters are common exceptions; the GM
 might have them fall srd:unconscious and follow the same rules as player
 characters.
 
-Knocking a Creature Out
------------------------
+## Knocking a Creature Out
 
 Sometimes an attacker wants to incapacitate a foe, rather than deal a
 killing blow. When an attacker reduces a creature to 0 hit points with a
@@ -219,17 +212,16 @@ melee attack, the attacker can knock the creature out. The attacker can
 make this choice the instant the damage is dealt. The creature falls
 srd:unconscious and is stable.
 
-Temporary Hit Points
---------------------
+## Temporary Hit Points
 
 Some spells and special abilities confer temporary hit points to a
 creature. Temporary hit points aren't actual hit points; they are a
 buffer against damage, a pool of hit points that protect you from
 injury. When you have temporary hit points and take damage, the
 temporary hit points are lost first, and any leftover damage carries
-over to your normal hit points. *For example, if you have 5 temporary
+over to your normal hit points. _For example, if you have 5 temporary
 hit points and take 7 damage, you lose the temporary hit points and then
-take 2 damage.* Because temporary hit points are separate from your
+take 2 damage._ Because temporary hit points are separate from your
 actual hit points, they can exceed your hit point maximum. A character
 can, therefore, be at full hit points and receive temporary hit points.
 

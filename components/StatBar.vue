@@ -1,34 +1,32 @@
 <template>
   <div class="stat-group">
-    <div
-      v-for="(stat, key) in stats"
-      :key="key"
-      class="stat-unit"
-    >
-      <span class="title-case">{{ key }}</span><span>{{ stat }} (<statBonus :stat="parseInt(stat)" />)</span>
+    <div v-for="(stat, key) in stats" :key="key" class="stat-unit">
+      <span class="title-case">{{ key }}</span
+      ><span>{{ stat }} (<statBonus :stat="parseInt(stat)" />)</span>
     </div>
   </div>
 </template>
-
 
 <script>
 import statBonus from '~/components/StatBonus';
 
 export default {
   components: {
-    statBonus
+    statBonus,
   },
   props: {
     stats: {
       type: Object,
-      default: function() {return {str: 0, dex: 0, con: 0, int: 0, wis: 0, cha: 0}}
+      default: function () {
+        return { str: 0, dex: 0, con: 0, int: 0, wis: 0, cha: 0 };
+      },
     },
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-.stat-group{
+.stat-group {
   display: inline-flex;
   flex-direction: row;
 
@@ -43,4 +41,4 @@ export default {
     }
   }
 }
-</style> 
+</style>

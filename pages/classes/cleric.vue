@@ -7,18 +7,16 @@
 <script>
 import MdViewer from '~/components/MdViewer';
 
-
 export default {
   components: {
-    MdViewer
+    MdViewer,
   },
   data: function () {
     return {
-      file: useRoute().path
-    }
-  }
-}
+      file: useRoute().path,
+    };
+  },
+};
 </script>
 
 <style></style>
-

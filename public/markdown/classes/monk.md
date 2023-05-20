@@ -1,8 +1,6 @@
-Monk
-====
+# Monk
 
-Class Features
---------------
+## Class Features
 
 As a monk, you gain the following class features.
 
@@ -34,9 +32,9 @@ History, Insight, Religion, and Stealth
 You start with the following equipment, in addition to the equipment
 granted by your background:
 
--   (*a*) a shortsword or (*b*) any simple weapon
--   (*a*) a dungeoneer's pack or (*b*) an explorer's pack
--   10 darts
+- (_a_) a shortsword or (_b_) any simple weapon
+- (_a_) a dungeoneer's pack or (_b_) an explorer's pack
+- 10 darts
 
 ### The Monk
 
@@ -215,8 +213,7 @@ granted by your background:
   </tbody>
 </table>
 
-Class Abilities
----------------
+## Class Abilities
 
 ### Unarmored Defense
 
@@ -234,16 +231,16 @@ property.
 You gain the following benefits while you are unarmed or wielding only
 monk weapons and you aren't wearing armor or wielding a shield:
 
--   You can use Dexterity instead of Strength for the attack and damage
-    rolls of your unarmed strikes and monk weapons.
--   You can roll a d4 in place of the normal damage of your unarmed
-    strike or monk weapon. This die changes as you gain monk levels,
-    ashown in the Martial Arts column of the Monk table.
--   When you use the Attack action with an unarmed strike or a monk
-    weapon on your turn, you can make one unarmed strike as a bonus
-    action. For example, if you take the Attack action and attack with a
-    quarterstaff, you can also make an unarmed strike as a bonus action,
-    assuming you haven't already taken a bonus action this turn.
+- You can use Dexterity instead of Strength for the attack and damage
+  rolls of your unarmed strikes and monk weapons.
+- You can roll a d4 in place of the normal damage of your unarmed
+  strike or monk weapon. This die changes as you gain monk levels,
+  ashown in the Martial Arts column of the Monk table.
+- When you use the Attack action with an unarmed strike or a monk
+  weapon on your turn, you can make one unarmed strike as a bonus
+  action. For example, if you take the Attack action and attack with a
+  quarterstaff, you can also make an unarmed strike as a bonus action,
+  assuming you haven't already taken a bonus action this turn.
 
 Certain monasteries use specialized forms of the monk weapons. For
 example, you might use a club that is two lengths of wood connected by a
@@ -407,7 +404,7 @@ Beginning at 18th level, you can use your action to spend 4 ki points to
 become srd:invisible for 1 minute. During that time, you also have
 resistance to all damage but force damage.
 
-Additionally, you can spend 8 ki points to cast the *astral projection*
+Additionally, you can spend 8 ki points to cast the _astral projection_
 spell, without needing material components. When you do so, you can't
 take any other creatures with you.
 
@@ -416,8 +413,7 @@ take any other creatures with you.
 At 20th level, when you roll for initiative and have no ki points
 remaining, you regain 4 ki points.
 
-Monastic Traditions
--------------------
+## Monastic Traditions
 
 Three traditions of monastic pursuit are common in the monasteries
 scattered across the multiverse. Most monasteries practice one tradition
@@ -451,10 +447,10 @@ your enemy's ki when you harness your own. Whenever you hit a creature
 with one of the attacks granted by your Flurry of Blows, you can impose
 one of the following effects on that target:
 
--   It must succeed on a Dexterity saving throw or be knocked srd:prone.
--   It must make a Strength saving throw. If it fails, you can push it
-    up to 15 feet away from you.
--   It can't take reactions until the end of your next turn.
+- It must succeed on a Dexterity saving throw or be knocked srd:prone.
+- It must make a Strength saving throw. If it fails, you can push it
+  up to 15 feet away from you.
+- It can't take reactions until the end of your next turn.
 
 #### Wholeness of Body
 

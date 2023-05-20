@@ -10,19 +10,10 @@
       </p>
     </h2>
     <div :class="'three-column'">
-      <p v-if="!spellListLength">
-        No results
-      </p>
-      <ul
-        v-for="level in spellsByLevel"
-        :key="level.lvl"
-        class="list--items"
-      >
+      <p v-if="!spellListLength">No results</p>
+      <ul v-for="level in spellsByLevel" :key="level.lvl" class="list--items">
         <h3>{{ level.lvlText }}</h3>
-        <li
-          v-for="spell in level.spells"
-          :key="spell.name"
-        >
+        <li v-for="spell in level.spells" :key="spell.name">
           <nuxt-link
             tag="a"
             :params="{ id: spell.slug }"

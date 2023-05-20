@@ -6,25 +6,25 @@
 
 <script>
 import MdViewer from '~/components/MdViewer';
-import { useMainStore } from '~/store'
+import { useMainStore } from '~/store';
 
 export default {
   components: {
-    MdViewer
+    MdViewer,
   },
   setup() {
-    const store = useMainStore()
-    return { store }
+    const store = useMainStore();
+    return { store };
   },
   data: function () {
     return {
-      file: useRoute().path
-    }
+      file: useRoute().path,
+    };
   },
   computed: {
     backgroundsList: function () {
       return this.store.allBackgrounds;
-    }
+    },
   },
   mounted() {
     this.store.loadBackgrounds();
@@ -33,11 +33,8 @@ export default {
     updateFilter: function (val) {
       this.filter = val;
     },
-  }
-}
+  },
+};
 </script>
 
-
-
 <style></style>
-

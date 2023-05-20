@@ -13,16 +13,24 @@ p {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: $pad-md * 1.5;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: $font-family-headers;
   font-weight: 600;
 }
 
-h4, h5 {
+h4,
+h5 {
   font-weight: 800;
   opacity: 0.7;
 }
@@ -67,7 +75,7 @@ h5 {
   ul {
     break-inside: avoid-column;
   }
-  ul:first-of-type{
+  ul:first-of-type {
     margin-top: 0;
     h3 {
       margin-top: 0;

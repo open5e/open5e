@@ -2,13 +2,11 @@ The description of each race includes racial traits that are common to
 members of that race. The following entries appear among the traits of
 most races.
 
-Ability Score Increase
-======================
+# Ability Score Increase
 
 Every race increases one or more of a character's ability scores.
 
-Age
-===
+# Age
 
 The age entry notes the age when a member of the race is considered an
 adult, as well as the race's expected lifespan. This information can
@@ -19,16 +17,14 @@ young or very old character, your age could explain a particularly low
 Strength or Constitution score, while advanced age could account for a
 high Intelligence or Wisdom.
 
-Alignment
-=========
+# Alignment
 
 Most races have tendencies toward certain alignments, described in this
 entry. These are not binding for player characters, but considering why
 your dwarf is chaotic, for example, in defiance of lawful dwarf society
 can help you better define your character.
 
-Size
-====
+# Size
 
 Characters of most races are Medium, a size category including creatures
 that are roughly 4 to 8 feet tall. Members of a few races are Small
@@ -37,14 +33,12 @@ affect them differently. The most important of these rules is that Small
 characters have trouble wielding heavy weapons, as explained in
 "Equipment."
 
-Speed
-=====
+# Speed
 
 Your speed determines how far you can move when traveling (
 "Adventuring") and fighting ("Combat").
 
-Languages
-=========
+# Languages
 
 By virtue of your race, your character can speak, read, and write
 certain languages.
@@ -59,13 +53,12 @@ If you know of high-quality content that would be a good fit, please
 [contact us](mailto:gm@5esrd.com) or [submit it on
 github](https://github.com/eepMoody/open5e).
 
-Subraces
-========
+# Subraces
 
 Some races have subraces. Members of a subrace have the traits of the
 parent race in addition to the traits specified for their subrace.
 Relationships among subraces vary significantly from race to race and
 world to world.
 
-dwarf elf gnome halfling human \* midgard\_heroes/index
-southlandsheroes\_races/index
+dwarf elf gnome halfling human \* midgard_heroes/index
+southlandsheroes_races/index

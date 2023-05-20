@@ -1,5 +1,4 @@
-Making an Attack
-================
+# Making an Attack
 
 Whether you're striking with a melee weapon, firing a weapon at range,
 or making an attack roll as part of a spell, an attack has a simple
@@ -20,8 +19,7 @@ If there's ever any question whether something you're doing counts as an
 attack, the rule is simple: if you're making an attack roll, you're
 making an attack.
 
-Attack Rolls
-------------
+## Attack Rolls
 
 When you make an attack, your attack roll determines whether the attack
 hits or misses. To make an attack roll, roll a d20 and add the
@@ -67,8 +65,7 @@ modifiers or the target's AC. This is called a critical hit.
 If the d20 roll for an attack is a 1, the attack misses regardless of
 any modifiers or the target's AC.
 
-Unseen Attackers and Targets
-----------------------------
+## Unseen Attackers and Targets
 
 Combatants often try to escape their foes' notice by hiding, casting the
 invisibility spell, or lurking in darkness.
@@ -84,8 +81,7 @@ When a creature can't see you, you have advantage on attack rolls
 against it. If you are hidden---both unseen and unheard---when you make
 an attack, you give away your location when the attack hits or misses.
 
-Ranged Attacks
---------------
+## Ranged Attacks
 
 When you make a ranged attack, you fire a bow or a crossbow, hurl a
 handaxe, or otherwise send projectiles to strike a foe at a distance. A
@@ -113,8 +109,7 @@ you make a ranged attack with a weapon, a spell, or some other means,
 you have disadvantage on the attack roll if you are within 5 feet of a
 hostile creature who can see you and who isn't srd:incapacitated.
 
-Melee Attacks
--------------
+## Melee Attacks
 
 Used in hand-to-hand combat, a melee attack allows you to attack a foe
 within your reach. A melee attack typically uses a handheld weapon such

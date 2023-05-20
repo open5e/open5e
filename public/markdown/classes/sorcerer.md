@@ -1,8 +1,6 @@
-Sorcerer
-========
+# Sorcerer
 
-Class Features
---------------
+## Class Features
 
 As a sorcerer, you gain the following class features.
 
@@ -34,10 +32,10 @@ Intimidation, Persuasion, and Religion
 You start with the following equipment, in addition to the equipment
 granted by your background:
 
--   (*a*) a light crossbow and 20 bolts or (*b*) any simple weapon
--   (*a*) a component pouch or (*b*) an arcane focus
--   (*a*) a dungeoneer's pack or (*b*) an explorer's pack
--   Two daggers
+- (_a_) a light crossbow and 20 bolts or (_b_) any simple weapon
+- (_a_) a component pouch or (_b_) an arcane focus
+- (_a_) a dungeoneer's pack or (_b_) an explorer's pack
+- Two daggers
 
 #### The Sorcerer
 
@@ -408,8 +406,7 @@ granted by your background:
   </tbody>
 </table>
 
-Class Abilities
----------------
+## Class Abilities
 
 ### Spellcasting
 
@@ -431,9 +428,9 @@ spells of 1st level and higher. To cast one of these sorcerer spells,
 you must expend a slot of the spell's level or higher. You regain all
 expended spell slots when you finish a long rest.
 
-For example, if you know the 1st-level spell *burning hands* and have a
-1st-level and a 2nd-level spell slot available, you can cast *burning
-hands* using either slot.
+For example, if you know the 1st-level spell _burning hands_ and have a
+1st-level and a 2nd-level spell slot available, you can cast _burning
+hands_ using either slot.
 
 #### Spells Known of 1st Level and Higher
 
@@ -507,20 +504,24 @@ long rest.
 
 #### Creating Spell Slots
 
-  ---------------------------------------
-  Spell Slot    Sorcery Point Cost
-  Level         
-  ------------- -------------------------
-  1st           2
+---
 
-  2nd           3
+Spell Slot Sorcery Point Cost
+Level
 
-  3rd           5
+---
 
-  4th           6
+1st 2
 
-  5th           7
-  ---------------------------------------
+2nd 3
+
+3rd 5
+
+4th 6
+
+5th 7
+
+---
 
 **Converting a Spell Slot to Sorcery Points.** As a bonus action on your
 turn, you can expend one spell slot and gain a number of sorcery points
@@ -607,8 +608,7 @@ increase an ability score above 20 using this feature.
 At 20th level, you regain 4 expended sorcery points whenever you finish
 a short rest.
 
-Sorcerous Origins
------------------
+## Sorcerous Origins
 
 Different sorcerers claim different origins for their innate magic, such
 as a draconic bloodline.
@@ -638,18 +638,20 @@ result of a pact or some other exceptional circumstance.
 At 1st level, you choose one type of dragon as your ancestor. The damage
 type associated with each dragon is used by features you gain later.
 
-  Draconic Ancestry             Dragon Damage Type
-  ----------------------------- -------------------------------
-  Black                         Acid
-  Blue                          Lightning
-  Brass                         Fire
-  Bronze                        Lightning
-  Copper                        Acid
-  Gold                          Fire
-  Green                         Poison
-  Red                           Fire
-  Silver                        Cold
-  White                         Cold
+Draconic Ancestry Dragon Damage Type
+
+---
+
+Black Acid
+Blue Lightning
+Brass Fire
+Bronze Lightning
+Copper Acid
+Gold Fire
+Green Poison
+Red Fire
+Silver Cold
+White Cold
 
 You can speak, read, and write Draconic. Additionally, whenever you make
 a Charisma check when interacting with dragons, your proficiency bonus

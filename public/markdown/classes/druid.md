@@ -1,8 +1,6 @@
-Druid
-=====
+# Druid
 
-Class Features
---------------
+## Class Features
 
 As a druid, you gain the following class features.
 
@@ -36,9 +34,9 @@ Insight, Medicine, Nature, Perception, Religion, and Survival
 You start with the following equipment, in addition to the equipment
 granted by your background:
 
--   (*a*) a wooden shield or (*b*) any simple weapon
--   (*a*) a scimitar or (*b*) any simple melee weapon
--   Leather armor, an explorer's pack, and a druidic focus
+- (_a_) a wooden shield or (_b_) any simple weapon
+- (_a_) a scimitar or (_b_) any simple melee weapon
+- Leather armor, an explorer's pack, and a druidic focus
 
 ### The Druid
 
@@ -367,8 +365,7 @@ granted by your background:
   </tbody>
 </table>
 
-Class Abilities
----------------
+## Class Abilities
 
 ### Druidic
 
@@ -407,7 +404,7 @@ spell slots.
 For example, if you are a 3rd-level druid, you have four 1st-level and
 two 2nd-level spell slots. With a Wisdom of 16, your list of prepared
 spells can a include six spells of 1st or 2nd level, in any combination.
-If you prepare the 1st-level spell *cure wounds,* you can cast it using
+If you prepare the 1st-level spell _cure wounds,_ you can cast it using
 a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from
 your list of prepared spells.
 
@@ -452,11 +449,11 @@ have a flying or swimming speed.
 
 #### Beast Shapes
 
-| Level   | CR    | Limitations                   | Example       |
-| ------- | ----- | ----------------------------- | ------------- |
-| 2nd     | 1/4   | No flying or swimming speed   | Wolf          |
-| 4th     | 1/2   | No flying speed               | Crocodile     |
-| 8th     | 1     | ---                           | Giant eagle   |
+| Level | CR  | Limitations                 | Example     |
+| ----- | --- | --------------------------- | ----------- |
+| 2nd   | 1/4 | No flying or swimming speed | Wolf        |
+| 4th   | 1/2 | No flying speed             | Crocodile   |
+| 8th   | 1   | ---                         | Giant eagle |
 
 You can stay in a beast shape for a number of hours equal to half your
 druid level (rounded down). You then revert to your normal form unless
@@ -466,40 +463,40 @@ revert if you fall srd:unconscious, drop to 0 hit points, or die.
 
 While you are transformed, the following rules apply:
 
--   Your game statistics are replaced by the statistics of the beast,
-    but you retain your alignment, personality, and Intelligence,
-    Wisdom, and Charisma scores. You also retain all of your skill and
-    saving throw proficiencies, in addition to gaining those of the
-    creature. If the creature has the same proficiency as you and the
-    bonus in its stat block is higher than yours, use the creature's
-    bonus instead of yours. If the creature has any legendary or lair
-    actions, you can't use them.
--   When you transform, you assume the beast's hit points and Hit Dice.
-    When you revert to your normal form, you return to the number of hit
-    points you had before you transformed. However, if you revert as a
-    result of dropping to 0 hit points, any excess damage carries over
-    to your normal form. For example, if you take 10 damage in animal
-    form and have only 1 hit point left, you revert and take 9 damage.
-    As long as the excess damage doesn't reduce your normal form to 0
-    hit points, you aren't knocked srd:unconscious.
--   You can't cast spells, and your ability to speak or take any action
-    that requires hands is limited to the capabilities of your beast
-    form. Transforming doesn't break your concentration on a spell
-    you've already cast, however, or prevent you from taking actions
-    that are part of a spell, such as *call lightning*, that you've
-    already cast.
--   You retain the benefit of any features from your class, race, or
-    other source and can use them if the new form is physically capable
-    of doing so. However, you can't use any of your special senses, such
-    as darkvision, unless your new form also has that sense.
--   You choose whether your equipment falls to the ground in your space,
-    merges into your new form, or is worn by it. Worn equipment
-    functions as normal, but the GM decides whether it is practical for
-    the new form to wear a piece of equipment, based on the creature's
-    shape and size. Your equipment doesn't change size or shape to match
-    the new form, and any equipment that the new form can't wear must
-    either fall to the ground or merge with it. Equipment that merges
-    with the form has no effect until you leave the form.
+- Your game statistics are replaced by the statistics of the beast,
+  but you retain your alignment, personality, and Intelligence,
+  Wisdom, and Charisma scores. You also retain all of your skill and
+  saving throw proficiencies, in addition to gaining those of the
+  creature. If the creature has the same proficiency as you and the
+  bonus in its stat block is higher than yours, use the creature's
+  bonus instead of yours. If the creature has any legendary or lair
+  actions, you can't use them.
+- When you transform, you assume the beast's hit points and Hit Dice.
+  When you revert to your normal form, you return to the number of hit
+  points you had before you transformed. However, if you revert as a
+  result of dropping to 0 hit points, any excess damage carries over
+  to your normal form. For example, if you take 10 damage in animal
+  form and have only 1 hit point left, you revert and take 9 damage.
+  As long as the excess damage doesn't reduce your normal form to 0
+  hit points, you aren't knocked srd:unconscious.
+- You can't cast spells, and your ability to speak or take any action
+  that requires hands is limited to the capabilities of your beast
+  form. Transforming doesn't break your concentration on a spell
+  you've already cast, however, or prevent you from taking actions
+  that are part of a spell, such as _call lightning_, that you've
+  already cast.
+- You retain the benefit of any features from your class, race, or
+  other source and can use them if the new form is physically capable
+  of doing so. However, you can't use any of your special senses, such
+  as darkvision, unless your new form also has that sense.
+- You choose whether your equipment falls to the ground in your space,
+  merges into your new form, or is worn by it. Worn equipment
+  functions as normal, but the GM decides whether it is practical for
+  the new form to wear a piece of equipment, based on the creature's
+  shape and size. Your equipment doesn't change size or shape to match
+  the new form, and any equipment that the new form can't wear must
+  either fall to the ground or merge with it. Equipment that merges
+  with the form has no effect until you leave the form.
 
 ### Druid Circle
 
@@ -548,8 +545,7 @@ shape and your beast shape from Wild Shape.
 > [contact us](mailto:gm@5esrd.com) or [submit it on
 > github](https://github.com/eepMoody/open5e).
 
-Druid Circles
--------------
+## Druid Circles
 
 ### Circle of the Land
 
@@ -595,66 +591,66 @@ list, the spell is nonetheless a druid spell for you.
 
 ##### Arctic
 
-|  Druid Level      | Circle Spells                                           |
-|  ---------------- | -------------------------------------------------------
-|  3rd              | srd:hold-person, srd:spike-growth |
-|  5th              | srd:sleet-storm, srd:slow |
-|  7th              | srd:freedom-of-movement, srd:ice-storm |
-|  9th              | srd:commune-with-nature, srd:cone-of-cold |
+| Druid Level | Circle Spells                             |
+| ----------- | ----------------------------------------- |
+| 3rd         | srd:hold-person, srd:spike-growth         |
+| 5th         | srd:sleet-storm, srd:slow                 |
+| 7th         | srd:freedom-of-movement, srd:ice-storm    |
+| 9th         | srd:commune-with-nature, srd:cone-of-cold |
 
 ##### Coast
 
-|  Druid Level      | Circle Spells                                           |
-|  ---------------  | --------------------------------------------------------
-|  3rd              | srd:mirror-image, srd:misty-step |
-|  5th              | srd:water-breathing, srd:water-walk |
-|  7th              | srd:control-water, srd:freedom-of-movement |
-|  9th              | srd:conjure-elemental, srd:scrying |
+| Druid Level | Circle Spells                              |
+| ----------- | ------------------------------------------ |
+| 3rd         | srd:mirror-image, srd:misty-step           |
+| 5th         | srd:water-breathing, srd:water-walk        |
+| 7th         | srd:control-water, srd:freedom-of-movement |
+| 9th         | srd:conjure-elemental, srd:scrying         |
 
 ##### Desert
 
-|  Druid Level      | Circle Spells                                           |
-|  ---------------  | --------------------------------------------------------
-|  3rd              | srd:blur, srd:silence |
-|  5th              | srd:create-food-and-water, srd:protection-from-energy |
-|  7th              | srd:blight, srd:hallucinatory-terrain |
-|  9th              | srd:insect-plague, srd:wall-of-stone |
+| Druid Level | Circle Spells                                         |
+| ----------- | ----------------------------------------------------- |
+| 3rd         | srd:blur, srd:silence                                 |
+| 5th         | srd:create-food-and-water, srd:protection-from-energy |
+| 7th         | srd:blight, srd:hallucinatory-terrain                 |
+| 9th         | srd:insect-plague, srd:wall-of-stone                  |
 
 ##### Forest
 
-|  Druid Level      | Circle Spells                                           |
-|  ---------------- | -------------------------------------------------------
-|  3rd              | srd:barkskin, srd:spider-climb |
-|  5th              | srd:call-lightning, srd:plant-growth |
-|  7th              | srd:divination, srd:freedom-of-movement |
-|  9th              | srd:commune-with-nature, srd:tree-stride |
+| Druid Level | Circle Spells                            |
+| ----------- | ---------------------------------------- |
+| 3rd         | srd:barkskin, srd:spider-climb           |
+| 5th         | srd:call-lightning, srd:plant-growth     |
+| 7th         | srd:divination, srd:freedom-of-movement  |
+| 9th         | srd:commune-with-nature, srd:tree-stride |
 
 ##### Grassland
 
-|  Druid Level      | Circle Spells                                           |
-|  ---------------- | -------------------------------------------------------
-|  3rd              | srd:invisibility, srd:pass-without-trace |
-|  5th              | srd:daylight, srd:haste |
-|  7th              | srd:divination, srd:freedom-of-movement |
-|  9th              | srd:dream, srd:insect-plague |
+| Druid Level | Circle Spells                            |
+| ----------- | ---------------------------------------- |
+| 3rd         | srd:invisibility, srd:pass-without-trace |
+| 5th         | srd:daylight, srd:haste                  |
+| 7th         | srd:divination, srd:freedom-of-movement  |
+| 9th         | srd:dream, srd:insect-plague             |
 
 ##### Mountain
 
-|  Druid Level      | Circle Spells                                           |
-|  ---------------- | -------------------------------------------------------
-|  3rd              | srd:spider-climb, srd:spike-growth |
-|  5th              | srd:lightning-bolt, srd:meld-into-stone |
-|  7th              | srd:stone-shape, srd:stoneskin |
-|  9th              | srd:passwall, srd:wall-of-stone |
+| Druid Level | Circle Spells                           |
+| ----------- | --------------------------------------- |
+| 3rd         | srd:spider-climb, srd:spike-growth      |
+| 5th         | srd:lightning-bolt, srd:meld-into-stone |
+| 7th         | srd:stone-shape, srd:stoneskin          |
+| 9th         | srd:passwall, srd:wall-of-stone         |
 
 ##### Swamp
 
-|  Druid Level      | Circle Spells                                           |
-|  ---------------- | -------------------------------------------------------
-|  3rd              | srd:acid-arrow, srd:darkness |
-|  5th              | srd:water-walk, srd:stinking-cloud |
-|  7th              | srd:freedom-of-movement, srd:locate-creature |
-|  9th              | srd:insect-plague, srd:scrying |
+| Druid Level | Circle Spells                                |
+| ----------- | -------------------------------------------- |
+| 3rd         | srd:acid-arrow, srd:darkness                 |
+| 5th         | srd:water-walk, srd:stinking-cloud           |
+| 7th         | srd:freedom-of-movement, srd:locate-creature |
+| 9th         | srd:insect-plague, srd:scrying               |
 
 #### Land's Stride
 
@@ -682,8 +678,7 @@ must choose a different target, or the attack automatically misses. On a
 successful save, the creature is immune to this effect for 24 hours. The
 creature is aware of this effect before it makes its attack against you.
 
-Druid Traditions
-----------------
+## Druid Traditions
 
 ### Sacred Plants and Wood
 

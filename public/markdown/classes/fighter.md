@@ -1,8 +1,6 @@
-Fighter
-=======
+# Fighter
 
-Class Features
---------------
+## Class Features
 
 As a fighter, you gain the following class features.
 
@@ -35,10 +33,10 @@ Survival
 You start with the following equipment, in addition to the equipment
 granted by your background:
 
--   (*a*) chain mail or (*b*) leather armor, longbow, and 20 arrows
--   (*a*) a martial weapon and a shield or (*b*) two martial weapons
--   (*a*) a light crossbow and 20 bolts or (*b*) two handaxes
--   (*a*) a dungeoneer's pack or (*b*) an explorer's pack
+- (_a_) chain mail or (_b_) leather armor, longbow, and 20 arrows
+- (_a_) a martial weapon and a shield or (_b_) two martial weapons
+- (_a_) a light crossbow and 20 bolts or (_b_) two handaxes
+- (_a_) a dungeoneer's pack or (_b_) an explorer's pack
 
 ### The Fighter
 
@@ -154,8 +152,7 @@ granted by your background:
   </tbody>
 </table>
 
-Class Abilities
----------------
+## Class Abilities
 
 ### Fighting Style
 
@@ -252,8 +249,7 @@ again until you finish a long rest.
 You can use this feature twice between long rests starting at 13th level
 and three times between long rests starting at 17th level.
 
-Martial Archetypes
-------------------
+## Martial Archetypes
 
 Different fighters choose different approaches to perfecting their
 fighting prowess. The martial archetype you choose to emulate reflects

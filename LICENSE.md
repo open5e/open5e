@@ -20,11 +20,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-----------------
+---
 
 Artistc images included in this repository are licensed Creative Commons Attribution-NonCommercial 4.0 International
 
-*This means you are free to:*
+_This means you are free to:_
 
 **Share** — copy and redistribute the material in any medium or format
 
@@ -32,7 +32,7 @@ Artistc images included in this repository are licensed Creative Commons Attribu
 
 The licensor cannot revoke these freedoms as long as you follow the license terms.
 
-*Under the following terms:*
+_Under the following terms:_
 
 **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
@@ -43,6 +43,6 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 For the full text of this Creative Commons license, please see:
 https://creativecommons.org/licenses/by-nc/4.0/
 
---------
+---
 
 This software makes no claims to license of included SRD and OGL content, nor to externally linked files or images of any kind.

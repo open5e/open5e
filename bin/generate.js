@@ -1,5 +1,5 @@
 #! /usr/bin/env node
-console.log('generating static content files')
+console.log('generating static content files');
 
 const jsonfile = require('jsonfile');
 const slugify = require('slugify');
@@ -9,94 +9,109 @@ var getDirName = require('path').dirname;
 
 var spellClassArrays = require('./spellClassArrays.js');
 
-
 function cleanName(str) {
-  const cleaned = slugify(str.toLowerCase(), {remove: /[*+~.()"!:@/]/g})
+  const cleaned = slugify(str.toLowerCase(), { remove: /[*+~.()"!:@/]/g });
   return cleaned;
 }
 
 function writeFile(path, contents, cb) {
   mkdirp(getDirName(path), function (err) {
-    if (err) {return cb(err);}
+    if (err) {
+      return cb(err);
+    }
     jsonfile.writeFile(path, contents, cb);
   });
 }
 
 function fileParser(input, name, listName) {
   jsonfile.readFile(input, function (err, obj) {
-    if (err) {console.error(err);}
-    writeFile(`${__dirname}/../static/json/${listName}.json`, obj, function(err){
-      if (err) {
-        console.log( err );
+    if (err) {
+      console.error(err);
+    }
+    writeFile(
+      `${__dirname}/../static/json/${listName}.json`,
+      obj,
+      function (err) {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log(`wrote ${name} list`);
+        }
       }
-      else {
-        console.log( `wrote ${name} list`);
-      }
-    })
+    );
     console.log(`writing individual ${name} files:`);
     for (item in obj) {
-        if(name === 'spell'){
-         obj[item] = spellClassArrays(obj[item]);
-       }
+      if (name === 'spell') {
+        obj[item] = spellClassArrays(obj[item]);
+      }
       const itemJSON = obj[item];
-      const itemName = cleanName(itemJSON.name)
+      const itemName = cleanName(itemJSON.name);
       const filename = `${__dirname}/../static/json/${listName}/${itemName}.json`;
-      writeFile(filename, itemJSON, function(err){
+      writeFile(filename, itemJSON, function (err) {
         if (err) {
-          console.log( err );
+          console.log(err);
         }
-      })
+      });
     }
-  })
+  });
 }
 
-function indexJson (files, listName) {
+function indexJson(files, listName) {
   let list = [];
-  const path = `${__dirname}/../static/json/${listName}.json`
+  const path = `${__dirname}/../static/json/${listName}.json`;
   for (file in files) {
-    json = jsonfile.readFileSync(files[file])
+    json = jsonfile.readFileSync(files[file]);
     for (item in json) {
       const thisItem = json[item];
       const slug = slugify(thisItem.name.toLowerCase());
-      if(listName === 'spell-index'){
-        list.push({name: thisItem.name, slug: slug, dnd_class: thisItem.class, school: thisItem.school})
-      }else if (listName === 'monster-index'){
-        list.push({name: thisItem.name, slug: slug, type: thisItem.type, challenge_rating: thisItem.challenge_rating, size: thisItem.size, hit_points: thisItem.hit_points})
-      }
-      else{
-        list.push({name: thisItem.name, slug: slug})
+      if (listName === 'spell-index') {
+        list.push({
+          name: thisItem.name,
+          slug: slug,
+          dnd_class: thisItem.class,
+          school: thisItem.school,
+        });
+      } else if (listName === 'monster-index') {
+        list.push({
+          name: thisItem.name,
+          slug: slug,
+          type: thisItem.type,
+          challenge_rating: thisItem.challenge_rating,
+          size: thisItem.size,
+          hit_points: thisItem.hit_points,
+        });
+      } else {
+        list.push({ name: thisItem.name, slug: slug });
       }
     }
   }
-  writeFile(path, list, function(err){
+  writeFile(path, list, function (err) {
     if (err) {
-      console.log( err );
+      console.log(err);
+    } else {
+      console.log(`wrote ${listName}`);
     }
-    else {
-      console.log( `wrote ${listName}`);
-    }
-  })
+  });
 }
 
-function indexWithParentJson (files, listName) {
+function indexWithParentJson(files, listName) {
   let list = [];
-  const path = `${__dirname}/../static/json/${listName}.json`
+  const path = `${__dirname}/../static/json/${listName}.json`;
   for (file in files) {
-    json = jsonfile.readFileSync(files[file])
+    json = jsonfile.readFileSync(files[file]);
     for (item in json) {
       const thisItem = json[item];
       const slug = slugify(thisItem.name.toLowerCase());
-      list.push({name: thisItem.name, slug: slug, parent: thisItem.parent})
+      list.push({ name: thisItem.name, slug: slug, parent: thisItem.parent });
     }
   }
-  writeFile(path, list, function(err){
+  writeFile(path, list, function (err) {
     if (err) {
-      console.log( err );
+      console.log(err);
+    } else {
+      console.log(`wrote ${listName}`);
     }
-    else {
-      console.log( `wrote ${listName}`);
-    }
-  })
+  });
 }
 
 const monsterfile = 'data/WOTC_5e_SRD_v5.1/monsters.json';
@@ -115,7 +130,6 @@ fileParser(itemfile, 'magicitem', 'magicitems');
 fileParser(racefile, 'race', 'races');
 fileParser(planefile, 'plane', 'planes');
 fileParser(sectionfile, 'section', 'sections');
-
 
 // make indexes for static files
 indexJson([monsterfile], 'monster-index');

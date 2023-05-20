@@ -2,9 +2,7 @@
   <section class="container docs-container">
     <h1>{{ section.name }}</h1>
     <md-viewer :text="section.desc" />
-    <h2 v-show="section.slug === 'backgrounds'">
-      Character backgrounds
-    </h2>
+    <h2 v-show="section.slug === 'backgrounds'">Character backgrounds</h2>
     <article
       v-for="background in backgroundsList"
       v-show="section.slug === 'backgrounds'"

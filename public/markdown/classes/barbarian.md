@@ -1,8 +1,6 @@
-Barbarian
-=========
+# Barbarian
 
-Class Features
---------------
+## Class Features
 
 As a barbarian, you gain the following class features.
 
@@ -33,9 +31,9 @@ Nature, Perception, and Survival
 You start with the following equipment, in addition to the equipment
 granted by your background:
 
--   (*a*) a greataxe or (*b*) any martial melee weapon
--   (*a*) two handaxes or (*b*) any simple weapon
--   An explorer's pack and four javelins
+- (_a_) a greataxe or (_b_) any martial melee weapon
+- (_a_) two handaxes or (_b_) any simple weapon
+- An explorer's pack and four javelins
 
 ### The Barbarian
 
@@ -193,9 +191,7 @@ granted by your background:
   </tbody>
 </table>
 
-
-Class Abilities
----------------
+## Class Abilities
 
 ### Rage
 
@@ -205,11 +201,11 @@ rage as a bonus action.
 While raging, you gain the following benefits if you aren't wearing
 heavy armor:
 
--   You have advantage on Strength checks and Strength saving throws.
--   When you make a melee weapon attack using Strength, you gain a bonus
-    to the damage roll that increases as you gain levels as a barbarian,
-    as shown in the Rage Damage column of the Barbarian table.
--   You have resistance to bludgeoning, piercing, and slashing damage.
+- You have advantage on Strength checks and Strength saving throws.
+- When you make a melee weapon attack using Strength, you gain a bonus
+  to the damage roll that increases as you gain levels as a barbarian,
+  as shown in the Rage Damage column of the Barbarian table.
+- You have resistance to bludgeoning, piercing, and slashing damage.
 
 If you are able to cast spells, you can't cast them or concentrate on
 them while raging.
@@ -311,8 +307,7 @@ your Strength score, you can use that score in place of the total.
 ### Primal Champion
 
 At 20th level, you embody the power of the wilds. Your Strength and
-Constitution scores increase by 4. Your maximum for those scores is now
-24.
+Constitution scores increase by 4. Your maximum for those scores is now 24.
 
 > **Looking for more Paths? :class: missing**
 >
@@ -324,8 +319,7 @@ Constitution scores increase by 4. Your maximum for those scores is now
 > [contact us](mailto:gm@5esrd.com) or [submit it on
 > github](https://github.com/eepMoody/open5e).
 
-Barbarian Paths
----------------
+## Barbarian Paths
 
 ### Path of the Berserker
 

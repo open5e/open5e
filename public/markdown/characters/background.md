@@ -52,7 +52,6 @@ chaotic evil.
 
 ### Alignment in the Multiverse
 
-
 For many thinking creatures, alignment is a moral choice. Humans,
 dwarves, elves, and other humanoid races can choose whether to follow
 the paths of good or evil, law or chaos. According to myth, the
@@ -257,10 +256,10 @@ jester.
 
 Choosing a background provides you with important story cues about your
 character's identity. The most important question to ask about your
-background is *what changed*? Why did you stop doing whatever your
+background is _what changed_? Why did you stop doing whatever your
 background describes and start adventuring? Where did you get the money
 to purchase your starting gear, or, if you come from a wealthy
-background, why don't you have *more* money? How did you learn the
+background, why don't you have _more_ money? How did you learn the
 skills of your class? What sets you apart from ordinary people who share
 your background?
 

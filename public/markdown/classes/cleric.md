@@ -1,8 +1,6 @@
-Cleric
-======
+# Cleric
 
-Class Features
---------------
+## Class Features
 
 As a cleric, you gain the following class features.
 
@@ -33,12 +31,12 @@ Religion
 You start with the following equipment, in addition to the equipment
 granted by your background:
 
--   (*a*) a mace or (*b*) a warhammer (if proficient)
--   (*a*) scale mail, (*b*) leather armor, or (*c*) chain mail (if
-    proficient)
--   (*a*) a light crossbow and 20 bolts or (*b*) any simple weapon
--   (*a*) a priest's pack or (*b*) an explorer's pack
--   A shield and a holy symbol
+- (_a_) a mace or (_b_) a warhammer (if proficient)
+- (_a_) scale mail, (_b_) leather armor, or (_c_) chain mail (if
+  proficient)
+- (_a_) a light crossbow and 20 bolts or (_b_) any simple weapon
+- (_a_) a priest's pack or (_b_) an explorer's pack
+- A shield and a holy symbol
 
 ### The Cleric
 
@@ -367,8 +365,7 @@ granted by your background:
   </tbody>
 </table>
 
-Class Abilities
----------------
+## Class Abilities
 
 ### Spellcasting
 
@@ -497,14 +494,13 @@ your Turn Undead feature, the creature is instantly destroyed if its
 challenge rating is at or below a certain threshold, as shown in the
 table below.
 
-
-| Cleric Level                 | Destroys Undead of CR...           |
-| ---------------------------- | ---------------------------------- |
-| 5th                          | 1/2 or lower                       |
-| 8th                          | 1 or lower                         |
-| 11th                         | 2 or lower                         |
-| 14th                         | 3 or lower                         |
-| 17th                         | 4 or lower                         |
+| Cleric Level | Destroys Undead of CR... |
+| ------------ | ------------------------ |
+| 5th          | 1/2 or lower             |
+| 8th          | 1 or lower               |
+| 11th         | 2 or lower               |
+| 14th         | 3 or lower               |
+| 17th         | 4 or lower               |
 
 ### Divine Intervention
 
@@ -532,8 +528,7 @@ If you know of high-quality content that would be a good fit, please
 [contact us](mailto:gm@5esrd.com) or [submit it on
 github](https://github.com/eepMoody/open5e).
 
-Cleric Domains
---------------
+## Cleric Domains
 
 ### Life Domain
 
@@ -549,13 +544,15 @@ and gods of home and community (such as Hestia, Hathor, and Boldrei).
 
 #### Life Domain Spells
 
-  Cleric Level   Spells
-  -------------- ---------------------------------------------------------
-  1st            srd:bless, srd:cure-wounds
-  3rd            srd:lesser-restoration, srd:spiritual-weapon
-  5th            srd:beacon-of-hope, srd:revivify
-  7th            srd:death-ward, srd:guardian-of-faith
-  9th            srd:mass-cure-wounds, srd:raise-dead
+Cleric Level Spells
+
+---
+
+1st srd:bless, srd:cure-wounds
+3rd srd:lesser-restoration, srd:spiritual-weapon
+5th srd:beacon-of-hope, srd:revivify
+7th srd:death-ward, srd:guardian-of-faith
+9th srd:mass-cure-wounds, srd:raise-dead
 
 #### Bonus Proficiency
 
