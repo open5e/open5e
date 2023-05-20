@@ -1,16 +1,15 @@
 <template>
-<div class="filter-wrapper">
-  <input class="filter-input" type="input" :placeholder="placeholder" v-model="filterText"> 
-  <img class="filter-clear" src="/img/x-close.png" v-show="filterValue" v-on:click="clearSearch()">
-</div>
+  <div class="filter-wrapper">
+    <input class="filter-input" type="input" :placeholder="placeholder" v-model="filterText" v-on:input.stop="onInput">
+    <img class="filter-clear" src="/img/x-close.png" v-show="filterValue" v-on:click="clearSearch()">
+  </div>
 </template>
 
 
 <script>
 export default {
-  computed:{
-    filterValue: function() {
-      this.$emit('input', this.filterText);
+  computed: {
+    filterValue: function () {
       return this.filterText;
     }
   },
@@ -25,9 +24,12 @@ export default {
       default: 'Filter...'
     }
   },
-  methods:{
+  methods: {
     clearSearch: function () {
       this.filterText = '';
+    },
+    onInput: function () {
+      this.$emit('input', this.filterText)
     }
   }
 }
@@ -36,7 +38,7 @@ export default {
 <style lang="scss">
 @import '../assets/variables';
 
-.filter-wrapper{
+.filter-wrapper {
   width: 30%;
   min-width: 15rem;
   position: relative;
@@ -73,7 +75,7 @@ export default {
     }
 
   }
-  
+
   .filter-clear {
     opacity: 0.3;
     position: absolute;

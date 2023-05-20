@@ -1,52 +1,24 @@
 {
-  "name": "ui",
-  "version": "1.0.0",
-  "description": "Nuxt.js project",
-  "author": "eepMoody <moody.designer@gmail.com>",
+  "name": "nuxt-app",
   "private": true,
-  "config": {
-    "nuxt": {
-      "host": "0.0.0.0",
-      "port": "3333"
-    }
-  },
   "scripts": {
-    "dev": "export API_URL=https://api.open5e.com && nuxt",
     "build": "nuxt build",
-    "analyze": "nuxt build -a",
-    "start": "nuxt start",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint",
-    "heroku-postbuild": "npm run build"
-  },
-  "dependencies": {
-    "@nuxtjs/google-analytics": "^2.0.2",
-    "axios": "^0.21.1",
-    "buffer": "^6.0.3",
-    "node": "^16.19.1",
-    "node-fetch": "^2.6.1",
-    "npm": "^8.19.3",
-    "nuxt": "^2.16.2",
-    "underscore": "^1.12.1",
-    "vue": "^2.6.10",
-    "vue-scrollto": "^2.20.0",
-    "vue-showdown": "^2.0.2",
-    "webpack": "^4.46.0"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "css-loader": "^5.0",
-    "eslint": "^4.0.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^2.0",
-    "eslint-plugin-vue": "^4.0.0",
-    "html-webpack-plugin": "^4.0",
-    "mkdirp": "^0.5.6",
-    "sass": "^1.59.2",
-    "sass-loader": "^9",
-    "slugify": "^1.3.1",
-    "vue-style-loader": "^4.1.3",
-    "webpack": "^4.46.0"
+    "@types/node": "^18",
+    "nuxt": "^3.5.0",
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.11",
+    "axios": "^1.4.0",
+    "pinia": "^2.1.3",
+    "underscore": "^1.13.6",
+    "vue": "^3.3.4",
+    "vue-showdown": "^4.1.0"
   }
 }

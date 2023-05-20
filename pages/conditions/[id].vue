@@ -1,6 +1,6 @@
 <template>
   <section class="container docs-container">
-    <h1>{{condition.name}}</h1>
+    <h1>{{ condition.name }}</h1>
     <md-viewer :text="condition.desc"></md-viewer>
   </section>
 </template>
@@ -10,16 +10,16 @@ import axios from 'axios'
 import MdViewer from '~/components/MdViewer';
 
 export default {
-  components:{
+  components: {
     MdViewer
   },
-  mounted () {
-    return axios.get(`${process.env.apiUrl}/conditions/${this.$route.params.id}`) //you will need to enable CORS to make this work
-    .then(response => {
-      this.condition = response.data
-    })
+  mounted() {
+    return axios.get(`${useRuntimeConfig().public.apiUrl}/conditions/${this.$route.params.id}`) //you will need to enable CORS to make this work
+      .then(response => {
+        this.condition = response.data
+      })
   },
-  data () {
+  data() {
     return {
       posts: [],
       errors: [],
@@ -29,6 +29,5 @@ export default {
 }
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>
 

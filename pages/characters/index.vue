@@ -3,9 +3,9 @@
     <h1>Creating Characters</h1>
     <div class="docs-toc">
       <ul>
-        <li v-for="section in charSections" v-bind:key="section.slug" >
+        <li v-for="section in charSections" v-bind:key="section.slug">
           <nuxt-link tag="a" :to="`/sections/${section.slug}`">
-            {{section.name}}
+            {{ section.name }}
           </nuxt-link>
         </li>
         <li>Races</li>
@@ -27,9 +27,9 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'
-Array.prototype.groupBy = function(prop) {
-  return this.reduce(function(groups, item) {
+import { useMainStore } from '~/store'
+Array.prototype.groupBy = function (prop) {
+  return this.reduce(function (groups, item) {
     const val = item[prop]
     groups[val] = groups[val] || []
     groups[val].push(item)
@@ -38,23 +38,21 @@ Array.prototype.groupBy = function(prop) {
 }
 
 export default {
-    computed: {
-    ...mapActions({
-      LOAD_SECTIONS: 'LOAD_SECTIONS',
-    }),
-    ...mapGetters({
-      sections: 'allSections',
-    }),
-    sectionGroups: function() {
-      let groupedSections = this.sections.groupBy('parent');
+  setup() {
+    const store = useMainStore()
+    return { store }
+  },
+  computed: {
+    sectionGroups: function () {
+      let groupedSections = this.store.allSections.groupBy('parent');
       return groupedSections;
     },
     charSections: function () {
-      if (this.sectionGroups.hasOwnProperty('Characters')){
+      if (this.sectionGroups.hasOwnProperty('Characters')) {
         let results = this.sectionGroups['Characters'].concat(this.sectionGroups['Character Advancement']);
-        return results.sort(function (a,b) {
-          if (a.slug < b.slug) {return -1}
-          else if (a.slug > b.slug) {return 1}
+        return results.sort(function (a, b) {
+          if (a.slug < b.slug) { return -1 }
+          else if (a.slug > b.slug) { return 1 }
           else return 0;
         })
       }
@@ -63,6 +61,5 @@ export default {
 }
 </script>
 
-<style>
-</style>
+<style></style>
 

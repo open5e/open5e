@@ -4,7 +4,7 @@
     <h1>Welcome to Open5e!</h1>
     <p>Open5e aims to be the best open-source resource for 5e content.</p>
 
-    <h2>Cool projects we love</h2>
+    <h2>Projects we love</h2>
     <h3>Slyflourish A.K.A. "The Lazy DM"</h3>
     <p><a href="https://slyflourish.com/lazydm/">The Lazy Dungeon Master</a> is a masterwork of a guide for anyone aspiring to run Dungeons & Dragons or any RPG. Check out <a href="https://slyflourish.com/top_advice.html">How to Be a Great D&D Dungeon Master</a>, even if you're an expert. I can guarantee you'll learn something.</p>
     <p>I'd also like to recommend <a href="https://slyflourish.com/playing_dnd_can_save_your_life.html">Playing D&D Can Save Your Life</a>, an inspiring take on the role of fantasy and play in mental health.</p>
