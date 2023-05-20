@@ -4,14 +4,8 @@
     <div class="docs-toc">
       <span v-if="$route.hash">{{ $route.hash }}</span>
       <ul>
-        <li
-          v-for="section in sectionGroups.Rules"
-          :key="section.slug"
-        >
-          <nuxt-link
-            tag="a"
-            :to="`/running/${section.slug}`"
-          >
+        <li v-for="section in sectionGroups.Rules" :key="section.slug">
+          <nuxt-link tag="a" :to="`/running/${section.slug}`">
             {{ section.name }}
           </nuxt-link>
         </li>

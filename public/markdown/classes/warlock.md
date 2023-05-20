@@ -1,8 +1,6 @@
-Warlock
-=======
+# Warlock
 
-Class Features
---------------
+## Class Features
 
 As a warlock, you gain the following class features.
 
@@ -33,10 +31,10 @@ Intimidation, Investigation, Nature, and Religion
 You start with the following equipment, in addition to the equipment
 granted by your background:
 
--   *(a)* a light crossbow and 20 bolts or (*b*) any simple weapon
--   *(a)* a component pouch or (*b*) an arcane focus
--   *(a)* a scholar's pack or (*b*) a dungeoneer's pack
--   Leather armor, any simple weapon, and two daggers
+- _(a)_ a light crossbow and 20 bolts or (_b_) any simple weapon
+- _(a)_ a component pouch or (_b_) an arcane focus
+- _(a)_ a scholar's pack or (_b_) a dungeoneer's pack
+- Leather armor, any simple weapon, and two daggers
 
 ### The Warlock
 
@@ -257,8 +255,7 @@ granted by your background:
   </tbody>
 </table>
 
-Class Abilities
----------------
+## Class Abilities
 
 ### Otherworldly Patron
 
@@ -426,8 +423,7 @@ expended spell slots from your Pact Magic feature. Once you regain spell
 slots with this feature, you must finish a long rest before you can do
 so again.
 
-Eldritch Invocations
---------------------
+## Eldritch Invocations
 
 If an eldritch invocation has prerequisites, you must meet them to learn
 it. You can learn the invocation at the same time that you meet its
@@ -435,7 +431,7 @@ prerequisites. A level prerequisite refers to your level in this class.
 
 ### Agonizing Blast
 
-*Prerequisite:* srd:eldritch-blast cantrip
+_Prerequisite:_ srd:eldritch-blast cantrip
 
 When you cast srd:eldritch-blast, add your Charisma modifier to the
 damage it deals on a hit.
@@ -447,7 +443,7 @@ spell slot or material components.
 
 ### Ascendant Step
 
-*Prerequisite: 9th level*
+_Prerequisite: 9th level_
 
 You can cast srd:levitate on yourself at will, without expending a spell
 slot or material components.
@@ -463,14 +459,14 @@ You gain proficiency in the Deception and Persuasion skills.
 
 ### Bewitching Whispers
 
-*Prerequisite: 7th level*
+_Prerequisite: 7th level_
 
 You can cast srd:compulsion once using a warlock spell slot. You can't
 do so again until you finish a long rest.
 
 ### Book of Ancient Secrets
 
-*Prerequisite: Pact of the Tome feature*
+_Prerequisite: Pact of the Tome feature_
 
 You can now inscribe magical rituals in your Book of Shadows. Choose two
 1st-level spells that have the ritual tag from any class's spell list
@@ -492,7 +488,7 @@ inscribe it.
 
 ### Chains of Carceri
 
-*Prerequisite: 15th level, Pact of the Chain feature*
+_Prerequisite: 15th level, Pact of the Chain feature_
 
 You can cast srd:hold-monster at will---targeting a celestial, fiend, or
 elemental---without expending a spell slot or material components. You
@@ -506,7 +502,7 @@ distance of 120 feet.
 
 ### Dreadful Word
 
-*Prerequisite: 7th level*
+_Prerequisite: 7th level_
 
 You can cast srd:confusion once using a warlock spell slot. You can't do
 so again until you finish a long rest.
@@ -517,7 +513,7 @@ You can cast srd:detect-magic at will, without expending a spell slot.
 
 ### Eldritch Spear
 
-*Prerequisite:* srd:eldritch-blast cantrip
+_Prerequisite:_ srd:eldritch-blast cantrip
 
 When you cast srd:eldritch-blast, its range is 300 feet.
 
@@ -554,20 +550,20 @@ You can cast srd:disguise-self at will, without expending a spell slot.
 
 ### Master of Myriad Forms
 
-*Prerequisite: 15th level*
+_Prerequisite: 15th level_
 
 You can cast srd:alter-self at will, without expending a spell slot.
 
 ### Minions of Chaos
 
-*Prerequisite: 9th level*
+_Prerequisite: 9th level_
 
 You can cast srd:conjure-elemental once using a warlock spell slot. You
 can't do so again until you finish a long rest.
 
 ### Mire the Mind
 
-*Prerequisite: 5th level*
+_Prerequisite: 5th level_
 
 You can cast srd:slow once using a warlock spell slot. You can't do so
 again until you finish a long rest.
@@ -579,7 +575,7 @@ material components.
 
 ### One with Shadows
 
-*Prerequisite: 5th level*
+_Prerequisite: 5th level_
 
 When you are in an area of dim light or darkness, you can use your
 action to become srd:invisible until you move or take an action or a
@@ -587,28 +583,28 @@ reaction.
 
 ### Otherworldly Leap
 
-*Prerequisite: 9th level*
+_Prerequisite: 9th level_
 
 You can cast srd:jump on yourself at will, without expending a spell
 slot or material components.
 
 ### Repelling Blast
 
-*Prerequisite:* srd:eldritch-blast cantrip\*
+_Prerequisite:_ srd:eldritch-blast cantrip\*
 
 When you hit a creature with srd:eldritch-blast, you can push the
 creature up to 10 feet away from you in a straight line.
 
 ### Sculptor of Flesh
 
-*Prerequisite: 7th level*
+_Prerequisite: 7th level_
 
 You can cast srd:polymorph once using a warlock spell slot. You can't do
 so again until you finish a long rest.
 
 ### Sign of Ill Omen
 
-*Prerequisite: 5th level*
+_Prerequisite: 5th level_
 
 You can cast srd:bestow-curse once using a warlock spell slot. You can't
 do so again until you finish a long rest.
@@ -620,20 +616,20 @@ again until you finish a long rest.
 
 ### Thirsting Blade
 
-*Prerequisite: 5th level, Pact of the Blade feature*
+_Prerequisite: 5th level, Pact of the Blade feature_
 
 You can attack with your pact weapon twice, instead of once, whenever
 you take the Attack action on your turn.
 
 ### Visions of Distant Realms
 
-*Prerequisite: 15th level*
+_Prerequisite: 15th level_
 
 You can cast srd:arcane-eye at will, without expending a spell slot.
 
 ### Voice of the Chain Master
 
-*Prerequisite: Pact of the Chain feature*
+_Prerequisite: Pact of the Chain feature_
 
 You can communicate telepathically with your familiar and perceive
 through your familiar's senses as long as you are on the same plane of
@@ -643,21 +639,20 @@ if your familiar is normally incapable of speech.
 
 ### Whispers of the Grave
 
-*Prerequisite: 9th level*
+_Prerequisite: 9th level_
 
 You can cast srd:speak-with-dead at will, without expending a spell
 slot.
 
 ### Witch Sight
 
-*Prerequisite: 15th level*
+_Prerequisite: 15th level_
 
 You can see the true form of any shapechanger or creature concealed by
 illusion or transmutation magic while the creature is within 30 feet of
 you and within line of sight.
 
-Otherworldly Patrons
---------------------
+## Otherworldly Patrons
 
 The beings that serve as patrons for warlocks are mighty inhabitants of
 other planes of existence---not gods, but almost godlike in their power.
@@ -699,13 +694,15 @@ list for you.
 
 #### Fiend Expanded Spells
 
-  Spell Level   Spells
-  ------------- -------------------------------------------
-  1st           srd:burning-hands, srd:command
-  2nd           srd:blindness-deafness, srd:scorching-ray
-  3rd           srd:fireball, srd:stinking-cloud
-  4th           srd:fire-shield, srd:wall-of-fire
-  5th           srd:flame-strike, srd:hallow
+Spell Level Spells
+
+---
+
+1st srd:burning-hands, srd:command
+2nd srd:blindness-deafness, srd:scorching-ray
+3rd srd:fireball, srd:stinking-cloud
+4th srd:fire-shield, srd:wall-of-fire
+5th srd:flame-strike, srd:hallow
 
 #### Dark One's Blessing
 
@@ -745,8 +742,7 @@ experience.
 Once you use this feature, you can't use it again until you finish a
 long rest.
 
-Your Pact Boon
---------------
+## Your Pact Boon
 
 Each Pact Boon option produces a special creature or an object that
 reflects your patron's nature.

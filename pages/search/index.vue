@@ -1,13 +1,9 @@
 <template>
   <section class="container docs-container">
     <h1>Search results</h1>
-    <hr>
-    <p v-if="loading">
-      Searching Open5e...
-    </p>
-    <p v-if="!loading && results.length == 0">
-      No results
-    </p>
+    <hr />
+    <p v-if="loading">Searching Open5e...</p>
+    <p v-if="!loading && results.length == 0">No results</p>
     <div
       v-for="result in orderedResults"
       v-show="!loading"
@@ -15,10 +11,7 @@
       class="search-result"
     >
       <!-- Result summary for creatures including mini statblock -->
-      <div
-        v-if="result.route == 'monsters/'"
-        class="result-summary"
-      >
+      <div v-if="result.route == 'monsters/'" class="result-summary">
         <nuxt-link
           tag="a"
           :params="{ id: result.slug }"
@@ -32,7 +25,8 @@
           :title="result.document_title"
           :text="result.document_slug"
         />
-        <span> CR{{ result.challenge_rating }} </span><span class="title-case">{{ result.type }} | </span>
+        <span> CR{{ result.challenge_rating }} </span
+        ><span class="title-case">{{ result.type }} | </span>
         <em>{{ result.hit_points }}hp, AC {{ result.armor_class }}</em>
         <div>
           <stat-bar
@@ -50,10 +44,7 @@
       </div>
 
       <!-- Result summary for spells including basic spell info -->
-      <div
-        v-else-if="result.route == 'spells/'"
-        class="result-summary"
-      >
+      <div v-else-if="result.route == 'spells/'" class="result-summary">
         <nuxt-link
           tag="a"
           :params="{ id: result.slug }"
@@ -62,17 +53,11 @@
           {{ result.name }}
         </nuxt-link>
         {{ result.level }} {{ result.school }} spell | {{ result.dnd_class }}
-        <p
-          class="result-highlights"
-          v-html="result.highlighted"
-        />
+        <p class="result-highlights" v-html="result.highlighted" />
       </div>
 
       <!-- Result summary for magic items -->
-      <div
-        v-else-if="result.route == 'magicitems/'"
-        class="result-summary"
-      >
+      <div v-else-if="result.route == 'magicitems/'" class="result-summary">
         <nuxt-link
           tag="a"
           :params="{ id: result.slug }"
@@ -81,17 +66,11 @@
           {{ result.name }}
         </nuxt-link>
         {{ result.type }}, {{ result.rarity }}
-        <p
-          class="result-highlights"
-          v-html="result.highlighted"
-        />
+        <p class="result-highlights" v-html="result.highlighted" />
       </div>
 
       <!-- Result summary for everything else -->
-      <div
-        v-else
-        class="result-summary"
-      >
+      <div v-else class="result-summary">
         <nuxt-link
           tag="a"
           :params="{ id: result.slug }"
@@ -99,15 +78,10 @@
         >
           {{ result.name }}
         </nuxt-link>
-        <p
-          class="result-highlights"
-          v-html="result.highlighted"
-        />
+        <p class="result-highlights" v-html="result.highlighted" />
       </div>
     </div>
-    <p v-if="!loading && results.length > 0">
-      No more results
-    </p>
+    <p v-if="!loading && results.length > 0">No more results</p>
   </section>
 </template>
 

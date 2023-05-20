@@ -3,12 +3,12 @@
 Six abilities provide a quick description of every creature's physical
 and mental characteristics:
 
--   **Strength**, measuring physical power
--   **Dexterity**, measuring agility
--   **Constitution**, measuring endurance
--   **Intelligence**, measuring reasoning and memory
--   **Wisdom**, measuring perception and insight
--   **Charisma**, measuring force of personality
+- **Strength**, measuring physical power
+- **Dexterity**, measuring agility
+- **Constitution**, measuring endurance
+- **Intelligence**, measuring reasoning and memory
+- **Wisdom**, measuring perception and insight
+- **Charisma**, measuring force of personality
 
 Is a character muscle-bound and insightful? Brilliant and charming?
 Nimble and hardy? Ability scores define these qualities---a creature's
@@ -423,27 +423,27 @@ Your Strength (Athletics) check covers difficult situations you
 encounter while climbing, jumping, or swimming. Examples include the
 following activities:
 
--   You attempt to climb a sheer or slippery cliff, avoid hazards while
-    scaling a wall, or cling to a surface while something is trying to
-    knock you off.
--   You try to jump an unusually long distance or pull off a stunt
-    midjump.
--   You struggle to swim or stay afloat in treacherous currents,
-    storm-tossed waves, or areas of thick seaweed. Or another creature
-    tries to push or pull you underwater or otherwise interfere with
-    your swimming.
+- You attempt to climb a sheer or slippery cliff, avoid hazards while
+  scaling a wall, or cling to a surface while something is trying to
+  knock you off.
+- You try to jump an unusually long distance or pull off a stunt
+  midjump.
+- You struggle to swim or stay afloat in treacherous currents,
+  storm-tossed waves, or areas of thick seaweed. Or another creature
+  tries to push or pull you underwater or otherwise interfere with
+  your swimming.
 
 ##### Other Strength Checks
 
 The GM might also call for a Strength check when you try to accomplish
 tasks like the following:
 
--   Force open a stuck, locked, or barred door
--   Break free of bonds
--   Push through a tunnel that is too small
--   Hang on to a wagon while being dragged behind it
--   Tip over a statue
--   Keep a boulder from rolling
+- Force open a stuck, locked, or barred door
+- Break free of bonds
+- Push through a tunnel that is too small
+- Hang on to a wagon while being dragged behind it
+- Tip over a statue
+- Keep a boulder from rolling
 
 #### Attack Rolls and Damage
 
@@ -528,14 +528,14 @@ sneak up on someone without being seen or heard.
 The GM might call for a Dexterity check when you try to accomplish tasks
 like the following:
 
--   Control a heavily laden cart on a steep descent
--   Steer a chariot around a tight turn
--   Pick a lock
--   Disable a trap
--   Securely tie up a prisoner
--   Wriggle free of bonds
--   Play a stringed instrument
--   Craft a small or detailed object
+- Control a heavily laden cart on a steep descent
+- Steer a chariot around a tight turn
+- Pick a lock
+- Disable a trap
+- Securely tie up a prisoner
+- Wriggle free of bonds
+- Play a stringed instrument
+- Craft a small or detailed object
 
 **Hiding**
 
@@ -562,11 +562,12 @@ gain advantage on an attack roll before you are seen.
 notice you even if they aren't searching. To determine whether such a
 creature notices you, the GM compares your Dexterity (Stealth) check
 with that creature's passive Wisdom (Perception) score, which equals 10
-+ the creature's Wisdom modifier, as well as any other bonuses or
-penalties. If the creature has advantage, add 5. For disadvantage,
-subtract 5. For example, if a 1st-level character (with a proficiency
-bonus of +2) has a Wisdom of 15 (a +2 modifier) and proficiency in
-Perception, he or she has a passive Wisdom (Perception) of 14.
+
+- the creature's Wisdom modifier, as well as any other bonuses or
+  penalties. If the creature has advantage, add 5. For disadvantage,
+  subtract 5. For example, if a 1st-level character (with a proficiency
+  bonus of +2) has a Wisdom of 15 (a +2 modifier) and proficiency in
+  Perception, he or she has a passive Wisdom (Perception) of 14.
 
 **What Can You See?** One of the main factors in determining whether you
 can find a hidden creature or object is how well you can see in an area,
@@ -607,11 +608,11 @@ normal limits, however.
 The GM might call for a Constitution check when you try to accomplish
 tasks like the following:
 
--   Hold your breath
--   March or labor for hours without rest
--   Go without sleep
--   Survive without food or water
--   Quaff an entire stein of ale in one go
+- Hold your breath
+- March or labor for hours without rest
+- Go without sleep
+- Survive without food or water
+- Quaff an entire stein of ale in one go
 
 #### Hit Points
 
@@ -680,12 +681,12 @@ religious hierarchies, holy symbols, and the practices of secret cults.
 The GM might call for an Intelligence check when you try to accomplish
 tasks like the following:
 
--   Communicate with a creature without using words
--   Estimate the value of a precious item
--   Pull together a disguise to pass as a city guard
--   Forge a document
--   Recall lore about a craft or trade
--   Win a game of skill
+- Communicate with a creature without using words
+- Estimate the value of a precious item
+- Pull together a disguise to pass as a city guard
+- Forge a document
+- Recall lore about a craft or trade
+- Win a game of skill
 
 #### Spellcasting Ability
 
@@ -747,8 +748,8 @@ and other natural hazards.
 The GM might call for a Wisdom check when you try to accomplish tasks
 like the following:
 
--   Get a gut feeling about what course of action to follow
--   Discern whether a seemingly dead or living creature is undead
+- Get a gut feeling about what course of action to follow
+- Discern whether a seemingly dead or living creature is undead
 
 #### Spellcasting Ability
 
@@ -809,8 +810,8 @@ warring tribes, or inspiring a crowd of townsfolk.
 The GM might call for a Charisma check when you try to accomplish tasks
 like the following:
 
--   Find the best person to talk to for news, rumors, and gossip
--   Blend into a crowd to get the sense of key topics of conversation
+- Find the best person to talk to for news, rumors, and gossip
+- Blend into a crowd to get the sense of key topics of conversation
 
 #### Spellcasting Ability
 

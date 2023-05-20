@@ -1,10 +1,9 @@
 <template>
   <span>
-    <span v-if="statBonus >= 0 ">+</span>
+    <span v-if="statBonus >= 0">+</span>
     <span>{{ statBonus }}</span>
   </span>
 </template>
-
 
 <script>
 export default {
@@ -12,19 +11,19 @@ export default {
     stat: Number,
     type: {
       type: String,
-      default: 'score'
-    }
+      default: 'score',
+    },
   },
   computed: {
     statBonus: function () {
       if (this.type === 'score') {
-        return Math.floor((this.stat -10)/2);
+        return Math.floor((this.stat - 10) / 2);
+      } else {
+        return this.stat;
       }
-      else {return this.stat;}
-    }
+    },
   },
-}
+};
 </script>
 
-<style>
-</style>
+<style></style>

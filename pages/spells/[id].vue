@@ -1,8 +1,6 @@
 <template>
   <section class="container docs-container">
-    <p v-if="loading">
-      Loading...
-    </p>
+    <p v-if="loading">Loading...</p>
     <div v-else>
       <h1>{{ spell.name }}</h1>
       <p>
@@ -18,8 +16,10 @@
         <span v-if="spell.concentration === 'yes'">(Concentration)</span>
       </p>
       <p>
-        <label>Components: {{ spell.components }}
-          <span v-if="spell.material">({{ spell.material }})</span></label>
+        <label
+          >Components: {{ spell.components }}
+          <span v-if="spell.material">({{ spell.material }})</span></label
+        >
       </p>
       <md-viewer :text="spell.desc" />
       <p v-if="spell.higher_level">

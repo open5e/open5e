@@ -1,8 +1,5 @@
 <template>
-  <section
-    v-show="loaded"
-    class="container docs-container"
-  >
+  <section v-show="loaded" class="container docs-container">
     <h1>{{ race.name }}</h1>
     <md-viewer :text="race.desc" />
     <md-viewer :text="race['asi_desc']" />
@@ -14,18 +11,10 @@
     <md-viewer :text="race.languages" />
     <md-viewer :text="race.traits" />
 
-    <h2 v-if="subraceLength > 0">
-      Subraces
-    </h2>
-    <div
-      v-for="subrace in race.subraces"
-      :key="subrace.name"
-    >
+    <h2 v-if="subraceLength > 0">Subraces</h2>
+    <div v-for="subrace in race.subraces" :key="subrace.name">
       <h3>{{ subrace.name }}</h3>
-      <md-viewer
-        :header-level="2"
-        :text="subrace.desc"
-      />
+      <md-viewer :header-level="2" :text="subrace.desc" />
       <md-viewer :text="subrace['asi_desc']" />
       <md-viewer :text="subrace.traits" />
     </div>
@@ -33,12 +22,12 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
 import MdViewer from '~/components/MdViewer';
 
 export default {
   components: {
-    MdViewer
+    MdViewer,
   },
   data() {
     return {
@@ -46,19 +35,19 @@ export default {
       errors: [],
       race: [],
       loaded: false,
-      subraceLength: 0
-    }
+      subraceLength: 0,
+    };
   },
   mounted() {
-    return axios.get(`${useRuntimeConfig().public.apiUrl}/races/${this.$route.params.id}`) //you will need to enable CORS to make this work
-      .then(response => {
-        this.race = response.data
-        this.loaded = true
-        this.subraceLength = this.race.subraces.length
-      })
+    return axios
+      .get(`${useRuntimeConfig().public.apiUrl}/races/${this.$route.params.id}`) //you will need to enable CORS to make this work
+      .then((response) => {
+        this.race = response.data;
+        this.loaded = true;
+        this.subraceLength = this.race.subraces.length;
+      });
   },
-}
+};
 </script>
 
 <style lang="scss"></style>
-

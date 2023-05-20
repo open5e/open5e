@@ -6,28 +6,30 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
 import MdViewer from '~/components/MdViewer';
 
 export default {
   components: {
-    MdViewer
+    MdViewer,
   },
   data() {
     return {
       posts: [],
       errors: [],
       section: [],
-    }
+    };
   },
   mounted() {
-    return axios.get(`${this.$nuxt.$config.public.apiUrl}/sections/${this.$route.params.id}`) //you will need to enable CORS to make this work
-      .then(response => {
-        this.section = response.data
-      })
+    return axios
+      .get(
+        `${this.$nuxt.$config.public.apiUrl}/sections/${this.$route.params.id}`
+      ) //you will need to enable CORS to make this work
+      .then((response) => {
+        this.section = response.data;
+      });
   },
-}
+};
 </script>
 
 <style lang="scss"></style>
-

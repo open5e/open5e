@@ -1,8 +1,6 @@
-Paladin
-=======
+# Paladin
 
-Class Features
---------------
+## Class Features
 
 As a paladin, you gain the following class features.
 
@@ -33,10 +31,10 @@ Persuasion, and Religion
 You start with the following equipment, in addition to the equipment
 granted by your background:
 
--   (*a*) a martial weapon and a shield or (*b*) two martial weapons
--   (*a*) five javelins or (*b*) any simple melee weapon
--   (*a*) a priest's pack or (*b*) an explorer's pack
--   Chain mail and a holy symbol
+- (_a_) a martial weapon and a shield or (_b_) two martial weapons
+- (_a_) five javelins or (_b_) any simple melee weapon
+- (_a_) a priest's pack or (_b_) an explorer's pack
+- Chain mail and a holy symbol
 
 ### The Paladin
 
@@ -261,8 +259,7 @@ granted by your background:
   </tbody>
 </table>
 
-Class Abilities
----------------
+## Class Abilities
 
 ### Divine Sense
 
@@ -347,7 +344,7 @@ of a level for which you have spell slots.
 For example, if you are a 5th-level paladin, you have four 1st-level and
 two 2nd-level spell slots. With a Charisma of 14, your list of prepared
 spells can include four spells of 1st or 2nd level, in any combination.
-If you prepare the 1st-level spell *cure wounds*, you can cast it using
+If you prepare the 1st-level spell _cure wounds_, you can cast it using
 a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it
 from your list of prepared spells.
 
@@ -488,8 +485,7 @@ official stamp on what has always been true in the paladin's heart.
 > [contact us](mailto:gm@5esrd.com) or [submit it on
 > github](https://github.com/eepMoody/open5e).
 
-Paladin Oaths
--------------
+## Paladin Oaths
 
 ### Oath of Devotion
 
@@ -530,13 +526,15 @@ You gain oath spells at the paladin levels listed.
 
 #### Oath of Devotion Spells
 
-  Paladin Level   Spells
-  --------------- --------------------------------------------------
-  3rd             srd:protection-from-evil-and-good, srd:sanctuary
-  5th             srd:lesser-restoration, srd:zone-of-truth
-  9th             srd:beacon-of-hope, srd:dispel-magic
-  13th            srd:freedom-of-movement, *guardian of faith*
-  17th            srd:commune, srd:flame-strike
+Paladin Level Spells
+
+---
+
+3rd srd:protection-from-evil-and-good, srd:sanctuary
+5th srd:lesser-restoration, srd:zone-of-truth
+9th srd:beacon-of-hope, srd:dispel-magic
+13th srd:freedom-of-movement, _guardian of faith_
+17th srd:commune, srd:flame-strike
 
 #### Channel Divinity
 

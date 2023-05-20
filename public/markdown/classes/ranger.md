@@ -1,8 +1,6 @@
-Ranger
-======
+# Ranger
 
-Class Features
---------------
+## Class Features
 
 As a ranger, you gain the following class features.
 
@@ -33,10 +31,10 @@ Investigation, Nature, Perception, Stealth, and Survival
 You start with the following equipment, in addition to the equipment
 granted by your background:
 
--   (*a*) scale mail or (*b*) leather armor
--   (*a*) two shortswords or (*b*) two simple melee weapons
--   (*a*) a dungeoneer's pack or (*b*) an explorer's pack
--   A longbow and a quiver of 20 arrows
+- (_a_) scale mail or (_b_) leather armor
+- (_a_) two shortswords or (_b_) two simple melee weapons
+- (_a_) a dungeoneer's pack or (_b_) an explorer's pack
+- A longbow and a quiver of 20 arrows
 
 ### The Ranger
 
@@ -283,8 +281,7 @@ granted by your background:
   </tbody>
 </table>
 
-Class Abilities
----------------
+## Class Abilities
 
 ### Favored Enemy
 
@@ -319,15 +316,15 @@ skill that you're proficient in.
 While traveling for an hour or more in your favored terrain, you gain
 the following benefits:
 
--   Difficult terrain doesn't slow your group's travel.
--   Your group can't become lost except by magical means.
--   Even when you are engaged in another activity while traveling (such
-    as foraging, navigating, or tracking), you remain alert to danger.
--   If you are traveling alone, you can move stealthily at a normal
-    pace.
--   When you forage, you find twice as much food as you normally would.
--   While tracking other creatures, you also learn their exact number,
-    their sizes, and how long ago they passed through the area.
+- Difficult terrain doesn't slow your group's travel.
+- Your group can't become lost except by magical means.
+- Even when you are engaged in another activity while traveling (such
+  as foraging, navigating, or tracking), you remain alert to danger.
+- If you are traveling alone, you can move stealthily at a normal
+  pace.
+- When you forage, you find twice as much food as you normally would.
+- While tracking other creatures, you also learn their exact number,
+  their sizes, and how long ago they passed through the area.
 
 You choose additional favored terrain types at 6th and 10th level.
 
@@ -479,8 +476,7 @@ roll or the damage roll of an attack you make against one of your
 favored enemies. You can choose to use this feature before or after the
 roll, but before any effects of the roll are applied.
 
-Ranger Archetypes
------------------
+## Ranger Archetypes
 
 A classic expression of the ranger ideal is the Hunter.
 

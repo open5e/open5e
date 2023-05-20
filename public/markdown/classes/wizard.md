@@ -1,8 +1,6 @@
-Wizard
-======
+# Wizard
 
-Class Features
---------------
+## Class Features
 
 As a wizard, you gain the following class features.
 
@@ -34,10 +32,10 @@ Investigation, Medicine, and Religion
 You start with the following equipment, in addition to the equipment
 granted by your background:
 
--   *(a)* a quarterstaff or (*b*) a dagger
--   *(a)* a component pouch or (*b*) an arcane focus
--   *(a)* a scholar's pack or (*b*) an explorer's pack
--   A spellbook
+- _(a)_ a quarterstaff or (_b_) a dagger
+- _(a)_ a component pouch or (_b_) an arcane focus
+- _(a)_ a scholar's pack or (_b_) an explorer's pack
+- A spellbook
 
 #### The Wizard
 
@@ -366,8 +364,7 @@ granted by your background:
 </tbody>
 </table>
 
-Class Abilities
----------------
+## Class Abilities
 
 ### Spellcasting
 
@@ -498,8 +495,7 @@ finish a short or long rest.
 If you want to cast either spell at a higher level, you must expend a
 spell slot as normal.
 
-Arcane Traditions
------------------
+## Arcane Traditions
 
 The study of wizardry is ancient, stretching back to the earliest mortal
 discoveries of magic. It is firmly established in fantasy gaming worlds,
@@ -582,8 +578,7 @@ time you use this feature again before finishing a long rest, the
 necrotic damage per spell level increases by 1d12. This damage ignores
 resistance and immunity.
 
-Your Spellbook
---------------
+## Your Spellbook
 
 The spells that you add to your spellbook as you gain levels reflect the
 arcane research you conduct on your own, as well as intellectual

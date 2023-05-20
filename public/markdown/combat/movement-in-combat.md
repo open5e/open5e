@@ -1,5 +1,4 @@
-Movement and Position
-=====================
+# Movement and Position
 
 In combat, characters and monsters are in constant motion, often using
 movement and position to gain the upper hand.
@@ -14,8 +13,7 @@ constitute your entire move. However you're moving, you deduct the
 distance of each part of your move from your speed until it is used up
 or until you are done moving.
 
-Breaking Up Your Move
----------------------
+## Breaking Up Your Move
 
 You can break up your movement on your turn, using some of your speed
 before and after your action. For example, if you have a speed of 30
@@ -42,8 +40,7 @@ For example, if you have a speed of 30 and a flying speed of 60 because
 a wizard cast the srd:fly spell on you, you could fly 20 feet, then walk
 10 feet, and then leap into the air to fly 30 feet more.
 
-Difficult Terrain
------------------
+## Difficult Terrain
 
 Combat rarely takes place in bare rooms or on featureless plains.
 Boulder-strewn caverns, briar- choked forests, treacherous
@@ -57,8 +54,7 @@ Low furniture, rubble, undergrowth, steep stairs, snow, and shallow bogs
 are examples of difficult terrain. The space of another creature,
 whether hostile or not, also counts as difficult terrain.
 
-Being Prone
------------
+## Being Prone
 
 Combatants often find themselves lying on the ground, either because
 they are knocked down or because they throw themselves down. In the
@@ -76,36 +72,34 @@ teleportation. Every foot of movement while crawling costs 1 extra foot.
 Crawling 1 foot in difficult terrain, therefore, costs 3 feet of
 movement.
 
-Interacting with Objects Around You
------------------------------------
+## Interacting with Objects Around You
 
 Here are a few examples of the sorts of thing you can do in tandem with
 your movement and action:
 
--   draw or sheathe a sword
--   open or close a door
--   withdraw a potion from your backpack
--   pick up a dropped axe
--   take a bauble from a table
--   remove a ring from your finger
--   stuff some food into your mouth
--   plant a banner in the ground
--   fish a few coins from your belt pouch
--   drink all the ale in a flagon
--   throw a lever or a switch
--   pull a torch from a sconce
--   take a book from a shelf you can reach
--   extinguish a small flame
--   don a mask
--   pull the hood of your cloak up and over your head
--   put your ear to a door
--   kick a small stone
--   turn a key in a lock
--   tap the floor with a 10-foot pole
--   hand an item to another character
+- draw or sheathe a sword
+- open or close a door
+- withdraw a potion from your backpack
+- pick up a dropped axe
+- take a bauble from a table
+- remove a ring from your finger
+- stuff some food into your mouth
+- plant a banner in the ground
+- fish a few coins from your belt pouch
+- drink all the ale in a flagon
+- throw a lever or a switch
+- pull a torch from a sconce
+- take a book from a shelf you can reach
+- extinguish a small flame
+- don a mask
+- pull the hood of your cloak up and over your head
+- put your ear to a door
+- kick a small stone
+- turn a key in a lock
+- tap the floor with a 10-foot pole
+- hand an item to another character
 
-Moving Around Other Creatures
------------------------------
+## Moving Around Other Creatures
 
 You can move through a nonhostile creature's space. In contrast, you can
 move through a hostile creature's space only if the creature is at least
@@ -118,8 +112,7 @@ move in its space.
 If you leave a hostile creature's reach during your move, you provoke an
 opportunity attack \<srd:opportunity-attacks\>.
 
-Flying Movement
----------------
+## Flying Movement
 
 Flying creatures enjoy many benefits of mobility, but they must also
 deal with the danger of falling. If a flying creature is knocked
@@ -128,8 +121,7 @@ ability to move, the creature falls, unless it has the ability to
 
 hover or it is being held aloft by magic, such as by the srd:fly spell.
 
-Creature Size
--------------
+## Creature Size
 
 Each creature takes up a different amount of space. The Size Categories
 table shows how much space a creature of a particular size controls in
@@ -137,13 +129,13 @@ combat. Objects sometimes use the same size categories.
 
 ### Size Categories
 
-| Size     | Space                                            |
-| :------- | :----------------------------------------------- |
-| Tiny     | 2½ by 2½ ft.                                     |
-| Small    | 5 by 5 ft.                                       |
-| Medium   | 5 by 5 ft.                                       |
-| Large    | 10 by 10 ft.                                     |
-| Huge     | 15 by 15 ft. Gargantuan 20 by 20 ft. or larger   |
+| Size   | Space                                          |
+| :----- | :--------------------------------------------- |
+| Tiny   | 2½ by 2½ ft.                                   |
+| Small  | 5 by 5 ft.                                     |
+| Medium | 5 by 5 ft.                                     |
+| Large  | 10 by 10 ft.                                   |
+| Huge   | 15 by 15 ft. Gargantuan 20 by 20 ft. or larger |
 
 ### Space
 

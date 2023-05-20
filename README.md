@@ -2,7 +2,7 @@
 
 ## Check the [Beta Site](https://beta.open5e.com) and [API](https://api.open5e.com) to see what's up! You can find the API repo at [on github](https://github.com/eepMoody/open5e-api).
 
-We have a discord going for discussing the rebuild, and I hope you'll join us! https://discord.gg/9RNE2rY 
+We have a discord going for discussing the rebuild, and I hope you'll join us! https://discord.gg/9RNE2rY
 
 Open5e is a community project driven by a small number of volunteers in their spare time. We welcome any and all contributions! Please join our Discord to help out: https://discord.gg/9RNE2rY or check out the issue board if you'd like to see what's being worked on!
 
@@ -16,16 +16,17 @@ By default, the UI layer will point to the live API. If you want to change this,
 
 From /open5e
 
-``` bash
+```bash
 # install dependencies
 $ npm install # Or yarn install
 
 # Optional: point it at a real API by setting API_URL=https:someurl.com
-# serve with hot reload at localhost:3000. If you 
+# serve with hot reload at localhost:3000. If you
 $ npm run dev
 ```
 
 Other build options:
+
 ```
 # build for production and launch server
 $ npm start

@@ -1,20 +1,16 @@
 <template>
-  <div class="container ">
+  <div class="container">
     <h1>Critical Failure!</h1>
     <h2>Error {{ error.statusCode }}</h2>
-    <p><em>{{ error.message }}.</em></p>
+    <p>
+      <em>{{ error.message }}.</em>
+    </p>
 
-    <br>
+    <br />
 
     <ul>
-      <li>
-        Return to the <nuxt-link to="/">
-          Home
-        </nuxt-link> page
-      </li>
-      <li>
-        Try searching for what you need in the site menu
-      </li>
+      <li>Return to the <nuxt-link to="/"> Home </nuxt-link> page</li>
+      <li>Try searching for what you need in the site menu</li>
     </ul>
 
     <div class="roll-container">
@@ -84,8 +80,8 @@
 
 <script>
 export default {
-  props: ['error']
-}
+  props: ['error'],
+};
 </script>
 
 <style>
@@ -116,11 +112,11 @@ export default {
 }
 
 .in-page-search {
-  border: 2px solid #E74C3C;
-  font-size: .8em;
-  margin: .8em;
+  border: 2px solid #e74c3c;
+  font-size: 0.8em;
+  margin: 0.8em;
   max-width: 100%;
-  padding: .8em;
+  padding: 0.8em;
   width: 30em;
 }
 </style>

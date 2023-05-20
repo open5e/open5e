@@ -18,7 +18,9 @@ export const useMainStore = defineStore({
     loadMonsterList() {
       axios
         .get(
-          `${useRuntimeConfig().public.apiUrl}/monsters/?fields=slug,name,challenge_rating,type,size,hit_points,document__slug, document__title&limit=5000&ordering=slug`
+          `${
+            useRuntimeConfig().public.apiUrl
+          }/monsters/?fields=slug,name,challenge_rating,type,size,hit_points,document__slug, document__title&limit=5000&ordering=slug`
         )
         .then((response) => {
           this.monstersList = response.data.results;
@@ -27,7 +29,9 @@ export const useMainStore = defineStore({
     loadSpells() {
       axios
         .get(
-          `${useRuntimeConfig().public.apiUrl}/spells/?fields=slug,name,school,dnd_class,level,components,level_int,document__slug,document__title&limit=1000`
+          `${
+            useRuntimeConfig().public.apiUrl
+          }/spells/?fields=slug,name,school,dnd_class,level,components,level_int,document__slug,document__title&limit=1000`
         ) //you will need to enable CORS to make this work
         .then((response) => {
           let spells = response.data.results;
@@ -44,7 +48,9 @@ export const useMainStore = defineStore({
     loadMagicItems() {
       axios
         .get(
-          `${useRuntimeConfig().public.apiUrl}/magicitems/?fields=slug,name,type,rarity,document__slug,document__title&limit=1000`
+          `${
+            useRuntimeConfig().public.apiUrl
+          }/magicitems/?fields=slug,name,type,rarity,document__slug,document__title&limit=1000`
         )
         .then((response) => {
           this.magicItemsList = response.data.results;

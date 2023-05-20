@@ -1,5 +1,4 @@
-The Order of Combat
-===================
+# The Order of Combat
 
 A typical combat encounter is a clash between two sides, a flurry of
 weapon swings, feints, parries, footwork, and spellcasting. The game
@@ -45,8 +44,7 @@ If you're surprised, you can't move or take an action on your first turn
 of the combat, and you can't take a reaction until that turn ends. A
 member of a group can be surprised even if the other members aren't.
 
-Initiative
-----------
+## Initiative
 
 Initiative determines the order of turns during combat. When combat
 starts, every participant makes a Dexterity check to determine their
@@ -65,8 +63,7 @@ The GM can decide the order if the tie is between a monster and a player
 character. Optionally, the GM can have the tied characters and monsters
 each roll a d20 to determine the order, highest roll going first.
 
-Your Turn
----------
+## Your Turn
 
 On your turn, you can **move** a distance up to your speed and **take
 one action**. You decide whether to move first or take your action
@@ -131,8 +128,7 @@ when it needs special care or when it presents an unusual obstacle. For
 instance, the GM could reasonably expect you to use an action to open a
 stuck door or turn a crank to lower a drawbridge.
 
-Reactions
----------
+## Reactions
 
 Certain special abilities, spells, and situations allow you to take a
 special action called a reaction. A reaction is an instant response to a

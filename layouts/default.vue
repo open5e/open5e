@@ -1,9 +1,6 @@
 <template>
   <div>
-    <div
-      class="app-wrapper"
-      :class="{ 'show-sidebar': showSidebar }"
-    >
+    <div class="app-wrapper" :class="{ 'show-sidebar': showSidebar }">
       <div class="sidebar">
         <nuxt-link to="/">
           <h1>Open5e</h1>
@@ -13,24 +10,19 @@
           class="input-search"
           placeholder="Search Open5e"
           @keyup.enter="doSearch(searchText)"
-        >
+        />
         <ul v-if="sections && races && classes">
           <!-- Characters -->
           <li>
-            <nuxt-link to="/characters/">
-              Characters
-            </nuxt-link>
+            <nuxt-link to="/characters/"> Characters </nuxt-link>
           </li>
           <ul
             v-show="
               useRoute().path.indexOf('/characters') != -1 ||
-                containsAnyString(charSections)
+              containsAnyString(charSections)
             "
           >
-            <li
-              v-for="section in charSections"
-              :key="section.slug"
-            >
+            <li v-for="section in charSections" :key="section.slug">
               <nuxt-link :to="`/sections/${section.slug}`">
                 {{ section.name }}
               </nuxt-link>
@@ -38,15 +30,10 @@
           </ul>
           <!-- Classes -->
           <li>
-            <nuxt-link to="/classes">
-              Classes
-            </nuxt-link>
+            <nuxt-link to="/classes"> Classes </nuxt-link>
           </li>
           <ul v-show="useRoute().path.indexOf('/classes') != -1">
-            <li
-              v-for="charClass in classes"
-              :key="charClass.slug"
-            >
+            <li v-for="charClass in classes" :key="charClass.slug">
               <nuxt-link :to="`/classes/${charClass.slug}`">
                 {{ charClass.name }}
               </nuxt-link>
@@ -54,18 +41,10 @@
           </ul>
           <!-- Races -->
           <li>
-            <nuxt-link to="/races">
-              Races
-            </nuxt-link>
+            <nuxt-link to="/races"> Races </nuxt-link>
           </li>
-          <ul
-            v-if="races"
-            v-show="useRoute().path.indexOf('/races') != -1"
-          >
-            <li
-              v-for="race in races"
-              :key="race.slug"
-            >
+          <ul v-if="races" v-show="useRoute().path.indexOf('/races') != -1">
+            <li v-for="race in races" :key="race.slug">
               <nuxt-link :to="`/races/${race.slug}`">
                 {{ race.name }}
               </nuxt-link>
@@ -73,20 +52,14 @@
           </ul>
           <!-- Combat -->
           <li>
-            <nuxt-link to="/combat/">
-              Combat
-            </nuxt-link>
+            <nuxt-link to="/combat/"> Combat </nuxt-link>
           </li>
           <ul v-show="useRoute().path.indexOf('/combat/') != -1">
             <li>
-              <nuxt-link to="/combat/actions">
-                Actions in Combat
-              </nuxt-link>
+              <nuxt-link to="/combat/actions"> Actions in Combat </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/combat/attacking">
-                Attacking
-              </nuxt-link>
+              <nuxt-link to="/combat/attacking"> Attacking </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/combat/combat-sequence">
@@ -94,9 +67,7 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/combat/cover">
-                Cover
-              </nuxt-link>
+              <nuxt-link to="/combat/cover"> Cover </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/combat/damage-and-healing">
@@ -121,15 +92,10 @@
           </ul>
           <!-- Equipment -->
           <li>
-            <nuxt-link to="/sections/equipment/">
-              Equipment
-            </nuxt-link>
+            <nuxt-link to="/sections/equipment/"> Equipment </nuxt-link>
           </li>
           <ul v-show="containsAnyString(sectionGroups.Equipment)">
-            <li
-              v-for="section in sectionGroups.Equipment"
-              :key="section.slug"
-            >
+            <li v-for="section in sectionGroups.Equipment" :key="section.slug">
               <nuxt-link :to="`/sections/${section.slug}`">
                 {{ section.name }}
               </nuxt-link>
@@ -160,9 +126,7 @@
           </li>
           <ul v-show="useRoute().path.indexOf('/spells/') !== -1">
             <li>
-              <nuxt-link to="/spells/by-class/bard">
-                Bard Spells
-              </nuxt-link>
+              <nuxt-link to="/spells/by-class/bard"> Bard Spells </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/spells/by-class/cleric">
@@ -170,9 +134,7 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/spells/by-class/druid">
-                Druid Spells
-              </nuxt-link>
+              <nuxt-link to="/spells/by-class/druid"> Druid Spells </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/spells/by-class/paladin">
@@ -240,9 +202,7 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/gameplay-mechanics/rest">
-                Rest
-              </nuxt-link>
+              <nuxt-link to="/gameplay-mechanics/rest"> Rest </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/gameplay-mechanics/saving-throws">
@@ -250,76 +210,49 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/gameplay-mechanics/time">
-                Time
-              </nuxt-link>
+              <nuxt-link to="/gameplay-mechanics/time"> Time </nuxt-link>
             </li>
           </ul>
           <!-- Running a Game -->
           <li>
-            <nuxt-link to="/running/">
-              Appendixes
-            </nuxt-link>
+            <nuxt-link to="/running/"> Appendixes </nuxt-link>
           </li>
           <ul
             v-show="
               useRoute().path.indexOf('/running') != -1 ||
-                containsAnyString(sectionGroups.Characters)
+              containsAnyString(sectionGroups.Characters)
             "
           >
-            <li
-              v-for="section in sectionGroups.Rules"
-              :key="section.slug"
-            >
+            <li v-for="section in sectionGroups.Rules" :key="section.slug">
               <nuxt-link :to="`/running/${section.slug}`">
                 {{ section.name }}
               </nuxt-link>
             </li>
           </ul>
           <li>
-            <nuxt-link to="/api-docs">
-              API Docs
-            </nuxt-link>
+            <nuxt-link to="/api-docs"> API Docs </nuxt-link>
           </li>
         </ul>
-        <a
-          class="sidebar-link"
-          href="https://www.patreon.com/open5e"
-        ><img
-          src="/img/patron-badge.png"
-          class="sidebar-image"
-        ></a>
+        <a class="sidebar-link" href="https://www.patreon.com/open5e"
+          ><img src="/img/patron-badge.png" class="sidebar-image"
+        /></a>
       </div>
       <div class="content-wrapper">
         <div class="mobile-header">
-          <div
-            class="sidebar-toggle"
-            @click="toggleSidebar"
-          />
+          <div class="sidebar-toggle" @click="toggleSidebar" />
           <nuxt-link to="/">
             <h1>Open5e</h1>
           </nuxt-link>
           <div class="spacer" />
         </div>
         <ol class="breadcrumb">
-          <li
-            v-for="item in crumbs"
-            :key="item"
-            class="breadcrumb-item"
-          >
-            <nuxt-link
-              :to="item.path"
-              active-class="active"
-            >
+          <li v-for="item in crumbs" :key="item" class="breadcrumb-item">
+            <nuxt-link :to="item.path" active-class="active">
               {{ item.breadcrumb }}
             </nuxt-link>
           </li>
         </ol>
-        <div
-          v-show="showSidebar"
-          class="shade"
-          @click="hideSidebar"
-        />
+        <div v-show="showSidebar" class="shade" @click="hideSidebar" />
         <nuxt-page />
         <footer>
           <a href="/legal/">Content provided under the OGL 1.0a</a>

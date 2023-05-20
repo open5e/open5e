@@ -1,8 +1,6 @@
 <template>
   <section class="container docs-container">
-    <p v-if="loading">
-      Loading...
-    </p>
+    <p v-if="loading">Loading...</p>
     <div v-else>
       <h1 class="inline">
         {{ item.name }}
@@ -13,8 +11,12 @@
         :text="item.document__slug"
       />
       <p>
-        <em>{{ item.type }}, {{ item.rarity }}
-          <span v-show="item.requires_attunement">({{ item.requires_attunement }})</span></em>
+        <em
+          >{{ item.type }}, {{ item.rarity }}
+          <span v-show="item.requires_attunement"
+            >({{ item.requires_attunement }})</span
+          ></em
+        >
       </p>
       <md-viewer :text="item.desc" />
     </div>
