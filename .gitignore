@@ -58,3 +58,5 @@ dist
 # NGINX certificates
 nginx/ssl/*
 
+
+.output/

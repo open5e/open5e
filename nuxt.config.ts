@@ -22,13 +22,14 @@ export default defineNuxtConfig({
       ]
     },
   },
-  vite: {
-    resolve: {
-      alias: {
-        vue: 'vue/dist/vue.esm-bundler'
-      }
-    },
-  },
+  // temporary fix: uncomment these lines to enable dev mode
+  // vite: {
+  //   resolve: {
+  //     alias: {
+  //       vue: 'vue/dist/vue.esm-bundler',
+  //     }
+  //   },
+  // },
   modules: ["@pinia/nuxt"],
   runtimeConfig: {
     public: {
