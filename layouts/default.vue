@@ -21,7 +21,12 @@
               Characters
             </nuxt-link>
           </li>
-          <ul v-show="useRoute().path.indexOf('/characters') != -1 || containsAnyString(charSections)">
+          <ul
+            v-show="
+              useRoute().path.indexOf('/characters') != -1 ||
+                containsAnyString(charSections)
+            "
+          >
             <li
               v-for="section in charSections"
               :key="section.slug"
@@ -125,9 +130,7 @@
               v-for="section in sectionGroups.Equipment"
               :key="section.slug"
             >
-              <nuxt-link
-                :to="`/sections/${section.slug}`"
-              >
+              <nuxt-link :to="`/sections/${section.slug}`">
                 {{ section.name }}
               </nuxt-link>
             </li>
@@ -135,7 +138,10 @@
           <!-- Magic Items -->
           <li>
             <nuxt-link
-              :class="{ 'router-link-active': useRoute().path.indexOf('/magicitems') === 0 }"
+              :class="{
+                'router-link-active':
+                  useRoute().path.indexOf('/magicitems') === 0,
+              }"
               to="/magicitems/magicitem-list"
             >
               Magic Items
@@ -144,7 +150,9 @@
           <!-- Spells -->
           <li>
             <nuxt-link
-              :class="{ 'router-link-active': useRoute().path.indexOf('/spells') === 0 }"
+              :class="{
+                'router-link-active': useRoute().path.indexOf('/spells') === 0,
+              }"
               to="/spells/spells-table"
             >
               Spells
@@ -190,7 +198,10 @@
           <!-- Monsters -->
           <li>
             <nuxt-link
-              :class="{ 'router-link-active': useRoute().path.indexOf('/monsters') === 0 }"
+              :class="{
+                'router-link-active':
+                  useRoute().path.indexOf('/monsters') === 0,
+              }"
               to="/monsters/monster-list"
             >
               Monsters
@@ -250,14 +261,17 @@
               Appendixes
             </nuxt-link>
           </li>
-          <ul v-show="useRoute().path.indexOf('/running') != -1 || containsAnyString(sectionGroups.Characters)">
+          <ul
+            v-show="
+              useRoute().path.indexOf('/running') != -1 ||
+                containsAnyString(sectionGroups.Characters)
+            "
+          >
             <li
               v-for="section in sectionGroups.Rules"
               :key="section.slug"
             >
-              <nuxt-link
-                :to="`/running/${section.slug}`"
-              >
+              <nuxt-link :to="`/running/${section.slug}`">
                 {{ section.name }}
               </nuxt-link>
             </li>
@@ -307,52 +321,53 @@
           @click="hideSidebar"
         />
         <nuxt-page />
-        <footer><a href="/legal/">Content provided under the OGL 1.0a</a></footer>
+        <footer>
+          <a href="/legal/">Content provided under the OGL 1.0a</a>
+        </footer>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { useMainStore } from '../store/index'
+import { useMainStore } from '../store/index';
 
 Array.prototype.groupBy = function (prop) {
   return this.reduce(function (groups, item) {
-    const val = item[prop]
-    groups[val] = groups[val] || []
-    groups[val].push(item)
-    return groups
-  }, {})
-}
+    const val = item[prop];
+    groups[val] = groups[val] || [];
+    groups[val].push(item);
+    return groups;
+  }, {});
+};
 
 const breadcrumbs = {
   // You should use / + name for the root route
   '/spells': 'Spells',
   // And just name of the page for child routes
-  'profile-account': 'Account'
-}
+  'profile-account': 'Account',
+};
 
 export default {
   setup() {
-    const store = useMainStore()
-    return { store }
+    const store = useMainStore();
+    return { store };
   },
   data() {
     return {
       searchText: this.$route.query.text,
       showSidebar: false,
-    }
-
+    };
   },
   computed: {
     classes: function () {
-      return this.store.classes
+      return this.store.classes;
     },
     sections: function () {
-      return this.store.sections
+      return this.store.sections;
     },
     races: function () {
-      return this.store.races
+      return this.store.races;
     },
     sectionGroups: function () {
       let groupedSections = this.sections.groupBy('parent');
@@ -360,30 +375,38 @@ export default {
     },
     charSections: function () {
       if (this.sectionGroups.hasOwnProperty('Characters')) {
-        let results = this.sectionGroups['Characters'].concat(this.sectionGroups['Character Advancement']);
+        let results = this.sectionGroups['Characters'].concat(
+          this.sectionGroups['Character Advancement']
+        );
         return results.sort(function (a, b) {
-          if (a.slug < b.slug) { return -1 }
-          else if (a.slug > b.slug) { return 1 }
-          else {return 0;}
-        })
+          if (a.slug < b.slug) {
+            return -1;
+          } else if (a.slug > b.slug) {
+            return 1;
+          } else {
+            return 0;
+          }
+        });
+      } else {
+        return [];
       }
     },
     crumbs() {
-      let crumbs = []
+      let crumbs = [];
       this.$route.matched.forEach((item) => {
         if (breadcrumbs[item.name] || breadcrumbs[item.path]) {
-          item.breadcrumb = breadcrumbs[item.name] || breadcrumbs[item.path]
-          crumbs.push(item)
+          item.breadcrumb = breadcrumbs[item.name] || breadcrumbs[item.path];
+          crumbs.push(item);
         }
-      })
+      });
 
-      return crumbs
-    }
+      return crumbs;
+    },
   },
   watch: {
     $route(to, from) {
       this.showSidebar = false;
-    }
+    },
   },
   beforeCreate() {
     this.store.loadClasses();
@@ -392,7 +415,7 @@ export default {
   },
   methods: {
     doSearch: function (searchText) {
-      this.$router.push({ name: 'search', query: { text: searchText } })
+      this.$router.push({ name: 'search', query: { text: searchText } });
       this.showSidebar = false;
     },
     containsCurrentRoute: function (routes) {
@@ -405,7 +428,7 @@ export default {
       return false;
     },
     containsAnyString: function (strings) {
-      var contains = false
+      var contains = false;
       if (typeof strings !== 'undefined') {
         for (var i = 0; i < strings.length; i++) {
           if (useRoute().path.indexOf(strings[i].slug) !== -1) {
@@ -419,10 +442,10 @@ export default {
       this.showSidebar = !this.showSidebar;
     },
     hideSidebar: function () {
-      this.showSidebar = false
-    }
+      this.showSidebar = false;
+    },
   },
-}
+};
 </script>
 
 <style lang="scss">
@@ -480,7 +503,7 @@ export default {
 
 footer {
   margin-top: 1rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
   display: block;
   text-align: center;
   padding-top: 1rem;
@@ -499,7 +522,6 @@ footer {
   justify-content: space-between;
   margin: (-$content-padding-y) (-$content-padding-x) 0;
   z-index: 6000;
-
 
   .sidebar-toggle {
     display: flex;
@@ -557,7 +579,6 @@ footer {
     display: block;
   }
 
-
   h1 {
     display: block;
     background-color: $color-fireball;
@@ -601,7 +622,6 @@ footer {
 }
 
 @media (max-width: 600px) {
-
   .shade {
     display: block;
     position: fixed;
@@ -609,7 +629,7 @@ footer {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba($color-basalt, .5);
+    background: rgba($color-basalt, 0.5);
     z-index: 500;
   }
 

@@ -95,20 +95,20 @@
 </template>
 
 <script>
-import { useMainStore } from '~/store'
+import { useMainStore } from '~/store';
 Array.prototype.groupBy = function (prop) {
   return this.reduce(function (groups, item) {
-    const val = item[prop]
-    groups[val] = groups[val] || []
-    groups[val].push(item)
-    return groups
-  }, {})
-}
+    const val = item[prop];
+    groups[val] = groups[val] || [];
+    groups[val].push(item);
+    return groups;
+  }, {});
+};
 
 export default {
   setup() {
-    const store = useMainStore()
-    return { store }
+    const store = useMainStore();
+    return { store };
   },
   computed: {
     sectionGroups: function () {
@@ -117,17 +117,22 @@ export default {
     },
     charSections: function () {
       if (this.sectionGroups.hasOwnProperty('Characters')) {
-        let results = this.sectionGroups['Characters'].concat(this.sectionGroups['Character Advancement']);
+        let results = this.sectionGroups['Characters'].concat(
+          this.sectionGroups['Character Advancement']
+        );
         return results.sort(function (a, b) {
-          if (a.slug < b.slug) { return -1 }
-          else if (a.slug > b.slug) { return 1 }
-          else {return 0;}
-        })
-      }
+          if (a.slug < b.slug) {
+            return -1;
+          } else if (a.slug > b.slug) {
+            return 1;
+          } else {
+            return 0;
+          }
+        });
+      } else {return [];}
     },
-  }
-}
+  },
+};
 </script>
 
 <style></style>
-
