@@ -12,7 +12,9 @@
     "postinstall": "nuxt prepare",
     "prepare": "husky install",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix .",
-    "format": "prettier . --ignore-path .gitignore --write"
+    "lint:ci": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "format": "prettier . --ignore-path .gitignore --write",
+    "test": "echo 'Coming soon, hopefully!'"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
