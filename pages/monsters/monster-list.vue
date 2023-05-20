@@ -2,7 +2,7 @@
   <section class="container docs-container">
     <h2 class="filter-header">
       <span>Monster List</span>
-      <filter-input placeholder="Filter monsters" @input="updateFilter" />
+      <filter-input placeholder="Filter monsters..." @input="updateFilter" />
     </h2>
     <div>
       <p v-if="!monstersList.length">Loading...</p>
