@@ -104,7 +104,7 @@ export default {
     MdViewer
   },
   created() {
-    return axios.get(`${useRuntimeConfig().public.apiUrl.apiUrl}/monsters/${this.$route.params.id}`)
+    return axios.get(`${useRuntimeConfig().public.apiUrl}/monsters/${this.$route.params.id}`)
       .then(response => {
         this.monster = response.data;
         this.loading = false
