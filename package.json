@@ -14,7 +14,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix .",
     "lint:ci": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "format": "prettier --ignore-path .gitignore --write .",
-    "pre-commit": "npx pretty-quick --staged && npm run lint:ci",
+    "pre-commit": "npx pretty-quick --staged && npm run lint",
     "test": "echo 'Coming soon, hopefully!'"
   },
   "devDependencies": {
