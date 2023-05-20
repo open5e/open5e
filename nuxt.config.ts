@@ -22,7 +22,9 @@ export default defineNuxtConfig({
       ]
     },
   },
-  // temporary fix: uncomment these lines to enable dev mode
+  nitro: {
+    preset: 'digital-ocean'
+  },
   // vite: {
   //   resolve: {
   //     alias: {
