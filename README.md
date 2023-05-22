@@ -1,4 +1,4 @@
-# Open5e.com is a site for browsing and finding open D&D content
+## Open5e.com is a site for browsing and finding open D&D content
 
 ![Web status](https://img.shields.io/website?down_message=Down&label=Open5e%20Site&up_message=Up&url=https%3A%2F%2Fopen5e.com) 
 
