@@ -36,6 +36,7 @@
     "pinia": "^2.1.3",
     "underscore": "^1.13.6",
     "vue": "^3.3.4",
+    "vue-gtag-next": "^1.14.0",
     "vue-showdown": "^4.1.0"
   }
 }
