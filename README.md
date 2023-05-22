@@ -1,20 +1,23 @@
-# open5e is now running on Vue.js!
+#Open5e.com is a site for finding open D&D content
 
-## Check the [Beta Site](https://beta.open5e.com) and [API](https://api.open5e.com) to see what's up! You can find the API repo at [on github](https://github.com/eepMoody/open5e-api).
+## Getting oriented
 
-We have a discord going for discussing the rebuild, and I hope you'll join us! https://discord.gg/9RNE2rY
+Open5e is a community project driven by a small number of volunteers in their spare time. We welcome any and all contributions! 
 
-Open5e is a community project driven by a small number of volunteers in their spare time. We welcome any and all contributions! Please join our Discord to help out: https://discord.gg/9RNE2rY or check out the issue board if you'd like to see what's being worked on!
+Useful places to check out:
 
-# Build and run the UI layer
+- [Our discord](https://discord.gg/9RNE2rY) where we discuss the project and generally pal around. Bring your best memes.
+- [The project org homepage](https://github.com/open5e) which has links to our roadmaps and other resources
+- [The API repo](https://github.com/open5e/open5e-api) if you're more interested in python
+- [The website!](https://open5e.com) published from this repo
 
-Open5e uses the Nuxt framework for Vue.js, which takes care of a lot of the architectural work for the frontend layer while allowing a large amount of flexibility.
+# Developing on the Website (this repo)
 
-By default, the UI layer will point to the live API. If you want to change this, you can set an environment variable for "API_URL" and direct it to a local API source. (Usually localhost:8888 if you're using the api at https://github.com/eepMoody/open5e-api
+Open5e uses the Nuxt3 framework for Vue3, which takes care of a lot of the architectural work for the frontend layer while allowing a large amount of flexibility.
 
 ## Build Setup
 
-From /open5e
+After cloning this repo, from /open5e
 
 ```bash
 # install dependencies
@@ -24,6 +27,7 @@ $ npm install # Or yarn install
 # serve with hot reload at localhost:3000. If you
 $ npm run dev
 ```
+By default, the UI layer will point to the live API. If you want to change this, you can set an environment variable for "API_URL" and direct it to a local API source. (Usually localhost:8888 if you're using the api at https://github.com/eepMoody/open5e-api
 
 Other build options:
 
