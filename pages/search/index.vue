@@ -150,7 +150,7 @@ export default {
       this.loading = true;
       return axios
         .get(
-          `${this.$nuxt.$config.public.apiUrl}/search?text=${this.$route.query.text}`
+          `${this.$nuxt.$config.public.apiUrl}/search/?text=${this.$route.query.text}`
         ) //you will need to enable CORS to make this work
         .then((response) => {
           this.results = response.data.results;
