@@ -45,10 +45,10 @@
     </p>
 
     <a href="https://github.com/open5e/open5e" class="external-button"
-      ><img src="/img/github-website-button.png"
+      ><img src="/img/github-website-button.png" alt="Open5e site repo"
     /></a>
     <a href="https://github.com/open5e/open5e-api" class="external-button"
-      ><img src="/img/github-api-button.png"
+      ><img src="/img/github-api-button.png" alt="Open5e API Repo"
     /></a>
 
     <h3>Support us on Patreon</h3>
@@ -58,7 +58,9 @@
       increasing effort to fill out flavor text and add art.
     </p>
     <a href="https://www.patreon.com/open5e" class="external-button"
-      ><img src="/img/patron-button.png"
+      ><img
+        src="/img/patron-button.png"
+        alt="Become a patron! Keep Open5e ad free!"
     /></a>
 
     <h3>Join the Discord</h3>
@@ -67,7 +69,7 @@
       bite!
     </p>
     <a href="https://discord.gg/QXqF6gSVqB" class="external-button"
-      ><img src="/img/discord-button.png"
+      ><img src="/img/discord-button.png" alt="Join our discord"
     /></a>
 
     <h2>The API</h2>
@@ -121,6 +123,7 @@ export default {
   margin-top: 0.6rem;
   zoom: 40%;
   display: inline-block;
+
   &:hover {
     opacity: 0.9;
   }
