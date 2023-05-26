@@ -109,7 +109,7 @@ export default {
   data() {
     return {
       filter: '',
-      currentSortProperty: 'challenge_rating',
+      currentSortProperty: 'name',
       currentSortDir: 'asc',
     };
   },
