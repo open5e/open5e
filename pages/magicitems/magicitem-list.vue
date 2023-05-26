@@ -21,15 +21,9 @@
       <div v-else aria-live="assertive" aria-atomic="true">
         <p v-if="!itemListLength">No results</p>
       </div>
-      <div
-        v-for="(letter, key) in itemsByLetter"
-        :key="letter[0].name.charAt(0)"
-      >
-        <h3 v-if="!filter">
-          {{ key.toUpperCase() }}
-        </h3>
+      <div v-if="filter">
         <ul class="list--items">
-          <li v-for="item in letter" :key="item.name">
+          <li v-for="item in filteredItems" :key="item.name">
             <nuxt-link
               tag="a"
               :params="{ id: item.slug }"
@@ -45,6 +39,33 @@
             />
           </li>
         </ul>
+      </div>
+      <div v-else>
+        <div
+          v-for="(letter, key) in itemsByLetter"
+          :key="letter[0].name.charAt(0)"
+        >
+          <h4>
+            {{ key.toUpperCase() }}
+          </h4>
+          <ul class="list--items">
+            <li v-for="item in letter" :key="item.name">
+              <nuxt-link
+                tag="a"
+                :params="{ id: item.slug }"
+                :to="`/magicitems/${item.slug}`"
+              >
+                {{ item.name }}
+              </nuxt-link>
+              <source-tag
+                v-if="item.document__slug && item.document__slug !== 'wotc-srd'"
+                class=""
+                :title="item.document__title"
+                :text="item.document__slug"
+              />
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
