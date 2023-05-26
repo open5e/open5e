@@ -213,25 +213,4 @@ export default {
     display: none;
   }
 }
-
-.filter-header-wrapper {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-
-  row-gap: 0.5rem;
-  border-bottom: 3px solid #e74c3c;
-  padding-bottom: 0.25rem;
-
-  .filter-header {
-    border: none;
-    padding-bottom: 0;
-  }
-
-  @media (max-width: 600px) {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 0.25rem;
-  }
-}
 </style>
