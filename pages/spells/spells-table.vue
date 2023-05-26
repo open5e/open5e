@@ -1,31 +1,62 @@
 <template>
   <section class="container">
-    <h2 class="filter-header">
-      Spell List
-      <!-- <button style="text-decoration:underline;" v-on:click="getSpellsByProperty('letter')">Alphabetical</button>
-      <button style="text-decoration:underline;" v-on:click="getSpellsByProperty('dnd_class')">Class</button> -->
-      <filter-input placeholder="Filter spells..." @input="updateFilter" />
-    </h2>
+    <div class="filter-header-wrapper">
+      <h2 class="filter-header">Spell List</h2>
+      <filter-input
+        id="filter-spells"
+        ref="filter"
+        class="filter"
+        placeholder="Filter spells..."
+        @input="updateFilter"
+        @keyup.enter="onFilterEnter"
+      />
+    </div>
     <div>
+      <div>
+        <h3
+          ref="results"
+          class="sr-only"
+          tabindex="-1"
+          @keyup.esc="focusFilter"
+        >
+          {{ spellsListed.length }}
+          {{ spellsListed.length === 1 ? 'Result' : 'Results' }}
+          <span v-if="filter.length > 0">&nbsp;for {{ filter }}</span>
+        </h3>
+        <div aria-live="assertive" aria-atomic="true" class="sr-only">
+          <span v-if="spells.length && !spellsListed.length">No results.</span>
+        </div>
+      </div>
       <p v-if="!spells.length">Loading...</p>
       <table v-else class="fiterable-table">
+        <caption class="sr-only">
+          Column headers with buttons are sortable.
+        </caption>
         <thead>
           <tr>
-            <th class="spell-table-header" @click="sort('name')">Name</th>
-            <th class="spell-table-header" @click="sort('school')">School</th>
-            <th class="spell-table-header" @click="sort('level_int')">Level</th>
-            <th
-              class="spell-table-header hide-mobile"
-              @click="sort('components')"
-            >
-              Component
+            <th class="spell-table-header" :aria-sort="ariaSort.name">
+              <button @click="sort('name')">Name</button>
+            </th>
+            <th class="spell-table-header" :aria-sort="ariaSort.school">
+              <button @click="sort('school')">School</button>
+            </th>
+            <th class="spell-table-header" :aria-sort="ariaSort.level_int">
+              <button @click="sort('level_int')">Level</button>
+            </th>
+            <th class="spell-table-header hide-mobile">
+              <button
+                :aria-sort="ariaSort.components"
+                @click="sort('components')"
+              >
+                Component
+              </button>
             </th>
             <th class="spell-table-header-class hide-mobile">Class</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="spell in spellsListed" :key="spell.name">
-            <td>
+            <th>
               <nuxt-link
                 tag="a"
                 :params="{ id: spell.slug }"
@@ -41,7 +72,7 @@
                 :title="spell.document__title"
                 :text="spell.document__slug"
               />
-            </td>
+            </th>
             <td>{{ spell.school }}</td>
             <td>{{ spell.level_int }}</td>
             <td class="hide-mobile">
@@ -117,6 +148,14 @@ export default {
         return spell.name.toLowerCase().indexOf(this.filter.toLowerCase()) > -1;
       });
     },
+    ariaSort: function () {
+      return {
+        name: this.getAriaSort('name'),
+        school: this.getAriaSort('school'),
+        level_int: this.getAriaSort('level_int'),
+        components: this.getAriaSort('components'),
+      };
+    },
   },
   mounted() {
     this.store.loadSpells();
@@ -135,15 +174,34 @@ export default {
       this.currentSortProperty = prop;
       this.spellsListed = {};
     },
+    onFilterEnter: function () {
+      this.$refs.results.focus();
+    },
+    focusFilter: function () {
+      this.$refs.filter.$refs.input.focus();
+    },
+    getAriaSort(columName) {
+      if (this.currentSortProperty === columName) {
+        return this.currentSortDir === 'asc' ? 'ascending' : 'descending';
+      }
+      return null;
+    },
   },
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .spell-table-header {
-  text-decoration: underline;
-  cursor: pointer;
   vertical-align: baseline;
+
+  button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+  }
 }
 
 .spell-table-header-class {
@@ -153,6 +211,27 @@ export default {
 @media (max-width: 600px) {
   .hide-mobile {
     display: none;
+  }
+}
+
+.filter-header-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  row-gap: 0.5rem;
+  border-bottom: 3px solid #e74c3c;
+  padding-bottom: 0.25rem;
+
+  .filter-header {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 0.25rem;
   }
 }
 </style>
