@@ -17,7 +17,7 @@ export default {
       default: '#ffffff',
     },
     background: {
-      default: '#aaaaaa',
+      default: '#707070',
     },
     border: {
       default: '1px solid #999999',
