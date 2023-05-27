@@ -40,8 +40,12 @@ html {
   margin: 0;
 }
 
-.fiterable-table {
+.filterable-table {
   width: 100%;
+
+  thead th {
+    vertical-align: baseline;
+  }
 
   tbody {
     th {

@@ -28,29 +28,32 @@
         </div>
       </div>
       <p v-if="!spells.length">Loading...</p>
-      <table v-else class="fiterable-table">
+      <table v-else class="filterable-table">
         <caption class="sr-only">
           Column headers with buttons are sortable.
         </caption>
         <thead>
           <tr>
-            <th class="spell-table-header" :aria-sort="ariaSort.name">
-              <button @click="sort('name')">Name</button>
-            </th>
-            <th class="spell-table-header" :aria-sort="ariaSort.school">
-              <button @click="sort('school')">School</button>
-            </th>
-            <th class="spell-table-header" :aria-sort="ariaSort.level_int">
-              <button @click="sort('level_int')">Level</button>
-            </th>
-            <th class="spell-table-header hide-mobile">
-              <button
-                :aria-sort="ariaSort.components"
-                @click="sort('components')"
-              >
-                Component
-              </button>
-            </th>
+            <sortable-table-header
+              :current-sort-dir="ariaSort.name"
+              @sort="(dir) => sort('name', dir)"
+              >Name</sortable-table-header
+            >
+            <sortable-table-header
+              :current-sort-dir="ariaSort.school"
+              @sort="(dir) => sort('school', dir)"
+              >School</sortable-table-header
+            >
+            <sortable-table-header
+              :current-sort-dir="ariaSort.level_int"
+              @sort="(dir) => sort('level_int', dir)"
+              >Level</sortable-table-header
+            >
+            <sortable-table-header
+              :current-sort-dir="ariaSort.components"
+              @sort="(dir) => sort('components', dir)"
+              >Components</sortable-table-header
+            >
             <th class="spell-table-header-class hide-mobile">Class</th>
           </tr>
         </thead>
@@ -116,7 +119,7 @@ export default {
     return {
       filter: '',
       currentSortProperty: 'name',
-      currentSortDir: 'asc',
+      currentSortDir: 'ascending',
     };
   },
   computed: {
@@ -130,7 +133,7 @@ export default {
       set: function () {
         return this.filteredSpells.sort((a, b) => {
           let modifier = 1;
-          if (this.currentSortDir === 'desc') {
+          if (this.currentSortDir === 'descending') {
             modifier = -1;
           }
           if (a[this.currentSortProperty] < b[this.currentSortProperty]) {
@@ -167,11 +170,9 @@ export default {
     spellListLength: function () {
       return Object.keys(this.spellsListed).length;
     },
-    sort: function (prop) {
-      if (prop === this.currentSortProperty) {
-        this.currentSortDir = this.currentSortDir === 'asc' ? 'desc' : 'asc';
-      }
+    sort: function (prop, dir) {
       this.currentSortProperty = prop;
+      this.currentSortDir = dir;
       this.spellsListed = {};
     },
     onFilterEnter: function () {
@@ -182,7 +183,7 @@ export default {
     },
     getAriaSort(columName) {
       if (this.currentSortProperty === columName) {
-        return this.currentSortDir === 'asc' ? 'ascending' : 'descending';
+        return this.currentSortDir === 'ascending' ? 'ascending' : 'descending';
       }
       return null;
     },
@@ -191,23 +192,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.spell-table-header {
-  vertical-align: baseline;
-
-  button {
-    border: none;
-    background: none;
-    padding: 0;
-    cursor: pointer;
-    text-decoration: underline;
-    font-weight: bold;
-  }
-}
-
-.spell-table-header-class {
-  vertical-align: baseline;
-}
-
 @media (max-width: 600px) {
   .hide-mobile {
     display: none;
