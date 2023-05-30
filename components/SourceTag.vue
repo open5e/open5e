@@ -17,7 +17,7 @@ export default {
       default: '#ffffff',
     },
     background: {
-      default: '#707070',
+      default: '#767676',
     },
     border: {
       default: '1px solid #999999',
@@ -33,10 +33,10 @@ export default {
   padding: 1px 3px;
   line-height: 10px;
   border-radius: 4px;
-  margin-left: 3px;
+  margin-left: 5px;
   margin-right: 3px;
   text-transform: uppercase;
   position: relative;
-  top: -3px;
+  top: -1px;
 }
 </style>
