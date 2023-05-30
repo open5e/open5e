@@ -1,7 +1,7 @@
 <template>
   <section class="container docs-container">
     <div class="filter-header-wrapper">
-      <h2 class="filter-header">Monster List</h2>
+      <h1 class="filter-header">Monster List</h1>
       <filter-input
         id="filter-monsters"
         ref="filter"

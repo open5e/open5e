@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div class="filter-header-wrapper">
-      <h2 class="filter-header">Magic Item List</h2>
+      <h1 class="filter-header">Magic Item List</h1>
       <filter-input
         id="filter-items"
         ref="filter"
@@ -11,11 +11,11 @@
         @keyup.enter="onFilterEnter"
       />
     </div>
-    <h3 ref="results" class="sr-only" tabindex="-1" @keyup.esc="focusFilter">
+    <h2 ref="results" class="sr-only" tabindex="-1" @keyup.esc="focusFilter">
       {{ itemListLength }}
       {{ itemListLength === 1 ? 'Result' : 'Results' }}
       <span v-if="filter.length > 0">&nbsp;for {{ filter }}</span>
-    </h3>
+    </h2>
     <div :class="{ 'three-column': !filter }">
       <p v-if="!items.length">Loading...</p>
       <div v-else aria-live="assertive" aria-atomic="true">
@@ -44,10 +44,11 @@
         <div
           v-for="(letter, key) in itemsByLetter"
           :key="letter[0].name.charAt(0)"
+          class="letter-list"
         >
-          <h4>
+          <h3>
             {{ key.toUpperCase() }}
-          </h4>
+          </h3>
           <ul class="list--items">
             <li v-for="item in letter" :key="item.name">
               <nuxt-link
@@ -139,4 +140,12 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+.letter-list {
+  break-inside: avoid-column;
+
+  &:first-child h3 {
+    margin-top: 0;
+  }
+}
+</style>

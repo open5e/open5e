@@ -2,9 +2,7 @@
   <div>
     <div class="app-wrapper" :class="{ 'show-sidebar': showSidebar }">
       <div class="sidebar">
-        <nuxt-link to="/">
-          <h1>Open5e</h1>
-        </nuxt-link>
+        <nuxt-link to="/" class="logo"> Open5e </nuxt-link>
         <input
           v-model="searchText"
           class="input-search"
@@ -240,9 +238,7 @@
       <div class="content-wrapper">
         <div class="mobile-header">
           <div class="sidebar-toggle" @click="toggleSidebar" />
-          <nuxt-link to="/">
-            <h1>Open5e</h1>
-          </nuxt-link>
+          <nuxt-link to="/" class="logo"> Open5e </nuxt-link>
           <div class="spacer" />
         </div>
         <ol class="breadcrumb">
@@ -473,7 +469,7 @@ footer {
     }
   }
 
-  h1 {
+  .logo {
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -512,12 +508,15 @@ footer {
     display: block;
   }
 
-  h1 {
+  .logo {
     display: block;
     background-color: $color-fireball;
     padding: 1rem 3rem 1rem 1rem;
     cursor: pointer;
     margin-top: 0;
+    font-family: Lora, serif;
+    font-weight: 600;
+    font-size: 2em;
   }
 
   ul {

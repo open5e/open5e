@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div class="filter-header-wrapper">
-      <h2 class="filter-header">Spell List</h2>
+      <h1 class="filter-header">Spell List</h1>
       <filter-input
         id="filter-spells"
         ref="filter"
@@ -13,7 +13,7 @@
     </div>
     <div>
       <div>
-        <h3
+        <h2
           ref="results"
           class="sr-only"
           tabindex="-1"
@@ -22,7 +22,7 @@
           {{ spellsListed.length }}
           {{ spellsListed.length === 1 ? 'Result' : 'Results' }}
           <span v-if="filter.length > 0">&nbsp;for {{ filter }}</span>
-        </h3>
+        </h2>
         <div aria-live="assertive" aria-atomic="true" class="sr-only">
           <span v-if="spells.length && !spellsListed.length">No results.</span>
         </div>
