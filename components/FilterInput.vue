@@ -100,7 +100,7 @@ export default {
     font-size: 1rem;
     font-weight: normal;
     font-family: 'Source Sans Pro', sans-serif;
-    color: gray;
+    color: $color-gray;
     pointer-events: none;
     transition: all 100ms ease;
 
