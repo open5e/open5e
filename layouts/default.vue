@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="layout">
     <div class="app-wrapper" :class="{ 'show-sidebar': showSidebar }">
       <div class="sidebar">
         <nuxt-link to="/">
@@ -15,92 +15,95 @@
           <!-- Characters -->
           <li>
             <nuxt-link to="/characters/"> Characters </nuxt-link>
+            <ul
+              v-show="
+                useRoute().path.indexOf('/characters') != -1 ||
+                containsAnyString(charSections)
+              "
+            >
+              <li v-for="section in charSections" :key="section.slug">
+                <nuxt-link :to="`/sections/${section.slug}`">
+                  {{ section.name }}
+                </nuxt-link>
+              </li>
+            </ul>
           </li>
-          <ul
-            v-show="
-              useRoute().path.indexOf('/characters') != -1 ||
-              containsAnyString(charSections)
-            "
-          >
-            <li v-for="section in charSections" :key="section.slug">
-              <nuxt-link :to="`/sections/${section.slug}`">
-                {{ section.name }}
-              </nuxt-link>
-            </li>
-          </ul>
           <!-- Classes -->
           <li>
             <nuxt-link to="/classes"> Classes </nuxt-link>
+            <ul v-show="useRoute().path.indexOf('/classes') != -1">
+              <li v-for="charClass in classes" :key="charClass.slug">
+                <nuxt-link :to="`/classes/${charClass.slug}`">
+                  {{ charClass.name }}
+                </nuxt-link>
+              </li>
+            </ul>
           </li>
-          <ul v-show="useRoute().path.indexOf('/classes') != -1">
-            <li v-for="charClass in classes" :key="charClass.slug">
-              <nuxt-link :to="`/classes/${charClass.slug}`">
-                {{ charClass.name }}
-              </nuxt-link>
-            </li>
-          </ul>
           <!-- Races -->
           <li>
             <nuxt-link to="/races"> Races </nuxt-link>
+            <ul v-if="races" v-show="useRoute().path.indexOf('/races') != -1">
+              <li v-for="race in races" :key="race.slug">
+                <nuxt-link :to="`/races/${race.slug}`">
+                  {{ race.name }}
+                </nuxt-link>
+              </li>
+            </ul>
           </li>
-          <ul v-if="races" v-show="useRoute().path.indexOf('/races') != -1">
-            <li v-for="race in races" :key="race.slug">
-              <nuxt-link :to="`/races/${race.slug}`">
-                {{ race.name }}
-              </nuxt-link>
-            </li>
-          </ul>
           <!-- Combat -->
           <li>
             <nuxt-link to="/combat/"> Combat </nuxt-link>
+            <ul v-show="useRoute().path.indexOf('/combat/') != -1">
+              <li>
+                <nuxt-link to="/combat/actions"> Actions in Combat </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/combat/attacking"> Attacking </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/combat/combat-sequence">
+                  Combat Sequence
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/combat/cover"> Cover </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/combat/damage-and-healing">
+                  Damage &amp; Healing
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/combat/mounted-combat">
+                  Mounted combat
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/combat/movement-in-combat">
+                  Movement in Combat
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/combat/underwater-combat">
+                  Underwater Combat
+                </nuxt-link>
+              </li>
+            </ul>
           </li>
-          <ul v-show="useRoute().path.indexOf('/combat/') != -1">
-            <li>
-              <nuxt-link to="/combat/actions"> Actions in Combat </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/combat/attacking"> Attacking </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/combat/combat-sequence">
-                Combat Sequence
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/combat/cover"> Cover </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/combat/damage-and-healing">
-                Damage &amp; Healing
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/combat/mounted-combat">
-                Mounted combat
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/combat/movement-in-combat">
-                Movement in Combat
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/combat/underwater-combat">
-                Underwater Combat
-              </nuxt-link>
-            </li>
-          </ul>
           <!-- Equipment -->
           <li>
             <nuxt-link to="/sections/equipment/"> Equipment </nuxt-link>
+            <ul v-show="containsAnyString(sectionGroups.Equipment)">
+              <li
+                v-for="section in sectionGroups.Equipment"
+                :key="section.slug"
+              >
+                <nuxt-link :to="`/sections/${section.slug}`">
+                  {{ section.name }}
+                </nuxt-link>
+              </li>
+            </ul>
           </li>
-          <ul v-show="containsAnyString(sectionGroups.Equipment)">
-            <li v-for="section in sectionGroups.Equipment" :key="section.slug">
-              <nuxt-link :to="`/sections/${section.slug}`">
-                {{ section.name }}
-              </nuxt-link>
-            </li>
-          </ul>
           <!-- Magic Items -->
           <li>
             <nuxt-link
@@ -123,40 +126,42 @@
             >
               Spells
             </nuxt-link>
+            <ul v-show="useRoute().path.indexOf('/spells/') !== -1">
+              <li>
+                <nuxt-link to="/spells/by-class/bard"> Bard Spells </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/spells/by-class/cleric">
+                  Cleric Spells
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/spells/by-class/druid">
+                  Druid Spells
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/spells/by-class/paladin">
+                  Paladin Spells
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/spells/by-class/sorcerer">
+                  Sorcerer Spells
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/spells/by-class/wizard">
+                  Wizard Spells
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/spells/by-class/warlock">
+                  Warlock Spells
+                </nuxt-link>
+              </li>
+            </ul>
           </li>
-          <ul v-show="useRoute().path.indexOf('/spells/') !== -1">
-            <li>
-              <nuxt-link to="/spells/by-class/bard"> Bard Spells </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/spells/by-class/cleric">
-                Cleric Spells
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/spells/by-class/druid"> Druid Spells </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/spells/by-class/paladin">
-                Paladin Spells
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/spells/by-class/sorcerer">
-                Sorcerer Spells
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/spells/by-class/wizard">
-                Wizard Spells
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/spells/by-class/warlock">
-                Warlock Spells
-              </nuxt-link>
-            </li>
-          </ul>
           <!-- Monsters -->
           <li>
             <nuxt-link
@@ -174,67 +179,70 @@
             <nuxt-link to="/gameplay-mechanics/">
               Gameplay Mechanics
             </nuxt-link>
+            <ul v-show="useRoute().path.indexOf('/gameplay-mechanics/') !== -1">
+              <li>
+                <nuxt-link to="/gameplay-mechanics/ability-scores">
+                  Ability Scores
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/gameplay-mechanics/between-adventures">
+                  Between Adventures
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/gameplay-mechanics/conditions">
+                  Conditions
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/gameplay-mechanics/environment">
+                  Environment
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/gameplay-mechanics/movement">
+                  Movement
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/gameplay-mechanics/rest"> Rest </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/gameplay-mechanics/saving-throws">
+                  Saving Throws
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/gameplay-mechanics/time"> Time </nuxt-link>
+              </li>
+            </ul>
           </li>
-          <ul v-show="useRoute().path.indexOf('/gameplay-mechanics/') !== -1">
-            <li>
-              <nuxt-link to="/gameplay-mechanics/ability-scores">
-                Ability Scores
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/gameplay-mechanics/between-adventures">
-                Between Adventures
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/gameplay-mechanics/conditions">
-                Conditions
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/gameplay-mechanics/environment">
-                Environment
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/gameplay-mechanics/movement">
-                Movement
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/gameplay-mechanics/rest"> Rest </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/gameplay-mechanics/saving-throws">
-                Saving Throws
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/gameplay-mechanics/time"> Time </nuxt-link>
-            </li>
-          </ul>
           <!-- Running a Game -->
           <li>
             <nuxt-link to="/running/"> Appendixes </nuxt-link>
+            <ul
+              v-show="
+                useRoute().path.indexOf('/running') != -1 ||
+                containsAnyString(sectionGroups.Characters)
+              "
+            >
+              <li v-for="section in sectionGroups.Rules" :key="section.slug">
+                <nuxt-link :to="`/running/${section.slug}`">
+                  {{ section.name }}
+                </nuxt-link>
+              </li>
+            </ul>
           </li>
-          <ul
-            v-show="
-              useRoute().path.indexOf('/running') != -1 ||
-              containsAnyString(sectionGroups.Characters)
-            "
-          >
-            <li v-for="section in sectionGroups.Rules" :key="section.slug">
-              <nuxt-link :to="`/running/${section.slug}`">
-                {{ section.name }}
-              </nuxt-link>
-            </li>
-          </ul>
           <li>
             <nuxt-link to="/api-docs"> API Docs </nuxt-link>
           </li>
         </ul>
         <a class="sidebar-link" href="https://www.patreon.com/open5e"
-          ><img src="/img/patron-badge.png" class="sidebar-image"
+          ><img
+            src="/img/patron-badge.png"
+            class="sidebar-image"
+            alt="Become a patron! Keep Open5e ad free!"
         /></a>
       </div>
       <div class="content-wrapper">
@@ -384,7 +392,7 @@ export default {
 <style lang="scss">
 @import '../assets/main';
 
-#__layout {
+.layout {
   overflow: hidden;
 }
 
@@ -456,6 +464,10 @@ footer {
   margin: (-$content-padding-y) (-$content-padding-x) 0;
   z-index: 6000;
 
+  a {
+    color: white;
+  }
+
   .sidebar-toggle {
     display: flex;
     height: 100%;
@@ -525,8 +537,6 @@ footer {
     list-style: none;
 
     li {
-      padding: $pad-md $pad-md;
-
       a {
         opacity: 0.8;
 
@@ -551,6 +561,11 @@ footer {
         padding: $pad-sm $pad-md;
       }
     }
+  }
+
+  > ul > li > a {
+    display: block;
+    padding: $pad-md $pad-md;
   }
 }
 
