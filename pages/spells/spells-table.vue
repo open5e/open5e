@@ -1,31 +1,65 @@
 <template>
   <section class="container">
-    <h2 class="filter-header">
-      Spell List
-      <!-- <button style="text-decoration:underline;" v-on:click="getSpellsByProperty('letter')">Alphabetical</button>
-      <button style="text-decoration:underline;" v-on:click="getSpellsByProperty('dnd_class')">Class</button> -->
-      <filter-input placeholder="Filter spells..." @input="updateFilter" />
-    </h2>
+    <div class="filter-header-wrapper">
+      <h1 class="filter-header">Spell List</h1>
+      <filter-input
+        id="filter-spells"
+        ref="filter"
+        class="filter"
+        placeholder="Filter spells..."
+        @input="updateFilter"
+        @keyup.enter="onFilterEnter"
+      />
+    </div>
     <div>
+      <div>
+        <h2
+          ref="results"
+          class="sr-only"
+          tabindex="-1"
+          @keyup.esc="focusFilter"
+        >
+          {{ spellsListed.length }}
+          {{ spellsListed.length === 1 ? 'Result' : 'Results' }}
+          <span v-if="filter.length > 0">&nbsp;for {{ filter }}</span>
+        </h2>
+        <div aria-live="assertive" aria-atomic="true" class="sr-only">
+          <span v-if="spells.length && !spellsListed.length">No results.</span>
+        </div>
+      </div>
       <p v-if="!spells.length">Loading...</p>
-      <table v-else class="fiterable-table">
+      <table v-else class="filterable-table">
+        <caption class="sr-only">
+          Column headers with buttons are sortable.
+        </caption>
         <thead>
           <tr>
-            <th class="spell-table-header" @click="sort('name')">Name</th>
-            <th class="spell-table-header" @click="sort('school')">School</th>
-            <th class="spell-table-header" @click="sort('level_int')">Level</th>
-            <th
-              class="spell-table-header hide-mobile"
-              @click="sort('components')"
+            <sortable-table-header
+              :current-sort-dir="ariaSort.name"
+              @sort="(dir) => sort('name', dir)"
+              >Name</sortable-table-header
             >
-              Component
-            </th>
+            <sortable-table-header
+              :current-sort-dir="ariaSort.school"
+              @sort="(dir) => sort('school', dir)"
+              >School</sortable-table-header
+            >
+            <sortable-table-header
+              :current-sort-dir="ariaSort.level_int"
+              @sort="(dir) => sort('level_int', dir)"
+              >Level</sortable-table-header
+            >
+            <sortable-table-header
+              :current-sort-dir="ariaSort.components"
+              @sort="(dir) => sort('components', dir)"
+              >Components</sortable-table-header
+            >
             <th class="spell-table-header-class hide-mobile">Class</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="spell in spellsListed" :key="spell.name">
-            <td>
+            <th>
               <nuxt-link
                 tag="a"
                 :params="{ id: spell.slug }"
@@ -41,7 +75,7 @@
                 :title="spell.document__title"
                 :text="spell.document__slug"
               />
-            </td>
+            </th>
             <td>{{ spell.school }}</td>
             <td>{{ spell.level_int }}</td>
             <td class="hide-mobile">
@@ -85,7 +119,7 @@ export default {
     return {
       filter: '',
       currentSortProperty: 'name',
-      currentSortDir: 'asc',
+      currentSortDir: 'ascending',
     };
   },
   computed: {
@@ -99,7 +133,7 @@ export default {
       set: function () {
         return this.filteredSpells.sort((a, b) => {
           let modifier = 1;
-          if (this.currentSortDir === 'desc') {
+          if (this.currentSortDir === 'descending') {
             modifier = -1;
           }
           if (a[this.currentSortProperty] < b[this.currentSortProperty]) {
@@ -117,6 +151,14 @@ export default {
         return spell.name.toLowerCase().indexOf(this.filter.toLowerCase()) > -1;
       });
     },
+    ariaSort: function () {
+      return {
+        name: this.getAriaSort('name'),
+        school: this.getAriaSort('school'),
+        level_int: this.getAriaSort('level_int'),
+        components: this.getAriaSort('components'),
+      };
+    },
   },
   mounted() {
     this.store.loadSpells();
@@ -128,28 +170,28 @@ export default {
     spellListLength: function () {
       return Object.keys(this.spellsListed).length;
     },
-    sort: function (prop) {
-      if (prop === this.currentSortProperty) {
-        this.currentSortDir = this.currentSortDir === 'asc' ? 'desc' : 'asc';
-      }
+    sort: function (prop, dir) {
       this.currentSortProperty = prop;
+      this.currentSortDir = dir;
       this.spellsListed = {};
+    },
+    onFilterEnter: function () {
+      this.$refs.results.focus();
+    },
+    focusFilter: function () {
+      this.$refs.filter.$refs.input.focus();
+    },
+    getAriaSort(columName) {
+      if (this.currentSortProperty === columName) {
+        return this.currentSortDir === 'ascending' ? 'ascending' : 'descending';
+      }
+      return null;
     },
   },
 };
 </script>
 
-<style scoped>
-.spell-table-header {
-  text-decoration: underline;
-  cursor: pointer;
-  vertical-align: baseline;
-}
-
-.spell-table-header-class {
-  vertical-align: baseline;
-}
-
+<style scoped lang="scss">
 @media (max-width: 600px) {
   .hide-mobile {
     display: none;

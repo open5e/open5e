@@ -1,14 +1,8 @@
 <template>
   <section class="container">
-    <h2 class="filter-header">
+    <h1 class="filter-header">
       <span class="title-case">{{ filter }} spells</span>
-      <p class="class-selector">
-        <!-- <label>Select a class: </label>
-        <select v-model="filter">
-          <option :key="charClass" :value="charClass" :selected="charClass.toLowerCase() == filter" v-for='charClass in available_classes'>{{charClass}}</option>
-        </select> -->
-      </p>
-    </h2>
+    </h1>
     <div :class="'three-column'">
       <p v-if="!spellListLength">No results</p>
       <ul v-for="level in spellsByLevel" :key="level.lvl" class="list--items">
