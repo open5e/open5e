@@ -1,28 +1,71 @@
 <template>
   <section class="container docs-container">
-    <h2 class="filter-header">
-      <span>Monster List</span>
-      <filter-input placeholder="Filter monsters..." @input="updateFilter" />
-    </h2>
+    <div class="filter-header-wrapper">
+      <h1 class="filter-header">Monster List</h1>
+      <filter-input
+        id="filter-monsters"
+        ref="filter"
+        class="filter"
+        placeholder="Filter monsters..."
+        @input="updateFilter"
+        @keyup.enter="onFilterEnter"
+      />
+    </div>
     <div>
+      <div>
+        <h3
+          ref="results"
+          class="sr-only"
+          tabindex="-1"
+          @keyup.esc="focusFilter"
+        >
+          {{ monstersListed.length }}
+          {{ monstersListed.length === 1 ? 'Result' : 'Results' }}
+          <span v-if="filter.length > 0">&nbsp;for {{ filter }}</span>
+        </h3>
+        <div aria-live="assertive" aria-atomic="true" class="sr-only">
+          <span v-if="monstersList.length && !monstersListed.length"
+            >No results.</span
+          >
+        </div>
+      </div>
       <p v-if="!monstersList.length">Loading...</p>
-      <table v-else class="fiterable-table">
+      <table v-else class="filterable-table">
+        <caption class="sr-only">
+          Column headers with buttons are sortable.
+        </caption>
         <thead>
           <tr>
-            <th class="monster-table-header" @click="sort('name')">Name</th>
-            <th class="monster-table-header" @click="sort('type')">Type</th>
-            <th class="monster-table-header" @click="sort('challenge_rating')">
-              CR
-            </th>
-            <th class="monster-table-header" @click="sort('size')">Size</th>
-            <th class="monster-table-header" @click="sort('hit_points')">
-              Hit Points
-            </th>
+            <sortable-table-header
+              :current-sort-dir="ariaSort.name"
+              @sort="(dir) => sort('name', dir)"
+              >Name</sortable-table-header
+            >
+            <sortable-table-header
+              :current-sort-dir="ariaSort.type"
+              @sort="(dir) => sort('type', dir)"
+              >Type</sortable-table-header
+            >
+            <sortable-table-header
+              :current-sort-dir="ariaSort.challenge_rating"
+              @sort="(dir) => sort('challenge_rating', dir)"
+              >CR</sortable-table-header
+            >
+            <sortable-table-header
+              :current-sort-dir="ariaSort.size"
+              @sort="(dir) => sort('size', dir)"
+              >Size</sortable-table-header
+            >
+            <sortable-table-header
+              :current-sort-dir="ariaSort.hit_points"
+              @sort="(dir) => sort('hit_points', dir)"
+              >Hit Points</sortable-table-header
+            >
           </tr>
         </thead>
         <tbody>
           <tr v-for="monster in monstersListed" :key="monster.slug">
-            <td>
+            <th>
               <nuxt-link
                 tag="a"
                 :params="{ id: monster.slug }"
@@ -39,7 +82,7 @@
                 :title="monster.document__title"
                 :text="monster.document__slug"
               />
-            </td>
+            </th>
             <td>{{ monster.type }}</td>
             <td><fraction-renderer :challenge="monster.challenge_rating" /></td>
             <td>{{ monster.size }}</td>
@@ -58,6 +101,7 @@
 import FilterInput from '~/components/FilterInput.vue';
 import FractionRenderer from '~/components/FractionRenderer.vue';
 import SourceTag from '~/components/SourceTag.vue';
+import SortableTableHeader from '~/components/SortableTableHeader.vue';
 import { useMainStore } from '~/store';
 
 export default {
@@ -73,8 +117,8 @@ export default {
   data() {
     return {
       filter: '',
-      currentSortProperty: 'challenge_rating',
-      currentSortDir: 'asc',
+      currentSortProperty: 'name',
+      currentSortDir: 'ascending',
     };
   },
   computed: {
@@ -92,7 +136,7 @@ export default {
       set: function () {
         return this.filteredMonsters.sort((a, b) => {
           let modifier = 1;
-          if (this.currentSortDir === 'desc') {
+          if (this.currentSortDir === 'descending') {
             modifier = -1;
           }
           if (a[this.currentSortProperty] < b[this.currentSortProperty]) {
@@ -112,6 +156,15 @@ export default {
         );
       });
     },
+    ariaSort: function () {
+      return {
+        name: this.getAriaSort('name'),
+        type: this.getAriaSort('type'),
+        challenge_rating: this.getAriaSort('challenge_rating'),
+        size: this.getAriaSort('size'),
+        hit_points: this.getAriaSort('hit_points'),
+      };
+    },
   },
   beforeCreate() {
     this.store.loadMonsterList();
@@ -123,22 +176,40 @@ export default {
     monsterListLength: function () {
       return Object.keys(this.monstersListed).length;
     },
-    sort: function (prop) {
-      if (prop === this.currentSortProperty) {
-        this.currentSortDir = this.currentSortDir === 'asc' ? 'desc' : 'asc';
-      }
+    sort: function (prop, value) {
+      this.currentSortDir = value;
       this.currentSortProperty = prop;
       this.monstersListed = {};
+    },
+    onFilterEnter: function () {
+      this.$refs.results.focus();
+    },
+    focusFilter: function () {
+      this.$refs.filter.$refs.input.focus();
+    },
+    getAriaSort(columName) {
+      if (this.currentSortProperty === columName) {
+        return this.currentSortDir;
+      }
+      return null;
     },
   },
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .monster-table-header {
-  text-decoration: underline;
   cursor: pointer;
   vertical-align: baseline;
+
+  button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+  }
 }
 
 .monster-table-header-class {
