@@ -45,7 +45,10 @@ export default defineNuxtConfig({
   //     }
   //   },
   // },
-  modules: ['@pinia/nuxt'],
+  modules: [
+    '@pinia/nuxt',
+    '@nuxtjs/tailwindcss',
+  ],
   runtimeConfig: {
     public: {
       apiUrl: process.env.API_URL || 'https://api.open5e.com',
@@ -57,5 +60,9 @@ export default defineNuxtConfig({
         config.resolve.alias.vue = 'vue/dist/vue.esm-bundler';
       }
     },
+  },
+   tailwindcss: {
+    configPath: '~/tailwind.config.ts',
+    cssPath: '~/styles/tailwind.css',
   },
 });
