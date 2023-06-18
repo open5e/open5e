@@ -45,10 +45,7 @@ export default defineNuxtConfig({
   //     }
   //   },
   // },
-  modules: [
-    '@pinia/nuxt',
-    '@nuxtjs/tailwindcss',
-  ],
+  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss', 'nuxt-icon'],
   runtimeConfig: {
     public: {
       apiUrl: process.env.API_URL || 'https://api.open5e.com',
@@ -61,7 +58,7 @@ export default defineNuxtConfig({
       }
     },
   },
-   tailwindcss: {
+  tailwindcss: {
     configPath: '~/tailwind.config.ts',
     cssPath: '~/styles/tailwind.css',
   },
