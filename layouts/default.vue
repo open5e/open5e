@@ -549,13 +549,13 @@ footer {
       a {
         &:hover {
           opacity: 1;
-          @apply hover:bg-slate-800/50;
+          @apply hover:bg-slate-800/40;
         }
 
         &.router-link-active {
           font-weight: bold;
           opacity: 1;
-          @apply bg-slate-800;
+          @apply bg-slate-900/60;
         }
       }
     }
@@ -567,8 +567,11 @@ footer {
       @apply px-4 py-3;
     }
     // and the child elements of the sidebar (eg classes under "class")
-    ul > li > a {
-      @apply pl-8 pr-4 py-1;
+    ul {
+      @apply bg-slate-800/30 py-2;
+      & > li > a {
+        @apply pl-8 pr-4 py-1;
+      }
     }
   }
 }
