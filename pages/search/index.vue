@@ -3,10 +3,11 @@
     <h1>Search results</h1>
     <hr />
     <p v-if="loading">Searching Open5e...</p>
-    <p v-if="!loading && results.length == 0">No results</p>
+    <p v-else-if="noValue">No search term provided</p>
+    <p v-else-if="orderedResults.length == 0">No results</p>
     <div
       v-for="result in orderedResults"
-      v-show="!loading"
+      v-show="!loading && !noValue"
       :key="result.slug"
       class="search-result"
     >
@@ -81,7 +82,6 @@
         <p class="result-highlights" v-html="result.highlighted" />
       </div>
     </div>
-    <p v-if="!loading && results.length > 0">No more results</p>
   </section>
 </template>
 
@@ -106,6 +106,7 @@ export default {
       results: [],
       text: this.$route.query.text,
       loading: true,
+      noValue: true,
     };
   },
   computed: {
@@ -147,15 +148,22 @@ export default {
   },
   methods: {
     getSearchResults: function () {
-      this.loading = true;
-      return axios
-        .get(
-          `${this.$nuxt.$config.public.apiUrl}/search/?text=${this.$route.query.text}`
-        ) //you will need to enable CORS to make this work
-        .then((response) => {
-          this.results = response.data.results;
-          this.loading = false;
-        });
+      if (this.$route.query.text == '') {
+        this.noValue = true;
+        this.loading = false;
+        return;
+      } else {
+        this.loading = true;
+        this.noValue = false;
+        return axios
+          .get(
+            `${this.$nuxt.$config.public.apiUrl}/search/?text=${this.$route.query.text}`
+          ) //you will need to enable CORS to make this work
+          .then((response) => {
+            this.results = response.data.results;
+            this.loading = false;
+          });
+      }
     },
   },
 };

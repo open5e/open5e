@@ -3,12 +3,24 @@
     <div class="app-wrapper" :class="{ 'show-sidebar': showSidebar }">
       <div class="sidebar">
         <nuxt-link to="/" class="logo"> Open5e </nuxt-link>
-        <input
-          v-model="searchText"
-          class="input-search"
-          placeholder="Search Open5e"
-          @keyup.enter="doSearch(searchText)"
-        />
+        <div class="relative">
+          <div
+            class="absolute inset-y-0 right-0 flex items-center pr-2 cursor-pointer"
+          >
+            <Icon
+              name="heroicons:magnifying-glass-20-solid"
+              class="w-8 h-8 p-1 text-white bg-red-900/25 hover:bg-red-900/50 rounded-full"
+              aria-hidden="true"
+              @click="doSearch(searchText)"
+            />
+          </div>
+          <input
+            v-model="searchText"
+            class="px-4 py-4 w-full bg-red-700 placeholder-white/80 placeholder:font-semibold focus:bg-red-800 focus:border-0 focus:outline-none"
+            placeholder="Search Open5e"
+            @keyup.enter="doSearch(searchText)"
+          />
+        </div>
         <ul v-if="sections && races && classes">
           <!-- Characters -->
           <li>
@@ -268,6 +280,7 @@
 
 <script>
 import { useMainStore } from '../store/index';
+import { MagnifyingGlassIcon } from '@heroicons/vue/24/solid';
 
 Array.prototype.groupBy = function (prop) {
   return this.reduce(function (groups, item) {
@@ -494,8 +507,7 @@ footer {
 }
 
 .sidebar {
-  color: white;
-  background-color: $color-basalt;
+  @apply text-white bg-slate-700;
   width: $sidebar-width;
   min-width: $sidebar-width;
   overflow-y: auto;
@@ -531,40 +543,33 @@ footer {
     font-size: 2em;
   }
 
+  // General sidebar styling
   ul {
-    padding: $pad-sm $pad-md $pad-sm $pad-xs;
-    list-style: none;
-
     li {
       a {
-        opacity: 0.8;
-
         &:hover {
           opacity: 1;
+          @apply hover:bg-slate-800/50;
         }
 
         &.router-link-active {
           font-weight: bold;
           opacity: 1;
+          @apply bg-slate-800;
         }
       }
     }
-
-    ul {
-      background-color: $color-darkness;
-      opacity: 0.8;
-      padding: $pad-sm $pad-md $pad-sm $pad-lg;
-      margin: 0 -1rem;
-
-      li {
-        padding: $pad-sm $pad-md;
-      }
-    }
   }
-
-  > ul > li > a {
-    display: block;
-    padding: $pad-md $pad-md;
+  // Style the root elements of the sidebar only
+  > ul > li {
+    a {
+      display: block;
+      @apply px-4 py-3;
+    }
+    // and the child elements of the sidebar (eg classes under "class")
+    ul > li > a {
+      @apply pl-8 pr-4 py-1;
+    }
   }
 }
 

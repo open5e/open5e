@@ -4,17 +4,14 @@
 
 a {
   text-decoration: none;
+  @apply text-blue-700 hover:underline visited:text-purple-600;
 }
 
 .side-note {
-  float: right;
-  position: sticky;
-  right: 10px;
-  border: 1px solid $color-mana;
-  background: lighten($color-mana, 60%);
-  padding: $pad-md;
-  width: 20rem;
-  margin: 1rem;
+  @apply m-2 p-2 w-80 right-3 sticky float-right border border-blue-600 bg-blue-100 text-blue-900;
+  h3 {
+    @apply mt-0;
+  }
 }
 
 .pad-r-sm {
