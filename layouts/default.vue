@@ -8,7 +8,7 @@
             class="absolute inset-y-0 right-0 flex items-center pr-2 cursor-pointer"
           >
             <Icon
-              name="heroicons:magnifying-glass-20-solid"
+              name="majesticons:search-line"
               class="w-8 h-8 p-1 text-white bg-red-900/25 hover:bg-red-900/50 rounded-full"
               aria-hidden="true"
               @click="doSearch(searchText)"
