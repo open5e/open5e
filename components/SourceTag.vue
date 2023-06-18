@@ -1,26 +1,46 @@
 <template>
   <span
-    class="tag-element"
+    :class="['tag-element', 'border']"
     :title="title"
-    :style="{ backgroundColor: background, color: textColor, border: border }"
+    :style="{
+      backgroundColor: computedColor(title, 80, 90),
+      color: textColor,
+      borderColor: computedColor(title, 80, 60),
+    }"
   >
     {{ text }}
   </span>
 </template>
 
 <script>
+import colors from 'tailwindcss/colors';
+
 export default {
   props: {
     text: String,
     title: String,
     textColor: {
-      default: '#ffffff',
+      type: String,
+      default: colors.slate[900],
     },
     background: {
-      default: '#767676',
+      type: String,
+      default: colors.slate[100],
     },
     border: {
-      default: '1px solid #999999',
+      type: String,
+      default: colors.slate[300],
+    },
+  },
+  methods: {
+    computedColor: function (str, s, l) {
+      var hash = 0;
+      for (var i = 0; i < str.length; i++) {
+        hash = str.charCodeAt(i) + ((hash << 5) - hash);
+      }
+
+      var h = hash % 360;
+      return 'hsl(' + h + ', ' + s + '%, ' + l + '%)';
     },
   },
 };
