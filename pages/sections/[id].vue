@@ -22,6 +22,13 @@
       <p><b>Equipment.</b> {{ background.equipment }}</p>
       <h4>Special feature: {{ background.feature }}</h4>
       <p>{{ background.feature_desc }}</p>
+      <p class="text-sm italic">
+        Source:
+        <a target="NONE" :href="background.document__url"
+          >{{ background.document__title }}
+          <Icon name="heroicons:arrow-top-right-on-square-20-solid"></Icon
+        ></a>
+      </p>
     </article>
   </section>
 </template>
@@ -52,10 +59,8 @@ export default {
       return this.store.allBackgrounds;
     },
   },
-  beforeCreate() {
-    this.store.loadBackgrounds();
-  },
   mounted() {
+    this.store.loadBackgrounds();
     return axios
       .get(
         `${this.$nuxt.$config.public.apiUrl}/sections/${this.$route.params.id}`

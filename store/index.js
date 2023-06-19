@@ -55,10 +55,11 @@ export const useMainStore = defineStore({
       sourceString: '',
       documents: [],
       freshVals: new Set(), // this tracks lists that have been loaded since the last set of global filters were changed
+      isInitialized: false,
     };
   },
   actions: {
-    loadFromApi(
+    async loadFromApi(
       resource,
       fields,
       limit,
@@ -70,7 +71,9 @@ export const useMainStore = defineStore({
         // The list is fresh, no need to make the API call
         return;
       }
-
+      if (!this.isInitialized) {
+        await this.initializeSources();
+      }
       const url = `${
         useRuntimeConfig().public.apiUrl
       }/${resource}/?fields=${fields}&limit=${limit}&ordering=${order}${
@@ -126,6 +129,15 @@ export const useMainStore = defineStore({
     loadDocuments() {
       this.loadFromApi('documents', '', 1000, '', 'documents');
     },
+    loadSourcesFromLocal() {
+      if (process.client) {
+        const savedSources = localStorage.getItem('sources');
+        return savedSources ? JSON.parse(savedSources) : [];
+      }
+    },
+    saveSourcesToLocal(sources) {
+      localStorage.setItem('sources', JSON.stringify(sources));
+    },
     setSources(sources) {
       console.log(sources);
       console.log(this.sourceSelection);
@@ -133,10 +145,22 @@ export const useMainStore = defineStore({
         return; // if the sources are the same, don't do anything
       }
       this.sourceSelection = sources;
+      this.saveSourcesToLocal(sources); // save to localStorage
+      console.log('saving' + sources);
       this.sourceString = sources
         ? `&document__slug__in=${this.sourceSelection.join(',')}` // if sources are selected, construct a query string segment for them
         : '';
       this.clearFresh(); // clear the list of fresh sources, since they are now stale
+    },
+    // load sources from the
+    initializeSources() {
+      const savedSources = this.loadSourcesFromLocal();
+      if (savedSources) {
+        this.setSources(savedSources);
+      } else if (this.documents && this.documents.length > 0) {
+        this.setSources(this.documents.map((doc) => doc.slug));
+      }
+      this.isInitialized = true;
     },
     markFresh(val) {
       this.freshVals.add(val); // mark the list as fresh when it is fetched

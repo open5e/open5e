@@ -1,8 +1,20 @@
 <template>
   <div class="layout">
+    <SourcesModal :show="showModal" @close="showModal = false"></SourcesModal>
     <div class="app-wrapper" :class="{ 'show-sidebar': showSidebar }">
       <div class="sidebar">
         <nuxt-link to="/" class="logo"> Open5e </nuxt-link>
+        <div
+          class="bg-red-600 px-4 py-2 cursor-pointer hover:bg-red-400"
+          @click="showModal = true"
+        >
+          {{ sourceSelection.length }} of {{ documents.length }} sources
+          <Icon
+            name="heroicons:pencil-square"
+            class="w-5 h-5 text-white"
+            aria-hidden="true"
+          ></Icon>
+        </div>
         <div class="relative">
           <div
             class="absolute inset-y-0 right-0 flex items-center pr-2 cursor-pointer"
@@ -307,6 +319,7 @@ export default {
     return {
       searchText: this.$route.query.text,
       showSidebar: false,
+      showModal: false,
     };
   },
   computed: {
@@ -321,6 +334,9 @@ export default {
     },
     documents: function () {
       return this.store.documents;
+    },
+    sourceSelection: function () {
+      return this.store.sourceSelection;
     },
     sectionGroups: function () {
       let groupedSections = this.sections.groupBy('parent');
@@ -361,7 +377,7 @@ export default {
       this.showSidebar = false;
     },
   },
-  beforeCreate() {
+  mounted() {
     this.store.loadClasses();
     this.store.loadSections();
     this.store.loadRaces();
@@ -437,7 +453,7 @@ export default {
   .sticky-header {
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 40;
   }
 }
 
@@ -479,7 +495,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   margin: (-$content-padding-y) (-$content-padding-x) 0;
-  z-index: 6000;
+  z-index: 60;
 
   a {
     color: white;
@@ -521,7 +537,7 @@ footer {
   overflow-y: auto;
   font-size: 15px;
   position: relative;
-  z-index: 1000;
+  z-index: 50;
   display: flex;
   flex-direction: column;
 
@@ -593,7 +609,7 @@ footer {
     width: 100vw;
     height: 100vh;
     background: rgba($color-basalt, 0.5);
-    z-index: 500;
+    z-index: 48;
   }
 
   .app-wrapper {

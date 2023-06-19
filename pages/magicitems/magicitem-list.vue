@@ -2,9 +2,6 @@
   <section class="container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Magic Item List</h1>
-      <button id="vanish" name="vanish" @click="updateSources(['wotc-srd'])">
-        SRD Only!
-      </button>
       <filter-input
         id="filter-items"
         ref="filter"
@@ -126,7 +123,7 @@ export default {
       return Object.keys(this.itemsByLetter).length;
     },
   },
-  beforeCreate() {
+  mounted() {
     this.store.loadMagicItems();
   },
   methods: {

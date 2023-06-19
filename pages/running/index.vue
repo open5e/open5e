@@ -37,11 +37,6 @@ export default {
       return groupedSections;
     },
   },
-  beforeCreate() {
-    this.store.loadClasses();
-    this.store.loadSections();
-    this.store.loadRaces();
-  },
 };
 </script>
 
