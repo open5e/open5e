@@ -153,12 +153,15 @@ export const useMainStore = defineStore({
       this.clearFresh(); // clear the list of fresh sources, since they are now stale
     },
     // load sources from the
-    initializeSources() {
+    async initializeSources() {
       const savedSources = this.loadSourcesFromLocal();
-      if (savedSources) {
+      if (savedSources.length > 0) {
         this.setSources(savedSources);
-      } else if (this.documents && this.documents.length > 0) {
-        this.setSources(this.documents.map((doc) => doc.slug));
+      } else {
+        await this.loadDocuments();
+        if (this.documents && this.documents.length > 0) {
+          this.setSources(this.documents.map((doc) => doc.slug));
+        }
       }
       this.isInitialized = true;
     },

@@ -30,15 +30,13 @@
             leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
             <DialogPanel
-              class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6"
+              class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-2 text-left shadow-xl transition-all sm:my-4 sm:w-full sm:max-w-lg sm:p-6"
             >
               <div>
-                <div class="mt-3 text-left sm:mt-5">
-                  <DialogTitle
-                    as="h3"
-                    class="text-base mt-0 font-semibold leading-6 text-gray-900"
-                    >Select Sources</DialogTitle
-                  >
+                <div class="text-left sm:mt-0">
+                  <h2 class="mt-0 pb-2 border-b-4 border-red-400">
+                    Select Sources
+                  </h2>
                   <div class="mt-2">
                     <fieldset>
                       <legend class="sr-only">Source Selection</legend>
@@ -59,7 +57,7 @@
                                 v-model="selectedSourcesComputed"
                                 :name="document.slug"
                                 type="checkbox"
-                                class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                                class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600"
                                 :value="document.slug"
                               />
                             </div>
@@ -69,9 +67,10 @@
                                 class="font-medium text-gray-900"
                                 >{{ document.title }}</label
                               >
-                              <span class="text-gray-500">
-                                {{ document.slug }}
-                              </span>
+                              <SourceTag
+                                :title="document.title"
+                                :text="document.slug"
+                              ></SourceTag>
                             </div>
                           </div>
                         </div>
@@ -85,7 +84,7 @@
               >
                 <button
                   type="button"
-                  class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:col-start-2"
+                  class="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
                   @click="saveSelection()"
                 >
                   Update
@@ -109,6 +108,7 @@
 
 <script>
 import { useMainStore } from '~/store';
+import SourceTag from '~/components/SourceTag.vue';
 
 export default {
   data() {
