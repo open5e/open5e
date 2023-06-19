@@ -26,8 +26,8 @@
       <h3 class="flex items-center">
         {{ subrace.name }}
         <source-tag
-          class="ml-4"
           v-show="race.document__slug"
+          class="ml-4"
           :title="race.document__title"
           :text="race.document__slug"
         />
