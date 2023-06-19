@@ -49,7 +49,7 @@
                         >
                           <h6 class="mt-2">{{ organization }}</h6>
                           <div
-                            v-for="(document, index) in group"
+                            v-for="document in group"
                             :key="document.slug"
                             class="relative flex items-start"
                           >
