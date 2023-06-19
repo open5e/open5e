@@ -20,7 +20,7 @@ export const useMainStore = defineStore({
         .get(
           `${
             useRuntimeConfig().public.apiUrl
-          }/monsters/?fields=slug,name,challenge_rating,type,size,hit_points,document__slug, document__title&limit=5000&ordering=slug`
+          }/monsters/?fields=slug,name,challenge_rating,type,size,hit_points,document__slug,document__title&limit=5000&ordering=slug`
         )
         .then((response) => {
           this.monstersList = response.data.results;

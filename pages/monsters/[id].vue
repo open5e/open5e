@@ -5,7 +5,13 @@
       <h1>{{ monster.name }}</h1>
       <img v-if="monster.img_main" :src="monster.img_main" class="img-main" />
       <p>
-        <em>{{ monster.size }} {{ monster.type }}, {{ monster.alignment }}</em>
+        <em
+          >{{ monster.size }} {{ monster.type }}, {{ monster.alignment }}
+          <source-tag
+            v-show="monster.document__slug"
+            :title="monster.document__title"
+            :text="monster.document__slug"
+        /></em>
       </p>
       <hr />
       <p><b>Armor Class</b> {{ monster.armor_class }}</p>
@@ -146,6 +152,13 @@
       >
         <b class="action-name">{{ action.name }}. </b>
         <md-viewer class="inline" :text="action.desc" />
+      </p>
+      <p class="text-sm italic">
+        Source:
+        <a target="NONE" :href="monster.document__url"
+          >{{ monster.document__title }}
+          <Icon name="heroicons:arrow-top-right-on-square-20-solid"></Icon
+        ></a>
       </p>
     </div>
   </section>

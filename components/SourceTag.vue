@@ -3,9 +3,9 @@
     :class="['tag-element', 'border']"
     :title="title"
     :style="{
-      backgroundColor: computedColor(title, 80, 90),
+      backgroundColor: title ? computedColor(title, 80, 90) : background,
       color: textColor,
-      borderColor: computedColor(title, 80, 60),
+      borderColor: title ? computedColor(title, 80, 60) : border,
     }"
   >
     {{ text }}
