@@ -139,14 +139,11 @@ export const useMainStore = defineStore({
       localStorage.setItem('sources', JSON.stringify(sources));
     },
     setSources(sources) {
-      console.log(sources);
-      console.log(this.sourceSelection);
       if (this.sourceSelection === sources) {
         return; // if the sources are the same, don't do anything
       }
       this.sourceSelection = sources;
       this.saveSourcesToLocal(sources); // save to localStorage
-      console.log('saving' + sources);
       this.sourceString = sources
         ? `&document__slug__in=${this.sourceSelection.join(',')}` // if sources are selected, construct a query string segment for them
         : '';
@@ -169,7 +166,6 @@ export const useMainStore = defineStore({
       this.freshVals.add(val); // mark the list as fresh when it is fetched
     },
     clearFresh() {
-      console.log('clearing fresh');
       const staleVals = [...this.freshVals]; // convert the set to an array
       const loadFunctions = {
         spellsList: this.loadSpells,
@@ -186,7 +182,6 @@ export const useMainStore = defineStore({
 
       for (const listName of staleVals) {
         if (listName in loadFunctions) {
-          console.log('reloading ' + listName);
           loadFunctions[listName](); // reload any stale lists
         }
       }

@@ -199,7 +199,6 @@ export default {
       for (let i = 0; i < savesArray.length; i++) {
         const saveValue = this.monster[savesArray[i].name + '_save'];
         const statValue = this.monster[savesArray[i].name];
-        console.log(`${saveValue} vs ${statValue}`);
         if (saveValue !== null) {
           saves.push({
             name: savesArray[i].display,

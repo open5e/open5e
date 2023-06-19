@@ -388,10 +388,6 @@ export default {
       this.$router.push({ name: 'search', query: { text: searchText } });
       this.showSidebar = false;
     },
-    updateSources: function (val) {
-      this.store.setSources(val);
-      this.store.loadMagicItems();
-    },
     containsCurrentRoute: function (routes) {
       var currentRoute = useRoute().path;
       for (var i = 0; i < routes.length; i++) {
