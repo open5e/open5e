@@ -19,7 +19,7 @@
         <label
           >Components: {{ spell.components }}
 
-          <span class="font-medium text-slate-600" v-if="spell.material"
+          <span v-if="spell.material" class="font-medium text-slate-600"
             >({{ spell.material.replace(/\.$/, '') }})
             <!-- Removes trailing preiod, if there is one -->
           </span>
