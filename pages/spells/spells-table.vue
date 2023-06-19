@@ -78,19 +78,21 @@
                 :text="spell.document__slug"
               />
             </th>
-            <td>{{ spell.school }}</td>
+            <td>{{ capitalize(spell.school) }}</td>
             <td>{{ spell.level_int }}</td>
             <td class="hide-mobile">
               {{ spell.components }}
             </td>
             <td class="hide-mobile">
               <span
-                v-for="(spellclass, index) in spell.dnd_class"
+                v-for="(spellclass, index) in spell.spell_lists"
                 :key="spellclass"
-                ><span class="dnd_class" @click="filterByClass(spellclass)">{{
-                  spellclass
+                ><span class="spell_lists" @click="filterByClass(spellclass)">{{
+                  capitalize(spellclass)
                 }}</span
-                ><span v-if="index + 1 < spell.dnd_class.length">, </span></span
+                ><span v-if="index + 1 < spell.spell_lists.length"
+                  >,
+                </span></span
               >
             </td>
           </tr>
@@ -171,6 +173,9 @@ export default {
     },
     spellListLength: function () {
       return Object.keys(this.spellsListed).length;
+    },
+    capitalize(str) {
+      return str.charAt(0).toUpperCase() + str.slice(1);
     },
     sort: function (prop, dir) {
       this.currentSortProperty = prop;

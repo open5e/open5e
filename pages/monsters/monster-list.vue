@@ -2,6 +2,7 @@
   <section class="container docs-container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Monster List</h1>
+      <button @click="updateSources(['wotc-srd'])">Vanish</button>
       <filter-input
         id="filter-monsters"
         ref="filter"
@@ -167,7 +168,7 @@ export default {
     },
   },
   beforeCreate() {
-    this.store.loadMonsterList();
+    this.store.loadMonsters();
   },
   methods: {
     updateFilter: function (val) {
