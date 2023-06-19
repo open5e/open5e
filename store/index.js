@@ -19,6 +19,7 @@ const spellFields = [
   'name',
   'school',
   'dnd_class',
+  'spell_lists',
   'level',
   'components',
   'level_int',
@@ -57,119 +58,73 @@ export const useMainStore = defineStore({
     };
   },
   actions: {
+    loadFromApi(
+      resource,
+      fields,
+      limit,
+      order,
+      listName,
+      processData = (data) => data
+    ) {
+      if (this.freshVals.has(listName)) {
+        // The list is fresh, no need to make the API call
+        return;
+      }
+
+      const url = `${
+        useRuntimeConfig().public.apiUrl
+      }/${resource}/?fields=${fields}&limit=${limit}&ordering=${order}${
+        this.sourceString
+      }`;
+
+      axios.get(url).then((response) => {
+        this[listName] = processData(response.data.results);
+        this.markFresh(listName); // mark the list as fresh
+      });
+    },
+
     loadMonsters() {
-      if (this.freshVals.has('monstersList')) {
-        // The list is fresh, no need to make the API call
-        return;
-      }
-      axios
-        .get(
-          `${
-            useRuntimeConfig().public.apiUrl
-          }/monsters/?fields=${monsterFields}&limit=5000&ordering=${monsterOrder}${
-            this.sourceString
-          }
-          `
-        )
-        .then((response) => {
-          this.monstersList = response.data.results;
-          this.markFresh('monstersList'); // mark the list as fresh
-        });
+      this.loadFromApi(
+        'monsters',
+        monsterFields,
+        5000,
+        monsterOrder,
+        'monstersList'
+      );
     },
+
     loadSpells() {
-      if (this.freshVals.has('spellsList')) {
-        // The list is fresh, no need to make the API call
-        return;
-      }
-      axios
-        .get(
-          `${
-            useRuntimeConfig().public.apiUrl
-          }/spells/?fields=${spellFields}&limit=5000&ordering=${spellOrder}${
-            this.sourceString
-          }`
-        ) //you will need to enable CORS to make this work
-        .then((response) => {
-          let spells = response.data.results;
-          // Until api sends arrays this will work to sort spells by class.
-          spells.map((item) => {
-            item.dnd_class = item.dnd_class.split(',');
-            for (var i = 0; i < item.dnd_class.length; i++) {
-              item.dnd_class[i].trim();
-            }
-          });
-          this.spellsList = spells;
-          this.markFresh('spellsList'); // mark the list as fresh
-        });
+      this.loadFromApi('spells', spellFields, 5000, spellOrder, 'spellsList');
     },
+
     loadMagicItems() {
-      if (this.freshVals.has('magicItemsList')) {
-        // The list is fresh, no need to make the API call
-        return;
-      }
-      axios
-        .get(
-          `${
-            useRuntimeConfig().public.apiUrl
-          }/magicitems/?fields=${magicItemFields}&limit=5000&ordering=${magicItemOrder}${
-            this.sourceString
-          }`
-        )
-        .then((response) => {
-          this.magicItemsList = response.data.results;
-          this.markFresh('magicItemsList'); // mark the list as fresh
-        });
+      this.loadFromApi(
+        'magicitems',
+        magicItemFields,
+        5000,
+        magicItemOrder,
+        'magicItemsList'
+      );
     },
+
     loadBackgrounds() {
-      axios
-        .get(
-          `${useRuntimeConfig().public.apiUrl}/backgrounds/?limit=1000${
-            this.sourceString
-          }`
-        )
-        .then((response) => {
-          this.backgrounds = response.data.results;
-        });
+      this.loadFromApi('backgrounds', '', 1000, '', 'backgrounds');
     },
+
     loadClasses() {
-      axios
-        .get(
-          `${useRuntimeConfig().public.apiUrl}/classes/?limit=1000${
-            this.sourceString
-          }`
-        )
-        .then((response) => {
-          this.classes = response.data.results;
-        });
+      this.loadFromApi('classes', '', 1000, '', 'classes');
     },
+
     loadRaces() {
-      axios
-        .get(
-          `${useRuntimeConfig().public.apiUrl}/races/?limit=1000${
-            this.sourceString
-          }`
-        )
-        .then((response) => {
-          this.races = response.data.results;
-        });
+      this.loadFromApi('races', '', 1000, '', 'races');
     },
+
     loadSections() {
-      axios
-        .get(
-          `${useRuntimeConfig().public.apiUrl}/sections/?limit=1000${
-            this.sourceString
-          }`
-        )
-        .then((response) => {
-          this.sections = response.data.results;
-        });
+      this.loadFromApi('sections', '', 1000, '', 'sections');
     },
+
     loadDocuments() {
-      axios
-        .get(`${useRuntimeConfig().public.apiUrl}/documents/?limit=1000`) // intentionally not scoped to selected sources, this populates the source selection list
-        .then((response) => {
-          this.documents = response.data.results;
-        });
+      this.loadFromApi('documents', '', 1000, '', 'documents');
     },
     setSources(sources) {
       console.log(sources);
