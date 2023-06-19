@@ -59,7 +59,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="spell in spellsListed" :key="spell.name">
+          <tr v-for="spell in spellsListed" :key="spell.slug">
             <th>
               <nuxt-link
                 tag="a"
