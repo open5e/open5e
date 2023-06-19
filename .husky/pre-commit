@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm run pre-commit
+npx pretty-quick --staged
+npm run lint
+git add $(git diff --name-only --cached)
