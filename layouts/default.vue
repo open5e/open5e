@@ -319,6 +319,9 @@ export default {
     races: function () {
       return this.store.races;
     },
+    documents: function () {
+      return this.store.documents;
+    },
     sectionGroups: function () {
       let groupedSections = this.sections.groupBy('parent');
       return groupedSections;
@@ -362,11 +365,16 @@ export default {
     this.store.loadClasses();
     this.store.loadSections();
     this.store.loadRaces();
+    this.store.loadDocuments();
   },
   methods: {
     doSearch: function (searchText) {
       this.$router.push({ name: 'search', query: { text: searchText } });
       this.showSidebar = false;
+    },
+    updateSources: function (val) {
+      this.store.setSources(val);
+      this.store.loadMagicItems();
     },
     containsCurrentRoute: function (routes) {
       var currentRoute = useRoute().path;

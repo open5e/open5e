@@ -2,6 +2,9 @@
   <section class="container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Magic Item List</h1>
+      <button id="vanish" name="vanish" @click="updateSources(['wotc-srd'])">
+        SRD Only!
+      </button>
       <filter-input
         id="filter-items"
         ref="filter"
@@ -129,6 +132,9 @@ export default {
   methods: {
     updateFilter: function (val) {
       this.filter = val;
+    },
+    updateSources: function (val) {
+      this.store.setSources(val);
     },
     onFilterEnter: function () {
       this.$refs.results.focus();

@@ -53,10 +53,15 @@ export const useMainStore = defineStore({
       sourceSelection: [],
       sourceString: '',
       documents: [],
+      freshVals: new Set(), // this tracks lists that have been loaded since the last set of global filters were changed
     };
   },
   actions: {
-    loadMonsterList() {
+    loadMonsters() {
+      if (this.freshVals.has('monstersList')) {
+        // The list is fresh, no need to make the API call
+        return;
+      }
       axios
         .get(
           `${
@@ -68,9 +73,14 @@ export const useMainStore = defineStore({
         )
         .then((response) => {
           this.monstersList = response.data.results;
+          this.markFresh('monstersList'); // mark the list as fresh
         });
     },
     loadSpells() {
+      if (this.freshVals.has('spellsList')) {
+        // The list is fresh, no need to make the API call
+        return;
+      }
       axios
         .get(
           `${
@@ -89,9 +99,14 @@ export const useMainStore = defineStore({
             }
           });
           this.spellsList = spells;
+          this.markFresh('spellsList'); // mark the list as fresh
         });
     },
     loadMagicItems() {
+      if (this.freshVals.has('magicItemsList')) {
+        // The list is fresh, no need to make the API call
+        return;
+      }
       axios
         .get(
           `${
@@ -102,6 +117,7 @@ export const useMainStore = defineStore({
         )
         .then((response) => {
           this.magicItemsList = response.data.results;
+          this.markFresh('magicItemsList'); // mark the list as fresh
         });
     },
     loadBackgrounds() {
@@ -155,11 +171,43 @@ export const useMainStore = defineStore({
           this.documents = response.data.results;
         });
     },
-    setSources(sources, lists) {
+    setSources(sources) {
+      console.log(sources);
+      console.log(this.sourceSelection);
+      if (this.sourceSelection === sources) {
+        return; // if the sources are the same, don't do anything
+      }
       this.sourceSelection = sources;
       this.sourceString = sources
         ? `&document__slug__in=${this.sourceSelection.join(',')}` // if sources are selected, construct a query string segment for them
         : '';
+      this.clearFresh(); // clear the list of fresh sources, since they are now stale
+    },
+    markFresh(val) {
+      this.freshVals.add(val); // mark the list as fresh when it is fetched
+    },
+    clearFresh() {
+      console.log('clearing fresh');
+      const staleVals = [...this.freshVals]; // convert the set to an array
+      const loadFunctions = {
+        spellsList: this.loadSpells,
+        monstersList: this.loadMonsters,
+        magicItemsList: this.loadMagicItems,
+        classes: this.loadClasses,
+        races: this.loadRaces,
+        sections: this.loadSections,
+        backgrounds: this.loadBackgrounds,
+        documents: this.loadDocuments,
+      };
+
+      this.freshVals.clear(); // clear the list of fresh sources. this should be done whenever a global fitler changes
+
+      for (const listName of staleVals) {
+        if (listName in loadFunctions) {
+          console.log('reloading ' + listName);
+          loadFunctions[listName](); // reload any stale lists
+        }
+      }
     },
   },
   getters: {
