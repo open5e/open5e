@@ -12,6 +12,7 @@ export const useMainStore = defineStore({
       races: [],
       sections: [],
       backgrounds: [],
+      sourceSelections: [],
     };
   },
   actions: {

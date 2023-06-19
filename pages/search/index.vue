@@ -31,15 +31,15 @@
         >
           {{ result.name }}
         </nuxt-link>
+        <span> CR{{ result.challenge_rating }} </span
+        ><span class="title-case">{{ result.type }} | </span>
+        <em>{{ result.hit_points }}hp, AC {{ result.armor_class }}</em>
         <source-tag
           v-if="result.document_slug !== 'wotc-srd'"
           class="source-tag"
           :title="result.document_title"
           :text="result.document_slug"
         />
-        <span> CR{{ result.challenge_rating }} </span
-        ><span class="title-case">{{ result.type }} | </span>
-        <em>{{ result.hit_points }}hp, AC {{ result.armor_class }}</em>
         <div>
           <stat-bar
             class="top-border"
@@ -65,6 +65,12 @@
           {{ result.name }}
         </nuxt-link>
         {{ result.level }} {{ result.school }} spell | {{ result.dnd_class }}
+        <source-tag
+          v-if="result.document_slug !== 'wotc-srd'"
+          class="source-tag"
+          :title="result.document_title"
+          :text="result.document_slug"
+        />
         <p class="result-highlights" v-html="result.highlighted" />
       </div>
 
@@ -78,6 +84,12 @@
           {{ result.name }}
         </nuxt-link>
         {{ result.type }}, {{ result.rarity }}
+        <source-tag
+          v-if="result.document_slug !== 'wotc-srd'"
+          class="source-tag"
+          :title="result.document_title"
+          :text="result.document_slug"
+        />
         <p class="result-highlights" v-html="result.highlighted" />
       </div>
 
@@ -90,6 +102,12 @@
         >
           {{ result.name }}
         </nuxt-link>
+        <source-tag
+          v-if="result.document_slug !== 'wotc-srd'"
+          class="source-tag"
+          :title="result.document_title"
+          :text="result.document_slug"
+        />
         <p class="result-highlights" v-html="result.highlighted" />
       </div>
     </div>

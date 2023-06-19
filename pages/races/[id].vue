@@ -2,11 +2,6 @@
   <section v-show="loaded" class="container docs-container">
     <h1 class="flex items-center">
       {{ race.name }}
-      <source-tag
-        v-show="race.document__slug"
-        :title="race.document__title"
-        :text="race.document__slug"
-      />
     </h1>
 
     <md-viewer :text="race.desc" />
@@ -31,6 +26,7 @@
       <h3 class="flex items-center">
         {{ subrace.name }}
         <source-tag
+          class="ml-4"
           v-show="race.document__slug"
           :title="race.document__title"
           :text="race.document__slug"

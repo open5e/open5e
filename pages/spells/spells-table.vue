@@ -50,6 +50,7 @@
               >Level</sortable-table-header
             >
             <sortable-table-header
+              class="hide-mobile"
               :current-sort-dir="ariaSort.components"
               @sort="(dir) => sort('components', dir)"
               >Components</sortable-table-header
@@ -64,6 +65,7 @@
                 tag="a"
                 :params="{ id: spell.slug }"
                 :to="`/spells/${spell.slug}`"
+                class="mr-2"
               >
                 {{ spell.name }}
               </nuxt-link>
@@ -71,7 +73,7 @@
                 v-if="
                   spell.document__slug && spell.document__slug !== 'wotc-srd'
                 "
-                class=""
+                class="ml-0 hide-mobile"
                 :title="spell.document__title"
                 :text="spell.document__slug"
               />
