@@ -45,8 +45,8 @@ granted by your background:
       <th>Proficiency Bonus</th>
       <th>Features</th>
       <th>Cantrips Known</th>
-      <th>Spells </th>
-      <th>spell </th>
+      <th>Spells Known </th>
+      <th>Spell Slots </th>
       <th>Slot Level</th>
       <th>Invocations Known</th>
     </tr>
