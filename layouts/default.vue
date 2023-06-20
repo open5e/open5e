@@ -231,12 +231,7 @@
           <!-- Running a Game -->
           <li>
             <nuxt-link to="/running/"> Appendixes </nuxt-link>
-            <ul
-              v-show="
-                useRoute().path.indexOf('/running') != -1 ||
-                containsAnyString(sectionGroups.Characters)
-              "
-            >
+            <ul v-show="useRoute().path.indexOf('/running') != -1">
               <li v-for="section in sectionGroups.Rules" :key="section.slug">
                 <nuxt-link :to="`/running/${section.slug}`">
                   {{ section.name }}
