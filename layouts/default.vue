@@ -243,12 +243,24 @@
             <nuxt-link to="/api-docs"> API Docs </nuxt-link>
           </li>
         </ul>
-        <a class="sidebar-link" href="https://www.patreon.com/open5e"
-          ><img
-            src="/img/patron-badge.png"
-            class="sidebar-image"
-            alt="Become a patron! Keep Open5e ad free!"
-        /></a>
+        <div class="flex flex-col self-end mt-auto">
+          <a
+            class="w-full h-12 flex items-center bg-black cursor-pointer font-semibold"
+            @click="toggleErrorReport()"
+          >
+            <Icon
+              name="material-symbols:chat-error"
+              class="text-white/50 h-6 w-6 mx-4 my-2d"
+            ></Icon
+            >Report a Problem</a
+          >
+          <a class="sidebar-link" href="https://www.patreon.com/open5e"
+            ><img
+              src="/img/patron-badge.png"
+              class="sidebar-image"
+              alt="Become a patron! Keep Open5e ad free!"
+          /></a>
+        </div>
       </div>
       <div class="content-wrapper">
         <div class="mobile-header">
@@ -270,6 +282,10 @@
         </footer>
       </div>
     </div>
+    <ErrorReportDialog
+      :show="showErrorReport === true"
+      @close="showErrorReport = false"
+    ></ErrorReportDialog>
   </div>
 </template>
 
@@ -302,6 +318,7 @@ export default {
     return {
       searchText: this.$route.query.text,
       showSidebar: false,
+      showErrorReport: false,
     };
   },
   computed: {
@@ -388,6 +405,9 @@ export default {
     },
     hideSidebar: function () {
       this.showSidebar = false;
+    },
+    toggleErrorReport: function () {
+      this.showErrorReport = !this.showErrorReport;
     },
   },
 };
@@ -514,12 +534,6 @@ footer {
 
   a {
     color: white;
-  }
-
-  .sidebar-link {
-    display: inline-block;
-    align-self: flex-end;
-    margin-top: auto;
   }
 
   .sidebar-image {
