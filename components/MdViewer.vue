@@ -17,7 +17,10 @@ export default {
     VueShowdown: VueShowdown,
   },
   props: {
-    src: String,
+    src: {
+      type: String,
+      default: '',
+    },
     toc: {
       type: Boolean,
       default: true,
@@ -57,10 +60,8 @@ export default {
     scrollToRoute: function () {
       if (this.$route.hash) {
         this.$nextTick(() => {
-          console.log(this.$el);
           const hash = this.$route.hash;
           var container = this.$el.querySelector(hash);
-          console.log(container);
           container.scrollIntoView({ behavior: 'smooth' });
         });
       }

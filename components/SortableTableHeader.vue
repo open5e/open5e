@@ -29,7 +29,6 @@ export default {
   },
   methods: {
     onClick() {
-      console.log('new', this.isAscending ? 'descending' : 'ascending');
       this.$emit('sort', this.isAscending ? 'descending' : 'ascending');
     },
   },

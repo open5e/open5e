@@ -105,7 +105,7 @@ export default {
     this.filter = this.$route.params.charclass;
     return axios
       .get(
-        `${this.$nuxt.$config.public.apiUrl}/spells/?fields=slug,name,level_int,level,dnd_class,document__slug&limit=1000`
+        `${this.$nuxt.$config.public.apiUrl}/spells/?fields=slug,name,level_int,level,dnd_class,document__slug,document__title&limit=1000`
       ) //you will need to enable CORS to make this work
       .then((response) => {
         this.spells = response.data.results;

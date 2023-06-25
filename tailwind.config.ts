@@ -1,3 +1,8 @@
+let zIndex: { [key: number]: string } = {};
+for (let i = -1; i <= 100; i++) {
+  zIndex[i] = `${i}`;
+}
+
 module.exports = {
   content: [
     './app.vue',
@@ -24,6 +29,8 @@ module.exports = {
           950: '#220704',
         },
       },
+      //adds z-index from 1 to 100
+      zIndex: zIndex,
     },
   },
   plugins: [],
