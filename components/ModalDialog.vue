@@ -38,6 +38,7 @@
               <!-- Use 'actions' slot for modal buttons/etc -->
               <div
                 class="mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3"
+                :show="slots.actions"
               >
                 <slot name="actions" />
               </div>
@@ -67,6 +68,7 @@ export default {
 </script>
 
 <script setup>
+import { useSlots } from 'vue';
 import { ref } from 'vue';
 import {
   Dialog,
@@ -75,4 +77,6 @@ import {
   TransitionChild,
   TransitionRoot,
 } from '@headlessui/vue';
+
+const slots = useSlots();
 </script>

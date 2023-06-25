@@ -17,7 +17,9 @@
             />
           </span>
           <span v-else>Loading sources...</span>
-          <span v-show="isLoadingData">L</span>
+          <span v-show="isLoadingData"
+            ><Icon name="line-md:loading-twotone-loop"
+          /></span>
         </div>
         <div class="relative">
           <div

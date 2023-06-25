@@ -56,6 +56,7 @@ export const useMainStore = defineStore({
       sourceString: '',
       documents: [],
       freshVals: new Set(), // this tracks lists that have been loaded since the last set of global filters were changed
+      loadingCount: 0,
       isInitialized: false,
       queuedActions: [],
     };
@@ -81,6 +82,8 @@ export const useMainStore = defineStore({
         return false; // if the store is not initialized, queue the API call for later fetching and return
       }
 
+      this.loadingCount++;
+
       this.markFresh(listName); // pre-emptively mark the list as fresh so no additional calls are made for it
 
       const url = `${
@@ -93,10 +96,12 @@ export const useMainStore = defineStore({
         .get(url)
         .then((response) => {
           this[listName] = processData(response.data.results);
+          this.loadingCount--;
         })
         .catch((error) => {
           console.log(error);
           this.freshVals.delete(listName); // if the API call fails, mark the list as stale so it can be reloaded
+          this.loadingCount--;
         });
     },
 
@@ -269,6 +274,9 @@ export const useMainStore = defineStore({
     },
     allSourceSelections: (state) => {
       return state.sourceSelection;
+    },
+    isLoadingData: (state) => {
+      return state.loadingCount > 0;
     },
   },
 });
