@@ -57,25 +57,28 @@ export const useMainStore = defineStore({
       documents: [],
       freshVals: new Set(), // this tracks lists that have been loaded since the last set of global filters were changed
       isInitialized: false,
+      queuedActions: [],
     };
   },
   actions: {
-    async loadFromApi(
-      resource,
-      fields,
-      limit,
-      order,
-      listName,
-      processData = (data) => data,
-      shouldEnsureInitialization = true
-    ) {
+    async loadFromApi(params) {
+      let {
+        resource,
+        fields = null,
+        limit = null,
+        order = null,
+        listName,
+        processData = (data) => data,
+      } = params;
+
       if (this.freshVals.has(listName)) {
         // The list is fresh, no need to make the API call
         return;
       }
 
-      if (shouldEnsureInitialization && !this.isInitialized) {
-        await this.initializeSources();
+      if (!this.isInitialized) {
+        this.queuedActions.push(params);
+        return false; // if the store is not initialized, queue the API call for later fetching and return
       }
 
       this.markFresh(listName); // pre-emptively mark the list as fresh so no additional calls are made for it
@@ -98,49 +101,65 @@ export const useMainStore = defineStore({
     },
 
     async loadMonsters() {
-      await this.loadFromApi(
-        'monsters',
-        monsterFields,
-        5000,
-        monsterOrder,
-        'monstersList'
-      );
+      await this.loadFromApi({
+        resource: 'monsters',
+        fields: monsterFields,
+        limit: 5000,
+        order: monsterOrder,
+        listName: 'monstersList',
+      });
     },
 
     async loadSpells() {
-      await this.loadFromApi(
-        'spells',
-        spellFields,
-        5000,
-        spellOrder,
-        'spellsList'
-      );
+      await this.loadFromApi({
+        resource: 'spells',
+        fields: spellFields,
+        limit: 5000,
+        order: spellOrder,
+        listName: 'spellsList',
+      });
     },
 
     async loadMagicItems() {
-      await this.loadFromApi(
-        'magicitems',
-        magicItemFields,
-        5000,
-        magicItemOrder,
-        'magicItemsList'
-      );
+      await this.loadFromApi({
+        resource: 'magicitems',
+        fields: magicItemFields,
+        limit: 5000,
+        order: magicItemOrder,
+        listName: 'magicItemsList',
+      });
     },
 
     async loadBackgrounds() {
-      await this.loadFromApi('backgrounds', '', 1000, '', 'backgrounds');
+      await this.loadFromApi({
+        resource: 'backgrounds',
+        limit: 1000,
+        listName: 'backgrounds',
+      });
     },
 
     async loadClasses() {
-      await this.loadFromApi('classes', '', 1000, '', 'classes');
+      await this.loadFromApi({
+        resource: 'classes',
+        limit: 1000,
+        listName: 'classes',
+      });
     },
 
     async loadRaces() {
-      await this.loadFromApi('races', '', 1000, '', 'races');
+      await this.loadFromApi({
+        resource: 'races',
+        limit: 1000,
+        listName: 'races',
+      });
     },
 
     async loadSections() {
-      await this.loadFromApi('sections', '', 1000, '', 'sections');
+      await this.loadFromApi({
+        resource: 'sections',
+        limit: 1000,
+        listName: 'sections',
+      });
     },
 
     // documents is an exception, and should not respect source filters, so it has its own function
@@ -177,6 +196,7 @@ export const useMainStore = defineStore({
         : '';
       this.clearFresh(); // clear the list of fresh sources, since they are now stale
     },
+
     // load sources from the
     async initializeSources() {
       this.savedSources = this.loadSourcesFromLocal();
@@ -186,7 +206,17 @@ export const useMainStore = defineStore({
       }
       this.setSources(this.savedSources);
       this.isInitialized = true;
+      console.log(`running queued actions: ${this.queuedActions}`);
+      await this.processQueue();
     },
+
+    async processQueue() {
+      for (const action of this.queuedActions) {
+        await this.loadFromApi(action);
+      }
+      this.queuedActions = [];
+    },
+
     markFresh(val) {
       this.freshVals.add(val); // mark the list as fresh when it is fetched
     },
