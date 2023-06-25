@@ -1,5 +1,5 @@
 <template>
-  <section class="container docs-container">
+  <section class="docs-container container">
     <h1>{{ section.name }}</h1>
     <md-viewer :text="section.desc" />
     <h2 v-show="section.slug === 'backgrounds'">Character backgrounds</h2>
@@ -24,10 +24,10 @@
       <p>{{ background.feature_desc }}</p>
       <p class="text-sm italic">
         Source:
-        <a target="NONE" :href="background.document__url"
-          >{{ background.document__title }}
-          <Icon name="heroicons:arrow-top-right-on-square-20-solid"></Icon
-        ></a>
+        <a target="NONE" :href="background.document__url">
+          {{ background.document__title }}
+          <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
+        </a>
       </p>
     </article>
   </section>

@@ -1,20 +1,20 @@
 <template>
-  <section class="container docs-container">
+  <section class="docs-container container">
     <h1>Search results</h1>
     <hr />
-    <h3 v-if="loading" class="text-slate-400 font-sans font-bold">
+    <h3 v-if="loading" class="font-sans font-bold text-slate-400">
       Searching Open5e...
     </h3>
-    <h3 v-else-if="noValue" class="text-slate-400 font-sans font-bold">
-      <Icon name="majesticons:search-line" class="h-8 w-8 mr-2"></Icon>
+    <h3 v-else-if="noValue" class="font-sans font-bold text-slate-400">
+      <Icon name="majesticons:search-line" class="mr-2 h-8 w-8" />
       Search for something to see results...
     </h3>
     <h3
       v-else-if="orderedResults.length == 0"
-      class="text-slate-400 font-sans font-bold"
+      class="font-sans font-bold text-slate-400"
     >
-      <Icon name="majesticons:scroll-line" class="h-8 w-8 mr-2"></Icon> No
-      results
+      <Icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
+      No results
     </h3>
     <div
       v-for="result in orderedResults"

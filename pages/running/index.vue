@@ -1,5 +1,5 @@
 <template>
-  <section class="container docs-container">
+  <section class="docs-container container">
     <h1>Running a Game</h1>
     <div class="docs-toc">
       <span v-if="$route.hash">{{ $route.hash }}</span>

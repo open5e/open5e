@@ -1,5 +1,5 @@
 <template>
-  <section v-show="loaded" class="container docs-container">
+  <section v-show="loaded" class="docs-container container">
     <h1 class="flex items-center">
       {{ race.name }}
     </h1>
@@ -37,10 +37,10 @@
       <md-viewer :text="subrace.traits" />
       <p class="text-sm italic">
         Source:
-        <a target="NONE" :href="subrace.document__url"
-          >{{ subrace.document__title }}
-          <Icon name="heroicons:arrow-top-right-on-square-20-solid"></Icon
-        ></a>
+        <a target="NONE" :href="subrace.document__url">
+          {{ subrace.document__title }}
+          <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
+        </a>
       </p>
     </div>
   </section>

@@ -1,5 +1,5 @@
 <template>
-  <section class="container docs-container">
+  <section class="docs-container container">
     <p v-if="loading">Loading...</p>
     <div v-else>
       <h1>{{ spell.name }}</h1>

@@ -17,7 +17,10 @@ export default {
     VueShowdown: VueShowdown,
   },
   props: {
-    src: String,
+    src: {
+      type: String,
+      default: '',
+    },
     toc: {
       type: Boolean,
       default: true,

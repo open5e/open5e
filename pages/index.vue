@@ -1,5 +1,5 @@
 <template>
-  <section class="container docs-container">
+  <section class="docs-container container">
     <h1>Welcome to Open5e!</h1>
     <p>The best open-source resource for 5e content.</p>
 

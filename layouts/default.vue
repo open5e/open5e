@@ -1,34 +1,38 @@
 <template>
   <div class="layout">
-    <SourcesModal :show="showModal" @close="showModal = false"></SourcesModal>
+    <SourcesModal :show="showModal" @close="showModal = false" />
     <div class="app-wrapper" :class="{ 'show-sidebar': showSidebar }">
       <div class="sidebar">
         <nuxt-link to="/" class="logo"> Open5e </nuxt-link>
         <div
-          class="bg-red-600 px-4 py-2 cursor-pointer hover:bg-red-400"
+          class="cursor-pointer bg-red-600 px-4 py-2 hover:bg-red-400"
           @click="showModal = true"
         >
-          {{ sourceSelection.length }} of {{ documents.length }} sources
-          <Icon
-            name="heroicons:pencil-square"
-            class="w-5 h-5 text-white"
-            aria-hidden="true"
-          ></Icon>
+          <span v-if="documents.length">
+            {{ sourceSelection.length }} of {{ documents.length }} sources
+            <Icon
+              name="heroicons:pencil-square"
+              class="h-5 w-5 text-white"
+              aria-hidden="true"
+            />
+          </span>
+          <span v-else>Loading sources...</span>
+          <span v-show="isLoadingData">L</span>
         </div>
         <div class="relative">
           <div
-            class="absolute inset-y-0 right-0 flex items-center pr-2 cursor-pointer"
+            class="absolute inset-y-0 right-0 flex cursor-pointer items-center pr-2"
           >
             <Icon
               name="majesticons:search-line"
-              class="w-8 h-8 p-1 text-white bg-red-900/25 hover:bg-red-900/50 rounded-full"
+              class="h-8 w-8 rounded-full bg-red-900/25 p-1 text-white hover:bg-red-900/50"
               aria-hidden="true"
               @click="doSearch(searchText)"
             />
           </div>
           <input
             v-model="searchText"
-            class="px-4 py-4 w-full bg-red-700 placeholder-white/80 placeholder:font-semibold focus:bg-red-800 focus:border-0 focus:outline-none"
+            class="w-full bg-red-700 px-4 py-4 placeholder-white/80 placeholder:font-semibold focus:border-0 focus:bg-red-800 focus:outline-none"
             placeholder="Search Open5e"
             @keyup.enter="doSearch(searchText)"
           />
@@ -342,6 +346,9 @@ export default {
       let groupedSections = this.sections.groupBy('parent');
       return groupedSections;
     },
+    isLoadingData: function () {
+      return this.store.isLoadingData;
+    },
     charSections: function () {
       if (this.sectionGroups.hasOwnProperty('Characters')) {
         let results = this.sectionGroups['Characters'].concat(
@@ -381,7 +388,7 @@ export default {
     this.store.loadClasses();
     this.store.loadSections();
     this.store.loadRaces();
-    this.store.loadDocuments();
+    this.store.initializeSources();
   },
   methods: {
     doSearch: function (searchText) {
@@ -527,7 +534,7 @@ footer {
 }
 
 .sidebar {
-  @apply text-white bg-slate-700;
+  @apply bg-slate-700 text-white;
   width: $sidebar-width;
   min-width: $sidebar-width;
   overflow-y: auto;
@@ -590,7 +597,7 @@ footer {
     ul {
       @apply bg-slate-800/30 py-2;
       & > li > a {
-        @apply pl-8 pr-4 py-1;
+        @apply py-1 pl-8 pr-4;
       }
     }
   }

@@ -1,5 +1,5 @@
 <template>
-  <section class="container docs-container">
+  <section class="docs-container container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Monster List</h1>
       <filter-input

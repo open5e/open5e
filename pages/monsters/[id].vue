@@ -1,5 +1,5 @@
 <template>
-  <section class="container docs-container">
+  <section class="docs-container container">
     <p v-if="loading">Loading...</p>
     <div v-else>
       <h1>{{ monster.name }}</h1>
@@ -155,10 +155,10 @@
       </p>
       <p class="text-sm italic">
         Source:
-        <a target="NONE" :href="monster.document__url"
-          >{{ monster.document__title }}
-          <Icon name="heroicons:arrow-top-right-on-square-20-solid"></Icon
-        ></a>
+        <a target="NONE" :href="monster.document__url">
+          {{ monster.document__title }}
+          <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
+        </a>
       </p>
     </div>
   </section>

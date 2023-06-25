@@ -1,5 +1,5 @@
 <template>
-  <section class="container docs-container">
+  <section class="docs-container container">
     <p v-if="loading">Loading...</p>
     <div v-else>
       <h1 class="inline">
@@ -21,10 +21,10 @@
       <md-viewer :text="item.desc" />
       <p class="text-sm italic">
         Source:
-        <a target="NONE" :href="item.document__url"
-          >{{ item.document__title }}
-          <Icon name="heroicons:arrow-top-right-on-square-20-solid"></Icon
-        ></a>
+        <a target="NONE" :href="item.document__url">
+          {{ item.document__title }}
+          <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
+        </a>
       </p>
     </div>
   </section>

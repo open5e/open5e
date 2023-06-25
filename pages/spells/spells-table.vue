@@ -73,7 +73,7 @@
                 v-if="
                   spell.document__slug && spell.document__slug !== 'wotc-srd'
                 "
-                class="ml-0 hide-mobile"
+                class="hide-mobile ml-0"
                 :title="spell.document__title"
                 :text="spell.document__slug"
               />
@@ -87,13 +87,14 @@
               <span
                 v-for="(spellclass, index) in spell.spell_lists"
                 :key="spellclass"
-                ><span class="spell_lists" @click="filterByClass(spellclass)">{{
-                  capitalize(spellclass)
-                }}</span
-                ><span v-if="index + 1 < spell.spell_lists.length"
-                  >,
-                </span></span
               >
+                <!-- the item in the spell_list list -->
+                <span class="spell_lists" @click="filterByClass(spellclass)">{{
+                  capitalize(spellclass)
+                }}</span>
+                <!-- comma after any item that isn't the last -->
+                <span v-if="index + 1 < spell.spell_lists.length">, </span>
+              </span>
             </td>
           </tr>
         </tbody>
