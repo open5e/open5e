@@ -69,6 +69,7 @@ export const useMainStore = defineStore({
         limit = null,
         order = null,
         listName,
+        filters = {},
         processData = (data) => data,
       } = params;
 
@@ -88,7 +89,7 @@ export const useMainStore = defineStore({
 
       const url = `${
         useRuntimeConfig().public.apiUrl
-      }/${resource}/?fields=${fields}&limit=${limit}&ordering=${order}${
+      }/${resource}/?fields=${fields}&limit=${limit}&ordering=${order}&filter=${filters}${
         this.sourceString
       }`;
 
@@ -280,6 +281,9 @@ export const useMainStore = defineStore({
     },
     allSourceSelections: (state) => {
       return state.sourceSelection;
+    },
+    getSourceString: (state) => {
+      return state.sourceString;
     },
     isLoadingData: (state) => {
       return state.loadingCount > 0;

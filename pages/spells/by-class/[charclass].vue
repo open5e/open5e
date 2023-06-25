@@ -4,8 +4,14 @@
       <span class="title-case">{{ filter }} spells</span>
     </h1>
     <div :class="'three-column'">
-      <p v-if="!spellListLength">No results</p>
-      <ul v-for="level in spellsByLevel" :key="level.lvl" class="list--items">
+      <p v-if="!spellListLength && !isLoading">No results</p>
+      <p v-else-if="isLoading">Loading...</p>
+      <ul
+        v-for="level in spellsByLevel"
+        v-else
+        :key="level.lvl"
+        class="list--items"
+      >
         <h3>{{ level.lvlText }}</h3>
         <li v-for="spell in level.spells" :key="spell.name">
           <nuxt-link
@@ -28,6 +34,7 @@
 </template>
 
 <script>
+import { useMainStore } from '~/store';
 import axios from 'axios';
 import SourceTag from '~/components/SourceTag.vue';
 import * as _ from 'underscore';
@@ -39,6 +46,7 @@ export default {
     return {
       spells: [],
       filter: '',
+      isLoading: false,
       available_classes: [
         'Bard',
         'Cleric',
@@ -51,6 +59,12 @@ export default {
     };
   },
   computed: {
+    store() {
+      return useMainStore();
+    },
+    sourceString: function () {
+      return this.store.getSourceString;
+    },
     spellsByLevel: function () {
       let levels = [];
       for (let i = 0; i < this.filteredSpells.length; i++) {
@@ -101,19 +115,30 @@ export default {
       return this.filteredSpells.length;
     },
   },
+  watch: {
+    'store.getSourceString': function () {
+      this.getSpells();
+    },
+  },
   mounted() {
     this.filter = this.$route.params.charclass;
-    return axios
-      .get(
-        `${this.$nuxt.$config.public.apiUrl}/spells/?fields=slug,name,level_int,level,dnd_class,document__slug,document__title&limit=1000`
-      ) //you will need to enable CORS to make this work
-      .then((response) => {
-        this.spells = response.data.results;
-      });
+    this.getSpells();
   },
   methods: {
     updateFilter: function (val) {
       this.filter = val;
+    },
+    getSpells: async function () {
+      this.isLoading = true;
+      return axios
+        .get(
+          `${this.$nuxt.$config.public.apiUrl}/spells/?fields=slug,name,level_int,level,dnd_class,document__slug,document__title&limit=1000&document_slug__in=${this.sourceString}`
+        ) //you will need to enable CORS to make this work
+        .then((response) => {
+          this.spells = [];
+          this.spells = response.data.results;
+          this.isLoading = false;
+        });
     },
   },
 };
