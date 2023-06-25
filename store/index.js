@@ -176,7 +176,7 @@ export const useMainStore = defineStore({
       this.markFresh('documents'); // pre-emptively mark the list as fresh so no additional calls are made for it
       const url = `${useRuntimeConfig().public.apiUrl}/documents/`;
 
-      axios.get(url).then((response) => {
+      return axios.get(url).then((response) => {
         this.documents = response.data.results;
       });
     },
@@ -187,16 +187,18 @@ export const useMainStore = defineStore({
         return savedSources ? JSON.parse(savedSources) : [];
       }
     },
+
     saveSourcesToLocal(sources) {
       localStorage.setItem('sources', JSON.stringify(sources));
     },
+
     setSources(sources) {
       if (this.sourceSelection === sources) {
         return; // if the sources are the same, don't do anything
       }
       this.sourceSelection = sources;
       this.saveSourcesToLocal(sources); // save to localStorage
-      this.sourceString = sources
+      this.sourceString = !!sources
         ? `&document__slug__in=${this.sourceSelection.join(',')}` // if sources are selected, construct a query string segment for them
         : '';
       this.clearFresh(); // clear the list of fresh sources, since they are now stale
@@ -205,10 +207,14 @@ export const useMainStore = defineStore({
     // load sources from the
     async initializeSources() {
       this.savedSources = this.loadSourcesFromLocal();
-      await this.loadDocuments();
-      if (this.savedSources.length < 1) {
-        this.savedSources = this.documents.map((doc) => doc.slug);
-      }
+      await this.loadDocuments().then(() => {
+        console.log(
+          `saved sources: ${this.savedSources.length}, documents: ${this.documents.length}`
+        );
+        if (!this.savedSources.length) {
+          this.savedSources = this.documents.map((doc) => doc.slug);
+        }
+      });
       this.setSources(this.savedSources);
       this.isInitialized = true;
       console.log(`running queued actions: ${this.queuedActions}`);
