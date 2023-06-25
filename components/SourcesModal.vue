@@ -109,7 +109,6 @@ export default {
   },
   created() {
     this.searchText = this.$route.query.text;
-    this.store.loadDocuments();
     this.selectedSources = this.store.sourceSelection;
   },
   methods: {

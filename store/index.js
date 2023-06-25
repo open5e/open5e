@@ -51,6 +51,7 @@ export const useMainStore = defineStore({
       races: [],
       sections: [],
       backgrounds: [],
+      savedSources: [],
       sourceSelection: [],
       sourceString: '',
       documents: [],
@@ -65,29 +66,39 @@ export const useMainStore = defineStore({
       limit,
       order,
       listName,
-      processData = (data) => data
+      processData = (data) => data,
+      shouldEnsureInitialization = true
     ) {
       if (this.freshVals.has(listName)) {
         // The list is fresh, no need to make the API call
         return;
       }
-      if (!this.isInitialized) {
+
+      if (shouldEnsureInitialization && !this.isInitialized) {
         await this.initializeSources();
       }
+
+      this.markFresh(listName); // pre-emptively mark the list as fresh so no additional calls are made for it
+
       const url = `${
         useRuntimeConfig().public.apiUrl
       }/${resource}/?fields=${fields}&limit=${limit}&ordering=${order}${
         this.sourceString
       }`;
 
-      axios.get(url).then((response) => {
-        this[listName] = processData(response.data.results);
-        this.markFresh(listName); // mark the list as fresh
-      });
+      axios
+        .get(url)
+        .then((response) => {
+          this[listName] = processData(response.data.results);
+        })
+        .catch((error) => {
+          console.log(error);
+          this.freshVals.delete(listName); // if the API call fails, mark the list as stale so it can be reloaded
+        });
     },
 
-    loadMonsters() {
-      this.loadFromApi(
+    async loadMonsters() {
+      await this.loadFromApi(
         'monsters',
         monsterFields,
         5000,
@@ -96,12 +107,18 @@ export const useMainStore = defineStore({
       );
     },
 
-    loadSpells() {
-      this.loadFromApi('spells', spellFields, 5000, spellOrder, 'spellsList');
+    async loadSpells() {
+      await this.loadFromApi(
+        'spells',
+        spellFields,
+        5000,
+        spellOrder,
+        'spellsList'
+      );
     },
 
-    loadMagicItems() {
-      this.loadFromApi(
+    async loadMagicItems() {
+      await this.loadFromApi(
         'magicitems',
         magicItemFields,
         5000,
@@ -110,25 +127,36 @@ export const useMainStore = defineStore({
       );
     },
 
-    loadBackgrounds() {
-      this.loadFromApi('backgrounds', '', 1000, '', 'backgrounds');
+    async loadBackgrounds() {
+      await this.loadFromApi('backgrounds', '', 1000, '', 'backgrounds');
     },
 
-    loadClasses() {
-      this.loadFromApi('classes', '', 1000, '', 'classes');
+    async loadClasses() {
+      await this.loadFromApi('classes', '', 1000, '', 'classes');
     },
 
-    loadRaces() {
-      this.loadFromApi('races', '', 1000, '', 'races');
+    async loadRaces() {
+      await this.loadFromApi('races', '', 1000, '', 'races');
     },
 
-    loadSections() {
-      this.loadFromApi('sections', '', 1000, '', 'sections');
+    async loadSections() {
+      await this.loadFromApi('sections', '', 1000, '', 'sections');
     },
 
-    loadDocuments() {
-      this.loadFromApi('documents', '', 1000, '', 'documents');
+    // documents is an exception, and should not respect source filters, so it has its own function
+    async loadDocuments() {
+      if (this.freshVals.has('documents')) {
+        // The list is fresh, no need to make the API call
+        return;
+      }
+      this.markFresh('documents'); // pre-emptively mark the list as fresh so no additional calls are made for it
+      const url = `${useRuntimeConfig().public.apiUrl}/documents/`;
+
+      axios.get(url).then((response) => {
+        this.documents = response.data.results;
+      });
     },
+
     loadSourcesFromLocal() {
       if (process.client) {
         const savedSources = localStorage.getItem('sources');
@@ -151,15 +179,12 @@ export const useMainStore = defineStore({
     },
     // load sources from the
     async initializeSources() {
-      const savedSources = this.loadSourcesFromLocal();
-      if (savedSources.length > 0) {
-        this.setSources(savedSources);
-      } else {
-        await this.loadDocuments();
-        if (this.documents && this.documents.length > 0) {
-          this.setSources(this.documents.map((doc) => doc.slug));
-        }
+      this.savedSources = this.loadSourcesFromLocal();
+      await this.loadDocuments();
+      if (this.savedSources.length < 1) {
+        this.savedSources = this.documents.map((doc) => doc.slug);
       }
+      this.setSources(this.savedSources);
       this.isInitialized = true;
     },
     markFresh(val) {
