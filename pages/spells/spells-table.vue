@@ -66,6 +66,7 @@
                 :params="{ id: spell.slug }"
                 :to="`/spells/${spell.slug}`"
                 class="mr-2"
+                :prefetch="false"
               >
                 {{ spell.name }}
               </nuxt-link>

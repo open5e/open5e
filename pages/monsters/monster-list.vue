@@ -70,6 +70,7 @@
                 tag="a"
                 :params="{ id: monster.slug }"
                 :to="`/monsters/${monster.slug}`"
+                :prefetch="false"
               >
                 {{ monster.name }}
               </nuxt-link>

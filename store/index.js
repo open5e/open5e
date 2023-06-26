@@ -88,7 +88,7 @@ export const useMainStore = defineStore({
       this.markFresh(listName); // pre-emptively mark the list as fresh so no additional calls are made for it
 
       const url = `${useRuntimeConfig().public.apiUrl}/${resource}/?${
-        fields ? `${fields}&` : '&'
+        fields ? `fields=${fields}&` : '&'
       }limit=${limit}&ordering=${order}&filter=${filters}${this.sourceString}`;
 
       axios
