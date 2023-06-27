@@ -104,6 +104,13 @@ export const useMainStore = defineStore({
     allSections: (state) => {
       return state.sections;
     },
+    allCharacterSections: (state) => {
+      return state.sections.filter(
+        (section) =>
+          section.parent === 'Characters' ||
+          section.parent === 'Character Advancement'
+      );
+    },
     allBackgrounds: (state) => {
       return state.backgrounds;
     },

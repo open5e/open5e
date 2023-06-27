@@ -20,7 +20,7 @@
               "
             >
               <li v-for="section in charSections" :key="section.slug">
-                <nuxt-link :to="`/sections/${section.slug}`">
+                <nuxt-link :to="`/characters/${section.slug}`">
                   {{ section.name }}
                 </nuxt-link>
               </li>
