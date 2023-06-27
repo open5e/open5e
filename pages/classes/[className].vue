@@ -86,6 +86,9 @@ export default {
 
   methods: {
     fetchClassData() {
+      if (!this.$route.params.section) {
+        return;
+      }
       this.loading = true;
       const url = `${useRuntimeConfig().public.apiUrl}/classes/`;
       axios.get(url + this.$route.params.className).then((res) => {

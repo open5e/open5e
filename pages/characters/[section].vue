@@ -30,6 +30,9 @@ export default {
   },
   methods: {
     fetchSectionData() {
+      if (!this.$route.params.section) {
+        return;
+      }
       this.loading = true;
       const url = `${this.$nuxt.$config.public.apiUrl}sections/${this.$route.params.section}`;
       axios.get(url).then((res) => {
