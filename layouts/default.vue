@@ -178,41 +178,10 @@
               Gameplay Mechanics
             </nuxt-link>
             <ul v-show="useRoute().path.indexOf('/gameplay-mechanics/') !== -1">
-              <li>
-                <nuxt-link to="/gameplay-mechanics/ability-scores">
-                  Ability Scores
+              <li v-for="section in mechanics" :key="section.slug">
+                <nuxt-link :to="`/gameplay-mechanics/${section.slug}`">
+                  {{ section.name }}
                 </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gameplay-mechanics/between-adventures">
-                  Between Adventures
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gameplay-mechanics/conditions">
-                  Conditions
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gameplay-mechanics/environment">
-                  Environment
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gameplay-mechanics/movement">
-                  Movement
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gameplay-mechanics/rest"> Rest </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gameplay-mechanics/saving-throws">
-                  Saving Throws
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gameplay-mechanics/time"> Time </nuxt-link>
               </li>
             </ul>
           </li>
@@ -328,6 +297,10 @@ export default {
         return [];
       }
     },
+    mechanics: function () {
+      return this.sectionGroups['Gameplay Mechanics'] ?? [];
+    },
+
     crumbs() {
       let crumbs = [];
       this.$route.matched.forEach((item) => {
