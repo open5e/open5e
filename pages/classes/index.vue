@@ -2,7 +2,7 @@
   <section class="container docs-container">
     <h1>Classes</h1>
     <div class="docs-toc">
-      <ul>
+      <ul v-if="classes">
         <li v-for="charClass in classes" :key="charClass.slug">
           <nuxt-link :to="`/classes/${charClass.slug}`">
             {{ charClass.name }}

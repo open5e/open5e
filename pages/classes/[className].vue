@@ -1,5 +1,5 @@
 <template>
-  <main v-if="!loading" class="container docs-container">
+  <main v-if="classDetails" class="container docs-container">
     <h1>{{ className }}</h1>
 
     <section>
@@ -86,11 +86,11 @@ export default {
 
   methods: {
     fetchClassData() {
-      if (!this.$route.params.section) {
+      if (!this.$route.params.className) {
         return;
       }
       this.loading = true;
-      const url = `${useRuntimeConfig().public.apiUrl}/classes/`;
+      const url = `${useRuntimeConfig().public.apiUrl}classes/`;
       axios.get(url + this.$route.params.className).then((res) => {
         this.classDetails = res.data;
         this.className = res.data.name;
