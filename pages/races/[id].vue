@@ -40,7 +40,7 @@ export default {
   },
   mounted() {
     return axios
-      .get(`${useRuntimeConfig().public.apiUrl}/races/${this.$route.params.id}`) //you will need to enable CORS to make this work
+      .get(`${useRuntimeConfig().public.apiUrl}races/${this.$route.params.id}`) //you will need to enable CORS to make this work
       .then((response) => {
         this.race = response.data;
         this.loaded = true;
