@@ -48,12 +48,13 @@
     <section>
       <h2>Class Abilities</h2>
       <md-viewer :text="classDetails.desc" />
-    </section>
 
-    <section>
-      <h2>{{ className }} {{ classDetails.subtypes_name }}</h2>
       <ul v-for="archetype in classDetails.archetypes" :key="archetype">
-        <li>{{ archetype.name }}</li>
+        <li>
+          <nuxt-link :to="`${classDetails.slug}/${archetype.slug}`" tag="a">
+            {{ archetype.name }}</nuxt-link
+          >
+        </li>
       </ul>
     </section>
   </main>
@@ -71,6 +72,7 @@ export default {
     return {
       className: '',
       classDetails: null,
+      url: '',
     };
   },
 
@@ -78,7 +80,6 @@ export default {
     const url = `${useRuntimeConfig().public.apiUrl}classes/${
       this.$route.params.className
     }`;
-    console.log(url);
     //you will need to enable CORS to make this work
     return axios.get(url).then((response) => {
       this.classDetails = response.data;

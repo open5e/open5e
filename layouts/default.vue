@@ -31,7 +31,14 @@
             <nuxt-link to="/classes"> Classes </nuxt-link>
             <ul v-show="useRoute().path.indexOf('/classes') != -1">
               <li v-for="charClass in classes" :key="charClass.slug">
-                <nuxt-link :to="`/classes/${charClass.slug}`">
+                <nuxt-link
+                  :class="{
+                    'router-link-active':
+                      useRoute().path.indexOf(`/classes/${charClass.slug}`) ===
+                      0,
+                  }"
+                  :to="`/classes/${charClass.slug}`"
+                >
                   {{ charClass.name }}
                 </nuxt-link>
               </li>
