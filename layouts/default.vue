@@ -62,15 +62,16 @@
               </li>
             </ul>
           </li>
+
           <!-- Equipment -->
           <li>
-            <nuxt-link to="/sections/equipment/"> Equipment </nuxt-link>
-            <ul v-show="containsAnyString(sectionGroups.Equipment)">
+            <nuxt-link to="/equipment/"> Equipment </nuxt-link>
+            <ul v-show="useRoute().path.indexOf('/equipment/') != -1">
               <li
                 v-for="section in sectionGroups.Equipment"
                 :key="section.slug"
               >
-                <nuxt-link :to="`/sections/${section.slug}`">
+                <nuxt-link :to="`/equipment/${section.slug}`">
                   {{ section.name }}
                 </nuxt-link>
               </li>
