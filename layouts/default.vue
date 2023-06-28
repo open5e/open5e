@@ -51,39 +51,13 @@
           <!-- Combat -->
           <li>
             <nuxt-link to="/combat/"> Combat </nuxt-link>
-            <ul v-show="useRoute().path.indexOf('/combat/') != -1">
-              <li>
-                <nuxt-link to="/combat/actions"> Actions in Combat </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/combat/attacking"> Attacking </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/combat/combat-sequence">
-                  Combat Sequence
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/combat/cover"> Cover </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/combat/damage-and-healing">
-                  Damage &amp; Healing
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/combat/mounted-combat">
-                  Mounted combat
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/combat/movement-in-combat">
-                  Movement in Combat
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/combat/underwater-combat">
-                  Underwater Combat
+            <ul
+              v-if="combatSections"
+              v-show="useRoute().path.indexOf('/combat/') != -1"
+            >
+              <li v-for="section in sectionGroups.Combat" :key="section.slug">
+                <nuxt-link :to="`/combat/${section.slug}`">
+                  {{ section.name }}
                 </nuxt-link>
               </li>
             </ul>
@@ -178,7 +152,7 @@
               Gameplay Mechanics
             </nuxt-link>
             <ul v-show="useRoute().path.indexOf('/gameplay-mechanics/') !== -1">
-              <li v-for="section in mechanics" :key="section.slug">
+              <li v-for="section in mechanicsSections" :key="section.slug">
                 <nuxt-link :to="`/gameplay-mechanics/${section.slug}`">
                   {{ section.name }}
                 </nuxt-link>
@@ -297,7 +271,11 @@ export default {
         return [];
       }
     },
-    mechanics: function () {
+    combatSections: function () {
+      return this.sectionGroups['Combat'] ?? [];
+    },
+
+    mechanicsSections: function () {
       return this.sectionGroups['Gameplay Mechanics'] ?? [];
     },
 

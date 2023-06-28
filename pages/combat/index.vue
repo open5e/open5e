@@ -2,41 +2,10 @@
   <section class="container docs-container">
     <h1>Combat</h1>
     <div class="docs-toc">
-      <ul>
-        <li>
-          <nuxt-link tag="a" to="/combat/actions">
-            Actions in Combat
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link tag="a" to="/combat/attacking"> Attacking </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link tag="a" to="/combat/combat-sequence">
-            Combat Sequence
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link tag="a" to="/combat/cover"> Cover </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link tag="a" to="/combat/damage-and-healing">
-            Damage &amp; Healing
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link tag="a" to="/combat/mounted-combat">
-            Mounted combat
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link tag="a" to="/combat/movement-in-combat">
-            Movement in Combat
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link tag="a" to="/combat/underwater-combat">
-            Underwater Combat
+      <ul v-if="combatSections">
+        <li v-for="section in combatSections" :key="section.slug">
+          <nuxt-link tag="a" :to="`/combat/${section.slug}`">
+            {{ section.name }}
           </nuxt-link>
         </li>
       </ul>
@@ -44,6 +13,20 @@
   </section>
 </template>
 
-<script></script>
+<script>
+import { useMainStore } from '~/store';
+
+export default {
+  setup() {
+    const store = useMainStore();
+    return { store };
+  },
+  computed: {
+    combatSections: function () {
+      return this.store.allCombatSections;
+    },
+  },
+};
+</script>
 
 <style></style>

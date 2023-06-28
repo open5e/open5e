@@ -116,6 +116,9 @@ export const useMainStore = defineStore({
         (section) => section.parent === 'Gameplay Mechanics'
       );
     },
+    allCombatSections: (state) => {
+      return state.sections.filter((section) => section.parent === 'Combat');
+    },
     allBackgrounds: (state) => {
       return state.backgrounds;
     },
