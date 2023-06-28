@@ -23,7 +23,7 @@ export default {
   mounted() {
     return axios
       .get(
-        `${this.$nuxt.$config.public.apiUrl}/sections/${this.$route.params.id}`
+        `${this.$nuxt.$config.public.apiUrl}sections/${this.$route.params.id}`
       ) //you will need to enable CORS to make this work
       .then((response) => {
         this.section = response.data;

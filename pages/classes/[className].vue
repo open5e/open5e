@@ -69,34 +69,21 @@ export default {
   components: { MdViewer },
   data() {
     return {
-      loading: false,
       className: '',
       classDetails: null,
     };
   },
 
-  created() {
-    // Re-fetch class data when the url params change
-    this.$watch(
-      () => this.$route.params,
-      () => this.fetchClassData(),
-      { immediate: true }
-    );
-  },
-
-  methods: {
-    fetchClassData() {
-      if (!this.$route.params.className) {
-        return;
-      }
-      this.loading = true;
-      const url = `${useRuntimeConfig().public.apiUrl}classes/`;
-      axios.get(url + this.$route.params.className).then((res) => {
-        this.classDetails = res.data;
-        this.className = res.data.name;
-        this.loading = false;
-      });
-    },
+  mounted() {
+    const url = `${useRuntimeConfig().public.apiUrl}classes/${
+      this.$route.params.className
+    }`;
+    console.log(url);
+    //you will need to enable CORS to make this work
+    return axios.get(url).then((response) => {
+      this.classDetails = response.data;
+      this.className = response.data.name;
+    });
   },
 };
 </script>
