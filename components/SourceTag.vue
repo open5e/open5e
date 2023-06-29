@@ -11,16 +11,25 @@
 <script>
 export default {
   props: {
-    text: String,
-    title: String,
+    text: {
+      default: '',
+      type: String,
+    },
+    title: {
+      default: '',
+      type: String,
+    },
     textColor: {
       default: '#ffffff',
+      type: String,
     },
     background: {
       default: '#767676',
+      type: String,
     },
     border: {
       default: '1px solid #999999',
+      type: String,
     },
   },
 };
@@ -37,6 +46,7 @@ export default {
   margin-right: 3px;
   text-transform: uppercase;
   position: relative;
+  height: min-content;
   top: -1px;
 }
 </style>
