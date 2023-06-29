@@ -48,12 +48,14 @@
     <section>
       <h2>Class Abilities</h2>
       <md-viewer :text="classDetails.desc" />
-
+    </section>
+    <section>
+      <h2>{{ classDetails.subtypes_name }}</h2>
       <ul v-for="archetype in classDetails.archetypes" :key="archetype">
         <li>
           <nuxt-link :to="`${classDetails.slug}/${archetype.slug}`" tag="a">
-            {{ archetype.name }}</nuxt-link
-          >
+            {{ archetype.name }}
+          </nuxt-link>
         </li>
       </ul>
     </section>

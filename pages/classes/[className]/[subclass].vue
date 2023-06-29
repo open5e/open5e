@@ -1,6 +1,13 @@
 <template>
   <main v-if="subclass" class="container docs-container">
-    <h1>{{ subclass.name }}</h1>
+    <h1>
+      {{ subclass.name }}
+      <source-tag
+        :title="subclass.document__title"
+        :text="subclass.document__slug"
+      />
+    </h1>
+
     <section>
       <md-viewer :text="subclass.desc" />
     </section>
@@ -9,11 +16,12 @@
 </template>
 
 <script>
-import MdViewer from '~/components/MdViewer';
+import MdViewer from '~/components/MdViewer.vue';
+import SourceTag from '~/components/SourceTag.vue';
 import axios from 'axios';
 
 export default {
-  components: { MdViewer },
+  components: { MdViewer, SourceTag },
   data() {
     return {
       subclass: null,
