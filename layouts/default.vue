@@ -169,13 +169,8 @@
           </li>
           <!-- Running a Game -->
           <li>
-            <nuxt-link to="/running/"> Appendixes </nuxt-link>
-            <ul
-              v-show="
-                useRoute().path.indexOf('/running') != -1 ||
-                containsAnyString(sectionGroups.Characters)
-              "
-            >
+            <nuxt-link to="/running/">Running a Game</nuxt-link>
+            <ul v-show="useRoute().path.indexOf('/running') != -1">
               <li v-for="section in sectionGroups.Rules" :key="section.slug">
                 <nuxt-link :to="`/running/${section.slug}`">
                   {{ section.name }}
@@ -187,12 +182,13 @@
             <nuxt-link to="/api-docs"> API Docs </nuxt-link>
           </li>
         </ul>
-        <a class="sidebar-link" href="https://www.patreon.com/open5e"
-          ><img
+        <a class="sidebar-link" href="https://www.patreon.com/open5e">
+          <img
             src="/img/patron-badge.png"
             class="sidebar-image"
             alt="Become a patron! Keep Open5e ad free!"
-        /></a>
+          />
+        </a>
       </div>
       <div class="content-wrapper">
         <div class="mobile-header">
@@ -262,22 +258,23 @@ export default {
       return groupedSections;
     },
     charSections: function () {
-      if (this.sectionGroups.hasOwnProperty('Characters')) {
-        let results = this.sectionGroups['Characters'].concat(
-          this.sectionGroups['Character Advancement']
-        );
-        return results.sort(function (a, b) {
-          if (a.slug < b.slug) {
-            return -1;
-          } else if (a.slug > b.slug) {
-            return 1;
-          } else {
-            return 0;
-          }
-        });
-      } else {
+      if (!this.sectionGroups.hasOwnProperty('Characters')) {
         return [];
       }
+
+      let results = this.sectionGroups['Characters'].concat(
+        this.sectionGroups['Character Advancement']
+      );
+
+      return results.sort(function (a, b) {
+        if (a.slug < b.slug) {
+          return -1;
+        } else if (a.slug > b.slug) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
     },
     combatSections: function () {
       return this.sectionGroups['Combat'] ?? [];
