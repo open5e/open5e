@@ -160,6 +160,17 @@
           <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
         </a>
       </p>
+      <p class="text-sm italic">
+        Compact Statblock:
+        <nuxt-link
+          tag="a"
+          :params="{ id: monster.slug }"
+          :to="`/monsters/compact/${monster.slug}`"
+          :prefetch="false"
+        >
+          {{ monster.name }}
+        </nuxt-link>
+      </p>
     </div>
   </section>
 </template>

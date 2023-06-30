@@ -4,11 +4,11 @@
 
 a {
   text-decoration: none;
-  @apply text-blue-700 hover:underline visited:text-purple-600;
+  @apply text-blue-700 visited:text-purple-600 hover:underline;
 }
 
 .side-note {
-  @apply m-2 p-2 w-80 right-3 sticky float-right border border-blue-600 bg-blue-100 text-blue-900;
+  @apply sticky right-3 float-right m-2 w-80 border border-blue-600 bg-blue-100 p-2 text-blue-900;
   h3 {
     @apply mt-0;
   }
@@ -114,4 +114,14 @@ html {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.action-block {
+  .inline {
+    display: inline;
+
+    :deep(p:first-child) {
+      display: inline;
+    }
+  }
 }
