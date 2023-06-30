@@ -1,5 +1,5 @@
 <template>
-  <section v-show="loaded" class="container docs-container">
+  <section v-show="loaded" class="docs-container container">
     <h1>{{ race.name }}</h1>
     <md-viewer :text="race.desc" />
     <md-viewer :text="race['asi_desc']" />
@@ -40,7 +40,7 @@ export default {
   },
   mounted() {
     return axios
-      .get(`${useRuntimeConfig().public.apiUrl}races/${this.$route.params.id}`) //you will need to enable CORS to make this work
+      .get(`${useRuntimeConfig().public.apiUrl}/races/${this.$route.params.id}`) //you will need to enable CORS to make this work
       .then((response) => {
         this.race = response.data;
         this.loaded = true;

@@ -1,5 +1,5 @@
 <template>
-  <main v-if="classDetails" class="container docs-container">
+  <main v-if="classDetails" class="docs-container container">
     <h1>{{ className }}</h1>
 
     <section>
@@ -79,7 +79,7 @@ export default {
   },
 
   mounted() {
-    const url = `${useRuntimeConfig().public.apiUrl}classes/${
+    const url = `${useRuntimeConfig().public.apiUrl}/classes/${
       this.$route.params.className
     }`;
     //you will need to enable CORS to make this work

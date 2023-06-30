@@ -1,5 +1,5 @@
 <template>
-  <main v-if="section" class="container docs-container">
+  <main v-if="section" class="docs-container container">
     <h1>{{ title }}</h1>
     <section>
       <md-viewer :text="section.desc" />
@@ -21,7 +21,7 @@ export default {
   },
 
   mounted() {
-    const url = `${useRuntimeConfig().public.apiUrl}sections/${
+    const url = `${useRuntimeConfig().public.apiUrl}/sections/${
       this.$route.params.section
     }`;
 
