@@ -1,5 +1,5 @@
 <template>
-  <section class="container docs-container">
+  <section class="docs-container container">
     <h1>{{ section.name }}</h1>
     <md-viewer :text="section.desc" />
   </section>
@@ -23,7 +23,7 @@ export default {
   mounted() {
     return axios
       .get(
-        `${this.$nuxt.$config.public.apiUrl}sections/${this.$route.params.id}`
+        `${this.$nuxt.$config.public.apiUrl}/sections/${this.$route.params.id}`
       ) //you will need to enable CORS to make this work
       .then((response) => {
         this.section = response.data;
