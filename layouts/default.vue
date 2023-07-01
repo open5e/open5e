@@ -64,8 +64,20 @@
             </nuxt-link>
           </li>
 
-          <!-- Combat -->
           <li>
+            <nuxt-link
+              to="/feats"
+              tag="a"
+              :class="{
+                'router-link-active': useRoute().path.indexOf('/feats') === 0,
+              }"
+            >
+              Feats
+            </nuxt-link>
+          </li>
+
+          <!-- Combat -->
+          <li v-if="combatSections.length > 0">
             <nuxt-link to="/combat/"> Combat </nuxt-link>
             <ul
               v-if="combatSections"
