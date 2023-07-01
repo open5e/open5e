@@ -13,12 +13,7 @@
           <!-- Characters -->
           <li>
             <nuxt-link to="/characters/"> Characters </nuxt-link>
-            <ul
-              v-show="
-                useRoute().path.indexOf('/characters') != -1 ||
-                containsAnyString(charSections)
-              "
-            >
+            <ul v-show="useRoute().path.indexOf('/characters') != -1">
               <li v-for="section in charSections" :key="section.slug">
                 <nuxt-link :to="`/characters/${section.slug}`">
                   {{ section.name }}
@@ -55,6 +50,20 @@
               </li>
             </ul>
           </li>
+
+          <!-- Backgrounds -->
+          <li>
+            <nuxt-link
+              to="/backgrounds"
+              :class="{
+                'router-link-active':
+                  useRoute().path.indexOf('/backgrounds') === 0,
+              }"
+            >
+              Backgrounds
+            </nuxt-link>
+          </li>
+
           <!-- Combat -->
           <li>
             <nuxt-link to="/combat/"> Combat </nuxt-link>
