@@ -12,7 +12,7 @@ module.exports = {
     'prettier',
   ],
   // required to lint *.vue files
-  plugins: ['vue'],
+  plugins: ['vue', '@typescript-eslint'],
   // add your custom rules here
   rules: {
     eqeqeq: 'off',

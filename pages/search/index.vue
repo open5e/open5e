@@ -1,12 +1,24 @@
 <template>
-  <section class="container docs-container">
+  <section class="docs-container container">
     <h1>Search results</h1>
     <hr />
-    <p v-if="loading">Searching Open5e...</p>
-    <p v-if="!loading && results.length == 0">No results</p>
+    <h3 v-if="loading" class="font-sans font-bold text-slate-400">
+      Searching Open5e...
+    </h3>
+    <h3 v-else-if="noValue" class="font-sans font-bold text-slate-400">
+      <Icon name="majesticons:search-line" class="mr-2 h-8 w-8" />
+      Search for something to see results...
+    </h3>
+    <h3
+      v-else-if="orderedResults.length == 0"
+      class="font-sans font-bold text-slate-400"
+    >
+      <Icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
+      No results
+    </h3>
     <div
       v-for="result in orderedResults"
-      v-show="!loading"
+      v-show="!loading && !noValue"
       :key="result.slug"
       class="search-result"
     >
@@ -19,15 +31,15 @@
         >
           {{ result.name }}
         </nuxt-link>
+        <span> CR{{ result.challenge_rating }} </span
+        ><span class="title-case">{{ result.type }} | </span>
+        <em>{{ result.hit_points }}hp, AC {{ result.armor_class }}</em>
         <source-tag
           v-if="result.document_slug !== 'wotc-srd'"
           class="source-tag"
           :title="result.document_title"
           :text="result.document_slug"
         />
-        <span> CR{{ result.challenge_rating }} </span
-        ><span class="title-case">{{ result.type }} | </span>
-        <em>{{ result.hit_points }}hp, AC {{ result.armor_class }}</em>
         <div>
           <stat-bar
             class="top-border"
@@ -53,6 +65,12 @@
           {{ result.name }}
         </nuxt-link>
         {{ result.level }} {{ result.school }} spell | {{ result.dnd_class }}
+        <source-tag
+          v-if="result.document_slug !== 'wotc-srd'"
+          class="source-tag"
+          :title="result.document_title"
+          :text="result.document_slug"
+        />
         <p class="result-highlights" v-html="result.highlighted" />
       </div>
 
@@ -66,6 +84,12 @@
           {{ result.name }}
         </nuxt-link>
         {{ result.type }}, {{ result.rarity }}
+        <source-tag
+          v-if="result.document_slug !== 'wotc-srd'"
+          class="source-tag"
+          :title="result.document_title"
+          :text="result.document_slug"
+        />
         <p class="result-highlights" v-html="result.highlighted" />
       </div>
 
@@ -78,10 +102,15 @@
         >
           {{ result.name }}
         </nuxt-link>
+        <source-tag
+          v-if="result.document_slug !== 'wotc-srd'"
+          class="source-tag"
+          :title="result.document_title"
+          :text="result.document_slug"
+        />
         <p class="result-highlights" v-html="result.highlighted" />
       </div>
     </div>
-    <p v-if="!loading && results.length > 0">No more results</p>
   </section>
 </template>
 
@@ -106,6 +135,7 @@ export default {
       results: [],
       text: this.$route.query.text,
       loading: true,
+      noValue: true,
     };
   },
   computed: {
@@ -147,15 +177,22 @@ export default {
   },
   methods: {
     getSearchResults: function () {
-      this.loading = true;
-      return axios
-        .get(
-          `${this.$nuxt.$config.public.apiUrl}/search?text=${this.$route.query.text}`
-        ) //you will need to enable CORS to make this work
-        .then((response) => {
-          this.results = response.data.results;
-          this.loading = false;
-        });
+      if (this.$route.query.text == '') {
+        this.noValue = true;
+        this.loading = false;
+        return;
+      } else {
+        this.loading = true;
+        this.noValue = false;
+        return axios
+          .get(
+            `${this.$nuxt.$config.public.apiUrl}/search/?text=${this.$route.query.text}`
+          ) //you will need to enable CORS to make this work
+          .then((response) => {
+            this.results = response.data.results;
+            this.loading = false;
+          });
+      }
     },
   },
 };

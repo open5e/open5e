@@ -1,5 +1,5 @@
 <template>
-  <section class="container docs-container">
+  <section class="docs-container container">
     <h1>Welcome to Open5e!</h1>
     <p>The best open-source resource for 5e content.</p>
 
@@ -30,6 +30,18 @@
     </p>
 
     <h2>Supporting and Contributing</h2>
+    <div class="side-note">
+      <h3>Hey! Stuff is missing!</h3>
+      <p>
+        Some content you may be expecting was not released as part of the 5e
+        SRD, so we aren’t allowed to include it in this site.
+      </p>
+      <p>
+        We are hoping to fill in the gaps using quality homebrew and 3rd party
+        OGL content. Contact us or make a pull request if you know something we
+        should add!
+      </p>
+    </div>
 
     <h3>Contribute on Github</h3>
     <p>
@@ -44,7 +56,7 @@
       <b>VueJs UI layer.</b> A Vue.js single-page app, using the Nuxt framework.
     </p>
 
-    <a href="https://github.com/open5e/open5e" class="external-button"
+    <a href="https://github.com/open5e/open5e" class="external-button mr-2"
       ><img src="/img/github-website-button.png" alt="Open5e site repo"
     /></a>
     <a href="https://github.com/open5e/open5e-api" class="external-button"
@@ -73,18 +85,6 @@
     /></a>
 
     <h2>The API</h2>
-    <div class="side-note">
-      <h3>Hey! Stuff is missing!</h3>
-      <p>
-        Some content you may be expecting was not released as part of the 5e
-        SRD, so we aren’t allowed to include it in this site.
-      </p>
-      <p>
-        We are hoping to fill in the gaps using quality homebrew and 3rd party
-        OGL content. Contact us or make a pull request if you know something we
-        should add!
-      </p>
-    </div>
 
     <p>
       The <a href="https://api.open5e.com">Open5e API</a> includes all monsters

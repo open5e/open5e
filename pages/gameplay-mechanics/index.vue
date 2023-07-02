@@ -1,5 +1,5 @@
 <template>
-  <section class="container docs-container">
+  <section class="docs-container container">
     <h1>Gameplay Mechanics</h1>
     <div class="docs-toc">
       <ul v-if="sections">
