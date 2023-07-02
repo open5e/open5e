@@ -151,12 +151,6 @@ export default {
       loading: true,
     };
   },
-  methods: {
-    fixedWidth(stat) {
-      if (stat < 10) return ` ${stat}`;
-      return stat;
-    },
-  },
   computed: {
     getSaves() {
       let saves = [];
@@ -199,6 +193,14 @@ export default {
         this.monster = response.data;
         this.loading = false;
       });
+  },
+  methods: {
+    fixedWidth(stat) {
+      if (stat < 10) {
+        return ` ${stat}`;
+      }
+      return stat;
+    },
   },
 };
 </script>
