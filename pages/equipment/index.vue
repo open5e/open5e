@@ -1,10 +1,10 @@
 <template>
-  <section class="docs-container container">
-    <h1>Combat</h1>
+  <section class="container docs-container">
+    <h1>Equipment</h1>
     <div class="docs-toc">
-      <ul v-if="combatSections">
-        <li v-for="section in combatSections" :key="section.slug">
-          <nuxt-link tag="a" :to="`/combat/${section.slug}`">
+      <ul v-if="equipmentSections">
+        <li v-for="section in equipmentSections" :key="section.slug">
+          <nuxt-link tag="a" :to="`/equipment/${section.slug}`">
             {{ section.name }}
           </nuxt-link>
         </li>
@@ -22,8 +22,8 @@ export default {
     return { store };
   },
   computed: {
-    combatSections: function () {
-      return this.store.allCombatSections;
+    equipmentSections: function () {
+      return this.store.allEquipmentSections;
     },
   },
 };

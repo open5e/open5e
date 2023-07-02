@@ -18,8 +18,8 @@ export default {
   },
   props: {
     src: {
-      type: String,
-      default: '',
+      type: String || undefined,
+      default: undefined,
     },
     toc: {
       type: Boolean,
@@ -61,7 +61,7 @@ export default {
       if (this.$route.hash) {
         this.$nextTick(() => {
           const hash = this.$route.hash;
-          var container = this.$el.querySelector(hash);
+          const container = this.$el.querySelector(hash);
           container.scrollIntoView({ behavior: 'smooth' });
         });
       }

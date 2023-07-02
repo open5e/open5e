@@ -1,9 +1,6 @@
 <template>
   <section v-show="loaded" class="docs-container container">
-    <h1 class="flex items-center">
-      {{ race.name }}
-    </h1>
-
+    <h1>{{ race.name }}</h1>
     <md-viewer :text="race.desc" />
     <md-viewer :text="race['asi_desc']" />
     <md-viewer :text="race['speed_desc']" />

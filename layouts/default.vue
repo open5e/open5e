@@ -43,14 +43,9 @@
           <!-- Characters -->
           <li>
             <nuxt-link to="/characters/"> Characters </nuxt-link>
-            <ul
-              v-show="
-                useRoute().path.indexOf('/characters') != -1 ||
-                containsAnyString(charSections)
-              "
-            >
+            <ul v-show="useRoute().path.indexOf('/characters') != -1">
               <li v-for="section in charSections" :key="section.slug">
-                <nuxt-link :to="`/sections/${section.slug}`">
+                <nuxt-link :to="`/characters/${section.slug}`">
                   {{ section.name }}
                 </nuxt-link>
               </li>
@@ -61,7 +56,14 @@
             <nuxt-link to="/classes"> Classes </nuxt-link>
             <ul v-show="useRoute().path.indexOf('/classes') != -1">
               <li v-for="charClass in classes" :key="charClass.slug">
-                <nuxt-link :to="`/classes/${charClass.slug}`">
+                <nuxt-link
+                  :class="{
+                    'router-link-active':
+                      useRoute().path.indexOf(`/classes/${charClass.slug}`) ===
+                      0,
+                  }"
+                  :to="`/classes/${charClass.slug}`"
+                >
                   {{ charClass.name }}
                 </nuxt-link>
               </li>
@@ -78,55 +80,56 @@
               </li>
             </ul>
           </li>
-          <!-- Combat -->
+
+          <!-- Backgrounds -->
           <li>
+            <nuxt-link
+              to="/backgrounds"
+              :class="{
+                'router-link-active':
+                  useRoute().path.indexOf('/backgrounds') === 0,
+              }"
+            >
+              Backgrounds
+            </nuxt-link>
+          </li>
+
+          <li>
+            <nuxt-link
+              to="/feats"
+              tag="a"
+              :class="{
+                'router-link-active': useRoute().path.indexOf('/feats') === 0,
+              }"
+            >
+              Feats
+            </nuxt-link>
+          </li>
+
+          <!-- Combat -->
+          <li v-if="combatSections.length > 0">
             <nuxt-link to="/combat/"> Combat </nuxt-link>
-            <ul v-show="useRoute().path.indexOf('/combat/') != -1">
-              <li>
-                <nuxt-link to="/combat/actions"> Actions in Combat </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/combat/attacking"> Attacking </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/combat/combat-sequence">
-                  Combat Sequence
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/combat/cover"> Cover </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/combat/damage-and-healing">
-                  Damage &amp; Healing
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/combat/mounted-combat">
-                  Mounted combat
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/combat/movement-in-combat">
-                  Movement in Combat
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/combat/underwater-combat">
-                  Underwater Combat
+            <ul
+              v-if="combatSections"
+              v-show="useRoute().path.indexOf('/combat/') != -1"
+            >
+              <li v-for="section in sectionGroups.Combat" :key="section.slug">
+                <nuxt-link :to="`/combat/${section.slug}`">
+                  {{ section.name }}
                 </nuxt-link>
               </li>
             </ul>
           </li>
+
           <!-- Equipment -->
           <li>
-            <nuxt-link to="/sections/equipment/"> Equipment </nuxt-link>
-            <ul v-show="containsAnyString(sectionGroups.Equipment)">
+            <nuxt-link to="/equipment/"> Equipment </nuxt-link>
+            <ul v-show="useRoute().path.indexOf('/equipment/') != -1">
               <li
                 v-for="section in sectionGroups.Equipment"
                 :key="section.slug"
               >
-                <nuxt-link :to="`/sections/${section.slug}`">
+                <nuxt-link :to="`/equipment/${section.slug}`">
                   {{ section.name }}
                 </nuxt-link>
               </li>
@@ -208,47 +211,16 @@
               Gameplay Mechanics
             </nuxt-link>
             <ul v-show="useRoute().path.indexOf('/gameplay-mechanics/') !== -1">
-              <li>
-                <nuxt-link to="/gameplay-mechanics/ability-scores">
-                  Ability Scores
+              <li v-for="section in mechanicsSections" :key="section.slug">
+                <nuxt-link :to="`/gameplay-mechanics/${section.slug}`">
+                  {{ section.name }}
                 </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gameplay-mechanics/between-adventures">
-                  Between Adventures
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gameplay-mechanics/conditions">
-                  Conditions
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gameplay-mechanics/environment">
-                  Environment
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gameplay-mechanics/movement">
-                  Movement
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gameplay-mechanics/rest"> Rest </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gameplay-mechanics/saving-throws">
-                  Saving Throws
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/gameplay-mechanics/time"> Time </nuxt-link>
               </li>
             </ul>
           </li>
           <!-- Running a Game -->
           <li>
-            <nuxt-link to="/running/"> Appendixes </nuxt-link>
+            <nuxt-link to="/running/">Running a Game</nuxt-link>
             <ul v-show="useRoute().path.indexOf('/running') != -1">
               <li v-for="section in sectionGroups.Rules" :key="section.slug">
                 <nuxt-link :to="`/running/${section.slug}`">
@@ -261,12 +233,13 @@
             <nuxt-link to="/api-docs"> API Docs </nuxt-link>
           </li>
         </ul>
-        <a class="sidebar-link" href="https://www.patreon.com/open5e"
-          ><img
+        <a class="sidebar-link" href="https://www.patreon.com/open5e">
+          <img
             src="/img/patron-badge.png"
             class="sidebar-image"
             alt="Become a patron! Keep Open5e ad free!"
-        /></a>
+          />
+        </a>
       </div>
       <div class="content-wrapper">
         <div class="mobile-header">
@@ -347,23 +320,32 @@ export default {
       return this.store.isLoadingData;
     },
     charSections: function () {
-      if (this.sectionGroups.hasOwnProperty('Characters')) {
-        let results = this.sectionGroups['Characters'].concat(
-          this.sectionGroups['Character Advancement']
-        );
-        return results.sort(function (a, b) {
-          if (a.slug < b.slug) {
-            return -1;
-          } else if (a.slug > b.slug) {
-            return 1;
-          } else {
-            return 0;
-          }
-        });
-      } else {
+      if (!this.sectionGroups.hasOwnProperty('Characters')) {
         return [];
       }
+
+      let results = this.sectionGroups['Characters'].concat(
+        this.sectionGroups['Character Advancement']
+      );
+
+      return results.sort(function (a, b) {
+        if (a.slug < b.slug) {
+          return -1;
+        } else if (a.slug > b.slug) {
+          return 1;
+        } else {
+          return 0;
+        }
+      });
     },
+    combatSections: function () {
+      return this.sectionGroups['Combat'] ?? [];
+    },
+
+    mechanicsSections: function () {
+      return this.sectionGroups['Gameplay Mechanics'] ?? [];
+    },
+
     crumbs() {
       let crumbs = [];
       this.$route.matched.forEach((item) => {

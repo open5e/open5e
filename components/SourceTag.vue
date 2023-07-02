@@ -17,8 +17,14 @@ import colors from 'tailwindcss/colors';
 
 export default {
   props: {
-    text: String,
-    title: String,
+    text: {
+      default: '',
+      type: String,
+    },
+    title: {
+      default: '',
+      type: String,
+    },
     textColor: {
       type: String,
       default: colors.slate[900],
@@ -75,6 +81,7 @@ export default {
   border-radius: 4px;
   text-transform: uppercase;
   position: relative;
+  height: min-content;
   top: -1px;
 }
 </style>

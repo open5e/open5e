@@ -271,6 +271,24 @@ export const useMainStore = defineStore({
     allSections: (state) => {
       return state.sections;
     },
+    allCharacterSections: (state) => {
+      return state.sections.filter(
+        (section) =>
+          section.parent === 'Characters' ||
+          section.parent === 'Character Advancement'
+      );
+    },
+    allMechanicsSections: (state) => {
+      return state.sections.filter(
+        (section) => section.parent === 'Gameplay Mechanics'
+      );
+    },
+    allCombatSections: (state) => {
+      return state.sections.filter((section) => section.parent === 'Combat');
+    },
+    allEquipmentSections: (state) => {
+      return state.sections.filter((section) => section.parent === 'Equipment');
+    },
     allBackgrounds: (state) => {
       return state.backgrounds;
     },
