@@ -23,8 +23,12 @@
       <p>
         <label
           >Components: {{ spell.components }}
-          <span v-if="spell.material">({{ spell.material }})</span></label
-        >
+
+          <span v-if="spell.material" class="font-medium text-slate-600"
+            >({{ spell.material.replace(/\.$/, '') }})
+            <!-- Removes trailing preiod, if there is one -->
+          </span>
+        </label>
       </p>
       <md-viewer :text="spell.desc" />
       <p v-if="spell.higher_level">

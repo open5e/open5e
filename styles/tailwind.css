@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .container {
+    @apply text-slate-900;
+  }
+}
+
 h1 {
   @apply text-3xl;
 }
