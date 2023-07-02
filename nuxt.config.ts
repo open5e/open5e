@@ -46,6 +46,7 @@ export default defineNuxtConfig({
   //   },
   // },
   modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss', 'nuxt-icon'],
+  buildModules: ['@nuxtjs/pinia'],
   runtimeConfig: {
     public: {
       apiUrl: process.env.API_URL || 'https://api.open5e.com',

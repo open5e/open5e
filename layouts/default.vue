@@ -1,22 +1,40 @@
 <template>
   <div class="layout">
+    <SourcesModal :show="showModal" @close="showModal = false" />
     <div class="app-wrapper" :class="{ 'show-sidebar': showSidebar }">
       <div class="sidebar">
         <nuxt-link to="/" class="logo"> Open5e </nuxt-link>
+        <div
+          class="cursor-pointer bg-red-600 px-4 py-2 hover:bg-red-400"
+          @click="showModal = true"
+        >
+          <span v-if="documents.length">
+            {{ sourceSelection.length }} of {{ documents.length }} sources
+            <Icon
+              name="heroicons:pencil-square"
+              class="h-5 w-5 text-white"
+              aria-hidden="true"
+            />
+          </span>
+          <span v-else>Loading sources...</span>
+          <span v-show="isLoadingData"
+            ><Icon name="line-md:loading-twotone-loop"
+          /></span>
+        </div>
         <div class="relative">
           <div
-            class="absolute inset-y-0 right-0 flex items-center pr-2 cursor-pointer"
+            class="absolute inset-y-0 right-0 flex cursor-pointer items-center pr-2"
           >
             <Icon
-              name="heroicons:magnifying-glass-20-solid"
-              class="w-8 h-8 p-1 text-white bg-red-900/25 hover:bg-red-900/50 rounded-full"
+              name="majesticons:search-line"
+              class="h-8 w-8 rounded-full bg-red-900/25 p-1 text-white hover:bg-red-900/50"
               aria-hidden="true"
               @click="doSearch(searchText)"
             />
           </div>
           <input
             v-model="searchText"
-            class="px-4 py-4 w-full bg-red-700 placeholder-white/80 placeholder:font-semibold focus:bg-red-800 focus:border-0 focus:outline-none"
+            class="w-full bg-red-700 px-4 py-4 placeholder-white/80 placeholder:font-semibold focus:border-0 focus:bg-red-800 focus:outline-none"
             placeholder="Search Open5e"
             @keyup.enter="doSearch(searchText)"
           />
@@ -231,12 +249,7 @@
           <!-- Running a Game -->
           <li>
             <nuxt-link to="/running/"> Appendixes </nuxt-link>
-            <ul
-              v-show="
-                useRoute().path.indexOf('/running') != -1 ||
-                containsAnyString(sectionGroups.Characters)
-              "
-            >
+            <ul v-show="useRoute().path.indexOf('/running') != -1">
               <li v-for="section in sectionGroups.Rules" :key="section.slug">
                 <nuxt-link :to="`/running/${section.slug}`">
                   {{ section.name }}
@@ -307,6 +320,7 @@ export default {
     return {
       searchText: this.$route.query.text,
       showSidebar: false,
+      showModal: false,
     };
   },
   computed: {
@@ -319,9 +333,18 @@ export default {
     races: function () {
       return this.store.races;
     },
+    documents: function () {
+      return this.store.documents;
+    },
+    sourceSelection: function () {
+      return this.store.sourceSelection;
+    },
     sectionGroups: function () {
       let groupedSections = this.sections.groupBy('parent');
       return groupedSections;
+    },
+    isLoadingData: function () {
+      return this.store.isLoadingData;
     },
     charSections: function () {
       if (this.sectionGroups.hasOwnProperty('Characters')) {
@@ -358,10 +381,11 @@ export default {
       this.showSidebar = false;
     },
   },
-  beforeCreate() {
+  mounted() {
     this.store.loadClasses();
     this.store.loadSections();
     this.store.loadRaces();
+    this.store.initializeSources();
   },
   methods: {
     doSearch: function (searchText) {
@@ -429,7 +453,7 @@ export default {
   .sticky-header {
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 40;
   }
 }
 
@@ -471,7 +495,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   margin: (-$content-padding-y) (-$content-padding-x) 0;
-  z-index: 6000;
+  z-index: 60;
 
   a {
     color: white;
@@ -507,13 +531,13 @@ footer {
 }
 
 .sidebar {
-  @apply text-white bg-slate-700;
+  @apply bg-slate-700 text-white;
   width: $sidebar-width;
   min-width: $sidebar-width;
   overflow-y: auto;
   font-size: 15px;
   position: relative;
-  z-index: 1000;
+  z-index: 50;
   display: flex;
   flex-direction: column;
 
@@ -570,7 +594,7 @@ footer {
     ul {
       @apply bg-slate-800/30 py-2;
       & > li > a {
-        @apply pl-8 pr-4 py-1;
+        @apply py-1 pl-8 pr-4;
       }
     }
   }
@@ -585,7 +609,7 @@ footer {
     width: 100vw;
     height: 100vh;
     background: rgba($color-basalt, 0.5);
-    z-index: 500;
+    z-index: 48;
   }
 
   .app-wrapper {

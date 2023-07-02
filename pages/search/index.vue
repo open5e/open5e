@@ -1,10 +1,21 @@
 <template>
-  <section class="container docs-container">
+  <section class="docs-container container">
     <h1>Search results</h1>
     <hr />
-    <p v-if="loading">Searching Open5e...</p>
-    <p v-else-if="noValue">No search term provided</p>
-    <p v-else-if="orderedResults.length == 0">No results</p>
+    <h3 v-if="loading" class="font-sans font-bold text-slate-400">
+      Searching Open5e...
+    </h3>
+    <h3 v-else-if="noValue" class="font-sans font-bold text-slate-400">
+      <Icon name="majesticons:search-line" class="mr-2 h-8 w-8" />
+      Search for something to see results...
+    </h3>
+    <h3
+      v-else-if="orderedResults.length == 0"
+      class="font-sans font-bold text-slate-400"
+    >
+      <Icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
+      No results
+    </h3>
     <div
       v-for="result in orderedResults"
       v-show="!loading && !noValue"
@@ -20,15 +31,15 @@
         >
           {{ result.name }}
         </nuxt-link>
+        <span> CR{{ result.challenge_rating }} </span
+        ><span class="title-case">{{ result.type }} | </span>
+        <em>{{ result.hit_points }}hp, AC {{ result.armor_class }}</em>
         <source-tag
           v-if="result.document_slug !== 'wotc-srd'"
           class="source-tag"
           :title="result.document_title"
           :text="result.document_slug"
         />
-        <span> CR{{ result.challenge_rating }} </span
-        ><span class="title-case">{{ result.type }} | </span>
-        <em>{{ result.hit_points }}hp, AC {{ result.armor_class }}</em>
         <div>
           <stat-bar
             class="top-border"
@@ -54,6 +65,12 @@
           {{ result.name }}
         </nuxt-link>
         {{ result.level }} {{ result.school }} spell | {{ result.dnd_class }}
+        <source-tag
+          v-if="result.document_slug !== 'wotc-srd'"
+          class="source-tag"
+          :title="result.document_title"
+          :text="result.document_slug"
+        />
         <p class="result-highlights" v-html="result.highlighted" />
       </div>
 
@@ -67,6 +84,12 @@
           {{ result.name }}
         </nuxt-link>
         {{ result.type }}, {{ result.rarity }}
+        <source-tag
+          v-if="result.document_slug !== 'wotc-srd'"
+          class="source-tag"
+          :title="result.document_title"
+          :text="result.document_slug"
+        />
         <p class="result-highlights" v-html="result.highlighted" />
       </div>
 
@@ -79,6 +102,12 @@
         >
           {{ result.name }}
         </nuxt-link>
+        <source-tag
+          v-if="result.document_slug !== 'wotc-srd'"
+          class="source-tag"
+          :title="result.document_title"
+          :text="result.document_slug"
+        />
         <p class="result-highlights" v-html="result.highlighted" />
       </div>
     </div>

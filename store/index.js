@@ -1,6 +1,45 @@
 import { defineStore } from 'pinia';
 import axios from 'axios';
 
+const monsterFields = [
+  'slug',
+  'name',
+  'challenge_rating',
+  'type',
+  'size',
+  'hit_points',
+  'document__slug',
+  'document__title',
+];
+
+const monsterOrder = 'slug';
+
+const spellFields = [
+  'slug',
+  'name',
+  'school',
+  'dnd_class',
+  'spell_lists',
+  'level',
+  'components',
+  'level_int',
+  'document__slug',
+  'document__title',
+];
+
+const spellOrder = 'slug';
+
+const magicItemFields = [
+  'slug',
+  'name',
+  'type',
+  'rarity',
+  'document__slug',
+  'document__title',
+];
+
+const magicItemOrder = 'slug';
+
 export const useMainStore = defineStore({
   id: 'main',
   state: () => {
@@ -12,77 +51,205 @@ export const useMainStore = defineStore({
       races: [],
       sections: [],
       backgrounds: [],
+      savedSources: [],
+      sourceSelection: [],
+      sourceString: '',
+      documents: [],
+      freshVals: new Set(), // this tracks lists that have been loaded since the last set of global filters were changed
+      loadingCount: 0,
+      isInitialized: false,
+      queuedActions: [],
     };
   },
   actions: {
-    loadMonsterList() {
+    async loadFromApi(params) {
+      let {
+        resource,
+        fields = null,
+        limit = null,
+        order = null,
+        listName,
+        filters = {},
+        processData = (data) => data,
+      } = params;
+
+      if (this.freshVals.has(listName)) {
+        // The list is fresh, no need to make the API call
+        return;
+      }
+
+      if (!this.isInitialized) {
+        this.queuedActions.push(params);
+        return false; // if the store is not initialized, queue the API call for later fetching and return
+      }
+
+      this.loadingCount++;
+
+      this.markFresh(listName); // pre-emptively mark the list as fresh so no additional calls are made for it
+
+      const url = `${useRuntimeConfig().public.apiUrl}/${resource}/?${
+        fields ? `fields=${fields}&` : '&'
+      }limit=${limit}&ordering=${order}&filter=${filters}${this.sourceString}`;
+
       axios
-        .get(
-          `${
-            useRuntimeConfig().public.apiUrl
-          }/monsters/?fields=slug,name,challenge_rating,type,size,hit_points,document__slug, document__title&limit=5000&ordering=slug`
-        )
+        .get(url)
         .then((response) => {
-          this.monstersList = response.data.results;
+          this[listName] = processData(response.data.results);
+          this.loadingCount--;
+        })
+        .catch((error) => {
+          console.log(error);
+          this.freshVals.delete(listName); // if the API call fails, mark the list as stale so it can be reloaded
+          this.loadingCount--;
         });
     },
-    loadSpells() {
-      axios
-        .get(
-          `${
-            useRuntimeConfig().public.apiUrl
-          }/spells/?fields=slug,name,school,dnd_class,level,components,level_int,document__slug,document__title&limit=1000`
-        ) //you will need to enable CORS to make this work
-        .then((response) => {
-          let spells = response.data.results;
-          // Until api sends arrays this will work to sort spells by class.
-          spells.map((item) => {
-            item.dnd_class = item.dnd_class.split(',');
-            for (var i = 0; i < item.dnd_class.length; i++) {
-              item.dnd_class[i].trim();
-            }
-          });
-          this.spellsList = spells;
-        });
+
+    async loadMonsters() {
+      await this.loadFromApi({
+        resource: 'monsters',
+        fields: monsterFields,
+        limit: 5000,
+        order: monsterOrder,
+        listName: 'monstersList',
+      });
     },
-    loadMagicItems() {
-      axios
-        .get(
-          `${
-            useRuntimeConfig().public.apiUrl
-          }/magicitems/?fields=slug,name,type,rarity,document__slug,document__title&limit=1000`
-        )
-        .then((response) => {
-          this.magicItemsList = response.data.results;
-        });
+
+    async loadSpells() {
+      await this.loadFromApi({
+        resource: 'spells',
+        fields: spellFields,
+        limit: 5000,
+        order: spellOrder,
+        listName: 'spellsList',
+      });
     },
-    loadBackgrounds() {
-      axios
-        .get(`${useRuntimeConfig().public.apiUrl}/backgrounds/?limit=1000`)
-        .then((response) => {
-          this.backgrounds = response.data.results;
-        });
+
+    async loadMagicItems() {
+      await this.loadFromApi({
+        resource: 'magicitems',
+        fields: magicItemFields,
+        limit: 5000,
+        order: magicItemOrder,
+        listName: 'magicItemsList',
+      });
     },
-    loadClasses() {
-      axios
-        .get(`${useRuntimeConfig().public.apiUrl}/classes/`) //you will need to enable CORS to make this work
-        .then((response) => {
-          this.classes = response.data.results;
-        });
+
+    async loadBackgrounds() {
+      await this.loadFromApi({
+        resource: 'backgrounds',
+        limit: 1000,
+        listName: 'backgrounds',
+      });
     },
-    loadRaces() {
-      axios
-        .get(`${useRuntimeConfig().public.apiUrl}/races/`) //you will need to enable CORS to make this work
-        .then((response) => {
-          this.races = response.data.results;
-        });
+
+    async loadClasses() {
+      await this.loadFromApi({
+        resource: 'classes',
+        limit: 1000,
+        listName: 'classes',
+      });
     },
-    loadSections() {
-      axios
-        .get(`${useRuntimeConfig().public.apiUrl}/sections/`) //you will need to enable CORS to make this work
-        .then((response) => {
-          this.sections = response.data.results;
-        });
+
+    async loadRaces() {
+      await this.loadFromApi({
+        resource: 'races',
+        limit: 1000,
+        listName: 'races',
+      });
+    },
+
+    async loadSections() {
+      await this.loadFromApi({
+        resource: 'sections',
+        limit: 1000,
+        listName: 'sections',
+      });
+    },
+
+    // documents is an exception, and should not respect source filters, so it has its own function
+    async loadDocuments() {
+      if (this.freshVals.has('documents')) {
+        // The list is fresh, no need to make the API call
+        return;
+      }
+      this.markFresh('documents'); // pre-emptively mark the list as fresh so no additional calls are made for it
+      const url = `${useRuntimeConfig().public.apiUrl}/documents/`;
+
+      return axios.get(url).then((response) => {
+        this.documents = response.data.results;
+      });
+    },
+
+    loadSourcesFromLocal() {
+      if (process.client) {
+        const savedSources = localStorage.getItem('sources');
+        return savedSources ? JSON.parse(savedSources) : [];
+      }
+    },
+
+    saveSourcesToLocal(sources) {
+      localStorage.setItem('sources', JSON.stringify(sources));
+    },
+
+    setSources(sources) {
+      if (this.sourceSelection === sources) {
+        return; // if the sources are the same, don't do anything
+      }
+      this.sourceSelection = sources;
+      this.saveSourcesToLocal(sources); // save to localStorage
+      this.sourceString = !!sources
+        ? `&document__slug__in=${this.sourceSelection.join(',')}` // if sources are selected, construct a query string segment for them
+        : '';
+      this.clearFresh(); // clear the list of fresh sources, since they are now stale
+    },
+
+    // load sources from the
+    async initializeSources() {
+      this.savedSources = this.loadSourcesFromLocal();
+      await this.loadDocuments().then(() => {
+        console.log(
+          `saved sources: ${this.savedSources.length}, documents: ${this.documents.length}`
+        );
+        if (!this.savedSources.length) {
+          this.savedSources = this.documents.map((doc) => doc.slug);
+        }
+      });
+      this.setSources(this.savedSources);
+      this.isInitialized = true;
+      console.log(`running queued actions: ${this.queuedActions}`);
+      await this.processQueue();
+    },
+
+    async processQueue() {
+      for (const action of this.queuedActions) {
+        await this.loadFromApi(action);
+      }
+      this.queuedActions = [];
+    },
+
+    markFresh(val) {
+      this.freshVals.add(val); // mark the list as fresh when it is fetched
+    },
+    clearFresh() {
+      const staleVals = [...this.freshVals]; // convert the set to an array
+      const loadFunctions = {
+        spellsList: this.loadSpells,
+        monstersList: this.loadMonsters,
+        magicItemsList: this.loadMagicItems,
+        classes: this.loadClasses,
+        races: this.loadRaces,
+        sections: this.loadSections,
+        backgrounds: this.loadBackgrounds,
+        documents: this.loadDocuments,
+      };
+
+      this.freshVals.clear(); // clear the list of fresh sources. this should be done whenever a global fitler changes
+
+      for (const listName of staleVals) {
+        if (listName in loadFunctions) {
+          loadFunctions[listName](); // reload any stale lists
+        }
+      }
     },
   },
   getters: {
@@ -106,6 +273,18 @@ export const useMainStore = defineStore({
     },
     allBackgrounds: (state) => {
       return state.backgrounds;
+    },
+    allDocuments: (state) => {
+      return state.documents;
+    },
+    allSourceSelections: (state) => {
+      return state.sourceSelection;
+    },
+    getSourceString: (state) => {
+      return state.sourceString;
+    },
+    isLoadingData: (state) => {
+      return state.loadingCount > 0;
     },
   },
 });

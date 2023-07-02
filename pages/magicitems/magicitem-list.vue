@@ -123,12 +123,15 @@ export default {
       return Object.keys(this.itemsByLetter).length;
     },
   },
-  beforeCreate() {
+  mounted() {
     this.store.loadMagicItems();
   },
   methods: {
     updateFilter: function (val) {
       this.filter = val;
+    },
+    updateSources: function (val) {
+      this.store.setSources(val);
     },
     onFilterEnter: function () {
       this.$refs.results.focus();

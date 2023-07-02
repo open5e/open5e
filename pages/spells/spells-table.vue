@@ -50,6 +50,7 @@
               >Level</sortable-table-header
             >
             <sortable-table-header
+              class="hide-mobile"
               :current-sort-dir="ariaSort.components"
               @sort="(dir) => sort('components', dir)"
               >Components</sortable-table-header
@@ -58,12 +59,14 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="spell in spellsListed" :key="spell.name">
+          <tr v-for="spell in spellsListed" :key="spell.slug">
             <th>
               <nuxt-link
                 tag="a"
                 :params="{ id: spell.slug }"
                 :to="`/spells/${spell.slug}`"
+                class="mr-2"
+                :prefetch="false"
               >
                 {{ spell.name }}
               </nuxt-link>
@@ -71,25 +74,28 @@
                 v-if="
                   spell.document__slug && spell.document__slug !== 'wotc-srd'
                 "
-                class=""
+                class="hide-mobile ml-0"
                 :title="spell.document__title"
                 :text="spell.document__slug"
               />
             </th>
-            <td>{{ spell.school }}</td>
+            <td>{{ capitalize(spell.school) }}</td>
             <td>{{ spell.level_int }}</td>
             <td class="hide-mobile">
               {{ spell.components }}
             </td>
             <td class="hide-mobile">
               <span
-                v-for="(spellclass, index) in spell.dnd_class"
+                v-for="(spellclass, index) in spell.spell_lists"
                 :key="spellclass"
-                ><span class="dnd_class" @click="filterByClass(spellclass)">{{
-                  spellclass
-                }}</span
-                ><span v-if="index + 1 < spell.dnd_class.length">, </span></span
               >
+                <!-- the item in the spell_list list -->
+                <span class="spell_lists" @click="filterByClass(spellclass)">{{
+                  capitalize(spellclass)
+                }}</span>
+                <!-- comma after any item that isn't the last -->
+                <span v-if="index + 1 < spell.spell_lists.length">, </span>
+              </span>
             </td>
           </tr>
         </tbody>
@@ -169,6 +175,9 @@ export default {
     },
     spellListLength: function () {
       return Object.keys(this.spellsListed).length;
+    },
+    capitalize(str) {
+      return str.charAt(0).toUpperCase() + str.slice(1);
     },
     sort: function (prop, dir) {
       this.currentSortProperty = prop;
