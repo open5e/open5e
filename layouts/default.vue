@@ -256,9 +256,6 @@
         </ol>
         <div v-show="showSidebar" class="shade" @click="hideSidebar" />
         <nuxt-page />
-        <footer>
-          <a href="/legal/">Content provided under the OGL 1.0a</a>
-        </footer>
       </div>
     </div>
   </div>
