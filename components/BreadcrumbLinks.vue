@@ -1,9 +1,23 @@
 <template>
-  <nav class="flex" aria-label="breadcrumbs">
-    <ol class="inline-flex">
-      <li v-for="crumb in crumbs" :key="crumb.url" class="inline">
-        <nuxt-link :to="crumb.url">
-          <Icon v-if="crumb.title === 'Home'" name="heroicons:home" />
+  <nav
+    class="md:text-md mt-1 flex items-center border border-gray-200 px-3 py-2 align-middle text-sm font-semibold uppercase md:ml-8"
+    aria-label="breadcrumbs"
+  >
+    <ol class="space-x-3">
+      <li
+        v-for="crumb in crumbs"
+        :key="crumb.url"
+        class="inline-flex h-10 items-center align-middle"
+      >
+        <nuxt-link
+          :to="crumb.url"
+          class="inline-flex items-center align-middle text-gray-700 visited:text-gray-700 hover:text-red-700"
+        >
+          <Icon
+            v-if="crumb.title === 'Home'"
+            name="heroicons:home"
+            class="mr-1"
+          />
           <span>{{ crumb.title }}</span>
         </nuxt-link>
       </li>
@@ -33,7 +47,6 @@ export default {
             .split('-')
             .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
             .join(' ');
-
           return { title: title, url: path };
         })
         .filter((element) => element); // remove null crumbs
@@ -47,9 +60,11 @@ export default {
 
 <style scoped>
 li:after {
-  content: ' » ';
+  content: ' / ';
   display: inline;
+  margin-left: 1rem;
 }
+
 li:last-child:after {
   content: '';
 }
