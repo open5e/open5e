@@ -17,9 +17,9 @@
             />
           </span>
           <span v-else>Loading sources...</span>
-          <span v-show="isLoadingData"
-            ><Icon name="line-md:loading-twotone-loop"
-          /></span>
+          <span v-show="isLoadingData">
+            <Icon name="line-md:loading-twotone-loop" />
+          </span>
         </div>
         <div class="relative">
           <div
@@ -247,14 +247,8 @@
           <nuxt-link to="/" class="logo"> Open5e </nuxt-link>
           <div class="spacer" />
         </div>
-        <ol class="breadcrumb">
-          <li v-for="item in crumbs" :key="item" class="breadcrumb-item">
-            <nuxt-link :to="item.path" active-class="active">
-              {{ item.breadcrumb }}
-            </nuxt-link>
-          </li>
-        </ol>
         <div v-show="showSidebar" class="shade" @click="hideSidebar" />
+        <breadcrumb-links />
         <nuxt-page />
       </div>
     </div>
@@ -264,7 +258,6 @@
 <script>
 import { useMainStore } from '../store/index';
 import { MagnifyingGlassIcon } from '@heroicons/vue/24/solid';
-
 Array.prototype.groupBy = function (prop) {
   return this.reduce(function (groups, item) {
     const val = item[prop];
@@ -272,13 +265,6 @@ Array.prototype.groupBy = function (prop) {
     groups[val].push(item);
     return groups;
   }, {});
-};
-
-const breadcrumbs = {
-  // You should use / + name for the root route
-  '/spells': 'Spells',
-  // And just name of the page for child routes
-  'profile-account': 'Account',
 };
 
 export default {
@@ -341,18 +327,6 @@ export default {
 
     mechanicsSections: function () {
       return this.sectionGroups['Gameplay Mechanics'] ?? [];
-    },
-
-    crumbs() {
-      let crumbs = [];
-      this.$route.matched.forEach((item) => {
-        if (breadcrumbs[item.name] || breadcrumbs[item.path]) {
-          item.breadcrumb = breadcrumbs[item.name] || breadcrumbs[item.path];
-          crumbs.push(item);
-        }
-      });
-
-      return crumbs;
     },
   },
   watch: {
