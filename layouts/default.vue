@@ -42,7 +42,7 @@
         <ul v-if="sections && races && classes">
           <!-- Characters -->
           <li>
-            <nuxt-link to="/characters/"> Characters </nuxt-link>
+            <nuxt-link to="/characters"> Characters </nuxt-link>
             <ul v-show="useRoute().path.indexOf('/characters') != -1">
               <li v-for="section in charSections" :key="section.slug">
                 <nuxt-link :to="`/characters/${section.slug}`">
@@ -108,7 +108,7 @@
 
           <!-- Combat -->
           <li v-if="combatSections.length > 0">
-            <nuxt-link to="/combat/"> Combat </nuxt-link>
+            <nuxt-link to="/combat"> Combat </nuxt-link>
             <ul
               v-if="combatSections"
               v-show="useRoute().path.indexOf('/combat/') != -1"
@@ -123,7 +123,7 @@
 
           <!-- Equipment -->
           <li>
-            <nuxt-link to="/equipment/"> Equipment </nuxt-link>
+            <nuxt-link to="/equipment"> Equipment </nuxt-link>
             <ul v-show="useRoute().path.indexOf('/equipment/') != -1">
               <li
                 v-for="section in sectionGroups.Equipment"
@@ -142,7 +142,7 @@
                 'router-link-active':
                   useRoute().path.indexOf('/magicitems') === 0,
               }"
-              to="/magicitems/magicitem-list"
+              to="/magicitems"
             >
               Magic Items
             </nuxt-link>
@@ -153,11 +153,11 @@
               :class="{
                 'router-link-active': useRoute().path.indexOf('/spells') === 0,
               }"
-              to="/spells/spells-table"
+              to="/spells"
             >
               Spells
             </nuxt-link>
-            <ul v-show="useRoute().path.indexOf('/spells/') !== -1">
+            <ul v-show="useRoute().path.indexOf('/spells') !== -1">
               <li>
                 <nuxt-link to="/spells/by-class/bard"> Bard Spells </nuxt-link>
               </li>
@@ -200,7 +200,7 @@
                 'router-link-active':
                   useRoute().path.indexOf('/monsters') === 0,
               }"
-              to="/monsters/monster-list"
+              to="/monsters"
             >
               Monsters
             </nuxt-link>
