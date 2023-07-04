@@ -1,7 +1,7 @@
 // add redirects for exact path matches here
 const redirects = {
   '/monsters/monster-list': '/monsters',
-  '/magicitems/magicitem-list': '/magicitems',
+  '/magicitems/magicitem-list': '/magic-items',
   '/spells/spells-table': '/spells',
 };
 
