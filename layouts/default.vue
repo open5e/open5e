@@ -140,9 +140,9 @@
             <nuxt-link
               :class="{
                 'router-link-active':
-                  useRoute().path.indexOf('/magicitems') === 0,
+                  useRoute().path.indexOf('/magic-items') === 0,
               }"
-              to="/magicitems"
+              to="/magic-items"
             >
               Magic Items
             </nuxt-link>
@@ -257,7 +257,6 @@
 
 <script>
 import { useMainStore } from '../store/index';
-import { MagnifyingGlassIcon } from '@heroicons/vue/24/solid';
 Array.prototype.groupBy = function (prop) {
   return this.reduce(function (groups, item) {
     const val = item[prop];

@@ -27,7 +27,7 @@
             <nuxt-link
               tag="a"
               :params="{ id: item.slug }"
-              :to="`/magicitems/${item.slug}`"
+              :to="`/magic-items/${item.slug}`"
             >
               {{ item.name }}
             </nuxt-link>
@@ -54,7 +54,7 @@
               <nuxt-link
                 tag="a"
                 :params="{ id: item.slug }"
-                :to="`/magicitems/${item.slug}`"
+                :to="`/magic-items/${item.slug}`"
               >
                 {{ item.name }}
               </nuxt-link>
