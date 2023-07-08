@@ -3,7 +3,7 @@
     <SourcesModal :show="showModal" @close="showModal = false" />
     <div class="app-wrapper" :class="{ 'show-sidebar': showSidebar }">
       <div class="sidebar">
-        <nuxt-link to="/" class="logo"> Open5e </nuxt-link>
+        <nuxt-link to="/" class="logo">Open5e</nuxt-link>
         <div
           class="cursor-pointer bg-red-600 px-4 py-2 hover:bg-red-400"
           @click="showModal = true"
@@ -39,200 +39,27 @@
             @keyup.enter="doSearch(searchText)"
           />
         </div>
-        <ul v-if="sections && races && classes">
-          <!-- Characters -->
-          <li>
-            <nuxt-link to="/characters"> Characters </nuxt-link>
-            <ul v-show="useRoute().path.indexOf('/characters') != -1">
-              <li v-for="section in charSections" :key="section.slug">
-                <nuxt-link :to="`/characters/${section.slug}`">
-                  {{ section.name }}
-                </nuxt-link>
-              </li>
-            </ul>
-          </li>
-          <!-- Classes -->
-          <li>
-            <nuxt-link to="/classes"> Classes </nuxt-link>
-            <ul v-show="useRoute().path.indexOf('/classes') != -1">
-              <li v-for="charClass in classes" :key="charClass.slug">
-                <nuxt-link
-                  :class="{
-                    'router-link-active':
-                      useRoute().path.indexOf(`/classes/${charClass.slug}`) ===
-                      0,
-                  }"
-                  :to="`/classes/${charClass.slug}`"
-                >
-                  {{ charClass.name }}
-                </nuxt-link>
-              </li>
-            </ul>
-          </li>
-          <!-- Races -->
-          <li>
-            <nuxt-link to="/races"> Races </nuxt-link>
-            <ul v-if="races" v-show="useRoute().path.indexOf('/races') != -1">
-              <li v-for="race in races" :key="race.slug">
-                <nuxt-link :to="`/races/${race.slug}`">
-                  {{ race.name }}
-                </nuxt-link>
-              </li>
-            </ul>
-          </li>
 
-          <!-- Backgrounds -->
-          <li>
-            <nuxt-link
-              to="/backgrounds"
-              :class="{
-                'router-link-active':
-                  useRoute().path.indexOf('/backgrounds') === 0,
-              }"
-            >
-              Backgrounds
-            </nuxt-link>
-          </li>
+        <!-- Navigation Links -->
 
-          <li>
-            <nuxt-link
-              to="/feats"
-              tag="a"
-              :class="{
-                'router-link-active': useRoute().path.indexOf('/feats') === 0,
-              }"
-            >
-              Feats
-            </nuxt-link>
-          </li>
-
-          <!-- Combat -->
-          <li v-if="combatSections.length > 0">
-            <nuxt-link to="/combat"> Combat </nuxt-link>
+        <ul class="bg-slate-700 text-inherit text-white">
+          <li v-for="section in routes" :key="section.title">
+            <nav-link :to="section.route"> {{ section.title }} </nav-link>
             <ul
-              v-if="combatSections"
-              v-show="useRoute().path.indexOf('/combat/') != -1"
+              v-if="section.subroutes"
+              v-show="useRoute().path.indexOf(section.route) != -1"
             >
-              <li v-for="section in sectionGroups.Combat" :key="section.slug">
-                <nuxt-link :to="`/combat/${section.slug}`">
-                  {{ section.name }}
-                </nuxt-link>
+              <li v-for="page in section.subroutes" :key="page.slug">
+                <nav-link :to="`${section.route}/${page.slug}`">
+                  {{ page.name }}
+                </nav-link>
               </li>
             </ul>
-          </li>
-
-          <!-- Equipment -->
-          <li>
-            <nuxt-link to="/equipment"> Equipment </nuxt-link>
-            <ul v-show="useRoute().path.indexOf('/equipment/') != -1">
-              <li
-                v-for="section in sectionGroups.Equipment"
-                :key="section.slug"
-              >
-                <nuxt-link :to="`/equipment/${section.slug}`">
-                  {{ section.name }}
-                </nuxt-link>
-              </li>
-            </ul>
-          </li>
-          <!-- Magic Items -->
-          <li>
-            <nuxt-link
-              :class="{
-                'router-link-active':
-                  useRoute().path.indexOf('/magic-items') === 0,
-              }"
-              to="/magic-items"
-            >
-              Magic Items
-            </nuxt-link>
-          </li>
-          <!-- Spells -->
-          <li>
-            <nuxt-link
-              :class="{
-                'router-link-active': useRoute().path.indexOf('/spells') === 0,
-              }"
-              to="/spells"
-            >
-              Spells
-            </nuxt-link>
-            <ul v-show="useRoute().path.indexOf('/spells') !== -1">
-              <li>
-                <nuxt-link to="/spells/by-class/bard"> Bard Spells </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/spells/by-class/cleric">
-                  Cleric Spells
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/spells/by-class/druid">
-                  Druid Spells
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/spells/by-class/paladin">
-                  Paladin Spells
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/spells/by-class/sorcerer">
-                  Sorcerer Spells
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/spells/by-class/wizard">
-                  Wizard Spells
-                </nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/spells/by-class/warlock">
-                  Warlock Spells
-                </nuxt-link>
-              </li>
-            </ul>
-          </li>
-          <!-- Monsters -->
-          <li>
-            <nuxt-link
-              :class="{
-                'router-link-active':
-                  useRoute().path.indexOf('/monsters') === 0,
-              }"
-              to="/monsters"
-            >
-              Monsters
-            </nuxt-link>
-          </li>
-          <!-- Gameplay Mechanics -->
-          <li>
-            <nuxt-link to="/gameplay-mechanics/">
-              Gameplay Mechanics
-            </nuxt-link>
-            <ul v-show="useRoute().path.indexOf('/gameplay-mechanics/') !== -1">
-              <li v-for="section in mechanicsSections" :key="section.slug">
-                <nuxt-link :to="`/gameplay-mechanics/${section.slug}`">
-                  {{ section.name }}
-                </nuxt-link>
-              </li>
-            </ul>
-          </li>
-          <!-- Running a Game -->
-          <li>
-            <nuxt-link to="/running/">Running a Game</nuxt-link>
-            <ul v-show="useRoute().path.indexOf('/running') != -1">
-              <li v-for="section in sectionGroups.Rules" :key="section.slug">
-                <nuxt-link :to="`/running/${section.slug}`">
-                  {{ section.name }}
-                </nuxt-link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <nuxt-link to="/api-docs"> API Docs </nuxt-link>
           </li>
         </ul>
+
+        <!-- Patron Banner -->
+
         <a class="sidebar-link" href="https://www.patreon.com/open5e">
           <img
             src="/img/patron-badge.png"
@@ -241,7 +68,7 @@
           />
         </a>
       </div>
-      <div class="content-wrapper">
+      <div class="content-wrapper bg-white">
         <div class="mobile-header">
           <div class="sidebar-toggle" @click="toggleSidebar" />
           <nuxt-link to="/" class="logo"> Open5e </nuxt-link>
@@ -257,14 +84,6 @@
 
 <script>
 import { useMainStore } from '../store/index';
-Array.prototype.groupBy = function (prop) {
-  return this.reduce(function (groups, item) {
-    const val = item[prop];
-    groups[val] = groups[val] || [];
-    groups[val].push(item);
-    return groups;
-  }, {});
-};
 
 export default {
   setup() {
@@ -276,58 +95,103 @@ export default {
       searchText: this.$route.query.text,
       showSidebar: false,
       showModal: false,
+      spellcastingClasses: [
+        { name: 'Bard Spells', slug: 'by-class/bard' },
+        { name: 'Cleric Spells', slug: 'by-class/cleric' },
+        { name: 'Druid Spells', slug: 'by-class/druid' },
+        { name: 'Paladin Spells', slug: 'by-class/paladin' },
+        { name: 'Ranger Spells', slug: 'by-class/ranger' },
+        { name: 'Wizard Spells', slug: 'by-class/wizard' },
+        { name: 'Warlock Spells', slug: 'by-class/warlock' },
+      ],
     };
   },
   computed: {
-    classes: function () {
-      return this.store.classes;
-    },
-    sections: function () {
-      return this.store.sections;
-    },
-    races: function () {
-      return this.store.races;
-    },
     documents: function () {
       return this.store.documents;
     },
     sourceSelection: function () {
       return this.store.sourceSelection;
     },
-    sectionGroups: function () {
-      let groupedSections = this.sections.groupBy('parent');
-      return groupedSections;
-    },
+
     isLoadingData: function () {
       return this.store.isLoadingData;
     },
-    charSections: function () {
-      if (!this.sectionGroups.hasOwnProperty('Characters')) {
-        return [];
-      }
 
-      let results = this.sectionGroups['Characters'].concat(
-        this.sectionGroups['Character Advancement']
-      );
-
-      return results.sort(function (a, b) {
-        if (a.slug < b.slug) {
-          return -1;
-        } else if (a.slug > b.slug) {
-          return 1;
-        } else {
-          return 0;
-        }
-      });
-    },
-    combatSections: function () {
-      return this.sectionGroups['Combat'] ?? [];
-    },
-
-    mechanicsSections: function () {
-      return this.sectionGroups['Gameplay Mechanics'] ?? [];
+    routes: function () {
+      return [
+        {
+          title: 'Characters',
+          route: '/characters',
+          subroutes: this.store.sections.filter(
+            (page) =>
+              page.parent === 'Characters' ||
+              page.parent === 'Character Advancement'
+          ),
+        },
+        {
+          title: 'Classes',
+          route: '/classes',
+          subroutes: this.store.classes,
+        },
+        {
+          title: 'Races',
+          route: '/races',
+          subroutes: this.store.races,
+        },
+        {
+          title: 'Backgrounds',
+          route: '/backgrounds',
+        },
+        {
+          title: 'Feats',
+          route: '/feats',
+        },
+        {
+          title: 'Combat',
+          route: '/combat',
+          subroutes: this.store.sections.filter(
+            (page) => page.parent === 'Combat'
+          ),
+        },
+        {
+          title: 'Equipment',
+          route: '/equipment',
+          subroutes: this.store.sections.filter(
+            (page) => page.parent === 'Equipment'
+          ),
+        },
+        {
+          title: 'Magic Items',
+          route: '/magic-items',
+        },
+        {
+          title: 'Spells',
+          route: '/spells',
+          subroutes: this.spellcastingClasses,
+        },
+        {
+          title: 'Monsters',
+          route: '/monsters',
+        },
+        {
+          title: 'Gameplay Mechanics',
+          route: '/gameplay-mechanics',
+          subroutes: this.store.sections.filter(
+            (page) => page.parent === 'Gameplay Mechanics'
+          ),
+        },
+        {
+          title: 'Running a Game',
+          route: '/running',
+          subroutes: this.store.sections.filter(
+            (page) => page.parent === 'Running a Game'
+          ),
+        },
+      ];
     },
   },
+
   watch: {
     $route(to, from) {
       this.showSidebar = false;
@@ -399,7 +263,6 @@ export default {
   padding: $content-padding-y $content-padding-x;
   overflow: auto;
   flex-grow: 1;
-  background: white;
   max-width: 60rem;
 
   .sticky-header {
@@ -409,23 +272,23 @@ export default {
   }
 }
 
-.input-search {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: $color-blood;
-  color: white;
-  padding: 1rem;
-  border: none;
-  font-size: $font-size-base;
-  outline: none;
-  z-index: 2;
+// .input-search {
+//   position: sticky;
+//   top: 0;
+//   width: 100%;
+//   background: $color-blood;
+//   color: white;
+//   padding: 1rem;
+//   border: none;
+//   font-size: $font-size-base;
+//   outline: none;
+//   z-index: 2;
 
-  &::placeholder {
-    color: white;
-    opacity: 0.6;
-  }
-}
+//   &::placeholder {
+//     color: white;
+//     opacity: 0.6;
+//   }
+// }
 
 footer {
   margin-top: 1rem;
@@ -493,10 +356,6 @@ footer {
   display: flex;
   flex-direction: column;
 
-  a {
-    color: white;
-  }
-
   .sidebar-link {
     display: inline-block;
     align-self: flex-end;
@@ -519,29 +378,8 @@ footer {
     font-size: 2em;
   }
 
-  // General sidebar styling
-  ul {
-    li {
-      a {
-        &:hover {
-          opacity: 1;
-          @apply hover:bg-slate-800/40;
-        }
-
-        &.router-link-active {
-          font-weight: bold;
-          opacity: 1;
-          @apply bg-slate-900/60;
-        }
-      }
-    }
-  }
   // Style the root elements of the sidebar only
   > ul > li {
-    a {
-      display: block;
-      @apply px-4 py-3;
-    }
     // and the child elements of the sidebar (eg classes under "class")
     ul {
       @apply bg-slate-800/30 py-2;
