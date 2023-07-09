@@ -5,10 +5,10 @@
       class="app-wrapper bg-fog dark:bg-darkness"
       :class="{ 'show-sidebar': showSidebar }"
     >
-      <div class="sidebar flex bg-slate-700 text-white">
-        <nuxt-link to="/" class="logo bg-red">Open5e</nuxt-link>
+      <div class="sidebar flex bg-slate-700 text-white dark:bg-slate-900">
+        <nuxt-link to="/" class="logo bg-red dark:bg-blood">Open5e</nuxt-link>
         <div
-          class="cursor-pointer bg-red-600 px-4 py-2 hover:bg-red-400"
+          class="cursor-pointer bg-red-600 px-4 py-2 hover:bg-red-400 dark:bg-red-700"
           @click="showModal = true"
         >
           <span v-if="documents.length">
@@ -37,7 +37,7 @@
           </div>
           <input
             v-model="searchText"
-            class="w-full bg-red-700 px-4 py-4 placeholder-white/80 placeholder:font-semibold focus:border-0 focus:bg-red-800 focus:outline-none"
+            class="w-full bg-red-700 px-4 py-4 placeholder-white/80 placeholder:font-semibold focus:border-0 focus:bg-red-800 focus:outline-none dark:bg-red-800 dark:focus:bg-red-900"
             placeholder="Search Open5e"
             @keyup.enter="doSearch(searchText)"
           />
@@ -45,7 +45,7 @@
 
         <!-- Navigation Links -->
 
-        <ul class="bg-slate-700 text-inherit text-white">
+        <ul class="text-inherit text-white">
           <li v-for="section in routes" :key="section.title">
             <nav-link :to="section.route"> {{ section.title }} </nav-link>
             <ul
