@@ -71,7 +71,7 @@
     </p>
     <a href="https://www.patreon.com/open5e" class="external-button">
       <img
-        class="dark:rounded-lg"
+        class="rounded-lg"
         src="/img/patron-button.png"
         alt="Become a patron! Keep Open5e ad free!"
       />
@@ -116,11 +116,6 @@ export default {
 </script>
 
 <style lang="scss">
-.monster-block,
-.spell-block {
-  margin-top: 1rem;
-}
-
 .external-button {
   margin-top: 0.6rem;
   zoom: 40%;
