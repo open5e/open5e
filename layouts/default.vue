@@ -88,6 +88,7 @@
           @click="hideSidebar"
         />
         <breadcrumb-links />
+        <theme-switcher />
         <nuxt-page class="text-darkness dark:text-white" />
 
         <footer
