@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="md:text-md mt-1 flex items-center border border-gray-200 py-1 align-middle text-sm font-semibold uppercase dark:border-granite md:ml-8 md:px-4"
+    class="md:text-md my-1 flex items-center border border-gray-200 px-2 py-0 align-middle text-sm font-semibold uppercase dark:border-granite md:ml-8 md:px-4 md:py-2"
     aria-label="breadcrumbs"
   >
     <ol class="space-x-3">

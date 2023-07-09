@@ -73,7 +73,6 @@
         </a>
       </div>
 
-      <!-- Main content -->
       <div
         class="content-wrapper bg-white text-darkness dark:bg-darkness dark:text-white"
       >
@@ -87,8 +86,12 @@
           class="shade bg-basalt/50"
           @click="hideSidebar"
         />
-        <breadcrumb-links />
-        <theme-switcher />
+        <div class="flex">
+          <breadcrumb-links class="flex-grow" />
+          <theme-switcher class="inline-block" />
+        </div>
+
+        <!-- Main content -->
         <nuxt-page class="text-darkness dark:text-white" />
 
         <footer
