@@ -93,12 +93,6 @@
 
         <!-- Main content -->
         <nuxt-page class="text-darkness dark:text-white" />
-
-        <footer
-          class="dark mt-4 border-t border-fog pt-4 text-center text-sm dark:border-granite"
-        >
-          <nuxt-link to="/legal">Content provided under the OGL 1.0a</nuxt-link>
-        </footer>
       </div>
     </div>
   </div>
