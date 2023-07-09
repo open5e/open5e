@@ -6,9 +6,9 @@
       :class="{ 'show-sidebar': showSidebar }"
     >
       <div class="sidebar flex bg-slate-700 text-white dark:bg-slate-900">
-        <nuxt-link to="/" class="logo bg-red dark:bg-blood">Open5e</nuxt-link>
+        <nuxt-link to="/" class="logo bg-red">Open5e</nuxt-link>
         <div
-          class="cursor-pointer bg-red-600 px-4 py-2 hover:bg-red-400 dark:bg-red-700"
+          class="cursor-pointer bg-red-600 px-4 py-2 hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
           @click="showModal = true"
         >
           <span v-if="documents.length">
@@ -37,7 +37,7 @@
           </div>
           <input
             v-model="searchText"
-            class="w-full bg-red-700 px-4 py-4 placeholder-white/80 placeholder:font-semibold focus:border-0 focus:bg-red-800 focus:outline-none dark:bg-red-800 dark:focus:bg-red-900"
+            class="w-full bg-red-700 px-4 py-4 placeholder-white/80 placeholder:font-semibold focus:border-0 focus:bg-red-800 focus:outline-none dark:bg-red-800 dark:focus:bg-red-600"
             placeholder="Search Open5e"
             @keyup.enter="doSearch(searchText)"
           />
@@ -91,7 +91,7 @@
         <nuxt-page class="text-darkness dark:text-white" />
 
         <footer
-          class="dark mt-4 border-t-2 border-fog pt-4 text-center text-sm dark:border-gray-700"
+          class="dark mt-4 border-t border-fog pt-4 text-center text-sm dark:border-granite"
         >
           <nuxt-link to="/legal">Content provided under the OGL 1.0a</nuxt-link>
         </footer>
