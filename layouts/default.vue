@@ -1,7 +1,10 @@
 <template>
   <div class="layout text-darkness">
     <SourcesModal :show="showModal" @close="showModal = false" />
-    <div class="app-wrapper bg-fog" :class="{ 'show-sidebar': showSidebar }">
+    <div
+      class="app-wrapper bg-fog dark:bg-darkness"
+      :class="{ 'show-sidebar': showSidebar }"
+    >
       <div class="sidebar flex bg-slate-700 text-white">
         <nuxt-link to="/" class="logo bg-red">Open5e</nuxt-link>
         <div
@@ -69,7 +72,11 @@
           />
         </a>
       </div>
-      <div class="content-wrapper bg-white">
+
+      <!-- Main content -->
+      <div
+        class="content-wrapper bg-white text-darkness dark:bg-darkness dark:text-white"
+      >
         <div class="mobile-header bg-red text-white">
           <div class="sidebar-toggle hover:bg-blood" @click="toggleSidebar" />
           <nuxt-link to="/" class="logo"> Open5e </nuxt-link>
@@ -81,9 +88,11 @@
           @click="hideSidebar"
         />
         <breadcrumb-links />
-        <nuxt-page />
+        <nuxt-page class="text-darkness dark:text-white" />
 
-        <footer class="mt-4 border-t-2 border-fog pt-4 text-center text-sm">
+        <footer
+          class="dark mt-4 border-t-2 border-fog pt-4 text-center text-sm dark:border-gray-700"
+        >
           <nuxt-link to="/legal">Content provided under the OGL 1.0a</nuxt-link>
         </footer>
       </div>

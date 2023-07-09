@@ -10,7 +10,7 @@
       :id="id"
       ref="input"
       v-model="filterText"
-      class="filter-input"
+      class="filter-input bg-fog dark:bg-basalt dark:text-white"
       type="input"
       aria-description="Results will update as you type."
       @input.stop="onInput"
