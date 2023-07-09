@@ -1,9 +1,10 @@
 <template>
   <nuxt-link
-    :class="`bold block px-4 py-3 text-white hover:bg-slate-800/40
+    :class="`bold block w-full px-4  text-white hover:bg-slate-800/40
       hover:underline ${
         useRoute().fullPath === to && 'bg-slate-800 font-bold'
-      }`"
+      } ${indent && 'py-1 pl-8'} ${!indent && 'py-3'}
+      `"
     :to="to"
   >
     <slot />
@@ -20,6 +21,10 @@ export default {
     title: {
       type: String,
       default: '',
+    },
+    indent: {
+      type: Boolean,
+      default: false,
     },
   },
 };

@@ -30,12 +30,12 @@ module.exports = {
         },
 
         // colors from scss variables
-        blood: 'a82315',
+        blood: '#a82315',
         mana: '#166c9c',
         fog: '#f4f4f4',
         smoke: '#d4d4d4',
         granite: '#888',
-        // gray: '#767676', // this conflicts with the existing tailwind class
+        // gray: '#767676', // this conflicts with an existing tailwind class
         basalt: '#333',
         darkness: '#111',
       },

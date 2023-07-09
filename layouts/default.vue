@@ -1,9 +1,9 @@
 <template>
-  <div class="layout">
+  <div class="layout text-darkness">
     <SourcesModal :show="showModal" @close="showModal = false" />
-    <div class="app-wrapper" :class="{ 'show-sidebar': showSidebar }">
-      <div class="sidebar">
-        <nuxt-link to="/" class="logo">Open5e</nuxt-link>
+    <div class="app-wrapper bg-fog" :class="{ 'show-sidebar': showSidebar }">
+      <div class="sidebar flex bg-slate-700 text-white">
+        <nuxt-link to="/" class="logo bg-red">Open5e</nuxt-link>
         <div
           class="cursor-pointer bg-red-600 px-4 py-2 hover:bg-red-400"
           @click="showModal = true"
@@ -48,9 +48,10 @@
             <ul
               v-if="section.subroutes"
               v-show="useRoute().path.indexOf(section.route) != -1"
+              class="bg-slate-800/30 py-2"
             >
               <li v-for="page in section.subroutes" :key="page.slug">
-                <nav-link :to="`${section.route}/${page.slug}`">
+                <nav-link :to="`${section.route}/${page.slug}`" :indent="true">
                   {{ page.name }}
                 </nav-link>
               </li>
@@ -69,14 +70,22 @@
         </a>
       </div>
       <div class="content-wrapper bg-white">
-        <div class="mobile-header">
-          <div class="sidebar-toggle" @click="toggleSidebar" />
+        <div class="mobile-header bg-red text-white">
+          <div class="sidebar-toggle hover:bg-blood" @click="toggleSidebar" />
           <nuxt-link to="/" class="logo"> Open5e </nuxt-link>
           <div class="spacer" />
         </div>
-        <div v-show="showSidebar" class="shade" @click="hideSidebar" />
+        <div
+          v-show="showSidebar"
+          class="shade bg-basalt/50"
+          @click="hideSidebar"
+        />
         <breadcrumb-links />
         <nuxt-page />
+
+        <footer class="mt-4 border-t-2 border-fog pt-4 text-center text-sm">
+          <nuxt-link to="/legal">Content provided under the OGL 1.0a</nuxt-link>
+        </footer>
       </div>
     </div>
   </div>
@@ -118,6 +127,7 @@ export default {
       return this.store.isLoadingData;
     },
 
+    // returns an array of routes that the cmpnt iterates thru to create nav
     routes: function () {
       return [
         {
@@ -185,8 +195,12 @@ export default {
           title: 'Running a Game',
           route: '/running',
           subroutes: this.store.sections.filter(
-            (page) => page.parent === 'Running a Game'
+            (page) => page.parent === 'Rules'
           ),
+        },
+        {
+          title: 'API Docs',
+          route: '/api-docs',
         },
       ];
     },
@@ -255,7 +269,6 @@ export default {
   align-content: stretch;
   height: 100vh;
   width: 100vw;
-  background: $color-fog;
   position: relative;
 }
 
@@ -272,49 +285,16 @@ export default {
   }
 }
 
-// .input-search {
-//   position: sticky;
-//   top: 0;
-//   width: 100%;
-//   background: $color-blood;
-//   color: white;
-//   padding: 1rem;
-//   border: none;
-//   font-size: $font-size-base;
-//   outline: none;
-//   z-index: 2;
-
-//   &::placeholder {
-//     color: white;
-//     opacity: 0.6;
-//   }
-// }
-
-footer {
-  margin-top: 1rem;
-  font-size: 0.8rem;
-  display: block;
-  text-align: center;
-  padding-top: 1rem;
-  border-top: 1px solid $color-fog;
-}
-
 .mobile-header {
   display: none;
   width: calc(100% + 4rem);
   top: -1rem;
   height: 3rem;
-  background-color: $color-fireball;
   position: sticky;
-  color: white;
   flex-direction: row;
   justify-content: space-between;
   margin: (-$content-padding-y) (-$content-padding-x) 0;
   z-index: 60;
-
-  a {
-    color: white;
-  }
 
   .sidebar-toggle {
     display: flex;
@@ -326,11 +306,7 @@ footer {
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
-
-    &:hover {
-      background-color: $color-blood;
-      cursor: pointer;
-    }
+    cursor: pointer;
   }
 
   .logo {
@@ -346,14 +322,12 @@ footer {
 }
 
 .sidebar {
-  @apply bg-slate-700 text-white;
   width: $sidebar-width;
   min-width: $sidebar-width;
   overflow-y: auto;
   font-size: 15px;
   position: relative;
   z-index: 50;
-  display: flex;
   flex-direction: column;
 
   .sidebar-link {
@@ -369,24 +343,12 @@ footer {
 
   .logo {
     display: block;
-    background-color: $color-fireball;
     padding: 1rem 3rem 1rem 1rem;
     cursor: pointer;
     margin-top: 0;
     font-family: Lora, serif;
     font-weight: 600;
     font-size: 2em;
-  }
-
-  // Style the root elements of the sidebar only
-  > ul > li {
-    // and the child elements of the sidebar (eg classes under "class")
-    ul {
-      @apply bg-slate-800/30 py-2;
-      & > li > a {
-        @apply py-1 pl-8 pr-4;
-      }
-    }
   }
 }
 
@@ -398,7 +360,6 @@ footer {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba($color-basalt, 0.5);
     z-index: 48;
   }
 
@@ -436,7 +397,6 @@ footer {
       overflow-x: visible;
 
       .side-note {
-        // position: absolute;
         right: 2rem;
       }
     }
