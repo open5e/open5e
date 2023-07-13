@@ -28,7 +28,6 @@ table {
   padding: 0 $pad-lg;
   h1 {
     font-size: 2rem;
-    color: $color-blood;
     &:not(:first-child) {
       margin-top: $pad-xl;
     }
@@ -120,7 +119,6 @@ h2.filter-header {
 }
 
 blockquote {
-  background-color: #eaeaea;
   border-left: 0.75rem solid #999;
   padding: 0.1rem 1rem 1rem 1rem;
   margin-top: 1rem;

@@ -56,12 +56,12 @@
       <b>VueJs UI layer.</b> A Vue.js single-page app, using the Nuxt framework.
     </p>
 
-    <a href="https://github.com/open5e/open5e" class="external-button mr-2"
-      ><img src="/img/github-website-button.png" alt="Open5e site repo"
-    /></a>
-    <a href="https://github.com/open5e/open5e-api" class="external-button"
-      ><img src="/img/github-api-button.png" alt="Open5e API Repo"
-    /></a>
+    <a href="https://github.com/open5e/open5e" class="external-button mr-2">
+      <img src="/img/github-website-button.png" alt="Open5e site repo" />
+    </a>
+    <a href="https://github.com/open5e/open5e-api" class="external-button">
+      <img src="/img/github-api-button.png" alt="Open5e API Repo" />
+    </a>
 
     <h3>Support us on Patreon</h3>
     <p>
@@ -69,20 +69,22 @@
       on donations and patrons to pay for our server costs, and to fund an
       increasing effort to fill out flavor text and add art.
     </p>
-    <a href="https://www.patreon.com/open5e" class="external-button"
-      ><img
+    <a href="https://www.patreon.com/open5e" class="external-button">
+      <img
+        class="rounded-lg"
         src="/img/patron-button.png"
         alt="Become a patron! Keep Open5e ad free!"
-    /></a>
+      />
+    </a>
 
     <h3>Join the Discord</h3>
     <p>
       Join us to chat, talk about development, and share neat homebrew. We don't
       bite!
     </p>
-    <a href="https://discord.gg/QXqF6gSVqB" class="external-button"
-      ><img src="/img/discord-button.png" alt="Join our discord"
-    /></a>
+    <a href="https://discord.gg/QXqF6gSVqB" class="external-button">
+      <img src="/img/discord-button.png" alt="Join our discord" />
+    </a>
 
     <h2>The API</h2>
 
@@ -114,11 +116,6 @@ export default {
 </script>
 
 <style lang="scss">
-.monster-block,
-.spell-block {
-  margin-top: 1rem;
-}
-
 .external-button {
   margin-top: 0.6rem;
   zoom: 40%;

@@ -2,14 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  .container {
-    @apply text-slate-900;
-  }
-}
-
 h1 {
-  @apply text-3xl;
+  @apply text-3xl text-blood dark:text-white;
 }
 
 h2 {
@@ -30,4 +24,8 @@ h5 {
 
 h6 {
   @apply text-sm;
+}
+
+blockquote {
+  @apply bg-fog dark:bg-basalt;
 }

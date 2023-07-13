@@ -17,7 +17,7 @@
       <p><b>Armor Class</b> {{ monster.armor_class }}</p>
       <p><b>Hit Points</b> {{ monster.hit_points }} ({{ monster.hit_dice }})</p>
       <p>
-        <b class="pad-r-sm">Speed</b>
+        <b class="pr-1">Speed</b>
         <span
           v-for="(speed, key, index) in monster.speed"
           v-show="key !== 'hover'"
@@ -65,32 +65,28 @@
         </div>
         <div class="ability-block">
           <span class="ability-name">WIS</span>
-          <span class="ability-score"
-            >{{ monster.wisdom }} (<stat-bonus :stat="monster.wisdom" />)</span
-          >
+          <span class="ability-score">
+            {{ monster.wisdom }} (<stat-bonus :stat="monster.wisdom" />)
+          </span>
         </div>
         <div class="ability-block">
           <span class="ability-name">CHA</span>
-          <span class="ability-score"
-            >{{ monster.charisma }} (<stat-bonus
-              :stat="monster.charisma"
-            />)</span
-          >
+          <span class="ability-score">
+            {{ monster.charisma }} (<stat-bonus :stat="monster.charisma" />)
+          </span>
         </div>
       </div>
       <hr />
       <p v-if="getSaves">
-        <b class="pad-r-sm">Saving Throws</b>
+        <b class="pr-1">Saving Throws</b>
         <span v-for="(save, index) in getSaves" :key="save.name">
           {{ save.name }}
-          <stat-bonus :stat="save.val" :type="save.type" /><span
-            v-show="index < getSaves.length - 1"
-            >,
-          </span>
+          <stat-bonus :stat="save.val" :type="save.type" />
+          <span v-show="index < getSaves.length - 1"> , </span>
         </span>
       </p>
       <p v-if="monster.skills">
-        <b class="pad-r-sm">Skills</b>
+        <b class="pr-1">Skills</b>
         <span
           v-for="(skill, key, index) in monster.skills"
           v-show="key !== 'hover'"
@@ -102,7 +98,7 @@
         </span>
       </p>
       <p v-if="monster.damage_vulnerabilities">
-        <b class="pad-r-sm">Damage Vulnerabilities</b>
+        <b class="pr-1">Damage Vulnerabilities</b>
         {{ monster.damage_vulnerabilities }}
       </p>
       <p v-if="monster.damage_resistances">
@@ -114,7 +110,7 @@
       <p v-if="monster.senses"><b>Senses</b> {{ monster.senses }}</p>
       <p v-if="monster.languages"><b>Languages</b> {{ monster.languages }}</p>
       <p v-if="monster.challenge_rating">
-        <b class="pad-r-sm">Challenge</b>
+        <b class="pr-1">Challenge</b>
         <challenge-render :challenge="monster.challenge_rating" />
       </p>
       <hr />
