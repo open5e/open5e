@@ -4,6 +4,7 @@
     :vue-template="true"
     :options="{ tables: true, headerLevelStart: headerLevel }"
     :markdown="mdText"
+    :extensions="insertCrossLinks"
   />
 </template>
 
@@ -47,6 +48,15 @@ export default {
         return this.text;
       }
     },
+
+    // Showdown extension for inserting cross-links into markdown
+    insertCrossLinks: () => [
+      {
+        type: 'lang',
+        regex: /<(spell|monster):(\w+)>(\w+)<\/(spell|monster)>/g,
+        replace: '<a href="/$1s/$2">$3</a>',
+      },
+    ],
   },
   mounted() {
     if (this.src) {
