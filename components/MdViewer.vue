@@ -1,22 +1,25 @@
 <template>
-  <VueShowdown
-    ref="mdwrapper"
-    :vue-template="true"
-    :options="{ tables: true, headerLevelStart: headerLevel }"
-    :markdown="mdText"
-    :extensions="insertCrossLinks"
-  />
+  <div>
+    <VueShowdown
+      ref="mdwrapper"
+      :vue-template="true"
+      :options="{
+        tables: true,
+        headerLevelStart: headerLevel,
+        vueTemplate: true,
+      }"
+      :markdown="mdText"
+      :extensions="insertCrossLinks"
+    />
+  </div>
 </template>
 
 <script>
 import axios from 'axios';
 import { VueShowdown } from 'vue-showdown';
-
 export default {
   name: 'MdViewer',
-  components: {
-    VueShowdown: VueShowdown,
-  },
+  components: { VueShowdown },
   props: {
     src: {
       type: String || undefined,
@@ -48,13 +51,12 @@ export default {
         return this.text;
       }
     },
-
     // Showdown extension for inserting cross-links into markdown
     insertCrossLinks: () => [
       {
-        type: 'lang',
+        type: 'output',
         regex: /<(spell|monster):(\w+)>(\w+)<\/(spell|monster)>/g,
-        replace: '<a href="/$1s/$2">$3</a>',
+        replace: '<cross-link href="/$1s/$2">$3</cross-link>',
       },
     ],
   },
