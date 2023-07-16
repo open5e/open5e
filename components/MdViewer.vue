@@ -56,7 +56,7 @@ export default {
       {
         type: 'output',
         regex: /<(spell|monster):(\w+)>(\w+)<\/(spell|monster)>/g,
-        replace: '<cross-link href="/$1s/$2">$3</cross-link>',
+        replace: '<cross-link resourceType="$1" url="/$1s/$2" title="$3" />',
       },
     ],
   },
