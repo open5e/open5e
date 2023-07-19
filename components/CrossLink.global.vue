@@ -3,17 +3,43 @@
     {{ title }}
     <article
       v-if="content"
-      class="group absolute top--1 hidden h-32 w-64 bg-slate-100 px-3 text-black group-hover:block dark:bg-basalt dark:text-white"
+      class="absolute top--1 hidden h-max bg-slate-100 px-4 py-3 text-black shadow-md dark:bg-basalt dark:text-white md:group-hover:block"
     >
-      <p class="group flex justify-center gap-2 uppercase">
-        <span class="text-lg font-bold">{{ title }}</span>
-      </p>
       <div v-if="resourceType === 'spell'">
-        <p class="text-red">{{ content.level }} {{ content.school }} Spell</p>
+        <p
+          class="group m-0 mb-1 flex justify-between gap-2 border-b-2 border-blood pb-1 align-middle"
+        >
+          <span
+            class="font-serif text-lg font-bold tracking-wide text-blood dark:text-white"
+          >
+            {{ title }}
+          </span>
+
+          <span
+            class="block whitespace-nowrap before:mr-2 before:font-bold before:content-['|']"
+          >
+            {{ content.level }} {{ content.school }} Spell
+          </span>
+        </p>
+
+        <div>
+          <p
+            v-for="item in [
+              { title: 'Casting Time', body: content.casting_time },
+              { title: 'Duration', body: content.duration },
+              { title: 'Range', body: content.range },
+              { title: 'Components', body: content.components },
+            ]"
+            :key="item.title"
+            class="my-0 py-0"
+          >
+            <span class="font-bold after:mr-1 after:content-[':']">
+              {{ item.title }}
+            </span>
+            <span>{{ item.body }}</span>
+          </p>
+        </div>
       </div>
-      <p class="justify-self-center pt-0 text-sm text-basalt dark:text-smoke">
-        {{ `https://open5e.com${url}` }}
-      </p>
     </article>
   </nuxt-link>
 </template>
@@ -50,7 +76,8 @@ export default {
       this.loading = true;
       const apiURL = this.$nuxt.$config.public.apiUrl;
       const endpoint = `${this.resourceType}s/${this.title.toLowerCase()}`;
-      const params = '?fields=level,school';
+      const params =
+        '?fields=level,school,casting_time,duration,range,components';
       const res = await axios.get(`${apiURL}/${endpoint}/${params}`);
       this.content = res.data;
     },
