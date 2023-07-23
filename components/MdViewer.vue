@@ -55,8 +55,8 @@ export default {
     insertCrossLinks: () => [
       {
         type: 'output',
-        regex: /<(spell|monster):(\w+)>(\w+)<\/(spell|monster)>/g,
-        replace: '<cross-link resourceType="$1" url="/$1s/$2" title="$3" />',
+        regex: /<([^:]+):([^>]+)>(.*?)<\/\1>/g,
+        replace: '<cross-link resourceType="$1" slug="$2" title="$3" />',
       },
     ],
   },
