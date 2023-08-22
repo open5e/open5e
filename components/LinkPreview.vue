@@ -47,6 +47,12 @@ export default {
           return `${data.type}, ${data.rarity} 
             ${data.requires_attunement ?? '(requires attunement)'}
           `;
+        case 'characters':
+        case 'combat':
+        case 'equipment':
+        case 'gameplaymechanic':
+        case 'running':
+          return data.parent.charAt(0).toUpperCase() + data.parent.slice(1);
         default:
           return this.category.charAt(0).toUpperCase() + this.category.slice(1);
       }

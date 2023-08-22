@@ -68,17 +68,37 @@ const paramsByType = {
     endpoint: 'backgrounds',
     queryParams: '?fields=name,document__title',
   },
+  characters: {
+    subroute: 'characters',
+    endpoint: 'sections',
+    queryParams: '?fields=name,parent,document__title',
+  },
   class: {
     endpoint: 'classes',
-    queryParams: '',
+    queryParams: '?fields=name,document__title',
+  },
+  combat: {
+    subroute: 'combat',
+    endpoint: 'sections',
+    queryParams: '?fields=name,parent,document__title',
   },
   condition: {
     endpoint: 'conditions',
     queryParams: '?fields=name,desc',
   },
+  equipment: {
+    subroute: 'equipment',
+    endpoint: 'sections',
+    queryParams: '?fields=name,parent,document__title',
+  },
   feat: {
     endpoint: 'feats',
     queryParams: '?fields=name,document__title',
+  },
+  gameplaymechanic: {
+    subroute: 'gameplay-mechanics',
+    endpoint: 'sections',
+    queryParams: '?fields=name,parent,document__title',
   },
   magicitem: {
     subroute: 'magic-items',
@@ -97,9 +117,10 @@ const paramsByType = {
     endpoint: 'races',
     queryParams: '?fields=name,document__title',
   },
-  rule: {
+  running: {
+    subroute: 'running',
     endpoint: 'sections',
-    queryParams: '?fields=name,document__title',
+    queryParams: '?fields=name,parent,document__title',
   },
   spell: {
     endpoint: 'spells',
