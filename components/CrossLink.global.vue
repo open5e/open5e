@@ -1,12 +1,16 @@
+<!--
+  This component is global so that the markdown parser can see it and parse the
+  cross-link tags as components. There might be a better way to handle this
+-->
 <template>
   <nuxt-link
-    v-if="acceptibleTypes.includes(type)"
+    v-if="acceptibleTypes.includes(category)"
     :to="url"
     class="group relative"
     @mouseover="loadData"
   >
     {{ title }}
-    <link-preview v-if="content" :content="content" :category="type" />
+    <link-preview v-if="content" :content="content" :category="category" />
   </nuxt-link>
 
   <!-- If link markdown is invalid, render a span instead -->
@@ -28,16 +32,16 @@ export default {
       loading: false,
       content: undefined,
       acceptibleTypes: Object.keys(paramsByType),
-      type: this.resourceType.split('-').join(''), // rmv dashes from prop
+      category: this.resourceType.split('-').join(''), // rmv dashes from prop
     };
   },
   computed: {
     url() {
-      const { subroute, endpoint } = paramsByType[this.type];
+      const { subroute, endpoint } = paramsByType[this.category];
       if (!endpoint) {
         return '/';
       }
-      // link subroute might be different to its API endpoint
+      // the url subroute might be different to its API endpoint
       return `/${subroute ?? endpoint}/${this.slug}`;
     },
   },
@@ -48,7 +52,7 @@ export default {
         return;
       }
       this.loading = true;
-      const { endpoint, queryParams } = paramsByType[this.type];
+      const { endpoint, queryParams } = paramsByType[this.category];
       const apiURL = this.$nuxt.$config.public.apiUrl;
       const res = await axios.get(
         `${apiURL}/${endpoint}/${this.slug}/${queryParams}`
@@ -58,7 +62,7 @@ export default {
   },
 };
 
-// used to map the type of resource passed to the component to details about each api route
+// Maps tag names from markdown to data required to show links/previews
 const paramsByType = {
   armor: {
     endpoint: 'armor',

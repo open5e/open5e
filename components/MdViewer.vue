@@ -51,7 +51,13 @@ export default {
         return this.text;
       }
     },
-    // Showdown extension for inserting cross-links into markdown
+    /* Showdown extension for inserting cross-links into markdown w/ regex
+     * Example inputs & outputs
+     * Input 1: <spell:fireball>Fireball</spell>
+     * Output 1: <cross-link resourceType=”spell” slug=”fireball” title=”Fireball” version=""/>
+     * Input 2: <magic-item:ioun-stone v2>Ioun Stone</magic-item>
+     * Output 2: <cross-link resourceType=”magic-item” slug=”ioun-stone” title=”Ioun Stone” version="2"/>
+     */
     insertCrossLinks: () => [
       {
         type: 'output',
