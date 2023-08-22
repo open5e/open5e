@@ -1,17 +1,12 @@
 <template>
   <nuxt-link
-    v-if="acceptibleTypes.includes(resourceType)"
+    v-if="acceptibleTypes.includes(type)"
     :to="url"
     class="group relative"
-    @mouseover="fetchOnMouseOver"
+    @mouseover="loadData"
   >
     {{ title }}
-    <link-preview
-      v-if="content"
-      :title="title"
-      :type="resourceType"
-      :content="content"
-    />
+    <link-preview v-if="content" :content="content" :category="type" />
   </nuxt-link>
 
   <!-- If link markdown is invalid, render a span instead -->
@@ -25,6 +20,7 @@ export default {
     title: { type: String, default: '' },
     slug: { type: String, default: '' },
     resourceType: { type: String, default: '' },
+    version: { type: String, default: '' },
   },
 
   data() {
@@ -32,25 +28,27 @@ export default {
       loading: false,
       content: undefined,
       acceptibleTypes: Object.keys(paramsByType),
+      type: this.resourceType.split('-').join(''), // rmv dashes from prop
     };
   },
   computed: {
     url() {
-      const { endpoint } = paramsByType[this.resourceType];
+      const { subroute, endpoint } = paramsByType[this.type];
       if (!endpoint) {
         return '/';
       }
-      return `/${paramsByType[this.resourceType].endpoint}/${this.slug}`;
+      // link subroute might be different to its API endpoint
+      return `/${subroute ?? endpoint}/${this.slug}`;
     },
   },
   methods: {
-    fetchOnMouseOver: async function () {
+    loadData: async function () {
       // guard clause so that data is only fetched on initial hover
       if (this.loading || this.content) {
         return;
       }
       this.loading = true;
-      const { endpoint, queryParams } = paramsByType[this.resourceType];
+      const { endpoint, queryParams } = paramsByType[this.type];
       const apiURL = this.$nuxt.$config.public.apiUrl;
       const res = await axios.get(
         `${apiURL}/${endpoint}/${this.slug}/${queryParams}`
@@ -83,7 +81,8 @@ const paramsByType = {
     queryParams: '?fields=name,document__title',
   },
   magicitem: {
-    endpoint: 'magicitem',
+    subroute: 'magic-items',
+    endpoint: 'magicitems',
     queryParams: '?fields=name,type,rarity,requires_attunement,document__title',
   },
   monster: {
@@ -96,6 +95,10 @@ const paramsByType = {
   },
   race: {
     endpoint: 'races',
+    queryParams: '?fields=name,document__title',
+  },
+  rule: {
+    endpoint: 'sections',
     queryParams: '?fields=name,document__title',
   },
   spell: {
