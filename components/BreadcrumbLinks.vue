@@ -30,7 +30,6 @@ export default {
   computed: {
     crumbs() {
       const params = this.$route.fullPath.split('/');
-
       let path = '';
 
       const crumbs = params
@@ -42,16 +41,20 @@ export default {
 
           path = `${path}/${param}`;
 
-          // format breadcrumb title from path
-          const title = param
-            .split('-')
-            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(' ');
-          return { title: title, url: path };
+          // seperate title and query params
+          const [title, queryParam] = param.split('?text=');
+
+          return {
+            url: path,
+            title: title
+              .split('-') // format crumb title
+              .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+              .join(' '),
+          };
         })
         .filter((element) => element); // remove null crumbs
 
-      // prepend Home route
+      // prepend Home route to list of crumbs
       return [{ title: 'Home', url: '/' }, ...crumbs];
     },
   },
