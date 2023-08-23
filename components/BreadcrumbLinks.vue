@@ -45,8 +45,12 @@ export default {
           // rebuild link urls segment by segment
           url += `/${segment}`;
 
-          // seperate query params
-          const [title, searchParam] = segment.split('?text=');
+          // seperate segment title & query params
+          const [title, queryParams] = segment.split('?');
+          // extract & format the search params if on the /search route
+          const searchParam =
+            title === 'search' &&
+            queryParams.split('text=')[1].split('+').join(' ');
 
           return {
             url,
