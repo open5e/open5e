@@ -3,6 +3,7 @@ const redirects = {
   '/monsters/monster-list': '/monsters',
   '/magicitems/magicitem-list': '/magic-items',
   '/spells/spells-table': '/spells',
+  '/magicitems': 'magic-items',
 };
 
 // add redirects for partial path matches here
@@ -12,6 +13,17 @@ const substitutions = [
     replaceWith: '/magic-items',
   },
 ];
+
+// redirects from /sections routes require extra data from API
+async function replaceSectionsWithParent(path) {
+  const slug = path.split('/')[2]; // isolate UID
+  const apiURL = useRuntimeConfig().public.apiUrl;
+  const endpoint = `${apiURL}/sections/${slug}`;
+  const { data } = await useFetch(endpoint);
+  if (data?.value) {
+    return `/${data.value.parent.toLowerCase()}/${slug}`;
+  }
+}
 
 export default defineNuxtRouteMiddleware((to) => {
   // rmv terminal slash from path
@@ -31,6 +43,11 @@ export default defineNuxtRouteMiddleware((to) => {
       pathWithSubs = pathWithSubs.replace(find, replaceWith);
     }
   });
+
+  // check whether a /section/ route needs to be replaced with parent from API
+  if (pathWithSubs.search('/sections/') > -1) {
+    pathWithSubs = replaceSectionsWithParent(path);
+  }
 
   // redirect if we made any substitutions into the path
   if (pathWithSubs !== path) {
