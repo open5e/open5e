@@ -19,6 +19,8 @@ async function replaceSectionsWithParent(path) {
   const slug = path.split('/')[2]; // isolate UID
   const apiURL = useRuntimeConfig().public.apiUrl;
   const endpoint = `${apiURL}/sections/${slug}`;
+
+  // fetch section parent & create redirect URL
   const { data } = await useFetch(endpoint);
   if (data?.value) {
     return `/${data.value.parent.toLowerCase()}/${slug}`;
@@ -26,31 +28,30 @@ async function replaceSectionsWithParent(path) {
 }
 
 export default defineNuxtRouteMiddleware((to) => {
-  // rmv terminal slash from path
+  // redirecting only works client-side, return if server-side
+  if (process.server) {
+    return;
+  }
+
+  // remove terminal slash from path
   const path = to.fullPath.endsWith('/')
     ? to.fullPath.slice(0, -1)
     : to.fullPath;
 
-  // if path is present in redirects obj, redirect the user
+  // if entire path is present in redirects obj, navigate to it
   if (redirects[path]) {
-    return navigateTo(redirects[path]);
+    return navigateTo(redirects[path], { redirectCode: 301 });
   }
 
   // check whether any part of the path needs to be replaced
-  let pathWithSubs = path;
   substitutions.forEach(({ find, replaceWith }) => {
     if (path.search(find) > -1) {
-      pathWithSubs = pathWithSubs.replace(find, replaceWith);
+      return navigateTo(path.replace(find, replaceWith), { redirectCode: 301 });
     }
   });
 
   // check whether a /section/ route needs to be replaced with parent from API
-  if (pathWithSubs.search('/sections/') > -1) {
-    pathWithSubs = replaceSectionsWithParent(path);
-  }
-
-  // redirect if we made any substitutions into the path
-  if (pathWithSubs !== path) {
-    return navigateTo(pathWithSubs);
+  if (path.search('/sections/') > -1) {
+    return navigateTo(replaceSectionsWithParent(path));
   }
 });
