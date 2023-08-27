@@ -1,17 +1,14 @@
 <template>
   <div class="container">
     <h1>Critical Failure!</h1>
-    <h2>Error {{ error.statusCode }}</h2>
-    <p>
-      <em>{{ error.message }}.</em>
-    </p>
+    <h2>Error {{ error?.statusCode }}</h2>
+    <p class="font-italics">{{ error?.message }}</p>
 
-    <br />
+    <button class="font-bold text-red hover:text-blood" @click="handleError">
+      Return to Homepage
+    </button>
 
-    <ul>
-      <li>Return to the <nuxt-link to="/"> Home </nuxt-link> page</li>
-      <li>Try searching for what you need in the site menu</li>
-    </ul>
+    <p>Try searching for what you need in the site menu</p>
 
     <div class="roll-container">
       <svg
@@ -78,10 +75,14 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: ['error'],
-};
+<script setup>
+const props = defineProps({
+  error: {
+    default: undefined,
+    type: Object || undefined,
+  },
+});
+const handleError = () => clearError({ redirect: '/' });
 </script>
 
 <style>
@@ -109,14 +110,5 @@ export default {
   to {
     transform: rotate(360deg);
   }
-}
-
-.in-page-search {
-  border: 2px solid #e74c3c;
-  font-size: 0.8em;
-  margin: 0.8em;
-  max-width: 100%;
-  padding: 0.8em;
-  width: 30em;
 }
 </style>
