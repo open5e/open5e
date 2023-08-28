@@ -52,6 +52,6 @@ export default defineNuxtRouteMiddleware((to) => {
 
   // check whether a /section/ route needs to be replaced with parent from API
   if (path.search('/sections/') > -1) {
-    return navigateTo(replaceSectionsWithParent(path));
+    return navigateTo(replaceSectionsWithParent(path), { redirectCode: 301 });
   }
 });
