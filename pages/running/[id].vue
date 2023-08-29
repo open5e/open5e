@@ -7,12 +7,8 @@
 
 <script>
 import axios from 'axios';
-import MdViewer from '~/components/MdViewer';
 
 export default {
-  components: {
-    MdViewer,
-  },
   data() {
     return {
       posts: [],
@@ -21,15 +17,17 @@ export default {
     };
   },
   mounted() {
+    const { id } = useRoute().params;
+    const url = `${useRuntimeConfig().public.apiUrl}/sections/${id}/`;
     return axios
-      .get(
-        `${this.$nuxt.$config.public.apiUrl}/sections/${this.$route.params.id}`
-      ) //you will need to enable CORS to make this work
-      .then((response) => {
-        this.section = response.data;
+      .get(url) //you will need to enable CORS to make this work
+      .then((response) => (this.section = response.data))
+      .catch(() => {
+        throw showError({
+          statusCode: 404,
+          message: `The page ${useRoute().path} does not exist`,
+        });
       });
   },
 };
 </script>
-
-<style lang="scss"></style>

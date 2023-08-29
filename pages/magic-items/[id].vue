@@ -6,12 +6,12 @@
         {{ item.name }}
       </h1>
       <p>
-        <em
-          >{{ item.type }}, {{ item.rarity }}
-          <span v-show="item.requires_attunement"
-            >({{ item.requires_attunement }})</span
-          ></em
-        >
+        <em>
+          {{ item.type }}, {{ item.rarity }}
+          <span v-show="item.requires_attunement">
+            ({{ item.requires_attunement }})
+          </span>
+        </em>
         <source-tag
           v-show="item.document__slug"
           :title="item.document__title"
@@ -32,14 +32,8 @@
 
 <script>
 import axios from 'axios';
-import SourceTag from '~/components/SourceTag.vue';
-import MdViewer from '~/components/MdViewer.vue';
 
 export default {
-  components: {
-    MdViewer,
-    SourceTag,
-  },
   data() {
     return {
       item: [],
@@ -55,26 +49,20 @@ export default {
     },
   },
   mounted() {
+    const { id } = useRoute().params;
+    const url = `${useRuntimeConfig().public.apiUrl}/magicitems/${id}/`;
     return axios
-      .get(
-        `${useRuntimeConfig().public.apiUrl}/magicitems/${
-          this.$route.params.id
-        }`
-      ) //you will need to enable CORS to make this work
+      .get(url) //you will need to enable CORS to make this work
       .then((response) => {
         this.item = response.data;
         this.loading = false;
+      })
+      .catch(() => {
+        throw showError({
+          statusCode: 404,
+          message: `${useRoute().path} does not exist`,
+        });
       });
   },
 };
 </script>
-
-<style scoped>
-label {
-  font-weight: bold;
-}
-
-.inline {
-  display: inline-block;
-}
-</style>

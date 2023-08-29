@@ -45,12 +45,8 @@
 
 <script>
 import axios from 'axios';
-import MdViewer from '~/components/MdViewer';
 
 export default {
-  components: {
-    MdViewer,
-  },
   data() {
     return {
       posts: [],
@@ -61,15 +57,21 @@ export default {
     };
   },
   mounted() {
+    const { id } = useRoute().params;
+    const url = `${useRuntimeConfig().public.apiUrl}/races/${id}/`;
     return axios
-      .get(`${useRuntimeConfig().public.apiUrl}/races/${this.$route.params.id}`) //you will need to enable CORS to make this work
+      .get(url) //you will need to enable CORS to make this work
       .then((response) => {
         this.race = response.data;
         this.loaded = true;
         this.subraceLength = this.race.subraces.length;
+      })
+      .catch(() => {
+        throw showError({
+          statusCode: 404,
+          message: `The page ${useRoute().path} does not exist`,
+        });
       });
   },
 };
 </script>
-
-<style lang="scss"></style>

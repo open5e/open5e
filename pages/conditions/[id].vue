@@ -7,12 +7,8 @@
 
 <script>
 import axios from 'axios';
-import MdViewer from '~/components/MdViewer';
 
 export default {
-  components: {
-    MdViewer,
-  },
   data() {
     return {
       posts: [],
@@ -21,17 +17,17 @@ export default {
     };
   },
   mounted() {
+    const { id } = useRoute().params;
+    const url = `${useRuntimeConfig().public.apiUrl}/conditions/${id}/`;
     return axios
-      .get(
-        `${useRuntimeConfig().public.apiUrl}/conditions/${
-          this.$route.params.id
-        }`
-      ) //you will need to enable CORS to make this work
-      .then((response) => {
-        this.condition = response.data;
+      .get(url) //you will need to enable CORS to make this work
+      .then((response) => (this.condition = response.data))
+      .catch(() => {
+        throw showError({
+          statusCode: 404,
+          message: `${useRoute().path} does not exist`,
+        });
       });
   },
 };
 </script>
-
-<style lang="scss"></style>
