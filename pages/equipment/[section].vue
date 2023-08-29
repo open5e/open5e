@@ -21,7 +21,6 @@ export default {
     return axios
       .get(url)
       .then((response) => {
-        console.log(response.status);
         this.section = response.data;
       })
       .catch(() => {
