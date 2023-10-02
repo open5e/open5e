@@ -173,16 +173,8 @@
 
 <script>
 import axios from 'axios';
-import StatBonus from '~/components/StatBonus.vue';
-import ChallengeRender from '~/components/ChallengeRender.vue';
-import MdViewer from '~/components/MdViewer';
 
 export default {
-  components: {
-    StatBonus,
-    ChallengeRender,
-    MdViewer,
-  },
   data() {
     return {
       posts: [],
@@ -225,13 +217,19 @@ export default {
     },
   },
   created() {
+    const { id } = useRoute().params;
+    const url = `${useRuntimeConfig().public.apiUrl}/monsters/${id}/`;
     return axios
-      .get(
-        `${useRuntimeConfig().public.apiUrl}/monsters/${this.$route.params.id}`
-      )
+      .get(url)
       .then((response) => {
         this.monster = response.data;
         this.loading = false;
+      })
+      .catch(() => {
+        throw showError({
+          statusCode: 404,
+          message: 'This monster does not exist',
+        });
       });
   },
 };

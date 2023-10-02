@@ -43,29 +43,26 @@
 
 <script>
 import axios from 'axios';
-import MdViewer from '~/components/MdViewer';
-import SourceTag from '~/components/SourceTag';
 export default {
-  components: { MdViewer, SourceTag },
   data() {
-    return {
-      title: '',
-      background: null,
-    };
+    return { background: null };
   },
 
   mounted() {
-    const url = `${useRuntimeConfig().public.apiUrl}/backgrounds/${
-      this.$route.params.background
-    }`;
-    console.log(this.$route.params.background);
+    const { background } = useRoute().params;
+    const { apiUrl } = useRuntimeConfig().public;
+    const url = `${apiUrl}/backgrounds/${background}/`;
 
     //you will need to enable CORS to make this work
-    return axios.get(url).then((response) => {
-      this.background = response.data;
-    });
+    return axios
+      .get(url)
+      .then((response) => (this.background = response.data))
+      .catch(() => {
+        throw showError({
+          statusCode: 404,
+          message: `${useRoute().path} does not exist`,
+        });
+      });
   },
 };
 </script>
-
-<style></style>

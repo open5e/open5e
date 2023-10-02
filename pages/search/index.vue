@@ -79,7 +79,7 @@
         <nuxt-link
           tag="a"
           :params="{ id: result.slug }"
-          :to="`/${result.route}${result.slug}`"
+          :to="`/magic-items/${result.slug}`"
         >
           {{ result.name }}
         </nuxt-link>

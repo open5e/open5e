@@ -1,7 +1,7 @@
 <template>
   <main v-if="feat" class="docs-container container">
     <h1>
-      <span>{{ title }}</span>
+      <span>{{ feat.name }}</span>
       <source-tag
         v-if="feat.document__slug !== 'wotc-srd'"
         :text="feat.document__slug"
@@ -25,29 +25,25 @@
 
 <script>
 import axios from 'axios';
-import MdViewer from '~/components/MdViewer';
-import SourceTag from '~/components/SourceTag';
 export default {
-  components: { MdViewer, SourceTag },
   data() {
-    return {
-      title: '',
-      feat: null,
-    };
+    return { feat: null };
   },
 
   mounted() {
-    const url = `${useRuntimeConfig().public.apiUrl}/feats/${
-      this.$route.params.feat
-    }`;
+    const { feat } = useRoute().params;
+    const url = `${useRuntimeConfig().public.apiUrl}/feats/${feat}/`;
 
     //you will need to enable CORS to make this work
-    return axios.get(url).then((response) => {
-      this.feat = response.data;
-      this.title = response.data.name;
-    });
+    return axios
+      .get(url)
+      .then((response) => (this.feat = response.data))
+      .catch(() => {
+        throw showError({
+          statusCode: 404,
+          message: `The route ${useRoute().path} does not exist`,
+        });
+      });
   },
 };
 </script>
-
-<style></style>

@@ -48,13 +48,14 @@ export default {
       filter: '',
       isLoading: false,
       available_classes: [
-        'Bard',
-        'Cleric',
-        'Sorcerer',
-        'Wizard',
-        'Druid',
-        'Paladin',
-        'Warlock',
+        'bard',
+        'cleric',
+        'sorcerer',
+        'wizard',
+        'druid',
+        'paladin',
+        'warlock',
+        'ranger',
       ],
     };
   },
@@ -121,6 +122,14 @@ export default {
     },
   },
   mounted() {
+    // throw an error if the class is not a valid spellcasting class
+    if (!this.available_classes.includes(useRoute().params.charclass)) {
+      throw createError({
+        statusCode: 404,
+        fatal: true,
+        message: `The page ${useRoute().path} does not exist`,
+      });
+    }
     this.filter = this.$route.params.charclass;
     this.getSpells();
   },

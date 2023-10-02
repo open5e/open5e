@@ -1,59 +1,59 @@
 <template>
-  <main v-if="classDetails" class="docs-container container">
-    <h1>{{ className }}</h1>
+  <main v-if="classData" class="docs-container container">
+    <h1>{{ classData.name }}</h1>
 
     <section>
       <h2>Class Features</h2>
-      <p>As a {{ className }} you gain the following features.</p>
+      <p>As a {{ classData.name }} you gain the following features.</p>
       <h3>Hit Points</h3>
       <p>
         <span class="font-bold">Hit Dice: </span>
-        {{ classDetails.hit_dice }} per {{ className }} level
+        {{ classData.hit_dice }} per {{ classData.name }} level
       </p>
       <p>
         <span class="font-bold">Hit Points at 1st Level: </span>
-        {{ classDetails.hp_at_1st_level }}
+        {{ classData.hp_at_1st_level }}
       </p>
       <p>
         <span class="font-bold">Hit Points at Higher Levels: </span>
-        {{ classDetails.hp_at_higher_levels }}
+        {{ classData.hp_at_higher_levels }}
       </p>
 
       <h3>Proficiencies</h3>
       <p>
         <span class="font-bold">Armor: </span>
-        {{ classDetails.prof_armor }}
+        {{ classData.prof_armor }}
       </p>
       <p>
         <span class="font-bold">Weapons: </span>
-        {{ classDetails.prof_weapons }}
+        {{ classData.prof_weapons }}
       </p>
       <p>
         <span class="font-bold">Tools: </span>
-        {{ classDetails.prof_tools }}
+        {{ classData.prof_tools }}
       </p>
       <p>
         <span class="font-bold">Saving Throws: </span>
-        {{ classDetails.prof_saving_throws }}
+        {{ classData.prof_saving_throws }}
       </p>
       <p>
         <span class="font-bold">Skills: </span>
-        {{ classDetails.prof_skills }}
+        {{ classData.prof_skills }}
       </p>
 
       <h3>The {{ className }}</h3>
-      <md-viewer :text="classDetails.table" />
+      <md-viewer :text="classData.table" />
     </section>
 
     <section>
       <h2>Class Abilities</h2>
-      <md-viewer :text="classDetails.desc" />
+      <md-viewer :text="classData.desc" />
     </section>
     <section>
-      <h2>{{ classDetails.subtypes_name }}</h2>
-      <ul v-for="archetype in classDetails.archetypes" :key="archetype">
+      <h2>{{ classData.subtypes_name }}</h2>
+      <ul v-for="archetype in classData.archetypes" :key="archetype">
         <li>
-          <nuxt-link :to="`${classDetails.slug}/${archetype.slug}`" tag="a">
+          <nuxt-link :to="`${classData.slug}/${archetype.slug}`" tag="a">
             {{ archetype.name }}
           </nuxt-link>
         </li>
@@ -65,28 +65,25 @@
 </template>
 
 <script>
-import MdViewer from '~/components/MdViewer';
 import axios from 'axios';
 
 export default {
-  components: { MdViewer },
   data() {
-    return {
-      className: '',
-      classDetails: null,
-      url: '',
-    };
+    return { classData: undefined };
   },
-
   mounted() {
-    const url = `${useRuntimeConfig().public.apiUrl}/classes/${
-      this.$route.params.className
-    }`;
+    const { className } = useRoute().params;
+    const url = `${useRuntimeConfig().public.apiUrl}/classes/${className}/`;
     //you will need to enable CORS to make this work
-    return axios.get(url).then((response) => {
-      this.classDetails = response.data;
-      this.className = response.data.name;
-    });
+    return axios
+      .get(url)
+      .then((response) => (this.classData = response.data))
+      .catch(() => {
+        throw showError({
+          statusCode: 404,
+          message: `${useRoute().path} does not exist`,
+        });
+      });
   },
 };
 </script>

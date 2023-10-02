@@ -16,28 +16,32 @@
 </template>
 
 <script>
-import MdViewer from '~/components/MdViewer.vue';
-import SourceTag from '~/components/SourceTag.vue';
 import axios from 'axios';
-
 export default {
-  components: { MdViewer, SourceTag },
   data() {
-    return {
-      subclass: null,
-    };
+    return { subclass: null };
   },
-
   mounted() {
-    const url = `${useRuntimeConfig().public.apiUrl}/classes/${
-      this.$route.params.className
-    }`;
+    const { className, subclass } = useRoute().params;
+    const url = `${useRuntimeConfig().public.apiUrl}/classes/${className}/`;
+
     //you will need to enable CORS to make this work
-    return axios.get(url).then((response) => {
-      this.subclass = response.data.archetypes.find(
-        (subclass) => subclass.slug === this.$route.params.subclass
-      );
-    });
+    return axios
+      .get(url)
+      .then((response) => {
+        this.subclass = response.data.archetypes.find(
+          (subclass) => subclass.slug === this.$route.params.subclass
+        );
+        if (!this.subclass) {
+          navigateTo(`/classes/${className}`, { statusCode: '404' });
+        }
+      })
+      .catch(() => {
+        throw showError({
+          statusCode: 404,
+          message: `${useRoute().path} does not exist`,
+        });
+      });
   },
 };
 </script>

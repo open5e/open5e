@@ -34,7 +34,6 @@ export default {
     const url = `${useRuntimeConfig().public.apiUrl}/feats/`;
     //you will need to enable CORS to make this work
     return axios.get(url).then((response) => {
-      console.log(response.data);
       this.feats = response.data.results;
     });
   },

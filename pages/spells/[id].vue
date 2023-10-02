@@ -47,12 +47,8 @@
 
 <script>
 import axios from 'axios';
-import MdViewer from '~/components/MdViewer';
 
 export default {
-  components: {
-    MdViewer,
-  },
   data() {
     return {
       spell: [],
@@ -69,13 +65,19 @@ export default {
     },
   },
   mounted() {
+    const { id } = useRoute().params;
+    const url = `${useRuntimeConfig().public.apiUrl}/spells/${id}/`;
     return axios
-      .get(
-        `${this.$nuxt.$config.public.apiUrl}/spells/${this.$route.params.id}`
-      ) //you will need to enable CORS to make this work
+      .get(url)
       .then((response) => {
         this.spell = response.data;
         this.loading = false;
+      })
+      .catch(() => {
+        throw showError({
+          statusCode: 404,
+          message: `The page ${useRoute().path} does not exist`,
+        });
       });
   },
 };
