@@ -19,6 +19,9 @@
             class="mr-1"
           />
           <span>{{ crumb.title }}</span>
+          <span v-if="crumb.subtitle" class="ml-2 font-thin text-granite">
+            ({{ crumb.subtitle }})
+          </span>
         </nuxt-link>
       </li>
     </ol>
@@ -29,30 +32,39 @@
 export default {
   computed: {
     crumbs() {
-      const params = this.$route.fullPath.split('/');
-
-      let path = '';
-
-      const crumbs = params
-        .map((param) => {
+      // iterate over segments of current path to create breadcrumbs
+      let url = '';
+      const breadcrumbs = this.$route.fullPath
+        .split('/')
+        .map((segment) => {
           // ignore initial & trailing slashes
-          if (param === '' || param === '/') {
+          if (segment === '' || segment === '/') {
             return;
           }
 
-          path = `${path}/${param}`;
+          // rebuild link urls segment by segment
+          url += `/${segment}`;
 
-          // format breadcrumb title from path
-          const title = param
-            .split('-')
-            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(' ');
-          return { title: title, url: path };
+          // seperate segment title & query params
+          const [title, queryParams] = segment.split('?');
+          // extract & format the search params if on the /search route
+          const searchParam =
+            title === 'search' &&
+            queryParams.split('text=')[1].split('+').join(' ');
+
+          return {
+            url,
+            title: title // format crumb title
+              .split('-')
+              .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+              .join(' '),
+            subtitle: searchParam,
+          };
         })
-        .filter((element) => element); // remove null crumbs
+        .filter((breadcrumb) => breadcrumb); // filter null crumbs
 
-      // prepend Home route
-      return [{ title: 'Home', url: '/' }, ...crumbs];
+      // prepend Home route to list of crumbs
+      return [{ title: 'Home', url: '/' }, ...breadcrumbs];
     },
   },
 };
