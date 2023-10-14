@@ -2,14 +2,7 @@
   <section class="docs-container container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Monster List</h1>
-      <filter-input
-        id="filter-monsters"
-        ref="filter"
-        class="filter"
-        placeholder="Filter monsters..."
-        @input="updateFilter"
-        @keyup.enter="onFilterEnter"
-      />
+      <list-filter></list-filter>
     </div>
     <div>
       <div>
@@ -99,7 +92,7 @@
 </template>
 
 <script>
-import FilterInput from '~/components/FilterInput.vue';
+import ListFilter from './filter.vue';
 import FractionRenderer from '~/components/FractionRenderer.vue';
 import SourceTag from '~/components/SourceTag.vue';
 import SortableTableHeader from '~/components/SortableTableHeader.vue';
@@ -107,7 +100,7 @@ import { useMainStore } from '~/store';
 
 export default {
   components: {
-    FilterInput,
+    ListFilter,
     FractionRenderer,
     SourceTag,
   },
