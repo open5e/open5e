@@ -2,8 +2,118 @@
   <section class="docs-container container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Monster List</h1>
-      <list-filter></list-filter>
+      <FilterButton @showFilters="displayFilters = !displayFilters" />
     </div>
+    <!-- FILTER BOX -->
+    <div
+      v-if="displayFilters"
+      class="filter-header-wrapper flex flex-wrap bg-smoke px-2"
+    >
+      <div class="flex w-full flex-wrap">
+        <span class="flex w-full font-bold">CHALLENGE RATING</span>
+        <div class="flex w-full px-1 md:w-1/2">
+          <label for="challengeRtgLow" class="w-1/2">From:</label>
+          <select
+            id="challengeRtgLow"
+            v-model="filters.challengeLow"
+            name="challengeRtgLow"
+            class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
+          >
+            <option
+              v-for="rtg in challengeRatings"
+              :key="rtg"
+              class=""
+              v-text="rtg"
+            ></option>
+          </select>
+        </div>
+        <div class="flex w-full px-1 md:w-1/2">
+          <label for="challengeRtgHigh" class="w-1/2">To:</label>
+          <select
+            id="challengeRtgHigh"
+            v-model="filters.challengeHigh"
+            name="challengeRtgHigh"
+            class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
+          >
+            <option
+              v-for="rtg in challengeRatings"
+              :key="rtg"
+              v-text="rtg"
+            ></option>
+          </select>
+        </div>
+      </div>
+      <div class="flex w-full flex-wrap">
+        <span class="flex w-full font-bold">HIT POINTS</span>
+        <div class="flex w-full px-1 md:w-1/2">
+          <label for="hpLow" class="w-1/2">From (low):</label>
+          <input
+            id="hpLow"
+            v-model="filters.hpLow"
+            name="hpLow"
+            class="w-1/2 rounded-md px-2 ring-1 ring-blood focus:ring-2 focus:ring-blood"
+          />
+        </div>
+        <div class="flex w-full px-1 md:w-1/2">
+          <label for="hpHigh" class="w-1/2">To (high):</label>
+          <input
+            id="hpHigh"
+            v-model="filters.hpHigh"
+            name="hpHigh"
+            class="w-1/2 rounded-md px-2 ring-1 ring-blood focus:ring-2 focus:ring-blood"
+          />
+        </div>
+      </div>
+      <div class="flex w-full flex-wrap pr-1 pt-4 md:w-1/2">
+        <label for="hpLow" class="w-1/2 font-bold">SIZE:</label>
+        <select
+          id="hpLow"
+          v-model="filters.size"
+          name="hpLow"
+          class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
+        >
+          <option v-for="size in sizes" :key="size" v-text="size"></option>
+        </select>
+      </div>
+      <div class="flex w-full flex-wrap pt-4 md:w-1/2">
+        <div class="flex w-full px-1">
+          <label for="hpLow" class="w-full font-bold">TYPE:</label>
+          <select
+            id="hpLow"
+            v-model="filters.type"
+            name="hpLow"
+            class="w-full rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
+          >
+            <option
+              v-for="monsterType in types"
+              :key="monsterType"
+              v-text="monsterType"
+            ></option>
+          </select>
+        </div>
+      </div>
+      <div class="flex w-full flex-wrap pt-4">
+        <div class="flex w-1/2 justify-center">
+          <button
+            class="rounded-md bg-fog p-1 text-blood outline outline-1 outline-blood hover:bg-blood hover:text-fog"
+            @click="clearFilters()"
+          >
+            <Icon name="heroicons:x-mark" class="mb-1 mr-1" />
+            Clear Filters
+          </button>
+        </div>
+        <div class="flex w-1/2 justify-center">
+          <button
+            class="rounded-md bg-fog p-1 text-blood outline outline-1 outline-blood hover:bg-blood hover:text-fog"
+            @click="applyFilters()"
+          >
+            <Icon name="heroicons:check" class="mr-1" />
+            Apply Filters
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- END FILTER BOX -->
     <div>
       <div>
         <h3
@@ -92,7 +202,7 @@
 </template>
 
 <script>
-import ListFilter from './filter.vue';
+import FilterButton from '~/components/FilterButton.vue';
 import FractionRenderer from '~/components/FractionRenderer.vue';
 import SourceTag from '~/components/SourceTag.vue';
 import SortableTableHeader from '~/components/SortableTableHeader.vue';
@@ -100,7 +210,7 @@ import { useMainStore } from '~/store';
 
 export default {
   components: {
-    ListFilter,
+    FilterButton,
     FractionRenderer,
     SourceTag,
   },
@@ -110,13 +220,76 @@ export default {
   },
   data() {
     return {
+      filters: {
+        challengeLow: null,
+        challengeHigh: null,
+        hpLow: null,
+        hpHigh: null,
+        size: null,
+        type: null,
+      },
+      challengeRatings: [
+        0,
+        '1/8',
+        '1/4',
+        '1/2',
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+      ],
       filter: '',
+      sizes: ['Tiny', 'Small', 'Medium', 'Large', 'Huge', 'Gargantuan'],
+      types: [
+        'Aberrations',
+        'Beasts',
+        'Celestials',
+        'Constructs',
+        'Dragons',
+        'Elementals',
+        'Fey',
+        'Fiends',
+        'Giants',
+        'Humanoids',
+        'Monstrosities',
+        'Oozes',
+        'Plants',
+        'Undead',
+      ],
       currentSortProperty: 'name',
       currentSortDir: 'ascending',
+      displayFilters: false,
     };
   },
   computed: {
     monstersList() {
+      console.log(this.store.allMonsters);
       return this.store.allMonsters;
     },
     monstersListed: {
@@ -164,6 +337,19 @@ export default {
     this.store.loadMonsters();
   },
   methods: {
+    applyFilters() {
+      console.log(this.filters);
+    },
+    clearFilters() {
+      this.filters = {
+        challengeLow: null,
+        challengeHigh: null,
+        hpLow: null,
+        hpHigh: null,
+        size: null,
+        type: null,
+      };
+    },
     updateFilter: function (val) {
       this.filter = val;
     },
