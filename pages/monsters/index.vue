@@ -9,7 +9,16 @@
       v-if="displayFilters"
       class="filter-header-wrapper flex flex-wrap bg-smoke px-2"
     >
-      <div class="flex w-full flex-wrap">
+      <div class="bg-blue flex w-full flex-wrap align-middle">
+        <label for="hpLow" class="pt-1 font-bold md:w-1/6">MONSTER NAME:</label>
+        <!-- <div class="flex w-full  px-1 mt-2"> -->
+        <input
+          id="monsterName"
+          v-model="filters.name"
+          name="monsterName"
+          class="mt-2 w-1/2 rounded-md px-2 ring-1 ring-blood focus:ring-2 focus:ring-blood md:w-5/6"
+        />
+        <!-- </div> -->
         <span class="flex w-full font-bold">CHALLENGE RATING</span>
         <div class="flex w-full px-1 md:w-1/2">
           <label for="challengeRtgLow" class="w-1/2">From:</label>
@@ -20,7 +29,7 @@
             class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
           >
             <option
-              v-for="rtg in challengeRatings"
+              v-for="rtg in monsterChallengeRatings"
               :key="rtg"
               class=""
               v-text="rtg"
@@ -36,7 +45,7 @@
             class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
           >
             <option
-              v-for="rtg in challengeRatings"
+              v-for="rtg in monsterChallengeRatings"
               :key="rtg"
               v-text="rtg"
             ></option>
@@ -72,7 +81,11 @@
           name="hpLow"
           class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
         >
-          <option v-for="size in sizes" :key="size" v-text="size"></option>
+          <option
+            v-for="size in monsterSizes"
+            :key="size"
+            v-text="size"
+          ></option>
         </select>
       </div>
       <div class="flex w-full flex-wrap pt-4 md:w-1/2">
@@ -85,7 +98,7 @@
             class="w-full rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
           >
             <option
-              v-for="monsterType in types"
+              v-for="monsterType in monsterTypes"
               :key="monsterType"
               v-text="monsterType"
             ></option>
@@ -105,7 +118,7 @@
         <div class="flex w-1/2 justify-center">
           <button
             class="rounded-md bg-fog p-1 text-blood outline outline-1 outline-blood hover:bg-blood hover:text-fog"
-            @click="applyFilters()"
+            @click="checkFilters()"
           >
             <Icon name="heroicons:check" class="mr-1" />
             Apply Filters
@@ -220,68 +233,19 @@ export default {
   },
   data() {
     return {
+      monsterChallengeRatings: [],
+      monsterSizes: [],
+      monsterTypes: [],
       filters: {
         challengeLow: null,
         challengeHigh: null,
         hpLow: null,
         hpHigh: null,
+        name: null,
         size: null,
         type: null,
       },
-      challengeRatings: [
-        0,
-        '1/8',
-        '1/4',
-        '1/2',
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-      ],
       filter: '',
-      sizes: ['Tiny', 'Small', 'Medium', 'Large', 'Huge', 'Gargantuan'],
-      types: [
-        'Aberrations',
-        'Beasts',
-        'Celestials',
-        'Constructs',
-        'Dragons',
-        'Elementals',
-        'Fey',
-        'Fiends',
-        'Giants',
-        'Humanoids',
-        'Monstrosities',
-        'Oozes',
-        'Plants',
-        'Undead',
-      ],
       currentSortProperty: 'name',
       currentSortDir: 'ascending',
       displayFilters: false,
@@ -289,7 +253,6 @@ export default {
   },
   computed: {
     monstersList() {
-      console.log(this.store.allMonsters);
       return this.store.allMonsters;
     },
     monstersListed: {
@@ -318,9 +281,14 @@ export default {
     },
     filteredMonsters: function () {
       return this.monstersList.filter((monster) => {
-        return (
-          monster.name.toLowerCase().indexOf(this.filter.toLowerCase()) > -1
-        );
+        if (this.filters.size !== null) {
+          if (monster.size == this.filters.size) {
+            return monster;
+          }
+        } else {
+          monster.name.toLowerCase();
+          return monster;
+        }
       });
     },
     ariaSort: function () {
@@ -335,10 +303,19 @@ export default {
   },
   mounted() {
     this.store.loadMonsters();
+    (this.monsterChallengeRatings =
+      this.store.getMonsterFields.challengeRatings),
+      (this.monsterSizes = this.store.getMonsterFields.monsterSizes),
+      (this.monsterTypes = this.store.getMonsterFields.monsterTypes);
   },
   methods: {
-    applyFilters() {
-      console.log(this.filters);
+    checkFilters() {
+      // IF ANY OF THE FILTERS ARE NOT null, VERIFY THE FILTERS SO THEY WILL WORK
+      if (Object.values(this.filters).some((item) => item !== null)) {
+        this.verifyFilters();
+      } else {
+        console.log('apply filters');
+      }
     },
     clearFilters() {
       this.filters = {
@@ -346,12 +323,13 @@ export default {
         challengeHigh: null,
         hpLow: null,
         hpHigh: null,
+        name: null,
         size: null,
         type: null,
       };
     },
-    updateFilter: function (val) {
-      this.filter = val;
+    verifyFilters() {
+      console.log('verify first');
     },
     monsterListLength: function () {
       return Object.keys(this.monstersListed).length;
@@ -361,12 +339,12 @@ export default {
       this.currentSortProperty = prop;
       this.monstersListed = {};
     },
-    onFilterEnter: function () {
-      this.$refs.results.focus();
-    },
-    focusFilter: function () {
-      this.$refs.filter.$refs.input.focus();
-    },
+    // onFilterEnter: function () {
+    //   this.$refs.results.focus();
+    // },
+    // focusFilter: function () {
+    //   this.$refs.filter.$refs.input.focus();
+    // },
     getAriaSort(columName) {
       if (this.currentSortProperty === columName) {
         return this.currentSortDir;
