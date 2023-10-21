@@ -129,9 +129,7 @@
           <span v-if="filter.length > 0">&nbsp;for {{ filter }}</span> -->
         </h3>
         <div aria-live="assertive" aria-atomic="true" class="sr-only">
-          <!-- <span v-if="monstersList.length && !monstersListed.length"
-            >No results.</span
-          > -->
+          <span v-if="filteredMonsters().length">No results.</span>
         </div>
       </div>
       <!-- <span style="display:block">Sorting by sort={{ currentSortProperty }}, dir={{ currentSortDir }}</span> -->
@@ -300,7 +298,6 @@ export default {
             this.challengeConversion(monster.challenge_rating) <=
             this.challengeConversion(challengeRating)
           ) {
-            console.log(monster);
             return monster;
           }
         });
@@ -308,7 +305,44 @@ export default {
         return monsters;
       }
     },
-    filterByChallengeLow(monsters, challengeRating) {},
+    filterByChallengeLow(monsters, challengeRating) {
+      if (challengeRating !== null) {
+        // DURING THE FILTER WE CONVERT ANY STRINGS INTO NUMBERS SO WE CAN COMPARE
+        return monsters.filter((monster) => {
+          if (
+            this.challengeConversion(monster.challenge_rating) >=
+            this.challengeConversion(challengeRating)
+          ) {
+            return monster;
+          }
+        });
+      } else {
+        return monsters;
+      }
+    },
+    // FILTER BY HP
+    filterByHpHigh(monsters, hp) {
+      if (hp !== null) {
+        return monsters.filter((monster) => {
+          if (monster.hit_points <= hp) {
+            return monster;
+          }
+        });
+      } else {
+        return monsters;
+      }
+    },
+    filterByHpLow(monsters, hp) {
+      if (hp !== null) {
+        return monsters.filter((monster) => {
+          if (monster.hit_points >= hp) {
+            return monster;
+          }
+        });
+      } else {
+        return monsters;
+      }
+    },
     // FILTER BY NAME
     filterByName(monsters, nameFilter) {
       if (nameFilter !== null) {
@@ -322,10 +356,10 @@ export default {
       }
     },
     // FILTER BY SIZE
-    filterBySize(monsters, sizeFilter) {
-      if (sizeFilter !== null) {
+    filterBySize(monsters, size) {
+      if (size !== null) {
         return monsters.filter((monster) => {
-          if (monster.size === sizeFilter) {
+          if (monster.size === size) {
             return monster;
           }
         });
@@ -333,20 +367,16 @@ export default {
         return monsters;
       }
     },
-    filterByType(monsters, typeFilter) {
-      if (typeFilter !== null) {
+    // FILTER BY TYPE
+    filterByType(monsters, type) {
+      if (type !== null) {
         return monsters.filter((monster) => {
-          if (monster.type === typeFilter) {
+          if (monster.type === type) {
             return monster;
           }
         });
       } else {
         return monsters;
-      }
-    },
-    // FILTER BY CHALLENGE RATING
-    async filterChallengeLow(monsters) {
-      if (this.filters.challengeLow !== null) {
       }
     },
     sort: function (prop, value) {
@@ -354,12 +384,6 @@ export default {
       this.currentSortProperty = prop;
       this.monsterSort = {};
     },
-    // onFilterEnter: function () {
-    //   this.$refs.results.focus();
-    // },
-    // focusFilter: function () {
-    //   this.$refs.filter.$refs.input.focus();
-    // },
     filteredMonsters() {
       let filteredByName = this.filterByName(
         this.store.allMonsters,
@@ -369,12 +393,24 @@ export default {
         filteredByName,
         this.filters.challengeHigh
       );
-      // let filteredByChallengeLow   = this.filterByChallengeLow(filteredByChallengeHigh, this.filters.challengeLow)
-      // let filteredByHpHigh         = this.filterByHpHigh(filteredByChallengeLow, this.filters.hpHigh)
-      // let filteredByHpLow          = this.filterByHpLow(filteredByHpHigh, this.filters.hpLow)
-      // let filteredBySize           = this.filterBySize(filteredByHpLow, this.filters.size)
-      // let filteredByType           = this.filterByType(filteredBySize, this.filters.type)
-      return filteredByChallengeHigh;
+      let filteredByChallengeLow = this.filterByChallengeLow(
+        filteredByChallengeHigh,
+        this.filters.challengeLow
+      );
+      let filteredByHpHigh = this.filterByHpHigh(
+        filteredByChallengeLow,
+        this.filters.hpHigh
+      );
+      let filteredByHpLow = this.filterByHpLow(
+        filteredByHpHigh,
+        this.filters.hpLow
+      );
+      let filteredBySize = this.filterBySize(
+        filteredByHpLow,
+        this.filters.size
+      );
+      let filteredByType = this.filterByType(filteredBySize, this.filters.type);
+      return filteredByType;
     },
     getAriaSort(columName) {
       if (this.currentSortProperty === columName) {
