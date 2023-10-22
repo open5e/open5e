@@ -55,6 +55,7 @@ export default {
       .get(url) //you will need to enable CORS to make this work
       .then((response) => {
         this.item = response.data;
+        console.log(this.item);
         this.loading = false;
       })
       .catch(() => {
