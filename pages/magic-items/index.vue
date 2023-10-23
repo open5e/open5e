@@ -4,11 +4,6 @@
       <h1 class="filter-header">Magic Item List</h1>
       <FilterButton @showFilters="displayFilters = !displayFilters" />
     </div>
-    <h2 ref="results" class="sr-only" tabindex="-1" @keyup.esc="focusFilter">
-      {{ itemListLength }}
-      {{ itemListLength === 1 ? 'Result' : 'Results' }}
-      <!-- <span v-if="filter.length > 0">&nbsp;for {{ filter }}</span> -->
-    </h2>
     <!-- FILTER -->
     <div
       v-if="displayFilters"
@@ -89,25 +84,6 @@
       <div v-else aria-live="assertive" aria-atomic="true">
         <p v-if="!itemListLength">No results</p>
       </div>
-      <!-- <div v-else>
-        <ul class="list--items">
-          <li v-for="item in filteredItems" :key="item.name">
-            <nuxt-link
-              tag="a"
-              :params="{ id: item.slug }"
-              :to="`/magic-items/${item.slug}`"
-            >
-              {{ item.name }}
-            </nuxt-link>
-            <source-tag
-              v-if="item.document__slug && item.document__slug !== 'wotc-srd'"
-              class=""
-              :title="item.document__title"
-              :text="item.document__slug"
-            />
-          </li>
-        </ul>
-      </div> -->
       <div>
         <div
           v-for="(letter, key) in itemsByLetter"
@@ -196,11 +172,6 @@ export default {
       }
       return letters;
     },
-    // columnClassObject: function () {
-    //   return {
-    //     'three-column': !this.filter,
-    //   };
-    // },
     itemListLength: function () {
       return Object.keys(this.itemsByLetter).length;
     },
@@ -210,7 +181,6 @@ export default {
   },
   methods: {
     clearFilters() {
-      console.log(this.filters);
       this.filters = {
         attunement: false,
         name: null,
@@ -218,61 +188,54 @@ export default {
         type: null,
       };
     },
-    // updateFilter: function (val) {
-    //   this.filter = val;
-    // },
-    filterByAttunement(items) {
+    filterByAttunement(itemsToFilter) {
       if (this.filters.attunement == false) {
-        return items;
+        return itemsToFilter;
       } else {
-        return this.items.filter((item) => item.requires_attunement !== '');
+        return itemsToFilter.filter((item) => {
+          return item.requires_attunement == 'requires attunement';
+        });
       }
     },
-    filterByName(items) {
+    filterByName(itemsToFilter) {
       if (this.filters.name == null) {
-        return items;
+        return itemsToFilter;
       } else {
-        return this.items.filter((item) =>
+        return itemsToFilter.filter((item) =>
           item.name.toLowerCase().includes(this.filters.name.toLowerCase())
         );
       }
     },
-    filterByRarity(items) {
+    filterByRarity(itemsToFilter) {
       if (this.filters.rarity == null) {
-        return items;
+        return itemsToFilter;
       } else {
-        return this.items.filter(
+        return itemsToFilter.filter(
           (item) =>
             item.rarity.toLowerCase() == this.filters.rarity.toLowerCase()
         );
       }
     },
-    filterByType(items) {
+    filterByType(itemsToFilter) {
       if (this.filters.type == null) {
-        return items;
+        return itemsToFilter;
       } else {
-        return this.items.filter(
+        return itemsToFilter.filter(
           (item) => item.type.toLowerCase() == this.filters.type.toLowerCase()
         );
       }
     },
     filteredItems: function () {
       let allItems = this.items;
-      let attuneFiltered = this.filterByAttunement(allItems);
-      let nameFiltered = this.filterByName(attuneFiltered);
+      let nameFiltered = this.filterByName(allItems);
       let rareFiltered = this.filterByRarity(nameFiltered);
       let typeFiltered = this.filterByType(rareFiltered);
-      return typeFiltered;
+      let attuneFiltered = this.filterByAttunement(typeFiltered);
+      return attuneFiltered;
     },
     updateSources: function (val) {
       this.store.setSources(val);
     },
-    // onFilterEnter: function () {
-    //   this.$refs.results.focus();
-    // },
-    // focusFilter: function () {
-    //   this.$refs.filter.$refs.input.focus();
-    // },
   },
 };
 </script>

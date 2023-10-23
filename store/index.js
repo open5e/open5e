@@ -34,6 +34,7 @@ const magicItemFields = [
   'name',
   'type',
   'rarity',
+  'requires_attunement',
   'document__slug',
   'document__title',
 ];
