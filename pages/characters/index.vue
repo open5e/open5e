@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="docs-toc" v-else>
-      <ul v-if="charSections">
+      <ul>
         <li v-for="section in charSections" :key="section.slug">
           <nuxt-link tag="a" :to="`/characters/${section.slug}`">
             {{ section.name }}
