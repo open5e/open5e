@@ -2,15 +2,120 @@
   <section class="docs-container container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Monster List</h1>
-      <filter-input
-        id="filter-monsters"
-        ref="filter"
-        class="filter"
-        placeholder="Filter monsters..."
-        @input="updateFilter"
-        @keyup.enter="onFilterEnter"
-      />
+      <FilterButton @showFilters="displayFilters = !displayFilters" />
     </div>
+    <!-- FILTER BOX -->
+    <div
+      v-if="displayFilters"
+      class="filter-header-wrapper flex flex-wrap bg-smoke px-2"
+    >
+      <div class="bg-blue flex w-full flex-wrap align-middle">
+        <label for="hpLow" class="pt-1 font-bold md:w-1/6">MONSTER NAME:</label>
+        <input
+          id="monsterName"
+          v-model="filters.name"
+          name="monsterName"
+          class="mt-2 w-1/2 rounded-md px-2 ring-1 ring-blood focus:ring-2 focus:ring-blood md:w-5/6"
+        />
+        <span class="flex w-full font-bold">CHALLENGE RATING</span>
+        <div class="flex w-full px-1 md:w-1/2">
+          <label for="challengeRtgLow" class="w-1/2">From:</label>
+          <select
+            id="challengeRtgLow"
+            v-model="filters.challengeLow"
+            name="challengeRtgLow"
+            class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
+          >
+            <option
+              v-for="rtg in monsterChallengeRatings"
+              :key="rtg"
+              class=""
+              v-text="rtg"
+            ></option>
+          </select>
+        </div>
+        <div class="flex w-full px-1 md:w-1/2">
+          <label for="challengeRtgHigh" class="w-1/2">To:</label>
+          <select
+            id="challengeRtgHigh"
+            v-model="filters.challengeHigh"
+            name="challengeRtgHigh"
+            class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
+          >
+            <option
+              v-for="rtg in monsterChallengeRatings"
+              :key="rtg"
+              v-text="rtg"
+            ></option>
+          </select>
+        </div>
+      </div>
+      <div class="flex w-full flex-wrap">
+        <span class="flex w-full font-bold">HIT POINTS</span>
+        <div class="flex w-full px-1 md:w-1/2">
+          <label for="hpLow" class="w-1/2">From (low):</label>
+          <input
+            id="hpLow"
+            v-model="filters.hpLow"
+            name="hpLow"
+            class="w-1/2 rounded-md px-2 ring-1 ring-blood focus:ring-2 focus:ring-blood"
+          />
+        </div>
+        <div class="flex w-full px-1 md:w-1/2">
+          <label for="hpHigh" class="w-1/2">To (high):</label>
+          <input
+            id="hpHigh"
+            v-model="filters.hpHigh"
+            name="hpHigh"
+            class="w-1/2 rounded-md px-2 ring-1 ring-blood focus:ring-2 focus:ring-blood"
+          />
+        </div>
+      </div>
+      <div class="flex w-full flex-wrap pr-1 pt-4 md:w-1/2">
+        <label for="hpLow" class="w-1/2 font-bold">SIZE:</label>
+        <select
+          id="hpLow"
+          v-model="filters.size"
+          name="hpLow"
+          class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
+        >
+          <option
+            v-for="size in monsterSizes"
+            :key="size"
+            v-text="size"
+          ></option>
+        </select>
+      </div>
+      <div class="flex w-full flex-wrap pt-4 md:w-1/2">
+        <div class="flex w-full px-1">
+          <label for="hpLow" class="w-full font-bold">TYPE:</label>
+          <select
+            id="hpLow"
+            v-model="filters.type"
+            name="hpLow"
+            class="w-full rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
+          >
+            <option
+              v-for="monsterType in monsterTypes"
+              :key="monsterType"
+              v-text="monsterType"
+            ></option>
+          </select>
+        </div>
+      </div>
+      <div class="flex w-full flex-wrap pt-4">
+        <div class="flex w-full justify-end">
+          <button
+            class="rounded-md bg-fog p-1 text-blood outline outline-1 outline-blood hover:bg-blood hover:text-fog"
+            @click="clearFilters()"
+          >
+            <Icon name="heroicons:x-mark" class="mb-1 mr-1" />
+            Clear Filters
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- END FILTER BOX -->
     <div>
       <div>
         <h3
@@ -19,17 +124,16 @@
           tabindex="-1"
           @keyup.esc="focusFilter"
         >
-          {{ monstersListed.length }}
+          <!-- {{ monstersListed.length }}
           {{ monstersListed.length === 1 ? 'Result' : 'Results' }}
-          <span v-if="filter.length > 0">&nbsp;for {{ filter }}</span>
+          <span v-if="filter.length > 0">&nbsp;for {{ filter }}</span> -->
         </h3>
         <div aria-live="assertive" aria-atomic="true" class="sr-only">
-          <span v-if="monstersList.length && !monstersListed.length"
-            >No results.</span
-          >
+          <span v-if="filteredMonsters().length">No results.</span>
         </div>
       </div>
-      <p v-if="!monstersList.length">Loading...</p>
+      <!-- <span style="display:block">Sorting by sort={{ currentSortProperty }}, dir={{ currentSortDir }}</span> -->
+      <p v-if="!monsterList.length">Loading...</p>
       <table v-else class="filterable-table">
         <caption class="sr-only">
           Column headers with buttons are sortable.
@@ -64,7 +168,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="monster in monstersListed" :key="monster.slug">
+          <tr v-for="monster in sortedMonsters" :key="monster.slug">
             <th>
               <nuxt-link
                 tag="a"
@@ -92,14 +196,11 @@
         </tbody>
       </table>
     </div>
-    <span style="display: none"
-      >Sorting by sort={{ currentSortProperty }}, dir={{ currentSortDir }}</span
-    >
   </section>
 </template>
 
 <script>
-import FilterInput from '~/components/FilterInput.vue';
+import FilterButton from '~/components/FilterButton.vue';
 import FractionRenderer from '~/components/FractionRenderer.vue';
 import SourceTag from '~/components/SourceTag.vue';
 import SortableTableHeader from '~/components/SortableTableHeader.vue';
@@ -107,7 +208,7 @@ import { useMainStore } from '~/store';
 
 export default {
   components: {
-    FilterInput,
+    FilterButton,
     FractionRenderer,
     SourceTag,
   },
@@ -117,46 +218,40 @@ export default {
   },
   data() {
     return {
-      filter: '',
-      currentSortProperty: 'name',
       currentSortDir: 'ascending',
+      currentSortProperty: 'name',
+      displayFilters: false,
+      filters: {
+        challengeLow: null,
+        challengeHigh: null,
+        hpLow: null,
+        hpHigh: null,
+        name: null,
+        size: null,
+        type: null,
+      },
     };
   },
   computed: {
-    monstersList() {
+    monsterList() {
       return this.store.allMonsters;
     },
-    monstersListed: {
-      get: function () {
-        this.filteredMonsters.forEach(
-          (monster) =>
-            (monster.challenge_rating = eval(monster.challenge_rating))
-        );
-        return this.filteredMonsters;
-      },
-      set: function () {
-        return this.filteredMonsters.sort((a, b) => {
-          let modifier = 1;
-          if (this.currentSortDir === 'descending') {
-            modifier = -1;
-          }
-          if (a[this.currentSortProperty] < b[this.currentSortProperty]) {
-            return -1 * modifier;
-          }
-          if (a[this.currentSortProperty] > b[this.currentSortProperty]) {
-            return 1 * modifier;
-          }
-          return 0;
-        });
-      },
-    },
-    filteredMonsters: function () {
-      return this.monstersList.filter((monster) => {
-        return (
-          monster.name.toLowerCase().indexOf(this.filter.toLowerCase()) > -1
-        );
+    sortedMonsters() {
+      return this.filteredMonsters().sort((a, b) => {
+        let modifier = 1;
+        if (this.currentSortDir === 'descending') {
+          modifier = -1;
+        }
+        if (a[this.currentSortProperty] < b[this.currentSortProperty]) {
+          return -1 * modifier;
+        }
+        if (a[this.currentSortProperty] > b[this.currentSortProperty]) {
+          return 1 * modifier;
+        }
+        return 0;
       });
     },
+
     ariaSort: function () {
       return {
         name: this.getAriaSort('name'),
@@ -169,24 +264,153 @@ export default {
   },
   mounted() {
     this.store.loadMonsters();
+    (this.monsterChallengeRatings =
+      this.store.getMonsterFields.challengeRatings),
+      (this.monsterSizes = this.store.getMonsterFields.monsterSizes),
+      (this.monsterTypes = this.store.getMonsterFields.monsterTypes);
   },
   methods: {
-    updateFilter: function (val) {
-      this.filter = val;
+    clearFilters() {
+      this.filters = {
+        challengeLow: null,
+        challengeHigh: null,
+        hpLow: null,
+        hpHigh: null,
+        name: null,
+        size: null,
+        type: null,
+      };
     },
-    monsterListLength: function () {
-      return Object.keys(this.monstersListed).length;
+    challengeConversion(cr) {
+      if (cr.includes('/')) {
+        let crFraction = cr.split('/');
+        return crFraction[0] / crFraction[1];
+      } else {
+        return parseInt(cr);
+      }
+    },
+    // FILTER BY CHALLENGE RATING
+    filterByChallengeHigh(monsters, challengeRating) {
+      if (challengeRating !== null) {
+        // DURING THE FILTER WE CONVERT ANY STRINGS INTO NUMBERS SO WE CAN COMPARE
+        return monsters.filter((monster) => {
+          if (
+            this.challengeConversion(monster.challenge_rating) <=
+            this.challengeConversion(challengeRating)
+          ) {
+            return monster;
+          }
+        });
+      } else {
+        return monsters;
+      }
+    },
+    filterByChallengeLow(monsters, challengeRating) {
+      if (challengeRating !== null) {
+        // DURING THE FILTER WE CONVERT ANY STRINGS INTO NUMBERS SO WE CAN COMPARE
+        return monsters.filter((monster) => {
+          if (
+            this.challengeConversion(monster.challenge_rating) >=
+            this.challengeConversion(challengeRating)
+          ) {
+            return monster;
+          }
+        });
+      } else {
+        return monsters;
+      }
+    },
+    // FILTER BY HP
+    filterByHpHigh(monsters, hp) {
+      if (hp !== null) {
+        return monsters.filter((monster) => {
+          if (monster.hit_points <= hp) {
+            return monster;
+          }
+        });
+      } else {
+        return monsters;
+      }
+    },
+    filterByHpLow(monsters, hp) {
+      if (hp !== null) {
+        return monsters.filter((monster) => {
+          if (monster.hit_points >= hp) {
+            return monster;
+          }
+        });
+      } else {
+        return monsters;
+      }
+    },
+    // FILTER BY NAME
+    filterByName(monsters, nameFilter) {
+      if (nameFilter !== null) {
+        return monsters.filter((monster) => {
+          if (monster.name.toLowerCase().includes(nameFilter.toLowerCase())) {
+            return monster;
+          }
+        });
+      } else {
+        return monsters;
+      }
+    },
+    // FILTER BY SIZE
+    filterBySize(monsters, size) {
+      if (size !== null) {
+        return monsters.filter((monster) => {
+          if (monster.size === size) {
+            return monster;
+          }
+        });
+      } else {
+        return monsters;
+      }
+    },
+    // FILTER BY TYPE
+    filterByType(monsters, type) {
+      if (type !== null) {
+        return monsters.filter((monster) => {
+          if (monster.type === type) {
+            return monster;
+          }
+        });
+      } else {
+        return monsters;
+      }
     },
     sort: function (prop, value) {
       this.currentSortDir = value;
       this.currentSortProperty = prop;
-      this.monstersListed = {};
+      this.monsterSort = {};
     },
-    onFilterEnter: function () {
-      this.$refs.results.focus();
-    },
-    focusFilter: function () {
-      this.$refs.filter.$refs.input.focus();
+    filteredMonsters() {
+      let filteredByName = this.filterByName(
+        this.store.allMonsters,
+        this.filters.name
+      );
+      let filteredByChallengeHigh = this.filterByChallengeHigh(
+        filteredByName,
+        this.filters.challengeHigh
+      );
+      let filteredByChallengeLow = this.filterByChallengeLow(
+        filteredByChallengeHigh,
+        this.filters.challengeLow
+      );
+      let filteredByHpHigh = this.filterByHpHigh(
+        filteredByChallengeLow,
+        this.filters.hpHigh
+      );
+      let filteredByHpLow = this.filterByHpLow(
+        filteredByHpHigh,
+        this.filters.hpLow
+      );
+      let filteredBySize = this.filterBySize(
+        filteredByHpLow,
+        this.filters.size
+      );
+      let filteredByType = this.filterByType(filteredBySize, this.filters.type);
+      return filteredByType;
     },
     getAriaSort(columName) {
       if (this.currentSortProperty === columName) {
@@ -217,3 +441,4 @@ export default {
   vertical-align: baseline;
 }
 </style>
+<!--  -->
