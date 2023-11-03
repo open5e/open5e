@@ -13,7 +13,7 @@
     </p>
 
     <!-- Generate card body from data -->
-    <p v-for="item in body" :key="item.title" class="m-0 p-0">
+    <p v-for="item in body" :key="item.title" class="m-0 p-0 text-sm">
       <span v-if="item.title" class="font-bold after:mr-1 after:content-[':']">
         {{ item.title }}
       </span>
@@ -37,35 +37,54 @@ export default {
   computed: {
     // generate an appropriate subtitle for each resource type
     subtitle() {
+      console.log(this.category);
       const data = this.content;
       switch (this.category) {
-        case 'spell':
+        case 'spells':
           return `${data.level} ${data.school} Spell`;
-        case 'monster':
-          return `${data.size} ${data.type} CR ${data.challenge_rating}`;
-        case 'magicitem':
-          return `${data.type}, ${data.rarity} 
-            ${data.requires_attunement ?? '(requires attunement)'}
-          `;
+        case 'monsters':
+          return 'Monster';
+        case 'magicitems':
+          return 'Magic Item';
+        case 'conditions':
+          return 'Condition';
+        case 'feats':
+          return 'Feat';
+        case 'sections':
         case 'characters':
         case 'combat':
         case 'equipment':
-        case 'gameplaymechanic':
+        case 'gameplay-mechanics':
         case 'running':
-          return data.parent.charAt(0).toUpperCase() + data.parent.slice(1);
+          return data.parent;
         default:
           return this.category.charAt(0).toUpperCase() + this.category.slice(1);
       }
     },
+
     body() {
       const data = this.content;
       switch (this.category) {
-        case 'spell':
+        case 'conditions':
+          return [{ data: data.desc }];
+        case 'spells':
           return [
             { title: 'Casting Time', data: data.casting_time },
             { title: 'Duration', data: data.duration },
             { title: 'Range', data: data.range },
             { title: 'Components', data: data.components },
+          ];
+        case 'magicitems':
+          return [
+            {
+              data: `${data.type}, ${data.rarity} ${
+                data.requires_attunement && '(requires attunement)'
+              }`,
+            },
+          ];
+        case 'monsters':
+          return [
+            { data: `CR ${data.challenge_rating} ${data.type} (${data.size})` },
           ];
         default:
           return [];
