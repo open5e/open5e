@@ -5,7 +5,7 @@
 <template>
   <nuxt-link
     v-if="acceptibleTypes.includes(category)"
-    :to="url"
+    :to="url.linkTarget"
     class="group relative"
     @mouseover="loadData"
   >
@@ -20,9 +20,7 @@
 <script>
 import axios from 'axios';
 export default {
-  props: {
-    src: { type: String, default: '' },
-  },
+  props: { src: { type: String, default: '' } },
 
   data() {
     return {
@@ -39,12 +37,27 @@ export default {
   },
   computed: {
     url() {
-      const { subroute, endpoint } = paramsByType[this.category];
-      if (!endpoint) {
-        return '/';
+      const apiURL = this.$nuxt.$config.public.apiUrl;
+      const { altFrontEndSubroute, apiEndpoint } = paramsByType[this.category];
+
+      // make sure that category has a recognised endpoint
+      if (!apiEndpoint) {
+        return { linkTarget: '/' };
+      }
+
+      // FE uses section's parent for routing. Update url once data is fetched
+      if (this.content && this.category === 'sections') {
+        const subroute = this.content.parent.split(' ').join('-').toLowerCase();
+        return {
+          linkTarget: `/${subroute}/${this.slug}`,
+          apiEndpoint: `${apiURL}/sections/${this.slug}`,
+        };
       }
       // the url on the front end site might be different to its API endpoint
-      return `/${subroute ?? endpoint}/${this.slug}`;
+      return {
+        linkTarget: `/${altFrontEndSubroute ?? apiEndpoint}/${this.slug}`,
+        apiEndpoint: `${apiURL}${apiEndpoint}/${this.slug}`,
+      };
     },
   },
   methods: {
@@ -55,85 +68,90 @@ export default {
       }
       this.loading = true;
       const { queryParams } = paramsByType[this.category];
-      const apiURL = this.$nuxt.$config.public.apiUrl;
-      const res = await axios.get(`${apiURL}${this.src}/${queryParams}`);
+      const res = await axios.get(`${this.url.apiEndpoint}/${queryParams}`);
       this.content = res.data;
     },
   },
 };
 
 // Maps tag names from markdown to data required to show links/previews
+const defaultQueryParams = '?fields=name,document__title,';
 const paramsByType = {
   armor: {
-    endpoint: 'armor',
-    queryParams: '?fields=name,category',
+    apiEndpoint: 'armor',
+    queryParams: defaultQueryParams + 'category',
   },
-  background: {
-    endpoint: 'backgrounds',
-    queryParams: '?fields=name,document__title',
+  backgrounds: {
+    apiEndpoint: 'backgrounds',
+    queryParams: defaultQueryParams,
   },
-  characters: {
-    subroute: 'characters',
-    endpoint: 'sections',
-    queryParams: '?fields=name,parent,document__title',
-  },
-  class: {
-    endpoint: 'classes',
-    queryParams: '?fields=name,document__title',
+  classes: {
+    apiEndpoint: 'classes',
+    queryParams: defaultQueryParams,
   },
   combat: {
-    subroute: 'combat',
-    endpoint: 'sections',
-    queryParams: '?fields=name,parent,document__title',
+    altFrontEndSubroute: 'combat',
+    apiEndpoint: 'sections',
+    queryParams: defaultQueryParams + 'title',
   },
-  condition: {
-    endpoint: 'conditions',
-    queryParams: '?fields=name,desc',
+  conditions: {
+    apiEndpoint: 'conditions',
+    queryParams: defaultQueryParams + 'desc',
   },
   equipment: {
-    subroute: 'equipment',
-    endpoint: 'sections',
-    queryParams: '?fields=name,parent,document__title',
+    altFrontEndSubroute: 'equipment',
+    apiEndpoint: 'sections',
+    queryParams: defaultQueryParams + 'parent',
   },
-  feat: {
-    endpoint: 'feats',
-    queryParams: '?fields=name,document__title',
+  feats: {
+    apiEndpoint: 'feats',
+    queryParams: defaultQueryParams,
   },
-  gameplaymechanic: {
-    subroute: 'gameplay-mechanics',
-    endpoint: 'sections',
-    queryParams: '?fields=name,parent,document__title',
+  'gameplay-mechanics': {
+    altFrontEndSubroute: 'gameplay-mechanics',
+    apiEndpoint: 'sections',
+    queryParams: defaultQueryParams + 'parent',
   },
-  magicitem: {
-    subroute: 'magic-items',
-    endpoint: 'magicitems',
-    queryParams: '?fields=name,type,rarity,requires_attunement,document__title',
+  magicitems: {
+    altFrontEndSubroute: 'magic-items',
+    apiEndpoint: 'magicitems',
+    queryParams: defaultQueryParams + 'type,rarity,requires_attunement',
   },
-  monster: {
-    endpoint: 'monsters',
-    queryParams: '?fields=name,size,type,challenge_rating,document__title',
+  monsters: {
+    apiEndpoint: 'monsters',
+    queryParams: defaultQueryParams + 'size,type,challenge_rating',
   },
   plane: {
-    endpoint: 'planes',
-    queryParams: '?fields=name',
+    apiEndpoint: 'planes',
+    queryParams: defaultQueryParams,
   },
-  race: {
-    endpoint: 'races',
-    queryParams: '?fields=name,document__title',
+  races: {
+    apiEndpoint: 'races',
+    queryParams: defaultQueryParams,
   },
   running: {
-    subroute: 'running',
-    endpoint: 'sections',
-    queryParams: '?fields=name,parent,document__title',
+    altFrontEndSubroute: 'running',
+    apiEndpoint: 'sections',
+    queryParams: defaultQueryParams + 'parent',
+  },
+  sections: {
+    apiEndpoint: 'sections',
+    queryParams: defaultQueryParams + 'parent',
   },
   spells: {
-    endpoint: 'spells',
+    apiEndpoint: 'spells',
     queryParams:
-      '?fields=name,level,school,casting_time,duration,range,components,document__title',
+      defaultQueryParams +
+      'level,school,casting_time,duration,range,components',
   },
-  weapon: {
-    endpoint: 'weapons',
-    queryParams: '?field=name,category',
+  spelllist: {
+    altFrontEndSubroute: 'spells/by-class',
+    apiEndpoint: 'spelllist',
+    queryParams: defaultQueryParams,
+  },
+  weapons: {
+    apiEndpoint: 'weapons',
+    queryParams: defaultQueryParams + 'category',
   },
 };
 </script>
