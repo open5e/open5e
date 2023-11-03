@@ -9,22 +9,19 @@
     class="group relative"
     @mouseover="loadData"
   >
-    {{ title }}
+    <slot />
     <link-preview v-if="content" :content="content" :category="category" />
   </nuxt-link>
 
   <!-- If link markdown is invalid, render a span instead -->
-  <span v-else class="italic">{{ title }}</span>
+  <span v-else class="italic"><slot /></span>
 </template>
 
 <script>
 import axios from 'axios';
 export default {
   props: {
-    title: { type: String, default: '' },
-    slug: { type: String, default: '' },
-    resourceType: { type: String, default: '' },
-    version: { type: String, default: '' },
+    src: { type: String, default: '' },
   },
 
   data() {
@@ -32,7 +29,12 @@ export default {
       loading: false,
       content: undefined,
       acceptibleTypes: Object.keys(paramsByType),
-      category: this.resourceType.split('-').join(''), // rmv dashes from prop
+      category: this.src
+        .split('/')
+        .filter((crumb) => !['v1', 'v2'].includes(crumb))[0],
+      slug: this.src
+        .split('/')
+        .filter((crumb) => !['v1', 'v2'].includes(crumb))[1],
     };
   },
   computed: {
@@ -41,7 +43,7 @@ export default {
       if (!endpoint) {
         return '/';
       }
-      // the url subroute might be different to its API endpoint
+      // the url on the front end site might be different to its API endpoint
       return `/${subroute ?? endpoint}/${this.slug}`;
     },
   },
@@ -52,11 +54,9 @@ export default {
         return;
       }
       this.loading = true;
-      const { endpoint, queryParams } = paramsByType[this.category];
+      const { queryParams } = paramsByType[this.category];
       const apiURL = this.$nuxt.$config.public.apiUrl;
-      const res = await axios.get(
-        `${apiURL}/${endpoint}/${this.slug}/${queryParams}`
-      );
+      const res = await axios.get(`${apiURL}${this.src}/${queryParams}`);
       this.content = res.data;
     },
   },
@@ -126,7 +126,7 @@ const paramsByType = {
     endpoint: 'sections',
     queryParams: '?fields=name,parent,document__title',
   },
-  spell: {
+  spells: {
     endpoint: 'spells',
     queryParams:
       '?fields=name,level,school,casting_time,duration,range,components,document__title',
