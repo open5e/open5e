@@ -13,6 +13,10 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    fontFamily: {
+      sans: ['"Source Sans Pro"', 'sans-serif'],
+      serif: ['"Lora"', 'serif'],
+    },
     extend: {
       colors: {
         red: {
