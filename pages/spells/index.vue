@@ -8,10 +8,12 @@
       @last="pageNumber = pageCount - 1"
       @next="pageNumber++"
       @prev="pageNumber--"
+      @changePerPage="setPerPage"
       :listLength="filteredSpells.length"
       listWording="spells listed."
       :pageNumber="pageNumber"
       :pageCount="pageCount"
+      :showItemsPerPage="true"
     ></PageNav>
     <div>
       <p v-if="!spells.length">Loading...</p>
@@ -97,6 +99,7 @@
       listWording="spells listed."
       :pageNumber="pageNumber"
       :pageCount="pageCount"
+      :showItemsPerPage="false"
     ></PageNav>
   </section>
 </template>
@@ -121,20 +124,21 @@ export default {
       filter: '',
       currentSortProperty: 'name',
       currentSortDir: 'ascending',
+      itemsPerPage: 50,
       pageNumber: 0,
     };
   },
   computed: {
     pageCount() {
-      return Math.ceil(this.spells.length / 50);
+      return Math.ceil(this.spells.length / this.itemsPerPage);
     },
     spells: function () {
       return this.store.allSpells;
     },
     spellsListed: {
       get: function () {
-        let start = this.pageNumber * 50;
-        let end = start + 50;
+        let start = this.pageNumber * this.itemsPerPage;
+        let end = start + this.itemsPerPage;
         return this.filteredSpells.slice(start, end);
       },
       set: function () {
@@ -171,6 +175,9 @@ export default {
     this.store.loadSpells();
   },
   methods: {
+    setPerPage(num) {
+      this.itemsPerPage = num;
+    },
     updateFilter: function (val) {
       this.filter = val;
     },
