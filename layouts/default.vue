@@ -11,7 +11,7 @@
       >
         <!-- Logo -->
         <nuxt-link to="/" class="logo bg-red p-5 text-3xl">Open5e</nuxt-link>
-
+        <!-- SOURCE MODAL -->
         <div
           class="cursor-pointer bg-red-600 px-4 py-2 hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
           @click="showModal = true"
@@ -29,6 +29,7 @@
             <Icon name="line-md:loading-twotone-loop" />
           </span>
         </div>
+        <!-- SEARCH BAR -->
         <div class="relative">
           <div
             class="absolute inset-y-0 right-0 flex cursor-pointer items-center pr-2"

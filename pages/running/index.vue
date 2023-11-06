@@ -1,7 +1,19 @@
 <template>
   <section class="docs-container container">
     <h1>Running a Game</h1>
-    <div class="docs-toc">
+    <div
+      class="flex w-full flex-wrap pt-2 text-lg"
+      v-if="Object.keys(sectionGroups).length == 0"
+    >
+      <div class="flex w-full">
+        There are no items for this category that align with the corresponding
+        sources you selected.
+      </div>
+      <div class="flex w-full pt-2">
+        Please edit your selected sources for more results.
+      </div>
+    </div>
+    <div class="docs-toc" v-else>
       <span v-if="$route.hash">{{ $route.hash }}</span>
       <ul>
         <li v-for="section in sectionGroups.Rules" :key="section.slug">

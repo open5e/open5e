@@ -1,7 +1,19 @@
 <template>
   <section class="docs-container container">
     <h1>Equipment</h1>
-    <div class="docs-toc">
+    <div
+      class="flex w-full flex-wrap pt-2 text-lg"
+      v-if="equipmentSections.length == 0"
+    >
+      <div class="flex w-full">
+        There are no items for this category that align with the corresponding
+        sources you selected.
+      </div>
+      <div class="flex w-full pt-2">
+        Please edit your selected sources for more results.
+      </div>
+    </div>
+    <div class="docs-toc" v-else>
       <ul v-if="equipmentSections">
         <li v-for="section in equipmentSections" :key="section.slug">
           <nuxt-link tag="a" :to="`/equipment/${section.slug}`">

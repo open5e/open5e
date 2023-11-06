@@ -23,7 +23,7 @@
                     v-model="selectedSourcesComputed"
                     :name="document.slug"
                     type="checkbox"
-                    class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600"
+                    class="h-4 w-4 rounded border-gray-300 text-blue-600 accent-blood focus:ring-blue-600"
                     :value="document.slug"
                   />
                 </div>
@@ -55,7 +55,7 @@
       </button>
       <button
         type="button"
-        class="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
+        class="inline-flex w-full justify-center rounded-md bg-blood px-3 py-2 text-sm font-semibold text-white shadow-sm ring-offset-2 hover:ring-2 hover:ring-blood focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
         @click="saveSelection()"
       >
         Update
@@ -127,13 +127,6 @@ export default {
 
 <script setup>
 import { ref } from 'vue';
-import {
-  Dialog,
-  DialogPanel,
-  DialogTitle,
-  TransitionChild,
-  TransitionRoot,
-} from '@headlessui/vue';
 
 const open = ref(true);
 </script>
