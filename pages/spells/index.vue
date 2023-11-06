@@ -2,31 +2,18 @@
   <section class="container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Spell List</h1>
-      <filter-input
-        id="filter-spells"
-        ref="filter"
-        class="filter"
-        placeholder="Filter spells..."
-        @input="updateFilter"
-        @keyup.enter="onFilterEnter"
-      />
     </div>
+    <PageNav
+      @first="pageNumber = 0"
+      @last="pageNumber = pageCount - 1"
+      @next="pageNumber++"
+      @prev="pageNumber--"
+      :listLength="filteredSpells.length"
+      listWording="spells listed."
+      :pageNumber="pageNumber"
+      :pageCount="pageCount"
+    ></PageNav>
     <div>
-      <div>
-        <h2
-          ref="results"
-          class="sr-only"
-          tabindex="-1"
-          @keyup.esc="focusFilter"
-        >
-          {{ spellsListed.length }}
-          {{ spellsListed.length === 1 ? 'Result' : 'Results' }}
-          <span v-if="filter.length > 0">&nbsp;for {{ filter }}</span>
-        </h2>
-        <div aria-live="assertive" aria-atomic="true" class="sr-only">
-          <span v-if="spells.length && !spellsListed.length">No results.</span>
-        </div>
-      </div>
       <p v-if="!spells.length">Loading...</p>
       <table v-else class="filterable-table">
         <caption class="sr-only">
@@ -101,20 +88,28 @@
         </tbody>
       </table>
     </div>
-    <span style="display: none"
-      >Sorting by sort={{ currentSortProperty }}, dir={{ currentSortDir }}</span
-    >
+    <PageNav
+      @first="pageNumber = 0"
+      @last="pageNumber = pageCount - 1"
+      @next="pageNumber++"
+      @prev="pageNumber--"
+      :listLength="filteredSpells.length"
+      listWording="spells listed."
+      :pageNumber="pageNumber"
+      :pageCount="pageCount"
+    ></PageNav>
   </section>
 </template>
 
 <script>
 import FilterInput from '~/components/FilterInput.vue';
+import PageNav from '~/components/PageNav.vue';
 import SourceTag from '~/components/SourceTag.vue';
 import { useMainStore } from '~/store';
 
 export default {
   components: {
-    FilterInput,
+    PageNav,
     SourceTag,
   },
   setup() {
@@ -126,15 +121,21 @@ export default {
       filter: '',
       currentSortProperty: 'name',
       currentSortDir: 'ascending',
+      pageNumber: 0,
     };
   },
   computed: {
+    pageCount() {
+      return Math.ceil(this.spells.length / 50);
+    },
     spells: function () {
       return this.store.allSpells;
     },
     spellsListed: {
       get: function () {
-        return this.filteredSpells;
+        let start = this.pageNumber * 50;
+        let end = start + 50;
+        return this.filteredSpells.slice(start, end);
       },
       set: function () {
         return this.filteredSpells.sort((a, b) => {
