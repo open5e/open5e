@@ -131,6 +131,15 @@
         <b class="action-name">{{ action.name }}. </b>
         <md-viewer class="inline" :text="action.desc" />
       </p>
+      <h2 v-if="monster.bonus_actions">Bonus Actions</h2>
+      <p
+        v-for="bonus_action in monster.bonus_actions"
+        :key="bonus_action.name"
+        class="action-block"
+      >
+        <b class="action-name">{{ bonus_action.name }}. </b>
+        <md-viewer class="inline" :text="bonus_action.desc" />
+      </p>
       <h2 v-if="monster.reactions">Reactions</h2>
       <p
         v-for="action in monster.reactions"
