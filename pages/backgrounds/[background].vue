@@ -41,28 +41,9 @@
   <p v-else>Loading...</p>
 </template>
 
-<script>
-import axios from 'axios';
-export default {
-  data() {
-    return { background: null };
-  },
-
-  mounted() {
-    const { background } = useRoute().params;
-    const { apiUrl } = useRuntimeConfig().public;
-    const url = `${apiUrl}/backgrounds/${background}/`;
-
-    //you will need to enable CORS to make this work
-    return axios
-      .get(url)
-      .then((response) => (this.background = response.data))
-      .catch(() => {
-        throw showError({
-          statusCode: 404,
-          message: `${useRoute().path} does not exist`,
-        });
-      });
-  },
-};
+<script setup>
+const background = await useFetchArticle({
+  slug: useRoute().params.background,
+  category: 'backgrounds',
+});
 </script>
