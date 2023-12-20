@@ -64,26 +64,9 @@
   <p v-else>Loading...</p>
 </template>
 
-<script>
-import axios from 'axios';
-
-export default {
-  data() {
-    return { classData: undefined };
-  },
-  mounted() {
-    const { className } = useRoute().params;
-    const url = `${useRuntimeConfig().public.apiUrl}/classes/${className}/`;
-    //you will need to enable CORS to make this work
-    return axios
-      .get(url)
-      .then((response) => (this.classData = response.data))
-      .catch(() => {
-        throw showError({
-          statusCode: 404,
-          message: `${useRoute().path} does not exist`,
-        });
-      });
-  },
-};
+<script setup>
+const classData = await useFetchArticle({
+  slug: useRoute().params.className,
+  category: 'classes',
+});
 </script>
