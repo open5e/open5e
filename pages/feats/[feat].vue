@@ -23,27 +23,9 @@
   <p v-else>Loading...</p>
 </template>
 
-<script>
-import axios from 'axios';
-export default {
-  data() {
-    return { feat: null };
-  },
-
-  mounted() {
-    const { feat } = useRoute().params;
-    const url = `${useRuntimeConfig().public.apiUrl}/feats/${feat}/`;
-
-    //you will need to enable CORS to make this work
-    return axios
-      .get(url)
-      .then((response) => (this.feat = response.data))
-      .catch(() => {
-        throw showError({
-          statusCode: 404,
-          message: `The route ${useRoute().path} does not exist`,
-        });
-      });
-  },
-};
+<script setup>
+const feat = await useFetchArticle({
+  slug: useRoute().params.feat,
+  category: 'feats',
+});
 </script>
