@@ -7,28 +7,9 @@
   </main>
 </template>
 
-<script>
-import axios from 'axios';
-export default {
-  data() {
-    return {
-      section: undefined,
-    };
-  },
-  mounted() {
-    const { section } = useRoute().params;
-    const url = `${useRuntimeConfig().public.apiUrl}/sections/${section}/`;
-    return axios
-      .get(url)
-      .then((response) => {
-        this.section = response.data;
-      })
-      .catch(() => {
-        throw showError({
-          statusCode: 404,
-          message: `The route ${useRoute().path} does not exist`,
-        });
-      });
-  },
-};
+<script setup>
+const section = await useFetchArticle({
+  slug: useRoute().params.section,
+  category: 'sections',
+});
 </script>
