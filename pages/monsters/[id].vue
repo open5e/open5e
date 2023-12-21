@@ -35,59 +35,31 @@
       </span>
     </p>
     <hr />
-    <div class="ability-array">
-      <div class="ability-block">
-        <span class="ability-name">STR</span>
-        <span class="ability-score">
-          {{ monster.strength }} (
-          {{ Math.floor((monster.strength - 10) / 2) }}
-          )
-        </span>
-      </div>
-      <div class="ability-block">
-        <span class="ability-name">DEX</span>
-        <span class="ability-score"
-          >{{ monster.dexterity }} (<stat-bonus
-            :stat="monster.dexterity"
-          />)</span
-        >
-      </div>
-      <div class="ability-block">
-        <span class="ability-name">CON</span>
-        <span class="ability-score"
-          >{{ monster.constitution }} (<stat-bonus
-            :stat="monster.constitution"
-          />)</span
-        >
-      </div>
-      <div class="ability-block">
-        <span class="ability-name">INT</span>
-        <span class="ability-score"
-          >{{ monster.intelligence }} (<stat-bonus
-            :stat="monster.intelligence"
-          />)</span
-        >
-      </div>
-      <div class="ability-block">
-        <span class="ability-name">WIS</span>
-        <span class="ability-score">
-          {{ monster.wisdom }} (<stat-bonus :stat="monster.wisdom" />)
-        </span>
-      </div>
-      <div class="ability-block">
-        <span class="ability-name">CHA</span>
-        <span class="ability-score">
-          {{ monster.charisma }} (<stat-bonus :stat="monster.charisma" />)
-        </span>
+
+    <!-- ABILITY SCORES -->
+    <div class="space-between max-w-96 flex items-center gap-4">
+      <div
+        v-for="ability in attributes"
+        :key="ability.name"
+        class="text-center"
+      >
+        <div class="font-bold uppercase">{{ ability.shortName }}</div>
+        <div>{{ `${ability.score} (${formatMod(ability.modifier)})` }}</div>
       </div>
     </div>
+
     <hr />
 
+    <!-- SAVING THROWS -->
     <p>
       <span class="font-bold">Saving Throws</span>
-      <span v-for="save in saves" :key="save.name">
-        <span>{{ save.name }}</span>
-        <stat-bonus :stat="save.val" :type="save.type" />
+      <span v-for="ability in attributes" :key="ability.name">
+        <span class="capitalize before:content-['_']">
+          {{ ability.shortName }}
+        </span>
+        <span class="before:content-['_']">
+          {{ formatMod(ability.save) }}
+        </span>
       </span>
     </p>
 
@@ -125,7 +97,7 @@
       :key="ability.name"
       class="action-block"
     >
-      <b class="action-name">{{ ability.name }}. </b>
+      <span class="font-bold">{{ ability.name }}. </span>
       <md-viewer class="inline" :text="ability.desc" />
     </p>
     <h2 v-if="monster.actions">Actions</h2>
@@ -190,35 +162,26 @@ const monster = await useFetchArticle({
   slug: useRoute().params.id,
   category: 'monsters',
 });
-const saves = [];
-if (monster) {
-  let savesArray = [
-    { name: 'strength', display: 'Str' },
-    { name: 'dexterity', display: 'Dex' },
-    { name: 'constitution', display: 'Con' },
-    { name: 'intelligence', display: 'Int' },
-    { name: 'wisdom', display: 'Wis' },
-    { name: 'charisma', display: 'Cha' },
-  ];
-  // build an object of save bonuses if they exist
-  for (let i = 0; i < savesArray.length; i++) {
-    const saveValue = monster[savesArray[i].name + '_save'];
-    const statValue = monster[savesArray[i].name];
-    if (saveValue !== null) {
-      saves.push({
-        name: savesArray[i].display,
-        val: saveValue,
-        type: 'bonus',
-      });
-    } else {
-      saves.push({
-        name: savesArray[i].display,
-        val: statValue,
-        type: 'score',
-      });
-    }
-  }
-}
+
+// Helper functions
+const calcMod = (score) => Math.floor((score - 10) / 2);
+const formatMod = (mod) => (mod >= 0 ? '+' + mod.toString() : mod.toString());
+
+// Collect ability scores, saving throws, &c in one array
+const attributes = [
+  'strength',
+  'dexterity',
+  'constitution',
+  'intelligence',
+  'wisdom',
+  'charisma',
+].map((attribute) => ({
+  name: attribute,
+  shortName: attribute.slice(0, 3),
+  score: monster[attribute],
+  modifier: calcMod(monster[attribute]),
+  save: monster[`${attribute}_save`] ?? calcMod(monster[attribute]),
+}));
 </script>
 
 <style scoped lang="scss">
@@ -246,23 +209,6 @@ if (monster) {
 
   .action-name {
     font-size: 1.1rem;
-  }
-}
-
-.ability-array {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 30rem;
-
-  .ability-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .ability-name {
-      font-weight: bold;
-    }
   }
 }
 </style>
