@@ -32,7 +32,8 @@
     </p>
     <md-viewer :text="spell.desc" />
     <p v-if="spell.higher_level">
-      <label>At higher levels:</label> {{ spell.higher_level }}
+      <label class="font-bold">At higher levels:</label>
+      {{ spell.higher_level }}
     </p>
     <p class="text-sm italic">
       Source:
