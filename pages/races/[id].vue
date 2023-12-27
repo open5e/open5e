@@ -1,5 +1,5 @@
 <template>
-  <section v-show="loaded" class="docs-container container">
+  <section v-show="race" class="docs-container container">
     <h1>{{ race.name }}</h1>
     <md-viewer :text="race.desc" />
     <md-viewer :text="race['asi_desc']" />
@@ -12,8 +12,8 @@
     <md-viewer :text="race.traits" />
     <p class="text-sm italic">
       Source:
-      <a target="NONE" :href="race.document__url"
-        >{{ race.document__title }}
+      <a target="NONE" :href="race.document__url">
+        <span>{{ race.document__title }}</span>
         <Icon name="heroicons:arrow-top-right-on-square-20-solid"></Icon
       ></a>
     </p>
@@ -43,35 +43,9 @@
   </section>
 </template>
 
-<script>
-import axios from 'axios';
-
-export default {
-  data() {
-    return {
-      posts: [],
-      errors: [],
-      race: [],
-      loaded: false,
-      subraceLength: 0,
-    };
-  },
-  mounted() {
-    const { id } = useRoute().params;
-    const url = `${useRuntimeConfig().public.apiUrl}/races/${id}/`;
-    return axios
-      .get(url) //you will need to enable CORS to make this work
-      .then((response) => {
-        this.race = response.data;
-        this.loaded = true;
-        this.subraceLength = this.race.subraces.length;
-      })
-      .catch(() => {
-        throw showError({
-          statusCode: 404,
-          message: `The page ${useRoute().path} does not exist`,
-        });
-      });
-  },
-};
+<script setup>
+const race = await useFetchArticle({
+  slug: useRoute().params.id,
+  category: 'races',
+});
 </script>

@@ -30,39 +30,9 @@
   </section>
 </template>
 
-<script>
-import axios from 'axios';
-
-export default {
-  data() {
-    return {
-      item: [],
-      loading: true,
-    };
-  },
-  computed: {
-    nextSpellId: function () {
-      return this.item.id + 1;
-    },
-    prevSpellId: function () {
-      return this.item.id - 1;
-    },
-  },
-  mounted() {
-    const { id } = useRoute().params;
-    const url = `${useRuntimeConfig().public.apiUrl}/magicitems/${id}/`;
-    return axios
-      .get(url) //you will need to enable CORS to make this work
-      .then((response) => {
-        this.item = response.data;
-        this.loading = false;
-      })
-      .catch(() => {
-        throw showError({
-          statusCode: 404,
-          message: `${useRoute().path} does not exist`,
-        });
-      });
-  },
-};
+<script setup>
+const item = await useFetchArticle({
+  slug: useRoute().params.id,
+  category: 'magicitems',
+});
 </script>

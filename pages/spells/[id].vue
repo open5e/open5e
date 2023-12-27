@@ -1,90 +1,57 @@
 <template>
-  <section class="docs-container container">
-    <p v-if="loading">Loading...</p>
-    <div v-else>
-      <h1>{{ spell.name }}</h1>
-      <p>
-        <em>{{ spell.level }} {{ spell.school }}</em> | {{ spell.dnd_class }}
-        <source-tag
-          v-show="spell.document__slug"
-          :title="spell.document__title"
-          :text="spell.document__slug"
-        />
-      </p>
-      <p><label>Range:</label> {{ spell.range }}</p>
-      <p>
-        <label>Casting Time:</label> {{ spell.casting_time }}
-        <span v-if="spell.ritual === 'yes'">{{ spell.ritual }} (Ritual)</span>
-      </p>
-      <p>
-        <label>Duration:</label> {{ spell.duration }}
-        <span v-if="spell.concentration === 'yes'">(Concentration)</span>
-      </p>
-      <p>
-        <label
-          >Components: {{ spell.components }}
-
-          <span v-if="spell.material" class="font-medium text-slate-600"
-            >({{ spell.material.replace(/\.$/, '') }})
-            <!-- Removes trailing preiod, if there is one -->
-          </span>
-        </label>
-      </p>
-      <md-viewer :text="spell.desc" />
-      <p v-if="spell.higher_level">
-        <label>At higher levels:</label> {{ spell.higher_level }}
-      </p>
-      <p class="text-sm italic">
-        Source:
-        <a target="NONE" :href="spell.document__url"
-          >{{ spell.document__title }}
-          <Icon name="heroicons:arrow-top-right-on-square-20-solid"></Icon
-        ></a>
-      </p>
-    </div>
+  <section v-if="spell" class="docs-container container">
+    <h1>{{ spell.name }}</h1>
+    <p>
+      <span class="italic">{{ `${spell.level} ${spell.school}` }}</span>
+      <span v-if="isRitual"> (ritual)</span>
+      <span> | {{ spell.dnd_class }} </span>
+      <source-tag
+        v-show="spell.document__slug"
+        :title="spell.document__title"
+        :text="spell.document__slug"
+      />
+    </p>
+    <p><label class="font-bold">Range:</label> {{ spell.range }}</p>
+    <p>
+      <label class="font-bold">Casting Time:</label> {{ spell.casting_time }}
+    </p>
+    <p>
+      <label class="font-bold">Duration: </label>
+      <span v-if="requiresConcentration"
+        >Concentration, up to {{ spell.duration }}</span
+      >
+      <span v-else>{{ spell.duration }}</span>
+    </p>
+    <p>
+      <label class="font-bold">Components: </label>
+      <span>{{ spell.components }}</span>
+      <span v-if="spell.material" class="font-medium text-slate-600">
+        ({{ spell.material.replace(/\.$/, '') }})
+        <!-- Removes trailing preiod -->
+      </span>
+    </p>
+    <md-viewer :text="spell.desc" />
+    <p v-if="spell.higher_level">
+      <label class="font-bold">At higher levels:</label>
+      {{ spell.higher_level }}
+    </p>
+    <p class="text-sm italic">
+      Source:
+      <a target="NONE" :href="spell.document__url">
+        {{ spell.document__title }}
+        <Icon name="heroicons:arrow-top-right-on-square-20-solid"></Icon>
+      </a>
+    </p>
   </section>
+  <section v-else class="docs-container container">Loading...</section>
 </template>
 
-<script>
-import axios from 'axios';
-
-export default {
-  data() {
-    return {
-      spell: [],
-      classList: [],
-      loading: true,
-    };
-  },
-  computed: {
-    nextSpellId: function () {
-      return this.spell.id + 1;
-    },
-    prevSpellId: function () {
-      return this.spell.id - 1;
-    },
-  },
-  mounted() {
-    const { id } = useRoute().params;
-    const url = `${useRuntimeConfig().public.apiUrl}/spells/${id}/`;
-    return axios
-      .get(url)
-      .then((response) => {
-        this.spell = response.data;
-        this.loading = false;
-      })
-      .catch(() => {
-        throw showError({
-          statusCode: 404,
-          message: `The page ${useRoute().path} does not exist`,
-        });
-      });
-  },
-};
+<script setup>
+const spell = await useFetchArticle({
+  slug: useRoute().params.id,
+  category: 'spells',
+});
+// convert text fields to bools
+const isRitual = spell.ritual === 'yes';
+const requiresConcentration = spell.concentration === 'yes';
 </script>
-
-<style scoped>
-label {
-  font-weight: bold;
-}
-</style>

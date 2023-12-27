@@ -5,6 +5,11 @@ module.exports = {
     node: true,
   },
   parser: 'vue-eslint-parser',
+  parserOptions: {
+    parser: 'espree',
+    ecmaVersion: 2022,
+    sourceType: 'module',
+  },
   extends: [
     // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
     // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
