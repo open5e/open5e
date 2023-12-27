@@ -2,8 +2,8 @@
   <section class="docs-container container">
     <h1>Creating Characters</h1>
     <div
-      class="flex w-full flex-wrap pt-2 text-lg"
       v-if="charSections.length == 0"
+      class="flex w-full flex-wrap pt-2 text-lg"
     >
       <div class="flex w-full">
         There are no items for this category that align with the corresponding
@@ -13,7 +13,7 @@
         Please edit your selected sources for more results.
       </div>
     </div>
-    <div class="docs-toc" v-else>
+    <div v-else class="docs-toc">
       <ul>
         <li v-for="section in charSections" :key="section.slug">
           <nuxt-link tag="a" :to="`/characters/${section.slug}`">

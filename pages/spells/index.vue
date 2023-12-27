@@ -4,15 +4,15 @@
       <h1 class="filter-header">Spell List</h1>
     </div>
     <PageNav
+      :list-length="filteredSpells.length"
+      list-wording="spells listed."
+      :page-number="pageNumber"
+      :page-count="pageCount"
       @first="pageNumber = 0"
       @last="pageNumber = pageCount - 1"
       @next="pageNumber++"
       @prev="pageNumber--"
-      :listLength="filteredSpells.length"
-      listWording="spells listed."
-      :pageNumber="pageNumber"
-      :pageCount="pageCount"
-    ></PageNav>
+    />
     <div>
       <p v-if="!spells.length">Loading...</p>
       <table v-else class="filterable-table">
@@ -89,15 +89,15 @@
       </table>
     </div>
     <PageNav
+      :list-length="filteredSpells.length"
+      list-wording="spells listed."
+      :page-number="pageNumber"
+      :page-count="pageCount"
       @first="pageNumber = 0"
       @last="pageNumber = pageCount - 1"
       @next="pageNumber++"
       @prev="pageNumber--"
-      :listLength="filteredSpells.length"
-      listWording="spells listed."
-      :pageNumber="pageNumber"
-      :pageCount="pageCount"
-    ></PageNav>
+    />
   </section>
 </template>
 

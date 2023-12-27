@@ -8,11 +8,8 @@
 <script>
 export default {
   props: {
-    stat: Number,
-    type: {
-      type: String,
-      default: 'score',
-    },
+    stat: { type: Number, default: 0 },
+    type: { type: String, default: 'score' },
   },
   computed: {
     statBonus: function () {
@@ -25,5 +22,3 @@ export default {
   },
 };
 </script>
-
-<style></style>

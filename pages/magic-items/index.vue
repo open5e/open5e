@@ -56,8 +56,8 @@
             <span class="mr-2 font-bold">REQUIRES ATTUNEMENT:</span>
             <input
               id="attunement"
-              type="checkbox"
               v-model="filters.attunement"
+              type="checkbox"
               name="attunement"
               class="mb-1 accent-blood"
             />
