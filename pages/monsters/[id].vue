@@ -4,7 +4,9 @@
     <img v-if="monster.img_main" :src="monster.img_main" class="img-main" />
     <p class="italic">
       <span>
-        {{ `${monster.size} ${monster.type}, ${monster.alignment}` }}
+        {{
+          `${monster.size} ${monster.type} ${monster.subtype}, ${monster.alignment}`
+        }}
       </span>
       <source-tag
         v-show="monster.document__slug"
