@@ -60,3 +60,4 @@ nginx/ssl/*
 
 
 .output/
+nuxt.config.ts
