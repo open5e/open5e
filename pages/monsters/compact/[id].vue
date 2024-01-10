@@ -4,9 +4,13 @@
     <div v-else class="compact">
       <b>{{ monster.name }}</b
       ><br />
-      <em>{{ monster.size }} {{ monster.type }}, {{ monster.alignment }} </em>
+      <em
+        >{{ monster.size }} {{ monster.type }} {{ monster.subtype }},
+        {{ monster.alignment }}
+      </em>
       <hr />
-      <b>Armor Class</b> {{ monster.armor_class }}<br />
+      <b>Armor Class</b> {{ monster.armor_class }} {{ monster.armor_desc
+      }}<br />
       <b>Hit Points</b> {{ monster.hit_points }} ({{ monster.hit_dice }})<br />
 
       <b class="pad-r-sm">Speed </b>
