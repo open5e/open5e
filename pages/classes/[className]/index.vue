@@ -41,7 +41,7 @@
         {{ classData.prof_skills }}
       </p>
 
-      <h3>The {{ className }}</h3>
+      <h3>The {{ classData.name }}</h3>
       <md-viewer :text="classData.table" />
     </section>
 
