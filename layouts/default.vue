@@ -85,18 +85,12 @@
 
       <!-- Page central column -->
       <div
-        class="content-wrapper w-screen bg-white text-darkness dark:bg-darkness dark:text-white sm:w-full"
+        class="content-wrapper w-screen overflow-y-auto bg-white text-darkness dark:bg-darkness dark:text-white sm:w-full"
       >
-        <!-- Mobile Header -->
+        <!-- Site Header -->
 
-        <div class="flex">
+        <div class="flex h-12 align-middle">
           <sidebar-toggle @click="toggleSidebar" />
-          <nuxt-link
-            to="/"
-            class="mb-1 flex self-center font-serif text-lg font-bold sm:hidden"
-          >
-            Open5e
-          </nuxt-link>
           <breadcrumb-links class="flex-grow" />
           <theme-switcher class="inline-block" />
         </div>
