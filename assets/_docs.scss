@@ -24,8 +24,6 @@ table {
 }
 
 .container {
-  margin: $pad-lg auto $pad-lg 0;
-  padding: 0 $pad-lg;
   h1 {
     font-size: 2rem;
     &:not(:first-child) {

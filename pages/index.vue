@@ -9,9 +9,10 @@
       <a href="https://slyflourish.com/lazydm/">The Lazy Dungeon Master</a> is a
       masterwork of a guide for anyone aspiring to run Dungeons & Dragons or any
       RPG. Check out
-      <a href="https://slyflourish.com/top_advice.html"
-        >How to Be a Great D&D Dungeon Master</a
-      >, even if you're an expert. I can guarantee you'll learn something.
+      <a href="https://slyflourish.com/top_advice.html">
+        How to Be a Great D&D Dungeon Master
+      </a>
+      , even if you're an expert. I can guarantee you'll learn something.
     </p>
     <p>
       I'd also like to recommend
@@ -30,6 +31,13 @@
     </p>
 
     <h2>Supporting and Contributing</h2>
+
+    <h3>Contribute on Github</h3>
+    <p>
+      The Open5e <a href="https://github.com/open5e/open5e">site</a> and
+      <a href="https://github.com/open5e/open5e">API</a> are both open-source on
+      Github! Join us as a contributor and help develop new features and tools.
+    </p>
     <div class="side-note">
       <h3>Hey! Stuff is missing!</h3>
       <p>
@@ -42,13 +50,6 @@
         should add!
       </p>
     </div>
-
-    <h3>Contribute on Github</h3>
-    <p>
-      The Open5e <a href="https://github.com/open5e/open5e">site</a> and
-      <a href="https://github.com/open5e/open5e">API</a> are both open-source on
-      Github! Join us as a contributor and help develop new features and tools.
-    </p>
     <h4>Our tech stack</h4>
     <p>Want to know what you'd be getting into?</p>
     <p><b>DRF API server.</b> A powerful Python-based REST Framework.</p>
@@ -103,17 +104,6 @@
     </p>
   </section>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      monsters: [],
-      spells: [],
-    };
-  },
-};
-</script>
 
 <style lang="scss">
 .external-button {
