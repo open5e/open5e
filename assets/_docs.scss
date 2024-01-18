@@ -37,11 +37,13 @@ table {
     border-bottom: 3px solid $color-fireball;
     padding-bottom: $pad-xs;
   }
+  h4 {
+    display: inline;
+  }
 
   h1,
   h2,
   h3,
-  h4,
   h5,
   h6 {
     display: flex;

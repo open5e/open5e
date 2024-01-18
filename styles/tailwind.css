@@ -15,7 +15,7 @@ h3 {
 }
 
 h4 {
-  @apply text-lg;
+  @apply text-base;
 }
 
 h5 {
