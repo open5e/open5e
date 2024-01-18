@@ -2,15 +2,21 @@
   <div class="overflow-hidden text-darkness">
     <SourcesModal :show="showModal" @close="showModal = false" />
     <div
-      class="app-wrapper relative h-screen w-screen bg-white dark:bg-darkness"
-      :class="{ 'show-sidebar': showSidebar }"
+      class="grid h-screen w-screen grid-flow-col bg-white transition-all dark:bg-darkness sm:ml-0 sm:grid-cols-[14rem_1fr] sm:overflow-y-auto sm:transition-none"
+      :class="showSidebar ? 'ml-0' : '-ml-56'"
     >
       <!-- Sidebar -->
       <div
-        class="sidebar relative z-50 flex flex-col bg-slate-700 text-white dark:bg-slate-900"
+        class="z-50 flex w-56 flex-col overflow-y-auto bg-slate-700 text-white dark:bg-slate-900"
       >
         <!-- Logo -->
-        <nuxt-link to="/" class="logo bg-red p-5 text-3xl">Open5e</nuxt-link>
+        <nuxt-link
+          to="/"
+          class="bg-red p-5 font-serif text-3xl text-white hover:text-white"
+        >
+          Open5e
+        </nuxt-link>
+
         <!-- SOURCE MODAL -->
         <div
           class="cursor-pointer bg-red-600 px-4 py-2 hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
@@ -68,10 +74,7 @@
         </ul>
 
         <!-- Patron Banner -->
-        <a
-          class="mt-auto inline-block self-end"
-          href="https://www.patreon.com/open5e"
-        >
+        <a href="https://www.patreon.com/open5e">
           <img
             src="/img/patron-badge.png"
             class="block w-full"
@@ -82,38 +85,27 @@
 
       <!-- Page central column -->
       <div
-        class="content-wrapper bg-white text-darkness dark:bg-darkness dark:text-white"
+        class="content-wrapper w-screen overflow-y-auto bg-white text-darkness dark:bg-darkness dark:text-white sm:w-full"
       >
-        <!-- Mobile Header -->
-        <div
-          class="mobile-header sticky z-60 h-12 flex-row justify-between bg-red text-3xl dark:bg-red-800"
-        >
-          <div
-            class="sidebar-toggle flex h-full w-12 cursor-pointer items-center justify-center hover:bg-blood"
-            @click="toggleSidebar"
-          />
-          <nuxt-link
-            to="/"
-            class="logo mb-1 self-center font-serif text-lg font-bold text-white"
-          >
-            Open5e
-          </nuxt-link>
-          <div class="h-12 w-12" />
+        <!-- Site Header -->
+
+        <div class="flex h-12 align-middle">
+          <sidebar-toggle @click="toggleSidebar" />
+          <breadcrumb-links class="flex-grow" />
+          <theme-switcher class="inline-block" />
         </div>
 
         <!-- Shade: fades out main content when sidebar expanded on mobile -->
         <div
           v-show="showSidebar"
-          class="shade fixed left-0 top-0 z-48 h-full w-full bg-basalt/50"
+          class="fixed left-0 top-0 z-48 h-full w-full bg-basalt/50 sm:hidden"
           @click="hideSidebar"
         />
-        <div class="flex">
-          <breadcrumb-links class="flex-grow" />
-          <theme-switcher class="inline-block" />
-        </div>
 
         <!-- Main page content -->
-        <nuxt-page class="page-content text-darkness dark:text-white" />
+        <nuxt-page
+          class="main-content pt-auto mx-0 w-full px-4 py-4 pb-0 text-darkness dark:text-white sm:px-8"
+        />
       </div>
     </div>
   </div>
@@ -284,94 +276,9 @@ export default {
 <style lang="scss">
 @import '../assets/main';
 
-.shade {
-  display: none;
-}
-
-.app-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-content: stretch;
-}
-
-.content-wrapper {
-  padding: $content-padding-y $content-padding-x;
-  overflow: auto;
-  flex-grow: 1;
-  max-width: 60rem;
-}
-.page-content {
-  * > a {
+.main-content {
+  a {
     @apply text-indigo-600 hover:text-blood hover:underline dark:text-indigo-200 dark:hover:text-red;
-  }
-}
-
-.logo {
-  font-family: Lora, serif;
-  display: block;
-}
-
-.mobile-header {
-  display: none;
-  width: calc(100% + 4rem);
-  margin: (-$content-padding-y) (-$content-padding-x) 0;
-}
-
-.sidebar {
-  width: $sidebar-width;
-  min-width: $sidebar-width;
-  overflow-y: auto;
-}
-
-.sidebar-toggle {
-  background-image: url('/img/menu-button.png');
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-// These should be refactored using Tailwind breakpoints
-@media (max-width: 600px) {
-  .shade {
-    display: block;
-  }
-
-  .app-wrapper {
-    margin-left: -$sidebar-width;
-    transition: margin-left 250ms ease;
-
-    .mobile-header {
-      display: flex;
-    }
-
-    .container {
-      padding: 0;
-    }
-
-    .content-wrapper {
-      min-width: 100vw;
-    }
-
-    .sidebar {
-      min-width: $sidebar-width;
-    }
-  }
-
-  .app-wrapper.show-sidebar {
-    margin-left: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .app-wrapper {
-    .content-wrapper {
-      max-width: calc(100vw - 24rem);
-      overflow-x: visible;
-
-      .side-note {
-        right: 2rem;
-      }
-    }
   }
 }
 </style>

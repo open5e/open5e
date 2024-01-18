@@ -3,7 +3,7 @@
 @import 'docs';
 
 .side-note {
-  @apply sticky right-3 float-right m-2 w-80 border border-blue-600 bg-blue-100 p-2 text-blue-900 dark:border-smoke dark:bg-basalt dark:text-white;
+  @apply right-3 m-2 block w-full border border-blue-600 bg-blue-100 p-2 text-blue-900 dark:border-smoke dark:bg-basalt dark:text-white md:sticky md:float-right md:w-80 xl:right-8;
   h3 {
     @apply mt-0;
   }
