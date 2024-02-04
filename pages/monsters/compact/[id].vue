@@ -58,7 +58,7 @@
           </span>
         </span>
       </div>
-      <div v-if="monster.skills.length > 0">
+      <div v-if="monster.skills?.length > 0">
         <b class="pad-r-sm">Skills </b>
         <span
           v-for="(skill, key, index) in monster.skills"
@@ -89,7 +89,7 @@
         <challenge-render :challenge="monster.challenge_rating" />
       </div>
 
-      <hr v-if="monster.special_abilities.length > 0" />
+      <hr v-if="monster.special_abilities?.length > 0" />
       <p
         v-for="ability in monster.special_abilities"
         :key="ability.name"
@@ -109,9 +109,9 @@
         <b class="action-name">{{ action.name }}. </b>
         <md-viewer class="inline" :text="action.desc" />
       </p>
-
-      <hr v-if="monster.reactions.length > 0" />
-      <b v-if="monster.reactions.length > 0">Reactions</b>
+      <p>Monster Reactions: {{ monster.reactions }}</p>
+      <hr v-if="monster.reactions?.length > 0" />
+      <b v-if="monster.reactions?.length > 0">Reactions</b>
       <p
         v-for="action in monster.reactions"
         :key="action.name"
@@ -121,8 +121,8 @@
         <md-viewer class="inline" :text="action.desc" />
       </p>
 
-      <hr v-if="monster.legendary_actions.length > 0" />
-      <b v-if="monster.legendary_actions.length > 0">Legendary Actions</b>
+      <hr v-if="monster.legendary_actions?.length > 0" />
+      <b v-if="monster.legendary_actions?.length > 0">Legendary Actions</b>
       <p
         v-for="action in monster.legendary_actions"
         :key="action.name"
