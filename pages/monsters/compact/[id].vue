@@ -109,7 +109,7 @@
         <b class="action-name">{{ action.name }}. </b>
         <md-viewer class="inline" :text="action.desc" />
       </p>
-      <p>Monster Reactions: {{ monster.reactions }}</p>
+
       <hr v-if="monster.reactions?.length > 0" />
       <b v-if="monster.reactions?.length > 0">Reactions</b>
       <p
