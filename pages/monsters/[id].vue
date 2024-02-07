@@ -77,7 +77,6 @@
     </h4>
     <span>{{ monster.damage_vulnerabilities }}</span>
 
-    <p></p>
     <h4 v-if="monster.damage_resistances" class="after:content-[': '] pr-1">
       Damage Resistances
     </h4>
@@ -102,8 +101,8 @@
     <p></p>
     <h4 v-if="monster.challenge_rating" class="after:content-[': '] pr-1">
       Challenge
+      <span><challenge-render :challenge="monster.challenge_rating" /></span>
     </h4>
-    <span><challenge-render :challenge="monster.challenge_rating" /></span>
 
     <hr />
 
@@ -115,8 +114,8 @@
       class="action-block"
     >
       {{ ability.name }}.
+      <md-viewer class="inline" :text="ability.desc" />
     </h4>
-    <md-viewer class="inline" :text="ability.desc" />
 
     <!-- Monster Actions -->
     <h2 v-if="monster.actions">Actions</h2>
@@ -126,8 +125,8 @@
       class="action-block,action-name after:content-[': ']"
     >
       {{ action.name }}.
+      <md-viewer class="inline" :text="action.desc" />
     </h4>
-    <md-viewer class="inline" :text="action.desc" />
 
     <!-- Monster Bonus Actions -->
     <h2 v-if="monster.bonus_actions">Bonus Actions</h2>
@@ -137,8 +136,8 @@
       class="action-block, action-name after:content-[': ']"
     >
       {{ bonus_action.name }}.
+      <md-viewer class="inline" :text="bonus_action.desc" />
     </h4>
-    <md-viewer class="inline" :text="bonus_action.desc" />
 
     <!-- Monster Reactions -->
     <h2 v-if="monster.reactions">Reactions</h2>
@@ -148,8 +147,8 @@
       class="action-block, action-name after:content-[': ']"
     >
       {{ action.name }}.
+      <md-viewer class="inline" :text="action.desc" />
     </h4>
-    <md-viewer class="inline" :text="action.desc" />
 
     <!-- Monster Legendary Actions -->
     <h2 v-if="monster.legendary_actions">Legendary Actions</h2>
@@ -163,8 +162,8 @@
       class="action-block, action-name after:content-[': ']"
     >
       {{ action.name }}.
+      <md-viewer class="inline" :text="action.desc" />
     </h4>
-    <md-viewer class="inline" :text="action.desc" />
 
     <!-- Monster Mythic Actions -->
     <h2 v-if="monster.mythic_actions">Mythic Actions</h2>
@@ -174,8 +173,8 @@
       class="action-block, action-name after:content-[': ']"
     >
       {{ mythic_actions.name }}.
+      <md-viewer class="inline" :text="mythic_actions.desc" />
     </h4>
-    <md-viewer class="inline" :text="mythic_actions.desc" />
 
     <!-- Monster Lair and Lair Actions -->
     <h2 v-if="monster.lair_actions">Lair Actions</h2>
@@ -189,8 +188,8 @@
       class="action-block, action-name after:content-[': ']"
     >
       {{ action.name }}.
+      <md-viewer class="inline" :text="action.desc" />
     </h4>
-    <md-viewer class="inline" :text="action.desc" />
 
     <!-- Monster Description -->
     <h2 v-if="monster.desc">Description</h2>
@@ -201,8 +200,8 @@
 
     <h4>Environments:</h4>
     <span
-      v-bind:key="item.id"
       v-for="item in monster.environments"
+      :key="item.id"
       class="text-sm after:content-['.'] [&:not(:last-child)]:after:content-[',_']"
     >
       {{ item }}
