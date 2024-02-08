@@ -1,17 +1,16 @@
 <template>
-  <div>
-    <VueShowdown
-      ref="mdwrapper"
-      :vue-template="true"
-      :options="{
-        tables: true,
-        headerLevelStart: headerLevel,
-        vueTemplate: true,
-      }"
-      :markdown="mdText"
-      :extensions="insertCrossLinks"
-    />
-  </div>
+  <VueShowdown
+    ref="mdwrapper"
+    :vue-template="true"
+    :options="{
+      tables: true,
+      headerLevelStart: headerLevel,
+      vueTemplate: true,
+    }"
+    :markdown="mdText"
+    :extensions="insertCrossLinks"
+    :class="inline ? 'markdown-inline' : ''"
+  />
 </template>
 
 <script>
@@ -25,6 +24,7 @@ export default {
     toc: { type: Boolean, default: true },
     text: { type: String, default: 'loading...' },
     headerLevel: { type: Number, default: 1 },
+    inline: { type: Boolean, default: false },
   },
   data() {
     return { sourceText: '' };
@@ -65,3 +65,12 @@ export default {
   },
 };
 </script>
+
+<style>
+.markdown-inline {
+  display: inline;
+  * {
+    display: inherit;
+  }
+}
+</style>
