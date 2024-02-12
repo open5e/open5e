@@ -16,6 +16,11 @@
           <nuxt-link tag="a" :to="`/races/${race.slug}`">
             {{ race.name }}
           </nuxt-link>
+          <source-tag
+            v-if="race.document__slug !== 'wotc-srd'"
+            :text="race.document__slug"
+            :title="race.document__title"
+          />
         </li>
       </ul>
     </div>
