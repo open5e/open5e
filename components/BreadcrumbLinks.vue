@@ -75,4 +75,19 @@ const crumbs = computed(() => {
     })
     .filter((breadcrumb) => breadcrumb);
 });
+
+const BASE_TITLE = 'Open5e';
+
+const title = computed(() => {
+  if (crumbs.value.length === 0) {
+    return BASE_TITLE;
+  }
+  return (
+    crumbs.value
+      .map((crumb) => crumb.title)
+      .toReversed()
+      .join(' - ') + ` - ${BASE_TITLE}`
+  );
+});
+useHead({ title: title });
 </script>
