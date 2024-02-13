@@ -122,8 +122,9 @@ export default {
 
     const crumbs = computed(() => {
       let url = '';
+
       return useRoute()
-        .path.split('/')
+        .fullPath.split('/')
         .map((segment) => {
           // ignore initial & trailing slashes
           if (segment === '' || segment === '/') {
