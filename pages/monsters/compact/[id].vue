@@ -89,6 +89,7 @@
         <challenge-render :challenge="monster.challenge_rating" />
       </div>
 
+      <!-- Special Abilities -->
       <hr v-if="monster.special_abilities?.length > 0" />
       <p
         v-for="ability in monster.special_abilities"
@@ -99,6 +100,7 @@
         <md-viewer class="inline" :text="ability.desc" />
       </p>
 
+      <!-- Monster Actions -->
       <hr v-if="monster.actions.length > 0" />
       <b v-if="monster.actions.length > 0">Actions</b>
       <p
@@ -110,6 +112,7 @@
         <md-viewer class="inline" :text="action.desc" />
       </p>
 
+      <!-- Monster Reactions -->
       <hr v-if="monster.reactions?.length > 0" />
       <b v-if="monster.reactions?.length > 0">Reactions</b>
       <p
@@ -121,6 +124,7 @@
         <md-viewer class="inline" :text="action.desc" />
       </p>
 
+      <!-- Monster Legendary Actions -->
       <hr v-if="monster.legendary_actions?.length > 0" />
       <b v-if="monster.legendary_actions?.length > 0">Legendary Actions</b>
       <p
