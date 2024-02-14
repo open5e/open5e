@@ -40,39 +40,5 @@
 </template>
 
 <script setup>
-import { useRoute } from 'nuxt/app';
-import { computed } from 'vue';
-const crumbs = computed(() => {
-  let url = '';
-  return useRoute()
-    .path.split('/')
-    .map((segment) => {
-      // ignore initial & trailing slashes
-      if (segment === '' || segment === '/') {
-        return;
-      }
-
-      // rebuild link urls segment by segment
-      url += `/${segment}`;
-
-      // seperate segment title & query params
-      const [title, queryParams] = segment.split('?');
-
-      // extract & format the search params if on the /search route
-      const searchParam =
-        title === 'search' &&
-        queryParams.split('text=')[1].split('+').join(' ');
-
-      // return a
-      return {
-        url,
-        title: title // format crumb title
-          .split('-')
-          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-          .join(' '),
-        subtitle: searchParam,
-      };
-    })
-    .filter((breadcrumb) => breadcrumb);
-});
+const crumbs = inject('crumbs');
 </script>

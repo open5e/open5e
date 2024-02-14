@@ -113,10 +113,63 @@
 
 <script>
 import { useMainStore } from '../store/index';
+import { useRoute } from 'nuxt/app';
+import { computed } from 'vue';
 
 export default {
   setup() {
     const store = useMainStore();
+
+    const crumbs = computed(() => {
+      let url = '';
+
+      return useRoute()
+        .fullPath.split('/')
+        .map((segment) => {
+          // ignore initial & trailing slashes
+          if (segment === '' || segment === '/') {
+            return;
+          }
+
+          // rebuild link urls segment by segment
+          url += `/${segment}`;
+
+          // seperate segment title & query params
+          const [title, queryParams] = segment.split('?');
+
+          // extract & format the search params if on the /search route
+          const searchParam =
+            title === 'search' &&
+            queryParams.split('text=')[1].split('+').join(' ');
+
+          // return a
+          return {
+            url,
+            title: title // format crumb title
+              .split('-')
+              .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+              .join(' '),
+            subtitle: searchParam,
+          };
+        })
+        .filter((breadcrumb) => breadcrumb);
+    });
+    provide('crumbs', crumbs);
+
+    const BASE_TITLE = 'Open5e';
+
+    const title = computed(() => {
+      if (crumbs.value.length === 0) {
+        return BASE_TITLE;
+      }
+      return (
+        crumbs.value
+          .map((crumb) => crumb.title)
+          .toReversed()
+          .join(' - ') + ` - ${BASE_TITLE}`
+      );
+    });
+    useHead({ title: title });
     return { store };
   },
   data() {
