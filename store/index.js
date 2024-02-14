@@ -108,6 +108,7 @@ export const useMainStore = defineStore({
       races: [],
       sections: [],
       backgrounds: [],
+      feats: [],
       savedSources: [],
       sourceSelection: [],
       sourceString: '',
@@ -129,7 +130,7 @@ export const useMainStore = defineStore({
         filters = {},
         processData = (data) => data,
       } = params;
-
+      console.log(resource);
       if (this.freshVals.has(listName)) {
         // The list is fresh, no need to make the API call
         return;
@@ -207,6 +208,14 @@ export const useMainStore = defineStore({
       });
     },
 
+    async loadFeats() {
+      console.log('loadFeats ran');
+      await this.loadFromApi({
+        resource: 'feats',
+        limit: 1000,
+        listName: 'feats',
+      });
+    },
     async loadRaces() {
       await this.loadFromApi({
         resource: 'races',
@@ -298,6 +307,7 @@ export const useMainStore = defineStore({
         sections: this.loadSections,
         backgrounds: this.loadBackgrounds,
         documents: this.loadDocuments,
+        feats: this.loadFeats,
       };
 
       this.freshVals.clear(); // clear the list of fresh sources. this should be done whenever a global fitler changes
@@ -348,6 +358,9 @@ export const useMainStore = defineStore({
     },
     allBackgrounds: (state) => {
       return state.backgrounds;
+    },
+    allFeats: (state) => {
+      return state.feats;
     },
     allDocuments: (state) => {
       return state.documents;
