@@ -1,8 +1,9 @@
 {
   "name": "nuxt-app",
+  "type": "module",
   "private": true,
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "scripts": {
     "build": "nuxt build",
@@ -17,12 +18,14 @@
     "lint:prettier": "prettier --check --ignore-path .gitignore '**/*.{js,vue}'",
     "lintfix": "npm run lint:js -- --fix && npm run lint:prettier -- --write",
     "pre-commit": "npx pretty-quick --staged && npm run lintfix",
-    "test": "echo 'Coming soon, hopefully!'"
+    "test": "echo 'Coming soon, hopefully!'",
+    "cypress:open": "cypress open"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxtjs/tailwindcss": "^6.7.0",
     "@types/node": "^18",
+    "cypress": "^13.6.4",
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",

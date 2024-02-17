@@ -255,6 +255,7 @@
       Compact Statblock:
       <nuxt-link
         tag="a"
+        data-compact=""
         :params="{ id: monster.slug }"
         :to="`/monsters/compact/${monster.slug}`"
         :prefetch="false"
