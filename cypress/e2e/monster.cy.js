@@ -1,18 +1,15 @@
-import dragon from '../fixtures/adult-bronze-dragon.json';
-import search_results from '../fixtures/search.json';
-
 describe('template spec', () => {
   it('can search for a monster', () => {
     cy.visit('http://localhost:3000').wait(1000);
     cy.intercept(
       'GET',
       'https://api.open5e.com/search/?text=Adult%20Bronze%20Dragon',
-      search_results
+      { fixture: 'search.json' }
     );
     cy.intercept(
       'GET',
       'https://api.open5e.com/monsters/adult-bronze-dragon/',
-      dragon
+      { fixture: 'adult-bronze-dragon.json' }
     );
     cy.get('input').type('Adult Bronze Dragon{enter}');
     cy.contains('.search-result a', 'Adult Bronze Dragon').click();
