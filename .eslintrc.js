@@ -17,13 +17,15 @@ module.exports = {
     'plugin:vue/vue3-recommended',
     'plugin:vue/recommended',
     'prettier',
+    // 'eslint:recommended',
+    'plugin:prettier/recommended',
+    'plugin:tailwindcss/recommended',
   ],
   // required to lint *.vue files
-  plugins: ['vue', '@typescript-eslint'],
+  plugins: ['vue', '@typescript-eslint', 'tailwindcss'],
   // add your custom rules here
   rules: {
     eqeqeq: 'off',
-    curly: 'error',
     quotes: ['error', 'single'],
     'vue/multi-word-component-names': 'off',
     'vue/html-self-closing': [
@@ -39,5 +41,6 @@ module.exports = {
         },
       },
     ],
+    'tailwindcss/no-custom-classname': 'off',
   },
 };
