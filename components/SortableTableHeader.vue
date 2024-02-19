@@ -23,6 +23,7 @@ export default {
       default: null,
     },
   },
+  emits: ['sort'],
   computed: {
     isAscending() {
       return this.currentSortDir === 'ascending';

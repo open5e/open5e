@@ -43,6 +43,7 @@ export default {
     pageCount: { type: Number, default: 0 },
     pageNumber: { type: Number, default: 0 },
   },
+  emits: ['first', 'last', 'next', 'prev'],
   methods: {
     firstPage() {
       this.$emit('first');
