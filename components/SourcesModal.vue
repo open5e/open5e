@@ -28,15 +28,10 @@
                   />
                 </div>
                 <div class="ml-3 text-sm leading-6">
-                  <label
-                    :for="document.slug"
-                    class="font-medium text-gray-900"
-                    >{{ document.title }}</label
-                  >
-                  <SourceTag
-                    :title="document.title"
-                    :text="document.slug"
-                  ></SourceTag>
+                  <label :for="document.slug" class="font-medium text-gray-900">
+                    {{ document.title }}
+                  </label>
+                  <SourceTag :title="document.title" :text="document.slug" />
                 </div>
               </div>
             </div>
