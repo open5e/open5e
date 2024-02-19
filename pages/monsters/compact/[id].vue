@@ -2,15 +2,15 @@
   <section class="docs-container container">
     <p v-if="loading">Loading...</p>
     <div v-else class="compact">
-      <b>{{ monster.name }}</b
-      ><br />
+      <b>{{ monster.name }}</b>
+      <br />
       <em
         >{{ monster.size }} {{ monster.type }} {{ monster.subtype }},
         {{ monster.alignment }}
       </em>
       <hr />
-      <b>Armor Class</b> {{ monster.armor_class }} {{ monster.armor_desc
-      }}<br />
+      <b>Armor Class</b> {{ monster.armor_class }} {{ monster.armor_desc }}
+      <br />
       <b>Hit Points</b> {{ monster.hit_points }} ({{ monster.hit_dice }})<br />
 
       <b class="pad-r-sm">Speed </b>
@@ -20,9 +20,9 @@
         :key="index"
       >
         {{ key.charAt(0).toUpperCase() + key.slice(1) }} {{ speed }}ft.
-        <span v-if="monster.speed.hasOwnProperty('hover') && key === 'fly'"
-          >(hover)</span
-        >
+        <span v-if="monster.speed.hasOwnProperty('hover') && key === 'fly'">
+          (hover)
+        </span>
       </span>
 
       <hr />

@@ -14,8 +14,8 @@
       Source:
       <a target="NONE" :href="race.document__url">
         <span>{{ race.document__title }}</span>
-        <Icon name="heroicons:arrow-top-right-on-square-20-solid"></Icon
-      ></a>
+        <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
+      </a>
     </p>
 
     <h2 v-if="subraceLength > 0">Subraces</h2>

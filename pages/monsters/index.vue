@@ -26,12 +26,9 @@
             name="challengeRtgLow"
             class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
           >
-            <option
-              v-for="rtg in monsterChallengeRatings"
-              :key="rtg"
-              class=""
-              v-text="rtg"
-            ></option>
+            <option v-for="rtg in monsterChallengeRatings" :key="rtg">
+              {{ rtg }}
+            </option>
           </select>
         </div>
         <div class="flex w-full px-1 md:w-1/2">
@@ -42,11 +39,9 @@
             name="challengeRtgHigh"
             class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
           >
-            <option
-              v-for="rtg in monsterChallengeRatings"
-              :key="rtg"
-              v-text="rtg"
-            ></option>
+            <option v-for="rtg in monsterChallengeRatings" :key="rtg">
+              {{ rtg }}
+            </option>
           </select>
         </div>
       </div>
@@ -79,11 +74,7 @@
           name="hpLow"
           class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
         >
-          <option
-            v-for="size in monsterSizes"
-            :key="size"
-            v-text="size"
-          ></option>
+          <option v-for="size in monsterSizes" :key="size">{{ size }}</option>
         </select>
       </div>
       <div class="flex w-full flex-wrap pt-4 md:w-1/2">
@@ -95,11 +86,9 @@
             name="hpLow"
             class="w-full rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
           >
-            <option
-              v-for="monsterType in monsterTypes"
-              :key="monsterType"
-              v-text="monsterType"
-            ></option>
+            <option v-for="monsterType in monsterTypes" :key="monsterType">
+              {{ monsterType }}
+            </option>
           </select>
         </div>
       </div>
@@ -143,28 +132,37 @@
             <sortable-table-header
               :current-sort-dir="ariaSort.name"
               @sort="(dir) => sort('name', dir)"
-              >Name</sortable-table-header
             >
+              Name
+            </sortable-table-header>
+
             <sortable-table-header
               :current-sort-dir="ariaSort.type"
               @sort="(dir) => sort('type', dir)"
-              >Type</sortable-table-header
             >
+              Type
+            </sortable-table-header>
+
             <sortable-table-header
               :current-sort-dir="ariaSort.challenge_rating"
               @sort="(dir) => sort('challenge_rating', dir)"
-              >CR</sortable-table-header
             >
+              CR
+            </sortable-table-header>
+
             <sortable-table-header
               :current-sort-dir="ariaSort.size"
               @sort="(dir) => sort('size', dir)"
-              >Size</sortable-table-header
             >
+              Size
+            </sortable-table-header>
+
             <sortable-table-header
               :current-sort-dir="ariaSort.hit_points"
               @sort="(dir) => sort('hit_points', dir)"
-              >Hit Points</sortable-table-header
             >
+              Hit Points
+            </sortable-table-header>
           </tr>
         </thead>
         <tbody>
