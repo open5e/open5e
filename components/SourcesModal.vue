@@ -23,7 +23,7 @@
                     v-model="selectedSourcesComputed"
                     :name="document.slug"
                     type="checkbox"
-                    class="h-4 w-4 rounded border-gray-300 text-blue-600 accent-blood focus:ring-blue-600"
+                    class="size-4 rounded border-gray-300 text-blue-600 accent-blood focus:ring-blue-600"
                     :value="document.slug"
                   />
                 </div>
@@ -64,6 +64,7 @@ import { useMainStore } from '~/store';
 import SourceTag from '~/components/SourceTag.vue';
 
 export default {
+  emits: ['close'],
   data() {
     return {
       selectedSources: [],

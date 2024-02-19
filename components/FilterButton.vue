@@ -12,6 +12,7 @@
 
 <script>
 export default {
+  emits: ['showFilters'],
   data() {
     return {};
   },

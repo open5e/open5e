@@ -35,6 +35,7 @@ export default {
       default: 'Filter...',
     },
   },
+  emits: ['input'],
   data() {
     return {
       filterText: '',

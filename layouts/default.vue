@@ -26,7 +26,7 @@
             {{ sourceSelection.length }} of {{ documents.length }} sources
             <Icon
               name="heroicons:pencil-square"
-              class="h-5 w-5 text-white"
+              class="size-5 text-white"
               aria-hidden="true"
             />
           </span>
@@ -42,21 +42,21 @@
           >
             <Icon
               name="majesticons:search-line"
-              class="h-8 w-8 rounded-full bg-red-900/25 p-1 text-white hover:bg-red-900/50"
+              class="size-5 rounded-full bg-red-900/25 p-1 text-white hover:bg-red-900/50"
               aria-hidden="true"
               @click="doSearch(searchText)"
             />
           </div>
           <input
             v-model="searchText"
-            class="w-full bg-red-700 px-4 py-4 placeholder-white/80 placeholder:font-semibold focus:border-0 focus:bg-red-800 focus:outline-none dark:bg-red-800 dark:focus:bg-red-600"
+            class="w-full bg-red-700 p-4 placeholder:font-semibold placeholder:text-white/80 focus:border-0 focus:bg-red-800 focus:outline-none dark:bg-red-800 dark:focus:bg-red-600"
             placeholder="Search Open5e"
             @keyup.enter="doSearch(searchText)"
           />
         </div>
 
         <!-- Navigation Links -->
-        <ul class="text-inherit text-white">
+        <ul class="text-white">
           <li v-for="section in routes" :key="section.title">
             <nav-link :to="section.route"> {{ section.title }} </nav-link>
             <ul
@@ -91,20 +91,20 @@
 
         <div class="flex h-12 align-middle">
           <sidebar-toggle @click="toggleSidebar" />
-          <breadcrumb-links class="flex-grow" />
+          <breadcrumb-links class="grow" />
           <theme-switcher class="inline-block" />
         </div>
 
         <!-- Shade: fades out main content when sidebar expanded on mobile -->
         <div
           v-show="showSidebar"
-          class="fixed left-0 top-0 z-48 h-full w-full bg-basalt/50 sm:hidden"
+          class="fixed left-0 top-0 z-48 size-full bg-basalt/50 sm:hidden"
           @click="hideSidebar"
         />
 
         <!-- Main page content -->
         <nuxt-page
-          class="main-content pt-auto mx-0 w-full px-4 py-4 pb-0 text-darkness dark:text-white sm:px-8"
+          class="main-content pt-auto mx-0 w-full p-4 pb-0 text-darkness dark:text-white sm:px-8"
         />
       </div>
     </div>

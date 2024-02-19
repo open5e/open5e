@@ -41,6 +41,7 @@ module.exports = {
         },
       },
     ],
+    // there are lots of custom classes in the codebase
     'tailwindcss/no-custom-classname': 'off',
   },
 };

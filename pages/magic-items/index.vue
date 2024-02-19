@@ -2,7 +2,7 @@
   <section class="container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Magic Item List</h1>
-      <FilterButton @showFilters="displayFilters = !displayFilters" />
+      <FilterButton @show-filters="displayFilters = !displayFilters" />
     </div>
     <!-- FILTER -->
     <div

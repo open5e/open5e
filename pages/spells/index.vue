@@ -24,18 +24,22 @@
             <sortable-table-header
               :current-sort-dir="ariaSort.name"
               @sort="(dir) => sort('name', dir)"
-              >Name</sortable-table-header
+            >
+              Name</sortable-table-header
             >
             <sortable-table-header
               :current-sort-dir="ariaSort.school"
               @sort="(dir) => sort('school', dir)"
-              >School</sortable-table-header
             >
+              School
+            </sortable-table-header>
             <sortable-table-header
               :current-sort-dir="ariaSort.level_int"
               @sort="(dir) => sort('level_int', dir)"
-              >Level</sortable-table-header
             >
+              Level
+            </sortable-table-header>
+
             <sortable-table-header
               class="hide-mobile"
               :current-sort-dir="ariaSort.components"
