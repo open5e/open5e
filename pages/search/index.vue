@@ -31,8 +31,8 @@
         >
           {{ result.name }}
         </nuxt-link>
-        <span> CR{{ result.challenge_rating }} </span
-        ><span class="title-case">{{ result.type }} | </span>
+        <span> CR{{ result.challenge_rating }} </span>
+        <span class="title-case">{{ result.type }} | </span>
         <em>{{ result.hit_points }}hp, AC {{ result.armor_class }}</em>
         <source-tag
           v-if="result.document_slug !== 'wotc-srd'"
