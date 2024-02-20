@@ -162,12 +162,10 @@ export default {
       if (crumbs.value.length === 0) {
         return BASE_TITLE;
       }
-      return (
-        crumbs.value
-          .map((crumb) => crumb.title)
-          .toReversed()
-          .join(' - ') + ` - ${BASE_TITLE}`
-      );
+      const crumb_titles = crumbs.value.map((crumb) => crumb.title);
+      const reversed_titles = [...crumb_titles].reverse();
+
+      return reversed_titles.join(' - ') + ` - ${BASE_TITLE}`;
     });
     useHead({ title: title });
     return { store };
