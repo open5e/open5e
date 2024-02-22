@@ -140,6 +140,11 @@ export default {
   },
   computed: {
     orderedResults: function () {
+      // Abort early if there is no search term
+      if (!this.text) {
+        return this.results;
+      }
+
       let tmp = this.results.slice();
       const term = this.text.toUpperCase();
       let first = [];

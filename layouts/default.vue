@@ -138,9 +138,10 @@ export default {
           const [title, queryParams] = segment.split('?');
 
           // extract & format the search params if on the /search route
-          const searchParam =
-            title === 'search' &&
-            queryParams.split('text=')[1].split('+').join(' ');
+          let searchParam = '';
+          if (title === 'search' && queryParams) {
+            searchParam = queryParams.split('text=')[1].split('+').join(' ');
+          }
 
           // return a
           return {
