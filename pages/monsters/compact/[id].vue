@@ -169,24 +169,15 @@ export default {
         { name: 'intelligence', display: 'Int' },
         { name: 'wisdom', display: 'Wis' },
         { name: 'charisma', display: 'Cha' },
-      ];
+      ].filter((save) => this.monster[save.name + '_save']);
       // build an object of save bonuses if they exist
       for (let i = 0; i < savesArray.length; i++) {
         const saveValue = this.monster[savesArray[i].name + '_save'];
-        const statValue = this.monster[savesArray[i].name];
-        if (saveValue !== null) {
-          saves.push({
-            name: savesArray[i].display,
-            val: saveValue,
-            type: 'bonus',
-          });
-        } else {
-          saves.push({
-            name: savesArray[i].display,
-            val: statValue,
-            type: 'score',
-          });
-        }
+        saves.push({
+          name: savesArray[i].display,
+          val: saveValue,
+          type: 'bonus',
+        });
       }
 
       return saves;

@@ -61,7 +61,10 @@
       <ul>
         <li>
           <span class="font-bold">Saving Throws </span>
-          <span v-for="ability in abilites" :key="ability.name">
+          <span
+            v-for="ability in abilites.filter((a) => a.save)"
+            :key="ability.name"
+          >
             <span class="capitalize before:content-['_']">
               {{ ability.shortName }}
             </span>
@@ -288,7 +291,8 @@ const abilites = [
   shortName: ability.slice(0, 3),
   score: monster[ability],
   modifier: formatMod(calcMod(monster[ability])),
-  save: monster[`${ability}_save`] ?? calcMod(monster[ability]),
+  // save: monster[`${ability}_save`] ?? calcMod(monster[ability]),
+  save: monster[`${ability}_save`],
 }));
 </script>
 
