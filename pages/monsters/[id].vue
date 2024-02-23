@@ -291,7 +291,6 @@ const abilites = [
   shortName: ability.slice(0, 3),
   score: monster[ability],
   modifier: formatMod(calcMod(monster[ability])),
-  // save: monster[`${ability}_save`] ?? calcMod(monster[ability]),
   save: monster[`${ability}_save`],
 }));
 </script>
