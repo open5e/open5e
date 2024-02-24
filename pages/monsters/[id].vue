@@ -47,7 +47,7 @@
     <!-- ABILITY SCORES -->
     <section class="max-w-96">
       <ul class="flex items-center gap-4 text-center">
-        <li v-for="ability in abilites" :key="ability.name">
+        <li v-for="ability in abilities" :key="ability.name">
           <span class="block font-bold uppercase">{{ ability.shortName }}</span>
           <span>{{ `${ability.score} (${ability.modifier})` }} </span>
         </li>
@@ -59,18 +59,20 @@
     <!-- SAVING THROWS AND ATTRIBUTES-->
     <section>
       <ul>
-        <li>
+        <li v-if="abilities.filter((a) => a.save).length">
           <span class="font-bold">Saving Throws </span>
+
           <span
-            v-for="ability in abilites.filter((a) => a.save)"
+            v-for="ability in abilities.filter((a) => a.save)"
             :key="ability.name"
+            class="after:content-[','] last:after:content-[]"
           >
             <span class="capitalize before:content-['_']">
               {{ ability.shortName }}
             </span>
             <span class="before:content-['_']">
-              {{ formatMod(ability.save) }} </span
-            >.
+              {{ formatMod(ability.save) }}
+            </span>
           </span>
         </li>
 
@@ -80,10 +82,10 @@
             v-for="(skill, key, index) in monster.skills"
             v-show="key !== 'hover'"
             :key="index"
+            class="capitalize before:content-['_'] after:content-[','] last:after:content-[]"
           >
-            {{ key.charAt(0).toUpperCase() + key.slice(1) }}
-            <span v-if="skill >= 0">+</span>{{ skill }}.
-            <span v-if="index < monster.skills.length - 1">, </span>
+            {{ key }}
+            <span v-if="skill >= 0">+</span>{{ skill }}
           </span>
         </li>
 
@@ -126,7 +128,11 @@
         class="action-block"
       >
         <span class="font-bold after:content-['.']">{{ ability.name }}</span>
-        <md-viewer inline="true" :text="ability.desc" />
+        <md-viewer
+          :inline="true"
+          :text="ability.desc"
+          class="before:content-['_']"
+        />
       </p>
     </section>
 
@@ -279,7 +285,7 @@ const calcMod = (score) => Math.floor((score - 10) / 2);
 const formatMod = (mod) => (mod >= 0 ? '+' + mod.toString() : mod.toString());
 
 // Collect ability scores, saving throws, &c in one array
-const abilites = [
+const abilities = [
   'strength',
   'dexterity',
   'constitution',

@@ -48,14 +48,15 @@
 
       <hr />
 
-      <div v-if="getSaves">
+      <div v-if="getSaves.length">
         <b class="pad-r-sm">Saving Throws </b>
-        <span v-for="(save, index) in getSaves" :key="save.name">
+        <span
+          v-for="save in getSaves"
+          :key="save.name"
+          class="after:content-[',_'] last:after:content-[]"
+        >
           {{ save.name }}
-          <stat-bonus :stat="save.val" :type="save.type" /><span
-            v-show="index < getSaves.length - 1"
-            >,
-          </span>
+          <stat-bonus :stat="save.val" :type="save.type" />
         </span>
       </div>
       <div v-if="monster.skills?.length > 0">
@@ -161,26 +162,22 @@ export default {
   },
   computed: {
     getSaves() {
-      let saves = [];
-      let savesArray = [
+      return [
         { name: 'strength', display: 'Str' },
         { name: 'dexterity', display: 'Dex' },
         { name: 'constitution', display: 'Con' },
         { name: 'intelligence', display: 'Int' },
         { name: 'wisdom', display: 'Wis' },
         { name: 'charisma', display: 'Cha' },
-      ].filter((save) => this.monster[save.name + '_save']);
-      // build an object of save bonuses if they exist
-      for (let i = 0; i < savesArray.length; i++) {
-        const saveValue = this.monster[savesArray[i].name + '_save'];
-        saves.push({
-          name: savesArray[i].display,
-          val: saveValue,
-          type: 'bonus',
+      ]
+        .filter((save) => this.monster[save.name + '_save'])
+        .map((val) => {
+          return {
+            name: val.display,
+            val: this.monster[val.name + '_save'],
+            type: 'bonus',
+          };
         });
-      }
-
-      return saves;
     },
   },
   created() {
