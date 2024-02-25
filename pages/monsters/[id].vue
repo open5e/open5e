@@ -1,8 +1,30 @@
 <template>
   <main v-if="monster" class="docs-container container" :data-mode="mode">
     <!-- TITLE -->
-    <h1>{{ monster.name }}</h1>
-    <img v-if="monster.img_main" :src="monster.img_main" class="img-main" />
+    <div class="flex items-end justify-between gap-8">
+      <h1 class="flex-auto">{{ monster.name }}</h1>
+
+      <div class="flex flex-none items-start">
+        <button
+          class="flex items-center gap-1 rounded-md p-1 text-xs text-blood outline outline-1 outline-blood hover:bg-blood hover:text-white"
+          @click="toggleMode()"
+        >
+          <Icon
+            :name="
+              mode === 'compact'
+                ? 'heroicons:arrows-pointing-out'
+                : 'heroicons:arrows-pointing-in'
+            "
+          />
+          {{ mode === 'compact' ? 'Regular statblock' : 'Compact statblock' }}
+        </button>
+      </div>
+    </div>
+    <img
+      v-if="mode !== 'compact' && monster.img_main"
+      :src="monster.img_main"
+      class="img-main"
+    />
     <p class="italic">
       <span>
         {{
@@ -35,18 +57,16 @@
         <li>
           <span class="font-bold after:content-['_']">Speed</span>
           <span
-            v-for="(speed, key, index) in monster.speed"
+            v-for="(speed, key) in monster.speed"
             v-show="key !== 'hover'"
-            :key="index"
+            :key="key"
             class="after:content-[',_'] last:after:content-[]"
           >
-            <template v-if="key !== 'walk'"> {{ key }} </template>
-            {{ speed }}ft.
-            <template
-              v-if="monster.speed.hasOwnProperty('hover') && key === 'fly'"
-            >
-              (hover)</template
-            >
+            {{
+              `${key !== 'walk' ? `${key} ` : ''}${speed}ft.${
+                speed.hasOwnProperty('hover') && key === 'fly' ? ' (hover)' : ''
+              }`
+            }}
           </span>
         </li>
       </ul>
@@ -83,7 +103,7 @@
           </span>
         </li>
 
-        <li v-if="monster.skills">
+        <li v-if="monster.skills.length">
           <span class="font-bold after:content-['_']">Skills</span>
 
           <span
@@ -366,12 +386,33 @@ const abilities = [
 
 const route = useRoute();
 
-const mode = (ref < 'normal') | ('compact' > (route.query.mode || 'normal'));
+const mode = ref(route.query.mode || 'normal');
+function toggleMode() {
+  switch (mode.value) {
+    case 'compact':
+      mode.value = 'normal';
+      break;
+    default:
+      mode.value = 'compact';
+      break;
+  }
+
+  navigateTo({
+    path: `/monsters/${route.params.id}`,
+    query:
+      mode.value === 'compact'
+        ? {
+            mode: 'compact',
+          }
+        : null,
+  });
+}
 </script>
 
 <style scoped lang="scss">
 .img-main {
   float: right;
+  margin-block: 1rem;
   width: 30%;
   min-width: 300px;
 }
@@ -384,11 +425,19 @@ const mode = (ref < 'normal') | ('compact' > (route.query.mode || 'normal'));
 }
 
 [data-mode='compact'] {
-  line-height: 1.2;
+  font-size: 0.833rem;
+  line-height: 1.25;
 }
 
-[data-mode='compact'] .img-main,
+[data-mode='compact'] h1 {
+  font-size: 1.44rem;
+}
+
+[data-mode='compact'] h2 {
+  font-size: 1.2rem;
+}
+
 [data-mode='compact'] hr {
-  display: none;
+  margin-block: 0.5rem;
 }
 </style>

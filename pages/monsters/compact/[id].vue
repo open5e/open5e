@@ -3,10 +3,18 @@
 definePageMeta({
   middleware: [
     function (to) {
-      return navigateTo(`/monsters/${to.params.id}?mode=compact`, {
-        replace: true,
-        redirectCode: 301,
-      });
+      return navigateTo(
+        {
+          path: `/monsters/${to.params.id}`,
+          query: {
+            mode: 'compact',
+          },
+        },
+        {
+          replace: true,
+          redirectCode: 301,
+        }
+      );
     },
   ],
 });
