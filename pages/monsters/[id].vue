@@ -44,15 +44,15 @@
       <ul>
         <li>
           <span class="font-bold after:content-['_']">Armor Class</span>
-          <span>{{
+          {{
             `${monster.armor_class}${
-              monster.armor_desc ? `(${monster.armor_desc})` : ''
+              monster.armor_desc ? ` (${monster.armor_desc})` : ''
             }`
-          }}</span>
+          }}
         </li>
         <li>
           <span class="font-bold after:content-['_']">Hit Points</span>
-          <span>{{ `${monster.hit_points} (${monster.hit_dice})` }}</span>
+          {{ `${monster.hit_points} (${monster.hit_dice})` }}
         </li>
         <li>
           <span class="font-bold after:content-['_']">Speed</span>
