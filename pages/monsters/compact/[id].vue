@@ -1,10 +1,13 @@
 <script setup lang="ts">
+// Register middleware with page metadata
 definePageMeta({
-  middleware: defineNuxtRouteMiddleware((to) => {
-    navigateTo(`/monsters/${to.params.id}`, {
-      replace: true,
-      redirectCode: 301,
-    });
-  }),
+  middleware: [
+    function (to) {
+      return navigateTo(`/monsters/${to.params.id}?mode=compact`, {
+        replace: true,
+        redirectCode: 301,
+      });
+    },
+  ],
 });
 </script>
