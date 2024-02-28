@@ -1,23 +1,34 @@
-describe('template spec', () => {
-  it('can search for a monster', () => {
-    cy.visit('http://localhost:3000').wait(1000);
+describe('Monster endpoint', () => {
+  it('displays the WotC Acolyte', () => {
+    cy.visit('http://localhost:3000/monsters/acolyte');
+    cy.intercept('GET', 'https://api.open5e.com/monsters/acolyte/', {
+      fixture: 'acolyte.json',
+    }).as('monster');
+
+    cy.get('h2').should(($h2) => {
+      expect($h2).to.contain('Actions');
+
+      expect($h2).to.not.contain('Bonus Actions'); // This monster does not have bonus actions
+      expect($h2).to.not.contain('Reactions'); // This monster does not have bonus actions
+      expect($h2).to.not.contain('Legendary Actions'); // This monster does not have legendary actions
+    });
+  });
+  it('displays the WoTC Silver Dragon', () => {
+    cy.visit('http://localhost:3000/monsters/adult-silver-dragon');
     cy.intercept(
       'GET',
-      'https://api.open5e.com/search/?text=Adult%20Bronze%20Dragon',
-      { fixture: 'search.json' }
-    );
-    cy.intercept(
-      'GET',
-      'https://api.open5e.com/monsters/adult-bronze-dragon/',
-      { fixture: 'adult-bronze-dragon.json' }
-    );
-    cy.get('input').type('Adult Bronze Dragon{enter}');
-    cy.contains('.search-result a', 'Adult Bronze Dragon').click();
-    cy.contains('section', 'The dragon can use its Frightful Presence.');
-    cy.contains(
-      'section',
-      'The dragon exhales lightning in a 90-foot line that is 5 feet wide.'
-    );
-    cy.contains('section', 'Wing Attack (Costs 2 Actions).');
+      'https://api.open5e.com/monsters/adult-silver-dragon/',
+      {
+        fixture: 'adult-silver-dragon.json',
+      }
+    ).as('monster');
+
+    cy.get('h2').should(($h2) => {
+      expect($h2).to.contain('Actions');
+      expect($h2).to.contain('Legendary Actions');
+
+      expect($h2).to.not.contain('Bonus Actions'); // This monster does not have bonus actions
+      expect($h2).to.not.contain('Reactions'); // This monster does not have bonus actions
+    });
   });
 });

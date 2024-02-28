@@ -1,0 +1,70 @@
+{
+  "slug": "acolyte",
+  "desc": "**Acolytes** are junior members of a clergy, usually answerable to a priest. They perform a variety of functions in a temple and are granted minor spellcasting power by their deities.",
+  "name": "Acolyte",
+  "size": "Medium",
+  "type": "Humanoid",
+  "subtype": "any race",
+  "group": "NPCs",
+  "alignment": "any alignment",
+  "armor_class": 10,
+  "armor_desc": null,
+  "hit_points": 9,
+  "hit_dice": "2d8",
+  "speed": { "walk": 30 },
+  "strength": 10,
+  "dexterity": 10,
+  "constitution": 10,
+  "intelligence": 10,
+  "wisdom": 14,
+  "charisma": 11,
+  "strength_save": null,
+  "dexterity_save": null,
+  "constitution_save": null,
+  "intelligence_save": null,
+  "wisdom_save": null,
+  "charisma_save": null,
+  "perception": null,
+  "skills": { "medicine": 4, "religion": 2 },
+  "damage_vulnerabilities": "",
+  "damage_resistances": "",
+  "damage_immunities": "",
+  "condition_immunities": "",
+  "senses": "passive Perception 12",
+  "languages": "any one language (usually Common)",
+  "challenge_rating": "1/4",
+  "cr": 0.25,
+  "actions": [
+    {
+      "name": "Club",
+      "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
+      "attack_bonus": 2,
+      "damage_dice": "1d4"
+    }
+  ],
+  "bonus_actions": null,
+  "reactions": null,
+  "legendary_desc": "",
+  "legendary_actions": null,
+  "special_abilities": [
+    {
+      "name": "Spellcasting",
+      "desc": "The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:\n\n* Cantrips (at will): light, sacred flame, thaumaturgy\n* 1st level (3 slots): bless, cure wounds, sanctuary"
+    }
+  ],
+  "spell_list": [
+    "https://api.open5e.com/v1/spells/light/",
+    "https://api.open5e.com/v1/spells/sacred-flame/",
+    "https://api.open5e.com/v1/spells/thaumaturgy/",
+    "https://api.open5e.com/v1/spells/bless/",
+    "https://api.open5e.com/v1/spells/cure-wounds/",
+    "https://api.open5e.com/v1/spells/sanctuary/"
+  ],
+  "page_no": 395,
+  "environments": ["Temple", "Desert", "Urban", "Hills", "Settlement"],
+  "img_main": null,
+  "document__slug": "wotc-srd",
+  "document__title": "5e Core Rules",
+  "document__license_url": "http://open5e.com/legal",
+  "document__url": "http://dnd.wizards.com/articles/features/systems-reference-document-srd"
+}
