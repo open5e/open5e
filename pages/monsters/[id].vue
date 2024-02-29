@@ -89,7 +89,7 @@
     <!-- SAVING THROWS AND ATTRIBUTES-->
     <section>
       <ul>
-        <li>
+        <li v-if="abilities.filter((a) => a.save).length">
           <span class="font-bold after:content-['_']">Saving Throws</span>
 
           <span
@@ -361,11 +361,13 @@ function toggleMode() {
 }
 
 [data-mode='compact'] h1 {
-  font-size: 1.44rem;
+  font-size: 1.2rem;
+  margin-top: 0.833rem;
 }
 
 [data-mode='compact'] h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-top: 0.833rem;
 }
 
 [data-mode='compact'] hr {
