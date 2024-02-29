@@ -93,7 +93,7 @@
           <span class="font-bold after:content-['_']">Saving Throws</span>
 
           <span
-            v-for="ability in abilities"
+            v-for="ability in abilities.filter((a) => a.save)"
             :key="ability.name"
             class="after:content-[',_'] last:after:content-[]"
           >
