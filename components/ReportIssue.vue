@@ -6,10 +6,14 @@ const isOpen = ref(false);
 <template>
   <div>
     <button
-      class="w-full bg-red-600 px-4 py-1 text-left hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
+      class="w-full bg-red-600 px-4 py-1 text-left align-middle hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
       @click="isOpen = !isOpen"
     >
-      Report Issue
+      <span>Report Issue</span>
+      <icon
+        name="heroicons:exclaimation-circle"
+        class="ml-1 h-6 w-6 rounded-full"
+      />
     </button>
 
     <modal-dialog v-show="isOpen" :show="isOpen" @close="isOpen = false">
@@ -21,26 +25,51 @@ const isOpen = ref(false);
             Report an Issue
           </legend>
           <ul>
-            <li>
-              <label for="type">What best describes your issue?</label>
-              <select name="type">
-                <option value="data">
-                  There is something wrong with the data
+            <li class="mb-2">
+              <label for="type" class="text-lg font-bold">
+                What best describes your issue?
+              </label>
+              <select name="type" class="w-full p-2">
+                <option value="" selected disabled>–</option>
+                <option value="page">
+                  Page is broken or doesn't load properly
                 </option>
-                <option value="typo">There is a typo/spelling mistake</option>
-                <option value="visual">Something looks weird</option>
-                <option value="misc">It is something else</option>
+                <option value="data">Incorrect data or spelling mistake</option>
+                <option value="visual">Something looks visually off</option>
+                <option value="accessibility">
+                  There is a problem with page accessibility
+                </option>
+                <option value="misc">Other</option>
               </select>
             </li>
-            <li>
-              <label for="description"> Can you describe the bug? </label>
-              <legend>What page did you notice it on? What do you see?</legend>
-              <input type="text" name="description" class="block w-full" />
+            <li class="mb-2">
+              <label for="description" class="text-lg font-bold">
+                Can you describe the bug?
+              </label>
+              <legend class="text-sm italic">
+                What happened? What did it look like? What page were you on when
+                it happened?
+              </legend>
+              <textarea
+                type="text"
+                name="description"
+                class="block w-full border"
+              />
             </li>
 
-            <li>
-              <label for="reproduction">Reproduction</label>
-              <input type="text" name="reproduction" class="block" />
+            <li class="mb-2">
+              <label for="reproduction" class="text-lg font-bold">
+                Reproduction
+              </label>
+              <legend class="text-sm italic">
+                Can you provide steps on how to reproduce the bug? The more
+                detail the better. This will help us identify and fix the issue.
+              </legend>
+              <textarea
+                type="text"
+                name="reproduction"
+                class="block h-16 w-full border"
+              />
             </li>
           </ul>
         </fieldset>
