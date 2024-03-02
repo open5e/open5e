@@ -1,6 +1,23 @@
 <script setup>
 import { ref } from 'vue';
 const isOpen = ref(false);
+
+const formData = ref({});
+
+const WEBAPP_URL =
+  'https://script.google.com/macros/s/AKfycbzUzyBCluTJXL4GC98i31NRoso0td-zNgBbp8Ws4CmmLMzd3ovYBcX7HyVlo3m-kDLHZA/exec';
+
+const submitIssue = async (e) => {
+  const data = Object.entries(formData.value)
+    .map(([key, value]) => [key, value].join('='))
+    .join('&');
+
+  const { error } = await $fetch(WEBAPP_URL, {
+    method: 'POST',
+    body: data,
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+  });
+};
 </script>
 
 <template>
@@ -16,9 +33,9 @@ const isOpen = ref(false);
       />
     </button>
 
-    <modal-dialog v-show="isOpen" :show="isOpen" @close="isOpen = false">
+    <modal-dialog :show="isOpen" @close="isOpen = false">
       <slot>
-        <fieldset>
+        <form id="report-issue-form" method="POST" :action="WEBAPP_URL">
           <legend
             class="mb-3 mt-0 border-b-4 border-red-400 pb-2 font-serif text-2xl"
           >
@@ -29,8 +46,7 @@ const isOpen = ref(false);
               <label for="type" class="text-lg font-bold">
                 What best describes your issue?
               </label>
-              <select name="type" class="w-full p-2">
-                <option value="" selected disabled>–</option>
+              <select v-model="formData.type" name="type" class="w-full p-2">
                 <option value="page">
                   Page is broken or doesn't load properly
                 </option>
@@ -51,6 +67,7 @@ const isOpen = ref(false);
                 it happened?
               </legend>
               <textarea
+                v-model="formData.description"
                 type="text"
                 name="description"
                 class="block w-full border"
@@ -66,13 +83,14 @@ const isOpen = ref(false);
                 detail the better. This will help us identify and fix the issue.
               </legend>
               <textarea
+                v-model="formData.reproduction"
                 type="text"
                 name="reproduction"
                 class="block h-16 w-full border"
               />
             </li>
           </ul>
-        </fieldset>
+        </form>
       </slot>
 
       <!-- Actions are rendered as btns at the bottom of modal -->
@@ -88,7 +106,8 @@ const isOpen = ref(false);
         <!-- Submit Issue -->
         <button
           class="inline-flex w-full justify-center rounded-md bg-blood px-3 py-2 text-sm font-semibold text-white shadow-sm ring-offset-2 hover:ring-2 hover:ring-blood focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
-          @click="isOpen = false"
+          for="report-issue-form"
+          @click="submitIssue"
         >
           Submit
         </button>
