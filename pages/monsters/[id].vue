@@ -134,6 +134,13 @@
           {{ monster.damage_immunities }}
         </li>
 
+        <li v-if="monster.condition_immunities">
+          <span class="font-bold after:content-['_']"
+            >Condition Immunities</span
+          >
+          {{ monster.condition_immunities }}
+        </li>
+
         <li v-if="monster.senses">
           <span class="font-bold after:content-['_']">Senses</span>
           {{ monster.senses }}
