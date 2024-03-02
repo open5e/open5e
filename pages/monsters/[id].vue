@@ -135,9 +135,9 @@
         </li>
 
         <li v-if="monster.condition_immunities">
-          <span class="font-bold after:content-['_']"
-            >Condition Immunities</span
-          >
+          <span class="font-bold after:content-['_']">
+            Condition Immunities
+          </span>
           {{ monster.condition_immunities }}
         </li>
 
