@@ -8,11 +8,12 @@ const WEBAPP_URL =
   'https://script.google.com/macros/s/AKfycbzUzyBCluTJXL4GC98i31NRoso0td-zNgBbp8Ws4CmmLMzd3ovYBcX7HyVlo3m-kDLHZA/exec';
 
 const submitIssue = async () => {
+  // on click handler for submitting an issue
   status.value = 'pending';
   formData.value['date'] = new Date().toDateString();
   // convert form data to key=value pair string
   const data = Object.entries(formData.value)
-    .map(([key, value]) => [key, value].join('='))
+    .map(([key, value]) => encodeURI([key, value].join('=')))
     .join('&');
   await $fetch(WEBAPP_URL, {
     method: 'POST',
