@@ -9,6 +9,7 @@ const WEBAPP_URL =
 
 const submitIssue = async () => {
   status.value = 'pending';
+  formData.value['date'] = new Date().toDateString();
   // convert form data to key=value pair string
   const data = Object.entries(formData.value)
     .map(([key, value]) => [key, value].join('='))
@@ -121,7 +122,7 @@ const closeModal = () => {
           >
             Bug Submitted
           </p>
-          <p>Thank your!</p>
+          <p>Thank you!</p>
         </div>
       </slot>
 
