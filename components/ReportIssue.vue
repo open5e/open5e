@@ -1,26 +1,38 @@
 <script setup>
 import { ref } from 'vue';
 const isOpen = ref(false);
-
 const formData = ref({});
+const status = ref('ready');
 
 const WEBAPP_URL =
   'https://script.google.com/macros/s/AKfycbzUzyBCluTJXL4GC98i31NRoso0td-zNgBbp8Ws4CmmLMzd3ovYBcX7HyVlo3m-kDLHZA/exec';
 
-const submitIssue = async (e) => {
+const submitIssue = async () => {
+  status.value = 'pending';
+  // convert form data to key=value pair string
   const data = Object.entries(formData.value)
     .map(([key, value]) => [key, value].join('='))
     .join('&');
-
-  const { error } = await $fetch(WEBAPP_URL, {
+  await $fetch(WEBAPP_URL, {
     method: 'POST',
     body: data,
     headers: { 'Content-Type': 'text/plain;charset=utf-8' },
   });
+  status.value = 'submitted';
+};
+
+const closeModal = () => {
+  isOpen.value = false;
+  // short delay to give the modal closing animation time to run
+  setTimeout(() => {
+    formData.value = {};
+    status.value = 'ready';
+  }, 300);
 };
 </script>
 
 <template>
+  <!-- Container for both Report Issue button & modal popup -->
   <div>
     <button
       class="w-full bg-red-600 px-4 py-1 text-left align-middle hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
@@ -35,7 +47,13 @@ const submitIssue = async (e) => {
 
     <modal-dialog :show="isOpen" @close="isOpen = false">
       <slot>
-        <form id="report-issue-form" method="POST" :action="WEBAPP_URL">
+        <!-- Bug submission form -->
+        <form
+          v-if="['ready', 'pending'].includes(status)"
+          id="report-issue-form"
+          method="POST"
+          :action="WEBAPP_URL"
+        >
           <legend
             class="mb-3 mt-0 border-b-4 border-red-400 pb-2 font-serif text-2xl"
           >
@@ -48,10 +66,14 @@ const submitIssue = async (e) => {
               </label>
               <select v-model="formData.type" name="type" class="w-full p-2">
                 <option value="page">
-                  Page is broken or doesn't load properly
+                  A page is broken or doesn't load properly
                 </option>
-                <option value="data">Incorrect data or spelling mistake</option>
-                <option value="visual">Something looks visually off</option>
+                <option value="data">
+                  Page or API contains incorrect data or spelling mistakes
+                </option>
+                <option value="visual">
+                  Something doesn't quite look right
+                </option>
                 <option value="accessibility">
                   There is a problem with page accessibility
                 </option>
@@ -91,26 +113,40 @@ const submitIssue = async (e) => {
             </li>
           </ul>
         </form>
+
+        <!-- Success Screen (replaces form on successful submission) -->
+        <div v-if="status === 'submitted'">
+          <p
+            class="mb-3 mt-0 border-b-4 border-red-400 pb-2 font-serif text-2xl"
+          >
+            Bug Submitted
+          </p>
+          <p>Thank your!</p>
+        </div>
       </slot>
 
       <!-- Actions are rendered as btns at the bottom of modal -->
       <template #actions>
         <!-- Close without submitting -->
         <button
-          class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:col-start-1 sm:mt-0"
-          @click="isOpen = false"
+          class="mt-3 w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:col-start-1 sm:mt-0"
+          @click="closeModal()"
         >
-          Cancel
+          Close
         </button>
 
         <!-- Submit Issue -->
         <button
-          class="inline-flex w-full justify-center rounded-md bg-blood px-3 py-2 text-sm font-semibold text-white shadow-sm ring-offset-2 hover:ring-2 hover:ring-blood focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
+          v-if="status === 'ready'"
+          class="w-full justify-center rounded-md bg-blood px-3 py-2 text-sm font-semibold text-white shadow-sm ring-offset-2 hover:ring-2 hover:ring-blood focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
           for="report-issue-form"
           @click="submitIssue"
         >
           Submit
         </button>
+
+        <!-- Pending UI -->
+        <span v-if="status === 'pending'">Submitting...</span>
       </template>
     </modal-dialog>
   </div>
