@@ -105,6 +105,7 @@ export const useMainStore = defineStore({
       monstersList: [],
       magicItemsList: [],
       classes: [],
+      conditions: [],
       races: [],
       sections: [],
       backgrounds: [],
@@ -207,6 +208,14 @@ export const useMainStore = defineStore({
       });
     },
 
+    async loadConditions() {
+      await this.loadFromApi({
+        resource: 'conditions',
+        limit: 1000,
+        listName: 'conditions',
+      });
+    },
+
     async loadRaces() {
       await this.loadFromApi({
         resource: 'races',
@@ -294,6 +303,7 @@ export const useMainStore = defineStore({
         monstersList: this.loadMonsters,
         magicItemsList: this.loadMagicItems,
         classes: this.loadClasses,
+        conditions: this.loadConditions,
         races: this.loadRaces,
         sections: this.loadSections,
         backgrounds: this.loadBackgrounds,
@@ -321,6 +331,9 @@ export const useMainStore = defineStore({
     },
     allClasses: (state) => {
       return state.classes;
+    },
+    allConditions: (state) => {
+      return state.conditions;
     },
     allRaces: (state) => {
       return state.races;
