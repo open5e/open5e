@@ -102,8 +102,7 @@
             {{ formatMod(ability.save) }}
           </span>
         </li>
-
-        <li v-if="monster.skills.length">
+        <li v-if="monster.skills">
           <span class="font-bold after:content-['_']">Skills</span>
 
           <span
