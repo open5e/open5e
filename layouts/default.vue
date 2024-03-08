@@ -218,6 +218,10 @@ export default {
           subroutes: this.store.classes,
         },
         {
+          title: 'Conditions',
+          route: '/conditions',
+        },
+        {
           title: 'Races',
           route: '/races',
           subroutes: this.store.races,
