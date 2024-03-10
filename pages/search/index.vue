@@ -11,99 +11,35 @@
     </p>
 
     <!-- SEARCH RESULTS -->
+    <p class="mb-6 text-xl font-bold tracking-wide text-granite">
+      {{ `${sortedResults.inScope.length} results in your sources ` }}
+    </p>
     <ul v-if="results">
       <li
         v-for="result in sortedResults.inScope"
         :key="result.slug"
         class="search-result mb-8"
       >
-        <!-- Monster summary includes mini statblock -->
-        <div v-if="result.route == 'monsters/'">
-          <p>
-            <nuxt-link
-              tag="a"
-              :params="{ id: result.slug }"
-              :to="`/${result.route}${result.slug}`"
-              class="font-bold"
-            >
-              {{ result.name }}
-            </nuxt-link>
-            <span>{{ ` CR ${result.challenge_rating} | ` }} </span>
-            <em>{{ `${result.hit_points}hp, AC ${result.armor_class}` }}</em>
-            <source-tag
-              v-if="result.document_slug !== 'wotc-srd'"
-              :title="result.document_title"
-              :text="result.document_slug"
-            />
-          </p>
-          <stat-bar
-            class="mt-1 block border-t pt-1"
-            :stats="{
-              str: result.strength,
-              dex: result.dexterity,
-              con: result.constitution,
-              int: result.intelligence,
-              wis: result.wisdom,
-              cha: result.charisma,
-            }"
-          />
-        </div>
+        <search-preview :result="result" />
+      </li>
+    </ul>
 
-        <!-- Spells including basic spell info -->
-        <div v-else-if="result.route == 'spells/'">
-          <nuxt-link
-            tag="a"
-            :params="{ id: result.slug }"
-            :to="`/${result.route}${result.slug}`"
-            class="font-bold"
-          >
-            {{ result.name }}
-          </nuxt-link>
-          {{ `${result.school} spell | ${result.dnd_class}` }}
-          <source-tag
-            v-if="result.document_slug !== 'wotc-srd'"
-            :title="result.document_title"
-            :text="result.document_slug"
-          />
-          <p v-html="result.highlighted" />
-        </div>
-
-        <!-- Result summary for magic items -->
-        <div v-else-if="result.route == 'magicitems/'">
-          <nuxt-link
-            tag="a"
-            :params="{ id: result.slug }"
-            :to="`/magic-items/${result.slug}`"
-            class="font-bold"
-          >
-            {{ result.name }}
-          </nuxt-link>
-          {{ `${result.type}, ${result.rarity}` }}
-          <source-tag
-            v-if="result.document_slug !== 'wotc-srd'"
-            :title="result.document_title"
-            :text="result.document_slug"
-          />
-          <p v-html="result.highlighted" />
-        </div>
-
-        <!-- Result summary for everything else -->
-        <div v-else>
-          <nuxt-link
-            tag="a"
-            :params="{ id: result.slug }"
-            :to="`/${result.route}${result.slug}`"
-            class="font-bold"
-          >
-            {{ result.name }}
-          </nuxt-link>
-          <source-tag
-            v-if="result.document_slug !== 'wotc-srd'"
-            :title="result.document_title"
-            :text="result.document_slug"
-          />
-          <p v-html="result.highlighted" />
-        </div>
+    <!-- SEARCH RESULTS FROM OTHER SOURCES -->
+    <button
+      class="mb-6 text-xl font-bold tracking-wide text-granite"
+      @click="toggleOtherSources"
+    >
+      {{
+        `Show ${sortedResults.outOfScope.length} results from other sources `
+      }}
+    </button>
+    <ul v-if="isOtherSourcesExpanded">
+      <li
+        v-for="result in sortedResults.outOfScope"
+        :key="result.slug"
+        class="search-result mb-8"
+      >
+        <search-preview :result="result" />
       </li>
     </ul>
   </section>
@@ -114,6 +50,7 @@ import { ref, watch, computed } from 'vue';
 import { useMainStore } from '~/store';
 const store = useMainStore();
 const sources = computed(() => store.sourceSelection);
+
 const route = useRoute();
 
 // search state
@@ -125,6 +62,11 @@ const results = ref(await getSearchResults(searchString.value));
 const sortedResults = computed(() =>
   sortResults(sources.value, results.value, searchString.value)
 );
+
+const isOtherSourcesExpanded = ref(false);
+const toggleOtherSources = () => {
+  isOtherSourcesExpanded.value = !isOtherSourcesExpanded.value;
+};
 
 // Watch the query param. Run search again if it changes
 watch(
@@ -143,10 +85,6 @@ watch(
       sources.value,
       newResults,
       searchString.value
-    );
-    filteredResults.value = splitResultsBySource(
-      sources.value,
-      sortedResults.value
     );
   }
 );
