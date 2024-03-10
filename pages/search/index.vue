@@ -16,13 +16,18 @@
       <Icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
       No results
     </h3>
-    <div v-for="result in results" :key="result.slug" class="search-result">
+    <div
+      v-for="result in results"
+      :key="result.slug"
+      class="search-result mb-8"
+    >
       <!-- Result summary for creatures including mini statblock -->
       <div v-if="result.route == 'monsters/'" class="result-summary">
         <nuxt-link
           tag="a"
           :params="{ id: result.slug }"
           :to="`/${result.route}${result.slug}`"
+          class="font-bold"
         >
           {{ result.name }}
         </nuxt-link>
@@ -37,7 +42,7 @@
         />
         <div>
           <stat-bar
-            class="top-border"
+            class="mt-1 border-t pt-1"
             :stats="{
               str: result.strength,
               dex: result.dexterity,
@@ -56,6 +61,7 @@
           tag="a"
           :params="{ id: result.slug }"
           :to="`/${result.route}${result.slug}`"
+          class="font-bold"
         >
           {{ result.name }}
         </nuxt-link>
@@ -66,7 +72,7 @@
           :title="result.document_title"
           :text="result.document_slug"
         />
-        <p class="result-highlights" v-html="result.highlighted" />
+        <p v-html="result.highlighted" />
       </div>
 
       <!-- Result summary for magic items -->
@@ -75,6 +81,7 @@
           tag="a"
           :params="{ id: result.slug }"
           :to="`/magic-items/${result.slug}`"
+          class="font-bold"
         >
           {{ result.name }}
         </nuxt-link>
@@ -85,7 +92,7 @@
           :title="result.document_title"
           :text="result.document_slug"
         />
-        <p class="result-highlights" v-html="result.highlighted" />
+        <p v-html="result.highlighted" />
       </div>
 
       <!-- Result summary for everything else -->
@@ -94,6 +101,7 @@
           tag="a"
           :params="{ id: result.slug }"
           :to="`/${result.route}${result.slug}`"
+          class="font-bold"
         >
           {{ result.name }}
         </nuxt-link>
@@ -103,7 +111,7 @@
           :title="result.document_title"
           :text="result.document_slug"
         />
-        <p class="result-highlights" v-html="result.highlighted" />
+        <p v-html="result.highlighted" />
       </div>
     </div>
   </section>
@@ -167,36 +175,9 @@ function sortResults(search, results) {
 }
 </script>
 
-<style lang="scss" scoped>
-@import './assets/variables';
-
-.search-result {
-  margin-bottom: 2rem;
-
-  a {
-    font-weight: bold;
-  }
-
-  :deep(.highlighted) {
-    background-color: lightgoldenrodyellow;
-    font-weight: bold;
-  }
-}
-
-.top-border {
-  margin-top: 0.35rem;
-  padding-top: 0.25rem;
-  border-top: 1px solid rgba($color-smoke, 0.5);
-  font-size: 14px;
-  opacity: 0.7;
-}
-
-hr {
-  margin-bottom: 2rem;
-}
-
-.result-highlights {
-  font-size: 14px;
-  opacity: 0.8;
+<style lang="scss">
+.highlighted {
+  background-color: lightgoldenrodyellow;
+  font-weight: bold;
 }
 </style>
