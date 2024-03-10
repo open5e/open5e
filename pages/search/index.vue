@@ -10,18 +10,13 @@
       Search for something to see results...
     </h3>
     <h3
-      v-else-if="orderedResults.length == 0"
+      v-else-if="results.length == 0"
       class="font-sans font-bold text-slate-400"
     >
       <Icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
       No results
     </h3>
-    <div
-      v-for="result in orderedResults"
-      v-show="!loading && !noValue"
-      :key="result.slug"
-      class="search-result"
-    >
+    <div v-for="result in results" :key="result.slug" class="search-result">
       <!-- Result summary for creatures including mini statblock -->
       <div v-if="result.route == 'monsters/'" class="result-summary">
         <nuxt-link
@@ -31,8 +26,8 @@
         >
           {{ result.name }}
         </nuxt-link>
-        <span> CR{{ result.challenge_rating }} </span
-        ><span class="title-case">{{ result.type }} | </span>
+        <span> CR{{ result.challenge_rating }} </span>
+        <span class="title-case">{{ result.type }} | </span>
         <em>{{ result.hit_points }}hp, AC {{ result.armor_class }}</em>
         <source-tag
           v-if="result.document_slug !== 'wotc-srd'"
@@ -114,93 +109,62 @@
   </section>
 </template>
 
-<script>
-import axios from 'axios';
-import StatBar from '~/components/StatBar';
-import SourceTag from '~/components/SourceTag';
+<script setup>
+import { ref, watch } from 'vue';
+const route = useRoute();
 
-function sortFunction(a, b) {
-  var textA = a.name.toUpperCase();
-  var textB = b.name.toUpperCase();
-  return textA < textB ? -1 : textA > textB ? 1 : 0;
+// search state
+const loading = ref(false);
+const noValue = ref(false);
+
+// get initial values from query params & API
+const searchString = ref(route.query.text);
+const results = ref(await getSearchResults(searchString.value));
+
+// Watch the query param. Run search again if it changes
+watch(
+  () => route.query.text,
+  async (newQuery) => {
+    searchString.value = newQuery;
+    results.value = await getSearchResults(searchString.value);
+  }
+);
+
+// getSearchResults queries the /search API endpoint
+async function getSearchResults(query) {
+  if (query === '') {
+    return;
+  }
+  loading.value = true;
+  const { apiUrl } = useRuntimeConfig().public;
+  const endpoint = `${apiUrl}/search/?text=${query}`;
+  const response = await $fetch(endpoint);
+  loading.value = false;
+  noValue.value = response.results.length === 0;
+  return sortResults(query, response.results);
 }
 
-export default {
-  components: {
-    StatBar,
-    SourceTag,
-  },
-  data() {
-    return {
-      results: [],
-      text: this.$route.query.text,
-      loading: true,
-      noValue: true,
-    };
-  },
-  computed: {
-    orderedResults: function () {
-      // Abort early if there is no search term
-      if (!this.text) {
-        return this.results;
-      }
+// sorts results returned by API
+function sortResults(search, results) {
+  const term = search.toUpperCase();
+  const first = []; // query matches start of the title
+  const next = []; // query matches some part of the title
+  const other = []; // query doens't match title
 
-      let tmp = this.results.slice();
-      const term = this.text.toUpperCase();
-      let first = [];
-      let next = [];
-      let others = [];
-      for (var i = 0; i < tmp.length; i++) {
-        if (tmp[i].name.toUpperCase().indexOf(term) == 0) {
-          first.push(tmp[i]);
-        } else if (tmp[i].name.toUpperCase().indexOf(term) != -1) {
-          next.push(tmp[i]);
-        } else {
-          others.push(tmp[i]);
-        }
-      }
-
-      first.sort(function (a, b) {
-        return sortFunction(a, b);
-      });
-      next.sort(function (a, b) {
-        return sortFunction(a, b);
-      });
-      others.sort(function (a, b) {
-        return sortFunction(a, b);
-      });
-      return first.concat(next).concat(others);
-    },
-  },
-  watch: {
-    '$route.params': function (query) {
-      this.getSearchResults();
-    },
-  },
-  mounted() {
-    this.getSearchResults();
-  },
-  methods: {
-    getSearchResults: function () {
-      if (this.$route.query.text == '') {
-        this.noValue = true;
-        this.loading = false;
-        return;
-      } else {
-        this.loading = true;
-        this.noValue = false;
-        return axios
-          .get(
-            `${this.$nuxt.$config.public.apiUrl}/search/?text=${this.$route.query.text}`
-          ) //you will need to enable CORS to make this work
-          .then((response) => {
-            this.results = response.data.results;
-            this.loading = false;
-          });
-      }
-    },
-  },
-};
+  results.forEach((result) => {
+    const index = result.name.toUpperCase().indexOf(term);
+    // sort result into appropriate array
+    // TODO: rmv curly-braces once PR #461 is approved
+    if (index === 0) {
+      first.push(result);
+    } else if (index !== -1) {
+      next.push(result);
+    } else {
+      other.push(result);
+    }
+  });
+  return [...first, ...next, ...other];
+}
 </script>
 
 <style lang="scss" scoped>
