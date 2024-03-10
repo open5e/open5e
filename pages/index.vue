@@ -35,7 +35,7 @@
     <h3>Contribute on Github</h3>
     <p>
       The Open5e <a href="https://github.com/open5e/open5e">site</a> and
-      <a href="https://github.com/open5e/open5e">API</a> are both open-source on
+      <a href="https://github.com/open5e/open5e-api">API</a> are both open-source on
       Github! Join us as a contributor and help develop new features and tools.
     </p>
     <div class="side-note">
