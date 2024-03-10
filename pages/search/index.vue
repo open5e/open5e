@@ -2,61 +2,50 @@
   <section class="docs-container container">
     <h1>Search results</h1>
     <hr />
-    <h3 v-if="loading" class="font-sans font-bold text-slate-400">
+    <p v-if="loading" class="font-sans text-3xl font-bold text-slate-400">
       Searching Open5e...
-    </h3>
-    <h3 v-else-if="noValue" class="font-sans font-bold text-slate-400">
-      <Icon name="majesticons:search-line" class="mr-2 h-8 w-8" />
-      Search for something to see results...
-    </h3>
-    <h3
-      v-else-if="results.length == 0"
-      class="font-sans font-bold text-slate-400"
-    >
+    </p>
+    <p v-else-if="results.length === 0" class="text-slate-400">
       <Icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
-      No results
-    </h3>
-    <div
-      v-for="result in results"
-      :key="result.slug"
-      class="search-result mb-8"
-    >
-      <!-- Result summary for creatures including mini statblock -->
-      <div v-if="result.route == 'monsters/'" class="result-summary">
-        <nuxt-link
-          tag="a"
-          :params="{ id: result.slug }"
-          :to="`/${result.route}${result.slug}`"
-          class="font-bold"
-        >
-          {{ result.name }}
-        </nuxt-link>
-        <span> CR{{ result.challenge_rating }} </span>
-        <span class="title-case">{{ result.type }} | </span>
-        <em>{{ result.hit_points }}hp, AC {{ result.armor_class }}</em>
-        <source-tag
-          v-if="result.document_slug !== 'wotc-srd'"
-          class="source-tag"
-          :title="result.document_title"
-          :text="result.document_slug"
-        />
-        <div>
-          <stat-bar
-            class="mt-1 border-t pt-1"
-            :stats="{
-              str: result.strength,
-              dex: result.dexterity,
-              con: result.constitution,
-              int: result.intelligence,
-              wis: result.wisdom,
-              cha: result.charisma,
-            }"
-          />
-        </div>
-      </div>
+      <span class="text-3xl font-bold">No results</span>
+    </p>
 
-      <!-- Result summary for spells including basic spell info -->
-      <div v-else-if="result.route == 'spells/'" class="result-summary">
+    <!-- SEARCH RESULTS -->
+    <ul v-for="result in results" :key="result.slug" class="search-result mb-8">
+      <!-- Monster summary includes mini statblock -->
+      <li v-if="result.route == 'monsters/'">
+        <p>
+          <nuxt-link
+            tag="a"
+            :params="{ id: result.slug }"
+            :to="`/${result.route}${result.slug}`"
+            class="font-bold"
+          >
+            {{ result.name }}
+          </nuxt-link>
+          <span>{{ ` CR ${result.challenge_rating} | ` }} </span>
+          <em>{{ `${result.hit_points}hp, AC ${result.armor_class}` }}</em>
+          <source-tag
+            v-if="result.document_slug !== 'wotc-srd'"
+            :title="result.document_title"
+            :text="result.document_slug"
+          />
+        </p>
+        <stat-bar
+          class="mt-1 block border-t pt-1"
+          :stats="{
+            str: result.strength,
+            dex: result.dexterity,
+            con: result.constitution,
+            int: result.intelligence,
+            wis: result.wisdom,
+            cha: result.charisma,
+          }"
+        />
+      </li>
+
+      <!-- Spells including basic spell info -->
+      <li v-else-if="result.route == 'spells/'">
         <nuxt-link
           tag="a"
           :params="{ id: result.slug }"
@@ -65,18 +54,17 @@
         >
           {{ result.name }}
         </nuxt-link>
-        {{ result.level }} {{ result.school }} spell | {{ result.dnd_class }}
+        {{ `${result.school} spell | ${result.dnd_class}` }}
         <source-tag
           v-if="result.document_slug !== 'wotc-srd'"
-          class="source-tag"
           :title="result.document_title"
           :text="result.document_slug"
         />
         <p v-html="result.highlighted" />
-      </div>
+      </li>
 
       <!-- Result summary for magic items -->
-      <div v-else-if="result.route == 'magicitems/'" class="result-summary">
+      <li v-else-if="result.route == 'magicitems/'">
         <nuxt-link
           tag="a"
           :params="{ id: result.slug }"
@@ -85,18 +73,17 @@
         >
           {{ result.name }}
         </nuxt-link>
-        {{ result.type }}, {{ result.rarity }}
+        {{ `${result.type}, ${result.rarity}` }}
         <source-tag
           v-if="result.document_slug !== 'wotc-srd'"
-          class="source-tag"
           :title="result.document_title"
           :text="result.document_slug"
         />
         <p v-html="result.highlighted" />
-      </div>
+      </li>
 
       <!-- Result summary for everything else -->
-      <div v-else class="result-summary">
+      <li v-else>
         <nuxt-link
           tag="a"
           :params="{ id: result.slug }"
@@ -107,13 +94,12 @@
         </nuxt-link>
         <source-tag
           v-if="result.document_slug !== 'wotc-srd'"
-          class="source-tag"
           :title="result.document_title"
           :text="result.document_slug"
         />
         <p v-html="result.highlighted" />
-      </div>
-    </div>
+      </li>
+    </ul>
   </section>
 </template>
 
@@ -123,7 +109,6 @@ const route = useRoute();
 
 // search state
 const loading = ref(false);
-const noValue = ref(false);
 
 // get initial values from query params & API
 const searchString = ref(route.query.text);
@@ -148,7 +133,7 @@ async function getSearchResults(query) {
   const endpoint = `${apiUrl}/search/?text=${query}`;
   const response = await $fetch(endpoint);
   loading.value = false;
-  noValue.value = response.results.length === 0;
+  console.log(response.results);
   return sortResults(query, response.results);
 }
 
