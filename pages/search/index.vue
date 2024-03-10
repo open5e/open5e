@@ -11,10 +11,46 @@
     </p>
 
     <!-- SEARCH RESULTS -->
-    <ul v-for="result in results" :key="result.slug" class="search-result mb-8">
-      <!-- Monster summary includes mini statblock -->
-      <li v-if="result.route == 'monsters/'">
-        <p>
+    <ul v-if="results">
+      <li
+        v-for="result in sortedResults.inScope"
+        :key="result.slug"
+        class="search-result mb-8"
+      >
+        <!-- Monster summary includes mini statblock -->
+        <div v-if="result.route == 'monsters/'">
+          <p>
+            <nuxt-link
+              tag="a"
+              :params="{ id: result.slug }"
+              :to="`/${result.route}${result.slug}`"
+              class="font-bold"
+            >
+              {{ result.name }}
+            </nuxt-link>
+            <span>{{ ` CR ${result.challenge_rating} | ` }} </span>
+            <em>{{ `${result.hit_points}hp, AC ${result.armor_class}` }}</em>
+            <source-tag
+              v-if="result.document_slug !== 'wotc-srd'"
+              :title="result.document_title"
+              :text="result.document_slug"
+            />
+          </p>
+          <stat-bar
+            class="mt-1 block border-t pt-1"
+            :stats="{
+              str: result.strength,
+              dex: result.dexterity,
+              con: result.constitution,
+              int: result.intelligence,
+              wis: result.wisdom,
+              cha: result.charisma,
+            }"
+          />
+        </div>
+
+        <!-- Spells including basic spell info -->
+        <div v-else-if="result.route == 'spells/'">
           <nuxt-link
             tag="a"
             :params="{ id: result.slug }"
@@ -23,88 +59,61 @@
           >
             {{ result.name }}
           </nuxt-link>
-          <span>{{ ` CR ${result.challenge_rating} | ` }} </span>
-          <em>{{ `${result.hit_points}hp, AC ${result.armor_class}` }}</em>
+          {{ `${result.school} spell | ${result.dnd_class}` }}
           <source-tag
             v-if="result.document_slug !== 'wotc-srd'"
             :title="result.document_title"
             :text="result.document_slug"
           />
-        </p>
-        <stat-bar
-          class="mt-1 block border-t pt-1"
-          :stats="{
-            str: result.strength,
-            dex: result.dexterity,
-            con: result.constitution,
-            int: result.intelligence,
-            wis: result.wisdom,
-            cha: result.charisma,
-          }"
-        />
-      </li>
+          <p v-html="result.highlighted" />
+        </div>
 
-      <!-- Spells including basic spell info -->
-      <li v-else-if="result.route == 'spells/'">
-        <nuxt-link
-          tag="a"
-          :params="{ id: result.slug }"
-          :to="`/${result.route}${result.slug}`"
-          class="font-bold"
-        >
-          {{ result.name }}
-        </nuxt-link>
-        {{ `${result.school} spell | ${result.dnd_class}` }}
-        <source-tag
-          v-if="result.document_slug !== 'wotc-srd'"
-          :title="result.document_title"
-          :text="result.document_slug"
-        />
-        <p v-html="result.highlighted" />
-      </li>
+        <!-- Result summary for magic items -->
+        <div v-else-if="result.route == 'magicitems/'">
+          <nuxt-link
+            tag="a"
+            :params="{ id: result.slug }"
+            :to="`/magic-items/${result.slug}`"
+            class="font-bold"
+          >
+            {{ result.name }}
+          </nuxt-link>
+          {{ `${result.type}, ${result.rarity}` }}
+          <source-tag
+            v-if="result.document_slug !== 'wotc-srd'"
+            :title="result.document_title"
+            :text="result.document_slug"
+          />
+          <p v-html="result.highlighted" />
+        </div>
 
-      <!-- Result summary for magic items -->
-      <li v-else-if="result.route == 'magicitems/'">
-        <nuxt-link
-          tag="a"
-          :params="{ id: result.slug }"
-          :to="`/magic-items/${result.slug}`"
-          class="font-bold"
-        >
-          {{ result.name }}
-        </nuxt-link>
-        {{ `${result.type}, ${result.rarity}` }}
-        <source-tag
-          v-if="result.document_slug !== 'wotc-srd'"
-          :title="result.document_title"
-          :text="result.document_slug"
-        />
-        <p v-html="result.highlighted" />
-      </li>
-
-      <!-- Result summary for everything else -->
-      <li v-else>
-        <nuxt-link
-          tag="a"
-          :params="{ id: result.slug }"
-          :to="`/${result.route}${result.slug}`"
-          class="font-bold"
-        >
-          {{ result.name }}
-        </nuxt-link>
-        <source-tag
-          v-if="result.document_slug !== 'wotc-srd'"
-          :title="result.document_title"
-          :text="result.document_slug"
-        />
-        <p v-html="result.highlighted" />
+        <!-- Result summary for everything else -->
+        <div v-else>
+          <nuxt-link
+            tag="a"
+            :params="{ id: result.slug }"
+            :to="`/${result.route}${result.slug}`"
+            class="font-bold"
+          >
+            {{ result.name }}
+          </nuxt-link>
+          <source-tag
+            v-if="result.document_slug !== 'wotc-srd'"
+            :title="result.document_title"
+            :text="result.document_slug"
+          />
+          <p v-html="result.highlighted" />
+        </div>
       </li>
     </ul>
   </section>
 </template>
 
 <script setup>
-import { ref, watch } from 'vue';
+import { ref, watch, computed } from 'vue';
+import { useMainStore } from '~/store';
+const store = useMainStore();
+const sources = computed(() => store.sourceSelection);
 const route = useRoute();
 
 // search state
@@ -113,6 +122,9 @@ const loading = ref(false);
 // get initial values from query params & API
 const searchString = ref(route.query.text);
 const results = ref(await getSearchResults(searchString.value));
+const sortedResults = computed(() =>
+  sortResults(sources.value, results.value, searchString.value)
+);
 
 // Watch the query param. Run search again if it changes
 watch(
@@ -123,9 +135,25 @@ watch(
   }
 );
 
+// Watch the results. Re-sort them when they change
+watch(
+  () => [results],
+  async (newResults) => {
+    sortedResults.value = sortResults(
+      sources.value,
+      newResults,
+      searchString.value
+    );
+    filteredResults.value = splitResultsBySource(
+      sources.value,
+      sortedResults.value
+    );
+  }
+);
+
 // getSearchResults queries the /search API endpoint
 async function getSearchResults(query) {
-  if (query === '') {
+  if (!query) {
     return;
   }
   loading.value = true;
@@ -133,13 +161,36 @@ async function getSearchResults(query) {
   const endpoint = `${apiUrl}/search/?text=${query}`;
   const response = await $fetch(endpoint);
   loading.value = false;
-  console.log(response.results);
-  return sortResults(query, response.results);
+  return response.results;
 }
 
 // sorts results returned by API
-function sortResults(search, results) {
-  const term = search.toUpperCase();
+function sortResults(sources, results, query) {
+  const sorted = sortByRelevance(query, results);
+  const split = splitResultsBySource(sources, sorted);
+  return split;
+}
+
+// splits an arr of results into arrs that are within and outside of sources
+function splitResultsBySource(sources = [], results) {
+  const inScope = [];
+  const outOfScope = [];
+
+  results.forEach((result) => {
+    if (sources.includes(result.document_slug)) {
+      inScope.push(result);
+    } else {
+      outOfScope.push(result);
+    }
+  });
+  return {
+    inScope,
+    outOfScope,
+  };
+}
+
+function sortByRelevance(query, results) {
+  const term = query.toUpperCase();
   const first = []; // query matches start of the title
   const next = []; // query matches some part of the title
   const other = []; // query doens't match title
