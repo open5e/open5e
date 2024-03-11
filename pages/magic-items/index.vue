@@ -2,7 +2,7 @@
   <section class="container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Magic Item List</h1>
-      <FilterButton @showFilters="displayFilters = !displayFilters" />
+      <FilterButton @show-filters="displayFilters = !displayFilters" />
     </div>
     <!-- FILTER -->
     <div
@@ -28,12 +28,9 @@
               name="rarity"
               class="flex w-full rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
             >
-              <option
-                v-for="rtg in itemRarities"
-                :key="rtg"
-                class=""
-                v-text="rtg"
-              ></option>
+              <option v-for="rtg in itemRarities" :key="rtg">
+                {{ rtg }}
+              </option>
             </select>
           </div>
           <div class="mt-2 flex w-full flex-wrap md:w-1/2">
@@ -44,12 +41,9 @@
               name="type"
               class="flex w-full rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood md:ml-2"
             >
-              <option
-                v-for="rtg in itemTypes"
-                :key="rtg"
-                class=""
-                v-text="rtg"
-              ></option>
+              <option v-for="rtg in itemTypes" :key="rtg" class="">
+                {{ rtg }}
+              </option>
             </select>
           </div>
           <div class="mt-4 flex w-full md:w-1/2">
