@@ -10,14 +10,14 @@
     <p v-if="loading" class="font-sans text-3xl font-bold text-slate-400">
       Searching Open5e...
     </p>
-    <p v-else-if="results.length === 0" class="text-slate-400">
+    <p v-else-if="results?.length === 0" class="text-slate-400">
       <Icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
       <span class="text-3xl font-bold">No results</span>
     </p>
     <div v-if="results && !loading">
       <!-- SEARCH RESULTS -->
       <p class="mb-6 text-xl font-bold tracking-wide text-granite">
-        {{ `${sortedResults.inScope.length} results in your sources ` }}
+        {{ `${sortedResults.inScope?.length} results in your sources ` }}
       </p>
       <ul>
         <li
@@ -31,17 +31,19 @@
 
       <!-- SEARCH RESULTS FROM OTHER SOURCES -->
       <button
-        v-show="!isOtherSourcesExpanded && sortedResults.outOfScope.length > 0"
+        v-show="!isOtherSourcesExpanded && sortedResults.outOfScope?.length > 0"
         class="mb-4 text-indigo-600 hover:text-blood hover:underline dark:text-indigo-200 dark:hover:text-red"
         @click="toggleOtherSources"
       >
         {{
-          `Show ${sortedResults.outOfScope.length} additional results from other sources `
+          `Show ${sortedResults.outOfScope?.length} additional results from other sources `
         }}
       </button>
-      <ul v-if="isOtherSourcesExpanded && sortedResults.outOfScope.length > 0">
+      <ul v-if="isOtherSourcesExpanded && sortedResults.outOfScope?.length > 0">
         <header class="mb-6 text-xl font-bold tracking-wide text-granite">
-          {{ `${sortedResults.outOfScope.length} results from other sources ` }}
+          {{
+            `${sortedResults.outOfScope?.length} results from other sources `
+          }}
         </header>
         <li
           v-for="result in sortedResults.outOfScope"
