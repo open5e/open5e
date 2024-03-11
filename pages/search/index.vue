@@ -1,6 +1,11 @@
 <template>
   <section class="docs-container container">
-    <h1>Search results</h1>
+    <h1>
+      <span>Search results for </span>
+      <span class="ml-2 font-thin uppercase text-granite before:content-['_']">
+        {{ searchString }}
+      </span>
+    </h1>
     <hr />
     <p v-if="loading" class="font-sans text-3xl font-bold text-slate-400">
       Searching Open5e...
@@ -9,39 +14,44 @@
       <Icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
       <span class="text-3xl font-bold">No results</span>
     </p>
+    <div v-if="results && !loading">
+      <!-- SEARCH RESULTS -->
+      <p class="mb-6 text-xl font-bold tracking-wide text-granite">
+        {{ `${sortedResults.inScope.length} results in your sources ` }}
+      </p>
+      <ul>
+        <li
+          v-for="result in sortedResults.inScope"
+          :key="result.slug"
+          class="search-result mb-8"
+        >
+          <search-preview :result="result" />
+        </li>
+      </ul>
 
-    <!-- SEARCH RESULTS -->
-    <p class="mb-6 text-xl font-bold tracking-wide text-granite">
-      {{ `${sortedResults.inScope.length} results in your sources ` }}
-    </p>
-    <ul v-if="results">
-      <li
-        v-for="result in sortedResults.inScope"
-        :key="result.slug"
-        class="search-result mb-8"
+      <!-- SEARCH RESULTS FROM OTHER SOURCES -->
+      <button
+        v-show="!isOtherSourcesExpanded && sortedResults.outOfScope.length > 0"
+        class="mb-4 text-indigo-600 hover:text-blood hover:underline dark:text-indigo-200 dark:hover:text-red"
+        @click="toggleOtherSources"
       >
-        <search-preview :result="result" />
-      </li>
-    </ul>
-
-    <!-- SEARCH RESULTS FROM OTHER SOURCES -->
-    <button
-      class="mb-6 text-xl font-bold tracking-wide text-granite"
-      @click="toggleOtherSources"
-    >
-      {{
-        `Show ${sortedResults.outOfScope.length} results from other sources `
-      }}
-    </button>
-    <ul v-if="isOtherSourcesExpanded">
-      <li
-        v-for="result in sortedResults.outOfScope"
-        :key="result.slug"
-        class="search-result mb-8"
-      >
-        <search-preview :result="result" />
-      </li>
-    </ul>
+        {{
+          `Show ${sortedResults.outOfScope.length} additional results from other sources `
+        }}
+      </button>
+      <ul v-if="isOtherSourcesExpanded && sortedResults.outOfScope.length > 0">
+        <header class="mb-6 text-xl font-bold tracking-wide text-granite">
+          {{ `${sortedResults.outOfScope.length} results from other sources ` }}
+        </header>
+        <li
+          v-for="result in sortedResults.outOfScope"
+          :key="result.slug"
+          class="search-result mb-8"
+        >
+          <search-preview :result="result" />
+        </li>
+      </ul>
+    </div>
   </section>
 </template>
 
@@ -50,12 +60,16 @@ import { ref, watch, computed } from 'vue';
 import { useMainStore } from '~/store';
 const store = useMainStore();
 const sources = computed(() => store.sourceSelection);
-
 const route = useRoute();
 
-// search state
+// search state - true when data is loading
 const loading = ref(false);
 
+// UI state – controls whether sources from other sources are visible
+const isOtherSourcesExpanded = ref(false);
+const toggleOtherSources = () => {
+  isOtherSourcesExpanded.value = !isOtherSourcesExpanded.value;
+};
 // get initial values from query params & API
 const searchString = ref(route.query.text);
 const results = ref(await getSearchResults(searchString.value));
@@ -63,12 +77,7 @@ const sortedResults = computed(() =>
   sortResults(sources.value, results.value, searchString.value)
 );
 
-const isOtherSourcesExpanded = ref(false);
-const toggleOtherSources = () => {
-  isOtherSourcesExpanded.value = !isOtherSourcesExpanded.value;
-};
-
-// Watch the query param. Run search again if it changes
+// Watch the query param, re-reun search if it ever changes
 watch(
   () => route.query.text,
   async (newQuery) => {
@@ -77,7 +86,7 @@ watch(
   }
 );
 
-// Watch the results. Re-sort them when they change
+// Watch the results, and re-sort them thi
 watch(
   () => [results],
   async (newResults) => {
@@ -98,6 +107,7 @@ async function getSearchResults(query) {
   const { apiUrl } = useRuntimeConfig().public;
   const endpoint = `${apiUrl}/search/?text=${query}`;
   const response = await $fetch(endpoint);
+  isOtherSourcesExpanded.value = false;
   loading.value = false;
   return response.results;
 }
@@ -121,11 +131,13 @@ function splitResultsBySource(sources = [], results) {
       outOfScope.push(result);
     }
   });
-  return {
-    inScope,
-    outOfScope,
-  };
+  return { inScope, outOfScope };
 }
+
+/* sorts the results as follows:
+ * 1st: results whose title begin with the query text
+ * 2nd: results whose title contains the query text
+ * 3rd: results everything else */
 
 function sortByRelevance(query, results) {
   const term = query.toUpperCase();
