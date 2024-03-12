@@ -20,4 +20,7 @@ describe('template spec', () => {
     );
     cy.contains('section', 'Wing Attack (Costs 2 Actions).');
   });
+  it('monster page', () => {
+    cy.visit('http://localhost:3000/monsters/acolyte');
+  });
 });
