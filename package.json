@@ -25,7 +25,7 @@
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxtjs/tailwindcss": "^6.7.0",
     "@types/node": "^18",
-    "cypress": "^13.6.6",
+    "cypress": "^13.6.4",
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
