@@ -1,0 +1,26 @@
+{
+  "count": 2,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "text": "Adult Bronze Dragon\n\n",
+      "name": "Adult Bronze Dragon",
+      "route": "monsters/",
+      "slug": "adult-bronze-dragon",
+      "armor_class": "19",
+      "hit_points": "212",
+      "hit_dice": "17d12+102",
+      "strength": "25",
+      "dexterity": "10",
+      "constitution": "23",
+      "intelligence": "16",
+      "wisdom": "15",
+      "charisma": "19",
+      "challenge_rating": "15",
+      "document_slug": "wotc-srd",
+      "document_title": "5e Core Rules",
+      "highlighted": "Adult Bronze Dragon\n\n"
+    }
+  ]
+}
