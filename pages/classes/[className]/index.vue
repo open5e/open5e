@@ -51,11 +51,15 @@
     </section>
     <section>
       <h2>{{ classData.subtypes_name }}</h2>
-      <ul v-for="archetype in classData.archetypes" :key="archetype">
+      <ul v-for="archetype in archetypes" :key="archetype.name">
         <li>
           <nuxt-link :to="`${classData.slug}/${archetype.slug}`" tag="a">
             {{ archetype.name }}
           </nuxt-link>
+          <source-tag
+            :title="archetype.document__title"
+            :text="archetype.document__slug"
+          />
         </li>
       </ul>
     </section>
@@ -65,8 +69,19 @@
 </template>
 
 <script setup>
+import { useMainStore } from '~/store';
+import { computed } from 'vue';
+
+const store = useMainStore();
+const sources = computed(() => store.sourceSelection);
 const classData = await useFetchArticle({
   slug: useRoute().params.className,
   category: 'classes',
 });
+
+const archetypes = computed(() =>
+  classData.archetypes.filter((subclass) =>
+    sources.value.includes(subclass.document__slug)
+  )
+);
 </script>

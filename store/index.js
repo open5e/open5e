@@ -109,6 +109,7 @@ export const useMainStore = defineStore({
       races: [],
       sections: [],
       backgrounds: [],
+      feats: [],
       savedSources: [],
       sourceSelection: [],
       sourceString: '',
@@ -130,7 +131,6 @@ export const useMainStore = defineStore({
         filters = {},
         processData = (data) => data,
       } = params;
-
       if (this.freshVals.has(listName)) {
         // The list is fresh, no need to make the API call
         return;
@@ -208,6 +208,13 @@ export const useMainStore = defineStore({
       });
     },
 
+    async loadFeats() {
+      await this.loadFromApi({
+        resource: 'feats',
+        limit: 1000,
+        listName: 'feats',
+      });
+    },
     async loadConditions() {
       await this.loadFromApi({
         resource: 'conditions',
@@ -273,16 +280,16 @@ export const useMainStore = defineStore({
     async initializeSources() {
       this.savedSources = this.loadSourcesFromLocal();
       await this.loadDocuments().then(() => {
-        console.log(
-          `saved sources: ${this.savedSources.length}, documents: ${this.documents.length}`
-        );
+        // console.log(
+        //   `saved sources: ${this.savedSources.length}, documents: ${this.documents.length}`
+        // );
         if (!this.savedSources.length) {
           this.savedSources = this.documents.map((doc) => doc.slug);
         }
       });
       this.setSources(this.savedSources);
       this.isInitialized = true;
-      console.log(`running queued actions: ${this.queuedActions}`);
+      // console.log(`running queued actions: ${this.queuedActions}`);
       await this.processQueue();
     },
 
@@ -308,6 +315,7 @@ export const useMainStore = defineStore({
         sections: this.loadSections,
         backgrounds: this.loadBackgrounds,
         documents: this.loadDocuments,
+        feats: this.loadFeats,
       };
 
       this.freshVals.clear(); // clear the list of fresh sources. this should be done whenever a global fitler changes
@@ -361,6 +369,9 @@ export const useMainStore = defineStore({
     },
     allBackgrounds: (state) => {
       return state.backgrounds;
+    },
+    allFeats: (state) => {
+      return state.feats;
     },
     allDocuments: (state) => {
       return state.documents;
