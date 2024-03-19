@@ -1,238 +1,171 @@
 <template>
   <section class="docs-container container">
-    <h1>Search results</h1>
+    <h1>
+      <span>Search results for </span>
+      <span class="ml-2 font-thin uppercase text-granite before:content-['_']">
+        {{ searchString }}
+      </span>
+    </h1>
     <hr />
-    <h3 v-if="loading" class="font-sans font-bold text-slate-400">
+    <p v-if="loading" class="font-sans text-3xl font-bold text-slate-400">
       Searching Open5e...
-    </h3>
-    <h3 v-else-if="noValue" class="font-sans font-bold text-slate-400">
-      <Icon name="majesticons:search-line" class="mr-2 h-8 w-8" />
-      Search for something to see results...
-    </h3>
-    <h3
-      v-else-if="orderedResults.length == 0"
-      class="font-sans font-bold text-slate-400"
-    >
+    </p>
+    <p v-else-if="results?.length === 0" class="text-slate-400">
       <Icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
-      No results
-    </h3>
-    <div
-      v-for="result in orderedResults"
-      v-show="!loading && !noValue"
-      :key="result.slug"
-      class="search-result"
-    >
-      <!-- Result summary for creatures including mini statblock -->
-      <div v-if="result.route == 'monsters/'" class="result-summary">
-        <nuxt-link
-          tag="a"
-          :params="{ id: result.slug }"
-          :to="`/${result.route}${result.slug}`"
+      <span class="text-3xl font-bold">No results</span>
+    </p>
+    <div v-if="results && !loading">
+      <!-- SEARCH RESULTS -->
+      <p class="mb-6 text-xl font-bold tracking-wide text-granite">
+        {{ `${sortedResults.inScope?.length} results in your sources ` }}
+      </p>
+      <ul>
+        <li
+          v-for="result in sortedResults.inScope"
+          :key="result.slug"
+          class="search-result mb-8"
         >
-          {{ result.name }}
-        </nuxt-link>
-        <span> CR{{ result.challenge_rating }} </span
-        ><span class="title-case">{{ result.type }} | </span>
-        <em>{{ result.hit_points }}hp, AC {{ result.armor_class }}</em>
-        <source-tag
-          v-if="result.document_slug !== 'wotc-srd'"
-          class="source-tag"
-          :title="result.document_title"
-          :text="result.document_slug"
-        />
-        <div>
-          <stat-bar
-            class="top-border"
-            :stats="{
-              str: result.strength,
-              dex: result.dexterity,
-              con: result.constitution,
-              int: result.intelligence,
-              wis: result.wisdom,
-              cha: result.charisma,
-            }"
-          />
-        </div>
-      </div>
+          <search-preview :result="result" />
+        </li>
+      </ul>
 
-      <!-- Result summary for spells including basic spell info -->
-      <div v-else-if="result.route == 'spells/'" class="result-summary">
-        <nuxt-link
-          tag="a"
-          :params="{ id: result.slug }"
-          :to="`/${result.route}${result.slug}`"
+      <!-- SEARCH RESULTS FROM OTHER SOURCES -->
+      <button
+        v-show="!isOtherSourcesExpanded && sortedResults.outOfScope?.length > 0"
+        class="mb-4 text-indigo-600 hover:text-blood hover:underline dark:text-indigo-200 dark:hover:text-red"
+        @click="toggleOtherSources"
+      >
+        {{
+          `Show ${sortedResults.outOfScope?.length} additional results from other sources `
+        }}
+      </button>
+      <ul v-if="isOtherSourcesExpanded && sortedResults.outOfScope?.length > 0">
+        <header class="mb-6 text-xl font-bold tracking-wide text-granite">
+          {{
+            `${sortedResults.outOfScope?.length} results from other sources `
+          }}
+        </header>
+        <li
+          v-for="result in sortedResults.outOfScope"
+          :key="result.slug"
+          class="search-result mb-8"
         >
-          {{ result.name }}
-        </nuxt-link>
-        {{ result.level }} {{ result.school }} spell | {{ result.dnd_class }}
-        <source-tag
-          v-if="result.document_slug !== 'wotc-srd'"
-          class="source-tag"
-          :title="result.document_title"
-          :text="result.document_slug"
-        />
-        <p class="result-highlights" v-html="result.highlighted" />
-      </div>
-
-      <!-- Result summary for magic items -->
-      <div v-else-if="result.route == 'magicitems/'" class="result-summary">
-        <nuxt-link
-          tag="a"
-          :params="{ id: result.slug }"
-          :to="`/magic-items/${result.slug}`"
-        >
-          {{ result.name }}
-        </nuxt-link>
-        {{ result.type }}, {{ result.rarity }}
-        <source-tag
-          v-if="result.document_slug !== 'wotc-srd'"
-          class="source-tag"
-          :title="result.document_title"
-          :text="result.document_slug"
-        />
-        <p class="result-highlights" v-html="result.highlighted" />
-      </div>
-
-      <!-- Result summary for everything else -->
-      <div v-else class="result-summary">
-        <nuxt-link
-          tag="a"
-          :params="{ id: result.slug }"
-          :to="`/${result.route}${result.slug}`"
-        >
-          {{ result.name }}
-        </nuxt-link>
-        <source-tag
-          v-if="result.document_slug !== 'wotc-srd'"
-          class="source-tag"
-          :title="result.document_title"
-          :text="result.document_slug"
-        />
-        <p class="result-highlights" v-html="result.highlighted" />
-      </div>
+          <search-preview :result="result" />
+        </li>
+      </ul>
     </div>
   </section>
 </template>
 
-<script>
-import axios from 'axios';
-import StatBar from '~/components/StatBar';
-import SourceTag from '~/components/SourceTag';
+<script setup>
+import { ref, watch, computed } from 'vue';
+import { useMainStore } from '~/store';
+const store = useMainStore();
+const sources = computed(() => store.sourceSelection);
+const route = useRoute();
 
-function sortFunction(a, b) {
-  var textA = a.name.toUpperCase();
-  var textB = b.name.toUpperCase();
-  return textA < textB ? -1 : textA > textB ? 1 : 0;
+// search state - true when data is loading
+const loading = ref(false);
+
+// UI state – controls whether sources from other sources are visible
+const isOtherSourcesExpanded = ref(false);
+const toggleOtherSources = () => {
+  isOtherSourcesExpanded.value = !isOtherSourcesExpanded.value;
+};
+// get initial values from query params & API
+const searchString = ref(route.query.text);
+const results = ref(await getSearchResults(searchString.value));
+const sortedResults = computed(() =>
+  sortResults(sources.value, results.value, searchString.value)
+);
+
+// Watch the query param, re-reun search if it ever changes
+watch(
+  () => route.query.text,
+  async (newQuery) => {
+    searchString.value = newQuery;
+    results.value = await getSearchResults(searchString.value);
+  }
+);
+
+// Watch the results, and re-sort them thi
+watch(
+  () => [results],
+  async (newResults) => {
+    sortedResults.value = sortResults(
+      sources.value,
+      newResults,
+      searchString.value
+    );
+  }
+);
+
+// getSearchResults queries the /search API endpoint
+async function getSearchResults(query) {
+  if (!query) {
+    return;
+  }
+  loading.value = true;
+  const { apiUrl } = useRuntimeConfig().public;
+  const endpoint = `${apiUrl}/search/?text=${query}`;
+  const response = await $fetch(endpoint);
+  isOtherSourcesExpanded.value = false;
+  loading.value = false;
+  return response.results;
 }
 
-export default {
-  components: {
-    StatBar,
-    SourceTag,
-  },
-  data() {
-    return {
-      results: [],
-      text: this.$route.query.text,
-      loading: true,
-      noValue: true,
-    };
-  },
-  computed: {
-    orderedResults: function () {
-      // Abort early if there is no search term
-      if (!this.text) {
-        return this.results;
-      }
+// sorts results returned by API
+function sortResults(sources, results, query) {
+  const sorted = sortByRelevance(query, results);
+  const split = splitResultsBySource(sources, sorted);
+  return split;
+}
 
-      let tmp = this.results.slice();
-      const term = this.text.toUpperCase();
-      let first = [];
-      let next = [];
-      let others = [];
-      for (var i = 0; i < tmp.length; i++) {
-        if (tmp[i].name.toUpperCase().indexOf(term) == 0) {
-          first.push(tmp[i]);
-        } else if (tmp[i].name.toUpperCase().indexOf(term) != -1) {
-          next.push(tmp[i]);
-        } else {
-          others.push(tmp[i]);
-        }
-      }
+// splits an arr of results into arrs that are within and outside of sources
+function splitResultsBySource(sources = [], results) {
+  const inScope = [];
+  const outOfScope = [];
 
-      first.sort(function (a, b) {
-        return sortFunction(a, b);
-      });
-      next.sort(function (a, b) {
-        return sortFunction(a, b);
-      });
-      others.sort(function (a, b) {
-        return sortFunction(a, b);
-      });
-      return first.concat(next).concat(others);
-    },
-  },
-  watch: {
-    '$route.params': function (query) {
-      this.getSearchResults();
-    },
-  },
-  mounted() {
-    this.getSearchResults();
-  },
-  methods: {
-    getSearchResults: function () {
-      if (this.$route.query.text == '') {
-        this.noValue = true;
-        this.loading = false;
-        return;
-      } else {
-        this.loading = true;
-        this.noValue = false;
-        return axios
-          .get(
-            `${this.$nuxt.$config.public.apiUrl}/search/?text=${this.$route.query.text}`
-          ) //you will need to enable CORS to make this work
-          .then((response) => {
-            this.results = response.data.results;
-            this.loading = false;
-          });
-      }
-    },
-  },
-};
+  results.forEach((result) => {
+    if (sources.includes(result.document_slug)) {
+      inScope.push(result);
+    } else {
+      outOfScope.push(result);
+    }
+  });
+  return { inScope, outOfScope };
+}
+
+/* sorts the results as follows:
+ * 1st: results whose title begin with the query text
+ * 2nd: results whose title contains the query text
+ * 3rd: results everything else */
+
+function sortByRelevance(query, results) {
+  const term = query.toUpperCase();
+  const first = []; // query matches start of the title
+  const next = []; // query matches some part of the title
+  const other = []; // query doens't match title
+
+  results.forEach((result) => {
+    const index = result.name.toUpperCase().indexOf(term);
+    // sort result into appropriate array
+    // TODO: rmv curly-braces once PR #461 is approved
+    if (index === 0) {
+      first.push(result);
+    } else if (index !== -1) {
+      next.push(result);
+    } else {
+      other.push(result);
+    }
+  });
+  return [...first, ...next, ...other];
+}
 </script>
 
-<style lang="scss" scoped>
-@import './assets/variables';
-
-.search-result {
-  margin-bottom: 2rem;
-
-  a {
-    font-weight: bold;
-  }
-
-  :deep(.highlighted) {
-    background-color: lightgoldenrodyellow;
-    font-weight: bold;
-  }
-}
-
-.top-border {
-  margin-top: 0.35rem;
-  padding-top: 0.25rem;
-  border-top: 1px solid rgba($color-smoke, 0.5);
-  font-size: 14px;
-  opacity: 0.7;
-}
-
-hr {
-  margin-bottom: 2rem;
-}
-
-.result-highlights {
-  font-size: 14px;
-  opacity: 0.8;
+<style lang="scss">
+.highlighted {
+  background-color: lightgoldenrodyellow;
+  font-weight: bold;
 }
 </style>
