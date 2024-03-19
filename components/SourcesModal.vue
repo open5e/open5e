@@ -1,48 +1,54 @@
 <template>
   <ModalDialog>
     <slot>
-      <h2 class="mt-0 border-b-4 border-red-400 pb-2">Select Sources</h2>
-      <div class="mt-2">
-        <fieldset>
-          <legend class="sr-only">Source Selection</legend>
-
-          <div class="space-y-3">
+      <h2
+        class="mb-2 mt-0 flex w-full justify-between border-b-4 border-red-400 pb-2"
+      >
+        Select Sources
+        <span class="text-sm">
+          <button class="mr-1 text-blood hover:text-red" @click="selectAll()">
+            All
+          </button>
+          <button
+            class="ml-1 text-granite hover:text-basalt"
+            @click="deselectAll()"
+          >
+            None
+          </button>
+        </span>
+      </h2>
+      <fieldset>
+        <div class="space-y-3">
+          <div
+            v-for="(group, organization) in groupedDocuments"
+            :key="organization"
+          >
+            <h3 class="mt-2">{{ organization }}</h3>
             <div
-              v-for="(group, organization) in groupedDocuments"
-              :key="organization"
+              v-for="document in group"
+              :key="document.slug"
+              class="relative flex items-start"
             >
-              <h3 class="mt-2">{{ organization }}</h3>
-              <div
-                v-for="document in group"
-                :key="document.slug"
-                class="relative flex items-start"
-              >
-                <div class="flex h-6 items-center">
-                  <input
-                    :id="document.slug"
-                    v-model="selectedSourcesComputed"
-                    :name="document.slug"
-                    type="checkbox"
-                    class="h-4 w-4 rounded border-gray-300 text-blue-600 accent-blood focus:ring-blue-600"
-                    :value="document.slug"
-                  />
-                </div>
-                <div class="ml-3 text-sm leading-6">
-                  <label
-                    :for="document.slug"
-                    class="font-medium text-gray-900"
-                    >{{ document.title }}</label
-                  >
-                  <SourceTag
-                    :title="document.title"
-                    :text="document.slug"
-                  ></SourceTag>
-                </div>
+              <div class="flex h-6 items-center">
+                <input
+                  :id="document.slug"
+                  v-model="selectedSources"
+                  :name="document.slug"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-blue-600 accent-blood focus:ring-blue-600"
+                  :value="document.slug"
+                />
+              </div>
+              <div class="ml-3 text-sm leading-6">
+                <label :for="document.slug" class="font-medium text-gray-900">
+                  {{ document.title }}
+                </label>
+                <source-tag :title="document.title" :text="document.slug" />
               </div>
             </div>
           </div>
-        </fieldset>
-      </div>
+        </div>
+      </fieldset>
     </slot>
     <template #actions>
       <button
@@ -72,7 +78,6 @@ export default {
   data() {
     return {
       selectedSources: [],
-      open: false,
     };
   },
   computed: {
@@ -92,14 +97,6 @@ export default {
         return grouped;
       }, {});
     },
-    selectedSourcesComputed: {
-      get: function () {
-        return this.selectedSources;
-      },
-      set: function (newValue) {
-        this.selectedSources = newValue;
-      },
-    },
   },
   watch: {
     'store.sourceSelection': function (newVal) {
@@ -107,7 +104,6 @@ export default {
     },
   },
   created() {
-    this.searchText = this.$route.query.text;
     this.selectedSources = this.store.sourceSelection;
   },
   methods: {
@@ -121,12 +117,12 @@ export default {
       this.store.setSources(this.selectedSources);
       this.closeModal();
     },
+    selectAll() {
+      this.selectedSources = this.documents.map((source) => source.slug);
+    },
+    deselectAll() {
+      this.selectedSources = [];
+    },
   },
 };
-</script>
-
-<script setup>
-import { ref } from 'vue';
-
-const open = ref(true);
 </script>
