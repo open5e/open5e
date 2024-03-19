@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-hidden text-darkness">
-    <SourcesModal :show="showModal" @close="showModal = false" />
+    <sources-modal :show="showModal" @close="showModal = false" />
     <div
       class="grid h-screen w-screen grid-flow-col bg-white transition-all dark:bg-darkness sm:ml-0 sm:grid-cols-[14rem_1fr] sm:overflow-y-auto sm:transition-none"
       :class="showSidebar ? 'ml-0' : '-ml-56'"
@@ -72,6 +72,9 @@
             </ul>
           </li>
         </ul>
+
+        <!-- Report Issue UI -->
+        <report-issue />
 
         <!-- Patron Banner -->
         <a href="https://www.patreon.com/open5e">
