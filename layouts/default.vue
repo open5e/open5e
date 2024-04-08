@@ -138,9 +138,10 @@ export default {
           const [title, queryParams] = segment.split('?');
 
           // extract & format the search params if on the /search route
-          const searchParam =
-            title === 'search' &&
-            queryParams.split('text=')[1].split('+').join(' ');
+          let searchParam = '';
+          if (title === 'search' && queryParams) {
+            searchParam = queryParams.split('text=')[1].split('+').join(' ');
+          }
 
           // return a
           return {
@@ -162,12 +163,10 @@ export default {
       if (crumbs.value.length === 0) {
         return BASE_TITLE;
       }
-      return (
-        crumbs.value
-          .map((crumb) => crumb.title)
-          .toReversed()
-          .join(' - ') + ` - ${BASE_TITLE}`
-      );
+      const crumb_titles = crumbs.value.map((crumb) => crumb.title);
+      const reversed_titles = [...crumb_titles].reverse();
+
+      return reversed_titles.join(' - ') + ` - ${BASE_TITLE}`;
     });
     useHead({ title: title });
     return { store };
@@ -217,6 +216,10 @@ export default {
           title: 'Classes',
           route: '/classes',
           subroutes: this.store.classes,
+        },
+        {
+          title: 'Conditions',
+          route: '/conditions',
         },
         {
           title: 'Races',
