@@ -30,7 +30,7 @@
                 <div class="ml-3 text-sm leading-6">
                   <label
                     :for="document.slug"
-                    class="font-medium text-gray-900"
+                    class="font-medium text-gray-900 dark:text-white"
                     >{{ document.title }}</label
                   >
                   <SourceTag
