@@ -350,7 +350,8 @@ export const useMainStore = defineStore({
     },
     allMechanicsSections: (state) => {
       return state.sections.filter(
-        (section) => section.parent === 'Gameplay Mechanics'
+        (section) =>
+          section.parent === 'Gameplay Mechanics' || section.parent === 'Rules'
       );
     },
     allCombatSections: (state) => {
