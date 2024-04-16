@@ -265,7 +265,8 @@ export default {
           title: 'Gameplay Mechanics',
           route: '/gameplay-mechanics',
           subroutes: this.store.sections.filter(
-            (page) => page.parent === 'Gameplay Mechanics'
+            (page) =>
+              page.parent === 'Gameplay Mechanics' || page.parent === 'Rules'
           ),
         },
         {
