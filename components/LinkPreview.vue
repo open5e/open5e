@@ -27,71 +27,67 @@
   </article>
 </template>
 
-<script>
-export default {
-  props: {
-    category: { type: String, default: '' },
-    // eslint-disable-next-line vue/require-prop-types
-    content: { default: [] },
-  },
-  computed: {
-    // generate an appropriate subtitle for each resource type
-    subtitle() {
-      console.log(this.category);
-      const data = this.content;
-      switch (this.category) {
-        case 'spells':
-          return `${data.level} ${data.school} Spell`;
-        case 'monsters':
-          return 'Monster';
-        case 'magicitems':
-          return 'Magic Item';
-        case 'conditions':
-          return 'Condition';
-        case 'feats':
-          return 'Feat';
-        case 'sections':
-        case 'characters':
-        case 'combat':
-        case 'equipment':
-        case 'gameplay-mechanics':
-        case 'running':
-          return data.parent;
-        default:
-          return this.category.charAt(0).toUpperCase() + this.category.slice(1);
-      }
-    },
+<script setup>
+const props = defineProps({
+  category: { type: String, default: '' },
+  // eslint-disable-next-line vue/require-prop-types
+  content: { default: [] },
+});
 
-    body() {
-      const data = this.content;
-      switch (this.category) {
-        case 'conditions':
-          return [{ data: data.desc }];
-        case 'spells':
-          return [
-            { title: 'Casting Time', data: data.casting_time },
-            { title: 'Duration', data: data.duration },
-            { title: 'Range', data: data.range },
-            { title: 'Components', data: data.components },
-          ];
-        case 'magicitems':
-          return [
-            {
-              data: `${data.type}, ${data.rarity} ${
-                data.requires_attunement && '(requires attunement)'
-              }`,
-            },
-          ];
-        case 'monsters':
-          return [
-            { data: `CR ${data.challenge_rating} ${data.type} (${data.size})` },
-          ];
-        default:
-          return [];
-      }
-    },
-  },
-};
+const subtitle = computed(() => {
+  console.log(props.category);
+  const data = props.content;
+  switch (props.category) {
+    case 'spells':
+      return `${data.level} ${data.school} Spell`;
+    case 'monsters':
+      return 'Monster';
+    case 'magicitems':
+      return 'Magic Item';
+    case 'conditions':
+      return 'Condition';
+    case 'feats':
+      return 'Feat';
+    case 'sections':
+    case 'characters':
+    case 'combat':
+    case 'equipment':
+    case 'gameplay-mechanics':
+    case 'running':
+      return data.parent;
+    default:
+      return props.category.charAt(0).toUpperCase() + props.category.slice(1);
+  }
+});
+
+const body = computed(() => {
+  const data = props.content;
+  switch (props.category) {
+    case 'conditions':
+      return [{ data: data.desc }];
+    case 'spells':
+      return [
+        { title: 'Casting Time', data: data.casting_time },
+        { title: 'Duration', data: data.duration },
+        { title: 'Range', data: data.range },
+        { title: 'Components', data: data.components },
+      ];
+    case 'magicitems':
+      return [
+        {
+          data: `${data.type}, ${data.rarity} ${
+            data.requires_attunement && '(requires attunement)'
+          }`,
+        },
+      ];
+    case 'monsters':
+      return [
+        { data: `CR ${data.challenge_rating} ${data.type} (${data.size})` },
+      ];
+    default:
+      return [];
+  }
+});
 </script>
 
 <style></style>

@@ -17,62 +17,55 @@
   <span v-else class="italic"><slot /></span>
 </template>
 
-<script>
+<script setup>
 import axios from 'axios';
-export default {
-  props: { src: { type: String, default: '' } },
 
-  data() {
+defineProps({ src: { type: String, default: '' } });
+
+const loading = ref(false);
+const content = ref(undefined);
+const acceptibleTypes = ref(Object.keys(paramsByType));
+const category = ref(
+  props.src.split('/').filter((crumb) => !['v1', 'v2'].includes(crumb))[0]
+);
+const slug = ref(
+  props.src.split('/').filter((crumb) => !['v1', 'v2'].includes(crumb))[1]
+);
+
+const url = computed(() => {
+  const apiURL = useRuntimeConfig().public.apiUrl;
+  const { altFrontEndSubroute, apiEndpoint } = paramsByType[category.value];
+
+  // make sure that category has a recognised endpoint
+  if (!apiEndpoint) {
+    return { linkTarget: '/' };
+  }
+
+  // FE uses section's parent for routing. Update url once data is fetched
+  if (content.value && category.value === 'sections') {
+    const subroute = content.value.parent.split(' ').join('-').toLowerCase();
     return {
-      loading: false,
-      content: undefined,
-      acceptibleTypes: Object.keys(paramsByType),
-      category: this.src
-        .split('/')
-        .filter((crumb) => !['v1', 'v2'].includes(crumb))[0],
-      slug: this.src
-        .split('/')
-        .filter((crumb) => !['v1', 'v2'].includes(crumb))[1],
+      linkTarget: `/${subroute}/${slug.value}`,
+      apiEndpoint: `${apiURL}/sections/${slug.value}`,
     };
-  },
-  computed: {
-    url() {
-      const apiURL = this.$nuxt.$config.public.apiUrl;
-      const { altFrontEndSubroute, apiEndpoint } = paramsByType[this.category];
+  }
+  // the url on the front end site might be different to its API endpoint
+  return {
+    linkTarget: `/${altFrontEndSubroute ?? apiEndpoint}/${slug.value}`,
+    apiEndpoint: `${apiURL}/${apiEndpoint}/${slug.value}`,
+  };
+});
 
-      // make sure that category has a recognised endpoint
-      if (!apiEndpoint) {
-        return { linkTarget: '/' };
-      }
-
-      // FE uses section's parent for routing. Update url once data is fetched
-      if (this.content && this.category === 'sections') {
-        const subroute = this.content.parent.split(' ').join('-').toLowerCase();
-        return {
-          linkTarget: `/${subroute}/${this.slug}`,
-          apiEndpoint: `${apiURL}/sections/${this.slug}`,
-        };
-      }
-      // the url on the front end site might be different to its API endpoint
-      return {
-        linkTarget: `/${altFrontEndSubroute ?? apiEndpoint}/${this.slug}`,
-        apiEndpoint: `${apiURL}${apiEndpoint}/${this.slug}`,
-      };
-    },
-  },
-  methods: {
-    loadData: async function () {
-      // guard clause so that data is only fetched on initial hover
-      if (this.loading || this.content) {
-        return;
-      }
-      this.loading = true;
-      const { queryParams } = paramsByType[this.category];
-      const res = await axios.get(`${this.url.apiEndpoint}/${queryParams}`);
-      this.content = res.data;
-    },
-  },
-};
+async function loadData() {
+  // guard clause so that data is only fetched on initial hover
+  if (loading.value || content.value) {
+    return;
+  }
+  loading.value = true;
+  const { queryParams } = paramsByType[category.value];
+  const res = await axios.get(`${url.value.apiEndpoint}/${queryParams}`);
+  content.value = res.data;
+}
 
 // Maps tag names from markdown to data required to show links/previews
 const defaultQueryParams = '?fields=name,document__title,';

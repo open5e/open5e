@@ -35,27 +35,25 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  props: {
-    listLength: { type: Number, default: 0 },
-    listWording: { type: String, default: '' },
-    pageCount: { type: Number, default: 0 },
-    pageNumber: { type: Number, default: 0 },
-  },
-  methods: {
-    firstPage() {
-      this.$emit('first');
-    },
-    lastPage() {
-      this.$emit('last');
-    },
-    nextPage() {
-      this.$emit('next');
-    },
-    prevPage() {
-      this.$emit('prev');
-    },
-  },
-};
+<script setup>
+defineProps({
+  listLength: { type: Number, default: 0 },
+  listWording: { type: String, default: '' },
+  pageCount: { type: Number, default: 0 },
+  pageNumber: { type: Number, default: 0 },
+});
+const emit = defineEmits(['first', 'last', 'next', 'prev']);
+
+function firstPage() {
+  emit('first');
+}
+function lastPage() {
+  emit('last');
+}
+function nextPage() {
+  emit('next');
+}
+function prevPage() {
+  emit('prev');
+}
 </script>

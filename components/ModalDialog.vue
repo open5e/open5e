@@ -50,33 +50,28 @@
   </TransitionRoot>
 </template>
 
-<script>
-export default {
-  props: {
-    open: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  emits: ['close', 'update:open'],
-  methods: {
-    closeModal() {
-      this.$emit('update:open', false); // emits an 'update:open' event to the parent component
-    },
-  },
-};
-</script>
-
 <script setup>
 import { useSlots } from 'vue';
-import { ref } from 'vue';
 import {
   Dialog,
   DialogPanel,
-  DialogTitle,
   TransitionChild,
   TransitionRoot,
 } from '@headlessui/vue';
 
 const slots = useSlots();
+import { defineProps, defineEmits } from 'vue';
+
+const props = defineProps({
+  open: {
+    type: Boolean,
+    default: false,
+  },
+});
+
+const emits = defineEmits(['close', 'update:open']);
+
+const closeModal = () => {
+  emits('update:open', false);
+};
 </script>
