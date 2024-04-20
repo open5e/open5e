@@ -11,21 +11,15 @@
   </main>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      available_classes: [
-        'Bard',
-        'Cleric',
-        'Sorcerer',
-        'Wizard',
-        'Druid',
-        'Paladin',
-        'Warlock',
-      ],
-    };
-  },
-};
+<script setup>
+const available_classes = ref([
+  'Bard',
+  'Cleric',
+  'Sorcerer',
+  'Wizard',
+  'Druid',
+  'Paladin',
+  'Warlock',
+]);
 </script>
 <style></style>

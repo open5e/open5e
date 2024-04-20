@@ -131,14 +131,6 @@
   </section>
 </template>
 
-<script>
-export default {
-  data: function () {
-    return {
-      file: useRoute().path,
-    };
-  },
-};
-</script>
+<script setup></script>
 
 <style></style>

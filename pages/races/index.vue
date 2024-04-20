@@ -27,20 +27,11 @@
   </section>
 </template>
 
-<script>
+<script setup>
 import { useMainStore } from '../../store/index';
-
-export default {
-  setup() {
-    const store = useMainStore();
-    store.loadRaces();
-    return { store };
-  },
-
-  computed: {
-    races: function () {
-      return [...this.store.races];
-    },
-  },
-};
+const store = useMainStore();
+store.loadRaces();
+const races = computed(() => {
+  return store.races;
+});
 </script>

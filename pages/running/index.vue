@@ -26,28 +26,21 @@
   </section>
 </template>
 
-<script>
+<script setup>
 import { useMainStore } from '~/store';
+const store = useMainStore();
 
-Array.prototype.groupBy = function (prop) {
-  return this.reduce(function (groups, item) {
+function groupBy(arr, prop) {
+  return arr.reduce(function (groups, item) {
     const val = item[prop];
     groups[val] = groups[val] || [];
     groups[val].push(item);
     return groups;
   }, {});
-};
+}
 
-export default {
-  setup() {
-    const store = useMainStore();
-    return { store };
-  },
-  computed: {
-    sectionGroups: function () {
-      let groupedSections = this.store.allSections.groupBy('parent');
-      return groupedSections;
-    },
-  },
-};
+const sectionGroups = computed(() => {
+  let groupedSections = groupBy(store.allSections, 'parent');
+  return groupedSections;
+});
 </script>

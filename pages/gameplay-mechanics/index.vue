@@ -22,18 +22,11 @@
   </section>
 </template>
 
-<script>
+<script setup>
 import { useMainStore } from '~/store';
+const store = useMainStore();
 
-export default {
-  setup() {
-    const store = useMainStore();
-    return { store };
-  },
-  computed: {
-    sections: function () {
-      return this.store.allMechanicsSections;
-    },
-  },
-};
+const sections = computed(() => {
+  return store.allMechanicsSections;
+});
 </script>

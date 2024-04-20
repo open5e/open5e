@@ -30,25 +30,14 @@
   </section>
 </template>
 
-<script>
+<script setup>
 import { useMainStore } from '~/store';
 import SourceTag from '~/components/SourceTag.vue';
+const store = useMainStore();
 
-export default {
-  components: { SourceTag },
-  setup() {
-    const store = useMainStore();
-    return { store };
-  },
+const backgrounds = computed(() => store.allBackgrounds);
 
-  computed: {
-    backgrounds: function () {
-      return this.store.allBackgrounds;
-    },
-  },
-
-  beforeMount() {
-    this.store.loadBackgrounds();
-  },
-};
+onBeforeMount(() => {
+  store.loadBackgrounds();
+});
 </script>

@@ -19,25 +19,18 @@
   </section>
 </template>
 
-<script>
+<script setup>
 import axios from 'axios';
 import SourceTag from '~/components/SourceTag.vue';
-export default {
-  components: { SourceTag },
-  data() {
-    return {
-      feats: [],
-    };
-  },
 
-  mounted() {
-    const url = `${useRuntimeConfig().public.apiUrl}/feats/`;
-    //you will need to enable CORS to make this work
-    return axios.get(url).then((response) => {
-      this.feats = response.data.results;
-    });
-  },
-};
+const feats = ref([]);
+
+onMounted(async () => {
+  const url = `${useRuntimeConfig().public.apiUrl}/feats/`;
+  //you will need to enable CORS to make this work
+  const response = await axios.get(url);
+  feats.value = response.data.results;
+});
 </script>
 
 <style></style>

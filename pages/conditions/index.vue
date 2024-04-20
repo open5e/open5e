@@ -13,22 +13,14 @@
   </section>
 </template>
 
-<script>
+<script setup>
 import { useMainStore } from '../../store/index';
+const store = useMainStore();
+store.loadConditions();
 
-export default {
-  setup() {
-    const store = useMainStore();
-    store.loadConditions();
-    return { store };
-  },
-
-  computed: {
-    conditions: function () {
-      return [...this.store.conditions];
-    },
-  },
-};
+const conditions = computed(() => {
+  return [...store.conditions];
+});
 </script>
 
 <style></style>

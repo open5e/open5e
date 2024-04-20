@@ -114,7 +114,7 @@
   </section>
 </template>
 
-<script>
+<script setup>
 import axios from 'axios';
 import StatBar from '~/components/StatBar';
 import SourceTag from '~/components/SourceTag';
@@ -125,82 +125,74 @@ function sortFunction(a, b) {
   return textA < textB ? -1 : textA > textB ? 1 : 0;
 }
 
-export default {
-  components: {
-    StatBar,
-    SourceTag,
-  },
-  data() {
-    return {
-      results: [],
-      text: this.$route.query.text,
-      loading: true,
-      noValue: true,
-    };
-  },
-  computed: {
-    orderedResults: function () {
-      // Abort early if there is no search term
-      if (!this.text) {
-        return this.results;
-      }
+const results = ref([]);
+const text = ref(useRoute().query.text);
+const loading = ref(true);
+const noValue = ref(true);
+const orderedResults = computed(() => {
+  // Abort early if there is no search term
+  if (!text.value) {
+    return results.value;
+  }
 
-      let tmp = this.results.slice();
-      const term = this.text.toUpperCase();
-      let first = [];
-      let next = [];
-      let others = [];
-      for (var i = 0; i < tmp.length; i++) {
-        if (tmp[i].name.toUpperCase().indexOf(term) == 0) {
-          first.push(tmp[i]);
-        } else if (tmp[i].name.toUpperCase().indexOf(term) != -1) {
-          next.push(tmp[i]);
-        } else {
-          others.push(tmp[i]);
-        }
-      }
+  let tmp = results.value.slice();
+  const term = text.value.toUpperCase();
+  let first = [];
+  let next = [];
+  let others = [];
+  for (var i = 0; i < tmp.length; i++) {
+    if (tmp[i].name.toUpperCase().indexOf(term) == 0) {
+      first.push(tmp[i]);
+    } else if (tmp[i].name.toUpperCase().indexOf(term) != -1) {
+      next.push(tmp[i]);
+    } else {
+      others.push(tmp[i]);
+    }
+  }
 
-      first.sort(function (a, b) {
-        return sortFunction(a, b);
+  first.sort(function (a, b) {
+    return sortFunction(a, b);
+  });
+  next.sort(function (a, b) {
+    return sortFunction(a, b);
+  });
+  others.sort(function (a, b) {
+    return sortFunction(a, b);
+  });
+  return first.concat(next).concat(others);
+});
+
+watch(
+  () => useRoute().query.text,
+  () => {
+    getSearchResults();
+  }
+);
+
+onMounted(() => {
+  getSearchResults();
+});
+
+function getSearchResults() {
+  if (useRoute().query.text == '') {
+    noValue.value = true;
+    loading.value = false;
+    return;
+  } else {
+    loading.value = true;
+    noValue.value = false;
+    return axios
+      .get(
+        `${useRuntimeConfig().public.apiUrl}/search/?text=${
+          useRoute().query.text
+        }`
+      ) //you will need to enable CORS to make this work
+      .then((response) => {
+        results.value = response.data.results;
+        loading.value = false;
       });
-      next.sort(function (a, b) {
-        return sortFunction(a, b);
-      });
-      others.sort(function (a, b) {
-        return sortFunction(a, b);
-      });
-      return first.concat(next).concat(others);
-    },
-  },
-  watch: {
-    '$route.params': function (query) {
-      this.getSearchResults();
-    },
-  },
-  mounted() {
-    this.getSearchResults();
-  },
-  methods: {
-    getSearchResults: function () {
-      if (this.$route.query.text == '') {
-        this.noValue = true;
-        this.loading = false;
-        return;
-      } else {
-        this.loading = true;
-        this.noValue = false;
-        return axios
-          .get(
-            `${this.$nuxt.$config.public.apiUrl}/search/?text=${this.$route.query.text}`
-          ) //you will need to enable CORS to make this work
-          .then((response) => {
-            this.results = response.data.results;
-            this.loading = false;
-          });
-      }
-    },
-  },
-};
+  }
+}
 </script>
 
 <style lang="scss" scoped>
