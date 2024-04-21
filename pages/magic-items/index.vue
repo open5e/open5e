@@ -76,7 +76,7 @@
     </div>
     <!-- END FILTER -->
     <div class="flex w-full italic text-blood">
-      Displaying {{ filteredItems().length }} magic items
+      Displaying {{ filteredItems.length }} magic items
     </div>
     <hr class="color-blood mx-auto" />
     <div class="three-column">
@@ -116,128 +116,105 @@
   </section>
 </template>
 
-<script>
+<script setup>
 import FilterButton from '~/components/FilterButton.vue';
 import SourceTag from '~/components/SourceTag.vue';
 import { useMainStore } from '~/store';
 
-export default {
-  components: {
-    FilterButton,
-    SourceTag,
-  },
-  setup() {
-    const store = useMainStore();
-    return { store };
-  },
-  data() {
-    return {
-      displayFilters: false,
-      // filter: "",
-      filters: {
-        attunement: false,
-        name: null,
-        rarity: null,
-        type: null,
-      },
-      itemRarities: ['Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'],
-      itemTypes: [
-        'Armor',
-        'Potion',
-        'Ring',
-        'Rod',
-        'Scroll',
-        'Staff',
-        'Wand',
-        'Weapon',
-        'Wondrous Item',
-      ],
-    };
-  },
-  computed: {
-    items: function () {
-      return [...this.store.allMagicItems].sort((a, b) =>
-        a.slug.localeCompare(b.slug)
-      );
-    },
-    // a computed getter
-    itemsByLetter: function () {
-      let letters = {};
-      for (let i = 0; i < this.filteredItems().length; i++) {
-        let firstLetter = this.filteredItems()[i].name.charAt(0).toLowerCase();
-        if (!(firstLetter in letters)) {
-          letters[firstLetter] = [];
-        }
-        letters[firstLetter].push(this.filteredItems()[i]);
-      }
-      return letters;
-    },
-    itemListLength: function () {
-      return Object.keys(this.itemsByLetter).length;
-    },
-  },
-  mounted() {
-    this.store.loadMagicItems();
-  },
-  methods: {
-    clearFilters() {
-      this.filters = {
-        attunement: false,
-        name: null,
-        rarity: null,
-        type: null,
-      };
-    },
-    filterByAttunement(itemsToFilter) {
-      if (this.filters.attunement == false) {
-        return itemsToFilter;
-      } else {
-        return itemsToFilter.filter((item) => {
-          return item.requires_attunement == 'requires attunement';
-        });
-      }
-    },
-    filterByName(itemsToFilter) {
-      if (this.filters.name == null) {
-        return itemsToFilter;
-      } else {
-        return itemsToFilter.filter((item) =>
-          item.name.toLowerCase().includes(this.filters.name.toLowerCase())
-        );
-      }
-    },
-    filterByRarity(itemsToFilter) {
-      if (this.filters.rarity == null) {
-        return itemsToFilter;
-      } else {
-        return itemsToFilter.filter(
-          (item) =>
-            item.rarity.toLowerCase() == this.filters.rarity.toLowerCase()
-        );
-      }
-    },
-    filterByType(itemsToFilter) {
-      if (this.filters.type == null) {
-        return itemsToFilter;
-      } else {
-        return itemsToFilter.filter(
-          (item) => item.type.toLowerCase() == this.filters.type.toLowerCase()
-        );
-      }
-    },
-    filteredItems: function () {
-      let allItems = this.items;
-      let nameFiltered = this.filterByName(allItems);
-      let rareFiltered = this.filterByRarity(nameFiltered);
-      let typeFiltered = this.filterByType(rareFiltered);
-      let attuneFiltered = this.filterByAttunement(typeFiltered);
-      return attuneFiltered;
-    },
-    updateSources: function (val) {
-      this.store.setSources(val);
-    },
-  },
-};
+const store = useMainStore();
+const displayFilters = ref(false);
+const filters = reactive({
+  attunement: false,
+  name: null,
+  rarity: null,
+  type: null,
+});
+const itemRarities = ['Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'];
+const itemTypes = [
+  'Armor',
+  'Potion',
+  'Ring',
+  'Rod',
+  'Scroll',
+  'Staff',
+  'Wand',
+  'Weapon',
+  'Wondrous Item',
+];
+const items = computed(() => {
+  return [...store.allMagicItems].sort((a, b) => a.slug.localeCompare(b.slug));
+});
+
+function clearFilters() {
+  filters.attunement = false;
+  filters.name = null;
+  filters.rarity = null;
+  filters.type = null;
+}
+function filterByAttunement(itemsToFilter) {
+  if (filters.attunement == false) {
+    return itemsToFilter;
+  } else {
+    return itemsToFilter.filter((item) => {
+      return item.requires_attunement == 'requires attunement';
+    });
+  }
+}
+function filterByName(itemsToFilter) {
+  if (filters.name == null) {
+    return itemsToFilter;
+  } else {
+    return itemsToFilter.filter((item) =>
+      item.name.toLowerCase().includes(filters.name.toLowerCase())
+    );
+  }
+}
+function filterByRarity(itemsToFilter) {
+  if (filters.rarity == null) {
+    return itemsToFilter;
+  } else {
+    return itemsToFilter.filter(
+      (item) => item.rarity.toLowerCase() == filters.rarity.toLowerCase()
+    );
+  }
+}
+function filterByType(itemsToFilter) {
+  if (filters.type == null) {
+    return itemsToFilter;
+  } else {
+    return itemsToFilter.filter(
+      (item) => item.type.toLowerCase() == filters.type.toLowerCase()
+    );
+  }
+}
+
+const filteredItems = computed(() => {
+  let allItems = items.value;
+  let nameFiltered = filterByName(allItems);
+  let rareFiltered = filterByRarity(nameFiltered);
+  let typeFiltered = filterByType(rareFiltered);
+  let attuneFiltered = filterByAttunement(typeFiltered);
+  return attuneFiltered;
+});
+
+const itemsByLetter = computed(() => {
+  let letters = {};
+  for (let i = 0; i < filteredItems.value.length; i++) {
+    let firstLetter = filteredItems.value[i].name.charAt(0).toLowerCase();
+    if (!(firstLetter in letters)) {
+      letters[firstLetter] = [];
+    }
+    letters[firstLetter].push(filteredItems.value[i]);
+  }
+  return letters;
+});
+const itemListLength = computed(() => {
+  return Object.keys(itemsByLetter.value).length;
+});
+
+onMounted(() => {
+  store.loadMagicItems();
+});
 </script>
 
 <style scoped lang="scss">

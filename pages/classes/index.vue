@@ -13,22 +13,14 @@
   </section>
 </template>
 
-<script>
+<script setup>
 import { useMainStore } from '../../store/index';
+const store = useMainStore();
+store.loadClasses();
 
-export default {
-  setup() {
-    const store = useMainStore();
-    store.loadClasses();
-    return { store };
-  },
-
-  computed: {
-    classes: function () {
-      return [...this.store.classes];
-    },
-  },
-};
+const classes = computed(() => {
+  return [...store.classes];
+});
 </script>
 
 <style></style>
