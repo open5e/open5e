@@ -19,76 +19,83 @@
     <div
       v-for="result in orderedResults"
       v-show="!loading && !noValue"
-      :key="result.slug"
+      :key="result.object_pk"
       class="search-result"
     >
       <!-- Result summary for creatures including mini statblock -->
-      <div v-if="result.route == 'monsters/'" class="result-summary">
+      <div v-if="result.object_model == 'Monster'" class="result-summary">
         <nuxt-link
           tag="a"
-          :params="{ id: result.slug }"
-          :to="`/${result.route}${result.slug}`"
+          :params="{ id: result.object_pk }"
+          :to="`/monsters/${result.object_pk}`"
         >
-          {{ result.name }}
+          {{ result.object_name }}
         </nuxt-link>
-        <span> CR{{ result.challenge_rating }} </span
+        <span> CR{{ result.object.challenge_rating }} </span
         ><span class="title-case">{{ result.type }} | </span>
-        <em>{{ result.hit_points }}hp, AC {{ result.armor_class }}</em>
+        <em
+          >{{ result.object.hit_points }}hp, AC
+          {{ result.object.armor_class }}</em
+        >
         <source-tag
-          v-if="result.document_slug !== 'wotc-srd'"
+          v-if="result.document.key !== 'wotc-srd'"
           class="source-tag"
-          :title="result.document_title"
-          :text="result.document_slug"
+          :title="result.document.name"
+          :text="result.document.key"
         />
         <div>
           <stat-bar
             class="top-border"
             :stats="{
-              str: result.strength,
-              dex: result.dexterity,
-              con: result.constitution,
-              int: result.intelligence,
-              wis: result.wisdom,
-              cha: result.charisma,
+              str: result.object.strength,
+              dex: result.object.dexterity,
+              con: result.object.constitution,
+              int: result.object.intelligence,
+              wis: result.object.wisdom,
+              cha: result.object.charisma,
             }"
           />
         </div>
       </div>
 
       <!-- Result summary for spells including basic spell info -->
-      <div v-else-if="result.route == 'spells/'" class="result-summary">
+      <div v-else-if="result.object_model == 'Spell'" class="result-summary">
         <nuxt-link
           tag="a"
-          :params="{ id: result.slug }"
-          :to="`/${result.route}${result.slug}`"
+          :params="{ id: result.object_pk }"
+          :to="`/spells/${result.object_pk}`"
         >
-          {{ result.name }}
+          {{ result.object_name }}
         </nuxt-link>
-        {{ result.level }} {{ result.school }} spell | {{ result.dnd_class }}
+        {{ result.object.level }} {{ result.object.school }} spell |
+        {{ result.object.dnd_class }}
         <source-tag
-          v-if="result.document_slug !== 'wotc-srd'"
+          v-if="result.document.key !== 'wotc-srd'"
           class="source-tag"
-          :title="result.document_title"
-          :text="result.document_slug"
+          :title="result.document.name"
+          :text="result.document.key"
         />
         <p class="result-highlights" v-html="result.highlighted" />
       </div>
 
       <!-- Result summary for magic items -->
-      <div v-else-if="result.route == 'magicitems/'" class="result-summary">
+      <div
+        v-else-if="result.object_model == 'MagicItem'"
+        class="result-summary"
+      >
         <nuxt-link
           tag="a"
-          :params="{ id: result.slug }"
-          :to="`/magic-items/${result.slug}`"
+          :params="{ id: result.object_pk }"
+          :to="`/magic-items/${result.object_pk}`"
         >
-          {{ result.name }}
+          {{ result.object_name }}
         </nuxt-link>
-        {{ result.type }}, {{ result.rarity }}
+        {{ result.object.type }}, {{ result.object.rarity }}
         <source-tag
-          v-if="result.document_slug !== 'wotc-srd'"
+          v-if="result.document.key !== 'wotc-srd'"
           class="source-tag"
-          :title="result.document_title"
-          :text="result.document_slug"
+          :title="result.document.name"
+          :text="result.document.key"
         />
         <p class="result-highlights" v-html="result.highlighted" />
       </div>
@@ -97,16 +104,16 @@
       <div v-else class="result-summary">
         <nuxt-link
           tag="a"
-          :params="{ id: result.slug }"
-          :to="`/${result.route}${result.slug}`"
+          :params="{ id: result.object_pk }"
+          :to="`/${getRoute(result.object_model)}/${result.object_pk}`"
         >
-          {{ result.name }}
+          {{ result.object_name }}
         </nuxt-link>
         <source-tag
-          v-if="result.document_slug !== 'wotc-srd'"
+          v-if="result.document.key !== 'wotc-srd'"
           class="source-tag"
-          :title="result.document_title"
-          :text="result.document_slug"
+          :title="result.document.name"
+          :text="result.document.key"
         />
         <p class="result-highlights" v-html="result.highlighted" />
       </div>
@@ -120,9 +127,23 @@ import StatBar from '~/components/StatBar';
 import SourceTag from '~/components/SourceTag';
 
 function sortFunction(a, b) {
-  var textA = a.name.toUpperCase();
-  var textB = b.name.toUpperCase();
+  var textA = a.object_name.toUpperCase();
+  var textB = b.object_name.toUpperCase();
   return textA < textB ? -1 : textA > textB ? 1 : 0;
+}
+
+const ModelToRoute = {
+  Monster: 'monsters',
+  Spell: 'spells',
+  Section: 'sections',
+  MagicItem: 'magic-items',
+  Feat: 'feats',
+  Background: 'backgrounds',
+  Class: 'classes',
+};
+
+function getRoute(model) {
+  return ModelToRoute[model] ?? 'error';
 }
 
 const results = ref([]);
@@ -135,15 +156,16 @@ const orderedResults = computed(() => {
     return results.value;
   }
 
-  let tmp = results.value.slice();
+  let tmp = results.value.filter((result) => result.schema_version === 'v1');
+
   const term = text.value.toUpperCase();
   let first = [];
   let next = [];
   let others = [];
   for (var i = 0; i < tmp.length; i++) {
-    if (tmp[i].name.toUpperCase().indexOf(term) == 0) {
+    if (tmp[i].object_name.toUpperCase().indexOf(term) == 0) {
       first.push(tmp[i]);
-    } else if (tmp[i].name.toUpperCase().indexOf(term) != -1) {
+    } else if (tmp[i].object_name.toUpperCase().indexOf(term) != -1) {
       next.push(tmp[i]);
     } else {
       others.push(tmp[i]);
@@ -183,12 +205,16 @@ function getSearchResults() {
     noValue.value = false;
     return axios
       .get(
-        `${useRuntimeConfig().public.apiUrl}/search/?text=${
+        `${useRuntimeConfig().public.apiUrl}/v2/search/?query=${
           useRoute().query.text
         }`
       ) //you will need to enable CORS to make this work
       .then((response) => {
         results.value = response.data.results;
+        loading.value = false;
+      })
+      .catch((error) => {
+        console.error(error);
         loading.value = false;
       });
   }
