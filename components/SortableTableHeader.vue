@@ -14,24 +14,23 @@
   </th>
 </template>
 
-<script>
-export default {
-  props: {
-    currentSortDir: {
-      type: String,
-      default: null,
-    },
+<script setup>
+import { computed, defineEmits } from 'vue';
+
+const emit = defineEmits(['sort']);
+
+const props = defineProps({
+  currentSortDir: {
+    type: String,
+    default: null,
   },
-  computed: {
-    isAscending() {
-      return this.currentSortDir === 'ascending';
-    },
-  },
-  methods: {
-    onClick() {
-      this.$emit('sort', this.isAscending ? 'descending' : 'ascending');
-    },
-  },
+});
+
+const isAscending = computed(() => props.currentSortDir === 'ascending');
+
+const onClick = () => {
+  const newSortDir = isAscending.value ? 'descending' : 'ascending';
+  emit('sort', newSortDir);
 };
 </script>
 

@@ -11,21 +11,19 @@
   </nuxt-link>
 </template>
 
-<script>
-export default {
-  props: {
-    to: {
-      type: String,
-      default: '',
-    },
-    title: {
-      type: String,
-      default: '',
-    },
-    indent: {
-      type: Boolean,
-      default: false,
-    },
+<script setup>
+defineProps({
+  to: {
+    type: String,
+    default: '',
   },
-};
+  title: {
+    type: String,
+    default: '',
+  },
+  indent: {
+    type: Boolean,
+    default: false,
+  },
+});
 </script>
