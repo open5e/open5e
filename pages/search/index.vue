@@ -137,6 +137,8 @@ const ModelToRoute = {
   Spell: 'spells',
   Race: 'races',
   Section: 'sections',
+  // gameplay-mechanics redirect don't work, known issue
+  // running redirect don't work, due to parent being 'Rules' rather than 'Running'
   MagicItem: 'magic-items',
   Feat: 'feats',
   Background: 'backgrounds',
