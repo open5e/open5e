@@ -135,11 +135,12 @@ function sortFunction(a, b) {
 const ModelToRoute = {
   Monster: 'monsters',
   Spell: 'spells',
+  Race: 'races',
   Section: 'sections',
   MagicItem: 'magic-items',
   Feat: 'feats',
   Background: 'backgrounds',
-  Class: 'classes',
+  CharClass: 'classes',
 };
 
 function getRoute(model) {
@@ -156,6 +157,7 @@ const orderedResults = computed(() => {
     return results.value;
   }
 
+  // Filter out v2 results because the site does not support it yet
   let tmp = results.value.filter((result) => result.schema_version === 'v1');
 
   const term = text.value.toUpperCase();
