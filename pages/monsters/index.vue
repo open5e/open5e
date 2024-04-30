@@ -152,7 +152,7 @@
             >
             <sortable-table-header
               :current-sort-dir="ariaSort.challenge_rating"
-              @sort="(dir) => sort('challenge_rating', dir)"
+              @sort="(dir) => sort('cr', dir)"
               >CR</sortable-table-header
             >
             <sortable-table-header
@@ -369,7 +369,7 @@ const ariaSort = computed(() => {
   return {
     name: getAriaSort('name'),
     type: getAriaSort('type'),
-    challenge_rating: getAriaSort('challenge_rating'),
+    challenge_rating: getAriaSort('cr'),
     size: getAriaSort('size'),
     hit_points: getAriaSort('hit_points'),
   };

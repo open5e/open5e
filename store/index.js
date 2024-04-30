@@ -42,6 +42,7 @@ const monsterFields = [
   'slug',
   'name',
   'challenge_rating',
+  'cr',
   'type',
   'size',
   'hit_points',
