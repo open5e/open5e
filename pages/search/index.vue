@@ -137,8 +137,6 @@ const ModelToRoute = {
   Spell: 'spells',
   Race: 'races',
   Section: 'sections',
-  // gameplay-mechanics redirect don't work, known issue
-  // running redirect don't work, due to parent being 'Rules' rather than 'Running'
   MagicItem: 'magic-items',
   Feat: 'feats',
   Background: 'backgrounds',
@@ -159,20 +157,17 @@ const orderedResults = computed(() => {
     return results.value;
   }
 
-  // Filter out v2 results because the site does not support it yet
-  let tmp = results.value.filter((result) => result.schema_version === 'v1');
-
   const term = text.value.toUpperCase();
   let first = [];
   let next = [];
   let others = [];
-  for (var i = 0; i < tmp.length; i++) {
-    if (tmp[i].object_name.toUpperCase().indexOf(term) == 0) {
-      first.push(tmp[i]);
-    } else if (tmp[i].object_name.toUpperCase().indexOf(term) != -1) {
-      next.push(tmp[i]);
+  for (var i = 0; i < results.value.length; i++) {
+    if (results.value[i].object_name.toUpperCase().indexOf(term) == 0) {
+      first.push(results.value[i]);
+    } else if (results.value[i].object_name.toUpperCase().indexOf(term) != -1) {
+      next.push(results.value[i]);
     } else {
-      others.push(tmp[i]);
+      others.push(results.value[i]);
     }
   }
 
@@ -209,7 +204,7 @@ function getSearchResults() {
     noValue.value = false;
     return axios
       .get(
-        `${useRuntimeConfig().public.apiUrl}/v2/search/?query=${
+        `${useRuntimeConfig().public.apiUrl}/v2/search/?schema=v1&query=${
           useRoute().query.text
         }`
       ) //you will need to enable CORS to make this work
