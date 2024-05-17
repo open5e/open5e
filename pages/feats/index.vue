@@ -19,21 +19,16 @@
   </section>
 </template>
 
-<script>
-import { useMainStore } from '~/store';
+<script setup>
+import axios from 'axios';
+import SourceTag from '~/components/SourceTag.vue';
 
-export default {
-  setup() {
-    const store = useMainStore();
-    return { store };
-  },
-  computed: {
-    feats: function () {
-      return this.store.allFeats;
-    },
-  },
-  beforeMount() {
-    this.store.loadFeats();
-  },
-};
+const feats = ref([]);
+
+onMounted(async () => {
+  const url = `${useRuntimeConfig().public.apiUrl}/feats/`;
+  //you will need to enable CORS to make this work
+  const response = await axios.get(url);
+  feats.value = response.data.results;
+});
 </script>

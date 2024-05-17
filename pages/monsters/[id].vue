@@ -102,8 +102,7 @@
             {{ formatMod(ability.save) }}
           </span>
         </li>
-
-        <li v-if="monster.skills.length">
+        <li v-if="monster.skills">
           <span class="font-bold after:content-['_']">Skills</span>
 
           <span
@@ -184,7 +183,7 @@
 
     <!-- Monster Bonus Actions -->
     <section v-if="monster.bonus_actions">
-      <h2>Actions</h2>
+      <h2>Bonus Actions</h2>
       <ul>
         <li
           v-for="action in monster.bonus_actions"

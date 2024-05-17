@@ -10,15 +10,9 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {};
-  },
-  methods: {
-    showFilters() {
-      this.$emit('showFilters');
-    },
-  },
-};
+<script setup>
+const emit = defineEmits(['showFilters']);
+function showFilters() {
+  emit('showFilters');
+}
 </script>

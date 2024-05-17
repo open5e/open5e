@@ -30,7 +30,7 @@
                 <div class="ml-3 text-sm leading-6">
                   <label
                     :for="document.slug"
-                    class="font-medium text-gray-900"
+                    class="font-medium text-gray-900 dark:text-white"
                     >{{ document.title }}</label
                   >
                   <SourceTag
@@ -64,69 +64,55 @@
   </ModalDialog>
 </template>
 
-<script>
+<script setup>
 import { useMainStore } from '~/store';
 import SourceTag from '~/components/SourceTag.vue';
 
-export default {
-  data() {
-    return {
-      selectedSources: [],
-      open: false,
-    };
-  },
-  computed: {
-    store() {
-      return useMainStore();
-    },
-    sourceSelection: function () {
-      return this.store.sourceSelection;
-    },
-    documents: function () {
-      return this.store.documents;
-    },
-    groupedDocuments: function () {
-      return this.documents.reduce((grouped, document) => {
-        (grouped[document.organization] =
-          grouped[document.organization] || []).push(document);
-        return grouped;
-      }, {});
-    },
-    selectedSourcesComputed: {
-      get: function () {
-        return this.selectedSources;
-      },
-      set: function (newValue) {
-        this.selectedSources = newValue;
-      },
-    },
-  },
-  watch: {
-    'store.sourceSelection': function (newVal) {
-      this.selectedSources = [...newVal];
-    },
-  },
-  created() {
-    this.searchText = this.$route.query.text;
-    this.selectedSources = this.store.sourceSelection;
-  },
-  methods: {
-    closeModal() {
-      this.$emit('close'); // emits a 'close' event to the parent component
-      setTimeout(() => {
-        this.selectedSources = this.store.sourceSelection;
-      }, 300);
-    },
-    saveSelection() {
-      this.store.setSources(this.selectedSources);
-      this.closeModal();
-    },
-  },
-};
-</script>
+const emit = defineEmits(['close']);
 
-<script setup>
-import { ref } from 'vue';
+const selectedSources = ref([]);
+const searchText = ref('');
+const store = computed(() => useMainStore());
 
-const open = ref(true);
+const documents = computed(() => {
+  return store.value.documents;
+});
+const groupedDocuments = computed(() => {
+  return documents.value.reduce((grouped, document) => {
+    (grouped[document.organization] =
+      grouped[document.organization] || []).push(document);
+    return grouped;
+  }, {});
+});
+const selectedSourcesComputed = computed({
+  get: function () {
+    return selectedSources.value;
+  },
+  set: function (newValue) {
+    selectedSources.value = newValue;
+  },
+});
+
+watch(
+  () => store.value.sourceSelection,
+  (newVal) => {
+    selectedSources.value = [...newVal];
+  }
+);
+
+onMounted(() => {
+  searchText.value = useRoute().query.text;
+  selectedSources.value = store.value.sourceSelection;
+});
+
+function closeModal() {
+  emit('close'); // emits a 'close' event to the parent component
+  setTimeout(() => {
+    selectedSources.value = store.value.sourceSelection;
+  }, 300);
+}
+function saveSelection() {
+  store.value.setSources(selectedSources.value);
+  closeModal();
+}
 </script>

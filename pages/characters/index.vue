@@ -25,18 +25,11 @@
   </section>
 </template>
 
-<script>
+<script setup>
 import { useMainStore } from '~/store';
+const store = useMainStore();
 
-export default {
-  setup() {
-    const store = useMainStore();
-    return { store };
-  },
-  computed: {
-    charSections: function () {
-      return this.store.allCharacterSections;
-    },
-  },
-};
+const charSections = computed(() => {
+  return store.allCharacterSections;
+});
 </script>

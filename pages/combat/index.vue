@@ -25,20 +25,12 @@
   </section>
 </template>
 
-<script>
+<script setup>
 import { useMainStore } from '~/store';
-
-export default {
-  setup() {
-    const store = useMainStore();
-    return { store };
-  },
-  computed: {
-    combatSections: function () {
-      return this.store.allCombatSections;
-    },
-  },
-};
+const store = useMainStore();
+const combatSections = computed(() => {
+  return store.allCombatSections;
+});
 </script>
 
 <style></style>
