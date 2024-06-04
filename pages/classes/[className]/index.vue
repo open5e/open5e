@@ -65,8 +65,8 @@
 </template>
 
 <script setup>
-const classData = await useFetchArticle({
-  slug: useRoute().params.className,
-  category: 'classes',
-});
+const { data: classData } = useFindOne(
+  API_ENDPOINTS.classes,
+  useRoute().params.className
+);
 </script>

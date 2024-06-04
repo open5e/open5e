@@ -14,13 +14,7 @@
 </template>
 
 <script setup>
-import { useMainStore } from '../../store/index';
-const store = useMainStore();
-store.loadConditions();
-
-const conditions = computed(() => {
-  return [...store.conditions];
-});
+const { data: conditions } = useFindMany(API_ENDPOINTS.conditions);
 </script>
 
 <style></style>

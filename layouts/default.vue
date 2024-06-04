@@ -22,8 +22,8 @@
           class="cursor-pointer bg-red-600 px-4 py-2 hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
           @click="showModal = true"
         >
-          <span v-if="documents.length">
-            {{ sourceSelection.length }} of {{ documents.length }} sources
+          <span v-if="documents">
+            {{ no_selected_sources }} of {{ no_avilable_sources }} sources
             <Icon
               name="heroicons:pencil-square"
               class="h-5 w-5 text-white"
@@ -114,9 +114,6 @@
 <script setup>
 import { useRoute } from 'nuxt/app';
 import { computed } from 'vue';
-import { useMainStore } from '../store/index';
-
-const main_store = useMainStore();
 
 const spellcastingClasses = [
   { name: 'Spells by Class', slug: 'by-class' },
@@ -188,24 +185,36 @@ watch($route, () => {
 });
 
 const showModal = ref(false);
+const { sources } = useSourcesList();
 
-const documents = computed(() => main_store.documents);
-const sourceSelection = computed(() => main_store.sourceSelection);
-const isLoadingData = computed(() => main_store.isLoadingData);
+const no_selected_sources = computed(() => sources.value.length);
+const { data: documents } = useDocuments();
+const { data: classes } = useFindMany(API_ENDPOINTS.classes);
+const { data: races } = useFindMany(API_ENDPOINTS.races);
+const { data: combat_sections } = useSections('Combat');
+const { data: equipment_sections } = useSections('Equipment');
+const { data: gameplay_sections } = useSections('Gameplay Mechanics');
+const { data: rules_sections } = useSections('Rules');
+
+const { data: character_sections } = useSections(
+  'Characters',
+  'Character Advancement'
+);
+
+const no_avilable_sources = computed(() => documents.value?.length ?? 0);
+
+const isLoadingData = useIsFetching();
 
 const routes = computed(() => [
   {
     title: 'Characters',
     route: '/characters',
-    subroutes: main_store.sections.filter(
-      (page) =>
-        page.parent === 'Characters' || page.parent === 'Character Advancement'
-    ),
+    subroutes: character_sections.value ?? [],
   },
   {
     title: 'Classes',
     route: '/classes',
-    subroutes: main_store.classes,
+    subroutes: classes.value ?? [],
   },
   {
     title: 'Conditions',
@@ -214,7 +223,7 @@ const routes = computed(() => [
   {
     title: 'Races',
     route: '/races',
-    subroutes: main_store.races,
+    subroutes: races.value ?? [],
   },
   {
     title: 'Backgrounds',
@@ -227,14 +236,12 @@ const routes = computed(() => [
   {
     title: 'Combat',
     route: '/combat',
-    subroutes: main_store.sections.filter((page) => page.parent === 'Combat'),
+    subroutes: combat_sections.value ?? [],
   },
   {
     title: 'Equipment',
     route: '/equipment',
-    subroutes: main_store.sections.filter(
-      (page) => page.parent === 'Equipment'
-    ),
+    subroutes: equipment_sections.value ?? [],
   },
   {
     title: 'Magic Items',
@@ -252,27 +259,18 @@ const routes = computed(() => [
   {
     title: 'Gameplay Mechanics',
     route: '/gameplay-mechanics',
-    subroutes: main_store.sections.filter(
-      (page) => page.parent === 'Gameplay Mechanics'
-    ),
+    subroutes: gameplay_sections.value ?? [],
   },
   {
     title: 'Running a Game',
     route: '/running',
-    subroutes: main_store.sections.filter((page) => page.parent === 'Rules'),
+    subroutes: rules_sections.value ?? [],
   },
   {
     title: 'API Docs',
     route: '/api-docs',
   },
 ]);
-
-onMounted(() => {
-  main_store.loadClasses();
-  main_store.loadSections();
-  main_store.loadRaces();
-  main_store.initializeSources();
-});
 
 const $router = useRouter();
 

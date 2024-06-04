@@ -3,7 +3,7 @@
     <h1>{{ spell.name }}</h1>
     <p>
       <span class="italic">{{ `${spell.level} ${spell.school}` }}</span>
-      <span v-if="isRitual"> (ritual)</span>
+      <span v-if="spell.ritual === 'yes'"> (ritual)</span>
       <span> | {{ spell.dnd_class }} </span>
       <source-tag
         v-show="spell.document__slug"
@@ -17,7 +17,7 @@
     </p>
     <p>
       <label class="font-bold">Duration: </label>
-      <span v-if="requiresConcentration"
+      <span v-if="spell.concentration === 'yes'"
         >Concentration, up to {{ spell.duration }}</span
       >
       <span v-else>{{ spell.duration }}</span>
@@ -47,11 +47,5 @@
 </template>
 
 <script setup>
-const spell = await useFetchArticle({
-  slug: useRoute().params.id,
-  category: 'spells',
-});
-// convert text fields to bools
-const isRitual = spell.ritual === 'yes';
-const requiresConcentration = spell.concentration === 'yes';
+const { data: spell } = useFindOne(API_ENDPOINTS.spells, useRoute().params.id);
 </script>

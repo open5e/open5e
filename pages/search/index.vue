@@ -2,23 +2,23 @@
   <section class="docs-container container">
     <h1>Search results</h1>
     <hr />
-    <h3 v-if="loading" class="font-sans font-bold text-slate-400">
+    <h3 v-if="!search_results" class="font-sans font-bold text-slate-400">
       Searching Open5e...
     </h3>
-    <h3 v-else-if="noValue" class="font-sans font-bold text-slate-400">
+    <h3 v-else-if="!searchText" class="font-sans font-bold text-slate-400">
       <Icon name="majesticons:search-line" class="mr-2 h-8 w-8" />
       Search for something to see results...
     </h3>
     <h3
-      v-else-if="orderedResults.length == 0"
+      v-if="search_results && search_results.length == 0"
       class="font-sans font-bold text-slate-400"
     >
       <Icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
       No results
     </h3>
     <div
-      v-for="result in orderedResults"
-      v-show="!loading && !noValue"
+      v-if="search_results"
+      v-for="result in search_results"
       :key="result.object_pk"
       class="search-result"
     >
@@ -122,15 +122,9 @@
 </template>
 
 <script setup>
-import axios from 'axios';
 import StatBar from '~/components/StatBar';
 import SourceTag from '~/components/SourceTag';
-
-function sortFunction(a, b) {
-  var textA = a.object_name.toUpperCase();
-  var textB = b.object_name.toUpperCase();
-  return textA < textB ? -1 : textA > textB ? 1 : 0;
-}
+import { useSearch } from '~/composables/useAPI';
 
 const ModelToRoute = {
   Monster: 'monsters',
@@ -147,77 +141,8 @@ function getRoute(model) {
   return ModelToRoute[model] ?? 'error';
 }
 
-const results = ref([]);
-const text = ref(useRoute().query.text);
-const loading = ref(true);
-const noValue = ref(true);
-const orderedResults = computed(() => {
-  // Abort early if there is no search term
-  if (!text.value) {
-    return results.value;
-  }
-
-  const term = text.value.toUpperCase();
-  let first = [];
-  let next = [];
-  let others = [];
-  for (var i = 0; i < results.value.length; i++) {
-    if (results.value[i].object_name.toUpperCase().indexOf(term) == 0) {
-      first.push(results.value[i]);
-    } else if (results.value[i].object_name.toUpperCase().indexOf(term) != -1) {
-      next.push(results.value[i]);
-    } else {
-      others.push(results.value[i]);
-    }
-  }
-
-  first.sort(function (a, b) {
-    return sortFunction(a, b);
-  });
-  next.sort(function (a, b) {
-    return sortFunction(a, b);
-  });
-  others.sort(function (a, b) {
-    return sortFunction(a, b);
-  });
-  return first.concat(next).concat(others);
-});
-
-watch(
-  () => useRoute().query.text,
-  () => {
-    getSearchResults();
-  }
-);
-
-onMounted(() => {
-  getSearchResults();
-});
-
-function getSearchResults() {
-  if (useRoute().query.text == '') {
-    noValue.value = true;
-    loading.value = false;
-    return;
-  } else {
-    loading.value = true;
-    noValue.value = false;
-    return axios
-      .get(
-        `${useRuntimeConfig().public.apiUrl}/v2/search/?schema=v1&query=${
-          useRoute().query.text
-        }`
-      ) //you will need to enable CORS to make this work
-      .then((response) => {
-        results.value = response.data.results;
-        loading.value = false;
-      })
-      .catch((error) => {
-        console.error(error);
-        loading.value = false;
-      });
-  }
-}
+const searchText = useQueryParam('text');
+const { data: search_results } = useSearch(searchText);
 </script>
 
 <style lang="scss" scoped>

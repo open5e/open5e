@@ -28,10 +28,5 @@
 </template>
 
 <script setup>
-import { useMainStore } from '../../store/index';
-const store = useMainStore();
-store.loadRaces();
-const races = computed(() => {
-  return store.races;
-});
+const { data: races } = useFindMany(API_ENDPOINTS.races);
 </script>
