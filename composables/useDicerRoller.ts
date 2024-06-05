@@ -8,35 +8,29 @@ export function useDiceRoller(signature: string) {
   );
 
   // add up the results and add the modifier
-  const result =
-    rolls.reduce((accumulator, current) => accumulator + current) + modifier;
+  const result = rolls.reduce((total, roll) => total + roll) + modifier;
   console.log(result);
   return { signature, rolls, result };
 }
 
 function parseDice(input: string) {
-  // remove all spaces from input
-  const inputNoSpaces = input.split(' ').join();
+  const pattern = /(\d*)[dD](\d+)\s*([+-]\s*\d+)?|^([+-]?\d+)(?: to hit)?$/;
 
-  // def. regex pattern for dice signature, ie. 1d20+5
-  const patternDiceAndMod = /(\d*)d(\d+)\s*([+-]\s*\d+)?/;
-  const matchesDiceAndMod = inputNoSpaces.match(patternDiceAndMod);
+  // groups 1-3 handle values in full dice sig. ie. 1d20+4, group 4 captures solo mod ie. +5
+  const matches = input.match(pattern);
+  if (!matches) return;
 
-  // if we find a match, extract dice no., dice size, and mod.
-  if (matchesDiceAndMod) {
-    const number = matchesDiceAndMod[0] ? parseInt(matchesDiceAndMod[0]) : 1;
-    const dice = parseInt(matchesDiceAndMod[2]);
-    const modifier = parseInt(matchesDiceAndMod[3]);
-    return [number, dice, modifier];
+  // groups 1-3 capture num/size/mod from dice sigs. in the form 1d20+4
+  if (matches[2]) {
+    const number = parseInt(matches[1] ?? 1);
+    const size = parseInt(matches[2] ?? 20);
+    const modifier = parseInt(matches[3] ?? 0);
+    return [number, size, modifier];
   }
 
-  // if we don't find a match, check whether input is just a modifier, ie. -5
-  const patternModifierOnly = /^([+-]\d+)$/;
-  const modifierOnlyMatch = inputNoSpaces.match(patternModifierOnly);
-  if (modifierOnlyMatch) {
-    const number = 1;
-    const dice = 20;
-    const modifier = parseInt(modifierOnlyMatch[1]);
-    return [number, dice, modifier];
+  // group 4 captures the modifier from +5 or +3 to hit
+  if (matches[4]) {
+    const modifier = parseInt(matches[4]);
+    return [1, 20, modifier];
   }
 }
