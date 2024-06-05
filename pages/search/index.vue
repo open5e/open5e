@@ -124,7 +124,6 @@
 <script setup>
 import StatBar from '~/components/StatBar';
 import SourceTag from '~/components/SourceTag';
-import { useSearch } from '~/composables/useAPI';
 
 const ModelToRoute = {
   Monster: 'monsters',
