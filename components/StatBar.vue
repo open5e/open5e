@@ -4,7 +4,7 @@
       v-for="(stat, key) in stats"
       :key="key"
       class="mr-4 flex flex-col items-center"
-      @click="useDiceRoller(stat)"
+      @click="useDiceRoller(useFormatModifier(stat, 'score'))"
     >
       <span class="font-bold capitalize">{{ key }}</span>
       <span>{{ stat }} ({{ useFormatModifier(stat, 'score') }}) </span>

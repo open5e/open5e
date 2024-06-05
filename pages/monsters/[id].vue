@@ -77,7 +77,11 @@
     <!-- ABILITY SCORES -->
     <section class="max-w-96">
       <ul class="flex items-center gap-4 text-center">
-        <li v-for="ability in abilities" :key="ability.name">
+        <li
+          v-for="ability in abilities"
+          :key="ability.name"
+          @click="useDiceRoller(ability.modifier)"
+        >
           <span class="block font-bold uppercase">{{ ability.shortName }}</span>
           {{ `${ability.score} (${ability.modifier})` }}
         </li>
@@ -298,7 +302,6 @@ const monster = await useFetchArticle({
 });
 
 // Helper functions
-const calcMod = (score) => Math.floor((score - 10) / 2);
 const formatMod = (mod) => (mod >= 0 ? '+' + mod.toString() : mod.toString());
 
 function uppercaseFirstLetter(string) {
@@ -317,7 +320,7 @@ const abilities = [
   name: ability,
   shortName: ability.slice(0, 3),
   score: monster[ability],
-  modifier: formatMod(calcMod(monster[ability])),
+  modifier: useFormatModifier(monster[ability], 'score'),
   save: monster[`${ability}_save`],
 }));
 
