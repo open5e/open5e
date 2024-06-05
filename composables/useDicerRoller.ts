@@ -10,6 +10,7 @@ export function useDiceRoller(signature: string) {
   // add up the results and add the modifier
   const result =
     rolls.reduce((accumulator, current) => accumulator + current) + modifier;
+  console.log(result);
   return { signature, rolls, result };
 }
 
