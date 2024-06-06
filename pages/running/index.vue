@@ -11,7 +11,7 @@
       </ul>
     </div>
     <div
-      v-else-if="sections.length == 0"
+      v-if="sections && sections.length == 0"
       class="flex w-full flex-wrap pt-2 text-lg"
     >
       <div class="flex w-full">
