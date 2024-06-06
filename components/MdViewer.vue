@@ -8,7 +8,7 @@
       vueTemplate: true,
     }"
     :markdown="mdText"
-    :extensions="insertCrossLinks"
+    :extensions="extensions"
     :class="inline ? 'markdown-inline' : ''"
   />
 </template>
@@ -22,6 +22,7 @@ const props = defineProps({
   text: { type: String, default: 'loading...' },
   headerLevel: { type: Number, default: 1 },
   inline: { type: Boolean, default: false },
+  useRoller: { type: Boolean, default: false },
 });
 
 const sourceText = ref('');
@@ -30,13 +31,26 @@ const el = ref(null);
 const mdText = computed(() => {
   return sourceText.value ? sourceText.value : props.text;
 });
-const insertCrossLinks = computed(() => [
-  {
-    type: 'output',
-    regex: /<open5e-link src=([^>]+)>([^<]+)<\/open5e-link>/g,
-    replace: '<cross-link src="$1">$2</cross-link>',
-  },
-]);
+
+const crossLinkExtension = {
+  type: 'output',
+  regex: /<open5e-link src=([^>]+)>([^<]+)<\/open5e-link>/g,
+  replace: '<cross-link src="$1">$2</cross-link>',
+};
+
+const diceRollerExtension = {
+  type: 'output',
+  regex: /(\+\d+ to hit|\d+[dD]\d+( *[+-] *\d+)?)/g,
+  replace: '<inline-roller signature="$1">$1</inline-roller>',
+};
+
+const extensions = computed(() => {
+  const list = [crossLinkExtension];
+  if (props.useRoller) {
+    list.push(diceRollerExtension);
+  }
+  return list;
+});
 
 onMounted(() => {
   if (!props.src) {
