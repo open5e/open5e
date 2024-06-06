@@ -1,7 +1,7 @@
 <template>
   <section class="docs-container container">
     <h1>Backgrounds</h1>
-    <div class="docs-toc" v-if="backgrounds">
+    <div v-if="backgrounds" class="docs-toc">
       <ul>
         <li v-for="background in backgrounds" :key="background.slug">
           <nuxt-link tag="a" :to="`/backgrounds/${background.slug}`">

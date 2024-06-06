@@ -4,12 +4,12 @@
       <h1 class="filter-header">Magic Item List</h1>
       <FilterButton @showFilters="displayFilters = !displayFilters" />
     </div>
-    <MagicItemFilterBox v-model="magic_items_filters" v-if="displayFilters" />
-    <div class="flex w-full italic text-blood" v-if="magic_items">
+    <MagicItemFilterBox v-if="displayFilters" v-model="magic_items_filters" />
+    <div v-if="magic_items" class="flex w-full italic text-blood">
       Displaying {{ magic_items.length }} magic items
     </div>
     <hr class="color-blood mx-auto" />
-    <div class="three-column" v-if="magic_items && magic_items.length != 0">
+    <div v-if="magic_items && magic_items.length != 0" class="three-column">
       <div>
         <div
           v-for="(letter, key) in magic_items_by_letter"

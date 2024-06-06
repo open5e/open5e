@@ -114,7 +114,9 @@ const currentSortDir = ref('ascending');
 const pageNumber = ref(0);
 
 const spellPage = computed(() => {
-  if (!data.value) return [];
+  if (!data.value) {
+    return [];
+  }
 
   return sortByField(
     data.value,

@@ -3,7 +3,7 @@
     <h1 class="filter-header">
       <span class="title-case">{{ charclass }} spells</span>
     </h1>
-    <div :class="'three-column'" v-if="spellsByLevel">
+    <div v-if="spellsByLevel" :class="'three-column'">
       <p v-if="spellsByLevel.length == 0">No results</p>
 
       <ul
@@ -30,7 +30,7 @@
         </li>
       </ul>
     </div>
-    <p v-else="isLoading">Loading...</p>
+    <p v-else-if="isLoading">Loading...</p>
   </section>
 </template>
 

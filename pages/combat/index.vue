@@ -1,7 +1,7 @@
 <template>
   <section class="docs-container container">
     <h1>Combat</h1>
-    <div class="docs-toc" v-if="combatSections">
+    <div v-if="combatSections" class="docs-toc">
       <ul>
         <li v-for="section in combatSections" :key="section.slug">
           <nuxt-link tag="a" :to="`/combat/${section.slug}`">

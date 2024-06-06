@@ -4,7 +4,7 @@
       <h1 class="filter-header">Monster List</h1>
       <FilterButton @showFilters="displayFilters = !displayFilters" />
     </div>
-    <MonsterFilterBox v-model="filters" v-if="displayFilters" />
+    <MonsterFilterBox v-if="displayFilters" v-model="filters" />
     <div>
       <div>
         <h3

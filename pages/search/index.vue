@@ -16,106 +16,107 @@
       <Icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
       No results
     </h3>
-    <div
-      v-if="search_results"
-      v-for="result in search_results"
-      :key="result.object_pk"
-      class="search-result"
-    >
-      <!-- Result summary for creatures including mini statblock -->
-      <div v-if="result.object_model == 'Monster'" class="result-summary">
-        <nuxt-link
-          tag="a"
-          :params="{ id: result.object_pk }"
-          :to="`/monsters/${result.object_pk}`"
-        >
-          {{ result.object_name }}
-        </nuxt-link>
-        <span> CR{{ result.object.challenge_rating }} </span
-        ><span class="title-case">{{ result.type }} | </span>
-        <em
-          >{{ result.object.hit_points }}hp, AC
-          {{ result.object.armor_class }}</em
-        >
-        <source-tag
-          v-if="result.document.key !== 'wotc-srd'"
-          class="source-tag"
-          :title="result.document.name"
-          :text="result.document.key"
-        />
-        <div>
-          <stat-bar
-            class="top-border"
-            :stats="{
-              str: result.object.strength,
-              dex: result.object.dexterity,
-              con: result.object.constitution,
-              int: result.object.intelligence,
-              wis: result.object.wisdom,
-              cha: result.object.charisma,
-            }"
-          />
-        </div>
-      </div>
-
-      <!-- Result summary for spells including basic spell info -->
-      <div v-else-if="result.object_model == 'Spell'" class="result-summary">
-        <nuxt-link
-          tag="a"
-          :params="{ id: result.object_pk }"
-          :to="`/spells/${result.object_pk}`"
-        >
-          {{ result.object_name }}
-        </nuxt-link>
-        {{ result.object.level }} {{ result.object.school }} spell |
-        {{ result.object.dnd_class }}
-        <source-tag
-          v-if="result.document.key !== 'wotc-srd'"
-          class="source-tag"
-          :title="result.document.name"
-          :text="result.document.key"
-        />
-        <p class="result-highlights" v-html="result.highlighted" />
-      </div>
-
-      <!-- Result summary for magic items -->
+    <div v-if="search_results">
       <div
-        v-else-if="result.object_model == 'MagicItem'"
-        class="result-summary"
+        v-for="result in search_results"
+        :key="result.object_pk"
+        class="search-result"
       >
-        <nuxt-link
-          tag="a"
-          :params="{ id: result.object_pk }"
-          :to="`/magic-items/${result.object_pk}`"
-        >
-          {{ result.object_name }}
-        </nuxt-link>
-        {{ result.object.type }}, {{ result.object.rarity }}
-        <source-tag
-          v-if="result.document.key !== 'wotc-srd'"
-          class="source-tag"
-          :title="result.document.name"
-          :text="result.document.key"
-        />
-        <p class="result-highlights" v-html="result.highlighted" />
-      </div>
+        <!-- Result summary for creatures including mini statblock -->
+        <div v-if="result.object_model == 'Monster'" class="result-summary">
+          <nuxt-link
+            tag="a"
+            :params="{ id: result.object_pk }"
+            :to="`/monsters/${result.object_pk}`"
+          >
+            {{ result.object_name }}
+          </nuxt-link>
+          <span> CR{{ result.object.challenge_rating }} </span
+          ><span class="title-case">{{ result.type }} | </span>
+          <em
+            >{{ result.object.hit_points }}hp, AC
+            {{ result.object.armor_class }}</em
+          >
+          <source-tag
+            v-if="result.document.key !== 'wotc-srd'"
+            class="source-tag"
+            :title="result.document.name"
+            :text="result.document.key"
+          />
+          <div>
+            <stat-bar
+              class="top-border"
+              :stats="{
+                str: result.object.strength,
+                dex: result.object.dexterity,
+                con: result.object.constitution,
+                int: result.object.intelligence,
+                wis: result.object.wisdom,
+                cha: result.object.charisma,
+              }"
+            />
+          </div>
+        </div>
 
-      <!-- Result summary for everything else -->
-      <div v-else class="result-summary">
-        <nuxt-link
-          tag="a"
-          :params="{ id: result.object_pk }"
-          :to="`/${getRoute(result.object_model)}/${result.object_pk}`"
+        <!-- Result summary for spells including basic spell info -->
+        <div v-else-if="result.object_model == 'Spell'" class="result-summary">
+          <nuxt-link
+            tag="a"
+            :params="{ id: result.object_pk }"
+            :to="`/spells/${result.object_pk}`"
+          >
+            {{ result.object_name }}
+          </nuxt-link>
+          {{ result.object.level }} {{ result.object.school }} spell |
+          {{ result.object.dnd_class }}
+          <source-tag
+            v-if="result.document.key !== 'wotc-srd'"
+            class="source-tag"
+            :title="result.document.name"
+            :text="result.document.key"
+          />
+          <p class="result-highlights" v-html="result.highlighted" />
+        </div>
+
+        <!-- Result summary for magic items -->
+        <div
+          v-else-if="result.object_model == 'MagicItem'"
+          class="result-summary"
         >
-          {{ result.object_name }}
-        </nuxt-link>
-        <source-tag
-          v-if="result.document.key !== 'wotc-srd'"
-          class="source-tag"
-          :title="result.document.name"
-          :text="result.document.key"
-        />
-        <p class="result-highlights" v-html="result.highlighted" />
+          <nuxt-link
+            tag="a"
+            :params="{ id: result.object_pk }"
+            :to="`/magic-items/${result.object_pk}`"
+          >
+            {{ result.object_name }}
+          </nuxt-link>
+          {{ result.object.type }}, {{ result.object.rarity }}
+          <source-tag
+            v-if="result.document.key !== 'wotc-srd'"
+            class="source-tag"
+            :title="result.document.name"
+            :text="result.document.key"
+          />
+          <p class="result-highlights" v-html="result.highlighted" />
+        </div>
+
+        <!-- Result summary for everything else -->
+        <div v-else class="result-summary">
+          <nuxt-link
+            tag="a"
+            :params="{ id: result.object_pk }"
+            :to="`/${getRoute(result.object_model)}/${result.object_pk}`"
+          >
+            {{ result.object_name }}
+          </nuxt-link>
+          <source-tag
+            v-if="result.document.key !== 'wotc-srd'"
+            class="source-tag"
+            :title="result.document.name"
+            :text="result.document.key"
+          />
+          <p class="result-highlights" v-html="result.highlighted" />
+        </div>
       </div>
     </div>
   </section>
