@@ -1,11 +1,11 @@
 <template>
   <section class="container">
     <h1 class="filter-header">
-      <span class="title-case">{{ filter }} spells</span>
+      <span class="title-case">{{ charclass }} spells</span>
     </h1>
-    <div :class="'three-column'">
-      <p v-if="!spellListLength && !isLoading">No results</p>
-      <p v-else-if="isLoading">Loading...</p>
+    <div v-if="spellsByLevel" :class="'three-column'">
+      <p v-if="spellsByLevel.length == 0">No results</p>
+
       <ul
         v-for="level in spellsByLevel"
         v-else
@@ -30,90 +30,16 @@
         </li>
       </ul>
     </div>
+    <p v-else-if="isLoading">Loading...</p>
   </section>
 </template>
 
 <script setup>
 import SourceTag from '~/components/SourceTag.vue';
-import { useMainStore } from '~/store';
-import * as _ from 'underscore';
 
-const filter = ref('');
-const isLoading = ref(false);
-const available_classes = ref([
-  'bard',
-  'cleric',
-  'sorcerer',
-  'wizard',
-  'druid',
-  'paladin',
-  'warlock',
-  'ranger',
-]);
+const charclass = useRoute().params.charclass;
 
-const store = useMainStore();
-const sourceString = computed(() => store.getSourceString);
-const spells2 = computed(() => {
-  return store.allSpells;
-});
-
-const filteredSpells = computed(() => {
-  sourceString.value; // rerun when sources are changed
-  if (filter.value) {
-    return spells2.value.filter((spell) => {
-      return (
-        spell.dnd_class.toLowerCase().indexOf(filter.value.toLowerCase()) > -1
-      );
-    });
-  } else {
-    return spells2.value;
-  }
-});
-
-const spellsByLevel = computed(() => {
-  let levels = [];
-  for (let i = 0; i < filteredSpells.value.length; i++) {
-    let spellLevel = filteredSpells.value[i].level_int;
-    var found = false;
-    for (let j = 0; j < levels.length; j++) {
-      if (levels[j].lvl == spellLevel) {
-        levels[j].spells.push(filteredSpells.value[i]);
-        found = true;
-      }
-    }
-    if (!found) {
-      levels.push({
-        lvl: spellLevel,
-        lvlText: filteredSpells.value[i].level,
-        spells: [filteredSpells.value[i]],
-      });
-    }
-  }
-  if (levels.length > 0) {
-    levels = levels.sort(function (a, b) {
-      return a.lvl - b.lvl;
-    });
-  } else {
-    return false;
-  }
-  return levels;
-});
-
-const spellListLength = computed(() => {
-  return filteredSpells.value.length;
-});
-
-onMounted(() => {
-  if (!available_classes.value.includes(useRoute().params.charclass)) {
-    throw createError({
-      statusCode: 404,
-      fatal: true,
-      message: `The page ${useRoute().path} does not exist`,
-    });
-  }
-  filter.value = useRoute().params.charclass;
-  store.loadSpells();
-});
+const { data: spellsByLevel } = useSpellsByClass(charclass);
 </script>
 
 <style lang="scss" scoped>

@@ -4,7 +4,8 @@
       <h1 class="filter-header">Spell List</h1>
     </div>
     <PageNav
-      :list-length="filteredSpells.length"
+      v-if="data"
+      :list-length="data.length"
       list-wording="spells listed."
       :page-number="pageNumber"
       :page-count="pageCount"
@@ -14,8 +15,7 @@
       @prev="pageNumber--"
     />
     <div>
-      <p v-if="!spells.length">Loading...</p>
-      <table v-else class="filterable-table">
+      <table v-if="data" class="filterable-table">
         <caption class="sr-only">
           Column headers with buttons are sortable.
         </caption>
@@ -46,7 +46,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="spell in spellsListed" :key="spell.slug">
+          <tr v-for="spell in spellPage" :key="spell.slug">
             <th>
               <nuxt-link
                 tag="a"
@@ -85,9 +85,11 @@
           </tr>
         </tbody>
       </table>
+      <p v-else>Loading...</p>
     </div>
     <PageNav
-      :list-length="filteredSpells.length"
+      v-if="data"
+      :list-length="data.length"
       list-wording="spells listed."
       :page-number="pageNumber"
       :page-count="pageCount"
@@ -102,42 +104,34 @@
 <script setup>
 import PageNav from '~/components/PageNav.vue';
 import SourceTag from '~/components/SourceTag.vue';
-import { useMainStore } from '~/store';
+const { data } = useAllSpells();
 
-const store = useMainStore();
-const filter = ref('');
+const PAGE_SIZE = 50;
+
 const currentSortProperty = ref('name');
 const currentSortDir = ref('ascending');
+
 const pageNumber = ref(0);
-const pageCount = computed(() => Math.ceil(store.allSpells.length / 50));
-const spells = computed(() => store.allSpells);
-const sortedSpells = computed(() => {
-  return [...spells.value].sort((a, b) => {
-    let modifier = 1;
-    if (currentSortDir.value === 'descending') {
-      modifier = -1;
-    }
-    if (a[currentSortProperty.value] < b[currentSortProperty.value]) {
-      return -1 * modifier;
-    }
-    if (a[currentSortProperty.value] > b[currentSortProperty.value]) {
-      return 1 * modifier;
-    }
-    return 0;
-  });
+
+const spellPage = computed(() => {
+  if (!data.value) {
+    return [];
+  }
+
+  return sortByField(
+    data.value,
+    currentSortProperty.value,
+    currentSortDir.value
+  ).slice(
+    pageNumber.value * PAGE_SIZE,
+    pageNumber.value * PAGE_SIZE + PAGE_SIZE
+  );
 });
 
-const spellsListed = computed(() => {
-  currentSortProperty.value;
-  let start = pageNumber.value * 50;
-  let end = start + 50;
-  return sortedSpells.value.splice(start, end);
-});
-const filteredSpells = computed(() => {
-  return spells.value.filter((spell) => {
-    return spell.name.toLowerCase().indexOf(filter.value.toLowerCase()) > -1;
-  });
-});
+const pageCount = computed(() =>
+  data.value ? Math.ceil(data.value.length / PAGE_SIZE) : 0
+);
+
 const ariaSort = computed(() => {
   return {
     name: getAriaSort('name'),
@@ -145,10 +139,6 @@ const ariaSort = computed(() => {
     level_int: getAriaSort('level_int'),
     components: getAriaSort('components'),
   };
-});
-
-onMounted(() => {
-  store.loadSpells();
 });
 
 const capitalize = (str) => {
