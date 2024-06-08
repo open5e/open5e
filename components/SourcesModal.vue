@@ -1,11 +1,26 @@
 <template>
   <ModalDialog>
     <slot>
-      <h2 class="mt-0 border-b-4 border-red-400 pb-2">Select Sources</h2>
+      <div class="flex w-full justify-between border-b-4 border-red-400">
+        <h2 class="mt-0 pb-2">Select Sources</h2>
+        <div class="serif font-bold">
+          <button
+            class="px-2 py-1 text-blood hover:text-red-800 dark:hover:text-red-400"
+            @click="selectAll()"
+          >
+            All
+          </button>
+          <button
+            class="px-2 py-1 text-granite hover:text-basalt dark:hover:text-smoke"
+            @click="deselectAll()"
+          >
+            None
+          </button>
+        </div>
+      </div>
       <div class="mt-2">
         <fieldset>
           <legend class="sr-only">Source Selection</legend>
-
           <div class="space-y-3">
             <div
               v-for="(group, organization) in groupedDocuments"
@@ -31,12 +46,10 @@
                   <label
                     :for="document.slug"
                     class="font-medium text-gray-900 dark:text-white"
-                    >{{ document.title }}</label
                   >
-                  <SourceTag
-                    :title="document.title"
-                    :text="document.slug"
-                  ></SourceTag>
+                    {{ document.title }}
+                  </label>
+                  <SourceTag :title="document.title" :text="document.slug" />
                 </div>
               </div>
             </div>
@@ -67,7 +80,6 @@
 <script setup>
 import SourceTag from '~/components/SourceTag.vue';
 const { sources, setSources } = useSourcesList();
-
 const emit = defineEmits(['close']);
 
 const selectedSources = ref(sources.value);
@@ -89,5 +101,13 @@ function closeModal() {
 function saveSelection() {
   setSources(selectedSources.value);
   closeModal();
+}
+
+function selectAll() {
+  selectedSources.value = documents.value.map((doc) => doc.slug);
+}
+
+function deselectAll() {
+  selectedSources.value = [];
 }
 </script>
