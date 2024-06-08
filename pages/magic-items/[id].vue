@@ -1,7 +1,6 @@
 <template>
   <section class="docs-container container">
-    <p v-if="loading">Loading...</p>
-    <div v-else>
+    <div v-if="item">
       <h1 class="inline">
         {{ item.name }}
       </h1>
@@ -27,12 +26,13 @@
         </a>
       </p>
     </div>
+    <p v-else>Loading...</p>
   </section>
 </template>
 
 <script setup>
-const item = await useFetchArticle({
-  slug: useRoute().params.id,
-  category: 'magicitems',
-});
+const { data: item } = useFindOne(
+  API_ENDPOINTS.magicitems,
+  useRoute().params.id
+);
 </script>

@@ -45,8 +45,10 @@ export default defineNuxtConfig({
   //     }
   //   },
   // },
-  modules: ['@pinia/nuxt', '@nuxtjs/tailwindcss', 'nuxt-icon'],
-  buildModules: ['@nuxtjs/pinia'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@hebilicious/vue-query-nuxt'],
+  queryClientOptions: {
+    defaultOptions: { queries: { staleTime: Infinity } },
+  },
   runtimeConfig: {
     public: {
       apiUrl: process.env.API_URL || 'https://api.open5e.com',

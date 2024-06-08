@@ -24,8 +24,5 @@
 </template>
 
 <script setup>
-const feat = await useFetchArticle({
-  slug: useRoute().params.feat,
-  category: 'feats',
-});
+const { data: feat } = useFindOne(API_ENDPOINTS.feats, useRoute().params.feat);
 </script>

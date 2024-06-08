@@ -20,7 +20,7 @@
                 <div class="flex h-6 items-center">
                   <input
                     :id="document.slug"
-                    v-model="selectedSourcesComputed"
+                    v-model="selectedSources"
                     :name="document.slug"
                     type="checkbox"
                     class="h-4 w-4 rounded border-gray-300 text-blue-600 accent-blood focus:ring-blue-600"
@@ -65,54 +65,29 @@
 </template>
 
 <script setup>
-import { useMainStore } from '~/store';
 import SourceTag from '~/components/SourceTag.vue';
+const { sources, setSources } = useSourcesList();
 
 const emit = defineEmits(['close']);
 
-const selectedSources = ref([]);
-const searchText = ref('');
-const store = computed(() => useMainStore());
+const selectedSources = ref(sources.value);
 
-const documents = computed(() => {
-  return store.value.documents;
-});
+const { data: documents } = useDocuments();
+
 const groupedDocuments = computed(() => {
-  return documents.value.reduce((grouped, document) => {
+  const docs = documents.value ?? [];
+  return docs.reduce((grouped, document) => {
     (grouped[document.organization] =
       grouped[document.organization] || []).push(document);
     return grouped;
   }, {});
 });
-const selectedSourcesComputed = computed({
-  get: function () {
-    return selectedSources.value;
-  },
-  set: function (newValue) {
-    selectedSources.value = newValue;
-  },
-});
-
-watch(
-  () => store.value.sourceSelection,
-  (newVal) => {
-    selectedSources.value = [...newVal];
-  }
-);
-
-onMounted(() => {
-  searchText.value = useRoute().query.text;
-  selectedSources.value = store.value.sourceSelection;
-});
 
 function closeModal() {
   emit('close'); // emits a 'close' event to the parent component
-  setTimeout(() => {
-    selectedSources.value = store.value.sourceSelection;
-  }, 300);
 }
 function saveSelection() {
-  store.value.setSources(selectedSources.value);
+  setSources(selectedSources.value);
   closeModal();
 }
 </script>

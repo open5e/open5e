@@ -35,7 +35,6 @@ const props = defineProps({
 });
 
 const subtitle = computed(() => {
-  console.log(props.category);
   const data = props.content;
   switch (props.category) {
     case 'spells':

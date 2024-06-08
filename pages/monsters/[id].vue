@@ -77,7 +77,7 @@
     <!-- ABILITY SCORES -->
     <section class="max-w-96">
       <ul class="flex items-center gap-4 text-center">
-        <li v-for="ability in abilities" :key="ability.name">
+        <li v-for="ability in monster.abilities" :key="ability.name">
           <span class="block font-bold uppercase">{{ ability.shortName }}</span>
           {{ `${ability.score} (${ability.modifier})` }}
         </li>
@@ -89,11 +89,11 @@
     <!-- SAVING THROWS AND ATTRIBUTES-->
     <section>
       <ul>
-        <li v-if="abilities.filter((a) => a.save).length">
+        <li v-if="monster.abilities.filter((a) => a.save).length">
           <span class="font-bold after:content-['_']">Saving Throws</span>
 
           <span
-            v-for="ability in abilities.filter((a) => a.save)"
+            v-for="ability in monster.abilities.filter((a) => a.save)"
             :key="ability.name"
             class="after:content-[',_'] last:after:content-[]"
           >
@@ -290,12 +290,9 @@
 </template>
 
 <script setup>
-import { useRoute } from 'nuxt/app';
+const { data: monster } = useMonster(useRoute().params.id);
 
-const monster = await useFetchArticle({
-  slug: useRoute().params.id,
-  category: 'monsters',
-});
+const route = useRoute();
 
 // Helper functions
 const calcMod = (score) => Math.floor((score - 10) / 2);
@@ -304,24 +301,6 @@ const formatMod = (mod) => (mod >= 0 ? '+' + mod.toString() : mod.toString());
 function uppercaseFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
-
-// Collect ability scores, saving throws, &c in one array
-const abilities = [
-  'strength',
-  'dexterity',
-  'constitution',
-  'intelligence',
-  'wisdom',
-  'charisma',
-].map((ability) => ({
-  name: ability,
-  shortName: ability.slice(0, 3),
-  score: monster[ability],
-  modifier: formatMod(calcMod(monster[ability])),
-  save: monster[`${ability}_save`],
-}));
-
-const route = useRoute();
 
 const mode = ref(route.query.mode || 'normal');
 function toggleMode() {

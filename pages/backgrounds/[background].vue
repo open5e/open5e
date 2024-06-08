@@ -42,8 +42,8 @@
 </template>
 
 <script setup>
-const background = await useFetchArticle({
-  slug: useRoute().params.background,
-  category: 'backgrounds',
-});
+const { data: background } = useFindOne(
+  API_ENDPOINTS.backgrounds,
+  useRoute().params.background
+);
 </script>
