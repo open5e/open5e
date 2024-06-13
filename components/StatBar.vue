@@ -8,7 +8,6 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
 import StatBonus from '~/components/StatBonus';
 
 defineProps({
