@@ -31,28 +31,37 @@
             <sortable-table-header
               :current-sort-dir="ariaSort.name"
               @sort="(dir) => sort('name', dir)"
-              >Name</sortable-table-header
             >
+              Name
+            </sortable-table-header>
+
             <sortable-table-header
               :current-sort-dir="ariaSort.type"
               @sort="(dir) => sort('type', dir)"
-              >Type</sortable-table-header
             >
+              Type
+            </sortable-table-header>
+
             <sortable-table-header
               :current-sort-dir="ariaSort.challenge_rating"
               @sort="(dir) => sort('cr', dir)"
-              >CR</sortable-table-header
             >
+              CR
+            </sortable-table-header>
+
             <sortable-table-header
               :current-sort-dir="ariaSort.size"
               @sort="(dir) => sort('size', dir)"
-              >Size</sortable-table-header
             >
+              Size
+            </sortable-table-header>
+
             <sortable-table-header
               :current-sort-dir="ariaSort.hit_points"
               @sort="(dir) => sort('hit_points', dir)"
-              >Hit Points</sortable-table-header
             >
+              Hit Points
+            </sortable-table-header>
           </tr>
         </thead>
         <tbody>

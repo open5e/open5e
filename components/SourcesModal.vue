@@ -31,12 +31,10 @@
                   <label
                     :for="document.slug"
                     class="font-medium text-gray-900 dark:text-white"
-                    >{{ document.title }}</label
                   >
-                  <SourceTag
-                    :title="document.title"
-                    :text="document.slug"
-                  ></SourceTag>
+                    {{ document.title }}
+                  </label>
+                  <SourceTag :title="document.title" :text="document.slug" />
                 </div>
               </div>
             </div>
