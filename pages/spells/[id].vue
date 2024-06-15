@@ -39,7 +39,7 @@
       Source:
       <a target="NONE" :href="spell.document__url">
         {{ spell.document__title }}
-        <Icon name="heroicons:arrow-top-right-on-square-20-solid"></Icon>
+        <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
       </a>
     </p>
   </section>
