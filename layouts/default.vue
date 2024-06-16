@@ -22,8 +22,8 @@
           class="cursor-pointer bg-red-600 px-4 py-2 hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
           @click="showModal = true"
         >
-          <span v-if="documents.length">
-            {{ sourceSelection.length }} of {{ documents.length }} sources
+          <span v-if="documents">
+            {{ no_selected_sources }} of {{ no_avilable_sources }} sources
             <Icon
               name="heroicons:pencil-square"
               class="h-5 w-5 text-white"
@@ -114,218 +114,180 @@
   </div>
 </template>
 
-<script>
-import { useMainStore } from '../store/index';
+<script setup>
 import { useRoute } from 'nuxt/app';
 import { computed } from 'vue';
 
-export default {
-  setup() {
-    const store = useMainStore();
+const spellcastingClasses = [
+  { name: 'Spells by Class', slug: 'by-class' },
+  { name: 'Bard Spells', slug: 'by-class/bard' },
+  { name: 'Cleric Spells', slug: 'by-class/cleric' },
+  { name: 'Druid Spells', slug: 'by-class/druid' },
+  { name: 'Paladin Spells', slug: 'by-class/paladin' },
+  { name: 'Ranger Spells', slug: 'by-class/ranger' },
+  { name: 'Wizard Spells', slug: 'by-class/wizard' },
+  { name: 'Warlock Spells', slug: 'by-class/warlock' },
+];
+const showSidebar = ref(false);
 
-    const crumbs = computed(() => {
-      let url = '';
+const $route = useRoute();
 
-      return useRoute()
-        .fullPath.split('/')
-        .map((segment) => {
-          // ignore initial & trailing slashes
-          if (segment === '' || segment === '/') {
-            return;
-          }
+const crumbs = computed(() => {
+  let url = '';
 
-          // rebuild link urls segment by segment
-          url += `/${segment}`;
-
-          // seperate segment title & query params
-          const [title, queryParams] = segment.split('?');
-
-          // extract & format the search params if on the /search route
-          let searchParam = '';
-          if (title === 'search' && queryParams) {
-            searchParam = queryParams.split('text=')[1].split('+').join(' ');
-          }
-
-          // return a
-          return {
-            url,
-            title: title // format crumb title
-              .split('-')
-              .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-              .join(' '),
-            subtitle: searchParam,
-          };
-        })
-        .filter((breadcrumb) => breadcrumb);
-    });
-    provide('crumbs', crumbs);
-
-    const BASE_TITLE = 'Open5e';
-
-    const title = computed(() => {
-      if (crumbs.value.length === 0) {
-        return BASE_TITLE;
+  return useRoute()
+    .fullPath.split('/')
+    .map((segment) => {
+      // ignore initial & trailing slashes
+      if (segment === '' || segment === '/') {
+        return;
       }
-      const crumb_titles = crumbs.value.map((crumb) => crumb.title);
-      const reversed_titles = [...crumb_titles].reverse();
 
-      return reversed_titles.join(' - ') + ` - ${BASE_TITLE}`;
-    });
-    useHead({ title: title });
-    return { store };
-  },
-  data() {
-    return {
-      searchText: this.$route.query.text,
-      showSidebar: false,
-      showModal: false,
-      spellcastingClasses: [
-        { name: 'Spells by Class', slug: 'by-class' },
-        { name: 'Bard Spells', slug: 'by-class/bard' },
-        { name: 'Cleric Spells', slug: 'by-class/cleric' },
-        { name: 'Druid Spells', slug: 'by-class/druid' },
-        { name: 'Paladin Spells', slug: 'by-class/paladin' },
-        { name: 'Ranger Spells', slug: 'by-class/ranger' },
-        { name: 'Wizard Spells', slug: 'by-class/wizard' },
-        { name: 'Warlock Spells', slug: 'by-class/warlock' },
-      ],
-    };
-  },
-  computed: {
-    documents: function () {
-      return this.store.documents;
-    },
-    sourceSelection: function () {
-      return this.store.sourceSelection;
-    },
+      // rebuild link urls segment by segment
+      url += `/${segment}`;
 
-    isLoadingData: function () {
-      return this.store.isLoadingData;
-    },
+      // seperate segment title & query params
+      const [title, queryParams] = segment.split('?');
 
-    // returns an array of routes that the cmpnt iterates thru to create nav
-    routes: function () {
-      return [
-        {
-          title: 'Characters',
-          route: '/characters',
-          subroutes: this.store.sections.filter(
-            (page) =>
-              page.parent === 'Characters' ||
-              page.parent === 'Character Advancement'
-          ),
-        },
-        {
-          title: 'Classes',
-          route: '/classes',
-          subroutes: this.store.classes,
-        },
-        {
-          title: 'Races',
-          route: '/races',
-          subroutes: this.store.races,
-        },
-        {
-          title: 'Backgrounds',
-          route: '/backgrounds',
-        },
-        {
-          title: 'Feats',
-          route: '/feats',
-        },
-        {
-          title: 'Combat',
-          route: '/combat',
-          subroutes: this.store.sections.filter(
-            (page) => page.parent === 'Combat'
-          ),
-        },
-        {
-          title: 'Equipment',
-          route: '/equipment',
-          subroutes: this.store.sections.filter(
-            (page) => page.parent === 'Equipment'
-          ),
-        },
-        {
-          title: 'Magic Items',
-          route: '/magic-items',
-        },
-        {
-          title: 'Spells',
-          route: '/spells',
-          subroutes: this.spellcastingClasses,
-        },
-        {
-          title: 'Monsters',
-          route: '/monsters',
-        },
-        {
-          title: 'Gameplay Mechanics',
-          route: '/gameplay-mechanics',
-          subroutes: this.store.sections.filter(
-            (page) => page.parent === 'Gameplay Mechanics'
-          ),
-        },
-        {
-          title: 'Running a Game',
-          route: '/running',
-          subroutes: this.store.sections.filter(
-            (page) => page.parent === 'Rules'
-          ),
-        },
-        {
-          title: 'API Docs',
-          route: '/api-docs',
-        },
-      ];
-    },
-  },
-
-  watch: {
-    $route(to, from) {
-      this.showSidebar = false;
-    },
-  },
-  mounted() {
-    this.store.loadClasses();
-    this.store.loadSections();
-    this.store.loadRaces();
-    this.store.initializeSources();
-  },
-  methods: {
-    doSearch: function (searchText) {
-      this.$router.push({ name: 'search', query: { text: searchText } });
-      this.showSidebar = false;
-    },
-    containsCurrentRoute: function (routes) {
-      var currentRoute = useRoute().path;
-      for (var i = 0; i < routes.length; i++) {
-        if (currentRoute.search(routes[i])) {
-          return true;
-        }
+      // extract & format the search params if on the /search route
+      let searchParam = '';
+      if (title === 'search' && queryParams) {
+        searchParam = queryParams.split('text=')[1].split('+').join(' ');
       }
-      return false;
-    },
-    containsAnyString: function (strings) {
-      var contains = false;
-      if (typeof strings !== 'undefined') {
-        for (var i = 0; i < strings.length; i++) {
-          if (useRoute().path.indexOf(strings[i].slug) !== -1) {
-            contains = true;
-          }
-        }
-        return contains;
-      }
-    },
-    toggleSidebar: function () {
-      this.showSidebar = !this.showSidebar;
-    },
-    hideSidebar: function () {
-      this.showSidebar = false;
-    },
+
+      // return a
+      return {
+        url,
+        title: title // format crumb title
+          .split('-')
+          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(' '),
+        subtitle: searchParam,
+      };
+    })
+    .filter((breadcrumb) => breadcrumb);
+});
+provide('crumbs', crumbs);
+
+const BASE_TITLE = 'Open5e';
+
+const title = computed(() => {
+  if (crumbs.value.length === 0) {
+    return BASE_TITLE;
+  }
+  const crumb_titles = crumbs.value.map((crumb) => crumb.title);
+  const reversed_titles = [...crumb_titles].reverse();
+
+  return reversed_titles.join(' - ') + ` - ${BASE_TITLE}`;
+});
+useHead({ title: title });
+const searchText = ref($route.query.text);
+
+watch($route, () => {
+  showSidebar.value = false;
+});
+
+const showModal = ref(false);
+const { sources } = useSourcesList();
+
+const no_selected_sources = computed(() => sources.value.length);
+const { data: documents } = useDocuments();
+const { data: classes } = useFindMany(API_ENDPOINTS.classes);
+const { data: races } = useFindMany(API_ENDPOINTS.races);
+const { data: combat_sections } = useSections('Combat');
+const { data: equipment_sections } = useSections('Equipment');
+const { data: gameplay_sections } = useSections('Gameplay Mechanics');
+const { data: rules_sections } = useSections('Rules');
+
+const { data: character_sections } = useSections(
+  'Characters',
+  'Character Advancement'
+);
+
+const no_avilable_sources = computed(() => documents.value?.length ?? 0);
+
+const isLoadingData = useIsFetching();
+
+const routes = computed(() => [
+  {
+    title: 'Characters',
+    route: '/characters',
+    subroutes: character_sections.value ?? [],
   },
-};
+  {
+    title: 'Classes',
+    route: '/classes',
+    subroutes: classes.value ?? [],
+  },
+  {
+    title: 'Conditions',
+    route: '/conditions',
+  },
+  {
+    title: 'Races',
+    route: '/races',
+    subroutes: races.value ?? [],
+  },
+  {
+    title: 'Backgrounds',
+    route: '/backgrounds',
+  },
+  {
+    title: 'Feats',
+    route: '/feats',
+  },
+  {
+    title: 'Combat',
+    route: '/combat',
+    subroutes: combat_sections.value ?? [],
+  },
+  {
+    title: 'Equipment',
+    route: '/equipment',
+    subroutes: equipment_sections.value ?? [],
+  },
+  {
+    title: 'Magic Items',
+    route: '/magic-items',
+  },
+  {
+    title: 'Spells',
+    route: '/spells',
+    subroutes: spellcastingClasses,
+  },
+  {
+    title: 'Monsters',
+    route: '/monsters',
+  },
+  {
+    title: 'Gameplay Mechanics',
+    route: '/gameplay-mechanics',
+    subroutes: gameplay_sections.value ?? [],
+  },
+  {
+    title: 'Running a Game',
+    route: '/running',
+    subroutes: rules_sections.value ?? [],
+  },
+  {
+    title: 'API Docs',
+    route: '/api-docs',
+  },
+]);
+
+const $router = useRouter();
+
+function doSearch(searchText) {
+  $router.push({ name: 'search', query: { text: searchText } });
+  showSidebar.value = false;
+}
+
+function toggleSidebar() {
+  showSidebar.value = !showSidebar.value;
+}
+function hideSidebar() {
+  showSidebar.value = false;
+}
 </script>
 
 <style lang="scss">

@@ -1,11 +1,11 @@
 <template>
   <section class="container">
     <h1 class="filter-header">
-      <span class="title-case">{{ filter }} spells</span>
+      <span class="title-case">{{ charclass }} spells</span>
     </h1>
-    <div :class="'three-column'">
-      <p v-if="!spellListLength && !isLoading">No results</p>
-      <p v-else-if="isLoading">Loading...</p>
+    <div v-if="spellsByLevel" :class="'three-column'">
+      <p v-if="spellsByLevel.length == 0">No results</p>
+
       <ul
         v-for="level in spellsByLevel"
         v-else
@@ -30,127 +30,16 @@
         </li>
       </ul>
     </div>
+    <p v-else-if="isLoading">Loading...</p>
   </section>
 </template>
 
-<script>
-import { useMainStore } from '~/store';
-import axios from 'axios';
+<script setup>
 import SourceTag from '~/components/SourceTag.vue';
-import * as _ from 'underscore';
-export default {
-  components: {
-    SourceTag,
-  },
-  data() {
-    return {
-      spells: [],
-      filter: '',
-      isLoading: false,
-      available_classes: [
-        'bard',
-        'cleric',
-        'sorcerer',
-        'wizard',
-        'druid',
-        'paladin',
-        'warlock',
-        'ranger',
-      ],
-    };
-  },
-  computed: {
-    store() {
-      return useMainStore();
-    },
-    sourceString: function () {
-      return this.store.getSourceString;
-    },
-    spellsByLevel: function () {
-      let levels = [];
-      for (let i = 0; i < this.filteredSpells.length; i++) {
-        let spellLevel = this.filteredSpells[i].level_int;
-        var found = false;
-        for (let j = 0; j < levels.length; j++) {
-          if (levels[j].lvl == spellLevel) {
-            levels[j].spells.push(this.filteredSpells[i]);
-            found = true;
-          }
-        }
-        if (!found) {
-          levels.push({
-            lvl: spellLevel,
-            lvlText: this.filteredSpells[i].level,
-            spells: [this.filteredSpells[i]],
-          });
-        }
-      }
-      if (levels.length > 0) {
-        levels = levels.sort(function (a, b) {
-          return a.lvl - b.lvl;
-        });
-      } else {
-        return false;
-      }
-      return levels;
-    },
-    filteredSpells: function () {
-      if (this.filter) {
-        return this.spells.filter((spell) => {
-          return (
-            spell.dnd_class
-              .toLowerCase()
-              .indexOf(this.$data.filter.toLowerCase()) > -1
-          );
-        });
-      } else {
-        return this.spells;
-      }
-    },
-    columnClassObject: function () {
-      return {
-        'three-column': !this.filter,
-      };
-    },
-    spellListLength: function () {
-      return this.filteredSpells.length;
-    },
-  },
-  watch: {
-    'store.getSourceString': function () {
-      this.getSpells();
-    },
-  },
-  mounted() {
-    // throw an error if the class is not a valid spellcasting class
-    if (!this.available_classes.includes(useRoute().params.charclass)) {
-      throw createError({
-        statusCode: 404,
-        fatal: true,
-        message: `The page ${useRoute().path} does not exist`,
-      });
-    }
-    this.filter = this.$route.params.charclass;
-    this.getSpells();
-  },
-  methods: {
-    updateFilter: function (val) {
-      this.filter = val;
-    },
-    getSpells: async function () {
-      this.isLoading = true;
-      return axios
-        .get(
-          `${this.$nuxt.$config.public.apiUrl}/spells/?fields=slug,name,level_int,level,dnd_class,document__slug,document__title&limit=1000&document_slug__in=${this.sourceString}`
-        ) //you will need to enable CORS to make this work
-        .then((response) => {
-          this.spells = [];
-          this.spells = response.data.results;
-          this.isLoading = false;
-        });
-    },
-  },
-};
+
+const charclass = useRoute().params.charclass;
+
+const { data: spellsByLevel } = useSpellsByClass(charclass);
 </script>
 
 <style lang="scss" scoped>

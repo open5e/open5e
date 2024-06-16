@@ -9,8 +9,8 @@
 </template>
 
 <script setup>
-const section = await useFetchArticle({
-  slug: useRoute().params.section,
-  category: 'sections',
-});
+const { data: section } = useFindOne(
+  API_ENDPOINTS.sections,
+  useRoute().params.section
+);
 </script>

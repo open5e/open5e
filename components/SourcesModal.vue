@@ -19,7 +19,7 @@
               <div class="flex h-6 items-center">
                 <input
                   :id="document.slug"
-                  v-model="selectedSourcesComputed"
+                  v-model="selectedSources"
                   :name="document.slug"
                   type="checkbox"
                   class="h-4 w-4 rounded border-gray-300 text-blue-600 accent-blood focus:ring-blue-600"
@@ -57,69 +57,30 @@
   </modal-dialog>
 </template>
 
-<script>
-import { useMainStore } from '~/store';
-import SourceTag from '~/components/SourceTag.vue';
-
-export default {
-  data() {
-    return {
-      selectedSources: [],
-      open: false,
-    };
-  },
-  computed: {
-    store() {
-      return useMainStore();
-    },
-    sourceSelection: function () {
-      return this.store.sourceSelection;
-    },
-    documents: function () {
-      return this.store.documents;
-    },
-    groupedDocuments: function () {
-      return this.documents.reduce((grouped, document) => {
-        (grouped[document.organization] =
-          grouped[document.organization] || []).push(document);
-        return grouped;
-      }, {});
-    },
-    selectedSourcesComputed: {
-      get: function () {
-        return this.selectedSources;
-      },
-      set: function (newValue) {
-        this.selectedSources = newValue;
-      },
-    },
-  },
-  watch: {
-    'store.sourceSelection': function (newVal) {
-      this.selectedSources = [...newVal];
-    },
-  },
-  created() {
-    this.searchText = this.$route.query.text;
-    this.selectedSources = this.store.sourceSelection;
-  },
-  methods: {
-    closeModal() {
-      this.$emit('close'); // emits a 'close' event to the parent component
-      setTimeout(() => {
-        this.selectedSources = this.store.sourceSelection;
-      }, 300);
-    },
-    saveSelection() {
-      this.store.setSources(this.selectedSources);
-      this.closeModal();
-    },
-  },
-};
-</script>
-
 <script setup>
-import { ref } from 'vue';
+import SourceTag from '~/components/SourceTag.vue';
+const { sources, setSources } = useSourcesList();
 
-const open = ref(true);
+const emit = defineEmits(['close']);
+
+const selectedSources = ref(sources.value);
+
+const { data: documents } = useDocuments();
+
+const groupedDocuments = computed(() => {
+  const docs = documents.value ?? [];
+  return docs.reduce((grouped, document) => {
+    (grouped[document.organization] =
+      grouped[document.organization] || []).push(document);
+    return grouped;
+  }, {});
+});
+
+function closeModal() {
+  emit('close'); // emits a 'close' event to the parent component
+}
+function saveSelection() {
+  setSources(selectedSources.value);
+  closeModal();
+}
 </script>

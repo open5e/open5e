@@ -7,22 +7,16 @@
   </div>
 </template>
 
-<script>
-import statBonus from '~/components/StatBonus';
+<script setup>
+import { defineProps } from 'vue';
+import StatBonus from '~/components/StatBonus';
 
-export default {
-  components: {
-    statBonus,
+defineProps({
+  stats: {
+    type: Object,
+    default: () => ({ str: 0, dex: 0, con: 0, int: 0, wis: 0, cha: 0 }),
   },
-  props: {
-    stats: {
-      type: Object,
-      default: function () {
-        return { str: 0, dex: 0, con: 0, int: 0, wis: 0, cha: 0 };
-      },
-    },
-  },
-};
+});
 </script>
 
 <style lang="scss" scoped>

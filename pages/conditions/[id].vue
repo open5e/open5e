@@ -1,13 +1,13 @@
 <template>
-  <section class="docs-container container">
+  <section v-if="condition" class="docs-container container">
     <h1>{{ condition.name }}</h1>
     <md-viewer :text="condition.desc" />
   </section>
 </template>
 
 <script setup>
-const condition = await useFetchArticle({
-  slug: useRoute().params.id,
-  category: 'conditions',
-});
+const { data: condition } = useFindOne(
+  API_ENDPOINTS.conditions,
+  useRoute().params.id
+);
 </script>

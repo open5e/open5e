@@ -1,8 +1,8 @@
 <template>
   <section class="docs-container container">
     <h1>Classes</h1>
-    <div class="docs-toc">
-      <ul v-if="classes">
+    <div v-if="classes" class="docs-toc">
+      <ul>
         <li v-for="charClass in classes" :key="charClass.slug">
           <nuxt-link :to="`/classes/${charClass.slug}`">
             {{ charClass.name }}
@@ -13,22 +13,8 @@
   </section>
 </template>
 
-<script>
-import { useMainStore } from '../../store/index';
-
-export default {
-  setup() {
-    const store = useMainStore();
-    store.loadClasses();
-    return { store };
-  },
-
-  computed: {
-    classes: function () {
-      return [...this.store.classes];
-    },
-  },
-};
+<script setup>
+const { data: classes } = useFindMany(API_ENDPOINTS.classes);
 </script>
 
 <style></style>

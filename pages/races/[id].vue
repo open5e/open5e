@@ -1,5 +1,5 @@
 <template>
-  <section v-show="race" class="docs-container container">
+  <section v-if="race" class="docs-container container">
     <h1>{{ race.name }}</h1>
     <md-viewer :text="race.desc" />
     <md-viewer :text="race['asi_desc']" />
@@ -14,8 +14,8 @@
       Source:
       <a target="NONE" :href="race.document__url">
         <span>{{ race.document__title }}</span>
-        <Icon name="heroicons:arrow-top-right-on-square-20-solid"></Icon
-      ></a>
+        <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
+      </a>
     </p>
 
     <h2 v-if="subraceLength > 0">Subraces</h2>
@@ -44,8 +44,5 @@
 </template>
 
 <script setup>
-const race = await useFetchArticle({
-  slug: useRoute().params.id,
-  category: 'races',
-});
+const { data: race } = useFindOne(API_ENDPOINTS.races, useRoute().params.id);
 </script>

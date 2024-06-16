@@ -30,7 +30,7 @@
             leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
             <DialogPanel
-              class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-2 text-left shadow-xl transition-all sm:my-4 sm:w-full sm:max-w-lg sm:p-6"
+              class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-2 text-left shadow-xl transition-all dark:bg-darkness dark:text-white sm:my-4 sm:w-full sm:max-w-lg sm:p-6"
             >
               <!-- Use unnamed slot to inject modal content -->
               <slot />
@@ -50,33 +50,28 @@
   </TransitionRoot>
 </template>
 
-<script>
-export default {
-  props: {
-    open: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  emits: ['close', 'update:open'],
-  methods: {
-    closeModal() {
-      this.$emit('update:open', false); // emits an 'update:open' event to the parent component
-    },
-  },
-};
-</script>
-
 <script setup>
 import { useSlots } from 'vue';
-import { ref } from 'vue';
 import {
   Dialog,
   DialogPanel,
-  DialogTitle,
   TransitionChild,
   TransitionRoot,
 } from '@headlessui/vue';
 
 const slots = useSlots();
+import { defineProps, defineEmits } from 'vue';
+
+const props = defineProps({
+  open: {
+    type: Boolean,
+    default: false,
+  },
+});
+
+const emits = defineEmits(['close', 'update:open']);
+
+const closeModal = () => {
+  emits('update:open', false);
+};
 </script>

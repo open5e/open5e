@@ -1,7 +1,7 @@
 <template>
   <section class="docs-container container">
     <h1>Feats</h1>
-    <div v-if="feats.length > 0" class="docs-toc">
+    <div v-if="feats" class="docs-toc">
       <ul>
         <li v-for="feat in feats" :key="feat.slug">
           <nuxt-link tag="a" :to="`/feats/${feat.slug}`">
@@ -19,25 +19,8 @@
   </section>
 </template>
 
-<script>
-import axios from 'axios';
-import SourceTag from '~/components/SourceTag.vue';
-export default {
-  components: { SourceTag },
-  data() {
-    return {
-      feats: [],
-    };
-  },
-
-  mounted() {
-    const url = `${useRuntimeConfig().public.apiUrl}/feats/`;
-    //you will need to enable CORS to make this work
-    return axios.get(url).then((response) => {
-      this.feats = response.data.results;
-    });
-  },
-};
+<script setup>
+const { data: feats } = useFindMany(API_ENDPOINTS.feats);
 </script>
 
 <style></style>
