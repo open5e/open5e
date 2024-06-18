@@ -19,7 +19,7 @@
     </th>
     <!-- Render each field defined in columns as a table cell -->
     <td v-for="field in cols" :key="field" class="capitalize">
-      {{ data[field] }}
+      {{ format(data[field]) }}
     </td>
   </tr>
 </template>
@@ -27,7 +27,7 @@
 <script setup>
 import SourceTag from './SourceTag.vue';
 
-defineProps({
+const props = defineProps({
   // API endpoint from which data is sourced. Used to create links
   endpoint: { type: String, default: '' },
   // Data for a specific item from the Open5e API
@@ -35,4 +35,13 @@ defineProps({
   // An arr. of which fields in the data prop to render as columns
   cols: { type: Array, default: () => [] },
 });
+
+const format = (input) => {
+  // parse decimals <1 as fractions
+  const asFloat = parseFloat(input);
+  if (asFloat && asFloat < 1 && asFloat > 0) {
+    return `1/${1.0 / asFloat}`;
+  }
+  return input;
+};
 </script>

@@ -1,8 +1,8 @@
 <template>
   <th :aria-sort="currentSortDir" class="sortable-table-header">
     <button class="" @click="onClick">
-      <span class="capitalize">
-        {{ title.split('_').join(' ') }}
+      <span>
+        {{ format(title) }}
       </span>
       <span
         aria-hidden="true"
@@ -23,6 +23,24 @@ const props = defineProps({
   isSortingProperty: { type: String, default: '' },
   currentSortDir: { type: String, default: '' },
 });
+
+// a list of human-readable subsitutions
+const subsitutions = {
+  level_int: 'Level',
+  dnd_class: 'Classes',
+  cr: 'CR',
+};
+
+const format = (input) => {
+  if (subsitutions[input]) {
+    return subsitutions[input];
+  }
+  // Replace underscores w/ spaces and capitalise initials
+  return input
+    .split('_')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+};
 
 const onClick = () => {
   emit('sort', props.title);
