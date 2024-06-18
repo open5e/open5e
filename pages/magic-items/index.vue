@@ -2,43 +2,35 @@
   <section class="container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Magic Item List</h1>
-      <FilterButton @showFilters="displayFilters = !displayFilters" />
+      <filter-button @show-filters="displayFilters = !displayFilters" />
     </div>
-    <MagicItemFilterBox v-if="displayFilters" v-model="magic_items_filters" />
+    <magic-item-filter-box
+      v-if="displayFilters"
+      v-model="magic_items_filters"
+    />
     <div v-if="magic_items" class="flex w-full italic text-blood">
       Displaying {{ magic_items.length }} magic items
     </div>
     <hr class="color-blood mx-auto" />
-    <div v-if="magic_items && magic_items.length != 0" class="three-column">
-      <div>
-        <div
-          v-for="(letter, key) in magic_items_by_letter"
-          :key="letter[0].name.charAt(0)"
-          class="letter-list"
-        >
-          <h3>
-            {{ key.toUpperCase() }}
-          </h3>
-          <ul class="list--items">
-            <li v-for="item in letter" :key="item.name">
-              <nuxt-link
-                tag="a"
-                :params="{ id: item.slug }"
-                :to="`/magic-items/${item.slug}`"
-              >
-                {{ item.name }}
-              </nuxt-link>
-              <source-tag
-                v-if="item.document__slug && item.document__slug !== 'wotc-srd'"
-                class=""
-                :title="item.document__title"
-                :text="item.document__slug"
-              />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <table v-if="magic_items && magic_items.length != 0">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Rarity</th>
+          <th>Attunement</th>
+        </tr>
+      </thead>
+      <tbody>
+        <api-result-row
+          v-for="item in magic_items"
+          :key="item.slug"
+          :data="item"
+          endpoint="magic-items"
+          :cols="['type', 'rarity', 'requires_attunement']"
+        />
+      </tbody>
+    </table>
 
     <div
       v-else-if="magic_items && magic_items.length === 0"
@@ -53,8 +45,7 @@
 
 <script setup>
 import FilterButton from '~/components/FilterButton.vue';
-import SourceTag from '~/components/SourceTag.vue';
-
+import ApiResultRow from '~/components/ApiResultRow.vue';
 const displayFilters = ref(false);
 const magic_items_filters = ref({
   name: null,
@@ -64,17 +55,6 @@ const magic_items_filters = ref({
 });
 
 const { data: magic_items } = useMagicItems(magic_items_filters.value);
-
-const magic_items_by_letter = computed(() => {
-  return (magic_items.value ?? []).reduce((acc, item) => {
-    const firstLetter = item.name.charAt(0).toLowerCase();
-    if (!acc[firstLetter]) {
-      acc[firstLetter] = [];
-    }
-    acc[firstLetter].push(item);
-    return acc;
-  }, {});
-});
 </script>
 
 <style scoped lang="scss">
