@@ -14,7 +14,7 @@
     <hr class="color-blood mx-auto" />
     <api-results-table
       v-if="magic_items && magic_items.length > 0"
-      endpoint="magic_items"
+      endpoint="magic-items"
       :data="magic_items"
       :cols="['type', 'rarity', 'requires_attunement']"
     />

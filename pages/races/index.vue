@@ -13,7 +13,7 @@
         Please edit your selected sources for more results.
       </div>
     </div>
-    <api-results-table />
+    <api-results-table :data="races" endpoint="races" />
   </section>
 </template>
 
