@@ -3,7 +3,7 @@
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Spell List</h1>
     </div>
-    <PageNav
+    <page-nav
       v-if="data"
       :list-length="data.length"
       list-wording="spells listed."
@@ -15,52 +15,16 @@
       @prev="pageNumber--"
     />
     <div>
-      <table v-if="data" class="filterable-table">
-        <caption class="sr-only">
-          Column headers with buttons are sortable.
-        </caption>
-        <thead>
-          <tr>
-            <sortable-table-header
-              :current-sort-dir="ariaSort.name"
-              @sort="(dir) => sort('name', dir)"
-            >
-              Name
-            </sortable-table-header>
-            <sortable-table-header
-              :current-sort-dir="ariaSort.school"
-              @sort="(dir) => sort('school', dir)"
-              >School</sortable-table-header
-            >
-            <sortable-table-header
-              :current-sort-dir="ariaSort.level_int"
-              @sort="(dir) => sort('level_int', dir)"
-            >
-              Level
-            </sortable-table-header>
-            <sortable-table-header
-              class="hide-mobile"
-              :current-sort-dir="ariaSort.components"
-              @sort="(dir) => sort('components', dir)"
-            >
-              Components
-            </sortable-table-header>
-            <th class="spell-table-header-class hide-mobile">Class</th>
-          </tr>
-        </thead>
-        <tbody>
-          <api-result-row
-            v-for="spell in spellPage"
-            :key="spell.slug"
-            endpoint="spells"
-            :data="spell"
-            :cols="['school', 'level_int', 'components', 'dnd_class']"
-          />
-        </tbody>
-      </table>
+      <api-results-table
+        v-if="data"
+        endpoint="spells"
+        :data="spellPage"
+        :cols="['school', 'level_int', 'components', 'dnd_class']"
+      />
+
       <p v-else>Loading...</p>
     </div>
-    <PageNav
+    <page-nav
       v-if="data"
       :list-length="data.length"
       list-wording="spells listed."
@@ -76,7 +40,7 @@
 
 <script setup>
 import PageNav from '~/components/PageNav.vue';
-import ApiResultRow from '~/components/ApiResultRow.vue';
+import ApiResultsTable from '~/components/ApiResultsTable.vue';
 const { data } = useAllSpells();
 
 const PAGE_SIZE = 50;
@@ -104,30 +68,6 @@ const spellPage = computed(() => {
 const pageCount = computed(() =>
   data.value ? Math.ceil(data.value.length / PAGE_SIZE) : 0
 );
-
-const ariaSort = computed(() => {
-  return {
-    name: getAriaSort('name'),
-    school: getAriaSort('school'),
-    level_int: getAriaSort('level_int'),
-    components: getAriaSort('components'),
-  };
-});
-
-const capitalize = (str) => {
-  return str.charAt(0).toUpperCase() + str.slice(1);
-};
-const sort = (prop, dir) => {
-  currentSortProperty.value = prop;
-  currentSortDir.value = dir;
-};
-
-const getAriaSort = (columName) => {
-  if (currentSortProperty.value === columName) {
-    return currentSortDir.value === 'ascending' ? 'ascending' : 'descending';
-  }
-  return null;
-};
 </script>
 
 <style scoped lang="scss">

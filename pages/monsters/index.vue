@@ -21,59 +21,12 @@
           <span v-if="monsters && monsters.length === 0">No results.</span>
         </div>
       </div>
-      <!-- <span style="display:block">Sorting by sort={{ currentSortProperty }}, dir={{ currentSortDir }}</span> -->
-      <table v-if="monsters && monsters.length > 0" class="filterable-table">
-        <caption class="sr-only">
-          Column headers with buttons are sortable.
-        </caption>
-        <thead>
-          <tr>
-            <sortable-table-header
-              :current-sort-dir="ariaSort.name"
-              @sort="(dir) => sort('name', dir)"
-            >
-              Name
-            </sortable-table-header>
-
-            <sortable-table-header
-              :current-sort-dir="ariaSort.type"
-              @sort="(dir) => sort('type', dir)"
-            >
-              Type
-            </sortable-table-header>
-
-            <sortable-table-header
-              :current-sort-dir="ariaSort.challenge_rating"
-              @sort="(dir) => sort('cr', dir)"
-            >
-              CR
-            </sortable-table-header>
-
-            <sortable-table-header
-              :current-sort-dir="ariaSort.size"
-              @sort="(dir) => sort('size', dir)"
-            >
-              Size
-            </sortable-table-header>
-
-            <sortable-table-header
-              :current-sort-dir="ariaSort.hit_points"
-              @sort="(dir) => sort('hit_points', dir)"
-            >
-              Hit Points
-            </sortable-table-header>
-          </tr>
-        </thead>
-        <tbody>
-          <api-result-row
-            v-for="monster in sorted_monsters"
-            :key="monster.slug"
-            :data="monster"
-            endpoint="monsters"
-            :cols="['type', 'cr', 'size', 'hit_points']"
-          />
-        </tbody>
-      </table>
+      <api-results-table
+        v-if="monsters && monsters.length > 0"
+        endpoint="monsters"
+        :data="filtered_monsters"
+        :cols="['type', 'cr', 'size', 'hit_points']"
+      />
       <p v-else-if="monsters && monsters.length === 0">No results.</p>
       <p v-else>Loading...</p>
     </div>
@@ -81,9 +34,8 @@
 </template>
 
 <script setup>
+import ApiResultsTable from '~/components/ApiResultsTable.vue';
 import FilterButton from '~/components/FilterButton.vue';
-import ApiResultRow from '~/components/ApiResultRow.vue';
-import SortableTableHeader from '~/components/SortableTableHeader.vue';
 import MonsterFilterBox from '~/components/MonsterFilterBox.vue';
 
 const currentSortDir = ref('ascending');
@@ -102,13 +54,6 @@ const { data: monsters } = useAllMonsters(filters);
 const filtered_monsters = computed(() => {
   return monsters.value ? filterMonsters(monsters.value, filters.value) : [];
 });
-const sorted_monsters = computed(() => {
-  return sortByField(
-    filtered_monsters.value,
-    currentSortProperty.value,
-    currentSortDir.value
-  );
-});
 
 const ariaSort = computed(() => {
   return {
@@ -119,11 +64,6 @@ const ariaSort = computed(() => {
     hit_points: getAriaSort('hit_points'),
   };
 });
-
-function sort(prop, value) {
-  currentSortDir.value = value;
-  currentSortProperty.value = prop;
-}
 
 function getAriaSort(columName) {
   if (currentSortProperty.value === columName) {

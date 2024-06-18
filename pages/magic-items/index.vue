@@ -12,28 +12,12 @@
       Displaying {{ magic_items.length }} magic items
     </div>
     <hr class="color-blood mx-auto" />
-    <table
-      v-if="magic_items && magic_items.length != 0"
-      class="filterable-table"
-    >
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Rarity</th>
-          <th>Attunement</th>
-        </tr>
-      </thead>
-      <tbody>
-        <api-result-row
-          v-for="item in magic_items"
-          :key="item.slug"
-          :data="item"
-          endpoint="magic-items"
-          :cols="['type', 'rarity', 'requires_attunement']"
-        />
-      </tbody>
-    </table>
+    <api-results-table
+      v-if="magic_items && magic_items.length > 0"
+      endpoint="magic_items"
+      :data="magic_items"
+      :cols="['type', 'rarity', 'requires_attunement']"
+    />
 
     <div
       v-else-if="magic_items && magic_items.length === 0"
@@ -48,7 +32,6 @@
 
 <script setup>
 import FilterButton from '~/components/FilterButton.vue';
-import ApiResultRow from '~/components/ApiResultRow.vue';
 const displayFilters = ref(false);
 const magic_items_filters = ref({
   name: null,
