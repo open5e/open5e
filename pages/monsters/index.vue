@@ -2,7 +2,7 @@
   <section class="docs-container container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Monster List</h1>
-      <FilterButton @showFilters="displayFilters = !displayFilters" />
+      <FilterButton @show-filters="displayFilters = !displayFilters" />
     </div>
     <MonsterFilterBox v-if="displayFilters" v-model="filters" />
     <div>
@@ -65,32 +65,13 @@
           </tr>
         </thead>
         <tbody>
-          <!-- TODO: FIX SORTING -->
-          <tr v-for="monster in sorted_monsters" :key="monster.slug">
-            <th>
-              <nuxt-link
-                tag="a"
-                :params="{ id: monster.slug }"
-                :to="`/monsters/${monster.slug}`"
-                :prefetch="false"
-              >
-                {{ monster.name }}
-              </nuxt-link>
-              <source-tag
-                v-if="
-                  monster.document__slug &&
-                  monster.document__slug !== 'wotc-srd'
-                "
-                class=""
-                :title="monster.document__title"
-                :text="monster.document__slug"
-              />
-            </th>
-            <td>{{ monster.type }}</td>
-            <td><fraction-renderer :challenge="monster.challenge_rating" /></td>
-            <td>{{ monster.size }}</td>
-            <td>{{ monster.hit_points }}</td>
-          </tr>
+          <api-result-row
+            v-for="monster in sorted_monsters"
+            :key="monster.slug"
+            :data="monster"
+            endpoint="monsters"
+            :cols="['type', 'cr', 'size', 'hit_points']"
+          />
         </tbody>
       </table>
       <p v-else-if="monsters && monsters.length === 0">No results.</p>
@@ -101,8 +82,7 @@
 
 <script setup>
 import FilterButton from '~/components/FilterButton.vue';
-import FractionRenderer from '~/components/FractionRenderer.vue';
-import SourceTag from '~/components/SourceTag.vue';
+import ApiResultRow from '~/components/ApiResultRow.vue';
 import SortableTableHeader from '~/components/SortableTableHeader.vue';
 import MonsterFilterBox from '~/components/MonsterFilterBox.vue';
 
