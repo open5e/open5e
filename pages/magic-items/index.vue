@@ -12,7 +12,10 @@
       Displaying {{ magic_items.length }} magic items
     </div>
     <hr class="color-blood mx-auto" />
-    <table v-if="magic_items && magic_items.length != 0">
+    <table
+      v-if="magic_items && magic_items.length != 0"
+      class="filterable-table"
+    >
       <thead>
         <tr>
           <th>Name</th>
