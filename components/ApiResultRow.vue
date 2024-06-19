@@ -1,6 +1,6 @@
 <template>
   <tr>
-    <th>
+    <th class="border-none align-top font-normal">
       <!-- Row header contains a link to article and a source tag -->
       <nuxt-link
         tag="a"

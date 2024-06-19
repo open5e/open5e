@@ -1,5 +1,5 @@
 <template>
-  <table class="filterable-table">
+  <table class="w-full">
     <thead>
       <tr>
         <sortable-table-header

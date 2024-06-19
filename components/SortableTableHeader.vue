@@ -1,13 +1,13 @@
 <template>
-  <th :aria-sort="currentSortDir" class="sortable-table-header">
-    <button class="" @click="onClick">
+  <th :aria-sort="currentSortDir" class="align-baseline">
+    <button @click="onClick">
       <span>
         {{ format(title) }}
       </span>
       <span
         aria-hidden="true"
-        class="arrow ml-1"
-        :class="!!isSortingProperty && 'arrow--visible text-blood'"
+        class="ml-1"
+        :class="!!isSortingProperty ? 'visible text-blood' : 'invisible'"
       >
         {{ isSortingProperty !== 'ascending' ? '▲' : '▼' }}
       </span>
@@ -46,13 +46,3 @@ const onClick = () => {
   emit('sort', props.title);
 };
 </script>
-
-<style lang="scss" scoped>
-.arrow {
-  visibility: hidden;
-
-  &.arrow--visible {
-    visibility: visible;
-  }
-}
-</style>

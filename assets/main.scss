@@ -28,22 +28,6 @@ html {
   margin: 0;
 }
 
-.filterable-table {
-  width: 100%;
-
-  thead th {
-    vertical-align: baseline;
-  }
-
-  tbody {
-    th {
-      font-weight: normal;
-      border: none;
-      vertical-align: top;
-    }
-  }
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition: all 300ms ease;
