@@ -111,7 +111,7 @@ const { data } = useAllSpells({
     'school',
     'level_int',
     'components',
-    'dnd_class',
+    'spell_lists',
   ].join(),
 });
 
@@ -127,6 +127,7 @@ const spellPage = computed(() => {
     return [];
   }
 
+  console.log(data.value);
   return sortByField(
     data.value,
     currentSortProperty.value,
