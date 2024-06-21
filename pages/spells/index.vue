@@ -72,15 +72,7 @@
               {{ spell.components }}
             </td>
             <td class="hide-mobile">
-              <span
-                v-for="(spellclass, index) in spell.spell_lists"
-                :key="spellclass"
-              >
-                <!-- the item in the spell_list list -->
-                <span class="spell_lists">{{ capitalize(spellclass) }}</span>
-                <!-- comma after any item that isn't the last -->
-                <span v-if="index + 1 < spell.spell_lists.length">, </span>
-              </span>
+              {{ spell.dnd_class }}
             </td>
           </tr>
         </tbody>
@@ -111,7 +103,7 @@ const { data } = useAllSpells({
     'school',
     'level_int',
     'components',
-    'spell_lists',
+    'dnd_class',
   ].join(),
 });
 
