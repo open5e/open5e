@@ -104,7 +104,16 @@
 <script setup>
 import PageNav from '~/components/PageNav.vue';
 import SourceTag from '~/components/SourceTag.vue';
-const { data } = useAllSpells();
+const { data } = useAllSpells({
+  fields: [
+    'name',
+    'slug',
+    'school',
+    'level_int',
+    'components',
+    'dnd_class',
+  ].join(),
+});
 
 const PAGE_SIZE = 50;
 

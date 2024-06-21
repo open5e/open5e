@@ -30,7 +30,6 @@
         </li>
       </ul>
     </div>
-    <p v-else-if="isLoading">Loading...</p>
   </section>
 </template>
 
@@ -39,7 +38,16 @@ import SourceTag from '~/components/SourceTag.vue';
 
 const charclass = useRoute().params.charclass;
 
-const { data: spellsByLevel } = useSpellsByClass(charclass);
+const { data: spellsByLevel } = useSpellsByClass(charclass, {
+  fields: [
+    'name',
+    'slug',
+    'level_int',
+    'document__slug',
+    'document__title',
+    'dnd_class',
+  ].join(),
+});
 </script>
 
 <style lang="scss" scoped>

@@ -14,7 +14,9 @@
 </template>
 
 <script setup>
-const { data: conditions } = useFindMany(API_ENDPOINTS.conditions);
+const { data: conditions } = useFindMany(API_ENDPOINTS.conditions, {
+  fields: ['name', 'slug', 'document__title', 'document__slug'].join(),
+});
 </script>
 
 <style></style>
