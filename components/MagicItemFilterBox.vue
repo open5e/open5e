@@ -1,6 +1,6 @@
 <template>
   <!-- FILTER BOX -->
-  <div class="filter-header-wrapper flex flex-wrap bg-smoke px-2">
+  <div class="filter-header-wrapper flex flex-wrap bg-smoke px-2 dark:text-black">
     <div class="bg-blue flex w-full flex-wrap align-middle">
       <label for="hpLow" class="w-full pt-1 font-bold md:w-1/6"
         >ITEM NAME:</label
