@@ -86,7 +86,9 @@ export const useSubclass = (className: string, subclass: string) => {
 };
 
 export const useSections = (...categories: string[]) => {
-  const { data: sections, isPending } = useFindMany(API_ENDPOINTS.sections);
+  const { data: sections, isPending } = useFindMany(API_ENDPOINTS.sections, {
+    fields: ['slug', 'name', 'parent'].join(),
+  });
   const filtered_sections = computed(() =>
     sections.value?.filter((section) => categories.includes(section.parent))
   );
@@ -120,11 +122,11 @@ export type MagicItemsFilter = {
   isAttunementRequired?: boolean;
 };
 
-export const useDocuments = () => {
+export const useDocuments = (params: Record<string, any> = {}) => {
   const { findMany } = useAPI();
   return useQuery({
     queryKey: ['findMany', API_ENDPOINTS.documents],
-    queryFn: () => findMany(API_ENDPOINTS.documents, []),
+    queryFn: () => findMany(API_ENDPOINTS.documents, [], params),
   });
 };
 

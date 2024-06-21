@@ -1,12 +1,19 @@
 import { groupBy } from '~/functions/groupBy';
 
-export const useSpellsByClass = (charClass: string) => {
+export const useSpellsByClass = (
+  charClass: string,
+  params: Record<string, any>
+) => {
   const { findMany } = useAPI();
   const { sources } = useSourcesList();
   return useQuery({
-    queryKey: ['findMany', API_ENDPOINTS.spells, sources],
+    queryKey: ['findMany', API_ENDPOINTS.spells, sources, params],
     queryFn: async () => {
-      const spells = await findMany(API_ENDPOINTS.spells, sources.value);
+      const spells = await findMany(
+        API_ENDPOINTS.spells,
+        sources.value,
+        params
+      );
       const class_spells = spells
         .filter((spell) => {
           return spell.dnd_class.toLowerCase().includes(charClass);
@@ -14,9 +21,7 @@ export const useSpellsByClass = (charClass: string) => {
         .sort(function (a, b) {
           return a.lvl - b.lvl;
         });
-
       const grouped_spells = groupBy(class_spells, 'level_int');
-
       // label groups by level
       const levels = Object.getOwnPropertyNames(grouped_spells).map((key) => {
         return {
@@ -31,13 +36,17 @@ export const useSpellsByClass = (charClass: string) => {
   });
 };
 
-export const useAllSpells = () => {
+export const useAllSpells = (params: Record<string, any> = {}) => {
   const { findMany } = useAPI();
   const { sources } = useSourcesList();
   return useQuery({
-    queryKey: ['allSpells', API_ENDPOINTS.spells, sources],
+    queryKey: ['allSpells', API_ENDPOINTS.spells, sources, params],
     queryFn: async () => {
-      const spells = await findMany(API_ENDPOINTS.spells, sources.value);
+      const spells = await findMany(
+        API_ENDPOINTS.spells,
+        sources.value,
+        params
+      );
       return spells;
     },
   });
