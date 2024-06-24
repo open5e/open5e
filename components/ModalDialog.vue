@@ -37,7 +37,7 @@
 
               <!-- Use 'actions' slot for modal buttons/etc -->
               <div
-                class="mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3"
+                class="mt-5 grid grid-cols-1 gap-2 sm:mt-6 sm:grid-flow-row-dense sm:grid-cols-2"
                 :show="slots.actions"
               >
                 <slot name="actions" />

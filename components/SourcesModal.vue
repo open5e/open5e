@@ -22,12 +22,15 @@
                   v-model="selectedSources"
                   :name="document.slug"
                   type="checkbox"
-                  class="h-4 w-4 rounded border-gray-300 text-blue-600 accent-blood focus:ring-blue-600"
+                  class="h-4 w-4 rounded border-gray-300 accent-blood"
                   :value="document.slug"
                 />
               </div>
               <div class="ml-3 text-sm leading-6">
-                <label :for="document.slug" class="font-medium text-gray-900">
+                <label
+                  :for="document.slug"
+                  class="font-medium text-gray-900 dark:text-white"
+                >
                   {{ document.title }}
                 </label>
                 <source-tag :title="document.title" :text="document.slug" />
