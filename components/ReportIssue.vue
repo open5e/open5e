@@ -66,7 +66,11 @@ const closeModal = () => {
               <label for="type" class="text-lg font-bold">
                 What best describes your issue?
               </label>
-              <select v-model="formData.type" name="type" class="w-full p-2">
+              <select
+                v-model="formData.type"
+                name="type"
+                class="w-full border bg-transparent p-2 dark:bg-basalt"
+              >
                 <option value="page">
                   A page is broken or doesn't load properly
                 </option>
@@ -94,7 +98,7 @@ const closeModal = () => {
                 v-model="formData.description"
                 type="text"
                 name="description"
-                class="block w-full border"
+                class="block w-full border dark:bg-basalt"
               />
             </li>
 
@@ -110,7 +114,7 @@ const closeModal = () => {
                 v-model="formData.reproduction"
                 type="text"
                 name="reproduction"
-                class="block h-16 w-full border"
+                class="block h-16 w-full border dark:bg-basalt"
               />
             </li>
           </ul>
@@ -131,7 +135,7 @@ const closeModal = () => {
       <template #actions>
         <!-- Close without submitting -->
         <button
-          class="mt-3 w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:col-start-1 sm:mt-0"
+          class="mt-3 w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 dark:bg-smoke hover:dark:bg-fog sm:col-start-1 sm:mt-0"
           @click="closeModal()"
         >
           Close

@@ -50,7 +50,9 @@ const filters = ref({
   type: null,
 });
 
-const { data: monsters } = useAllMonsters(filters);
+const { data: monsters } = useAllMonsters({
+  fields: ['slug', 'name', 'cr', 'type', 'size', 'hit_points'].join(),
+});
 const filtered_monsters = computed(() => {
   return monsters.value ? filterMonsters(monsters.value, filters.value) : [];
 });

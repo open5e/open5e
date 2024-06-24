@@ -21,7 +21,6 @@
         :data="spellPage"
         :cols="['school', 'level_int', 'components', 'dnd_class']"
       />
-
       <p v-else>Loading...</p>
     </div>
     <page-nav
@@ -41,7 +40,17 @@
 <script setup>
 import PageNav from '~/components/PageNav.vue';
 import ApiResultsTable from '~/components/ApiResultsTable.vue';
-const { data } = useAllSpells();
+
+const { data } = useAllSpells({
+  fields: [
+    'name',
+    'slug',
+    'school',
+    'level_int',
+    'components',
+    'dnd_class',
+  ].join(),
+});
 
 const PAGE_SIZE = 50;
 
@@ -55,6 +64,7 @@ const spellPage = computed(() => {
     return [];
   }
 
+  console.log(data.value);
   return sortByField(
     data.value,
     currentSortProperty.value,

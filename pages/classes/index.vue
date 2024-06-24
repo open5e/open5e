@@ -7,5 +7,7 @@
 
 <script setup>
 import ApiResultsTable from '~/components/ApiResultsTable.vue';
-const { data: classes } = useFindMany(API_ENDPOINTS.classes);
+const { data: classes } = useFindMany(API_ENDPOINTS.classes, {
+  fields: ['name', 'slug', 'document__title', 'document__slug'].join(),
+});
 </script>

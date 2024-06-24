@@ -1,4 +1,7 @@
-export const useMagicItems = (filters: MagicItemsFilter = {}) => {
+export const useMagicItems = (
+  filters: MagicItemsFilter = {},
+  queryParams: Record<string, any> = {}
+) => {
   const { findMany } = useAPI();
   const { sources } = useSourcesList();
   const { data } = useQuery({
@@ -6,7 +9,8 @@ export const useMagicItems = (filters: MagicItemsFilter = {}) => {
     queryFn: async () => {
       const magicItems = await findMany(
         API_ENDPOINTS.magicitems,
-        sources.value
+        sources.value,
+        queryParams
       );
       return magicItems;
     },

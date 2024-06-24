@@ -40,7 +40,17 @@ const magic_items_filters = ref({
   isAttunementRequired: null,
 });
 
-const { data: magic_items } = useMagicItems(magic_items_filters.value);
+const { data: magic_items } = useMagicItems(magic_items_filters.value, {
+  fields: [
+    'slug',
+    'name',
+    'type',
+    'rarity',
+    'requires_attunement',
+    'document__title',
+    'document__slug',
+  ].join(),
+});
 </script>
 
 <style scoped lang="scss">

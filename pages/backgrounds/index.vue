@@ -19,5 +19,8 @@
 
 <script setup>
 import ApiResultsTable from '~/components/ApiResultsTable.vue';
-const { data: backgrounds } = useFindMany(API_ENDPOINTS.backgrounds);
+
+const { data: backgrounds } = useFindMany(API_ENDPOINTS.backgrounds, {
+  fields: ['name', 'slug', 'document__title', 'document__slug'].join(),
+});
 </script>

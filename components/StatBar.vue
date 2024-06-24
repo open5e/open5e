@@ -1,16 +1,19 @@
 <template>
-  <div class="stat-group">
-    <div v-for="(stat, key) in stats" :key="key" class="stat-unit">
-      <span class="title-case">{{ key }}</span
-      ><span>{{ stat }} (<statBonus :stat="parseInt(stat)" />)</span>
-    </div>
-  </div>
+  <ul class="inline-flex">
+    <li
+      v-for="(stat, key) in stats"
+      :key="key"
+      class="mr-4 flex flex-col items-center"
+      @click="useDiceRoller(useFormatModifier(stat, 'score'))"
+    >
+      <span class="font-bold capitalize">{{ key }}</span>
+      <span>{{ stat }} ({{ useFormatModifier(stat, 'score') }}) </span>
+    </li>
+  </ul>
 </template>
 
 <script setup>
 import { defineProps } from 'vue';
-import StatBonus from '~/components/StatBonus';
-
 defineProps({
   stats: {
     type: Object,
@@ -18,21 +21,3 @@ defineProps({
   },
 });
 </script>
-
-<style lang="scss" scoped>
-.stat-group {
-  display: inline-flex;
-  flex-direction: row;
-
-  .stat-unit {
-    display: flex;
-    flex-direction: column;
-    margin-right: 1rem;
-    align-items: center;
-
-    .title-case {
-      font-weight: bold;
-    }
-  }
-}
-</style>
