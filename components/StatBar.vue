@@ -13,7 +13,6 @@
 </template>
 
 <script setup>
-
 import StatBonus from '~/components/StatBonus';
 
 defineProps({
