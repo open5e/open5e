@@ -1,4 +1,4 @@
-name: AI Code Reviewer
+name: Automated Pre-review
 
 on:
   pull_request:
