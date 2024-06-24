@@ -21,42 +21,40 @@
       <div class="mt-2">
         <fieldset>
           <legend class="sr-only">Source Selection</legend>
-          <div class="space-y-3">
+          <div
+            v-for="(publications, organization, index) in groupedDocuments"
+            :key="index"
+            class="space-y-3"
+          >
+            <h3 class="mt-2">{{ organization }}</h3>
             <div
-              v-for="document in group"
+              v-for="document in publications"
               :key="document.slug"
               class="relative flex items-start"
             >
-              <h3 class="mt-2">{{ organization }}</h3>
-              <div
-                v-for="document in group"
-                :key="document.slug"
-                class="relative flex items-start"
-              >
-                <div class="flex h-6 items-center">
-                  <input
-                    :id="document.slug"
-                    v-model="selectedSources"
-                    :name="document.slug"
-                    type="checkbox"
-                    class="h-4 w-4 rounded border-gray-300 text-blue-600 accent-blood focus:ring-blue-600"
-                    :value="document.slug"
-                  />
-                </div>
-                <div class="ml-3 text-sm leading-6">
-                  <label
-                    :for="document.slug"
-                    class="font-medium text-gray-900 dark:text-white"
-                  >
-                    {{ document.title }}
-                  </label>
-                  <source-tag :title="document.title" :text="document.slug" />
-                </div>
+              <div class="flex h-6 items-center">
+                <input
+                  :id="document.slug"
+                  v-model="selectedSources"
+                  :name="document.slug"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-blue-600 accent-blood focus:ring-blue-600"
+                  :value="document.slug"
+                />
+              </div>
+              <div class="ml-3 text-sm leading-6">
+                <label
+                  :for="document.slug"
+                  class="font-medium text-gray-900 dark:text-white"
+                >
+                  {{ document.title }}
+                </label>
+                <source-tag :title="document.title" :text="document.slug" />
               </div>
             </div>
           </div>
-        </div>
-      </fieldset>
+        </fieldset>
+      </div>
     </slot>
     <template #actions>
       <button
@@ -84,7 +82,6 @@ const { sources, setSources } = useSourcesList();
 const emit = defineEmits(['close']);
 
 const selectedSources = ref(sources.value);
-
 const { data: documents } = useDocuments();
 
 const groupedDocuments = computed(() => {
@@ -97,6 +94,7 @@ const groupedDocuments = computed(() => {
 });
 
 function closeModal() {
+  console.log(groupedDocuments);
   emit('close'); // emits a 'close' event to the parent component
 }
 function saveSelection() {
