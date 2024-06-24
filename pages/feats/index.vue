@@ -20,7 +20,9 @@
 </template>
 
 <script setup>
-const { data: feats } = useFindMany(API_ENDPOINTS.feats);
+const { data: feats } = useFindMany(API_ENDPOINTS.feats, {
+  fields: ['name', 'slug', 'document__title', 'document__slug'].join(),
+});
 </script>
 
 <style></style>

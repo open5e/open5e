@@ -31,5 +31,7 @@
 </template>
 
 <script setup>
-const { data: races } = useFindMany(API_ENDPOINTS.races);
+const { data: races } = useFindMany(API_ENDPOINTS.races, {
+  fields: ['name', 'slug', 'document__title', 'document__slug'].join(),
+});
 </script>

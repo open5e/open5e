@@ -192,8 +192,12 @@ const { sources } = useSourcesList();
 
 const no_selected_sources = computed(() => sources.value.length);
 const { data: documents } = useDocuments();
-const { data: classes } = useFindMany(API_ENDPOINTS.classes);
-const { data: races } = useFindMany(API_ENDPOINTS.races);
+const { data: classes } = useFindMany(API_ENDPOINTS.classes, {
+  fields: ['name', 'slug'].join(),
+});
+const { data: races } = useFindMany(API_ENDPOINTS.races, {
+  fields: ['name', 'slug'].join(),
+});
 const { data: combat_sections } = useSections('Combat');
 const { data: equipment_sections } = useSections('Equipment');
 const { data: gameplay_sections } = useSections('Gameplay Mechanics');
