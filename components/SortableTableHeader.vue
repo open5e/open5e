@@ -2,14 +2,15 @@
   <th :aria-sort="currentSortDir" class="sortable-table-header">
     <button @click="onClick">
       <span class="label">
-        <slot></slot>
+        <slot />
       </span>
       <span
         aria-hidden="true"
         class="arrow"
         :class="{ 'arrow--visible': currentSortDir }"
-        >{{ isAscending ? '▲' : '▼' }}</span
       >
+        {{ isAscending ? '▲' : '▼' }}
+      </span>
     </button>
   </th>
 </template>

@@ -17,9 +17,9 @@
     </p>
     <p>
       <label class="font-bold">Duration: </label>
-      <span v-if="spell.concentration === 'yes'"
-        >Concentration, up to {{ spell.duration }}</span
-      >
+      <span v-if="spell.concentration === 'yes'">
+        Concentration, up to {{ spell.duration }}
+      </span>
       <span v-else>{{ spell.duration }}</span>
     </p>
     <p>
@@ -30,7 +30,7 @@
         <!-- Removes trailing preiod -->
       </span>
     </p>
-    <md-viewer :text="spell.desc" />
+    <md-viewer :text="spell.desc" :use-roller="true" />
     <p v-if="spell.higher_level">
       <label class="font-bold">At higher levels:</label>
       {{ spell.higher_level }}
@@ -39,7 +39,7 @@
       Source:
       <a target="NONE" :href="spell.document__url">
         {{ spell.document__title }}
-        <Icon name="heroicons:arrow-top-right-on-square-20-solid"></Icon>
+        <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
       </a>
     </p>
   </section>

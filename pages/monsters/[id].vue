@@ -52,7 +52,13 @@
         </li>
         <li>
           <span class="font-bold after:content-['_']">Hit Points</span>
-          {{ `${monster.hit_points} (${monster.hit_dice})` }}
+          <span class="after:content-['_']">{{ monster.hit_points }}</span>
+          <span
+            class="cursor-pointer font-bold text-blood hover:text-black"
+            @click="useDiceRoller(monster.hit_dice)"
+          >
+            {{ `(${monster.hit_dice})` }}
+          </span>
         </li>
         <li>
           <span class="font-bold after:content-['_']">Speed</span>
@@ -79,7 +85,13 @@
       <ul class="flex items-center gap-4 text-center">
         <li v-for="ability in monster.abilities" :key="ability.name">
           <span class="block font-bold uppercase">{{ ability.shortName }}</span>
-          {{ `${ability.score} (${ability.modifier})` }}
+          <span class="after:content-['_']">{{ ability.score }}</span>
+          <span
+            class="cursor-pointer font-bold text-blood hover:text-black"
+            @click="useDiceRoller(ability.modifier)"
+          >
+            {{ `(${ability.modifier})` }}
+          </span>
         </li>
       </ul>
     </section>
@@ -95,7 +107,8 @@
           <span
             v-for="ability in monster.abilities.filter((a) => a.save)"
             :key="ability.name"
-            class="after:content-[',_'] last:after:content-[]"
+            class="cursor-pointer font-bold text-blood after:text-black after:content-[',_'] last:after:content-[] hover:text-black"
+            @click="useDiceRoller(formatMod(ability.save))"
           >
             {{ uppercaseFirstLetter(ability.shortName) }}
 
@@ -108,7 +121,8 @@
           <span
             v-for="(score, skill) in monster.skills"
             :key="skill"
-            class="after:content-[',_'] last:after:content-[]"
+            class="cursor-pointer font-bold text-blood after:text-black after:content-[',_'] last:after:content-[] hover:text-black"
+            @click="useDiceRoller(formatMod(score))"
           >
             {{ uppercaseFirstLetter(skill) }}
 
@@ -166,7 +180,7 @@
         class="action-block"
       >
         <span class="font-bold after:content-['._']">{{ ability.name }}</span>
-        <md-viewer :inline="true" :text="ability.desc" />
+        <md-viewer :inline="true" :text="ability.desc" :use-roller="true" />
       </p>
     </section>
 
@@ -176,7 +190,7 @@
       <ul>
         <li v-for="action in monster.actions" :key="action.name" class="my-1">
           <span class="font-bold after:content-['_']">{{ action.name }}. </span>
-          <md-viewer :inline="true" :text="action.desc" />
+          <md-viewer :inline="true" :text="action.desc" :use-roller="true" />
         </li>
       </ul>
     </section>
@@ -191,7 +205,7 @@
           class="my-1"
         >
           <span class="font-bold after:content-['_']">{{ action.name }}. </span>
-          <md-viewer :inline="true" :text="action.desc" />
+          <md-viewer :inline="true" :text="action.desc" :use-roller="true" />
         </li>
       </ul>
     </section>
@@ -202,7 +216,7 @@
       <ul>
         <li v-for="action in monster.reactions" :key="action.name" class="my-1">
           <span class="font-bold after:content-['_']">{{ action.name }}. </span>
-          <md-viewer :inline="true" :text="action.desc" />
+          <md-viewer :inline="true" :text="action.desc" :use-roller="true" />
         </li>
       </ul>
     </section>
@@ -279,7 +293,7 @@
       </span>
     </section>
 
-    <p class="text-sm italic">
+    <p class="mb-4 text-sm italic">
       Source:
       <a target="NONE" :href="monster.document__url">
         {{ monster.document__title }}
@@ -295,7 +309,6 @@ const { data: monster } = useMonster(useRoute().params.id);
 const route = useRoute();
 
 // Helper functions
-const calcMod = (score) => Math.floor((score - 10) / 2);
 const formatMod = (mod) => (mod >= 0 ? '+' + mod.toString() : mod.toString());
 
 function uppercaseFirstLetter(string) {

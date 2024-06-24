@@ -20,13 +20,13 @@
             name="rarity"
             class="flex w-full rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
           >
-            <option :key="null" :value="null" text="Any"></option>
+            <option :key="null" :value="null" text="Any" />
             <option
               v-for="rtg in MAGIC_ITEMS_RARITES"
               :key="rtg"
               class=""
               v-text="rtg"
-            ></option>
+            />
           </select>
         </div>
         <div class="mt-2 flex w-full flex-wrap md:w-1/2">
@@ -37,13 +37,13 @@
             name="type"
             class="flex w-full rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood md:ml-2"
           >
-            <option :key="null" :value="null" text="Any"></option>
+            <option :key="null" :value="null" text="Any" />
             <option
               v-for="rtg in MAGIC_ITEMS_TYPES"
               :key="rtg"
               class=""
               v-text="rtg"
-            ></option>
+            />
           </select>
         </div>
         <div class="mt-4 flex w-full md:w-1/2">
