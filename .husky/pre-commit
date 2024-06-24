@@ -3,4 +3,4 @@
 
 npx pretty-quick --staged
 npm run lint
-git add $(git diff --name-only --cached)
+git add $(git diff --name-only --cached --diff-filter=d)

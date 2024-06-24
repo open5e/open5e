@@ -8,13 +8,17 @@ export type MonsterFilter = {
   type?: string;
 };
 
-export const useAllMonsters = () => {
+export const useAllMonsters = (params: Record<string, any> = {}) => {
   const { findMany } = useAPI();
   const { sources } = useSourcesList();
   return useQuery({
-    queryKey: ['monsters', API_ENDPOINTS.monsters, sources],
+    queryKey: ['monsters', API_ENDPOINTS.monsters, sources, params],
     queryFn: async () => {
-      const monsters = await findMany(API_ENDPOINTS.monsters, sources.value);
+      const monsters = await findMany(
+        API_ENDPOINTS.monsters,
+        sources.value,
+        params
+      );
 
       return monsters;
     },

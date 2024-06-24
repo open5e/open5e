@@ -1,5 +1,5 @@
 <template>
-  <ModalDialog>
+  <modal-dialog>
     <slot>
       <div class="flex w-full justify-between border-b-4 border-red-400">
         <h2 class="mt-0 pb-2">Select Sources</h2>
@@ -23,8 +23,9 @@
           <legend class="sr-only">Source Selection</legend>
           <div class="space-y-3">
             <div
-              v-for="(group, organization) in groupedDocuments"
-              :key="organization"
+              v-for="document in group"
+              :key="document.slug"
+              class="relative flex items-start"
             >
               <h3 class="mt-2">{{ organization }}</h3>
               <div
@@ -49,13 +50,13 @@
                   >
                     {{ document.title }}
                   </label>
-                  <SourceTag :title="document.title" :text="document.slug" />
+                  <source-tag :title="document.title" :text="document.slug" />
                 </div>
               </div>
             </div>
           </div>
-        </fieldset>
-      </div>
+        </div>
+      </fieldset>
     </slot>
     <template #actions>
       <button
@@ -74,7 +75,7 @@
         Update
       </button>
     </template>
-  </ModalDialog>
+  </modal-dialog>
 </template>
 
 <script setup>

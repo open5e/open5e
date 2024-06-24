@@ -20,13 +20,13 @@
           name="challengeRtgLow"
           class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
         >
-          <option :key="null" :value="null" text="Any"></option>
+          <option :key="null" :value="null" text="Any" />
           <option
             v-for="[label, value] in MONSTER_CHALLENGE_RATINGS_MAP"
             :key="value"
             :value="value"
             v-text="label"
-          ></option>
+          />
         </select>
       </div>
       <div class="flex w-full px-1 md:w-1/2">
@@ -37,13 +37,13 @@
           name="challengeRtgHigh"
           class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
         >
-          <option :key="null" :value="null" text="Any"></option>
+          <option :key="null" :value="null" text="Any" />
           <option
             v-for="[label, value] in MONSTER_CHALLENGE_RATINGS_MAP"
             :key="value"
             :value="value"
             v-text="label"
-          ></option>
+          />
         </select>
       </div>
     </div>
@@ -84,12 +84,8 @@
         name="size"
         class="w-1/2 rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
       >
-        <option :key="null" :value="null" text="Any"></option>
-        <option
-          v-for="size in MONSTER_SIZES_LIST"
-          :key="size"
-          v-text="size"
-        ></option>
+        <option :key="null" :value="null" text="Any" />
+        <option v-for="size in MONSTER_SIZES_LIST" :key="size" v-text="size" />
       </select>
     </div>
     <div class="flex w-full flex-wrap pt-4 md:w-1/2">
@@ -101,12 +97,12 @@
           name="type"
           class="w-full rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
         >
-          <option :key="null" :value="null" text="Any"></option>
+          <option :key="null" :value="null" text="Any" />
           <option
             v-for="monsterType in MONSTER_TYPES_LIST"
             :key="monsterType"
             v-text="monsterType"
-          ></option>
+          />
         </select>
       </div>
     </div>
