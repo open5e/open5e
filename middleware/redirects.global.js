@@ -22,9 +22,16 @@ async function replaceSectionsWithParent(path) {
 
   // fetch section parent & create redirect URL
   const { data } = await useFetch(endpoint);
-  if (data?.value) {
-    return `/${data.value.parent.toLowerCase()}/${slug}`;
+  if (!data?.value) {
+    return;
   }
+
+  // slugify section parent
+  const parent = data.value.parent
+    .toLowerCase()
+    .replace(/\s+/g, '-') // replace spaces with hyphens
+    .replace('rules', 'gameplay-mechanics'); // handle common inconsistancy in data-set
+  return `/${parent}/${slug}`;
 }
 
 export default defineNuxtRouteMiddleware((to) => {
