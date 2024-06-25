@@ -7,15 +7,43 @@ permissions:
 on:
   pull_request:
     types: [opened, reopened, synchronize]
+  issue_comment:
+    types: [created, edited]
 
 jobs:
-  test:
-    # if: ${{ contains(github.event.*.labels.*.name, 'gpt review') }} # Optional; to run only when a label is attached
+  review:
     runs-on: ubuntu-latest
     steps:
-      - uses: anc95/ChatGPT-CodeReview@main
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run ChatGPT Code Review on PR
+        if: github.event_name == 'pull_request'
+        uses: anc95/ChatGPT-CodeReview@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          # Optional
-          MODEL: gpt-4 # https://platform.openai.com/docs/models
+          MODEL: gpt-4
+
+  parse_comments:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'issue_comment'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Parse Bot Responses
+        run: |
+          COMMENT_BODY=$(jq -r .comment.body <<< "${{ toJson(github.event) }}")
+          COMMENT_USER=$(jq -r .comment.user.login <<< "${{ toJson(github.event) }}")
+          BOT_USERNAME="your-bot-username"  # Replace with your bot's GitHub username
+
+          if [[ "$COMMENT_USER" == "$BOT_USERNAME" ]]; then
+            echo "Processing bot's comment: $COMMENT_BODY"
+            # Call the ChatGPT-CodeReview action or any other logic
+            gh pr comment ${{ github.event.issue.number }} --body "Processing: $COMMENT_BODY"
+          else
+            echo "Comment is from a human reviewer: $COMMENT_USER"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
