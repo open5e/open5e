@@ -31,10 +31,12 @@ export const useAPI = () => {
       sources: string[],
       params: Record<string, any> = {}
     ) => {
+      const formattedSources =
+        sources.length > 0 ? sources.join(',') : 'no-sources';
       const res = await api.get(endpoint, {
         params: {
           limit: 5000,
-          document__slug__in: sources.join(','),
+          document__slug__in: formattedSources,
           ...params,
         },
       });
