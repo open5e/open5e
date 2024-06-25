@@ -1,5 +1,5 @@
 <template ref="el">
-  <VueShowdown
+  <vue-showdown
     ref="mdwrapper"
     :vue-template="true"
     :options="{
@@ -7,7 +7,7 @@
       headerLevelStart: headerLevel,
       vueTemplate: true,
     }"
-    :markdown="mdText"
+    :markdown="text"
     :extensions="extensions"
     :class="inline ? 'markdown-inline' : ''"
   />
@@ -42,7 +42,6 @@ const extensions = computed(() => {
   }
   return list;
 });
-
 </script>
 
 <style>
