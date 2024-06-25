@@ -1,22 +1,24 @@
-name: Automated Pre-review
+name: Code Review
+
+permissions:
+  contents: read
+  pull-requests: write
 
 on:
   pull_request:
-    types:
-      - opened
-      - synchronize
-permissions: write-all
+    types: [opened, reopened, synchronize]
+
 jobs:
-  review:
+  test:
+    # if: ${{ contains(github.event.*.labels.*.name, 'gpt review') }} # Optional; to run only when a label is attached
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v4
-
-      - name: AI Code Reviewer
-        uses: open5e/ai-codereviewer@main
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # The GITHUB_TOKEN is there by default so you just need to keep it like it is and not necessarily need to add it as secret as it will throw an error. [More Details](https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret)
+      - uses: anc95/ChatGPT-CodeReview@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_API_MODEL: "gpt-4" # Optional: defaults to "gpt-4"
-          exclude: "**/*.json, **/*.md" # Optional: exclude patterns separated by commas
+          # Optional
+          OPENAI_API_ENDPOINT: https://api.openai.com/v1
+          MODEL: gpt-4 # https://platform.openai.com/docs/models
+          max_tokens: 10000
+          MAX_PATCH_LENGTH: 10000 # if the patch/diff length is large than MAX_PATCH_LENGTH, will be ignored and won't review. By default, with no MAX_PATCH_LENGTH set, there is also no limit for the patch/diff length.
