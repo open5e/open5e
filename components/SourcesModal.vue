@@ -24,7 +24,7 @@
           <div
             v-for="(publications, organization, index) in groupedDocuments"
             :key="index"
-            class="space-y-3"
+            class="space-y-1"
           >
             <h3 class="mt-2">{{ organization }}</h3>
             <div
