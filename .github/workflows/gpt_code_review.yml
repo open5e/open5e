@@ -19,5 +19,3 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           # Optional
           MODEL: gpt-4 # https://platform.openai.com/docs/models
-          max_tokens: 8000
-          MAX_PATCH_LENGTH: 8000 # if the patch/diff length is large than MAX_PATCH_LENGTH, will be ignored and won't review. By default, with no MAX_PATCH_LENGTH set, there is also no limit for the patch/diff length.
