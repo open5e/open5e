@@ -27,5 +27,5 @@
 </template>
 
 <script setup>
-const { data: sections } = useSections('Gameplay Mechanics');
+const { data: sections } = useSections('Gameplay Mechanics', 'Rules');
 </script>
