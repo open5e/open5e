@@ -8,7 +8,7 @@ on:
   pull_request:
     types: [opened, reopened, synchronize]
   issue_comment:
-    types: [created, edited]
+    types: [created]
 
 jobs:
   review:
@@ -24,6 +24,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           MODEL: gpt-4
+          MAX_PATCH_LENGTH: 10000 # if the patch/diff length is large than MAX_PATCH_LENGTH, will be ignored and won't review. By default, with no MAX_PATCH_LENGTH set, there is also no limit for the patch/diff length.
 
   parse_comments:
     runs-on: ubuntu-latest
@@ -32,18 +33,40 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Parse Bot Responses
+      - name: Parse Comments
         run: |
+          COMMENT_ID=$(jq -r .comment.id <<< "${{ toJson(github.event) }}")
           COMMENT_BODY=$(jq -r .comment.body <<< "${{ toJson(github.event) }}")
           COMMENT_USER=$(jq -r .comment.user.login <<< "${{ toJson(github.event) }}")
-          BOT_USERNAME="your-bot-username"  # Replace with your bot's GitHub username
+          COMMENT_URL=$(jq -r .comment.html_url <<< "${{ toJson(github.event) }}" | sed 's/\/[^\/]*$/\//')
 
-          if [[ "$COMMENT_USER" == "$BOT_USERNAME" ]]; then
-            echo "Processing bot's comment: $COMMENT_BODY"
-            # Call the ChatGPT-CodeReview action or any other logic
-            gh pr comment ${{ github.event.issue.number }} --body "Processing: $COMMENT_BODY"
+          BOT_USERNAME="github-actions"  # Replace with your bot's GitHub username
+
+          if [ "$COMMENT_USER" != "$BOT_USERNAME" ]; then
+            PARENT_COMMENT_USER=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "$COMMENT_URL" | jq -r .user.login)
+            if [ "$PARENT_COMMENT_USER" == "$BOT_USERNAME" ]; then
+              echo "Processing reply to bot's comment: $COMMENT_BODY"
+              
+              # Get the pull request diff
+              DIFF_URL="https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.issue.number }}/files"
+              DIFF=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "$DIFF_URL" | jq -r '.[].patch')
+
+              # Call the ChatGPT-CodeReview action
+              curl -X POST \
+                -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                -H "Accept: application/vnd.github.v3+json" \
+                https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
+                -d "{\"body\":\"Processing reply: $COMMENT_BODY\"}"
+
+              # Execute the ChatGPT-CodeReview action with diff
+              gh run workflow run --repo ${{ github.repository }} .github/workflows/chatgpt-code-review-on-comment.yml -f DIFF="$DIFF"
+            else
+              echo "Comment is not a reply to the bot."
+            fi
           else
-            echo "Comment is from a human reviewer: $COMMENT_USER"
+            echo "Ignoring bot's own comment."
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MAX_PATCH_LENGTH: 10000 # if the patch/diff length is large than MAX_PATCH_LENGTH, will be ignored and won't review. By default, with no MAX_PATCH_LENGTH set, there is also no limit for the patch/diff length.
