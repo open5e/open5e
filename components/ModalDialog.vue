@@ -60,8 +60,6 @@ import {
 } from '@headlessui/vue';
 
 const slots = useSlots();
-import { defineProps, defineEmits } from 'vue';
-
 const props = defineProps({
   open: {
     type: Boolean,
