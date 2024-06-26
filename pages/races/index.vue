@@ -13,24 +13,12 @@
         Please edit your selected sources for more results.
       </div>
     </div>
-    <div class="docs-toc">
-      <ul>
-        <li v-for="race in races" :key="race.name">
-          <nuxt-link tag="a" :to="`/races/${race.slug}`">
-            {{ race.name }}
-          </nuxt-link>
-          <source-tag
-            v-if="race.document__slug !== 'wotc-srd'"
-            :text="race.document__slug"
-            :title="race.document__title"
-          />
-        </li>
-      </ul>
-    </div>
+    <api-results-table :data="races" endpoint="races" />
   </section>
 </template>
 
 <script setup>
+import ApiResultsTable from '~/components/ApiResultsTable.vue';
 const { data: races } = useFindMany(API_ENDPOINTS.races, {
   fields: ['name', 'slug', 'document__title', 'document__slug'].join(),
 });
