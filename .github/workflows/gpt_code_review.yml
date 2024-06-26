@@ -22,5 +22,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           MODEL: gpt-4
-          PROMPT: Check if there are any issues or likely issues in this diff. The project is written in Vue. Only highlight functional issues with the code, please do not suggest that people add more comments or other stylistic elements. We are handling that on our own. If there are no issues, it is okay to simply say "LGTM".
+          PROMPT: Check if there are any issues or likely issues in this diff. The project is mostly in Vue. Only highlight functional issues with the code, please do not suggest that people add more comments or other stylistic elements. We are handling that on our own. Do not explain how the code works unless there is a problem with it. If there are no issues, it is okay to simply say "LGTM".
           MAX_PATCH_LENGTH: 10000 # if the patch/diff length is large than MAX_PATCH_LENGTH, will be ignored and won't review. By default, with no MAX_PATCH_LENGTH set, there is also no limit for the patch/diff length.
