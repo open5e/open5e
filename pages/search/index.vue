@@ -2,7 +2,7 @@
   <section class="docs-container container">
     <h1>Search results</h1>
     <hr />
-    <h3 v-if="!search_results" class="font-sans font-bold text-slate-400">
+    <h3 v-if="!results" class="font-sans font-bold text-slate-400">
       Searching Open5e...
     </h3>
     <h3 v-else-if="!searchText" class="font-sans font-bold text-slate-400">
@@ -10,15 +10,15 @@
       Search for something to see results...
     </h3>
     <h3
-      v-if="search_results && search_results.length == 0"
+      v-if="results && results.length === 0"
       class="font-sans font-bold text-slate-400"
     >
       <Icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
       No results
     </h3>
-    <div v-if="search_results">
+    <div v-if="results">
       <div
-        v-for="result in search_results"
+        v-for="result in resultsInScope"
         :key="result.object_pk"
         class="search-result"
       >
@@ -123,6 +123,7 @@
 </template>
 
 <script setup>
+import { computed } from 'vue';
 import StatBar from '~/components/StatBar';
 import SourceTag from '~/components/SourceTag';
 
@@ -142,7 +143,19 @@ function getRoute(model) {
 }
 
 const searchText = useQueryParam('text');
-const { data: search_results } = useSearch(searchText);
+const { data: results } = useSearch(searchText);
+const { sources } = useSourcesList();
+
+const resultsInScope = computed(() => {
+  const [inScope, outScope] = results.value.reduce(
+    ([inScope, outScope], item) =>
+      sources.value.includes(item.document.key)
+        ? [[...inScope, item], outScope]
+        : [inScope, [...outScope, item]],
+    [[], []]
+  );
+  return inScope;
+});
 </script>
 
 <style lang="scss" scoped>
