@@ -1,160 +1,56 @@
 <template>
   <section class="docs-container container">
-    <h1>Search results</h1>
-    <hr />
-    <h3 v-if="!results" class="font-sans font-bold text-slate-400">
-      Searching Open5e...
-    </h3>
-    <h3 v-else-if="!searchText" class="font-sans font-bold text-slate-400">
-      <Icon name="majesticons:search-line" class="mr-2 h-8 w-8" />
-      Search for something to see results...
-    </h3>
-    <h3
-      v-if="results && results.length === 0"
-      class="font-sans font-bold text-slate-400"
-    >
-      <Icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
-      No results
-    </h3>
-    <div v-if="results">
-      <div
-        v-for="result in resultsInScope"
-        :key="result.object_pk"
-        class="search-result"
-      >
-        <!-- Result summary for creatures including mini statblock -->
-        <div v-if="result.object_model == 'Monster'" class="result-summary">
-          <nuxt-link
-            tag="a"
-            :params="{ id: result.object_pk }"
-            :to="`/monsters/${result.object_pk}`"
-          >
-            {{ result.object_name }}
-          </nuxt-link>
-          <span> CR{{ result.object.challenge_rating }} </span
-          ><span class="title-case">{{ result.type }} | </span>
-          <em
-            >{{ result.object.hit_points }}hp, AC
-            {{ result.object.armor_class }}</em
-          >
-          <source-tag
-            v-if="result.document.key !== 'wotc-srd'"
-            class="source-tag"
-            :title="result.document.name"
-            :text="result.document.key"
-          />
-          <div>
-            <stat-bar
-              class="top-border"
-              :stats="{
-                str: result.object.strength,
-                dex: result.object.dexterity,
-                con: result.object.constitution,
-                int: result.object.intelligence,
-                wis: result.object.wisdom,
-                cha: result.object.charisma,
-              }"
-            />
-          </div>
-        </div>
+    <h1>Search</h1>
+    <hr class="mb-8" />
+    <p class="mb-6 font-sans font-bold text-slate-400">
+      <span v-if="!data" class="h-8">Searching Open5e...</span>
+      <span v-else-if="!searchText">
+        <icon name="majesticons:search-line" class="mr-2 h-8 w-8" />
+        <span>Search for something to see results...</span>
+      </span>
+      <span v-else-if="results.inScope.length > 0">
+        <icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
+        <span>{{ results.inScope.length }} results in your sources</span>
+      </span>
+    </p>
 
-        <!-- Result summary for spells including basic spell info -->
-        <div v-else-if="result.object_model == 'Spell'" class="result-summary">
-          <nuxt-link
-            tag="a"
-            :params="{ id: result.object_pk }"
-            :to="`/spells/${result.object_pk}`"
-          >
-            {{ result.object_name }}
-          </nuxt-link>
-          {{ result.object.level }} {{ result.object.school }} spell |
-          {{ result.object.dnd_class }}
-          <source-tag
-            v-if="result.document.key !== 'wotc-srd'"
-            class="source-tag"
-            :title="result.document.name"
-            :text="result.document.key"
-          />
-          <p class="result-highlights" v-html="result.highlighted" />
-        </div>
+    <ul v-if="results && results.inScope.length > 0">
+      <search-result
+        v-for="item in results.inScope"
+        :key="item.object_pk"
+        :result="item"
+        :query="searchText"
+      />
+    </ul>
 
-        <!-- Result summary for magic items -->
-        <div
-          v-else-if="result.object_model == 'MagicItem'"
-          class="result-summary"
-        >
-          <nuxt-link
-            tag="a"
-            :params="{ id: result.object_pk }"
-            :to="`/magic-items/${result.object_pk}`"
-          >
-            {{ result.object_name }}
-          </nuxt-link>
-          {{ result.object.type }}, {{ result.object.rarity }}
-          <source-tag
-            v-if="result.document.key !== 'wotc-srd'"
-            class="source-tag"
-            :title="result.document.name"
-            :text="result.document.key"
-          />
-          <p class="result-highlights" v-html="result.highlighted" />
-        </div>
-
-        <!-- Result summary for everything else -->
-        <div v-else class="result-summary">
-          <nuxt-link
-            tag="a"
-            :params="{ id: result.object_pk }"
-            :to="`/${getRoute(result.object_model)}/${result.object_pk}`"
-          >
-            {{ result.object_name }}
-          </nuxt-link>
-          <source-tag
-            v-if="result.document.key !== 'wotc-srd'"
-            class="source-tag"
-            :title="result.document.name"
-            :text="result.document.key"
-          />
-          <p class="result-highlights" v-html="result.highlighted" />
-        </div>
-      </div>
+    <div v-if="results && results.outScope.length > 0">
+      <button class="text-mana">
+        Show {{ results.outScope.length }} results from other sources
+      </button>
     </div>
   </section>
 </template>
 
 <script setup>
 import { computed } from 'vue';
-import StatBar from '~/components/StatBar';
-import SourceTag from '~/components/SourceTag';
-
-const ModelToRoute = {
-  Monster: 'monsters',
-  Spell: 'spells',
-  Race: 'races',
-  Section: 'sections',
-  MagicItem: 'magic-items',
-  Feat: 'feats',
-  Background: 'backgrounds',
-  CharClass: 'classes',
-};
-
-function getRoute(model) {
-  return ModelToRoute[model] ?? 'error';
-}
+import SearchResult from '~/components/SearchResult';
 
 const searchText = useQueryParam('text');
-const { data: results } = useSearch(searchText);
+const { data } = useSearch(searchText);
 const { sources } = useSourcesList();
 
-const resultsInScope = computed(() => {
-  const [inScope, outScope] = results.value.reduce(
+const results = computed(() => {
+  if (!data || !data.value) {
+    return;
+  }
+  const [inScope, outScope] = data.value.reduce(
     ([inScope, outScope], item) =>
       sources.value.includes(item.document.key)
         ? [[...inScope, item], outScope]
         : [inScope, [...outScope, item]],
     [[], []]
   );
-  return inScope;
+  return { inScope, outScope };
 });
 </script>
 
@@ -172,14 +68,6 @@ const resultsInScope = computed(() => {
     background-color: lightgoldenrodyellow;
     font-weight: bold;
   }
-}
-
-.top-border {
-  margin-top: 0.35rem;
-  padding-top: 0.25rem;
-  border-top: 1px solid rgba($color-smoke, 0.5);
-  font-size: 14px;
-  opacity: 0.7;
 }
 
 hr {
