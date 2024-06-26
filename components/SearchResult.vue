@@ -1,9 +1,9 @@
 <!-- SearchResults is designed to take a single row returned by the /search API endpoint and return a list item containing a link to a page -->
 
 <template>
-  <li class="border-b py-2">
+  <li class="py-2 text-base">
     <!-- Row title -->
-    <h3 class="mt-2 flex align-middle">
+    <h3 class="mt-1 flex align-middle text-lg">
       <nuxt-link
         tag="a"
         :to="`${getRoute(result.object_model)}/${result.object_pk}`"
@@ -13,32 +13,37 @@
       <span
         class="font-sans text-sm uppercase text-granite before:mx-2 before:text-lg before:content-['|']"
       >
-        {{ result.object_model }}
+        {{ result.object_model.match(/[A-Z][a-z]+/g).join(' ') }}
       </span>
     </h3>
 
     <!-- Row subtitle -->
     <div class="">
       <span v-if="result.object_model === 'Monster'">
-        {{ `CR ${result.object.challenge_rating}` }}
+        {{
+          `
+           CR ${result.object.challenge_rating} | 
+           HP ${result.object.hit_points},
+           AC ${result.object.armor_class}
+           `
+        }}
       </span>
       <span v-else-if="result.object_model === 'Spell'" class="capitalize">
         {{ result.object.school }} Spell | {{ result.object.dnd_class }}
       </span>
       <span v-else-if="result.object_model === 'MagicItem'" class="capitalize">
-        {{ result.object.type }} | {{ result.object.rarity }}
+        {{ result.object.type }}, {{ result.object.rarity }}
       </span>
-      <span class="text-sm text-granite">
-        (from {{ result.document.name }})</span
-      >
     </div>
 
     <!-- include snipet if query text is not part of article title -->
     <div
-      class="text-sm"
       v-if="!result.object_name.toUpperCase().includes(query.toUpperCase())"
+      class="text-sm italic"
       v-html="result.highlighted"
     />
+    <!-- include article source -->
+    <div class="text-sm text-granite">(from {{ result.document.name }})</div>
   </li>
 </template>
 
@@ -72,7 +77,6 @@ function getRoute(model) {
 
 <style>
 .highlighted {
-  text-decoration: underline;
-  text-transform: uppercase;
+  @apply bg-black uppercase text-white dark:bg-white dark:text-black;
 }
 </style>
