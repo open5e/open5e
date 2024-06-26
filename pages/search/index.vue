@@ -2,7 +2,8 @@
   <section class="docs-container container">
     <h1>Search</h1>
     <hr class="mb-8" />
-    <p class="mb-6 font-sans font-bold text-slate-400">
+    <!-- Header -->
+    <p class="font-sans text-xl font-bold text-slate-400">
       <span v-if="!data" class="h-8">Searching Open5e...</span>
       <span v-else-if="!searchText">
         <icon name="majesticons:search-line" class="mr-2 h-8 w-8" />
@@ -11,9 +12,13 @@
       <span v-else-if="results.inScope.length > 0">
         <icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
         <span>{{ results.inScope.length }} results in your sources</span>
+        <span v-if="results.outScope.length > 0" class="font-thin">
+          (and {{ results.outScope.length }} in other sources)
+        </span>
       </span>
     </p>
 
+    <!-- Result list -->
     <ul v-if="results && results.inScope.length > 0">
       <search-result
         v-for="item in results.inScope"
@@ -23,11 +28,24 @@
       />
     </ul>
 
-    <div v-if="results && results.outScope.length > 0">
-      <button class="text-mana">
-        Show {{ results.outScope.length }} results from other sources
+    <div v-if="results && results.outScope.length > 0" class="my-2 border-t">
+      <button
+        class="mt-2 font-sans text-xl font-bold tracking-wide text-indigo-600 hover:text-blood hover:underline dark:text-indigo-200 dark:hover:text-red"
+        @click="toggleOtherSources()"
+      >
+        {{ isOtherSourcesExpanded ? `Showing ` : `Show ` }}
+        {{ results.outScope.length }} results from other sources
       </button>
     </div>
+
+    <ul v-if="results && results.inScope.length > 0 && isOtherSourcesExpanded">
+      <search-result
+        v-for="item in results.outScope"
+        :key="item.object_pk"
+        :result="item"
+        :query="searchText"
+      />
+    </ul>
   </section>
 </template>
 
@@ -52,30 +70,9 @@ const results = computed(() => {
   );
   return { inScope, outScope };
 });
+
+const isOtherSourcesExpanded = ref(false);
+const toggleOtherSources = () => {
+  isOtherSourcesExpanded.value = !isOtherSourcesExpanded.value;
+};
 </script>
-
-<style lang="scss" scoped>
-@import './assets/variables';
-
-.search-result {
-  margin-bottom: 2rem;
-
-  a {
-    font-weight: bold;
-  }
-
-  :deep(.highlighted) {
-    background-color: lightgoldenrodyellow;
-    font-weight: bold;
-  }
-}
-
-hr {
-  margin-bottom: 2rem;
-}
-
-.result-highlights {
-  font-size: 14px;
-  opacity: 0.8;
-}
-</style>
