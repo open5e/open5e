@@ -3,22 +3,23 @@
 <template>
   <li class="py-2 text-base">
     <!-- Row title -->
-    <h3 class="mt-1 flex align-middle text-lg">
+    <h3 class="mt-1 flex items-center align-middle text-xl">
       <nuxt-link
         tag="a"
         :to="`${getRoute(result.object_model)}/${result.object_pk}`"
       >
         {{ result.object_name }}
       </nuxt-link>
+      <source-tag :text="result.document.key" :title="result.document.name" />
       <span
-        class="font-sans text-sm uppercase text-granite before:mx-2 before:text-lg before:content-['|']"
+        class="font-sans text-sm uppercase text-granite before:mx-2 before:content-['|']"
       >
         {{ result.object_model.match(/[A-Z][a-z]+/g).join(' ') }}
       </span>
     </h3>
 
     <!-- Row subtitle -->
-    <div class="">
+    <div>
       <span v-if="result.object_model === 'Monster'">
         {{
           `
@@ -39,11 +40,11 @@
     <!-- include snipet if query text is not part of article title -->
     <div
       v-if="!result.object_name.toUpperCase().includes(query.toUpperCase())"
-      class="text-sm italic"
+      class="text-sm italic text-granite"
       v-html="result.highlighted"
     />
     <!-- include article source -->
-    <div class="text-sm text-granite">(from {{ result.document.name }})</div>
+    <div class="text-sm">(from {{ result.document.name }})</div>
   </li>
 </template>
 
@@ -77,6 +78,6 @@ function getRoute(model) {
 
 <style>
 .highlighted {
-  @apply bg-black uppercase text-white dark:bg-white dark:text-black;
+  @apply bg-basalt uppercase text-white dark:bg-white dark:text-black;
 }
 </style>
