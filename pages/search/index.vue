@@ -9,11 +9,11 @@
         <icon name="majesticons:search-line" class="mr-2 h-8 w-8" />
         <span>Search for something to see results...</span>
       </span>
-      <span v-else-if="results.inScope.length > 0">
+      <span v-else-if="results.inScope">
         <icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
         <span>{{ results.inScope.length }} results in your sources</span>
         <span v-if="results.outScope.length > 0" class="font-thin">
-          (and {{ results.outScope.length }} in other sources)
+          ({{ results.outScope.length }} in other sources)
         </span>
       </span>
     </p>
@@ -38,7 +38,8 @@
       </button>
     </div>
 
-    <ul v-if="results && results.inScope.length > 0 && isOtherSourcesExpanded">
+    <!-- Out of scope results (hidden by default) -->
+    <ul v-if="results && results.outScope.length > 0 && isOtherSourcesExpanded">
       <search-result
         v-for="item in results.outScope"
         :key="item.object_pk"
@@ -61,6 +62,7 @@ const results = computed(() => {
   if (!data || !data.value) {
     return;
   }
+  // split result based on which from currently selected sources
   const [inScope, outScope] = data.value.reduce(
     ([inScope, outScope], item) =>
       sources.value.includes(item.document.key)
@@ -71,6 +73,7 @@ const results = computed(() => {
   return { inScope, outScope };
 });
 
+// state for expanding results from other sources
 const isOtherSourcesExpanded = ref(false);
 const toggleOtherSources = () => {
   isOtherSourcesExpanded.value = !isOtherSourcesExpanded.value;
