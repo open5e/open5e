@@ -108,10 +108,32 @@ function saveSelection() {
 }
 
 function togglePublisher(publisher) {
-  const sourcesToAdd = groupedDocuments.value[publisher]
-    .map((source) => source.slug) // get source slugs from sources for a publisher
-    .filter((source) => !selectedSources.value.includes(source)); // find unchecked sources
-  selectedSources.value = [...selectedSources.value, ...sourcesToAdd]; // combine checked & unchecked sources
+  const sourcesByPublisher = groupedDocuments.value[publisher].map(
+    (source) => source.slug // get slugs for sources by publisher
+  );
+
+  if (isPublisherSelected(publisher)) {
+    selectedSources.value = selectedSources.value.filter(
+      (source) => !sourcesByPublisher.includes(source)
+    );
+  } else {
+    const sourcesToAdd = sourcesByPublisher.filter(
+      (source) => !selectedSources.value.includes(source)
+    );
+    selectedSources.value = [...selectedSources.value, ...sourcesToAdd]; // combine checked & unchecked sources
+  }
+}
+
+function isPublisherSelected(publisher) {
+  // find all sources for this publisher
+  const allSources = groupedDocuments.value[publisher].map(
+    (source) => source.slug
+  );
+  // find which of these are part of the current selected sources
+  const currentSources = selectedSources.value.filter((source) =>
+    allSources.includes(source)
+  );
+  return allSources.length === currentSources.length;
 }
 
 function selectAll() {
