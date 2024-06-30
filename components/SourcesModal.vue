@@ -26,7 +26,13 @@
             :key="index"
             class="space-y-1"
           >
-            <h3 class="mt-2">{{ organization }}</h3>
+            <h3 class="mt-1 inline-block">{{ organization }}</h3>
+            <button
+              class="ml-2 inline px-2 font-sans font-bold text-blood hover:text-red-800 dark:hover:text-red-400"
+              @click="togglePublisher(organization)"
+            >
+              All
+            </button>
             <div
               v-for="document in publications"
               :key="document.slug"
@@ -94,12 +100,18 @@ const groupedDocuments = computed(() => {
 });
 
 function closeModal() {
-  console.log(groupedDocuments);
   emit('close'); // emits a 'close' event to the parent component
 }
 function saveSelection() {
   setSources(selectedSources.value);
   closeModal();
+}
+
+function togglePublisher(publisher) {
+  const sourcesToAdd = groupedDocuments.value[publisher]
+    .map((source) => source.slug) // get source slugs from sources for a publisher
+    .filter((source) => !selectedSources.value.includes(source)); // find unchecked sources
+  selectedSources.value = [...selectedSources.value, ...sourcesToAdd]; // combine checked & unchecked sources
 }
 
 function selectAll() {
