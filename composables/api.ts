@@ -1,4 +1,4 @@
-import { useQuery } from '@tanstack/vue-query';
+import { keepPreviousData, useQuery } from '@tanstack/vue-query';
 import axios from 'axios';
 
 export const API_ENDPOINTS = {
@@ -43,6 +43,43 @@ export const useAPI = () => {
 
       return res.data.results as Record<string, any>[];
     },
+    findPaginated: async (options: {
+      endpoint: string;
+      sources: string[];
+      pageNo?: number;
+      itemsPerPage?: number;
+      queryParams?: Record<string, any>;
+    }) => {
+      const {
+        endpoint,
+        sources,
+        pageNo = 1,
+        itemsPerPage = 5,
+        queryParams = {},
+      } = options;
+
+      const formattedSources =
+        sources.length > 0 ? sources.join(',') : 'no-sources';
+      const res = await api.get(endpoint, {
+        params: {
+          limit: itemsPerPage,
+          page: pageNo,
+          document__slug__in: formattedSources,
+          ...queryParams,
+        },
+      });
+
+      const data = res.data as {
+        count: number;
+        results: Record<string, any>[];
+        next: string | null;
+        previous: string | null;
+      };
+
+      console.log('data', data);
+
+      return data;
+    },
     get: async (...parts: string[]) => {
       const route = '/' + parts.join('/');
       const res = await api.get(route);
@@ -61,6 +98,58 @@ export const useFindMany = (
     queryKey: ['findMany', endpoint, sources, params],
     queryFn: () => findMany(unref(endpoint), unref(sources), unref(params)),
   });
+};
+
+export const useFindPaginated = (options: {
+  endpoint: MaybeRef<string>;
+  itemsPerPage?: MaybeRef<number>;
+  initialPage?: MaybeRef<number>;
+  params?: MaybeRef<Record<string, any>>;
+}) => {
+  const { endpoint, itemsPerPage = 50, initialPage = 1, params = {} } = options;
+  const pageNo = ref(unref(initialPage));
+  const { findPaginated } = useAPI();
+  const { sources } = useSourcesList();
+  const { data, isFetching, error } = useQuery({
+    queryKey: [
+      'findPaginated',
+      endpoint,
+      sources,
+      itemsPerPage,
+      pageNo,
+      params,
+    ],
+    placeholderData: keepPreviousData,
+    queryFn: () =>
+      findPaginated({
+        endpoint: unref(endpoint),
+        sources: unref(sources),
+        pageNo: unref(pageNo),
+        itemsPerPage: unref(itemsPerPage),
+        queryParams: unref(params),
+      }),
+  });
+
+  const lastPageNo = computed(() => {
+    return data.value ? Math.ceil(data.value.count / unref(itemsPerPage)) : 1;
+  });
+
+  const nextPage = () => {
+    console.log('nextPage', pageNo.value);
+    pageNo.value++;
+  };
+
+  const prevPage = () => {
+    if (pageNo.value > 1) {
+      pageNo.value--;
+    }
+  };
+
+  watch(data, () => {
+    console.log('useFindPaginated', unref(data));
+  });
+
+  return { data, isFetching, error, nextPage, prevPage, pageNo, lastPageNo };
 };
 
 export const useFindOne = (

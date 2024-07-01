@@ -32,13 +32,11 @@
         </div>
       </div>
       <api-results-table
-        v-if="monsters && monsters.length > 0"
         endpoint="monsters"
-        :data="filtered_monsters"
+        :api-endpoint="API_ENDPOINTS.monsters"
         :cols="['type', 'cr', 'size', 'hit_points']"
+        :fields="['slug', 'name', 'cr', 'type', 'size', 'hit_points']"
       />
-      <p v-else-if="monsters && monsters.length === 0">No results.</p>
-      <p v-else>Loading...</p>
     </div>
   </section>
 </template>
