@@ -1,6 +1,7 @@
 <template>
   <modal-dialog>
     <slot>
+      <!-- Modal menu title bar -->
       <div class="flex w-full justify-between border-b-4 border-red-400">
         <h2 class="mt-0 pb-2">Select Sources</h2>
         <div class="serif font-bold">
@@ -18,49 +19,70 @@
           </button>
         </div>
       </div>
-      <div class="mt-2">
-        <fieldset>
-          <legend class="sr-only">Source Selection</legend>
-          <div
-            v-for="(publications, organization, index) in groupedDocuments"
-            :key="index"
-            class="space-y-1"
-          >
-            <h3 class="mt-1 inline-block">{{ organization }}</h3>
+
+      <fieldset class="mt-1">
+        <legend class="sr-only">Source Selection</legend>
+        <!-- Organisation -->
+        <div
+          v-for="(publications, organization, index) in groupedDocuments"
+          :key="index"
+          class="space-y-0"
+        >
+          <!-- Organisation Title -->
+          <div class="my-1 flex items-center gap-2">
+            <h3 class="mt-0 inline-block items-center gap-2">
+              {{ organization }}
+            </h3>
             <button
-              class="ml-2 inline px-2 font-sans font-bold text-blood hover:text-red-800 dark:hover:text-red-400"
+              :class="
+                selectedSourcesByPublisher(organization)
+                  ? 'border-none bg-blood'
+                  : 'border-2 bg-white'
+              "
+              class="size-5 rounded-sm border-gray-500 text-sm font-bold text-white"
               @click="togglePublisher(organization)"
             >
-              All
+              <span
+                v-if="selectedSourcesByPublisher(organization)"
+                class="not-sr-only"
+              >
+                &#10003;
+              </span>
+              <span class="sr-only">
+                {{
+                  selectedSourcesByPublisher(organization)
+                    ? `include sources from ${organization}`
+                    : `exclude sources from ${organization}`
+                }}
+              </span>
             </button>
-            <div
-              v-for="document in publications"
-              :key="document.slug"
-              class="relative flex items-start"
-            >
-              <div class="flex h-6 items-center">
-                <input
-                  :id="document.slug"
-                  v-model="selectedSources"
-                  :name="document.slug"
-                  type="checkbox"
-                  class="h-4 w-4 rounded border-gray-300 text-blue-600 accent-blood focus:ring-blue-600"
-                  :value="document.slug"
-                />
-              </div>
-              <div class="ml-3 text-sm leading-6">
-                <label
-                  :for="document.slug"
-                  class="font-medium text-gray-900 dark:text-white"
-                >
-                  {{ document.title }}
-                </label>
-                <source-tag :title="document.title" :text="document.slug" />
-              </div>
-            </div>
           </div>
-        </fieldset>
-      </div>
+
+          <!-- Sources by Organisation -->
+          <ul
+            v-for="document in publications"
+            :key="document.slug"
+            class="relative flex items-start"
+          >
+            <li>
+              <input
+                v-model="selectedSources"
+                :name="document.slug"
+                type="checkbox"
+                class="mr-2 mt-1 h-4 w-4 rounded text-blue-600 accent-blood focus:ring-blue-600"
+                :value="document.slug"
+              />
+              <label
+                :for="document.slug"
+                class="font-medium text-gray-900 dark:text-white"
+              >
+                {{ document.title }}
+              </label>
+              <source-tag :title="document.title" :text="document.slug" />
+            </li>
+          </ul>
+        </div>
+      </fieldset>
     </slot>
     <template #actions>
       <button
@@ -112,7 +134,7 @@ function togglePublisher(publisher) {
     (source) => source.slug // get slugs for sources by publisher
   );
 
-  if (isPublisherSelected(publisher)) {
+  if (selectedSourcesByPublisher(publisher)) {
     selectedSources.value = selectedSources.value.filter(
       (source) => !sourcesByPublisher.includes(source)
     );
@@ -124,7 +146,7 @@ function togglePublisher(publisher) {
   }
 }
 
-function isPublisherSelected(publisher) {
+function selectedSourcesByPublisher(publisher) {
   // find all sources for this publisher
   const allSources = groupedDocuments.value[publisher].map(
     (source) => source.slug
@@ -133,7 +155,7 @@ function isPublisherSelected(publisher) {
   const currentSources = selectedSources.value.filter((source) =>
     allSources.includes(source)
   );
-  return allSources.length === currentSources.length;
+  return currentSources.length;
 }
 
 function selectAll() {
