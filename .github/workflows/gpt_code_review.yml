@@ -10,27 +10,23 @@ on:
     types: [opened, reopened, synchronize]
 
 jobs:
-  review:
+  code_review_job:
+    if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
+    name: Automated Code Review
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run ChatGPT Code Review on PR
-        if: github.event_name == 'pull_request'
-        uses: anc95/ChatGPT-CodeReview@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          MODEL: gpt-4
-          PROMPT:
-            Check if there are any issues or likely issues in this diff. The
-            project is mostly in Vue. Only highlight functional issues with the
-            code, please do not suggest that people add more comments or other
-            stylistic elements. We are handling that on our own. Do not explain
-            how the code works unless there is a problem with it. Avoid any
-            commentary that is not about problems, don't explain things that are
-            not broken. If there are no issues, If there are no issues, do not
-            reply at all.
-          MAX_PATCH_LENGTH: 10000 # if the patch/diff length is large than MAX_PATCH_LENGTH, will be ignored and won't review. By default, with no MAX_PATCH_LENGTH set, there is also no limit for the patch/diff length.
-
+      - name: Automated Code Review
+        uses: cirolini/genai-code-review@v2
+        with:
+          args: '/usr/local/bin/python /app/src/main.py'
+          openai_api_key: ${{ secrets.OPENAI_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_pr_id: ${{ github.event.number }}
+          openai_model: 'gpt-4o' # optional
+          openai_temperature: 0.5 # optional
+          custom_prompt:
+            "If there are no actionable changes you can suggest, reply with 'No
+            issues found'."
