@@ -48,6 +48,8 @@ export const useAPI = () => {
       sources: string[];
       pageNo?: number;
       itemsPerPage?: number;
+      sortByProperty?: string;
+      isSortDescending?: boolean;
       queryParams?: Record<string, any>;
     }) => {
       const {
@@ -55,6 +57,8 @@ export const useAPI = () => {
         sources,
         pageNo = 1,
         itemsPerPage = 5,
+        sortByProperty = 'name',
+        isSortDescending = false,
         queryParams = {},
       } = options;
 
@@ -65,6 +69,7 @@ export const useAPI = () => {
           limit: itemsPerPage,
           page: pageNo,
           document__slug__in: formattedSources,
+          ordering: `${isSortDescending ? '-' : ''}${sortByProperty}`,
           ...queryParams,
         },
       });
@@ -104,9 +109,18 @@ export const useFindPaginated = (options: {
   endpoint: MaybeRef<string>;
   itemsPerPage?: MaybeRef<number>;
   initialPage?: MaybeRef<number>;
+  sortByProperty?: MaybeRef<string>;
+  isSortDescending?: MaybeRef<boolean>;
   params?: MaybeRef<Record<string, any>>;
 }) => {
-  const { endpoint, itemsPerPage = 50, initialPage = 1, params = {} } = options;
+  const {
+    endpoint,
+    itemsPerPage = 50,
+    initialPage = 1,
+    sortByProperty = 'name',
+    isSortDescending = false,
+    params = {},
+  } = options;
   const pageNo = ref(unref(initialPage));
   const { findPaginated } = useAPI();
   const { sources } = useSourcesList();
@@ -117,6 +131,8 @@ export const useFindPaginated = (options: {
       sources,
       itemsPerPage,
       pageNo,
+      sortByProperty,
+      isSortDescending,
       params,
     ],
     placeholderData: keepPreviousData,
@@ -125,6 +141,8 @@ export const useFindPaginated = (options: {
         endpoint: unref(endpoint),
         sources: unref(sources),
         pageNo: unref(pageNo),
+        sortByProperty: unref(sortByProperty),
+        isSortDescending: unref(isSortDescending),
         itemsPerPage: unref(itemsPerPage),
         queryParams: unref(params),
       }),

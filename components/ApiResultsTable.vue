@@ -3,21 +3,13 @@
     <thead>
       <tr>
         <sortable-table-header
-          v-if="false"
           v-for="column in ['name'].concat(cols)"
           :key="column"
           :title="column"
-          :is-sorting-property="sortBy === column && sortDir"
+          :is-sorting-property="sortBy === column"
+          :is-sort-descending="isSortDescending"
           @sort="(prop) => updateSortState(prop)"
         />
-        <!-- TODO: fix sorting -->
-        <th
-          v-for="column in ['name'].concat(cols)"
-          :key="column"
-          :title="column"
-        >
-          {{ column }}
-        </th>
       </tr>
     </thead>
     <tbody v-if="results">
@@ -42,31 +34,40 @@
 <script setup>
 import ApiResultRow from './ApiResultRow.vue';
 
+const sortBy = ref('name');
+const isSortDescending = ref(false);
+
 const props = defineProps({
   endpoint: { type: String },
   apiEndpoint: { type: String },
   cols: { type: Array, default: () => [] },
-  fields: { type: Array, default: () => ['slug', 'name'] },
+  // TODO: make columns into object with seperate display fields and sort keys
 });
 
+// TODO: fields = slug + +name + cols
 const { data, pageNo, prevPage, nextPage, isFetching, error } =
   useFindPaginated({
     endpoint: props.apiEndpoint,
     itemsPerPage: 5,
-    params: { fields: props.fields.join() },
+    sortByProperty: sortBy,
+    isSortDescending: isSortDescending,
+    params: { fields: ['name'].concat(props.cols).join() },
   });
 
 const results = computed(() => data.value?.results);
 
-const sortBy = ref('name');
-const sortDir = ref('ascending');
-
 const updateSortState = (property) => {
   if (property !== sortBy.value) {
     sortBy.value = property;
-    sortDir.value = 'ascending';
+    isSortDescending.value = false;
   } else {
-    sortDir.value = sortDir.value === 'ascending' ? 'descending' : 'ascending';
+    isSortDescending.value = !isSortDescending.value;
   }
+  console.log(
+    'updateSortState',
+    property,
+    sortBy.value,
+    isSortDescending.value
+  );
 };
 </script>

@@ -35,7 +35,6 @@
         endpoint="monsters"
         :api-endpoint="API_ENDPOINTS.monsters"
         :cols="['type', 'cr', 'size', 'hit_points']"
-        :fields="['slug', 'name', 'cr', 'type', 'size', 'hit_points']"
       />
     </div>
   </section>
