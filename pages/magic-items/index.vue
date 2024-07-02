@@ -2,7 +2,13 @@
   <section class="container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Magic Item List</h1>
-      <filter-button @show-filters="displayFilters = !displayFilters" />
+      <FilterButton
+        :show-clear-button="isAnyFilterSet"
+        :filter-count="filterCount"
+        :filters-shown="displayFilters"
+        @show-filters="displayFilters = !displayFilters"
+        @clear-filters="handleClearFilters"
+      />
     </div>
     <magic-item-filter-box
       v-if="displayFilters"
@@ -32,6 +38,8 @@
 
 <script setup>
 import FilterButton from '~/components/FilterButton.vue';
+import { ref, computed } from 'vue';
+
 const displayFilters = ref(false);
 const magic_items_filters = ref({
   name: null,
@@ -51,6 +59,27 @@ const { data: magic_items } = useMagicItems(magic_items_filters.value, {
     'document__slug',
   ].join(),
 });
+
+const isAnyFilterSet = computed(() => {
+  return Object.values(magic_items_filters.value).some(
+    (value) => value !== null
+  );
+});
+
+const filterCount = computed(() => {
+  return Object.values(magic_items_filters.value).filter(
+    (value) => value !== null
+  ).length;
+});
+
+function handleClearFilters() {
+  magic_items_filters.value = {
+    name: null,
+    rarity: null,
+    type: null,
+    isAttunementRequired: null,
+  };
+}
 </script>
 
 <style scoped lang="scss">

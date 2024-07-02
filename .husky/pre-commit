@@ -4,4 +4,3 @@
 npx pretty-quick --staged
 npm run lintfix
 git add $(git diff --name-only --cached --diff-filter=d)
-git commit --amend --no-edit --allow-empty --no-verify
