@@ -6,13 +6,29 @@
         <h2 class="mt-0 pb-2">Select Sources</h2>
         <div class="serif font-bold">
           <button
+            v-if="selectedSources.length == documents.length"
+            class="cursor-default px-2 py-1 font-bold text-white"
+          >
+            &#10003; All
+          </button>
+
+          <button
+            v-else
             class="px-2 py-1 text-blood hover:text-red-800 dark:hover:text-red-400"
             @click="selectAll()"
           >
             All
           </button>
+
           <button
-            class="px-2 py-1 text-granite hover:text-basalt dark:hover:text-smoke"
+            v-if="selectedSources.length === 0"
+            class="cursor-default px-2 py-1 font-bold text-white"
+          >
+            &#10003; None
+          </button>
+          <button
+            v-else
+            class="px-2 py-1 text-blood hover:text-red-800 dark:hover:text-red-400"
             @click="deselectAll()"
           >
             None
@@ -28,34 +44,43 @@
           :key="index"
           class="space-y-0"
         >
-          <!-- Organisation Title -->
           <div class="my-1 flex items-center gap-2">
             <h3 class="mt-0 inline-block items-center gap-2">
               {{ organization }}
             </h3>
-            <button
-              :class="
-                selectedSourcesByPublisher(organization)
-                  ? 'border-none bg-blood'
-                  : 'border-2 bg-white'
+            <!-- Add all sources for this publisher -->
+            <a
+              v-if="
+                selectedSourcesByPublisher(organization) ===
+                countSourcesByPublisher(organization)
               "
-              class="size-5 rounded-sm border-gray-500 text-sm font-bold text-white"
-              @click="togglePublisher(organization)"
+              class="cursor-default px-2 py-1 font-bold text-white"
             >
-              <span
-                v-if="selectedSourcesByPublisher(organization)"
-                class="not-sr-only"
-              >
-                &#10003;
-              </span>
-              <span class="sr-only">
-                {{
-                  selectedSourcesByPublisher(organization)
-                    ? `include sources from ${organization}`
-                    : `exclude sources from ${organization}`
-                }}
-              </span>
-            </button>
+              &#10003; All
+            </a>
+            <a
+              v-else
+              class="dark:hover:text-red-4000 px-2 py-1 text-blood hover:text-red-800"
+              href="#"
+              @click.prevent="addPublisher(organization)"
+            >
+              All
+            </a>
+            <!-- Remove all sources for this publisher -->
+            <a
+              v-if="!selectedSourcesByPublisher(organization)"
+              class="cursor-default px-2 py-1 font-bold text-white"
+            >
+              &#10003; None
+            </a>
+            <a
+              v-else
+              class="px-2 py-1 text-blood hover:text-red-800 dark:hover:text-red-400"
+              href="#"
+              @click.prevent="removePublisher(organization)"
+            >
+              None
+            </a>
           </div>
 
           <!-- Sources by Organisation -->
@@ -129,6 +154,27 @@ function saveSelection() {
   closeModal();
 }
 
+function addPublisher(publisher) {
+  const sourcesByPublisher = groupedDocuments.value[publisher].map(
+    (source) => source.slug
+  );
+
+  const sourcesToAdd = sourcesByPublisher.filter(
+    (source) => !selectedSources.value.includes(source)
+  );
+  selectedSources.value = [...selectedSources.value, ...sourcesToAdd];
+}
+
+function removePublisher(publisher) {
+  const sourcesByPublisher = groupedDocuments.value[publisher].map(
+    (source) => source.slug
+  );
+
+  selectedSources.value = selectedSources.value.filter(
+    (source) => !sourcesByPublisher.includes(source)
+  );
+}
+
 function togglePublisher(publisher) {
   const sourcesByPublisher = groupedDocuments.value[publisher].map(
     (source) => source.slug // get slugs for sources by publisher
@@ -144,6 +190,10 @@ function togglePublisher(publisher) {
     );
     selectedSources.value = [...selectedSources.value, ...sourcesToAdd]; // combine checked & unchecked sources
   }
+}
+
+function countSourcesByPublisher(publisher) {
+  return groupedDocuments.value[publisher]?.length || 0;
 }
 
 function selectedSourcesByPublisher(publisher) {
