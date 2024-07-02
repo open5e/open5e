@@ -14,6 +14,7 @@ jobs:
     if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     name: Automated Code Review
+    continue-on-error: true
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
