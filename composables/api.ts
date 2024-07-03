@@ -163,11 +163,31 @@ export const useFindPaginated = (options: {
     }
   };
 
+  const firstPage = () => {
+    pageNo.value = 1;
+  };
+
+  const lastPage = () => {
+    if (data.value) {
+      pageNo.value = lastPageNo.value;
+    }
+  };
+
   watch(data, () => {
     console.log('useFindPaginated', unref(data));
   });
 
-  return { data, isFetching, error, nextPage, prevPage, pageNo, lastPageNo };
+  return {
+    data,
+    isFetching,
+    error,
+    firstPage,
+    prevPage,
+    nextPage,
+    lastPage,
+    pageNo,
+    lastPageNo,
+  };
 };
 
 export const useFindOne = (

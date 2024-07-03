@@ -1,6 +1,11 @@
 <template>
   <div class="flex w-full flex-wrap justify-end align-middle">
-    <api-table-nav @next="nextPage()" @prev="prevPage()" />
+    <api-table-nav
+      @first="firstPage()"
+      @next="nextPage()"
+      @prev="prevPage()"
+      @last="lastPage()"
+    />
   </div>
 
   <table class="m-0 w-full" v-if="results">
@@ -38,7 +43,12 @@
     >
       Page {{ pageNo }} of {{ lastPageNo }}
     </div>
-    <api-table-nav @next="nextPage()" @prev="prevPage()" />
+    <api-table-nav
+      @first="firstPage()"
+      @next="nextPage()"
+      @prev="prevPage()"
+      @last="lastPage()"
+    />
   </div>
 </template>
 
@@ -56,13 +66,14 @@ const props = defineProps({
   // TODO: make columns into object with seperate display fields and sort keys
 });
 
-const { data, pageNo, prevPage, nextPage, lastPageNo } = useFindPaginated({
-  endpoint: props.apiEndpoint,
-  itemsPerPage: props.itemsPerPage,
-  sortByProperty: sortBy,
-  isSortDescending: isSortDescending,
-  params: { fields: ['name'].concat(props.cols).join() },
-});
+const { data, pageNo, firstPage, prevPage, nextPage, lastPage, lastPageNo } =
+  useFindPaginated({
+    endpoint: props.apiEndpoint,
+    itemsPerPage: props.itemsPerPage,
+    sortByProperty: sortBy,
+    isSortDescending: isSortDescending,
+    params: { fields: ['name'].concat(props.cols).join() },
+  });
 
 const results = computed(() => data.value?.results);
 
