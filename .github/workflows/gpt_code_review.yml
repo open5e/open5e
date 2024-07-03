@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Automated Code Review
-        uses: cirolini/genai-code-review@v2
+        uses: eepMoody/genai-code-review
         with:
           args: '/usr/local/bin/python /app/src/main.py'
           openai_api_key: ${{ secrets.OPENAI_API_KEY }}
