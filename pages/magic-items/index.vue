@@ -12,6 +12,7 @@
     </div>
     <magic-item-filter-box
       v-if="displayFilters"
+      ref="itemFilterBox"
       v-model="magic_items_filters"
     />
     <div v-if="magic_items" class="flex w-full italic text-blood">
@@ -72,13 +73,12 @@ const filterCount = computed(() => {
   ).length;
 });
 
+const itemFilterBox = ref(null);
+
 function handleClearFilters() {
-  magic_items_filters.value = {
-    name: null,
-    rarity: null,
-    type: null,
-    isAttunementRequired: null,
-  };
+  if (itemFilterBox.value) {
+    itemFilterBox.value.clearFilters();
+  }
 }
 </script>
 

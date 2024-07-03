@@ -76,4 +76,6 @@ function clearFilters() {
   filters.value.type = null;
   filters.value.isAttunementRequired = null;
 }
+
+defineExpose({ clearFilters });
 </script>
