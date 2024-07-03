@@ -31,22 +31,3 @@ jobs:
           custom_prompt:
             "If there are no actionable changes you can suggest, reply with 'No
             issues found'."
-
-      - name: Create check run
-        uses: actions/github-script@v4
-        with:
-          script: |
-            const { GITHUB_TOKEN } = process.env;
-            const octokit = github.getOctokit(GITHUB_TOKEN);
-            await octokit.rest.checks.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              name: 'Automated Code Review',
-              head_sha: context.sha,
-              status: 'completed',
-              conclusion: 'neutral',
-              output: {
-                title: 'Automated Code Review',
-                summary: 'The code review has completed.',
-              },
-            });
