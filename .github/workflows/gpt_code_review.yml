@@ -28,3 +28,7 @@ jobs:
           github_pr_id: ${{ github.event.number }}
           openai_model: 'gpt-4o' # optional
           openai_temperature: 0.5 # optional
+          custom_prompt:
+            "Please limit replies to definite, actionable issues with the code.
+            Avoid general comments, nitpicking, or speculative feedback. If
+            there are no actionable issues, reply with 'no comments'."
