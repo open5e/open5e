@@ -35,6 +35,7 @@
         endpoint="monsters"
         :api-endpoint="API_ENDPOINTS.monsters"
         :cols="['type', 'cr', 'size', 'hit_points']"
+        :filters="filters"
       />
     </div>
   </section>
@@ -49,8 +50,8 @@ import MonsterFilterBox from '~/components/MonsterFilterBox.vue';
 const currentSortDir = ref('ascending');
 const currentSortProperty = ref('name');
 const filters = ref({
-  challengeLow: null,
-  challengeHigh: null,
+  cr__lte: null,
+  cr__gte: null,
   hpLow: null,
   hpHigh: null,
   name: null,

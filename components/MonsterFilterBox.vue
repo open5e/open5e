@@ -18,7 +18,7 @@
         <label for="challengeRtgLow" class="w-1/2">From:</label>
         <select
           id="challengeRtgLow"
-          v-model="filters.challengeLow"
+          v-model="filters.cr__lte"
           name="challengeRtgLow"
           class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
         >
@@ -35,7 +35,7 @@
         <label for="challengeRtgHigh" class="w-1/2">To:</label>
         <select
           id="challengeRtgHigh"
-          v-model="filters.challengeHigh"
+          v-model="filters.cr__gte"
           name="challengeRtgHigh"
           class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
         >
@@ -114,8 +114,8 @@
 <script setup>
 const filters = defineModel({
   name: null,
-  challengeLow: null,
-  challengeHigh: null,
+  cr__lte: null,
+  cr__gte: null,
   hpLow: null,
   hpHigh: null,
   size: null,
@@ -124,8 +124,8 @@ const filters = defineModel({
 
 function clearFilters() {
   filters.value.name = null;
-  filters.value.challengeLow = null;
-  filters.value.challengeHigh = null;
+  filters.value.cr__lte = null;
+  filters.value.cr__gte = null;
   filters.value.hpLow = null;
   filters.value.hpHigh = null;
   filters.value.size = null;
