@@ -28,6 +28,3 @@ jobs:
           github_pr_id: ${{ github.event.number }}
           openai_model: 'gpt-4o' # optional
           openai_temperature: 0.5 # optional
-          custom_prompt:
-            "If there are no actionable changes you can suggest, reply with 'No
-            issues found'."
