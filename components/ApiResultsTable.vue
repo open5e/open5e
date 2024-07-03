@@ -1,5 +1,9 @@
 <template>
-  <table class="w-full" v-if="results">
+  <div class="flex w-full flex-wrap justify-end align-middle">
+    <api-table-nav @next="nextPage()" @prev="prevPage()" />
+  </div>
+
+  <table class="m-0 w-full" v-if="results">
     <thead>
       <tr>
         <sortable-table-header
@@ -27,8 +31,15 @@
       </tr>
     </tbody>
   </table>
-  <button v-on:click="prevPage()">prev</button>
-  <button v-on:click="nextPage()">next</button>
+  <div class="flex w-full flex-wrap justify-end align-middle">
+    <div
+      v-if="data"
+      class="flex w-full justify-start italic text-blood md:w-1/2"
+    >
+      Page {{ pageNo }} of {{ lastPageNo }}
+    </div>
+    <api-table-nav @next="nextPage()" @prev="prevPage()" />
+  </div>
 </template>
 
 <script setup>
@@ -40,19 +51,18 @@ const isSortDescending = ref(false);
 const props = defineProps({
   endpoint: { type: String },
   apiEndpoint: { type: String },
+  itemsPerPage: { type: Number, default: 50 },
   cols: { type: Array, default: () => [] },
   // TODO: make columns into object with seperate display fields and sort keys
 });
 
-// TODO: fields = slug + +name + cols
-const { data, pageNo, prevPage, nextPage, isFetching, error } =
-  useFindPaginated({
-    endpoint: props.apiEndpoint,
-    itemsPerPage: 5,
-    sortByProperty: sortBy,
-    isSortDescending: isSortDescending,
-    params: { fields: ['name'].concat(props.cols).join() },
-  });
+const { data, pageNo, prevPage, nextPage, lastPageNo } = useFindPaginated({
+  endpoint: props.apiEndpoint,
+  itemsPerPage: props.itemsPerPage,
+  sortByProperty: sortBy,
+  isSortDescending: isSortDescending,
+  params: { fields: ['name'].concat(props.cols).join() },
+});
 
 const results = computed(() => data.value?.results);
 
