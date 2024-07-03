@@ -18,7 +18,7 @@
         <label for="challengeRtgLow" class="w-1/2">From:</label>
         <select
           id="challengeRtgLow"
-          v-model="filters.cr__lte"
+          v-model="filters.cr__gte"
           name="challengeRtgLow"
           class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
         >
@@ -35,7 +35,7 @@
         <label for="challengeRtgHigh" class="w-1/2">To:</label>
         <select
           id="challengeRtgHigh"
-          v-model="filters.cr__gte"
+          v-model="filters.cr__lte"
           name="challengeRtgHigh"
           class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
         >
