@@ -1,15 +1,15 @@
 <template>
   <!-- FILTER BOX -->
-  <div class="filter-header-wrapper flex flex-wrap bg-smoke px-2 dark:text-black">
+  <div
+    class="filter-header-wrapper flex flex-wrap bg-gray-50 px-2 dark:bg-slate-900 dark:text-white"
+  >
     <div class="bg-blue flex w-full flex-wrap align-middle">
-      <label for="hpLow" class="w-full pt-1 font-bold md:w-1/6"
-        >ITEM NAME:</label
-      >
+      <label for="itemName" class="pt-1 font-bold md:w-1/6">ITEM NAME:</label>
       <input
         id="itemName"
         v-model="filters.name"
         name="itemName"
-        class="mt-2 w-full rounded-md px-2 ring-1 ring-blood focus:ring-2 focus:ring-blood md:w-5/6"
+        class="mt-2 w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:w-5/6"
       />
       <div class="flex w-full flex-wrap">
         <div class="mt-2 flex w-full flex-wrap md:w-1/2">
@@ -18,7 +18,7 @@
             id="rarity"
             v-model="filters.rarity"
             name="rarity"
-            class="flex w-full rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood"
+            class="flex w-full rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
           >
             <option :key="null" :value="null" text="Any" />
             <option
@@ -35,7 +35,7 @@
             id="type"
             v-model="filters.type"
             name="type"
-            class="flex w-full rounded-md ring-1 ring-blood focus:ring-2 focus:ring-blood md:ml-2"
+            class="flex w-full rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:ml-2"
           >
             <option :key="null" :value="null" text="Any" />
             <option
@@ -56,20 +56,12 @@
             class="mb-1 accent-blood"
           />
         </div>
-        <div class="mt-4 flex w-full justify-end md:w-1/2">
-          <button
-            class="rounded-md bg-fog p-1 text-blood outline outline-1 outline-blood hover:bg-blood hover:text-fog"
-            @click="clearFilters()"
-          >
-            <Icon name="heroicons:x-mark" class="mb-1 mr-1" />
-            Clear Filters
-          </button>
-        </div>
       </div>
     </div>
   </div>
   <!-- END FILTER BOX -->
 </template>
+
 <script setup>
 const filters = defineModel({
   name: null,
@@ -84,4 +76,6 @@ function clearFilters() {
   filters.value.type = null;
   filters.value.isAttunementRequired = null;
 }
+
+defineExpose({ clearFilters });
 </script>

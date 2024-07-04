@@ -2,9 +2,19 @@
   <section class="docs-container container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Monster List</h1>
-      <FilterButton @show-filters="displayFilters = !displayFilters" />
+      <FilterButton
+        :show-clear-button="isAnyFilterSet"
+        :filter-count="filterCount"
+        :filters-shown="displayFilters"
+        @show-filters="displayFilters = !displayFilters"
+        @clear-filters="handleClearFilters"
+      />
     </div>
-    <MonsterFilterBox v-if="displayFilters" v-model="filters" />
+    <MonsterFilterBox
+      v-if="displayFilters"
+      ref="monsterFilterBox"
+      v-model="filters"
+    />
     <div>
       <div>
         <h3
@@ -34,6 +44,7 @@
 </template>
 
 <script setup>
+import { ref, computed } from 'vue';
 import ApiResultsTable from '~/components/ApiResultsTable.vue';
 import FilterButton from '~/components/FilterButton.vue';
 import MonsterFilterBox from '~/components/MonsterFilterBox.vue';
@@ -67,14 +78,33 @@ const ariaSort = computed(() => {
   };
 });
 
+const displayFilters = ref(false);
+const monsterFilterBox = ref(null);
+
+const isAnyFilterSet = computed(() => {
+  return Object.values(filters.value).some(
+    (value) => value !== null && value !== ''
+  );
+});
+
+const filterCount = computed(() => {
+  return Object.values(filters.value).filter(
+    (value) => value !== null && value !== ''
+  ).length;
+});
+
+function handleClearFilters() {
+  if (monsterFilterBox.value) {
+    monsterFilterBox.value.clearFilters();
+  }
+}
+
 function getAriaSort(columName) {
   if (currentSortProperty.value === columName) {
     return currentSortDir.value;
   }
   return null;
 }
-
-const displayFilters = ref(false);
 </script>
 
 <style scoped lang="scss">
