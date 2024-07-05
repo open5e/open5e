@@ -116,10 +116,4 @@
 </template>
 <script setup>
 const filters = defineModel({ default: () => copyDefaultMonsterFilter() });
-
-function clearFilters() {
-  filters.value = copyDefaultMonsterFilter();
-}
-
-defineExpose({ clearFilters });
 </script>

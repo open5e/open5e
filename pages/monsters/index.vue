@@ -35,7 +35,7 @@
         endpoint="monsters"
         :api-endpoint="API_ENDPOINTS.monsters"
         :cols="['type', 'cr', 'size', 'hit_points']"
-        :filters="filters"
+        v-model:filters="filters"
       />
     </div>
   </section>
@@ -85,9 +85,7 @@ const filterCount = computed(() => {
 });
 
 function handleClearFilters() {
-  if (monsterFilterBox.value) {
-    monsterFilterBox.value.clearFilters();
-  }
+  filters.value = copyDefaultMonsterFilter();
 }
 
 function getAriaSort(columName) {
