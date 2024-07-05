@@ -49,15 +49,8 @@ import MonsterFilterBox from '~/components/MonsterFilterBox.vue';
 
 const currentSortDir = ref('ascending');
 const currentSortProperty = ref('name');
-const filters = ref({
-  cr__lte: null,
-  cr__gte: null,
-  hpLow: null,
-  hpHigh: null,
-  name: null,
-  size: null,
-  type: null,
-});
+const empty_filter = copyDefaultMonsterFilter();
+const filters = ref(empty_filter);
 
 const { data: monsters } = useAllMonsters({
   fields: ['slug', 'name', 'cr', 'type', 'size', 'hit_points'].join(),
@@ -81,13 +74,13 @@ const monsterFilterBox = ref(null);
 
 const isAnyFilterSet = computed(() => {
   return Object.values(filters.value).some(
-    (value) => value !== null && value !== ''
+    (value) => value !== undefined && value !== ''
   );
 });
 
 const filterCount = computed(() => {
   return Object.values(filters.value).filter(
-    (value) => value !== null && value !== ''
+    (value) => value !== undefined && value !== ''
   ).length;
 });
 

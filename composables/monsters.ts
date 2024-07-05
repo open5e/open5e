@@ -1,12 +1,28 @@
 export type MonsterFilter = {
   name?: string;
-  challengeLow?: number;
-  challengeHigh?: number;
+  /** Challenge rating lower bound */
+  cr__gte?: number;
+  /** Challenge rating upper bound */
+  cr__lte?: number;
   hpLow?: number;
   hpHigh?: number;
   size?: string;
   type?: string;
 };
+
+export const DefaultMonsterFilter: Readonly<MonsterFilter> = {
+  name: undefined,
+  cr__gte: undefined,
+  cr__lte: undefined,
+  hpLow: undefined,
+  hpHigh: undefined,
+  size: undefined,
+  type: undefined,
+};
+
+export function copyDefaultMonsterFilter(): MonsterFilter {
+  return { ...DefaultMonsterFilter };
+}
 
 export const useAllMonsters = (params: Record<string, any> = {}) => {
   const { findMany } = useAPI();
@@ -30,8 +46,15 @@ export const filterMonsters = (
   filter: MonsterFilter
 ) => {
   const _mons = monsters;
-  const { challengeHigh, challengeLow, hpHigh, hpLow, name, size, type } =
-    filter;
+  const {
+    cr__lte: challengeHigh,
+    cr__gte: challengeLow,
+    hpHigh,
+    hpLow,
+    name,
+    size,
+    type,
+  } = filter;
 
   return _mons
     .filter((monster) =>

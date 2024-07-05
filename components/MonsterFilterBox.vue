@@ -10,6 +10,7 @@
       <input
         id="monsterName"
         v-model="filters.name"
+        placeholder="Any"
         name="monsterName"
         class="mt-2 w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:w-5/6"
       />
@@ -22,7 +23,7 @@
           name="challengeRtgLow"
           class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
         >
-          <option :key="null" :value="null" text="Any" />
+          <option :key="undefined" :value="undefined" text="Any" />
           <option
             v-for="[label, value] in MONSTER_CHALLENGE_RATINGS_MAP"
             :key="value"
@@ -39,7 +40,7 @@
           name="challengeRtgHigh"
           class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
         >
-          <option :key="null" :value="null" text="Any" />
+          <option :key="undefined" :value="undefined" text="Any" />
           <option
             v-for="[label, value] in MONSTER_CHALLENGE_RATINGS_MAP"
             :key="value"
@@ -56,6 +57,7 @@
         <input
           id="hpLow"
           v-model="filters.hpLow"
+          placeholder="Any"
           type="number"
           min="0"
           max="9999"
@@ -69,6 +71,7 @@
         <input
           id="hpHigh"
           v-model="filters.hpHigh"
+          placeholder="Any"
           type="number"
           min="0"
           max="9999"
@@ -86,7 +89,7 @@
         name="size"
         class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
       >
-        <option :key="null" :value="null" text="Any" />
+        <option :key="undefined" :value="undefined" text="Any" />
         <option v-for="size in MONSTER_SIZES_LIST" :key="size" v-text="size" />
       </select>
     </div>
@@ -99,7 +102,7 @@
           name="type"
           class="w-full rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
         >
-          <option :key="null" :value="null" text="Any" />
+          <option :key="undefined" :value="undefined" text="Any" />
           <option
             v-for="monsterType in MONSTER_TYPES_LIST"
             :key="monsterType"
@@ -112,24 +115,10 @@
   <!-- END FILTER BOX -->
 </template>
 <script setup>
-const filters = defineModel({
-  name: null,
-  cr__lte: null,
-  cr__gte: null,
-  hpLow: null,
-  hpHigh: null,
-  size: null,
-  type: null,
-});
+const filters = defineModel({ default: () => copyDefaultMonsterFilter() });
 
 function clearFilters() {
-  filters.value.name = null;
-  filters.value.cr__lte = null;
-  filters.value.cr__gte = null;
-  filters.value.hpLow = null;
-  filters.value.hpHigh = null;
-  filters.value.size = null;
-  filters.value.type = null;
+  filters.value = copyDefaultMonsterFilter();
 }
 
 defineExpose({ clearFilters });
