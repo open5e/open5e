@@ -9,7 +9,7 @@
       >
       <input
         id="monsterName"
-        v-model="filters.name"
+        v-model="filter.name"
         placeholder="Any"
         name="monsterName"
         class="mt-2 w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:w-5/6"
@@ -19,7 +19,7 @@
         <label for="challengeRtgLow" class="w-1/2">From:</label>
         <select
           id="challengeRtgLow"
-          v-model="filters.cr__gte"
+          v-model="filter.cr__gte"
           name="challengeRtgLow"
           class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
         >
@@ -36,7 +36,7 @@
         <label for="challengeRtgHigh" class="w-1/2">To:</label>
         <select
           id="challengeRtgHigh"
-          v-model="filters.cr__lte"
+          v-model="filter.cr__lte"
           name="challengeRtgHigh"
           class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
         >
@@ -56,7 +56,7 @@
         <label for="hpLow" class="w-1/2">From (low):</label>
         <input
           id="hpLow"
-          v-model="filters.hpLow"
+          v-model="filter.hpLow"
           placeholder="Any"
           type="number"
           min="0"
@@ -70,7 +70,7 @@
         <label for="hpHigh" class="w-1/2">To (high):</label>
         <input
           id="hpHigh"
-          v-model="filters.hpHigh"
+          v-model="filter.hpHigh"
           placeholder="Any"
           type="number"
           min="0"
@@ -85,7 +85,7 @@
       <label for="size" class="w-1/2 font-bold">SIZE:</label>
       <select
         id="size"
-        v-model="filters.size"
+        v-model="filter.size"
         name="size"
         class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
       >
@@ -98,7 +98,7 @@
         <label for="type" class="w-full font-bold">TYPE:</label>
         <select
           id="type"
-          v-model="filters.type"
+          v-model="filter.type"
           name="type"
           class="w-full rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
         >
@@ -115,5 +115,5 @@
   <!-- END FILTER BOX -->
 </template>
 <script setup>
-const filters = defineModel({ default: () => copyDefaultMonsterFilter() });
+const filter = defineModel({ default: () => copyDefaultMonsterFilter() });
 </script>

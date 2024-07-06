@@ -7,7 +7,7 @@
       endpoint="spells"
       :api-endpoint="API_ENDPOINTS.spells"
       :cols="['school', 'spell_level', 'components', 'dnd_class']"
-      v-model:filters="filters"
+      v-model:filter="filter"
     />
   </section>
 </template>

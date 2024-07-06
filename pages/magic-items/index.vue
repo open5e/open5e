@@ -7,7 +7,6 @@
       endpoint="magic-items"
       :api-endpoint="API_ENDPOINTS.magicitems"
       :cols="['type', 'rarity', 'requires_attunement']"
-      v-model:filters="filters"
     />
   </section>
 </template>

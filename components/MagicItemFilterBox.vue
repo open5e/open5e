@@ -7,7 +7,7 @@
       <label for="itemName" class="pt-1 font-bold md:w-1/6">ITEM NAME:</label>
       <input
         id="itemName"
-        v-model="filters.name"
+        v-model="filter.name"
         name="itemName"
         class="mt-2 w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:w-5/6"
       />
@@ -16,7 +16,7 @@
           <span class="mr-2 w-full font-bold">RARITY:</span>
           <select
             id="rarity"
-            v-model="filters.rarity"
+            v-model="filter.rarity"
             name="rarity"
             class="flex w-full rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
           >
@@ -33,7 +33,7 @@
           <span class="mr-2 w-full font-bold md:ml-2">TYPE:</span>
           <select
             id="type"
-            v-model="filters.type"
+            v-model="filter.type"
             name="type"
             class="flex w-full rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:ml-2"
           >
@@ -50,7 +50,7 @@
           <span class="mr-2 font-bold">REQUIRES ATTUNEMENT:</span>
           <input
             id="attunement"
-            v-model="filters.isAttunementRequired"
+            v-model="filter.isAttunementRequired"
             type="checkbox"
             name="attunement"
             class="mb-1 accent-blood"
@@ -63,19 +63,19 @@
 </template>
 
 <script setup>
-const filters = defineModel({
+const filter = defineModel({
   name: null,
   rarity: null,
   type: null,
   isAttunementRequired: null,
 });
 
-function clearFilters() {
-  filters.value.name = null;
-  filters.value.rarity = null;
-  filters.value.type = null;
-  filters.value.isAttunementRequired = null;
+function clearFilter() {
+  filter.value.name = null;
+  filter.value.rarity = null;
+  filter.value.type = null;
+  filter.value.isAttunementRequired = null;
 }
 
-defineExpose({ clearFilters });
+defineExpose({ clearFilter });
 </script>

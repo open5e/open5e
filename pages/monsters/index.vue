@@ -5,15 +5,15 @@
       <FilterButton
         :show-clear-button="canClearFilter"
         :filter-count="enabeledFiltersCount"
-        :filters-shown="displayFilters"
-        @show-filters="displayFilters = !displayFilters"
-        @clear-filters="clear"
+        :filter-shown="displayFilter"
+        @show-filter="displayFilter = !displayFilter"
+        @clear-filter="clear"
       />
     </div>
     <MonsterFilterBox
-      v-if="displayFilters"
+      v-if="displayFilter"
       ref="monsterFilterBox"
-      v-model="filters"
+      v-model="filter"
     />
     <div>
       <div>
@@ -28,7 +28,7 @@
         endpoint="monsters"
         :api-endpoint="API_ENDPOINTS.monsters"
         :cols="['type', 'cr', 'size', 'hit_points']"
-        v-model:filters="filters"
+        v-model:filter="filter"
       />
     </div>
   </section>
@@ -39,8 +39,8 @@ import ApiResultsTable from '~/components/ApiResultsTable.vue';
 import FilterButton from '~/components/FilterButton.vue';
 import MonsterFilterBox from '~/components/MonsterFilterBox.vue';
 
-const displayFilters = ref(false);
+const displayFilter = ref(false);
 
-const { filters, canClearFilter, enabeledFiltersCount, clear } =
+const { filter, canClearFilter, enabeledFiltersCount, clear } =
   useFilterState(DefaultMonsterFilter);
 </script>

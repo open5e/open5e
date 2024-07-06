@@ -7,7 +7,7 @@
       endpoint="characters"
       :api-endpoint="API_ENDPOINTS.sections"
       :cols="['document__title', 'document__slug']"
-      v-model:filters="characterFilter"
+      v-model:filter="characterFilter"
     />
   </section>
 </template>

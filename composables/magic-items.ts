@@ -1,5 +1,5 @@
 export const useMagicItems = (
-  filters: MagicItemsFilter = {},
+  filter: MagicItemsFilter = {},
   queryParams: Record<string, any> = {}
 ) => {
   const { findMany } = useAPI();
@@ -23,26 +23,26 @@ export const useMagicItems = (
       .filter((item) => {
         return item.name
           .toLowerCase()
-          .includes(filters.name?.toLowerCase() ?? '');
+          .includes(filter.name?.toLowerCase() ?? '');
       })
       .filter((item) => {
         return item.rarity
           .toLowerCase()
-          .includes(filters.rarity?.toLowerCase() ?? '');
+          .includes(filter.rarity?.toLowerCase() ?? '');
       })
       .filter((item) =>
-        filters.type
-          ? item.type.toLowerCase() === filters.type.toLowerCase()
+        filter.type
+          ? item.type.toLowerCase() === filter.type.toLowerCase()
           : true
       )
       .filter((item) =>
-        filters.rarity
-          ? item.rarity.toLowerCase() === filters.rarity.toLowerCase()
+        filter.rarity
+          ? item.rarity.toLowerCase() === filter.rarity.toLowerCase()
           : true
       )
       .filter((item) =>
-        filters.isAttunementRequired != null
-          ? (filters.isAttunementRequired &&
+        filter.isAttunementRequired != null
+          ? (filter.isAttunementRequired &&
               item.requires_attunement === 'requires attunement') ||
             item.requires_attunement === ''
           : true

@@ -63,11 +63,11 @@ const props = defineProps({
   apiEndpoint: { type: String },
   itemsPerPage: { type: Number, default: 50 },
   cols: { type: Array, default: () => [] },
-  filters: { type: Object, default: () => ({}) },
+  filter: { type: Object, default: () => ({}) },
   // TODO: make columns into object with seperate display fields and sort keys
 });
 
-const filters = defineModel('filters', { default: () => ({}) });
+const filter = defineModel('filter', { default: () => ({}) });
 
 const { data, pageNo, firstPage, prevPage, nextPage, lastPage, lastPageNo } =
   useFindPaginated({
@@ -75,7 +75,7 @@ const { data, pageNo, firstPage, prevPage, nextPage, lastPage, lastPageNo } =
     itemsPerPage: props.itemsPerPage,
     sortByProperty: sortBy,
     isSortDescending: isSortDescending,
-    filters: filters,
+    filter: filter,
     params: {
       fields: ['slug', 'name'].concat(props.cols).join(),
     },
@@ -83,8 +83,8 @@ const { data, pageNo, firstPage, prevPage, nextPage, lastPage, lastPageNo } =
 
 const results = computed(() => data.value?.results);
 
-watch(filters, () => {
-  console.log('filters changed', filters.value);
+watch(filter, () => {
+  console.log('filter changed', filter.value);
 });
 
 const updateSortState = (property) => {

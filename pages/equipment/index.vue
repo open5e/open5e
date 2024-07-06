@@ -7,7 +7,7 @@
       endpoint="characters"
       :api-endpoint="API_ENDPOINTS.sections"
       :cols="['document__title', 'document__slug']"
-      v-model:filters="characterFilter"
+      v-model:filter="filter"
     />
   </section>
 </template>
@@ -15,7 +15,7 @@
 <script setup>
 import ApiResultsTable from '~/components/ApiResultsTable.vue';
 
-const characterFilter = ref({
+const filter = ref({
   parent__in: 'Equipment',
 });
 </script>

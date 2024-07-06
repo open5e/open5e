@@ -7,7 +7,7 @@
       endpoint="running"
       :api-endpoint="API_ENDPOINTS.sections"
       :cols="['document__title', 'document__slug']"
-      v-model:filters="rulesFilter"
+      v-model:filter="filter"
     />
   </section>
 </template>
@@ -15,7 +15,7 @@
 <script setup>
 import ApiResultsTable from '~/components/ApiResultsTable.vue';
 
-const rulesFilter = ref({
+const filter = ref({
   parent__in: 'Rules',
 });
 </script>
