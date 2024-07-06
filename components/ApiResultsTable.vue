@@ -77,7 +77,7 @@ const { data, pageNo, firstPage, prevPage, nextPage, lastPage, lastPageNo } =
     isSortDescending: isSortDescending,
     filters: filters,
     params: {
-      fields: ['name'].concat(props.cols).join(),
+      fields: ['slug', 'name'].concat(props.cols).join(),
     },
   });
 
