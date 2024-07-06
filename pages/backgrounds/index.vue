@@ -1,26 +1,16 @@
 <template>
   <section class="docs-container container">
-    <h1>Backgrounds</h1>
-    <api-results-table :data="backgrounds" endpoint="backgrounds" />
-    <div
-      v-if="backgrounds && backgrounds.length === 0"
-      class="flex w-full flex-wrap pt-2 text-lg"
-    >
-      <div class="flex w-full">
-        There are no items for this category that align with the corresponding
-        sources you selected.
-      </div>
-      <div class="flex w-full pt-2">
-        Please edit your selected sources for more results.
-      </div>
+    <div class="filter-header-wrapper">
+      <h1 class="filter-header">Backgrounds</h1>
     </div>
+    <api-results-table
+      endpoint="backgrounds"
+      :api-endpoint="API_ENDPOINTS.backgrounds"
+      :cols="['document__title', 'document__slug']"
+    />
   </section>
 </template>
 
 <script setup>
 import ApiResultsTable from '~/components/ApiResultsTable.vue';
-
-const { data: backgrounds } = useFindMany(API_ENDPOINTS.backgrounds, {
-  fields: ['name', 'slug', 'document__title', 'document__slug'].join(),
-});
 </script>

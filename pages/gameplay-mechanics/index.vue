@@ -1,15 +1,21 @@
 <template>
   <section class="docs-container container">
-    <h1>Gameplay Mechanics</h1>
+    <div class="filter-header-wrapper">
+      <h1 class="filter-header">Gameplay Mechanics</h1>
+    </div>
     <api-results-table
-      v-if="sections"
-      :data="sections"
       endpoint="gameplay-mechanics"
+      :api-endpoint="API_ENDPOINTS.sections"
+      :cols="['document__title', 'document__slug']"
+      v-model:filters="characterFilter"
     />
   </section>
 </template>
 
 <script setup>
 import ApiResultsTable from '~/components/ApiResultsTable.vue';
-const { data: sections } = useSections('Gameplay Mechanics');
+
+const characterFilter = ref({
+  parent__in: 'Gameplay Mechanics',
+});
 </script>

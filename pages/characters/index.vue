@@ -1,23 +1,21 @@
 <template>
   <section class="docs-container container">
-    <h1>Creating Characters</h1>
-    <api-results-table :data="sections" endpoint="characters" />
-    <div
-      v-if="sections && sections.length === 0"
-      class="flex w-full flex-wrap pt-2 text-lg"
-    >
-      <div class="flex w-full">
-        There are no items for this category that align with the corresponding
-        sources you selected.
-      </div>
-      <div class="flex w-full pt-2">
-        Please edit your selected sources for more results.
-      </div>
+    <div class="filter-header-wrapper">
+      <h1 class="filter-header">Creating Characters</h1>
     </div>
+    <api-results-table
+      endpoint="characters"
+      :api-endpoint="API_ENDPOINTS.sections"
+      :cols="['document__title', 'document__slug']"
+      v-model:filters="characterFilter"
+    />
   </section>
 </template>
 
 <script setup>
 import ApiResultsTable from '~/components/ApiResultsTable.vue';
-const { data: sections } = useSections('Characters', 'Character Advancement');
+
+const characterFilter = ref({
+  parent__in: 'Characters, Character Advancement',
+});
 </script>

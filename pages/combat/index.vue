@@ -1,17 +1,21 @@
 <template>
   <section class="docs-container container">
-    <h1>Combat</h1>
+    <div class="filter-header-wrapper">
+      <h1 class="filter-header">Combat</h1>
+    </div>
     <api-results-table
-      v-if="combatSections"
-      :data="combatSections"
-      endpoint="combat"
+      endpoint="characters"
+      :api-endpoint="API_ENDPOINTS.sections"
+      :cols="['document__title', 'document__slug']"
+      v-model:filters="characterFilter"
     />
   </section>
 </template>
 
 <script setup>
 import ApiResultsTable from '~/components/ApiResultsTable.vue';
-const { data: combatSections } = useSections('Combat');
-</script>
 
-<style></style>
+const characterFilter = ref({
+  parent__in: 'Combat',
+});
+</script>

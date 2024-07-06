@@ -1,20 +1,16 @@
 <template>
   <section class="docs-container container">
-    <h1>Conditions</h1>
+    <div class="filter-header-wrapper">
+      <h1 class="filter-header">Conditions</h1>
+    </div>
     <api-results-table
-      v-if="conditions"
-      :data="conditions"
       endpoint="conditions"
+      :api-endpoint="API_ENDPOINTS.conditions"
+      :cols="['document__title', 'document__slug']"
     />
   </section>
 </template>
 
 <script setup>
 import ApiResultsTable from '~/components/ApiResultsTable.vue';
-
-const { data: conditions } = useFindMany(API_ENDPOINTS.conditions, {
-  fields: ['name', 'slug', 'document__title', 'document__slug'].join(),
-});
 </script>
-
-<style></style>
