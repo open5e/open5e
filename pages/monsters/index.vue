@@ -3,11 +3,11 @@
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Monster List</h1>
       <FilterButton
-        :show-clear-button="isAnyFilterSet"
-        :filter-count="filterCount"
+        :show-clear-button="canClearFilter"
+        :filter-count="enabeledFiltersCount"
         :filters-shown="displayFilters"
         @show-filters="displayFilters = !displayFilters"
-        @clear-filters="handleClearFilters"
+        @clear-filters="clear"
       />
     </div>
     <MonsterFilterBox
@@ -35,30 +35,12 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
 import ApiResultsTable from '~/components/ApiResultsTable.vue';
 import FilterButton from '~/components/FilterButton.vue';
 import MonsterFilterBox from '~/components/MonsterFilterBox.vue';
 
-const empty_filter = copyDefaultMonsterFilter();
-const filters = ref(empty_filter);
-
 const displayFilters = ref(false);
-const monsterFilterBox = ref(null);
 
-const isAnyFilterSet = computed(() => {
-  return Object.values(filters.value).some(
-    (value) => value !== undefined && value !== ''
-  );
-});
-
-const filterCount = computed(() => {
-  return Object.values(filters.value).filter(
-    (value) => value !== undefined && value !== ''
-  ).length;
-});
-
-function handleClearFilters() {
-  filters.value = copyDefaultMonsterFilter();
-}
+const { filters, canClearFilter, enabeledFiltersCount, clear } =
+  useFilterState(DefaultMonsterFilter);
 </script>
