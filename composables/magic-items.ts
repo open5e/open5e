@@ -2,14 +2,18 @@ export type MagicItemFilter = {
   name?: string;
   rarity?: string;
   type?: typeof MAGIC_ITEMS_TYPES;
-  isAttunementRequired?: boolean;
+  requires_attunement?: 'requires attunement' | '';
 };
 
 export const DefaultMagicItemFilter: Readonly<MagicItemFilter> = {
   name: undefined,
   rarity: undefined,
   type: undefined,
-  isAttunementRequired: undefined,
+  requires_attunement: undefined,
+};
+
+export const copyMagicItemFilter = (): MagicItemFilter => {
+  return { ...DefaultMagicItemFilter };
 };
 
 export const useMagicItems = (

@@ -50,7 +50,8 @@
           <span class="mr-2 font-bold">REQUIRES ATTUNEMENT:</span>
           <input
             id="attunement"
-            v-model="filter.isAttunementRequired"
+            :checked="attunement"
+            @input="onAttunementChange"
             type="checkbox"
             name="attunement"
             class="mb-1 accent-blood"
@@ -63,5 +64,16 @@
 </template>
 
 <script setup>
-const filter = defineModel({ default: DefaultMagicItemFilter });
+const filter = defineModel({ default: copyMagicItemFilter() });
+
+const onAttunementChange = () => {
+  console.log('onAttunementChange');
+  filter.value.requires_attunement = filter.value.requires_attunement
+    ? ''
+    : 'requires attunement';
+};
+
+const attunement = computed(() =>
+  filter.value.isAttunementRequired ? true : false
+);
 </script>
