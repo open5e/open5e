@@ -13,7 +13,7 @@
       @click="showFilter()"
     >
       <Icon name="heroicons:funnel" class="mr-1" />
-      {{ filtersShown ? 'Hide' : 'Show' }} Filters
+      {{ filterShown ? 'Hide' : 'Show' }} Filters
     </button>
   </div>
 </template>
@@ -28,7 +28,7 @@ const props = defineProps({
     type: Number,
     default: 0,
   },
-  filtersShown: {
+  filterShown: {
     type: Boolean,
     default: false,
   },
