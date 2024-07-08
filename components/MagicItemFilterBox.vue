@@ -7,7 +7,7 @@
       <label for="itemName" class="pt-1 font-bold md:w-1/6">ITEM NAME:</label>
       <input
         id="itemName"
-        v-model="filter.name"
+        v-model="filter.search"
         name="itemName"
         class="mt-2 w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:w-5/6"
       />

@@ -1,5 +1,6 @@
 export type MonsterFilter = {
-  name?: string;
+  /** Name contains */
+  search?: string;
   /** Challenge rating lower bound */
   cr__gte?: number;
   /** Challenge rating upper bound */
@@ -11,7 +12,7 @@ export type MonsterFilter = {
 };
 
 export const DefaultMonsterFilter: Readonly<MonsterFilter> = {
-  name: undefined,
+  search: undefined,
   cr__gte: undefined,
   cr__lte: undefined,
   hpLow: undefined,
@@ -51,7 +52,7 @@ export const filterMonsters = (
     cr__gte: challengeLow,
     hpHigh,
     hpLow,
-    name,
+    search: name,
     size,
     type,
   } = filter;
