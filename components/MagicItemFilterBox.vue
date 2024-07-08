@@ -20,7 +20,7 @@
             name="rarity"
             class="flex w-full rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
           >
-            <option :key="null" :value="null" text="Any" />
+            <option :key="undefined" :value="undefined" text="Any" />
             <option
               v-for="rtg in MAGIC_ITEMS_RARITES"
               :key="rtg"
@@ -37,7 +37,7 @@
             name="type"
             class="flex w-full rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:ml-2"
           >
-            <option :key="null" :value="null" text="Any" />
+            <option :key="undefined" :value="undefined" text="Any" />
             <option
               v-for="rtg in MAGIC_ITEMS_TYPES"
               :key="rtg"
@@ -63,19 +63,5 @@
 </template>
 
 <script setup>
-const filter = defineModel({
-  name: null,
-  rarity: null,
-  type: null,
-  isAttunementRequired: null,
-});
-
-function clearFilter() {
-  filter.value.name = null;
-  filter.value.rarity = null;
-  filter.value.type = null;
-  filter.value.isAttunementRequired = null;
-}
-
-defineExpose({ clearFilter });
+const filter = defineModel({ default: DefaultMagicItemFilter });
 </script>

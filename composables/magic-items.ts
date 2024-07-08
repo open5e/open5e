@@ -1,3 +1,17 @@
+export type MagicItemFilter = {
+  name?: string;
+  rarity?: string;
+  type?: typeof MAGIC_ITEMS_TYPES;
+  isAttunementRequired?: boolean;
+};
+
+export const DefaultMagicItemFilter: Readonly<MagicItemFilter> = {
+  name: undefined,
+  rarity: undefined,
+  type: undefined,
+  isAttunementRequired: undefined,
+};
+
 export const useMagicItems = (
   filter: MagicItemsFilter = {},
   queryParams: Record<string, any> = {}
