@@ -29,7 +29,7 @@ export const filterMonsters = (
   monsters: Record<string, any>[],
   filter: MonsterFilter
 ) => {
-  const _mons = monsters;
+  const _mons = unref(monsters);
   const { challengeHigh, challengeLow, hpHigh, hpLow, name, size, type } =
     filter;
 

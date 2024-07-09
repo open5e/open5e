@@ -41,7 +41,7 @@ export const useAPI = () => {
         },
       });
 
-      return res.data.results as Record<string, any>[];
+      return (res.data.results as Record<string, string | number>[]) ?? [];
     },
     get: async (...parts: string[]) => {
       const route = '/' + parts.join('/');
@@ -53,13 +53,14 @@ export const useAPI = () => {
 
 export const useFindMany = (
   endpoint: MaybeRef<string>,
-  params?: MaybeRef<Record<string, any>>
+  params?: MaybeRef<Record<string, string | number>>
 ) => {
   const { findMany } = useAPI();
   const { sources } = useSourcesList();
   return useQuery({
     queryKey: ['findMany', endpoint, sources, params],
-    queryFn: () => findMany(unref(endpoint), unref(sources), unref(params)),
+    queryFn: () =>
+      unref(findMany(unref(endpoint), unref(sources), unref(params))),
   });
 };
 
