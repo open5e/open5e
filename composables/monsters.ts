@@ -8,7 +8,7 @@ export type MonsterFilter = {
   type?: string;
 };
 
-export const useAllMonsters = (params: Record<string, any> = {}) => {
+export const useAllMonsters = (params: Record<string, string> = {}) => {
   const { findMany } = useAPI();
   const { sources } = useSourcesList();
   return useQuery({
@@ -64,7 +64,7 @@ export const useMonster = (slug: string) => {
         modifier: formatMod(calcMod(monster[ability])),
         save: monster[`${ability}_save`],
       }));
-      return monster;
+      return monster as Record<string, string>;
     },
   });
 };

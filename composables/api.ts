@@ -64,14 +64,11 @@ export const useFindMany = (
   });
 };
 
-export const useFindOne = (
-  endpoint: MaybeRef<string>,
-  slug: MaybeRef<string>
-) => {
+export const useFindOne = (endpoint: string, slug: string) => {
   const { get } = useAPI();
   return useQuery({
     queryKey: ['get', endpoint, slug],
-    queryFn: () => get(unref(endpoint), unref(slug)),
+    queryFn: () => get(endpoint, slug),
   });
 };
 
@@ -93,7 +90,9 @@ export const useSections = (...categories: string[]) => {
     fields: ['slug', 'name', 'parent'].join(),
   });
   const filtered_sections = computed(() =>
-    sections.value?.filter((section) => categories.includes(section.parent))
+    sections.value?.filter((section) =>
+      categories.includes(`${section.parent}`)
+    )
   );
   return { data: filtered_sections, isPending };
 };

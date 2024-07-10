@@ -1,4 +1,3 @@
-import { ref } from 'vue';
 import { test, expect } from 'vitest';
 import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
 import MonstersIndex from '~/pages/monsters/index.vue';
