@@ -10,8 +10,6 @@ test('/spells page can mount', async () => {
 
 const { data } = useAllSpells();
 
-// TODO - I believe that the following test is failing because of the way
-
 test('/spells renders one link per spell', async () => {
   const numberOfAnchorTags = (page.html().match(/<a /g) || []).length;
   expect(numberOfAnchorTags).toEqual(data.value.length);
