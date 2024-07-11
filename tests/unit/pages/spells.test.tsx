@@ -27,6 +27,22 @@ mockNuxtImport('useAllSpells', async () => {
           component: 'V, S',
           dnd_class: 'Sorcerer, Wizard',
         },
+        {
+          slug: 'burning-hands',
+          name: 'Burning Hands',
+          school: 'Evocation',
+          level_int: 1,
+          component: 'V, S',
+          dnd_class: 'Cleric, Sorcerer, Warlock, Wizard',
+        },
+        {
+          slug: 'misty-step',
+          name: 'Misty Step',
+          school: 'Conjuration',
+          level_int: 2,
+          component: 'V',
+          dnd_class: 'Druid, Paladin, Sorcerer, Warlock, Wizard',
+        },
       ],
     },
   });
