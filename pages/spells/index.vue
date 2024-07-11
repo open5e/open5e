@@ -64,7 +64,6 @@ const spellPage = computed(() => {
     return [];
   }
 
-  console.log(data.value);
   return sortByField(
     data.value,
     currentSortProperty.value,
