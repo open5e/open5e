@@ -53,7 +53,7 @@
       <h2>{{ classData.subtypes_name }}</h2>
       <ul v-for="archetype in classData.archetypes" :key="archetype">
         <li>
-          <nuxt-link :to="`${classData.slug}/${archetype.slug}`" tag="a">
+          <nuxt-link :to="`${classData.slug}/${archetype.slug}`">
             {{ archetype.name }}
           </nuxt-link>
         </li>

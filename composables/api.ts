@@ -78,9 +78,7 @@ export const useSubclass = (className: string, subclass: string) => {
     queryKey: ['subclass', className, subclass],
     queryFn: async () => {
       const class_result = await api.get(API_ENDPOINTS.classes, className);
-      return {
-        result: class_result.archetypes.find((a: any) => a.slug === subclass),
-      };
+      return class_result.archetypes.find((a: any) => a.slug === subclass);
     },
   });
 };
