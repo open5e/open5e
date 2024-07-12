@@ -1,5 +1,8 @@
+import { debouncedRef } from '@vueuse/core';
+
 export function useFilterState<T extends Record<string, any>>(
-  initialFilters: T
+  initialFilters: T,
+  debounceTimeMs = 300
 ) {
   const filter = ref({ ...initialFilters }) as Ref<T>;
 
@@ -15,5 +18,13 @@ export function useFilterState<T extends Record<string, any>>(
     filter.value = { ...initialFilters };
   }
 
-  return { clear, enabeledFiltersCount, filter, canClearFilter };
+  const debouncedFilter = debouncedRef(filter, debounceTimeMs);
+
+  return {
+    clear,
+    enabeledFiltersCount,
+    filter,
+    debouncedFilter,
+    canClearFilter,
+  };
 }

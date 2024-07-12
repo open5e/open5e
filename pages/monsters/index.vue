@@ -28,7 +28,7 @@
         endpoint="monsters"
         :api-endpoint="API_ENDPOINTS.monsters"
         :cols="['type', 'cr', 'size', 'hit_points']"
-        v-model:filter="filter"
+        v-model:filter="debouncedFilter"
       />
     </div>
   </section>
@@ -41,6 +41,14 @@ import MonsterFilterBox from '~/components/MonsterFilterBox.vue';
 
 const displayFilter = ref(false);
 
-const { filter, canClearFilter, enabeledFiltersCount, clear } =
+const { filter, debouncedFilter, canClearFilter, enabeledFiltersCount, clear } =
   useFilterState(DefaultMonsterFilter);
+
+watch(filter, () => {
+  console.log('A - Filter changed');
+});
+
+watch(debouncedFilter, () => {
+  console.log('B - Debounced changed');
+});
 </script>
