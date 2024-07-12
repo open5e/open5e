@@ -1,13 +1,11 @@
 <template>
   <main v-if="background" class="docs-container container">
     <section>
-      <h1>
-        <span>{{ background.name }}</span>
-        <source-tag
-          :title="background.document__slug"
-          :text="background.document__slug"
-        />
-      </h1>
+      <h1>{{ background.name }}</h1>
+      <source-tag
+        :title="background.document__slug"
+        :text="background.document__slug"
+      />
       <md-viewer :text="background.desc" />
     </section>
     <section>
@@ -44,6 +42,6 @@
 <script setup>
 const { data: background } = useFindOne(
   API_ENDPOINTS.backgrounds,
-  useRoute().params.background
+  useRoute().params.id
 );
 </script>

@@ -4,8 +4,6 @@ import MagicItemsPage from '~/pages/magic-items/index.vue';
 
 const page = await mountSuspended(MagicItemsPage);
 
-const magic_items_filters = {} as MagicItemsFilter;
-
 const fields = {
   fields: [
     'slug',
@@ -17,7 +15,7 @@ const fields = {
     'document__slug',
   ].join(),
 };
-const { data: magic_items } = useMagicItems(magic_items_filters, fields);
+const { data: magic_items } = useMagicItems({}, fields);
 
 // tests
 test('/magic-items page can mount', async () => {
