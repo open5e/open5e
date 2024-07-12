@@ -51,10 +51,10 @@
           <input
             id="attunement"
             :checked="attunement"
-            @input="onAttunementChange"
             type="checkbox"
             name="attunement"
             class="mb-1 accent-blood"
+            @input="onAttunementChange"
           />
         </div>
       </div>
@@ -64,7 +64,7 @@
 </template>
 
 <script setup>
-const filter = defineModel({ default: copyMagicItemFilter() });
+const filter = defineModel({ default: copyMagicItemFilter(), type: Object });
 
 const onAttunementChange = () => {
   console.log('onAttunementChange');

@@ -115,5 +115,8 @@
   <!-- END FILTER BOX -->
 </template>
 <script setup>
-const filter = defineModel({ default: copyDefaultMonsterFilter() });
+const filter = defineModel({
+  type: Object,
+  default: copyDefaultMonsterFilter(),
+});
 </script>

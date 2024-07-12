@@ -22,13 +22,13 @@
           class="sr-only"
           tabindex="-1"
           @keyup.esc="focusFilter"
-        ></h3>
+        />
       </div>
       <api-results-table
+        v-model="debouncedFilter"
         endpoint="monsters"
         :api-endpoint="API_ENDPOINTS.monsters"
         :cols="['type', 'cr', 'size', 'hit_points']"
-        v-model:filter="debouncedFilter"
       />
     </div>
   </section>

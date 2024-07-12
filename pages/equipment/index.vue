@@ -4,10 +4,10 @@
       <h1 class="filter-header">Equipment</h1>
     </div>
     <api-results-table
+      v-model="filter"
       endpoint="characters"
       :api-endpoint="API_ENDPOINTS.sections"
       :cols="['document__title', 'document__slug']"
-      v-model:filter="filter"
     />
   </section>
 </template>

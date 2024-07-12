@@ -22,13 +22,13 @@
           class="sr-only"
           tabindex="-1"
           @keyup.esc="focusFilter"
-        ></h3>
+        />
       </div>
       <api-results-table
+        v-model="filter"
         endpoint="magic-items"
         :api-endpoint="API_ENDPOINTS.magicitems"
         :cols="['type', 'rarity', 'requires_attunement']"
-        v-model:filter="filter"
       />
     </div>
   </section>
