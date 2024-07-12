@@ -11,9 +11,8 @@ test('/classes/[className]/[subclass] page can mount', async () => {
 
 test('/classes/[className]/[subclass] page renders title', async () => {
   const title = page.find('h1');
-  console.log(subclass);
   expect(title.exists()).toBe(true);
-  // expect(title.text()).toContain(subclass.name);
+  expect(title.text()).toContain(subclass.name);
 });
 
 // mock input for useFindOne() composable
