@@ -1,11 +1,7 @@
 function loadSourcesFromLocalStorage() {
-  if (process.client) {
-    const saved_sources = localStorage.getItem('sources');
-    return saved_sources ? JSON.parse(saved_sources) : [];
-  } else {
-    // Skip on server
-    return [];
-  }
+  if (!process.client) return []; // skip on server
+  const saved_sources = localStorage.getItem('sources');
+  return saved_sources ? JSON.parse(saved_sources) : [];
 }
 
 function writeSourcesToLocalStorage(sourcesList: string[]) {

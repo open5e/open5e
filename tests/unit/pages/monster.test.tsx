@@ -1,11 +1,15 @@
 import { test, expect } from 'vitest';
-import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
+import {
+  mockComponent,
+  mockNuxtImport,
+  mountSuspended,
+} from '@nuxt/test-utils/runtime';
 import MonsterPage from '~/pages/monsters/[id].vue';
 
 const page = await mountSuspended(MonsterPage);
 
 const { id } = useRoute().params;
-const { data: monster } = useMonster(id);
+const { data: monster } = useMonster(Array.isArray(id) ? id[0] : id);
 
 test('/monsters/[id] page can mount', async () => {
   expect(page);
@@ -150,3 +154,7 @@ mockNuxtImport('useMonster', () => {
     },
   });
 });
+
+// mockComponent('InlineRoller', () => {
+//   return defineComponent({});
+// });
