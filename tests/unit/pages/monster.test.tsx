@@ -154,7 +154,3 @@ mockNuxtImport('useMonster', () => {
     },
   });
 });
-
-// mockComponent('InlineRoller', () => {
-//   return defineComponent({});
-// });

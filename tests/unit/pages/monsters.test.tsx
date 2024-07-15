@@ -4,6 +4,17 @@ import MonstersIndex from '~/pages/monsters/index.vue';
 
 const page = await mountSuspended(MonstersIndex);
 
+test('/monsters page can mount', async () => {
+  expect(page);
+});
+
+const { data: monsters } = useAllMonsters();
+
+test('/monsters renders one link per monster', async () => {
+  const numberOfAnchorTags = (page.html().match(/<a href/g) || []).length;
+  expect(numberOfAnchorTags).toEqual(monsters.length);
+});
+
 mockNuxtImport('useAllMonsters', () => {
   return () => ({
     data: [
@@ -33,15 +44,4 @@ mockNuxtImport('useAllMonsters', () => {
       },
     ],
   });
-});
-
-test('/monsters page can mount', async () => {
-  expect(page);
-});
-
-const { data: monsters } = useAllMonsters();
-
-test('/monsters renders one link per monster', async () => {
-  const numberOfAnchorTags = (page.html().match(/<a href/g) || []).length;
-  expect(numberOfAnchorTags).toEqual(monsters.length);
 });

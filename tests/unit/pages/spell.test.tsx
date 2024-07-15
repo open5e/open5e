@@ -30,9 +30,9 @@ mockNuxtImport('useFindOne', () => {
     data: {
       slug: 'magic-missile',
       name: 'Magic Missile',
-      desc: 'You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.',
+      desc: 'You create three glowing darts of magical force...',
       higher_level:
-        'When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st.',
+        'When you cast this spell using a spell slot of 2nd level or higher...',
       page: 'phb 257',
       range: '120 feet',
       target_range_sort: 120,

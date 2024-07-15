@@ -21,7 +21,7 @@ mockNuxtImport('useFindOne', () => {
     data: {
       slug: 'blinded',
       name: 'Blinded',
-      desc: "* A blinded creature can't see and automatically fails any ability check that requires sight.\n* Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.",
+      desc: "* A blinded creature can't see and automatically fails any ability check that requires sight...",
       document__slug: 'wotc-srd',
       document__title: '5e Core Rules',
       document__url:
