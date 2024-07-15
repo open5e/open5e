@@ -19,7 +19,7 @@
     "lint:prettier": "prettier --check --ignore-path .gitignore '**/*.{js,vue}'",
     "lintfix": "npm run lint:js -- --fix && npm run lint:prettier -- --write",
     "pre-commit": "npx pretty-quick --staged && npm run lintfix",
-    "test": "npx vitest"
+    "test": "npx vitest run --silent"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
