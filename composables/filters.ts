@@ -20,10 +20,15 @@ export function useFilterState<T extends Record<string, any>>(
 
   const debouncedFilter = debouncedRef(filter, debounceTimeMs);
 
+  function update(key: string, value: any) {
+    filter.value = { ...filter.value, [key]: value };
+  }
+
   return {
     clear,
+    update,
     enabeledFiltersCount,
-    filter,
+    filter: computed(() => filter.value),
     debouncedFilter,
     canClearFilter,
   };

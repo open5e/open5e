@@ -2,23 +2,23 @@ export type MonsterFilter = {
   /** Name contains */
   search?: string;
   /** Challenge rating lower bound */
-  cr__gte?: number;
+  cr__gte?: string;
   /** Challenge rating upper bound */
-  cr__lte?: number;
-  hpLow?: number;
-  hpHigh?: number;
+  cr__lte?: string;
+  hpLow?: string;
+  hpHigh?: string;
   size?: string;
   type?: string;
 };
 
 export const DefaultMonsterFilter: Readonly<MonsterFilter> = {
-  search: undefined,
-  cr__gte: undefined,
-  cr__lte: undefined,
-  hpLow: undefined,
-  hpHigh: undefined,
-  size: undefined,
-  type: undefined,
+  search: '',
+  cr__gte: '',
+  cr__lte: '',
+  hpLow: '',
+  hpHigh: '',
+  size: '',
+  type: '',
 };
 
 export function copyDefaultMonsterFilter(): MonsterFilter {

@@ -13,7 +13,8 @@
     <MonsterFilterBox
       v-if="displayFilter"
       ref="monsterFilterBox"
-      v-model="filter"
+      :filter="filter"
+      :update-filter="update"
     />
     <div>
       <div>
@@ -41,8 +42,14 @@ import MonsterFilterBox from '~/components/MonsterFilterBox.vue';
 
 const displayFilter = ref(false);
 
-const { filter, debouncedFilter, canClearFilter, enabeledFiltersCount, clear } =
-  useFilterState(DefaultMonsterFilter);
+const {
+  filter,
+  debouncedFilter,
+  canClearFilter,
+  enabeledFiltersCount,
+  clear,
+  update,
+} = useFilterState(DefaultMonsterFilter);
 
 watch(filter, () => {
   console.log('A - Filter changed');

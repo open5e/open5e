@@ -9,7 +9,8 @@
       >
       <input
         id="monsterName"
-        v-model="filter.search"
+        :value="filter.search"
+        @input="updateFilter('search', $event.target.value)"
         placeholder="Any"
         name="monsterName"
         class="mt-2 w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:w-5/6"
@@ -19,11 +20,12 @@
         <label for="challengeRtgLow" class="w-1/2">From:</label>
         <select
           id="challengeRtgLow"
-          v-model="filter.cr__gte"
+          :value="filter.cr__gte"
+          @input="updateFilter('cr__gte', $event.target.value)"
           name="challengeRtgLow"
           class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
         >
-          <option :key="undefined" :value="undefined" text="Any" />
+          <option :key="''" :value="''" text="Any" />
           <option
             v-for="[label, value] in MONSTER_CHALLENGE_RATINGS_MAP"
             :key="value"
@@ -36,11 +38,12 @@
         <label for="challengeRtgHigh" class="w-1/2">To:</label>
         <select
           id="challengeRtgHigh"
-          v-model="filter.cr__lte"
+          :value="filter.cr__lte"
+          @input="updateFilter('cr__lte', $event.target.value)"
           name="challengeRtgHigh"
           class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
         >
-          <option :key="undefined" :value="undefined" text="Any" />
+          <option :key="''" :value="''" text="Any" />
           <option
             v-for="[label, value] in MONSTER_CHALLENGE_RATINGS_MAP"
             :key="value"
@@ -56,7 +59,8 @@
         <label for="hpLow" class="w-1/2">From (low):</label>
         <input
           id="hpLow"
-          v-model="filter.hpLow"
+          :value="filter.hpLow"
+          @input="updateFilter('hpLow', $event.target.value)"
           placeholder="Any"
           type="number"
           min="0"
@@ -70,7 +74,8 @@
         <label for="hpHigh" class="w-1/2">To (high):</label>
         <input
           id="hpHigh"
-          v-model="filter.hpHigh"
+          :value="filter.hpHigh"
+          @input="updateFilter('hpHigh', $event.target.value)"
           placeholder="Any"
           type="number"
           min="0"
@@ -85,11 +90,12 @@
       <label for="size" class="w-1/2 font-bold">SIZE:</label>
       <select
         id="size"
-        v-model="filter.size"
+        :value="filter.size"
+        @input="updateFilter('size', $event.target.value)"
         name="size"
         class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
       >
-        <option :key="undefined" :value="undefined" text="Any" />
+        <option :key="''" :value="''" text="Any" />
         <option v-for="size in MONSTER_SIZES_LIST" :key="size" v-text="size" />
       </select>
     </div>
@@ -98,11 +104,12 @@
         <label for="type" class="w-full font-bold">TYPE:</label>
         <select
           id="type"
-          v-model="filter.type"
+          :value="filter.type"
+          @input="updateFilter('type', $event.target.value)"
           name="type"
           class="w-full rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
         >
-          <option :key="undefined" :value="undefined" text="Any" />
+          <option :key="''" :value="''" text="Any" />
           <option
             v-for="monsterType in MONSTER_TYPES_LIST"
             :key="monsterType"
@@ -115,8 +122,8 @@
   <!-- END FILTER BOX -->
 </template>
 <script setup>
-const filter = defineModel({
-  type: Object,
-  default: copyDefaultMonsterFilter(),
+const props = defineProps({
+  filter: { type: Object, default: copyDefaultMonsterFilter() },
+  updateFilter: { type: Function, required: true },
 });
 </script>
