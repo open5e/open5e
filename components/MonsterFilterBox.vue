@@ -10,10 +10,10 @@
       <input
         id="monsterName"
         :value="filter.search"
-        @input="updateFilter('search', $event.target.value)"
         placeholder="Any"
         name="monsterName"
         class="mt-2 w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:w-5/6"
+        @input="updateFilter('search', $event.target.value)"
       />
       <span class="flex w-full font-bold">CHALLENGE RATING</span>
       <div class="flex w-full px-1 md:w-1/2">
@@ -21,9 +21,9 @@
         <select
           id="challengeRtgLow"
           :value="filter.cr__gte"
-          @input="updateFilter('cr__gte', $event.target.value)"
           name="challengeRtgLow"
           class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
+          @input="updateFilter('cr__gte', $event.target.value)"
         >
           <option :key="''" :value="''" text="Any" />
           <option
@@ -39,9 +39,9 @@
         <select
           id="challengeRtgHigh"
           :value="filter.cr__lte"
-          @input="updateFilter('cr__lte', $event.target.value)"
           name="challengeRtgHigh"
           class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
+          @input="updateFilter('cr__lte', $event.target.value)"
         >
           <option :key="''" :value="''" text="Any" />
           <option
@@ -60,7 +60,6 @@
         <input
           id="hpLow"
           :value="filter.hp__gte"
-          @input="updateFilter('hp__gte', $event.target.value)"
           placeholder="Any"
           type="number"
           min="0"
@@ -68,6 +67,7 @@
           step="1"
           name="hpLow"
           class="w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
+          @input="updateFilter('hp__gte', $event.target.value)"
         />
       </div>
       <div class="flex w-full px-1 md:w-1/2">
@@ -75,7 +75,6 @@
         <input
           id="hpHigh"
           :value="filter.hp__lte"
-          @input="updateFilter('hp__lte', $event.target.value)"
           placeholder="Any"
           type="number"
           min="0"
@@ -83,6 +82,7 @@
           step="1"
           name="hpHigh"
           class="w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
+          @input="updateFilter('hp__lte', $event.target.value)"
         />
       </div>
     </div>
@@ -91,9 +91,9 @@
       <select
         id="size"
         :value="filter.size"
-        @input="updateFilter('size', $event.target.value)"
         name="size"
         class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
+        @input="updateFilter('size', $event.target.value)"
       >
         <option :key="''" :value="''" text="Any" />
         <option v-for="size in MONSTER_SIZES_LIST" :key="size" v-text="size" />
@@ -105,9 +105,9 @@
         <select
           id="type"
           :value="filter.type"
-          @input="updateFilter('type', $event.target.value)"
           name="type"
           class="w-full rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
+          @input="updateFilter('type', $event.target.value)"
         >
           <option :key="''" :value="''" text="Any" />
           <option

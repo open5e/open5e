@@ -8,10 +8,10 @@
       <input
         id="itemName"
         :value="filter.search"
-        @input="updateFilter('search', $event.target.value)"
         name="itemName"
         placeholder="Any"
         class="mt-2 w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:w-5/6"
+        @input="updateFilter('search', $event.target.value)"
       />
       <div class="flex w-full flex-wrap">
         <div class="mt-2 flex w-full flex-wrap md:w-1/2">
@@ -19,9 +19,9 @@
           <select
             id="rarity"
             :value="filter.rarity"
-            @input="updateFilter('rarity', $event.target.value)"
             name="rarity"
             class="flex w-full rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
+            @input="updateFilter('rarity', $event.target.value)"
           >
             <option :key="''" :value="''" text="Any" />
             <option
@@ -37,9 +37,9 @@
           <select
             id="type"
             :value="filter.type"
-            @input="updateFilter('type', $event.target.value)"
             name="type"
             class="flex w-full rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:ml-2"
+            @input="updateFilter('type', $event.target.value)"
           >
             <option :key="''" :value="''" text="Any" />
             <option
