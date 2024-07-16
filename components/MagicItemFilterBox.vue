@@ -7,8 +7,10 @@
       <label for="itemName" class="pt-1 font-bold md:w-1/6">ITEM NAME:</label>
       <input
         id="itemName"
-        v-model="filter.search"
+        :value="filter.search"
+        @input="updateFilter('search', $event.target.value)"
         name="itemName"
+        placeholder="Any"
         class="mt-2 w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:w-5/6"
       />
       <div class="flex w-full flex-wrap">
@@ -16,11 +18,12 @@
           <span class="mr-2 w-full font-bold">RARITY:</span>
           <select
             id="rarity"
-            v-model="filter.rarity"
+            :value="filter.rarity"
+            @input="updateFilter('rarity', $event.target.value)"
             name="rarity"
             class="flex w-full rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
           >
-            <option :key="undefined" :value="undefined" text="Any" />
+            <option :key="''" :value="''" text="Any" />
             <option
               v-for="rtg in MAGIC_ITEMS_RARITES"
               :key="rtg"
@@ -33,11 +36,12 @@
           <span class="mr-2 w-full font-bold md:ml-2">TYPE:</span>
           <select
             id="type"
-            v-model="filter.type"
+            :value="filter.type"
+            @input="updateFilter('type', $event.target.value)"
             name="type"
             class="flex w-full rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:ml-2"
           >
-            <option :key="undefined" :value="undefined" text="Any" />
+            <option :key="''" :value="''" text="Any" />
             <option
               v-for="rtg in MAGIC_ITEMS_TYPES"
               :key="rtg"
@@ -50,11 +54,16 @@
           <span class="mr-2 font-bold">REQUIRES ATTUNEMENT:</span>
           <input
             id="attunement"
-            :checked="attunement"
+            :value="filter.requires_attunement"
             type="checkbox"
             name="attunement"
             class="mb-1 accent-blood"
-            @input="onAttunementChange"
+            @input="
+              updateFilter(
+                'requires_attunement',
+                $event.target.value ? '' : 'requires attunement'
+              )
+            "
           />
         </div>
       </div>
@@ -64,16 +73,8 @@
 </template>
 
 <script setup>
-const filter = defineModel({ default: copyMagicItemFilter(), type: Object });
-
-const onAttunementChange = () => {
-  console.log('onAttunementChange');
-  filter.value.requires_attunement = filter.value.requires_attunement
-    ? ''
-    : 'requires attunement';
-};
-
-const attunement = computed(() =>
-  filter.value.isAttunementRequired ? true : false
-);
+const props = defineProps({
+  filter: { type: Object, default: copyDefaultMonsterFilter() },
+  updateFilter: { type: Function, required: true },
+});
 </script>

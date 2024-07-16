@@ -2,15 +2,15 @@ export type MagicItemFilter = {
   /** Name contains*/
   search?: string;
   rarity?: string;
-  type?: typeof MAGIC_ITEMS_TYPES;
+  type?: typeof MAGIC_ITEMS_TYPES | '';
   requires_attunement?: 'requires attunement' | '';
 };
 
 export const DefaultMagicItemFilter: Readonly<MagicItemFilter> = {
-  search: undefined,
-  rarity: undefined,
-  type: undefined,
-  requires_attunement: undefined,
+  search: '',
+  rarity: '',
+  type: '',
+  requires_attunement: '',
 };
 
 export const copyMagicItemFilter = (): MagicItemFilter => {

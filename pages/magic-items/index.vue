@@ -12,8 +12,8 @@
     </div>
     <MagicItemFilterBox
       v-if="displayFilter"
-      ref="monsterFilterBox"
-      v-model="filter"
+      :filter="filter"
+      :update-filter="update"
     />
     <div>
       <div>
@@ -25,7 +25,7 @@
         />
       </div>
       <api-results-table
-        v-model="filter"
+        v-model="debouncedFilter"
         endpoint="magic-items"
         :api-endpoint="API_ENDPOINTS.magicitems"
         :cols="['type', 'rarity', 'requires_attunement']"
@@ -39,7 +39,20 @@ import FilterButton from '~/components/FilterButton.vue';
 
 const displayFilter = ref(false);
 
-const { filter, canClearFilter, enabeledFiltersCount, clear } = useFilterState(
-  DefaultMagicItemFilter
-);
+const {
+  filter,
+  debouncedFilter,
+  canClearFilter,
+  enabeledFiltersCount,
+  clear,
+  update,
+} = useFilterState(DefaultMagicItemFilter);
+
+watch(filter, () => {
+  console.log('A - Filter changed');
+});
+
+watch(debouncedFilter, () => {
+  console.log('B - Debounced changed');
+});
 </script>
