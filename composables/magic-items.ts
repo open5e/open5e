@@ -17,60 +17,6 @@ export const copyMagicItemFilter = (): MagicItemFilter => {
   return { ...DefaultMagicItemFilter };
 };
 
-export const useMagicItems = (
-  filter: MagicItemsFilter = {},
-  queryParams: Record<string, any> = {}
-) => {
-  const { findMany } = useAPI();
-  const { sources } = useSourcesList();
-  const { data } = useQuery({
-    queryKey: ['findMany', API_ENDPOINTS.magicitems, sources],
-    queryFn: async () => {
-      const magicItems = await findMany(
-        API_ENDPOINTS.magicitems,
-        sources.value,
-        queryParams
-      );
-      return magicItems;
-    },
-  });
-
-  const filtered_items = computed(() => {
-    const items = data.value ?? [];
-
-    return items
-      .filter((item) => {
-        return item.name
-          .toLowerCase()
-          .includes(filter.name?.toLowerCase() ?? '');
-      })
-      .filter((item) => {
-        return item.rarity
-          .toLowerCase()
-          .includes(filter.rarity?.toLowerCase() ?? '');
-      })
-      .filter((item) =>
-        filter.type
-          ? item.type.toLowerCase() === filter.type.toLowerCase()
-          : true
-      )
-      .filter((item) =>
-        filter.rarity
-          ? item.rarity.toLowerCase() === filter.rarity.toLowerCase()
-          : true
-      )
-      .filter((item) =>
-        filter.isAttunementRequired != null
-          ? (filter.isAttunementRequired &&
-              item.requires_attunement === 'requires attunement') ||
-            item.requires_attunement === ''
-          : true
-      );
-  });
-
-  return { data: filtered_items };
-};
-
 export const MAGIC_ITEMS_RARITES = [
   'Common',
   'Uncommon',
