@@ -59,8 +59,8 @@
         <label for="hpLow" class="w-1/2">From (low):</label>
         <input
           id="hpLow"
-          :value="filter.hpLow"
-          @input="updateFilter('hpLow', $event.target.value)"
+          :value="filter.hp__gte"
+          @input="updateFilter('hp__gte', $event.target.value)"
           placeholder="Any"
           type="number"
           min="0"
@@ -74,8 +74,8 @@
         <label for="hpHigh" class="w-1/2">To (high):</label>
         <input
           id="hpHigh"
-          :value="filter.hpHigh"
-          @input="updateFilter('hpHigh', $event.target.value)"
+          :value="filter.hp__lte"
+          @input="updateFilter('hp__lte', $event.target.value)"
           placeholder="Any"
           type="number"
           min="0"
