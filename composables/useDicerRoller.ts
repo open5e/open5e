@@ -1,7 +1,9 @@
+import { useNotifications } from './useNotifications';
+const { notifications, addNotif } = useNotifications();
+
 export function useDiceRoller(signature: string) {
   // extract numerical data from dice signature
   const parsed = parseDice(signature);
-
   // make sure parseDice rtn'd data before deconstructing arr.
   if (!parsed) {
     return;
@@ -15,7 +17,10 @@ export function useDiceRoller(signature: string) {
 
   // add up the results and add the modifier
   const result = rolls.reduce((total, roll) => total + roll) + modifier;
-  alert(result);
+
+  // push results to notifications
+  addNotif(`${result} [${rolls.map((roll) => roll)}] + ${modifier}`);
+
   return { signature, rolls, result };
 }
 
