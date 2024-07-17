@@ -1,5 +1,5 @@
 import { useNotifications } from './useNotifications';
-const { notifications, addNotif } = useNotifications();
+const { addNotif } = useNotifications();
 
 export function useDiceRoller(signature: string) {
   // extract numerical data from dice signature
@@ -18,8 +18,16 @@ export function useDiceRoller(signature: string) {
   // add up the results and add the modifier
   const result = rolls.reduce((total, roll) => total + roll) + modifier;
 
+  const formattedModifier = useFormatModifier(modifier, {
+    showZero: false,
+  });
+
   // push results to notifications
-  addNotif(`${result} [${rolls.map((roll) => roll)}] + ${modifier}`);
+  addNotif({
+    title: `Rolling ${number}d${dice} ${formattedModifier}`,
+    body: result,
+    footer: `[ ${rolls.join(', ')} ] ${formattedModifier}`,
+  });
 
   return { signature, rolls, result };
 }
