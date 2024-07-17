@@ -25,4 +25,11 @@
 <script setup>
 import { useNotifications } from '~/composables/useNotifications';
 const { clear, notifications, remove } = useNotifications();
+
+// clear notifications when route changes
+const route = useRoute();
+watch(
+  () => route.path,
+  () => clear()
+);
 </script>
