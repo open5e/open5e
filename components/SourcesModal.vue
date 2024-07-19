@@ -6,32 +6,29 @@
         <h2 class="mt-0 pb-2">Select Sources</h2>
         <div class="serif font-bold">
           <button
-            v-if="selectedSources.length == documents.length"
-            class="cursor-default px-2 py-1 font-bold text-white"
-          >
-            &#10003; All
-          </button>
-
-          <button
-            v-else
-            class="px-2 py-1 text-blood hover:text-red-800 dark:hover:text-red-400"
+            :class="`px-2 py-1 ${
+              // toggle styles based on selected sources
+              allSourcesSelected()
+                ? ' text-black dark:text-white'
+                : ' text-blood hover:text-red-800 dark:hover:text-red-400'
+            }`"
             @click="selectAll()"
           >
-            All
+            <span v-if="allSourcesSelected()">&#10003; </span>
+            <span>All</span>
           </button>
 
           <button
-            v-if="selectedSources.length === 0"
-            class="cursor-default px-2 py-1 font-bold text-white"
-          >
-            &#10003; None
-          </button>
-          <button
-            v-else
-            class="px-2 py-1 text-blood hover:text-red-800 dark:hover:text-red-400"
+            :class="`px-2 py-1 ${
+              // toggle styles based on selected sources
+              selectedSources.length === 0
+                ? ' text-black dark:text-white'
+                : ' text-blood hover:text-red-800 dark:hover:text-red-400'
+            }`"
             @click="deselectAll()"
           >
-            None
+            <span v-if="selectedSources.length === 0">&#10003; </span>
+            <span>None</span>
           </button>
         </div>
       </div>
@@ -206,6 +203,10 @@ function selectedSourcesByPublisher(publisher) {
     allSources.includes(source)
   );
   return currentSources.length;
+}
+
+function allSourcesSelected() {
+  return selectedSources.value.length === documents.value.length;
 }
 
 function selectAll() {
