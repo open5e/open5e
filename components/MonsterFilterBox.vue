@@ -59,7 +59,7 @@
         <label for="hpLow" class="w-1/2">From (low):</label>
         <input
           id="hpLow"
-          :value="filter.hp__gte"
+          :value="filter.hit_points__gte"
           placeholder="Any"
           type="number"
           min="0"
@@ -67,14 +67,14 @@
           step="1"
           name="hpLow"
           class="w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
-          @input="updateFilter('hp__gte', $event.target.value)"
+          @input="updateFilter('hit_points__gte', $event.target.value)"
         />
       </div>
       <div class="flex w-full px-1 md:w-1/2">
         <label for="hpHigh" class="w-1/2">To (high):</label>
         <input
           id="hpHigh"
-          :value="filter.hp__lte"
+          :value="filter.hit_points__lte"
           placeholder="Any"
           type="number"
           min="0"
@@ -82,7 +82,7 @@
           step="1"
           name="hpHigh"
           class="w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
-          @input="updateFilter('hp__lte', $event.target.value)"
+          @input="updateFilter('hit_points__lte', $event.target.value)"
         />
       </div>
     </div>

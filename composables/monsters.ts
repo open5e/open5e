@@ -6,9 +6,9 @@ export type MonsterFilter = {
   /** Challenge rating upper bound */
   cr__lte?: string;
   /** HP rating lower bound */
-  hp__gte?: string;
+  hit_points__gte?: string;
   /** HP rating lower bound */
-  hp__lte?: string;
+  hit_points__lte?: string;
   size?: string;
   type?: string;
 };
@@ -17,8 +17,8 @@ export const DefaultMonsterFilter: Readonly<MonsterFilter> = {
   search: '',
   cr__gte: '',
   cr__lte: '',
-  hp__gte: '',
-  hp__lte: '',
+  hit_points__gte: '',
+  hit_points__lte: '',
   size: '',
   type: '',
 };
