@@ -1,13 +1,13 @@
 export type MagicItemFilter = {
   /** Name contains*/
-  search?: string;
+  name__icontains?: string;
   rarity?: string;
   type?: typeof MAGIC_ITEMS_TYPES | '';
   requires_attunement?: 'requires attunement' | '';
 };
 
 export const DefaultMagicItemFilter: Readonly<MagicItemFilter> = {
-  search: '',
+  name__icontains: '',
   rarity: '',
   type: '',
   requires_attunement: '',

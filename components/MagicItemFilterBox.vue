@@ -7,11 +7,11 @@
       <label for="itemName" class="pt-1 font-bold md:w-1/6">ITEM NAME:</label>
       <input
         id="itemName"
-        :value="filter.search"
+        :value="filter.name__icontains"
         name="itemName"
         placeholder="Any"
         class="mt-2 w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:w-5/6"
-        @input="updateFilter('search', $event.target.value)"
+        @input="updateFilter('name__icontains', $event.target.value)"
       />
       <div class="flex w-full flex-wrap">
         <div class="mt-2 flex w-full flex-wrap md:w-1/2">
