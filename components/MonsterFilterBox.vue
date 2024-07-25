@@ -9,11 +9,11 @@
       >
       <input
         id="monsterName"
-        :value="filter.search"
+        :value="filter.name__icontains"
         placeholder="Any"
         name="monsterName"
         class="mt-2 w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:w-5/6"
-        @input="updateFilter('search', $event.target.value)"
+        @input="updateFilter('name__icontains', $event.target.value)"
       />
       <span class="flex w-full font-bold">CHALLENGE RATING</span>
       <div class="flex w-full px-1 md:w-1/2">

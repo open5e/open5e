@@ -1,6 +1,6 @@
 export type MonsterFilter = {
   /** Name contains */
-  search?: string;
+  name__icontains?: string;
   /** Challenge rating lower bound */
   cr__gte?: string;
   /** Challenge rating upper bound */
@@ -14,7 +14,7 @@ export type MonsterFilter = {
 };
 
 export const DefaultMonsterFilter: Readonly<MonsterFilter> = {
-  search: '',
+  name__icontains: '',
   cr__gte: '',
   cr__lte: '',
   hit_points__gte: '',
