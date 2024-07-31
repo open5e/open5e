@@ -105,6 +105,8 @@
           @click="hideSidebar"
         />
 
+        <page-notifications />
+
         <!-- Main page content -->
         <nuxt-page
           class="main-content pt-auto mx-0 w-full px-4 py-4 pb-0 text-darkness dark:text-white sm:px-8"
