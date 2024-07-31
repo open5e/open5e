@@ -16,3 +16,6 @@ if ! git diff-index --quiet HEAD --; then
 else
   echo "No lint fixes needed."
 fi
+
+# Run tests
+# npm run test

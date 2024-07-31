@@ -6,7 +6,7 @@
           v-for="column in ['name'].concat(cols)"
           :key="column"
           :title="column"
-          :is-sorting-property="sortBy === column && sortDir"
+          :is-sorting-property="sortBy === column ? sortDir : ''"
           @sort="(prop) => updateSortState(prop)"
         />
       </tr>

@@ -24,5 +24,5 @@
 </template>
 
 <script setup>
-const { data: feat } = useFindOne(API_ENDPOINTS.feats, useRoute().params.feat);
+const { data: feat } = useFindOne(API_ENDPOINTS.feats, useRoute().params.id);
 </script>

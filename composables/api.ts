@@ -41,7 +41,7 @@ export const useAPI = () => {
         },
       });
 
-      return res.data.results as Record<string, any>[];
+      return (res.data.results as Record<string, string | number>[]) ?? [];
     },
     get: async (...parts: string[]) => {
       const route = '/' + parts.join('/');
@@ -53,24 +53,22 @@ export const useAPI = () => {
 
 export const useFindMany = (
   endpoint: MaybeRef<string>,
-  params?: MaybeRef<Record<string, any>>
+  params?: MaybeRef<Record<string, string | number>>
 ) => {
   const { findMany } = useAPI();
   const { sources } = useSourcesList();
   return useQuery({
     queryKey: ['findMany', endpoint, sources, params],
-    queryFn: () => findMany(unref(endpoint), unref(sources), unref(params)),
+    queryFn: () =>
+      unref(findMany(unref(endpoint), unref(sources), unref(params))),
   });
 };
 
-export const useFindOne = (
-  endpoint: MaybeRef<string>,
-  slug: MaybeRef<string>
-) => {
+export const useFindOne = (endpoint: string, slug: string) => {
   const { get } = useAPI();
   return useQuery({
     queryKey: ['get', endpoint, slug],
-    queryFn: () => get(unref(endpoint), unref(slug)),
+    queryFn: () => get(endpoint, slug),
   });
 };
 
@@ -80,9 +78,7 @@ export const useSubclass = (className: string, subclass: string) => {
     queryKey: ['subclass', className, subclass],
     queryFn: async () => {
       const class_result = await api.get(API_ENDPOINTS.classes, className);
-      return {
-        result: class_result.archetypes.find((a: any) => a.slug === subclass),
-      };
+      return class_result.archetypes.find((a: any) => a.slug === subclass);
     },
   });
 };
@@ -92,7 +88,9 @@ export const useSections = (...categories: string[]) => {
     fields: ['slug', 'name', 'parent'].join(),
   });
   const filtered_sections = computed(() =>
-    sections.value?.filter((section) => categories.includes(section.parent))
+    sections.value?.filter((section) =>
+      categories.includes(`${section.parent}`)
+    )
   );
   return { data: filtered_sections, isPending };
 };

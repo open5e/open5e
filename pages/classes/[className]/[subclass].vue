@@ -1,15 +1,14 @@
 <template>
-  <main v-if="subclass && subclass.result" class="docs-container container">
+  <main v-if="subclass" class="docs-container container">
     <h1>
-      {{ subclass.result.name }}
+      {{ subclass.name }}
       <source-tag
-        :title="subclass.result.document__title"
-        :text="subclass.result.document__slug"
+        :title="subclass.document__title"
+        :text="subclass.document__slug"
       />
     </h1>
-
     <section>
-      <md-viewer :text="subclass.result.desc" />
+      <md-viewer :text="subclass.desc" />
     </section>
   </main>
   <p v-else>Loading...</p>

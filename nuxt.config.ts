@@ -45,7 +45,12 @@ export default defineNuxtConfig({
   //     }
   //   },
   // },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@hebilicious/vue-query-nuxt'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon',
+    '@hebilicious/vue-query-nuxt',
+    '@nuxt/test-utils/module',
+  ],
   queryClientOptions: {
     defaultOptions: { queries: { staleTime: Infinity } },
   },

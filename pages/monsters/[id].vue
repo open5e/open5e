@@ -20,6 +20,7 @@
         </button>
       </div>
     </div>
+
     <img
       v-if="mode !== 'compact' && monster.img_main"
       :src="monster.img_main"
@@ -39,7 +40,7 @@
         :text="monster.document__slug"
       />
     </p>
-    <hr />
+
     <section>
       <ul>
         <li>
@@ -98,80 +99,6 @@
 
     <hr />
 
-    <!-- SAVING THROWS AND ATTRIBUTES-->
-    <section>
-      <ul>
-        <li v-if="monster.abilities.filter((a) => a.save).length">
-          <span class="font-bold after:content-['_']">Saving Throws</span>
-
-          <span
-            v-for="ability in monster.abilities.filter((a) => a.save)"
-            :key="ability.name"
-            class="cursor-pointer font-bold text-blood after:text-black after:content-[',_'] last:after:content-[] hover:text-black"
-            @click="useDiceRoller(formatMod(ability.save))"
-          >
-            {{ uppercaseFirstLetter(ability.shortName) }}
-
-            {{ formatMod(ability.save) }}
-          </span>
-        </li>
-        <li v-if="monster.skills">
-          <span class="font-bold after:content-['_']">Skills</span>
-
-          <span
-            v-for="(score, skill) in monster.skills"
-            :key="skill"
-            class="cursor-pointer font-bold text-blood after:text-black after:content-[',_'] last:after:content-[] hover:text-black"
-            @click="useDiceRoller(formatMod(score))"
-          >
-            {{ uppercaseFirstLetter(skill) }}
-
-            {{ formatMod(score) }}
-          </span>
-        </li>
-
-        <li v-if="monster.damage_vulnerabilities">
-          <span class="font-bold after:content-['_']"
-            >Damage Vulnerabilities</span
-          >
-          {{ monster.damage_vulnerabilities }}
-        </li>
-
-        <li v-if="monster.damage_resistances">
-          <span class="font-bold after:content-['_']">Damage Resistances</span>
-          {{ monster.damage_resistances }}
-        </li>
-
-        <li v-if="monster.damage_immunities">
-          <span class="font-bold after:content-['_']">Damage Immunities</span>
-          {{ monster.damage_immunities }}
-        </li>
-
-        <li v-if="monster.condition_immunities">
-          <span class="font-bold after:content-['_']">
-            Condition Immunities
-          </span>
-          {{ monster.condition_immunities }}
-        </li>
-
-        <li v-if="monster.senses">
-          <span class="font-bold after:content-['_']">Senses</span>
-          {{ monster.senses }}
-        </li>
-
-        <li v-if="monster.languages">
-          <span class="font-bold after:content-['_']">Languages</span>
-          {{ monster.languages }}
-        </li>
-
-        <li v-if="monster.challenge_rating">
-          <span class="font-bold after:content-['_']">Challenge</span>
-          <challenge-render :challenge="monster.challenge_rating" />
-        </li>
-      </ul>
-    </section>
-    <hr />
-
     <!-- Monster Special Abilities -->
     <section v-if="monster.special_abilities">
       <p
@@ -187,7 +114,7 @@
     <!-- Monster Actions -->
     <section v-if="monster.actions">
       <h2>Actions</h2>
-      <ul>
+      <ul id="actions-list">
         <li v-for="action in monster.actions" :key="action.name" class="my-1">
           <span class="font-bold after:content-['_']">{{ action.name }}. </span>
           <md-viewer :inline="true" :text="action.desc" :use-roller="true" />
@@ -239,7 +166,6 @@
         </li>
       </ul>
     </section>
-
     <!-- Monster Mythic Actions -->
     <section v-if="monster.mythic_actions">
       <h2>Mythic Actions</h2>
@@ -304,16 +230,8 @@
 </template>
 
 <script setup>
-const { data: monster } = useMonster(useRoute().params.id);
-
 const route = useRoute();
-
-// Helper functions
-const formatMod = (mod) => (mod >= 0 ? '+' + mod.toString() : mod.toString());
-
-function uppercaseFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
+const { data: monster } = useMonster(route.params.id);
 
 const mode = ref(route.query.mode || 'normal');
 function toggleMode() {
@@ -372,3 +290,4 @@ function toggleMode() {
   margin-block: 0.5rem;
 }
 </style>
+<hr />
