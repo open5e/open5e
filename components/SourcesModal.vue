@@ -1,5 +1,5 @@
 <template>
-  <modal-dialog>
+  <modal-dialog @close="closeModal()">
     <slot>
       <!-- Modal menu title bar -->
       <div class="flex w-full justify-between border-b-4 border-red-400">
