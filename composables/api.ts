@@ -206,7 +206,7 @@ export const useFindOne = (
   const { get } = useAPI();
   return useQuery({
     queryKey: ['get', endpoint, slug],
-    queryFn: () => get(endpoint, slug),
+    queryFn: () => get(unref(endpoint), unref(slug)),
   });
 };
 
