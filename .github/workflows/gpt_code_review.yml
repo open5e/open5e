@@ -5,6 +5,9 @@ permissions:
   issues: write
   pull-requests: write
 
+env: # Or as an environment variable
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
 on:
   pull_request:
     types: [opened, reopened, synchronize]

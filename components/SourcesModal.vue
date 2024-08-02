@@ -1,41 +1,37 @@
 <template>
-  <modal-dialog>
+  <modal-dialog @close="closeModal()">
     <slot>
-      <!-- Modal menu title bar -->
+      <!-- MODAL MENU TITLE BAR -->
       <div class="flex w-full justify-between border-b-4 border-red-400">
         <h2 class="mt-0 pb-2">Select Sources</h2>
         <div class="serif font-bold">
           <button
-            v-if="selectedSources.length == documents.length"
-            class="cursor-default px-2 py-1 font-bold text-white"
-          >
-            &#10003; All
-          </button>
-
-          <button
-            v-else
-            class="px-2 py-1 text-blood hover:text-red-800 dark:hover:text-red-400"
+            :class="`px-2 py-1 ${
+              // toggle styles based on selected sources
+              allSourcesSelected()
+                ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
+                : ` text-blood hover:text-red-800 dark:hover:text-red-400`
+            }`"
             @click="selectAll()"
           >
-            All
+            <span>All</span>
           </button>
 
           <button
-            v-if="selectedSources.length === 0"
-            class="cursor-default px-2 py-1 font-bold text-white"
-          >
-            &#10003; None
-          </button>
-          <button
-            v-else
-            class="px-2 py-1 text-blood hover:text-red-800 dark:hover:text-red-400"
+            :class="`px-2 py-1 ${
+              // toggle styles based on selected sources
+              selectedSources.length === 0
+                ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
+                : ` text-blood hover:text-red-800 dark:hover:text-red-400 `
+            }`"
             @click="deselectAll()"
           >
-            None
+            <span>None</span>
           </button>
         </div>
       </div>
 
+      <!-- MODAL MENU BODY -->
       <fieldset class="mt-1">
         <legend class="sr-only">Source Selection</legend>
         <!-- Organisation -->
@@ -48,39 +44,29 @@
             <h3 class="mt-0 inline-block items-center gap-2">
               {{ organization }}
             </h3>
-            <!-- Add all sources for this publisher -->
-            <a
-              v-if="
+            <!-- Button for adding all src by publisher to selected srcs -->
+            <button
+              :class="`px-2 py-1 font-bold  ${
                 selectedSourcesByPublisher(organization) ===
                 countSourcesByPublisher(organization)
-              "
-              class="cursor-default px-2 py-1 font-bold text-white"
-            >
-              &#10003; All
-            </a>
-            <a
-              v-else
-              class="dark:hover:text-red-4000 px-2 py-1 text-blood hover:text-red-800"
-              href="#"
-              @click.prevent="addPublisher(organization)"
+                  ? `before:mr-1 before:content-['✓']`
+                  : `text-blood hover:text-red-800 dark:hover:text-red-400`
+              }`"
+              @click="addPublisher(organization)"
             >
               All
-            </a>
-            <!-- Remove all sources for this publisher -->
-            <a
-              v-if="!selectedSourcesByPublisher(organization)"
-              class="cursor-default px-2 py-1 font-bold text-white"
-            >
-              &#10003; None
-            </a>
-            <a
-              v-else
-              class="px-2 py-1 text-blood hover:text-red-800 dark:hover:text-red-400"
-              href="#"
-              @click.prevent="removePublisher(organization)"
+            </button>
+            <!-- Button for removing all srcs by publisher to selected srcs -->
+            <button
+              :class="`0 px-2 py-1 font-bold ${
+                !selectedSourcesByPublisher(organization)
+                  ? `before:mr-1 before:content-['✓']`
+                  : `dark:hover:text-red-40 text-blood hover:text-red-800`
+              }`"
+              @click="removePublisher(organization)"
             >
               None
-            </a>
+            </button>
           </div>
 
           <!-- Sources by Organisation -->
@@ -206,6 +192,10 @@ function selectedSourcesByPublisher(publisher) {
     allSources.includes(source)
   );
   return currentSources.length;
+}
+
+function allSourcesSelected() {
+  return selectedSources.value.length === documents.value.length;
 }
 
 function selectAll() {

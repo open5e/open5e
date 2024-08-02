@@ -40,7 +40,7 @@ export const useMonster = (slug: string) => {
         modifier: formatMod(calcMod(monster[ability])),
         save: monster[`${ability}_save`],
       }));
-      return monster;
+      return monster as Record<string, string>;
     },
   });
 };
