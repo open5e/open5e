@@ -181,6 +181,11 @@ export const useFindPaginated = (options: {
     console.log('useFindPaginated', unref(data));
   });
 
+  // Move to the first page when the filter changes, to avoid showing an empty page due to fewer results
+  watch(filter, () => {
+    firstPage();
+  });
+
   return {
     data,
     isFetching,
