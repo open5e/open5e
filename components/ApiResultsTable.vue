@@ -24,12 +24,16 @@
       </thead>
       <tbody v-if="results">
         <api-result-row
+          v-if="results.length > 0"
           v-for="item in results"
           :key="item.slug"
           :data="item"
           :endpoint="endpoint"
           :cols="cols"
         />
+        <tr v-else>
+          <td>No results match your search.</td>
+        </tr>
       </tbody>
       <tbody v-else>
         <tr>
