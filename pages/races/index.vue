@@ -5,7 +5,7 @@
     </div>
     <api-results-table
       endpoint="races"
-      :api-endpoint="API_ENDPOINTS.sections"
+      :api-endpoint="API_ENDPOINTS.races"
       :cols="['document__title', 'document__slug']"
     />
   </section>
