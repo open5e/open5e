@@ -5,9 +5,6 @@ permissions:
   issues: write
   pull-requests: write
 
-env: # Or as an environment variable
-  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
 on:
   pull_request:
     types: [opened, reopened, synchronize]
@@ -20,7 +17,7 @@ jobs:
     continue-on-error: true
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Automated Code Review
         uses: eepMoody/genai-code-review@main
