@@ -11,7 +11,7 @@ export const API_ENDPOINTS = {
   magicitems: 'v1/magicitems',
   monsters: 'v1/monsters',
   races: 'v1/races',
-  search: 'v2/search',
+  search: 'v2/search/',
   sections: 'v1/sections',
   spells: 'v1/spells',
 } as const;
