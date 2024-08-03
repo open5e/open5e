@@ -31,7 +31,7 @@
         {{
           `${monster.size} ${monster.type}${
             monster.subtype ? ` (${monster.subtype})` : ''
-          } ${monster.alignment ? `, ${monster.alignment}` : ''}`
+          }${monster.alignment ? `, ${monster.alignment}` : ''}`
         }}
       </span>
       <source-tag
