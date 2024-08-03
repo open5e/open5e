@@ -29,11 +29,5 @@ jobs:
           openai_api_key: ${{ secrets.OPENAI_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           github_pr_id: ${{ github.event.number }}
-          openai_model: 'gpt-4o' # optional
-          openai_temperature: 0.5 # optional
-          custom_prompt:
-            "Please review this code for any functional issues, but not style
-            issues. Avoid nitpicking or speculative feedback. If there are no
-            actionable issues, reply with 'ignoreResponse' and no other text at
-            all. Avoid using 'ignoreResponse' otherwise, as it will cause your
-            comment to be ignored. "
+          openai_model: 'gpt-4o' # most cost effective model at this time
+          openai_temperature: 0.5 # best balance between quality and cost
