@@ -1,32 +1,15 @@
 <template>
   <section class="docs-container container">
     <h1>Equipment</h1>
-    <div class="docs-toc">
-      <ul v-if="equipmentSections">
-        <li v-for="section in equipmentSections" :key="section.slug">
-          <nuxt-link tag="a" :to="`/equipment/${section.slug}`">
-            {{ section.name }}
-          </nuxt-link>
-        </li>
-      </ul>
-    </div>
+    <api-results-table
+      v-if="equipmentSections"
+      :data="equipmentSections"
+      endpoint="equipment"
+    />
   </section>
 </template>
 
-<script>
-import { useMainStore } from '~/store';
-
-export default {
-  setup() {
-    const store = useMainStore();
-    return { store };
-  },
-  computed: {
-    equipmentSections: function () {
-      return this.store.allEquipmentSections;
-    },
-  },
-};
+<script setup>
+import ApiResultsTable from '~/components/ApiResultsTable.vue';
+const { data: equipmentSections } = useSections('Equipment');
 </script>
-
-<style></style>

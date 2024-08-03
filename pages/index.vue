@@ -9,9 +9,10 @@
       <a href="https://slyflourish.com/lazydm/">The Lazy Dungeon Master</a> is a
       masterwork of a guide for anyone aspiring to run Dungeons & Dragons or any
       RPG. Check out
-      <a href="https://slyflourish.com/top_advice.html"
-        >How to Be a Great D&D Dungeon Master</a
-      >, even if you're an expert. I can guarantee you'll learn something.
+      <a href="https://slyflourish.com/top_advice.html">
+        How to Be a Great D&D Dungeon Master
+      </a>
+      , even if you're an expert. I can guarantee you'll learn something.
     </p>
     <p>
       I'd also like to recommend
@@ -30,6 +31,14 @@
     </p>
 
     <h2>Supporting and Contributing</h2>
+
+    <h3>Contribute on Github</h3>
+    <p>
+      The Open5e <a href="https://github.com/open5e/open5e">site</a> and
+      <a href="https://github.com/open5e/open5e-api">API</a> are both
+      open-source on Github! Join us as a contributor and help develop new
+      features and tools.
+    </p>
     <div class="side-note">
       <h3>Hey! Stuff is missing!</h3>
       <p>
@@ -42,13 +51,6 @@
         should add!
       </p>
     </div>
-
-    <h3>Contribute on Github</h3>
-    <p>
-      The Open5e <a href="https://github.com/open5e/open5e">site</a> and
-      <a href="https://github.com/open5e/open5e">API</a> are both open-source on
-      Github! Join us as a contributor and help develop new features and tools.
-    </p>
     <h4>Our tech stack</h4>
     <p>Want to know what you'd be getting into?</p>
     <p><b>DRF API server.</b> A powerful Python-based REST Framework.</p>
@@ -56,12 +58,12 @@
       <b>VueJs UI layer.</b> A Vue.js single-page app, using the Nuxt framework.
     </p>
 
-    <a href="https://github.com/open5e/open5e" class="external-button mr-2"
-      ><img src="/img/github-website-button.png" alt="Open5e site repo"
-    /></a>
-    <a href="https://github.com/open5e/open5e-api" class="external-button"
-      ><img src="/img/github-api-button.png" alt="Open5e API Repo"
-    /></a>
+    <a href="https://github.com/open5e/open5e" class="external-button mr-2">
+      <img src="/img/github-website-button.png" alt="Open5e site repo" />
+    </a>
+    <a href="https://github.com/open5e/open5e-api" class="external-button">
+      <img src="/img/github-api-button.png" alt="Open5e API Repo" />
+    </a>
 
     <h3>Support us on Patreon</h3>
     <p>
@@ -69,20 +71,22 @@
       on donations and patrons to pay for our server costs, and to fund an
       increasing effort to fill out flavor text and add art.
     </p>
-    <a href="https://www.patreon.com/open5e" class="external-button"
-      ><img
+    <a href="https://www.patreon.com/open5e" class="external-button">
+      <img
+        class="rounded-lg"
         src="/img/patron-button.png"
         alt="Become a patron! Keep Open5e ad free!"
-    /></a>
+      />
+    </a>
 
     <h3>Join the Discord</h3>
     <p>
       Join us to chat, talk about development, and share neat homebrew. We don't
       bite!
     </p>
-    <a href="https://discord.gg/QXqF6gSVqB" class="external-button"
-      ><img src="/img/discord-button.png" alt="Join our discord"
-    /></a>
+    <a href="https://discord.gg/QXqF6gSVqB" class="external-button">
+      <img src="/img/discord-button.png" alt="Join our discord" />
+    </a>
 
     <h2>The API</h2>
 
@@ -102,23 +106,7 @@
   </section>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      monsters: [],
-      spells: [],
-    };
-  },
-};
-</script>
-
 <style lang="scss">
-.monster-block,
-.spell-block {
-  margin-top: 1rem;
-}
-
 .external-button {
   margin-top: 0.6rem;
   zoom: 40%;

@@ -1,31 +1,15 @@
 <template>
   <section class="docs-container container">
     <h1>Gameplay Mechanics</h1>
-    <div class="docs-toc">
-      <ul v-if="sections">
-        <li v-for="section in sections" :key="section.name">
-          <nuxt-link tag="a" :to="`/gameplay-mechanics/${section.slug}`">
-            {{ section.name }}
-          </nuxt-link>
-        </li>
-      </ul>
-    </div>
+    <api-results-table
+      v-if="sections"
+      :data="sections"
+      endpoint="gameplay-mechanics"
+    />
   </section>
 </template>
 
-<script>
-import { useMainStore } from '~/store';
-
-export default {
-  setup() {
-    const store = useMainStore();
-    return { store };
-  },
-  computed: {
-    sections: function () {
-      return this.store.allMechanicsSections;
-    },
-  },
-};
+<script setup>
+import ApiResultsTable from '~/components/ApiResultsTable.vue';
+const { data: sections } = useSections('Gameplay Mechanics');
 </script>
-<style></style>

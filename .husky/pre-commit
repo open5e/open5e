@@ -1,6 +1,21 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+# Run pretty-quick to format staged files
 npx pretty-quick --staged
-npm run lint
-git add $(git diff --name-only --cached)
+
+# Run lintfix to fix linting issues
+npm run lintfix
+
+# Stage the changes made by lintfix
+git add $(git diff --name-only --cached --diff-filter=d)
+
+# Check if there are any changes to commit
+if ! git diff-index --quiet HEAD --; then
+  echo "Lint fixes applied and staged."
+else
+  echo "No lint fixes needed."
+fi
+
+# Run tests
+# npm run test

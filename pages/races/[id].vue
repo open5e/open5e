@@ -1,5 +1,5 @@
 <template>
-  <section v-show="loaded" class="docs-container container">
+  <section v-if="race" class="docs-container container">
     <h1>{{ race.name }}</h1>
     <md-viewer :text="race.desc" />
     <md-viewer :text="race['asi_desc']" />
@@ -12,10 +12,10 @@
     <md-viewer :text="race.traits" />
     <p class="text-sm italic">
       Source:
-      <a target="NONE" :href="race.document__url"
-        >{{ race.document__title }}
-        <Icon name="heroicons:arrow-top-right-on-square-20-solid"></Icon
-      ></a>
+      <a target="NONE" :href="race.document__url">
+        <span>{{ race.document__title }}</span>
+        <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
+      </a>
     </p>
 
     <h2 v-if="subraceLength > 0">Subraces</h2>
@@ -43,33 +43,6 @@
   </section>
 </template>
 
-<script>
-import axios from 'axios';
-import MdViewer from '~/components/MdViewer';
-
-export default {
-  components: {
-    MdViewer,
-  },
-  data() {
-    return {
-      posts: [],
-      errors: [],
-      race: [],
-      loaded: false,
-      subraceLength: 0,
-    };
-  },
-  mounted() {
-    return axios
-      .get(`${useRuntimeConfig().public.apiUrl}/races/${this.$route.params.id}`) //you will need to enable CORS to make this work
-      .then((response) => {
-        this.race = response.data;
-        this.loaded = true;
-        this.subraceLength = this.race.subraces.length;
-      });
-  },
-};
+<script setup>
+const { data: race } = useFindOne(API_ENDPOINTS.races, useRoute().params.id);
 </script>
-
-<style lang="scss"></style>

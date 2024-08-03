@@ -1,48 +1,99 @@
 <template>
-  <ModalDialog>
+  <modal-dialog @close="closeModal()">
     <slot>
-      <h2 class="mt-0 border-b-4 border-red-400 pb-2">Select Sources</h2>
-      <div class="mt-2">
-        <fieldset>
-          <legend class="sr-only">Source Selection</legend>
+      <!-- MODAL MENU TITLE BAR -->
+      <div class="flex w-full justify-between border-b-4 border-red-400">
+        <h2 class="mt-0 pb-2">Select Sources</h2>
+        <div class="serif font-bold">
+          <button
+            :class="`px-2 py-1 ${
+              // toggle styles based on selected sources
+              allSourcesSelected()
+                ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
+                : ` text-blood hover:text-red-800 dark:hover:text-red-400`
+            }`"
+            @click="selectAll()"
+          >
+            <span>All</span>
+          </button>
 
-          <div class="space-y-3">
-            <div
-              v-for="(group, organization) in groupedDocuments"
-              :key="organization"
-            >
-              <h3 class="mt-2">{{ organization }}</h3>
-              <div
-                v-for="document in group"
-                :key="document.slug"
-                class="relative flex items-start"
-              >
-                <div class="flex h-6 items-center">
-                  <input
-                    :id="document.slug"
-                    v-model="selectedSourcesComputed"
-                    :name="document.slug"
-                    type="checkbox"
-                    class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600"
-                    :value="document.slug"
-                  />
-                </div>
-                <div class="ml-3 text-sm leading-6">
-                  <label
-                    :for="document.slug"
-                    class="font-medium text-gray-900"
-                    >{{ document.title }}</label
-                  >
-                  <SourceTag
-                    :title="document.title"
-                    :text="document.slug"
-                  ></SourceTag>
-                </div>
-              </div>
-            </div>
-          </div>
-        </fieldset>
+          <button
+            :class="`px-2 py-1 ${
+              // toggle styles based on selected sources
+              selectedSources.length === 0
+                ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
+                : ` text-blood hover:text-red-800 dark:hover:text-red-400 `
+            }`"
+            @click="deselectAll()"
+          >
+            <span>None</span>
+          </button>
+        </div>
       </div>
+
+      <!-- MODAL MENU BODY -->
+      <fieldset class="mt-1">
+        <legend class="sr-only">Source Selection</legend>
+        <!-- Organisation -->
+        <div
+          v-for="(publications, organization, index) in groupedDocuments"
+          :key="index"
+          class="space-y-0"
+        >
+          <div class="my-1 flex items-center gap-2">
+            <h3 class="mt-0 inline-block items-center gap-2">
+              {{ organization }}
+            </h3>
+            <!-- Button for adding all src by publisher to selected srcs -->
+            <button
+              :class="`px-2 py-1 font-bold  ${
+                selectedSourcesByPublisher(organization) ===
+                countSourcesByPublisher(organization)
+                  ? `before:mr-1 before:content-['✓']`
+                  : `text-blood hover:text-red-800 dark:hover:text-red-400`
+              }`"
+              @click="addPublisher(organization)"
+            >
+              All
+            </button>
+            <!-- Button for removing all srcs by publisher to selected srcs -->
+            <button
+              :class="`0 px-2 py-1 font-bold ${
+                !selectedSourcesByPublisher(organization)
+                  ? `before:mr-1 before:content-['✓']`
+                  : `dark:hover:text-red-40 text-blood hover:text-red-800`
+              }`"
+              @click="removePublisher(organization)"
+            >
+              None
+            </button>
+          </div>
+
+          <!-- Sources by Organisation -->
+          <ul
+            v-for="document in publications"
+            :key="document.slug"
+            class="relative flex items-start"
+          >
+            <li>
+              <input
+                v-model="selectedSources"
+                :name="document.slug"
+                type="checkbox"
+                class="mr-2 mt-1 h-4 w-4 rounded text-blue-600 accent-blood focus:ring-blue-600"
+                :value="document.slug"
+              />
+              <label
+                :for="document.slug"
+                class="font-medium text-gray-900 dark:text-white"
+              >
+                {{ document.title }}
+              </label>
+              <source-tag :title="document.title" :text="document.slug" />
+            </li>
+          </ul>
+        </div>
+      </fieldset>
     </slot>
     <template #actions>
       <button
@@ -55,85 +106,103 @@
       </button>
       <button
         type="button"
-        class="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
+        class="inline-flex w-full justify-center rounded-md bg-blood px-3 py-2 text-sm font-semibold text-white shadow-sm ring-offset-2 hover:ring-2 hover:ring-blood focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
         @click="saveSelection()"
       >
         Update
       </button>
     </template>
-  </ModalDialog>
+  </modal-dialog>
 </template>
 
-<script>
-import { useMainStore } from '~/store';
-import SourceTag from '~/components/SourceTag.vue';
-
-export default {
-  data() {
-    return {
-      selectedSources: [],
-      open: false,
-    };
-  },
-  computed: {
-    store() {
-      return useMainStore();
-    },
-    sourceSelection: function () {
-      return this.store.sourceSelection;
-    },
-    documents: function () {
-      return this.store.documents;
-    },
-    groupedDocuments: function () {
-      return this.documents.reduce((grouped, document) => {
-        (grouped[document.organization] =
-          grouped[document.organization] || []).push(document);
-        return grouped;
-      }, {});
-    },
-    selectedSourcesComputed: {
-      get: function () {
-        return this.selectedSources;
-      },
-      set: function (newValue) {
-        this.selectedSources = newValue;
-      },
-    },
-  },
-  watch: {
-    'store.sourceSelection': function (newVal) {
-      this.selectedSources = [...newVal];
-    },
-  },
-  created() {
-    this.searchText = this.$route.query.text;
-    this.selectedSources = this.store.sourceSelection;
-  },
-  methods: {
-    closeModal() {
-      this.$emit('close'); // emits a 'close' event to the parent component
-      setTimeout(() => {
-        this.selectedSources = this.store.sourceSelection;
-      }, 300);
-    },
-    saveSelection() {
-      this.store.setSources(this.selectedSources);
-      this.closeModal();
-    },
-  },
-};
-</script>
-
 <script setup>
-import { ref } from 'vue';
-import {
-  Dialog,
-  DialogPanel,
-  DialogTitle,
-  TransitionChild,
-  TransitionRoot,
-} from '@headlessui/vue';
+import SourceTag from '~/components/SourceTag.vue';
+const { sources, setSources } = useSourcesList();
+const emit = defineEmits(['close']);
 
-const open = ref(true);
+const selectedSources = ref(sources.value);
+const { data: documents } = useDocuments();
+
+const groupedDocuments = computed(() => {
+  const docs = documents.value ?? [];
+  return docs.reduce((grouped, document) => {
+    (grouped[document.organization] =
+      grouped[document.organization] || []).push(document);
+    return grouped;
+  }, {});
+});
+
+function closeModal() {
+  emit('close'); // emits a 'close' event to the parent component
+}
+function saveSelection() {
+  setSources(selectedSources.value);
+  closeModal();
+}
+
+function addPublisher(publisher) {
+  const sourcesByPublisher = groupedDocuments.value[publisher].map(
+    (source) => source.slug
+  );
+
+  const sourcesToAdd = sourcesByPublisher.filter(
+    (source) => !selectedSources.value.includes(source)
+  );
+  selectedSources.value = [...selectedSources.value, ...sourcesToAdd];
+}
+
+function removePublisher(publisher) {
+  const sourcesByPublisher = groupedDocuments.value[publisher].map(
+    (source) => source.slug
+  );
+
+  selectedSources.value = selectedSources.value.filter(
+    (source) => !sourcesByPublisher.includes(source)
+  );
+}
+
+function togglePublisher(publisher) {
+  const sourcesByPublisher = groupedDocuments.value[publisher].map(
+    (source) => source.slug // get slugs for sources by publisher
+  );
+
+  if (selectedSourcesByPublisher(publisher)) {
+    selectedSources.value = selectedSources.value.filter(
+      (source) => !sourcesByPublisher.includes(source)
+    );
+  } else {
+    const sourcesToAdd = sourcesByPublisher.filter(
+      (source) => !selectedSources.value.includes(source)
+    );
+    selectedSources.value = [...selectedSources.value, ...sourcesToAdd]; // combine checked & unchecked sources
+  }
+}
+
+function countSourcesByPublisher(publisher) {
+  return groupedDocuments.value[publisher]?.length || 0;
+}
+
+function selectedSourcesByPublisher(publisher) {
+  // find all sources for this publisher
+  const allSources = groupedDocuments.value[publisher].map(
+    (source) => source.slug
+  );
+  // find which of these are part of the current selected sources
+  const currentSources = selectedSources.value.filter((source) =>
+    allSources.includes(source)
+  );
+  return currentSources.length;
+}
+
+function allSourcesSelected() {
+  return selectedSources.value.length === documents.value.length;
+}
+
+function selectAll() {
+  selectedSources.value = documents.value.map((doc) => doc.slug);
+}
+
+function deselectAll() {
+  selectedSources.value = [];
+}
 </script>

@@ -1,30 +1,23 @@
 <template>
   <section class="docs-container container">
     <h1>Creating Characters</h1>
-    <div class="docs-toc">
-      <ul v-if="charSections">
-        <li v-for="section in charSections" :key="section.slug">
-          <nuxt-link tag="a" :to="`/characters/${section.slug}`">
-            {{ section.name }}
-          </nuxt-link>
-        </li>
-      </ul>
+    <api-results-table :data="sections" endpoint="characters" />
+    <div
+      v-if="sections && sections.length === 0"
+      class="flex w-full flex-wrap pt-2 text-lg"
+    >
+      <div class="flex w-full">
+        There are no items for this category that align with the corresponding
+        sources you selected.
+      </div>
+      <div class="flex w-full pt-2">
+        Please edit your selected sources for more results.
+      </div>
     </div>
   </section>
 </template>
 
-<script>
-import { useMainStore } from '~/store';
-
-export default {
-  setup() {
-    const store = useMainStore();
-    return { store };
-  },
-  computed: {
-    charSections: function () {
-      return this.store.allCharacterSections;
-    },
-  },
-};
+<script setup>
+import ApiResultsTable from '~/components/ApiResultsTable.vue';
+const { data: sections } = useSections('Characters', 'Character Advancement');
 </script>

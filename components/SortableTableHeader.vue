@@ -1,62 +1,48 @@
 <template>
-  <th :aria-sort="currentSortDir" class="sortable-table-header">
+  <th :aria-sort="currentSortDir" class="align-baseline">
     <button @click="onClick">
-      <span class="label">
-        <slot></slot>
+      <span>
+        {{ format(title) }}
       </span>
       <span
         aria-hidden="true"
-        class="arrow"
-        :class="{ 'arrow--visible': currentSortDir }"
-        >{{ isAscending ? '▲' : '▼' }}</span
+        class="ml-1"
+        :class="!!isSortingProperty ? 'visible text-blood' : 'invisible'"
       >
+        {{ isSortingProperty !== 'ascending' ? '▲' : '▼' }}
+      </span>
     </button>
   </th>
 </template>
 
-<script>
-export default {
-  props: {
-    currentSortDir: {
-      type: String,
-      default: null,
-    },
-  },
-  computed: {
-    isAscending() {
-      return this.currentSortDir === 'ascending';
-    },
-  },
-  methods: {
-    onClick() {
-      this.$emit('sort', this.isAscending ? 'descending' : 'ascending');
-    },
-  },
+<script setup>
+const emit = defineEmits(['sort']);
+
+const props = defineProps({
+  title: { type: String, default: '' },
+  isSortingProperty: { type: String, default: '' },
+  currentSortDir: { type: String, default: '' },
+});
+
+// a list of human-readable subsitutions
+const subsitutions = {
+  level_int: 'Level',
+  dnd_class: 'Classes',
+  cr: 'CR',
+};
+
+const format = (input) => {
+  if (subsitutions[input]) {
+    return subsitutions[input];
+  }
+  // Replace underscores w/ spaces and capitalise initials
+  return input
+    .split('_')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+};
+
+const onClick = () => {
+  emit('sort', props.title);
 };
 </script>
-
-<style lang="scss" scoped>
-.sortable-table-header {
-  button {
-    border: none;
-    background: none;
-    padding: 0;
-    cursor: pointer;
-
-    font-weight: bold;
-
-    .label {
-      text-decoration: underline;
-    }
-
-    .arrow {
-      margin-left: 2px;
-      visibility: hidden;
-
-      &.arrow--visible {
-        visibility: visible;
-      }
-    }
-  }
-}
-</style>

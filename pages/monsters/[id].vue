@@ -1,249 +1,265 @@
 <template>
-  <section class="docs-container container">
-    <p v-if="loading">Loading...</p>
-    <div v-else>
-      <h1>{{ monster.name }}</h1>
-      <img v-if="monster.img_main" :src="monster.img_main" class="img-main" />
-      <p>
-        <em
-          >{{ monster.size }} {{ monster.type }}, {{ monster.alignment }}
-          <source-tag
-            v-show="monster.document__slug"
-            :title="monster.document__title"
-            :text="monster.document__slug"
-        /></em>
-      </p>
-      <hr />
-      <p><b>Armor Class</b> {{ monster.armor_class }}</p>
-      <p><b>Hit Points</b> {{ monster.hit_points }} ({{ monster.hit_dice }})</p>
-      <p>
-        <b class="pad-r-sm">Speed</b>
-        <span
-          v-for="(speed, key, index) in monster.speed"
-          v-show="key !== 'hover'"
-          :key="index"
+  <main v-if="monster" class="docs-container container" :data-mode="mode">
+    <!-- TITLE -->
+    <div class="flex items-end justify-between gap-8">
+      <h1 class="flex-auto">{{ monster.name }}</h1>
+
+      <div class="flex flex-none items-start">
+        <button
+          class="flex items-center gap-1 rounded-md p-1 text-xs text-blood outline outline-1 outline-blood hover:bg-blood hover:text-white"
+          @click="toggleMode()"
         >
-          {{ key.charAt(0).toUpperCase() + key.slice(1) }} {{ speed }}ft.
-          <span v-if="monster.speed.hasOwnProperty('hover') && key === 'fly'"
-            >(hover)</span
-          >
-        </span>
-      </p>
-      <hr />
-      <div class="ability-array">
-        <div class="ability-block">
-          <span class="ability-name">STR</span>
-          <span class="ability-score"
-            >{{ monster.strength }} (<stat-bonus
-              :stat="monster.strength"
-            />)</span
-          >
-        </div>
-        <div class="ability-block">
-          <span class="ability-name">DEX</span>
-          <span class="ability-score"
-            >{{ monster.dexterity }} (<stat-bonus
-              :stat="monster.dexterity"
-            />)</span
-          >
-        </div>
-        <div class="ability-block">
-          <span class="ability-name">CON</span>
-          <span class="ability-score"
-            >{{ monster.constitution }} (<stat-bonus
-              :stat="monster.constitution"
-            />)</span
-          >
-        </div>
-        <div class="ability-block">
-          <span class="ability-name">INT</span>
-          <span class="ability-score"
-            >{{ monster.intelligence }} (<stat-bonus
-              :stat="monster.intelligence"
-            />)</span
-          >
-        </div>
-        <div class="ability-block">
-          <span class="ability-name">WIS</span>
-          <span class="ability-score"
-            >{{ monster.wisdom }} (<stat-bonus :stat="monster.wisdom" />)</span
-          >
-        </div>
-        <div class="ability-block">
-          <span class="ability-name">CHA</span>
-          <span class="ability-score"
-            >{{ monster.charisma }} (<stat-bonus
-              :stat="monster.charisma"
-            />)</span
-          >
-        </div>
+          <Icon
+            :name="
+              mode === 'compact'
+                ? 'heroicons:arrows-pointing-out'
+                : 'heroicons:arrows-pointing-in'
+            "
+          />
+          {{ mode === 'compact' ? 'Regular statblock' : 'Compact statblock' }}
+        </button>
       </div>
-      <hr />
-      <p v-if="getSaves">
-        <b class="pad-r-sm">Saving Throws</b>
-        <span v-for="(save, index) in getSaves" :key="save.name">
-          {{ save.name }}
-          <stat-bonus :stat="save.val" :type="save.type" /><span
-            v-show="index < getSaves.length - 1"
-            >,
+    </div>
+
+    <img
+      v-if="mode !== 'compact' && monster.img_main"
+      :src="monster.img_main"
+      class="img-main"
+    />
+    <p class="italic">
+      <span>
+        {{
+          `${monster.size} ${monster.type}${
+            monster.subtype ? ` (${monster.subtype})` : ''
+          }, ${monster.alignment}`
+        }}
+      </span>
+      <source-tag
+        v-show="monster.document__slug"
+        :title="monster.document__title"
+        :text="monster.document__slug"
+      />
+    </p>
+
+    <section>
+      <ul>
+        <li>
+          <span class="font-bold after:content-['_']">Armor Class</span>
+          {{
+            `${monster.armor_class}${
+              monster.armor_desc ? ` (${monster.armor_desc})` : ''
+            }`
+          }}
+        </li>
+        <li>
+          <span class="font-bold after:content-['_']">Hit Points</span>
+          <span class="after:content-['_']">{{ monster.hit_points }}</span>
+          <span
+            class="cursor-pointer font-bold text-blood hover:text-black"
+            @click="useDiceRoller(monster.hit_dice)"
+          >
+            {{ `(${monster.hit_dice})` }}
           </span>
-        </span>
-      </p>
-      <p v-if="monster.skills">
-        <b class="pad-r-sm">Skills</b>
-        <span
-          v-for="(skill, key, index) in monster.skills"
-          v-show="key !== 'hover'"
-          :key="index"
-        >
-          {{ key.charAt(0).toUpperCase() + key.slice(1) }}
-          <span v-if="skill >= 0">+</span>{{ skill
-          }}<span v-if="index < getSaves.length - 1">, </span>
-        </span>
-      </p>
-      <p v-if="monster.damage_vulnerabilities">
-        <b class="pad-r-sm">Damage Vulnerabilities</b>
-        {{ monster.damage_vulnerabilities }}
-      </p>
-      <p v-if="monster.damage_resistances">
-        <b>Damage Resistances</b> {{ monster.damage_resistances }}
-      </p>
-      <p v-if="monster.damage_immunities">
-        <b>Damage Immunities</b> {{ monster.damage_immunities }}
-      </p>
-      <p v-if="monster.senses"><b>Senses</b> {{ monster.senses }}</p>
-      <p v-if="monster.languages"><b>Languages</b> {{ monster.languages }}</p>
-      <p v-if="monster.challenge_rating">
-        <b class="pad-r-sm">Challenge</b>
-        <challenge-render :challenge="monster.challenge_rating" />
-      </p>
-      <hr />
+        </li>
+        <li>
+          <span class="font-bold after:content-['_']">Speed</span>
+          <span
+            v-for="(speed, key) in monster.speed"
+            v-show="key !== 'hover'"
+            :key="key"
+            class="after:content-[',_'] last:after:content-[]"
+          >
+            {{
+              `${key !== 'walk' ? `${key} ` : ''}${speed}ft.${
+                speed.hasOwnProperty('hover') && key === 'fly' ? ' (hover)' : ''
+              }`
+            }}
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- ABILITY SCORES -->
+    <section class="max-w-96">
+      <ul class="flex items-center gap-4 text-center">
+        <li v-for="ability in monster.abilities" :key="ability.name">
+          <span class="block font-bold uppercase">{{ ability.shortName }}</span>
+          <span class="after:content-['_']">{{ ability.score }}</span>
+          <span
+            class="cursor-pointer font-bold text-blood hover:text-black"
+            @click="useDiceRoller(ability.modifier)"
+          >
+            {{ `(${ability.modifier})` }}
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- Monster Special Abilities -->
+    <section v-if="monster.special_abilities">
       <p
         v-for="ability in monster.special_abilities"
         :key="ability.name"
         class="action-block"
       >
-        <b class="action-name">{{ ability.name }}. </b>
-        <md-viewer class="inline" :text="ability.desc" />
+        <span class="font-bold after:content-['._']">{{ ability.name }}</span>
+        <md-viewer :inline="true" :text="ability.desc" :use-roller="true" />
       </p>
-      <h2 v-if="monster.actions">Actions</h2>
-      <p
-        v-for="action in monster.actions"
-        :key="action.name"
-        class="action-block"
-      >
-        <b class="action-name">{{ action.name }}. </b>
-        <md-viewer class="inline" :text="action.desc" />
-      </p>
-      <h2 v-if="monster.reactions">Reactions</h2>
-      <p
-        v-for="action in monster.reactions"
-        :key="action.name"
-        class="action-block"
-      >
-        <b class="action-name">{{ action.name }}. </b>
-        <md-viewer class="inline" :text="action.desc" />
-      </p>
-      <h2 v-if="monster.legendary_actions">Legendary Actions</h2>
-      <p
-        v-for="action in monster.legendary_actions"
-        :key="action.name"
-        class="action-block"
-      >
-        <b class="action-name">{{ action.name }}. </b>
-        <md-viewer class="inline" :text="action.desc" />
-      </p>
-      <p class="text-sm italic">
-        Source:
-        <a target="NONE" :href="monster.document__url">
-          {{ monster.document__title }}
-          <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
-        </a>
-      </p>
-      <p class="text-sm italic">
-        Compact Statblock:
-        <nuxt-link
-          tag="a"
-          :params="{ id: monster.slug }"
-          :to="`/monsters/compact/${monster.slug}`"
-          :prefetch="false"
+    </section>
+
+    <!-- Monster Actions -->
+    <section v-if="monster.actions">
+      <h2>Actions</h2>
+      <ul id="actions-list">
+        <li v-for="action in monster.actions" :key="action.name" class="my-1">
+          <span class="font-bold after:content-['_']">{{ action.name }}. </span>
+          <md-viewer :inline="true" :text="action.desc" :use-roller="true" />
+        </li>
+      </ul>
+    </section>
+
+    <!-- Monster Bonus Actions -->
+    <section v-if="monster.bonus_actions">
+      <h2>Bonus Actions</h2>
+      <ul>
+        <li
+          v-for="action in monster.bonus_actions"
+          :key="action.name"
+          class="my-1"
         >
-          {{ monster.name }}
-        </nuxt-link>
+          <span class="font-bold after:content-['_']">{{ action.name }}. </span>
+          <md-viewer :inline="true" :text="action.desc" :use-roller="true" />
+        </li>
+      </ul>
+    </section>
+
+    <!-- Monster Reactions -->
+    <section v-if="monster.reactions">
+      <h2>Reactions</h2>
+      <ul>
+        <li v-for="action in monster.reactions" :key="action.name" class="my-1">
+          <span class="font-bold after:content-['_']">{{ action.name }}. </span>
+          <md-viewer :inline="true" :text="action.desc" :use-roller="true" />
+        </li>
+      </ul>
+    </section>
+
+    <!-- Monster Legendary Actions -->
+    <section v-if="monster.legendary_actions">
+      <h2>Legendary Actions</h2>
+      <p v-if="monster.legendary_desc" class="text">
+        {{ monster.legendary_desc }}
       </p>
-    </div>
-  </section>
+
+      <ul>
+        <li
+          v-for="action in monster.legendary_actions"
+          :key="action.name"
+          class="my-1"
+        >
+          <span class="font-bold after:content-['_']">{{ action.name }}.</span>
+          <md-viewer :inline="true" :text="action.desc" />
+        </li>
+      </ul>
+    </section>
+    <!-- Monster Mythic Actions -->
+    <section v-if="monster.mythic_actions">
+      <h2>Mythic Actions</h2>
+      <ul>
+        <li
+          v-for="action in monster.mythic_actions"
+          :key="action.name"
+          class="my-1"
+        >
+          <span class="font-bold after:content-['_']">{{ action.name }}.</span>
+          <md-viewer :inline="true" :text="action.desc" />
+        </li>
+      </ul>
+    </section>
+
+    <!-- Monster Lair and Lair Actions -->
+    <section v-if="monster.lair_actions">
+      <h2>Lair Actions</h2>
+      <p v-if="monster.lair_desc" class="text">
+        {{ monster.lair_desc }}
+      </p>
+      <ul>
+        <li
+          v-for="action in monster.lair_actions"
+          :key="action.name"
+          class="my-1"
+        >
+          <span class="font-bold after:content-['_']">{{ action.name }}.</span>
+          <md-viewer :inline="true" :text="action.desc" />
+        </li>
+      </ul>
+    </section>
+
+    <!-- Monster Description -->
+    <section v-if="monster.desc">
+      <h2>Description</h2>
+      <md-viewer :text="monster.desc" />
+    </section>
+
+    <hr />
+
+    <!-- Monster Environments -->
+    <section v-if="monster.environments?.length > 0">
+      <span class="font-bold after:content-[_]">Environments:</span>
+      <span
+        v-for="environment in monster.environments"
+        :key="environment"
+        class="text-sm after:content-[',_'] last:after:content-[]"
+      >
+        {{ environment }}
+      </span>
+    </section>
+
+    <p class="mb-4 text-sm italic">
+      Source:
+      <a target="NONE" :href="monster.document__url">
+        {{ monster.document__title }}
+        <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
+      </a>
+    </p>
+  </main>
 </template>
 
-<script>
-import axios from 'axios';
-import StatBonus from '~/components/StatBonus.vue';
-import ChallengeRender from '~/components/ChallengeRender.vue';
-import MdViewer from '~/components/MdViewer';
+<script setup>
+const route = useRoute();
+const { data: monster } = useMonster(route.params.id);
 
-export default {
-  components: {
-    StatBonus,
-    ChallengeRender,
-    MdViewer,
-  },
-  data() {
-    return {
-      posts: [],
-      errors: [],
-      monster: [],
-      loading: true,
-    };
-  },
-  computed: {
-    getSaves() {
-      let saves = [];
-      let savesArray = [
-        { name: 'strength', display: 'Str' },
-        { name: 'dexterity', display: 'Dex' },
-        { name: 'constitution', display: 'Con' },
-        { name: 'intelligence', display: 'Int' },
-        { name: 'wisdom', display: 'Wis' },
-        { name: 'charisma', display: 'Cha' },
-      ];
-      // build an object of save bonuses if they exist
-      for (let i = 0; i < savesArray.length; i++) {
-        const saveValue = this.monster[savesArray[i].name + '_save'];
-        const statValue = this.monster[savesArray[i].name];
-        if (saveValue !== null) {
-          saves.push({
-            name: savesArray[i].display,
-            val: saveValue,
-            type: 'bonus',
-          });
-        } else {
-          saves.push({
-            name: savesArray[i].display,
-            val: statValue,
-            type: 'score',
-          });
-        }
-      }
+const mode = ref(route.query.mode || 'normal');
+function toggleMode() {
+  switch (mode.value) {
+    case 'compact':
+      mode.value = 'normal';
+      break;
+    default:
+      mode.value = 'compact';
+      break;
+  }
 
-      return saves;
-    },
-  },
-  created() {
-    return axios
-      .get(
-        `${useRuntimeConfig().public.apiUrl}/monsters/${this.$route.params.id}`
-      )
-      .then((response) => {
-        this.monster = response.data;
-        this.loading = false;
-      });
-  },
-};
+  navigateTo({
+    path: `/monsters/${route.params.id}`,
+    query:
+      mode.value === 'compact'
+        ? {
+            mode: 'compact',
+          }
+        : null,
+  });
+}
 </script>
 
 <style scoped lang="scss">
 .img-main {
   float: right;
+  margin-block: 1rem;
   width: 30%;
   min-width: 300px;
 }
@@ -255,34 +271,23 @@ export default {
   }
 }
 
-.action-block {
-  .inline {
-    display: inline;
-
-    :deep(p:first-child) {
-      display: inline;
-    }
-  }
-
-  .action-name {
-    font-size: 1.1rem;
-  }
+[data-mode='compact'] {
+  font-size: 0.833rem;
+  line-height: 1.25;
 }
 
-.ability-array {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 30rem;
+[data-mode='compact'] h1 {
+  font-size: 1.2rem;
+  margin-top: 0.833rem;
+}
 
-  .ability-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+[data-mode='compact'] h2 {
+  font-size: 1rem;
+  margin-top: 0.833rem;
+}
 
-    .ability-name {
-      font-weight: bold;
-    }
-  }
+[data-mode='compact'] hr {
+  margin-block: 0.5rem;
 }
 </style>
+<hr />

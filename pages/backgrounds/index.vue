@@ -1,42 +1,26 @@
 <template>
   <section class="docs-container container">
     <h1>Backgrounds</h1>
-    <div class="docs-toc">
-      <ul v-if="backgrounds">
-        <li v-for="background in backgrounds" :key="background.slug">
-          <nuxt-link tag="a" :to="`/backgrounds/${background.slug}`">
-            {{ background.name }}
-          </nuxt-link>
-          <source-tag
-            v-if="background.document__slug !== 'wotc-srd'"
-            :text="background.document__slug"
-            :title="background.document__title"
-          />
-        </li>
-      </ul>
+    <api-results-table :data="backgrounds" endpoint="backgrounds" />
+    <div
+      v-if="backgrounds && backgrounds.length === 0"
+      class="flex w-full flex-wrap pt-2 text-lg"
+    >
+      <div class="flex w-full">
+        There are no items for this category that align with the corresponding
+        sources you selected.
+      </div>
+      <div class="flex w-full pt-2">
+        Please edit your selected sources for more results.
+      </div>
     </div>
   </section>
 </template>
 
-<script>
-import { useMainStore } from '~/store';
-import SourceTag from '~/components/SourceTag.vue';
+<script setup>
+import ApiResultsTable from '~/components/ApiResultsTable.vue';
 
-export default {
-  components: { SourceTag },
-  setup() {
-    const store = useMainStore();
-    return { store };
-  },
-
-  computed: {
-    backgrounds: function () {
-      return this.store.allBackgrounds;
-    },
-  },
-
-  beforeMount() {
-    this.store.loadBackgrounds();
-  },
-};
+const { data: backgrounds } = useFindMany(API_ENDPOINTS.backgrounds, {
+  fields: ['name', 'slug', 'document__title', 'document__slug'].join(),
+});
 </script>

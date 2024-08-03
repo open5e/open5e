@@ -10,7 +10,7 @@
       :id="id"
       ref="input"
       v-model="filterText"
-      class="filter-input"
+      class="filter-input bg-fog dark:bg-basalt dark:text-white"
       type="input"
       aria-description="Results will update as you type."
       @input.stop="onInput"
@@ -23,49 +23,45 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    id: {
-      type: String,
-      required: true,
-    },
-    placeholder: {
-      type: String,
-      default: 'Filter...',
-    },
+<script setup>
+defineProps({
+  id: {
+    type: String,
+    required: true,
   },
-  data() {
-    return {
-      filterText: '',
-      isLabelFloating: false,
-    };
+  placeholder: {
+    type: String,
+    default: 'Filter...',
   },
-  computed: {
-    filterValue: function () {
-      return this.filterText;
-    },
-  },
-  methods: {
-    clearSearch: function () {
-      this.filterText = '';
-      this.isLabelFloating = false;
-      this.$emit('input', this.filterText);
-      this.$refs.input.focus();
-    },
-    onInput: function () {
-      this.$emit('input', this.filterText);
-    },
-    onFocus: function () {
-      this.isLabelFloating = true;
-    },
-    onBlur: function () {
-      if (this.filterText.length === 0) {
-        this.isLabelFloating = false;
-      }
-    },
-  },
-};
+});
+
+const filterText = ref('');
+const isLabelFloating = ref(false);
+const input = ref(null);
+const filterValue = computed(() => {
+  return filterText.value;
+});
+const emit = defineEmits(['input']);
+
+function clearSearch() {
+  filterText.value = '';
+  isLabelFloating.value = false;
+  emit('input', filterText.value);
+  input.value.focus();
+}
+function onInput() {
+  emit('input', filterText.value);
+}
+
+function onFocus() {
+  isLabelFloating.value = true;
+}
+
+function onBlur() {
+  if (filterText.value.length === 0) {
+    isLabelFloating.value = false;
+  }
+}
 </script>
 
 <style lang="scss">

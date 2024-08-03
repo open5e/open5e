@@ -32,8 +32,8 @@
     <p>
       For example, monsters can be filtered by CR. For example:
       <code
-        ><a href="https://api.open5e.com/monsters/?challenge_rating=3"
-          >api.open5e.com/monsters/?challenge_rating=3</a
+        ><a href="https://api.open5e.com/monsters/?cr=3"
+          >api.open5e.com/monsters/?cr=3</a
         ></code
       >
       will return all monsters with a challenge rating of 3.
@@ -131,14 +131,6 @@
   </section>
 </template>
 
-<script>
-export default {
-  data: function () {
-    return {
-      file: useRoute().path,
-    };
-  },
-};
-</script>
+<script setup></script>
 
 <style></style>

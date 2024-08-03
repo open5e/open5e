@@ -24,11 +24,8 @@ table {
 }
 
 .container {
-  margin: $pad-lg auto $pad-lg 0;
-  padding: 0 $pad-lg;
   h1 {
     font-size: 2rem;
-    color: $color-blood;
     &:not(:first-child) {
       margin-top: $pad-xl;
     }
@@ -38,11 +35,13 @@ table {
     border-bottom: 3px solid $color-fireball;
     padding-bottom: $pad-xs;
   }
+  h4 {
+    display: inline;
+  }
 
   h1,
   h2,
   h3,
-  h4,
   h5,
   h6 {
     display: flex;
@@ -99,6 +98,7 @@ table {
     border: 0;
   }
   p,
+  ul,
   hr,
   h1,
   h2,
@@ -120,7 +120,6 @@ h2.filter-header {
 }
 
 blockquote {
-  background-color: #eaeaea;
   border-left: 0.75rem solid #999;
   padding: 0.1rem 1rem 1rem 1rem;
   margin-top: 1rem;
