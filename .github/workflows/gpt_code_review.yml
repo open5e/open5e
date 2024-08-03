@@ -5,9 +5,6 @@ permissions:
   issues: write
   pull-requests: write
 
-env: # Or as an environment variable
-  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
 on:
   pull_request:
     types: [opened, reopened, synchronize]
@@ -20,7 +17,7 @@ jobs:
     continue-on-error: true
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Automated Code Review
         uses: eepMoody/genai-code-review@main
@@ -29,9 +26,5 @@ jobs:
           openai_api_key: ${{ secrets.OPENAI_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           github_pr_id: ${{ github.event.number }}
-          openai_model: 'gpt-4o' # optional
-          openai_temperature: 0.5 # optional
-          custom_prompt:
-            "Please limit replies to definite, actionable issues with the code.
-            Avoid general comments, nitpicking, or speculative feedback. If
-            there are no actionable issues, reply with 'no comments'."
+          openai_model: 'gpt-4o' # most cost effective model at this time
+          openai_temperature: 0.5 # best balance between quality and cost
