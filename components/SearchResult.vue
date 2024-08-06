@@ -10,12 +10,10 @@
       >
         {{ result.object_name }}
       </nuxt-link>
-      <source-tag :text="result.document.key" :title="result.document.name" />
-      <span
-        class="font-sans text-sm uppercase text-granite before:mx-2 before:content-['|']"
-      >
+      <span class="ml-2 font-sans text-sm uppercase text-granite">
         {{ result.object_model.match(/[A-Z][a-z]+/g).join(' ') }}
       </span>
+      <source-tag :text="result.document.key" :title="result.document.name" />
     </h3>
 
     <!-- Row subtitle -->
@@ -38,10 +36,10 @@
     </div>
 
     <!-- include snipet if query text is not part of article title -->
-    <div
+    <md-viewer
       v-if="!result.object_name.toUpperCase().includes(query.toUpperCase())"
-      class="text-sm italic text-granite"
-      v-html="result.highlighted"
+      class="text-sm italic text-basalt dark:text-granite"
+      :markdown="stripMarkdownTables(result.highlighted)"
     />
     <!-- include article source -->
     <div class="text-sm">(from {{ result.document.name }})</div>
@@ -71,6 +69,14 @@ const ModelToRoute = {
   CharClass: 'classes',
 };
 
+function stripMarkdownTables(text) {
+  // Remove table row markup but keep the content
+  return text
+    .replace(/\|/g, ' ') // Replace pipe characters with spaces
+    .replace(/(\r\n|\n|\r)/gm, ' ') // Remove line breaks
+    .replace(/-{3,}/g, ''); // Remove three or more hyphens
+}
+
 function getRoute(model) {
   return ModelToRoute[model] ?? 'error';
 }
@@ -78,6 +84,6 @@ function getRoute(model) {
 
 <style>
 .highlighted {
-  @apply bg-basalt uppercase text-white dark:bg-white dark:text-black;
+  @apply bg-amber-300 px-1 text-black dark:bg-yellow-800 dark:text-white;
 }
 </style>
