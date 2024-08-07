@@ -2,6 +2,8 @@
   <div>
     <div class="flex w-full flex-wrap justify-end align-middle">
       <api-table-nav
+        :page-number="pageNo"
+        :last-page-number="lastPageNo"
         @first="firstPage()"
         @next="nextPage()"
         @prev="prevPage()"
@@ -50,6 +52,8 @@
         Page {{ pageNo }} of {{ lastPageNo }}
       </div>
       <api-table-nav
+        :page-number="pageNo"
+        :last-page-number="lastPageNo"
         @first="firstPage()"
         @next="nextPage()"
         @prev="prevPage()"
