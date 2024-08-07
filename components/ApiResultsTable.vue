@@ -44,7 +44,7 @@
     </table>
     <div class="flex w-full flex-wrap justify-end align-middle">
       <div
-        v-if="data"
+        v-show="results && results.length > 0"
         class="flex w-full justify-start italic text-blood md:w-1/2"
       >
         Page {{ pageNo }} of {{ lastPageNo }}
