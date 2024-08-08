@@ -185,9 +185,12 @@ const title = computed(() => {
 useHead({ title: title });
 const searchText = ref($route.query.text);
 
-watch($route, () => {
-  showSidebar.value = false;
-});
+watch(
+  () => $route.path,
+  () => {
+    showSidebar.value = false;
+  }
+);
 
 const showModal = ref(false);
 const { sources } = useSourcesList();
