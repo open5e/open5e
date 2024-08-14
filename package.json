@@ -34,7 +34,7 @@
     "eslint-plugin-vue": "^9.13.0",
     "happy-dom": "^14.12.3",
     "husky": "^8.0.3",
-    "nuxt": "^3.10.3",
+    "nuxt": "^3.12.4",
     "nuxt-icon": "^0.4.1",
     "playwright-core": "^1.45.1",
     "prettier-plugin-tailwindcss": "^0.3.0",
