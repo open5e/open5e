@@ -1,55 +1,31 @@
 export type MonsterFilter = {
-  name?: string;
-  challengeLow?: number;
-  challengeHigh?: number;
-  hpLow?: number;
-  hpHigh?: number;
+  /** Name contains */
+  name__icontains?: string;
+  /** Challenge rating lower bound */
+  cr__gte?: string;
+  /** Challenge rating upper bound */
+  cr__lte?: string;
+  /** HP rating lower bound */
+  hit_points__gte?: string;
+  /** HP rating lower bound */
+  hit_points__lte?: string;
   size?: string;
   type?: string;
 };
 
-export const useAllMonsters = (params: Record<string, string> = {}) => {
-  const { findMany } = useAPI();
-  const { sources } = useSourcesList();
-  return useQuery({
-    queryKey: ['monsters', API_ENDPOINTS.monsters, sources, params],
-    queryFn: async () => {
-      const monsters = await findMany(
-        API_ENDPOINTS.monsters,
-        sources.value,
-        params
-      );
-
-      return monsters;
-    },
-  });
+export const DefaultMonsterFilter: Readonly<MonsterFilter> = {
+  name__icontains: '',
+  cr__gte: '',
+  cr__lte: '',
+  hit_points__gte: '',
+  hit_points__lte: '',
+  size: '',
+  type: '',
 };
 
-export const filterMonsters = (
-  monsters: Record<string, any>[],
-  filter: MonsterFilter
-) => {
-  const _mons = unref(monsters);
-  const { challengeHigh, challengeLow, hpHigh, hpLow, name, size, type } =
-    filter;
-
-  return _mons
-    .filter((monster) =>
-      name ? monster.name.toLowerCase().includes(name.toLowerCase()) : true
-    )
-    .filter((monster) =>
-      inRange(monster.cr, challengeLow ?? 0, challengeHigh ?? Infinity)
-    )
-    .filter((monster) =>
-      inRange(monster.hit_points, hpLow ?? 0, hpHigh ?? Infinity)
-    )
-    .filter((monster) =>
-      size ? monster.size.toLowerCase().includes(size.toLowerCase()) : true
-    )
-    .filter((monster) =>
-      type ? monster.type.toLowerCase().includes(type.toLowerCase()) : true
-    );
-};
+export function copyDefaultMonsterFilter(): MonsterFilter {
+  return { ...DefaultMonsterFilter };
+}
 
 export const useMonster = (slug: string) => {
   const { get } = useAPI();
@@ -75,10 +51,6 @@ function calcMod(score: number) {
 
 function formatMod(mod: number) {
   return mod >= 0 ? '+' + mod.toString() : mod.toString();
-}
-
-function inRange(value: number, low: number, high: number) {
-  return low <= value && value <= high;
 }
 
 const ABILITY_SCORE_NAMES = [

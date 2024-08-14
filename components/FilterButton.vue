@@ -3,17 +3,17 @@
     <button
       v-if="showClearButton"
       class="mr-2 rounded-md p-1 text-blood outline outline-1 outline-blood hover:bg-blood hover:text-fog dark:text-red-400"
-      @click="$emit('clearFilters')"
+      @click="$emit('clearFilter')"
     >
       <Icon name="heroicons:x-mark" class="mb-1 mr-1" />
       Clear {{ filterCount }} Filters
     </button>
     <button
       class="rounded-md p-1 text-blood outline outline-1 outline-blood hover:bg-blood hover:text-fog dark:text-red-400"
-      @click="showFilters()"
+      @click="showFilter()"
     >
       <Icon name="heroicons:funnel" class="mr-1" />
-      {{ filtersShown ? 'Hide' : 'Show' }} Filters
+      {{ filterShown ? 'Hide' : 'Show' }} Filters
     </button>
   </div>
 </template>
@@ -28,15 +28,15 @@ const props = defineProps({
     type: Number,
     default: 0,
   },
-  filtersShown: {
+  filterShown: {
     type: Boolean,
     default: false,
   },
 });
 
-const emit = defineEmits(['showFilters', 'clearFilters']);
+const emit = defineEmits(['showFilter', 'clearFilter']);
 
-function showFilters() {
-  emit('showFilters');
+function showFilter() {
+  emit('showFilter');
 }
 </script>

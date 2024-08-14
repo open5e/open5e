@@ -1,4 +1,4 @@
-import { useQuery } from '@tanstack/vue-query';
+import { keepPreviousData, useQuery } from '@tanstack/vue-query';
 import axios from 'axios';
 
 export const API_ENDPOINTS = {
@@ -41,7 +41,47 @@ export const useAPI = () => {
         },
       });
 
-      return (res.data.results as Record<string, string | number>[]) ?? [];
+      return res.data.results as Record<string, any>[];
+    },
+    findPaginated: async (options: {
+      endpoint: string;
+      sources: string[];
+      pageNo?: number;
+      itemsPerPage?: number;
+      sortByProperty?: string;
+      isSortDescending?: boolean;
+      queryParams?: Record<string, any>;
+    }) => {
+      const {
+        endpoint,
+        sources,
+        pageNo = 1,
+        itemsPerPage = 5,
+        sortByProperty = 'name',
+        isSortDescending = false,
+        queryParams = {},
+      } = options;
+
+      const formattedSources =
+        sources.length > 0 ? sources.join(',') : 'no-sources';
+      const res = await api.get(endpoint, {
+        params: {
+          limit: itemsPerPage,
+          page: pageNo,
+          document__slug__in: formattedSources,
+          ordering: `${isSortDescending ? '-' : ''}${sortByProperty}`,
+          ...queryParams,
+        },
+      });
+
+      const data = res.data as {
+        count: number;
+        results: Record<string, any>[];
+        next: string | null;
+        previous: string | null;
+      };
+
+      return data;
     },
     get: async (...parts: string[]) => {
       const route = '/' + parts.join('/');
@@ -64,11 +104,102 @@ export const useFindMany = (
   });
 };
 
-export const useFindOne = (endpoint: string, slug: string) => {
+export const useFindPaginated = (options: {
+  endpoint: MaybeRef<string>;
+  itemsPerPage?: MaybeRef<number>;
+  initialPage?: MaybeRef<number>;
+  sortByProperty?: MaybeRef<string>;
+  isSortDescending?: MaybeRef<boolean>;
+  filter?: MaybeRef<Record<string, any>>;
+  params?: MaybeRef<Record<string, any>>;
+}) => {
+  const {
+    endpoint,
+    itemsPerPage = 50,
+    initialPage = 1,
+    sortByProperty = 'name',
+    isSortDescending = false,
+    filter = {},
+    params = {},
+  } = options;
+  const pageNo = ref(unref(initialPage));
+  const { findPaginated } = useAPI();
+  const { sources } = useSourcesList();
+  const { data, isFetching, error } = useQuery({
+    queryKey: [
+      'findPaginated',
+      endpoint,
+      sources,
+      itemsPerPage,
+      pageNo,
+      sortByProperty,
+      isSortDescending,
+      filter,
+      params,
+    ],
+    placeholderData: keepPreviousData,
+    queryFn: () =>
+      findPaginated({
+        endpoint: unref(endpoint),
+        sources: unref(sources),
+        pageNo: unref(pageNo),
+        sortByProperty: unref(sortByProperty),
+        isSortDescending: unref(isSortDescending),
+        itemsPerPage: unref(itemsPerPage),
+        queryParams: { ...unref(params), ...unref(filter) },
+      }),
+  });
+
+  const lastPageNo = computed(() => {
+    return data.value ? Math.ceil(data.value.count / unref(itemsPerPage)) : 1;
+  });
+
+  const nextPage = () => {
+    pageNo.value++;
+  };
+
+  const prevPage = () => {
+    if (pageNo.value > 1) {
+      pageNo.value--;
+    }
+  };
+
+  const firstPage = () => {
+    pageNo.value = 1;
+  };
+
+  const lastPage = () => {
+    if (data.value) {
+      pageNo.value = lastPageNo.value;
+    }
+  };
+
+  // Move to the first page when the filter changes, to avoid showing an empty page due to fewer results
+  watch(filter, () => {
+    firstPage();
+  });
+
+  return {
+    data,
+    isFetching,
+    error,
+    firstPage,
+    prevPage,
+    nextPage,
+    lastPage,
+    pageNo,
+    lastPageNo,
+  };
+};
+
+export const useFindOne = (
+  endpoint: MaybeRef<string>,
+  slug: MaybeRef<string>
+) => {
   const { get } = useAPI();
   return useQuery({
     queryKey: ['get', endpoint, slug],
-    queryFn: () => get(endpoint, slug),
+    queryFn: () => get(unref(endpoint), unref(slug)),
   });
 };
 
