@@ -57,18 +57,15 @@ const isFirstPage = computed(() => props.pageNumber <= 1);
 const isLastPage = computed(() => props.pageNumber >= props.lastPageNumber);
 
 function firstPage() {
-  console.log(props.pageNumber, props.lastPageNumber);
   emit('first');
 }
 function lastPage() {
-  console.log(props.pageNumber, props.lastPageNumber);
   emit('last');
 }
 function nextPage() {
   emit('next');
 }
 function prevPage() {
-  console.log('prevPage');
   emit('prev');
 }
 </script>

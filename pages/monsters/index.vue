@@ -50,12 +50,4 @@ const {
   clear,
   update,
 } = useFilterState(DefaultMonsterFilter);
-
-watch(filter, () => {
-  console.log('A - Filter changed');
-});
-
-watch(debouncedFilter, () => {
-  console.log('B - Debounced changed');
-});
 </script>

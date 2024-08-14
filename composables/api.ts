@@ -81,8 +81,6 @@ export const useAPI = () => {
         previous: string | null;
       };
 
-      console.log('data', data);
-
       return data;
     },
     get: async (...parts: string[]) => {
@@ -157,7 +155,6 @@ export const useFindPaginated = (options: {
   });
 
   const nextPage = () => {
-    console.log('nextPage', pageNo.value);
     pageNo.value++;
   };
 
@@ -176,10 +173,6 @@ export const useFindPaginated = (options: {
       pageNo.value = lastPageNo.value;
     }
   };
-
-  watch(data, () => {
-    console.log('useFindPaginated', unref(data));
-  });
 
   // Move to the first page when the filter changes, to avoid showing an empty page due to fewer results
   watch(filter, () => {

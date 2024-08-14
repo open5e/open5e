@@ -47,12 +47,4 @@ const {
   clear,
   update,
 } = useFilterState(DefaultMagicItemFilter);
-
-watch(filter, () => {
-  console.log('A - Filter changed');
-});
-
-watch(debouncedFilter, () => {
-  console.log('B - Debounced changed');
-});
 </script>

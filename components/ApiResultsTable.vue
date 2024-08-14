@@ -92,10 +92,6 @@ const { data, pageNo, firstPage, prevPage, nextPage, lastPage, lastPageNo } =
 
 const results = computed(() => data.value?.results);
 
-watch(filter, () => {
-  console.log('filter changed', filter.value);
-});
-
 const updateSortState = (property) => {
   if (property !== sortBy.value) {
     sortBy.value = property;
@@ -103,11 +99,5 @@ const updateSortState = (property) => {
   } else {
     isSortDescending.value = !isSortDescending.value;
   }
-  console.log(
-    'updateSortState',
-    property,
-    sortBy.value,
-    isSortDescending.value
-  );
 };
 </script>
