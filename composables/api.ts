@@ -96,11 +96,17 @@ export const useFindMany = (
   params?: MaybeRef<Record<string, string | number>>
 ) => {
   const { findMany } = useAPI();
-  const { sources } = useSourcesList();
+  const { sources, sourcesAPIVersion1 } = useSourcesList();
+  const sourcesForAPIVersion = isV1Endpoint(unref(endpoint))
+    ? sourcesAPIVersion1
+    : sources;
+
   return useQuery({
-    queryKey: ['findMany', endpoint, sources, params],
+    queryKey: ['findMany', endpoint, sourcesForAPIVersion, params],
     queryFn: () =>
-      unref(findMany(unref(endpoint), unref(sources), unref(params))),
+      unref(
+        findMany(unref(endpoint), unref(sourcesForAPIVersion), unref(params))
+      ),
   });
 };
 
@@ -124,12 +130,16 @@ export const useFindPaginated = (options: {
   } = options;
   const pageNo = ref(unref(initialPage));
   const { findPaginated } = useAPI();
-  const { sources } = useSourcesList();
+  const { sources, sourcesAPIVersion1 } = useSourcesList();
+  const sourcesForAPIVersion = isV1Endpoint(unref(endpoint))
+    ? sourcesAPIVersion1
+    : sources;
+
   const { data, isFetching, error } = useQuery({
     queryKey: [
       'findPaginated',
       endpoint,
-      sources,
+      sourcesForAPIVersion,
       itemsPerPage,
       pageNo,
       sortByProperty,
@@ -141,7 +151,7 @@ export const useFindPaginated = (options: {
     queryFn: () =>
       findPaginated({
         endpoint: unref(endpoint),
-        sources: unref(sources),
+        sources: unref(sourcesForAPIVersion),
         pageNo: unref(pageNo),
         sortByProperty: unref(sortByProperty),
         isSortDescending: unref(isSortDescending),
@@ -277,3 +287,7 @@ export const useSearch = (queryRef: Ref<string>) => {
 
 export const useQueryParam = (paramName: string) =>
   computed(() => useRoute().query[paramName]);
+
+function isV1Endpoint(endpoint: string) {
+  return endpoint.includes('v1/');
+}
