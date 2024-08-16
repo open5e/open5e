@@ -27,7 +27,7 @@
       <tbody v-if="results && results.length > 0">
         <api-result-row
           v-for="item in results"
-          :key="item.slug"
+          :key="item.key ?? item.slug"
           :data="item"
           :endpoint="endpoint"
           :cols="cols"
@@ -86,7 +86,7 @@ const { data, pageNo, firstPage, prevPage, nextPage, lastPage, lastPageNo } =
     isSortDescending: isSortDescending,
     filter: filter,
     params: {
-      fields: ['slug', 'name'].concat(props.cols).join(),
+      fields: ['key', 'slug', 'name'].concat(props.cols).join(),
     },
   });
 

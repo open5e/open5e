@@ -4,8 +4,8 @@
       <!-- Row header contains a link to article and a source tag -->
       <nuxt-link
         tag="a"
-        :params="{ id: data.slug }"
-        :to="`/${endpoint}/${data.slug}`"
+        :params="{ id: slug }"
+        :to="`/${endpoint}/${slug}`"
         :prefetch="false"
       >
         {{ data.name }}
@@ -35,6 +35,9 @@ const props = defineProps({
   // An arr. of which fields in the data prop to render as columns
   cols: { type: Array, default: () => [] },
 });
+
+// Result UID has a different btwn API V1 & V2 - handle both 'key' & 'slug'
+const slug = props.data.key ?? props.data.slug;
 
 const format = (input) => {
   // parse decimals <1 as fractions
