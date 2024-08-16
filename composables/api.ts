@@ -6,7 +6,7 @@ export const API_ENDPOINTS = {
   characters: 'v1/characters',
   classes: 'v1/classes',
   conditions: 'v1/conditions',
-  documents: 'v1/documents',
+  documents: 'v2/documents',
   feats: 'v1/feats',
   magicitems: 'v1/magicitems',
   monsters: 'v1/monsters',

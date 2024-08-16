@@ -72,24 +72,24 @@
           <!-- Sources by Organisation -->
           <ul
             v-for="document in publications"
-            :key="document.slug"
+            :key="document.key"
             class="relative flex items-start"
           >
             <li>
               <input
                 v-model="selectedSources"
-                :name="document.slug"
+                :name="document.key"
                 type="checkbox"
                 class="mr-2 mt-1 h-4 w-4 rounded text-blue-600 accent-blood focus:ring-blue-600"
-                :value="document.slug"
+                :value="document.key"
               />
               <label
-                :for="document.slug"
+                :for="document.key"
                 class="font-medium text-gray-900 dark:text-white"
               >
-                {{ document.title }}
+                {{ document.name }}
               </label>
-              <source-tag :title="document.title" :text="document.slug" />
+              <source-tag :title="document.name" :text="document.key" />
             </li>
           </ul>
         </div>
@@ -126,8 +126,9 @@ const { data: documents } = useDocuments();
 const groupedDocuments = computed(() => {
   const docs = documents.value ?? [];
   return docs.reduce((grouped, document) => {
-    (grouped[document.organization] =
-      grouped[document.organization] || []).push(document);
+    (grouped[document.publisher] = grouped[document.publisher] || []).push(
+      document
+    );
     return grouped;
   }, {});
 });
@@ -142,7 +143,7 @@ function saveSelection() {
 
 function addPublisher(publisher) {
   const sourcesByPublisher = groupedDocuments.value[publisher].map(
-    (source) => source.slug
+    (source) => source.key
   );
 
   const sourcesToAdd = sourcesByPublisher.filter(
@@ -153,7 +154,7 @@ function addPublisher(publisher) {
 
 function removePublisher(publisher) {
   const sourcesByPublisher = groupedDocuments.value[publisher].map(
-    (source) => source.slug
+    (source) => source.key
   );
 
   selectedSources.value = selectedSources.value.filter(
@@ -163,7 +164,7 @@ function removePublisher(publisher) {
 
 function togglePublisher(publisher) {
   const sourcesByPublisher = groupedDocuments.value[publisher].map(
-    (source) => source.slug // get slugs for sources by publisher
+    (source) => source.key // get slugs for sources by publisher
   );
 
   if (selectedSourcesByPublisher(publisher)) {
@@ -185,7 +186,7 @@ function countSourcesByPublisher(publisher) {
 function selectedSourcesByPublisher(publisher) {
   // find all sources for this publisher
   const allSources = groupedDocuments.value[publisher].map(
-    (source) => source.slug
+    (source) => source.key
   );
   // find which of these are part of the current selected sources
   const currentSources = selectedSources.value.filter((source) =>
@@ -199,7 +200,7 @@ function allSourcesSelected() {
 }
 
 function selectAll() {
-  selectedSources.value = documents.value.map((doc) => doc.slug);
+  selectedSources.value = documents.value.map((doc) => doc.key);
 }
 
 function deselectAll() {
