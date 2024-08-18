@@ -69,7 +69,7 @@ export default defineNuxtConfig({
      * (Cloudflare throwing a SRI error on dynamic routes) */
     '/*/**': {
       security: {
-        sri: true,
+        sri: false,
       },
     },
   },
