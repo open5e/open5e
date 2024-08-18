@@ -62,6 +62,18 @@ export default defineNuxtConfig({
   router: {
     prefetchLinks: false,
   },
+
+  routeRules: {
+    /* Turn off SRI for dynamic routes, leave it on for top-level pages
+     * NB. this is a work-around & doens't resolve the underlying issue
+     * (Cloudflare throwing a SRI error on dynamic routes) */
+    '/*/**': {
+      security: {
+        sri: false,
+      },
+    },
+  },
+
   hooks: {
     'vite:extendConfig': (config, { isClient, isServer }) => {
       if (isClient) {
@@ -73,4 +85,5 @@ export default defineNuxtConfig({
     configPath: '~/tailwind.config.ts',
     cssPath: '~/styles/tailwind.css',
   },
+  compatibilityDate: '2024-08-15',
 });
