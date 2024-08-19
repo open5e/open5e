@@ -70,14 +70,6 @@ export default defineNuxtConfig({
     },
   },
 
-  routeRules: {
-    '/*/**': {
-      security: {
-        sri: false,
-      },
-    },
-  },
-
   hooks: {
     'vite:extendConfig': (config, { isClient, isServer }) => {
       if (isClient) {
