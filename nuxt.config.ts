@@ -60,17 +60,12 @@ export default defineNuxtConfig({
     },
   },
   router: {
-    prefetchLinks: false,
-  },
-
-  routeRules: {
-    /* Turn off SRI for dynamic routes, leave it on for top-level pages
-     * NB. this is a work-around & doens't resolve the underlying issue
-     * (Cloudflare throwing a SRI error on dynamic routes) */
-    '/*/**': {
-      security: {
-        sri: false,
-      },
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'custom',
+        path: '*',
+        component: resolve(__dirname, 'pages/404.vue'), // Custom 404 page
+      });
     },
   },
 
