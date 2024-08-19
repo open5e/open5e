@@ -46,4 +46,5 @@ export default defineNuxtConfig({
     configPath: '~/tailwind.config.ts',
     cssPath: '~/styles/tailwind.css',
   },
+  plugins: ['~/plugins/vue-query.client.ts'],
 });
