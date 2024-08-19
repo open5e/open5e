@@ -75,10 +75,6 @@ export default defineNuxtConfig({
       security: {
         sri: false,
       },
-      redirect: {
-        to: '/404',
-        statusCode: 404,
-      },
     },
   },
 
