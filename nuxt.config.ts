@@ -61,15 +61,7 @@ export default defineNuxtConfig({
   },
   router: {
     prefetchLinks: false,
-    extendRoutes(routes, resolve) {
-      routes.push({
-        name: 'custom',
-        path: '*',
-        component: resolve(__dirname, 'pages/404.vue'),
-      });
-    },
   },
-
   hooks: {
     'vite:extendConfig': (config, { isClient, isServer }) => {
       if (isClient) {
@@ -81,5 +73,4 @@ export default defineNuxtConfig({
     configPath: '~/tailwind.config.ts',
     cssPath: '~/styles/tailwind.css',
   },
-  compatibilityDate: '2024-08-15',
 });
