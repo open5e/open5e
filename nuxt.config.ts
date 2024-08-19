@@ -1,13 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    pageTransition: {
-      name: 'fade',
-      mode: 'out-in',
-    },
-    /*
-     ** Headers of the page
-     */
     head: {
       title: 'Open5e',
       meta: [
@@ -38,47 +31,19 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'digital-ocean',
   },
-  // vite: {
-  //   resolve: {
-  //     alias: {
-  //       vue: 'vue/dist/vue.esm-bundler',
-  //     }
-  //   },
-  // },
-  modules: [
-    '@nuxtjs/tailwindcss',
-    'nuxt-icon',
-    '@hebilicious/vue-query-nuxt',
-    '@nuxt/test-utils/module',
-  ],
-  queryClientOptions: {
-    defaultOptions: { queries: { staleTime: Infinity } },
-  },
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon'],
   runtimeConfig: {
     public: {
       apiUrl: process.env.API_URL || 'https://api.open5e.com',
     },
   },
-  router: {
-    extendRoutes(routes, resolve) {
-      routes.push({
-        name: 'custom',
-        path: '*',
-        component: resolve(__dirname, 'pages/404.vue'), // Custom 404 page
-      });
-    },
-  },
-
-  hooks: {
-    'vite:extendConfig': (config, { isClient, isServer }) => {
-      if (isClient) {
-        config.resolve.alias.vue = 'vue/dist/vue.esm-bundler';
-      }
-    },
+  target: 'static',
+  ssr: false,
+  generate: {
+    fallback: '404.html',
   },
   tailwindcss: {
     configPath: '~/tailwind.config.ts',
     cssPath: '~/styles/tailwind.css',
   },
-  compatibilityDate: '2024-08-15',
 });
