@@ -96,6 +96,8 @@ export const useFindMany = (
   params?: MaybeRef<Record<string, string | number>>
 ) => {
   const { findMany } = useAPI();
+
+  // API V1 & V2 use different PKs for sources. Select the correct one.
   const { sources, sourcesAPIVersion1 } = useSourcesList();
   const sourcesForAPIVersion = isV1Endpoint(unref(endpoint))
     ? sourcesAPIVersion1
@@ -288,6 +290,6 @@ export const useSearch = (queryRef: Ref<string>) => {
 export const useQueryParam = (paramName: string) =>
   computed(() => useRoute().query[paramName]);
 
-function isV1Endpoint(endpoint: string) {
+export function isV1Endpoint(endpoint: string) {
   return endpoint.includes('v1/');
 }
