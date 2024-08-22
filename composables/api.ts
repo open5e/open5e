@@ -266,6 +266,7 @@ export type MagicItemsFilter = {
 };
 
 export const useDocuments = (params: Record<string, any> = {}) => {
+  params.depth = '1';
   const { findMany } = useAPI();
   return useQuery({
     queryKey: ['findMany', API_ENDPOINTS.documents],

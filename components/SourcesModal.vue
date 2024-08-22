@@ -30,7 +30,6 @@
           </button>
         </div>
       </div>
-
       <!-- MODAL MENU BODY -->
       <fieldset class="mt-1">
         <legend class="sr-only">Source Selection</legend>
@@ -75,21 +74,29 @@
             :key="document.key"
             class="relative flex items-start"
           >
-            <li>
-              <input
-                v-model="selectedSources"
-                :name="document.key"
-                type="checkbox"
-                class="mr-2 mt-1 h-4 w-4 rounded text-blue-600 accent-blood focus:ring-blue-600"
-                :value="document.key"
-              />
-              <label
-                :for="document.key"
-                class="font-medium text-gray-900 dark:text-white"
+            <li class="flex w-full justify-between">
+              <div>
+                <input
+                  v-model="selectedSources"
+                  :name="document.key"
+                  type="checkbox"
+                  class="mr-2 mt-1 h-4 w-4 rounded text-blue-600 accent-blood focus:ring-blue-600"
+                  :value="document.key"
+                />
+                <label
+                  :for="document.key"
+                  class="font-medium text-gray-900 dark:text-white"
+                >
+                  {{ document.name }}
+                </label>
+                <source-tag :title="document.name" :text="document.key" />
+              </div>
+              <span
+                v-if="document.ruleset"
+                class="h-min rounded-xl bg-fog px-2 text-xs dark:bg-slate-800"
               >
-                {{ document.name }}
-              </label>
-              <source-tag :title="document.name" :text="document.key" />
+                {{ document.ruleset.name }}
+              </span>
             </li>
           </ul>
         </div>
@@ -126,9 +133,8 @@ const { data: documents } = useDocuments();
 const groupedDocuments = computed(() => {
   const docs = documents.value ?? [];
   return docs.reduce((grouped, document) => {
-    (grouped[document.publisher] = grouped[document.publisher] || []).push(
-      document
-    );
+    (grouped[document.publisher.name] =
+      grouped[document.publisher.name] || []).push(document);
     return grouped;
   }, {});
 });
