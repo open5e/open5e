@@ -36,20 +36,8 @@ export const useSpellsByClass = (
   });
 };
 
-export const useAllSpells = (params: Record<string, any> = {}) => {
-  const { findMany } = useAPI();
-  const { sources } = useSourcesList();
-  return useQuery({
-    queryKey: ['allSpells', API_ENDPOINTS.spells, sources, params],
-    queryFn: async () => {
-      const spells = await findMany(
-        API_ENDPOINTS.spells,
-        sources.value,
-        params
-      );
-      return spells;
-    },
-  });
+export const useAllSpells = async (params: Record<string, any> = {}) => {
+  return await useFindMany(API_ENDPOINTS.spells, params);
 };
 
 const SPELL_LEVELS_NAMES = [

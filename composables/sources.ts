@@ -19,8 +19,6 @@ const _sourcesV1 = computed(() => {
   if (!_sources.value || _sources.value.length === 0) return [];
   const sourcemap: { [key: string]: string } = {
     'a5e-ag': 'a5e',
-    'a5e-ddg': 'a5e',
-    'a5e-gpg': 'a5e',
     bfrd: 'blackflag',
     ccdx: 'cc',
     deepm: 'dmag',
