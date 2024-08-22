@@ -10,6 +10,11 @@ function writeSourcesToLocalStorage(sourcesList: string[]) {
 
 const _sources = ref<string[]>(loadSourcesFromLocalStorage());
 
+/* _sourcesV1 maps Document keys from API V2 onto their V1 equivalents. This
+ * has been added so that we can move the /documents endpoint over to V2 w/o
+ * breaking the seleciton by source functionality for routes pulling from V1.
+ * Keys omitted from the sourcemap will be the same for V1 & V2 endpoints */
+
 const _sourcesV1 = computed(() => {
   if (!_sources.value || _sources.value.length === 0) return [];
   const sourcemap: { [key: string]: string } = {
@@ -19,17 +24,19 @@ const _sourcesV1 = computed(() => {
     bfrd: 'blackflag',
     ccdx: 'cc',
     deepm: 'dmag',
+    deepmx: 'dmag-e',
     mmenag: 'menagerie',
     open5e: 'o5e',
     srd: 'wotc-srd',
     tdcs: 'taldorei',
-    warlock: 'wz',
+    wz: 'warlock',
   };
   return _sources.value.map((source) => {
     if (source in sourcemap) return sourcemap[source];
     return source;
   });
 });
+
 // Overwrite all sources, update local storage
 export const setSources = (sources: string[]) => {
   _sources.value = sources;
