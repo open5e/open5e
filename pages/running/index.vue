@@ -7,7 +7,15 @@
       v-model="filter"
       endpoint="running"
       :api-endpoint="API_ENDPOINTS.sections"
-      :cols="['document__title', 'document__slug']"
+      :fields="['name', 'key']"
+      :cols="[
+        {
+          displayName: 'Name',
+          value: (data) => data.name,
+          sortValue: 'name',
+          link: (data) => `/sections/${data.key}`,
+        },
+      ]"
     />
   </section>
 </template>

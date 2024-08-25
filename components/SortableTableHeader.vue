@@ -1,6 +1,6 @@
 <template>
   <th :aria-sort="isSortDescending" class="align-baseline">
-    <button @click="onClick">
+    <button v-if="sortBy" @click="onClick">
       <span>
         {{ format(title) }}
       </span>
@@ -12,6 +12,9 @@
         {{ isSortDescending ? '▲' : '▼' }}
       </span>
     </button>
+    <span v-else>
+      {{ format(title) }}
+    </span>
   </th>
 </template>
 
@@ -20,6 +23,7 @@ const emit = defineEmits(['sort']);
 
 const props = defineProps({
   title: { type: String, default: '' },
+  sortBy: { type: String, default: '' },
   isSortingProperty: { type: Boolean, default: false },
   isSortDescending: { type: Boolean, default: false },
 });
@@ -43,6 +47,6 @@ const format = (input) => {
 };
 
 const onClick = () => {
-  emit('sort', props.title);
+  emit('sort', props.sortBy);
 };
 </script>

@@ -2,16 +2,21 @@
   <section v-if="spell" class="docs-container container">
     <h1>{{ spell.name }}</h1>
     <p>
-      <span class="italic">{{ `${spell.level} ${spell.school}` }}</span>
-      <span v-if="spell.ritual === 'yes'"> (ritual)</span>
+      <span v-if="spell.level == 0" class="italic">{{
+        `${spell.school.name} cantrip`
+      }}</span>
+      <span v-else class="italic">{{
+        `Level ${spell.level} ${spell.school.name} spell`
+      }}</span>
+      <span v-if="spell.ritual"> (ritual)</span>
       <span> | {{ spell.dnd_class }} </span>
       <source-tag
-        v-show="spell.document__slug"
-        :title="spell.document__title"
-        :text="spell.document__slug"
+        v-show="spell.document.key"
+        :title="spell.document.name"
+        :text="spell.document.key"
       />
     </p>
-    <p><label class="font-bold">Range:</label> {{ spell.range }}</p>
+    <p><label class="font-bold">Range:</label> {{ spell.range_text }}</p>
     <p>
       <label class="font-bold">Casting Time:</label> {{ spell.casting_time }}
     </p>
@@ -25,7 +30,7 @@
     <p>
       <label class="font-bold">Components: </label>
       <span>{{ spell.components }}</span>
-      <span v-if="spell.material" class="font-medium text-slate-600">
+      <span v-if="spell.material_specified" class="font-medium text-slate-600">
         ({{ spell.material.replace(/\.$/, '') }})
         <!-- Removes trailing preiod -->
       </span>
@@ -37,8 +42,9 @@
     </p>
     <p class="text-sm italic">
       Source:
-      <a target="NONE" :href="spell.document__url">
-        {{ spell.document__title }}
+      <a target="NONE" :href="spell.document.url">
+        {{ spell.document.name }} by
+        {{ spell.document.publisher.name || 'unknown publisher' }}
         <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
       </a>
     </p>
@@ -47,5 +53,8 @@
 </template>
 
 <script setup>
-const { data: spell } = useFindOne(API_ENDPOINTS.spells, useRoute().params.id);
+const { data: spell } = useFindOne(API_ENDPOINTS.spells, useRoute().params.id, [
+  'document',
+  'document.publisher',
+]);
 </script>

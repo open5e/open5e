@@ -15,12 +15,13 @@
       <thead>
         <tr>
           <sortable-table-header
-            v-for="column in ['name'].concat(cols)"
-            :key="column"
-            :title="column"
-            :is-sorting-property="sortBy === column"
+            v-for="col in cols"
+            :key="col.field"
+            :title="col.displayName"
+            :sort-by="col.sortValue"
+            :is-sorting-property="sortBy === col.sortValue"
             :is-sort-descending="isSortDescending"
-            @sort="(prop) => updateSortState(prop)"
+            @sort="(sortValue) => updateSortState(sortValue)"
           />
         </tr>
       </thead>
@@ -65,6 +66,7 @@
 
 <script setup>
 import ApiResultRow from './ApiResultRow.vue';
+import SortableTableHeader from './SortableTableHeader.vue';
 
 const sortBy = ref('name');
 const isSortDescending = ref(false);
@@ -73,6 +75,7 @@ const props = defineProps({
   endpoint: { type: String, required: true },
   apiEndpoint: { type: String, required: true },
   itemsPerPage: { type: Number, default: 50 },
+  fields: { type: Array, default: () => [] },
   cols: { type: Array, default: () => [] },
 });
 
@@ -86,15 +89,18 @@ const { data, pageNo, firstPage, prevPage, nextPage, lastPage, lastPageNo } =
     isSortDescending: isSortDescending,
     filter: filter,
     params: {
-      fields: ['key', 'slug', 'name'].concat(props.cols).join(),
+      fields: ['key', 'slug', 'name'].concat(props.fields).join(),
     },
   });
 
 const results = computed(() => data.value?.results);
 
 const updateSortState = (property) => {
-  if (property !== sortBy.value) {
-    sortBy.value = property;
+  const column = props.cols.find((col) => col.displayName === property) || {
+    sortValue: property,
+  };
+  if (column.sortValue !== sortBy.value) {
+    sortBy.value = column.sortValue;
     isSortDescending.value = false;
   } else {
     isSortDescending.value = !isSortDescending.value;

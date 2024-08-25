@@ -2,18 +2,18 @@ import { keepPreviousData, useQuery } from '@tanstack/vue-query';
 import axios from 'axios';
 
 export const API_ENDPOINTS = {
-  backgrounds: 'v1/backgrounds',
-  characters: 'v1/characters',
-  classes: 'v1/classes',
-  conditions: 'v1/conditions',
-  documents: 'v2/documents',
-  feats: 'v1/feats',
-  magicitems: 'v1/magicitems',
-  monsters: 'v1/monsters',
-  races: 'v1/races',
+  backgrounds: 'v1/backgrounds/',
+  characters: 'v1/characters/',
+  classes: 'v1/classes/',
+  conditions: 'v1/conditions/',
+  documents: 'v2/documents/',
+  feats: 'v1/feats/',
+  magicitems: 'v1/magicitems/',
+  monsters: 'v1/monsters/',
+  races: 'v1/races/',
   search: 'v2/search/',
-  sections: 'v1/sections',
-  spells: 'v1/spells',
+  sections: 'v1/sections/',
+  spells: 'v2/spells/',
 } as const;
 
 /** Provides the base functions to easily fetch data from the Open5e API. */
@@ -84,7 +84,7 @@ export const useAPI = () => {
       return data;
     },
     get: async (...parts: string[]) => {
-      const route = '/' + parts.join('/');
+      const route = parts.join('');
       const res = await api.get(route);
       return res.data as Record<string, any>;
     },
@@ -204,14 +204,87 @@ export const useFindPaginated = (options: {
   };
 };
 
+/**
+ * Recursively fetch nested resources based on the specified fields.
+ * @param data - The current data object.
+ * @param fields - The list of fields to fetch.
+ * @returns The data object with nested resources fetched.
+ */
+const fetchNestedResources = async (
+  data: Record<string, any>,
+  fields: string[]
+): Promise<Record<string, any>> => {
+  for (const field of fields) {
+    const fieldParts = field.split('.');
+    let currentData = data;
+    let parentData = data;
+    let parentKey = '';
+
+    // Traverse the nested fields
+    for (const part of fieldParts) {
+      if (currentData[part]) {
+        parentData = currentData;
+        parentKey = part;
+        currentData = currentData[part];
+      } else {
+        (currentData as Record<string, any>)[part] = null;
+        break;
+      }
+    }
+
+    // Fetch related data if the current field is a URL
+    if (
+      typeof currentData === 'string' &&
+      (currentData as string).startsWith('http')
+    ) {
+      const relatedData = await axios.get(currentData);
+      parentData[parentKey] = relatedData.data;
+
+      // Recursively fetch nested related fields
+      const nestedFields = fields
+        .filter((f) => f.startsWith(`${field}.`))
+        .map((f) => f.slice(field.length + 1));
+      if (nestedFields.length > 0) {
+        await fetchNestedResources(parentData[parentKey], nestedFields);
+      }
+    }
+  }
+  return data;
+};
+
 export const useFindOne = (
-  endpoint: MaybeRef<string>,
-  slug: MaybeRef<string>
+  endpoint: string,
+  id: MaybeRef<string>,
+  relatedFields: string[] = []
 ) => {
   const { get } = useAPI();
+
   return useQuery({
-    queryKey: ['get', endpoint, slug],
-    queryFn: () => get(unref(endpoint), unref(slug)),
+    queryKey: [endpoint, id],
+    queryFn: async () => {
+      // Fetch the main data
+      const data = await get(endpoint, unref(id));
+      // Fetch related data for the specified fields
+      const enrichedData = await fetchNestedResources(data, relatedFields);
+
+      return enrichedData;
+    },
+  });
+};
+
+export const useFindByLink = (link: MaybeRef<string>) => {
+  const { get } = useAPI();
+
+  return useQuery({
+    queryKey: ['findByLink', link],
+    queryFn: async () => {
+      const url = new URL(unref(link));
+      const pathParts = url.pathname.split('/').filter(Boolean);
+      const endpoint = pathParts.slice(0, 2).join('/');
+      const objectId = pathParts[2];
+
+      return get(endpoint, objectId);
+    },
   });
 };
 
@@ -268,26 +341,9 @@ export type MagicItemsFilter = {
 export const useDocuments = (params: Record<string, any> = {}) => {
   params.depth = '1';
   const { findMany } = useAPI();
-  const fetchAdditionalData = async (document) => {
-    const additionalData = await Promise.all([
-      axios.get(document.publisher).then((res) => res.data),
-      axios.get(document.ruleset).then((res) => res.data),
-      // Add more requests if needed
-    ]);
-
-    return {
-      ...document,
-      publisher: additionalData[0],
-      ruleset: additionalData[1],
-      // Add more properties if needed
-    };
-  };
   return useQuery({
     queryKey: ['findMany', API_ENDPOINTS.documents],
-    queryFn: async () => {
-      const documents = await findMany(API_ENDPOINTS.documents, [], params);
-      return Promise.all(documents.map(fetchAdditionalData));
-    },
+    queryFn: () => findMany(API_ENDPOINTS.documents, [], params),
   });
 };
 

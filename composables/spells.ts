@@ -10,7 +10,7 @@ export const useSpellsByClass = (
     queryKey: ['findMany', API_ENDPOINTS.spells, sources, params],
     queryFn: async () => {
       const spells = await findMany(
-        API_ENDPOINTS.spells,
+        API_ENDPOINTS.spells, // This will now use v2/spells
         sources.value,
         params
       );
@@ -37,7 +37,7 @@ export const useSpellsByClass = (
 };
 
 export const useAllSpells = async (params: Record<string, any> = {}) => {
-  return await useFindMany(API_ENDPOINTS.spells, params);
+  return await useFindMany(API_ENDPOINTS.spells, params); // This will now use v2/spells
 };
 
 const SPELL_LEVELS_NAMES = [

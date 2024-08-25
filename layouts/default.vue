@@ -161,7 +161,7 @@ const crumbs = computed(() => {
       return {
         url,
         title: title // format crumb title
-          .split('-')
+          .split(/[-_]/)
           .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
           .join(' '),
         subtitle: searchParam,
