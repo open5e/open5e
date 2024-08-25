@@ -55,7 +55,7 @@
           <span class="font-bold after:content-['_']">Hit Points</span>
           <span class="after:content-['_']">{{ monster.hit_points }}</span>
           <span
-            class="cursor-pointer font-bold text-blood hover:text-black"
+            class="cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
             @click="useDiceRoller(monster.hit_dice)"
           >
             {{ `(${monster.hit_dice})` }}
@@ -88,7 +88,7 @@
           <span class="block font-bold uppercase">{{ ability.shortName }}</span>
           <span class="after:content-['_']">{{ ability.score }}</span>
           <span
-            class="cursor-pointer font-bold text-blood hover:text-black"
+            class="cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
             @click="useDiceRoller(ability.modifier)"
           >
             {{ `(${ability.modifier})` }}
