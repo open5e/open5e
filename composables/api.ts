@@ -6,7 +6,7 @@ export const API_ENDPOINTS = {
   characters: 'v1/characters',
   classes: 'v1/classes',
   conditions: 'v1/conditions',
-  documents: 'v1/documents',
+  documents: 'v2/documents',
   feats: 'v1/feats',
   magicitems: 'v1/magicitems',
   monsters: 'v1/monsters',
@@ -96,11 +96,19 @@ export const useFindMany = (
   params?: MaybeRef<Record<string, string | number>>
 ) => {
   const { findMany } = useAPI();
-  const { sources } = useSourcesList();
+
+  // API V1 & V2 use different PKs for sources. Select the correct one.
+  const { sources, sourcesAPIVersion1 } = useSourcesList();
+  const sourcesForAPIVersion = isV1Endpoint(unref(endpoint))
+    ? sourcesAPIVersion1
+    : sources;
+
   return useQuery({
-    queryKey: ['findMany', endpoint, sources, params],
+    queryKey: ['findMany', endpoint, sourcesForAPIVersion, params],
     queryFn: () =>
-      unref(findMany(unref(endpoint), unref(sources), unref(params))),
+      unref(
+        findMany(unref(endpoint), unref(sourcesForAPIVersion), unref(params))
+      ),
   });
 };
 
@@ -124,12 +132,16 @@ export const useFindPaginated = (options: {
   } = options;
   const pageNo = ref(unref(initialPage));
   const { findPaginated } = useAPI();
-  const { sources } = useSourcesList();
+  const { sources, sourcesAPIVersion1 } = useSourcesList();
+  const sourcesForAPIVersion = isV1Endpoint(unref(endpoint))
+    ? sourcesAPIVersion1
+    : sources;
+
   const { data, isFetching, error } = useQuery({
     queryKey: [
       'findPaginated',
       endpoint,
-      sources,
+      sourcesForAPIVersion,
       itemsPerPage,
       pageNo,
       sortByProperty,
@@ -141,7 +153,7 @@ export const useFindPaginated = (options: {
     queryFn: () =>
       findPaginated({
         endpoint: unref(endpoint),
-        sources: unref(sources),
+        sources: unref(sourcesForAPIVersion),
         pageNo: unref(pageNo),
         sortByProperty: unref(sortByProperty),
         isSortDescending: unref(isSortDescending),
@@ -254,6 +266,7 @@ export type MagicItemsFilter = {
 };
 
 export const useDocuments = (params: Record<string, any> = {}) => {
+  params.depth = '1';
   const { findMany } = useAPI();
   return useQuery({
     queryKey: ['findMany', API_ENDPOINTS.documents],
@@ -277,3 +290,7 @@ export const useSearch = (queryRef: Ref<string>) => {
 
 export const useQueryParam = (paramName: string) =>
   computed(() => useRoute().query[paramName]);
+
+export function isV1Endpoint(endpoint: string) {
+  return endpoint.includes('v1/');
+}

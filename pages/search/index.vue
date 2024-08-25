@@ -56,12 +56,13 @@ import SearchResult from '~/components/SearchResult';
 
 const searchText = useQueryParam('text');
 const { data } = useSearch(searchText);
-const { sources } = useSourcesList();
+const { sourcesAPIVersion1: sources } = useSourcesList();
 
 const results = computed(() => {
   if (!data || !data.value) {
     return;
   }
+
   // split result based on which from currently selected sources
   const [inScope, outScope] = data.value.reduce(
     ([inScope, outScope], item) =>
