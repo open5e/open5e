@@ -268,9 +268,26 @@ export type MagicItemsFilter = {
 export const useDocuments = (params: Record<string, any> = {}) => {
   params.depth = '1';
   const { findMany } = useAPI();
+  const fetchAdditionalData = async (document) => {
+    const additionalData = await Promise.all([
+      axios.get(document.publisher).then((res) => res.data),
+      axios.get(document.ruleset).then((res) => res.data),
+      // Add more requests if needed
+    ]);
+
+    return {
+      ...document,
+      publisher: additionalData[0],
+      ruleset: additionalData[1],
+      // Add more properties if needed
+    };
+  };
   return useQuery({
     queryKey: ['findMany', API_ENDPOINTS.documents],
-    queryFn: () => findMany(API_ENDPOINTS.documents, [], params),
+    queryFn: async () => {
+      const documents = await findMany(API_ENDPOINTS.documents, [], params);
+      return Promise.all(documents.map(fetchAdditionalData));
+    },
   });
 };
 
