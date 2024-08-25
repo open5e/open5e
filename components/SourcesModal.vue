@@ -128,7 +128,9 @@ const { sources, setSources } = useSourcesList();
 const emit = defineEmits(['close']);
 
 const selectedSources = ref(sources.value);
-const { data: documents } = useDocuments();
+const { data: documents } = useDocuments({
+  fields: ['key', 'name', 'publisher', 'ruleset'].join(','),
+});
 
 const groupedDocuments = computed(() => {
   const docs = documents.value ?? [];
