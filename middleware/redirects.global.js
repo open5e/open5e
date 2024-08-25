@@ -3,7 +3,7 @@ const redirects = {
   '/monsters/monster-list': '/monsters',
   '/magicitems/magicitem-list': '/magic-items',
   '/spells/spells-table': '/spells',
-  '/magicitems': 'magic-items',
+  '/magicitems': '/magic-items',
 };
 
 // add redirects for partial path matches here

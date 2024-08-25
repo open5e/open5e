@@ -1,55 +1,20 @@
-export const useMagicItems = (
-  filters: MagicItemsFilter = {},
-  queryParams: Record<string, any> = {}
-) => {
-  const { findMany } = useAPI();
-  const { sources } = useSourcesList();
-  const { data } = useQuery({
-    queryKey: ['findMany', API_ENDPOINTS.magicitems, sources],
-    queryFn: async () => {
-      const magicItems = await findMany(
-        API_ENDPOINTS.magicitems,
-        sources.value,
-        queryParams
-      );
-      return magicItems;
-    },
-  });
+export type MagicItemFilter = {
+  /** Name contains*/
+  name__icontains?: string;
+  rarity?: string;
+  type?: typeof MAGIC_ITEMS_TYPES | '';
+  requires_attunement?: 'requires attunement' | '';
+};
 
-  const filtered_items = computed(() => {
-    const items = data.value ?? [];
+export const DefaultMagicItemFilter: Readonly<MagicItemFilter> = {
+  name__icontains: '',
+  rarity: '',
+  type: '',
+  requires_attunement: '',
+};
 
-    return items
-      .filter((item) => {
-        return item.name
-          .toLowerCase()
-          .includes(filters.name?.toLowerCase() ?? '');
-      })
-      .filter((item) => {
-        return item.rarity
-          .toLowerCase()
-          .includes(filters.rarity?.toLowerCase() ?? '');
-      })
-      .filter((item) =>
-        filters.type
-          ? item.type.toLowerCase() === filters.type.toLowerCase()
-          : true
-      )
-      .filter((item) =>
-        filters.rarity
-          ? item.rarity.toLowerCase() === filters.rarity.toLowerCase()
-          : true
-      )
-      .filter((item) =>
-        filters.isAttunementRequired != null
-          ? (filters.isAttunementRequired &&
-              item.requires_attunement === 'requires attunement') ||
-            item.requires_attunement === ''
-          : true
-      );
-  });
-
-  return { data: filtered_items };
+export const copyMagicItemFilter = (): MagicItemFilter => {
+  return { ...DefaultMagicItemFilter };
 };
 
 export const MAGIC_ITEMS_RARITES = [

@@ -1,5 +1,5 @@
 <template>
-  <th :aria-sort="currentSortDir" class="align-baseline">
+  <th :aria-sort="isSortDescending" class="align-baseline">
     <button @click="onClick">
       <span>
         {{ format(title) }}
@@ -7,9 +7,9 @@
       <span
         aria-hidden="true"
         class="ml-1"
-        :class="!!isSortingProperty ? 'visible text-blood' : 'invisible'"
+        :class="isSortingProperty ? 'visible text-blood' : 'invisible'"
       >
-        {{ isSortingProperty !== 'ascending' ? '▲' : '▼' }}
+        {{ isSortDescending ? '▲' : '▼' }}
       </span>
     </button>
   </th>
@@ -20,8 +20,8 @@ const emit = defineEmits(['sort']);
 
 const props = defineProps({
   title: { type: String, default: '' },
-  isSortingProperty: { type: String, default: '' },
-  currentSortDir: { type: String, default: '' },
+  isSortingProperty: { type: Boolean, default: false },
+  isSortDescending: { type: Boolean, default: false },
 });
 
 // a list of human-readable subsitutions

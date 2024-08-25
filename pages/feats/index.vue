@@ -1,14 +1,16 @@
 <template>
   <section class="docs-container container">
-    <h1>Feats</h1>
-    <api-results-table v-if="feats" :data="feats" endpoint="feats" />
-    <p v-else>Loading</p>
+    <div class="filter-header-wrapper">
+      <h1 class="filter-header">Feats</h1>
+    </div>
+    <api-results-table
+      endpoint="feats"
+      :api-endpoint="API_ENDPOINTS.feats"
+      :cols="['document__title', 'document__slug']"
+    />
   </section>
 </template>
 
 <script setup>
 import ApiResultsTable from '~/components/ApiResultsTable.vue';
-const { data: feats } = useFindMany(API_ENDPOINTS.feats, {
-  fields: ['name', 'slug', 'document__title', 'document__slug'].join(),
-});
 </script>
