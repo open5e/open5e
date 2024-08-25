@@ -27,12 +27,15 @@
       class="img-main"
     />
     <p class="italic">
-      <span>
-        {{
-          `${monster.size} ${monster.type}${
-            monster.subtype ? ` (${monster.subtype})` : ''
-          }, ${monster.alignment}`
-        }}
+      <span>{{ `${monster.size} ${monster.type}` }}</span>
+      <span
+        v-if="monster.subtype"
+        class="before:content-['_('] after:content-[')']"
+      >
+        {{ monster.subtype }}
+      </span>
+      <span v-if="monster.alignment" class="before:content-[',_']">
+        {{ monster.alignment }}
       </span>
       <source-tag
         v-show="monster.document__slug"
