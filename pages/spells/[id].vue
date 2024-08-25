@@ -29,9 +29,15 @@
     </p>
     <p>
       <label class="font-bold">Components: </label>
-      <span>{{ spell.components }}</span>
-      <span v-if="spell.material_specified" class="font-medium text-slate-600">
-        ({{ spell.material.replace(/\.$/, '') }})
+      <span
+        >{{ formatComponents(spell.verbal, spell.somatic, spell.material)
+        }}<b v-if="spell.material_consumed">*</b>
+      </span>
+      <span
+        v-if="spell.material_specified"
+        class="font-medium text-slate-600 dark:text-slate-300"
+      >
+        ({{ spell.material_specified }})
         <!-- Removes trailing preiod -->
       </span>
     </p>
@@ -57,4 +63,18 @@ const { data: spell } = useFindOne(API_ENDPOINTS.spells, useRoute().params.id, [
   'document',
   'document.publisher',
 ]);
+
+function formatComponents(verbal, somatic, material, material_consumed) {
+  let components = [];
+  if (verbal) {
+    components.push('V');
+  }
+  if (somatic) {
+    components.push('S');
+  }
+  if (material) {
+    components.push('M');
+  }
+  return `${components.join(', ')}`;
+}
 </script>

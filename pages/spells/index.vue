@@ -35,12 +35,13 @@
         },
         {
           displayName: 'Components',
-          value: (data) => `
-          ${data.verbal ? 'V' : ''}${
-            data.verbal && (data.material || data.somatic) ? ',' : ''
-          }
-          ${data.somatic ? 'S' : ''}${data.material && data.somatic ? ',' : ''} 
-          ${data.material ? 'M' : ''}${data.material_consumed ? '*' : ''}`,
+          value: (data) =>
+            formatComponents(
+              data.verbal,
+              data.somatic,
+              data.material,
+              data.material_consumed
+            ),
         }, // I know this is super ugly but my brain is tired and it works
         {
           displayName: 'Concentration',
@@ -54,4 +55,18 @@
 
 <script setup>
 import ApiResultsTable from '~/components/ApiResultsTable.vue';
+
+function formatComponents(verbal, somatic, material, material_consumed) {
+  let components = [];
+  if (verbal) {
+    components.push('V');
+  }
+  if (somatic) {
+    components.push('S');
+  }
+  if (material) {
+    components.push('M');
+  }
+  return `${components.join(', ')}${material_consumed ? '*' : ''}`;
+}
 </script>
