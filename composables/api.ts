@@ -9,7 +9,7 @@ export const API_ENDPOINTS = {
   documents: 'v2/documents/',
   feats: 'v1/feats/',
   magicitems: 'v1/magicitems/',
-  monsters: 'v1/monsters/',
+  monsters: 'v2/creatures/',
   races: 'v1/races/',
   search: 'v2/search/',
   sections: 'v1/sections/',
@@ -71,6 +71,7 @@ export const useAPI = () => {
           document__slug__in: formattedSources,
           ordering: `${isSortDescending ? '-' : ''}${sortByProperty}`,
           ...queryParams,
+          depth: 1,
         },
       });
 

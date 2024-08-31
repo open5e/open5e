@@ -2,7 +2,7 @@
   <section class="docs-container container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Monster List</h1>
-      <FilterButton
+      <filter-button
         :show-clear-button="canClearFilter"
         :filter-count="enabeledFiltersCount"
         :filter-shown="displayFilter"
@@ -10,7 +10,7 @@
         @clear-filter="clear"
       />
     </div>
-    <MonsterFilterBox
+    <monster-filter-box
       v-if="displayFilter"
       ref="monsterFilterBox"
       :filter="filter"
@@ -29,7 +29,20 @@
         v-model="debouncedFilter"
         endpoint="monsters"
         :api-endpoint="API_ENDPOINTS.monsters"
-        :cols="['type', 'cr', 'size', 'hit_points']"
+        :fields="['challenge_rating_decimal']"
+        :cols="[
+          {
+            displayName: 'Name',
+            value: (data) => data.name,
+            sortValue: 'name',
+            link: (data) => `/monsters/${data.key}`,
+          },
+          {
+            displayName: 'CR',
+            value: (data) => data.challenge_rating_decimal,
+            sortValue: 'challenge_rating_decimal',
+          },
+        ]"
       />
     </div>
   </section>

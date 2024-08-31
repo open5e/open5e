@@ -94,7 +94,6 @@ const { data, pageNo, firstPage, prevPage, nextPage, lastPage, lastPageNo } =
   });
 
 const results = computed(() => data.value?.results);
-
 const updateSortState = (property) => {
   const column = props.cols.find((col) => col.displayName === property) || {
     sortValue: property,
