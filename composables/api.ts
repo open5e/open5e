@@ -71,7 +71,6 @@ export const useAPI = () => {
           document__slug__in: formattedSources,
           ordering: `${isSortDescending ? '-' : ''}${sortByProperty}`,
           ...queryParams,
-          depth: 1,
         },
       });
 
@@ -86,7 +85,9 @@ export const useAPI = () => {
     },
     get: async (...parts: string[]) => {
       const route = parts.join('');
-      const res = await api.get(route);
+      const res = await api.get(route, {
+        params: { depth: '2' },
+      });
       return res.data as Record<string, any>;
     },
   };
