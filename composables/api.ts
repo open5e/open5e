@@ -36,7 +36,7 @@ export const useAPI = () => {
       const res = await api.get(endpoint, {
         params: {
           limit: 5000,
-          document__slug__in: formattedSources,
+          document__key__in: formattedSources,
           ...params,
         },
       });
@@ -68,7 +68,7 @@ export const useAPI = () => {
         params: {
           limit: itemsPerPage,
           page: pageNo,
-          document__slug__in: formattedSources,
+          document__key__in: formattedSources,
           ordering: `${isSortDescending ? '-' : ''}${sortByProperty}`,
           ...queryParams,
         },
