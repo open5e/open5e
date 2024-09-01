@@ -3,14 +3,14 @@ export type MagicItemFilter = {
   name__icontains?: string;
   rarity?: Object;
   category?: Object;
-  requires_attunement?: 'requires attunement' | '';
+  requires_attunement?: boolean;
 };
 
 export const DefaultMagicItemFilter: Readonly<MagicItemFilter> = {
   name__icontains: '',
   rarity: {},
   category: {},
-  requires_attunement: '',
+  requires_attunement: false,
 };
 
 export const copyMagicItemFilter = (): MagicItemFilter => {
