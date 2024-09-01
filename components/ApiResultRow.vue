@@ -1,11 +1,14 @@
 <template>
   <tr>
     <!-- Render each field defined in columns as a table cell -->
-    <td v-for="col in cols" :key="col.displayName" class="capitalize">
+    <td v-for="col in cols" :key="col.displayName">
       <template v-if="col.link">
-        <nuxt-link :to="col.link(data)">
-          {{ col.value(data) }}
-        </nuxt-link>
+        <span>
+          <nuxt-link :to="col.link(data)">
+            {{ col.value(data) }}
+          </nuxt-link>
+          <source-tag :text="slug" :title="data.document.name" />
+        </span>
       </template>
       <template v-else>
         {{ col.value(data) }}
@@ -15,26 +18,18 @@
 </template>
 
 <script setup>
-import SourceTag from './SourceTag.vue';
-
 const props = defineProps({
-  // API endpoint from which data is sourced. Used to create links
-  endpoint: { type: String, default: '' },
-  // Data for a specific item from the Open5e API
-  data: { type: Object, default: () => {} },
-  // An arr. of which fields in the data prop to render as columns
-  cols: { type: Array, default: () => [] },
+  endpoint: { type: String, default: '' }, // API endpoint source (for links)
+  data: { type: Object, default: () => {} }, // Open5e data to render
+  cols: { type: Array, default: () => [] }, // Arr. of table columns to render
 });
 
-// Result UID has a different btwn API V1 & V2 - handle both 'key' & 'slug'
-const slug = props.data.key ?? props.data.slug;
-
-const format = (input) => {
-  // parse decimals <1 as fractions
-  const asFloat = parseFloat(input);
-  if (asFloat && asFloat < 1 && asFloat > 0) {
-    return `1/${1.0 / asFloat}`;
-  }
-  return input;
-};
+// Workaround for API V2 no returning Document 'key'
+// Extrapolate key from 'url'
+const slug = computed(() =>
+  props.data.document.url
+    .split('/')
+    .filter((exists) => exists)
+    .pop()
+);
 </script>

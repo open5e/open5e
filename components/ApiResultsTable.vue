@@ -65,9 +65,6 @@
 </template>
 
 <script setup>
-import ApiResultRow from './ApiResultRow.vue';
-import SortableTableHeader from './SortableTableHeader.vue';
-
 const sortBy = ref('name');
 const isSortDescending = ref(false);
 
@@ -89,12 +86,12 @@ const { data, pageNo, firstPage, prevPage, nextPage, lastPage, lastPageNo } =
     isSortDescending: isSortDescending,
     filter: filter,
     params: {
-      fields: ['key', 'slug', 'name'].concat(props.fields).join(),
+      fields: ['key', 'name', 'document'].concat(props.fields).join(),
+      depth: 1,
     },
   });
 
 const results = computed(() => data.value?.results);
-
 const updateSortState = (property) => {
   const column = props.cols.find((col) => col.displayName === property) || {
     sortValue: property,

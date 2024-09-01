@@ -9,7 +9,7 @@ export const API_ENDPOINTS = {
   documents: 'v2/documents/',
   feats: 'v1/feats/',
   magicitems: 'v1/magicitems/',
-  monsters: 'v1/monsters/',
+  monsters: 'v2/creatures/',
   races: 'v1/races/',
   search: 'v2/search/',
   sections: 'v1/sections/',
@@ -36,7 +36,7 @@ export const useAPI = () => {
       const res = await api.get(endpoint, {
         params: {
           limit: 5000,
-          document__slug__in: formattedSources,
+          document__key__in: formattedSources,
           ...params,
         },
       });
@@ -68,7 +68,7 @@ export const useAPI = () => {
         params: {
           limit: itemsPerPage,
           page: pageNo,
-          document__slug__in: formattedSources,
+          document__key__in: formattedSources,
           ordering: `${isSortDescending ? '-' : ''}${sortByProperty}`,
           ...queryParams,
         },
@@ -85,7 +85,9 @@ export const useAPI = () => {
     },
     get: async (...parts: string[]) => {
       const route = parts.join('');
-      const res = await api.get(route);
+      const res = await api.get(route, {
+        params: { depth: '2' },
+      });
       return res.data as Record<string, any>;
     },
   };
