@@ -74,6 +74,7 @@ const props = defineProps({
   itemsPerPage: { type: Number, default: 50 },
   fields: { type: Array, default: () => [] },
   cols: { type: Array, default: () => [] },
+  params: { type: Object, default: () => {} },
 });
 
 const filter = defineModel({ default: () => ({}), type: Object });
@@ -86,6 +87,7 @@ const { data, pageNo, firstPage, prevPage, nextPage, lastPage, lastPageNo } =
     isSortDescending: isSortDescending,
     filter: filter,
     params: {
+      ...props.params,
       fields: ['key', 'name', 'document'].concat(props.fields).join(),
       depth: 1,
     },

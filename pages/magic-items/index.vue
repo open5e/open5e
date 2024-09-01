@@ -2,7 +2,7 @@
   <section class="docs-container container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Magic Item List</h1>
-      <FilterButton
+      <filter-button
         :show-clear-button="canClearFilter"
         :filter-count="enabeledFiltersCount"
         :filter-shown="displayFilter"
@@ -10,7 +10,7 @@
         @clear-filter="clear"
       />
     </div>
-    <MagicItemFilterBox
+    <magic-item-filter-box
       v-if="displayFilter"
       :filter="filter"
       :update-filter="update"
@@ -28,15 +28,32 @@
         v-model="debouncedFilter"
         endpoint="magic-items"
         :api-endpoint="API_ENDPOINTS.magicitems"
-        :cols="['type', 'rarity', 'requires_attunement']"
+        :fields="['category', 'rarity']"
+        :params="{ is_magic_item: true }"
+        :cols="[
+          {
+            displayName: 'Name',
+            value: (data) => data.name,
+            sortValue: 'name',
+            link: (data) => `/magic-items/${data.key}`,
+          },
+          {
+            displayName: 'Category',
+            value: (data) => data.category.name,
+            sortValue: 'category.name',
+          },
+          {
+            displayName: 'Rarity',
+            value: (data) => data.rarity.name,
+            sortValue: 'rarity.name',
+          },
+        ]"
       />
     </div>
   </section>
 </template>
 
 <script setup>
-import FilterButton from '~/components/FilterButton.vue';
-
 const displayFilter = ref(false);
 
 const {
