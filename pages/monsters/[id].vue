@@ -390,22 +390,27 @@ const speeds = computed(() => {
 // assemble senses from multiple fields
 const senses = computed(() => {
   const senses = {};
-  if (monster.value.darkvision_range)
+  if (monster.value.darkvision_range) {
     senses['Darkvision'] = monster.value.darkvision_range + ' ft.';
-  if (monster.value.blindsight_range)
+  }
+  if (monster.value.blindsight_range) {
     senses['Blindsight'] = monster.value.blindsight_range + ' ft.';
-  if (monster.value.tremorsense_range)
+  }
+  if (monster.value.tremorsense_range) {
     senses['Tremorsense'] = monster.value.tremorsense_range + ' ft.';
-  if (monster.value.truesight_range)
+  }
+  if (monster.value.truesight_range) {
     senses['Truesight'] = monster.value.truesight_range + ' ft.';
+  }
   senses['Passive Perception'] = monster.value.passive_perception;
   return senses;
 });
 
 // format damage resistances correctly (damage from non-magic weapons)
 const damageResistances = computed(() => {
-  if (!monster.value.nonmagical_attack_resistance)
+  if (!monster.value.nonmagical_attack_resistance) {
     return monster.value.damage_resistances;
+  }
   return [
     ...monster.value.damage_resistances.filter(
       (res) => !['Bludgeoning', 'Slashing', 'Piercing'].includes(res.name)
@@ -418,8 +423,9 @@ const damageResistances = computed(() => {
 
 // format damage resistances correctly (damage from non-magic weapons)
 const damageImmunities = computed(() => {
-  if (!monster.value.nonmagical_attack_immunity)
+  if (!monster.value.nonmagical_attack_immunity) {
     return monster.value.damage_immunities;
+  }
   return [
     ...monster.value.damage_immunities.filter(
       (res) => !['Bludgeoning', 'Slashing', 'Piercing'].includes(res.name)
