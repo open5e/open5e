@@ -34,6 +34,7 @@
           'challenge_rating_decimal',
           'document',
           'type',
+          'size',
         ]"
         :cols="[
           {
@@ -50,6 +51,10 @@
           {
             displayName: 'Type',
             value: (data) => data.type.name,
+          },
+          {
+            displayName: 'Size',
+            value: (data) => data.size.name,
           },
         ]"
       />

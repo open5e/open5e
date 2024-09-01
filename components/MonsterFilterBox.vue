@@ -4,9 +4,11 @@
     class="filter-header-wrapper flex flex-wrap bg-gray-50 px-2 dark:bg-slate-900 dark:text-white"
   >
     <div class="bg-blue flex w-full flex-wrap align-middle">
-      <label for="monsterName" class="pt-1 font-bold md:w-1/6"
-        >MONSTER NAME:</label
-      >
+      <!-- Filter by Monster Name -->
+      <!-- Currently broken, ?name__icontains= not supported by API V2 (yet!) -->
+      <label for="monsterName" class="pt-1 font-bold md:w-1/6">
+        MONSTER NAME:
+      </label>
       <input
         id="monsterName"
         :value="filter.name__icontains"
@@ -15,15 +17,19 @@
         class="mt-2 w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white md:w-5/6"
         @input="updateFilter('name__icontains', $event.target.value)"
       />
+
+      <!-- Filter by CR (lower bound) -->
       <span class="flex w-full font-bold">CHALLENGE RATING</span>
       <div class="flex w-full px-1 md:w-1/2">
         <label for="challengeRtgLow" class="w-1/2">From:</label>
         <select
           id="challengeRtgLow"
-          :value="filter.cr__gte"
+          :value="filter.challenge_rating_decimal__gte"
           name="challengeRtgLow"
           class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
-          @input="updateFilter('cr__gte', $event.target.value)"
+          @input="
+            updateFilter('challenge_rating_decimal__gte', $event.target.value)
+          "
         >
           <option :key="''" :value="''" text="Any" />
           <option
@@ -34,14 +40,18 @@
           />
         </select>
       </div>
+
+      <!-- Filter by CR (upper bound) -->
       <div class="flex w-full px-1 md:w-1/2">
         <label for="challengeRtgHigh" class="w-1/2">To:</label>
         <select
           id="challengeRtgHigh"
-          :value="filter.cr__lte"
+          :value="filter.challenge_rating_decimal__lte"
           name="challengeRtgHigh"
           class="w-1/2 rounded-md ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
-          @input="updateFilter('cr__lte', $event.target.value)"
+          @input="
+            updateFilter('challenge_rating_decimal__lte', $event.target.value)
+          "
         >
           <option :key="''" :value="''" text="Any" />
           <option
@@ -53,39 +63,8 @@
         </select>
       </div>
     </div>
-    <div class="flex w-full flex-wrap">
-      <span class="flex w-full font-bold">HIT POINTS</span>
-      <div class="flex w-full px-1 md:w-1/2">
-        <label for="hpLow" class="w-1/2">From (low):</label>
-        <input
-          id="hpLow"
-          :value="filter.hit_points__gte"
-          placeholder="Any"
-          type="number"
-          min="0"
-          max="9999"
-          step="1"
-          name="hpLow"
-          class="w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
-          @input="updateFilter('hit_points__gte', $event.target.value)"
-        />
-      </div>
-      <div class="flex w-full px-1 md:w-1/2">
-        <label for="hpHigh" class="w-1/2">To (high):</label>
-        <input
-          id="hpHigh"
-          :value="filter.hit_points__lte"
-          placeholder="Any"
-          type="number"
-          min="0"
-          max="9999"
-          step="1"
-          name="hpHigh"
-          class="w-1/2 rounded-md px-2 ring-1 ring-gray-500 focus:ring-2 focus:ring-blood dark:bg-slate-700 dark:text-white"
-          @input="updateFilter('hit_points__lte', $event.target.value)"
-        />
-      </div>
-    </div>
+
+    <!-- Filter by Size -->
     <div class="flex w-full flex-wrap pr-1 pt-4 md:w-1/2">
       <label for="size" class="w-1/2 font-bold">SIZE:</label>
       <select
@@ -96,9 +75,17 @@
         @input="updateFilter('size', $event.target.value)"
       >
         <option :key="''" :value="''" text="Any" />
-        <option v-for="size in MONSTER_SIZES_LIST" :key="size" v-text="size" />
+        <option
+          v-for="size in MONSTER_SIZES_LIST"
+          :key="size"
+          :value="size.toLowerCase()"
+          v-text="size"
+        />
       </select>
     </div>
+
+    <!-- Filter by Monster Type -->
+    <!-- Currently broken, ?type= not supported by API V2 (yet!) -->
     <div class="flex w-full flex-wrap pt-4 md:w-1/2">
       <div class="flex w-full px-1">
         <label for="type" class="w-full font-bold">TYPE:</label>

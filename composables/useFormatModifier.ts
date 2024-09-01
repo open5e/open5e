@@ -1,8 +1,11 @@
+/* useFormatModifier generates a formatted modifier from either a numerical
+ * modifier or an ability score. */
+
 export const useFormatModifier = (
   input: string | number,
   options?: {
     inputType?: 'modifier' | 'score';
-    showZero: boolean;
+    showZero?: boolean;
   }
 ) => {
   // set options defaults
