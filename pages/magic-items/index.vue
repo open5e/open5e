@@ -28,7 +28,7 @@
         v-model="debouncedFilter"
         endpoint="magic-items"
         :api-endpoint="API_ENDPOINTS.magicitems"
-        :fields="['category', 'rarity']"
+        :fields="['category', 'rarity', 'requires_attunement']"
         :params="{ is_magic_item: true }"
         :cols="[
           {
@@ -40,12 +40,14 @@
           {
             displayName: 'Category',
             value: (data) => data.category.name,
-            sortValue: 'category.name',
           },
           {
             displayName: 'Rarity',
             value: (data) => data.rarity.name,
-            sortValue: 'rarity.name',
+          },
+          {
+            displayName: 'Requires Attunement',
+            value: (data) => data.requires_attunement,
           },
         ]"
       />
