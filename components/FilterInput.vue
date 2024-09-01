@@ -4,8 +4,9 @@
       :for="id"
       class="floating-label"
       :class="{ 'floating-label--top': isLabelFloating }"
-      >{{ placeholder }}</label
     >
+      {{ placeholder }}
+    </label>
     <input
       :id="id"
       ref="input"
