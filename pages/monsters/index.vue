@@ -29,7 +29,12 @@
         v-model="debouncedFilter"
         endpoint="monsters"
         :api-endpoint="API_ENDPOINTS.monsters"
-        :fields="['challenge_rating_decimal']"
+        :fields="[
+          'challenge_rating_text',
+          'challenge_rating_decimal',
+          'document',
+          'type',
+        ]"
         :cols="[
           {
             displayName: 'Name',
@@ -39,8 +44,12 @@
           },
           {
             displayName: 'CR',
-            value: (data) => data.challenge_rating_decimal,
+            value: (data) => data.challenge_rating_text,
             sortValue: 'challenge_rating_decimal',
+          },
+          {
+            displayName: 'Type',
+            value: (data) => data.type.name,
           },
         ]"
       />
@@ -49,10 +58,6 @@
 </template>
 
 <script setup>
-import ApiResultsTable from '~/components/ApiResultsTable.vue';
-import FilterButton from '~/components/FilterButton.vue';
-import MonsterFilterBox from '~/components/MonsterFilterBox.vue';
-
 const displayFilter = ref(false);
 
 const {
