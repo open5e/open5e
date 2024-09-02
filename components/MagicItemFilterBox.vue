@@ -56,12 +56,12 @@
             id="attunement"
             :value="filter.requires_attunement"
             type="checkbox"
-            name="attunement"
+            name="requires_attunement"
             class="mb-1 accent-blood"
             @input="
               updateFilter(
                 'requires_attunement',
-                $event.target.value ? '' : 'requires attunement'
+                $event.target.value === 'on' ? true : undefined
               )
             "
           />

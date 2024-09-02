@@ -10,7 +10,7 @@ export const DefaultMagicItemFilter: Readonly<MagicItemFilter> = {
   name__icontains: '',
   rarity: {},
   category: {},
-  requires_attunement: false,
+  requires_attunement: undefined,
 };
 
 export const copyMagicItemFilter = (): MagicItemFilter => {
