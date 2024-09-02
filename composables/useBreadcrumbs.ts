@@ -22,23 +22,10 @@ export const useBreadcrumbs = () => {
           // rebuild link urls segment by segment
           url += `/${segment}`;
 
-          // seperate segment title & query params
-          const [title, queryParams] = segment.split('?');
-
-          // extract & format the search params if on the /search route
-          let searchParam = '';
-          if (title === 'search' && queryParams) {
-            searchParam = queryParams.split('text=')[1].split('+').join(' ');
-          }
-
           // return a breadcrumb object
           return {
+            ...generateTitle(segment),
             url,
-            title: title
-              .split(/[-_]/)
-              .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-              .join(' '),
-            subtitle: searchParam,
           } as Breadcrumb;
         })
 
@@ -46,4 +33,24 @@ export const useBreadcrumbs = () => {
         .filter((breadcrumb) => breadcrumb)
     );
   });
+};
+
+const generateTitle = (crumb: string) => {
+  // if on the search route, make 'text' query param subtitle
+  if (crumb.indexOf('?') > 0) {
+    const [route, queryParams] = crumb.split('?');
+    const title = route.split('-').join(' ');
+    const subtitle = queryParams.split('text=')[1].split('+').join(' ');
+    return { title, subtitle };
+  }
+  // if viewing an API item, move source UID in URL to subtitle
+  if (crumb.indexOf('_') > 0) {
+    const [sourceKey, url] = crumb.split('_');
+    const title = url.split('-').join(' ');
+    const subtitle = sourceKey.toUpperCase();
+    return { title, subtitle };
+  }
+
+  // base-case: return crumb as title without subtitle
+  return { title: crumb.split('-').join(' '), subtitle: '' };
 };
