@@ -10,6 +10,10 @@
           <source-tag :text="slug" :title="data.document.name" />
         </span>
       </template>
+      <!-- If data is boolean, display as √ or -, not true or false  -->
+      <template v-else-if="typeof col.value(data) === 'boolean'">
+        <span>{{ col.value(data) ? '√' : '-' }}</span>
+      </template>
       <template v-else>
         {{ col.value(data) }}
       </template>
