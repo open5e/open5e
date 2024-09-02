@@ -40,5 +40,5 @@
 </template>
 
 <script setup>
-const crumbs = inject('crumbs');
+const crumbs = useBreadcrumbs();
 </script>
