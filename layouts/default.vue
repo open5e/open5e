@@ -123,15 +123,11 @@ import { computed } from 'vue';
 // Generate page title from Breadcrumbs
 const BASE_TITLE = 'Open5e';
 const crumbs = useBreadcrumbs();
-
 const title = computed(() => {
   if (crumbs.value.length === 0) {
     return BASE_TITLE;
   }
-  const crumb_titles = crumbs.value.map((crumb) => crumb.title);
-  const reversed_titles = [...crumb_titles].reverse();
-
-  return reversed_titles.join(' - ') + ` - ${BASE_TITLE}`;
+  return `${crumbs.value.at(-1).title} – ${BASE_TITLE}`;
 });
 useHead({ title: title });
 
