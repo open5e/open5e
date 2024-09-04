@@ -5,7 +5,6 @@
   >
     <div class="bg-blue flex w-full flex-wrap align-middle">
       <!-- Filter by Monster Name -->
-      <!-- Currently broken, ?name__icontains= not supported by API V2 (yet!) -->
       <label for="monsterName" class="pt-1 font-bold md:w-1/6">
         MONSTER NAME:
       </label>
@@ -85,7 +84,6 @@
     </div>
 
     <!-- Filter by Monster Type -->
-    <!-- Currently broken, ?type= not supported by API V2 (yet!) -->
     <div class="flex w-full flex-wrap pt-4 md:w-1/2">
       <div class="flex w-full px-1">
         <label for="type" class="w-full font-bold">TYPE:</label>
@@ -100,7 +98,8 @@
           <option
             v-for="monsterType in MONSTER_TYPES_LIST"
             :key="monsterType"
-            v-text="monsterType"
+            :value="monsterType.toLowerCase()"
+            :text="monsterType"
           />
         </select>
       </div>
