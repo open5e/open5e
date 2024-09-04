@@ -51,10 +51,12 @@
           {
             displayName: 'Type',
             value: (data) => data.type.name,
+            sortValue: 'type',
           },
           {
             displayName: 'Size',
             value: (data) => data.size.name,
+            sortValue: 'size',
           },
         ]"
       />
