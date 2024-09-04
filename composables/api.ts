@@ -2,7 +2,7 @@ import { keepPreviousData, useQuery } from '@tanstack/vue-query';
 import axios from 'axios';
 
 export const API_ENDPOINTS = {
-  backgrounds: 'v1/backgrounds/',
+  backgrounds: 'v2/backgrounds/',
   characters: 'v1/characters/',
   classes: 'v1/classes/',
   conditions: 'v1/conditions/',

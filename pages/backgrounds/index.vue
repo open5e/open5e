@@ -6,7 +6,14 @@
     <api-results-table
       endpoint="backgrounds"
       :api-endpoint="API_ENDPOINTS.backgrounds"
-      :cols="['document__title', 'document__slug']"
+      :cols="[
+        {
+          displayName: 'Name',
+          value: (data) => data.name,
+          sortValue: 'name',
+          link: (data) => `/backgrounds/${data.key}`,
+        },
+      ]"
     />
   </section>
 </template>
