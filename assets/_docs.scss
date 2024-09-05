@@ -44,9 +44,6 @@ table {
   h3,
   h5,
   h6 {
-    display: flex;
-    align-content: flex-start;
-
     .toc-anchor {
       order: 2;
       display: none;
