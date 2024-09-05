@@ -62,8 +62,7 @@ export const useAPI = () => {
         queryParams = {},
       } = options;
 
-      const formattedSources =
-        sources.length > 0 ? sources.join(',') : 'no-sources';
+      const formattedSources = sources.join(',');
       const res = await api.get(endpoint, {
         params: {
           limit: itemsPerPage,

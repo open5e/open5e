@@ -18,23 +18,27 @@
         </nuxt-link>
 
         <!-- SOURCE MODAL -->
-        <div
-          class="cursor-pointer bg-red-600 px-4 py-2 hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
+        <button
+          class="cursor-pointer bg-red-600 px-4 py-2 text-left hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
           @click="showModal = true"
         >
-          <span v-if="documents">
-            {{ no_selected_sources }} of {{ no_avilable_sources }} sources
-            <Icon
+          <span v-if="documents && no_selected_sources > 0">
+            {{ no_selected_sources }} of {{ no_available_sources }} sources
+          </span>
+          <span v-else class="after:content-['_']">Select Sources</span>
+
+          <span v-if="isLoadingData">
+            <icon name="line-md:loading-twotone-loop" />
+          </span>
+          <span v-else>
+            <icon
               name="heroicons:pencil-square"
               class="h-5 w-5 text-white"
               aria-hidden="true"
             />
           </span>
-          <span v-else>Loading sources...</span>
-          <span v-show="isLoadingData">
-            <Icon name="line-md:loading-twotone-loop" />
-          </span>
-        </div>
+        </button>
+
         <!-- SEARCH BAR -->
         <div class="relative">
           <div
@@ -175,7 +179,7 @@ const { data: character_sections } = useSections(
   'Character Advancement'
 );
 
-const no_avilable_sources = computed(() => documents.value?.length ?? 0);
+const no_available_sources = computed(() => documents.value?.length ?? 0);
 
 const isLoadingData = useIsFetching();
 
