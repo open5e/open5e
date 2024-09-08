@@ -1,6 +1,28 @@
 <template>
   <main v-if="classData" class="docs-container container">
     <h1>{{ classData.name }}</h1>
+    <p v-if="classData.subclass_of">
+      <span class="font-bold after:content-['_']">Subclass of</span>
+      <!-- Key not rtn'd  by subclass_of, extract from url -->
+      <nuxt-link
+        class="font-bold"
+        :to="`/classes/${classData.subclass_of.url
+          .split('/')
+          .filter((exists) => exists)
+          .pop()}`"
+      >
+        {{ classData.subclass_of.name }}
+      </nuxt-link>
+    </p>
+
+    <ul v-if="subclasses.length > 0" class="mt-2">
+      <p class="inline font-bold after:content-[':_']">Subclasses</p>
+      <li v-for="subclass in subclasses" :key="subclass.name" class="inline">
+        <nuxt-link :to="`/classes/${subclass.key}`">
+          {{ subclass.name }}
+        </nuxt-link>
+      </li>
+    </ul>
     <section>
       <h2>Class Features</h2>
       <p>As a {{ classData.name }} you gain the following features.</p>
@@ -43,7 +65,6 @@
           </li>
         </template>
       </ul>
-      <!-- <md-viewer :text="classData.desc" /> -->
     </section>
   </main>
 
@@ -55,6 +76,11 @@ const { data: classData } = useFindOne(
   API_ENDPOINTS.classes,
   useRoute().params.className
 );
+
+const { data: subclasses } = useFindMany(API_ENDPOINTS.classes, {
+  fields: ['key', 'name'].join(','),
+  subclass_of: useRoute().params.className,
+});
 
 // Formatting of fields is handled here to keep the template markup legible
 
