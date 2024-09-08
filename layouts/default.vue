@@ -68,8 +68,8 @@
               v-show="useRoute().path.indexOf(section.route) != -1"
               class="bg-slate-800/30 py-2"
             >
-              <li v-for="page in section.subroutes" :key="page.slug">
-                <nav-link :to="`${section.route}/${page.slug}`" :indent="true">
+              <li v-for="page in section.subroutes" :key="page.key">
+                <nav-link :to="`${section.route}/${page.key}`" :indent="true">
                   {{ page.name }}
                 </nav-link>
               </li>
@@ -164,7 +164,8 @@ const { sources } = useSourcesList();
 const no_selected_sources = computed(() => sources.value.length);
 const { data: documents } = useDocuments();
 const { data: classes } = useFindMany(API_ENDPOINTS.classes, {
-  fields: ['name', 'slug'].join(),
+  fields: ['name', 'key'].join(),
+  is_subclass: false,
 });
 const { data: races } = useFindMany(API_ENDPOINTS.races, {
   fields: ['name', 'slug'].join(),
