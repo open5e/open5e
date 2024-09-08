@@ -55,15 +55,14 @@
       <class-table :class-features="classData.levels" />
     </section>
 
+    <!-- CLASS ABILITIES -->
     <section>
       <h2>Class Abilities</h2>
       <ul v-if="featuresInOrder.length > 0">
-        <template v-for="features in featuresInOrder">
-          <li v-for="feature in features" :key="feature.key">
-            <h3>{{ feature.name }}</h3>
-            <md-viewer :text="feature.desc" header-level="3" />
-          </li>
-        </template>
+        <li v-for="feature in featuresInOrder" :key="feature.key">
+          <h3>{{ feature.name }}</h3>
+          <md-viewer :text="feature.desc" header-level="3" />
+        </li>
       </ul>
     </section>
   </main>
@@ -115,6 +114,8 @@ const proficiencies = computed(() => {
   ];
 });
 
+// ORDER CLASS FEATURES
+
 const featuresInOrder = computed(() => {
   let levels = [];
   for (let i = 1; i <= 20; i++) {
@@ -122,18 +123,36 @@ const featuresInOrder = computed(() => {
   }
 
   // get keys for features at each level
+  // returns an arr. (each index a level) of arrs. of keys
   const featureKeysByLevel = levels.map(
     (level) => classData.value.levels[level]?.features
   );
 
-  // use features
-  return featureKeysByLevel.map((keys) => {
-    // this should be a one-liner, but eslint says not. We should update rules
-    if (!keys) {
-      return;
+  // take the keys per level and generate a 1D arr. of feature keys in order
+  let keysFound = [];
+  const featureKeysInOrder = featureKeysByLevel.reduce((acc, level) => {
+    // guard clause -> make sure there are features at this level
+    if (!level || level?.length === 0) {
+      return acc;
     }
-    return classData.value.features.filter((feature) =>
-      keys.includes(feature.key)
+
+    // flatten 2D array to an array of feature key w/ duplicates removed
+    const inOrder = level.reduce((acc, featureKey) => {
+      if (keysFound.includes(featureKey)) {
+        return;
+      }
+      keysFound.push(featureKey);
+      acc.push(featureKey);
+      return acc;
+    }, []);
+
+    return [...acc, ...(inOrder ?? [])];
+  }, []);
+
+  // use ordered feature keys to gather class data features in order
+  return featureKeysInOrder.map((keyToFind) => {
+    return classData.value.features.find(
+      (feautre) => feautre.key === keyToFind
     );
   });
 });
