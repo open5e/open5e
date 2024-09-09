@@ -139,7 +139,7 @@ const featuresInOrder = computed(() => {
     // flatten 2D array to an array of feature key w/ duplicates removed
     const inOrder = level.reduce((acc, featureKey) => {
       if (keysFound.includes(featureKey)) {
-        return;
+        return acc;
       }
       keysFound.push(featureKey);
       acc.push(featureKey);
