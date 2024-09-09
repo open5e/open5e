@@ -23,7 +23,7 @@ module.exports = {
   // add your custom rules here
   rules: {
     eqeqeq: 'off',
-    curly: 'error',
+    // curly: 'error',
     // sometimes you need to use double quotes. ie. string contains apostrophes
     // quotes: ['error', 'single'],
     'vue/multi-word-component-names': 'off',
