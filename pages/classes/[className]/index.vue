@@ -1,24 +1,13 @@
 <template>
   <main v-if="classData" class="docs-container container">
     <h1>{{ classData.name }}</h1>
-    <p v-if="classData.subclass_of">
-      <span class="font-bold after:content-['_']">Subclass of</span>
-      <!-- Key not rtn'd  by subclass_of, extract from url -->
-      <nuxt-link
-        class="font-bold"
-        :to="`/classes/${classData.subclass_of.url
-          .split('/')
-          .filter((exists) => exists)
-          .pop()}`"
-      >
-        {{ classData.subclass_of.name }}
-      </nuxt-link>
-    </p>
 
     <ul v-if="subclasses.length > 0" class="mt-2">
       <p class="inline font-bold after:content-[':_']">Subclasses</p>
       <li v-for="subclass in subclasses" :key="subclass.name" class="inline">
-        <nuxt-link :to="`/classes/${subclass.key}`">
+        <nuxt-link
+          :to="`/classes/${useRoute().params.className}/${subclass.key}`"
+        >
           {{ subclass.name }}
         </nuxt-link>
       </li>
@@ -73,7 +62,8 @@
 <script setup>
 const { data: classData } = useFindOne(
   API_ENDPOINTS.classes,
-  useRoute().params.className
+  useRoute().params.className,
+  { params: { is_subclass: false } }
 );
 
 const { data: subclasses } = useFindMany(API_ENDPOINTS.classes, {
