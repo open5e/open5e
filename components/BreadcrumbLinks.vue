@@ -30,7 +30,10 @@
       >
         <nuxt-link :to="crumb.url" class="align-middle">
           <span>{{ crumb.title }}</span>
-          <span v-if="crumb.subtitle" class="font-thin text-granite sm:ml-2">
+          <span
+            v-if="crumb.subtitle"
+            class="hidden font-thin text-granite sm:ml-2 sm:inline"
+          >
             ({{ crumb.subtitle }})
           </span>
         </nuxt-link>
