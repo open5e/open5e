@@ -4,7 +4,7 @@ import axios from 'axios';
 export const API_ENDPOINTS = {
   backgrounds: 'v2/backgrounds/',
   characters: 'v1/characters/',
-  classes: 'v1/classes/',
+  classes: 'v2/classes/',
   conditions: 'v1/conditions/',
   documents: 'v2/documents/',
   feats: 'v1/feats/',
@@ -256,17 +256,31 @@ const fetchNestedResources = async (
 export const useFindOne = (
   endpoint: string,
   id: MaybeRef<string>,
-  relatedFields: string[] = []
+  options?: {
+    params: Record<string, string>;
+    relatedFields: string[];
+  }
 ) => {
   const { get } = useAPI();
 
+  const params = options?.params;
+  let formattedParams = [];
+  for (const name in params) {
+    formattedParams.push(`${name}=${params[name]}`);
+  }
+  const paramString =
+    formattedParams.length === 0 ? '' : '/?' + formattedParams.join('&');
   return useQuery({
     queryKey: [endpoint, id],
     queryFn: async () => {
       // Fetch the main data
-      const data = await get(endpoint, unref(id));
+      // const data = await get(endpoint, unref(id), '/?fields=key');
+      const data = await get(endpoint, unref(id), paramString);
       // Fetch related data for the specified fields
-      const enrichedData = await fetchNestedResources(data, relatedFields);
+      const enrichedData = await fetchNestedResources(
+        data,
+        options?.relatedFields ?? []
+      );
 
       return enrichedData;
     },

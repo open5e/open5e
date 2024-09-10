@@ -377,8 +377,7 @@
 const route = useRoute();
 const { data: monster } = useFindOne(
   API_ENDPOINTS.monsters,
-  useRoute().params.id,
-  ['document']
+  useRoute().params.id
 );
 
 // filter "unit" prop from "speeds"

@@ -59,10 +59,9 @@
 </template>
 
 <script setup>
-const { data: spell } = useFindOne(API_ENDPOINTS.spells, useRoute().params.id, [
-  'document',
-  'document.publisher',
-]);
+const { data: spell } = useFindOne(API_ENDPOINTS.spells, useRoute().params.id, {
+  relatedFields: ['document', 'document.publisher'],
+});
 
 function formatComponents(verbal, somatic, material, material_consumed) {
   let components = [];

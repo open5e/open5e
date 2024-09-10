@@ -6,7 +6,15 @@
     <api-results-table
       endpoint="classes"
       :api-endpoint="API_ENDPOINTS.classes"
-      :cols="['document__title', 'document__slug']"
+      :params="{ is_subclass: false }"
+      :cols="[
+        {
+          displayName: 'Class',
+          value: (data) => data.name,
+          sortValue: 'name',
+          link: (data) => `/classes/${data.key}`,
+        },
+      ]"
     />
   </section>
 </template>
