@@ -69,13 +69,7 @@ const { data: classData } = useFindOne(
   { params: { is_subclass: true } }
 );
 
-const { data: subclasses } = useFindMany(API_ENDPOINTS.classes, {
-  fields: ['key', 'name'].join(','),
-  subclass_of: useRoute().params.className,
-});
-
 // Formatting of fields is handled here to keep the template markup legible
-
 const hitPoints = computed(() => {
   if (!classData.value.hit_points) {
     return [];
