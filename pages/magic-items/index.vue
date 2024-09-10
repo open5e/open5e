@@ -10,54 +10,69 @@
         @clear-filter="clear"
       />
     </div>
+
     <magic-item-filter-box
       v-if="displayFilter"
       :filter="filter"
       :update-filter="update"
     />
     <div>
-      <div>
-        <h3
-          ref="results"
-          class="sr-only"
-          tabindex="-1"
-          @keyup.esc="focusFilter"
-        />
-      </div>
-      <api-results-table
-        v-model="debouncedFilter"
-        endpoint="magic-items"
-        :api-endpoint="API_ENDPOINTS.magicitems"
-        :fields="['category', 'rarity', 'requires_attunement']"
-        :params="{ is_magic_item: true }"
-        :cols="[
-          {
-            displayName: 'Name',
-            value: (data) => data.name,
-            sortValue: 'name',
-            link: (data) => `/magic-items/${data.key}`,
-          },
-          {
-            displayName: 'Category',
-            value: (data) => data.category.name,
-          },
-          {
-            displayName: 'Rarity',
-            value: (data) => data.rarity.name,
-          },
-          {
-            displayName: 'Requires Attunement',
-            value: (data) => data.requires_attunement,
-          },
-        ]"
+      <h3
+        ref="results"
+        class="sr-only"
+        tabindex="-1"
+        @keyup.esc="focusFilter"
       />
     </div>
+
+    <api-table-nav
+      class="w-full"
+      :page-number="pageNo"
+      :last-page-number="lastPageNo"
+      @first="firstPage()"
+      @next="nextPage()"
+      @prev="prevPage()"
+      @last="lastPage()"
+    />
+
+    <api-results-table
+      v-model="debouncedFilter"
+      :data="results"
+      endpoint="magic-items"
+      :cols="[
+        {
+          displayName: 'Name',
+          value: (data) => data.name,
+          sortValue: 'name',
+          link: (data) => `/magic-items/${data.key}`,
+        },
+        {
+          displayName: 'Category',
+          value: (data) => data.category.name,
+          sortValue: 'category',
+        },
+        {
+          displayName: 'Rarity',
+          value: (data) => data.rarity.name,
+          sortValue: 'rarity',
+        },
+        {
+          displayName: 'Requires Attunement',
+          value: (data) => data.requires_attunement,
+          sortValue: 'requires_attunement',
+        },
+      ]"
+      :sort-by="sortBy"
+      :is-sort-descending="isSortDescending"
+      @sort="(sortValue) => setSortState(sortValue)"
+    />
   </section>
 </template>
 
 <script setup>
-const displayFilter = ref(false);
+const { sortBy, isSortDescending, setSortState } = useSortState();
 
+const displayFilter = ref(false);
 const {
   filter,
   debouncedFilter,
@@ -66,4 +81,26 @@ const {
   clear,
   update,
 } = useFilterState(DefaultMagicItemFilter);
+
+const fields = [
+  'key',
+  'name',
+  'document',
+  'category',
+  'rarity',
+  'requires_attunement',
+].join(',');
+
+const { data, paginator } = useFindPaginated({
+  endpoint: API_ENDPOINTS.magicitems,
+  sortByProperty: sortBy,
+  isSortDescending: isSortDescending,
+  filter: filter,
+  params: { fields, is_magic_item: true, depth: 1 },
+});
+
+const results = computed(() => data.value?.results);
+
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
+  paginator;
 </script>
