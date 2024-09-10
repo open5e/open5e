@@ -84,7 +84,6 @@ export const useAPI = () => {
     },
     get: async (...parts: string[]) => {
       const route = parts.join('');
-      console.log(route);
       const res = await api.get(route, {
         params: { depth: '2' },
       });
