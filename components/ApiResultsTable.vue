@@ -79,19 +79,21 @@ const props = defineProps({
 
 const filter = defineModel({ default: () => ({}), type: Object });
 
-const { data, pageNo, firstPage, prevPage, nextPage, lastPage, lastPageNo } =
-  useFindPaginated({
-    endpoint: props.apiEndpoint,
-    itemsPerPage: props.itemsPerPage,
-    sortByProperty: sortBy,
-    isSortDescending: isSortDescending,
-    filter: filter,
-    params: {
-      ...props.params,
-      fields: ['key', 'name', 'document'].concat(props.fields).join(),
-      depth: 1,
-    },
-  });
+const { data, paginator } = useFindPaginated({
+  endpoint: props.apiEndpoint,
+  itemsPerPage: props.itemsPerPage,
+  sortByProperty: sortBy,
+  isSortDescending: isSortDescending,
+  filter: filter,
+  params: {
+    ...props.params,
+    fields: ['key', 'name', 'document'].concat(props.fields).join(),
+    depth: 1,
+  },
+});
+
+const { pageNo, firstPage, prevPage, nextPage, lastPage, lastPageNo } =
+  paginator;
 
 const results = computed(() => data.value?.results);
 const updateSortState = (property) => {
