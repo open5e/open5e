@@ -21,7 +21,8 @@
       </td>
     </tr>
   </table>
-  <!-- TODO: spell splots, before is an exaple table column layout -->
+  <!-- TODO: Spell Slots - These are not currently returned by the API  -->
+  <!-- Below is an exaple table column layout -->
   <!-- <table>
     <tr>
       <th rowspan="2">Level</th>
@@ -50,6 +51,7 @@ defineProps({
   classFeatures: { type: Object, default: () => {} },
 });
 
+// helper function for rendering reade-friendlt titles from feature keys
 const parseFeatures = (input) =>
   input.split('_').slice(-1).pop().split('-').join(' ');
 </script>
