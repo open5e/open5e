@@ -64,8 +64,10 @@
 </template>
 
 <script setup>
+// State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
+// Set up filters
 const displayFilter = ref(false);
 const {
   filter,
@@ -76,6 +78,7 @@ const {
   update,
 } = useFilterState(DefaultMonsterFilter);
 
+// fields to fetch from API to populate table
 const fields = [
   'key',
   'name',
@@ -87,6 +90,7 @@ const fields = [
   'size',
 ].join(',');
 
+// fetch page of data from API and pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.monsters,
   sortByProperty: sortBy,
@@ -94,9 +98,9 @@ const { data, paginator } = useFindPaginated({
   filter: filter,
   params: { fields, is_subclass: false, depth: 1 },
 });
-
 const results = computed(() => data.value?.results);
 
+// destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
   paginator;
 </script>

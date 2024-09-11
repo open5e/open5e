@@ -32,27 +32,23 @@
 </template>
 
 <script setup>
-const emit = defineEmits(['sort']);
-
+// state handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
-
-const filter = defineModel({ default: () => ({}), type: Object });
 
 // Fetch a page of classes & pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.classes,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending ?? true,
-  filter: filter,
   params: {
     is_subclass: false,
     fields: ['key', 'name', 'document'].join(),
     depth: 1,
   },
 });
-
 const results = computed(() => data.value?.results);
 
+// destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
   paginator;
 </script>

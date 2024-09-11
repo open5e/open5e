@@ -51,8 +51,10 @@
 </template>
 
 <script setup>
+// State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
+// fields to fetch from API to populate table
 const fields = [
   'name',
   'level',

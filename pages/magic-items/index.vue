@@ -70,8 +70,10 @@
 </template>
 
 <script setup>
+// State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
+// Set up filters
 const displayFilter = ref(false);
 const {
   filter,
@@ -82,6 +84,7 @@ const {
   update,
 } = useFilterState(DefaultMagicItemFilter);
 
+// fields to fetch from API to populate table
 const fields = [
   'key',
   'name',
@@ -91,6 +94,7 @@ const fields = [
   'requires_attunement',
 ].join(',');
 
+// fetch page of data from API and pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.magicitems,
   sortByProperty: sortBy,
@@ -98,9 +102,9 @@ const { data, paginator } = useFindPaginated({
   filter: filter,
   params: { fields, is_magic_item: true, depth: 1 },
 });
-
 const results = computed(() => data.value?.results);
 
+// destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
   paginator;
 </script>

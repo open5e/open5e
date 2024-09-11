@@ -32,17 +32,19 @@
 </template>
 
 <script setup>
+// state handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
+// fetch page of data from API and pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.backgrounds,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   params: { fields: ['name', 'key', 'document'], depth: 1 },
 });
-
 const results = computed(() => data.value?.results);
 
+// destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
   paginator;
 </script>
