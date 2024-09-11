@@ -10,12 +10,14 @@
         @clear-filter="clear"
       />
     </div>
+
     <monster-filter-box
       v-if="displayFilter"
       ref="monsterFilterBox"
       :filter="filter"
       :update-filter="update"
     />
+
     <api-table-nav
       class="w-full"
       :page-number="pageNo"
@@ -25,6 +27,7 @@
       @prev="prevPage()"
       @last="lastPage()"
     />
+
     <h3 ref="results" class="sr-only" tabindex="-1" @keyup.esc="focusFilter" />
     <api-results-table
       v-model="debouncedFilter"
