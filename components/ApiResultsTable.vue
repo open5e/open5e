@@ -1,17 +1,6 @@
 <template>
   <div>
-    <div class="flex w-full flex-wrap justify-end align-middle">
-      <api-table-nav
-        :page-number="pageNo"
-        :last-page-number="lastPageNo"
-        @first="firstPage()"
-        @next="nextPage()"
-        @prev="prevPage()"
-        @last="lastPage()"
-      />
-    </div>
-
-    <table v-if="results" class="m-0 w-full">
+    <table v-if="data" class="m-0 w-full">
       <thead>
         <tr>
           <sortable-table-header
@@ -21,7 +10,7 @@
             :sort-by="col.sortValue"
             :is-sorting-property="sortBy === col.sortValue"
             :is-sort-descending="isSortDescending"
-            @sort="(sortValue) => updateSortState(sortValue)"
+            @sort="onSort(col.sortValue)"
           />
         </tr>
       </thead>
@@ -45,64 +34,22 @@
         </tr>
       </tbody>
     </table>
-    <div class="flex w-full flex-wrap justify-end align-middle">
-      <div
-        v-show="results && results.length > 0"
-        class="flex w-full justify-start italic text-blood md:w-1/2"
-      >
-        Page {{ pageNo }} of {{ lastPageNo }}
-      </div>
-      <api-table-nav
-        :page-number="pageNo"
-        :last-page-number="lastPageNo"
-        @first="firstPage()"
-        @next="nextPage()"
-        @prev="prevPage()"
-        @last="lastPage()"
-      />
-    </div>
   </div>
 </template>
 
 <script setup>
-const sortBy = ref('name');
-const isSortDescending = ref(false);
+const emit = defineEmits(['sort']);
 
 const props = defineProps({
+  data: { type: Object, default: () => {} },
   endpoint: { type: String, required: true },
-  apiEndpoint: { type: String, required: true },
   itemsPerPage: { type: Number, default: 50 },
-  fields: { type: Array, default: () => [] },
   cols: { type: Array, default: () => [] },
-  params: { type: Object, default: () => {} },
+  sortBy: { type: String, default: 'name' },
+  isSortDescending: { type: Boolean },
 });
 
-const filter = defineModel({ default: () => ({}), type: Object });
+const results = computed(() => props.data);
 
-const { data, pageNo, firstPage, prevPage, nextPage, lastPage, lastPageNo } =
-  useFindPaginated({
-    endpoint: props.apiEndpoint,
-    itemsPerPage: props.itemsPerPage,
-    sortByProperty: sortBy,
-    isSortDescending: isSortDescending,
-    filter: filter,
-    params: {
-      ...props.params,
-      fields: ['key', 'name', 'document'].concat(props.fields).join(),
-      depth: 1,
-    },
-  });
-
-const results = computed(() => data.value?.results);
-const updateSortState = (property) => {
-  const column = props.cols.find((col) => col.displayName === property) || {
-    sortValue: property,
-  };
-  if (column.sortValue !== sortBy.value) {
-    sortBy.value = column.sortValue;
-    isSortDescending.value = false;
-  } else {
-    isSortDescending.value = !isSortDescending.value;
-  }
-};
+const onSort = (sortValue) => emit('sort', sortValue);
 </script>

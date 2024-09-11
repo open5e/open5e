@@ -3,19 +3,19 @@
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Spells</h1>
     </div>
+
+    <api-table-nav
+      :page-number="pageNo"
+      :last-page-number="lastPageNo"
+      @first="firstPage()"
+      @next="nextPage()"
+      @prev="prevPage()"
+      @last="lastPage()"
+    />
+
     <api-results-table
+      :data="results"
       endpoint="spells"
-      :api-endpoint="API_ENDPOINTS.spells"
-      :fields="[
-        'name',
-        'level',
-        'school',
-        'verbal',
-        'material',
-        'material_consumed',
-        'somatic',
-        'concentration',
-      ]"
       :cols="[
         {
           displayName: 'Name',
@@ -35,28 +35,53 @@
         },
         {
           displayName: 'Components',
-          value: (data) =>
-            formatComponents(
-              data.verbal,
-              data.somatic,
-              data.material,
-              data.material_consumed
-            ),
-        }, // I know this is super ugly but my brain is tired and it works
+          value: (data) => formatComponents(data),
+        },
         {
           displayName: 'Concentration',
-          value: (data) => `${data.concentration ? 'yes' : ''}`,
+          value: (data) => (data.concentration ? '√' : '-'),
           sortValue: 'concentration',
         },
       ]"
+      :sort-by="sortBy"
+      :is-sort-descending="isSortDescending"
+      @sort="(sortValue) => setSortState(sortValue)"
     />
   </section>
 </template>
 
 <script setup>
-import ApiResultsTable from '~/components/ApiResultsTable.vue';
+// State handlers for sorting results table
+const { sortBy, isSortDescending, setSortState } = useSortState();
 
-function formatComponents(verbal, somatic, material, material_consumed) {
+// fields to fetch from API to populate table
+const fields = [
+  'name',
+  'level',
+  'school',
+  'verbal',
+  'material',
+  'material_consumed',
+  'somatic',
+  'concentration',
+];
+
+// Fetch a page of results and pagination controls
+const { data, paginator } = useFindPaginated({
+  endpoint: API_ENDPOINTS.spells,
+  sortByProperty: sortBy,
+  isSortDescending: isSortDescending,
+  params: { fields, depth: 1 },
+});
+const results = computed(() => data.value?.results);
+
+// destructure pagination controls
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
+  paginator;
+
+// helper function for formatting spell components
+const formatComponents = (data) => {
+  const { verbal, somatic, material, material_consumed: consumed } = data;
   let components = [];
   if (verbal) {
     components.push('V');
@@ -65,8 +90,8 @@ function formatComponents(verbal, somatic, material, material_consumed) {
     components.push('S');
   }
   if (material) {
-    components.push('M');
+    components.push(consumed ? 'M*' : 'M');
   }
-  return `${components.join(', ')}${material_consumed ? '*' : ''}`;
-}
+  return components.join(', ');
+};
 </script>
