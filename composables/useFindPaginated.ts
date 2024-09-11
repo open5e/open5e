@@ -1,3 +1,8 @@
+/* useFindPaginated handles paginated queries to the Open5e API. It will return
+ * one page of data at a time, handling refetching as query parameters change.
+ * It also returns a 'paginator' obj, which contains methods for changing the
+ * requested page */
+
 import { keepPreviousData, useQuery } from '@tanstack/vue-query';
 
 export const useFindPaginated = (options: {
@@ -20,6 +25,8 @@ export const useFindPaginated = (options: {
   } = options;
   const pageNo = ref(unref(initialPage));
   const { findPaginated } = useAPI();
+
+  // map V2 source keys to V1 source slugs if necessary
   const { sources, sourcesAPIVersion1 } = useSourcesList();
   const sourcesForAPIVersion = isV1Endpoint(unref(endpoint))
     ? sourcesAPIVersion1

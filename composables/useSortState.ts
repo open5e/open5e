@@ -1,9 +1,15 @@
-// This composable is designed to
+/* useSortState contains logic for controlling api result table sorting.
+ * Values returned are designed to interface btwn the useFindPaginated
+ * composable and the SortableTableHeader component */
 
 export const useSortState = () => {
+  // api field to sort results by
   const currentSortingProperty = ref('name');
+
+  // state controlling sort direction of results (asc. or desc.)
   const isSortDescending = ref(false);
 
+  // setter for updating sort state, handles interactions btwn sorting prop
   const setSortState = (sortBy: string) => {
     if (sortBy === currentSortingProperty.value) {
       isSortDescending.value = !isSortDescending.value;
@@ -15,7 +21,7 @@ export const useSortState = () => {
 
   return {
     sortBy: currentSortingProperty,
-    isSortDescending,
+    isSortDescending, // boolean: is sort asc. or desc.
     setSortState,
   };
 };
