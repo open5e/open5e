@@ -12,6 +12,7 @@
       @prev="prevPage()"
       @last="lastPage()"
     />
+
     <api-results-table
       :data="results"
       :cols="[
@@ -21,6 +22,9 @@
           link: (data) => `/races/${data.key}`,
         },
       ]"
+      :sort-by="sortBy"
+      :is-sort-descending="isSortDescending"
+      @sort="(sortValue) => setSortState(sortValue)"
     />
   </section>
 </template>
