@@ -5,7 +5,9 @@
       <h2>Traits</h2>
       <div v-for="trait in traits" :key="trait.name" class="my-2">
         <dh class="font-bold after:content-['._']">{{ trait.name }}</dh>
-        <dd class="inline">{{ trait.desc }}</dd>
+        <dd class="inline">
+          <md-viewer :inline="true" :text="trait.desc" />
+        </dd>
       </div>
     </dt>
 
@@ -13,7 +15,7 @@
       <h2>Subraces</h2>
       <li v-for="subrace in subraces" :key="subrace.key">
         <h3>{{ subrace.name }}</h3>
-        <md-viewer :text="subrace.desc" />
+        <md-viewer :inline="true" :text="subrace.desc" />
         <dt>
           <div v-for="trait in subrace.traits" :key="trait.name" class="my-2">
             <dh class="font-bold after:content-['._']">{{ trait.name }}</dh>
