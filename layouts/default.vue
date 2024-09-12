@@ -167,9 +167,6 @@ const { data: classes } = useFindMany(API_ENDPOINTS.classes, {
   fields: ['name', 'key'].join(),
   is_subclass: false,
 });
-const { data: races } = useFindMany(API_ENDPOINTS.races, {
-  fields: ['name', 'slug'].join(),
-});
 const { data: combat_sections } = useSections('Combat');
 const { data: equipment_sections } = useSections('Equipment');
 const { data: gameplay_sections } = useSections('Gameplay Mechanics');
@@ -186,41 +183,8 @@ const isLoadingData = useIsFetching();
 
 const routes = computed(() => [
   {
-    title: 'Characters',
-    route: '/characters',
-    subroutes: character_sections.value ?? [],
-  },
-  {
-    title: 'Classes',
-    route: '/classes',
-    subroutes: classes.value ?? [],
-  },
-  {
-    title: 'Conditions',
-    route: '/conditions',
-  },
-  {
-    title: 'Races',
-    route: '/races',
-    subroutes: races.value ?? [],
-  },
-  {
-    title: 'Backgrounds',
-    route: '/backgrounds',
-  },
-  {
-    title: 'Feats',
-    route: '/feats',
-  },
-  {
-    title: 'Combat',
-    route: '/combat',
-    subroutes: combat_sections.value ?? [],
-  },
-  {
-    title: 'Equipment',
-    route: '/equipment',
-    subroutes: equipment_sections.value ?? [],
+    title: 'Monsters',
+    route: '/monsters',
   },
   {
     title: 'Magic Items',
@@ -231,9 +195,42 @@ const routes = computed(() => [
     route: '/spells',
     subroutes: spellcastingClasses,
   },
+
   {
-    title: 'Monsters',
-    route: '/monsters',
+    title: 'Classes',
+    route: '/classes',
+    subroutes: classes.value ?? [],
+  },
+  {
+    title: 'Races',
+    route: '/races',
+  },
+  {
+    title: 'Backgrounds',
+    route: '/backgrounds',
+  },
+  {
+    title: 'Feats',
+    route: '/feats',
+  },
+  {
+    title: 'Conditions',
+    route: '/conditions',
+  },
+  {
+    title: 'Characters',
+    route: '/characters',
+    subroutes: character_sections.value ?? [],
+  },
+  {
+    title: 'Combat',
+    route: '/combat',
+    subroutes: combat_sections.value ?? [],
+  },
+  {
+    title: 'Equipment',
+    route: '/equipment',
+    subroutes: equipment_sections.value ?? [],
   },
   {
     title: 'Gameplay Mechanics',

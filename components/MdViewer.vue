@@ -19,7 +19,7 @@ const props = defineProps({
   toc: { type: Boolean, default: true },
   text: { type: String, default: 'loading...' },
   headerLevel: { type: Number, default: 1 },
-  inline: { type: Boolean, default: false },
+  inline: { type: Boolean },
   useRoller: { type: Boolean, default: false },
 });
 
@@ -47,7 +47,7 @@ const extensions = computed(() => {
 <style>
 .markdown-inline {
   display: inline;
-  * {
+  :not(table, th, td, tr, thead, tbody) {
     display: inherit;
   }
 }
