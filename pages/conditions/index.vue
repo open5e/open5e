@@ -30,7 +30,7 @@
 // fetch page of data from API and pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.conditions,
-  params: { fields: ['name', 'key', 'document'], depth: 1 },
+  params: { fields: ['name', 'key', 'document'].join(','), depth: 1 },
 });
 const results = computed(() => data.value?.results);
 

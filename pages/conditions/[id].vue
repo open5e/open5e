@@ -12,9 +12,7 @@
 const { data: condition } = useFindOne(
   API_ENDPOINTS.conditions,
   useRoute().params.id,
-  {
-    fields: ['name', 'desc', 'document'],
-  }
+  { params: { fields: ['name', 'desc', 'document'].join(',') } }
 );
 
 // generate source key from page URL - for use with source-tab cmpnt
