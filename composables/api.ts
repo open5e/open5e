@@ -7,7 +7,7 @@ export const API_ENDPOINTS = {
   classes: 'v2/classes/',
   conditions: 'v1/conditions/',
   documents: 'v2/documents/',
-  feats: 'v1/feats/',
+  feats: 'v2/feats/',
   magicitems: 'v2/items/',
   monsters: 'v2/creatures/',
   races: 'v2/races/',
