@@ -19,7 +19,6 @@
           v-for="item in results"
           :key="item.key ?? item.slug"
           :data="item"
-          :endpoint="endpoint"
           :cols="cols"
         />
       </tbody>
@@ -42,7 +41,6 @@ const emit = defineEmits(['sort']);
 
 const props = defineProps({
   data: { type: Object, default: () => {} },
-  endpoint: { type: String, required: true },
   itemsPerPage: { type: Number, default: 50 },
   cols: { type: Array, default: () => [] },
   sortBy: { type: String, default: 'name' },
