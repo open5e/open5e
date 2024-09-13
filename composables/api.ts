@@ -3,9 +3,8 @@ import axios from 'axios';
 
 export const API_ENDPOINTS = {
   backgrounds: 'v2/backgrounds/',
-  characters: 'v1/characters/',
   classes: 'v2/classes/',
-  conditions: 'v1/conditions/',
+  conditions: 'v2/conditions/',
   documents: 'v2/documents/',
   feats: 'v2/feats/',
   magicitems: 'v2/items/',

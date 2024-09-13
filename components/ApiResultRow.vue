@@ -23,7 +23,6 @@
 
 <script setup>
 const props = defineProps({
-  endpoint: { type: String, default: '' }, // API endpoint source (for links)
   data: { type: Object, default: () => {} }, // Open5e data to render
   cols: { type: Array, default: () => [] }, // Arr. of table columns to render
 });
