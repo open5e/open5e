@@ -2,12 +2,12 @@
   <section v-if="spell" class="docs-container container">
     <h1>{{ spell.name }}</h1>
     <p>
-      <span v-if="spell.level == 0" class="italic">{{
-        `${spell.school.name} cantrip`
-      }}</span>
-      <span v-else class="italic">{{
-        `Level ${spell.level} ${spell.school.name} spell`
-      }}</span>
+      <span v-if="spell.level == 0" class="italic">
+        {{ `${spell.school.name} cantrip` }}
+      </span>
+      <span v-else class="italic">
+        {{ `Level ${spell.level} ${spell.school.name} spell` }}
+      </span>
       <span v-if="spell.ritual"> (ritual)</span>
       <span> | {{ spell.dnd_class }} </span>
       <source-tag
@@ -22,16 +22,16 @@
     </p>
     <p>
       <label class="font-bold">Duration: </label>
-      <span v-if="spell.concentration === 'yes'">
+      <span v-if="spell.concentration">
         Concentration, up to {{ spell.duration }}
       </span>
       <span v-else>{{ spell.duration }}</span>
     </p>
     <p>
       <label class="font-bold">Components: </label>
-      <span
-        >{{ formatComponents(spell.verbal, spell.somatic, spell.material)
-        }}<b v-if="spell.material_consumed">*</b>
+      <span>
+        {{ formatComponents(spell.verbal, spell.somatic, spell.material) }}
+        <b v-if="spell.material_consumed">*</b>
       </span>
       <span
         v-if="spell.material_specified"
@@ -65,15 +65,9 @@ const { data: spell } = useFindOne(API_ENDPOINTS.spells, useRoute().params.id, {
 
 function formatComponents(verbal, somatic, material, material_consumed) {
   let components = [];
-  if (verbal) {
-    components.push('V');
-  }
-  if (somatic) {
-    components.push('S');
-  }
-  if (material) {
-    components.push('M');
-  }
+  if (verbal) components.push('V');
+  if (somatic) components.push('S');
+  if (material) components.push('M');
   return `${components.join(', ')}`;
 }
 </script>

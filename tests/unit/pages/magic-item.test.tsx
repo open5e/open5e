@@ -2,42 +2,37 @@ import { test, expect } from 'vitest';
 import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
 import MagicItemPage from '~/pages/magic-items/[id].vue';
 
-const { id } = useRoute().params;
-const { data: item } = useFindOne('v1/magicitems', id);
+const { data: item } = useFindOne(
+  'v2/items',
+  'srd_adamantine-armor-breastplate'
+);
 
 const page = await mountSuspended(MagicItemPage);
 
-test('/magic-item/[id] page can mount', async () => {
+test('/magic-items/[id] page can mount', async () => {
   expect(page);
 });
 
-test('/magic-item/[id] page renders title', async () => {
+test('/magic-items/[id] page renders title', async () => {
   const title = page.find('h1');
   expect(title.exists()).toBe(true);
-  expect(title.text()).toEqual(item.name);
-});
-
-mockNuxtImport('useRoute', () => {
-  return () => ({
-    params: {
-      id: 'bag-of-holding',
-    },
-  });
+  expect(title.text()).toEqual(unref(item)?.name);
 });
 
 mockNuxtImport('useFindOne', () => {
   return () => ({
     data: {
-      slug: 'bag-of-holding',
-      name: 'Bag of Holding',
-      type: 'Wondrous item',
-      desc: 'This bag has an interior space considerably larger than its outside dimensions...',
-      rarity: 'uncommon',
-      requires_attunement: '',
-      document__slug: 'wotc-srd',
-      document__title: '5e Core Rules',
-      document__url:
-        'http://dnd.wizards.com/articles/features/systems-reference-document-srd',
+      name: 'Adamantine Armor (Breastplate)',
+      key: 'srd_adamantine-armor-breastplate',
+      desc: "This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit.",
+      is_magic_item: true,
+      requires_attunement: false,
+      document: {
+        name: 'Systems Reference Document',
+        url: 'v2/documents/srd/"',
+      },
+      rarity: { name: 'Uncommon' },
+      category: { name: 'Armor' },
     },
   });
 });

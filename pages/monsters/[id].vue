@@ -382,12 +382,14 @@ const { data: monster } = useFindOne(
 
 // filter "unit" prop from "speeds"
 const speeds = computed(() => {
+  if (!monster?.value?.speed) return {};
   const { unit, ...rest } = monster.value.speed;
   return rest;
 });
 
 // assemble senses from multiple fields
 const senses = computed(() => {
+  if (!monster?.value) return {};
   const senses = {};
   if (monster.value.darkvision_range) {
     senses['Darkvision'] = monster.value.darkvision_range + ' ft.';
@@ -407,6 +409,7 @@ const senses = computed(() => {
 
 // format damage resistances correctly (damage from non-magic weapons)
 const damageResistances = computed(() => {
+  if (!monster?.value) return {};
   if (!monster.value.nonmagical_attack_resistance) {
     return monster.value.damage_resistances;
   }
@@ -422,6 +425,7 @@ const damageResistances = computed(() => {
 
 // format damage resistances correctly (damage from non-magic weapons)
 const damageImmunities = computed(() => {
+  if (!monster?.value) return {};
   if (!monster.value.nonmagical_attack_immunity) {
     return monster.value.damage_immunities;
   }

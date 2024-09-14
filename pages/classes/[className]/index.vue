@@ -66,15 +66,15 @@ const { data: classData } = useFindOne(
   { params: { is_subclass: false } }
 );
 
+// fetch subclasses to generate links
 const { data: subclasses } = useFindMany(API_ENDPOINTS.classes, {
   fields: ['key', 'name'].join(','),
   subclass_of: useRoute().params.className,
 });
 
 // Formatting of fields is handled here to keep the template markup legible
-
 const hitPoints = computed(() => {
-  if (!classData.value.hit_points) {
+  if (!classData?.value?.hit_points) {
     return [];
   }
   return [
@@ -92,7 +92,7 @@ const hitPoints = computed(() => {
 
 // TODO: proficiencies not currently returned by API
 const proficiencies = computed(() => {
-  if (!classData.value.proficiencies) {
+  if (!classData?.value?.proficiencies) {
     return [];
   }
   return [
@@ -115,7 +115,7 @@ const featuresInOrder = computed(() => {
   // get keys for features at each level
   // returns an arr. (each index a level) of arrs. of keys
   const featureKeysByLevel = levels.map(
-    (level) => classData.value.levels[level]?.features
+    (level) => classData.value?.levels[level]?.features
   );
 
   // take the keys per level and generate a 1D arr. of feature keys in order

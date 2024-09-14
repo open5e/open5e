@@ -2,7 +2,11 @@
   <section v-if="condition" class="docs-container container">
     <h1>
       <span>{{ condition.name }}</span>
-      <source-tag :text="sourceKey" :title="condition.document.name" />
+      <source-tag
+        v-if="sourceKey"
+        :text="sourceKey"
+        :title="condition.document.name"
+      />
     </h1>
     <md-viewer :text="condition.desc" />
   </section>
@@ -16,10 +20,11 @@ const { data: condition } = useFindOne(
 );
 
 // generate source key from page URL - for use with source-tab cmpnt
-const sourceKey = computed(() =>
-  condition.value.document.url
+const sourceKey = computed(() => {
+  if (!condition?.value?.document) return;
+  return condition.value.document.url
     .split('/')
     .filter((exists) => exists)
-    .pop()
-);
+    .pop();
+});
 </script>
