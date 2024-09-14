@@ -4,14 +4,11 @@
   <li class="py-2 text-base">
     <!-- Row title -->
     <h3 class="mt-1 flex items-center align-middle text-xl">
-      <nuxt-link
-        tag="a"
-        :to="`${getRoute(result.object_model)}/${result.object_pk}`"
-      >
+      <nuxt-link tag="a" :to="formatUrl(result)">
         {{ result.object_name }}
       </nuxt-link>
       <span class="ml-2 font-sans text-sm uppercase text-granite">
-        {{ result.object_model.match(/[A-Z][a-z]+/g).join(' ') }}
+        {{ formatCategory(result) }}
       </span>
       <source-tag :text="result.document.key" :title="result.document.name" />
     </h3>
@@ -47,27 +44,10 @@
 </template>
 
 <script setup>
-defineProps({
-  query: {
-    type: String,
-    default: '',
-  },
-  result: {
-    type: Array,
-    default: () => [],
-  },
+const props = defineProps({
+  query: { type: String, default: '' },
+  result: { type: Object, default: () => {} },
 });
-
-const ModelToRoute = {
-  Monster: 'monsters',
-  Spell: 'spells',
-  Race: 'races',
-  Section: 'sections',
-  MagicItem: 'magic-items',
-  Feat: 'feats',
-  Background: 'backgrounds',
-  CharClass: 'classes',
-};
 
 function stripMarkdownTables(text) {
   // Remove table row markup but keep the content
@@ -77,9 +57,35 @@ function stripMarkdownTables(text) {
     .replace(/-{3,}/g, ''); // Remove three or more hyphens
 }
 
-function getRoute(model) {
-  return ModelToRoute[model] ?? 'error';
-}
+const endpoints = {
+  Creature: 'monsters',
+  Spell: 'spells',
+  Race: 'races',
+  Section: 'sections',
+  Item: 'magic-items',
+  Feat: 'feats',
+  Background: 'backgrounds',
+  CharacterClass: 'classes',
+};
+
+const formatUrl = (input) => {
+  let baseUrl = endpoints[input.object_model] ?? input.object_model;
+  if (input?.object?.subclass_of) baseUrl += `/${input.object.subclass_of.key}`;
+  baseUrl += `/${input.object_pk}`;
+  return baseUrl;
+};
+
+const formatCategory = (input) => {
+  const category = input.object_model.match(/[A-Z][a-z]+/g).join(' ');
+  if (category === 'Creature') return 'Monster';
+  if (category === 'Character Class') {
+    if (input?.object?.subclass_of)
+      return `${input.object.subclass_of.name} Subclass`;
+    return 'Class';
+  }
+
+  return category; // base-case: return category without substitutions
+};
 </script>
 
 <style>

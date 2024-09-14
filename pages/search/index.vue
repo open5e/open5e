@@ -52,11 +52,10 @@
 
 <script setup>
 import { computed } from 'vue';
-import SearchResult from '~/components/SearchResult';
 
 const searchText = useQueryParam('text');
 const { data } = useSearch(searchText);
-const { sourcesAPIVersion1: sources } = useSourcesList();
+const { sources } = useSourcesList();
 
 const results = computed(() => {
   if (!data || !data.value) {
