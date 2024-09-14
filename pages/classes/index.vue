@@ -16,7 +16,7 @@
 
     <api-results-table
       endpoint="classes"
-      :data="results"
+      :data="data?.results"
       :cols="[
         {
           displayName: 'Class',
@@ -46,7 +46,6 @@ const { data, paginator } = useFindPaginated({
     depth: 1,
   },
 });
-const results = computed(() => data.value?.results);
 
 // destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =

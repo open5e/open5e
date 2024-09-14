@@ -31,8 +31,7 @@
     <h3 ref="results" class="sr-only" tabindex="-1" @keyup.esc="focusFilter" />
     <api-results-table
       v-model="debouncedFilter"
-      :data="results"
-      endpoint="monsters"
+      :data="data?.results"
       :cols="[
         {
           displayName: 'Name',
@@ -98,7 +97,6 @@ const { data, paginator } = useFindPaginated({
   filter: filter,
   params: { fields, is_subclass: false, depth: 1 },
 });
-const results = computed(() => data.value?.results);
 
 // destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
