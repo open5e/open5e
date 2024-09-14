@@ -62,7 +62,7 @@ const { data: background } = useFindOne(
 // sort benefits into different sections
 // different sections will be rendered to different parts of the page
 const benefits = computed(() => {
-  const [proficiencies, features, flavour] = background.value.benefits.reduce(
+  const [proficiencies, features, flavour] = background?.value?.benefits.reduce(
     (acc, benefit) => {
       // sort profs, langs, equipment, &c into 'proficiencies'
       if (
