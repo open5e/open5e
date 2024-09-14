@@ -37,8 +37,7 @@
 
     <api-results-table
       v-model="debouncedFilter"
-      :data="results"
-      endpoint="magic-items"
+      :data="data?.results"
       :cols="[
         {
           displayName: 'Name',
@@ -102,7 +101,6 @@ const { data, paginator } = useFindPaginated({
   filter: filter,
   params: { fields, is_magic_item: true, depth: 1 },
 });
-const results = computed(() => data.value?.results);
 
 // destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =

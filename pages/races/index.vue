@@ -14,7 +14,7 @@
     />
 
     <api-results-table
-      :data="results"
+      :data="data?.results"
       :cols="[
         {
           displayName: 'Name',
@@ -43,7 +43,6 @@ const { data, paginator } = useFindPaginated({
     depth: 1,
   },
 });
-const results = computed(() => data.value?.results);
 
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
   paginator;

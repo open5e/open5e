@@ -14,8 +14,7 @@
     />
 
     <api-results-table
-      :data="results"
-      endpoint="backgrounds"
+      :data="data?.results"
       :cols="[
         {
           displayName: 'Name',
@@ -42,7 +41,6 @@ const { data, paginator } = useFindPaginated({
   isSortDescending: isSortDescending,
   params: { fields: ['name', 'key', 'document'], depth: 1 },
 });
-const results = computed(() => data.value?.results);
 
 // destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =

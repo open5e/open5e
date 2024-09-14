@@ -14,7 +14,7 @@
     />
 
     <api-results-table
-      :data="results"
+      :data="data?.results"
       :cols="[
         {
           displayName: 'Name',
@@ -32,7 +32,6 @@ const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.conditions,
   params: { fields: ['name', 'key', 'document'].join(','), depth: 1 },
 });
-const results = computed(() => data.value?.results);
 
 // destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =

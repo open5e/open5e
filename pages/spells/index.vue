@@ -14,8 +14,7 @@
     />
 
     <api-results-table
-      :data="results"
-      endpoint="spells"
+      :data="data?.results"
       :cols="[
         {
           displayName: 'Name',
@@ -57,6 +56,7 @@ const { sortBy, isSortDescending, setSortState } = useSortState();
 // fields to fetch from API to populate table
 const fields = [
   'name',
+  'document',
   'level',
   'school',
   'verbal',
@@ -73,7 +73,6 @@ const { data, paginator } = useFindPaginated({
   isSortDescending: isSortDescending,
   params: { fields, depth: 1 },
 });
-const results = computed(() => data.value?.results);
 
 // destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
