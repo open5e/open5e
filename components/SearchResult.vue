@@ -14,32 +14,40 @@
     </h3>
 
     <!-- Row subtitle -->
-    <div>
-      <span v-if="result.object_model === 'Monster'">
-        {{
-          `
-           CR ${result.object.challenge_rating} | 
-           HP ${result.object.hit_points},
-           AC ${result.object.armor_class}
-           `
-        }}
-      </span>
-      <span v-else-if="result.object_model === 'Spell'" class="capitalize">
-        {{ result.object.school }} Spell | {{ result.object.dnd_class }}
-      </span>
-      <span v-else-if="result.object_model === 'MagicItem'" class="capitalize">
-        {{ result.object.type }}, {{ result.object.rarity }}
-      </span>
+
+    <div v-if="result.object_model === 'Creature'" class="text-sm">
+      <span class="after:content-['_|_']">CR {{ result.object.cr }}</span>
+      <span>{{ `${result.object.type} (${result.object.size})` }}</span>
+    </div>
+
+    <div v-if="result.object_model === 'Spell'" class="text-sm capitalize">
+      {{
+        useFormatSpellSubtitle({
+          level: result.object.level,
+          school: result.object.school,
+        })
+      }}
+    </div>
+
+    <span
+      v-else-if="result.object_model === 'Item' && result.object.is_magic_item"
+      class="text-sm capitalize"
+    >
+      {{ `${result.object.type}, ${result.object.rarity}` }}
+    </span>
+
+    <!-- include article source -->
+    <div class="text-sm">
+      <span class="after:content-[':_']">Source</span>
+      <span class="font-bold">{{ result.document.name }}</span>
     </div>
 
     <!-- include snipet if query text is not part of article title -->
     <md-viewer
       v-if="!result.object_name.toUpperCase().includes(query.toUpperCase())"
-      class="text-sm italic text-basalt dark:text-granite"
+      class="mt-['-4'] text-sm italic text-granite dark:text-granite"
       :markdown="stripMarkdownTables(result.highlighted)"
     />
-    <!-- include article source -->
-    <div class="text-sm">(from {{ result.document.name }})</div>
   </li>
 </template>
 
@@ -70,9 +78,15 @@ const endpoints = {
 
 const formatUrl = (input) => {
   let baseUrl = endpoints[input.object_model] ?? input.object_model;
+
+  // subclass urls must be prepended by their base-class
   if (input?.object?.subclass_of) baseUrl += `/${input.object.subclass_of.key}`;
-  baseUrl += `/${input.object_pk}`;
-  return baseUrl;
+
+  // subraces link to their base-race
+  if (input?.object?.subrace_of)
+    return `${baseUrl}/${input.object.subrace_of.key}`;
+
+  return `${baseUrl}/${input.object_pk}`;
 };
 
 const formatCategory = (input) => {
@@ -83,6 +97,8 @@ const formatCategory = (input) => {
       return `${input.object.subclass_of.name} Subclass`;
     return 'Class';
   }
+  if (input?.object?.subrace_of)
+    return `${input.object.subrace_of.name} Subrace`;
 
   return category; // base-case: return category without substitutions
 };

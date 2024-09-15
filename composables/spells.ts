@@ -52,3 +52,17 @@ const SPELL_LEVELS_NAMES = [
   '8th-level',
   '9th-level',
 ] as const;
+
+interface IUseFormatSpellSubtitle {
+  level: number | undefined;
+  school: string | undefined;
+}
+export const useFormatSpellSubtitle = ({
+  level,
+  school,
+}: IUseFormatSpellSubtitle) => {
+  const spellType = `${school} ${level && level > 0 ? 'Spell' : 'Cantrip'}`;
+  if (!level) return spellType;
+  const spellLevel = level > 0 ? SPELL_LEVELS_NAMES[level] + ' ' : '';
+  return spellLevel + spellType;
+};
