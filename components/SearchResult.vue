@@ -45,7 +45,7 @@
     <!-- include snipet if query text is not part of article title -->
     <md-viewer
       v-if="!result.object_name.toUpperCase().includes(query.toUpperCase())"
-      class="mt-['-4'] text-sm italic text-granite dark:text-granite"
+      class="text-sm italic text-granite dark:text-granite"
       :markdown="stripMarkdownTables(result.highlighted)"
     />
   </li>
@@ -65,6 +65,7 @@ function stripMarkdownTables(text) {
     .replace(/-{3,}/g, ''); // Remove three or more hyphens
 }
 
+// Look-up Table: mapping API endpoints to website routes
 const endpoints = {
   Creature: 'monsters',
   Spell: 'spells',
@@ -76,6 +77,7 @@ const endpoints = {
   CharacterClass: 'classes',
 };
 
+// Takes a search result and generates its URL on the Open5e website
 const formatUrl = (input) => {
   let baseUrl = endpoints[input.object_model] ?? input.object_model;
 
@@ -89,18 +91,23 @@ const formatUrl = (input) => {
   return `${baseUrl}/${input.object_pk}`;
 };
 
+// Takes the API endpoint a result is pulled from and returns
 const formatCategory = (input) => {
+  // Insert spaces into PascalCase text
   const category = input.object_model.match(/[A-Z][a-z]+/g).join(' ');
+  // Creatures -> Monsters
   if (category === 'Creature') return 'Monster';
+  // Character Class -> Class OR [CLASS] Subclass
   if (category === 'Character Class') {
     if (input?.object?.subclass_of)
       return `${input.object.subclass_of.name} Subclass`;
-    return 'Class';
+    else return 'Class';
   }
+  // Race -> Race OR [RACE] Subrace
   if (input?.object?.subrace_of)
     return `${input.object.subrace_of.name} Subrace`;
 
-  return category; // base-case: return category without substitutions
+  return category; // BASE-CASE: return category without alteration
 };
 </script>
 
