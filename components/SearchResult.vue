@@ -15,7 +15,10 @@
 
     <!-- Row subtitle -->
 
-    <div v-if="result.object_model === 'Creature'" class="text-sm">
+    <div
+      v-if="result.object_model === 'Creature' && result.object?.cr"
+      class="text-sm"
+    >
       <span class="after:content-['_|_']">CR {{ result.object.cr }}</span>
       <span>{{ `${result.object.type} (${result.object.size})` }}</span>
     </div>
@@ -97,6 +100,7 @@ const formatCategory = (input) => {
   const category = input.object_model.match(/[A-Z][a-z]+/g).join(' ');
   // Creatures -> Monsters
   if (category === 'Creature') return 'Monster';
+  if (input.object?.is_magic_item) return 'Magic Item';
   // Character Class -> Class OR [CLASS] Subclass
   if (category === 'Character Class') {
     if (input?.object?.subclass_of)
@@ -106,7 +110,6 @@ const formatCategory = (input) => {
   // Race -> Race OR [RACE] Subrace
   if (input?.object?.subrace_of)
     return `${input.object.subrace_of.name} Subrace`;
-
   return category; // BASE-CASE: return category without alteration
 };
 </script>
