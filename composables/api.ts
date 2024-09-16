@@ -275,8 +275,8 @@ export const useSearch = (queryRef: Ref<string>) => {
     queryKey: ['search', queryRef],
     queryFn: () =>
       queryRef.value
-        ? findMany(`${API_ENDPOINTS.search}`, [], {
-            schema: 'v1',
+        ? findMany(API_ENDPOINTS.search, [], {
+            schema: 'v2',
             query: queryRef.value,
           })
         : [],

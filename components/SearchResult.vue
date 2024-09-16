@@ -4,70 +4,61 @@
   <li class="py-2 text-base">
     <!-- Row title -->
     <h3 class="mt-1 flex items-center align-middle text-xl">
-      <nuxt-link
-        tag="a"
-        :to="`${getRoute(result.object_model)}/${result.object_pk}`"
-      >
+      <nuxt-link tag="a" :to="formatUrl(result)">
         {{ result.object_name }}
       </nuxt-link>
       <span class="ml-2 font-sans text-sm uppercase text-granite">
-        {{ result.object_model.match(/[A-Z][a-z]+/g).join(' ') }}
+        {{ formatCategory(result) }}
       </span>
       <source-tag :text="result.document.key" :title="result.document.name" />
     </h3>
 
     <!-- Row subtitle -->
-    <div>
-      <span v-if="result.object_model === 'Monster'">
-        {{
-          `
-           CR ${result.object.challenge_rating} | 
-           HP ${result.object.hit_points},
-           AC ${result.object.armor_class}
-           `
-        }}
-      </span>
-      <span v-else-if="result.object_model === 'Spell'" class="capitalize">
-        {{ result.object.school }} Spell | {{ result.object.dnd_class }}
-      </span>
-      <span v-else-if="result.object_model === 'MagicItem'" class="capitalize">
-        {{ result.object.type }}, {{ result.object.rarity }}
-      </span>
+
+    <div
+      v-if="result.object_model === 'Creature' && result.object?.cr"
+      class="text-sm"
+    >
+      <span class="after:content-['_|_']">CR {{ result.object.cr }}</span>
+      <span>{{ `${result.object.type} (${result.object.size})` }}</span>
+    </div>
+
+    <div v-if="result.object_model === 'Spell'" class="text-sm capitalize">
+      {{
+        useFormatSpellSubtitle({
+          level: result.object.level,
+          school: result.object.school,
+        })
+      }}
+    </div>
+
+    <span
+      v-else-if="result.object_model === 'Item' && result.object.is_magic_item"
+      class="text-sm capitalize"
+    >
+      {{ `${result.object.type}, ${result.object.rarity}` }}
+    </span>
+
+    <!-- include article source -->
+    <div class="text-sm">
+      <span class="after:content-[':_']">Source</span>
+      <span class="font-bold">{{ result.document.name }}</span>
     </div>
 
     <!-- include snipet if query text is not part of article title -->
     <md-viewer
       v-if="!result.object_name.toUpperCase().includes(query.toUpperCase())"
-      class="text-sm italic text-basalt dark:text-granite"
+      class="text-sm italic text-granite dark:text-granite"
       :markdown="stripMarkdownTables(result.highlighted)"
     />
-    <!-- include article source -->
-    <div class="text-sm">(from {{ result.document.name }})</div>
   </li>
 </template>
 
 <script setup>
-defineProps({
-  query: {
-    type: String,
-    default: '',
-  },
-  result: {
-    type: Array,
-    default: () => [],
-  },
+const props = defineProps({
+  query: { type: String, default: '' },
+  result: { type: Object, default: () => {} },
 });
-
-const ModelToRoute = {
-  Monster: 'monsters',
-  Spell: 'spells',
-  Race: 'races',
-  Section: 'sections',
-  MagicItem: 'magic-items',
-  Feat: 'feats',
-  Background: 'backgrounds',
-  CharClass: 'classes',
-};
 
 function stripMarkdownTables(text) {
   // Remove table row markup but keep the content
@@ -77,9 +68,50 @@ function stripMarkdownTables(text) {
     .replace(/-{3,}/g, ''); // Remove three or more hyphens
 }
 
-function getRoute(model) {
-  return ModelToRoute[model] ?? 'error';
-}
+// Look-up Table: mapping API endpoints to website routes
+const endpoints = {
+  Creature: 'monsters',
+  Spell: 'spells',
+  Race: 'races',
+  Section: 'sections',
+  Item: 'magic-items',
+  Feat: 'feats',
+  Background: 'backgrounds',
+  CharacterClass: 'classes',
+};
+
+// Takes a search result and generates its URL on the Open5e website
+const formatUrl = (input) => {
+  let baseUrl = endpoints[input.object_model] ?? input.object_model;
+
+  // subclass urls must be prepended by their base-class
+  if (input?.object?.subclass_of) baseUrl += `/${input.object.subclass_of.key}`;
+
+  // subraces link to their base-race
+  if (input?.object?.subrace_of)
+    return `${baseUrl}/${input.object.subrace_of.key}`;
+
+  return `${baseUrl}/${input.object_pk}`;
+};
+
+// Takes the API endpoint a result is pulled from and returns
+const formatCategory = (input) => {
+  // Insert spaces into PascalCase text
+  const category = input.object_model.match(/[A-Z][a-z]+/g).join(' ');
+  // Creatures -> Monsters
+  if (category === 'Creature') return 'Monster';
+  if (input.object?.is_magic_item) return 'Magic Item';
+  // Character Class -> Class OR [CLASS] Subclass
+  if (category === 'Character Class') {
+    if (input?.object?.subclass_of)
+      return `${input.object.subclass_of.name} Subclass`;
+    else return 'Class';
+  }
+  // Race -> Race OR [RACE] Subrace
+  if (input?.object?.subrace_of)
+    return `${input.object.subrace_of.name} Subrace`;
+  return category; // BASE-CASE: return category without alteration
+};
 </script>
 
 <style>
