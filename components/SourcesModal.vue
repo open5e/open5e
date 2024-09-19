@@ -29,24 +29,24 @@
         <!-- CONTROL FOR SELECTING ALL / NO SOURCES -->
         <div class="serif font-bold">
           <button
-            :class="`px-2 py-1 ${
-              // toggle styles based on selected sources
+            class="px-2 py-1"
+            :class="
               allSourcesSelected()
                 ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
                 : ` text-blood hover:text-red-800 dark:hover:text-red-400`
-            }`"
+            "
             @click="selectAll()"
           >
             All
           </button>
 
           <button
-            :class="`px-2 py-1 ${
-              // toggle styles based on selected sources
+            class="px-2 py-1"
+            :class="
               selectedSources.length === 0
                 ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
                 : ` text-blood hover:text-red-800 dark:hover:text-red-400 `
-            }`"
+            "
             @click="deselectAll()"
           >
             None
@@ -68,23 +68,25 @@
             </h3>
             <!-- Button for adding all src by publisher to selected srcs -->
             <button
-              :class="`px-2 py-1 font-bold  ${
+              class="px-2 py-1 font-bold"
+              :class="
                 selectedSourcesByPublisher(organization) ===
                 countSourcesByPublisher(organization)
                   ? `before:mr-1 before:content-['✓']`
                   : `text-blood hover:text-red-800 dark:hover:text-red-400`
-              }`"
+              "
               @click="addPublisher(organization)"
             >
               All
             </button>
             <!-- Button for removing all srcs by publisher to selected srcs -->
             <button
-              :class="`0 px-2 py-1 font-bold ${
+              class="px-2 py-1 font-bold"
+              :class="
                 !selectedSourcesByPublisher(organization)
                   ? `before:mr-1 before:content-['✓']`
                   : `dark:hover:text-red-40 text-blood hover:text-red-800`
-              }`"
+              "
               @click="removePublisher(organization)"
             >
               None
@@ -94,7 +96,6 @@
           <!-- Sources by Organisation -->
           <ul
             v-for="document in publications"
-            v-show="!currentRuleset || document.ruleset.name === currentRuleset"
             :key="document.key"
             class="relative flex items-start"
           >
@@ -157,25 +158,36 @@ const { data: documents } = useDocuments({
   fields: ['key', 'name', 'publisher', 'ruleset'].join(','),
 });
 
+const documentsInRuleset = computed(() => {
+  if (!currentRuleset.value) return documents.value;
+  return documents?.value.filter((document) => {
+    return document.ruleset.name === currentRuleset.value;
+  });
+});
+
 const groupedDocuments = computed(() => {
-  const docs = documents.value ?? [];
+  const docs = documentsInRuleset.value ?? [];
   return docs.reduce((grouped, document) => {
-    (grouped[document.publisher.name] =
-      grouped[document.publisher.name] || []).push(document);
+    const publisher = document.publisher.name;
+    if (grouped[publisher]) grouped[publisher].push(document);
+    else grouped[publisher] = [document];
     return grouped;
   }, {});
 });
 
+// component state: stores current ruleset
 const currentRuleset = ref(ruleset.value);
+
 // returns the names of all rulesets present in API data
 const allRulesets = computed(() => {
   return documents?.value?.reduce((rulesets, document) => {
-    if (!rulesets.includes(document.ruleset.name)) {
+    if (!rulesets.includes(document.ruleset.name))
       return [...rulesets, document.ruleset.name];
-    } else return rulesets;
+    else return rulesets;
   }, []);
 });
 
+// handler for changing ruleset selecter, updates ruleset/sources cmpnt state
 const onRulesetChanged = (event) => {
   const newRuleset = event.target.value;
   currentRuleset.value = newRuleset;
@@ -187,6 +199,7 @@ const onRulesetChanged = (event) => {
   selectedSources.value = newSources;
 };
 
+// save current form selection to local memory
 function saveSelection() {
   setSources(selectedSources.value);
   setRuleset(currentRuleset.value);
@@ -194,13 +207,9 @@ function saveSelection() {
 }
 
 function addPublisher(publisher) {
-  const sourcesByPublisher = groupedDocuments.value[publisher].map(
-    (source) => source.key
-  );
-
-  const sourcesToAdd = sourcesByPublisher.filter(
-    (source) => !selectedSources.value.includes(source)
-  );
+  const sourcesToAdd = groupedDocuments.value[publisher]
+    .map((source) => source.key)
+    .filter((source) => !selectedSources.value.includes(source));
   selectedSources.value = [...selectedSources.value, ...sourcesToAdd];
 }
 
@@ -229,12 +238,14 @@ function selectedSourcesByPublisher(publisher) {
   return currentSources.length;
 }
 
-function allSourcesSelected() {
-  return selectedSources.value.length === documents.value.length;
-}
+const allSourcesSelected = () => {
+  const selected = selectedSources.value.length;
+  const total = documentsInRuleset.value.length;
+  return selected === total;
+};
 
 function selectAll() {
-  selectedSources.value = documents.value.map((doc) => doc.key);
+  selectedSources.value = documentsInRuleset.value.map((doc) => doc.key);
 }
 
 const deselectAll = () => (selectedSources.value = []);
