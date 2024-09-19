@@ -177,12 +177,11 @@ const allRulesets = computed(() => {
 });
 
 const onRulesetChanged = (event) => {
-  const ruleset = event.target.value;
-  if (allRulesets.value.includes(ruleset)) currentRuleset.value = ruleset;
-  else currentRuleset.value = '';
+  const newRuleset = event.target.value;
+  currentRuleset.value = newRuleset;
   const newSources = documents.value
     .filter(
-      (source) => !currentRuleset.value || source.ruleset.name === ruleset
+      (source) => !currentRuleset.value || source.ruleset.name === newRuleset
     )
     .map((source) => source.key);
   selectedSources.value = newSources;
