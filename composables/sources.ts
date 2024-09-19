@@ -12,13 +12,13 @@ const _sources = ref<string[]>(loadSourcesFromLocalStorage());
 
 const loadRulesetFromStorage = () => {
   if (!import.meta.client) return '';
-  return localStorage.getItem('ruleset') ?? '';
+  return localStorage.getItem('ruleset');
 };
 
 const writeRulesetToStorage = (input: string) =>
   localStorage.setItem('ruleset', input);
 
-const ruleset = ref<string>(loadRulesetFromStorage());
+const ruleset = ref<string | null>(loadRulesetFromStorage());
 
 const setRuleset = (input: string) => {
   ruleset.value = input;

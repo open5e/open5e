@@ -14,7 +14,7 @@
             name="ruleset"
             @change="onRulesetChanged"
           >
-            <option>–</option>
+            <option :value="''">–</option>
             <option
               v-for="rulesetOption in allRulesets"
               :key="rulesetOption"
@@ -166,8 +166,7 @@ const groupedDocuments = computed(() => {
   }, {});
 });
 
-const currentRuleset = ruleset;
-
+const currentRuleset = ref(ruleset.value);
 // returns the names of all rulesets present in API data
 const allRulesets = computed(() => {
   return documents?.value?.reduce((rulesets, document) => {
@@ -180,7 +179,7 @@ const allRulesets = computed(() => {
 const onRulesetChanged = (event) => {
   const ruleset = event.target.value;
   if (allRulesets.value.includes(ruleset)) currentRuleset.value = ruleset;
-  else currentRuleset.value = undefined;
+  else currentRuleset.value = '';
   const newSources = documents.value
     .filter(
       (source) => !currentRuleset.value || source.ruleset.name === ruleset
