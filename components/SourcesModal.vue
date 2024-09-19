@@ -26,8 +26,8 @@
           </select>
         </div>
 
-        <!-- CONTROL FOR SELECTING ALL / NO SOURCES -->
         <div class="serif font-bold">
+          <!-- SELECT ALL SOURCES -->
           <button
             class="px-2 py-1"
             :class="
@@ -35,11 +35,12 @@
                 ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
                 : ` text-blood hover:text-red-800 dark:hover:text-red-400`
             "
-            @click="selectAll()"
+            @click="selectAllInRuleset()"
           >
             All
           </button>
 
+          <!-- DESELECT ALL SOURCES -->
           <button
             class="px-2 py-1"
             :class="
@@ -53,6 +54,7 @@
           </button>
         </div>
       </div>
+
       <!-- MODAL MENU BODY -->
       <fieldset class="mt-1">
         <legend class="sr-only">Source Selection</legend>
@@ -149,15 +151,16 @@
 
 <script setup>
 const { sources, setSources, ruleset, setRuleset } = useSourcesList();
+const selectedSources = ref(sources.value);
 
 const emit = defineEmits(['close']);
 const closeModal = () => emit('close');
 
-const selectedSources = ref(sources.value);
 const { data: documents } = useDocuments({
   fields: ['key', 'name', 'publisher', 'ruleset'].join(','),
 });
 
+// filter documents by the current ruleset
 const documentsInRuleset = computed(() => {
   if (!currentRuleset.value) return documents.value;
   return documents?.value.filter((document) => {
@@ -165,6 +168,7 @@ const documentsInRuleset = computed(() => {
   });
 });
 
+// group filtered documents by publisher
 const groupedDocuments = computed(() => {
   const docs = documentsInRuleset.value ?? [];
   return docs.reduce((grouped, document) => {
@@ -175,7 +179,7 @@ const groupedDocuments = computed(() => {
   }, {});
 });
 
-// component state: stores current ruleset
+// state for current ruleset
 const currentRuleset = ref(ruleset.value);
 
 // returns the names of all rulesets present in API data
@@ -191,12 +195,11 @@ const allRulesets = computed(() => {
 const onRulesetChanged = (event) => {
   const newRuleset = event.target.value;
   currentRuleset.value = newRuleset;
-  const newSources = documents.value
-    .filter(
-      (source) => !currentRuleset.value || source.ruleset.name === newRuleset
-    )
-    .map((source) => source.key);
-  selectedSources.value = newSources;
+  if (newRuleset)
+    selectedSources.value = documents.value
+      .filter((source) => source.ruleset.name === newRuleset)
+      .map((source) => source.key);
+  else selectedSources.value = documents.value.map((doc) => doc.key);
 };
 
 // save current form selection to local memory
@@ -206,6 +209,7 @@ function saveSelection() {
   closeModal();
 }
 
+// add all sources from a given publisher to allowed sources
 function addPublisher(publisher) {
   const sourcesToAdd = groupedDocuments.value[publisher]
     .map((source) => source.key)
@@ -213,19 +217,21 @@ function addPublisher(publisher) {
   selectedSources.value = [...selectedSources.value, ...sourcesToAdd];
 }
 
+// remove all sources from a given publisher from allowed sources
 function removePublisher(publisher) {
   const sourcesByPublisher = groupedDocuments.value[publisher].map(
     (source) => source.key
   );
-
   selectedSources.value = selectedSources.value.filter(
     (source) => !sourcesByPublisher.includes(source)
   );
 }
 
+// returns number of sources by a given publisher
 const countSourcesByPublisher = (publisher) =>
   groupedDocuments.value[publisher]?.length || 0;
 
+// returns how many sources are selected from a given publisher
 function selectedSourcesByPublisher(publisher) {
   // find all sources for this publisher
   const allSources = groupedDocuments.value[publisher].map(
@@ -238,13 +244,14 @@ function selectedSourcesByPublisher(publisher) {
   return currentSources.length;
 }
 
+// returns true if all sources in current ruleset are selected
 const allSourcesSelected = () => {
   const selected = selectedSources.value.length;
   const total = documentsInRuleset.value.length;
   return selected === total;
 };
 
-function selectAll() {
+function selectAllInRuleset() {
   selectedSources.value = documentsInRuleset.value.map((doc) => doc.key);
 }
 
