@@ -16,11 +16,12 @@
           >
             <option>–</option>
             <option
-              v-for="ruleset in allRulesets"
-              :key="ruleset"
-              :value="ruleset"
+              v-for="rulesetOption in allRulesets"
+              :key="rulesetOption"
+              :value="rulesetOption"
+              :selected="rulesetOption === currentRuleset"
             >
-              {{ ruleset }}
+              {{ rulesetOption }}
             </option>
           </select>
         </div>
@@ -146,7 +147,7 @@
 </template>
 
 <script setup>
-const { sources, setSources } = useSourcesList();
+const { sources, setSources, ruleset, setRuleset } = useSourcesList();
 
 const emit = defineEmits(['close']);
 const closeModal = () => emit('close');
@@ -165,7 +166,7 @@ const groupedDocuments = computed(() => {
   }, {});
 });
 
-const currentRuleset = ref(undefined);
+const currentRuleset = ruleset;
 
 // returns the names of all rulesets present in API data
 const allRulesets = computed(() => {
@@ -190,6 +191,7 @@ const onRulesetChanged = (event) => {
 
 function saveSelection() {
   setSources(selectedSources.value);
+  setRuleset(currentRuleset.value);
   closeModal();
 }
 
