@@ -12,9 +12,14 @@
             id="ruleset"
             class="border-b-2 border-smoke bg-transparent text-sm"
             name="ruleset"
+            @change="onRulesetChanged"
           >
             <option>–</option>
-            <option v-for="ruleset in rulesets" :key="ruleset" :value="ruleset">
+            <option
+              v-for="ruleset in allRulesets"
+              :key="ruleset"
+              :value="ruleset"
+            >
               {{ ruleset }}
             </option>
           </select>
@@ -88,6 +93,7 @@
           <!-- Sources by Organisation -->
           <ul
             v-for="document in publications"
+            v-show="!currentRuleset || document.ruleset.name === currentRuleset"
             :key="document.key"
             class="relative flex items-start"
           >
@@ -140,9 +146,10 @@
 </template>
 
 <script setup>
-import SourceTag from '~/components/SourceTag.vue';
 const { sources, setSources } = useSourcesList();
+
 const emit = defineEmits(['close']);
+const closeModal = () => emit('close');
 
 const selectedSources = ref(sources.value);
 const { data: documents } = useDocuments({
@@ -158,8 +165,10 @@ const groupedDocuments = computed(() => {
   }, {});
 });
 
+const currentRuleset = ref(undefined);
+
 // returns the names of all rulesets present in API data
-const rulesets = computed(() => {
+const allRulesets = computed(() => {
   return documents?.value?.reduce((rulesets, document) => {
     if (!rulesets.includes(document.ruleset.name)) {
       return [...rulesets, document.ruleset.name];
@@ -167,7 +176,17 @@ const rulesets = computed(() => {
   }, []);
 });
 
-const closeModal = () => emit('close');
+const onRulesetChanged = (event) => {
+  const ruleset = event.target.value;
+  if (allRulesets.value.includes(ruleset)) currentRuleset.value = ruleset;
+  else currentRuleset.value = undefined;
+  const newSources = documents.value
+    .filter(
+      (source) => !currentRuleset.value || source.ruleset.name === ruleset
+    )
+    .map((source) => source.key);
+  selectedSources.value = newSources;
+};
 
 function saveSelection() {
   setSources(selectedSources.value);
@@ -195,9 +214,8 @@ function removePublisher(publisher) {
   );
 }
 
-function countSourcesByPublisher(publisher) {
-  return groupedDocuments.value[publisher]?.length || 0;
-}
+const countSourcesByPublisher = (publisher) =>
+  groupedDocuments.value[publisher]?.length || 0;
 
 function selectedSourcesByPublisher(publisher) {
   // find all sources for this publisher
