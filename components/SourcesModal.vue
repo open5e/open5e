@@ -2,8 +2,25 @@
   <modal-dialog @close="closeModal()">
     <slot>
       <!-- MODAL MENU TITLE BAR -->
-      <div class="flex w-full justify-between border-b-4 border-red-400">
-        <h2 class="mt-0 pb-2">Select Sources</h2>
+      <div class="flex w-full justify-between border-b-4 border-blood">
+        <h2 class="my-2">Sources</h2>
+
+        <!--  RULESET SELECTOR -->
+        <div class="my-1 grid">
+          <label class="font-serif text-sm">Ruleset</label>
+          <select
+            id="ruleset"
+            class="border-b-2 border-smoke bg-transparent text-sm"
+            name="ruleset"
+          >
+            <option>–</option>
+            <option v-for="ruleset in rulesets" :key="ruleset" :value="ruleset">
+              {{ ruleset }}
+            </option>
+          </select>
+        </div>
+
+        <!-- CONTROL FOR SELECTING ALL / NO SOURCES -->
         <div class="serif font-bold">
           <button
             :class="`px-2 py-1 ${
@@ -14,7 +31,7 @@
             }`"
             @click="selectAll()"
           >
-            <span>All</span>
+            All
           </button>
 
           <button
@@ -26,7 +43,7 @@
             }`"
             @click="deselectAll()"
           >
-            <span>None</span>
+            None
           </button>
         </div>
       </div>
@@ -141,9 +158,17 @@ const groupedDocuments = computed(() => {
   }, {});
 });
 
-function closeModal() {
-  emit('close'); // emits a 'close' event to the parent component
-}
+// returns the names of all rulesets present in API data
+const rulesets = computed(() => {
+  return documents?.value?.reduce((rulesets, document) => {
+    if (!rulesets.includes(document.ruleset.name)) {
+      return [...rulesets, document.ruleset.name];
+    } else return rulesets;
+  }, []);
+});
+
+const closeModal = () => emit('close');
+
 function saveSelection() {
   setSources(selectedSources.value);
   closeModal();
@@ -170,23 +195,6 @@ function removePublisher(publisher) {
   );
 }
 
-function togglePublisher(publisher) {
-  const sourcesByPublisher = groupedDocuments.value[publisher].map(
-    (source) => source.key // get slugs for sources by publisher
-  );
-
-  if (selectedSourcesByPublisher(publisher)) {
-    selectedSources.value = selectedSources.value.filter(
-      (source) => !sourcesByPublisher.includes(source)
-    );
-  } else {
-    const sourcesToAdd = sourcesByPublisher.filter(
-      (source) => !selectedSources.value.includes(source)
-    );
-    selectedSources.value = [...selectedSources.value, ...sourcesToAdd]; // combine checked & unchecked sources
-  }
-}
-
 function countSourcesByPublisher(publisher) {
   return groupedDocuments.value[publisher]?.length || 0;
 }
@@ -211,7 +219,5 @@ function selectAll() {
   selectedSources.value = documents.value.map((doc) => doc.key);
 }
 
-function deselectAll() {
-  selectedSources.value = [];
-}
+const deselectAll = () => (selectedSources.value = []);
 </script>
