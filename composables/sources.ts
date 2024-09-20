@@ -10,6 +10,21 @@ function writeSourcesToLocalStorage(sourcesList: string[]) {
 
 const _sources = ref<string[]>(loadSourcesFromLocalStorage());
 
+const loadRulesetFromStorage = () => {
+  if (!import.meta.client) return '';
+  return localStorage.getItem('ruleset');
+};
+
+const writeRulesetToStorage = (input: string) =>
+  localStorage.setItem('ruleset', input);
+
+const ruleset = ref<string | null>(loadRulesetFromStorage());
+
+const setRuleset = (input: string) => {
+  ruleset.value = input;
+  writeRulesetToStorage(input);
+};
+
 /* _sourcesV1 maps Document keys from API V2 onto their V1 equivalents. This
  * has been added so that we can move the /documents endpoint over to V2 w/o
  * breaking the seleciton by source functionality for routes pulling from V1.
@@ -47,6 +62,8 @@ export const read_only_source_list = computed(() => _sources.value);
 export const useSourcesList = () => ({
   /** List of source tags */
   sources: read_only_source_list,
+  ruleset,
+  setRuleset,
   setSources,
   sourcesAPIVersion1: _sourcesV1,
 });

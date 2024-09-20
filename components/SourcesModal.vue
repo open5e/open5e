@@ -2,34 +2,59 @@
   <modal-dialog @close="closeModal()">
     <slot>
       <!-- MODAL MENU TITLE BAR -->
-      <div class="flex w-full justify-between border-b-4 border-red-400">
-        <h2 class="mt-0 pb-2">Select Sources</h2>
+      <div class="flex w-full justify-between border-b-4 border-blood">
+        <h2 class="my-2">Sources</h2>
+
+        <!--  RULESET SELECTOR -->
+        <div class="my-1 grid">
+          <label class="font-serif text-sm">Ruleset</label>
+          <select
+            id="ruleset"
+            class="border-b-2 border-smoke bg-transparent text-sm"
+            name="ruleset"
+            @change="onRulesetChanged"
+          >
+            <option :value="''">–</option>
+            <option
+              v-for="rulesetOption in allRulesets"
+              :key="rulesetOption"
+              :value="rulesetOption"
+              :selected="rulesetOption === currentRuleset"
+            >
+              {{ rulesetOption }}
+            </option>
+          </select>
+        </div>
+
         <div class="serif font-bold">
+          <!-- SELECT ALL SOURCES -->
           <button
-            :class="`px-2 py-1 ${
-              // toggle styles based on selected sources
+            class="px-2 py-1"
+            :class="
               allSourcesSelected()
                 ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
                 : ` text-blood hover:text-red-800 dark:hover:text-red-400`
-            }`"
-            @click="selectAll()"
+            "
+            @click="selectAllInRuleset()"
           >
-            <span>All</span>
+            All
           </button>
 
+          <!-- DESELECT ALL SOURCES -->
           <button
-            :class="`px-2 py-1 ${
-              // toggle styles based on selected sources
+            class="px-2 py-1"
+            :class="
               selectedSources.length === 0
                 ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
                 : ` text-blood hover:text-red-800 dark:hover:text-red-400 `
-            }`"
+            "
             @click="deselectAll()"
           >
-            <span>None</span>
+            None
           </button>
         </div>
       </div>
+
       <!-- MODAL MENU BODY -->
       <fieldset class="mt-1">
         <legend class="sr-only">Source Selection</legend>
@@ -45,23 +70,25 @@
             </h3>
             <!-- Button for adding all src by publisher to selected srcs -->
             <button
-              :class="`px-2 py-1 font-bold  ${
+              class="px-2 py-1 font-bold"
+              :class="
                 selectedSourcesByPublisher(organization) ===
                 countSourcesByPublisher(organization)
                   ? `before:mr-1 before:content-['✓']`
                   : `text-blood hover:text-red-800 dark:hover:text-red-400`
-              }`"
+              "
               @click="addPublisher(organization)"
             >
               All
             </button>
             <!-- Button for removing all srcs by publisher to selected srcs -->
             <button
-              :class="`0 px-2 py-1 font-bold ${
+              class="px-2 py-1 font-bold"
+              :class="
                 !selectedSourcesByPublisher(organization)
                   ? `before:mr-1 before:content-['✓']`
                   : `dark:hover:text-red-40 text-blood hover:text-red-800`
-              }`"
+              "
               @click="removePublisher(organization)"
             >
               None
@@ -123,74 +150,88 @@
 </template>
 
 <script setup>
-import SourceTag from '~/components/SourceTag.vue';
-const { sources, setSources } = useSourcesList();
-const emit = defineEmits(['close']);
-
+const { sources, setSources, ruleset, setRuleset } = useSourcesList();
 const selectedSources = ref(sources.value);
+
+const emit = defineEmits(['close']);
+const closeModal = () => emit('close');
+
 const { data: documents } = useDocuments({
   fields: ['key', 'name', 'publisher', 'ruleset'].join(','),
 });
 
+// filter documents by the current ruleset
+const documentsInRuleset = computed(() => {
+  if (!currentRuleset.value) return documents.value;
+  return documents?.value.filter((document) => {
+    return document.ruleset.name === currentRuleset.value;
+  });
+});
+
+// group filtered documents by publisher
 const groupedDocuments = computed(() => {
-  const docs = documents.value ?? [];
+  const docs = documentsInRuleset.value ?? [];
   return docs.reduce((grouped, document) => {
-    (grouped[document.publisher.name] =
-      grouped[document.publisher.name] || []).push(document);
+    const publisher = document.publisher.name;
+    if (grouped[publisher]) grouped[publisher].push(document);
+    else grouped[publisher] = [document];
     return grouped;
   }, {});
 });
 
-function closeModal() {
-  emit('close'); // emits a 'close' event to the parent component
-}
+// state for current ruleset
+const currentRuleset = ref(ruleset.value);
+
+// returns the names of all rulesets present in API data
+const allRulesets = computed(() => {
+  return documents?.value?.reduce((rulesets, document) => {
+    if (!rulesets.includes(document.ruleset.name))
+      return [...rulesets, document.ruleset.name];
+    else return rulesets;
+  }, []);
+});
+
+// handler for changing ruleset selecter, updates ruleset/sources cmpnt state
+const onRulesetChanged = (event) => {
+  const newRuleset = event.target.value;
+  currentRuleset.value = newRuleset;
+  if (newRuleset)
+    selectedSources.value = documents.value
+      .filter((source) => source.ruleset.name === newRuleset)
+      .map((source) => source.key);
+  else selectedSources.value = documents.value.map((doc) => doc.key);
+};
+
+// save current form selection to local memory
 function saveSelection() {
   setSources(selectedSources.value);
+  setRuleset(currentRuleset.value);
   closeModal();
 }
 
+// add all sources from a given publisher to allowed sources
 function addPublisher(publisher) {
-  const sourcesByPublisher = groupedDocuments.value[publisher].map(
-    (source) => source.key
-  );
-
-  const sourcesToAdd = sourcesByPublisher.filter(
-    (source) => !selectedSources.value.includes(source)
-  );
+  const sourcesToAdd = groupedDocuments.value[publisher]
+    .map((source) => source.key)
+    .filter((source) => !selectedSources.value.includes(source));
   selectedSources.value = [...selectedSources.value, ...sourcesToAdd];
 }
 
+// remove all sources from a given publisher from allowed sources
 function removePublisher(publisher) {
   const sourcesByPublisher = groupedDocuments.value[publisher].map(
     (source) => source.key
   );
-
   selectedSources.value = selectedSources.value.filter(
     (source) => !sourcesByPublisher.includes(source)
   );
 }
 
-function togglePublisher(publisher) {
-  const sourcesByPublisher = groupedDocuments.value[publisher].map(
-    (source) => source.key // get slugs for sources by publisher
-  );
+// returns number of sources by a given publisher
+const countSourcesByPublisher = (publisher) =>
+  groupedDocuments.value[publisher]?.length || 0;
 
-  if (selectedSourcesByPublisher(publisher)) {
-    selectedSources.value = selectedSources.value.filter(
-      (source) => !sourcesByPublisher.includes(source)
-    );
-  } else {
-    const sourcesToAdd = sourcesByPublisher.filter(
-      (source) => !selectedSources.value.includes(source)
-    );
-    selectedSources.value = [...selectedSources.value, ...sourcesToAdd]; // combine checked & unchecked sources
-  }
-}
-
-function countSourcesByPublisher(publisher) {
-  return groupedDocuments.value[publisher]?.length || 0;
-}
-
+// returns how many sources are selected from a given publisher
 function selectedSourcesByPublisher(publisher) {
   // find all sources for this publisher
   const allSources = groupedDocuments.value[publisher].map(
@@ -203,15 +244,16 @@ function selectedSourcesByPublisher(publisher) {
   return currentSources.length;
 }
 
-function allSourcesSelected() {
-  return selectedSources.value.length === documents.value.length;
+// returns true if all sources in current ruleset are selected
+const allSourcesSelected = () => {
+  const selected = selectedSources.value.length;
+  const total = documentsInRuleset.value.length;
+  return selected === total;
+};
+
+function selectAllInRuleset() {
+  selectedSources.value = documentsInRuleset.value.map((doc) => doc.key);
 }
 
-function selectAll() {
-  selectedSources.value = documents.value.map((doc) => doc.key);
-}
-
-function deselectAll() {
-  selectedSources.value = [];
-}
+const deselectAll = () => (selectedSources.value = []);
 </script>
