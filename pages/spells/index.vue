@@ -33,8 +33,10 @@
           sortValue: 'school',
         },
         {
-          displayName: 'Components',
-          value: (data) => formatComponents(data),
+          displayName: 'Classes',
+          value: (data) => {
+            return data.classes.map((c) => c.name).join(', ');
+          },
         },
         {
           displayName: 'Concentration',
@@ -54,17 +56,7 @@
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fields to fetch from API to populate table
-const fields = [
-  'name',
-  'document',
-  'level',
-  'school',
-  'verbal',
-  'material',
-  'material_consumed',
-  'somatic',
-  'concentration',
-];
+const fields = ['name', 'document', 'level', 'school', 'verbal', 'classes'];
 
 // Fetch a page of results and pagination controls
 const { data, paginator } = useFindPaginated({
@@ -77,20 +69,4 @@ const { data, paginator } = useFindPaginated({
 // destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
   paginator;
-
-// helper function for formatting spell components
-const formatComponents = (data) => {
-  const { verbal, somatic, material, material_consumed: consumed } = data;
-  let components = [];
-  if (verbal) {
-    components.push('V');
-  }
-  if (somatic) {
-    components.push('S');
-  }
-  if (material) {
-    components.push(consumed ? 'M*' : 'M');
-  }
-  return components.join(', ');
-};
 </script>
