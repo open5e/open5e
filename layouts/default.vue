@@ -135,16 +135,6 @@ const title = computed(() => {
 });
 useHead({ title: title });
 
-const spellcastingClasses = [
-  { name: 'Spells by Class', slug: 'by-class' },
-  { name: 'Bard Spells', slug: 'by-class/bard' },
-  { name: 'Cleric Spells', slug: 'by-class/cleric' },
-  { name: 'Druid Spells', slug: 'by-class/druid' },
-  { name: 'Paladin Spells', slug: 'by-class/paladin' },
-  { name: 'Ranger Spells', slug: 'by-class/ranger' },
-  { name: 'Wizard Spells', slug: 'by-class/wizard' },
-  { name: 'Warlock Spells', slug: 'by-class/warlock' },
-];
 const showSidebar = ref(false);
 
 const $route = useRoute();
@@ -193,7 +183,6 @@ const routes = computed(() => [
   {
     title: 'Spells',
     route: '/spells',
-    subroutes: spellcastingClasses,
   },
 
   {
