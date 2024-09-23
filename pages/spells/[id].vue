@@ -9,7 +9,9 @@
         {{ `Level ${spell.level} ${spell.school.name} spell` }}
       </span>
       <span v-if="spell.ritual"> (ritual)</span>
-      <span> | {{ spell.dnd_class }} </span>
+      <span v-if="spell.classes.length > 0" class="before:content-['_|_']">
+        {{ spell.classes.map((c) => c.name).join(', ') }}
+      </span>
       <source-tag
         v-show="spell.document.key"
         :title="spell.document.name"

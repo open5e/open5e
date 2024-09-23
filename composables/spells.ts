@@ -40,7 +40,7 @@ export const useAllSpells = async (params: Record<string, any> = {}) => {
   return await useFindMany(API_ENDPOINTS.spells, params); // This will now use v2/spells
 };
 
-const SPELL_LEVELS_NAMES = [
+export const SPELL_LEVELS_NAMES = [
   'Cantrip',
   '1st-level',
   '2nd-level',
@@ -70,4 +70,22 @@ export const useFormatSpellSubtitle = ({
   const spellType = `${school} ${level && level > 0 ? 'Spell' : 'Cantrip'}`;
   const spellLevel = level > 0 ? SPELL_LEVELS_NAMES[level] + ' ' : '';
   return spellLevel + spellType;
+};
+
+export type SpellFilter = {
+  name__contains?: string;
+  level?: number;
+  school?: string;
+  classes__key__in?: string;
+};
+
+export const DefaultSpellFilter: Readonly<SpellFilter> = {
+  name__contains: '',
+  level: undefined,
+  school: undefined,
+  classes__key__in: undefined,
+};
+
+export const copySpellFilter = (): SpellFilter => {
+  return { ...DefaultSpellFilter };
 };
