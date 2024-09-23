@@ -13,8 +13,8 @@
     </div>
 
     <!-- SEARCH FILTERS -->
-    <div class="my-2 flex flex-wrap items-end justify-between gap-4">
-      <div class="relative">
+    <div class="my-2 flex items-end justify-between gap-1 md:gap-4">
+      <div class="relative border-b-2 border-red-400">
         <icon
           name="majesticons:search-line"
           class="absolute bottom-1.5 mr-2 h-4 w-4"
@@ -23,8 +23,8 @@
           id="spellName"
           default=""
           name="spellName"
-          placeholder="Search by spell name..."
-          class="border-b-2 border-red-400 bg-transparent pl-6"
+          placeholder="Search..."
+          class="w-20 bg-transparent pl-6 outline-none transition-colors focus:w-auto focus:bg-fog dark:focus:bg-basalt sm:w-auto"
           @input="update('name__contains', $event.target.value)"
         />
       </div>
@@ -33,7 +33,7 @@
         <select
           id="spellLevel"
           name="spellLevel"
-          class="bg-transparent text-center"
+          class="cursor-pointer bg-transparent fill-red text-center"
           value=""
           @input="update('level', $event.target.value)"
         >
@@ -52,7 +52,7 @@
         <select
           id="spellSchool"
           name="spellSchool"
-          class="bg-transparent"
+          class="cursor-pointer bg-transparent"
           @input="update('school__key', $event.target.value)"
         >
           <option value="">-</option>
@@ -79,10 +79,10 @@
         <select
           id="spellClassList"
           name="spellClassList"
-          class="bg-transparent"
+          class="cursor-pointer bg-transparent"
           @input="update('classes__key__in', $event.target.value)"
         >
-          <option value="" class="text-smoke">-</option>
+          <option value="" selected>-</option>
           <option
             v-for="charClass in [
               'Bard',
