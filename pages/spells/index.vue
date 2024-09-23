@@ -13,7 +13,7 @@
     </div>
 
     <!-- SEARCH FILTERS -->
-    <div class="flex gap-3 py-1">
+    <div class="my-2 flex flex-wrap items-end justify-between gap-4">
       <div class="relative">
         <icon
           name="majesticons:search-line"
@@ -28,69 +28,77 @@
           @input="update('name__contains', $event.target.value)"
         />
       </div>
-
-      <select
-        id="spellLevel"
-        name="spellLevel"
-        class="bg-transparent text-center"
-        value=""
-        @input="update('level', $event.target.value)"
-      >
-        <option value="" default>–</option>
-        <option
-          v-for="level in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
-          :key="level"
-          :value="level"
+      <div class="grid columns-1 justify-center">
+        <label class="font-serif text-xs" for="spellLevel">Level</label>
+        <select
+          id="spellLevel"
+          name="spellLevel"
+          class="bg-transparent text-center"
+          value=""
+          @input="update('level', $event.target.value)"
         >
-          {{ SPELL_LEVELS_NAMES[level] }}
-        </option>
-      </select>
-      <select
-        id="spellSchool"
-        name="spellSchool"
-        class="bg-transparent"
-        @input="update('school__key', $event.target.value)"
-      >
-        <option value="" class="text-smoke">–</option>
-        <option
-          v-for="school in [
-            'Abjuration',
-            'Conjuration',
-            'Divination',
-            'Enchantment',
-            'Evocation',
-            'Illusion',
-            'Necromancy',
-            'Transmutation',
-          ]"
-          :key="school"
-          :value="school.toLowerCase()"
+          <option selected value="">-</option>
+          <option
+            v-for="level in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
+            :key="level"
+            :value="level"
+          >
+            {{ level }}
+          </option>
+        </select>
+      </div>
+      <div class="grid columns-1 justify-center">
+        <label class="font-serif text-xs" for="spellSchool">School</label>
+        <select
+          id="spellSchool"
+          name="spellSchool"
+          class="bg-transparent"
+          @input="update('school__key', $event.target.value)"
         >
-          {{ school }}
-        </option>
-      </select>
-      <select
-        id="spellClassList"
-        name="spellClassList"
-        class="bg-transparent"
-        @input="update('classes__key__in', $event.target.value)"
-      >
-        <option value="" class="text-smoke">-</option>
-        <option
-          v-for="charClass in [
-            'Bard',
-            'Cleric',
-            'Druid',
-            'Sorcerer',
-            'Warlock',
-            'Wizard',
-          ]"
-          :key="charClass"
-          :value="'srd_' + charClass.toLowerCase()"
+          <option value="">-</option>
+          <option
+            v-for="school in [
+              'Abjuration',
+              'Conjuration',
+              'Divination',
+              'Enchantment',
+              'Evocation',
+              'Illusion',
+              'Necromancy',
+              'Transmutation',
+            ]"
+            :key="school"
+            :value="school.toLowerCase()"
+          >
+            {{ school }}
+          </option>
+        </select>
+      </div>
+      <div class="grid columns-1 justify-center">
+        <label class="font-serif text-xs" for="spellClassList">Class</label>
+        <select
+          id="spellClassList"
+          name="spellClassList"
+          class="bg-transparent"
+          @input="update('classes__key__in', $event.target.value)"
         >
-          {{ charClass }}
-        </option>
-      </select>
+          <option value="" class="text-smoke">-</option>
+          <option
+            v-for="charClass in [
+              'Bard',
+              'Cleric',
+              'Druid',
+              'Sorcerer',
+              'Warlock',
+              'Wizard',
+            ]"
+            :key="charClass"
+            :value="'srd_' + charClass.toLowerCase()"
+          >
+            {{ charClass }}
+          </option>
+        </select>
+      </div>
     </div>
     <api-results-table
       :data="data?.results"
