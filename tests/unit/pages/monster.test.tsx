@@ -30,7 +30,7 @@ mockNuxtImport('useFindOne', () => {
         stats_expected: null,
         distance_unit: 'feet',
         publisher: 'http://localhost:8000/v2/publishers/wizards-of-the-coast/',
-        ruleset: 'http://localhost:8000/v2/rulesets/o5e/',
+        gamesystem: 'http://localhost:8000/v2/gamesystems/o5e/',
         licenses: [
           'http://localhost:8000/v2/licenses/cc-by-40/',
           'http://localhost:8000/v2/licenses/ogl-10a/',
