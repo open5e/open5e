@@ -10,19 +10,19 @@ function writeSourcesToLocalStorage(sourcesList: string[]) {
 
 const _sources = ref<string[]>(loadSourcesFromLocalStorage());
 
-const loadRulesetFromStorage = () => {
+const loadGameSystemFromStorage = () => {
   if (!import.meta.client) return '';
-  return localStorage.getItem('ruleset');
+  return localStorage.getItem('gamesystem');
 };
 
-const writeRulesetToStorage = (input: string) =>
-  localStorage.setItem('ruleset', input);
+const writeGameSystenToStorage = (input: string) =>
+  localStorage.setItem('gamesystem', input);
 
-const ruleset = ref<string | null>(loadRulesetFromStorage());
+const gameSystem = ref<string | null>(loadGameSystemFromStorage());
 
-const setRuleset = (input: string) => {
-  ruleset.value = input;
-  writeRulesetToStorage(input);
+const setGameSystem = (input: string) => {
+  gameSystem.value = input;
+  writeGameSystenToStorage(input);
 };
 
 /* _sourcesV1 maps Document keys from API V2 onto their V1 equivalents. This
@@ -62,8 +62,8 @@ export const read_only_source_list = computed(() => _sources.value);
 export const useSourcesList = () => ({
   /** List of source tags */
   sources: read_only_source_list,
-  ruleset,
-  setRuleset,
+  gameSystem,
+  setGameSystem,
   setSources,
   sourcesAPIVersion1: _sourcesV1,
 });

@@ -5,23 +5,23 @@
       <div class="flex w-full justify-between border-b-4 border-blood">
         <h2 class="my-2">Sources</h2>
 
-        <!--  RULESET SELECTOR -->
+        <!--  GAME SYSTEM SELECTOR -->
         <div class="my-1 grid">
-          <label class="font-serif text-sm">Ruleset</label>
+          <label class="font-serif text-sm">System</label>
           <select
-            id="ruleset"
+            id="system"
             class="border-b-2 border-smoke bg-transparent text-sm"
-            name="ruleset"
-            @change="onRulesetChanged"
+            name="system"
+            @change="onGameSystemChanged"
           >
             <option :value="''">–</option>
             <option
-              v-for="rulesetOption in allRulesets"
-              :key="rulesetOption"
-              :value="rulesetOption"
-              :selected="rulesetOption === currentRuleset"
+              v-for="systemOption in allGameSystems"
+              :key="systemOption"
+              :value="systemOption"
+              :selected="systemOption === currentSystem"
             >
-              {{ rulesetOption }}
+              {{ systemOption }}
             </option>
           </select>
         </div>
@@ -35,7 +35,7 @@
                 ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
                 : ` text-blood hover:text-red-800 dark:hover:text-red-400`
             "
-            @click="selectAllInRuleset()"
+            @click="selectAllInSystem()"
           >
             All
           </button>
@@ -119,10 +119,10 @@
                 <source-tag :title="document.name" :text="document.key" />
               </div>
               <span
-                v-if="document.ruleset"
+                v-if="document.gamesystem"
                 class="h-min rounded-xl bg-fog px-2 text-xs dark:bg-slate-800"
               >
-                {{ document.ruleset.name }}
+                {{ document.gamesystem.name }}
               </span>
             </li>
           </ul>
@@ -150,27 +150,27 @@
 </template>
 
 <script setup>
-const { sources, setSources, ruleset, setRuleset } = useSourcesList();
+const { sources, setSources, gameSystem, setGameSystem } = useSourcesList();
 const selectedSources = ref(sources.value);
 
 const emit = defineEmits(['close']);
 const closeModal = () => emit('close');
 
 const { data: documents } = useDocuments({
-  fields: ['key', 'name', 'publisher', 'ruleset'].join(','),
+  fields: ['key', 'name', 'publisher', 'gamesystem'].join(','),
 });
 
-// filter documents by the current ruleset
-const documentsInRuleset = computed(() => {
-  if (!currentRuleset.value) return documents.value;
+// filter documents by the current game system
+const documentsInSystem = computed(() => {
+  if (!currentSystem.value) return documents.value;
   return documents?.value.filter((document) => {
-    return document.ruleset.name === currentRuleset.value;
+    return document.gamesystem.name === currentSystem.value;
   });
 });
 
 // group filtered documents by publisher
 const groupedDocuments = computed(() => {
-  const docs = documentsInRuleset.value ?? [];
+  const docs = documentsInSystem.value ?? [];
   return docs.reduce((grouped, document) => {
     const publisher = document.publisher.name;
     if (grouped[publisher]) grouped[publisher].push(document);
@@ -179,25 +179,25 @@ const groupedDocuments = computed(() => {
   }, {});
 });
 
-// state for current ruleset
-const currentRuleset = ref(ruleset.value);
+// state for current game system
+const currentSystem = ref(gameSystem.value);
 
-// returns the names of all rulesets present in API data
-const allRulesets = computed(() => {
-  return documents?.value?.reduce((rulesets, document) => {
-    if (!rulesets.includes(document.ruleset.name))
-      return [...rulesets, document.ruleset.name];
-    else return rulesets;
+// returns the names of all game systems present in API data
+const allGameSystems = computed(() => {
+  return documents?.value?.reduce((systems, document) => {
+    if (!systems.includes(document.gamesystem.name))
+      return [...systems, document.gamesystem.name];
+    else return systems;
   }, []);
 });
 
-// handler for changing ruleset selecter, updates ruleset/sources cmpnt state
-const onRulesetChanged = (event) => {
-  const newRuleset = event.target.value;
-  currentRuleset.value = newRuleset;
-  if (newRuleset)
+// handler for changing game systems selecter, updates systems/sources cmpnt state
+const onGameSystemChanged = (event) => {
+  const newSystem = event.target.value;
+  currentSystem.value = newSystem;
+  if (newSystem)
     selectedSources.value = documents.value
-      .filter((source) => source.ruleset.name === newRuleset)
+      .filter((source) => source.gamesystem.name === newSystem)
       .map((source) => source.key);
   else selectedSources.value = documents.value.map((doc) => doc.key);
 };
@@ -205,7 +205,7 @@ const onRulesetChanged = (event) => {
 // save current form selection to local memory
 function saveSelection() {
   setSources(selectedSources.value);
-  setRuleset(currentRuleset.value);
+  setGameSystem(currentSystem.value);
   closeModal();
 }
 
@@ -244,15 +244,15 @@ function selectedSourcesByPublisher(publisher) {
   return currentSources.length;
 }
 
-// returns true if all sources in current ruleset are selected
+// returns true if all sources in current game system are selected
 const allSourcesSelected = () => {
   const selected = selectedSources.value.length;
-  const total = documentsInRuleset.value.length;
+  const total = documentsInSystem.value.length;
   return selected === total;
 };
 
-function selectAllInRuleset() {
-  selectedSources.value = documentsInRuleset.value.map((doc) => doc.key);
+function selectAllInSystem() {
+  selectedSources.value = documentsInSystem.value.map((doc) => doc.key);
 }
 
 const deselectAll = () => (selectedSources.value = []);
