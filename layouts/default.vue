@@ -128,25 +128,19 @@ import { computed } from 'vue';
 const BASE_TITLE = 'Open5e';
 const crumbs = useBreadcrumbs();
 const title = computed(() => {
-  if (crumbs.value.length === 0) {
-    return BASE_TITLE;
-  }
+  if (crumbs.value.length === 0) return BASE_TITLE;
   return `${crumbs.value.at(-1).title} – ${BASE_TITLE}`;
 });
 useHead({ title: title });
 
 const showSidebar = ref(false);
-
-const $route = useRoute();
-
-const searchText = ref($route.query.text);
-
+const route = useRoute();
 watch(
-  () => $route.path,
-  () => {
-    showSidebar.value = false;
-  }
+  () => route.path,
+  () => (showSidebar.value = false)
 );
+
+const searchText = ref(route.query.text);
 
 const showModal = ref(false);
 const { sources } = useSourcesList();
@@ -157,15 +151,6 @@ const { data: classes } = useFindMany(API_ENDPOINTS.classes, {
   fields: ['name', 'key'].join(),
   is_subclass: false,
 });
-const { data: combat_sections } = useSections('Combat');
-const { data: equipment_sections } = useSections('Equipment');
-const { data: gameplay_sections } = useSections('Gameplay Mechanics');
-const { data: rules_sections } = useSections('Rules');
-
-const { data: character_sections } = useSections(
-  'Characters',
-  'Character Advancement'
-);
 
 const no_available_sources = computed(() => documents.value?.length ?? 0);
 
@@ -216,10 +201,10 @@ const routes = computed(() => [
   },
 ]);
 
-const $router = useRouter();
+const router = useRouter();
 
 function doSearch(searchText) {
-  $router.push({ name: 'search', query: { text: searchText } });
+  router.push({ name: 'search', query: { text: searchText } });
   showSidebar.value = false;
 }
 
