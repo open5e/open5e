@@ -173,6 +173,15 @@ const isLoadingData = useIsFetching();
 
 const routes = computed(() => [
   {
+    title: 'Classes',
+    route: '/classes',
+    subroutes: classes.value ?? [],
+  },
+  {
+    title: 'Races',
+    route: '/races',
+  },
+  {
     title: 'Monsters',
     route: '/monsters',
   },
@@ -186,15 +195,6 @@ const routes = computed(() => [
   },
 
   {
-    title: 'Classes',
-    route: '/classes',
-    subroutes: classes.value ?? [],
-  },
-  {
-    title: 'Races',
-    route: '/races',
-  },
-  {
     title: 'Backgrounds',
     route: '/backgrounds',
   },
@@ -207,29 +207,8 @@ const routes = computed(() => [
     route: '/conditions',
   },
   {
-    title: 'Characters',
-    route: '/characters',
-    subroutes: character_sections.value ?? [],
-  },
-  {
-    title: 'Combat',
-    route: '/combat',
-    subroutes: combat_sections.value ?? [],
-  },
-  {
-    title: 'Equipment',
-    route: '/equipment',
-    subroutes: equipment_sections.value ?? [],
-  },
-  {
-    title: 'Gameplay Mechanics',
-    route: '/gameplay-mechanics',
-    subroutes: gameplay_sections.value ?? [],
-  },
-  {
-    title: 'Running a Game',
-    route: '/running',
-    subroutes: rules_sections.value ?? [],
+    title: 'Rules',
+    route: '/rules',
   },
   {
     title: 'API Docs',
