@@ -11,8 +11,8 @@ export const API_ENDPOINTS = {
   monsters: 'v2/creatures/',
   races: 'v2/races/',
   search: 'v2/search/',
-  sections: 'v1/sections/',
   spells: 'v2/spells/',
+  rules: 'v2/rulesets/',
 } as const;
 
 /** Provides the base functions to easily fetch data from the Open5e API. */
