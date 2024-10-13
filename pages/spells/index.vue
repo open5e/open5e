@@ -100,6 +100,8 @@
         </select>
       </div>
     </div>
+
+    <!-- RESULTS TABLE -->
     <api-results-table
       :data="data?.results"
       :cols="[
@@ -145,14 +147,14 @@ const { sortBy, isSortDescending, setSortState } = useSortState();
 // fields to fetch from API to populate table
 const fields = ['name', 'document', 'level', 'school', 'classes'];
 
-const { filter, update } = useFilterState(DefaultMonsterFilter);
+const { debouncedFilter, update } = useFilterState();
 
 // Fetch a page of results and pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.spells,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  filter,
+  filter: debouncedFilter,
   params: { fields, depth: 1 },
 });
 
