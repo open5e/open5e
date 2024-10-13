@@ -1,7 +1,15 @@
 <template>
   <section class="docs-container container">
-    <div class="filter-header-wrapper">
-      <h1 class="filter-header">Magic Item List</h1>
+    <div class="flex">
+      <h1 class="no-wrap my-2 w-full">Magic Items</h1>
+      <api-table-nav
+        :page-number="pageNo"
+        :last-page-number="lastPageNo"
+        @first="firstPage()"
+        @next="nextPage()"
+        @prev="prevPage()"
+        @last="lastPage()"
+      />
     </div>
     <div>
       <h3
@@ -42,16 +50,6 @@
           filterField: 'requires_attunement',
         },
       ]"
-    />
-
-    <api-table-nav
-      class="w-full"
-      :page-number="pageNo"
-      :last-page-number="lastPageNo"
-      @first="firstPage()"
-      @next="nextPage()"
-      @prev="prevPage()"
-      @last="lastPage()"
     />
 
     <api-results-table
