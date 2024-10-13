@@ -2,20 +2,7 @@
   <section class="docs-container container">
     <div class="filter-header-wrapper">
       <h1 class="filter-header">Magic Item List</h1>
-      <filter-button
-        :show-clear-button="canClearFilter"
-        :filter-count="enabeledFiltersCount"
-        :filter-shown="displayFilter"
-        @show-filter="displayFilter = !displayFilter"
-        @clear-filter="clear"
-      />
     </div>
-
-    <magic-item-filter-box
-      v-if="displayFilter"
-      :filter="filter"
-      :update-filter="update"
-    />
     <div>
       <h3
         ref="results"
@@ -24,6 +11,38 @@
         @keyup.esc="focusFilter"
       />
     </div>
+
+    <api-table-filter
+      :update-filters="update"
+      :search="{
+        name: 'Search Magic Items',
+        filterField: 'name__icontains',
+      }"
+      :select-fields="[
+        {
+          name: 'Rarity',
+          filterField: 'rarity',
+          options: MAGIC_ITEMS_RARITES.map((rarity) => ({
+            name: rarity,
+            value: rarity.toLowerCase().split(' ').join('-'),
+          })),
+        },
+        {
+          name: 'Category',
+          filterField: 'category',
+          options: MAGIC_ITEMS_TYPES.map((type) => ({
+            name: type,
+            value: type.toLowerCase().split(' ').join('-'),
+          })),
+        },
+      ]"
+      :checkbox-fields="[
+        {
+          name: 'Attunement',
+          filterField: 'requires_attunement',
+        },
+      ]"
+    />
 
     <api-table-nav
       class="w-full"
@@ -73,15 +92,7 @@
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // Set up filters
-const displayFilter = ref(false);
-const {
-  filter,
-  debouncedFilter,
-  canClearFilter,
-  enabeledFiltersCount,
-  clear,
-  update,
-} = useFilterState(DefaultMagicItemFilter);
+const { debouncedFilter, update } = useFilterState(DefaultMagicItemFilter);
 
 // fields to fetch from API to populate table
 const fields = [
@@ -98,7 +109,7 @@ const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.magicitems,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  filter: filter,
+  filter: debouncedFilter,
   params: { fields, is_magic_item: true, depth: 1 },
 });
 
