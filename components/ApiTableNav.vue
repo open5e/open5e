@@ -1,5 +1,5 @@
 <template>
-  <div class="grid w-full justify-end">
+  <div class="grid justify-end">
     <ul class="flex">
       <li v-for="button in buttons" :key="button.name">
         <button

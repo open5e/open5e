@@ -1,10 +1,9 @@
 <template>
   <section class="docs-container container">
-    <div class="filter-header-wrapper">
-      <h1 class="filter-header">Classes</h1>
-    </div>
-    <div class="flex w-full flex-wrap justify-end">
+    <div class="flex">
+      <h1 class="my-2">Classes</h1>
       <api-table-nav
+        class="w-full"
         :page-number="pageNo"
         :last-page-number="lastPageNo"
         @first="firstPage()"
@@ -13,7 +12,13 @@
         @last="lastPage()"
       />
     </div>
-
+    <api-table-filter
+      :update-filters="update"
+      :search="{
+        name: 'Search Classes',
+        filterField: 'name__contains',
+      }"
+    />
     <api-results-table
       endpoint="classes"
       :data="data?.results"
@@ -35,11 +40,14 @@
 // state handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
+const { debouncedFilter, update } = useFilterState();
+
 // Fetch a page of classes & pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.classes,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending ?? true,
+  filter: debouncedFilter,
   params: {
     is_subclass: false,
     fields: ['key', 'name', 'document'].join(),

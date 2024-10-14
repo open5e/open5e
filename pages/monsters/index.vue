@@ -1,31 +1,57 @@
 <template>
   <section class="docs-container container">
-    <div class="filter-header-wrapper">
-      <h1 class="filter-header">Monster List</h1>
-      <filter-button
-        :show-clear-button="canClearFilter"
-        :filter-count="enabeledFiltersCount"
-        :filter-shown="displayFilter"
-        @show-filter="displayFilter = !displayFilter"
-        @clear-filter="clear"
+    <div class="flex">
+      <h1 class="my-2 w-full">Monsters</h1>
+      <api-table-nav
+        class="w-full"
+        :page-number="pageNo"
+        :last-page-number="lastPageNo"
+        @first="firstPage()"
+        @next="nextPage()"
+        @prev="prevPage()"
+        @last="lastPage()"
       />
     </div>
-
-    <monster-filter-box
-      v-if="displayFilter"
-      ref="monsterFilterBox"
-      :filter="filter"
-      :update-filter="update"
-    />
-
-    <api-table-nav
-      class="w-full"
-      :page-number="pageNo"
-      :last-page-number="lastPageNo"
-      @first="firstPage()"
-      @next="nextPage()"
-      @prev="prevPage()"
-      @last="lastPage()"
+    <api-table-filter
+      :update-filters="update"
+      :search="{
+        name: 'Search Monsters',
+        filterField: 'name__icontains',
+      }"
+      :select-fields="[
+        {
+          name: 'Type',
+          filterField: 'type',
+          options: MONSTER_TYPES_LIST.map((monsterType) => ({
+            name: monsterType,
+            value: monsterType.toLowerCase(),
+          })),
+        },
+        {
+          name: 'Size',
+          filterField: 'size',
+          options: MONSTER_SIZES_LIST.map((monsterSize) => ({
+            name: monsterSize,
+            value: monsterSize.toLowerCase(),
+          })),
+        },
+        {
+          name: 'CR (min)',
+          filterField: 'challenge_rating_decimal__gte',
+          options: MONSTER_CHALLENGE_RATINGS_MAP.map(([name, value]) => ({
+            name: name,
+            value: value,
+          })),
+        },
+        {
+          name: 'CR (max)',
+          filterField: 'challenge_rating_decimal__lte',
+          options: MONSTER_CHALLENGE_RATINGS_MAP.map(([name, value]) => ({
+            name: name,
+            value: value,
+          })),
+        },
+      ]"
     />
 
     <h3 ref="results" class="sr-only" tabindex="-1" @keyup.esc="focusFilter" />

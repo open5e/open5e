@@ -1,17 +1,17 @@
 <template>
   <section class="docs-container container">
-    <div class="filter-header-wrapper">
-      <h1 class="filter-header">Races</h1>
+    <div class="flex">
+      <h1 class="my-2">Races</h1>
+      <api-table-nav
+        class="w-full"
+        :page-number="pageNo"
+        :last-page-number="lastPageNo"
+        @first="firstPage()"
+        @next="nextPage()"
+        @prev="prevPage()"
+        @last="lastPage()"
+      />
     </div>
-
-    <api-table-nav
-      :page-number="pageNo"
-      :last-page-number="lastPageNo"
-      @first="firstPage()"
-      @next="nextPage()"
-      @prev="prevPage()"
-      @last="lastPage()"
-    />
 
     <api-results-table
       :data="data?.results"
