@@ -3,6 +3,7 @@
     <div class="flex">
       <h1 class="my-2 w-full">Spells</h1>
       <api-table-nav
+        class="w-full"
         :page-number="pageNo"
         :last-page-number="lastPageNo"
         @first="firstPage()"

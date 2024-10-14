@@ -1,7 +1,7 @@
 <template>
   <section class="docs-container container">
-    <div class="flex">
-      <h1 class="no-wrap my-2 w-full">Magic Items</h1>
+    <div class="flex justify-between">
+      <h1 class="my-2 w-full">Magic Items</h1>
       <api-table-nav
         :page-number="pageNo"
         :last-page-number="lastPageNo"
@@ -9,14 +9,6 @@
         @next="nextPage()"
         @prev="prevPage()"
         @last="lastPage()"
-      />
-    </div>
-    <div>
-      <h3
-        ref="results"
-        class="sr-only"
-        tabindex="-1"
-        @keyup.esc="focusFilter"
       />
     </div>
 

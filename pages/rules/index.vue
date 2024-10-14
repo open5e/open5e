@@ -1,15 +1,24 @@
 <template>
   <section class="docs-container container">
-    <div class="filter-header-wrapper">
-      <h1 class="filter-header">Rules</h1>
+    <div class="flex">
+      <h1 class="my-2">Rules</h1>
+      <api-table-nav
+        class="w-full"
+        :page-number="pageNo"
+        :last-page-number="lastPageNo"
+        @first="firstPage()"
+        @next="nextPage()"
+        @prev="prevPage()"
+        @last="lastPage()"
+      />
     </div>
-    <api-table-nav
-      :page-number="pageNo"
-      :last-page-number="lastPageNo"
-      @first="firstPage()"
-      @next="nextPage()"
-      @prev="prevPage()"
-      @last="lastPage()"
+
+    <api-table-filter
+      :update-filters="update"
+      :search="{
+        name: 'Search Rules',
+        filterField: 'name__contains',
+      }"
     />
 
     <api-results-table
@@ -31,11 +40,14 @@
 <script setup>
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
+const { debouncedFilter, update } = useFilterState();
+
 // fetch a page of data from API, and pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.rules,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
+  filter: debouncedFilter,
   params: {
     fields: ['name', 'key', 'document'].join(','),
     depth: 1,
