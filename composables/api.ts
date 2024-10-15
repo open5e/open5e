@@ -13,6 +13,7 @@ export const API_ENDPOINTS = {
   search: 'v2/search/',
   spells: 'v2/spells/',
   rules: 'v2/rulesets/',
+  equipment: 'v2/items/',
 } as const;
 
 /** Provides the base functions to easily fetch data from the Open5e API. */
