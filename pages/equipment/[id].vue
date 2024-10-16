@@ -3,15 +3,19 @@
     <div v-if="item">
       <h1 class="inline">{{ item.name }}</h1>
 
-      <p class="flex gap-2">
-        <span>{{ item.category.name }}</span>
-        <span v-if="parseFloat(item.weight) > 0" class="before:content-['_|_']">
-          {{ formatWeight(item.weight) }}
-        </span>
-        <span v-if="parseFloat(item.cost) > 0" class="before:content-['_|_']">
-          {{ formatCost(item.cost) }}
-        </span>
-      </p>
+      <!-- DISPLAY COMMON ITEM DATA: category, cost, weight, &c -->
+      <dl class="flex gap-2">
+        <dt class="font-bold">Category</dt>
+        <dd>{{ item.category.name }}</dd>
+        <template v-if="parseFloat(item.weight) > 0">
+          <dt class="font-bold before:content-['_|_']">Weight</dt>
+          <dd>{{ formatWeight(item.weight) }}</dd>
+        </template>
+        <template v-if="parseFloat(item.cost) > 0">
+          <dt class="font-bold before:content-['_|_']">Cost</dt>
+          <dd>{{ formatCost(item.cost) }}</dd>
+        </template>
+      </dl>
 
       <p class="text-sm italic">
         Source:
