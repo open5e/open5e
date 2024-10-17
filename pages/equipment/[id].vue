@@ -6,7 +6,7 @@
       <!-- ITEM CARD FOR WEAPONS -->
       <div v-if="item.weapon">
         <p class="italic">{{ formatWeaponSubtitle(item.weapon) }}</p>
-        <dl class="grid auto-cols-max grid-cols-2">
+        <dl class="grid grid-cols-2">
           <dt class="font-bold">Damage</dt>
           <dd>
             {{
@@ -20,10 +20,12 @@
           <dd class="capitalize">
             {{ item.weapon.damage_type.split('/').slice(-2)[0] }}
           </dd>
-          <dt class="font-bold">Properties</dt>
-          <dd class="capitalize">
-            {{ item.weapon.properties.map((prop) => prop).join(', ') }}
-          </dd>
+          <template v-if="item.weapon.properties.length > 0">
+            <dt class="font-bold">Properties</dt>
+            <dd class="capitalize">
+              {{ item.weapon.properties.map((prop) => prop).join(', ') }}
+            </dd>
+          </template>
           <template v-if="item.weapon.is_reach">
             <dt class="font-bold">Reach</dt>
             <dd>{{ item.weapon.reach + ' ft.' }}</dd>
@@ -31,6 +33,29 @@
           <template v-if="item.weapon.range">
             <dt class="font-bold">Range</dt>
             <dd>{{ `${item.weapon.range} / ${item.weapon.long_range}` }}</dd>
+          </template>
+          <template v-if="item.weight">
+            <dt class="font-bold">Weight</dt>
+            <dd>{{ formatWeight(item.weight) }}</dd>
+          </template>
+          <template v-if="item.cost">
+            <dt class="font-bold">Cost</dt>
+            <dd>{{ formatCost(item.cost) }}</dd>
+          </template>
+        </dl>
+      </div>
+
+      <!-- ITEM CARD FOR ARMOR -->
+      <div v-else-if="item.armor">
+        <!-- TODO: whether armor is light/med/heavy not rtn'd by API -->
+        <p>{{ `Armor (${'TODO'})` }}</p>
+        <md-viewer :text="item.desc" />
+        <dl class="grid grid-cols-2">
+          <dt class="font-bold">AC</dt>
+          <dd>{{ item.armor.ac_display }}</dd>
+          <template v-if="item.armor.grants_stealth_disadvantage">
+            <dt class="font-bold">Stealth</dt>
+            <dd>Disadvantage</dd>
           </template>
           <template v-if="item.weight">
             <dt class="font-bold">Weight</dt>
