@@ -6,7 +6,7 @@
       <!-- ITEM CARD FOR WEAPONS -->
       <div v-if="item.weapon">
         <p class="italic">{{ formatWeaponSubtitle(item.weapon) }}</p>
-        <dl class="grid grid-cols-2">
+        <dl class="grid grid-cols-[8rem_1fr]">
           <dt class="font-bold">Damage</dt>
           <dd>
             {{
@@ -34,15 +34,16 @@
             <dt class="font-bold">Range</dt>
             <dd>{{ `${item.weapon.range} / ${item.weapon.long_range}` }}</dd>
           </template>
-          <template v-if="item.weight">
+          <template v-if="parseFloat(item?.weight) > 0">
             <dt class="font-bold">Weight</dt>
-            <dd>{{ formatWeight(item.weight) }}</dd>
+            <dd>{{ `${parseFloat(item.weight)} lb` }}</dd>
           </template>
           <template v-if="item.cost">
             <dt class="font-bold">Cost</dt>
             <dd>{{ formatCost(item.cost) }}</dd>
           </template>
         </dl>
+        <md-viewer :text="item.desc" />
       </div>
 
       <!-- ITEM CARD FOR ARMOR -->
@@ -50,16 +51,16 @@
         <!-- TODO: whether armor is light/med/heavy not rtn'd by API -->
         <p>{{ `Armor (${'TODO'})` }}</p>
         <md-viewer :text="item.desc" />
-        <dl class="grid grid-cols-2">
+        <dl class="grid grid-cols-[6rem_1fr]">
           <dt class="font-bold">AC</dt>
           <dd>{{ item.armor.ac_display }}</dd>
           <template v-if="item.armor.grants_stealth_disadvantage">
             <dt class="font-bold">Stealth</dt>
             <dd>Disadvantage</dd>
           </template>
-          <template v-if="item.weight">
+          <template v-if="parseFloat(item?.weight) > 0">
             <dt class="font-bold">Weight</dt>
-            <dd>{{ formatWeight(item.weight) }}</dd>
+            <dd>{{ `${parseFloat(item.weight)} lb` }}</dd>
           </template>
           <template v-if="item.cost">
             <dt class="font-bold">Cost</dt>
@@ -70,15 +71,15 @@
 
       <!-- DISPLAY COMMON ITEM DATA: category, cost, weight, &c -->
       <div v-else>
-        <dl class="flex gap-2">
+        <dl class="grid grid-cols-[6rem_1fr]">
           <dt class="font-bold">Category</dt>
           <dd>{{ item.category.name }}</dd>
-          <template v-if="parseFloat(item.weight) > 0">
-            <dt class="font-bold before:content-['_|_']">Weight</dt>
-            <dd>{{ formatWeight(item.weight) }}</dd>
+          <template v-if="parseFloat(item?.weight) > 0">
+            <dt class="font-bold">Weight</dt>
+            <dd>{{ `${parseFloat(item.weight)} lb` }}</dd>
           </template>
           <template v-if="parseFloat(item.cost) > 0">
-            <dt class="font-bold before:content-['_|_']">Cost</dt>
+            <dt class="font-bold">Cost</dt>
             <dd>{{ formatCost(item.cost) }}</dd>
           </template>
         </dl>
@@ -92,6 +93,7 @@
         </a>
       </p>
     </div>
+
     <p v-else>Loading...</p>
   </section>
 </template>
@@ -111,12 +113,6 @@ const formatCost = (input) => {
     (parseInt(silver) > 0 ? `${silver} sp` : '') +
     (parseInt(copper) > 0 ? `${copper} cp` : '')
   );
-};
-
-const formatWeight = (input) => {
-  const weight = parseFloat(input);
-  if (weight >= 1) return `${weight} lb`;
-  return `1 lb for ${1 / weight}`;
 };
 
 const formatWeaponSubtitle = (weapon) =>
