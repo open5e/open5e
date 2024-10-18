@@ -84,10 +84,12 @@ export const useAPI = () => {
     },
     get: async (...parts: string[]) => {
       const route = parts.join('');
-      const res = await api.get(route, {
-        params: { depth: '2' },
+      const res = await api.get(route, { params: { depth: '2' } }).catch(() => {
+        // redirect to /search if API route returns nothing
+        const searchTerm = parts.filter((exists) => exists).slice(-1)[0];
+        navigateTo(`/search?text=${searchTerm}`);
       });
-      return res.data as Record<string, any>;
+      return res?.data as Record<string, any>;
     },
   };
 };
