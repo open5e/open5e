@@ -178,7 +178,6 @@ const routes = computed(() => [
     title: 'Spells',
     route: '/spells',
   },
-
   {
     title: 'Backgrounds',
     route: '/backgrounds',
@@ -186,6 +185,10 @@ const routes = computed(() => [
   {
     title: 'Feats',
     route: '/feats',
+  },
+  {
+    title: 'Equipment',
+    route: '/equipment',
   },
   {
     title: 'Conditions',

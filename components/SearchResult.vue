@@ -84,6 +84,10 @@ const endpoints = {
 const formatUrl = (input) => {
   let baseUrl = endpoints[input.object_model] ?? input.object_model;
 
+  // non-magic items link to /equipment route
+  if (baseUrl === 'magic-items' && !input?.object?.is_magic_item)
+    baseUrl = 'equipment';
+
   // subclass urls must be prepended by their base-class
   if (input?.object?.subclass_of) baseUrl += `/${input.object.subclass_of.key}`;
 
@@ -100,7 +104,10 @@ const formatCategory = (input) => {
   const category = input.object_model.match(/[A-Z][a-z]+/g).join(' ');
   // Creatures -> Monsters
   if (category === 'Creature') return 'Monster';
+  // Items (Magic) -> 'Magic Item'
   if (input.object?.is_magic_item) return 'Magic Item';
+  // Items (Rest) -> 'Equipment'
+  if (category === 'Item') return 'Equipment';
   // Character Class -> Class OR [CLASS] Subclass
   if (category === 'Character Class') {
     if (input?.object?.subclass_of)
@@ -111,6 +118,8 @@ const formatCategory = (input) => {
   if (input?.object?.subrace_of)
     return `${input.object.subrace_of.name} Subrace`;
   return category; // BASE-CASE: return category without alteration
+
+  // Non-magic items -> Equipment
 };
 </script>
 
