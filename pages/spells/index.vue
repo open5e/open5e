@@ -107,7 +107,7 @@
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fields to fetch from API to populate table
-const fields = ['name', 'document', 'level', 'school', 'classes'];
+const fields = ['name', 'document', 'level', 'school', 'classes'].join(',');
 
 const { debouncedFilter, update } = useFilterState();
 
