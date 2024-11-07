@@ -146,7 +146,12 @@ const showModal = ref(false);
 const { sources } = useSourcesList();
 
 const no_selected_sources = computed(() => sources.value.length);
-const { data: documents } = useDocuments();
+
+const { data: documents } = useDocuments({
+  fields: 'none', // we only need to document count, so we can omit all fields
+  depth: 0,
+});
+
 const { data: classes } = useFindMany(API_ENDPOINTS.classes, {
   fields: ['name', 'key'].join(),
   is_subclass: false,
