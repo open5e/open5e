@@ -107,7 +107,9 @@
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fields to fetch from API to populate table
-const fields = ['name', 'document', 'level', 'school', 'classes'].join(',');
+const fields = ['key', 'name', 'document', 'level', 'school', 'classes'].join(
+  ','
+);
 
 const { debouncedFilter, update } = useFilterState();
 
@@ -117,7 +119,13 @@ const { data, paginator } = useFindPaginated({
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   filter: debouncedFilter,
-  params: { fields, depth: 1 },
+  params: {
+    fields,
+    document__fields: ['name', 'key'].join(','),
+    classes__fields: ['name'].join(','),
+    school__fields: ['name', 'key'].join(','),
+    depth: 1,
+  },
 });
 
 // destructure pagination controls

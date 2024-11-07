@@ -100,7 +100,13 @@ const { data, paginator } = useFindPaginated({
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   filter: debouncedFilter,
-  params: { fields, is_magic_item: true, depth: 1 },
+  params: {
+    is_magic_item: true,
+    fields,
+    document__fields: ['name', 'key'].join(','),
+    category__fields: ['name', 'key'].join(','),
+    rarity__fields: ['name', 'rank'].join(','),
+  },
 });
 
 // destructure pagination controls

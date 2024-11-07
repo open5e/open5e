@@ -50,6 +50,7 @@ const { data, paginator } = useFindPaginated({
   filter: debouncedFilter,
   params: {
     fields: ['name', 'key', 'document'].join(','),
+    document__fields: ['name', 'key'].join(','),
     depth: 1,
   },
 });

@@ -39,7 +39,11 @@ const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.backgrounds,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  params: { fields: ['name', 'key', 'document'].join(','), depth: 1 },
+  params: {
+    fields: ['name', 'key', 'document'].join(','),
+    document__fields: ['name', 'key'].join(','),
+    depth: 1,
+  },
 });
 
 // destructure pagination controls

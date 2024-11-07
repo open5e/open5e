@@ -121,7 +121,14 @@ const { data, paginator } = useFindPaginated({
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   filter: filter,
-  params: { fields, is_subclass: false, depth: 1 },
+  params: {
+    fields,
+    document__fields: 'name,key',
+    type__fields: 'name',
+    size__fields: 'name,key',
+    is_subclass: false,
+    depth: 1,
+  },
 });
 
 // destructure pagination controls
