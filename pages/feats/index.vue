@@ -38,7 +38,11 @@ const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.feats,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  params: { fields: ['key', 'name', 'document'].join(','), depth: 1 },
+  params: {
+    fields: ['key', 'name', 'document'].join(','),
+    document__fields: ['name', 'key'].join(','),
+    depth: 1,
+  },
 });
 
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =

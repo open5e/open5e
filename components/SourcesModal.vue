@@ -158,6 +158,8 @@ const closeModal = () => emit('close');
 
 const { data: documents } = useDocuments({
   fields: ['key', 'name', 'publisher', 'gamesystem'].join(','),
+  publisher__fields: ['name', 'key'].join(','),
+  gamesystem__fields: ['name', 'key'].join(','),
 });
 
 // filter documents by the current game system

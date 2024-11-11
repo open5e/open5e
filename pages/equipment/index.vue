@@ -76,12 +76,21 @@ const { sortBy, isSortDescending, setSortState } = useSortState();
 const { debouncedFilter, update } = useFilterState();
 
 const fields = ['key', 'name', 'document', 'category'].join(',');
+const docFields = ['name', 'key'].join(',');
+const categoryFields = ['name'].join(',');
+
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.equipment,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   filter: debouncedFilter,
-  params: { fields, is_magic_item: false, depth: 1 },
+  params: {
+    fields,
+    document__fields: docFields,
+    category__fields: categoryFields,
+    is_magic_item: false,
+    depth: 1,
+  },
 });
 
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
