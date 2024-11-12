@@ -6,13 +6,13 @@ export function useFilterState<T extends Record<string, any>>(
 ) {
   const filter = ref({ ...initialFilters }) as Ref<T>;
 
-  const enabeledFiltersCount = computed(() => {
+  const enabledFiltersCount = computed(() => {
     return Object.values(filter.value).filter(
       (value) => value !== undefined && value !== ''
     ).length;
   });
 
-  const canClearFilter = computed(() => enabeledFiltersCount.value > 0);
+  const canClearFilter = computed(() => enabledFiltersCount.value > 0);
 
   function clear() {
     filter.value = { ...initialFilters };
@@ -27,7 +27,7 @@ export function useFilterState<T extends Record<string, any>>(
   return {
     clear,
     update,
-    enabeledFiltersCount,
+    enabledFiltersCount,
     filter: computed(() => filter.value),
     debouncedFilter,
     canClearFilter,
