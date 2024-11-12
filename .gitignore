@@ -62,3 +62,5 @@ nginx/ssl/*
 .output/
 
 *.code-workspace
+
+.idea
