@@ -93,16 +93,16 @@
 </template>
 
 <script setup>
-import { MONSTER_FILTER_LOCAL_STORAGE_KEY } from '~/composables/monsters.ts';
+import { MONSTER_FILTER_KEY } from '~/composables/monsters.ts';
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // Set up filters
 const { filter, debouncedFilter, updateFilter } = useFilterState({
-  initialFilters: localStorage.getItem(MONSTER_FILTER_LOCAL_STORAGE_KEY)
-    ? JSON.parse(localStorage.getItem(MONSTER_FILTER_LOCAL_STORAGE_KEY))
+  initialFilters: localStorage.getItem(MONSTER_FILTER_KEY)
+    ? JSON.parse(localStorage.getItem(MONSTER_FILTER_KEY))
     : DefaultMonsterFilter,
-  localStorageKey: MONSTER_FILTER_LOCAL_STORAGE_KEY,
+  localStorageKey: MONSTER_FILTER_KEY,
 });
 
 // fields to fetch from API to populate table
