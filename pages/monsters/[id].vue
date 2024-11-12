@@ -1,5 +1,5 @@
 <template>
-  <main v-if="monster" class="docs-container container" :data-mode="mode">
+  <main v-if="monster" class="docs-container container">
     <!-- TITLE -->
     <div class="flex items-end justify-between gap-8">
       <h1 class="flex-auto">{{ monster.name }}</h1>
@@ -244,8 +244,8 @@
         :key="ability.name"
         class="action-block"
       >
-        <span class="font-bold after:content-['._']">{{ ability.name }}</span>
-        <md-viewer :inline="true" :text="ability.desc" :use-roller="true" />
+        <span class="font-bold after:content-['.']">{{ ability.name }}</span>
+        <md-viewer inline="true" :text="ability.desc" />
       </p>
     </section>
 
@@ -267,15 +267,15 @@
 
     <!-- BONUS ACTIONS -->
     <section v-if="monster.bonus_actions">
-      <h2>Bonus Actions</h2>
+      <h2>Actions</h2>
       <ul>
         <li
           v-for="action in monster.bonus_actions"
           :key="action.name"
-          class="my-1"
+          class="after:content-[': '] my-1"
         >
-          <span class="font-bold after:content-['_']">{{ action.name }}. </span>
-          <md-viewer :inline="true" :text="action.desc" :use-roller="true" />
+          <span class="font-bold">{{ action.name }}. </span>
+          <md-viewer inline="true" :text="action.desc" />
         </li>
       </ul>
     </section>
@@ -284,9 +284,13 @@
     <section v-if="monster.reactions">
       <h2>Reactions</h2>
       <ul>
-        <li v-for="action in monster.reactions" :key="action.name" class="my-1">
-          <span class="font-bold after:content-['_']">{{ action.name }}. </span>
-          <md-viewer :inline="true" :text="action.desc" :use-roller="true" />
+        <li
+          v-for="action in monster.reactions"
+          :key="action.name"
+          class="after:content-[': '] my-1"
+        >
+          <span class="font-bold">{{ action.name }}. </span>
+          <md-viewer inline="true" :text="action.desc" />
         </li>
       </ul>
     </section>
@@ -302,10 +306,10 @@
         <li
           v-for="action in monster.legendary_actions"
           :key="action.name"
-          class="my-1"
+          class="after:content-[': '] my-1"
         >
-          <span class="font-bold after:content-['_']">{{ action.name }}.</span>
-          <md-viewer :inline="true" :text="action.desc" />
+          <span class="font-bold">{{ action.name }}. </span>
+          <md-viewer inline="true" :text="action.desc" />
         </li>
       </ul>
     </section>
@@ -317,10 +321,10 @@
         <li
           v-for="action in monster.mythic_actions"
           :key="action.name"
-          class="my-1"
+          class="after:content-[': '] my-1"
         >
-          <span class="font-bold after:content-['_']">{{ action.name }}.</span>
-          <md-viewer :inline="true" :text="action.desc" />
+          <span class="font-bold">{{ action.name }}. </span>
+          <md-viewer inline="true" :text="action.desc" />
         </li>
       </ul>
     </section>
@@ -335,10 +339,10 @@
         <li
           v-for="action in monster.lair_actions"
           :key="action.name"
-          class="my-1"
+          class="after:content-[': '] my-1"
         >
-          <span class="font-bold after:content-['_']">{{ action.name }}.</span>
-          <md-viewer :inline="true" :text="action.desc" />
+          <span class="font-bold">{{ action.name }}. </span>
+          <md-viewer inline="true" :text="action.desc" />
         </li>
       </ul>
     </section>
@@ -353,22 +357,33 @@
 
     <!-- Monster Environments -->
     <section v-if="monster.environments?.length > 0">
-      <span class="font-bold after:content-[_]">Environments:</span>
+      <span class="font-bold">Environments: </span>
       <span
-        v-for="environment in monster.environments"
-        :key="environment"
-        class="text-sm after:content-[',_'] last:after:content-[]"
+        v-for="environemnt in monster.environments"
+        :key="environemnt.id"
+        class="text-sm after:content-['.'] [&:not(:last-child)]:after:content-[',_']"
       >
-        {{ environment }}
+        {{ environemnt }}
       </span>
     </section>
 
-    <p class="mb-4 text-sm italic">
+    <p class="text-sm italic">
       Source:
       <a target="NONE" :href="monster.document.permalink">
         {{ monster.document.name }}
         <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
       </a>
+    </p>
+    <p class="text-sm italic">
+      Compact Statblock:
+      <nuxt-link
+        tag="a"
+        :params="{ id: monster.slug }"
+        :to="`/monsters/compact/${monster.slug}`"
+        :prefetch="false"
+      >
+        {{ monster.name }}
+      </nuxt-link>
     </p>
   </main>
 </template>
@@ -465,7 +480,6 @@ function toggleMode() {
 <style scoped lang="scss">
 .img-main {
   float: right;
-  margin-block: 1rem;
   width: 30%;
   min-width: 300px;
 }
@@ -476,24 +490,4 @@ function toggleMode() {
     width: 100%;
   }
 }
-
-[data-mode='compact'] {
-  font-size: 0.833rem;
-  line-height: 1.25;
-}
-
-[data-mode='compact'] h1 {
-  font-size: 1.2rem;
-  margin-top: 0.833rem;
-}
-
-[data-mode='compact'] h2 {
-  font-size: 1rem;
-  margin-top: 0.833rem;
-}
-
-[data-mode='compact'] hr {
-  margin-block: 0.5rem;
-}
 </style>
-<hr />
