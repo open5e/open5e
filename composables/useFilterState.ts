@@ -1,10 +1,29 @@
 import { debouncedRef } from '@vueuse/core';
 
+export type FilterStateOptions<T> = {
+  initialFilters?: T;
+  debounceTimeMs?: number;
+  localStorageKey?: string;
+};
+
 export function useFilterState<T extends Record<string, any>>(
-  initialFilters: T,
-  debounceTimeMs = 300
+  options?: FilterStateOptions<T>
 ) {
-  const filter = ref({ ...initialFilters }) as Ref<T>;
+  const filter = ref<T>({});
+
+  function setFilter<T>(filterToSet) {
+    filter.value = filterToSet;
+    if (options?.localStorageKey) {
+      localStorage.setItem(
+        options.localStorageKey,
+        JSON.stringify(filterToSet)
+      );
+    }
+  }
+
+  if (options?.initialFilters) {
+    setFilter(options.initialFilters);
+  }
 
   const enabledFiltersCount = computed(() => {
     return Object.values(filter.value).filter(
@@ -15,20 +34,20 @@ export function useFilterState<T extends Record<string, any>>(
   const canClearFilter = computed(() => enabledFiltersCount.value > 0);
 
   function clear() {
-    filter.value = { ...initialFilters };
+    setFilter({});
   }
 
-  const debouncedFilter = debouncedRef(filter, debounceTimeMs);
+  const debouncedFilter = debouncedRef(filter, options?.debounceTimeMs || 300);
 
   function update(key: string, value: any) {
-    filter.value = { ...filter.value, [key]: value };
+    setFilter({ ...filter.value, [key]: value });
   }
 
   return {
-    clear,
-    update,
+    clearFilter: clear,
+    updateFilter: update,
     enabledFiltersCount,
-    filter: computed(() => filter.value),
+    filter,
     debouncedFilter,
     canClearFilter,
   };

@@ -13,15 +13,17 @@
     </div>
 
     <api-table-filter
-      :update-filters="update"
+      :update-filters="updateFilter"
       :search="{
         name: 'Search Magic Items',
         filterField: 'name__icontains',
+        value: filter.name__icontains,
       }"
       :select-fields="[
         {
           name: 'Rarity',
           filterField: 'rarity',
+          value: filter.rarity,
           options: MAGIC_ITEMS_RARITES.map((rarity) => ({
             name: rarity,
             value: rarity.toLowerCase().split(' ').join('-'),
@@ -30,6 +32,7 @@
         {
           name: 'Category',
           filterField: 'category',
+          value: filter.category,
           options: MAGIC_ITEMS_TYPES.map((type) => ({
             name: type,
             value: type.toLowerCase().split(' ').join('-'),
@@ -40,6 +43,7 @@
         {
           name: 'Attunement',
           filterField: 'requires_attunement',
+          value: filter.requires_attunement,
         },
       ]"
     />
@@ -78,11 +82,18 @@
 </template>
 
 <script setup>
+import { MAGIC_ITEMS_FILTER_KEY } from '~/composables/magic-items.ts';
+
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // Set up filters
-const { debouncedFilter, update } = useFilterState(DefaultMagicItemFilter);
+const { debouncedFilter, updateFilter, filter } = useFilterState({
+  initialFilters: localStorage.getItem(MAGIC_ITEMS_FILTER_KEY)
+    ? JSON.parse(localStorage.getItem(MAGIC_ITEMS_FILTER_KEY))
+    : DefaultMagicItemFilter,
+  localStorageKey: MAGIC_ITEMS_FILTER_KEY,
+});
 
 // fields to fetch from API to populate table
 const fields = [

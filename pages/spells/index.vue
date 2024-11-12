@@ -14,7 +14,7 @@
     </div>
 
     <api-table-filter
-      :update-filters="update"
+      :update-filters="updateFilter"
       :search="{
         name: 'Search Spells',
         filterField: 'name__contains',
@@ -111,7 +111,7 @@ const fields = ['key', 'name', 'document', 'level', 'school', 'classes'].join(
   ','
 );
 
-const { debouncedFilter, update } = useFilterState();
+const { debouncedFilter, updateFilter } = useFilterState();
 
 // Fetch a page of results and pagination controls
 const { data, paginator } = useFindPaginated({

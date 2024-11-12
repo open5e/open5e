@@ -13,7 +13,7 @@
     </div>
 
     <api-table-filter
-      :update-filters="update"
+      :update-filters="updateFilter"
       :search="{
         name: 'Search Equipment',
         filterField: 'name__icontains',
@@ -73,7 +73,7 @@
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // Set up filters
-const { debouncedFilter, update } = useFilterState();
+const { debouncedFilter, updateFilter } = useFilterState();
 
 const fields = ['key', 'name', 'document', 'category'].join(',');
 const docFields = ['name', 'key'].join(',');

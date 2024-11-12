@@ -13,7 +13,7 @@
       />
     </div>
     <api-table-filter
-      :update-filters="update"
+      :update-filters="updateFilter"
       :search="{
         name: 'Search Monsters',
         filterField: 'name__icontains',
@@ -22,6 +22,7 @@
         {
           name: 'Type',
           filterField: 'type',
+          value: filter.type,
           options: MONSTER_TYPES_LIST.map((monsterType) => ({
             name: monsterType,
             value: monsterType.toLowerCase(),
@@ -30,6 +31,7 @@
         {
           name: 'Size',
           filterField: 'size',
+          value: filter.size,
           options: MONSTER_SIZES_LIST.map((monsterSize) => ({
             name: monsterSize,
             value: monsterSize.toLowerCase(),
@@ -38,6 +40,7 @@
         {
           name: 'CR (min)',
           filterField: 'challenge_rating_decimal__gte',
+          value: filter.challenge_rating_decimal__gte,
           options: MONSTER_CHALLENGE_RATINGS_MAP.map(([name, value]) => ({
             name: name,
             value: value,
@@ -46,6 +49,7 @@
         {
           name: 'CR (max)',
           filterField: 'challenge_rating_decimal__lte',
+          value: filter.challenge_rating_decimal__lte,
           options: MONSTER_CHALLENGE_RATINGS_MAP.map(([name, value]) => ({
             name: name,
             value: value,
@@ -89,19 +93,17 @@
 </template>
 
 <script setup>
+import { MONSTER_FILTER_LOCAL_STORAGE_KEY } from '~/composables/monsters.ts';
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // Set up filters
-const displayFilter = ref(false);
-const {
-  filter,
-  debouncedFilter,
-  canClearFilter,
-  enabeledFiltersCount,
-  clear,
-  update,
-} = useFilterState(DefaultMonsterFilter);
+const { filter, debouncedFilter, updateFilter } = useFilterState({
+  initialFilters: localStorage.getItem(MONSTER_FILTER_LOCAL_STORAGE_KEY)
+    ? JSON.parse(localStorage.getItem(MONSTER_FILTER_LOCAL_STORAGE_KEY))
+    : DefaultMonsterFilter,
+  localStorageKey: MONSTER_FILTER_LOCAL_STORAGE_KEY,
+});
 
 // fields to fetch from API to populate table
 const fields = [

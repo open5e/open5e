@@ -30,10 +30,10 @@
         :key="field.name"
         :name="field.name"
         class="cursor-pointer bg-transparent fill-red text-center"
-        value=""
+        :value="field.value"
         @input="updateFilters(field.filterField, $event?.target.value)"
       >
-        <option selected value="">-</option>
+        <option value="">-</option>
         <option
           v-for="option in field.options"
           :key="option.name"

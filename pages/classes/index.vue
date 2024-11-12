@@ -13,7 +13,7 @@
       />
     </div>
     <api-table-filter
-      :update-filters="update"
+      :update-filters="updateFilter"
       :search="{
         name: 'Search Classes',
         filterField: 'name__contains',
@@ -40,7 +40,7 @@
 // state handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
-const { debouncedFilter, update } = useFilterState();
+const { debouncedFilter, updateFilter } = useFilterState();
 
 // Fetch a page of classes & pagination controls
 const { data, paginator } = useFindPaginated({

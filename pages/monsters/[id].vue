@@ -38,7 +38,7 @@
         {{ monster.alignment }}
       </span>
 
-      <!-- 
+      <!--
         Source-tag text param is ugly, but might require work on the API first.
         Workaround for key not being returned from API. Get it from URL instead
       -->

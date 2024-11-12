@@ -6,6 +6,8 @@ export type MonsterFilter = {
   type?: string; // filter by monster type (TODO)
 };
 
+export const MONSTER_FILTER_LOCAL_STORAGE_KEY = 'monsterFilter';
+
 export const DefaultMonsterFilter: Readonly<MonsterFilter> = {
   name__icontains: '',
   challenge_rating_decimal_gte: '',

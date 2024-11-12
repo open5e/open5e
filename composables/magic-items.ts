@@ -6,6 +6,8 @@ export type MagicItemFilter = {
   requires_attunement?: boolean;
 };
 
+export const MAGIC_ITEMS_FILTER_KEY = 'magicItemsFilter';
+
 export const DefaultMagicItemFilter: Readonly<MagicItemFilter> = {
   name__icontains: '',
   rarity: '',

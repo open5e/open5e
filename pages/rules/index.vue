@@ -14,7 +14,7 @@
     </div>
 
     <api-table-filter
-      :update-filters="update"
+      :update-filters="updateFilter"
       :search="{
         name: 'Search Rules',
         filterField: 'name__contains',
@@ -40,7 +40,7 @@
 <script setup>
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
-const { debouncedFilter, update } = useFilterState();
+const { debouncedFilter, updateFilter } = useFilterState();
 
 // fetch a page of data from API, and pagination controls
 const { data, paginator } = useFindPaginated({
