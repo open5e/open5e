@@ -9,7 +9,6 @@
       <input
         :id="search?.name"
         :name="search?.name"
-        default=""
         placeholder="Search..."
         class="w-20 bg-transparent pl-6 outline-none transition-colors focus:w-auto focus:bg-fog dark:focus:bg-basalt sm:w-auto"
         @input="updateFilters(search?.filterField, $event.target?.value ?? '')"
@@ -57,6 +56,7 @@
         :id="checkbox.name"
         type="checkbox"
         :name="checkbox.filterField"
+        :checked="checkbox.value === true"
         class="my-1 size-full accent-blood"
         @input="
           updateFilters(
