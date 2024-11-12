@@ -59,9 +59,6 @@ export default defineNuxtConfig({
       apiUrl: process.env.API_URL || 'https://api.open5e.com',
     },
   },
-  router: {
-    prefetchLinks: false,
-  },
   hooks: {
     'vite:extendConfig': (config, { isClient, isServer }) => {
       if (isClient) {
