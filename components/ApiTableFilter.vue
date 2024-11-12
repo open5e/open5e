@@ -1,5 +1,5 @@
 <template>
-  <div div class="my-2 flex items-end justify-between gap-1 md:gap-4">
+  <div class="my-2 flex items-end justify-between gap-1 md:gap-4">
     <!-- RENDER SEARCH BAR -->
     <div v-if="search" class="relative border-b-2 border-red-400">
       <icon
