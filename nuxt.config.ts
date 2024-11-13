@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
-          hid: 'description',
+          key: 'description',
           name: 'description',
           content: 'The truly open source for 5e rules and resources',
         },
@@ -33,6 +33,18 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
+      script: [
+        {
+          type: 'text/javascript',
+          innerHTML: `
+          if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.documentElement.classList.add('dark')
+          } else {
+            document.documentElement.classList.remove('dark')
+          }
+        `,
+        },
+      ],
     },
   },
   nitro: {
