@@ -16,10 +16,6 @@ export const DefaultMonsterFilter: Readonly<MonsterFilter> = {
   type: '',
 };
 
-export function copyDefaultMonsterFilter(): MonsterFilter {
-  return { ...DefaultMonsterFilter };
-}
-
 // Fetch a single monster from Open5e API
 export const useMonster = (slug: string) => {
   const { get } = useAPI();
