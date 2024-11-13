@@ -84,15 +84,12 @@
   </div>
 </template>
 
-<script setup>
-const props = defineProps({
-  error: {
-    default: undefined,
-    type: Object || undefined,
-  },
-});
+<script setup lang="ts">
+import { NuxtError } from '#app';
 
-useThemeHead();
+defineProps({
+  error: NuxtError,
+});
 
 const handleError = () => clearError({ redirect: '/' });
 </script>
