@@ -1,9 +1,11 @@
 import { debouncedRef } from '@vueuse/core';
+import { MAGIC_ITEMS_FILTER_KEY } from '~/composables/magic-items';
 
 export type FilterStateOptions<T> = {
+  defaultFilters: T;
   initialFilters?: T;
-  debounceTimeMs?: number;
   localStorageKey?: string;
+  debounceTimeMs?: number;
 };
 
 export function useFilterState<T extends Record<string, any>>(
@@ -13,7 +15,7 @@ export function useFilterState<T extends Record<string, any>>(
 
   function setFilter<T>(filterToSet) {
     filter.value = filterToSet;
-    if (options?.localStorageKey) {
+    if (options?.localStorageKey && import.meta.client) {
       localStorage.setItem(
         options.localStorageKey,
         JSON.stringify(filterToSet)
@@ -23,6 +25,14 @@ export function useFilterState<T extends Record<string, any>>(
 
   if (options?.initialFilters) {
     setFilter(options.initialFilters);
+  } else if (
+    options?.localStorageKey &&
+    import.meta.client &&
+    localStorage.getItem(options.localStorageKey)
+  ) {
+    setFilter(JSON.parse(localStorage.getItem(options.localStorageKey)));
+  } else {
+    setFilter(options.defaultFilter);
   }
 
   const enabledFiltersCount = computed(() => {

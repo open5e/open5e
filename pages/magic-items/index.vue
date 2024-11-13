@@ -2,9 +2,9 @@
   <section class="docs-container container">
     <div class="flex justify-between">
       <h1 class="my-2 w-full">Magic Items</h1>
-      <api-table-nav
-        :page-number="pageNo"
-        :last-page-number="lastPageNo"
+      <ApiTableNav
+        :page-number="pageNo || 1"
+        :last-page-number="lastPageNo || 1"
         @first="firstPage()"
         @next="nextPage()"
         @prev="prevPage()"
@@ -12,7 +12,7 @@
       />
     </div>
 
-    <api-table-filter
+    <ApiTableFilter
       :update-filters="updateFilter"
       :search="{
         name: 'Search Magic Items',
@@ -81,17 +81,13 @@
   </section>
 </template>
 
-<script setup>
-import { MAGIC_ITEMS_FILTER_KEY } from '~/composables/magic-items.ts';
-
+<script setup lang="ts">
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // Set up filters
 const { debouncedFilter, updateFilter, filter } = useFilterState({
-  initialFilters: localStorage.getItem(MAGIC_ITEMS_FILTER_KEY)
-    ? JSON.parse(localStorage.getItem(MAGIC_ITEMS_FILTER_KEY))
-    : DefaultMagicItemFilter,
+  defaultFilter: DefaultMagicItemFilter,
   localStorageKey: MAGIC_ITEMS_FILTER_KEY,
 });
 

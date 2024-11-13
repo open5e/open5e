@@ -2,21 +2,23 @@
   <section class="docs-container container">
     <div class="flex">
       <h1 class="my-2 w-full">Monsters</h1>
-      <api-table-nav
+      <ApiTableNav
         class="w-full"
-        :page-number="pageNo"
-        :last-page-number="lastPageNo"
+        :page-number="pageNo || 1"
+        :last-page-number="lastPageNo || 1"
         @first="firstPage()"
         @next="nextPage()"
         @prev="prevPage()"
         @last="lastPage()"
       />
     </div>
-    <api-table-filter
+
+    <ApiTableFilter
       :update-filters="updateFilter"
       :search="{
         name: 'Search Monsters',
         filterField: 'name__icontains',
+        value: filter.name__icontains,
       }"
       :select-fields="[
         {
@@ -92,16 +94,13 @@
   </section>
 </template>
 
-<script setup>
-import { MONSTER_FILTER_KEY } from '~/composables/monsters.ts';
+<script setup lang="ts">
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // Set up filters
 const { filter, debouncedFilter, updateFilter } = useFilterState({
-  initialFilters: localStorage.getItem(MONSTER_FILTER_KEY)
-    ? JSON.parse(localStorage.getItem(MONSTER_FILTER_KEY))
-    : DefaultMonsterFilter,
+  defaultFilter: DefaultMonsterFilter,
   localStorageKey: MONSTER_FILTER_KEY,
 });
 
