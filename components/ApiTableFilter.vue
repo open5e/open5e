@@ -10,6 +10,7 @@
         :id="search?.name"
         :name="search?.name"
         placeholder="Search..."
+        :value="search?.value"
         class="w-20 bg-transparent pl-6 outline-none transition-colors focus:w-auto focus:bg-fog dark:focus:bg-basalt sm:w-auto"
         @input="updateFilters(search?.filterField, $event.target?.value ?? '')"
       />
@@ -69,7 +70,8 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+// TODO: Set up types for these props once ESLint supports use of defineProps<> so we can pass in generics for the filters we're using
 const props = defineProps({
   search: { type: Object, default: undefined },
   selectFields: { type: Array, default: () => [] },
