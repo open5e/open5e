@@ -6,29 +6,21 @@ export type FilterStateOptions<T> = {
   debounceTimeMs?: number;
 };
 
+const filter = ref({});
+
 export function useFilterState<T extends Record<string, any>>(
   options?: FilterStateOptions<T>
 ) {
-  const filter = ref<T>({});
+  const filterInitialised = computed(() => {
+    return Object.keys(filter.value).length > 0;
+  });
+
+  if (!filterInitialised && options?.initialFilters) {
+    setFilter(options.initialFilters);
+  }
 
   function setFilter<T>(filterToSet) {
     filter.value = filterToSet;
-    if (options?.localStorageKey && import.meta.client) {
-      localStorage.setItem(
-        options.localStorageKey,
-        JSON.stringify(filterToSet)
-      );
-    }
-  }
-
-  if (
-    options?.localStorageKey &&
-    import.meta.client &&
-    localStorage.getItem(options.localStorageKey)
-  ) {
-    setFilter(JSON.parse(localStorage.getItem(options.localStorageKey)));
-  } else if (options?.initialFilters) {
-    setFilter(options.initialFilters);
   }
 
   const enabledFiltersCount = computed(() => {
