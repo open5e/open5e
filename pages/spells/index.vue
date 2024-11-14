@@ -2,7 +2,8 @@
   <section class="docs-container container">
     <div class="flex">
       <h1 class="my-2 w-full">Spells</h1>
-      <api-table-nav
+
+      <ApiTableNav
         class="w-full"
         :page-number="pageNo"
         :last-page-number="lastPageNo"
@@ -13,8 +14,8 @@
       />
     </div>
 
-    <api-table-filter
-      :update-filters="updateFilter"
+    <ApiTableFilter
+      :filter="filter"
       :search="{
         name: 'Search Spells',
         filterField: 'name__contains',
@@ -64,7 +65,7 @@
     />
 
     <!-- RESULTS TABLE -->
-    <api-results-table
+    <ApiResultsTable
       :data="data?.results"
       :cols="[
         {
@@ -111,14 +112,20 @@ const fields = ['key', 'name', 'document', 'level', 'school', 'classes'].join(
   ','
 );
 
-const { debouncedFilter, updateFilter } = useFilterState();
+const filter = useFilterState({
+  initialFilters: {
+    name__contains: '',
+    school__key: '',
+    classes__key__in: '',
+  },
+});
 
 // Fetch a page of results and pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.spells,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  filter: debouncedFilter,
+  filter: filter.debouncedFilter,
   params: {
     fields,
     document__fields: ['name', 'key'].join(','),

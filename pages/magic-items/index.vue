@@ -2,6 +2,7 @@
   <section class="docs-container container">
     <div class="flex justify-between">
       <h1 class="my-2 w-full">Magic Items</h1>
+
       <ApiTableNav
         :page-number="pageNo || 1"
         :last-page-number="lastPageNo || 1"
@@ -13,17 +14,15 @@
     </div>
 
     <ApiTableFilter
-      :update-filters="updateFilter"
+      :filter="filter"
       :search="{
         name: 'Search Magic Items',
         filterField: 'name__icontains',
-        value: filter.name__icontains,
       }"
       :select-fields="[
         {
           name: 'Rarity',
           filterField: 'rarity',
-          value: filter.rarity,
           options: MAGIC_ITEMS_RARITES.map((rarity) => ({
             name: rarity,
             value: rarity.toLowerCase().split(' ').join('-'),
@@ -32,7 +31,6 @@
         {
           name: 'Category',
           filterField: 'category',
-          value: filter.category,
           options: MAGIC_ITEMS_TYPES.map((type) => ({
             name: type,
             value: type.toLowerCase().split(' ').join('-'),
@@ -43,12 +41,11 @@
         {
           name: 'Attunement',
           filterField: 'requires_attunement',
-          value: filter.requires_attunement,
         },
       ]"
     />
 
-    <api-results-table
+    <ApiResultsTable
       v-model="debouncedFilter"
       :data="data?.results"
       :cols="[
@@ -86,8 +83,8 @@
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // Set up filters
-const { debouncedFilter, updateFilter, filter } = useFilterState({
-  defaultFilter: DefaultMagicItemFilter,
+const filter = useFilterState({
+  initialFilters: DefaultMagicItemFilter,
   localStorageKey: MAGIC_ITEMS_FILTER_KEY,
 });
 
@@ -106,7 +103,7 @@ const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.magicitems,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  filter: debouncedFilter,
+  filter: filter.debouncedFilter,
   params: {
     is_magic_item: true,
     fields,

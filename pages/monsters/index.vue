@@ -2,6 +2,7 @@
   <section class="docs-container container">
     <div class="flex">
       <h1 class="my-2 w-full">Monsters</h1>
+
       <ApiTableNav
         class="w-full"
         :page-number="pageNo || 1"
@@ -14,17 +15,15 @@
     </div>
 
     <ApiTableFilter
-      :update-filters="updateFilter"
+      :filter="filter"
       :search="{
         name: 'Search Monsters',
         filterField: 'name__icontains',
-        value: filter.name__icontains,
       }"
       :select-fields="[
         {
           name: 'Type',
           filterField: 'type',
-          value: filter.type,
           options: MONSTER_TYPES_LIST.map((monsterType) => ({
             name: monsterType,
             value: monsterType.toLowerCase(),
@@ -33,7 +32,6 @@
         {
           name: 'Size',
           filterField: 'size',
-          value: filter.size,
           options: MONSTER_SIZES_LIST.map((monsterSize) => ({
             name: monsterSize,
             value: monsterSize.toLowerCase(),
@@ -42,7 +40,6 @@
         {
           name: 'CR (min)',
           filterField: 'challenge_rating_decimal__gte',
-          value: filter.challenge_rating_decimal__gte,
           options: MONSTER_CHALLENGE_RATINGS_MAP.map(([name, value]) => ({
             name: name,
             value: value,
@@ -51,7 +48,6 @@
         {
           name: 'CR (max)',
           filterField: 'challenge_rating_decimal__lte',
-          value: filter.challenge_rating_decimal__lte,
           options: MONSTER_CHALLENGE_RATINGS_MAP.map(([name, value]) => ({
             name: name,
             value: value,
@@ -61,7 +57,8 @@
     />
 
     <h3 ref="results" class="sr-only" tabindex="-1" @keyup.esc="focusFilter" />
-    <api-results-table
+
+    <ApiResultsTable
       v-model="debouncedFilter"
       :data="data?.results"
       :cols="[
@@ -99,8 +96,8 @@
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // Set up filters
-const { filter, debouncedFilter, updateFilter } = useFilterState({
-  defaultFilter: DefaultMonsterFilter,
+const filter = useFilterState({
+  initialFilters: DefaultMonsterFilter,
   localStorageKey: MONSTER_FILTER_KEY,
 });
 
@@ -121,7 +118,7 @@ const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.monsters,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  filter: filter,
+  filter: filter.debouncedFilter,
   params: {
     fields,
     document__fields: 'name,key',
