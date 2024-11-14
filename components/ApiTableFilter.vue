@@ -76,15 +76,13 @@
 
     <button
       :disabled="!filter.canClearFilter.value"
-      aria-label="Clear filter"
-      class="flex items-center gap-0.5 text-sm text-indigo-600 hover:text-blood dark:text-indigo-200 dark:hover:text-red md:text-base"
+      name="Clear filter"
+      class="flex h-8 w-8 items-center justify-center rounded-md bg-slate-800 p-1 text-fog hover:bg-blood"
       :class="{
         invisible: !filter.canClearFilter.value,
       }"
       @click.prevent="filter.clearFilter"
     >
-      <span>Clear</span>
-
       <Icon name="heroicons:x-mark" />
     </button>
   </div>
