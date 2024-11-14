@@ -85,7 +85,6 @@ const { sortBy, isSortDescending, setSortState } = useSortState();
 // Set up filters
 const filter = useFilterState({
   initialFilters: DefaultMagicItemFilter,
-  localStorageKey: MAGIC_ITEMS_FILTER_KEY,
 });
 
 // fields to fetch from API to populate table

@@ -98,7 +98,6 @@ const { sortBy, isSortDescending, setSortState } = useSortState();
 // Set up filters
 const filter = useFilterState({
   initialFilters: DefaultMonsterFilter,
-  localStorageKey: MONSTER_FILTER_KEY,
 });
 
 // fields to fetch from API to populate table

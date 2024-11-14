@@ -2,7 +2,6 @@ import { debouncedRef } from '@vueuse/core';
 
 export type FilterStateOptions<T> = {
   initialFilters?: T;
-  localStorageKey?: string;
   debounceTimeMs?: number;
 };
 
