@@ -14,7 +14,7 @@
     </div>
 
     <ApiTableFilter
-      :filter="filter"
+      :filter-state="filterState"
       :search="{
         name: 'Search Magic Items',
         filterField: 'name__icontains',
@@ -79,13 +79,14 @@
 </template>
 
 <script setup lang="ts">
+// Set up filters
+const filterState = useFilterState({
+  key: 'magicItems',
+  fields: DefaultMagicItemFilter,
+});
+
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
-
-// Set up filters
-const filter = useFilterState({
-  initialFilters: DefaultMagicItemFilter,
-});
 
 // fields to fetch from API to populate table
 const fields = [
@@ -102,7 +103,7 @@ const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.magicitems,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  filter: filter.debouncedFilter,
+  filter: filterState.debouncedFilter,
   params: {
     is_magic_item: true,
     fields,

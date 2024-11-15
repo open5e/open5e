@@ -15,7 +15,7 @@
     </div>
 
     <ApiTableFilter
-      :filter="filter"
+      :filter-state="filterState"
       :search="{
         name: 'Search Monsters',
         filterField: 'name__icontains',
@@ -92,13 +92,14 @@
 </template>
 
 <script setup lang="ts">
+// Set up filters
+const filterState = useFilterState({
+  key: 'monsters',
+  fields: DefaultMonsterFilter,
+});
+
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
-
-// Set up filters
-const filter = useFilterState({
-  initialFilters: DefaultMonsterFilter,
-});
 
 // fields to fetch from API to populate table
 const fields = [
@@ -117,7 +118,7 @@ const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.monsters,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  filter: filter.debouncedFilter,
+  filter: filterState.debouncedFilter,
   params: {
     fields,
     document__fields: 'name,key',

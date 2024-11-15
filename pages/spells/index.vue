@@ -15,7 +15,7 @@
     </div>
 
     <ApiTableFilter
-      :filter="filter"
+      :filter-state="filterState"
       :search="{
         name: 'Search Spells',
         filterField: 'name__contains',
@@ -104,6 +104,16 @@
 </template>
 
 <script setup>
+// Set up filters
+const filterState = useFilterState({
+  key: 'spells',
+  fields: {
+    name__contains: '',
+    school__key: '',
+    classes__key__in: '',
+  },
+});
+
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
@@ -112,20 +122,12 @@ const fields = ['key', 'name', 'document', 'level', 'school', 'classes'].join(
   ','
 );
 
-const filter = useFilterState({
-  initialFilters: {
-    name__contains: '',
-    school__key: '',
-    classes__key__in: '',
-  },
-});
-
 // Fetch a page of results and pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.spells,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  filter: filter.debouncedFilter,
+  filter: filterState.debouncedFilter,
   params: {
     fields,
     document__fields: ['name', 'key'].join(','),

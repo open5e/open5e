@@ -11,10 +11,13 @@
         :id="search?.name"
         :name="search?.name"
         placeholder="Search..."
-        :value="filter.currentFilter.value[search.filterField]"
+        :value="filterState.fieldsState.value[search.filterField]"
         class="w-20 bg-transparent pl-6 outline-none transition-colors focus:w-auto focus:bg-fog dark:focus:bg-basalt sm:w-auto"
         @input="
-          filter.updateFilter(search?.filterField, $event.target?.value ?? '')
+          filterState.updateField(
+            search?.filterField,
+            $event.target?.value ?? ''
+          )
         "
       />
     </div>
@@ -34,8 +37,10 @@
         :key="field.name"
         :name="field.name"
         class="cursor-pointer bg-transparent fill-red text-center"
-        :value="filter.currentFilter.value[field.filterField]"
-        @input="filter.updateFilter(field.filterField, $event?.target.value)"
+        :value="filterState.fieldsState.value[field.filterField]"
+        @input="
+          filterState.updateField(field.filterField, $event?.target.value)
+        "
       >
         <option value="">-</option>
 
@@ -63,10 +68,10 @@
         :id="checkbox.name"
         type="checkbox"
         :name="checkbox.filterField"
-        :checked="filter.currentFilter.value[checkbox.filterField] === true"
+        :checked="filterState.fieldsState.value[checkbox.filterField] === true"
         class="my-1 size-full accent-blood"
         @input="
-          filter.updateFilter(
+          filterState.updateFilter(
             checkbox.filterField,
             $event.target.checked ? true : undefined
           )
@@ -75,13 +80,13 @@
     </div>
 
     <button
-      :disabled="!filter.canClearFilter.value"
+      :disabled="!filterState.canClearFilter.value"
       name="Clear filter"
       class="flex h-8 w-8 items-center justify-center rounded-md bg-slate-800 p-1 text-fog hover:bg-blood"
       :class="{
-        invisible: !filter.canClearFilter.value,
+        invisible: !filterState.canClearFilter.value,
       }"
-      @click.prevent="filter.clearFilter"
+      @click.prevent="filterState.clearFilter"
     >
       <Icon name="heroicons:x-mark" />
     </button>
@@ -91,7 +96,7 @@
 <script setup lang="ts">
 // TODO: Set up types for these props once ESLint supports use of defineProps<> so we can pass in generics for the filters we're using
 const props = defineProps({
-  filter: { type: Object, required: true }, // This is the return value of useFilterState // TODO: When ESLint supports defineProps<> we could type this properly
+  filterState: { type: Object, required: true }, // This is the return value of useFilterState // TODO: When ESLint supports defineProps<> we could type this properly
   search: { type: Object, default: undefined },
   selectFields: { type: Array, default: () => [] },
   checkboxFields: { type: Array, default: () => [] },

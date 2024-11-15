@@ -15,7 +15,7 @@
     </div>
 
     <ApiTableFilter
-      :filter="filter"
+      :filter-state="filterState"
       :search="{
         name: 'Search Rules',
         filterField: 'name__contains',
@@ -39,20 +39,22 @@
 </template>
 
 <script setup>
-const { sortBy, isSortDescending, setSortState } = useSortState();
-
-const filter = useFilterState({
-  initialFilters: {
+// Set up filters
+const filterState = useFilterState({
+  key: 'rules',
+  fields: {
     name__contains: '',
   },
 });
+
+const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fetch a page of data from API, and pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.rules,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  filter: filter.debouncedFilter,
+  filter: filterState.debouncedFilter,
   params: {
     fields: ['name', 'key', 'document'].join(','),
     document__fields: ['name', 'key'].join(','),

@@ -14,7 +14,7 @@
     </div>
 
     <ApiTableFilter
-      :filter="filter"
+      :filter-state="filterState"
       :search="{
         name: 'Search Classes',
         filterField: 'name__contains',
@@ -38,19 +38,21 @@
 </template>
 
 <script setup>
+// Set up filters
+const filterState = useFilterState({
+  key: 'classes',
+  fields: { name__contains: '' },
+});
+
 // state handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
-
-const filter = useFilterState({
-  initialFilters: { name__contains: '' },
-});
 
 // Fetch a page of classes & pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.classes,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending ?? true,
-  filter: filter.debouncedFilter,
+  filter: filterState.debouncedFilter,
   params: {
     is_subclass: false,
     fields: ['key', 'name', 'document'].join(),
