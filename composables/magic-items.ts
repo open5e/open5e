@@ -13,10 +13,6 @@ export const DefaultMagicItemFilter: Readonly<MagicItemFilter> = {
   requires_attunement: undefined,
 };
 
-export const copyMagicItemFilter = (): MagicItemFilter => {
-  return { ...DefaultMagicItemFilter };
-};
-
 export const MAGIC_ITEMS_RARITES = [
   'Common',
   'Uncommon',
