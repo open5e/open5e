@@ -71,7 +71,7 @@
         :checked="filterState.fieldsState.value[checkbox.filterField] === true"
         class="my-1 size-full accent-blood"
         @input="
-          filterState.updateFilter(
+          filterState.updateField(
             checkbox.filterField,
             $event.target.checked ? true : undefined
           )
