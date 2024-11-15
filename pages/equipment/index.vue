@@ -47,7 +47,7 @@
     />
 
     <ApiResultsTable
-      v-model="filter.debouncedFilter"
+      v-model="filterState.debouncedFilter"
       :data="data?.results"
       :cols="[
         {
