@@ -79,17 +79,15 @@
       />
     </div>
 
-    <button
-      :disabled="!filterState.canClearFilter.value"
+    <ApiTableButton
       name="Clear filter"
-      class="flex h-8 w-8 items-center justify-center rounded-md bg-slate-800 p-1 text-fog hover:bg-blood"
+      :disabled="!filterState.canClearFilter.value"
+      icon="heroicons:x-mark"
       :class="{
         invisible: !filterState.canClearFilter.value,
       }"
-      @click.prevent="filterState.clearFilter"
-    >
-      <Icon name="heroicons:x-mark" />
-    </button>
+      @click="filterState.clearFilter"
+    />
   </div>
 </template>
 
