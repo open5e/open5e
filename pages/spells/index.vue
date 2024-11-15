@@ -103,9 +103,9 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // Set up filters
-const filterState = useFilterState({
+const filterState = useFilterState<SpellFilter>({
   key: 'spells',
   fields: {
     name__contains: '',

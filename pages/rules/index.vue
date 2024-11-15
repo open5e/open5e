@@ -38,9 +38,9 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // Set up filters
-const filterState = useFilterState({
+const filterState = useFilterState<{ name__contains: string }>({
   key: 'rules',
   fields: {
     name__contains: '',

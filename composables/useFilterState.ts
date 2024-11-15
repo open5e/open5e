@@ -1,70 +1,59 @@
 // This composable maintains the state of multiple filters, eg. monsters, magic items, classes
 import { debouncedRef } from '@vueuse/core';
 
-export type FilterStateOptions<T> = {
+export type FilterStateOptions<T extends Record<string, any>> = {
   key: string;
   fields?: T;
   debounceTimeMs?: number;
 };
 
-type FilterFieldKey = string;
-type FilterFieldValue = string;
-type Fields = Record<FilterFieldKey, FilterFieldValue>;
-
-type FilterKey = string;
-type Filters = Record<FilterKey, Fields>;
-
-const filters = ref<Filters>({});
+// Reactive global store for filters
+const filters = ref<Record<string, Record<string, any>>>({});
 
 export function useFilterState<T extends Record<string, any>>(
-  options?: FilterStateOptions<T>
+  options: FilterStateOptions<T>
 ) {
-  const fieldsState = computed<Fields>(() => {
-    return filters.value[options.key] || {};
-  });
+  const { key, fields = {} as T, debounceTimeMs = 300 } = options;
 
-  const filterInitialised = computed(() => {
-    return Object.keys(fieldsState.value).length > 0;
-  });
-
-  if (!filterInitialised && options?.fields) {
-    setFilterFields(options.fields);
+  // Initialize filter fields if not already set
+  if (!filters.value[key]) {
+    filters.value[key] = { ...fields };
   }
 
-  function setFilterFields<T>(filterFieldsToSet: Fields) {
-    filters.value = {
-      ...filters.value,
-      [options.key]: filterFieldsToSet,
-    };
-  }
+  const fieldsState = computed(() => filters.value[key] || ({} as T));
 
-  const filteringByFields = computed(() => {
-    return Object.values(fieldsState.value).filter(
-      (value) => value !== undefined && value !== ''
-    );
-  });
+  const filterInitialized = computed(
+    () => Object.keys(fieldsState.value).length > 0
+  );
+
+  const filteringByFields = computed(() =>
+    Object.keys(fieldsState.value).filter((key) => !!fieldsState.value[key])
+  );
 
   const canClearFilter = computed(() => filteringByFields.value.length > 0);
 
-  function clearFilter() {
-    setFilterFields({});
+  const debouncedFilter = debouncedRef(fieldsState, debounceTimeMs);
+
+  function setFilterFields(newFields: Partial<T>) {
+    filters.value[key] = { ...filters.value[key], ...newFields };
   }
 
-  const debouncedFilter = debouncedRef(
-    fieldsState,
-    options?.debounceTimeMs || 300
-  );
+  function clearFilter() {
+    filters.value[key] = {} as T;
+  }
 
-  function updateField(key: FilterFieldKey, value: FilterFieldValue) {
-    setFilterFields({ ...fieldsState.value, [key]: value });
+  function updateField<K extends keyof T>(fieldKey: K, fieldValue: T[K]) {
+    setFilterFields({ [fieldKey]: fieldValue } as Partial<T>);
   }
 
   return {
+    fieldsState,
+    filterInitialized,
+    filteringByFields,
+    canClearFilter,
+    debouncedFilter,
+    setFilterFields,
     clearFilter,
     updateField,
-    filteringByFields,
-    fieldsState,
-    debouncedFilter,
-    canClearFilter,
   };
 }

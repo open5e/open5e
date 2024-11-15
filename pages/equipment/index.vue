@@ -69,9 +69,9 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // Set up filters
-const filterState = useFilterState({
+const filterState = useFilterState<{ name__icontains: string }>({
   key: 'equipment',
   fields: {
     name__icontains: '',

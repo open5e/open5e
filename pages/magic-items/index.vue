@@ -80,7 +80,7 @@
 
 <script setup lang="ts">
 // Set up filters
-const filterState = useFilterState({
+const filterState = useFilterState<MagicItemFilter>({
   key: 'magicItems',
   fields: DefaultMagicItemFilter,
 });

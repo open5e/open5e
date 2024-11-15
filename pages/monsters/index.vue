@@ -93,7 +93,7 @@
 
 <script setup lang="ts">
 // Set up filters
-const filterState = useFilterState({
+const filterState = useFilterState<MonsterFilter>({
   key: 'monsters',
   fields: DefaultMonsterFilter,
 });
