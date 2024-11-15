@@ -40,19 +40,7 @@
         {{ monster.alignment }}
       </span>
 
-      <!--
-        Source-tag text param is ugly, but might require work on the API first.
-        Workaround for key not being returned from API. Get it from URL instead
-      -->
-      <source-tag
-        :title="monster.document.name"
-        :text="
-          monster.document.url
-            .split('/')
-            .filter((slug) => slug)
-            .slice(-1)[0]
-        "
-      />
+      <source-tag :title="monster.document.name" :text="monster.document.key" />
     </p>
 
     <ul>
@@ -365,7 +353,7 @@
         :key="environemnt.id"
         class="text-sm after:content-['.'] [&:not(:last-child)]:after:content-[',_']"
       >
-        {{ environemnt }}
+        {{ environemnt.name }}
       </span>
     </section>
 
@@ -392,9 +380,15 @@
 
 <script setup>
 const route = useRoute();
+const params = {
+  environments__fields: 'name',
+  languages__fields: 'name',
+  document__fields: 'name,key,permalink',
+};
 const { data: monster } = useFindOne(
   API_ENDPOINTS.monsters,
-  useRoute().params.id
+  useRoute().params.id,
+  { params }
 );
 
 // filter "unit" prop from "speeds"
