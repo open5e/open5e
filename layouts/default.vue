@@ -18,23 +18,27 @@
         </nuxt-link>
 
         <!-- SOURCE MODAL -->
-        <div
-          class="cursor-pointer bg-red-600 px-4 py-2 hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
+        <button
+          class="cursor-pointer bg-red-600 px-4 py-2 text-left hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
           @click="showModal = true"
         >
-          <span v-if="documents">
-            {{ no_selected_sources }} of {{ no_avilable_sources }} sources
-            <Icon
+          <span v-if="documents && no_selected_sources > 0">
+            {{ no_selected_sources }} of {{ no_available_sources }} sources
+          </span>
+          <span v-else class="after:content-['_']">Select Sources</span>
+
+          <span v-if="isLoadingData">
+            <icon name="line-md:loading-twotone-loop" />
+          </span>
+          <span v-else>
+            <icon
               name="heroicons:pencil-square"
               class="h-5 w-5 text-white"
               aria-hidden="true"
             />
           </span>
-          <span v-else>Loading sources...</span>
-          <span v-show="isLoadingData">
-            <Icon name="line-md:loading-twotone-loop" />
-          </span>
-        </div>
+        </button>
+
         <!-- SEARCH BAR -->
         <div class="relative">
           <div
@@ -66,8 +70,8 @@
               v-show="useRoute().path.indexOf(section.route) != -1"
               class="bg-slate-800/30 py-2"
             >
-              <li v-for="page in section.subroutes" :key="page.slug">
-                <nav-link :to="`${section.route}/${page.slug}`" :indent="true">
+              <li v-for="page in section.subroutes" :key="page.key">
+                <nav-link :to="`${section.route}/${page.key}`" :indent="true">
                   {{ page.name }}
                 </nav-link>
               </li>
@@ -122,122 +126,64 @@
 import { useRoute } from 'nuxt/app';
 import { computed } from 'vue';
 
-const spellcastingClasses = [
-  { name: 'Spells by Class', slug: 'by-class' },
-  { name: 'Bard Spells', slug: 'by-class/bard' },
-  { name: 'Cleric Spells', slug: 'by-class/cleric' },
-  { name: 'Druid Spells', slug: 'by-class/druid' },
-  { name: 'Paladin Spells', slug: 'by-class/paladin' },
-  { name: 'Ranger Spells', slug: 'by-class/ranger' },
-  { name: 'Wizard Spells', slug: 'by-class/wizard' },
-  { name: 'Warlock Spells', slug: 'by-class/warlock' },
-];
-const showSidebar = ref(false);
-
-const $route = useRoute();
-
-const crumbs = computed(() => {
-  let url = '';
-
-  return useRoute()
-    .fullPath.split('/')
-    .map((segment) => {
-      // ignore initial & trailing slashes
-      if (segment === '' || segment === '/') {
-        return;
-      }
-
-      // rebuild link urls segment by segment
-      url += `/${segment}`;
-
-      // seperate segment title & query params
-      const [title, queryParams] = segment.split('?');
-
-      // extract & format the search params if on the /search route
-      let searchParam = '';
-      if (title === 'search' && queryParams) {
-        searchParam = queryParams.split('text=')[1].split('+').join(' ');
-      }
-
-      // return a
-      return {
-        url,
-        title: title // format crumb title
-          .split('-')
-          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-          .join(' '),
-        subtitle: searchParam,
-      };
-    })
-    .filter((breadcrumb) => breadcrumb);
-});
-provide('crumbs', crumbs);
-
+// Generate page title from Breadcrumbs
 const BASE_TITLE = 'Open5e';
-
+const crumbs = useBreadcrumbs();
 const title = computed(() => {
-  if (crumbs.value.length === 0) {
-    return BASE_TITLE;
-  }
-  const crumb_titles = crumbs.value.map((crumb) => crumb.title);
-  const reversed_titles = [...crumb_titles].reverse();
-
-  return reversed_titles.join(' - ') + ` - ${BASE_TITLE}`;
+  if (crumbs.value.length === 0) return BASE_TITLE;
+  return `${crumbs.value.at(-1).title} – ${BASE_TITLE}`;
 });
 useHead({ title: title });
-const searchText = ref($route.query.text);
 
+const showSidebar = ref(false);
+const route = useRoute();
 watch(
-  () => $route.path,
-  () => {
-    showSidebar.value = false;
-  }
+  () => route.path,
+  () => (showSidebar.value = false)
 );
+
+const searchText = ref(route.query.text);
 
 const showModal = ref(false);
 const { sources } = useSourcesList();
 
 const no_selected_sources = computed(() => sources.value.length);
-const { data: documents } = useDocuments();
+
+const { data: documents } = useDocuments({
+  fields: 'none', // we only need to document count, so we can omit all fields
+  depth: 0,
+});
+
 const { data: classes } = useFindMany(API_ENDPOINTS.classes, {
-  fields: ['name', 'slug'].join(),
+  fields: ['name', 'key'].join(),
+  is_subclass: false,
 });
-const { data: races } = useFindMany(API_ENDPOINTS.races, {
-  fields: ['name', 'slug'].join(),
-});
-const { data: combat_sections } = useSections('Combat');
-const { data: equipment_sections } = useSections('Equipment');
-const { data: gameplay_sections } = useSections('Gameplay Mechanics');
-const { data: rules_sections } = useSections('Rules');
 
-const { data: character_sections } = useSections(
-  'Characters',
-  'Character Advancement'
-);
-
-const no_avilable_sources = computed(() => documents.value?.length ?? 0);
+const no_available_sources = computed(() => documents.value?.length ?? 0);
 
 const isLoadingData = useIsFetching();
 
 const routes = computed(() => [
-  {
-    title: 'Characters',
-    route: '/characters',
-    subroutes: character_sections.value ?? [],
-  },
   {
     title: 'Classes',
     route: '/classes',
     subroutes: classes.value ?? [],
   },
   {
-    title: 'Conditions',
-    route: '/conditions',
-  },
-  {
     title: 'Races',
     route: '/races',
-    subroutes: races.value ?? [],
+  },
+  {
+    title: 'Monsters',
+    route: '/monsters',
+  },
+  {
+    title: 'Magic Items',
+    route: '/magic-items',
+  },
+  {
+    title: 'Spells',
+    route: '/spells',
   },
   {
     title: 'Backgrounds',
@@ -248,37 +194,16 @@ const routes = computed(() => [
     route: '/feats',
   },
   {
-    title: 'Combat',
-    route: '/combat',
-    subroutes: combat_sections.value ?? [],
-  },
-  {
     title: 'Equipment',
     route: '/equipment',
-    subroutes: equipment_sections.value ?? [],
   },
   {
-    title: 'Magic Items',
-    route: '/magic-items',
+    title: 'Conditions',
+    route: '/conditions',
   },
   {
-    title: 'Spells',
-    route: '/spells',
-    subroutes: spellcastingClasses,
-  },
-  {
-    title: 'Monsters',
-    route: '/monsters',
-  },
-  {
-    title: 'Gameplay Mechanics',
-    route: '/gameplay-mechanics',
-    subroutes: gameplay_sections.value ?? [],
-  },
-  {
-    title: 'Running a Game',
-    route: '/running',
-    subroutes: rules_sections.value ?? [],
+    title: 'Rules',
+    route: '/rules',
   },
   {
     title: 'API Docs',
@@ -286,10 +211,10 @@ const routes = computed(() => [
   },
 ]);
 
-const $router = useRouter();
+const router = useRouter();
 
 function doSearch(searchText) {
-  $router.push({ name: 'search', query: { text: searchText } });
+  router.push({ name: 'search', query: { text: searchText } });
   showSidebar.value = false;
 }
 

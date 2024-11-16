@@ -44,9 +44,6 @@ table {
   h3,
   h5,
   h6 {
-    display: flex;
-    align-content: flex-start;
-
     .toc-anchor {
       order: 2;
       display: none;
@@ -99,13 +96,15 @@ table {
   }
   p,
   ul,
+  dt,
   hr,
   h1,
   h2,
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  section {
     max-width: 40rem;
   }
   th:first-child {
