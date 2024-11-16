@@ -87,6 +87,10 @@ export default defineNuxtConfig({
     cssPath: "~/styles/tailwind.css",
   },
 
+  eslint: {
+    // options here
+  },
+
   typescript: {
     strict: false,
   },

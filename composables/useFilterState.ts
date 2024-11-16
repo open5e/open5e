@@ -1,4 +1,5 @@
 // This composable maintains the state of multiple filters, eg. monsters, magic items, classes
+import { ref, computed } from 'vue'
 import { debouncedRef } from '@vueuse/core';
 
 export type FilterStateOptions<T extends Record<string, any>> = {
@@ -9,6 +10,8 @@ export type FilterStateOptions<T extends Record<string, any>> = {
 
 // Reactive global store for filters
 const filters = ref<Record<string, Record<string, any>>>({});
+
+export type FilterState<T> = typeof useFilterState
 
 export function useFilterState<T extends Record<string, any>>(
   options: FilterStateOptions<T>
@@ -43,7 +46,7 @@ export function useFilterState<T extends Record<string, any>>(
   }
 
   function updateField<K extends keyof T>(fieldKey: K, fieldValue: T[K]) {
-    setFilterFields({ [fieldKey]: fieldValue } as Partial<T>);
+    filters.value[key] = { ...filters.value[key], [fieldKey]: fieldValue };
   }
 
   return {

@@ -174,7 +174,7 @@ export const useFindOne = (
   const { get } = useAPI();
 
   const params = options?.params;
-  let formattedParams = [];
+  const formattedParams = [];
   for (const name in params) {
     formattedParams.push(`${name}=${params[name]}`);
   }

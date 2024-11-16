@@ -38,8 +38,10 @@
 </template>
 
 <script setup lang="ts">
+type ClassesFilter = { name__contains: string }
+
 // Set up filters
-const filterState = useFilterState<{ name__contains: string }>({
+const filterState = useFilterState<ClassesFilter>({
   key: "classes",
   fields: { name__contains: "" },
 });

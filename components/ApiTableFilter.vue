@@ -92,11 +92,18 @@
 </template>
 
 <script setup lang="ts">
+defineProps<
+  {
+    filterState: UseFilterState
+  }
+>()
+
+
 // TODO: Set up types for these props once ESLint supports use of defineProps<> so we can pass in generics for the filters we're using
-defineProps({
-  filterState: { type: Object, required: true }, // This is the return value of useFilterState // TODO: When ESLint supports defineProps<> we could type this properly
-  search: { type: Object, default: undefined },
-  selectFields: { type: Array, default: () => [] },
-  checkboxFields: { type: Array, default: () => [] },
-});
+// defineProps({
+//   filterState: { type: Object, required: true }, // This is the return value of useFilterState // TODO: When ESLint supports defineProps<> we could type this properly
+//   search: { type: Object, default: undefined },
+//   selectFields: { type: Array, default: () => [] },
+//   checkboxFields: { type: Array, default: () => [] },
+// });
 </script>
