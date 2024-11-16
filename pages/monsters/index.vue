@@ -2,18 +2,20 @@
   <section class="docs-container container">
     <div class="flex">
       <h1 class="my-2 w-full">Monsters</h1>
-      <api-table-nav
+
+      <ApiTableNav
         class="w-full"
-        :page-number="pageNo"
-        :last-page-number="lastPageNo"
+        :page-number="pageNo || 1"
+        :last-page-number="lastPageNo || 1"
         @first="firstPage()"
         @next="nextPage()"
         @prev="prevPage()"
         @last="lastPage()"
       />
     </div>
-    <api-table-filter
-      :update-filters="update"
+
+    <ApiTableFilter
+      :filter-state="filterState"
       :search="{
         name: 'Search Monsters',
         filterField: 'name__icontains',
@@ -55,7 +57,8 @@
     />
 
     <h3 ref="results" class="sr-only" tabindex="-1" @keyup.esc="focusFilter" />
-    <api-results-table
+
+    <ApiResultsTable
       v-model="debouncedFilter"
       :data="data?.results"
       :cols="[
@@ -88,20 +91,15 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
+// Set up filters
+const filterState = useFilterState<MonsterFilter>({
+  key: 'monsters',
+  fields: DefaultMonsterFilter,
+});
+
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
-
-// Set up filters
-const displayFilter = ref(false);
-const {
-  filter,
-  debouncedFilter,
-  canClearFilter,
-  enabeledFiltersCount,
-  clear,
-  update,
-} = useFilterState(DefaultMonsterFilter);
 
 // fields to fetch from API to populate table
 const fields = [
@@ -120,7 +118,7 @@ const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.monsters,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  filter: filter,
+  filter: filterState.debouncedFilter,
   params: {
     fields,
     document__fields: 'name,key',

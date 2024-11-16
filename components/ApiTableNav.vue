@@ -2,20 +2,13 @@
   <div class="grid justify-end">
     <ul class="flex">
       <li v-for="button in buttons" :key="button.name">
-        <button
-          class="mt-1 rounded-md border-2 px-2 py-1 text-fog"
+        <ApiTableButton
+          :name="button.name"
+          :icon="button.icon"
           :disabled="!button.isActive.value"
-          :class="
-            button.isActive.value
-              ? 'bg-blood hover:bg-fog hover:text-blood'
-              : 'bg-slate-800'
-          "
-          :aria-roledescription="button.name"
+          class="mt-1 border-2"
           @click="button.onClick()"
-        >
-          <span class="sr-only">{{ button.name }}</span>
-          <icon :name="button.icon" />
-        </button>
+        />
       </li>
     </ul>
     <label class="block text-center font-bold">
@@ -36,25 +29,25 @@ const isNotLastPage = computed(() => props.pageNumber < props.lastPageNumber);
 
 const buttons = [
   {
-    name: 'To first page',
+    name: 'First page',
     isActive: isNotFirstPage,
     onClick: () => emit('first'),
     icon: 'heroicons:chevron-double-left',
   },
   {
-    name: 'Previous Page',
+    name: 'Previous page',
     isActive: isNotFirstPage,
     onClick: () => emit('prev'),
     icon: 'heroicons:chevron-left',
   },
   {
-    name: 'Next Page',
+    name: 'Next page',
     isActive: isNotLastPage,
     onClick: () => emit('next'),
     icon: 'heroicons:chevron-right',
   },
   {
-    name: 'To Last page',
+    name: 'Last page',
     isActive: isNotLastPage,
     onClick: () => emit('last'),
     icon: 'heroicons:chevron-double-right',

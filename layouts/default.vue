@@ -62,7 +62,9 @@
         <!-- Navigation Links -->
         <ul class="text-inherit text-white">
           <li v-for="section in routes" :key="section.title">
-            <nav-link :to="section.route"> {{ section.title }} </nav-link>
+            <nav-link :to="section.route">
+              {{ section.title }}
+            </nav-link>
             <ul
               v-if="section.subroutes"
               v-show="useRoute().path.indexOf(section.route) != -1"
@@ -96,10 +98,10 @@
       >
         <!-- Site Header -->
 
-        <div class="flex h-12 align-middle">
-          <sidebar-toggle @click="toggleSidebar" />
-          <breadcrumb-links class="flex-grow" />
-          <theme-switcher class="inline-block" />
+        <div class="flex h-12 items-center gap-1 px-2 sm:pl-8">
+          <SidebarToggle class="sm:hidden" @click="toggleSidebar" />
+          <BreadcrumbLinks class="flex-grow" />
+          <ThemeSwitcher />
         </div>
 
         <!-- Shade: fades out main content when sidebar expanded on mobile -->
@@ -219,6 +221,7 @@ function doSearch(searchText) {
 function toggleSidebar() {
   showSidebar.value = !showSidebar.value;
 }
+
 function hideSidebar() {
   showSidebar.value = false;
 }

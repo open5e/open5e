@@ -2,7 +2,8 @@
   <section>
     <div class="flex">
       <h1 class="my-2 w-full">Equipment</h1>
-      <api-table-nav
+
+      <ApiTableNav
         :page-number="pageNo"
         :last-page-number="lastPageNo"
         @first="firstPage()"
@@ -12,8 +13,8 @@
       />
     </div>
 
-    <api-table-filter
-      :update-filters="update"
+    <ApiTableFilter
+      :filter-state="filterState"
       :search="{
         name: 'Search Equipment',
         filterField: 'name__icontains',
@@ -45,8 +46,8 @@
       ]"
     />
 
-    <api-results-table
-      v-model="debouncedFilter"
+    <ApiResultsTable
+      v-model="filterState.debouncedFilter"
       :data="data?.results"
       :cols="[
         {
@@ -68,12 +69,17 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
+// Set up filters
+const filterState = useFilterState<{ name__icontains: string }>({
+  key: 'equipment',
+  fields: {
+    name__icontains: '',
+  },
+});
+
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
-
-// Set up filters
-const { debouncedFilter, update } = useFilterState();
 
 const fields = ['key', 'name', 'document', 'category'].join(',');
 const docFields = ['name', 'key'].join(',');
@@ -83,7 +89,7 @@ const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.equipment,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  filter: debouncedFilter,
+  filter: filterState.debouncedFilter,
   params: {
     fields,
     document__fields: docFields,

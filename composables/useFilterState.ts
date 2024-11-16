@@ -1,35 +1,59 @@
+// This composable maintains the state of multiple filters, eg. monsters, magic items, classes
 import { debouncedRef } from '@vueuse/core';
 
+export type FilterStateOptions<T extends Record<string, any>> = {
+  key: string;
+  fields?: T;
+  debounceTimeMs?: number;
+};
+
+// Reactive global store for filters
+const filters = ref<Record<string, Record<string, any>>>({});
+
 export function useFilterState<T extends Record<string, any>>(
-  initialFilters: T,
-  debounceTimeMs = 300
+  options: FilterStateOptions<T>
 ) {
-  const filter = ref({ ...initialFilters }) as Ref<T>;
+  const { key, fields = {} as T, debounceTimeMs = 300 } = options;
 
-  const enabeledFiltersCount = computed(() => {
-    return Object.values(filter.value).filter(
-      (value) => value !== undefined && value !== ''
-    ).length;
-  });
-
-  const canClearFilter = computed(() => enabeledFiltersCount.value > 0);
-
-  function clear() {
-    filter.value = { ...initialFilters };
+  // Initialize filter fields if not already set
+  if (!filters.value[key]) {
+    filters.value[key] = { ...fields };
   }
 
-  const debouncedFilter = debouncedRef(filter, debounceTimeMs);
+  const fieldsState = computed(() => filters.value[key] || ({} as T));
 
-  function update(key: string, value: any) {
-    filter.value = { ...filter.value, [key]: value };
+  const filterInitialized = computed(
+    () => Object.keys(fieldsState.value).length > 0
+  );
+
+  const filteringByFields = computed(() =>
+    Object.keys(fieldsState.value).filter((key) => !!fieldsState.value[key])
+  );
+
+  const canClearFilter = computed(() => filteringByFields.value.length > 0);
+
+  const debouncedFilter = debouncedRef(fieldsState, debounceTimeMs);
+
+  function setFilterFields(newFields: Partial<T>) {
+    filters.value[key] = { ...filters.value[key], ...newFields };
+  }
+
+  function clearFilter() {
+    filters.value[key] = {} as T;
+  }
+
+  function updateField<K extends keyof T>(fieldKey: K, fieldValue: T[K]) {
+    setFilterFields({ [fieldKey]: fieldValue } as Partial<T>);
   }
 
   return {
-    clear,
-    update,
-    enabeledFiltersCount,
-    filter: computed(() => filter.value),
-    debouncedFilter,
+    fieldsState,
+    filterInitialized,
+    filteringByFields,
     canClearFilter,
+    debouncedFilter,
+    setFilterFields,
+    clearFilter,
+    updateField,
   };
 }

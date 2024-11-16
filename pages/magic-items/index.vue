@@ -2,9 +2,10 @@
   <section class="docs-container container">
     <div class="flex justify-between">
       <h1 class="my-2 w-full">Magic Items</h1>
-      <api-table-nav
-        :page-number="pageNo"
-        :last-page-number="lastPageNo"
+
+      <ApiTableNav
+        :page-number="pageNo || 1"
+        :last-page-number="lastPageNo || 1"
         @first="firstPage()"
         @next="nextPage()"
         @prev="prevPage()"
@@ -12,8 +13,8 @@
       />
     </div>
 
-    <api-table-filter
-      :update-filters="update"
+    <ApiTableFilter
+      :filter-state="filterState"
       :search="{
         name: 'Search Magic Items',
         filterField: 'name__icontains',
@@ -44,7 +45,7 @@
       ]"
     />
 
-    <api-results-table
+    <ApiResultsTable
       v-model="debouncedFilter"
       :data="data?.results"
       :cols="[
@@ -77,12 +78,15 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
+// Set up filters
+const filterState = useFilterState<MagicItemFilter>({
+  key: 'magicItems',
+  fields: DefaultMagicItemFilter,
+});
+
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
-
-// Set up filters
-const { debouncedFilter, update } = useFilterState(DefaultMagicItemFilter);
 
 // fields to fetch from API to populate table
 const fields = [
@@ -99,7 +103,7 @@ const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.magicitems,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  filter: debouncedFilter,
+  filter: filterState.debouncedFilter,
   params: {
     is_magic_item: true,
     fields,

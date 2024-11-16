@@ -2,7 +2,8 @@
   <section class="docs-container container">
     <div class="flex">
       <h1 class="my-2">Rules</h1>
-      <api-table-nav
+
+      <ApiTableNav
         class="w-full"
         :page-number="pageNo"
         :last-page-number="lastPageNo"
@@ -13,15 +14,15 @@
       />
     </div>
 
-    <api-table-filter
-      :update-filters="update"
+    <ApiTableFilter
+      :filter-state="filterState"
       :search="{
         name: 'Search Rules',
         filterField: 'name__contains',
       }"
     />
 
-    <api-results-table
+    <ApiResultsTable
       :data="data?.results"
       :cols="[
         {
@@ -37,17 +38,23 @@
   </section>
 </template>
 
-<script setup>
-const { sortBy, isSortDescending, setSortState } = useSortState();
+<script setup lang="ts">
+// Set up filters
+const filterState = useFilterState<{ name__contains: string }>({
+  key: 'rules',
+  fields: {
+    name__contains: '',
+  },
+});
 
-const { debouncedFilter, update } = useFilterState();
+const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fetch a page of data from API, and pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.rules,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
-  filter: debouncedFilter,
+  filter: filterState.debouncedFilter,
   params: {
     fields: ['name', 'key', 'document'].join(','),
     document__fields: ['name', 'key'].join(','),

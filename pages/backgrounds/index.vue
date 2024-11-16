@@ -2,7 +2,8 @@
   <section class="docs-container container">
     <div class="flex">
       <h1 class="my-2">Backgrounds</h1>
-      <api-table-nav
+
+      <ApiTableNav
         class="w-full"
         :page-number="pageNo"
         :last-page-number="lastPageNo"
@@ -13,7 +14,7 @@
       />
     </div>
 
-    <api-results-table
+    <ApiResultsTable
       :data="data?.results"
       :cols="[
         {

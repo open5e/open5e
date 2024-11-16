@@ -28,12 +28,14 @@
     />
     <p class="italic">
       <span>{{ `${monster.size.name} ${monster.type.name}` }}</span>
+
       <span
         v-if="monster.subtype"
         class="before:content-['_('] after:content-[')']"
       >
         {{ monster.subtype }}
       </span>
+
       <span v-if="monster.alignment" class="before:content-[',_']">
         {{ monster.alignment }}
       </span>

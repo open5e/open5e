@@ -256,13 +256,6 @@ export function sortByField(
   });
 }
 
-export type MagicItemsFilter = {
-  name?: string;
-  rarity?: string;
-  type?: string;
-  isAttunementRequired?: boolean;
-};
-
 export const useDocuments = (params: Record<string, any> = {}) => {
   params.depth = '1';
   const { findMany } = useAPI();

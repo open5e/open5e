@@ -2,7 +2,7 @@
   <section class="docs-container container">
     <div class="flex">
       <h1 class="my-2">Classes</h1>
-      <api-table-nav
+      <ApiTableNav
         class="w-full"
         :page-number="pageNo"
         :last-page-number="lastPageNo"
@@ -12,14 +12,15 @@
         @last="lastPage()"
       />
     </div>
-    <api-table-filter
-      :update-filters="update"
+
+    <ApiTableFilter
+      :filter-state="filterState"
       :search="{
         name: 'Search Classes',
         filterField: 'name__contains',
       }"
     />
-    <api-results-table
+    <ApiResultsTable
       endpoint="classes"
       :data="data?.results"
       :cols="[
@@ -36,18 +37,22 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
+// Set up filters
+const filterState = useFilterState<{ name__contains: string }>({
+  key: 'classes',
+  fields: { name__contains: '' },
+});
+
 // state handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
-
-const { debouncedFilter, update } = useFilterState();
 
 // Fetch a page of classes & pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.classes,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending ?? true,
-  filter: debouncedFilter,
+  filter: filterState.debouncedFilter,
   params: {
     is_subclass: false,
     fields: ['key', 'name', 'document'].join(),
