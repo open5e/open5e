@@ -7,8 +7,6 @@
   </span>
 </template>
 
-<script lang="ts" setup>
-const props = defineProps({
-  signature: { type: String, default: '' },
-});
+<script setup lang="ts">
+defineProps<{ type: string }>();
 </script>

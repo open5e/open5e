@@ -1,10 +1,8 @@
 <template>
   <nuxt-link
-    :class="`bold block w-full px-4  text-white hover:bg-slate-800/40 hover:underline
-      dark:hover:bg-slate-600/40 ${
-        useRoute().fullPath === to && 'bg-slate-800 font-bold'
-      } ${indent && 'py-1 pl-8'} ${!indent && 'py-3'}
-      `"
+    :class="`bold block w-full px-4 text-white hover:bg-slate-800/40 hover:underline dark:hover:bg-slate-600/40 ${
+      useRoute().fullPath.includes(to) && 'bg-slate-800 font-bold'
+    } ${indent && 'py-1 pl-8'} ${!indent && 'py-3'} `"
     :to="to"
   >
     <slot />
@@ -15,11 +13,11 @@
 defineProps({
   to: {
     type: String,
-    default: '',
+    default: "",
   },
   title: {
     type: String,
-    default: '',
+    default: "",
   },
   indent: {
     type: Boolean,

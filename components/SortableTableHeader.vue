@@ -1,6 +1,6 @@
 <template>
   <th :aria-sort="isSortDescending" class="align-baseline">
-    <button @click="onClick">
+    <button v-if="sortBy" @click="onClick">
       <span>
         {{ format(title) }}
       </span>
@@ -9,26 +9,30 @@
         class="ml-1"
         :class="isSortingProperty ? 'visible text-blood' : 'invisible'"
       >
-        {{ isSortDescending ? '▲' : '▼' }}
+        {{ isSortDescending ? "▲" : "▼" }}
       </span>
     </button>
+    <span v-else>
+      {{ format(title) }}
+    </span>
   </th>
 </template>
 
 <script setup>
-const emit = defineEmits(['sort']);
+const emit = defineEmits(["sort"]);
 
 const props = defineProps({
-  title: { type: String, default: '' },
+  title: { type: String, default: "" },
+  sortBy: { type: String, default: "" },
   isSortingProperty: { type: Boolean, default: false },
   isSortDescending: { type: Boolean, default: false },
 });
 
 // a list of human-readable subsitutions
 const subsitutions = {
-  level_int: 'Level',
-  dnd_class: 'Classes',
-  cr: 'CR',
+  level_int: "Level",
+  dnd_class: "Classes",
+  cr: "CR",
 };
 
 const format = (input) => {
@@ -37,12 +41,12 @@ const format = (input) => {
   }
   // Replace underscores w/ spaces and capitalise initials
   return input
-    .split('_')
+    .split("_")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
+    .join(" ");
 };
 
 const onClick = () => {
-  emit('sort', props.title);
+  emit("sort", props.sortBy);
 };
 </script>

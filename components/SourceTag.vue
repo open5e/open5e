@@ -13,36 +13,22 @@
 </template>
 
 <script setup>
-import colors from 'tailwindcss/colors';
+import colors from "tailwindcss/colors";
 
-const props = defineProps({
-  text: {
-    default: '',
-    type: String,
-  },
-  title: {
-    default: '',
-    type: String,
-  },
-  textColor: {
-    type: String,
-    default: colors.slate[900],
-  },
-  background: {
-    type: String,
-    default: colors.slate[100],
-  },
-  border: {
-    type: String,
-    default: colors.slate[300],
-  },
+defineProps({
+  text: { type: String, default: "" },
+  title: { type: String, default: "" },
+  textColor: { type: String, default: colors.slate[900] },
+  background: { type: String, default: colors.slate[100] },
+  border: { type: String, default: colors.slate[300] },
 });
+
 // this creates a quick (but non-cryptographic) numeric hash of the string
 function hashCode(str) {
   let hash = 0;
   for (let i = 0, len = str.length; i < len; i++) {
     //convert each character of the string to a number
-    let chr = str.charCodeAt(i);
+    const chr = str.charCodeAt(i);
     //then bitshift the number by 5 and add it to the hash
     hash = chr + (hash << 6) - hash;
     //then convert the hash to a 32bit integer
@@ -55,11 +41,11 @@ function computedColor(str, s, l) {
   let h = hashCode(str);
   //reverse the number and append it to the original number
   //this ensures even small changes to any character of the string will result in a different color
-  h = h + Math.abs(h).toString().split('').reverse().join('');
+  h = h + Math.abs(h).toString().split("").reverse().join("");
   //convert the number to a hue in the HSL color space by taking modulo 360 of the hash
   h = h % 360;
   //generate an hsl color using the hue value and passed in saturation and lightness values
-  return 'hsl(' + h + ', ' + s + '%, ' + l + '%)';
+  return "hsl(" + h + ", " + s + "%, " + l + "%)";
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2">Backgrounds</h1>
+      <h1 class="my-2">Rules</h1>
 
       <ApiTableNav
         class="w-full"
@@ -14,14 +14,21 @@
       />
     </div>
 
+    <ApiTableFilter
+      :filter-state="filterState"
+      :search="{
+        name: 'Search Rules',
+        filterField: 'name__contains',
+      }"
+    />
+
     <ApiResultsTable
       :data="data?.results"
       :cols="[
         {
           displayName: 'Name',
           value: (data) => data.name,
-          sortValue: 'name',
-          link: (data) => `/backgrounds/${data.key}`,
+          link: (data) => `/rules/${data.key}`,
         },
       ]"
       :sort-by="sortBy"
@@ -31,15 +38,23 @@
   </section>
 </template>
 
-<script setup>
-// state handlers for sorting results table
+<script setup lang="ts">
+// Set up filters
+const filterState = useFilterState<{ name__contains: string }>({
+  key: "rules",
+  fields: {
+    name__contains: "",
+  },
+});
+
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
-// fetch page of data from API and pagination controls
+// fetch a page of data from API, and pagination controls
 const { data, paginator } = useFindPaginated({
-  endpoint: API_ENDPOINTS.backgrounds,
+  endpoint: API_ENDPOINTS.rules,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
+  filter: filterState.debouncedFilter,
   params: {
     fields: ["name", "key", "document"].join(","),
     document__fields: ["name", "key"].join(","),
@@ -47,7 +62,6 @@ const { data, paginator } = useFindPaginated({
   },
 });
 
-// destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
   paginator;
 </script>

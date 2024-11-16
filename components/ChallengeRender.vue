@@ -2,20 +2,15 @@
   <span> {{ challenge }} ({{ experience }} XP) </span>
 </template>
 
-<script setup>
-const props = defineProps({
-  challenge: {
-    type: String,
-    default: '0',
-  },
-});
+<script setup lang="ts">
+withDefaults(defineProps<{ challenge: string | number }>(), { challenge: "0" });
 
 const experience = computed(() => {
   const xpValues = {
     0: 10,
-    '1/8': 25,
-    '1/4': 50,
-    '1/2': 100,
+    "1/8": 25,
+    "1/4": 50,
+    "1/2": 100,
     1: 200,
     2: 450,
     3: 700,
@@ -42,10 +37,14 @@ const experience = computed(() => {
     24: 62000,
     30: 155000,
   };
-  if (xpValues.hasOwnProperty(props.challenge)) {
-    return xpValues[props.challenge].toLocaleString('en');
+  if (
+    Object.keys(xpValues)
+      .map((k) => k.toString())
+      .includes(props.challenge.toString())
+  ) {
+    return xpValues[props.challenge].toLocaleString("en");
   } else {
-    return '???';
+    return "???";
   }
 });
 </script>

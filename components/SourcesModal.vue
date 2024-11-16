@@ -1,32 +1,56 @@
 <template>
-  <modal-dialog @close="closeModal()">
+  <ModalDialog @close="closeModal()">
     <slot>
       <!-- MODAL MENU TITLE BAR -->
-      <div class="flex w-full justify-between border-b-4 border-red-400">
-        <h2 class="mt-0 pb-2">Select Sources</h2>
-        <div class="serif font-bold">
-          <button
-            :class="`px-2 py-1 ${
-              // toggle styles based on selected sources
-              allSourcesSelected()
-                ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
-                : ` text-blood hover:text-red-800 dark:hover:text-red-400`
-            }`"
-            @click="selectAll()"
+      <div class="flex w-full justify-between border-b-4 border-blood">
+        <h2 class="my-2">Sources</h2>
+
+        <!--  GAME SYSTEM SELECTOR -->
+        <div class="my-1 grid">
+          <label class="font-serif text-sm">System</label>
+          <select
+            id="system"
+            class="border-b-2 border-smoke bg-transparent text-sm"
+            name="system"
+            @change="onGameSystemChanged"
           >
-            <span>All</span>
+            <option :value="''">–</option>
+            <option
+              v-for="systemOption in allGameSystems"
+              :key="systemOption"
+              :value="systemOption"
+              :selected="systemOption === currentSystem"
+            >
+              {{ systemOption }}
+            </option>
+          </select>
+        </div>
+
+        <div class="serif font-bold">
+          <!-- SELECT ALL SOURCES -->
+          <button
+            class="px-2 py-1"
+            :class="
+              allSourcesSelected()
+                ? `text-black before:mr-1 before:content-['✓'] dark:text-white`
+                : `text-blood hover:text-red-800 dark:hover:text-red-400`
+            "
+            @click="selectAllInSystem()"
+          >
+            All
           </button>
 
+          <!-- DESELECT ALL SOURCES -->
           <button
-            :class="`px-2 py-1 ${
-              // toggle styles based on selected sources
+            class="px-2 py-1"
+            :class="
               selectedSources.length === 0
-                ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
-                : ` text-blood hover:text-red-800 dark:hover:text-red-400 `
-            }`"
+                ? `text-black before:mr-1 before:content-['✓'] dark:text-white`
+                : `text-blood hover:text-red-800 dark:hover:text-red-400`
+            "
             @click="deselectAll()"
           >
-            <span>None</span>
+            None
           </button>
         </div>
       </div>
@@ -46,23 +70,25 @@
             </h3>
             <!-- Button for adding all src by publisher to selected srcs -->
             <button
-              :class="`px-2 py-1 font-bold  ${
+              class="px-2 py-1 font-bold"
+              :class="
                 selectedSourcesByPublisher(organization) ===
                 countSourcesByPublisher(organization)
                   ? `before:mr-1 before:content-['✓']`
                   : `text-blood hover:text-red-800 dark:hover:text-red-400`
-              }`"
+              "
               @click="addPublisher(organization)"
             >
               All
             </button>
             <!-- Button for removing all srcs by publisher to selected srcs -->
             <button
-              :class="`0 px-2 py-1 font-bold ${
+              class="px-2 py-1 font-bold"
+              :class="
                 !selectedSourcesByPublisher(organization)
                   ? `before:mr-1 before:content-['✓']`
                   : `dark:hover:text-red-40 text-blood hover:text-red-800`
-              }`"
+              "
               @click="removePublisher(organization)"
             >
               None
@@ -72,24 +98,32 @@
           <!-- Sources by Organisation -->
           <ul
             v-for="document in publications"
-            :key="document.slug"
+            :key="document.key"
             class="relative flex items-start"
           >
-            <li>
-              <input
-                v-model="selectedSources"
-                :name="document.slug"
-                type="checkbox"
-                class="mr-2 mt-1 h-4 w-4 rounded text-blue-600 accent-blood focus:ring-blue-600"
-                :value="document.slug"
-              />
-              <label
-                :for="document.slug"
-                class="font-medium text-gray-900 dark:text-white"
+            <li class="flex w-full justify-between">
+              <div>
+                <input
+                  v-model="selectedSources"
+                  :name="document.key"
+                  type="checkbox"
+                  class="mr-2 mt-1 h-4 w-4 rounded text-blue-600 accent-blood focus:ring-blue-600"
+                  :value="document.key"
+                />
+                <label
+                  :for="document.key"
+                  class="font-medium text-gray-900 dark:text-white"
+                >
+                  {{ document.name }}
+                </label>
+                <SourceTag :title="document.name" :text="document.key" />
+              </div>
+              <span
+                v-if="document.gamesystem"
+                class="h-min rounded-xl bg-fog px-2 text-xs dark:bg-slate-800"
               >
-                {{ document.title }}
-              </label>
-              <source-tag :title="document.title" :text="document.slug" />
+                {{ document.gamesystem.name }}
+              </span>
             </li>
           </ul>
         </div>
@@ -112,97 +146,116 @@
         Update
       </button>
     </template>
-  </modal-dialog>
+  </ModalDialog>
 </template>
 
-<script setup>
-import SourceTag from '~/components/SourceTag.vue';
-const { sources, setSources } = useSourcesList();
-const emit = defineEmits(['close']);
-
+<script setup lang="ts">
+const { sources, setSources, gameSystem, setGameSystem } = useSourcesList();
 const selectedSources = ref(sources.value);
-const { data: documents } = useDocuments();
 
+const emit = defineEmits(["close"]);
+const closeModal = () => emit("close");
+
+const { data: documents } = useDocuments({
+  fields: ["key", "name", "publisher", "gamesystem"].join(","),
+  publisher__fields: ["name", "key"].join(","),
+  gamesystem__fields: ["name", "key"].join(","),
+});
+
+// filter documents by the current game system
+const documentsInSystem = computed(() => {
+  if (!currentSystem.value) return documents.value;
+  return documents?.value.filter((document) => {
+    return document.gamesystem.name === currentSystem.value;
+  });
+});
+
+// group filtered documents by publisher
 const groupedDocuments = computed(() => {
-  const docs = documents.value ?? [];
+  const docs = documentsInSystem.value ?? [];
   return docs.reduce((grouped, document) => {
-    (grouped[document.organization] =
-      grouped[document.organization] || []).push(document);
+    const publisher = document.publisher.name;
+    if (grouped[publisher]) grouped[publisher].push(document);
+    else grouped[publisher] = [document];
     return grouped;
   }, {});
 });
 
-function closeModal() {
-  emit('close'); // emits a 'close' event to the parent component
-}
+// state for current game system
+const currentSystem = ref(gameSystem.value);
+
+// returns the names of all game systems present in API data
+const allGameSystems = computed(() => {
+  return documents?.value?.reduce((systems, document) => {
+    if (!systems.includes(document.gamesystem.name))
+      return [...systems, document.gamesystem.name];
+    else return systems;
+  }, []);
+});
+
+// handler for changing game systems selecter, updates systems/sources cmpnt state
+const onGameSystemChanged = (event) => {
+  const newSystem = event.target.value;
+  currentSystem.value = newSystem;
+  if (newSystem)
+    selectedSources.value = documents.value
+      .filter((source) => source.gamesystem.name === newSystem)
+      .map((source) => source.key);
+  else selectedSources.value = documents.value.map((doc) => doc.key);
+};
+
+// save current form selection to local memory
 function saveSelection() {
   setSources(selectedSources.value);
+  setGameSystem(currentSystem.value);
   closeModal();
 }
 
+// add all sources from a given publisher to allowed sources
 function addPublisher(publisher) {
-  const sourcesByPublisher = groupedDocuments.value[publisher].map(
-    (source) => source.slug
-  );
-
-  const sourcesToAdd = sourcesByPublisher.filter(
-    (source) => !selectedSources.value.includes(source)
-  );
+  const sourcesToAdd = groupedDocuments.value[publisher]
+    .map((source) => source.key)
+    .filter((source) => !selectedSources.value.includes(source));
   selectedSources.value = [...selectedSources.value, ...sourcesToAdd];
 }
 
+// remove all sources from a given publisher from allowed sources
 function removePublisher(publisher) {
   const sourcesByPublisher = groupedDocuments.value[publisher].map(
-    (source) => source.slug
+    (source) => source.key,
   );
-
   selectedSources.value = selectedSources.value.filter(
-    (source) => !sourcesByPublisher.includes(source)
+    (source) => !sourcesByPublisher.includes(source),
   );
 }
 
-function togglePublisher(publisher) {
-  const sourcesByPublisher = groupedDocuments.value[publisher].map(
-    (source) => source.slug // get slugs for sources by publisher
-  );
+// returns number of sources by a given publisher
+const countSourcesByPublisher = (publisher) =>
+  groupedDocuments.value[publisher]?.length || 0;
 
-  if (selectedSourcesByPublisher(publisher)) {
-    selectedSources.value = selectedSources.value.filter(
-      (source) => !sourcesByPublisher.includes(source)
-    );
-  } else {
-    const sourcesToAdd = sourcesByPublisher.filter(
-      (source) => !selectedSources.value.includes(source)
-    );
-    selectedSources.value = [...selectedSources.value, ...sourcesToAdd]; // combine checked & unchecked sources
-  }
-}
-
-function countSourcesByPublisher(publisher) {
-  return groupedDocuments.value[publisher]?.length || 0;
-}
-
+// returns how many sources are selected from a given publisher
 function selectedSourcesByPublisher(publisher) {
   // find all sources for this publisher
   const allSources = groupedDocuments.value[publisher].map(
-    (source) => source.slug
+    (source) => source.key,
   );
   // find which of these are part of the current selected sources
   const currentSources = selectedSources.value.filter((source) =>
-    allSources.includes(source)
+    allSources.includes(source),
   );
   return currentSources.length;
 }
 
-function allSourcesSelected() {
-  return selectedSources.value.length === documents.value.length;
+// returns true if all sources in current game system are selected
+const allSourcesSelected = () => {
+  const selected = selectedSources.value.length;
+  const total = documentsInSystem.value.length;
+  return selected === total;
+};
+
+function selectAllInSystem() {
+  selectedSources.value = documentsInSystem.value.map((doc) => doc.key);
 }
 
-function selectAll() {
-  selectedSources.value = documents.value.map((doc) => doc.slug);
-}
-
-function deselectAll() {
-  selectedSources.value = [];
-}
+const deselectAll = () => (selectedSources.value = []);
 </script>
