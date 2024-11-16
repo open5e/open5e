@@ -43,7 +43,7 @@ const closeModal = () => {
       <span>Report Issue</span>
       <icon
         name="heroicons:exclaimation-circle"
-        class="ml-1 h-6 w-6 rounded-full"
+        class="ml-1 size-6 rounded-full"
       />
     </button>
 

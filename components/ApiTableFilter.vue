@@ -4,7 +4,7 @@
     <div v-if="search" class="relative border-b-2 border-red-400">
       <Icon
         name="majesticons:search-line"
-        class="absolute bottom-1.5 mr-2 h-4 w-4"
+        class="absolute bottom-1.5 mr-2 size-4"
       />
 
       <input

@@ -1,7 +1,7 @@
 /**
  * Groups an array of objects by a key.
  */
-export function groupBy<T extends Record<string, any>>(
+export function groupBy<T extends Record<string, never>>(
   array: T[],
   key: keyof T
 ): Record<string, T[]> {

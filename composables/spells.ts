@@ -2,7 +2,7 @@ import { groupBy } from '~/functions/groupBy';
 
 export const useSpellsByClass = (
   charClass: string,
-  params: Record<string, any>
+  params: Record<string, never>
 ) => {
   const { findMany } = useAPI();
   const { sources } = useSourcesList();
@@ -36,7 +36,7 @@ export const useSpellsByClass = (
   });
 };
 
-export const useAllSpells = async (params: Record<string, any> = {}) => {
+export const useAllSpells = async (params: Record<string, never> = {}) => {
   return await useFindMany(API_ENDPOINTS.spells, params); // This will now use v2/spells
 };
 

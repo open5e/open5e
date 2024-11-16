@@ -1,4 +1,4 @@
-let zIndex: { [key: number]: string } = {};
+const zIndex: { [key: number]: string } = {};
 for (let i = -1; i <= 100; i++) {
   zIndex[i] = `${i}`;
 }

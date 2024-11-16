@@ -29,7 +29,7 @@ export const useAPI = () => {
     findMany: async (
       endpoint: string,
       sources: string[],
-      params: Record<string, any> = {}
+      params: Record<string, never> = {}
     ) => {
       const formattedSources =
         sources.length > 0 ? sources.join(',') : 'no-sources';
@@ -41,7 +41,7 @@ export const useAPI = () => {
         },
       });
 
-      return res.data.results as Record<string, any>[];
+      return res.data.results as Record<string, never>[];
     },
     findPaginated: async (options: {
       endpoint: string;
@@ -50,7 +50,7 @@ export const useAPI = () => {
       itemsPerPage?: number;
       sortByProperty?: string;
       isSortDescending?: boolean;
-      queryParams?: Record<string, any>;
+      queryParams?: Record<string, never>;
     }) => {
       const {
         endpoint,
@@ -75,7 +75,7 @@ export const useAPI = () => {
 
       const data = res.data as {
         count: number;
-        results: Record<string, any>[];
+        results: Record<string, never>[];
         next: string | null;
         previous: string | null;
       };
@@ -89,7 +89,7 @@ export const useAPI = () => {
         const searchTerm = parts.filter((exists) => exists).slice(-1)[0];
         navigateTo(`/search?text=${searchTerm}`);
       });
-      return res?.data as Record<string, any>;
+      return res?.data as Record<string, never>;
     },
   };
 };
@@ -122,9 +122,9 @@ export const useFindMany = (
  * @returns The data object with nested resources fetched.
  */
 const fetchNestedResources = async (
-  data: Record<string, any>,
+  data: Record<string, never>,
   fields: string[]
-): Promise<Record<string, any>> => {
+): Promise<Record<string, never>> => {
   for (const field of fields) {
     const fieldParts = field.split('.');
     let currentData = data;
@@ -138,7 +138,7 @@ const fetchNestedResources = async (
         parentKey = part;
         currentData = currentData[part];
       } else {
-        (currentData as Record<string, any>)[part] = null;
+        (currentData as Record<string, never>)[part] = null;
         break;
       }
     }
@@ -219,7 +219,7 @@ export const useSubclass = (className: string, subclass: string) => {
     queryKey: ['subclass', className, subclass],
     queryFn: async () => {
       const class_result = await api.get(API_ENDPOINTS.classes, className);
-      return class_result.archetypes.find((a: any) => a.slug === subclass);
+      return class_result.archetypes.find((a: never) => a.slug === subclass);
     },
   });
 };
@@ -240,7 +240,7 @@ export const useSections = (...categories: string[]) => {
  * Returns a new array of items sorted by the given field
  */
 export function sortByField(
-  items: Record<string, any>[],
+  items: Record<string, never>[],
   field: string,
   direction: 'ascending' | 'descending' = 'ascending'
 ) {
@@ -256,7 +256,7 @@ export function sortByField(
   });
 }
 
-export const useDocuments = (params: Record<string, any> = {}) => {
+export const useDocuments = (params: Record<string, never> = {}) => {
   params.depth = '1';
   const { findMany } = useAPI();
   return useQuery({

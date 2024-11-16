@@ -13,7 +13,7 @@
     "postinstall": "nuxt prepare",
     "prepare": "husky install",
     "format": "npx prettier --write .",
-    "lint": "eslint . --debug",
+    "lint": "eslint .",
     "lintfix": "eslint . --fix",
     "lint:ci": "lint",
     "lint:js": "lint",

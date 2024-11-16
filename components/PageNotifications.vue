@@ -13,7 +13,7 @@
       <li
         v-for="(notification, index) in notifications"
         :key="index"
-        class="mt-1 border-b-2 border-t-2 border-red-400 bg-gray-100 px-3 py-2 dark:bg-slate-900"
+        class="mt-1 border-y-2 border-red-400 bg-gray-100 px-3 py-2 dark:bg-slate-900"
       >
         <p class="my-0 font-serif text-xs font-light">
           {{ notification.title }}

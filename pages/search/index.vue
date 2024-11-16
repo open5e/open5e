@@ -6,11 +6,11 @@
     <p class="font-sans text-xl font-bold text-slate-400">
       <span v-if="!data" class="h-8">Searching Open5e...</span>
       <span v-else-if="!searchText">
-        <icon name="majesticons:search-line" class="mr-2 h-8 w-8" />
+        <icon name="majesticons:search-line" class="mr-2 size-8" />
         <span>Search for something to see results...</span>
       </span>
       <span v-else-if="results.inScope">
-        <icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
+        <icon name="majesticons:scroll-line" class="mr-2 size-8" />
         <span>{{ results.inScope.length }} results in your sources</span>
         <span v-if="results.outScope.length > 0" class="font-thin">
           ({{ results.outScope.length }} in other sources)

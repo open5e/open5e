@@ -74,21 +74,17 @@ export default defineNuxtConfig({
     prefetchLinks: false,
   },
 
-  // hooks: {
-  //   "vite:extendConfig": (config, { isClient, isServer }) => {
-  //     if (isClient) {
-  //       config.resolve.alias.vue = "vue/dist/vue.esm-bundler";
-  //     }
-  //   },
-  // },
+  hooks: {
+    "vite:extendConfig": (config, { isClient }) => {
+      if (isClient) {
+        config.resolve.alias.vue = "vue/dist/vue.esm-bundler";
+      }
+    },
+  },
 
   tailwindcss: {
     configPath: "~/tailwind.config.ts",
     cssPath: "~/styles/tailwind.css",
-  },
-
-  eslint: {
-    // options here
   },
 
   typescript: {

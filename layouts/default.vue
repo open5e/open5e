@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-hidden text-darkness">
-    <sources-modal :show="showModal" @close="showModal = false" />
+    <SourcesModal :show="showModal" @close="showModal = false" />
     <div
       class="grid h-screen w-screen grid-flow-col bg-white transition-all dark:bg-darkness sm:ml-0 sm:grid-cols-[14rem_1fr] sm:overflow-y-auto sm:transition-none"
       :class="showSidebar ? 'ml-0' : '-ml-56'"
@@ -10,12 +10,12 @@
         class="z-50 flex w-56 flex-col overflow-y-auto bg-slate-700 text-white dark:bg-slate-900"
       >
         <!-- Logo -->
-        <nuxt-link
+        <NuxtLink
           to="/"
           class="bg-red p-5 font-serif text-3xl text-white hover:text-white"
         >
           Open5e
-        </nuxt-link>
+        </NuxtLink>
 
         <!-- SOURCE MODAL -->
         <button
@@ -28,12 +28,12 @@
           <span v-else class="after:content-['_']">Select Sources</span>
 
           <span v-if="isLoadingData">
-            <icon name="line-md:loading-twotone-loop" />
+            <Icon name="line-md:loading-twotone-loop" />
           </span>
           <span v-else>
-            <icon
+            <Icon
               name="heroicons:pencil-square"
-              class="h-5 w-5 text-white"
+              class="size-5 text-white"
               aria-hidden="true"
             />
           </span>
@@ -46,41 +46,41 @@
           >
             <Icon
               name="majesticons:search-line"
-              class="h-8 w-8 rounded-full bg-red-900/25 p-1 text-white hover:bg-red-900/50"
+              class="size-8 rounded-full bg-red-900/25 p-1 text-white hover:bg-red-900/50"
               aria-hidden="true"
               @click="doSearch(searchText)"
             />
           </div>
           <input
             v-model="searchText"
-            class="w-full bg-red-700 px-4 py-4 placeholder-white/80 placeholder:font-semibold focus:border-0 focus:bg-red-800 focus:outline-none dark:bg-red-800 dark:focus:bg-red-600"
+            class="w-full bg-red-700 p-4 placeholder:font-semibold placeholder:text-white/80 focus:border-0 focus:bg-red-800 focus:outline-none dark:bg-red-800 dark:focus:bg-red-600"
             placeholder="Search Open5e"
             @keyup.enter="doSearch(searchText)"
           />
         </div>
 
         <!-- Navigation Links -->
-        <ul class="text-inherit text-white">
+        <ul class="text-white">
           <li v-for="section in routes" :key="section.title">
-            <nav-link :to="section.route">
+            <NavLink :to="section.route">
               {{ section.title }}
-            </nav-link>
+            </NavLink>
             <ul
               v-if="section.subroutes"
               v-show="useRoute().path.indexOf(section.route) != -1"
               class="bg-slate-800/30 py-2"
             >
               <li v-for="page in section.subroutes" :key="page.key">
-                <nav-link :to="`${section.route}/${page.key}`" :indent="true">
+                <NavLink :to="`${section.route}/${page.key}`" :indent="true">
                   {{ page.name }}
-                </nav-link>
+                </NavLink>
               </li>
             </ul>
           </li>
         </ul>
 
         <!-- Report Issue UI -->
-        <report-issue />
+        <ReportIssue />
 
         <!-- Patron Banner -->
         <a href="https://www.patreon.com/open5e">
@@ -100,22 +100,22 @@
 
         <div class="flex h-12 items-center gap-1 px-2 sm:pl-8">
           <SidebarToggle class="sm:hidden" @click="toggleSidebar" />
-          <BreadcrumbLinks class="flex-grow" />
+          <BreadcrumbLinks class="grow" />
           <ThemeSwitcher />
         </div>
 
         <!-- Shade: fades out main content when sidebar expanded on mobile -->
         <div
           v-show="showSidebar"
-          class="fixed left-0 top-0 z-48 h-full w-full bg-basalt/50 sm:hidden"
+          class="fixed left-0 top-0 z-48 size-full bg-basalt/50 sm:hidden"
           @click="hideSidebar"
         />
 
-        <page-notifications />
+        <PageNotifications />
 
         <!-- Main page content -->
-        <nuxt-page
-          class="main-content pt-auto mx-0 w-full px-4 py-4 pb-0 text-darkness dark:text-white sm:px-8"
+        <NuxtPage
+          class="main-content pt-auto mx-0 w-full p-4 pb-0 text-darkness dark:text-white sm:px-8"
         />
       </div>
     </div>

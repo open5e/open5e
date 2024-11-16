@@ -107,7 +107,7 @@
                   v-model="selectedSources"
                   :name="document.key"
                   type="checkbox"
-                  class="mr-2 mt-1 h-4 w-4 rounded text-blue-600 accent-blood focus:ring-blue-600"
+                  class="mr-2 mt-1 size-4 rounded text-blue-600 accent-blood focus:ring-blue-600"
                   :value="document.key"
                 />
                 <label

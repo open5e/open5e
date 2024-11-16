@@ -2,18 +2,18 @@
 import { ref, computed } from 'vue'
 import { debouncedRef } from '@vueuse/core';
 
-export type FilterStateOptions<T extends Record<string, any>> = {
+export type FilterStateOptions<T extends Record<string, never>> = {
   key: string;
   fields?: T;
   debounceTimeMs?: number;
 };
 
 // Reactive global store for filters
-const filters = ref<Record<string, Record<string, any>>>({});
+const filters = ref<Record<string, Record<string, never>>>({});
 
-export type FilterState<T> = typeof useFilterState
+export type FilterState = typeof useFilterState
 
-export function useFilterState<T extends Record<string, any>>(
+export function useFilterState<T extends Record<string, never>>(
   options: FilterStateOptions<T>
 ) {
   const { key, fields = {} as T, debounceTimeMs = 300 } = options;
