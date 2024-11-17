@@ -15,8 +15,8 @@
     "format": "npx prettier --write .",
     "lint": "eslint .",
     "lintfix": "eslint . --fix",
-    "lint:ci": "lint",
-    "lint:js": "lint",
+    "lint:ci": "npm run lint",
+    "lint:js": "npm run lint",
     "test": "npx vitest run --silent",
     "start": "node .output/server/index.mjs"
   },
