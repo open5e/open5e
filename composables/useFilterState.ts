@@ -10,6 +10,8 @@ export type FilterStateOptions<Fields> = {
   debounceTimeMs?: number;
 };
 
+export type FilterState = typeof useFilterState
+
 // Reactive global store for filters
 const filters = ref<Record<string, Fields>>({});
 
