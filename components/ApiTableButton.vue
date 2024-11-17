@@ -7,7 +7,7 @@ withDefaults(
     sizeClasses?: string;
   }>(),
   {
-    sizeClasses: "w-8 h8",
+    sizeClasses: "size-8",
   },
 );
 
