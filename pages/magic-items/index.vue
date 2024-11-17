@@ -79,6 +79,8 @@
 </template>
 
 <script setup lang="ts">
+import type { MagicItemFilter} from '../../composables/magic-items';
+
 // Set up filters
 const filterState = useFilterState<MagicItemFilter>({
   key: "magicItems",
