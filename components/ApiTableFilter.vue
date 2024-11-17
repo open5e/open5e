@@ -96,8 +96,8 @@
 </template>
 
 <script setup lang="ts">
-import type { FilterState } from '~/composables/useFilterState.ts'
-import ApiTableButton from './ApiTableButton.vue';
+import type { FilterState } from '~/composables/useFilterState';
+
 defineProps<
   {
     filterState: FilterState
@@ -109,7 +109,7 @@ defineProps<
       name: string
       filterField: string
       options: { name: string; value: string }[]
-    }
+    }[]
     checkboxFields: {
       name: string
       filterField: string
