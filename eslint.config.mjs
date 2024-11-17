@@ -1,11 +1,11 @@
-import eslintPluginTailwindCss from "eslint-plugin-tailwindcss";
-import withNuxt from "./.nuxt/eslint.config.mjs";
+import eslintPluginTailwindCss from 'eslint-plugin-tailwindcss';
+import withNuxt from './.nuxt/eslint.config.mjs';
 
 export default withNuxt([
   {
-    ignores: ['bin'],
+    ignores: ['bin']
   },
-  ...eslintPluginTailwindCss.configs["flat/recommended"],
+  ...eslintPluginTailwindCss.configs['flat/recommended']
 ]).override('nuxt/vue/rules', {
   rules: {
     eqeqeq: 'off',
@@ -19,14 +19,14 @@ export default withNuxt([
           /* Vue advises that void tags omit the terminal slash, but this
            * conflicts with Prettier */
           // void: 'never',
-          void: 'always',
-        },
-      },
-    ],
+          void: 'always'
+        }
+      }
+    ]
   }
 })
   .override('tailwindcss:rules', {
-  rules: {
-    'tailwindcss/no-custom-classname': 'off'
-  }
-});
+    rules: {
+      'tailwindcss/no-custom-classname': 'off' // This will conflict with some of the classnames being used in conjunction with SASS
+    }
+  });
