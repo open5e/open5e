@@ -4,9 +4,9 @@ import { debouncedRef } from '@vueuse/core';
 
 export type Fields = Record<string, string | boolean>
 
-export type FilterStateOptions<Fields> = {
+export type FilterStateOptions<TFields extends Fields> = {
   key: string;
-  fields?: Fields;
+  fields?: TFields;
   debounceTimeMs?: number;
 };
 
@@ -15,17 +15,15 @@ export type FilterState = typeof useFilterState
 // Reactive global store for filters
 const filters = ref<Record<string, Fields>>({});
 
-export function useFilterState<T extends Fields>(
-  options: FilterStateOptions<T>
+export function useFilterState<TFields>(
+  options: FilterStateOptions<TFields>
 ) {
-  const { key, fields = {} as T, debounceTimeMs = 300 } = options;
-
   // Initialize filter fields if not already set
-  if (!filters.value[key]) {
-    filters.value[key] = { ...fields };
+  if (!filters.value[options.key]) {
+    filters.value[options.key] = { ...options.fields };
   }
 
-  const fieldsState = computed(() => filters.value[key] || ({} as T));
+  const fieldsState = computed(() => filters.value[options.key] || ({} as TFields));
 
   const filterInitialized = computed(
     () => Object.keys(fieldsState.value).length > 0
@@ -39,16 +37,16 @@ export function useFilterState<T extends Fields>(
 
   const debouncedFilter = debouncedRef(fieldsState, debounceTimeMs);
 
-  function setFilterFields(newFields: Partial<T>) {
-    filters.value[key] = { ...filters.value[key], ...newFields };
+  function setFilterFields(newFields: Partial<TFields>) {
+    filters.value[options.key] = { ...filters.value[options.key], ...newFields };
   }
 
   function clearFilter() {
-    filters.value[key] = {} as T;
+    filters.value[options.key] = {} as TFields;
   }
 
-  function updateField<K extends keyof T>(fieldKey: K, fieldValue: T[K]) {
-    filters.value[key] = { ...filters.value[key], [fieldKey]: fieldValue };
+  function updateField<K extends keyof TFields>(fieldKey: K, fieldValue: TFields[K]) {
+    filters.value[options.key] = { ...filters.value[options.key], [fieldKey]: fieldValue };
   }
 
   return {
