@@ -210,10 +210,7 @@ td {
 .container h3:hover .toc-anchor,
 .container h5:hover .toc-anchor,
 .container h6:hover .toc-anchor {
-  order: 2;
-  display: none;
-  color: var(--color-smoke);
-  margin-left: var(--pad-sm);
+  display: inline-block;
 }
 
 .docs-toc ul {
