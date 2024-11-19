@@ -96,11 +96,9 @@
 </template>
 
 <script setup lang="ts">
-import type { FilterState } from '~/composables/useFilterState';
-
 defineProps<
   {
-    filterState: FilterState
+    filterState: FilterState<Fields>
     search: {
       name: string
       filterField: string

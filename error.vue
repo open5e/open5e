@@ -104,7 +104,7 @@ const handleError = () => clearError({ redirect: '/' });
 .die-roll {
   animation: roll 1.5s ease-in-out;
   display: inline-block;
-  fill: #e74c3c;
+  fill: var(--color-fireball);
   height: 15em;
   width: 15em;
   max-width: 60%;

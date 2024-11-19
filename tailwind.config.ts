@@ -18,9 +18,12 @@ module.exports = {
       serif: ['"Lora"', 'serif'],
     },
     extend: {
+      fontfamily: {
+        headers: ['"Lora"', 'serif'],
+      },
       colors: {
         red: {
-          DEFAULT: '#E74C3C', // scss var $color-fireball
+          DEFAULT: '#E74C3C', // color-fireball
           50: '#FBE2DF',
           100: '#F9D1CD',
           200: '#F4B0A9',
@@ -34,7 +37,7 @@ module.exports = {
           950: '#220704',
         },
 
-        // colors from scss variables
+        fireball: '#e74c3c',
         blood: '#a82315',
         mana: '#166c9c',
         fog: '#f4f4f4',

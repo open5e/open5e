@@ -10,12 +10,12 @@ export type FilterStateOptions<TFields extends Fields> = {
   debounceTimeMs?: number;
 };
 
-export type FilterState = typeof useFilterState
+export type FilterState<TFields extends Fields> = ReturnType<typeof useFilterState<TFields>>;
 
 // Reactive global store for filters
 const filters = ref<Record<string, Fields>>({});
 
-export function useFilterState<TFields>(
+export function useFilterState<TFields extends Fields>(
   options: FilterStateOptions<TFields>
 ) {
   // Initialize filter fields if not already set
@@ -35,7 +35,7 @@ export function useFilterState<TFields>(
 
   const canClearFilter = computed(() => filteringByFields.value.length > 0);
 
-  const debouncedFilter = debouncedRef(fieldsState, debounceTimeMs);
+  const debouncedFilter = debouncedRef(fieldsState, options.debounceTimeMs || 300);
 
   function setFilterFields(newFields: Partial<TFields>) {
     filters.value[options.key] = { ...filters.value[options.key], ...newFields };

@@ -244,7 +244,6 @@
       <p
         v-for="ability in monster.special_abilities"
         :key="ability.name"
-        class="action-block"
       >
         <span class="font-bold after:content-['.']">{{ ability.name }}</span>
         <md-viewer inline="true" :text="ability.desc" />

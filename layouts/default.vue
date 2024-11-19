@@ -227,9 +227,7 @@ function hideSidebar() {
 }
 </script>
 
-<style lang="scss">
-@import '../assets/main';
-
+<style>
 .main-content {
   a {
     @apply text-indigo-600 hover:text-blood hover:underline dark:text-indigo-200 dark:hover:text-red;

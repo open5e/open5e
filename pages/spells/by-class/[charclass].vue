@@ -1,8 +1,9 @@
 <template>
   <section class="container">
-    <h1 class="filter-header">
+    <h1>
       <span class="title-case">{{ charclass }} spells</span>
     </h1>
+
     <div v-if="spellsByLevel" :class="'three-column'">
       <p v-if="spellsByLevel.length == 0">No results</p>
 
