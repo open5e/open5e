@@ -1,6 +1,9 @@
 <template>
   <div class="overflow-hidden text-darkness">
-    <SourcesModal :show="showModal" @close="showModal = false" />
+    <SourcesModal
+      :show="showModal"
+      @close="showModal = false"
+    />
     <div
       class="grid h-screen w-screen grid-flow-col bg-white transition-all dark:bg-darkness sm:ml-0 sm:grid-cols-[14rem_1fr] sm:overflow-y-auto sm:transition-none"
       :class="showSidebar ? 'ml-0' : '-ml-56'"
@@ -25,7 +28,10 @@
           <span v-if="documents && no_selected_sources > 0">
             {{ no_selected_sources }} of {{ no_available_sources }} sources
           </span>
-          <span v-else class="after:content-['_']">Select Sources</span>
+          <span
+            v-else
+            class="after:content-['_']"
+          >Select Sources</span>
 
           <span v-if="isLoadingData">
             <Icon name="line-md:loading-twotone-loop" />
@@ -61,7 +67,10 @@
 
         <!-- Navigation Links -->
         <ul class="text-white">
-          <li v-for="section in routes" :key="section.title">
+          <li
+            v-for="section in routes"
+            :key="section.title"
+          >
             <NavLink :to="section.route">
               {{ section.title }}
             </NavLink>
@@ -70,8 +79,14 @@
               v-show="useRoute().path.indexOf(section.route) != -1"
               class="bg-slate-800/30 py-2"
             >
-              <li v-for="page in section.subroutes" :key="page.key">
-                <NavLink :to="`${section.route}/${page.key}`" :indent="true">
+              <li
+                v-for="page in section.subroutes"
+                :key="page.key"
+              >
+                <NavLink
+                  :to="`${section.route}/${page.key}`"
+                  :indent="true"
+                >
                   {{ page.name }}
                 </NavLink>
               </li>
@@ -99,7 +114,10 @@
         <!-- Site Header -->
 
         <div class="flex h-12 items-center gap-1 px-2 sm:pl-8">
-          <SidebarToggle class="sm:hidden" @click="toggleSidebar" />
+          <SidebarToggle
+            class="sm:hidden"
+            @click="toggleSidebar"
+          />
           <BreadcrumbLinks class="grow" />
           <ThemeSwitcher />
         </div>
@@ -123,45 +141,45 @@
 </template>
 
 <script setup>
-import { useRoute } from 'nuxt/app';
-import { computed } from 'vue';
+import { useRoute } from 'nuxt/app'
+import { computed } from 'vue'
 
 // Generate page title from Breadcrumbs
-const BASE_TITLE = 'Open5e';
-const crumbs = useBreadcrumbs();
+const BASE_TITLE = 'Open5e'
+const crumbs = useBreadcrumbs()
 const title = computed(() => {
-  if (crumbs.value.length === 0) return BASE_TITLE;
-  return `${crumbs.value.at(-1).title} – ${BASE_TITLE}`;
-});
-useHead({ title: title });
+  if (crumbs.value.length === 0) return BASE_TITLE
+  return `${crumbs.value.at(-1).title} – ${BASE_TITLE}`
+})
+useHead({ title: title })
 
-const showSidebar = ref(false);
-const route = useRoute();
+const showSidebar = ref(false)
+const route = useRoute()
 watch(
   () => route.path,
-  () => (showSidebar.value = false)
-);
+  () => (showSidebar.value = false),
+)
 
-const searchText = ref(route.query.text);
+const searchText = ref(route.query.text)
 
-const showModal = ref(false);
-const { sources } = useSourcesList();
+const showModal = ref(false)
+const { sources } = useSourcesList()
 
-const no_selected_sources = computed(() => sources.value.length);
+const no_selected_sources = computed(() => sources.value.length)
 
 const { data: documents } = useDocuments({
   fields: 'none', // we only need to document count, so we can omit all fields
   depth: 0,
-});
+})
 
 const { data: classes } = useFindMany(API_ENDPOINTS.classes, {
   fields: ['name', 'key'].join(),
   is_subclass: false,
-});
+})
 
-const no_available_sources = computed(() => documents.value?.length ?? 0);
+const no_available_sources = computed(() => documents.value?.length ?? 0)
 
-const isLoadingData = useIsFetching();
+const isLoadingData = useIsFetching()
 
 const routes = computed(() => [
   {
@@ -209,21 +227,21 @@ const routes = computed(() => [
     title: 'API Docs',
     route: '/api-docs',
   },
-]);
+])
 
-const router = useRouter();
+const router = useRouter()
 
 function doSearch(searchText) {
-  router.push({ name: 'search', query: { text: searchText } });
-  showSidebar.value = false;
+  router.push({ name: 'search', query: { text: searchText } })
+  showSidebar.value = false
 }
 
 function toggleSidebar() {
-  showSidebar.value = !showSidebar.value;
+  showSidebar.value = !showSidebar.value
 }
 
 function hideSidebar() {
-  showSidebar.value = false;
+  showSidebar.value = false
 }
 </script>
 

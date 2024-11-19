@@ -1,36 +1,37 @@
 <script setup>
-import { ref } from 'vue';
-const isOpen = ref(false);
-const formData = ref({});
-const status = ref('ready');
+import { ref } from 'vue'
 
-const WEBAPP_URL =
-  'https://script.google.com/macros/s/AKfycbzUzyBCluTJXL4GC98i31NRoso0td-zNgBbp8Ws4CmmLMzd3ovYBcX7HyVlo3m-kDLHZA/exec';
+const isOpen = ref(false)
+const formData = ref({})
+const status = ref('ready')
+
+const WEBAPP_URL
+  = 'https://script.google.com/macros/s/AKfycbzUzyBCluTJXL4GC98i31NRoso0td-zNgBbp8Ws4CmmLMzd3ovYBcX7HyVlo3m-kDLHZA/exec'
 
 const submitIssue = async () => {
   // on click handler for submitting an issue
-  status.value = 'pending';
-  formData.value['date'] = new Date().toDateString();
+  status.value = 'pending'
+  formData.value['date'] = new Date().toDateString()
   // convert form data to key=value pair string
   const data = Object.entries(formData.value)
     .map(([key, value]) => encodeURI([key, value].join('=')))
-    .join('&');
+    .join('&')
   await $fetch(WEBAPP_URL, {
     method: 'POST',
     body: data,
     headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-  });
-  status.value = 'submitted';
-};
+  })
+  status.value = 'submitted'
+}
 
 const closeModal = () => {
-  isOpen.value = false;
+  isOpen.value = false
   // short delay to give the modal closing animation time to run
   setTimeout(() => {
-    formData.value = {};
-    status.value = 'ready';
-  }, 300);
-};
+    formData.value = {}
+    status.value = 'ready'
+  }, 300)
+}
 </script>
 
 <template>
@@ -47,7 +48,10 @@ const closeModal = () => {
       />
     </button>
 
-    <modal-dialog :show="isOpen" @close="isOpen = false">
+    <modal-dialog
+      :show="isOpen"
+      @close="isOpen = false"
+    >
       <slot>
         <!-- Bug submission form -->
         <form
@@ -63,7 +67,10 @@ const closeModal = () => {
           </legend>
           <ul>
             <li class="mb-2">
-              <label for="type" class="text-lg font-bold">
+              <label
+                for="type"
+                class="text-lg font-bold"
+              >
                 What best describes your issue?
               </label>
               <select
@@ -83,11 +90,16 @@ const closeModal = () => {
                 <option value="accessibility">
                   There is a problem with page accessibility
                 </option>
-                <option value="misc">Other</option>
+                <option value="misc">
+                  Other
+                </option>
               </select>
             </li>
             <li class="mb-2">
-              <label for="description" class="text-lg font-bold">
+              <label
+                for="description"
+                class="text-lg font-bold"
+              >
                 Can you describe the bug?
               </label>
               <legend class="text-sm italic">
@@ -103,7 +115,10 @@ const closeModal = () => {
             </li>
 
             <li class="mb-2">
-              <label for="reproduction" class="text-lg font-bold">
+              <label
+                for="reproduction"
+                class="text-lg font-bold"
+              >
                 Reproduction
               </label>
               <legend class="text-sm italic">

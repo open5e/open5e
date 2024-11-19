@@ -1,15 +1,27 @@
 <template>
-  <section v-if="spell" class="docs-container container">
+  <section
+    v-if="spell"
+    class="docs-container container"
+  >
     <h1>{{ spell.name }}</h1>
     <p>
-      <span v-if="spell.level === 0" class="italic">
+      <span
+        v-if="spell.level === 0"
+        class="italic"
+      >
         {{ `${spell.school.name} cantrip` }}
       </span>
-      <span v-else class="italic">
+      <span
+        v-else
+        class="italic"
+      >
         {{ `Level ${spell.level} ${spell.school.name} spell` }}
       </span>
       <span v-if="spell.ritual"> (ritual)</span>
-      <span v-if="spell.classes.length > 0" class="before:content-['_|_']">
+      <span
+        v-if="spell.classes.length > 0"
+        class="before:content-['_|_']"
+      >
         {{ spell.classes.map((c) => c.name).join(", ") }}
       </span>
       <source-tag
@@ -43,33 +55,44 @@
         <!-- Removes trailing preiod -->
       </span>
     </p>
-    <md-viewer :text="spell.desc" :use-roller="true" />
+    <md-viewer
+      :text="spell.desc"
+      :use-roller="true"
+    />
     <p v-if="spell.higher_level">
       <label class="font-bold">At higher levels:</label>
       <md-viewer :text="spell.higher_level" />
     </p>
     <p class="text-sm italic">
       Source:
-      <a target="NONE" :href="spell.document.url">
+      <a
+        target="NONE"
+        :href="spell.document.url"
+      >
         {{ spell.document.name }} by
         {{ spell.document.publisher.name || "unknown publisher" }}
         <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
       </a>
     </p>
   </section>
-  <section v-else class="docs-container container">Loading...</section>
+  <section
+    v-else
+    class="docs-container container"
+  >
+    Loading...
+  </section>
 </template>
 
 <script setup>
 const { data: spell } = useFindOne(API_ENDPOINTS.spells, useRoute().params.id, {
-  relatedFields: ["document", "document.publisher"],
-});
+  relatedFields: ['document', 'document.publisher'],
+})
 
 function formatComponents(verbal, somatic, material) {
-  const components = [];
-  if (verbal) components.push("V");
-  if (somatic) components.push("S");
-  if (material) components.push("M");
-  return `${components.join(", ")}`;
+  const components = []
+  if (verbal) components.push('V')
+  if (somatic) components.push('S')
+  if (material) components.push('M')
+  return `${components.join(', ')}`
 }
 </script>

@@ -1,20 +1,20 @@
-import { test, expect } from 'vitest';
-import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
-import MonsterPage from '~/pages/monsters/[id].vue';
+import { test, expect } from 'vitest'
+import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime'
+import MonsterPage from '~/pages/monsters/[id].vue'
 
-const { data: monster } = useFindOne('v2/creatures', 'srd_goblin');
+const { data: monster } = useFindOne('v2/creatures', 'srd_goblin')
 
-const page = await mountSuspended(MonsterPage);
+const page = await mountSuspended(MonsterPage)
 
 test('/monsters/[id] page can mount', async () => {
-  expect(page);
-});
+  expect(page)
+})
 
 test('/monsters/[id] page renders title', async () => {
-  const title = page.find('h1');
-  expect(title.exists()).toBe(true);
-  expect(title.text()).toEqual(unref(monster)?.name);
-});
+  const title = page.find('h1')
+  expect(title.exists()).toBe(true)
+  expect(title.text()).toEqual(unref(monster)?.name)
+})
 
 mockNuxtImport('useFindOne', () => {
   return () => ({
@@ -204,5 +204,5 @@ mockNuxtImport('useFindOne', () => {
       ],
       creaturesets: [],
     },
-  });
-});
+  })
+})

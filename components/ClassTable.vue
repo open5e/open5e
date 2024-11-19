@@ -5,7 +5,10 @@
       <th>Proficiency Bonus</th>
       <th>Features</th>
     </tr>
-    <tr v-for="(value, key, index) in classFeatures" :key="index">
+    <tr
+      v-for="(value, key, index) in classFeatures"
+      :key="index"
+    >
       <td>{{ key }}</td>
       <td class="before:content-['+']">
         {{ value["proficiency-bonus"] }}
@@ -49,9 +52,9 @@
 <script setup>
 defineProps({
   classFeatures: { type: Object, default: () => {} },
-});
+})
 
 // helper function for rendering reade-friendlt titles from feature keys
-const parseFeatures = (input) =>
-  input.split("_").slice(-1).pop().split("-").join(" ");
+const parseFeatures = input =>
+  input.split('_').slice(-1).pop().split('-').join(' ')
 </script>

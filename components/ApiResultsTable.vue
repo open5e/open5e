@@ -1,6 +1,9 @@
 <template>
   <div>
-    <table v-if="data" class="m-0 w-full">
+    <table
+      v-if="data"
+      class="m-0 w-full"
+    >
       <thead>
         <tr>
           <sortable-table-header
@@ -37,17 +40,17 @@
 </template>
 
 <script setup>
-const emit = defineEmits(["sort"]);
+const emit = defineEmits(['sort'])
 
 const props = defineProps({
   data: { type: Object, default: () => {} },
   itemsPerPage: { type: Number, default: 50 },
   cols: { type: Array, default: () => [] },
-  sortBy: { type: String, default: "name" },
+  sortBy: { type: String, default: 'name' },
   isSortDescending: { type: Boolean },
-});
+})
 
-const results = computed(() => props.data);
+const results = computed(() => props.data)
 
-const onSort = (sortValue) => emit("sort", sortValue);
+const onSort = sortValue => emit('sort', sortValue)
 </script>

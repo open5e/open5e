@@ -4,8 +4,13 @@
       <span class="title-case">{{ charclass }} spells</span>
     </h1>
 
-    <div v-if="spellsByLevel" :class="'three-column'">
-      <p v-if="spellsByLevel.length == 0">No results</p>
+    <div
+      v-if="spellsByLevel"
+      :class="'three-column'"
+    >
+      <p v-if="spellsByLevel.length == 0">
+        No results
+      </p>
 
       <ul
         v-for="level in spellsByLevel"
@@ -14,7 +19,10 @@
         class="list--items"
       >
         <h3>{{ level.lvlText }}</h3>
-        <li v-for="spell in level.spells" :key="spell.name">
+        <li
+          v-for="spell in level.spells"
+          :key="spell.name"
+        >
           <nuxt-link
             tag="a"
             :params="{ id: spell.slug }"
@@ -35,9 +43,9 @@
 </template>
 
 <script setup>
-import SourceTag from '~/components/SourceTag.vue';
+import SourceTag from '~/components/SourceTag.vue'
 
-const charclass = useRoute().params.charclass;
+const charclass = useRoute().params.charclass
 
 const { data: spellsByLevel } = useSpellsByClass(charclass, {
   fields: [
@@ -48,7 +56,7 @@ const { data: spellsByLevel } = useSpellsByClass(charclass, {
     'document__title',
     'dnd_class',
   ].join(),
-});
+})
 </script>
 
 <style lang="scss" scoped>

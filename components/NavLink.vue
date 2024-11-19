@@ -13,15 +13,15 @@
 defineProps({
   to: {
     type: String,
-    default: "",
+    default: '',
   },
   title: {
     type: String,
-    default: "",
+    default: '',
   },
   indent: {
     type: Boolean,
     default: false,
   },
-});
+})
 </script>

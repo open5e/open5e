@@ -10,93 +10,100 @@
     @mouseover="loadData"
   >
     <slot />
-    <link-preview v-if="content" :content="content" :category="category" />
+    <link-preview
+      v-if="content"
+      :content="content"
+      :category="category"
+    />
   </nuxt-link>
 
   <!-- If link markdown is invalid, render a span instead -->
-  <span v-else class="italic"><slot /></span>
+  <span
+    v-else
+    class="italic"
+  ><slot /></span>
 </template>
 
 <script setup>
-import axios from 'axios';
+import axios from 'axios'
 
-defineProps({ src: { type: String, default: '' } });
+defineProps({ src: { type: String, default: '' } })
 
-const loading = ref(false);
-const content = ref(undefined);
-const acceptibleTypes = ref(Object.keys(paramsByType));
+const loading = ref(false)
+const content = ref(undefined)
+const acceptibleTypes = ref(Object.keys(paramsByType))
 const category = ref(
-  props.src.split('/').filter((crumb) => !['v1', 'v2'].includes(crumb))[0]
-);
+  props.src.split('/').filter(crumb => !['v1', 'v2'].includes(crumb))[0],
+)
 const slug = ref(
-  props.src.split('/').filter((crumb) => !['v1', 'v2'].includes(crumb))[1]
-);
+  props.src.split('/').filter(crumb => !['v1', 'v2'].includes(crumb))[1],
+)
 
 const url = computed(() => {
-  const apiURL = useRuntimeConfig().public.apiUrl;
-  const { altFrontEndSubroute, apiEndpoint } = paramsByType[category.value];
+  const apiURL = useRuntimeConfig().public.apiUrl
+  const { altFrontEndSubroute, apiEndpoint } = paramsByType[category.value]
 
   // make sure that category has a recognised endpoint
   if (!apiEndpoint) {
-    return { linkTarget: '/' };
+    return { linkTarget: '/' }
   }
 
   // FE uses section's parent for routing. Update url once data is fetched
   if (content.value && category.value === 'sections') {
-    const subroute = content.value.parent.split(' ').join('-').toLowerCase();
+    const subroute = content.value.parent.split(' ').join('-').toLowerCase()
     return {
       linkTarget: `/${subroute}/${slug.value}`,
       apiEndpoint: `${apiURL}/sections/${slug.value}`,
-    };
+    }
   }
   // the url on the front end site might be different to its API endpoint
   return {
     linkTarget: `/${altFrontEndSubroute ?? apiEndpoint}/${slug.value}`,
     apiEndpoint: `${apiURL}/${apiEndpoint}/${slug.value}`,
-  };
-});
+  }
+})
 
 async function loadData() {
   // guard clause so that data is only fetched on initial hover
   if (loading.value || content.value) {
-    return;
+    return
   }
-  loading.value = true;
-  const { queryParams } = paramsByType[category.value];
-  const res = await axios.get(`${url.value.apiEndpoint}/${queryParams}`);
-  content.value = res.data;
+  loading.value = true
+  const { queryParams } = paramsByType[category.value]
+  const res = await axios.get(`${url.value.apiEndpoint}/${queryParams}`)
+  content.value = res.data
 }
 
 // Maps tag names from markdown to data required to show links/previews
-const defaultQueryParams = '?fields=name,document__title,';
+const defaultQueryParams = '?fields=name,document__title,'
 const paramsByType = {
-  armor: {
+  'armor': {
     apiEndpoint: 'armor',
     queryParams: defaultQueryParams + 'category',
   },
-  backgrounds: {
+  'backgrounds': {
     apiEndpoint: 'backgrounds',
     queryParams: defaultQueryParams,
   },
-  classes: {
+  'classes': {
     apiEndpoint: 'classes',
     queryParams: defaultQueryParams,
   },
-  combat: {
+  'combat': {
     altFrontEndSubroute: 'combat',
     apiEndpoint: 'sections',
     queryParams: defaultQueryParams + 'title',
   },
-  conditions: {
+  'conditions': {
     apiEndpoint: 'conditions',
     queryParams: defaultQueryParams + 'desc',
   },
-  equipment: {
+  'equipment': {
     altFrontEndSubroute: 'equipment',
     apiEndpoint: 'sections',
     queryParams: defaultQueryParams + 'parent',
   },
-  feats: {
+  'feats': {
     apiEndpoint: 'feats',
     queryParams: defaultQueryParams,
   },
@@ -105,46 +112,46 @@ const paramsByType = {
     apiEndpoint: 'sections',
     queryParams: defaultQueryParams + 'parent',
   },
-  magicitems: {
+  'magicitems': {
     altFrontEndSubroute: 'magic-items',
     apiEndpoint: 'magicitems',
     queryParams: defaultQueryParams + 'type,rarity,requires_attunement',
   },
-  monsters: {
+  'monsters': {
     apiEndpoint: 'monsters',
     queryParams: defaultQueryParams + 'size,type,challenge_rating',
   },
-  plane: {
+  'plane': {
     apiEndpoint: 'planes',
     queryParams: defaultQueryParams,
   },
-  races: {
+  'races': {
     apiEndpoint: 'races',
     queryParams: defaultQueryParams,
   },
-  running: {
+  'running': {
     altFrontEndSubroute: 'running',
     apiEndpoint: 'sections',
     queryParams: defaultQueryParams + 'parent',
   },
-  sections: {
+  'sections': {
     apiEndpoint: 'sections',
     queryParams: defaultQueryParams + 'parent',
   },
-  spells: {
+  'spells': {
     apiEndpoint: 'spells',
     queryParams:
-      defaultQueryParams +
-      'level,school,casting_time,duration,range,components',
+      defaultQueryParams
+      + 'level,school,casting_time,duration,range,components',
   },
-  spelllist: {
+  'spelllist': {
     altFrontEndSubroute: 'spells/by-class',
     apiEndpoint: 'spelllist',
     queryParams: defaultQueryParams,
   },
-  weapons: {
+  'weapons': {
     apiEndpoint: 'weapons',
     queryParams: defaultQueryParams + 'category',
   },
-};
+}
 </script>

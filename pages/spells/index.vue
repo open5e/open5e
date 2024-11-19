@@ -1,7 +1,9 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2 w-full">Spells</h1>
+      <h1 class="my-2 w-full">
+        Spells
+      </h1>
 
       <ApiTableNav
         class="w-full"
@@ -106,21 +108,21 @@
 <script setup lang="ts">
 // Set up filters
 const filterState = useFilterState<SpellFilter>({
-  key: "spells",
+  key: 'spells',
   fields: {
-    name__contains: "",
-    school__key: "",
-    classes__key__in: "",
+    name__contains: '',
+    school__key: '',
+    classes__key__in: '',
   },
-});
+})
 
 // State handlers for sorting results table
-const { sortBy, isSortDescending, setSortState } = useSortState();
+const { sortBy, isSortDescending, setSortState } = useSortState()
 
 // fields to fetch from API to populate table
-const fields = ["key", "name", "document", "level", "school", "classes"].join(
-  ",",
-);
+const fields = ['key', 'name', 'document', 'level', 'school', 'classes'].join(
+  ',',
+)
 
 // Fetch a page of results and pagination controls
 const { data, paginator } = useFindPaginated({
@@ -130,14 +132,14 @@ const { data, paginator } = useFindPaginated({
   filter: filterState.debouncedFilter,
   params: {
     fields,
-    document__fields: ["name", "key"].join(","),
-    classes__fields: ["name"].join(","),
-    school__fields: ["name", "key"].join(","),
+    document__fields: ['name', 'key'].join(','),
+    classes__fields: ['name'].join(','),
+    school__fields: ['name', 'key'].join(','),
     depth: 1,
   },
-});
+})
 
 // destructure pagination controls
-const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
-  paginator;
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
+  = paginator
 </script>

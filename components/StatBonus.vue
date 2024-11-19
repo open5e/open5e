@@ -9,12 +9,13 @@
 const props = defineProps({
   stat: { type: Number, default: 0 },
   type: { type: String, default: 'score' },
-});
+})
 const statBonus = computed(() => {
   if (props.type === 'score') {
-    return Math.floor((props.stat - 10) / 2);
-  } else {
-    return props.stat;
+    return Math.floor((props.stat - 10) / 2)
   }
-});
+  else {
+    return props.stat
+  }
+})
 </script>

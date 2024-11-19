@@ -4,8 +4,13 @@
       v-if="notifications.length"
       class="flex gap-2 bg-white/80 dark:bg-darkness/80"
     >
-      <h2 class="my-0 text-lg">Notifications</h2>
-      <button class="font-bold text-blood hover:text-red-400" @click="clear()">
+      <h2 class="my-0 text-lg">
+        Notifications
+      </h2>
+      <button
+        class="font-bold text-blood hover:text-red-400"
+        @click="clear()"
+      >
         Clear
       </button>
     </div>
@@ -19,7 +24,9 @@
           {{ notification.title }}
         </p>
         <div class="my-0 flex justify-between align-middle font-bold">
-          <p class="m-0 text-4xl">{{ notification.body }}</p>
+          <p class="m-0 text-4xl">
+            {{ notification.body }}
+          </p>
           <button
             class="float-right font-bold text-blood transition-all hover:text-red-400"
             @click="remove(index)"
@@ -36,13 +43,14 @@
 </template>
 
 <script setup>
-import { useNotifications } from '~/composables/useNotifications';
-const { clear, notifications, remove } = useNotifications();
+import { useNotifications } from '~/composables/useNotifications'
+
+const { clear, notifications, remove } = useNotifications()
 
 // clear notifications when route changes
-const route = useRoute();
+const route = useRoute()
 watch(
   () => route.path,
-  () => clear()
-);
+  () => clear(),
+)
 </script>

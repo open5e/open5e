@@ -31,11 +31,7 @@
     </p>
     <p>
       For example, monsters can be filtered by CR. For example:
-      <code
-        ><a href="https://api.open5e.com/monsters/?cr=3"
-          >api.open5e.com/monsters/?cr=3</a
-        ></code
-      >
+      <code><a href="https://api.open5e.com/monsters/?cr=3">api.open5e.com/monsters/?cr=3</a></code>
       will return all monsters with a challenge rating of 3.
     </p>
 
@@ -52,9 +48,7 @@
     </p>
     <p>
       For example
-      <code
-        ><a href="https://api.open5e.com/monsters/?document__slug=tob"
-      /></code>
+      <code><a href="https://api.open5e.com/monsters/?document__slug=tob" /></code>
       will only return monsters from Kobold Press' <em>Tome of Beasts</em>.
     </p>
 
@@ -70,11 +64,7 @@
     </p>
     <p>
       For example:
-      <code
-        ><a href="https://api.open5e.com/monsters/?search=fir"
-          >https://api.open5e.com/monsters/?search=fir</a
-        ></code
-      >
+      <code><a href="https://api.open5e.com/monsters/?search=fir">https://api.open5e.com/monsters/?search=fir</a></code>
       will return all monsters that contain "fir" in their names, including all
       monsters that include terms like "fire".
     </p>
@@ -95,11 +85,7 @@
     </p>
     <p>
       For example:
-      <code
-        ><a href="https://api.open5e.com/search/?text=fire"
-          >https://api.open5e.com/search/?text=fire</a
-        ></code
-      >
+      <code><a href="https://api.open5e.com/search/?text=fire">https://api.open5e.com/search/?text=fire</a></code>
       will search the entire SRD for anything containing "fire".
     </p>
 
@@ -107,11 +93,7 @@
     <p>You can set how many results you want using <code>/?limit</code>.</p>
     <p>
       For example,
-      <code
-        ><a href="https://api.open5e.com/monsters/?limit=100"
-          >https://api.open5e.com/monsters/?limit=100</a
-        ></code
-      >
+      <code><a href="https://api.open5e.com/monsters/?limit=100">https://api.open5e.com/monsters/?limit=100</a></code>
       will return a paginated set of results with the page size of 100.
     </p>
 
@@ -119,11 +101,7 @@
     <p>You can set how results are ordered using "ordering".</p>
     <p>
       For example,
-      <code
-        ><a href="https://api.open5e.com/monsters/?ordering=challenge_rating"
-          >https://api.open5e.com/monsters/?ordering=challenge_rating</a
-        ></code
-      >
+      <code><a href="https://api.open5e.com/monsters/?ordering=challenge_rating">https://api.open5e.com/monsters/?ordering=challenge_rating</a></code>
       will return results ordered by Challenge Rating. The API always sub-sorts
       by alphabetical order (so this will return CR0 creatures starting with the
       letter "A" first)

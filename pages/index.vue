@@ -16,9 +16,7 @@
     </p>
     <p>
       I'd also like to recommend
-      <a href="https://slyflourish.com/playing_dnd_can_save_your_life.html"
-        >Playing D&D Can Save Your Life</a
-      >, an inspiring take on the role of fantasy and play in mental health.
+      <a href="https://slyflourish.com/playing_dnd_can_save_your_life.html">Playing D&D Can Save Your Life</a>, an inspiring take on the role of fantasy and play in mental health.
     </p>
 
     <h3>LegendKeeper</h3>
@@ -58,11 +56,23 @@
       <b>VueJs UI layer.</b> A Vue.js single-page app, using the Nuxt framework.
     </p>
 
-    <a href="https://github.com/open5e/open5e" class="external-button mr-2">
-      <img src="/img/github-website-button.png" alt="Open5e site repo" />
+    <a
+      href="https://github.com/open5e/open5e"
+      class="external-button mr-2"
+    >
+      <img
+        src="/img/github-website-button.png"
+        alt="Open5e site repo"
+      />
     </a>
-    <a href="https://github.com/open5e/open5e-api" class="external-button">
-      <img src="/img/github-api-button.png" alt="Open5e API Repo" />
+    <a
+      href="https://github.com/open5e/open5e-api"
+      class="external-button"
+    >
+      <img
+        src="/img/github-api-button.png"
+        alt="Open5e API Repo"
+      />
     </a>
 
     <h3>Support us on Patreon</h3>
@@ -71,7 +81,10 @@
       on donations and patrons to pay for our server costs, and to fund an
       increasing effort to fill out flavor text and add art.
     </p>
-    <a href="https://www.patreon.com/open5e" class="external-button">
+    <a
+      href="https://www.patreon.com/open5e"
+      class="external-button"
+    >
       <img
         class="rounded-lg"
         src="/img/patron-button.png"
@@ -84,8 +97,14 @@
       Join us to chat, talk about development, and share neat homebrew. We don't
       bite!
     </p>
-    <a href="https://discord.gg/QXqF6gSVqB" class="external-button">
-      <img src="/img/discord-button.png" alt="Join our discord" />
+    <a
+      href="https://discord.gg/QXqF6gSVqB"
+      class="external-button"
+    >
+      <img
+        src="/img/discord-button.png"
+        alt="Join our discord"
+      />
     </a>
 
     <h2>The API</h2>

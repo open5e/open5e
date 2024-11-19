@@ -1,7 +1,9 @@
 <template>
   <section class="docs-container container">
     <div class="flex justify-between">
-      <h1 class="my-2 w-full">Magic Items</h1>
+      <h1 class="my-2 w-full">
+        Magic Items
+      </h1>
 
       <ApiTableNav
         :page-number="pageNo || 1"
@@ -81,22 +83,22 @@
 <script setup lang="ts">
 // Set up filters
 const filterState = useFilterState<MagicItemFilter>({
-  key: "magicItems",
+  key: 'magicItems',
   fields: DefaultMagicItemFilter,
-});
+})
 
 // State handlers for sorting results table
-const { sortBy, isSortDescending, setSortState } = useSortState();
+const { sortBy, isSortDescending, setSortState } = useSortState()
 
 // fields to fetch from API to populate table
 const fields = [
-  "key",
-  "name",
-  "document",
-  "category",
-  "rarity",
-  "requires_attunement",
-].join(",");
+  'key',
+  'name',
+  'document',
+  'category',
+  'rarity',
+  'requires_attunement',
+].join(',')
 
 // fetch page of data from API and pagination controls
 const { data, paginator } = useFindPaginated({
@@ -107,13 +109,13 @@ const { data, paginator } = useFindPaginated({
   params: {
     is_magic_item: true,
     fields,
-    document__fields: ["name", "key"].join(","),
-    category__fields: ["name", "key"].join(","),
-    rarity__fields: ["name", "rank"].join(","),
+    document__fields: ['name', 'key'].join(','),
+    category__fields: ['name', 'key'].join(','),
+    rarity__fields: ['name', 'rank'].join(','),
   },
-});
+})
 
 // destructure pagination controls
-const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
-  paginator;
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
+  = paginator
 </script>

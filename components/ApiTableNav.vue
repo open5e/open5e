@@ -1,7 +1,10 @@
 <template>
   <div class="grid justify-end">
     <ul class="flex">
-      <li v-for="button in buttons" :key="button.name">
+      <li
+        v-for="button in buttons"
+        :key="button.name"
+      >
         <ApiTableButton
           :name="button.name"
           :icon="button.icon"
@@ -16,41 +19,42 @@
     </label>
   </div>
 </template>
+
 <script setup>
 const props = defineProps({
   lastPageNumber: { type: Number, default: 1 },
   pageNumber: { type: Number, default: 1 },
-});
-const emit = defineEmits(["first", "last", "next", "prev"]);
+})
+const emit = defineEmits(['first', 'last', 'next', 'prev'])
 
 // conditional properties control whenever certain buttons are enabled
-const isNotFirstPage = computed(() => props.pageNumber > 1);
-const isNotLastPage = computed(() => props.pageNumber < props.lastPageNumber);
+const isNotFirstPage = computed(() => props.pageNumber > 1)
+const isNotLastPage = computed(() => props.pageNumber < props.lastPageNumber)
 
 const buttons = [
   {
-    name: "First page",
+    name: 'First page',
     isActive: isNotFirstPage,
-    onClick: () => emit("first"),
-    icon: "heroicons:chevron-double-left",
+    onClick: () => emit('first'),
+    icon: 'heroicons:chevron-double-left',
   },
   {
-    name: "Previous page",
+    name: 'Previous page',
     isActive: isNotFirstPage,
-    onClick: () => emit("prev"),
-    icon: "heroicons:chevron-left",
+    onClick: () => emit('prev'),
+    icon: 'heroicons:chevron-left',
   },
   {
-    name: "Next page",
+    name: 'Next page',
     isActive: isNotLastPage,
-    onClick: () => emit("next"),
-    icon: "heroicons:chevron-right",
+    onClick: () => emit('next'),
+    icon: 'heroicons:chevron-right',
   },
   {
-    name: "Last page",
+    name: 'Last page',
     isActive: isNotLastPage,
-    onClick: () => emit("last"),
-    icon: "heroicons:chevron-double-right",
+    onClick: () => emit('last'),
+    icon: 'heroicons:chevron-double-right',
   },
-];
+]
 </script>

@@ -4,7 +4,7 @@
     :class="{
       'bg-fog hover:bg-smoke': theme === 'light',
       'bg-basalt text-white hover:bg-granite': theme === 'dark',
-      hidden: !theme,
+      'hidden': !theme,
     }"
     :aria-roledescription="
       theme === 'light' ? 'Dark Mode Toggle' : 'Light Mode Toggle'
@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { useThemeSwitcher } from '~/composables/useThemeSwitcher';
+import { useThemeSwitcher } from '~/composables/useThemeSwitcher'
 
-const { theme, toggleTheme } = useThemeSwitcher();
+const { theme, toggleTheme } = useThemeSwitcher()
 </script>

@@ -1,20 +1,20 @@
-import { test, expect } from 'vitest';
-import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
-import ClassPage from '~/pages/classes/[className]/index.vue';
+import { test, expect } from 'vitest'
+import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime'
+import ClassPage from '~/pages/classes/[className]/index.vue'
 
-const { data: className } = useFindOne('v2/classes', 'srd_fighter');
+const { data: className } = useFindOne('v2/classes', 'srd_fighter')
 
-const page = await mountSuspended(ClassPage);
+const page = await mountSuspended(ClassPage)
 
 test('/classes/[className] page can mount', async () => {
-  expect(page);
-});
+  expect(page)
+})
 
 test('/classes/[className] page renders title', async () => {
-  const title = page.find('h1');
-  expect(title.exists()).toBe(true);
-  expect(title.text()).toEqual(unref(className)?.name);
-});
+  const title = page.find('h1')
+  expect(title.exists()).toBe(true)
+  expect(title.text()).toEqual(unref(className)?.name)
+})
 
 mockNuxtImport('useFindOne', () => {
   return () => ({
@@ -86,7 +86,7 @@ mockNuxtImport('useFindOne', () => {
         {
           key: 'srd_barbarian_rage',
           name: 'Rage',
-          desc: "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.\r\n\r\nWhile raging, you gain the following benefits if you aren't wearing heavy armor:\r\n\r\n* You have advantage on Strength checks and Strength saving throws.\r\n* When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.\r\n* You have resistance to bludgeoning, piercing, and slashing damage. \r\n\r\nIf you are able to cast spells, you can't cast them or concentrate on them while raging.\r\n\r\nYour rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.\r\n\r\nOnce you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again.",
+          desc: 'In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.\r\n\r\nWhile raging, you gain the following benefits if you aren\'t wearing heavy armor:\r\n\r\n* You have advantage on Strength checks and Strength saving throws.\r\n* When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.\r\n* You have resistance to bludgeoning, piercing, and slashing damage. \r\n\r\nIf you are able to cast spells, you can\'t cast them or concentrate on them while raging.\r\n\r\nYour rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven\'t attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.\r\n\r\nOnce you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again.',
         },
         {
           key: 'srd_barbarian_reckless-attack',
@@ -105,101 +105,101 @@ mockNuxtImport('useFindOne', () => {
         },
       ],
       levels: {
-        '12': {
-          features: ['srd_barbarian_ability-score-improvement'],
+        12: {
+          'features': ['srd_barbarian_ability-score-improvement'],
           'proficiency-bonus': 4,
-          level: 12,
+          'level': 12,
         },
-        '16': {
-          features: ['srd_barbarian_ability-score-improvement'],
+        16: {
+          'features': ['srd_barbarian_ability-score-improvement'],
           'proficiency-bonus': 5,
-          level: 16,
+          'level': 16,
         },
-        '19': {
-          features: ['srd_barbarian_ability-score-improvement'],
+        19: {
+          'features': ['srd_barbarian_ability-score-improvement'],
           'proficiency-bonus': 6,
-          level: 19,
+          'level': 19,
         },
-        '4': {
-          features: ['srd_barbarian_ability-score-improvement'],
+        4: {
+          'features': ['srd_barbarian_ability-score-improvement'],
           'proficiency-bonus': 2,
-          level: 4,
+          'level': 4,
         },
-        '8': {
-          features: ['srd_barbarian_ability-score-improvement'],
+        8: {
+          'features': ['srd_barbarian_ability-score-improvement'],
           'proficiency-bonus': 3,
-          level: 8,
+          'level': 8,
         },
-        '13': {
-          features: ['srd_barbarian_brutal-critical'],
+        13: {
+          'features': ['srd_barbarian_brutal-critical'],
           'proficiency-bonus': 5,
-          level: 13,
+          'level': 13,
         },
-        '17': {
-          features: ['srd_barbarian_brutal-critical'],
+        17: {
+          'features': ['srd_barbarian_brutal-critical'],
           'proficiency-bonus': 6,
-          level: 17,
+          'level': 17,
         },
-        '9': {
-          features: ['srd_barbarian_brutal-critical'],
+        9: {
+          'features': ['srd_barbarian_brutal-critical'],
           'proficiency-bonus': 4,
-          level: 9,
+          'level': 9,
         },
-        '2': {
-          features: [
+        2: {
+          'features': [
             'srd_barbarian_danger-sense',
             'srd_barbarian_reckless-attack',
           ],
           'proficiency-bonus': 2,
-          level: 2,
+          'level': 2,
         },
-        '5': {
-          features: [
+        5: {
+          'features': [
             'srd_barbarian_extra-attack',
             'srd_barbarian_fast-movement',
           ],
           'proficiency-bonus': 3,
-          level: 5,
+          'level': 5,
         },
-        '7': {
-          features: ['srd_barbarian_feral-instinct'],
+        7: {
+          'features': ['srd_barbarian_feral-instinct'],
           'proficiency-bonus': 3,
-          level: 7,
+          'level': 7,
         },
-        '18': {
-          features: ['srd_barbarian_indomitable-might'],
+        18: {
+          'features': ['srd_barbarian_indomitable-might'],
           'proficiency-bonus': 6,
-          level: 18,
+          'level': 18,
         },
-        '15': {
-          features: ['srd_barbarian_persistent-rage'],
+        15: {
+          'features': ['srd_barbarian_persistent-rage'],
           'proficiency-bonus': 5,
-          level: 15,
+          'level': 15,
         },
-        '20': {
-          features: ['srd_barbarian_primal-champion'],
+        20: {
+          'features': ['srd_barbarian_primal-champion'],
           'proficiency-bonus': 6,
-          level: 20,
+          'level': 20,
         },
-        '3': {
-          features: ['srd_barbarian_primal-path'],
+        3: {
+          'features': ['srd_barbarian_primal-path'],
           'proficiency-bonus': 2,
-          level: 3,
+          'level': 3,
         },
-        '1': {
-          features: ['srd_barbarian_rage', 'srd_barbarian_unarmored-defense'],
+        1: {
+          'features': ['srd_barbarian_rage', 'srd_barbarian_unarmored-defense'],
           'proficiency-bonus': 2,
-          level: 1,
+          'level': 1,
         },
-        '11': {
-          features: ['srd_barbarian_relentless-rage'],
+        11: {
+          'features': ['srd_barbarian_relentless-rage'],
           'proficiency-bonus': 4,
-          level: 11,
+          'level': 11,
         },
       },
     },
-  });
-});
+  })
+})
 
 mockNuxtImport('useFindMany', () => {
   return () => ({
@@ -209,5 +209,5 @@ mockNuxtImport('useFindMany', () => {
         name: 'Champion',
       },
     ],
-  });
-});
+  })
+})

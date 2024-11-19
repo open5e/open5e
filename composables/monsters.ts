@@ -1,10 +1,10 @@
 export type MonsterFilter = {
-  name__icontains?: string; // filter by name (TODO)
-  challenge_rating_decimal_gte?: string; // CR lower bound
-  challenge_rating_decimal__lte?: string; // CR upper bound
-  size?: string; // filter by size
-  type?: string; // filter by monster type (TODO)
-};
+  name__icontains?: string // filter by name (TODO)
+  challenge_rating_decimal_gte?: string // CR lower bound
+  challenge_rating_decimal__lte?: string // CR upper bound
+  size?: string // filter by size
+  type?: string // filter by monster type (TODO)
+}
 
 export const DefaultMonsterFilter: Readonly<MonsterFilter> = {
   name__icontains: '',
@@ -12,26 +12,26 @@ export const DefaultMonsterFilter: Readonly<MonsterFilter> = {
   challenge_rating_decimal__lte: '',
   size: '',
   type: '',
-};
+}
 
 // Fetch a single monster from Open5e API
 export const useMonster = (slug: string) => {
-  const { get } = useAPI();
+  const { get } = useAPI()
   return useQuery({
     queryKey: ['get', API_ENDPOINTS.monsters, slug],
     queryFn: async () => {
-      const monster = await get(API_ENDPOINTS.monsters, slug);
-      monster.abilities = ABILITY_SCORE_NAMES.map((ability) => ({
+      const monster = await get(API_ENDPOINTS.monsters, slug)
+      monster.abilities = ABILITY_SCORE_NAMES.map(ability => ({
         name: ability,
         shortName: ability.slice(0, 3),
         score: monster[ability],
         modifier: useFormatModifier(monster[ability], { inputType: 'score' }),
         save: monster[`${ability}_save`],
-      }));
-      return monster as Record<string, string>;
+      }))
+      return monster as Record<string, string>
     },
-  });
-};
+  })
+}
 
 const ABILITY_SCORE_NAMES = [
   'strength',
@@ -40,7 +40,7 @@ const ABILITY_SCORE_NAMES = [
   'intelligence',
   'wisdom',
   'charisma',
-] as const;
+] as const
 
 export const MONSTER_CHALLENGE_RATINGS_LIST = [
   '0',
@@ -77,7 +77,7 @@ export const MONSTER_CHALLENGE_RATINGS_LIST = [
   '28',
   '29',
   '30',
-] as const;
+] as const
 
 export const MONSTER_CHALLENGE_RATINGS_MAP = [
   ['0', 0],
@@ -114,7 +114,7 @@ export const MONSTER_CHALLENGE_RATINGS_MAP = [
   ['28', 28],
   ['29', 29],
   ['30', 30],
-] as const;
+] as const
 
 export const MONSTER_SIZES_LIST = [
   'Tiny',
@@ -123,7 +123,7 @@ export const MONSTER_SIZES_LIST = [
   'Large',
   'Huge',
   'Gargantuan',
-] as const;
+] as const
 
 export const MONSTER_TYPES_LIST = [
   'Aberration',
@@ -140,4 +140,4 @@ export const MONSTER_TYPES_LIST = [
   'Ooze',
   'Plant',
   'Undead',
-] as const;
+] as const

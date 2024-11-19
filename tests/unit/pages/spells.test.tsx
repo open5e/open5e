@@ -1,12 +1,12 @@
-import { test, expect } from 'vitest';
-import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
-import SpellsPage from '~/pages/spells/index.vue';
+import { test, expect } from 'vitest'
+import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime'
+import SpellsPage from '~/pages/spells/index.vue'
 
-const page = await mountSuspended(SpellsPage);
+const page = await mountSuspended(SpellsPage)
 
 test('/spells page can mount', async () => {
-  expect(page);
-});
+  expect(page)
+})
 
 mockNuxtImport('useFindPaginated', () => {
   return () => ({
@@ -25,7 +25,7 @@ mockNuxtImport('useFindPaginated', () => {
         concentration: true,
         document: {
           url: 'https://api.open5e.com/v2/documents/a5e-ag/',
-          name: "Adventurer's Guide",
+          name: 'Adventurer\'s Guide',
         },
       },
       {
@@ -42,7 +42,7 @@ mockNuxtImport('useFindPaginated', () => {
         concentration: false,
         document: {
           url: 'https://api.open5e.com/v2/documents/a5e-ag/',
-          name: "Adventurer's Guide",
+          name: 'Adventurer\'s Guide',
         },
       },
     ],
@@ -54,13 +54,13 @@ mockNuxtImport('useFindPaginated', () => {
       prevPage: () => {},
       nextPage: () => {},
     },
-  });
-});
+  })
+})
 
 mockNuxtImport('useSortState', () => {
   return () => ({
     sortBy: 'name',
     isSortDescenting: false,
     setSortState: () => {},
-  });
-});
+  })
+})

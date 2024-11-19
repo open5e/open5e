@@ -1,7 +1,9 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2">Classes</h1>
+      <h1 class="my-2">
+        Classes
+      </h1>
       <ApiTableNav
         class="w-full"
         :page-number="pageNo"
@@ -42,12 +44,12 @@ type ClassesFilter = { name__contains: string }
 
 // Set up filters
 const filterState = useFilterState<ClassesFilter>({
-  key: "classes",
-  fields: { name__contains: "" },
-});
+  key: 'classes',
+  fields: { name__contains: '' },
+})
 
 // state handlers for sorting results table
-const { sortBy, isSortDescending, setSortState } = useSortState();
+const { sortBy, isSortDescending, setSortState } = useSortState()
 
 // Fetch a page of classes & pagination controls
 const { data, paginator } = useFindPaginated({
@@ -57,13 +59,13 @@ const { data, paginator } = useFindPaginated({
   filter: filterState.debouncedFilter,
   params: {
     is_subclass: false,
-    fields: ["key", "name", "document"].join(),
-    document__fields: ["name", "key"].join(),
+    fields: ['key', 'name', 'document'].join(),
+    document__fields: ['name', 'key'].join(),
     depth: 1,
   },
-});
+})
 
 // destructure pagination controls
-const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
-  paginator;
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
+  = paginator
 </script>

@@ -1,7 +1,9 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2">Conditions</h1>
+      <h1 class="my-2">
+        Conditions
+      </h1>
 
       <ApiTableNav
         class="w-full"
@@ -32,13 +34,13 @@
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.conditions,
   params: {
-    fields: ["name", "key", "document"].join(","),
-    documents__fields: ["name", "key"].join(","),
+    fields: ['name', 'key', 'document'].join(','),
+    documents__fields: ['name', 'key'].join(','),
     depth: 1,
   },
-});
+})
 
 // destructure pagination controls
-const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
-  paginator;
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
+  = paginator
 </script>

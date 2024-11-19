@@ -13,15 +13,25 @@
     </p>
 
     <!-- Generate card body from data -->
-    <p v-for="item in body" :key="item.title" class="m-0 p-0 text-sm">
-      <span v-if="item.title" class="font-bold after:mr-1 after:content-[':']">
+    <p
+      v-for="item in body"
+      :key="item.title"
+      class="m-0 p-0 text-sm"
+    >
+      <span
+        v-if="item.title"
+        class="font-bold after:mr-1 after:content-[':']"
+      >
         {{ item.title }}
       </span>
       <span>{{ item.data }} </span>
     </p>
 
     <!-- Card footer -->
-    <p v-if="content.document__title" class="whitespace-nowrap text-sm italic">
+    <p
+      v-if="content.document__title"
+      class="whitespace-nowrap text-sm italic"
+    >
       Source: {{ content.document__title }}
     </p>
   </article>
@@ -32,45 +42,45 @@ const props = defineProps({
   category: { type: String, default: '' },
   // eslint-disable-next-line vue/require-prop-types
   content: { default: [] },
-});
+})
 
 const subtitle = computed(() => {
-  const data = props.content;
+  const data = props.content
   switch (props.category) {
     case 'spells':
-      return `${data.level} ${data.school} Spell`;
+      return `${data.level} ${data.school} Spell`
     case 'monsters':
-      return 'Monster';
+      return 'Monster'
     case 'magicitems':
-      return 'Magic Item';
+      return 'Magic Item'
     case 'conditions':
-      return 'Condition';
+      return 'Condition'
     case 'feats':
-      return 'Feat';
+      return 'Feat'
     case 'sections':
     case 'characters':
     case 'combat':
     case 'equipment':
     case 'gameplay-mechanics':
     case 'running':
-      return data.parent;
+      return data.parent
     default:
-      return props.category.charAt(0).toUpperCase() + props.category.slice(1);
+      return props.category.charAt(0).toUpperCase() + props.category.slice(1)
   }
-});
+})
 
 const body = computed(() => {
-  const data = props.content;
+  const data = props.content
   switch (props.category) {
     case 'conditions':
-      return [{ data: data.desc }];
+      return [{ data: data.desc }]
     case 'spells':
       return [
         { title: 'Casting Time', data: data.casting_time },
         { title: 'Duration', data: data.duration },
         { title: 'Range', data: data.range },
         { title: 'Components', data: data.components },
-      ];
+      ]
     case 'magicitems':
       return [
         {
@@ -78,15 +88,15 @@ const body = computed(() => {
             data.requires_attunement && '(requires attunement)'
           }`,
         },
-      ];
+      ]
     case 'monsters':
       return [
         { data: `CR ${data.challenge_rating} ${data.type} (${data.size})` },
-      ];
+      ]
     default:
-      return [];
+      return []
   }
-});
+})
 </script>
 
 <style></style>

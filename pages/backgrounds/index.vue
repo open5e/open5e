@@ -1,7 +1,9 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2">Backgrounds</h1>
+      <h1 class="my-2">
+        Backgrounds
+      </h1>
 
       <ApiTableNav
         class="w-full"
@@ -33,7 +35,7 @@
 
 <script setup>
 // state handlers for sorting results table
-const { sortBy, isSortDescending, setSortState } = useSortState();
+const { sortBy, isSortDescending, setSortState } = useSortState()
 
 // fetch page of data from API and pagination controls
 const { data, paginator } = useFindPaginated({
@@ -41,13 +43,13 @@ const { data, paginator } = useFindPaginated({
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   params: {
-    fields: ["name", "key", "document"].join(","),
-    document__fields: ["name", "key"].join(","),
+    fields: ['name', 'key', 'document'].join(','),
+    document__fields: ['name', 'key'].join(','),
     depth: 1,
   },
-});
+})
 
 // destructure pagination controls
-const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
-  paginator;
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
+  = paginator
 </script>

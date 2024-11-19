@@ -14,34 +14,35 @@
 </template>
 
 <script setup>
-import { VueShowdown } from "vue-showdown";
+import { VueShowdown } from 'vue-showdown'
+
 const props = defineProps({
   toc: { type: Boolean, default: true },
-  text: { type: String, default: "loading..." },
+  text: { type: String, default: 'loading...' },
   headerLevel: { type: Number, default: 1 },
   inline: { type: Boolean },
   useRoller: { type: Boolean, default: false },
-});
+})
 
 const crossLinkExtension = {
-  type: "output",
+  type: 'output',
   regex: /<open5e-link src=([^>]+)>([^<]+)<\/open5e-link>/g,
   replace: '<cross-link src="$1">$2</cross-link>',
-};
+}
 
 const diceRollerExtension = {
-  type: "output",
+  type: 'output',
   regex: /(\+\d+ to hit|\d+[dD]\d+( *[+-] *\d+)?)/g,
   replace: '<inline-roller signature="$1">$1</inline-roller>',
-};
+}
 
 const extensions = computed(() => {
-  const list = [crossLinkExtension];
+  const list = [crossLinkExtension]
   if (props.useRoller) {
-    list.push(diceRollerExtension);
+    list.push(diceRollerExtension)
   }
-  return list;
-});
+  return list
+})
 </script>
 
 <style>

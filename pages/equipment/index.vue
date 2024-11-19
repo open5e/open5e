@@ -1,7 +1,9 @@
 <template>
   <section>
     <div class="flex">
-      <h1 class="my-2 w-full">Equipment</h1>
+      <h1 class="my-2 w-full">
+        Equipment
+      </h1>
 
       <ApiTableNav
         :page-number="pageNo"
@@ -72,18 +74,18 @@
 <script setup lang="ts">
 // Set up filters
 const filterState = useFilterState<{ name__icontains: string }>({
-  key: "equipment",
+  key: 'equipment',
   fields: {
-    name__icontains: "",
+    name__icontains: '',
   },
-});
+})
 
 // State handlers for sorting results table
-const { sortBy, isSortDescending, setSortState } = useSortState();
+const { sortBy, isSortDescending, setSortState } = useSortState()
 
-const fields = ["key", "name", "document", "category"].join(",");
-const docFields = ["name", "key"].join(",");
-const categoryFields = ["name"].join(",");
+const fields = ['key', 'name', 'document', 'category'].join(',')
+const docFields = ['name', 'key'].join(',')
+const categoryFields = ['name'].join(',')
 
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.equipment,
@@ -97,8 +99,8 @@ const { data, paginator } = useFindPaginated({
     is_magic_item: false,
     depth: 1,
   },
-});
+})
 
-const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
-  paginator;
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
+  = paginator
 </script>

@@ -2,40 +2,40 @@
 export default defineNuxtConfig({
   app: {
     pageTransition: {
-      name: "fade",
-      mode: "out-in",
+      name: 'fade',
+      mode: 'out-in',
     },
     /*
      ** Headers of the page
      */
     head: {
-      title: "Open5e",
+      title: 'Open5e',
       meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
-          key: "description",
-          name: "description",
-          content: "The truly open source for 5e rules and resources",
+          key: 'description',
+          name: 'description',
+          content: 'The truly open source for 5e rules and resources',
         },
       ],
       link: [
-        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css?family=Lora:700",
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Lora:700',
         },
         {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i",
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i',
         },
       ],
       htmlAttrs: {
-        lang: "en",
+        lang: 'en',
       },
       script: [
         {
-          type: "text/javascript",
+          type: 'text/javascript',
           innerHTML: `
           if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
             document.documentElement.classList.add('dark')
@@ -49,15 +49,15 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: "digital-ocean",
+    preset: 'digital-ocean',
   },
 
   modules: [
-    "@nuxt/eslint",
-    "@nuxtjs/tailwindcss",
-    "nuxt-icon",
-    "@hebilicious/vue-query-nuxt",
-    "@nuxt/test-utils/module",
+    '@nuxt/eslint',
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon',
+    '@hebilicious/vue-query-nuxt',
+    '@nuxt/test-utils/module',
   ],
 
   queryClientOptions: {
@@ -66,7 +66,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      apiUrl: process.env.API_URL || "https://api.open5e.com",
+      apiUrl: process.env.API_URL || 'https://api.open5e.com',
     },
   },
 
@@ -75,21 +75,29 @@ export default defineNuxtConfig({
   },
 
   hooks: {
-    "vite:extendConfig": (config, { isClient }) => {
+    'vite:extendConfig': (config, { isClient }) => {
       if (isClient) {
-        config.resolve.alias.vue = "vue/dist/vue.esm-bundler";
+        config.resolve.alias.vue = 'vue/dist/vue.esm-bundler'
       }
     },
   },
 
   tailwindcss: {
-    configPath: "~/tailwind.config.ts",
-    cssPath: "~/styles/tailwind.css",
+    configPath: '~/tailwind.config.ts',
+    cssPath: '~/styles/tailwind.css',
   },
 
   typescript: {
     strict: false,
   },
 
-  compatibilityDate: "2024-11-16",
-});
+  eslint: {
+    config: {
+      stylistic: {
+        quotes: 'single',
+      },
+    },
+  },
+
+  compatibilityDate: '2024-11-16',
+})

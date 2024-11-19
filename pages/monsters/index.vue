@@ -1,7 +1,9 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2 w-full">Monsters</h1>
+      <h1 class="my-2 w-full">
+        Monsters
+      </h1>
 
       <ApiTableNav
         class="w-full"
@@ -56,7 +58,12 @@
       ]"
     />
 
-    <h3 ref="results" class="sr-only" tabindex="-1" @keyup.esc="focusFilter" />
+    <h3
+      ref="results"
+      class="sr-only"
+      tabindex="-1"
+      @keyup.esc="focusFilter"
+    />
 
     <ApiResultsTable
       v-model="debouncedFilter"
@@ -94,24 +101,24 @@
 <script setup lang="ts">
 // Set up filters
 const filterState = useFilterState<MonsterFilter>({
-  key: "monsters",
+  key: 'monsters',
   fields: DefaultMonsterFilter,
-});
+})
 
 // State handlers for sorting results table
-const { sortBy, isSortDescending, setSortState } = useSortState();
+const { sortBy, isSortDescending, setSortState } = useSortState()
 
 // fields to fetch from API to populate table
 const fields = [
-  "key",
-  "name",
-  "document",
-  "challenge_rating_text",
-  "challenge_rating_decimal",
-  "document",
-  "type",
-  "size",
-].join(",");
+  'key',
+  'name',
+  'document',
+  'challenge_rating_text',
+  'challenge_rating_decimal',
+  'document',
+  'type',
+  'size',
+].join(',')
 
 // fetch page of data from API and pagination controls
 const { data, paginator } = useFindPaginated({
@@ -121,15 +128,15 @@ const { data, paginator } = useFindPaginated({
   filter: filterState.debouncedFilter,
   params: {
     fields,
-    document__fields: "name,key",
-    type__fields: "name",
-    size__fields: "name,key",
+    document__fields: 'name,key',
+    type__fields: 'name',
+    size__fields: 'name,key',
     is_subclass: false,
     depth: 1,
   },
-});
+})
 
 // destructure pagination controls
-const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
-  paginator;
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
+  = paginator
 </script>

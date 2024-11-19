@@ -2,8 +2,14 @@
   <main class="container">
     <h1>Spells by Class</h1>
     <ul class="docs-toc">
-      <li v-for="[name, slug] in available_classes" :key="name">
-        <nuxt-link tag="a" :href="`/spells/by-class/${slug}`">
+      <li
+        v-for="[name, slug] in available_classes"
+        :key="name"
+      >
+        <nuxt-link
+          tag="a"
+          :href="`/spells/by-class/${slug}`"
+        >
           {{ name }}
         </nuxt-link>
       </li>
@@ -20,6 +26,7 @@ const available_classes = [
   ['Druid', 'druid'],
   ['Paladin', 'paladin'],
   ['Warlock', 'warlock'],
-];
+]
 </script>
+
 <style></style>

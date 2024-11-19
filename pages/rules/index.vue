@@ -1,7 +1,9 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2">Rules</h1>
+      <h1 class="my-2">
+        Rules
+      </h1>
 
       <ApiTableNav
         class="w-full"
@@ -41,13 +43,13 @@
 <script setup lang="ts">
 // Set up filters
 const filterState = useFilterState<{ name__contains: string }>({
-  key: "rules",
+  key: 'rules',
   fields: {
-    name__contains: "",
+    name__contains: '',
   },
-});
+})
 
-const { sortBy, isSortDescending, setSortState } = useSortState();
+const { sortBy, isSortDescending, setSortState } = useSortState()
 
 // fetch a page of data from API, and pagination controls
 const { data, paginator } = useFindPaginated({
@@ -56,12 +58,12 @@ const { data, paginator } = useFindPaginated({
   isSortDescending: isSortDescending,
   filter: filterState.debouncedFilter,
   params: {
-    fields: ["name", "key", "document"].join(","),
-    document__fields: ["name", "key"].join(","),
+    fields: ['name', 'key', 'document'].join(','),
+    document__fields: ['name', 'key'].join(','),
     depth: 1,
   },
-});
+})
 
-const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
-  paginator;
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
+  = paginator
 </script>

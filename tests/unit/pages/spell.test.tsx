@@ -1,23 +1,23 @@
-import { test, expect } from 'vitest';
-import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
-import SpellPage from '~/pages/spells/[id].vue';
+import { test, expect } from 'vitest'
+import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime'
+import SpellPage from '~/pages/spells/[id].vue'
 
 const { data: spell } = useFindOne(
   'v2/spells',
-  'srd_adamantine-armor-breastplate'
-);
+  'srd_adamantine-armor-breastplate',
+)
 
-const page = await mountSuspended(SpellPage);
+const page = await mountSuspended(SpellPage)
 
 test('/magic-items/[id] page can mount', async () => {
-  expect(page);
-});
+  expect(page)
+})
 
 test('/magic-items/[id] page renders title', async () => {
-  const title = page.find('h1');
-  expect(title.exists()).toBe(true);
-  expect(title.text()).toEqual(unref(spell)?.name);
-});
+  const title = page.find('h1')
+  expect(title.exists()).toBe(true)
+  expect(title.text()).toEqual(unref(spell)?.name)
+})
 
 mockNuxtImport('useFindOne', () => {
   return () => ({
@@ -56,5 +56,5 @@ mockNuxtImport('useFindOne', () => {
         { name: 'Wizard', url: 'v2/classes/srd_wizard/' },
       ],
     },
-  });
-});
+  })
+})

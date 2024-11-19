@@ -1,17 +1,17 @@
 <script setup lang="ts">
 withDefaults(
   defineProps<{
-    disabled?: boolean;
-    name: string;
-    icon: string;
-    sizeClasses?: string;
+    disabled?: boolean
+    name: string
+    icon: string
+    sizeClasses?: string
   }>(),
   {
-    sizeClasses: "size-8",
+    sizeClasses: 'size-8',
   },
-);
+)
 
-defineEmits(["click"]);
+defineEmits(['click'])
 </script>
 
 <template>
