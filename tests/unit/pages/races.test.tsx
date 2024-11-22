@@ -1,10 +1,10 @@
 import { test, expect } from 'vitest';
 import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
-import ConditionsPage from '~/pages/conditions/index.vue';
+import RacesPage from '~/pages/races/index.vue';
 
-const page = await mountSuspended(ConditionsPage);
+const page = await mountSuspended(RacesPage);
 
-test('/conditions page can mount', async () => {
+test('/races page can mount', async () => {
   expect(page);
 });
 
@@ -12,24 +12,24 @@ mockNuxtImport('useFindPaginated', () => {
   return () => ({
     data: [
       {
-        key: 'blinded',
-        name: 'Blinded',
+        key: 'srd_dragonborn',
+        name: 'Dragonborn',
         document: {
           url: 'https://api.open5e.com/v2/documents/srd/',
           name: 'Systems Reference Document',
         },
       },
       {
-        key: 'charmed',
-        name: 'Charmed',
+        key: 'srd_dwarf',
+        name: 'Dwarf',
         document: {
           url: 'https://api.open5e.com/v2/documents/srd/',
           name: 'Systems Reference Document',
         },
       },
       {
-        key: 'deafened',
-        name: 'Deafened',
+        key: 'srd_elf',
+        name: 'Elf',
         document: {
           url: 'https://api.open5e.com/v2/documents/srd/',
           name: 'Systems Reference Document',

@@ -1,16 +1,51 @@
 <template>
   <section class="docs-container container">
-    <div class="filter-header-wrapper">
-      <h1 class="filter-header">Races</h1>
+    <div class="flex">
+      <h1 class="my-2">Races</h1>
+
+      <ApiTableNav
+        class="w-full"
+        :page-number="pageNo"
+        :last-page-number="lastPageNo"
+        @first="firstPage()"
+        @next="nextPage()"
+        @prev="prevPage()"
+        @last="lastPage()"
+      />
     </div>
-    <api-results-table
-      endpoint="races"
-      :api-endpoint="API_ENDPOINTS.races"
-      :cols="['document__title', 'document__slug']"
+
+    <ApiResultsTable
+      :data="data?.results"
+      :cols="[
+        {
+          displayName: 'Name',
+          value: (data) => data.name,
+          link: (data) => `/races/${data.key}`,
+        },
+      ]"
+      :sort-by="sortBy"
+      :is-sort-descending="isSortDescending"
+      @sort="(sortValue) => setSortState(sortValue)"
     />
   </section>
 </template>
 
 <script setup>
-import ApiResultsTable from '~/components/ApiResultsTable.vue';
+const { sortBy, isSortDescending, setSortState } = useSortState();
+
+// fetch page of data from API and pagination controls
+const { data, paginator } = useFindPaginated({
+  endpoint: API_ENDPOINTS.races,
+  sortByProperty: sortBy,
+  isSortDescending: isSortDescending,
+  params: {
+    fields: ['name', 'key', 'document'].join(','),
+    document__fields: ['name', 'key'].join(','),
+    subrace_of__isnull: true,
+    depth: 1,
+  },
+});
+
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
+  paginator;
 </script>

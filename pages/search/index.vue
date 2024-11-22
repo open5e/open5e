@@ -52,7 +52,6 @@
 
 <script setup>
 import { computed } from 'vue';
-import SearchResult from '~/components/SearchResult';
 
 const searchText = useQueryParam('text');
 const { data } = useSearch(searchText);
@@ -62,6 +61,7 @@ const results = computed(() => {
   if (!data || !data.value) {
     return;
   }
+
   // split result based on which from currently selected sources
   const [inScope, outScope] = data.value.reduce(
     ([inScope, outScope], item) =>

@@ -1,48 +1,41 @@
 <template>
   <section v-if="race" class="docs-container container">
     <h1>{{ race.name }}</h1>
-    <md-viewer :text="race.desc" />
-    <md-viewer :text="race['asi_desc']" />
-    <md-viewer :text="race['speed_desc']" />
-    <md-viewer :text="race.vision" />
-    <md-viewer :text="race.age" />
-    <md-viewer :text="race.alignment" />
-    <md-viewer :text="race.size" />
-    <md-viewer :text="race.languages" />
-    <md-viewer :text="race.traits" />
-    <p class="text-sm italic">
-      Source:
-      <a target="NONE" :href="race.document__url">
-        <span>{{ race.document__title }}</span>
-        <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
-      </a>
-    </p>
+    <dl>
+      <h2>Traits</h2>
+      <div v-for="trait in traits" :key="trait.name" class="my-2">
+        <dt class="font-bold after:content-['._']">{{ trait.name }}</dt>
+        <dd class="inline">
+          <md-viewer :inline="true" :text="trait.desc" />
+        </dd>
+      </div>
+    </dl>
 
-    <h2 v-if="subraceLength > 0">Subraces</h2>
-    <div v-for="subrace in race.subraces" :key="subrace.name">
-      <h3 class="flex items-center">
-        {{ subrace.name }}
-        <source-tag
-          v-show="race.document__slug"
-          class="ml-4"
-          :title="race.document__title"
-          :text="race.document__slug"
-        />
-      </h3>
-      <md-viewer :header-level="2" :text="subrace.desc" />
-      <md-viewer :text="subrace['asi_desc']" />
-      <md-viewer :text="subrace.traits" />
-      <p class="text-sm italic">
-        Source:
-        <a target="NONE" :href="subrace.document__url">
-          {{ subrace.document__title }}
-          <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
-        </a>
-      </p>
-    </div>
+    <ul v-if="Object.keys(subraces).length > 0">
+      <h2>Subraces</h2>
+      <li v-for="subrace in subraces" :key="subrace.key">
+        <h3>{{ subrace.name }}</h3>
+        <md-viewer :inline="true" :text="subrace.desc" />
+        <dl>
+          <div v-for="trait in subrace.traits" :key="trait.name" class="my-2">
+            <dt class="font-bold after:content-['._']">{{ trait.name }}</dt>
+            <dd class="inline">{{ trait.desc }}</dd>
+          </div>
+        </dl>
+      </li>
+    </ul>
   </section>
 </template>
 
 <script setup>
-const { data: race } = useFindOne(API_ENDPOINTS.races, useRoute().params.id);
+const { data: race } = useFindOne(API_ENDPOINTS.races, useRoute().params.id, {
+  params: { subrace_of__isnull: true },
+});
+
+const { data: subraces } = useFindMany(API_ENDPOINTS.races, {
+  subrace_of__key__in: useRoute().params.id,
+});
+
+// traits can be ordered here, but the order the API rtns them is already good
+const traits = computed(() => unref(race).traits);
 </script>

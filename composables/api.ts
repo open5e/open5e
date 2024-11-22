@@ -1,19 +1,19 @@
-import { keepPreviousData, useQuery } from '@tanstack/vue-query';
+import { useQuery } from '@tanstack/vue-query';
 import axios from 'axios';
 
 export const API_ENDPOINTS = {
-  backgrounds: 'v1/backgrounds',
-  characters: 'v1/characters',
-  classes: 'v1/classes',
-  conditions: 'v1/conditions',
-  documents: 'v1/documents',
-  feats: 'v1/feats',
-  magicitems: 'v1/magicitems',
-  monsters: 'v1/monsters',
-  races: 'v1/races',
+  backgrounds: 'v2/backgrounds/',
+  classes: 'v2/classes/',
+  conditions: 'v2/conditions/',
+  documents: 'v2/documents/',
+  feats: 'v2/feats/',
+  magicitems: 'v2/items/',
+  monsters: 'v2/creatures/',
+  races: 'v2/races/',
   search: 'v2/search/',
-  sections: 'v1/sections',
-  spells: 'v1/spells',
+  spells: 'v2/spells/',
+  rules: 'v2/rulesets/',
+  equipment: 'v2/items/',
 } as const;
 
 /** Provides the base functions to easily fetch data from the Open5e API. */
@@ -36,7 +36,7 @@ export const useAPI = () => {
       const res = await api.get(endpoint, {
         params: {
           limit: 5000,
-          document__slug__in: formattedSources,
+          document__key__in: formattedSources,
           ...params,
         },
       });
@@ -62,13 +62,12 @@ export const useAPI = () => {
         queryParams = {},
       } = options;
 
-      const formattedSources =
-        sources.length > 0 ? sources.join(',') : 'no-sources';
+      const formattedSources = sources.join(',');
       const res = await api.get(endpoint, {
         params: {
           limit: itemsPerPage,
           page: pageNo,
-          document__slug__in: formattedSources,
+          document__key__in: formattedSources,
           ordering: `${isSortDescending ? '-' : ''}${sortByProperty}`,
           ...queryParams,
         },
@@ -84,9 +83,13 @@ export const useAPI = () => {
       return data;
     },
     get: async (...parts: string[]) => {
-      const route = '/' + parts.join('/');
-      const res = await api.get(route);
-      return res.data as Record<string, any>;
+      const route = parts.join('');
+      const res = await api.get(route, { params: { depth: '2' } }).catch(() => {
+        // redirect to /search if API route returns nothing
+        const searchTerm = parts.filter((exists) => exists).slice(-1)[0];
+        navigateTo(`/search?text=${searchTerm}`);
+      });
+      return res?.data as Record<string, any>;
     },
   };
 };
@@ -96,110 +99,117 @@ export const useFindMany = (
   params?: MaybeRef<Record<string, string | number>>
 ) => {
   const { findMany } = useAPI();
-  const { sources } = useSourcesList();
+
+  // API V1 & V2 use different PKs for sources. Select the correct one.
+  const { sources, sourcesAPIVersion1 } = useSourcesList();
+  const sourcesForAPIVersion = isV1Endpoint(unref(endpoint))
+    ? sourcesAPIVersion1
+    : sources;
+
   return useQuery({
-    queryKey: ['findMany', endpoint, sources, params],
+    queryKey: ['findMany', endpoint, sourcesForAPIVersion, params],
     queryFn: () =>
-      unref(findMany(unref(endpoint), unref(sources), unref(params))),
+      unref(
+        findMany(unref(endpoint), unref(sourcesForAPIVersion), unref(params))
+      ),
   });
 };
 
-export const useFindPaginated = (options: {
-  endpoint: MaybeRef<string>;
-  itemsPerPage?: MaybeRef<number>;
-  initialPage?: MaybeRef<number>;
-  sortByProperty?: MaybeRef<string>;
-  isSortDescending?: MaybeRef<boolean>;
-  filter?: MaybeRef<Record<string, any>>;
-  params?: MaybeRef<Record<string, any>>;
-}) => {
-  const {
-    endpoint,
-    itemsPerPage = 50,
-    initialPage = 1,
-    sortByProperty = 'name',
-    isSortDescending = false,
-    filter = {},
-    params = {},
-  } = options;
-  const pageNo = ref(unref(initialPage));
-  const { findPaginated } = useAPI();
-  const { sources } = useSourcesList();
-  const { data, isFetching, error } = useQuery({
-    queryKey: [
-      'findPaginated',
-      endpoint,
-      sources,
-      itemsPerPage,
-      pageNo,
-      sortByProperty,
-      isSortDescending,
-      filter,
-      params,
-    ],
-    placeholderData: keepPreviousData,
-    queryFn: () =>
-      findPaginated({
-        endpoint: unref(endpoint),
-        sources: unref(sources),
-        pageNo: unref(pageNo),
-        sortByProperty: unref(sortByProperty),
-        isSortDescending: unref(isSortDescending),
-        itemsPerPage: unref(itemsPerPage),
-        queryParams: { ...unref(params), ...unref(filter) },
-      }),
-  });
+/**
+ * Recursively fetch nested resources based on the specified fields.
+ * @param data - The current data object.
+ * @param fields - The list of fields to fetch.
+ * @returns The data object with nested resources fetched.
+ */
+const fetchNestedResources = async (
+  data: Record<string, any>,
+  fields: string[]
+): Promise<Record<string, any>> => {
+  for (const field of fields) {
+    const fieldParts = field.split('.');
+    let currentData = data;
+    let parentData = data;
+    let parentKey = '';
 
-  const lastPageNo = computed(() => {
-    return data.value ? Math.ceil(data.value.count / unref(itemsPerPage)) : 1;
-  });
-
-  const nextPage = () => {
-    pageNo.value++;
-  };
-
-  const prevPage = () => {
-    if (pageNo.value > 1) {
-      pageNo.value--;
+    // Traverse the nested fields
+    for (const part of fieldParts) {
+      if (currentData[part]) {
+        parentData = currentData;
+        parentKey = part;
+        currentData = currentData[part];
+      } else {
+        (currentData as Record<string, any>)[part] = null;
+        break;
+      }
     }
-  };
 
-  const firstPage = () => {
-    pageNo.value = 1;
-  };
+    // Fetch related data if the current field is a URL
+    if (
+      typeof currentData === 'string' &&
+      (currentData as string).startsWith('http')
+    ) {
+      const relatedData = await axios.get(currentData);
+      parentData[parentKey] = relatedData.data;
 
-  const lastPage = () => {
-    if (data.value) {
-      pageNo.value = lastPageNo.value;
+      // Recursively fetch nested related fields
+      const nestedFields = fields
+        .filter((f) => f.startsWith(`${field}.`))
+        .map((f) => f.slice(field.length + 1));
+      if (nestedFields.length > 0) {
+        await fetchNestedResources(parentData[parentKey], nestedFields);
+      }
     }
-  };
-
-  // Move to the first page when the filter changes, to avoid showing an empty page due to fewer results
-  watch(filter, () => {
-    firstPage();
-  });
-
-  return {
-    data,
-    isFetching,
-    error,
-    firstPage,
-    prevPage,
-    nextPage,
-    lastPage,
-    pageNo,
-    lastPageNo,
-  };
+  }
+  return data;
 };
 
 export const useFindOne = (
-  endpoint: MaybeRef<string>,
-  slug: MaybeRef<string>
+  endpoint: string,
+  id: MaybeRef<string>,
+  options?: {
+    params: Record<string, string>;
+    relatedFields: string[];
+  }
 ) => {
   const { get } = useAPI();
+
+  const params = options?.params;
+  let formattedParams = [];
+  for (const name in params) {
+    formattedParams.push(`${name}=${params[name]}`);
+  }
+  const paramString =
+    formattedParams.length === 0 ? '' : '/?' + formattedParams.join('&');
   return useQuery({
-    queryKey: ['get', endpoint, slug],
-    queryFn: () => get(unref(endpoint), unref(slug)),
+    queryKey: [endpoint, id],
+    queryFn: async () => {
+      // Fetch the main data
+      // const data = await get(endpoint, unref(id), '/?fields=key');
+      const data = await get(endpoint, unref(id), paramString);
+      // Fetch related data for the specified fields
+      const enrichedData = await fetchNestedResources(
+        data,
+        options?.relatedFields ?? []
+      );
+
+      return enrichedData;
+    },
+  });
+};
+
+export const useFindByLink = (link: MaybeRef<string>) => {
+  const { get } = useAPI();
+
+  return useQuery({
+    queryKey: ['findByLink', link],
+    queryFn: async () => {
+      const url = new URL(unref(link));
+      const pathParts = url.pathname.split('/').filter(Boolean);
+      const endpoint = pathParts.slice(0, 2).join('/');
+      const objectId = pathParts[2];
+
+      return get(endpoint, objectId);
+    },
   });
 };
 
@@ -246,17 +256,11 @@ export function sortByField(
   });
 }
 
-export type MagicItemsFilter = {
-  name?: string;
-  rarity?: string;
-  type?: string;
-  isAttunementRequired?: boolean;
-};
-
 export const useDocuments = (params: Record<string, any> = {}) => {
+  params.depth = '1';
   const { findMany } = useAPI();
   return useQuery({
-    queryKey: ['findMany', API_ENDPOINTS.documents],
+    queryKey: ['findMany', API_ENDPOINTS.documents, params],
     queryFn: () => findMany(API_ENDPOINTS.documents, [], params),
   });
 };
@@ -267,8 +271,8 @@ export const useSearch = (queryRef: Ref<string>) => {
     queryKey: ['search', queryRef],
     queryFn: () =>
       queryRef.value
-        ? findMany(`${API_ENDPOINTS.search}`, [], {
-            schema: 'v1',
+        ? findMany(API_ENDPOINTS.search, [], {
+            schema: 'v2',
             query: queryRef.value,
           })
         : [],
@@ -277,3 +281,7 @@ export const useSearch = (queryRef: Ref<string>) => {
 
 export const useQueryParam = (paramName: string) =>
   computed(() => useRoute().query[paramName]);
+
+export function isV1Endpoint(endpoint: string) {
+  return endpoint.includes('v1/');
+}

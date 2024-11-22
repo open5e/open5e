@@ -16,27 +16,13 @@
 import colors from 'tailwindcss/colors';
 
 const props = defineProps({
-  text: {
-    default: '',
-    type: String,
-  },
-  title: {
-    default: '',
-    type: String,
-  },
-  textColor: {
-    type: String,
-    default: colors.slate[900],
-  },
-  background: {
-    type: String,
-    default: colors.slate[100],
-  },
-  border: {
-    type: String,
-    default: colors.slate[300],
-  },
+  text: { type: String, default: '' },
+  title: { type: String, default: '' },
+  textColor: { type: String, default: colors.slate[900] },
+  background: { type: String, default: colors.slate[100] },
+  border: { type: String, default: colors.slate[300] },
 });
+
 // this creates a quick (but non-cryptographic) numeric hash of the string
 function hashCode(str) {
   let hash = 0;

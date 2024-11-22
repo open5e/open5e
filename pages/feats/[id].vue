@@ -2,27 +2,30 @@
   <main v-if="feat" class="docs-container container">
     <h1>
       <span>{{ feat.name }}</span>
-      <source-tag
-        v-if="feat.document__slug !== 'wotc-srd'"
-        :text="feat.document__slug"
-        :title="feat.document__title"
-      />
+      <source-tag :text="sourceKey" :title="feat.document.name" />
     </h1>
     <section>
       <p v-if="feat.prerequisite">
-        <b>{{ feat.prerequisite }}</b>
+        <span class="font-bold after:content-['._']">Prerequistes</span>
+        <span>{{ feat.prerequisite }}</span>
       </p>
-      <md-viewer :text="feat.desc" />
-      <ul v-if="feat.effects_desc.length > 0">
-        <li v-for="point in feat.effects_desc" :key="point.slice(0, 10)">
-          {{ point }}
-        </li>
-      </ul>
+      <md-viewer :text="feat.desc" class="list-disc" />
     </section>
   </main>
   <p v-else>Loading...</p>
 </template>
 
 <script setup>
-const { data: feat } = useFindOne(API_ENDPOINTS.feats, useRoute().params.id);
+const { data: feat } = useFindOne(API_ENDPOINTS.feats, useRoute().params.id, {
+  fields: ['name', 'desc', 'prerequisite', 'document'],
+});
+
+// generate source key from page URL - for use with source-tab cmpnt
+const sourceKey = computed(() => {
+  if (!feat?.value?.document) return;
+  return feat.value.document.url
+    .split('/')
+    .filter((exists) => exists)
+    .pop();
+});
 </script>
