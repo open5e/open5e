@@ -16,5 +16,5 @@
 </template>
 
 <script setup>
-const { data: ruleset } = useFindOne(API_ENDPOINTS.rules, useRoute().params.id)
+const { data: ruleset } = useFindOne(API_ENDPOINTS.rules, useRoute().params.id);
 </script>

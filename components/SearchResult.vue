@@ -67,14 +67,14 @@
 defineProps({
   query: { type: String, default: '' },
   result: { type: Object, default: () => {} },
-})
+});
 
 function stripMarkdownTables(text) {
   // Remove table row markup but keep the content
   return text
     .replace(/\|/g, ' ') // Replace pipe characters with spaces
     .replace(/(\r\n|\n|\r)/gm, ' ') // Remove line breaks
-    .replace(/-{3,}/g, '') // Remove three or more hyphens
+    .replace(/-{3,}/g, ''); // Remove three or more hyphens
 }
 
 // Look-up Table: mapping API endpoints to website routes
@@ -87,49 +87,49 @@ const endpoints = {
   Feat: 'feats',
   Background: 'backgrounds',
   CharacterClass: 'classes',
-}
+};
 
 // Takes a search result and generates its URL on the Open5e website
 const formatUrl = (input) => {
-  let baseUrl = endpoints[input.object_model] ?? input.object_model
+  let baseUrl = endpoints[input.object_model] ?? input.object_model;
 
   // non-magic items link to /equipment route
   if (baseUrl === 'magic-items' && !input?.object?.is_magic_item)
-    baseUrl = 'equipment'
+    baseUrl = 'equipment';
 
   // subclass urls must be prepended by their base-class
-  if (input?.object?.subclass_of) baseUrl += `/${input.object.subclass_of.key}`
+  if (input?.object?.subclass_of) baseUrl += `/${input.object.subclass_of.key}`;
 
   // subraces link to their base-race
   if (input?.object?.subrace_of)
-    return `${baseUrl}/${input.object.subrace_of.key}`
+    return `${baseUrl}/${input.object.subrace_of.key}`;
 
-  return `${baseUrl}/${input.object_pk}`
-}
+  return `${baseUrl}/${input.object_pk}`;
+};
 
 // Takes the API endpoint a result is pulled from and returns
 const formatCategory = (input) => {
   // Insert spaces into PascalCase text
-  const category = input.object_model.match(/[A-Z][a-z]+/g).join(' ')
+  const category = input.object_model.match(/[A-Z][a-z]+/g).join(' ');
   // Creatures -> Monsters
-  if (category === 'Creature') return 'Monster'
+  if (category === 'Creature') return 'Monster';
   // Items (Magic) -> 'Magic Item'
-  if (input.object?.is_magic_item) return 'Magic Item'
+  if (input.object?.is_magic_item) return 'Magic Item';
   // Items (Rest) -> 'Equipment'
-  if (category === 'Item') return 'Equipment'
+  if (category === 'Item') return 'Equipment';
   // Character Class -> Class OR [CLASS] Subclass
   if (category === 'Character Class') {
     if (input?.object?.subclass_of)
-      return `${input.object.subclass_of.name} Subclass`
-    else return 'Class'
+      return `${input.object.subclass_of.name} Subclass`;
+    else return 'Class';
   }
   // Race -> Race OR [RACE] Subrace
   if (input?.object?.subrace_of)
-    return `${input.object.subrace_of.name} Subrace`
-  return category // BASE-CASE: return category without alteration
+    return `${input.object.subrace_of.name} Subrace`;
+  return category; // BASE-CASE: return category without alteration
 
   // Non-magic items -> Equipment
-}
+};
 </script>
 
 <style>

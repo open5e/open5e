@@ -43,9 +43,9 @@
 </template>
 
 <script setup>
-import SourceTag from '~/components/SourceTag.vue'
+import SourceTag from '~/components/SourceTag.vue';
 
-const charclass = useRoute().params.charclass
+const charclass = useRoute().params.charclass;
 
 const { data: spellsByLevel } = useSpellsByClass(charclass, {
   fields: [
@@ -56,7 +56,7 @@ const { data: spellsByLevel } = useSpellsByClass(charclass, {
     'document__title',
     'dnd_class',
   ].join(),
-})
+});
 </script>
 
 <style lang="scss" scoped>

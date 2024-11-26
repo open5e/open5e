@@ -1,4 +1,4 @@
-import VueGtag, { trackRouter } from 'vue-gtag-next'
+import VueGtag, { trackRouter } from 'vue-gtag-next';
 
 export default defineNuxtPlugin((nuxtApp) => {
   // only initialise analytics on production
@@ -10,7 +10,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       property: {
         id: 'G-MZ24B95RZB',
       },
-    })
-    trackRouter(useRouter())
+    });
+    trackRouter(useRouter());
   }
-})
+});

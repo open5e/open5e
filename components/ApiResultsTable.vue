@@ -40,7 +40,7 @@
 </template>
 
 <script setup>
-const emit = defineEmits(['sort'])
+const emit = defineEmits(['sort']);
 
 const props = defineProps({
   data: { type: Object, default: () => {} },
@@ -48,9 +48,9 @@ const props = defineProps({
   cols: { type: Array, default: () => [] },
   sortBy: { type: String, default: 'name' },
   isSortDescending: { type: Boolean },
-})
+});
 
-const results = computed(() => props.data)
+const results = computed(() => props.data);
 
-const onSort = sortValue => emit('sort', sortValue)
+const onSort = sortValue => emit('sort', sortValue);
 </script>

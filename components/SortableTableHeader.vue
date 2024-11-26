@@ -25,34 +25,34 @@
 </template>
 
 <script setup>
-const emit = defineEmits(['sort'])
+const emit = defineEmits(['sort']);
 
 const props = defineProps({
   title: { type: String, default: '' },
   sortBy: { type: String, default: '' },
   isSortingProperty: { type: Boolean, default: false },
   isSortDescending: { type: Boolean, default: false },
-})
+});
 
 // a list of human-readable subsitutions
 const subsitutions = {
   level_int: 'Level',
   dnd_class: 'Classes',
   cr: 'CR',
-}
+};
 
 const format = (input) => {
   if (subsitutions[input]) {
-    return subsitutions[input]
+    return subsitutions[input];
   }
   // Replace underscores w/ spaces and capitalise initials
   return input
     .split('_')
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ')
-}
+    .join(' ');
+};
 
 const onClick = () => {
-  emit('sort', props.sortBy)
-}
+  emit('sort', props.sortBy);
+};
 </script>

@@ -94,9 +94,9 @@ defineProps({
     type: Object,
     default: () => null,
   },
-})
+});
 
-const handleError = () => clearError({ redirect: '/' })
+const handleError = () => clearError({ redirect: '/' });
 </script>
 
 <style>

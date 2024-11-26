@@ -78,14 +78,14 @@ const filterState = useFilterState<{ name__icontains: string }>({
   fields: {
     name__icontains: '',
   },
-})
+});
 
 // State handlers for sorting results table
-const { sortBy, isSortDescending, setSortState } = useSortState()
+const { sortBy, isSortDescending, setSortState } = useSortState();
 
-const fields = ['key', 'name', 'document', 'category'].join(',')
-const docFields = ['name', 'key'].join(',')
-const categoryFields = ['name'].join(',')
+const fields = ['key', 'name', 'document', 'category'].join(',');
+const docFields = ['name', 'key'].join(',');
+const categoryFields = ['name'].join(',');
 
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.equipment,
@@ -99,8 +99,8 @@ const { data, paginator } = useFindPaginated({
     is_magic_item: false,
     depth: 1,
   },
-})
+});
 
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
-  = paginator
+  = paginator;
 </script>

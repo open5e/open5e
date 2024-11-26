@@ -54,19 +54,19 @@ defineProps({
   listWording: { type: String, default: '' },
   pageCount: { type: Number, default: 0 },
   pageNumber: { type: Number, default: 0 },
-})
-const emit = defineEmits(['first', 'last', 'next', 'prev'])
+});
+const emit = defineEmits(['first', 'last', 'next', 'prev']);
 
 function firstPage() {
-  emit('first')
+  emit('first');
 }
 function lastPage() {
-  emit('last')
+  emit('last');
 }
 function nextPage() {
-  emit('next')
+  emit('next');
 }
 function prevPage() {
-  emit('prev')
+  emit('prev');
 }
 </script>

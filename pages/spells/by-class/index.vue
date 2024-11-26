@@ -26,7 +26,7 @@ const available_classes = [
   ['Druid', 'druid'],
   ['Paladin', 'paladin'],
   ['Warlock', 'warlock'],
-]
+];
 </script>
 
 <style></style>

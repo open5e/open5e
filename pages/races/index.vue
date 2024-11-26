@@ -33,7 +33,7 @@
 </template>
 
 <script setup>
-const { sortBy, isSortDescending, setSortState } = useSortState()
+const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fetch page of data from API and pagination controls
 const { data, paginator } = useFindPaginated({
@@ -46,8 +46,8 @@ const { data, paginator } = useFindPaginated({
     subrace_of__isnull: true,
     depth: 1,
   },
-})
+});
 
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
-  = paginator
+  = paginator;
 </script>

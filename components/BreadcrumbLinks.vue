@@ -49,5 +49,5 @@
 </template>
 
 <script setup>
-const crumbs = useBreadcrumbs()
+const crumbs = useBreadcrumbs();
 </script>

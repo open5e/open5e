@@ -40,16 +40,16 @@
 </template>
 
 <script setup lang="ts">
-type ClassesFilter = { name__contains: string }
+type ClassesFilter = { name__contains: string };
 
 // Set up filters
 const filterState = useFilterState<ClassesFilter>({
   key: 'classes',
   fields: { name__contains: '' },
-})
+});
 
 // state handlers for sorting results table
-const { sortBy, isSortDescending, setSortState } = useSortState()
+const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // Fetch a page of classes & pagination controls
 const { data, paginator } = useFindPaginated({
@@ -63,9 +63,9 @@ const { data, paginator } = useFindPaginated({
     document__fields: ['name', 'key'].join(),
     depth: 1,
   },
-})
+});
 
 // destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
-  = paginator
+  = paginator;
 </script>

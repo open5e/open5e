@@ -85,10 +85,10 @@
 const filterState = useFilterState<MagicItemFilter>({
   key: 'magicItems',
   fields: DefaultMagicItemFilter,
-})
+});
 
 // State handlers for sorting results table
-const { sortBy, isSortDescending, setSortState } = useSortState()
+const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fields to fetch from API to populate table
 const fields = [
@@ -98,7 +98,7 @@ const fields = [
   'category',
   'rarity',
   'requires_attunement',
-].join(',')
+].join(',');
 
 // fetch page of data from API and pagination controls
 const { data, paginator } = useFindPaginated({
@@ -113,9 +113,9 @@ const { data, paginator } = useFindPaginated({
     category__fields: ['name', 'key'].join(','),
     rarity__fields: ['name', 'rank'].join(','),
   },
-})
+});
 
 // destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
-  = paginator
+  = paginator;
 </script>

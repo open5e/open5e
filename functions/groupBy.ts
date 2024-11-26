@@ -6,11 +6,11 @@ export function groupBy<T extends Record<string, never>>(
   key: keyof T,
 ): Record<string, T[]> {
   return array.reduce((result: Record<string, T[]>, item: T) => {
-    const keyValue = item[key]
+    const keyValue = item[key];
     if (!result[keyValue]) {
-      result[keyValue] = []
+      result[keyValue] = [];
     }
-    result[keyValue].push(item)
-    return result
-  }, {})
+    result[keyValue].push(item);
+    return result;
+  }, {});
 }

@@ -20,14 +20,14 @@ const { data: condition } = useFindOne(
   API_ENDPOINTS.conditions,
   useRoute().params.id,
   { params: { fields: ['name', 'desc', 'document'].join(',') } },
-)
+);
 
 // generate source key from page URL - for use with source-tab cmpnt
 const sourceKey = computed(() => {
-  if (!condition?.value?.document) return
+  if (!condition?.value?.document) return;
   return condition.value.document.url
     .split('/')
     .filter(exists => exists)
-    .pop()
-})
+    .pop();
+});
 </script>

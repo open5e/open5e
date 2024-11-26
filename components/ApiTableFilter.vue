@@ -109,20 +109,20 @@
 <script setup lang="ts">
 defineProps<
   {
-    filterState: FilterState<Fields>
+    filterState: FilterState<Fields>;
     search: {
-      name: string
-      filterField: string
-    }
+      name: string;
+      filterField: string;
+    };
     selectFields: {
-      name: string
-      filterField: string
-      options: { name: string, value: string }[]
-    }[]
+      name: string;
+      filterField: string;
+      options: { name: string; value: string }[];
+    }[];
     checkboxFields: {
-      name: string
-      filterField: string
-    }[]
+      name: string;
+      filterField: string;
+    }[];
   }
->()
+>();
 </script>

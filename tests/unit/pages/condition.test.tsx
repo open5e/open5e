@@ -1,20 +1,20 @@
-import { test, expect } from 'vitest'
-import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime'
-import ConditionPage from '~/pages/conditions/[id].vue'
+import { test, expect } from 'vitest';
+import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
+import ConditionPage from '~/pages/conditions/[id].vue';
 
-const { data: condition } = useFindOne('v2/condition', 'blinded')
+const { data: condition } = useFindOne('v2/condition', 'blinded');
 
-const page = await mountSuspended(ConditionPage)
+const page = await mountSuspended(ConditionPage);
 
 test('/conditions/[id] page can mount', async () => {
-  expect(page)
-})
+  expect(page);
+});
 
 test('/conditions/[id] page renders title', async () => {
-  const title = page.find('h1')
-  expect(title.exists()).toBe(true)
-  expect(title.text()).toEqual(unref(condition)?.name)
-})
+  const title = page.find('h1');
+  expect(title.exists()).toBe(true);
+  expect(title.text()).toEqual(unref(condition)?.name);
+});
 
 mockNuxtImport('useFindOne', () => {
   return () => ({
@@ -26,5 +26,5 @@ mockNuxtImport('useFindOne', () => {
         url: 'v2/documents/srd/',
       },
     },
-  })
-})
+  });
+});

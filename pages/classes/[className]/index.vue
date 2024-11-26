@@ -94,18 +94,18 @@ const { data: classData } = useFindOne(
   API_ENDPOINTS.classes,
   useRoute().params.className,
   { params: { is_subclass: false } },
-)
+);
 
 // fetch subclasses to generate links
 const { data: subclasses } = useFindMany(API_ENDPOINTS.classes, {
   fields: ['key', 'name'].join(','),
   subclass_of: useRoute().params.className,
-})
+});
 
 // Formatting of fields is handled here to keep the template markup legible
 const hitPoints = computed(() => {
   if (!classData?.value?.hit_points) {
-    return []
+    return [];
   }
   return [
     { title: 'Hit Dice', data: classData.value.hit_points.hit_dice_name },
@@ -117,13 +117,13 @@ const hitPoints = computed(() => {
       title: 'Hit Points at Higher Levels',
       data: classData.value.hit_points.hit_points_at_higher_levels,
     },
-  ]
-})
+  ];
+});
 
 // TODO: proficiencies not currently returned by API
 const proficiencies = computed(() => {
   if (!classData?.value?.proficiencies) {
-    return []
+    return [];
   }
   return [
     { title: 'Armor' },
@@ -131,49 +131,49 @@ const proficiencies = computed(() => {
     { title: 'Tools' },
     { title: 'Saving Throws' },
     { title: 'Skills' },
-  ]
-})
+  ];
+});
 
 // ORDER CLASS FEATURES
 
 const featuresInOrder = computed(() => {
-  const levels = []
+  const levels = [];
   for (let i = 1; i <= 20; i++) {
-    levels.push(i)
+    levels.push(i);
   }
 
   // get keys for features at each level
   // returns an arr. (each index a level) of arrs. of keys
   const featureKeysByLevel = levels.map(
     level => classData.value?.levels[level]?.features,
-  )
+  );
 
   // take the keys per level and generate a 1D arr. of feature keys in order
-  const keysFound = []
+  const keysFound = [];
   const featureKeysInOrder = featureKeysByLevel.reduce((acc, level) => {
     // guard clause -> make sure there are features at this level
     if (!level || level?.length === 0) {
-      return acc
+      return acc;
     }
 
     // flatten 2D array to an array of feature key w/ duplicates removed
     const inOrder = level.reduce((acc, featureKey) => {
       if (keysFound.includes(featureKey)) {
-        return acc
+        return acc;
       }
-      keysFound.push(featureKey)
-      acc.push(featureKey)
-      return acc
-    }, [])
+      keysFound.push(featureKey);
+      acc.push(featureKey);
+      return acc;
+    }, []);
 
-    return [...acc, ...(inOrder ?? [])]
-  }, [])
+    return [...acc, ...(inOrder ?? [])];
+  }, []);
 
   // use ordered feature keys to gather class data features in order
   return featureKeysInOrder.map((keyToFind) => {
     return classData.value.features.find(
       feature => feature.key === keyToFind,
-    )
-  })
-})
+    );
+  });
+});
 </script>

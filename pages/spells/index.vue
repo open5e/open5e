@@ -114,15 +114,15 @@ const filterState = useFilterState<SpellFilter>({
     school__key: '',
     classes__key__in: '',
   },
-})
+});
 
 // State handlers for sorting results table
-const { sortBy, isSortDescending, setSortState } = useSortState()
+const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fields to fetch from API to populate table
 const fields = ['key', 'name', 'document', 'level', 'school', 'classes'].join(
   ',',
-)
+);
 
 // Fetch a page of results and pagination controls
 const { data, paginator } = useFindPaginated({
@@ -137,9 +137,9 @@ const { data, paginator } = useFindPaginated({
     school__fields: ['name', 'key'].join(','),
     depth: 1,
   },
-})
+});
 
 // destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
-  = paginator
+  = paginator;
 </script>

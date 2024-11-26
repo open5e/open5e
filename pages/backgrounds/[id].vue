@@ -79,12 +79,12 @@
 const { data: background } = useFindOne(
   API_ENDPOINTS.backgrounds,
   useRoute().params.id,
-)
+);
 
 // sort benefits into different sections
 // different sections will be rendered to different parts of the page
 const benefits = computed(() => {
-  if (!background.value?.benefits) return null
+  if (!background.value?.benefits) return null;
 
   const [proficiencies, features, flavour] = background.value.benefits.reduce(
     (acc, benefit) => {
@@ -98,19 +98,19 @@ const benefits = computed(() => {
           'ability_score',
         ].includes(benefit.type)
       ) {
-        return [[...acc[0], benefit], acc[1], acc[2]]
+        return [[...acc[0], benefit], acc[1], acc[2]];
       }
 
       // sort features into 'features'
       if (benefit.type === 'feature') {
-        return [acc[0], [...acc[1], benefit], acc[2]]
+        return [acc[0], [...acc[1], benefit], acc[2]];
       }
 
       // base-case: sort remaining benefits into 'flavour'
-      return [acc[0], acc[1], [...acc[2], benefit]]
+      return [acc[0], acc[1], [...acc[2], benefit]];
     },
     [[], [], []],
-  )
-  return { proficiencies, features, flavour }
-})
+  );
+  return { proficiencies, features, flavour };
+});
 </script>

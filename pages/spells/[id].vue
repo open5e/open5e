@@ -86,13 +86,13 @@
 <script setup>
 const { data: spell } = useFindOne(API_ENDPOINTS.spells, useRoute().params.id, {
   relatedFields: ['document', 'document.publisher'],
-})
+});
 
 function formatComponents(verbal, somatic, material) {
-  const components = []
-  if (verbal) components.push('V')
-  if (somatic) components.push('S')
-  if (material) components.push('M')
-  return `${components.join(', ')}`
+  const components = [];
+  if (verbal) components.push('V');
+  if (somatic) components.push('S');
+  if (material) components.push('M');
+  return `${components.join(', ')}`;
 }
 </script>

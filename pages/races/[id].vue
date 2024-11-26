@@ -56,12 +56,12 @@
 <script setup>
 const { data: race } = useFindOne(API_ENDPOINTS.races, useRoute().params.id, {
   params: { subrace_of__isnull: true },
-})
+});
 
 const { data: subraces } = useFindMany(API_ENDPOINTS.races, {
   subrace_of__key__in: useRoute().params.id,
-})
+});
 
 // traits can be ordered here, but the order the API rtns them is already good
-const traits = computed(() => unref(race).traits)
+const traits = computed(() => unref(race).traits);
 </script>

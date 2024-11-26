@@ -25,57 +25,57 @@
 </template>
 
 <script setup>
-import axios from 'axios'
+import axios from 'axios';
 
-defineProps({ src: { type: String, default: '' } })
+defineProps({ src: { type: String, default: '' } });
 
-const loading = ref(false)
-const content = ref(undefined)
-const acceptibleTypes = ref(Object.keys(paramsByType))
+const loading = ref(false);
+const content = ref(undefined);
+const acceptibleTypes = ref(Object.keys(paramsByType));
 const category = ref(
   props.src.split('/').filter(crumb => !['v1', 'v2'].includes(crumb))[0],
-)
+);
 const slug = ref(
   props.src.split('/').filter(crumb => !['v1', 'v2'].includes(crumb))[1],
-)
+);
 
 const url = computed(() => {
-  const apiURL = useRuntimeConfig().public.apiUrl
-  const { altFrontEndSubroute, apiEndpoint } = paramsByType[category.value]
+  const apiURL = useRuntimeConfig().public.apiUrl;
+  const { altFrontEndSubroute, apiEndpoint } = paramsByType[category.value];
 
   // make sure that category has a recognised endpoint
   if (!apiEndpoint) {
-    return { linkTarget: '/' }
+    return { linkTarget: '/' };
   }
 
   // FE uses section's parent for routing. Update url once data is fetched
   if (content.value && category.value === 'sections') {
-    const subroute = content.value.parent.split(' ').join('-').toLowerCase()
+    const subroute = content.value.parent.split(' ').join('-').toLowerCase();
     return {
       linkTarget: `/${subroute}/${slug.value}`,
       apiEndpoint: `${apiURL}/sections/${slug.value}`,
-    }
+    };
   }
   // the url on the front end site might be different to its API endpoint
   return {
     linkTarget: `/${altFrontEndSubroute ?? apiEndpoint}/${slug.value}`,
     apiEndpoint: `${apiURL}/${apiEndpoint}/${slug.value}`,
-  }
-})
+  };
+});
 
 async function loadData() {
   // guard clause so that data is only fetched on initial hover
   if (loading.value || content.value) {
-    return
+    return;
   }
-  loading.value = true
-  const { queryParams } = paramsByType[category.value]
-  const res = await axios.get(`${url.value.apiEndpoint}/${queryParams}`)
-  content.value = res.data
+  loading.value = true;
+  const { queryParams } = paramsByType[category.value];
+  const res = await axios.get(`${url.value.apiEndpoint}/${queryParams}`);
+  content.value = res.data;
 }
 
 // Maps tag names from markdown to data required to show links/previews
-const defaultQueryParams = '?fields=name,document__title,'
+const defaultQueryParams = '?fields=name,document__title,';
 const paramsByType = {
   'armor': {
     apiEndpoint: 'armor',
@@ -153,5 +153,5 @@ const paramsByType = {
     apiEndpoint: 'weapons',
     queryParams: defaultQueryParams + 'category',
   },
-}
+};
 </script>

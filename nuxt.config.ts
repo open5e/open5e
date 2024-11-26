@@ -77,7 +77,7 @@ export default defineNuxtConfig({
   hooks: {
     'vite:extendConfig': (config, { isClient }) => {
       if (isClient) {
-        config.resolve.alias.vue = 'vue/dist/vue.esm-bundler'
+        config.resolve.alias.vue = 'vue/dist/vue.esm-bundler';
       }
     },
   },
@@ -95,9 +95,10 @@ export default defineNuxtConfig({
     config: {
       stylistic: {
         quotes: 'single',
+        semi: true,
       },
     },
   },
 
   compatibilityDate: '2024-11-16',
-})
+});

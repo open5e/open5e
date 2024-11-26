@@ -59,26 +59,26 @@
 </template>
 
 <script setup>
-import { useSlots } from 'vue'
+import { useSlots } from 'vue';
 import {
   Dialog,
   DialogPanel,
   TransitionChild,
   TransitionRoot,
-} from '@headlessui/vue'
+} from '@headlessui/vue';
 
-const slots = useSlots()
+const slots = useSlots();
 defineProps({
   open: {
     type: Boolean,
     default: false,
   },
-})
+});
 
-const emits = defineEmits(['close', 'update:open'])
+const emits = defineEmits(['close', 'update:open']);
 
 const closeModal = () => {
-  emits('close', true)
-  emits('update:open', false)
-}
+  emits('close', true);
+  emits('update:open', false);
+};
 </script>

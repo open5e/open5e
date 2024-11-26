@@ -66,15 +66,15 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed } from 'vue';
 
-const searchText = useQueryParam('text')
-const { data } = useSearch(searchText)
-const { sources } = useSourcesList()
+const searchText = useQueryParam('text');
+const { data } = useSearch(searchText);
+const { sources } = useSourcesList();
 
 const results = computed(() => {
   if (!data || !data.value) {
-    return
+    return;
   }
 
   // split result based on which from currently selected sources
@@ -84,13 +84,13 @@ const results = computed(() => {
         ? [[...inScope, item], outScope]
         : [inScope, [...outScope, item]],
     [[], []],
-  )
-  return { inScope, outScope }
-})
+  );
+  return { inScope, outScope };
+});
 
 // state for expanding results from other sources
-const isOtherSourcesExpanded = ref(false)
+const isOtherSourcesExpanded = ref(false);
 const toggleOtherSources = () => {
-  isOtherSourcesExpanded.value = !isOtherSourcesExpanded.value
-}
+  isOtherSourcesExpanded.value = !isOtherSourcesExpanded.value;
+};
 </script>

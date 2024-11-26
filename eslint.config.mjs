@@ -1,5 +1,5 @@
-import eslintPluginTailwindCss from 'eslint-plugin-tailwindcss'
-import withNuxt from './.nuxt/eslint.config.mjs'
+import eslintPluginTailwindCss from 'eslint-plugin-tailwindcss';
+import withNuxt from './.nuxt/eslint.config.mjs';
 
 export default withNuxt([
   {
@@ -29,4 +29,4 @@ export default withNuxt([
     rules: {
       'tailwindcss/no-custom-classname': 'off', // This will conflict with some of the classnames being used in conjunction with SASS
     },
-  })
+  });

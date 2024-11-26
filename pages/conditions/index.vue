@@ -38,9 +38,9 @@ const { data, paginator } = useFindPaginated({
     documents__fields: ['name', 'key'].join(','),
     depth: 1,
   },
-})
+});
 
 // destructure pagination controls
 const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
-  = paginator
+  = paginator;
 </script>

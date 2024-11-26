@@ -24,12 +24,12 @@
 const props = defineProps({
   lastPageNumber: { type: Number, default: 1 },
   pageNumber: { type: Number, default: 1 },
-})
-const emit = defineEmits(['first', 'last', 'next', 'prev'])
+});
+const emit = defineEmits(['first', 'last', 'next', 'prev']);
 
 // conditional properties control whenever certain buttons are enabled
-const isNotFirstPage = computed(() => props.pageNumber > 1)
-const isNotLastPage = computed(() => props.pageNumber < props.lastPageNumber)
+const isNotFirstPage = computed(() => props.pageNumber > 1);
+const isNotLastPage = computed(() => props.pageNumber < props.lastPageNumber);
 
 const buttons = [
   {
@@ -56,5 +56,5 @@ const buttons = [
     onClick: () => emit('last'),
     icon: 'heroicons:chevron-double-right',
   },
-]
+];
 </script>

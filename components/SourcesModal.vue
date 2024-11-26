@@ -159,112 +159,112 @@
 </template>
 
 <script setup lang="ts">
-const { sources, setSources, gameSystem, setGameSystem } = useSourcesList()
-const selectedSources = ref(sources.value)
+const { sources, setSources, gameSystem, setGameSystem } = useSourcesList();
+const selectedSources = ref(sources.value);
 
-const emit = defineEmits(['close'])
-const closeModal = () => emit('close')
+const emit = defineEmits(['close']);
+const closeModal = () => emit('close');
 
 const { data: documents } = useDocuments({
   fields: ['key', 'name', 'publisher', 'gamesystem'].join(','),
   publisher__fields: ['name', 'key'].join(','),
   gamesystem__fields: ['name', 'key'].join(','),
-})
+});
 
 // filter documents by the current game system
 const documentsInSystem = computed(() => {
-  if (!currentSystem.value) return documents.value
+  if (!currentSystem.value) return documents.value;
   return documents?.value.filter((document) => {
-    return document.gamesystem.name === currentSystem.value
-  })
-})
+    return document.gamesystem.name === currentSystem.value;
+  });
+});
 
 // group filtered documents by publisher
 const groupedDocuments = computed(() => {
-  const docs = documentsInSystem.value ?? []
+  const docs = documentsInSystem.value ?? [];
   return docs.reduce((grouped, document) => {
-    const publisher = document.publisher.name
-    if (grouped[publisher]) grouped[publisher].push(document)
-    else grouped[publisher] = [document]
-    return grouped
-  }, {})
-})
+    const publisher = document.publisher.name;
+    if (grouped[publisher]) grouped[publisher].push(document);
+    else grouped[publisher] = [document];
+    return grouped;
+  }, {});
+});
 
 // state for current game system
-const currentSystem = ref(gameSystem.value)
+const currentSystem = ref(gameSystem.value);
 
 // returns the names of all game systems present in API data
 const allGameSystems = computed(() => {
   return documents?.value?.reduce((systems, document) => {
     if (!systems.includes(document.gamesystem.name))
-      return [...systems, document.gamesystem.name]
-    else return systems
-  }, [])
-})
+      return [...systems, document.gamesystem.name];
+    else return systems;
+  }, []);
+});
 
 // handler for changing game systems selecter, updates systems/sources cmpnt state
 const onGameSystemChanged = (event) => {
-  const newSystem = event.target.value
-  currentSystem.value = newSystem
+  const newSystem = event.target.value;
+  currentSystem.value = newSystem;
   if (newSystem)
     selectedSources.value = documents.value
       .filter(source => source.gamesystem.name === newSystem)
-      .map(source => source.key)
-  else selectedSources.value = documents.value.map(doc => doc.key)
-}
+      .map(source => source.key);
+  else selectedSources.value = documents.value.map(doc => doc.key);
+};
 
 // save current form selection to local memory
 function saveSelection() {
-  setSources(selectedSources.value)
-  setGameSystem(currentSystem.value)
-  closeModal()
+  setSources(selectedSources.value);
+  setGameSystem(currentSystem.value);
+  closeModal();
 }
 
 // add all sources from a given publisher to allowed sources
 function addPublisher(publisher) {
   const sourcesToAdd = groupedDocuments.value[publisher]
     .map(source => source.key)
-    .filter(source => !selectedSources.value.includes(source))
-  selectedSources.value = [...selectedSources.value, ...sourcesToAdd]
+    .filter(source => !selectedSources.value.includes(source));
+  selectedSources.value = [...selectedSources.value, ...sourcesToAdd];
 }
 
 // remove all sources from a given publisher from allowed sources
 function removePublisher(publisher) {
   const sourcesByPublisher = groupedDocuments.value[publisher].map(
     source => source.key,
-  )
+  );
   selectedSources.value = selectedSources.value.filter(
     source => !sourcesByPublisher.includes(source),
-  )
+  );
 }
 
 // returns number of sources by a given publisher
 const countSourcesByPublisher = publisher =>
-  groupedDocuments.value[publisher]?.length || 0
+  groupedDocuments.value[publisher]?.length || 0;
 
 // returns how many sources are selected from a given publisher
 function selectedSourcesByPublisher(publisher) {
   // find all sources for this publisher
   const allSources = groupedDocuments.value[publisher].map(
     source => source.key,
-  )
+  );
   // find which of these are part of the current selected sources
   const currentSources = selectedSources.value.filter(source =>
     allSources.includes(source),
-  )
-  return currentSources.length
+  );
+  return currentSources.length;
 }
 
 // returns true if all sources in current game system are selected
 const allSourcesSelected = () => {
-  const selected = selectedSources.value.length
-  const total = documentsInSystem.value.length
-  return selected === total
-}
+  const selected = selectedSources.value.length;
+  const total = documentsInSystem.value.length;
+  return selected === total;
+};
 
 function selectAllInSystem() {
-  selectedSources.value = documentsInSystem.value.map(doc => doc.key)
+  selectedSources.value = documentsInSystem.value.map(doc => doc.key);
 }
 
-const deselectAll = () => (selectedSources.value = [])
+const deselectAll = () => (selectedSources.value = []);
 </script>

@@ -52,9 +52,9 @@
 <script setup>
 defineProps({
   classFeatures: { type: Object, default: () => {} },
-})
+});
 
 // helper function for rendering reade-friendlt titles from feature keys
 const parseFeatures = input =>
-  input.split('_').slice(-1).pop().split('-').join(' ')
+  input.split('_').slice(-1).pop().split('-').join(' ');
 </script>

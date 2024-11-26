@@ -138,20 +138,20 @@ const { data: item } = useFindOne(
   API_ENDPOINTS.equipment,
   useRoute().params.id,
   { is_magic_item: false, depth: 1 },
-)
+);
 
 const formatCost = (input) => {
-  const [gold, rest] = input.split('.')
-  const [silver, copper] = rest.split('')
+  const [gold, rest] = input.split('.');
+  const [silver, copper] = rest.split('');
   return (
     (parseInt(gold) > 0 ? `${gold} gp` : '')
     + (parseInt(silver) > 0 ? `${silver} sp` : '')
     + (parseInt(copper) > 0 ? `${copper} cp` : '')
-  )
-}
+  );
+};
 
 const formatWeaponSubtitle = weapon =>
   `${weapon.is_melee ? 'Melee' : 'Ranged'} weapon `
   + `(${weapon.is_martial ? 'martial' : 'simple'}, `
-  + `${weapon.name.toLowerCase()})`
+  + `${weapon.name.toLowerCase()})`;
 </script>

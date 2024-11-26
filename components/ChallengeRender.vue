@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-withDefaults(defineProps<{ challenge: string | number }>(), { challenge: '0' })
+withDefaults(defineProps<{ challenge: string | number }>(), { challenge: '0' });
 
 const experience = computed(() => {
   const xpValues = {
@@ -36,18 +36,18 @@ const experience = computed(() => {
     '23': 50000,
     '24': 62000,
     '30': 155000,
-  }
+  };
   if (
     Object.keys(xpValues)
       .map(k => k.toString())
       .includes(props.challenge.toString())
   ) {
-    return xpValues[props.challenge].toLocaleString('en')
+    return xpValues[props.challenge].toLocaleString('en');
   }
   else {
-    return '???'
+    return '???';
   }
-})
+});
 </script>
 
 <style></style>

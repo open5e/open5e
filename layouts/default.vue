@@ -141,45 +141,45 @@
 </template>
 
 <script setup>
-import { useRoute } from 'nuxt/app'
-import { computed } from 'vue'
+import { useRoute } from 'nuxt/app';
+import { computed } from 'vue';
 
 // Generate page title from Breadcrumbs
-const BASE_TITLE = 'Open5e'
-const crumbs = useBreadcrumbs()
+const BASE_TITLE = 'Open5e';
+const crumbs = useBreadcrumbs();
 const title = computed(() => {
-  if (crumbs.value.length === 0) return BASE_TITLE
-  return `${crumbs.value.at(-1).title} – ${BASE_TITLE}`
-})
-useHead({ title: title })
+  if (crumbs.value.length === 0) return BASE_TITLE;
+  return `${crumbs.value.at(-1).title} – ${BASE_TITLE}`;
+});
+useHead({ title: title });
 
-const showSidebar = ref(false)
-const route = useRoute()
+const showSidebar = ref(false);
+const route = useRoute();
 watch(
   () => route.path,
   () => (showSidebar.value = false),
-)
+);
 
-const searchText = ref(route.query.text)
+const searchText = ref(route.query.text);
 
-const showModal = ref(false)
-const { sources } = useSourcesList()
+const showModal = ref(false);
+const { sources } = useSourcesList();
 
-const no_selected_sources = computed(() => sources.value.length)
+const no_selected_sources = computed(() => sources.value.length);
 
 const { data: documents } = useDocuments({
   fields: 'none', // we only need to document count, so we can omit all fields
   depth: 0,
-})
+});
 
 const { data: classes } = useFindMany(API_ENDPOINTS.classes, {
   fields: ['name', 'key'].join(),
   is_subclass: false,
-})
+});
 
-const no_available_sources = computed(() => documents.value?.length ?? 0)
+const no_available_sources = computed(() => documents.value?.length ?? 0);
 
-const isLoadingData = useIsFetching()
+const isLoadingData = useIsFetching();
 
 const routes = computed(() => [
   {
@@ -227,21 +227,21 @@ const routes = computed(() => [
     title: 'API Docs',
     route: '/api-docs',
   },
-])
+]);
 
-const router = useRouter()
+const router = useRouter();
 
 function doSearch(searchText) {
-  router.push({ name: 'search', query: { text: searchText } })
-  showSidebar.value = false
+  router.push({ name: 'search', query: { text: searchText } });
+  showSidebar.value = false;
 }
 
 function toggleSidebar() {
-  showSidebar.value = !showSidebar.value
+  showSidebar.value = !showSidebar.value;
 }
 
 function hideSidebar() {
-  showSidebar.value = false
+  showSidebar.value = false;
 }
 </script>
 

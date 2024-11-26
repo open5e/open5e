@@ -14,8 +14,8 @@ definePageMeta({
           replace: true,
           redirectCode: 301,
         },
-      )
+      );
     },
   ],
-})
+});
 </script>

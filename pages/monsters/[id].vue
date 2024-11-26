@@ -480,44 +480,44 @@
 </template>
 
 <script setup lang="ts">
-const route = useRoute()
+const route = useRoute();
 const { data: monster } = useFindOne(
   API_ENDPOINTS.monsters,
   useRoute().params.id,
-)
+);
 
 // filter "unit" prop from "speeds"
 const speeds = computed(() => {
-  if (!monster?.value?.speed) return {}
-  const { unit: _, ...rest } = monster.value.speed
-  return rest
-})
+  if (!monster?.value?.speed) return {};
+  const { unit: _, ...rest } = monster.value.speed;
+  return rest;
+});
 
 // assemble senses from multiple fields
 const senses = computed(() => {
-  if (!monster?.value) return {}
-  const senses = {}
+  if (!monster?.value) return {};
+  const senses = {};
   if (monster.value.darkvision_range) {
-    senses['Darkvision'] = monster.value.darkvision_range + ' ft.'
+    senses['Darkvision'] = monster.value.darkvision_range + ' ft.';
   }
   if (monster.value.blindsight_range) {
-    senses['Blindsight'] = monster.value.blindsight_range + ' ft.'
+    senses['Blindsight'] = monster.value.blindsight_range + ' ft.';
   }
   if (monster.value.tremorsense_range) {
-    senses['Tremorsense'] = monster.value.tremorsense_range + ' ft.'
+    senses['Tremorsense'] = monster.value.tremorsense_range + ' ft.';
   }
   if (monster.value.truesight_range) {
-    senses['Truesight'] = monster.value.truesight_range + ' ft.'
+    senses['Truesight'] = monster.value.truesight_range + ' ft.';
   }
-  senses['Passive Perception'] = monster.value.passive_perception
-  return senses
-})
+  senses['Passive Perception'] = monster.value.passive_perception;
+  return senses;
+});
 
 // format damage resistances correctly (damage from non-magic weapons)
 const damageResistances = computed(() => {
-  if (!monster?.value) return {}
+  if (!monster?.value) return {};
   if (!monster.value.nonmagical_attack_resistance) {
-    return monster.value.damage_resistances
+    return monster.value.damage_resistances;
   }
   return [
     ...monster.value.damage_resistances.filter(
@@ -526,14 +526,14 @@ const damageResistances = computed(() => {
     {
       name: 'Bludgeoning, Piercing and Slashing from Nonmagical Attacks',
     },
-  ]
-})
+  ];
+});
 
 // format damage resistances correctly (damage from non-magic weapons)
 const damageImmunities = computed(() => {
-  if (!monster?.value) return {}
+  if (!monster?.value) return {};
   if (!monster.value.nonmagical_attack_immunity) {
-    return monster.value.damage_immunities
+    return monster.value.damage_immunities;
   }
   return [
     ...monster.value.damage_immunities.filter(
@@ -542,18 +542,18 @@ const damageImmunities = computed(() => {
     {
       name: 'Bludgeoning, Piercing and Slashing from Nonmagical Attacks',
     },
-  ]
-})
+  ];
+});
 
-const mode = ref(route.query.mode || 'normal')
+const mode = ref(route.query.mode || 'normal');
 function toggleMode() {
   switch (mode.value) {
     case 'compact':
-      mode.value = 'normal'
-      break
+      mode.value = 'normal';
+      break;
     default:
-      mode.value = 'compact'
-      break
+      mode.value = 'compact';
+      break;
   }
 
   navigateTo({
@@ -564,7 +564,7 @@ function toggleMode() {
             mode: 'compact',
           }
         : null,
-  })
+  });
 }
 </script>
 

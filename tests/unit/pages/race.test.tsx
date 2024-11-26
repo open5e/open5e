@@ -1,20 +1,20 @@
-import { test, expect } from 'vitest'
-import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime'
-import RacePage from '~/pages/races/[id].vue'
+import { test, expect } from 'vitest';
+import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
+import RacePage from '~/pages/races/[id].vue';
 
-const { data: race } = useFindOne('v2/races', 'srd_elf')
+const { data: race } = useFindOne('v2/races', 'srd_elf');
 
-const page = await mountSuspended(RacePage)
+const page = await mountSuspended(RacePage);
 
 test('/races/[id] page can mount', async () => {
-  expect(page)
-})
+  expect(page);
+});
 
 test('/races/[id] page renders title', async () => {
-  const title = page.find('h1')
-  expect(title.exists()).toBe(true)
-  expect(title.text()).toEqual(unref(race)?.name)
-})
+  const title = page.find('h1');
+  expect(title.exists()).toBe(true);
+  expect(title.text()).toEqual(unref(race)?.name);
+});
 
 mockNuxtImport('useFindOne', () => {
   return () => ({
@@ -72,8 +72,8 @@ mockNuxtImport('useFindOne', () => {
         },
       ],
     },
-  })
-})
+  });
+});
 
 mockNuxtImport('useFindMany', () => {
   return () => ({
@@ -109,5 +109,5 @@ mockNuxtImport('useFindMany', () => {
         },
       },
     ],
-  })
-})
+  });
+});

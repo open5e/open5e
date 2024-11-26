@@ -43,14 +43,14 @@
 </template>
 
 <script setup>
-import { useNotifications } from '~/composables/useNotifications'
+import { useNotifications } from '~/composables/useNotifications';
 
-const { clear, notifications, remove } = useNotifications()
+const { clear, notifications, remove } = useNotifications();
 
 // clear notifications when route changes
-const route = useRoute()
+const route = useRoute();
 watch(
   () => route.path,
   () => clear(),
-)
+);
 </script>

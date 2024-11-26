@@ -39,5 +39,5 @@
 const { data: item } = useFindOne(
   API_ENDPOINTS.magicitems,
   useRoute().params.id,
-)
+);
 </script>

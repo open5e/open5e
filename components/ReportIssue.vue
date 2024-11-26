@@ -1,37 +1,37 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const isOpen = ref(false)
-const formData = ref({})
-const status = ref('ready')
+const isOpen = ref(false);
+const formData = ref({});
+const status = ref('ready');
 
 const WEBAPP_URL
-  = 'https://script.google.com/macros/s/AKfycbzUzyBCluTJXL4GC98i31NRoso0td-zNgBbp8Ws4CmmLMzd3ovYBcX7HyVlo3m-kDLHZA/exec'
+  = 'https://script.google.com/macros/s/AKfycbzUzyBCluTJXL4GC98i31NRoso0td-zNgBbp8Ws4CmmLMzd3ovYBcX7HyVlo3m-kDLHZA/exec';
 
 const submitIssue = async () => {
   // on click handler for submitting an issue
-  status.value = 'pending'
-  formData.value['date'] = new Date().toDateString()
+  status.value = 'pending';
+  formData.value['date'] = new Date().toDateString();
   // convert form data to key=value pair string
   const data = Object.entries(formData.value)
     .map(([key, value]) => encodeURI([key, value].join('=')))
-    .join('&')
+    .join('&');
   await $fetch(WEBAPP_URL, {
     method: 'POST',
     body: data,
     headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-  })
-  status.value = 'submitted'
-}
+  });
+  status.value = 'submitted';
+};
 
 const closeModal = () => {
-  isOpen.value = false
+  isOpen.value = false;
   // short delay to give the modal closing animation time to run
   setTimeout(() => {
-    formData.value = {}
-    status.value = 'ready'
-  }, 300)
-}
+    formData.value = {};
+    status.value = 'ready';
+  }, 300);
+};
 </script>
 
 <template>

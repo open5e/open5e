@@ -1,12 +1,12 @@
-import { test, expect } from 'vitest'
-import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime'
-import ConditionsPage from '~/pages/conditions/index.vue'
+import { test, expect } from 'vitest';
+import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
+import ConditionsPage from '~/pages/conditions/index.vue';
 
-const page = await mountSuspended(ConditionsPage)
+const page = await mountSuspended(ConditionsPage);
 
 test('/conditions page can mount', async () => {
-  expect(page)
-})
+  expect(page);
+});
 
 mockNuxtImport('useFindPaginated', () => {
   return () => ({
@@ -44,13 +44,13 @@ mockNuxtImport('useFindPaginated', () => {
       prevPage: () => {},
       nextPage: () => {},
     },
-  })
-})
+  });
+});
 
 mockNuxtImport('useSortState', () => {
   return () => ({
     sortBy: 'name',
     isSortDescenting: false,
     setSortState: () => {},
-  })
-})
+  });
+});

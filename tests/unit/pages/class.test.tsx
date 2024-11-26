@@ -1,20 +1,20 @@
-import { test, expect } from 'vitest'
-import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime'
-import ClassPage from '~/pages/classes/[className]/index.vue'
+import { test, expect } from 'vitest';
+import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
+import ClassPage from '~/pages/classes/[className]/index.vue';
 
-const { data: className } = useFindOne('v2/classes', 'srd_fighter')
+const { data: className } = useFindOne('v2/classes', 'srd_fighter');
 
-const page = await mountSuspended(ClassPage)
+const page = await mountSuspended(ClassPage);
 
 test('/classes/[className] page can mount', async () => {
-  expect(page)
-})
+  expect(page);
+});
 
 test('/classes/[className] page renders title', async () => {
-  const title = page.find('h1')
-  expect(title.exists()).toBe(true)
-  expect(title.text()).toEqual(unref(className)?.name)
-})
+  const title = page.find('h1');
+  expect(title.exists()).toBe(true);
+  expect(title.text()).toEqual(unref(className)?.name);
+});
 
 mockNuxtImport('useFindOne', () => {
   return () => ({
@@ -198,8 +198,8 @@ mockNuxtImport('useFindOne', () => {
         },
       },
     },
-  })
-})
+  });
+});
 
 mockNuxtImport('useFindMany', () => {
   return () => ({
@@ -209,5 +209,5 @@ mockNuxtImport('useFindMany', () => {
         name: 'Champion',
       },
     ],
-  })
-})
+  });
+});
