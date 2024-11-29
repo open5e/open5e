@@ -15,7 +15,7 @@
         class="ml-1"
         :class="isSortingProperty ? 'visible text-blood' : 'invisible'"
       >
-        {{ isSortDescending ? "▲" : "▼" }}
+        {{ isSortDescending ? '▲' : '▼' }}
       </span>
     </button>
     <span v-else>

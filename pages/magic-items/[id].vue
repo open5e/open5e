@@ -8,7 +8,7 @@
         <em>
           {{ item.category.name }}, {{ item.rarity.name }}
           <span v-show="item.requires_attunement">
-            ({{ "requires attunement" }})
+            ({{ 'requires attunement' }})
           </span>
         </em>
         <source-tag

@@ -11,7 +11,7 @@
     >
       <td>{{ key }}</td>
       <td class="before:content-['+']">
-        {{ value["proficiency-bonus"] }}
+        {{ value['proficiency-bonus'] }}
       </td>
       <td>
         <span

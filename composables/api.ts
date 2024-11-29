@@ -188,12 +188,10 @@ export const useFindOne = (
       // const data = await get(endpoint, unref(id), '/?fields=key');
       const data = await get(endpoint, unref(id), paramString);
       // Fetch related data for the specified fields
-      const enrichedData = await fetchNestedResources(
+      return await fetchNestedResources(
         data,
         options?.relatedFields ?? [],
       );
-
-      return enrichedData;
     },
   });
 };

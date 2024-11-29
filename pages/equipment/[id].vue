@@ -17,28 +17,28 @@
               item.weapon.damage_dice
                 + (item.weapon.is_versatile
                   ? ` (${item.weapon.versatile_dice})`
-                  : "")
+                  : '')
             }}
           </dd>
           <dt class="font-bold">
             Damage Type
           </dt>
           <dd class="capitalize">
-            {{ item.weapon.damage_type.split("/").slice(-2)[0] }}
+            {{ item.weapon.damage_type.split('/').slice(-2)[0] }}
           </dd>
           <template v-if="item.weapon.properties.length > 0">
             <dt class="font-bold">
               Properties
             </dt>
             <dd class="capitalize">
-              {{ item.weapon.properties.map((prop) => prop).join(", ") }}
+              {{ item.weapon.properties.map((prop) => prop).join(', ') }}
             </dd>
           </template>
           <template v-if="item.weapon.is_reach">
             <dt class="font-bold">
               Reach
             </dt>
-            <dd>{{ item.weapon.reach + " ft." }}</dd>
+            <dd>{{ item.weapon.reach + ' ft.' }}</dd>
           </template>
           <template v-if="item.weapon.range">
             <dt class="font-bold">
@@ -65,7 +65,7 @@
       <!-- ITEM CARD FOR ARMOR -->
       <div v-else-if="item.armor">
         <!-- TODO: whether armor is light/med/heavy not rtn'd by API -->
-        <p>{{ `Armor (${"TODO"})` }}</p>
+        <p>{{ `Armor (${'TODO'})` }}</p>
         <md-viewer :text="item.desc" />
         <dl class="grid grid-cols-[6rem_1fr]">
           <dt class="font-bold">

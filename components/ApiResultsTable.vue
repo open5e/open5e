@@ -6,7 +6,7 @@
     >
       <thead>
         <tr>
-          <sortable-table-header
+          <SortableTableHeader
             v-for="col in cols"
             :key="col.field"
             :title="col.displayName"
@@ -18,7 +18,7 @@
         </tr>
       </thead>
       <tbody v-if="results && results.length > 0">
-        <api-result-row
+        <ApiResultRow
           v-for="item in results"
           :key="item.key ?? item.slug"
           :data="item"

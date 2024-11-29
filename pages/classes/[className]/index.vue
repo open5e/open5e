@@ -172,7 +172,7 @@ const featuresInOrder = computed(() => {
   // use ordered feature keys to gather class data features in order
   return featureKeysInOrder.map((keyToFind) => {
     return classData.value.features.find(
-      feature => feature.key === keyToFind,
+      feautre => feautre.key === keyToFind,
     );
   });
 });

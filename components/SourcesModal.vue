@@ -1,5 +1,5 @@
 <template>
-  <ModalDialog @close="closeModal()">
+  <modal-dialog @close="closeModal()">
     <slot>
       <!-- MODAL MENU TITLE BAR -->
       <div class="flex w-full justify-between border-b-4 border-blood">
@@ -36,8 +36,8 @@
             class="px-2 py-1"
             :class="
               allSourcesSelected()
-                ? `text-black before:mr-1 before:content-['✓'] dark:text-white`
-                : `text-blood hover:text-red-800 dark:hover:text-red-400`
+                ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
+                : ` text-blood hover:text-red-800 dark:hover:text-red-400`
             "
             @click="selectAllInSystem()"
           >
@@ -49,8 +49,8 @@
             class="px-2 py-1"
             :class="
               selectedSources.length === 0
-                ? `text-black before:mr-1 before:content-['✓'] dark:text-white`
-                : `text-blood hover:text-red-800 dark:hover:text-red-400`
+                ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
+                : ` text-blood hover:text-red-800 dark:hover:text-red-400 `
             "
             @click="deselectAll()"
           >
@@ -122,7 +122,7 @@
                 >
                   {{ document.name }}
                 </label>
-                <SourceTag
+                <source-tag
                   :title="document.name"
                   :text="document.key"
                 />
@@ -155,10 +155,10 @@
         Update
       </button>
     </template>
-  </ModalDialog>
+  </modal-dialog>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const { sources, setSources, gameSystem, setGameSystem } = useSourcesList();
 const selectedSources = ref(sources.value);
 

@@ -4,16 +4,16 @@
   <li class="py-2 text-base">
     <!-- Row title -->
     <h3 class="mt-1 flex items-center align-middle text-xl">
-      <nuxt-link
+      <NuxtLink
         tag="a"
         :to="formatUrl(result)"
       >
         {{ result.object_name }}
-      </nuxt-link>
+      </NuxtLink>
       <span class="ml-2 font-sans text-sm uppercase text-granite">
         {{ formatCategory(result) }}
       </span>
-      <source-tag
+      <SourceTag
         :text="result.document.key"
         :title="result.document.name"
       />
@@ -55,7 +55,7 @@
     </div>
 
     <!-- include snipet if query text is not part of article title -->
-    <md-viewer
+    <MdViewer
       v-if="!result.object_name.toUpperCase().includes(query.toUpperCase())"
       class="text-sm italic text-granite dark:text-granite"
       :markdown="stripMarkdownTables(result.highlighted)"

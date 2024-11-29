@@ -21,7 +21,7 @@
                 : 'heroicons:arrows-pointing-in'
             "
           />
-          {{ mode === "compact" ? "Regular statblock" : "Compact statblock" }}
+          {{ mode === 'compact' ? 'Regular statblock' : 'Compact statblock' }}
         </button>
       </div>
     </div>
@@ -48,18 +48,9 @@
         {{ monster.alignment }}
       </span>
 
-      <!--
-        Source-tag text param is ugly, but might require work on the API first.
-        Workaround for key not being returned from API. Get it from URL instead
-      -->
       <source-tag
         :title="monster.document.name"
-        :text="
-          monster.document.url
-            .split('/')
-            .filter((slug) => slug)
-            .slice(-1)[0]
-        "
+        :text="monster.document.key"
       />
     </p>
 
@@ -296,6 +287,7 @@
       <p
         v-for="ability in monster.special_abilities"
         :key="ability.name"
+        class="action-block"
       >
         <span class="font-bold after:content-['.']">{{ ability.name }}</span>
         <md-viewer
@@ -451,7 +443,7 @@
         :key="environemnt.id"
         class="text-sm after:content-['.'] [&:not(:last-child)]:after:content-[',_']"
       >
-        {{ environemnt }}
+        {{ environemnt.name }}
       </span>
     </section>
 
@@ -479,17 +471,23 @@
   </main>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const route = useRoute();
+const params = {
+  environments__fields: 'name',
+  languages__fields: 'name',
+  document__fields: 'name,key,permalink',
+};
 const { data: monster } = useFindOne(
   API_ENDPOINTS.monsters,
   useRoute().params.id,
+  { params },
 );
 
 // filter "unit" prop from "speeds"
 const speeds = computed(() => {
   if (!monster?.value?.speed) return {};
-  const { unit: _, ...rest } = monster.value.speed;
+  const { unit, ...rest } = monster.value.speed;
   return rest;
 });
 

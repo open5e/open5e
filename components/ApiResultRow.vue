@@ -7,10 +7,10 @@
     >
       <template v-if="col.link">
         <span>
-          <nuxt-link :to="col.link(data)">
+          <NuxtLink :to="col.link(data)">
             {{ col.value(data) }}
-          </nuxt-link>
-          <source-tag
+          </NuxtLink>
+          <SourceTag
             :text="data.document.key"
             :title="data.document.name"
           />
@@ -18,7 +18,7 @@
       </template>
       <!-- If data is boolean, display as √ or -, not true or false  -->
       <template v-else-if="typeof col.value(data) === 'boolean'">
-        <span>{{ col.value(data) ? "√" : "-" }}</span>
+        <span>{{ col.value(data) ? '√' : '-' }}</span>
       </template>
       <template v-else>
         {{ col.value(data) }}
@@ -28,6 +28,8 @@
 </template>
 
 <script setup>
+import SourceTag from './SourceTag.vue';
+
 defineProps({
   data: { type: Object, default: () => {} }, // Open5e data to render
   cols: { type: Array, default: () => [] }, // Arr. of table columns to render
