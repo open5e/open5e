@@ -13,8 +13,7 @@ export const useSortState = () => {
   const setSortState = (sortBy: string) => {
     if (sortBy === currentSortingProperty.value) {
       isSortDescending.value = !isSortDescending.value;
-    }
-    else {
+    } else {
       currentSortingProperty.value = sortBy;
       isSortDescending.value = false;
     }

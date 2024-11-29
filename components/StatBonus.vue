@@ -13,8 +13,7 @@ const props = defineProps({
 const statBonus = computed(() => {
   if (props.type === 'score') {
     return Math.floor((props.stat - 10) / 2);
-  }
-  else {
+  } else {
     return props.stat;
   }
 });

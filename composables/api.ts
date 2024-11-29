@@ -137,8 +137,7 @@ const fetchNestedResources = async (
         parentData = currentData;
         parentKey = part;
         currentData = currentData[part];
-      }
-      else {
+      } else {
         (currentData as Record<string, never>)[part] = null;
         break;
       }

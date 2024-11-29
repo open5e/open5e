@@ -43,8 +43,7 @@ const experience = computed(() => {
       .includes(props.challenge.toString())
   ) {
     return xpValues[props.challenge].toLocaleString('en');
-  }
-  else {
+  } else {
     return '???';
   }
 });
