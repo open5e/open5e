@@ -47,7 +47,7 @@ architectural work for the frontend layer while allowing a large amount of
 flexibility.
 
 5e game content is fetched from the
-[open5e API](https://github.com/eepMoody/open5e-api) running at
+[open5e API](https://github.com/open5e/open5e-api) running at
 https://api.open5e.com. This can be redirected using the environment variable
 `API_URL`.
 
