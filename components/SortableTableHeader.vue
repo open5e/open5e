@@ -1,6 +1,12 @@
 <template>
-  <th :aria-sort="isSortDescending" class="align-baseline">
-    <button v-if="sortBy" @click="onClick">
+  <th
+    :aria-sort="isSortDescending"
+    class="align-baseline"
+  >
+    <button
+      v-if="sortBy"
+      @click="onClick"
+    >
       <span>
         {{ format(title) }}
       </span>
@@ -42,7 +48,7 @@ const format = (input) => {
   // Replace underscores w/ spaces and capitalise initials
   return input
     .split('_')
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
 };
 

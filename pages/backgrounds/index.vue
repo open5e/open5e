@@ -1,7 +1,9 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2">Backgrounds</h1>
+      <h1 class="my-2">
+        Backgrounds
+      </h1>
 
       <ApiTableNav
         class="w-full"
@@ -48,6 +50,6 @@ const { data, paginator } = useFindPaginated({
 });
 
 // destructure pagination controls
-const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
-  paginator;
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
+  = paginator;
 </script>

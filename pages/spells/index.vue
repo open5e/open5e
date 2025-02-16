@@ -1,7 +1,9 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2 w-full">Spells</h1>
+      <h1 class="my-2 w-full">
+        Spells
+      </h1>
 
       <ApiTableNav
         class="w-full"
@@ -119,7 +121,7 @@ const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fields to fetch from API to populate table
 const fields = ['key', 'name', 'document', 'level', 'school', 'classes'].join(
-  ','
+  ',',
 );
 
 // Fetch a page of results and pagination controls
@@ -138,6 +140,6 @@ const { data, paginator } = useFindPaginated({
 });
 
 // destructure pagination controls
-const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
-  paginator;
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
+  = paginator;
 </script>

@@ -34,7 +34,7 @@ export default defineNuxtRouteMiddleware((to) => {
     .map(({ find, to }) => {
       if (path.search(find) > -1) return to;
     })
-    .filter((exists) => !!exists);
+    .filter(exists => !!exists);
   if (partialMatchRedirect.length > 0)
     return navigateTo(partialMatchRedirect[0], { redirectCode: 301 });
 

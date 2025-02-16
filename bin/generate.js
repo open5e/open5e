@@ -1,17 +1,15 @@
 #! /usr/bin/env node
-console.log('generating static content files');
+console.log("generating static content files");
 
-const jsonfile = require('jsonfile');
-const slugify = require('slugify');
-const fs = require('fs');
-const mkdirp = require('mkdirp');
-var getDirName = require('path').dirname;
+const jsonfile = require("jsonfile");
+const slugify = require("slugify");
+const mkdirp = require("mkdirp");
+var getDirName = require("path").dirname;
 
-var spellClassArrays = require('./spellClassArrays.js');
+var spellClassArrays = require("./spellClassArrays.js");
 
 function cleanName(str) {
-  const cleaned = slugify(str.toLowerCase(), { remove: /[*+~.()"!:@/]/g });
-  return cleaned;
+  return slugify(str.toLowerCase(), { remove: /[*+~.()"!:@/]/g });
 }
 
 function writeFile(path, contents, cb) {
@@ -37,11 +35,11 @@ function fileParser(input, name, listName) {
         } else {
           console.log(`wrote ${name} list`);
         }
-      }
+      },
     );
     console.log(`writing individual ${name} files:`);
     for (item in obj) {
-      if (name === 'spell') {
+      if (name === "spell") {
         obj[item] = spellClassArrays(obj[item]);
       }
       const itemJSON = obj[item];
@@ -64,14 +62,14 @@ function indexJson(files, listName) {
     for (item in json) {
       const thisItem = json[item];
       const slug = slugify(thisItem.name.toLowerCase());
-      if (listName === 'spell-index') {
+      if (listName === "spell-index") {
         list.push({
           name: thisItem.name,
           slug: slug,
           dnd_class: thisItem.class,
           school: thisItem.school,
         });
-      } else if (listName === 'monster-index') {
+      } else if (listName === "monster-index") {
         list.push({
           name: thisItem.name,
           slug: slug,
@@ -114,28 +112,28 @@ function indexWithParentJson(files, listName) {
   });
 }
 
-const monsterfile = 'data/WOTC_5e_SRD_v5.1/monsters.json';
-const spellfile = 'data/WOTC_5e_SRD_v5.1/spells.json';
-const classfile = 'data/WOTC_5e_SRD_v5.1/classes.json';
-const itemfile = 'data/WOTC_5e_SRD_v5.1/magicitems.json';
-const sectionfile = 'data/WOTC_5e_SRD_v5.1/sections.json';
-const racefile = 'data/WOTC_5e_SRD_v5.1/races.json';
-const planefile = 'data/WOTC_5e_SRD_v5.1/planes.json';
+const monsterfile = "data/WOTC_5e_SRD_v5.1/monsters.json";
+const spellfile = "data/WOTC_5e_SRD_v5.1/spells.json";
+const classfile = "data/WOTC_5e_SRD_v5.1/classes.json";
+const itemfile = "data/WOTC_5e_SRD_v5.1/magicitems.json";
+const sectionfile = "data/WOTC_5e_SRD_v5.1/sections.json";
+const racefile = "data/WOTC_5e_SRD_v5.1/races.json";
+const planefile = "data/WOTC_5e_SRD_v5.1/planes.json";
 
 // make static files from database-populating json
-fileParser(monsterfile, 'monster', 'monsters');
-fileParser(spellfile, 'spell', 'spells');
-fileParser(classfile, 'class', 'classes');
-fileParser(itemfile, 'magicitem', 'magicitems');
-fileParser(racefile, 'race', 'races');
-fileParser(planefile, 'plane', 'planes');
-fileParser(sectionfile, 'section', 'sections');
+fileParser(monsterfile, "monster", "monsters");
+fileParser(spellfile, "spell", "spells");
+fileParser(classfile, "class", "classes");
+fileParser(itemfile, "magicitem", "magicitems");
+fileParser(racefile, "race", "races");
+fileParser(planefile, "plane", "planes");
+fileParser(sectionfile, "section", "sections");
 
 // make indexes for static files
-indexJson([monsterfile], 'monster-index');
-indexJson([spellfile], 'spell-index');
-indexJson([classfile], 'class-index');
-indexJson([itemfile], 'item-index');
-indexJson([racefile], 'race-index');
-indexJson([planefile], 'plane-index');
-indexWithParentJson([sectionfile], 'section-index');
+indexJson([monsterfile], "monster-index");
+indexJson([spellfile], "spell-index");
+indexJson([classfile], "class-index");
+indexJson([itemfile], "item-index");
+indexJson([racefile], "race-index");
+indexJson([planefile], "plane-index");
+indexWithParentJson([sectionfile], "section-index");

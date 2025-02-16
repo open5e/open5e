@@ -1,7 +1,9 @@
 <template>
   <section>
     <div class="flex">
-      <h1 class="my-2 w-full">Equipment</h1>
+      <h1 class="my-2 w-full">
+        Equipment
+      </h1>
 
       <ApiTableNav
         :page-number="pageNo"
@@ -99,6 +101,6 @@ const { data, paginator } = useFindPaginated({
   },
 });
 
-const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
-  paginator;
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
+  = paginator;
 </script>

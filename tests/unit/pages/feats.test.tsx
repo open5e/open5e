@@ -16,7 +16,7 @@ mockNuxtImport('useFindPaginated', () => {
         name: 'A Symbol That Strikes Fear',
         document: {
           url: 'https://api.open5e.com/v2/documents/a5e-ag/',
-          name: "Adventurer's Guide",
+          name: 'Adventurer\'s Guide',
         },
       },
       {
@@ -24,7 +24,7 @@ mockNuxtImport('useFindPaginated', () => {
         name: 'Ace Driver',
         document: {
           url: 'https://api.open5e.com/v2/documents/a5e-ag/',
-          name: "Adventurer's Guide",
+          name: 'Adventurer\'s Guide',
         },
       },
       {
@@ -32,7 +32,7 @@ mockNuxtImport('useFindPaginated', () => {
         name: 'Arcanum Master',
         document: {
           url: 'https://api.open5e.com/v2/documents/a5e-ag/',
-          name: "Adventurer's Guide",
+          name: 'Adventurer\'s Guide',
         },
       },
     ],

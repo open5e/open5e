@@ -21,7 +21,7 @@ export const useMonster = (slug: string) => {
     queryKey: ['get', API_ENDPOINTS.monsters, slug],
     queryFn: async () => {
       const monster = await get(API_ENDPOINTS.monsters, slug);
-      monster.abilities = ABILITY_SCORE_NAMES.map((ability) => ({
+      monster.abilities = ABILITY_SCORE_NAMES.map(ability => ({
         name: ability,
         shortName: ability.slice(0, 3),
         score: monster[ability],

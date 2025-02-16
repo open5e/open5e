@@ -34,15 +34,15 @@ const _sourcesV1 = computed(() => {
   if (!_sources.value || _sources.value.length === 0) return [];
   const sourcemap: { [key: string]: string } = {
     'a5e-ag': 'a5e',
-    bfrd: 'blackflag',
-    ccdx: 'cc',
-    deepm: 'dmag',
-    deepmx: 'dmag-e',
-    mmenag: 'menagerie',
-    open5e: 'o5e',
-    srd: 'wotc-srd',
-    tdcs: 'taldorei',
-    wz: 'warlock',
+    'bfrd': 'blackflag',
+    'ccdx': 'cc',
+    'deepm': 'dmag',
+    'deepmx': 'dmag-e',
+    'mmenag': 'menagerie',
+    'open5e': 'o5e',
+    'srd': 'wotc-srd',
+    'tdcs': 'taldorei',
+    'wz': 'warlock',
   };
   return _sources.value.map((source) => {
     if (source in sourcemap) return sourcemap[source];

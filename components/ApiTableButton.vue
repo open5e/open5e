@@ -1,10 +1,15 @@
-<script setup>
-defineProps({
-  disabled: Boolean,
-  name: { type: String, required: true },
-  icon: { type: String, required: true },
-  sizeClasses: { type: String, default: 'w-8 h-8' },
-});
+<script setup lang="ts">
+withDefaults(
+  defineProps<{
+    disabled?: boolean;
+    name: string;
+    icon: string;
+    sizeClasses?: string;
+  }>(),
+  {
+    sizeClasses: 'size-8',
+  },
+);
 
 defineEmits(['click']);
 </script>

@@ -1,10 +1,16 @@
 <template>
   <section class="container">
-    <h1 class="filter-header">
+    <h1>
       <span class="title-case">{{ charclass }} spells</span>
     </h1>
-    <div v-if="spellsByLevel" :class="'three-column'">
-      <p v-if="spellsByLevel.length == 0">No results</p>
+
+    <div
+      v-if="spellsByLevel"
+      :class="'three-column'"
+    >
+      <p v-if="spellsByLevel.length == 0">
+        No results
+      </p>
 
       <ul
         v-for="level in spellsByLevel"
@@ -13,7 +19,10 @@
         class="list--items"
       >
         <h3>{{ level.lvlText }}</h3>
-        <li v-for="spell in level.spells" :key="spell.name">
+        <li
+          v-for="spell in level.spells"
+          :key="spell.name"
+        >
           <nuxt-link
             tag="a"
             :params="{ id: spell.slug }"

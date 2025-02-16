@@ -1,7 +1,9 @@
 <template>
   <section class="docs-container container">
     <div class="flex justify-between">
-      <h1 class="my-2 w-full">Magic Items</h1>
+      <h1 class="my-2 w-full">
+        Magic Items
+      </h1>
 
       <ApiTableNav
         :page-number="pageNo || 1"
@@ -114,6 +116,6 @@ const { data, paginator } = useFindPaginated({
 });
 
 // destructure pagination controls
-const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
-  paginator;
+const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage }
+  = paginator;
 </script>

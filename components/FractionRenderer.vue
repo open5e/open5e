@@ -4,25 +4,17 @@
   </span>
 </template>
 
-<script setup>
-defineProps({
-  challenge: {
-    type: [Number, String],
-    default: 0,
-  },
+<script setup lang="ts">
+const props = withDefaults(defineProps<{ challenge: string }>(), {
+  challenge: '0',
 });
-function fraction(chal) {
-  const chalValue = {
+
+const fraction = computed(() => {
+  const map = {
     0.125: '1/8',
     0.25: '1/4',
     0.5: '1/2',
   };
-  if (chalValue.hasOwnProperty(chal)) {
-    return chalValue[chal];
-  } else {
-    return chal;
-  }
-}
+  return map[props.challenge] || props.challenge;
+});
 </script>
-
-<style></style>

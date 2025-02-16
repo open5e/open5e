@@ -20,7 +20,7 @@ mockNuxtImport('useFindOne', () => {
   return () => ({
     data: {
       name: 'Blinded',
-      desc: "* A blinded creature can't see and automatically fails any ability check that requires sight.\r\n* Attack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage.",
+      desc: '* A blinded creature can\'t see and automatically fails any ability check that requires sight.\r\n* Attack rolls against the creature have advantage, and the creature’s attack rolls have disadvantage.',
       document: {
         name: 'Systems Reference Document',
         url: 'v2/documents/srd/',

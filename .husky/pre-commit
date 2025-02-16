@@ -1,9 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# Run pretty-quick to format staged files
-npx pretty-quick --staged
-
 # Run lintfix to fix linting issues
 npm run lintfix
 

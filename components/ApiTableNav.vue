@@ -1,7 +1,10 @@
 <template>
   <div class="grid justify-end">
     <ul class="flex">
-      <li v-for="button in buttons" :key="button.name">
+      <li
+        v-for="button in buttons"
+        :key="button.name"
+      >
         <ApiTableButton
           :name="button.name"
           :icon="button.icon"
@@ -16,6 +19,7 @@
     </label>
   </div>
 </template>
+
 <script setup>
 const props = defineProps({
   lastPageNumber: { type: Number, default: 1 },

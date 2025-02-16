@@ -8,15 +8,13 @@
     >
       <span class="font-bold capitalize">{{ key }}</span>
       <span>
-        {{ stat }} ({{ useFormatModifier(stat, { inputType: 'score' }) }})
+        {{ stat }} ({{ useFormatModifier(stat, { inputType: "score" }) }})
       </span>
     </li>
   </ul>
 </template>
 
 <script setup>
-import StatBonus from '~/components/StatBonus';
-
 defineProps({
   stats: {
     type: Object,

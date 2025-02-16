@@ -1,10 +1,22 @@
 <template>
-  <main v-if="classData" class="docs-container container">
+  <main
+    v-if="classData"
+    class="docs-container container"
+  >
     <h1>{{ classData.name }}</h1>
 
-    <ul v-if="subclasses.length > 0" class="mt-2">
-      <p class="inline font-bold after:content-[':_']">Subclasses</p>
-      <li v-for="subclass in subclasses" :key="subclass.name" class="inline">
+    <ul
+      v-if="subclasses.length > 0"
+      class="mt-2"
+    >
+      <p class="inline font-bold after:content-[':_']">
+        Subclasses
+      </p>
+      <li
+        v-for="subclass in subclasses"
+        :key="subclass.name"
+        class="inline"
+      >
         <nuxt-link
           :to="`/classes/${useRoute().params.className}/${subclass.key}`"
         >
@@ -19,11 +31,16 @@
       <section v-if="hitPoints.length > 0">
         <h3>Hit Points</h3>
         <dl>
-          <div v-for="item in hitPoints" :key="item.title">
+          <div
+            v-for="item in hitPoints"
+            :key="item.title"
+          >
             <dt class="inline font-bold after:content-['_']">
               {{ item.title }}
             </dt>
-            <dd class="inline">{{ item.data }}</dd>
+            <dd class="inline">
+              {{ item.data }}
+            </dd>
           </div>
         </dl>
       </section>
@@ -31,11 +48,16 @@
       <section v-if="proficiencies.length > 0">
         <h3>Proficiencies</h3>
         <dl>
-          <div v-for="prof in proficiencies" :key="prof.title">
+          <div
+            v-for="prof in proficiencies"
+            :key="prof.title"
+          >
             <dt class="inline font-bold after:content-['_']">
               {{ prof.title }}
             </dt>
-            <dd class="inline">{{ prof.data }}</dd>
+            <dd class="inline">
+              {{ prof.data }}
+            </dd>
           </div>
         </dl>
       </section>
@@ -48,22 +70,30 @@
     <section>
       <h2>Class Abilities</h2>
       <ul v-if="featuresInOrder.length > 0">
-        <li v-for="feature in featuresInOrder" :key="feature.key">
+        <li
+          v-for="feature in featuresInOrder"
+          :key="feature.key"
+        >
           <h3>{{ feature.name }}</h3>
-          <md-viewer :text="feature.desc" header-level="3" />
+          <md-viewer
+            :text="feature.desc"
+            header-level="3"
+          />
         </li>
       </ul>
     </section>
   </main>
 
-  <p v-else>Loading...</p>
+  <p v-else>
+    Loading...
+  </p>
 </template>
 
 <script setup>
 const { data: classData } = useFindOne(
   API_ENDPOINTS.classes,
   useRoute().params.className,
-  { params: { is_subclass: false } }
+  { params: { is_subclass: false } },
 );
 
 // fetch subclasses to generate links
@@ -107,7 +137,7 @@ const proficiencies = computed(() => {
 // ORDER CLASS FEATURES
 
 const featuresInOrder = computed(() => {
-  let levels = [];
+  const levels = [];
   for (let i = 1; i <= 20; i++) {
     levels.push(i);
   }
@@ -115,11 +145,11 @@ const featuresInOrder = computed(() => {
   // get keys for features at each level
   // returns an arr. (each index a level) of arrs. of keys
   const featureKeysByLevel = levels.map(
-    (level) => classData.value?.levels[level]?.features
+    level => classData.value?.levels[level]?.features,
   );
 
   // take the keys per level and generate a 1D arr. of feature keys in order
-  let keysFound = [];
+  const keysFound = [];
   const featureKeysInOrder = featureKeysByLevel.reduce((acc, level) => {
     // guard clause -> make sure there are features at this level
     if (!level || level?.length === 0) {
@@ -142,7 +172,7 @@ const featuresInOrder = computed(() => {
   // use ordered feature keys to gather class data features in order
   return featureKeysInOrder.map((keyToFind) => {
     return classData.value.features.find(
-      (feautre) => feautre.key === keyToFind
+      feautre => feautre.key === keyToFind,
     );
   });
 });
