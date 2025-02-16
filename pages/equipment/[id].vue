@@ -117,6 +117,6 @@ const formatCost = (input) => {
 
 const formatWeaponSubtitle = (weapon) =>
   `${weapon.is_melee ? 'Melee' : 'Ranged'} weapon ` +
-  `(${weapon.is_martial ? 'martial' : 'simple'}, ` +
-  `${weapon.name.toLowerCase()})`;
+  `(${weapon.is_martial ? 'martial' : 'simple'}` +
+  `${weapon.name.length > 0 ? `, ${weapon.name.toLowerCase()}` : ''})`;
 </script>
