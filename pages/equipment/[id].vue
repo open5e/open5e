@@ -18,9 +18,9 @@
           </dd>
           <dt class="font-bold">Damage Type</dt>
           <dd class="capitalize">
-            {{ item.weapon.damage_type.split('/').slice(-2)[0] }}
+            {{ item.weapon.damage_type?.split('/').slice(-2)[0] ?? '' }}
           </dd>
-          <template v-if="item.weapon.properties.length > 0">
+          <template v-if="item.weapon.properties?.length > 0">
             <dt class="font-bold">Properties</dt>
             <dd class="capitalize">
               {{ item.weapon.properties.map((prop) => prop).join(', ') }}
