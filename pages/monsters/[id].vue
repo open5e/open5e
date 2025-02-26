@@ -240,7 +240,7 @@
     </section>
 
     <!-- TRAITS -->
-    <section v-if="monster.traits.length !== 0">
+    <section v-if="monster.traits?.length !== 0">
       <h2>Traits</h2>
       <ul id="traits-list">
         <li v-for="trait in monster.traits" :key="trait.key" class="my-1">
