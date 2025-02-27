@@ -36,6 +36,7 @@
             name: monsterSize,
             value: monsterSize.toLowerCase(),
           })),
+          isLeastPriority: true,
         },
         {
           name: 'CR (min)',
@@ -82,6 +83,7 @@
           displayName: 'Size',
           value: (data) => data.size.name,
           sortValue: 'size',
+          isLeastPriority: true,
         },
       ]"
       :sort-by="sortBy"

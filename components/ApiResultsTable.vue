@@ -8,6 +8,7 @@
             :key="col.field"
             :title="col.displayName"
             :sort-by="col.sortValue"
+            :is-least-priority="col.isLeastPriority"
             :is-sorting-property="sortBy === col.sortValue"
             :is-sort-descending="isSortDescending"
             @sort="onSort(col.sortValue)"
