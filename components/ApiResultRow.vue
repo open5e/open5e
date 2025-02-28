@@ -1,7 +1,11 @@
 <template>
   <tr>
     <!-- Render each field defined in columns as a table cell -->
-    <td v-for="col in cols" :key="col.displayName">
+    <td
+      v-for="col in cols"
+      :key="col.displayName"
+      :class="{ 'hidden sm:block': col.isLeastPriority }"
+    >
       <template v-if="col.link">
         <span>
           <nuxt-link :to="col.link(data)">

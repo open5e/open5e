@@ -1,5 +1,9 @@
 <template>
-  <th :aria-sort="isSortDescending" class="align-baseline">
+  <th
+    :aria-sort="isSortDescending"
+    class="align-baseline"
+    :class="{ 'hidden sm:block': isLeastPriority }"
+  >
     <button v-if="sortBy" @click="onClick">
       <span>
         {{ format(title) }}
@@ -26,6 +30,7 @@ const props = defineProps({
   sortBy: { type: String, default: '' },
   isSortingProperty: { type: Boolean, default: false },
   isSortDescending: { type: Boolean, default: false },
+  isLeastPriority: { type: Boolean, default: false },
 });
 
 // a list of human-readable subsitutions
