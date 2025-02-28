@@ -9,13 +9,14 @@ const breakpoints = {
 };
 
 export function useBreakpoints() {
-  const width = ref(window.innerWidth);
+  const width = ref<number | null>(null);
 
   const updateWidth = () => {
     width.value = window.innerWidth;
   };
 
   onMounted(() => {
+    updateWidth();
     window.addEventListener('resize', updateWidth);
   });
 
@@ -24,6 +25,7 @@ export function useBreakpoints() {
   });
 
   const currentSize = computed(() => {
+    if (width.value === null) return 'unknown';
     if (width.value >= breakpoints.xxl) return 'xxl';
     if (width.value >= breakpoints.xl) return 'xl';
     if (width.value >= breakpoints.lg) return 'lg';
