@@ -16,7 +16,7 @@
       <h2>Class Features</h2>
       <p>As a {{ classData.name }} you gain the following features.</p>
 
-      <section v-if="hitPoints.length > 0">
+      <div v-if="hitPoints.length > 0">
         <h3>Hit Points</h3>
         <dl>
           <div v-for="item in hitPoints" :key="item.title">
@@ -26,27 +26,35 @@
             <dd class="inline">{{ item.data }}</dd>
           </div>
         </dl>
-      </section>
+      </div>
 
-      <section v-if="proficiencies.length > 0">
+      <!-- Proficiencies -->
+      <div v-if="features.proficiencies.length > 0">
         <h3>Proficiencies</h3>
-        <dl>
-          <div v-for="prof in proficiencies" :key="prof.title">
-            <dt class="inline font-bold after:content-['_']">
-              {{ prof.title }}
-            </dt>
-            <dd class="inline">{{ prof.data }}</dd>
-          </div>
-        </dl>
-      </section>
+        <md-viewer
+          v-for="proficiency in features.proficiencies"
+          :key="proficiency.key"
+          :text="proficiency.desc"
+        />
+      </div>
+      <div v-if="features.startingEquipment.length > 0">
+        <h3>Equipment</h3>
+        <md-viewer
+          v-for="equipment in features.startingEquipment"
+          :key="equipment.key"
+          :text="equipment.desc"
+        />
+      </div>
+    </section>
 
-      <h3>The {{ classData.name }}</h3>
+    <!-- Class Table -->
+    <section>
+      <h2>The {{ classData.name }}</h2>
       <class-table :class-features="classData.levels" />
     </section>
 
-    <!-- CLASS ABILITIES -->
+    <!-- Class Abilities -->
     <section>
-      <h2>Class Abilities</h2>
       <ul v-if="featuresInOrder.length > 0">
         <li v-for="feature in featuresInOrder" :key="feature.key">
           <h3>{{ feature.name }}</h3>
@@ -72,6 +80,30 @@ const { data: subclasses } = useFindMany(API_ENDPOINTS.classes, {
   subclass_of: useRoute().params.className,
 });
 
+// sorts features into separate arrays based on the type of that feature
+const features = computed(() => {
+  const featureData = classData?.value?.features;
+  if (!featureData) return {};
+  return featureData.reduce(
+    (acc, feature) => {
+      const { feature_type: type } = feature;
+      if (type === 'CLASS_FEATURE') acc.classFeatures.push(feature);
+      else if (type === 'PROFICIENCIES') acc.proficiencies.push(feature);
+      else if (type === 'PROFICIENCY_BONUS')
+        acc.proficiencyBonuses.push(feature);
+      else if (type === 'STARTING_EQUIPMENT')
+        acc.startingEquipment.push(feature);
+      return acc;
+    },
+    {
+      classFeatures: [],
+      proficiencies: [],
+      proficiencyBonuses: [],
+      startingEquipment: [],
+    }
+  );
+});
+
 // Formatting of fields is handled here to keep the template markup legible
 const hitPoints = computed(() => {
   if (!classData?.value?.hit_points) {
@@ -90,60 +122,30 @@ const hitPoints = computed(() => {
   ];
 });
 
-// TODO: proficiencies not currently returned by API
-const proficiencies = computed(() => {
-  if (!classData?.value?.proficiencies) {
-    return [];
-  }
-  return [
-    { title: 'Armor' },
-    { title: 'Weapons' },
-    { title: 'Tools' },
-    { title: 'Saving Throws' },
-    { title: 'Skills' },
-  ];
-});
+// helper - takes an ability and if it gained at multiple lvls rtrns the lowest
+const findFeatureLevel = (feature) => {
+  const gainedAt = feature.gained_at;
+  if (gainedAt.length === 0) return;
+  if (gainedAt.length === 1) return gainedAt[0].level;
+  const lowestLevel = gainedAt.reduce((acc, value) => {
+    return value.level < acc ? value.level : acc;
+  }, 20);
+  return lowestLevel;
+};
 
-// ORDER CLASS FEATURES
+// transforms the classFeatures arr into an obj. that maps levels to features
+const featuresPerLevel = computed(() =>
+  features.value.classFeatures.reduce((output, feature) => {
+    const featureLevel = findFeatureLevel(feature);
+    if (!featureLevel) return output;
+    if (!output[featureLevel]) output[featureLevel] = [feature];
+    else output[featureLevel].push(feature);
+    return output;
+  }, {})
+);
 
-const featuresInOrder = computed(() => {
-  let levels = [];
-  for (let i = 1; i <= 20; i++) {
-    levels.push(i);
-  }
-
-  // get keys for features at each level
-  // returns an arr. (each index a level) of arrs. of keys
-  const featureKeysByLevel = levels.map(
-    (level) => classData.value?.levels[level]?.features
-  );
-
-  // take the keys per level and generate a 1D arr. of feature keys in order
-  let keysFound = [];
-  const featureKeysInOrder = featureKeysByLevel.reduce((acc, level) => {
-    // guard clause -> make sure there are features at this level
-    if (!level || level?.length === 0) {
-      return acc;
-    }
-
-    // flatten 2D array to an array of feature key w/ duplicates removed
-    const inOrder = level.reduce((acc, featureKey) => {
-      if (keysFound.includes(featureKey)) {
-        return acc;
-      }
-      keysFound.push(featureKey);
-      acc.push(featureKey);
-      return acc;
-    }, []);
-
-    return [...acc, ...(inOrder ?? [])];
-  }, []);
-
-  // use ordered feature keys to gather class data features in order
-  return featureKeysInOrder.map((keyToFind) => {
-    return classData.value.features.find(
-      (feautre) => feautre.key === keyToFind
-    );
-  });
-});
+// flattens the featuresPerLevel obj to create array of features sorted by lvl
+const featuresInOrder = computed(() =>
+  Object.values(featuresPerLevel.value).flat()
+);
 </script>
