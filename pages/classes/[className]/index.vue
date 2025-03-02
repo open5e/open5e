@@ -53,6 +53,7 @@
       <class-table
         :class-features="formatFeaturesForTable(features.classFeatures)"
         :proficiency-bonus="features.proficiencyBonuses"
+        :spell-slots="features.spellSlots"
       />
     </section>
 
@@ -96,6 +97,7 @@ const features = computed(() => {
         acc.proficiencyBonuses.push(feature);
       else if (type === 'STARTING_EQUIPMENT')
         acc.startingEquipment.push(feature);
+      else if (type === 'SPELL_SLOTS') acc.spellSlots.push(feature);
       return acc;
     },
     {
@@ -103,6 +105,7 @@ const features = computed(() => {
       proficiencies: [],
       proficiencyBonuses: [],
       startingEquipment: [],
+      spellSlots: [],
     }
   );
 });

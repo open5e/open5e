@@ -2,9 +2,20 @@
   <table>
     <thead>
       <tr>
-        <th>Level</th>
-        <th>Proficiency Bonus</th>
-        <th>Features</th>
+        <th rowspan="2">Level</th>
+        <th v-if="proficiencies" rowspan="2">Proficiency Bonus</th>
+        <th rowspan="2">Features</th>
+        <th
+          v-if="spellslotColumnHeaders"
+          :colspan="spellslotColumnHeaders.length"
+        >
+          Spell Slots by Level
+        </th>
+      </tr>
+      <tr>
+        <th v-for="level in spellslotColumnHeaders" :key="level">
+          {{ level }}
+        </th>
       </tr>
     </thead>
     <tr v-for="level in levels" :key="level">
@@ -12,7 +23,7 @@
       <td>{{ level }}</td>
 
       <!-- 2nd column: proficiency bonus -->
-      <td>{{ proficiencies[level] ?? '-' }}</td>
+      <td v-if="proficiencies">{{ proficiencies[level] ?? '-' }}</td>
 
       <!-- 3rd column: class features -->
       <td v-if="!classFeatures[level]">–</td>
@@ -25,41 +36,24 @@
           {{ feature.name + (feature.detail ? ` (${feature.detail})` : '') }}
         </span>
       </td>
+
+      <td v-for="spellLevel in spellslotColumnHeaders" :key="spellLevel">
+        {{ getSpellSlots(level, spellLevel) }}
+      </td>
     </tr>
   </table>
-
-  <!-- TODO: Spell Slots - These are not currently returned by the API  -->
-  <!-- Below is an exaple table column layout -->
-  <!-- <table>
-    <tr>
-      <th rowspan="2">Level</th>
-      <th rowspan="2">Proficiency Bonus</th>
-      <th rowspan="2">Features</th>
-      <th rowspan="2">Cantrips Known</th>
-      <th rowspan="2">Spells Known</th>
-      <th colspan="9">Spell Slots per Spell Level</th>
-    </tr>
-    <tr>
-      <th>1st</th>
-      <th>2nd</th>
-      <th>3rd</th>
-      <th>4th</th>
-      <th>5th</th>
-      <th>6th</th>
-      <th>7th</th>
-      <th>8th</th>
-      <th>9th</th>
-    </tr>
-  </table> -->
 </template>
 
 <script setup>
 const props = defineProps({
   classFeatures: { type: Object, default: () => {} },
   proficiencyBonus: { type: Object, default: () => {} },
+  spellSlots: { type: Array, default: () => [] },
 });
 
+// Parse proficiency bonuses
 const proficiencies = computed(() => {
+  if (!props.proficiencyBonus) return;
   const { table_data: data } = props.proficiencyBonus[0];
   return data.reduce((output, tableRow) => {
     output[tableRow.level] = tableRow.column_value;
@@ -67,9 +61,38 @@ const proficiencies = computed(() => {
   }, Array(20));
 });
 
-// helper function for rendering reade-friendlt titles from feature keys
-const parseFeatures = (input) =>
-  input.split('_').slice(-1).pop().split('-').join(' ');
+// returns an array of table column headers for spell slots per level
+const spellslotColumnHeaders = computed(() => {
+  if (!props?.spellSlots || props.spellSlots.length === 0) return;
+  return props.spellSlots.map((feature) => feature.name);
+});
 
+// parses spell slot data passed via props in nested dict
+// Class Level -> Spell Level -> Number of spell slots
+const spellSlotTableData = computed(() => {
+  const data = props.spellSlots;
+  return data.reduce((acc, feature) => {
+    const { name: spellLevel, table_data: slotsPerCharLevel } = feature;
+    slotsPerCharLevel.forEach((item) => {
+      const { level: classLevel, column_value: spellSlots } = item;
+      if (!acc[classLevel]) acc[classLevel] = {};
+      const spellLevelNoOrdinal = spellLevel.charAt(0);
+      acc[classLevel][spellLevelNoOrdinal] = spellSlots;
+    });
+    return acc;
+  }, {});
+});
+
+// Gets number of spell slots per class/spell level. Handles null-exceptions
+const getSpellSlots = (classLevel, spellLevel) => {
+  const data = spellSlotTableData.value;
+  const slotsPerClassLevel = data[classLevel];
+  if (!slotsPerClassLevel) return '-';
+  const spellLevelNoOrdinal = spellLevel.charAt(0);
+  if (!slotsPerClassLevel[spellLevelNoOrdinal]) return '–';
+  return slotsPerClassLevel[spellLevelNoOrdinal];
+};
+
+// Generate an array of levels 1-20
 const levels = [...Array(20).keys()].map((i) => i + 1);
 </script>
