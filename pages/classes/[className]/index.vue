@@ -50,7 +50,10 @@
     <!-- Class Table -->
     <section>
       <h2>The {{ classData.name }}</h2>
-      <class-table :class-features="classData.levels" />
+      <class-table
+        :class-features="formatFeaturesForTable(features.classFeatures)"
+        :proficiency-bonus="features.proficiencyBonuses"
+      />
     </section>
 
     <!-- Class Abilities -->
@@ -123,7 +126,7 @@ const hitPoints = computed(() => {
 });
 
 // helper - takes an ability and if it gained at multiple lvls rtrns the lowest
-const findFeatureLevel = (feature) => {
+const findFeatureLowestLevel = (feature) => {
   const gainedAt = feature.gained_at;
   if (gainedAt.length === 0) return;
   if (gainedAt.length === 1) return gainedAt[0].level;
@@ -133,10 +136,31 @@ const findFeatureLevel = (feature) => {
   return lowestLevel;
 };
 
+// takes a feature and returns an array item for every lvl in the gained_at field
+const featureToStubs = (feature) => {
+  const { gained_at: gainedAt } = feature;
+  return gainedAt.map((atLevel) => ({
+    name: feature.name,
+    detail: atLevel.detail,
+    level: atLevel.level,
+  }));
+};
+
+const formatFeaturesForTable = (features) => {
+  return features.reduce((output, feature) => {
+    const featureStubs = featureToStubs(feature);
+    featureStubs.forEach((stub) => {
+      if (!output[stub.level]) output[stub.level] = [stub];
+      else output[stub.level].push(stub);
+    });
+    return output;
+  }, {});
+};
+
 // transforms the classFeatures arr into an obj. that maps levels to features
 const featuresPerLevel = computed(() =>
   features.value.classFeatures.reduce((output, feature) => {
-    const featureLevel = findFeatureLevel(feature);
+    const featureLevel = findFeatureLowestLevel(feature);
     if (!featureLevel) return output;
     if (!output[featureLevel]) output[featureLevel] = [feature];
     else output[featureLevel].push(feature);

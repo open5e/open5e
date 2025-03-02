@@ -1,26 +1,33 @@
 <template>
   <table>
-    <tr>
-      <th>Level</th>
-      <th>Proficiency Bonus</th>
-      <th>Features</th>
-    </tr>
-    <tr v-for="(value, key, index) in classFeatures" :key="index">
-      <td>{{ key }}</td>
-      <td class="before:content-['+']">
-        {{ value['proficiency-bonus'] }}
-      </td>
-      <td>
+    <thead>
+      <tr>
+        <th>Level</th>
+        <th>Proficiency Bonus</th>
+        <th>Features</th>
+      </tr>
+    </thead>
+    <tr v-for="level in levels" :key="level">
+      <!-- 1st column: level -->
+      <td>{{ level }}</td>
+
+      <!-- 2nd column: proficiency bonus -->
+      <td>{{ proficiencies[level] ?? '-' }}</td>
+
+      <!-- 3rd column: class features -->
+      <td v-if="!classFeatures[level]">–</td>
+      <td v-else>
         <span
-          v-for="feature in value.features"
-          :key="feature"
-          class="capitalize after:content-[',_'] last:after:content-['']"
+          v-for="feature in classFeatures[level]"
+          :key="feature.key"
+          class="after:content-[',_'] last:after:content-['']"
         >
-          {{ parseFeatures(feature) }}
+          {{ feature.name + (feature.detail ? ` (${feature.detail})` : '') }}
         </span>
       </td>
     </tr>
   </table>
+
   <!-- TODO: Spell Slots - These are not currently returned by the API  -->
   <!-- Below is an exaple table column layout -->
   <!-- <table>
@@ -47,11 +54,22 @@
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
   classFeatures: { type: Object, default: () => {} },
+  proficiencyBonus: { type: Object, default: () => {} },
+});
+
+const proficiencies = computed(() => {
+  const { table_data: data } = props.proficiencyBonus[0];
+  return data.reduce((output, tableRow) => {
+    output[tableRow.level] = tableRow.column_value;
+    return output;
+  }, Array(20));
 });
 
 // helper function for rendering reade-friendlt titles from feature keys
 const parseFeatures = (input) =>
   input.split('_').slice(-1).pop().split('-').join(' ');
+
+const levels = [...Array(20).keys()].map((i) => i + 1);
 </script>
