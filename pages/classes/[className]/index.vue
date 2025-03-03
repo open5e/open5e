@@ -1,7 +1,6 @@
 <template>
   <main v-if="classData" class="docs-container container">
     <h1>{{ classData.name }}</h1>
-
     <ul v-if="subclasses.length > 0" class="mt-2">
       <p class="inline font-bold after:content-[':_']">Subclasses</p>
       <li v-for="subclass in subclasses" :key="subclass.name" class="inline">
@@ -54,6 +53,7 @@
         :class-features="formatFeaturesForTable(features.classFeatures)"
         :proficiency-bonus="features.proficiencyBonuses"
         :spell-slots="features.spellSlots"
+        :class-resource-table-columns="features.classTableColumnData"
       />
     </section>
 
@@ -91,13 +91,14 @@ const features = computed(() => {
   return featureData.reduce(
     (acc, feature) => {
       const { feature_type: type } = feature;
-      if (type === 'CLASS_FEATURE') acc.classFeatures.push(feature);
+      if (type === 'PROFICIENCY_BONUS') acc.proficiencyBonuses.push(feature);
+      else if (type === 'SPELL_SLOTS') acc.spellSlots.push(feature);
+      else if (feature.table_data.length > 0)
+        acc.classTableColumnData.push(feature);
+      else if (type === 'CLASS_FEATURE') acc.classFeatures.push(feature);
       else if (type === 'PROFICIENCIES') acc.proficiencies.push(feature);
-      else if (type === 'PROFICIENCY_BONUS')
-        acc.proficiencyBonuses.push(feature);
       else if (type === 'STARTING_EQUIPMENT')
         acc.startingEquipment.push(feature);
-      else if (type === 'SPELL_SLOTS') acc.spellSlots.push(feature);
       return acc;
     },
     {
@@ -106,6 +107,7 @@ const features = computed(() => {
       proficiencyBonuses: [],
       startingEquipment: [],
       spellSlots: [],
+      classTableColumnData: [],
     }
   );
 });

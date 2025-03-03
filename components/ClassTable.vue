@@ -5,6 +5,9 @@
         <th rowspan="2">Level</th>
         <th v-if="proficiencies" rowspan="2">Proficiency Bonus</th>
         <th rowspan="2">Features</th>
+        <th v-for="title in additionalColumnHeaders" :key="title" rowspan="2">
+          {{ title }}
+        </th>
         <th
           v-if="spellslotColumnHeaders"
           :colspan="spellslotColumnHeaders.length"
@@ -37,6 +40,11 @@
         </span>
       </td>
 
+      <!-- Bonus columns for class specific resources -->
+      <td v-for="column in additionalColumnHeaders" :key="column">
+        {{ classResourceTableData[column][level] ?? '-' }}
+      </td>
+
       <td v-for="spellLevel in spellslotColumnHeaders" :key="spellLevel">
         {{ getSpellSlots(level, spellLevel) }}
       </td>
@@ -49,6 +57,7 @@ const props = defineProps({
   classFeatures: { type: Object, default: () => {} },
   proficiencyBonus: { type: Object, default: () => {} },
   spellSlots: { type: Array, default: () => [] },
+  classResourceTableColumns: { type: Array, default: () => [] },
 });
 
 // Parse proficiency bonuses
@@ -59,6 +68,25 @@ const proficiencies = computed(() => {
     output[tableRow.level] = tableRow.column_value;
     return output;
   }, Array(20));
+});
+
+// returns an array of additional columns used in this class's
+const additionalColumnHeaders = computed(() => {
+  if (props.classResourceTableColumns.length === 0) return;
+  return props.classResourceTableColumns.map((column) => column.name);
+});
+
+// parse additional class table data into a nested dict:
+// columnTitle -> level -> value
+const classResourceTableData = computed(() => {
+  return props.classResourceTableColumns.reduce((acc, column) => {
+    const { name: colName, table_data: valuePerLevel } = column;
+    if (!acc[colName]) acc[colName] = {};
+    valuePerLevel.forEach(({ level, column_value: value }) => {
+      acc[colName][level] = value;
+    });
+    return acc;
+  }, {});
 });
 
 // returns an array of table column headers for spell slots per level
