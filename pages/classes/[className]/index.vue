@@ -1,7 +1,18 @@
+<script>
+/**
+ * ClassTable.vue - Displays a class progression table with levels, features, proficiencies, and spell slots.
+ *
+ * @prop {Object} classFeatures - An object mapping class level (key) to class abilities (value)
+ * @prop {Object} proficiencyBonus - An object mapping character level (key) to prof. bonus (value)
+ * @prop {Array} spellSlots - A list of spell slot information per spell level (index = spell slot)
+ * @prop {Array} classResourceTableColumns - Extra columns for class-specific resources
+ */
+</script>
+
 <template>
   <main v-if="classData" class="docs-container container">
     <h1>{{ classData.name }}</h1>
-    <ul v-if="subclasses.length > 0" class="mt-2">
+    <ul v-if="subclasses?.length > 0" class="mt-2">
       <p class="inline font-bold after:content-[':_']">Subclasses</p>
       <li v-for="subclass in subclasses" :key="subclass.name" class="inline">
         <nuxt-link
@@ -28,7 +39,7 @@
       </div>
 
       <!-- Proficiencies -->
-      <div v-if="features.proficiencies.length > 0">
+      <div v-if="features?.proficiencies?.length > 0">
         <h3>Proficiencies</h3>
         <md-viewer
           v-for="proficiency in features.proficiencies"
@@ -36,7 +47,7 @@
           :text="proficiency.desc"
         />
       </div>
-      <div v-if="features.startingEquipment.length > 0">
+      <div v-if="features?.startingEquipment?.length > 0">
         <h3>Equipment</h3>
         <md-viewer
           v-for="equipment in features.startingEquipment"
@@ -75,7 +86,12 @@
 const { data: classData } = useFindOne(
   API_ENDPOINTS.classes,
   useRoute().params.className,
-  { params: { is_subclass: false } }
+  {
+    params: {
+      is_subclass: false,
+      fields: ['name', 'key', 'subclasses', 'features'].join(),
+    },
+  }
 );
 
 // fetch subclasses to generate links
@@ -152,6 +168,7 @@ const featureToStubs = (feature) => {
 };
 
 const formatFeaturesForTable = (features) => {
+  if (!features || features?.length === 0) return {};
   return features.reduce((output, feature) => {
     const featureStubs = featureToStubs(feature);
     featureStubs.forEach((stub) => {
@@ -163,15 +180,16 @@ const formatFeaturesForTable = (features) => {
 };
 
 // transforms the classFeatures arr into an obj. that maps levels to features
-const featuresPerLevel = computed(() =>
-  features.value.classFeatures.reduce((output, feature) => {
+const featuresPerLevel = computed(() => {
+  if (!features?.value?.classFeatures) return {};
+  return features.value.classFeatures.reduce((output, feature) => {
     const featureLevel = findFeatureLowestLevel(feature);
     if (!featureLevel) return output;
     if (!output[featureLevel]) output[featureLevel] = [feature];
     else output[featureLevel].push(feature);
     return output;
-  }, {})
-);
+  }, {});
+});
 
 // flattens the featuresPerLevel obj to create array of features sorted by lvl
 const featuresInOrder = computed(() =>

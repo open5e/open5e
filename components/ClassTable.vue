@@ -29,10 +29,10 @@
       <td v-if="proficiencies">{{ proficiencies[level] ?? '-' }}</td>
 
       <!-- 3rd column: class features -->
-      <td v-if="!classFeatures[level]">–</td>
+      <td v-if="classFeatures && !classFeatures[level]">–</td>
       <td v-else>
         <span
-          v-for="feature in classFeatures[level]"
+          v-for="feature in classFeatures?.[level]"
           :key="feature.key"
           class="after:content-[',_'] last:after:content-['']"
         >
@@ -62,7 +62,7 @@ const props = defineProps({
 
 // Parse proficiency bonuses
 const proficiencies = computed(() => {
-  if (!props.proficiencyBonus) return;
+  if (!props?.proficiencyBonus?.keys().length > 0) return;
   const { table_data: data } = props.proficiencyBonus[0];
   return data.reduce((output, tableRow) => {
     output[tableRow.level] = tableRow.column_value;
