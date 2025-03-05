@@ -1,10 +1,10 @@
 <template>
   <div class="grid items-center justify-end gap-2">
-    <div class="grid grid-flow-col grid-cols-5 gap-1">
-      <div class="col-start-3 place-self-center font-bold">
+    <ul class="grid grid-flow-col grid-cols-5 gap-1">
+      <li class="col-start-3 place-self-center font-bold">
         {{ pageNumber }}
-      </div>
-      <div v-for="button in buttons" :key="button.name">
+      </li>
+      <li v-for="button in buttons" :key="button.name">
         <ApiTableButton
           :name="button.name"
           :icon="button.icon"
@@ -12,8 +12,8 @@
           class="mt-1 border-2"
           @click="button.onClick()"
         />
-      </div>
-    </div>
+      </li>
+    </ul>
 
     <div class="text-center font-bold">
       {{ (pageNumber - 1) * itemsPerPage + 1 }} to
