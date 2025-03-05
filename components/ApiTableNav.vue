@@ -1,5 +1,5 @@
 <template>
-  <div class="grid items-center justify-end gap-2">
+  <div class="grid w-full items-center justify-end gap-2">
     <ul class="grid grid-flow-col grid-cols-5 gap-1">
       <li class="col-start-3 place-self-center font-bold">
         {{ pageNumber }}
