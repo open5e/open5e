@@ -7,6 +7,8 @@
         class="w-full"
         :page-number="pageNo || 1"
         :last-page-number="lastPageNo || 1"
+        :items-per-page="itemsPerPage || 1"
+        :total-items="data?.count || 1"
         @first="firstPage()"
         @next="nextPage()"
         @prev="prevPage()"
@@ -132,6 +134,13 @@ const { data, paginator } = useFindPaginated({
 });
 
 // destructure pagination controls
-const { pageNo, lastPageNo, firstPage, lastPage, prevPage, nextPage } =
-  paginator;
+const {
+  pageNo,
+  lastPageNo,
+  itemsPerPage,
+  firstPage,
+  lastPage,
+  prevPage,
+  nextPage,
+} = paginator;
 </script>
