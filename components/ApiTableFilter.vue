@@ -27,7 +27,7 @@
       v-for="field in selectFields"
       :key="field.name"
       class="grid columns-1 justify-center"
-      :class="{ 'hidden sm:block': field.isLeastPriority }"
+      :class="{ 'hidden sm:grid': field.isLeastPriority }"
     >
       <label class="font-serif text-xs" :for="field.name">
         {{ field.name }}
