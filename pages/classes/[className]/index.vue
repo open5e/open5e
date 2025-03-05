@@ -96,7 +96,7 @@ const features = computed(() => {
   return featureData.reduce(
     (acc, feature) => {
       const { feature_type: type } = feature;
-      if (type === 'PROFICIENCY_BONUS') acc.proficiencyBonuses.push(feature);
+      if (type === 'PROFICIENCY_BONUS') acc.proficiencyBonuses = feature;
       else if (type === 'SPELL_SLOTS') acc.spellSlots.push(feature);
       else if (feature.table_data.length > 0)
         acc.classTableColumnData.push(feature);
@@ -109,7 +109,7 @@ const features = computed(() => {
     {
       classFeatures: [],
       proficiencies: [],
-      proficiencyBonuses: [],
+      proficiencyBonuses: undefined,
       startingEquipment: [],
       spellSlots: [],
       classTableColumnData: [],

@@ -73,8 +73,8 @@ const props = defineProps({
 
 // Parse proficiency bonuses
 const proficiencies = computed(() => {
-  if (!props?.proficiencyBonus?.keys().length > 0) return;
-  const { table_data: data } = props.proficiencyBonus[0];
+  if (!props?.proficiencyBonus?.table_data.length > 0) return;
+  const { table_data: data } = props.proficiencyBonus;
   return data.reduce((output, tableRow) => {
     output[tableRow.level] = tableRow.column_value;
     return output;
