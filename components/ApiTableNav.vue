@@ -43,28 +43,24 @@ const buttons = [
     isActive: isNotFirstPage,
     onClick: () => emit('first'),
     icon: 'heroicons:chevron-double-left',
-    class: 'col-start-1',
   },
   {
     name: 'Previous page',
     isActive: isNotFirstPage,
     onClick: () => emit('prev'),
     icon: 'heroicons:chevron-left',
-    class: 'col-start-2',
   },
   {
     name: 'Next page',
     isActive: isNotLastPage,
     onClick: () => emit('next'),
     icon: 'heroicons:chevron-right',
-    class: 'col-start-4',
   },
   {
     name: 'Last page',
     isActive: isNotLastPage,
     onClick: () => emit('last'),
     icon: 'heroicons:chevron-double-right',
-    class: 'col-start-5',
   },
 ];
 </script>
