@@ -96,7 +96,7 @@ export const useAPI = () => {
 
 export const useFindMany = (
   endpoint: MaybeRef<string>,
-  params?: MaybeRef<Record<string, string | number>>
+  params?: MaybeRef<Record<string, string | number | boolean>>
 ) => {
   const { findMany } = useAPI();
 
