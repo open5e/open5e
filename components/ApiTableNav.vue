@@ -1,8 +1,10 @@
 <template>
-  <div class="grid w-full items-center justify-end gap-2">
+  <div class="grid w-full items-center justify-end">
     <ul class="grid grid-flow-col grid-cols-5 gap-1">
       <li class="col-start-3 place-self-center font-bold">
-        {{ pageNumber }}
+        <sup>{{ pageNumber }}</sup>
+        <span>&frasl;</span>
+        <sub>{{ lastPageNumber }}</sub>
       </li>
       <li v-for="button in buttons" :key="button.name">
         <ApiTableButton
@@ -15,12 +17,12 @@
       </li>
     </ul>
 
-    <div class="text-center font-bold">
-      {{ (pageNumber - 1) * itemsPerPage + 1 }} to
+    <div class="text-center text-sm font-bold">
+      {{ (pageNumber - 1) * itemsPerPage + 1 }} -
       {{
         lastPageNumber === pageNumber ? totalItems : pageNumber * itemsPerPage
       }}
-      of {{ totalItems }}
+      / {{ totalItems }}
     </div>
   </div>
 </template>
