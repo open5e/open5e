@@ -17,12 +17,16 @@
       </li>
     </ul>
 
-    <div class="text-center text-sm font-bold">
-      {{ (pageNumber - 1) * itemsPerPage + 1 }} -
-      {{
-        lastPageNumber === pageNumber ? totalItems : pageNumber * itemsPerPage
-      }}
-      / {{ totalItems }}
+    <div class="grid grid-cols-[2fr,_1fr,_2fr] text-center text-xs">
+      <span class="mr-2 text-center">
+        {{ (pageNumber - 1) * itemsPerPage + 1 }}
+        <span class="font-bold">–</span>
+        {{
+          lastPageNumber === pageNumber ? totalItems : pageNumber * itemsPerPage
+        }}
+      </span>
+      <span class="mx-4 font-bold">&frasl;</span>
+      <span class="text-center">{{ totalItems }}</span>
     </div>
   </div>
 </template>
