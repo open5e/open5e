@@ -227,18 +227,6 @@
       </ul>
     </section>
 
-    <!-- SPECIAL ABILITIES -->
-    <section v-if="monster.special_abilities">
-      <p
-        v-for="ability in monster.special_abilities"
-        :key="ability.name"
-        class="action-block"
-      >
-        <span class="font-bold after:content-['.']">{{ ability.name }}</span>
-        <md-viewer inline="true" :text="ability.desc" />
-      </p>
-    </section>
-
     <!-- TRAITS -->
     <section v-if="monster.traits?.length !== 0">
       <h2>Traits</h2>
