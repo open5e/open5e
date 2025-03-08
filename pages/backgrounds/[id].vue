@@ -6,12 +6,7 @@
         <source-tag
           class="inline"
           :title="background.document.name"
-          :text="
-            background.document.url
-              .split('/')
-              .filter((exists) => exists)
-              .pop()
-          "
+          :text="background.document.key"
         />
       </div>
       <md-viewer :text="background.desc" />

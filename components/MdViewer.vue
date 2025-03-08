@@ -6,6 +6,7 @@
       tables: true,
       headerLevelStart: headerLevel,
       vueTemplate: true,
+      simpleLineBreaks: true,
     }"
     :markdown="text"
     :extensions="extensions"
@@ -15,6 +16,8 @@
 
 <script setup>
 import { VueShowdown } from 'vue-showdown';
+import { watch } from 'vue';
+
 const props = defineProps({
   toc: { type: Boolean, default: true },
   text: { type: String, default: 'loading...' },
@@ -22,6 +25,20 @@ const props = defineProps({
   inline: { type: Boolean },
   useRoller: { type: Boolean, default: false },
 });
+
+// Add debugging to see what's happening to the newlines
+watch(
+  () => props.text,
+  (newText) => {
+    console.log('Text received by md-viewer:', {
+      doubleNewlines: (newText.match(/\n\n/g) || []).length,
+      tripleNewlines: (newText.match(/\n\n\n/g) || []).length,
+      quadrupleNewlines: (newText.match(/\n\n\n\n/g) || []).length,
+      raw: JSON.stringify(newText),
+    });
+  },
+  { immediate: true }
+);
 
 const crossLinkExtension = {
   type: 'output',

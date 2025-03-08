@@ -23,9 +23,6 @@ const { data: feat } = useFindOne(API_ENDPOINTS.feats, useRoute().params.id, {
 // generate source key from page URL - for use with source-tab cmpnt
 const sourceKey = computed(() => {
   if (!feat?.value?.document) return;
-  return feat.value.document.url
-    .split('/')
-    .filter((exists) => exists)
-    .pop();
+  return feat.value.document.key;
 });
 </script>
