@@ -259,8 +259,11 @@
         <li v-for="action in monster.actions" :key="action.name" class="my-1">
           <span class="font-bold after:content-['._']">
             <span>{{ action.name }}</span>
-            <span v-if="action.recharge_on_roll" class="before:content-['_']">
-              {{ `(Recharge ${action.recharge_on_roll}-6)` }}
+            <span
+              v-if="action.uses_type === 'RECHARGE_ON_ROLL'"
+              class="before:content-['_']"
+            >
+              {{ `(Recharge ${action.uses_param}-6)` }}
             </span>
           </span>
           <md-viewer :inline="true" :text="action.desc" :use-roller="true" />
