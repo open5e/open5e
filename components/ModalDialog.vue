@@ -1,3 +1,30 @@
+<script>
+/**
+ * ModalDialog.vue - A modal dialog component that displays a centered overlay.
+ * Contents and Action buttons are created by passing slots to component.
+ *
+ * -= PROPS (INPUTS) =-
+ * @prop {Boolean} open - controls whether the modal is open or closed
+ *
+ * -= SLOTS =-
+ * @slot default - modal main content, injected inside the modal body
+ * @slot actions - A named slot for placing action buttons in the modal footer
+ *
+ * -= EMITS (OUTPUTS) =-
+ * @emits {Boolean} close - Emits `true` when the modal is closed, so the
+ *   parent component can update the modal state.
+ * @emits {Boolean} update:open - Emits `false` to update the `open` prop to
+ *   `false` when the modal is closed.
+ *
+ * -= DEPENDENCIES =-
+ * @component Dialog – from @headlessui/vue: creates a modal menu
+ * @component DialogPanel – from @headlessui/vue: creates the panel of modal
+ * @component TransitionChild – from @headlessui/vue: creates transition effects
+ * @component TransitionRoot – from @headlessui/vue: controls the root transition
+ *
+ */
+</script>
+
 <template>
   <TransitionRoot as="template" :show="open" @key.escape="closeModal">
     <Dialog as="div" class="relative z-100" @close="closeModal">

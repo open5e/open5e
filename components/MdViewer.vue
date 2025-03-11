@@ -1,5 +1,28 @@
+<script>
+/**
+ * MdViewer.vue - Renders Markdown content as HTML. Essentially a wrapper for
+ * the VueShowdown library with a few extensions for parsing certain custom
+ * Markdown tags as custom Nuxt components (via the "extentions" prop)
+ *
+ * -= PROPS (INPUTS) =-
+ * @prop {Boolean} toc - A boolean flag to control whether a Table of Contents
+ *   is generated or not.
+ * @prop {String} text - Markdown string to be converted to HTML.
+ * @prop {Number} headerLevel - The header level to start from for the Markdown
+ *   content. Used for MD nested deeply in a parent doc. Defaults to `1` -> h1
+ * @prop {Boolean} inline - Flag. Enables rendering inline markdown.
+ * @prop {Boolean} useRoller - Whether to parse dice sigs as rollable on click
+ *
+ *
+ * -= DEPENDENCIES =-
+ * - @component VueShowdown: The Markdown rendering library. Converts MD -> HTML
+ * - @component CrossLink: Inserted into HTML in place of <open5e-link> tag in MD
+ * - @component InlineRoller: Inserted into HTML
+ */
+</script>
+
 <template ref="el">
-  <vue-showdown
+  <VueShowdown
     ref="mdwrapper"
     :vue-template="true"
     :options="{

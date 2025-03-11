@@ -1,3 +1,17 @@
+<script>
+/**
+ * NavBar.vue - Navigation sidebar. Renders a list of links w/ optional nesting
+ *
+ * -= PROPS (INPUTS) =-
+ * None (but perhaps `routes` should be a prop).
+ *
+ * -= DEPENDENCIES =-
+ * @composable useFindMany: data-fetching composable. Fetches `Classes` to populate menu
+ * @composable useRoute: Nuxt composable. Used to highlight current route.
+ *
+ */
+</script>
+
 <template>
   <ul class="text-inherit text-white">
     <li v-for="section in routes" :key="section.title">

@@ -1,7 +1,20 @@
-<!--
-  This component is global so that the markdown parser can see it and parse the
-  cross-link tags as components. There might be a better way to handle this
--->
+<script>
+/**
+ * CrossLink - An inline link to an Open5e resource. Fetches & displays a
+ *   preview of the linked resource when hovered
+ *
+ * -= PROPS (INPUTS) =-
+ * @prop {String} src - The source of the Open5e resource being linked to. The
+ *   resources endpoint and key can be extracted from it.
+ *
+ *
+ * -= DEPENDENCIES =-
+ * @component LinkPreview – Displays a preview of the linked content.
+ * @axios - Fetches API data (TODO: replace /w Vue Query)
+ *
+ */
+</script>
+
 <template>
   <nuxt-link
     v-if="acceptibleTypes.includes(category)"
@@ -37,9 +50,7 @@ const url = computed(() => {
   const { altFrontEndSubroute, apiEndpoint } = paramsByType[category.value];
 
   // make sure that category has a recognised endpoint
-  if (!apiEndpoint) {
-    return { linkTarget: '/' };
-  }
+  if (!apiEndpoint) return { linkTarget: '/' };
 
   // FE uses section's parent for routing. Update url once data is fetched
   if (content.value && category.value === 'sections') {

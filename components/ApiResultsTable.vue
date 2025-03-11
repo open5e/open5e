@@ -1,6 +1,7 @@
 <script>
 /**
- * ApiResultsTable.vue - Displays a sortable list of data returned by the Open5e API
+ * ApiResultsTable.vue - Displays a sortable list of data returned by the Open5e
+ * API. Used on top-level pages where lists of results can be viewed.
  *
  * -= PROPS (INPUTS) =-
  * @prop {Object} data - API data to display
@@ -15,8 +16,9 @@
  * @emits {String} sort – Emit the sorting value when a column is sorted
  *
  * -= DEPENDENCIES =-
- * <ApiResultRow> -> render table rows (refac'd into own cmpnt for readibility)
- * <SortableTableHeader> -> captures logic for column headers
+ * This component uses the following sub-components
+ * @component ApiResultRow -> render table rows (refac'd into own cmpnt for readibility)
+ * @component SortableTableHeader -> captures logic for column headers
  */
 </script>
 

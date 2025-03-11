@@ -1,3 +1,41 @@
+<script>
+/**
+ * ApiTableFilter.vue - Displays a set of filter controls for filtering data
+ * returned by the Open5e API.
+ *
+ * -= PROPS (INPUTS) =-
+ * @prop {Object} filterState - The state of the filters, returned by
+ * `useFilterState()` composable.
+ *   @property {Object} fieldsState - The current values of the filter fields.
+ *   @property {Object} canClearFilter - Flag for whether filter can be cleared
+ *   @method {Function} updateField - Function to update the value of a filter field.
+ *   @method {Function} clearFilter - Function to clear the active filter.
+ *
+ * @prop {Object} [search] - Configuration for the search filter.
+ *   @property {String} name - The name of the search field.
+ *   @property {String} filterField - The filter field for the search.
+ *
+ * @prop {Array} selectFields - Fields to be filtered using drop-down menus
+ *   @property {String} name - Display name of the field - what the use sees.
+ *   @property {String} filterField - The filter field to be updated.
+ *   @property {Array} options - Dropdown filter options/choices
+ *   @property {Boolean} [isLeastPriority] - Flag to hide fields on small screens.
+ *
+ * @prop {Array} checkboxFields - Fields to be filtered using checkboxes
+ *   @property {String} name - The name of the checkbox field (displayed in label).
+ *   @property {String} filterField - The filter field for the checkbox.
+ *
+ * -= EMITS (OUTPUTS) =-
+ * @emits {String} updateField – Emit the updated field value when a filter is changed.
+ * @emits {Boolean} clearFilter – Emit when the filter is cleared.
+ *
+ * -= DEPENDENCIES =-
+ * @component Icon -> Renders icons in the UI.
+ * @component ApiTableButton -> Button for clearing the filter.
+ *
+ */
+</script>
+
 <template>
   <div class="my-2 flex items-end justify-between gap-2 md:gap-3">
     <!-- RENDER SEARCH BAR -->
@@ -92,7 +130,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 // TODO: Set up types for these props once ESLint supports use of defineProps<> so we can pass in generics for the filters we're using
 const props = defineProps({
   filterState: { type: Object, required: true }, // This is the return value of useFilterState // TODO: When ESLint supports defineProps<> we could type this properly

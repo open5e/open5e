@@ -1,10 +1,17 @@
 <script>
 /**
- * ClassTable.vue - Displays a class progression table with levels, features, proficiencies, and spell slots.
+ * ClassTable.vue - Displays a table of class progression data - for each level
+ * features, proficiencies, and spell slots are rendered.
  *
- * @prop {Object} classFeatures - An object mapping class level (key) to class abilities (value)
- * @prop {Object} proficiencyBonus - An object mapping character level (key) to prof. bonus (value)
- * @prop {Array} spellSlots - A list of spell slot information per spell level (index = spell slot)
+ * -= PROPS / INPUTS =-
+ * @prop {Object} classFeatures -  Maps class level (key) to abilities gained
+ * at that level (value).
+ *  @property {Object} classFeatures[level] - Array of features per class level
+ *     @property {String} feature.key - The unique key for the feature
+ *     @property {String} feature.name - Display name for the feature
+ *     @property {String} [feature.detail] - Additional contextual information
+ * @prop {Object} proficiencyBonus - Maps char. level (key) to prof. bonus (value)
+ * @prop {Array} spellSlots - Spell slot information per spell level
  * @prop {Array} classResourceTableColumns - Extra columns for class-specific resources
  */
 </script>

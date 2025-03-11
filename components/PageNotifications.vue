@@ -1,3 +1,16 @@
+<script>
+/**
+ * PageNotifications.vue - A UI wrapper for the `notifications` singleton
+ * returned by the useNotifications composable. Displays notifications in the
+ * lower right corner of the window
+ *
+ * -= DEPENDENCIES =-
+ * - @composable useNotifications: manages notification state and actions.
+ * - @composable useRoute: detect route changes (& clears notifs)
+ *
+ */
+</script>
+
 <template>
   <div class="absolute bottom-0 right-8 m-0 flex flex-col-reverse p-0">
     <div
