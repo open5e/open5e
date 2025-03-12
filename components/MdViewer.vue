@@ -6,6 +6,7 @@
       tables: true,
       headerLevelStart: headerLevel,
       vueTemplate: true,
+      simpleLineBreaks: true,
     }"
     :markdown="text"
     :extensions="extensions"
@@ -15,6 +16,7 @@
 
 <script setup>
 import { VueShowdown } from 'vue-showdown';
+
 const props = defineProps({
   toc: { type: Boolean, default: true },
   text: { type: String, default: 'loading...' },
