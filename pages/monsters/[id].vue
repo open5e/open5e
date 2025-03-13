@@ -251,8 +251,7 @@
           <span class="font-bold after:content-['_']">{{ action.name }}</span>
           <span
             v-if="action.uses_type === 'RECHARGE_ON_ROLL'"
-            class="after:content-['_']"
-            class="cursor-pointer font-bold text-blood before:text-black before:content-['_('] after:text-black after:content-[')'] hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
+            class="cursor-pointer font-bold text-blood before:text-black before:content-['_('] after:text-black after:content-[')_'] hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
             @click="useDiceRoller('1d6+0')"
           >
             {{ `Recharge ${action.uses_param}-6` }}
