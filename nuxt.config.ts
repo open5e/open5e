@@ -47,9 +47,11 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   nitro: {
     preset: 'digital-ocean',
   },
+
   // vite: {
   //   resolve: {
   //     alias: {
@@ -63,17 +65,21 @@ export default defineNuxtConfig({
     '@hebilicious/vue-query-nuxt',
     '@nuxt/test-utils/module',
   ],
+
   queryClientOptions: {
     defaultOptions: { queries: { staleTime: Infinity } },
   },
+
   runtimeConfig: {
     public: {
       apiUrl: process.env.API_URL || 'https://api.open5e.com',
     },
   },
+
   router: {
     prefetchLinks: false,
   },
+
   hooks: {
     'vite:extendConfig': (config, { isClient, isServer }) => {
       if (isClient) {
@@ -81,8 +87,11 @@ export default defineNuxtConfig({
       }
     },
   },
+
   tailwindcss: {
     configPath: '~/tailwind.config.ts',
     cssPath: '~/styles/tailwind.css',
   },
+
+  compatibilityDate: '2025-03-07',
 });

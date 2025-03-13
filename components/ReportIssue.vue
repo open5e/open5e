@@ -1,3 +1,21 @@
+<script>
+/**
+ * ReportIssue.vue - A button that opens a modal menu for users to submit
+ * website issues via a GoogleSheet
+ *
+ * -= PROPS (INPUTS) =-
+ * This component does not receive any props.
+ *
+ * -= EMITS =-
+ * @emit close: Emitted when the modal is closed. Used by parent to control
+ * modal visibility
+ *
+ * -= DEPENDENCIES =-
+ * @component ModalDialogue: Displays the issue form as a modal menu
+ *
+ */
+</script>
+
 <script setup>
 import { ref } from 'vue';
 const isOpen = ref(false);

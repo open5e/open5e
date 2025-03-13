@@ -22,9 +22,6 @@ const { data: condition } = useFindOne(
 // generate source key from page URL - for use with source-tab cmpnt
 const sourceKey = computed(() => {
   if (!condition?.value?.document) return;
-  return condition.value.document.url
-    .split('/')
-    .filter((exists) => exists)
-    .pop();
+  return condition.value.document.key;
 });
 </script>

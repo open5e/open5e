@@ -1,3 +1,25 @@
+<script>
+/**
+ * ApiTableNav.vue - Pagination controls, designed to be used with the
+ * `<ApiResultsTable />` component
+ *
+ * -= PROPS (INPUTS) =-
+ * @prop {Number} lastPageNumber - Last page number
+ * @prop {Number} pageNumber - Current page number
+ * @prop {Number} itemsPerPage - The number of items displayed per page
+ * @prop {Number} totalItems - The total number of items across all pages
+ *
+ * -= EMITS (OUTPUTS) =-
+ * @emits first - Emitted when "first page" button clicked
+ * @emits last - Emitted when "last page" button clicked
+ * @emits next - Emitted when "next page" button clicked
+ * @emits prev - Emitted when "prev page" button clicked
+ *
+ * -= DEPENDENCIES =-
+ * @component ApiTableButton – Renders pagination buttons with icons.
+ */
+</script>
+
 <template>
   <div class="grid w-full items-center justify-end">
     <ul class="grid grid-flow-col grid-cols-5 gap-1">
