@@ -240,13 +240,12 @@
       </ul>
     </section>
 
+    <!-- CREATURE ACTIONS -->
     <section
       v-for="(actionsByType, actionType) in actions"
       :key="actionsByType"
     >
-      <h2>
-        {{ screamingSnakeToTitleCase(actionType) }}
-      </h2>
+      <h2>{{ snakeToTitleCase(actionType) }}</h2>
       <ul>
         <li v-for="action in actionsByType" :key="action.name" class="my-1">
           <span class="font-bold after:content-['_']">{{ action.name }}</span>
@@ -330,8 +329,8 @@ const actions = computed(() => {
   );
 });
 
-// Converts SCREAMING_SNAKE_CASE to Title Case, used for action type headers
-const screamingSnakeToTitleCase = (input) =>
+// Converts SNAKE_CASE to Title Case, used for action type headers
+const snakeToTitleCase = (input) =>
   input
     .toLowerCase()
     .split('_')
@@ -410,12 +409,7 @@ function toggleMode() {
 
   navigateTo({
     path: `/monsters/${route.params.id}`,
-    query:
-      mode.value === 'compact'
-        ? {
-            mode: 'compact',
-          }
-        : null,
+    query: mode.value === 'compact' ? { mode: 'compact' } : null,
   });
 }
 </script>
