@@ -1,3 +1,26 @@
+<script>
+/**
+ * SortableTableHeader.vue - A table header cell that includes sorting functionality. It displays a title with a sorting indicator (▲/▼),
+ *   allowing users to sort the table by the corresponding column.
+ *
+ * -= PROPS (INPUTS) =-
+ * @prop {String} title - Column title, appears in table header
+ * @prop {String} sortBy - `key` in data to sort by when clicked. If omitted,
+ *   then sorting by this column will be disabled.
+ * @prop {Boolean} isSortingProperty - True if this col is currently sorting the
+ *   table. It is used to highlight the sorting indicator.
+ * @prop {Boolean} isSortDescending - Specifies sort direction. Controls
+ *   direction of the sort indicator (▲/▼).
+ * @prop {Boolean} isLeastPriority - If true, hide this col on small screens
+ *
+ * -= EMITS (OUTPUTS) =-
+ * @emits {String} sort - Emits the `sortBy` key when user clicks the column
+ *   header. Used to update data on parent component
+ *
+ *
+ */
+</script>
+
 <template>
   <th
     :aria-sort="isSortDescending"

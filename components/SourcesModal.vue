@@ -1,3 +1,25 @@
+<script>
+/**
+ * SourceSelectionModal.vue - Displays a modal for selecting sources, grouped by publisher, with options
+ *   to select/deselect all sources and filter by game system.
+ *
+ * -= PROPS (INPUTS) =-
+ * @prop {Object} sources - List of currently selected sources pulled
+ * @prop {Function} setSources - Function to update the selected sources in the parent component.
+ * @prop {String} gameSystem - The currently selected game system.
+ * @prop {Function} setGameSystem - Function to update the selected game system in the parent component.
+ *
+ * -= EMITS (OUTPUTS) =-
+ * @emits {Function} close – Emit when the modal should be closed.
+ * @emits {Function} saveSelection – Emit when the user confirms the selection and the modal should close.
+ *
+ * -= DEPENDENCIES =-
+ * @component ModalDialogue – Used for rendering the modal dialog UI.
+ * @component SourceTag – Displays a tag for each source showing relevant information.
+ *
+ */
+</script>
+
 <template>
   <modal-dialog @close="closeModal()">
     <slot>

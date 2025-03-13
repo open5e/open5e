@@ -1,4 +1,26 @@
-<!-- SearchResults is designed to take a single row returned by the /search API endpoint and return a list item containing a link to a page -->
+<script>
+/**
+ * SearchResults.vue - Renders a single item returned by the /search endpoint.
+ *   Returns an `<li>` element to be placed in a list of other results.
+ *
+ * -= PROPS (INPUTS) =-
+ * @prop {String} query - The search query. Used for highlighting matching text
+ *   in the result snippet.
+ * @prop {Object} result - A single search result rtn'd by /search endpoint
+ *   @property {String} result.object_name - The name of the result returned
+ *   @property {String} result.object_model - result's type (ie. Spell, Item)
+ *   @property {Object} result.object - Extra data about the search result,
+ *     varies depending on the `object_model`.
+ *   @property {Object} result.document - result's source: includes 'key' and 'name'.
+ *   @property {String} result.object_pk - Results UID
+ *   @property {String} result.highlighted - highlighted snippet for result
+ *
+ * -= DEPENDENCIES =-
+ * @component SourceTag – Renders info about document source of search result
+ * @component MdViewer – Renders Markdown as HTML
+ *
+ */
+</script>
 
 <template>
   <li class="py-2 text-base">
