@@ -249,9 +249,10 @@
             <span>{{ action.name }}</span>
             <span
               v-if="action.uses_type === 'RECHARGE_ON_ROLL'"
-              class="before:content-['_']"
+              class="cursor-pointer font-bold text-blood before:text-black before:content-['_('] after:text-black after:content-[')'] hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
+              @click="useDiceRoller('1d6+0')"
             >
-              {{ `(Recharge ${action.uses_param}-6)` }}
+              {{ `Recharge ${action.uses_param}-6` }}
             </span>
           </span>
           <md-viewer :inline="true" :text="action.desc" :use-roller="true" />
