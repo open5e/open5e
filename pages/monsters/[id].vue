@@ -137,51 +137,15 @@
         </li>
       </ul>
 
-      <!-- DAMAGE IMMUNITIES -->
-      <ul v-if="damageImmunities.length > 0" id="dmg-immunities">
-        <label
-          for="dmg-immunities"
-          class="inline font-bold after:content-['_']"
-        >
-          Damage Immunities
-        </label>
+      <!-- RESISTANCES, VULNERABILITY, AND IMMUNITIES -->
+      <ul v-for="(data, title) in resistancesAndVulnerabilities" :key="title">
+        <label class="inline font-bold after:content-['_']">{{ title }}</label>
         <li
-          v-for="immunity in damageImmunities"
-          :key="immunity.name"
-          class="inline capitalize after:content-[',_'] last:after:content-[]"
+          v-for="field in data"
+          :key="field.name"
+          class="inline after:content-[',_'] last:after:content-[]"
         >
-          {{ immunity.name }}
-        </li>
-      </ul>
-
-      <!-- DAMAGE RESISTANCES -->
-      <ul v-if="damageResistances.length > 0" id="dmg-resistances">
-        <label
-          for="dmg-resistances"
-          class="inline font-bold after:content-['_']"
-        >
-          Damage Resistances
-        </label>
-        <li
-          v-for="resistance in damageResistances"
-          :key="resistance.name"
-          class="inline after:content-[',_'] last:after:content-['']"
-        >
-          {{ resistance.name }}
-        </li>
-      </ul>
-
-      <!-- CONDITION IMMUNITIES -->
-      <ul v-if="monster.condition_immunities.length > 0" id="conditions">
-        <label for="conditions" class="inline font-bold after:content-['_']">
-          Condition Immunities
-        </label>
-        <li
-          v-for="immunity in monster.condition_immunities"
-          :key="immunity.name"
-          class="inline capitalize after:content-[',_'] last:after:content-[]"
-        >
-          {{ immunity.name }}
+          {{ field.name }}
         </li>
       </ul>
 
@@ -365,36 +329,43 @@ const senses = computed(() => {
   return senses;
 });
 
-// format damage resistances correctly (damage from non-magic weapons)
-const damageResistances = computed(() => {
-  if (!monster?.value) return {};
-  if (!monster.value.nonmagical_attack_resistance) {
-    return monster.value.damage_resistances;
-  }
-  return [
-    ...monster.value.damage_resistances.filter(
-      (res) => !['Bludgeoning', 'Slashing', 'Piercing'].includes(res.name)
-    ),
-    {
-      name: 'Bludgeoning, Piercing and Slashing from Nonmagical Attacks',
-    },
-  ];
-});
+// format monster damage/condition vulnerabilities, resistances & immunities
+const resistancesAndVulnerabilities = computed(() => {
+  const { value: monsterData } = monster;
+  if (!monsterData) return {};
 
-// format damage resistances correctly (damage from non-magic weapons)
-const damageImmunities = computed(() => {
-  if (!monster?.value) return {};
-  if (!monster.value.nonmagical_attack_immunity) {
-    return monster.value.damage_immunities;
-  }
-  return [
-    ...monster.value.damage_immunities.filter(
-      (res) => !['Bludgeoning', 'Slashing', 'Piercing'].includes(res.name)
-    ),
-    {
-      name: 'Bludgeoning, Piercing and Slashing from Nonmagical Attacks',
-    },
-  ];
+  const resists = {
+    damage_resistances: monsterData.damage_resistances,
+    damage_vulnerabilities: monsterData.damage_vulnerabilities,
+    damage_immunities: monsterData.damage_immunities,
+    condition_immunities: monsterData.condition_immunities,
+  };
+
+  // helper function: formats 'Bludgeoning, Piercing and Slashing from Nonmagical Attacks'
+  const formatNonMagicAttacks = (field) => {
+    const damageTypesToSub = ['Bludgeoning', 'Slashing', 'Piercing'];
+    const sub = 'Bludgeoning, Piercing and Slashing from Nonmagical Attacks';
+    return [
+      ...field.filter((res) => !damageTypesToSub.includes(res.name)),
+      { name: sub },
+    ];
+  };
+
+  // conditionally apply non-magical attack resist/immunity formatting
+  resists.damage_immunities = monsterData.nonmagical_attack_immunity
+    ? formatNonMagicAttacks(resists.damage_immunities)
+    : resists.damage_immunities;
+  resists.damage_resistances = monsterData.nonmagical_attack_resistance
+    ? formatNonMagicAttacks(resists.damage_resistances)
+    : resists.damage_resistances;
+
+  // filter empty keys, re-format object for display, and return
+  return Object.entries(resists)
+    .filter(([_, value]) => value.length > 0)
+    .reduce((acc, [key, value]) => {
+      acc[snakeToTitleCase(key)] = value;
+      return acc;
+    }, {});
 });
 
 const mode = ref(route.query.mode || 'normal');
