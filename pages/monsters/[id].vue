@@ -204,104 +204,23 @@
       </ul>
     </section>
 
-    <!-- ACTIONS -->
-    <section v-if="monster.actions.length !== 0">
-      <h2>Actions</h2>
-      <ul id="actions-list">
-        <li v-for="action in monster.actions" :key="action.name" class="my-1">
-          <span class="font-bold after:content-['._']">
-            <span>{{ action.name }}</span>
-            <span
-              v-if="action.uses_type === 'RECHARGE_ON_ROLL'"
-              class="cursor-pointer font-bold text-blood before:text-black before:content-['_('] after:text-black after:content-[')'] hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
-              @click="useDiceRoller('1d6+0')"
-            >
-              {{ `Recharge ${action.uses_param}-6` }}
-            </span>
+    <!-- CREATURE ACTIONS -->
+    <section
+      v-for="(actionsByType, actionType) in actions"
+      :key="actionsByType"
+    >
+      <h2>{{ snakeToTitleCase(actionType) }}</h2>
+      <ul>
+        <li v-for="action in actionsByType" :key="action.name" class="my-1">
+          <span class="font-bold after:content-['_']">{{ action.name }}</span>
+          <span
+            v-if="action.uses_type === 'RECHARGE_ON_ROLL'"
+            class="cursor-pointer font-bold text-blood before:text-black before:content-['_('] after:text-black after:content-[')_'] hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
+            @click="useDiceRoller('1d6+0')"
+          >
+            {{ `Recharge ${action.uses_param}-6` }}
           </span>
-          <md-viewer :inline="true" :text="action.desc" :use-roller="true" />
-        </li>
-      </ul>
-    </section>
-
-    <!-- BONUS ACTIONS -->
-    <section v-if="monster.bonus_actions">
-      <h2>Actions</h2>
-      <ul>
-        <li
-          v-for="action in monster.bonus_actions"
-          :key="action.name"
-          class="after:content-[': '] my-1"
-        >
-          <span class="font-bold">{{ action.name }}. </span>
-          <md-viewer inline="true" :text="action.desc" />
-        </li>
-      </ul>
-    </section>
-
-    <!-- REACTIONS -->
-    <section v-if="monster.reactions">
-      <h2>Reactions</h2>
-      <ul>
-        <li
-          v-for="action in monster.reactions"
-          :key="action.name"
-          class="after:content-[': '] my-1"
-        >
-          <span class="font-bold">{{ action.name }}. </span>
-          <md-viewer inline="true" :text="action.desc" />
-        </li>
-      </ul>
-    </section>
-
-    <!-- LEGENDARY ACTIONS -->
-    <section v-if="monster.legendary_actions">
-      <h2>Legendary Actions</h2>
-      <p v-if="monster.legendary_desc" class="text">
-        {{ monster.legendary_desc }}
-      </p>
-
-      <ul>
-        <li
-          v-for="action in monster.legendary_actions"
-          :key="action.name"
-          class="after:content-[': '] my-1"
-        >
-          <span class="font-bold">{{ action.name }}. </span>
-          <md-viewer inline="true" :text="action.desc" />
-        </li>
-      </ul>
-    </section>
-
-    <!-- MYTHIC ACTIONS -->
-    <section v-if="monster.mythic_actions">
-      <h2>Mythic Actions</h2>
-      <ul>
-        <li
-          v-for="action in monster.mythic_actions"
-          :key="action.name"
-          class="after:content-[': '] my-1"
-        >
-          <span class="font-bold">{{ action.name }}. </span>
-          <md-viewer inline="true" :text="action.desc" />
-        </li>
-      </ul>
-    </section>
-
-    <!-- LAIR ACTIONS -->
-    <section v-if="monster.lair_actions">
-      <h2>Lair Actions</h2>
-      <p v-if="monster.lair_desc" class="text">
-        {{ monster.lair_desc }}
-      </p>
-      <ul>
-        <li
-          v-for="action in monster.lair_actions"
-          :key="action.name"
-          class="after:content-[': '] my-1"
-        >
-          <span class="font-bold">{{ action.name }}. </span>
-          <md-viewer inline="true" :text="action.desc" />
+          <md-viewer inline="true" :text="action.desc" :use-roller="true" />
         </li>
       </ul>
     </section>
@@ -359,6 +278,21 @@ const { data: monster } = useFindOne(
   useRoute().params.id,
   { params }
 );
+
+// Sort monster actions by type (ie. 'action', 'bonus action', 'reaction').
+// rtrns an object whose keys are action types & vals are arrays of actions.
+const actions = computed(() => {
+  if (!monster?.value?.actions) return {};
+  return monster.value.actions.reduce(
+    (output, action) => {
+      const { action_type: actionType } = action;
+      if (output[actionType]) output[actionType].push(action);
+      else output[actionType] = [action];
+      return output;
+    },
+    { ACTION: [] }
+  );
+});
 
 // Converts SNAKE_CASE to Title Case, used for action type headers
 const snakeToTitleCase = (input) =>
@@ -447,12 +381,7 @@ function toggleMode() {
 
   navigateTo({
     path: `/monsters/${route.params.id}`,
-    query:
-      mode.value === 'compact'
-        ? {
-            mode: 'compact',
-          }
-        : null,
+    query: mode.value === 'compact' ? { mode: 'compact' } : null,
   });
 }
 </script>
