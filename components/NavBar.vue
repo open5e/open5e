@@ -14,7 +14,6 @@
 
 <template>
   <ul class="text-inherit text-white">
-    <TestComponent />
     <!-- Render top-level links -->
     <li v-for="section in routes" :key="section.title">
       <nav-link :to="section.url">
