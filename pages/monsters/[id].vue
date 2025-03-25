@@ -115,7 +115,7 @@
         <li
           v-for="(save, name) in monster.saving_throws"
           :key="name"
-          class="inline cursor-pointer font-bold text-blood after:content-[',_'] last:after:content-[] hover:text-black dark:hover:text-fog"
+          class="inline cursor-pointer font-bold text-blood after:text-black after:content-[',_'] last:after:content-[] hover:text-black dark:after:text-white dark:hover:text-fog"
           @click="useDiceRoller(save.toString())"
         >
           {{ `${name.toUpperCase().slice(0, 3)} ${useFormatModifier(save)}` }}
@@ -130,7 +130,7 @@
         <li
           v-for="(modifier, skill) in monster.skill_bonuses"
           :key="skill"
-          class="inline cursor-pointer font-bold capitalize text-blood after:content-[',_'] last:after:content-[] hover:text-black dark:hover:text-fog"
+          class="inline cursor-pointer font-bold capitalize text-blood after:text-black after:content-[',_'] last:after:content-[] hover:text-black dark:after:text-white dark:hover:text-fog"
           @click="useDiceRoller(modifier.toString())"
         >
           {{ `${skill} ${useFormatModifier(modifier)}` }}
