@@ -1,13 +1,15 @@
 <template>
-  <div class="overflow-hidden text-darkness">
+  <div
+    class="grid justify-center overflow-hidden bg-fog bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
+  >
     <sources-modal :show="showModal" @close="showModal = false" />
     <div
-      class="grid h-screen w-screen grid-flow-col bg-white transition-all dark:bg-darkness sm:ml-0 sm:grid-cols-[14rem_1fr] sm:overflow-y-auto sm:transition-none"
-      :class="showSidebar ? 'ml-0' : '-ml-56'"
+      class="bg-dark m-auto grid h-full min-h-screen max-w-[1280px] grid-flow-col transition-all sm:ml-0 sm:w-screen sm:grid-cols-[14rem_1fr] sm:overflow-y-auto sm:transition-none"
+      :class="showSidebar ? 'ml-56' : '-ml-56'"
     >
       <!-- Sidebar -->
       <div
-        class="z-50 flex w-56 flex-col overflow-y-auto bg-slate-700 text-white dark:bg-slate-900"
+        class="z-50 flex h-full w-56 flex-col overflow-y-auto bg-slate-700 text-white dark:bg-charcoal"
       >
         <!-- Logo -->
         <nuxt-link
