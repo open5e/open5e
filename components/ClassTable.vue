@@ -13,6 +13,9 @@
  * @prop {Object} proficiencyBonus - Maps char. level (key) to prof. bonus (value)
  * @prop {Array} spellSlots - Spell slot information per spell level
  * @prop {Array} classResourceTableColumns - Extra columns for class-specific resources
+ *
+ *  -= DEPENDENCIES =-
+ *  @function titleCaseToKebabCase – "Title Case" -> "kebab-case". Used to generate hash-links
  */
 </script>
 
@@ -50,11 +53,19 @@
       <td v-if="classFeatures && !classFeatures[level]">–</td>
       <td v-else>
         <span
-          v-for="feature in classFeatures?.[level]"
-          :key="feature.key"
-          class="after:content-[',_'] last:after:content-['']"
+          v-for="(feature, index) in classFeatures?.[level]"
+          :key="feature.name"
         >
-          {{ feature.name + (feature.detail ? ` (${feature.detail})` : '') }}
+          <NuxtLink
+            :key="feature.key"
+            :to="'#' + titleCaseToKebabCase(feature.name)"
+          >
+            {{ feature.name + (feature.detail ? ` (${feature.detail})` : '') }}
+          </NuxtLink>
+          <!-- insert commas between features -->
+          <span v-if="index !== classFeatures[level].length - 1">
+            {{ ', ' }}
+          </span>
         </span>
       </td>
 
@@ -71,6 +82,7 @@
 </template>
 
 <script setup>
+import { titleCaseToKebabCase } from '~/functions/titleCaseToKebabCase';
 const props = defineProps({
   classFeatures: { type: Object, default: () => {} },
   proficiencyBonus: { type: Object, default: () => {} },
