@@ -25,7 +25,7 @@
   <th
     :aria-sort="isSortDescending"
     class="align-baseline"
-    :class="{ 'hidden sm:block': isLeastPriority }"
+    :class="{ 'hidden sm:table-cell': isLeastPriority }"
   >
     <button v-if="sortBy" @click="onClick">
       <span>
