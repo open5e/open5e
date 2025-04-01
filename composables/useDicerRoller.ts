@@ -1,7 +1,9 @@
 import { useNotifications } from './useNotifications';
 const { addNotif } = useNotifications();
 
-export function useDiceRoller(signature: string) {
+export function useDiceRoller(input: string | number) {
+  const signature = typeof input === 'string' ? input : input.toString();
+
   // extract numerical data from dice signature
   const parsed = parseDice(signature);
   // make sure parseDice rtn'd data before deconstructing arr.

@@ -43,10 +43,10 @@
       <source-tag :title="monster.document.name" :text="monster.document.key" />
     </p>
 
-    <ul>
-      <!-- Size / Type / Alignment / Source Tag -->
-      <li>
-        <span class="font-bold after:content-['_']">Armor Class</span>
+    <dl class="grid grid-cols-[10rem_1fr]">
+      <!-- ARMOR CLASS -->
+      <dt class="font-bold after:content-['_']">Armor Class</dt>
+      <dd>
         <span>{{ monster.armor_class }}</span>
         <span
           v-if="monster.armor_desc"
@@ -54,9 +54,22 @@
         >
           {{ monster.armor_desc }}
         </span>
-      </li>
-      <li>
-        <span class="font-bold after:content-['_']">Hit Points</span>
+      </dd>
+
+      <!-- INITIATIVE BONUS -->
+      <dt class="font-bold after:content-['_']">Initiative Bonus</dt>
+      <dd
+        class="w-min cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
+        @click="useDiceRoller(monster.initiative_bonus)"
+      >
+        {{
+          (monster.initiative_bonus > 0 ? '+' : '') + monster.initiative_bonus
+        }}
+      </dd>
+
+      <!-- HIT POINTS -->
+      <dt class="font-bold after:content-['_']">Hit Points</dt>
+      <dd>
         <span class="after:content-['_']">{{ monster.hit_points }}</span>
         <span
           v-if="monster.hit_dice"
@@ -65,25 +78,20 @@
         >
           {{ `(${monster.hit_dice})` }}
         </span>
-      </li>
+      </dd>
 
-      <!-- SPEED -->
-      <li>
-        <span class="font-bold after:content-['_']">Speed</span>
+      <!-- SPEEDS -->
+      <dt class="font-bold after:content-['_']">Speed</dt>
+      <dd>
         <span
-          v-for="(speed, key) in speeds"
-          :key="key"
+          v-for="speed in speeds"
+          :key="speed"
           class="after:content-[',_'] last:after:content-[]"
         >
-          <span v-if="key !== 'walk'" class="after:content-['_']">
-            {{ key }}
-          </span>
-          <span class="after:content-['_ft.']">
-            {{ speed }}
-          </span>
+          {{ speed }}
         </span>
-      </li>
-    </ul>
+      </dd>
+    </dl>
 
     <hr />
 
@@ -302,11 +310,14 @@ const snakeToTitleCase = (input) =>
     .map((word) => word[0].toUpperCase() + word.substring(1))
     .join(' ');
 
-// filter "unit" prop from "speeds"
+// Format monster speeds for template
 const speeds = computed(() => {
   if (!monster?.value?.speed) return {};
-  const { unit, ...rest } = monster.value.speed;
-  return rest;
+  const { unit, ...speeds } = monster.value.speed;
+  return Object.entries(speeds).map(
+    ([speed, distance]) =>
+      (speed === 'walk' ? '' : speed + ' ') + `${distance} ft.`
+  );
 });
 
 // assemble senses from multiple fields
