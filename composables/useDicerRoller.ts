@@ -1,13 +1,17 @@
 import { useNotifications } from './useNotifications';
 const { addNotif } = useNotifications();
 
-export function useDiceRoller(signature: string) {
+export function useDiceRoller(signature: string | number) {
+  // convert numbers passed to dice roller to strings
+  const asString =
+    typeof signature === 'number' ? signature.toString() : signature;
+
   // extract numerical data from dice signature
-  const parsed = parseDice(signature);
+  const parsed = parseDice(asString);
+
   // make sure parseDice rtn'd data before deconstructing arr.
-  if (!parsed) {
-    return;
-  }
+  if (!parsed) return;
+
   const [number, dice, modifier] = parsed;
 
   // roll the dice

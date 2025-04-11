@@ -2,12 +2,14 @@
  * modifier or an ability score. */
 
 export const useFormatModifier = (
-  input: string | number,
+  input: string | number | undefined,
   options?: {
     inputType?: 'modifier' | 'score';
     showZero?: boolean;
   }
 ) => {
+  if (input === undefined) return '-';
+
   // set options defaults
   const type = options?.inputType ?? 'modifer';
   const showZero = options?.showZero ?? true;

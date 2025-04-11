@@ -42,6 +42,7 @@ module.exports = {
         granite: '#888',
         // gray: '#767676', // this conflicts with an existing tailwind class
         basalt: '#333',
+        charcoal: '#222',
         darkness: '#111',
       },
 

@@ -6,16 +6,18 @@ module.exports = {
   },
   parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: 'espree',
+    parser: '@typescript-eslint/parser',
     ecmaVersion: 2022,
     sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
+
   extends: [
     // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
     'plugin:vue/vue3-strongly-recommended',
-    'plugin:vue/strongly-recommended',
     'plugin:vue/vue3-recommended',
-    'plugin:vue/recommended',
     'prettier',
   ],
   // required to lint *.vue files
