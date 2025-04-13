@@ -99,6 +99,48 @@
 
     <hr />
 
+    <!-- FEATURES UNDER ABILITIES -->
+    <section>
+      <dl>
+        <!-- SAVING THROWS -->
+        <div v-if="savingThrows.length > 0">
+          <dt class="inline font-bold">{{ 'Saving Throws' + ' ' }}</dt>
+          <dl class="inline">
+            <span
+              v-for="save in savingThrows"
+              :key="save.label"
+              class="cursor-pointer font-bold text-blood after:content-[',_'] last:after:content-[''] hover:text-black dark:hover:text-white"
+              @click="useDiceRoller(save.value.toString())"
+            >
+              {{ save.label + ' ' + (save.value >= 0 ? '+' : '') + save.value }}
+            </span>
+          </dl>
+        </div>
+
+        <!-- SKILLS -->
+        <div v-if="Object.keys(monster.skills).length > 0">
+          <dt class="inline font-bold">{{ 'Skills' + ' ' }}</dt>
+          <dl class="inline capitalize">
+            <span
+              v-for="(mod, skill) in monster.skills"
+              :key="skill"
+              class="cursor-pointer font-bold text-blood after:content-[',_'] last:after:content-[''] hover:text-black dark:hover:text-white"
+              @click="useDiceRoller(mod.toString())"
+            >
+              {{ skill + ' ' + (mod >= 0 ? '+' : '') + mod }}
+            </span>
+          </dl>
+        </div>
+
+        <!-- LANGUAGES, SENSES, RESISTANCES, ETC. -->
+        <div v-for="field in monsterFeatures" :key="field.title">
+          <dt class="inline font-bold">{{ field.title + ' ' }}</dt>
+          <dd class="inline">{{ field.data }}</dd>
+        </div>
+      </dl>
+      <hr />
+    </section>
+
     <!-- Monster Special Abilities -->
     <section v-if="monster.special_abilities">
       <p
@@ -232,6 +274,54 @@
 <script setup>
 const route = useRoute();
 const { data: monster } = useMonster(route.params.id);
+
+const savingThrows = computed(() => {
+  if (!monster) {
+    return [];
+  }
+  const saves = [
+    { label: 'Str', value: monster.value.strength_save },
+    { label: 'Dex', value: monster.value.dexterity_save },
+    { label: 'Con', value: monster.value.constitution_save },
+    { label: 'Int', value: monster.value.intelligence_save },
+    { label: 'Wis', value: monster.value.wisdom_save },
+    { label: 'Cha', value: monster.value.charisma_save },
+  ].filter((save) => save.value);
+  return saves;
+});
+
+const monsterFeatures = computed(() => {
+  if (!monster) {
+    return [];
+  }
+  const features = [
+    {
+      title: 'Damage Vulnerabilities',
+      data: monster.value.damage_vulnerabilities,
+    },
+    {
+      title: 'Damage Resistances',
+      data: monster.value.damage_resistances,
+    },
+    {
+      title: 'Damage Immunities',
+      data: monster.value.damage_immunities,
+    },
+    {
+      title: 'Condition Immunities',
+      data: monster.value.condition_immunities,
+    },
+    {
+      title: 'Senses',
+      data: monster.value.senses,
+    },
+    {
+      title: 'Languages',
+      data: monster.value.languages,
+    },
+  ].filter((feature) => feature.data);
+  return features;
+});
 
 const mode = ref(route.query.mode || 'normal');
 function toggleMode() {
