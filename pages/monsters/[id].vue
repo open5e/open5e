@@ -95,41 +95,13 @@
 
     <hr />
 
-    <!-- ABILITY SCORES -->
-    <ul class="flex max-w-96 items-center gap-4 text-center">
-      <li v-for="(score, ability) in monster.ability_scores" :key="ability">
-        <label class="block font-bold uppercase">
-          {{ ability.substring(0, 3) }}
-        </label>
-        <span class="after:content-['_']">{{ score }}</span>
-        <span
-          class="cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
-          @click="useDiceRoller(monster.modifiers[ability].toString())"
-        >
-          {{ `(${useFormatModifier(monster.modifiers[ability])})` }}
-        </span>
-      </li>
-    </ul>
+    <!-- MONSTER ABILITY SCORES & SAVING THROWS TABLE -->
+    <MonsterAbilities :monster="monster" />
 
     <hr />
 
     <!-- BOX UNDER STATS -->
-    <section>
-      <!-- SAVING THROWS -->
-      <ul v-if="Object.keys(monster.saving_throws).length > 0" id="saves">
-        <label for="saves" class="inline font-bold after:content-['_']">
-          Saving Throws
-        </label>
-        <li
-          v-for="(save, name) in monster.saving_throws"
-          :key="name"
-          class="inline cursor-pointer font-bold text-blood after:text-black after:content-[',_'] last:after:content-[] hover:text-black dark:after:text-white dark:hover:text-fog"
-          @click="useDiceRoller(save.toString())"
-        >
-          {{ `${name.toUpperCase().slice(0, 3)} ${useFormatModifier(save)}` }}
-        </li>
-      </ul>
-
+    <section class="my-4">
       <!-- SKILLS -->
       <ul v-if="Object.keys(monster.skill_bonuses).length > 0" id="skills">
         <label for="skills" class="inline font-bold after:content-['_']">

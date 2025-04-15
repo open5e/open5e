@@ -2,14 +2,15 @@ import { useNotifications } from './useNotifications';
 const { addNotif } = useNotifications();
 
 export function useDiceRoller(input: string | number) {
+  // make sure dice signature is a string
   const signature = typeof input === 'string' ? input : input.toString();
 
   // extract numerical data from dice signature
   const parsed = parseDice(signature);
+
   // make sure parseDice rtn'd data before deconstructing arr.
-  if (!parsed) {
-    return;
-  }
+  if (!parsed) return;
+
   const [number, dice, modifier] = parsed;
 
   // roll the dice
