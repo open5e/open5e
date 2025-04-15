@@ -5,6 +5,7 @@ type Breadcrumb = {
   url: string;
   title: string;
   subtitle: string;
+  src: string;
 };
 
 export const useBreadcrumbs = () => {
@@ -16,9 +17,8 @@ export const useBreadcrumbs = () => {
         .split('/')
         .map((pathSegment) => {
           // ignore initial & trailing slashes
-          if (pathSegment === '' || pathSegment === '/') {
-            return;
-          }
+          if (pathSegment === '' || pathSegment === '/') return;
+
           // rebuild link urls segment by segment
           url += `/${pathSegment}`;
 
@@ -26,6 +26,7 @@ export const useBreadcrumbs = () => {
           return {
             ...generateTitles(pathSegment),
             url,
+            src: pathSegment,
           } as Breadcrumb;
         })
 
@@ -56,7 +57,8 @@ const generateTitles = (crumb: string) => {
 
 const formatTitle = (title: string) => {
   return title
-    .split('-')
+    .split('-') // from kebab-case to Title Case
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
+    .join(' ')
+    .split('#')[0]; // remove hash-links from title
 };
