@@ -94,22 +94,6 @@ table {
     );
     border: 0;
   }
-  p,
-  ul,
-  dt,
-  hr,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  section {
-    max-width: 40rem;
-  }
-  th:first-child {
-    min-width: 4rem;
-  }
 }
 
 h2.filter-header {
@@ -122,5 +106,4 @@ blockquote {
   border-left: 0.75rem solid #999;
   padding: 0.1rem 1rem 1rem 1rem;
   margin-top: 1rem;
-  max-width: 40rem;
 }
