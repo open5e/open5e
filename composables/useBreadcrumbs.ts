@@ -5,6 +5,7 @@ type Breadcrumb = {
   url: string;
   title: string;
   subtitle: string;
+  src: string;
 };
 
 export const useBreadcrumbs = () => {
@@ -26,6 +27,7 @@ export const useBreadcrumbs = () => {
           return {
             ...generateTitles(pathSegment),
             url,
+            src: pathSegment,
           } as Breadcrumb;
         })
 
