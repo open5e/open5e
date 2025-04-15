@@ -60,7 +60,11 @@
     <!-- Class Abilities -->
     <section>
       <ul v-if="featuresInOrder.length > 0">
-        <li v-for="feature in featuresInOrder" :key="feature.key">
+        <li
+          v-for="feature in featuresInOrder"
+          :id="titleCaseToKebabCase(feature.name)"
+          :key="feature.key"
+        >
           <h3>{{ feature.name }}</h3>
           <md-viewer :text="feature.desc" header-level="3" />
         </li>
@@ -72,6 +76,7 @@
 </template>
 
 <script setup>
+import { titleCaseToKebabCase } from '~/functions/titleCaseToKebabCase';
 const { data: classData } = useFindOne(
   API_ENDPOINTS.classes,
   useRoute().params.className,
