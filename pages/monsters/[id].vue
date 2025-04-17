@@ -260,7 +260,7 @@ const { data: monster } = useFindOne(
   { params }
 );
 
-// Calculate initiative bonus from dexterity modifier if not explicitly set
+// Calculate initiative bonus from dexterity modifier if not explicitly set 
 const initiativeBonus = computed(() => {
   if (!monster.value) return 0;
   return monster.value.initiative_bonus ?? monster.value.modifiers?.dexterity;
