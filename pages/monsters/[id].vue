@@ -62,7 +62,7 @@
         class="w-min cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
         @click="useDiceRoller(initiativeBonus)"
       >
-        {{ initiativeBonus }}
+        {{ useFormatModifier(initiativeBonus) }}
       </dd>
 
       <!-- HIT POINTS -->
@@ -260,13 +260,13 @@ const { data: monster } = useFindOne(
   { params }
 );
 
-// Calculate initiative bonus from dexterity modifier if not explicitly set 
+// Calculate initiative bonus from dexterity modifier if not explicitly set
 const initiativeBonus = computed(() => {
   if (!monster.value) return 0;
   return monster.value.initiative_bonus ?? monster.value.modifiers?.dexterity;
 });
 
-// Sort monster actions by type (ie. 'action', 'bonus action', 'reaction'). 
+// Sort monster actions by type (ie. 'action', 'bonus action', 'reaction').
 // rtrns an object whose keys are action types & vals are arrays of actions.
 const actions = computed(() => {
   if (!monster?.value?.actions) return {};
