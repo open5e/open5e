@@ -266,7 +266,7 @@ const initiativeBonus = computed(() => {
   return monster.value.initiative_bonus ?? monster.value.modifiers?.dexterity;
 });
 
-// Sort monster actions by type (ie. 'action', 'bonus action', 'reaction').
+// Sort monster actions by type (ie. 'action', 'bonus action', 'reaction'). 
 // rtrns an object whose keys are action types & vals are arrays of actions.
 const actions = computed(() => {
   if (!monster?.value?.actions) return {};
