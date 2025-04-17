@@ -60,9 +60,9 @@
       <dt class="font-bold after:content-['_']">Initiative Bonus</dt>
       <dd
         class="w-min cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
-        @click="useDiceRoller(initiative)"
+        @click="useDiceRoller(monster.initiative_bonus)"
       >
-        {{ initiative }}
+        {{ monster.initiative_bonus }}
       </dd>
 
       <!-- HIT POINTS -->
@@ -254,11 +254,7 @@ const params = {
   languages__fields: 'name',
   document__fields: 'name,key,permalink',
 };
-const { data: monster } = useFindOne(
-  API_ENDPOINTS.monsters,
-  useRoute().params.id,
-  { params }
-);
+const { data: monster } = useMonster(useRoute().params.id);
 
 // Sort monster actions by type (ie. 'action', 'bonus action', 'reaction').
 // rtrns an object whose keys are action types & vals are arrays of actions.
@@ -282,11 +278,6 @@ const snakeToTitleCase = (input) =>
     .split('_')
     .map((word) => word[0].toUpperCase() + word.substring(1))
     .join(' ');
-
-const initiative = computed(() => {
-  if (monster.value?.initiative_bonus) return monster.value.initiative_bonus;
-  else return monster.value?.modifiers?.dexterity;
-});
 
 // Format monster speeds for template
 const speeds = computed(() => {

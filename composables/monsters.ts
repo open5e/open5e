@@ -28,6 +28,11 @@ export const useMonster = (slug: string) => {
         modifier: useFormatModifier(monster[ability], { inputType: 'score' }),
         save: monster[`${ability}_save`],
       }));
+
+      // Add synthetic initiative bonus property
+      monster.initiative_bonus =
+        monster.initiative_bonus ?? monster.modifiers?.dexterity;
+
       return monster as Record<string, string>;
     },
   });
