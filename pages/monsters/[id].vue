@@ -60,11 +60,9 @@
       <dt class="font-bold after:content-['_']">Initiative Bonus</dt>
       <dd
         class="w-min cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
-        @click="useDiceRoller(monster.initiative_bonus)"
+        @click="useDiceRoller(initiative)"
       >
-        {{
-          (monster.initiative_bonus > 0 ? '+' : '') + monster.initiative_bonus
-        }}
+        {{ initiative }}
       </dd>
 
       <!-- HIT POINTS -->
@@ -284,6 +282,11 @@ const snakeToTitleCase = (input) =>
     .split('_')
     .map((word) => word[0].toUpperCase() + word.substring(1))
     .join(' ');
+
+const initiative = computed(() => {
+  if (monster.value?.initiative_bonus) return monster.value.initiative_bonus;
+  else return monster.value?.modifiers?.dexterity;
+});
 
 // Format monster speeds for template
 const speeds = computed(() => {
