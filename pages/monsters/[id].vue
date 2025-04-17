@@ -6,17 +6,11 @@
 
       <div class="flex flex-none items-start">
         <button
-          class="flex items-center gap-1 rounded-md p-1 text-xs text-blood outline outline-1 outline-blood hover:bg-blood hover:text-white"
-          @click="toggleMode()"
+          class="flex items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80"
+          @click="addToEncounter"
         >
-          <icon
-            :name="
-              mode === 'compact'
-                ? 'heroicons:arrows-pointing-out'
-                : 'heroicons:arrows-pointing-in'
-            "
-          />
-          {{ mode === 'compact' ? 'Regular statblock' : 'Compact statblock' }}
+          <Icon name="heroicons:plus-circle" />
+          Add to Encounter
         </button>
       </div>
     </div>
@@ -249,7 +243,9 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { useEncounterStore } from '~/composables/useEncounter';
+
 const route = useRoute();
 const params = {
   environments__fields: 'name',
@@ -370,6 +366,19 @@ function toggleMode() {
     query: mode.value === 'compact' ? { mode: 'compact' } : null,
   });
 }
+
+const encounterStore = useEncounterStore();
+
+const addToEncounter = () => {
+  if (!monster.value) return;
+  encounterStore.addMonster({
+    id: monster.value.key,
+    name: monster.value.name,
+    challenge_rating: monster.value.challenge_rating_decimal,
+    experience_points: monster.value.experience_points,
+    count: 1,
+  });
+};
 </script>
 
 <style scoped lang="scss">

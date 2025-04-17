@@ -87,6 +87,22 @@
           sortValue: 'size',
           isLeastPriority: true,
         },
+        {
+          displayName: '',
+          value: () => '',
+          customTemplate: (data) => ({
+            render: () =>
+              h(
+                'button',
+                {
+                  class:
+                    'px-2 py-0.5 text-sm font-medium text-white bg-blood rounded hover:bg-blood/80',
+                  onClick: () => addToEncounter(data),
+                },
+                '+'
+              ),
+          }),
+        },
       ]"
       :sort-by="sortBy"
       :is-sort-descending="isSortDescending"
@@ -96,6 +112,9 @@
 </template>
 
 <script setup lang="ts">
+import { h } from 'vue';
+import { useEncounterStore } from '~/composables/useEncounter';
+
 // Set up filters
 const filterState = useFilterState<MonsterFilter>({
   key: 'monsters',
@@ -107,11 +126,13 @@ const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fields to fetch from API to populate table
 const fields = [
+  'id',
   'key',
   'name',
   'document',
   'challenge_rating_text',
   'challenge_rating_decimal',
+  'experience_points',
   'document',
   'type',
   'size',
@@ -143,4 +164,19 @@ const {
   prevPage,
   nextPage,
 } = paginator;
+
+const encounterStore = useEncounterStore();
+
+const addToEncounter = (monster: any) => {
+  encounterStore.addMonster({
+    id: monster.key,
+    name: monster.name,
+    challenge_rating: monster.challenge_rating_decimal,
+    experience_points: monster.experience_points,
+    count: 1,
+  });
+};
+
+// For debugging
+console.log('Sample monster data:', data?.results?.[0]);
 </script>

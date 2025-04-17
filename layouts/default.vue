@@ -100,18 +100,24 @@
 
         <page-notifications />
 
-        <!-- Main page content -->
-        <nuxt-page
-          class="main-content pt-auto mx-0 w-full px-4 py-4 pb-0 text-darkness dark:text-white sm:px-8"
-        />
+        <!-- Main content -->
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_300px]">
+          <nuxt-page
+            class="main-content pt-auto mx-0 w-full px-4 py-4 pb-0 text-darkness dark:text-white sm:px-8"
+          />
+          <div class="hidden border-l p-4 dark:border-gray-700 lg:block">
+            <EncounterBuilder />
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useRoute } from 'nuxt/app';
 import { computed } from 'vue';
+import EncounterBuilder from '~/components/EncounterBuilder.vue';
 
 // Generate page title from Breadcrumbs
 const BASE_TITLE = 'Open5e';
