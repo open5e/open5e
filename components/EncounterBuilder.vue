@@ -1,7 +1,13 @@
 <template>
-  <div class="encounter-builder">
+  <div class="h-full overflow-y-auto">
     <div class="flex items-center justify-between">
-      <h2 class="mt-2 text-xl font-bold">Encounter Builder</h2>
+      <h2 class="text-lg font-bold">Encounter Builder</h2>
+      <button
+        class="flex h-8 w-8 items-center justify-center rounded-full bg-fog hover:bg-smoke dark:bg-basalt hover:dark:bg-granite"
+        @click="$emit('hide-encounter')"
+      >
+        <Icon name="heroicons:x-mark" />
+      </button>
     </div>
     <PartyBuilder />
 
@@ -74,20 +80,22 @@ import { usePartyStore } from '~/composables/useParty';
 import { useXPCalculator } from '~/composables/useXPCalculator';
 import PartyBuilder from '~/components/PartyBuilder.vue';
 
-const store = useEncounterStore();
-const partyStore = usePartyStore();
+const encounterStore = useEncounterStore();
+const { partyRows, totalPCs, averageLevel } = usePartyStore();
+const { calculateEncounterDifficulty, getDifficultyThresholds } =
+  useXPCalculator();
 const xpCalculator = useXPCalculator();
-const {
-  monsters,
-  totalMonsters,
-  totalXP,
-  removeMonster,
-  clearEncounter,
-  incrementMonster,
-} = store;
-const { partyRows } = partyStore;
 
 const isLoaded = ref(false);
+
+const monsters = ref(encounterStore.monsters);
+const totalMonsters = computed(() => monsters.value.length);
+const totalXP = computed(() => {
+  return monsters.value.reduce(
+    (sum, monster) => sum + monster.experience_points * monster.count,
+    0
+  );
+});
 
 // Load monster data for existing encounters
 onMounted(async () => {
@@ -101,14 +109,25 @@ onMounted(async () => {
 });
 
 const encounterDifficulty = computed(() => {
-  if (partyRows.value.length === 0) return 'N/A';
-
-  const adjustedXP =
-    totalXP.value * xpCalculator.getMultiplier(monsters.length);
-  return xpCalculator.calculateEncounterDifficulty(
-    adjustedXP,
-    partyStore.partyXPBudget.value
-  );
+  if (!partyRows.value.length) return null;
+  return calculateEncounterDifficulty(totalXP.value, {
+    easy: 0,
+    medium: 0,
+    hard: 0,
+    deadly: 0,
+    ...partyRows.value.reduce(
+      (budget, row) => {
+        if (!row.count || !row.level) return budget;
+        const thresholds = getDifficultyThresholds(row.level);
+        budget.easy += thresholds.easy * row.count;
+        budget.medium += thresholds.medium * row.count;
+        budget.hard += thresholds.hard * row.count;
+        budget.deadly += thresholds.deadly * row.count;
+        return budget;
+      },
+      { easy: 0, medium: 0, hard: 0, deadly: 0 }
+    ),
+  });
 });
 
 const difficultyClass = computed(() => {
@@ -127,4 +146,16 @@ const difficultyClass = computed(() => {
       return '';
   }
 });
+
+const removeMonster = (id: string) => {
+  encounterStore.removeMonster(id);
+};
+
+const clearEncounter = () => {
+  encounterStore.clearEncounter();
+};
+
+const incrementMonster = (id: string) => {
+  encounterStore.incrementMonster(id);
+};
 </script>
