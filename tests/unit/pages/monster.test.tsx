@@ -5,6 +5,7 @@ import {
   mountSuspended,
 } from '@nuxt/test-utils/runtime';
 import MonsterPage from '~/pages/monsters/[id].vue';
+import { ref } from 'vue';
 
 const page = await mountSuspended(MonsterPage);
 
@@ -18,15 +19,15 @@ test('/monsters/[id] page can mount', async () => {
 test('/monsters/[id] page renders title', async () => {
   const title = page.find('h1');
   expect(title.exists()).toBe(true);
-  expect(title.text()).toEqual(monster.name);
+  expect(title.text()).toEqual(monster.value.name);
 });
 
 test('/monsters/[id] page renders correct number of actions', async () => {
   const actions = page.find('#actions-list');
-  if (!monster.actions || monster.actions.length === 0) {
+  if (!monster.value.actions || monster.value.actions.length === 0) {
     expect(actions.exists()).toBe(false);
   } else {
-    expect(actions.findAll('li').length).toEqual(monster.actions.length);
+    expect(actions.findAll('li').length).toEqual(monster.value.actions.length);
   }
 });
 
@@ -45,7 +46,7 @@ mockNuxtImport('useRoute', () => {
 // mock API result from /monster/[id] endpoint
 mockNuxtImport('useMonster', () => {
   return () => ({
-    data: {
+    data: ref({
       slug: 'aboleth',
       desc: '',
       name: 'Aboleth',
@@ -151,6 +152,6 @@ mockNuxtImport('useMonster', () => {
       document__license_url: 'http://open5e.com/legal',
       document__url:
         'http://dnd.wizards.com/articles/features/systems-reference-document-srd',
-    },
+    }),
   });
 });
