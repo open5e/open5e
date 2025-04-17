@@ -115,7 +115,7 @@
         </li>
       </ul>
 
-      <!-- RESISTANCES, VULNERABILITY, AND IMMUNITIES -->
+      <!-- RESISTANCES, VULNERABILITY AND IMMUNITIES -->
       <ul v-for="(data, title) in resistancesAndVulnerabilities" :key="title">
         <label class="inline font-bold after:content-['_']">{{ title }}</label>
         <li
