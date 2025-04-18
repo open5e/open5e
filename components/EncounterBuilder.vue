@@ -1,7 +1,9 @@
 <template>
   <div class="h-full overflow-y-auto">
     <div class="flex items-center justify-between">
-      <h2 class="text-lg font-bold">Encounter Builder</h2>
+      <h2 class="text-lg font-bold">
+        <Icon name="heroicons:sword-shield" /> Encounter Builder
+      </h2>
       <button
         class="flex h-8 w-8 items-center justify-center rounded-full bg-fog hover:bg-smoke dark:bg-basalt hover:dark:bg-granite"
         @click="$emit('hide-encounter')"
@@ -67,22 +69,17 @@
           <thead>
             <tr>
               <th
-                v-for="(budget, difficulty) in partyXPBudget"
+                v-for="(budget, difficulty) in { trivial: 0, ...partyXPBudget }"
                 :key="difficulty"
                 class="py-1"
-                :class="{
-                  'bg-green-50 dark:bg-green-900':
-                    difficulty === 'easy' && encounterDifficulty === 'Easy',
-                  'bg-yellow-50 dark:bg-yellow-900':
-                    difficulty === 'medium' && encounterDifficulty === 'Medium',
-                  'bg-orange-50 dark:bg-orange-900':
-                    difficulty === 'hard' && encounterDifficulty === 'Hard',
-                  'bg-red-50 dark:bg-red-900':
-                    difficulty === 'deadly' && encounterDifficulty === 'Deadly',
-                  'font-bold':
-                    encounterDifficulty ===
-                    difficulty.charAt(0).toUpperCase() + difficulty.slice(1),
-                }"
+                :class="[
+                  difficultyColors(difficulty),
+                  {
+                    'font-bold':
+                      encounterDifficulty ===
+                      difficulty.charAt(0).toUpperCase() + difficulty.slice(1),
+                  },
+                ]"
               >
                 <div class="capitalize">{{ difficulty }}</div>
               </th>
@@ -91,24 +88,19 @@
           <tbody>
             <tr>
               <td
-                v-for="(budget, difficulty) in partyXPBudget"
+                v-for="(budget, difficulty) in { trivial: 0, ...partyXPBudget }"
                 :key="difficulty"
                 class="py-1"
-                :class="{
-                  'bg-green-50 dark:bg-green-900':
-                    difficulty === 'easy' && encounterDifficulty === 'Easy',
-                  'bg-yellow-50 dark:bg-yellow-900':
-                    difficulty === 'medium' && encounterDifficulty === 'Medium',
-                  'bg-orange-50 dark:bg-orange-900':
-                    difficulty === 'hard' && encounterDifficulty === 'Hard',
-                  'bg-red-50 dark:bg-red-900':
-                    difficulty === 'deadly' && encounterDifficulty === 'Deadly',
-                  'font-bold':
-                    encounterDifficulty ===
-                    difficulty.charAt(0).toUpperCase() + difficulty.slice(1),
-                }"
+                :class="[
+                  difficultyColors(difficulty),
+                  {
+                    'font-bold':
+                      encounterDifficulty ===
+                      difficulty.charAt(0).toUpperCase() + difficulty.slice(1),
+                  },
+                ]"
               >
-                {{ budget.toLocaleString() }}
+                {{ formatXPBudget(budget, difficulty) }}
               </td>
             </tr>
           </tbody>
@@ -154,6 +146,30 @@ const formatChallengeRating = (cr: number) => {
   if (cr === 0.25) return '1/4';
   if (cr === 0.5) return '1/2';
   return cr.toString();
+};
+
+const difficultyColors = computed(() => {
+  const colors = {
+    trivial: 'bg-gray-100 dark:bg-gray-700',
+    easy: 'bg-green-100 dark:bg-green-900',
+    medium: 'bg-yellow-100 dark:bg-yellow-900',
+    hard: 'bg-orange-100 dark:bg-orange-900',
+    deadly: 'bg-red-100 dark:bg-red-900',
+  };
+
+  return (difficulty: string) => {
+    const isCurrent =
+      encounterDifficulty.value ===
+      difficulty.charAt(0).toUpperCase() + difficulty.slice(1);
+    return isCurrent ? colors[difficulty as keyof typeof colors] : '';
+  };
+});
+
+const formatXPBudget = (budget: number, difficulty: string) => {
+  if (difficulty === 'trivial') {
+    return `<${partyXPBudget.value.easy.toLocaleString()}`;
+  }
+  return budget.toLocaleString();
 };
 
 // Load monster data for existing encounters
