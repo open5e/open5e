@@ -91,16 +91,32 @@
           displayName: '',
           value: () => '',
           customTemplate: (data) => ({
-            render: () =>
-              h(
-                'button',
-                {
-                  class:
-                    'px-2 py-0.5 text-sm font-medium text-white bg-blood rounded hover:bg-blood/80',
-                  onClick: () => addToEncounter(data),
-                },
-                '+'
-              ),
+            render: () => {
+              const monsterInEncounter = encounterStore.monsters.value.find(
+                (m) => m.id === data.key
+              );
+              return h('div', { class: 'flex gap-2 justify-end' }, [
+                monsterInEncounter &&
+                  h(
+                    'button',
+                    {
+                      class:
+                        'p-1 text-sm font-medium text-white bg-blood rounded hover:bg-blood/80',
+                      onClick: () => removeFromEncounter(data),
+                    },
+                    h(MinusIcon, { class: 'w-4 h-4' })
+                  ),
+                h(
+                  'button',
+                  {
+                    class:
+                      'p-1 text-sm font-medium text-white bg-blood rounded hover:bg-blood/80',
+                    onClick: () => addToEncounter(data),
+                  },
+                  h(PlusIcon, { class: 'w-4 h-4' })
+                ),
+              ]);
+            },
           }),
         },
       ]"
@@ -115,6 +131,7 @@
 import { h } from 'vue';
 import { useEncounterStore } from '~/composables/useEncounter';
 import { computed } from 'vue';
+import { PlusIcon, MinusIcon } from '@heroicons/vue/24/solid';
 
 // Set up filters
 const filterState = useFilterState<MonsterFilter>({
@@ -175,6 +192,10 @@ const addToEncounter = (monster: any) => {
     monster.challenge_rating_decimal,
     monster.challenge_rating_text
   );
+};
+
+const removeFromEncounter = (monster: any) => {
+  encounterStore.removeMonster(monster.key);
 };
 
 const debouncedFilter = computed(() => filterState.debouncedFilter);

@@ -4,12 +4,19 @@
     <div class="flex items-end justify-between gap-8">
       <h1 class="flex-auto">{{ monster.name }}</h1>
 
-      <div class="flex flex-none items-start">
+      <div class="flex flex-none items-start gap-2">
         <button
-          class="flex items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80"
+          v-if="monsterInEncounter"
+          class="flex h-8 items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80"
+          @click="removeFromEncounter"
+        >
+          <Icon name="heroicons:minus" />
+        </button>
+        <button
+          class="flex h-8 items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80"
           @click="addToEncounter"
         >
-          <Icon name="heroicons:plus-circle" />
+          <Icon name="heroicons:plus" />
           Add to Encounter
         </button>
       </div>
@@ -375,13 +382,22 @@ const encounterStore = useEncounterStore();
 
 const addToEncounter = () => {
   if (!monster.value) return;
-  encounterStore.addMonster({
-    id: monster.value.key,
-    name: monster.value.name,
-    challenge_rating: monster.value.challenge_rating_decimal,
-    experience_points: monster.value.experience_points,
-    count: 1,
-  });
+  encounterStore.addMonster(
+    monster.value.key,
+    monster.value.name,
+    monster.value.challenge_rating_decimal,
+    monster.value.challenge_rating_text
+  );
+};
+
+const monsterInEncounter = computed(() => {
+  if (!monster.value) return false;
+  return encounterStore.monsters.value.find((m) => m.id === monster.value.key);
+});
+
+const removeFromEncounter = () => {
+  if (!monster.value) return;
+  encounterStore.removeMonster(monster.value.key);
 };
 </script>
 

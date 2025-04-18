@@ -38,24 +38,25 @@ export const useEncounterStore = () => {
 
   const difficultyColors: Record<DifficultyLevel, string> = {
     empty: 'bg-fog hover:bg-smoke dark:bg-basalt hover:dark:bg-granite',
-    trivial: 'bg-gray-100 dark:bg-gray-700',
-    easy: 'bg-green-100 hover:bg-green-200 dark:bg-green-900/50 hover:dark:bg-green-900',
+    trivial:
+      'bg-lime-100 hover:bg-lime-200 dark:bg-lime-800 hover:dark:bg-lime-900',
+    easy: 'bg-green-100 hover:bg-green-200 dark:bg-green-800 hover:dark:bg-green-900',
     medium:
-      'bg-yellow-100 hover:bg-yellow-200 dark:bg-yellow-900/50 hover:dark:bg-yellow-900',
-    hard: 'bg-orange-100 hover:bg-orange-200 dark:bg-orange-900/50 hover:dark:bg-orange-900',
-    deadly:
-      'bg-red-100 hover:bg-red-200 dark:bg-red-900/50 hover:dark:bg-red-900',
+      'bg-blue-100 hover:bg-blue-200 dark:bg-blue-800 hover:dark:bg-blue-900',
+    hard: 'bg-yellow-100 hover:bg-yellow-200 dark:bg-yellow-800 hover:dark:bg-yellow-900',
+    deadly: 'bg-red-100 hover:bg-red-200 dark:bg-red-700 hover:dark:bg-red-900',
   };
 
   const totalMonsters = computed(() =>
     monsters.value.reduce((sum, m) => sum + m.count, 0)
   );
 
-  const totalXP = computed(() =>
-    monsters.value.reduce(
-      (sum, m) => sum + (m.experience_points || 0) * m.count,
-      0
-    )
+  const totalXP = computed(
+    () =>
+      monsters.value.reduce(
+        (sum, m) => sum + (m.experience_points || 0) * m.count,
+        0
+      ) * xpCalculator.getMultiplier(totalMonsters.value)
   );
 
   const multiplier = computed(() => {

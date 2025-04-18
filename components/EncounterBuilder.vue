@@ -1,7 +1,7 @@
 <template>
-  <div class="h-full overflow-y-auto">
-    <div class="flex items-center justify-between">
-      <h2 class="text-lg font-bold">
+  <div class="h-full">
+    <div class="mb-4 flex items-center justify-between">
+      <h2 class="my-2 inline-block text-lg font-bold">
         <Icon name="game-icons:crossed-swords" /> Encounter Builder
       </h2>
       <button

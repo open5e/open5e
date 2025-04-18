@@ -114,7 +114,7 @@
             </div>
             <div
               v-if="isEncounterVisible"
-              class="hidden w-80 flex-shrink-0 border-l p-4 dark:border-gray-700 lg:block"
+              class="sticky top-0 hidden w-80 flex-shrink-0 border-l p-4 dark:border-gray-700 lg:block"
             >
               <EncounterBuilder @hide-encounter="isEncounterVisible = false" />
             </div>
