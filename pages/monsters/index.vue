@@ -168,15 +168,11 @@ const {
 const encounterStore = useEncounterStore();
 
 const addToEncounter = (monster: any) => {
-  encounterStore.addMonster({
-    id: monster.key,
-    name: monster.name,
-    challenge_rating: monster.challenge_rating_decimal,
-    experience_points: monster.experience_points,
-    count: 1,
-  });
+  encounterStore.addMonster(
+    monster.key,
+    monster.name,
+    monster.challenge_rating_decimal,
+    monster.challenge_rating_text
+  );
 };
-
-// For debugging
-console.log('Sample monster data:', data?.results?.[0]);
 </script>

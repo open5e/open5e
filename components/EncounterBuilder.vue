@@ -16,8 +16,8 @@
     <div class="mb-2 flex items-center justify-between">
       <h3 class="text-sm font-bold">Monsters</h3>
     </div>
-    <div v-if="!isLoaded" class="py-4 text-center">
-      <p class="text-sm text-gray-500">Loading encounter data...</p>
+    <div v-if="isLoading" class="py-4 text-center">
+      <p class="text-sm text-gray-500">Loading monster data...</p>
     </div>
     <div v-else-if="monsters.length === 0" class="py-4 text-center">
       <p class="text-sm text-gray-500">No monsters added to encounter yet</p>
@@ -33,10 +33,17 @@
         class="flex items-start justify-between rounded bg-white p-2 dark:bg-gray-800"
       >
         <div class="flex flex-col">
-          <span class="font-medium">{{ monster.name }}</span>
+          <span class="font-medium"
+            >{{ monster.name }}
+            <source-tag
+              v-if="monster.document?.name"
+              :title="monster.document.name"
+              :text="monster.document.key"
+          /></span>
           <div class="text-sm text-gray-500">
-            CR {{ formatChallengeRating(monster.challenge_rating) }} ({{
-              monster.experience_points * monster.count
+            CR
+            {{ monster.challenge_rating_text || monster.challenge_rating }} ({{
+              (monster.experience_points || 0) * monster.count
             }}
             XP)
           </div>
@@ -60,7 +67,9 @@
 
       <div class="mb-4 flex items-center justify-between border-t pt-2">
         <span class="text-sm"
-          >{{ totalMonsters }} Monsters | {{ totalXP }} XP</span
+          >{{ totalMonsters }} Monsters | {{ totalXP }} XP ({{
+            multiplier
+          }})</span
         >
       </div>
 
@@ -125,28 +134,44 @@ import PartyBuilder from '~/components/PartyBuilder.vue';
 
 const encounterStore = useEncounterStore();
 const { partyRows, partyXPBudget } = usePartyStore();
-const { calculateEncounterDifficulty, getDifficultyThresholds } =
+const { calculateEncounterDifficulty, getDifficultyThresholds, getMultiplier } =
   useXPCalculator();
-const xpCalculator = useXPCalculator();
-
-const isLoaded = ref(false);
 
 const monsters = ref(encounterStore.monsters);
-const totalMonsters = computed(() => monsters.value.length);
+const isLoading = ref(false);
+
+// Load initial monster data
+onMounted(async () => {
+  if (monsters.value.length > 0) {
+    isLoading.value = true;
+    try {
+      await Promise.all(
+        monsters.value.map((monster) =>
+          encounterStore.fetchMonsterData(monster.id)
+        )
+      );
+    } catch (error) {
+      console.error('Failed to load monster data:', error);
+    } finally {
+      isLoading.value = false;
+    }
+  }
+});
+
+const totalMonsters = computed(() =>
+  monsters.value.reduce((sum, m) => sum + m.count, 0)
+);
 const totalXP = computed(() => {
   return monsters.value.reduce(
-    (sum, monster) => sum + monster.experience_points * monster.count,
+    (sum, monster) => sum + (monster.experience_points || 0) * monster.count,
     0
   );
 });
 
-const formatChallengeRating = (cr: number) => {
-  if (cr === 0) return '0';
-  if (cr === 0.125) return '1/8';
-  if (cr === 0.25) return '1/4';
-  if (cr === 0.5) return '1/2';
-  return cr.toString();
-};
+const multiplier = computed(() => {
+  const count = totalMonsters.value;
+  return `${getMultiplier(count)}x`;
+});
 
 const difficultyColors = computed(() => {
   const colors = {
@@ -171,17 +196,6 @@ const formatXPBudget = (budget: number, difficulty: string) => {
   }
   return budget.toLocaleString();
 };
-
-// Load monster data for existing encounters
-onMounted(async () => {
-  if (monsters.value.length > 0) {
-    // TODO: Fetch monster data from API
-    // For now, just mark as loaded
-    isLoaded.value = true;
-  } else {
-    isLoaded.value = true;
-  }
-});
 
 const encounterDifficulty = computed(() => {
   if (!partyRows.value.length) return null;
