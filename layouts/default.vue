@@ -88,13 +88,10 @@
         <div class="flex h-12 items-center gap-1 px-2 sm:pl-8">
           <SidebarToggle class="sm:hidden" @click="toggleSidebar" />
           <BreadcrumbLinks class="flex-grow" />
-          <button
+          <EncounterSummary
             v-if="!isEncounterVisible"
-            class="hidden h-8 items-center justify-center rounded-md bg-fog px-2 hover:bg-smoke dark:bg-basalt hover:dark:bg-granite lg:flex"
-            @click="showEncounter"
-          >
-            <Icon name="heroicons:plus" /> Show encounter builder
-          </button>
+            @show-encounter="showEncounter"
+          />
           <ThemeSwitcher />
         </div>
 

@@ -2,6 +2,8 @@ import { computed } from 'vue';
 import { useLocalStorage } from '@vueuse/core';
 import { API_ENDPOINTS, useAPI } from '~/composables/api';
 import { until } from '@vueuse/core';
+import { usePartyStore } from '~/composables/useParty';
+import { useXPCalculator } from '~/composables/useXPCalculator';
 
 interface EncounterMonster {
   id: string;
@@ -13,6 +15,14 @@ interface EncounterMonster {
   [key: string]: any;
 }
 
+export type DifficultyLevel =
+  | 'empty'
+  | 'trivial'
+  | 'easy'
+  | 'medium'
+  | 'hard'
+  | 'deadly';
+
 export const useEncounterStore = () => {
   const monsters = useLocalStorage<EncounterMonster[]>(
     'encounter-monsters',
@@ -23,6 +33,19 @@ export const useEncounterStore = () => {
     {}
   );
   const { get } = useAPI();
+  const { partyXPBudget } = usePartyStore();
+  const xpCalculator = useXPCalculator();
+
+  const difficultyColors: Record<DifficultyLevel, string> = {
+    empty: 'bg-fog hover:bg-smoke dark:bg-basalt hover:dark:bg-granite',
+    trivial: 'bg-gray-100 dark:bg-gray-700',
+    easy: 'bg-green-100 hover:bg-green-200 dark:bg-green-900/50 hover:dark:bg-green-900',
+    medium:
+      'bg-yellow-100 hover:bg-yellow-200 dark:bg-yellow-900/50 hover:dark:bg-yellow-900',
+    hard: 'bg-orange-100 hover:bg-orange-200 dark:bg-orange-900/50 hover:dark:bg-orange-900',
+    deadly:
+      'bg-red-100 hover:bg-red-200 dark:bg-red-900/50 hover:dark:bg-red-900',
+  };
 
   const totalMonsters = computed(() =>
     monsters.value.reduce((sum, m) => sum + m.count, 0)
@@ -35,23 +58,59 @@ export const useEncounterStore = () => {
     )
   );
 
-  const fetchMonsterData = async (id: string) => {
-    if (monsterCache.value[id]) {
-      return monsterCache.value[id];
-    }
+  const multiplier = computed(() => {
+    const count = totalMonsters.value;
+    return `${xpCalculator.getMultiplier(count)}x`;
+  });
 
+  const difficulty = computed(() => {
+    if (!monsters.value.length) return 'empty';
+
+    const multiplier = xpCalculator.getMultiplier(monsters.value.length);
+    const adjustedXP = totalXP.value * multiplier;
+
+    return xpCalculator
+      .calculateEncounterDifficulty(adjustedXP, partyXPBudget.value)
+      .toLowerCase() as DifficultyLevel;
+  });
+
+  const difficultyColor = computed(() => {
+    return difficultyColors[difficulty.value];
+  });
+
+  const formatXPBudget = (budget: number, difficulty: string) => {
+    if (difficulty === 'trivial') {
+      return `<${partyXPBudget.value.easy.toLocaleString()}`;
+    }
+    return budget.toLocaleString();
+  };
+
+  const fetchMonsterData = async (id: string) => {
     try {
-      const data = await get(
-        API_ENDPOINTS.monsters,
-        id,
-        '/?document__fields=name,key,permalink'
-      );
-      monsterCache.value[id] = data;
+      let data;
+      if (monsterCache.value[id]) {
+        data = monsterCache.value[id];
+      } else {
+        data = await get(
+          API_ENDPOINTS.monsters,
+          id,
+          '/?document__fields=name,key,permalink'
+        );
+        monsterCache.value[id] = data;
+      }
 
       // Update the monster in the list with the new data
       const monster = monsters.value.find((m) => m.id === id);
       if (monster) {
-        Object.assign(monster, data);
+        // Preserve the count and basic info while updating with API data
+        const { count, name, challenge_rating_decimal, challenge_rating_text } =
+          monster;
+        Object.assign(monster, data, {
+          count,
+          name,
+          challenge_rating_decimal,
+          challenge_rating_text,
+        });
       }
 
       return data;
@@ -126,5 +185,10 @@ export const useEncounterStore = () => {
     incrementMonster,
     clearEncounter,
     fetchMonsterData,
+    difficultyColors,
+    difficulty,
+    difficultyColor,
+    multiplier,
+    formatXPBudget,
   };
 };

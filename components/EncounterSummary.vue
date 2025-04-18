@@ -1,12 +1,13 @@
 <template>
   <button
-    class="hidden h-8 items-center justify-center rounded-md bg-fog px-2 hover:bg-smoke dark:bg-basalt hover:dark:bg-granite lg:flex"
-    @click="showEncounter"
+    class="hidden h-8 items-center justify-center rounded-md px-2 lg:flex"
+    :class="encounterStore.difficultyColor.value"
+    @click="$emit('show-encounter')"
   >
-    <Icon name="heroicons:plus" />
+    <Icon name="game-icons:crossed-swords" />
     <span v-if="encounterStore.monsters.value.length > 0">
-      Encounter ({{ encounterStore.monsters.value.length }} monsters,
-      {{ encounterStore.totalXP }} XP)
+      {{ encounterStore.monsters.value.length }} |
+      {{ encounterStore.difficulty.value }}
     </span>
     <span v-else>Show encounter builder</span>
   </button>
@@ -14,11 +15,12 @@
 
 <script setup lang="ts">
 import { useEncounterStore } from '~/composables/useEncounter';
+import { usePartyStore } from '~/composables/useParty';
+import { useXPCalculator } from '~/composables/useXPCalculator';
 
 const encounterStore = useEncounterStore();
+const { partyXPBudget } = usePartyStore();
+const xpCalculator = useXPCalculator();
 
-const showEncounter = () => {
-  // You'll need to implement this based on your app's state management
-  // This could be an emit, a store action, or a route change
-};
+defineEmits(['show-encounter']);
 </script>

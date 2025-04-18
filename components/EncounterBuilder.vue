@@ -2,7 +2,7 @@
   <div class="h-full overflow-y-auto">
     <div class="flex items-center justify-between">
       <h2 class="text-lg font-bold">
-        <Icon name="heroicons:wrench-screwdriver" /> Encounter Builder
+        <Icon name="game-icons:crossed-swords" /> Encounter Builder
       </h2>
       <button
         class="flex h-8 w-8 items-center justify-center rounded-full bg-fog hover:bg-smoke dark:bg-basalt hover:dark:bg-granite"
@@ -67,9 +67,9 @@
 
       <div class="mb-4 flex items-center justify-between border-t pt-2">
         <span class="text-sm"
-          >{{ totalMonsters }} Monsters | {{ totalXP }} XP ({{
-            multiplier
-          }})</span
+          >{{ encounterStore.totalMonsters }} Monsters (
+          {{ encounterStore.multiplier }} group multiplier) |
+          {{ encounterStore.totalXP }} XP</span
         >
       </div>
 
@@ -82,11 +82,10 @@
                 :key="difficulty"
                 class="py-1"
                 :class="[
-                  difficultyColors(difficulty),
+                  difficultyColors(difficulty as DifficultyLevel),
                   {
                     'font-bold':
-                      encounterDifficulty ===
-                      difficulty.charAt(0).toUpperCase() + difficulty.slice(1),
+                      encounterStore.difficulty.value === difficulty,
                   },
                 ]"
               >
@@ -101,15 +100,14 @@
                 :key="difficulty"
                 class="py-1"
                 :class="[
-                  difficultyColors(difficulty),
+                  difficultyColors(difficulty as DifficultyLevel),
                   {
                     'font-bold':
-                      encounterDifficulty ===
-                      difficulty.charAt(0).toUpperCase() + difficulty.slice(1),
+                      encounterStore.difficulty.value === difficulty,
                   },
                 ]"
               >
-                {{ formatXPBudget(budget, difficulty) }}
+                {{ encounterStore.formatXPBudget(budget, difficulty) }}
               </td>
             </tr>
           </tbody>
@@ -127,15 +125,17 @@
 </template>
 
 <script setup lang="ts">
-import { useEncounterStore } from '~/composables/useEncounter';
+import {
+  useEncounterStore,
+  type DifficultyLevel,
+} from '~/composables/useEncounter';
 import { usePartyStore } from '~/composables/useParty';
 import { useXPCalculator } from '~/composables/useXPCalculator';
 import PartyBuilder from '~/components/PartyBuilder.vue';
 
 const encounterStore = useEncounterStore();
 const { partyRows, partyXPBudget } = usePartyStore();
-const { calculateEncounterDifficulty, getDifficultyThresholds, getMultiplier } =
-  useXPCalculator();
+const xpCalculator = useXPCalculator();
 
 const monsters = ref(encounterStore.monsters);
 const isLoading = ref(false);
@@ -158,63 +158,12 @@ onMounted(async () => {
   }
 });
 
-const totalMonsters = computed(() =>
-  monsters.value.reduce((sum, m) => sum + m.count, 0)
-);
-const totalXP = computed(() => {
-  return monsters.value.reduce(
-    (sum, monster) => sum + (monster.experience_points || 0) * monster.count,
-    0
-  );
-});
-
-const multiplier = computed(() => {
-  const count = totalMonsters.value;
-  return `${getMultiplier(count)}x`;
-});
-
 const difficultyColors = computed(() => {
-  const colors = {
-    trivial: 'bg-gray-100 dark:bg-gray-700',
-    easy: 'bg-green-100 dark:bg-green-900',
-    medium: 'bg-yellow-100 dark:bg-yellow-900',
-    hard: 'bg-orange-100 dark:bg-orange-900',
-    deadly: 'bg-red-100 dark:bg-red-900',
+  return (difficulty: DifficultyLevel) => {
+    const currentDifficulty = encounterStore.difficulty.value;
+    const isCurrent = currentDifficulty === difficulty;
+    return isCurrent ? encounterStore.difficultyColors[difficulty] : '';
   };
-
-  return (difficulty: string) => {
-    const isCurrent =
-      encounterDifficulty.value ===
-      difficulty.charAt(0).toUpperCase() + difficulty.slice(1);
-    return isCurrent ? colors[difficulty as keyof typeof colors] : '';
-  };
-});
-
-const formatXPBudget = (budget: number, difficulty: string) => {
-  if (difficulty === 'trivial') {
-    return `<${partyXPBudget.value.easy.toLocaleString()}`;
-  }
-  return budget.toLocaleString();
-};
-
-const encounterDifficulty = computed(() => {
-  if (!partyRows.value.length) return null;
-
-  const budget = partyRows.value.reduce(
-    (acc, row) => {
-      if (!row.count || !row.level) return acc;
-      const thresholds = getDifficultyThresholds(row.level);
-      return {
-        easy: acc.easy + thresholds.easy * row.count,
-        medium: acc.medium + thresholds.medium * row.count,
-        hard: acc.hard + thresholds.hard * row.count,
-        deadly: acc.deadly + thresholds.deadly * row.count,
-      };
-    },
-    { easy: 0, medium: 0, hard: 0, deadly: 0 }
-  );
-
-  return calculateEncounterDifficulty(totalXP.value, budget);
 });
 
 const removeMonster = (id: string) => {
