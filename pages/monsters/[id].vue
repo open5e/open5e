@@ -54,11 +54,9 @@
       <dt class="font-bold after:content-['_']">Initiative Bonus</dt>
       <dd
         class="w-min cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
-        @click="useDiceRoller(monster.initiative_bonus)"
+        @click="useDiceRoller(initiativeBonus)"
       >
-        {{
-          (monster.initiative_bonus > 0 ? '+' : '') + monster.initiative_bonus
-        }}
+        {{ useFormatModifier(initiativeBonus) }}
       </dd>
 
       <!-- HIT POINTS -->
@@ -111,7 +109,7 @@
         </li>
       </ul>
 
-      <!-- RESISTANCES, VULNERABILITY, AND IMMUNITIES -->
+      <!-- RESISTANCES, VULNERABILITY AND IMMUNITIES -->
       <ul v-for="(data, title) in resistancesAndVulnerabilities" :key="title">
         <label class="inline font-bold after:content-['_']">{{ title }}</label>
         <li
@@ -257,6 +255,12 @@ const { data: monster } = useFindOne(
   useRoute().params.id,
   { params }
 );
+
+// Calculate initiative bonus from dexterity modifier if not explicitly set
+const initiativeBonus = computed(() => {
+  if (!monster.value) return 0;
+  return monster.value.initiative_bonus ?? monster.value.modifiers?.dexterity;
+});
 
 // Sort monster actions by type (ie. 'action', 'bonus action', 'reaction').
 // rtrns an object whose keys are action types & vals are arrays of actions.
