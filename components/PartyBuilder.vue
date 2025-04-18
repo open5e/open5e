@@ -1,7 +1,7 @@
 <template>
   <div class="party-builder">
     <div class="mb-2 flex items-center justify-between">
-      <h3 class="mt-1 text-sm font-bold">Party</h3>
+      <h3 class="mt-1 text-lg font-bold">Party</h3>
     </div>
 
     <div class="space-y-2">
@@ -28,14 +28,14 @@
         />
         <button
           v-if="partyRows.length > 1"
-          class="text-blood hover:text-black dark:hover:text-fog"
+          class="rounded bg-blood px-1 py-0.5 text-sm font-medium text-white hover:text-black dark:hover:text-fog"
           @click="removePartyRow(index)"
         >
           <Icon name="heroicons:minus" />
         </button>
       </div>
       <button
-        class="text-sm text-blood hover:text-black dark:hover:text-fog"
+        class="rounded bg-blood px-1 py-0.5 text-sm font-medium text-white hover:text-black dark:hover:text-fog"
         @click="addPartyRow"
       >
         <Icon name="heroicons:plus" /> Add

@@ -1,46 +1,60 @@
 <template>
-  <div class="h-full">
+  <div class="mx-2 rounded-lg bg-white p-4 dark:bg-gray-800">
     <div class="mb-4 flex items-center justify-between">
-      <h2 class="my-2 inline-block text-lg font-bold">
+      <h2 class="my-2 inline-block text-xl font-bold">
         <Icon name="game-icons:crossed-swords" /> Encounter Builder
       </h2>
       <button
-        class="flex h-8 w-8 items-center justify-center rounded-full bg-fog hover:bg-smoke dark:bg-basalt hover:dark:bg-granite"
+        class="flex h-8 w-8 items-center justify-center rounded-full bg-fog hover:bg-smoke dark:bg-gray-900 hover:dark:bg-granite"
         @click="$emit('hide-encounter')"
       >
         <Icon name="heroicons:x-mark" />
       </button>
     </div>
-    <PartyBuilder />
-
-    <div class="mb-2 flex items-center justify-between">
-      <h3 class="text-sm font-bold">Monsters</h3>
+    <div class="mb-2 border-b border-gray-200 pb-4 dark:border-gray-700">
+      <PartyBuilder />
     </div>
+
     <div v-if="isLoading" class="py-4 text-center">
-      <p class="text-sm text-gray-500">Loading monster data...</p>
+      <p class="text-sm text-gray-300 dark:text-gray-200">
+        Loading monster data...
+      </p>
     </div>
     <div v-else-if="monsters.length === 0" class="py-4 text-center">
-      <p class="text-sm text-gray-500">No monsters added to encounter yet</p>
-      <p class="text-xs text-gray-400">
-        Click the + button on monster pages to add them
+      <Icon
+        name="game-icons:hidden"
+        class="h-32 w-32 text-red-300 dark:text-gray-600"
+      />
+      <p class="mt-0 text-lg font-bold text-gray-300 dark:text-gray-200">
+        It's too quiet...
       </p>
+      <p class="text-sm text-gray-400 dark:text-gray-300">
+        Click + on a monster page or search below
+      </p>
+      <div class="mt-4">
+        <MonsterSearch @select="handleMonsterSelect" />
+      </div>
     </div>
 
     <div v-else>
+      <h3 class="mb-2 mt-4 text-lg font-bold">Monsters</h3>
       <div
         v-for="monster in monsters"
         :key="monster.id"
         class="flex items-start justify-between rounded bg-white p-2 dark:bg-gray-800"
       >
         <div class="flex flex-col">
-          <span class="font-medium"
+          <nuxt-link
+            class="font-medium text-gray-900 hover:text-blood dark:text-white dark:hover:text-blood"
+            :to="`/monsters/${monster.id}`"
             >{{ monster.name }}
             <source-tag
               v-if="monster.document?.name"
               :title="monster.document.name"
               :text="monster.document.key"
-          /></span>
-          <div class="text-sm text-gray-500">
+            />
+          </nuxt-link>
+          <div class="text-sm text-gray-500 dark:text-gray-300">
             CR
             {{ monster.challenge_rating_text || monster.challenge_rating }} ({{
               (monster.experience_points || 0) * monster.count
@@ -50,23 +64,28 @@
         </div>
         <div class="flex gap-1">
           <button
-            class="rounded bg-blood px-2 py-0.5 text-sm font-medium text-white hover:bg-blood/80"
+            class="rounded bg-blood px-1 py-0.5 text-sm font-medium text-white hover:bg-blood/80 dark:bg-blood dark:hover:bg-red-400"
             @click="removeMonster(monster.id)"
           >
-            -
+            <Icon name="heroicons:minus" />
           </button>
-          <span class="w-6 text-sm">{{ monster.count }}</span>
+          <span
+            class="w-6 text-center text-sm text-gray-700 dark:text-gray-200"
+            >{{ monster.count }}</span
+          >
           <button
-            class="rounded bg-blood px-2 py-0.5 text-sm font-medium text-white hover:bg-blood/80"
+            class="rounded bg-blood px-1 py-0.5 text-sm font-medium text-white hover:bg-blood/80 dark:bg-blood dark:hover:bg-red-400"
             @click="incrementMonster(monster.id)"
           >
-            +
+            <Icon name="heroicons:plus" />
           </button>
         </div>
       </div>
 
-      <div class="mb-4 flex items-center justify-between border-t pt-2">
-        <span class="text-sm"
+      <div
+        class="mb-4 flex items-center justify-between border-t border-gray-200 pt-2 dark:border-gray-700"
+      >
+        <span class="text-sm text-gray-700 dark:text-gray-200"
           >{{ encounterStore.totalMonsters }} Monsters (
           {{ encounterStore.multiplier }} group multiplier) |
           {{ encounterStore.totalXP }} XP</span
@@ -114,8 +133,12 @@
         </table>
       </div>
 
+      <div class="mb-4">
+        <MonsterSearch @select="handleMonsterSelect" />
+      </div>
+
       <button
-        class="w-full border-t py-2 text-center text-sm text-blood hover:text-black dark:hover:text-fog"
+        class="w-full border-t border-gray-200 py-2 text-center text-sm text-blood hover:text-black dark:border-gray-700 dark:text-red-400 dark:hover:text-white"
         @click="clearEncounter"
       >
         Clear Encounter
@@ -132,6 +155,11 @@ import {
 import { usePartyStore } from '~/composables/useParty';
 import { useXPCalculator } from '~/composables/useXPCalculator';
 import PartyBuilder from '~/components/PartyBuilder.vue';
+import MonsterSearch from '~/components/MonsterSearch.vue';
+import { ref, computed, onMounted } from 'vue';
+import type { Monster } from '~/types/monster';
+
+const emit = defineEmits(['hide-encounter']);
 
 const encounterStore = useEncounterStore();
 const { partyRows, partyXPBudget } = usePartyStore();
@@ -142,39 +170,42 @@ const isLoading = ref(false);
 
 // Load initial monster data
 onMounted(async () => {
-  if (monsters.value.length > 0) {
-    isLoading.value = true;
-    try {
-      await Promise.all(
-        monsters.value.map((monster) =>
-          encounterStore.fetchMonsterData(monster.id)
-        )
-      );
-    } catch (error) {
-      console.error('Failed to load monster data:', error);
-    } finally {
-      isLoading.value = false;
-    }
+  if (!monsters.value.length) return;
+
+  isLoading.value = true;
+  try {
+    await Promise.all(
+      monsters.value.map((monster) =>
+        encounterStore.fetchMonsterData(monster.id)
+      )
+    );
+  } catch (error) {
+    console.error('Failed to load monster data:', error);
+  } finally {
+    isLoading.value = false;
   }
 });
 
-const difficultyColors = computed(() => {
-  return (difficulty: DifficultyLevel) => {
-    const currentDifficulty = encounterStore.difficulty.value;
-    const isCurrent = currentDifficulty === difficulty;
-    return isCurrent ? encounterStore.difficultyColors[difficulty] : '';
-  };
-});
+// Simplified difficulty colors logic
+const difficultyColors = computed(
+  () => (difficulty: DifficultyLevel) =>
+    encounterStore.difficulty.value === difficulty
+      ? encounterStore.difficultyColors[difficulty]
+      : ''
+);
 
-const removeMonster = (id: string) => {
-  encounterStore.removeMonster(id);
-};
+// Direct store action calls for monster management
+const removeMonster = (id: string) => encounterStore.removeMonster(id);
+const clearEncounter = () => encounterStore.clearEncounter();
+const incrementMonster = (id: string) => encounterStore.incrementMonster(id);
+const handleMonsterSelect = (monster: Monster) => {
+  if (!monster?.id) return;
 
-const clearEncounter = () => {
-  encounterStore.clearEncounter();
-};
-
-const incrementMonster = (id: string) => {
-  encounterStore.incrementMonster(id);
+  encounterStore.addMonster(
+    monster.id,
+    monster.name,
+    monster.challenge_rating_decimal,
+    monster.challenge_rating
+  );
 };
 </script>

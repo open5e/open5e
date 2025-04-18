@@ -39,12 +39,13 @@ export const useEncounterStore = () => {
   const difficultyColors: Record<DifficultyLevel, string> = {
     empty: 'bg-fog hover:bg-smoke dark:bg-basalt hover:dark:bg-granite',
     trivial:
-      'bg-lime-100 hover:bg-lime-200 dark:bg-lime-800 hover:dark:bg-lime-900',
-    easy: 'bg-green-100 hover:bg-green-200 dark:bg-green-800 hover:dark:bg-green-900',
+      'bg-lime-200 hover:bg-lime-200 dark:bg-lime-800 hover:dark:bg-lime-900',
+    easy: 'bg-green-200 hover:bg-green-200 dark:bg-green-800 hover:dark:bg-green-900',
     medium:
-      'bg-blue-100 hover:bg-blue-200 dark:bg-blue-800 hover:dark:bg-blue-900',
-    hard: 'bg-yellow-100 hover:bg-yellow-200 dark:bg-yellow-800 hover:dark:bg-yellow-900',
-    deadly: 'bg-red-100 hover:bg-red-200 dark:bg-red-700 hover:dark:bg-red-900',
+      'bg-blue-200 hover:bg-blue-200 dark:bg-blue-800 hover:dark:bg-blue-900',
+    hard: 'bg-yellow-200 hover:bg-yellow-200 dark:bg-yellow-800 hover:dark:bg-yellow-900',
+    deadly:
+      'animate-pulse-orange dark:animate-pulse-orange-dark bg-orange-100 dark:bg-orange-700 text-red-800 dark:text-red-100 hover:animate-none hover:bg-orange-200 hover:dark:bg-orange-900',
   };
 
   const totalMonsters = computed(() =>
@@ -92,6 +93,10 @@ export const useEncounterStore = () => {
       if (monsterCache.value[id]) {
         data = monsterCache.value[id];
       } else {
+        if (!id) {
+          console.error('Cannot fetch monster data: ID is empty');
+          return null;
+        }
         data = await get(
           API_ENDPOINTS.monsters,
           id,
@@ -149,7 +154,11 @@ export const useEncounterStore = () => {
       });
 
       // Then fetch the full monster data
-      await fetchMonsterData(id);
+      const monsterData = await fetchMonsterData(id);
+      if (!monsterData) {
+        console.error('Failed to fetch monster data');
+        return;
+      }
     } catch (error) {
       console.error('Failed to add monster:', error);
     }

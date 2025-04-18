@@ -7,13 +7,13 @@
       <div class="flex flex-none items-start gap-2">
         <button
           v-if="monsterInEncounter"
-          class="flex h-8 items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80"
+          class="flex hidden h-8 items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80 lg:flex"
           @click="removeFromEncounter"
         >
           <Icon name="heroicons:minus" />
         </button>
         <button
-          class="flex h-8 items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80"
+          class="flex hidden h-8 items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80 lg:flex"
           @click="addToEncounter"
         >
           <Icon name="heroicons:plus" />

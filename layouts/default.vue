@@ -114,7 +114,7 @@
             </div>
             <div
               v-if="isEncounterVisible"
-              class="sticky top-0 hidden w-80 flex-shrink-0 border-l p-4 dark:border-gray-700 lg:block"
+              class="top-0 hidden w-80 flex-shrink-0 border-l lg:block"
             >
               <EncounterBuilder @hide-encounter="isEncounterVisible = false" />
             </div>
@@ -141,7 +141,7 @@ const title = computed(() => {
 useHead({ title: title });
 
 const showSidebar = ref(false);
-const isEncounterVisible = ref(true);
+const isEncounterVisible = ref(false);
 const route = useRoute();
 watch(
   () => route.path,

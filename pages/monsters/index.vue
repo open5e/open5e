@@ -95,27 +95,31 @@
               const monsterInEncounter = encounterStore.monsters.value.find(
                 (m) => m.id === data.key
               );
-              return h('div', { class: 'flex gap-2 justify-end' }, [
-                monsterInEncounter &&
+              return h(
+                'div',
+                { class: 'flex gap-2 justify-end hidden lg:flex' },
+                [
+                  monsterInEncounter &&
+                    h(
+                      'button',
+                      {
+                        class:
+                          'p-1 text-sm font-medium text-white bg-blood rounded hover:bg-blood/80',
+                        onClick: () => removeFromEncounter(data),
+                      },
+                      h(MinusIcon, { class: 'w-4 h-4' })
+                    ),
                   h(
                     'button',
                     {
                       class:
                         'p-1 text-sm font-medium text-white bg-blood rounded hover:bg-blood/80',
-                      onClick: () => removeFromEncounter(data),
+                      onClick: () => addToEncounter(data),
                     },
-                    h(MinusIcon, { class: 'w-4 h-4' })
+                    h(PlusIcon, { class: 'w-4 h-4' })
                   ),
-                h(
-                  'button',
-                  {
-                    class:
-                      'p-1 text-sm font-medium text-white bg-blood rounded hover:bg-blood/80',
-                    onClick: () => addToEncounter(data),
-                  },
-                  h(PlusIcon, { class: 'w-4 h-4' })
-                ),
-              ]);
+                ]
+              );
             },
           }),
         },
