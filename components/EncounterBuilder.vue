@@ -33,7 +33,7 @@
         <div class="flex flex-col">
           <span class="font-medium">{{ monster.name }}</span>
           <div class="text-sm text-gray-500">
-            CR {{ monster.challenge_rating }} ({{
+            CR {{ formatChallengeRating(monster.challenge_rating) }} ({{
               monster.experience_points * monster.count
             }}
             XP)
@@ -57,11 +57,62 @@
       </div>
 
       <div class="mb-4 flex items-center justify-between border-t pt-2">
-        <span class="text-sm">Total Monsters: {{ totalMonsters }}</span>
-        <span class="text-sm font-medium">Total XP: {{ totalXP }}</span>
+        <span class="text-sm"
+          >{{ totalMonsters }} Monsters | {{ totalXP }} XP</span
+        >
       </div>
-      <div class="mb-1 text-2xl font-bold" :class="difficultyClass">
-        {{ encounterDifficulty }}
+
+      <div v-if="partyRows.length" class="mb-4">
+        <table class="w-full text-sm">
+          <thead>
+            <tr>
+              <th
+                v-for="(budget, difficulty) in partyXPBudget"
+                :key="difficulty"
+                class="py-1"
+                :class="{
+                  'bg-green-50 dark:bg-green-900':
+                    difficulty === 'easy' && encounterDifficulty === 'Easy',
+                  'bg-yellow-50 dark:bg-yellow-900':
+                    difficulty === 'medium' && encounterDifficulty === 'Medium',
+                  'bg-orange-50 dark:bg-orange-900':
+                    difficulty === 'hard' && encounterDifficulty === 'Hard',
+                  'bg-red-50 dark:bg-red-900':
+                    difficulty === 'deadly' && encounterDifficulty === 'Deadly',
+                  'font-bold':
+                    encounterDifficulty ===
+                    difficulty.charAt(0).toUpperCase() + difficulty.slice(1),
+                }"
+              >
+                <div class="capitalize">{{ difficulty }}</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                v-for="(budget, difficulty) in partyXPBudget"
+                :key="difficulty"
+                class="py-1"
+                :class="{
+                  'bg-green-50 dark:bg-green-900':
+                    difficulty === 'easy' && encounterDifficulty === 'Easy',
+                  'bg-yellow-50 dark:bg-yellow-900':
+                    difficulty === 'medium' && encounterDifficulty === 'Medium',
+                  'bg-orange-50 dark:bg-orange-900':
+                    difficulty === 'hard' && encounterDifficulty === 'Hard',
+                  'bg-red-50 dark:bg-red-900':
+                    difficulty === 'deadly' && encounterDifficulty === 'Deadly',
+                  'font-bold':
+                    encounterDifficulty ===
+                    difficulty.charAt(0).toUpperCase() + difficulty.slice(1),
+                }"
+              >
+                {{ budget.toLocaleString() }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <button
@@ -81,7 +132,7 @@ import { useXPCalculator } from '~/composables/useXPCalculator';
 import PartyBuilder from '~/components/PartyBuilder.vue';
 
 const encounterStore = useEncounterStore();
-const { partyRows, totalPCs, averageLevel } = usePartyStore();
+const { partyRows, partyXPBudget } = usePartyStore();
 const { calculateEncounterDifficulty, getDifficultyThresholds } =
   useXPCalculator();
 const xpCalculator = useXPCalculator();
@@ -97,6 +148,14 @@ const totalXP = computed(() => {
   );
 });
 
+const formatChallengeRating = (cr: number) => {
+  if (cr === 0) return '0';
+  if (cr === 0.125) return '1/8';
+  if (cr === 0.25) return '1/4';
+  if (cr === 0.5) return '1/2';
+  return cr.toString();
+};
+
 // Load monster data for existing encounters
 onMounted(async () => {
   if (monsters.value.length > 0) {
@@ -110,41 +169,22 @@ onMounted(async () => {
 
 const encounterDifficulty = computed(() => {
   if (!partyRows.value.length) return null;
-  return calculateEncounterDifficulty(totalXP.value, {
-    easy: 0,
-    medium: 0,
-    hard: 0,
-    deadly: 0,
-    ...partyRows.value.reduce(
-      (budget, row) => {
-        if (!row.count || !row.level) return budget;
-        const thresholds = getDifficultyThresholds(row.level);
-        budget.easy += thresholds.easy * row.count;
-        budget.medium += thresholds.medium * row.count;
-        budget.hard += thresholds.hard * row.count;
-        budget.deadly += thresholds.deadly * row.count;
-        return budget;
-      },
-      { easy: 0, medium: 0, hard: 0, deadly: 0 }
-    ),
-  });
-});
 
-const difficultyClass = computed(() => {
-  switch (encounterDifficulty.value) {
-    case 'Trivial':
-      return 'text-green-600 dark:text-green-400';
-    case 'Easy':
-      return 'text-blue-600 dark:text-blue-400';
-    case 'Medium':
-      return 'text-yellow-600 dark:text-yellow-400';
-    case 'Hard':
-      return 'text-orange-600 dark:text-orange-400';
-    case 'Deadly':
-      return 'text-red-600 dark:text-red-400';
-    default:
-      return '';
-  }
+  const budget = partyRows.value.reduce(
+    (acc, row) => {
+      if (!row.count || !row.level) return acc;
+      const thresholds = getDifficultyThresholds(row.level);
+      return {
+        easy: acc.easy + thresholds.easy * row.count,
+        medium: acc.medium + thresholds.medium * row.count,
+        hard: acc.hard + thresholds.hard * row.count,
+        deadly: acc.deadly + thresholds.deadly * row.count,
+      };
+    },
+    { easy: 0, medium: 0, hard: 0, deadly: 0 }
+  );
+
+  return calculateEncounterDifficulty(totalXP.value, budget);
 });
 
 const removeMonster = (id: string) => {

@@ -3,7 +3,6 @@ interface XPRules {
   medium: number[];
   hard: number[];
   deadly: number[];
-  multiplier: number[];
 }
 
 const XP_RULES: XPRules = {
@@ -23,7 +22,16 @@ const XP_RULES: XPRules = {
     100, 200, 400, 500, 1100, 1400, 1700, 2100, 2400, 2800, 3600, 4500, 5100,
     5700, 6400, 7200, 8800, 9500, 10900, 12700,
   ],
-  multiplier: [1, 1.5, 2, 2.5, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+};
+
+// Calculate the multiplier based on the number of monsters in the encounter
+const getMultiplier = (monsterCount: number): number => {
+  if (monsterCount === 1) return 1;
+  if (monsterCount === 2) return 1.5;
+  if (monsterCount <= 6) return 2;
+  if (monsterCount <= 10) return 2.5;
+  if (monsterCount <= 14) return 3;
+  return 4;
 };
 
 export const useXPCalculator = () => {
@@ -37,34 +45,23 @@ export const useXPCalculator = () => {
     };
   };
 
-  const getMultiplier = (monsterCount: number) => {
-    if (monsterCount === 1) return 1;
-    if (monsterCount === 2) return 1.5;
-    if (monsterCount <= 6) return 2;
-    if (monsterCount <= 10) return 2.5;
-    if (monsterCount <= 14) return 3;
-    return 4;
-  };
-
-  const calculateEncounterDifficulty = (
-    encounterXP: number,
-    partyXPBudget: {
-      easy: number;
-      medium: number;
-      hard: number;
-      deadly: number;
-    }
-  ) => {
-    if (encounterXP < partyXPBudget.easy) return 'Trivial';
-    if (encounterXP < partyXPBudget.medium) return 'Easy';
-    if (encounterXP < partyXPBudget.hard) return 'Medium';
-    if (encounterXP < partyXPBudget.deadly) return 'Hard';
-    return 'Deadly';
-  };
-
   return {
     getDifficultyThresholds,
     getMultiplier,
-    calculateEncounterDifficulty,
+    calculateEncounterDifficulty: (
+      encounterXP: number,
+      partyXPBudget: {
+        easy: number;
+        medium: number;
+        hard: number;
+        deadly: number;
+      }
+    ) => {
+      if (encounterXP < partyXPBudget.easy) return 'Trivial';
+      if (encounterXP < partyXPBudget.medium) return 'Easy';
+      if (encounterXP < partyXPBudget.hard) return 'Medium';
+      if (encounterXP < partyXPBudget.deadly) return 'Hard';
+      return 'Deadly';
+    },
   };
 };
