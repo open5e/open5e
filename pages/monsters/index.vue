@@ -78,7 +78,7 @@
         },
         {
           displayName: 'Type',
-          value: (data) => data.type.name,
+          value: (data) => data.type?.name,
           sortValue: 'type',
         },
         {
@@ -114,6 +114,7 @@
 <script setup lang="ts">
 import { h } from 'vue';
 import { useEncounterStore } from '~/composables/useEncounter';
+import { computed } from 'vue';
 
 // Set up filters
 const filterState = useFilterState<MonsterFilter>({
@@ -175,4 +176,13 @@ const addToEncounter = (monster: any) => {
     monster.challenge_rating_text
   );
 };
+
+const debouncedFilter = computed(() => filterState.debouncedFilter);
+
+// Expose values to template
+defineExpose({
+  filterState,
+  debouncedFilter,
+  MONSTER_CHALLENGE_RATINGS_MAP,
+});
 </script>

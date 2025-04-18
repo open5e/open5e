@@ -2,7 +2,7 @@
   <div class="h-full overflow-y-auto">
     <div class="flex items-center justify-between">
       <h2 class="text-lg font-bold">
-        <Icon name="heroicons:sword-shield" /> Encounter Builder
+        <Icon name="heroicons:wrench-screwdriver" /> Encounter Builder
       </h2>
       <button
         class="flex h-8 w-8 items-center justify-center rounded-full bg-fog hover:bg-smoke dark:bg-basalt hover:dark:bg-granite"

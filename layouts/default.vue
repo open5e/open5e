@@ -132,6 +132,7 @@
 import { useRoute } from 'nuxt/app';
 import { computed } from 'vue';
 import EncounterBuilder from '~/components/EncounterBuilder.vue';
+import EncounterSummary from '~/components/EncounterSummary.vue';
 
 // Generate page title from Breadcrumbs
 const BASE_TITLE = 'Open5e';
