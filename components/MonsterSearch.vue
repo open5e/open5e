@@ -8,7 +8,9 @@
         @input="(event: Event) => searchQuery = (event.target as HTMLInputElement).value"
       />
       <ComboboxOptions
+        ref="optionsRef"
         class="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded bg-white py-1 text-sm shadow-lg dark:border dark:border-gray-700 dark:bg-darkness"
+        @scroll="handleScroll"
       >
         <div v-if="isSearching" class="px-4 py-2 text-gray-500">
           Searching...
@@ -48,6 +50,15 @@
             </span>
           </li>
         </ComboboxOption>
+        <div v-if="isLoadingMore" class="px-4 py-2 text-gray-500">
+          Loading more...
+        </div>
+        <div
+          v-else-if="!hasMore && searchResults.length > 0"
+          class="px-4 py-2 text-gray-500"
+        >
+          No more results...
+        </div>
       </ComboboxOptions>
     </Combobox>
   </div>
@@ -60,7 +71,7 @@ import {
   ComboboxOptions,
   ComboboxOption,
 } from '@headlessui/vue';
-import { ref, watchEffect } from 'vue';
+import { ref, watchEffect, onMounted, onUnmounted } from 'vue';
 import { useAPI, API_ENDPOINTS } from '~/composables/api';
 import { useSourcesList } from '~/composables/sources';
 import type { Ref } from 'vue';
@@ -74,8 +85,14 @@ const searchQuery = ref('');
 const searchResults = ref<Monster[]>([]);
 const selectedMonster = ref<Monster | null>(null);
 const isSearching = ref(false);
+const isLoadingMore = ref(false);
+const currentPage = ref(1);
+const totalCount = ref(0);
+const hasMore = ref(true);
 const { findPaginated } = useAPI();
 const { sources } = useSourcesList();
+
+const optionsRef = ref<HTMLElement | null>(null);
 
 // Simplified monster mapping function
 const mapMonsterFromAPI = (monster: Record<string, any>): Monster => ({
@@ -88,6 +105,57 @@ const mapMonsterFromAPI = (monster: Record<string, any>): Monster => ({
 });
 
 let debounceTimeout: ReturnType<typeof setTimeout>;
+
+// Function to check if we're near the bottom of the scroll
+const isNearBottom = (element: HTMLElement) => {
+  const threshold = 300; // pixels from bottom - increased to start loading earlier
+  return (
+    element.scrollHeight - element.scrollTop - element.clientHeight < threshold
+  );
+};
+
+// Function to handle scroll events
+const handleScroll = (event: Event) => {
+  const target = event.target as HTMLElement;
+  if (isNearBottom(target) && !isLoadingMore.value && hasMore.value) {
+    loadMore();
+  }
+};
+
+// Function to load more results
+const loadMore = async () => {
+  if (isLoadingMore.value || !hasMore.value) return;
+
+  isLoadingMore.value = true;
+  try {
+    const response = await findPaginated({
+      endpoint: API_ENDPOINTS.monsters,
+      sources: sources.value,
+      itemsPerPage: 25,
+      pageNo: currentPage.value + 1,
+      queryParams: { name__icontains: searchQuery.value },
+    });
+
+    if (response?.results?.length) {
+      const newMonsters = response.results.map(mapMonsterFromAPI);
+      searchResults.value = [...searchResults.value, ...newMonsters];
+      currentPage.value++;
+      totalCount.value = response.count;
+      hasMore.value = searchResults.value.length < totalCount.value;
+
+      // If we still have more results, preemptively load the next page
+      if (hasMore.value) {
+        loadMore();
+      }
+    } else {
+      hasMore.value = false;
+    }
+  } catch (error) {
+    console.error('Error loading more monsters:', error);
+  } finally {
+    isLoadingMore.value = false;
+  }
+};
 
 // Debounced search using watchEffect
 watchEffect(
@@ -109,10 +177,14 @@ watchEffect(
         const response = await findPaginated({
           endpoint: API_ENDPOINTS.monsters,
           sources: sources.value,
-          itemsPerPage: 10,
+          itemsPerPage: 25,
+          pageNo: 1,
           queryParams: { name__icontains: query },
         });
         searchResults.value = response?.results?.map(mapMonsterFromAPI) || [];
+        totalCount.value = response?.count || 0;
+        currentPage.value = 1;
+        hasMore.value = searchResults.value.length < totalCount.value;
       } catch (error) {
         console.error('Error searching monsters:', error);
         searchResults.value = [];
