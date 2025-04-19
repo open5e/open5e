@@ -5,6 +5,16 @@
       <h1 class="flex-auto">{{ monster.name }}</h1>
 
       <div class="flex flex-none items-start gap-2">
+        <!-- <button           class="flex items-center gap-1 rounded-md p-1 text-xs text-blood outline outline-1 outline-blood hover:bg-blood hover:text-white"
+          @click="toggleMode()">          
+          <icon
+            :name="
+              mode === 'compact'
+                ? 'heroicons:arrows-pointing-out'
+                : 'heroicons:arrows-pointing-in'
+            "
+          />
+          {{ mode === 'compact' ? 'Regular statblock' : 'Compact statblock' }}</button> -->
         <button
           v-if="monsterInEncounter"
           class="flex hidden h-8 items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80 lg:flex"
@@ -41,7 +51,11 @@
         {{ monster.alignment }}
       </span>
 
-      <source-tag :title="monster.document.name" :text="monster.document.key" />
+      <source-tag
+        :title="monster.document.name"
+        :text="monster.document.key"
+        :description="monster.document.source"
+      />
     </p>
 
     <dl class="grid grid-cols-[10rem_1fr]">
