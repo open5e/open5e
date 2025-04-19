@@ -15,6 +15,8 @@ interface EncounterMonster {
   [key: string]: any;
 }
 
+export type { EncounterMonster };
+
 export type DifficultyLevel =
   | 'empty'
   | 'trivial'

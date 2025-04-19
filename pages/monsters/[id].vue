@@ -13,11 +13,11 @@
           <Icon name="heroicons:minus" />
         </button>
         <button
-          class="flex hidden h-8 items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80 lg:flex"
+          class="rounded bg-blood px-2 py-1 text-sm font-medium text-white hover:bg-blood/80 dark:bg-blood dark:hover:bg-red-400"
+          data-testid="add-to-encounter"
           @click="addToEncounter"
         >
-          <Icon name="heroicons:plus" />
-          Add to Encounter
+          <Icon name="heroicons:plus" /> Add to Encounter
         </button>
       </div>
     </div>

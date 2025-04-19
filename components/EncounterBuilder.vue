@@ -15,7 +15,7 @@
       <PartyBuilder />
     </div>
 
-    <div v-if="isLoading" class="py-4 text-center">
+    <div v-if="isLoadingOverride ?? isLoading" class="py-4 text-center">
       <p class="text-sm text-gray-300 dark:text-gray-200">
         Loading monster data...
       </p>
@@ -65,6 +65,7 @@
         <div class="flex gap-1">
           <button
             class="rounded bg-blood px-1 py-0.5 text-sm font-medium text-white hover:bg-blood/80 dark:bg-blood dark:hover:bg-red-400"
+            data-testid="remove-monster"
             @click="removeMonster(monster.id)"
           >
             <Icon name="heroicons:minus" />
@@ -75,6 +76,7 @@
           >
           <button
             class="rounded bg-blood px-1 py-0.5 text-sm font-medium text-white hover:bg-blood/80 dark:bg-blood dark:hover:bg-red-400"
+            data-testid="increment-monster"
             @click="incrementMonster(monster.id)"
           >
             <Icon name="heroicons:plus" />
@@ -93,13 +95,15 @@
       </div>
 
       <div v-if="partyRows.length" class="mb-4">
-        <table class="w-full text-sm">
+        <table
+          class="w-full overflow-hidden rounded border-0 bg-white text-sm dark:bg-gray-900"
+        >
           <thead>
-            <tr>
+            <tr class="border-0">
               <th
                 v-for="(budget, difficulty) in { trivial: 0, ...partyXPBudget }"
                 :key="difficulty"
-                class="py-1"
+                class="border-0 py-1"
                 :class="[
                   difficultyColors(difficulty as DifficultyLevel),
                   {
@@ -113,11 +117,11 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="border-0">
               <td
                 v-for="(budget, difficulty) in { trivial: 0, ...partyXPBudget }"
                 :key="difficulty"
-                class="py-1"
+                class="border-0 py-1"
                 :class="[
                   difficultyColors(difficulty as DifficultyLevel),
                   {
@@ -139,6 +143,7 @@
 
       <button
         class="w-full border-t border-gray-200 py-2 text-center text-sm text-blood hover:text-black dark:border-gray-700 dark:text-red-400 dark:hover:text-white"
+        data-testid="clear-encounter"
         @click="clearEncounter"
       >
         Clear Encounter
@@ -158,6 +163,11 @@ import PartyBuilder from '~/components/PartyBuilder.vue';
 import MonsterSearch from '~/components/MonsterSearch.vue';
 import { ref, computed, onMounted } from 'vue';
 import type { Monster } from '~/types/monster';
+
+// Prop included for testing purposes
+const props = defineProps<{
+  isLoadingOverride?: boolean;
+}>();
 
 const emit = defineEmits(['hide-encounter']);
 

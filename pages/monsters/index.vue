@@ -115,6 +115,7 @@
                       class:
                         'p-1 text-sm font-medium text-white bg-blood rounded hover:bg-blood/80',
                       onClick: () => addToEncounter(data),
+                      'data-testid': 'add-to-encounter',
                     },
                     h(PlusIcon, { class: 'w-4 h-4' })
                   ),
