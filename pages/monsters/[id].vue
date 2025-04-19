@@ -270,7 +270,7 @@ const initiativeBonus = computed(() => {
 // rtrns an object whose keys are action types & vals are arrays of actions.
 const actions = computed(() => {
   if (!monster?.value?.actions) return {};
-  return monster.value.actions.reduce(
+  const actionsByType = monster.value.actions.reduce(
     (output, action) => {
       const { action_type: actionType } = action;
       if (output[actionType]) output[actionType].push(action);
@@ -279,6 +279,13 @@ const actions = computed(() => {
     },
     { ACTION: [] }
   );
+
+  // sort monster actions according to the value of their 'order' field
+  Object.keys(actionsByType).forEach((type) => {
+    actionsByType[type].sort((a, b) => a['order'] - b['order']);
+  });
+
+  return actionsByType;
 });
 
 // Converts SNAKE_CASE to Title Case, used for action type headers
