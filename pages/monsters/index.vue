@@ -78,7 +78,7 @@
         },
         {
           displayName: 'Type',
-          value: (data) => data.type.name,
+          value: (data) => data.type?.name,
           sortValue: 'type',
         },
         {
@@ -86,6 +86,43 @@
           value: (data) => data.size.name,
           sortValue: 'size',
           isLeastPriority: true,
+        },
+        {
+          displayName: '',
+          value: () => '',
+          customTemplate: (data) => ({
+            render: () => {
+              const monsterInEncounter = encounterStore.monsters.value.find(
+                (m) => m.id === data.key
+              );
+              return h(
+                'div',
+                { class: 'flex gap-2 justify-end hidden lg:flex' },
+                [
+                  monsterInEncounter &&
+                    h(
+                      'button',
+                      {
+                        class:
+                          'p-1 text-sm font-medium text-white bg-blood rounded hover:bg-blood/80',
+                        onClick: () => removeFromEncounter(data),
+                      },
+                      h(MinusIcon, { class: 'w-4 h-4' })
+                    ),
+                  h(
+                    'button',
+                    {
+                      class:
+                        'p-1 text-sm font-medium text-white bg-blood rounded hover:bg-blood/80',
+                      onClick: () => addToEncounter(data),
+                      'data-testid': 'add-to-encounter',
+                    },
+                    h(PlusIcon, { class: 'w-4 h-4' })
+                  ),
+                ]
+              );
+            },
+          }),
         },
       ]"
       :sort-by="sortBy"
@@ -96,6 +133,11 @@
 </template>
 
 <script setup lang="ts">
+import { h } from 'vue';
+import { useEncounterStore } from '~/composables/useEncounter';
+import { computed } from 'vue';
+import { PlusIcon, MinusIcon } from '@heroicons/vue/24/solid';
+
 // Set up filters
 const filterState = useFilterState<MonsterFilter>({
   key: 'monsters',
@@ -107,11 +149,13 @@ const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fields to fetch from API to populate table
 const fields = [
+  'id',
   'key',
   'name',
   'document',
   'challenge_rating_text',
   'challenge_rating_decimal',
+  'experience_points',
   'document',
   'type',
   'size',
@@ -143,4 +187,28 @@ const {
   prevPage,
   nextPage,
 } = paginator;
+
+const encounterStore = useEncounterStore();
+
+const addToEncounter = (monster: any) => {
+  encounterStore.addMonster(
+    monster.key,
+    monster.name,
+    monster.challenge_rating_decimal,
+    monster.challenge_rating_text
+  );
+};
+
+const removeFromEncounter = (monster: any) => {
+  encounterStore.removeMonster(monster.key);
+};
+
+const debouncedFilter = computed(() => filterState.debouncedFilter);
+
+// Expose values to template
+defineExpose({
+  filterState,
+  debouncedFilter,
+  MONSTER_CHALLENGE_RATINGS_MAP,
+});
 </script>

@@ -4,11 +4,9 @@
     <div class="flex items-end justify-between gap-8">
       <h1 class="flex-auto">{{ monster.name }}</h1>
 
-      <div class="flex flex-none items-start">
-        <button
-          class="flex items-center gap-1 rounded-md p-1 text-xs text-blood outline outline-1 outline-blood hover:bg-blood hover:text-white"
-          @click="toggleMode()"
-        >
+      <div class="flex flex-none items-start gap-2">
+        <!-- <button           class="flex items-center gap-1 rounded-md p-1 text-xs text-blood outline outline-1 outline-blood hover:bg-blood hover:text-white"
+          @click="toggleMode()">          
           <icon
             :name="
               mode === 'compact'
@@ -16,7 +14,20 @@
                 : 'heroicons:arrows-pointing-in'
             "
           />
-          {{ mode === 'compact' ? 'Regular statblock' : 'Compact statblock' }}
+          {{ mode === 'compact' ? 'Regular statblock' : 'Compact statblock' }}</button> -->
+        <button
+          v-if="monsterInEncounter"
+          class="flex hidden h-8 items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80 lg:flex"
+          @click="removeFromEncounter"
+        >
+          <Icon name="heroicons:minus" />
+        </button>
+        <button
+          class="rounded bg-blood px-2 py-1 text-sm font-medium text-white hover:bg-blood/80 dark:bg-blood dark:hover:bg-red-400"
+          data-testid="add-to-encounter"
+          @click="addToEncounter"
+        >
+          <Icon name="heroicons:plus" /> Add to Encounter
         </button>
       </div>
     </div>
@@ -40,7 +51,11 @@
         {{ monster.alignment }}
       </span>
 
-      <source-tag :title="monster.document.name" :text="monster.document.key" />
+      <source-tag
+        :title="monster.document.name"
+        :text="monster.document.key"
+        :description="monster.document.source"
+      />
     </p>
 
     <dl class="grid grid-cols-[10rem_1fr]">
@@ -244,7 +259,9 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { useEncounterStore } from '~/composables/useEncounter';
+
 const route = useRoute();
 const params = {
   environments__fields: 'name',
@@ -378,6 +395,28 @@ function toggleMode() {
     query: mode.value === 'compact' ? { mode: 'compact' } : null,
   });
 }
+
+const encounterStore = useEncounterStore();
+
+const addToEncounter = () => {
+  if (!monster.value) return;
+  encounterStore.addMonster(
+    monster.value.key,
+    monster.value.name,
+    monster.value.challenge_rating_decimal,
+    monster.value.challenge_rating_text
+  );
+};
+
+const monsterInEncounter = computed(() => {
+  if (!monster.value) return false;
+  return encounterStore.monsters.value.find((m) => m.id === monster.value.key);
+});
+
+const removeFromEncounter = () => {
+  if (!monster.value) return;
+  encounterStore.removeMonster(monster.value.key);
+};
 </script>
 
 <style scoped lang="scss">

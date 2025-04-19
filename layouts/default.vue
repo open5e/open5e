@@ -6,7 +6,7 @@
   >
     <sources-modal :show="showModal" @close="showModal = false" />
     <div
-      class="bg-dark m-auto grid h-full min-h-screen max-w-[1280px] grid-flow-col transition-all sm:ml-0 sm:w-screen sm:grid-cols-[14rem_1fr] sm:overflow-y-auto sm:transition-none"
+      class="bg-dark m-auto grid h-full min-h-screen max-w-[1440px] grid-flow-col transition-all sm:ml-0 sm:w-screen sm:grid-cols-[14rem_1fr] sm:overflow-y-auto sm:transition-none"
       :class="showSidebar ? 'ml-56' : '-ml-56'"
     >
       <!-- Sidebar -->
@@ -88,6 +88,10 @@
         <div class="flex h-12 items-center gap-1 px-2 sm:pl-8">
           <SidebarToggle class="sm:hidden" @click="toggleSidebar" />
           <BreadcrumbLinks class="flex-grow" />
+          <EncounterSummary
+            v-if="!isEncounterVisible"
+            @show-encounter="showEncounter"
+          />
           <ThemeSwitcher />
         </div>
 
@@ -100,18 +104,32 @@
 
         <page-notifications />
 
-        <!-- Main page content -->
-        <nuxt-page
-          class="main-content pt-auto mx-0 w-full px-4 py-4 pb-0 text-darkness dark:text-white sm:px-8"
-        />
+        <!-- Main content -->
+        <div class="flex flex-col">
+          <div class="flex">
+            <div class="flex-1">
+              <nuxt-page
+                class="main-content pt-auto mx-0 w-full px-4 py-4 pb-0 text-darkness dark:text-white sm:px-8"
+              />
+            </div>
+            <div
+              v-if="isEncounterVisible"
+              class="top-0 hidden w-80 flex-shrink-0 border-l lg:block"
+            >
+              <EncounterBuilder @hide-encounter="isEncounterVisible = false" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useRoute } from 'nuxt/app';
 import { computed } from 'vue';
+import EncounterBuilder from '~/components/EncounterBuilder.vue';
+import EncounterSummary from '~/components/EncounterSummary.vue';
 
 // Generate page title from Breadcrumbs
 const BASE_TITLE = 'Open5e';
@@ -123,6 +141,7 @@ const title = computed(() => {
 useHead({ title: title });
 
 const showSidebar = ref(false);
+const isEncounterVisible = ref(false);
 const route = useRoute();
 watch(
   () => route.path,
@@ -154,6 +173,7 @@ function doSearch(searchText) {
 
 const toggleSidebar = () => (showSidebar.value = !showSidebar.value);
 const hideSidebar = () => (showSidebar.value = false);
+const showEncounter = () => (isEncounterVisible.value = true);
 </script>
 
 <style lang="scss">
