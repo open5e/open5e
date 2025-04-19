@@ -48,11 +48,8 @@
       <dt class="font-bold after:content-['_']">Armor Class</dt>
       <dd>
         <span>{{ monster.armor_class }}</span>
-        <span
-          v-if="monster.armor_desc"
-          class="before:content-['_('] after:content-[')']"
-        >
-          {{ monster.armor_desc }}
+        <span v-if="monster.armor_detail" class="text-charcoal dark:text-smoke">
+          ({{ monster.armor_detail }})
         </span>
       </dd>
 
