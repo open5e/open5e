@@ -158,11 +158,8 @@
         <span for="challenge" class="inline font-bold after:content-['_']">
           Challenge
         </span>
-        <span>
-          {{
-            `${monster.challenge_rating_text} (${monster.experience_points} XP)`
-          }}
-        </span>
+        <span>{{ monster.challenge_rating_text + ' ' }}</span>
+        <span>{{ `(${monster.experience_points.toLocaleString()} XP)` }}</span>
       </ul>
     </section>
 
