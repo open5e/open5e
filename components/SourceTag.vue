@@ -1,3 +1,18 @@
+<script>
+/**
+ * SourceTag.vue - Renders a colorful bubble containing infomation about an
+ * item from the Open5e API's source document. Inline, designed by follow the
+ * title of the API result.
+ *
+ * -= PROPS (INPUTS) =-
+ * @prop {String} text - Text displayed on the tag. Typically a source's 'key'
+ * @prop {String} title - Tooltip text that appears on hover
+ * @prop {String} textColor - text color of tag
+ * @prop {String} background - background color of tag
+ * @prop {String} border - border color of tag
+ */
+</script>
+
 <template>
   <span
     :class="['tag-element', 'font-sans', 'font-medium', 'ml-2']"

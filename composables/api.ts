@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/vue-query';
 import axios from 'axios';
+import { unref } from 'vue';
 
 export const API_ENDPOINTS = {
   backgrounds: 'v2/backgrounds/',
@@ -96,7 +97,7 @@ export const useAPI = () => {
 
 export const useFindMany = (
   endpoint: MaybeRef<string>,
-  params?: MaybeRef<Record<string, string | number>>,
+  params?: MaybeRef<Record<string, string | number | boolean>>,
 ) => {
   const { findMany } = useAPI();
 
@@ -138,7 +139,7 @@ const fetchNestedResources = async (
         parentKey = part;
         currentData = currentData[part];
       } else {
-        (currentData as Record<string, never>)[part] = null;
+        (currentData as Record<string, null>)[part] = null;
         break;
       }
     }
@@ -270,9 +271,9 @@ export const useSearch = (queryRef: Ref<string>) => {
     queryFn: () =>
       queryRef.value
         ? findMany(API_ENDPOINTS.search, [], {
-          schema: 'v2',
-          query: queryRef.value,
-        })
+            schema: 'v2',
+            query: queryRef.value,
+          })
         : [],
   });
 };

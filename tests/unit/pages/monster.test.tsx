@@ -203,6 +203,16 @@ mockNuxtImport('useFindOne', () => {
         },
       ],
       creaturesets: [],
+      traits: [
+        {
+          url: 'http://localhost:8000/v2/creaturetraits/srd_goblin_nimble-escape/',
+          key: 'srd_goblin_nimble-escape',
+          name: 'Nimble Escape',
+          desc: 'The goblin can take the Disengage or Hide action as a bonus action on each of its turns.',
+          type: null,
+          parent: 'http://localhost:8000/v2/creatures/srd_goblin/',
+        },
+      ],
     },
   });
 });

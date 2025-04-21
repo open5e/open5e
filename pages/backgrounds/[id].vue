@@ -11,12 +11,7 @@
         <SourceTag
           class="inline"
           :title="background.document.name"
-          :text="
-            background.document.url
-              .split('/')
-              .filter((exists) => exists)
-              .pop()
-          "
+          :text="background.document.key"
         />
       </div>
       <MdViewer :text="background.desc" />
@@ -86,30 +81,30 @@ const { data: background } = useFindOne(
 const benefits = computed(() => {
   const [proficiencies, features, flavour] = benefits.value
     ? benefits.value.reduce(
-      (acc, benefit) => {
+        (acc, benefit) => {
         // sort profs, langs, equipment, &c into 'proficiencies'
-        if (
-          [
-            'equipment',
-            'language',
-            'skill_proficiency',
-            'tool_proficiency',
-            'ability_score',
-          ].includes(benefit.type)
-        ) {
-          return [[...acc[0], benefit], acc[1], acc[2]];
-        }
+          if (
+            [
+              'equipment',
+              'language',
+              'skill_proficiency',
+              'tool_proficiency',
+              'ability_score',
+            ].includes(benefit.type)
+          ) {
+            return [[...acc[0], benefit], acc[1], acc[2]];
+          }
 
-        // sort features into 'features'
-        if (benefit.type === 'feature') {
-          return [acc[0], [...acc[1], benefit], acc[2]];
-        }
+          // sort features into 'features'
+          if (benefit.type === 'feature') {
+            return [acc[0], [...acc[1], benefit], acc[2]];
+          }
 
-        // base-case: sort remaining benefits into 'flavour'
-        return [acc[0], acc[1], [...acc[2], benefit]];
-      },
-      [[], [], []],
-    )
+          // base-case: sort remaining benefits into 'flavour'
+          return [acc[0], acc[1], [...acc[2], benefit]];
+        },
+        [[], [], []],
+      )
     : [[], [], []];
 
   return { proficiencies, features, flavour };

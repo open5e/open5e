@@ -97,6 +97,7 @@ export const useFindPaginated = (options: {
       lastPage,
       pageNo,
       lastPageNo,
+      itemsPerPage,
     },
   };
 };

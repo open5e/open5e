@@ -1,16 +1,20 @@
 <template>
-  <div class="overflow-hidden text-darkness">
-    <SourcesModal
+  <!-- BACKGROUND (visible behind page content at wide screen widths)       -->
+  <!-- bg-radial-gradiant arbitrary classes generate the dotted bg pattern  -->
+  <div
+    class="grid justify-center overflow-hidden bg-fog bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
+  >
+    <sources-modal
       :show="showModal"
       @close="showModal = false"
     />
     <div
-      class="grid h-screen w-screen grid-flow-col bg-white transition-all dark:bg-darkness sm:ml-0 sm:grid-cols-[14rem_1fr] sm:overflow-y-auto sm:transition-none"
-      :class="showSidebar ? 'ml-0' : '-ml-56'"
+      class="bg-dark m-auto grid h-full min-h-screen max-w-screen-xl grid-flow-col transition-all sm:ml-0 sm:w-screen sm:grid-cols-[14rem_1fr] sm:overflow-y-auto sm:transition-none"
+      :class="showSidebar ? 'ml-56' : '-ml-56'"
     >
       <!-- Sidebar -->
       <div
-        class="z-50 flex w-56 flex-col overflow-y-auto bg-slate-700 text-white dark:bg-slate-900"
+        class="z-50 flex h-full w-56 flex-col overflow-y-auto bg-slate-700 text-white dark:bg-charcoal"
       >
         <!-- Logo -->
         <NuxtLink
@@ -65,34 +69,8 @@
           />
         </div>
 
-        <!-- Navigation Links -->
-        <ul class="text-white">
-          <li
-            v-for="section in routes"
-            :key="section.title"
-          >
-            <NavLink :to="section.route">
-              {{ section.title }}
-            </NavLink>
-            <ul
-              v-if="section.subroutes"
-              v-show="useRoute().path.indexOf(section.route) != -1"
-              class="bg-slate-800/30 py-2"
-            >
-              <li
-                v-for="page in section.subroutes"
-                :key="page.key"
-              >
-                <NavLink
-                  :to="`${section.route}/${page.key}`"
-                  :indent="true"
-                >
-                  {{ page.name }}
-                </NavLink>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <!-- Sidebar Navigation -->
+        <NavBar />
 
         <!-- Report Issue UI -->
         <ReportIssue />
@@ -172,62 +150,9 @@ const { data: documents } = useDocuments({
   depth: 0,
 });
 
-const { data: classes } = useFindMany(API_ENDPOINTS.classes, {
-  fields: ['name', 'key'].join(),
-  is_subclass: false,
-});
-
 const no_available_sources = computed(() => documents.value?.length ?? 0);
 
 const isLoadingData = useIsFetching();
-
-const routes = computed(() => [
-  {
-    title: 'Classes',
-    route: '/classes',
-    subroutes: classes.value ?? [],
-  },
-  {
-    title: 'Races',
-    route: '/races',
-  },
-  {
-    title: 'Monsters',
-    route: '/monsters',
-  },
-  {
-    title: 'Magic Items',
-    route: '/magic-items',
-  },
-  {
-    title: 'Spells',
-    route: '/spells',
-  },
-  {
-    title: 'Backgrounds',
-    route: '/backgrounds',
-  },
-  {
-    title: 'Feats',
-    route: '/feats',
-  },
-  {
-    title: 'Equipment',
-    route: '/equipment',
-  },
-  {
-    title: 'Conditions',
-    route: '/conditions',
-  },
-  {
-    title: 'Rules',
-    route: '/rules',
-  },
-  {
-    title: 'API Docs',
-    route: '/api-docs',
-  },
-]);
 
 const router = useRouter();
 
@@ -236,13 +161,8 @@ function doSearch(searchText) {
   showSidebar.value = false;
 }
 
-function toggleSidebar() {
-  showSidebar.value = !showSidebar.value;
-}
-
-function hideSidebar() {
-  showSidebar.value = false;
-}
+const toggleSidebar = () => (showSidebar.value = !showSidebar.value);
+const hideSidebar = () => (showSidebar.value = false);
 </script>
 
 <style>

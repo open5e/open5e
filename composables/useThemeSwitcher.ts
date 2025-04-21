@@ -3,9 +3,7 @@ export type Theme = 'light' | 'dark';
 const theme = ref<Theme | ''>('');
 
 export function useThemeSwitcher() {
-  onMounted(() => {
-    theme.value = getTheme();
-  });
+  onMounted(() => (theme.value = getTheme()));
 
   function getFallbackTheme(): Theme {
     return window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -14,10 +12,8 @@ export function useThemeSwitcher() {
   }
 
   function getTheme(): Theme {
-    if (!import.meta.client) {
-      return getFallbackTheme();
-    }
-    return localStorage.getItem('theme') || getFallbackTheme();
+    if (!import.meta.client) return getFallbackTheme();
+    return (localStorage.getItem('theme') || getFallbackTheme()) as Theme;
   }
 
   function toggleTheme() {
@@ -28,9 +24,7 @@ export function useThemeSwitcher() {
     const body = document.documentElement;
     body.classList.add(themeToSet);
     body.classList.remove(themeToSet === 'light' ? 'dark' : 'light');
-    if (import.meta.client) {
-      localStorage.setItem('theme', themeToSet);
-    }
+    if (import.meta.client) localStorage.setItem('theme', themeToSet);
     theme.value = themeToSet;
   }
 

@@ -54,20 +54,37 @@
       />
     </p>
 
-    <ul>
-      <!-- Size / Type / Alignment / Source Tag -->
-      <li>
-        <span class="font-bold after:content-['_']">Armor Class</span>
+    <dl class="grid grid-cols-[10rem_1fr]">
+      <!-- ARMOR CLASS -->
+      <dt class="font-bold after:content-['_']">
+        Armor Class
+      </dt>
+      <dd>
         <span>{{ monster.armor_class }}</span>
         <span
-          v-if="monster.armor_desc"
-          class="before:content-['_('] after:content-[')']"
+          v-if="monster.armor_detail"
+          class="text-charcoal dark:text-smoke"
         >
-          {{ monster.armor_desc }}
+          ({{ monster.armor_detail }})
         </span>
-      </li>
-      <li>
-        <span class="font-bold after:content-['_']">Hit Points</span>
+      </dd>
+
+      <!-- INITIATIVE BONUS -->
+      <dt class="font-bold after:content-['_']">
+        Initiative Bonus
+      </dt>
+      <dd
+        class="w-min cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
+        @click="useDiceRoller(initiativeBonus)"
+      >
+        {{ useFormatModifier(initiativeBonus) }}
+      </dd>
+
+      <!-- HIT POINTS -->
+      <dt class="font-bold after:content-['_']">
+        Hit Points
+      </dt>
+      <dd>
         <span class="after:content-['_']">{{ monster.hit_points }}</span>
         <span
           v-if="monster.hit_dice"
@@ -76,75 +93,32 @@
         >
           {{ `(${monster.hit_dice})` }}
         </span>
-      </li>
+      </dd>
 
-      <!-- SPEED -->
-      <li>
-        <span class="font-bold after:content-['_']">Speed</span>
+      <!-- SPEEDS -->
+      <dt class="font-bold after:content-['_']">
+        Speed
+      </dt>
+      <dd>
         <span
-          v-for="(speed, key) in speeds"
-          :key="key"
+          v-for="speed in speeds"
+          :key="speed"
           class="after:content-[',_'] last:after:content-[]"
         >
-          <span
-            v-if="key !== 'walk'"
-            class="after:content-['_']"
-          >
-            {{ key }}
-          </span>
-          <span class="after:content-['_ft.']">
-            {{ speed }}
-          </span>
+          {{ speed }}
         </span>
-      </li>
-    </ul>
+      </dd>
+    </dl>
 
     <hr />
 
-    <!-- ABILITY SCORES -->
-    <ul class="flex max-w-96 items-center gap-4 text-center">
-      <li
-        v-for="(score, ability) in monster.ability_scores"
-        :key="ability"
-      >
-        <label class="block font-bold uppercase">
-          {{ ability.substring(0, 3) }}
-        </label>
-        <span class="after:content-['_']">{{ score }}</span>
-        <span
-          class="cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
-          @click="useDiceRoller(monster.modifiers[ability].toString())"
-        >
-          {{ `(${useFormatModifier(monster.modifiers[ability])})` }}
-        </span>
-      </li>
-    </ul>
+    <!-- MONSTER ABILITY SCORES & SAVING THROWS TABLE -->
+    <MonsterAbilities :monster="monster" />
 
     <hr />
 
     <!-- BOX UNDER STATS -->
-    <section>
-      <!-- SAVING THROWS -->
-      <ul
-        v-if="Object.keys(monster.saving_throws).length > 0"
-        id="saves"
-      >
-        <label
-          for="saves"
-          class="inline font-bold after:content-['_']"
-        >
-          Saving Throws
-        </label>
-        <li
-          v-for="(save, name) in monster.saving_throws"
-          :key="name"
-          class="inline cursor-pointer font-bold text-blood after:content-[',_'] last:after:content-[] hover:text-black dark:hover:text-fog"
-          @click="useDiceRoller(save.toString())"
-        >
-          {{ `${name.toUpperCase().slice(0, 3)} ${useFormatModifier(save)}` }}
-        </li>
-      </ul>
-
+    <section class="my-4">
       <!-- SKILLS -->
       <ul
         v-if="Object.keys(monster.skill_bonuses).length > 0"
@@ -159,70 +133,25 @@
         <li
           v-for="(modifier, skill) in monster.skill_bonuses"
           :key="skill"
-          class="inline cursor-pointer font-bold capitalize text-blood after:content-[',_'] last:after:content-[] hover:text-black dark:hover:text-fog"
+          class="inline cursor-pointer font-bold capitalize text-blood after:text-black after:content-[',_'] last:after:content-[] hover:text-black dark:after:text-white dark:hover:text-fog"
           @click="useDiceRoller(modifier.toString())"
         >
           {{ `${skill} ${useFormatModifier(modifier)}` }}
         </li>
       </ul>
 
-      <!-- DAMAGE IMMUNITIES -->
+      <!-- RESISTANCES, VULNERABILITY AND IMMUNITIES -->
       <ul
-        v-if="damageImmunities.length > 0"
-        id="dmg-immunities"
+        v-for="(data, title) in resistancesAndVulnerabilities"
+        :key="title"
       >
-        <label
-          for="dmg-immunities"
-          class="inline font-bold after:content-['_']"
-        >
-          Damage Immunities
-        </label>
+        <label class="inline font-bold after:content-['_']">{{ title }}</label>
         <li
-          v-for="immunity in damageImmunities"
-          :key="immunity.name"
-          class="inline capitalize after:content-[',_'] last:after:content-[]"
+          v-for="field in data"
+          :key="field.name"
+          class="inline after:content-[',_'] last:after:content-[]"
         >
-          {{ immunity.name }}
-        </li>
-      </ul>
-
-      <!-- DAMAGE RESISTANCES -->
-      <ul
-        v-if="damageResistances.length > 0"
-        id="dmg-resistances"
-      >
-        <label
-          for="dmg-resistances"
-          class="inline font-bold after:content-['_']"
-        >
-          Damage Resistances
-        </label>
-        <li
-          v-for="resistance in damageResistances"
-          :key="resistance.name"
-          class="inline after:content-[',_'] last:after:content-['']"
-        >
-          {{ resistance.name }}
-        </li>
-      </ul>
-
-      <!-- CONDITION IMMUNITIES -->
-      <ul
-        v-if="monster.condition_immunities.length > 0"
-        id="conditions"
-      >
-        <label
-          for="conditions"
-          class="inline font-bold after:content-['_']"
-        >
-          Condition Immunities
-        </label>
-        <li
-          v-for="immunity in monster.condition_immunities"
-          :key="immunity.name"
-          class="inline capitalize after:content-[',_'] last:after:content-[]"
-        >
-          {{ immunity.name }}
+          {{ field.name }}
         </li>
       </ul>
 
@@ -274,154 +203,59 @@
         >
           Challenge
         </span>
-        <span>
-          {{
-            `${monster.challenge_rating_text} (${monster.experience_points} XP)`
-          }}
-        </span>
+        <span>{{ monster.challenge_rating_text + ' ' }}</span>
+        <span>{{ `(${monster.experience_points.toLocaleString()} XP)` }}</span>
       </ul>
     </section>
 
-    <!-- SPECIAL ABILITIES -->
-    <section v-if="monster.special_abilities">
-      <p
-        v-for="ability in monster.special_abilities"
-        :key="ability.name"
-        class="action-block"
-      >
-        <span class="font-bold after:content-['.']">{{ ability.name }}</span>
-        <md-viewer
-          inline="true"
-          :text="ability.desc"
-        />
-      </p>
-    </section>
-
-    <!-- ACTIONS -->
-    <section v-if="monster.actions.length !== 0">
-      <h2>Actions</h2>
-      <ul id="actions-list">
+    <!-- TRAITS -->
+    <section v-if="monster.traits?.length !== 0">
+      <h2>Traits</h2>
+      <ul id="traits-list">
         <li
-          v-for="action in monster.actions"
-          :key="action.name"
+          v-for="trait in monster.traits"
+          :key="trait.key"
           class="my-1"
         >
           <span class="font-bold after:content-['._']">
-            <span>{{ action.name }}</span>
-            <span
-              v-if="action.recharge_on_roll"
-              class="before:content-['_']"
-            >
-              {{ `(Recharge ${action.recharge_on_roll}-6)` }}
-            </span>
+            {{ trait.name }}
           </span>
           <md-viewer
             :inline="true"
-            :text="action.desc"
+            :text="trait.desc"
             :use-roller="true"
           />
         </li>
       </ul>
     </section>
 
-    <!-- BONUS ACTIONS -->
-    <section v-if="monster.bonus_actions">
-      <h2>Actions</h2>
+    <!-- CREATURE ACTIONS -->
+    <section
+      v-for="(actionsByType, actionType) in actions"
+      :key="actionsByType"
+    >
+      <h2>{{ snakeToTitleCase(actionType) }}</h2>
       <ul>
         <li
-          v-for="action in monster.bonus_actions"
+          v-for="action in actionsByType"
           :key="action.name"
-          class="after:content-[': '] my-1"
+          class="my-1"
         >
-          <span class="font-bold">{{ action.name }}. </span>
+          <span class="font-bold after:content-['_']">{{ action.name }}</span>
+          <span
+            v-if="action.uses_type === 'RECHARGE_ON_ROLL'"
+            class="cursor-pointer font-bold text-blood before:text-black before:content-['_('] after:text-black after:content-[')_'] hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
+            @click="useDiceRoller('1d6+0')"
+          >
+            {{
+              'Recharge '
+                + (action.uses_param < 6 ? `${action.uses_param}-6` : '6')
+            }}
+          </span>
           <md-viewer
             inline="true"
             :text="action.desc"
-          />
-        </li>
-      </ul>
-    </section>
-
-    <!-- REACTIONS -->
-    <section v-if="monster.reactions">
-      <h2>Reactions</h2>
-      <ul>
-        <li
-          v-for="action in monster.reactions"
-          :key="action.name"
-          class="after:content-[': '] my-1"
-        >
-          <span class="font-bold">{{ action.name }}. </span>
-          <md-viewer
-            inline="true"
-            :text="action.desc"
-          />
-        </li>
-      </ul>
-    </section>
-
-    <!-- LEGENDARY ACTIONS -->
-    <section v-if="monster.legendary_actions">
-      <h2>Legendary Actions</h2>
-      <p
-        v-if="monster.legendary_desc"
-        class="text"
-      >
-        {{ monster.legendary_desc }}
-      </p>
-
-      <ul>
-        <li
-          v-for="action in monster.legendary_actions"
-          :key="action.name"
-          class="after:content-[': '] my-1"
-        >
-          <span class="font-bold">{{ action.name }}. </span>
-          <md-viewer
-            inline="true"
-            :text="action.desc"
-          />
-        </li>
-      </ul>
-    </section>
-
-    <!-- MYTHIC ACTIONS -->
-    <section v-if="monster.mythic_actions">
-      <h2>Mythic Actions</h2>
-      <ul>
-        <li
-          v-for="action in monster.mythic_actions"
-          :key="action.name"
-          class="after:content-[': '] my-1"
-        >
-          <span class="font-bold">{{ action.name }}. </span>
-          <md-viewer
-            inline="true"
-            :text="action.desc"
-          />
-        </li>
-      </ul>
-    </section>
-
-    <!-- LAIR ACTIONS -->
-    <section v-if="monster.lair_actions">
-      <h2>Lair Actions</h2>
-      <p
-        v-if="monster.lair_desc"
-        class="text"
-      >
-        {{ monster.lair_desc }}
-      </p>
-      <ul>
-        <li
-          v-for="action in monster.lair_actions"
-          :key="action.name"
-          class="after:content-[': '] my-1"
-        >
-          <span class="font-bold">{{ action.name }}. </span>
-          <md-viewer
-            inline="true"
-            :text="action.desc"
+            :use-roller="true"
           />
         </li>
       </ul>
@@ -484,11 +318,50 @@ const { data: monster } = useFindOne(
   { params },
 );
 
-// filter "unit" prop from "speeds"
+// Calculate initiative bonus from dexterity modifier if not explicitly set
+const initiativeBonus = computed(() => {
+  if (!monster.value) return 0;
+  return monster.value.initiative_bonus ?? monster.value.modifiers?.dexterity;
+});
+
+// Sort monster actions by type (ie. 'action', 'bonus action', 'reaction').
+// rtrns an object whose keys are action types & vals are arrays of actions.
+const actions = computed(() => {
+  if (!monster?.value?.actions) return {};
+  const actionsByType = monster.value.actions.reduce(
+    (output, action) => {
+      const { action_type: actionType } = action;
+      if (output[actionType]) output[actionType].push(action);
+      else output[actionType] = [action];
+      return output;
+    },
+    { ACTION: [] },
+  );
+
+  // sort monster actions according to the value of their 'order' field
+  Object.keys(actionsByType).forEach((type) => {
+    actionsByType[type].sort((a, b) => a['order'] - b['order']);
+  });
+
+  return actionsByType;
+});
+
+// Converts SNAKE_CASE to Title Case, used for action type headers
+const snakeToTitleCase = input =>
+  input
+    .toLowerCase()
+    .split('_')
+    .map(word => word[0].toUpperCase() + word.substring(1))
+    .join(' ');
+
+// Format monster speeds for template
 const speeds = computed(() => {
   if (!monster?.value?.speed) return {};
-  const { unit, ...rest } = monster.value.speed;
-  return rest;
+  const { unit, ...speeds } = monster.value.speed;
+  return Object.entries(speeds).map(
+    ([speed, distance]) =>
+      (speed === 'walk' ? '' : speed + ' ') + `${distance} ft.`,
+  );
 });
 
 // assemble senses from multiple fields
@@ -511,36 +384,43 @@ const senses = computed(() => {
   return senses;
 });
 
-// format damage resistances correctly (damage from non-magic weapons)
-const damageResistances = computed(() => {
-  if (!monster?.value) return {};
-  if (!monster.value.nonmagical_attack_resistance) {
-    return monster.value.damage_resistances;
-  }
-  return [
-    ...monster.value.damage_resistances.filter(
-      res => !['Bludgeoning', 'Slashing', 'Piercing'].includes(res.name),
-    ),
-    {
-      name: 'Bludgeoning, Piercing and Slashing from Nonmagical Attacks',
-    },
-  ];
-});
+// format monster damage/condition vulnerabilities, resistances & immunities
+const resistancesAndVulnerabilities = computed(() => {
+  const { value: monsterData } = monster;
+  if (!monsterData) return {};
 
-// format damage resistances correctly (damage from non-magic weapons)
-const damageImmunities = computed(() => {
-  if (!monster?.value) return {};
-  if (!monster.value.nonmagical_attack_immunity) {
-    return monster.value.damage_immunities;
-  }
-  return [
-    ...monster.value.damage_immunities.filter(
-      res => !['Bludgeoning', 'Slashing', 'Piercing'].includes(res.name),
-    ),
-    {
-      name: 'Bludgeoning, Piercing and Slashing from Nonmagical Attacks',
-    },
-  ];
+  const resists = {
+    damage_resistances: monsterData.damage_resistances,
+    damage_vulnerabilities: monsterData.damage_vulnerabilities,
+    damage_immunities: monsterData.damage_immunities,
+    condition_immunities: monsterData.condition_immunities,
+  };
+
+  // helper function: formats 'Bludgeoning, Piercing and Slashing from Nonmagical Attacks'
+  const formatNonMagicAttacks = (field) => {
+    const damageTypesToSub = ['Bludgeoning', 'Slashing', 'Piercing'];
+    const sub = 'Bludgeoning, Piercing and Slashing from Nonmagical Attacks';
+    return [
+      ...field.filter(res => !damageTypesToSub.includes(res.name)),
+      { name: sub },
+    ];
+  };
+
+  // conditionally apply non-magical attack resist/immunity formatting
+  resists.damage_immunities = monsterData.nonmagical_attack_immunity
+    ? formatNonMagicAttacks(resists.damage_immunities)
+    : resists.damage_immunities;
+  resists.damage_resistances = monsterData.nonmagical_attack_resistance
+    ? formatNonMagicAttacks(resists.damage_resistances)
+    : resists.damage_resistances;
+
+  // filter empty keys, re-format object for display, and return
+  return Object.entries(resists)
+    .filter(([_, value]) => value.length > 0)
+    .reduce((acc, [key, value]) => {
+      acc[snakeToTitleCase(key)] = value;
+      return acc;
+    }, {});
 });
 
 const mode = ref(route.query.mode || 'normal');
@@ -556,12 +436,7 @@ function toggleMode() {
 
   navigateTo({
     path: `/monsters/${route.params.id}`,
-    query:
-      mode.value === 'compact'
-        ? {
-            mode: 'compact',
-          }
-        : null,
+    query: mode.value === 'compact' ? { mode: 'compact' } : null,
   });
 }
 </script>

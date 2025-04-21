@@ -19,7 +19,5 @@
 </template>
 
 <script setup lang="ts">
-import { useThemeSwitcher } from '~/composables/useThemeSwitcher';
-
 const { theme, toggleTheme } = useThemeSwitcher();
 </script>

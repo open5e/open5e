@@ -1,3 +1,20 @@
+<script>
+/**
+ * BreadcrumbLinks.vue - A breadcrumb navigation component that displays a hierarchical navigation path.
+ *
+ * -= PROPS (INPUTS) =-
+ * @prop {Array} crumbs - An array of breadcrumb objects, each containing:
+ *   @property {String} url - The URL target of the link
+ *   @property {String} title - The title to display for the breadcrumb.
+ *   @property {String} [subtitle] - Optional subtitle to display after title
+ *     in parentheses.
+ *
+ * -= DEPENDENCIES =-
+ * @component Icon – rendered the 'home' icon next to the link to site index
+ * @composable useBreadcrumbs – generates breadcrumbs from the current URL
+ */
+</script>
+
 <template>
   <nav
     class="flex h-min items-center dark:border-basalt"

@@ -1,3 +1,16 @@
+<script>
+/**
+ * LinkPreview - A card that displays detailed information about a specific category of content.
+ *
+ *
+ * -= PROPS (INPUTS) =-
+ * @prop {String} category - What type of content the preview is linking to.
+ *   Different types of Open5e resources need different data in the preview
+ * @prop {Object} content - content to render on the card. varies with category
+ *
+ */
+</script>
+
 <template>
   <article
     class="absolute top--1 z-10 hidden h-max bg-slate-100 px-4 py-3 text-black shadow-md dark:bg-basalt dark:text-white md:group-hover:block"

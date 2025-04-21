@@ -1,17 +1,27 @@
+<script>
+/**
+ * PageNotifications.vue - A UI wrapper for the `notifications` singleton
+ * returned by the useNotifications composable. Displays notifications in the
+ * lower right corner of the window
+ *
+ * -= DEPENDENCIES =-
+ * - @composable useNotifications: manages notification state and actions.
+ * - @composable useRoute: detect route changes (& clears notifs)
+ *
+ */
+</script>
+
 <template>
-  <div class="absolute bottom-0 right-8 m-0 flex flex-col-reverse p-0">
+  <div class="fixed bottom-0 right-8 m-0 flex min-w-36 flex-col-reverse p-0">
     <div
       v-if="notifications.length"
-      class="flex gap-2 bg-white/80 dark:bg-darkness/80"
+      class="grid justify-end bg-white/80 dark:bg-darkness/80"
     >
-      <h2 class="my-0 text-lg">
-        Notifications
-      </h2>
       <button
-        class="font-bold text-blood hover:text-red-400"
+        class="mr-2 font-bold text-blood hover:text-red-400"
         @click="clear()"
       >
-        Clear
+        Clear All &#x2715;
       </button>
     </div>
     <ul class="flex flex-col">
