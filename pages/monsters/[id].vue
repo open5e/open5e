@@ -48,7 +48,7 @@
         {{ monster.alignment }}
       </span>
 
-      <source-tag
+      <SourceTag
         :title="monster.document.name"
         :text="monster.document.key"
       />

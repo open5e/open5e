@@ -97,7 +97,6 @@
         {
           displayName: 'Concentration',
           value: (data) => (data.concentration ? '√' : '-'),
-          sortValue: 'concentration',
         },
       ]"
       :sort-by="sortBy"
@@ -122,9 +121,15 @@ const filterState = useFilterState<SpellFilter>({
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fields to fetch from API to populate table
-const fields = ['key', 'name', 'document', 'level', 'school', 'classes'].join(
-  ',',
-);
+const fields = [
+  'key',
+  'name',
+  'document',
+  'level',
+  'school',
+  'classes',
+  'concentration',
+].join(',');
 
 // Fetch a page of results and pagination controls
 const { data, paginator } = useFindPaginated({

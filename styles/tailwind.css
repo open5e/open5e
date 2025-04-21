@@ -108,55 +108,6 @@ h5 {
   font-size: 1rem;
 }
 
-.small {
-  font-size: 0.8rem;
-}
-
-.title-case {
-  text-transform: capitalize;
-}
-
-.list--items {
-  list-style: none;
-  margin: 1rem 0;
-  padding-left: 0;
-}
-
-.list--items li {
-    padding: 0.2rem 0;
-}
-
-.three-column {
-  columns: 3;
-  padding-top: 1rem;
-}
-
-.three-column ul {
-  break-inside: avoid-column;
-}
-
-.three-column ul:first-of-type {
-  margin-top: 0;
-}
-
-.three-column ul:first-of-type h3 {
-  margin-top: 0;
-}
-
-@media (max-width: 900px) {
-  .three-column {
-    columns: 2;
-  }
-}
-
-@media (max-width: 600px) {
-  .three-column {
-    columns: 1;
-  }
-}
-
-
-
 table {
   font-size: 14px;
   border-collapse: collapse;
@@ -236,23 +187,6 @@ td {
   border: 0;
 }
 
-.docs-container p,
-.docs-container ul,
-.docs-container dt,
-.docs-container hr,
-.docs-container h1,
-.docs-container h2,
-.docs-container h3,
-.docs-container h4,
-.docs-container h5,
-.docs-container h6,
-.docs-container section {
-  max-width: 40rem;
-}
-.docs-container th:first-child {
-  min-width: 4rem;
-}
-
 blockquote {
   padding: 0.1rem 1rem 1rem 1rem;
   margin-top: 1rem;
@@ -268,9 +202,6 @@ blockquote {
 .side-note h3 {
   @apply mt-0;
 }
-
-
-
 
  /* region Transitions */
 .fade-enter-active,

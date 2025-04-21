@@ -8,19 +8,17 @@
         <h1 class="inline">
           {{ background.name }}
         </h1>
-        <SourceTag
+        <source-tag
           class="inline"
           :title="background.document.name"
           :text="background.document.key"
         />
       </div>
-      <MdViewer :text="background.desc" />
+      <md-viewer :text="background.desc" />
     </section>
 
     <!-- List of proficiencies & other short, mechanical benefits -->
-    <dl
-      class="mt-2"
-    >
+    <dl class="mt-2">
       <div
         v-for="benefit in benefits.proficiencies"
         :key="benefit.name"
@@ -41,7 +39,7 @@
         :key="benefit.name"
       >
         <h2>{{ `Feature: ${benefit.name}` }}</h2>
-        <MdViewer :text="benefit.desc" />
+        <md-viewer :text="benefit.desc" />
       </li>
     </ul>
     <hr />
@@ -61,7 +59,7 @@
           </span>
           <span>{{ benefit.name }}</span>
         </h3>
-        <MdViewer :text="benefit.desc" />
+        <md-viewer :text="benefit.desc" />
       </li>
     </ul>
   </main>
@@ -79,34 +77,32 @@ const { data: background } = useFindOne(
 // sort benefits into different sections
 // different sections will be rendered to different parts of the page
 const benefits = computed(() => {
-  const [proficiencies, features, flavour] = benefits.value
-    ? benefits.value.reduce(
-        (acc, benefit) => {
-        // sort profs, langs, equipment, &c into 'proficiencies'
-          if (
-            [
-              'equipment',
-              'language',
-              'skill_proficiency',
-              'tool_proficiency',
-              'ability_score',
-            ].includes(benefit.type)
-          ) {
-            return [[...acc[0], benefit], acc[1], acc[2]];
-          }
+  if (!background?.value) return {};
+  const [proficiencies, features, flavour] = background.value.benefits.reduce(
+    (acc, benefit) => {
+      // sort profs, langs, equipment, &c into 'proficiencies'
+      if (
+        [
+          'equipment',
+          'language',
+          'skill_proficiency',
+          'tool_proficiency',
+          'ability_score',
+        ].includes(benefit.type)
+      ) {
+        return [[...acc[0], benefit], acc[1], acc[2]];
+      }
 
-          // sort features into 'features'
-          if (benefit.type === 'feature') {
-            return [acc[0], [...acc[1], benefit], acc[2]];
-          }
+      // sort features into 'features'
+      if (benefit.type === 'feature') {
+        return [acc[0], [...acc[1], benefit], acc[2]];
+      }
 
-          // base-case: sort remaining benefits into 'flavour'
-          return [acc[0], acc[1], [...acc[2], benefit]];
-        },
-        [[], [], []],
-      )
-    : [[], [], []];
-
+      // base-case: sort remaining benefits into 'flavour'
+      return [acc[0], acc[1], [...acc[2], benefit]];
+    },
+    [[], [], []],
+  );
   return { proficiencies, features, flavour };
 });
 </script>
