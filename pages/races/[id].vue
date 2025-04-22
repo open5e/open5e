@@ -3,7 +3,16 @@
     v-if="race"
     class="docs-container container"
   >
-    <h1>{{ race.name }}</h1>
+    <div class="flex items-center">
+      <h1 class="inline">
+        {{ race.name }}
+      </h1>
+      <SourceTag
+        class="inline"
+        :title="race.document.name"
+        :text="race.document.key"
+      />
+    </div>
     <dl>
       <h2>Traits</h2>
       <div
@@ -11,11 +20,11 @@
         :key="trait.name"
         class="my-2"
       >
-        <dt class="font-bold after:content-['._']">
+        <dt class="inline font-bold after:content-['._']">
           {{ trait.name }}
         </dt>
         <dd class="inline">
-          <md-viewer
+          <MdViewer
             :inline="true"
             :text="trait.desc"
           />
@@ -29,8 +38,17 @@
         v-for="subrace in subraces"
         :key="subrace.key"
       >
-        <h3>{{ subrace.name }}</h3>
-        <md-viewer
+        <div class="mt-4 flex items-center">
+          <h3 class="mt-0 inline">
+            {{ subrace.name }}
+          </h3>
+          <SourceTag
+            class="inline"
+            :title="subrace.document.name"
+            :text="subrace.document.key"
+          />
+        </div>
+        <MdViewer
           :inline="true"
           :text="subrace.desc"
         />
@@ -40,7 +58,7 @@
             :key="trait.name"
             class="my-2"
           >
-            <dt class="font-bold after:content-['._']">
+            <dt class="inline font-bold after:content-['._']">
               {{ trait.name }}
             </dt>
             <dd class="inline">
