@@ -91,7 +91,7 @@ const classSubroutes = computed(() => {
   if (crumbs.value.length >= 2) {
     const baseClass = crumbs.value[1];
     const subClassesForClass = subClasses
-      .filter(item => item?.['subclass_of']?.includes(baseClass.src))
+      .filter(item => item?.['subclass_of']?.key === baseClass.src)
       .map((item) => {
         const url = `/classes/${baseClass.src}/${item.key}`;
         return { title: item.name, url };

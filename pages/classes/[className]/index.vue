@@ -85,7 +85,7 @@
           <h3>{{ feature.name }}</h3>
           <md-viewer
             :text="feature.desc"
-            header-level="3"
+            :header-level="3"
           />
         </li>
       </ul>
@@ -126,7 +126,7 @@ const features = computed(() => {
       const { feature_type: type } = feature;
       if (type === 'PROFICIENCY_BONUS') acc.proficiencyBonuses = feature;
       else if (type === 'SPELL_SLOTS') acc.spellSlots.push(feature);
-      else if (feature.table_data.length > 0)
+      else if (feature.data_for_class_table.length > 0)
         acc.classTableColumnData.push(feature);
       else if (type === 'CLASS_FEATURE') acc.classFeatures.push(feature);
       else if (type === 'PROFICIENCIES') acc.proficiencies.push(feature);
