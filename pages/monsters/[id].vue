@@ -110,12 +110,12 @@
       </dd>
     </dl>
 
-    <hr />
+    <hr class="my-4 h-[2px] w-[32rem] border-none bg-white bg-gradient-to-r from-fireball dark:bg-darkness dark:from-blood" />
 
     <!-- MONSTER ABILITY SCORES & SAVING THROWS TABLE -->
     <MonsterAbilities :monster="monster" />
 
-    <hr />
+    <hr class="my-4 h-[2px] w-[32rem] border-none bg-white bg-gradient-to-r from-fireball dark:bg-darkness dark:from-blood" />
 
     <!-- BOX UNDER STATS -->
     <section class="my-4">
@@ -181,14 +181,21 @@
           Languages
         </span>
         <li
-          v-for="language in monster.languages"
+          v-if="monster.languages?.as_string"
+          class="inline"
+        >
+          {{ monster.languages.as_string }}
+        </li>
+        <li
+          v-for="language in monster.languages.data"
+          v-else-if="monster.languages.data.length > 0"
           :key="language.name"
           class="inline after:content-[',_'] last:after:content-[]"
         >
           {{ language.name }}
         </li>
         <li
-          v-if="monster.languages.length === 0"
+          v-else
           class="inline"
         >
           -
@@ -267,7 +274,7 @@
       <md-viewer :text="monster.desc" />
     </section>
 
-    <hr />
+    <hr class="my-4 h-[2px] w-[32rem] border-none bg-white bg-gradient-to-r from-fireball dark:bg-darkness dark:from-blood" />
 
     <!-- Monster Environments -->
     <section v-if="monster.environments?.length > 0">
@@ -309,7 +316,6 @@
 const route = useRoute();
 const params = {
   environments__fields: 'name',
-  languages__fields: 'name',
   document__fields: 'name,key,permalink',
 };
 const { data: monster } = useFindOne(

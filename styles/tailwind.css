@@ -176,16 +176,6 @@ td {
   font-size: 1.1rem;
 }
 
-.docs-container hr {
-  margin: 1rem 0;
-  height: 2px;
-  background: linear-gradient(
-    to right,
-    rgba(var(--color-blood), 1) 0%,
-    rgba(var(--color-blood), 0) 100%
-  );
-  border: 0;
-}
 
 blockquote {
   padding: 0.1rem 1rem 1rem 1rem;
