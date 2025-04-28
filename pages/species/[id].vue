@@ -71,11 +71,11 @@
 </template>
 
 <script setup>
-const { data: species } = useFindOne(API_ENDPOINTS.races, useRoute().params.id, {
+const { data: species } = useFindOne(API_ENDPOINTS.species, useRoute().params.id, {
   params: { subspecies_of__isnull: true },
 });
 
-const { data: subspecies } = useFindMany(API_ENDPOINTS.races, {
+const { data: subspecies } = useFindMany(API_ENDPOINTS.species, {
   subspecies_of__key__in: useRoute().params.id,
 });
 

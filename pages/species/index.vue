@@ -2,7 +2,7 @@
   <section class="docs-container container">
     <div class="flex">
       <h1 class="my-2">
-        Races
+        Species
       </h1>
 
       <ApiTableNav
@@ -24,7 +24,7 @@
         {
           displayName: 'Name',
           value: (data) => data.name,
-          link: (data) => `/races/${data.key}`,
+          link: (data) => `/species/${data.key}`,
         },
       ]"
       :sort-by="sortBy"
@@ -39,7 +39,7 @@ const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fetch page of data from API and pagination controls
 const { data, paginator } = useFindPaginated({
-  endpoint: API_ENDPOINTS.races,
+  endpoint: API_ENDPOINTS.species,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   params: {

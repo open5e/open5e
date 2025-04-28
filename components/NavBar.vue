@@ -110,8 +110,8 @@ const routes = computed(() => [
     subroutes: classSubroutes.value,
   },
   {
-    title: 'Races',
-    url: '/races',
+    title: 'Species',
+    url: '/species',
   },
   {
     title: 'Monsters',
