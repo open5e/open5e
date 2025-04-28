@@ -1,16 +1,16 @@
 <template>
   <section
-    v-if="race"
+    v-if="species"
     class="docs-container container"
   >
     <div class="flex items-center">
       <h1 class="inline">
-        {{ race.name }}
+        {{ species.name }}
       </h1>
       <SourceTag
         class="inline"
-        :title="race.document.name"
-        :text="race.document.key"
+        :title="species.document.name"
+        :text="species.document.key"
       />
     </div>
     <dl>
@@ -31,30 +31,29 @@
         </dd>
       </div>
     </dl>
-
-    <ul v-if="Object.keys(subraces).length > 0">
-      <h2>Subraces</h2>
+    <ul v-if="subspecies.length > 0">
+      <h2>Sub-species</h2>
       <li
-        v-for="subrace in subraces"
-        :key="subrace.key"
+        v-for="item in subspecies"
+        :key="item.key"
       >
         <div class="mt-4 flex items-center">
           <h3 class="mt-0 inline">
-            {{ subrace.name }}
+            {{ item.name }}
           </h3>
           <SourceTag
             class="inline"
-            :title="subrace.document.name"
-            :text="subrace.document.key"
+            :title="item.document.name"
+            :text="item.document.key"
           />
         </div>
         <MdViewer
           :inline="true"
-          :text="subrace.desc"
+          :text="item.desc"
         />
         <dl>
           <div
-            v-for="trait in subrace.traits"
+            v-for="trait in species.traits"
             :key="trait.name"
             class="my-2"
           >
@@ -72,14 +71,14 @@
 </template>
 
 <script setup>
-const { data: race } = useFindOne(API_ENDPOINTS.races, useRoute().params.id, {
-  params: { subrace_of__isnull: true },
+const { data: species } = useFindOne(API_ENDPOINTS.races, useRoute().params.id, {
+  params: { subspecies_of__isnull: true },
 });
 
-const { data: subraces } = useFindMany(API_ENDPOINTS.races, {
-  subrace_of__key__in: useRoute().params.id,
+const { data: subspecies } = useFindMany(API_ENDPOINTS.races, {
+  subspecies_of__key__in: useRoute().params.id,
 });
 
 // traits can be ordered here, but the order the API rtns them is already good
-const traits = computed(() => unref(race).traits);
+const traits = computed(() => unref(species).traits);
 </script>
