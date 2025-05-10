@@ -341,7 +341,7 @@ const actions = computed(() => {
 
   // sort monster actions according to the value of their 'order' field
   Object.keys(actionsByType).forEach((type) => {
-    actionsByType[type].sort((a, b) => a['order'] - b['order']);
+    actionsByType[type].sort((a, b) => a['order_in_statblock'] - b['order_in_statblock']);
   });
 
   return actionsByType;
