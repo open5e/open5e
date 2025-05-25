@@ -55,8 +55,9 @@
           <nuxt-link
             class="font-medium text-gray-900 hover:text-blood dark:text-white dark:hover:text-blood"
             :to="`/monsters/${monster.id}`"
-          >{{ monster.name }}
-            <source-tag
+          >
+            {{ monster.name }}
+            <SourceTag
               v-if="monster.document?.name"
               :title="monster.document.name"
               :text="monster.document.key"
@@ -80,7 +81,9 @@
           </button>
           <span
             class="w-6 text-center text-sm text-gray-700 dark:text-gray-200"
-          >{{ monster.count }}</span>
+          >
+            {{ monster.count }}
+          </span>
           <button
             class="rounded bg-blood px-1 py-0.5 text-sm font-medium text-white hover:bg-blood/80 dark:bg-blood dark:hover:bg-red-400"
             data-testid="increment-monster"
@@ -94,9 +97,11 @@
       <div
         class="mb-4 flex items-center justify-between border-t border-gray-200 pt-2 dark:border-gray-700"
       >
-        <span class="text-sm text-gray-700 dark:text-gray-200">{{ encounterStore.totalMonsters }} Monsters (
+        <span class="text-sm text-gray-700 dark:text-gray-200">
+          {{ encounterStore.totalMonsters }} Monsters (
           {{ encounterStore.multiplier }} group multiplier) |
-          {{ encounterStore.totalXP }} XP</span>
+          {{ encounterStore.totalXP }} XP
+        </span>
       </div>
 
       <div

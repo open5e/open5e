@@ -153,9 +153,7 @@ const loadMore = async () => {
       hasMore.value = searchResults.value.length < totalCount.value;
 
       // If we still have more results, preemptively load the next page
-      if (hasMore.value) {
-        loadMore();
-      }
+      if (hasMore.value) loadMore();
     } else {
       hasMore.value = false;
     }
