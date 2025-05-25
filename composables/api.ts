@@ -85,7 +85,7 @@ export const useAPI = () => {
     },
     get: async (...parts: string[]) => {
       const route = parts.join('');
-      const res = await api.get(route, { params: { depth: '2' } }).catch(() => {
+      const res = await api.get(route).catch(() => {
         // redirect to /search if API route returns nothing
         const searchTerm = parts.filter(exists => exists).slice(-1)[0];
         navigateTo(`/search?text=${searchTerm}`);
@@ -256,7 +256,6 @@ export function sortByField(
 }
 
 export const useDocuments = (params: Record<string, never> = {}) => {
-  params.depth = '1';
   const { findMany } = useAPI();
   return useQuery({
     queryKey: ['findMany', API_ENDPOINTS.documents, params],

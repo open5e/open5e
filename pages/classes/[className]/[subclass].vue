@@ -34,7 +34,6 @@ const { data: subclassData } = useFindOne(
     params: {
       is_subclass: true,
       subclass_of: useRoute().params.className,
-      depth: 1,
       fields: ['name', 'key', 'features'].join(','),
     },
   },

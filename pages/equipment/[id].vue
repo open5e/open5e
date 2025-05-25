@@ -137,7 +137,7 @@
 const { data: item } = useFindOne(
   API_ENDPOINTS.equipment,
   useRoute().params.id,
-  { is_magic_item: false, depth: 1 },
+  { is_magic_item: false },
 );
 
 const formatCost = (input) => {
