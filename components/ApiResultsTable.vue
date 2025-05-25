@@ -24,10 +24,13 @@
 
 <template>
   <div>
-    <table v-if="data" class="m-0 w-full">
+    <table
+      v-if="data"
+      class="m-0 w-full"
+    >
       <thead>
         <tr>
-          <sortable-table-header
+          <SortableTableHeader
             v-for="col in cols"
             :key="col.field"
             :title="col.displayName"
@@ -40,7 +43,7 @@
         </tr>
       </thead>
       <tbody v-if="results && results.length > 0">
-        <api-result-row
+        <ApiResultRow
           v-for="item in results"
           :key="item.key ?? item.slug"
           :data="item"
@@ -74,5 +77,5 @@ const props = defineProps({
 
 const results = computed(() => props.data);
 
-const onSort = (sortValue) => emit('sort', sortValue);
+const onSort = sortValue => emit('sort', sortValue);
 </script>

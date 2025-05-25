@@ -32,7 +32,7 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   to: {
     type: String,
     default: '',

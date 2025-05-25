@@ -42,26 +42,57 @@
     >
       <thead>
         <tr class="border-none">
-          <th scope="col" class="border-none">
+          <th
+            scope="col"
+            class="border-none"
+          >
             <span class="sr-only">Ability</span>
           </th>
-          <th scope="col" class="border-none">
+          <th
+            scope="col"
+            class="border-none"
+          >
             <span class="sr-only">Score</span>
           </th>
-          <th scope="col" class="border-none pb-1 uppercase">Mod</th>
-          <th scope="col" class="border-none pb-1 uppercase">Save</th>
+          <th
+            scope="col"
+            class="border-none pb-1 uppercase"
+          >
+            Mod
+          </th>
+          <th
+            scope="col"
+            class="border-none pb-1 uppercase"
+          >
+            Save
+          </th>
         </tr>
       </thead>
       <tbody class="w-1/2 table-fixed">
-        <tr v-for="(data, ability) in value" :key="ability" class="border-none">
-          <th scope="row" class="border-none bg-fog dark:bg-basalt">
+        <tr
+          v-for="(data, ability) in value"
+          :key="ability"
+          class="border-none"
+        >
+          <th
+            scope="row"
+            class="border-none bg-fog dark:bg-basalt"
+          >
             {{ data.shortName }}
           </th>
-          <td class="border-none bg-fog dark:bg-basalt">{{ data.score }}</td>
-          <td :class="rollableLinkClasses" @click="useDiceRoller(data.mod)">
+          <td class="border-none bg-fog dark:bg-basalt">
+            {{ data.score }}
+          </td>
+          <td
+            :class="rollableLinkClasses"
+            @click="useDiceRoller(data.mod)"
+          >
             {{ useFormatModifier(data.mod) }}
           </td>
-          <td :class="rollableLinkClasses" @click="useDiceRoller(data.save)">
+          <td
+            :class="rollableLinkClasses"
+            @click="useDiceRoller(data.save)"
+          >
             {{ useFormatModifier(data.save) }}
           </td>
         </tr>
@@ -78,8 +109,8 @@ const props = defineProps({
   monster: { type: Object, default: () => {} },
 });
 
-const rollableLinkClasses =
-  'cursor-pointer bg-smoke text-center font-bold text-blood hover:text-black dark:bg-charcoal dark:hover:text-fog';
+const rollableLinkClasses
+  = 'cursor-pointer bg-smoke text-center font-bold text-blood hover:text-black dark:bg-charcoal dark:hover:text-fog';
 
 const tableData = computed(() => {
   // destructure data from props
@@ -117,7 +148,7 @@ const tableData = computed(() => {
     {
       physicalAbilityScores: {} as Record<string, AbilityScoreData>,
       mentalAbilityScores: {} as Record<string, AbilityScoreData>,
-    }
+    },
   );
 });
 </script>

@@ -1,6 +1,10 @@
 <template>
   <div class="relative w-full">
-    <Combobox v-model="selectedMonster" as="div" class="w-full">
+    <Combobox
+      v-model="selectedMonster"
+      as="div"
+      class="w-full"
+    >
       <ComboboxInput
         class="w-full rounded border border-gray-300 bg-white px-3 py-2 text-sm placeholder:text-gray-400 dark:border-gray-700 dark:bg-darkness"
         :display-value="(item: unknown) => (item as Monster)?.name || searchQuery"
@@ -12,7 +16,10 @@
         class="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded bg-white py-1 text-sm shadow-lg dark:border dark:border-gray-700 dark:bg-darkness"
         @scroll="handleScroll"
       >
-        <div v-if="isSearching" class="px-4 py-2 text-gray-500">
+        <div
+          v-if="isSearching"
+          class="px-4 py-2 text-gray-500"
+        >
           Searching...
         </div>
         <div
@@ -50,7 +57,10 @@
             </span>
           </li>
         </ComboboxOption>
-        <div v-if="isLoadingMore" class="px-4 py-2 text-gray-500">
+        <div
+          v-if="isLoadingMore"
+          class="px-4 py-2 text-gray-500"
+        >
           Loading more...
         </div>
         <div
@@ -71,10 +81,9 @@ import {
   ComboboxOptions,
   ComboboxOption,
 } from '@headlessui/vue';
-import { ref, watchEffect, onMounted, onUnmounted } from 'vue';
+import { ref, watchEffect } from 'vue';
 import { useAPI, API_ENDPOINTS } from '~/composables/api';
 import { useSourcesList } from '~/composables/sources';
-import type { Ref } from 'vue';
 import type { Monster } from '~/types/monster';
 
 const emit = defineEmits<{
@@ -95,7 +104,7 @@ const { sources } = useSourcesList();
 const optionsRef = ref<HTMLElement | null>(null);
 
 // Simplified monster mapping function
-const mapMonsterFromAPI = (monster: Record<string, any>): Monster => ({
+const mapMonsterFromAPI = (monster: Record<string, string | number>): Monster => ({
   id: monster.slug || monster.key || monster.id || '',
   name: monster.name,
   challenge_rating:
@@ -193,7 +202,7 @@ watchEffect(
       }
     }, 300);
   },
-  { flush: 'post' }
+  { flush: 'post' },
 );
 
 // Handle selection

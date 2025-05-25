@@ -5,7 +5,7 @@
         <Icon name="game-icons:crossed-swords" /> Encounter Builder
       </h2>
       <button
-        class="flex h-8 w-8 items-center justify-center rounded-full bg-fog hover:bg-smoke dark:bg-gray-900 hover:dark:bg-granite"
+        class="flex size-8 items-center justify-center rounded-full bg-fog hover:bg-smoke dark:bg-gray-900 hover:dark:bg-granite"
         @click="$emit('hide-encounter')"
       >
         <Icon name="heroicons:x-mark" />
@@ -15,15 +15,21 @@
       <PartyBuilder />
     </div>
 
-    <div v-if="isLoadingOverride ?? isLoading" class="py-4 text-center">
+    <div
+      v-if="isLoadingOverride ?? isLoading"
+      class="py-4 text-center"
+    >
       <p class="text-sm text-gray-300 dark:text-gray-200">
         Loading monster data...
       </p>
     </div>
-    <div v-else-if="monsters.length === 0" class="py-4 text-center">
+    <div
+      v-else-if="monsters.length === 0"
+      class="py-4 text-center"
+    >
       <Icon
         name="game-icons:hidden"
-        class="h-32 w-32 text-red-300 dark:text-gray-600"
+        class="size-32 text-red-300 dark:text-gray-600"
       />
       <p class="mt-0 text-lg font-bold text-gray-300 dark:text-gray-200">
         It's too quiet...
@@ -37,7 +43,9 @@
     </div>
 
     <div v-else>
-      <h3 class="mb-2 mt-4 text-lg font-bold">Monsters</h3>
+      <h3 class="mb-2 mt-4 text-lg font-bold">
+        Monsters
+      </h3>
       <div
         v-for="monster in monsters"
         :key="monster.id"
@@ -47,7 +55,7 @@
           <nuxt-link
             class="font-medium text-gray-900 hover:text-blood dark:text-white dark:hover:text-blood"
             :to="`/monsters/${monster.id}`"
-            >{{ monster.name }}
+          >{{ monster.name }}
             <source-tag
               v-if="monster.document?.name"
               :title="monster.document.name"
@@ -72,8 +80,7 @@
           </button>
           <span
             class="w-6 text-center text-sm text-gray-700 dark:text-gray-200"
-            >{{ monster.count }}</span
-          >
+          >{{ monster.count }}</span>
           <button
             class="rounded bg-blood px-1 py-0.5 text-sm font-medium text-white hover:bg-blood/80 dark:bg-blood dark:hover:bg-red-400"
             data-testid="increment-monster"
@@ -87,14 +94,15 @@
       <div
         class="mb-4 flex items-center justify-between border-t border-gray-200 pt-2 dark:border-gray-700"
       >
-        <span class="text-sm text-gray-700 dark:text-gray-200"
-          >{{ encounterStore.totalMonsters }} Monsters (
+        <span class="text-sm text-gray-700 dark:text-gray-200">{{ encounterStore.totalMonsters }} Monsters (
           {{ encounterStore.multiplier }} group multiplier) |
-          {{ encounterStore.totalXP }} XP</span
-        >
+          {{ encounterStore.totalXP }} XP</span>
       </div>
 
-      <div v-if="partyRows.length" class="mb-4">
+      <div
+        v-if="partyRows.length"
+        class="mb-4"
+      >
         <table
           class="w-full overflow-hidden rounded border-0 bg-white text-sm dark:bg-gray-900"
         >
@@ -112,7 +120,9 @@
                   },
                 ]"
               >
-                <div class="capitalize">{{ difficulty }}</div>
+                <div class="capitalize">
+                  {{ difficulty }}
+                </div>
               </th>
             </tr>
           </thead>
@@ -153,27 +163,23 @@
 </template>
 
 <script setup lang="ts">
+import { ref, computed, onMounted } from 'vue';
 import {
   useEncounterStore,
   type DifficultyLevel,
 } from '~/composables/useEncounter';
 import { usePartyStore } from '~/composables/useParty';
-import { useXPCalculator } from '~/composables/useXPCalculator';
 import PartyBuilder from '~/components/PartyBuilder.vue';
 import MonsterSearch from '~/components/MonsterSearch.vue';
-import { ref, computed, onMounted } from 'vue';
 import type { Monster } from '~/types/monster';
 
 // Prop included for testing purposes
-const props = defineProps<{
-  isLoadingOverride?: boolean;
-}>();
+defineProps<{ isLoadingOverride?: boolean }>();
 
-const emit = defineEmits(['hide-encounter']);
+defineEmits(['hide-encounter']);
 
 const encounterStore = useEncounterStore();
 const { partyRows, partyXPBudget } = usePartyStore();
-const xpCalculator = useXPCalculator();
 
 const monsters = ref(encounterStore.monsters);
 const isLoading = ref(false);
@@ -185,9 +191,9 @@ onMounted(async () => {
   isLoading.value = true;
   try {
     await Promise.all(
-      monsters.value.map((monster) =>
-        encounterStore.fetchMonsterData(monster.id)
-      )
+      monsters.value.map(monster =>
+        encounterStore.fetchMonsterData(monster.id),
+      ),
     );
   } catch (error) {
     console.error('Failed to load monster data:', error);
@@ -201,7 +207,7 @@ const difficultyColors = computed(
   () => (difficulty: DifficultyLevel) =>
     encounterStore.difficulty.value === difficulty
       ? encounterStore.difficultyColors[difficulty]
-      : ''
+      : '',
 );
 
 // Direct store action calls for monster management
@@ -215,7 +221,7 @@ const handleMonsterSelect = (monster: Monster) => {
     monster.id,
     monster.name,
     monster.challenge_rating_decimal,
-    monster.challenge_rating
+    monster.challenge_rating,
   );
 };
 </script>

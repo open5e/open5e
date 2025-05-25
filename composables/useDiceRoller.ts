@@ -1,4 +1,5 @@
 import { useNotifications } from './useNotifications';
+
 const { addNotif } = useNotifications();
 
 export function useDiceRoller(input: string | number) {
@@ -15,7 +16,7 @@ export function useDiceRoller(input: string | number) {
 
   // roll the dice
   const rolls = [...Array(number)].map(
-    () => Math.floor(Math.random() * dice) + 1
+    () => Math.floor(Math.random() * dice) + 1,
   );
 
   // add up the results and add the modifier

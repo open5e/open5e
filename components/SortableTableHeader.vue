@@ -27,7 +27,10 @@
     class="align-baseline"
     :class="{ 'hidden sm:table-cell': isLeastPriority }"
   >
-    <button v-if="sortBy" @click="onClick">
+    <button
+      v-if="sortBy"
+      @click="onClick"
+    >
       <span>
         {{ format(title) }}
       </span>
@@ -70,7 +73,7 @@ const format = (input) => {
   // Replace underscores w/ spaces and capitalise initials
   return input
     .split('_')
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
 };
 

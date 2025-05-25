@@ -1,9 +1,21 @@
 <template>
-  <main v-if="classData" class="docs-container container">
+  <main
+    v-if="classData"
+    class="docs-container container"
+  >
     <h1>{{ classData.name }}</h1>
-    <ul v-if="subclasses?.length > 0" class="mt-2">
-      <p class="inline font-bold after:content-[':_']">Subclasses</p>
-      <li v-for="subclass in subclasses" :key="subclass.name" class="inline">
+    <ul
+      v-if="subclasses?.length > 0"
+      class="mt-2"
+    >
+      <p class="inline font-bold after:content-[':_']">
+        Subclasses
+      </p>
+      <li
+        v-for="subclass in subclasses"
+        :key="subclass.name"
+        class="inline"
+      >
         <nuxt-link
           :to="`/classes/${useRoute().params.className}/${subclass.key}`"
         >
@@ -18,11 +30,16 @@
       <div v-if="hitPoints.length > 0">
         <h3>Hit Points</h3>
         <dl>
-          <div v-for="item in hitPoints" :key="item.title">
+          <div
+            v-for="item in hitPoints"
+            :key="item.title"
+          >
             <dt class="inline font-bold after:content-['_']">
               {{ item.title }}
             </dt>
-            <dd class="inline">{{ item.data }}</dd>
+            <dd class="inline">
+              {{ item.data }}
+            </dd>
           </div>
         </dl>
       </div>
@@ -66,17 +83,23 @@
           :key="feature.key"
         >
           <h3>{{ feature.name }}</h3>
-          <md-viewer :text="feature.desc" header-level="3" />
+          <md-viewer
+            :text="feature.desc"
+            header-level="3"
+          />
         </li>
       </ul>
     </section>
   </main>
 
-  <p v-else>Loading...</p>
+  <p v-else>
+    Loading...
+  </p>
 </template>
 
 <script setup>
 import { titleCaseToKebabCase } from '~/functions/titleCaseToKebabCase';
+
 const { data: classData } = useFindOne(
   API_ENDPOINTS.classes,
   useRoute().params.className,
@@ -85,7 +108,7 @@ const { data: classData } = useFindOne(
       is_subclass: false,
       fields: ['name', 'key', 'subclasses', 'features'].join(),
     },
-  }
+  },
 );
 
 // fetch subclasses to generate links
@@ -118,7 +141,7 @@ const features = computed(() => {
       startingEquipment: [],
       spellSlots: [],
       classTableColumnData: [],
-    }
+    },
   );
 });
 
@@ -154,7 +177,7 @@ const findFeatureLowestLevel = (feature) => {
 // takes a feature and returns an array item for every lvl in the gained_at field
 const featureToStubs = (feature) => {
   const { gained_at: gainedAt } = feature;
-  return gainedAt.map((atLevel) => ({
+  return gainedAt.map(atLevel => ({
     name: feature.name,
     detail: atLevel.detail,
     level: atLevel.level,
@@ -187,6 +210,6 @@ const featuresPerLevel = computed(() => {
 
 // flattens the featuresPerLevel obj to create array of features sorted by lvl
 const featuresInOrder = computed(() =>
-  Object.values(featuresPerLevel.value).flat()
+  Object.values(featuresPerLevel.value).flat(),
 );
 </script>

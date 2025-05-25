@@ -6,7 +6,11 @@
 
         <h2>Error {{ error?.statusCode }}</h2>
 
-        <p v-if="error?.message" class="font-italics" v-text="error.message" />
+        <p
+          v-if="error?.message"
+          class="font-italics"
+          v-text="error.message"
+        />
 
         <button
           class="font-bold text-red hover:text-blood dark:text-indigo-200 dark:hover:text-red"
@@ -104,7 +108,7 @@ const handleError = () => clearError({ redirect: '/' });
 .die-roll {
   animation: roll 1.5s ease-in-out;
   display: inline-block;
-  fill: #e74c3c;
+  fill: var(--color-fireball);
   height: 15em;
   width: 15em;
   max-width: 60%;

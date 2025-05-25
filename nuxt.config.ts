@@ -52,14 +52,8 @@ export default defineNuxtConfig({
     preset: 'digital-ocean',
   },
 
-  // vite: {
-  //   resolve: {
-  //     alias: {
-  //       vue: 'vue/dist/vue.esm-bundler',
-  //     }
-  //   },
-  // },
   modules: [
+    '@nuxt/eslint',
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
     '@hebilicious/vue-query-nuxt',
@@ -81,7 +75,7 @@ export default defineNuxtConfig({
   },
 
   hooks: {
-    'vite:extendConfig': (config, { isClient, isServer }) => {
+    'vite:extendConfig': (config, { isClient }) => {
       if (isClient) {
         config.resolve.alias.vue = 'vue/dist/vue.esm-bundler';
       }
@@ -93,5 +87,19 @@ export default defineNuxtConfig({
     cssPath: '~/styles/tailwind.css',
   },
 
-  compatibilityDate: '2025-03-07',
+  typescript: {
+    strict: false,
+  },
+
+  eslint: {
+    config: {
+      stylistic: {
+        quotes: 'single',
+        semi: true,
+        braceStyle: '1tbs',
+      },
+    },
+  },
+
+  compatibilityDate: '2024-11-16',
 });

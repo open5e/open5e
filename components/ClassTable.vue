@@ -23,10 +23,23 @@
   <table>
     <thead>
       <tr>
-        <th rowspan="2">Level</th>
-        <th v-if="proficiencies" rowspan="2">Proficiency Bonus</th>
-        <th rowspan="2">Features</th>
-        <th v-for="title in additionalColumnHeaders" :key="title" rowspan="2">
+        <th rowspan="2">
+          Level
+        </th>
+        <th
+          v-if="proficiencies"
+          rowspan="2"
+        >
+          Proficiency Bonus
+        </th>
+        <th rowspan="2">
+          Features
+        </th>
+        <th
+          v-for="title in additionalColumnHeaders"
+          :key="title"
+          rowspan="2"
+        >
           {{ title }}
         </th>
         <th
@@ -37,20 +50,30 @@
         </th>
       </tr>
       <tr>
-        <th v-for="level in spellslotColumnHeaders" :key="level">
+        <th
+          v-for="level in spellslotColumnHeaders"
+          :key="level"
+        >
           {{ level }}
         </th>
       </tr>
     </thead>
-    <tr v-for="level in levels" :key="level">
+    <tr
+      v-for="level in levels"
+      :key="level"
+    >
       <!-- 1st column: level -->
       <td>{{ level }}</td>
 
       <!-- 2nd column: proficiency bonus -->
-      <td v-if="proficiencies">{{ proficiencies[level] ?? '-' }}</td>
+      <td v-if="proficiencies">
+        {{ proficiencies[level] ?? '-' }}
+      </td>
 
       <!-- 3rd column: class features -->
-      <td v-if="classFeatures && !classFeatures[level]">–</td>
+      <td v-if="classFeatures && !classFeatures[level]">
+        –
+      </td>
       <td v-else>
         <span
           v-for="(feature, index) in classFeatures?.[level]"
@@ -70,11 +93,17 @@
       </td>
 
       <!-- Bonus columns for class specific resources -->
-      <td v-for="column in additionalColumnHeaders" :key="column">
+      <td
+        v-for="column in additionalColumnHeaders"
+        :key="column"
+      >
         {{ classResourceTableData[column][level] ?? '-' }}
       </td>
 
-      <td v-for="spellLevel in spellslotColumnHeaders" :key="spellLevel">
+      <td
+        v-for="spellLevel in spellslotColumnHeaders"
+        :key="spellLevel"
+      >
         {{ getSpellSlots(level, spellLevel) }}
       </td>
     </tr>
@@ -83,6 +112,7 @@
 
 <script setup>
 import { titleCaseToKebabCase } from '~/functions/titleCaseToKebabCase';
+
 const props = defineProps({
   classFeatures: { type: Object, default: () => {} },
   proficiencyBonus: { type: Object, default: () => {} },
@@ -103,7 +133,7 @@ const proficiencies = computed(() => {
 // returns an array of additional columns used in this class's
 const additionalColumnHeaders = computed(() => {
   if (props.classResourceTableColumns.length === 0) return;
-  return props.classResourceTableColumns.map((column) => column.name);
+  return props.classResourceTableColumns.map(column => column.name);
 });
 
 // parse additional class table data into a nested dict:
@@ -122,7 +152,7 @@ const classResourceTableData = computed(() => {
 // returns an array of table column headers for spell slots per level
 const spellslotColumnHeaders = computed(() => {
   if (!props?.spellSlots || props.spellSlots.length === 0) return;
-  return props.spellSlots.map((feature) => feature.name);
+  return props.spellSlots.map(feature => feature.name);
 });
 
 // parses spell slot data passed via props in nested dict
@@ -152,5 +182,5 @@ const getSpellSlots = (classLevel, spellLevel) => {
 };
 
 // Generate an array of levels 1-20
-const levels = [...Array(20).keys()].map((i) => i + 1);
+const levels = [...Array(20).keys()].map(i => i + 1);
 </script>

@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   signature: { type: String, default: '' },
 });
 </script>

@@ -1,7 +1,6 @@
 import { computed } from 'vue';
 import { useLocalStorage } from '@vueuse/core';
 import { API_ENDPOINTS, useAPI } from '~/composables/api';
-import { until } from '@vueuse/core';
 import { usePartyStore } from '~/composables/useParty';
 import { useXPCalculator } from '~/composables/useXPCalculator';
 
@@ -12,7 +11,7 @@ interface EncounterMonster {
   challenge_rating_text: string;
   count: number;
   // Remainder will be populated by API call
-  [key: string]: any;
+  [key: string]: string | number;
 }
 
 export type { EncounterMonster };
@@ -28,11 +27,11 @@ export type DifficultyLevel =
 export const useEncounterStore = () => {
   const monsters = useLocalStorage<EncounterMonster[]>(
     'encounter-monsters',
-    []
+    [],
   );
-  const monsterCache = useLocalStorage<Record<string, any>>(
+  const monsterCache = useLocalStorage<Record<string, string | number>>(
     'monster-cache',
-    {}
+    {},
   );
   const { get } = useAPI();
   const { partyXPBudget } = usePartyStore();
@@ -51,15 +50,15 @@ export const useEncounterStore = () => {
   };
 
   const totalMonsters = computed(() =>
-    monsters.value.reduce((sum, m) => sum + m.count, 0)
+    monsters.value.reduce((sum, m) => sum + m.count, 0),
   );
 
   const totalXP = computed(
     () =>
       monsters.value.reduce(
         (sum, m) => sum + (m.experience_points || 0) * m.count,
-        0
-      ) * xpCalculator.getMultiplier(totalMonsters.value)
+        0,
+      ) * xpCalculator.getMultiplier(totalMonsters.value),
   );
 
   const multiplier = computed(() => {
@@ -102,17 +101,17 @@ export const useEncounterStore = () => {
         data = await get(
           API_ENDPOINTS.monsters,
           id,
-          '/?document__fields=name,key,permalink'
+          '/?document__fields=name,key,permalink',
         );
         monsterCache.value[id] = data;
       }
 
       // Update the monster in the list with the new data
-      const monster = monsters.value.find((m) => m.id === id);
+      const monster = monsters.value.find(m => m.id === id);
       if (monster) {
         // Preserve the count and basic info while updating with API data
-        const { count, name, challenge_rating_decimal, challenge_rating_text } =
-          monster;
+        const { count, name, challenge_rating_decimal, challenge_rating_text }
+          = monster;
         Object.assign(monster, data, {
           count,
           name,
@@ -132,11 +131,11 @@ export const useEncounterStore = () => {
     id: string,
     name: string,
     challenge_rating_decimal: number,
-    challenge_rating_text: string
+    challenge_rating_text: string,
   ) => {
     try {
       // First check if monster exists
-      const existingMonster = monsters.value.find((m) => m.id === id);
+      const existingMonster = monsters.value.find(m => m.id === id);
       if (existingMonster) {
         existingMonster.count += 1;
         return;
@@ -167,7 +166,7 @@ export const useEncounterStore = () => {
   };
 
   const removeMonster = (id: string) => {
-    const index = monsters.value.findIndex((m) => m.id === id);
+    const index = monsters.value.findIndex(m => m.id === id);
     if (index !== -1) {
       if (monsters.value[index].count > 1) {
         monsters.value[index].count -= 1;
@@ -178,7 +177,7 @@ export const useEncounterStore = () => {
   };
 
   const incrementMonster = (id: string) => {
-    const monster = monsters.value.find((m) => m.id === id);
+    const monster = monsters.value.find(m => m.id === id);
     if (monster) {
       monster.count += 1;
     }

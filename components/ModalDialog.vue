@@ -26,8 +26,16 @@
 </script>
 
 <template>
-  <TransitionRoot as="template" :show="open" @key.escape="closeModal">
-    <Dialog as="div" class="relative z-100" @close="closeModal">
+  <TransitionRoot
+    as="template"
+    :show="open"
+    @key.escape="closeModal"
+  >
+    <Dialog
+      as="div"
+      class="relative z-100"
+      @close="closeModal"
+    >
       <TransitionChild
         as="template"
         enter="ease-out duration-300"
@@ -57,7 +65,7 @@
             leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
             <DialogPanel
-              class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-2 text-left shadow-xl transition-all dark:bg-darkness dark:text-white sm:my-4 sm:w-full sm:max-w-lg sm:p-6"
+              class="relative overflow-hidden rounded-lg bg-white px-4 pb-4 pt-2 text-left shadow-xl transition-all dark:bg-darkness dark:text-white sm:my-4 sm:w-full sm:max-w-lg sm:p-6"
             >
               <!-- Use unnamed slot to inject modal content -->
               <slot />
@@ -87,7 +95,7 @@ import {
 } from '@headlessui/vue';
 
 const slots = useSlots();
-const props = defineProps({
+defineProps({
   open: {
     type: Boolean,
     default: false,

@@ -4,7 +4,7 @@ import SpellPage from '~/pages/spells/[id].vue';
 
 const { data: spell } = useFindOne(
   'v2/spells',
-  'srd_adamantine-armor-breastplate'
+  'srd_adamantine-armor-breastplate',
 );
 
 const page = await mountSuspended(SpellPage);

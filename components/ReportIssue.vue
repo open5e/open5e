@@ -18,12 +18,13 @@
 
 <script setup>
 import { ref } from 'vue';
+
 const isOpen = ref(false);
 const formData = ref({});
 const status = ref('ready');
 
-const WEBAPP_URL =
-  'https://script.google.com/macros/s/AKfycbzUzyBCluTJXL4GC98i31NRoso0td-zNgBbp8Ws4CmmLMzd3ovYBcX7HyVlo3m-kDLHZA/exec';
+const WEBAPP_URL
+  = 'https://script.google.com/macros/s/AKfycbzUzyBCluTJXL4GC98i31NRoso0td-zNgBbp8Ws4CmmLMzd3ovYBcX7HyVlo3m-kDLHZA/exec';
 
 const submitIssue = async () => {
   // on click handler for submitting an issue
@@ -61,11 +62,14 @@ const closeModal = () => {
       <span>Report Issue</span>
       <icon
         name="heroicons:exclaimation-circle"
-        class="ml-1 h-6 w-6 rounded-full"
+        class="ml-1 size-6 rounded-full"
       />
     </button>
 
-    <modal-dialog :show="isOpen" @close="isOpen = false">
+    <modal-dialog
+      :show="isOpen"
+      @close="isOpen = false"
+    >
       <slot>
         <!-- Bug submission form -->
         <form
@@ -81,7 +85,10 @@ const closeModal = () => {
           </legend>
           <ul>
             <li class="mb-2">
-              <label for="type" class="text-lg font-bold">
+              <label
+                for="type"
+                class="text-lg font-bold"
+              >
                 What best describes your issue?
               </label>
               <select
@@ -101,11 +108,16 @@ const closeModal = () => {
                 <option value="accessibility">
                   There is a problem with page accessibility
                 </option>
-                <option value="misc">Other</option>
+                <option value="misc">
+                  Other
+                </option>
               </select>
             </li>
             <li class="mb-2">
-              <label for="description" class="text-lg font-bold">
+              <label
+                for="description"
+                class="text-lg font-bold"
+              >
                 Can you describe the bug?
               </label>
               <legend class="text-sm italic">
@@ -121,7 +133,10 @@ const closeModal = () => {
             </li>
 
             <li class="mb-2">
-              <label for="reproduction" class="text-lg font-bold">
+              <label
+                for="reproduction"
+                class="text-lg font-bold"
+              >
                 Reproduction
               </label>
               <legend class="text-sm italic">

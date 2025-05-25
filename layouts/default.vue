@@ -4,7 +4,10 @@
   <div
     class="grid justify-center overflow-hidden bg-fog bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
   >
-    <sources-modal :show="showModal" @close="showModal = false" />
+    <sources-modal
+      :show="showModal"
+      @close="showModal = false"
+    />
     <div
       class="bg-dark m-auto grid h-full min-h-screen max-w-[1440px] grid-flow-col transition-all sm:ml-0 sm:w-screen sm:grid-cols-[14rem_1fr] sm:overflow-y-auto sm:transition-none"
       :class="showSidebar ? 'ml-56' : '-ml-56'"
@@ -14,12 +17,12 @@
         class="z-50 flex h-full w-56 flex-col overflow-y-auto bg-slate-700 text-white dark:bg-charcoal"
       >
         <!-- Logo -->
-        <nuxt-link
+        <NuxtLink
           to="/"
           class="bg-red p-5 font-serif text-3xl text-white hover:text-white"
         >
           Open5e
-        </nuxt-link>
+        </NuxtLink>
 
         <!-- SOURCE MODAL -->
         <button
@@ -29,15 +32,18 @@
           <span v-if="documents && no_selected_sources > 0">
             {{ no_selected_sources }} of {{ no_available_sources }} sources
           </span>
-          <span v-else class="after:content-['_']">Select Sources</span>
+          <span
+            v-else
+            class="after:content-['_']"
+          >Select Sources</span>
 
           <span v-if="isLoadingData">
-            <icon name="line-md:loading-twotone-loop" />
+            <Icon name="line-md:loading-twotone-loop" />
           </span>
           <span v-else>
-            <icon
+            <Icon
               name="heroicons:pencil-square"
-              class="h-5 w-5 text-white"
+              class="size-5 text-white"
               aria-hidden="true"
             />
           </span>
@@ -50,14 +56,14 @@
           >
             <Icon
               name="majesticons:search-line"
-              class="h-8 w-8 rounded-full bg-red-900/25 p-1 text-white hover:bg-red-900/50"
+              class="size-8 rounded-full bg-red-900/25 p-1 text-white hover:bg-red-900/50"
               aria-hidden="true"
               @click="doSearch(searchText)"
             />
           </div>
           <input
             v-model="searchText"
-            class="w-full bg-red-700 px-4 py-4 placeholder-white/80 placeholder:font-semibold focus:border-0 focus:bg-red-800 focus:outline-none dark:bg-red-800 dark:focus:bg-red-600"
+            class="w-full bg-red-700 p-4 placeholder:font-semibold placeholder:text-white/80 focus:border-0 focus:bg-red-800 focus:outline-none dark:bg-red-800 dark:focus:bg-red-600"
             placeholder="Search Open5e"
             @keyup.enter="doSearch(searchText)"
           />
@@ -67,7 +73,7 @@
         <NavBar />
 
         <!-- Report Issue UI -->
-        <report-issue />
+        <ReportIssue />
 
         <!-- Patron Banner -->
         <a href="https://www.patreon.com/open5e">
@@ -86,8 +92,11 @@
         <!-- Site Header -->
 
         <div class="flex h-12 items-center gap-1 px-2 sm:pl-8">
-          <SidebarToggle class="sm:hidden" @click="toggleSidebar" />
-          <BreadcrumbLinks class="flex-grow" />
+          <SidebarToggle
+            class="sm:hidden"
+            @click="toggleSidebar"
+          />
+          <BreadcrumbLinks class="grow" />
           <EncounterSummary
             v-if="!isEncounterVisible"
             @show-encounter="showEncounter"
@@ -98,23 +107,23 @@
         <!-- Shade: fades out main content when sidebar expanded on mobile -->
         <div
           v-show="showSidebar"
-          class="fixed left-0 top-0 z-48 h-full w-full bg-basalt/50 sm:hidden"
+          class="fixed left-0 top-0 z-48 size-full bg-basalt/50 sm:hidden"
           @click="hideSidebar"
         />
 
-        <page-notifications />
+        <PageNotifications />
 
         <!-- Main content -->
         <div class="flex flex-col">
           <div class="flex">
             <div class="flex-1">
               <nuxt-page
-                class="main-content pt-auto mx-0 w-full px-4 py-4 pb-0 text-darkness dark:text-white sm:px-8"
+                class="main-content pt-auto mx-0 w-full p-4 pb-0 text-darkness dark:text-white sm:px-8"
               />
             </div>
             <div
               v-if="isEncounterVisible"
-              class="top-0 hidden w-80 flex-shrink-0 border-l lg:block"
+              class="top-0 hidden w-80 shrink-0 border-l lg:block"
             >
               <EncounterBuilder @hide-encounter="isEncounterVisible = false" />
             </div>
@@ -145,7 +154,7 @@ const isEncounterVisible = ref(false);
 const route = useRoute();
 watch(
   () => route.path,
-  () => (showSidebar.value = false)
+  () => (showSidebar.value = false),
 );
 
 const searchText = ref(route.query.text);
@@ -176,9 +185,7 @@ const hideSidebar = () => (showSidebar.value = false);
 const showEncounter = () => (isEncounterVisible.value = true);
 </script>
 
-<style lang="scss">
-@import '../assets/main';
-
+<style>
 .main-content {
   a {
     @apply text-indigo-600 hover:text-blood hover:underline dark:text-indigo-200 dark:hover:text-red;

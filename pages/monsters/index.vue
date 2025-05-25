@@ -1,7 +1,9 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2 w-full">Monsters</h1>
+      <h1 class="my-2 w-full">
+        Monsters
+      </h1>
 
       <ApiTableNav
         class="w-full"
@@ -59,7 +61,12 @@
       ]"
     />
 
-    <h3 ref="results" class="sr-only" tabindex="-1" @keyup.esc="focusFilter" />
+    <h3
+      ref="results"
+      class="sr-only"
+      tabindex="-1"
+      @keyup.esc="focusFilter"
+    />
 
     <ApiResultsTable
       v-model="debouncedFilter"
@@ -93,33 +100,33 @@
           customTemplate: (data) => ({
             render: () => {
               const monsterInEncounter = encounterStore.monsters.value.find(
-                (m) => m.id === data.key
+                (m) => m.id === data.key,
               );
               return h(
                 'div',
                 { class: 'flex gap-2 justify-end hidden lg:flex' },
                 [
-                  monsterInEncounter &&
-                    h(
+                  monsterInEncounter
+                    && h(
                       'button',
                       {
                         class:
                           'p-1 text-sm font-medium text-white bg-blood rounded hover:bg-blood/80',
                         onClick: () => removeFromEncounter(data),
                       },
-                      h(MinusIcon, { class: 'w-4 h-4' })
+                      h(MinusIcon, { class: 'w-4 h-4' }),
                     ),
                   h(
                     'button',
                     {
-                      class:
+                      'class':
                         'p-1 text-sm font-medium text-white bg-blood rounded hover:bg-blood/80',
-                      onClick: () => addToEncounter(data),
+                      'onClick': () => addToEncounter(data),
                       'data-testid': 'add-to-encounter',
                     },
-                    h(PlusIcon, { class: 'w-4 h-4' })
+                    h(PlusIcon, { class: 'w-4 h-4' }),
                   ),
-                ]
+                ],
               );
             },
           }),
@@ -133,10 +140,10 @@
 </template>
 
 <script setup lang="ts">
-import { h } from 'vue';
-import { useEncounterStore } from '~/composables/useEncounter';
-import { computed } from 'vue';
+import { h, computed } from 'vue';
 import { PlusIcon, MinusIcon } from '@heroicons/vue/24/solid';
+import type { Monster } from '~/types/monster';
+import { useEncounterStore } from '~/composables/useEncounter';
 
 // Set up filters
 const filterState = useFilterState<MonsterFilter>({
@@ -190,16 +197,16 @@ const {
 
 const encounterStore = useEncounterStore();
 
-const addToEncounter = (monster: any) => {
+const addToEncounter = (monster: Monster) => {
   encounterStore.addMonster(
     monster.key,
     monster.name,
     monster.challenge_rating_decimal,
-    monster.challenge_rating_text
+    monster.challenge_rating_text,
   );
 };
 
-const removeFromEncounter = (monster: any) => {
+const removeFromEncounter = (monster: Monster) => {
   encounterStore.removeMonster(monster.key);
 };
 

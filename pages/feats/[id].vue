@@ -1,18 +1,29 @@
 <template>
-  <main v-if="feat" class="docs-container container">
+  <main
+    v-if="feat"
+    class="docs-container container"
+  >
     <h1>
       <span>{{ feat.name }}</span>
-      <source-tag :text="sourceKey" :title="feat.document.name" />
+      <source-tag
+        :text="sourceKey"
+        :title="feat.document.name"
+      />
     </h1>
     <section>
       <p v-if="feat.prerequisite">
         <span class="font-bold after:content-['._']">Prerequistes</span>
         <span>{{ feat.prerequisite }}</span>
       </p>
-      <md-viewer :text="feat.desc" class="list-disc" />
+      <md-viewer
+        :text="feat.desc"
+        class="list-disc"
+      />
     </section>
   </main>
-  <p v-else>Loading...</p>
+  <p v-else>
+    Loading...
+  </p>
 </template>
 
 <script setup>

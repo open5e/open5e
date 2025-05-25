@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * ApiTableFilter.vue - Displays a set of filter controls for filtering data
  * returned by the Open5e API.
@@ -39,10 +39,13 @@
 <template>
   <div class="my-2 flex items-end justify-between gap-2 md:gap-3">
     <!-- RENDER SEARCH BAR -->
-    <div v-if="search" class="relative border-b-2 border-red-400">
+    <div
+      v-if="search"
+      class="relative border-b-2 border-red-400"
+    >
       <Icon
         name="majesticons:search-line"
-        class="absolute bottom-1.5 mr-2 h-4 w-4"
+        class="absolute bottom-1.5 mr-2 size-4"
       />
 
       <input
@@ -54,7 +57,7 @@
         @input="
           filterState.updateField(
             search?.filterField,
-            $event.target?.value ?? ''
+            $event.target?.value ?? '',
           )
         "
       />
@@ -67,7 +70,10 @@
       class="grid columns-1 justify-center"
       :class="{ 'hidden sm:grid': field.isLeastPriority }"
     >
-      <label class="font-serif text-xs" :for="field.name">
+      <label
+        class="font-serif text-xs"
+        :for="field.name"
+      >
         {{ field.name }}
       </label>
 
@@ -81,7 +87,9 @@
           filterState.updateField(field.filterField, $event?.target.value)
         "
       >
-        <option value="">-</option>
+        <option value="">
+          -
+        </option>
 
         <option
           v-for="option in field.options"
@@ -94,29 +102,34 @@
     </div>
 
     <!-- Render checkboxFields as checkboxes -->
-    <div
-      v-for="checkbox in checkboxFields"
-      :key="checkbox.name"
-      class="flex flex-col justify-start"
-    >
-      <label class="block font-serif text-xs" :for="checkbox.name">
-        {{ checkbox.name }}
-      </label>
+    <template v-if="checkboxFields">
+      <div
+        v-for="checkbox in checkboxFields"
+        :key="checkbox.name"
+        class="flex flex-col justify-start"
+      >
+        <label
+          class="block font-serif text-xs"
+          :for="checkbox.name"
+        >
+          {{ checkbox.name }}
+        </label>
 
-      <input
-        :id="checkbox.name"
-        type="checkbox"
-        :name="checkbox.filterField"
-        :checked="filterState.fieldsState.value[checkbox.filterField] === true"
-        class="my-1 size-full accent-blood"
-        @input="
-          filterState.updateField(
-            checkbox.filterField,
-            $event.target.checked ? true : undefined
-          )
-        "
-      />
-    </div>
+        <input
+          :id="checkbox.name"
+          type="checkbox"
+          :name="checkbox.filterField"
+          :checked="filterState.fieldsState.value[checkbox.filterField] === true"
+          class="my-1 size-full accent-blood"
+          @input="
+            filterState.updateField(
+              checkbox.filterField,
+              $event.target.checked ? true : undefined,
+            )
+          "
+        />
+      </div>
+    </template>
 
     <ApiTableButton
       name="Clear filter"
@@ -130,12 +143,23 @@
   </div>
 </template>
 
-<script setup>
-// TODO: Set up types for these props once ESLint supports use of defineProps<> so we can pass in generics for the filters we're using
-const props = defineProps({
-  filterState: { type: Object, required: true }, // This is the return value of useFilterState // TODO: When ESLint supports defineProps<> we could type this properly
-  search: { type: Object, default: undefined },
-  selectFields: { type: Array, default: () => [] },
-  checkboxFields: { type: Array, default: () => [] },
-});
+<script setup lang="ts">
+defineProps<
+  {
+    filterState: FilterState<Fields>;
+    search: {
+      name: string;
+      filterField: string;
+    };
+    selectFields: {
+      name: string;
+      filterField: string;
+      options: { name: string; value: string }[];
+    }[];
+    checkboxFields: {
+      name: string;
+      filterField: string;
+    }[];
+  }
+>();
 </script>

@@ -1,5 +1,5 @@
 export type MagicItemFilter = {
-  /** Name contains*/
+  /** Name contains */
   name__icontains?: string;
   rarity?: string;
   category?: string;

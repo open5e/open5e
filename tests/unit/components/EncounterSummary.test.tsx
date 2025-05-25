@@ -1,10 +1,14 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { mount } from '@vue/test-utils';
+import type { Ref } from 'vue';
 import { ref, computed } from 'vue';
+
+// Now import the component after setting up mocks
+import EncounterSummary from '~/components/EncounterSummary.vue';
 
 // Create a shared mock state with Vue refs
 const mockState = {
-  monsters: ref([]) as any,
+  monsters: ref([]) as Ref,
   totalMonsters: ref(0),
   difficulty: ref('empty'),
   color: ref('bg-fog hover:bg-smoke dark:bg-basalt hover:dark:bg-granite'),
@@ -39,9 +43,6 @@ vi.mock('~/composables/useEncounter', () => ({
   }),
 }));
 
-// Now import the component after setting up mocks
-import EncounterSummary from '~/components/EncounterSummary.vue';
-
 const mountAndWaitForReady = async () => {
   const wrapper = mount(EncounterSummary, {
     global: {
@@ -52,7 +53,7 @@ const mountAndWaitForReady = async () => {
   });
 
   // Wait for isReady to be true
-  await new Promise((resolve) => setTimeout(resolve, 10));
+  await new Promise(resolve => setTimeout(resolve, 10));
   await wrapper.vm.$nextTick();
 
   return wrapper;
@@ -64,8 +65,8 @@ describe('EncounterSummary', () => {
     mockState.monsters.value = [];
     mockState.totalMonsters.value = 0;
     mockState.difficulty.value = 'empty';
-    mockState.color.value =
-      'bg-fog hover:bg-smoke dark:bg-basalt hover:dark:bg-granite';
+    mockState.color.value
+      = 'bg-fog hover:bg-smoke dark:bg-basalt hover:dark:bg-granite';
     vi.clearAllMocks();
   });
 
@@ -80,8 +81,8 @@ describe('EncounterSummary', () => {
     mockState.monsters.value = [{ id: '1', name: 'Test Monster' }];
     mockState.totalMonsters.value = 1;
     mockState.difficulty.value = 'easy';
-    mockState.color.value =
-      'bg-green-200 hover:bg-green-200 dark:bg-green-800 hover:dark:bg-green-900';
+    mockState.color.value
+      = 'bg-green-200 hover:bg-green-200 dark:bg-green-800 hover:dark:bg-green-900';
 
     const wrapper = await mountAndWaitForReady();
 

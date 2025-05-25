@@ -23,7 +23,7 @@ mockNuxtImport('useFindOne', () => {
       key: 'srd_grappler',
       has_prerequisite: true,
       prerequisite: 'Strength 13 or higher',
-      desc: "You've developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:\r\n* You have advantage on attack rolls against a creature you are grappling.\r\n* You can use your action to try to pin a creature grappled by you. The creature makes a Strength or Dexterity saving throw against your maneuver DC. On a failure, you and the creature are both restrained until the grapple ends.",
+      desc: 'You\'ve developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:\r\n* You have advantage on attack rolls against a creature you are grappling.\r\n* You can use your action to try to pin a creature grappled by you. The creature makes a Strength or Dexterity saving throw against your maneuver DC. On a failure, you and the creature are both restrained until the grapple ends.',
       document: {
         name: 'Systems Reference Document',
         url: 'v2/documents/srd/"',

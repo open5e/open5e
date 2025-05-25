@@ -26,15 +26,25 @@
     </p>
 
     <!-- Generate card body from data -->
-    <p v-for="item in body" :key="item.title" class="m-0 p-0 text-sm">
-      <span v-if="item.title" class="font-bold after:mr-1 after:content-[':']">
+    <p
+      v-for="item in body"
+      :key="item.title"
+      class="m-0 p-0 text-sm"
+    >
+      <span
+        v-if="item.title"
+        class="font-bold after:mr-1 after:content-[':']"
+      >
         {{ item.title }}
       </span>
       <span>{{ item.data }} </span>
     </p>
 
     <!-- Card footer -->
-    <p v-if="content.document__title" class="whitespace-nowrap text-sm italic">
+    <p
+      v-if="content.document__title"
+      class="whitespace-nowrap text-sm italic"
+    >
       Source: {{ content.document__title }}
     </p>
   </article>

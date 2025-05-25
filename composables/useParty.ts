@@ -1,11 +1,11 @@
+import { computed } from 'vue';
+import { useLocalStorage } from '@vueuse/core';
+import { useXPCalculator } from './useXPCalculator';
+
 interface PartyRow {
   level: number;
   count: number;
 }
-
-import { computed } from 'vue';
-import { useLocalStorage } from '@vueuse/core';
-import { useXPCalculator } from './useXPCalculator';
 
 export const usePartyStore = () => {
   const partyRows = useLocalStorage<PartyRow[]>('party-rows', [

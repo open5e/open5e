@@ -1,7 +1,9 @@
 <template>
   <section>
     <div class="flex">
-      <h1 class="my-2 w-full">Equipment</h1>
+      <h1 class="my-2 w-full">
+        Equipment
+      </h1>
 
       <ApiTableNav
         :page-number="pageNo"

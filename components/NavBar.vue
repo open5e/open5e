@@ -13,9 +13,12 @@
 </script>
 
 <template>
-  <ul class="text-inherit text-white">
+  <ul class="text-inherit">
     <!-- Render top-level links -->
-    <li v-for="section in routes" :key="section.title">
+    <li
+      v-for="section in routes"
+      :key="section.title"
+    >
       <nav-link :to="section.url">
         {{ section.title }}
       </nav-link>
@@ -26,8 +29,14 @@
         v-show="crumbs?.[0]?.title === section.title"
         class="bg-slate-800/30 py-2"
       >
-        <li v-for="subroute in section.subroutes" :key="subroute.title">
-          <nav-link :to="`${subroute.url}`" :indentation-level="1">
+        <li
+          v-for="subroute in section.subroutes"
+          :key="subroute.title"
+        >
+          <nav-link
+            :to="`${subroute.url}`"
+            :indentation-level="1"
+          >
             {{ subroute.title }}
           </nav-link>
 
@@ -37,7 +46,10 @@
               v-for="subSubroute in subroute.subroutes"
               :key="subSubroute.title"
             >
-              <nav-link :to="`${subSubroute.url}`" :indentation-level="2">
+              <nav-link
+                :to="`${subSubroute.url}`"
+                :indentation-level="2"
+              >
                 {{ subSubroute.title }}
               </nav-link>
             </li>
@@ -67,11 +79,11 @@ const classSubroutes = computed(() => {
       if (!val['subclass_of']) return [[...acc[0], val], [...acc[1]]];
       else return [[...acc[0]], [...acc[1], val]];
     },
-    [[], []]
+    [[], []],
   );
 
   // generate subroutes to other base-classes
-  let output = baseClasses.map((item) => {
+  const output = baseClasses.map((item) => {
     return { title: item.name, url: `/classes/${item.key}` };
   });
 
@@ -79,13 +91,13 @@ const classSubroutes = computed(() => {
   if (crumbs.value.length >= 2) {
     const baseClass = crumbs.value[1];
     const subClassesForClass = subClasses
-      .filter((item) => item?.['subclass_of']?.includes(baseClass.src))
+      .filter(item => item?.['subclass_of']?.includes(baseClass.src))
       .map((item) => {
         const url = `/classes/${baseClass.src}/${item.key}`;
         return { title: item.name, url };
       });
-    output[output.findIndex((el) => el.title === baseClass.title)].subroutes =
-      subClassesForClass;
+    output[output.findIndex(el => el.title === baseClass.title)].subroutes
+      = subClassesForClass;
   }
 
   return output;

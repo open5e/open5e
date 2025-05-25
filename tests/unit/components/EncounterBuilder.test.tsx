@@ -89,7 +89,7 @@ describe('EncounterBuilder', () => {
 
   it('shows empty state when no monsters', () => {
     const wrapper = mount(EncounterBuilder);
-    expect(wrapper.text()).toContain("It's too quiet");
+    expect(wrapper.text()).toContain('It\'s too quiet');
   });
 
   it('calls addMonster when monster is selected', async () => {
@@ -109,7 +109,7 @@ describe('EncounterBuilder', () => {
       'test-monster',
       'Test Monster',
       1,
-      '1'
+      '1',
     );
   });
 

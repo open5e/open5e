@@ -31,7 +31,7 @@ export const useBreadcrumbs = () => {
         })
 
         // remove null-ish crumbs
-        .filter((breadcrumb) => breadcrumb)
+        .filter(breadcrumb => breadcrumb)
     );
   });
 };
@@ -58,7 +58,7 @@ const generateTitles = (crumb: string) => {
 const formatTitle = (title: string) => {
   return title
     .split('-') // from kebab-case to Title Case
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ')
     .split('#')[0]; // remove hash-links from title
 };

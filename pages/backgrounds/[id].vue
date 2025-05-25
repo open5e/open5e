@@ -1,8 +1,13 @@
 <template>
-  <main v-if="background" class="docs-container container">
+  <main
+    v-if="background"
+    class="docs-container container"
+  >
     <section>
       <div>
-        <h1 class="inline">{{ background.name }}</h1>
+        <h1 class="inline">
+          {{ background.name }}
+        </h1>
         <source-tag
           class="inline"
           :title="background.document.name"
@@ -14,15 +19,25 @@
 
     <!-- List of proficiencies & other short, mechanical benefits -->
     <dl class="mt-2">
-      <div v-for="benefit in benefits.proficiencies" :key="benefit.name">
-        <dt class="inline font-bold">{{ benefit.name }}</dt>
-        <dd class="inline before:content-['._']">{{ benefit.desc }}</dd>
+      <div
+        v-for="benefit in benefits.proficiencies"
+        :key="benefit.name"
+      >
+        <dt class="inline font-bold">
+          {{ benefit.name }}
+        </dt>
+        <dd class="inline before:content-['._']">
+          {{ benefit.desc }}
+        </dd>
       </div>
     </dl>
 
     <!-- List of background features -->
     <ul>
-      <li v-for="benefit in benefits.features" :key="benefit.name">
+      <li
+        v-for="benefit in benefits.features"
+        :key="benefit.name"
+      >
         <h2>{{ `Feature: ${benefit.name}` }}</h2>
         <md-viewer :text="benefit.desc" />
       </li>
@@ -31,7 +46,10 @@
 
     <!-- List of background flavour, rollable tables, etc. -->
     <ul>
-      <li v-for="benefit in benefits.flavour" :key="benefit.name">
+      <li
+        v-for="benefit in benefits.flavour"
+        :key="benefit.name"
+      >
         <h3>
           <span
             v-if="benefit.type === 'feature'"
@@ -45,19 +63,22 @@
       </li>
     </ul>
   </main>
-  <p v-else>Loading...</p>
+  <p v-else>
+    Loading...
+  </p>
 </template>
 
 <script setup>
 const { data: background } = useFindOne(
   API_ENDPOINTS.backgrounds,
-  useRoute().params.id
+  useRoute().params.id,
 );
 
 // sort benefits into different sections
 // different sections will be rendered to different parts of the page
 const benefits = computed(() => {
-  const [proficiencies, features, flavour] = background?.value?.benefits.reduce(
+  if (!background?.value) return {};
+  const [proficiencies, features, flavour] = background.value.benefits.reduce(
     (acc, benefit) => {
       // sort profs, langs, equipment, &c into 'proficiencies'
       if (
@@ -80,7 +101,7 @@ const benefits = computed(() => {
       // base-case: sort remaining benefits into 'flavour'
       return [acc[0], acc[1], [...acc[2], benefit]];
     },
-    [[], [], []]
+    [[], [], []],
   );
   return { proficiencies, features, flavour };
 });

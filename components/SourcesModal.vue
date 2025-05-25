@@ -25,7 +25,9 @@
     <slot>
       <!-- MODAL MENU TITLE BAR -->
       <div class="flex w-full justify-between border-b-4 border-blood">
-        <h2 class="my-2">Sources</h2>
+        <h2 class="my-2">
+          Sources
+        </h2>
 
         <!--  GAME SYSTEM SELECTOR -->
         <div class="my-1 grid">
@@ -36,7 +38,9 @@
             name="system"
             @change="onGameSystemChanged"
           >
-            <option :value="''">–</option>
+            <option :value="''">
+              –
+            </option>
             <option
               v-for="systemOption in allGameSystems"
               :key="systemOption"
@@ -79,7 +83,9 @@
 
       <!-- MODAL MENU BODY -->
       <fieldset class="mt-1">
-        <legend class="sr-only">Source Selection</legend>
+        <legend class="sr-only">
+          Source Selection
+        </legend>
         <!-- Organisation -->
         <div
           v-for="(publications, organization, index) in groupedDocuments"
@@ -94,8 +100,8 @@
             <button
               class="px-2 py-1 font-bold"
               :class="
-                selectedSourcesByPublisher(organization) ===
-                countSourcesByPublisher(organization)
+                selectedSourcesByPublisher(organization)
+                  === countSourcesByPublisher(organization)
                   ? `before:mr-1 before:content-['✓']`
                   : `text-blood hover:text-red-800 dark:hover:text-red-400`
               "
@@ -129,7 +135,7 @@
                   v-model="selectedSources"
                   :name="document.key"
                   type="checkbox"
-                  class="mr-2 mt-1 h-4 w-4 rounded text-blue-600 accent-blood focus:ring-blue-600"
+                  class="mr-2 mt-1 size-4 rounded text-blue-600 accent-blood focus:ring-blue-600"
                   :value="document.key"
                 />
                 <label
@@ -138,7 +144,10 @@
                 >
                   {{ document.name }}
                 </label>
-                <source-tag :title="document.name" :text="document.key" />
+                <source-tag
+                  :title="document.name"
+                  :text="document.key"
+                />
               </div>
               <span
                 v-if="document.gamesystem"
@@ -221,9 +230,9 @@ const onGameSystemChanged = (event) => {
   currentSystem.value = newSystem;
   if (newSystem)
     selectedSources.value = documents.value
-      .filter((source) => source.gamesystem.name === newSystem)
-      .map((source) => source.key);
-  else selectedSources.value = documents.value.map((doc) => doc.key);
+      .filter(source => source.gamesystem.name === newSystem)
+      .map(source => source.key);
+  else selectedSources.value = documents.value.map(doc => doc.key);
 };
 
 // save current form selection to local memory
@@ -236,34 +245,34 @@ function saveSelection() {
 // add all sources from a given publisher to allowed sources
 function addPublisher(publisher) {
   const sourcesToAdd = groupedDocuments.value[publisher]
-    .map((source) => source.key)
-    .filter((source) => !selectedSources.value.includes(source));
+    .map(source => source.key)
+    .filter(source => !selectedSources.value.includes(source));
   selectedSources.value = [...selectedSources.value, ...sourcesToAdd];
 }
 
 // remove all sources from a given publisher from allowed sources
 function removePublisher(publisher) {
   const sourcesByPublisher = groupedDocuments.value[publisher].map(
-    (source) => source.key
+    source => source.key,
   );
   selectedSources.value = selectedSources.value.filter(
-    (source) => !sourcesByPublisher.includes(source)
+    source => !sourcesByPublisher.includes(source),
   );
 }
 
 // returns number of sources by a given publisher
-const countSourcesByPublisher = (publisher) =>
+const countSourcesByPublisher = publisher =>
   groupedDocuments.value[publisher]?.length || 0;
 
 // returns how many sources are selected from a given publisher
 function selectedSourcesByPublisher(publisher) {
   // find all sources for this publisher
   const allSources = groupedDocuments.value[publisher].map(
-    (source) => source.key
+    source => source.key,
   );
   // find which of these are part of the current selected sources
-  const currentSources = selectedSources.value.filter((source) =>
-    allSources.includes(source)
+  const currentSources = selectedSources.value.filter(source =>
+    allSources.includes(source),
   );
   return currentSources.length;
 }
@@ -276,7 +285,7 @@ const allSourcesSelected = () => {
 };
 
 function selectAllInSystem() {
-  selectedSources.value = documentsInSystem.value.map((doc) => doc.key);
+  selectedSources.value = documentsInSystem.value.map(doc => doc.key);
 }
 
 const deselectAll = () => (selectedSources.value = []);

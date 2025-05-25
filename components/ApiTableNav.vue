@@ -28,7 +28,10 @@
         <span>&frasl;</span>
         <sub>{{ lastPageNumber }}</sub>
       </li>
-      <li v-for="button in buttons" :key="button.name">
+      <li
+        v-for="button in buttons"
+        :key="button.name"
+      >
         <ApiTableButton
           :name="button.name"
           :icon="button.icon"
@@ -52,6 +55,7 @@
     </div>
   </div>
 </template>
+
 <script setup>
 const props = defineProps({
   lastPageNumber: { type: Number, default: 1 },

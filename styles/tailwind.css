@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --pad-md: 1rem;
+  --pad-xs: calc(var(--pad-md) / 4);
+  --pad-sm: calc(var(--pad-md) / 2);
+  --pad-lg: 2rem;
+  --pad-xl: 3rem;
+  --color-fireball: #e74c3c;
+  --color-blood: #a82315;
+  --color-mana: #166c9c;
+  --color-fog: #f4f4f4;
+  --color-smoke: #d4d4d4;
+  --color-granite: #888;
+  --color-gray: #767676;
+  --color-basalt: #333;
+  --color-darkness: #111;
+}
+
 h1 {
   @apply text-3xl text-blood dark:text-white;
 }
@@ -26,6 +62,155 @@ h6 {
   @apply text-sm;
 }
 
-blockquote {
-  @apply bg-fog dark:bg-basalt;
+p {
+  margin-top: var(--pad-md);
 }
+
+p:not(:first-child) {
+  margin-top: var(--pad-sm);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: calc(var(--pad-md) * 1.5);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+}
+
+h2 {
+  margin-top: calc(var(--pad-md) * 4);
+}
+
+h3 {
+  margin-top: calc(var(--pad-md) * 2);
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-weight: 900;
+}
+
+h5 {
+  font-weight: 800;
+  opacity: 0.7;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+table {
+  font-size: 14px;
+  border-collapse: collapse;
+  border-top: var(--pad-sm) solid var(--color-smoke);
+  border-bottom: var(--pad-sm) solid var(--color-smoke);
+  margin-top: var(--pad-md);
+}
+
+td,
+th {
+  padding: var(--pad-sm) var(--pad-sm);
+  text-align: left;
+}
+tr {
+  border-bottom: 1px solid var(--color-fog);
+}
+th {
+  vertical-align: bottom;
+  border-bottom: 2px solid var(--color-smoke);
+}
+td {
+  vertical-align: top;
+}
+
+.container h1:not(:first-child) {
+  margin-top: var(--pad-xl);
+}
+
+.container h2 {
+  margin-top: var(--pad-lg);
+  border-bottom: 3px solid var(--color-fireball);
+  padding-bottom: var(--pad-xs);
+}
+.container h4 {
+  display: inline;
+}
+
+.container h1 .toc-anchor,
+.container h2 .toc-anchor,
+.container h3 .toc-anchor,
+.container h5 .toc-anchor,
+.container h6 .toc-anchor {
+  order: 2;
+  display: none;
+  color: var(--color-smoke);
+  margin-left: var(--pad-sm);
+}
+
+.container h1:hover .toc-anchor,
+.container h2:hover .toc-anchor,
+.container h3:hover .toc-anchor,
+.container h5:hover .toc-anchor,
+.container h6:hover .toc-anchor {
+  display: inline-block;
+}
+
+.docs-toc ul {
+  font-size: 1.2rem;
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.5rem;
+}
+
+.docs-toc ul ul {
+  padding-left: var(--pad-sm);
+  font-size: 1.1rem;
+}
+
+.docs-container hr {
+  margin: 1rem 0;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(var(--color-blood), 1) 0%,
+    rgba(var(--color-blood), 0) 100%
+  );
+  border: 0;
+}
+
+blockquote {
+  padding: 0.1rem 1rem 1rem 1rem;
+  margin-top: 1rem;
+  max-width: 40rem;
+  @apply bg-fog dark:bg-basalt;
+  border-left: 0.75rem solid #999;
+}
+
+.side-note {
+  @apply right-3 m-2 block w-full border border-blue-600 bg-blue-100 p-2 text-blue-900 dark:border-smoke dark:bg-basalt dark:text-white md:sticky md:float-right md:w-80 xl:right-8;
+}
+
+.side-note h3 {
+  @apply mt-0;
+}
+
+ /* region Transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 300ms ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+/* endregion */

@@ -1,7 +1,9 @@
 <template>
   <div class="party-builder">
     <div class="mb-2 flex items-center justify-between">
-      <h3 class="mt-1 text-lg font-bold">Party</h3>
+      <h3 class="mt-1 text-lg font-bold">
+        Party
+      </h3>
     </div>
 
     <div class="space-y-2">
@@ -48,8 +50,8 @@
 import { usePartyStore } from '~/composables/useParty';
 
 const store = usePartyStore();
-const { partyRows, totalPCs, averageLevel, addPartyRow, removePartyRow } =
-  store;
+const { partyRows, addPartyRow, removePartyRow }
+  = store;
 
 // Ensure we have at least one row
 onMounted(() => {

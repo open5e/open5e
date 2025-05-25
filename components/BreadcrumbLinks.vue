@@ -33,7 +33,10 @@
             Open5e
           </span>
           <span class="hidden align-middle uppercase sm:inline-flex">
-            <Icon name="heroicons:home" class="mt-0.5 align-middle sm:mr-1" />
+            <Icon
+              name="heroicons:home"
+              class="mt-0.5 align-middle sm:mr-1"
+            />
             Home
           </span>
         </nuxt-link>
@@ -45,7 +48,10 @@
         :key="crumb.url"
         class="inline-flex break-before-auto items-center align-middle uppercase text-gray-700 after:ml-1 after:text-blood after:content-['/'] last:after:content-[''] visited:text-gray-700 hover:text-red-700 dark:text-gray-200 dark:visited:text-gray-200 dark:hover:text-red-400 sm:after:ml-4"
       >
-        <nuxt-link :to="crumb.url" class="align-middle">
+        <nuxt-link
+          :to="crumb.url"
+          class="align-middle"
+        >
           <span>{{ crumb.title }}</span>
           <span
             v-if="crumb.subtitle"

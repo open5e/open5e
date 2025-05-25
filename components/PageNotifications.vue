@@ -28,13 +28,15 @@
       <li
         v-for="(notification, index) in notifications"
         :key="index"
-        class="mt-1 border-b-2 border-t-2 border-red-400 bg-gray-100 px-3 py-2 dark:bg-slate-900"
+        class="mt-1 border-y-2 border-red-400 bg-gray-100 px-3 py-2 dark:bg-slate-900"
       >
         <p class="my-0 font-serif text-xs font-light">
           {{ notification.title }}
         </p>
         <div class="my-0 flex justify-between align-middle font-bold">
-          <p class="m-0 text-4xl">{{ notification.body }}</p>
+          <p class="m-0 text-4xl">
+            {{ notification.body }}
+          </p>
           <button
             class="float-right font-bold text-blood transition-all hover:text-red-400"
             @click="remove(index)"
@@ -52,12 +54,13 @@
 
 <script setup>
 import { useNotifications } from '~/composables/useNotifications';
+
 const { clear, notifications, remove } = useNotifications();
 
 // clear notifications when route changes
 const route = useRoute();
 watch(
   () => route.path,
-  () => clear()
+  () => clear(),
 );
 </script>

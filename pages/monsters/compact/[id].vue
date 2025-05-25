@@ -13,7 +13,7 @@ definePageMeta({
         {
           replace: true,
           redirectCode: 301,
-        }
+        },
       );
     },
   ],

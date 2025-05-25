@@ -6,7 +6,7 @@ export const useFormatModifier = (
   options?: {
     inputType?: 'modifier' | 'score';
     showZero?: boolean;
-  }
+  },
 ) => {
   if (input === undefined) return '-';
 

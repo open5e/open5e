@@ -54,7 +54,7 @@ export const useXPCalculator = () => {
         medium: number;
         hard: number;
         deadly: number;
-      }
+      },
     ) => {
       if (encounterXP < partyXPBudget.easy) return 'Trivial';
       if (encounterXP < partyXPBudget.medium) return 'Easy';

@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/vue-query';
 import axios from 'axios';
+import { unref } from 'vue';
 
 export const API_ENDPOINTS = {
   backgrounds: 'v2/backgrounds/',
@@ -29,10 +30,10 @@ export const useAPI = () => {
     findMany: async (
       endpoint: string,
       sources: string[],
-      params: Record<string, any> = {}
+      params: Record<string, never> = {},
     ) => {
-      const formattedSources =
-        sources.length > 0 ? sources.join(',') : 'no-sources';
+      const formattedSources
+        = sources.length > 0 ? sources.join(',') : 'no-sources';
       const res = await api.get(endpoint, {
         params: {
           limit: 5000,
@@ -41,7 +42,7 @@ export const useAPI = () => {
         },
       });
 
-      return res.data.results as Record<string, any>[];
+      return res.data.results as Record<string, never>[];
     },
     findPaginated: async (options: {
       endpoint: string;
@@ -50,7 +51,7 @@ export const useAPI = () => {
       itemsPerPage?: number;
       sortByProperty?: string;
       isSortDescending?: boolean;
-      queryParams?: Record<string, any>;
+      queryParams?: Record<string, never>;
     }) => {
       const {
         endpoint,
@@ -75,7 +76,7 @@ export const useAPI = () => {
 
       const data = res.data as {
         count: number;
-        results: Record<string, any>[];
+        results: Record<string, never>[];
         next: string | null;
         previous: string | null;
       };
@@ -86,17 +87,17 @@ export const useAPI = () => {
       const route = parts.join('');
       const res = await api.get(route, { params: { depth: '2' } }).catch(() => {
         // redirect to /search if API route returns nothing
-        const searchTerm = parts.filter((exists) => exists).slice(-1)[0];
+        const searchTerm = parts.filter(exists => exists).slice(-1)[0];
         navigateTo(`/search?text=${searchTerm}`);
       });
-      return res?.data as Record<string, any>;
+      return res?.data as Record<string, never>;
     },
   };
 };
 
 export const useFindMany = (
   endpoint: MaybeRef<string>,
-  params?: MaybeRef<Record<string, string | number | boolean>>
+  params?: MaybeRef<Record<string, string | number | boolean>>,
 ) => {
   const { findMany } = useAPI();
 
@@ -110,7 +111,7 @@ export const useFindMany = (
     queryKey: ['findMany', endpoint, sourcesForAPIVersion, params],
     queryFn: () =>
       unref(
-        findMany(unref(endpoint), unref(sourcesForAPIVersion), unref(params))
+        findMany(unref(endpoint), unref(sourcesForAPIVersion), unref(params)),
       ),
   });
 };
@@ -122,9 +123,9 @@ export const useFindMany = (
  * @returns The data object with nested resources fetched.
  */
 const fetchNestedResources = async (
-  data: Record<string, any>,
-  fields: string[]
-): Promise<Record<string, any>> => {
+  data: Record<string, never>,
+  fields: string[],
+): Promise<Record<string, never>> => {
   for (const field of fields) {
     const fieldParts = field.split('.');
     let currentData = data;
@@ -138,23 +139,23 @@ const fetchNestedResources = async (
         parentKey = part;
         currentData = currentData[part];
       } else {
-        (currentData as Record<string, any>)[part] = null;
+        (currentData as Record<string, null>)[part] = null;
         break;
       }
     }
 
     // Fetch related data if the current field is a URL
     if (
-      typeof currentData === 'string' &&
-      (currentData as string).startsWith('http')
+      typeof currentData === 'string'
+      && (currentData as string).startsWith('http')
     ) {
       const relatedData = await axios.get(currentData);
       parentData[parentKey] = relatedData.data;
 
       // Recursively fetch nested related fields
       const nestedFields = fields
-        .filter((f) => f.startsWith(`${field}.`))
-        .map((f) => f.slice(field.length + 1));
+        .filter(f => f.startsWith(`${field}.`))
+        .map(f => f.slice(field.length + 1));
       if (nestedFields.length > 0) {
         await fetchNestedResources(parentData[parentKey], nestedFields);
       }
@@ -169,17 +170,17 @@ export const useFindOne = (
   options?: {
     params: Record<string, string>;
     relatedFields: string[];
-  }
+  },
 ) => {
   const { get } = useAPI();
 
   const params = options?.params;
-  let formattedParams = [];
+  const formattedParams = [];
   for (const name in params) {
     formattedParams.push(`${name}=${params[name]}`);
   }
-  const paramString =
-    formattedParams.length === 0 ? '' : '/?' + formattedParams.join('&');
+  const paramString
+    = formattedParams.length === 0 ? '' : '/?' + formattedParams.join('&');
   return useQuery({
     queryKey: [endpoint, id],
     queryFn: async () => {
@@ -187,12 +188,10 @@ export const useFindOne = (
       // const data = await get(endpoint, unref(id), '/?fields=key');
       const data = await get(endpoint, unref(id), paramString);
       // Fetch related data for the specified fields
-      const enrichedData = await fetchNestedResources(
+      return await fetchNestedResources(
         data,
-        options?.relatedFields ?? []
+        options?.relatedFields ?? [],
       );
-
-      return enrichedData;
     },
   });
 };
@@ -219,7 +218,7 @@ export const useSubclass = (className: string, subclass: string) => {
     queryKey: ['subclass', className, subclass],
     queryFn: async () => {
       const class_result = await api.get(API_ENDPOINTS.classes, className);
-      return class_result.archetypes.find((a: any) => a.slug === subclass);
+      return class_result.archetypes.find((a: never) => a.slug === subclass);
     },
   });
 };
@@ -229,9 +228,9 @@ export const useSections = (...categories: string[]) => {
     fields: ['slug', 'name', 'parent'].join(),
   });
   const filtered_sections = computed(() =>
-    sections.value?.filter((section) =>
-      categories.includes(`${section.parent}`)
-    )
+    sections.value?.filter(section =>
+      categories.includes(`${section.parent}`),
+    ),
   );
   return { data: filtered_sections, isPending };
 };
@@ -240,9 +239,9 @@ export const useSections = (...categories: string[]) => {
  * Returns a new array of items sorted by the given field
  */
 export function sortByField(
-  items: Record<string, any>[],
+  items: Record<string, never>[],
   field: string,
-  direction: 'ascending' | 'descending' = 'ascending'
+  direction: 'ascending' | 'descending' = 'ascending',
 ) {
   const isAscending = direction === 'ascending';
   return [...items].sort((a, b) => {
@@ -256,7 +255,7 @@ export function sortByField(
   });
 }
 
-export const useDocuments = (params: Record<string, any> = {}) => {
+export const useDocuments = (params: Record<string, never> = {}) => {
   params.depth = '1';
   const { findMany } = useAPI();
   return useQuery({

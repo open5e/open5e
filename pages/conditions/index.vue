@@ -1,7 +1,9 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2">Conditions</h1>
+      <h1 class="my-2">
+        Conditions
+      </h1>
 
       <ApiTableNav
         class="w-full"

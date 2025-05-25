@@ -1,12 +1,17 @@
 <template>
-  <main v-if="monster" class="docs-container container">
+  <main
+    v-if="monster"
+    class="docs-container container"
+  >
     <!-- TITLE -->
     <div class="flex items-end justify-between gap-8">
-      <h1 class="flex-auto">{{ monster.name }}</h1>
+      <h1 class="flex-auto">
+        {{ monster.name }}
+      </h1>
 
       <div class="flex flex-none items-start gap-2">
         <!-- <button           class="flex items-center gap-1 rounded-md p-1 text-xs text-blood outline outline-1 outline-blood hover:bg-blood hover:text-white"
-          @click="toggleMode()">          
+          @click="toggleMode()">
           <icon
             :name="
               mode === 'compact'
@@ -17,7 +22,7 @@
           {{ mode === 'compact' ? 'Regular statblock' : 'Compact statblock' }}</button> -->
         <button
           v-if="monsterInEncounter"
-          class="flex hidden h-8 items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80 lg:flex"
+          class="flex h-8 items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80 lg:flex"
           @click="removeFromEncounter"
         >
           <Icon name="heroicons:minus" />
@@ -47,11 +52,14 @@
         {{ monster.subtype }}
       </span>
 
-      <span v-if="monster.alignment" class="before:content-[',_']">
+      <span
+        v-if="monster.alignment"
+        class="before:content-[',_']"
+      >
         {{ monster.alignment }}
       </span>
 
-      <source-tag
+      <SourceTag
         :title="monster.document.name"
         :text="monster.document.key"
         :description="monster.document.source"
@@ -60,19 +68,23 @@
 
     <dl class="grid grid-cols-[10rem_1fr]">
       <!-- ARMOR CLASS -->
-      <dt class="font-bold after:content-['_']">Armor Class</dt>
+      <dt class="font-bold after:content-['_']">
+        Armor Class
+      </dt>
       <dd>
         <span>{{ monster.armor_class }}</span>
         <span
-          v-if="monster.armor_desc"
-          class="before:content-['_('] after:content-[')']"
+          v-if="monster.armor_detail"
+          class="text-charcoal dark:text-smoke"
         >
-          {{ monster.armor_desc }}
+          ({{ monster.armor_detail }})
         </span>
       </dd>
 
       <!-- INITIATIVE BONUS -->
-      <dt class="font-bold after:content-['_']">Initiative Bonus</dt>
+      <dt class="font-bold after:content-['_']">
+        Initiative Bonus
+      </dt>
       <dd
         class="w-min cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
         @click="useDiceRoller(initiativeBonus)"
@@ -81,7 +93,9 @@
       </dd>
 
       <!-- HIT POINTS -->
-      <dt class="font-bold after:content-['_']">Hit Points</dt>
+      <dt class="font-bold after:content-['_']">
+        Hit Points
+      </dt>
       <dd>
         <span class="after:content-['_']">{{ monster.hit_points }}</span>
         <span
@@ -94,7 +108,9 @@
       </dd>
 
       <!-- SPEEDS -->
-      <dt class="font-bold after:content-['_']">Speed</dt>
+      <dt class="font-bold after:content-['_']">
+        Speed
+      </dt>
       <dd>
         <span
           v-for="speed in speeds"
@@ -116,8 +132,14 @@
     <!-- BOX UNDER STATS -->
     <section class="my-4">
       <!-- SKILLS -->
-      <ul v-if="Object.keys(monster.skill_bonuses).length > 0" id="skills">
-        <label for="skills" class="inline font-bold after:content-['_']">
+      <ul
+        v-if="Object.keys(monster.skill_bonuses).length > 0"
+        id="skills"
+      >
+        <label
+          for="skills"
+          class="inline font-bold after:content-['_']"
+        >
           Skills
         </label>
         <li
@@ -131,7 +153,10 @@
       </ul>
 
       <!-- RESISTANCES, VULNERABILITY AND IMMUNITIES -->
-      <ul v-for="(data, title) in resistancesAndVulnerabilities" :key="title">
+      <ul
+        v-for="(data, title) in resistancesAndVulnerabilities"
+        :key="title"
+      >
         <label class="inline font-bold after:content-['_']">{{ title }}</label>
         <li
           v-for="field in data"
@@ -144,7 +169,10 @@
 
       <!-- SENSES -->
       <ul id="senses">
-        <span for="senses" class="inline font-bold after:content-['_']">
+        <span
+          for="senses"
+          class="inline font-bold after:content-['_']"
+        >
           Senses
         </span>
         <li
@@ -158,7 +186,10 @@
 
       <!-- LANGUAGES -->
       <ul id="languages">
-        <span for="languages" class="inline font-bold after:content-['_']">
+        <span
+          for="languages"
+          class="inline font-bold after:content-['_']"
+        >
           Languages
         </span>
         <li
@@ -168,19 +199,24 @@
         >
           {{ language.name }}
         </li>
-        <li v-if="monster.languages.length === 0" class="inline">-</li>
+        <li
+          v-if="monster.languages.length === 0"
+          class="inline"
+        >
+          -
+        </li>
       </ul>
 
       <!-- CHALLENGE -->
       <ul id="challenge">
-        <span for="challenge" class="inline font-bold after:content-['_']">
+        <span
+          for="challenge"
+          class="inline font-bold after:content-['_']"
+        >
           Challenge
         </span>
-        <span>
-          {{
-            `${monster.challenge_rating_text} (${monster.experience_points} XP)`
-          }}
-        </span>
+        <span>{{ monster.challenge_rating_text + ' ' }}</span>
+        <span>{{ `(${monster.experience_points.toLocaleString()} XP)` }}</span>
       </ul>
     </section>
 
@@ -188,11 +224,19 @@
     <section v-if="monster.traits?.length !== 0">
       <h2>Traits</h2>
       <ul id="traits-list">
-        <li v-for="trait in monster.traits" :key="trait.key" class="my-1">
+        <li
+          v-for="trait in monster.traits"
+          :key="trait.key"
+          class="my-1"
+        >
           <span class="font-bold after:content-['._']">
             {{ trait.name }}
           </span>
-          <md-viewer :inline="true" :text="trait.desc" :use-roller="true" />
+          <md-viewer
+            :inline="true"
+            :text="trait.desc"
+            :use-roller="true"
+          />
         </li>
       </ul>
     </section>
@@ -204,7 +248,11 @@
     >
       <h2>{{ snakeToTitleCase(actionType) }}</h2>
       <ul>
-        <li v-for="action in actionsByType" :key="action.name" class="my-1">
+        <li
+          v-for="action in actionsByType"
+          :key="action.name"
+          class="my-1"
+        >
           <span class="font-bold after:content-['_']">{{ action.name }}</span>
           <span
             v-if="action.uses_type === 'RECHARGE_ON_ROLL'"
@@ -212,11 +260,15 @@
             @click="useDiceRoller('1d6+0')"
           >
             {{
-              'Recharge ' +
-              (action.uses_param < 6 ? `${action.uses_param}-6` : '6')
+              'Recharge '
+                + (action.uses_param < 6 ? `${action.uses_param}-6` : '6')
             }}
           </span>
-          <md-viewer inline="true" :text="action.desc" :use-roller="true" />
+          <md-viewer
+            inline="true"
+            :text="action.desc"
+            :use-roller="true"
+          />
         </li>
       </ul>
     </section>
@@ -243,7 +295,10 @@
 
     <p class="text-sm italic">
       Source:
-      <a target="NONE" :href="monster.document.permalink">
+      <a
+        target="NONE"
+        :href="monster.document.permalink"
+      >
         {{ monster.document.name }}
         <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
       </a>
@@ -274,7 +329,7 @@ const params = {
 const { data: monster } = useFindOne(
   API_ENDPOINTS.monsters,
   useRoute().params.id,
-  { params }
+  { params },
 );
 
 // Calculate initiative bonus from dexterity modifier if not explicitly set
@@ -287,23 +342,30 @@ const initiativeBonus = computed(() => {
 // rtrns an object whose keys are action types & vals are arrays of actions.
 const actions = computed(() => {
   if (!monster?.value?.actions) return {};
-  return monster.value.actions.reduce(
+  const actionsByType = monster.value.actions.reduce(
     (output, action) => {
       const { action_type: actionType } = action;
       if (output[actionType]) output[actionType].push(action);
       else output[actionType] = [action];
       return output;
     },
-    { ACTION: [] }
+    { ACTION: [] },
   );
+
+  // sort monster actions according to the value of their 'order' field
+  Object.keys(actionsByType).forEach((type) => {
+    actionsByType[type].sort((a, b) => a['order'] - b['order']);
+  });
+
+  return actionsByType;
 });
 
 // Converts SNAKE_CASE to Title Case, used for action type headers
-const snakeToTitleCase = (input) =>
+const snakeToTitleCase = input =>
   input
     .toLowerCase()
     .split('_')
-    .map((word) => word[0].toUpperCase() + word.substring(1))
+    .map(word => word[0].toUpperCase() + word.substring(1))
     .join(' ');
 
 // Format monster speeds for template
@@ -312,7 +374,7 @@ const speeds = computed(() => {
   const { unit, ...speeds } = monster.value.speed;
   return Object.entries(speeds).map(
     ([speed, distance]) =>
-      (speed === 'walk' ? '' : speed + ' ') + `${distance} ft.`
+      (speed === 'walk' ? '' : speed + ' ') + `${distance} ft.`,
   );
 });
 
@@ -353,7 +415,7 @@ const resistancesAndVulnerabilities = computed(() => {
     const damageTypesToSub = ['Bludgeoning', 'Slashing', 'Piercing'];
     const sub = 'Bludgeoning, Piercing and Slashing from Nonmagical Attacks';
     return [
-      ...field.filter((res) => !damageTypesToSub.includes(res.name)),
+      ...field.filter(res => !damageTypesToSub.includes(res.name)),
       { name: sub },
     ];
   };
@@ -376,21 +438,21 @@ const resistancesAndVulnerabilities = computed(() => {
 });
 
 const mode = ref(route.query.mode || 'normal');
-function toggleMode() {
-  switch (mode.value) {
-    case 'compact':
-      mode.value = 'normal';
-      break;
-    default:
-      mode.value = 'compact';
-      break;
-  }
+// function toggleMode() {
+//   switch (mode.value) {
+//     case 'compact':
+//       mode.value = 'normal';
+//       break;
+//     default:
+//       mode.value = 'compact';
+//       break;
+//   }
 
-  navigateTo({
-    path: `/monsters/${route.params.id}`,
-    query: mode.value === 'compact' ? { mode: 'compact' } : null,
-  });
-}
+//   navigateTo({
+//     path: `/monsters/${route.params.id}`,
+//     query: mode.value === 'compact' ? { mode: 'compact' } : null,
+//   });
+// }
 
 const encounterStore = useEncounterStore();
 
@@ -400,13 +462,13 @@ const addToEncounter = () => {
     monster.value.key,
     monster.value.name,
     monster.value.challenge_rating_decimal,
-    monster.value.challenge_rating_text
+    monster.value.challenge_rating_text,
   );
 };
 
 const monsterInEncounter = computed(() => {
   if (!monster.value) return false;
-  return encounterStore.monsters.value.find((m) => m.id === monster.value.key);
+  return encounterStore.monsters.value.find(m => m.id === monster.value.key);
 });
 
 const removeFromEncounter = () => {

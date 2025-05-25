@@ -4,15 +4,27 @@
     <hr class="mb-8" />
     <!-- Header -->
     <p class="font-sans text-xl font-bold text-slate-400">
-      <span v-if="!data" class="h-8">Searching Open5e...</span>
+      <span
+        v-if="!data"
+        class="h-8"
+      >Searching Open5e...</span>
       <span v-else-if="!searchText">
-        <icon name="majesticons:search-line" class="mr-2 h-8 w-8" />
+        <icon
+          name="majesticons:search-line"
+          class="mr-2 size-8"
+        />
         <span>Search for something to see results...</span>
       </span>
       <span v-else-if="results.inScope">
-        <icon name="majesticons:scroll-line" class="mr-2 h-8 w-8" />
+        <icon
+          name="majesticons:scroll-line"
+          class="mr-2 size-8"
+        />
         <span>{{ results.inScope.length }} results in your sources</span>
-        <span v-if="results.outScope.length > 0" class="font-thin">
+        <span
+          v-if="results.outScope.length > 0"
+          class="font-thin"
+        >
           ({{ results.outScope.length }} in other sources)
         </span>
       </span>
@@ -28,7 +40,10 @@
       />
     </ul>
 
-    <div v-if="results && results.outScope.length > 0" class="my-2 border-t">
+    <div
+      v-if="results && results.outScope.length > 0"
+      class="my-2 border-t"
+    >
       <button
         class="mt-2 font-sans text-xl font-bold tracking-wide text-indigo-600 hover:text-blood hover:underline dark:text-indigo-200 dark:hover:text-red"
         @click="toggleOtherSources()"
@@ -68,7 +83,7 @@ const results = computed(() => {
       sources.value.includes(item.document.key)
         ? [[...inScope, item], outScope]
         : [inScope, [...outScope, item]],
-    [[], []]
+    [[], []],
   );
   return { inScope, outScope };
 });

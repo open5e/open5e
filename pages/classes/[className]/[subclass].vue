@@ -1,18 +1,29 @@
 <template>
-  <main v-if="subclassData" class="docs-container container">
+  <main
+    v-if="subclassData"
+    class="docs-container container"
+  >
     <h1>{{ subclassData.name }}</h1>
     <!-- CLASS ABILITIES -->
     <section>
       <ul v-if="features.length > 0">
-        <li v-for="feature in features" :key="feature.key">
+        <li
+          v-for="feature in features"
+          :key="feature.key"
+        >
           <h3>{{ feature.name }}</h3>
-          <md-viewer :text="feature.desc" :header-level="3" />
+          <md-viewer
+            :text="feature.desc"
+            :header-level="3"
+          />
         </li>
       </ul>
     </section>
   </main>
 
-  <p v-else>Loading...</p>
+  <p v-else>
+    Loading...
+  </p>
 </template>
 
 <script setup>
@@ -26,14 +37,14 @@ const { data: subclassData } = useFindOne(
       depth: 1,
       fields: ['name', 'key', 'features'].join(','),
     },
-  }
+  },
 );
 
 const features = computed(() => {
   const features = subclassData.value.features;
   if (!features) return [];
   return [...features].sort(
-    (a, b) => a.gained_at[0].level - b.gained_at[0].level
+    (a, b) => a.gained_at[0].level - b.gained_at[0].level,
   );
 });
 </script>
