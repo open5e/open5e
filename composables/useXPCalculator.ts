@@ -37,10 +37,10 @@ const getMultiplier = (monsterCount: number): number => {
 export const useXPCalculator = () => {
   const getDifficultyThresholds = (level: number) => {
     return {
-      easy: XP_RULES.easy[level],
-      medium: XP_RULES.medium[level],
-      hard: XP_RULES.hard[level],
-      deadly: XP_RULES.deadly[level],
+      easy: XP_RULES.easy[level - 1],
+      medium: XP_RULES.medium[level - 1],
+      hard: XP_RULES.hard[level - 1],
+      deadly: XP_RULES.deadly[level - 1],
     };
   };
 
