@@ -4,7 +4,7 @@
       <h1 class="my-2">
         Classes
       </h1>
-      <ApiTableNav
+      <ResultsTablePaginator
         class="w-full"
         :page-number="pageNo"
         :last-page-number="lastPageNo"
@@ -17,14 +17,14 @@
       />
     </div>
 
-    <ApiTableFilter
+    <ResultsTableFilter
       :filter-state="filterState"
       :search="{
         name: 'Search Classes',
         filterField: 'name__contains',
       }"
     />
-    <ApiResultsTable
+    <ResultsTable
       endpoint="classes"
       :data="data?.results"
       :cols="[

@@ -5,7 +5,7 @@
         Backgrounds
       </h1>
 
-      <ApiTableNav
+      <ResultsTablePaginator
         class="w-full"
         :page-number="pageNo"
         :last-page-number="lastPageNo"
@@ -18,7 +18,7 @@
       />
     </div>
 
-    <ApiResultsTable
+    <ResultsTable
       :data="data?.results"
       :cols="[
         {

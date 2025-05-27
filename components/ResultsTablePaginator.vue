@@ -1,7 +1,7 @@
 <script>
 /**
  * ApiTableNav.vue - Pagination controls, designed to be used with the
- * `<ApiResultsTable />` component
+ * `<ResultsTable />` component
  *
  * -= PROPS (INPUTS) =-
  * @prop {Number} lastPageNumber - Last page number
@@ -16,7 +16,7 @@
  * @emits prev - Emitted when "prev page" button clicked
  *
  * -= DEPENDENCIES =-
- * @component ApiTableButton – Renders pagination buttons with icons.
+ * @component ResultsTablePaginatorButton – Renders pagination buttons with icons.
  */
 </script>
 
@@ -32,7 +32,7 @@
         v-for="button in buttons"
         :key="button.name"
       >
-        <ApiTableButton
+        <ResultsTablePaginatorButton
           :name="button.name"
           :icon="button.icon"
           :disabled="!button.isActive.value"

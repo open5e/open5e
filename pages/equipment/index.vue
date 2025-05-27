@@ -5,7 +5,7 @@
         Equipment
       </h1>
 
-      <ApiTableNav
+      <ResultsTablePaginator
         :page-number="pageNo"
         :last-page-number="lastPageNo"
         :items-per-page="itemsPerPage || 1"
@@ -17,7 +17,7 @@
       />
     </div>
 
-    <ApiTableFilter
+    <ResultsTableFilter
       :filter-state="filterState"
       :search="{
         name: 'Search Equipment',
@@ -50,7 +50,7 @@
       ]"
     />
 
-    <ApiResultsTable
+    <ResultsTable
       v-model="filterState.debouncedFilter"
       :data="data?.results"
       :cols="[

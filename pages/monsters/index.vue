@@ -5,7 +5,7 @@
         Monsters
       </h1>
 
-      <ApiTableNav
+      <ResultsTablePaginator
         class="w-full"
         :page-number="pageNo || 1"
         :last-page-number="lastPageNo || 1"
@@ -18,7 +18,7 @@
       />
     </div>
 
-    <ApiTableFilter
+    <ResultsTableFilter
       :filter-state="filterState"
       :search="{
         name: 'Search Monsters',
@@ -68,7 +68,7 @@
       @keyup.esc="focusFilter"
     />
 
-    <ApiResultsTable
+    <ResultsTable
       v-model="debouncedFilter"
       :data="data?.results"
       :cols="[

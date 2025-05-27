@@ -5,7 +5,7 @@
         Spells
       </h1>
 
-      <ApiTableNav
+      <ResultsTablePaginator
         class="w-full"
         :page-number="pageNo"
         :last-page-number="lastPageNo"
@@ -18,7 +18,7 @@
       />
     </div>
 
-    <ApiTableFilter
+    <ResultsTableFilter
       :filter-state="filterState"
       :search="{
         name: 'Search Spells',
@@ -69,7 +69,7 @@
     />
 
     <!-- RESULTS TABLE -->
-    <ApiResultsTable
+    <ResultsTable
       :data="data?.results"
       :cols="[
         {

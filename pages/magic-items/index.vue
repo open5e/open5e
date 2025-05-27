@@ -5,7 +5,7 @@
         Magic Items
       </h1>
 
-      <ApiTableNav
+      <ResultsTablePaginator
         :page-number="pageNo || 1"
         :last-page-number="lastPageNo || 1"
         :items-per-page="itemsPerPage || 1"
@@ -17,7 +17,7 @@
       />
     </div>
 
-    <ApiTableFilter
+    <ResultsTableFilter
       :filter-state="filterState"
       :search="{
         name: 'Search Magic Items',
@@ -49,7 +49,7 @@
       ]"
     />
 
-    <ApiResultsTable
+    <ResultsTable
       v-model="debouncedFilter"
       :data="data?.results"
       :cols="[

@@ -31,7 +31,7 @@
  *
  * -= DEPENDENCIES =-
  * @component Icon -> Renders icons in the UI.
- * @component ApiTableButton -> Button for clearing the filter.
+ * @component ResultsTablePaginatorButton -> Button for clearing the filter.
  *
  */
 </script>
@@ -131,7 +131,7 @@
       </div>
     </template>
 
-    <ApiTableButton
+    <ResultsTablePaginatorButton
       name="Clear filter"
       :disabled="!filterState.canClearFilter.value"
       icon="heroicons:x-mark"

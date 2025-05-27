@@ -5,7 +5,7 @@
         Rules
       </h1>
 
-      <ApiTableNav
+      <ResultsTablePaginator
         class="w-full"
         :page-number="pageNo"
         :last-page-number="lastPageNo"
@@ -18,7 +18,7 @@
       />
     </div>
 
-    <ApiTableFilter
+    <ResultsTableFilter
       :filter-state="filterState"
       :search="{
         name: 'Search Rules',
@@ -26,7 +26,7 @@
       }"
     />
 
-    <ApiResultsTable
+    <ResultsTable
       :data="data?.results"
       :cols="[
         {

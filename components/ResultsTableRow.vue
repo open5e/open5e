@@ -1,6 +1,6 @@
 <script>
 /**
- * ApiResultRow.vue -> Sub-component of ApiResultsTable. Displays a single
+ * ApiResultRow.vue -> Sub-component of ResultsTable. Displays a single
  * result returned by the API as a a table row (<tr> element). Typically
  * contains a link to the single-view page of the API resource.
  *

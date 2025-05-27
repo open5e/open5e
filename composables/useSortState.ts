@@ -1,6 +1,6 @@
 /* useSortState contains logic for controlling api result table sorting.
  * Values returned are designed to interface btwn the useFindPaginated
- * composable and the SortableTableHeader component */
+ * composable and the ResultsTableHeader component */
 
 export const useSortState = () => {
   // api field to sort results by
