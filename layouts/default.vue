@@ -97,7 +97,7 @@
             @click="toggleSidebar"
           />
           <BreadcrumbLinks class="grow" />
-          <EncounterSummary
+          <EncounterBuilderSummary
             v-if="!isEncounterVisible"
             @show-encounter="showEncounter"
           />
@@ -138,7 +138,7 @@
 import { useRoute } from 'nuxt/app';
 import { computed } from 'vue';
 import EncounterBuilder from '~/components/EncounterBuilder.vue';
-import EncounterSummary from '~/components/EncounterSummary.vue';
+import EncounterBuilderSummary from '~/components/EncounterBuilderSummary.vue';
 
 // Generate page title from Breadcrumbs
 const BASE_TITLE = 'Open5e';

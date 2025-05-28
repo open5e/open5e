@@ -16,11 +16,11 @@ interface MockMonster {
 }
 
 // Mock child components
-vi.mock('~/components/PartyBuilder.vue', () => ({
+vi.mock('~/components/EncounterBuilderPartyBuilder.vue', () => ({
   default: { template: '<div>Party Builder</div>' },
 }));
 
-vi.mock('~/components/MonsterSearch.vue', () => ({
+vi.mock('~/components/EncounterBuilderMonsterSearch.vue', () => ({
   default: {
     template: '<div class="monster-search">Monster Search</div>',
     emits: ['select'],
@@ -102,7 +102,7 @@ describe('EncounterBuilder', () => {
     };
 
     await wrapper
-      .findComponent({ name: 'MonsterSearch' })
+      .findComponent({ name: 'EncounterBuilderMonsterSearch' })
       .vm.$emit('select', testMonster);
 
     expect(mockAddMonster).toHaveBeenCalledWith(

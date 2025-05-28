@@ -4,7 +4,7 @@ import type { Ref } from 'vue';
 import { ref, computed } from 'vue';
 
 // Now import the component after setting up mocks
-import EncounterSummary from '~/components/EncounterSummary.vue';
+import EncounterBuilderSummary from '~/components/EncounterBuilderSummary.vue';
 
 // Create a shared mock state with Vue refs
 const mockState = {
@@ -44,7 +44,7 @@ vi.mock('~/composables/useEncounter', () => ({
 }));
 
 const mountAndWaitForReady = async () => {
-  const wrapper = mount(EncounterSummary, {
+  const wrapper = mount(EncounterBuilderSummary, {
     global: {
       stubs: {
         Icon: true,
@@ -59,7 +59,7 @@ const mountAndWaitForReady = async () => {
   return wrapper;
 };
 
-describe('EncounterSummary', () => {
+describe('EncounterBuilderSummary', () => {
   beforeEach(() => {
     // Reset mock state before each test
     mockState.monsters.value = [];

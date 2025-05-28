@@ -12,7 +12,7 @@
       </button>
     </div>
     <div class="mb-2 border-b border-gray-200 pb-4 dark:border-gray-700">
-      <PartyBuilder />
+      <EncounterBuilderPartyBuilder />
     </div>
 
     <div
@@ -38,7 +38,7 @@
         Click + on a monster page or search below
       </p>
       <div class="mt-4">
-        <MonsterSearch @select="handleMonsterSelect" />
+        <EncounterBuilderMonsterSearch @select="handleMonsterSelect" />
       </div>
     </div>
 
@@ -153,7 +153,7 @@
       </div>
 
       <div class="mb-4">
-        <MonsterSearch @select="handleMonsterSelect" />
+        <EncounterBuilderMonsterSearch @select="handleMonsterSelect" />
       </div>
 
       <button
@@ -174,8 +174,8 @@ import {
   type DifficultyLevel,
 } from '~/composables/useEncounter';
 import { usePartyStore } from '~/composables/useParty';
-import PartyBuilder from '~/components/PartyBuilder.vue';
-import MonsterSearch from '~/components/MonsterSearch.vue';
+import EncounterBuilderPartyBuilder from '~/components/EncounterBuilderPartyBuilder.vue';
+import EncounterBuilderMonsterSearch from '~/components/EncounterBuilderMonsterSearch.vue';
 import type { Monster } from '~/types/monster';
 
 // Prop included for testing purposes
