@@ -1,12 +1,12 @@
 <script>
 /**
- * NavLink.vue - Custom link designed to be used with the <NavBar>. Handles
+ * NavMenuLink.vue - Custom link designed to be used with the <NavMenu>. Handles
  * styles, current route highlighting, and optional indentation.
  *
  * -= PROPS (INPUTS) =-
  * @prop {String} to - URL tag of the link
  * @prop {String} title - Link title (currently not used in the template)
- * @prop {Number} indentationLevel - How deeply should the navlink be indented
+ * @prop {Number} indentationLevel - How deeply should the NavMenuLink be indented
  *
  * -= SLOTS =-
  * @slot default - The content to be as the Link's body

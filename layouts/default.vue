@@ -70,7 +70,7 @@
         </div>
 
         <!-- Sidebar Navigation -->
-        <NavBar />
+        <NavMenu />
 
         <!-- Report Issue UI -->
         <ReportIssue />
