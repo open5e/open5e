@@ -1,6 +1,6 @@
 <script>
 /**
- * ReportIssue.vue - A button that opens a modal menu for users to submit
+ * ModalReportIssue.vue - A button that opens a modal menu for users to submit
  * website issues via a GoogleSheet
  *
  * -= PROPS (INPUTS) =-
@@ -11,7 +11,7 @@
  * modal visibility
  *
  * -= DEPENDENCIES =-
- * @component ModalDialogue: Displays the issue form as a modal menu
+ * @component Modal: Displays the issue form as a modal menu
  *
  */
 </script>
@@ -66,7 +66,7 @@ const closeModal = () => {
       />
     </button>
 
-    <modal-dialog
+    <Modal
       :show="isOpen"
       @close="isOpen = false"
     >
@@ -187,6 +187,6 @@ const closeModal = () => {
         <!-- Pending UI -->
         <span v-if="status === 'pending'">Submitting...</span>
       </template>
-    </modal-dialog>
+    </Modal>
   </div>
 </template>

@@ -14,14 +14,14 @@
  * @emits {Function} saveSelection – Emit when the user confirms the selection and the modal should close.
  *
  * -= DEPENDENCIES =-
- * @component ModalDialogue – Used for rendering the modal dialog UI.
+ * @component Modal – Used for rendering the modal dialog UI.
  * @component SourceTag – Displays a tag for each source showing relevant information.
  *
  */
 </script>
 
 <template>
-  <modal-dialog @close="closeModal()">
+  <Modal @close="closeModal()">
     <slot>
       <!-- MODAL MENU TITLE BAR -->
       <div class="flex w-full justify-between border-b-4 border-blood">
@@ -177,7 +177,7 @@
         Update
       </button>
     </template>
-  </modal-dialog>
+  </Modal>
 </template>
 
 <script setup>

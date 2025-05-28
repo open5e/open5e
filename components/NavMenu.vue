@@ -19,9 +19,9 @@
       v-for="section in routes"
       :key="section.title"
     >
-      <nav-link :to="section.url">
+      <NavMenuLink :to="section.url">
         {{ section.title }}
-      </nav-link>
+      </NavMenuLink>
 
       <!-- Render sub-routes -->
       <ul
@@ -33,12 +33,12 @@
           v-for="subroute in section.subroutes"
           :key="subroute.title"
         >
-          <nav-link
+          <NavMenuLink
             :to="`${subroute.url}`"
             :indentation-level="1"
           >
             {{ subroute.title }}
-          </nav-link>
+          </NavMenuLink>
 
           <!-- Render sub-sub routes (and no deeper) -->
           <ul>
@@ -46,12 +46,12 @@
               v-for="subSubroute in subroute.subroutes"
               :key="subSubroute.title"
             >
-              <nav-link
+              <NavMenuLink
                 :to="`${subSubroute.url}`"
                 :indentation-level="2"
               >
                 {{ subSubroute.title }}
-              </nav-link>
+              </NavMenuLink>
             </li>
           </ul>
         </li>
