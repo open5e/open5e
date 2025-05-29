@@ -56,7 +56,13 @@ export const useEncounterStore = () => {
   const totalXP = computed(
     () =>
       monsters.value.reduce(
-        (sum, m) => sum + (m.experience_points || 0) * m.count,
+        (sum, m) => {
+          // make sure that experience is 'number' type before adding it
+          const xp = typeof m.experience_points === 'string'
+            ? parseInt(m.experience_points)
+            : m.experience_points;
+          return sum + (xp || 0) * m.count;
+        },
         0,
       ) * xpCalculator.getMultiplier(totalMonsters.value),
   );
