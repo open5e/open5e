@@ -8,6 +8,10 @@ import {
   useQuery,
   useQueryClient,
 } from '@tanstack/vue-query';
+import type { MaybeRef } from 'vue';
+import { computed, ref, unref, watch } from 'vue';
+import { useSourcesList } from './sources';
+import { isV1Endpoint, useAPI } from './api';
 
 export const useFindPaginated = (options: {
   endpoint: MaybeRef<string>;
