@@ -2,6 +2,8 @@
  * Values returned are designed to interface btwn the useFindPaginated
  * composable and the SortableTableHeader component */
 
+import { ref } from 'vue';
+
 export const useSortState = () => {
   // api field to sort results by
   const currentSortingProperty = ref('name');
