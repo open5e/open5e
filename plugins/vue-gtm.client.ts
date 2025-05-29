@@ -1,3 +1,4 @@
+import { defineNuxtPlugin, useRouter } from 'nuxt/app';
 import VueGtag, { trackRouter } from 'vue-gtag-next';
 
 export default defineNuxtPlugin((nuxtApp) => {
