@@ -56,7 +56,10 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/eslint',
-    '@nuxtjs/tailwindcss',
+    ['@nuxtjs/tailwindcss', {
+      configPath: '~/tailwind.config.ts',
+      cssPath: '~/styles/tailwind.css',
+    }],
     'nuxt-icon',
     '@hebilicious/vue-query-nuxt',
     '@nuxt/test-utils/module',
@@ -71,14 +74,15 @@ export default defineNuxtConfig({
   hooks: {
     'vite:extendConfig': (config, { isClient }) => {
       if (isClient) {
-        config.resolve.alias.vue = 'vue/dist/vue.esm-bundler';
+        config.resolve = config.resolve || {};
+        config.resolve.alias = {
+          ...(Array.isArray(config.resolve.alias)
+            ? Object.fromEntries(config.resolve.alias.map(a => [a.find, a.replacement]))
+            : config.resolve.alias),
+          vue: 'vue/dist/vue.esm-bundler.js',
+        };
       }
     },
-  },
-
-  tailwindcss: {
-    configPath: '~/tailwind.config.ts',
-    cssPath: '~/styles/tailwind.css',
   },
 
   typescript: {
