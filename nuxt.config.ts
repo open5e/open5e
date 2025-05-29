@@ -1,4 +1,6 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from 'nuxt/config';
+
+
 export default defineNuxtConfig({
   app: {
     pageTransition: {
@@ -89,16 +91,6 @@ export default defineNuxtConfig({
 
   typescript: {
     strict: false,
-  },
-
-  eslint: {
-    config: {
-      stylistic: {
-        quotes: 'single',
-        semi: true,
-        braceStyle: '1tbs',
-      },
-    },
   },
 
   compatibilityDate: '2024-11-16',
