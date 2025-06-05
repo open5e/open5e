@@ -24,14 +24,17 @@
             Damage Type
           </dt>
           <dd class="capitalize">
-            {{ item.weapon.damage_type?.split('/').slice(-2)[0] ?? '' }}
+            {{ item.weapon.damage_type.name }}
           </dd>
           <template v-if="item.weapon.properties?.length > 0">
             <dt class="font-bold">
               Properties
             </dt>
             <dd class="capitalize">
-              {{ item.weapon.properties.map((prop) => prop).join(', ') }}
+              <!-- iterate over weapon props, generate csv list of props -->
+              {{ item.weapon.properties.map(
+                (p) => (p.property.name + (p.detail ? ` (${p.detail})` : "")),
+              ).join(', ') }}
             </dd>
           </template>
           <template v-if="item.weapon.is_reach">
@@ -64,8 +67,7 @@
 
       <!-- ITEM CARD FOR ARMOR -->
       <div v-else-if="item.armor">
-        <!-- TODO: whether armor is light/med/heavy not rtn'd by API -->
-        <p>{{ `Armor (${'TODO'})` }}</p>
+        <p>{{ "Armor" + (item.armor.category ? ` (${item.armor.category})` : "") }}</p>
         <md-viewer :text="item.desc" />
         <dl class="grid grid-cols-[6rem_1fr]">
           <dt class="font-bold">
