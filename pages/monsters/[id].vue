@@ -9,11 +9,9 @@
         {{ monster.name }}
       </h1>
 
-      <div class="flex flex-none items-start">
-        <button
-          class="flex items-center gap-1 rounded-md p-1 text-xs text-blood outline outline-1 outline-blood hover:bg-blood hover:text-white"
-          @click="toggleMode()"
-        >
+      <div class="flex flex-none items-start gap-2">
+        <!-- <button           class="flex items-center gap-1 rounded-md p-1 text-xs text-blood outline outline-1 outline-blood hover:bg-blood hover:text-white"
+          @click="toggleMode()">
           <icon
             :name="
               mode === 'compact'
@@ -21,7 +19,20 @@
                 : 'heroicons:arrows-pointing-in'
             "
           />
-          {{ mode === 'compact' ? 'Regular statblock' : 'Compact statblock' }}
+          {{ mode === 'compact' ? 'Regular statblock' : 'Compact statblock' }}</button> -->
+        <button
+          v-if="monsterInEncounter"
+          class="flex h-8 items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80 lg:flex"
+          @click="removeFromEncounter"
+        >
+          <Icon name="heroicons:minus" />
+        </button>
+        <button
+          class="rounded bg-blood px-2 py-1 text-sm font-medium text-white hover:bg-blood/80 dark:bg-blood dark:hover:bg-red-400"
+          data-testid="add-to-encounter"
+          @click="addToEncounter"
+        >
+          <Icon name="heroicons:plus" /> Add to Encounter
         </button>
       </div>
     </div>
@@ -51,6 +62,7 @@
       <SourceTag
         :title="monster.document.name"
         :text="monster.document.key"
+        :description="monster.document.source"
       />
     </p>
 
@@ -110,12 +122,12 @@
       </dd>
     </dl>
 
-    <hr />
+    <hr class="my-4 h-[2px] w-[32rem] border-none bg-white bg-gradient-to-r from-fireball dark:bg-darkness dark:from-blood" />
 
     <!-- MONSTER ABILITY SCORES & SAVING THROWS TABLE -->
     <MonsterAbilities :monster="monster" />
 
-    <hr />
+    <hr class="my-4 h-[2px] w-[32rem] border-none bg-white bg-gradient-to-r from-fireball dark:bg-darkness dark:from-blood" />
 
     <!-- BOX UNDER STATS -->
     <section class="my-4">
@@ -141,19 +153,20 @@
       </ul>
 
       <!-- RESISTANCES, VULNERABILITY AND IMMUNITIES -->
-      <ul
-        v-for="(data, title) in resistancesAndVulnerabilities"
-        :key="title"
-      >
-        <label class="inline font-bold after:content-['_']">{{ title }}</label>
-        <li
-          v-for="field in data"
-          :key="field.name"
-          class="inline after:content-[',_'] last:after:content-[]"
+      <dl>
+        <div
+          v-for="(text, title) in resistancesAndVulnerabilities"
+          :key="title"
+          class="flex gap-1"
         >
-          {{ field.name }}
-        </li>
-      </ul>
+          <dt class="font-bold">
+            {{ title + " " }}
+          </dt>
+          <dd class="capitalize">
+            {{ text }}
+          </dd>
+        </div>
+      </dl>
 
       <!-- SENSES -->
       <ul id="senses">
@@ -181,14 +194,21 @@
           Languages
         </span>
         <li
-          v-for="language in monster.languages"
+          v-if="monster.languages?.as_string"
+          class="inline"
+        >
+          {{ monster.languages.as_string }}
+        </li>
+        <li
+          v-for="language in monster.languages.data"
+          v-else-if="monster.languages.data.length > 0"
           :key="language.name"
           class="inline after:content-[',_'] last:after:content-[]"
         >
           {{ language.name }}
         </li>
         <li
-          v-if="monster.languages.length === 0"
+          v-else
           class="inline"
         >
           -
@@ -267,7 +287,7 @@
       <md-viewer :text="monster.desc" />
     </section>
 
-    <hr />
+    <hr class="my-4 h-[2px] w-[32rem] border-none bg-white bg-gradient-to-r from-fireball dark:bg-darkness dark:from-blood" />
 
     <!-- Monster Environments -->
     <section v-if="monster.environments?.length > 0">
@@ -305,11 +325,12 @@
   </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { useEncounterStore } from '~/composables/useEncounter';
+
 const route = useRoute();
 const params = {
   environments__fields: 'name',
-  languages__fields: 'name',
   document__fields: 'name,key,permalink',
 };
 const { data: monster } = useFindOne(
@@ -340,7 +361,7 @@ const actions = computed(() => {
 
   // sort monster actions according to the value of their 'order' field
   Object.keys(actionsByType).forEach((type) => {
-    actionsByType[type].sort((a, b) => a['order'] - b['order']);
+    actionsByType[type].sort((a, b) => a['order_in_statblock'] - b['order_in_statblock']);
   });
 
   return actionsByType;
@@ -384,61 +405,68 @@ const senses = computed(() => {
   return senses;
 });
 
-// format monster damage/condition vulnerabilities, resistances & immunities
+// Format monster immunities, resistances, and vulnerabilities as an iterable
+// object suitable for rendering via a `v-for` directive
 const resistancesAndVulnerabilities = computed(() => {
   const { value: monsterData } = monster;
   if (!monsterData) return {};
 
-  const resists = {
-    damage_resistances: monsterData.damage_resistances,
-    damage_vulnerabilities: monsterData.damage_vulnerabilities,
-    damage_immunities: monsterData.damage_immunities,
-    condition_immunities: monsterData.condition_immunities,
+  // destructure deeply-nested data
+  const { resistances_and_immunities: resImmunityData } = monsterData;
+  const {
+    damage_resistances_display: dmgRes,
+    damage_immunities_display: dmgImmune,
+    damage_vulnerabilities_display: dmgVuln,
+    condition_immunities_display: conditionImmune,
+  } = resImmunityData;
+
+  // assemble output object, conditionally inlcuding only non-nullish fields
+  return {
+    ...(dmgRes && { 'Damage Resistances': dmgRes }),
+    ...(dmgImmune && { 'Damage Immunities': dmgImmune }),
+    ...(dmgVuln && { 'Damage Vulnerabilities': dmgVuln }),
+    ...(conditionImmune && { 'Condition Immunities': conditionImmune }),
   };
-
-  // helper function: formats 'Bludgeoning, Piercing and Slashing from Nonmagical Attacks'
-  const formatNonMagicAttacks = (field) => {
-    const damageTypesToSub = ['Bludgeoning', 'Slashing', 'Piercing'];
-    const sub = 'Bludgeoning, Piercing and Slashing from Nonmagical Attacks';
-    return [
-      ...field.filter(res => !damageTypesToSub.includes(res.name)),
-      { name: sub },
-    ];
-  };
-
-  // conditionally apply non-magical attack resist/immunity formatting
-  resists.damage_immunities = monsterData.nonmagical_attack_immunity
-    ? formatNonMagicAttacks(resists.damage_immunities)
-    : resists.damage_immunities;
-  resists.damage_resistances = monsterData.nonmagical_attack_resistance
-    ? formatNonMagicAttacks(resists.damage_resistances)
-    : resists.damage_resistances;
-
-  // filter empty keys, re-format object for display, and return
-  return Object.entries(resists)
-    .filter(([_, value]) => value.length > 0)
-    .reduce((acc, [key, value]) => {
-      acc[snakeToTitleCase(key)] = value;
-      return acc;
-    }, {});
 });
 
 const mode = ref(route.query.mode || 'normal');
-function toggleMode() {
-  switch (mode.value) {
-    case 'compact':
-      mode.value = 'normal';
-      break;
-    default:
-      mode.value = 'compact';
-      break;
-  }
+// function toggleMode() {
+//   switch (mode.value) {
+//     case 'compact':
+//       mode.value = 'normal';
+//       break;
+//     default:
+//       mode.value = 'compact';
+//       break;
+//   }
 
-  navigateTo({
-    path: `/monsters/${route.params.id}`,
-    query: mode.value === 'compact' ? { mode: 'compact' } : null,
-  });
-}
+//   navigateTo({
+//     path: `/monsters/${route.params.id}`,
+//     query: mode.value === 'compact' ? { mode: 'compact' } : null,
+//   });
+// }
+
+const encounterStore = useEncounterStore();
+
+const addToEncounter = () => {
+  if (!monster.value) return;
+  encounterStore.addMonster(
+    monster.value.key,
+    monster.value.name,
+    monster.value.challenge_rating_decimal,
+    monster.value.challenge_rating_text,
+  );
+};
+
+const monsterInEncounter = computed(() => {
+  if (!monster.value) return false;
+  return encounterStore.monsters.value.find(m => m.id === monster.value.key);
+});
+
+const removeFromEncounter = () => {
+  if (!monster.value) return;
+  encounterStore.removeMonster(monster.value.key);
+};
 </script>
 
 <style scoped lang="scss">

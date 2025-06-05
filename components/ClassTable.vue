@@ -122,8 +122,8 @@ const props = defineProps({
 
 // Parse proficiency bonuses
 const proficiencies = computed(() => {
-  if (!props?.proficiencyBonus?.table_data.length > 0) return;
-  const { table_data: data } = props.proficiencyBonus;
+  if (!props?.proficiencyBonus?.data_for_class_table.length > 0) return;
+  const { data_for_class_table: data } = props.proficiencyBonus;
   return data.reduce((output, tableRow) => {
     output[tableRow.level] = tableRow.column_value;
     return output;
@@ -140,7 +140,7 @@ const additionalColumnHeaders = computed(() => {
 // columnTitle -> level -> value
 const classResourceTableData = computed(() => {
   return props.classResourceTableColumns.reduce((acc, column) => {
-    const { name: colName, table_data: valuePerLevel } = column;
+    const { name: colName, data_for_class_table: valuePerLevel } = column;
     if (!acc[colName]) acc[colName] = {};
     valuePerLevel.forEach(({ level, column_value: value }) => {
       acc[colName][level] = value;
@@ -160,7 +160,7 @@ const spellslotColumnHeaders = computed(() => {
 const spellSlotTableData = computed(() => {
   const data = props.spellSlots;
   return data.reduce((acc, feature) => {
-    const { name: spellLevel, table_data: slotsPerCharLevel } = feature;
+    const { name: spellLevel, data_for_class_table: slotsPerCharLevel } = feature;
     slotsPerCharLevel.forEach((item) => {
       const { level: classLevel, column_value: spellSlots } = item;
       if (!acc[classLevel]) acc[classLevel] = {};

@@ -51,6 +51,21 @@ module.exports = {
 
       // adds z-index from 1 to 100
       zIndex: zIndex,
+
+      animation: {
+        'pulse-orange': 'pulse-orange 2s ease-in-out infinite',
+        'pulse-orange-dark': 'pulse-orange-dark 2s ease-in-out infinite',
+      },
+      keyframes: (theme: (path: string) => string) => ({
+        'pulse-orange': {
+          '0%, 100%': { backgroundColor: theme('colors.orange.200') },
+          '50%': { backgroundColor: theme('colors.orange.300') },
+        },
+        'pulse-orange-dark': {
+          '0%, 100%': { backgroundColor: theme('colors.orange.700') },
+          '50%': { backgroundColor: theme('colors.orange.600') },
+        },
+      }),
     },
   },
   plugins: [],

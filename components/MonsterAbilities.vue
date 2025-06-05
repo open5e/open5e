@@ -103,7 +103,7 @@
 
 <script lang="ts" setup>
 import { useFormatModifier } from '@/composables/useFormatModifier';
-import { useDiceRoller } from '@/composables/useDicerRoller';
+import { useDiceRoller } from '@/composables/useDiceRoller';
 
 const props = defineProps({
   monster: { type: Object, default: () => {} },
