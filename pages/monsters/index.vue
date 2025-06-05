@@ -180,7 +180,6 @@ const { data, paginator } = useFindPaginated({
     type__fields: 'name',
     size__fields: 'name,key',
     is_subclass: false,
-    depth: 1,
   },
 });
 

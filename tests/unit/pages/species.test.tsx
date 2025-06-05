@@ -1,33 +1,41 @@
 import { test, expect } from 'vitest';
 import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
-import RacePage from '~/pages/races/[id].vue';
+import SpeciesPage from '~/pages/species/[id].vue';
 
-const { data: race } = useFindOne('v2/races', 'srd_elf');
+const { data: species } = useFindOne('v2/species', 'srd_elf');
 
-const page = await mountSuspended(RacePage);
+const page = await mountSuspended(SpeciesPage);
 
-test('/races/[id] page can mount', async () => {
+test('/species/[id] page can mount', async () => {
   expect(page);
 });
 
-test('/races/[id] page renders title', async () => {
+test('/species/[id] page renders title', async () => {
   const title = page.find('h1');
   expect(title.exists()).toBe(true);
-  expect(title.text()).toEqual(unref(race)?.name);
+  expect(title.text()).toEqual(unref(species)?.name);
 });
 
 mockNuxtImport('useFindOne', () => {
   return () => ({
     data: {
-      name: 'Elf',
+      url: 'http://localhost:8000/v2/species/srd_elf/',
       key: 'srd_elf',
-      url: 'http://localhost:8000/v2/races/srd_elf/',
-      is_subrace: false,
-      subrace_of: null,
-      desc: 'Your elf character has a variety of natural abilities, the result of thousands of years of elven refinement.',
+      is_subspecies: false,
       document: {
-        url: 'http://localhost:8000/v2/documents/srd/',
         name: 'Systems Reference Document',
+        key: 'srd',
+        publisher: {
+          name: 'Wizards of the Coast',
+          key: 'wizards-of-the-coast',
+          url: 'http://localhost:8000/v2/publishers/wizards-of-the-coast/',
+        },
+        gamesystem: {
+          name: '5th Edition',
+          key: 'o5e',
+          url: 'http://localhost:8000/v2/gamesystems/o5e/',
+        },
+        permalink: 'https://dnd.wizards.com/resources/systems-reference-document',
       },
       traits: [
         {
@@ -71,6 +79,9 @@ mockNuxtImport('useFindOne', () => {
           desc: 'Elves don\'t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.',
         },
       ],
+      name: 'Elf',
+      desc: 'Your elf character has a variety of natural abilities, the result of thousands of years of elven refinement.',
+      subspecies_of: null,
     },
   });
 });
@@ -79,12 +90,24 @@ mockNuxtImport('useFindMany', () => {
   return () => ({
     data: [
       {
-        name: 'High Elf',
+        url: 'http://localhost:8000/v2/species/srd_high-elf/',
         key: 'srd_high-elf',
-        desc: 'As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many fantasy gaming worlds, there are two kinds of high elves. One type is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type is more common and more friendly, and often encountered among humans and other races.',
-        subrace_of: 'http://localhost:8000/v2/races/srd_elf/',
-        url: 'http://localhost:8000/v2/races/srd_high-elf/',
-        is_subrace: true,
+        is_subspecies: true,
+        document: {
+          name: 'Systems Reference Document',
+          key: 'srd',
+          publisher: {
+            name: 'Wizards of the Coast',
+            key: 'wizards-of-the-coast',
+            url: 'http://localhost:8000/v2/publishers/wizards-of-the-coast/',
+          },
+          gamesystem: {
+            name: '5th Edition',
+            key: 'o5e',
+            url: 'http://localhost:8000/v2/gamesystems/o5e/',
+          },
+          permalink: 'https://dnd.wizards.com/resources/systems-reference-document',
+        },
         traits: [
           {
             name: 'Ability Score Increase',
@@ -103,10 +126,9 @@ mockNuxtImport('useFindMany', () => {
             desc: 'You can speak, read, and write one extra language of your choice.',
           },
         ],
-        document: {
-          url: 'http://localhost:8000/v2/documents/srd/',
-          name: 'Systems Reference Document',
-        },
+        name: 'High Elf',
+        desc: 'As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many fantasy gaming worlds, there are two kinds of high elves. One type is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type is more common and more friendly, and often encountered among humans and other races.',
+        subspecies_of: 'http://localhost:8000/v2/species/srd_elf/',
       },
     ],
   });

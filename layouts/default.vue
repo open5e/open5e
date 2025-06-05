@@ -164,10 +164,7 @@ const { sources } = useSourcesList();
 
 const no_selected_sources = computed(() => sources.value.length);
 
-const { data: documents } = useDocuments({
-  fields: 'none', // we only need to document count, so we can omit all fields
-  depth: 0,
-});
+const { data: documents } = useDocuments({ fields: 'none' });
 
 const no_available_sources = computed(() => documents.value?.length ?? 0);
 
