@@ -3,7 +3,11 @@
  * It also returns a 'paginator' obj, which contains methods for changing the
  * requested page */
 
-import { keepPreviousData, useQuery } from '@tanstack/vue-query';
+import {
+  keepPreviousData,
+  useQuery,
+  useQueryClient,
+} from '@tanstack/vue-query';
 
 export const useFindPaginated = (options: {
   endpoint: MaybeRef<string>;
@@ -25,6 +29,7 @@ export const useFindPaginated = (options: {
   } = options;
   const pageNo = ref(unref(initialPage));
   const { findPaginated } = useAPI();
+  const queryClient = useQueryClient();
 
   // map V2 source keys to V1 source slugs if necessary
   const { sources, sourcesAPIVersion1 } = useSourcesList();
@@ -59,6 +64,36 @@ export const useFindPaginated = (options: {
 
   const lastPageNo = computed(() => {
     return data.value ? Math.ceil(data.value.count / unref(itemsPerPage)) : 1;
+  });
+
+  // Prefetch next page when data changes
+  watch(data, () => {
+    if (data.value && pageNo.value < lastPageNo.value) {
+      const nextPageNo = pageNo.value + 1;
+      queryClient.prefetchQuery({
+        queryKey: [
+          'findPaginated',
+          endpoint,
+          sourcesForAPIVersion,
+          itemsPerPage,
+          nextPageNo,
+          sortByProperty,
+          isSortDescending,
+          filter,
+          params,
+        ],
+        queryFn: () =>
+          findPaginated({
+            endpoint: unref(endpoint),
+            sources: unref(sourcesForAPIVersion),
+            pageNo: nextPageNo,
+            sortByProperty: unref(sortByProperty),
+            isSortDescending: unref(isSortDescending),
+            itemsPerPage: unref(itemsPerPage),
+            queryParams: { ...unref(params), ...unref(filter) },
+          }),
+      });
+    }
   });
 
   const nextPage = () => {

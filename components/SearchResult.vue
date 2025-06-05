@@ -110,7 +110,7 @@ function stripMarkdownTables(text) {
 const endpoints = {
   Creature: 'monsters',
   Spell: 'spells',
-  Race: 'races',
+  Species: 'species',
   Section: 'sections',
   Item: 'magic-items',
   Feat: 'feats',
@@ -130,9 +130,9 @@ const formatUrl = (input) => {
   // subclass urls must be prepended by their base-class
   if (input?.object?.subclass_of) baseUrl += `/${input.object.subclass_of.key}`;
 
-  // subraces link to their base-race
-  if (input?.object?.subrace_of)
-    return `${baseUrl}/${input.object.subrace_of.key}`;
+  // sub-species link to their base-species
+  if (input?.object?.subspecies_of)
+    return `${baseUrl}/${input.object.subspecies_of.key}`;
 
   if (baseUrl === 'rules') {
     const rulesetKey = input.object_pk.split('_').slice(0, 2).join('_');
@@ -158,9 +158,11 @@ const formatCategory = (input) => {
       return `${input.object.subclass_of.name} Subclass`;
     else return 'Class';
   }
-  // Race -> Race OR [RACE] Subrace
-  if (input?.object?.subrace_of)
-    return `${input.object.subrace_of.name} Subrace`;
+
+  // Species -> Species OR [SPECIES] Subspecies
+  if (input?.object?.subspecies_of)
+    return `${input.object.subspecies_of.name} Subspecies`;
+  return category; // BASE-CASE: return category without alteration
 
   if (category === 'Rule') return 'Rules';
 

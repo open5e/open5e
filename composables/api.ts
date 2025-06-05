@@ -1,6 +1,5 @@
 import { useQuery } from '@tanstack/vue-query';
 import axios from 'axios';
-import { unref } from 'vue';
 
 export const API_ENDPOINTS = {
   backgrounds: 'v2/backgrounds/',
@@ -10,8 +9,8 @@ export const API_ENDPOINTS = {
   feats: 'v2/feats/',
   magicitems: 'v2/items/',
   monsters: 'v2/creatures/',
-  races: 'v2/races/',
   search: 'v2/search/',
+  species: 'v2/species/',
   spells: 'v2/spells/',
   rules: 'v2/rulesets/',
   equipment: 'v2/items/',
@@ -85,7 +84,7 @@ export const useAPI = () => {
     },
     get: async (...parts: string[]) => {
       const route = parts.join('');
-      const res = await api.get(route, { params: { depth: '2' } }).catch(() => {
+      const res = await api.get(route).catch(() => {
         // redirect to /search if API route returns nothing
         const searchTerm = parts.filter(exists => exists).slice(-1)[0];
         navigateTo(`/search?text=${searchTerm}`);
@@ -175,12 +174,13 @@ export const useFindOne = (
   const { get } = useAPI();
 
   const params = options?.params;
-  const formattedParams = [];
+  const formattedParams: string[] = [];
   for (const name in params) {
     formattedParams.push(`${name}=${params[name]}`);
   }
   const paramString
     = formattedParams.length === 0 ? '' : '/?' + formattedParams.join('&');
+
   return useQuery({
     queryKey: [endpoint, id],
     queryFn: async () => {
@@ -256,7 +256,6 @@ export function sortByField(
 }
 
 export const useDocuments = (params: Record<string, never> = {}) => {
-  params.depth = '1';
   const { findMany } = useAPI();
   return useQuery({
     queryKey: ['findMany', API_ENDPOINTS.documents, params],

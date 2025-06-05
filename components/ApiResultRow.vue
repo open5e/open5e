@@ -25,7 +25,10 @@
       :key="col.displayName"
       :class="{ 'hidden sm:block': col.isLeastPriority }"
     >
-      <template v-if="col.link">
+      <template v-if="col.customTemplate">
+        <component :is="col.customTemplate(data)" />
+      </template>
+      <template v-else-if="col.link">
         <span>
           <NuxtLink :to="col.link(data)">
             {{ col.value(data) }}
