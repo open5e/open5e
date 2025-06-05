@@ -19,9 +19,10 @@
   },
   "include": [
     "nuxt.config.ts",
-    "pages/**/*.vue",
-    "layouts/default.vue",
-    "components/**/*.vue",
+    // TODO: `vue-tsc` required to type-check .vue files (issue #714)
+    // "pages/**/*.vue",
+    // "layouts/default.vue",
+    // "components/**/*.vue",
     "composables/**/*.ts",
     "plugins/**/*.ts",
     "store/**/*.ts"
