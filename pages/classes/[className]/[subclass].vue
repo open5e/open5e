@@ -43,7 +43,7 @@ const features = computed(() => {
   const features = subclassData.value.features;
   if (!features) return [];
   return [...features].sort(
-    (a, b) => a.gained_at[0].level - b.gained_at[0].level,
+    (a, b) => (a.gained_at?.[0]?.level ?? 1) - (b.gained_at?.[0]?.level ?? 1),
   );
 });
 </script>
