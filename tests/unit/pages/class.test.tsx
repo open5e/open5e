@@ -1,5 +1,6 @@
 import { test, expect } from 'vitest';
 import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
+import { unref } from 'vue';
 import ClassPage from '~/pages/classes/[className]/index.vue';
 
 const { data: className } = useFindOne('v2/classes', 'srd_barbarian');
@@ -141,8 +142,12 @@ mockNuxtImport('useFindMany', () => {
   return () => ({
     data: [
       {
-        key: 'srd_barbarian',
-        name: 'Barbarian',
+        key: 'srd_path-of-the-berserker',
+        name: 'Path of the Berserker',
+        document: {
+          name: 'System Reference Document 5.1',
+          key: 'srd-2014',
+        },
       },
     ],
   });
