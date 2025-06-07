@@ -4,25 +4,6 @@
     class="docs-container container"
   >
     <h1>{{ classData.name }}</h1>
-    <ul
-      v-if="subclasses?.length > 0"
-      class="mt-2"
-    >
-      <p class="inline font-bold after:content-[':_']">
-        Subclasses
-      </p>
-      <li
-        v-for="subclass in subclasses"
-        :key="subclass.name"
-        class="inline"
-      >
-        <nuxt-link
-          :to="`/classes/${useRoute().params.className}/${subclass.key}`"
-        >
-          {{ subclass.name }}
-        </nuxt-link>
-      </li>
-    </ul>
     <section>
       <h2>Class Features</h2>
       <p>As a {{ classData.name }} you gain the following features.</p>
@@ -61,6 +42,26 @@
           :text="equipment.desc"
         />
       </div>
+    </section>
+    <section v-if="subclasses?.length > 0">
+      <h3>Subclasses</h3>
+      <ul class="mt-2 flex flex-wrap gap-x-2">
+        <li
+          v-for="subclass in subclasses"
+          :key="subclass.name"
+          class="after:ml-2 after:content-['|'] last:after:content-none"
+        >
+          <nuxt-link
+            :to="`/classes/${useRoute().params.className}/${subclass.key}`"
+          >
+            {{ subclass.name }}
+          </nuxt-link>
+          <SourceTag
+            :text="subclass.document.key"
+            :title="subclass.document.name"
+          />
+        </li>
+      </ul>
     </section>
 
     <!-- Class Table -->
@@ -113,7 +114,7 @@ const { data: classData } = useFindOne(
 
 // fetch subclasses to generate links
 const { data: subclasses } = useFindMany(API_ENDPOINTS.classes, {
-  fields: ['key', 'name'].join(','),
+  fields: ['key', 'name', 'document'].join(','),
   subclass_of: useRoute().params.className,
 });
 
