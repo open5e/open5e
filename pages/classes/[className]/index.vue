@@ -4,25 +4,6 @@
     class="docs-container container"
   >
     <h1>{{ classData.name }}</h1>
-    <ul
-      v-if="subclasses?.length > 0"
-      class="mt-2"
-    >
-      <p class="inline font-bold after:content-[':_']">
-        Subclasses
-      </p>
-      <li
-        v-for="subclass in subclasses"
-        :key="subclass.name"
-        class="inline"
-      >
-        <nuxt-link
-          :to="`/classes/${useRoute().params.className}/${subclass.key}`"
-        >
-          {{ subclass.name }}
-        </nuxt-link>
-      </li>
-    </ul>
     <section>
       <h2>Class Features</h2>
       <p>As a {{ classData.name }} you gain the following features.</p>
@@ -62,6 +43,26 @@
         />
       </div>
     </section>
+    <section v-if="subclasses?.length > 0">
+      <h3>Subclasses</h3>
+      <ul class="mt-2 flex flex-wrap gap-x-2">
+        <li
+          v-for="subclass in subclasses"
+          :key="subclass.name"
+          class="after:ml-2 after:content-['|'] last:after:content-none"
+        >
+          <nuxt-link
+            :to="`/classes/${useRoute().params.className}/${subclass.key}`"
+          >
+            {{ subclass.name }}
+          </nuxt-link>
+          <SourceTag
+            :text="subclass.document.key"
+            :title="subclass.document.name"
+          />
+        </li>
+      </ul>
+    </section>
 
     <!-- Class Table -->
     <section>
@@ -85,7 +86,7 @@
           <h3>{{ feature.name }}</h3>
           <md-viewer
             :text="feature.desc"
-            header-level="3"
+            :header-level="3"
           />
         </li>
       </ul>
@@ -113,7 +114,7 @@ const { data: classData } = useFindOne(
 
 // fetch subclasses to generate links
 const { data: subclasses } = useFindMany(API_ENDPOINTS.classes, {
-  fields: ['key', 'name'].join(','),
+  fields: ['key', 'name', 'document'].join(','),
   subclass_of: useRoute().params.className,
 });
 
@@ -126,7 +127,7 @@ const features = computed(() => {
       const { feature_type: type } = feature;
       if (type === 'PROFICIENCY_BONUS') acc.proficiencyBonuses = feature;
       else if (type === 'SPELL_SLOTS') acc.spellSlots.push(feature);
-      else if (feature.table_data.length > 0)
+      else if (feature.data_for_class_table.length > 0)
         acc.classTableColumnData.push(feature);
       else if (type === 'CLASS_FEATURE') acc.classFeatures.push(feature);
       else if (type === 'PROFICIENCIES') acc.proficiencies.push(feature);

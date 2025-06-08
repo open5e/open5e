@@ -3,7 +3,13 @@ import withNuxt from './.nuxt/eslint.config.mjs';
 
 export default withNuxt([
   {
+    files: ['**/*.js', '**/*.ts', '**/*.vue'],
     ignores: ['bin'],
+    rules: {
+      'quotes': ['error', 'single'],
+      'semi': ['error', 'always'],
+      'brace-style': ['error', '1tbs'],
+    },
   },
   ...eslintPluginTailwindCss.configs['flat/recommended'],
 ]).override('nuxt/vue/rules', {
@@ -16,9 +22,6 @@ export default withNuxt([
         html: {
           normal: 'always',
           component: 'always',
-          /* Vue advises that void tags omit the terminal slash, but this
-           * conflicts with Prettier */
-          // void: 'never',
           void: 'always',
         },
       },

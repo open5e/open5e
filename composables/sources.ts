@@ -1,3 +1,5 @@
+import { computed, ref } from 'vue';
+
 function loadSourcesFromLocalStorage() {
   if (!import.meta.client) return []; // skip on server
   const saved_sources = localStorage.getItem('sources');

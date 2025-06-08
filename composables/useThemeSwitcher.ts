@@ -1,3 +1,5 @@
+import { onMounted, ref } from 'vue';
+
 export type Theme = 'light' | 'dark';
 
 const theme = ref<Theme | ''>('');

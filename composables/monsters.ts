@@ -1,3 +1,7 @@
+import { useQuery } from '@tanstack/vue-query';
+import { API_ENDPOINTS, useAPI } from './api';
+import { useFormatModifier } from './useFormatModifier';
+
 export type MonsterFilter = {
   name__icontains?: string; // filter by name (TODO)
   challenge_rating_decimal_gte?: string; // CR lower bound
@@ -25,7 +29,10 @@ export const useMonster = (slug: string) => {
         name: ability,
         shortName: ability.slice(0, 3),
         score: monster[ability],
-        modifier: useFormatModifier(monster[ability], { inputType: 'score' }),
+        modifier: useFormatModifier(
+          monster[ability] as string | number | undefined,
+          { inputType: 'score' },
+        ),
         save: monster[`${ability}_save`],
       }));
       return monster as Record<string, string>;

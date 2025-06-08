@@ -142,7 +142,6 @@ const { data, paginator } = useFindPaginated({
     document__fields: ['name', 'key'].join(','),
     classes__fields: ['name'].join(','),
     school__fields: ['name', 'key'].join(','),
-    depth: 1,
   },
 });
 

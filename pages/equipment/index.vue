@@ -99,7 +99,6 @@ const { data, paginator } = useFindPaginated({
     document__fields: docFields,
     category__fields: categoryFields,
     is_magic_item: false,
-    depth: 1,
   },
 });
 

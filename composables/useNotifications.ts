@@ -1,9 +1,15 @@
 import { ref } from 'vue';
 
-const notifications = ref([]);
+type Notification = {
+  title: string;
+  body: string | number;
+  footer: string;
+};
+
+const notifications = ref<Notification[]>([]);
 
 export const useNotifications = () => {
-  const addNotif = (notif) => {
+  const addNotif = (notif: Notification) => {
     notifications.value.push(notif);
   };
 
@@ -11,7 +17,7 @@ export const useNotifications = () => {
     notifications.value = [];
   };
 
-  const remove = (index) => {
+  const remove = (index: number) => {
     notifications.value.splice(index, 1);
   };
 

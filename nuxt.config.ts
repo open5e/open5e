@@ -1,4 +1,6 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from 'nuxt/config';
+
+
 export default defineNuxtConfig({
   app: {
     pageTransition: {
@@ -54,51 +56,37 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/eslint',
-    '@nuxtjs/tailwindcss',
+    ['@nuxtjs/tailwindcss', {
+      configPath: '~/tailwind.config.ts',
+      cssPath: '~/styles/tailwind.css',
+    }],
     'nuxt-icon',
     '@hebilicious/vue-query-nuxt',
     '@nuxt/test-utils/module',
   ],
-
-  queryClientOptions: {
-    defaultOptions: { queries: { staleTime: Infinity } },
-  },
-
+  
   runtimeConfig: {
     public: {
       apiUrl: process.env.API_URL || 'https://api.open5e.com',
     },
   },
 
-  router: {
-    prefetchLinks: false,
-  },
-
   hooks: {
     'vite:extendConfig': (config, { isClient }) => {
       if (isClient) {
-        config.resolve.alias.vue = 'vue/dist/vue.esm-bundler';
+        config.resolve = config.resolve || {};
+        config.resolve.alias = {
+          ...(Array.isArray(config.resolve.alias)
+            ? Object.fromEntries(config.resolve.alias.map(a => [a.find, a.replacement]))
+            : config.resolve.alias),
+          vue: 'vue/dist/vue.esm-bundler.js',
+        };
       }
     },
   },
 
-  tailwindcss: {
-    configPath: '~/tailwind.config.ts',
-    cssPath: '~/styles/tailwind.css',
-  },
-
   typescript: {
     strict: false,
-  },
-
-  eslint: {
-    config: {
-      stylistic: {
-        quotes: 'single',
-        semi: true,
-        braceStyle: '1tbs',
-      },
-    },
   },
 
   compatibilityDate: '2024-11-16',

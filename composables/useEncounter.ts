@@ -11,7 +11,7 @@ interface EncounterMonster {
   challenge_rating_text: string;
   count: number;
   // Remainder will be populated by API call
-  [key: string]: string | number;
+  [key: string]: string | number | unknown;
 }
 
 export type { EncounterMonster };
@@ -29,7 +29,7 @@ export const useEncounterStore = () => {
     'encounter-monsters',
     [],
   );
-  const monsterCache = useLocalStorage<Record<string, string | number>>(
+  const monsterCache = useLocalStorage<Record<string, unknown>>(
     'monster-cache',
     {},
   );
@@ -56,7 +56,13 @@ export const useEncounterStore = () => {
   const totalXP = computed(
     () =>
       monsters.value.reduce(
-        (sum, m) => sum + (m.experience_points || 0) * m.count,
+        (sum, m) => {
+          // make sure that experience is 'number' type before adding it
+          const xp = typeof m.experience_points === 'string'
+            ? parseInt(m.experience_points)
+            : m.experience_points as number;
+          return sum + (xp || 0) * m.count;
+        },
         0,
       ) * xpCalculator.getMultiplier(totalMonsters.value),
   );
@@ -167,20 +173,17 @@ export const useEncounterStore = () => {
 
   const removeMonster = (id: string) => {
     const index = monsters.value.findIndex(m => m.id === id);
-    if (index !== -1) {
-      if (monsters.value[index].count > 1) {
-        monsters.value[index].count -= 1;
-      } else {
-        monsters.value.splice(index, 1);
-      }
+    if (index === 1) return;
+    if (monsters.value[index].count > 1) {
+      monsters.value[index].count -= 1;
+    } else {
+      monsters.value.splice(index, 1);
     }
   };
 
   const incrementMonster = (id: string) => {
     const monster = monsters.value.find(m => m.id === id);
-    if (monster) {
-      monster.count += 1;
-    }
+    if (monster) monster.count += 1;
   };
 
   const clearEncounter = () => {
