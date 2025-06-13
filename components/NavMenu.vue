@@ -31,7 +31,7 @@
       >
         <li
           v-for="subroute in section.subroutes"
-          :key="subroute.title"
+          :key="subroute?.title"
         >
           <NavMenuLink
             :to="`${subroute.url}`"
@@ -61,8 +61,9 @@
 </template>
 
 <script setup>
-const { data: classes } = useFindMany(API_ENDPOINTS.classes, {
-  fields: ['name', 'key', 'subclass_of'].join(),
+const { data: classes } = await useFindMany(API_ENDPOINTS.classes, {
+  fields: ['name', 'key', 'document', 'subclass_of'].join(),
+  document__fields: ['key'].join(),
 });
 
 const crumbs = useBreadcrumbs();
@@ -84,8 +85,10 @@ const classSubroutes = computed(() => {
 
   // generate subroutes to other base-classes
   const output = baseClasses.map((item) => {
+    // filter out srd-2024 classes until better UX solution developed (#720)
+    if (item.document.key === 'srd-2024') return;
     return { title: item.name, url: `/classes/${item.key}` };
-  });
+  }).filter((item) => item); // filter nullish items from output
 
   // if we are on a sub-route of a base-class, get other sub-class routes
   if (crumbs.value.length >= 2) {
