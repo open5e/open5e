@@ -39,7 +39,7 @@
             {{ notification.body }}
           </p>
         </div>
-        <div class="m-0 p-0 text-sm">
+        <div class="m-0 p-0 text-sm text-basalt">
           {{ notification.footer }}
         </div>
       </li>
