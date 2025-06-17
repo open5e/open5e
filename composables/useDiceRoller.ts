@@ -34,6 +34,7 @@ export function useDiceRoller(
 
   const formattedModifier = useFormatModifier(modifier, {
     showZero: false,
+    spaceAfterOrdinal: true,
   });
 
   const formattedDiceSignature = `${number}d${dice} ${formattedModifier}`;
@@ -45,6 +46,7 @@ export function useDiceRoller(
   // push results to notifications
   addNotif({
     title: notifTitle,
+    subtitle: options?.subtitle ?? '',
     body: result,
     footer: `[ ${rolls.join(', ')} ] ${formattedModifier}`,
   });
