@@ -87,7 +87,7 @@
       </dt>
       <dd
         class="w-min cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
-        @click="useDiceRoller(initiativeBonus)"
+        @click="useDiceRoller(initiativeBonus, { title: 'Initiative', subtitle: monster.name })"
       >
         {{ useFormatModifier(initiativeBonus) }}
       </dd>
@@ -265,7 +265,7 @@
           <span
             v-if="action.uses_type === 'RECHARGE_ON_ROLL'"
             class="cursor-pointer font-bold text-blood before:text-black before:content-['_('] after:text-black after:content-[')_'] hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
-            @click="useDiceRoller('1d6+0')"
+            @click="useDiceRoller('1d6+0', { title: `${action.name} – Recharge`})"
           >
             {{
               'Recharge '

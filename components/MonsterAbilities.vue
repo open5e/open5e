@@ -85,13 +85,19 @@
           </td>
           <td
             :class="rollableLinkClasses"
-            @click="useDiceRoller(data.mod)"
+            @click="useDiceRoller(data.mod, {
+              title: `${ability} Check`,
+              subtitle: monster.name,
+            })"
           >
             {{ useFormatModifier(data.mod) }}
           </td>
           <td
             :class="rollableLinkClasses"
-            @click="useDiceRoller(data.save)"
+            @click="useDiceRoller(data.save, {
+              title: `${ability} Save`,
+              subtitle: monster.name,
+            })"
           >
             {{ useFormatModifier(data.save) }}
           </td>

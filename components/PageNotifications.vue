@@ -13,6 +13,7 @@
 
 <template>
   <div class="fixed bottom-0 right-8 m-0 flex min-w-36 flex-col-reverse p-0">
+    <!-- Only render 'clear all' btn when notifs array populated -->
     <div
       v-if="notifications.length"
       class="grid justify-end bg-white/80 dark:bg-darkness/80"
@@ -24,22 +25,32 @@
         Clear All &#x2715;
       </button>
     </div>
-    <ul class="flex flex-col">
+
+    <!-- Notification list -->
+    <ul class="flex flex-col text-center ">
       <li
         v-for="(notification, index) in notifications"
         :key="index"
-        class="my-2 cursor-pointer border-y-2 border-fireball bg-gray-100 px-3 py-2 transition-all duration-150 hover:border-mana dark:bg-slate-900"
+        class="my-2 cursor-pointer border-y-2 border-fireball bg-gray-100 px-3 py-2 duration-150 hover:border-mana dark:bg-slate-900"
         @click="remove(index)"
       >
-        <p class="my-0 font-serif text-xs font-light">
-          {{ notification.title }}
-        </p>
-        <div class="my-0 flex justify-between align-middle font-bold">
-          <p class="m-0 text-4xl">
+        <div class="text-sm">
+          <span class="my-0 py-0 font-serif font-light capitalize">
+            {{ notification.title }}
+          </span>
+          <span
+            v-if="notification.subtitle"
+            class="uppercase text-basalt before:content-['_|_'] dark:text-smoke"
+          >
+            {{ notification.subtitle }}
+          </span>
+        </div>
+        <div class="my-0 flex justify-center align-middle font-bold">
+          <p class="m-0 text-5xl">
             {{ notification.body }}
           </p>
         </div>
-        <div class="m-0 p-0 text-sm text-basalt">
+        <div class="m-0 p-0 text-sm text-basalt dark:text-smoke">
           {{ notification.footer }}
         </div>
       </li>
