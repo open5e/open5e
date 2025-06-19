@@ -12,7 +12,7 @@
 </script>
 
 <template>
-  <div class="fixed bottom-0 right-4 m-0 flex min-w-36 flex-col-reverse p-0">
+  <div class="fixed bottom-0 right-4 m-0 flex flex-col-reverse p-0">
     <!-- Only render 'clear all' btn when notifs array populated -->
     <div
       v-if="notifications.length"
