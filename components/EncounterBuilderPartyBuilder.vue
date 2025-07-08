@@ -48,6 +48,7 @@
 
 <script setup lang="ts">
 import { usePartyStore } from '~/composables/useParty';
+import { onMounted } from 'vue';
 
 const store = usePartyStore();
 const { partyRows, addPartyRow, removePartyRow }
