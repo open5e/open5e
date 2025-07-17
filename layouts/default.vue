@@ -118,7 +118,7 @@
           <div class="flex">
             <div class="flex-1">
               <nuxt-page
-                class="main-content pt-auto mx-0 w-full p-4 pb-0 text-darkness dark:text-white sm:px-8"
+                class="main-content pt-auto mx-0 w-full p-4 text-darkness dark:text-white sm:px-8"
               />
             </div>
             <div

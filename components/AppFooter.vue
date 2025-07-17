@@ -8,7 +8,7 @@
 </script>
 
 <template>
-  <footer class="mt-2 grid w-full justify-center border-t-2 border-blood bg-white py-2 text-center align-middle dark:bg-darkness dark:text-white ">
+  <footer class="grid w-full justify-center bg-white py-2 text-center align-middle dark:bg-darkness dark:text-white ">
     <!-- Social Media links -->
     <ul class="my-2 flex justify-center gap-8">
       <li v-for="{ name, url, icon } in socialMediaLinks" :key="name">
