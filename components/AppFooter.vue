@@ -1,6 +1,6 @@
 <template>
-  <footer class="mt-2 grid w-full justify-center border-t-2 border-fireball bg-white py-2 text-center align-middle dark:bg-darkness dark:text-white ">
-    <ul class="mb-2 flex justify-center gap-8">
+  <footer class="mt-2 grid w-full justify-center border-t-2 border-blood bg-white py-2 text-center align-middle dark:bg-darkness dark:text-white ">
+    <ul class="my-2 flex justify-center gap-8">
       <li v-for="{ name, url, icon } in socialMediaLinks" :key="name">
         <a :href="url" :title="name">
           <img 
@@ -19,7 +19,7 @@
     >
       Legal
     </NuxtLink>
-    <p class="text-charcoal dark:text-smoke">Open5e</p>
+    <p class="font-serif text-sm">Open5e</p>
    
   </footer>
 </template>
