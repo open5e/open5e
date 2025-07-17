@@ -1,5 +1,15 @@
+<script>
+/**
+ * 
+ * AppFooter.vue: UI component containing the website footer. Contains social
+ *   media links, and a link to the `/legal` route. Designed to be used in a
+ *   layout component.
+ */
+</script>
+
 <template>
   <footer class="mt-2 grid w-full justify-center border-t-2 border-blood bg-white py-2 text-center align-middle dark:bg-darkness dark:text-white ">
+    <!-- Social Media links -->
     <ul class="my-2 flex justify-center gap-8">
       <li v-for="{ name, url, icon } in socialMediaLinks" :key="name">
         <a :href="url" :title="name">
