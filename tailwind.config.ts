@@ -5,11 +5,11 @@ for (let i = -1; i <= 100; i++) {
 
 module.exports = {
   content: [
-    './app.vue',
-    './pages/index.vue',
-    './pages/**/*.vue',
-    './components/*.vue',
-    './components/**/*.vue',
+    './app/app.vue',
+    './app/pages/index.vue',
+    './app/pages/**/*.vue',
+    './app/components/*.vue',
+    './app/components/**/*.vue',
   ],
   darkMode: 'class',
   theme: {

@@ -2,6 +2,10 @@ import { defineNuxtConfig } from 'nuxt/config';
 
 
 export default defineNuxtConfig({
+  srcDir: 'app/',
+  dir: {
+    public: '../public',
+  },
   app: {
     pageTransition: {
       name: 'fade',
@@ -52,6 +56,12 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'digital-ocean',
+    publicAssets: [
+      {
+        baseURL: '/',
+        dir: 'public'
+      }
+    ]
   },
 
   modules: [

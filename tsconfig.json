@@ -7,8 +7,8 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"]
+      "~/*": ["./app/*"],
+      "@/*": ["./app/*"]
     },
     "types": ["@types/node", "@nuxt/types"],
     "esModuleInterop": true,
