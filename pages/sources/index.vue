@@ -20,7 +20,9 @@
               class="my-2 border bg-fog p-2 dark:bg-basalt"
             >
               <dt class="inline text-lg font-bold after:content-['_']">
-                <span>{{ doc.name }}</span>
+                <NuxtLink :to="`sources/${doc.key}`">
+                  {{ doc.name }}
+                </NuxtLink>
                 <SourceTag :text="doc.key" />
               </dt>
               <dd>
