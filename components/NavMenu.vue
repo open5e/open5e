@@ -149,6 +149,10 @@ const routes = computed(() => [
     url: '/rules',
   },
   {
+    title: 'Sources',
+    url: '/sources'
+  },
+  {
     title: 'API Docs',
     url: '/api-docs',
   },
