@@ -114,18 +114,17 @@ const mapMonsterFromAPI = (monster: RawMonster): Monster => {
     challenge_rating_decimal: Number(monster.challenge_rating_decimal) || 0,
   };
 
-  if (monster.document !== undefined) {
-    return {
+  return !monster.document
+    ? base
+    : {
       ...base,
       document: {
-        name: monster.document.name,
-        key: monster.document.key,
-      },
+        name: monster.document.name || '',
+        key: monster.document.key || '',
+      }
     };
-  }
-
-  return base;
 };
+
 let debounceTimeout: ReturnType<typeof setTimeout>;
 
 // Function to check if we're near the bottom of the scroll
