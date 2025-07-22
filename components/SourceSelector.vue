@@ -27,6 +27,7 @@
     </button>
     <SourceSelectorModal 
       :show="showModal"
+      :documents="documents"
       @close="showModal = false"
     />
   </div>
@@ -39,7 +40,11 @@ const { sources } = useSourcesList();
 
 const no_selected_sources = computed(() => sources.value.length);
 
-const { data: documents } = useDocuments({ fields: 'none' });
+const { data: documents } = useDocuments({
+  fields: ['key', 'name', 'publisher', 'gamesystem'].join(','),
+  publisher__fields: ['name', 'key'].join(','),
+  gamesystem__fields: ['name', 'key'].join(','),
+});
 
 const no_available_sources = computed(() => documents.value?.length ?? 0);
 

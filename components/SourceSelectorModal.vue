@@ -181,21 +181,18 @@
 </template>
 
 <script setup>
+const props = defineProps({
+  documents: { type: Array, default: () => [] }
+});
+
 const { sources, setSources, gameSystem, setGameSystem } = useSourcesList();
 const selectedSources = ref(sources.value);
-
 const emit = defineEmits(['close']);
 const closeModal = () => emit('close');
 
-const { data: documents } = useDocuments({
-  fields: ['key', 'name', 'publisher', 'gamesystem'].join(','),
-  publisher__fields: ['name', 'key'].join(','),
-  gamesystem__fields: ['name', 'key'].join(','),
-});
-
 // filter documents by the current game system
 const documentsInSystem = computed(() => {
-  if (!currentSystem.value) return documents.value;
+  if (!currentSystem.value) return props.documents;
   return documents?.value.filter((document) => {
     return document.gamesystem.name === currentSystem.value;
   });
@@ -217,7 +214,7 @@ const currentSystem = ref(gameSystem.value);
 
 // returns the names of all game systems present in API data
 const allGameSystems = computed(() => {
-  return documents?.value?.reduce((systems, document) => {
+  return props.documents?.value?.reduce((systems, document) => {
     if (!systems.includes(document.gamesystem.name))
       return [...systems, document.gamesystem.name];
     else return systems;
