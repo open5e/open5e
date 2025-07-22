@@ -1,30 +1,22 @@
 <template>
   <div>
     <button
-      class="w-full cursor-pointer bg-red-600 px-4 py-2 text-left hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
+      class="group flex w-full cursor-pointer justify-between bg-red-600 p-4 py-2 pr-2 text-left align-middle transition-colors hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
       @click="showModal = true"
     >
-      <span v-if="documents && no_selected_sources > 0">
-        {{ no_selected_sources }} of {{ no_available_sources }} sources
-      </span>
-      <span
-        v-else
-        class="after:content-['_']"
-      >
-        Select Sources
-      </span>
-
-      <span v-if="isLoadingData">
-        <Icon name="line-md:loading-twotone-loop" />
-      </span>
-      <span v-else>
-        <Icon
-          name="heroicons:pencil-square"
-          class="size-5 text-white"
-          aria-hidden="true"
-        />
-      </span>
+      <div class="mt-0.5">
+        <span class="font-semibold">Filter Sources</span>
+        <span v-if="documents" class="ml-1 text-sm text-smoke">
+          {{ ` [${selectedSourceCount} / ${totalSourceCount}]`}}
+        </span>
+      </div>
+      <Icon
+        name="heroicons:pencil-square"
+        class="group size-8 rounded-full bg-red-900/25 p-1 text-white"
+        aria-hidden="true"
+      />
     </button>
+
     <SourceSelectorModal 
       :show="showModal"
       :documents="documents"
@@ -38,15 +30,13 @@ const showModal = ref(false);
 
 const { sources } = useSourcesList();
 
-const no_selected_sources = computed(() => sources.value.length);
-
 const { data: documents } = useDocuments({
   fields: ['key', 'name', 'publisher', 'gamesystem'].join(','),
   publisher__fields: ['name', 'key'].join(','),
   gamesystem__fields: ['name', 'key'].join(','),
 });
 
-const no_available_sources = computed(() => documents.value?.length ?? 0);
+const selectedSourceCount = computed(() => sources.value.length);
+const totalSourceCount = computed(() => documents.value?.length ?? 0);
 
-const isLoadingData = useIsFetching();
 </script>
