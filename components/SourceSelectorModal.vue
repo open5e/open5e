@@ -88,24 +88,24 @@
         </legend>
         <!-- Organisation -->
         <div
-          v-for="(publications, organization, index) in groupedDocuments"
+          v-for="(documentsPerPublisher, publisher, index) in groupedDocuments"
           :key="index"
           class="space-y-0"
         >
           <div class="my-1 flex items-center gap-2">
             <h3 class="mt-0 inline-block items-center gap-2">
-              {{ organization }}
+              {{ publisher }}
             </h3>
             <!-- Button for adding all src by publisher to selected srcs -->
             <button
               class="px-2 py-1 font-bold"
               :class="
-                selectedSourcesByPublisher(organization)
-                  === countSourcesByPublisher(organization)
+                selectedSourcesByPublisher(publisher)
+                  === countSourcesByPublisher(publisher)
                   ? `before:mr-1 before:content-['✓']`
                   : `text-blood hover:text-red-800 dark:hover:text-red-400`
               "
-              @click="addPublisher(organization)"
+              @click="addPublisher(publisher)"
             >
               All
             </button>
@@ -113,19 +113,19 @@
             <button
               class="px-2 py-1 font-bold"
               :class="
-                !selectedSourcesByPublisher(organization)
+                !selectedSourcesByPublisher(publisher)
                   ? `before:mr-1 before:content-['✓']`
                   : `dark:hover:text-red-40 text-blood hover:text-red-800`
               "
-              @click="removePublisher(organization)"
+              @click="removePublisher(publisher)"
             >
               None
             </button>
           </div>
 
-          <!-- Sources by Organisation -->
+          <!-- Sources by Publisher -->
           <ul
-            v-for="document in publications"
+            v-for="document in documentsPerPublisher"
             :key="document.key"
             class="relative flex items-start"
           >
@@ -193,10 +193,13 @@ const closeModal = () => emit('close');
 // filter documents by the current game system
 const documentsInSystem = computed(() => {
   if (!currentSystem.value) return props.documents;
-  return documents?.value.filter((document) => {
+  return props.documents.filter((document) => {
     return document.gamesystem.name === currentSystem.value;
   });
 });
+
+// TODO: PR #728 introduces a `sortDocumentsByPublisher` util function. Replace
+// the code below with that once #728 is merged to the `staging` branch
 
 // group filtered documents by publisher
 const groupedDocuments = computed(() => {
@@ -214,7 +217,7 @@ const currentSystem = ref(gameSystem.value);
 
 // returns the names of all game systems present in API data
 const allGameSystems = computed(() => {
-  return props.documents?.value?.reduce((systems, document) => {
+  return props.documents.reduce((systems, document) => {
     if (!systems.includes(document.gamesystem.name))
       return [...systems, document.gamesystem.name];
     else return systems;
@@ -225,11 +228,11 @@ const allGameSystems = computed(() => {
 const onGameSystemChanged = (event) => {
   const newSystem = event.target.value;
   currentSystem.value = newSystem;
-  if (newSystem)
-    selectedSources.value = documents.value
+  if (newSystem) {
+    selectedSources.value = props.documents
       .filter(source => source.gamesystem.name === newSystem)
       .map(source => source.key);
-  else selectedSources.value = documents.value.map(doc => doc.key);
+  } else selectedSources.value = props.documents.map(doc => doc.key);
 };
 
 // save current form selection to local memory

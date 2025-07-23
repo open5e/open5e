@@ -65,10 +65,7 @@
         <!-- Site Header -->
 
         <div class="flex h-12 items-center gap-1 px-2 sm:pl-8">
-          <SidebarToggle
-            class="sm:hidden"
-            @click="toggleSidebar"
-          />
+          <SidebarToggle class="sm:hidden" @click="toggleSidebar" />
           <BreadcrumbLinks class="grow" />
           <EncounterBuilderSummary
             v-if="!isEncounterVisible"
