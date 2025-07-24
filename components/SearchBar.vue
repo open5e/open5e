@@ -1,3 +1,14 @@
+<script>
+/**
+ * SearchBar.vue - UI for interacting with Open5e search. Allows users to type 
+ * a search query. When the SearchBar is activated the user is redirected to 
+ * the `/search` page with the query param populated with their query text
+ *
+ * -= EMITS =-
+ * @emit 'on-search': emits when
+ */
+</script>
+
 <template>
   <div class="relative">
     <div
@@ -7,29 +18,27 @@
         name="majesticons:search-line"
         class="size-8 rounded-full bg-red-900/25 p-1 text-white hover:bg-red-900/50"
         aria-hidden="true"
-        @click="doSearch(searchText)"
+        @click="doSearch(query)"
       />
     </div>
     <input
-      v-model="searchText"
+      v-model="query"
       class="w-full bg-red-700 p-4 placeholder:font-semibold placeholder:text-white/80 focus:border-0 focus:bg-red-800 focus:outline-none dark:bg-red-800 dark:focus:bg-red-600"
-      placeholder="Search Open5e"
-      @keyup.enter="doSearch(searchText)"
+      placeholder="Search Open5e..."
+      @keyup.enter="doSearch(query)"
     />
   </div>
 </template>
 
 <script setup>
 const emit = defineEmits(['on-search']);
-
-const route = useRoute();
 const router = useRouter();
 
-const searchText = ref(route.query.text);
+const query = ref('');
 
-function doSearch(searchText) {
+function doSearch(query) {
   emit('on-search');
-  router.push({ name: 'search', query: { text: searchText } });
+  router.push({ name: 'search', query: { text: query } });
 }
 </script>
 
