@@ -1,5 +1,4 @@
 <template>
-  <!-- SEARCH BAR -->
   <div class="relative">
     <div
       class="absolute inset-y-0 right-0 flex cursor-pointer items-center pr-2"
@@ -21,15 +20,16 @@
 </template>
 
 <script setup>
-const route = useRoute();
+const emit = defineEmits(['on-search']);
 
+const route = useRoute();
 const router = useRouter();
 
 const searchText = ref(route.query.text);
 
 function doSearch(searchText) {
+  emit('on-search');
   router.push({ name: 'search', query: { text: searchText } });
-  showSidebar.value = false;
 }
 </script>
 

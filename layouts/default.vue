@@ -49,7 +49,7 @@
           </span>
         </button>
 
-        <SearchBar />
+        <SearchBar @on-search="hideSidebar" />
         <NavMenu />
         <ModalReportIssue />
 
