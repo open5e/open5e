@@ -48,7 +48,7 @@ export const useAPI = () => {
 
       return res.data.results as Record<string, unknown>[];
     },
-    findPaginated: async (options: {
+    findPaginated: async <T = Record<string, unknown>> (options: {
       endpoint: string;
       sources: string[];
       pageNo?: number;
@@ -66,7 +66,6 @@ export const useAPI = () => {
         isSortDescending = false,
         queryParams = {},
       } = options;
-
       const formattedSources = sources.join(',');
       const res = await api.get(endpoint, {
         params: {
@@ -80,7 +79,7 @@ export const useAPI = () => {
 
       const data = res.data as {
         count: number;
-        results: Record<string, unknown>[];
+        results: T[];
         next: string | null;
         previous: string | null;
       };

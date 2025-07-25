@@ -85,7 +85,7 @@ import { ref, watchEffect } from 'vue';
 import { useAPI, API_ENDPOINTS } from '~/composables/api';
 import { useSourcesList } from '~/composables/sources';
 import type { Monster } from '~/types/monster';
-
+import type { RawMonster } from '~/types/APIMonster';
 const emit = defineEmits<{
   (e: 'select', monster: Monster): void;
 }>();
@@ -103,15 +103,27 @@ const { sources } = useSourcesList();
 
 const optionsRef = ref<HTMLElement | null>(null);
 
-// Simplified monster mapping function
-const mapMonsterFromAPI = (monster: Record<string, string | number>): Monster => ({
-  id: monster.slug || monster.key || monster.id || '',
-  name: monster.name,
-  challenge_rating:
-    monster.challenge_rating || monster.challenge_rating_text || '0',
-  challenge_rating_decimal: monster.challenge_rating_decimal || 0,
-  document: monster.document,
-});
+// Improved monster mapping function
+const mapMonsterFromAPI = (monster: RawMonster): Monster => {
+  const base = {
+    id: String(monster.slug || monster.key || monster.id || ''),
+    name: String(monster.name) || '',
+    challenge_rating: String(
+      monster.challenge_rating || monster.challenge_rating_text || '0'
+    ),
+    challenge_rating_decimal: Number(monster.challenge_rating_decimal) || 0,
+  };
+
+  return !monster.document
+    ? base
+    : {
+      ...base,
+      document: {
+        name: monster.document.name || '',
+        key: monster.document.key || '',
+      }
+    };
+};
 
 let debounceTimeout: ReturnType<typeof setTimeout>;
 
@@ -137,7 +149,7 @@ const loadMore = async () => {
 
   isLoadingMore.value = true;
   try {
-    const response = await findPaginated({
+    const response = await findPaginated<RawMonster>({
       endpoint: API_ENDPOINTS.monsters,
       sources: sources.value,
       itemsPerPage: 25,
@@ -181,7 +193,7 @@ watchEffect(
     debounceTimeout = setTimeout(async () => {
       isSearching.value = true;
       try {
-        const response = await findPaginated({
+        const response = await findPaginated<RawMonster>({
           endpoint: API_ENDPOINTS.monsters,
           sources: sources.value,
           itemsPerPage: 25,

@@ -4,10 +4,6 @@
   <div
     class="grid justify-center overflow-hidden bg-fog bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
   >
-    <ModalSourceSelector
-      :show="showModal"
-      @close="showModal = false"
-    />
     <div
       class="bg-dark m-auto grid h-full min-h-screen max-w-[1440px] grid-flow-col transition-all sm:ml-0 sm:w-screen sm:grid-cols-[14rem_1fr] sm:overflow-y-auto sm:transition-none"
       :class="showSidebar ? 'ml-56' : '-ml-56'"
@@ -24,30 +20,7 @@
           Open5e
         </NuxtLink>
 
-        <!-- SOURCE MODAL -->
-        <button
-          class="cursor-pointer bg-red-600 px-4 py-2 text-left hover:bg-red-400 dark:bg-red-700 dark:hover:bg-red-600"
-          @click="showModal = true"
-        >
-          <span v-if="documents && no_selected_sources > 0">
-            {{ no_selected_sources }} of {{ no_available_sources }} sources
-          </span>
-          <span
-            v-else
-            class="after:content-['_']"
-          >Select Sources</span>
-
-          <span v-if="isLoadingData">
-            <Icon name="line-md:loading-twotone-loop" />
-          </span>
-          <span v-else>
-            <Icon
-              name="heroicons:pencil-square"
-              class="size-5 text-white"
-              aria-hidden="true"
-            />
-          </span>
-        </button>
+        <SourceSelector />
 
         <!-- SEARCH BAR -->
         <div class="relative">
@@ -92,10 +65,7 @@
         <!-- Site Header -->
 
         <div class="flex h-12 items-center gap-1 px-2 sm:pl-8">
-          <SidebarToggle
-            class="sm:hidden"
-            @click="toggleSidebar"
-          />
+          <SidebarToggle class="sm:hidden" @click="toggleSidebar" />
           <BreadcrumbLinks class="grow" />
           <EncounterBuilderSummary
             v-if="!isEncounterVisible"
@@ -118,7 +88,7 @@
           <div class="flex">
             <div class="flex-1">
               <nuxt-page
-                class="main-content pt-auto mx-0 w-full p-4 pb-0 text-darkness dark:text-white sm:px-8"
+                class="main-content pt-auto mx-0 w-full p-4 text-darkness dark:text-white sm:px-8"
               />
             </div>
             <div
@@ -131,6 +101,7 @@
         </div>
       </div>
     </div>
+    <AppFooter />
   </div>
 </template>
 
@@ -158,17 +129,6 @@ watch(
 );
 
 const searchText = ref(route.query.text);
-
-const showModal = ref(false);
-const { sources } = useSourcesList();
-
-const no_selected_sources = computed(() => sources.value.length);
-
-const { data: documents } = useDocuments({ fields: 'none' });
-
-const no_available_sources = computed(() => documents.value?.length ?? 0);
-
-const isLoadingData = useIsFetching();
 
 const router = useRouter();
 

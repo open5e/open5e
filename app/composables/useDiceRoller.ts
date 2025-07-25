@@ -3,7 +3,15 @@ import { useNotifications } from './useNotifications';
 
 const { addNotif } = useNotifications();
 
-export function useDiceRoller(input: string | number) {
+type UseDiceRollerOptions = {
+  title?: string;
+  subtitle?: string;
+}
+
+export function useDiceRoller(
+  input: string | number,
+  options: UseDiceRollerOptions,
+) {
   // make sure dice signature is a string
   const signature = typeof input === 'string' ? input : input.toString();
 
@@ -23,13 +31,22 @@ export function useDiceRoller(input: string | number) {
   // add up the results and add the modifier
   const result = rolls.reduce((total, roll) => total + roll) + modifier;
 
+
   const formattedModifier = useFormatModifier(modifier, {
     showZero: false,
+    spaceAfterOrdinal: true,
   });
 
+  const formattedDiceSignature = `${number}d${dice} ${formattedModifier}`;
+
+  const notifTitle = options?.title 
+    ? `${options.title}`
+    : `Rolling ${formattedDiceSignature}`;
+  
   // push results to notifications
   addNotif({
-    title: `Rolling ${number}d${dice} ${formattedModifier}`,
+    title: notifTitle,
+    subtitle: options?.subtitle ?? '',
     body: result,
     footer: `[ ${rolls.join(', ')} ] ${formattedModifier}`,
   });

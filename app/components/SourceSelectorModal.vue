@@ -25,9 +25,8 @@
     <slot>
       <!-- MODAL MENU TITLE BAR -->
       <div class="flex w-full justify-between border-b-4 border-blood">
-        <h2 class="my-2">
-          Sources
-        </h2>
+
+        <h2 class="my-2">Sources</h2>
 
         <!--  GAME SYSTEM SELECTOR -->
         <div class="my-1 grid">
@@ -38,9 +37,7 @@
             name="system"
             @change="onGameSystemChanged"
           >
-            <option :value="''">
-              –
-            </option>
+            <option :value="''">–</option>
             <option
               v-for="systemOption in allGameSystems"
               :key="systemOption"
@@ -55,11 +52,10 @@
         <div class="serif font-bold">
           <!-- SELECT ALL SOURCES -->
           <button
-            class="px-2 py-1"
             :class="
               allSourcesSelected()
-                ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
-                : ` text-blood hover:text-red-800 dark:hover:text-red-400`
+                ? `px-2 py-1 text-black before:mr-1 before:content-['✓'] dark:text-white`
+                : `px-2 py-1 text-blood hover:text-red-800 dark:hover:text-red-400`
             "
             @click="selectAllInSystem()"
           >
@@ -68,11 +64,10 @@
 
           <!-- DESELECT ALL SOURCES -->
           <button
-            class="px-2 py-1"
             :class="
               selectedSources.length === 0
-                ? ` text-black before:mr-1 before:content-['✓'] dark:text-white`
-                : ` text-blood hover:text-red-800 dark:hover:text-red-400 `
+                ? `px-2 py-1 text-black before:mr-1 before:content-['✓'] dark:text-white`
+                : `px-2 py-1 text-blood hover:text-red-800 dark:hover:text-red-400 `
             "
             @click="deselectAll()"
           >
@@ -83,49 +78,41 @@
 
       <!-- MODAL MENU BODY -->
       <fieldset class="mt-1">
-        <legend class="sr-only">
-          Source Selection
-        </legend>
+        <legend class="sr-only">Source Selection</legend>
         <!-- Organisation -->
         <div
-          v-for="(publications, organization, index) in groupedDocuments"
-          :key="index"
+          v-for="(documentsPerPublisher, publisher) in groupedDocuments"
+          :key="publisher"
           class="space-y-0"
         >
           <div class="my-1 flex items-center gap-2">
-            <h3 class="mt-0 inline-block items-center gap-2">
-              {{ organization }}
-            </h3>
+            <h3 class="mt-0 gap-2">{{ publisher }}</h3>
             <!-- Button for adding all src by publisher to selected srcs -->
             <button
-              class="px-2 py-1 font-bold"
-              :class="
-                selectedSourcesByPublisher(organization)
-                  === countSourcesByPublisher(organization)
-                  ? `before:mr-1 before:content-['✓']`
-                  : `text-blood hover:text-red-800 dark:hover:text-red-400`
+              :class="selectedSourcesByPublisher(publisher)
+                === countSourcesByPublisher(publisher)
+                  ? `px-2 py-1 font-bold before:mr-1 before:content-['✓']`
+                  : `px-2 py-1 font-bold text-blood hover:text-red-800 dark:hover:text-red-400`
               "
-              @click="addPublisher(organization)"
+              @click="addPublisher(publisher)"
             >
               All
             </button>
             <!-- Button for removing all srcs by publisher to selected srcs -->
             <button
-              class="px-2 py-1 font-bold"
-              :class="
-                !selectedSourcesByPublisher(organization)
-                  ? `before:mr-1 before:content-['✓']`
-                  : `dark:hover:text-red-40 text-blood hover:text-red-800`
+              :class="!selectedSourcesByPublisher(publisher)
+                  ? `px-2 py-1 font-bold before:mr-1 before:content-['✓']`
+                  : `px-2 py-1 font-bold dark:hover:text-red-40 text-blood hover:text-red-800`
               "
-              @click="removePublisher(organization)"
+              @click="removePublisher(publisher)"
             >
               None
             </button>
           </div>
 
-          <!-- Sources by Organisation -->
+          <!-- Sources by Publisher -->
           <ul
-            v-for="document in publications"
+            v-for="document in documentsPerPublisher"
             :key="document.key"
             class="relative flex items-start"
           >
@@ -181,25 +168,25 @@
 </template>
 
 <script setup>
+const props = defineProps({
+  documents: { type: Array, default: () => [] }
+});
+
 const { sources, setSources, gameSystem, setGameSystem } = useSourcesList();
 const selectedSources = ref(sources.value);
-
 const emit = defineEmits(['close']);
 const closeModal = () => emit('close');
 
-const { data: documents } = useDocuments({
-  fields: ['key', 'name', 'publisher', 'gamesystem'].join(','),
-  publisher__fields: ['name', 'key'].join(','),
-  gamesystem__fields: ['name', 'key'].join(','),
-});
-
 // filter documents by the current game system
 const documentsInSystem = computed(() => {
-  if (!currentSystem.value) return documents.value;
-  return documents?.value.filter((document) => {
+  if (!currentSystem.value) return props.documents;
+  return props.documents.filter((document) => {
     return document.gamesystem.name === currentSystem.value;
   });
 });
+
+// TODO: PR #728 introduces a `sortDocumentsByPublisher` util function. Replace
+// the code below with that once #728 is merged to the `staging` branch
 
 // group filtered documents by publisher
 const groupedDocuments = computed(() => {
@@ -217,7 +204,7 @@ const currentSystem = ref(gameSystem.value);
 
 // returns the names of all game systems present in API data
 const allGameSystems = computed(() => {
-  return documents?.value?.reduce((systems, document) => {
+  return props.documents.reduce((systems, document) => {
     if (!systems.includes(document.gamesystem.name))
       return [...systems, document.gamesystem.name];
     else return systems;
@@ -227,12 +214,12 @@ const allGameSystems = computed(() => {
 // handler for changing game systems selecter, updates systems/sources cmpnt state
 const onGameSystemChanged = (event) => {
   const newSystem = event.target.value;
+  if (newSystem) {
+    selectedSources.value = props.documents
+    .filter(source => source.gamesystem.name === newSystem)
+    .map(source => source.key);
+  } else selectedSources.value = props.documents.map(doc => doc.key);
   currentSystem.value = newSystem;
-  if (newSystem)
-    selectedSources.value = documents.value
-      .filter(source => source.gamesystem.name === newSystem)
-      .map(source => source.key);
-  else selectedSources.value = documents.value.map(doc => doc.key);
 };
 
 // save current form selection to local memory
@@ -267,12 +254,10 @@ const countSourcesByPublisher = publisher =>
 // returns how many sources are selected from a given publisher
 function selectedSourcesByPublisher(publisher) {
   // find all sources for this publisher
-  const allSources = groupedDocuments.value[publisher].map(
-    source => source.key,
-  );
+  const allSources = groupedDocuments.value[publisher].map(src => src.key);
   // find which of these are part of the current selected sources
-  const currentSources = selectedSources.value.filter(source =>
-    allSources.includes(source),
+  const currentSources = selectedSources.value.filter(src =>
+    allSources.includes(src),
   );
   return currentSources.length;
 }

@@ -87,7 +87,10 @@
       </dt>
       <dd
         class="w-min cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
-        @click="useDiceRoller(initiativeBonus)"
+        @click="useDiceRoller(initiativeBonus, { 
+          title: 'Initiative',
+          subtitle: monster.name 
+        })"
       >
         {{ useFormatModifier(initiativeBonus) }}
       </dd>
@@ -101,7 +104,10 @@
         <span
           v-if="monster.hit_dice"
           class="cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
-          @click="useDiceRoller(monster.hit_dice)"
+          @click="useDiceRoller(monster.hit_dice, {
+             title: 'Hit Points',
+             subtitle: monster.name
+          })"
         >
           {{ `(${monster.hit_dice})` }}
         </span>
@@ -146,7 +152,10 @@
           v-for="(modifier, skill) in monster.skill_bonuses"
           :key="skill"
           class="inline cursor-pointer font-bold capitalize text-blood after:text-black after:content-[',_'] last:after:content-[] hover:text-black dark:after:text-white dark:hover:text-fog"
-          @click="useDiceRoller(modifier.toString())"
+          @click="useDiceRoller(modifier.toString(), {
+             title: skill,
+             subtitle: monster.name
+          })"
         >
           {{ `${skill} ${useFormatModifier(modifier)}` }}
         </li>
@@ -265,7 +274,10 @@
           <span
             v-if="action.uses_type === 'RECHARGE_ON_ROLL'"
             class="cursor-pointer font-bold text-blood before:text-black before:content-['_('] after:text-black after:content-[')_'] hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
-            @click="useDiceRoller('1d6+0')"
+            @click="useDiceRoller('1d6+0', {
+              title: `${action.name} Recharge`,
+              subtitle: monster.name,
+            })"
           >
             {{
               'Recharge '

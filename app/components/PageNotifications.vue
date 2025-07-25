@@ -12,40 +12,58 @@
 </script>
 
 <template>
-  <div class="fixed bottom-0 right-8 m-0 flex min-w-36 flex-col-reverse p-0">
+  <div class="fixed bottom-0 right-4 m-0 flex flex-col-reverse p-0">
+    <!-- Only render 'clear all' btn when notifs array populated -->
     <div
       v-if="notifications.length"
-      class="grid justify-end bg-white/80 dark:bg-darkness/80"
+      class="grid justify-end  dark:bg-darkness/80"
     >
       <button
-        class="mr-2 font-bold text-blood hover:text-red-400"
+        class="my-1 rounded bg-blood px-3 py-1 font-sans font-bold text-white hover:bg-red-400"
         @click="clear()"
       >
-        Clear All &#x2715;
+        CLEAR ALL &#x2715;
       </button>
     </div>
-    <ul class="flex flex-col">
+
+    <!-- Notification list -->
+    <ul class="flex w-min flex-col items-end text-nowrap text-center">
       <li
         v-for="(notification, index) in notifications"
         :key="index"
-        class="mt-1 border-y-2 border-red-400 bg-gray-100 px-3 py-2 dark:bg-slate-900"
+        class="items-right my-2 w-min cursor-pointer border-y-2 border-blood bg-gray-100/95 px-3 py-2 duration-150  hover:border-fireball dark:bg-slate-900/95"
+        @click="remove(index)"
       >
-        <p class="my-0 font-serif text-xs font-light">
-          {{ notification.title }}
-        </p>
-        <div class="my-0 flex justify-between align-middle font-bold">
-          <p class="m-0 text-4xl">
-            {{ notification.body }}
-          </p>
-          <button
-            class="float-right font-bold text-blood transition-all hover:text-red-400"
-            @click="remove(index)"
-          >
-            &#x2715;
-          </button>
+        <!-- SMALL VARIATION: use for all notifications except the latest -->
+        <div 
+          v-if="index < notifications.length - 1"
+          class="w-min text-nowrap text-right text-xs capitalize"
+        >
+          <span class="font-serif">{{ notification.title }}</span>
+          <span v-if="notification.subtitle" class="uppercase before:content-['_|_']">{{ notification.subtitle }}</span>
+          <span class="text-base font-bold before:content-['_']">{{ notification.body }}</span>
         </div>
-        <div class="m-0 p-0 text-sm">
-          {{ notification.footer }}
+        <!-- EXPANDED VARIATION: use for the most recent notification -->
+        <div v-else>
+          <div class="text-base">
+            <span class="my-0 py-0 font-serif font-light capitalize">
+              {{ notification.title }}
+            </span>
+            <span
+              v-if="notification.subtitle"
+              class="text-sm uppercase text-basalt before:content-['_|_'] dark:text-smoke"
+            >
+              {{ notification.subtitle }}
+            </span>
+          </div>
+          <div class="my-0 flex justify-center align-middle font-bold">
+            <p class="m-0 text-5xl">
+              {{ notification.body }}
+            </p>
+          </div>
+          <div class="m-0 p-0 text-sm text-basalt dark:text-smoke">
+            {{ notification.footer }}
+          </div>
         </div>
       </li>
     </ul>
