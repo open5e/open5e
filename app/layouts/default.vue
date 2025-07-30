@@ -5,13 +5,11 @@
     class="grid justify-center overflow-hidden bg-fog bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
   >
     <div
-      class="bg-dark m-auto grid h-full min-h-screen max-w-[1440px] grid-flow-col transition-all sm:ml-0 sm:w-screen sm:grid-cols-[14rem_1fr] sm:overflow-y-auto sm:transition-none"
+      class="bg-dark m-auto grid h-full min-h-screen max-w-[1440px] grid-flow-col transition-all sm:ml-0 sm:w-screen sm:grid-cols-[14rem_1fr_3.5rem] sm:overflow-y-auto sm:transition-none"
       :class="showSidebar ? 'ml-56' : '-ml-56'"
     >
       <!-- Sidebar -->
-      <div
-        class="z-50 flex h-full w-56 flex-col overflow-y-auto bg-slate-700 text-white dark:bg-charcoal"
-      >
+      <div class="z-50 flex h-full w-56 flex-col overflow-y-auto bg-slate-700 text-white dark:bg-charcoal">
         <!-- Logo -->
         <NuxtLink
           to="/"
@@ -20,25 +18,13 @@
           Open5e
         </NuxtLink>
 
-        <SourceSelector />
         <SearchBar @on-search="hideSidebar" />
         <NavMenu />
-        <ModalReportIssue />
 
-        <!-- Patron Banner -->
-        <a href="https://www.patreon.com/open5e">
-          <img
-            src="/img/patron-badge.png"
-            class="block w-full"
-            alt="Become a patron! Keep Open5e ad free!"
-          />
-        </a>
       </div>
 
       <!-- Page central column -->
-      <div
-        class="content-wrapper w-screen overflow-y-auto bg-white text-darkness dark:bg-darkness dark:text-white sm:w-full"
-      >
+      <div class="content-wrapper overflow-y-auto bg-white text-darkness dark:bg-darkness dark:text-white sm:w-full">
         <!-- Site Header -->
 
         <div class="flex h-12 items-center gap-1 px-2 sm:pl-8">
@@ -48,7 +34,6 @@
             v-if="!isEncounterVisible"
             @show-encounter="showEncounter"
           />
-          <ThemeSwitcher />
         </div>
 
         <!-- Shade: fades out main content when sidebar expanded on mobile -->
@@ -77,6 +62,12 @@
           </div>
         </div>
       </div>
+
+      <!-- Right column -->
+      <div class="bg-white dark:bg-darkness">
+        <ToolBar />
+      </div>
+
     </div>
     <AppFooter />
   </div>

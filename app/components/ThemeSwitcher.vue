@@ -1,23 +1,20 @@
 <template>
-  <button
-    class="flex size-10 items-center justify-center rounded-full"
-    :class="{
-      'bg-fog hover:bg-smoke': theme === 'light',
-      'bg-basalt text-white hover:bg-granite': theme === 'dark',
-      'hidden': !theme,
-    }"
-    :aria-roledescription="
-      theme === 'light' ? 'Dark Mode Toggle' : 'Light Mode Toggle'
-    "
-    @click="toggleTheme"
+  <ToolButton 
+    :on-click-handler="toggleTheme"
+    :title="theme === 'light' ? 'Dark Mode' : 'Light Mode'"
   >
-    <Icon
-      :name="theme === 'light' ? 'heroicons:sun' : 'heroicons:moon'"
-      class="text-center text-lg"
-    />
-  </button>
+    <div class="dark:hidden">
+      <Icon name="heroicons:sun" />
+    </div>
+
+    <div class="hidden dark:block">
+      <Icon name="heroicons:moon" />
+    </div>
+    
+  </ToolButton>
 </template>
 
 <script setup lang="ts">
 const { theme, toggleTheme } = useThemeSwitcher();
+
 </script>
