@@ -10,21 +10,21 @@
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative my-4 ml-2">
     <div
-      class="absolute inset-y-0 right-0 flex cursor-pointer items-center pr-2"
+      class="absolute inset-y-0 right-1 flex cursor-pointer items-center"
     >
       <Icon
         name="majesticons:search-line"
-        class="size-8 rounded-full bg-red-900/25 p-1 text-white hover:bg-red-900/50"
+        class="size-8 rounded-full bg-red p-1 text-white hover:bg-red-300"
         aria-hidden="true"
         @click="doSearch(query)"
       />
     </div>
     <input
       v-model="query"
-      class="w-full bg-red-700 p-4 placeholder:font-semibold placeholder:text-white/80 focus:border-0 focus:bg-red-800 focus:outline-none dark:bg-red-800 dark:focus:bg-red-600"
-      placeholder="Search Open5e..."
+      class="w-full rounded-full border border-granite p-2 placeholder:font-semibold focus:bg-fog  focus:outline-none dark:bg-darkness dark:focus:bg-charcoal "
+      placeholder="Search..."
       @keyup.enter="doSearch(query)"
     />
   </div>

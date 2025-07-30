@@ -9,18 +9,8 @@
       :class="showSidebar ? 'ml-56' : '-ml-56'"
     >
       <!-- Sidebar -->
-      <div class="z-50 flex h-full w-56 flex-col overflow-y-auto bg-slate-700 text-white dark:bg-charcoal">
-        <!-- Logo -->
-        <NuxtLink
-          to="/"
-          class="bg-red p-5 font-serif text-3xl text-white hover:text-white"
-        >
-          Open5e
-        </NuxtLink>
-
-        <SearchBar @on-search="hideSidebar" />
-        <NavMenu />
-
+      <div class="w-50 z-50 flex h-full flex-col overflow-y-auto  text-white dark:bg-charcoal">
+         <Navigation />
       </div>
 
       <!-- Page central column -->
