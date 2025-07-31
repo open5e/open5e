@@ -5,13 +5,13 @@
     class="grid justify-center overflow-hidden bg-fog bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
   >
     <div
-      class="bg-dark m-auto grid h-full min-h-screen max-w-[1440px] grid-flow-col transition-all sm:ml-0 sm:w-screen sm:grid-cols-[14rem_1fr_3.5rem] sm:overflow-y-auto sm:transition-none"
-      :class="showSidebar ? 'ml-56' : '-ml-56'"
+      class="grid h-full min-h-screen max-w-[1440px] grid-flow-col grid-cols-[14rem_1fr_3.5rem] transition-all sm:ml-0 sm:w-screen sm:overflow-y-auto sm:transition-none"
+      :class="showSidebar ? 'ml-0' : '-ml-56'"
     >
       <!-- Sidebar -->
-      <div class="w-50 z-50 flex h-full flex-col overflow-y-auto  text-white dark:bg-charcoal">
+      <aside class="z-50 flex h-full w-56 flex-col overflow-y-auto  text-white dark:bg-charcoal">
          <Navigation />
-      </div>
+      </aside>
 
       <!-- Page central column -->
       <div class="content-wrapper overflow-y-auto bg-white text-darkness dark:bg-darkness dark:text-white sm:w-full">
@@ -38,7 +38,7 @@
         <!-- Main content -->
         <div class="flex flex-col">
           <div class="flex">
-            <div class="flex-1">
+            <div class="">
               <nuxt-page
                 class="main-content pt-auto mx-0 w-full p-4 text-darkness dark:text-white sm:px-8"
               />
