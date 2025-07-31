@@ -4,13 +4,22 @@
   <div
     class="grid justify-center overflow-hidden bg-fog bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
   >
+    <!-- Shade: fades out main content when sidebar expanded on mobile -->
     <div
-      class="grid h-full min-h-screen max-w-[1440px] grid-flow-col grid-cols-[14rem_1fr_3.5rem] transition-all sm:ml-0 sm:w-screen sm:overflow-y-auto sm:transition-none"
-      :class="showSidebar ? 'ml-0' : '-ml-56'"
+      v-show="showSidebar || isToolbarVisible"
+      class="fixed left-0 top-0 z-48 size-full bg-basalt/50 sm:hidden"
+      @click="hideSidebars"
+    />
+    
+    <div
+      class="grid h-full min-h-screen max-w-[1440px] grid-flow-col grid-cols-[14rem_1fr_3.5rem] transition-all sm:mx-0 sm:w-screen sm:overflow-y-auto sm:transition-none"
+      :class="`
+        ${showSidebar ? 'ml-0' : '-ml-56'} 
+        ${isToolbarVisible ? '-mr-2' : '-mr-16'}`"
     >
       <!-- Sidebar -->
       <aside class="z-50 flex h-full w-56 flex-col overflow-y-auto  text-white dark:bg-charcoal">
-         <Navigation @on-link-clicked="hideSidebar"/>
+         <Navigation @on-link-clicked="hideSidebars" />
       </aside>
 
       <!-- Page central column -->
@@ -20,18 +29,15 @@
         <div class="flex h-12 items-center gap-1 px-2 sm:pl-8">
           <SidebarToggle class="sm:hidden" @click="toggleSidebar" />
           <BreadcrumbLinks class="grow" />
-          <EncounterBuilderSummary
-            v-if="!isEncounterVisible"
-            @show-encounter="showEncounter"
+          <EncounterBuilderSummary v-if="!isEncounterVisible" @show-encounter="showEncounter" />
+          <ToolBarToggle
+            v-if="!isToolbarVisible"
+            class="block sm:hidden"
+            @btn-clicked="toggleToolbar"
           />
         </div>
 
-        <!-- Shade: fades out main content when sidebar expanded on mobile -->
-        <div
-          v-show="showSidebar"
-          class="fixed left-0 top-0 z-48 size-full bg-basalt/50 sm:hidden"
-          @click="hideSidebar"
-        />
+
 
         <PageNotifications />
 
@@ -50,11 +56,14 @@
       </div>
 
       <!-- Right column -->
-      <div class="bg-white dark:bg-darkness">
+      <div 
+        class="z-50 bg-white dark:bg-darkness"
+      >
         <ToolBar />
       </div>
 
     </div>
+    
     <AppFooter />
   </div>
 </template>
@@ -69,10 +78,15 @@ const title = computed(() => {
 });
 useHead({ title: title });
 
+const isToolbarVisible = ref(false);
+const toggleToolbar = () => (isToolbarVisible.value = !isToolbarVisible.value);
 const showSidebar = ref(false);
 const isEncounterVisible = ref(false);
 const toggleSidebar = () => (showSidebar.value = !showSidebar.value);
-const hideSidebar = () => (showSidebar.value = false);
+const hideSidebars = () => {
+  showSidebar.value = false;
+  isToolbarVisible.value = false;
+};
 const showEncounter = () => (isEncounterVisible.value = true);
 </script>
 

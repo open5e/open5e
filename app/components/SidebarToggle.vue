@@ -11,8 +11,8 @@
 
 <template>
   <button
-    class="flex size-10 items-center justify-center rounded-full bg-fog hover:bg-smoke dark:bg-basalt hover:dark:bg-granite"
+    class="flex size-10 items-center justify-center rounded-full bg-red text-white transition-all hover:bg-red-700 dark:bg-basalt hover:dark:bg-granite"
   >
-    <Icon name="heroicons:bars-3" />
+    <Icon name="majesticons:menu-line" />
   </button>
 </template>
