@@ -29,7 +29,6 @@
         <div class="flex h-12 items-center gap-1 px-2 sm:pl-8">
           <SidebarToggle class="sm:hidden" @click="toggleSidebar" />
           <BreadcrumbLinks class="grow" />
-          <EncounterBuilderSummary v-if="!isEncounterVisible" @show-encounter="showEncounter" />
           <ToolBarToggle
             v-if="!isToolbarVisible"
             class="block sm:hidden"
@@ -59,7 +58,7 @@
       <div 
         class="z-50 bg-white dark:bg-darkness"
       >
-        <ToolBar />
+        <ToolBar @encounter-builder-clicked="showEncounter"/>
       </div>
 
     </div>
@@ -81,11 +80,12 @@ useHead({ title: title });
 const isToolbarVisible = ref(false);
 const toggleToolbar = () => (isToolbarVisible.value = !isToolbarVisible.value);
 const showSidebar = ref(false);
-const isEncounterVisible = ref(false);
 const toggleSidebar = () => (showSidebar.value = !showSidebar.value);
+const isEncounterVisible = ref(false);
 const hideSidebars = () => {
   showSidebar.value = false;
   isToolbarVisible.value = false;
+  isEncounterVisible.value = false;
 };
 const showEncounter = () => (isEncounterVisible.value = true);
 </script>
