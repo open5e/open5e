@@ -39,6 +39,7 @@
             name: type,
             value: type.toLowerCase().split(' ').join('-'),
           })),
+          isLeastPriority: true,
         },
       ]"
       :checkbox-fields="[
@@ -63,6 +64,7 @@
           displayName: 'Category',
           value: (data) => data.category.name,
           sortValue: 'category',
+          isLeastPriority: true,
         },
         {
           displayName: 'Rarity',

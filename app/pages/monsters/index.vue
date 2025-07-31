@@ -1,7 +1,7 @@
 <template>
   <section class="docs-container container">
-    <div class="flex">
-      <h1 class="my-2 w-screen text-nowrap">
+    <div class="flex w-full">
+      <h1 class="my-2 text-nowrap">
         Monsters
       </h1>
 

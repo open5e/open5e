@@ -1,7 +1,7 @@
 <template>
-  <section>
+  <section class="w-screen sm:w-full">
     <div class="flex">
-      <h1 class="my-2 w-80">
+      <h1 class="my-2">
         Equipment
       </h1>
 

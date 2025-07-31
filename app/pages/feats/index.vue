@@ -1,12 +1,9 @@
 <template>
-  <section class="docs-container container">
+  <section class="w-screen sm:w-full">
     <div class="flex">
-      <h1 class="my-2 w-screen">
-        Feats
-      </h1>
+      <h1 class="my-2">Feats</h1>
 
       <ResultsTablePaginator
-        class="w-full"
         :page-number="pageNo"
         :last-page-number="lastPageNo"
         :items-per-page="itemsPerPage || 1"
@@ -18,7 +15,16 @@
       />
     </div>
 
+    <ResultsTableFilter
+      :filter-state="filterState"
+      :search="{
+        name: 'Search Feats',
+        filterField: 'name__icontains',
+      }"
+    />
+
     <ResultsTable
+      v-model="filterState.debouncedFilter"
       :data="data?.results"
       :cols="[
         {
@@ -26,7 +32,7 @@
           value: (data) => data.name,
           sortValue: 'name',
           link: (data) => `/feats/${data.key}`,
-        },
+        }
       ]"
       :sort-by="sortBy"
       :is-sort-descending="isSortDescending"
@@ -35,17 +41,29 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
+// Set up filters
+const filterState = useFilterState<{ name__icontains: string }>({
+  key: 'feats',
+  fields: {
+    name__contains: '',
+  },
+});
+
+// State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
-// fetch page of data from API and pagination controls
+const fields = ['key', 'name', 'document'].join(',');
+const docFields = ['name', 'key'].join(',');
+
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.feats,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
+  filter: filterState.debouncedFilter,
   params: {
-    fields: ['key', 'name', 'document'].join(','),
-    document__fields: ['name', 'key'].join(','),
+    fields,
+    document__fields: docFields,
   },
 });
 

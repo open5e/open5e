@@ -1,12 +1,9 @@
 <template>
-  <section class="docs-container container">
+  <section class="w-screen sm:w-full">
     <div class="flex">
-      <h1 class="my-2 w-screen">
-        Rules
-      </h1>
+      <h1 class="my-2">Rules</h1>
 
       <ResultsTablePaginator
-        class="w-full"
         :page-number="pageNo"
         :last-page-number="lastPageNo"
         :items-per-page="itemsPerPage || 1"

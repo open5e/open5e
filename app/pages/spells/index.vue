@@ -1,7 +1,7 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2 w-full">
+      <h1 class="my-2 w-screen sm:w-full">
         Spells
       </h1>
 
@@ -64,6 +64,7 @@
             name: className,
             value: 'srd_' + className.toLowerCase(),
           })),
+          isLeastPriority: true,
         },
       ]"
     />
@@ -93,10 +94,7 @@
           value: (data) => {
             return data.classes.map((c) => c.name).join(', ');
           },
-        },
-        {
-          displayName: 'Concentration',
-          value: (data) => (data.concentration ? '√' : '-'),
+          isLeastPriority: true,
         },
       ]"
       :sort-by="sortBy"
@@ -128,7 +126,6 @@ const fields = [
   'level',
   'school',
   'classes',
-  'concentration',
 ].join(',');
 
 // Fetch a page of results and pagination controls

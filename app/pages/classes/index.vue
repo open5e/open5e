@@ -1,9 +1,7 @@
 <template>
   <section class="docs-container container">
     <div class="grid w-full grid-cols-2">
-      <h1 class="my-2 w-screen">
-        Classes
-      </h1>
+      <h1 class="my-2 w-screen">Classes</h1>
       
       <ResultsTablePaginator
         class="w-min-content w-full"

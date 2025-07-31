@@ -36,18 +36,16 @@
           />
         </div>
 
-
-
         <PageNotifications />
 
         <!-- Main content -->
         <div class="flex grow">
           <nuxt-page
-            class="main-content pt-auto mx-0 w-full p-4 text-darkness dark:text-white sm:px-8"
+            class="main-content pt-auto mx-0 grow p-4 text-darkness dark:text-white sm:px-8"
           />
           <div
             v-if="isEncounterVisible"
-            class="top-0 hidden w-80 shrink-0 border-l lg:block"
+            class="top-0 block w-80 flex-initial shrink-0 border-l"
           >
             <EncounterBuilder @hide-encounter="isEncounterVisible = false" />
           </div>

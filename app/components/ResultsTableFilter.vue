@@ -37,12 +37,9 @@
 </script>
 
 <template>
-  <div class="my-2 flex items-end justify-between gap-2  md:gap-3">
+  <div class="my-2 flex w-full items-end justify-between gap-2  md:gap-3">
     <!-- RENDER SEARCH BAR -->
-    <div
-      v-if="search"
-      class="relative"
-    >
+    <div v-if="search" class="relative w-full">
       <Icon
         name="majesticons:search-line"
         class="absolute bottom-2 left-2 size-5 rounded-full"
@@ -53,7 +50,7 @@
         :name="search?.name"
         placeholder="Search..."
         :value="filterState.fieldsState.value[search.filterField]"
-        class="w-20 rounded-full border bg-transparent p-1 pl-8 outline-none transition-colors focus:w-auto focus:bg-fog dark:focus:bg-basalt sm:w-auto"
+        class="w-full rounded-full border bg-transparent p-1 pl-8 outline-none transition-colors focus:w-full focus:min-w-40 focus:bg-fog dark:focus:bg-basalt"
         @input="
           filterState.updateField(
             search?.filterField,
@@ -67,7 +64,7 @@
     <div
       v-for="field in selectFields"
       :key="field.name"
-      class="grid columns-1 justify-center"
+      class="grid columns-1 justify-center border-b border-red"
       :class="{ 'hidden sm:grid': field.isLeastPriority }"
     >
       <label
@@ -81,7 +78,7 @@
         :id="field.name"
         :key="field.name"
         :name="field.name"
-        class="cursor-pointer bg-transparent fill-red text-center"
+        class="cursor-pointer bg-transparent fill-red text-left"
         :value="filterState.fieldsState.value[field.filterField]"
         @input="
           filterState.updateField(field.filterField, $event?.target.value)
