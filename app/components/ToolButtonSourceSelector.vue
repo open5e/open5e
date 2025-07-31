@@ -4,8 +4,13 @@
     :on-click-handler="() => showModal = true"
     :title="`Select Sources`"
   >
-    <Icon name="heroicons:book-open" class="mb-1"/>
-    <p class="absolute -bottom-0.5 text-[0.6rem]">{{ sourceCount }}</p>
+    <Icon name="majesticons:book-open-line" class="z-20 size-7"/>
+    <p
+      v-if="sourceCount" 
+      class="absolute -bottom-3 z-30 text-nowrap px-0.5 py-0 text-xs text-black  dark:text-white"
+    >
+      {{ sourceCount }}
+    </p>
 
     <ModalSourceSelector 
       :show="showModal"
@@ -27,7 +32,7 @@ const { data: documents } = useDocuments({
 
 const { sources } = useSourcesList();
 const sourceCount = computed(() => {
-  if (!sources || !documents) return '';
+  if (!sources.value || !documents.value) return '';
   return `${sources.value.length}/${documents.value?.length}`;
 });
 

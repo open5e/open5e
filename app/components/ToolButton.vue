@@ -1,13 +1,13 @@
 <template>
-  <div class="group relative text-black dark:text-white">
+  <div class="group relative font-bold text-white">
     <button
-      class="group relative z-20 m-1 flex size-10 items-center justify-center rounded-full border bg-fog text-lg group-hover:bg-smoke  dark:bg-basalt dark:hover:bg-granite"
+      class="group relative z-20 m-1 flex size-10 items-center justify-center rounded-full  bg-red text-lg group-hover:bg-red-300 "
       @click="() => onClickHandler()"
     >
       <slot />
     </button>
-    <div class="absolute right-10 top-0 z-10 hidden h-10 justify-center overflow-hidden text-nowrap bg-fog px-4 align-middle text-sm font-bold uppercase transition-all group-hover:grid dark:bg-basalt">
-      <span class="mr-4 mt-2 inline-block text-center align-middle">{{ title }}</span>
+    <div class="absolute right-10 top-0 z-10 hidden h-10 justify-center overflow-hidden text-nowrap bg-red px-4 align-middle text-sm font-bold uppercase transition-all group-hover:grid">
+      <span class="mr-4 mt-[0.6rem] inline-block text-center align-middle text-white">{{ title }}</span>
       <span class="absolute -right-5 size-10 rounded-full bg-white dark:bg-darkness"/>
     </div>
   </div>
