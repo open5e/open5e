@@ -3,11 +3,12 @@
     <NuxtLink
       to="/"
       class="block bg-red p-5 text-center font-serif text-3xl text-white hover:text-white"
+      @click="$emit('on-link-clicked')"
     >
       Open5e
     </NuxtLink>
 
-    <SearchBar class="mb-2" @on-search="hideSidebar" />
+    <SearchBar class="mb-2" @on-search="$emit('on-link-clicked')" />
     <ul v-for="{ sectionTitle, pages } in paths" :key="sectionTitle" class="grid gap-2 border-granite sm:border-r">
       <p class="mx-4 text-sm font-bold">{{ sectionTitle }}</p>
       <li 
@@ -15,7 +16,7 @@
         class="group flex items-center gap-2 rounded px-2 py-1 decoration-red transition-all hover:bg-fog hover:underline dark:hover:bg-charcoal"
         :class="path.includes(activeBaseRoute) && activeBaseRoute !== '' ? 'ml-4' : ''"
       >
-        <NuxtLink :to="path" class="inline-block w-full">
+        <NuxtLink :to="path" class="inline-block w-full" @click="$emit('on-link-clicked')">
           <Icon :name="icon ?? ''" class="mx-4 size-8 text-red"/>
           <span class=" ">{{ title }}</span>
         </NuxtLink>
@@ -25,6 +26,8 @@
 </template>
 
 <script setup>
+
+defineEmits(['on-link-clicked']);
 
 const activeBaseRoute = computed(() => useRoute().path.split('/')[1]);
 

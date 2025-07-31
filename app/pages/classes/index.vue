@@ -1,9 +1,10 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2">
+      <h1 class="my-2 w-full">
         Classes
       </h1>
+      
       <ResultsTablePaginator
         class="w-full"
         :page-number="pageNo"

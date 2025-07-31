@@ -10,11 +10,11 @@
     >
       <!-- Sidebar -->
       <aside class="z-50 flex h-full w-56 flex-col overflow-y-auto  text-white dark:bg-charcoal">
-         <Navigation />
+         <Navigation @on-link-clicked="hideSidebar"/>
       </aside>
 
       <!-- Page central column -->
-      <div class="content-wrapper overflow-y-auto bg-white text-darkness dark:bg-darkness dark:text-white sm:w-full">
+      <div class="content-wrapper w-full grow overflow-y-auto bg-white text-darkness dark:bg-darkness dark:text-white sm:w-full">
         <!-- Site Header -->
 
         <div class="flex h-12 items-center gap-1 px-2 sm:pl-8">
