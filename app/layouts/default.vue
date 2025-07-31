@@ -36,19 +36,15 @@
         <PageNotifications />
 
         <!-- Main content -->
-        <div class="flex flex-col">
-          <div class="flex">
-            <div class="">
-              <nuxt-page
-                class="main-content pt-auto mx-0 w-full p-4 text-darkness dark:text-white sm:px-8"
-              />
-            </div>
-            <div
-              v-if="isEncounterVisible"
-              class="top-0 hidden w-80 shrink-0 border-l lg:block"
-            >
-              <EncounterBuilder @hide-encounter="isEncounterVisible = false" />
-            </div>
+        <div class="flex grow">
+          <nuxt-page
+            class="main-content pt-auto mx-0 w-full p-4 text-darkness dark:text-white sm:px-8"
+          />
+          <div
+            v-if="isEncounterVisible"
+            class="top-0 hidden w-80 shrink-0 border-l lg:block"
+          >
+            <EncounterBuilder @hide-encounter="isEncounterVisible = false" />
           </div>
         </div>
       </div>

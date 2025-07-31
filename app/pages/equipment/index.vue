@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="flex">
-      <h1 class="my-2 w-full">
+      <h1 class="my-2 w-80">
         Equipment
       </h1>
 

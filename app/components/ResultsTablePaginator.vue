@@ -22,7 +22,7 @@
 
 <template>
   <div class="grid w-full items-center justify-end">
-    <ul class="grid grid-flow-col grid-cols-5 gap-1">
+    <ul class="grid grid-flow-col grid-cols-5 sm:gap-1">
       <li class="col-start-3 place-self-center font-bold">
         <sup>{{ pageNumber }}</sup>
         <span>&frasl;</span>

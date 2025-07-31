@@ -1,7 +1,7 @@
 <template>
   <section class="docs-container container">
     <div class="flex">
-      <h1 class="my-2">
+      <h1 class="my-2 w-screen">
         Backgrounds
       </h1>
 

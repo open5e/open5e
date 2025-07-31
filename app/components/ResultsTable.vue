@@ -23,7 +23,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="w-full">
     <table
       v-if="data"
       class="m-0 w-full"
