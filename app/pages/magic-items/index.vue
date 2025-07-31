@@ -70,7 +70,7 @@
           sortValue: 'rarity',
         },
         {
-          displayName: 'Requires Attunement',
+          displayName: 'Attunement',
           value: (data) => data.requires_attunement,
           sortValue: 'requires_attunement',
         },

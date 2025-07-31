@@ -39,9 +39,9 @@
           />
         </span>
       </template>
-      <!-- If data is boolean, display as √ or -, not true or false  -->
+      <!-- If data is boolean, display as ✓ or -, not true or false  -->
       <template v-else-if="typeof col.value(data) === 'boolean'">
-        <span>{{ col.value(data) ? '√' : '-' }}</span>
+        <div class="grid justify-center">{{ col.value(data) ? '✓' : '-' }}</div>
       </template>
       <template v-else>
         {{ col.value(data) }}
