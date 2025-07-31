@@ -37,15 +37,15 @@
 </script>
 
 <template>
-  <div class="my-2 flex items-end justify-between gap-2 md:gap-3">
+  <div class="my-2 flex items-end justify-between gap-2  md:gap-3">
     <!-- RENDER SEARCH BAR -->
     <div
       v-if="search"
-      class="relative border-b-2 border-red-400"
+      class="relative"
     >
       <Icon
         name="majesticons:search-line"
-        class="absolute bottom-1.5 mr-2 size-4"
+        class="absolute bottom-2 left-2 size-5 rounded-full"
       />
 
       <input
@@ -53,7 +53,7 @@
         :name="search?.name"
         placeholder="Search..."
         :value="filterState.fieldsState.value[search.filterField]"
-        class="w-20 bg-transparent pl-6 outline-none transition-colors focus:w-auto focus:bg-fog dark:focus:bg-basalt sm:w-auto"
+        class="w-20 rounded-full border bg-transparent p-1 pl-8 outline-none transition-colors focus:w-auto focus:bg-fog dark:focus:bg-basalt sm:w-auto"
         @input="
           filterState.updateField(
             search?.filterField,
