@@ -4,15 +4,14 @@
   <div
     class="grid justify-center overflow-hidden bg-fog bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
   >
-
-    
+  
     <!-- Main layout container: inc dynamic margins for collapsing sidebars --
       -- at small screen widths.                                            -->
     <div
       class="grid h-full min-h-screen max-w-[1440px] grid-flow-col grid-cols-[14rem_1fr_3.5rem] transition-all sm:mx-0 sm:w-screen sm:overflow-y-auto sm:transition-none"
       :class="`
-        ${isNavbarVisible ? 'ml-0' : '-ml-56'} 
-        ${isToolbarVisible ? '-mr-2' : '-mr-16'}`"
+        ${isNavbarVisible ? 'ml-0 -mr-[18rem]' : '-ml-56'} 
+        ${isToolbarVisible ? '-mr-2 -pl-16': '-mr-16'}`"
     >
       <!-- Left sidebar -->
       <aside class="z-50 flex h-full w-56 flex-col overflow-y-auto  text-white dark:bg-charcoal">
