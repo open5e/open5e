@@ -36,7 +36,7 @@
           <ToolBarToggle class="m-2 flex-none" @btn-clicked="toggleToolbar" />
         </header>
         
-        <div class="-mt-5 grid h-12 w-full justify-center gap-1 px-2 text-lg sm:m-4 sm:justify-start sm:pl-4">
+        <div class="-mt-5 grid h-min w-full justify-center gap-1 px-2 text-lg sm:m-4 sm:justify-start sm:pl-4">
           <BreadcrumbLinks class="grow" />
         </div>
 
