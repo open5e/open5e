@@ -21,7 +21,7 @@
     class="flex flex-col items-center justify-center rounded-md text-fog"
     :class="[
       sizeClasses,
-      disabled ? 'bg-slate-800' : 'bg-blood hover:bg-fog hover:text-blood',
+      disabled ? 'bg-slate-800' : 'bg-red hover:bg-fog hover:text-red',
     ]"
     :disabled="disabled"
     :name="name"

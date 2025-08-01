@@ -37,7 +37,7 @@
 </script>
 
 <template>
-  <div class="my-2 flex w-full items-end justify-between gap-2  md:gap-3">
+  <div class="my-2 flex w-full items-end justify-between gap-2 md:gap-3">
     <!-- RENDER SEARCH BAR -->
     <div v-if="search" class="relative w-full">
       <Icon

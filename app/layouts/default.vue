@@ -4,7 +4,7 @@
   <div
     class="grid justify-center overflow-hidden bg-fog bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
   >
-  
+
     <!-- Main layout container: inc dynamic margins for collapsing sidebars --
       -- at small screen widths.                                            -->
     <div
@@ -27,7 +27,7 @@
 
           <NuxtLink
             to="/"
-            class="p-2 pb-0 text-center font-serif text-xl text-red dark:text-white"
+            class="p-2 pb-0 text-center font-serif text-2xl text-red dark:text-white"
           >
             Open5e
           </NuxtLink>
@@ -35,7 +35,7 @@
           <ToolBarToggle class="m-2 flex-none" @btn-clicked="toggleToolbar" />
         </header>
         
-        <div class="-mt-5 grid h-min w-full justify-center gap-1 px-2 text-lg sm:m-4 sm:justify-start sm:pl-4">
+        <div class="-mt-3 grid h-min w-full justify-center gap-1 px-2 text-lg sm:m-4 sm:justify-start sm:pl-4">
           <BreadcrumbLinks class="grow" />
         </div>
 
