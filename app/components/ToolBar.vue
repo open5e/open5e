@@ -1,5 +1,5 @@
 <template>
-  <ul class="grid gap-2">
+  <ul class="mt-1 grid gap-2">
     <li>
       <ThemeSwitcher />
     </li>

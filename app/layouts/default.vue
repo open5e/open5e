@@ -4,36 +4,40 @@
   <div
     class="grid justify-center overflow-hidden bg-fog bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
   >
-    <!-- Shade: fades out main content when sidebar expanded on mobile -->
-    <div
-      v-show="showSidebar || isToolbarVisible"
-      class="fixed left-0 top-0 z-48 size-full bg-basalt/50 sm:hidden"
-      @click="hideSidebars"
-    />
+
     
+    <!-- Main layout container: inc dynamic margins for collapsing sidebars --
+      -- at small screen widths.                                            -->
     <div
       class="grid h-full min-h-screen max-w-[1440px] grid-flow-col grid-cols-[14rem_1fr_3.5rem] transition-all sm:mx-0 sm:w-screen sm:overflow-y-auto sm:transition-none"
       :class="`
-        ${showSidebar ? 'ml-0' : '-ml-56'} 
+        ${isNavbarVisible ? 'ml-0' : '-ml-56'} 
         ${isToolbarVisible ? '-mr-2' : '-mr-16'}`"
     >
-      <!-- Sidebar -->
+      <!-- Left sidebar -->
       <aside class="z-50 flex h-full w-56 flex-col overflow-y-auto  text-white dark:bg-charcoal">
          <Navigation @on-link-clicked="hideSidebars" />
       </aside>
 
       <!-- Page central column -->
       <div class="content-wrapper w-full grow overflow-y-auto bg-white text-darkness dark:bg-darkness dark:text-white sm:w-full">
-        <!-- Site Header -->
 
-        <div class="flex h-12 items-center gap-1 px-2 sm:pl-8">
-          <SidebarToggle class="sm:hidden" @click="toggleSidebar" />
+        <!-- Site Header -->
+        <header class="flex justify-between sm:hidden">
+          <SidebarToggle class="m-2 flex-none" @click="toggleSidebar" />
+
+          <NuxtLink
+            to="/"
+            class="p-2 pb-0 text-center font-serif text-xl text-red dark:text-white"
+          >
+            Open5e
+          </NuxtLink>
+
+          <ToolBarToggle class="m-2 flex-none" @btn-clicked="toggleToolbar" />
+        </header>
+        
+        <div class="-mt-5 grid h-12 w-full justify-center gap-1 px-2 text-lg sm:m-4 sm:justify-start sm:pl-4">
           <BreadcrumbLinks class="grow" />
-          <ToolBarToggle
-            v-if="!isToolbarVisible"
-            class="block sm:hidden"
-            @btn-clicked="toggleToolbar"
-          />
         </div>
 
         <PageNotifications class="z-60" />
@@ -41,7 +45,7 @@
         <!-- Main content -->
         <div class="flex grow">
           <nuxt-page
-            class="main-content pt-auto mx-0 grow p-4 text-darkness dark:text-white sm:px-8"
+            class="main-content pt-auto ml-0 mr-1 grow p-4 text-darkness dark:text-white sm:px-8"
           />
           <div
             v-if="isEncounterVisible"
@@ -52,7 +56,7 @@
         </div>
       </div>
 
-      <!-- Right column -->
+      <!-- Right sidebar -->
       <div 
         class="z-50 bg-white dark:bg-darkness"
       >
@@ -62,6 +66,14 @@
     </div>
     
     <AppFooter />
+
+
+    <!-- Shade: fades out main content when sidebar expanded on mobile -->
+    <div
+      v-show="isNavbarVisible || isToolbarVisible"
+      class="fixed left-0 top-0 z-48 size-full bg-basalt/50 sm:hidden"
+      @click="hideSidebars"
+    />
   </div>
 </template>
 
@@ -77,11 +89,11 @@ useHead({ title: title });
 
 const isToolbarVisible = ref(false);
 const toggleToolbar = () => (isToolbarVisible.value = !isToolbarVisible.value);
-const showSidebar = ref(false);
-const toggleSidebar = () => (showSidebar.value = !showSidebar.value);
+const isNavbarVisible = ref(false);
+const toggleSidebar = () => (isNavbarVisible.value = !isNavbarVisible.value);
 const isEncounterVisible = ref(false);
 const hideSidebars = () => {
-  showSidebar.value = false;
+  isNavbarVisible.value = false;
   isToolbarVisible.value = false;
   isEncounterVisible.value = false;
 };

@@ -10,7 +10,7 @@
 </script>
 
 <template>
-  <div class="relative my-4 ml-2">
+  <div class="relative">
     <div
       class="absolute inset-y-0 right-1 flex cursor-pointer items-center"
     >

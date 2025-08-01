@@ -17,28 +17,17 @@
 
 <template>
   <nav
-    class="flex h-min items-center dark:border-basalt"
+    class="flex h-min  text-nowrap dark:border-basalt"
     aria-label="breadcrumbs"
   >
-    <ol class="space-x-1 text-xs font-semibold sm:space-x-3 lg:text-sm">
+    <ol class="space-x-1 text-sm font-semibold underline-offset-4 sm:space-x-3">
       <!-- Prepend Home Link to list -->
       <li
-        class="inline-flex items-center align-middle text-gray-700 after:ml-1 after:text-blood after:content-['/'] last:after:content-[''] visited:text-gray-700 hover:text-red-700 dark:text-gray-200 dark:visited:text-gray-200 dark:hover:text-red-400 sm:after:ml-4"
+        class="inline-flex items-center align-middle text-gray-700 after:ml-1 after:text-blood after:content-['/'] last:after:content-[''] visited:text-gray-700 hover:text-red-700 dark:text-gray-200 dark:visited:text-gray-200 dark:hover:text-red-400 sm:items-start sm:after:ml-4"
       >
-        <!-- On narrow screens, home breadcrumb serves as site brand -->
-        <nuxt-link to="/">
-          <span
-            class="font-serif text-lg font-bold hover:text-red-700 dark:text-white dark:hover:text-red-200 sm:hidden"
-          >
-            Open5e
-          </span>
-          <span class="hidden align-middle uppercase sm:inline-flex">
-            <Icon
-              name="heroicons:home"
-              class="mt-0.5 align-middle sm:mr-1"
-            />
-            Home
-          </span>
+        <nuxt-link to="/" class="inline-flex align-middle uppercase  decoration-red">
+          <Icon name="heroicons:home" class="mr-1 mt-[.175rem] align-middle" />
+          <span>Home</span>
         </nuxt-link>
       </li>
 
