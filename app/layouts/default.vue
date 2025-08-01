@@ -36,7 +36,7 @@
           />
         </div>
 
-        <PageNotifications />
+        <PageNotifications class="z-60" />
 
         <!-- Main content -->
         <div class="flex grow">
