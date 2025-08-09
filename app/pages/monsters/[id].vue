@@ -38,8 +38,9 @@
     </div>
 
     <img
-      v-if="mode !== 'compact' && monster.img_main"
-      :src="monster.img_main"
+      v-if="mode !== 'compact' && monster.illustration"
+      :src="useRuntimeConfig().public.apiUrl + monster.illustration.file_url"
+      :alt="monster.name"
       class="img-main"
     />
     <p class="italic">
@@ -87,9 +88,9 @@
       </dt>
       <dd
         class="w-min cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
-        @click="useDiceRoller(initiativeBonus, { 
+        @click="useDiceRoller(initiativeBonus, {
           title: 'Initiative',
-          subtitle: monster.name 
+          subtitle: monster.name
         })"
       >
         {{ useFormatModifier(initiativeBonus) }}
