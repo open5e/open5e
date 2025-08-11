@@ -30,14 +30,14 @@
         />
         <button
           v-if="partyRows.length > 1"
-          class="rounded bg-blood px-1 py-0.5 text-sm font-medium text-white hover:text-black dark:hover:text-fog"
+          class="rounded bg-red px-1 py-0.5 text-sm font-medium text-white hover:text-black dark:hover:text-fog"
           @click="removePartyRow(index)"
         >
           <Icon name="heroicons:minus" />
         </button>
       </div>
       <button
-        class="rounded bg-blood px-1 py-0.5 text-sm font-medium text-white hover:text-black dark:hover:text-fog"
+        class="rounded bg-red px-1 py-0.5 text-sm font-medium text-white hover:text-black dark:hover:text-fog"
         @click="addPartyRow"
       >
         <Icon name="heroicons:plus" /> Add

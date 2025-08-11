@@ -4,7 +4,7 @@
       <ThemeSwitcher />
     </li>
 
-    <li class="hidden sm:block">
+    <li>
       <ToolButtonEncounterBuilder 
         @btn-clicked="$emit('encounter-builder-clicked')"
       />

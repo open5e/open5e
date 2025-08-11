@@ -48,16 +48,16 @@
         <PageNotifications class="z-60" />
 
         <!-- Main content -->
-          <nuxt-page
-            class="main-content pt-auto ml-0 mr-1 shrink-0 grow  p-4 text-darkness dark:text-white sm:px-8"
-          />
+        <nuxt-page
+          class="main-content pt-auto ml-0 mr-1 shrink-0 grow  p-4 text-darkness dark:text-white sm:px-8"
+        />
       </div>
 
       <!-- Right sidebar -->
       <div v-if="!isEncounterVisible" class="z-50 mr-2 bg-white dark:bg-darkness">
         <ToolBar @encounter-builder-clicked="toggleEncounter"/>
       </div>
-      <div v-else class="top-0 block w-80 flex-initial shrink-0 border-l">
+      <div v-else class="top-0 z-50 mr-[17rem] mt-1 block h-min w-80 flex-initial shrink-0 sm:mr-1 sm:border-l">
         <EncounterBuilder @hide-encounter="isEncounterVisible = false" />
       </div>
 
