@@ -2,19 +2,10 @@
   <!-- BACKGROUND (visible behind page content at wide screen widths)       -->
   <!-- bg-radial-gradiant arbitrary classes generate the dotted bg pattern  -->
   <div
-    class="grid justify-center overflow-hidden bg-fog bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
+    class="grid min-h-screen justify-center overflow-hidden bg-white bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
   >
-
-    <!-- Main layout container: inc dynamic margins for collapsing sidebars --
-      -- at small screen widths.                                            -->
-    <!-- <div
-      class="grid h-full min-h-screen max-w-[1440px] grid-flow-col grid-cols-[14rem_1fr_3.5rem] transition-all sm:mx-0 sm:w-screen sm:overflow-y-auto sm:transition-none"
-      :class="`
-        ${isNavbarVisible ? 'ml-0 -mr-[18rem]' : '-ml-56'} 
-        ${isToolbarVisible ? 'mr-14 -pl-16': '-mr-16'}`"
-    > -->
     <div
-      class="flex h-full min-h-screen max-w-[1440px] transition-all sm:mx-0 sm:w-screen sm:overflow-y-auto sm:transition-none"
+      class="flex h-full max-w-[1440px] transition-all sm:mx-0 sm:w-screen sm:overflow-y-auto sm:transition-none"
       :class="`
         ${isNavbarVisible ? 'ml-0 -mr-[18rem]' : '-ml-56'} 
         ${isToolbarVisible ? 'mr-14 -pl-16': '-mr-16'}`"
@@ -54,10 +45,10 @@
       </div>
 
       <!-- Right sidebar -->
-      <div v-if="!isEncounterVisible" class="z-50 mr-2 bg-white dark:bg-darkness">
+      <div v-if="!isEncounterVisible" class="z-50 mr-2 bg-white dark:bg-darkness sm:h-auto">
         <ToolBar @encounter-builder-clicked="toggleEncounter"/>
       </div>
-      <div v-else class="top-0 z-50 mr-[17rem] mt-1 block h-min w-80 flex-initial shrink-0 sm:mr-1 sm:border-l">
+      <div v-else class="top-0 z-50 mr-[17rem] mt-1 block h-min w-80 flex-initial shrink-0 border-granite sm:mr-1 sm:border-l">
         <EncounterBuilder @hide-encounter="isEncounterVisible = false" />
       </div>
 

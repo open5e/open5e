@@ -9,7 +9,7 @@
     </NuxtLink>
 
     <SearchBar class="ml-2 mt-2 sm:my-4" @on-search="$emit('on-link-clicked')" />
-    <ul v-for="{ sectionTitle, pages } in paths" :key="sectionTitle" class="grid gap-2 border-granite sm:border-r">
+    <ul v-for="{ sectionTitle, pages } in paths" :key="sectionTitle" class="grid border-granite sm:gap-2 sm:border-r">
       <p class="mx-4 text-sm font-bold">{{ sectionTitle }}</p>
       <li 
         v-for="{ title, path, icon } in pages" :key="title"

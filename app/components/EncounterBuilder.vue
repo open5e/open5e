@@ -1,12 +1,12 @@
 <template>
-  <div class="relative mx-2 rounded-lg bg-white p-4 dark:bg-gray-800 dark:text-white">
+  <div class="relative rounded-lg bg-white p-4 dark:bg-darkness dark:text-white">
     <!-- Menu Header -->
     <div class=" mb-4 flex items-center justify-between">
       <h2 class="mt-0 inline-block text-xl font-bold">
         <Icon name="game-icons:crossed-swords" /> Encounter Builder
       </h2>
       <button
-        class="absolute right-0 top-1 flex size-10 items-center justify-center rounded-full bg-red text-lg text-white hover:bg-red-300"
+        class="absolute right-2 top-2 flex size-10 items-center justify-center rounded-full bg-red text-lg text-white hover:bg-red-300"
         @click="$emit('hide-encounter')"
       >
         <span class="sr-only">Close Encounter Builder Button</span>
@@ -14,7 +14,7 @@
       </button>
     </div>
     
-    <div class="mb-2 border-b border-gray-200 pb-4 dark:border-gray-700">
+    <div class="mb-2 border-b border-gray-200 pb-4 dark:border-granite">
       <EncounterBuilderPartyBuilder />
     </div>
 
