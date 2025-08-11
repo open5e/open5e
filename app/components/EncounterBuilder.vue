@@ -6,7 +6,7 @@
         <Icon name="game-icons:crossed-swords" /> Encounter Builder
       </h2>
       <button
-        class="absolute right-2 top-2 flex size-10 items-center justify-center rounded-full bg-red text-lg text-white hover:bg-red-300"
+        class="absolute right-2 top-1 flex size-10 items-center justify-center rounded-full bg-red text-lg text-white hover:bg-red-300"
         @click="$emit('hide-encounter')"
       >
         <span class="sr-only">Close Encounter Builder Button</span>
