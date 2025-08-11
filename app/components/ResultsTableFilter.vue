@@ -50,7 +50,7 @@
         :name="search?.name"
         placeholder="Search..."
         :value="filterState.fieldsState.value[search.filterField]"
-        class="w-full rounded-full border bg-transparent p-1 pl-8 outline-none transition-colors focus:w-full focus:min-w-40 focus:bg-fog dark:focus:bg-basalt"
+        class="w-full rounded-full border border-granite bg-transparent p-1 pl-8 outline-none transition-colors focus:w-full focus:min-w-40 focus:bg-fog dark:focus:bg-basalt"
         @input="
           filterState.updateField(
             search?.filterField,

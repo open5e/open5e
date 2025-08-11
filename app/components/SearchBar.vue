@@ -23,7 +23,7 @@
     </div>
     <input
       v-model="query"
-      class="w-full rounded-full border border-granite p-2 placeholder:font-semibold focus:bg-fog  focus:outline-none dark:bg-darkness dark:focus:bg-charcoal "
+      class="w-full rounded-full border border-granite p-2 placeholder:font-semibold focus:bg-fog  focus:outline-none dark:bg-darkness dark:focus:bg-charcoal"
       placeholder="Search..."
       @keyup.enter="doSearch(query)"
     />
