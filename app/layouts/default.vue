@@ -25,7 +25,7 @@
       </aside>
 
       <!-- Page central column -->
-      <div class="content-wrapper w-screen grow overflow-y-auto bg-white text-darkness dark:bg-darkness dark:text-white sm:w-full">
+      <div class="content-wrapper w-screen grow overflow-y-auto overflow-x-hidden bg-white text-darkness dark:bg-darkness dark:text-white sm:w-full">
 
         <!-- Site Header: Mobile -->
         <header class="flex justify-between sm:hidden">
@@ -48,17 +48,9 @@
         <PageNotifications class="z-60" />
 
         <!-- Main content -->
-        <div class="flex grow">
           <nuxt-page
-            class="main-content pt-auto ml-0 mr-1 shrink-0 grow p-4 text-darkness dark:text-white sm:px-8"
+            class="main-content pt-auto ml-0 mr-1 shrink-0 grow  p-4 text-darkness dark:text-white sm:px-8"
           />
-          <div
-            v-if="isEncounterVisible"
-            class="top-0 block w-80 flex-initial shrink-0 border-l"
-          >
-            <EncounterBuilder @hide-encounter="isEncounterVisible = false" />
-          </div>
-        </div>
       </div>
 
       <!-- Right sidebar -->
