@@ -39,7 +39,7 @@ html {
 }
 
 h1 {
-  @apply text-3xl text-blood dark:text-white;
+  @apply text-3xl text-red dark:text-white;
 }
 
 h2 {

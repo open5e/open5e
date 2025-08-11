@@ -5,7 +5,7 @@
       :on-click-handler="() => isOpen = !isOpen"
       title="Report an Issue"
     >
-      <Icon name="majesticons:exclamation-circle-line" class="size-7" />
+      <Icon name="majesticons:exclamation-circle-line" class="size-6" />
     </ToolButton>
 
     <ModalReportIssue

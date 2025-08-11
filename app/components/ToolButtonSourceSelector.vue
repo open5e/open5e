@@ -4,7 +4,7 @@
     :on-click-handler="() => showModal = true"
     :title="`Select Sources`"
   >
-    <Icon name="majesticons:book-open-line" class="z-20 size-7"/>
+    <Icon name="majesticons:book-open-line" class="z-20 size-6"/>
     <p
       v-if="sourceCount" 
       class="absolute -bottom-3 z-30 text-nowrap px-0.5 py-0 text-xs text-black  dark:text-white"

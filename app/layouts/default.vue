@@ -11,7 +11,7 @@
       class="grid h-full min-h-screen max-w-[1440px] grid-flow-col grid-cols-[14rem_1fr_3.5rem] transition-all sm:mx-0 sm:w-screen sm:overflow-y-auto sm:transition-none"
       :class="`
         ${isNavbarVisible ? 'ml-0 -mr-[18rem]' : '-ml-56'} 
-        ${isToolbarVisible ? '-mr-2 -pl-16': '-mr-16'}`"
+        ${isToolbarVisible ? 'mr-14 -pl-16': '-mr-16'}`"
     >
       <!-- Left sidebar -->
       <aside class="z-50 flex h-full w-56 flex-col overflow-y-auto  text-white dark:bg-charcoal">
@@ -19,9 +19,9 @@
       </aside>
 
       <!-- Page central column -->
-      <div class="content-wrapper w-full grow overflow-y-auto bg-white text-darkness dark:bg-darkness dark:text-white sm:w-full">
+      <div class="content-wrapper w-screen grow overflow-y-auto bg-white text-darkness dark:bg-darkness dark:text-white sm:w-full">
 
-        <!-- Site Header -->
+        <!-- Site Header: Mobile -->
         <header class="flex justify-between sm:hidden">
           <SidebarToggle class="m-2 flex-none" @click="toggleSidebar" />
 
@@ -32,7 +32,7 @@
             Open5e
           </NuxtLink>
 
-          <ToolBarToggle class="m-2 flex-none" @btn-clicked="toggleToolbar" />
+          <ToolBarToggle class="my-2 mr-4 flex-none" @btn-clicked="toggleToolbar" />
         </header>
         
         <div class="-mt-3 grid h-min w-full justify-center gap-1 px-2 text-lg sm:m-4 sm:justify-start sm:pl-4">
@@ -56,10 +56,8 @@
       </div>
 
       <!-- Right sidebar -->
-      <div 
-        class="z-50 bg-white dark:bg-darkness"
-      >
-        <ToolBar @encounter-builder-clicked="showEncounter"/>
+      <div class="z-50 bg-white dark:bg-darkness" @click="hideSidebars">
+        <ToolBar @encounter-builder-clicked="toggleEncounter"/>
       </div>
 
     </div>
@@ -91,12 +89,13 @@ const toggleToolbar = () => (isToolbarVisible.value = !isToolbarVisible.value);
 const isNavbarVisible = ref(false);
 const toggleSidebar = () => (isNavbarVisible.value = !isNavbarVisible.value);
 const isEncounterVisible = ref(false);
+const toggleEncounter = () => (isEncounterVisible.value = !isEncounterVisible.value);
 const hideSidebars = () => {
   isNavbarVisible.value = false;
   isToolbarVisible.value = false;
   isEncounterVisible.value = false;
 };
-const showEncounter = () => (isEncounterVisible.value = true);
+
 </script>
 
 <style>
