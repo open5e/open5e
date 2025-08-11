@@ -1,16 +1,19 @@
 <template>
-  <div class="mx-2 rounded-lg bg-white p-4 dark:bg-gray-800">
+  <div class="mx-2 rounded-lg bg-white p-4 dark:bg-gray-800 dark:text-white">
+    <!-- Menu Header -->
     <div class="mb-4 flex items-center justify-between">
-      <h2 class="my-2 inline-block text-xl font-bold">
+      <h2 class="-mt-2 inline-block text-xl font-bold">
         <Icon name="game-icons:crossed-swords" /> Encounter Builder
       </h2>
       <button
-        class="flex size-8 items-center justify-center rounded-full bg-fog hover:bg-smoke dark:bg-gray-900 hover:dark:bg-granite"
+        class="-mr-3 -mt-2 flex size-10 items-center justify-center rounded-full bg-red text-lg text-white hover:bg-red-300"
         @click="$emit('hide-encounter')"
       >
+        <span class="sr-only">Close Encounter Builder Button</span>
         <Icon name="heroicons:x-mark" />
       </button>
     </div>
+    
     <div class="mb-2 border-b border-gray-200 pb-4 dark:border-gray-700">
       <EncounterBuilderPartyBuilder />
     </div>

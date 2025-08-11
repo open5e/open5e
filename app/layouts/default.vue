@@ -7,14 +7,20 @@
 
     <!-- Main layout container: inc dynamic margins for collapsing sidebars --
       -- at small screen widths.                                            -->
-    <div
+    <!-- <div
       class="grid h-full min-h-screen max-w-[1440px] grid-flow-col grid-cols-[14rem_1fr_3.5rem] transition-all sm:mx-0 sm:w-screen sm:overflow-y-auto sm:transition-none"
+      :class="`
+        ${isNavbarVisible ? 'ml-0 -mr-[18rem]' : '-ml-56'} 
+        ${isToolbarVisible ? 'mr-14 -pl-16': '-mr-16'}`"
+    > -->
+    <div
+      class="flex h-full min-h-screen max-w-[1440px] transition-all sm:mx-0 sm:w-screen sm:overflow-y-auto sm:transition-none"
       :class="`
         ${isNavbarVisible ? 'ml-0 -mr-[18rem]' : '-ml-56'} 
         ${isToolbarVisible ? 'mr-14 -pl-16': '-mr-16'}`"
     >
       <!-- Left sidebar -->
-      <aside class="z-50 flex h-full w-56 flex-col overflow-y-auto  text-white dark:bg-charcoal">
+      <aside class="z-50 flex h-full w-56 shrink-0 grow-0 basis-56  flex-col overflow-y-auto text-white dark:bg-charcoal">
          <Navigation @on-link-clicked="hideSidebars" />
       </aside>
 
@@ -44,7 +50,7 @@
         <!-- Main content -->
         <div class="flex grow">
           <nuxt-page
-            class="main-content pt-auto ml-0 mr-1 grow p-4 text-darkness dark:text-white sm:px-8"
+            class="main-content pt-auto ml-0 mr-1 shrink-0 grow p-4 text-darkness dark:text-white sm:px-8"
           />
           <div
             v-if="isEncounterVisible"
@@ -56,8 +62,11 @@
       </div>
 
       <!-- Right sidebar -->
-      <div class="z-50 bg-white dark:bg-darkness" @click="hideSidebars">
+      <div v-if="!isEncounterVisible" class="z-50 mr-2 bg-white dark:bg-darkness">
         <ToolBar @encounter-builder-clicked="toggleEncounter"/>
+      </div>
+      <div v-else class="top-0 block w-80 flex-initial shrink-0 border-l">
+        <EncounterBuilder @hide-encounter="isEncounterVisible = false" />
       </div>
 
     </div>

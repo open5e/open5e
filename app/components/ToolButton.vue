@@ -1,7 +1,7 @@
 <template>
   <div class="group relative font-bold text-white">
     <button
-      class="group relative z-20 m-1 flex size-10 items-center justify-center rounded-full  bg-red text-lg group-hover:bg-red-300 "
+      class="group relative z-20 m-1 flex size-10 items-center justify-center rounded-full  bg-red text-lg group-hover:bg-red-300"
       @click="() => onClickHandler()"
     >
       <slot />
