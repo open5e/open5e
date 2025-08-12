@@ -168,8 +168,12 @@
 </template>
 
 <script setup>
-const props = defineProps({
-  documents: { type: Array, default: () => [] }
+
+// fetch full list of document sources
+const { data: documents } = useDocuments({
+  fields: ['key', 'name', 'publisher', 'gamesystem'].join(','),
+  publisher__fields: ['name', 'key'].join(','),
+  gamesystem__fields: ['name', 'key'].join(','),
 });
 
 const { sources, setSources, gameSystem, setGameSystem } = useSourcesList();
@@ -179,8 +183,9 @@ const closeModal = () => emit('close');
 
 // filter documents by the current game system
 const documentsInSystem = computed(() => {
-  if (!currentSystem.value) return props.documents;
-  return props.documents.filter((document) => {
+  if (!documents.value) return;
+  if (!currentSystem.value) return documents.value;
+  return documents.filter((document) => {
     return document.gamesystem.name === currentSystem.value;
   });
 });
@@ -204,7 +209,7 @@ const currentSystem = ref(gameSystem.value);
 
 // returns the names of all game systems present in API data
 const allGameSystems = computed(() => {
-  return props.documents.reduce((systems, document) => {
+  return documents.value.reduce((systems, document) => {
     if (!systems.includes(document.gamesystem.name))
       return [...systems, document.gamesystem.name];
     else return systems;
@@ -215,10 +220,10 @@ const allGameSystems = computed(() => {
 const onGameSystemChanged = (event) => {
   const newSystem = event.target.value;
   if (newSystem) {
-    selectedSources.value = props.documents
+    selectedSources.value = documents.value
     .filter(source => source.gamesystem.name === newSystem)
     .map(source => source.key);
-  } else selectedSources.value = props.documents.map(doc => doc.key);
+  } else selectedSources.value = documents.value.map(doc => doc.key);
   currentSystem.value = newSystem;
 };
 

@@ -22,13 +22,13 @@
           {{ mode === 'compact' ? 'Regular statblock' : 'Compact statblock' }}</button> -->
         <button
           v-if="monsterInEncounter"
-          class="flex h-8 items-center gap-2 rounded bg-blood px-3 py-1.5 text-sm font-medium text-white hover:bg-blood/80 lg:flex"
+          class="red-red flex h-8 items-center gap-2 rounded bg-red px-3 py-1.5 text-sm font-medium text-white hover:bg-red-300 lg:flex"
           @click="removeFromEncounter"
         >
           <Icon name="heroicons:minus" />
         </button>
         <button
-          class="rounded bg-blood px-2 py-1 text-sm font-medium text-white hover:bg-blood/80 dark:bg-blood dark:hover:bg-red-400"
+          class="h-8 rounded bg-red px-2 py-1 text-sm font-medium text-white hover:bg-red-300"
           data-testid="add-to-encounter"
           @click="addToEncounter"
         >

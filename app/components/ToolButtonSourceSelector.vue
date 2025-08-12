@@ -14,7 +14,6 @@
 
     <ModalSourceSelector 
       :show="showModal"
-      :documents="documents"
       @close="showModal = false"
     />
 
@@ -24,11 +23,7 @@
 <script setup>
 const showModal = ref(false);
 
-const { data: documents } = useDocuments({
-  fields: ['key', 'name', 'publisher', 'gamesystem'].join(','),
-  publisher__fields: ['name', 'key'].join(','),
-  gamesystem__fields: ['name', 'key'].join(','),
-});
+const { data: documents } = useDocuments({ fields: 'key' });
 
 const { sources } = useSourcesList();
 const sourceCount = computed(() => {

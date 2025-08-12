@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex w-full grow flex-col bg-white text-black dark:bg-darkness dark:text-white">
+  <nav class="flex w-full grow flex-col overflow-hidden bg-white text-black dark:bg-darkness dark:text-white">
     <NuxtLink
       to="/"
       class="hidden bg-red p-5 text-center font-serif text-3xl text-white hover:text-white sm:block"
@@ -8,13 +8,14 @@
       Open5e
     </NuxtLink>
 
-    <SearchBar class="ml-2 mt-2 sm:my-4" @on-search="$emit('on-link-clicked')" />
-    <ul v-for="{ sectionTitle, pages } in paths" :key="sectionTitle" class="grid border-granite sm:gap-2 sm:border-r">
-      <p class="mx-4 text-sm font-bold">{{ sectionTitle }}</p>
+    <SearchBar class="ml-2 mt-2" @on-search="$emit('on-link-clicked')" />
+
+    <ul v-for="{ sectionTitle, pages } in paths" :key="sectionTitle" class="grid border-granite p-0 sm:gap-2 sm:border-r">
+      <p class="mx-4 mt-2 text-sm font-bold">{{ sectionTitle }}</p>
       <li 
         v-for="{ title, path, icon } in pages" :key="title"
-        class="group flex items-center gap-2 rounded px-2 py-1 decoration-red transition-all hover:bg-fog hover:underline dark:hover:bg-charcoal"
-        :class="path.includes(activeBaseRoute) && activeBaseRoute !== '' ? 'ml-4' : ''"
+        class="group flex items-center gap-2 rounded px-2 py-1 transition-all hover:bg-fog hover:underline dark:hover:bg-charcoal"
+        :class="path.includes(activeBaseRoute) && activeBaseRoute !== '' ? 'pl-6' : ''"
       >
         <NuxtLink :to="path" class="inline-block w-full" @click="$emit('on-link-clicked')">
           <Icon :name="icon ?? ''" class="mx-4 size-8 text-red"/>
