@@ -12,7 +12,7 @@
 <template>
   <div class="relative">
     <button
-      class="absolute right-1 top-1 flex cursor-pointer items-center"
+      class="absolute right-1 top-1 z-20 flex cursor-pointer items-center"
       @click="doSearch(query)"
     >
       <Icon
@@ -22,18 +22,18 @@
       />
     </button>
 
-
     <button 
-      class="absolute right-10 top-1 flex items-center rounded-full border border-granite shadow hover:bg-smoke dark:border-white dark:hover:bg-charcoal"
+      class="absolute right-10 top-1 flex items-center text-granite hover:text-black dark:hover:text-white"
       @click="showSourcesModal = true"
     >
-      <Icon name="majesticons:book-open-line" class="size-8 rounded-full p-1 text-black dark:text-white" />
+      <Icon name="ion:options" class="z-40 size-8 rounded-full bg-transparent p-1" />
+      <span class="absolute left-1 top-[1.625rem] z-10 size-6 rounded-full border border-granite bg-white p-[0.1rem] text-xs font-bold text-black dark:z-30 dark:bg-black dark:text-white">{{ sources.length }}</span>
     </button>
 
     <input
       v-model="query"
-      class="w-full rounded-full border border-granite p-2 shadow placeholder:pl-2 placeholder:font-semibold focus:bg-fog focus:outline-none dark:bg-darkness dark:focus:bg-charcoal"
-      placeholder="Search Open5e..."
+      class="z-10 w-full rounded-full border border-granite p-2 pl-4 shadow placeholder:text-sm placeholder:text-granite focus:bg-fog focus:outline-none dark:bg-darkness dark:focus:bg-charcoal"
+      placeholder="Search Sources..." 
       @keyup.enter="doSearch(query)"
     />
 
@@ -57,9 +57,5 @@ function doSearch(query) {
 }
 
 const showSourcesModal = ref(false);
-
+const { sources } = useSourcesList();
 </script>
-
-<style>
-
-</style>
