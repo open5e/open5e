@@ -11,6 +11,8 @@
 
 <template>
   <div class="relative">
+
+    <!-- Search Button -->
     <button
       class="absolute right-1 top-1 z-20 flex cursor-pointer items-center"
       @click="doSearch(query)"
@@ -22,12 +24,15 @@
       />
     </button>
 
+    <!-- Source Selector Button -->
     <button 
-      class="absolute right-10 top-1 flex items-center text-granite hover:text-black dark:hover:text-white"
+      class="group absolute right-10 top-1 flex items-center text-granite hover:text-black dark:hover:text-white"
       @click="showSourcesModal = true"
     >
       <Icon name="ion:options" class="z-40 size-8 rounded-full bg-transparent p-1" />
-      <span class="absolute left-1 top-[1.625rem] z-10 size-6 rounded-full border border-granite bg-white p-[0.1rem] text-xs font-bold text-black dark:z-30 dark:bg-black dark:text-white">{{ sources.length }}</span>
+      <span class="absolute right-0 top-7 z-10 hidden text-nowrap rounded-full border border-black bg-white px-4 py-[0.1rem] text-xs font-bold uppercase text-black group-hover:block dark:z-30 dark:border-white dark:bg-black dark:text-white">
+        {{ `Edit sources (${sources.length})` }}
+      </span>
     </button>
 
     <input
