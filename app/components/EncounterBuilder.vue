@@ -168,6 +168,7 @@
 </template>
 
 <script setup lang="ts">
+import EncounterBuilderMonsterSearch from '~/components/EncounterBuilderMonsterSearch.vue';
 import type { Monster } from '~/types/monster';
 
 // Prop included for testing purposes
