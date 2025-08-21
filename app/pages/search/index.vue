@@ -66,8 +66,6 @@
 </template>
 
 <script setup>
-import { computed } from 'vue';
-
 const searchText = useQueryParam('text');
 const { data } = useSearch(searchText);
 const { sources } = useSourcesList();

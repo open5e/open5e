@@ -17,8 +17,6 @@
 </script>
 
 <script setup>
-import { ref } from 'vue';
-
 const isOpen = ref(false);
 const formData = ref({});
 const status = ref('ready');

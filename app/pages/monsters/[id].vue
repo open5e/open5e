@@ -339,8 +339,6 @@
 </template>
 
 <script setup lang="ts">
-import { useEncounterStore } from '~/composables/useEncounter';
-
 const route = useRoute();
 const params = {
   environments__fields: 'name',
@@ -381,7 +379,7 @@ const actions = computed(() => {
 });
 
 // Converts SNAKE_CASE to Title Case, used for action type headers
-const snakeToTitleCase = input =>
+const snakeToTitleCase = (input: string) =>
   input
     .toLowerCase()
     .split('_')
