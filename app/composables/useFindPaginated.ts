@@ -20,7 +20,7 @@ export const useFindPaginated = (options: {
   sortByProperty?: MaybeRef<string>;
   isSortDescending?: MaybeRef<boolean>;
   filter?: MaybeRef<Record<string, never>>;
-  params?: MaybeRef<Record<string, never>>;
+  params?: MaybeRef<Record<string, string | number | boolean>>;
 }) => {
   const {
     endpoint,
