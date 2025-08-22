@@ -4,7 +4,10 @@ import { navigateTo, useRoute, useRuntimeConfig } from 'nuxt/app';
 import type { MaybeRef, Ref } from 'vue';
 import { computed, unref } from 'vue';
 import { useSourcesList } from './sources';
+import type { components } from '~/types/open5e-api';
 
+// Extract schemas from OpenAPI components
+type Schemas = components['schemas'];
 
 export const API_ENDPOINTS = {
   backgrounds: 'v2/backgrounds/',
@@ -20,6 +23,20 @@ export const API_ENDPOINTS = {
   rules: 'v2/rulesets/',
   equipment: 'v2/items/',
 } as const;
+
+export interface EndpointToFindOneTypeMap {
+  'v2/backgrounds/': Schemas['Background'];
+  'v2/classes/': Schemas['CharacterClass'];
+  'v2/conditions/': Schemas['Condition'];
+  'v2/documents/': Schemas['Document'];
+  'v2/feats/': Schemas['Feat'];
+  'v2/items/': Schemas['Item'];
+  'v2/creatures/': Schemas['Creature'];
+  'v2/search/': Schemas['SearchResult'];
+  'v2/species/': Schemas['Species'];
+  'v2/spells/': Schemas['Spell'];
+  'v2/rulesets/': Schemas['RuleSet'];
+}
 
 /** Provides the base functions to easily fetch data from the Open5e API. */
 export const useAPI = () => {
@@ -86,14 +103,17 @@ export const useAPI = () => {
 
       return data;
     },
-    get: async (...parts: string[]) => {
-      const route = parts.join('');
+    get: async <T extends keyof EndpointToFindOneTypeMap>(
+      endpoint: T,
+      ...parts: string[]
+    ): Promise<EndpointToFindOneTypeMap[T]> => {
+      const route = [endpoint, ...parts].join('');
       const res = await api.get(route).catch(() => {
         // redirect to /search if API route returns nothing
         const searchTerm = parts.filter(exists => exists).slice(-1)[0];
         navigateTo(`/search?text=${searchTerm}`);
       });
-      return res?.data as Record<string, unknown>;
+      return res?.data;
     },
   };
 };
