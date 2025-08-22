@@ -2,7 +2,7 @@ import { test, expect } from 'vitest';
 import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
 import ConditionPage from '~/pages/feats/[id].vue';
 
-const { data: feat } = useFindOne('v2/feats', 'srd_grappler');
+const { data: feat } = useFindOne(API_ENDPOINTS.feats, 'srd_grappler');
 
 const page = await mountSuspended(ConditionPage);
 

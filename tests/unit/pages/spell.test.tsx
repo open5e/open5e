@@ -3,8 +3,8 @@ import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
 import SpellPage from '~/pages/spells/[id].vue';
 
 const { data: spell } = useFindOne(
-  'v2/spells',
-  'srd_adamantine-armor-breastplate',
+  API_ENDPOINTS.spells,
+  'srd_magic-missile',
 );
 
 const page = await mountSuspended(SpellPage);
