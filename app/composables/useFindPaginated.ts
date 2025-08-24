@@ -8,11 +8,6 @@ import {
   useQuery,
   useQueryClient,
 } from '@tanstack/vue-query';
-import type { MaybeRef } from 'vue';
-import { computed, ref, unref, watch } from 'vue';
-import { useSourcesList } from './sources';
-import { useAPI } from './api';
-import type { EndpointToPaginatedTypeMap } from './api';
 
 export function useFindPaginated<T extends keyof EndpointToPaginatedTypeMap>(options: {
   endpoint: MaybeRef<T>;
