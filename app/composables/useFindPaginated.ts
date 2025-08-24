@@ -11,17 +11,18 @@ import {
 import type { MaybeRef } from 'vue';
 import { computed, ref, unref, watch } from 'vue';
 import { useSourcesList } from './sources';
-import { isV1Endpoint, useAPI } from './api';
+import { useAPI } from './api';
+import type { EndpointToPaginatedTypeMap } from './api';
 
-export const useFindPaginated = (options: {
-  endpoint: MaybeRef<string>;
+export function useFindPaginated<T extends keyof EndpointToPaginatedTypeMap>(options: {
+  endpoint: MaybeRef<T>;
   itemsPerPage?: MaybeRef<number>;
   initialPage?: MaybeRef<number>;
   sortByProperty?: MaybeRef<string>;
   isSortDescending?: MaybeRef<boolean>;
-  filter?: MaybeRef<Record<string, never>>;
+  filter?: MaybeRef<Record<string, string | number | boolean>>;
   params?: MaybeRef<Record<string, string | number | boolean>>;
-}) => {
+}) {
   const {
     endpoint,
     itemsPerPage = 50,
@@ -31,33 +32,32 @@ export const useFindPaginated = (options: {
     filter = {},
     params = {},
   } = options;
+
   const pageNo = ref(unref(initialPage));
   const { findPaginated } = useAPI();
   const queryClient = useQueryClient();
 
-  // map V2 source keys to V1 source slugs if necessary
-  const { sources, sourcesAPIVersion1 } = useSourcesList();
-  const sourcesForAPIVersion = isV1Endpoint(unref(endpoint))
-    ? sourcesAPIVersion1
-    : sources;
+  const { sources } = useSourcesList();
+
+  // query key controls caching of pages
+  const queryKey = [
+    'findPaginated',
+    endpoint,
+    sources,
+    itemsPerPage,
+    sortByProperty,
+    isSortDescending,
+    filter,
+    params,
+  ];
 
   const { data, isFetching, error } = useQuery({
-    queryKey: [
-      'findPaginated',
-      endpoint,
-      sourcesForAPIVersion,
-      itemsPerPage,
-      pageNo,
-      sortByProperty,
-      isSortDescending,
-      filter,
-      params,
-    ],
+    queryKey: [...queryKey, pageNo],
     placeholderData: keepPreviousData,
     queryFn: () =>
       findPaginated({
         endpoint: unref(endpoint),
-        sources: unref(sourcesForAPIVersion),
+        sources: unref(sources),
         pageNo: unref(pageNo),
         sortByProperty: unref(sortByProperty),
         isSortDescending: unref(isSortDescending),
@@ -75,21 +75,11 @@ export const useFindPaginated = (options: {
     if (data.value && pageNo.value < lastPageNo.value) {
       const nextPageNo = pageNo.value + 1;
       queryClient.prefetchQuery({
-        queryKey: [
-          'findPaginated',
-          endpoint,
-          sourcesForAPIVersion,
-          itemsPerPage,
-          nextPageNo,
-          sortByProperty,
-          isSortDescending,
-          filter,
-          params,
-        ],
+        queryKey: [...queryKey, nextPageNo],
         queryFn: () =>
           findPaginated({
             endpoint: unref(endpoint),
-            sources: unref(sourcesForAPIVersion),
+            sources: unref(sources),
             pageNo: nextPageNo,
             sortByProperty: unref(sortByProperty),
             isSortDescending: unref(isSortDescending),
@@ -100,30 +90,14 @@ export const useFindPaginated = (options: {
     }
   });
 
-  const nextPage = () => {
-    pageNo.value++;
-  };
-
-  const prevPage = () => {
-    if (pageNo.value > 1) {
-      pageNo.value--;
-    }
-  };
-
-  const firstPage = () => {
-    pageNo.value = 1;
-  };
-
-  const lastPage = () => {
-    if (data.value) {
-      pageNo.value = lastPageNo.value;
-    }
-  };
+  // pagination controls
+  const nextPage = () => pageNo.value++;
+  const prevPage = () => pageNo.value--;
+  const firstPage = () => pageNo.value = 1;
+  const lastPage = () => pageNo.value = lastPageNo.value ?? pageNo.value;
 
   // Move to the first page when the filter changes, to avoid showing an empty page due to fewer results
-  watch(filter, () => {
-    firstPage();
-  });
+  watch(filter, () => firstPage());
 
   return {
     data,

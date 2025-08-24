@@ -38,6 +38,27 @@ export interface EndpointToFindOneTypeMap {
   'v2/rulesets/': Schemas['RuleSet'];
 }
 
+export interface EndpointToPaginatedTypeMap {
+  'v2/backgrounds/': Schemas['PaginatedBackgroundList'];
+  'v2/classes/': Schemas['PaginatedCharacterClassList'];
+  'v2/conditions/': Schemas['PaginatedConditionList'];
+  'v2/documents/': Schemas['PaginatedDocumentList'];
+  'v2/feats/': Schemas['PaginatedFeatList'];
+  'v2/items/': Schemas['PaginatedItemList'];
+  'v2/creatures/': Schemas['PaginatedCreatureList'];
+  'v2/search/': Schemas['PaginatedSearchResultList'];
+  'v2/species/': Schemas['PaginatedSpeciesList'];
+  'v2/spells/': Schemas['PaginatedSpellList'];
+  'v2/rulesets/': Schemas['PaginatedRuleSetList'];
+}
+
+// utility type to extract the item type from paginated responses
+export type ExtractItemType<T> = T extends { results: (infer U)[] } ? U : never;
+
+// convenience type to get item type from endpoint key
+export type ExtractPaginatedItemType<T extends keyof EndpointToPaginatedTypeMap> = 
+  ExtractItemType<EndpointToPaginatedTypeMap[T]>;
+
 /** Provides the base functions to easily fetch data from the Open5e API. */
 export const useAPI = () => {
   const API_URL = useRuntimeConfig().public.apiUrl;
@@ -65,15 +86,15 @@ export const useAPI = () => {
 
       return res.data.results as Record<string, unknown>[];
     },
-    findPaginated: async <T = Record<string, unknown>> (options: {
-      endpoint: string;
+    findPaginated: async <T extends keyof EndpointToPaginatedTypeMap> (options: {
+      endpoint: T;
       sources: string[];
       pageNo?: number;
       itemsPerPage?: number;
       sortByProperty?: string;
       isSortDescending?: boolean;
       queryParams?: Record<string, unknown>;
-    }) => {
+    }): Promise<EndpointToPaginatedTypeMap[T]> => {
       const {
         endpoint,
         sources,
@@ -93,15 +114,7 @@ export const useAPI = () => {
           ...queryParams,
         },
       });
-
-      const data = res.data as {
-        count: number;
-        results: T[];
-        next: string | null;
-        previous: string | null;
-      };
-
-      return data;
+      return res?.data;
     },
     get: async <T extends keyof EndpointToFindOneTypeMap>(
       endpoint: T,
@@ -124,34 +137,14 @@ export const useFindMany = (
 ) => {
   const { findMany } = useAPI();
 
-  // API V1 & V2 use different PKs for sources. Select the correct one.
-  const { sources, sourcesAPIVersion1 } = useSourcesList();
-  const sourcesForAPIVersion = isV1Endpoint(unref(endpoint))
-    ? sourcesAPIVersion1
-    : sources;
+  const { sources } = useSourcesList();
 
   return useQuery({
-    queryKey: ['findMany', endpoint, sourcesForAPIVersion, params],
+    queryKey: ['findMany', endpoint, sources, params],
     queryFn: () =>
       unref(
-        findMany(unref(endpoint), unref(sourcesForAPIVersion), unref(params)),
+        findMany(unref(endpoint), unref(sources), unref(params)),
       ),
-  });
-};
-
-export const useFindByLink = (link: MaybeRef<string>) => {
-  const { get } = useAPI();
-
-  return useQuery({
-    queryKey: ['findByLink', link],
-    queryFn: async () => {
-      const url = new URL(unref(link));
-      const pathParts = url.pathname.split('/').filter(Boolean);
-      const endpoint = pathParts.slice(0, 2).join('/');
-      const objectId = pathParts[2];
-
-      return get(endpoint, objectId);
-    },
   });
 };
 
@@ -179,7 +172,3 @@ export const useSearch = (queryRef: Ref<string>) => {
 
 export const useQueryParam = (paramName: string) =>
   computed(() => useRoute().query[paramName]);
-
-export function isV1Endpoint(endpoint: string) {
-  return endpoint.includes('v1/');
-}
