@@ -36,8 +36,18 @@ export function useFindPaginated<T extends keyof EndpointToPaginatedTypeMap>(opt
   const pageNo = ref(unref(initialPage));
   const { findPaginated } = useAPI();
   const queryClient = useQueryClient();
-
   const { sources } = useSourcesList();
+
+  // query parameters generator helper function
+  const createQueryParams = (targetPageNo: number) => ({
+    endpoint: unref(endpoint),
+    sources: unref(sources),
+    pageNo: targetPageNo,
+    sortByProperty: unref(sortByProperty),
+    isSortDescending: unref(isSortDescending),
+    itemsPerPage: unref(itemsPerPage),
+    queryParams: { ...unref(params), ...unref(filter) },
+  });
 
   // query key controls caching of pages
   const queryKey = [
@@ -54,16 +64,7 @@ export function useFindPaginated<T extends keyof EndpointToPaginatedTypeMap>(opt
   const { data, isFetching, error } = useQuery({
     queryKey: [...queryKey, pageNo],
     placeholderData: keepPreviousData,
-    queryFn: () =>
-      findPaginated({
-        endpoint: unref(endpoint),
-        sources: unref(sources),
-        pageNo: unref(pageNo),
-        sortByProperty: unref(sortByProperty),
-        isSortDescending: unref(isSortDescending),
-        itemsPerPage: unref(itemsPerPage),
-        queryParams: { ...unref(params), ...unref(filter) },
-      }),
+    queryFn: () => findPaginated(createQueryParams(unref(pageNo))),
   });
 
   const lastPageNo = computed(() => {
@@ -72,23 +73,13 @@ export function useFindPaginated<T extends keyof EndpointToPaginatedTypeMap>(opt
 
   // Prefetch next page when data changes
   watch(data, () => {
-    if (data.value && pageNo.value < lastPageNo.value) {
-      const nextPageNo = pageNo.value + 1;
-      queryClient.prefetchQuery({
-        queryKey: [...queryKey, nextPageNo],
-        queryFn: () =>
-          findPaginated({
-            endpoint: unref(endpoint),
-            sources: unref(sources),
-            pageNo: nextPageNo,
-            sortByProperty: unref(sortByProperty),
-            isSortDescending: unref(isSortDescending),
-            itemsPerPage: unref(itemsPerPage),
-            queryParams: { ...unref(params), ...unref(filter) },
-          }),
-      });
-    }
-  });
+    if (!data.value || pageNo.value === lastPageNo.value ) return;
+    const nextPageNo = pageNo.value + 1;
+    queryClient.prefetchQuery({
+      queryKey: [...queryKey, nextPageNo],
+      queryFn: () => findPaginated(createQueryParams(unref(nextPageNo))),
+    });
+});
 
   // pagination controls
   const nextPage = () => pageNo.value++;
