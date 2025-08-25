@@ -42,15 +42,15 @@
           />
         </tr>
       </thead>
-      <tbody v-if="results && results.length > 0">
+      <tbody v-if="data && data.length > 0">
         <ResultsTableRow
-          v-for="item in results"
+          v-for="item in data"
           :key="item.key"
           :data="item"
           :cols="cols"
         />
       </tbody>
-      <tbody v-else-if="results">
+      <tbody v-else-if="data">
         <tr>
           <td>No results match your search.</td>
         </tr>
@@ -64,42 +64,30 @@
   </div>
 </template>
 
-<script setup lang="ts">
-
-// infer type from `data` prop, but declare that the `key` field exists
-type APIResults = EndpointToFindOneTypeMap[keyof EndpointToFindOneTypeMap] & { key: string; };
+<script setup lang="ts" generic="T extends Open5eData">
+import type { Open5eData } from '@/types';
 
 // generic props interface that works with any API endpoint
-interface ResultsTableProps<T extends APIResults = APIResults> {
-  /** The paginated API response data */
-  data?: T[] | null
-  /** Array of column definitions */
-  cols: TableColumn<T>[]
-  /** The current sort field */
-  sortBy?: string
-  /** Whether sorting is in descending order */
-  isSortDescending?: boolean
-  /** Loading state */
-  isLoading?: boolean
-  /** Error state */
-  error?: Error | null
-}
+interface ResultsTableProps<T extends Open5eData> {
+  data?: T[] | null           // API data (paginated)
+  cols: TableColumn<T>[]      // column definitions
+  sortBy?: string             // column to sort results by
+  isSortDescending?: boolean  // sort direction
+  isLoading?: boolean         // load state
+  error?: Error | null        // error state
+};
 
 // type interface for the `cols` prop
-interface TableColumn<T extends APIResults = APIResults> {
-  /** The name to display in the column header */
+interface TableColumn<T extends Open5eData> {
   displayName: string;
-  /** Function to extract/transform the value to display */
   value: (data: T) => string | number;
-  /** The field name used for sorting (optional) */
   sortValue?: string;
-  /** Function to generate a link for this cell (optional) */
   link?: (data: T) => string;
-  /** Whether this column has lower priority in responsive layouts */
   isLeastPriority?: boolean;
 };
 
-const props = withDefaults(defineProps<ResultsTableProps>(), {
+// define component props using inferred types
+withDefaults(defineProps<ResultsTableProps<T>>(), {
   data: null,
   sortBy: 'name',
   isSortDescending: false,
@@ -108,11 +96,6 @@ const props = withDefaults(defineProps<ResultsTableProps>(), {
 });
 
 const emit = defineEmits(['sort']);
-
-const results = computed(() => {
-  if (!props.data || typeof props.data !== 'object') return [];
-  return props.data;
-});
 
 const onSort = (sortValue?: string) => {
   if (!sortValue) emit('sort', sortValue);
