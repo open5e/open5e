@@ -18,6 +18,7 @@ export function useFindPaginated<T extends keyof EndpointToPaginatedTypeMap>(opt
   filter?: MaybeRef<Record<string, string | number | boolean>>;
   params?: MaybeRef<Record<string, string | number | boolean>>;
 }) {
+
   const {
     endpoint,
     itemsPerPage = 50,

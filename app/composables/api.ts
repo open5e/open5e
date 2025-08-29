@@ -22,6 +22,7 @@ export const API_ENDPOINTS = {
   spells: 'v2/spells/',
   rules: 'v2/rulesets/',
   equipment: 'v2/items/',
+  licenses: 'v2/licenses/',
 } as const;
 
 export interface EndpointToFindOneTypeMap {

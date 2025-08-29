@@ -31,7 +31,7 @@
         </dd>
       </div>
     </dl>
-    <ul v-if="subspecies.length > 0">
+    <ul v-if="subspecies?.length > 0">
       <h2>Sub-species</h2>
       <li
         v-for="item in subspecies"
@@ -53,7 +53,7 @@
         />
         <dl>
           <div
-            v-for="trait in species.traits"
+            v-for="trait in item.traits"
             :key="trait.name"
             class="my-2"
           >
