@@ -10,16 +10,6 @@
       </h1>
 
       <div class="flex flex-none items-start gap-2">
-        <!-- <button           class="flex items-center gap-1 rounded-md p-1 text-xs text-blood outline outline-1 outline-blood hover:bg-blood hover:text-white"
-          @click="toggleMode()">
-          <icon
-            :name="
-              mode === 'compact'
-                ? 'heroicons:arrows-pointing-out'
-                : 'heroicons:arrows-pointing-in'
-            "
-          />
-          {{ mode === 'compact' ? 'Regular statblock' : 'Compact statblock' }}</button> -->
         <button
           v-if="monsterInEncounter"
           class="red-red flex h-8 items-center gap-2 rounded bg-red px-3 py-1.5 text-sm font-medium text-white hover:bg-red-300 lg:flex"
@@ -38,7 +28,7 @@
     </div>
 
     <img
-      v-if="mode !== 'compact' && monster.img_main"
+      v-if="monster.img_main"
       :src="monster.img_main"
       class="img-main"
     />
@@ -323,24 +313,12 @@
         <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
       </a>
     </p>
-    <p class="text-sm italic">
-      Compact Statblock:
-      <nuxt-link
-        tag="a"
-        :params="{ id: monster.slug }"
-        :to="`/monsters/compact/${monster.slug}`"
-        :prefetch="false"
-      >
-        {{ monster.name }}
-      </nuxt-link>
-    </p>
   </main>
 </template>
 
 <script setup lang="ts">
 import { useEncounterStore } from '~/composables/useEncounter';
 
-const route = useRoute();
 const params = {
   environments__fields: 'name',
   document__fields: 'name,key,permalink',
@@ -440,23 +418,6 @@ const resistancesAndVulnerabilities = computed(() => {
     ...(conditionImmune && { 'Condition Immunities': conditionImmune }),
   };
 });
-
-const mode = ref(route.query.mode || 'normal');
-// function toggleMode() {
-//   switch (mode.value) {
-//     case 'compact':
-//       mode.value = 'normal';
-//       break;
-//     default:
-//       mode.value = 'compact';
-//       break;
-//   }
-
-//   navigateTo({
-//     path: `/monsters/${route.params.id}`,
-//     query: mode.value === 'compact' ? { mode: 'compact' } : null,
-//   });
-// }
 
 const encounterStore = useEncounterStore();
 
