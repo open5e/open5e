@@ -28,7 +28,7 @@ const { data: documents } = useDocuments({ fields: 'key' });
 const { sources } = useSourcesList();
 const sourceCount = computed(() => {
   if (!sources.value || !documents.value) return '';
-  return `${sources.value.length}/${documents.value?.length}`;
+  return `${sources.value?.length}/${documents.value?.length}`;
 });
 
 </script>

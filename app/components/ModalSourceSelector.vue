@@ -185,7 +185,7 @@ const closeModal = () => emit('close');
 const documentsInSystem = computed(() => {
   if (!documents.value) return;
   if (!currentSystem.value) return documents.value;
-  return documents.filter((document) => {
+  return documents.value.filter((document) => {
     return document.gamesystem.name === currentSystem.value;
   });
 });
