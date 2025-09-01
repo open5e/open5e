@@ -6,7 +6,7 @@
       </h1>
       <p>
         <em>
-          {{ item.category.name }}, {{ item.rarity.name }}
+          {{ item.category.name }}, {{ item.rarity?.name ?? 'Rarity unspecified' }}
           <span v-show="item.requires_attunement">
             ({{ 'requires attunement' }})
           </span>

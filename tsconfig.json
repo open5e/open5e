@@ -1,31 +1,6 @@
 {
+  "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "lib": ["esnext", "dom"],
-    "jsx": "preserve",
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["./app/*"],
-      "@/*": ["./app/*"]
-    },
-    "types": ["@types/node", "@nuxt/types"],
-    "esModuleInterop": true,
-    "noEmit": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
+    "types": ["@types/node"]
   },
-  "include": [
-    "nuxt.config.ts",
-    // TODO: `vue-tsc` required to type-check .vue files (issue #714)
-    "pages/**/*.vue",
-    "layouts/default.vue",
-    "components/**/*.vue",
-    "composables/**/*.ts",
-    "plugins/**/*.ts",
-    "store/**/*.ts"
-  ],
-  "exclude": ["node_modules"]
 }

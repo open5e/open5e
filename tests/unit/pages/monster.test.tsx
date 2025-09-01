@@ -2,7 +2,7 @@ import { test, expect } from 'vitest';
 import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
 import MonsterPage from '~/pages/monsters/[id].vue';
 
-const { data: monster } = useFindOne('v2/creatures', 'srd_goblin');
+const { data: monster } = useFindOne(API_ENDPOINTS.monsters, 'srd_goblin');
 
 const page = await mountSuspended(MonsterPage);
 

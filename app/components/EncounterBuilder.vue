@@ -171,13 +171,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue';
-import {
-  useEncounterStore,
-  type DifficultyLevel,
-} from '~/composables/useEncounter';
-import { usePartyStore } from '~/composables/useParty';
-import EncounterBuilderPartyBuilder from '~/components/EncounterBuilderPartyBuilder.vue';
 import EncounterBuilderMonsterSearch from '~/components/EncounterBuilderMonsterSearch.vue';
 import type { Monster } from '~/types/monster';
 

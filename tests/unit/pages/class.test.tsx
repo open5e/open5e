@@ -3,7 +3,7 @@ import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
 import { unref } from 'vue';
 import ClassPage from '~/pages/classes/[className]/index.vue';
 
-const { data: className } = useFindOne('v2/classes', 'srd_barbarian');
+const { data: className } = useFindOne(API_ENDPOINTS.classes, 'srd_barbarian');
 
 const page = await mountSuspended(ClassPage);
 

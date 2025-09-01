@@ -2,7 +2,7 @@ import { test, expect } from 'vitest';
 import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
 import ConditionPage from '~/pages/feats/[id].vue';
 
-const { data: feat } = useFindOne('v2/backgrounds', 'srd_acolyte');
+const { data: background } = useFindOne(API_ENDPOINTS.backgrounds, 'srd_acolyte');
 
 const page = await mountSuspended(ConditionPage);
 
@@ -13,7 +13,7 @@ test('/backgrounds/[id] page can mount', async () => {
 test('/backgrounds/[id] page renders title', async () => {
   const title = page.find('h1');
   expect(title.exists()).toBe(true);
-  expect(title.text()).toEqual(unref(feat)?.name);
+  expect(title.text()).toEqual(unref(background)?.name);
 });
 
 mockNuxtImport('useFindOne', () => {

@@ -4,7 +4,10 @@ import { navigateTo, useRoute, useRuntimeConfig } from 'nuxt/app';
 import type { MaybeRef, Ref } from 'vue';
 import { computed, unref } from 'vue';
 import { useSourcesList } from './sources';
+import type { components } from '~/types/open5e-api';
 
+// Extract schemas from OpenAPI components
+type Schemas = components['schemas'];
 
 export const API_ENDPOINTS = {
   backgrounds: 'v2/backgrounds/',
@@ -19,7 +22,43 @@ export const API_ENDPOINTS = {
   spells: 'v2/spells/',
   rules: 'v2/rulesets/',
   equipment: 'v2/items/',
+  licenses: 'v2/licenses/',
 } as const;
+
+export interface EndpointToFindOneTypeMap {
+  'v2/backgrounds/': Schemas['Background'];
+  'v2/classes/': Schemas['CharacterClass'];
+  'v2/conditions/': Schemas['Condition'];
+  'v2/documents/': Schemas['Document'];
+  'v2/feats/': Schemas['Feat'];
+  'v2/items/': Schemas['Item'];
+  'v2/creatures/': Schemas['Creature'];
+  'v2/search/': Schemas['SearchResult'];
+  'v2/species/': Schemas['Species'];
+  'v2/spells/': Schemas['Spell'];
+  'v2/rulesets/': Schemas['RuleSet'];
+}
+
+export interface EndpointToPaginatedTypeMap {
+  'v2/backgrounds/': Schemas['PaginatedBackgroundList'];
+  'v2/classes/': Schemas['PaginatedCharacterClassList'];
+  'v2/conditions/': Schemas['PaginatedConditionList'];
+  'v2/documents/': Schemas['PaginatedDocumentList'];
+  'v2/feats/': Schemas['PaginatedFeatList'];
+  'v2/items/': Schemas['PaginatedItemList'];
+  'v2/creatures/': Schemas['PaginatedCreatureList'];
+  'v2/search/': Schemas['PaginatedSearchResultList'];
+  'v2/species/': Schemas['PaginatedSpeciesList'];
+  'v2/spells/': Schemas['PaginatedSpellList'];
+  'v2/rulesets/': Schemas['PaginatedRuleSetList'];
+}
+
+// utility type to extract the item type from paginated responses
+export type ExtractItemType<T> = T extends { results: (infer U)[] } ? U : never;
+
+// convenience type to get item type from endpoint key
+export type ExtractPaginatedItemType<T extends keyof EndpointToPaginatedTypeMap> = 
+  ExtractItemType<EndpointToPaginatedTypeMap[T]>;
 
 /** Provides the base functions to easily fetch data from the Open5e API. */
 export const useAPI = () => {
@@ -48,15 +87,15 @@ export const useAPI = () => {
 
       return res.data.results as Record<string, unknown>[];
     },
-    findPaginated: async <T = Record<string, unknown>> (options: {
-      endpoint: string;
+    findPaginated: async <T extends keyof EndpointToPaginatedTypeMap> (options: {
+      endpoint: T;
       sources: string[];
       pageNo?: number;
       itemsPerPage?: number;
       sortByProperty?: string;
       isSortDescending?: boolean;
       queryParams?: Record<string, unknown>;
-    }) => {
+    }): Promise<EndpointToPaginatedTypeMap[T]> => {
       const {
         endpoint,
         sources,
@@ -76,24 +115,19 @@ export const useAPI = () => {
           ...queryParams,
         },
       });
-
-      const data = res.data as {
-        count: number;
-        results: T[];
-        next: string | null;
-        previous: string | null;
-      };
-
-      return data;
+      return res?.data;
     },
-    get: async (...parts: string[]) => {
-      const route = parts.join('');
+    get: async <T extends keyof EndpointToFindOneTypeMap>(
+      endpoint: T,
+      ...parts: string[]
+    ): Promise<EndpointToFindOneTypeMap[T]> => {
+      const route = [endpoint, ...parts].join('');
       const res = await api.get(route).catch(() => {
         // redirect to /search if API route returns nothing
         const searchTerm = parts.filter(exists => exists).slice(-1)[0];
         navigateTo(`/search?text=${searchTerm}`);
       });
-      return res?.data as Record<string, unknown>;
+      return res?.data;
     },
   };
 };
@@ -104,119 +138,14 @@ export const useFindMany = (
 ) => {
   const { findMany } = useAPI();
 
-  // API V1 & V2 use different PKs for sources. Select the correct one.
-  const { sources, sourcesAPIVersion1 } = useSourcesList();
-  const sourcesForAPIVersion = isV1Endpoint(unref(endpoint))
-    ? sourcesAPIVersion1
-    : sources;
+  const { sources } = useSourcesList();
 
   return useQuery({
-    queryKey: ['findMany', endpoint, sourcesForAPIVersion, params],
+    queryKey: ['findMany', endpoint, sources, params],
     queryFn: () =>
       unref(
-        findMany(unref(endpoint), unref(sourcesForAPIVersion), unref(params)),
+        findMany(unref(endpoint), unref(sources), unref(params)),
       ),
-  });
-};
-
-/**
- * Recursively fetch nested resources based on the specified fields.
- * @param data - The current data object.
- * @param fields - The list of fields to fetch.
- * @returns The data object with nested resources fetched.
- */
-const fetchNestedResources = async (
-  data: Record<string, unknown>,
-  fields: string[],
-): Promise<Record<string, unknown>> => {
-  for (const field of fields) {
-    const fieldParts = field.split('.');
-    let currentData = data;
-    let parentData = data;
-    let parentKey = '';
-
-    // Traverse the nested fields
-    for (const part of fieldParts) {
-      if (currentData[part]) {
-        parentData = currentData;
-        parentKey = part;
-        currentData = currentData[part] as Record<string, unknown>;
-      } else {
-        (currentData as Record<string, null>)[part] = null;
-        break;
-      }
-    }
-
-    // Fetch related data if the current field is a URL
-    if (
-      typeof currentData === 'string'
-      && (currentData as string).startsWith('http')
-    ) {
-      const relatedData = await axios.get(currentData);
-      parentData[parentKey] = relatedData.data;
-
-      // Recursively fetch nested related fields
-      const nestedFields = fields
-        .filter(f => f.startsWith(`${field}.`))
-        .map(f => f.slice(field.length + 1));
-
-      if (nestedFields.length === 0) return data;
-
-      await fetchNestedResources(
-        parentData[parentKey] as Record<string, unknown>,
-        nestedFields,
-      );
-    }
-  }
-  return data;
-};
-
-export const useFindOne = (
-  endpoint: string,
-  id: MaybeRef<string>,
-  options?: {
-    params: Record<string, string>;
-    relatedFields: string[];
-  },
-) => {
-  const { get } = useAPI();
-
-  const params = options?.params;
-  const formattedParams: string[] = [];
-  for (const name in params) {
-    formattedParams.push(`${name}=${params[name]}`);
-  }
-  const paramString
-    = formattedParams.length === 0 ? '' : '/?' + formattedParams.join('&');
-
-  return useQuery({
-    queryKey: [endpoint, id],
-    queryFn: async () => {
-      // Fetch the main data
-      // const data = await get(endpoint, unref(id), '/?fields=key');
-      const data = await get(endpoint, unref(id), paramString);
-      // Fetch related data for the specified fields
-      return await fetchNestedResources(
-        data,
-        options?.relatedFields ?? [],
-      );
-    },
-  });
-};
-
-export const useFindByLink = (link: MaybeRef<string>) => {
-  const { get } = useAPI();
-
-  return useQuery({
-    queryKey: ['findByLink', link],
-    queryFn: async () => {
-      const url = new URL(unref(link));
-      const pathParts = url.pathname.split('/').filter(Boolean);
-      const endpoint = pathParts.slice(0, 2).join('/');
-      const objectId = pathParts[2];
-
-      return get(endpoint, objectId);
-    },
   });
 };
 
@@ -244,7 +173,3 @@ export const useSearch = (queryRef: Ref<string>) => {
 
 export const useQueryParam = (paramName: string) =>
   computed(() => useRoute().query[paramName]);
-
-export function isV1Endpoint(endpoint: string) {
-  return endpoint.includes('v1/');
-}

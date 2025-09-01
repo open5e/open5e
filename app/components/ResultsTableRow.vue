@@ -51,8 +51,6 @@
 </template>
 
 <script setup>
-import SourceTag from './SourceTag.vue';
-
 defineProps({
   data: { type: Object, default: () => {} }, // Open5e data to render
   cols: { type: Array, default: () => [] }, // Arr. of table columns to render

@@ -96,7 +96,12 @@ export default defineNuxtConfig({
   },
 
   typescript: {
-    strict: false,
+    // typeCheck: true,
+    strict: true
+  },
+  imports: {
+    autoImport: true,
+    global: true,
   },
 
   compatibilityDate: '2024-11-16',

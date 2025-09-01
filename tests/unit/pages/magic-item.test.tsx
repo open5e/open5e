@@ -3,7 +3,7 @@ import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
 import MagicItemPage from '~/pages/magic-items/[id].vue';
 
 const { data: item } = useFindOne(
-  'v2/items',
+  API_ENDPOINTS.magicitems,
   'srd_adamantine-armor-breastplate',
 );
 

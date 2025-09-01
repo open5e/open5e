@@ -86,7 +86,6 @@
 </template>
 
 <script setup>
-import { useSlots } from 'vue';
 import {
   Dialog,
   DialogPanel,

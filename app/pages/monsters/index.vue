@@ -140,10 +140,9 @@
 </template>
 
 <script setup lang="ts">
-import { h, computed } from 'vue';
+import { h } from 'vue';
 import { PlusIcon, MinusIcon } from '@heroicons/vue/24/solid';
 import type { Monster } from '~/types/monster';
-import { useEncounterStore } from '~/composables/useEncounter';
 
 // Set up filters
 const filterState = useFilterState<MonsterFilter>({
