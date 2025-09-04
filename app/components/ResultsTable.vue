@@ -98,6 +98,6 @@ withDefaults(defineProps<ResultsTableProps<T>>(), {
 const emit = defineEmits(['sort']);
 
 const onSort = (sortValue?: string) => {
-  if (!sortValue) emit('sort', sortValue);
+  if (sortValue) emit('sort', sortValue);
 };
 </script>
