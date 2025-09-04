@@ -83,7 +83,7 @@
           subtitle: monster.name
         })"
       >
-        {{ useFormatModifier(initiativeBonus) }}
+        {{ formatModifier(initiativeBonus) }}
       </dd>
 
       <!-- HIT POINTS -->
@@ -148,7 +148,7 @@
              subtitle: monster.name
           })"
         >
-          {{ `${skill} ${useFormatModifier(modifier)}` }}
+          {{ `${skill} ${formatModifier(modifier)}` }}
         </li>
       </ul>
 
@@ -319,6 +319,7 @@
 
 <script setup lang="ts">
 const { rollDice } = useDiceRoller();
+const { formatModifier } = useFormatModifier();
 
 const params = {
   environments__fields: 'name',

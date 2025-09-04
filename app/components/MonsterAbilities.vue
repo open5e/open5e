@@ -90,7 +90,7 @@
               subtitle: monster.name,
             })"
           >
-            {{ useFormatModifier(data.mod) }}
+            {{ formatModifier(data.mod) }}
           </td>
           <td
             :class="rollableLinkClasses"
@@ -99,7 +99,7 @@
               subtitle: monster.name,
             })"
           >
-            {{ useFormatModifier(data.save) }}
+            {{ formatModifier(data.save) }}
           </td>
         </tr>
       </tbody>
@@ -108,9 +108,8 @@
 </template>
 
 <script lang="ts" setup>
-import { useFormatModifier } from '@/composables/useFormatModifier';
-
 const { rollDice } = useDiceRoller();
+const { formatModifier } = useFormatModifier();
 
 const props = defineProps({
   monster: { type: Object, default: () => {} },

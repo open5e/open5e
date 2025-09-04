@@ -1,7 +1,8 @@
-import { useFormatModifier } from './useFormatModifier';
 import { useNotifications } from './useNotifications';
 
 const { addNotif } = useNotifications();
+
+const { formatModifier } = useFormatModifier();
 
 type UseDiceRollerOptions = {
   title?: string;
@@ -33,7 +34,7 @@ export function useDiceRoller() {
     const result = rolls.reduce((total, roll) => total + roll) + modifier;
 
 
-    const formattedModifier = useFormatModifier(modifier, {
+    const formattedModifier = formatModifier(modifier, {
       showZero: false,
       spaceAfterOrdinal: true,
     });
