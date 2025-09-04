@@ -81,9 +81,6 @@ import {
   ComboboxOptions,
   ComboboxOption,
 } from '@headlessui/vue';
-import { ref, watchEffect } from 'vue';
-import { useAPI, API_ENDPOINTS } from '~/composables/api';
-import { useSourcesList } from '~/composables/sources';
 import type { Monster } from '~/types/monster';
 import type { RawMonster } from '~/types/APIMonster';
 const emit = defineEmits<{

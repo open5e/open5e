@@ -3,7 +3,7 @@ import axios from 'axios';
 import { navigateTo, useRoute, useRuntimeConfig } from 'nuxt/app';
 import type { MaybeRef, Ref } from 'vue';
 import { computed, unref } from 'vue';
-import { useSourcesList } from './sources';
+import { useSourcesList } from './useSourcesList';
 import type { components } from '~/types/open5e-api';
 
 // Extract schemas from OpenAPI components
