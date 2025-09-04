@@ -85,7 +85,7 @@
           </td>
           <td
             :class="rollableLinkClasses"
-            @click="useDiceRoller(data.mod, {
+            @click="rollDice(data.mod, {
               title: `${ability} Check`,
               subtitle: monster.name,
             })"
@@ -94,7 +94,7 @@
           </td>
           <td
             :class="rollableLinkClasses"
-            @click="useDiceRoller(data.save, {
+            @click="rollDice(data.save, {
               title: `${ability} Save`,
               subtitle: monster.name,
             })"
@@ -109,7 +109,8 @@
 
 <script lang="ts" setup>
 import { useFormatModifier } from '@/composables/useFormatModifier';
-import { useDiceRoller } from '@/composables/useDiceRoller';
+
+const { rollDice } = useDiceRoller();
 
 const props = defineProps({
   monster: { type: Object, default: () => {} },
