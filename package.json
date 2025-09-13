@@ -46,7 +46,7 @@
     "@heroicons/vue": "^2.0.18",
     "@tanstack/vue-query": "^5.35.1",
     "@vueuse/core": "^10.11.0",
-    "axios": "^1.8.2",
+    "axios": "^1.12.0",
     "tailwindcss": "^3.3.2",
     "vue": "^3.3.4",
     "vue-gtag-next": "^1.14.0",
