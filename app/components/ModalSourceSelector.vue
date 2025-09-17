@@ -177,9 +177,12 @@ const { data: documents } = useDocuments({
 });
 
 const { sources, setSources, gameSystem, setGameSystem } = useSourcesList();
-const selectedSources = ref(sources.value);
+const selectedSources = ref([]);
 const emit = defineEmits(['close']);
 const closeModal = () => emit('close');
+
+// Keep selectedSources in sync with global sources state
+watchEffect(() => selectedSources.value = [...sources.value]);
 
 // filter documents by the current game system
 const documentsInSystem = computed(() => {
@@ -205,7 +208,10 @@ const groupedDocuments = computed(() => {
 });
 
 // state for current game system
-const currentSystem = ref(gameSystem.value);
+const currentSystem = ref('');
+
+// Keep currentSystem in sync with global gameSystem state
+watchEffect(() => currentSystem.value = gameSystem.value);
 
 // returns the names of all game systems present in API data
 const allGameSystems = computed(() => {
