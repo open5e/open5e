@@ -2,7 +2,7 @@
   <nav class="flex w-full grow flex-col overflow-hidden bg-white text-black dark:bg-darkness dark:text-white">
     <NuxtLink
       to="/"
-      class="hidden bg-red p-5 text-center font-serif text-3xl text-white hover:text-white sm:block"
+      class="bg-red p-5 text-center font-serif text-3xl text-white hover:text-white"
       @click="$emit('on-link-clicked')"
     >
       Open5e
@@ -10,7 +10,7 @@
 
     <SearchBar class="ml-2 mt-2" @on-search="$emit('on-link-clicked')" />
 
-    <ul v-for="{ sectionTitle, pages } in paths" :key="sectionTitle" class="grid border-granite p-0 sm:gap-2 sm:border-r">
+    <ul v-for="{ sectionTitle, pages } in paths" :key="sectionTitle" class="grid border-granite pl-2 sm:gap-2 sm:border-r sm:pl-0">
       <p class="mx-4 mt-2 text-sm font-bold">{{ sectionTitle }}</p>
       <li 
         v-for="{ title, path, icon } in pages" :key="title"
