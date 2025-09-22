@@ -11,7 +11,30 @@
         :title="condition.document.name"
       />
     </h1>
-    <md-viewer :text="condition.desc" />
+
+    <!-- Display condition descriptions as a list if API rtns more than one -->
+    <div v-if="condition.descriptions.length > 1">
+      <p class="my-4 italic">
+        <span>The </span>
+        <span class="font-bold">{{ condition.name }}</span>
+        <span> condition has multiple definitions in different rulebooks.</span>
+      </p>
+      <dl class="grid gap-6">
+        <div v-for="description in condition.descriptions" :key="description.document">
+          <dt class="text-xl font-bold text-granite">
+            {{ description.gamesystem }}
+          </dt>
+          <dd class="mt-0">
+            <MdViewer :text="description.desc"/>
+          </dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- Display conditions with a single description as they are -->
+    <v-else>
+      <MdViewer :text="condition.descriptions[0].desc" />
+    </v-else>
   </section>
 </template>
 
@@ -19,7 +42,12 @@
 const { data: condition } = useFindOne(
   API_ENDPOINTS.conditions,
   useRoute().params.id,
-  { params: { fields: ['name', 'desc', 'document'].join(',') } },
+  { 
+    params: { 
+      fields: ['name', 'descriptions', 'document'].join(','),
+      document__fields: ['key', 'display_name'].join(',')
+    } 
+  },
 );
 
 // generate source key from page URL - for use with source-tab cmpnt
