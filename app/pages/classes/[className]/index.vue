@@ -10,7 +10,7 @@
 
       <div v-if="hitPoints.length > 0">
         <h3>Hit Points</h3>
-        <dl>
+        <dl class="mt-4">
           <div
             v-for="item in hitPoints"
             :key="item.title"
@@ -107,7 +107,7 @@ const { data: classData } = useFindOne(
   {
     params: {
       is_subclass: false,
-      fields: ['name', 'key', 'subclasses', 'features'].join(),
+      fields: ['name', 'key', 'subclasses', 'features', 'hit_points'].join(),
     },
   },
 );
