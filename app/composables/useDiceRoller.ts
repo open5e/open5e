@@ -2,7 +2,7 @@ import { useNotifications } from './useNotifications';
 
 const { addNotif } = useNotifications();
 
-const { formatModifier } = useFormatModifier();
+const formatModifier = useFormatModifier();
 
 type UseDiceRollerOptions = {
   title?: string;
@@ -79,5 +79,5 @@ export function useDiceRoller() {
     }
   };
   
-  return { rollDice };
+  return rollDice;
 }

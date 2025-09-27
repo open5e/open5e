@@ -32,5 +32,5 @@ export const useFormatModifier = () => {
       ); 
     };
     
-  return { formatModifier };
+  return formatModifier;
 };

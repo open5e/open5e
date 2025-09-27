@@ -108,8 +108,8 @@
 </template>
 
 <script lang="ts" setup>
-const { rollDice } = useDiceRoller();
-const { formatModifier } = useFormatModifier();
+const rollDice = useDiceRoller();
+const formatModifier = useFormatModifier();
 
 const props = defineProps({
   monster: { type: Object, default: () => {} },

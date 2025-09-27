@@ -28,5 +28,5 @@ defineProps({
   signature: { type: String, default: '' },
 });
 
-const { rollDice } = useDiceRoller();
+const rollDice = useDiceRoller();
 </script>

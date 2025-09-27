@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/vue-query';
 import { API_ENDPOINTS, useAPI } from './api';
 
-const { formatModifier } = useFormatModifier();
+const formatModifier = useFormatModifier();
 
 export type MonsterFilter = {
   name__icontains?: string; // filter by name (TODO)

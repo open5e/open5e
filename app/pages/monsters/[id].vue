@@ -318,8 +318,8 @@
 </template>
 
 <script setup lang="ts">
-const { rollDice } = useDiceRoller();
-const { formatModifier } = useFormatModifier();
+const rollDice = useDiceRoller();
+const formatModifier = useFormatModifier();
 
 const params = {
   environments__fields: 'name',
