@@ -107,7 +107,7 @@ const { data: classData } = useFindOne(
   {
     params: {
       is_subclass: false,
-      fields: ['name', 'key', 'subclasses', 'features'].join(),
+      fields: ['name', 'key', 'subclasses', 'features', 'hit_points'].join(),
     },
   },
 );
@@ -124,12 +124,13 @@ const features = computed(() => {
   if (!featureData) return {};
   return featureData.reduce(
     (acc, feature) => {
+      if (!feature) return acc;
       const { feature_type: type } = feature;
       if (type === 'PROFICIENCY_BONUS') acc.proficiencyBonuses = feature;
       else if (type === 'SPELL_SLOTS') acc.spellSlots.push(feature);
       else if (feature.data_for_class_table.length > 0)
         acc.classTableColumnData.push(feature);
-      else if (type === 'CLASS_FEATURE') acc.classFeatures.push(feature);
+      else if (type === 'CLASS_LEVEL_FEATURE') acc.classFeatures.push(feature);
       else if (type === 'PROFICIENCIES') acc.proficiencies.push(feature);
       else if (type === 'STARTING_EQUIPMENT')
         acc.startingEquipment.push(feature);
