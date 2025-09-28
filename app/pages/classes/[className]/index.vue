@@ -8,7 +8,12 @@
       <h2>Class Features</h2>
       <p>As a {{ classData.name }} you gain the following features.</p>
 
-      <div v-if="hitPoints.length > 0">
+      <div v-if="features.coreTraitsTable" class="mt-4">
+        <label class="font-bold">{{ `Core ${classData.name} Traits` }}</label>
+        <MdViewer :text="features.coreTraitsTable.desc" />
+      </div>
+
+      <div v-if="!features.coreTraitsTable && hitPoints.length > 0">
         <h3>Hit Points</h3>
         <dl>
           <div
@@ -84,7 +89,7 @@
           :key="feature.key"
         >
           <h3>
-            <span v-if="feature.gained_at.length > 0">
+            <span v-if="feature.gained_at.length > 0" class="text-granite">
               {{ `Level ${findFeatureLowestLevel(feature)}: `  }}
             </span>
             <span>{{ feature.name }}</span>
@@ -132,6 +137,7 @@ const features = computed(() => {
       if (!feature) return acc;
       const { feature_type: type } = feature;
       if (type === 'PROFICIENCY_BONUS') acc.proficiencyBonuses = feature;
+      else if (type === 'CORE_TRAITS_TABLE') acc.coreTraitsTable = feature;
       else if (type === 'SPELL_SLOTS') acc.spellSlots.push(feature);
       else if (feature.data_for_class_table.length > 0)
         acc.classTableColumnData.push(feature);
@@ -143,6 +149,7 @@ const features = computed(() => {
     },
     {
       classFeatures: [],
+      coreTraitsTable: undefined,
       proficiencies: [],
       proficiencyBonuses: undefined,
       startingEquipment: [],
