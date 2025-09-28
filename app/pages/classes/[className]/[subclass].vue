@@ -13,7 +13,7 @@
         >
         
           <h3>
-            <span v-if="feature.gained_at.length > 0">
+            <span v-if="feature.gained_at.length > 0" class="text-granite">
               {{ `Level ${feature.gained_at[0].level}: `  }}
             </span>
             <span>{{ feature.name }}</span>
