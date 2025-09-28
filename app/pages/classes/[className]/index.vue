@@ -83,8 +83,13 @@
           :id="titleCaseToKebabCase(feature.name)"
           :key="feature.key"
         >
-          <h3>{{ feature.name }}</h3>
-          <md-viewer
+          <h3>
+            <span v-if="feature.gained_at.length > 0">
+              {{ `Level ${findFeatureLowestLevel(feature)}: `  }}
+            </span>
+            <span>{{ feature.name }}</span>
+          </h3>
+          <MdViewer
             :text="feature.desc"
             :header-level="3"
           />

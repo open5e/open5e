@@ -11,7 +11,13 @@
           v-for="feature in features"
           :key="feature.key"
         >
-          <h3>{{ feature.name }}</h3>
+        
+          <h3>
+            <span v-if="feature.gained_at.length > 0">
+              {{ `Level ${feature.gained_at[0].level}: `  }}
+            </span>
+            <span>{{ feature.name }}</span>
+          </h3>
           <md-viewer
             :text="feature.desc"
             :header-level="3"
