@@ -6,7 +6,8 @@
     <h1>{{ classData.name }}</h1>
     <section>
       <h2>Class Features</h2>
-      <p>As a {{ classData.name }} you gain the following features.</p>
+
+      <MdViewer v-if="classData.desc" :text="classData.desc"/>
 
       <div v-if="features.coreTraitsTable" class="mt-4">
         <label class="font-bold">{{ `Core ${classData.name} Traits` }}</label>
@@ -109,6 +110,7 @@
 </template>
 
 <script setup>
+import MdViewer from '~/components/MdViewer.vue';
 import { titleCaseToKebabCase } from '~/functions/titleCaseToKebabCase';
 
 const { data: classData } = useFindOne(
@@ -117,7 +119,14 @@ const { data: classData } = useFindOne(
   {
     params: {
       is_subclass: false,
-      fields: ['name', 'key', 'subclasses', 'features', 'hit_points'].join(),
+      fields: [
+        'desc',
+        'features',
+        'hit_points',
+        'key',
+        'name',
+        'subclasses',
+      ].join(),
     },
   },
 );

@@ -6,6 +6,8 @@
     <h1>{{ subclassData.name }}</h1>
     <!-- CLASS ABILITIES -->
     <section>
+      <MdViewer v-if="subclassData.desc" :text="subclassData.desc"/>
+
       <ul v-if="features.length > 0">
         <li
           v-for="feature in features"
@@ -40,7 +42,7 @@ const { data: subclassData } = useFindOne(
     params: {
       is_subclass: true,
       subclass_of: useRoute().params.className,
-      fields: ['name', 'key', 'features'].join(','),
+      fields: ['name', 'desc', 'key', 'features'].join(','),
     },
   },
 );
