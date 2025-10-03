@@ -83,7 +83,8 @@
           :id="titleCaseToKebabCase(feature.name)"
           :key="feature.key"
         >
-          <h3>{{ feature.name }}</h3>
+          <h3 class="text-red-400">{{ feature.name }}</h3>
+          <p class="italic text-red-400">{{ "Level " + findFeatureLowestLevel(feature) }}</p>
           <md-viewer
             :text="feature.desc"
             :header-level="3"
