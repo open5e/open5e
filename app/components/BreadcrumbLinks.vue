@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * BreadcrumbLinks.vue - A breadcrumb navigation component that displays a hierarchical navigation path.
  *
@@ -54,6 +54,7 @@
   </nav>
 </template>
 
-<script setup>
-const crumbs = useBreadcrumbs();
+<script setup lang="ts">
+const pageTitle = usePageTitle();
+const crumbs = useBreadcrumbs(pageTitle);
 </script>
