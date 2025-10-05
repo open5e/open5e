@@ -40,4 +40,6 @@ const { data: item } = useFindOne(
   API_ENDPOINTS.magicitems,
   useRoute().params.id,
 );
+usePageMetadata({ title: computed(() => item.value?.name) });
+
 </script>

@@ -67,15 +67,7 @@
 </template>
 
 <script setup lang="ts">
-// Generate page title from Breadcrumbs
-const BASE_TITLE = 'Open5e';
-const crumbs = useBreadcrumbs();
-const title = computed(() => {
-  if (crumbs.value.length === 0) return BASE_TITLE;
-  return `${crumbs.value.at(-1).title} – ${BASE_TITLE}`;
-});
-useHead({ title: title });
-
+// App UI State
 const isToolbarVisible = ref(false);
 const toggleToolbar = () => (isToolbarVisible.value = !isToolbarVisible.value);
 const isNavbarVisible = ref(false);

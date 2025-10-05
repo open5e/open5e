@@ -39,6 +39,8 @@ const { data: subclassData } = useFindOne(
   },
 );
 
+usePageMetadata({ title: computed(() => subclassData.value?.name) });
+
 const features = computed(() => {
   const features = subclassData.value.features;
   if (!features) return [];

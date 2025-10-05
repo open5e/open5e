@@ -31,6 +31,8 @@ const { data: feat } = useFindOne(API_ENDPOINTS.feats, useRoute().params.id, {
   fields: ['name', 'desc', 'prerequisite', 'document'],
 });
 
+usePageMetadata({ title: computed(() => feat.value?.name) });
+
 // generate source key from page URL - for use with source-tab cmpnt
 const sourceKey = computed(() => {
   if (!feat?.value?.document) return;

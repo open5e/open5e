@@ -74,6 +74,8 @@ const { data: background } = useFindOne(
   useRoute().params.id,
 );
 
+usePageMetadata({ title: computed(() => background.value?.name) });
+
 // sort benefits into different sections
 // different sections will be rendered to different parts of the page
 const benefits = computed(() => {

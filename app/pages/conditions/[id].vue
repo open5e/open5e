@@ -22,6 +22,8 @@ const { data: condition } = useFindOne(
   { params: { fields: ['name', 'desc', 'document'].join(',') } },
 );
 
+usePageMetadata({ title: computed(() => condition.value?.name) });
+
 // generate source key from page URL - for use with source-tab cmpnt
 const sourceKey = computed(() => {
   if (!condition?.value?.document) return;

@@ -330,6 +330,8 @@ const { data: monster } = useFindOne(
   { params },
 );
 
+usePageMetadata({ title: computed(() => monster.value?.name) });
+
 // Calculate initiative bonus from dexterity modifier if not explicitly set
 const initiativeBonus = computed(() => {
   if (!monster.value) return 0;

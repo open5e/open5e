@@ -41,4 +41,6 @@
 <script setup>
 const { data: document } = useFindOne(API_ENDPOINTS.documents, useRoute().params.id);
 
+usePageMetadata({ title: computed(() => document.value?.name) });
+
 </script>

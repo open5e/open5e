@@ -17,4 +17,6 @@
 
 <script setup>
 const { data: ruleset } = useFindOne(API_ENDPOINTS.rules, useRoute().params.id);
+usePageMetadata({ title: computed(() => ruleset.value?.name) });
+
 </script>

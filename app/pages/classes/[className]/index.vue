@@ -112,6 +112,8 @@ const { data: classData } = useFindOne(
   },
 );
 
+usePageMetadata({ title: computed(() => classData.value?.name) });
+
 // fetch subclasses to generate links
 const { data: subclasses } = useFindMany(API_ENDPOINTS.classes, {
   fields: ['key', 'name', 'document'].join(','),
