@@ -28,6 +28,7 @@ mockNuxtImport('useFindOne', () => {
         name: 'Systems Reference Document',
         url: 'v2/documents/srd/"',
       },
+      benefits: [],
     },
   });
 });

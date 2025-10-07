@@ -18,7 +18,7 @@
 
       <MdViewer :text="feat.desc" />
 
-      <ul v-if="feat.benefits.length > 0">
+      <ul v-if="feat.benefits">
         <li v-for="(benefit, index) in feat.benefits" :key="index">
           <MdViewer :text="benefit.desc" />
         </li>
