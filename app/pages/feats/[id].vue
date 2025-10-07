@@ -15,10 +15,14 @@
         <span class="font-bold after:content-['._']">Prerequistes</span>
         <span>{{ feat.prerequisite }}</span>
       </p>
-      <md-viewer
-        :text="feat.desc"
-        class="list-disc"
-      />
+
+      <MdViewer :text="feat.desc" />
+
+      <ul v-if="feat.benefits.length > 0">
+        <li v-for="(benefit, index) in feat.benefits" :key="index">
+          <MdViewer :text="benefit.desc" />
+        </li>
+      </ul>
     </section>
   </main>
   <p v-else>
@@ -26,9 +30,17 @@
   </p>
 </template>
 
-<script setup>
-const { data: feat } = useFindOne(API_ENDPOINTS.feats, useRoute().params.id, {
-  fields: ['name', 'desc', 'prerequisite', 'document'],
+<script setup lang="ts">
+// cast 'id' as string (if string[])
+const id = computed(() => {
+  const param = useRoute().params.id;
+  return Array.isArray(param) ? param[0] : param;
+});
+
+const { data: feat } = useFindOne(API_ENDPOINTS.feats, id, {
+  params: {
+    fields: ['name', 'desc', 'prerequisite', 'document', 'benefits'].join(','),
+  },
 });
 
 // generate source key from page URL - for use with source-tab cmpnt
