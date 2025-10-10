@@ -28,7 +28,7 @@
     "@types/node": "^18",
     "@vue/test-utils": "^2.4.6",
     "eslint-plugin-tailwindcss": "^3.17.5",
-    "happy-dom": "^15.10.2",
+    "happy-dom": "^20.0.0",
     "husky": "^8.0.3",
     "nuxt": "^3.19.2",
     "nuxt-icon": "^0.4.1",
