@@ -5,18 +5,6 @@ import ClassPage from '~/pages/classes/[className]/index.vue';
 
 const { data: className } = useFindOne(API_ENDPOINTS.classes, 'srd_barbarian');
 
-const page = await mountSuspended(ClassPage);
-
-test('/classes/[className] page can mount', async () => {
-  expect(page);
-});
-
-test('/classes/[className] page renders title', async () => {
-  const title = page.find('h1');
-  expect(title.exists()).toBe(true);
-  expect(title.text()).toEqual(unref(className)?.name);
-});
-
 mockNuxtImport('useFindOne', () => {
   return () => ({
     data: {
@@ -41,81 +29,13 @@ mockNuxtImport('useFindOne', () => {
               column_value: '+2',
             },
             {
-              level: 10,
-              column_value: '+4',
-            },
-            {
-              level: 11,
-              column_value: '+4',
-            },
-            {
-              level: 12,
-              column_value: '+4',
-            },
-            {
-              level: 13,
-              column_value: '+5',
-            },
-            {
-              level: 14,
-              column_value: '+5',
-            },
-            {
-              level: 15,
-              column_value: '+5',
-            },
-            {
-              level: 16,
-              column_value: '+5',
-            },
-            {
-              level: 17,
-              column_value: '+6',
-            },
-            {
-              level: 18,
-              column_value: '+6',
-            },
-            {
-              level: 19,
-              column_value: '+6',
-            },
-            {
               level: 2,
               column_value: '+2',
             },
             {
-              level: 20,
-              column_value: '+6',
-            },
-            {
               level: 3,
               column_value: '+2',
-            },
-            {
-              level: 4,
-              column_value: '+2',
-            },
-            {
-              level: 5,
-              column_value: '+3',
-            },
-            {
-              level: 6,
-              column_value: '+3',
-            },
-            {
-              level: 7,
-              column_value: '+3',
-            },
-            {
-              level: 8,
-              column_value: '+3',
-            },
-            {
-              level: 9,
-              column_value: '+4',
-            },
+            }
           ],
           feature_type: 'PROFICIENCY_BONUS',
         },
@@ -151,4 +71,16 @@ mockNuxtImport('useFindMany', () => {
       },
     ],
   });
+});
+
+test('/classes/[className] page can mount', async () => {
+  const page = await mountSuspended(ClassPage);
+  expect(page);
+});
+
+test('/classes/[className] page renders title', async () => {
+  const page = await mountSuspended(ClassPage);
+  const title = page.find('h1');
+  expect(title.exists()).toBe(true);
+  expect(title.text()).toEqual(unref(className)?.name);
 });

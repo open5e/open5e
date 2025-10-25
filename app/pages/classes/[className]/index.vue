@@ -81,7 +81,7 @@
       />
     </section>
 
-    <!-- Class Abilities -->
+    <!-- Class abilities per level -->
     <section>
       <ul v-if="featuresInOrder.length > 0">
         <li
@@ -102,6 +102,15 @@
         </li>
       </ul>
     </section>
+
+    <!-- Class ability option lists -->
+    <section v-if="features.classOptionLists?.length > 0">
+      <template v-for="feature in features.classOptionLists" :key="feature.name">
+        <h2>{{ feature.name }}</h2>
+        <MdViewer :text="feature.desc" :header-level="1" />
+      </template>
+    </section>
+
   </main>
 
   <p v-else>
@@ -154,16 +163,19 @@ const features = computed(() => {
       else if (type === 'PROFICIENCIES') acc.proficiencies.push(feature);
       else if (type === 'STARTING_EQUIPMENT')
         acc.startingEquipment.push(feature);
+      else if (type === 'CLASS_FEATURE_OPTION_LIST')
+        acc.classOptionLists.push(feature);
       return acc;
     },
     {
       classFeatures: [],
+      classTableColumnData: [],
+      classOptionLists: [],
       coreTraitsTable: undefined,
       proficiencies: [],
       proficiencyBonuses: undefined,
-      startingEquipment: [],
       spellSlots: [],
-      classTableColumnData: [],
+      startingEquipment: [],
     },
   );
 });
