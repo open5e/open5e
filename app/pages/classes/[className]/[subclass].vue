@@ -35,13 +35,13 @@
 </template>
 
 <script setup lang="ts">
-const { data: subclassData } = useFindOne(
-  API_ENDPOINTS.classes,
-  useRoute().params.subclass,
+const subclassId = useQueryParameter('subclass');
+const baseClassId = useQueryParameter('className');
+const { data: subclassData } = useFindOne(API_ENDPOINTS.classes, subclassId,
   {
     params: {
       is_subclass: true,
-      subclass_of: useRoute().params.className,
+      subclass_of: baseClassId,
       fields: ['name', 'desc', 'key', 'features'].join(','),
     },
   },

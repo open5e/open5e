@@ -39,9 +39,8 @@
 </template>
 
 <script setup lang="ts">
-const { data: condition } = useFindOne(
-  API_ENDPOINTS.conditions,
-  useRoute().params.id,
+const conditionId = useQueryParameter('id');
+const { data: condition } = useFindOne(API_ENDPOINTS.conditions, conditionId,
   { 
     params: { 
       fields: ['name', 'descriptions', 'document'].join(','),

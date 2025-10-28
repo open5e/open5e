@@ -171,5 +171,5 @@ export const useSearch = (queryRef: Ref<string>) => {
   });
 };
 
-export const useQueryParam = (paramName: string) =>
+export const useReactiveQueryParam = (paramName: string) =>
   computed(() => useRoute().query[paramName]);

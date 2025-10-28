@@ -71,17 +71,18 @@
 </template>
 
 <script setup lang="ts">
-const { data: species } = useFindOne(API_ENDPOINTS.species, useRoute().params.id, {
-  params: { subspecies_of__isnull: true },
+const speciesId = useQueryParameter('id');
+const { data: species } = useFindOne(API_ENDPOINTS.species, speciesId, {
+  params: { subspecies_of__isnull: 'true' },
 });
 
 usePageMetadata({ title: computed(() => species.value?.name) });
 
 
 const { data: subspecies } = useFindMany(API_ENDPOINTS.species, {
-  subspecies_of__key__in: useRoute().params.id,
+  subspecies_of__key__in: speciesId,
 });
 
 // traits can be ordered here, but the order the API rtns them is already good
-const traits = computed(() => unref(species).traits);
+const traits = computed(() => unref(species)?.traits);
 </script>

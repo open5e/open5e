@@ -6,6 +6,7 @@
 </template>
 
 <script setup lang="ts">
-const { data: license } = useFindOne(API_ENDPOINTS.licenses, useRoute().params.id);
+const licenseId = useQueryParameter('id');
+const { data: license } = useFindOne(API_ENDPOINTS.licenses, licenseId);
 usePageMetadata({ title: computed(() => license.value?.name) });
 </script>

@@ -66,7 +66,7 @@
 </template>
 
 <script setup lang="ts">
-const searchText = useQueryParam('text');
+const searchText = useReactiveQueryParam('text');
 const { data } = useSearch(searchText);
 const { sources } = useSourcesList();
 

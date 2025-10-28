@@ -29,8 +29,8 @@
           name: 'Level',
           filterField: 'level',
           options: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((level) => ({
-            name: level,
-            value: level,
+            name: level.toString(),
+            value: level.toString(),
           })),
         },
         {

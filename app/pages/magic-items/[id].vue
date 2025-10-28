@@ -36,10 +36,8 @@
 </template>
 
 <script setup lang="ts">
-const { data: item } = useFindOne(
-  API_ENDPOINTS.magicitems,
-  useRoute().params.id,
-);
+const itemId = useQueryParameter('id');
+const { data: item } = useFindOne(API_ENDPOINTS.magicitems, itemId);
 usePageMetadata({ title: computed(() => item.value?.name) });
 
 </script>

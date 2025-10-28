@@ -69,9 +69,10 @@
 </template>
 
 <script setup lang="ts">
+const backgroundId = useQueryParameter('id');
 const { data: background } = useFindOne(
   API_ENDPOINTS.backgrounds,
-  useRoute().params.id,
+  backgroundId,
 );
 
 usePageMetadata({ title: computed(() => background.value?.name) });

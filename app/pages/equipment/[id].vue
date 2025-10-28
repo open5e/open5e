@@ -136,9 +136,11 @@
 </template>
 
 <script setup lang="ts">
+const itemId = useQueryParameter('id');
+
 const { data: item } = useFindOne(
   API_ENDPOINTS.equipment,
-  useRoute().params.id,
+  itemId,
   { is_magic_item: false },
 );
 

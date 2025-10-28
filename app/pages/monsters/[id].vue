@@ -325,9 +325,11 @@ const params = {
   environments__fields: 'name',
   document__fields: 'name,key,permalink',
 };
+
+const monsterId = useQueryParameter('id');
 const { data: monster } = useFindOne(
   API_ENDPOINTS.monsters,
-  useRoute().params.id,
+  monsterId,
   { params },
 );
 

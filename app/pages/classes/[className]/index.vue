@@ -119,12 +119,10 @@
 </template>
 
 <script setup lang="ts">
-import MdViewer from '~/components/MdViewer.vue';
 import { titleCaseToKebabCase } from '~/functions/titleCaseToKebabCase';
 
-const { data: classData } = useFindOne(
-  API_ENDPOINTS.classes,
-  useRoute().params.className,
+const classId = useQueryParameter('className');
+const { data: classData } = useFindOne(API_ENDPOINTS.classes, classId,
   {
     params: {
       is_subclass: false,
