@@ -54,7 +54,7 @@
         @input="
           filterState.updateField(
             search?.filterField,
-            $event.target?.value ?? '',
+            ($event.target as HTMLInputElement)?.value ?? '',
           )
         "
       />
@@ -81,7 +81,9 @@
         class="cursor-pointer bg-transparent fill-red text-left"
         :value="filterState.fieldsState.value[field.filterField]"
         @input="
-          filterState.updateField(field.filterField, $event?.target.value)
+          filterState.updateField(
+            field.filterField,
+            ($event?.target as HTMLInputElement)?.value ?? '')
         "
       >
         <option value="">
@@ -152,8 +154,9 @@ defineProps<
       name: string;
       filterField: string;
       options: { name: string; value: string }[];
+      isLeastPriority?: boolean;
     }[];
-    checkboxFields: {
+    checkboxFields?: {
       name: string;
       filterField: string;
     }[];

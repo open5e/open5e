@@ -19,7 +19,3 @@ defineProps({
   title: { type: String, default: () => '' }
 });
 </script>
-
-<style>
-
-</style>

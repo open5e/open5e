@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * CrossLink - An inline link to an Open5e resource. Fetches & displays a
  *   preview of the linked resource when hovered
@@ -37,7 +37,7 @@
   ><slot /></span>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import axios from 'axios';
 
 defineProps({ src: { type: String, default: '' } });

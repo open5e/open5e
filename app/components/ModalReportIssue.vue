@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * ModalReportIssue.vue - A button that opens a modal menu for users to submit
  * website issues via a GoogleSheet
@@ -16,7 +16,7 @@
  */
 </script>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
 
 const emit = defineEmits(['close']);

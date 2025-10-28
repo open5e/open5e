@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * InlineRoller - creates a clickable dice roller link. Essentially a UI
  * wrapper for the `useDiceRoller` composable. Global so that is can be
@@ -23,7 +23,7 @@
   </span>
 </template>
 
-<script setup>
+<script setup lang="ts">
 defineProps({
   signature: { type: String, default: '' },
 });

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * SearchResults.vue - Renders a single item returned by the /search endpoint.
  *   Returns an `<li>` element to be placed in a list of other results.
@@ -92,13 +92,13 @@
   </li>
 </template>
 
-<script setup>
+<script setup lang="ts">
 defineProps({
   query: { type: String, default: '' },
   result: { type: Object, default: () => {} },
 });
 
-function stripMarkdownTables(text) {
+function stripMarkdownTables(text: string) {
   // Remove table row markup but keep the content
   return text
     .replace(/\|/g, ' ') // Replace pipe characters with spaces

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * SourceSelectionModal.vue - Displays a modal for selecting sources, grouped by publisher, with options
  *   to select/deselect all sources and filter by game system.
@@ -167,7 +167,7 @@
   </Modal>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { sortDocumentsByPublisher } from '~/functions/sortDocumentsByPublisher';
 
 

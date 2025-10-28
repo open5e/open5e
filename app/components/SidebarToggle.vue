@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * SidebarToggle - Displays a circular hamburger-menu style button
  *

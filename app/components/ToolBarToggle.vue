@@ -10,7 +10,3 @@
 <script lang="ts" setup>
 defineEmits(['btn-clicked']);
 </script>
-
-<style>
-
-</style>

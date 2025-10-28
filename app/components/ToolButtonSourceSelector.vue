@@ -20,7 +20,7 @@
   </ToolButton>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const showModal = ref(false);
 
 const { data: documents } = useDocuments({ fields: 'key' });

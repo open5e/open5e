@@ -26,7 +26,7 @@
   </nav>
 </template>
 
-<script setup>
+<script setup lang="ts">
 
 defineEmits(['on-link-clicked']);
 

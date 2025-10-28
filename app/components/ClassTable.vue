@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * ClassTable.vue - Displays a table of class progression data - for each level
  * features, proficiencies, and spell slots are rendered.
@@ -113,7 +113,7 @@
   </table>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { titleCaseToKebabCase } from '~/functions/titleCaseToKebabCase';
 
 const props = defineProps({

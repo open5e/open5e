@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * SearchBar.vue - UI for interacting with Open5e search. Allows users to type 
  * a search query. When the SearchBar is activated the user is redirected to 
@@ -50,7 +50,7 @@
 
 </template>
 
-<script setup>
+<script setup lang="ts">
 const emit = defineEmits(['on-search']);
 const router = useRouter();
 

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * SortableTableHeader.vue - A table header cell that includes sorting functionality. It displays a title with a sorting indicator (▲/▼),
  *   allowing users to sort the table by the corresponding column.
@@ -48,7 +48,7 @@
   </th>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const emit = defineEmits(['sort']);
 
 const props = defineProps({

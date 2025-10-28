@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * ApiResultRow.vue -> Sub-component of ResultsTable. Displays a single
  * result returned by the API as a a table row (<tr> element). Typically
@@ -50,7 +50,7 @@
   </tr>
 </template>
 
-<script setup>
+<script setup lang="ts">
 defineProps({
   data: { type: Object, default: () => {} }, // Open5e data to render
   cols: { type: Array, default: () => [] }, // Arr. of table columns to render

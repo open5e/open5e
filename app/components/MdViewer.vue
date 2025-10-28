@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * MdViewer.vue - Renders Markdown content as HTML. Essentially a wrapper for
  * the VueShowdown library with a few extensions for parsing certain custom
@@ -37,7 +37,7 @@
   />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { VueShowdown } from 'vue-showdown';
 
 const props = defineProps({
