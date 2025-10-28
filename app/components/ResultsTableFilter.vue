@@ -123,7 +123,7 @@
           @input="
             filterState.updateField(
               checkbox.filterField,
-              $event.target.checked ? true : undefined,
+              ($event.target as HTMLInputElement)?.checked ? true : false,
             )
           "
         />

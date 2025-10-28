@@ -56,7 +56,7 @@ const router = useRouter();
 
 const query = ref('');
 
-function doSearch(query) {
+function doSearch(query: string) {
   emit('on-search');
   router.push({ name: 'search', query: { text: query } });
 }
