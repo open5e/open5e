@@ -78,12 +78,12 @@
       </dt>
       <dd
         class="w-min cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
-        @click="useDiceRoller(initiativeBonus, {
+        @click="rollDice(initiativeBonus, {
           title: 'Initiative',
           subtitle: monster.name
         })"
       >
-        {{ useFormatModifier(initiativeBonus) }}
+        {{ formatModifier(initiativeBonus) }}
       </dd>
 
       <!-- HIT POINTS -->
@@ -95,7 +95,7 @@
         <span
           v-if="monster.hit_dice"
           class="cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
-          @click="useDiceRoller(monster.hit_dice, {
+          @click="rollDice(monster.hit_dice, {
              title: 'Hit Points',
              subtitle: monster.name
           })"
@@ -143,12 +143,12 @@
           v-for="(modifier, skill) in monster.skill_bonuses"
           :key="skill"
           class="inline cursor-pointer font-bold capitalize text-blood after:text-black after:content-[',_'] last:after:content-[] hover:text-black dark:after:text-white dark:hover:text-fog"
-          @click="useDiceRoller(modifier.toString(), {
+          @click="rollDice(modifier.toString(), {
              title: skill,
              subtitle: monster.name
           })"
         >
-          {{ `${skill} ${useFormatModifier(modifier)}` }}
+          {{ `${skill} ${formatModifier(modifier)}` }}
         </li>
       </ul>
 
@@ -265,7 +265,7 @@
           <span
             v-if="action.uses_type === 'RECHARGE_ON_ROLL'"
             class="cursor-pointer font-bold text-blood before:text-black before:content-['_('] after:text-black after:content-[')_'] hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
-            @click="useDiceRoller('1d6+0', {
+            @click="rollDice('1d6+0', {
               title: `${action.name} Recharge`,
               subtitle: monster.name,
             })"
@@ -318,7 +318,8 @@
 </template>
 
 <script setup lang="ts">
-import { useEncounterStore } from '~/composables/useEncounter';
+const rollDice = useDiceRoller();
+const formatModifier = useFormatModifier();
 
 const params = {
   environments__fields: 'name',

@@ -168,6 +168,8 @@
 </template>
 
 <script setup>
+import { sortDocumentsByPublisher } from '~/functions/sortDocumentsByPublisher';
+
 
 // fetch full list of document sources
 const { data: documents } = useDocuments({
@@ -193,18 +195,13 @@ const documentsInSystem = computed(() => {
   });
 });
 
-// TODO: PR #728 introduces a `sortDocumentsByPublisher` util function. Replace
-// the code below with that once #728 is merged to the `staging` branch
-
 // group filtered documents by publisher
 const groupedDocuments = computed(() => {
-  const docs = documentsInSystem.value ?? [];
-  return docs.reduce((grouped, document) => {
-    const publisher = document.publisher.name;
-    if (grouped[publisher]) grouped[publisher].push(document);
-    else grouped[publisher] = [document];
-    return grouped;
-  }, {});
+  const sortedDocuments = sortDocumentsByPublisher(documentsInSystem);
+
+  // Bring WotC sources to the top of the publisher list
+  const { ['Wizards of the Coast']: value, ...rest } = sortedDocuments;
+  return { ['Wizards of the Coast']: value, ...rest};
 });
 
 // state for current game system

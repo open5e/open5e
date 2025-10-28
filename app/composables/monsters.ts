@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/vue-query';
 import { API_ENDPOINTS, useAPI } from './api';
-import { useFormatModifier } from './useFormatModifier';
+
+const formatModifier = useFormatModifier();
 
 export type MonsterFilter = {
   name__icontains?: string; // filter by name (TODO)
@@ -29,7 +30,7 @@ export const useMonster = (slug: string) => {
         name: ability,
         shortName: ability.slice(0, 3),
         score: monster[ability],
-        modifier: useFormatModifier(
+        modifier: formatModifier(
           monster[ability] as string | number | undefined,
           { inputType: 'score' },
         ),

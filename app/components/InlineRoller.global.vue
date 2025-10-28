@@ -17,7 +17,7 @@
 <template>
   <span
     class="cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
-    @click="useDiceRoller(signature)"
+    @click="rollDice(signature)"
   >
     <slot />
   </span>
@@ -27,4 +27,6 @@
 defineProps({
   signature: { type: String, default: '' },
 });
+
+const rollDice = useDiceRoller();
 </script>
