@@ -432,7 +432,7 @@ const addToEncounter = () => {
   encounterStore.addMonster(
     monster.value.key,
     monster.value.name,
-    monster.value.challenge_rating_decimal,
+    parseFloat(monster.value.challenge_rating_decimal),
     monster.value.challenge_rating_text,
   );
 };

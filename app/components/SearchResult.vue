@@ -93,6 +93,8 @@
 </template>
 
 <script setup lang="ts">
+import type { SearchResult } from '@/types';
+
 defineProps({
   query: { type: String, default: '' },
   result: { type: Object, default: () => {} },
@@ -120,7 +122,7 @@ const endpoints = {
 };
 
 // Takes a search result and generates its URL on the Open5e website
-const formatUrl = (input) => {
+const formatUrl = (input: SearchResult) => {
   let baseUrl = endpoints[input.object_model] ?? input.object_model;
 
   // non-magic items link to /equipment route
@@ -143,9 +145,9 @@ const formatUrl = (input) => {
 };
 
 // Takes the API endpoint a result is pulled from and returns
-const formatCategory = (input) => {
+const formatCategory = (input: SearchResult) => {
   // Insert spaces into PascalCase text
-  const category = input.object_model.match(/[A-Z][a-z]+/g).join(' ');
+  const category = input.object_model.match(/[A-Z][a-z]+/g)?.join(' ');
   // Creatures -> Monsters
   if (category === 'Creature') return 'Monster';
   // Items (Magic) -> 'Magic Item'
@@ -163,11 +165,6 @@ const formatCategory = (input) => {
   if (input?.object?.subspecies_of)
     return `${input.object.subspecies_of.name} Subspecies`;
   return category; // BASE-CASE: return category without alteration
-
-  if (category === 'Rule') return 'Rules';
-
-  // BASE-CASE: return category without alteration
-  return category;
 };
 </script>
 

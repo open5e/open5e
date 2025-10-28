@@ -23,7 +23,7 @@
 
 <template>
   <th
-    :aria-sort="isSortDescending"
+    :aria-sort="isSortDescending ? 'descending' : 'ascending'"
     class="align-baseline"
     :class="{ 'hidden sm:table-cell': isLeastPriority }"
   >
@@ -66,9 +66,9 @@ const subsitutions = {
   cr: 'CR',
 };
 
-const format = (input) => {
-  if (subsitutions[input]) {
-    return subsitutions[input];
+const format = (input: string) => {
+  if (input in subsitutions) {
+    return subsitutions[input as keyof typeof subsitutions];
   }
   // Replace underscores w/ spaces and capitalise initials
   return input

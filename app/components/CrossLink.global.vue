@@ -34,13 +34,15 @@
   <span
     v-else
     class="italic"
-  ><slot /></span>
+  >
+    <slot />
+  </span>
 </template>
 
 <script setup lang="ts">
 import axios from 'axios';
 
-defineProps({ src: { type: String, default: '' } });
+const props = defineProps({ src: { type: String, default: '' } });
 
 const loading = ref(false);
 const content = ref(undefined);
