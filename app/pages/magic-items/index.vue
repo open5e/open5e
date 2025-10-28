@@ -51,7 +51,6 @@
     />
 
     <ResultsTable
-      v-model="debouncedFilter"
       :data="data?.results"
       :cols="[
         {

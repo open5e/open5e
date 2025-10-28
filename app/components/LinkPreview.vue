@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * LinkPreview - A card that displays detailed information about a specific category of content.
  *

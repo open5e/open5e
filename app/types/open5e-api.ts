@@ -1823,8 +1823,9 @@ export interface components {
             order_in_statblock: number;
             legendary_action_cost: number;
             limited_to_form: string;
-            readonly usage_limits: {
-                [key: string]: unknown;
+            readonly usage_limits?: {
+                type: string,
+                param: number,
             };
         };
         /**
@@ -3553,12 +3554,13 @@ export interface components {
             survival: number;
         };
         speed: {
-            readonly walk: string;
-            readonly fly: string;
-            readonly swim: string;
-            readonly climb: string;
-            readonly burrow: string;
-            hover: boolean;
+            readonly walk?: string;
+            readonly fly?: string;
+            readonly swim?: string;
+            readonly climb?: string;
+            readonly burrow?: string;
+            hover?: boolean;
+            readonly unit?: string;
         };
         speed_all: {
             readonly unit: string;

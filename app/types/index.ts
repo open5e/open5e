@@ -7,6 +7,7 @@ export type ClassSummary = components['schemas']['CharacterClassSummary'];
 export type ClassFeature = components['schemas']['ClassFeature'];
 export type Condition = components['schemas']['Condition'];
 export type Creature = components['schemas']['Creature'];
+export type CreatureAction = components['schemas']['CreatureAction'];
 export type CreatureTypeSummary = components['schemas']['CreatureTypeSummary']
 export type Feat = components['schemas']['Feat'];
 export type License = components['schemas']['License'];

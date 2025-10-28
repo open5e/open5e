@@ -23,18 +23,9 @@
   <table>
     <thead>
       <tr>
-        <th rowspan="2">
-          Level
-        </th>
-        <th
-          v-if="proficiencies"
-          rowspan="2"
-        >
-          Proficiency Bonus
-        </th>
-        <th rowspan="2">
-          Features
-        </th>
+        <th rowspan="2">Level</th>
+        <th v-if="proficiencies" rowspan="2">Proficiency Bonus</th>
+        <th rowspan="2">Features</th>
         <th
           v-for="title in additionalColumnHeaders"
           :key="title"

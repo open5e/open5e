@@ -28,19 +28,19 @@
     </div>
 
     <img
-      v-if="monster.img_main"
-      :src="monster.img_main"
-      :alt="monster.name"
+      v-if="monster.illustration"
+      :src="monster.illustration.file_url"
+      :alt="monster.illustration.alt_text"
       class="img-main"
     />
     <p class="italic">
       <span>{{ `${monster.size.name} ${monster.type.name}` }}</span>
 
       <span
-        v-if="monster.subtype"
+        v-if="monster.subcategory"
         class="before:content-['_('] after:content-[')']"
       >
-        {{ monster.subtype }}
+        {{ monster.subcategory }}
       </span>
 
       <span
@@ -53,7 +53,6 @@
       <SourceTag
         :title="monster.document.name"
         :text="monster.document.key"
-        :description="monster.document.source"
       />
     </p>
 
@@ -234,7 +233,7 @@
       <ul id="traits-list">
         <li
           v-for="trait in monster.traits"
-          :key="trait.key"
+          :key="trait.name"
           class="my-1"
         >
           <span class="font-bold after:content-['._']">
@@ -250,45 +249,41 @@
     </section>
 
     <!-- CREATURE ACTIONS -->
-    <section
+    <template
       v-for="(actionsByType, actionType) in actions"
-      :key="actionsByType"
+      :key="actionType"
     >
-      <h2>{{ snakeToTitleCase(actionType) }}</h2>
-      <ul>
-        <li
-          v-for="action in actionsByType"
-          :key="action.name"
-          class="my-1"
-        >
-          <span class="font-bold after:content-['_']">{{ action.name }}</span>
-          <span
-            v-if="action.uses_type === 'RECHARGE_ON_ROLL'"
-            class="cursor-pointer font-bold text-blood before:text-black before:content-['_('] after:text-black after:content-[')_'] hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
-            @click="rollDice('1d6+0', {
-              title: `${action.name} Recharge`,
-              subtitle: monster.name,
-            })"
+      <section v-if="actionsByType.length > 0">
+        <h2>{{ snakeToTitleCase(actionType + "s") }}</h2>
+        <ul>
+          <li
+            v-for="action in actionsByType"
+            :key="action.name"
+            class="my-1"
           >
-            {{
-              'Recharge '
-                + (action.uses_param < 6 ? `${action.uses_param}-6` : '6')
-            }}
-          </span>
-          <md-viewer
-            inline="true"
-            :text="action.desc"
-            :use-roller="true"
-          />
-        </li>
-      </ul>
-    </section>
-
-    <!-- DESCRIPTION -->
-    <section v-if="monster.desc">
-      <h2>Description</h2>
-      <md-viewer :text="monster.desc" />
-    </section>
+            <span class="font-bold after:content-['_']">{{ action.name }}</span>
+            <span
+              v-if="action.usage_limits?.type === 'RECHARGE'"
+              class="cursor-pointer font-bold text-blood before:text-black before:content-['_('] after:text-black after:content-[')_'] hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
+              @click="rollDice('1d6+0', {
+                title: `${action.name} Recharge`,
+                subtitle: monster.name,
+              })"
+            >
+              {{
+                'Recharge '
+                  + (action.usage_limits.param < 6 ? `${action.usage_limits.param}-6` : '6')
+              }}
+            </span>
+            <MdViewer
+              :inline="true"
+              :text="action.desc"
+              :use-roller="true"
+            />
+          </li>
+        </ul>
+      </section>
+    </template>
 
     <hr class="my-4 h-[2px] w-[32rem] border-none bg-white bg-gradient-to-r from-fireball dark:bg-darkness dark:from-blood" />
 
@@ -297,7 +292,7 @@
       <span class="font-bold">Environments: </span>
       <span
         v-for="environemnt in monster.environments"
-        :key="environemnt.id"
+        :key="environemnt.key"
         class="text-sm after:content-['.'] [&:not(:last-child)]:after:content-[',_']"
       >
         {{ environemnt.name }}
@@ -318,6 +313,8 @@
 </template>
 
 <script setup lang="ts">
+import type { CreatureAction } from '@/types';
+
 const rollDice = useDiceRoller();
 const formatModifier = useFormatModifier();
 
@@ -341,27 +338,39 @@ const initiativeBonus = computed(() => {
   return monster.value.initiative_bonus ?? monster.value.modifiers?.dexterity;
 });
 
+type ActionType = 'ACTION' | 'BONUS_ACTION' | 'REACTION' | 'LEGENDARY_ACTION' | 'LAIR_ACTION';
+
 // Sort monster actions by type (ie. 'action', 'bonus action', 'reaction').
 // rtrns an object whose keys are action types & vals are arrays of actions.
 const actions = computed(() => {
   if (!monster?.value?.actions) return {};
-  const actionsByType = monster.value.actions.reduce(
+
+  const actionsByType = monster.value.actions.reduce<Record<ActionType, CreatureAction[]>>(
     (output, action) => {
       const { action_type: actionType } = action;
+      if (!actionType) return output;
       if (output[actionType]) output[actionType].push(action);
       else output[actionType] = [action];
       return output;
     },
-    { ACTION: [] },
+    {
+      'ACTION': [] as CreatureAction[],
+      'BONUS_ACTION': [] as CreatureAction[],
+      'REACTION': [] as CreatureAction[],
+      'LEGENDARY_ACTION': [] as CreatureAction[],
+      'LAIR_ACTION': [] as CreatureAction[]
+    },
   );
 
   // sort monster actions according to the value of their 'order' field
   Object.keys(actionsByType).forEach((type) => {
-    actionsByType[type].sort((a, b) => a['order_in_statblock'] - b['order_in_statblock']);
+    actionsByType[type as ActionType].sort(
+      (a: CreatureAction, b: CreatureAction) => a['order_in_statblock'] - b['order_in_statblock']
+    );
   });
 
   return actionsByType;
-});
+}) as ComputedRef<Record<ActionType, CreatureAction[]>>;
 
 // Converts SNAKE_CASE to Title Case, used for action type headers
 const snakeToTitleCase = (input: string) =>
@@ -384,21 +393,22 @@ const speeds = computed(() => {
 // assemble senses from multiple fields
 const senses = computed(() => {
   if (!monster?.value) return {};
-  const senses = {};
-  if (monster.value.darkvision_range) {
-    senses['Darkvision'] = monster.value.darkvision_range + ' ft.';
-  }
-  if (monster.value.blindsight_range) {
-    senses['Blindsight'] = monster.value.blindsight_range + ' ft.';
-  }
-  if (monster.value.tremorsense_range) {
-    senses['Tremorsense'] = monster.value.tremorsense_range + ' ft.';
-  }
-  if (monster.value.truesight_range) {
-    senses['Truesight'] = monster.value.truesight_range + ' ft.';
-  }
-  senses['Passive Perception'] = monster.value.passive_perception;
-  return senses;
+
+  const {
+    darkvision_range: darkvision,
+    blindsight_range: blindsight,
+    tremorsense_range: tremorsense,
+    truesight_range: truesight,
+    passive_perception: passivePerception,
+  } = monster.value;
+
+  return {
+    ...(darkvision && { 'Darkvision': darkvision + ' ft.' }),
+    ...(blindsight && { 'Blindsight': blindsight + ' ft.' }),
+    ...(tremorsense && {'Tremorsense': tremorsense + ' ft.' }),
+    ...(truesight && { 'Truesight': truesight + ' ft.' }),
+    ...(passivePerception && { 'Passive Perception': passivePerception})
+  };
 });
 
 // Format monster immunities, resistances, and vulnerabilities as an iterable

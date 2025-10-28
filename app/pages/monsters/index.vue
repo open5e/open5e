@@ -69,7 +69,6 @@
     />
 
     <ResultsTable
-      v-model="debouncedFilter"
       :data="data?.results"
       :cols="[
         {
@@ -142,7 +141,7 @@
 <script setup lang="ts">
 import { h } from 'vue';
 import { PlusIcon, MinusIcon } from '@heroicons/vue/24/solid';
-import type { Monster } from '~/types/monster';
+import type { Monster } from '@/types';
 
 // Set up filters
 const filterState = useFilterState<MonsterFilter>({
@@ -199,7 +198,7 @@ const addToEncounter = (monster: Monster) => {
   encounterStore.addMonster(
     monster.key,
     monster.name,
-    monster.challenge_rating_decimal,
+    parseFloat(monster.challenge_rating_decimal),
     monster.challenge_rating_text,
   );
 };
