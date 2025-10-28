@@ -40,7 +40,7 @@ const baseClassId = useQueryParameter('className');
 const { data: subclassData } = useFindOne(API_ENDPOINTS.classes, subclassId,
   {
     params: {
-      is_subclass: true,
+      is_subclass: 'true',
       subclass_of: baseClassId,
       fields: ['name', 'desc', 'key', 'features'].join(','),
     },
@@ -50,7 +50,7 @@ const { data: subclassData } = useFindOne(API_ENDPOINTS.classes, subclassId,
 usePageMetadata({ title: computed(() => subclassData.value?.name) });
 
 const features = computed(() => {
-  const features = subclassData.value.features;
+  const features = subclassData.value?.features;
   if (!features) return [];
   return [...features].sort(
     (a, b) => (a.gained_at?.[0]?.level ?? 1) - (b.gained_at?.[0]?.level ?? 1),

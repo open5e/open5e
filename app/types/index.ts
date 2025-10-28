@@ -4,10 +4,12 @@ import type { components } from './open5e-api';
 export type Background = components['schemas']['Background'];
 export type Class = components['schemas']['CharacterClass'];
 export type ClassSummary = components['schemas']['CharacterClassSummary'];
+export type ClassFeature = components['schemas']['ClassFeature'];
 export type Condition = components['schemas']['Condition'];
 export type Creature = components['schemas']['Creature'];
 export type CreatureTypeSummary = components['schemas']['CreatureTypeSummary']
 export type Feat = components['schemas']['Feat'];
+export type License = components['schemas']['License'];
 export type Rule = components['schemas']['Rule'];
 export type RuleSet = components['schemas']['RuleSet'];
 export type SearchResult = components['schemas']['SearchResult'];

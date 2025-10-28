@@ -19,7 +19,10 @@
 </template>
 
 <script setup lang="ts">
-const { data: licenses } = useFindMany(API_ENDPOINTS.licenses, {
+import type { License } from '@/types';
+const { data } = useFindMany(API_ENDPOINTS.licenses, {
   fields: ['name', 'key'].join(',')
 });
+
+const licenses = data as Ref<License[]>;
 </script>

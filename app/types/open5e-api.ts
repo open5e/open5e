@@ -1663,7 +1663,15 @@ export interface components {
              * @enum {string}
              */
             feature_type?: 'CORE_TRAITS_TABLE' | 'CLASS_LEVEL_FEATURE' | 'CLASS_FEATURE_OPTION_LIST' | 'CLASS_TABLE_DATA' | 'PROFICIENCIES' | 'PROFICIENCY_BONUS' | 'STARTING_EQUIPMENT' | 'SPELL_SLOTS';
-            readonly feature_items: components['schemas']['ClassFeaturePrefetch'][];
+            readonly gained_at?: {
+                level: number;
+                detail?: string | null;
+            }[];
+            readonly data_for_class_table: {
+                /** @description The value that should be displayed in the table column (where applicable). */
+                level: number;
+                column_value?: string | null;
+            }[]
         };
         /**
          * @description Much of the logic included in the GameContentSerializer is intended to

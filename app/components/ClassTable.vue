@@ -115,13 +115,14 @@
 
 <script setup lang="ts">
 import { titleCaseToKebabCase } from '~/functions/titleCaseToKebabCase';
+import type { ClassFeature } from '@/types';
 
-const props = defineProps({
-  classFeatures: { type: Object, default: () => {} },
-  proficiencyBonus: { type: Object, default: () => {} },
-  spellSlots: { type: Array, default: () => [] },
-  classResourceTableColumns: { type: Array, default: () => [] },
-});
+const props = defineProps<{
+  classFeatures?: ClassFeature;
+  proficiencyBonus?: object;
+  spellSlots?: ClassFeature[];
+  classResourceTableColumns?: ClassFeature[];
+}>();
 
 // Parse proficiency bonuses
 const proficiencies = computed(() => {
@@ -135,14 +136,18 @@ const proficiencies = computed(() => {
 
 // returns an array of additional columns used in this class's
 const additionalColumnHeaders = computed(() => {
-  if (props.classResourceTableColumns.length === 0) return;
-  return props.classResourceTableColumns.map(column => column.name);
+  const { classResourceTableColumns } = props;
+  if (!classResourceTableColumns || classResourceTableColumns?.length === 0) return;
+  return classResourceTableColumns.map(column => column.name);
 });
 
 // parse additional class table data into a nested dict:
 // columnTitle -> level -> value
 const classResourceTableData = computed(() => {
-  return props.classResourceTableColumns.reduce((acc, column) => {
+  const { classResourceTableColumns } = props;
+  if (!classResourceTableColumns) return {};
+
+  return classResourceTableColumns.reduce((acc, column) => {
     const { name: colName, data_for_class_table: valuePerLevel } = column;
     if (!acc[colName]) acc[colName] = {};
     valuePerLevel.forEach(({ level, column_value: value }) => {
@@ -162,7 +167,7 @@ const spellslotColumnHeaders = computed(() => {
 // Class Level -> Spell Level -> Number of spell slots
 const spellSlotTableData = computed(() => {
   const data = props.spellSlots;
-  return data.reduce((acc, feature) => {
+  return data?.reduce((acc, feature) => {
     const { name: spellLevel, data_for_class_table: slotsPerCharLevel } = feature;
     slotsPerCharLevel.forEach((item) => {
       const { level: classLevel, column_value: spellSlots } = item;
@@ -175,7 +180,7 @@ const spellSlotTableData = computed(() => {
 });
 
 // Gets number of spell slots per class/spell level. Handles null-exceptions
-const getSpellSlots = (classLevel, spellLevel) => {
+const getSpellSlots = (classLevel: number, spellLevel: string) => {
   const data = spellSlotTableData.value;
   const slotsPerClassLevel = data[classLevel];
   if (!slotsPerClassLevel) return '-';

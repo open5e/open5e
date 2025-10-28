@@ -31,12 +31,13 @@ export interface EndpointToFindOneTypeMap {
   'v2/conditions/': Schemas['Condition'];
   'v2/documents/': Schemas['Document'];
   'v2/feats/': Schemas['Feat'];
-  'v2/items/': Schemas['Item'];
   'v2/creatures/': Schemas['Creature'];
+  'v2/items/': Schemas['Item'];
   'v2/search/': Schemas['SearchResult'];
   'v2/species/': Schemas['Species'];
   'v2/spells/': Schemas['Spell'];
   'v2/rulesets/': Schemas['RuleSet'];
+  'v2/licenses/': Schemas['License'];
 }
 
 export interface EndpointToPaginatedTypeMap {

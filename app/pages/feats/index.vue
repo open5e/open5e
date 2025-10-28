@@ -46,7 +46,7 @@
 const filterState = useFilterState<{ name__icontains: string }>({
   key: 'feats',
   fields: {
-    name__contains: '',
+    name__icontains: '',
   },
 });
 

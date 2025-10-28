@@ -150,7 +150,7 @@ defineProps<
       name: string;
       filterField: string;
     };
-    selectFields: {
+    selectFields?: {
       name: string;
       filterField: string;
       options: { name: string; value: string }[];

@@ -110,6 +110,7 @@ const filterState = useFilterState<SpellFilter>({
   key: 'spells',
   fields: {
     name__contains: '',
+    level: '',
     school__key: '',
     classes__key__in: '',
   },

@@ -170,7 +170,6 @@
 <script setup lang="ts">
 import { sortDocumentsByPublisher } from '~/functions/sortDocumentsByPublisher';
 
-
 // fetch full list of document sources
 const { data: documents } = useDocuments({
   fields: ['key', 'name', 'publisher', 'gamesystem'].join(','),

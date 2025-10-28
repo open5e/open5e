@@ -58,7 +58,7 @@
           class="after:ml-2 after:content-['|'] last:after:content-none"
         >
           <nuxt-link
-            :to="`/classes/${useRoute().params.className}/${subclass.key}`"
+            :to="`/classes/${classId}/${subclass.key}`"
           >
             {{ subclass.name }}
           </nuxt-link>
@@ -73,7 +73,7 @@
     <!-- Class Table -->
     <section>
       <h2>The {{ classData.name }}</h2>
-      <class-table
+      <ClassTable
         :class-features="formatFeaturesForTable(features.classFeatures)"
         :proficiency-bonus="features.proficiencyBonuses"
         :spell-slots="features.spellSlots"
@@ -90,7 +90,10 @@
           :key="feature.key"
         >
           <h3>
-            <span v-if="feature.gained_at.length > 0" class="text-granite">
+            <span 
+              v-if="feature.gained_at && feature.gained_at.length > 0"
+              class="text-granite"
+            >
               {{ `Level ${findFeatureLowestLevel(feature)}: `  }}
             </span>
             <span>{{ feature.name }}</span>
@@ -120,20 +123,15 @@
 
 <script setup lang="ts">
 import { titleCaseToKebabCase } from '~/functions/titleCaseToKebabCase';
+import type { ClassFeature } from '~/types';
 
 const classId = useQueryParameter('className');
+const fieldsToFetch = ['desc', 'features', 'hit_points', 'key', 'name', 'subclasses'].join(',');
 const { data: classData } = useFindOne(API_ENDPOINTS.classes, classId,
   {
     params: {
-      is_subclass: false,
-      fields: [
-        'desc',
-        'features',
-        'hit_points',
-        'key',
-        'name',
-        'subclasses',
-      ].join(),
+      is_subclass: 'false',
+      fields: fieldsToFetch,
     },
   },
 );
@@ -143,8 +141,19 @@ usePageMetadata({ title: computed(() => classData.value?.name) });
 // fetch subclasses to generate links
 const { data: subclasses } = useFindMany(API_ENDPOINTS.classes, {
   fields: ['key', 'name', 'document'].join(','),
-  subclass_of: useRoute().params.className,
+  subclass_of: classId,
 });
+
+interface FeaturesByType {
+  classFeatures: ClassFeature[],
+  classTableColumnData: ClassFeature[],
+  classOptionLists: ClassFeature[],
+  coreTraitsTable?: ClassFeature,
+  proficiencies: ClassFeature[],
+  proficiencyBonuses?: ClassFeature,
+  spellSlots: ClassFeature[],
+  startingEquipment: ClassFeature[],
+}
 
 // sorts features into separate arrays based on the type of that feature
 const features = computed(() => {
@@ -168,23 +177,21 @@ const features = computed(() => {
       return acc;
     },
     {
-      classFeatures: [],
-      classTableColumnData: [],
-      classOptionLists: [],
-      coreTraitsTable: undefined,
-      proficiencies: [],
-      proficiencyBonuses: undefined,
-      spellSlots: [],
-      startingEquipment: [],
+      classFeatures: [] as ClassFeature[],
+      classTableColumnData: [] as ClassFeature[],
+      classOptionLists: [] as ClassFeature[],
+      coreTraitsTable: undefined as ClassFeature | undefined,
+      proficiencies: [] as ClassFeature[],
+      proficiencyBonuses: undefined as ClassFeature | undefined,
+      spellSlots: [] as ClassFeature[],
+      startingEquipment: [] as ClassFeature[],
     },
   );
-});
+}) as ComputedRef<FeaturesByType>;
 
 // Formatting of fields is handled here to keep the template markup legible
 const hitPoints = computed(() => {
-  if (!classData?.value?.hit_points) {
-    return [];
-  }
+  if (!classData?.value?.hit_points) return [];
   return [
     { title: 'Hit Dice', data: classData.value.hit_points.hit_dice_name },
     {
@@ -199,8 +206,9 @@ const hitPoints = computed(() => {
 });
 
 // helper - takes an ability and if it gained at multiple lvls rtrns the lowest
-const findFeatureLowestLevel = (feature) => {
-  const gainedAt = feature.gained_at;
+const findFeatureLowestLevel = (feature: ClassFeature) => {
+  const { gained_at: gainedAt } = feature;
+  if (!gainedAt) return;
   if (gainedAt.length === 0) return;
   if (gainedAt.length === 1) return gainedAt[0].level;
   const lowestLevel = gainedAt.reduce((acc, value) => {
@@ -210,8 +218,9 @@ const findFeatureLowestLevel = (feature) => {
 };
 
 // takes a feature and returns an array item for every lvl in the gained_at field
-const featureToStubs = (feature) => {
+const featureToStubs = (feature: ClassFeature) => {
   const { gained_at: gainedAt } = feature;
+  if (!gainedAt) return [];
   return gainedAt.map(atLevel => ({
     name: feature.name,
     detail: atLevel.detail,
@@ -219,7 +228,7 @@ const featureToStubs = (feature) => {
   }));
 };
 
-const formatFeaturesForTable = (features) => {
+const formatFeaturesForTable = (features: ClassFeature[]) => {
   if (!features || features?.length === 0) return {};
   return features.reduce((output, feature) => {
     const featureStubs = featureToStubs(feature);
@@ -246,5 +255,5 @@ const featuresPerLevel = computed(() => {
 // flattens the featuresPerLevel obj to create array of features sorted by lvl
 const featuresInOrder = computed(() =>
   Object.values(featuresPerLevel.value).flat(),
-);
+) as Ref<ClassFeature[]>;
 </script>
