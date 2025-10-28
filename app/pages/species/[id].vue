@@ -75,6 +75,9 @@ const { data: species } = useFindOne(API_ENDPOINTS.species, useRoute().params.id
   params: { subspecies_of__isnull: true },
 });
 
+usePageMetadata({ title: computed(() => species.value?.name) });
+
+
 const { data: subspecies } = useFindMany(API_ENDPOINTS.species, {
   subspecies_of__key__in: useRoute().params.id,
 });

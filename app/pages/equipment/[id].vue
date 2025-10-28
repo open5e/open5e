@@ -142,6 +142,8 @@ const { data: item } = useFindOne(
   { is_magic_item: false },
 );
 
+usePageMetadata({ title: computed(() => item.value?.name) });
+
 const formatCost = (input) => {
   const [gold, rest] = input.split('.');
   const [silver, copper] = rest.split('');

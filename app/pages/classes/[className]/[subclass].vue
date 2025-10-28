@@ -6,12 +6,20 @@
     <h1>{{ subclassData.name }}</h1>
     <!-- CLASS ABILITIES -->
     <section>
+      <MdViewer v-if="subclassData.desc" :text="subclassData.desc"/>
+
       <ul v-if="features.length > 0">
         <li
           v-for="feature in features"
           :key="feature.key"
         >
-          <h3>{{ feature.name }}</h3>
+        
+          <h3>
+            <span v-if="feature.gained_at.length > 0" class="text-granite">
+              {{ `Level ${feature.gained_at[0].level}: `  }}
+            </span>
+            <span>{{ feature.name }}</span>
+          </h3>
           <md-viewer
             :text="feature.desc"
             :header-level="3"
@@ -34,10 +42,12 @@ const { data: subclassData } = useFindOne(
     params: {
       is_subclass: true,
       subclass_of: useRoute().params.className,
-      fields: ['name', 'key', 'features'].join(','),
+      fields: ['name', 'desc', 'key', 'features'].join(','),
     },
   },
 );
+
+usePageMetadata({ title: computed(() => subclassData.value?.name) });
 
 const features = computed(() => {
   const features = subclassData.value.features;

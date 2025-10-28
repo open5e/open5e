@@ -86,6 +86,8 @@
 <script setup>
 const { data: spell } = useFindOne(API_ENDPOINTS.spells, useRoute().params.id);
 
+usePageMetadata({ title: computed(() => spell.value?.name) });
+
 function formatComponents(verbal, somatic, material) {
   const components = [];
   if (verbal) components.push('V');

@@ -8,31 +8,34 @@ type Breadcrumb = {
   src: string;
 };
 
-export const useBreadcrumbs = () => {
+export const useBreadcrumbs = (titleOverride?: Ref<string | undefined>) => {
   const route = useRoute();
   return computed(() => {
     let url = '';
-    return (
-      route.fullPath
-        .split('/')
-        .map((pathSegment) => {
-          // ignore initial & trailing slashes
-          if (pathSegment === '' || pathSegment === '/') return;
+    const breadcrumbs = route.fullPath
+      .split('/')
+      .map((pathSegment) => {
+        // ignore initial & trailing slashes
+        if (pathSegment === '' || pathSegment === '/') return;
 
-          // rebuild link urls segment by segment
-          url += `/${pathSegment}`;
+        // rebuild link urls segment by segment
+        url += `/${pathSegment}`;
 
-          // return a breadcrumb object
-          return {
-            ...generateTitles(pathSegment),
-            url,
-            src: pathSegment,
-          } as Breadcrumb;
-        })
-
-        // remove null-ish crumbs
-        .filter(breadcrumb => breadcrumb)
-    );
+        // return a breadcrumb object
+        return {
+          ...generateTitles(pathSegment),
+          url,
+          src: pathSegment,
+        } as Breadcrumb;
+      }).filter(breadcrumb => breadcrumb) as Breadcrumb[]; // rmv null crumbs
+    
+    // update title of final crumb is an override is provided
+    const titleOverideValue = unref(titleOverride);
+    if (titleOverideValue && breadcrumbs.length > 0) {
+      breadcrumbs[breadcrumbs.length - 1].title = titleOverideValue;
+    }
+      
+    return breadcrumbs;
   });
 };
 

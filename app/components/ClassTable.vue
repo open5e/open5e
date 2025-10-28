@@ -45,6 +45,7 @@
         <th
           v-if="spellslotColumnHeaders"
           :colspan="spellslotColumnHeaders.length"
+          class="text-center"
         >
           Spell Slots by Level
         </th>
@@ -96,6 +97,7 @@
       <td
         v-for="column in additionalColumnHeaders"
         :key="column"
+        class="text-center"
       >
         {{ classResourceTableData[column][level] ?? '-' }}
       </td>
@@ -103,6 +105,7 @@
       <td
         v-for="spellLevel in spellslotColumnHeaders"
         :key="spellLevel"
+        class="text-center"
       >
         {{ getSpellSlots(level, spellLevel) }}
       </td>

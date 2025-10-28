@@ -6,9 +6,15 @@
     <h1>{{ classData.name }}</h1>
     <section>
       <h2>Class Features</h2>
-      <p>As a {{ classData.name }} you gain the following features.</p>
 
-      <div v-if="hitPoints.length > 0">
+      <MdViewer v-if="classData.desc" :text="classData.desc"/>
+
+      <div v-if="features.coreTraitsTable" class="mt-4">
+        <label class="font-bold">{{ `Core ${classData.name} Traits` }}</label>
+        <MdViewer :text="features.coreTraitsTable.desc" />
+      </div>
+
+      <div v-if="!features.coreTraitsTable && hitPoints.length > 0">
         <h3>Hit Points</h3>
         <dl>
           <div
@@ -75,7 +81,7 @@
       />
     </section>
 
-    <!-- Class Abilities -->
+    <!-- Class abilities per level -->
     <section>
       <ul v-if="featuresInOrder.length > 0">
         <li
@@ -83,14 +89,28 @@
           :id="titleCaseToKebabCase(feature.name)"
           :key="feature.key"
         >
-          <h3>{{ feature.name }}</h3>
-          <md-viewer
+          <h3>
+            <span v-if="feature.gained_at.length > 0" class="text-granite">
+              {{ `Level ${findFeatureLowestLevel(feature)}: `  }}
+            </span>
+            <span>{{ feature.name }}</span>
+          </h3>
+          <MdViewer
             :text="feature.desc"
             :header-level="3"
           />
         </li>
       </ul>
     </section>
+
+    <!-- Class ability option lists -->
+    <section v-if="features.classOptionLists?.length > 0">
+      <template v-for="feature in features.classOptionLists" :key="feature.name">
+        <h2>{{ feature.name }}</h2>
+        <MdViewer :text="feature.desc" :header-level="1" />
+      </template>
+    </section>
+
   </main>
 
   <p v-else>
@@ -99,6 +119,7 @@
 </template>
 
 <script setup>
+import MdViewer from '~/components/MdViewer.vue';
 import { titleCaseToKebabCase } from '~/functions/titleCaseToKebabCase';
 
 const { data: classData } = useFindOne(
@@ -107,10 +128,19 @@ const { data: classData } = useFindOne(
   {
     params: {
       is_subclass: false,
-      fields: ['name', 'key', 'subclasses', 'features'].join(),
+      fields: [
+        'desc',
+        'features',
+        'hit_points',
+        'key',
+        'name',
+        'subclasses',
+      ].join(),
     },
   },
 );
+
+usePageMetadata({ title: computed(() => classData.value?.name) });
 
 // fetch subclasses to generate links
 const { data: subclasses } = useFindMany(API_ENDPOINTS.classes, {
@@ -124,24 +154,30 @@ const features = computed(() => {
   if (!featureData) return {};
   return featureData.reduce(
     (acc, feature) => {
+      if (!feature) return acc;
       const { feature_type: type } = feature;
       if (type === 'PROFICIENCY_BONUS') acc.proficiencyBonuses = feature;
+      else if (type === 'CORE_TRAITS_TABLE') acc.coreTraitsTable = feature;
       else if (type === 'SPELL_SLOTS') acc.spellSlots.push(feature);
       else if (feature.data_for_class_table.length > 0)
         acc.classTableColumnData.push(feature);
-      else if (type === 'CLASS_FEATURE') acc.classFeatures.push(feature);
+      else if (type === 'CLASS_LEVEL_FEATURE') acc.classFeatures.push(feature);
       else if (type === 'PROFICIENCIES') acc.proficiencies.push(feature);
       else if (type === 'STARTING_EQUIPMENT')
         acc.startingEquipment.push(feature);
+      else if (type === 'CLASS_FEATURE_OPTION_LIST')
+        acc.classOptionLists.push(feature);
       return acc;
     },
     {
       classFeatures: [],
+      classTableColumnData: [],
+      classOptionLists: [],
+      coreTraitsTable: undefined,
       proficiencies: [],
       proficiencyBonuses: undefined,
-      startingEquipment: [],
       spellSlots: [],
-      classTableColumnData: [],
+      startingEquipment: [],
     },
   );
 });

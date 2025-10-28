@@ -8,4 +8,5 @@
 <script setup>
 
 const { data: license } = useFindOne(API_ENDPOINTS.licenses, useRoute().params.id);
+usePageMetadata({ title: computed(() => license.value?.name) });
 </script>
