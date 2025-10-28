@@ -38,7 +38,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const { data: condition } = useFindOne(
   API_ENDPOINTS.conditions,
   useRoute().params.id,

@@ -68,7 +68,7 @@
   </p>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const { data: background } = useFindOne(
   API_ENDPOINTS.backgrounds,
   useRoute().params.id,

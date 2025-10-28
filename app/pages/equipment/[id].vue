@@ -135,7 +135,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const { data: item } = useFindOne(
   API_ENDPOINTS.equipment,
   useRoute().params.id,

@@ -15,7 +15,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const { data: ruleset } = useFindOne(API_ENDPOINTS.rules, useRoute().params.id);
 usePageMetadata({ title: computed(() => ruleset.value?.name) });
 

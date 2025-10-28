@@ -118,7 +118,7 @@
   </p>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import MdViewer from '~/components/MdViewer.vue';
 import { titleCaseToKebabCase } from '~/functions/titleCaseToKebabCase';
 

@@ -65,7 +65,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const searchText = useQueryParam('text');
 const { data } = useSearch(searchText);
 const { sources } = useSourcesList();

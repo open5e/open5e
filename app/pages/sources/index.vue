@@ -42,7 +42,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { sortDocumentsByPublisher } from '../../functions/sortDocumentsByPublisher';
 const { data: documents } = useDocuments();
 </script>

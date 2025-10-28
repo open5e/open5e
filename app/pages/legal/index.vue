@@ -18,7 +18,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const { data: licenses } = useFindMany(API_ENDPOINTS.licenses, {
   fields: ['name', 'key'].join(',')
 });

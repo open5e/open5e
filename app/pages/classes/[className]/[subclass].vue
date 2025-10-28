@@ -34,7 +34,7 @@
   </p>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const { data: subclassData } = useFindOne(
   API_ENDPOINTS.classes,
   useRoute().params.subclass,

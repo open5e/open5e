@@ -5,8 +5,7 @@
   </section>
 </template>
 
-<script setup>
-
+<script setup lang="ts">
 const { data: license } = useFindOne(API_ENDPOINTS.licenses, useRoute().params.id);
 usePageMetadata({ title: computed(() => license.value?.name) });
 </script>

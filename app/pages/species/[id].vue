@@ -70,7 +70,7 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const { data: species } = useFindOne(API_ENDPOINTS.species, useRoute().params.id, {
   params: { subspecies_of__isnull: true },
 });
