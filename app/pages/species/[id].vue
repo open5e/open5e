@@ -31,7 +31,7 @@
         </dd>
       </div>
     </dl>
-    <ul v-if="subspecies?.length > 0">
+    <ul v-if="subspecies && subspecies?.length > 0">
       <h2>Sub-species</h2>
       <li
         v-for="item in subspecies"

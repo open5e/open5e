@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/vue-query';
 import axios from 'axios';
 import { navigateTo, useRoute, useRuntimeConfig } from 'nuxt/app';
-import type { MaybeRef, Ref } from 'vue';
+import type { Ref } from 'vue';
 import { computed, unref } from 'vue';
 import { useSourcesList } from './useSourcesList';
 import type { components } from '~/types/open5e-api';
@@ -40,6 +40,21 @@ export interface EndpointToFindOneTypeMap {
   'v2/licenses/': Schemas['License'];
 }
 
+export interface EndpointToFindManyTypeMap {
+  'v2/backgrounds/': Schemas['Background'][];
+  'v2/classes/': Schemas['CharacterClass'][];
+  'v2/conditions/': Schemas['Condition'][];
+  'v2/documents/': Schemas['Document'][];
+  'v2/feats/': Schemas['Feat'][];
+  'v2/creatures/': Schemas['Creature'][];
+  'v2/items/': Schemas['Item'][];
+  'v2/search/': Schemas['SearchResult'][];
+  'v2/species/': Schemas['Species'][];
+  'v2/spells/': Schemas['Spell'][];
+  'v2/rulesets/': Schemas['RuleSet'][];
+  'v2/licenses/': Schemas['License'][];
+}
+
 export interface EndpointToPaginatedTypeMap {
   'v2/backgrounds/': Schemas['PaginatedBackgroundList'];
   'v2/classes/': Schemas['PaginatedCharacterClassList'];
@@ -71,11 +86,11 @@ export const useAPI = () => {
   });
 
   return {
-    findMany: async (
-      endpoint: string,
+    findMany: async <T extends keyof EndpointToFindManyTypeMap> (
+      endpoint: T,
       sources: string[],
       params: Record<string, unknown> = {},
-    ) => {
+    ): Promise<EndpointToFindManyTypeMap[T]> => {
       const formattedSources
         = sources.length > 0 ? sources.join(',') : 'no-sources';
       const res = await api.get(endpoint, {
@@ -86,7 +101,7 @@ export const useAPI = () => {
         },
       });
 
-      return res.data.results as Record<string, unknown>[];
+      return res.data.results;
     },
     findPaginated: async <T extends keyof EndpointToPaginatedTypeMap> (options: {
       endpoint: T;
@@ -133,9 +148,9 @@ export const useAPI = () => {
   };
 };
 
-export const useFindMany = (
-  endpoint: MaybeRef<string>,
-  params?: MaybeRef<Record<string, string | number | boolean>>,
+export const useFindMany = <T extends keyof EndpointToFindManyTypeMap> (
+  endpoint: T,
+  params?: Record<string, string | number | boolean>,
 ) => {
   const { findMany } = useAPI();
 
@@ -143,10 +158,10 @@ export const useFindMany = (
 
   return useQuery({
     queryKey: ['findMany', endpoint, sources, params],
-    queryFn: () =>
-      unref(
-        findMany(unref(endpoint), unref(sources), unref(params)),
-      ),
+    queryFn: async (): Promise<EndpointToFindManyTypeMap[T]> => {
+      const data = await findMany(unref(endpoint), unref(sources), unref(params));
+      return data;
+    }
   });
 };
 
