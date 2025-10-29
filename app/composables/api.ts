@@ -165,11 +165,16 @@ export const useFindMany = <T extends keyof EndpointToFindManyTypeMap> (
   });
 };
 
-export const useDocuments = (params: Record<string, unknown> = {}) => {
+export const useDocuments = (
+  params: Record<string, string> = {}
+) => {
   const { findMany } = useAPI();
   return useQuery({
     queryKey: ['findMany', API_ENDPOINTS.documents, params],
-    queryFn: () => findMany(API_ENDPOINTS.documents, [], params),
+    queryFn: async (): Promise<EndpointToFindManyTypeMap['v2/documents/']> => {
+      const data = await findMany(API_ENDPOINTS.documents, [], params);
+      return data;
+    }
   });
 };
 
