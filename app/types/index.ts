@@ -2,13 +2,15 @@ import type { components } from './open5e-api';
 
 // export basic data types returned by Open5e API
 export type Background = components['schemas']['Background'];
+export type BackgroundBenefit = components['schemas']['BackgroundBenefit'];
 export type Class = components['schemas']['CharacterClass'];
 export type ClassSummary = components['schemas']['CharacterClassSummary'];
 export type ClassFeature = components['schemas']['ClassFeature'];
 export type Condition = components['schemas']['Condition'];
 export type Creature = components['schemas']['Creature'];
 export type CreatureAction = components['schemas']['CreatureAction'];
-export type CreatureTypeSummary = components['schemas']['CreatureTypeSummary']
+export type CreatureTypeSummary = components['schemas']['CreatureTypeSummary'];
+export type Document = components['schemas']['Document'];
 export type Feat = components['schemas']['Feat'];
 export type License = components['schemas']['License'];
 export type Rule = components['schemas']['Rule'];
