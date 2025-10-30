@@ -66,23 +66,31 @@
 </template>
 
 <script setup lang="ts">
+import type { SearchResult } from '~/types';
+
 const searchText = useReactiveQueryParam('text');
 const { data } = useSearch(searchText);
 const { sources } = useSourcesList();
 
-const results = computed(() => {
-  if (!data || !data.value) {
-    return;
-  }
+interface SearchResultsPerScope {
+  inScope: SearchResult[];
+  outScope: SearchResult[];
+}
 
-  // split result based on which from currently selected sources
-  const [inScope, outScope] = data.value.reduce(
-    ([inScope, outScope], item) =>
-      sources.value.includes(item.document.key)
-        ? [[...inScope, item], outScope]
-        : [inScope, [...outScope, item]],
-    [[], []],
-  );
+const results = computed<SearchResultsPerScope>(() => {
+  const inScope: SearchResult[] = [];
+  const outScope: SearchResult[] = [];
+
+  if (!data || !data.value) return { inScope, outScope };
+
+  for (const item of data.value) {
+    if (sources.value.includes(item.document.key)) {
+      inScope.push(item as SearchResult);
+    } else {
+      outScope.push(item as SearchResult);
+    }
+  }
+  
   return { inScope, outScope };
 });
 

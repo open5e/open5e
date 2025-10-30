@@ -6,7 +6,7 @@
  * -= PROPS (INPUTS) =-
  * @prop {String} query - The search query. Used for highlighting matching text
  *   in the result snippet.
- * @prop {Object} result - A single search result rtn'd by /search endpoint
+ * @prop {SearchResult} result - A single search result rtn'd by /search endpoint
  *   @property {String} result.object_name - The name of the result returned
  *   @property {String} result.object_model - result's type (ie. Spell, Item)
  *   @property {Object} result.object - Extra data about the search result,
@@ -55,12 +55,7 @@
       v-if="result.object_model === 'Spell'"
       class="text-sm capitalize"
     >
-      {{
-        useFormatSpellSubtitle({
-          level: result.object.level,
-          school: result.object.school,
-        })
-      }}
+      {{ formatSpellTitle(result) }}
     </div>
 
     <span
@@ -87,7 +82,7 @@
     <MdViewer
       v-if="!result.object_name.toUpperCase().includes(query.toUpperCase())"
       class="text-sm italic text-granite dark:text-granite"
-      :markdown="stripMarkdownTables(result.highlighted)"
+      :markdown="stripMarkdownTables(result.highlighted ?? '')"
     />
   </li>
 </template>
@@ -95,10 +90,10 @@
 <script setup lang="ts">
 import type { SearchResult } from '@/types';
 
-defineProps({
-  query: { type: String, default: '' },
-  result: { type: Object, default: () => {} },
-});
+defineProps<{
+  query: string;
+  result: SearchResult;
+}>();
 
 function stripMarkdownTables(text: string) {
   // Remove table row markup but keep the content
@@ -123,14 +118,14 @@ const endpoints = {
 
 // Takes a search result and generates its URL on the Open5e website
 const formatUrl = (input: SearchResult) => {
-  let baseUrl = endpoints[input.object_model] ?? input.object_model;
+  let baseUrl = endpoints[input.object_model as keyof typeof endpoints] ?? input.object_model;
 
   // non-magic items link to /equipment route
   if (baseUrl === 'magic-items' && !input?.object?.is_magic_item)
     baseUrl = 'equipment';
 
   // subclass urls must be prepended by their base-class
-  if (input?.object?.subclass_of) baseUrl += `/${input.object.subclass_of.key}`;
+  if (input?.object?.subclass_of) baseUrl += `/${input.object.subclass_of?.key}`;
 
   // sub-species link to their base-species
   if (input?.object?.subspecies_of)
@@ -166,6 +161,12 @@ const formatCategory = (input: SearchResult) => {
     return `${input.object.subspecies_of.name} Subspecies`;
   return category; // BASE-CASE: return category without alteration
 };
+
+const formatSpellTitle = (result: SearchResult) => useFormatSpellSubtitle({
+  level: result.object?.level,
+  school: result.object?.school,
+});
+
 </script>
 
 <style>

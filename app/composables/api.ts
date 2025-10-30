@@ -1,7 +1,6 @@
 import { useQuery } from '@tanstack/vue-query';
 import axios from 'axios';
 import { navigateTo, useRoute, useRuntimeConfig } from 'nuxt/app';
-import type { Ref } from 'vue';
 import { computed, unref } from 'vue';
 import { useSourcesList } from './useSourcesList';
 import type { components } from '~/types/open5e-api';
@@ -178,7 +177,7 @@ export const useDocuments = (
   });
 };
 
-export const useSearch = (queryRef: Ref<string>) => {
+export const useSearch = (queryRef: ComputedRef<string>) => {
   const { findMany } = useAPI();
   return useQuery({
     queryKey: ['search', queryRef],
@@ -192,5 +191,5 @@ export const useSearch = (queryRef: Ref<string>) => {
   });
 };
 
-export const useReactiveQueryParam = (paramName: string) =>
-  computed(() => useRoute().query[paramName]);
+export const useReactiveQueryParam = (paramName: string): ComputedRef<string> =>
+  computed(() => useRoute().query[paramName] as string);

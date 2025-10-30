@@ -11,13 +11,13 @@
             ({{ 'requires attunement' }})
           </span>
         </em>
-        <source-tag
-          v-show="item.document__slug"
-          :title="item.document__title"
-          :text="item.document__slug"
+        <SourceTag
+          v-show="item.document.key"
+          :title="item.document.name"
+          :text="item.document.key"
         />
       </p>
-      <md-viewer :text="item.desc" />
+      <MdViewer :text="item.desc" />
       <p class="text-sm italic">
         Source:
         <a
@@ -39,5 +39,4 @@
 const itemId = useQueryParameter('id');
 const { data: item } = useFindOne(API_ENDPOINTS.magicitems, itemId);
 usePageMetadata({ title: computed(() => item.value?.name) });
-
 </script>

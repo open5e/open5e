@@ -16,7 +16,7 @@ export type Feat = components['schemas']['Feat'];
 export type License = components['schemas']['License'];
 export type Rule = components['schemas']['Rule'];
 export type RuleSet = components['schemas']['RuleSet'];
-export type SearchResult = components['schemas']['SearchResult'];
+export type SearchResult = components['schemas']['SearchResult'] & { object?: SearchObjectPayload };
 export type Size = components['schemas']['Size'];
 export type Species = components['schemas']['Species'];
 export type Spell = components['schemas']['Spell'];
@@ -34,3 +34,23 @@ export type Open5eData = components['schemas'][keyof components['schemas']] & {
   name: string;
   key: string;
 };
+
+
+// the `object` field of the SearchResult type returns irregularly typed data
+export type SearchObjectPayload = {
+  cr?: string;
+  type?: string;
+  size?: string;
+  subspecies_of?: {
+    name: string;
+    key: string;
+  };
+  subclass_of?: {
+    name: string;
+    key: string;
+  }
+  rarity?: string;
+  is_magic_item?: boolean;
+  school?: string;
+  level?: number;
+}

@@ -69,6 +69,8 @@
 </template>
 
 <script setup lang="ts">
+import type { BackgroundBenefit } from '~/types';
+
 const backgroundId = useQueryParameter('id');
 const { data: background } = useFindOne(
   API_ENDPOINTS.backgrounds,
@@ -83,6 +85,7 @@ const benefits = computed(() => {
   if (!background?.value) return {};
   const [proficiencies, features, flavour] = background.value.benefits.reduce(
     (acc, benefit) => {
+      if (!benefit.type) return acc;
       // sort profs, langs, equipment, &c into 'proficiencies'
       if (
         [
@@ -104,7 +107,7 @@ const benefits = computed(() => {
       // base-case: sort remaining benefits into 'flavour'
       return [acc[0], acc[1], [...acc[2], benefit]];
     },
-    [[], [], []],
+    [[], [], []] as [BackgroundBenefit[], BackgroundBenefit[], BackgroundBenefit[]],
   );
   return { proficiencies, features, flavour };
 });
