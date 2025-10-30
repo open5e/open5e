@@ -11,6 +11,7 @@ export type Creature = components['schemas']['Creature'];
 export type CreatureAction = components['schemas']['CreatureAction'];
 export type CreatureTypeSummary = components['schemas']['CreatureTypeSummary'];
 export type Document = components['schemas']['Document'];
+export type DocumentSummary = components['schemas']['DocumentSummary'];
 export type Feat = components['schemas']['Feat'];
 export type License = components['schemas']['License'];
 export type Rule = components['schemas']['Rule'];

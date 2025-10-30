@@ -64,8 +64,8 @@
   </div>
 </template>
 
-<script setup lang="ts" generic="T extends Open5eData">
-import type { Open5eData } from '@/types';
+<script setup lang="ts" generic="T extends Open5eData & { document?: DocumentSummary}">
+import type { DocumentSummary, Open5eData } from '@/types';
 
 // generic props interface that works with any API endpoint
 interface ResultsTableProps<T extends Open5eData> {
@@ -84,6 +84,7 @@ interface TableColumn<T extends Open5eData> {
   sortValue?: string;
   link?: (data: T) => string;
   isLeastPriority?: boolean;
+  customTemplate?: (data: T) => { render: () => VNode };
 };
 
 // define component props using inferred types

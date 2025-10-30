@@ -28,7 +28,7 @@
         {
           name: 'Type',
           filterField: 'type',
-          options: MONSTER_TYPES_LIST.map((monsterType) => ({
+          options: monsterTypes.map((monsterType) => ({
             name: monsterType,
             value: monsterType.toLowerCase(),
           })),
@@ -36,7 +36,7 @@
         {
           name: 'Size',
           filterField: 'size',
-          options: MONSTER_SIZES_LIST.map((monsterSize) => ({
+          options: monsterSizes.map((monsterSize) => ({
             name: monsterSize,
             value: monsterSize.toLowerCase(),
           })),
@@ -45,27 +45,20 @@
         {
           name: 'CR (min)',
           filterField: 'challenge_rating_decimal__gte',
-          options: MONSTER_CHALLENGE_RATINGS_MAP.map(([name, value]) => ({
+          options: monsterCRs.map(([name, value]) => ({
             name: name,
-            value: value,
+            value: value.toString(),
           })),
         },
         {
           name: 'CR (max)',
           filterField: 'challenge_rating_decimal__lte',
-          options: MONSTER_CHALLENGE_RATINGS_MAP.map(([name, value]) => ({
+          options: monsterCRs.map(([name, value]) => ({
             name: name,
-            value: value,
+            value: value.toString(),
           })),
         },
       ]"
-    />
-
-    <h3
-      ref="results"
-      class="sr-only"
-      tabindex="-1"
-      @keyup.esc="focusFilter"
     />
 
     <ResultsTable
@@ -99,7 +92,7 @@
           customTemplate: (data) => ({
             render: () => {
               const monsterInEncounter = encounterStore.monsters.value.find(
-                (m) => m.id === data.key,
+                (m) => m.key === data.key,
               );
               return h(
                 'div',
@@ -215,4 +208,9 @@ defineExpose({
   debouncedFilter,
   MONSTER_CHALLENGE_RATINGS_MAP,
 });
+
+// Reference constants to make them available in template
+const monsterTypes = MONSTER_TYPES_LIST;
+const monsterSizes = MONSTER_SIZES_LIST;
+const monsterCRs = MONSTER_CHALLENGE_RATINGS_MAP;
 </script>

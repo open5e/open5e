@@ -3,15 +3,11 @@ import { useLocalStorage } from '@vueuse/core';
 import { API_ENDPOINTS, useAPI } from '~/composables/api';
 import { usePartyStore } from '~/composables/useParty';
 import { useXPCalculator } from '~/composables/useXPCalculator';
+import type { Monster } from '~/types/monster';
 
-interface EncounterMonster {
-  id: string;
-  name: string;
-  challenge_rating_decimal: number;
-  challenge_rating_text: string;
+interface EncounterMonster extends Monster {
   count: number;
-  // Remainder will be populated by API call
-  [key: string]: string | number | unknown;
+  experience_points?: number;
 }
 
 export type { EncounterMonster };
@@ -94,35 +90,35 @@ export const useEncounterStore = () => {
     return budget.toLocaleString();
   };
 
-  const fetchMonsterData = async (id: string) => {
+  const fetchMonsterData = async (key: string) => {
     try {
       let data;
-      if (monsterCache.value[id]) {
-        data = monsterCache.value[id];
+      if (monsterCache.value[key]) {
+        data = monsterCache.value[key];
       } else {
-        if (!id) {
+        if (!key) {
           console.error('Cannot fetch monster data: ID is empty');
           return null;
         }
         data = await get(
           API_ENDPOINTS.monsters,
-          id,
+          key,
           '/?document__fields=name,key,permalink',
         );
-        monsterCache.value[id] = data;
+        monsterCache.value[key] = data;
       }
 
       // Update the monster in the list with the new data
-      const monster = monsters.value.find(m => m.id === id);
+      const monster = monsters.value.find(m => m.key === key);
       if (monster) {
         // Preserve the count and basic info while updating with API data
-        const { count, name, challenge_rating_decimal, challenge_rating_text }
+        const { count, name, challenge_rating_decimal, challenge_rating }
           = monster;
         Object.assign(monster, data, {
           count,
           name,
           challenge_rating_decimal,
-          challenge_rating_text,
+          challenge_rating_text: challenge_rating,
         });
       }
 
@@ -134,14 +130,14 @@ export const useEncounterStore = () => {
   };
 
   const addMonster = async (
-    id: string,
+    key: string,
     name: string,
     challenge_rating_decimal: number,
     challenge_rating_text: string,
   ) => {
     try {
       // First check if monster exists
-      const existingMonster = monsters.value.find(m => m.id === id);
+      const existingMonster = monsters.value.find(m => m.key === key);
       if (existingMonster) {
         existingMonster.count += 1;
         return;
@@ -149,10 +145,10 @@ export const useEncounterStore = () => {
 
       // Add monster with loading state
       monsters.value.push({
-        id,
+        key,
         name,
         challenge_rating_decimal,
-        challenge_rating_text,
+        challenge_rating: challenge_rating_text,
         count: 1,
         document: {
           name: 'Loading...',
@@ -161,7 +157,7 @@ export const useEncounterStore = () => {
       });
 
       // Then fetch the full monster data
-      const monsterData = await fetchMonsterData(id);
+      const monsterData = await fetchMonsterData(key);
       if (!monsterData) {
         console.error('Failed to fetch monster data');
         return;
@@ -171,8 +167,8 @@ export const useEncounterStore = () => {
     }
   };
 
-  const removeMonster = (id: string) => {
-    const index = monsters.value.findIndex(m => m.id === id);
+  const removeMonster = (key: string) => {
+    const index = monsters.value.findIndex(m => m.key === key);
     if (index === 1) return;
     if (monsters.value[index].count > 1) {
       monsters.value[index].count -= 1;
@@ -181,8 +177,8 @@ export const useEncounterStore = () => {
     }
   };
 
-  const incrementMonster = (id: string) => {
-    const monster = monsters.value.find(m => m.id === id);
+  const incrementMonster = (key: string) => {
+    const monster = monsters.value.find(m => m.key === key);
     if (monster) monster.count += 1;
   };
 

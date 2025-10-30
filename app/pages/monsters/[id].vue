@@ -439,6 +439,8 @@ const encounterStore = useEncounterStore();
 
 const addToEncounter = () => {
   if (!monster.value) return;
+  console.log('test');
+
   encounterStore.addMonster(
     monster.value.key,
     monster.value.name,
@@ -449,7 +451,7 @@ const addToEncounter = () => {
 
 const monsterInEncounter = computed(() => {
   if (!monster.value) return false;
-  return encounterStore.monsters.value.find(m => m.id === monster.value.key);
+  return encounterStore.monsters.value.find(m => m.key === monster.value.key);
 });
 
 const removeFromEncounter = () => {

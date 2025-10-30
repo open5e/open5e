@@ -34,8 +34,8 @@
             {{ col.value(data) }}
           </NuxtLink>
           <SourceTag
-            :text="data.document.key"
-            :title="data.document.name"
+            :text="data.document?.key"
+            :title="data.document?.name"
           />
         </span>
       </template>
@@ -50,9 +50,23 @@
   </tr>
 </template>
 
-<script setup lang="ts">
-defineProps({
-  data: { type: Object, default: () => {} }, // Open5e data to render
-  cols: { type: Array, default: () => [] }, // Arr. of table columns to render
-});
+<script setup lang="ts" generic="T extends Open5eData & { document?: DocumentSummary}">
+import type { DocumentSummary, Open5eData } from '@/types';
+
+interface TableColumn<T extends Open5eData> {
+  displayName: string;
+  value: (data: T) => string | number | boolean;
+  sortValue?: string;
+  link?: (data: T) => string;
+  isLeastPriority?: boolean;
+  customTemplate?: (data: T) => { render: () => VNode };
+}
+
+interface ResultsTableRowProps<T extends Open5eData> {
+  data: T;
+  cols: TableColumn<T>[];
+}
+
+defineProps<ResultsTableRowProps<T>>();
+
 </script>

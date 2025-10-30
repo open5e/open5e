@@ -51,13 +51,13 @@
       </h3>
       <div
         v-for="monster in monsters"
-        :key="monster.id"
+        :key="monster.key"
         class="flex items-start justify-between rounded bg-white p-2 dark:bg-gray-800"
       >
         <div class="flex flex-col">
           <nuxt-link
             class="font-medium text-gray-900 hover:text-blood dark:text-white dark:hover:text-blood"
-            :to="`/monsters/${monster.id}`"
+            :to="`/monsters/${monster.key}`"
           >
             {{ monster.name }}
             <SourceTag
@@ -68,8 +68,8 @@
           </nuxt-link>
           <div class="text-sm text-gray-500 dark:text-gray-300">
             CR
-            {{ monster.challenge_rating_text || monster.challenge_rating }} ({{
-              (parseInt(monster.experience_points) || 0) * monster.count
+            {{ monster.challenge_rating || monster.challenge_rating }} ({{
+              (monster.experience_points ?? 0) * monster.count
             }}
             XP)
           </div>
@@ -78,7 +78,7 @@
           <button
             class="rounded bg-red px-1 py-0.5 text-sm font-medium text-white hover:bg-blood/80 dark:bg-blood dark:hover:bg-red-400"
             data-testid="remove-monster"
-            @click="removeMonster(monster.id)"
+            @click="removeMonster(monster.key)"
           >
             <Icon name="heroicons:minus" />
           </button>
@@ -90,7 +90,7 @@
           <button
             class="rounded bg-red px-1 py-0.5 text-sm font-medium text-white hover:bg-blood/80 dark:bg-blood dark:hover:bg-red-400"
             data-testid="increment-monster"
-            @click="incrementMonster(monster.id)"
+            @click="incrementMonster(monster.key)"
           >
             <Icon name="heroicons:plus" />
           </button>
@@ -173,7 +173,6 @@
 <script setup lang="ts">
 import EncounterBuilderMonsterSearch from '~/components/EncounterBuilderMonsterSearch.vue';
 import type { Monster } from '~/types/monster';
-
 // Prop included for testing purposes
 defineProps<{ isLoadingOverride?: boolean }>();
 
@@ -193,7 +192,7 @@ onMounted(async () => {
   try {
     await Promise.all(
       monsters.value.map(monster =>
-        encounterStore.fetchMonsterData(monster.id),
+        encounterStore.fetchMonsterData(monster.key),
       ),
     );
   } catch (error) {
@@ -216,10 +215,10 @@ const removeMonster = (id: string) => encounterStore.removeMonster(id);
 const clearEncounter = () => encounterStore.clearEncounter();
 const incrementMonster = (id: string) => encounterStore.incrementMonster(id);
 const handleMonsterSelect = (monster: Monster) => {
-  if (!monster?.id) return;
+  if (!monster?.key) return;
 
   encounterStore.addMonster(
-    monster.id,
+    monster.key,
     monster.name,
     monster.challenge_rating_decimal,
     monster.challenge_rating,
