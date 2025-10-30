@@ -89,6 +89,7 @@ async function loadData() {
 
 // Maps tag names from markdown to data required to show links/previews
 const defaultQueryParams = '?fields=name,document__title,';
+
 const paramsByType = {
   'armor': {
     apiEndpoint: 'armor',

@@ -80,7 +80,7 @@ interface ResultsTableProps<T extends Open5eData> {
 // type interface for the `cols` prop
 interface TableColumn<T extends Open5eData> {
   displayName: string;
-  value: (data: T) => string | number;
+  value: (data: T) => string | number | boolean;
   sortValue?: string;
   link?: (data: T) => string;
   isLeastPriority?: boolean;
