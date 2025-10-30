@@ -49,7 +49,7 @@
         />
       </div>
     </section>
-    <section v-if="subclasses?.length > 0">
+    <section v-if="(subclasses?.length ?? 0) > 0">
       <h3>Subclasses</h3>
       <ul class="mt-2 flex flex-wrap gap-x-2">
         <li
@@ -75,7 +75,7 @@
       <h2>The {{ classData.name }}</h2>
       <ClassTable
         :class-features="formatFeaturesForTable(features.classFeatures)"
-        :proficiency-bonus="features.proficiencyBonuses"
+        :proficiency-bonus="features.proficiencyBonuses as ClassFeature"
         :spell-slots="features.spellSlots"
         :class-resource-table-columns="features.classTableColumnData"
       />
@@ -122,8 +122,8 @@
 </template>
 
 <script setup lang="ts">
-import { titleCaseToKebabCase } from '~/functions/titleCaseToKebabCase';
-import type { ClassFeature } from '~/types';
+import { titleCaseToKebabCase } from '@/functions/titleCaseToKebabCase';
+import type { ClassFeature } from '@/types';
 
 const classId = useQueryParameter('className');
 const fieldsToFetch = ['desc', 'features', 'hit_points', 'key', 'name', 'subclasses'].join(',');
@@ -217,22 +217,29 @@ const findFeatureLowestLevel = (feature: ClassFeature) => {
   return lowestLevel;
 };
 
+type FeatureStub = {
+  name: string;
+  detail?: string;
+  level?: number;
+}
+
 // takes a feature and returns an array item for every lvl in the gained_at field
-const featureToStubs = (feature: ClassFeature) => {
+const featureToStubs = (feature: ClassFeature): FeatureStub[] => {
   const { gained_at: gainedAt } = feature;
   if (!gainedAt) return [];
   return gainedAt.map(atLevel => ({
     name: feature.name,
     detail: atLevel.detail,
     level: atLevel.level,
-  }));
+  } as FeatureStub));
 };
 
 const formatFeaturesForTable = (features: ClassFeature[]) => {
   if (!features || features?.length === 0) return {};
-  return features.reduce((output, feature) => {
+  return features.reduce<Record<number, FeatureStub[]>>((output, feature) => {
     const featureStubs = featureToStubs(feature);
     featureStubs.forEach((stub) => {
+      if (!stub.level) return;
       if (!output[stub.level]) output[stub.level] = [stub];
       else output[stub.level].push(stub);
     });
@@ -241,7 +248,7 @@ const formatFeaturesForTable = (features: ClassFeature[]) => {
 };
 
 // transforms the classFeatures arr into an obj. that maps levels to features
-const featuresPerLevel = computed(() => {
+const featuresPerLevel = computed<Record<number, ClassFeature[]>>(() => {
   if (!features?.value?.classFeatures) return {};
   return features.value.classFeatures.reduce((output, feature) => {
     const featureLevel = findFeatureLowestLevel(feature);
@@ -249,7 +256,7 @@ const featuresPerLevel = computed(() => {
     if (!output[featureLevel]) output[featureLevel] = [feature];
     else output[featureLevel].push(feature);
     return output;
-  }, {});
+  }, {} as Record<number, ClassFeature[]>);
 });
 
 // flattens the featuresPerLevel obj to create array of features sorted by lvl

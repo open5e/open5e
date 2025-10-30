@@ -3385,7 +3385,7 @@ export interface components {
             /** @description Unique key for the Item. */
             readonly key: string;
             document: components['schemas']['DocumentSummary'];
-            readonly properties: string;
+            readonly properties: components['schemas']['WeaponProperty'];
             damage_type: components['schemas']['DamageTypeSummary'];
             readonly ranged_attack_possible: string;
             readonly range_melee: string;
