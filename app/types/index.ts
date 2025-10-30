@@ -25,6 +25,8 @@ export type Item = components['schemas']['Item'];
 export type ItemCategory = components ['schemas']['ItemCategory'];
 export type ItemCategorySummary = components['schemas']['ItemCategorySummary'];
 export type Weapon = components['schemas']['Weapon'];
+export type WeaponSummary = components['schemas']['WeaponSummary'];
+
 
 // a union type of all possible data types returned by Open5e API
 export type Open5eData = components['schemas'][keyof components['schemas']] & { 

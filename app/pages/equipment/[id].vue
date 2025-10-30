@@ -49,11 +49,11 @@
             </dt>
             <dd>{{ `${item.weapon.range} / ${item.weapon.long_range}` }}</dd>
           </template>
-          <template v-if="parseFloat(item?.weight) > 0">
+          <template v-if="parseFloat(item.weight ?? '0') > 0">
             <dt class="font-bold">
               Weight
             </dt>
-            <dd>{{ `${parseFloat(item.weight)} lb` }}</dd>
+            <dd>{{ `${parseFloat(item.weight as string)} lb` }}</dd>
           </template>
           <template v-if="item.cost">
             <dt class="font-bold">
@@ -80,17 +80,17 @@
             </dt>
             <dd>Disadvantage</dd>
           </template>
-          <template v-if="parseFloat(item?.weight) > 0">
+          <template v-if="parseFloat(item.weight ?? '') > 0">
             <dt class="font-bold">
               Weight
             </dt>
-            <dd>{{ `${parseFloat(item.weight)} lb` }}</dd>
+            <dd>{{ `${parseFloat(item.weight ?? '')} lb` }}</dd>
           </template>
           <template v-if="item.cost">
             <dt class="font-bold">
               Cost
             </dt>
-            <dd>{{ formatCost(item.cost) }}</dd>
+            <dd>{{ formatCost(item.cost ?? '') }}</dd>
           </template>
         </dl>
       </div>
@@ -102,17 +102,17 @@
             Category
           </dt>
           <dd>{{ item.category.name }}</dd>
-          <template v-if="parseFloat(item?.weight) > 0">
+          <template v-if="parseFloat(item.weight ?? '0') > 0">
             <dt class="font-bold">
               Weight
             </dt>
-            <dd>{{ `${parseFloat(item.weight)} lb` }}</dd>
+            <dd>{{ `${parseFloat(item.weight ?? '')} lb` }}</dd>
           </template>
-          <template v-if="parseFloat(item.cost) > 0">
+          <template v-if="parseFloat(item.cost ?? '0') > 0">
             <dt class="font-bold">
               Cost
             </dt>
-            <dd>{{ formatCost(item.cost) }}</dd>
+            <dd>{{ formatCost(item.cost ?? '') }}</dd>
           </template>
         </dl>
         <md-viewer :text="item.desc" />
@@ -136,18 +136,18 @@
 </template>
 
 <script setup lang="ts">
-const itemId = useQueryParameter('id');
+import type { WeaponSummary } from '@/types';
 
-const { data: item } = useFindOne(
-  API_ENDPOINTS.equipment,
-  itemId,
-  { is_magic_item: false },
+const itemId = useQueryParameter('id');
+const params = { 'is_magic_item': 'false' };
+const { data: item } = useFindOne(API_ENDPOINTS.equipment, itemId, { params }
 );
 
 usePageMetadata({ title: computed(() => item.value?.name) });
 
-const formatCost = (input) => {
-  const [gold, rest] = input.split('.');
+const formatCost = (input: string) => {
+  if (!input) return '';
+  const [gold , rest] = input.split('.');
   const [silver, copper] = rest.split('');
   return (
     (parseInt(gold) > 0 ? `${gold} gp` : '')
@@ -156,7 +156,7 @@ const formatCost = (input) => {
   );
 };
 
-const formatWeaponSubtitle = weapon =>
+const formatWeaponSubtitle = (weapon: WeaponSummary) =>
   `${weapon.is_melee ? 'Melee' : 'Ranged'} weapon `
   + `(${weapon.is_martial ? 'martial' : 'simple'}`
   + `${weapon.name.length > 0 ? `, ${weapon.name.toLowerCase()}` : ''})`;
