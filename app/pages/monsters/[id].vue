@@ -5,9 +5,7 @@
   >
     <!-- TITLE -->
     <div class="flex items-end justify-between gap-8">
-      <h1 class="flex-auto">
-        {{ monster.name }}
-      </h1>
+      <h1 class="flex-auto">{{ monster.name }}</h1>
 
       <div class="flex flex-none items-start gap-2">
         <button
@@ -36,19 +34,15 @@
     <p class="italic">
       <span>{{ `${monster.size.name} ${monster.type.name}` }}</span>
 
-      <span
-        v-if="monster.subtype"
-        class="before:content-['_('] after:content-[')']"
-      >
-        {{ monster.subtype }}
+      <span v-if="monster.subtype">
+        {{ ' ' + `(${monster.subtype})` }}
       </span>
 
-      <span
-        v-if="monster.alignment"
-        class="before:content-[',_']"
-      >
-        {{ monster.alignment }}
+      <span v-if="monster.alignment">
+        {{ ', ' + monster.alignment }}
       </span>
+      
+      <span>{{ ' ' }}</span>
 
       <SourceTag
         :title="monster.document.name"
@@ -59,9 +53,7 @@
 
     <dl class="grid grid-cols-[10rem_1fr]">
       <!-- ARMOR CLASS -->
-      <dt class="font-bold after:content-['_']">
-        Armor Class
-      </dt>
+      <dt class="font-bold">Armor Class</dt>
       <dd>
         <span>{{ monster.armor_class }}</span>
         <span
@@ -73,9 +65,7 @@
       </dd>
 
       <!-- INITIATIVE BONUS -->
-      <dt class="font-bold after:content-['_']">
-        Initiative Bonus
-      </dt>
+      <dt class="font-bold">Initiative Bonus</dt>
       <dd
         class="w-min cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
         @click="rollDice(initiativeBonus, {
@@ -87,11 +77,9 @@
       </dd>
 
       <!-- HIT POINTS -->
-      <dt class="font-bold after:content-['_']">
-        Hit Points
-      </dt>
+      <dt class="font-bold">Hit Points</dt>
       <dd>
-        <span class="after:content-['_']">{{ monster.hit_points }}</span>
+        <span>{{ monster.hit_points }}</span>
         <span
           v-if="monster.hit_dice"
           class="cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
@@ -100,23 +88,13 @@
              subtitle: monster.name
           })"
         >
-          {{ `(${monster.hit_dice})` }}
+          {{ ' ' + `(${monster.hit_dice})` }}
         </span>
       </dd>
 
       <!-- SPEEDS -->
-      <dt class="font-bold after:content-['_']">
-        Speed
-      </dt>
-      <dd>
-        <span
-          v-for="speed in speeds"
-          :key="speed"
-          class="after:content-[',_'] last:after:content-[]"
-        >
-          {{ speed }}
-        </span>
-      </dd>
+      <dt class="font-bold">Speed</dt>
+      <dd>{{ speeds }} </dd>
     </dl>
 
     <hr class="my-4 h-[2px] w-[32rem] border-none bg-white bg-gradient-to-r from-fireball dark:bg-darkness dark:from-blood" />
@@ -129,28 +107,24 @@
     <!-- BOX UNDER STATS -->
     <section class="my-4">
       <!-- SKILLS -->
-      <ul
-        v-if="Object.keys(monster.skill_bonuses).length > 0"
-        id="skills"
-      >
-        <label
-          for="skills"
-          class="inline font-bold after:content-['_']"
-        >
-          Skills
+      <div v-if="Object.keys(monster.skill_bonuses).length > 0">
+        <label for="skills" class="font-bold">
+          {{ 'Skills' + ' ' }}
         </label>
-        <li
-          v-for="(modifier, skill) in monster.skill_bonuses"
-          :key="skill"
-          class="inline cursor-pointer font-bold capitalize text-blood after:text-black after:content-[',_'] last:after:content-[] hover:text-black dark:after:text-white dark:hover:text-fog"
-          @click="rollDice(modifier.toString(), {
-             title: skill,
-             subtitle: monster.name
-          })"
-        >
-          {{ `${skill} ${formatModifier(modifier)}` }}
-        </li>
-      </ul>
+        <ul id="skills" class="inline">
+          <li
+            v-for="(modifier, skill) in monster.skill_bonuses"
+            :key="skill"
+            class="inline cursor-pointer font-bold capitalize text-blood after:text-black after:content-[',_'] last:after:content-[] hover:text-black dark:after:text-white dark:hover:text-fog"
+            @click="rollDice(modifier.toString(), {
+              title: skill,
+              subtitle: monster.name
+            })"
+          >
+            {{ `${skill} ${formatModifier(modifier)}` }}
+          </li>
+        </ul>
+      </div>
 
       <!-- RESISTANCES, VULNERABILITY AND IMMUNITIES -->
       <dl>
@@ -166,66 +140,41 @@
             {{ text }}
           </dd>
         </div>
+
+        <!-- SENSES -->
+        <div id="senses">
+          <dt for="senses" class="inline font-bold">{{ "Senses" + ` ` }}</dt>
+          <dd class="inline">
+            {{
+              Object.keys(senses)
+                .map((sense) => `${sense} ${senses[sense]}`)
+                .join(', ')
+            }}
+          </dd>
+        </div>
+
+        <!-- LANGUAGES -->
+        <div id="languages">
+          <dt for="languages" class="inline font-bold">
+            {{ "Languages" + " "}}
+          </dt>
+          <dd class="inline">
+            {{ monster.languages.as_string || "-" }}
+          </dd>
+        </div>
+
+        <!-- CHALLENGE -->      
+        <div id="challenge">
+          <dt for="challenge" class="inline font-bold">
+            {{ "Challenge" + " " }}
+          </dt>
+          <dd class="inline">
+            <span>{{ monster.challenge_rating_text + " " }}</span>
+            <span>{{ `(${monster.experience_points.toLocaleString()} XP)` }}</span>
+          </dd>
+        </div>
+
       </dl>
-
-      <!-- SENSES -->
-      <ul id="senses">
-        <span
-          for="senses"
-          class="inline font-bold after:content-['_']"
-        >
-          Senses
-        </span>
-        <li
-          v-for="(value, sense) in senses"
-          :key="sense"
-          class="inline after:content-[',_'] last:after:content-[]"
-        >
-          {{ `${sense} ${value}` }}
-        </li>
-      </ul>
-
-      <!-- LANGUAGES -->
-      <ul id="languages">
-        <span
-          for="languages"
-          class="inline font-bold after:content-['_']"
-        >
-          Languages
-        </span>
-        <li
-          v-if="monster.languages?.as_string"
-          class="inline"
-        >
-          {{ monster.languages.as_string }}
-        </li>
-        <li
-          v-for="language in monster.languages.data"
-          v-else-if="monster.languages.data.length > 0"
-          :key="language.name"
-          class="inline after:content-[',_'] last:after:content-[]"
-        >
-          {{ language.name }}
-        </li>
-        <li
-          v-else
-          class="inline"
-        >
-          -
-        </li>
-      </ul>
-
-      <!-- CHALLENGE -->
-      <ul id="challenge">
-        <span
-          for="challenge"
-          class="inline font-bold after:content-['_']"
-        >
-          Challenge
-        </span>
-        <span>{{ monster.challenge_rating_text + ' ' }}</span>
-        <span>{{ `(${monster.experience_points.toLocaleString()} XP)` }}</span>
-      </ul>
     </section>
 
     <!-- TRAITS -->
@@ -237,10 +186,8 @@
           :key="trait.key"
           class="my-1"
         >
-          <span class="font-bold after:content-['._']">
-            {{ trait.name }}
-          </span>
-          <md-viewer
+          <span class="font-bold">{{ trait.name + ". " }}</span>
+          <MdViewer
             :inline="true"
             :text="trait.desc"
             :use-roller="true"
@@ -261,22 +208,25 @@
           :key="action.name"
           class="my-1"
         >
-          <span class="font-bold after:content-['_']">{{ action.name }}</span>
-          <span
-            v-if="action.uses_type === 'RECHARGE_ON_ROLL'"
-            class="cursor-pointer font-bold text-blood before:text-black before:content-['_('] after:text-black after:content-[')_'] hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
-            @click="rollDice('1d6+0', {
-              title: `${action.name} Recharge`,
-              subtitle: monster.name,
-            })"
-          >
-            {{
-              'Recharge '
-                + (action.uses_param < 6 ? `${action.uses_param}-6` : '6')
-            }}
-          </span>
-          <md-viewer
-            inline="true"
+          <strong>
+            <span>{{ action.name }}</span>
+            <span
+              v-if="action.usage_limits?.type === 'RECHARGE_ON_ROLL'"
+              class="cursor-pointer font-bold text-blood before:text-black after:text-black  hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
+              @click="rollDice('1d6+0', {
+                title: `${action.name} Recharge`,
+                subtitle: monster.name,
+              })"
+            > 
+              {{
+                ' (Recharge ' + (action.uses_param < 6 ? `${action.uses_param}-6` : '6') + ')'
+              }}
+            </span>
+            <span>{{ ". " }}</span>
+          </strong>
+          
+          <MdViewer
+            :inline="true"
             :text="action.desc"
             :use-roller="true"
           />
@@ -371,12 +321,12 @@ const snakeToTitleCase = (input: string) =>
 
 // Format monster speeds for template
 const speeds = computed(() => {
-  if (!monster?.value?.speed) return {};
+  if (!monster?.value?.speed) return '';
   const { unit, ...speeds } = monster.value.speed;
   return Object.entries(speeds).map(
     ([speed, distance]) =>
       (speed === 'walk' ? '' : speed + ' ') + `${distance} ft.`,
-  );
+  ).join(', ');
 });
 
 // assemble senses from multiple fields
