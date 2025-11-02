@@ -88,18 +88,10 @@ table {
 
 .docs-container {
   hr {
-    margin: 1rem 0;
-    height: 2px;
-    background: linear-gradient(
-      to right,
-      rgba($color-blood, 1) 0%,
-      rgba($color-blood, 0) 100%
-    );
-    border: 0;
+    display: none; // Hide all hr elements in docs container as they serve no functional purpose
   }
   p,
   ul,
-  hr,
   h1,
   h2,
   h3,
