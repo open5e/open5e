@@ -1,168 +1,61 @@
-<script>
-/**
- * CrossLink - An inline link to an Open5e resource. Fetches & displays a
- *   preview of the linked resource when hovered
- *
- * -= PROPS (INPUTS) =-
- * @prop {String} src - The source of the Open5e resource being linked to. The
- *   resources endpoint and key can be extracted from it.
- *
- *
- * -= DEPENDENCIES =-
- * @component LinkPreview – Displays a preview of the linked content.
- * @axios - Fetches API data (TODO: replace /w Vue Query)
- *
- */
-</script>
-
 <template>
+
+  <!-- If preview data has fetched correctly then url is valid, render as link -->
   <nuxt-link
-    v-if="acceptibleTypes.includes(category)"
-    :to="url.linkTarget"
-    class="group relative"
-    @mouseover="loadData"
+    v-if="previewData"
+    :to="`${topLevelPage}/${key}`"
   >
     <slot />
-    <link-preview
-      v-if="content"
-      :content="content"
-      :category="category"
-    />
   </nuxt-link>
 
-  <!-- If link markdown is invalid, render a span instead -->
-  <span
-    v-else
-    class="italic"
-  ><slot /></span>
+  <span v-else class="italic">
+    <slot />
+  </span>
 </template>
 
-<script setup>
-import axios from 'axios';
+<script setup lang="ts">
+import type { Item } from '@/types';
 
-defineProps({ src: { type: String, default: '' } });
+const props = defineProps({ src: { type: String, default: '' } });
 
-const loading = ref(false);
-const content = ref(undefined);
-const acceptibleTypes = ref(Object.keys(paramsByType));
-const category = ref(
-  props.src.split('/').filter(crumb => !['v1', 'v2'].includes(crumb))[0],
-);
-const slug = ref(
-  props.src.split('/').filter(crumb => !['v1', 'v2'].includes(crumb))[1],
-);
+const [version, endpoint, key] = props.src.split('/');
 
-const url = computed(() => {
-  const apiURL = useRuntimeConfig().public.apiUrl;
-  const { altFrontEndSubroute, apiEndpoint } = paramsByType[category.value];
+type CrossLinkEndpoint = 'v2/items/' | 'v2/creatures/' | 'v2/classes/' | 'v2/species/' | 'v2/feats/' | 'v2/spells/';
 
-  // make sure that category has a recognised endpoint
-  if (!apiEndpoint) return { linkTarget: '/' };
+const versionWithEndpoint = `${version}/${endpoint}/` as CrossLinkEndpoint;
 
-  // FE uses section's parent for routing. Update url once data is fetched
-  if (content.value && category.value === 'sections') {
-    const subroute = content.value.parent.split(' ').join('-').toLowerCase();
-    return {
-      linkTarget: `/${subroute}/${slug.value}`,
-      apiEndpoint: `${apiURL}/sections/${slug.value}`,
-    };
-  }
-  // the url on the front end site might be different to its API endpoint
-  return {
-    linkTarget: `/${altFrontEndSubroute ?? apiEndpoint}/${slug.value}`,
-    apiEndpoint: `${apiURL}/${apiEndpoint}/${slug.value}`,
-  };
+const baseFields = ['name', 'key'];
+const queryParametersPerEndpoint = {
+  'v2/items/': [...baseFields, 'rarity', 'type'],
+  'v2/creatures/': [...baseFields, 'type', 'size'],
+  'v2/spells/': [...baseFields, 'level', 'school']
+} as Record<CrossLinkEndpoint, string[]>;
+
+// fetch data to use in mouse-over preview
+const previewData = computed(() => {
+  if (!version || !endpoint || !key) return;
+  const { data } = useFindOne(versionWithEndpoint, key, {
+    params: {
+      fields: (
+        queryParametersPerEndpoint[versionWithEndpoint] ?? baseFields
+      ).join(',')
+    }
+  });
+  return data.value;
 });
 
-async function loadData() {
-  // guard clause so that data is only fetched on initial hover
-  if (loading.value || content.value) {
-    return;
+const topLevelPage = computed(() => {
+  // format top-level page part of URL where it differs from API structure
+  if (!previewData.value) return;
+  if (versionWithEndpoint === 'v2/items/') {
+    return (previewData.value as Item).rarity 
+      ? '/magic-items'
+      : '/equipment';
   }
-  loading.value = true;
-  const { queryParams } = paramsByType[category.value];
-  const res = await axios.get(`${url.value.apiEndpoint}/${queryParams}`);
-  content.value = res.data;
-}
+  if (versionWithEndpoint === 'v2/creatures/') {
+    return '/monsters';
+  }
 
-// Maps tag names from markdown to data required to show links/previews
-const defaultQueryParams = '?fields=name,document__title,';
-const paramsByType = {
-  'armor': {
-    apiEndpoint: 'armor',
-    queryParams: defaultQueryParams + 'category',
-  },
-  'backgrounds': {
-    apiEndpoint: 'backgrounds',
-    queryParams: defaultQueryParams,
-  },
-  'classes': {
-    apiEndpoint: 'classes',
-    queryParams: defaultQueryParams,
-  },
-  'combat': {
-    altFrontEndSubroute: 'combat',
-    apiEndpoint: 'sections',
-    queryParams: defaultQueryParams + 'title',
-  },
-  'conditions': {
-    apiEndpoint: 'conditions',
-    queryParams: defaultQueryParams + 'desc',
-  },
-  'equipment': {
-    altFrontEndSubroute: 'equipment',
-    apiEndpoint: 'sections',
-    queryParams: defaultQueryParams + 'parent',
-  },
-  'feats': {
-    apiEndpoint: 'feats',
-    queryParams: defaultQueryParams,
-  },
-  'gameplay-mechanics': {
-    altFrontEndSubroute: 'gameplay-mechanics',
-    apiEndpoint: 'sections',
-    queryParams: defaultQueryParams + 'parent',
-  },
-  'magicitems': {
-    altFrontEndSubroute: 'magic-items',
-    apiEndpoint: 'magicitems',
-    queryParams: defaultQueryParams + 'type,rarity,requires_attunement',
-  },
-  'monsters': {
-    apiEndpoint: 'monsters',
-    queryParams: defaultQueryParams + 'size,type,challenge_rating',
-  },
-  'plane': {
-    apiEndpoint: 'planes',
-    queryParams: defaultQueryParams,
-  },
-  'races': {
-    apiEndpoint: 'races',
-    queryParams: defaultQueryParams,
-  },
-  'running': {
-    altFrontEndSubroute: 'running',
-    apiEndpoint: 'sections',
-    queryParams: defaultQueryParams + 'parent',
-  },
-  'sections': {
-    apiEndpoint: 'sections',
-    queryParams: defaultQueryParams + 'parent',
-  },
-  'spells': {
-    apiEndpoint: 'spells',
-    queryParams:
-      defaultQueryParams
-      + 'level,school,casting_time,duration,range,components',
-  },
-  'spelllist': {
-    altFrontEndSubroute: 'spells/by-class',
-    apiEndpoint: 'spelllist',
-    queryParams: defaultQueryParams,
-  },
-  'weapons': {
-    apiEndpoint: 'weapons',
-    queryParams: defaultQueryParams + 'category',
-  },
-};
+  return '/' + endpoint; // Base case
+});
 </script>
