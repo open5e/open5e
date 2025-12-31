@@ -42,7 +42,6 @@
         <md-viewer :text="benefit.desc" />
       </li>
     </ul>
-    <hr />
 
     <!-- List of background flavour, rollable tables, etc. -->
     <ul>
