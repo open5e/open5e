@@ -168,7 +168,7 @@ export const useEncounterStore = () => {
   };
 
   const removeMonster = (id: string) => {
-    const index = monsters.value.findIndex(m => m.id === id);
+    const index = monsters.value.findIndex(m => m.key === id);
     if (monsters.value[index].count > 1) {
       monsters.value[index].count -= 1;
     } else {
