@@ -65,6 +65,14 @@ const props = defineProps({
 });
 const emit = defineEmits(['first', 'last', 'next', 'prev']);
 
+// keyboard control for pagination
+const handleKeyDown = (event: KeyboardEvent) => {
+  if (event.key === 'ArrowRight') emit('next');
+  else if (event.key === 'ArrowLeft') emit('prev');
+};
+onMounted(() => document.addEventListener('keydown', handleKeyDown));
+onBeforeUnmount(() => document.removeEventListener('keydown', handleKeyDown));
+
 // conditional properties control whenever certain buttons are enabled
 const isNotFirstPage = computed(() => props.pageNumber > 1);
 const isNotLastPage = computed(() => props.pageNumber < props.lastPageNumber);
