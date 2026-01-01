@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * SearchResults.vue - Renders a single item returned by the /search endpoint.
  *   Returns an `<li>` element to be placed in a list of other results.
@@ -6,7 +6,7 @@
  * -= PROPS (INPUTS) =-
  * @prop {String} query - The search query. Used for highlighting matching text
  *   in the result snippet.
- * @prop {Object} result - A single search result rtn'd by /search endpoint
+ * @prop {SearchResult} result - A single search result rtn'd by /search endpoint
  *   @property {String} result.object_name - The name of the result returned
  *   @property {String} result.object_model - result's type (ie. Spell, Item)
  *   @property {Object} result.object - Extra data about the search result,
@@ -55,12 +55,7 @@
       v-if="result.object_model === 'Spell'"
       class="text-sm capitalize"
     >
-      {{
-        useFormatSpellSubtitle({
-          level: result.object.level,
-          school: result.object.school,
-        })
-      }}
+      {{ formatSpellTitle(result) }}
     </div>
 
     <span
@@ -87,18 +82,20 @@
     <MdViewer
       v-if="!result.object_name.toUpperCase().includes(query.toUpperCase())"
       class="text-sm italic text-granite dark:text-granite"
-      :markdown="stripMarkdownTables(result.highlighted)"
+      :markdown="stripMarkdownTables(result.highlighted ?? '')"
     />
   </li>
 </template>
 
-<script setup>
-defineProps({
-  query: { type: String, default: '' },
-  result: { type: Object, default: () => {} },
-});
+<script setup lang="ts">
+import type { SearchResult } from '@/types';
 
-function stripMarkdownTables(text) {
+defineProps<{
+  query: string;
+  result: SearchResult;
+}>();
+
+function stripMarkdownTables(text: string) {
   // Remove table row markup but keep the content
   return text
     .replace(/\|/g, ' ') // Replace pipe characters with spaces
@@ -120,15 +117,15 @@ const endpoints = {
 };
 
 // Takes a search result and generates its URL on the Open5e website
-const formatUrl = (input) => {
-  let baseUrl = endpoints[input.object_model] ?? input.object_model;
+const formatUrl = (input: SearchResult) => {
+  let baseUrl = endpoints[input.object_model as keyof typeof endpoints] ?? input.object_model;
 
   // non-magic items link to /equipment route
   if (baseUrl === 'magic-items' && !input?.object?.is_magic_item)
     baseUrl = 'equipment';
 
   // subclass urls must be prepended by their base-class
-  if (input?.object?.subclass_of) baseUrl += `/${input.object.subclass_of.key}`;
+  if (input?.object?.subclass_of) baseUrl += `/${input.object.subclass_of?.key}`;
 
   // sub-species link to their base-species
   if (input?.object?.subspecies_of)
@@ -143,9 +140,9 @@ const formatUrl = (input) => {
 };
 
 // Takes the API endpoint a result is pulled from and returns
-const formatCategory = (input) => {
+const formatCategory = (input: SearchResult) => {
   // Insert spaces into PascalCase text
-  const category = input.object_model.match(/[A-Z][a-z]+/g).join(' ');
+  const category = input.object_model.match(/[A-Z][a-z]+/g)?.join(' ');
   // Creatures -> Monsters
   if (category === 'Creature') return 'Monster';
   // Items (Magic) -> 'Magic Item'
@@ -163,12 +160,13 @@ const formatCategory = (input) => {
   if (input?.object?.subspecies_of)
     return `${input.object.subspecies_of.name} Subspecies`;
   return category; // BASE-CASE: return category without alteration
-
-  if (category === 'Rule') return 'Rules';
-
-  // BASE-CASE: return category without alteration
-  return category;
 };
+
+const formatSpellTitle = (result: SearchResult) => useFormatSpellSubtitle({
+  level: result.object?.level,
+  school: result.object?.school,
+});
+
 </script>
 
 <style>

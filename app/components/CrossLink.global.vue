@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * CrossLink - An inline link to an Open5e resource. Fetches & displays a
  *   preview of the linked resource when hovered
@@ -34,13 +34,15 @@
   <span
     v-else
     class="italic"
-  ><slot /></span>
+  >
+    <slot />
+  </span>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import axios from 'axios';
 
-defineProps({ src: { type: String, default: '' } });
+const props = defineProps({ src: { type: String, default: '' } });
 
 const loading = ref(false);
 const content = ref(undefined);
@@ -87,6 +89,7 @@ async function loadData() {
 
 // Maps tag names from markdown to data required to show links/previews
 const defaultQueryParams = '?fields=name,document__title,';
+
 const paramsByType = {
   'armor': {
     apiEndpoint: 'armor',

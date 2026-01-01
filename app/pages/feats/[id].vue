@@ -31,13 +31,8 @@
 </template>
 
 <script setup lang="ts">
-// cast 'id' as string (if string[])
-const id = computed(() => {
-  const param = useRoute().params.id;
-  return Array.isArray(param) ? param[0] : param;
-});
-
-const { data: feat } = useFindOne(API_ENDPOINTS.feats, id, {
+const featId = useQueryParameter('id');
+const { data: feat } = useFindOne(API_ENDPOINTS.feats, featId, {
   params: {
     fields: ['name', 'desc', 'prerequisite', 'document', 'benefits'].join(','),
   },

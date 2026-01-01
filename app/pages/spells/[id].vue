@@ -67,7 +67,7 @@
       Source:
       <a
         target="NONE"
-        :href="spell.document.url"
+        :href="spell.document.permalink"
       >
         {{ spell.document.name }} by
         {{ spell.document.publisher.name || 'unknown publisher' }}
@@ -83,16 +83,17 @@
   </section>
 </template>
 
-<script setup>
-const { data: spell } = useFindOne(API_ENDPOINTS.spells, useRoute().params.id);
+<script setup lang="ts">
+const spellId = useQueryParameter('id'); 
+const { data: spell } = useFindOne(API_ENDPOINTS.spells, spellId);
 
 usePageMetadata({ title: computed(() => spell.value?.name) });
 
-function formatComponents(verbal, somatic, material) {
-  const components = [];
-  if (verbal) components.push('V');
-  if (somatic) components.push('S');
-  if (material) components.push('M');
-  return `${components.join(', ')}`;
+function formatComponents(verbal?: boolean, somatic?: boolean, material?: boolean) {
+  return [
+    verbal && 'V',
+    somatic && 'S',
+    material && 'M'
+  ].filter(Boolean).join(', ');
 }
 </script>

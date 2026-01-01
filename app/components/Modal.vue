@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * ModalDialog.vue - A modal dialog component that displays a centered overlay.
  * Contents and Action buttons are created by passing slots to component.
@@ -85,7 +85,7 @@
   </TransitionRoot>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {
   Dialog,
   DialogPanel,

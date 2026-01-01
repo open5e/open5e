@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * LinkPreview - A card that displays detailed information about a specific category of content.
  *
@@ -50,7 +50,7 @@
   </article>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const props = defineProps({
   category: { type: String, default: '' },
   // eslint-disable-next-line vue/require-prop-types
@@ -111,5 +111,3 @@ const body = computed(() => {
   }
 });
 </script>
-
-<style></style>

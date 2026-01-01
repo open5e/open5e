@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * ApiTableNav.vue - Pagination controls, designed to be used with the
  * `<ResultsTable />` component
@@ -56,7 +56,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const props = defineProps({
   lastPageNumber: { type: Number, default: 1 },
   pageNumber: { type: Number, default: 1 },
