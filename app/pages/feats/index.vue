@@ -24,7 +24,6 @@
     />
 
     <ResultsTable
-      v-model="filterState.debouncedFilter"
       :data="data?.results"
       :cols="[
         {
@@ -46,7 +45,7 @@
 const filterState = useFilterState<{ name__icontains: string }>({
   key: 'feats',
   fields: {
-    name__contains: '',
+    name__icontains: '',
   },
 });
 

@@ -6,7 +6,7 @@
       <!-- Outer list is a list of Publishers -->
       <ul>
         <li 
-          v-for="(docs, publisher) in sortDocumentsByPublisher(documents)"
+          v-for="(docs, publisher) in sortDocumentsByPublisher(documents as Document[])"
           :key="publisher"
         >
           <!-- Inner list is a list of Sources per Publisher -->
@@ -26,12 +26,12 @@
                 <SourceTag :text="doc.key" />
               </dt>
               <dd>
-                <p class="mt-0">{{ doc.desc.split(" ").slice(0,50).join(" ") }}</p>
+                <p class="mt-0">{{ doc.desc?.split(" ").slice(0,50).join(" ") }}</p>
                 <p v-if="doc.licenses.length > 0" class="mt-0 text-sm text-gray-500">
                   {{`
                     Published under the 
                     ${doc.licenses.map((l) => l.key).join(' / ').toUpperCase()}
-                    ${" " + doc.licenses.length > 1 ? "licenses" : "license"}`}}
+                    ${" " + (doc.licenses.length > 1) ? "licenses" : "license"}`}}
                 </p>
               </dd>
             </div>
@@ -42,7 +42,8 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import type { Document } from '@/types';
 import { sortDocumentsByPublisher } from '../../functions/sortDocumentsByPublisher';
 const { data: documents } = useDocuments();
 </script>

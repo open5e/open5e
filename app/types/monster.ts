@@ -1,5 +1,5 @@
 export interface Monster {
-  id: string;
+  key: string;
   name: string;
   challenge_rating: string;
   challenge_rating_decimal: number;
