@@ -1,8 +1,3 @@
-import { useQuery } from '@tanstack/vue-query';
-import { API_ENDPOINTS, useAPI } from './api';
-
-const formatModifier = useFormatModifier();
-
 export type MonsterFilter = {
   name__icontains?: string; // filter by name (TODO)
   challenge_rating_decimal_gte?: string; // CR lower bound
@@ -18,37 +13,6 @@ export const DefaultMonsterFilter: Readonly<MonsterFilter> = {
   size: '',
   type: '',
 };
-
-// Fetch a single monster from Open5e API
-export const useMonster = (slug: string) => {
-  const { get } = useAPI();
-  return useQuery({
-    queryKey: ['get', API_ENDPOINTS.monsters, slug],
-    queryFn: async () => {
-      const monster = await get(API_ENDPOINTS.monsters, slug);
-      monster.abilities = ABILITY_SCORE_NAMES.map(ability => ({
-        name: ability,
-        shortName: ability.slice(0, 3),
-        score: monster[ability],
-        modifier: formatModifier(
-          monster[ability] as string | number | undefined,
-          { inputType: 'score' },
-        ),
-        save: monster[`${ability}_save`],
-      }));
-      return monster as Record<string, string>;
-    },
-  });
-};
-
-const ABILITY_SCORE_NAMES = [
-  'strength',
-  'dexterity',
-  'constitution',
-  'intelligence',
-  'wisdom',
-  'charisma',
-] as const;
 
 export const MONSTER_CHALLENGE_RATINGS_LIST = [
   '0',

@@ -78,8 +78,12 @@ export function useFindPaginated<T extends keyof EndpointToPaginatedTypeMap>(opt
 });
 
   // pagination controls
-  const nextPage = () => pageNo.value++;
-  const prevPage = () => pageNo.value--;
+  const nextPage = () => {
+    if (pageNo.value < lastPageNo.value) pageNo.value++;
+  };
+  const prevPage = () => {
+    if (pageNo.value > 1) pageNo.value--;
+  };
   const firstPage = () => pageNo.value = 1;
   const lastPage = () => pageNo.value = lastPageNo.value ?? pageNo.value;
 

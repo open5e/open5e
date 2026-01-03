@@ -30,7 +30,7 @@
         </div>
         <ComboboxOption
           v-for="monster in searchResults"
-          :key="monster.id"
+          :key="monster.key"
           v-slot="{ active }"
           :value="monster"
           as="template"
@@ -82,7 +82,7 @@ import {
   ComboboxOption,
 } from '@headlessui/vue';
 import type { Monster } from '~/types/monster';
-import type { RawMonster } from '~/types/APIMonster';
+import type { Creature } from '@/types';
 const emit = defineEmits<{
   (e: 'select', monster: Monster): void;
 }>();
@@ -101,12 +101,12 @@ const { sources } = useSourcesList();
 const optionsRef = ref<HTMLElement | null>(null);
 
 // Improved monster mapping function
-const mapMonsterFromAPI = (monster: RawMonster): Monster => {
+const mapMonsterFromAPI = (monster: Creature): Monster => {
   const base = {
-    id: String(monster.slug || monster.key || monster.id || ''),
+    key: String(monster.key),
     name: String(monster.name) || '',
     challenge_rating: String(
-      monster.challenge_rating || monster.challenge_rating_text || '0'
+      monster.challenge_rating_text || '0'
     ),
     challenge_rating_decimal: Number(monster.challenge_rating_decimal) || 0,
   };
@@ -146,7 +146,7 @@ const loadMore = async () => {
 
   isLoadingMore.value = true;
   try {
-    const response = await findPaginated<RawMonster>({
+    const response = await findPaginated({
       endpoint: API_ENDPOINTS.monsters,
       sources: sources.value,
       itemsPerPage: 25,
@@ -190,7 +190,7 @@ watchEffect(
     debounceTimeout = setTimeout(async () => {
       isSearching.value = true;
       try {
-        const response = await findPaginated<RawMonster>({
+        const response = await findPaginated({
           endpoint: API_ENDPOINTS.monsters,
           sources: sources.value,
           itemsPerPage: 25,

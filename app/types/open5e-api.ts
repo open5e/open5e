@@ -11,9 +11,11 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of items.
+        /**
+         * @description list: API endpoint for returning a list of items.
          *
-         *     retrieve: API endpoint for returning a particular item. */
+         *     retrieve: API endpoint for returning a particular item.
+         */
         get: operations['items_list'];
         put?: never;
         post?: never;
@@ -30,9 +32,11 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of items.
+        /**
+         * @description list: API endpoint for returning a list of items.
          *
-         *     retrieve: API endpoint for returning a particular item. */
+         *     retrieve: API endpoint for returning a particular item.
+         */
         get: operations['items_retrieve'];
         put?: never;
         post?: never;
@@ -49,10 +53,12 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description "
+        /**
+         * @description "
          *     list: API Endpoint for returning a set of itemsets.
          *
-         *     retrieve: API endpoint for return a particular itemset. */
+         *     retrieve: API endpoint for return a particular itemset.
+         */
         get: operations['itemsets_list'];
         put?: never;
         post?: never;
@@ -69,10 +75,12 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description "
+        /**
+         * @description "
          *     list: API Endpoint for returning a set of itemsets.
          *
-         *     retrieve: API endpoint for return a particular itemset. */
+         *     retrieve: API endpoint for return a particular itemset.
+         */
         get: operations['itemsets_retrieve'];
         put?: never;
         post?: never;
@@ -89,10 +97,12 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description "
+        /**
+         * @description "
          *     list: API Endpoint for returning a set of item categories.
          *
-         *     retrieve: API endpoint for return a particular item categories. */
+         *     retrieve: API endpoint for return a particular item categories.
+         */
         get: operations['itemcategories_list'];
         put?: never;
         post?: never;
@@ -109,10 +119,12 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description "
+        /**
+         * @description "
          *     list: API Endpoint for returning a set of item categories.
          *
-         *     retrieve: API endpoint for return a particular item categories. */
+         *     retrieve: API endpoint for return a particular item categories.
+         */
         get: operations['itemcategories_retrieve'];
         put?: never;
         post?: never;
@@ -129,8 +141,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of documents.
-         *     retrieve: API endpoint for returning a particular document. */
+        /**
+         * @description list: API endpoint for returning a list of documents.
+         *     retrieve: API endpoint for returning a particular document.
+         */
         get: operations['documents_list'];
         put?: never;
         post?: never;
@@ -147,8 +161,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of documents.
-         *     retrieve: API endpoint for returning a particular document. */
+        /**
+         * @description list: API endpoint for returning a list of documents.
+         *     retrieve: API endpoint for returning a particular document.
+         */
         get: operations['documents_retrieve'];
         put?: never;
         post?: never;
@@ -165,8 +181,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of licenses.
-         *     retrieve: API endpoint for returning a particular license. */
+        /**
+         * @description list: API endpoint for returning a list of licenses.
+         *     retrieve: API endpoint for returning a particular license.
+         */
         get: operations['licenses_list'];
         put?: never;
         post?: never;
@@ -183,8 +201,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of licenses.
-         *     retrieve: API endpoint for returning a particular license. */
+        /**
+         * @description list: API endpoint for returning a list of licenses.
+         *     retrieve: API endpoint for returning a particular license.
+         */
         get: operations['licenses_retrieve'];
         put?: never;
         post?: never;
@@ -201,8 +221,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of publishers.
-         *     retrieve: API endpoint for returning a particular publisher. */
+        /**
+         * @description list: API endpoint for returning a list of publishers.
+         *     retrieve: API endpoint for returning a particular publisher.
+         */
         get: operations['publishers_list'];
         put?: never;
         post?: never;
@@ -219,8 +241,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of publishers.
-         *     retrieve: API endpoint for returning a particular publisher. */
+        /**
+         * @description list: API endpoint for returning a list of publishers.
+         *     retrieve: API endpoint for returning a particular publisher.
+         */
         get: operations['publishers_retrieve'];
         put?: never;
         post?: never;
@@ -237,8 +261,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of weapons.
-         *     retrieve: API endpoint for returning a particular weapon. */
+        /**
+         * @description list: API endpoint for returning a list of weapons.
+         *     retrieve: API endpoint for returning a particular weapon.
+         */
         get: operations['weapons_list'];
         put?: never;
         post?: never;
@@ -255,8 +281,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of weapons.
-         *     retrieve: API endpoint for returning a particular weapon. */
+        /**
+         * @description list: API endpoint for returning a list of weapons.
+         *     retrieve: API endpoint for returning a particular weapon.
+         */
         get: operations['weapons_retrieve'];
         put?: never;
         post?: never;
@@ -273,8 +301,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of armor.
-         *     retrieve: API endpoint for returning a particular armor. */
+        /**
+         * @description list: API endpoint for returning a list of armor.
+         *     retrieve: API endpoint for returning a particular armor.
+         */
         get: operations['armor_list'];
         put?: never;
         post?: never;
@@ -291,8 +321,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of armor.
-         *     retrieve: API endpoint for returning a particular armor. */
+        /**
+         * @description list: API endpoint for returning a list of armor.
+         *     retrieve: API endpoint for returning a particular armor.
+         */
         get: operations['armor_retrieve'];
         put?: never;
         post?: never;
@@ -309,10 +341,12 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description "
+        /**
+         * @description "
          *     list: API Endpoint for returning a set of gamesystems.
          *
-         *     retrieve: API endpoint for return a particular gamesystem. */
+         *     retrieve: API endpoint for return a particular gamesystem.
+         */
         get: operations['gamesystems_list'];
         put?: never;
         post?: never;
@@ -329,10 +363,12 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description "
+        /**
+         * @description "
          *     list: API Endpoint for returning a set of gamesystems.
          *
-         *     retrieve: API endpoint for return a particular gamesystem. */
+         *     retrieve: API endpoint for return a particular gamesystem.
+         */
         get: operations['gamesystems_retrieve'];
         put?: never;
         post?: never;
@@ -349,8 +385,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of backgrounds.
-         *     retrieve: API endpoint for returning a particular background. */
+        /**
+         * @description list: API endpoint for returning a list of backgrounds.
+         *     retrieve: API endpoint for returning a particular background.
+         */
         get: operations['backgrounds_list'];
         put?: never;
         post?: never;
@@ -367,8 +405,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of backgrounds.
-         *     retrieve: API endpoint for returning a particular background. */
+        /**
+         * @description list: API endpoint for returning a list of backgrounds.
+         *     retrieve: API endpoint for returning a particular background.
+         */
         get: operations['backgrounds_retrieve'];
         put?: never;
         post?: never;
@@ -385,8 +425,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of feats.
-         *     retrieve: API endpoint for returning a particular feat. */
+        /**
+         * @description list: API endpoint for returning a list of feats.
+         *     retrieve: API endpoint for returning a particular feat.
+         */
         get: operations['feats_list'];
         put?: never;
         post?: never;
@@ -403,8 +445,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of feats.
-         *     retrieve: API endpoint for returning a particular feat. */
+        /**
+         * @description list: API endpoint for returning a list of feats.
+         *     retrieve: API endpoint for returning a particular feat.
+         */
         get: operations['feats_retrieve'];
         put?: never;
         post?: never;
@@ -421,8 +465,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of species.
-         *     retrieve: API endpoint for returning a particular species. */
+        /**
+         * @description list: API endpoint for returning a list of species.
+         *     retrieve: API endpoint for returning a particular species.
+         */
         get: operations['species_list'];
         put?: never;
         post?: never;
@@ -439,8 +485,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of species.
-         *     retrieve: API endpoint for returning a particular species. */
+        /**
+         * @description list: API endpoint for returning a list of species.
+         *     retrieve: API endpoint for returning a particular species.
+         */
         get: operations['species_retrieve'];
         put?: never;
         post?: never;
@@ -457,8 +505,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of creatures.
-         *     retrieve: API endpoint for returning a particular creature. */
+        /**
+         * @description list: API endpoint for returning a list of creatures.
+         *     retrieve: API endpoint for returning a particular creature.
+         */
         get: operations['creatures_list'];
         put?: never;
         post?: never;
@@ -475,8 +525,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of creatures.
-         *     retrieve: API endpoint for returning a particular creature. */
+        /**
+         * @description list: API endpoint for returning a list of creatures.
+         *     retrieve: API endpoint for returning a particular creature.
+         */
         get: operations['creatures_retrieve'];
         put?: never;
         post?: never;
@@ -493,8 +545,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of creatures types.
-         *     retrieve: API endpoint for returning a particular creature type. */
+        /**
+         * @description list: API endpoint for returning a list of creatures types.
+         *     retrieve: API endpoint for returning a particular creature type.
+         */
         get: operations['creaturetypes_list'];
         put?: never;
         post?: never;
@@ -511,8 +565,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of creatures types.
-         *     retrieve: API endpoint for returning a particular creature type. */
+        /**
+         * @description list: API endpoint for returning a list of creatures types.
+         *     retrieve: API endpoint for returning a particular creature type.
+         */
         get: operations['creaturetypes_retrieve'];
         put?: never;
         post?: never;
@@ -529,8 +585,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of creature sets, which is similar to tags.
-         *     retrieve: API endpoint for returning a particular creature set. */
+        /**
+         * @description list: API endpoint for returning a list of creature sets, which is similar to tags.
+         *     retrieve: API endpoint for returning a particular creature set.
+         */
         get: operations['creaturesets_list'];
         put?: never;
         post?: never;
@@ -547,8 +605,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of creature sets, which is similar to tags.
-         *     retrieve: API endpoint for returning a particular creature set. */
+        /**
+         * @description list: API endpoint for returning a list of creature sets, which is similar to tags.
+         *     retrieve: API endpoint for returning a particular creature set.
+         */
         get: operations['creaturesets_retrieve'];
         put?: never;
         post?: never;
@@ -565,8 +625,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of damage types.
-         *     retrieve: API endpoint for returning a particular damage type. */
+        /**
+         * @description list: API endpoint for returning a list of damage types.
+         *     retrieve: API endpoint for returning a particular damage type.
+         */
         get: operations['damagetypes_list'];
         put?: never;
         post?: never;
@@ -583,8 +645,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of damage types.
-         *     retrieve: API endpoint for returning a particular damage type. */
+        /**
+         * @description list: API endpoint for returning a list of damage types.
+         *     retrieve: API endpoint for returning a particular damage type.
+         */
         get: operations['damagetypes_retrieve'];
         put?: never;
         post?: never;
@@ -601,8 +665,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of feats.
-         *     retrieve: API endpoint for returning a particular feat. */
+        /**
+         * @description list: API endpoint for returning a list of feats.
+         *     retrieve: API endpoint for returning a particular feat.
+         */
         get: operations['languages_list'];
         put?: never;
         post?: never;
@@ -619,8 +685,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of feats.
-         *     retrieve: API endpoint for returning a particular feat. */
+        /**
+         * @description list: API endpoint for returning a list of feats.
+         *     retrieve: API endpoint for returning a particular feat.
+         */
         get: operations['languages_retrieve'];
         put?: never;
         post?: never;
@@ -637,8 +705,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of alignments.
-         *     retrieve: API endpoint for returning a particular alignment. */
+        /**
+         * @description list: API endpoint for returning a list of alignments.
+         *     retrieve: API endpoint for returning a particular alignment.
+         */
         get: operations['alignments_list'];
         put?: never;
         post?: never;
@@ -655,8 +725,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of alignments.
-         *     retrieve: API endpoint for returning a particular alignment. */
+        /**
+         * @description list: API endpoint for returning a list of alignments.
+         *     retrieve: API endpoint for returning a particular alignment.
+         */
         get: operations['alignments_retrieve'];
         put?: never;
         post?: never;
@@ -673,8 +745,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of conditions.
-         *     retrieve: API endpoint for returning a particular condition. */
+        /**
+         * @description list: API endpoint for returning a list of conditions.
+         *     retrieve: API endpoint for returning a particular condition.
+         */
         get: operations['conditions_list'];
         put?: never;
         post?: never;
@@ -691,53 +765,11 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of conditions.
-         *     retrieve: API endpoint for returning a particular condition. */
+        /**
+         * @description list: API endpoint for returning a list of conditions.
+         *     retrieve: API endpoint for returning a particular condition.
+         */
         get: operations['conditions_retrieve'];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    '/v2/condition-concepts/': {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description list: API endpoint for returning a list of condition concepts that aggregate equivalent conditions across game systems.
-         *     retrieve: API endpoint for returning a particular condition concept.
-         *
-         *     Condition concepts represent the same conceptual condition (e.g., "Invisible")
-         *     across different game systems, providing a unified view with links to the
-         *     system-specific implementations. */
-        get: operations['condition_concepts_list'];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };
-    '/v2/condition-concepts/{key}/': {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description list: API endpoint for returning a list of condition concepts that aggregate equivalent conditions across game systems.
-         *     retrieve: API endpoint for returning a particular condition concept.
-         *
-         *     Condition concepts represent the same conceptual condition (e.g., "Invisible")
-         *     across different game systems, providing a unified view with links to the
-         *     system-specific implementations. */
-        get: operations['condition_concepts_retrieve'];
         put?: never;
         post?: never;
         delete?: never;
@@ -753,8 +785,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of spells.
-         *     retrieve: API endpoint for returning a particular spell. */
+        /**
+         * @description list: API endpoint for returning a list of spells.
+         *     retrieve: API endpoint for returning a particular spell.
+         */
         get: operations['spells_list'];
         put?: never;
         post?: never;
@@ -771,8 +805,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of spells.
-         *     retrieve: API endpoint for returning a particular spell. */
+        /**
+         * @description list: API endpoint for returning a list of spells.
+         *     retrieve: API endpoint for returning a particular spell.
+         */
         get: operations['spells_retrieve'];
         put?: never;
         post?: never;
@@ -821,8 +857,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of classes.
-         *     retrieve: API endpoint for returning a particular class. */
+        /**
+         * @description list: API endpoint for returning a list of classes.
+         *     retrieve: API endpoint for returning a particular class.
+         */
         get: operations['classes_list'];
         put?: never;
         post?: never;
@@ -839,8 +877,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of classes.
-         *     retrieve: API endpoint for returning a particular class. */
+        /**
+         * @description list: API endpoint for returning a list of classes.
+         *     retrieve: API endpoint for returning a particular class.
+         */
         get: operations['classes_retrieve'];
         put?: never;
         post?: never;
@@ -857,8 +897,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of damage types.
-         *     retrieve: API endpoint for returning a particular damage type. */
+        /**
+         * @description list: API endpoint for returning a list of damage types.
+         *     retrieve: API endpoint for returning a particular damage type.
+         */
         get: operations['sizes_list'];
         put?: never;
         post?: never;
@@ -875,8 +917,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of damage types.
-         *     retrieve: API endpoint for returning a particular damage type. */
+        /**
+         * @description list: API endpoint for returning a list of damage types.
+         *     retrieve: API endpoint for returning a particular damage type.
+         */
         get: operations['sizes_retrieve'];
         put?: never;
         post?: never;
@@ -893,9 +937,11 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of item rarities.
+        /**
+         * @description list: API endpoint for returning a list of item rarities.
          *
-         *     retrieve: API endpoint for returning a particular item rarity. */
+         *     retrieve: API endpoint for returning a particular item rarity.
+         */
         get: operations['itemrarities_list'];
         put?: never;
         post?: never;
@@ -912,9 +958,11 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of item rarities.
+        /**
+         * @description list: API endpoint for returning a list of item rarities.
          *
-         *     retrieve: API endpoint for returning a particular item rarity. */
+         *     retrieve: API endpoint for returning a particular item rarity.
+         */
         get: operations['itemrarities_retrieve'];
         put?: never;
         post?: never;
@@ -931,8 +979,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of environments.
-         *     retrieve: API endpoint for returning a particular environment. */
+        /**
+         * @description list: API endpoint for returning a list of environments.
+         *     retrieve: API endpoint for returning a particular environment.
+         */
         get: operations['environments_list'];
         put?: never;
         post?: never;
@@ -949,8 +999,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of environments.
-         *     retrieve: API endpoint for returning a particular environment. */
+        /**
+         * @description list: API endpoint for returning a list of environments.
+         *     retrieve: API endpoint for returning a particular environment.
+         */
         get: operations['environments_retrieve'];
         put?: never;
         post?: never;
@@ -967,8 +1019,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of abilities.
-         *     retrieve: API endpoint for returning a particular ability. */
+        /**
+         * @description list: API endpoint for returning a list of abilities.
+         *     retrieve: API endpoint for returning a particular ability.
+         */
         get: operations['abilities_list'];
         put?: never;
         post?: never;
@@ -985,8 +1039,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of abilities.
-         *     retrieve: API endpoint for returning a particular ability. */
+        /**
+         * @description list: API endpoint for returning a list of abilities.
+         *     retrieve: API endpoint for returning a particular ability.
+         */
         get: operations['abilities_retrieve'];
         put?: never;
         post?: never;
@@ -1003,8 +1059,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of skills.
-         *     retrieve: API endpoint for returning a particular skill. */
+        /**
+         * @description list: API endpoint for returning a list of skills.
+         *     retrieve: API endpoint for returning a particular skill.
+         */
         get: operations['skills_list'];
         put?: never;
         post?: never;
@@ -1021,8 +1079,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description list: API endpoint for returning a list of skills.
-         *     retrieve: API endpoint for returning a particular skill. */
+        /**
+         * @description list: API endpoint for returning a list of skills.
+         *     retrieve: API endpoint for returning a particular skill.
+         */
         get: operations['skills_retrieve'];
         put?: never;
         post?: never;
@@ -1071,7 +1131,8 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description Mixin to apply eager loading optimisations to a ViewSet.
+        /**
+         * @description Mixin to apply eager loading optimisations to a ViewSet.
          *
          *     Dynamically applies `selected_related()` for ForeignKey fields and
          *     `prefetch_related()` from ManyToMany/reverse relationships. This improves
@@ -1093,7 +1154,8 @@ export interface paths {
          *
          *         select_related_fields = []   # ForeignKey relations to optimise with select_related()
          *         prefetch_related_fields = [] # ManyToMany/reverse relations to optimise with prefetch_related()
-         *     ``` */
+         *     ```
+         */
         get: operations['rulesets_list'];
         put?: never;
         post?: never;
@@ -1110,7 +1172,8 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description Mixin to apply eager loading optimisations to a ViewSet.
+        /**
+         * @description Mixin to apply eager loading optimisations to a ViewSet.
          *
          *     Dynamically applies `selected_related()` for ForeignKey fields and
          *     `prefetch_related()` from ManyToMany/reverse relationships. This improves
@@ -1132,7 +1195,8 @@ export interface paths {
          *
          *         select_related_fields = []   # ForeignKey relations to optimise with select_related()
          *         prefetch_related_fields = [] # ManyToMany/reverse relations to optimise with prefetch_related()
-         *     ``` */
+         *     ```
+         */
         get: operations['rulesets_retrieve'];
         put?: never;
         post?: never;
@@ -1181,7 +1245,8 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description Mixin to apply eager loading optimisations to a ViewSet.
+        /**
+         * @description Mixin to apply eager loading optimisations to a ViewSet.
          *
          *     Dynamically applies `selected_related()` for ForeignKey fields and
          *     `prefetch_related()` from ManyToMany/reverse relationships. This improves
@@ -1203,7 +1268,8 @@ export interface paths {
          *
          *         select_related_fields = []   # ForeignKey relations to optimise with select_related()
          *         prefetch_related_fields = [] # ManyToMany/reverse relations to optimise with prefetch_related()
-         *     ``` */
+         *     ```
+         */
         get: operations['weaponproperties_list'];
         put?: never;
         post?: never;
@@ -1220,7 +1286,8 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** @description Mixin to apply eager loading optimisations to a ViewSet.
+        /**
+         * @description Mixin to apply eager loading optimisations to a ViewSet.
          *
          *     Dynamically applies `selected_related()` for ForeignKey fields and
          *     `prefetch_related()` from ManyToMany/reverse relationships. This improves
@@ -1242,7 +1309,8 @@ export interface paths {
          *
          *         select_related_fields = []   # ForeignKey relations to optimise with select_related()
          *         prefetch_related_fields = [] # ManyToMany/reverse relations to optimise with prefetch_related()
-         *     ``` */
+         *     ```
+         */
         get: operations['weaponproperties_retrieve'];
         put?: never;
         post?: never;
@@ -1310,15 +1378,12 @@ export interface paths {
         };
         /**
          * Search across D&D 5E content
-         * @description
-         *             Search across all Open5e content and objects.
+         * @description Search across all Open5e content and objects.
          *
          *             If multiple search types are requested, the results are first sorted, then merged & deduplicated in order of decreasing precision:
          *             - Exact matches(name first, then other fields)
          *             - Fuzzy matches (similarity, descending)
          *             - Vector matches (similarity, descending)
-         *
-         *
          */
         get: operations['search_list'];
         put?: never;
@@ -1350,50 +1415,66 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Ability: {
             /** Format: uri */
             readonly url: string;
             /** @description Unique key for the Item. */
             readonly key: string;
+            descriptions: components['schemas']['AbilityDescription'][];
             skills: components['schemas']['Skill'][];
             /** @description Name of the item. */
             name: string;
-            /** @description Description of the game content item. Markdown. */
-            desc: string;
             /** @description Short description of the ability. */
             short_desc: string;
             /** Format: uri */
             document: string;
         };
-        /** @description A slimmer AbilitySerializer, designed to serialize Ability FKs on other
+        AbilityDescription: {
+            /** @description Description of the game content item. Markdown. */
+            desc?: string;
+            /** @description Unique key for the Document. */
+            document: string;
+            readonly gamesystem: string;
+        };
+        /**
+         * @description A slimmer AbilitySerializer, designed to serialize Ability FKs on other
          *     serializers. ie. The `saving_throws` field on CharacterClassSerializer. Not
-         *     intended to be used directly with in a ModelViewset. */
+         *     intended to be used directly with in a ModelViewset.
+         */
         AbilitySummary: {
             /** @description Name of the item. */
             name: string;
             /** Format: uri */
             readonly url: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Alignment: {
-            /** Format: uri */
-            readonly url: string;
             /** @description Unique key for the Item. */
             readonly key: string;
             readonly morality: string;
             readonly societal_attitude: string;
             readonly short_name: string;
-            document: components['schemas']['Document'];
-            /** @description Name of the item. */
-            name: string;
-            /** @description Description of the game content item. Markdown. */
-            desc: string;
+            descriptions: components['schemas']['AlignmentDescription'][];
+            document: components['schemas']['DocumentSummary'];
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        AlignmentDescription: {
+            /** @description Description of the game content item. Markdown. */
+            desc?: string;
+            /** @description Unique key for the Document. */
+            document: string;
+            readonly gamesystem: string;
+        };
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Armor: {
             /** Format: uri */
             readonly url: string;
@@ -1425,9 +1506,11 @@ export interface components {
              */
             ac_cap_dexmod?: number | null;
         };
-        /** @description A slightly slimmer ArmorSerializer, designed to serialize Armor FKs on
+        /**
+         * @description A slightly slimmer ArmorSerializer, designed to serialize Armor FKs on
          *     other serializers. ie. The `armor` field on the ItemSerializer. Not
-         *     intended to be used directly in a ModelViewset. */
+         *     intended to be used directly in a ModelViewset.
+         */
         ArmorSummary: {
             /** @description Name of the item. */
             name: string;
@@ -1458,8 +1541,10 @@ export interface components {
              */
             strength_score_required?: number | null;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Background: {
             /** Format: uri */
             readonly url: string;
@@ -1470,15 +1555,17 @@ export interface components {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         BackgroundBenefit: {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             /**
              * @description Modification type.
              *
@@ -1495,8 +1582,10 @@ export interface components {
              */
             type?: 'ability_score' | 'skill_proficiency' | 'tool_proficiency' | 'language' | 'equipment' | 'feature' | 'suggested_characteristics' | 'adventures_and_advancement' | 'connection_and_memento' | '' | null;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         CharacterClass: {
             /** Format: uri */
             readonly url: string;
@@ -1509,6 +1598,8 @@ export interface components {
             subclass_of: components['schemas']['CharacterClassSummary'];
             /** @description Name of the item. */
             name: string;
+            /** @description Description of the game content item. Markdown. */
+            desc?: string;
             /**
              * @description Dice notation hit dice option.
              *
@@ -1533,10 +1624,12 @@ export interface components {
             /** @description Primary abilities for thie class */
             primary_abilities: string[];
         };
-        /** @description A slimmer CharacterClassSerializer, designed to serialize Class FKs on
+        /**
+         * @description A slimmer CharacterClassSerializer, designed to serialize Class FKs on
          *     other serializers. ie. The `subclass_of` field on the
          *     CharacterClassSerializer serializer. Not intended to be used directly in a
-         *     ModelViewset. */
+         *     ModelViewset.
+         */
         CharacterClassSummary: {
             /** @description Name of the item. */
             name: string;
@@ -1545,28 +1638,55 @@ export interface components {
             /** Format: uri */
             readonly url: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         ClassFeature: {
             /** @description Unique key for the Item. */
             readonly key: string;
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
-            readonly feature_type: string;
-            readonly feature_items: components['schemas']['ClassFeaturePrefetch'][];
+            desc?: string;
+            /**
+             * @description The type that best represents this Class Feature
+             *
+             *     * `CORE_TRAITS_TABLE` - CORE_TRAITS_TABLE
+             *     * `CLASS_LEVEL_FEATURE` - CLASS_LEVEL_FEATURE
+             *     * `CLASS_FEATURE_OPTION_LIST` - CLASS_FEATURE_OPTION_LIST
+             *     * `CLASS_TABLE_DATA` - CLASS_TABLE_DATA
+             *     * `PROFICIENCIES` - PROFICIENCIES
+             *     * `PROFICIENCY_BONUS` - PROFICIENCY_BONUS
+             *     * `STARTING_EQUIPMENT` - STARTING_EQUIPMENT
+             *     * `SPELL_SLOTS` - SPELL_SLOTS
+             * @enum {string}
+             */
+            feature_type?: 'CORE_TRAITS_TABLE' | 'CLASS_LEVEL_FEATURE' | 'CLASS_FEATURE_OPTION_LIST' | 'CLASS_TABLE_DATA' | 'PROFICIENCIES' | 'PROFICIENCY_BONUS' | 'STARTING_EQUIPMENT' | 'SPELL_SLOTS';
+            readonly gained_at?: {
+                level: number;
+                detail?: string | null;
+            }[];
+            readonly data_for_class_table: {
+                /** @description The value that should be displayed in the table column (where applicable). */
+                level: number;
+                column_value?: string | null;
+            }[]
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         ClassFeaturePrefetch: {
             level: number;
             detail?: string | null;
             /** @description The value that should be displayed in the table column (where applicable). */
             column_value?: string | null;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Condition: {
             /** Format: uri */
             readonly url: string;
@@ -1574,44 +1694,22 @@ export interface components {
             readonly key: string;
             document: components['schemas']['DocumentSummary'];
             icon: components['schemas']['ImageSummary'];
-            readonly concept: string;
+            descriptions: components['schemas']['ConditionDescription'][];
             /** @description Name of the item. */
             name: string;
-            /** @description Description of the game content item. Markdown. */
-            desc: string;
         };
-        /** @description Serializer for the synthetic ConditionConcept model.
-         *     This provides a unified view of equivalent conditions across game systems. */
-        ConditionConcept: {
-            /** @description Name of the item. */
-            name: string;
-            /** @description Unique key for the condition concept (e.g., 'invisible'). */
-            readonly key: string;
-            /** Format: uri */
-            readonly url: string;
+        ConditionDescription: {
             /** @description Description of the game content item. Markdown. */
-            desc: string;
-            readonly conditions: components['schemas']['ConditionDetail'][];
+            desc?: string;
+            /** @description Unique key for the Document. */
+            document: string;
+            readonly gamesystem: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
-        ConditionDetail: {
-            /** @description Name of the item. */
-            name: string;
-            /** @description Unique key for the Item. */
-            readonly key: string;
-            /** Format: uri */
-            readonly url: string;
-            /** @description Description of the game content item. Markdown. */
-            desc: string;
-            document: components['schemas']['DocumentSummary'];
-            readonly gamesystem_key: string;
-            readonly concept: string;
-            icon: components['schemas']['ImageSummary'];
-        };
-        /** @description A slimmer ConditionSerializer, designed to serialize Condition FKs on
+        /**
+         * @description A slimmer ConditionSerializer, designed to serialize Condition FKs on
          *     other serializers. ie. The `condition_immunities` field on the Creature
-         *     serializer. Not intended to be used directly with in a ModelViewset. */
+         *     serializer. Not intended to be used directly with in a ModelViewset.
+         */
         ConditionSummary: {
             /** @description Name of the item. */
             name: string;
@@ -1699,14 +1797,17 @@ export interface components {
             readonly traits: components['schemas']['CreatureTrait'][];
             creaturesets: string[];
             environments: components['schemas']['EnvironmentSummary'][];
+            illustration: components['schemas']['ImageSummary'];
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         CreatureAction: {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             readonly attacks: components['schemas']['CreatureActionAttack'][];
             /**
              * @description The type of action used.
@@ -1722,12 +1823,15 @@ export interface components {
             order_in_statblock: number;
             legendary_action_cost: number;
             limited_to_form: string;
-            readonly usage_limits: {
-                [key: string]: unknown;
+            readonly usage_limits?: {
+                type: string,
+                param: number,
             };
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         CreatureActionAttack: {
             /** @description Name of the item. */
             name: string;
@@ -1800,8 +1904,10 @@ export interface components {
             extra_damage_type: components['schemas']['DamageTypeSummary'];
             readonly distance_unit: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         CreatureLanguage: {
             as_string: string;
             data: components['schemas']['LanguageSummary'][];
@@ -1834,7 +1940,7 @@ export interface components {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
         };
         /** @description Serializer for the Creature Type object */
         CreatureType: {
@@ -1842,15 +1948,23 @@ export interface components {
             readonly url: string;
             /** @description Unique key for the Item. */
             readonly key: string;
+            descriptions: components['schemas']['CreatureTypeDescription'][];
             /** @description Name of the item. */
             name: string;
-            /** @description Description of the game content item. Markdown. */
-            desc: string;
             /** Format: uri */
             document: string;
         };
-        /** @description A slimmer CreatureTypeSerializer, designed to serialize CreatureType FKs on
-         *     other serializers . Not intended to be used directly with in a ModelViewset. */
+        CreatureTypeDescription: {
+            /** @description Description of the game content item. Markdown. */
+            desc?: string;
+            /** @description Unique key for the Document. */
+            document: string;
+            readonly gamesystem: string;
+        };
+        /**
+         * @description A slimmer CreatureTypeSerializer, designed to serialize CreatureType FKs on
+         *     other serializers . Not intended to be used directly with in a ModelViewset.
+         */
         CreatureTypeSummary: {
             /** @description Name of the item. */
             name: string;
@@ -1859,22 +1973,32 @@ export interface components {
             /** Format: uri */
             readonly url: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         DamageType: {
             /** Format: uri */
             readonly url: string;
             /** @description Unique key for the Item. */
             readonly key: string;
+            descriptions: components['schemas']['DamageTypeDescription'][];
             /** @description Name of the item. */
             name: string;
-            /** @description Description of the game content item. Markdown. */
-            desc: string;
             /** Format: uri */
             document: string;
         };
-        /** @description A slimmer DamageTypeSerializer, designed to serialize DamageType FKs on
-         *     other serializers. Not intended to be used directly with in a ModelViewset. */
+        DamageTypeDescription: {
+            /** @description Description of the game content item. Markdown. */
+            desc?: string;
+            /** @description Unique key for the Document. */
+            document: string;
+            readonly gamesystem: string;
+        };
+        /**
+         * @description A slimmer DamageTypeSerializer, designed to serialize DamageType FKs on
+         *     other serializers. Not intended to be used directly with in a ModelViewset.
+         */
         DamageTypeSummary: {
             /** @description Name of the item. */
             name: string;
@@ -1883,8 +2007,10 @@ export interface components {
             /** Format: uri */
             readonly url: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Document: {
             /** Format: uri */
             readonly url: string;
@@ -1897,7 +2023,7 @@ export interface components {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             /** @description Author or authors. */
             author: string;
             /**
@@ -1927,8 +2053,10 @@ export interface components {
              */
             weight_unit?: 'feet' | 'miles' | '' | null;
         };
-        /** @description A slimmer DocumentSerializer, designed to serialize Documents FKs on other
-         *     serializers. Not intended to be used directly with in a ModelViewset. */
+        /**
+         * @description A slimmer DocumentSerializer, designed to serialize Documents FKs on other
+         *     serializers. Not intended to be used directly with in a ModelViewset.
+         */
         DocumentSummary: {
             /** @description Name of the item. */
             name: string;
@@ -1943,8 +2071,10 @@ export interface components {
              */
             permalink: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Environment: {
             /** Format: uri */
             readonly url: string;
@@ -1953,7 +2083,7 @@ export interface components {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             /** @description Whether or not aquatic environment rules apply to this environment. */
             aquatic?: boolean;
             /** @description Whether or not this environment is a plane of existence. */
@@ -1963,9 +2093,11 @@ export interface components {
             /** Format: uri */
             document: string;
         };
-        /** @description A slimmer EnvironmentSerializer, designed to serialize Enviroment FKs on
+        /**
+         * @description A slimmer EnvironmentSerializer, designed to serialize Enviroment FKs on
          *     other serializers. ie. The `environments` field on the CreatureSerializer.
-         *     Not intended to be used directly in a ModelViewset. */
+         *     Not intended to be used directly in a ModelViewset.
+         */
         EnvironmentSummary: {
             /** @description Name of the item. */
             name: string;
@@ -1974,8 +2106,10 @@ export interface components {
             /** Format: uri */
             readonly url: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Feat: {
             /** Format: uri */
             readonly url: string;
@@ -1987,7 +2121,7 @@ export interface components {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             /** @description Prerequisite for the game content item. */
             prerequisite?: string;
             /**
@@ -1999,14 +2133,18 @@ export interface components {
              */
             type?: 'GENERAL' | 'ORIGIN' | 'FIGHTING_STYLE' | 'EPIC_BOON';
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         FeatBenefit: {
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         GameSystem: {
             /** Format: uri */
             readonly url: string;
@@ -2015,12 +2153,14 @@ export interface components {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             /** @description Short code prepended to content keys. */
             content_prefix?: string;
         };
-        /** @description A slimmer GameSystemSerializer, designed to serialize GameSystem FKs on
-         *     other serializers. Not intended to be used directly with in a ModelViewset. */
+        /**
+         * @description A slimmer GameSystemSerializer, designed to serialize GameSystem FKs on
+         *     other serializers. Not intended to be used directly with in a ModelViewset.
+         */
         GameSystemSummary: {
             /** @description Name of the item. */
             name: string;
@@ -2029,13 +2169,16 @@ export interface components {
             /** Format: uri */
             readonly url: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Image: {
             /** @description Name of the item. */
             name: string;
             /** @description Unique key for the Item. */
             readonly key: string;
+            /** @description Returns a relative path to the related file. */
             readonly file_url: string;
             /** @description A short textual description of the image. Important for accessibility */
             alt_text: string;
@@ -2043,8 +2186,10 @@ export interface components {
             attribution: string;
             document: components['schemas']['DocumentSummary'];
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         ImageSummary: {
             /** @description Name of the item. */
             name: string;
@@ -2052,61 +2197,51 @@ export interface components {
             key: string;
             /** Format: uri */
             readonly url: string;
+            /** @description Returns a relative path to the related file. */
             readonly file_url: string;
             /** @description A short textual description of the image. Important for accessibility */
             alt_text: string;
             /** @description Attribution information for this image. Who drew it and where we can find more of thier work? */
             attribution: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Item: {
             /** Format: uri */
             readonly url: string;
             /** @description Unique key for the Item. */
             readonly key: string;
-            readonly is_magic_item: boolean;
-            weapon: components['schemas']['WeaponSummary'];
-            armor: components['schemas']['ArmorSummary'];
-            document: components['schemas']['DocumentSummary'];
-            category: components['schemas']['ItemCategorySummary'];
-            rarity: components['schemas']['ItemRarity'];
-            damage_immunities: components['schemas']['DamageTypeSummary'][];
-            size: components['schemas']['SizeSummary'];
-            readonly weight_unit: string;
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
-            /**
-             * Format: decimal
-             * @description Number representing the cost of the object.
-             */
-            cost?: string | null;
+            desc?: string;
+            category: components['schemas']['ItemCategorySummary'];
+            rarity: components['schemas']['ItemRarity'];
+            readonly is_magic_item: boolean;
+            weapon: components['schemas']['WeaponSummary'];
+            armor: components['schemas']['ArmorSummary'];
+            size: components['schemas']['SizeSummary'];
             /**
              * Format: decimal
              * @description Number representing the weight of the object.
              */
             weight?: string;
-            /** @description Integer representing the armor class of the object. */
-            armor_class?: number;
-            /** @description Represents parathetical text that follows an objects AC */
-            armor_detail?: string | null;
-            /** @description Integer representing the hit points of the object. */
-            hit_points?: number;
-            /** @description Dice string representing a way to calculate hit points. */
-            hit_dice?: string | null;
-            /** @description If api_v2.models.object is resistant to nonmagical attacks. */
-            nonmagical_attack_resistance?: boolean;
-            /** @description If the api_v2.models.object is immune to nonmagical attacks. */
-            nonmagical_attack_immunity?: boolean;
+            readonly weight_unit: string;
+            /**
+             * Format: decimal
+             * @description Number representing the cost of the object.
+             */
+            cost?: string | null;
             /** @description If the item requires attunement. */
             requires_attunement?: boolean;
-            damage_vulnerabilities: string[];
-            damage_resistances: string[];
+            document: components['schemas']['DocumentSummary'];
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         ItemCategory: {
             /** Format: uri */
             readonly url: string;
@@ -2116,8 +2251,10 @@ export interface components {
             /** @description Name of the item. */
             name: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         ItemCategorySummary: {
             /** @description Name of the item. */
             name: string;
@@ -2126,8 +2263,10 @@ export interface components {
             /** Format: uri */
             readonly url: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         ItemRarity: {
             /** @description Name of the item. */
             name: string;
@@ -2141,8 +2280,10 @@ export interface components {
              */
             rank: number;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         ItemSet: {
             /** Format: uri */
             readonly url: string;
@@ -2152,12 +2293,14 @@ export interface components {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             /** Format: uri */
             document: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         ItemSummary: {
             /** @description Name of the item. */
             name: string;
@@ -2166,8 +2309,10 @@ export interface components {
             /** Format: uri */
             readonly url: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Language: {
             /** Format: uri */
             readonly url: string;
@@ -2177,7 +2322,7 @@ export interface components {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             /** @description Whether or not the language is exotic. */
             is_exotic?: boolean;
             /** @description Whether or not the language is secret. */
@@ -2185,9 +2330,11 @@ export interface components {
             /** Format: uri */
             script_language?: string | null;
         };
-        /** @description This serializer is used for FKs to the Language model from other
+        /**
+         * @description This serializer is used for FKs to the Language model from other
          *     serializers. ie. for the languages spoken by creatures on the
-         *     CreatureSerializer. */
+         *     CreatureSerializer.
+         */
         LanguageSummary: {
             /** @description Name of the item. */
             name: string;
@@ -2196,10 +2343,12 @@ export interface components {
             /** Format: uri */
             readonly url: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         License: {
             /** Format: uri */
             readonly url: string;
@@ -2208,10 +2357,12 @@ export interface components {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
         };
-        /** @description A slimmer LicenseSerializer, designed to serialize License FKs on other
-         *     serializers. Not intended to be used directly with in a ModelViewset. */
+        /**
+         * @description A slimmer LicenseSerializer, designed to serialize License FKs on other
+         *     serializers. Not intended to be used directly with in a ModelViewset.
+         */
         LicenseSummary: {
             /** @description Name of the item. */
             name: string;
@@ -2294,21 +2445,6 @@ export interface components {
              */
             previous?: string | null;
             results: components['schemas']['CharacterClass'][];
-        };
-        PaginatedConditionConceptList: {
-            /** @example 123 */
-            count: number;
-            /**
-             * Format: uri
-             * @example http://api.example.org/accounts/?page=4
-             */
-            next?: string | null;
-            /**
-             * Format: uri
-             * @example http://api.example.org/accounts/?page=2
-             */
-            previous?: string | null;
-            results: components['schemas']['ConditionConcept'][];
         };
         PaginatedConditionList: {
             /** @example 123 */
@@ -2730,8 +2866,10 @@ export interface components {
             previous?: string | null;
             results: components['schemas']['WeaponProperty'][];
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Publisher: {
             /** Format: uri */
             readonly url: string;
@@ -2740,8 +2878,10 @@ export interface components {
             /** @description Name of the item. */
             name: string;
         };
-        /** @description A slimmer PublisherSerializer, designed to serialize Publisher FKs on other
-         *     serializers. Not intended to be used directly with in a ModelViewset. */
+        /**
+         * @description A slimmer PublisherSerializer, designed to serialize Publisher FKs on other
+         *     serializers. Not intended to be used directly with in a ModelViewset.
+         */
         PublisherSummary: {
             /** @description Name of the item. */
             name: string;
@@ -2750,15 +2890,17 @@ export interface components {
             /** Format: uri */
             readonly url: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Rule: {
             /** Format: uri */
             readonly url: string;
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             /**
              * Format: int64
              * @description A rule's position in the list of rules of the parent RuleSet
@@ -2783,8 +2925,10 @@ export interface components {
              */
             ruleset: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         RuleSet: {
             /** @description Name of the item. */
             name: string;
@@ -2792,11 +2936,13 @@ export interface components {
             key: string;
             document: components['schemas']['DocumentSummary'];
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             rules: components['schemas']['Rule'][];
         };
-        /** @description This method builds the search result object structure.
-         *     It does a lookup based on primary keys stored in the search table. */
+        /**
+         * @description This method builds the search result object structure.
+         *     It does a lookup based on primary keys stored in the search table.
+         */
         SearchResult: {
             readonly document: components['schemas']['search_document'];
             object_pk: string;
@@ -2813,8 +2959,10 @@ export interface components {
             /** Format: double */
             readonly match_score: number | null;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Service: {
             /** Format: uri */
             readonly url: string;
@@ -2824,7 +2972,7 @@ export interface components {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             /**
              * Format: decimal
              * @description Number representing the cost of the object.
@@ -2866,9 +3014,11 @@ export interface components {
              */
             suggested_hit_dice?: 'D4' | 'D6' | 'D8' | 'D10' | 'D12' | 'D20' | '' | null;
         };
-        /** @description A slimmer SizeSerializer, designed to serialize Size FKs on other
+        /**
+         * @description A slimmer SizeSerializer, designed to serialize Size FKs on other
          *     serializers. ie. The `size` field on the CreatureSerializer. Not intended
-         *     to be used directly in a ModelViewset. */
+         *     to be used directly in a ModelViewset.
+         */
         SizeSummary: {
             /** @description Name of the item. */
             name: string;
@@ -2880,13 +3030,25 @@ export interface components {
         Skill: {
             /** @description Unique key for the Item. */
             key: string;
+            descriptions: components['schemas']['SkillDescription'][];
             /** @description Name of the item. */
             name: string;
-            /** @description Description of the game content item. Markdown. */
-            desc: string;
+            /** @description Unique key for the Document. */
+            document: string;
+            /** @description The ability referenced by this skill. */
+            ability: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        SkillDescription: {
+            /** @description Description of the game content item. Markdown. */
+            desc?: string;
+            /** @description Unique key for the Document. */
+            document: string;
+            readonly gamesystem: string;
+        };
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Species: {
             /** Format: uri */
             readonly url: string;
@@ -2899,20 +3061,36 @@ export interface components {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             /** Format: uri */
             subspecies_of?: string | null;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         SpeciesTrait: {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
+            /**
+             * @description * `ABILITY_MODS` - ABILITY_MODS
+             *     * `SIZE` - SIZE
+             *     * `SPEED` - SPEED
+             * @enum {string|null}
+             */
+            type?: 'ABILITY_MODS' | 'SIZE' | 'SPEED' | '' | null;
+            /**
+             * Format: int64
+             * @description The position in the list of features that a feature appears in its source statblock
+             */
+            order?: number | null;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Spell: {
             /** Format: uri */
             readonly url: string;
@@ -2927,7 +3105,7 @@ export interface components {
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             /** @description Integer representing the default slot level required by the spell. */
             level: number;
             /** @description Description of casting the spell at a different level. */
@@ -3170,21 +3348,25 @@ export interface components {
             /** @description Description of complex casting option effects that cannot be captured in other fields. */
             desc?: string | null;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         SpellSchool: {
             /** Format: uri */
             readonly url: string;
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             /** Format: uri */
             document: string;
         };
-        /** @description A slimmer SpellSchoolSerializer, designed to serialize Spell School FKs on
+        /**
+         * @description A slimmer SpellSchoolSerializer, designed to serialize Spell School FKs on
          *     other serializers. ie. The `school` field on the SpellSerializer. Not
-         *     intended to be used directly in a ModelViewset. */
+         *     intended to be used directly in a ModelViewset.
+         */
         SpellSchoolSummary: {
             /** @description Name of the item. */
             name: string;
@@ -3193,15 +3375,17 @@ export interface components {
             /** Format: uri */
             readonly url: string;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         Weapon: {
             /** Format: uri */
             readonly url: string;
             /** @description Unique key for the Item. */
             readonly key: string;
             document: components['schemas']['DocumentSummary'];
-            properties: components['schemas']['WeaponPropertyAssignment'][];
+            readonly properties: components['schemas']['WeaponProperty'];
             damage_type: components['schemas']['DamageTypeSummary'];
             readonly ranged_attack_possible: string;
             readonly range_melee: string;
@@ -3225,15 +3409,17 @@ export interface components {
             /** @description If the weapon is improvised. */
             is_improvised?: boolean;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         WeaponProperty: {
             /** @description Unique key for the Item. */
             key: string;
             /** @description Name of the item. */
             name: string;
             /** @description Description of the game content item. Markdown. */
-            desc: string;
+            desc?: string;
             /** Format: uri */
             document: string;
             /** Format: uri */
@@ -3241,14 +3427,18 @@ export interface components {
             /** @description Weapon property type: ie. Weapon Mastery, etc. */
             type?: string | null;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         WeaponPropertyAssignment: {
             property: components['schemas']['WeaponPropertySummary'];
             detail?: string | null;
         };
-        /** @description Much of the logic included in the GameContentSerializer is intended to
-         *     support manipulating data returned by the serializer via query parameters. */
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
         WeaponPropertySummary: {
             /** @description Name of the item. */
             name: string;
@@ -3257,9 +3447,11 @@ export interface components {
             /** Format: uri */
             readonly url: string;
         };
-        /** @description A (slightly) more slender version of the WeaponSerializer. Designed for
+        /**
+         * @description A (slightly) more slender version of the WeaponSerializer. Designed for
          *     serializing FKs to the Weapons table in other serializers – ie. the
-         *     `"weapon"` field on the ItemSerializer */
+         *     `"weapon"` field on the ItemSerializer
+         */
         WeaponSummary: {
             /** @description Name of the item. */
             name: string;
@@ -3362,12 +3554,13 @@ export interface components {
             survival: number;
         };
         speed: {
-            readonly walk: string;
-            readonly fly: string;
-            readonly swim: string;
-            readonly climb: string;
-            readonly burrow: string;
-            hover: boolean;
+            readonly walk?: string;
+            readonly fly?: string;
+            readonly swim?: string;
+            readonly climb?: string;
+            readonly burrow?: string;
+            hover?: boolean;
+            readonly unit?: string;
         };
         speed_all: {
             readonly unit: string;
@@ -3622,15 +3815,19 @@ export interface operations {
                 display_name?: string;
                 publication_date?: string;
                 permalink?: string;
-                /** @description What distance unit the relevant field uses.
+                /**
+                 * @description What distance unit the relevant field uses.
                  *
                  *     * `feet` - feet
-                 *     * `miles` - miles */
+                 *     * `miles` - miles
+                 */
                 distance_unit?: 'feet' | 'miles' | null;
-                /** @description What distance unit the relevant field uses.
+                /**
+                 * @description What distance unit the relevant field uses.
                  *
                  *     * `feet` - feet
-                 *     * `miles` - miles */
+                 *     * `miles` - miles
+                 */
                 weight_unit?: 'feet' | 'miles' | null;
                 /** @description Which field to use when ordering the results. */
                 ordering?: string;
@@ -3987,6 +4184,7 @@ export interface operations {
                 key?: string;
                 name__iexact?: string;
                 name?: string;
+                name__icontains?: string;
                 /** @description Multiple values may be separated by commas. */
                 document__key__in?: string[];
                 document__key__iexact?: string;
@@ -4050,6 +4248,7 @@ export interface operations {
                 key?: string;
                 name__iexact?: string;
                 name?: string;
+                name__icontains?: string;
                 /** @description Multiple values may be separated by commas. */
                 document__key__in?: string[];
                 document__key__iexact?: string;
@@ -4113,6 +4312,7 @@ export interface operations {
                 key?: string;
                 name__iexact?: string;
                 name?: string;
+                name__icontains?: string;
                 /** @description Multiple values may be separated by commas. */
                 document__key__in?: string[];
                 document__key__iexact?: string;
@@ -4698,70 +4898,6 @@ export interface operations {
             };
         };
     };
-    condition_concepts_list: {
-        parameters: {
-            query?: {
-                /** @description Multiple values may be separated by commas. */
-                key__in?: string[];
-                key__iexact?: string;
-                key?: string;
-                name__iexact?: string;
-                name?: string;
-                name__contains?: string;
-                /** @description Multiple values may be separated by commas. */
-                conditions__document__key__in?: string[];
-                conditions__document__key__iexact?: string;
-                conditions__document__key?: string;
-                /** @description Multiple values may be separated by commas. */
-                conditions__document__gamesystem__key__in?: string[];
-                conditions__document__gamesystem__key__iexact?: string;
-                conditions__document__gamesystem__key?: string;
-                /** @description Which field to use when ordering the results. */
-                ordering?: string;
-                /** @description A search term. */
-                search?: string;
-                /** @description A page number within the paginated result set. */
-                page?: number;
-                /** @description Number of results to return per page. */
-                limit?: number;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    'application/json': components['schemas']['PaginatedConditionConceptList'];
-                };
-            };
-        };
-    };
-    condition_concepts_retrieve: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                key: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    'application/json': components['schemas']['ConditionConcept'];
-                };
-            };
-        };
-    };
     spells_list: {
         parameters: {
             query?: {
@@ -4809,7 +4945,8 @@ export interface operations {
                 /** @description Multiple values may be separated by commas. */
                 duration__in?: string[];
                 duration__iexact?: string;
-                /** @description Description of the duration of the effect such as "instantaneous" or "1 minute"
+                /**
+                 * @description Description of the duration of the effect such as "instantaneous" or "1 minute"
                  *
                  *     * `instantaneous` - instantaneous
                  *     * `instantaneous or special` - instantaneous or special
@@ -4862,7 +4999,8 @@ export interface operations {
                  *     * `until dispelled or triggered` - until dispelled or triggered
                  *     * `permanent until discharged` - permanent until discharged
                  *     * `permanent; one generation` - permanent; one generation
-                 *     * `permanent` - permanent */
+                 *     * `permanent` - permanent
+                 */
                 duration?: '1 day' | '1 hour' | '1 hour or until triggered' | '1 hour/caster level' | '1 minute' | '1 minute' | '1 minute or 1 hour' | '1 minute, or until expended' | '1 minute, until expended' | '1 round' | '1 turn' | '1 year' | '10 days' | '10 hours' | '10 minutes' | '10 rounds' | '12 hours' | '13 days' | '1d10 hours' | '1d4+2 rounds' | '2 hours' | '2 rounds' | '2-12 hours' | '24 hours' | '24 hours or until the target attempts a third death saving throw' | '3 days' | '3 hours' | '3 rounds' | '30 days' | '4 rounds' | '5 days' | '5 minutes' | '5 rounds' | '6 hours' | '6 rounds' | '7 days' | '8 hours' | 'concentration + 1 round' | 'instantaneous' | 'instantaneous or special' | 'permanent' | 'permanent until discharged' | 'permanent; one generation' | 'special' | 'until cured or dispelled' | 'until destroyed' | 'until dispelled' | 'until dispelled or destroyed' | 'until dispelled or triggered' | 'up to 1 hour' | 'up to 1 minute' | 'up to 8 hours';
                 concentration?: boolean;
                 verbal?: boolean;
@@ -4872,7 +5010,8 @@ export interface operations {
                 /** @description Multiple values may be separated by commas. */
                 casting_time__in?: string[];
                 casting_time__iexact?: string;
-                /** @description Casting time key, such as 'action'
+                /**
+                 * @description Casting time key, such as 'action'
                  *
                  *     * `reaction` - Reaction
                  *     * `bonus-action` - 1 Bonus Action
@@ -4889,7 +5028,8 @@ export interface operations {
                  *     * `9hours` - 9 Hours
                  *     * `12hours` - 12 Hours
                  *     * `24hours` - 24 Hours
-                 *     * `1week` - 1 Week */
+                 *     * `1week` - 1 Week
+                 */
                 casting_time?: '10minutes' | '12hours' | '1hour' | '1minute' | '1week' | '24hours' | '4hours' | '5minutes' | '7hours' | '8hours' | '9hours' | 'action' | 'bonus-action' | 'reaction' | 'round' | 'turn';
                 /** @description Which field to use when ordering the results. */
                 ordering?: string;
@@ -5361,6 +5501,21 @@ export interface operations {
     rules_list: {
         parameters: {
             query?: {
+                /** @description Multiple values may be separated by commas. */
+                key__in?: string[];
+                key__iexact?: string;
+                key?: string;
+                name__iexact?: string;
+                name?: string;
+                name__icontains?: string;
+                /** @description Multiple values may be separated by commas. */
+                document__key__in?: string[];
+                document__key__iexact?: string;
+                document__key?: string;
+                /** @description Multiple values may be separated by commas. */
+                document__gamesystem__key__in?: string[];
+                document__gamesystem__key__iexact?: string;
+                document__gamesystem__key?: string;
                 /** @description Which field to use when ordering the results. */
                 ordering?: string;
                 /** @description A search term. */

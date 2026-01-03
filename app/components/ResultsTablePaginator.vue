@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * ApiTableNav.vue - Pagination controls, designed to be used with the
  * `<ResultsTable />` component
@@ -56,7 +56,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const props = defineProps({
   lastPageNumber: { type: Number, default: 1 },
   pageNumber: { type: Number, default: 1 },
@@ -64,6 +64,14 @@ const props = defineProps({
   totalItems: { type: Number, default: 1 },
 });
 const emit = defineEmits(['first', 'last', 'next', 'prev']);
+
+// keyboard control for pagination
+const handleKeyDown = (event: KeyboardEvent) => {
+  if (event.key === 'ArrowRight') emit('next');
+  else if (event.key === 'ArrowLeft') emit('prev');
+};
+onMounted(() => document.addEventListener('keydown', handleKeyDown));
+onBeforeUnmount(() => document.removeEventListener('keydown', handleKeyDown));
 
 // conditional properties control whenever certain buttons are enabled
 const isNotFirstPage = computed(() => props.pageNumber > 1);

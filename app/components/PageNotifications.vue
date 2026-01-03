@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * PageNotifications.vue - A UI wrapper for the `notifications` singleton
  * returned by the useNotifications composable. Displays notifications in the
@@ -70,7 +70,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useNotifications } from '~/composables/useNotifications';
 
 const { clear, notifications, remove } = useNotifications();

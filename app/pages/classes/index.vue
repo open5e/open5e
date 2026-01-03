@@ -23,6 +23,7 @@
         filterField: 'name__contains',
       }"
     />
+    
     <ResultsTable
       endpoint="classes"
       :data="data?.results"

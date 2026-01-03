@@ -26,16 +26,16 @@
     </div>
 
     <img
-      v-if="monster.img_main"
-      :src="monster.img_main"
-      :alt="monster.name"
+      v-if="monster.illustration"
+      :src="monster.illustration.file_url"
+      :alt="monster.illustration.alt_text"
       class="img-main"
     />
     <p class="italic">
       <span>{{ `${monster.size.name} ${monster.type.name}` }}</span>
 
-      <span v-if="monster.subtype">
-        {{ ' ' + `(${monster.subtype})` }}
+      <span v-if="monster.subcategory">
+        {{ ' ' + `(${monster.subcategory})` }}
       </span>
 
       <span v-if="monster.alignment">
@@ -47,7 +47,6 @@
       <SourceTag
         :title="monster.document.name"
         :text="monster.document.key"
-        :description="monster.document.source"
       />
     </p>
 
@@ -183,7 +182,7 @@
       <ul id="traits-list">
         <li
           v-for="trait in monster.traits"
-          :key="trait.key"
+          :key="trait.name"
           class="my-1"
         >
           <span class="font-bold">{{ trait.name + ". " }}</span>
@@ -197,41 +196,43 @@
     </section>
 
     <!-- CREATURE ACTIONS -->
-    <section
-      v-for="(actionsByType, actionType) in actions"
-      :key="actionsByType"
-    >
-      <h2>{{ snakeToTitleCase(actionType) }}</h2>
-      <ul>
-        <li
-          v-for="action in actionsByType"
-          :key="action.name"
-          class="my-1"
-        >
-          <strong>
-            <span>{{ action.name }}</span>
-            <span
-              v-if="action.usage_limits?.type === 'RECHARGE_ON_ROLL'"
-              class="cursor-pointer font-bold text-blood before:text-black after:text-black  hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
-              @click="rollDice('1d6+0', {
-                title: `${action.name} Recharge`,
-                subtitle: monster.name,
-              })"
-            > 
-              {{
-                ' (Recharge ' + (action.uses_param < 6 ? `${action.uses_param}-6` : '6') + ')'
-              }}
-            </span>
-            <span>{{ ". " }}</span>
-          </strong>
-          
-          <MdViewer
-            :inline="true"
-            :text="action.desc"
-            :use-roller="true"
-          />
-        </li>
-      </ul>
+    <section>
+      <template
+        v-for="(actionsByType, actionType) in actions"
+        :key="actionType"
+      >
+        <h2>{{ snakeToTitleCase(actionType) }}</h2>
+        <ul>
+          <li
+            v-for="action in actionsByType"
+            :key="action.name"
+            class="my-1"
+          >
+            <strong>
+              <span>{{ action.name }}</span>
+              <span
+                v-if="action.usage_limits?.type === 'RECHARGE_ON_ROLL'"
+                class="cursor-pointer font-bold text-blood before:text-black after:text-black  hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
+                @click="rollDice('1d6+0', {
+                  title: `${action.name} Recharge`,
+                  subtitle: monster.name,
+                })"
+              > 
+                {{
+                  ' (Recharge ' + (action.uses_param < 6 ? `${action.uses_param}-6` : '6') + ')'
+                }}
+              </span>
+              <span>{{ ". " }}</span>
+            </strong>
+
+            <MdViewer
+              :inline="true"
+              :text="action.desc"
+              :use-roller="true"
+            />
+          </li>
+        </ul>
+      </template>
     </section>
 
     <!-- DESCRIPTION -->
@@ -247,7 +248,7 @@
       <span class="font-bold">Environments: </span>
       <span
         v-for="environemnt in monster.environments"
-        :key="environemnt.id"
+        :key="environemnt.key"
         class="text-sm after:content-['.'] [&:not(:last-child)]:after:content-[',_']"
       >
         {{ environemnt.name }}
@@ -268,6 +269,8 @@
 </template>
 
 <script setup lang="ts">
+import type { CreatureAction } from '@/types';
+
 const rollDice = useDiceRoller();
 const formatModifier = useFormatModifier();
 
@@ -275,9 +278,11 @@ const params = {
   environments__fields: 'name',
   document__fields: 'name,key,permalink',
 };
+
+const monsterId = useQueryParameter('id');
 const { data: monster } = useFindOne(
   API_ENDPOINTS.monsters,
-  useRoute().params.id,
+  monsterId,
   { params },
 );
 
@@ -289,27 +294,39 @@ const initiativeBonus = computed(() => {
   return monster.value.initiative_bonus ?? monster.value.modifiers?.dexterity;
 });
 
+type ActionType = 'ACTION' | 'BONUS_ACTION' | 'REACTION' | 'LEGENDARY_ACTION' | 'LAIR_ACTION';
+
 // Sort monster actions by type (ie. 'action', 'bonus action', 'reaction').
 // rtrns an object whose keys are action types & vals are arrays of actions.
 const actions = computed(() => {
   if (!monster?.value?.actions) return {};
-  const actionsByType = monster.value.actions.reduce(
+
+  const actionsByType = monster.value.actions.reduce<Record<ActionType, CreatureAction[]>>(
     (output, action) => {
       const { action_type: actionType } = action;
+      if (!actionType) return output;
       if (output[actionType]) output[actionType].push(action);
       else output[actionType] = [action];
       return output;
     },
-    { ACTION: [] },
+    {
+      'ACTION': [] as CreatureAction[],
+      'BONUS_ACTION': [] as CreatureAction[],
+      'REACTION': [] as CreatureAction[],
+      'LEGENDARY_ACTION': [] as CreatureAction[],
+      'LAIR_ACTION': [] as CreatureAction[]
+    },
   );
 
   // sort monster actions according to the value of their 'order' field
   Object.keys(actionsByType).forEach((type) => {
-    actionsByType[type].sort((a, b) => a['order_in_statblock'] - b['order_in_statblock']);
+    actionsByType[type as ActionType].sort(
+      (a: CreatureAction, b: CreatureAction) => a['order_in_statblock'] - b['order_in_statblock']
+    );
   });
 
   return actionsByType;
-});
+}) as ComputedRef<Record<ActionType, CreatureAction[]>>;
 
 // Converts SNAKE_CASE to Title Case, used for action type headers
 const snakeToTitleCase = (input: string) =>
@@ -332,21 +349,22 @@ const speeds = computed(() => {
 // assemble senses from multiple fields
 const senses = computed(() => {
   if (!monster?.value) return {};
-  const senses = {};
-  if (monster.value.darkvision_range) {
-    senses['Darkvision'] = monster.value.darkvision_range + ' ft.';
-  }
-  if (monster.value.blindsight_range) {
-    senses['Blindsight'] = monster.value.blindsight_range + ' ft.';
-  }
-  if (monster.value.tremorsense_range) {
-    senses['Tremorsense'] = monster.value.tremorsense_range + ' ft.';
-  }
-  if (monster.value.truesight_range) {
-    senses['Truesight'] = monster.value.truesight_range + ' ft.';
-  }
-  senses['Passive Perception'] = monster.value.passive_perception;
-  return senses;
+
+  const {
+    darkvision_range: darkvision,
+    blindsight_range: blindsight,
+    tremorsense_range: tremorsense,
+    truesight_range: truesight,
+    passive_perception: passivePerception,
+  } = monster.value;
+
+  return {
+    ...(darkvision && { 'Darkvision': darkvision + ' ft.' }),
+    ...(blindsight && { 'Blindsight': blindsight + ' ft.' }),
+    ...(tremorsense && {'Tremorsense': tremorsense + ' ft.' }),
+    ...(truesight && { 'Truesight': truesight + ' ft.' }),
+    ...(passivePerception && { 'Passive Perception': passivePerception})
+  };
 });
 
 // Format monster immunities, resistances, and vulnerabilities as an iterable
@@ -377,17 +395,19 @@ const encounterStore = useEncounterStore();
 
 const addToEncounter = () => {
   if (!monster.value) return;
+  console.log('test');
+
   encounterStore.addMonster(
     monster.value.key,
     monster.value.name,
-    monster.value.challenge_rating_decimal,
+    parseFloat(monster.value.challenge_rating_decimal),
     monster.value.challenge_rating_text,
   );
 };
 
 const monsterInEncounter = computed(() => {
   if (!monster.value) return false;
-  return encounterStore.monsters.value.find(m => m.id === monster.value.key);
+  return encounterStore.monsters.value.find(m => m.key === monster.value.key);
 });
 
 const removeFromEncounter = () => {

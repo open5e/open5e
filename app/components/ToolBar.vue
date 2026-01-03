@@ -22,11 +22,4 @@
 
 <script lang="ts" setup>
 defineEmits(['encounter-builder-clicked']);
-
-
-
 </script>
-
-<style>
-
-</style>

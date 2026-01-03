@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * ClassTable.vue - Displays a table of class progression data - for each level
  * features, proficiencies, and spell slots are rendered.
@@ -23,18 +23,9 @@
   <table>
     <thead>
       <tr>
-        <th rowspan="2">
-          Level
-        </th>
-        <th
-          v-if="proficiencies"
-          rowspan="2"
-        >
-          Proficiency Bonus
-        </th>
-        <th rowspan="2">
-          Features
-        </th>
+        <th rowspan="2">Level</th>
+        <th v-if="proficiencies" rowspan="2">Proficiency Bonus</th>
+        <th rowspan="2">Features</th>
         <th
           v-for="title in additionalColumnHeaders"
           :key="title"
@@ -81,13 +72,13 @@
           :key="feature.name"
         >
           <NuxtLink
-            :key="feature.key"
+            :key="feature.name"
             :to="'#' + titleCaseToKebabCase(feature.name)"
           >
             {{ feature.name + (feature.detail ? ` (${feature.detail})` : '') }}
           </NuxtLink>
           <!-- insert commas between features -->
-          <span v-if="index !== classFeatures[level].length - 1">
+          <span v-if="index !== (classFeatures?.[level].length ?? 0) - 1">
             {{ ', ' }}
           </span>
         </span>
@@ -113,43 +104,57 @@
   </table>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { titleCaseToKebabCase } from '~/functions/titleCaseToKebabCase';
+import type { ClassFeature } from '@/types';
 
-const props = defineProps({
-  classFeatures: { type: Object, default: () => {} },
-  proficiencyBonus: { type: Object, default: () => {} },
-  spellSlots: { type: Array, default: () => [] },
-  classResourceTableColumns: { type: Array, default: () => [] },
-});
+type FeatureStub = {
+  name: string;
+  detail?: string;
+  level?: number;
+}
+
+const props = defineProps<{
+  classFeatures?: Record<number, FeatureStub[]>;
+  proficiencyBonus?: ClassFeature;
+  spellSlots?: ClassFeature[];
+  classResourceTableColumns?: ClassFeature[];
+}>();
 
 // Parse proficiency bonuses
-const proficiencies = computed(() => {
-  if (!props?.proficiencyBonus?.data_for_class_table.length > 0) return;
-  const { data_for_class_table: data } = props.proficiencyBonus;
+const proficiencies = computed<string[]>(() => {
+  const { proficiencyBonus } = props;
+  if (!proficiencyBonus) return [];
+  const { data_for_class_table: data } = proficiencyBonus;
+  if (!data || data.length === 0) return [];
   return data.reduce((output, tableRow) => {
-    output[tableRow.level] = tableRow.column_value;
+    output[tableRow.level] = tableRow.column_value ?? '';
     return output;
-  }, Array(20));
+  }, Array(20).fill(''));
 });
 
 // returns an array of additional columns used in this class's
 const additionalColumnHeaders = computed(() => {
-  if (props.classResourceTableColumns.length === 0) return;
-  return props.classResourceTableColumns.map(column => column.name);
+  const { classResourceTableColumns } = props;
+  if (!classResourceTableColumns || classResourceTableColumns?.length === 0) return;
+  return classResourceTableColumns.map(column => column.name);
 });
 
 // parse additional class table data into a nested dict:
 // columnTitle -> level -> value
 const classResourceTableData = computed(() => {
-  return props.classResourceTableColumns.reduce((acc, column) => {
+  const { classResourceTableColumns } = props;
+  if (!classResourceTableColumns) return {};
+
+  return classResourceTableColumns.reduce((acc, column) => {
     const { name: colName, data_for_class_table: valuePerLevel } = column;
     if (!acc[colName]) acc[colName] = {};
     valuePerLevel.forEach(({ level, column_value: value }) => {
+      if (!value) return;
       acc[colName][level] = value;
     });
     return acc;
-  }, {});
+  }, {} as Record<string, Record<number, string>>);
 });
 
 // returns an array of table column headers for spell slots per level
@@ -161,21 +166,23 @@ const spellslotColumnHeaders = computed(() => {
 // parses spell slot data passed via props in nested dict
 // Class Level -> Spell Level -> Number of spell slots
 const spellSlotTableData = computed(() => {
-  const data = props.spellSlots;
-  return data.reduce((acc, feature) => {
+  const { spellSlots: data } = props;
+  if (!data) return {};
+  return data?.reduce((acc, feature) => {
     const { name: spellLevel, data_for_class_table: slotsPerCharLevel } = feature;
     slotsPerCharLevel.forEach((item) => {
       const { level: classLevel, column_value: spellSlots } = item;
+      if (!spellSlots || !spellLevel) return;
       if (!acc[classLevel]) acc[classLevel] = {};
       const spellLevelNoOrdinal = spellLevel.charAt(0);
       acc[classLevel][spellLevelNoOrdinal] = spellSlots;
     });
     return acc;
-  }, {});
+  }, {} as Record<string, Record<string, string>>);
 });
 
 // Gets number of spell slots per class/spell level. Handles null-exceptions
-const getSpellSlots = (classLevel, spellLevel) => {
+const getSpellSlots = (classLevel: number, spellLevel: string) => {
   const data = spellSlotTableData.value;
   const slotsPerClassLevel = data[classLevel];
   if (!slotsPerClassLevel) return '-';

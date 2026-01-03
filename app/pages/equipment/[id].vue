@@ -9,17 +9,8 @@
           {{ formatWeaponSubtitle(item.weapon) }}
         </p>
         <dl class="grid grid-cols-[8rem_1fr]">
-          <dt class="font-bold">
-            Damage
-          </dt>
-          <dd>
-            {{
-              item.weapon.damage_dice
-                + (item.weapon.is_versatile
-                  ? ` (${item.weapon.versatile_dice})`
-                  : '')
-            }}
-          </dd>
+          <dt class="font-bold">Damage</dt>
+          <dd>{{ item.weapon.damage_dice }}</dd>
           <dt class="font-bold">
             Damage Type
           </dt>
@@ -37,23 +28,11 @@
               ).join(', ') }}
             </dd>
           </template>
-          <template v-if="item.weapon.is_reach">
-            <dt class="font-bold">
-              Reach
-            </dt>
-            <dd>{{ item.weapon.reach + ' ft.' }}</dd>
-          </template>
-          <template v-if="item.weapon.range">
-            <dt class="font-bold">
-              Range
-            </dt>
-            <dd>{{ `${item.weapon.range} / ${item.weapon.long_range}` }}</dd>
-          </template>
-          <template v-if="parseFloat(item?.weight) > 0">
+          <template v-if="parseFloat(item.weight ?? '0') > 0">
             <dt class="font-bold">
               Weight
             </dt>
-            <dd>{{ `${parseFloat(item.weight)} lb` }}</dd>
+            <dd>{{ `${parseFloat(item.weight as string)} lb` }}</dd>
           </template>
           <template v-if="item.cost">
             <dt class="font-bold">
@@ -80,17 +59,17 @@
             </dt>
             <dd>Disadvantage</dd>
           </template>
-          <template v-if="parseFloat(item?.weight) > 0">
+          <template v-if="parseFloat(item.weight ?? '') > 0">
             <dt class="font-bold">
               Weight
             </dt>
-            <dd>{{ `${parseFloat(item.weight)} lb` }}</dd>
+            <dd>{{ `${parseFloat(item.weight ?? '')} lb` }}</dd>
           </template>
           <template v-if="item.cost">
             <dt class="font-bold">
               Cost
             </dt>
-            <dd>{{ formatCost(item.cost) }}</dd>
+            <dd>{{ formatCost(item.cost ?? '') }}</dd>
           </template>
         </dl>
       </div>
@@ -102,17 +81,17 @@
             Category
           </dt>
           <dd>{{ item.category.name }}</dd>
-          <template v-if="parseFloat(item?.weight) > 0">
+          <template v-if="parseFloat(item.weight ?? '0') > 0">
             <dt class="font-bold">
               Weight
             </dt>
-            <dd>{{ `${parseFloat(item.weight)} lb` }}</dd>
+            <dd>{{ `${parseFloat(item.weight ?? '')} lb` }}</dd>
           </template>
-          <template v-if="parseFloat(item.cost) > 0">
+          <template v-if="parseFloat(item.cost ?? '0') > 0">
             <dt class="font-bold">
               Cost
             </dt>
-            <dd>{{ formatCost(item.cost) }}</dd>
+            <dd>{{ formatCost(item.cost ?? '') }}</dd>
           </template>
         </dl>
         <md-viewer :text="item.desc" />
@@ -135,17 +114,18 @@
   </section>
 </template>
 
-<script setup>
-const { data: item } = useFindOne(
-  API_ENDPOINTS.equipment,
-  useRoute().params.id,
-  { is_magic_item: false },
-);
+<script setup lang="ts">
+import type { WeaponSummary } from '@/types';
+
+const itemId = useQueryParameter('id');
+const params = { 'is_magic_item': 'false' };
+const { data: item } = useFindOne(API_ENDPOINTS.equipment, itemId, { params });
 
 usePageMetadata({ title: computed(() => item.value?.name) });
 
-const formatCost = (input) => {
-  const [gold, rest] = input.split('.');
+const formatCost = (input: string) => {
+  if (!input) return '';
+  const [gold , rest] = input.split('.');
   const [silver, copper] = rest.split('');
   return (
     (parseInt(gold) > 0 ? `${gold} gp` : '')
@@ -153,9 +133,17 @@ const formatCost = (input) => {
     + (parseInt(copper) > 0 ? `${copper} cp` : '')
   );
 };
+const weaponHasProperties = (weapon: WeaponSummary, propertiesToFind: string[] = []): boolean => {
+  if (!weapon || propertiesToFind.length === 0) return false;
+  
+  return weapon.properties.some((item) => (
+    propertiesToFind.includes(item.property.name)
+  ));
+};
 
-const formatWeaponSubtitle = weapon =>
-  `${weapon.is_melee ? 'Melee' : 'Ranged'} weapon `
+const formatWeaponSubtitle = (weapon: WeaponSummary) =>
+  `${weaponHasProperties(weapon, ['Ammunition']) ? 'Ranged' : 'Melee'} weapon `
   + `(${weapon.is_martial ? 'martial' : 'simple'}`
   + `${weapon.name.length > 0 ? `, ${weapon.name.toLowerCase()}` : ''})`;
+
 </script>

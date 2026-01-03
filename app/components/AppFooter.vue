@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * 
  * AppFooter.vue: UI component containing the website footer. Contains social
@@ -34,7 +34,7 @@
   </footer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 
 const socialMediaLinks = [
   {

@@ -4,7 +4,7 @@ import { ref, computed } from 'vue';
 import EncounterBuilder from '~/components/EncounterBuilder.vue';
 
 interface MockMonster {
-  id: string;
+  key: string;
   name: string;
   count: number;
   challenge_rating_decimal: number;
@@ -95,7 +95,7 @@ describe('EncounterBuilder', () => {
   it('calls addMonster when monster is selected', async () => {
     const wrapper = mount(EncounterBuilder);
     const testMonster = {
-      id: 'test-monster',
+      key: 'test-monster',
       name: 'Test Monster',
       challenge_rating_decimal: 1,
       challenge_rating: '1',
@@ -117,7 +117,7 @@ describe('EncounterBuilder', () => {
     // Setup mock state with a monster
     mockMonsters.value = [
       {
-        id: 'test-monster',
+        key: 'test-monster',
         name: 'Test Monster',
         count: 1,
         challenge_rating_decimal: 1,
