@@ -22,14 +22,14 @@
 
 <template>
   <!-- Visually hidden table label, used by screen readers -->
-  <label
+  <h2
     id="abilities-table-label"
     class="sr-only"
     role="note"
     aria-live="polite"
   >
     Abilities and Saving Throws
-  </label>
+  </h2>
 
   <!-- Flex container for containing left & right tables -->
   <div class="flex items-center justify-center gap-4 sm:justify-normal">
