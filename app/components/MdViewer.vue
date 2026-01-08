@@ -72,7 +72,7 @@ const extensions = computed(() => {
 <style>
 .markdown-inline {
   display: inline;
-  :not(ul, table, th, td, tr, thead, tbody) {
+  :not(ul, table, th, td, tr, thead, tbody, strong) {
     display: inherit;
   }
 }
