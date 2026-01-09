@@ -71,11 +71,7 @@ h6 {
 }
 
 p {
-  margin-top: var(--pad-md);
-}
-
-p:not(:first-child) {
-  margin-top: var(--pad-sm);
+  margin-block: var(--pad-sm);
 }
 
 h1,
