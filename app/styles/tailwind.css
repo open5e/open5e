@@ -163,19 +163,6 @@ td {
   display: inline-block;
 }
 
-.docs-toc ul {
-  font-size: 1.2rem;
-  list-style: none;
-  padding-left: 0;
-  line-height: 1.5rem;
-}
-
-.docs-toc ul ul {
-  padding-left: var(--pad-sm);
-  font-size: 1.1rem;
-}
-
-
 blockquote {
   padding: 0.1rem 1rem 1rem 1rem;
   margin-top: 1rem;
