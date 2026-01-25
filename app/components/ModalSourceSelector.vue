@@ -168,7 +168,7 @@
 </template>
 
 <script setup lang="ts">
-import { sortDocumentsByPublisher } from '~/functions/sortDocumentsByPublisher';
+import { sortDocumentsByPublisher } from '@/helpers';
 import type { Document } from '@/types';
 
 // fetch full list of document sources

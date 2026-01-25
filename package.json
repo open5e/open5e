@@ -18,7 +18,8 @@
     "lint:ci": "npm run lint",
     "lint:js": "npm run lint",
     "test": "npx vitest run --silent",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "typecheck": "npx nuxi typecheck"
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.4.0",
