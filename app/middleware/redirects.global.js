@@ -13,6 +13,7 @@ const partialMatchesToRedirect = [
   { find: '/characters', to: '/rules' },
   { find: '/gameplay-mechanics', to: '/rules' },
   { find: '/running', to: '/rules' },
+  { find: '/spells/by-class', to: '/spells'}
 ];
 
 // if a url contains a substring, replace it with another substring
