@@ -2,8 +2,6 @@
 // are the names of Publishers and the values are arrays of documents published
 // by that publisher.
 
-import { unref, type Ref } from 'vue';
-
 import type { Document } from '@/types';
 
 export function sortDocumentsByPublisher(

@@ -105,8 +105,8 @@
 </template>
 
 <script setup lang="ts">
-import { titleCaseToKebabCase } from '~/functions/titleCaseToKebabCase';
 import type { ClassFeature } from '@/types';
+import { titleCaseToKebabCase } from '@/helpers';
 
 type FeatureStub = {
   name: string;

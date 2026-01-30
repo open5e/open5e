@@ -33,7 +33,7 @@
     }"
     :markdown="text"
     :extensions="extensions"
-    :class="inline ? 'markdown-inline' : ''"
+    :class="inline ? 'markdown markdown-inline' : 'markdown'"
   />
 </template>
 
@@ -70,9 +70,16 @@ const extensions = computed(() => {
 </script>
 
 <style>
+.markdown {
+  ul {
+    list-style-type: disc;
+    margin-left: 1rem;
+  }
+}
+
 .markdown-inline {
   display: inline;
-  :not(ul, table, th, td, tr, thead, tbody, strong) {
+  p, div {
     display: inherit;
   }
 }
