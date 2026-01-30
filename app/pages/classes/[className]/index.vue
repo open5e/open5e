@@ -122,8 +122,8 @@
 </template>
 
 <script setup lang="ts">
-import { titleCaseToKebabCase } from '@/functions/titleCaseToKebabCase';
 import type { ClassFeature } from '@/types';
+import { titleCaseToKebabCase } from '@/helpers';
 
 const classId = useQueryParameter('className');
 const fieldsToFetch = ['desc', 'features', 'hit_points', 'key', 'name', 'subclasses'].join(',');

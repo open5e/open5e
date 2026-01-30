@@ -44,6 +44,6 @@
 
 <script setup lang="ts">
 import type { Document } from '@/types';
-import { sortDocumentsByPublisher } from '../../functions/sortDocumentsByPublisher';
+import { sortDocumentsByPublisher } from '@/helpers';
 const { data: documents } = useDocuments();
 </script>
