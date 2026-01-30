@@ -72,7 +72,7 @@
         },
         {
           displayName: 'CR',
-          value: (data) => data.challenge_rating_text,
+          value: (data) => parseChallengeRating(data.challenge_rating_decimal),
           sortValue: 'challenge_rating_decimal',
         },
         {
@@ -135,6 +135,7 @@
 import { h } from 'vue';
 import { PlusIcon, MinusIcon } from '@heroicons/vue/24/solid';
 import type { Monster } from '@/types';
+import { parseChallengeRating } from '@/helpers';
 
 // Set up filters
 const filterState = useFilterState<MonsterFilter>({
@@ -147,13 +148,10 @@ const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fields to fetch from API to populate table
 const fields = [
-  'id',
   'key',
   'name',
   'document',
-  'challenge_rating_text',
   'challenge_rating_decimal',
-  'experience_points',
   'document',
   'type',
   'size',
@@ -169,8 +167,7 @@ const { data, paginator } = useFindPaginated({
     fields,
     document__fields: 'name,key',
     type__fields: 'name',
-    size__fields: 'name,key',
-    is_subclass: false,
+    size__fields: 'name',
   },
 });
 
