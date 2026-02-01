@@ -18,13 +18,15 @@
 <script setup lang="ts">
 import type { Class, Item } from '@/types';
 
-const props = defineProps({ src: { type: String, default: '' } });
+const { to = '' } = defineProps<{ to?: string }>();
 
-const [version, endpoint, key] = props.src.split('/');
+const [version, endpoint, key] = to.split('/');
 
 type CrossLinkEndpoint = 'v2/items/' | 'v2/creatures/' | 'v2/classes/' | 'v2/species/' | 'v2/feats/' | 'v2/spells/';
 
 const versionWithEndpoint = `${version}/${endpoint}/` as CrossLinkEndpoint;
+
+// generate query parameters for each endpoint to get correct data for preview
 
 const baseFields = ['name', 'key', 'document'];
 const queryParametersPerEndpoint = {
@@ -34,20 +36,23 @@ const queryParametersPerEndpoint = {
   'v2/classes/': [...baseFields, 'subclass_of'],
 } as Record<CrossLinkEndpoint, string[]>;
 
+// create query params structure here to keep useFindOne call readable
+const queryParameters = {
+  params: {
+    fields: (
+      queryParametersPerEndpoint[versionWithEndpoint] ?? baseFields
+    ).join(',')
+  }
+};
+
 const { data } = version && endpoint && key 
-  ? useFindOne(versionWithEndpoint, key, {
-    params: {
-      fields: (
-        queryParametersPerEndpoint[versionWithEndpoint] ?? baseFields
-      ).join(',')
-    }
-  })
+  ? useFindOne(versionWithEndpoint, key, queryParameters)
   : { data: ref(null) };
 
 const previewData = computed(() => data.value);
 
+// format top-level page part of URL where it differs from API structure
 const topLevelPage = computed(() => {
-  // format top-level page part of URL where it differs from API structure
   if (!previewData.value) return;
   if (versionWithEndpoint === 'v2/items/') {
     return (previewData.value as Item).rarity 
