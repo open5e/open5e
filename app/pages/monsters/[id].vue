@@ -5,9 +5,7 @@
   >
     <!-- TITLE -->
     <div class="flex items-end justify-between gap-8">
-      <h1 class="flex-auto">
-        {{ monster.name }}
-      </h1>
+      <h1 class="flex-auto">{{ monster.name }}</h1>
 
       <div class="flex flex-none items-start gap-2">
         <button
@@ -28,96 +26,83 @@
     </div>
 
     <img
-      v-if="monster.img_main"
-      :src="monster.img_main"
-      :alt="monster.name"
+      v-if="monster.illustration"
+      :src="monster.illustration.file_url"
+      :alt="monster.illustration.alt_text"
       class="img-main"
     />
     <p class="italic">
       <span>{{ `${monster.size.name} ${monster.type.name}` }}</span>
 
-      <span
-        v-if="monster.subtype"
-        class="before:content-['_('] after:content-[')']"
-      >
-        {{ monster.subtype }}
+      <span v-if="monster.subcategory">
+        {{ ' ' + `(${monster.subcategory})` }}
       </span>
 
-      <span
-        v-if="monster.alignment"
-        class="before:content-[',_']"
-      >
-        {{ monster.alignment }}
+      <span v-if="monster.alignment">
+        {{ ', ' + monster.alignment }}
       </span>
+      
+      <span>{{ ' ' }}</span>
 
       <SourceTag
         :title="monster.document.name"
         :text="monster.document.key"
-        :description="monster.document.source"
       />
     </p>
 
-    <dl class="grid grid-cols-[10rem_1fr]">
-      <!-- ARMOR CLASS -->
-      <dt class="font-bold after:content-['_']">
-        Armor Class
-      </dt>
-      <dd>
-        <span>{{ monster.armor_class }}</span>
-        <span
-          v-if="monster.armor_detail"
-          class="text-charcoal dark:text-smoke"
-        >
-          ({{ monster.armor_detail }})
-        </span>
-      </dd>
+    <table class="table-auto border-none text-base">
+      <tbody class="[&>*>*]:border-none [&>*]:border-none">
+        <tr class="grid grid-cols-[10rem,_1fr] [&>*]:p-0">
+          <th>Armor Class</th>
+          <td class="text-nowrap">
+            <span>{{ monster.armor_class }}</span>
+            <span 
+              v-if="monster.armor_detail"
+              class="text-charcoal dark:text-smoke"
+            >
+              ({{ monster.armor_detail }})
+            </span>
+          </td>
+        </tr>
 
-      <!-- INITIATIVE BONUS -->
-      <dt class="font-bold after:content-['_']">
-        Initiative Bonus
-      </dt>
-      <dd
-        class="w-min cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
-        @click="rollDice(initiativeBonus, {
-          title: 'Initiative',
-          subtitle: monster.name
-        })"
-      >
-        {{ formatModifier(initiativeBonus) }}
-      </dd>
+        <tr class="grid grid-cols-[10rem,_1fr] [&>*]:p-0">
+          <th>Initiative Bonus</th>
+          <td
+            class="w-min cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
+            @click="rollDice(initiativeBonus, {
+              title: 'Initiative',
+              subtitle: monster.name
+            })"
+          >
+            {{ formatModifier(initiativeBonus) }}
+          </td>
+        </tr>
 
-      <!-- HIT POINTS -->
-      <dt class="font-bold after:content-['_']">
-        Hit Points
-      </dt>
-      <dd>
-        <span class="after:content-['_']">{{ monster.hit_points }}</span>
-        <span
-          v-if="monster.hit_dice"
-          class="cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
-          @click="rollDice(monster.hit_dice, {
-             title: 'Hit Points',
-             subtitle: monster.name
-          })"
-        >
-          {{ `(${monster.hit_dice})` }}
-        </span>
-      </dd>
+        <tr class="grid grid-cols-[10rem,_1fr] [&>*]:p-0">
+          <th>Hit Points</th>
+          <td class="text-nowrap">
+            <span>{{ monster.hit_points }}</span>
+            <span
+              v-if="monster.hit_dice"
+              class="cursor-pointer font-bold text-blood hover:text-black dark:hover:text-fog"
+              @click="rollDice(monster.hit_dice, {
+                title: 'Hit Points',
+                subtitle: monster.name
+              })"
+            >
+              {{ ' ' + `(${monster.hit_dice})` }}
+            </span>
+          </td>
+        </tr>
 
-      <!-- SPEEDS -->
-      <dt class="font-bold after:content-['_']">
-        Speed
-      </dt>
-      <dd>
-        <span
-          v-for="speed in speeds"
-          :key="speed"
-          class="after:content-[',_'] last:after:content-[]"
-        >
-          {{ speed }}
-        </span>
-      </dd>
-    </dl>
+        <tr class="grid grid-cols-[10rem,_1fr] [&>*]:p-0">
+          <th>Speed</th>
+          <td class="text-nowrap">
+            <span>{{ speeds }}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
     <hr class="my-4 h-[2px] w-[32rem] border-none bg-white bg-gradient-to-r from-fireball dark:bg-darkness dark:from-blood" />
 
@@ -127,106 +112,64 @@
     <hr class="my-4 h-[2px] w-[32rem] border-none bg-white bg-gradient-to-r from-fireball dark:bg-darkness dark:from-blood" />
 
     <!-- BOX UNDER STATS -->
-    <section class="my-4">
-      <!-- SKILLS -->
-      <ul
-        v-if="Object.keys(monster.skill_bonuses).length > 0"
-        id="skills"
-      >
-        <label
-          for="skills"
-          class="inline font-bold after:content-['_']"
+    <table class="my-4 border-none text-base">
+      <tbody class="[&>*>*]:border-none [&>*]:border-none">
+        <tr 
+          v-if="Object.keys(monster.skill_bonuses).length > 0"
+          class="grid grid-cols-[10rem,_1fr] [&>*]:p-0"
         >
-          Skills
-        </label>
-        <li
-          v-for="(modifier, skill) in monster.skill_bonuses"
-          :key="skill"
-          class="inline cursor-pointer font-bold capitalize text-blood after:text-black after:content-[',_'] last:after:content-[] hover:text-black dark:after:text-white dark:hover:text-fog"
-          @click="rollDice(modifier.toString(), {
-             title: skill,
-             subtitle: monster.name
-          })"
-        >
-          {{ `${skill} ${formatModifier(modifier)}` }}
-        </li>
-      </ul>
+          <th>{{ 'Skills' + ' ' }}</th>
+          <td class="text-nowrap">
+            <ul>
+              <li
+                v-for="(modifier, skill) in monster.skill_bonuses"
+                :key="skill"
+                class="inline cursor-pointer font-bold capitalize text-blood after:text-black after:content-[',_'] last:after:content-[] hover:text-black dark:after:text-white dark:hover:text-fog"
+                @click="rollDice(modifier.toString(), {
+                  title: skill,
+                  subtitle: monster.name
+                })"
+              >
+                {{ `${skill} ${formatModifier(modifier)}` }}
+              </li>
+            </ul>
+          </td>
+        </tr>
 
-      <!-- RESISTANCES, VULNERABILITY AND IMMUNITIES -->
-      <dl>
-        <div
+        <tr 
           v-for="(text, title) in resistancesAndVulnerabilities"
           :key="title"
-          class="flex gap-1"
+          class="grid grid-cols-[10rem,_1fr] [&>*]:p-0"
         >
-          <dt class="font-bold">
-            {{ title + " " }}
-          </dt>
-          <dd class="capitalize">
-            {{ text }}
-          </dd>
-        </div>
-      </dl>
+          <th>{{ title }}</th>
+          <td class="capitalize">{{ text }}</td>
+        </tr>
 
-      <!-- SENSES -->
-      <ul id="senses">
-        <span
-          for="senses"
-          class="inline font-bold after:content-['_']"
-        >
-          Senses
-        </span>
-        <li
-          v-for="(value, sense) in senses"
-          :key="sense"
-          class="inline after:content-[',_'] last:after:content-[]"
-        >
-          {{ `${sense} ${value}` }}
-        </li>
-      </ul>
+        <tr class="grid grid-cols-[10rem,_1fr] [&>*]:p-0">
+          <th>Senses</th>
+          <td class="text-nowrap">
+            {{
+              Object.keys(senses)
+                .map((item) => `${item} ${senses[item as keyof typeof senses]}`)
+                .join(', ')
+            }}
+          </td>
+        </tr>
 
-      <!-- LANGUAGES -->
-      <ul id="languages">
-        <span
-          for="languages"
-          class="inline font-bold after:content-['_']"
-        >
-          Languages
-        </span>
-        <li
-          v-if="monster.languages?.as_string"
-          class="inline"
-        >
-          {{ monster.languages.as_string }}
-        </li>
-        <li
-          v-for="language in monster.languages.data"
-          v-else-if="monster.languages.data.length > 0"
-          :key="language.name"
-          class="inline after:content-[',_'] last:after:content-[]"
-        >
-          {{ language.name }}
-        </li>
-        <li
-          v-else
-          class="inline"
-        >
-          -
-        </li>
-      </ul>
+        <tr class="grid grid-cols-[10rem,_1fr] [&>*]:p-0">
+          <th>Languages</th>
+          <td class="text-nowrap">{{ monster.languages.as_string || "-" }}</td>
+        </tr>
 
-      <!-- CHALLENGE -->
-      <ul id="challenge">
-        <span
-          for="challenge"
-          class="inline font-bold after:content-['_']"
-        >
-          Challenge
-        </span>
-        <span>{{ monster.challenge_rating_text + ' ' }}</span>
-        <span>{{ `(${monster.experience_points.toLocaleString()} XP)` }}</span>
-      </ul>
-    </section>
+        <tr class="grid grid-cols-[10rem,_1fr] [&>*]:p-0">
+          <th>Challenge</th>
+          <td class="text-nowrap">
+            <span>{{ monster.challenge_rating_text + " " }}</span>
+            <span>{{ `(${monster.experience_points.toLocaleString()} XP)` }}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
     <!-- TRAITS -->
     <section v-if="monster.traits?.length !== 0">
@@ -234,13 +177,11 @@
       <ul id="traits-list">
         <li
           v-for="trait in monster.traits"
-          :key="trait.key"
+          :key="trait.name"
           class="my-1"
         >
-          <span class="font-bold after:content-['._']">
-            {{ trait.name }}
-          </span>
-          <md-viewer
+          <h3 class="inline text-base">{{ trait.name + ". " }}</h3>
+          <MdViewer
             :inline="true"
             :text="trait.desc"
             :use-roller="true"
@@ -250,44 +191,56 @@
     </section>
 
     <!-- CREATURE ACTIONS -->
-    <section
-      v-for="(actionsByType, actionType) in actions"
-      :key="actionsByType"
-    >
-      <h2>{{ snakeToTitleCase(actionType) }}</h2>
-      <ul>
-        <li
-          v-for="action in actionsByType"
-          :key="action.name"
-          class="my-1"
-        >
-          <span class="font-bold after:content-['_']">{{ action.name }}</span>
-          <span
-            v-if="action.uses_type === 'RECHARGE_ON_ROLL'"
-            class="cursor-pointer font-bold text-blood before:text-black before:content-['_('] after:text-black after:content-[')_'] hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
-            @click="rollDice('1d6+0', {
-              title: `${action.name} Recharge`,
-              subtitle: monster.name,
-            })"
-          >
-            {{
-              'Recharge '
-                + (action.uses_param < 6 ? `${action.uses_param}-6` : '6')
-            }}
-          </span>
-          <md-viewer
-            inline="true"
-            :text="action.desc"
-            :use-roller="true"
-          />
-        </li>
-      </ul>
-    </section>
+    <section>
+      <template
+        v-for="(actionsByType, actionType) in actions"
+        :key="actionType"
+      >
+        <div v-if="actionsByType.length > 0">
+          <h2>{{ snakeToTitleCase(actionType + "s") }}</h2>
+          <ul>
+            <li
+              v-for="action in actionsByType"
+              :key="action.name"
+              class="my-1"
+            >
+              <h3 class="inline text-base">
+                <span>{{ action.name }}</span>
+                <span
+                  v-if="action.usage_limits?.type === 'RECHARGE_ON_ROLL'"
+                  class="cursor-pointer font-sans font-bold text-blood before:text-black after:text-black  hover:text-black dark:before:text-white dark:after:text-white dark:hover:text-white"
+                  @click="rollDice('1d6+0', {
+                    title: `${action.name} Recharge`,
+                    subtitle: monster.name,
+                  })"
+                > 
+                  {{ ' (Recharge ' + (action.usage_limits.param < 6 ? `${action.usage_limits.param}-6` : '6') + ')' }}
+                </span>
 
-    <!-- DESCRIPTION -->
-    <section v-if="monster.desc">
-      <h2>Description</h2>
-      <md-viewer :text="monster.desc" />
+                <span v-if="action.usage_limits?.type === 'PER_DAY'" class="font-sans italic">
+                  {{ ` (${action.usage_limits.param}/Day)` }}
+                </span>
+                
+                <span v-if="action.legendary_action_cost >= 2" class="font-sans italic">
+                  {{ ` (Costs ${action.legendary_action_cost} Actions)` }}
+                </span>
+
+                <span v-if="action?.limited_to_form" class="font-sans">
+                  {{ ` (${action.limited_to_form})` }}
+                </span>
+
+                <span>{{ ". " }}</span>
+              </h3>
+
+              <MdViewer
+                :inline="true"
+                :text="action.desc"
+                :use-roller="true"
+              />
+            </li>
+          </ul>
+        </div>
+      </template>
     </section>
 
     <hr class="my-4 h-[2px] w-[32rem] border-none bg-white bg-gradient-to-r from-fireball dark:bg-darkness dark:from-blood" />
@@ -297,7 +250,7 @@
       <span class="font-bold">Environments: </span>
       <span
         v-for="environemnt in monster.environments"
-        :key="environemnt.id"
+        :key="environemnt.key"
         class="text-sm after:content-['.'] [&:not(:last-child)]:after:content-[',_']"
       >
         {{ environemnt.name }}
@@ -318,6 +271,8 @@
 </template>
 
 <script setup lang="ts">
+import type { CreatureAction } from '@/types';
+
 const rollDice = useDiceRoller();
 const formatModifier = useFormatModifier();
 
@@ -325,9 +280,11 @@ const params = {
   environments__fields: 'name',
   document__fields: 'name,key,permalink',
 };
+
+const monsterId = useQueryParameter('id');
 const { data: monster } = useFindOne(
   API_ENDPOINTS.monsters,
-  useRoute().params.id,
+  monsterId,
   { params },
 );
 
@@ -339,27 +296,39 @@ const initiativeBonus = computed(() => {
   return monster.value.initiative_bonus ?? monster.value.modifiers?.dexterity;
 });
 
+type ActionType = 'ACTION' | 'BONUS_ACTION' | 'REACTION' | 'LEGENDARY_ACTION' | 'LAIR_ACTION';
+
 // Sort monster actions by type (ie. 'action', 'bonus action', 'reaction').
 // rtrns an object whose keys are action types & vals are arrays of actions.
 const actions = computed(() => {
   if (!monster?.value?.actions) return {};
-  const actionsByType = monster.value.actions.reduce(
+
+  const actionsByType = monster.value.actions.reduce<Record<ActionType, CreatureAction[]>>(
     (output, action) => {
       const { action_type: actionType } = action;
+      if (!actionType) return output;
       if (output[actionType]) output[actionType].push(action);
       else output[actionType] = [action];
       return output;
     },
-    { ACTION: [] },
+    {
+      'ACTION': [] as CreatureAction[],
+      'BONUS_ACTION': [] as CreatureAction[],
+      'REACTION': [] as CreatureAction[],
+      'LEGENDARY_ACTION': [] as CreatureAction[],
+      'LAIR_ACTION': [] as CreatureAction[]
+    },
   );
 
   // sort monster actions according to the value of their 'order' field
   Object.keys(actionsByType).forEach((type) => {
-    actionsByType[type].sort((a, b) => a['order_in_statblock'] - b['order_in_statblock']);
+    actionsByType[type as ActionType].sort(
+      (a: CreatureAction, b: CreatureAction) => a['order_in_statblock'] - b['order_in_statblock']
+    );
   });
 
   return actionsByType;
-});
+}) as ComputedRef<Record<ActionType, CreatureAction[]>>;
 
 // Converts SNAKE_CASE to Title Case, used for action type headers
 const snakeToTitleCase = (input: string) =>
@@ -371,32 +340,33 @@ const snakeToTitleCase = (input: string) =>
 
 // Format monster speeds for template
 const speeds = computed(() => {
-  if (!monster?.value?.speed) return {};
+  if (!monster?.value?.speed) return '';
   const { unit, ...speeds } = monster.value.speed;
   return Object.entries(speeds).map(
     ([speed, distance]) =>
       (speed === 'walk' ? '' : speed + ' ') + `${distance} ft.`,
-  );
+  ).join(', ');
 });
 
 // assemble senses from multiple fields
 const senses = computed(() => {
   if (!monster?.value) return {};
-  const senses = {};
-  if (monster.value.darkvision_range) {
-    senses['Darkvision'] = monster.value.darkvision_range + ' ft.';
-  }
-  if (monster.value.blindsight_range) {
-    senses['Blindsight'] = monster.value.blindsight_range + ' ft.';
-  }
-  if (monster.value.tremorsense_range) {
-    senses['Tremorsense'] = monster.value.tremorsense_range + ' ft.';
-  }
-  if (monster.value.truesight_range) {
-    senses['Truesight'] = monster.value.truesight_range + ' ft.';
-  }
-  senses['Passive Perception'] = monster.value.passive_perception;
-  return senses;
+
+  const {
+    darkvision_range: darkvision,
+    blindsight_range: blindsight,
+    tremorsense_range: tremorsense,
+    truesight_range: truesight,
+    passive_perception: passivePerception,
+  } = monster.value;
+
+  return {
+    ...(darkvision && { 'Darkvision': darkvision + ' ft.' }),
+    ...(blindsight && { 'Blindsight': blindsight + ' ft.' }),
+    ...(tremorsense && {'Tremorsense': tremorsense + ' ft.' }),
+    ...(truesight && { 'Truesight': truesight + ' ft.' }),
+    ...(passivePerception && { 'Passive Perception': passivePerception})
+  };
 });
 
 // Format monster immunities, resistances, and vulnerabilities as an iterable
@@ -416,9 +386,9 @@ const resistancesAndVulnerabilities = computed(() => {
 
   // assemble output object, conditionally inlcuding only non-nullish fields
   return {
-    ...(dmgRes && { 'Damage Resistances': dmgRes }),
+    ...(dmgVuln && { 'Vulnerabilities': dmgVuln }),
+    ...(dmgRes && { 'Resistances': dmgRes }),
     ...(dmgImmune && { 'Damage Immunities': dmgImmune }),
-    ...(dmgVuln && { 'Damage Vulnerabilities': dmgVuln }),
     ...(conditionImmune && { 'Condition Immunities': conditionImmune }),
   };
 });
@@ -427,17 +397,19 @@ const encounterStore = useEncounterStore();
 
 const addToEncounter = () => {
   if (!monster.value) return;
+  console.log('test');
+
   encounterStore.addMonster(
     monster.value.key,
     monster.value.name,
-    monster.value.challenge_rating_decimal,
+    parseFloat(monster.value.challenge_rating_decimal),
     monster.value.challenge_rating_text,
   );
 };
 
 const monsterInEncounter = computed(() => {
   if (!monster.value) return false;
-  return encounterStore.monsters.value.find(m => m.id === monster.value.key);
+  return encounterStore.monsters.value.find(m => m.key === monster.value.key);
 });
 
 const removeFromEncounter = () => {

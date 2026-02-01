@@ -15,8 +15,11 @@
         >
         
           <h3>
-            <span v-if="feature.gained_at.length > 0" class="text-granite">
-              {{ `Level ${feature.gained_at[0].level}: `  }}
+            <span 
+              v-if="(feature?.gained_at?.length ?? 0) > 0"
+              class="text-granite"
+            >
+              {{ `Level ${feature.gained_at?.[0].level}: `  }}
             </span>
             <span>{{ feature.name }}</span>
           </h3>
@@ -34,14 +37,14 @@
   </p>
 </template>
 
-<script setup>
-const { data: subclassData } = useFindOne(
-  API_ENDPOINTS.classes,
-  useRoute().params.subclass,
+<script setup lang="ts">
+const subclassId = useQueryParameter('subclass');
+const baseClassId = useQueryParameter('className');
+const { data: subclassData } = useFindOne(API_ENDPOINTS.classes, subclassId,
   {
     params: {
-      is_subclass: true,
-      subclass_of: useRoute().params.className,
+      is_subclass: 'true',
+      subclass_of: baseClassId,
       fields: ['name', 'desc', 'key', 'features'].join(','),
     },
   },
@@ -50,7 +53,7 @@ const { data: subclassData } = useFindOne(
 usePageMetadata({ title: computed(() => subclassData.value?.name) });
 
 const features = computed(() => {
-  const features = subclassData.value.features;
+  const features = subclassData.value?.features;
   if (!features) return [];
   return [...features].sort(
     (a, b) => (a.gained_at?.[0]?.level ?? 1) - (b.gained_at?.[0]?.level ?? 1),

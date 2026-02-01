@@ -1,98 +1,94 @@
 <template>
-  <section
-    v-if="spell"
-    class="docs-container container"
-  >
+  <main v-if="spell">
     <h1>{{ spell.name }}</h1>
-    <p>
-      <span
-        v-if="spell.level == 0"
-        class="italic"
-      >
-        {{ `${spell.school.name} cantrip` }}
+    <p  class="italic">
+      <span v-if="spell.level == 0">
+        {{ `${spell.school.name} Cantrip` }}
       </span>
-      <span
-        v-else
-        class="italic"
-      >
-        {{ `Level ${spell.level} ${spell.school.name} spell` }}
+      <span v-else>
+        {{ `Level ${spell.level} ${spell.school.name} Spell` }}
       </span>
       <span v-if="spell.ritual"> (ritual)</span>
-      <span
-        v-if="spell.classes.length > 0"
-        class="before:content-['_|_']"
-      >
-        {{ spell.classes.map((c) => c.name).join(', ') }}
+      <span v-if="spell.classes.length > 0">
+        {{ " (" + spell.classes.map((c) => c.name).join(', ') + ")" }}
       </span>
+
       <SourceTag
         v-show="spell.document.key"
         :title="spell.document.name"
         :text="spell.document.key"
       />
     </p>
-    <p><label class="font-bold">Range:</label> {{ spell.range_text }}</p>
-    <p>
-      <label class="font-bold">Casting Time:</label> {{ spell.casting_time }}
-    </p>
-    <p>
-      <label class="font-bold">Duration: </label>
-      <span v-if="spell.concentration">
-        Concentration, up to {{ spell.duration }}
-      </span>
-      <span v-else>{{ spell.duration }}</span>
-    </p>
-    <p>
-      <label class="font-bold">Components: </label>
-      <span>
-        {{ formatComponents(spell.verbal, spell.somatic, spell.material) }}
-        <b v-if="spell.material_consumed">*</b>
-      </span>
-      <span
-        v-if="spell.material_specified"
-        class="font-medium text-slate-600 dark:text-slate-300"
-      >
-        ({{ spell.material_specified }})
-        <!-- Removes trailing preiod -->
-      </span>
-    </p>
-    <MdViewer
-      :text="spell.desc"
-      :use-roller="true"
-    />
-    <p v-if="spell.higher_level">
-      <label class="font-bold">At higher levels:</label>
-      <MdViewer :text="spell.higher_level" />
-    </p>
+
+    <section class="my-4">
+      <p class="my-0 grid grid-cols-[10rem,_1fr]">
+        <span class="font-bold">Casting Time: </span>
+        <span class="capitalize">{{ spell.casting_time }}</span>
+      </p>
+      <p class="my-0 grid grid-cols-[10rem,_1fr]">
+        <span class="font-bold">Range: </span>
+        <span class="capitalize">{{ spell.range_text }}</span>
+      </p>
+      <p class="my-0 grid grid-cols-[10rem,_1fr]">
+        <span class="font-bold">Duration: </span>
+        <span class="capitalize">{{
+          spell.concentration 
+            ? `Concentration, up to ${spell.duration}`
+            : spell.duration
+          }}
+        </span>
+      </p>
+      <p class="my-0 grid grid-cols-[10rem,_1fr]">
+        <span class="font-bold">Components: </span>
+        <span>
+          <span>
+            {{ formatComponents(spell.verbal, spell.somatic, spell.material) }}
+          </span>
+          <b v-if="spell.material_consumed">*</b>
+          <span v-if="spell.material_specified" class="text-slate-600 dark:text-slate-300"
+          >
+            ({{ spell.material_specified }})
+          </span>
+        </span>
+      </p>
+    </section>
+
+    <section>
+      <MdViewer
+        :text="spell.desc"
+        :use-roller="true"
+      />
+    </section>
+
+    <section v-if="spell.higher_level" class="mt-4 ">
+      <h2 class="inline border-b-0 text-base font-bold no-underline">
+        {{ spell.level > 0 ? "Using a High-Level Spell Slot: " : "Cantrip Upgrade: " }}
+      </h2>
+      <MdViewer :text="spell.higher_level" :inline="true" />
+    </section>
+
     <p class="text-sm italic">
-      Source:
-      <a
-        target="NONE"
-        :href="spell.document.url"
-      >
+      <span>Source: </span>
+      <NuxtLink :to="`/sources/${spell.document.key}`">
         {{ spell.document.name }} by
         {{ spell.document.publisher.name || 'unknown publisher' }}
         <Icon name="heroicons:arrow-top-right-on-square-20-solid" />
-      </a>
+      </NuxtLink>
     </p>
-  </section>
-  <section
-    v-else
-    class="docs-container container"
-  >
-    Loading...
-  </section>
+  </main>
 </template>
 
-<script setup>
-const { data: spell } = useFindOne(API_ENDPOINTS.spells, useRoute().params.id);
+<script setup lang="ts">
+const spellId = useQueryParameter('id'); 
+const { data: spell } = useFindOne(API_ENDPOINTS.spells, spellId);
 
 usePageMetadata({ title: computed(() => spell.value?.name) });
 
-function formatComponents(verbal, somatic, material) {
-  const components = [];
-  if (verbal) components.push('V');
-  if (somatic) components.push('S');
-  if (material) components.push('M');
-  return `${components.join(', ')}`;
+function formatComponents(verbal?: boolean, somatic?: boolean, material?: boolean) {
+  return [
+    verbal && 'V',
+    somatic && 'S',
+    material && 'M'
+  ].filter(Boolean).join(', ');
 }
 </script>

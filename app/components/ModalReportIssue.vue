@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * ModalReportIssue.vue - A button that opens a modal menu for users to submit
  * website issues via a GoogleSheet
@@ -16,7 +16,7 @@
  */
 </script>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
 
 const emit = defineEmits(['close']);
@@ -30,7 +30,14 @@ const closeModal = () => {
   }, 300);
 };
 
-const formData = ref({});
+type ReportIssueFormFields = {
+  type?: string;
+  description?: string;
+  reproduction?: string;
+  date?: string;
+}
+
+const formData = ref<ReportIssueFormFields>({});
 const status = ref('ready');
 
 const WEBAPP_URL

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * SortableTableHeader.vue - A table header cell that includes sorting functionality. It displays a title with a sorting indicator (▲/▼),
  *   allowing users to sort the table by the corresponding column.
@@ -23,7 +23,7 @@
 
 <template>
   <th
-    :aria-sort="isSortDescending"
+    :aria-sort="isSortDescending ? 'descending' : 'ascending'"
     class="align-baseline"
     :class="{ 'hidden sm:table-cell': isLeastPriority }"
   >
@@ -48,7 +48,7 @@
   </th>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const emit = defineEmits(['sort']);
 
 const props = defineProps({
@@ -66,9 +66,9 @@ const subsitutions = {
   cr: 'CR',
 };
 
-const format = (input) => {
-  if (subsitutions[input]) {
-    return subsitutions[input];
+const format = (input: string) => {
+  if (input in subsitutions) {
+    return subsitutions[input as keyof typeof subsitutions];
   }
   // Replace underscores w/ spaces and capitalise initials
   return input

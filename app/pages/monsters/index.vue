@@ -28,7 +28,7 @@
         {
           name: 'Type',
           filterField: 'type',
-          options: MONSTER_TYPES_LIST.map((monsterType) => ({
+          options: monsterTypes.map((monsterType) => ({
             name: monsterType,
             value: monsterType.toLowerCase(),
           })),
@@ -36,7 +36,7 @@
         {
           name: 'Size',
           filterField: 'size',
-          options: MONSTER_SIZES_LIST.map((monsterSize) => ({
+          options: monsterSizes.map((monsterSize) => ({
             name: monsterSize,
             value: monsterSize.toLowerCase(),
           })),
@@ -45,31 +45,23 @@
         {
           name: 'CR (min)',
           filterField: 'challenge_rating_decimal__gte',
-          options: MONSTER_CHALLENGE_RATINGS_MAP.map(([name, value]) => ({
+          options: monsterCRs.map(([name, value]) => ({
             name: name,
-            value: value,
+            value: value.toString(),
           })),
         },
         {
           name: 'CR (max)',
           filterField: 'challenge_rating_decimal__lte',
-          options: MONSTER_CHALLENGE_RATINGS_MAP.map(([name, value]) => ({
+          options: monsterCRs.map(([name, value]) => ({
             name: name,
-            value: value,
+            value: value.toString(),
           })),
         },
       ]"
     />
 
-    <h3
-      ref="results"
-      class="sr-only"
-      tabindex="-1"
-      @keyup.esc="focusFilter"
-    />
-
     <ResultsTable
-      v-model="debouncedFilter"
       :data="data?.results"
       :cols="[
         {
@@ -80,7 +72,7 @@
         },
         {
           displayName: 'CR',
-          value: (data) => data.challenge_rating_text,
+          value: (data) => parseChallengeRating(data.challenge_rating_decimal),
           sortValue: 'challenge_rating_decimal',
         },
         {
@@ -100,7 +92,7 @@
           customTemplate: (data) => ({
             render: () => {
               const monsterInEncounter = encounterStore.monsters.value.find(
-                (m) => m.id === data.key,
+                (m) => m.key === data.key,
               );
               return h(
                 'div',
@@ -142,7 +134,8 @@
 <script setup lang="ts">
 import { h } from 'vue';
 import { PlusIcon, MinusIcon } from '@heroicons/vue/24/solid';
-import type { Monster } from '~/types/monster';
+import type { Monster } from '@/types';
+import { parseChallengeRating } from '@/helpers';
 
 // Set up filters
 const filterState = useFilterState<MonsterFilter>({
@@ -155,13 +148,10 @@ const { sortBy, isSortDescending, setSortState } = useSortState();
 
 // fields to fetch from API to populate table
 const fields = [
-  'id',
   'key',
   'name',
   'document',
-  'challenge_rating_text',
   'challenge_rating_decimal',
-  'experience_points',
   'document',
   'type',
   'size',
@@ -177,8 +167,7 @@ const { data, paginator } = useFindPaginated({
     fields,
     document__fields: 'name,key',
     type__fields: 'name',
-    size__fields: 'name,key',
-    is_subclass: false,
+    size__fields: 'name',
   },
 });
 
@@ -199,7 +188,7 @@ const addToEncounter = (monster: Monster) => {
   encounterStore.addMonster(
     monster.key,
     monster.name,
-    monster.challenge_rating_decimal,
+    parseFloat(monster.challenge_rating_decimal),
     monster.challenge_rating_text,
   );
 };
@@ -216,4 +205,9 @@ defineExpose({
   debouncedFilter,
   MONSTER_CHALLENGE_RATINGS_MAP,
 });
+
+// Reference constants to make them available in template
+const monsterTypes = MONSTER_TYPES_LIST;
+const monsterSizes = MONSTER_SIZES_LIST;
+const monsterCRs = MONSTER_CHALLENGE_RATINGS_MAP;
 </script>

@@ -2,28 +2,10 @@
 // are the names of Publishers and the values are arrays of documents published
 // by that publisher.
 
-import { unref, type Ref } from 'vue';
-
-// TODO: replace these with types generated directly from OpenAPI spec
-
-type Publisher = {
-  name: string;
-  key: string;
-}
-
-type License = {
-  name: string;
-  key: string;
-}
-
-type Document = {
-  name: string;
-  publisher: Publisher;
-  licenses: License[];
-}
+import type { Document } from '@/types';
 
 export function sortDocumentsByPublisher(
-  input: Document[] | Ref<Document[]>,
+  input: Document[] | Ref<Document[]> | ComputedRef<Document[]>,
 ): Record<string, Document[]> {
   if (!input) return {};
 
@@ -36,7 +18,7 @@ export function sortDocumentsByPublisher(
     if (publishers[publisher]) publishers[publisher].push(document);
     else publishers[publisher] = [document];
     return publishers;
-  }, {});
+  }, {} as Record<string, Document[]>);
 
   return docsByPublisher;
 }

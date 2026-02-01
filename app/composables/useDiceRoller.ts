@@ -12,7 +12,7 @@ type UseDiceRollerOptions = {
 export function useDiceRoller() {
   const rollDice = (
     input: string | number,
-    options: UseDiceRollerOptions,
+    options?: UseDiceRollerOptions,
   ) => {
     // make sure dice signature is a string
     const signature = typeof input === 'string' ? input : input.toString();

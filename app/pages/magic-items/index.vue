@@ -27,7 +27,7 @@
         {
           name: 'Rarity',
           filterField: 'rarity',
-          options: MAGIC_ITEMS_RARITES.map((rarity) => ({
+          options: magicItemRarities.map((rarity) => ({
             name: rarity,
             value: rarity.toLowerCase().split(' ').join('-'),
           })),
@@ -35,7 +35,7 @@
         {
           name: 'Category',
           filterField: 'category',
-          options: MAGIC_ITEMS_TYPES.map((type) => ({
+          options: magicItemTypes.map((type) => ({
             name: type,
             value: type.toLowerCase().split(' ').join('-'),
           })),
@@ -51,7 +51,6 @@
     />
 
     <ResultsTable
-      v-model="debouncedFilter"
       :data="data?.results"
       :cols="[
         {
@@ -73,7 +72,7 @@
         },
         {
           displayName: 'Attunement',
-          value: (data) => data.requires_attunement,
+          value: (data) => (data.requires_attunement ?? false),
           sortValue: 'requires_attunement',
         },
       ]"
@@ -129,4 +128,7 @@ const {
   prevPage,
   nextPage,
 } = paginator;
+
+const magicItemRarities = MAGIC_ITEMS_RARITES;
+const magicItemTypes = MAGIC_ITEMS_TYPES;
 </script>

@@ -38,8 +38,9 @@
   </article>
 </template>
 
-<script setup>
-const { data: document } = useFindOne(API_ENDPOINTS.documents, useRoute().params.id);
+<script setup lang="ts">
+const documentId = useQueryParameter('id');
+const { data: document } = useFindOne(API_ENDPOINTS.documents, documentId);
 
 usePageMetadata({ title: computed(() => document.value?.name) });
 

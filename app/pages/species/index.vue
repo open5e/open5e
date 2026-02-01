@@ -24,7 +24,6 @@
     />
 
     <ResultsTable
-      v-model="filterState.debouncedFilter"
       :data="data?.results"
       :cols="[
         {

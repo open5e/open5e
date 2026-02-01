@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * SourceTag.vue - Renders a colorful bubble containing infomation about an
  * item from the Open5e API's source document. Inline, designed by follow the
@@ -27,7 +27,7 @@
   </span>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import colors from 'tailwindcss/colors';
 
 defineProps({
@@ -39,7 +39,7 @@ defineProps({
 });
 
 // this creates a quick (but non-cryptographic) numeric hash of the string
-function hashCode(str) {
+function hashCode(str: string) {
   let hash = 0;
   for (let i = 0, len = str.length; i < len; i++) {
     // convert each character of the string to a number
@@ -51,12 +51,12 @@ function hashCode(str) {
   }
   return hash;
 }
-function computedColor(str, s, l) {
+function computedColor(str: string, s: number, l: number) {
   // take in a numerical string that will become the hue
   let h = hashCode(str);
   // reverse the number and append it to the original number
   // this ensures even small changes to any character of the string will result in a different color
-  h = h + Math.abs(h).toString().split('').reverse().join('');
+  h = parseFloat(h + Math.abs(h).toString().split('').reverse().join(''));
   // convert the number to a hue in the HSL color space by taking modulo 360 of the hash
   h = h % 360;
   // generate an hsl color using the hue value and passed in saturation and lightness values

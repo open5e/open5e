@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * MdViewer.vue - Renders Markdown content as HTML. Essentially a wrapper for
  * the VueShowdown library with a few extensions for parsing certain custom
@@ -33,11 +33,11 @@
     }"
     :markdown="text"
     :extensions="extensions"
-    :class="inline ? 'markdown-inline' : ''"
+    :class="inline ? 'markdown markdown-inline' : 'markdown'"
   />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { VueShowdown } from 'vue-showdown';
 
 const props = defineProps({
@@ -70,9 +70,16 @@ const extensions = computed(() => {
 </script>
 
 <style>
+.markdown {
+  ul {
+    list-style-type: disc;
+    margin-left: 1rem;
+  }
+}
+
 .markdown-inline {
   display: inline;
-  :not(table, th, td, tr, thead, tbody) {
+  p, div {
     display: inherit;
   }
 }

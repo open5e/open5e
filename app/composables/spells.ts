@@ -38,15 +38,15 @@ export const useFormatSpellSubtitle = ({
 
 export type SpellFilter = {
   name__contains?: string;
-  level?: number;
-  school?: string;
+  level?: string;
+  school__key?: string;
   classes__key__in?: string;
 };
 
 export const DefaultSpellFilter: Readonly<SpellFilter> = {
   name__contains: '',
   level: undefined,
-  school: undefined,
+  school__key: undefined,
   classes__key__in: undefined,
 };
 

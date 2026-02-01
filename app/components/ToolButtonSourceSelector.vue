@@ -7,7 +7,7 @@
     <Icon name="majesticons:book-open-line" class="z-20 size-6"/>
     <p
       v-if="sourceCount" 
-      class="absolute -bottom-3 z-30 text-nowrap px-0.5 py-0 text-xs text-black  dark:text-white"
+      class="absolute -bottom-3 z-30 my-0 text-nowrap py-0 text-xs text-black  dark:text-white"
     >
       {{ sourceCount }}
     </p>
@@ -20,7 +20,7 @@
   </ToolButton>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const showModal = ref(false);
 
 const { data: documents } = useDocuments({ fields: 'key' });

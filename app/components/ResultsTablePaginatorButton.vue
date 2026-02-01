@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 /**
  * ApiTableButton - customizable button that displays an icon and can be clicked to trigger events.
  *
@@ -32,7 +32,7 @@
   </button>
 </template>
 
-<script setup>
+<script setup lang="ts">
 defineProps({
   disabled: Boolean,
   name: { type: String, required: true },
