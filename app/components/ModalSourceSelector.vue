@@ -171,26 +171,38 @@
 import { sortDocumentsByPublisher } from '@/helpers';
 import type { Document } from '@/types';
 
-// fetch full list of document sources
+const emit = defineEmits(['close']);
+const closeModal = () => emit('close');
+
 const { data: documents } = useDocuments({
-  fields: ['key', 'name', 'publisher', 'gamesystem'].join(','),
+  fields: ['key', 'name', 'publisher', 'gamesystem', 'type'].join(','),
   publisher__fields: ['name', 'key'].join(','),
   gamesystem__fields: ['name', 'key'].join(','),
 });
 
 const { sources, setSources, gameSystem, setGameSystem } = useSourcesList();
-const selectedSources: Ref<string[]> = ref([]);
-const emit = defineEmits(['close']);
-const closeModal = () => emit('close');
+
+
+// Seperate SOURCE and MISC documents, only use the former in the modal menu
+// and add the later back in when updating selected sources in local memory
+
+const sourceDocuments = computed(() => (
+  documents?.value?.filter(document => document.type === 'SOURCE') ?? []
+));
+
+const miscDocuments = computed(() => (
+  documents?.value?.filter(document => document.type !== 'SOURCE') ?? []
+));
 
 // Keep selectedSources in sync with global sources state
+const selectedSources: Ref<string[]> = ref([]);
 watchEffect(() => selectedSources.value = [...sources.value]);
 
 // filter documents by the current game system
 const documentsInSystem = computed<Document[]>(() => {
-  if (!documents.value) return [];
-  if (!currentSystem.value) return documents.value;
-  return documents.value.filter((document) => {
+  if (!sourceDocuments?.value || sourceDocuments.value.length === 0) return [];
+  if (!currentSystem.value) return sourceDocuments.value;
+  return sourceDocuments.value.filter((document) => {
     return document.gamesystem.name === currentSystem.value;
   });
 });
@@ -237,7 +249,10 @@ const onGameSystemChanged = (event: Event) => {
 
 // save current form selection to local memory
 function saveSelection() {
-  setSources(selectedSources.value);
+  setSources([
+    ...selectedSources.value,
+    ...miscDocuments.value.map(document => document.key)
+  ]);
   setGameSystem(currentSystem.value);
   closeModal();
 }
