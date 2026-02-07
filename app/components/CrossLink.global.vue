@@ -2,17 +2,13 @@
 
   <!-- If preview data has fetched correctly then url is valid, render as link -->
   <nuxt-link
-    v-if="previewData"
     class="group relative"
     :to="`${topLevelPage}/${key}`"
+    @mouseenter="onHover"
   >
     <slot />
     <LinkPreview :data="previewData" :category="topLevelPage" />
   </nuxt-link>
-
-  <span v-else class="italic">
-    <slot />
-  </span>
 </template>
 
 <script setup lang="ts">
@@ -45,11 +41,21 @@ const queryParameters = {
   }
 };
 
+const onHover = async () => readyToFetch.value = true;
+
+const readyToFetch = ref(false);
+
 const { data } = version && endpoint && key 
-  ? useFindOne(versionWithEndpoint, key, queryParameters)
+  ? useFindOne(versionWithEndpoint, key, {
+    ...queryParameters,
+    enabled: readyToFetch,
+  })
   : { data: ref(null) };
 
-const previewData = computed(() => data.value);
+const previewData = computed(() => {
+  if (!data || !data?.value) return;
+  return data.value;
+});
 
 // format top-level page part of URL where it differs from API structure
 const topLevelPage = computed(() => {
