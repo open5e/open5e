@@ -1,18 +1,18 @@
 <template>
   <article
     v-if="data"
-    class="group absolute top--1 z-10 hidden border border-red bg-fog p-2 text-charcoal group-hover:block dark:bg-charcoal dark:text-fog"
+    class="group absolute top--1 z-10 hidden border border-red bg-fog px-3 py-2 text-charcoal group-hover:block dark:bg-charcoal dark:text-fog"
   >
-    <p class="mt-0 text-nowrap">
+    <p class="my-0 text-nowrap">
       <span class=" font-serif text-lg text-black dark:text-white">{{ data?.name }}</span>
       <span v-if="categoryDisplayName" class="mx-1 font-bold text-red">{{ " | " }}</span>
       <span v-if="categoryDisplayName" class="text-lg">{{ categoryDisplayName }}</span>
     </p>
-    <p v-if="subtitle" class="mt-0 text-nowrap text-base">
+    <p v-if="subtitle" class="m-0 text-nowrap text-base">
       {{ subtitle }}
     </p>
-    <p class="mt-0 text-nowrap text-sm italic text-granite dark:text-smoke">
-      {{ `${category}/${data.key}`.slice(1) }}
+    <p class="mt-0 text-nowrap text-xs text-smoke dark:text-granite">
+      {{ `${API_URL + category}/${data.key}` }}
     </p>
   </article>
   <article v-else />
@@ -20,6 +20,8 @@
 
 <script setup lang="ts">
 import type { Creature, Item, Open5eData, Spell } from '@/types';
+
+const API_URL = useRuntimeConfig().public.apiUrl;
 
 const props = defineProps<{
   data?: Open5eData;
@@ -66,7 +68,7 @@ const categoryDisplayName = computed(() => {
 
 
 const formatMonsterSubtitle = (monster: Creature) => {
-  return `${monster.size.name} ${monster.type.name} (CR ${monster.challenge_rating_text})`;
+  return `${monster.size.name} ${monster.type.name}, CR ${monster.challenge_rating_text}`;
 };
 
 const formatSpellSubtitle = (spell: Spell) => {
