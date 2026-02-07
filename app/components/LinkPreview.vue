@@ -12,7 +12,7 @@
       {{ subtitle }}
     </p>
     <p class="mt-0 text-nowrap text-xs text-smoke dark:text-granite">
-      {{ `${API_URL + category}/${data.key}` }}
+      {{ `${(API_URL ?? '') + category}/${data.key}` }}
     </p>
   </article>
   <article v-else />
