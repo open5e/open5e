@@ -12,7 +12,7 @@
       {{ subtitle }}
     </p>
     <p class="mt-0 text-nowrap text-xs text-smoke dark:text-granite">
-      {{ `${(API_URL ?? '') + category}/${data.key}` }}
+      {{ `${'www.open5e.com' + category}/${data.key}` }}
     </p>
   </article>
   <article v-else />
@@ -20,8 +20,6 @@
 
 <script setup lang="ts">
 import type { Creature, Item, Open5eData, Spell } from '@/types';
-
-const API_URL = useRuntimeConfig().public.apiUrl;
 
 const props = defineProps<{
   data?: Open5eData;
