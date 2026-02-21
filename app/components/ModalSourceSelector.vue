@@ -88,13 +88,11 @@
           </button>
 
           <!-- Sources per Publisher -->
-          <div v-if="allPublisherSourcesInactive(publisher)">
-            <div
-              class="inline cursor-pointer text-granite"
-              @click="togglePublisher(publisher)"
-            >
-              {{ ` (${countSourcesByPublisher(publisher)})`}}
-            </div>
+          <div
+            v-if="allPublisherSourcesInactive(publisher)"
+            class="inline cursor-pointer text-granite" @click="togglePublisher(publisher)"
+          >
+            {{ ` (${countSourcesByPublisher(publisher)})`}}
           </div>
           <ul
             v-for="document in documentsPerPublisher"
