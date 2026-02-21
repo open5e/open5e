@@ -51,12 +51,8 @@
 
         <div class="serif font-bold">
           <!-- SELECT ALL SOURCES -->
-          <button
-            :class="
-              allSourcesSelected()
-                ? `px-2 py-1 text-black before:mr-1 before:content-['✓'] dark:text-white`
-                : `px-2 py-1 text-blood hover:text-red-800 dark:hover:text-red-400`
-            "
+          <button 
+            :class="allSourcesSelected() ? activeButtonClass : inactiveButtonClass"
             @click="selectAllInSystem()"
           >
             All
@@ -64,11 +60,7 @@
 
           <!-- DESELECT ALL SOURCES -->
           <button
-            :class="
-              selectedSources.length === 0
-                ? `px-2 py-1 text-black before:mr-1 before:content-['✓'] dark:text-white`
-                : `px-2 py-1 text-blood hover:text-red-800 dark:hover:text-red-400 `
-            "
+            :class="selectedSources.length === 0 ? activeButtonClass : inactiveButtonClass"
             @click="deselectAll()"
           >
             None
@@ -79,68 +71,60 @@
       <!-- MODAL MENU BODY -->
       <fieldset class="mt-1">
         <legend class="sr-only">Source Selection</legend>
-        <!-- Organisation -->
+        
+        <!-- PUBLISHER HEADER -->
         <div
           v-for="(documentsPerPublisher, publisher) in groupedDocuments"
           :key="publisher"
           class="space-y-0"
         >
-          <div class="my-1 flex items-center gap-2">
-            <h3 class="mt-0 gap-2">{{ publisher }}</h3>
-            <!-- Button for adding all src by publisher to selected srcs -->
-            <button
-              :class="selectedSourcesByPublisher(publisher)
-                === countSourcesByPublisher(publisher)
-                  ? `px-2 py-1 font-bold before:mr-1 before:content-['✓']`
-                  : `px-2 py-1 font-bold text-blood hover:text-red-800 dark:hover:text-red-400`
-              "
-              @click="addPublisher(publisher)"
-            >
-              All
-            </button>
-            <!-- Button for removing all srcs by publisher to selected srcs -->
-            <button
-              :class="!selectedSourcesByPublisher(publisher)
-                  ? `px-2 py-1 font-bold before:mr-1 before:content-['✓']`
-                  : `px-2 py-1 font-bold dark:hover:text-red-40 text-blood hover:text-red-800`
-              "
-              @click="removePublisher(publisher)"
-            >
-              None
-            </button>
-          </div>
+          <button
+            class="my-1 font-bold"
+            :class="allPublisherSourcesInactive(publisher) ? 'text-granite' : ''"
+            :aria-label="`TODO`"
+            @click="togglePublisher(publisher)"
+          >
+            <h3 class="mt-0">{{ publisher }}</h3>
+          </button>
 
-          <!-- Sources by Publisher -->
+          <!-- Sources per Publisher -->
+          <div v-if="allPublisherSourcesInactive(publisher)">
+            <div
+              class="inline cursor-pointer text-granite"
+              @click="togglePublisher(publisher)"
+            >
+              {{ ` (${countSourcesByPublisher(publisher)})`}}
+            </div>
+          </div>
           <ul
             v-for="document in documentsPerPublisher"
+            v-else
             :key="document.key"
             class="relative flex items-start"
           >
-            <li class="flex w-full justify-between">
-              <div>
-                <input
-                  v-model="selectedSources"
-                  :name="document.key"
-                  type="checkbox"
-                  class="mr-2 mt-1 size-4 rounded text-blue-600 accent-blood focus:ring-blue-600"
-                  :value="document.key"
-                />
-                <label
-                  :for="document.key"
-                  class="font-medium text-gray-900 dark:text-white"
-                >
-                  {{ document.name }}
-                </label>
-                <source-tag
-                  :title="document.name"
-                  :text="document.key"
-                />
-              </div>
+            <li class="group flex w-full items-center">
+              <input
+                :id="document.key"
+                v-model="selectedSources"
+                :name="document.key"
+                type="checkbox"
+                class="peer mr-2 mt-1 size-4 cursor-pointer rounded text-blue-600 accent-blood focus:ring-blue-600"
+                :value="document.key"
+              />
+              <label
+                :for="document.key"
+                class="group cursor-pointer text-granite peer-checked:text-black dark:peer-checked:text-white"
+              >
+                {{ document.name }}
+              </label>
+
+              <SourceTag :title="document.name" :text="document.key" />
+              
               <span
                 v-if="document.gamesystem"
-                class="h-min rounded-xl bg-fog px-2 text-xs dark:bg-slate-800"
+                class="ml-auto h-min rounded-xl bg-fog px-2 text-xs dark:bg-slate-800"
               >
-                {{ document.gamesystem.name }}
+                {{ formatGameSystemTitle(document.gamesystem.name) }}
               </span>
             </li>
           </ul>
@@ -170,6 +154,9 @@
 <script setup lang="ts">
 import { sortDocumentsByPublisher } from '@/helpers';
 import type { Document } from '@/types';
+
+const activeButtonClass = 'px-2 py-1 font-bold before:mr-1 before:content-[\'✓\']';
+const inactiveButtonClass = 'px-2 py-1 font-bold text-blood hover:text-red-800 dark:hover:text-red-400';
 
 // fetch full list of document sources
 const { data: documents } = useDocuments({
@@ -235,11 +222,22 @@ const onGameSystemChanged = (event: Event) => {
   currentSystem.value = newSystem;
 };
 
-// save current form selection to local memory
 function saveSelection() {
   setSources(selectedSources.value);
   setGameSystem(currentSystem.value);
   closeModal();
+}
+
+function allPublisherSourcesActive(publisher: string) {
+  return selectedSourcesByPublisher(publisher) === countSourcesByPublisher(publisher);
+}
+
+function allPublisherSourcesInactive(publisher: string) {
+  return selectedSourcesByPublisher(publisher) === 0;
+}
+
+function togglePublisher(publisher: string) {
+  allPublisherSourcesActive(publisher) ? removePublisher(publisher) : addPublisher(publisher);
 }
 
 // add all sources from a given publisher to allowed sources
@@ -266,9 +264,7 @@ const countSourcesByPublisher = (publisher: string) =>
 
 // returns how many sources are selected from a given publisher
 function selectedSourcesByPublisher(publisher: string) {
-  // find all sources for this publisher
   const allSources = groupedDocuments.value[publisher].map(src => src.key);
-  // find which of these are part of the current selected sources
   const currentSources = selectedSources.value.filter(src =>
     allSources.includes(src),
   );
@@ -287,4 +283,13 @@ function selectAllInSystem() {
 }
 
 const deselectAll = () => (selectedSources.value = []);
+
+function formatGameSystemTitle(input: string) {
+  const systemNameMap: Record<string, string> = {
+    '5th Edition 2014': '5e 2014',
+    '5th Edition 2024': '5e 2024',
+    'Advanced 5th Edition': 'Level Up A5e',
+  };
+  return systemNameMap[input] ?? input;
+}
 </script>
