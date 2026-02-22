@@ -11,7 +11,6 @@
  *
  * -= EMITS (OUTPUTS) =-
  * @emits {Function} close – Emit when the modal should be closed.
- * @emits {Function} saveSelection – Emit when the user confirms the selection and the modal should close.
  *
  * -= DEPENDENCIES =-
  * @component Modal – Used for rendering the modal dialog UI.
@@ -25,7 +24,6 @@
     <slot>
       <!-- MODAL MENU TITLE BAR -->
       <div class="flex w-full justify-between border-b-4 border-blood">
-
         <h2 class="my-2">Sources</h2>
 
         <!--  GAME SYSTEM SELECTOR -->
@@ -72,16 +70,16 @@
       <fieldset class="mt-1">
         <legend class="sr-only">Source Selection</legend>
         
-        <!-- PUBLISHER HEADER -->
         <div
           v-for="(documentsPerPublisher, publisher) in groupedDocuments"
           :key="publisher"
           class="space-y-0"
         >
+          <!-- PUBLISHER HEADERS -->
           <button
-            class="my-1 font-bold"
-            :class="allPublisherSourcesInactive(publisher) ? 'text-granite' : ''"
-            :aria-label="`TODO`"
+            class="my-1 font-bold "
+            :class="allPublisherSourcesInactive(publisher) ? 'text-granite hover:text-smoke' : 'hover:text-blood'"
+            :aria-label="`Toggle ${allPublisherSourcesActive(publisher) ? 'off' : 'on'} all sources from ${publisher}`"
             @click="togglePublisher(publisher)"
           >
             <h3 class="mt-0">{{ publisher }}</h3>
@@ -94,6 +92,7 @@
           >
             {{ ` (${countSourcesByPublisher(publisher)})`}}
           </div>
+          
           <ul
             v-for="document in documentsPerPublisher"
             v-else
@@ -111,7 +110,7 @@
               />
               <label
                 :for="document.key"
-                class="group cursor-pointer text-granite peer-checked:text-black dark:peer-checked:text-white"
+                class="cursor-pointer text-granite peer-checked:text-black peer-hover:text-blood dark:peer-checked:text-white dark:hover:peer-checked:text-red"
               >
                 {{ document.name }}
               </label>
@@ -141,7 +140,7 @@
       <button
         type="button"
         class="inline-flex w-full justify-center rounded-md bg-blood px-3 py-2 text-sm font-semibold text-white shadow-sm ring-offset-2 hover:ring-2 hover:ring-blood focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
-        @click="saveSelection()"
+        @click="saveSourceSelection()"
       >
         Update
       </button>
@@ -184,15 +183,14 @@ const documentsInSystem = computed<Document[]>(() => {
 const groupedDocuments = computed<Record<string, Document[]>>(() => {
   const sortedDocuments = sortDocumentsByPublisher(documentsInSystem);
 
-  // Bring WotC sources to the top of the publisher list
+  // Bring WotC sources to top of list if present
+  if (!sortedDocuments['Wizards of the Coast']) return sortedDocuments;
   const { ['Wizards of the Coast']: value, ...rest } = sortedDocuments;
   return { ['Wizards of the Coast']: value, ...rest};
 });
 
 // state for current game system
 const currentSystem = ref('');
-
-// Keep currentSystem in sync with global gameSystem state
 watchEffect(() => currentSystem.value = gameSystem.value ?? '');
 
 // returns the names of all game systems present in API data
@@ -210,17 +208,13 @@ const allGameSystems = computed(() => {
 // handler for changing game systems selecter, updates systems/sources cmpnt state
 const onGameSystemChanged = (event: Event) => {
   const newSystem = (event.target as HTMLSelectElement).value;
-  if (newSystem) {
-    selectedSources.value = (documents?.value ?? [])
-    .filter(source => source.gamesystem.name === newSystem)
-    .map(source => source.key);
-  } else {
-    selectedSources.value = (documents.value ?? []).map(doc => doc.key);
-  }
   currentSystem.value = newSystem;
+  selectedSources.value = (documents.value ?? [])
+    .filter(doc => !newSystem || doc.gamesystem?.name === newSystem)
+    .map(doc => doc.key);
 };
 
-function saveSelection() {
+function saveSourceSelection() {
   setSources(selectedSources.value);
   setGameSystem(currentSystem.value);
   closeModal();
@@ -262,7 +256,7 @@ const countSourcesByPublisher = (publisher: string) =>
 
 // returns how many sources are selected from a given publisher
 function selectedSourcesByPublisher(publisher: string) {
-  const allSources = groupedDocuments.value[publisher].map(src => src.key);
+  const allSources = (groupedDocuments.value[publisher] ?? []).map(src => src.key);
   const currentSources = selectedSources.value.filter(src =>
     allSources.includes(src),
   );
@@ -271,9 +265,7 @@ function selectedSourcesByPublisher(publisher: string) {
 
 // returns true if all sources in current game system are selected
 const allSourcesSelected = () => {
-  const selected = selectedSources.value.length;
-  const total = documentsInSystem.value?.length;
-  return selected === total;
+  return selectedSources.value.length === documentsInSystem.value?.length;
 };
 
 function selectAllInSystem() {
