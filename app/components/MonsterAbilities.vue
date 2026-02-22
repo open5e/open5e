@@ -14,7 +14,7 @@
  *     are saving throw modifiers. These can be undefined.
  *
  * -= DEPENDENCIES =-
- * @composable useFormatModifier - Formats modifiers into signed strings (e.g., +2, -1)
+ * @helpers formatModifier - Formats modifiers into signed strings (e.g., +2, -1)
  * @composable useDiceRoller - Triggers a dice roll when a modifier or save is clicked
  *
  */
@@ -108,8 +108,8 @@
 </template>
 
 <script lang="ts" setup>
+import { formatModifier } from '@/helpers';
 const rollDice = useDiceRoller();
-const formatModifier = useFormatModifier();
 
 const props = defineProps({
   monster: { type: Object, default: () => {} },

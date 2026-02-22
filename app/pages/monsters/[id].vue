@@ -272,9 +272,9 @@
 
 <script setup lang="ts">
 import type { CreatureAction } from '@/types';
+import { formatModifier } from '@/helpers';
 
 const rollDice = useDiceRoller();
-const formatModifier = useFormatModifier();
 
 const params = {
   environments__fields: 'name',
