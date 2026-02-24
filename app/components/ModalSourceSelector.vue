@@ -23,15 +23,28 @@
   <Modal @close="closeModal()">
     <slot>
       <!-- MODAL MENU TITLE BAR -->
-      <div class="flex w-full justify-between border-b-4 border-blood">
-        <h2 class="my-2">Sources</h2>
+      <div class="flex w-full items-center justify-between">
+        <div class="w-min grow-0">
+          <input
+            id="select-deselect-all-checkbox"
+            ref="selectAllCheckbox"
+            type="checkbox"
+            class="peer mr-2 mt-1 size-4 cursor-pointer rounded text-blue-600 accent-red focus:ring-blue-600"
+            @click="toggleAllSources"
+          />
+          <label for="select-deselect-all-checkbox" class="sr-only">
+            Toggle All
+          </label>
+        </div>
+
+        <h2 class="my-2 grow text-3xl">Open5e Sources</h2>
 
         <!--  GAME SYSTEM SELECTOR -->
-        <div class="my-1 grid">
-          <label class="font-serif text-sm">System</label>
+        <div class="mb-2 grid">
+          <label class="text-right font-serif text-sm">System</label>
           <select
             id="system"
-            class="border-b-2 border-smoke bg-transparent text-sm"
+            class="appearance-none border-b-2 border-smoke bg-transparent text-right text-sm"
             name="system"
             @change="onGameSystemChanged"
           >
@@ -46,30 +59,11 @@
             </option>
           </select>
         </div>
-
-        <div class="serif font-bold">
-          <!-- SELECT ALL SOURCES -->
-          <button 
-            :class="allSourcesSelected() ? activeButtonClass : inactiveButtonClass"
-            @click="selectAllInSystem()"
-          >
-            All
-          </button>
-
-          <!-- DESELECT ALL SOURCES -->
-          <button
-            :class="selectedSources.length === 0 ? activeButtonClass : inactiveButtonClass"
-            @click="deselectAll()"
-          >
-            None
-          </button>
-        </div>
       </div>
-
+      <p class="mt-0 text-sm italic">Open5e pulls its content from various freely-licensed sources. Use this menu to select which sources you would like to appear when browsing Open5e.</p>
       <!-- MODAL MENU BODY -->
       <fieldset class="mt-1">
         <legend class="sr-only">Source Selection</legend>
-        
         <div
           v-for="(documentsPerPublisher, publisher) in groupedDocuments"
           :key="publisher"
@@ -105,7 +99,7 @@
                 v-model="selectedSources"
                 :name="document.key"
                 type="checkbox"
-                class="peer mr-2 mt-1 size-4 cursor-pointer rounded text-blue-600 accent-blood focus:ring-blue-600"
+                class="peer mr-2 mt-1 size-4 cursor-pointer rounded text-blue-600 accent-red focus:ring-blue-600"
                 :value="document.key"
               />
               <label
@@ -139,7 +133,7 @@
       </button>
       <button
         type="button"
-        class="inline-flex w-full justify-center rounded-md bg-blood px-3 py-2 text-sm font-semibold text-white shadow-sm ring-offset-2 hover:ring-2 hover:ring-blood focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
+        class="inline-flex w-full justify-center rounded-md bg-blood px-3 py-2  text-sm font-semibold text-white shadow-sm ring-offset-2 hover:ring-2 hover:ring-blood focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
         @click="saveSourceSelection()"
       >
         Update
@@ -151,9 +145,6 @@
 <script setup lang="ts">
 import { sortDocumentsByPublisher } from '@/helpers';
 import type { Document } from '@/types';
-
-const activeButtonClass = 'px-2 py-1 font-bold before:mr-1 before:content-[\'✓\']';
-const inactiveButtonClass = 'px-2 py-1 font-bold text-blood hover:text-red-800 dark:hover:text-red-400';
 
 // fetch full list of document sources
 const { data: documents } = useDocuments({
@@ -167,8 +158,20 @@ const selectedSources: Ref<string[]> = ref([]);
 const emit = defineEmits(['close']);
 const closeModal = () => emit('close');
 
+const selectAllCheckbox = ref<HTMLInputElement | null>();
+
+const allSelected = computed(() => selectedSources.value.length === documentsInSystem.value?.length && documentsInSystem.value?.length > 0);
+const noneSelected = computed(() => selectedSources.value.length === 0);
+
 // Keep selectedSources in sync with global sources state
 watchEffect(() => selectedSources.value = [...sources.value]);
+
+watchEffect(() => {
+  if (selectAllCheckbox.value) {
+    selectAllCheckbox.value.checked = allSelected.value;
+    selectAllCheckbox.value.indeterminate = !allSelected.value && !noneSelected.value;
+  }
+});
 
 // filter documents by the current game system
 const documentsInSystem = computed<Document[]>(() => {
@@ -220,6 +223,12 @@ function saveSourceSelection() {
   closeModal();
 }
 
+function toggleAllSources(event: Event) {
+  console.log((event.target as HTMLInputElement).checked);
+  if (!allSelected.value) selectAllInSystem();
+  else deselectAll();
+}
+
 function allPublisherSourcesActive(publisher: string) {
   return selectedSourcesByPublisher(publisher) === countSourcesByPublisher(publisher);
 }
@@ -262,11 +271,6 @@ function selectedSourcesByPublisher(publisher: string) {
   );
   return currentSources.length;
 }
-
-// returns true if all sources in current game system are selected
-const allSourcesSelected = () => {
-  return selectedSources.value.length === documentsInSystem.value?.length;
-};
 
 function selectAllInSystem() {
   selectedSources.value = documentsInSystem.value?.map(doc => doc.key) ?? [];
