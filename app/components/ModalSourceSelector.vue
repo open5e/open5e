@@ -31,11 +31,11 @@
           :checked="allSelected"
           :indeterminate.prop="!allSelected && !noneSelected"
           :aria-label="`Toggle all sources ${!allSelected ? 'on' : 'off'}`"
-          class="peer mr-2 mt-1 size-4 grow-0 cursor-pointer rounded text-blue-600 accent-red focus:ring-blue-600"
+          class="peer mr-4 mt-1 size-4 grow-0 cursor-pointer rounded text-blue-600 accent-red focus:ring-blue-600"
           @click="toggleAllSources"
         />
 
-        <h2 class="my-0 grow text-center text-3xl">Sources Selector</h2>
+        <h2 class="my-0 grow text-3xl">Sources Selector</h2>
 
         <!--  GAME SYSTEM SELECTOR -->
         <div class="mb-2 grid">
