@@ -24,43 +24,44 @@
     <slot>
       <!-- MODAL MENU TITLE BAR -->
       <div class="flex w-full items-center justify-between">
-        <div class="w-min grow-0">
-          <input
-            id="select-deselect-all-checkbox"
-            ref="selectAllCheckbox"
-            type="checkbox"
-            class="peer mr-2 mt-1 size-4 cursor-pointer rounded text-blue-600 accent-red focus:ring-blue-600"
-            @click="toggleAllSources"
-          />
-          <label for="select-deselect-all-checkbox" class="sr-only">
-            Toggle All
-          </label>
-        </div>
 
-        <h2 class="my-2 grow text-3xl">Open5e Sources</h2>
+        <input 
+          id="select-deselect-all-checkbox"
+          type="checkbox"
+          :checked="allSelected"
+          :indeterminate.prop="!allSelected && !noneSelected"
+          :aria-label="`Toggle all sources ${!allSelected ? 'on' : 'off'}`"
+          class="peer mr-2 mt-1 size-4 grow-0 cursor-pointer rounded text-blue-600 accent-red focus:ring-blue-600"
+          @click="toggleAllSources"
+        />
+
+        <h2 class="my-0 grow text-center text-3xl">Sources Selector</h2>
 
         <!--  GAME SYSTEM SELECTOR -->
         <div class="mb-2 grid">
-          <label class="text-right font-serif text-sm">System</label>
+          <label class="text-right font-serif text-sm" for="system">
+            System
+          </label>
           <select
             id="system"
-            class="appearance-none border-b-2 border-smoke bg-transparent text-right text-sm"
-            name="system"
-            @change="onGameSystemChanged"
+            v-model="currentSystem"
+            class="cursor-pointer appearance-none border-b-2 border-red bg-transparent text-right text-sm"
+            @change="selectAllInSystem"
           >
-            <option :value="''">–</option>
+            <option value="">–</option>
             <option
               v-for="systemOption in allGameSystems"
               :key="systemOption"
               :value="systemOption"
-              :selected="systemOption === currentSystem"
             >
               {{ systemOption }}
             </option>
           </select>
         </div>
       </div>
-      <p class="mt-0 text-sm italic">Open5e pulls its content from various freely-licensed sources. Use this menu to select which sources you would like to appear when browsing Open5e.</p>
+
+      <p class="mt-0 text-sm italic">Open5e hosts content from many freely-licensed sources. Use this menu to select which sources you would like to appear when browsing Open5e.</p>
+
       <!-- MODAL MENU BODY -->
       <fieldset class="mt-1">
         <legend class="sr-only">Source Selection</legend>
@@ -79,21 +80,20 @@
             <h3 class="mt-0">{{ publisher }}</h3>
           </button>
 
-          <!-- Sources per Publisher -->
-          <div
-            v-if="allPublisherSourcesInactive(publisher)"
-            class="inline cursor-pointer text-granite" @click="togglePublisher(publisher)"
+          <!-- SOURCES PER PUBLISHER -->
+          <span
+            class="ml-2 cursor-pointer text-granite"
+            @click="togglePublisher(publisher)"
           >
-            {{ ` (${countSourcesByPublisher(publisher)})`}}
-          </div>
-          
-          <ul
-            v-for="document in documentsPerPublisher"
-            v-else
-            :key="document.key"
-            class="relative flex items-start"
-          >
-            <li class="group flex w-full items-center">
+            {{ ` (${selectedSourcesByPublisher(publisher)}/${countSourcesByPublisher(publisher)})`}}
+          </span>
+
+          <ul v-if="!allPublisherSourcesInactive(publisher)">
+            <li 
+              v-for="document in documentsPerPublisher"
+              :key="document.key"
+              class="group flex w-full items-center"
+            >
               <input
                 :id="document.key"
                 v-model="selectedSources"
@@ -124,7 +124,6 @@
     </slot>
     <template #actions>
       <button
-        ref="cancelButtonRef"
         type="button"
         class="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:col-start-1 sm:mt-0"
         @click="closeModal()"
@@ -133,7 +132,7 @@
       </button>
       <button
         type="button"
-        class="inline-flex w-full justify-center rounded-md bg-blood px-3 py-2  text-sm font-semibold text-white shadow-sm ring-offset-2 hover:ring-2 hover:ring-blood focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
+        class="inline-flex w-full justify-center rounded-md bg-red px-3 py-2 text-sm  font-semibold text-white shadow-sm ring-offset-2 hover:bg-blood hover:ring-2 hover:ring-red focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
         @click="saveSourceSelection()"
       >
         Update
@@ -154,68 +153,47 @@ const { data: documents } = useDocuments({
 });
 
 const { sources, setSources, gameSystem, setGameSystem } = useSourcesList();
-const selectedSources: Ref<string[]> = ref([]);
+
+const selectedSources = ref<string[]>([]);
+// watchEffect keeps data in sync across different instantiations of modal menu
+watchEffect(() => selectedSources.value = [...sources.value]);
+
 const emit = defineEmits(['close']);
 const closeModal = () => emit('close');
 
-const selectAllCheckbox = ref<HTMLInputElement | null>();
-
-const allSelected = computed(() => selectedSources.value.length === documentsInSystem.value?.length && documentsInSystem.value?.length > 0);
-const noneSelected = computed(() => selectedSources.value.length === 0);
-
-// Keep selectedSources in sync with global sources state
-watchEffect(() => selectedSources.value = [...sources.value]);
-
-watchEffect(() => {
-  if (selectAllCheckbox.value) {
-    selectAllCheckbox.value.checked = allSelected.value;
-    selectAllCheckbox.value.indeterminate = !allSelected.value && !noneSelected.value;
-  }
+const allSelected = computed(() => {
+  const total = documentsInSystem.value?.length ?? 0;
+  return total > 0 && selectedSources.value.length === total;
 });
+
+const noneSelected = computed(() => selectedSources.value.length === 0);
 
 // filter documents by the current game system
 const documentsInSystem = computed<Document[]>(() => {
   if (!documents.value) return [];
   if (!currentSystem.value) return documents.value;
-  return documents.value.filter((document) => {
-    return document.gamesystem.name === currentSystem.value;
-  });
+  return documents.value.filter((doc) => doc.gamesystem.name === currentSystem.value);
 });
 
 // group filtered documents by publisher
 const groupedDocuments = computed<Record<string, Document[]>>(() => {
-  const sortedDocuments = sortDocumentsByPublisher(documentsInSystem);
-
+  const sortedDocuments = sortDocumentsByPublisher(documentsInSystem.value);
   // Bring WotC sources to top of list if present
   if (!sortedDocuments['Wizards of the Coast']) return sortedDocuments;
   const { ['Wizards of the Coast']: value, ...rest } = sortedDocuments;
   return { ['Wizards of the Coast']: value, ...rest};
 });
 
-// state for current game system
-const currentSystem = ref('');
-watchEffect(() => currentSystem.value = gameSystem.value ?? '');
+const currentSystem = ref(gameSystem.value ?? '');
 
 // returns the names of all game systems present in API data
 const allGameSystems = computed(() => {
-  if (!documents.value) return[];
-
-  return documents?.value?.reduce((systems, document) => {
-    if (!document.gamesystem?.name) return systems;
-    if (!systems.includes(document.gamesystem.name))
-      return [...systems, document.gamesystem.name];
-    return systems;
-  }, [] as string[]);
+  if (!documents.value) return [];
+  return [...new Set(documents.value
+      .map(doc => doc.gamesystem?.name)
+      .filter(Boolean)
+  )];
 });
-
-// handler for changing game systems selecter, updates systems/sources cmpnt state
-const onGameSystemChanged = (event: Event) => {
-  const newSystem = (event.target as HTMLSelectElement).value;
-  currentSystem.value = newSystem;
-  selectedSources.value = (documents.value ?? [])
-    .filter(doc => !newSystem || doc.gamesystem?.name === newSystem)
-    .map(doc => doc.key);
-};
 
 function saveSourceSelection() {
   setSources(selectedSources.value);
@@ -223,8 +201,7 @@ function saveSourceSelection() {
   closeModal();
 }
 
-function toggleAllSources(event: Event) {
-  console.log((event.target as HTMLInputElement).checked);
+function toggleAllSources() {
   if (!allSelected.value) selectAllInSystem();
   else deselectAll();
 }
@@ -251,25 +228,20 @@ function addPublisher(publisher: string) {
 
 // remove all sources from a given publisher from allowed sources
 function removePublisher(publisher: string) {
-  const sourcesByPublisher = groupedDocuments.value[publisher].map(
-    source => source.key,
-  );
-  selectedSources.value = selectedSources.value.filter(
-    source => !sourcesByPublisher.includes(source),
-  );
+  const sourcesByPublisher = groupedDocuments.value[publisher].map(source => source.key);
+  selectedSources.value = selectedSources.value
+    .filter(source => !sourcesByPublisher.includes(source));
 }
 
 // returns number of sources by a given publisher
-const countSourcesByPublisher = (publisher: string) =>
-  groupedDocuments.value[publisher]?.length || 0;
+const countSourcesByPublisher = (publisher: string) => groupedDocuments.value[publisher]?.length ?? 0;
 
 // returns how many sources are selected from a given publisher
 function selectedSourcesByPublisher(publisher: string) {
-  const allSources = (groupedDocuments.value[publisher] ?? []).map(src => src.key);
-  const currentSources = selectedSources.value.filter(src =>
-    allSources.includes(src),
-  );
-  return currentSources.length;
+  const publisherKeys = (groupedDocuments.value[publisher] ?? []).map(src => src.key);
+  return selectedSources.value
+    .filter(src => publisherKeys.includes(src))
+    .length;
 }
 
 function selectAllInSystem() {
