@@ -5,8 +5,8 @@
       
       <ResultsTablePaginator
         class="w-min-content w-full"
-        :page-number="pageNo"
-        :last-page-number="lastPageNo"
+        :page-number="pageNo || 1"
+        :last-page-number="lastPageNo || 1"
         :items-per-page="itemsPerPage || 1"
         :total-items="data?.count || 1"
         @first="firstPage()"
