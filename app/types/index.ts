@@ -1,4 +1,5 @@
 import type { components } from './open5e-api';
+export * from './filters';
 
 // export basic data types returned by Open5e API
 export type Background = components['schemas']['Background'];

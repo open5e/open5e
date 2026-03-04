@@ -1,55 +1,4 @@
-export type MonsterFilter = {
-  name__icontains?: string; // filter by name (TODO)
-  challenge_rating_decimal_gte?: string; // CR lower bound
-  challenge_rating_decimal__lte?: string; // CR upper bound
-  size?: string; // filter by size
-  type?: string; // filter by monster type (TODO)
-};
-
-export const DefaultMonsterFilter: Readonly<MonsterFilter> = {
-  name__icontains: '',
-  challenge_rating_decimal_gte: '',
-  challenge_rating_decimal__lte: '',
-  size: '',
-  type: '',
-};
-
-export const MONSTER_CHALLENGE_RATINGS_LIST = [
-  '0',
-  '1/8',
-  '1/4',
-  '1/2',
-  '1',
-  '2',
-  '3',
-  '4',
-  '5',
-  '6',
-  '7',
-  '8',
-  '9',
-  '10',
-  '11',
-  '12',
-  '13',
-  '14',
-  '15',
-  '16',
-  '17',
-  '18',
-  '19',
-  '20',
-  '21',
-  '22',
-  '23',
-  '24',
-  '25',
-  '26',
-  '27',
-  '28',
-  '29',
-  '30',
-] as const;
+import type { MonsterFilterState } from '@/types';
 
 export const MONSTER_CHALLENGE_RATINGS_MAP = [
   ['0', 0],
@@ -113,3 +62,11 @@ export const MONSTER_TYPES_LIST = [
   'Plant',
   'Undead',
 ] as const;
+export const MONSTER_FILTER_DEFAULTS: Readonly<MonsterFilterState> = {
+  name__icontains: '',
+  challenge_rating_decimal_gte: '',
+  challenge_rating_decimal__lte: '',
+  size: '',
+  type: '',
+};
+

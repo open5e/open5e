@@ -99,8 +99,14 @@
 <script setup lang="ts">
 import { h } from 'vue';
 import { PlusIcon, MinusIcon } from '@heroicons/vue/24/solid';
-import type { Monster } from '@/types';
+import type { Monster , MonsterFilterState } from '@/types';
 import { parseChallengeRating } from '@/helpers';
+import {
+  MONSTER_CHALLENGE_RATINGS_MAP,
+  MONSTER_TYPES_LIST,
+  MONSTER_SIZES_LIST
+, MONSTER_FILTER_DEFAULTS } from '@/constants';
+
 
 const filterSelectFieldsDefinition = [
   {
@@ -137,11 +143,10 @@ const filterSelectFieldsDefinition = [
     })),
   },
 ];
-
 // Set up filters
-const filterState = useFilterState<MonsterFilter>({
+const filterState = useFilterState<MonsterFilterState>({
   key: 'monsters',
-  fields: DefaultMonsterFilter,
+  fields: MONSTER_FILTER_DEFAULTS,
 });
 
 // State handlers for sorting results table

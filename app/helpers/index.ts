@@ -1,11 +1,4 @@
-import { formatModifier } from './formatModifier';
-import { sortDocumentsByPublisher } from './sortDocumentsByPublisher';
-import { parseChallengeRating } from './parseChallengeRating';
-import { titleCaseToKebabCase } from './titleCaseToKebabCase';
-
-export {
-  formatModifier,
-  sortDocumentsByPublisher,
-  parseChallengeRating,
-  titleCaseToKebabCase,
-};
+export { formatModifier } from './formatModifier';
+export { sortDocumentsByPublisher } from './sortDocumentsByPublisher';
+export { parseChallengeRating } from './parseChallengeRating';
+export { titleCaseToKebabCase } from './titleCaseToKebabCase';
