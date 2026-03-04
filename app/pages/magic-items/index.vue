@@ -23,31 +23,8 @@
         name: 'Search Magic Items',
         filterField: 'name__icontains',
       }"
-      :select-fields="[
-        {
-          name: 'Rarity',
-          filterField: 'rarity',
-          options: magicItemRarities.map((rarity) => ({
-            name: rarity,
-            value: rarity.toLowerCase().split(' ').join('-'),
-          })),
-        },
-        {
-          name: 'Category',
-          filterField: 'category',
-          options: magicItemTypes.map((type) => ({
-            name: type,
-            value: type.toLowerCase().split(' ').join('-'),
-          })),
-          isLeastPriority: true,
-        },
-      ]"
-      :checkbox-fields="[
-        {
-          name: 'Attunement',
-          filterField: 'requires_attunement',
-        },
-      ]"
+      :select-fields="filterSelectFieldsDefinition"
+      :checkbox-fields="filterCheckboxFieldsDefinition"
     />
 
     <ResultsTable
@@ -90,6 +67,31 @@ const filterState = useFilterState<MagicItemFilter>({
   fields: DefaultMagicItemFilter,
 });
 
+const filterSelectFieldsDefinition = [
+  {
+    name: 'Rarity',
+    filterField: 'rarity',
+    options: MAGIC_ITEMS_RARITES.map((rarity) => ({
+      name: rarity,
+      value: rarity.toLowerCase().split(' ').join('-'),
+    })),
+  },
+  {
+    name: 'Category',
+    filterField: 'category',
+    options: MAGIC_ITEMS_TYPES.map((type) => ({
+      name: type,
+      value: type.toLowerCase().split(' ').join('-'),
+    })),
+    isLeastPriority: true,
+  },
+];
+
+const filterCheckboxFieldsDefinition = [{
+  name: 'Attunement',
+  filterField: 'requires_attunement',
+}];
+
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
@@ -117,7 +119,4 @@ const { data, paginator } = useFindPaginated({
     rarity__fields: ['name', 'rank'].join(','),
   },
 });
-
-const magicItemRarities = MAGIC_ITEMS_RARITES;
-const magicItemTypes = MAGIC_ITEMS_TYPES;
 </script>

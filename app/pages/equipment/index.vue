@@ -23,31 +23,7 @@
         name: 'Search Equipment',
         filterField: 'name__icontains',
       }"
-      :select-fields="[
-        {
-          name: 'Category',
-          filterField: 'category',
-          options: [
-            'Adventuring Gear',
-            'Ammunition',
-            'Armor',
-            'Drawn Vehicle',
-            'Poison',
-            'Ring',
-            'Rod',
-            'Shield',
-            'Staff',
-            'Tools',
-            'Trade Goods',
-            'Wand',
-            'Waterborne Vehicle',
-            'Weapon',
-          ].map((category) => ({
-            name: category,
-            value: category.toLowerCase().split(' ').join('-'),
-          })),
-        },
-      ]"
+      :select-fields="filterSelectFieldsDefinition"
     />
 
     <ResultsTable
@@ -80,6 +56,32 @@ const filterState = useFilterState<{ name__icontains: string }>({
     name__icontains: '',
   },
 });
+
+const CATEGORY_OPTIONS = [
+  'Adventuring Gear',
+  'Ammunition',
+  'Armor',
+  'Drawn Vehicle',
+  'Poison',
+  'Ring',
+  'Rod',
+  'Shield',
+  'Staff',
+  'Tools',
+  'Trade Goods',
+  'Wand',
+  'Waterborne Vehicle',
+  'Weapon',
+].map(category => ({
+  name: category,
+  value: category.toLowerCase().split(' ').join('-'),
+}));
+
+const filterSelectFieldsDefinition = [{
+  name: 'Category',
+  filterField: 'category',
+  options: CATEGORY_OPTIONS,
+}];
 
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();

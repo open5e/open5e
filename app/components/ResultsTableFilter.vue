@@ -119,7 +119,7 @@
           type="checkbox"
           :name="checkbox.filterField"
           :checked="filterState.fieldsState.value[checkbox.filterField] === true"
-          class="my-1 size-full accent-blood"
+          class="my-1 size-full accent-red"
           @input="
             filterState.updateField(
               checkbox.filterField,
