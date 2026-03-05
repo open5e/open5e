@@ -23,7 +23,7 @@
         name: 'Search Magic Items',
         filterField: 'name__icontains',
       }"
-      :select-fields="filterSelectFieldsDefinition"
+      :select-fields="magicItemFilterSelectFieldsDefinition"
       :checkbox-fields="filterCheckboxFieldsDefinition"
     />
 
@@ -39,38 +39,18 @@
 
 <script setup lang="ts">
 import type { MagicItemFilterState } from '@/types';
-import { magicItemTableColumnDefinitions } from '@/helpers';
 import {
-  MAGIC_ITEM_FILTER_DEFAULTS,
-  MAGIC_ITEMS_RARITES,
-  MAGIC_ITEMS_TYPES,
-} from '@/constants';
+  magicItemTableColumnDefinitions,
+  magicItemFilterSelectFieldsDefinition,
+} from '@/helpers';
+
+import { MAGIC_ITEM_FILTER_DEFAULTS } from '@/constants';
 
 // Set up filters
 const filterState = useFilterState<MagicItemFilterState>({
   key: 'magicItems',
   fields: MAGIC_ITEM_FILTER_DEFAULTS,
 });
-
-const filterSelectFieldsDefinition = [
-  {
-    name: 'Rarity',
-    filterField: 'rarity',
-    options: MAGIC_ITEMS_RARITES.map((rarity) => ({
-      name: rarity,
-      value: rarity.toLowerCase().split(' ').join('-'),
-    })),
-  },
-  {
-    name: 'Category',
-    filterField: 'category',
-    options: MAGIC_ITEMS_TYPES.map((type) => ({
-      name: type,
-      value: type.toLowerCase().split(' ').join('-'),
-    })),
-    isLeastPriority: true,
-  },
-];
 
 const filterCheckboxFieldsDefinition = [{
   name: 'Attunement',

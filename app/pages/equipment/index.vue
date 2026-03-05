@@ -23,7 +23,7 @@
         name: 'Search Equipment',
         filterField: 'name__icontains',
       }"
-      :select-fields="filterSelectFieldsDefinition"
+      :select-fields="equipmentFilterSelectFieldsDefinition"
     />
 
     <ResultsTable
@@ -37,7 +37,10 @@
 </template>
 
 <script setup lang="ts">
-import { equipmentTableColumnDefinitions } from '@/helpers';
+import {
+  equipmentTableColumnDefinitions,
+  equipmentFilterSelectFieldsDefinition
+} from '@/helpers';
 
 // Set up filters
 const filterState = useFilterState<{ name__icontains: string }>({
@@ -46,32 +49,6 @@ const filterState = useFilterState<{ name__icontains: string }>({
     name__icontains: '',
   },
 });
-
-const CATEGORY_OPTIONS = [
-  'Adventuring Gear',
-  'Ammunition',
-  'Armor',
-  'Drawn Vehicle',
-  'Poison',
-  'Ring',
-  'Rod',
-  'Shield',
-  'Staff',
-  'Tools',
-  'Trade Goods',
-  'Wand',
-  'Waterborne Vehicle',
-  'Weapon',
-].map(category => ({
-  name: category,
-  value: category.toLowerCase().split(' ').join('-'),
-}));
-
-const filterSelectFieldsDefinition = [{
-  name: 'Category',
-  filterField: 'category',
-  options: CATEGORY_OPTIONS,
-}];
 
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();

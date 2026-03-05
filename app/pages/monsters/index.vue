@@ -23,7 +23,7 @@
         name: 'Search Monsters',
         filterField: 'name__icontains',
       }"
-      :select-fields="filterSelectFieldsDefinition"
+      :select-fields="monsterFilterSelectFieldsDefinition"
     />
 
     <ResultsTable
@@ -44,50 +44,16 @@
 
 <script setup lang="ts">
 import type { MonsterFilterState } from '@/types';
-import { monsterTableColumnDefinitions } from '@/helpers';
+import {
+  monsterTableColumnDefinitions,
+  monsterFilterSelectFieldsDefinition
+} from '@/helpers';
 
 import {
   MONSTER_CHALLENGE_RATINGS_MAP,
-  MONSTER_TYPES_LIST,
-  MONSTER_SIZES_LIST,
   MONSTER_FILTER_DEFAULTS
 } from '@/constants';
 
-const filterSelectFieldsDefinition = [
-  {
-    name: 'Type',
-    filterField: 'type',
-    options: MONSTER_TYPES_LIST.map((monsterType) => ({
-      name: monsterType,
-      value: monsterType.toLowerCase(),
-    })),
-  },
-  {
-    name: 'Size',
-    filterField: 'size',
-    options: MONSTER_SIZES_LIST.map((monsterSize) => ({
-      name: monsterSize,
-      value: monsterSize.toLowerCase(),
-    })),
-    isLeastPriority: true,
-  },
-  {
-    name: 'CR (min)',
-    filterField: 'challenge_rating_decimal__gte',
-    options: MONSTER_CHALLENGE_RATINGS_MAP.map(([name, value]) => ({
-      name: name,
-      value: value.toString(),
-    })),
-  },
-  {
-    name: 'CR (max)',
-    filterField: 'challenge_rating_decimal__lte',
-    options: MONSTER_CHALLENGE_RATINGS_MAP.map(([name, value]) => ({
-      name: name,
-      value: value.toString(),
-    })),
-  },
-];
 // Set up filters
 const filterState = useFilterState<MonsterFilterState>({
   key: 'monsters',
@@ -129,6 +95,5 @@ defineExpose({
   debouncedFilter,
   MONSTER_CHALLENGE_RATINGS_MAP,
 });
-
 
 </script>

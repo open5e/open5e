@@ -19,3 +19,10 @@ export type SpellFilterState = {
   school__key?: string;
   classes__key__in?: string;
 };
+
+export type ResultTableSelectFieldFilter = {
+  name: string;
+  filterField: string;
+  options: { name: string; value: string }[];
+  isLeastPriority?: boolean
+};

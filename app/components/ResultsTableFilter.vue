@@ -143,23 +143,17 @@
 </template>
 
 <script setup lang="ts">
-defineProps<
-  {
-    filterState: FilterState<Fields>;
-    search: {
-      name: string;
-      filterField: string;
-    };
-    selectFields?: {
-      name: string;
-      filterField: string;
-      options: { name: string; value: string }[];
-      isLeastPriority?: boolean;
-    }[];
-    checkboxFields?: {
-      name: string;
-      filterField: string;
-    }[];
-  }
->();
+import type { ResultTableSelectFieldFilter } from '@/types';
+defineProps<{
+  filterState: FilterState<Fields>;
+  search: {
+    name: string;
+    filterField: string;
+  };
+  selectFields?: ResultTableSelectFieldFilter[];
+  checkboxFields?: {
+    name: string;
+    filterField: string;
+  }[];
+}>();
 </script>

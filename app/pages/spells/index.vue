@@ -23,7 +23,7 @@
         name: 'Search Spells',
         filterField: 'name__contains',
       }"
-      :select-fields="filterSelectFieldsDefinition"
+      :select-fields="spellFilterSelectFieldsDefinition"
     />
 
     <!-- RESULTS TABLE -->
@@ -39,42 +39,18 @@
 
 <script setup lang="ts">
 import type { SpellFilterState } from '@/types';
-import { spellTableColumnDefinitions } from '@/helpers';
-import { SPELL_FILTER_DEFAULTS, SPELL_SCHOOLS, SPELLCASTING_CLASSES } from '@/constants';
+import {
+  spellTableColumnDefinitions,
+  spellFilterSelectFieldsDefinition
+} from '@/helpers';
+
+import { SPELL_FILTER_DEFAULTS } from '@/constants';
 
 // Set up filters
 const filterState = useFilterState<SpellFilterState>({
   key: 'spells',
   fields: SPELL_FILTER_DEFAULTS,
 });
-    
-const filterSelectFieldsDefinition = [
-  {
-    name: 'Level',
-    filterField: 'level',
-    options: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((level) => ({
-      name: level.toString(),
-      value: level.toString(),
-    })),
-  },
-  {
-    name: 'School',
-    filterField: 'school__key',
-    options: SPELL_SCHOOLS.map((school) => ({
-      name: school,
-      value: school.toLowerCase(),
-    })),
-  },
-  {
-    name: 'Class',
-    filterField: 'classes__key__in',
-    options: SPELLCASTING_CLASSES.map((className) => ({
-      name: className,
-      value: 'srd_' + className.toLowerCase(),
-    })),
-    isLeastPriority: true,
-  },
-];
 
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
