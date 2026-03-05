@@ -62,19 +62,14 @@
 </template>
 
 <script setup lang="ts">
-// Set up filters
-const filterState = useFilterState<SpellFilter>({
-  key: 'spells',
-  fields: {
-    name__contains: '',
-    level: '',
-    school__key: '',
-    classes__key__in: '',
-  },
-});
+import type { SpellFilterState } from '@/types';
+import { SPELL_FILTER_DEFAULTS, SPELL_SCHOOLS, SPELLCASTING_CLASSES } from '@/constants';
 
-const SCHOOLS = ['Abjuration', 'Conjuration', 'Divination', 'Enchantment', 'Evocation', 'Illusion', 'Necromancy', 'Transmutation'];
-const CLASSES = ['Bard', 'Cleric', 'Druid', 'Sorcerer', 'Warlock', 'Wizard'];
+// Set up filters
+const filterState = useFilterState<SpellFilterState>({
+  key: 'spells',
+  fields: SPELL_FILTER_DEFAULTS,
+});
     
 const filterSelectFieldsDefinition = [
   {
@@ -88,7 +83,7 @@ const filterSelectFieldsDefinition = [
   {
     name: 'School',
     filterField: 'school__key',
-    options: SCHOOLS.map((school) => ({
+    options: SPELL_SCHOOLS.map((school) => ({
       name: school,
       value: school.toLowerCase(),
     })),
@@ -96,7 +91,7 @@ const filterSelectFieldsDefinition = [
   {
     name: 'Class',
     filterField: 'classes__key__in',
-    options: CLASSES.map((className) => ({
+    options: SPELLCASTING_CLASSES.map((className) => ({
       name: className,
       value: 'srd_' + className.toLowerCase(),
     })),

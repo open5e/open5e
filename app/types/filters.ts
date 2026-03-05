@@ -5,3 +5,10 @@ export type MonsterFilterState = {
   size?: string; // filter by size
   type?: string; // filter by monster type (TODO)
 };
+
+export type SpellFilterState = {
+  name__contains?: string;
+  level?: string;
+  school__key?: string;
+  classes__key__in?: string;
+};

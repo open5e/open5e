@@ -62,6 +62,7 @@ export const MONSTER_TYPES_LIST = [
   'Plant',
   'Undead',
 ] as const;
+
 export const MONSTER_FILTER_DEFAULTS: Readonly<MonsterFilterState> = {
   name__icontains: '',
   challenge_rating_decimal_gte: '',
