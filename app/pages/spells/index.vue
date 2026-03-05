@@ -29,31 +29,7 @@
     <!-- RESULTS TABLE -->
     <ResultsTable
       :data="data?.results"
-      :cols="[
-        {
-          displayName: 'Name',
-          value: (data) => data.name,
-          sortValue: 'name',
-          link: (data) => `/spells/${data.key}`,
-        },
-        {
-          displayName: 'Level',
-          value: (data) => data.level,
-          sortValue: 'level',
-        },
-        {
-          displayName: 'School',
-          value: (data) => data.school.name,
-          sortValue: 'school',
-        },
-        {
-          displayName: 'Classes',
-          value: (data) => {
-            return data.classes.map((c) => c.name).join(', ');
-          },
-          isLeastPriority: true,
-        },
-      ]"
+      :cols="spellTableColumnDefinitions"
       :sort-by="sortBy"
       :is-sort-descending="isSortDescending"
       @sort="(sortValue) => setSortState(sortValue)"
@@ -63,6 +39,7 @@
 
 <script setup lang="ts">
 import type { SpellFilterState } from '@/types';
+import { spellTableColumnDefinitions } from '@/helpers';
 import { SPELL_FILTER_DEFAULTS, SPELL_SCHOOLS, SPELLCASTING_CLASSES } from '@/constants';
 
 // Set up filters

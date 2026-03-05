@@ -25,13 +25,7 @@
 
     <ResultsTable
       :data="data?.results"
-      :cols="[
-        {
-          displayName: 'Name',
-          value: (data) => data.name,
-          link: (data) => `/conditions/${data.key}`,
-        },
-      ]"
+      :cols="conditionTableColumnDefinitions"
       :sort-by="sortBy"
       :is-sort-descending="isSortDescending"
       @sort="(sortValue) => setSortState(sortValue)"
@@ -40,6 +34,8 @@
 </template>
 
 <script setup lang="ts">
+import { conditionTableColumnDefinitions } from '@/helpers';
+
 // Set up filters
 const filterState = useFilterState<{ name__contains: string }>({
   key: 'conditions',

@@ -29,30 +29,7 @@
 
     <ResultsTable
       :data="data?.results"
-      :cols="[
-        {
-          displayName: 'Name',
-          value: (data) => data.name,
-          sortValue: 'name',
-          link: (data) => `/magic-items/${data.key}`,
-        },
-        {
-          displayName: 'Category',
-          value: (data) => data.category.name,
-          sortValue: 'category',
-          isLeastPriority: true,
-        },
-        {
-          displayName: 'Rarity',
-          value: (data) => data.rarity.name,
-          sortValue: 'rarity',
-        },
-        {
-          displayName: 'Attunement',
-          value: (data) => (data.requires_attunement ?? false),
-          sortValue: 'requires_attunement',
-        },
-      ]"
+      :cols="magicItemTableColumnDefinitions"
       :sort-by="sortBy"
       :is-sort-descending="isSortDescending"
       @sort="(sortValue) => setSortState(sortValue)"
@@ -62,10 +39,11 @@
 
 <script setup lang="ts">
 import type { MagicItemFilterState } from '@/types';
+import { magicItemTableColumnDefinitions } from '@/helpers';
 import {
   MAGIC_ITEM_FILTER_DEFAULTS,
   MAGIC_ITEMS_RARITES,
-  MAGIC_ITEMS_TYPES
+  MAGIC_ITEMS_TYPES,
 } from '@/constants';
 
 // Set up filters

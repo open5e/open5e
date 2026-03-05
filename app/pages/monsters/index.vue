@@ -28,37 +28,14 @@
 
     <ResultsTable
       :data="data?.results"
-      :cols="[
-        {
-          displayName: 'Name',
-          value: (data) => data.name,
-          sortValue: 'name',
-          link: (data) => `/monsters/${data.key}`,
-        },
-        {
-          displayName: 'CR',
-          value: (data) => parseChallengeRating(data.challenge_rating_decimal),
-          sortValue: 'challenge_rating_decimal',
-        },
-        {
-          displayName: 'Type',
-          value: (data) => data.type?.name,
-          sortValue: 'type',
-        },
-        {
-          displayName: 'Size',
-          value: (data) => data.size.name,
-          sortValue: 'size',
-          isLeastPriority: true,
-        }
-      ]"
+      :cols="monsterTableColumnDefinitions"
       :sort-by="sortBy"
       :is-sort-descending="isSortDescending"
       @sort="(sortValue) => setSortState(sortValue)"
     >
       <template #actions="{ data }">
         <div class="hidden justify-end gap-2 lg:flex">
-          <AddMonsterToEncounterButton :monster="data" />
+          <EncounterBuilderAddButton :monster="data" />
         </div>
       </template>
     </ResultsTable>
@@ -67,7 +44,8 @@
 
 <script setup lang="ts">
 import type { MonsterFilterState } from '@/types';
-import { parseChallengeRating } from '@/helpers';
+import { monsterTableColumnDefinitions } from '@/helpers';
+
 import {
   MONSTER_CHALLENGE_RATINGS_MAP,
   MONSTER_TYPES_LIST,

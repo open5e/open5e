@@ -25,14 +25,7 @@
 
     <ResultsTable
       :data="data?.results"
-      :cols="[
-        {
-          displayName: 'Name',
-          value: (data) => data.name,
-          sortValue: 'name',
-          link: (data) => `/backgrounds/${data.key}`,
-        }
-      ]"
+      :cols="backgroundTableColumnDefinitions"
       :sort-by="sortBy"
       :is-sort-descending="isSortDescending"
       @sort="(sortValue) => setSortState(sortValue)"
@@ -41,6 +34,8 @@
 </template>
 
 <script setup lang="ts">
+import { backgroundTableColumnDefinitions } from '@/helpers';
+
 // Set up filters
 const filterState = useFilterState<{ name__icontains: string }>({
   key: 'backgrounds',

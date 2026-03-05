@@ -27,14 +27,7 @@
     <ResultsTable
       endpoint="classes"
       :data="data?.results"
-      :cols="[
-        {
-          displayName: 'Class',
-          value: (data) => data.name,
-          sortValue: 'name',
-          link: (data) => `/classes/${data.key}`,
-        },
-      ]"
+      :cols="classTableColumnDefinitions"
       :sort-by="sortBy"
       @sort="(sortValue) => setSortState(sortValue)"
     />
@@ -42,6 +35,8 @@
 </template>
 
 <script setup lang="ts">
+import { classTableColumnDefinitions } from '@/helpers';
+
 // Set up filters
 const filterState = useFilterState<{ name__contains: string }>({
   key: 'classes',

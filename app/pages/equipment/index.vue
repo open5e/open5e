@@ -28,19 +28,7 @@
 
     <ResultsTable
       :data="data?.results"
-      :cols="[
-        {
-          displayName: 'Name',
-          value: (data) => data.name,
-          sortValue: 'name',
-          link: (data) => `/equipment/${data.key}`,
-        },
-        {
-          displayName: 'Category',
-          value: (data) => data.category.name,
-          sortValue: 'category',
-        },
-      ]"
+      :cols="equipmentTableColumnDefinitions"
       :sort-by="sortBy"
       :is-sort-descending="isSortDescending"
       @sort="(sortValue) => setSortState(sortValue)"
@@ -49,6 +37,8 @@
 </template>
 
 <script setup lang="ts">
+import { equipmentTableColumnDefinitions } from '@/helpers';
+
 // Set up filters
 const filterState = useFilterState<{ name__icontains: string }>({
   key: 'equipment',

@@ -55,3 +55,13 @@ export type SearchObjectPayload = {
   school?: string;
   level?: number;
 }
+
+// type interface for the `cols` prop
+export interface TableColumn<T extends Open5eData> {
+  displayName: string;
+  value: (data: T) => string | number | boolean;
+  sortValue?: string;
+  link?: (data: T) => string;
+  isLeastPriority?: boolean;
+  customTemplate?: (data: T) => { render: () => VNode };
+};

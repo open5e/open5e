@@ -70,7 +70,7 @@
 </template>
 
 <script setup lang="ts" generic="T extends Open5eData & { document?: DocumentSummary}">
-import type { DocumentSummary, Open5eData } from '@/types';
+import type { DocumentSummary, Open5eData, TableColumn } from '@/types';
 
 // generic props interface that works with any API endpoint
 interface ResultsTableProps<T extends Open5eData> {
@@ -80,16 +80,6 @@ interface ResultsTableProps<T extends Open5eData> {
   isSortDescending?: boolean  // sort direction
   isLoading?: boolean         // load state
   error?: Error | null        // error state
-};
-
-// type interface for the `cols` prop
-interface TableColumn<T extends Open5eData> {
-  displayName: string;
-  value: (data: T) => string | number | boolean;
-  sortValue?: string;
-  link?: (data: T) => string;
-  isLeastPriority?: boolean;
-  customTemplate?: (data: T) => { render: () => VNode };
 };
 
 // define component props using inferred types
