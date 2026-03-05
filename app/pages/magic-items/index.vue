@@ -61,10 +61,17 @@
 </template>
 
 <script setup lang="ts">
+import type { MagicItemFilterState } from '@/types';
+import {
+  MAGIC_ITEM_FILTER_DEFAULTS,
+  MAGIC_ITEMS_RARITES,
+  MAGIC_ITEMS_TYPES
+} from '@/constants';
+
 // Set up filters
-const filterState = useFilterState<MagicItemFilter>({
+const filterState = useFilterState<MagicItemFilterState>({
   key: 'magicItems',
-  fields: DefaultMagicItemFilter,
+  fields: MAGIC_ITEM_FILTER_DEFAULTS,
 });
 
 const filterSelectFieldsDefinition = [

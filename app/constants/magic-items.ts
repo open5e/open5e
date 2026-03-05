@@ -1,12 +1,6 @@
-export type MagicItemFilter = {
-  /** Name contains */
-  name__icontains?: string;
-  rarity?: string;
-  category?: string;
-  requires_attunement?: boolean;
-};
+import type { MagicItemFilterState } from '@/types';
 
-export const DefaultMagicItemFilter: Readonly<MagicItemFilter> = {
+export const MAGIC_ITEM_FILTER_DEFAULTS: Readonly<MagicItemFilterState> = {
   name__icontains: '',
   rarity: '',
   category: '',
