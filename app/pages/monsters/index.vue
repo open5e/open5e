@@ -50,63 +50,30 @@
           value: (data) => data.size.name,
           sortValue: 'size',
           isLeastPriority: true,
-        },
-        {
-          displayName: '',
-          value: () => '',
-          customTemplate: (data) => ({
-            render: () => {
-              const monsterInEncounter = encounterStore.monsters.value.find(
-                (m) => m.key === data.key,
-              );
-              return h(
-                'div',
-                { class: 'flex gap-2 justify-end hidden lg:flex' },
-                [
-                  monsterInEncounter
-                    && h(
-                      'button',
-                      {
-                        class:
-                          'p-1 text-sm font-medium text-white bg-red rounded hover:bg-blood/80',
-                        onClick: () => removeFromEncounter(data),
-                      },
-                      h(MinusIcon, { class: 'w-4 h-4' }),
-                    ),
-                  h(
-                    'button',
-                    {
-                      'class':
-                        'p-1 text-sm font-medium text-white bg-red rounded hover:bg-blood/80',
-                      'onClick': () => addToEncounter(data),
-                      'data-testid': 'add-to-encounter',
-                    },
-                    h(PlusIcon, { class: 'w-4 h-4' }),
-                  ),
-                ],
-              );
-            },
-          }),
-        },
+        }
       ]"
       :sort-by="sortBy"
       :is-sort-descending="isSortDescending"
       @sort="(sortValue) => setSortState(sortValue)"
-    />
+    >
+      <template #actions="{ data }">
+        <div class="hidden justify-end gap-2 lg:flex">
+          <AddMonsterToEncounterButton :monster="data" />
+        </div>
+      </template>
+    </ResultsTable>
   </section>
 </template>
 
 <script setup lang="ts">
-import { h } from 'vue';
-import { PlusIcon, MinusIcon } from '@heroicons/vue/24/solid';
-import type { Monster , MonsterFilterState } from '@/types';
+import type { MonsterFilterState } from '@/types';
 import { parseChallengeRating } from '@/helpers';
 import {
   MONSTER_CHALLENGE_RATINGS_MAP,
   MONSTER_TYPES_LIST,
-  MONSTER_SIZES_LIST
-, MONSTER_FILTER_DEFAULTS } from '@/constants';
-
+  MONSTER_SIZES_LIST,
+  MONSTER_FILTER_DEFAULTS
+} from '@/constants';
 
 const filterSelectFieldsDefinition = [
   {
@@ -158,7 +125,6 @@ const fields = [
   'name',
   'document',
   'challenge_rating_decimal',
-  'document',
   'type',
   'size',
 ].join(',');
@@ -176,21 +142,6 @@ const { data, paginator } = useFindPaginated({
     size__fields: 'name',
   },
 });
-
-const encounterStore = useEncounterStore();
-
-const addToEncounter = (monster: Monster) => {
-  encounterStore.addMonster(
-    monster.key,
-    monster.name,
-    parseFloat(monster.challenge_rating_decimal),
-    monster.challenge_rating_text,
-  );
-};
-
-const removeFromEncounter = (monster: Monster) => {
-  encounterStore.removeMonster(monster.key);
-};
 
 const debouncedFilter = computed(() => filterState.debouncedFilter);
 

@@ -40,6 +40,7 @@
             :is-sort-descending="isSortDescending"
             @sort="onSort(col.sortValue)"
           />
+          <th v-if="$slots.actions" />
         </tr>
       </thead>
       <tbody v-if="data && data.length > 0">
@@ -48,7 +49,11 @@
           :key="item.key"
           :data="item"
           :cols="cols"
-        />
+        >
+          <template v-if="$slots.actions" #actions="slotProps">
+            <slot name="actions" v-bind="slotProps" />
+          </template>
+        </ResultsTableRow>
       </tbody>
       <tbody v-else-if="data">
         <tr>

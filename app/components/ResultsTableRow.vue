@@ -47,6 +47,9 @@
         {{ col.value(data) }}
       </template>
     </td>
+    <td v-if="$slots.actions">
+      <slot name="actions" :data="data" />
+    </td>
   </tr>
 </template>
 
