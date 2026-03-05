@@ -1,5 +1,5 @@
 import type { TableColumn, MagicItem, ResultTableSelectFieldFilter } from '@/types';
-import { MAGIC_ITEMS_RARITES, MAGIC_ITEMS_TYPES } from '@/constants';
+import { magicItemRarities, magicItemTypes } from '@/constants';
 
 export const magicItemTableColumnDefinitions: TableColumn<MagicItem>[] = [
   {
@@ -30,7 +30,7 @@ export const magicItemFilterSelectFieldsDefinition: ResultTableSelectFieldFilter
   {
     name: 'Rarity',
     filterField: 'rarity',
-    options: MAGIC_ITEMS_RARITES.map((rarity) => ({
+    options: magicItemRarities.map((rarity) => ({
       name: rarity,
       value: rarity.toLowerCase().split(' ').join('-'),
     })),
@@ -38,7 +38,7 @@ export const magicItemFilterSelectFieldsDefinition: ResultTableSelectFieldFilter
   {
     name: 'Category',
     filterField: 'category',
-    options: MAGIC_ITEMS_TYPES.map((type) => ({
+    options: magicItemTypes.map((type) => ({
       name: type,
       value: type.toLowerCase().split(' ').join('-'),
     })),

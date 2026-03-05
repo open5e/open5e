@@ -1,13 +1,13 @@
 import type { MagicItemFilterState } from '@/types';
 
-export const MAGIC_ITEM_FILTER_DEFAULTS: Readonly<MagicItemFilterState> = {
+export const magicItemFilterDefaults: Readonly<MagicItemFilterState> = {
   name__icontains: '',
   rarity: '',
   category: '',
   requires_attunement: undefined,
 };
 
-export const MAGIC_ITEMS_RARITES = [
+export const magicItemRarities = [
   'Common',
   'Uncommon',
   'Rare',
@@ -15,7 +15,7 @@ export const MAGIC_ITEMS_RARITES = [
   'Legendary',
 ] as const;
 
-export const MAGIC_ITEMS_TYPES = [
+export const magicItemTypes = [
   'Armor',
   'Potion',
   'Ring',

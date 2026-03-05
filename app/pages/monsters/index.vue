@@ -44,20 +44,15 @@
 
 <script setup lang="ts">
 import type { MonsterFilterState } from '@/types';
+import { monsterFilterDefaults } from '@/constants';
 import {
   monsterTableColumnDefinitions,
   monsterFilterSelectFieldsDefinition
 } from '@/helpers';
 
-import {
-  MONSTER_CHALLENGE_RATINGS_MAP,
-  MONSTER_FILTER_DEFAULTS
-} from '@/constants';
-
-// Set up filters
 const filterState = useFilterState<MonsterFilterState>({
   key: 'monsters',
-  fields: MONSTER_FILTER_DEFAULTS,
+  fields: monsterFilterDefaults,
 });
 
 // State handlers for sorting results table
@@ -85,15 +80,6 @@ const { data, paginator } = useFindPaginated({
     type__fields: 'name',
     size__fields: 'name',
   },
-});
-
-const debouncedFilter = computed(() => filterState.debouncedFilter);
-
-// Expose values to template
-defineExpose({
-  filterState,
-  debouncedFilter,
-  MONSTER_CHALLENGE_RATINGS_MAP,
 });
 
 </script>

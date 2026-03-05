@@ -1,9 +1,9 @@
 import type { TableColumn, Monster, ResultTableSelectFieldFilter } from '@/types';
 import { parseChallengeRating } from '@/helpers';
 import {
-  MONSTER_CHALLENGE_RATINGS_MAP,
-  MONSTER_SIZES_LIST,
-  MONSTER_TYPES_LIST
+  monsterChallengeRatings,
+  monsterSizes,
+  monsterTypes
 } from '@/constants';
 
 export const monsterTableColumnDefinitions: TableColumn<Monster>[] = [
@@ -35,7 +35,7 @@ export const monsterFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[]
   {
     name: 'Type',
     filterField: 'type',
-    options: MONSTER_TYPES_LIST.map((monsterType) => ({
+    options: monsterTypes.map((monsterType) => ({
       name: monsterType,
       value: monsterType.toLowerCase(),
     })),
@@ -43,7 +43,7 @@ export const monsterFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[]
   {
     name: 'Size',
     filterField: 'size',
-    options: MONSTER_SIZES_LIST.map((monsterSize) => ({
+    options: monsterSizes.map((monsterSize) => ({
       name: monsterSize,
       value: monsterSize.toLowerCase(),
     })),
@@ -52,7 +52,7 @@ export const monsterFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[]
   {
     name: 'CR (min)',
     filterField: 'challenge_rating_decimal__gte',
-    options: MONSTER_CHALLENGE_RATINGS_MAP.map(([name, value]) => ({
+    options: monsterChallengeRatings.map(([name, value]) => ({
       name: name,
       value: value.toString(),
     })),
@@ -60,7 +60,7 @@ export const monsterFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[]
   {
     name: 'CR (max)',
     filterField: 'challenge_rating_decimal__lte',
-    options: MONSTER_CHALLENGE_RATINGS_MAP.map(([name, value]) => ({
+    options: monsterChallengeRatings.map(([name, value]) => ({
       name: name,
       value: value.toString(),
     })),

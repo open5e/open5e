@@ -44,12 +44,12 @@ import {
   magicItemFilterSelectFieldsDefinition,
 } from '@/helpers';
 
-import { MAGIC_ITEM_FILTER_DEFAULTS } from '@/constants';
+import { magicItemFilterDefaults } from '@/constants';
 
 // Set up filters
 const filterState = useFilterState<MagicItemFilterState>({
   key: 'magicItems',
-  fields: MAGIC_ITEM_FILTER_DEFAULTS,
+  fields: magicItemFilterDefaults,
 });
 
 const filterCheckboxFieldsDefinition = [{

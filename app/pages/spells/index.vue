@@ -44,12 +44,12 @@ import {
   spellFilterSelectFieldsDefinition
 } from '@/helpers';
 
-import { SPELL_FILTER_DEFAULTS } from '@/constants';
+import { spellFilterDefaults } from '@/constants';
 
 // Set up filters
 const filterState = useFilterState<SpellFilterState>({
   key: 'spells',
-  fields: SPELL_FILTER_DEFAULTS,
+  fields: spellFilterDefaults,
 });
 
 // State handlers for sorting results table

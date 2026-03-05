@@ -1,6 +1,6 @@
 import type { MonsterFilterState } from '@/types';
 
-export const MONSTER_CHALLENGE_RATINGS_MAP = [
+export const monsterChallengeRatings = [
   ['0', 0],
   ['1/8', 0.125],
   ['1/4', 0.25],
@@ -37,7 +37,7 @@ export const MONSTER_CHALLENGE_RATINGS_MAP = [
   ['30', 30],
 ] as const;
 
-export const MONSTER_SIZES_LIST = [
+export const monsterSizes = [
   'Tiny',
   'Small',
   'Medium',
@@ -46,7 +46,7 @@ export const MONSTER_SIZES_LIST = [
   'Gargantuan',
 ] as const;
 
-export const MONSTER_TYPES_LIST = [
+export const monsterTypes = [
   'Aberration',
   'Beast',
   'Celestial',
@@ -63,7 +63,7 @@ export const MONSTER_TYPES_LIST = [
   'Undead',
 ] as const;
 
-export const MONSTER_FILTER_DEFAULTS: Readonly<MonsterFilterState> = {
+export const monsterFilterDefaults: Readonly<MonsterFilterState> = {
   name__icontains: '',
   challenge_rating_decimal_gte: '',
   challenge_rating_decimal__lte: '',

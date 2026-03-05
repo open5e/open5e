@@ -1,5 +1,5 @@
 import type { TableColumn, Spell, ResultTableSelectFieldFilter } from '@/types';
-import { SPELL_SCHOOLS, SPELLCASTING_CLASSES } from '@/constants';
+import { spellSchools, spellcastingClasses } from '@/constants';
 
 export const spellTableColumnDefinitions: TableColumn<Spell>[] = [
   {
@@ -39,7 +39,7 @@ export const spellFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[] =
   {
     name: 'School',
     filterField: 'school__key',
-    options: SPELL_SCHOOLS.map((school) => ({
+    options: spellSchools.map((school) => ({
       name: school,
       value: school.toLowerCase(),
     })),
@@ -47,7 +47,7 @@ export const spellFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[] =
   {
     name: 'Class',
     filterField: 'classes__key__in',
-    options: SPELLCASTING_CLASSES.map((className) => ({
+    options: spellcastingClasses.map((className) => ({
       name: className,
       value: 'srd_' + className.toLowerCase(),
     })),

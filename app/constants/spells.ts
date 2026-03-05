@@ -1,13 +1,13 @@
 import type { SpellFilterState } from '@/types';
 
-export const SPELL_FILTER_DEFAULTS: Readonly<SpellFilterState> = {
+export const spellFilterDefaults: Readonly<SpellFilterState> = {
   name__contains: '',
   level: undefined,
   school__key: undefined,
   classes__key__in: undefined,
 };
 
-export const SPELL_LEVELS_NAMES = [
+export const spellLevels = [
   'Cantrip',
   '1st-level',
   '2nd-level',
@@ -20,7 +20,7 @@ export const SPELL_LEVELS_NAMES = [
   '9th-level',
 ] as const;
 
-export const SPELL_SCHOOLS = [
+export const spellSchools = [
   'Abjuration',
   'Conjuration',
   'Divination',
@@ -31,7 +31,7 @@ export const SPELL_SCHOOLS = [
   'Transmutation',
 ];
 
-export const SPELLCASTING_CLASSES = [
+export const spellcastingClasses = [
   'Bard',
   'Cleric',
   'Druid',
