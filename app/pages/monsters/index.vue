@@ -33,9 +33,9 @@
       :is-sort-descending="isSortDescending"
       @sort="(sortValue) => setSortState(sortValue)"
     >
-      <template #actions="{ data }">
+      <template #actions="{ data: monster }">
         <div class="hidden justify-end gap-2 lg:flex">
-          <EncounterBuilderAddButton :monster="data" />
+          <EncounterBuilderAddButton :monster="monster" />
         </div>
       </template>
     </ResultsTable>
