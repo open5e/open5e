@@ -4,9 +4,8 @@
  * API. Used on top-level pages where lists of results can be viewed.
  *
  * -= PROPS (INPUTS) =-
- * @prop {Object} data - API data to display
- * @prop {Number} [itemsPerPage=50] - The number of API results to display per page
- * @prop {Array} col - Array of column definitions, each containing:
+ * @prop {Open5eData[]} data - API data to display
+ * @prop {TableColumn<T>[]} col - Array of column definitions, each containing:
  *   @property {String} field - The field name (used for sorting)
  *   @property {String} displayName - The name to display in the column header
  * @prop {String} [sortBy="name"] – The column to sort by (compares against col.field)
