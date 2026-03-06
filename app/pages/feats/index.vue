@@ -34,29 +34,25 @@
 </template>
 
 <script setup lang="ts">
-import { featTableColumnDefinitions } from '@/helpers';
+import {
+  featsApiParams,
+  featTableColumnDefinitions,
+} from '@/helpers/resultsTableConfig';
+
 // Set up filters
 const filterState = useFilterState<{ name__icontains: string }>({
   key: 'feats',
-  fields: {
-    name__icontains: '',
-  },
+  fields: { name__icontains: '' },
 });
 
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
-
-const fields = ['key', 'name', 'document'].join(',');
-const docFields = ['name', 'key'].join(',');
 
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.feats,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   filter: filterState.debouncedFilter,
-  params: {
-    fields,
-    document__fields: docFields,
-  },
+  params: featsApiParams
 });
 </script>

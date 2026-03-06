@@ -1,6 +1,13 @@
 import type { TableColumn, Item } from '@/types';
 import { equipmentCategories } from '@/constants';
 
+export const equipmentApiParams = {
+  fields: ['key', 'name', 'document', 'category'].join(','),
+  document__fields: ['name', 'key'].join(','),
+  category__fields: ['name'].join(','),
+  is_magic_item: false,
+};
+
 export const equipmentTableColumnDefinitions: TableColumn<Item>[] = [
   {
     displayName: 'Name',

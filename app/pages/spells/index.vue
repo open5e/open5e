@@ -40,10 +40,11 @@
 <script setup lang="ts">
 import type { SpellFilterState } from '@/types';
 import {
+  spellsApiParams,
   spellFilterDefaults,
   spellFilterSelectFieldsDefinition,
   spellTableColumnDefinitions,
-} from '@/helpers';
+} from '@/helpers/resultsTableConfig';
 
 // Set up filters
 const filterState = useFilterState<SpellFilterState>({
@@ -60,12 +61,7 @@ const { data, paginator } = useFindPaginated({
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   filter: filterState.debouncedFilter,
-  params: {
-    fields: ['key', 'name', 'document', 'level', 'school', 'classes'].join(','),
-    document__fields: ['name', 'key'].join(','),
-    classes__fields: ['name'].join(','),
-    school__fields: ['name', 'key'].join(','),
-  },
+  params: spellsApiParams,
 });
 
 </script>

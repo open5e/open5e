@@ -5,14 +5,29 @@ import type {
   MonsterFilterState
 } from '@/types';
 
-import { parseChallengeRating } from '@/helpers';
-
 import {
   monsterChallengeRatings,
   monsterSizes,
-  monsterTypes
+  monsterTypes,
 } from '@/constants';
+import { parseChallengeRating } from '@/helpers';
 
+// -- API --
+export const monsterApiParams = {
+  fields: [
+    'key',
+    'name',
+    'document',
+    'challenge_rating_decimal',
+    'type',
+    'size',
+  ].join(','),
+  document__fields: ['name' ,'key'].join(','),
+  type__fields: 'name',
+  size__fields: 'name',
+};
+
+// -- TABLE --
 export const monsterTableColumnDefinitions: TableColumn<Monster>[] = [
   {
     displayName: 'Name',
@@ -38,6 +53,7 @@ export const monsterTableColumnDefinitions: TableColumn<Monster>[] = [
   }
 ];
 
+// -- FILTER --
 export const monsterFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[] = [
   {
     name: 'Type',

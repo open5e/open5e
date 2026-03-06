@@ -39,35 +39,25 @@
 <script setup lang="ts">
 import {
   equipmentTableColumnDefinitions,
-  equipmentFilterSelectFieldsDefinition
-} from '@/helpers';
+  equipmentFilterSelectFieldsDefinition,
+  equipmentApiParams
+} from '@/helpers/resultsTableConfig';
 
 // Set up filters
 const filterState = useFilterState<{ name__icontains: string }>({
   key: 'equipment',
-  fields: {
-    name__icontains: '',
-  },
+  fields: { name__icontains: '' },
 });
 
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
-
-const fields = ['key', 'name', 'document', 'category'].join(',');
-const docFields = ['name', 'key'].join(',');
-const categoryFields = ['name'].join(',');
 
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.equipment,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   filter: filterState.debouncedFilter,
-  params: {
-    fields,
-    document__fields: docFields,
-    category__fields: categoryFields,
-    is_magic_item: false,
-  },
+  params: equipmentApiParams,
 });
 
 </script>

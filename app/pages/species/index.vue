@@ -34,32 +34,23 @@
 </template>
 
 <script setup lang="ts">
-import { speciesTableColumnDefinitions } from '@/helpers';
+import { speciesApiParams, speciesTableColumnDefinitions } from '@/helpers';
 
 // Set up filters
 const filterState = useFilterState<{ name__icontains: string }>({
   key: 'species',
-  fields: {
-    name__icontains: '',
-  },
+  fields: { name__icontains: '' },
 });
 
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
-
-const fields = ['key', 'name', 'document'].join(',');
-const docFields = ['name', 'key'].join(',');
 
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.species,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   filter: filterState.debouncedFilter,
-  params: {
-    fields,
-    document__fields: docFields,
-    subspecies_of__isnull: true,
-  },
+  params: speciesApiParams,
 });
 
 </script>

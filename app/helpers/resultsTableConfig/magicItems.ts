@@ -7,6 +7,23 @@ import type {
 
 import { magicItemRarities, magicItemTypes } from '@/constants';
 
+// -- API --
+export const magicItemApiParams = {
+  fields: [
+    'key',
+    'name',
+    'document',
+    'category',
+    'rarity',
+    'requires_attunement',
+  ].join(','),
+  is_magic_item: true,
+  document__fields: ['name', 'key'].join(','),
+  category__fields: ['name', 'key'].join(','),
+  rarity__fields: ['name', 'rank'].join(','),
+};
+
+// -- TABLE --
 export const magicItemTableColumnDefinitions: TableColumn<MagicItem>[] = [
   {
     displayName: 'Name',
@@ -32,6 +49,7 @@ export const magicItemTableColumnDefinitions: TableColumn<MagicItem>[] = [
   },
 ];
 
+// -- FILTERS --
 export const magicItemFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[] = [
   {
     name: 'Rarity',

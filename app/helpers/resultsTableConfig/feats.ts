@@ -1,5 +1,10 @@
 import type { TableColumn, Feat } from '@/types';
 
+export const featsApiParams = {
+  fields: ['key', 'name', 'document'].join(','),
+  document__fields: ['name', 'key'].join(','),
+};
+
 export const featTableColumnDefinitions: TableColumn<Feat>[] = [
   {
     displayName: 'Name',

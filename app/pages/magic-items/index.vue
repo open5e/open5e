@@ -40,10 +40,11 @@
 <script setup lang="ts">
 import type { MagicItemFilterState } from '@/types';
 import {
+  magicItemApiParams,
   magicItemFilterDefaults,
   magicItemFilterSelectFieldsDefinition,
   magicItemTableColumnDefinitions,
-} from '@/helpers';
+} from '@/helpers/resultsTableConfig';
 
 // Set up filters
 const filterState = useFilterState<MagicItemFilterState>({
@@ -59,28 +60,12 @@ const filterCheckboxFieldsDefinition = [{
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
-// fields to fetch from API to populate table
-const fields = [
-  'key',
-  'name',
-  'document',
-  'category',
-  'rarity',
-  'requires_attunement',
-].join(',');
-
 // fetch page of data from API and pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.magicitems,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   filter: filterState.debouncedFilter,
-  params: {
-    is_magic_item: true,
-    fields,
-    document__fields: ['name', 'key'].join(','),
-    category__fields: ['name', 'key'].join(','),
-    rarity__fields: ['name', 'rank'].join(','),
-  },
+  params: magicItemApiParams
 });
 </script>

@@ -7,6 +7,15 @@ import type {
 
 import { spellSchools, spellcastingClasses } from '@/constants';
 
+// -- API --
+export const spellsApiParams = {
+  fields: ['key', 'name', 'document', 'level', 'school', 'classes'].join(','),
+  document__fields: ['name', 'key'].join(','),
+  classes__fields: ['name'].join(','),
+  school__fields: ['name', 'key'].join(','),
+};
+
+// -- Table --
 export const spellTableColumnDefinitions: TableColumn<Spell>[] = [
   {
     displayName: 'Name',
@@ -33,6 +42,7 @@ export const spellTableColumnDefinitions: TableColumn<Spell>[] = [
   },
 ];
 
+// -- Filters --
 export const spellFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[] = [
   {
     name: 'Level',

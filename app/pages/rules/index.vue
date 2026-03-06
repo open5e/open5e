@@ -34,13 +34,15 @@
 </template>
 
 <script setup lang="ts">
-import { rulesTableColumnDefinitions } from '@/helpers';
+import {
+  rulesApiParams,
+  rulesTableColumnDefinitions,
+} from '@/helpers/resultsTableConfig';
+
 // Set up filters
 const filterState = useFilterState<{ name__contains: string }>({
   key: 'rules',
-  fields: {
-    name__contains: '',
-  },
+  fields: { name__contains: '' },
 });
 
 const { sortBy, isSortDescending, setSortState } = useSortState();
@@ -51,10 +53,7 @@ const { data, paginator } = useFindPaginated({
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   filter: filterState.debouncedFilter,
-  params: {
-    fields: ['name', 'key', 'document'].join(','),
-    document__fields: ['name', 'key'].join(','),
-  },
+  params: rulesApiParams,
 });
 
 </script>

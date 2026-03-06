@@ -44,11 +44,13 @@
 
 <script setup lang="ts">
 import type { MonsterFilterState } from '@/types';
+
 import {
+  monsterApiParams,
   monsterTableColumnDefinitions,
   monsterFilterSelectFieldsDefinition,
-  monsterFilterDefaults
-} from '@/helpers';
+  monsterFilterDefaults,
+} from '@/helpers/resultsTableConfig';
 
 const filterState = useFilterState<MonsterFilterState>({
   key: 'monsters',
@@ -58,28 +60,13 @@ const filterState = useFilterState<MonsterFilterState>({
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
 
-// fields to fetch from API to populate table
-const fields = [
-  'key',
-  'name',
-  'document',
-  'challenge_rating_decimal',
-  'type',
-  'size',
-].join(',');
-
 // fetch page of data from API and pagination controls
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.monsters,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   filter: filterState.debouncedFilter,
-  params: {
-    fields,
-    document__fields: 'name,key',
-    type__fields: 'name',
-    size__fields: 'name',
-  },
+  params: monsterApiParams,
 });
 
 </script>
