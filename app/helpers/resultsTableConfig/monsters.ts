@@ -1,5 +1,12 @@
-import type { TableColumn, Monster, ResultTableSelectFieldFilter } from '@/types';
+import type {
+  TableColumn,
+  Monster,
+  ResultTableSelectFieldFilter,
+  MonsterFilterState
+} from '@/types';
+
 import { parseChallengeRating } from '@/helpers';
+
 import {
   monsterChallengeRatings,
   monsterSizes,
@@ -66,3 +73,11 @@ export const monsterFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[]
     })),
   },
 ];
+
+export const monsterFilterDefaults: Readonly<MonsterFilterState> = {
+  name__icontains: '',
+  challenge_rating_decimal_gte: '',
+  challenge_rating_decimal__lte: '',
+  size: '',
+  type: '',
+};

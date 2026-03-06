@@ -1,4 +1,10 @@
-import type { TableColumn, Spell, ResultTableSelectFieldFilter } from '@/types';
+import type {
+  ResultTableSelectFieldFilter,
+  Spell,
+  SpellFilterState,
+  TableColumn,
+} from '@/types';
+
 import { spellSchools, spellcastingClasses } from '@/constants';
 
 export const spellTableColumnDefinitions: TableColumn<Spell>[] = [
@@ -54,3 +60,10 @@ export const spellFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[] =
     isLeastPriority: true,
   },
 ];
+
+export const spellFilterDefaults: Readonly<SpellFilterState> = {
+  name__contains: '',
+  level: undefined,
+  school__key: undefined,
+  classes__key__in: undefined,
+};

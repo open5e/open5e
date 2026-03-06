@@ -1,4 +1,10 @@
-import type { TableColumn, MagicItem, ResultTableSelectFieldFilter } from '@/types';
+import type {
+  MagicItem,
+  MagicItemFilterState,
+  ResultTableSelectFieldFilter,
+  TableColumn,
+} from '@/types';
+
 import { magicItemRarities, magicItemTypes } from '@/constants';
 
 export const magicItemTableColumnDefinitions: TableColumn<MagicItem>[] = [
@@ -45,3 +51,10 @@ export const magicItemFilterSelectFieldsDefinition: ResultTableSelectFieldFilter
     isLeastPriority: true,
   },
 ];
+
+export const magicItemFilterDefaults: Readonly<MagicItemFilterState> = {
+  name__icontains: '',
+  rarity: '',
+  category: '',
+  requires_attunement: undefined,
+};

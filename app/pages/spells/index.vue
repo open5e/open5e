@@ -40,11 +40,10 @@
 <script setup lang="ts">
 import type { SpellFilterState } from '@/types';
 import {
+  spellFilterDefaults,
+  spellFilterSelectFieldsDefinition,
   spellTableColumnDefinitions,
-  spellFilterSelectFieldsDefinition
 } from '@/helpers';
-
-import { spellFilterDefaults } from '@/constants';
 
 // Set up filters
 const filterState = useFilterState<SpellFilterState>({

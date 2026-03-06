@@ -40,11 +40,10 @@
 <script setup lang="ts">
 import type { MagicItemFilterState } from '@/types';
 import {
-  magicItemTableColumnDefinitions,
+  magicItemFilterDefaults,
   magicItemFilterSelectFieldsDefinition,
+  magicItemTableColumnDefinitions,
 } from '@/helpers';
-
-import { magicItemFilterDefaults } from '@/constants';
 
 // Set up filters
 const filterState = useFilterState<MagicItemFilterState>({

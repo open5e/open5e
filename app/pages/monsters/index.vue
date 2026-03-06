@@ -44,10 +44,10 @@
 
 <script setup lang="ts">
 import type { MonsterFilterState } from '@/types';
-import { monsterFilterDefaults } from '@/constants';
 import {
   monsterTableColumnDefinitions,
-  monsterFilterSelectFieldsDefinition
+  monsterFilterSelectFieldsDefinition,
+  monsterFilterDefaults
 } from '@/helpers';
 
 const filterState = useFilterState<MonsterFilterState>({

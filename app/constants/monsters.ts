@@ -1,5 +1,3 @@
-import type { MonsterFilterState } from '@/types';
-
 export const monsterChallengeRatings = [
   ['0', 0],
   ['1/8', 0.125],
@@ -62,12 +60,3 @@ export const monsterTypes = [
   'Plant',
   'Undead',
 ] as const;
-
-export const monsterFilterDefaults: Readonly<MonsterFilterState> = {
-  name__icontains: '',
-  challenge_rating_decimal_gte: '',
-  challenge_rating_decimal__lte: '',
-  size: '',
-  type: '',
-};
-
