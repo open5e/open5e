@@ -1,9 +1,8 @@
 import { useQuery } from '@tanstack/vue-query';
 import axios from 'axios';
-import { navigateTo, useRoute, useRuntimeConfig } from 'nuxt/app';
+import { useRoute, useRuntimeConfig, type NuxtError } from 'nuxt/app';
 import { computed, unref } from 'vue';
-import { useSourcesList } from './useSourcesList';
-import type { components } from '~/types/open5e-api';
+import type { components } from '@/types/open5e-api';
 
 // Extract schemas from OpenAPI components
 type Schemas = components['schemas'];
@@ -75,6 +74,13 @@ export type ExtractItemType<T> = T extends { results: (infer U)[] } ? U : never;
 export type ExtractPaginatedItemType<T extends keyof EndpointToPaginatedTypeMap> = 
   ExtractItemType<EndpointToPaginatedTypeMap[T]>;
 
+// define custom error type to support passing Open5e data via an error message
+export interface Open5eError extends NuxtError {
+  data: {
+    key?: string;
+  };
+}
+
 /** Provides the base functions to easily fetch data from the Open5e API. */
 export const useAPI = () => {
   const API_URL = useRuntimeConfig().public.apiUrl;
@@ -134,13 +140,16 @@ export const useAPI = () => {
     },
     get: async <T extends keyof EndpointToFindOneTypeMap>(
       endpoint: T,
-      ...parts: string[]
+      key?: string,
+      queryString?: string
     ): Promise<EndpointToFindOneTypeMap[T]> => {
-      const route = [endpoint, ...parts].join('');
-      const res = await api.get(route).catch(() => {
-        // redirect to /search if API route returns nothing
-        const searchTerm = parts.filter(exists => exists).slice(-1)[0];
-        navigateTo(`/search?text=${searchTerm}`);
+      const url = [endpoint, key, queryString].filter(Boolean).join('');
+      const res = await api.get(url).catch(() => {
+        throw createError({
+          statusCode: 404,
+          statusMessage: `Failed to fetch resource with key: ${key}`,
+          data: { key },
+        });
       });
       return res?.data;
     },
