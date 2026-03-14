@@ -35,15 +35,6 @@ body, html {
   --pad-sm: calc(var(--pad-md) / 2);
   --pad-lg: 2rem;
   --pad-xl: 3rem;
-  --color-fireball: #e74c3c;
-  --color-blood: #a82315;
-  --color-mana: #166c9c;
-  --color-fog: #f4f4f4;
-  --color-smoke: #d4d4d4;
-  --color-granite: #888;
-  --color-gray: #767676;
-  --color-basalt: #333;
-  --color-darkness: #111;
 }
 
 h1 {
@@ -104,10 +95,9 @@ h5 {
 }
 
 table {
+  @apply border-y-[.5rem] border-smoke;
   font-size: 14px;
   border-collapse: collapse;
-  border-top: var(--pad-sm) solid var(--color-smoke);
-  border-bottom: var(--pad-sm) solid var(--color-smoke);
   margin-top: var(--pad-md);
 }
 
@@ -117,12 +107,14 @@ th {
   text-align: left;
 }
 tr {
-  border-bottom: 1px solid var(--color-fog);
+  @apply border-b border-fog;
 }
+
 th {
+  @apply border-b-2 border-smoke;
   vertical-align: bottom;
-  border-bottom: 2px solid var(--color-smoke);
 }
+
 td {
   vertical-align: top;
 }
@@ -132,8 +124,8 @@ td {
 }
 
 .container h2 {
+  @apply border-b border-red;
   margin-top: var(--pad-lg);
-  border-bottom: 3px solid var(--color-fireball);
   padding-bottom: var(--pad-xs);
 }
 .container h4 {

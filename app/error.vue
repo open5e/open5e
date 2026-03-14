@@ -30,7 +30,7 @@
             xml:space="preserve"
             x="0px"
             y="0px"
-            class="die-roll"
+            class="die-roll fill-fireball"
           >
             <g>
               <path
@@ -108,7 +108,6 @@ const handleError = () => clearError({ redirect: '/' });
 .die-roll {
   animation: roll 1.5s ease-in-out;
   display: inline-block;
-  fill: var(--color-fireball);
   height: 15em;
   width: 15em;
   max-width: 60%;
