@@ -140,25 +140,6 @@ td {
   display: inline;
 }
 
-.container h1 .toc-anchor,
-.container h2 .toc-anchor,
-.container h3 .toc-anchor,
-.container h5 .toc-anchor,
-.container h6 .toc-anchor {
-  order: 2;
-  display: none;
-  color: var(--color-smoke);
-  margin-left: var(--pad-sm);
-}
-
-.container h1:hover .toc-anchor,
-.container h2:hover .toc-anchor,
-.container h3:hover .toc-anchor,
-.container h5:hover .toc-anchor,
-.container h6:hover .toc-anchor {
-  display: inline-block;
-}
-
 blockquote {
   padding: 0.1rem 1rem 1rem 1rem;
   margin-top: 1rem;
