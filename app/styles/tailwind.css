@@ -29,14 +29,6 @@ body, html {
   margin: 0;
 }
 
-:root {
-  --pad-md: 1rem;
-  --pad-xs: calc(var(--pad-md) / 4);
-  --pad-sm: calc(var(--pad-md) / 2);
-  --pad-lg: 2rem;
-  --pad-xl: 3rem;
-}
-
 h1 {
   @apply text-3xl text-red dark:text-white;
 }
@@ -62,7 +54,7 @@ h6 {
 }
 
 p {
-  margin-block: var(--pad-sm);
+  @apply my-2;
 }
 
 h1,
@@ -73,7 +65,7 @@ h3 {
 }
 
 h2 {
-  margin-top: calc(var(--pad-md) * 4);
+  @apply mt-16;
 }
 
 h3 {
@@ -95,17 +87,13 @@ h5 {
 }
 
 table {
-  @apply border-y-[.5rem] border-smoke;
+  @apply border-y-[.5rem] border-smoke mt-4;
   font-size: 14px;
   border-collapse: collapse;
-  margin-top: var(--pad-md);
 }
 
-td,
-th {
-  padding: var(--pad-sm) var(--pad-sm);
-  text-align: left;
-}
+td, th { @apply p-2 text-left; }
+
 tr {
   @apply border-b border-fog;
 }
@@ -120,13 +108,11 @@ td {
 }
 
 .container h1:not(:first-child) {
-  margin-top: var(--pad-xl);
+  @apply mt-12;
 }
 
 .container h2 {
-  @apply border-b border-red;
-  margin-top: var(--pad-lg);
-  padding-bottom: var(--pad-xs);
+  @apply border-b border-red pb-1 mt-8;
 }
 .container h4 {
   display: inline;
