@@ -20,6 +20,6 @@
   td { @apply align-top; }
   
   blockquote {
-    @apply bg-fog dark:bg-basalt px-4 pt-1 pb-4 mt-4 max-w-[40rem] border-l-[.75rem] border-slate;
+    @apply bg-fog dark:bg-basalt px-4 pt-1 pb-4 mt-4 max-w-[40rem] border-l-[.75rem] border-granite;
   }
 }

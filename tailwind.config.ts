@@ -40,7 +40,6 @@ module.exports = {
         fog: '#f4f4f4',
         smoke: '#d4d4d4',
         granite: '#888',
-        slate: '#767676',
         basalt: '#333',
         charcoal: '#222',
         darkness: '#111',
