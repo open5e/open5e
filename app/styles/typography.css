@@ -1,14 +1,25 @@
-@layer base { 
+@layer base {
+  main { @apply text-darkness dark:text-white; }
+
   h1 { @apply text-3xl text-red dark:text-white; }
-  h2 { @apply text-2xl border-b-2 border-red pb-1 mt-6 w-min text-nowrap; }
+  h2 { @apply text-2xl border-b-[3px] border-red pb-1 mt-6 inline-block; }
   h3 { @apply text-xl mt-6; }
-  h4 { @apply text-base; }
+  h4 { @apply text-lg text-charcoal dark:text-fog; }
   h5 { @apply text-base; }
   h6 { @apply text-sm; }
+  h1, h2, h3, h4, h5, h6 { @apply font-serif; }
+
   p { @apply my-3; }
   br { @apply mb-1; }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lora', serif;
+  table { @apply text-sm border-y-[.5rem] border-smoke mt-4 border-collapse; }
+  
+  td, th { @apply p-2 text-left; }
+  tr { @apply border-b border-fog; }
+  th { @apply border-b-2 border-smoke align-bottom; } 
+  td { @apply align-top; }
+  
+  blockquote {
+    @apply bg-fog dark:bg-basalt px-4 pt-1 pb-4 mt-4 max-w-[40rem] border-l-[.75rem] border-slate;
   }
 }
