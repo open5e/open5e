@@ -20,6 +20,8 @@ module.exports = {
     extend: {
       fontfamily: {
         headers: ['"Lora"', 'serif'],
+        serif: ['Lora', 'serif'],
+        sans: ['Source Sans Pro', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
       colors: {
         red: {

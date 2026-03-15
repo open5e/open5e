@@ -1,0 +1,14 @@
+@layer base { 
+  h1 { @apply text-3xl text-red dark:text-white; }
+  h2 { @apply text-2xl border-b-2 border-red pb-1 mt-6 w-min text-nowrap; }
+  h3 { @apply text-xl mt-6; }
+  h4 { @apply text-base; }
+  h5 { @apply text-base; }
+  h6 { @apply text-sm; }
+  p { @apply my-3; }
+  br { @apply mb-1; }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+  }
+}

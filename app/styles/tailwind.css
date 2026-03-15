@@ -1,65 +1,9 @@
+@import './base.css';
+@import './typography.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import './base.css';
-
-h1 {
-  @apply text-3xl text-red dark:text-white;
-}
-
-h2 {
-  @apply text-2xl;
-}
-
-h3 {
-  @apply text-xl;
-}
-
-h4 {
-  @apply text-base;
-}
-
-h5 {
-  @apply text-base;
-}
-
-h6 {
-  @apply text-sm;
-}
-
-p {
-  @apply my-2;
-}
-
-h1,
-h2,
-h3 {
-  font-family: 'Lora', serif;
-  font-weight: 600;
-}
-
-h2 {
-  @apply mt-16;
-}
-
-h3 {
-  margin-top: 1.4rem;
-  font-size: 1.4rem;
-}
-
-h4 {
-  font-weight: 900;
-}
-
-h5 {
-  font-weight: 800;
-  opacity: 0.7;
-}
-
-h5 {
-  font-size: 1rem;
-}
 
 table {
   @apply border-y-[.5rem] border-smoke mt-4;
@@ -80,17 +24,6 @@ th {
 
 td {
   vertical-align: top;
-}
-
-.container h1:not(:first-child) {
-  @apply mt-12;
-}
-
-.container h2 {
-  @apply border-b border-red pb-1 mt-8;
-}
-.container h4 {
-  display: inline;
 }
 
 blockquote {
