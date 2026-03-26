@@ -1,3 +1,4 @@
+import { useQuery } from '@tanstack/vue-query';
 import type { EndpointToFindOneTypeMap } from './api';
 
 function formatQueryString(params?: Record<string, string>): string {

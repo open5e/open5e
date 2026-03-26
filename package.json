@@ -43,7 +43,6 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.14",
-    "@hebilicious/vue-query-nuxt": "^0.3.0",
     "@heroicons/vue": "^2.0.18",
     "@tanstack/vue-query": "^5.35.1",
     "@vueuse/core": "^10.11.0",

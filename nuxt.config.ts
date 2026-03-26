@@ -71,7 +71,6 @@ export default defineNuxtConfig({
       cssPath: '~/styles/tailwind.css',
     }],
     'nuxt-icon',
-    '@hebilicious/vue-query-nuxt',
     '@nuxt/test-utils/module',
   ],
   
