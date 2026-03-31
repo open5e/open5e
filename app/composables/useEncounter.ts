@@ -20,15 +20,10 @@ export type DifficultyLevel =
   | 'hard'
   | 'deadly';
 
+const monsters = useLocalStorage<EncounterMonster[]>('encounter-monsters', []);
+const cache = useLocalStorage<Record<string, unknown>>('monster-cache', {});
+
 export const useEncounterStore = () => {
-  const monsters = useLocalStorage<EncounterMonster[]>(
-    'encounter-monsters',
-    [],
-  );
-  const monsterCache = useLocalStorage<Record<string, unknown>>(
-    'monster-cache',
-    {},
-  );
   const { get } = useAPI();
   const { partyXPBudget } = usePartyStore();
   const xpCalculator = useXPCalculator();
@@ -93,8 +88,8 @@ export const useEncounterStore = () => {
   const fetchMonsterData = async (key: string) => {
     try {
       let data;
-      if (monsterCache.value[key]) {
-        data = monsterCache.value[key];
+      if (cache.value[key]) {
+        data = cache.value[key];
       } else {
         if (!key) {
           console.error('Cannot fetch monster data: ID is empty');
@@ -105,7 +100,7 @@ export const useEncounterStore = () => {
           key,
           '/?document__fields=name,key,permalink',
         );
-        monsterCache.value[key] = data;
+        cache.value[key] = data;
       }
 
       // Update the monster in the list with the new data

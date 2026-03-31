@@ -6,15 +6,14 @@
       </h1>
 
       <ResultsTablePaginator
-        class="w-full"
-        :page-number="pageNo"
-        :last-page-number="lastPageNo"
-        :items-per-page="itemsPerPage || 1"
+        :page-number="paginator.pageNo || 1"
+        :last-page-number="paginator.lastPageNo || 1"
+        :items-per-page="paginator.itemsPerPage || 1"
         :total-items="data?.count || 1"
-        @first="firstPage()"
-        @next="nextPage()"
-        @prev="prevPage()"
-        @last="lastPage()"
+        @first="paginator.firstPage()"
+        @next="paginator.nextPage()"
+        @prev="paginator.prevPage()"
+        @last="paginator.lastPage()"
       />
     </div>
 
@@ -24,79 +23,13 @@
         name: 'Search Spells',
         filterField: 'name__contains',
       }"
-      :select-fields="[
-        {
-          name: 'Level',
-          filterField: 'level',
-          options: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((level) => ({
-            name: level.toString(),
-            value: level.toString(),
-          })),
-        },
-        {
-          name: 'School',
-          filterField: 'school__key',
-          options: [
-            'Abjuration',
-            'Conjuration',
-            'Divination',
-            'Enchantment',
-            'Evocation',
-            'Illusion',
-            'Necromancy',
-            'Transmutation',
-          ].map((school) => ({
-            name: school,
-            value: school.toLowerCase(),
-          })),
-        },
-        {
-          name: 'Class',
-          filterField: 'classes__key__in',
-          options: [
-            'Bard',
-            'Cleric',
-            'Druid',
-            'Sorcerer',
-            'Warlock',
-            'Wizard',
-          ].map((className) => ({
-            name: className,
-            value: 'srd_' + className.toLowerCase(),
-          })),
-          isLeastPriority: true,
-        },
-      ]"
+      :select-fields="spellFilterSelectFieldsDefinition"
     />
 
     <!-- RESULTS TABLE -->
     <ResultsTable
       :data="data?.results"
-      :cols="[
-        {
-          displayName: 'Name',
-          value: (data) => data.name,
-          sortValue: 'name',
-          link: (data) => `/spells/${data.key}`,
-        },
-        {
-          displayName: 'Level',
-          value: (data) => data.level,
-          sortValue: 'level',
-        },
-        {
-          displayName: 'School',
-          value: (data) => data.school.name,
-          sortValue: 'school',
-        },
-        {
-          displayName: 'Classes',
-          value: (data) => {
-            return data.classes.map((c) => c.name).join(', ');
-          },
-          isLeastPriority: true,
-        },
-      ]"
+      :cols="spellTableColumnDefinitions"
       :sort-by="sortBy"
       :is-sort-descending="isSortDescending"
       @sort="(sortValue) => setSortState(sortValue)"
@@ -105,29 +38,22 @@
 </template>
 
 <script setup lang="ts">
+import type { SpellFilterState } from '@/types';
+import {
+  spellsApiParams,
+  spellFilterDefaults,
+  spellFilterSelectFieldsDefinition,
+  spellTableColumnDefinitions,
+} from '@/helpers/resultsTableConfig';
+
 // Set up filters
-const filterState = useFilterState<SpellFilter>({
+const filterState = useFilterState<SpellFilterState>({
   key: 'spells',
-  fields: {
-    name__contains: '',
-    level: '',
-    school__key: '',
-    classes__key__in: '',
-  },
+  fields: spellFilterDefaults,
 });
 
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
-
-// fields to fetch from API to populate table
-const fields = [
-  'key',
-  'name',
-  'document',
-  'level',
-  'school',
-  'classes',
-].join(',');
 
 // Fetch a page of results and pagination controls
 const { data, paginator } = useFindPaginated({
@@ -135,22 +61,7 @@ const { data, paginator } = useFindPaginated({
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   filter: filterState.debouncedFilter,
-  params: {
-    fields,
-    document__fields: ['name', 'key'].join(','),
-    classes__fields: ['name'].join(','),
-    school__fields: ['name', 'key'].join(','),
-  },
+  params: spellsApiParams,
 });
 
-// destructure pagination controls
-const {
-  pageNo,
-  lastPageNo,
-  itemsPerPage,
-  firstPage,
-  lastPage,
-  prevPage,
-  nextPage,
-} = paginator;
 </script>

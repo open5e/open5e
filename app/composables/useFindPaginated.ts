@@ -92,7 +92,7 @@ export function useFindPaginated<T extends keyof EndpointToPaginatedTypeMap>(opt
 
   return {
     data,
-    paginator: {
+    paginator: reactive({
       isFetching,
       error,
       firstPage,
@@ -102,6 +102,6 @@ export function useFindPaginated<T extends keyof EndpointToPaginatedTypeMap>(opt
       pageNo,
       lastPageNo,
       itemsPerPage,
-    },
+    }),
   };
 };

@@ -6,14 +6,14 @@
       </h1>
 
       <ResultsTablePaginator
-        :page-number="pageNo"
-        :last-page-number="lastPageNo"
-        :items-per-page="itemsPerPage || 1"
+        :page-number="paginator.pageNo || 1"
+        :last-page-number="paginator.lastPageNo || 1"
+        :items-per-page="paginator.itemsPerPage || 1"
         :total-items="data?.count || 1"
-        @first="firstPage()"
-        @next="nextPage()"
-        @prev="prevPage()"
-        @last="lastPage()"
+        @first="paginator.firstPage()"
+        @next="paginator.nextPage()"
+        @prev="paginator.prevPage()"
+        @last="paginator.lastPage()"
       />
     </div>
 
@@ -23,48 +23,12 @@
         name: 'Search Equipment',
         filterField: 'name__icontains',
       }"
-      :select-fields="[
-        {
-          name: 'Category',
-          filterField: 'category',
-          options: [
-            'Adventuring Gear',
-            'Ammunition',
-            'Armor',
-            'Drawn Vehicle',
-            'Poison',
-            'Ring',
-            'Rod',
-            'Shield',
-            'Staff',
-            'Tools',
-            'Trade Goods',
-            'Wand',
-            'Waterborne Vehicle',
-            'Weapon',
-          ].map((category) => ({
-            name: category,
-            value: category.toLowerCase().split(' ').join('-'),
-          })),
-        },
-      ]"
+      :select-fields="equipmentFilterSelectFieldsDefinition"
     />
 
     <ResultsTable
       :data="data?.results"
-      :cols="[
-        {
-          displayName: 'Name',
-          value: (data) => data.name,
-          sortValue: 'name',
-          link: (data) => `/equipment/${data.key}`,
-        },
-        {
-          displayName: 'Category',
-          value: (data) => data.category.name,
-          sortValue: 'category',
-        },
-      ]"
+      :cols="equipmentTableColumnDefinitions"
       :sort-by="sortBy"
       :is-sort-descending="isSortDescending"
       @sort="(sortValue) => setSortState(sortValue)"
@@ -73,41 +37,27 @@
 </template>
 
 <script setup lang="ts">
+import {
+  equipmentTableColumnDefinitions,
+  equipmentFilterSelectFieldsDefinition,
+  equipmentApiParams
+} from '@/helpers/resultsTableConfig';
+
 // Set up filters
 const filterState = useFilterState<{ name__icontains: string }>({
   key: 'equipment',
-  fields: {
-    name__icontains: '',
-  },
+  fields: { name__icontains: '' },
 });
 
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
-
-const fields = ['key', 'name', 'document', 'category'].join(',');
-const docFields = ['name', 'key'].join(',');
-const categoryFields = ['name'].join(',');
 
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.equipment,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   filter: filterState.debouncedFilter,
-  params: {
-    fields,
-    document__fields: docFields,
-    category__fields: categoryFields,
-    is_magic_item: false,
-  },
+  params: equipmentApiParams,
 });
 
-const {
-  pageNo,
-  lastPageNo,
-  itemsPerPage,
-  firstPage,
-  lastPage,
-  prevPage,
-  nextPage,
-} = paginator;
 </script>

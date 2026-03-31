@@ -1,0 +1,15 @@
+export const equipmentCategories = [
+  'Adventuring Gear',
+  'Ammunition',
+  'Armor',
+  'Drawn Vehicle',
+  'Poison',
+  'Ring',
+  'Rod',
+  'Shield',
+  'Tools',
+  'Trade Good',
+  'Wand',
+  'Waterborne Vehicle',
+  'Weapon',
+];
