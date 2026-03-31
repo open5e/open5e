@@ -89,7 +89,7 @@
 
 <script setup lang="ts">
 import type { SearchResult } from '@/types';
-
+import { formatSpellSubtitle } from '@/helpers';
 defineProps<{
   query: string;
   result: SearchResult;
@@ -162,7 +162,7 @@ const formatCategory = (input: SearchResult) => {
   return category; // BASE-CASE: return category without alteration
 };
 
-const formatSpellTitle = (result: SearchResult) => useFormatSpellSubtitle({
+const formatSpellTitle = (result: SearchResult) => formatSpellSubtitle({
   level: result.object?.level,
   school: result.object?.school,
 });

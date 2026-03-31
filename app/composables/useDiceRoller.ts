@@ -1,8 +1,7 @@
 import { useNotifications } from './useNotifications';
+import { formatModifier } from '@/helpers';
 
 const { addNotif } = useNotifications();
-
-const formatModifier = useFormatModifier();
 
 type UseDiceRollerOptions = {
   title?: string;

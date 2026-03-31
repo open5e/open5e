@@ -133,7 +133,7 @@
       <button
         type="button"
         class="inline-flex w-full justify-center rounded-md bg-red px-3 py-2 text-sm  font-semibold text-white shadow-sm ring-offset-2 hover:bg-blood hover:ring-2 hover:ring-red focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:col-start-2"
-        @click="saveSourceSelection()"
+        @click="saveSelection()"
       >
         Update
       </button>
@@ -145,24 +145,34 @@
 import { sortDocumentsByPublisher } from '@/helpers';
 import type { Document } from '@/types';
 
-// fetch full list of document sources
+const emit = defineEmits(['close']);
+const closeModal = () => emit('close');
+
 const { data: documents } = useDocuments({
-  fields: ['key', 'name', 'publisher', 'gamesystem'].join(','),
+  fields: ['key', 'name', 'publisher', 'gamesystem', 'type'].join(','),
   publisher__fields: ['name', 'key'].join(','),
   gamesystem__fields: ['name', 'key'].join(','),
 });
 
 const { sources, setSources, gameSystem, setGameSystem } = useSourcesList();
 
-const selectedSources = ref<string[]>([]);
-// watchEffect keeps data in sync across different instantiations of modal menu
+// Seperate SOURCE and MISC documents, only use the former in the modal menu
+// and add the later back in when updating selected sources in local memory
+
+const sourceDocuments = computed(() => (
+  documents?.value?.filter(document => document.type === 'SOURCE') ?? []
+));
+
+const miscDocuments = computed(() => (
+  documents?.value?.filter(document => document.type !== 'SOURCE') ?? []
+));
+
+// Keep selectedSources in sync with global sources state
+const selectedSources: Ref<string[]> = ref([]);
 watchEffect(() => selectedSources.value = [...sources.value]);
 
-const emit = defineEmits(['close']);
-const closeModal = () => emit('close');
-
 const allSelected = computed(() => {
-  const total = documentsInSystem.value?.length ?? 0;
+  const total = sourceDocuments.value?.length ?? 0;
   return total > 0 && selectedSources.value.length === total;
 });
 
@@ -170,9 +180,12 @@ const noneSelected = computed(() => selectedSources.value.length === 0);
 
 // filter documents by the current game system
 const documentsInSystem = computed<Document[]>(() => {
-  if (!documents.value) return [];
-  if (!currentSystem.value) return documents.value;
-  return documents.value.filter((doc) => doc.gamesystem.name === currentSystem.value);
+  if (!sourceDocuments?.value || sourceDocuments.value.length === 0) return [];
+  if (!currentSystem.value) return sourceDocuments.value;
+  return sourceDocuments.value.filter((document) => {
+    return document.gamesystem.name === currentSystem.value;
+  });
+
 });
 
 // group filtered documents by publisher
@@ -195,8 +208,12 @@ const allGameSystems = computed(() => {
   )];
 });
 
-function saveSourceSelection() {
-  setSources(selectedSources.value);
+// save current form selection to local memory
+function saveSelection() {
+  setSources([
+    ...selectedSources.value,
+    ...miscDocuments.value.map(document => document.key)
+  ]);
   setGameSystem(currentSystem.value);
   closeModal();
 }
@@ -215,7 +232,8 @@ function allPublisherSourcesInactive(publisher: string) {
 }
 
 function togglePublisher(publisher: string) {
-  allPublisherSourcesActive(publisher) ? removePublisher(publisher) : addPublisher(publisher);
+  if (allPublisherSourcesActive(publisher)) removePublisher(publisher);
+  else addPublisher(publisher);
 }
 
 // add all sources from a given publisher to allowed sources

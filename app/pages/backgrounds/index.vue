@@ -4,14 +4,14 @@
       <h1 class="my-2">Backgrounds</h1>
 
       <ResultsTablePaginator
-        :page-number="pageNo"
-        :last-page-number="lastPageNo"
-        :items-per-page="itemsPerPage || 1"
+        :page-number="paginator.pageNo || 1"
+        :last-page-number="paginator.lastPageNo || 1"
+        :items-per-page="paginator.itemsPerPage || 1"
         :total-items="data?.count || 1"
-        @first="firstPage()"
-        @next="nextPage()"
-        @prev="prevPage()"
-        @last="lastPage()"
+        @first="paginator.firstPage()"
+        @next="paginator.nextPage()"
+        @prev="paginator.prevPage()"
+        @last="paginator.lastPage()"
       />
     </div>
 
@@ -25,14 +25,7 @@
 
     <ResultsTable
       :data="data?.results"
-      :cols="[
-        {
-          displayName: 'Name',
-          value: (data) => data.name,
-          sortValue: 'name',
-          link: (data) => `/backgrounds/${data.key}`,
-        }
-      ]"
+      :cols="backgroundTableColumnDefinitions"
       :sort-by="sortBy"
       :is-sort-descending="isSortDescending"
       @sort="(sortValue) => setSortState(sortValue)"
@@ -41,38 +34,26 @@
 </template>
 
 <script setup lang="ts">
+import {
+  backgroundApiParams,
+  backgroundTableColumnDefinitions
+} from '@/helpers/resultsTableConfig';
+
 // Set up filters
 const filterState = useFilterState<{ name__icontains: string }>({
   key: 'backgrounds',
-  fields: {
-    name__icontains: '',
-  },
+  fields: { name__icontains: '' },
 });
 
 // State handlers for sorting results table
 const { sortBy, isSortDescending, setSortState } = useSortState();
-
-const fields = ['key', 'name', 'document'].join(',');
-const docFields = ['name', 'key'].join(',');
 
 const { data, paginator } = useFindPaginated({
   endpoint: API_ENDPOINTS.backgrounds,
   sortByProperty: sortBy,
   isSortDescending: isSortDescending,
   filter: filterState.debouncedFilter,
-  params: {
-    fields,
-    document__fields: docFields,
-  },
+  params: backgroundApiParams,
 });
 
-const {
-  pageNo,
-  lastPageNo,
-  itemsPerPage,
-  firstPage,
-  lastPage,
-  prevPage,
-  nextPage,
-} = paginator;
 </script>

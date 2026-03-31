@@ -1,9 +1,7 @@
-import { sortDocumentsByPublisher } from './sortDocumentsByPublisher';
-import { parseChallengeRating } from './parseChallengeRating';
-import { titleCaseToKebabCase } from './titleCaseToKebabCase';
+export { formatModifier } from './formatModifier';
+export { formatSpellSubtitle } from './formatSpellSubtitle';
+export { sortDocumentsByPublisher } from './sortDocumentsByPublisher';
+export { parseChallengeRating } from './parseChallengeRating';
+export { titleCaseToKebabCase } from './titleCaseToKebabCase';
 
-export {
-  sortDocumentsByPublisher,
-  parseChallengeRating,
-  titleCaseToKebabCase,
-};
+export * from './resultsTableConfig';

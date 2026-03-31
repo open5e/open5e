@@ -5,14 +5,14 @@
       
       <ResultsTablePaginator
         class="w-min-content w-full"
-        :page-number="pageNo"
-        :last-page-number="lastPageNo"
-        :items-per-page="itemsPerPage || 1"
+        :page-number="paginator.pageNo || 1"
+        :last-page-number="paginator.lastPageNo || 1"
+        :items-per-page="paginator.itemsPerPage || 1"
         :total-items="data?.count || 1"
-        @first="firstPage()"
-        @next="nextPage()"
-        @prev="prevPage()"
-        @last="lastPage()"
+        @first="paginator.firstPage()"
+        @next="paginator.nextPage()"
+        @prev="paginator.prevPage()"
+        @last="paginator.lastPage()"
       />
     </div>
 
@@ -27,14 +27,7 @@
     <ResultsTable
       endpoint="classes"
       :data="data?.results"
-      :cols="[
-        {
-          displayName: 'Class',
-          value: (data) => data.name,
-          sortValue: 'name',
-          link: (data) => `/classes/${data.key}`,
-        },
-      ]"
+      :cols="classTableColumnDefinitions"
       :sort-by="sortBy"
       @sort="(sortValue) => setSortState(sortValue)"
     />
@@ -42,6 +35,11 @@
 </template>
 
 <script setup lang="ts">
+import {
+  classesApiParams,
+  classTableColumnDefinitions,
+} from '@/helpers/resultsTableConfig';
+
 // Set up filters
 const filterState = useFilterState<{ name__contains: string }>({
   key: 'classes',
@@ -57,21 +55,6 @@ const { data, paginator } = useFindPaginated({
   sortByProperty: sortBy,
   isSortDescending: isSortDescending ?? true,
   filter: filterState.debouncedFilter,
-  params: {
-    is_subclass: false,
-    fields: ['key', 'name', 'document'].join(),
-    document__fields: ['name', 'key'].join(),
-  },
+  params: classesApiParams,
 });
-
-// destructure pagination controls
-const {
-  pageNo,
-  lastPageNo,
-  itemsPerPage,
-  firstPage,
-  lastPage,
-  prevPage,
-  nextPage,
-} = paginator;
 </script>

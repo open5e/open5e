@@ -1,4 +1,5 @@
 import type { components } from './open5e-api';
+export * from './filters';
 
 // export basic data types returned by Open5e API
 export type Background = components['schemas']['Background'];
@@ -54,3 +55,13 @@ export type SearchObjectPayload = {
   school?: string;
   level?: number;
 }
+
+// type interface for the `cols` prop
+export interface TableColumn<T extends Open5eData> {
+  displayName: string;
+  value: (data: T) => string | number | boolean;
+  sortValue?: string;
+  link?: (data: T) => string;
+  isLeastPriority?: boolean;
+  customTemplate?: (data: T) => { render: () => VNode };
+};

@@ -4,9 +4,8 @@
  * API. Used on top-level pages where lists of results can be viewed.
  *
  * -= PROPS (INPUTS) =-
- * @prop {Object} data - API data to display
- * @prop {Number} [itemsPerPage=50] - The number of API results to display per page
- * @prop {Array} col - Array of column definitions, each containing:
+ * @prop {Open5eData[]} data - API data to display
+ * @prop {TableColumn<T>[]} col - Array of column definitions, each containing:
  *   @property {String} field - The field name (used for sorting)
  *   @property {String} displayName - The name to display in the column header
  * @prop {String} [sortBy="name"] – The column to sort by (compares against col.field)
@@ -40,6 +39,7 @@
             :is-sort-descending="isSortDescending"
             @sort="onSort(col.sortValue)"
           />
+          <th v-if="$slots.actions" />
         </tr>
       </thead>
       <tbody v-if="data && data.length > 0">
@@ -48,7 +48,11 @@
           :key="item.key"
           :data="item"
           :cols="cols"
-        />
+        >
+          <template v-if="$slots.actions" #actions="slotProps">
+            <slot name="actions" v-bind="slotProps" />
+          </template>
+        </ResultsTableRow>
       </tbody>
       <tbody v-else-if="data">
         <tr>
@@ -65,7 +69,7 @@
 </template>
 
 <script setup lang="ts" generic="T extends Open5eData & { document?: DocumentSummary}">
-import type { DocumentSummary, Open5eData } from '@/types';
+import type { DocumentSummary, Open5eData, TableColumn } from '@/types';
 
 // generic props interface that works with any API endpoint
 interface ResultsTableProps<T extends Open5eData> {
@@ -75,16 +79,6 @@ interface ResultsTableProps<T extends Open5eData> {
   isSortDescending?: boolean  // sort direction
   isLoading?: boolean         // load state
   error?: Error | null        // error state
-};
-
-// type interface for the `cols` prop
-interface TableColumn<T extends Open5eData> {
-  displayName: string;
-  value: (data: T) => string | number | boolean;
-  sortValue?: string;
-  link?: (data: T) => string;
-  isLeastPriority?: boolean;
-  customTemplate?: (data: T) => { render: () => VNode };
 };
 
 // define component props using inferred types

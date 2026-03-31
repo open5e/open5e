@@ -29,8 +29,9 @@ const setGameSystem = (input: string) => {
 
 // Overwrite all sources, update local storage
 export const setSources = (sources: string[]) => {
-  _sources.value = sources;
-  writeSourcesToLocalStorage(sources);
+  const dedupedSources = [...new Set(sources)];
+  _sources.value = dedupedSources;
+  writeSourcesToLocalStorage(dedupedSources);
 };
 
 export const read_only_source_list = computed(() => _sources.value);
