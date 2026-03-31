@@ -2052,6 +2052,13 @@ export interface components {
              * @enum {string|null}
              */
             weight_unit?: 'feet' | 'miles' | '' | null;
+            /**
+             * @description Whether this Document is a published data source, or general resources.
+             *     * `SOURCE` - Source
+             *     * `MISC` - Miscellaneous
+             *  @enum {string|null}
+             */
+            type?: 'SOURCE' | 'MISC' | '' | null;
         };
         /**
          * @description A slimmer DocumentSerializer, designed to serialize Documents FKs on other
