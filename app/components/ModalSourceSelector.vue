@@ -146,7 +146,11 @@ import { sortDocumentsByPublisher } from '@/helpers';
 import type { Document } from '@/types';
 
 const emit = defineEmits(['close']);
-const closeModal = () => emit('close');
+const closeModal = () => {
+  // reset menu state to current active sources after closing animation finishes
+  setTimeout(() => selectedSources.value = [...sources.value], 500);
+  emit('close');
+};
 
 const { data: documents } = useDocuments({
   fields: ['key', 'name', 'publisher', 'gamesystem', 'type'].join(','),
