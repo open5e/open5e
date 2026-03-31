@@ -23,11 +23,11 @@
     <section class="my-4">
       <p class="my-0 grid grid-cols-[10rem,_1fr]">
         <span class="font-bold">Casting Time: </span>
-        <span class="capitalize">{{ spell.casting_time }}</span>
+        <span>{{ formatCastingTime(spell) }}</span>
       </p>
       <p class="my-0 grid grid-cols-[10rem,_1fr]">
         <span class="font-bold">Range: </span>
-        <span class="capitalize">{{ spell.range_text }}</span>
+        <span>{{ spell.range_text }}</span>
       </p>
       <p class="my-0 grid grid-cols-[10rem,_1fr]">
         <span class="font-bold">Duration: </span>
@@ -79,10 +79,24 @@
 </template>
 
 <script setup lang="ts">
+import type { Spell } from '@/types';
 const spellId = useQueryParameter('id'); 
 const { data: spell } = useFindOne(API_ENDPOINTS.spells, spellId);
 
 usePageMetadata({ title: computed(() => spell.value?.name) });
+
+function formatCastingTime(spell: Spell) {
+  const { casting_time, reaction_condition } = spell;
+  
+  const formattedTitle = casting_time
+    .split('-').join(' ') // rmv '-' from 'bonus-action'
+    .replace(/(\d+)([a-zA-Z]+)/, '$1 $2') // insert space into '1hour', etc.
+    .replace(/^./, casting_time[0].toUpperCase());
+    
+  if (reaction_condition) return `${formattedTitle}, ${reaction_condition}`;
+
+  return formattedTitle;
+}
 
 function formatComponents(verbal?: boolean, somatic?: boolean, material?: boolean) {
   return [
