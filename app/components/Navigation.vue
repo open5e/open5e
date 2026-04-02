@@ -103,14 +103,14 @@ const paths = [
     sectionTitle: 'Open5e Documents',
     pages: [
       {
-        title: 'Sources',
-        path: '/sources',
-        icon: 'game-icons:bookmark',
-      },
-      {
-        title: 'API Docs',
+        title: 'API Overview',
         path: '/api-docs',
         icon: 'majesticons:curly-braces'
+      },
+      {
+        title: 'Data Sources',
+        path: '/sources',
+        icon: 'game-icons:bookmark',
       },
     ],
   }
