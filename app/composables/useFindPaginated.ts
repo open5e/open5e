@@ -69,7 +69,9 @@ export function useFindPaginated<T extends keyof EndpointToPaginatedTypeMap>(opt
 
   // Prefetch next page when data changes
   watch(data, () => {
-    if (!data.value || pageNo.value === lastPageNo.value ) return;
+    if (!data.value) return;
+    // Early return when there is no next page. This avoids 404 errors
+    if (data.value.count === 0 || pageNo.value === lastPageNo.value) return;
     const nextPageNo = pageNo.value + 1;
     queryClient.prefetchQuery({
       queryKey: [...queryKey, nextPageNo],
