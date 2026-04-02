@@ -10,6 +10,6 @@ export const rulesTableColumnDefinitions: TableColumn<RuleSet>[] = [
     displayName: 'Name',
     value: (data) => data.name,
     sortValue: 'name',
-    link: (data) => `/species/${data.key}`,
+    link: (data) => `/rules/${data.key}`,
   }
 ];
