@@ -1,9 +1,11 @@
 import { computed, ref } from 'vue';
 
+const defaultSources = ['srd-2014', 'srd-2024', 'core', 'elderberry-inn-icons'];
+
 function loadSourcesFromLocalStorage(): string[] {
-  if (!import.meta.client) return []; // skip on server
+  if (!import.meta.client) return []; // skip on server (no lcoal storage)
   const saved_sources = localStorage.getItem('sources');
-  return saved_sources ? JSON.parse(saved_sources) : ['srd-2014', 'srd-2024'];
+  return saved_sources ? JSON.parse(saved_sources) : defaultSources;
 }
 
 function writeSourcesToLocalStorage(sourcesList: string[]) {
@@ -44,3 +46,4 @@ export const useSourcesList = () => ({
   setGameSystem,
   setSources,
 });
+
