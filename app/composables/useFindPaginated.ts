@@ -64,18 +64,18 @@ export function useFindPaginated<T extends keyof EndpointToPaginatedTypeMap>(opt
   });
 
   const lastPageNo = computed(() => {
-    return data.value ? Math.ceil(data.value.count / unref(itemsPerPage)) : 1;
+    return data.value?.count ? Math.ceil(data.value.count / unref(itemsPerPage)) : 1;
   });
 
   // Prefetch next page when data changes
   watch(data, () => {
-    if (!data.value || pageNo.value === lastPageNo.value ) return;
+    if (!data.value || pageNo.value === lastPageNo.value) return;
     const nextPageNo = pageNo.value + 1;
     queryClient.prefetchQuery({
       queryKey: [...queryKey, nextPageNo],
       queryFn: () => findPaginated(createQueryParams(unref(nextPageNo))),
     });
-});
+  });
 
   // pagination controls
   const nextPage = () => {
