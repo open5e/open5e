@@ -1,6 +1,3 @@
-import { defineNuxtConfig } from 'nuxt/config';
-
-
 export default defineNuxtConfig({
   srcDir: 'app/',
   dir: {
@@ -54,6 +51,10 @@ export default defineNuxtConfig({
     },
   },
 
+  vue: {
+    runtimeCompiler: true
+  },
+
   nitro: {
     preset: 'digital-ocean',
     publicAssets: [
@@ -77,20 +78,6 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiUrl: process.env.API_URL || 'https://api.open5e.com',
-    },
-  },
-
-  hooks: {
-    'vite:extendConfig': (config, { isClient }) => {
-      if (isClient) {
-        config.resolve = config.resolve || {};
-        config.resolve.alias = {
-          ...(Array.isArray(config.resolve.alias)
-            ? Object.fromEntries(config.resolve.alias.map(a => [a.find, a.replacement]))
-            : config.resolve.alias),
-          vue: 'vue/dist/vue.esm-bundler.js',
-        };
-      }
     },
   },
 
