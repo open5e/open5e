@@ -46,6 +46,48 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    '/v2/magicitems/': {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * @description list: API endpoint for returning a list of items.
+         *
+         *     retrieve: API endpoint for returning a particular item.
+         */
+        get: operations['items_list'];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    '/v2/magicitems/{key}/': {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * @description list: API endpoint for returning a list of items.
+         *
+         *     retrieve: API endpoint for returning a particular item.
+         */
+        get: operations['items_retrieve'];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     '/v2/itemsets/': {
         parameters: {
             query?: never;
@@ -2225,7 +2267,6 @@ export interface components {
             /** @description Description of the game content item. Markdown. */
             desc?: string;
             category: components['schemas']['ItemCategorySummary'];
-            rarity: components['schemas']['ItemRarity'];
             readonly is_magic_item: boolean;
             weapon: components['schemas']['WeaponSummary'];
             armor: components['schemas']['ArmorSummary'];
@@ -2242,7 +2283,6 @@ export interface components {
              */
             cost?: string | null;
             /** @description If the item requires attunement. */
-            requires_attunement?: boolean;
             document: components['schemas']['DocumentSummary'];
         };
         /**
@@ -2377,6 +2417,40 @@ export interface components {
             key: string;
             /** Format: uri */
             readonly url: string;
+        };
+        /**
+         * @description Much of the logic included in the GameContentSerializer is intended to
+         *     support manipulating data returned by the serializer via query parameters.
+         */
+        MagicItem: {
+            /** Format: uri */
+            readonly url: string;
+            /** @description Unique key for the Item. */
+            readonly key: string;
+            /** @description Name of the item. */
+            name: string;
+            /** @description Description of the game content item. Markdown. */
+            desc?: string;
+            category: components['schemas']['ItemCategorySummary'];
+            rarity: components['schemas']['ItemRarity'];
+            readonly is_magic_item: boolean;
+            weapon: components['schemas']['WeaponSummary'];
+            armor: components['schemas']['ArmorSummary'];
+            size: components['schemas']['SizeSummary'];
+            /**
+             * Format: decimal
+             * @description Number representing the weight of the object.
+             */
+            weight?: string;
+            readonly weight_unit: string;
+            /**
+             * Format: decimal
+             * @description Number representing the cost of the object.
+             */
+            cost?: string | null;
+            /** @description If the item requires attunement. */
+            requires_attunement?: boolean;
+            document: components['schemas']['DocumentSummary'];
         };
         PaginatedAbilityList: {
             /** @example 123 */
@@ -2632,6 +2706,21 @@ export interface components {
              */
             previous?: string | null;
             results: components['schemas']['Item'][];
+        };
+        PaginatedMagicItemList: {
+            /** @example 123 */
+            count: number;
+            /**
+             * Format: uri
+             * @example http://api.example.org/accounts/?page=4
+             */
+            next?: string | null;
+            /**
+             * Format: uri
+             * @example http://api.example.org/accounts/?page=2
+             */
+            previous?: string | null;
+            results: components['schemas']['MagicItem'][];
         };
         PaginatedItemRarityList: {
             /** @example 123 */
