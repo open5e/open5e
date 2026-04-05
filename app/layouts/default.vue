@@ -18,7 +18,7 @@
         class="w-screen flex-1 overflow-hidden bg-white pl-2 transition-transform dark:bg-darkness sm:p-0 sm:transition-none"
         :class="isNavbarVisible ? 'translate-x-56 sm:translate-x-0' : ''"
       >
-        <div class="content-wrapper h-full overflow-y-auto  overflow-x-hidden  text-darkness dark:text-white">
+        <div class="content-wrapper h-full overflow-y-auto  overflow-x-hidden">
 
           <!-- Site Header: Mobile -->
           <header class="flex justify-between sm:hidden">
@@ -42,7 +42,7 @@
 
           <!-- Main content -->
           <nuxt-page
-            class="main-content pt-auto ml-0 mr-1 shrink-0 grow  p-4 text-darkness dark:text-white sm:px-8"
+            class="main-content pt-auto ml-0 mr-1 shrink-0 grow  p-4 sm:px-8"
           />
         </div>
       </div>

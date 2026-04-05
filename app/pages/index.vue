@@ -37,8 +37,8 @@
       open-source on Github! Join us as a contributor and help develop new
       features and tools.
     </p>
-    <div class="side-note">
-      <h3>Hey! Stuff is missing!</h3>
+    <div class="right-3 m-2 block w-full border border-blue-600 bg-blue-100 p-2 text-blue-900 dark:border-smoke dark:bg-basalt dark:text-white md:sticky md:float-right md:w-80 xl:right-8">
+      <h3 class="mt-0">Hey! Stuff is missing!</h3>
       <p>
         Some content you may be expecting was not released as part of the 5e
         SRD, so we aren’t allowed to include it in this site.
