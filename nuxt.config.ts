@@ -1,5 +1,3 @@
-import { defineNuxtConfig } from 'nuxt/config';
-
 export default defineNuxtConfig({
   srcDir: 'app/',
   dir: {
@@ -51,6 +49,10 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+
+  vue: {
+    runtimeCompiler: true
   },
 
   nitro: {
