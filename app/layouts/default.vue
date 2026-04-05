@@ -15,7 +15,7 @@
 
       <!-- Page central column -->
       <div 
-        class="w-screen flex-1 overflow-hidden bg-white pl-2 transition-transform dark:bg-darkness sm:p-0 sm:transition-none"
+        class="w-screen flex-1 overflow-hidden bg-white pl-2 text-charcoal transition-transform dark:bg-darkness dark:text-white sm:p-0 sm:transition-none"
         :class="isNavbarVisible ? 'translate-x-56 sm:translate-x-0' : ''"
       >
         <div class="content-wrapper h-full overflow-y-auto  overflow-x-hidden">
