@@ -13,7 +13,7 @@ export const API_ENDPOINTS = {
   conditions: 'v2/conditions/',
   documents: 'v2/documents/',
   feats: 'v2/feats/',
-  magicitems: 'v2/items/',
+  magicitems: 'v2/magicitems/',
   monsters: 'v2/creatures/',
   search: 'v2/search/',
   species: 'v2/species/',
@@ -31,6 +31,7 @@ export interface EndpointToFindOneTypeMap {
   'v2/feats/': Schemas['Feat'];
   'v2/creatures/': Schemas['Creature'];
   'v2/items/': Schemas['Item'];
+  'v2/magicitems/': Schemas['MagicItem'];
   'v2/search/': Schemas['SearchResult'];
   'v2/species/': Schemas['Species'];
   'v2/spells/': Schemas['Spell'];
@@ -44,6 +45,7 @@ export interface EndpointToFindManyTypeMap {
   'v2/conditions/': Schemas['Condition'][];
   'v2/documents/': Schemas['Document'][];
   'v2/feats/': Schemas['Feat'][];
+  'v2/magicitems': Schemas['MagicItem'][]
   'v2/creatures/': Schemas['Creature'][];
   'v2/items/': Schemas['Item'][];
   'v2/search/': Schemas['SearchResult'][];
@@ -60,6 +62,7 @@ export interface EndpointToPaginatedTypeMap {
   'v2/documents/': Schemas['PaginatedDocumentList'];
   'v2/feats/': Schemas['PaginatedFeatList'];
   'v2/items/': Schemas['PaginatedItemList'];
+  'v2/magicitems/': Schemas['PaginatedMagicItemList'];
   'v2/creatures/': Schemas['PaginatedCreatureList'];
   'v2/search/': Schemas['PaginatedSearchResultList'];
   'v2/species/': Schemas['PaginatedSpeciesList'];
