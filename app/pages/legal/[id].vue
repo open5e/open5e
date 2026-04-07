@@ -8,5 +8,5 @@
 <script setup lang="ts">
 const licenseId = useQueryParameter('id');
 const { data: license } = useFindOne(API_ENDPOINTS.licenses, licenseId);
-usePageMetadata({ title: computed(() => license.value?.name) });
+useSeoMeta({ title: () => `${license.value?.name} | Open5e` });
 </script>

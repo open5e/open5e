@@ -49,7 +49,7 @@ const { data: condition } = useFindOne(API_ENDPOINTS.conditions, conditionId,
   },
 );
 
-usePageMetadata({ title: computed(() => condition.value?.name) });
+useSeoMeta({ title: () => `${condition.value?.name} | Open5e` });
 
 // generate source key from page URL - for use with source-tab cmpnt
 const sourceKey = computed(() => {

@@ -76,7 +76,7 @@ const { data: background } = useFindOne(
   backgroundId,
 );
 
-usePageMetadata({ title: computed(() => background.value?.name) });
+useSeoMeta({ title: () => `${background.value?.name} | Open5e` });
 
 // sort benefits into different sections
 // different sections will be rendered to different parts of the page

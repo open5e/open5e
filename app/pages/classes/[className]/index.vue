@@ -136,7 +136,7 @@ const { data: classData } = useFindOne(API_ENDPOINTS.classes, classId,
   },
 );
 
-usePageMetadata({ title: computed(() => classData.value?.name) });
+useSeoMeta({ title: () => `${classData.value?.name} | Open5e` });
 
 // fetch subclasses to generate links
 const { data: subclasses } = useFindMany(API_ENDPOINTS.classes, {

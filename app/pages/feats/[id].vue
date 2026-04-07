@@ -38,7 +38,7 @@ const { data: feat } = useFindOne(API_ENDPOINTS.feats, featId, {
   },
 });
 
-usePageMetadata({ title: computed(() => feat.value?.name) });
+useSeoMeta({ title: () => `${feat.value?.name} | Open5e` });
 
 // generate source key from page URL - for use with source-tag cmpnt
 const sourceKey = computed(() => {

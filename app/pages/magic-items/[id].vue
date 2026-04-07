@@ -38,5 +38,5 @@
 <script setup lang="ts">
 const itemId = useQueryParameter('id');
 const { data: item } = useFindOne(API_ENDPOINTS.magicitems, itemId);
-usePageMetadata({ title: computed(() => item.value?.name) });
+useSeoMeta({ title: () => `${item.value?.name} | Open5e` });
 </script>

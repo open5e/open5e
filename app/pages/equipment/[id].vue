@@ -121,7 +121,7 @@ const itemId = useQueryParameter('id');
 const params = { 'is_magic_item': 'false' };
 const { data: item } = useFindOne(API_ENDPOINTS.equipment, itemId, { params });
 
-usePageMetadata({ title: computed(() => item.value?.name) });
+useSeoMeta({ title: () => `${item.value?.name} | Open5e` });
 
 const formatCost = (input: string) => {
   if (!input) return '';

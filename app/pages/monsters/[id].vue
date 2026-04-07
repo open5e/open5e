@@ -288,7 +288,7 @@ const { data: monster } = useFindOne(
   { params },
 );
 
-usePageMetadata({ title: computed(() => monster.value?.name) });
+useSeoMeta({ title: () => `${monster.value?.name} | Open5e` });
 
 // Calculate initiative bonus from dexterity modifier if not explicitly set
 const initiativeBonus = computed(() => {

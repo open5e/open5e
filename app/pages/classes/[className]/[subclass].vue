@@ -50,7 +50,7 @@ const { data: subclassData } = useFindOne(API_ENDPOINTS.classes, subclassId,
   },
 );
 
-usePageMetadata({ title: computed(() => subclassData.value?.name) });
+useSeoMeta({ title: () => `${subclassData.value?.name} | Open5e` });
 
 const features = computed(() => {
   const features = subclassData.value?.features;
