@@ -25,30 +25,31 @@
       </div>
     </div>
 
-    <img
-      v-if="monster.illustration"
-      :src="monster.illustration.file_url"
-      :alt="monster.illustration.alt_text"
-      class="img-main"
-    />
-    <p class="italic">
+    <p class="mt-0 italic">
       <span>{{ `${monster.size.name} ${monster.type.name}` }}</span>
-
+      
       <span v-if="monster.subcategory">
         {{ ' ' + `(${monster.subcategory})` }}
       </span>
-
+      
       <span v-if="monster.alignment">
         {{ ', ' + monster.alignment }}
       </span>
       
       <span>{{ ' ' }}</span>
-
+      
       <SourceTag
-        :title="monster.document.name"
+      :title="monster.document.name"
         :text="monster.document.key"
       />
     </p>
+
+    <img
+      v-if="monster.illustration"
+      :src="illustrationUrl"
+      :alt="monster.illustration.alt_text"
+      class="bg-fog  p-2"
+    />
 
     <table class="table-auto border-none text-base">
       <tbody class="[&>*>*]:border-none [&>*]:border-none">
@@ -338,6 +339,11 @@ const snakeToTitleCase = (input: string) =>
     .map(word => word[0].toUpperCase() + word.substring(1))
     .join(' ');
 
+const illustrationUrl = computed(() => {
+  if (!monster.value?.illustration) return;
+  return useRuntimeConfig().public.apiUrl + monster.value.illustration.file_url;
+});
+
 // Format monster speeds for template
 const speeds = computed(() => {
   if (!monster?.value?.speed) return '';
@@ -417,18 +423,3 @@ const removeFromEncounter = () => {
   encounterStore.removeMonster(monster.value.key);
 };
 </script>
-
-<style scoped lang="scss">
-.img-main {
-  float: right;
-  width: 30%;
-  min-width: 300px;
-}
-
-@media screen and (max-width: 600px) {
-  .img-main {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
