@@ -48,7 +48,7 @@
       v-if="monster.illustration"
       :src="illustrationUrl"
       :alt="monster.illustration.alt_text"
-      class="bg-fog  p-2"
+      class="w-full max-w-[720px] bg-fog p-2"
     />
 
     <table class="table-auto border-none text-base">
