@@ -38,6 +38,8 @@
 </template>
 
 <script setup lang="ts">
+import type { Class } from '@/types';
+
 const subclassId = useQueryParameter('subclass');
 const baseClassId = useQueryParameter('className');
 const { data: subclassData } = useFindOne(API_ENDPOINTS.classes, subclassId,
@@ -50,8 +52,9 @@ const { data: subclassData } = useFindOne(API_ENDPOINTS.classes, subclassId,
   },
 );
 
-useSeoMeta({ title: () => `${subclassData.value?.name} | Open5e` });
+useSeoEntry(subclassData as Ref<Class>);
 
+useBreadcrumbs();
 const features = computed(() => {
   const features = subclassData.value?.features;
   if (!features) return [];

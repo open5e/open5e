@@ -115,13 +115,13 @@
 </template>
 
 <script setup lang="ts">
-import type { WeaponSummary } from '@/types';
+import type { Item, WeaponSummary } from '@/types';
 
 const itemId = useQueryParameter('id');
 const params = { 'is_magic_item': 'false' };
 const { data: item } = useFindOne(API_ENDPOINTS.equipment, itemId, { params });
 
-useSeoMeta({ title: () => `${item.value?.name} | Open5e` });
+useSeoEntry(item as Ref<Item>);
 
 const formatCost = (input: string) => {
   if (!input) return '';

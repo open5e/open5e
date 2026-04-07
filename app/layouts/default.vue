@@ -90,9 +90,6 @@ const hideSidebars = () => {
   isEncounterVisible.value = false;
 };
 
-const url = useRequestURL();
-useSeoMeta({ ogUrl: url.href });
-
 </script>
 
 <style>

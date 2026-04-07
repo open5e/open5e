@@ -52,6 +52,8 @@ import {
   monsterFilterDefaults,
 } from '@/helpers/resultsTableConfig';
 
+useSeoIndex({ title: 'Monsters' });
+
 const filterState = useFilterState<MonsterFilterState>({
   key: 'monsters',
   fields: monsterFilterDefaults,

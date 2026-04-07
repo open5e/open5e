@@ -36,7 +36,10 @@
 </template>
 
 <script setup lang="ts">
+import type { MagicItem } from '@/types';
+
 const itemId = useQueryParameter('id');
 const { data: item } = useFindOne(API_ENDPOINTS.magicitems, itemId);
-useSeoMeta({ title: () => `${item.value?.name} | Open5e` });
+
+useSeoEntry(item as Ref<MagicItem>);
 </script>

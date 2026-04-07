@@ -271,7 +271,7 @@
 </template>
 
 <script setup lang="ts">
-import type { CreatureAction } from '@/types';
+import type { Creature, CreatureAction } from '@/types';
 import { formatModifier } from '@/helpers';
 
 const rollDice = useDiceRoller();
@@ -288,7 +288,7 @@ const { data: monster } = useFindOne(
   { params },
 );
 
-useSeoMeta({ title: () => `${monster.value?.name} | Open5e` });
+useSeoEntry(monster as Ref<Creature>);
 
 // Calculate initiative bonus from dexterity modifier if not explicitly set
 const initiativeBonus = computed(() => {

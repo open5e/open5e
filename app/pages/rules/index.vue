@@ -39,6 +39,8 @@ import {
   rulesTableColumnDefinitions,
 } from '@/helpers/resultsTableConfig';
 
+useSeoIndex({ title: 'Rules' });
+
 // Set up filters
 const filterState = useFilterState<{ name__contains: string }>({
   key: 'rules',

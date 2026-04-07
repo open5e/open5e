@@ -39,6 +39,8 @@ import {
   featTableColumnDefinitions,
 } from '@/helpers/resultsTableConfig';
 
+useSeoIndex({ title: 'Feats' });
+
 // Set up filters
 const filterState = useFilterState<{ name__icontains: string }>({
   key: 'feats',

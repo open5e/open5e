@@ -40,6 +40,8 @@ import {
   classTableColumnDefinitions,
 } from '@/helpers/resultsTableConfig';
 
+useSeoIndex({ title: 'Classes'});
+
 // Set up filters
 const filterState = useFilterState<{ name__contains: string }>({
   key: 'classes',

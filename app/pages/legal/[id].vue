@@ -6,7 +6,10 @@
 </template>
 
 <script setup lang="ts">
+import type { License } from '@/types';
+
 const licenseId = useQueryParameter('id');
 const { data: license } = useFindOne(API_ENDPOINTS.licenses, licenseId);
-useSeoMeta({ title: () => `${license.value?.name} | Open5e` });
+
+useSeoEntry(license as Ref<License>);
 </script>

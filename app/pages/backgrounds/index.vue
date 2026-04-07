@@ -39,6 +39,8 @@ import {
   backgroundTableColumnDefinitions
 } from '@/helpers/resultsTableConfig';
 
+useSeoIndex({ title: 'Backgrounds' });
+
 // Set up filters
 const filterState = useFilterState<{ name__icontains: string }>({
   key: 'backgrounds',
