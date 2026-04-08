@@ -39,9 +39,11 @@
 </template>
 
 <script setup lang="ts">
+import type { Document } from '@/types';
+
 const documentId = useQueryParameter('id');
 const { data: document } = useFindOne(API_ENDPOINTS.documents, documentId);
 
-usePageMetadata({ title: computed(() => document.value?.name) });
+useSeoEntry(document as Ref<Document>);
 
 </script>

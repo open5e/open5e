@@ -39,6 +39,8 @@ import {
   conditionTableColumnDefinitions,
 } from '@/helpers/resultsTableConfig';
 
+useSeoIndex({ title: 'Conditions' });
+
 // Set up filters
 const filterState = useFilterState<{ name__contains: string }>({
   key: 'conditions',

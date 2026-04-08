@@ -36,6 +36,8 @@
 <script setup lang="ts">
 import { speciesApiParams, speciesTableColumnDefinitions } from '@/helpers';
 
+useSeoIndex({ title: 'Species' });
+
 // Set up filters
 const filterState = useFilterState<{ name__icontains: string }>({
   key: 'species',

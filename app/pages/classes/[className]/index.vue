@@ -122,7 +122,7 @@
 </template>
 
 <script setup lang="ts">
-import type { ClassFeature } from '@/types';
+import type { ClassFeature, Class } from '@/types';
 import { titleCaseToKebabCase } from '@/helpers';
 
 const classId = useQueryParameter('className');
@@ -136,7 +136,7 @@ const { data: classData } = useFindOne(API_ENDPOINTS.classes, classId,
   },
 );
 
-usePageMetadata({ title: computed(() => classData.value?.name) });
+useSeoEntry(classData as Ref<Class>);
 
 // fetch subclasses to generate links
 const { data: subclasses } = useFindMany(API_ENDPOINTS.classes, {

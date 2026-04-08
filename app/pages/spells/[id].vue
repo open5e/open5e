@@ -83,7 +83,7 @@ import type { Spell } from '@/types';
 const spellId = useQueryParameter('id'); 
 const { data: spell } = useFindOne(API_ENDPOINTS.spells, spellId);
 
-usePageMetadata({ title: computed(() => spell.value?.name) });
+useSeoEntry(spell as Ref<Spell>);
 
 function formatCastingTime(spell: Spell) {
   const { casting_time, reaction_condition } = spell;

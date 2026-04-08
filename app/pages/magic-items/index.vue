@@ -46,6 +46,8 @@ import {
   magicItemTableColumnDefinitions,
 } from '@/helpers/resultsTableConfig';
 
+useSeoIndex({ title: 'Magic Items' });
+
 // Set up filters
 const filterState = useFilterState<MagicItemFilterState>({
   key: 'magicItems',

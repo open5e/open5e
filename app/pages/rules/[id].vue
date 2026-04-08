@@ -16,8 +16,9 @@
 </template>
 
 <script setup lang="ts">
+import type { RuleSet } from '@/types';
 const ruleId = useQueryParameter('id');
 const { data: ruleset } = useFindOne(API_ENDPOINTS.rules, ruleId);
-usePageMetadata({ title: computed(() => ruleset.value?.name) });
 
+useSeoEntry(ruleset as Ref<RuleSet>);
 </script>

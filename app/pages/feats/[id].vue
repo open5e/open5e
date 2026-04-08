@@ -31,6 +31,8 @@
 </template>
 
 <script setup lang="ts">
+import type { Feat } from '~/types';
+
 const featId = useQueryParameter('id');
 const { data: feat } = useFindOne(API_ENDPOINTS.feats, featId, {
   params: {
@@ -38,7 +40,7 @@ const { data: feat } = useFindOne(API_ENDPOINTS.feats, featId, {
   },
 });
 
-usePageMetadata({ title: computed(() => feat.value?.name) });
+useSeoEntry(feat as Ref<Feat>);
 
 // generate source key from page URL - for use with source-tag cmpnt
 const sourceKey = computed(() => {
