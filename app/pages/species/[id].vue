@@ -71,13 +71,14 @@
 </template>
 
 <script setup lang="ts">
+import type { Species } from '~/types';
+
 const speciesId = useQueryParameter('id');
 const { data: species } = useFindOne(API_ENDPOINTS.species, speciesId, {
   params: { subspecies_of__isnull: 'true' },
 });
 
-usePageMetadata({ title: computed(() => species.value?.name) });
-
+useSeoEntry(species as Ref<Species>);
 
 const { data: subspecies } = useFindMany(API_ENDPOINTS.species, {
   subspecies_of__key__in: speciesId,

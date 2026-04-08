@@ -46,6 +46,8 @@ import {
   spellTableColumnDefinitions,
 } from '@/helpers/resultsTableConfig';
 
+useSeoIndex({ title: 'Spells' });
+
 // Set up filters
 const filterState = useFilterState<SpellFilterState>({
   key: 'spells',

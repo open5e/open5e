@@ -46,4 +46,5 @@
 import type { Document } from '@/types';
 import { sortDocumentsByPublisher } from '@/helpers';
 const { data: documents } = useDocuments();
+useSeoIndex({ title: 'Documents' });
 </script>

@@ -43,6 +43,8 @@ import {
   equipmentApiParams
 } from '@/helpers/resultsTableConfig';
 
+useSeoIndex({ title: 'Equipment' });
+
 // Set up filters
 const filterState = useFilterState<{ name__icontains: string }>({
   key: 'equipment',

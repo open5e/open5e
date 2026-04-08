@@ -39,6 +39,8 @@
 </template>
 
 <script setup lang="ts">
+import type { Condition } from '@/types';
+
 const conditionId = useQueryParameter('id');
 const { data: condition } = useFindOne(API_ENDPOINTS.conditions, conditionId,
   { 
@@ -49,7 +51,7 @@ const { data: condition } = useFindOne(API_ENDPOINTS.conditions, conditionId,
   },
 );
 
-usePageMetadata({ title: computed(() => condition.value?.name) });
+useSeoEntry(condition as Ref<Condition>);
 
 // generate source key from page URL - for use with source-tab cmpnt
 const sourceKey = computed(() => {
