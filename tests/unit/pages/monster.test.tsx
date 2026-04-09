@@ -47,8 +47,7 @@ mockNuxtImport('useFindOne', () => {
         key: 'small',
         url: 'http://localhost:8000/v2/sizes/small/',
       },
-      challenge_rating_decimal: '0.250',
-      challenge_rating_text: '1/4',
+      challenge_rating: '0.250',
       speed: {
         walk: 30.0,
         unit: 'feet',

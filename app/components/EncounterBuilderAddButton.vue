@@ -21,6 +21,7 @@
 <script lang="ts" setup>
 import type { Monster } from '@/types';
 import { PlusIcon, MinusIcon } from '@heroicons/vue/24/solid';
+import { parseChallengeRating } from '~/helpers';
 
 const props = defineProps<{ monster: Monster }>();
 const encounterStore = useEncounterStore();
@@ -33,8 +34,8 @@ const addToEncounter = () => {
   encounterStore.addMonster(
     props.monster.key,
     props.monster.name,
-    parseFloat(props.monster.challenge_rating_decimal),
-    props.monster.challenge_rating_text
+    parseFloat(props.monster.challenge_rating),
+    parseChallengeRating(props.monster.challenge_rating)
   );
 };
 

@@ -68,7 +68,7 @@
           </nuxt-link>
           <div class="text-sm text-gray-500 dark:text-gray-300">
             CR
-            {{ monster.challenge_rating || monster.challenge_rating }} ({{
+            {{ parseChallengeRating(monster.challenge_rating) }} ({{
               (monster.experience_points ?? 0) * monster.count
             }}
             XP)
@@ -172,6 +172,7 @@
 
 <script setup lang="ts">
 import EncounterBuilderMonsterSearch from '~/components/EncounterBuilderMonsterSearch.vue';
+import { parseChallengeRating } from '~/helpers';
 import type { Monster } from '~/types/monster';
 // Prop included for testing purposes
 defineProps<{ isLoadingOverride?: boolean }>();

@@ -83,6 +83,7 @@ import {
 } from '@headlessui/vue';
 import type { Monster } from '~/types/monster';
 import type { Creature } from '@/types';
+import { parseChallengeRating } from '~/helpers';
 const emit = defineEmits<{
   (e: 'select', monster: Monster): void;
 }>();
@@ -105,10 +106,8 @@ const mapMonsterFromAPI = (monster: Creature): Monster => {
   const base = {
     key: String(monster.key),
     name: String(monster.name) || '',
-    challenge_rating: String(
-      monster.challenge_rating_text || '0'
-    ),
-    challenge_rating_decimal: Number(monster.challenge_rating_decimal) || 0,
+    challenge_rating: String(parseChallengeRating(monster.challenge_rating) || '0'),
+    challenge_rating_decimal: Number(monster.challenge_rating) || 0,
   };
 
   return !monster.document
