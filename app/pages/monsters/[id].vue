@@ -273,7 +273,7 @@
 
 <script setup lang="ts">
 import type { Creature, CreatureAction } from '@/types';
-import { formatModifier } from '@/helpers';
+import { formatModifier, snakeToTitleCase } from '@/helpers';
 
 const rollDice = useDiceRoller();
 
@@ -331,13 +331,6 @@ const actions = computed(() => {
   return actionsByType;
 }) as ComputedRef<Record<ActionType, CreatureAction[]>>;
 
-// Converts SNAKE_CASE to Title Case, used for action type headers
-const snakeToTitleCase = (input: string) =>
-  input
-    .toLowerCase()
-    .split('_')
-    .map(word => word[0].toUpperCase() + word.substring(1))
-    .join(' ');
 
 const illustrationUrl = computed(() => {
   if (!monster.value?.illustration) return;
