@@ -402,7 +402,6 @@ const addToEncounter = () => {
     monster.value.key,
     monster.value.name,
     parseFloat(monster.value.challenge_rating),
-    parseChallengeRating(monster.value.challenge_rating),
   );
 };
 

@@ -53,7 +53,7 @@
               />
             </div>
             <span :class="[active ? 'text-white' : 'text-gray-500']">
-              CR {{ monster.challenge_rating }}
+              CR {{ parseChallengeRating(monster.challenge_rating) }}
             </span>
           </li>
         </ComboboxOption>
@@ -106,8 +106,7 @@ const mapMonsterFromAPI = (monster: Creature): Monster => {
   const base = {
     key: String(monster.key),
     name: String(monster.name) || '',
-    challenge_rating: String(parseChallengeRating(monster.challenge_rating) || '0'),
-    challenge_rating_decimal: Number(monster.challenge_rating) || 0,
+    challenge_rating: Number(monster.challenge_rating) || 0,
   };
 
   return !monster.document

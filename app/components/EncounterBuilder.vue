@@ -221,8 +221,7 @@ const handleMonsterSelect = (monster: Monster) => {
   encounterStore.addMonster(
     monster.key,
     monster.name,
-    monster.challenge_rating_decimal,
-    monster.challenge_rating,
+    monster.challenge_rating
   );
 };
 </script>

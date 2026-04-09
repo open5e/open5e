@@ -7,8 +7,7 @@ interface MockMonster {
   key: string;
   name: string;
   count: number;
-  challenge_rating_decimal: number;
-  challenge_rating_text: string;
+  challenge_rating: number;
   document?: {
     name: string;
     key: string;
@@ -97,8 +96,7 @@ describe('EncounterBuilder', () => {
     const testMonster = {
       key: 'test-monster',
       name: 'Test Monster',
-      challenge_rating_decimal: 1,
-      challenge_rating: '1',
+      challenge_rating: 1,
     };
 
     await wrapper
@@ -109,7 +107,6 @@ describe('EncounterBuilder', () => {
       'test-monster',
       'Test Monster',
       1,
-      '1',
     );
   });
 
@@ -120,8 +117,7 @@ describe('EncounterBuilder', () => {
         key: 'test-monster',
         name: 'Test Monster',
         count: 1,
-        challenge_rating_decimal: 1,
-        challenge_rating_text: '1',
+        challenge_rating: 1,
         document: {
           name: 'Test Document',
           key: 'test',
