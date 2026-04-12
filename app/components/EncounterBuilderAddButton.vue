@@ -33,8 +33,7 @@ const addToEncounter = () => {
   encounterStore.addMonster(
     props.monster.key,
     props.monster.name,
-    parseFloat(props.monster.challenge_rating_decimal),
-    props.monster.challenge_rating_text
+    parseFloat(props.monster.challenge_rating)
   );
 };
 

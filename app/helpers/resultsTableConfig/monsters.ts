@@ -18,7 +18,7 @@ export const monsterApiParams = {
     'key',
     'name',
     'document',
-    'challenge_rating_decimal',
+    'challenge_rating',
     'type',
     'size',
   ].join(','),
@@ -37,8 +37,8 @@ export const monsterTableColumnDefinitions: TableColumn<Monster>[] = [
   },
   {
     displayName: 'CR',
-    value: (data) => parseChallengeRating(data.challenge_rating_decimal),
-    sortValue: 'challenge_rating_decimal',
+    value: (data) => parseChallengeRating(data.challenge_rating),
+    sortValue: 'challenge_rating',
   },
   {
     displayName: 'Type',
@@ -74,7 +74,7 @@ export const monsterFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[]
   },
   {
     name: 'CR (min)',
-    filterField: 'challenge_rating_decimal__gte',
+    filterField: 'challenge_rating__gte',
     options: monsterChallengeRatings.map(([name, value]) => ({
       name: name,
       value: value.toString(),
@@ -82,7 +82,7 @@ export const monsterFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[]
   },
   {
     name: 'CR (max)',
-    filterField: 'challenge_rating_decimal__lte',
+    filterField: 'challenge_rating__lte',
     options: monsterChallengeRatings.map(([name, value]) => ({
       name: name,
       value: value.toString(),
@@ -92,8 +92,8 @@ export const monsterFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[]
 
 export const monsterFilterDefaults: Readonly<MonsterFilterState> = {
   name__icontains: '',
-  challenge_rating_decimal_gte: '',
-  challenge_rating_decimal__lte: '',
+  challenge_rating__gte: '',
+  challenge_rating__lte: '',
   size: '',
   type: '',
 };

@@ -1,8 +1,7 @@
 export interface Monster {
   key: string;
   name: string;
-  challenge_rating: string;
-  challenge_rating_decimal: number;
+  challenge_rating: number;
   document?: {
     name: string;
     key: string;

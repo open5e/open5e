@@ -3,7 +3,7 @@ import { useLocalStorage } from '@vueuse/core';
 import { API_ENDPOINTS, useAPI } from '~/composables/api';
 import { usePartyStore } from '~/composables/useParty';
 import { useXPCalculator } from '~/composables/useXPCalculator';
-import type { Monster } from '~/types/monster';
+import type { Monster } from '@/types/monster';
 
 interface EncounterMonster extends Monster {
   count: number;
@@ -107,13 +107,12 @@ export const useEncounterStore = () => {
       const monster = monsters.value.find(m => m.key === key);
       if (monster) {
         // Preserve the count and basic info while updating with API data
-        const { count, name, challenge_rating_decimal, challenge_rating }
+        const { count, name, challenge_rating }
           = monster;
         Object.assign(monster, data, {
           count,
           name,
-          challenge_rating_decimal,
-          challenge_rating_text: challenge_rating,
+          challenge_rating,
         });
       }
 
@@ -127,8 +126,7 @@ export const useEncounterStore = () => {
   const addMonster = async (
     key: string,
     name: string,
-    challenge_rating_decimal: number,
-    challenge_rating_text: string,
+    challenge_rating: number,
   ) => {
     try {
       // First check if monster exists
@@ -142,8 +140,7 @@ export const useEncounterStore = () => {
       monsters.value.push({
         key,
         name,
-        challenge_rating_decimal,
-        challenge_rating: challenge_rating_text,
+        challenge_rating,
         count: 1,
         document: {
           name: 'Loading...',

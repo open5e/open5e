@@ -7,8 +7,8 @@ export type MagicItemFilterState = {
 
 export type MonsterFilterState = {
   name__icontains?: string;
-  challenge_rating_decimal_gte?: string;
-  challenge_rating_decimal__lte?: string;
+  challenge_rating__gte?: string;
+  challenge_rating__lte?: string;
   size?: string;
   type?: string;
 };

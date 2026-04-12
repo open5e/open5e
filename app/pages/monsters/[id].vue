@@ -165,7 +165,7 @@
         <tr class="grid grid-cols-[10rem,_1fr] [&>*]:p-0">
           <th>Challenge</th>
           <td class="text-nowrap">
-            <span>{{ monster.challenge_rating_text + " " }}</span>
+            <span>{{ parseChallengeRating(monster.challenge_rating) + " " }}</span>
             <span>{{ `(${monster.experience_points.toLocaleString()} XP)` }}</span>
           </td>
         </tr>
@@ -273,7 +273,7 @@
 
 <script setup lang="ts">
 import type { Creature, CreatureAction } from '@/types';
-import { formatModifier, snakeToTitleCase } from '@/helpers';
+import { formatModifier, snakeToTitleCase, parseChallengeRating } from '@/helpers';
 
 const rollDice = useDiceRoller();
 
@@ -401,8 +401,7 @@ const addToEncounter = () => {
   encounterStore.addMonster(
     monster.value.key,
     monster.value.name,
-    parseFloat(monster.value.challenge_rating_decimal),
-    monster.value.challenge_rating_text,
+    parseFloat(monster.value.challenge_rating),
   );
 };
 

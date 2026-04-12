@@ -1775,8 +1775,7 @@ export interface components {
              * Format: decimal
              * @description Challenge Rating field as a decimal number.
              */
-            challenge_rating_decimal: string;
-            readonly challenge_rating_text: string;
+            challenge_rating: string;
             /**
              * Format: int64
              * @description The Creauture's Proficiency Bonus
@@ -4494,11 +4493,11 @@ export interface operations {
                 subcategory__iexact?: string;
                 /** @description Unique key for the Item. */
                 type?: string;
-                challenge_rating_decimal?: number;
-                challenge_rating_decimal__lt?: number;
-                challenge_rating_decimal__lte?: number;
-                challenge_rating_decimal__gt?: number;
-                challenge_rating_decimal__gte?: number;
+                challenge_rating?: number;
+                challenge_rating__lt?: number;
+                challenge_rating__lte?: number;
+                challenge_rating__gt?: number;
+                challenge_rating__gte?: number;
                 armor_class?: number;
                 armor_class__lt?: number;
                 armor_class__lte?: number;
