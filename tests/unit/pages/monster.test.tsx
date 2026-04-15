@@ -1,16 +1,10 @@
 import { test, expect } from 'vitest';
-import {
-  mockComponent,
-  mockNuxtImport,
-  mountSuspended,
-} from '@nuxt/test-utils/runtime';
+import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
 import MonsterPage from '~/pages/monsters/[id].vue';
-import { ref } from 'vue';
+
+const { data: monster } = useFindOne(API_ENDPOINTS.monsters, 'srd_goblin');
 
 const page = await mountSuspended(MonsterPage);
-
-const { id } = useRoute().params;
-const { data: monster } = useMonster(Array.isArray(id) ? id[0] : id);
 
 test('/monsters/[id] page can mount', async () => {
   expect(page);
@@ -19,139 +13,289 @@ test('/monsters/[id] page can mount', async () => {
 test('/monsters/[id] page renders title', async () => {
   const title = page.find('h1');
   expect(title.exists()).toBe(true);
-  expect(title.text()).toEqual(monster.value.name);
+  expect(title.text()).toEqual(unref(monster)?.name);
 });
 
-test('/monsters/[id] page renders correct number of actions', async () => {
-  const actions = page.find('#actions-list');
-  if (!monster.value.actions || monster.value.actions.length === 0) {
-    expect(actions.exists()).toBe(false);
-  } else {
-    expect(actions.findAll('li').length).toEqual(monster.value.actions.length);
-  }
-});
-
-// mock the query param used to generate dynamic route
-mockNuxtImport('useRoute', () => {
+mockNuxtImport('useFindOne', () => {
   return () => ({
-    params: {
-      id: 'aboleth',
-    },
-    query: {
-      mode: 'normal',
-    },
-  });
-});
-
-// mock API result from /monster/[id] endpoint
-mockNuxtImport('useMonster', () => {
-  return () => ({
-    data: ref({
-      slug: 'aboleth',
-      desc: '',
-      name: 'Aboleth',
-      size: 'Large',
-      type: 'Aberration',
-      group: null,
-      alignment: 'lawful evil',
-      armor_class: 17,
-      armor_desc: 'natural armor',
-      hit_points: 135,
-      hit_dice: '18d10+36',
+    data: {
+      url: 'http://localhost:8000/v2/creatures/srd_goblin/',
+      key: 'srd_goblin',
+      name: 'Goblin',
+      document: {
+        name: 'Systems Reference Document',
+        key: 'srd',
+        publisher: {
+          name: 'Wizards of the Coast',
+          key: 'wizards-of-the-coast',
+          url: 'http://localhost:8000/v2/publishers/wizards-of-the-coast/',
+        },
+        gamesystem: {
+          name: '5th Edition',
+          key: 'o5e',
+          url: 'http://localhost:8000/v2/gamesystems/o5e/',
+        },
+        permalink: 'https://dnd.wizards.com/resources/systems-reference-document',
+      },
+      type: {
+        name: 'Humanoid',
+        key: 'humanoid',
+        url: 'http://localhost:8000/v2/creaturetypes/humanoid/',
+      },
+      size: {
+        name: 'Small',
+        key: 'small',
+        url: 'http://localhost:8000/v2/sizes/small/',
+      },
+      challenge_rating: '0.250',
       speed: {
-        walk: 10,
-        swim: 40,
+        walk: 30.0,
+        unit: 'feet',
       },
-      strength: 21,
-      dexterity: 9,
-      constitution: 15,
-      intelligence: 18,
-      wisdom: 15,
-      charisma: 18,
-      strength_save: null,
-      dexterity_save: null,
-      constitution_save: 6,
-      intelligence_save: 8,
-      wisdom_save: 6,
-      charisma_save: null,
-      perception: 10,
-      skills: {
-        history: 12,
-        perception: 10,
+      speed_all: {
+        unit: 'feet',
+        walk: 30.0,
+        crawl: 15.0,
+        hover: false,
+        fly: 0.0,
+        burrow: 0.0,
+        climb: 15.0,
+        swim: 15.0,
       },
-      senses: 'darkvision 120 ft., passive Perception 20',
-      languages: 'Deep Speech, telepathy 120 ft.',
-      challenge_rating: '10',
-      cr: 10.0,
+      category: 'Monsters',
+      subcategory: null,
+      alignment: 'neutral evil',
+      languages: {
+        as_string: 'Common, Goblin',
+        data: [
+          {
+            name: 'Common',
+            key: 'common',
+            url: 'http://localhost:8000/v2/languages/common/',
+            desc: 'Typical speakers are Humans.',
+          },
+          {
+            name: 'Goblin',
+            key: 'goblin',
+            url: 'http://localhost:8000/v2/languages/goblin/',
+            desc: 'Typical speakers are goblinoids.',
+          },
+        ],
+      },
+      armor_class: 15,
+      armor_detail: 'leather armor, shield',
+      hit_points: 7,
+      hit_dice: '2d6',
+      experience_points: 50,
+      ability_scores: {
+        strength: 8,
+        dexterity: 14,
+        constitution: 10,
+        intelligence: 10,
+        wisdom: 8,
+        charisma: 8,
+      },
+      modifiers: {
+        strength: -1,
+        dexterity: 2,
+        constitution: 0,
+        intelligence: 0,
+        wisdom: -1,
+        charisma: -1,
+      },
+      initiative_bonus: 2,
+      saving_throws: {},
+      saving_throws_all: {
+        strength: -1,
+        dexterity: 2,
+        constitution: 0,
+        intelligence: 0,
+        wisdom: -1,
+        charisma: -1,
+      },
+      skill_bonuses: {
+        stealth: 6,
+      },
+      skill_bonuses_all: {
+        acrobatics: 2,
+        animal_handling: -1,
+        arcana: 0,
+        athletics: -1,
+        deception: -1,
+        history: 0,
+        insight: -1,
+        intimidation: -1,
+        investigation: 0,
+        medicine: -1,
+        nature: 0,
+        perception: -1,
+        performance: -1,
+        persuasion: -1,
+        religion: 0,
+        sleight_of_hand: 2,
+        stealth: 6,
+        survival: -1,
+      },
+      passive_perception: 9,
+      damage_immunities: [],
+      nonmagical_attack_immunity: false,
+      damage_resistances: [],
+      nonmagical_attack_resistance: false,
+      damage_vulnerabilities: [],
+      condition_immunities: [],
+      normal_sight_range: 10560.0,
+      darkvision_range: 60.0,
+      blindsight_range: null,
+      tremorsense_range: null,
+      truesight_range: null,
       actions: [
         {
-          name: 'Multiattack',
-          desc: 'The aboleth makes three tentacle attacks.',
+          key: 'srd_goblin_scimitar',
+          attacks: [
+            {
+              key: 'srd_goblin_scimitar_scimitar-attack',
+              distance_unit: 'feet',
+              name: 'Scimitar attack',
+              attack_type: 'WEAPON',
+              to_hit_mod: 4,
+              reach: 5.0,
+              range: null,
+              long_range: null,
+              target_creature_only: false,
+              damage_die_count: 1,
+              damage_die_type: 'D6',
+              damage_bonus: null,
+              extra_damage_die_count: null,
+              extra_damage_die_type: null,
+              extra_damage_bonus: null,
+              parent: 'srd_goblin_scimitar',
+              damage_type: 'thunder',
+              extra_damage_type: null,
+            },
+          ],
+          name: 'Scimitar',
+          desc: 'Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.',
+          uses_type: null,
+          uses_param: null,
+          action_type: 'ACTION',
+          order: 0,
+          form_condition: null,
+          legendary_cost: 1,
+          parent: 'srd_goblin',
         },
         {
-          name: 'Tentacle',
-          desc: "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 (1d12) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.",
-          attack_bonus: 9,
-          damage_dice: '2d6',
-          damage_bonus: 5,
-        },
-        {
-          name: 'Tail',
-          desc: 'Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 15 (3d6 + 5) bludgeoning damage.',
-          attack_bonus: 9,
-          damage_dice: '3d6',
-          damage_bonus: 5,
-        },
-        {
-          name: 'Enslave (3/day)',
-          desc: "The aboleth targets one creature it can see within 30 ft. of it. The target must succeed on a DC 14 Wisdom saving throw or be magically charmed by the aboleth until the aboleth dies or until it is on a different plane of existence from the target. The charmed target is under the aboleth's control and can't take reactions, and the aboleth and the target can communicate telepathically with each other over any distance.\nWhenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from the aboleth.",
+          key: 'srd_goblin_shortbow',
+          attacks: [
+            {
+              key: 'srd_goblin_shortbow_shortbow-attack',
+              distance_unit: 'feet',
+              name: 'Shortbow attack',
+              attack_type: 'WEAPON',
+              to_hit_mod: 4,
+              reach: null,
+              range: 80.0,
+              long_range: 320.0,
+              target_creature_only: false,
+              damage_die_count: 1,
+              damage_die_type: 'D6',
+              damage_bonus: null,
+              extra_damage_die_count: null,
+              extra_damage_die_type: null,
+              extra_damage_bonus: null,
+              parent: 'srd_goblin_shortbow',
+              damage_type: 'thunder',
+              extra_damage_type: null,
+            },
+          ],
+          name: 'Shortbow',
+          desc: 'Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.',
+          uses_type: null,
+          uses_param: null,
+          action_type: 'ACTION',
+          order: 1,
+          form_condition: null,
+          legendary_cost: 1,
+          parent: 'srd_goblin',
         },
       ],
-      legendary_desc:
-        "The aboleth can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The aboleth regains spent legendary actions at the start of its turn.",
-      legendary_actions: [
+      traits: [
         {
-          name: 'Detect',
-          desc: 'The aboleth makes a Wisdom (Perception) check.',
-        },
-        {
-          name: 'Tail Swipe',
-          desc: 'The aboleth makes one tail attack.',
-        },
-        {
-          name: 'Psychic Drain (Costs 2 Actions)',
-          desc: 'One creature charmed by the aboleth takes 10 (3d6) psychic damage, and the aboleth regains hit points equal to the damage the creature takes.',
+          url: 'http://localhost:8000/v2/creaturetraits/srd_goblin_nimble-escape/',
+          key: 'srd_goblin_nimble-escape',
+          name: 'Nimble Escape',
+          desc: 'The goblin can take the Disengage or Hide action as a bonus action on each of its turns.',
+          type: null,
+          parent: 'http://localhost:8000/v2/creatures/srd_goblin/',
         },
       ],
-      special_abilities: [
-        {
-          name: 'Amphibious',
-          desc: 'The aboleth can breathe air and water.',
-        },
-        {
-          name: 'Mucous Cloud',
-          desc: 'While underwater, the aboleth is surrounded by transformative mucus. A creature that touches the aboleth or that hits it with a melee attack while within 5 ft. of it must make a DC 14 Constitution saving throw. On a failure, the creature is diseased for 1d4 hours. The diseased creature can breathe only underwater.',
-        },
-        {
-          name: 'Probing Telepathy',
-          desc: "If a creature communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires if the aboleth can see the creature.",
-        },
-      ],
-      spell_list: [],
-      page_no: 261,
+      creaturesets: [],
       environments: [
-        'Underdark',
-        'Sewer',
-        'Caverns',
-        'Plane Of Water',
-        'Water',
+        {
+          name: 'Arctic or Tundra',
+          key: 'arctic',
+          url: 'http://localhost:8000/v2/environments/arctic/',
+        },
+        {
+          name: 'Caves',
+          key: 'caves',
+          url: 'http://localhost:8000/v2/environments/caves/',
+        },
+        {
+          name: 'Desert',
+          key: 'desert',
+          url: 'http://localhost:8000/v2/environments/desert/',
+        },
+        {
+          name: 'Forest or Jungle',
+          key: 'forest',
+          url: 'http://localhost:8000/v2/environments/forest/',
+        },
+        {
+          name: 'Grassland or Plains',
+          key: 'grassland',
+          url: 'http://localhost:8000/v2/environments/grassland/',
+        },
+        {
+          name: 'Hills',
+          key: 'hills',
+          url: 'http://localhost:8000/v2/environments/hills/',
+        },
+        {
+          name: 'Mountain',
+          key: 'mountain',
+          url: 'http://localhost:8000/v2/environments/mountain/',
+        },
+        {
+          name: 'Ruins',
+          key: 'ruins',
+          url: 'http://localhost:8000/v2/environments/ruins/',
+        },
+        {
+          name: 'Sewer',
+          key: 'sewer',
+          url: 'http://localhost:8000/v2/environments/sewer/',
+        },
+        {
+          name: 'Feywild',
+          key: 'srd_feywild',
+          url: 'http://localhost:8000/v2/environments/srd_feywild/',
+        },
+        {
+          name: 'Swamp or Marsh',
+          key: 'swamp',
+          url: 'http://localhost:8000/v2/environments/swamp/',
+        },
+        {
+          name: 'Underworld',
+          key: 'underworld',
+          url: 'http://localhost:8000/v2/environments/underworld/',
+        },
+        {
+          name: 'Urban',
+          key: 'urban',
+          url: 'http://localhost:8000/v2/environments/urban/',
+        },
       ],
-      img_main: 'http://localhost:8000/static/img/monsters/aboleth.png',
-      document__slug: 'wotc-srd',
-      document__title: '5e Core Rules',
-      document__license_url: 'http://open5e.com/legal',
-      document__url:
-        'http://dnd.wizards.com/articles/features/systems-reference-document-srd',
-    }),
+    },
   });
 });

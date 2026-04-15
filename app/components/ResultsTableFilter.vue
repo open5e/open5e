@@ -1,0 +1,159 @@
+<script lang="ts">
+/**
+ * ApiTableFilter.vue - Displays a set of filter controls for filtering data
+ * returned by the Open5e API.
+ *
+ * -= PROPS (INPUTS) =-
+ * @prop {Object} filterState - The state of the filters, returned by
+ * `useFilterState()` composable.
+ *   @property {Object} fieldsState - The current values of the filter fields.
+ *   @property {Object} canClearFilter - Flag for whether filter can be cleared
+ *   @method {Function} updateField - Function to update the value of a filter field.
+ *   @method {Function} clearFilter - Function to clear the active filter.
+ *
+ * @prop {Object} [search] - Configuration for the search filter.
+ *   @property {String} name - The name of the search field.
+ *   @property {String} filterField - The filter field for the search.
+ *
+ * @prop {Array} selectFields - Fields to be filtered using drop-down menus
+ *   @property {String} name - Display name of the field - what the use sees.
+ *   @property {String} filterField - The filter field to be updated.
+ *   @property {Array} options - Dropdown filter options/choices
+ *   @property {Boolean} [isLeastPriority] - Flag to hide fields on small screens.
+ *
+ * @prop {Array} checkboxFields - Fields to be filtered using checkboxes
+ *   @property {String} name - The name of the checkbox field (displayed in label).
+ *   @property {String} filterField - The filter field for the checkbox.
+ *
+ * -= EMITS (OUTPUTS) =-
+ * @emits {String} updateField – Emit the updated field value when a filter is changed.
+ * @emits {Boolean} clearFilter – Emit when the filter is cleared.
+ *
+ * -= DEPENDENCIES =-
+ * @component Icon -> Renders icons in the UI.
+ * @component ResultsTablePaginatorButton -> Button for clearing the filter.
+ *
+ */
+</script>
+
+<template>
+  <div class="my-2 flex w-full items-end justify-between gap-2 md:gap-3">
+    <!-- RENDER SEARCH BAR -->
+    <div v-if="search" class="relative w-full">
+      <Icon
+        name="majesticons:search-line"
+        class="absolute bottom-2 left-2 size-5 rounded-full"
+      />
+
+      <input
+        :id="search?.name"
+        :name="search?.name"
+        placeholder="Search..."
+        :value="filterState.fieldsState.value[search.filterField]"
+        class="w-full rounded-full border border-granite bg-transparent p-1 pl-8 outline-none transition-colors focus:w-full focus:min-w-40 focus:bg-fog dark:focus:bg-basalt"
+        @input="
+          filterState.updateField(
+            search?.filterField,
+            ($event.target as HTMLInputElement)?.value ?? '',
+          )
+        "
+      />
+    </div>
+
+    <!-- Render selectFields are drop-down lists -->
+    <div
+      v-for="field in selectFields"
+      :key="field.name"
+      class="grid columns-1 justify-center border-b border-red"
+      :class="{ 'hidden sm:grid': field.isLeastPriority }"
+    >
+      <label
+        class="font-serif text-xs"
+        :for="field.name"
+      >
+        {{ field.name }}
+      </label>
+
+      <select
+        :id="field.name"
+        :key="field.name"
+        :name="field.name"
+        class="cursor-pointer bg-transparent fill-red text-left"
+        :value="filterState.fieldsState.value[field.filterField]"
+        @input="
+          filterState.updateField(
+            field.filterField,
+            ($event?.target as HTMLInputElement)?.value ?? '')
+        "
+      >
+        <option value="">
+          -
+        </option>
+
+        <option
+          v-for="option in field.options"
+          :key="option.name"
+          :value="option.value"
+        >
+          {{ option.name }}
+        </option>
+      </select>
+    </div>
+
+    <!-- Render checkboxFields as checkboxes -->
+    <template v-if="checkboxFields">
+      <div
+        v-for="checkbox in checkboxFields"
+        :key="checkbox.name"
+        class="flex flex-col justify-start"
+      >
+        <label
+          class="block font-serif text-xs"
+          :for="checkbox.name"
+        >
+          {{ checkbox.name }}
+        </label>
+
+        <input
+          :id="checkbox.name"
+          type="checkbox"
+          :name="checkbox.filterField"
+          :checked="filterState.fieldsState.value[checkbox.filterField] === true"
+          class="my-1 size-full accent-red"
+          @input="
+            filterState.updateField(
+              checkbox.filterField,
+              ($event.target as HTMLInputElement)?.checked ? true : false,
+            )
+          "
+        />
+      </div>
+    </template>
+
+    <ResultsTablePaginatorButton
+      name="Clear filter"
+      :disabled="!filterState.canClearFilter.value"
+      icon="heroicons:x-mark"
+      :class="{
+        invisible: !filterState.canClearFilter.value,
+      }"
+      @click="filterState.clearFilter"
+    />
+  </div>
+</template>
+
+<script setup lang="ts">
+import type { ResultTableSelectFieldFilter } from '@/types';
+defineProps<{
+  filterState: FilterState<Fields>;
+  search: {
+    name: string;
+    filterField: string;
+  };
+  selectFields?: ResultTableSelectFieldFilter[];
+  checkboxFields?: {
+    name: string;
+    filterField: string;
+  }[];
+}>();
+</script>
