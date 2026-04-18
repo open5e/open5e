@@ -50,8 +50,8 @@ const props = defineProps({
 
 const crossLinkExtension = {
   type: 'output',
-  regex: /<open5e-link src=([^>]+)>([^<]+)<\/open5e-link>/g,
-  replace: '<cross-link src="$1">$2</cross-link>',
+  regex: /<open5e to="([^>]+)">([^<]+)<\/open5e>/g,
+  replace: '<cross-link to="$1">$2</cross-link>',
 };
 
 const diceRollerExtension = {

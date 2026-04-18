@@ -16,6 +16,7 @@ export function useFindOne<T extends keyof EndpointToFindOneTypeMap>(
   id: MaybeRef<string>,
   options?: {
     params?: Record<string, string>;
+    enabled?: MaybeRef<boolean>; 
   },
 ) {
   const { get } = useAPI();
@@ -23,6 +24,7 @@ export function useFindOne<T extends keyof EndpointToFindOneTypeMap>(
 
   return useQuery({
     queryKey: [endpoint, id, options],
+    enabled: options?.enabled ?? true,
     queryFn: async (): Promise<EndpointToFindOneTypeMap[T]> => {
       const data = await get(endpoint, unref(id), queryString);
       return data;
