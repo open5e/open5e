@@ -74,15 +74,11 @@ export interface EndpointToPaginatedTypeMap {
 export type ExtractItemType<T> = T extends { results: (infer U)[] } ? U : never;
 
 // convenience type to get item type from endpoint key
-export type ExtractPaginatedItemType<T extends keyof EndpointToPaginatedTypeMap> = 
+export type ExtractPaginatedItemType<T extends keyof EndpointToPaginatedTypeMap> =
   ExtractItemType<EndpointToPaginatedTypeMap[T]>;
 
 // define custom error type to support passing Open5e data via an error message
-export interface Open5eError extends NuxtError {
-  data: {
-    key?: string;
-  };
-}
+export type Open5eError = NuxtError<{ key?: string } | string>;
 
 /** Provides the base functions to easily fetch data from the Open5e API. */
 export const useAPI = () => {
@@ -94,7 +90,7 @@ export const useAPI = () => {
   });
 
   return {
-    findMany: async <T extends keyof EndpointToFindManyTypeMap> (
+    findMany: async <T extends keyof EndpointToFindManyTypeMap>(
       endpoint: T,
       sources: string[],
       params: Record<string, unknown> = {},
@@ -111,7 +107,7 @@ export const useAPI = () => {
 
       return res.data.results;
     },
-    findPaginated: async <T extends keyof EndpointToPaginatedTypeMap> (options: {
+    findPaginated: async <T extends keyof EndpointToPaginatedTypeMap>(options: {
       endpoint: T;
       sources: string[];
       pageNo?: number;
@@ -159,7 +155,7 @@ export const useAPI = () => {
   };
 };
 
-export const useFindMany = <T extends keyof EndpointToFindManyTypeMap> (
+export const useFindMany = <T extends keyof EndpointToFindManyTypeMap>(
   endpoint: T,
   params?: Record<string, string | number | boolean>,
 ) => {
@@ -196,9 +192,9 @@ export const useSearch = (queryRef: ComputedRef<string>) => {
     queryFn: () =>
       queryRef.value
         ? findMany(API_ENDPOINTS.search, [], {
-            schema: 'v2',
-            query: queryRef.value,
-          })
+          schema: 'v2',
+          query: queryRef.value,
+        })
         : [],
   });
 };
