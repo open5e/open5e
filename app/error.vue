@@ -13,7 +13,7 @@
             class="font-bold text-red hover:text-blood dark:text-indigo-200 dark:hover:text-red"
             @click="searchRedirect"
           >
-            Search for "{{ searchTerm }}"
+            Search for <em>{{ searchTerm }}</em>
           </button>
         </p>
 
@@ -94,7 +94,6 @@
 </template>
 
 <script setup lang="ts">
-import {computed} from 'vue';
 const props = defineProps<{ error: Open5eError | null }>();
 
 // Calculate the search term to provide for the user based on the error prop.
@@ -105,24 +104,20 @@ const props = defineProps<{ error: Open5eError | null }>();
 // 2. Getting a not found response from the API. In this case error.data will have a `key` property
 // with the value set to the searched entity (e.g. for `/monsters/goblin` it will be `goblin`).
 const searchTerm = computed(() => {
-  if(props.error?.statusCode != 404) {
-    return null;
+  if(props.error?.statusCode !== 404) return undefined;
+
+  const { data } = props.error;
+  if(!data) return undefined;
+
+  if(typeof data !== 'string') {
+    return data.key;
   }
 
-  const data = props.error?.data;
-  if(data == null) {
-    return null;
+  try {
+    return JSON.parse(data)?.path.replace(/.*\/([^/]*)/, '$1');
+  } catch {
+    return undefined;
   }
-
-  if((typeof data === 'string')) {
-    try {
-      return JSON.parse(data)?.path.replace(/.*\/([^/]*)/, '$1');
-    } catch {
-      return null;
-    }
-  }
-
-  return data?.key;
 });
 
 const handleError = () => clearError({ redirect: '/' });
