@@ -4,16 +4,16 @@
       <div class="p-4">
         <h1>Critical Failure!</h1>
 
-        <h2>Error {{ error?.statusCode }}</h2>
+        <h2>Error {{ error?.status }}</h2>
 
         <p v-if="error?.message">{{ error.message }}</p>
 
         <p v-if="searchTerm">
           <button
-            class="font-bold text-red hover:text-blood dark:text-indigo-200 dark:hover:text-red"
+            class="text-red hover:text-blood dark:text-indigo-200 dark:hover:text-red"
             @click="searchRedirect"
           >
-            Search for <em>{{ searchTerm }}</em>
+            Search for <strong class="uppercase">"{{ searchTerm }}"</strong> on Open5e
           </button>
         </p>
 
@@ -104,14 +104,12 @@ const props = defineProps<{ error: Open5eError | null }>();
 // 2. Getting a not found response from the API. In this case error.data will have a `key` property
 // with the value set to the searched entity (e.g. for `/monsters/goblin` it will be `goblin`).
 const searchTerm = computed(() => {
-  if(props.error?.statusCode !== 404) return undefined;
+  if(props.error?.status !== 404) return;
 
   const { data } = props.error;
-  if(!data) return undefined;
+  if(!data) return;
 
-  if(typeof data !== 'string') {
-    return data.key;
-  }
+  if(typeof data !== 'string') return data.key;
 
   try {
     return JSON.parse(data)?.path.replace(/.*\/([^/]*)/, '$1');
@@ -121,7 +119,7 @@ const searchTerm = computed(() => {
 });
 
 const handleError = () => clearError({ redirect: '/' });
-const searchRedirect = () => clearError({redirect: `/search?text=${searchTerm.value}`});
+const searchRedirect = () => clearError({ redirect: `/search?text=${searchTerm.value}` });
 </script>
 
 <style>
