@@ -1,3 +1,4 @@
+export { formatAbilityName } from './formatAbilityName';
 export { formatModifier } from './formatModifier';
 export { formatSpellSubtitle } from './formatSpellSubtitle';
 export { sortDocumentsByPublisher } from './sortDocumentsByPublisher';
