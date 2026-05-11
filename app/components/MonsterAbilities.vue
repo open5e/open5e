@@ -8,76 +8,45 @@
  * @prop {Object} monster - Monster data returned by Open5e API. It contains:
  *   @property {Object} monster.ability_scores – Keys are ability names, values
  *     are the raw ability score for that ability
- *   @property {Object} monster.modifiers – Keys are ability names, values are
- *     ability modifiers derived from the scores
  *   @property {Object} monster.saving_throws – keys are ability names, value
  *     are saving throw modifiers. These can be undefined.
- *
- * -= DEPENDENCIES =-
- * @helpers formatModifier - Formats modifiers into signed strings (e.g., +2, -1)
- * @composable useDiceRoller - Triggers a dice roll when a modifier or save is clicked
- *
  */
 </script>
 
 <template>
-  <!-- Visually hidden table label, used by screen readers -->
-  <h2
-    id="abilities-table-label"
-    class="sr-only"
-    role="note"
-    aria-live="polite"
-  >
-    Abilities and Saving Throws
-  </h2>
-
   <!-- Flex container for containing left & right tables -->
   <div class="flex items-center justify-center gap-4 sm:justify-normal">
     <!-- Generate a table for each of the two sets of ability data -->
     <table
-      v-for="(value, title) in tableData"
-      :key="title"
+      v-for="group in tableData"
+      :key="group.caption"
       class="my-0 table-fixed border-0"
-      aria-labelledby="abilities-table-label"
     >
+      <caption class="sr-only">{{ group.caption }}</caption>
       <thead>
         <tr class="border-none">
-          <th
-            scope="col"
-            class="border-none"
-          >
+          <th scope="col" class="border-none">
             <span class="sr-only">Ability</span>
           </th>
-          <th
-            scope="col"
-            class="border-none"
-          >
+          <th scope="col" class="border-none">
             <span class="sr-only">Score</span>
           </th>
-          <th
-            scope="col"
-            class="border-none pb-1 uppercase"
-          >
+          <th scope="col" class="border-none pb-1 uppercase">
             Mod
           </th>
-          <th
-            scope="col"
-            class="border-none pb-1 uppercase"
-          >
+          <th scope="col" class="border-none pb-1 uppercase">
             Save
           </th>
         </tr>
       </thead>
+
       <tbody class="w-1/2 table-fixed">
         <tr
-          v-for="(data, ability) in value"
+          v-for="(data, ability) in group.scores"
           :key="ability"
           class="border-none"
         >
-          <th
-            scope="row"
-            class="border-none bg-fog dark:bg-basalt"
-          >
+          <th scope="row" class="border-none bg-fog dark:bg-basalt">
             {{ data.shortName }}
           </th>
           <td class="border-none bg-fog dark:bg-basalt">
@@ -85,19 +54,13 @@
           </td>
           <td
             :class="rollableLinkClasses"
-            @click="rollDice(data.mod, {
-              title: `${ability} Check`,
-              subtitle: monster.name,
-            })"
+            @click="handleRoll(data.mod, 'check', ability, monster.name)"
           >
             {{ formatModifier(data.mod) }}
           </td>
           <td
             :class="rollableLinkClasses"
-            @click="rollDice(data.save, {
-              title: `${ability} Save`,
-              subtitle: monster.name,
-            })"
+            @click="handleRoll(data.save.toString(), 'save', ability, monster.name)"
           >
             {{ formatModifier(data.save) }}
           </td>
@@ -108,53 +71,56 @@
 </template>
 
 <script lang="ts" setup>
-import { formatModifier } from '@/helpers';
+import { formatModifier, formatAbilityName } from '@/helpers';
+import type { Creature } from '@/types';
 const rollDice = useDiceRoller();
 
-const props = defineProps({
-  monster: { type: Object, default: () => {} },
-});
+const props = defineProps<{ monster: Creature }>();
 
 const rollableLinkClasses
   = 'cursor-pointer bg-smoke text-center font-bold text-blood hover:text-black dark:bg-charcoal dark:hover:text-fog';
 
+type AbilityScoreData = {
+  shortName: string;
+  score: number;
+  mod: string;
+  save: number;
+};
+
+const ABILITY_GROUPS = [
+  { caption: 'Physical Abilities', keys: ['STR', 'DEX', 'CON'] },
+  { caption: 'Mental Abilities',   keys: ['WIS', 'INT', 'CHA'] },
+];
+
+const groupAbilityScores = (keys: string[], scoreData: AbilityScoreData[]) => (
+  Object.fromEntries(
+    scoreData
+      .filter(a => keys.includes(a.shortName))
+      .map(a => [a.shortName, a])
+));
+
 const tableData = computed(() => {
-  // destructure data from props
-  const {
-    ability_scores: scores,
-    modifiers,
-    saving_throws: saves,
-  } = props.monster;
+  const { ability_scores: scores, saving_throws: saves } = props.monster;
+  const keys = Object.keys(scores) as (keyof typeof scores)[];
 
-  type AbilityScoreData = {
-    shortName: string;
-    score: number;
-    mod: number;
-    save: number;
-  };
+  const scoreData = keys.map(ability => {
+    const formattedMod = formatModifier(scores[ability], { inputType: 'score' });
+    return {
+      shortName: ability.substring(0, 3).toUpperCase(),
+      score: scores[ability],
+      mod: formattedMod,
+      save: saves[ability] ?? formattedMod,
+    };
+  });
 
-  // iterate over abilities, split abilities into 'physical' and 'mental'
-  return Object.keys(scores).reduce(
-    (acc, ability) => {
-      // format data
-      const data = {
-        shortName: ability.substring(0, 3).toUpperCase(),
-        score: scores[ability],
-        mod: modifiers[ability],
-        save: saves[ability] ?? modifiers[ability],
-      };
-
-      // add data to either 'physical' or 'mental' abilities
-      if (['STR', 'DEX', 'CON'].includes(data.shortName)) {
-        acc.physicalAbilityScores[ability] = data;
-      } else acc.mentalAbilityScores[ability] = data;
-
-      return acc;
-    },
-    {
-      physicalAbilityScores: {} as Record<string, AbilityScoreData>,
-      mentalAbilityScores: {} as Record<string, AbilityScoreData>,
-    },
-  );
+  return ABILITY_GROUPS.map(({ caption, keys }) => ({
+    caption,
+    scores: groupAbilityScores(keys, scoreData),
+  }));
 });
+
+const handleRoll = (modifier: string, rollType: 'check' | 'save', title: string, subtitle: string) => {
+  const formattedTitle = `${formatAbilityName(title)} ${rollType === 'check' ? 'Test' : 'Saving Throw'}`;
+  rollDice(modifier, { title: formattedTitle, subtitle });
+};
 </script>

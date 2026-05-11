@@ -280,6 +280,7 @@ const rollDice = useDiceRoller();
 const params = {
   environments__fields: 'name',
   document__fields: 'name,key,permalink',
+  exclude: 'modifiers'
 };
 
 const monsterId = useQueryParameter('id');
