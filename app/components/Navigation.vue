@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex w-full grow flex-col overflow-hidden bg-white text-black dark:bg-darkness dark:text-white">
+  <nav class="flex h-full flex-col overflow-y-visible bg-white pb-4 text-black dark:bg-darkness dark:text-white">
     <NuxtLink
       to="/"
       class="bg-red p-5 text-center font-serif text-3xl text-white hover:text-white"
@@ -19,7 +19,7 @@
       >
         <NuxtLink :to="path" class="inline-block w-full" @click="$emit('on-link-clicked')">
           <Icon :name="icon ?? ''" class="mx-4 size-8 text-red"/>
-          <span class=" ">{{ title }}</span>
+          <span>{{ title }}</span>
         </NuxtLink>
       </li>
     </ul>
