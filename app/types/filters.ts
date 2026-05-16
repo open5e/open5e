@@ -17,7 +17,7 @@ export type SpellFilterState = {
   name__contains?: string;
   level?: string;
   school__key?: string;
-  classes__key__in?: string;
+  classes__name__in?: string;
 };
 
 export type ResultTableSelectFieldFilter = {
