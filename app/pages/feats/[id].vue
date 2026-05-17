@@ -12,7 +12,7 @@
     </h1>
     <section>
       <p v-if="feat.prerequisite">
-        <span class="font-bold after:content-['._']">Prerequistes</span>
+        <span class="font-bold after:content-['._']">Prerequisites</span>
         <span>{{ feat.prerequisite }}</span>
       </p>
 
