@@ -117,7 +117,7 @@
     <p>
       Visiting an Open5e API endpoint will typically return <i>all</i> the 
       data associated with that entry. In most cases this will be overkill. 
-      The API is designed to so that users can explicitly <i>include</i> or 
+      The API is designed so that users can explicitly <i>include</i> or 
       <i>exclude</i> the specific fields they require in their application so 
       that their API classes execute as quickly as possible.
     </p>
@@ -133,7 +133,7 @@
     <pre>https://api.open5e.com/v2/creatures/?fields=name,key,document</pre>
 
     <p>
-      Fields defined in the comma-seperated value list will be included in 
+      Fields defined in the comma-separated value list will be included in 
       the API response, all others will be excluded. The above example will 
       only return Monster names, keys and source document information.
     </p>
