@@ -16,7 +16,7 @@
  *
  * -= DEPENDENCIES =-
  * This component uses the following sub-components
- * @component ResultsTableRow -> render table rows (refac'd into own cmpnt for readibility)
+ * @component ResultsTableRow -> render table rows (refac'd into own cmpnt for readability)
  * @component ResultsTableHeader -> captures logic for column headers
  */
 </script>
