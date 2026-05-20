@@ -47,7 +47,7 @@
       v-if="result.object_model === 'Creature' && result.object?.cr"
       class="text-sm"
     >
-      <span class="after:content-['_|_']">CR {{ result.object.cr }}</span>
+      <span class="after:content-['_|_']">CR {{ parseChallengeRating(result.object.cr) }}</span>
       <span>{{ `${result.object.type} (${result.object.size})` }}</span>
     </div>
 
@@ -89,7 +89,7 @@
 
 <script setup lang="ts">
 import type { SearchResult } from '@/types';
-import { formatSpellSubtitle } from '@/helpers';
+import { formatSpellSubtitle, parseChallengeRating } from '@/helpers';
 defineProps<{
   query: string;
   result: SearchResult;
