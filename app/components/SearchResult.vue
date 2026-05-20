@@ -59,7 +59,7 @@
     </div>
 
     <span
-      v-else-if="result.object_model === 'Item' && result.object.is_magic_item"
+      v-else-if="result.object_model === 'Item' && result.object?.is_magic_item"
       class="text-sm capitalize"
     >
       {{ `${result.object.type}, ${result.object.rarity}` }}
