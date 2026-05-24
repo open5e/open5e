@@ -17,7 +17,7 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { key: 'description', name: 'description', content: 'Free and open-source library of 5e rules, monsters, spells, etc. Powered by the Open5e API' },
-        
+        { name: 'theme-color', content: '#E74C3C' },
         // Open Graph metadata
         { property: 'og:title', content: 'Open5e'},
         { property: 'og:site:name', content: 'Open5e' },
@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         { property: 'og:image', content: 'https://open5e.com/img/logo.png'},
         { property: 'og:image:width', content: '200' },
         { property: 'og:image:height', content: '200' },
-
+        
         // Twitter metadata
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'Open5e' },
