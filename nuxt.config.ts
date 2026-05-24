@@ -17,7 +17,7 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { key: 'description', name: 'description', content: 'Free and open-source library of 5e rules, monsters, spells, etc. Powered by the Open5e API' },
-        { name: 'theme-color', content: '#E74C3C' },
+        { name: 'theme-color', content: '#a82315' },
         // Open Graph metadata
         { property: 'og:title', content: 'Open5e'},
         { property: 'og:site:name', content: 'Open5e' },
