@@ -17,7 +17,7 @@
 
 <template>
   <nav
-    class="flex h-min text-nowrap border border-smoke bg-white px-4 py-2 dark:border-smoke dark:bg-charcoal"
+    class="flex h-min text-nowrap"
     aria-label="breadcrumbs"
   >
     <ol class="space-x-1 text-sm font-semibold underline-offset-4 sm:space-x-3">
