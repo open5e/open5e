@@ -89,7 +89,7 @@ export default defineNuxtConfig({
   
   runtimeConfig: {
     public: {
-      apiUrl: process.env.API_URL || 'https://api.open5e.com',
+      apiUrl: (process.env.API_URL || 'https://api.open5e.com').replace(/\/+$/, ''),
     },
   },
 
