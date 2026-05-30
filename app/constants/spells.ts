@@ -26,6 +26,8 @@ export const spellcastingClasses = [
   'Bard',
   'Cleric',
   'Druid',
+  'Ranger',
+  'Paladin',
   'Sorcerer',
   'Warlock',
   'Wizard',
