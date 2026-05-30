@@ -1,0 +1,28 @@
+@layer components {
+
+  .form-label {
+    @apply font-serif whitespace-nowrap;
+  }
+
+  .form-input,
+  .form-select {
+    @apply
+    rounded-md
+    px-1
+    outline-none border border-transparent focus:border focus:border-red
+    bg-black/10 dark:bg-white/10 focus:bg-fog dark:focus:bg-basalt;
+  }
+
+  .form-select {
+    @apply cursor-pointer appearance-none;
+  }
+
+  label+.form-input,
+  label+.form-select {
+    @apply mt-1;
+  }
+
+  .form-select {
+    @apply cursor-pointer appearance-none;
+  }
+}

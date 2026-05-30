@@ -25,7 +25,7 @@
       <!-- MODAL MENU TITLE BAR -->
       <div class="flex w-full items-center justify-between">
 
-        <input 
+        <input
           id="select-deselect-all-checkbox"
           type="checkbox"
           :checked="allSelected"
@@ -38,14 +38,14 @@
         <h2 class="my-0 grow text-3xl">Sources Selector</h2>
 
         <!--  GAME SYSTEM SELECTOR -->
-        <div class="mb-2 grid">
-          <label class="text-right font-serif text-sm" for="system">
+        <div class="mb-2 grid border-b-[3px] border-red pb-[6px]">
+          <label class="text-right font-serif text-xs" for="system">
             System
           </label>
           <select
             id="system"
             v-model="currentSystem"
-            class="cursor-pointer appearance-none border-b-2 border-red bg-transparent text-right text-sm"
+            class="form-select cursor-pointer appearance-none text-right text-sm"
             @change="selectAllInSystem"
           >
             <option value="">–</option>
@@ -89,7 +89,7 @@
           </span>
 
           <ul v-if="!allPublisherSourcesInactive(publisher)">
-            <li 
+            <li
               v-for="document in documentsPerPublisher"
               :key="document.key"
               class="group flex w-full items-center"
@@ -110,12 +110,12 @@
               </label>
 
               <SourceTag :title="document.name" :text="document.key" />
-              
+
               <span
                 v-if="document.gamesystem"
                 class="ml-auto h-min rounded-xl bg-fog px-2 text-xs dark:bg-slate-800"
               >
-                {{ formatGameSystemTitle(document.gamesystem.name) }}
+                {{ gameSystemName(document.gamesystem.key) }}
               </span>
             </li>
           </ul>
@@ -271,13 +271,4 @@ function selectAllInSystem() {
 }
 
 const deselectAll = () => (selectedSources.value = []);
-
-function formatGameSystemTitle(input: string) {
-  const systemNameMap: Record<string, string> = {
-    '5th Edition 2014': '5e 2014',
-    '5th Edition 2024': '5e 2024',
-    'Advanced 5th Edition': 'Level Up A5e',
-  };
-  return systemNameMap[input] ?? input;
-}
 </script>

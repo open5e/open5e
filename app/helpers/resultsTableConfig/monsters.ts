@@ -73,7 +73,7 @@ export const monsterFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[]
     isLeastPriority: true,
   },
   {
-    name: 'CR (min)',
+    name: 'CR min',
     filterField: 'challenge_rating__gte',
     options: monsterChallengeRatings.map(([name, value]) => ({
       name: name,
@@ -81,7 +81,7 @@ export const monsterFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[]
     })),
   },
   {
-    name: 'CR (max)',
+    name: 'CR max',
     filterField: 'challenge_rating__lte',
     options: monsterChallengeRatings.map(([name, value]) => ({
       name: name,
