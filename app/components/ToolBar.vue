@@ -1,5 +1,5 @@
 <template>
-  <ul class="mt-1 grid gap-3 border-b-4 border-red pb-2 sm:border-none">
+  <ul class="mt-1 grid gap-3 pb-2 sm:border-none">
     <li>
       <ToolButtonSourceSelector />
     </li>

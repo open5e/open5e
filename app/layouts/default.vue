@@ -49,7 +49,7 @@
 
       <!-- Right sidebar -->
       <div
-        class="absolute right-0 z-50 border-white bg-white px-1 transition-transform dark:bg-darkness sm:relative sm:w-auto sm:px-2"
+        class="fixed right-0 z-50 bg-white px-1 transition-transform dark:bg-darkness sm:relative sm:w-auto sm:px-2"
         :class="isToolbarVisible ? 'translate-x-0 ' : 'translate-x-full sm:translate-x-0'"
       >
         <ToolBar
