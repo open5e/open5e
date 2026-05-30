@@ -50,11 +50,11 @@
           >
             <option value="">–</option>
             <option
-              v-for="systemOption in allGameSystems"
-              :key="systemOption"
-              :value="systemOption"
+              v-for="systemName in allGameSystems"
+              :key="systemName"
+              :value="systemName"
             >
-              {{ systemOption }}
+              {{ formatGameSystemTitle(systemName) }}
             </option>
           </select>
         </div>
@@ -186,9 +186,9 @@ const noneSelected = computed(() => selectedSources.value.length === 0);
 const documentsInSystem = computed<Document[]>(() => {
   if (!sourceDocuments?.value || sourceDocuments.value.length === 0) return [];
   if (!currentSystem.value) return sourceDocuments.value;
-  return sourceDocuments.value.filter((document) => {
-    return document.gamesystem.name === currentSystem.value;
-  });
+  return sourceDocuments.value.filter(
+    document => document.gamesystem?.name === currentSystem.value,
+  );
 
 });
 
@@ -203,14 +203,13 @@ const groupedDocuments = computed<Record<string, Document[]>>(() => {
 
 const currentSystem = ref(gameSystem.value ?? '');
 
-// returns the names of all game systems present in API data
-const allGameSystems = computed(() => {
-  if (!documents.value) return [];
-  return [...new Set(documents.value
-      .map(doc => doc.gamesystem?.name)
-      .filter(Boolean)
-  )];
-});
+const allGameSystems = computed(() => [
+  ...new Set(
+    sourceDocuments.value
+      .map(document => document.gamesystem?.name)
+      .filter(Boolean),
+  ),
+]);
 
 // save current form selection to local memory
 function saveSelection() {
