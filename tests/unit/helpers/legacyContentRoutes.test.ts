@@ -6,6 +6,7 @@ import {
   getSlugFromKey,
   legacySlugToSearchQuery,
   LEGACY_CONTENT_ROUTES,
+  parseLegacySourceSlug,
 } from '@/helpers/legacyContentRoutes';
 import { buildSearchResultUrl } from '@/helpers/buildSearchResultUrl';
 
@@ -42,6 +43,26 @@ describe('legacySlugToSearchQuery', () => {
   });
 });
 
+describe('parseLegacySourceSlug', () => {
+  it('splits source-suffixed slugs using the mapping table', () => {
+    expect(parseLegacySourceSlug('aboleth-bf')).toEqual({
+      baseSlug: 'aboleth',
+      v2Prefix: 'bfrd',
+    });
+    expect(parseLegacySourceSlug('goblin-a5e')).toEqual({
+      baseSlug: 'goblin',
+      v2Prefix: 'a5e-mm',
+    });
+  });
+
+  it('leaves flat slugs unchanged', () => {
+    expect(parseLegacySourceSlug('aboleth')).toEqual({ baseSlug: 'aboleth' });
+    expect(parseLegacySourceSlug('radiant-spark-swarm')).toEqual({
+      baseSlug: 'radiant-spark-swarm',
+    });
+  });
+});
+
 describe('filterSearchResults', () => {
   const config = LEGACY_CONTENT_ROUTES.monsters;
 
@@ -67,6 +88,26 @@ describe('filterSearchResults', () => {
     const matches = filterSearchResults(results, 'goblin', config);
 
     expect(matches.map((result) => result.object_pk)).toEqual(['srd_goblin', 'a5e-mm_goblin']);
+  });
+
+  it('filters ambiguous matches by v2 prefix when a source suffix was provided', () => {
+    const results = [
+      makeSearchResult({
+        object_pk: 'srd_goblin',
+        object_model: 'Creature',
+      }),
+      makeSearchResult({
+        object_pk: 'a5e-mm_goblin',
+        object_model: 'Creature',
+      }),
+      makeSearchResult({
+        object_pk: 'bfrd_goblin',
+        object_model: 'Creature',
+      }),
+    ];
+
+    expect(filterSearchResults(results, 'goblin', config, 'bfrd').map((r) => r.object_pk))
+      .toEqual(['bfrd_goblin']);
   });
 
   it('filters magic items separately from equipment', () => {

@@ -8,6 +8,28 @@ export type LegacyContentRouteConfig = {
   resultFilter?: (result: SearchResult) => boolean;
 };
 
+export const V1_SUFFIX_TO_V2_PREFIX: Record<string, string> = {
+  bf: 'bfrd',
+  blackflag: 'bfrd',
+  a5e: 'a5e-mm',
+  menagerie: 'a5e-mm',
+  tob: 'tob',
+  'tob-2023': 'tob-2023',
+  tob2: 'tob2',
+  tob3: 'tob3',
+  cc: 'ccdx',
+  srd: 'srd',
+  'wotc-srd': 'srd',
+  o5e: 'open5e',
+  dmag: 'deepm',
+  'dmag-e': 'deepmx',
+  warlock: 'wz',
+  vom: 'vom',
+  toh: 'toh',
+  taldorei: 'tdcs',
+  kp: 'kp',
+};
+
 export const LEGACY_CONTENT_ROUTES: Record<string, LegacyContentRouteConfig> = {
   monsters: {
     apiEndpoint: 'v2/creatures/',
@@ -68,15 +90,38 @@ export function legacySlugToSearchQuery(slug: string): string {
   return slug.replace(/-/g, ' ');
 }
 
+export function parseLegacySourceSlug(slug: string): { baseSlug: string; v2Prefix?: string } {
+  if (slug.includes('_')) return { baseSlug: slug };
+
+  const suffixes = Object.keys(V1_SUFFIX_TO_V2_PREFIX).sort((a, b) => b.length - a.length);
+
+  for (const suffix of suffixes) {
+    if (!slug.endsWith(`-${suffix}`)) continue;
+
+    const baseSlug = slug.slice(0, -(suffix.length + 1));
+    if (!baseSlug) continue;
+
+    return {
+      baseSlug,
+      v2Prefix: V1_SUFFIX_TO_V2_PREFIX[suffix],
+    };
+  }
+
+  return { baseSlug: slug };
+}
+
 export function filterSearchResults(
   results: SearchResult[],
   legacySlug: string,
   config: LegacyContentRouteConfig,
+  v2Prefix?: string,
 ): SearchResult[] {
   return results.filter((result) => {
     if (result.object_model !== config.objectModel) return false;
     if (config.resultFilter && !config.resultFilter(result)) return false;
-    return getSlugFromKey(result.object_pk) === legacySlug;
+    if (getSlugFromKey(result.object_pk) !== legacySlug) return false;
+    if (v2Prefix && !result.object_pk.startsWith(`${v2Prefix}_`)) return false;
+    return true;
   });
 }
 
@@ -112,6 +157,7 @@ async function searchLegacyMatches(
   apiUrl: string,
   slug: string,
   config: LegacyContentRouteConfig,
+  v2Prefix?: string,
 ): Promise<SearchResult[]> {
   const data = await $fetch<SearchResponse>(`${apiUrl}/v2/search/`, {
     params: {
@@ -122,7 +168,7 @@ async function searchLegacyMatches(
     },
   });
 
-  return filterSearchResults(data.results ?? [], slug, config);
+  return filterSearchResults(data.results ?? [], slug, config, v2Prefix);
 }
 
 export async function resolveLegacySlug(
@@ -134,7 +180,16 @@ export async function resolveLegacySlug(
     return { status: 'exists' };
   }
 
-  const matches = await searchLegacyMatches(apiUrl, slug, config);
+  const { baseSlug, v2Prefix } = parseLegacySourceSlug(slug);
+
+  if (v2Prefix) {
+    const directKey = `${v2Prefix}_${baseSlug}`;
+    if (await resourceExists(apiUrl, config.apiEndpoint, directKey)) {
+      return { status: 'redirect', url: `/${config.basePath}/${directKey}` };
+    }
+  }
+
+  const matches = await searchLegacyMatches(apiUrl, baseSlug, config, v2Prefix);
 
   if (matches.length === 1) {
     return { status: 'redirect', url: buildSearchResultUrl(matches[0]) };

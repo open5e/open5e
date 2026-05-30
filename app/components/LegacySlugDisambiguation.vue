@@ -2,7 +2,7 @@
   <main class="docs-container container">
     <h1>Content is now organized by game version and source</h1>
     <p class="text-sm text-granite">
-      This link matches multiple versions of "{{ displayName }}". Choose one below.
+      This link potentially matches multiple versions of "{{ displayName }}":
     </p>
     <ul class="mt-6 divide-y divide-fog dark:divide-granite">
       <li
