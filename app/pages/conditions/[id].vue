@@ -3,7 +3,7 @@
     v-if="condition"
     class="docs-container container"
   >
-    <h1 class="p-b-4">
+    <h1 class="m-b-4">
       <span>{{ condition.name }}</span>
       <source-tag
         v-if="sourceKey"
