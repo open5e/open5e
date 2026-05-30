@@ -278,10 +278,13 @@ import { formatModifier, snakeToTitleCase, parseChallengeRating } from '@/helper
 
 const rollDice = useDiceRoller();
 
+const EXCLUDE_FIELDS = ['modifiers', 'speed_all', 'saving_throws_all', 'normal_sight_range', 'skill_bonuses_all'];
+
 const params = {
   environments__fields: 'name',
   document__fields: 'name,key,permalink',
-  exclude: 'modifiers'
+  actions__exclude: 'attacks',
+  exclude: EXCLUDE_FIELDS.join(','),
 };
 
 const monsterId = useQueryParameter('id');
@@ -399,7 +402,6 @@ const encounterStore = useEncounterStore();
 
 const addToEncounter = () => {
   if (!monster.value) return;
-  console.log('test');
 
   encounterStore.addMonster(
     monster.value.key,

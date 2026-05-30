@@ -47,7 +47,7 @@
       v-if="result.object_model === 'Creature' && result.object?.cr"
       class="text-sm"
     >
-      <span class="after:content-['_|_']">CR {{ result.object.cr }}</span>
+      <span class="after:content-['_|_']">CR {{ parseChallengeRating(result.object.cr) }}</span>
       <span>{{ `${result.object.type} (${result.object.size})` }}</span>
     </div>
 
@@ -59,7 +59,7 @@
     </div>
 
     <span
-      v-else-if="result.object_model === 'Item' && result.object.is_magic_item && formatSearchResultSubtitle(result)"
+      v-else-if="result.object_model === 'Item' && result.object?.is_magic_item && formatSearchResultSubtitle(result)"
       class="text-sm capitalize"
     >
       {{ formatSearchResultSubtitle(result) }}
@@ -89,7 +89,7 @@
 
 <script setup lang="ts">
 import type { SearchResult } from '@/types';
-import { formatSearchResultSubtitle } from '@/helpers';
+import { formatSearchResultSubtitle, parseChallengeRating } from '@/helpers';
 import { buildSearchResultUrl } from '@/helpers/buildSearchResultUrl';
 defineProps<{
   query: string;

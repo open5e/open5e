@@ -2,13 +2,13 @@
   <!-- BACKGROUND (visible behind page content at wide screen widths)       -->
   <!-- bg-radial-gradiant arbitrary classes generate the dotted bg pattern  -->
   <div
-    class="grid min-h-screen justify-center overflow-hidden bg-white bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
+    class="grid min-h-screen justify-center bg-white bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
   >
     <div class="flex h-full max-w-[1440px] sm:mx-0 sm:w-screen">
       <!-- Left sidebar -->
       <aside
-        class="absolute z-50 flex h-full w-56 flex-col overflow-y-auto text-white transition-transform dark:bg-charcoal sm:relative sm:transition-none"
-        :class="isNavbarVisible ? 'translate-x-2' : '-translate-x-full sm:translate-x-2'"
+        class="absolute z-50 flex w-56 flex-col text-white transition-transform dark:bg-charcoal sm:relative sm:transition-none"
+        :class="isNavbarVisible ? 'translate-x-0' : '-translate-x-full sm:translate-x-0'"
       >
          <Navigation @on-link-clicked="hideSidebars" />
       </aside>
@@ -21,12 +21,12 @@
         <div class="content-wrapper h-full overflow-y-auto  overflow-x-hidden">
 
           <!-- Site Header: Mobile -->
-          <header class="flex justify-between sm:hidden">
+          <header class="flex h-16 items-center justify-between bg-red sm:hidden">
             <SidebarToggle class="m-2 flex-none" @click="toggleSidebar" />
 
             <NuxtLink
               to="/"
-              class="p-2 pb-0 text-center font-serif text-2xl text-red dark:text-white"
+              class="text-center font-serif text-3xl text-white hover:text-smoke"
             >
               Open5e
             </NuxtLink>
@@ -34,7 +34,7 @@
             <ToolBarToggle class="my-2 mr-4 flex-none" @btn-clicked="toggleToolbar" />
           </header>
           
-          <div class="-mt-3 grid h-min w-full justify-center gap-1 px-2 text-lg sm:m-4 sm:justify-start sm:pl-4">
+          <div class="mt-2 grid h-min w-full justify-center gap-1 px-2 text-lg sm:m-4 sm:justify-start sm:pl-4">
             <BreadcrumbLinks class="grow" />
           </div>
 
@@ -49,7 +49,7 @@
 
       <!-- Right sidebar -->
       <div
-        class="absolute right-0 z-50 border-white bg-white px-1 transition-transform dark:bg-darkness sm:relative sm:w-auto sm:px-2"
+        class="fixed right-0 z-50 bg-white px-1 transition-transform dark:bg-darkness sm:relative sm:w-auto sm:px-2"
         :class="isToolbarVisible ? 'translate-x-0 ' : 'translate-x-full sm:translate-x-0'"
       >
         <ToolBar
@@ -70,7 +70,7 @@
     <!-- Shade: fades out main content when sidebar expanded on mobile -->
     <div
       v-show="isNavbarVisible || isToolbarVisible"
-      class="fixed left-0 top-0 z-48 size-full bg-basalt/50 sm:hidden"
+      class="fixed left-0 top-0 z-48 size-full bg-basalt/25 sm:hidden"
       @click="hideSidebars"
     />
   </div>
