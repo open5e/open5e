@@ -1,9 +1,5 @@
 <template>
-  <LegacySlugDisambiguation
-    v-if="disambiguation?.length"
-    :slug="backgroundId"
-    :matches="disambiguation"
-  />
+  <LegacySlugDisambiguation v-if="showDisambiguation" />
   <main
     v-else-if="background"
     class="docs-container container"
@@ -76,8 +72,7 @@
 import type { Background, BackgroundBenefit } from '@/types';
 
 const backgroundId = useQueryParameter('id');
-const disambiguation = useLegacyDisambiguation();
-const fetchEnabled = computed(() => !disambiguation.value?.length);
+const { fetchEnabled, showDisambiguation } = useLegacyContentDetail();
 const { data: background } = useFindOne(
   API_ENDPOINTS.backgrounds,
   backgroundId,

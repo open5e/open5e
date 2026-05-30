@@ -6,7 +6,7 @@
     </p>
     <ul class="mt-6 divide-y divide-fog dark:divide-granite">
       <li
-        v-for="match in matches"
+        v-for="match in matches ?? []"
         :key="match.object_pk"
         class="py-4"
       >
@@ -17,10 +17,10 @@
           ({{ match.document.name }})
         </h3>
         <p
-          v-if="subtitle(match)"
+          v-if="formatSearchResultSubtitle(match)"
           class="mt-1 text-sm text-granite"
         >
-          {{ subtitle(match) }}
+          {{ formatSearchResultSubtitle(match) }}
         </p>
       </li>
     </ul>
@@ -28,36 +28,10 @@
 </template>
 
 <script setup lang="ts">
-import type { SearchResult } from '@/types';
-import { formatSpellSubtitle } from '@/helpers';
-import { buildSearchResultUrl } from '@/helpers/buildSearchResultUrl';
+import { buildSearchResultUrl, formatSearchResultSubtitle } from '@/helpers';
 
-const props = defineProps<{
-  slug: string;
-  matches: SearchResult[];
-}>();
+const slug = useQueryParameter('id');
+const matches = useLegacyDisambiguation();
 
-const displayName = computed(() => {
-  if (props.matches.length === 0) return props.slug;
-  return props.matches[0].object_name;
-});
-
-function subtitle(match: SearchResult): string | null {
-  if (match.object_model === 'Creature' && match.object?.cr) {
-    return `CR ${match.object.cr} · ${match.object.type} (${match.object.size})`;
-  }
-
-  if (match.object_model === 'Spell') {
-    return formatSpellSubtitle({
-      level: match.object?.level,
-      school: match.object?.school,
-    });
-  }
-
-  if (match.object_model === 'Item' && match.object?.is_magic_item) {
-    return `${match.object.type}, ${match.object.rarity}`;
-  }
-
-  return null;
-}
+const displayName = computed(() => matches.value?.[0]?.object_name ?? slug);
 </script>

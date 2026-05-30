@@ -52,17 +52,17 @@
     </div>
 
     <div
-      v-if="result.object_model === 'Spell'"
+      v-if="result.object_model === 'Spell' && formatSearchResultSubtitle(result)"
       class="text-sm capitalize"
     >
-      {{ formatSpellTitle(result) }}
+      {{ formatSearchResultSubtitle(result) }}
     </div>
 
     <span
-      v-else-if="result.object_model === 'Item' && result.object.is_magic_item"
+      v-else-if="result.object_model === 'Item' && result.object.is_magic_item && formatSearchResultSubtitle(result)"
       class="text-sm capitalize"
     >
-      {{ `${result.object.type}, ${result.object.rarity}` }}
+      {{ formatSearchResultSubtitle(result) }}
     </span>
 
     <!-- Ruleset caption for Rules  -->
@@ -89,7 +89,7 @@
 
 <script setup lang="ts">
 import type { SearchResult } from '@/types';
-import { formatSpellSubtitle } from '@/helpers';
+import { formatSearchResultSubtitle } from '@/helpers';
 import { buildSearchResultUrl } from '@/helpers/buildSearchResultUrl';
 defineProps<{
   query: string;
@@ -126,12 +126,6 @@ const formatCategory = (input: SearchResult) => {
     return `${input.object.subspecies_of.name} Subspecies`;
   return category; // BASE-CASE: return category without alteration
 };
-
-const formatSpellTitle = (result: SearchResult) => formatSpellSubtitle({
-  level: result.object?.level,
-  school: result.object?.school,
-});
-
 </script>
 
 <style>

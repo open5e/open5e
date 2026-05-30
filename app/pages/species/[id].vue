@@ -1,9 +1,5 @@
 <template>
-  <LegacySlugDisambiguation
-    v-if="disambiguation?.length"
-    :slug="speciesId"
-    :matches="disambiguation"
-  />
+  <LegacySlugDisambiguation v-if="showDisambiguation" />
   <section
     v-else-if="species"
     class="docs-container container"
@@ -79,8 +75,7 @@
 import type { Species } from '~/types';
 
 const speciesId = useQueryParameter('id');
-const disambiguation = useLegacyDisambiguation();
-const fetchEnabled = computed(() => !disambiguation.value?.length);
+const { fetchEnabled, showDisambiguation } = useLegacyContentDetail();
 const { data: species } = useFindOne(API_ENDPOINTS.species, speciesId, {
   params: { subspecies_of__isnull: 'true' },
   enabled: fetchEnabled,

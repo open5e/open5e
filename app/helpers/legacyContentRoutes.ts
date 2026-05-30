@@ -90,12 +90,12 @@ export function legacySlugToSearchQuery(slug: string): string {
   return slug.replace(/-/g, ' ');
 }
 
+const LEGACY_SOURCE_SUFFIXES = Object.keys(V1_SUFFIX_TO_V2_PREFIX).sort((a, b) => b.length - a.length);
+
 export function parseLegacySourceSlug(slug: string): { baseSlug: string; v2Prefix?: string } {
   if (slug.includes('_')) return { baseSlug: slug };
 
-  const suffixes = Object.keys(V1_SUFFIX_TO_V2_PREFIX).sort((a, b) => b.length - a.length);
-
-  for (const suffix of suffixes) {
+  for (const suffix of LEGACY_SOURCE_SUFFIXES) {
     if (!slug.endsWith(`-${suffix}`)) continue;
 
     const baseSlug = slug.slice(0, -(suffix.length + 1));
@@ -148,8 +148,10 @@ async function resourceExists(apiUrl: string, apiEndpoint: string, slug: string)
   try {
     await $fetch(`${apiUrl}/${apiEndpoint}${slug}/`);
     return true;
-  } catch {
-    return false;
+  } catch (error) {
+    const statusCode = (error as { statusCode?: number })?.statusCode;
+    if (statusCode === 404) return false;
+    throw error;
   }
 }
 

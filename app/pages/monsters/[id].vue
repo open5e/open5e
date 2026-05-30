@@ -1,9 +1,5 @@
 <template>
-  <LegacySlugDisambiguation
-    v-if="disambiguation?.length"
-    :slug="monsterId"
-    :matches="disambiguation"
-  />
+  <LegacySlugDisambiguation v-if="showDisambiguation" />
   <main
     v-else-if="monster"
     class="docs-container container"
@@ -289,8 +285,7 @@ const params = {
 };
 
 const monsterId = useQueryParameter('id');
-const disambiguation = useLegacyDisambiguation();
-const fetchEnabled = computed(() => !disambiguation.value?.length);
+const { fetchEnabled, showDisambiguation } = useLegacyContentDetail();
 const { data: monster } = useFindOne(
   API_ENDPOINTS.monsters,
   monsterId,

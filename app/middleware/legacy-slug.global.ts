@@ -1,3 +1,4 @@
+import { legacyDisambiguationStateKey } from '@/composables/useLegacyDisambiguation';
 import { getLegacyContentRoute, resolveLegacySlug } from '@/helpers/legacyContentRoutes';
 
 export default defineNuxtRouteMiddleware(async (to) => {
@@ -15,6 +16,11 @@ export default defineNuxtRouteMiddleware(async (to) => {
   }
 
   if (resolution.status === 'disambiguate') {
-    useState(`legacy-disambiguation:${to.fullPath}`, () => resolution.matches);
+    useState(legacyDisambiguationStateKey(to.path), () => resolution.matches);
+    return;
+  }
+
+  if (resolution.status === 'not_found') {
+    throw createError({ statusCode: 404, statusMessage: 'Page not found' });
   }
 });

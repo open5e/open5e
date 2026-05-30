@@ -1,9 +1,5 @@
 <template>
-  <LegacySlugDisambiguation
-    v-if="disambiguation?.length"
-    :slug="featId"
-    :matches="disambiguation"
-  />
+  <LegacySlugDisambiguation v-if="showDisambiguation" />
   <main
     v-else-if="feat"
     class="docs-container container"
@@ -39,8 +35,7 @@
 import type { Feat } from '~/types';
 
 const featId = useQueryParameter('id');
-const disambiguation = useLegacyDisambiguation();
-const fetchEnabled = computed(() => !disambiguation.value?.length);
+const { fetchEnabled, showDisambiguation } = useLegacyContentDetail();
 const { data: feat } = useFindOne(API_ENDPOINTS.feats, featId, {
   params: {
     fields: ['name', 'desc', 'prerequisite', 'document', 'benefits'].join(','),

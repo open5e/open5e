@@ -1,9 +1,5 @@
 <template>
-  <LegacySlugDisambiguation
-    v-if="disambiguation?.length"
-    :slug="itemId"
-    :matches="disambiguation"
-  />
+  <LegacySlugDisambiguation v-if="showDisambiguation" />
   <section v-else class="docs-container container">
     <div v-if="item">
       <h1 class="inline">
@@ -44,8 +40,7 @@
 import type { MagicItem } from '@/types';
 
 const itemId = useQueryParameter('id');
-const disambiguation = useLegacyDisambiguation();
-const fetchEnabled = computed(() => !disambiguation.value?.length);
+const { fetchEnabled, showDisambiguation } = useLegacyContentDetail();
 const { data: item } = useFindOne(API_ENDPOINTS.magicitems, itemId, { enabled: fetchEnabled });
 
 useSeoEntry(item as Ref<MagicItem>);
