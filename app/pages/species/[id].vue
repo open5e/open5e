@@ -1,6 +1,11 @@
 <template>
+  <LegacySlugDisambiguation
+    v-if="disambiguation?.length"
+    :slug="speciesId"
+    :matches="disambiguation"
+  />
   <section
-    v-if="species"
+    v-else-if="species"
     class="docs-container container"
   >
     <div class="flex items-center">
@@ -74,8 +79,11 @@
 import type { Species } from '~/types';
 
 const speciesId = useQueryParameter('id');
+const disambiguation = useLegacyDisambiguation();
+const fetchEnabled = computed(() => !disambiguation.value?.length);
 const { data: species } = useFindOne(API_ENDPOINTS.species, speciesId, {
   params: { subspecies_of__isnull: 'true' },
+  enabled: fetchEnabled,
 });
 
 useSeoEntry(species as Ref<Species>);

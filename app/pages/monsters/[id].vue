@@ -1,6 +1,11 @@
 <template>
+  <LegacySlugDisambiguation
+    v-if="disambiguation?.length"
+    :slug="monsterId"
+    :matches="disambiguation"
+  />
   <main
-    v-if="monster"
+    v-else-if="monster"
     class="docs-container container"
   >
     <!-- TITLE -->
@@ -284,10 +289,12 @@ const params = {
 };
 
 const monsterId = useQueryParameter('id');
+const disambiguation = useLegacyDisambiguation();
+const fetchEnabled = computed(() => !disambiguation.value?.length);
 const { data: monster } = useFindOne(
   API_ENDPOINTS.monsters,
   monsterId,
-  { params },
+  { params, enabled: fetchEnabled },
 );
 
 useSeoEntry(monster as Ref<Creature>);

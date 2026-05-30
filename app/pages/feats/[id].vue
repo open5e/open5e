@@ -1,6 +1,11 @@
 <template>
+  <LegacySlugDisambiguation
+    v-if="disambiguation?.length"
+    :slug="featId"
+    :matches="disambiguation"
+  />
   <main
-    v-if="feat"
+    v-else-if="feat"
     class="docs-container container"
   >
     <h1>
@@ -34,10 +39,13 @@
 import type { Feat } from '~/types';
 
 const featId = useQueryParameter('id');
+const disambiguation = useLegacyDisambiguation();
+const fetchEnabled = computed(() => !disambiguation.value?.length);
 const { data: feat } = useFindOne(API_ENDPOINTS.feats, featId, {
   params: {
     fields: ['name', 'desc', 'prerequisite', 'document', 'benefits'].join(','),
   },
+  enabled: fetchEnabled,
 });
 
 useSeoEntry(feat as Ref<Feat>);

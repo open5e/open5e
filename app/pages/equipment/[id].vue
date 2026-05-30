@@ -1,5 +1,10 @@
 <template>
-  <section class="docs-container container">
+  <LegacySlugDisambiguation
+    v-if="disambiguation?.length"
+    :slug="itemId"
+    :matches="disambiguation"
+  />
+  <section v-else class="docs-container container">
     <div v-if="item">
       <h1>{{ item.name }}</h1>
 
@@ -118,8 +123,10 @@
 import type { Item, WeaponSummary } from '@/types';
 
 const itemId = useQueryParameter('id');
+const disambiguation = useLegacyDisambiguation();
+const fetchEnabled = computed(() => !disambiguation.value?.length);
 const params = { 'is_magic_item': 'false' };
-const { data: item } = useFindOne(API_ENDPOINTS.equipment, itemId, { params });
+const { data: item } = useFindOne(API_ENDPOINTS.equipment, itemId, { params, enabled: fetchEnabled });
 
 useSeoEntry(item as Ref<Item>);
 
