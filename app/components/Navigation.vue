@@ -2,7 +2,7 @@
   <nav class="flex h-full flex-col overflow-y-visible bg-white pb-4 text-black dark:bg-darkness dark:text-white">
     <NuxtLink
       to="/"
-      class="bg-red p-5 text-center font-serif text-3xl text-white hover:text-white"
+      class="flex h-16 items-center justify-center bg-red py-4 font-serif text-3xl text-white hover:text-white"
       @click="$emit('on-link-clicked')"
     >
       Open5e

@@ -21,12 +21,12 @@
         <div class="content-wrapper h-full overflow-y-auto  overflow-x-hidden">
 
           <!-- Site Header: Mobile -->
-          <header class="flex justify-between sm:hidden">
+          <header class="flex h-16 items-center justify-between bg-red sm:hidden">
             <SidebarToggle class="m-2 flex-none" @click="toggleSidebar" />
 
             <NuxtLink
               to="/"
-              class="p-2 pb-0 text-center font-serif text-2xl text-red dark:text-white"
+              class="text-center font-serif text-3xl text-white hover:text-smoke"
             >
               Open5e
             </NuxtLink>
@@ -34,7 +34,7 @@
             <ToolBarToggle class="my-2 mr-4 flex-none" @btn-clicked="toggleToolbar" />
           </header>
           
-          <div class="-mt-3 grid h-min w-full justify-center gap-1 px-2 text-lg sm:m-4 sm:justify-start sm:pl-4">
+          <div class="mt-2 grid h-min w-full justify-center gap-1 px-2 text-lg sm:m-4 sm:justify-start sm:pl-4">
             <BreadcrumbLinks class="grow" />
           </div>
 
