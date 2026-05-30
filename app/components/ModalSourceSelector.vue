@@ -115,7 +115,7 @@
                 v-if="document.gamesystem"
                 class="ml-auto h-min rounded-xl bg-fog px-2 text-xs dark:bg-slate-800"
               >
-                {{ gameSystemName(document.gamesystem.key) }}
+                {{ formatGameSystemTitle(document.gamesystem.name) }}
               </span>
             </li>
           </ul>
@@ -271,4 +271,13 @@ function selectAllInSystem() {
 }
 
 const deselectAll = () => (selectedSources.value = []);
+
+function formatGameSystemTitle(input: string) {
+  const systemNameMap: Record<string, string> = {
+    '5th Edition 2014': '5e 2014',
+    '5th Edition 2024': '5e 2024',
+    'Advanced 5th Edition': 'Level Up A5e',
+  };
+  return systemNameMap[input] ?? input;
+}
 </script>
