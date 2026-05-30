@@ -21,6 +21,7 @@ export const API_ENDPOINTS = {
   rules: 'v2/rulesets/',
   equipment: 'v2/items/',
   licenses: 'v2/licenses/',
+  gamesystems: 'v2/gamesystems/',
 } as const;
 
 export interface EndpointToFindOneTypeMap {
@@ -53,6 +54,7 @@ export interface EndpointToFindManyTypeMap {
   'v2/spells/': Schemas['Spell'][];
   'v2/rulesets/': Schemas['RuleSet'][];
   'v2/licenses/': Schemas['License'][];
+  'v2/gamesystems/': Schemas['GameSystem'][];
 }
 
 export interface EndpointToPaginatedTypeMap {
@@ -74,7 +76,7 @@ export interface EndpointToPaginatedTypeMap {
 export type ExtractItemType<T> = T extends { results: (infer U)[] } ? U : never;
 
 // convenience type to get item type from endpoint key
-export type ExtractPaginatedItemType<T extends keyof EndpointToPaginatedTypeMap> = 
+export type ExtractPaginatedItemType<T extends keyof EndpointToPaginatedTypeMap> =
   ExtractItemType<EndpointToPaginatedTypeMap[T]>;
 
 // define custom error type to support passing Open5e data via an error message
@@ -186,6 +188,19 @@ export const useDocuments = (
       const data = await findMany(API_ENDPOINTS.documents, [], params);
       return data;
     }
+  });
+};
+
+export const useGameSystems = (
+  params: Record<string, string> = { fields: 'key,name' },
+) => {
+  const { findMany } = useAPI();
+  return useQuery({
+    queryKey: ['findMany', API_ENDPOINTS.gamesystems, params],
+    queryFn: async (): Promise<EndpointToFindManyTypeMap['v2/gamesystems/']> => {
+      const data = await findMany(API_ENDPOINTS.gamesystems, [], params);
+      return data;
+    },
   });
 };
 

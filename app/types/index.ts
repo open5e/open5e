@@ -57,6 +57,12 @@ export type SearchObjectPayload = {
 }
 
 // type interface for the `cols` prop
+export interface TabBarItem {
+  id: string;
+  label: string;
+  subtitle?: string;
+}
+
 export interface TableColumn<T extends Open5eData> {
   displayName: string;
   value: (data: T) => string | number | boolean;
