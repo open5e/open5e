@@ -2,13 +2,13 @@
   <!-- BACKGROUND (visible behind page content at wide screen widths)       -->
   <!-- bg-radial-gradiant arbitrary classes generate the dotted bg pattern  -->
   <div
-    class="grid min-h-screen justify-center overflow-hidden bg-white bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
+    class="grid min-h-screen justify-center bg-white bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
   >
     <div class="flex h-full max-w-[1440px] sm:mx-0 sm:w-screen">
       <!-- Left sidebar -->
       <aside
-        class="absolute z-50 flex h-full w-56 flex-col overflow-y-auto text-white transition-transform dark:bg-charcoal sm:relative sm:transition-none"
-        :class="isNavbarVisible ? 'translate-x-2' : '-translate-x-full sm:translate-x-2'"
+        class="absolute z-50 flex w-56 flex-col text-white transition-transform dark:bg-charcoal sm:relative sm:transition-none"
+        :class="isNavbarVisible ? 'translate-x-0' : '-translate-x-full sm:translate-x-0'"
       >
          <Navigation @on-link-clicked="hideSidebars" />
       </aside>
@@ -70,7 +70,7 @@
     <!-- Shade: fades out main content when sidebar expanded on mobile -->
     <div
       v-show="isNavbarVisible || isToolbarVisible"
-      class="fixed left-0 top-0 z-48 size-full bg-basalt/50 sm:hidden"
+      class="fixed left-0 top-0 z-48 size-full bg-basalt/25 sm:hidden"
       @click="hideSidebars"
     />
   </div>
