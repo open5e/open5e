@@ -17,11 +17,7 @@
   <span
     :class="['tag-element', 'font-sans', 'font-medium', 'ml-2']"
     :title="title"
-    :style="{
-      backgroundColor: text ? computedColor(text, 80, 95) : background,
-      color: text ? computedColor(text, 50, 30) : textColor,
-      // borderColor: text ? computedColor(text, 80, 90) : border,
-    }"
+    :style="tagStyle"
   >
     {{ text }}
   </span>
@@ -30,7 +26,7 @@
 <script setup lang="ts">
 import colors from 'tailwindcss/colors';
 
-defineProps({
+const props = defineProps({
   text: { type: String, default: '' },
   title: { type: String, default: '' },
   textColor: { type: String, default: colors.slate[900] },
@@ -38,30 +34,33 @@ defineProps({
   border: { type: String, default: colors.slate[300] },
 });
 
-// this creates a quick (but non-cryptographic) numeric hash of the string
-function hashCode(str: string) {
-  let hash = 0;
-  for (let i = 0, len = str.length; i < len; i++) {
-    // convert each character of the string to a number
-    const chr = str.charCodeAt(i);
-    // then bitshift the number by 5 and add it to the hash
-    hash = chr + (hash << 6) - hash;
-    // then convert the hash to a 32bit integer
-    hash |= 0;
+function hash(str: string) {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) {
+    h = Math.imul(31, h) + str.charCodeAt(i) | 0;
   }
-  return hash;
+  return h >>> 0;
 }
-function computedColor(str: string, s: number, l: number) {
-  // take in a numerical string that will become the hue
-  let h = hashCode(str);
-  // reverse the number and append it to the original number
-  // this ensures even small changes to any character of the string will result in a different color
-  h = parseFloat(h + Math.abs(h).toString().split('').reverse().join(''));
-  // convert the number to a hue in the HSL color space by taking modulo 360 of the hash
-  h = h % 360;
-  // generate an hsl color using the hue value and passed in saturation and lightness values
-  return 'hsl(' + h + ', ' + s + '%, ' + l + '%)';
+
+function sourceTagColors(str: string) {
+  const h = hash(str);
+  const hue = (h * 137.508) % 360;
+  return {
+    background: `hsl(${hue}, ${78 + (h % 17)}%, ${79 + ((h >> 8) % 9)}%)`,
+    color: `hsl(${hue}, ${55 + ((h >> 4) % 20)}%, ${16 + ((h >> 12) % 9)}%)`,
+  };
 }
+
+const tagStyle = computed(() => {
+  if (!props.text) {
+    return {
+      backgroundColor: props.background,
+      color: props.textColor,
+    };
+  }
+  const { background, color } = sourceTagColors(props.text);
+  return { backgroundColor: background, color };
+});
 </script>
 
 <style lang="scss" scoped>

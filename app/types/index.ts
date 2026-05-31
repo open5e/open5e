@@ -14,6 +14,7 @@ export type CreatureTypeSummary = components['schemas']['CreatureTypeSummary'];
 export type Document = components['schemas']['Document'];
 export type DocumentSummary = components['schemas']['DocumentSummary'];
 export type Feat = components['schemas']['Feat'];
+export type GameSystem = components['schemas']['GameSystem'];
 export type License = components['schemas']['License'];
 export type Rule = components['schemas']['Rule'];
 export type RuleSet = components['schemas']['RuleSet'];
@@ -57,6 +58,12 @@ export type SearchObjectPayload = {
 }
 
 // type interface for the `cols` prop
+export interface TabBarItem {
+  id: string;
+  label: string;
+  subtitle?: string;
+}
+
 export interface TableColumn<T extends Open5eData> {
   displayName: string;
   value: (data: T) => string | number | boolean;

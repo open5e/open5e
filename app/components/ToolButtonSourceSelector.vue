@@ -24,16 +24,16 @@
 <script setup lang="ts">
 const showModal = ref(false);
 
-const { data: documents } = useDocuments({ fields: 'key', type: 'SOURCE' });
+const { sourceDocuments } = useCatalog();
 const { sources } = useSourcesList();
 
 const selectedSourcesFraction = computed(() => {
-  if (!sources.value || !documents.value) return '';
-  const allSourceDocumentKeys = documents.value.map(document => document.key);
+  if (!sources.value || sourceDocuments.value.length === 0) return '';
+  const allSourceDocumentKeys = sourceDocuments.value.map(document => document.key);
   const numerator = sources.value
     .filter(source => allSourceDocumentKeys.includes(source))
     .length;
-  const denominator = documents.value?.length;
+  const denominator = sourceDocuments.value.length;
   return `${numerator}/${denominator}`;
 });
 

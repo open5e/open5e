@@ -50,11 +50,11 @@
           >
             <option value="">–</option>
             <option
-              v-for="systemName in allGameSystems"
-              :key="systemName"
-              :value="systemName"
+              v-for="system in allGameSystems"
+              :key="system.key"
+              :value="system.key"
             >
-              {{ formatGameSystemTitle(systemName) }}
+              {{ formatGameSystemTitle(system.name) }}
             </option>
           </select>
         </div>
@@ -147,29 +147,17 @@ import type { Document } from '@/types';
 
 const emit = defineEmits(['close']);
 const closeModal = () => {
-  // reset menu state to current active sources after closing animation finishes
   setTimeout(() => selectedSources.value = [...sources.value], 500);
   emit('close');
 };
 
-const { data: documents } = useDocuments({
-  fields: ['key', 'name', 'publisher', 'gamesystem', 'type'].join(','),
-  publisher__fields: ['name', 'key'].join(','),
-  gamesystem__fields: ['name', 'key'].join(','),
-});
+const {
+  sourceDocuments,
+  miscDocuments,
+  sortedGameSystemsForSourceDocuments,
+} = useCatalog();
 
 const { sources, setSources, gameSystem, setGameSystem } = useSourcesList();
-
-// Seperate SOURCE and MISC documents, only use the former in the modal menu
-// and add the later back in when updating selected sources in local memory
-
-const sourceDocuments = computed(() => (
-  documents?.value?.filter(document => document.type === 'SOURCE') ?? []
-));
-
-const miscDocuments = computed(() => (
-  documents?.value?.filter(document => document.type !== 'SOURCE') ?? []
-));
 
 // Keep selectedSources in sync with global sources state
 const selectedSources: Ref<string[]> = ref([]);
@@ -184,12 +172,11 @@ const noneSelected = computed(() => selectedSources.value.length === 0);
 
 // filter documents by the current game system
 const documentsInSystem = computed<Document[]>(() => {
-  if (!sourceDocuments?.value || sourceDocuments.value.length === 0) return [];
+  if (sourceDocuments.value.length === 0) return [];
   if (!currentSystem.value) return sourceDocuments.value;
   return sourceDocuments.value.filter(
-    document => document.gamesystem?.name === currentSystem.value,
+    document => document.gamesystem.key === currentSystem.value,
   );
-
 });
 
 // group filtered documents by publisher
@@ -203,13 +190,7 @@ const groupedDocuments = computed<Record<string, Document[]>>(() => {
 
 const currentSystem = ref(gameSystem.value ?? '');
 
-const allGameSystems = computed(() => [
-  ...new Set(
-    sourceDocuments.value
-      .map(document => document.gamesystem?.name)
-      .filter(Boolean),
-  ),
-]);
+const allGameSystems = sortedGameSystemsForSourceDocuments;
 
 // save current form selection to local memory
 function saveSelection() {
