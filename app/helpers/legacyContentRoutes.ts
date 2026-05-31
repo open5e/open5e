@@ -1,13 +1,23 @@
+// Legacy flat-slug resolution for v1 URLs; used by legacy-slug middleware and /{type}/{slug}/choose.
 import type { SearchResult } from '@/types';
+import { API_ENDPOINTS } from '@/composables/api';
 import { buildSearchResultUrl } from './buildSearchResultUrl';
 
 export type LegacyContentRouteConfig = {
   apiEndpoint: string;
   objectModel: string;
-  basePath: string;
   resultFilter?: (result: SearchResult) => boolean;
 };
 
+function legacyRoute(
+  apiEndpoint: string,
+  objectModel: string,
+  resultFilter?: (result: SearchResult) => boolean,
+): LegacyContentRouteConfig {
+  return { apiEndpoint, objectModel, resultFilter };
+}
+
+// maps v1 suffixes to v2 prefixes so we can redirect explicit legacy links
 export const V1_SUFFIX_TO_V2_PREFIX: Record<string, string> = {
   bf: 'bfrd',
   blackflag: 'bfrd',
@@ -30,49 +40,25 @@ export const V1_SUFFIX_TO_V2_PREFIX: Record<string, string> = {
   kp: 'kp',
 };
 
+// maps site route segments to the appropriate v2 content type and legacy route config
 export const LEGACY_CONTENT_ROUTES: Record<string, LegacyContentRouteConfig> = {
-  monsters: {
-    apiEndpoint: 'v2/creatures/',
-    objectModel: 'Creature',
-    basePath: 'monsters',
-  },
-  spells: {
-    apiEndpoint: 'v2/spells/',
-    objectModel: 'Spell',
-    basePath: 'spells',
-  },
-  'magic-items': {
-    apiEndpoint: 'v2/magicitems/',
-    objectModel: 'Item',
-    basePath: 'magic-items',
-    resultFilter: (result) => result.object?.is_magic_item === true,
-  },
-  equipment: {
-    apiEndpoint: 'v2/items/',
-    objectModel: 'Item',
-    basePath: 'equipment',
-    resultFilter: (result) => result.object?.is_magic_item !== true,
-  },
-  feats: {
-    apiEndpoint: 'v2/feats/',
-    objectModel: 'Feat',
-    basePath: 'feats',
-  },
-  backgrounds: {
-    apiEndpoint: 'v2/backgrounds/',
-    objectModel: 'Background',
-    basePath: 'backgrounds',
-  },
-  conditions: {
-    apiEndpoint: 'v2/conditions/',
-    objectModel: 'Condition',
-    basePath: 'conditions',
-  },
-  species: {
-    apiEndpoint: 'v2/species/',
-    objectModel: 'Species',
-    basePath: 'species',
-  },
+  monsters: legacyRoute(API_ENDPOINTS.monsters, 'Creature'),
+  spells: legacyRoute(API_ENDPOINTS.spells, 'Spell'),
+  // handles legacy magic items and equipment
+  'magic-items': legacyRoute(
+    API_ENDPOINTS.magicitems,
+    'Item',
+    (result) => result.object?.is_magic_item === true,
+  ),
+  equipment: legacyRoute(
+    API_ENDPOINTS.equipment,
+    'Item',
+    (result) => result.object?.is_magic_item !== true,
+  ),
+  feats: legacyRoute(API_ENDPOINTS.feats, 'Feat'),
+  backgrounds: legacyRoute(API_ENDPOINTS.backgrounds, 'Background'),
+  conditions: legacyRoute(API_ENDPOINTS.conditions, 'Condition'),
+  species: legacyRoute(API_ENDPOINTS.species, 'Species'),
 };
 
 export type LegacySlugResolution =
@@ -81,13 +67,11 @@ export type LegacySlugResolution =
   | { status: 'disambiguate'; matches: SearchResult[] }
   | { status: 'not_found' };
 
-export function getSlugFromKey(key: string): string {
-  const idx = key.indexOf('_');
-  return idx === -1 ? key : key.slice(idx + 1);
-}
-
-export function legacySlugToSearchQuery(slug: string): string {
-  return slug.replace(/-/g, ' ');
+// Normalize v2 object keys and v1 URL slugs. If for search, convert hyphens to spaces.
+export function legacySlug(value: string, forSearch = false): string {
+  const idx = value.indexOf('_');
+  const slug = idx === -1 ? value : value.slice(idx + 1);
+  return forSearch ? slug.replace(/-/g, ' ') : slug;
 }
 
 const LEGACY_SOURCE_SUFFIXES = Object.keys(V1_SUFFIX_TO_V2_PREFIX).sort((a, b) => b.length - a.length);
@@ -110,22 +94,25 @@ export function parseLegacySourceSlug(slug: string): { baseSlug: string; v2Prefi
   return { baseSlug: slug };
 }
 
+// filter search results to only include those that match the cleaned legacy term + v2 prefix
 export function filterSearchResults(
   results: SearchResult[],
-  legacySlug: string,
+  slug: string,
   config: LegacyContentRouteConfig,
   v2Prefix?: string,
 ): SearchResult[] {
   return results.filter((result) => {
     if (result.object_model !== config.objectModel) return false;
     if (config.resultFilter && !config.resultFilter(result)) return false;
-    if (getSlugFromKey(result.object_pk) !== legacySlug) return false;
+    if (legacySlug(result.object_pk) !== slug) return false;
     if (v2Prefix && !result.object_pk.startsWith(`${v2Prefix}_`)) return false;
     return true;
   });
 }
 
+// determine whether a url is a legacy content route and map it to the appropriate v2 content type
 export function getLegacyContentRoute(path: string): {
+  routeSegment: string;
   config: LegacyContentRouteConfig;
   slug: string;
 } | null {
@@ -137,7 +124,7 @@ export function getLegacyContentRoute(path: string): {
   const config = LEGACY_CONTENT_ROUTES[routeSegment];
   if (!config || !slug) return null;
 
-  return { config, slug };
+  return { routeSegment, config, slug };
 }
 
 type SearchResponse = {
@@ -163,7 +150,7 @@ async function searchLegacyMatches(
 ): Promise<SearchResult[]> {
   const data = await $fetch<SearchResponse>(`${apiUrl}/v2/search/`, {
     params: {
-      query: legacySlugToSearchQuery(slug),
+      query: legacySlug(slug, true),
       object_model: config.objectModel,
       schema: 'v2',
       limit: 50,
@@ -173,7 +160,9 @@ async function searchLegacyMatches(
   return filterSearchResults(data.results ?? [], slug, config, v2Prefix);
 }
 
+// Direct key lookup, then v1 suffix rewrite, then search-and-filter fallback.
 export async function resolveLegacySlug(
+  routeSegment: string,
   config: LegacyContentRouteConfig,
   slug: string,
   apiUrl: string,
@@ -187,7 +176,7 @@ export async function resolveLegacySlug(
   if (v2Prefix) {
     const directKey = `${v2Prefix}_${baseSlug}`;
     if (await resourceExists(apiUrl, config.apiEndpoint, directKey)) {
-      return { status: 'redirect', url: `/${config.basePath}/${directKey}` };
+      return { status: 'redirect', url: `/${routeSegment}/${directKey}` };
     }
   }
 

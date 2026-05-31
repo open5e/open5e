@@ -48,7 +48,7 @@ const apiUrl = useRuntimeConfig().public.apiUrl as string;
 
 const { data: resolution } = await useAsyncData(
   `legacy-choose:${contentType}:${slug}`,
-  () => resolveLegacySlug(config, slug, apiUrl),
+  () => resolveLegacySlug(contentType, config, slug, apiUrl),
 );
 
 if (resolution.value?.status === 'redirect') {

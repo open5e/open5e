@@ -7,12 +7,5 @@ export { snakeToTitleCase } from './snakeToTitleCase';
 export { titleCaseToKebabCase } from './titleCaseToKebabCase';
 export { buildSearchResultUrl } from './buildSearchResultUrl';
 export { formatSearchResultSubtitle } from './formatSearchResultSubtitle';
-export {
-  filterSearchResults,
-  getLegacyContentRoute,
-  getSlugFromKey,
-  legacySlugToSearchQuery,
-  LEGACY_CONTENT_ROUTES,
-} from './legacyContentRoutes';
 
 export * from './resultsTableConfig';

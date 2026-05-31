@@ -3,8 +3,7 @@ import type { SearchResult } from '@/types';
 import {
   filterSearchResults,
   getLegacyContentRoute,
-  getSlugFromKey,
-  legacySlugToSearchQuery,
+  legacySlug,
   LEGACY_CONTENT_ROUTES,
   parseLegacySourceSlug,
 } from '@/helpers/legacyContentRoutes';
@@ -25,21 +24,16 @@ function makeSearchResult(overrides: Partial<SearchResult> & Pick<SearchResult, 
   } as SearchResult;
 }
 
-describe('getSlugFromKey', () => {
-  it('returns the portion after the first underscore', () => {
-    expect(getSlugFromKey('tob2_radiant-spark-swarm')).toBe('radiant-spark-swarm');
-    expect(getSlugFromKey('srd-2024_goblin-minion')).toBe('goblin-minion');
+describe('legacySlug', () => {
+  it('strips the v2 source prefix from an object key', () => {
+    expect(legacySlug('tob2_radiant-spark-swarm')).toBe('radiant-spark-swarm');
+    expect(legacySlug('srd-2024_goblin-minion')).toBe('goblin-minion');
+    expect(legacySlug('goblin')).toBe('goblin');
   });
 
-  it('returns the full key when no underscore is present', () => {
-    expect(getSlugFromKey('goblin')).toBe('goblin');
-  });
-});
-
-describe('legacySlugToSearchQuery', () => {
-  it('converts hyphens to spaces', () => {
-    expect(legacySlugToSearchQuery('radiant-spark-swarm')).toBe('radiant spark swarm');
-    expect(legacySlugToSearchQuery('fireball')).toBe('fireball');
+  it('converts hyphens to spaces for search when forSearch is true', () => {
+    expect(legacySlug('radiant-spark-swarm', true)).toBe('radiant spark swarm');
+    expect(legacySlug('fireball', true)).toBe('fireball');
   });
 });
 
@@ -134,10 +128,12 @@ describe('filterSearchResults', () => {
 describe('getLegacyContentRoute', () => {
   it('parses supported legacy content routes', () => {
     expect(getLegacyContentRoute('/monsters/radiant-spark-swarm')).toEqual({
+      routeSegment: 'monsters',
       config: LEGACY_CONTENT_ROUTES.monsters,
       slug: 'radiant-spark-swarm',
     });
     expect(getLegacyContentRoute('/magic-items/adamantine-armor/')).toEqual({
+      routeSegment: 'magic-items',
       config: LEGACY_CONTENT_ROUTES['magic-items'],
       slug: 'adamantine-armor',
     });

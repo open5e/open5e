@@ -5,11 +5,11 @@ export default defineNuxtRouteMiddleware(async (to) => {
   const route = getLegacyContentRoute(to.path);
   if (!route) return;
 
-  const { config, slug } = route;
+  const { routeSegment, config, slug } = route;
   if (slug.includes('_')) return;
 
   const apiUrl = useRuntimeConfig().public.apiUrl as string;
-  const resolution = await resolveLegacySlug(config, slug, apiUrl);
+  const resolution = await resolveLegacySlug(routeSegment, config, slug, apiUrl);
 
   if (resolution.status === 'redirect') {
     return navigateTo(resolution.url, { redirectCode: 301 });
