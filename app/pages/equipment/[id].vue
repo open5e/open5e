@@ -135,7 +135,7 @@ const formatCost = (input: string) => {
 };
 const weaponHasProperties = (weapon: WeaponSummary, propertiesToFind: string[] = []): boolean => {
   if (!weapon || propertiesToFind.length === 0) return false;
-  
+
   return weapon.properties.some((item) => (
     propertiesToFind.includes(item.property.name)
   ));

@@ -80,7 +80,7 @@
 
 <script setup lang="ts">
 import type { Spell } from '@/types';
-const spellId = useQueryParameter('id'); 
+const spellId = useQueryParameter('id');
 const { data: spell } = useFindOne(API_ENDPOINTS.spells, spellId);
 
 useSeoEntry(spell as Ref<Spell>);

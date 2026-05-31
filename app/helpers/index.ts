@@ -6,5 +6,7 @@ export { compareGameSystems, sortGameSystemKeys, sortGameSystems } from './sortG
 export { parseChallengeRating } from './parseChallengeRating';
 export { snakeToTitleCase } from './snakeToTitleCase';
 export { titleCaseToKebabCase } from './titleCaseToKebabCase';
+export { buildSearchResultUrl } from './buildSearchResultUrl';
+export { formatSearchResultSubtitle } from './formatSearchResultSubtitle';
 
 export * from './resultsTableConfig';

@@ -75,7 +75,7 @@ const { data: condition } = useFindOne(API_ENDPOINTS.conditions, conditionId,
   {
     params: {
       fields: ['name', 'descriptions', 'document'].join(','),
-      document__fields: ['key', 'display_name'].join(','),
+      document__fields: ['key', 'display_name'].join(',')
     },
   },
 );
