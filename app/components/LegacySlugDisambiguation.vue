@@ -10,12 +10,12 @@
         :key="match.object_pk"
         class="py-4"
       >
-        <h3 class="mt-1 text-lg">
+        <h2 class="mt-1 border-none p-0 text-lg">
           <NuxtLink :to="buildSearchResultUrl(match)">
             {{ match.object_name }}
           </NuxtLink>
           ({{ match.document.name }})
-        </h3>
+        </h2>
         <p
           v-if="formatSearchResultSubtitle(match)"
           class="mt-1 text-sm text-granite"
