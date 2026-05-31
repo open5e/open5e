@@ -4,17 +4,6 @@
       <h1 class="my-2">
         Equipment
       </h1>
-
-      <ResultsTablePaginator
-        :page-number="paginator.pageNo || 1"
-        :last-page-number="paginator.lastPageNo || 1"
-        :items-per-page="paginator.itemsPerPage || 1"
-        :total-items="data?.count || 1"
-        @first="paginator.firstPage()"
-        @next="paginator.nextPage()"
-        @prev="paginator.prevPage()"
-        @last="paginator.lastPage()"
-      />
     </div>
 
     <ResultsTableFilter
@@ -33,6 +22,16 @@
       :is-sort-descending="isSortDescending"
       @sort="(sortValue) => setSortState(sortValue)"
     />
+    <ResultsTablePaginator
+        :page-number="paginator.pageNo || 1"
+        :last-page-number="paginator.lastPageNo || 1"
+        :items-per-page="paginator.itemsPerPage || 1"
+        :total-items="data?.count || 1"
+        @first="paginator.firstPage()"
+        @next="paginator.nextPage()"
+        @prev="paginator.prevPage()"
+        @last="paginator.lastPage()"
+      />
   </section>
 </template>
 

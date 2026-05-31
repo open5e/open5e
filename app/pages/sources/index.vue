@@ -1,12 +1,12 @@
 <template>
   <section class="docs-container container">
     <div>
-      <h1>Sources</h1>
+      <h1 p-b-2>Sources</h1>
 
       <!-- Outer list is a list of Publishers -->
       <ul>
-        <li 
-          v-for="(docs, publisher) in sortDocumentsByPublisher(documents as Document[])"
+        <li
+          v-for="(docs, publisher) in sortDocumentsByPublisher(documents)"
           :key="publisher"
         >
           <!-- Inner list is a list of Sources per Publisher -->
@@ -14,7 +14,7 @@
           <dl class="flex flex-col">
 
             <!-- Card for each Source -->
-            <div 
+            <div
               v-for="doc in docs"
               :key="doc.name"
               class="my-2 border bg-fog p-2 dark:bg-basalt"
@@ -29,7 +29,7 @@
                 <p class="mt-0">{{ doc.desc?.split(" ").slice(0,50).join(" ") }}</p>
                 <p v-if="doc.licenses.length > 0" class="mt-0 text-sm text-gray-500">
                   {{`
-                    Published under the 
+                    Published under the
                     ${doc.licenses.map((l) => l.key).join(' / ').toUpperCase()}
                     ${" " + (doc.licenses.length > 1) ? "licenses" : "license"}`}}
                 </p>
@@ -43,8 +43,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Document } from '@/types';
 import { sortDocumentsByPublisher } from '@/helpers';
-const { data: documents } = useDocuments();
+
+const { documents } = useCatalog();
 useSeoIndex({ title: 'Documents' });
 </script>

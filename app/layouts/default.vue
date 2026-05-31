@@ -14,8 +14,8 @@
       </aside>
 
       <!-- Page central column -->
-      <div 
-        class="w-screen flex-1 overflow-hidden bg-white pl-2 text-charcoal transition-transform dark:bg-darkness dark:text-white sm:p-0 sm:transition-none"
+      <div
+        class="w-screen flex-1 overflow-hidden bg-white text-charcoal transition-transform dark:bg-darkness dark:text-white sm:p-0 sm:transition-none"
         :class="isNavbarVisible ? 'translate-x-56 sm:translate-x-0' : ''"
       >
         <div class="content-wrapper h-full overflow-y-auto  overflow-x-hidden">
@@ -33,8 +33,8 @@
 
             <ToolBarToggle class="my-2 mr-4 flex-none" @btn-clicked="toggleToolbar" />
           </header>
-          
-          <div class="mt-2 grid h-min w-full justify-center gap-1 px-2 text-lg sm:m-4 sm:justify-start sm:pl-4">
+
+          <div class="mb-0 mt-2 grid h-min w-full justify-center gap-1 pb-0 text-lg sm:m-4 sm:mb-0 sm:justify-start sm:pl-4">
             <BreadcrumbLinks class="grow" />
           </div>
 
@@ -56,7 +56,7 @@
           v-if="!isEncounterVisible"
           @encounter-builder-clicked="toggleEncounter"
         />
-        <div 
+        <div
           v-else
           class="h-min border-granite sm:border-l"
         >
@@ -64,7 +64,7 @@
         </div>
       </div>
     </div>
-    
+
     <AppFooter />
 
     <!-- Shade: fades out main content when sidebar expanded on mobile -->
