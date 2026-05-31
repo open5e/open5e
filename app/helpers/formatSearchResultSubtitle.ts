@@ -1,6 +1,5 @@
 import type { SearchResult } from '@/types';
-import { formatSpellSubtitle } from './formatSpellSubtitle';
-import { parseChallengeRating } from './parseChallengeRating';
+import { formatSpellSubtitle, parseChallengeRating } from '@/helpers';
 
 export function formatSearchResultSubtitle(result: SearchResult): string | null {
   if (result.object_model === 'Creature' && result.object?.cr) {
