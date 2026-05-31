@@ -1,3 +1,6 @@
+// useCatalog manages information about the source Documents and GameSystems 
+// present in the the Open5e dataset, in addition their inter-relations.
+
 import { useQuery } from '@tanstack/vue-query';
 import { computed } from 'vue';
 import { API_ENDPOINTS, useAPI } from '@/composables/api';
