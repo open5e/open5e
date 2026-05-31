@@ -1,7 +1,6 @@
 <template>
-  <LegacySlugDisambiguation v-if="showDisambiguation" />
   <main
-    v-else-if="feat"
+    v-if="feat"
     class="docs-container container"
   >
     <h1>
@@ -35,12 +34,10 @@
 import type { Feat } from '~/types';
 
 const featId = useQueryParameter('id');
-const { fetchEnabled, showDisambiguation } = useLegacyContentDetail();
 const { data: feat } = useFindOne(API_ENDPOINTS.feats, featId, {
   params: {
     fields: ['name', 'desc', 'prerequisite', 'document', 'benefits'].join(','),
   },
-  enabled: fetchEnabled,
 });
 
 useSeoEntry(feat as Ref<Feat>);

@@ -1,4 +1,4 @@
-import { legacyDisambiguationStateKey } from '@/composables/useLegacyDisambiguation';
+// Legacy flat-slug URLs (no source prefix): 301 redirect, 404, or send to /{type}/{slug}/choose.
 import { getLegacyContentRoute, resolveLegacySlug } from '@/helpers/legacyContentRoutes';
 
 export default defineNuxtRouteMiddleware(async (to) => {
@@ -16,8 +16,8 @@ export default defineNuxtRouteMiddleware(async (to) => {
   }
 
   if (resolution.status === 'disambiguate') {
-    useState(legacyDisambiguationStateKey(to.path), () => resolution.matches);
-    return;
+    const contentType = to.path.split('/').filter(Boolean)[0];
+    return navigateTo(`/${contentType}/${slug}/choose`, { redirectCode: 302 });
   }
 
   if (resolution.status === 'not_found') {

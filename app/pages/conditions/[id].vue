@@ -1,7 +1,6 @@
 <template>
-  <LegacySlugDisambiguation v-if="showDisambiguation" />
   <section
-    v-else-if="condition"
+    v-if="condition"
     class="docs-container container"
   >
     <h1>
@@ -43,14 +42,12 @@
 import type { Condition } from '@/types';
 
 const conditionId = useQueryParameter('id');
-const { fetchEnabled, showDisambiguation } = useLegacyContentDetail();
 const { data: condition } = useFindOne(API_ENDPOINTS.conditions, conditionId,
   { 
     params: { 
       fields: ['name', 'descriptions', 'document'].join(','),
       document__fields: ['key', 'display_name'].join(',')
     },
-    enabled: fetchEnabled,
   },
 );
 

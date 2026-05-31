@@ -1,7 +1,6 @@
 <template>
-  <LegacySlugDisambiguation v-if="showDisambiguation" />
   <section
-    v-else-if="species"
+    v-if="species"
     class="docs-container container"
   >
     <div class="flex items-center">
@@ -75,10 +74,8 @@
 import type { Species } from '~/types';
 
 const speciesId = useQueryParameter('id');
-const { fetchEnabled, showDisambiguation } = useLegacyContentDetail();
 const { data: species } = useFindOne(API_ENDPOINTS.species, speciesId, {
   params: { subspecies_of__isnull: 'true' },
-  enabled: fetchEnabled,
 });
 
 useSeoEntry(species as Ref<Species>);

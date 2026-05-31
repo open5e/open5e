@@ -1,7 +1,6 @@
 <template>
-  <LegacySlugDisambiguation v-if="showDisambiguation" />
   <main
-    v-else-if="background"
+    v-if="background"
     class="docs-container container"
   >
     <section>
@@ -72,11 +71,9 @@
 import type { Background, BackgroundBenefit } from '@/types';
 
 const backgroundId = useQueryParameter('id');
-const { fetchEnabled, showDisambiguation } = useLegacyContentDetail();
 const { data: background } = useFindOne(
   API_ENDPOINTS.backgrounds,
   backgroundId,
-  { enabled: fetchEnabled },
 );
 
 useSeoEntry(background as Ref<Background>);

@@ -1,6 +1,5 @@
 <template>
-  <LegacySlugDisambiguation v-if="showDisambiguation" />
-  <section v-else class="docs-container container">
+  <section class="docs-container container">
     <div v-if="item">
       <h1 class="inline">
         {{ item.name }}
@@ -40,8 +39,7 @@
 import type { MagicItem } from '@/types';
 
 const itemId = useQueryParameter('id');
-const { fetchEnabled, showDisambiguation } = useLegacyContentDetail();
-const { data: item } = useFindOne(API_ENDPOINTS.magicitems, itemId, { enabled: fetchEnabled });
+const { data: item } = useFindOne(API_ENDPOINTS.magicitems, itemId);
 
 useSeoEntry(item as Ref<MagicItem>);
 </script>

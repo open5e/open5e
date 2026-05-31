@@ -1,6 +1,5 @@
 <template>
-  <LegacySlugDisambiguation v-if="showDisambiguation" />
-  <main v-else-if="spell">
+  <main v-if="spell">
     <h1>{{ spell.name }}</h1>
     <p  class="italic">
       <span v-if="spell.level == 0">
@@ -82,8 +81,7 @@
 <script setup lang="ts">
 import type { Spell } from '@/types';
 const spellId = useQueryParameter('id');
-const { fetchEnabled, showDisambiguation } = useLegacyContentDetail();
-const { data: spell } = useFindOne(API_ENDPOINTS.spells, spellId, { enabled: fetchEnabled });
+const { data: spell } = useFindOne(API_ENDPOINTS.spells, spellId);
 
 useSeoEntry(spell as Ref<Spell>);
 
