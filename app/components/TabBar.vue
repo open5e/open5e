@@ -14,8 +14,8 @@
       :tabindex="model === tab.id ? 0 : -1"
       class="cursor-pointer px-4 py-2 text-left transition-colors"
       :class="model === tab.id
-        ? 'border-b-2 border-red text-blood'
-        : 'text-black dark:text-white hover:text-red/50 dark:hover:text-red/50'"
+        ? 'border-b-2 border-red dark:text-red text-blood'
+        : 'text-black dark:text-white hover:text-red/75 dark:hover:text-blood'"
 
       @click="model = tab.id"
       @keydown="onKeydown($event, tab.id)"
