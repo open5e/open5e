@@ -1,9 +1,11 @@
 import type { SearchResult } from '@/types';
 import { formatSpellSubtitle } from './formatSpellSubtitle';
+import { parseChallengeRating } from './parseChallengeRating';
 
 export function formatSearchResultSubtitle(result: SearchResult): string | null {
   if (result.object_model === 'Creature' && result.object?.cr) {
-    return `CR ${result.object.cr} · ${result.object.type} (${result.object.size})`;
+    const  { cr, type, size } = result.object;
+    return `CR ${parseChallengeRating(cr)} · ${type} (${size})`;
   }
 
   if (result.object_model === 'Spell') {
