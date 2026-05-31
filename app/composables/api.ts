@@ -178,32 +178,6 @@ export const useFindMany = <T extends keyof EndpointToFindManyTypeMap> (
   });
 };
 
-export const useDocuments = (
-  params: Record<string, string> = {}
-) => {
-  const { findMany } = useAPI();
-  return useQuery({
-    queryKey: ['findMany', API_ENDPOINTS.documents, params],
-    queryFn: async (): Promise<EndpointToFindManyTypeMap['v2/documents/']> => {
-      const data = await findMany(API_ENDPOINTS.documents, [], params);
-      return data;
-    }
-  });
-};
-
-export const useGameSystems = (
-  params: Record<string, string> = { fields: 'key,name' },
-) => {
-  const { findMany } = useAPI();
-  return useQuery({
-    queryKey: ['findMany', API_ENDPOINTS.gamesystems, params],
-    queryFn: async (): Promise<EndpointToFindManyTypeMap['v2/gamesystems/']> => {
-      const data = await findMany(API_ENDPOINTS.gamesystems, [], params);
-      return data;
-    },
-  });
-};
-
 export const useSearch = (queryRef: ComputedRef<string>) => {
   const { findMany } = useAPI();
   return useQuery({
