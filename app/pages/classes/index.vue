@@ -1,19 +1,7 @@
 <template>
   <section class="docs-container container">
-    <div class="grid w-full grid-cols-2">
+    <div class="flex w-full">
       <h1 class="my-2 w-screen">Classes</h1>
-      
-      <ResultsTablePaginator
-        class="w-min-content w-full"
-        :page-number="paginator.pageNo || 1"
-        :last-page-number="paginator.lastPageNo || 1"
-        :items-per-page="paginator.itemsPerPage || 1"
-        :total-items="data?.count || 1"
-        @first="paginator.firstPage()"
-        @next="paginator.nextPage()"
-        @prev="paginator.prevPage()"
-        @last="paginator.lastPage()"
-      />
     </div>
 
     <ResultsTableFilter
@@ -31,6 +19,16 @@
       :sort-by="sortBy"
       @sort="(sortValue) => setSortState(sortValue)"
     />
+    <ResultsTablePaginator
+        :page-number="paginator.pageNo || 1"
+        :last-page-number="paginator.lastPageNo || 1"
+        :items-per-page="paginator.itemsPerPage || 1"
+        :total-items="data?.count || 1"
+        @first="paginator.firstPage()"
+        @next="paginator.nextPage()"
+        @prev="paginator.prevPage()"
+        @last="paginator.lastPage()"
+      />
   </section>
 </template>
 

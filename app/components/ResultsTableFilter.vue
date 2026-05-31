@@ -50,7 +50,7 @@
         :name="search?.name"
         placeholder="Search..."
         :value="filterState.fieldsState.value[search.filterField]"
-        class="w-full rounded-full border border-granite bg-transparent p-1 pl-8 outline-none transition-colors focus:w-full focus:min-w-40 focus:bg-fog dark:focus:bg-basalt"
+        class="form-input w-full rounded-full border border-granite p-1 pl-8 outline-none transition-colors focus:w-full focus:min-w-40"
         @input="
           filterState.updateField(
             search?.filterField,
@@ -64,11 +64,11 @@
     <div
       v-for="field in selectFields"
       :key="field.name"
-      class="grid columns-1 justify-center border-b border-red"
+      class="grid columns-1 justify-center"
       :class="{ 'hidden sm:grid': field.isLeastPriority }"
     >
       <label
-        class="font-serif text-xs"
+        class="form-label text-xs"
         :for="field.name"
       >
         {{ field.name }}
@@ -78,7 +78,7 @@
         :id="field.name"
         :key="field.name"
         :name="field.name"
-        class="cursor-pointer bg-transparent fill-red text-left"
+        class="form-select text-left"
         :value="filterState.fieldsState.value[field.filterField]"
         @input="
           filterState.updateField(

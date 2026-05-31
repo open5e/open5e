@@ -4,15 +4,16 @@
     :on-click-handler="() => showModal = true"
     :title="`Select Sources`"
   >
+  <div class="flex flex-col items-center justify-center">
     <Icon name="majesticons:book-open-line" class="z-20 size-6"/>
     <p
-      v-if="selectedSourcesFraction" 
-      class="absolute -bottom-3 z-30 my-0 text-nowrap py-0 text-xs text-black  dark:text-white"
+      v-if="selectedSourcesFraction"
+      class="transpar absolute -bottom-3 z-30 mb-0 text-nowrap rounded-full border border-black bg-white px-2 text-xs text-black dark:border-white dark:bg-black dark:text-white"
     >
       {{ selectedSourcesFraction }}
     </p>
-
-    <ModalSourceSelector 
+  </div>
+    <ModalSourceSelector
       :show="showModal"
       @close="showModal = false"
     />
