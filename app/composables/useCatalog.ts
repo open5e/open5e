@@ -2,10 +2,7 @@ import { useQuery } from '@tanstack/vue-query';
 import { computed } from 'vue';
 import { API_ENDPOINTS, useAPI } from '@/composables/api';
 import { sortGameSystemKeys as sortGameSystemKeysHelper, sortGameSystems } from '@/helpers';
-import type { Document } from '@/types';
-import type { components } from '@/types/open5e-api';
-
-type GameSystem = components['schemas']['GameSystem'];
+import type { Document, GameSystem } from '@/types';
 
 const CATALOG_DOCUMENT_PARAMS = {
   fields: ['key', 'name', 'type', 'desc', 'publisher', 'gamesystem', 'licenses'].join(','),
