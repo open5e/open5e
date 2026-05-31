@@ -11,10 +11,12 @@ export default defineNuxtRouteMiddleware(async (to) => {
   const apiUrl = useRuntimeConfig().public.apiUrl as string;
   const resolution = await resolveLegacySlug(routeSegment, config, slug, apiUrl);
 
+  // if a direct match is found, redirect to the v2 url
   if (resolution.status === 'redirect') {
     return navigateTo(resolution.url, { redirectCode: 301 });
   }
 
+  // if multiple matches are found, redirect to the choose page
   if (resolution.status === 'disambiguate') {
     const contentType = to.path.split('/').filter(Boolean)[0];
     return navigateTo(`/${contentType}/${slug}/choose`, { redirectCode: 302 });
