@@ -2,9 +2,9 @@ import { test, expect } from 'vitest';
 import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
 import MagicItemsPage from '~/pages/magic-items/index.vue';
 
-const page = await mountSuspended(MagicItemsPage);
 
 test('/magic-items page can mount', async () => {
+  const page = await mountSuspended(MagicItemsPage);
   expect(page);
 });
 
