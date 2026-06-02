@@ -1,16 +1,16 @@
 import { test, expect } from 'vitest';
 import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
-import ConditionPage from '~/pages/feats/[id].vue';
+import FeatPage from '~/pages/feats/[id].vue';
 
 const { data: feat } = useFindOne(API_ENDPOINTS.feats, 'srd_grappler');
 
-const page = await mountSuspended(ConditionPage);
-
 test('/feats/[id] page can mount', async () => {
+  const page = await mountSuspended(FeatPage);
   expect(page);
 });
 
 test('/feats/[id] page renders title', async () => {
+  const page = await mountSuspended(FeatPage);
   const title = page.find('h1');
   expect(title.exists()).toBe(true);
   expect(title.text()).toEqual(unref(feat)?.name);

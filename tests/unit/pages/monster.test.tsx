@@ -4,13 +4,13 @@ import MonsterPage from '~/pages/monsters/[id].vue';
 
 const { data: monster } = useFindOne(API_ENDPOINTS.monsters, 'srd_goblin');
 
-const page = await mountSuspended(MonsterPage);
-
 test('/monsters/[id] page can mount', async () => {
+  const page = await mountSuspended(MonsterPage);
   expect(page);
 });
 
 test('/monsters/[id] page renders title', async () => {
+  const page = await mountSuspended(MonsterPage);
   const title = page.find('h1');
   expect(title.exists()).toBe(true);
   expect(title.text()).toEqual(unref(monster)?.name);
