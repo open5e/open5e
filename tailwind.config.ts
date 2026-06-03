@@ -13,13 +13,10 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    fontFamily: {
-      sans: ['"Source Sans Pro"', 'sans-serif'],
-      serif: ['"Lora"', 'serif'],
-    },
     extend: {
-      fontfamily: {
-        headers: ['"Lora"', 'serif'],
+      fontFamily: {
+        serif: ['Lora', 'serif'],
+        sans: ['Source Sans Pro', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
       colors: {
         red: {
@@ -43,7 +40,6 @@ module.exports = {
         fog: '#f4f4f4',
         smoke: '#d4d4d4',
         granite: '#888',
-        // gray: '#767676', // this conflicts with an existing tailwind class
         basalt: '#333',
         charcoal: '#222',
         darkness: '#111',

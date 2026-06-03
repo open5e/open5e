@@ -1,9 +1,8 @@
 import { useQuery } from '@tanstack/vue-query';
 import axios from 'axios';
-import { navigateTo, useRoute, useRuntimeConfig } from 'nuxt/app';
+import { useRoute, useRuntimeConfig, type NuxtError } from 'nuxt/app';
 import { computed, unref } from 'vue';
-import { useSourcesList } from './useSourcesList';
-import type { components } from '~/types/open5e-api';
+import type { components } from '@/types/open5e-api';
 
 // Extract schemas from OpenAPI components
 type Schemas = components['schemas'];
@@ -14,7 +13,7 @@ export const API_ENDPOINTS = {
   conditions: 'v2/conditions/',
   documents: 'v2/documents/',
   feats: 'v2/feats/',
-  magicitems: 'v2/items/',
+  magicitems: 'v2/magicitems/',
   monsters: 'v2/creatures/',
   search: 'v2/search/',
   species: 'v2/species/',
@@ -22,6 +21,7 @@ export const API_ENDPOINTS = {
   rules: 'v2/rulesets/',
   equipment: 'v2/items/',
   licenses: 'v2/licenses/',
+  gamesystems: 'v2/gamesystems/',
 } as const;
 
 export interface EndpointToFindOneTypeMap {
@@ -32,6 +32,7 @@ export interface EndpointToFindOneTypeMap {
   'v2/feats/': Schemas['Feat'];
   'v2/creatures/': Schemas['Creature'];
   'v2/items/': Schemas['Item'];
+  'v2/magicitems/': Schemas['MagicItem'];
   'v2/search/': Schemas['SearchResult'];
   'v2/species/': Schemas['Species'];
   'v2/spells/': Schemas['Spell'];
@@ -45,6 +46,7 @@ export interface EndpointToFindManyTypeMap {
   'v2/conditions/': Schemas['Condition'][];
   'v2/documents/': Schemas['Document'][];
   'v2/feats/': Schemas['Feat'][];
+  'v2/magicitems': Schemas['MagicItem'][]
   'v2/creatures/': Schemas['Creature'][];
   'v2/items/': Schemas['Item'][];
   'v2/search/': Schemas['SearchResult'][];
@@ -52,6 +54,7 @@ export interface EndpointToFindManyTypeMap {
   'v2/spells/': Schemas['Spell'][];
   'v2/rulesets/': Schemas['RuleSet'][];
   'v2/licenses/': Schemas['License'][];
+  'v2/gamesystems/': Schemas['GameSystem'][];
 }
 
 export interface EndpointToPaginatedTypeMap {
@@ -61,6 +64,7 @@ export interface EndpointToPaginatedTypeMap {
   'v2/documents/': Schemas['PaginatedDocumentList'];
   'v2/feats/': Schemas['PaginatedFeatList'];
   'v2/items/': Schemas['PaginatedItemList'];
+  'v2/magicitems/': Schemas['PaginatedMagicItemList'];
   'v2/creatures/': Schemas['PaginatedCreatureList'];
   'v2/search/': Schemas['PaginatedSearchResultList'];
   'v2/species/': Schemas['PaginatedSpeciesList'];
@@ -72,8 +76,15 @@ export interface EndpointToPaginatedTypeMap {
 export type ExtractItemType<T> = T extends { results: (infer U)[] } ? U : never;
 
 // convenience type to get item type from endpoint key
-export type ExtractPaginatedItemType<T extends keyof EndpointToPaginatedTypeMap> = 
+export type ExtractPaginatedItemType<T extends keyof EndpointToPaginatedTypeMap> =
   ExtractItemType<EndpointToPaginatedTypeMap[T]>;
+
+// define custom error type to support passing Open5e data via an error message
+export interface Open5eError extends NuxtError {
+  data: {
+    key?: string;
+  };
+}
 
 /** Provides the base functions to easily fetch data from the Open5e API. */
 export const useAPI = () => {
@@ -134,13 +145,16 @@ export const useAPI = () => {
     },
     get: async <T extends keyof EndpointToFindOneTypeMap>(
       endpoint: T,
-      ...parts: string[]
+      key?: string,
+      queryString?: string
     ): Promise<EndpointToFindOneTypeMap[T]> => {
-      const route = [endpoint, ...parts].join('');
-      const res = await api.get(route).catch(() => {
-        // redirect to /search if API route returns nothing
-        const searchTerm = parts.filter(exists => exists).slice(-1)[0];
-        navigateTo(`/search?text=${searchTerm}`);
+      const url = [endpoint, key, queryString].filter(Boolean).join('');
+      const res = await api.get(url).catch(() => {
+        throw createError({
+          statusCode: 404,
+          statusMessage: `Failed to fetch resource with key: ${key}`,
+          data: { key },
+        });
       });
       return res?.data;
     },
@@ -159,19 +173,6 @@ export const useFindMany = <T extends keyof EndpointToFindManyTypeMap> (
     queryKey: ['findMany', endpoint, sources, params],
     queryFn: async (): Promise<EndpointToFindManyTypeMap[T]> => {
       const data = await findMany(unref(endpoint), unref(sources), unref(params));
-      return data;
-    }
-  });
-};
-
-export const useDocuments = (
-  params: Record<string, string> = {}
-) => {
-  const { findMany } = useAPI();
-  return useQuery({
-    queryKey: ['findMany', API_ENDPOINTS.documents, params],
-    queryFn: async (): Promise<EndpointToFindManyTypeMap['v2/documents/']> => {
-      const data = await findMany(API_ENDPOINTS.documents, [], params);
       return data;
     }
   });

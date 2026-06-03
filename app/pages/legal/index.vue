@@ -20,9 +20,12 @@
 
 <script setup lang="ts">
 import type { License } from '@/types';
+
 const { data } = useFindMany(API_ENDPOINTS.licenses, {
   fields: ['name', 'key'].join(',')
 });
+
+useSeoIndex({ title: 'Legal Information' });
 
 const licenses = data as Ref<License[]>;
 </script>

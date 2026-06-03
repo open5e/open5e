@@ -115,13 +115,13 @@
 </template>
 
 <script setup lang="ts">
-import type { WeaponSummary } from '@/types';
+import type { Item, WeaponSummary } from '@/types';
 
 const itemId = useQueryParameter('id');
 const params = { 'is_magic_item': 'false' };
 const { data: item } = useFindOne(API_ENDPOINTS.equipment, itemId, { params });
 
-usePageMetadata({ title: computed(() => item.value?.name) });
+useSeoEntry(item as Ref<Item>);
 
 const formatCost = (input: string) => {
   if (!input) return '';
@@ -135,7 +135,7 @@ const formatCost = (input: string) => {
 };
 const weaponHasProperties = (weapon: WeaponSummary, propertiesToFind: string[] = []): boolean => {
   if (!weapon || propertiesToFind.length === 0) return false;
-  
+
   return weapon.properties.some((item) => (
     propertiesToFind.includes(item.property.name)
   ));

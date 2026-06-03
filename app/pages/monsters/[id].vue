@@ -25,30 +25,31 @@
       </div>
     </div>
 
-    <img
-      v-if="monster.illustration"
-      :src="monster.illustration.file_url"
-      :alt="monster.illustration.alt_text"
-      class="img-main"
-    />
-    <p class="italic">
+    <p class="mt-0 italic">
       <span>{{ `${monster.size.name} ${monster.type.name}` }}</span>
-
+      
       <span v-if="monster.subcategory">
         {{ ' ' + `(${monster.subcategory})` }}
       </span>
-
+      
       <span v-if="monster.alignment">
         {{ ', ' + monster.alignment }}
       </span>
       
       <span>{{ ' ' }}</span>
-
+      
       <SourceTag
-        :title="monster.document.name"
+      :title="monster.document.name"
         :text="monster.document.key"
       />
     </p>
+
+    <img
+      v-if="monster.illustration"
+      :src="illustrationUrl"
+      :alt="monster.illustration.alt_text"
+      class="w-full max-w-[720px] bg-fog p-2"
+    />
 
     <table class="table-auto border-none text-base">
       <tbody class="[&>*>*]:border-none [&>*]:border-none">
@@ -164,7 +165,7 @@
         <tr class="grid grid-cols-[10rem,_1fr] [&>*]:p-0">
           <th>Challenge</th>
           <td class="text-nowrap">
-            <span>{{ monster.challenge_rating_text + " " }}</span>
+            <span>{{ parseChallengeRating(monster.challenge_rating) + " " }}</span>
             <span>{{ `(${monster.experience_points.toLocaleString()} XP)` }}</span>
           </td>
         </tr>
@@ -271,14 +272,18 @@
 </template>
 
 <script setup lang="ts">
-import type { CreatureAction } from '@/types';
+import type { Creature, CreatureAction } from '@/types';
+import { formatModifier, snakeToTitleCase, parseChallengeRating } from '@/helpers';
 
 const rollDice = useDiceRoller();
-const formatModifier = useFormatModifier();
+
+const EXCLUDE_FIELDS = ['modifiers', 'speed_all', 'saving_throws_all', 'normal_sight_range', 'skill_bonuses_all'];
 
 const params = {
   environments__fields: 'name',
   document__fields: 'name,key,permalink',
+  actions__exclude: 'attacks',
+  exclude: EXCLUDE_FIELDS.join(','),
 };
 
 const monsterId = useQueryParameter('id');
@@ -288,7 +293,7 @@ const { data: monster } = useFindOne(
   { params },
 );
 
-usePageMetadata({ title: computed(() => monster.value?.name) });
+useSeoEntry(monster as Ref<Creature>);
 
 // Calculate initiative bonus from dexterity modifier if not explicitly set
 const initiativeBonus = computed(() => {
@@ -330,13 +335,11 @@ const actions = computed(() => {
   return actionsByType;
 }) as ComputedRef<Record<ActionType, CreatureAction[]>>;
 
-// Converts SNAKE_CASE to Title Case, used for action type headers
-const snakeToTitleCase = (input: string) =>
-  input
-    .toLowerCase()
-    .split('_')
-    .map(word => word[0].toUpperCase() + word.substring(1))
-    .join(' ');
+
+const illustrationUrl = computed(() => {
+  if (!monster.value?.illustration) return;
+  return useRuntimeConfig().public.apiUrl + monster.value.illustration.file_url;
+});
 
 // Format monster speeds for template
 const speeds = computed(() => {
@@ -397,13 +400,11 @@ const encounterStore = useEncounterStore();
 
 const addToEncounter = () => {
   if (!monster.value) return;
-  console.log('test');
 
   encounterStore.addMonster(
     monster.value.key,
     monster.value.name,
-    parseFloat(monster.value.challenge_rating_decimal),
-    monster.value.challenge_rating_text,
+    parseFloat(monster.value.challenge_rating),
   );
 };
 
@@ -417,18 +418,3 @@ const removeFromEncounter = () => {
   encounterStore.removeMonster(monster.value.key);
 };
 </script>
-
-<style scoped lang="scss">
-.img-main {
-  float: right;
-  width: 30%;
-  min-width: 300px;
-}
-
-@media screen and (max-width: 600px) {
-  .img-main {
-    float: none;
-    width: 100%;
-  }
-}
-</style>

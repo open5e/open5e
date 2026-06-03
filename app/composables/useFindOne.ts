@@ -1,13 +1,14 @@
+import { useQuery } from '@tanstack/vue-query';
 import type { EndpointToFindOneTypeMap } from './api';
 
 function formatQueryString(params?: Record<string, string>): string {
   // iterate over params: format as string[] of the form `field=value`
-  if (!params) return '';
+  if (!params) return '/';
   const formattedParams = Object.entries(params).map(
     (([field, value]) => `${field}=${value}`)
   );
 
-  return formattedParams.length === 0 ? '' : `/?${formattedParams.join('&')}`;
+  return formattedParams.length === 0 ? '/' : `/?${formattedParams.join('&')}`;
 }
 
 export function useFindOne<T extends keyof EndpointToFindOneTypeMap>(

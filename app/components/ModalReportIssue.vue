@@ -87,7 +87,7 @@ const submitIssue = async () => {
             <select
               v-model="formData.type"
               name="type"
-              class="w-full border bg-transparent p-2 dark:bg-basalt"
+              class="form-select transparent w-full border p-2 dark:bg-basalt"
             >
               <option value="page">
                 A page is broken or doesn't load properly

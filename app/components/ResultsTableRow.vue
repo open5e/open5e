@@ -13,7 +13,7 @@
  *      column is hidden on small screen
  *
  * -= DEPENDENCIES =-
- * @component SourceTag – renders doucment source UI
+ * @component SourceTag – renders document source UI
  */
 </script>
 
@@ -46,6 +46,9 @@
       <template v-else>
         {{ col.value(data) }}
       </template>
+    </td>
+    <td v-if="$slots.actions">
+      <slot name="actions" :data="data" />
     </td>
   </tr>
 </template>

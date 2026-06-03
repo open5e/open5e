@@ -1,0 +1,36 @@
+/* Extending Tailwind's preflight reset: layout, rendering, scroll behaviour, etc. */
+
+@layer base {
+  html {
+    font-size: 16px;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    scrollbar-gutter: stable;
+  }
+
+  body, html {
+    overflow-x: hidden;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+}
+
+/* Page transitions (fade-in/out), confiured in nuxt.config.ts */
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 300ms ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

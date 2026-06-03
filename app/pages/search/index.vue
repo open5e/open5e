@@ -68,6 +68,8 @@
 <script setup lang="ts">
 import type { SearchResult } from '~/types';
 
+useSeoIndex({ title: 'Search' });
+
 const searchText = useReactiveQueryParam('text');
 const { data } = useSearch(searchText);
 const { sources } = useSourcesList();

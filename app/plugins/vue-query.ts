@@ -6,6 +6,7 @@ import type {
 import {
   dehydrate,
   hydrate,
+  QueryCache,
   QueryClient,
   VueQueryPlugin,
 } from '@tanstack/vue-query';
@@ -14,7 +15,15 @@ export default defineNuxtPlugin((nuxtApp) => {
   const vueQueryState = useState<DehydratedState | null>('vue-query');
 
   const queryClient = new QueryClient({
-    defaultOptions: { queries: { staleTime: Infinity } },
+    queryCache: new QueryCache({
+      onError: (error) => showError(error)
+    }),
+    defaultOptions: {
+      queries: {
+        staleTime: Infinity,
+        retry: false,
+      }
+    },
   });
 
   const options: VueQueryPluginOptions = { queryClient };

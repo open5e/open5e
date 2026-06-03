@@ -68,7 +68,7 @@
 </template>
 
 <script setup lang="ts">
-import type { BackgroundBenefit } from '~/types';
+import type { Background, BackgroundBenefit } from '@/types';
 
 const backgroundId = useQueryParameter('id');
 const { data: background } = useFindOne(
@@ -76,7 +76,7 @@ const { data: background } = useFindOne(
   backgroundId,
 );
 
-usePageMetadata({ title: computed(() => background.value?.name) });
+useSeoEntry(background as Ref<Background>);
 
 // sort benefits into different sections
 // different sections will be rendered to different parts of the page

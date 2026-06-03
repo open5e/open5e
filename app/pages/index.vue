@@ -37,8 +37,8 @@
       open-source on Github! Join us as a contributor and help develop new
       features and tools.
     </p>
-    <div class="side-note">
-      <h3>Hey! Stuff is missing!</h3>
+    <div class="right-3 m-2 block w-full border border-blue-600 bg-blue-100 p-2 text-blue-900 dark:border-smoke dark:bg-basalt dark:text-white md:sticky md:float-right md:w-80 xl:right-8">
+      <h3 class="mt-0">Hey! Stuff is missing!</h3>
       <p>
         Some content you may be expecting was not released as part of the 5e
         SRD, so we aren’t allowed to include it in this site.
@@ -55,25 +55,23 @@
     <p>
       <b>VueJs UI layer.</b> A Vue.js single-page app, using the Nuxt framework.
     </p>
-
-    <a
-      href="https://github.com/open5e/open5e"
-      class="external-button mr-2"
-    >
-      <img
-        src="/img/github-website-button.png"
-        alt="Open5e site repo"
-      />
-    </a>
-    <a
-      href="https://github.com/open5e/open5e-api"
-      class="external-button"
-    >
-      <img
-        src="/img/github-api-button.png"
-        alt="Open5e API Repo"
-      />
-    </a>
+    <div class="flex">
+      <a
+        href="https://github.com/open5e/open5e"
+        class="mr-2 flex w-48 hover:opacity-90"
+      >
+        <img src="/img/github-website-button.png" alt="Open5e site repo" />
+      </a>
+      <a
+        href="https://github.com/open5e/open5e-api"
+        class="flex w-48 hover:opacity-90"
+      >
+        <img
+          src="/img/github-api-button.png"
+          alt="Open5e API Repo"
+        />
+      </a>
+    </div>
 
     <h3>Support us on Patreon</h3>
     <p>
@@ -83,7 +81,7 @@
     </p>
     <a
       href="https://www.patreon.com/open5e"
-      class="external-button"
+      class="flex w-48 hover:opacity-90"
     >
       <img
         class="rounded-lg"
@@ -99,7 +97,7 @@
     </p>
     <a
       href="https://discord.gg/QXqF6gSVqB"
-      class="external-button"
+      class="flex w-48 hover:opacity-90"
     >
       <img
         src="/img/discord-button.png"
@@ -124,15 +122,3 @@
     </p>
   </section>
 </template>
-
-<style lang="scss">
-.external-button {
-  margin-top: 0.6rem;
-  zoom: 40%;
-  display: inline-block;
-
-  &:hover {
-    opacity: 0.9;
-  }
-}
-</style>

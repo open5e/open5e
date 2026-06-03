@@ -3,7 +3,7 @@ import { useLocalStorage } from '@vueuse/core';
 import { API_ENDPOINTS, useAPI } from '~/composables/api';
 import { usePartyStore } from '~/composables/useParty';
 import { useXPCalculator } from '~/composables/useXPCalculator';
-import type { Monster } from '~/types/monster';
+import type { Monster } from '@/types/monster';
 
 interface EncounterMonster extends Monster {
   count: number;
@@ -20,15 +20,10 @@ export type DifficultyLevel =
   | 'hard'
   | 'deadly';
 
+const monsters = useLocalStorage<EncounterMonster[]>('encounter-monsters', []);
+const cache = useLocalStorage<Record<string, unknown>>('monster-cache', {});
+
 export const useEncounterStore = () => {
-  const monsters = useLocalStorage<EncounterMonster[]>(
-    'encounter-monsters',
-    [],
-  );
-  const monsterCache = useLocalStorage<Record<string, unknown>>(
-    'monster-cache',
-    {},
-  );
   const { get } = useAPI();
   const { partyXPBudget } = usePartyStore();
   const xpCalculator = useXPCalculator();
@@ -93,8 +88,8 @@ export const useEncounterStore = () => {
   const fetchMonsterData = async (key: string) => {
     try {
       let data;
-      if (monsterCache.value[key]) {
-        data = monsterCache.value[key];
+      if (cache.value[key]) {
+        data = cache.value[key];
       } else {
         if (!key) {
           console.error('Cannot fetch monster data: ID is empty');
@@ -105,20 +100,19 @@ export const useEncounterStore = () => {
           key,
           '/?document__fields=name,key,permalink',
         );
-        monsterCache.value[key] = data;
+        cache.value[key] = data;
       }
 
       // Update the monster in the list with the new data
       const monster = monsters.value.find(m => m.key === key);
       if (monster) {
         // Preserve the count and basic info while updating with API data
-        const { count, name, challenge_rating_decimal, challenge_rating }
+        const { count, name, challenge_rating }
           = monster;
         Object.assign(monster, data, {
           count,
           name,
-          challenge_rating_decimal,
-          challenge_rating_text: challenge_rating,
+          challenge_rating,
         });
       }
 
@@ -132,8 +126,7 @@ export const useEncounterStore = () => {
   const addMonster = async (
     key: string,
     name: string,
-    challenge_rating_decimal: number,
-    challenge_rating_text: string,
+    challenge_rating: number,
   ) => {
     try {
       // First check if monster exists
@@ -147,8 +140,7 @@ export const useEncounterStore = () => {
       monsters.value.push({
         key,
         name,
-        challenge_rating_decimal,
-        challenge_rating: challenge_rating_text,
+        challenge_rating,
         count: 1,
         document: {
           name: 'Loading...',

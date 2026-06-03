@@ -6,7 +6,10 @@
 </template>
 
 <script setup lang="ts">
+import type { License } from '@/types';
+
 const licenseId = useQueryParameter('id');
 const { data: license } = useFindOne(API_ENDPOINTS.licenses, licenseId);
-usePageMetadata({ title: computed(() => license.value?.name) });
+
+useSeoEntry(license as Ref<License>);
 </script>

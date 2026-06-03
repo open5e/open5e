@@ -1,4 +1,5 @@
 import type { components } from './open5e-api';
+export * from './filters';
 
 // export basic data types returned by Open5e API
 export type Background = components['schemas']['Background'];
@@ -13,6 +14,7 @@ export type CreatureTypeSummary = components['schemas']['CreatureTypeSummary'];
 export type Document = components['schemas']['Document'];
 export type DocumentSummary = components['schemas']['DocumentSummary'];
 export type Feat = components['schemas']['Feat'];
+export type GameSystem = components['schemas']['GameSystem'];
 export type License = components['schemas']['License'];
 export type Rule = components['schemas']['Rule'];
 export type RuleSet = components['schemas']['RuleSet'];
@@ -20,7 +22,7 @@ export type SearchResult = components['schemas']['SearchResult'] & { object?: Se
 export type Size = components['schemas']['Size'];
 export type Species = components['schemas']['Species'];
 export type Spell = components['schemas']['Spell'];
-export type MagicItem = components['schemas']['Item'];
+export type MagicItem = components['schemas']['MagicItem'];
 export type Monster = components['schemas']['Creature'];
 export type Item = components['schemas']['Item'];
 export type ItemCategory = components ['schemas']['ItemCategory'];
@@ -54,3 +56,19 @@ export type SearchObjectPayload = {
   school?: string;
   level?: number;
 }
+
+// type interface for the `cols` prop
+export interface TabBarItem {
+  id: string;
+  label: string;
+  subtitle?: string;
+}
+
+export interface TableColumn<T extends Open5eData> {
+  displayName: string;
+  value: (data: T) => string | number | boolean;
+  sortValue?: string;
+  link?: (data: T) => string;
+  isLeastPriority?: boolean;
+  customTemplate?: (data: T) => { render: () => VNode };
+};

@@ -1,8 +1,8 @@
 <template>
-  <nav class="flex w-full grow flex-col overflow-hidden bg-white text-black dark:bg-darkness dark:text-white">
+  <nav class="flex h-full flex-col overflow-y-visible bg-white pb-4 text-black dark:bg-darkness dark:text-white">
     <NuxtLink
       to="/"
-      class="bg-red p-5 text-center font-serif text-3xl text-white hover:text-white"
+      class="flex h-16 items-center justify-center bg-red py-4 font-serif text-3xl text-white hover:text-white"
       @click="$emit('on-link-clicked')"
     >
       Open5e
@@ -19,7 +19,7 @@
       >
         <NuxtLink :to="path" class="inline-block w-full" @click="$emit('on-link-clicked')">
           <Icon :name="icon ?? ''" class="mx-4 size-8 text-red"/>
-          <span class=" ">{{ title }}</span>
+          <span>{{ title }}</span>
         </NuxtLink>
       </li>
     </ul>
@@ -103,14 +103,14 @@ const paths = [
     sectionTitle: 'Open5e Documents',
     pages: [
       {
-        title: 'Sources',
-        path: '/sources',
-        icon: 'game-icons:bookmark',
-      },
-      {
-        title: 'API Docs',
+        title: 'API Overview',
         path: '/api-docs',
         icon: 'majesticons:curly-braces'
+      },
+      {
+        title: 'Data Sources',
+        path: '/sources',
+        icon: 'game-icons:bookmark',
       },
     ],
   }

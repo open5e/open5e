@@ -36,7 +36,10 @@
 </template>
 
 <script setup lang="ts">
+import type { MagicItem } from '@/types';
+
 const itemId = useQueryParameter('id');
 const { data: item } = useFindOne(API_ENDPOINTS.magicitems, itemId);
-usePageMetadata({ title: computed(() => item.value?.name) });
+
+useSeoEntry(item as Ref<MagicItem>);
 </script>
