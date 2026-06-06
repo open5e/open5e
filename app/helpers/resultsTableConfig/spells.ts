@@ -62,10 +62,10 @@ export const spellFilterSelectFieldsDefinition: ResultTableSelectFieldFilter[] =
   },
   {
     name: 'Class',
-    filterField: 'classes__key__in',
+    filterField: 'classes__name__in',
     options: spellcastingClasses.map((className) => ({
       name: className,
-      value: 'srd_' + className.toLowerCase(),
+      value: className,
     })),
     isLeastPriority: true,
   },
@@ -75,5 +75,5 @@ export const spellFilterDefaults: Readonly<SpellFilterState> = {
   name__contains: '',
   level: undefined,
   school__key: undefined,
-  classes__key__in: undefined,
+  classes__name__in: undefined,
 };

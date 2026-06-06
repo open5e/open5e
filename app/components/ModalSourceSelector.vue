@@ -25,7 +25,7 @@
       <!-- MODAL MENU TITLE BAR -->
       <div class="flex w-full items-center justify-between">
 
-        <input 
+        <input
           id="select-deselect-all-checkbox"
           type="checkbox"
           :checked="allSelected"
@@ -38,23 +38,23 @@
         <h2 class="my-0 grow text-3xl">Sources Selector</h2>
 
         <!--  GAME SYSTEM SELECTOR -->
-        <div class="mb-2 grid">
-          <label class="text-right font-serif text-sm" for="system">
+        <div class="mb-2 grid border-b-[3px] border-red pb-[6px]">
+          <label class="text-right font-serif text-xs" for="system">
             System
           </label>
           <select
             id="system"
             v-model="currentSystem"
-            class="cursor-pointer appearance-none border-b-2 border-red bg-transparent text-right text-sm"
+            class="form-select cursor-pointer appearance-none text-right text-sm"
             @change="selectAllInSystem"
           >
             <option value="">–</option>
             <option
-              v-for="systemOption in allGameSystems"
-              :key="systemOption"
-              :value="systemOption"
+              v-for="system in allGameSystems"
+              :key="system.key"
+              :value="system.key"
             >
-              {{ systemOption }}
+              {{ formatGameSystemTitle(system.name) }}
             </option>
           </select>
         </div>
@@ -89,7 +89,7 @@
           </span>
 
           <ul v-if="!allPublisherSourcesInactive(publisher)">
-            <li 
+            <li
               v-for="document in documentsPerPublisher"
               :key="document.key"
               class="group flex w-full items-center"
@@ -110,7 +110,7 @@
               </label>
 
               <SourceTag :title="document.name" :text="document.key" />
-              
+
               <span
                 v-if="document.gamesystem"
                 class="ml-auto h-min rounded-xl bg-fog px-2 text-xs dark:bg-slate-800"
@@ -147,29 +147,17 @@ import type { Document } from '@/types';
 
 const emit = defineEmits(['close']);
 const closeModal = () => {
-  // reset menu state to current active sources after closing animation finishes
   setTimeout(() => selectedSources.value = [...sources.value], 500);
   emit('close');
 };
 
-const { data: documents } = useDocuments({
-  fields: ['key', 'name', 'publisher', 'gamesystem', 'type'].join(','),
-  publisher__fields: ['name', 'key'].join(','),
-  gamesystem__fields: ['name', 'key'].join(','),
-});
+const {
+  sourceDocuments,
+  miscDocuments,
+  sortedGameSystemsForSourceDocuments,
+} = useCatalog();
 
 const { sources, setSources, gameSystem, setGameSystem } = useSourcesList();
-
-// Seperate SOURCE and MISC documents, only use the former in the modal menu
-// and add the later back in when updating selected sources in local memory
-
-const sourceDocuments = computed(() => (
-  documents?.value?.filter(document => document.type === 'SOURCE') ?? []
-));
-
-const miscDocuments = computed(() => (
-  documents?.value?.filter(document => document.type !== 'SOURCE') ?? []
-));
 
 // Keep selectedSources in sync with global sources state
 const selectedSources: Ref<string[]> = ref([]);
@@ -184,12 +172,11 @@ const noneSelected = computed(() => selectedSources.value.length === 0);
 
 // filter documents by the current game system
 const documentsInSystem = computed<Document[]>(() => {
-  if (!sourceDocuments?.value || sourceDocuments.value.length === 0) return [];
+  if (sourceDocuments.value.length === 0) return [];
   if (!currentSystem.value) return sourceDocuments.value;
-  return sourceDocuments.value.filter((document) => {
-    return document.gamesystem.name === currentSystem.value;
-  });
-
+  return sourceDocuments.value.filter(
+    document => document.gamesystem.key === currentSystem.value,
+  );
 });
 
 // group filtered documents by publisher
@@ -203,14 +190,7 @@ const groupedDocuments = computed<Record<string, Document[]>>(() => {
 
 const currentSystem = ref(gameSystem.value ?? '');
 
-// returns the names of all game systems present in API data
-const allGameSystems = computed(() => {
-  if (!documents.value) return [];
-  return [...new Set(documents.value
-      .map(doc => doc.gamesystem?.name)
-      .filter(Boolean)
-  )];
-});
+const allGameSystems = sortedGameSystemsForSourceDocuments;
 
 // save current form selection to local memory
 function saveSelection() {

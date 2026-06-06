@@ -28,7 +28,7 @@
     <h3 class="mt-1 flex items-center align-middle text-xl">
       <NuxtLink
         tag="a"
-        :to="formatUrl(result)"
+        :to="buildSearchResultUrl(result)"
       >
         {{ result.object_name }}
       </NuxtLink>
@@ -47,22 +47,22 @@
       v-if="result.object_model === 'Creature' && result.object?.cr"
       class="text-sm"
     >
-      <span class="after:content-['_|_']">CR {{ result.object.cr }}</span>
+      <span class="after:content-['_|_']">CR {{ parseChallengeRating(result.object.cr) }}</span>
       <span>{{ `${result.object.type} (${result.object.size})` }}</span>
     </div>
 
     <div
-      v-if="result.object_model === 'Spell'"
+      v-if="result.object_model === 'Spell' && formatSearchResultSubtitle(result)"
       class="text-sm capitalize"
     >
-      {{ formatSpellTitle(result) }}
+      {{ formatSearchResultSubtitle(result) }}
     </div>
 
     <span
-      v-else-if="result.object_model === 'Item' && result.object.is_magic_item"
+      v-else-if="result.object_model === 'Item' && result.object?.is_magic_item && formatSearchResultSubtitle(result)"
       class="text-sm capitalize"
     >
-      {{ `${result.object.type}, ${result.object.rarity}` }}
+      {{ formatSearchResultSubtitle(result) }}
     </span>
 
     <!-- Ruleset caption for Rules  -->
@@ -89,7 +89,8 @@
 
 <script setup lang="ts">
 import type { SearchResult } from '@/types';
-import { formatSpellSubtitle } from '@/helpers';
+import { formatSearchResultSubtitle, parseChallengeRating } from '@/helpers';
+import { buildSearchResultUrl } from '@/helpers/buildSearchResultUrl';
 defineProps<{
   query: string;
   result: SearchResult;
@@ -102,42 +103,6 @@ function stripMarkdownTables(text: string) {
     .replace(/(\r\n|\n|\r)/gm, ' ') // Remove line breaks
     .replace(/-{3,}/g, ''); // Remove three or more hyphens
 }
-
-// Look-up Table: mapping API endpoints to website routes
-const endpoints = {
-  Creature: 'monsters',
-  Spell: 'spells',
-  Species: 'species',
-  Section: 'sections',
-  Item: 'magic-items',
-  Feat: 'feats',
-  Background: 'backgrounds',
-  CharacterClass: 'classes',
-  Rule: 'rules',
-};
-
-// Takes a search result and generates its URL on the Open5e website
-const formatUrl = (input: SearchResult) => {
-  let baseUrl = endpoints[input.object_model as keyof typeof endpoints] ?? input.object_model;
-
-  // non-magic items link to /equipment route
-  if (baseUrl === 'magic-items' && !input?.object?.is_magic_item)
-    baseUrl = 'equipment';
-
-  // subclass urls must be prepended by their base-class
-  if (input?.object?.subclass_of) baseUrl += `/${input.object.subclass_of?.key}`;
-
-  // sub-species link to their base-species
-  if (input?.object?.subspecies_of)
-    return `${baseUrl}/${input.object.subspecies_of.key}`;
-
-  if (baseUrl === 'rules') {
-    const rulesetKey = input.object_pk.split('_').slice(0, 2).join('_');
-    return `${baseUrl}/${rulesetKey}`;
-  }
-
-  return `${baseUrl}/${input.object_pk}`;
-};
 
 // Takes the API endpoint a result is pulled from and returns
 const formatCategory = (input: SearchResult) => {
@@ -161,12 +126,6 @@ const formatCategory = (input: SearchResult) => {
     return `${input.object.subspecies_of.name} Subspecies`;
   return category; // BASE-CASE: return category without alteration
 };
-
-const formatSpellTitle = (result: SearchResult) => formatSpellSubtitle({
-  level: result.object?.level,
-  school: result.object?.school,
-});
-
 </script>
 
 <style>

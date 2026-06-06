@@ -2,9 +2,8 @@ import { test, expect } from 'vitest';
 import { mockNuxtImport, mountSuspended } from '@nuxt/test-utils/runtime';
 import SpeciesPage from '~/pages/species/index.vue';
 
-const page = await mountSuspended(SpeciesPage);
-
 test('/species page can mount', async () => {
+  const page = await mountSuspended(SpeciesPage);
   expect(page);
 });
 

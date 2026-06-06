@@ -7,13 +7,13 @@ const { data: spell } = useFindOne(
   'srd_magic-missile',
 );
 
-const page = await mountSuspended(SpellPage);
-
 test('/magic-items/[id] page can mount', async () => {
+  const page = await mountSuspended(SpellPage);
   expect(page);
 });
 
 test('/magic-items/[id] page renders title', async () => {
+  const page = await mountSuspended(SpellPage);
   const title = page.find('h1');
   expect(title.exists()).toBe(true);
   expect(title.text()).toEqual(unref(spell)?.name);

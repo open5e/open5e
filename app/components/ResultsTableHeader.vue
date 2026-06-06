@@ -59,16 +59,16 @@ const props = defineProps({
   isLeastPriority: { type: Boolean, default: false },
 });
 
-// a list of human-readable subsitutions
-const subsitutions = {
+// a list of human-readable substitutions
+const substitutions = {
   level_int: 'Level',
   dnd_class: 'Classes',
   cr: 'CR',
 };
 
 const format = (input: string) => {
-  if (input in subsitutions) {
-    return subsitutions[input as keyof typeof subsitutions];
+  if (input in substitutions) {
+    return substitutions[input as keyof typeof substitutions];
   }
   // Replace underscores w/ spaces and capitalise initials
   return input

@@ -4,13 +4,13 @@ import SpeciesPage from '~/pages/species/[id].vue';
 
 const { data: species } = useFindOne(API_ENDPOINTS.species, 'srd_elf');
 
-const page = await mountSuspended(SpeciesPage);
-
 test('/species/[id] page can mount', async () => {
+  const page = await mountSuspended(SpeciesPage);
   expect(page);
 });
 
 test('/species/[id] page renders title', async () => {
+  const page = await mountSuspended(SpeciesPage);
   const title = page.find('h1');
   expect(title.exists()).toBe(true);
   expect(title.text()).toEqual(unref(species)?.name);

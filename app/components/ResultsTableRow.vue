@@ -13,7 +13,7 @@
  *      column is hidden on small screen
  *
  * -= DEPENDENCIES =-
- * @component SourceTag – renders doucment source UI
+ * @component SourceTag – renders document source UI
  */
 </script>
 

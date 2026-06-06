@@ -2,7 +2,7 @@
 /**
  * MdViewer.vue - Renders Markdown content as HTML. Essentially a wrapper for
  * the VueShowdown library with a few extensions for parsing certain custom
- * Markdown tags as custom Nuxt components (via the "extentions" prop)
+ * Markdown tags as custom Nuxt components (via the "extensions" prop)
  *
  * -= PROPS (INPUTS) =-
  * @prop {Boolean} toc - A boolean flag to control whether a Table of Contents

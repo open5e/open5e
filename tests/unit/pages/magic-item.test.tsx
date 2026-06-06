@@ -7,13 +7,13 @@ const { data: item } = useFindOne(
   'srd_adamantine-armor-breastplate',
 );
 
-const page = await mountSuspended(MagicItemPage);
-
 test('/magic-items/[id] page can mount', async () => {
+  const page = await mountSuspended(MagicItemPage);
   expect(page);
 });
 
 test('/magic-items/[id] page renders title', async () => {
+  const page = await mountSuspended(MagicItemPage);
   const title = page.find('h1');
   expect(title.exists()).toBe(true);
   expect(title.text()).toEqual(unref(item)?.name);
