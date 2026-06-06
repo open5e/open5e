@@ -1,10 +1,13 @@
-# PR validation script
-name: PR Validation
+name: Deploy Validation
+
 on:
-  pull_request:
-    types: [opened, reopened]
   push:
-    branches-ignore:
+    branches:
+      - staging
+      - main
+      - master
+  pull_request:
+    branches:
       - staging
       - main
       - master
