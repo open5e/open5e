@@ -75,7 +75,6 @@ jobs:
           git checkout staging
 
       - name: Generate release notes
-        id: notes
         env:
           MANUAL_NOTES: ${{ inputs.release_notes }}
         run: |
@@ -84,9 +83,6 @@ jobs:
           else
             bash .github/scripts/generate-release-notes.sh origin/staging > release-notes.md
           fi
-          echo "body<<EOF" >> "$GITHUB_OUTPUT"
-          cat release-notes.md >> "$GITHUB_OUTPUT"
-          echo "EOF" >> "$GITHUB_OUTPUT"
 
       - name: Create release tag on staging
         env:
@@ -172,5 +168,5 @@ jobs:
           tag_name: ${{ steps.version.outputs.version }}
           target_commitish: ${{ steps.refs.outputs.staging_sha }}
           name: Release ${{ steps.version.outputs.version }}
-          body: ${{ steps.notes.outputs.body }}
+          body_path: release-notes.md
           token: ${{ secrets.RELEASE_PAT || github.token }}
