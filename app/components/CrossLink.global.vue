@@ -5,12 +5,13 @@
     @mouseenter="onHover"
   >
     <span class="z-50"><slot /></span>
-    <LinkPreview :data="previewData" :category="topLevelPage" class="z-60" />
+    <CrossLinkPreview :data="previewData" :category="topLevelPage" class="z-60" />
   </nuxt-link>
 </template>
 
 <script setup lang="ts">
 import type { Class, MagicItem } from '@/types';
+import CrossLinkPreview from './CrossLinkPreview.vue';
 
 const { to = '' } = defineProps<{ to?: string }>();
 
