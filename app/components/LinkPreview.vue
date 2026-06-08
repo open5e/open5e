@@ -1,7 +1,7 @@
 <template>
   <article
     v-if="data"
-    class="group absolute top--1 z-10 hidden border border-red bg-fog px-3 py-2 text-charcoal group-hover:block dark:bg-charcoal dark:text-fog"
+    class="group invisible absolute top--1 inline border border-red bg-fog px-3 py-2 text-charcoal dark:bg-charcoal dark:text-fog md:group-hover:visible"
   >
     <p class="my-0 text-nowrap">
       <span class=" font-serif text-lg text-black dark:text-white">{{ data?.name }}</span>
@@ -15,11 +15,12 @@
       {{ `${'www.open5e.com' + category}/${data.key}` }}
     </p>
   </article>
-  <article v-else />
+  <article v-else  class="inline" />
 </template>
 
 <script setup lang="ts">
-import type { Creature, Item, Open5eData, Spell } from '@/types';
+import type { Creature, MagicItem, Open5eData, Spell } from '@/types';
+import { parseChallengeRating } from '@/helpers';
 
 const props = defineProps<{
   data?: Open5eData;
@@ -33,6 +34,7 @@ const endpointToCategoryDisplayNameMap = {
   '/spells': 'Spell',
   '/magic-items': 'Magic Item',
   '/equipment': 'Equipment',
+  '/feats': 'Feat',
   '/': '',
 } as const;
 
@@ -66,7 +68,8 @@ const categoryDisplayName = computed(() => {
 
 
 const formatMonsterSubtitle = (monster: Creature) => {
-  return `${monster.size.name} ${monster.type.name}, CR ${monster.challenge_rating_text}`;
+  const { size, type, challenge_rating} = monster;
+  return `${size.name} ${type.name}, CR ${parseChallengeRating(challenge_rating)}`;
 };
 
 const formatSpellSubtitle = (spell: Spell) => {
@@ -74,7 +77,7 @@ const formatSpellSubtitle = (spell: Spell) => {
   return `Level ${spell.level} ${spell.school.name} Spell`;
 };
 
-const formatMagicItemSubtitle = (item: Item) => {
+const formatMagicItemSubtitle = (item: MagicItem) => {
   return `${item.category.name}, ${item.rarity.name}`;
 };
 
@@ -83,7 +86,7 @@ const subtitle = computed<string>(() => {
   
   if (category === '/monsters') return formatMonsterSubtitle(props.data as Creature);
   if (category === '/spells') return formatSpellSubtitle(props.data as Spell);
-  if (category === '/magic-items') return formatMagicItemSubtitle(props.data as Item);
+  if (category === '/magic-items') return formatMagicItemSubtitle(props.data as MagicItem);
   
   return '';
 });

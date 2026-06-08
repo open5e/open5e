@@ -1,22 +1,21 @@
 <template>
-
-  <!-- If preview data has fetched correctly then url is valid, render as link -->
   <nuxt-link
-    class="group relative"
+    class="group relative inline"
     :to="`${topLevelPage}/${key}`"
     @mouseenter="onHover"
   >
-    <slot />
-    <LinkPreview :data="previewData" :category="topLevelPage" />
+    <span class="z-50"><slot /></span>
+    <LinkPreview :data="previewData" :category="topLevelPage" class="z-60" />
   </nuxt-link>
 </template>
 
 <script setup lang="ts">
-import type { Class, Item } from '@/types';
+import type { Class, MagicItem } from '@/types';
 
 const { to = '' } = defineProps<{ to?: string }>();
 
-const [version, endpoint, key] = to.split('/');
+const [version, endpoint, key] = to.split('/').filter(Boolean).slice(-3);
+
 
 type CrossLinkEndpoint = 'v2/items/' | 'v2/creatures/' | 'v2/classes/' | 'v2/species/' | 'v2/feats/' | 'v2/spells/';
 
@@ -27,7 +26,7 @@ const versionWithEndpoint = `${version}/${endpoint}/` as CrossLinkEndpoint;
 const baseFields = ['name', 'key', 'document'];
 const queryParametersPerEndpoint = {
   'v2/items/': [...baseFields, 'rarity', 'category'],
-  'v2/creatures/': [...baseFields, 'type', 'size', 'challenge_rating_text'],
+  'v2/creatures/': [...baseFields, 'type', 'size', 'challenge_rating'],
   'v2/spells/': [...baseFields, 'level', 'school'],
   'v2/classes/': [...baseFields, 'subclass_of'],
 } as Record<CrossLinkEndpoint, string[]>;
@@ -61,7 +60,7 @@ const previewData = computed(() => {
 const topLevelPage = computed(() => {
   if (!previewData.value) return;
   if (versionWithEndpoint === 'v2/items/') {
-    return (previewData.value as Item).rarity 
+    return (previewData.value as MagicItem)?.rarity 
       ? '/magic-items'
       : '/equipment';
   }
