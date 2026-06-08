@@ -39,7 +39,10 @@
         :key="benefit.name"
       >
         <h2>{{ `Feature: ${benefit.name}` }}</h2>
-        <md-viewer :text="benefit.desc" />
+        <MdViewer
+          :text="benefit.desc"
+          :crossreferences="benefit.crossreferences.to"
+        />
       </li>
     </ul>
 
@@ -58,7 +61,10 @@
           </span>
           <span>{{ benefit.name }}</span>
         </h3>
-        <md-viewer :text="benefit.desc" />
+        <MdViewer
+          :text="benefit.desc"
+          :crossreferences="benefit.crossreferences.to"
+        />
       </li>
     </ul>
   </main>

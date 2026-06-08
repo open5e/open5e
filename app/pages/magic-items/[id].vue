@@ -17,7 +17,10 @@
           :text="item.document.key"
         />
       </p>
-      <MdViewer :text="item.desc" />
+      <MdViewer
+        :text="item.desc"
+        :crossreferences="item.crossreferences.to"
+      />
       <p class="text-sm italic">
         Source:
         <a
