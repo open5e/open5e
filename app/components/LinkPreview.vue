@@ -1,113 +1,92 @@
-<script lang="ts">
-/**
- * LinkPreview - A card that displays detailed information about a specific category of content.
- *
- *
- * -= PROPS (INPUTS) =-
- * @prop {String} category - What type of content the preview is linking to.
- *   Different types of Open5e resources need different data in the preview
- * @prop {Object} content - content to render on the card. varies with category
- *
- */
-</script>
-
 <template>
   <article
-    class="absolute top--1 z-10 hidden h-max bg-slate-100 px-4 py-3 text-black shadow-md dark:bg-basalt dark:text-white md:group-hover:block"
+    v-if="data"
+    class="group absolute top--1 z-10 hidden border border-red bg-fog px-3 py-2 text-charcoal group-hover:block dark:bg-charcoal dark:text-fog"
   >
-    <!-- Generate card title from data -->
-    <p class="m-0 whitespace-nowrap border-b-2 border-blood pb-1 align-middle">
-      <span class="font-serif text-lg font-bold text-blood dark:text-white">
-        {{ content.name }}
-      </span>
-      <span class="before:mx-2 before:font-bold before:content-['|']">
-        {{ subtitle }}
-      </span>
+    <p class="my-0 text-nowrap">
+      <span class=" font-serif text-lg text-black dark:text-white">{{ data?.name }}</span>
+      <span v-if="categoryDisplayName" class="mx-1 font-bold text-red">{{ " | " }}</span>
+      <span v-if="categoryDisplayName" class="text-lg">{{ categoryDisplayName }}</span>
     </p>
-
-    <!-- Generate card body from data -->
-    <p
-      v-for="item in body"
-      :key="item.title"
-      class="m-0 p-0 text-sm"
-    >
-      <span
-        v-if="item.title"
-        class="font-bold after:mr-1 after:content-[':']"
-      >
-        {{ item.title }}
-      </span>
-      <span>{{ item.data }} </span>
+    <p v-if="subtitle" class="m-0 text-nowrap text-base">
+      {{ subtitle }}
     </p>
-
-    <!-- Card footer -->
-    <p
-      v-if="content.document__title"
-      class="whitespace-nowrap text-sm italic"
-    >
-      Source: {{ content.document__title }}
+    <p class="mt-0 text-nowrap text-xs text-smoke dark:text-granite">
+      {{ `${'www.open5e.com' + category}/${data.key}` }}
     </p>
   </article>
+  <article v-else />
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  category: { type: String, default: '' },
-  // eslint-disable-next-line vue/require-prop-types
-  content: { default: [] },
+import type { Creature, Item, Open5eData, Spell } from '@/types';
+
+const props = defineProps<{
+  data?: Open5eData;
+  category?: ComputedRef<string> | string;
+}>();
+
+const endpointToCategoryDisplayNameMap = {
+  '/monsters': 'Monster',
+  '/species': 'Species',
+  '/classes': 'Class',
+  '/spells': 'Spell',
+  '/magic-items': 'Magic Item',
+  '/equipment': 'Equipment',
+  '/': '',
+} as const;
+
+type Endpoint = keyof typeof endpointToCategoryDisplayNameMap;
+
+const getCategoryFromPath = (path: string): Endpoint | null => {
+  const normalized = path.startsWith('/') ? path : `/${path}`;
+  return normalized in endpointToCategoryDisplayNameMap 
+    ? normalized as Endpoint 
+    : null;
+};
+
+const formatSubclassName = (classPath: string): string => {
+  const capitalize = (word: string) => word[0].toUpperCase() + word.slice(1);
+  const subclassName = classPath.split('_').map(capitalize)[1];
+  return `${subclassName} Subclass`;
+};
+
+const categoryDisplayName = computed(() => {
+  const category = unref(props.category ?? '');
+
+  const directMatch = getCategoryFromPath(category);
+  if (directMatch) return endpointToCategoryDisplayNameMap[directMatch];
+
+  const segments = category.split('/').filter(Boolean);
+  if (segments[0] === 'classes' && segments[1]) {
+    return formatSubclassName(segments[1]);
+  }
+  return '';
 });
 
-const subtitle = computed(() => {
-  const data = props.content;
-  switch (props.category) {
-    case 'spells':
-      return `${data.level} ${data.school} Spell`;
-    case 'monsters':
-      return 'Monster';
-    case 'magicitems':
-      return 'Magic Item';
-    case 'conditions':
-      return 'Condition';
-    case 'feats':
-      return 'Feat';
-    case 'sections':
-    case 'characters':
-    case 'combat':
-    case 'equipment':
-    case 'gameplay-mechanics':
-    case 'running':
-      return data.parent;
-    default:
-      return props.category.charAt(0).toUpperCase() + props.category.slice(1);
-  }
+
+const formatMonsterSubtitle = (monster: Creature) => {
+  return `${monster.size.name} ${monster.type.name}, CR ${monster.challenge_rating_text}`;
+};
+
+const formatSpellSubtitle = (spell: Spell) => {
+  if (spell.level === 0) return `${spell.school.name} Cantrip`;
+  return `Level ${spell.level} ${spell.school.name} Spell`;
+};
+
+const formatMagicItemSubtitle = (item: Item) => {
+  return `${item.category.name}, ${item.rarity.name}`;
+};
+
+const subtitle = computed<string>(() => {
+  const category = unref(props?.category ?? '/') as Endpoint;
+  
+  if (category === '/monsters') return formatMonsterSubtitle(props.data as Creature);
+  if (category === '/spells') return formatSpellSubtitle(props.data as Spell);
+  if (category === '/magic-items') return formatMagicItemSubtitle(props.data as Item);
+  
+  return '';
 });
 
-const body = computed(() => {
-  const data = props.content;
-  switch (props.category) {
-    case 'conditions':
-      return [{ data: data.desc }];
-    case 'spells':
-      return [
-        { title: 'Casting Time', data: data.casting_time },
-        { title: 'Duration', data: data.duration },
-        { title: 'Range', data: data.range },
-        { title: 'Components', data: data.components },
-      ];
-    case 'magicitems':
-      return [
-        {
-          data: `${data.type}, ${data.rarity} ${
-            data.requires_attunement && '(requires attunement)'
-          }`,
-        },
-      ];
-    case 'monsters':
-      return [
-        { data: `CR ${data.challenge_rating} ${data.type} (${data.size})` },
-      ];
-    default:
-      return [];
-  }
-});
 </script>
+
