@@ -43,11 +43,15 @@ const onHover = async () => {
 
 const readyToFetch = ref(false);
 
-const previewQueryParameter = { ...queryParameters, enabled: readyToFetch };
+const { data } = useFindOne(
+  versionWithEndpoint,
+  key,
+  {
+    ...queryParameters,
+    enabled: computed(() => isValidLink.value && readyToFetch.value)
+  }
+);
 
-const { data } = isValidLink.value
-  ? useFindOne(versionWithEndpoint, key, previewQueryParameter)
-  : { data: ref(null) };
 
 watch(data, () => {
   linkPreviewState.value = {

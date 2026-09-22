@@ -101,7 +101,7 @@
           <MdViewer
             :text="feature.desc"
             :header-level="3"
-            :crossreferences="feature.crossreferences.to"
+            :crossreferences="feature?.crossreferences.to"
           />
         </li>
       </ul>
@@ -114,7 +114,7 @@
         <MdViewer
           :text="feature.desc"
           :header-level="1"
-          :crossreferences="feature.crossreferences.to"
+          :crossreferences="feature?.crossreferences.to"
         />
       </template>
     </section>

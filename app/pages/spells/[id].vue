@@ -57,7 +57,7 @@
       <MdViewer
         :text="spell.desc"
         :use-roller="true"
-        :crossreferences="spell.crossreferences.to"
+        :crossreferences="spell?.crossreferences?.to"
       />
     </section>
 
@@ -68,7 +68,7 @@
       <MdViewer
         :text="spell.higher_level"
         :inline="true"
-        :crossreferences="spell.crossreferences.to"
+        :crossreferences="spell?.crossreferences?.to"
       />
     </section>
 

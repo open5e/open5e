@@ -9,9 +9,11 @@ type LinkPreviewState = {
   category?: ComputedRef<string> | string;
 };
 
-const linkPreviewState = ref<LinkPreviewState | undefined>();
+// const linkPreviewState = ref<LinkPreviewState | undefined>();
 
 export function useLinkPreview() {
+
+  const linkPreviewState = useState<LinkPreviewState | undefined>('link-preview-state', () => undefined);
 
   const clearLinkPreviewState = () => linkPreviewState.value = undefined;
 

@@ -27,7 +27,7 @@
           <MdViewer
             :inline="true"
             :text="trait.desc"
-            :crossreferences="trait.crossreferences.to"
+            :crossreferences="trait.crossreferences?.to"
           />
         </dd>
       </div>
