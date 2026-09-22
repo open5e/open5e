@@ -1,6 +1,7 @@
 <template>
   <article
-    :style="popupStyle"
+    ref="linkPreviewRef"
+    :style="positionStyles"
     class="pointer-events-none fixed border border-red bg-fog px-3 text-charcoal dark:bg-charcoal dark:text-fog md:group-hover:visible"
     :class="!linkPreviewState && 'invisible'"
   >
@@ -8,10 +9,10 @@
       <span class=" font-serif text-xl">
         {{ state?.data?.name }}
       </span>
-      <span v-if="subtitle" class="">
+      <span v-if="subtitle">
         {{ ` | ${subtitle}` }}
       </span>
-      <span class="float-right ml-2 bg-red px-2 font-bold text-white">
+      <span class="float-right ml-2 mt-1 bg-red px-2 font-bold text-white">
         {{ category }}
       </span>
     </p>
@@ -28,21 +29,21 @@ const { linkPreviewState } = useLinkPreview();
 const state = linkPreviewState;
 
 
-const popup = ref<HTMLElement | null>(null);
+const linkPreviewRef = ref<HTMLElement | null>(null);
 const mouse = ref<{ x: number; y: number } | null>(null);
 
 const OFFSET = 12; // gap between cursor and popup
 const MARGIN = 8;  // minimum gap from viewport edges
 
-const popupStyle = computed(() => {
+const positionStyles = computed(() => {
   if (!mouse.value) return {};
 
-  const width = popup.value?.offsetWidth ?? 0;
-  const height = popup.value?.offsetHeight ?? 0;
+  const width = linkPreviewRef.value?.offsetWidth ?? 0;
+  const height = linkPreviewRef.value?.offsetHeight ?? 0;
   let left = mouse.value.x + OFFSET;
   let top = mouse.value.y + OFFSET;
 
-  // Flip to the other side of the cursor if we'd overflow right/bottom
+  // Flip to the other side of the cursor if we overflow right/bottom
   if (left + width > window.innerWidth - MARGIN) left = mouse.value.x - OFFSET - width;
   if (top + height > window.innerHeight - MARGIN) top = mouse.value.y - OFFSET - height;
 
@@ -53,7 +54,7 @@ const popupStyle = computed(() => {
   return { left: `${left}px`, top: `${top}px` };
 });
 
-// Listen on the parent link, since that's the element being hovered
+// Attach event listeners to link's parent because the element being hovered
 const instance = getCurrentInstance();
 let parent: HTMLElement | null = null;
 
@@ -71,6 +72,7 @@ const router = useRouter();
 const { clearLinkPreviewState } = useLinkPreview();
 router.afterEach(() => clearLinkPreviewState());
 
+// Look-up for plain-text Category names from API endpoint
 const endpointToCategoryDisplayNameMap = {
   '/monsters': 'Monster',
   '/species': 'Species',
@@ -82,31 +84,35 @@ const endpointToCategoryDisplayNameMap = {
   '/conditions': 'Condition',
   '/': '',
 } as const;
-
 type Endpoint = keyof typeof endpointToCategoryDisplayNameMap;
 
+// Generate category label for link preview
 const category = computed(() => {
-    if (!state || !state?.value) return '';
+    if (!state.value) return '';
     const category = unref(state.value.category ?? '/') as Endpoint;
     return endpointToCategoryDisplayNameMap[category];
 });
 
+// Generate source declaration for link preview
 const formatSourceDeclaration = computed(() => {
-  if (!state || !state.value) return '';
+  if (!state.value) return '';
   const { document } = state.value.data as Open5eData;
   return `${document.name} (${document.publisher.name})`;
 });
 
+// Helper function for creating subtitles for links to Monsters
 const formatMonsterSubtitle = (data: Monster) => {
   const { type, size, challenge_rating } = data;
   return `${size.name} ${type.name} (CR ${parseChallengeRating(challenge_rating)})`; 
 };
 
+// Helper function for creating subtitles for links to Magic Items
 const formatMagicItemSubtitle = (data: MagicItem) => {
   const { category, rarity, requires_attunement } = data;
-  return `${category}, ${rarity.name} ${requires_attunement ? '(requires attument)' : ''}`;
+  return `${category}, ${rarity.name} ${requires_attunement ? '(requires attunement)' : ''}`;
 };
 
+// Use the functions defined above to generate a subtitle for the link preview
 const subtitle = computed(() => {
   if (!state || !state.value || !category.value) return '';
   if (category.value === 'Monster') return formatMonsterSubtitle(state.value.data as Monster);

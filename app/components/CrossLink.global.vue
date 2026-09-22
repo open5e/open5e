@@ -49,7 +49,6 @@ const { data } = isValidLink.value
   ? useFindOne(versionWithEndpoint, key, previewQueryParameter)
   : { data: ref(null) };
 
-
 watch(data, () => {
   linkPreviewState.value = {
     data: previewData.value as Open5eData,
@@ -64,7 +63,6 @@ const previewData = computed(() => {
 
 // format top-level page part of URL where it differs from API structure
 const topLevelPage = computed(() => {
-  if (!data.value) return '/magic-items'; // default if data is loeading
   if (versionWithEndpoint === 'v2/items/') {
     return (data.value as MagicItem)?.rarity 
       ? '/magic-items'
@@ -77,7 +75,7 @@ const topLevelPage = computed(() => {
   }
     
   if (versionWithEndpoint === 'v2/creatures/') return '/monsters';
-
+  
   return '/' + endpoint.value; // Base case
 });
 
