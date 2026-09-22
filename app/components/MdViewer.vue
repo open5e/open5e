@@ -10,6 +10,7 @@
  *   content. Used for MD nested deeply in a parent doc. Defaults to `1` -> h1
  * @prop {Boolean} inline - Flag. Enables rendering inline markdown.
  * @prop {Boolean} useRoller - Whether to parse dice sigs as rollable on click
+ * @prop {CrossReference[]} crossreferences - Data for generating cross links
  *
  *
  * -= DEPENDENCIES =-

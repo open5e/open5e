@@ -1,31 +1,73 @@
 <template>
   <article
-    v-if="data"
-    class="group invisible absolute top--1 inline border border-red bg-fog px-3 py-2 text-charcoal dark:bg-charcoal dark:text-fog md:group-hover:visible"
+    :style="popupStyle"
+    class="pointer-events-none fixed border border-red bg-fog px-3 text-charcoal dark:bg-charcoal dark:text-fog md:group-hover:visible"
+    :class="!linkPreviewState && 'invisible'"
   >
-    <p class="my-0 text-nowrap">
-      <span class=" font-serif text-lg text-black dark:text-white">{{ data?.name }}</span>
-      <span v-if="categoryDisplayName" class="mx-1 font-bold text-red">{{ " | " }}</span>
-      <span v-if="categoryDisplayName" class="text-lg">{{ categoryDisplayName }}</span>
+    <p class="text-nowrap">
+      <span class=" font-serif text-lg">
+        {{ state?.data?.name }}
+      </span>
+      <span class="">
+        {{ ` | ${category}` }}
+      </span>
     </p>
-    <p v-if="subtitle" class="m-0 text-nowrap text-base">
-      {{ subtitle }}
-    </p>
-    <p class="mt-0 text-nowrap text-xs text-smoke dark:text-granite">
-      {{ `${'www.open5e.com' + category}/${data.key}` }}
-    </p>
+    <p class="italic">{{ formatSourceDeclaration }}</p>
   </article>
-  <article v-else  class="inline" />
 </template>
 
 <script setup lang="ts">
-import type { Creature, MagicItem, Open5eData, Spell } from '@/types';
-import { parseChallengeRating } from '@/helpers';
 
-const props = defineProps<{
-  data?: Open5eData;
-  category?: ComputedRef<string> | string;
-}>();
+import type { Open5eData } from '@/types';
+
+const { linkPreviewState } = useLinkPreview();
+const state = linkPreviewState;
+
+
+const popup = ref<HTMLElement | null>(null);
+const mouse = ref<{ x: number; y: number } | null>(null);
+
+const OFFSET = 12; // gap between cursor and popup
+const MARGIN = 8;  // minimum gap from viewport edges
+
+const popupStyle = computed(() => {
+  if (!mouse.value) return {};
+
+  const width = popup.value?.offsetWidth ?? 0;
+  const height = popup.value?.offsetHeight ?? 0;
+  let left = mouse.value.x + OFFSET;
+  let top = mouse.value.y + OFFSET;
+
+  // Flip to the other side of the cursor if we'd overflow right/bottom
+  if (left + width > window.innerWidth - MARGIN) left = mouse.value.x - OFFSET - width;
+  if (top + height > window.innerHeight - MARGIN) top = mouse.value.y - OFFSET - height;
+
+  // Final clamp so it never goes off the left/top either
+  left = Math.max(MARGIN, left);
+  top = Math.max(MARGIN, top);
+
+  return { left: `${left}px`, top: `${top}px` };
+});
+
+// Listen on the parent link, since that's the element being hovered
+const instance = getCurrentInstance();
+let parent: HTMLElement | null = null;
+
+const onMove = (e: MouseEvent) => mouse.value = { x: e.clientX, y: e.clientY };
+
+onMounted(() => {
+  parent = (instance?.proxy?.$el as HTMLElement | undefined)?.parentElement ?? null;
+  parent?.addEventListener('mousemove', onMove);
+});
+
+onBeforeUnmount(() => {
+  parent?.removeEventListener('mousemove', onMove);
+});
+
+// clear Link Preview data when a link is clicked
+const router = useRouter();
+const { clearLinkPreviewState } = useLinkPreview();
+router.afterEach(() => clearLinkPreviewState());
 
 const endpointToCategoryDisplayNameMap = {
   '/monsters': 'Monster',
@@ -40,56 +82,15 @@ const endpointToCategoryDisplayNameMap = {
 
 type Endpoint = keyof typeof endpointToCategoryDisplayNameMap;
 
-const getCategoryFromPath = (path: string): Endpoint | null => {
-  const normalized = path.startsWith('/') ? path : `/${path}`;
-  return normalized in endpointToCategoryDisplayNameMap 
-    ? normalized as Endpoint 
-    : null;
-};
-
-const formatSubclassName = (classPath: string): string => {
-  const capitalize = (word: string) => word[0].toUpperCase() + word.slice(1);
-  const subclassName = classPath.split('_').map(capitalize)[1];
-  return `${subclassName} Subclass`;
-};
-
-const categoryDisplayName = computed(() => {
-  const category = unref(props.category ?? '');
-
-  const directMatch = getCategoryFromPath(category);
-  if (directMatch) return endpointToCategoryDisplayNameMap[directMatch];
-
-  const segments = category.split('/').filter(Boolean);
-  if (segments[0] === 'classes' && segments[1]) {
-    return formatSubclassName(segments[1]);
-  }
-  return '';
+const category = computed(() => {
+    if (!state || !state?.value) return '';
+    const category = unref(state.value.category ?? '/') as Endpoint;
+    return endpointToCategoryDisplayNameMap[category];
 });
 
-
-const formatMonsterSubtitle = (monster: Creature) => {
-  const { size, type, challenge_rating} = monster;
-  return `${size.name} ${type.name}, CR ${parseChallengeRating(challenge_rating)}`;
-};
-
-const formatSpellSubtitle = (spell: Spell) => {
-  if (spell.level === 0) return `${spell.school.name} Cantrip`;
-  return `Level ${spell.level} ${spell.school.name} Spell`;
-};
-
-const formatMagicItemSubtitle = (item: MagicItem) => {
-  return `${item.category.name}, ${item.rarity.name}`;
-};
-
-const subtitle = computed<string>(() => {
-  const category = unref(props?.category ?? '/') as Endpoint;
-  
-  if (category === '/monsters') return formatMonsterSubtitle(props.data as Creature);
-  if (category === '/spells') return formatSpellSubtitle(props.data as Spell);
-  if (category === '/magic-items') return formatMagicItemSubtitle(props.data as MagicItem);
-  
-  return '';
+const formatSourceDeclaration = computed(() => {
+  if (!state || !state.value) return '';
+  const { document } = state.value.data as Open5eData;
+  return `${document.name} (${document.publisher.name})`;
 });
-
 </script>
-

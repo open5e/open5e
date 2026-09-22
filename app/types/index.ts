@@ -36,6 +36,7 @@ export type WeaponSummary = components['schemas']['WeaponSummary'];
 export type Open5eData = components['schemas'][keyof components['schemas']] & { 
   name: string;
   key: string;
+  document: Document;
 };
 
 

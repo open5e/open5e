@@ -37,7 +37,9 @@
           <div class="mb-0 mt-2 grid h-min w-full justify-center gap-1 pb-0 text-lg sm:m-4 sm:mb-0 sm:justify-start sm:pl-4">
             <BreadcrumbLinks class="grow" />
           </div>
-
+          
+          <CrossLinkPreview class="z-60" />
+          
           <PageNotifications class="z-60" />
 
           <!-- Main content -->
