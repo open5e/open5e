@@ -4,21 +4,25 @@
     class="pointer-events-none fixed border border-red bg-fog px-3 text-charcoal dark:bg-charcoal dark:text-fog md:group-hover:visible"
     :class="!linkPreviewState && 'invisible'"
   >
-    <p class="text-nowrap">
-      <span class=" font-serif text-lg">
+    <p class="mt-2 text-nowrap">
+      <span class=" font-serif text-xl">
         {{ state?.data?.name }}
       </span>
-      <span class="">
-        {{ ` | ${category}` }}
+      <span v-if="subtitle" class="">
+        {{ ` | ${subtitle}` }}
+      </span>
+      <span class="float-right ml-2 bg-red px-2 font-bold text-white">
+        {{ category }}
       </span>
     </p>
-    <p class="italic">{{ formatSourceDeclaration }}</p>
+    <p class="text-sm italic">{{ formatSourceDeclaration }}</p>
   </article>
 </template>
 
 <script setup lang="ts">
 
-import type { Open5eData } from '@/types';
+import type { MagicItem, Monster, Open5eData, Spell } from '@/types';
+import { formatSpellSubtitle, parseChallengeRating } from '@/helpers';
 
 const { linkPreviewState } = useLinkPreview();
 const state = linkPreviewState;
@@ -60,9 +64,7 @@ onMounted(() => {
   parent?.addEventListener('mousemove', onMove);
 });
 
-onBeforeUnmount(() => {
-  parent?.removeEventListener('mousemove', onMove);
-});
+onBeforeUnmount(() => parent?.removeEventListener('mousemove', onMove));
 
 // clear Link Preview data when a link is clicked
 const router = useRouter();
@@ -77,6 +79,7 @@ const endpointToCategoryDisplayNameMap = {
   '/magic-items': 'Magic Item',
   '/equipment': 'Equipment',
   '/feats': 'Feat',
+  '/conditions': 'Condition',
   '/': '',
 } as const;
 
@@ -92,5 +95,26 @@ const formatSourceDeclaration = computed(() => {
   if (!state || !state.value) return '';
   const { document } = state.value.data as Open5eData;
   return `${document.name} (${document.publisher.name})`;
+});
+
+const formatMonsterSubtitle = (data: Monster) => {
+  const { type, size, challenge_rating } = data;
+  return `${size.name} ${type.name} (CR ${parseChallengeRating(challenge_rating)})`; 
+};
+
+const formatMagicItemSubtitle = (data: MagicItem) => {
+  const { category, rarity, requires_attunement } = data;
+  return `${category}, ${rarity.name} ${requires_attunement ? '(requires attument)' : ''}`;
+};
+
+const subtitle = computed(() => {
+  if (!state || !state.value || !category.value) return '';
+  if (category.value === 'Monster') return formatMonsterSubtitle(state.value.data as Monster);
+  if (category.value === 'Magic Item') return formatMagicItemSubtitle(state.value.data as MagicItem);
+  if (category.value === 'Spell') return formatSpellSubtitle({
+    level: (state.value.data as Spell).level,
+    school: (state.value.data as Spell).school.name,
+  });
+  return '';
 });
 </script>
