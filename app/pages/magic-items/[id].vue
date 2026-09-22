@@ -19,7 +19,7 @@
       </p>
       <MdViewer
         :text="item.desc"
-        :crossreferences="item.crossreferences.to"
+        :crossreferences="item.crossreferences?.to"
       />
       <p class="text-sm italic">
         Source:
