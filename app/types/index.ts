@@ -11,6 +11,7 @@ export type Condition = components['schemas']['Condition'];
 export type Creature = components['schemas']['Creature'];
 export type CreatureAction = components['schemas']['CreatureAction'];
 export type CreatureTypeSummary = components['schemas']['CreatureTypeSummary'];
+export type CrossReferenceLink = components['schemas']['CrossReferenceLink'];
 export type Document = components['schemas']['Document'];
 export type DocumentSummary = components['schemas']['DocumentSummary'];
 export type Feat = components['schemas']['Feat'];
@@ -35,6 +36,7 @@ export type WeaponSummary = components['schemas']['WeaponSummary'];
 export type Open5eData = components['schemas'][keyof components['schemas']] & { 
   name: string;
   key: string;
+  document: Document;
 };
 
 

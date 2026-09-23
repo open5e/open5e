@@ -237,6 +237,7 @@
                 :inline="true"
                 :text="action.desc"
                 :use-roller="true"
+                :crossreferences="action?.crossreferences?.to"
               />
             </li>
           </ul>
