@@ -101,6 +101,7 @@
           <MdViewer
             :text="feature.desc"
             :header-level="3"
+            :crossreferences="feature?.crossreferences.to"
           />
         </li>
       </ul>
@@ -110,7 +111,11 @@
     <section v-if="features.classOptionLists?.length > 0">
       <template v-for="feature in features.classOptionLists" :key="feature.name">
         <h2>{{ feature.name }}</h2>
-        <MdViewer :text="feature.desc" :header-level="1" />
+        <MdViewer
+          :text="feature.desc"
+          :header-level="1"
+          :crossreferences="feature?.crossreferences.to"
+        />
       </template>
     </section>
 
@@ -126,7 +131,7 @@ import type { ClassFeature, Class } from '@/types';
 import { titleCaseToKebabCase } from '@/helpers';
 
 const classId = useQueryParameter('className');
-const fieldsToFetch = ['desc', 'features', 'hit_points', 'key', 'name', 'subclasses'].join(',');
+const fieldsToFetch = ['desc', 'features', 'hit_points', 'key', 'name', 'subclasses', 'crossreferences'].join(',');
 const { data: classData } = useFindOne(API_ENDPOINTS.classes, classId,
   {
     params: {

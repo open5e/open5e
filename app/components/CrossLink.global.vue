@@ -1,171 +1,102 @@
-<script lang="ts">
-/**
- * CrossLink - An inline link to an Open5e resource. Fetches & displays a
- *   preview of the linked resource when hovered
- *
- * -= PROPS (INPUTS) =-
- * @prop {String} src - The source of the Open5e resource being linked to. The
- *   resources endpoint and key can be extracted from it.
- *
- *
- * -= DEPENDENCIES =-
- * @component LinkPreview – Displays a preview of the linked content.
- * @axios - Fetches API data (TODO: replace /w Vue Query)
- *
- */
-</script>
-
 <template>
   <nuxt-link
-    v-if="acceptibleTypes.includes(category)"
-    :to="url.linkTarget"
-    class="group relative"
-    @mouseover="loadData"
+    v-if="isValidLink"
+    class="group relative inline"
+    :to="`${topLevelPage}/${key}`"
+    @mouseenter="onHover"
+    @focus="onHover"
+    @mouseleave="clearLinkPreviewState"
+    @blur="clearLinkPreviewState"
   >
-    <slot />
-    <link-preview
-      v-if="content"
-      :content="content"
-      :category="category"
-    />
+    <span class="z-50"><slot /></span>
   </nuxt-link>
-
-  <!-- If link markdown is invalid, render a span instead -->
-  <span
-    v-else
-    class="italic"
-  >
-    <slot />
-  </span>
+  <span v-else><slot /></span>
 </template>
 
 <script setup lang="ts">
-import axios from 'axios';
+import type { Class, MagicItem, Open5eData } from '@/types';
+const { linkPreviewState, clearLinkPreviewState } = useLinkPreview();
 
-const props = defineProps({ src: { type: String, default: '' } });
+const props = defineProps<{ to?: string }>();
 
-const loading = ref(false);
-const content = ref(undefined);
-const acceptibleTypes = ref(Object.keys(paramsByType));
-const category = ref(
-  props.src.split('/').filter(crumb => !['v1', 'v2'].includes(crumb))[0],
-);
-const slug = ref(
-  props.src.split('/').filter(crumb => !['v1', 'v2'].includes(crumb))[1],
-);
+const parsedTo = computed(() => (props.to ?? '').split('/').filter(Boolean).slice(-3));
+const version = computed(() => parsedTo.value[0]);
+const endpoint = computed(() => parsedTo.value[1]);
+const key = computed(() => parsedTo.value[2]);
 
-const url = computed(() => {
-  const apiURL = useRuntimeConfig().public.apiUrl;
-  const { altFrontEndSubroute, apiEndpoint } = paramsByType[category.value];
+const isValidLink = computed(() => Boolean(version.value && endpoint.value && key.value));
 
-  // make sure that category has a recognised endpoint
-  if (!apiEndpoint) return { linkTarget: '/' };
+type CrossLinkEndpoint = 'v2/items/' | 'v2/creatures/' | 'v2/classes/' | 'v2/species/' | 'v2/feats/' | 'v2/spells/';
 
-  // FE uses section's parent for routing. Update url once data is fetched
-  if (content.value && category.value === 'sections') {
-    const subroute = content.value.parent.split(' ').join('-').toLowerCase();
-    return {
-      linkTarget: `/${subroute}/${slug.value}`,
-      apiEndpoint: `${apiURL}/sections/${slug.value}`,
-    };
+const versionWithEndpoint = `${version.value}/${endpoint.value}/` as CrossLinkEndpoint;
+
+// generate query parameters for each endpoint to get correct data for preview
+const queryParameters = generateQueryParameter(versionWithEndpoint);
+
+const onHover = async () => {
+  if (!readyToFetch.value) readyToFetch.value = true;
+  else linkPreviewState.value = {
+    data: previewData.value as Open5eData,
+    category: topLevelPage.value
+  };
+};
+
+const readyToFetch = ref(false);
+
+const { data } = useFindOne(
+  versionWithEndpoint,
+  key,
+  {
+    ...queryParameters,
+    enabled: computed(() => isValidLink.value && readyToFetch.value)
   }
-  // the url on the front end site might be different to its API endpoint
-  return {
-    linkTarget: `/${altFrontEndSubroute ?? apiEndpoint}/${slug.value}`,
-    apiEndpoint: `${apiURL}/${apiEndpoint}/${slug.value}`,
+);
+
+
+watch(data, () => {
+  linkPreviewState.value = {
+    data: previewData.value as Open5eData,
+    category: topLevelPage.value
   };
 });
 
-async function loadData() {
-  // guard clause so that data is only fetched on initial hover
-  if (loading.value || content.value) {
-    return;
+const previewData = computed(() => {
+  if (!data || !data?.value) return;
+  return data.value;
+});
+
+// format top-level page part of URL where it differs from API structure
+const topLevelPage = computed(() => {
+  if (versionWithEndpoint === 'v2/items/') {
+    return (data.value as MagicItem)?.rarity 
+      ? '/magic-items'
+      : '/equipment';
   }
-  loading.value = true;
-  const { queryParams } = paramsByType[category.value];
-  const res = await axios.get(`${url.value.apiEndpoint}/${queryParams}`);
-  content.value = res.data;
+  if (versionWithEndpoint === 'v2/classes/') {
+    if (!data.value) return '/classes'; // default if data is loading
+    const subclassOf = (data.value as Class).subclass_of;
+    return subclassOf ? '/classes/' + subclassOf.key : '/classes';
+  }
+    
+  if (versionWithEndpoint === 'v2/creatures/') return '/monsters';
+  
+  return '/' + endpoint.value; // Base case
+});
+
+function generateQueryParameter(endpoint: CrossLinkEndpoint) {
+  const baseFields = ['name', 'key', 'document'];
+  const fieldsPerEndpoint = {
+    'v2/items/': [...baseFields, 'rarity', 'category'],
+    'v2/creatures/': [...baseFields, 'type', 'size', 'challenge_rating'],
+    'v2/spells/': [...baseFields, 'level', 'school'],
+    'v2/classes/': [...baseFields, 'subclass_of'],
+  } as Record<CrossLinkEndpoint, string[]>;
+
+  // create query params structure here to keep useFindOne call readable
+  return {
+    params: {
+      fields: (fieldsPerEndpoint[endpoint] ?? baseFields).join(',')
+    }
+  };
 }
-
-// Maps tag names from markdown to data required to show links/previews
-const defaultQueryParams = '?fields=name,document__title,';
-
-const paramsByType = {
-  'armor': {
-    apiEndpoint: 'armor',
-    queryParams: defaultQueryParams + 'category',
-  },
-  'backgrounds': {
-    apiEndpoint: 'backgrounds',
-    queryParams: defaultQueryParams,
-  },
-  'classes': {
-    apiEndpoint: 'classes',
-    queryParams: defaultQueryParams,
-  },
-  'combat': {
-    altFrontEndSubroute: 'combat',
-    apiEndpoint: 'sections',
-    queryParams: defaultQueryParams + 'title',
-  },
-  'conditions': {
-    apiEndpoint: 'conditions',
-    queryParams: defaultQueryParams + 'desc',
-  },
-  'equipment': {
-    altFrontEndSubroute: 'equipment',
-    apiEndpoint: 'sections',
-    queryParams: defaultQueryParams + 'parent',
-  },
-  'feats': {
-    apiEndpoint: 'feats',
-    queryParams: defaultQueryParams,
-  },
-  'gameplay-mechanics': {
-    altFrontEndSubroute: 'gameplay-mechanics',
-    apiEndpoint: 'sections',
-    queryParams: defaultQueryParams + 'parent',
-  },
-  'magicitems': {
-    altFrontEndSubroute: 'magic-items',
-    apiEndpoint: 'magicitems',
-    queryParams: defaultQueryParams + 'type,rarity,requires_attunement',
-  },
-  'monsters': {
-    apiEndpoint: 'monsters',
-    queryParams: defaultQueryParams + 'size,type,challenge_rating',
-  },
-  'plane': {
-    apiEndpoint: 'planes',
-    queryParams: defaultQueryParams,
-  },
-  'races': {
-    apiEndpoint: 'races',
-    queryParams: defaultQueryParams,
-  },
-  'running': {
-    altFrontEndSubroute: 'running',
-    apiEndpoint: 'sections',
-    queryParams: defaultQueryParams + 'parent',
-  },
-  'sections': {
-    apiEndpoint: 'sections',
-    queryParams: defaultQueryParams + 'parent',
-  },
-  'spells': {
-    apiEndpoint: 'spells',
-    queryParams:
-      defaultQueryParams
-      + 'level,school,casting_time,duration,range,components',
-  },
-  'spelllist': {
-    altFrontEndSubroute: 'spells/by-class',
-    apiEndpoint: 'spelllist',
-    queryParams: defaultQueryParams,
-  },
-  'weapons': {
-    apiEndpoint: 'weapons',
-    queryParams: defaultQueryParams + 'category',
-  },
-};
 </script>
