@@ -1623,6 +1623,7 @@ export interface components {
              * @enum {string|null}
              */
             type?: 'ability_score' | 'skill_proficiency' | 'tool_proficiency' | 'language' | 'equipment' | 'feature' | 'suggested_characteristics' | 'adventures_and_advancement' | 'connection_and_memento' | '' | null;
+            crossreferences: components['schemas']['CrossReferences'];
         };
         /**
          * @description Much of the logic included in the GameContentSerializer is intended to
@@ -1665,6 +1666,7 @@ export interface components {
             caster_type?: 'FULL' | 'HALF' | 'NONE' | '' | null;
             /** @description Primary abilities for thie class */
             primary_abilities: string[];
+            crossreferences: components['schemas']['CrossReferences'],
         };
         /**
          * @description A slimmer CharacterClassSerializer, designed to serialize Class FKs on
@@ -1714,6 +1716,7 @@ export interface components {
                 level: number;
                 column_value?: string | null;
             }[]
+            crossreferences: components['schemas']['CrossReferences'];
         };
         /**
          * @description Much of the logic included in the GameContentSerializer is intended to
@@ -1839,6 +1842,7 @@ export interface components {
             creaturesets: string[];
             environments: components['schemas']['EnvironmentSummary'][];
             illustration: components['schemas']['ImageSummary'];
+            crossreferences: components['schemas']['CrossReferences'];
         };
         /**
          * @description Much of the logic included in the GameContentSerializer is intended to
@@ -1864,6 +1868,7 @@ export interface components {
             order_in_statblock: number;
             legendary_action_cost: number;
             limited_to_form: string;
+            crossreferences: components['schemas']['CrossReferences'];
             readonly usage_limits?: {
                 type: string,
                 param: number,
@@ -2013,6 +2018,17 @@ export interface components {
             key: string;
             /** Format: uri */
             readonly url: string;
+        };
+        /** 
+         * @description One link in crossreferences.to; defines API shape and serialization.
+         * */
+        CrossReferenceLink: {
+            anchor: string;
+            /** @format uri */
+            url: string;
+        };
+        CrossReferences: {
+          to: components['schemas']['CrossReferenceLink'][];
         };
         /**
          * @description Much of the logic included in the GameContentSerializer is intended to
@@ -2450,6 +2466,7 @@ export interface components {
             /** @description If the item requires attunement. */
             requires_attunement?: boolean;
             document: components['schemas']['DocumentSummary'];
+            crossreferences: components['schemas']['CrossReferences'];
         };
         PaginatedAbilityList: {
             /** @example 123 */
@@ -3181,6 +3198,7 @@ export interface components {
              * @description The position in the list of features that a feature appears in its source statblock
              */
             order?: number | null;
+            crossreferences: components['schemas']['CrossReferences'];
         };
         /**
          * @description Much of the logic included in the GameContentSerializer is intended to
@@ -3201,6 +3219,7 @@ export interface components {
             name: string;
             /** @description Description of the game content item. Markdown. */
             desc?: string;
+            crossreferences: components['schemas']['CrossReferences'];
             /** @description Integer representing the default slot level required by the spell. */
             level: number;
             /** @description Description of casting the spell at a different level. */

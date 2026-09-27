@@ -57,6 +57,7 @@
       <MdViewer
         :text="spell.desc"
         :use-roller="true"
+        :crossreferences="spell?.crossreferences?.to"
       />
     </section>
 
@@ -64,7 +65,11 @@
       <h2 class="inline border-b-0 text-base font-bold no-underline">
         {{ spell.level > 0 ? "Using a High-Level Spell Slot: " : "Cantrip Upgrade: " }}
       </h2>
-      <MdViewer :text="spell.higher_level" :inline="true" />
+      <MdViewer
+        :text="spell.higher_level"
+        :inline="true"
+        :crossreferences="spell?.crossreferences?.to"
+      />
     </section>
 
     <p class="text-sm italic">

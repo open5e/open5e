@@ -5,13 +5,12 @@
  * Markdown tags as custom Nuxt components (via the "extensions" prop)
  *
  * -= PROPS (INPUTS) =-
- * @prop {Boolean} toc - A boolean flag to control whether a Table of Contents
- *   is generated or not.
  * @prop {String} text - Markdown string to be converted to HTML.
  * @prop {Number} headerLevel - The header level to start from for the Markdown
  *   content. Used for MD nested deeply in a parent doc. Defaults to `1` -> h1
  * @prop {Boolean} inline - Flag. Enables rendering inline markdown.
  * @prop {Boolean} useRoller - Whether to parse dice sigs as rollable on click
+ * @prop {CrossReference[]} crossreferences - Data for generating cross links
  *
  *
  * -= DEPENDENCIES =-
@@ -39,20 +38,31 @@
 
 <script setup lang="ts">
 import { VueShowdown } from 'vue-showdown';
+import type { CrossReferenceLink } from '@/types';
 
-const props = defineProps({
-  toc: { type: Boolean, default: true },
-  text: { type: String, default: 'loading...' },
-  headerLevel: { type: Number, default: 1 },
-  inline: { type: Boolean },
-  useRoller: { type: Boolean, default: false },
+const props = defineProps<{
+  text?: string,
+  headerLevel?: number,
+  inline?: boolean,
+  useRoller?: boolean,
+  crossreferences?: CrossReferenceLink[],
+}>();
+
+const crossLinkExtension = computed(() => {
+  if (!props.crossreferences?.length) return null;
+
+  const anchors = props.crossreferences.map(r => r.anchor);
+  const pattern = anchors.map(a => a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+
+  return {
+    type: 'output',
+    regex: new RegExp(`(${pattern})`, 'g'),
+    replace: (match: string) => {
+      const ref = props.crossreferences!.find(r => r.anchor === match);
+      return ref ? `<cross-link class="inline" to="${ref.url}">${match}</cross-link>` : match;
+    },
+  };
 });
-
-const crossLinkExtension = {
-  type: 'output',
-  regex: /<open5e-link src=([^>]+)>([^<]+)<\/open5e-link>/g,
-  replace: '<cross-link src="$1">$2</cross-link>',
-};
 
 const diceRollerExtension = {
   type: 'output',
@@ -61,16 +71,16 @@ const diceRollerExtension = {
 };
 
 const extensions = computed(() => {
-  const list = [crossLinkExtension];
-  if (props.useRoller) {
-    list.push(diceRollerExtension);
-  }
+  const list = [];
+  if (crossLinkExtension.value) list.push(crossLinkExtension.value);
+  if (props.useRoller) list.push(diceRollerExtension);
   return list;
 });
 </script>
 
 <style>
 .markdown {
+  a { display: inline };
   ul {
     list-style-type: disc;
     margin-left: 1rem;
