@@ -94,7 +94,7 @@ jobs:
           existing_pr_number="$(gh pr list \
             --repo "$GITHUB_REPOSITORY" \
             --base main \
-            --head staging \
+            --head "${GITHUB_REPOSITORY_OWNER}:staging" \
             --state open \
             --json number \
             --jq '.[0].number // empty')"
@@ -115,7 +115,7 @@ jobs:
           gh pr create \
             --repo "$GITHUB_REPOSITORY" \
             --base main \
-            --head staging \
+            --head "${GITHUB_REPOSITORY_OWNER}:staging" \
             --title "Release ${VERSION}: promote staging to main" \
             --body-file promotion-pr-body.md
 
