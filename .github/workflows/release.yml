@@ -3,53 +3,49 @@ name: Release
 on:
   workflow_dispatch:
     inputs:
-      version:
-        description: "Release version (e.g. 2.1 or v2.1)"
+      bump:
+        description: "Version part to increment"
         required: true
-        type: string
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+        default: patch
       release_notes:
-        description: "Release notes (leave blank to generate from commits since the last tag)"
+        description: "Release notes (leave blank to auto-generate from commits since the last tag)"
         required: false
         type: string
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   release:
     runs-on: ubuntu-latest
+    environment: release
     steps:
-      - name: Checkout
+      - name: Generate app token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ vars.RELEASE_APP_ID }}
+          private-key: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}
+          repositories: ${{ github.event.repository.name }}
+
+      - name: Checkout staging
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: staging
-          token: ${{ secrets.RELEASE_PAT || github.token }}
-
-      - name: Validate version
-        id: version
-        env:
-          RAW_VERSION: ${{ inputs.version }}
-        run: |
-          version="${RAW_VERSION#v}"
-          if [[ ! "$version" =~ ^[0-9]+(\.[0-9]+){1,2}$ ]]; then
-            echo "::error::Version must look like 2.1 or 2.1.0 (optional leading v)"
-            exit 1
-          fi
-          version="v${version}"
-          if git rev-parse "refs/tags/${version}" >/dev/null 2>&1; then
-            echo "::error::Tag ${version} already exists"
-            exit 1
-          fi
-          echo "version=${version}" >> "$GITHUB_OUTPUT"
-
-      - name: Fetch branches
-        run: git fetch origin staging main
+          token: ${{ steps.app-token.outputs.token }}
 
       - name: Sync main into staging
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "open5e-release-bot[bot]"
+          git config user.email "open5e-release-bot[bot]@users.noreply.github.com"
+          git fetch origin main staging --tags
           git checkout staging
           git pull origin staging
 
@@ -65,15 +61,32 @@ jobs:
             git push origin staging
           fi
 
-      - name: Validate fast-forward promotion
+      - name: Compute next version
+        id: version
+        env:
+          BUMP: ${{ inputs.bump }}
         run: |
-          git fetch origin staging main
-          if ! git merge-base --is-ancestor origin/main origin/staging; then
-            echo "::error::main is not an ancestor of staging after sync."
-            echo "::error::main and staging have diverged in a way that requires manual reconciliation."
+          git fetch --tags origin
+          latest_tag="$(git tag -l 'v*' --sort=-v:refname | head -n1)"
+          latest_tag="${latest_tag:-v0.0.0}"
+          version="${latest_tag#v}"
+          IFS='.' read -r major minor patch <<< "$version"
+          major="${major:-0}"; minor="${minor:-0}"; patch="${patch:-0}"
+
+          case "$BUMP" in
+            major) major=$((major + 1)); minor=0; patch=0 ;;
+            minor) minor=$((minor + 1)); patch=0 ;;
+            patch) patch=$((patch + 1)) ;;
+            *) echo "::error::Unknown bump type: $BUMP"; exit 1 ;;
+          esac
+
+          new_version="v${major}.${minor}.${patch}"
+          if git rev-parse "refs/tags/${new_version}" >/dev/null 2>&1; then
+            echo "::error::Tag ${new_version} already exists"
             exit 1
           fi
-          echo "main can be fast-forwarded to staging"
+          echo "Previous tag: ${latest_tag} -> New version: ${new_version}"
+          echo "version=${new_version}" >> "$GITHUB_OUTPUT"
 
       - name: Resolve staging ref
         id: refs
@@ -97,19 +110,28 @@ jobs:
           VERSION: ${{ steps.version.outputs.version }}
           STAGING_SHA: ${{ steps.refs.outputs.staging_sha }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git tag -a "$VERSION" -m "Release $VERSION" "$STAGING_SHA"
           git push origin "$VERSION"
 
-      - name: Promote staging to main
-        run: git push origin origin/staging:refs/heads/main
-
-      - name: Create GitHub release
+      - name: Create prerelease
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.version.outputs.version }}
           target_commitish: ${{ steps.refs.outputs.staging_sha }}
           name: Release ${{ steps.version.outputs.version }}
           body_path: release-notes.md
-          token: ${{ secrets.RELEASE_PAT || github.token }}
+          prerelease: true
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Open promotion PR (staging -> main)
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          gh pr create \
+            --repo "${{ github.repository }}" \
+            --base main \
+            --head staging \
+            --title "Release ${VERSION}" \
+            --body-file release-notes.md \
+          || echo "::warning::A promotion PR from staging to main may already be open."
