@@ -1,9 +1,8 @@
 <template>
-  <!-- BACKGROUND (visible behind page content at wide screen widths)       -->
-  <!-- bg-radial-gradiant arbitrary classes generate the dotted bg pattern  -->
-  <div
-    class="grid min-h-screen justify-center bg-white bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]"
-  >
+  <div class="grid min-h-screen justify-center bg-white bg-[radial-gradient(#ddd_1px,transparent_1px)] [background-size:16px_16px] dark:bg-darkness dark:bg-[radial-gradient(#222_1px,transparent_1px)]">
+    <!-- Root div generates dotted pattern on website background -->
+
+    <!-- Page layout container -->
     <div class="flex h-full max-w-[1440px] sm:mx-0 sm:w-screen">
       <!-- Left sidebar -->
       <aside
