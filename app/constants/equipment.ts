@@ -2,7 +2,7 @@ export const equipmentCategories = [
   'Adventuring Gear',
   'Ammunition',
   'Armor',
-  'Drawn Vehicle',
+  'Land Vehicle',
   'Poison',
   'Ring',
   'Rod',
