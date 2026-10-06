@@ -83,7 +83,11 @@ const extensions = computed(() => {
   a { display: inline };
   ul {
     list-style-type: disc;
-    margin-left: 1rem;
+    li {
+      list-style: disc;
+      margin-left: 1rem;
+      padding-left: 1rem;
+    }
   }
 }
 
