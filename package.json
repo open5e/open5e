@@ -23,7 +23,7 @@
     "typecheck": "npx nuxi typecheck"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.15.2",
+    "@nuxt/eslint": "^1.17.0",
     "@nuxt/schema": "^4.4.2",
     "@nuxt/test-utils": "^4.0.3",
     "@nuxtjs/tailwindcss": "^6.7.0",
