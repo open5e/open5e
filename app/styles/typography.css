@@ -1,15 +1,32 @@
 @layer base {
   main { @apply text-darkness dark:text-white; }
 
-  h1 { @apply text-3xl text-red dark:text-white; }
-  h2 { @apply text-2xl border-b-[3px] border-red pb-1 mt-6 inline-block; }
-  h3 { @apply text-xl mt-6; }
-  h4 { @apply text-lg text-charcoal dark:text-fog; }
-  h5 { @apply text-base; }
-  h6 { @apply text-sm; }
   h1, h2, h3, h4, h5, h6 { @apply font-serif; }
 
-  p { @apply my-3; }
+  h1 { @apply text-3xl text-red dark:text-white; }
+
+  h2 { @apply text-2xl underline decoration-red pb-0 mt-5 inline-block; }
+
+  h3 { @apply text-xl mt-5; }
+
+  h4 { @apply text-lg text-charcoal dark:text-fog mt-2; }
+  
+  h5 { @apply text-lg; }
+
+  h6 { @apply text-base; }
+
+
+  p {
+    @apply my-1;
+  }
+
+  /* Remove top padding from paragraphs immediately following a h2-4 */
+  h2 + p,
+  h3 + p,
+  h4 + p { 
+    @apply mt-0;
+  }
+
   br { @apply mb-1; }
 
   table { @apply text-sm border-y-[.5rem] border-smoke mt-4 border-collapse; }
