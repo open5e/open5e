@@ -4,9 +4,18 @@
       <div class="p-4">
         <h1>Critical Failure!</h1>
 
-        <h2>Error {{ error?.statusCode }}</h2>
+        <h2>Error {{ error?.status }}</h2>
 
         <p v-if="error?.message">{{ error.message }}</p>
+
+        <p v-if="searchTerm">
+          <button
+            class="text-red hover:text-blood dark:text-indigo-200 dark:hover:text-red"
+            @click="searchRedirect"
+          >
+            Search for <strong class="uppercase">"{{ searchTerm }}"</strong> on Open5e
+          </button>
+        </p>
 
         <button
           class="font-bold text-red hover:text-blood dark:text-indigo-200 dark:hover:text-red"
@@ -85,9 +94,32 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{ error: Open5eError | null }>();
+const props = defineProps<{ error: Open5eError | null }>();
+
+// Calculate the search term to provide for the user based on the error prop.
+// For 404s this page can be arrived at either by:
+// 1. Getting to an invalid page. In this case error.data will be a json of the form
+// `{path: /first/second/third}`, which we will want to transalte to the search term `third`.
+// Note that paths ending with a `/` don't return 404 and will not show a link.
+// 2. Getting a not found response from the API. In this case error.data will have a `key` property
+// with the value set to the searched entity (e.g. for `/monsters/goblin` it will be `goblin`).
+const searchTerm = computed(() => {
+  if(props.error?.status !== 404) return;
+
+  const { data } = props.error;
+  if(!data) return;
+
+  if(typeof data !== 'string') return data.key;
+
+  try {
+    return JSON.parse(data)?.path.replace(/.*\/([^/]*)/, '$1');
+  } catch {
+    return undefined;
+  }
+});
 
 const handleError = () => clearError({ redirect: '/' });
+const searchRedirect = () => clearError({ redirect: `/search?text=${searchTerm.value}` });
 </script>
 
 <style>
