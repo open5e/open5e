@@ -1,8 +1,4 @@
 export default defineNuxtConfig({
-  srcDir: 'app/',
-  dir: {
-    public: '../public',
-  },
   app: {
     pageTransition: {
       name: 'fade',
@@ -67,6 +63,16 @@ export default defineNuxtConfig({
     runtimeCompiler: true
   },
 
+  postcss: {
+    plugins: {
+      // @nuxtjs/tailwindcss adds `tailwindcss/nesting`, which Nuxt 4 cannot import
+      // as an ES module and skips with a warning; load it by file path instead.
+      // https://github.com/nuxt-modules/tailwindcss/issues/1047
+      'tailwindcss/nesting/index.js': {},
+      'tailwindcss/nesting': false,
+    },
+  },
+
   nitro: {
     preset: 'digital-ocean',
     publicAssets: [
@@ -80,12 +86,18 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     ['@nuxtjs/tailwindcss', {
-      configPath: '~/tailwind.config.ts',
+      configPath: '~~/tailwind.config.ts',
       cssPath: '~/styles/tailwind.css',
     }],
-    'nuxt-icon',
+    '@nuxt/icon',
     '@nuxt/test-utils/module',
   ],
+
+  icon: {
+    // Render <svg> like nuxt-icon did (the default CSS mode renders a masked
+    // <span>). The inline layout nuxt-icon gave them is in app/styles/base.css.
+    mode: 'svg',
+  },
   
   runtimeConfig: {
     public: {
@@ -95,7 +107,16 @@ export default defineNuxtConfig({
 
   typescript: {
     // typeCheck: true,
-    strict: true
+    strict: true,
+    tsConfig: {
+      // Nuxt 4 type-checks only app/ and tests/nuxt/ by default; keep checking tests/.
+      include: ['../tests/**/*'],
+      compilerOptions: {
+        // On by default since Nuxt 4. Kept off for now: turning it on reports
+        // 48 possibly-undefined index accesses that deserve their own change.
+        noUncheckedIndexedAccess: false,
+      },
+    },
   },
   imports: {
     autoImport: true,

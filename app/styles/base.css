@@ -24,6 +24,14 @@
   }
 }
 
+/* <Icon> from @nuxt/icon: inline and centred on the text, as nuxt-icon rendered it.
+   Outside @layer base, because Tailwind drops layered rules for classes it does
+   not find in the source, and `iconify` is added by the module at render time. */
+.iconify {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* Page transitions (fade-in/out), confiured in nuxt.config.ts */
 .fade-enter-active,
 .fade-leave-active {

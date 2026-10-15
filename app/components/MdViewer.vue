@@ -80,7 +80,7 @@ const extensions = computed(() => {
 
 <style>
 .markdown {
-  a { display: inline };
+  a { display: inline }
   ul {
     list-style-type: disc;
     li {
