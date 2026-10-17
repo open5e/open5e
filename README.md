@@ -42,7 +42,7 @@ Useful places to check out:
 
 # Development
 
-Open5e uses the Nuxt3 framework for Vue3, which takes care of a lot of the
+Open5e uses the Nuxt 4 framework for Vue 3, which takes care of a lot of the
 architectural work for the frontend layer while allowing a large amount of
 flexibility.
 
@@ -52,6 +52,8 @@ https://api.open5e.com. This can be redirected using the environment variable
 `API_URL`.
 
 ## Build Setup
+
+Use Node.js 22 (see `.nvmrc`), version 22.22.3 or newer. Node.js 24.15.0+ also works.
 
 Install dependencies.
 

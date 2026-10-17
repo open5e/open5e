@@ -4,7 +4,7 @@ This repository is open to contributions from anyone. If you have a suggestion, 
 ## Our Stack
 
 ### Nuxt
-The Open5e website is built using [Nuxt (Version 3)](https://nuxt.com/) which is a Vue.js web framework. You'll likely  want [some experience with Nuxt](https://nuxt.com/docs/3.x/getting-started/introduction) under your belt before contributing. If you have any experience using a different modern front-end web frameworks (React, Angular, etc.), you'll pick up Nuxt quickly.
+The Open5e website is built using [Nuxt (Version 4)](https://nuxt.com/) which is a Vue.js web framework. You'll likely  want [some experience with Nuxt](https://nuxt.com/docs/4.x/getting-started/introduction) under your belt before contributing. If you have any experience using a different modern front-end web frameworks (React, Angular, etc.), you'll pick up Nuxt quickly.
 
 ### Django / DRF (API)
 
