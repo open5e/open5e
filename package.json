@@ -33,7 +33,7 @@
     "eslint-plugin-tailwindcss": "^3.17.5",
     "happy-dom": "^20.8.9",
     "husky": "^8.0.3",
-    "nuxt": "^4.6.1",
+    "nuxt": "^4.6.2",
     "playwright-core": "^1.45.1",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "pretty-quick": "^3.1.3",
