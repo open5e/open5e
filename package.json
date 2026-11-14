@@ -25,7 +25,7 @@
   "devDependencies": {
     "@nuxt/eslint": "^1.17.0",
     "@nuxt/icon": "^2.5.1",
-    "@nuxt/schema": "^4.6.1",
+    "@nuxt/schema": "^4.6.4",
     "@nuxt/test-utils": "^4.0.3",
     "@nuxtjs/tailwindcss": "^6.7.0",
     "@types/node": "^20.19.23",
@@ -33,7 +33,7 @@
     "eslint-plugin-tailwindcss": "^3.17.5",
     "happy-dom": "^21.0.4",
     "husky": "^8.0.3",
-    "nuxt": "^4.6.3",
+    "nuxt": "^4.6.4",
     "playwright-core": "^1.45.1",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "pretty-quick": "^3.1.3",
